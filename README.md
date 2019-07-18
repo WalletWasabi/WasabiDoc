@@ -119,7 +119,7 @@ This is the open source documentation repository of Wasabi Wallet, here you will
 - How do I upgrade Wasabi?
 - Why is the minimum mixing amount a weird number?
 
-### [Post-Mix](](/FAQ.md#post-mix)
+### [Post-Mix](/FAQ.md#post-mix)
 - What do I do now that I have mixed my coins?
 - Can I recombine my mixed coins?
 - Am I safe to send my mixed coins to my hardware wallet?
