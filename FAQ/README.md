@@ -12,16 +12,20 @@ This document contains a list of all the questions and common issues answered in
 
 ## Introduction to Wasabi
 - Explain Wasabi like I'm 5
+- What is the history of Wasabi?
 - What is a coin join?
+- How does Zero Link differ from other coin join implementations?
 - Do I need to trust Wasabi with my coins?
 - What is the privacy I get after mixing with Wasabi?
 - Can I hurt my privacy with Wasabi?
 - Who is contributing to Wasabi?
+- Does Wasabi have a warrant canary?
 
 ## Installation of Wasabi
-- How do I install the Wasabi Wallet on Linux?
-- How do I install the Wasabi Wallet on Microsoft?
-- How do I install the Wasabi Wallet on iOS?
+- How do I install Wasabi on Linux?
+- How do I install Wasabi on Microsoft?
+- How do I install Wasabi on iOS?
+- How do I upgrade Wasabi?
 - How do I compile Wasabi from source?
 - How do I check the deterministic builds?
 - How do I install the Wasabi backend server?
@@ -73,6 +77,7 @@ This document contains a list of all the questions and common issues answered in
 - What is happening in the signing phase phase?
 - What is happening in the broadcasting phase?
 - How does my wallet communicate with the Wasabi coordinator server?
+- Why is the denomination such an odd number?
 
 ### Hardware Wallet
 - Why does Wasabi use the Hardware Wallet Interface?
@@ -88,6 +93,20 @@ This document contains a list of all the questions and common issues answered in
 - How can I sign a transaction on the Cold Card?
 - How can I import and broadcast a final transaction from Cold Card?
 - Can I coin join the bitcoin on my hardware wallet?
+
+### Settings
+- How can I connect to my own full node?
+- How can I change the anonset target?
+- How can I change the dust threshold?
+- How can I turn off Tor?
+- Where can I find the logs?
+
+### Coin Control Best Practices
+- Can I consolidate anonset coins?
+- How can I send my anonset coins to my hardware wallet?
+- What can I do with small change?
+- Which coins can I select for coin joins?
+- How can I mix large amounts?
 
 ## Contributions to Wasabi
 - Who is contributing to Wasabi already?
