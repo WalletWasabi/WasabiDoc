@@ -1,4 +1,4 @@
-## General Bitcoin Privacy
+# General Bitcoin Privacy
 - I have nothing to hide, do I still need financial privacy?
 - How is Bitcoin good in terms of privacy?
 - How is Bitcoin bad in terms of privacy?
