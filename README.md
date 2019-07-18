@@ -1,6 +1,6 @@
 # WasabiDoc
 
-Wasabi is an open-source, non-custodial, privacy focused Bitcoin wallet for desktop. It implements trustless coin shuffling: [Schnorrian CoinJoin](https://github.com/nopara73/ZeroLink/).
+[Wasabi](https://wasabiwallet.io) is an open-source, non-custodial, privacy focused Bitcoin wallet for desktop. It implements trustless coin shuffling: [Schnorrian CoinJoin](https://github.com/nopara73/ZeroLink/).
 
 However, "[anonymity loves company](https://www.freehaven.net/anonbib/cache/usability:weis2006.pdf)", the more participants there are, the better your privacy is, and the faster the coin join rounds are. Whether you are looking for state of the art operational security or you are philosophically aligned with the principles of freedom and privacy, now it is YOUR time to contribute. Fire up your Wasabi and help us to bootstrap the system!
 
@@ -10,11 +10,11 @@ This is the open source documentation repository of Wasabi Wallet, here you will
 ## Basics
 
 - Importance of privacy
-- Privacy in Bitcoin [problem in Bitcoin -> solution in Wasabi]
--- Address reuse -> labeling
--- Inputs and outputs -> coin selection
--- Transaction graph -> coin join
--- Network snooping -> block filters over Tor & full node
+- Privacy in Bitcoin [problem in Bitcoin -> solution in Wasabi] </br>
+-- Address reuse -> labeling </br>
+-- Inputs and outputs -> coin selection </br>
+-- Transaction graph -> coin join </br>
+-- Network snooping -> block filters over Tor & full node </br>
 - Getting started
 - Wasabi compared to other Wallets
 
@@ -23,10 +23,10 @@ This is the open source documentation repository of Wasabi Wallet, here you will
 - Download
 - Signature verification
 - Installation
-- Compilation from source
--- Install NBitcoin
--- Install Git
--- Compile Wasabi
+- Compilation from source </br>
+-- Install NBitcoin </br>
+-- Install Git </br>
+-- Compile Wasabi </br>
 - Deterministic build guide
 - Backend deployment
 - Client deployment
@@ -42,13 +42,13 @@ This is the open source documentation repository of Wasabi Wallet, here you will
 - Trezor One PIN
 - Trezor One passphrase
 - Trezor passphrase
-- ColdCard
--- Import skeleton wallet
--- Build PSBT
--- Export PSBT
--- Sign PSBT
--- Import PSBT
--- Broadcast PSBT 
+- ColdCard </br>
+-- Import skeleton wallet </br>
+-- Build PSBT </br>
+-- Export PSBT </br>
+-- Sign PSBT </br>
+-- Import PSBT </br>
+-- Broadcast PSBT </br>
 
 ### Load Wallet
 - Difference hot / watch only wallet
@@ -67,12 +67,12 @@ This is the open source documentation repository of Wasabi Wallet, here you will
 - Password
 
 ### Coin Join
-- Zero Link
--- Input registration
--- Connection confirmation
--- Output registration
--- Signing
--- Broadcasting
+- Zero Link </br>
+-- Input registration </br>
+-- Connection confirmation </br>
+-- Output registration </br>
+-- Signing </br>
+-- Broadcasting </br>
 - Anonymity set target
 - Minimum amount and denomination
 - Duration
