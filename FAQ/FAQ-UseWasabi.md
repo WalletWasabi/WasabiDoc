@@ -1,5 +1,5 @@
 # Use of Wasabi
-## Wallet Manager
+## [Wallet Manager](/FAQ/FAQ-UseWasabi.md#wallet-manager-1)
 - How do I generate a new wallet?
 - How do I back up my mnemonic seed?
 - What password should I use?
@@ -7,22 +7,22 @@
 - How do I backup my wallet?
 - What's up with the Chinese characters?
 
-## Synchronization
+## [Synchronization](/FAQ/FAQ-UseWasabi.md#synchronization-1)
 - What are BIP-158 block filters?
 - How does Wasabi download a relevant block?
 - How long does the initial, and a subsequent synchronization take?
 - How do I know if the synchronization is finished?
 
-## Receive
+## [Receive](/FAQ/FAQ-UseWasabi.md#receive-1)
 - How do I generate a new receiving address?
 - Why do I have to label my address?
 - How can I change the label of my address?
-- Why does Wasabi only use SegWit bech32 addresses?
+- [Why does Wasabi only use SegWit bech32 addresses?](/FAQ/FAQ-UseWasabi.md#why-does-wasabi-only-use-segwit-bech32-addresses)
 - Where can I find my public key?
 - Where can I find a QR code of the address?
 - Are there privacy concerns regarding whom I send my address?
 
-## Send
+## [Send](/FAQ/FAQ-UseWasabi.md#send-1)
 - What are coins?
 - Why is coin control so important?
 - How do I select coins for spending?
@@ -33,27 +33,27 @@
 - Can I see the fee in Satoshis per byte?
 - How is the tansaction broadcasted?
 
-## History
+## [History](/FAQ/FAQ-UseWasabi.md#history-1)
 - How can I check the history of transactions?
 - Can I export a list of transaction?
 
-## Coin Join
+## [Coin Join](/FAQ/FAQ-UseWasabi.md#coin-join-1)
 - How can I select UTXOs for coin join?
 - What are the denominations created in one round?
-- Can I mix more than the round's minimum?
-- What is the anonymity set?
+- [Can I mix more than the round's minimum?](/FAQ/FAQ-UseWasabi.md#can-i-mix-more-than-the-rounds-minimum)
+- [What is the anonymity set?](/FAQ/FAQ-UseWasabi.md#what-is-the-anonymity-set)
 - How much anonymity set do I need?
 - How many rounds should I coin join?
-- What are the fees for the coin join?
+- [What are the fees for the coin join?](/FAQ/FAQ-UseWasabi.md#what-are-the-fees-for-the-coin-join)
 - What is happening in the input registration phase?
 - What is happening in the connection confirmation phase?
 - What is happening in the output registration phase?
 - What is happening in the signing phase phase?
 - What is happening in the broadcasting phase?
 - How does my wallet communicate with the Wasabi coordinator server?
-- Why is the denomination such an odd number?
+- [Why is the denomination such an odd number?](/FAQ/FAQ-UseWasabi.md#why-is-the-denomination-such-an-odd-number)
 
-## Hardware Wallet
+## [Hardware Wallet](/FAQ/FAQ-UseWasabi.md#hardware-wallet-1)
 - Why does Wasabi use the Hardware Wallet Interface?
 - What specific hardware wallets does Wasabi support?
 - How can I type in the PIN of my Trezor One?
@@ -68,19 +68,21 @@
 - How can I import and broadcast a final transaction from Cold Card?
 - Can I coin join the bitcoin on my hardware wallet?
 
-## Settings
-- How can I connect to my own full node?
-- How can I change the anonset target?
+## [Settings](/FAQ/FAQ-UseWasabi.md#settings-1)
+- [How can I connect to my own full node to Wasabi?](/FAQ/FAQ-UseWasabi.md#how-can-i-connect-to-my-own-full-node-to-wasabi)
+- [How can I change the anonset target?](/FAQ/FAQ-UseWasabi.md#how-can-i-change-the-anonset-target)
 - How can I change the dust threshold?
-- How can I turn off Tor?
+- [How can I turn off Tor?](/FAQ/FAQ-UseWasabi.md#how-can-i-turn-off-tor)
 - Where can I find the logs?
 
-## Coin Control Best Practices
-- Can I consolidate anonset coins?
-- How can I send my anonset coins to my hardware wallet?
-- What can I do with small change?
+## [Coin Control Best Practices](/FAQ/FAQ-UseWasabi.md#coin-control-best-practices-1)
+- [Can I consolidate anonset coins?](/FAQ/FAQ-UseWasabi.md#can-i-consolidate-anonset-coins)
+- [How can I send my anonset coins to my hardware wallet?](/FAQ/FAQ-UseWasabi.md#how-can-i-send-my-anonset-coins-to-my-hardware-wallet)
+- [What can I do with small change?](/FAQ/FAQ-UseWasabi.md#what-can-i-do-with-small-change)
 - Which coins can I select for coin joins?
 - How can I mix large amounts?
+
+--------------------------
 
 ## Wallet Manager
 
