@@ -1,6 +1,6 @@
 # Frequently Asked Questions about Wasabi Wallet
 
-This document contains a list of all the questions and common issues answered in this archive. If you have a question that is not yet covered, please [open an issue](https://github.com/zkSNACKs/WasabiDoc/issues), if you have a good answer to a question, please [open a pull request](https://github.com/zkSNACKs/WasabiDoc/pulls).
+This document contains a list of all the questions and common issues answered in this archive. The hyperlinks lead to the separate files with answers to the questions.
 
 ## [General Bitcoin Privacy](/FAQ-GeneralBitcoinPrivacy.md)
 - I have nothing to hide, do I still need financial privacy?
