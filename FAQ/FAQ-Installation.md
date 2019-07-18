@@ -1,4 +1,4 @@
-## Installation of Wasabi
+# Installation of Wasabi
 - Where can I download Wasabi?
 - Why is it important to verify PGP signatures?
 - How do I install Wasabi on Linux?
