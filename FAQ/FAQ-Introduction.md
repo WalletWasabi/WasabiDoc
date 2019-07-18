@@ -1,0 +1,15 @@
+## Introduction to Wasabi
+- Explain Wasabi like I'm 5
+- What is the history of Wasabi?
+- What is a coin join?
+- How does Zero Link differ from other coin join implementations?
+- Do I need to trust Wasabi with my coins?
+- What is the privacy I get after mixing with Wasabi?
+- Can I hurt my privacy with Wasabi?
+- Who can use Wasabi?
+- Who is contributing to Wasabi?
+- What are the minimal requirements to run Wasabi?
+- Why is Wasabi libre and open source software?
+- Why is Wasabi Bitcoin-only?
+- Does Wasabi have a warrant canary?
+- What do peers say about Wasabi?
