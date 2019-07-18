@@ -2,7 +2,7 @@
 
 This document contains a list of all the questions and common issues answered in this archive. If you have a question that is not yet covered, please [open an issue](https://github.com/zkSNACKs/WasabiDoc/issues), if you have a good answer to a question, please [open a pull request](https://github.com/zkSNACKs/WasabiDoc/pulls).
 
-## General Bitcoin privacy
+## [General Bitcoin Privacy](/FAQ-GeneralBitcoinPrivacy.md)
 - I have nothing to hide, do I still need financial privacy?
 - How is Bitcoin good in terms of privacy?
 - How is Bitcoin bad in terms of privacy?
@@ -10,7 +10,7 @@ This document contains a list of all the questions and common issues answered in
 - Why is it important for my privacy to run a full node?
 - How does Tor protect my network-level privacy? 
 
-## Introduction to Wasabi
+## [Introduction to Wasabi](/FAQ-Introduction.md)
 - Explain Wasabi like I'm 5
 - What is the history of Wasabi?
 - What is a coin join?
@@ -26,7 +26,7 @@ This document contains a list of all the questions and common issues answered in
 - Does Wasabi have a warrant canary?
 - What do peers say about Wasabi?
 
-## Installation of Wasabi
+## [Installation of Wasabi](/FAQ-Installation.md)
 - Where can I download Wasabi?
 - Why is it important to verify PGP signatures?
 - How do I install Wasabi on Linux?
@@ -41,8 +41,8 @@ This document contains a list of all the questions and common issues answered in
 - How do I install the Wasabi backend server?
 - Do I need to install Tor separately?
 
-## Use of Wasabi
-### Wallet Manager
+## [Use of Wasabi](/FAQ-UseWasabi.md)
+### [Wallet Manager](/FAQ-UseWasabi.md#wallet-manager)
 - How do I generate a new wallet?
 - How do I back up my mnemonic seed?
 - What password should I use?
@@ -50,13 +50,13 @@ This document contains a list of all the questions and common issues answered in
 - How do I backup my wallet?
 - What's up with the Chinese characters?
 
-### Synchronization
+### [Synchronization](/FAQ-UseWasabi.md#synchronization)
 - What are BIP-158 block filters?
 - How does Wasabi download a relevant block?
 - How long does the initial, and a subsequent synchronization take?
 - How do I know if the synchronization is finished?
 
-### Receive
+### [Receive](/FAQ-UseWasabi.md#receive)
 - How do I generate a new receiving address?
 - Why do I have to label my address?
 - How can I change the label of my address?
@@ -65,7 +65,7 @@ This document contains a list of all the questions and common issues answered in
 - Where can I find a QR code of the address?
 - Are there privacy concerns regarding whom I send my address?
 
-### Send
+### [Send](/FAQ-UseWasabi.md#send)
 - What are coins?
 - Why is coin control so important?
 - How do I select coins for spending?
@@ -76,11 +76,11 @@ This document contains a list of all the questions and common issues answered in
 - Can I see the fee in Satoshis per byte?
 - How is the tansaction broadcasted?
 
-### History
+### [History](/FAQ-UseWasabi.md#history)
 - How can I check the history of transactions?
 - Can I export a list of transaction?
 
-### Coin Join
+### [Coin Join](/FAQ-UseWasabi.md#coin-join)
 - How can I select UTXOs for coin join?
 - What are the denominations created in one round?
 - What is the anonymity set?
@@ -95,7 +95,7 @@ This document contains a list of all the questions and common issues answered in
 - How does my wallet communicate with the Wasabi coordinator server?
 - Why is the denomination such an odd number?
 
-### Hardware Wallet
+### [Hardware Wallet](/FAQ-UseWasabi.md#hardware-wallet)
 - Why does Wasabi use the Hardware Wallet Interface?
 - What specific hardware wallets does Wasabi support?
 - How can I type in the PIN of my Trezor One?
@@ -110,21 +110,21 @@ This document contains a list of all the questions and common issues answered in
 - How can I import and broadcast a final transaction from Cold Card?
 - Can I coin join the bitcoin on my hardware wallet?
 
-### Settings
+### [Settings](/FAQ-UseWasabi.md#settings)
 - How can I connect to my own full node?
 - How can I change the anonset target?
 - How can I change the dust threshold?
 - How can I turn off Tor?
 - Where can I find the logs?
 
-### Coin Control Best Practices
+### [Coin Control Best Practices](/FAQ-UseWasabi.md#coin-control-best-practices)
 - Can I consolidate anonset coins?
 - How can I send my anonset coins to my hardware wallet?
 - What can I do with small change?
 - Which coins can I select for coin joins?
 - How can I mix large amounts?
 
-## Contributions to Wasabi
+## [Contributions to Wasabi](/FAQ-Contributions)
 - Who is contributing to Wasabi already?
 - How can I get help and support?
 - What does the Wasabi project need help with?
