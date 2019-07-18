@@ -1,4 +1,4 @@
-## Introduction to Wasabi
+# Introduction to Wasabi
 - Explain Wasabi like I'm 5
 - What is the history of Wasabi?
 - What is a coin join?
