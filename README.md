@@ -22,14 +22,14 @@ This is the open source documentation repository of Wasabi Wallet, here you will
 
 - Download
 - Signature verification
-- Installation
+- [Installation](/InstallInstructions.md)
 - Compilation from source </br>
 -- Install NBitcoin </br>
 -- Install Git </br>
 -- Compile Wasabi </br>
-- Deterministic build guide
-- Backend deployment
-- Client deployment
+- [Deterministic build guide](/DeterministicBuildGuide.md)
+- [Backend deployment](/BackendDeployment.md)
+- [Client deployment](/ClientDeployment.md)
 
 ## Features 
 
@@ -37,6 +37,7 @@ This is the open source documentation repository of Wasabi Wallet, here you will
 - Label
 - Seed and mnemonic
 - Password
+- [Password Finder](/PasswordFinder.md)
 
 ### Hardware Wallet
 - Trezor One PIN
@@ -81,20 +82,20 @@ This is the open source documentation repository of Wasabi Wallet, here you will
 
 ## Development
 
-- A technical overview of Wasabi Wallet 
+- [A technical overview of Wasabi Wallet](/TechnicalOverview.md)
 - Wasabi coding conventions
-- Security policy
-- Code coverage
-- Manual testing
-- Hardware wallet testing
-- Debug Guide
-
+- [Security policy](/SECURITY.md)
+- [Code coverage](/CodeCoverage.md)
+- [Manual testing](/ManualTesting.md)
+- [Hardware wallet testing](/HardwareWalletTestingGuide.md)
+- [Debug Guide](/HowToDebug.md)
+- [Ports](/Ports.md)
 
 ## FAQ and Common Issues
 
 [This is a copy of the current [FAQ](https://github.com/zkSNACKs/WalletWasabi/blob/master/WalletWasabi.Documentation/FAQ.md)]
 
-### Pre-Install
+### [Pre-Install](/FAQ.md#pre-install)
 - What is a "coin join"?
 - Do I need to trust Wasabi with my coins?
 - I want to purchase something anonymously. Does coin join happen at the time of payment?
@@ -102,14 +103,14 @@ This is the open source documentation repository of Wasabi Wallet, here you will
 - Can I hurt my privacy using Wasabi?
 - Who is behind Wasabi?
 
-### Install
+### [Install](/FAQ.md#install)
 - How do I install Wasabi?
 - Do I need to run Tor?
 
-### Pre-Mix
+### [Pre-Mix](/FAQ.md#pre-mix)
 - My wallet cannot send to Bech32 addresses - what wallets can I use instead?
 
-### Mixing
+### [Mixing](/FAQ.md#mixing)
 - What are the fees?
 - What is the Anonymity Set?
 - How do I change the default number of mixing rounds?
@@ -118,7 +119,7 @@ This is the open source documentation repository of Wasabi Wallet, here you will
 - How do I upgrade Wasabi?
 - Why is the minimum mixing amount a weird number?
 
-### Post-Mix
+### [Post-Mix](](/FAQ.md#post-mix)
 - What do I do now that I have mixed my coins?
 - Can I recombine my mixed coins?
 - Am I safe to send my mixed coins to my hardware wallet?
@@ -126,16 +127,19 @@ This is the open source documentation repository of Wasabi Wallet, here you will
 - Will I have issues spending my mixed coins?
 - What do I do with small changes?
 
-### Meta
+### [Meta](/FAQ.md#meta)
 - Where is the coordinator's source code?
 - Does Wasabi have a warrant canary?
 
-### Errors
+### [Errors](/FAQ.md#errors)
 - Backend will not connect
 
 
 ## Dojo
 
+- [Dojo](/Dojo.md)
 - Support
 - Issues
 - Contribute Code
+- [Demo Guide](/DemoGuide.md)
+- [Contribution Game](/ContributionGame.md)
