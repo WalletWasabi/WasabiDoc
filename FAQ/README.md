@@ -18,15 +18,25 @@ This document contains a list of all the questions and common issues answered in
 - Do I need to trust Wasabi with my coins?
 - What is the privacy I get after mixing with Wasabi?
 - Can I hurt my privacy with Wasabi?
+- Who can use Wasabi?
 - Who is contributing to Wasabi?
+- What are the minimal requirements to run Wasabi?
+- Why is Wasabi libre and open source software?
+- Why is Wasabi Bitcoin-only?
 - Does Wasabi have a warrant canary?
+- What do peers say about Wasabi?
 
 ## Installation of Wasabi
+- Where can I download Wasabi?
+- Why is it important to verify PGP signatures?
 - How do I install Wasabi on Linux?
 - How do I install Wasabi on Microsoft?
 - How do I install Wasabi on iOS?
-- How do I upgrade Wasabi?
+- How do I check the current version of Wasabi?
+- How do I know about a new version of Wasabi?
+- How do I securely upgrade Wasabi?
 - How do I compile Wasabi from source?
+- How can I install Wasabi headless daemon without GUI?
 - How do I check the deterministic builds?
 - How do I install the Wasabi backend server?
 - Do I need to install Tor separately?
@@ -39,6 +49,12 @@ This document contains a list of all the questions and common issues answered in
 - Can I spend my bitcoin without the password?
 - How do I backup my wallet?
 - What's up with the Chinese characters?
+
+### Synchronization
+- What are BIP-158 block filters?
+- How does Wasabi download a relevant block?
+- How long does the initial, and a subsequent synchronization take?
+- How do I know if the synchronization is finished?
 
 ### Receive
 - How do I generate a new receiving address?
@@ -110,9 +126,11 @@ This document contains a list of all the questions and common issues answered in
 
 ## Contributions to Wasabi
 - Who is contributing to Wasabi already?
+- How can I get help and support?
 - What does the Wasabi project need help with?
 - How can I report a bug?
 - How can I request a feature?
 - How should I start contributing code?
 - Who verifies the pull requests? 
 - Is there a bounty program?
+- What is on the future roadmap of Wasabi development?
