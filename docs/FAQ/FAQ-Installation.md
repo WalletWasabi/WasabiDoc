@@ -6,12 +6,12 @@
 - How do I install Wasabi on iOS?
 - How do I check the current version of Wasabi?
 - How do I know about a new version of Wasabi?
-- [How do I securely upgrade Wasabi?](/FAQ/FAQ-Installation.md#how-do-i-securely-upgrade-wasabi)
+- [How do I securely upgrade Wasabi?](FAQ-Installation.md#how-do-i-securely-upgrade-wasabi)
 - How do I compile Wasabi from source?
 - How can I install Wasabi headless daemon without GUI?
 - How do I check the deterministic builds?
 - How do I install the Wasabi backend server?
-- [Do I need to install Tor separately?](/FAQ/FAQ-Installation.md#do-i-need-to-install-tor-separately)
+- [Do I need to install Tor separately?](FAQ-Installation.md#do-i-need-to-install-tor-separately)
 
 ---
 

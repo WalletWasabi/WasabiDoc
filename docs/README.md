@@ -22,14 +22,14 @@ This is the open source documentation repository of Wasabi Wallet, here you will
 
 - Download
 - Signature verification
-- [Installation](/InstallInstructions.md)
+- [Installation](InstallInstructions.md)
 - Compilation from source </br>
 -- Install NBitcoin </br>
 -- Install Git </br>
 -- Compile Wasabi </br>
-- [Deterministic build guide](/DeterministicBuildGuide.md)
-- [Backend deployment](/BackendDeployment.md)
-- [Client deployment](/ClientDeployment.md)
+- [Deterministic build guide](DeterministicBuildGuide.md)
+- [Backend deployment](BackendDeployment.md)
+- [Client deployment](ClientDeployment.md)
 
 ## Features 
 
@@ -37,7 +37,7 @@ This is the open source documentation repository of Wasabi Wallet, here you will
 - Label
 - Seed and mnemonic
 - Password
-- [Password Finder](/PasswordFinder.md)
+- [Password Finder](PasswordFinder.md)
 
 ### Hardware Wallet
 - Trezor One PIN
@@ -82,37 +82,37 @@ This is the open source documentation repository of Wasabi Wallet, here you will
 
 ## Development
 
-- [A technical overview of Wasabi Wallet](/TechnicalOverview.md)
+- [A technical overview of Wasabi Wallet](TechnicalOverview.md)
 - Wasabi coding conventions
-- [Security policy](/SECURITY.md)
-- [Code coverage](/CodeCoverage.md)
-- [Manual testing](/ManualTesting.md)
-- [Hardware wallet testing](/HardwareWalletTestingGuide.md)
-- [Debug Guide](/HowToDebug.md)
-- [Ports](/Ports.md)
+- [Security policy](SECURITY.md)
+- [Code coverage](CodeCoverage.md)
+- [Manual testing](ManualTesting.md)
+- [Hardware wallet testing](HardwareWalletTestingGuide.md)
+- [Debug Guide](HowToDebug.md)
+- [Ports](Ports.md)
 
 ## FAQ and Common Issues
 
-- [General Bitcoin Privacy](/FAQ/FAQ-GeneralBitcoinPrivacy.md)
-- [Introduction to Wasabi](/FAQ/FAQ-Introduction.md)
-- [Installation of Wasabi](/FAQ/FAQ-Installation.md)
-- [Use of Wasabi](/FAQ/FAQ-UseWasabi.md) </br>
-  -- [Wallet Manager](/FAQ/FAQ-UseWasabi.md#wallet-manager) </br>
-  -- [Synchronization](/FAQ/FAQ-UseWasabi.md#synchronization) </br>
-  -- [Receive](/FAQ/FAQ-UseWasabi.md#receive) </br>
-  -- [Send](/FAQ/FAQ-UseWasabi.md#send) </br>
-  -- [History](/FAQ/FAQ-UseWasabi.md#history) </br>
-  -- [Coin Join](/FAQ/FAQ-UseWasabi.md#coin-join) </br>
-  -- [Hardware Wallet](/FAQ/FAQ-UseWasabi.md#hardware-wallet) </br>
-  -- [Settings](/FAQ/FAQ-UseWasabi.md#settings) </br>
-  -- [Coin Control Best Practices](/FAQ/FAQ-UseWasabi.md#coin-control-best-practices) </br>
-- [Contributions to Wasabi](/FAQ/FAQ-Contribution.md)
+- [General Bitcoin Privacy](/docs/FAQ/FAQ-GeneralBitcoinPrivacy.md)
+- [Introduction to Wasabi](/docs/FAQ/FAQ-Introduction.md)
+- [Installation of Wasabi](/docs/FAQ/FAQ-Installation.md)
+- [Use of Wasabi](/docs/FAQ/FAQ-UseWasabi.md) </br>
+  -- [Wallet Manager](/docs/FAQ/FAQ-UseWasabi.md#wallet-manager) </br>
+  -- [Synchronization](/docs/FAQ/FAQ-UseWasabi.md#synchronization) </br>
+  -- [Receive](/docs/FAQ/FAQ-UseWasabi.md#receive) </br>
+  -- [Send](/docs/FAQ/FAQ-UseWasabi.md#send) </br>
+  -- [History](/docs/FAQ/FAQ-UseWasabi.md#history) </br>
+  -- [Coin Join](/docs/FAQ/FAQ-UseWasabi.md#coin-join) </br>
+  -- [Hardware Wallet](/docs/FAQ/FAQ-UseWasabi.md#hardware-wallet) </br>
+  -- [Settings](/docs/FAQ/FAQ-UseWasabi.md#settings) </br>
+  -- [Coin Control Best Practices](/docs/FAQ/FAQ-UseWasabi.md#coin-control-best-practices) </br>
+- [Contributions to Wasabi](/docs/FAQ/FAQ-Contribution.md)
 
 ## Dojo
 
-- [Dojo](/Dojo.md)
+- [Dojo](Dojo.md)
 - Support
 - Issues
 - Contribute Code
-- [Demo Guide](/DemoGuide.md)
-- [Contribution Game](/ContributionGame.md)
+- [Demo Guide](DemoGuide.md)
+- [Contribution Game](ContributionGame.md)
