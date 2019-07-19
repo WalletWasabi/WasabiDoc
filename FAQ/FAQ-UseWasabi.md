@@ -155,7 +155,11 @@ The connection confirmation phase ends when all Alice's have provided their inpu
 [missing: explanation of uniqueld]
 
 ### What is happening in the output registration phase?
+Now that all peers are online, we are ready to proceed with the [output registration phase](https://github.com/nopara73/zerolink#2-output-registration-phase) of the round. Wasabi generates a completely new tor identity Bob, he is in no way tied to Alice. Bob sends to the Wasabi coordinator: [i] the clear-text address for the equal value coin join output; [ii] the coordinator signature over that output; and [iii] the round Hash of all the inputs. Because the coordinator can verify his own signature, he knows that this output was initially send by any Alice [he does not know which Alice exactly] and that he has verified that everything was in order.
 
+It is very important that the coordinator cannot link Alice to Bob. Because Alice has send the clear-text input, and Bob sends the clear-text output. So, if the two were to be linked, then the coordinator can specifically link the input to the output, meaning that the anonymity set is 1. Because Alice commits to the output by sending it blinded, and because Bob is a new tor identity not linked to Alice, the coordinator can verify that nobody is cheating, but he cannot deanonymize the peers.
+
+The output registration phase ends when the value of clear-text outputs plus change outputs is equal to the the value of inputs. If after a timeout not all outputs are registered, then this round is abandoned, the missing peers are banned, and a new round is started.
 
 ### What is happening in the signing phase?
 
