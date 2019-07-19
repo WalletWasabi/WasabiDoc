@@ -45,11 +45,11 @@
 - How much anonymity set do I need?
 - How many rounds should I coin join?
 - [What are the fees for the coin join?](/FAQ/FAQ-UseWasabi.md#what-are-the-fees-for-the-coin-join)
-- What is happening in the input registration phase?
-- What is happening in the connection confirmation phase?
-- What is happening in the output registration phase?
-- What is happening in the signing phase phase?
-- What is happening in the broadcasting phase?
+- [What is happening in the input registration phase?](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-input-registration-phase)
+- [What is happening in the connection confirmation phase?](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-connection-confirmation-phase)
+- [What is happening in the output registration phase?](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-output-registration-phase)
+- [What is happening in the signing phase?](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-signing-phase)
+- [What is happening in the broadcasting phase?](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-broadcasting-phase)
 - How does my wallet communicate with the Wasabi coordinator server?
 - [Why are the denominations such an odd number?](/FAQ/FAQ-UseWasabi.md#why-are-the-denominations-such-an-odd-number)
 
@@ -127,14 +127,35 @@ All an observer knows is that a specific anon set output coin is owned by one of
 Your Wasabi software has limited information on what the anonymity set should be, so the anonymity set that the software presents you is just an estimation, not an accurate value. With Wasabi we are trying to do lower estimations, rather than higher ones.
 
 ### Can I mix more than the round's minimum?
-
 Yes.  
 In a round with a ~0.1 BTC minimum, you could mix ~0.3 BTC and get a ~0.1 BTC output & a ~ 0.2 BTC output.
 Similarly, with a 0.7 BTC input you would expect the following outputs: ~0.1, ~0.2, ~0.4 BTC. The possible values of equal output that can be created are 0.1 x 2^n where n is a positive integer (or zero).  [See more here](https://youtu.be/PKtxzSLPWFU) and [here](https://youtu.be/3Ezru07J674).
 
 ### Why are the denominations such an odd number?
+The output value changes each round to ensure that you can enqueue a coin and have it remix (mix over and over again - increasing the anonymity set, improving privacy). As a result the round mixing amount will often be a specific number which generally decreases as the rounds proceed, with a reset once a lower bound is reached.
 
-The output value changes each round to ensure that you can enqueue a coin and have it remix (mix over and over again - increasing the anonymity set, improving privacy). As a result the round mixing amount will often be a specific number which generally decreases as the rounds proceed, with a reset once a lower bound is reached. 
+### What is happening in the input registration phase?
+During the [input registration](https://github.com/nopara73/zerolink#1-input-registration-phase), you select which coins you want to register for coin join. These coins need to be confirmed on the Bitcoin timechain, unless they are from a Wasabi coin join and you re-register them. In the background, Wasabi generates an input proof so that the coordinator can verify that you actually own this coin. Then Wasabi generates several addresses, depending on the value of inputs registered. The address of the equal value coin join output must not be linked to your input, and thus it is [cryptographically blinded](https://en.wikipedia.org/wiki/Blind_signature) to incomprehensible cypher-text. Since the change output can be easily linked to your input with coin join sudoku [reference missing], this address is not blinded, but send in clear-text.
+
+Wasabi wallet generates a new tor identity [reference missing] called Alice, she is like a separate entity, and for every round you use a new Alice who is not linked to any previous connection. With Alice, you send some information to the Wasabi coordinator server: [i] the input coin that you want to register, together with the input proof signature; [ii] the clear text change address; and [iii] the blinded equal value coin join output.
+
+The Wasabi coordinator now verifies that: [i] there is still room for more peers on this coin join; [ii] the blinded output has never been registered before; [iii] each input has not been registered before, is not banned, is unspent, and that the input proof is valid; and [iv] that the sum value of inputs is higher than the minimum required value of 0.1 bitcoin. Only when all these checks are valid does the coordinator sign the blinded output. He does not know the address that he is signing, because it is blinded. This signature is proof that the coordinator has verified that Alice is not cheating. The coordinator sends the signed blinded output back to Alice.
+
+Alice has the private key to unblind the signed blinded output. With the magic of cryptography, she can reveal the clear-text address of the equal value coin join, however, the coordinator signature is still attached to this address.
+
+The input registration phase ends when either, the number of registered inputs exceeds the number of required inputs [meaning anonymity set of 100 peers]; or when the last round was two hours ago.
+
+### What is happening in the connection confirmation phase?
+
+
+### What is happening in the output registration phase?
+
+
+### What is happening in the signing phase?
+
+
+### What is happening in the broadcasting phase?
+
 
 ## Hardware Wallet
 
