@@ -88,11 +88,11 @@ This document contains a list of all the questions and common issues answered in
 - How much anonymity set do I need?
 - How many rounds should I coin join?
 - [What are the fees for the coin join?](/FAQ/FAQ-UseWasabi.md#what-are-the-fees-for-the-coin-join)
-- What is happening in the input registration phase?
-- What is happening in the connection confirmation phase?
-- What is happening in the output registration phase?
-- What is happening in the signing phase phase?
-- What is happening in the broadcasting phase?
+- [What is happening in the input registration phase?](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-input-registration-phase)
+- [What is happening in the connection confirmation phase?](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-connection-confirmation-phase)
+- [What is happening in the output registration phase?](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-output-registration-phase)
+- [What is happening in the signing phase?](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-signing-phase)
+- [What is happening in the broadcasting phase?](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-broadcasting-phase)
 - How does my wallet communicate with the Wasabi coordinator server?
 - [Why are the denominations such an odd number?](/FAQ/FAQ-UseWasabi.md#why-are-the-denominations-such-an-odd-number)
 
