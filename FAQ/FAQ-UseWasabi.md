@@ -145,8 +145,14 @@ Alice has the private key to unblind the signed blinded output. With the magic o
 
 The input registration phase ends when either, the number of registered inputs exceeds the number of required inputs [meaning anonymity set of 100 peers]; or when the last round was two hours ago.
 
-### What is happening in the connection confirmation phase?
+[missing: explanation of uniqueld]
 
+### What is happening in the connection confirmation phase?
+There are many Alice's registering their inputs in the first phase, and the connection confirmation phase makes sure that all of them are still online. The coordinator verifies the uniqueld from all the Alice's, and when everyone is still communicating, then he returns the round hash of all the registered inputs. The round is abandoned and re-started if too many Alice's have dropped, for example when Wasabi is shut down, or when the tor connection is temporarily broken.
+
+The connection confirmation phase ends when all Alice's have provided their inputs, or after a timeout when the online Alice's are still larger than the required number of peers.
+
+[missing: explanation of uniqueld]
 
 ### What is happening in the output registration phase?
 
