@@ -51,7 +51,7 @@
 - What is happening in the signing phase phase?
 - What is happening in the broadcasting phase?
 - How does my wallet communicate with the Wasabi coordinator server?
-- [Why is the denomination such an odd number?](/FAQ/FAQ-UseWasabi.md#why-is-the-denomination-such-an-odd-number)
+- [Why are the denominations such an odd number?](/FAQ/FAQ-UseWasabi.md#why-are-the-denominations-such-an-odd-number)
 
 ## [Hardware Wallet](/FAQ/FAQ-UseWasabi.md#hardware-wallet-1)
 - Why does Wasabi use the Hardware Wallet Interface?
@@ -132,7 +132,7 @@ Yes.
 In a round with a ~0.1 BTC minimum, you could mix ~0.3 BTC and get a ~0.1 BTC output & a ~ 0.2 BTC output.
 Similarly, with a 0.7 BTC input you would expect the following outputs: ~0.1, ~0.2, ~0.4 BTC. The possible values of equal output that can be created are 0.1 x 2^n where n is a positive integer (or zero).  [See more here](https://youtu.be/PKtxzSLPWFU) and [here](https://youtu.be/3Ezru07J674).
 
-### Why is the minimum mixing amount an odd number?
+### Why are the denominations such an odd number?
 
 The output value changes each round to ensure that you can enqueue a coin and have it remix (mix over and over again - increasing the anonymity set, improving privacy). As a result the round mixing amount will often be a specific number which generally decreases as the rounds proceed, with a reset once a lower bound is reached. 
 
