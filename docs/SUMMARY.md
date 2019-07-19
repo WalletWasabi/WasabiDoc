@@ -8,4 +8,4 @@
 ## Contributing and Community
 * [Contributing](./CONTRIBUTING.md)
 * [Dojo](./Dojo.md)
-* [License](./LICENSE.md)
+* [License](./LICENSE)
