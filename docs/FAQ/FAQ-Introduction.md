@@ -1,17 +1,17 @@
 # Introduction to Wasabi
 - Explain Wasabi like I'm 5
 - What is the history of Wasabi?
-- [What is a coin join?](/FAQ/FAQ-Introduction.md#what-is-a-coin-join)
+- [What is a coin join?](FAQ-Introduction.md#what-is-a-coin-join)
 - How does Zero Link differ from other coin join implementations?
-- [Do I need to trust Wasabi with my coins?](/FAQ/FAQ-Introduction.md#do-i-need-to-trust-wasabi-with-my-coins)
-- [What is the privacy I get after mixing with Wasabi?](/FAQ/FAQ-Introduction.md#what-is-the-privacy-i-get-after-mixing-with-wasabi)
-- [Can I hurt my privacy with Wasabi?](/FAQ/FAQ-Introduction.md#can-i-hurt-my-privacy-with-wasabi)
+- [Do I need to trust Wasabi with my coins?](FAQ-Introduction.md#do-i-need-to-trust-wasabi-with-my-coins)
+- [What is the privacy I get after mixing with Wasabi?](FAQ-Introduction.md#what-is-the-privacy-i-get-after-mixing-with-wasabi)
+- [Can I hurt my privacy with Wasabi?](FAQ-Introduction.md#can-i-hurt-my-privacy-with-wasabi)
 - Who can use Wasabi?
 - Who is contributing to Wasabi?
 - What are the minimal requirements to run Wasabi?
 - Why is Wasabi libre and open source software?
 - Why is Wasabi Bitcoin-only?
-- [Does Wasabi have a warrant canary?](/FAQ/FAQ-Introduction.md#does-wasabi-have-a-warrant-canary)
+- [Does Wasabi have a warrant canary?](FAQ-Introduction.md#does-wasabi-have-a-warrant-canary)
 - What do peers say about Wasabi?
 
 ---
