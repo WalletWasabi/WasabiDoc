@@ -168,6 +168,7 @@ Now that all inputs and outputs are registered, the Wasabi coordinator can start
 The signing phase ends when the coordinator has all the valid signatures for all the registered inputs.
 
 ### What is happening in the broadcasting phase?
+The coin join transaction is successfully build and signed, and it is now ready to be [broadcasted](https://github.com/nopara73/zerolink#transaction-broadcasting) to the peers of the Bitcoin network. The coordinator sends this transaction over the tor network to a random full node, and from there it is gossiped to other nodes and miners. Wasabi is saving on mining fees by setting a confirmation target of roughly 12 hours, but you can re-register unconfirmed anonset outputs for the next round of coin join.
 
 
 ## Hardware Wallet
