@@ -91,7 +91,7 @@ This is the open source documentation repository of Wasabi Wallet, here you will
 - [Debug Guide](HowToDebug.md)
 - [Ports](Ports.md)
 
-## FAQ and Common Issues
+## [FAQ and Common Issues](/docs/FAQ/README.md#frequently-asked-questions-about-wasabi-wallet)
 
 - [General Bitcoin Privacy](/docs/FAQ/FAQ-GeneralBitcoinPrivacy.md)
 - [Introduction to Wasabi](/docs/FAQ/FAQ-Introduction.md)
