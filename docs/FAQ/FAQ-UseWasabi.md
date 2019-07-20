@@ -155,8 +155,7 @@ When your full node is on the same hardware [computer, laptop] as your Wasabi Wa
 You can turn off Tor in the Settings. Note that in this case you are still private, except when you coinjoin and when you broadcast a transaction. In the first case, the coordinator would know the links between your inputs and outputs based on your IP address. In the second case, if you happen to broadcast a transaction of yours to a full node that is spying on you, it will know the link between your transaction and your IP address.
 
 ### How can I change the anonset target?
-In the Settings tab at the bottom you can change the three `PrivacyLevelX` values of the desired 
-set of the yellow, green, and checkmark shield button in the GUI. The `MixUntilAnonymitySet` is the last selected value from previous use. 
+In the Settings tab at the bottom you can change the three `PrivacyLevelX` values of the desired anon set of the yellow, green, and checkmark shield button in the GUI. The `MixUntilAnonymitySet` is the last selected value from previous use. 
 
 In the wallet GUI, go to `File`>`Open`>`Config File` and in the last 4 lines you see:
 
