@@ -58,6 +58,7 @@ This document contains a list of all the questions and common issues answered in
 
 ### [Receive](FAQ-UseWasabi.md#receive)
 - How do I generate a new receiving address?
+- [Why is it bad to re-use addresses?](FAQ-UseWasabi.md#why-is-it-bad-to-re-use-addresses)
 - Why do I have to label my address?
 - How can I change the label of my address?
 - [Why does Wasabi only use SegWit bech32 addresses?](FAQ-UseWasabi.md#why-does-wasabi-only-use-segwit-bech32-addresses)
