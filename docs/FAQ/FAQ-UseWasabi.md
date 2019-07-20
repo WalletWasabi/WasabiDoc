@@ -15,6 +15,7 @@
 
 ## [Receive](FAQ-UseWasabi.md#receive-1)
 - How do I generate a new receiving address?
+- [Why is it bad to re-use addresses?](FAQ-UseWasabi.md#why-is-it-bad-to-re-use-addresses)
 - Why do I have to label my address?
 - How can I change the label of my address?
 - [Why does Wasabi only use SegWit bech32 addresses?](FAQ-UseWasabi.md#why-does-wasabi-only-use-segwit-bech32-addresses)
@@ -91,6 +92,15 @@
 
 
 ## Receive
+### Why is it bad to re-use addresses?
+Bitcoin is designed so that for every payment you can use a new address that is not tied to any of your previous addresses. When you use a new address for every coin, then it becomes much much more difficult to find out that these coins are from you. However, when you use the same address for every coin, then everyone knows that they all can be spend by one individual who has knowledge of the private key - you! Thus, when someone finds out that you have that address, maybe you published it in your social media profile for donations, or you send a coin to another peer who knows you, then they know also how many bitcoin you have in the other coins with that same address. Take good care to whom you tell your addresses, and every time, tell someone a different address.
+
+Because you have all the private keys, for all these addresses, you can produce a valid signature for any of them. So you can proof that these are your bitcoin, without relying on reputation that you have any other coins. You can easily generate and store many billions of private keys and addresses in a convenient [BIP 44 multi-account hierarchy for deterministic wallets](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki) so that you can backup everything in your 12 word mnemonic phrase. 
+
+This is what is used in Wasabi, you have on mnemonic backup, and unlimited numbers of new addresses. Everytime you a coin is received, then the address is removed from the GUI so that you are not tempted to use it again.
+
+Remember: ***NEVER RE-USE ADDRESSES***
+
 ### Why does Wasabi only use SegWit bech32 addresses?
 Wasabi generates Bech32 addresses only, also known as bc1 addresses or native SegWit addresses. These addresses start with the characters `bc1...` Some wallets/exchanges do not yet support this type of address and may give an error message (e.g. "unknown bitcoin address"). The solution is to manage your funds with a wallet which does support Bech32, [see list](https://en.bitcoin.it/wiki/Bech32_adoption).
 
