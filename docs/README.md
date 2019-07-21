@@ -11,25 +11,24 @@ This is the open source documentation repository of Wasabi Wallet, here you will
 
 - Importance of privacy
 - Privacy in Bitcoin [problem in Bitcoin -> solution in Wasabi] </br>
--- Address reuse -> labeling </br>
--- Inputs and outputs -> coin selection </br>
--- Transaction graph -> coin join </br>
--- Network snooping -> block filters over Tor & full node </br>
+  -- Address reuse -> labeling </br>
+  -- Inputs and outputs -> coin selection </br>
+  -- Transaction graph -> coin join </br>
+  -- Network snooping -> block filters over Tor & full node </br>
 - Getting started
 - Wasabi compared to other Wallets
 
-## Installation and Upgrade
+## Installing Wasabi
 
-- Download
-- Signature verification
-- [Installation](InstallInstructions.md)
-- Compilation from source </br>
--- Install NBitcoin </br>
--- Install Git </br>
--- Compile Wasabi </br>
-- [Deterministic build guide](DeterministicBuildGuide.md)
-- [Backend deployment](BackendDeployment.md)
+- [Install package](InstallPackage.md) </br>
+  -- [Windows](InstallPackage.md#windows) </br>
+  -- [Debian and Ubuntu](InstallPackage.md#debian-and-ubuntu) </br>
+  -- [Other Linux](InstallPackage.md#other-linux) </br>
+  -- [OSX](InstallPackage.md#osx) </br>
+- [Build from source code](BuildSource.md)
+- [Deterministic build](DeterministicBuild.md)
 - [Client deployment](ClientDeployment.md)
+- [Backend deployment](BackendDeployment.md)
 
 ## Features 
 
