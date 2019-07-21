@@ -116,7 +116,9 @@ Be careful, if you send all your coins from an old wallet to a new wallet (from 
 ## Coin Join
 ### What are the fees for the coin join?
 You currently pay a fee of 0.003% * anonymity set. If the anonymity set of a coin is 50 then you pay 0.003% * 50 (=0.15%). If you set the target anonymity set to 53 then Wasabi will continue mixing until this is reached, so you may end up with an anonymity set of say 60, and you will pay 0.003% * 60 (=0.18%).  
+
 There are also edge cases where you do not pay the full fee or where you pay more. For example if you're the smallest registrant to a round, you will never pay a fee. Also when you are remixing and you cannot pay the full fee with your input, then you only pay as much as you have, but if the change amount leftover would be too small, then that is also added to the fee. Currently the minimum change amount to be paid out is 0.7% of the base denomination (~0.1BTC.)  
+
 It is also possible that you get more back from mixing than you put in. This happens when network fees go down between the start of the round and its end. In this case, the difference is split between the active outputs of the mix.
 
 ### What is the anonymity set?
@@ -133,13 +135,17 @@ If 3 people take part in a CoinJoin (with equal size inputs) and there are 3 out
 ```
 
 There is no way to know which of the anon set output coins are owned by which of the input owners.
+
 All an observer knows is that a specific anon set output coin is owned by one of the owners of one of the input Coins i.e. 3 people - hence an anonymity set of 3.  
+
 Your Wasabi software has limited information on what the anonymity set should be, so the anonymity set that the software presents you is just an estimation, not an accurate value. With Wasabi we are trying to do lower estimations, rather than higher ones.
 
 ### Can I mix more than the round's minimum?
 
 Yes.  
+
 In a round with a ~0.1 BTC minimum, you could mix ~0.3 BTC and get a ~0.1 BTC output & a ~ 0.2 BTC output.
+
 Similarly, with a 0.7 BTC input you would expect the following outputs: ~0.1, ~0.2, ~0.4 BTC. The possible values of equal output that can be created are 0.1 x 2^n where n is a positive integer (or zero).  [See more here](https://youtu.be/PKtxzSLPWFU) and [here](https://youtu.be/3Ezru07J674).
 
 ### Why are the denominations such an odd number?
@@ -151,7 +157,8 @@ The output value changes each round to ensure that you can enqueue a coin and ha
 
 ## Settings
 ### How do I connect my own full node to Wasabi?
-There is currently a basic implementation of connecting your full node to Wasabi. The server will still send you [BIP 158 block filters](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki), and when you realize that a block contains a transaction of yours, then you pull this block from your own full node, instead of a random P2P node, thus you can verify that this is actually a valid block including your transaction. One attack vector could be that Wasabi lies to you and give you wrong filters that exclude your transaction, thus you would see in the wallet less coins than you actually control. [BIP 157 solves this](https://github.com/bitcoin/bips/blob/master/bip-0157.mediawiki).
+There is currently a basic implementation of connecting your full node to Wasabi. The server will still send you [BIP 158 block filters](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki), and when you realize that a block contains a transaction of yours, then you pull this block from your own full node, instead of a random P2P node, thus you can verify that this is actually a valid block including your transaction. One attack vector could be that Wasabi lies to you and gives you wrong filters that exclude your transaction, thus you would see in the wallet less coins than you actually control. [BIP 157 solves this](https://github.com/bitcoin/bips/blob/master/bip-0157.mediawiki).
+
 When your full node is on the same hardware [computer, laptop] as your Wasabi Wallet, then it will automatically recognize it and pull blocks from there. If your node is on a remote device [raspberry pi, nodl, server], then you can specify your local IP in the Settings tab, or in line 11 of the config file. [See more here](https://youtu.be/gWo2RAkIVrE).
 
 ### How can I turn off Tor?
@@ -159,6 +166,7 @@ You can turn off Tor in the Settings. Note that in this case you are still priva
 
 ### How can I change the anonset target?
 In the Settings tab at the bottom you can change the three `PrivacyLevelX` values of the desired anon set of the yellow, green, and checkmark shield button in the GUI. The `MixUntilAnonymitySet` is the last selected value from previous use. 
+
 In the wallet GUI, go to `File`>`Open`>`Config File` and in the last 4 lines you see:
 
 ```json
@@ -180,7 +188,7 @@ If you would like to dive into the details of this topic, you can [read more her
 ### How can I send my anonset coins to my hardware wallet?
 Most hardware wallets communicate with servers to provide you with your balance. This reveals your public key to the server, which damages your privacy - the hardware company can now theoretically link together all your addresses. As a result **it is not recommended** that you send your mixed coins to an address associated with your hardware wallet unless you are confident that you have set up your hardware wallet in a way that it does not communicate with a 3rd party server (see below). 
 
-You can however manage your hardware wallet with the Wasabi interface. Alternatively you can use your hardware wallet with Electrum, which connects to your Bitcoin Core full node through [Electrum Personal Server](https://github.com/chris-belcher/electrum-personal-server).
+You can, however, manage your hardware wallet with the Wasabi interface. Alternatively, you can use your hardware wallet with Electrum, which connects to your Bitcoin Core full node through [Electrum Personal Server](https://github.com/chris-belcher/electrum-personal-server).
 
 ### What can I do with small change?
 There are no hard and fast rules for what to do with the change. Generally try to avoid the change and use the Max button extensively at sending. The most problematic type of change is what has `anonymity set 1` (red shield.) You should treat it as a kind of toxic waste (handled with great care).
