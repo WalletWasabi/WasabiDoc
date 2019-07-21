@@ -4,6 +4,12 @@
 
 This guide describes how to reproduce Wasabi's builds.
 
+1. [Assert Correct Environment](DeterministicBuild.md#1-assert-correct-environment)
+2. [Reproduce Builds](DeterministicBuild.md#2-reproduce-builds)
+3. [Verify Builds](DeterministicBuild.md#3-verify-builds)
+
+---
+
 ## 1. Assert Correct Environment
 
 In order to reproduce Wasabi's builds you need [Git](https://git-scm.com/downloads), [Windows 10](https://www.microsoft.com/en-us/software-download/windows10ISO) and the version of [.NET Core SDK](https://www.microsoft.com/net/download) that was the most recent in the time of building the [release](https://github.com/zkSNACKs/WalletWasabi/releases).
