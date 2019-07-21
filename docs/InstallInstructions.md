@@ -1,15 +1,16 @@
 # Install Instructions
 
-- [How to install Wasabi on Windows](Installnstructions.md#windows)
-- [How to install Wasabi on Linux](Installnstructions.md#linux)
-- [How to install Wasabi on OSX](Installnstructions.md#osx)
+- [How to install Wasabi on Windows](InstallInstructions.md#windows)
+- [How to install Wasabi on Linux](InstallInstructions.md#linux)
+- [How to install Wasabi on OSX](InstallInstructions.md#osx)
 
-Every time you download and install Wasabi you **MUST** verify the PGP signature.
+It is strongly recommended to **VERIFY PGP SIGNATURES** of the downloaded packages before installing Wasabi. This protects you against malicious phising sites giving you back-doored Wallet software. Don't trust - Verify!
 
 Download the packages either from the official [WasabiWallet.io](https://wasabiwallet.io/) clearnet website, or for your privacy sake from the official tor hidden service [http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion/](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion/).
 
 If you have personally verified Ádám Ficsor's PGP key and you are familiar with the [Web Of Trust](https://security.stackexchange.com/questions/147447/gpg-why-is-my-trusted-key-not-certified-with-a-trusted-signature), please consider also [signing it](https://www.gnupg.org/gph/en/manual/x334.html).
 
+---
 
 ## Windows
 
@@ -130,13 +131,13 @@ If you have already imported Ádám Ficsor's public key, then jump to step 4.
 
 2. Copy [Ádám Ficsor's PGP public key](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt) into a new `TextEdit` document and saving it as `PGP.txt`. Before saving, you need to go to `Format / Make Plain Text` (otherwise TextEdit will not be able to save it as a .txt file).
 
-3. Open Terminal and go to the folder in which you saved the `PGP.txt` file and import the public key with `gpg2 --import PGP.txt`. This should return the output: `key B4B72266C47E075E: public key "nopara73 (GitHub key) <nopara73@github.com>" imported`. [Next time you can skip previous steps because the public key is already imported.]
+3. Open Terminal and go to the folder in which you saved the `PGP.txt` file and import the public key with `sudo gpg2 --import PGP.txt`. This should return the output: `key B4B72266C47E075E: public key "nopara73 (GitHub key) <nopara73@github.com>" imported`. [Next time you can skip previous steps because the public key is already imported.]
 
 4. [Download](https://wasabiwallet.io) the latest Wasabi release, both the `.dmg` package and the corresponding `.asc` signature file.
 
 ![](https://imgur.com/k0cEYjz.png)
 
-5. In the Download folder, run `gpg2 --verify Wasabi.X.X.X.asc`. [Change `X.X.X` to version you downloaded.] If the message returned says `Good signature from nopara73 aka Ficsór Ádám` and that it was signed with `Primary key fingerprint: 21D7 CA45 565D BCCE BE45  115D B4B7 2266 C47E 075E`, then the software was not tampered with since the developer signed it.
+5. In the Download folder, run `sudo gpg2 --verify Wasabi.X.X.X.asc`. [Change `X.X.X` to version you downloaded.] If the message returned says `Good signature from nopara73 aka Ficsór Ádám` and that it was signed with `Primary key fingerprint: 21D7 CA45 565D BCCE BE45  115D B4B7 2266 C47E 075E`, then the software was not tampered with since the developer signed it.
 
 6. Double click `.dmg` to open it.
 
