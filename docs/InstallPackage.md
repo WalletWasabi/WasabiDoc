@@ -1,4 +1,4 @@
-# Install Instructions
+# Install package
 
 - [How to install Wasabi on Windows](InstallInstructions.md#windows)
 - [How to install Wasabi on Linux](InstallInstructions.md#linux)
