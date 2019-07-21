@@ -1,9 +1,9 @@
 # Install package
 
-- [How to install Wasabi on Windows](InstallInstructions.md#windows)
-- [How to install Wasabi on Debian and Ubuntu](InstallInstructions.md#debian-and-ubuntu)
-- [How to install Wasabi on Other Linux](InstallInstructions.md#other-linux)
-- [How to install Wasabi on OSX](InstallInstructions.md#osx)
+- [How to install Wasabi on Windows](InstallPackage.md#windows)
+- [How to install Wasabi on Debian and Ubuntu](InstallPackage.md#debian-and-ubuntu)
+- [How to install Wasabi on Other Linux](InstallPackage.md#other-linux)
+- [How to install Wasabi on OSX](InstallPackage.md#osx)
 
 It is strongly recommended to **VERIFY PGP SIGNATURES** of the downloaded packages before installing Wasabi. This protects you against malicious phising sites giving you back-doored Wallet software. Don't trust - Verify!
 
