@@ -1,5 +1,10 @@
 # Client Deployment
 
+1. [Packaging](ClientDeployment.md#1-packaging)
+2. [Github Release](ClientDeployment.md#2-github-release)
+3. [Notify](ClientDeployment.md#3-notify)
+4. [Announce](ClientDeployment.md#4-announce)
+
 ## 1. Packaging
 
 0. Make sure local .NET Core version is up to date.
