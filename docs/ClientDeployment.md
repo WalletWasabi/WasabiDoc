@@ -5,6 +5,8 @@
 3. [Notify](ClientDeployment.md#3-notify)
 4. [Announce](ClientDeployment.md#4-announce)
 
+---
+
 ## 1. Packaging
 
 0. Make sure local .NET Core version is up to date.
