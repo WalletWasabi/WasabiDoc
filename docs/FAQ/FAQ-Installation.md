@@ -6,12 +6,12 @@
 - How do I install Wasabi on iOS?
 - How do I check the current version of Wasabi?
 - How do I know about a new version of Wasabi?
-- [How do I securely upgrade Wasabi?](/FAQ/FAQ-Installation.md#how-do-i-securely-upgrade-wasabi)
+- [How do I securely upgrade Wasabi?](FAQ-Installation.md#how-do-i-securely-upgrade-wasabi)
 - How do I compile Wasabi from source?
 - How can I install Wasabi headless daemon without GUI?
 - How do I check the deterministic builds?
 - How do I install the Wasabi backend server?
-- [Do I need to install Tor separately?](/FAQ/FAQ-Installation.md#do-i-need-to-install-tor-separately)
+- [Do I need to install Tor separately?](FAQ-Installation.md#do-i-need-to-install-tor-separately)
 
 ---
 
@@ -20,4 +20,5 @@ You can download the software build for the different operating systems on the m
 
 ### Do I need to install Tor separately?
 All Wasabi network traffic goes via Tor by default - no need to set up Tor yourself. If you do already have Tor, and it is running, then Wasabi will try to use that first.  
+
 You can turn off Tor in the Settings. Note that in this case you are still private, except when you coinjoin and when you broadcast a transaction. In the first case, the coordinator would know the links between your inputs and outputs based on your IP address. In the second case, if you happen to broadcast a transaction of yours to a full node that is spying on you, it will know the link between your transaction and your IP address.
