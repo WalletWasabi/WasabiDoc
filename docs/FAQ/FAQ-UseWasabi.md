@@ -1,5 +1,5 @@
 # Use of Wasabi
-## [Wallet Manager](/FAQ/FAQ-UseWasabi.md#wallet-manager-1)
+## [Wallet Manager](FAQ-UseWasabi.md#wallet-manager-1)
 - How do I generate a new wallet?
 - How do I back up my mnemonic seed?
 - What password should I use?
@@ -7,22 +7,23 @@
 - How do I backup my wallet?
 - What's up with the Chinese characters?
 
-## [Synchronization](/FAQ/FAQ-UseWasabi.md#synchronization-1)
+## [Synchronization](FAQ-UseWasabi.md#synchronization-1)
 - What are BIP-158 block filters?
 - How does Wasabi download a relevant block?
 - How long does the initial, and a subsequent synchronization take?
 - How do I know if the synchronization is finished?
 
-## [Receive](/FAQ/FAQ-UseWasabi.md#receive-1)
+## [Receive](FAQ-UseWasabi.md#receive-1)
 - How do I generate a new receiving address?
+- [Why is it bad to re-use addresses?](FAQ-UseWasabi.md#why-is-it-bad-to-re-use-addresses)
 - Why do I have to label my address?
 - How can I change the label of my address?
-- [Why does Wasabi only use SegWit bech32 addresses?](/FAQ/FAQ-UseWasabi.md#why-does-wasabi-only-use-segwit-bech32-addresses)
+- [Why does Wasabi only use SegWit bech32 addresses?](FAQ-UseWasabi.md#why-does-wasabi-only-use-segwit-bech32-addresses)
 - Where can I find my public key?
 - Where can I find a QR code of the address?
 - Are there privacy concerns regarding whom I send my address?
 
-## [Send](/FAQ/FAQ-UseWasabi.md#send-1)
+## [Send](FAQ-UseWasabi.md#send-1)
 - What are coins?
 - Why is coin control so important?
 - How do I select coins for spending?
@@ -33,27 +34,27 @@
 - Can I see the fee in Satoshis per byte?
 - How is the tansaction broadcasted?
 
-## [History](/FAQ/FAQ-UseWasabi.md#history-1)
+## [History](FAQ-UseWasabi.md#history-1)
 - How can I check the history of transactions?
 - Can I export a list of transaction?
 
-## [Coin Join](/FAQ/FAQ-UseWasabi.md#coin-join-1)
+## [Coin Join](FAQ-UseWasabi.md#coin-join-1)
 - How can I select UTXOs for coin join?
 - What are the denominations created in one round?
-- [Can I mix more than the round's minimum?](/FAQ/FAQ-UseWasabi.md#can-i-mix-more-than-the-rounds-minimum)
-- [What is the anonymity set?](/FAQ/FAQ-UseWasabi.md#what-is-the-anonymity-set)
+- [Can I mix more than the round's minimum?](FAQ-UseWasabi.md#can-i-mix-more-than-the-rounds-minimum)
+- [What is the anonymity set?](FAQ-UseWasabi.md#what-is-the-anonymity-set)
 - How much anonymity set do I need?
 - How many rounds should I coin join?
-- [What are the fees for the coin join?](/FAQ/FAQ-UseWasabi.md#what-are-the-fees-for-the-coin-join)
-- [What is happening in the input registration phase?](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-input-registration-phase)
-- [What is happening in the connection confirmation phase?](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-connection-confirmation-phase)
-- [What is happening in the output registration phase?](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-output-registration-phase)
-- [What is happening in the signing phase?](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-signing-phase)
-- [What is happening in the broadcasting phase?](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-broadcasting-phase)
+- [What are the fees for the coin join?](FAQ-UseWasabi.md#what-are-the-fees-for-the-coin-join)
+- [What is happening in the input registration phase?](FAQ-UseWasabi.md#what-is-happening-in-the-input-registration-phase)
+- [What is happening in the connection confirmation phase?](FAQ-UseWasabi.md#what-is-happening-in-the-connection-confirmation-phase)
+- [What is happening in the output registration phase?](FAQ-UseWasabi.md#what-is-happening-in-the-output-registration-phase)
+- [What is happening in the signing phase?](FAQ-UseWasabi.md#what-is-happening-in-the-signing-phase)
+- [What is happening in the broadcasting phase?](FAQ-UseWasabi.md#what-is-happening-in-the-broadcasting-phase)
 - How does my wallet communicate with the Wasabi coordinator server?
-- [Why are the denominations such an odd number?](/FAQ/FAQ-UseWasabi.md#why-are-the-denominations-such-an-odd-number)
+- [Why are the denominations such an odd number?](FAQ-UseWasabi.md#why-are-the-denominations-such-an-odd-number)
 
-## [Hardware Wallet](/FAQ/FAQ-UseWasabi.md#hardware-wallet-1)
+## [Hardware Wallet](FAQ-UseWasabi.md#hardware-wallet-1)
 - Why does Wasabi use the Hardware Wallet Interface?
 - What specific hardware wallets does Wasabi support?
 - How can I type in the PIN of my Trezor One?
@@ -68,17 +69,17 @@
 - How can I import and broadcast a final transaction from Cold Card?
 - Can I coin join the bitcoin on my hardware wallet?
 
-## [Settings](/FAQ/FAQ-UseWasabi.md#settings-1)
-- [How can I connect to my own full node to Wasabi?](/FAQ/FAQ-UseWasabi.md#how-can-i-connect-to-my-own-full-node-to-wasabi)
-- [How can I change the anonset target?](/FAQ/FAQ-UseWasabi.md#how-can-i-change-the-anonset-target)
+## [Settings](FAQ-UseWasabi.md#settings-1)
+- [How can I connect to my own full node to Wasabi?](FAQ-UseWasabi.md#how-can-i-connect-to-my-own-full-node-to-wasabi)
+- [How can I change the anonset target?](FAQ-UseWasabi.md#how-can-i-change-the-anonset-target)
 - How can I change the dust threshold?
-- [How can I turn off Tor?](/FAQ/FAQ-UseWasabi.md#how-can-i-turn-off-tor)
+- [How can I turn off Tor?](FAQ-UseWasabi.md#how-can-i-turn-off-tor)
 - Where can I find the logs?
 
-## [Coin Control Best Practices](/FAQ/FAQ-UseWasabi.md#coin-control-best-practices-1)
-- [Can I consolidate anonset coins?](/FAQ/FAQ-UseWasabi.md#can-i-consolidate-anonset-coins)
-- [How can I send my anonset coins to my hardware wallet?](/FAQ/FAQ-UseWasabi.md#how-can-i-send-my-anonset-coins-to-my-hardware-wallet)
-- [What can I do with small change?](/FAQ/FAQ-UseWasabi.md#what-can-i-do-with-small-change)
+## [Coin Control Best Practices](FAQ-UseWasabi.md#coin-control-best-practices-1)
+- [Can I consolidate anonset coins?](FAQ-UseWasabi.md#can-i-consolidate-anonset-coins)
+- [How can I send my anonset coins to my hardware wallet?](FAQ-UseWasabi.md#how-can-i-send-my-anonset-coins-to-my-hardware-wallet)
+- [What can I do with small change?](FAQ-UseWasabi.md#what-can-i-do-with-small-change)
 - Which coins can I select for coin joins?
 - How can I mix large amounts?
 
@@ -91,6 +92,15 @@
 
 
 ## Receive
+### Why is it bad to re-use addresses?
+Bitcoin is designed so that for every payment you can use a new address that is not tied to any of your previous addresses. When you use a new address for every coin, then it becomes much much more difficult to find out that these coins are from you. However, when you use the same address for every coin, then everyone knows that they all can be spend by one individual who has knowledge of the private key - you! Thus, when someone finds out that you have that address, maybe you published it in your social media profile for donations, or you send a coin to another peer who knows you, then they know also how many bitcoin you have in the other coins with that same address. Take good care to whom you tell your addresses, and every time, tell someone a different address.
+
+Because you have all the private keys, for all these addresses, you can produce a valid signature for any of them. So you can proof that these are your bitcoin, without relying on reputation that you have any other coins. You can easily generate and store many billions of private keys and addresses in a convenient [BIP 44 multi-account hierarchy for deterministic wallets](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki) so that you can backup everything in your 12 word mnemonic phrase. 
+
+This is what is used in Wasabi, you have on mnemonic backup, and unlimited numbers of new addresses. Everytime you a coin is received, then the address is removed from the GUI so that you are not tempted to use it again.
+
+Remember: ***NEVER RE-USE ADDRESSES***
+
 ### Why does Wasabi only use SegWit bech32 addresses?
 Wasabi generates Bech32 addresses only, also known as bc1 addresses or native SegWit addresses. These addresses start with the characters `bc1...` Some wallets/exchanges do not yet support this type of address and may give an error message (e.g. "unknown bitcoin address"). The solution is to manage your funds with a wallet which does support Bech32, [see list](https://en.bitcoin.it/wiki/Bech32_adoption).
 
@@ -106,7 +116,9 @@ Be careful, if you send all your coins from an old wallet to a new wallet (from 
 ## Coin Join
 ### What are the fees for the coin join?
 You currently pay a fee of 0.003% * anonymity set. If the anonymity set of a coin is 50 then you pay 0.003% * 50 (=0.15%). If you set the target anonymity set to 53 then Wasabi will continue mixing until this is reached, so you may end up with an anonymity set of say 60, and you will pay 0.003% * 60 (=0.18%).  
+
 There are also edge cases where you do not pay the full fee or where you pay more. For example if you're the smallest registrant to a round, you will never pay a fee. Also when you are remixing and you cannot pay the full fee with your input, then you only pay as much as you have, but if the change amount leftover would be too small, then that is also added to the fee. Currently the minimum change amount to be paid out is 0.7% of the base denomination (~0.1BTC.)  
+
 It is also possible that you get more back from mixing than you put in. This happens when network fees go down between the start of the round and its end. In this case, the difference is split between the active outputs of the mix.
 
 ### What is the anonymity set?
@@ -123,16 +135,22 @@ If 3 people take part in a CoinJoin (with equal size inputs) and there are 3 out
 ```
 
 There is no way to know which of the anon set output coins are owned by which of the input owners.
+
 All an observer knows is that a specific anon set output coin is owned by one of the owners of one of the input Coins i.e. 3 people - hence an anonymity set of 3.  
+
 Your Wasabi software has limited information on what the anonymity set should be, so the anonymity set that the software presents you is just an estimation, not an accurate value. With Wasabi we are trying to do lower estimations, rather than higher ones.
 
 ### Can I mix more than the round's minimum?
+
 Yes.  
+
 In a round with a ~0.1 BTC minimum, you could mix ~0.3 BTC and get a ~0.1 BTC output & a ~ 0.2 BTC output.
+
 Similarly, with a 0.7 BTC input you would expect the following outputs: ~0.1, ~0.2, ~0.4 BTC. The possible values of equal output that can be created are 0.1 x 2^n where n is a positive integer (or zero).  [See more here](https://youtu.be/PKtxzSLPWFU) and [here](https://youtu.be/3Ezru07J674).
 
 ### Why are the denominations such an odd number?
-The output value changes each round to ensure that you can enqueue a coin and have it remix (mix over and over again - increasing the anonymity set, improving privacy). As a result the round mixing amount will often be a specific number which generally decreases as the rounds proceed, with a reset once a lower bound is reached.0
+
+The output value changes each round to ensure that you can enqueue a coin and have it remix (mix over and over again - increasing the anonymity set, improving privacy). As a result the round mixing amount will often be a specific number which generally decreases as the rounds proceed, with a reset once a lower bound is reached.
 
 ### What is happening in the input registration phase?
 During the [input registration](https://github.com/nopara73/zerolink#1-input-registration-phase), you select which coins you want to register for coin join. These coins need to be confirmed on the Bitcoin timechain, unless they are from a Wasabi coin join and you re-register them. In the background, Wasabi generates an input proof so that the coordinator can verify that you actually own this coin. Then Wasabi generates several addresses, depending on the value of inputs registered. The address of the anonset coin join output must not be linked to your input, and thus it is [cryptographically blinded](https://en.wikipedia.org/wiki/Blind_signature) to incomprehensible cypher-text. Since the change output can be easily linked to your input with coin join sudoku [reference missing], this address is not blinded, but send in clear-text.
@@ -173,9 +191,11 @@ The coin join transaction is successfully build and signed, and it is now ready 
 
 ## Hardware Wallet
 
+
 ## Settings
 ### How do I connect my own full node to Wasabi?
-There is currently a basic implementation of connecting your full node to Wasabi. The server will still send you [BIP 158 block filters](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki), and when you realize that a block contains a transaction of yours, then you pull this block from your own full node, instead of a random P2P node, thus you can verify that this is actually a valid block including your transaction. One attack vector could be that Wasabi lies to you and give you wrong filters that exclude your transaction, thus you would see in the wallet less coins than you actually control. [BIP 157 solves this](https://github.com/bitcoin/bips/blob/master/bip-0157.mediawiki).
+There is currently a basic implementation of connecting your full node to Wasabi. The server will still send you [BIP 158 block filters](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki), and when you realize that a block contains a transaction of yours, then you pull this block from your own full node, instead of a random P2P node, thus you can verify that this is actually a valid block including your transaction. One attack vector could be that Wasabi lies to you and gives you wrong filters that exclude your transaction, thus you would see in the wallet less coins than you actually control. [BIP 157 solves this](https://github.com/bitcoin/bips/blob/master/bip-0157.mediawiki).
+
 When your full node is on the same hardware [computer, laptop] as your Wasabi Wallet, then it will automatically recognize it and pull blocks from there. If your node is on a remote device [raspberry pi, nodl, server], then you can specify your local IP in the Settings tab, or in line 11 of the config file. [See more here](https://youtu.be/gWo2RAkIVrE).
 
 ### How can I turn off Tor?
@@ -183,6 +203,7 @@ You can turn off Tor in the Settings. Note that in this case you are still priva
 
 ### How can I change the anonset target?
 In the Settings tab at the bottom you can change the three `PrivacyLevelX` values of the desired anon set of the yellow, green, and checkmark shield button in the GUI. The `MixUntilAnonymitySet` is the last selected value from previous use. 
+
 In the wallet GUI, go to `File`>`Open`>`Config File` and in the last 4 lines you see:
 
 ```json
@@ -204,7 +225,7 @@ If you would like to dive into the details of this topic, you can [read more her
 ### How can I send my anonset coins to my hardware wallet?
 Most hardware wallets communicate with servers to provide you with your balance. This reveals your public key to the server, which damages your privacy - the hardware company can now theoretically link together all your addresses. As a result **it is not recommended** that you send your mixed coins to an address associated with your hardware wallet unless you are confident that you have set up your hardware wallet in a way that it does not communicate with a 3rd party server (see below). 
 
-You can however manage your hardware wallet with the Wasabi interface. Alternatively you can use your hardware wallet with Electrum, which connects to your Bitcoin Core full node through [Electrum Personal Server](https://github.com/chris-belcher/electrum-personal-server).
+You can, however, manage your hardware wallet with the Wasabi interface. Alternatively, you can use your hardware wallet with Electrum, which connects to your Bitcoin Core full node through [Electrum Personal Server](https://github.com/chris-belcher/electrum-personal-server).
 
 ### What can I do with small change?
 There are no hard and fast rules for what to do with the change. Generally try to avoid the change and use the Max button extensively at sending. The most problematic type of change is what has `anonymity set 1` (red shield.) You should treat it as a kind of toxic waste (handled with great care).
