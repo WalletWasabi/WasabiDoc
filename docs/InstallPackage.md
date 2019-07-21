@@ -1,8 +1,9 @@
-# Install Instructions
+# Install package
 
-- [How to install Wasabi on Windows](InstallInstructions.md#windows)
-- [How to install Wasabi on Linux](InstallInstructions.md#linux)
-- [How to install Wasabi on OSX](InstallInstructions.md#osx)
+- [How to install Wasabi on Windows](InstallPackage.md#windows)
+- [How to install Wasabi on Debian and Ubuntu](InstallPackage.md#debian-and-ubuntu)
+- [How to install Wasabi on Other Linux](InstallPackage.md#other-linux)
+- [How to install Wasabi on OSX](InstallPackage.md#osx)
 
 It is strongly recommended to **VERIFY PGP SIGNATURES** of the downloaded packages before installing Wasabi. This protects you against malicious phising sites giving you back-doored Wallet software. Don't trust - Verify!
 
@@ -81,9 +82,7 @@ If you get an error upon the import of Ádám Ficsor's PGP key, then you can man
 ![](https://i.imgur.com/EICwNWq.png)
 
 
-## Linux
-
-### Debian and Ubuntu
+## Debian and Ubuntu
 
 Check out this [video guide](https://www.youtube.com/watch?v=DUc9A76rwX4).
 
@@ -100,7 +99,8 @@ If you have already imported Ádám Ficsor's public key, then jump to step 2.
 
 After the first run, a working directory will be created: `~/.walletwasabi/`. Among others, here is where your wallet files and your logs reside.
 
-### Other Linux
+
+## Other Linux
 
 Check out [this](https://www.youtube.com/watch?v=qFbv_b-bju4) [Note that this video was created on OSX, but the steps are the same for Linux.], or [this](https://www.youtube.com/watch?time_continue=4&v=zPKpC9cRcZo) video guide.
 
