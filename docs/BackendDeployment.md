@@ -1,4 +1,6 @@
-# Update
+# Backend Deployment
+
+## Update
 
 Consider updating the versions in `WalletWasabi.Helpers.Constants`. If versions are updated, make sure Client Release is already available before updating the backend.
 
@@ -21,70 +23,69 @@ pgrep -ilfa tor && pgrep -ilfa bitcoin && pgrep -ilfa wasabi && pgrep -ilfa ngin
 tail -10000 ~/.walletwasabi/backend/Logs.txt
 ```
 
-# 1. Create Remote Server
+## 1. Create Remote Server
 
-## Name
+- Name
 WalletWasabi.Backend.[TestNet/Main]
 
-## Image
+- Image
 Ubuntu 18.04 x64
 
-## Region
+- Region
 Mostly anywhere is fine, except the US or China.
 
-## Size
+- Size
 
-https://bitcoin.org/en/full-node#minimum-requirements
+[Bitcoin full node minimum requirements](https://bitcoin.org/en/full-node#minimum-requirements)
 
 [4GB Standard/32GB Standard]
 
-# 2. Setup Server
+## 2. Setup Server
 
-https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-18-04
+[Initial server setup with Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-18-04)
 
-## SSH in as Root
+### SSH in as Root
 
-Putty (Note copypaste with Ctrl+Insert and Shift+Insert.)  
-https://www.digitalocean.com/community/tutorials/how-to-use-ssh-keys-with-putty-on-digitalocean-droplets-windows-users
+Putty (Note copypaste with Ctrl+Insert and Shift+Insert.) 
+[How o use ssh keys with putty on Digital Ocean droplets Windowsusers](https://www.digitalocean.com/community/tutorials/how-to-use-ssh-keys-with-putty-on-digitalocean-droplets-windows-users)
 
-### Create a New User and Grant Administrative Privileges
+#### Create a New User and Grant Administrative Privileges
 
 ```sh
 adduser user
 usermod -aG sudo user
 ```
 
-# Setup Firewall
+## Setup Firewall
 
-https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-with-ufw-on-ubuntu-14-04
+[How to set up a firewall with UFW on Ubunt 14.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-with-ufw-on-ubuntu-14-04)
 
 ```sh
 ufw allow OpenSSH
 ufw enable
 ```
 
-> As the firewall is currently blocking all connections except for SSH, if you install and configure additional services, you will need to adjust the firewall settings to allow acceptable traffic in. You can learn some common UFW operations in this guide.
-> https://www.digitalocean.com/community/tutorials/ufw-essentials-common-firewall-rules-and-commands
+> As the firewall is currently blocking all connections except for SSH, if you install and configure additional services, you will need to adjust the firewall settings to allow acceptable traffic in. You can learn some common UFW operations in this guide.  ~ [UFW essentials common firewal rules and commands](https://www.digitalocean.com/community/tutorials/ufw-essentials-common-firewall-rules-and-commands)
 
-## Enable External Access for User
+### Enable External Access for User
 
 ```sh
 rsync --archive --chown=user:user ~/.ssh /home/user
 ```
 
-## Update Ubuntu
+### Update Ubuntu
 
 ```sh
 sudo apt-get update && sudo apt-get dist-upgrade -y
 ```
 
-# 3. Install .NET SDK
+## 3. Install .NET SDK
 
-https://www.microsoft.com/net/learn/get-started/linux/ubuntu18-04
+[.Net get started with Ubuntu 18.04](https://www.microsoft.com/net/learn/get-started/linux/ubuntu18-04)
 
 Opt out of the telemetry: `export DOTNET_CLI_TELEMETRY_OPTOUT=1`.
 
-# 4. Install Tor
+## 4. Install Tor
 
 ```sh
 sudo apt-get install tor
@@ -134,9 +135,9 @@ sudo ufw allow 80
 
 **Backup the generated private key!**
 
-# 5. Install, Configure and Synchronize bitcoind
+## 5. Install, Configure and Synchronize bitcoind
 
-https://bitcoin.org/en/download
+[Download bitcoind](https://bitcoin.org/en/download)
 
 ```sh
 sudo add-apt-repository ppa:bitcoin/bitcoin
@@ -159,9 +160,9 @@ testnet=[0/1]
 [main/test].rpcpassword=password
 [main/test].whitebind=127.0.0.1:[8333/18333]
 ```
-https://bitcoincore.org/en/releases/0.17.0/
-https://medium.com/@loopring/how-to-run-lighting-btc-node-and-start-mining-b55c4bab8ad  
-https://github.com/MrChrisJ/fullnode/issues/18
+[Bitcoin Core v0.17.0](https://bitcoincore.org/en/releases/0.17.0/)
+[How to run Lightninb BTC node and start mining](https://medium.com/@loopring/how-to-run-lighting-btc-node-and-start-mining-b55c4bab8ad)
+[Adding a Firewall](https://github.com/MrChrisJ/fullnode/issues/18)
 
 ```sh
 sudo ufw allow ssh
@@ -172,7 +173,7 @@ bitcoin-cli stop
 bitcoind
 ```
 
-# 6. Publish, Configure and Run WalletWasabi.Backend
+## 6. Publish, Configure and Run WalletWasabi.Backend
 
 ```sh
 git clone https://github.com/zkSNACKs/WalletWasabi.git
@@ -189,11 +190,11 @@ dotnet WalletWasabi/WalletWasabi.Backend/bin/Release/netcoreapp2.2/publish/Walle
 cat .walletwasabi/backend/Logs.txt
 ```
 
-# 7. Monitor the Apps
+## 7. Monitor the Apps
 
-## WalletWasabi.Backend
+### WalletWasabi.Backend
 
-https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/linux-nginx?view=aspnetcore-2.0&tabs=aspnetcore2x
+[Aspnet host and deploy Linux nginx](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/linux-nginx?view=aspnetcore-2.0&tabs=aspnetcore2x)
 
 ```sh
 sudo pico /etc/systemd/system/walletwasabi.service
@@ -223,7 +224,7 @@ systemctl status walletwasabi.service
 tail -10000 .walletwasabi/backend/Logs.txt
 ```
 
-## Tor
+### Tor
 
 ```sh
 tor
@@ -232,7 +233,7 @@ pgrep -ilfa tor
 
 ## 8. Setup nginx
 
-https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/linux-nginx?view=aspnetcore-2.0&tabs=aspnetcore2x#install-nginx
+[Aspnet install nginx](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/linux-nginx?view=aspnetcore-2.0&tabs=aspnetcore2x#install-nginx)
 Only setup nginx if you want to expose the autogenerated website to the clearnet.
 
 Enable firewall:
@@ -271,7 +272,7 @@ sudo nginx -t
 sudo nginx -s reload
 ```
 
-Setup https, redirect to https when asks. This will modify the above config file, but oh well.  
+Setup https, redirect to https when asks. This will modify the above config file, but oh well.
 
 ```sh
 sudo certbot -d wasabiwallet.io -d www.wasabiwallet.io -d wasabiwallet.net -d www.wasabiwallet.net -d wasabiwallet.org -d www.wasabiwallet.org -d wasabiwallet.info -d www.wasabiwallet.info -d wasabiwallet.co -d www.wasabiwallet.co -d zerolink.info -d www.zerolink.info -d hiddenwallet.org -d www.hiddenwallet.org
@@ -295,15 +296,15 @@ sudo nginx -s reload
 
 After accessing the website finalize preload in https://hstspreload.org/
 
-# Check If Everything Works
+## Check If Everything Works
 
-TestNet: http://testwnp3fugjln6vh5vpj7mvq3lkqqwjj3c2aafyu7laxz42kgwh2rad.onion/swagger/  
-Main: http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion/swagger/  
+TestNet: http://testwnp3fugjln6vh5vpj7mvq3lkqqwjj3c2aafyu7laxz42kgwh2rad.onion/swagger/
+Main: http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion/swagger/
 GET fees
 
 http://www.wasabiwallet.io/
 
-# Check Statuses
+## Check Statuses
 
 ```sh
 tail -f ~/.bitcoin/debug.log
