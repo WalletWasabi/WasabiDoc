@@ -83,7 +83,7 @@ This is the open source documentation repository of Wasabi Wallet, here you will
 ## Development
 
 - [A technical overview of Wasabi Wallet](TechnicalOverview.md)
-- Wasabi coding conventions
+- [Wasabi coding conventions](CodingConventions.md)
 - [Security policy](SECURITY.md)
 - [Code coverage](CodeCoverage.md)
 - [Manual testing](ManualTesting.md)
