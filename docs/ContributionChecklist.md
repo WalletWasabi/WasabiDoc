@@ -8,7 +8,7 @@ So you're interested in contributing go Wasabi - welcome! This checklist will ge
 > This can mean anything from fixing typos in documentation, to answering questions of fellow Wasabikas, to implementing new Wasabi features and everything in-between. All such contributions are very welcomed and greatly appreciated.
 
 ## Say hello and get started
-- [ ] Join our Slack, [Telegram](https://t.me/WasabiWallet) or [Sub-Reddit](https://www.reddit.com/r/WasabiWallet/), and check out the [GitHub](https://github.com/zkSnacks/WalletWasabi)
+- [ ] Join our [Slack](https://join.slack.com/t/tumblebit/shared_invite/enQtNjQ1MTQ2NzQ1ODI0LWIzOTg5YTM3YmNkOTg1NjZmZTQ3NmM1OTAzYmQyYzk1M2M0MTdlZDk2OTQwNzFiNTg1ZmExNzM0NjgzY2M0Yzg), [Telegram](https://t.me/WasabiWallet) or [Sub-Reddit](https://www.reddit.com/r/WasabiWallet/), and check out the [GitHub](https://github.com/zkSnacks/WalletWasabi)
 - [ ] Introduce yourself, say a bit about your skills and interests. This will help others point you in the right direction.
 - [ ] Explore the communication channels and find out what the peers are tinkering on, learn about the project and who is contributing in what way. This will help you to find the interesting challenges you can work on.
 
