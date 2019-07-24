@@ -10,11 +10,11 @@ This is the open source documentation repository of Wasabi Wallet, here you will
 ## Basics
 
 - Importance of privacy
-- Privacy in Bitcoin [problem in Bitcoin -> solution in Wasabi] </br>
-  -- Address reuse -> labeling </br>
-  -- Inputs and outputs -> coin selection </br>
-  -- Transaction graph -> coin join </br>
-  -- Network snooping -> block filters over Tor & full node </br>
+- [Privacy in Bitcoin](BitcoinPrivacy.md) </br>
+  -- [Address Reuse](BitcoinPrivacy.md#address-reuse) </br>
+  -- [Inputs and Outputs](BitcoinPrivacy.md#inputs-and-outputs) </br>
+  -- [Transaction Graph](BitcoinPrivacy.md#transaction-graph) </br>
+  -- [Network Snooping](BitcoinPrivacy.md#network-snooping) </br>
 - Getting started
 - Wasabi compared to other Wallets
 
