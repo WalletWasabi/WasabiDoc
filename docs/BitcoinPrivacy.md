@@ -42,7 +42,7 @@ Bitcoin has an accounting model of [unspent transaction outputs [UTXO]](https://
 
 _**UTXOs are not fungible**_
 
-Each UTXO is a unique snow flake with a public transaction history. For example, when Alice sends a coin to Bob, than Bob does not just have any random UTXO, but he has specifically the coin that Alice has sent him. When Bob sends this coin to Charlie, than Charlie can look back two hops to see the transaction from Alice to Bob. If Bob does not want Charlie to know that the transaction between Alice and Bob happened, then Bob needs to send Charlie a different coin.
+Each UTXO is a unique snow flake with a public transaction history. For example, when Alice sends a coin to Bob, then Bob does not just have any random UTXO, but he has specifically the coin that Alice has sent him. When Bob sends this coin to Charlie, than Charlie can look back two hops to see the transaction from Alice to Bob. If Bob does not want Charlie to know that the transaction between Alice and Bob happened, then Bob needs to send Charlie a different coin.
 
 Further, when Alice has one non-private coin and one private coin, and she selects both of them as the input of one transaction, then it might be clear that the previously private coin also belongs to Alice. This means that coin consolidation can lead to an overall decrease of privacy, especially when using a automatic coin selection algorithm.
 
@@ -65,9 +65,9 @@ Because of the input and output model of Bitcoin, there is a chain of digital si
 
 _**Zero Link coin joins**_
 
-In order to obfuscate the link between outputs and inputs, Wasabi uses the [Zero Link](https://github.com/nopara73/zerolink) coin join protocol. The Wasabi central coordinator cannot steal and cannot spy, he simple helps many peers to build a huge transaction, with many inputs, and many outputs. The non-private inputs can be linked to their previous transaction history. However, the equal value coin join outputs with anonymity set can not be tied to the inputs.
+In order to obfuscate the link between outputs and inputs, Wasabi uses the [Zero Link](https://github.com/nopara73/zerolink) coin join protocol. The Wasabi central coordinator cannot steal and cannot spy, he simple helps many peers to build a huge transaction, with many inputs, and many outputs. The non-private inputs can be linked to their previous transaction history. However, the equal value coin join outputs with an anonymity set can not be tied to the inputs.
 
-This means that when sending an anonset coin, the receiver does not know about the transaction history before the coin join. And when the receiver does a coin join himself, then the sender cannot spy on the later spending patterns.
+This means that when sending an anonset coin, the receiver does not know about the transaction history before the coin join. And when the receiver does a coin join himself, then the sender cannot spy on the later spending patterns. An outside observer can only guess the correct link at a rate of 1 in the anonset, for example 1-in-100, or 1%.
 
 
 ## Network snooping
@@ -88,7 +88,7 @@ _**Full node by default & block filters over tor**_
 
 Wasabi checks if there is a local Tor instance installed, and if yes it uses this to onion-route all the traffic to and from the network. If there Tor is not already installed, then it is installed automatically within Wasabi. This means that per default, all network communication is secured from outside snooping and the IP address is hidden.
 
-In order to fully verify everything, running a full node is essential. If bitcoind is installed on the same computer as Wasabi, then it will automatically and per default connect to the full node. It is also possible to connect Wasabi to a remote full node on another computer by specifying the local IP address or Tor hidden service in the settings. Now Wasabi pulls the verified blocks from the full node, and it also broadcasts the transactions to the P2P network from this full node.
+In order to fully verify everything, running a full node is essential. If [bitcoind](https://github.com/bitcoin/bitcoin) is installed on the same computer as Wasabi, then it will automatically and per default connect to the full node. It is also possible to connect Wasabi to a remote full node on another computer by specifying the local IP address or Tor hidden service in the settings. Now Wasabi pulls the verified blocks from the full node, and it also broadcasts the transactions to the P2P network from this full node.
 
 However, even if no full node is installed, Wasabi has a light client mode based on [BIP 158 block filters](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki). When the user sends the extended public key, or a filter of all the addresses to the central server, then the server can **COMPLETELY** deanonymize the users. Therefore the Wasabi server sends a filter of all the transactions in each block to all the users. Now they check locally if the block contains a transaction with their address. If no, then the filter is stored for later reference, and no block is downloaded. However, if there is a user transaction in that block, then Wasabi connects to a random Bitcoin P2P node over tor, and asks for this entire block, not only one transaction. This block request is indistinguishable from the regular P2P gossip, and thus nobody, neither the server nor the full node, know which addresses belong to the user.
 
