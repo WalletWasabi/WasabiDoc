@@ -35,7 +35,7 @@ Ok. You’re all set up and ready to work. Here’s what to do next.
 ## What to work on
 It is not required to work on an existing issue to contribute to Wasabi, and no one is here to tell you what to do. Contributors who have their own ideas are free to work in their own forks on whatever they wish, however they wish, and without any permission from anyone.
 
-With that said, it's a good idea to consult with other Wasabikas via Slack, GitHub, or other communication channels before setting out on any serious contribution effort. Do this in order to ensure your contribution is:
+With that said, it's a good idea to consult with other Wasabikas via Slack, GitHub, or other communication channels before setting out on any serious contribution effort. Also check the [ToDo list](ToDo.md) for the short and long term priorities. Do this in order to ensure your contribution is:
 
 - something that the relevant maintainer(s) would be likely to merge;
 - something that stakeholders would likely vote to approve as a compensation request;

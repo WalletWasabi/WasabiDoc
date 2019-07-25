@@ -114,7 +114,7 @@ This is the open source documentation repository of Wasabi Wallet, here you will
 
 - [Dojo](Dojo.md)
 - Support
-- Issues
+- [Short term ToDo's and long term roadmap](ToDo.md)
 - [Contribution Checklist](ContributionChecklist.md)
 - [Demo Guide](DemoGuide.md)
 - [Contribution Game](ContributionGame.md)
