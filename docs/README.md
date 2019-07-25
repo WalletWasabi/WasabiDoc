@@ -79,6 +79,7 @@ This is the open source documentation repository of Wasabi Wallet, here you will
 - Minimum amount and denomination
 - Duration
 - Fees
+- [Pay To EndPoint](PayToEndPoint.md)
 
 
 ## Development
