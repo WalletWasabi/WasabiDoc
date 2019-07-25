@@ -9,7 +9,7 @@ This is the open source documentation repository of Wasabi Wallet, here you will
 
 ## Basics
 
-- Importance of privacy
+- [Why Privacy is Important](WhyPrivacyImportant.md)
 - [Privacy in Bitcoin](BitcoinPrivacy.md) </br>
   -- [Address Reuse](BitcoinPrivacy.md#address-reuse) </br>
   -- [Inputs and Outputs](BitcoinPrivacy.md#inputs-and-outputs) </br>
