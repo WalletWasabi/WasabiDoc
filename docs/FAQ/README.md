@@ -8,7 +8,7 @@ This document contains a list of all the questions and common issues answered in
 - How is Bitcoin bad in terms of privacy?
 - Why is it important to use a new address for every payment?
 - Why is it important for my privacy to run a full node?
-- How does Tor protect my network-level privacy? 
+- How does Tor protect my network-level privacy?
 
 ## [Introduction to Wasabi](FAQ-Introduction.md)
 - Explain Wasabi like I'm 5
@@ -133,6 +133,6 @@ This document contains a list of all the questions and common issues answered in
 - How can I report a bug?
 - How can I request a feature?
 - How should I start contributing code?
-- Who verifies the pull requests? 
+- Who verifies the pull requests?
 - Is there a bounty program?
 - What is on the future roadmap of Wasabi development?
