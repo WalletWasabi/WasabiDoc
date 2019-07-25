@@ -2,6 +2,8 @@
 
 Wasabi Wallet strives toward establishing solid industry best practices and standards. Here is a list of all the supported and integrated Bitcoin Improvement Proposals:
 
+## What is supported today
+
 - [BIP 32: Hierarchical Deterministic Wallets](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki)
 - [BIP 38: Password-Protected Private Key](https://github.com/bitcoin/bips/blob/master/bip-0038.mediawiki)
 - [BIP 39: Mnemonic Code for Generating Deterministic Keys](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki)
@@ -20,4 +22,4 @@ Wasabi Wallet strives toward establishing solid industry best practices and stan
 - [BIP 157: Client Side Block Filtering](https://github.com/bitcoin/bips/blob/master/bip-0157.mediawiki)
 - [BIP Schnorr](https://github.com/sipa/bips/blob/bip-schnorr/bip-schnorr.mediawiki)
 - [BIP Taproot](https://github.com/sipa/bips/blob/bip-schnorr/bip-taproot.mediawiki)
-- BIP Tapscript
+- [BIP Tapscript](https://github.com/sipa/bips/blob/bip-schnorr/bip-tapscript.mediawiki)
