@@ -52,6 +52,7 @@ This is the open source documentation repository of Wasabi Wallet, here you will
 -- Broadcast PSBT </br>
 
 ### Load Wallet
+- [Network Level Privacy - Bitcoin Core vs Wasabi Wallet](NetworkLevelPrivacy.md)
 - Difference hot / watch only wallet
 - BIP 158 block filter
 - Download of blocks over tor & full node
