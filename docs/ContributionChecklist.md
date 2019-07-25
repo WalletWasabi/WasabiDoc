@@ -25,7 +25,7 @@ So you're interested in contributing go Wasabi - welcome! This checklist will ge
 
 ## Do valuable work
 Ok. You’re all set up and ready to work. Here’s what to do next.
-1. **Find a problem somewhere in Wasabi-land** that (a) needs fixing and (b) is a match for your skills and interests. Browse [open issues](https://github.com/zksnacks/walletwasabi/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc), ask around about what other contributors think needs fixing. Because while you don’t need anybody’s permission and you can work on whatever you want, you’ll want to know up front whether anybody else is going to care about the work you do.
+1. **Find a problem somewhere in Wasabi-land** that (a) needs fixing and (b) is a match for your skills and interests. Browse [open issues](https://github.com/zksnacks/walletwasabi/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc) and [ToDo's](ToDo.md), ask around about what other contributors think needs fixing. Because while you don’t need anybody’s permission and you can work on whatever you want, you’ll want to know up front whether anybody else is going to care about the work you do.
 2. **Do work to fix that problem.** Submit your fix for review with a pull request (for [code](https://github.com/zkSNACKs/WalletWasabi/pulls?q=is%3Apr+is%3Aopen+sort%3Aupdated-desc) and [documentation](https://github.com/zkSNACKs/WasabiDoc/pulls) changes) or with a GitHub [issue](https://github.com/zksnacks/walletwasabi/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc) (for everything else).
 3. **Request that others review your work.** The best way to do this is by writing good commit comments and pull request/issue descriptions that clearly explain the problem your work is intended to solve, why it’s important, and why you fixed it the way you did. Make it as easy as possible for others to review your work. Make it a *pleasure* for others to review your work.
 4. **Incorporate review feedback** you get until your fix gets merged or is otherwise accepted.
@@ -38,8 +38,8 @@ It is not required to work on an existing issue to contribute to Wasabi, and no 
 With that said, it's a good idea to consult with other Wasabikas via Slack, GitHub, or other communication channels before setting out on any serious contribution effort. Also check the [ToDo list](ToDo.md) for the short and long term priorities. Do this in order to ensure your contribution is:
 
 - something that the relevant maintainer(s) would be likely to merge;
-- something that stakeholders would likely vote to approve as a compensation request;
-- subjected to as much feedback as possible while still an idea and thus cheap to change or abort.
+- subjected to as much feedback as possible while still an idea and thus cheap to change or abort;
+- something that might be considered in the [contribution game](ContributionGame.md) and bouty programs.
 
 Remember: _every contributor_ is free to work on what they want, including maintainers who may or may not want to review and merge your pull request if they don't have any prior context for it, or reason to believe it's worth spending their time on.
 
