@@ -87,4 +87,4 @@ Wasabi is an ideal wallet for many things, but trade-offs exist with everything.
 
 ## Credits
 
-Much of this list comes from the work of our good friends at JoinMaket. In particular, we need to thank [Adam Gibson](https://twitter.com/waxwing__) and [Chris Belcher](https://twitter.com/chris_belcher_) for their outstanding contribution to privacy in Bitcoin. Please take a look at the [Bitcoin Privacy Wiki](https://en.bitcoin.it/wiki/Privacy), the [Join Market Wiki](https://en.bitcoin.it/wiki/JoinMarket) and the [Join Market source code](github https://github.com/JoinMarket-Org).
+Much of this list comes from the work of our good friends at JoinMaket. In particular, we need to thank [Adam Gibson](https://twitter.com/waxwing__) and [Chris Belcher](https://twitter.com/chris_belcher_) for their outstanding contribution to privacy in Bitcoin. Please take a look at the [Bitcoin Privacy Wiki](https://en.bitcoin.it/wiki/Privacy), the [Join Market Wiki](https://en.bitcoin.it/wiki/JoinMarket) and the [Join Market source code](https://github.com/JoinMarket-Org).
