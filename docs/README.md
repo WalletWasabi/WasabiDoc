@@ -16,6 +16,7 @@ This is the open source documentation repository of Wasabi Wallet, here you will
   -- [Transaction Graph](BitcoinPrivacy.md#transaction-graph) </br>
   -- [Network Snooping](BitcoinPrivacy.md#network-snooping) </br>
 - Getting started
+- [Wasabi 10 Commandments](10Commandments.md)
 - Wasabi compared to other Wallets
 
 ## Installing Wasabi
