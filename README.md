@@ -14,13 +14,25 @@ Install the dependencies:
 npm install
 ```
 
+## Development
+
 Start the local build:
 
 ```bash
 npm start
 ```
 
-Create the deployable production build:
+## Deployment
+
+Deploy the site manually:
+
+```bash
+npm run deploy
+```
+
+The command above creates a production build and pushes it to the GitHub Pages branch.
+
+To just create the production build you can use this command:
 
 ```bash
 npm run build
