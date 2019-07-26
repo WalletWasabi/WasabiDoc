@@ -6,6 +6,8 @@ This is the open source documentation repository of Wasabi Wallet, here you will
 
 ## Setup
 
+Prerequisite: [Node.js](https://nodejs.org/en/download/)
+
 Install the dependencies:
 
 ```bash
@@ -15,5 +17,11 @@ npm install
 Start the local build:
 
 ```bash
-npm build
+npm start
+```
+
+Create the deployable production build:
+
+```bash
+npm run build
 ```
