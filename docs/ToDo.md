@@ -25,6 +25,7 @@ This document is for providing a one place stop for anyone interested in the sho
 - Proper bitcoind integration
 - Pay to EndPoint integration
 - Join Market integration
+- [SNICKER integration: Simple Non-Interactive Coinjoin with Keys for Encryption Reused](https://github.com/zkSNACKs/Meta/issues/67)
 - Lightning network integration 
 - Coin join statistics database and website
 - SegWit v1 Schnorr / Taproot
