@@ -33,6 +33,7 @@
 - What fee should I select?
 - Can I see the fee in Satoshis per byte?
 - How is the tansaction broadcasted?
+- [Why does Wasabi choose a new random node every time I send a transaction?](FAQ-UseWasabi.md#why-does-wasabi-choose-a-new-random-node-every-time-I-send-a-transaction)
 
 ## [History](FAQ-UseWasabi.md#history-1)
 - How can I check the history of transactions?
@@ -108,6 +109,12 @@ Be careful, if you send all your coins from an old wallet to a new wallet (from 
 
 
 ## Send
+
+### Why does Wasabi choose a new random node every time I send a transaction?
+
+When you broadcast a transaction from a full node, that transaction is flooded into the network. Essentially, all nearby nodes are passed your transaction, and those nodes will pass to all of their nearby nodes, etc. However, if a malicious adversary were to get enough relay nodes in the network, they could pretty easily connect the initial location of a transaction by simply observing from which node the transaction appeared first. For this reason, broadcasting transaction through your own node may reveal your IP address.
+
+So to fix this Wasabi broadcasts your transactions to a random node, and messages that node through TOR, so the node cannot detect your IP address. When you want to subsequently send another transaction on the network, Wasabi destroys the original TOR bridge and connection to the node and established a new TOR bridge and connection with a brand new node. This reduces the risk of a passive bystander being able to link two transactions together that appear from the same location.
 
 
 ## History
