@@ -3,6 +3,8 @@
 From this document you will find links to information about the nuances of privacy in Bitcoin, how Wasabi solves these difficult problems, and how you can use these tools to defend yourself. 
 If you have a question that is not yet covered, please [open an issue](https://github.com/zkSNACKs/WasabiDoc/issues), if you have a good answer to a question, please [open a pull request](https://github.com/zkSNACKs/WasabiDoc/pulls).
 
+Developers repository can be found [here](https://github.com/zkSNACKs/WalletWasabi).
+
 
 ## Basics
 
