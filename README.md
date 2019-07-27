@@ -2,8 +2,8 @@
 
 # Documentation
 
-This is the open source documentation repository of Wasabi Wallet*. 
-From the [docs](https://github.com/CryptoRafe/WasabiDoc/tree/master/docs) files you will find information about the nuances of privacy in Bitcoin, how Wasabi solves these difficult problems, and how you can use these tools to defend yourself. 
+This is the open source documentation repository of [Wasabi Wallet](https://wasabiwallet.io)*. 
+From the [docs](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs) files you will find information about the nuances of privacy in Bitcoin, how Wasabi solves these difficult problems, and how you can use these tools to defend yourself. 
 If you would like to support the project by educating your peers, this documentation repository is the right place for your efforts!
 
 Have a question that is not yet covered? Please [open an issue](https://github.com/zkSNACKs/WasabiDoc/issues).
