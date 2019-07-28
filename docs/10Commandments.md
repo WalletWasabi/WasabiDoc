@@ -4,7 +4,7 @@
 2. [Verify the integrity of your software](10Commandments.md#2-verify-the-integrity-of-your-software)
 3. [Keep your mnemonic words and password safely stored (BOTH!)](10Commandments.md#3-keep-your-mnemonic-words-and-password-safely-stored-both)
 4. [Practice good labeling AND try to never reuse addresses](10Commandments.md#4-practice-good-labeling-and-try-to-never-reuse-addresses)
-5. [Coin join whenever possible and be patient](10Commandments.md#5-coin-join-whenever-possible-and-be-patient)
+5. [CoinJoin whenever possible and be patient](10Commandments.md#5-coinjoin-whenever-possible-and-be-patient)
 6. [Use separate profiles](10Commandments.md#6-use-separate-profiles)
 7. [Never merge mixed and unmixed coins, and avoid large merges of mixed coins](10Commandments.md#7-never-merge-mixed-and-unmixed-coins-and-avoid-large-merges-of-mixed-coins)
 8. [Avoid 3rd party servers & Buy Bitcoin P2P](10Commandments.md#8-avoid-3rd-party-servers--buy-bitcoin-p2p)
@@ -47,9 +47,9 @@ Address #1
 
 Lastly, if you must use an exchange, try to ask for a new deposit address on each deposit. In the same way that you should never receive Bitcoin to the same address twice, you should try to avoiding sending Bitcoin to the same address twice.
 
-## 5. Coin join whenever possible and be patient!
+## 5. CoinJoin whenever possible and be patient!
 
-The process of engaging in a coin join is as simple as selecting a coin or coins to en-queue and entering your password. Once coins have en-queued for coin joining, you must keep your computer online and awake, as the coin join process is interactive. As a coin join is really just many users (up to 100) en-queuing coins at the same time, it may take up to two hours for you to successfully participate in a coin join and clean outputs should only be spent once the coin join transaction is confirmed. For context, Wasabi currently does 18 coin joins a day, or roughly one every 1 hour and 20 minutes. As more users join the network, the frequency of these coin joins will go up. Lastly, if you are able and patient enough to re-mix your coins, please do so. Re-mixing coins is nearly free and greatly encouraged!
+The process of engaging in a CoinJoin is as simple as selecting a coin or coins to en-queue and entering your password. Once coins have en-queued for CoinJoining, you must keep your computer online and awake, as the coin join process is interactive. As a coin join is really just many users (up to 100) en-queuing coins at the same time, it may take up to two hours for you to successfully participate in a CoinJoin and clean outputs should only be spent once the coin join transaction is confirmed. For context, Wasabi currently does 18 CoinJoins a day, or roughly one every 1 hour and 20 minutes. As more users join the network, the frequency of these CoinJoins will go up. Lastly, if you are able and patient enough to re-mix your coins, please do so. Re-mixing coins is nearly free and greatly encouraged!
 
 ## 6. Use separate profiles
 
@@ -57,7 +57,7 @@ When you put a label on an address, or ask a question on this Reddit or send coi
 
 ## 7. Never merge mixed and unmixed coins, and avoid large merges of mixed coins!
 
-The first part should be somewhat intuitive - coins in your wallet have shields (red, yellow, green and green +) and it is at a minimum important to never send non-red coins (coins with anonset > 1) with red coins (coins with anonset == 1). By merging your tainted coins with your mixed coins, you undo the privacy benefits of coin joins! Further, when sending mixed coins to your cold storage, make sure to send your coins in parallel. Don't merge all of your Bitcoin (more than 0.8 BTC) in a single transaction! Instead, take your time and send coins to multiple addresses belong to your cold storage over a few hours or days. If you are sending coins to an exchange, you can get the same result by requesting a brand new address to receive coins.
+The first part should be somewhat intuitive - coins in your wallet have shields (red, yellow, green and green +) and it is at a minimum important to never send non-red coins (coins with anonset > 1) with red coins (coins with anonset == 1). By merging your tainted coins with your mixed coins, you undo the privacy benefits of CoinJoins! Further, when sending mixed coins to your cold storage, make sure to send your coins in parallel. Don't merge all of your Bitcoin (more than 0.8 BTC) in a single transaction! Instead, take your time and send coins to multiple addresses belong to your cold storage over a few hours or days. If you are sending coins to an exchange, you can get the same result by requesting a brand new address to receive coins.
 
 For more information, please see the discussions [here](https://www.reddit.com/r/WasabiWallet/comments/avxbjy/combining_mixed_coins_privacy_megathread/).
 
@@ -83,7 +83,7 @@ Wasabi will work just fine without a local full node on your device, however, if
 
 ## 10. Use Lightning
 
-Wasabi is an ideal wallet for many things, but trade-offs exist with everything. If you have small amounts of un-mixed change from previous coin joins and you are unable to meet the requirements to engage in a coin join, consider using that coin to open a lightning channel. Lightning is still a project in its' early days, but the privacy topology of lightning payments is much more ideal over on-chain payments if you have the choice. Routing large amounts can be uncertain, but for small amounts the network is becoming steadily more reliable. Currently Wasabi does not support in-wallet lightning features, but it is on the road-map.
+Wasabi is an ideal wallet for many things, but trade-offs exist with everything. If you have small amounts of un-mixed change from previous CoinJoins and you are unable to meet the requirements to engage in a CoinJoin, consider using that coin to open a lightning channel. Lightning is still a project in its' early days, but the privacy topology of lightning payments is much more ideal over on-chain payments if you have the choice. Routing large amounts can be uncertain, but for small amounts the network is becoming steadily more reliable. Currently Wasabi does not support in-wallet lightning features, but it is on the road-map.
 
 ## Credits
 
