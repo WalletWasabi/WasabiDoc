@@ -33,6 +33,7 @@
 - What fee should I select?
 - Can I see the fee in Satoshis per byte?
 - How is the tansaction broadcasted?
+- [Why does Wasabi choose a new random node every time I send a transaction?](FAQ-UseWasabi.md#why-does-wasabi-choose-a-new-random-node-every-time-I-send-a-transaction)
 
 ## [History](FAQ-UseWasabi.md#history-1)
 - How can I check the history of transactions?
@@ -108,6 +109,12 @@ Be careful, if you send all your coins from an old wallet to a new wallet (from 
 
 
 ## Send
+
+### Why does Wasabi choose a new random node every time I send a transaction?
+
+When you broadcast a transaction from a full node, that transaction is flooded into the network. Essentially, all nearby nodes are passed your transaction, and those nodes will pass to all of their nearby nodes, etc. However, if a malicious adversary were to get enough relay nodes in the network, they could pretty easily connect the initial location of a transaction by simply observing from which node the transaction appeared first. For this reason, broadcasting transaction through your own node may reveal your IP address.
+
+So to fix this Wasabi broadcasts your transactions to a random node, and messages that node through TOR, so the node cannot detect your IP address. When you want to subsequently send another transaction on the network, Wasabi destroys the original TOR bridge and connection to the node and established a new TOR bridge and connection with a brand new node. This reduces the risk of a passive bystander being able to link two transactions together that appear from the same location.
 
 
 ## History
@@ -225,12 +232,21 @@ Most hardware wallets communicate with servers to provide you with your balance.
 You can, however, manage your hardware wallet with the Wasabi interface. Alternatively, you can use your hardware wallet with Electrum, which connects to your Bitcoin Core full node through [Electrum Personal Server](https://github.com/chris-belcher/electrum-personal-server).
 
 ### What can I do with small change?
-There are no hard and fast rules for what to do with the change. Generally try to avoid the change and use the Max button extensively at sending. The most problematic type of change is what has `anonymity set 1` (red shield.) You should treat it as a kind of toxic waste (handled with great care).
+There are no hard and fast rules for what to do with the change. Generally try to avoid the change and use the `Max` button extensively to send whole coins. The most problematic type of change is what has `anonymity set 1` (red shield.) You should treat it as a kind of toxic waste (handled with great care).
 
 **Warning**
+
 You want to avoid merging `anonymity set 1 coins` with `anonymity set > 1 coins` wherever possible, because this will link your `anonymity set > 1 coin` to the coin you merge it with. Note that, this is also true if you merge them in a mix, however that is slightly less problematic, because some blockchain analysis techniques become [computationally infeasible](https://www.comsys.rwth-aachen.de/fileadmin/papers/2017/2017-maurer-trustcom-coinjoin.pdf).
 
 It is also important that you do not send different coins to the same receiving address (even if performed as separate transactions) as this will also link the coins together, damaging your privacy.
+
+There are two different types of zero link change:
+
+When you have a KYC coin with red anonset 1 and you register it for CoinJoin, then you get one anonset 100 green coin and one red anonset 1 change. This change is very clearly tied to your KYC input coin, but the CoinJoin output is pretty good with anonset 100. If you combine that red coin with the green, then it's clear that both of them belong to you, and thus the anonset of the output in this transactioin becomes the lowest common denominator, in this case anonset 1.
+
+When you take a 100 anonset coin, and you register it again for CoinJoin, then you get one coin with anonset 200, and one change with anonset 100. This change has anonset 100 because it can be linked to the input of the second CoinJoin, but this coin has anonset 100 already. So, although this change can still reveal pre-mix history, because the pr-mix history is another CoinJoin, you cannot go farther back. So, it might be ok to send this second change output to some place, or even consolidate it, because it still has anonset.
+
+When you consolidate several small change coins in a regular transaction, then every outside observer knows that they belong to the same cluster. However, you can consolidate within a CoinJoin by simply selecting all these coins in the CoinJoin tab. Because the Wasabi CoinJoin transaction shuffles inputs, for an outside observer it is not clear which inputs belong to the same Alice. However, the coordinator gets the input proof of **ALL** the coins that Alice has provided during the input registration phase. Thus the coordinator knows that this is a consolidation transaction. It is wise to assume that every one knows what the coordinator knows. So consolidating in a CoinJoin is better, but it might still reveal the common ownership of the coins.
 
 **Your Options**
 - If you do not care about linking the history of the coins because they are all from the same source then you could combine them in a mix (queue all the change from the same source until you reach the minimum input required to mix, currently ~ 0.1 BTC).  

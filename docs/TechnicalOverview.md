@@ -45,15 +45,15 @@ After setting up Wasabi and generating a wallet, Wasabi welcomes the user with a
 
 Wasabi has a status bar that shows meta information about the state of the wallet. To better understand the architecture of the wallet it is helpful to go through them.
 
-The "Tor" label shows the status of the Tor daemon. Tor is an anonymity network which Wasabi ships with by default and runs in the background. The user can also opt to use their own Tor instance. All Internet traffic goes through Tor and by deafault all this traffic stays inside the onion network. Exit nodes are only involved in fallback scenarios. For example if the Tor hidden service of the backend becomes unavaiable for the user, the wallet falls back communicating with the backend's clearnet endpoint, still over Tor. Wasabi also frequently utilizes multiple Tor streams where applicable. For example, registration of coinjoin inputs and outputs is done through different Tor streams to avoid linking.
+The "Tor" label shows the status of the Tor daemon. Tor is an anonymity network which Wasabi ships with by default and runs in the background. The user can also opt to use their own Tor instance. All Internet traffic goes through Tor and by deafault all this traffic stays inside the onion network. Exit nodes are only involved in fallback scenarios. For example if the Tor hidden service of the backend becomes unavaiable for the user, the wallet falls back communicating with the backend's clearnet endpoint, still over Tor. Wasabi also frequently utilizes multiple Tor streams where applicable. For example, registration of CoinJoin inputs and outputs is done through different Tor streams to avoid linking.
 
 ![](https://i.imgur.com/054zvbY.png)
 
-Wasabi's backend is used to facilitate [Chaumian CoinJoin](https://github.com/nopara73/ZeroLink#ii-chaumian-coinjoin) coordination between the mixing participants and to serve Golomb-Rice filters to the clients, similarly to [BIP158](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki). More information will be provided about the difference soon. Before that, it is worth pointing out that the design choice of building a light wallet was made because such a wallet can attract orders of magnitude more users compared to a wallet on top of a full node, and more users means larger and faster coinjoins. Historically, all light wallets were vulnerable to some kind of network observer due to unprivate utxo fetching. A few years ago, the only type of wallet that wasn't vulnerable was a full node, like Bitcoin Core. The first iteration of Wasabi was [HiddenWallet](https://github.com/zkSNACKs/WalletWasabi/tree/hiddenwallet-v0.6), which was a full-block SPV wallet that aimed to leverage usability without compromising privacy through the omission of initial blockchain downloading compared to a full node. In theory, it was a light wallet. In practice, it was hard to compete with Bitcoin Core's micro-optimizations and it was still painful to wait for wallet synchronization every time the wallet was opened. [Read more about network level Bitcoin wallet privacy here.](https://medium.com/@nopara73/bitcoin-core-vs-wasabi-wallet-network-level-privacy-bdca1d501387)
+Wasabi's backend is used to facilitate [Chaumian CoinJoin](https://github.com/nopara73/ZeroLink#ii-chaumian-coinjoin) coordination between the mixing participants and to serve Golomb-Rice filters to the clients, similarly to [BIP158](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki). More information will be provided about the difference soon. Before that, it is worth pointing out that the design choice of building a light wallet was made because such a wallet can attract orders of magnitude more users compared to a wallet on top of a full node, and more users means larger and faster CoinJoins. Historically, all light wallets were vulnerable to some kind of network observer due to unprivate utxo fetching. A few years ago, the only type of wallet that wasn't vulnerable was a full node, like Bitcoin Core. The first iteration of Wasabi was [HiddenWallet](https://github.com/zkSNACKs/WalletWasabi/tree/hiddenwallet-v0.6), which was a full-block SPV wallet that aimed to leverage usability without compromising privacy through the omission of initial blockchain downloading compared to a full node. In theory, it was a light wallet. In practice, it was hard to compete with Bitcoin Core's micro-optimizations and it was still painful to wait for wallet synchronization every time the wallet was opened. [Read more about network level Bitcoin wallet privacy here.](https://medium.com/@nopara73/bitcoin-core-vs-wasabi-wallet-network-level-privacy-bdca1d501387)
 
 ![](https://i.imgur.com/lSXrOpJ.png)
 
-Back to Wasabi. After loading the wallet, the user can generate a receive address. Some important design choices were made here. First, Wasabi had to be a Segregated Witness only wallet, so the registration of unconfirmed coinjoin outputs into a new coinjoin round is done to prevent malleability attacks. However, the developers of Wasabi decided to make the wallet native segwit (bech32) only, not supporting wrapped segwit. This way, the backend server can leverage this and only generate filters regarding bech32 addresses. This makes Wasabi's filter size a few megabytes today, instead of >4GB. At first glance, this may be seen as hazardous to privacy, however Wasabi user utxos can be identified as Wasabi utxos by the huge coinjoins that only Wasabi does anyway, so minimal to no additional privacy loss happens there. In the future, as more and more wallets adopt bech32, Wasabi developers will have to look at how to scale the performance and network usage of the wallet. Failing that, Wasabi's initial sync will slow down.
+Back to Wasabi. After loading the wallet, the user can generate a receive address. Some important design choices were made here. First, Wasabi had to be a Segregated Witness only wallet, so the registration of unconfirmed CoinJoin outputs into a new CoinJoin round is done to prevent malleability attacks. However, the developers of Wasabi decided to make the wallet native segwit (bech32) only, not supporting wrapped segwit. This way, the backend server can leverage this and only generate filters regarding bech32 addresses. This makes Wasabi's filter size a few megabytes today, instead of >4GB. At first glance, this may be seen as hazardous to privacy, however Wasabi user utxos can be identified as Wasabi utxos by the huge CoinJoins that only Wasabi does anyway, so minimal to no additional privacy loss happens there. In the future, as more and more wallets adopt bech32, Wasabi developers will have to look at how to scale the performance and network usage of the wallet. Failing that, Wasabi's initial sync will slow down.
 
 This page shows the wallets that can be used to send to and receive from Wasabi: https://en.bitcoin.it/wiki/Bech32_adoption#Software_Wallets
 
@@ -91,7 +91,7 @@ Coins in Wasabi have Privacy and History properties. The anonymity set is just a
 
 ![](https://i.imgur.com/4vUiSWr.png)
 
-Wasabi has a CoinJoin tab as well, its use is straightforward. The user queues their coins for coinjoin and waits for others to join the mix.
+Wasabi has a CoinJoin tab as well, its use is straightforward. The user queues their coins for CoinJoin and waits for others to join the mix.
 
 ![](https://i.imgur.com/8wFd88C.png)
 
@@ -105,7 +105,7 @@ After a mix has successfully executed, the resulting CoinJoin transaction will l
 
 Wasabi also has a Tor website where one can see real time statistics about the mixes: http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion/
 
-To this day, Wasabi's coinjoins have created >22941 BTC outputs with equal value.
+To this day, Wasabi's CoinJoins have created >22941 BTC outputs with equal value.
 
 ## II. Stability, Performance, UX, Code Quality
 
@@ -123,7 +123,7 @@ While education, content creation and marketing have little place in a technical
 
 At the Blockchain level Wasabi currently helps its users achieve the desired level of privacy in three main ways: mixing, coin control and intra-wallet clustering.  
 
-Coin mixing happens through Chaumian CoinJoin, as described in the [ZeroLink](https://github.com/nopara73/ZeroLink/) protocol. In a nutshell, Wasabi users register their transaction inputs and desired outputs with a coordinator, and the cooperation of these users results in a large coinjoin transaction. The coordinator cannot steal from, nor deanonymize the users. However, with ZeroLink, in order to statistically avoid post-mix deanonymization, coins must not be joined together. This, however, is unfeasible in practice.  
+Coin mixing happens through Chaumian CoinJoin, as described in the [ZeroLink](https://github.com/nopara73/ZeroLink/) protocol. In a nutshell, Wasabi users register their transaction inputs and desired outputs with a coordinator, and the cooperation of these users results in a large CoinJoin transaction. The coordinator cannot steal from, nor deanonymize the users. However, with ZeroLink, in order to statistically avoid post-mix deanonymization, coins must not be joined together. This, however, is unfeasible in practice.  
 Thus, various strategies are needed to mitigate this deanonymization risk.  
 
 One such strategy is Wasabi's current compulsory coin control feature. It helps the users to not join coins together and spend whole coins, but it does not force them, so it is not perfect.  
@@ -223,7 +223,7 @@ The question of a web-wallet is also something to think about. However, it may n
 
 ### Hardware Wallet
 
-Wasabi has hardware wallet integration however in this mode coinjoining is not possible: https://github.com/zkSNACKs/WalletWasabi/pull/1341
+Wasabi has hardware wallet integration however in this mode CoinJoining is not possible: https://github.com/zkSNACKs/WalletWasabi/pull/1341
 
 ### Bitcoin Core
 
@@ -231,7 +231,7 @@ Some of the users use full nodes, mainly Bitcoin Core as their personal wallet, 
 
 ### Daemon/API
 
-Another way to improve the software is to let developers play with it through a daemon (RPC?) process. This however may lead to enterprise adoption, which is good for liquidity, but there is a risk of centralization and thus Sybil attacks. May become more likely. For example an exchange could decide to add coinjoins and if they acquire 50% of liquidity in Wasabi, this way many of the wallet assumptions about anonymity sets would become less accurate. https://github.com/zkSNACKs/Meta/issues/12
+Another way to improve the software is to let developers play with it through a daemon (RPC?) process. This however may lead to enterprise adoption, which is good for liquidity, but there is a risk of centralization and thus Sybil attacks. May become more likely. For example an exchange could decide to add CoinJoins and if they acquire 50% of liquidity in Wasabi, this way many of the wallet assumptions about anonymity sets would become less accurate. https://github.com/zkSNACKs/Meta/issues/12
 Wasabi already has a public web API. However developers should not build wallets on top of it, since breakin changes must be expected. Misc things like Twitter bots are fine: http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion/swagger/index.html (https://wasabiwallet.io/swagger/index.html)
 
 ### .NET Ecosystem

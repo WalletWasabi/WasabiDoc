@@ -82,7 +82,6 @@ This document contains a list of all the questions and common issues answered in
 - Can I export a list of transaction?
 
 ### [CoinJoin](FAQ-UseWasabi.md#coinjoin)
-
 - How can I select UTXOs for CoinJoin?
 - What are the denominations created in one round?
 - [Can I mix more than the round's minimum?](FAQ-UseWasabi.md#can-i-mix-more-than-the-rounds-minimum)
