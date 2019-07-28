@@ -29,3 +29,4 @@ This document is for providing a one place stop for anyone interested in the sho
 - Lightning network integration 
 - Coin join statistics database and website
 - SegWit v1 Schnorr / Taproot
+- [SigNet integration](https://github.com/zkSNACKs/Meta/issues/66)
