@@ -4,19 +4,19 @@
 - [The Basics](PayToEndPoint.md#the-basics) </br>
   -- [Pay to IP](PayToEndPoint.md#p2ip) </br>
   -- [Bulletproofs](PayToEndPoint.md#bulletproofs) </br>
-  -- [Coin Join](PayToEndPoint.md#coin-join) </br>
+  -- [CoinJoin](PayToEndPoint.md#coinjoin) </br>
   -- [Blockchain Heuristics](PayToEndPoint.md#blockchain-heuristics) </br>
   -- [Clusterfuck Wallet](PayToEndPoint.md#clusterfuck-wallet) </br>
 - [The Protocol](PayToEndPoint.md#the-protocol) </br>
   -- [Part 1: End-To-End Connection Establishment](PayToEndPoint.md#part-1-end-to-end-connection-establishment) </br>
-  -- [Part 2: Sender-Receiver Coin Join](PayToEndPoint.md#part-2-sender-receiver-coin-join) </br>
+  -- [Part 2: Sender-Receiver CoinJoin](PayToEndPoint.md#part-2-sender-receiver-coinjoin) </br>
   -- [Extensions](PayToEndPoint.md#extensions) </br>
 - [The Novelty of Sender-Receiver Scheme](PayToEndPoint.md#the-novelty-of-sender-receiver-scheme)
 - [Conclusion](PayToEndPoint.md#conclusion)
 
 ---
 
-> Satoshi's Vision + Coin Join + Bulletproofs = Sad Blockchain Analysts
+> Satoshi's Vision + CoinJoin + Bulletproofs = Sad Blockchain Analysts
 
 I attended a brainstorming event on Bitcoin privacy. In this article, I will assume all participants of this meeting would like to remain anonymous, unless she or he explicitly asks me to properly credit her or him.
 To keep this post coherent, I will refer to specific participants as Jessie, James and Meowth in an interchangeable, (not pseudonymous) way, hence Team Rocket.
@@ -48,9 +48,9 @@ Bulletproofs (BP) is a zero-knowledge proof system, often cited together with Co
 
 It is also worth noting, that our scheme does not require any soft or hard fork.
 
-### Coin Join
+### CoinJoin
 
-My regular readers are probably sick of me repeatedly explaining coin join, (CJ) so feel free to skip this two sentences here. CJ stands for joining multiple users’ inputs into one transaction. It is also worth pointing out that most CJ scheme uses equal sized outputs. If it does not, then it provides zero privacy. But that is just an oversimplification, I often say. No matter how unintuitive it may seem, there are CJs with unequal sized outputs those still provide privacy, because the adversary have to recognize this was a CJ transaction in the first place. I will expand upon it later.
+My regular readers are probably sick of me repeatedly explaining CoinJoin, (CJ) so feel free to skip this two sentences here. CJ stands for joining multiple users’ inputs into one transaction. It is also worth pointing out that most CJ scheme uses equal sized outputs. If it does not, then it provides zero privacy. But that is just an oversimplification, I often say. No matter how unintuitive it may seem, there are CJs with unequal sized outputs those still provide privacy, because the adversary have to recognize this was a CJ transaction in the first place. I will expand upon it later.
 
 ### Blockchain Heuristics
 
@@ -69,7 +69,7 @@ This heuristics can be applied to CJ transactions, (and all mixing technique in 
 It is evident, but it is worth pointing out. If Blockchain Analysis sees a transaction on the Blockchain that theoretically can be interpreted in many different ways, but in practice only one way of interpretation is implemented at that point in time, then that interpretation is what Blockchain Analysis assumes. This is why it is really easy to be anonymous with Bitcoin today. Just get familiar with some Blockchain Analysis heuristics, break them manually and they will interpret your transaction in the wrong way with 99% accuracy, because you are the only person who builds such transaction in the world and they are not aware of them.
 To denounce the evils of Blockchain Analytics!
 
-To go to town with heuristics, see Adam Gibson’s [Building on Bitcoin talk](https://www.youtube.com/watch?v=XORDEX-RrAI&feature=youtu.be&t=23359), Kristov Atlas’s [Coin Join Sudoku](https://www.coinjoinsudoku.com), where he broke Blockchain info’s now discontinued SharedCoin feature and [Nick Jonas’s 2016 talk](https://www.youtube.com/watch?v=HScK4pkDNds) in a Zurich Meetup.
+To go to town with heuristics, see Adam Gibson’s [Building on Bitcoin talk](https://www.youtube.com/watch?v=XORDEX-RrAI&feature=youtu.be&t=23359), Kristov Atlas’s [CoinJoin Sudoku](https://www.coinjoinsudoku.com), where he broke Blockchain info’s now discontinued SharedCoin feature and [Nick Jonas’s 2016 talk](https://www.youtube.com/watch?v=HScK4pkDNds) in a Zurich Meetup.
 
 ### Clusterfuck Wallet
 
@@ -98,7 +98,7 @@ In this case, UX would stay the same: the receiver gives a Bitcoin address to th
 The impracticality of James’s idea is that we would need either our own anonymity network to achieve this, like a fork of Tor or we would have to convince an existing anonymity network to incorporate our scheme.
 Nevertheless, the idea is novel and worth keeping in mind.
 
-### Part 2: Sender-Receiver Coin Join
+### Part 2: Sender-Receiver CoinJoin
 
 It may seem like I do not even have to say more, because negotiating a transaction where the sender and the recipient both participates is not that hard, especially that they usually trust each other, right? Wrong. Their was a point where Team Rocket gave up on this scheme, because they thought they encountered an unsolvable issue.
 
@@ -112,7 +112,7 @@ And finally Jessie came up with something elegant: **The Bulletproofs Method**. 
 
 ### Extensions
 
-Before I explain the novelty of Part 2: Sender-Receiver coin join protocol, I would like to point out that, Part 1: End-To-End Connection Establishment protocol has a side effect, namely it can be used to facilitate many things, I described in the Clusterfuck Wallet post. One thing this can easily facilitate is merge avoidance. If the sender would want to join multiple coins together, it could ask for multiple Bitcoin addresses from the receiver and send the coins one by one. It could also establish a future cooperation with the receiver. For example, the receiver, if online could participate in later transactions of the sender, thus breaking Heuristics 1 and Meta. But really, if this P2EP would get adopted, the limit of the number of strange schemes, all breaking Blockchain Analysis assumptions is just the developer’s imagination.
+Before I explain the novelty of Part 2: Sender-Receiver CoinJoin protocol, I would like to point out that, Part 1: End-To-End Connection Establishment protocol has a side effect, namely it can be used to facilitate many things, I described in the Clusterfuck Wallet post. One thing this can easily facilitate is merge avoidance. If the sender would want to join multiple coins together, it could ask for multiple Bitcoin addresses from the receiver and send the coins one by one. It could also establish a future cooperation with the receiver. For example, the receiver, if online could participate in later transactions of the sender, thus breaking Heuristics 1 and Meta. But really, if this P2EP would get adopted, the limit of the number of strange schemes, all breaking Blockchain Analysis assumptions is just the developer’s imagination.
 
 ## The Novelty of Sender-Receiver Scheme
 

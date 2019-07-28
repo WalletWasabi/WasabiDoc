@@ -13,8 +13,8 @@ This document contains a list of all the questions and common issues answered in
 ## [Introduction to Wasabi](FAQ-Introduction.md)
 - Explain Wasabi like I'm 5
 - What is the history of Wasabi?
-- [What is a coin join?](FAQ-Introduction.md#what-is-a-coin-join)
-- How does Zero Link differ from other coin join implementations?
+- [What is a CoinJoin?](FAQ-Introduction.md#what-is-a-coinjoin)
+- How does Zero Link differ from other CoinJoin implementations?
 - [Do I need to trust Wasabi with my coins?](FAQ-Introduction.md#do-i-need-to-trust-wasabi-with-my-coins)
 - [What is the privacy I get after mixing with Wasabi?](FAQ-Introduction.md#what-is-the-privacy-i-get-after-mixing-with-wasabi)
 - [Can I hurt my privacy with Wasabi?](FAQ-Introduction.md#can-i-hurt-my-privacy-using-wasabi)
@@ -81,14 +81,14 @@ This document contains a list of all the questions and common issues answered in
 - How can I check the history of transactions?
 - Can I export a list of transaction?
 
-### [Coin Join](/FAQ-UseWasabi.md#coin-join)
-- How can I select UTXOs for coin join?
+### [CoinJoin](/FAQ-UseWasabi.md#coinjoin)
+- How can I select UTXOs for CoinJoin?
 - What are the denominations created in one round?
 - [Can I mix more than the round's minimum?](FAQ-UseWasabi.md#can-i-mix-more-than-the-rounds-minimum)
 - [What is the anonymity set?](FAQ-UseWasabi.md#what-is-the-anonymity-set)
 - How much anonymity set do I need?
-- How many rounds should I coin join?
-- [What are the fees for the coin join?](FAQ-UseWasabi.md#what-are-the-fees-for-the-coin-join)
+- How many rounds should I CoinJoin?
+- [What are the fees for the CoinJoin?](FAQ-UseWasabi.md#what-are-the-fees-for-the-coinjoin)
 - What is happening in the input registration phase?
 - What is happening in the connection confirmation phase?
 - What is happening in the output registration phase?
@@ -110,7 +110,7 @@ This document contains a list of all the questions and common issues answered in
 - How can I build and export a transaction to Cold Card?
 - How can I sign a transaction on the Cold Card?
 - How can I import and broadcast a final transaction from Cold Card?
-- Can I coin join the bitcoin on my hardware wallet?
+- Can I CoinJoin the bitcoin on my hardware wallet?
 
 ### [Settings](FAQ-UseWasabi.md#settings)
 - [How can I connect to my own full node to Wasabi?](FAQ-UseWasabi.md#how-do-i-connect-my-own-full-node-to-wasabi)
@@ -123,7 +123,7 @@ This document contains a list of all the questions and common issues answered in
 - [Can I consolidate anonset coins?](FAQ-UseWasabi.md#can-i-consolidate-anonset-coins)
 - [How can I send my anonset coins to my hardware wallet?](FAQ-UseWasabi.md#how-can-i-send-my-anonset-coins-to-my-hardware-wallet)
 - [What can I do with small change?](FAQ-UseWasabi.md#what-can-i-do-with-small-change)
-- Which coins can I select for coin joins?
+- Which coins can I select for CoinJoins?
 - How can I mix large amounts?
 
 ## [Contributions to Wasabi](FAQ-Contribution.md)
