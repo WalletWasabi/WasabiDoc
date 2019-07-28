@@ -1,8 +1,9 @@
-# WasabiDoc
+# WasabiDoc 
 
-This is the open source documentation repository of Wasabi Wallet*, here you will find information about the nuances of privacy in Bitcoin, how Wasabi solves these difficult problems, and how you can use these tools to defend yourself. If you have a question that is not yet covered, please [open an issue](https://github.com/zkSNACKs/WasabiDoc/issues), if you have a good answer to a question, please [open a pull request](https://github.com/zkSNACKs/WasabiDoc/pulls).
+From this document you will find links to information about the nuances of privacy in Bitcoin, how [Wasabi](https://wasabiwallet.io) solves these difficult problems, and how you can use these tools to defend yourself. 
+If you have a question that is not yet covered, please [open an issue](https://github.com/zkSNACKs/WasabiDoc/issues), if you have a good answer to a question, please [open a pull request](https://github.com/zkSNACKs/WasabiDoc/pulls).
 
-*[Wasabi](https://wasabiwallet.io) is an open-source, non-custodial, privacy focused Bitcoin wallet for desktop.
+Developers repository can be found [here](https://github.com/zkSNACKs/WalletWasabi).
 
 
 ## Basics
@@ -14,8 +15,6 @@ This is the open source documentation repository of Wasabi Wallet*, here you wil
   -- [Transaction Graph](BitcoinPrivacy.md#transaction-graph) </br>
   -- [Network Snooping](BitcoinPrivacy.md#network-snooping) </br>
 - Getting started
-- [Wasabi 10 Commandments](10Commandments.md)
-- Wasabi compared to other Wallets
 
 ## Installing Wasabi
 
@@ -36,24 +35,6 @@ This is the open source documentation repository of Wasabi Wallet*, here you wil
 - Seed and mnemonic
 - Password
 - [Password Finder](PasswordFinder.md)
-
-### Hardware Wallet
-- Trezor One PIN
-- Trezor One passphrase
-- Trezor passphrase
-- ColdCard </br>
--- Import skeleton wallet </br>
--- Build PSBT </br>
--- Export PSBT </br>
--- Sign PSBT </br>
--- Import PSBT </br>
--- Broadcast PSBT </br>
-
-### Load Wallet
-- [Network Level Privacy - Bitcoin Core vs Wasabi Wallet](NetworkLevelPrivacy.md)
-- Difference hot / watch only wallet
-- BIP 158 block filter
-- Download of blocks over tor & full node
 
 ### Receive
 - HD path
@@ -79,6 +60,23 @@ This is the open source documentation repository of Wasabi Wallet*, here you wil
 - Fees
 - [Pay To EndPoint](PayToEndPoint.md)
 
+### Hardware Wallet
+- Trezor One PIN
+- Trezor One passphrase
+- Trezor passphrase
+- ColdCard </br>
+-- Import skeleton wallet </br>
+-- Build PSBT </br>
+-- Export PSBT </br>
+-- Sign PSBT </br>
+-- Import PSBT </br>
+-- Broadcast PSBT </br>
+
+### Load Wallet
+- [Network Level Privacy - Bitcoin Core vs Wasabi Wallet](NetworkLevelPrivacy.md)
+- Difference hot / watch only wallet
+- BIP 158 block filter
+- Download of blocks over tor & full node
 
 ## Development
 
@@ -116,3 +114,8 @@ This is the open source documentation repository of Wasabi Wallet*, here you wil
 - [Contribution Checklist](ContributionChecklist.md)
 - [Demo Guide](DemoGuide.md)
 - [Contribution Game](ContributionGame.md)
+
+## Other
+
+- [Wasabi 10 Commandments](10Commandments.md)
+- Wasabi compared to other Wallets
