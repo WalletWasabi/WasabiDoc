@@ -61,13 +61,13 @@
 - How can I type in the PIN of my Trezor One?
 - How can I manage the passphrase of my Trezor T?
 - Can I use the passphrase of my Trezor One?
-- How can I generate a Wasabi skelton wallet file in Cold Card?
-- How can I import the Wasabi skelton wallet file?
+- How can I generate a Wasabi skeleton wallet file in ColdCard?
+- How can I import the Wasabi skeleton wallet file?
 - How can I generate a receiving address of my hardware wallet?
 - How can I sign a transaction with a USB connected hardware wallet?
-- How can I build and export a transaction to Cold Card?
-- How can I sign a transaction on the Cold Card?
-- How can I import and broadcast a final transaction from Cold Card?
+- How can I build and export a transaction to ColdCard?
+- How can I sign a transaction on the ColdCard?
+- How can I import and broadcast a final transaction from ColdCard?
 - Can I CoinJoin the bitcoin on my hardware wallet?
 
 ## [Settings](FAQ-UseWasabi.md#settings-1)
@@ -160,7 +160,30 @@ Similarly, with a 0.7 BTC input you would expect the following outputs: ~0.1, ~0
 The output value changes each round to ensure that you can enqueue a coin and have it remix (mix over and over again - increasing the anonymity set, improving privacy). As a result the round mixing amount will often be a specific number which generally decreases as the rounds proceed, with a reset once a lower bound is reached. 
 
 ## Hardware Wallet
+### How can I generate a Wasabi skeleton wallet file in ColdCard?
+On the ColdCard (Mk2, firmware 2.1.1 and up) you go to ```>Advanced>MicrcoSD Card>Wasabi Wallet``` and it will save a skeleton json-file to the MicroSD card in the hardware wallet.
 
+### How can I import the Wasabi skeleton wallet file?
+Take the MicroSD card from the ColdCard and plug it in the computer with the Wasabi Wallet software.
+In Wasabi Wallet go to the Wallet Manager, select Hardware Wallet option and in the bottom right corner click ```Import Coldcard```. Now select the Wasabi skeleton json-file from the MicroSD card, if this fails you can manually enter the file location in Wasabi Wallet window and load the file.
+
+### How can I generate a receiving address of my hardware wallet?
+In Wasabi Wallet you load your previously imported wallet (from Wasabi skeleton, or USB detection) and go to the ```Receive``` tab, here you enter a label for the incoming transaction and click ```Generate Receive Address```. In the tab below the newly generated receive address can be viewd/copied.
+
+### How can I sign a transaction with a USB connected hardware wallet?
+To send a transaction you will need to connect your Hardware wallet and unlock the device (using PIN or password), in Wasabi Wallet you go to the ```Send``` tab where you can specify the address to send to, amount of bitcoin to send and which coins to use as input (only use green/private coins here!). After filling in all transaction details you click ```Send Transaction``` to sign it with the connected hardware wallet and broadcast on the network.
+
+### How can I build and export a transaction to ColdCard?
+In the Wallet Explorer on the right side of the GUI, select ```YourWallet>Advanced>Build Transaction```. This brings up the ```Build Transaction``` tab where you can specify the address, amount of bitcoin and coins to use. Then by clicking ```Build Transaction``` a new tab will open containing the raw transaction data, here you click ```Export Binary PSBT``` to save the partially signed bitcoin transaction (PSBT) to a file. This file should be moved to the MicroSD card that you can then insert in the ColdCard for manual verification and signing.
+
+### How can I sign a transaction on the ColdCard?
+On the ColdCard (Mk2, firmware 2.1.1 and up) you enter the PIN code to unlock the hardware wallet and press ```>Ready To Sign``` with the MicroSD card containing the previously generated transaction or PSBT-file. Verify the address and amount and the ColdCard will then create a signed.psbt and final.txn file on the MicroSD card. The finalized transaction (xxx-final.txn) can now be broadcasted by Wasabi Wallet or even a radio or satelite dish if someone is listening!
+
+### How can I import and broadcast a final transaction from ColdCard?
+In the Wallet Explorer you go to ```YourWallet>Advanced>Broadcast Transaction``` and click ```Import Transaction```, now you can select the previously finalized (and signed) transaction file from the MicroSD card. If this fails you can manually type the path to this file in Wasabi Wallet to load the transaction. Now click ```Broadcast Transaction``` to send it off over Tor to a random Bitcoin node so it can flood over to the miners for confirmation in a block. 
+
+### Can I CoinJoin the bitcoin on my hardware wallet?
+You can't do that directly, so send them (in small portions >0.1BTC if needed) to a ''hot'' Wasabi Wallet for CoinJoin and then send them back to a new address on the Hardware wallet for cold-storage. 
 
 ## Settings
 ### How do I connect my own full node to Wasabi?
