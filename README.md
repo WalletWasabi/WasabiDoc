@@ -13,10 +13,16 @@ For more details on how to contribute, see the [contribution checklist](/docs/Co
 In the [docs](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs) you will find the three main pillars of this repository:
 
 ## [Why Wasabi](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/why-wasabi)
+Why is privacy important and how to preserve it.
+
 
 ## [Using Wasabi](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/using-wasabi)
+How to use Wasabi Wallet.
+
 
 ## [Wasabi FAQ](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/FAQ)
+Frequently asked guestions.
+
 
 If you are looking for the developers repository, it can be found here [WalletWasabi](https://github.com/zkSNACKs/WalletWasabi).
 
