@@ -28,10 +28,10 @@ For those who seek to understand the nuances of Wasabi and how they can use this
 
 
 ## [Wasabi FAQ](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/FAQ)
-Frequently asked guestions.
+Frequently asked questions.
 </br>
 </br>
-For those who want to contribute or learn more about this awesome project. Here we have the most commonly asked guestions and answers.
+For those who want to contribute or learn more about this awesome project. Here we have the most commonly asked questions and answers.
 
 </br>
 
