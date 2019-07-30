@@ -13,20 +13,19 @@ editLinks = true
     title = ""
     collapsable = false
     children = [
-        "/why-wasabi/",
+        "/why-wasabi/",        
+    ]
+
+    [[themeConfig.sidebar."/why-wasabi/"]]
+    title = ""
+    collapsable = false
+    children = [
+        "/why-wasabi/WhyPrivacyImportant.md",
         "/why-wasabi/WhyPrivacyImportant.md",
         "/why-wasabi/BitcoinPrivacy.md",
         "/why-wasabi/GettingStarted.md",
         "/why-wasabi/10Commandments.md",
-        
     ]
-
-#    [[themeConfig.sidebar."/why-wasabi/"]]
-#    title = "Section 1"
-#    collapsable = false
-#    children = [
-#        "/why-wasabi/WhyPrivacyImportant.md",
-#    ]
 
 #    [[themeConfig.sidebar."/why-wasabi/"]]
 #    title = "Section 2"
