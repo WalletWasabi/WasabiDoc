@@ -14,14 +14,24 @@ In the [docs](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs) you will f
 
 ## [Why Wasabi](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/why-wasabi)
 Why is privacy important and how to preserve it.
+</br>
+</br>
+For those who are relatively new to Bitcoin and privacy, here we explain what problem exists and why this is important to fix it. 
+This is the introduction to the over-arching reason why we are so enthusiastic about Bitcoin in general and Wasabi specifically.
 
 
 ## [Using Wasabi](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/using-wasabi)
 How to use Wasabi Wallet.
+</br>
+</br>
+For those who seek to understand the nuances of Wasabi and how they can use this tool to reclaim and protect their privacy. Here we have a step by step guide to all the aspects, starting at beginner level, all the way up to power user features and advanced privacy practices.
 
 
 ## [Wasabi FAQ](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/FAQ)
 Frequently asked guestions.
+</br>
+</br>
+For those who want to contribute or learn more about this awesome project. Here we have the most commonly asked guestions and answers.
 
 </br>
 
