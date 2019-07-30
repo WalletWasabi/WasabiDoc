@@ -3,25 +3,27 @@
 So you're interested in contributing go Wasabi - welcome! This checklist will get you plugged in and productive as quickly as possible.
 
 ### Who is a contributor?
-> Wasabi is free and open source software, but contributing is **not** just about writing code. **A contributor is any individual who works to improve and add value to Wasabi and its users.**
->
-> This can mean anything from fixing typos in documentation, to answering questions of fellow Wasabikas, to implementing new Wasabi features and everything in-between. All such contributions are very welcomed and greatly appreciated.
+:::tip
+Wasabi is free and open source software, but contributing is **not** just about writing code. **A contributor is any individual who works to improve and add value to Wasabi and its users.**
+
+This can mean anything from fixing typos in documentation, to answering questions of fellow Wasabikas, to implementing new Wasabi features and everything in-between. All such contributions are very welcomed and greatly appreciated.
+:::
 
 ## Say hello and get started
-- [ ] Join our [Slack](https://join.slack.com/t/tumblebit/shared_invite/enQtNjQ1MTQ2NzQ1ODI0LWIzOTg5YTM3YmNkOTg1NjZmZTQ3NmM1OTAzYmQyYzk1M2M0MTdlZDk2OTQwNzFiNTg1ZmExNzM0NjgzY2M0Yzg), [Telegram](https://t.me/WasabiWallet) or [Sub-Reddit](https://www.reddit.com/r/WasabiWallet/), and check out the [GitHub](https://github.com/zkSnacks/WalletWasabi)
-- [ ] Introduce yourself, say a bit about your skills and interests. This will help others point you in the right direction.
-- [ ] Explore the communication channels and find out what the peers are tinkering on, learn about the project and who is contributing in what way. This will help you to find the interesting challenges you can work on.
+- Join our [Slack](https://join.slack.com/t/tumblebit/shared_invite/enQtNjQ1MTQ2NzQ1ODI0LWIzOTg5YTM3YmNkOTg1NjZmZTQ3NmM1OTAzYmQyYzk1M2M0MTdlZDk2OTQwNzFiNTg1ZmExNzM0NjgzY2M0Yzg), [Telegram](https://t.me/WasabiWallet) or [Sub-Reddit](https://www.reddit.com/r/WasabiWallet/), and check out the [GitHub](https://github.com/zkSnacks/WalletWasabi)
+- Introduce yourself, say a bit about your skills and interests. This will help others point you in the right direction.
+- Explore the communication channels and find out what the peers are tinkering on, learn about the project and who is contributing in what way. This will help you to find the interesting challenges you can work on.
 
 ## Learn how we work
-- [ ] To understand how Wasabi coin joins work, read [Zero Link: The Bitcoin Fungibility Framework](https://github.com/nopara73/zerolink) and explore the [Documentation](README.md).
-- [ ] Familiarize yourself with [C4: The Collective Code Construction Contract](https://rfc.unprotocols.org/spec:1/C4/). It’s a simple set of collaboration rules based on GitHub’s fork+pull request model, and a foundational part of how we work together.
+- To understand how Wasabi coin joins work, read [Zero Link: The Bitcoin Fungibility Framework](https://github.com/nopara73/zerolink) and explore the [Documentation](README.md).
+- Familiarize yourself with [C4: The Collective Code Construction Contract](https://rfc.unprotocols.org/spec:1/C4/). It’s a simple set of collaboration rules based on GitHub’s fork+pull request model, and a foundational part of how we work together.
 
 `This is the place for the philosophy that we want to see in the project. Open for many additions!`
 
 ## Get connected
-- [ ] Subscribe to the [Wasabi YouTube channel](https://www.youtube.com/channel/UCobsrSexTuVkL39mbrQ35VQ) and watch the last clips of the developer calls.
-- [ ] Watch the [GitHub Repository](https://github.com/zkSnacks/WalletWasabi) to get email notifications about the latest contributions.
-- [ ] Follow [@WasabiWallet](https://twitter.com/wasabiwallet) on Twitter
+- Subscribe to the [Wasabi YouTube channel](https://www.youtube.com/channel/UCobsrSexTuVkL39mbrQ35VQ) and watch the last clips of the developer calls.
+- Watch the [GitHub Repository](https://github.com/zkSnacks/WalletWasabi) to get email notifications about the latest contributions.
+- Follow [@WasabiWallet](https://twitter.com/wasabiwallet) on Twitter
 
 ## Do valuable work
 Ok. You’re all set up and ready to work. Here’s what to do next.
@@ -44,4 +46,6 @@ With that said, it's a good idea to consult with other Wasabikas via Slack, GitH
 Remember: _every contributor_ is free to work on what they want, including maintainers who may or may not want to review and merge your pull request if they don't have any prior context for it, or reason to believe it's worth spending their time on.
 
 ### Reviews are for everybody
-> If you want to be really popular around here, don’t just submit your own work, but also spend time reviewing the work of others.
+:::tip
+If you want to be really popular around here, don’t just submit your own work, but also spend time reviewing the work of others.
+:::
