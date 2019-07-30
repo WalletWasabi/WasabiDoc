@@ -1,3 +1,7 @@
+---
+title : Frequently Asked Questions
+---
+
 # Frequently Asked Questions about Wasabi Wallet
 
 This document contains a list of all the questions and common issues answered in this archive. The hyperlinks lead to the separate files with answers to the questions.

@@ -1,0 +1,110 @@
+title = "Wasabi Documentation"
+description = "Wasabi is an open-source, non-custodial, privacy focused Bitcoin wallet for desktop."
+
+[themeConfig]
+displayAllHeaders = false
+sidebarDepth = 0
+repo = "zkSNACKs/WasabiDoc"
+editLinks = true
+
+    # why Wasabi sidebar
+    # ----------------------------------------
+    [[themeConfig.sidebar."/why-wasabi/"]]
+    title = ""
+    collapsable = false
+    children = [
+        "/why-wasabi/",
+    ]
+
+    [[themeConfig.sidebar."/why-wasabi/"]]
+    title = "Section 1"
+    collapsable = false
+    children = [
+        "/why-wasabi/WhyPrivacyImportant.md",
+    ]
+
+    [[themeConfig.sidebar."/why-wasabi/"]]
+    title = "Section 2"
+    collapsable = false
+    children = [
+        "/why-wasabi/10Commandments.md",
+    ]
+
+
+    # use Wasabi sidebar
+    # ----------------------------------------
+    [[themeConfig.sidebar."/use-wasabi/"]]
+    title = ""
+    collapsable = false
+    children = [
+        "/use-wasabi/",
+    ]
+
+    [[themeConfig.sidebar."/use-wasabi/"]]
+    title = "Section 1"
+    collapsable = false
+    children = [
+        "/use-wasabi/GettingStarted.md",
+    ]
+
+    [[themeConfig.sidebar."/use-wasabi/"]]
+    title = "Section 2"
+    collapsable = false
+    children = [
+        "/use-wasabi/BackendDeployment.md",
+    ]
+
+
+    # develop Wasabi sidebar
+    # ----------------------------------------
+    [[themeConfig.sidebar."/develop-wasabi/"]]
+    title = ""
+    collapsable = false
+    children = [
+        "/develop-wasabi/",
+    ]
+
+    [[themeConfig.sidebar."/develop-wasabi/"]]
+    title = "Section 1"
+    collapsable = false
+    children = [
+        "/develop-wasabi/Dojo.md",
+    ]
+
+
+    # FAQ Wasabi sidebar
+    # ----------------------------------------
+    [[themeConfig.sidebar."/FAQ/"]]
+    title = ""
+    collapsable = false
+    children = [
+        "/FAQ/",
+        "/FAQ/FAQ-Introduction.md",
+        "/FAQ/FAQ-Installation.md",
+        "/FAQ/FAQ-UseWasabi.md",
+        "/FAQ/FAQ-GeneralBitcoinPrivacy.md",
+        "/FAQ/FAQ-Contribution.md",
+    ]
+
+
+    # navbar
+    # --------------------
+    [[themeConfig.nav]]
+    text = "Why Wasabi"
+    link = "/why-wasabi/"
+
+    [[themeConfig.nav]]
+    text = "Using Wasabi"
+    link = "/use-wasabi/"
+
+    [[themeConfig.nav]]
+    text = "Developing Wasabi"
+    link = "/develop-wasabi/"
+
+    [[themeConfig.nav]]
+    text = "FAQ"
+    link = "/FAQ/"
+
+    [[themeConfig.nav]]
+    text = "Website"
+    link = "https://wasabiwallet.io/"
