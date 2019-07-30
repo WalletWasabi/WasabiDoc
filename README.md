@@ -31,12 +31,13 @@ For those who seek to understand the nuances of Wasabi and how they can use this
 Frequently asked questions.
 </br>
 </br>
-For those who want to contribute or learn more about this awesome project. Here we have the most commonly asked questions and answers.
+In addition to this main documentation, here we have the most commonly asked questions and answers. Specific questions are answered with linked reference to the main documentation. This is for all the users who need a precise answer to a common question.
 
 </br>
 
 If you are looking for the developers repository, it can be found here [WalletWasabi](https://github.com/zkSNACKs/WalletWasabi).
 
+</br>
 
 ## Setup
 
