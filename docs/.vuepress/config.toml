@@ -14,61 +14,48 @@ editLinks = true
     collapsable = false
     children = [
         "/why-wasabi/",
-    ]
-
-    [[themeConfig.sidebar."/why-wasabi/"]]
-    title = "Section 1"
-    collapsable = false
-    children = [
-        "/why-wasabi/WhyPrivacyImportant.md",
-    ]
-
-    [[themeConfig.sidebar."/why-wasabi/"]]
-    title = "Section 2"
-    collapsable = false
-    children = [
-        "/why-wasabi/10Commandments.md",
+	"/why-wasabi/WhyPrivacyImportant.md",
+	"/why-wasabi/BitcoinPrivacy.md",
+	"/why-wasabi/10Commandments.md",
     ]
 
 
-    # use Wasabi sidebar
+    # using Wasabi sidebar
     # ----------------------------------------
-    [[themeConfig.sidebar."/use-wasabi/"]]
+    [[themeConfig.sidebar."/using-wasabi/"]]
     title = ""
     collapsable = false
     children = [
-        "/use-wasabi/",
+        "/using-wasabi/",
+        "/using-wasabi/InstallPackage.md",
+        "/using-wasabi/BuildSource.md",
+        "/using-wasabi/DeterministicBuild.md",
+        "/using-wasabi/ClientDeployment.md",
+        "/using-wasabi/PasswordFinder.md",
+        "/using-wasabi/PayToEndPoint.md",
     ]
 
-    [[themeConfig.sidebar."/use-wasabi/"]]
-    title = "Section 1"
-    collapsable = false
-    children = [
-        "/use-wasabi/GettingStarted.md",
-    ]
-
-    [[themeConfig.sidebar."/use-wasabi/"]]
-    title = "Section 2"
-    collapsable = false
-    children = [
-        "/use-wasabi/BackendDeployment.md",
-    ]
-
-
-    # develop Wasabi sidebar
+ 
+    # building Wasabi sidebar
     # ----------------------------------------
-    [[themeConfig.sidebar."/develop-wasabi/"]]
+    [[themeConfig.sidebar."/building-wasabi/"]]
     title = ""
     collapsable = false
     children = [
-        "/develop-wasabi/",
-    ]
-
-    [[themeConfig.sidebar."/develop-wasabi/"]]
-    title = "Section 1"
-    collapsable = false
-    children = [
-        "/develop-wasabi/Dojo.md",
+        "/building-wasabi/",
+        "/building-wasabi/TechnicalOverview.md",
+        "/building-wasabi/ContributionChecklist.md",
+        "/building-wasabi/Dojo.md",
+        "/building-wasabi/ToDo.md",
+        "/building-wasabi/CodingConventions.md",
+        "/building-wasabi/DemoGuide.md",
+        "/building-wasabi/ContributionGame.md",
+        "/building-wasabi/Security.md",
+        "/building-wasabi/CodeCoverage.md",
+        "/building-wasabi/ManualTesting.md",
+        "/building-wasabi/HardwareWalletTestingGuide.md",
+        "/building-wasabi/HowToDebug.md",
+        "/building-wasabi/Ports.md",
     ]
 
 
@@ -95,16 +82,12 @@ editLinks = true
 
     [[themeConfig.nav]]
     text = "Using Wasabi"
-    link = "/use-wasabi/"
+    link = "/using-wasabi/"
 
     [[themeConfig.nav]]
-    text = "Developing Wasabi"
-    link = "/develop-wasabi/"
+    text = "Building Wasabi"
+    link = "/building-wasabi/"
 
     [[themeConfig.nav]]
     text = "FAQ"
     link = "/FAQ/"
-
-    [[themeConfig.nav]]
-    text = "Website"
-    link = "https://wasabiwallet.io/"
