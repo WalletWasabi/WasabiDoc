@@ -1,7 +1,6 @@
 ---
 home: true
 heroImage: /Logo_without_text.png
-actionText: Get Started →
 actionText: Reclaim Your Privacy →
 actionLink: /why-wasabi/
 features:
