@@ -23,6 +23,7 @@ How to use Wasabi Wallet.
 ## [Wasabi FAQ](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/FAQ)
 Frequently asked guestions.
 
+</br>
 
 If you are looking for the developers repository, it can be found here [WalletWasabi](https://github.com/zkSNACKs/WalletWasabi).
 
