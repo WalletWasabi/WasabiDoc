@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: /Logo_without_text.png
-actionText: **Reclaim Your Privacy** →
+actionText: Reclaim Your Privacy →
 actionLink: /why-wasabi/
 features:
 - title: Open-source
