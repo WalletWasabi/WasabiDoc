@@ -1,15 +1,15 @@
 ---
 home: true
 heroImage: /Logo_without_text.png
-actionText: Get Started →
-actionLink: /GettingStarted
+actionText: **Reclaim Your Privacy** →
+actionLink: /why-wasabi/
 features:
 - title: Open-source
-  details: Wasabi Wallet is an open-source project with many contributors.
+  details: **Don't trust, verify.** </br> Wasabi is libre and open source software under the MIT license. You have full access to every single line of code, and You can do with it as you please.
 - title: Non-custodial
-  details: You should always be in possession of your keys.
+  details: **Not Your keys, Not Your bitcoin.** </br> With Wasabi, You are always in full control of your private and public keys, You never share them with any third party.
 - title: Privacy focused
-  details: Without financial privacy, there is no human dignity.
+  details: **Without financial privacy, there is no human dignity.** </br> Wasabi is designed with one goal in mind, to protect Your sensitive financial data.
 ---
 
 -----
