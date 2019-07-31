@@ -39,50 +39,37 @@ If you are looking for the developers repository, it can be found here [WalletWa
 
 </br>
 
-## Build the Documentation
-
-### Setup
-
-Prerequisite: [Node.js](https://nodejs.org/en/download/)
-
-Install the dependencies:
-
-```bash
-npm install
-```
-
-### Development
-
-Start the local build:
-
-```bash
-npm start
-```
-
-### Deployment
-
-Deploy the site manually:
-
-```bash
-npm run deploy
-```
-
-The command above creates a production build and pushes it to the GitHub Pages branch.
-
-To just create the production build you can use this command:
-
-```bash
-npm run build
-```
-
 ## Contribute to the Documentation
 
 Just like the Wasabi wallet software, this documentation is libre and open source under the [MIT license](LICENSE). Not only do we appreciate the contributoin of peers, but we desperately need it! If you have a question, [open an issue](https://github.com/zkSNACKs/WasabiDoc/issues) and if you know the answer, then [make a pull request](https://github.com/zkSNACKs/WasabiDoc/pulls).
 
 The documentation has three main pillars, each of them have a separate folder for proper structure: [Why Wasabi](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/why-wasabi), [Using Wasabi](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/using-wasabi), and [Building Wasabi](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/building-wasabi), as well as an independent [Frequently Asked Question](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/FAQ). Please consider this repsoitory structure for hyperlinks, and use relative links whenever possible, for example `[What is a CoinJoin?](FAQ-Introduction.md#what-is-a-coinjoin)`.
 
-The graphical documentation is built with [VuePress](https://vuepress.vuejs.org/), the sidebar navigation can be [edited here](https://github.com/zkSNACKs/WasabiDoc/blob/master/docs/.vuepress/config.toml).
+The graphical documentation is built with [VuePress](https://v1.vuepress.vuejs.org/), and the sidebar navigation can be [edited here](https://github.com/zkSNACKs/WasabiDoc/blob/master/docs/.vuepress/config.toml).
 
+If you have front end skills and would like to help improve the theme/look of the website, we welcome your input! Check out the [VuePress documentation](https://v1.vuepress.vuejs.org/) for details on how it works.
+
+On the other hand, if you'd like to contribute to the content of the site, know that you do not need to understand/deal with VuePress at all! You can make PRs pertaining to the markdown files in the `/docs/` directory, and if accepted, the merged changes will automatically be integrated into the documentation website by VuePress.
+
+<br>
+
+## Build the Documentation Locally
+The Wasabi documentation website is built using an open source static site generator called VuePress. It is extrememly customizable and offers great defaults out-of-the-box. Check out the [VuePress documentation](https://v1.vuepress.vuejs.org/) for details on how to use it powerfully.
+
+In order to build the website locally, you'll need [Node.js](https://nodejs.org/en/download/).
+
+### Serve locally
+1. Install dependencies
+2. Serve locally (by default on port 8080)
+
+```bash
+npm install
+npm start
+```
+
+<br>
+
+---
 ### Spelling Conventions 
 
 - Wasabi [capitalized]
