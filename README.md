@@ -56,23 +56,15 @@ On the other hand, if you'd like to contribute to the content of the site, know 
 ## Build the Documentation Locally
 The Wasabi documentation website is built using an open source static site generator called VuePress. It is extrememly customizable and offers great defaults out-of-the-box. Check out the [VuePress documentation](https://v1.vuepress.vuejs.org/) for details on how to use it powerfully.
 
-In order to build the website locally, you'll need [Node.js](https://nodejs.org/en/download/) and either [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/en/docs/install).
+In order to build the website locally, you'll need [Node.js](https://nodejs.org/en/download/).
 
-### Serve locally using npm
-1. Install VuePress
+### Serve locally
+1. Install dependencies
 2. Serve locally (by default on port 8080)
 
 ```bash
-npm install -g vuepress # alternatively: npm install
-vuepress dev docs       # alternatively: npm start
-```
-### Serve locally using yarn
-1. Install VuePress
-2. Serve locally
-
-```bash
-yarn global add vuepress
-vuepress dev docs
+npm install
+npm start
 ```
 
 <br>
