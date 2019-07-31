@@ -1,4 +1,4 @@
-# Install package <Tag/>
+# Install package
 
 - [How to install Wasabi on Windows](InstallPackage.md#windows)
 - [How to install Wasabi on Debian and Ubuntu](InstallPackage.md#debian-and-ubuntu)
