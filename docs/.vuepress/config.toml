@@ -2,6 +2,7 @@ title = "Wasabi Documentation"
 description = "Wasabi is an open-source, non-custodial, privacy focused Bitcoin wallet for desktop."
 
 [themeConfig]
+logo = '/Logo_without_text.png'
 displayAllHeaders = false
 sidebarDepth = 0
 repo = "zkSNACKs/WasabiDoc"
