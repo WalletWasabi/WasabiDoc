@@ -8,8 +8,8 @@ features:
   details: Don't trust, verify. Wasabi is libre and open source software under the MIT license. You have full access to every single line of code, and You can do with it as you please.
 - title: Non-custodial
   details: Not Your keys, Not Your bitcoin. With Wasabi, You are always in full control of your private and public keys, You never share them with any third party.
-- title: Privacy focused
-  details: Without financial privacy, there is no human dignity. Wasabi is designed with one goal in mind, to protect Your sensitive financial data.
+- title: Privacy-focused
+  details: Without financial privacy, there is no human dignity. Wasabi is designed with one goal in mind, to protect Your sensitive financial data, on the network level and on the timechain.
 ---
 
 -----
