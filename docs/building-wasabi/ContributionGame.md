@@ -1,8 +1,8 @@
-# Wasabi Contribution Game
+# Contribution Game
 
 We are happy to announce an experiment, called: **The Wasabi Contribution Game**, where we will be distributing 1 BTC among contributors of this repository in proportion to their contributions.
 
-![](https://i.imgur.com/0GwL58Z.png)
+![](/ContributionGame.png)
 
 ## Update (2019-07-08)
 
