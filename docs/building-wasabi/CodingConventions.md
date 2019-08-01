@@ -1,4 +1,8 @@
-# Wasabi Coding Conventions
+# Coding Conventions
+
+[[toc]]
+
+---
 
 ## CodeMaid
 

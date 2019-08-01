@@ -1,16 +1,6 @@
 # Backend Deployment
 
-- [Update](BackendDeployment.md#update)
-- [1. Create Remote Server](BackendDeployment.md#1-create-remote-server)
-- [2. Setup Server](BackendDeployment.md#2-setup-server)
-- [3. Install .NET SDK](BackendDeployment.md#3-install-net-sdk)
-- [4. Install Tor](BackendDeployment.md#4-install-tor)
-- [5. Install, Configure and Synchronize bitcoind](BackendDeployment.md#5-install-configure-and-synchronize-bitcoind)
-- [6. Publish, Configure and Run WalletWasabi.Backend](BackendDeployment.md#6-publish-configure-and-run-walletwasabibackend)
-- [7. Monitor the Apps](BackendDeployment.md#7-monitor-the-apps)
-- [8. Setup nginx](BackendDeployment.md#8-setup-nginx)
-- [Check if Everything Works](BackendDeployment.md#check-if-everything-works)
-- [Check Statuses](BackendDeployment.md#check-statuses)
+[[toc]]
 
 ---
 

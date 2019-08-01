@@ -1,5 +1,9 @@
 # Developers' Guide for debugging Wasabi
 
+[[toc]]
+
+---
+
 This guide is for giving detailed instructions about how to debug Wasabi Wallet components to those developers who want to contribute to the project. We will focus on how to achieve this with `vscode` first because that is the cross-platform IDE used by some of the developer team members.
 
 ## Before to start

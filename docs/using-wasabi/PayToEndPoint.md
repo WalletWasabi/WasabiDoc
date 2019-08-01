@@ -1,18 +1,6 @@
 # Pay To EndPoint
 
-- [Credit](PayToEndPoint.md#non-anonymous-attendees)
-- [The Basics](PayToEndPoint.md#the-basics) </br>
-  -- [Pay to IP](PayToEndPoint.md#p2ip) </br>
-  -- [Bulletproofs](PayToEndPoint.md#bulletproofs) </br>
-  -- [CoinJoin](PayToEndPoint.md#coinjoin) </br>
-  -- [Blockchain Heuristics](PayToEndPoint.md#blockchain-heuristics) </br>
-  -- [Clusterfuck Wallet](PayToEndPoint.md#clusterfuck-wallet) </br>
-- [The Protocol](PayToEndPoint.md#the-protocol) </br>
-  -- [Part 1: End-To-End Connection Establishment](PayToEndPoint.md#part-1-end-to-end-connection-establishment) </br>
-  -- [Part 2: Sender-Receiver CoinJoin](PayToEndPoint.md#part-2-sender-receiver-coinjoin) </br>
-  -- [Extensions](PayToEndPoint.md#extensions) </br>
-- [The Novelty of Sender-Receiver Scheme](PayToEndPoint.md#the-novelty-of-sender-receiver-scheme)
-- [Conclusion](PayToEndPoint.md#conclusion)
+[[toc]]
 
 ---
 

@@ -6,15 +6,9 @@ Wasabi Wallet is a privacy focused Bitcoin wallet that is based on the [ZeroLink
 
 ## Table Of Contents
 
-I. [Introduction](#i-introduction)  
-II. [Stability, Performance, UX, Code Quality](#ii-stability-performance-ux-code-quality)  
-III. [Education](#iii-education)  
-IV. [Bitcoin Privacy Improvements](#iv-bitcoin-privacy-improvements)  
-V. [General Wallet Features](#v-general-wallet-features)  
-VI. [Accessibility](#vi-accessibility)  
-VII. [Extending the Scope of Privacy](#vii-extending-the-scope-of-privacy)  
-VIII. [Unique Wallet Features](#viii-unique-wallet-features)  
-IX. [Conclusion](#ix-conclusion)  
+[[toc]]
+
+---
 
 ## I. Introduction
 

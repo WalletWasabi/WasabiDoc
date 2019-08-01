@@ -1,15 +1,6 @@
 # The Ten Commandments
 
-1. [Wasabi is for defense only](10Commandments.md#1-wasabi-is-for-defense-only)
-2. [Verify the integrity of your software](10Commandments.md#2-verify-the-integrity-of-your-software)
-3. [Keep your mnemonic words and password safely stored (BOTH!)](10Commandments.md#3-keep-your-mnemonic-words-and-password-safely-stored-both)
-4. [Practice good labeling AND try to never reuse addresses](10Commandments.md#4-practice-good-labeling-and-try-to-never-reuse-addresses)
-5. [CoinJoin whenever possible and be patient](10Commandments.md#5-coinjoin-whenever-possible-and-be-patient)
-6. [Use separate profiles](10Commandments.md#6-use-separate-profiles)
-7. [Never merge mixed and unmixed coins, and avoid large merges of mixed coins](10Commandments.md#7-never-merge-mixed-and-unmixed-coins-and-avoid-large-merges-of-mixed-coins)
-8. [Avoid 3rd party servers & Buy Bitcoin P2P](10Commandments.md#8-avoid-3rd-party-servers--buy-bitcoin-p2p)
-9. [Run your own full node (if you can)](10Commandments.md#9-run-your-own-full-node-if-you-can)
-10. [Use Lightning](10Commandments.md#10-use-lightning)
+[[toc]]
 
 ---
 

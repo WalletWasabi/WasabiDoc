@@ -1,4 +1,8 @@
-# Wasabi Contribution Checklist
+# Contribution Checklist
+
+[[toc]]
+
+---
 
 So you're interested in contributing go Wasabi - welcome! This checklist will get you plugged in and productive as quickly as possible.
 
