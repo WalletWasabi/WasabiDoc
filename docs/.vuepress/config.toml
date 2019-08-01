@@ -17,9 +17,9 @@ editLinks = true
     collapsable = false
     children = [
         "/why-wasabi/",
-	"/why-wasabi/WhyPrivacyImportant.md",
-	"/why-wasabi/BitcoinPrivacy.md",
-	"/why-wasabi/10Commandments.md",
+        "/why-wasabi/WhyPrivacyImportant.md",
+        "/why-wasabi/BitcoinPrivacy.md",
+        "/why-wasabi/10Commandments.md",
     ]
 
 
@@ -34,12 +34,12 @@ editLinks = true
         "/using-wasabi/BuildSource.md",
         "/using-wasabi/DeterministicBuild.md",
         "/using-wasabi/ClientDeployment.md",
-	"/using-wasabi/BIP.md",
+        "/using-wasabi/BIP.md",
         "/using-wasabi/PasswordFinder.md",
         "/using-wasabi/PayToEndPoint.md",
     ]
 
- 
+
     # building Wasabi sidebar
     # ----------------------------------------
     [[themeConfig.sidebar."/building-wasabi/"]]
