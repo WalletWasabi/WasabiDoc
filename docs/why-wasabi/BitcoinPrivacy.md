@@ -1,9 +1,6 @@
 # Privacy in Bitcoin
 
-- [Address Reuse](BitcoinPrivacy.md#address-reuse)
-- [Inputs and Outputs](BitcoinPrivacy.md#inputs-and-outputs)
-- [Transaction Graph](BitcoinPrivacy.md#transaction-graph)
-- [Network Snooping](BitcoinPrivacy.md#network-snooping)
+[[toc]]
 
 ---
 

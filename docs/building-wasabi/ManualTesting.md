@@ -1,4 +1,8 @@
-# Testing
+# Manual Testing
+
+[[toc]]
+
+---
 
 The goal of this document is to establish a manual testing workflow and checklist for Wasabi Wallet in order to make sure larger pull requests and releases do not accidentally ruin vital functionality.
 

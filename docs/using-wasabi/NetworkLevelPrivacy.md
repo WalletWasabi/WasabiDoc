@@ -1,11 +1,6 @@
 # Network Level Privacy - Bitcoin Core vs Wasabi Wallet
 
-- [Terminology](NetworkLevelPrivacy.md#terminology)
-- [Bitcoin Core](NetworkLevelPrivacy.md#bitcoin-core)
-- [Bitcoin Core + Tor](NetworkLevelPrivacy.md#bitcoin-core--tor)
-- [Wasabi Wallet](NetworkLevelPrivacy.md#wasabi-wallet)
-- [Wasabi Wallet + Full Node](NetworkLevelPrivacy.md#wasabi-wallet--full-node)
-- [Conclusion](NetworkLevelPrivacy.md#conclusion)
+[[toc]]
 
 ---
 

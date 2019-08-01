@@ -1,90 +1,8 @@
 # Use of Wasabi
-## [Wallet Manager](FAQ-UseWasabi.md#wallet-manager-1)
-- How do I generate a new wallet?
-- How do I back up my mnemonic seed?
-- What password should I use?
-- Can I spend my bitcoin without the password?
-- How do I backup my wallet?
-- What's up with the Chinese characters?
 
-## [Synchronization](FAQ-UseWasabi.md#synchronization-1)
-- What are BIP-158 block filters?
-- How does Wasabi download a relevant block?
-- How long does the initial, and a subsequent synchronization take?
-- How do I know if the synchronization is finished?
+[[toc]]
 
-## [Receive](FAQ-UseWasabi.md#receive-1)
-- How do I generate a new receiving address?
-- [Why is it bad to re-use addresses?](FAQ-UseWasabi.md#why-is-it-bad-to-re-use-addresses)
-- Why do I have to label my address?
-- How can I change the label of my address?
-- [Why does Wasabi only use SegWit bech32 addresses?](FAQ-UseWasabi.md#why-does-wasabi-only-use-segwit-bech32-addresses)
-- Where can I find my public key?
-- Where can I find a QR code of the address?
-- Are there privacy concerns regarding whom I send my address?
-
-## [Send](FAQ-UseWasabi.md#send-1)
-- What are coins?
-- Why is coin control so important?
-- How do I select coins for spending?
-- What is the cluster history?
-- How do I set a destination address?
-- Can I send to many addresses?
-- What fee should I select?
-- Can I see the fee in Satoshis per byte?
-- How is the tansaction broadcasted?
-- [Why does Wasabi choose a new random node every time I send a transaction?](FAQ-UseWasabi.md#why-does-wasabi-choose-a-new-random-node-every-time-I-send-a-transaction)
-
-## [History](FAQ-UseWasabi.md#history-1)
-- How can I check the history of transactions?
-- Can I export a list of transaction?
-
-## [CoinJoin](FAQ-UseWasabi.md#coinjoin-1)
-- How can I select UTXOs for CoinJoin?
-- What are the denominations created in one round?
-- [Can I mix more than the round's minimum?](FAQ-UseWasabi.md#can-i-mix-more-than-the-rounds-minimum)
-- [What is the anonymity set?](FAQ-UseWasabi.md#what-is-the-anonymity-set)
-- How much anonymity set do I need?
-- How many rounds should I CoinJoin?
-- [What are the fees for the CoinJoin?](FAQ-UseWasabi.md#what-are-the-fees-for-the-coinjoin)
-- What is happening in the input registration phase?
-- What is happening in the connection confirmation phase?
-- What is happening in the output registration phase?
-- What is happening in the signing phase phase?
-- What is happening in the broadcasting phase?
-- How does my wallet communicate with the Wasabi coordinator server?
-- [Why are the denominations such an odd number?](FAQ-UseWasabi.md#why-are-the-denominations-such-an-odd-number)
-
-## [Hardware Wallet](FAQ-UseWasabi.md#hardware-wallet-1)
-- Why does Wasabi use the Hardware Wallet Interface?
-- What specific hardware wallets does Wasabi support?
-- How can I type in the PIN of my Trezor One?
-- How can I manage the passphrase of my Trezor T?
-- Can I use the passphrase of my Trezor One?
-- How can I generate a Wasabi skeleton wallet file in ColdCard?
-- How can I import the Wasabi skeleton wallet file?
-- How can I generate a receiving address of my hardware wallet?
-- How can I sign a transaction with a USB connected hardware wallet?
-- How can I build and export a transaction to ColdCard?
-- How can I sign a transaction on the ColdCard?
-- How can I import and broadcast a final transaction from ColdCard?
-- Can I CoinJoin the bitcoin on my hardware wallet?
-
-## [Settings](FAQ-UseWasabi.md#settings-1)
-- [How can I connect to my own full node to Wasabi?](FAQ-UseWasabi.md#how-can-i-connect-to-my-own-full-node-to-wasabi)
-- [How can I change the anonset target?](FAQ-UseWasabi.md#how-can-i-change-the-anonset-target)
-- How can I change the dust threshold?
-- [How can I turn off Tor?](FAQ-UseWasabi.md#how-can-i-turn-off-tor)
-- Where can I find the logs?
-
-## [Coin Control Best Practices](FAQ-UseWasabi.md#coin-control-best-practices-1)
-- [Can I consolidate anonset coins?](FAQ-UseWasabi.md#can-i-consolidate-anonset-coins)
-- [How can I send my anonset coins to my hardware wallet?](FAQ-UseWasabi.md#how-can-i-send-my-anonset-coins-to-my-hardware-wallet)
-- [What can I do with small change?](FAQ-UseWasabi.md#what-can-i-do-with-small-change)
-- Which coins can I select for CoinJoins?
-- How can I mix large amounts?
-
---------------------------
+---
 
 ## Wallet Manager
 
@@ -244,3 +162,79 @@ When you consolidate several small change coins in a regular transaction, then e
 - Spend them on something that is not a particular privacy risk (eg. gift cards).
 - Open a lightning channel. 
 - The ultimate solution is to 'close the loop' i.e. spend a change coin without merging it with other coins, do not generate it in the first place by sending whole coins. 
+
+---
+
+#### Further Questions
+
+
+Wallet Manager
+- How do I generate a new wallet?
+- How do I back up my mnemonic seed?
+- What password should I use?
+- Can I spend my bitcoin without the password?
+- How do I backup my wallet?
+- What's up with the Chinese characters?
+
+Synchronization
+- What are BIP-158 block filters?
+- How does Wasabi download a relevant block?
+- How long does the initial, and a subsequent synchronization take?
+- How do I know if the synchronization is finished?
+
+Receive
+- How do I generate a new receiving address?
+- Why do I have to label my address?
+- How can I change the label of my address?
+- Where can I find my public key?
+- Where can I find a QR code of the address?
+- Are there privacy concerns regarding whom I send my address?
+
+Send
+- What are coins?
+- Why is coin control so important?
+- How do I select coins for spending?
+- What is the cluster history?
+- How do I set a destination address?
+- Can I send to many addresses?
+- What fee should I select?
+- Can I see the fee in Satoshis per byte?
+- How is the tansaction broadcasted?
+
+
+History
+- How can I check the history of transactions?
+- Can I export a list of transaction?
+
+CoinJoin
+- How can I select UTXOs for CoinJoin?
+- What are the denominations created in one round?
+- How much anonymity set do I need?
+- How many rounds should I CoinJoin?
+- What is happening in the input registration phase?
+- What is happening in the connection confirmation phase?
+- What is happening in the output registration phase?
+- What is happening in the signing phase phase?
+- What is happening in the broadcasting phase?
+- How does my wallet communicate with the Wasabi coordinator server?
+- Why are the denominations such an odd number?
+
+Hardware Wallet
+- Why does Wasabi use the Hardware Wallet Interface?
+- What specific hardware wallets does Wasabi support?
+- How can I type in the PIN of my Trezor One?
+- How can I manage the passphrase of my Trezor T?
+- Can I use the passphrase of my Trezor One?
+- How can I generate a Wasabi skeleton wallet file in ColdCard?
+- How can I import the Wasabi skeleton wallet file?
+- How can I generate a receiving address of my hardware wallet?
+- How can I sign a transaction with a USB connected hardware wallet?
+- How can I build and export a transaction to ColdCard?
+- How can I sign a transaction on the ColdCard?
+- How can I import and broadcast a final transaction from ColdCard?
+- Can I CoinJoin the bitcoin on my hardware wallet?
+
+
+Coin Control Best Practices
+- Which coins can I select for CoinJoins?
+- How can I mix large amounts?
