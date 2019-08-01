@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/zkSNACKs/WasabiDoc#readme",
   "devDependencies": {
-    "vuepress": "^1.0.2"
+    "@vuepress/plugin-back-to-top": "1.0.3",
+    "vuepress": "^1.0.3"
   }
 }
