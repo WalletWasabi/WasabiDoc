@@ -12,10 +12,10 @@ module.exports = {
     sidebar: {
       "/why-wasabi/": [
         {
-          title: "",
+          title: "Why Wasabi",
           collapsable: false,
+	  sidebarDepth: 2,
           children: [
-            "/why-wasabi/",
             "/why-wasabi/WhyPrivacyImportant.md",
             "/why-wasabi/BitcoinPrivacy.md",
             "/why-wasabi/10Commandments.md"
@@ -24,10 +24,10 @@ module.exports = {
       ],
       "/using-wasabi/": [
         {
-          title: "",
+          title: "Using Wasabi",
           collapsable: false,
+	  sidebarDepth: 2,
           children: [
-            "/using-wasabi/",
             "/using-wasabi/InstallPackage.md",
             "/using-wasabi/BuildSource.md",
             "/using-wasabi/DeterministicBuild.md",
@@ -40,10 +40,10 @@ module.exports = {
       ],
       "/building-wasabi/": [
         {
-          title: "",
+          title: "Building Wasabi",
           collapsable: false,
+	  sidebarDepth: 2,
           children: [
-            "/building-wasabi/",
             "/building-wasabi/TechnicalOverview.md",
             "/building-wasabi/ContributionChecklist.md",
             "/building-wasabi/Dojo.md",
@@ -62,10 +62,10 @@ module.exports = {
       ],
       "/FAQ/": [
         {
-          title: "",
+          title: "FAQ",
           collapsable: false,
+	  sidebarDepth: 2,
           children: [
-            "/FAQ/",
             "/FAQ/FAQ-Introduction.md",
             "/FAQ/FAQ-Installation.md",
             "/FAQ/FAQ-UseWasabi.md",
@@ -78,15 +78,15 @@ module.exports = {
     nav: [
       {
         text: "Why Wasabi",
-        link: "/why-wasabi/"
+        link: "/why-wasabi/WhyPrivacyImportant.md"
       },
       {
         text: "Using Wasabi",
-        link: "/using-wasabi/"
+        link: "/using-wasabi/InstallPackage.md"
       },
       {
         text: "Building Wasabi",
-        link: "/building-wasabi/"
+        link: "/building-wasabi/TechnicalOverview.md"
       },
       {
         text: "FAQ",
