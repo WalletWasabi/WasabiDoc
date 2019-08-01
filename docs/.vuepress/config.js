@@ -9,6 +9,7 @@ module.exports = {
     repo: "zkSNACKs/WasabiDoc",
     docsDir: "docs",
     editLinks: true,
+    lastUpdated: 'Last Updated',
     sidebar: {
       "/why-wasabi/": [
         {
