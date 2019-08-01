@@ -5,6 +5,7 @@ module.exports = {
     displayAllHeaders: false,
     sidebarDepth: 0,
     repo: "zkSNACKs/WasabiDoc",
+    docsDir: "docs",
     editLinks: true,
     sidebar: {
       "/why-wasabi/": [

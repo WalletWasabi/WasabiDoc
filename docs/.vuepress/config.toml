@@ -6,6 +6,7 @@ logo = '/Logo_without_text.png'
 displayAllHeaders = false
 sidebarDepth = 0
 repo = "zkSNACKs/WasabiDoc"
+docsDir = "docs"
 editLinks = true
 
     # why Wasabi sidebar
