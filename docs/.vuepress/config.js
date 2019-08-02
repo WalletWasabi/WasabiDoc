@@ -2,7 +2,8 @@ module.exports = {
   title: "Wasabi Documentation",
   description: "Wasabi is an open-source, non-custodial, privacy focused Bitcoin wallet for desktop.",
   head: [
-    ["link", { rel: "icon", href: "/favicon.ico" }]
+    ["link", { rel: "icon", href: "/favicon.ico" }],
+    ["link", { rel: "stylesheet", href: "https://fonts.googleapis.com/css?family=Inconsolata:400,700|Playfair+Display:700&display=swap" }]
   ],
   plugins: [
     "@vuepress/back-to-top"
