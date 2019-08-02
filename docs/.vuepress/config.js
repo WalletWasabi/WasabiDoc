@@ -1,7 +1,10 @@
 module.exports = {
+  base: "/WasabiDoc/",
   title: "Wasabi Documentation",
   description: "Wasabi is an open-source, non-custodial, privacy focused Bitcoin wallet for desktop.",
-  base: "/WasabiDoc/",
+  head: [
+    ["link", { rel: "icon", href: "/favicon.ico" }]
+  ],
   plugins: [
     "@vuepress/back-to-top"
   ],
@@ -13,12 +16,30 @@ module.exports = {
     docsDir: "docs",
     editLinks: true,
     lastUpdated: 'Last Updated',
+    nav: [
+      {
+        text: "Why Wasabi",
+        link: "/why-wasabi/WhyPrivacyImportant.md"
+      },
+      {
+        text: "Using Wasabi",
+        link: "/using-wasabi/InstallPackage.md"
+      },
+      {
+        text: "Building Wasabi",
+        link: "/building-wasabi/TechnicalOverview.md"
+      },
+      {
+        text: "FAQ",
+        link: "/FAQ/"
+      }
+    ],
     sidebar: {
       "/why-wasabi/": [
         {
           title: "Why Wasabi",
           collapsable: false,
-	  sidebarDepth: 2,
+	        sidebarDepth: 2,
           children: [
             "/why-wasabi/WhyPrivacyImportant.md",
             "/why-wasabi/BitcoinPrivacy.md",
@@ -30,13 +51,13 @@ module.exports = {
         {
           title: "Using Wasabi",
           collapsable: false,
-	  sidebarDepth: 2,
+	        sidebarDepth: 2,
           children: [
             "/using-wasabi/InstallPackage.md",
             "/using-wasabi/BuildSource.md",
             "/using-wasabi/DeterministicBuild.md",
             "/using-wasabi/ClientDeployment.md",
-	    "/using-wasabi/AddressReuse.md",
+	          "/using-wasabi/AddressReuse.md",
             "/using-wasabi/BIP.md",
             "/using-wasabi/PasswordFinder.md",
             "/using-wasabi/PayToEndPoint.md"
@@ -47,7 +68,7 @@ module.exports = {
         {
           title: "Building Wasabi",
           collapsable: false,
-	  sidebarDepth: 2,
+	        sidebarDepth: 2,
           children: [
             "/building-wasabi/TechnicalOverview.md",
             "/building-wasabi/ContributionChecklist.md",
@@ -69,7 +90,7 @@ module.exports = {
         {
           title: "FAQ",
           collapsable: false,
-	  sidebarDepth: 2,
+	        sidebarDepth: 2,
           children: [
             "/FAQ/FAQ-Introduction.md",
             "/FAQ/FAQ-Installation.md",
@@ -79,24 +100,6 @@ module.exports = {
           ]
         }
       ]
-    },
-    nav: [
-      {
-        text: "Why Wasabi",
-        link: "/why-wasabi/WhyPrivacyImportant.md"
-      },
-      {
-        text: "Using Wasabi",
-        link: "/using-wasabi/InstallPackage.md"
-      },
-      {
-        text: "Building Wasabi",
-        link: "/building-wasabi/TechnicalOverview.md"
-      },
-      {
-        text: "FAQ",
-        link: "/FAQ/"
-      }
-    ]
+    }
   }
 }
