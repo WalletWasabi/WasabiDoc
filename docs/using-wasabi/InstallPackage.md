@@ -4,10 +4,10 @@
 
 ---
 
-It is strongly recommended to **VERIFY PGP SIGNATURES** of the downloaded packages before installing Wasabi. This protects you against malicious phising sites giving you back-doored Wallet software.
+It is strongly recommended to **VERIFY PGP SIGNATURES** of the downloaded packages before installing Wasabi. This protects you against malicious phishing sites giving you back-doored Wallet software.
 Don't trust - Verify!
 
-Download the packages either from the official [WasabiWallet.io](https://wasabiwallet.io/) clearnet website, or for your privacy sake from the official tor hidden service [http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion/](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion/).
+Download the packages either from the official [WasabiWallet.io](https://wasabiwallet.io/) clearnet website, or for your privacy's sake, from the official tor hidden service [http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion/](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion/).
 
 ![](/DownloadAll.png)
 
