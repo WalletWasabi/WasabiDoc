@@ -18,10 +18,10 @@
 1. Get Git: https://git-scm.com/downloads
 2. Get .NET Core 2.2 SDK: https://www.microsoft.com/net/download
 3. [OSX] Get Brew: https://stackoverflow.com/a/20381183/2061103
-4. Get Tor:  
-  [Windows] Install the Tor Expert Bundle: https://www.torproject.org/download/  
-  [Linux] `apt-get install tor`  
-  [OSX] `brew install tor`  
+4. Get Tor: </br>
+  [Windows] Install the Tor Expert Bundle: https://www.torproject.org/download/ </br>
+  [Linux] `apt-get install tor` </br>
+  [OSX] `brew install tor` </br>
   
 ## Get Wasabi
 
@@ -37,9 +37,9 @@ dotnet restore && dotnet build
 
 ## Run Wasabi
 
-1. Run Tor:  
-  [Windows] Run `tor.exe`.  
-  [Linux&OSX] Type `tor` in terminal.  
+1. Run Tor: </br>
+  [Windows] Run `tor.exe`. </br>
+  [Linux&OSX] Type `tor` in terminal. </br>
 2. Run Wasabi with `dotnet run` from the `WalletWasabi.Gui` folder.
 
 
