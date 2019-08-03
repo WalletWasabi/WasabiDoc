@@ -56,7 +56,8 @@ module.exports = {
             "/using-wasabi/BuildSource.md",
             "/using-wasabi/DeterministicBuild.md",
             "/using-wasabi/ClientDeployment.md",
-	          "/using-wasabi/AddressReuse.md",
+	    "/using-wasabi/BackendDeployment.md",
+	    "/using-wasabi/AddressReuse.md",
             "/using-wasabi/BIP.md",
             "/using-wasabi/PasswordFinder.md",
             "/using-wasabi/PayToEndPoint.md"
