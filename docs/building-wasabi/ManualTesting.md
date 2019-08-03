@@ -30,7 +30,8 @@ git checkout yourbranchname
 
 #### Updating a pull request
 
-If someone made a change to the pull request and you want to go through the tests again, first checkout the master branch `git checkout master` then continue with the same procedure described in the "How to checkout a pull request?" part. It will update your branch.
+If someone made a change to the pull request and you want to go through the tests again, first checkout the master branch `git checkout master` then continue with the same procedure described in the "How to checkout a pull request?" part.
+It will update your branch.
 
 ### DataFolder location?
 
@@ -38,12 +39,17 @@ Open Wasabi and go to Main Menu / File / Open / Data Folder.
 
 ### How to check for errors?
 
-Standard procedure: look at the terminal. If there is something saying ERROR or WARNING, that is probably an error.
+Standard procedure: look at the terminal.
+If there is something saying ERROR or WARNING, that is probably an error.
 Special case: always defined at the specific test case.
 
 ### How to determine if the application has exited?
 
-Look at the terminal. Wait until log messages stop and the blinking cursor reappears. If nothing happens, try to press enter. If the application hanged, you can also check it in process manager. If it is still running, there might be an endless loop: an error which does not let the application close.
+Look at the terminal.
+Wait until log messages stop and the blinking cursor reappears.
+If nothing happens, try to press enter.
+If the application hanged, you can also check it in process manager.
+If it is still running, there might be an endless loop: an error which does not let the application close.
 
 # Workflow
 
@@ -90,8 +96,10 @@ Look at the terminal. Wait until log messages stop and the blinking cursor reapp
   * Load one of your wallets. 
   * Go to the "Receive" tab.
   * If you do not have any addresses, then generate a couple.
-  * Select an address by right clicking on it. Make sure that the context menu pops up, and the address is highlighted.
-  * Select another address by right clicking on it. Make sure again that the context menu pops up, and the address is highlighted.
+  * Select an address by right clicking on it.
+Make sure that the context menu pops up, and the address is highlighted.
+  * Select another address by right clicking on it.
+Make sure again that the context menu pops up, and the address is highlighted.
  
 
 # Checklist

@@ -1,7 +1,6 @@
 # Code coverage (How to)
 
-Wasabi Wallet is built using dotnet core. Given there is no cross-platform Profiling API like the one available on Windows, we
-use [AltCover](https://github.com/SteveGilham/altcover) package for instrumenting the assemblies and recording the execution
+Wasabi Wallet is built using dotnet core. Given there is no cross-platform Profiling API like the one available on Windows, we use [AltCover](https://github.com/SteveGilham/altcover) package for instrumenting the assemblies and recording the execution
 coverage.
 
 So, first of all we need to install the package in the `WalletWasabi.Tests` project as follow:
@@ -17,7 +16,8 @@ Next, run:
 dotnet test /p:AltCover=true /p:AltCoverLcovReport=lcov.info
 ```
 
-As a result we get a `lcov.info` file containing the covered lines. In order to be able to see what lines
+As a result we get a `lcov.info` file containing the covered lines.
+In order to be able to see what lines
 are covered we need to install a `vscode extension` called  [Coverage Gutters](https://github.com/ryanluker/vscode-coverage-gutters).
 
 Run vscode and click on "Watch":

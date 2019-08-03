@@ -4,7 +4,8 @@
 
 ---
 
-Wasabi Wallet strives toward establishing solid industry best practices and standards. Here is a list of all the supported and integrated Bitcoin Improvement Proposals:
+Wasabi Wallet strives toward establishing solid industry best practices and standards.
+Here is a list of all the supported and integrated Bitcoin Improvement Proposals:
 
 ## What is supported today
 
@@ -44,8 +45,14 @@ Wasabi Wallet strives toward establishing solid industry best practices and stan
 
 ### [BIP 37: Connection Bloom Filters](https://github.com/bitcoin/bips/blob/master/bip-0037.mediawiki)
 
-Bloom filters (BIP37) are filters that a client will send a Bitcoin full node which says "Hey, if you see any transactions that get caught in this filter, they may or may not be mine!". What would happen next is that a Bitcoin node would start sending tons and tons of transactions to the client, and the client would proceed to distinguish the 99% irrelevant transactions against the 1% relevant ones. This was quite brilliant of an idea at the time, but has since been proven to not protect user privacy, at the expense of wasting a ton of bandwidth and subjecting users to other risks.
+Bloom filters (BIP37) are filters that a client will send a Bitcoin full node which says "Hey, if you see any transactions that get caught in this filter, they may or may not be mine!".
+What would happen next is that a Bitcoin node would start sending tons and tons of transactions to the client, and the client would proceed to distinguish the 99% irrelevant transactions against the 1% relevant ones.
+This was quite brilliant of an idea at the time, but has since been proven to not protect user privacy, at the expense of wasting a ton of bandwidth and subjecting users to other risks.
 
 ### [BIP 158: Compact Block Filters for Light Clients](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki)
 
-Block Filters (BIP 158) are the reverse of Bloom filters (BIP 37) - the client will connect to a Bitcoin node and say "Hey, for every block, I would like a condensed list of addresses that were affected." What would happen next is that a Bitcoin node would give the same filter that it gives to every client, because the client has thus far revealed nothing! Once a block filter has come in and the client believes that there is a transaction that affects the client, the client pings a single random node for a single full block. It then parses the block, and finds the transaction. This has been proven to be by far the best way to do light clients privately, and is the way Wasabi works today.
+Block Filters (BIP 158) are the reverse of Bloom filters (BIP 37) - the client will connect to a Bitcoin node and say "Hey, for every block, I would like a condensed list of addresses that were affected."
+What would happen next is that a Bitcoin node would give the same filter that it gives to every client, because the client has thus far revealed nothing!
+Once a block filter has come in and the client believes that there is a transaction that affects the client, the client pings a single random node for a single full block.
+It then parses the block, and finds the transaction.
+This has been proven to be by far the best way to do light clients privately, and is the way Wasabi works today.

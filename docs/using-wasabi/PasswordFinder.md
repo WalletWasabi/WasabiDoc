@@ -1,18 +1,21 @@
-# Wasabi Password Finder
+# Password Finder
 
 [[toc]]
 
 ---
 
-Wasabi Password Finder is a tool for helping those who made a mistake typing the password during the wallet creation process. This tool tries to find the password that decrypts the encrypted secret key stored in a given wallet file. 
+Wasabi Password Finder is a tool for helping those who made a mistake typing the password during the wallet creation process.
+This tool tries to find the password that decrypts the encrypted secret key stored in a given wallet file. 
 
 ## Limitations
 
-Wasabi Wallet protects the encrypted secret key with the same technology used to protect paper wallets (bip 38) and for that reason it is computationally infeasible to brute force the password using all the possible combinations. It is important to know that Wasabi Password Finder is not for breaking wallet passwords but for finding errors (typos) in an already known password. 
+Wasabi Wallet protects the encrypted secret key with the same technology used to protect paper wallets (bip 38) and for that reason it is computationally infeasible to brute force the password using all the possible combinations.
+It is important to know that Wasabi Password Finder is not for breaking wallet passwords but for finding errors (typos) in an already known password. 
 
 ## Usage
 
-To use Wasabi's command line tools on Windows you have to use `wassabeed.exe` that is inside your `Program Files\WasabiWallet`. On Linux and OSX you can use the same software that you use for launching the GUI (`wassabee`).
+To use Wasabi's command line tools on Windows you have to use `wassabeed.exe` that is inside your `Program Files\WasabiWallet`.
+On Linux and OSX you can use the same software that you use for launching the GUI (`wassabee`).
 
 Let us start giving a glance to the command `help`:
 
@@ -32,7 +35,8 @@ eg: ./wassabee findpassword --wallet:MyWalletName --numbers:false --symbold:true
   -h, --help                 Show Help
 ```
 
-Now, let us find a typo in a wallet called `MagicalCryptoWallet.json`. For the sake of the example let us say I have created this wallet and I think the password is `pasd` but it was created with the password `pass` by accident.
+Now, let us find a typo in a wallet called `MagicalCryptoWallet.json`.
+For the sake of the example let us say I have created this wallet and I think the password is `pasd` but it was created with the password `pass` by accident.
 
 ```
 $ wassabee findpassword --wallet:MagicalCryptoWallet
@@ -48,14 +52,18 @@ SUCCESS: Password found: >>> pass <<<
 
 ```
 
-Note that you can also specify an encrypted secret instead of the wallet file. This is useful if you lost your password for a Bitcoin wallet, other than Wasabi.
+Note that you can also specify an encrypted secret instead of the wallet file.
+This is useful if you lost your password for a Bitcoin wallet, other than Wasabi.
 
-Note that for a 4 characters length password it took more than a minute to find. Moreover, the process is heavy in CPU and for that reason it can be a good idea to use the best combination of parameters to reduce the search space.
+Note that for a 4 characters length password it took more than a minute to find.
+Moreover, the process is heavy in CPU and for that reason it can be a good idea to use the best combination of parameters to reduce the search space.
 
-* __language__ (default: en) specify the charset (characters to search in) to reduce the search space. For example, while the *Italian* charset is "abcdefghimnopqrstuvxyzABCDEFGHILMNOPQRSTUVXYZ", the *French* charset is "aâàbcçdæeéèëœfghiîïjkmnoôpqrstuùüvwxyÿzAÂÀBCÇDÆEÉÈËŒFGHIÎÏJKMNOÔPQRSTUÙÜVWXYŸZ". 
+* __language__ (default: en) specify the charset (characters to search in) to reduce the search space.
+For example, while the *Italian* charset is "abcdefghimnopqrstuvxyzABCDEFGHILMNOPQRSTUVXYZ", the *French* charset is "aâàbcçdæeéèëœfghiîïjkmnoôpqrstuùüvwxyÿzAÂÀBCÇDÆEÉÈËŒFGHIÎÏJKMNOÔPQRSTUÙÜVWXYŸZ". 
 
 * __numbers__ (default: true) is for indicating that our password contains, or could contain, at least one digit. This increases the charset by 10 (from 0 to 9).
 
-* __symbols__ (default: true) is for indicating that our password contains, or could contain, at least one symbol. This increases the charset by 34 (|!¡@$¿?_-\"#$/%&()´+*=[]{},;:.^`<>). Note that only the most commonly used characters are available.
+* __symbols__ (default: true) is for indicating that our password contains, or could contain, at least one symbol.
+This increases the charset by 34 (|!¡@$¿?_-\"#$/%&()´+*=[]{},;:.^`<>). Note that only the most commonly used characters are available.
 
 
