@@ -1,5 +1,20 @@
 // Custom styles, see this file for details:
 // https://github.com/vuejs/vuepress/blob/master/packages/docs/docs/miscellaneous/design-concepts.md#reasonable-priority-management
+
+// Default is dark mode: @media (prefers-color-scheme: dark)
+// Overrides can be done using @media (prefers-color-scheme: light)
+html
+body
+  background $darkBgColor
+  color $lightTextColor
+
+  @media (prefers-color-scheme: light)
+    background: #fff
+    color $textColor
+
+    .theme-default-content code
+      color $codeTextColor
+
 #app
   // fonts
   font-family Inconsolata, monospace
@@ -44,12 +59,23 @@
         background-color: #4b8c57
         border-color: #468452
     .custom
+    .hero .description
       color $reducedTextColor
+      a
+        color lighten($reducedTextColor, 40%)
+        @media (prefers-color-scheme: light)
+          color darken($reducedTextColor, 40%)
+        &:hover
+          text-decoration underline
+    .feature h2
+    .feature p
+      color unset
 
   // navbar
   .navbar
     color $navbarTextColor
     background $navbarBgColor
+    border-bottom-color lighten($navbarBgColor, 10%)
     .nav-link,
     .repo-link
       color $navbarTextColor
@@ -63,31 +89,74 @@
 
     .suggestions
       background $navbarBgColor
+      @media (prefers-color-scheme: light)
+        background #fff
 
     .suggestion
       a
         color $navbarTextColor
+        @media (prefers-color-scheme: light)
+          color $textColor
       &.focused
-        background-color #f3f4f5
+        background-color alpha($accentColor, 30%)
+        @media (prefers-color-scheme: light)
+          background-color alpha($textColor, 10%)
         a
-          color $accentColor
+          color darken($lightTextColor, 20%)
+          @media (prefers-color-scheme: light)
+            color darken($textColor, 20%)
 
   // sidebar
+  .sidebar-mask
+    background alpha($darkBgColor, 90%)
+    @media (prefers-color-scheme: light)
+      background alpha(#fff, 90%)
+
   .sidebar
     font-size unset
+    border-right-color lighten($navbarBgColor, 10%)
+    background $darkBgColor
+    @media (prefers-color-scheme: light)
+      border-right-color $borderColor
+      background: #fff
+
+    .sidebar-link
+      color unset
+      &.active
+        color $accentColor
+        @media (prefers-color-scheme: light)
+          color darken($accentColor, 20%)
+      &:hover
+        color $accentColor
+        @media (prefers-color-scheme: light)
+          color darken($accentColor, 40%)
 
   // content
   .page
     a:not(.nav-link)
-      color $accentColor
       text-decoration none
+      color $accentColor
+      @media (prefers-color-scheme: light)
+        color darken($accentColor, 20%)
       &:hover
-        color #095add
         text-decoration underline
+        color lighten($accentColor, 40%)
+        @media (prefers-color-scheme: light)
+          color darken($accentColor, 40%)
+
+    code
+      color darken($lightTextColor, 20%)
+      background-color alpha($accentColor, 30%)
+      @media (prefers-color-scheme: light)
+        color lighten($textColor, 20%)
+        background-color alpha($textColor, 10%)
 
     blockquote
       margin 1rem 0
       color $reducedTextColor
+      border-left-color darken($reducedTextColor, 50%)
+      @media (prefers-color-scheme: light)
+        border-left-color lighten($reducedTextColor, 50%)
 
     img
       margin 1rem 0
