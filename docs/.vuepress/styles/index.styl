@@ -86,6 +86,7 @@ body
     .links
       background $navbarBgColor
       color $navbarTextColor
+      font-size 1rem
 
     .suggestions
       background $navbarBgColor
@@ -150,6 +151,11 @@ body
       @media (prefers-color-scheme: light)
         color lighten($textColor, 20%)
         background-color alpha($textColor, 10%)
+
+    pre
+      code
+        color unset
+        background-color unset
 
     blockquote
       margin 1rem 0
