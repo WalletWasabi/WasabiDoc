@@ -9,6 +9,8 @@ Don't trust - Verify!
 
 Download the packages either from the official [WasabiWallet.io](https://wasabiwallet.io/) clearnet website, or for your privacy sake from the official tor hidden service [http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion/](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion/).
 
+![](/DownloadAll.png)
+
 If you have personally verified Ádám Ficsor's PGP key and you are familiar with the [Web Of Trust](https://security.stackexchange.com/questions/147447/gpg-why-is-my-trusted-key-not-certified-with-a-trusted-signature), please consider also [signing it](https://www.gnupg.org/gph/en/manual/x334.html).
 
 ---
@@ -98,7 +100,7 @@ Verify that the fingerprint is `21D7 CA45 565D BCCE BE45  115D B4B7 2266 C47E 07
 
 2. [Download](https://wasabiwallet.io) the latest Wasabi release, both the `.deb` package and the corresponding `.asc` signature file.
 
-![](/DownloadLinux.png)
+![](/DownloadDeb.png)
 
 3. Verify the signature in the Download repository with `gpg --verify Wasabi-X.X.X.deb.asc` [Change `X.X.X` to version you downloaded.]
 If the message returned says `Good signature from nopara73 aka Ficsór Ádám` and that it was signed with `Primary key fingerprint: 21D7 CA45 565D BCCE BE45  115D B4B7 2266 C47E 075E`, then the software was not tampered with since the developer signed it.
@@ -122,7 +124,7 @@ Verify that the fingerprint is `21D7 CA45 565D BCCE BE45  115D B4B7 2266 C47E 07
 
 2. [Download](https://wasabiwallet.io) the latest Wasabi release, both the `.tar.gz` archive and the corresponding `.asc` signature file.
 
-![](/DownloadLinux.png)
+![](/DownloadTar.png)
 
 3. In the Download folder, run `gpg2 --verify Wasabi.X.X.X.asc`.
 [Change `X.X.X` to version you downloaded.]

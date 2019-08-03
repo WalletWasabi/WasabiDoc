@@ -109,7 +109,7 @@ Wasabi receives incoming transactions from the nodes it is connected to.
 This is, while privacy preserving, a relatively insecure way of handling this, and should be improved in the future.
 Generally, unconfirmed transactions are considered to be insecure regardless.
 
-![](/StatusBarMempool.png)
+![](/StatusBarReady.png)
 
 Unlike in other Bitcoin wallets, generating a label for each Bitcoin address is not optional, but required.
 That is because Wasabi has an intra-wallet blockchain analysis tool built into it, which tries to cluster utxos (Wasabi calls them coins).
@@ -147,7 +147,7 @@ The user queues their coins for CoinJoin and waits for others to join the mix.
 
 If the user does not wish to proceed, they can dequeue their coins.
 
-![](/CoinJoinCoinsBeingCoinJoined.png)
+![](/CoinJoinStatus.png)
 
 After a mix has successfully executed, the resulting CoinJoin transaction will look like the [following real example](https://www.smartbit.com.au/tx/a0855875fd3d19522568ad673e4b52e11691d837021d74eef0d177f9e0950bf2):
 
