@@ -2,7 +2,7 @@
 
 [Wasabi Wallet](https://wasabiwallet.io) is an open-source, non-custodial, privacy focused Bitcoin wallet for desktop. It implements trustless coin shuffling: [Schnorrian CoinJoin](https://github.com/nopara73/ZeroLink/).
 
-This is Wasabi Wallets open source documentation repository.
+This is Wasabi Wallets open source [documentation](https://docs.wasabiwallet.io) repository.
 Here you will find information about the nuances of privacy in Bitcoin, how Wasabi solves these difficult problems, and how you can use these tools to defend yourself.
 
 If you would like to support the project by educating your peers, this documentation repository is the right place for your efforts!
@@ -45,7 +45,7 @@ Just like the Wasabi wallet software, this documentation is libre and open sourc
 
 The documentation has three main pillars, each of them have a separate folder for proper structure: [Why Wasabi](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/why-wasabi), [Using Wasabi](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/using-wasabi), and [Building Wasabi](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/building-wasabi), as well as an independent [Frequently Asked Question](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/FAQ). Please consider this repsoitory structure for hyperlinks, and use relative links whenever possible, for example `[What is a CoinJoin?](FAQ-Introduction.md#what-is-a-coinjoin)`.
 
-The graphical documentation is built with [VuePress](https://v1.vuepress.vuejs.org/), and the sidebar navigation can be [edited here](https://github.com/zkSNACKs/WasabiDoc/blob/master/docs/.vuepress/config.js).
+The [graphical documentation](https://docs.wasabiwallet.io) is built with [VuePress](https://v1.vuepress.vuejs.org/), and the sidebar navigation can be [edited here](https://github.com/zkSNACKs/WasabiDoc/blob/master/docs/.vuepress/config.js).
 
 If you have front end skills and would like to help improve the theme/look of the website, we welcome your input! Check out the [VuePress documentation](https://v1.vuepress.vuejs.org/) for details on how it works.
 
