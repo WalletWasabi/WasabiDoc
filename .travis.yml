@@ -13,7 +13,7 @@ install:
   - npm run build
 
 script:
-  - echo 'Build done :)' # 'docs.wasabiwallet.io' > docs/.vuepress/dist/CNAME
+  - echo 'docs.wasabiwallet.io' > docs/.vuepress/dist/CNAME
 
 deploy:
   provider: pages

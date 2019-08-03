@@ -1,5 +1,4 @@
 module.exports = {
-  base: "/WasabiDoc/",
   title: "Wasabi Documentation",
   description: "Wasabi is an open-source, non-custodial, privacy focused Bitcoin wallet for desktop.",
   head: [
