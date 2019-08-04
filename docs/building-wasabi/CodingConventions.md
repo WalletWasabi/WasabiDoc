@@ -6,10 +6,10 @@
 
 ## CodeMaid
 
-**DO** use [CodeMaid](http://www.codemaid.net/), a Visual Studio extension to automatically clean up your code on saving the file.
+**DO** use [CodeMaid](http://www.codemaid.net/), a Visual Studio extension to automatically clean up Your code on saving the file.
 
 CodeMaid is a non-intrusive code cleanup tool.
-Wasabi's CodeMaid settings [can be found in the root of the repository](https://github.com/zkSNACKs/WalletWasabi/blob/master/CodeMaid.config), and are automatically picked up by Visual Studio when you open the project, assuming the CodeMaid extension is installed.
+Wasabi's CodeMaid settings [can be found in the root of the repository](https://github.com/zkSNACKs/WalletWasabi/blob/master/CodeMaid.config), and are automatically picked up by Visual Studio when You open the project, assuming the CodeMaid extension is installed.
 Unfortunately CodeMaid has no Visual Studio Code extension yet.
 You can check out the progress on this [under this GitHub issue](https://github.com/codecadwallader/codemaid/issues/273).
 
@@ -17,11 +17,11 @@ You can check out the progress on this [under this GitHub issue](https://github.
 
 Not only CodeMaid, but Visual Studio also enforces certain code style through [`.editorconfig`](https://github.com/zkSNACKs/WalletWasabi/blob/master/.editorconfig) file.
 
-If you are using Visual Studio code, please **DO** install the [editorconfig extension](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) for it to make sure your coding style will resemble to ours.
+If You are using Visual Studio code, please **DO** install the [editorconfig extension](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) for it to make sure Your coding style will resemble to ours.
 
 ## Refactoring
 
-If you are a new contributor **DO** keep refactoring pull requests short, uncomplex and easy to verify.
+If You are a new contributor **DO** keep refactoring pull requests short, uncomplex and easy to verify.
 It requires a certain level of experience to know where the code belongs to and to understand the full ramification (including rebase effort of open pull requests) - [source](https://github.com/bitcoin/bitcoin/blob/master/CONTRIBUTING.md#refactoring).
 
 ## Comments
@@ -113,7 +113,7 @@ private async void Synchronizer_ResponseArrivedAsync(object sender, EventArgs e)
 
 **DO** follow [ReactiveUI's Subscription Disposing Conventions](https://reactiveui.net/docs/guidelines/framework/dispose-your-subscriptions).
 
-**DO** dispose your subscription if you are referencing another object.
+**DO** dispose Your subscription if You are referencing another object.
 **DO** use the `.DisposeWith()` method.
 
 ```cs
@@ -123,10 +123,10 @@ Observable.FromEventPattern(...)
 	.DisposeWith(Disposables);
 ```
 
-**DO NOT** dispose your subscription if a component exposes an event and also subscribes to it itself.
+**DO NOT** dispose Your subscription if a component exposes an event and also subscribes to it itself.
 That's because the subscription is manifested as the component having a reference to itself.
 Same is true with Rx.
-If you're a VM and you e.g. WhenAnyValue against your own property, there's no need to clean that up because that is manifested as the VM having a reference to itself.
+If You're a VM and You e.g. WhenAnyValue against Your own property, there's no need to clean that up because that is manifested as the VM having a reference to itself.
 
 ```cs
 this.WhenAnyValue(...)

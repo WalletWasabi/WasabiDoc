@@ -8,10 +8,10 @@
 
 White -> Blue -> Yellow -> Green -> Brown -> Black
 
-You can only be promoted by someone two belts above you.
-Consequently you can promote anyone two belts below you.
-For example if you are a Blue belt you can promote anyone to be a White belt.
-It is advised that you only promote someone if he or she deserves it.
+You can only be promoted by someone two belts above You.
+Consequently You can promote anyone two belts below You.
+For example if You are a Blue belt You can promote anyone to be a White belt.
+It is advised that You only promote someone if he or she deserves it.
 Promotion happens through Pull Requests to this page.
 Osu!
 
@@ -50,7 +50,7 @@ Osu!
 | Deja John        | [Twitter][19]               | [Cypherpunks 101: Bitcoin Privacy Interview Series][20] | 2018-12: white belt by nopara73 |
 | Rmr1981          | [Reddit][24]                | [Bitcoin Anonymity Guide 2019][21]       | 2019-01: white belt by nopara73 |
 | Anonymous        |                             | [Wallet Review – Wasabi Wallet][22]      | 2019-01: white belt by nopara73 |
-| canalfixe        | [Twitter][25]               | [Video: How to anonymize your Bitcoin with Wasabi wallet][26] | 2019-01: white belt by nopara73 |
+| canalfixe        | [Twitter][25]               | [Video: How to anonymize Your Bitcoin with Wasabi wallet][26] | 2019-01: white belt by nopara73 |
 | 402PaymentReq    | [Twitter][27]               | [In-Depth, Funny And Addictive Wasabi Video Series][28] | 2019-01: white belt by Max Hillebrand |
 | Transisto        | [GitHub][31]                | [Extensive Wasabi Testing][32]           | 2019-02: white belt by nopara73 |
 | Matt Odell       | [Twitter][38]               | [Interview  with Nopara][39] and starting [#WasabiWednesday][40]| 2019-04: white belt by Max Hillebrand |

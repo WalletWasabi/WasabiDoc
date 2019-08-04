@@ -25,7 +25,7 @@ Wasabi's main focuses are Bitcoin and privacy, thus section [IV. Bitcoin Privacy
 However, a loss of privacy in fields that are traditionally considered to be outside the scope of a Bitcoin wallet, such as sharing addresses through unsecure chat clients or checking transactions in a block explorer through the clearnet also pose privacy threats, ergo Wasabi cannot consider them entirely out of its scope, thus section [VII. Extending the Scope of Privacy](#vii-extending-the-scope-of-privacy).
 In the paper [Anonymity Loves Company: Usability and the Network Effect](https://www.freehaven.net/anonbib/cache/usability:weis2006.pdf) the authors note: 
 
-> We show that in anonymizing networks, even if you were smart enough and had enough time to use every system perfectly, you would nevertheless be right to choose your system based in part on its usability for other users.
+> We show that in anonymizing networks, even if You were smart enough and had enough time to use every system perfectly, You would nevertheless be right to choose Your system based in part on its usability for other users.
 
 Therefore Wasabi should also pay attention to fields that help to increase the number of Wasabi users, bringing greater privacy for everyone, thus sections [III. Education](#iii-education) and [VI. Accessibility](#vi-accessibility).
 
@@ -105,7 +105,7 @@ There is room for improvement there as well.
 Wasabi only connects to onion peers, which faciliates end to end encryption, and it connects to them on a different Tor streams.
 After every block download Wasabi disconnects the peer.
 
-Furthermore, if you have a full node running in the background Wasabi won't download blocks from peers, but rather will use the full node to fetch the block from instead.
+Furthermore, if You have a full node running in the background Wasabi won't download blocks from peers, but rather will use the full node to fetch the block from instead.
 
 ![](/StatusBarPeers.png)
 

@@ -45,7 +45,7 @@ Here is a list of all the supported and integrated Bitcoin Improvement Proposals
 
 ### [BIP 37: Connection Bloom Filters](https://github.com/bitcoin/bips/blob/master/bip-0037.mediawiki)
 
-Bloom filters (BIP37) are filters that a client will send a Bitcoin full node which says "Hey, if you see any transactions that get caught in this filter, they may or may not be mine!".
+Bloom filters (BIP37) are filters that a client will send a Bitcoin full node which says "Hey, if You see any transactions that get caught in this filter, they may or may not be mine!".
 What would happen next is that a Bitcoin node would start sending tons and tons of transactions to the client, and the client would proceed to distinguish the 99% irrelevant transactions against the 1% relevant ones.
 This was quite brilliant of an idea at the time, but has since been proven to not protect user privacy, at the expense of wasting a ton of bandwidth and subjecting users to other risks.
 

@@ -14,8 +14,8 @@ It is important to know that Wasabi Password Finder is not for breaking wallet p
 
 ## Usage
 
-To use Wasabi's command line tools on Windows you have to use `wassabeed.exe` that is inside your `Program Files\WasabiWallet`.
-On Linux and OSX you can use the same software that you use for launching the GUI (`wassabee`).
+To use Wasabi's command line tools on Windows You have to use `wassabeed.exe` that is inside Your `Program Files\WasabiWallet`.
+On Linux and OSX You can use the same software that You use for launching the GUI (`wassabee`).
 
 Let us start giving a glance to the command `help`:
 
@@ -40,7 +40,7 @@ For the sake of the example let us say I have created this wallet and I think th
 
 ```
 $ wassabee findpassword --wallet:MagicalCryptoWallet
-WARNING: This tool will display you password if it finds it. Also, the process status displays your wrong password chars.
+WARNING: This tool will display You password if it finds it. Also, the process status displays Your wrong password chars.
          You can cancel this by CTRL+C combination anytime.
 
 Enter password: ****    <---- Here I typed the password that I think used to create the wallet (`pasd`)
@@ -52,8 +52,8 @@ SUCCESS: Password found: >>> pass <<<
 
 ```
 
-Note that you can also specify an encrypted secret instead of the wallet file.
-This is useful if you lost your password for a Bitcoin wallet, other than Wasabi.
+Note that You can also specify an encrypted secret instead of the wallet file.
+This is useful if You lost Your password for a Bitcoin wallet, other than Wasabi.
 
 Note that for a 4 characters length password it took more than a minute to find.
 Moreover, the process is heavy in CPU and for that reason it can be a good idea to use the best combination of parameters to reduce the search space.

@@ -12,7 +12,7 @@ To keep this post coherent, I will refer to specific participants as Jessie, Jam
 
 My goal today is to put out one of the ideas of this meeting in a digestible way.
 I assume some other Team Rocket member will do the same, in their own way.
-But first, let me walk you through some basic concepts.
+But first, let me walk You through some basic concepts.
 But before that, I’d like to credit some attendees and link to their articles on the event.
 
 #### Non-Anonymous Attendees
@@ -29,7 +29,7 @@ But before that, I’d like to credit some attendees and link to their articles 
 ### P2IP
 
 > Bitcoin 0.1 supported Bitcoin addresses just like today, but it also had a “pay to IP address” feature.
->When you used this, you’d connect to the IP and get the sender’s full public key, and then send to that.
+>When You used this, You’d connect to the IP and get the sender’s full public key, and then send to that.
 >[…] Pay-to-IP was removed around 0.5, I think. — [Theymos](https://reddit.com/u/theymos), 2016
 
 Satoshi built a feature into Bitcoin, called P2IP.
@@ -59,12 +59,12 @@ I will expand upon it later.
 
 ### Blockchain Heuristics
 
-Blockchain Heuristics are the methods Blockchain Analytics uses to deanonymize you.
-These companies are founded on these heuristics. The scheme Team Rocket is proposing breaks some of these heuristics to the point that today’s Blockchain Analysis would be instantly broken, even if you do not use our scheme, since it would be really hard to figure out if you used P2EP or not.
+Blockchain Heuristics are the methods Blockchain Analytics uses to deanonymize You.
+These companies are founded on these heuristics. The scheme Team Rocket is proposing breaks some of these heuristics to the point that today’s Blockchain Analysis would be instantly broken, even if You do not use our scheme, since it would be really hard to figure out if You used P2EP or not.
 
 #### Heuristic 1: All inputs are co-owned.
 
-This means, if you are joining together more than one input, then it must all come from you.
+This means, if You are joining together more than one input, then it must all come from You.
 You could say that CJ breaks this assumption instantly, but (equal sized) CJ is easily identifiable, so that is easy to handle.
 
 #### Mixing Heuristics: Subset-Sum Analysis.
@@ -78,14 +78,14 @@ Note, it is only possible if CJ transaction was identified.
 It is evident, but it is worth pointing out.
 If Blockchain Analysis sees a transaction on the Blockchain that theoretically can be interpreted in many different ways, but in practice only one way of interpretation is implemented at that point in time, then that interpretation is what Blockchain Analysis assumes.
 This is why it is really easy to be anonymous with Bitcoin today.
-Just get familiar with some Blockchain Analysis heuristics, break them manually and they will interpret your transaction in the wrong way with 99% accuracy, because you are the only person who builds such transaction in the world and they are not aware of them.
+Just get familiar with some Blockchain Analysis heuristics, break them manually and they will interpret Your transaction in the wrong way with 99% accuracy, because You are the only person who builds such transaction in the world and they are not aware of them.
 To denounce the evils of Blockchain Analytics!
 
-To go to town with heuristics, see Adam Gibson’s [Building on Bitcoin talk](https://www.youtube.com/watch?v=XORDEX-RrAI&feature=youtu.be&t=23359), Kristov Atlas’s [CoinJoin Sudoku](https://www.coinjoinsudoku.com), where he broke Blockchain info’s now discontinued SharedCoin feature and [Nick Jonas’s 2016 talk](https://www.youtube.com/watch?v=HScK4pkDNds) in a Zurich Meetup.
+To go to town with heuristics, see Adam Gibson’s [Building on Bitcoin talk](https://www.youtube.com/watch?v=XORDEX-RrAI&feature=Youtu.be&t=23359), Kristov Atlas’s [CoinJoin Sudoku](https://www.coinjoinsudoku.com), where he broke Blockchain info’s now discontinued SharedCoin feature and [Nick Jonas’s 2016 talk](https://www.youtube.com/watch?v=HScK4pkDNds) in a Zurich Meetup.
 
 ### Clusterfuck Wallet
 
-The last concept I would like to get you familiar with is something I have written about.
+The last concept I would like to get You familiar with is something I have written about.
 It is the [clusterfuck wallet](https://medium.com/@nopara73/new-bitcoin-anonymity-technique-the-clusterfuck-wallet-d48aa1787324).
 This is either the craziest idea I ever had or the most brilliant one
 medium.com
@@ -94,7 +94,7 @@ medium.com
 >His reasoning went like this: Blockchain analysis cannot make any reasonable conclusion, because a Bitcoin transaction can be interpreted in many different ways. — Ádám Ficsor
 
 The goal of this wallet was to make Blockchain Heuristics as unreliable as it can get, by take advantage of Heuristics Meta: What Doesn’t Exist Doesn’t Exist.
-The idea is: make them to exist. With that creating chaos, or “clusterfuck” if you like.
+The idea is: make them to exist. With that creating chaos, or “clusterfuck” if You like.
 Turns out P2EP is a great tool to bring many exotic transactions into existence, not only the one the Team Moon Rocket is proposing here.
 
 ## The Protocol

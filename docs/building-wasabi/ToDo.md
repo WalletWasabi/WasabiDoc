@@ -2,10 +2,10 @@
 
 Wasabi Wallet is libre and open source software.
 This means that contributions are not just very welcome, but absolutely needed!
-If you are considering to support the project, please checkout the [contribution checklist](ContributionChecklist.md) for how to best get started!
+If You are considering to support the project, please checkout the [contribution checklist](ContributionChecklist.md) for how to best get started!
 
 This document is for providing a one place stop for anyone interested in the short term ToDo's and long term goals.
-When you are ever bored and want to be productive, why not pick up one of these issues?
+When You are ever bored and want to be productive, why not pick up one of these issues?
 
 ## Short Term ToDo's
 

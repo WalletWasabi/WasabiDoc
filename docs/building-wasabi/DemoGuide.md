@@ -1,16 +1,16 @@
 # Demo Guide
 
-- At 2018.07.19 17:00, UTC I will do a live demo of Wasabi on Youtube.
+- At 2018.07.19 17:00, UTC I will do a live demo of Wasabi on YouTube.
 - I will post the livestream link to Twitter: https://twitter.com/nopara73
 - You are free to ask questions in the chat.
-- At the end of the stream, we will do a mixing round on the mainnet. This will be the first ever Chaumian CoinJoin mainnet mix, you are free to participate.
-- In order to participate, you may want to make sure to setup and prefund the wallet before the stream, by going through the following instructions.
+- At the end of the stream, we will do a mixing round on the mainnet. This will be the first ever Chaumian CoinJoin mainnet mix, You are free to participate.
+- In order to participate, You may want to make sure to setup and prefund the wallet before the stream, by going through the following instructions.
 
 ## Notes
 - Wasabi is in the alpha stage. A Beta version will be released in 11 days (August 1.)
-- The minimum denomination of the mix is 0.1 bitcoins, but you may want to prefund your wallet with a bit more than that to cover the fees. Currently the minimum is 0.10034 BTC, but to be sure you may want to prefund it with 0.11 BTC or so.
+- The minimum denomination of the mix is 0.1 bitcoins, but You may want to prefund Your wallet with a bit more than that to cover the fees. Currently the minimum is 0.10034 BTC, but to be sure You may want to prefund it with 0.11 BTC or so.
 - The normal minimum number of participants for the mix is 100 users. I will cheat and lower this number for the sake of this test.
-- The wallet can only generate bech32 addresses. Thus, if you are using a legacy wallet, it will not be able to send funds to that. In this case, you may want to introduce a middle wallet like [Electrum,](https://electrum.org/).
+- The wallet can only generate bech32 addresses. Thus, if You are using a legacy wallet, it will not be able to send funds to that. In this case, You may want to introduce a middle wallet like [Electrum,](https://electrum.org/).
 - Please do not attempt to participate in this event using OSX, as our user interface is unstable on OSX.
 
 ## Get The Requirements
@@ -47,11 +47,11 @@ dotnet restore && dotnet build
 
 1. Generate a new wallet.
 2. Backup the mnemonic words.
-3. Load the wallet you have just generated.
+3. Load the wallet You have just generated.
 4. Generate a new receive address and fund it with 0.11 BTC.
-5. Wait until the filters are synchronized (5 minutes), so you will see the incoming transaction.
-6. Wait until your transaction is confirmed.
-7. You can now start mixing in the CoinJoin tab if you want to.
+5. Wait until the filters are synchronized (5 minutes), so You will see the incoming transaction.
+6. Wait until Your transaction is confirmed.
+7. You can now start mixing in the CoinJoin tab if You want to.
 
 ## Note, You Can Update Wasabi With These Commands:
 

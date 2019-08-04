@@ -22,9 +22,9 @@ Many peers post one of their Bitcoin addresses on the internet, and then the sam
 It is very easy and convenient to have such a donation address, and thus many peers do this.
 
 To register such a donation UTXO for coin join is not only legitimate, but desired. 
-If you accept donations to an address, you should be registering these UTXOs together to one coinjoin round. 
+If You accept donations to an address, You should be registering these UTXOs together to one coinjoin round. 
 Of course block explorers will note it as address reuse in the coinjoin, which is technically correct, but it misleads the observer, because he will think something is wrong. 
-You better consolidate your donations into one UTXO instead of many, and you might as well do it in a coinjoin.
+You better consolidate Your donations into one UTXO instead of many, and You might as well do it in a coinjoin.
 
 **How to improve?** 
 To encourage address reuse here, when we are selecting coins to coinjoin, we should intentionally select coins together those are on the same address.
