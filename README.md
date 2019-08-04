@@ -74,5 +74,6 @@ npm start
 
 - Wasabi [capitalized]
 - CoinJoin [capitalized, one word]
+- You [capitalized `Y`]
 - Every sentense must start a new line.
 - For a paragraph, add an `empty line` or `</br>` in the markdown.
