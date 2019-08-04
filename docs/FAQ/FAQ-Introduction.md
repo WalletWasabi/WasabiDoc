@@ -4,6 +4,19 @@
 
 ---
 
+### Who can use Wasabi?
+
+Every single line of code in Wasabi, the [wallet](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Gui), the [backend server](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Backend), the api, the [documentation](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs) - has always been and will always be libre and open source under the [MIT license](https://github.com/zkSNACKs/WalletWasabi/blob/master/LICENSE.md). 
+This means that anyone, yes, ANYONE can use Wasabi without permission, for any use case, free of charge.
+
+Wasabi is used by individuals to receive and spend every day payments, to manage their hardware wallet long term hodlings, and to CoinJoin their sats for added privacy.
+There are also entrepreneurs who use Wasabi to defend their customers from spies and to ensure a private business relationship.
+Young kids have Wasabi to stack the sats gifted by grandma, and they learn the importance of hodling.
+
+:::tip
+Wasabi is a tool for everyone.
+:::
+
 ### What is a CoinJoin?
 A mechanism by which multiple participants combine their coins (or UTXOs, to be more precise) into one large transaction with multiple inputs and multiple outputs.
 An observer cannot determine which output belongs to which input, and neither can the participants themselves.
