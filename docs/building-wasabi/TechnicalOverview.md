@@ -1,3 +1,7 @@
+---
+sidebarDepth: 1
+---
+
 # A Technical Overview of Wasabi Wallet, Future Ideas, Plans and Strategy
 
 ## Abstract
