@@ -21,12 +21,23 @@ When you have found a critical bug that puts users at serious harm, please take 
 Securely encrypt the detailed report to Ádám Ficsor's PGP key [21D7 CA45 565D BCCE BE45 115D B4B7 2266 C47E 075E](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt) and send it to [adam.ficsor73@gmail.com](mailto:adam.ficsor73@gmail.com).
 :::
 
+### How can I request a feature?
+Wasabi is a quite beautiful piece of software already.
+Yet there are also 1001 things that could be just a little better, or even quite substantially superior.
+The beauty and bain of libre and open source software is that it is never complete, there is always more work to be done.
+
+Regardless if You are a new user of Wasabi, or a veteran black belt Wasabika, any suggestions on how to improve are desperately needed and very welcome.
+Please first check the existing [issues](https://github.com/zkSNACKs/WalletWasabi/issues/) and [pull requests](https://github.com/zkSNACKs/WalletWasabi/pulls) if some one has the same feature request as You.
+If yes, then You can comment your desired improvement under the open issue.
+If no, then please consider to [open a new issue](https://github.com/zkSNACKs/WalletWasabi/issues/new?template=feature-request.md) and give a detailed request.
+It makes sense to first explain the problem You have in the incumbent version of Wasabi, this is the place to express Your frustrations and annoyances.
+Then describe the solution that You have envisioned, with all the nuances and details of how this would fix Your problem.
+To flesh our Your argument, please consider alternatives and different approaches to this feature request.
+
 #### Further questions
 - Who is contributing to Wasabi already?
 - How can I get help and support?
 - What does the Wasabi project need help with?
-- How can I report a bug?
-- How can I request a feature?
 - How should I start contributing code?
 - Who verifies the pull requests? 
 - Is there a bounty program?
