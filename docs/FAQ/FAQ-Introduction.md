@@ -11,7 +11,7 @@ This makes it difficult for outside parties to trace where a particular coin ori
 
 In very simple terms, CoinJoin means: “when you want to make a transaction, find someone else who also wants to make a transaction and make a joint transaction together”.
 
-See also: https://en.bitcoin.it/wiki/CoinJoin
+See also the [Bitcoin Wiki on CoinJoins](https://en.bitcoin.it/wiki/CoinJoin)
 
 ### Do I need to trust Wasabi with my coins?
 No, Wasabi's CoinJoin implementation is trustless by design.
