@@ -9,21 +9,22 @@
 ## 2. Verify the integrity of your software
 
 Wasabi Wallet is an open-source project with many contributors.
-When downloading the wallet, you may chose to go to the official site or to the official GitHub to build from source.
+When downloading the wallet, you may choose to go to the official site or to the official GitHub to build from source.
 Wasabi is available at our official site:
 
 Clear-net: [wasabiwallet.io](https://wasabiwallet.io)
 
 Tor hidden service: [wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion)
 
-Please [check signatures](InstallPackage.md) after completing downloads, the concern here is that you may accidentally fall for a phishing attempt and be on a malicious site downloading a malicious piece of software.
+Please [check signatures](InstallPackage.md) after completing downloads.
+The concern here is that you may accidentally fall for a phishing attempt and be on a malicious site downloading a malicious piece of software.
 
 Alternatively, as Wasabi is [libre and open source software](https://github.com/zkSNACKs/WalletWasabi), you may also [build the code from source](BuildSource.md).
 
 ## 3. Keep your mnemonic words and password safely stored (BOTH!)
 
-When creating a new wallet - write down your mnemonic seed AND password and store those safely.
-Wasabi is a fully non-custodial wallet, which means that should always be in possession of your keys, and this means safely storing a backup in case your computer is lost or the wallet crashes.
+When creating a new wallet - write down your mnemonic seed AND password and store them safely.
+Wasabi is a fully non-custodial wallet, which means that you should always be in possession of your keys, and this means safely storing a backup in case your computer is lost or the wallet crashes.
 Often times when things go wrong, users panic.
 If you have done this step, there is very little you have to worry about.
 Also, under no circumstance should you reveal the password or mnemonic words to anyone that asks for them.
@@ -60,7 +61,7 @@ Lastly, if you are able and patient enough to re-mix your coins, please do so.
 
 ## 6. Use separate profiles
 
-When you put a label on an address, or ask a question on this Reddit or send coins to a merchant be wary of the profile you choose.
+When you put a label on an address, or ask a question on Reddit or send coins to a merchant be wary of the profile you choose.
 If you can create a dummy Reddit account as opposed to an account where you may have revealed your personal details elsewhere - use that.
 When you spend coins from your wallet, consider what you might want to keep private from the merchant or individual you are interacting with.
 In the same way that reusing addresses hurts your privacy, consolidating all of your online behavior into one profile can do the same.
@@ -107,7 +108,7 @@ Local full nodes will (when running in tandem with Wasabi) be automatically used
 
 Wasabi is an ideal wallet for many things, but trade-offs exist with everything.
 If you have small amounts of un-mixed change from previous CoinJoins and you are unable to meet the requirements to engage in a CoinJoin, consider using that coin to open a lightning channel.
-Lightning is still a project in its' early days, but the privacy topology of lightning payments is much more ideal over on-chain payments if you have the choice.
+Lightning is still a project in its early days, but the privacy topology of lightning payments is much more ideal over on-chain payments if you have the choice.
 Routing large amounts can be uncertain, but for small amounts the network is becoming steadily more reliable.
 Currently Wasabi does not support in-wallet lightning features, but it is on the road-map.
 
