@@ -101,6 +101,7 @@ The possible values of equal output that can be created are 0.1 x 2^n where n is
 The output value changes each round to ensure that you can enqueue a coin and have it remix (mix over and over again - increasing the anonymity set, improving privacy).
 As a result the round mixing amount will often be a specific number which generally decreases as the rounds proceed, with a reset once a lower bound is reached. 
 
+
 ### What is happening in the input registration phase?
 During the [input registration](https://github.com/nopara73/zerolink#1-input-registration-phase), you select which coins you want to register for CoinJoin.
 These coins need to be confirmed on the Bitcoin timechain, unless they are from a Wasabi CoinJoin and you re-register them.
@@ -162,7 +163,6 @@ The signing phase ends when the coordinator has all the valid signatures for all
 The CoinJoin transaction is successfully built and signed, and it is now ready to be [broadcasted](https://github.com/nopara73/zerolink#transaction-broadcasting) to the peers of the Bitcoin network.
 The coordinator sends this transaction over the tor network to a random full node, and from there it is gossiped to other nodes and miners.
 Wasabi is saving on mining fees by setting a confirmation target of roughly 12 hours, but you can re-register unconfirmed anonset outputs for the next round of CoinJoin.
-
 
 ## Hardware Wallet
 ### How can I generate a Wasabi skeleton wallet file in ColdCard?
