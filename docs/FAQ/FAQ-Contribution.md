@@ -8,6 +8,7 @@
 Code is speech, and can never be perfect.
 Thus it is expected that there are many known and unknown bugs, quirks and issues in Wasabi.
 Such a complex software requires constant and rigorous review by the developers and users, this is the responsibility of everyone working with Wasabi.
+
 When you stumble upon an issue that needs fixing, please first check the open [issues](https://github.com/zkSNACKs/WalletWasabi/issues/) and [pull requests](https://github.com/zkSNACKs/WalletWasabi/pulls) if there is already someone working on it.
 If yes, then you can comment your situation and bug report under the open issue.
 If no, then please consider to [open a new issue](https://github.com/zkSNACKs/WalletWasabi/issues/new?template=bug-report.md) and give a detailed report on the problem.
