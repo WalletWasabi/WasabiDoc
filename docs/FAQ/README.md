@@ -1,6 +1,11 @@
+---
+title : Frequently Asked Questions
+---
+
 # Frequently Asked Questions about Wasabi Wallet
 
-This document contains a list of all the questions and common issues answered in this archive. The hyperlinks lead to the separate files with answers to the questions.
+This document contains a list of all the questions and common issues answered in this archive.
+The hyperlinks lead to the separate files with answers to the questions.
 
 ## [General Bitcoin Privacy](FAQ-GeneralBitcoinPrivacy.md)
 - I have nothing to hide, do I still need financial privacy?
@@ -8,7 +13,7 @@ This document contains a list of all the questions and common issues answered in
 - How is Bitcoin bad in terms of privacy?
 - Why is it important to use a new address for every payment?
 - Why is it important for my privacy to run a full node?
-- How does Tor protect my network-level privacy? 
+- How does Tor protect my network-level privacy?
 
 ## [Introduction to Wasabi](FAQ-Introduction.md)
 - Explain Wasabi like I'm 5
@@ -81,7 +86,7 @@ This document contains a list of all the questions and common issues answered in
 - How can I check the history of transactions?
 - Can I export a list of transaction?
 
-### [CoinJoin](FAQ-UseWasabi.md#coinjoin)
+### [CoinJoin](/FAQ-UseWasabi.md#coinjoin)
 - How can I select UTXOs for CoinJoin?
 - What are the denominations created in one round?
 - [Can I mix more than the round's minimum?](FAQ-UseWasabi.md#can-i-mix-more-than-the-rounds-minimum)
@@ -89,11 +94,11 @@ This document contains a list of all the questions and common issues answered in
 - How much anonymity set do I need?
 - How many rounds should I CoinJoin?
 - [What are the fees for the CoinJoin?](FAQ-UseWasabi.md#what-are-the-fees-for-the-coinjoin)
-- [What is happening in the input registration phase?](FAQ-UseWasabi.md#what-is-happening-in-the-input-registration-phase)
-- [What is happening in the connection confirmation phase?](FAQ-UseWasabi.md#what-is-happening-in-the-connection-confirmation-phase)
-- [What is happening in the output registration phase?](FAQ-UseWasabi.md#what-is-happening-in-the-output-registration-phase)
-- [What is happening in the signing phase?](FAQ-UseWasabi.md#what-is-happening-in-the-signing-phase)
-- [What is happening in the broadcasting phase?](FAQ-UseWasabi.md#what-is-happening-in-the-broadcasting-phase)
+- What is happening in the input registration phase?
+- What is happening in the connection confirmation phase?
+- What is happening in the output registration phase?
+- What is happening in the signing phase phase?
+- What is happening in the broadcasting phase?
 - How does my wallet communicate with the Wasabi coordinator server?
 - [Why are the denominations such an odd number?](FAQ-UseWasabi.md#why-are-the-denominations-such-an-odd-number)
 
@@ -133,6 +138,6 @@ This document contains a list of all the questions and common issues answered in
 - How can I report a bug?
 - How can I request a feature?
 - How should I start contributing code?
-- Who verifies the pull requests? 
+- Who verifies the pull requests?
 - Is there a bounty program?
 - What is on the future roadmap of Wasabi development?
