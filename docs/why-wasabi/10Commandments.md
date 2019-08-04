@@ -16,7 +16,8 @@ Clear-net: [wasabiwallet.io](https://wasabiwallet.io)
 
 Tor hidden service: [wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion)
 
-Please [check signatures](InstallPackage.md) after completing downloads. The concern here is that you may accidentally fall for a phishing attempt and be on a malicious site downloading a malicious piece of software.
+Please [check signatures](InstallPackage.md) after completing downloads.
+The concern here is that you may accidentally fall for a phishing attempt and be on a malicious site downloading a malicious piece of software.
 
 Alternatively, as Wasabi is [libre and open source software](https://github.com/zkSNACKs/WalletWasabi), you may also [build the code from source](BuildSource.md).
 
