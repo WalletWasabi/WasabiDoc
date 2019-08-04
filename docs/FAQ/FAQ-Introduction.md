@@ -4,8 +4,16 @@
 
 ---
 
-### Who can use Wasabi?
+### Explain Wasabi like I'm 5
+Wasabi is a software wallet to manage Your Bitcoin private keys.
+It is tailor made to protect Your privacy on every step.
+You can easily send and receive bitcoin without the permission of anyone.
+With a special tool called a CoinJoin You can make sure nobody finds out how you spend your money.
+Although Wasabi has some very advanced magic under the hood, it is rather easy to use.
+You can also use Wasabi to manage Your hardware wallet, and it even connects to Your own full node.
+Of course, Wasabi is libre and open source, which means You have full control over the software You manage Your money with.
 
+### Who can use Wasabi?
 Every single line of code in Wasabi, the [wallet](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Gui), the [backend server](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Backend), the api, the [documentation](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs) - has always been and will always be libre and open source under the [MIT license](https://github.com/zkSNACKs/WalletWasabi/blob/master/LICENSE.md). 
 This means that anyone, yes, ANYONE can use Wasabi without permission, for any use case, free of charge.
 
@@ -71,7 +79,6 @@ See [here](https://github.com/nopara73/ZeroLink/#e-sybil-attack) for more info.
 
 #### Further Questions
 
-- Explain Wasabi like I'm 5
 - What is the history of Wasabi?
 - How does Zero Link differ from other CoinJoin implementations?
 - Who can use Wasabi?
