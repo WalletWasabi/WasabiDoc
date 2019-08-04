@@ -19,7 +19,7 @@ module.exports = {
     nav: [
       {
         text: "Why Wasabi",
-        link: "/why-wasabi/WhyPrivacyImportant.md"
+        link: "/why-wasabi/"
       },
       {
         text: "Using Wasabi",
