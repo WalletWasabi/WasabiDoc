@@ -37,7 +37,7 @@ Osu!
 |----------------|----------------------------|----------------------------------------|--------------------------------|
 | Mark Rex       | [Twitter][7] [GitHub][8]   | [GroupSend Research][9]                | 2018-12: blue belt by nopara73 |
 | nothingmuch    | [Twitter][10] [GitHub][11] | [Unequal Amount Mixing for ZeroLink using Preferred Value Series Fixed Denominations Research][12] | 2018-12: blue belt by nopara73 |
-| KevinKelbie    | [Twitter][29]              | [Wasabi Python Library (Outdated)][30] | 2019-19: blue belt by nopara73 |
+| KevinKelbie    | [Twitter][29]              | [Wasabi Python Library (Outdated)][30] | 2019-01: blue belt by nopara73 |
 
 ### White Belts
 
