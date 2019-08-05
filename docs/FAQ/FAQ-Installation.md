@@ -49,15 +49,17 @@ Note that in this case you are still private, except when you CoinJoin and when 
 In the first case, the coordinator would know the links between your inputs and outputs based on your IP address.
 In the second case, if you happen to broadcast a transaction of yours to a full node that is spying on you, it will know the link between your transaction and your IP address.
 
+### How do I check the current version of Wasabi?
+In the GUI go to the top left menu `Help > About`, here you see the current version of your Wasabi.
+You can also verify in the command line by executing `wassabee --version`.
+Wasabi is cutting edge software, so it is well advised to stay up-to-date.
+
 ---
 
 #### Further Questions
-
-- Why is it important to verify PGP signatures?
 - How do I install Wasabi on Linux?
 - How do I install Wasabi on Microsoft?
 - How do I install Wasabi on iOS?
-- How do I check the current version of Wasabi?
 - How do I know about a new version of Wasabi?
 - How do I compile Wasabi from source?
 - How can I install Wasabi headless daemon without GUI?
