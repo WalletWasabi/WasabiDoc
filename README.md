@@ -10,34 +10,42 @@ Do you have a question that is not yet covered, please [open an issue](https://g
 If you have a good answer to a question, please [open a pull request](https://github.com/zkSNACKs/WasabiDoc/pulls).
 For more details on how to contribute, see the [contribution checklist](/docs/ContributionChecklist.md) or the to-do-list.
 
-In the [docs](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs) you will find the three main pillars of this repository:
+## The pillars of the documentation
 
-## [Why Wasabi](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/why-wasabi)
-Why is privacy important and how to preserve it.
-</br>
-</br>
+### [Why Wasabi](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/why-wasabi)
+
+**Why is privacy important.**
+
 For those who are relatively new to Bitcoin and privacy, here we explain what problem exists and why this is important to fix it.
 This is the introduction to the over-arching reason why we are so enthusiastic about Bitcoin in general and Wasabi specifically.
 
+### [Using Wasabi](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/using-wasabi)
 
-## [Using Wasabi](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/using-wasabi)
-How to use Wasabi Wallet.
-</br>
-</br>
-For those who seek to understand the nuances of Wasabi and how they can use this tool to reclaim and protect their privacy. Here we have a step by step guide to all the aspects, starting at beginner level, all the way up to power user features and advanced privacy practices.
+**How to use Wasabi Wallet.**
 
+For those who seek to understand the nuances of Wasabi and how they can use this tool to reclaim and protect their privacy.
+Here we have a step by step guide to all the aspects, starting at beginner level, all the way up to power user features and advanced privacy practices.
 
-## [Wasabi FAQ](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/FAQ)
-Frequently asked questions.
-</br>
-</br>
-In addition to this main documentation, here we have the most commonly asked questions and answers. Specific questions are answered with linked reference to the main documentation. This is for all the users who need a precise answer to a common question.
+### [Building Wasabi](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/building-wasabi)
+
+**How to contribute to Wasabi.**
+
+For those many Wasabikas who are already, or would like to start to suppoert this lovely open source project.
+Here we want to make sure that new contributors find all the knowledge to give them a swift start on their path to black-belt of the Dojo.
+
+### [Wasabi FAQ](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/FAQ)
+
+**Frequently asked questions.**
+
+In addition to this main documentation, here we have the most commonly asked questions and answers.
+Specific questions are answered with linked reference to the main documentation.
+This is for all the users who need a precise answer to a common question.
 
 </br>
-
 If you are looking for the developers repository, it can be found here [WalletWasabi](https://github.com/zkSNACKs/WalletWasabi).
-
 </br>
+
+---
 
 ## Contribute to the Documentation
 
@@ -51,35 +59,21 @@ If you have front end skills and would like to help improve the theme/look of th
 
 On the other hand, if you'd like to contribute to the content of the site, know that you do not need to understand/deal with VuePress at all! You can make PRs pertaining to the markdown files in the `/docs/` directory, and if accepted, the merged changes will automatically be integrated into the documentation website by VuePress.
 
-<br>
-
-## Build the Documentation Locally
-The Wasabi documentation website is built using an open source static site generator called VuePress. It is extrememly customizable and offers great defaults out-of-the-box. Check out the [VuePress documentation](https://v1.vuepress.vuejs.org/) for details on how to use it powerfully.
-
-In order to build the website locally, you'll need [Node.js](https://nodejs.org/en/download/).
-
-### Serve locally
-1. Install dependencies
-2. Serve locally (by default on port 8080)
-
-```bash
-npm install
-npm start
-```
-
-<br>
-
----
-### Spelling Conventions
+### Writing Conventions
 
 - Wasabi [capitalized]
 - CoinJoin [capitalized, one word]
 - Every sentense must start a new line.
 - For a paragraph, add an `empty line` or `</br>` in the markdown.
 
-### Advanced
+### Embedding images
 
-#### Embedding videos
+The images are stored in the [`/docs/.vuepress/public/`](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/.vuepress/public) directory.
+They can be embedded via the following markdown tags:
+
+`![](/IMAGENAME.png)`
+
+### Embedding videos
 
 Youtube videos and playlists can be embedded via the following custom markdown tags:
 
@@ -97,4 +91,20 @@ Optionally you can also specify the start position of a video in seconds: (start
 And the index of the video of a playlist: (starts with the third video)
 ```md
 @[youtubePlaylist](PLAYLIST_ID,3)
+```
+
+---
+
+## Build the Documentation Locally
+The Wasabi documentation website is built using an open source static site generator called VuePress. It is extrememly customizable and offers great defaults out-of-the-box. Check out the [VuePress documentation](https://v1.vuepress.vuejs.org/) for details on how to use it powerfully.
+
+In order to build the website locally, you'll need [Node.js](https://nodejs.org/en/download/).
+
+### Serve locally
+1. Install dependencies
+2. Serve locally (by default on port 8080)
+
+```bash
+npm install
+npm start
 ```
