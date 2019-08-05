@@ -4,6 +4,12 @@
 
 ---
 
+### Who is contributing to Wasabi already?
+There are many Wasabikas working with great effort and care to manifest this powerful tool of self defense.
+[Over 35 peers](https://github.com/zkSNACKs/WalletWasabi/graphs/contributors) have already contributed to the repository, and more and more supporters are joining the [dojo](/building-wasabi/Dojo.md).
+Four of the main contributors are [Ádám Ficsor](https://github.com/nopara73) [co-founder and CTO of [zkSnacks Ltd](https://zksnacks.com/), co-author of the [zero link Bitcoin fungibility framework](https://github.com/nopara73/ZeroLink)], [Lucas Ontivero](https://github.com/lontivero) [lead engineer of [zkSnacks Ltd](https://zksnacks.com/)], [Dávid Molnár](https://github.com/molnard) [[zkSnacks Ltd](https://zksnacks.com/) employee], and [Dan Walmsley](https://github.com/danwalmsley) [maintainer of [Avalonia UI Framework](https://github.com/AvaloniaUI/Avalonia)].
+For a inclusive list of all the Wasabikas, not just the code developers, please visit the [dojo](/building-wasabi/Dojo.md).
+
 ### How can I report a bug?
 Code is speech, and can never be perfect.
 Thus it is expected that there are many known and unknown bugs, quirks and issues in Wasabi.
@@ -16,7 +22,7 @@ It is especially helpful when You provide a step by step guide on how to reprodu
 There is constantly a lot of work done to the code base, thus it's good to know which version of Wasabi, and what operating system you are using.
 In some cases it might be useful to see Your logs, though please consider your privacy and encrypt this data properly in direct communication with the developers.
 
-:::warning
+:::danger
 When you have found a critical bug that puts users at serious harm, please take great care with responsible disclosure!
 Securely encrypt the detailed report to Ádám Ficsor's PGP key [21D7 CA45 565D BCCE BE45 115D B4B7 2266 C47E 075E](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt) and send it to [adam.ficsor73@gmail.com](mailto:adam.ficsor73@gmail.com).
 :::
@@ -61,7 +67,6 @@ You can check the [ToDo list](/building-wasabi/ToDo.md) for a somewhat up-to-dat
 
 
 #### Further questions
-- Who is contributing to Wasabi already?
 - What does the Wasabi project need help with?
 - How should I start contributing code?
 - Is there a bounty program?
