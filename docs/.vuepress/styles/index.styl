@@ -182,6 +182,12 @@ body
       margin 1rem 0
       border 1px solid $borderColor
 
+    table
+      width 100%
+
+    tr:nth-child(2n)
+      background-color alpha($borderColor, 10%)
+
     .custom-block
       background-color $codeBgColor
       &.warning
