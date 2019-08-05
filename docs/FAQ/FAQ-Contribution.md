@@ -42,6 +42,17 @@ Though often times it is quite useful to start a conversation with other Wasabik
 Here it is useful to reach out to the contributors on [Twitter](https://twitter.com/wasabiwallet), [Reddit](https://old.reddit.com/r/WasabiWallet/), and [Telegram](https://t.me/WasabiWallet).
 If your trouble is specific to the code, then it might also be suitable to check the existing [GitHub issues](https://github.com/zkSNACKs/WalletWasabi/issues/) and open a new one.
 
+### Who reviews and merges the pull requests?
+As the Wasabi code is libre and open source, anyone has access to review the latest contritions and browse the [open pull requests](https://github.com/zkSNACKs/WalletWasabi/pulls?q=is%3Apr+is%3Aopen+sort%3Aupdated-desc).
+The review of any Wasabika is not just deeply appreciated, but desperately needed!
+Wasabi is cutting-edge high security software, and there can never be enough eyes seeking and squashing bugs.
+Especially review by experienced C# developers are vitally important, yet even typo and grammar fixes are necessary.
+
+There are three developers who have the ability to merge code into master branch.
+- [Ádám Ficsor](https://github.com/nopara73) [co-founder and CTO of [zkSnacks Ltd](https://zksnacks.com/), co-author of the [zero link Bitcoin fungibility framework](https://github.com/nopara73/ZeroLink)] is the owner of the [GitHub repository](https://github.com/zksnacks/walletwasabi) and has full write access to everything in it, he has the ability to merge any code that he wants.
+- [Lucas Ontivero](https://github.com/lontivero) [lead engineer of [zkSnacks Ltd](https://zksnacks.com/)] is co-maintainer of the [GitHub repository](https://github.com/zksnacks/walletwasabi), he can merge a PR, but only when at least two other have reviewed and acknowledged the changes.
+- [Dávid Molnár](https://github.com/molnard) is co-maintainer of the [GitHub repository](https://github.com/zksnacks/walletwasabi), he can merge a PR, but only when at least two other have reviewed and acknowledged the changes.
+
 ### What is on the future roadmap of Wasabi development?
 Wasabi is far from complete, there are many Wasabikas contributing every day to make this tool of self defense even more powerful.
 Because Wasabi is libre and open source software, anyone can support the project without asking for permission.
@@ -53,5 +64,4 @@ You can check the [ToDo list](/building-wasabi/ToDo.md) for a somewhat up-to-dat
 - Who is contributing to Wasabi already?
 - What does the Wasabi project need help with?
 - How should I start contributing code?
-- Who verifies the pull requests? 
 - Is there a bounty program?
