@@ -17,11 +17,7 @@ If you have personally verified Ádám Ficsor's PGP key and you are familiar wit
 
 ## Windows
 
-Check out this video guide:
-
 @[youtube](tkaaC8yET1o)
-
-Or this video guide:
 
 @[youtube](D8U53PFEsVk)
 
