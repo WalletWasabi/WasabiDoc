@@ -17,14 +17,19 @@ If you have personally verified Ádám Ficsor's PGP key and you are familiar wit
 
 ## Windows
 
-Check out [this](https://www.youtube.com/watch?v=tkaaC8yET1o) or [this](https://www.youtube.com/watch?v=D8U53PFEsVk) video guide.
+Check out this video guide:
+
+@[youtube](tkaaC8yET1o)
+
+Or this video guide:
+
+@[youtube](D8U53PFEsVk)
 
 If you have already imported Ádám Ficsor's public key, then jump to step 7.
 
 1. [Download](https://www.gnupg.org/download/index.html) and install Gpg4win
 
 ![](/InstallWindowsGpgp4winSetup.png)
-
 
 2. [Download](https://wasabiwallet.io) the latest Wasabi release, both the `.msi` installer and the corresponding `.msi.asc` signature file.
 
@@ -90,7 +95,9 @@ Press `OK` and close Kleopatra.
 
 ## Debian and Ubuntu
 
-Check out this [video guide](https://www.youtube.com/watch?v=DUc9A76rwX4).
+Check out this video guide:
+
+@[youtube](DUc9A76rwX4)
 
 If you have already imported Ádám Ficsor's public key, then jump to step 2.
 
@@ -111,14 +118,19 @@ If the message returned says `Good signature from nopara73 aka Ficsór Ádám` a
 After the first run, a working directory will be created: `~/.walletwasabi/`.
 Among others, here is where your wallet files and your logs reside.
 
-
 ## Other Linux
 
-Check out [this](https://www.youtube.com/watch?v=qFbv_b-bju4) [Note that this video was created on OSX, but the steps are the same for Linux], or [this](https://www.youtube.com/watch?time_continue=4&v=zPKpC9cRcZo) video guide.
+Check out this video guide: (Note that this video was created on OSX, but the steps are the same for Linux)
+
+@[youtube](qFbv_b-bju4)
+
+Or this video guide:
+
+@[youtube](zPKpC9cRcZo)
 
 If you have already imported Ádám Ficsor's public key, then jump to step 2.
 
-1. Download Ádám Ficsor's PGP public key [here](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt), and then import it with `gpg --import PGP.txt`. 
+1. Download Ádám Ficsor's PGP public key [here](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt), and then import it with `gpg --import PGP.txt`.
 Verify that the fingerprint is `21D7 CA45 565D BCCE BE45  115D B4B7 2266 C47E 075E`.
 [Next time you can skip previous steps because the public key is already imported.]
 
@@ -137,10 +149,11 @@ If the message returned says `Good signature from nopara73 aka Ficsór Ádám` a
 After the first run, a working directory will be created: `~/.walletwasabi/`.
 Among others, here is where your wallet files and your logs reside.
 
-
 ## OSX
 
-Check out this [video guide](https://www.youtube.com/watch?v=_Zmc54XYzBA).
+Check out this video guide:
+
+@[youtube](_Zmc54XYzBA)
 
 If you have already imported Ádám Ficsor's public key, then jump to step 4.
 

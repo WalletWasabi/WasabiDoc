@@ -1,3 +1,6 @@
+const customBlock = require('markdown-it-custom-block')
+const youtubeEmbed = path => `<div class="ytEmbed"><iframe src="https://www.youtube-nocookie.com/embed/${path}" frameborder="0" allow="autoplay;encrypted-media;picture-in-picture" allowfullscreen></iframe></div>`
+
 module.exports = {
   title: "Wasabi",
   description: "Wasabi is an open-source, non-custodial, privacy focused Bitcoin wallet for desktop.",
@@ -8,6 +11,18 @@ module.exports = {
   plugins: [
     "@vuepress/back-to-top"
   ],
+  markdown: {
+    extendMarkdown (md) {
+      md.use(customBlock, {
+        youtube (id) {
+          return youtubeEmbed(id)
+        },
+        youtubePlaylist (id) {
+          return youtubeEmbed(`videoseries?list=${id}&index=1`)
+        }
+      })
+    }
+  },
   themeConfig: {
     logo: "/Logo_without_text.png",
     displayAllHeaders: false,
@@ -39,7 +54,7 @@ module.exports = {
         {
           title: "Why Wasabi",
           collapsable: false,
-	  sidebarDepth: 2,
+          sidebarDepth: 2,
           children: [
             "/why-wasabi/WhyPrivacyImportant.md",
             "/why-wasabi/BitcoinPrivacy.md",
@@ -51,14 +66,14 @@ module.exports = {
         {
           title: "Using Wasabi",
           collapsable: false,
-	  sidebarDepth: 2,
+          sidebarDepth: 2,
           children: [
             "/using-wasabi/InstallPackage.md",
             "/using-wasabi/BuildSource.md",
             "/using-wasabi/DeterministicBuild.md",
             "/using-wasabi/ClientDeployment.md",
-	    "/using-wasabi/BackendDeployment.md",
-	    "/using-wasabi/AddressReuse.md",
+            "/using-wasabi/BackendDeployment.md",
+            "/using-wasabi/AddressReuse.md",
             "/using-wasabi/BIP.md",
             "/using-wasabi/PasswordFinder.md",
             "/using-wasabi/PayToEndPoint.md"
@@ -69,7 +84,7 @@ module.exports = {
         {
           title: "Building Wasabi",
           collapsable: false,
-	  sidebarDepth: 2,
+          sidebarDepth: 2,
           children: [
             "/building-wasabi/TechnicalOverview.md",
             "/building-wasabi/ContributionChecklist.md",
@@ -91,7 +106,7 @@ module.exports = {
         {
           title: "FAQ",
           collapsable: false,
-	  sidebarDepth: 2,
+          sidebarDepth: 2,
           children: [
             "/FAQ/FAQ-Introduction.md",
             "/FAQ/FAQ-Installation.md",
