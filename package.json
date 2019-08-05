@@ -18,6 +18,7 @@
   "homepage": "https://github.com/zkSNACKs/WasabiDoc#readme",
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "1.0.3",
+    "markdown-it-custom-block": "^0.1.1",
     "vuepress": "^1.0.3"
   }
 }
