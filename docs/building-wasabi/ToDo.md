@@ -14,8 +14,7 @@ When you are ever bored and want to be productive, why not pick up one of these 
 - Upgrade to Avalonia v8
 - Guide user to not consolidate [#1958](https://github.com/zkSNACKs/WalletWasabi/issues/1958) [#1983](https://github.com/zkSNACKs/WalletWasabi/issues/1983)
 - Improve PSBT ColdCard workflow [#2015](https://github.com/zkSNACKs/WalletWasabi/issues/2015)
-- [Separate documentation repository](https://github.com/zkSNACKs/WalletWasabi/issues/1820)
-- User choise for CoinJoin denomination [#1900](https://github.com/zkSNACKs/WalletWasabi/issues/1900) [#1904](https://github.com/zkSNACKs/WalletWasabi/issues/1904)
+- User choice for CoinJoin denomination [#1900](https://github.com/zkSNACKs/WalletWasabi/issues/1900) [#1904](https://github.com/zkSNACKs/WalletWasabi/issues/1904)
 - [Improve cluster history](https://github.com/zkSNACKs/WalletWasabi/issues/612)
 - [Replace by fee integration](https://github.com/zkSNACKs/WalletWasabi/issues/1543)
 - [Add encryption manager BIP 322](https://github.com/zkSNACKs/WalletWasabi/issues/1121)
