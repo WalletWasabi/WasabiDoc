@@ -351,15 +351,6 @@ Hardware Wallet
 - How can I type in the PIN of my Trezor One?
 - How can I manage the passphrase of my Trezor T?
 - Can I use the passphrase of my Trezor One?
-- How can I generate a Wasabi skeleton wallet file in ColdCard?
-- How can I import the Wasabi skeleton wallet file?
-- How can I generate a receiving address of my hardware wallet?
-- How can I sign a transaction with a USB connected hardware wallet?
-- How can I build and export a transaction to ColdCard?
-- How can I sign a transaction on the ColdCard?
-- How can I import and broadcast a final transaction from ColdCard?
-- Can I CoinJoin the bitcoin on my hardware wallet?
-
 
 Coin Control Best Practices
 - Which coins can I select for CoinJoins?
