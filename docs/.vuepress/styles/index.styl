@@ -16,6 +16,8 @@ body
       color $codeTextColor
 
 #app
+  overflow hidden
+
   // fonts
   font-family Inconsolata, monospace
   font-weight 400
@@ -141,6 +143,7 @@ body
 
   // content
   .page
+
     a:not(.nav-link)
       text-decoration none
       color $accentColor
@@ -151,6 +154,10 @@ body
         color lighten($accentColor, 40%)
         @media (prefers-color-scheme: light)
           color darken($accentColor, 40%)
+
+    // force long words (i.e. onion addresses to break)
+    p
+      word-break break-word
 
     code
       color darken($lightTextColor, 20%)
