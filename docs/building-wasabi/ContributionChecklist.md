@@ -4,10 +4,10 @@
 
 ---
 
-So you're interested in contributing go Wasabi - welcome!
+So you're interested in contributing to Wasabi - welcome!
 This checklist will get you plugged in and productive as quickly as possible.
 
-### Who is a contributor?
+## Who is a contributor?
 :::tip
 Wasabi is free and open source software, but contributing is **not** just about writing code.
 **A contributor is any individual who works to improve and add value to Wasabi and its users.**
