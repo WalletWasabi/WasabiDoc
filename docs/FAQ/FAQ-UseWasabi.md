@@ -6,11 +6,16 @@
 
 ## Wallet Manager
 
+@[youtube](XykixYdbFpA)
 
 ## Synchronization
 
+@[youtube](qguwAvA5Fx4)
 
 ## Receive
+
+@[youtube](9i7CceIdFg4)
+
 ### Why is it bad to re-use addresses?
 Bitcoin is designed so that for every payment you can use a new address that is not tied to any of your previous addresses.
 When you use a new address for every coin, then it becomes much much more difficult to find out that these coins are from you.
@@ -37,6 +42,10 @@ Be careful, if you send all your coins from an old wallet to a new wallet (from 
 
 ## Send
 
+@[youtube](PRlAAxunmdU)
+
+@[youtube](AdmlM-Qvco0)
+
 ### Why does Wasabi choose a new random node every time I send a transaction?
 
 When you broadcast a transaction from a full node, that transaction is flooded into the network.
@@ -53,6 +62,9 @@ This reduces the risk of a passive bystander being able to link two transactions
 
 
 ## CoinJoin
+
+@[youtube](ypfZT9GlqTw)
+
 ### What are the fees for the CoinJoin?
 You currently pay a fee of 0.003% * anonymity set.
 If the anonymity set of a coin is 50 then you pay 0.003% * 50 (=0.15%).
@@ -94,7 +106,11 @@ Yes.
 In a round with a ~0.1 BTC minimum, you could mix ~0.3 BTC and get a ~0.1 BTC output & a ~ 0.2 BTC output.
 
 Similarly, with a 0.7 BTC input you would expect the following outputs: ~0.1, ~0.2, ~0.4 BTC.
-The possible values of equal output that can be created are 0.1 x 2^n where n is a positive integer (or zero).  [See more here](https://youtu.be/PKtxzSLPWFU) and [here](https://youtu.be/3Ezru07J674).
+The possible values of equal output that can be created are 0.1 x 2^n where n is a positive integer (or zero).
+
+@[youtube](PKtxzSLPWFU)
+
+@[youtube](3Ezru07J674)
 
 ### Why are the denominations such an odd number?
 
@@ -124,6 +140,8 @@ With the magic of cryptography, she can reveal the clear-text address of the ano
 
 The input registration phase ends when either, the number of registered inputs exceeds the number of required inputs [meaning anonymity set of 100 peers]; or when the last round was two hours ago.
 
+@[youtube](v1fIjFR6e5Q)
+
 [missing: explanation of uniqueld]
 
 ### What is happening in the connection confirmation phase?
@@ -132,6 +150,8 @@ The coordinator verifies the uniqueld from all the Alice's, and when everyone is
 The round is abandoned and re-started if too many Alice's have dropped, for example when Wasabi is shut down, or when the tor connection is temporarily broken.
 
 The connection confirmation phase ends when all Alice's have provided their inputs, or after a timeout when the online Alice's are still larger than the required number of peers.
+
+@[youtube](hhkL0QvIaGY)
 
 [missing: explanation of uniqueld]
 
@@ -149,7 +169,6 @@ Because Alice commits to the output by sending it blinded, and because Bob is a 
 The output registration phase ends when the value of clear-text outputs plus change outputs is equal to the the value of inputs.
 If after a timeout not all outputs are registered, then this round is abandoned, the missing peers are banned, and a new round is started.
 
-
 ### What is happening in the signing phase?
 Now that all inputs and outputs are registered, the Wasabi coordinator can start the [signing phase](https://github.com/nopara73/zerolink#3-signing-phase) by building the CoinJoin transaction with all the registered inputs, the anonset outputs, and the change outputs.
 He sends this transaction to all the Alice's of this round.
@@ -165,6 +184,13 @@ The coordinator sends this transaction over the tor network to a random full nod
 Wasabi is saving on mining fees by setting a confirmation target of roughly 12 hours, but you can re-register unconfirmed anonset outputs for the next round of CoinJoin.
 
 ## Hardware Wallet
+
+@[youtube](aU8ysH9JH9M)
+
+@[youtube](kocEpndQcsg)
+
+@[youtube](sM2uhyROpAQ)
+
 ### How can I generate a Wasabi skeleton wallet file in ColdCard?
 On the ColdCard (Mk2, firmware 2.1.1 and up) you go to ```>Advanced>MicrcoSD Card>Wasabi Wallet``` and it will save a skeleton json-file to the MicroSD card in the hardware wallet.
 
@@ -198,7 +224,7 @@ If this fails you can manually type the path to this file in Wasabi Wallet to lo
 Now click ```Broadcast Transaction``` to send it off over Tor to a random Bitcoin node so it can flood over to the miners for confirmation in a block. 
 
 ### Can I CoinJoin the bitcoin on my hardware wallet?
-You can't do that directly, so send them (in small portions >0.1BTC if needed) to a ''hot'' Wasabi Wallet for CoinJoin and then send them back to a new address on the Hardware wallet for cold-storage. 
+You can't do that directly, so send them (in small portions >0.1BTC if needed) to a ''hot'' Wasabi Wallet for CoinJoin and then send them back to a new address on the Hardware wallet for cold-storage.
 
 ## Settings
 ### How do I connect my own full node to Wasabi?
@@ -207,7 +233,9 @@ The server will still send you [BIP 158 block filters](https://github.com/bitcoi
 One attack vector could be that Wasabi lies to you and gives you wrong filters that exclude your transaction, thus you would see in the wallet less coins than you actually control. [BIP 157 solves this](https://github.com/bitcoin/bips/blob/master/bip-0157.mediawiki).
 
 When your full node is on the same hardware [computer, laptop] as your Wasabi Wallet, then it will automatically recognize it and pull blocks from there.
-If your node is on a remote device [raspberry pi, nodl, server], then you can specify your local IP in the Settings tab, or in line 11 of the config file. [See more here](https://youtu.be/gWo2RAkIVrE).
+If your node is on a remote device [raspberry pi, nodl, server], then you can specify your local IP in the Settings tab, or in line 11 of the config file. 
+
+@[youtube](gWo2RAkIVrE)
 
 ### How can I turn off Tor?
 You can turn off Tor in the Settings.
@@ -229,10 +257,16 @@ Alternatively, open the config file from the wallet GUI, go to `File`>`Open`>`Co
 ```
 
 Remember that you pay a fee proportional to the Anonymity Set.
-[See more here](https://youtu.be/gWo2RAkIVrE?t=191).
+
+@[youtube](gWo2RAkIVrE)
 
 
-## Coin Control Best Practices 
+## Coin Control Best Practices
+
+@[youtube](iyJ81JRvLQk)
+
+@[youtube](k4VzJ6dUT9I)
+
 ### Can I consolidate anonset coins?
 It is advisable to limit the recombining of mixed coins because it can only decrease the privacy of said coins.
 This links all the consolidated UTXOs in one transaction, creating only one output, which then clearly controls all these funds.
@@ -329,7 +363,6 @@ Send
 - Can I see the fee in Satoshis per byte?
 - How is the tansaction broadcasted?
 
-
 History
 - How can I check the history of transactions?
 - Can I export a list of transaction?
@@ -339,11 +372,6 @@ CoinJoin
 - What are the denominations created in one round?
 - How much anonymity set do I need?
 - How many rounds should I CoinJoin?
-- What is happening in the input registration phase?
-- What is happening in the connection confirmation phase?
-- What is happening in the output registration phase?
-- What is happening in the signing phase phase?
-- What is happening in the broadcasting phase?
 - How does my wallet communicate with the Wasabi coordinator server?
 - Why are the denominations such an odd number?
 
