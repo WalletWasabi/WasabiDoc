@@ -42,10 +42,16 @@ Though often times it is quite useful to start a conversation with other Wasabik
 Here it is useful to reach out to the contributors on [Twitter](https://twitter.com/wasabiwallet), [Reddit](https://old.reddit.com/r/WasabiWallet/), and [Telegram](https://t.me/WasabiWallet).
 If your trouble is specific to the code, then it might also be suitable to check the existing [GitHub issues](https://github.com/zkSNACKs/WalletWasabi/issues/) and open a new one.
 
+### What is on the future roadmap of Wasabi development?
+Wasabi is far from complete, there are many Wasabikas contributing every day to make this tool of self defense even more powerful.
+Because Wasabi is libre and open source software, anyone can support the project without asking for permission.
+Thus it is relatively tricky to give a precise roadmap with what will be implemented in the near and distant future.
+You can check the [ToDo list](/building-wasabi/ToDo.md) for a somewhat up-to-date summary of the short term priorities of the next #twoweeks, and what might be implemented in the distant future.
+
+
 #### Further questions
 - Who is contributing to Wasabi already?
 - What does the Wasabi project need help with?
 - How should I start contributing code?
 - Who verifies the pull requests? 
 - Is there a bounty program?
-- What is on the future roadmap of Wasabi development?
