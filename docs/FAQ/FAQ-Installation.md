@@ -62,6 +62,15 @@ Verify the signature of the package with with `right click on the signature file
 Now install Wasabi with double clicking the `.msi` file.
 Checkout the main documentation for a [step-by-step guide](/using-wasabi/InstallPackage.html#windows).
 
+### How do I install Wasabi on OSX?
+[Download](/FAQ-Installation.md#where-can-i-download-wasabi) the most recent `.dmg` package and the `.dmg.asc` signature file from the [wasabiwallet.io](https://wasabiwallet.io) or the [tor hidden service](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion).
+
+![](/DownloadMac.png)
+
+Verify the signature of the package with with `sudo gpg2 --verify Wasabi-X.X.X.dmg.asc` and ensure the software was signed by Àdàm's PGP key [21D7 CA45 565D BCCE BE45 115D B4B7 2266 C47E 075E](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt).
+Now install Wasabi with double clicking the `.dmg` file.
+Checkout the main documentation for a [step-by-step guide](/using-wasabi/InstallPackage.html#mac).
+
 ### How do I compile Wasabi from source?
 A new version of Wasabi is released when ready, roughly once every #twoweeks.
 Yet in the meantime there are many commits to the latest master branch, not just bug fixes, but also new features and stability improvements.
@@ -101,7 +110,6 @@ Wasabi is cutting edge software, so it is well advised to stay up-to-date.
 ---
 
 #### Further Questions
-- How do I install Wasabi on iOS?
 - How can I install Wasabi headless daemon without GUI?
 - How do I check the deterministic builds?
 - How do I install the Wasabi backend server?
