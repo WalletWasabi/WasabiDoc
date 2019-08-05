@@ -23,10 +23,12 @@ body
 
   @media (min-width: 0)
     font-size 15px
-  @media (min-width: ($MQMobile + 1px))
+  @media (min-width: ($MQMobileNarrow + 1px))
     font-size 16px
-  @media (min-width: ($MQNarrow + 1px))
+  @media (min-width: ($MQMobile + 1px))
     font-size 17px
+  @media (min-width: ($MQNarrow + 1px))
+    font-size 18px
 
   h1
   h2
@@ -76,6 +78,11 @@ body
     color $navbarTextColor
     background $navbarBgColor
     border-bottom-color lighten($navbarBgColor, 10%)
+    .logo
+      margin-right .25rem
+    .nav-links
+      .nav-item
+        margin-left 1.75rem
     .nav-link,
     .repo-link
       color $navbarTextColor
@@ -86,7 +93,7 @@ body
     .links
       background $navbarBgColor
       color $navbarTextColor
-      font-size 1rem
+      font-size 1em
 
     .suggestions
       background $navbarBgColor

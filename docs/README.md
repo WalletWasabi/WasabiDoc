@@ -1,5 +1,6 @@
 ---
 home: true
+heroText: Wasabi Documentation
 heroImage: /Logo_without_text.png
 actionText: Reclaim Your Privacy →
 actionLink: /why-wasabi/WhyPrivacyImportant.md

@@ -1,5 +1,5 @@
 module.exports = {
-  title: "Wasabi Documentation",
+  title: "Wasabi",
   description: "Wasabi is an open-source, non-custodial, privacy focused Bitcoin wallet for desktop.",
   head: [
     ["link", { rel: "icon", href: "/favicon.ico" }],
