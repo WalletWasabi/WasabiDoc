@@ -23,7 +23,7 @@ Wasabi is tailor made so that You do **not** have to trust anyone, but You have 
 
 With PGP signatures You can verify that the software package You download is actually the one by the developers.
 Every release of Wasabi is signed by [Ádám Ficsor aka nopara73](https://github.com/nopara73), the lead developer and maintainer of the repository, as well as the co-founder and CTO of [zkSnacks Ltd](https://zksnacks.com/).
-You can verify that the PGP key [21D7 CA45 565D BCCE BE45 115D B4B7 2266 C47E 075E](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt) is actually the one of Ádám by exploring the [web of trust](https://en.wikipedia.org/wiki/Web_of_trust).
+You can verify that the PGP key [21D7 CA45 565D BCCE BE45 115D B4B7 2266 C47E 075E](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt) is actually the one of [Ádám](https://pgp.key-server.io/search/nopara73) by exploring the [web of trust](https://en.wikipedia.org/wiki/Web_of_trust).
 When you have a software package that was signed by this key, then you can be sure that this is an official release approved by Adam.
 This protects you against malicious man in the middle attacks where bad guys give you a fake version of Wasabi with malicious code.
 
@@ -77,7 +77,6 @@ Wasabi is cutting edge software, so it is well advised to stay up-to-date.
 - How do I install Wasabi on Linux?
 - How do I install Wasabi on Microsoft?
 - How do I install Wasabi on iOS?
-- How do I know about a new version of Wasabi?
 - How can I install Wasabi headless daemon without GUI?
 - How do I check the deterministic builds?
 - How do I install the Wasabi backend server?
