@@ -219,7 +219,7 @@ In the second case, if you happen to broadcast a transaction of yours to a full 
 In the Settings tab at the bottom you can change the three `PrivacyLevelX` values of the desired anon set of the yellow, green, and checkmark shield button in the GUI.
 The `MixUntilAnonymitySet` is the last selected value from previous use. 
 
-In the wallet GUI, go to `File`>`Open`>`Config File` and in the last 4 lines you see:
+Alternatively, open the config file from the wallet GUI, go to `File`>`Open`>`Config File` and in the last 4 lines you see:
 
 ```json
 "MixUntilAnonymitySet": 50,
