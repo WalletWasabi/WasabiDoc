@@ -16,7 +16,7 @@ You can also use Wasabi to manage Your hardware wallet, and it even connects to 
 Of course, Wasabi is libre and open source, which means You have full control over the software You manage Your money with.
 
 ### Who can use Wasabi?
-Every single line of code in Wasabi, the [wallet](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Gui), the [backend server](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Backend), the api, the [documentation](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs) - has always been and will always be libre and open source under the [MIT license](https://github.com/zkSNACKs/WalletWasabi/blob/master/LICENSE.md). 
+Every single line of code in Wasabi, the [wallet](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Gui), the [backend server](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Backend), the [tests](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Tests), the [packager](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Packager), the [documentation](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs) - has always been and will always be libre and open source under the [MIT license](https://github.com/zkSNACKs/WalletWasabi/blob/master/LICENSE.md). 
 This means that anyone, yes, ANYONE can use Wasabi without permission, for any use case, free of charge.
 
 Wasabi is used by individuals to receive and spend every day payments, to manage their hardware wallet long term hodlings, and to CoinJoin their sats for added privacy.
