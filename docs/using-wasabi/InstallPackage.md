@@ -26,11 +26,11 @@ If you have already imported Ádám Ficsor's public key, then jump to step 7.
 ![](/InstallWindowsGpgp4winSetup.png)
 
 
-2. [Download](https://wasabiwallet.io) the latest Wasabi release, both the `.msi` installer and the corresponding `.asc` signature file.
+2. [Download](https://wasabiwallet.io) the latest Wasabi release, both the `.msi` installer and the corresponding `.msi.asc` signature file.
 
 ![](/DownloadWindows.png)
 
-3. Double click on `.asc` file or right click `More GpgEX options / Verify`.
+3. Double click on `.msi.asc` file or right click `More GpgEX options / Verify`.
 
 ![](/InstallWindowsGUIVerify.png)
 
@@ -126,7 +126,7 @@ Verify that the fingerprint is `21D7 CA45 565D BCCE BE45  115D B4B7 2266 C47E 07
 
 ![](/DownloadTar.png)
 
-3. In the Download folder, run `gpg2 --verify Wasabi.X.X.X.asc`.
+3. In the Download folder, run `gpg2 --verify Wasabi.X.X.X.tar.gz.asc`.
 [Change `X.X.X` to version you downloaded.]
 If the message returned says `Good signature from nopara73 aka Ficsór Ádám` and that it was signed with `Primary key fingerprint: 21D7 CA45 565D BCCE BE45  115D B4B7 2266 C47E 075E`, then the software was not tampered with since the developer signed it.
 
@@ -157,7 +157,7 @@ This should return the output: `key B4B72266C47E075E: public key "nopara73 (GitH
 
 ![](/DownloadMac.png)
 
-5. In the Download folder, run `sudo gpg2 --verify Wasabi.X.X.X.asc`.
+5. In the Download folder, run `sudo gpg2 --verify Wasabi-X.X.X.dmg.asc`.
 [Change `X.X.X` to version you downloaded.]
 If the message returned says `Good signature from nopara73 aka Ficsór Ádám` and that it was signed with `Primary key fingerprint: 21D7 CA45 565D BCCE BE45  115D B4B7 2266 C47E 075E`, then the software was not tampered with since the developer signed it.
 
