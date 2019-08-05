@@ -37,10 +37,21 @@ For an in depth guide for [Debian and Ubuntu](/using-wasabi/InstallPackage.html#
 
 ### How do I install Wasabi on Debian and Ubuntu?
 [Download](/FAQ-Installation.md#where-can-i-download-wasabi) the most recent `.deb` package and the `.deb.asc` signature file from the [wasabiwallet.io](https://wasabiwallet.io) or the [tor hidden service](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion).
+
 ![](/DownloadDeb.png)
-Verify the signature of the package with `gpg --verify Wasabi-1.1.6.deb.asc` and ensure the software was signed by Àdàm's PGP key [21D7 CA45 565D BCCE BE45 115D B4B7 2266 C47E 075E](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt).
+
+Verify the signature of the package with `gpg --verify Wasabi-X.X.X.deb` and ensure the software was signed by Àdàm's PGP key [21D7 CA45 565D BCCE BE45 115D B4B7 2266 C47E 075E](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt).
 Now install Wasabi with `sudo dpkg -i Wasabi-1.1.6.deb.asc`, and run it with `wassabee`.
 Checkout the main documentation for a [step-by-step guide](/using-wasabi/InstallPackage.html#debian-and-ubuntu).
+
+### How do I install Wasabi on other Linux?
+[Download](/FAQ-Installation.md#where-can-i-download-wasabi) the most recent `.tar.gz` package and the `.deb.asc` signature file from the [wasabiwallet.io](https://wasabiwallet.io) or the [tor hidden service](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion).
+
+![](/DownloadTar.png)
+
+Verify the signature of the package with `gpg --verify Wasabi-X.X.X.tar.gz.asc` and ensure the software was signed by Àdàm's PGP key [21D7 CA45 565D BCCE BE45 115D B4B7 2266 C47E 075E](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt).
+Now install Wasabi with `sudo tar -pxzf Wasabi-X.X.X.tar.gz`, and run it with `./wassabee`.
+Checkout the main documentation for a [step-by-step guide](/using-wasabi/InstallPackage.html#other-linux).
 
 ### How do I compile Wasabi from source?
 A new version of Wasabi is released when ready, roughly once every #twoweeks.
