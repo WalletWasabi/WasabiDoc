@@ -107,10 +107,16 @@ In the GUI go to the top left menu `Help > About`, here you see the current vers
 You can also verify in the command line by executing `wassabee --version`.
 Wasabi is cutting edge software, so it is well advised to stay up-to-date.
 
+### How can I verify the deterministic build?
+Wasabi has [reproducible and deterministic builds](/using-wasabi/DeterministicBuild.html), which means that You can verify that the compiled packages are from the [source code](https://github.com/zksnacks/walletwasabi).
+On Windows, You can verify this with `git diff --no-index win7-x64 "C:\Program Files\WasabiWallet".
+On Debian and Ubuntu do `git diff --no-index linux-x64/ /usr/local/bin/wasabiwallet/`.
+On other Linux do `git diff --no-index linux-x64/ WasabiLinux-1.1.6`.
+And on Mac first unzip with `7z x Wasabi-1.1.6.dmg -oWasabiOsx` and verify with `git diff --no-index osx-x64/ WasabiOsx/Wasabi\ Wallet.App/Contents/MacOS/`.
+
 ---
 
 #### Further Questions
 - How can I install Wasabi headless daemon without GUI?
-- How do I check the deterministic builds?
 - How do I install the Wasabi backend server?
 
