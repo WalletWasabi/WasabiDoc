@@ -32,6 +32,17 @@ A mechanism by which multiple participants combine their coins (or UTXOs, to be 
 An observer cannot determine which output belongs to which input, and neither can the participants themselves.
 This makes it difficult for outside parties to trace where a particular coin originated from and where it was sent to (as opposed to regular bitcoin transactions, where there is usually one sender and one receiver).
 
+This can be done with non-custodial software like Wasabi that eliminates the risk of funds disappearing or being stolen.
+Each of the signatures are created on the participants’ computers, so anyone trying to connect the signatures is unable to alter the transaction or redirect the funds.
+The funds will always be in a Bitcoin address that you control.
+
+It’s possible to do this in a decentralized way so that the service does not rely on external parties or centralized servers.
+It just needs the participants of the transaction.
+
+CoinJoin can be applied multiple times, and as many transactions are grouped together, participants may save on transaction fees. 
+CoinJoin is the preferred method of gaining privacy in the Bitcoin network.
+It is even possible that this functionality might one day be included directly on the protocol level as standard, as some altcoins already do.
+
 In very simple terms, CoinJoin means: “when you want to make a transaction, find someone else who also wants to make a transaction and make a joint transaction together”.
 
 See also the [Bitcoin Wiki on CoinJoins](https://en.bitcoin.it/wiki/CoinJoin)
