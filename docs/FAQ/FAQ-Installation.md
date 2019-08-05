@@ -47,6 +47,11 @@ Wasabi is written in C# with the .NET framework, and it is very easy to compile 
 To start Wasabi simply execute `dotnet run` from the `WalletWasabi.Gui` folder.
 You can update the master branch with `git pull`.
 
+### How do I know about a new version of Wasabi?
+When a new version has been released, you'll see a notification in the bottom left status bar `New Version Available`.
+The [website](https://wasabiwallet.io) always links to the most recent build of the software.
+It will also be announced on [Twitter](https://twitter.com/wasabiwallet), [Reddit](https://old.reddit.com/r/WasabiWallet/), and [Telegram](https://t.me/WasabiWallet).
+
 ### How do I securely upgrade Wasabi?
 You can download the software build for the different operating systems on the main [website](https://wasabiwallet.io) or better over [Tor](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion).
 Make sure you also download the signatures of the build and verify them for [Adam Ficsor's public key](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt).
