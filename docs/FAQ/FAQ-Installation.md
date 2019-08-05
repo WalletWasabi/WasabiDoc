@@ -35,6 +35,18 @@ Everything is valid if it returns `Good signature from nopara73 aka Ficsór Ád�
 
 For an in depth guide for [Debian and Ubuntu](/using-wasabi/InstallPackage.html#debian-and-ubuntu), [other Linux](/using-wasabi/InstallPackage.html#other-linux), [Windows](/using-wasabi/InstallPackage.html#windows), and [OSX](/using-wasabi/InstallPackage.html#osx) see the main documentation.
 
+### How do I compile Wasabi from source?
+A new version of Wasabi is released when ready, roughly once every #twoweeks.
+Yet in the meantime there are many commits to the latest master branch, not just bug fixes, but also new features and stability improvements.
+If You cannot wait until the next release, and You want to experience the most cutting-edge version of Wasabi, then You can [build the source code](/using-wasabi/BuildSourc.md).
+
+The only two required tools are [Git](https://git-scm.com/downloads) and [.NET Core 2.2 SDK](https://www.microsoft.com/net/download) for "Building Apps".
+You can download every line in the code by `git clone https://github.com/zkSNACKs/WalletWasabi.git`, this will create a new directory called `WalletWasabi`.
+In order to build the Wallet software, change directory to `cd WalletWasabi/WalletWasabi.Gui`.
+Wasabi is written in C# with the .NET framework, and it is very easy to compile it from source, with only one command `dotnet build`, this will only take a minute or two.
+To start Wasabi simply execute `dotnet run` from the `WalletWasabi.Gui` folder.
+You can update the master branch with `git pull`.
+
 ### How do I securely upgrade Wasabi?
 You can download the software build for the different operating systems on the main [website](https://wasabiwallet.io) or better over [Tor](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion).
 Make sure you also download the signatures of the build and verify them for [Adam Ficsor's public key](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt).
@@ -61,7 +73,6 @@ Wasabi is cutting edge software, so it is well advised to stay up-to-date.
 - How do I install Wasabi on Microsoft?
 - How do I install Wasabi on iOS?
 - How do I know about a new version of Wasabi?
-- How do I compile Wasabi from source?
 - How can I install Wasabi headless daemon without GUI?
 - How do I check the deterministic builds?
 - How do I install the Wasabi backend server?
