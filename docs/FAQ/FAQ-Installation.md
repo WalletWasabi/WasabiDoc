@@ -35,6 +35,13 @@ Everything is valid if it returns `Good signature from nopara73 aka Ficsór Ád�
 
 For an in depth guide for [Debian and Ubuntu](/using-wasabi/InstallPackage.html#debian-and-ubuntu), [other Linux](/using-wasabi/InstallPackage.html#other-linux), [Windows](/using-wasabi/InstallPackage.html#windows), and [OSX](/using-wasabi/InstallPackage.html#osx) see the main documentation.
 
+### How do I install Wasabi on Debian and Ubuntu?
+[Download](/FAQ-Installation.md#where-can-i-download-wasabi) the most recent `.deb` package and the `.deb.asc` signature file from the [wasabiwallet.io](https://wasabiwallet.io) or the [tor hidden service](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion).
+![](/DownloadDeb.png)
+Verify the signature of the package with `gpg --verify Wasabi-1.1.6.deb.asc` and ensure the software was signed by Àdàm's PGP key [21D7 CA45 565D BCCE BE45 115D B4B7 2266 C47E 075E](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt).
+Now install Wasabi with `sudo dpkg -i Wasabi-1.1.6.deb.asc`, and run it with `wassabee`.
+Checkout the main documentation for a [step-by-step guide](/using-wasabi/InstallPackage.html#debian-and-ubuntu).
+
 ### How do I compile Wasabi from source?
 A new version of Wasabi is released when ready, roughly once every #twoweeks.
 Yet in the meantime there are many commits to the latest master branch, not just bug fixes, but also new features and stability improvements.
@@ -74,7 +81,6 @@ Wasabi is cutting edge software, so it is well advised to stay up-to-date.
 ---
 
 #### Further Questions
-- How do I install Wasabi on Linux?
 - How do I install Wasabi on Microsoft?
 - How do I install Wasabi on iOS?
 - How can I install Wasabi headless daemon without GUI?
