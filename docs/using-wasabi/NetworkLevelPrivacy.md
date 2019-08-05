@@ -167,6 +167,8 @@ The only adversary that could possibly overcome this would have to setup thousan
 
 ## Wasabi Wallet + Full Node
 
+@[youtube](gWo2RAkIVrE)
+
 ### Private UTXO Retrieval
 
 If you have a listening full node running in the background (not only Bitcoin Core, any full node) then Wasabi automatically picks it up and instead of asking peers for blocks, it asks blocks from your own node.
@@ -180,3 +182,5 @@ Because against all reasonable adversaries, a comparison between Bitcoin Core an
 But you are greatly mistaken.
 This article will surely help me win Internet arguments.
 And, in the end, isn’t that’s what really matters?
+
+@[youtube](qguwAvA5Fx4)

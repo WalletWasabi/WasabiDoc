@@ -29,6 +29,8 @@ You can verify that the PGP key [21D7 CA45 565D BCCE BE45 115D B4B7 2266 C47E 07
 When you have a software package that was signed by this key, then you can be sure that this is an official release approved by Adam.
 This protects you against malicious man in the middle attacks where bad guys give you a fake version of Wasabi with malicious code.
 
+@[youtubePlaylist](PLPj3KCksGbSZkVpgAZjAFfFp4D0SHLnFw)
+
 ### How can I verify PGP signatures?
 On the [WasabiWallet.io](https://wasabiwallet.io) website You can download the packages of the latest release.
 Make sure that in addition you also download the separate signature `.asc` file.
@@ -36,6 +38,8 @@ In the terminal, change the directory to the one with the downloaded files, and 
 Everything is valid if it returns `Good signature from nopara73 aka Ficsór Ádám` and that it was signed with the `Primary key fingerprint: 21D7 CA45 565D BCCE BE45 115D B4B7 2266 C47E 075E`.
 
 For an in depth guide for [Debian and Ubuntu](/using-wasabi/InstallPackage.html#debian-and-ubuntu), [other Linux](/using-wasabi/InstallPackage.html#other-linux), [Windows](/using-wasabi/InstallPackage.html#windows), and [OSX](/using-wasabi/InstallPackage.html#osx) see the main documentation.
+
+@[youtube](mTrClVA_o5A)
 
 ### How do I install Wasabi on Debian and Ubuntu?
 [Download](/FAQ-Installation.md#where-can-i-download-wasabi) the most recent `.deb` package and the `.deb.asc` signature file from the [wasabiwallet.io](https://wasabiwallet.io) or the [tor hidden service](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion).
@@ -45,6 +49,8 @@ For an in depth guide for [Debian and Ubuntu](/using-wasabi/InstallPackage.html#
 Verify the signature of the package with `gpg --verify Wasabi-X.X.X.deb` and ensure the software was signed by Àdàm's PGP key [21D7 CA45 565D BCCE BE45 115D B4B7 2266 C47E 075E](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt).
 Now install Wasabi with `sudo dpkg -i Wasabi-1.1.6.deb.asc`, and run it with `wassabee`.
 Checkout the main documentation for a [step-by-step guide](/using-wasabi/InstallPackage.html#debian-and-ubuntu).
+
+@[youtube](mTrClVA_o5A,122)
 
 ### How do I install Wasabi on other Linux?
 [Download](/FAQ-Installation.md#where-can-i-download-wasabi) the most recent `.tar.gz` package and the `.tar.gz.asc` signature file from the [wasabiwallet.io](https://wasabiwallet.io) or the [tor hidden service](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion).
@@ -72,6 +78,8 @@ Checkout the main documentation for a [step-by-step guide](/using-wasabi/Install
 Verify the signature of the package with with `sudo gpg2 --verify Wasabi-X.X.X.dmg.asc` and ensure the software was signed by Àdàm's PGP key [21D7 CA45 565D BCCE BE45 115D B4B7 2266 C47E 075E](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt).
 Now install Wasabi with double clicking the `.dmg` file.
 Checkout the main documentation for a [step-by-step guide](/using-wasabi/InstallPackage.html#mac).
+
+@[youtube](_Zmc54XYzBA)
 
 ### How do I check the current version of Wasabi?
 In the GUI go to the top left menu `Help > About`, here you see the current version of your Wasabi.
