@@ -4,6 +4,8 @@
 
 ---
 
+## The Basics
+
 ### Explain Wasabi like I'm 5
 Wasabi is a software wallet to manage Your Bitcoin private keys.
 It is tailor made to protect Your privacy on every step.
@@ -54,6 +56,8 @@ Find out more about coin control it [here](https://medium.com/@nopara73/coin-con
 No.
 The worst thing that can happen (through user’s negligence post-mix) is that the level of your privacy stays the same as before CoinJoin.
 It is crucial to understand that Wasabi is not a fool-proof solution if you neglect to practice coin control after the mixing process.
+
+## For advanced Wasabikas
 
 ### Does Wasabi have a warrant canary?
 The nature of Wasabi is that you should not need to trust the developers or the Wasabi coordinating server, as you can verify that the code does not leak information to anyone.

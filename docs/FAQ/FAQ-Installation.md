@@ -4,6 +4,8 @@
 
 ---
 
+## Installing the Package
+
 ### Where can I download Wasabi?
 It's always best to download software directly from the official source acknowledged by the developers.
 You can find the recent version of the compiled packages for Linux, Windows and Mac available on the official [wasabiwallet.io](https://wasabiwallet.io).
@@ -71,17 +73,10 @@ Verify the signature of the package with with `sudo gpg2 --verify Wasabi-X.X.X.d
 Now install Wasabi with double clicking the `.dmg` file.
 Checkout the main documentation for a [step-by-step guide](/using-wasabi/InstallPackage.html#mac).
 
-### How do I compile Wasabi from source?
-A new version of Wasabi is released when ready, roughly once every #twoweeks.
-Yet in the meantime there are many commits to the latest master branch, not just bug fixes, but also new features and stability improvements.
-If You cannot wait until the next release, and You want to experience the most cutting-edge version of Wasabi, then You can [build the source code](/using-wasabi/BuildSourc.md).
-
-The only two required tools are [Git](https://git-scm.com/downloads) and [.NET Core 2.2 SDK](https://www.microsoft.com/net/download) for "Building Apps".
-You can download every line in the code by `git clone https://github.com/zkSNACKs/WalletWasabi.git`, this will create a new directory called `WalletWasabi`.
-In order to build the Wallet software, change directory to `cd WalletWasabi/WalletWasabi.Gui`.
-Wasabi is written in C# with the .NET framework, and it is very easy to compile it from source, with only one command `dotnet build`, this will only take a minute or two.
-To start Wasabi simply execute `dotnet run` from the `WalletWasabi.Gui` folder.
-You can update the master branch with `git pull`.
+### How do I check the current version of Wasabi?
+In the GUI go to the top left menu `Help > About`, here you see the current version of your Wasabi.
+You can also verify in the command line by executing `wassabee --version`.
+Wasabi is cutting edge software, so it is well advised to stay up-to-date.
 
 ### How do I know about a new version of Wasabi?
 When a new version has been released, you'll see a notification in the bottom left status bar `New Version Available`.
@@ -102,10 +97,19 @@ Note that in this case you are still private, except when you CoinJoin and when 
 In the first case, the coordinator would know the links between your inputs and outputs based on your IP address.
 In the second case, if you happen to broadcast a transaction of yours to a full node that is spying on you, it will know the link between your transaction and your IP address.
 
-### How do I check the current version of Wasabi?
-In the GUI go to the top left menu `Help > About`, here you see the current version of your Wasabi.
-You can also verify in the command line by executing `wassabee --version`.
-Wasabi is cutting edge software, so it is well advised to stay up-to-date.
+## Advanced Installation
+
+### How do I compile Wasabi from source?
+A new version of Wasabi is released when ready, roughly once every #twoweeks.
+Yet in the meantime there are many commits to the latest master branch, not just bug fixes, but also new features and stability improvements.
+If You cannot wait until the next release, and You want to experience the most cutting-edge version of Wasabi, then You can [build the source code](/using-wasabi/BuildSourc.md).
+
+The only two required tools are [Git](https://git-scm.com/downloads) and [.NET Core 2.2 SDK](https://www.microsoft.com/net/download) for "Building Apps".
+You can download every line in the code by `git clone https://github.com/zkSNACKs/WalletWasabi.git`, this will create a new directory called `WalletWasabi`.
+In order to build the Wallet software, change directory to `cd WalletWasabi/WalletWasabi.Gui`.
+Wasabi is written in C# with the .NET framework, and it is very easy to compile it from source, with only one command `dotnet build`, this will only take a minute or two.
+To start Wasabi simply execute `dotnet run` from the `WalletWasabi.Gui` folder.
+You can update the master branch with `git pull`.
 
 ### How can I verify the deterministic build?
 Wasabi has [reproducible and deterministic builds](/using-wasabi/DeterministicBuild.html), which means that You can verify that the compiled packages are from the [source code](https://github.com/zksnacks/walletwasabi).
