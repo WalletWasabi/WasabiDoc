@@ -45,13 +45,22 @@ Now install Wasabi with `sudo dpkg -i Wasabi-1.1.6.deb.asc`, and run it with `wa
 Checkout the main documentation for a [step-by-step guide](/using-wasabi/InstallPackage.html#debian-and-ubuntu).
 
 ### How do I install Wasabi on other Linux?
-[Download](/FAQ-Installation.md#where-can-i-download-wasabi) the most recent `.tar.gz` package and the `.deb.asc` signature file from the [wasabiwallet.io](https://wasabiwallet.io) or the [tor hidden service](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion).
+[Download](/FAQ-Installation.md#where-can-i-download-wasabi) the most recent `.tar.gz` package and the `.tar.gz.asc` signature file from the [wasabiwallet.io](https://wasabiwallet.io) or the [tor hidden service](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion).
 
 ![](/DownloadTar.png)
 
 Verify the signature of the package with `gpg --verify Wasabi-X.X.X.tar.gz.asc` and ensure the software was signed by Àdàm's PGP key [21D7 CA45 565D BCCE BE45 115D B4B7 2266 C47E 075E](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt).
 Now install Wasabi with `sudo tar -pxzf Wasabi-X.X.X.tar.gz`, and run it with `./wassabee`.
 Checkout the main documentation for a [step-by-step guide](/using-wasabi/InstallPackage.html#other-linux).
+
+### How do I install Wasabi on Windows?
+[Download](/FAQ-Installation.md#where-can-i-download-wasabi) the most recent `.msi` package and the `.msi.asc` signature file from the [wasabiwallet.io](https://wasabiwallet.io) or the [tor hidden service](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion).
+
+![](/DownloadWindows.png)
+
+Verify the signature of the package with with `right click on the signature file > More GpgEX options > Verify` and ensure the software was signed by Àdàm's PGP key [21D7 CA45 565D BCCE BE45 115D B4B7 2266 C47E 075E](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt).
+Now install Wasabi with double clicking the `.msi` file.
+Checkout the main documentation for a [step-by-step guide](/using-wasabi/InstallPackage.html#windows).
 
 ### How do I compile Wasabi from source?
 A new version of Wasabi is released when ready, roughly once every #twoweeks.
@@ -92,7 +101,6 @@ Wasabi is cutting edge software, so it is well advised to stay up-to-date.
 ---
 
 #### Further Questions
-- How do I install Wasabi on Microsoft?
 - How do I install Wasabi on iOS?
 - How can I install Wasabi headless daemon without GUI?
 - How do I check the deterministic builds?
