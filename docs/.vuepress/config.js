@@ -9,7 +9,12 @@ module.exports = {
     ["link", { rel: "stylesheet", href: "https://fonts.googleapis.com/css?family=Inconsolata:400,700|Playfair+Display:700&display=swap" }]
   ],
   plugins: [
-    "@vuepress/back-to-top"
+    "@vuepress/back-to-top",
+    ["container", {
+      type: "details",
+      before: title => `<details><summary>${title}</summary>`,
+      after: '</details>'
+    }],
   ],
   markdown: {
     extendMarkdown (md) {

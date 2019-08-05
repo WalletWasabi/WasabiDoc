@@ -49,9 +49,21 @@ body
 
   h3
   h4
+  summary
     text-transform uppercase
     letter-spacing 0.05rem
     font-weight 700
+
+  details
+    margin 1rem 0
+    &[open]
+      > :last-child
+        margin-bottom 3rem
+
+  summary
+    margin 1rem 0
+    &::marker
+      color $accentColor
 
   // home
   .home
@@ -143,7 +155,6 @@ body
 
   // content
   .page
-
     a:not(.nav-link)
       text-decoration none
       color $accentColor
