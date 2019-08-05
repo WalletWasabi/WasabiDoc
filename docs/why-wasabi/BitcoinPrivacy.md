@@ -8,39 +8,54 @@
 
 One of the apparent contradictions of Bitcoin is the notion that your transactions can be private but have a public transaction record.
 
-As a financial system, Bitcoin functions completely differently from the established banking network. Bitcoin allows you to store funds yourself, without the need for a third party, and therefore places the burden of keeping said funds secure and accessible on you.
+As a financial system, Bitcoin functions completely differently from the established banking network.
+Bitcoin allows you to store funds yourself, without the need for a third party, and therefore places the burden of keeping said funds secure and accessible on you.
 
-While opening an account with a traditional bank or other financial institution requires significant cost and effort, creating a Bitcoin account is quick and easy to do on your home computer. This speedy process makes it possible to create hundreds of separate accounts if you wish.
+While opening an account with a traditional bank or other financial institution requires significant cost and effort, creating a Bitcoin account is quick and easy to do on your home computer.
+This speedy process makes it possible to create hundreds of separate accounts if you wish.
 
 Two aspects in particular—privacy and identity—function very differently with Bitcoin than in the legacy financial system.
 
 _**Pseudonyms protect your identity in Bitcoin**_
 
-A bank account, PayPal account, or credit card is always tied to a real identity, making it difficult for many people to open them. Bitcoin allows you to use any persona or online identity you wish.
+A bank account, PayPal account, or credit card is always tied to a real identity, making it difficult for many people to open them. 
+Bitcoin allows you to use any persona or online identity you wish.
 
-Being able to use the internet anonymously or pseudonymously is the only way for many people to truly be themselves. Hundreds of millions of people around the globe are not accepted in their societies for reasons they cannot control.
+Being able to use the internet anonymously or pseudonymously is the only way for many people to truly be themselves.
+Hundreds of millions of people around the globe are not accepted in their societies for reasons they cannot control.
 
 Pseudonyms are used by women speaking up for their rights, atheists living in religious societies, and people critical of their governments to spread their thoughts, empower their causes, and encourage those around them to do the same.
 
-These courageous men and women put their own safety and well-being at risk to defend who they are and what they believe in. Technology empowers them to become leaders of social change in societies by providing this very pseudonymity. Technology also connects like-minded individuals so they can form the communities for which they strive.
+These courageous men and women put their own safety and well-being at risk to defend who they are and what they believe in. 
+Technology empowers them to become leaders of social change in societies by providing this very pseudonymity.
+Technology also connects like-minded individuals so they can form the communities for which they strive.
 
-Maintaining an identity with a large following might require paid services such as blogs, logo designs, stock photos, VPNs, or translations. Without the ability to pay for these services anonymously, you would be forced to reveal your true identity in order to maintain your pseudonym situation which clearly makes no sense, and one with potentially dangerous ramifications.
+Maintaining an identity with a large following might require paid services such as blogs, logo designs, stock photos, VPNs, or translations.
+Without the ability to pay for these services anonymously, you would be forced to reveal your true identity in order to maintain your pseudonym situation which clearly makes no sense, and one with potentially dangerous ramifications.
 
 _**How Bitcoin empowers anonymity**_
 
-Bitcoin is an important, empowering technology. Using a Bitcoin account with a pseudonym protects your right to remain anonymous on the internet. It allows anonymous or pseudonymous fundraising. Groups can collectively control Bitcoin accounts and choose to either hide or reveal financial information at will.
+Bitcoin is an important, empowering technology.
+Using a Bitcoin account with a pseudonym protects your right to remain anonymous on the internet.
+It allows anonymous or pseudonymous fundraising.
+Groups can collectively control Bitcoin accounts and choose to either hide or reveal financial information at will.
 
 There are many positive reasons for a private and secure banking system like Bitcoin.
 
-For example, a workers’ rights group could raise funds with Bitcoin. The money could be used for servers, flyers, remote helpers… and all without tying any transaction to the real identities of the volunteers.
+For example, a workers’ rights group could raise funds with Bitcoin.
+The money could be used for servers, flyers, remote helpers… and all without tying any transaction to the real identities of the volunteers.
 
 Likewise, a domestic abuse victim might use Bitcoin to securely stack away funds to prepare for an independent life.
 
 _**Privacy through pseudonymous accounts**_
 
-Privacy in traditional banking is guaranteed by the institutions that make up the system, such as banks, credit card companies, and governments. They (try to) ensure that your bank balance stays a secret. This puts them in a powerful position, where only they have complete oversight as to what is going on.
+Privacy in traditional banking is guaranteed by the institutions that make up the system, such as banks, credit card companies, and governments.
+They (try to) ensure that your bank balance stays a secret.
+This puts them in a powerful position, where only they have complete oversight as to what is going on.
 
-In the Bitcoin ecosystem, everyone can see the history of every account balance, but they cannot see who controls an account. All addresses and transactions are recorded in Bitcoin’s publicly distributed database, the blockchain. The addresses do not have names or IP addresses attached to them, so it is not always possible to know which transaction belongs to which individual.
+In the Bitcoin ecosystem, everyone can see the history of every account balance, but they cannot see who controls an account.
+All addresses and transactions are recorded in Bitcoin’s publicly distributed database, the blockchain.
+The addresses do not have names or IP addresses attached to them, so it is not always possible to know which transaction belongs to which individual.
 
 ## Address Reuse
 
