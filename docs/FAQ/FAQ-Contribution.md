@@ -34,9 +34,16 @@ It makes sense to first explain the problem You have in the incumbent version of
 Then describe the solution that You have envisioned, with all the nuances and details of how this would fix Your problem.
 To flesh our Your argument, please consider alternatives and different approaches to this feature request.
 
+### How can I get help and support?
+You are already on the right track by first checking [this documentation](https://docs.wasabiwallet.io) for the knowledge you are seeking.
+It's likely that You are not the first peer who has an issue and question, and hopefully one has curated the answer in here already.
+You can use the search function in the top navbar to look for a specific topic, and the sidebar menu as a table of content.
+Though often times it is quite useful to start a conversation with other Wasabikas about a specific problem.
+Here it is useful to reach out to the contributors on [Twitter](https://twitter.com/wasabiwallet), [Reddit](https://old.reddit.com/r/WasabiWallet/), and [Telegram](https://t.me/WasabiWallet).
+If your trouble is specific to the code, then it might also be suitable to check the existing [GitHub issues](https://github.com/zkSNACKs/WalletWasabi/issues/) and open a new one.
+
 #### Further questions
 - Who is contributing to Wasabi already?
-- How can I get help and support?
 - What does the Wasabi project need help with?
 - How should I start contributing code?
 - Who verifies the pull requests? 
