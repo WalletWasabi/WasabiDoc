@@ -4,7 +4,7 @@
 
 ---
 
-## Who are the Wasabikas?
+## The Wasabikas of the dojo
 
 ### Who is contributing to Wasabi already?
 There are many Wasabikas working with great effort and care to manifest this powerful tool of self defense.
@@ -29,7 +29,15 @@ Because Wasabi is libre and open source software, anyone can support the project
 Thus it is relatively tricky to give a precise roadmap with what will be implemented in the near and distant future.
 You can check the [ToDo list](/building-wasabi/ToDo.md) for a somewhat up-to-date summary of the short term priorities of the next #twoweeks, and what might be implemented in the distant future.
 
-## How can I become a Wasabika?
+## You can become a Wasabika
+
+### How should I start contributing to Wasabi?
+Thank you for considering to support this beautiful libre and open source project!
+Nobody owns this software, and thus it is the responsibility of everyone using it to contribute to it's growth.
+Thus Your help is deeply appreciated, and very much needed!
+First please read the [contribution checklist](/building-wasabi/ContributionChecklist.md) to get introduced to the project and to start out in the right direction.
+You can also see the [ToDo list](/building-wasabi/ToDo.md) for inspiration of what other Wasabikas are tinkering on.
+Join our [Slack](https://join.slack.com/t/tumblebit/shared_invite/enQtNjQ1MTQ2NzQ1ODI0LWIzOTg5YTM3YmNkOTg1NjZmZTQ3NmM1OTAzYmQyYzk1M2M0MTdlZDk2OTQwNzFiNTg1ZmExNzM0NjgzY2M0Yzg), [Telegram](https://t.me/WasabiWallet) or [Sub-Reddit](https://www.reddit.com/r/WasabiWallet/), and check out the [GitHub](https://github.com/zkSnacks/WalletWasabi), so that You can stay up-to-date with the latest contributions.
 
 ### How can I report a bug?
 Code is speech, and can never be perfect.
@@ -72,4 +80,3 @@ If your trouble is specific to the code, then it might also be suitable to check
 #### Further questions
 - What does the Wasabi project need help with?
 - Is there a bounty program?
-- How should I start contributing to Wasabi?
