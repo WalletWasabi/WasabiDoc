@@ -14,11 +14,15 @@ module.exports = {
   markdown: {
     extendMarkdown (md) {
       md.use(customBlock, {
-        youtube (id) {
-          return youtubeEmbed(id)
+        youtube (arg) {
+          const [id, start] = arg.split(',')
+          const path = start ? `${id}?start=${start}` : id
+          return youtubeEmbed(path)
         },
-        youtubePlaylist (id) {
-          return youtubeEmbed(`videoseries?list=${id}&index=1`)
+        youtubePlaylist (arg) {
+          const [id, index = 1] = arg.split(',')
+          const path = `videoseries?list=${id}&index=${index}`
+          return youtubeEmbed(path)
         }
       })
     }

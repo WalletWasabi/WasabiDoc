@@ -76,3 +76,25 @@ npm start
 - CoinJoin [capitalized, one word]
 - Every sentense must start a new line.
 - For a paragraph, add an `empty line` or `</br>` in the markdown.
+
+### Advanced
+
+#### Embedding videos
+
+Youtube videos and playlists can be embedded via the following custom markdown tags:
+
+```md
+@[youtube](VIDEO_ID)
+@[youtubePlaylist](PLAYLIST_ID)
+```
+
+Optionally you can also specify the start position of a video in seconds: (starts at 100 seconds in)
+
+```md
+@[youtube](VIDEO_ID,100)
+```
+
+And the index of the video of a playlist: (starts with the third video)
+```md
+@[youtubePlaylist](PLAYLIST_ID,3)
+```
