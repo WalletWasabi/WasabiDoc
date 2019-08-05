@@ -51,13 +51,10 @@ If you are looking for the developers repository, it can be found here [WalletWa
 
 Just like the Wasabi wallet software, this documentation is libre and open source under the [MIT license](LICENSE). Not only do we appreciate the contributoin of peers, but we desperately need it! If you have a question, [open an issue](https://github.com/zkSNACKs/WasabiDoc/issues) and if you know the answer, then [make a pull request](https://github.com/zkSNACKs/WasabiDoc/pulls).
 
-The documentation has three main pillars, each of them have a separate folder for proper structure: [Why Wasabi](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/why-wasabi), [Using Wasabi](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/using-wasabi), and [Building Wasabi](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/building-wasabi), as well as an independent [Frequently Asked Question](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/FAQ). Please consider this repsoitory structure for hyperlinks, and use relative links whenever possible, for example `[What is a CoinJoin?](FAQ-Introduction.md#what-is-a-coinjoin)`.
+If you'd like to contribute to the content of the site, you can make PRs pertaining to the markdown files in the `/docs/` directory, and if accepted, the merged changes will automatically be integrated into the documentation website by VuePress. 
+Know that you do not need to understand/deal with VuePress at all in this case.
 
-The [graphical documentation](https://docs.wasabiwallet.io) is built with [VuePress](https://v1.vuepress.vuejs.org/), and the sidebar navigation can be [edited here](https://github.com/zkSNACKs/WasabiDoc/blob/master/docs/.vuepress/config.js).
-
-If you have front end skills and would like to help improve the theme/look of the website, we welcome your input! Check out the [VuePress documentation](https://v1.vuepress.vuejs.org/) for details on how it works.
-
-On the other hand, if you'd like to contribute to the content of the site, know that you do not need to understand/deal with VuePress at all! You can make PRs pertaining to the markdown files in the `/docs/` directory, and if accepted, the merged changes will automatically be integrated into the documentation website by VuePress.
+To ensure a swift start to your productive contribution, please see the [contribution checklist](https://docs.wasabiwallet.io/building-wasabi/ContributionChecklist.html), and the below best practices.
 
 ### Writing Conventions
 
@@ -66,12 +63,22 @@ On the other hand, if you'd like to contribute to the content of the site, know 
 - Every sentense must start a new line.
 - For a paragraph, add an `empty line` or `</br>` in the markdown.
 
+### Reference files
+
+Please consider this repsoitory structure for hyperlinks, and use relative links whenever possible, for example 
+
+```
+[What is a CoinJoin?](FAQ-Introduction.md#what-is-a-coinjoin)
+```
+
 ### Embedding images
 
 The images are stored in the [`/docs/.vuepress/public/`](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/.vuepress/public) directory.
 They can be embedded via the following markdown tags:
 
-`![](/IMAGENAME.png)`
+```
+![](/IMAGENAME.png)
+```
 
 ### Embedding videos
 
@@ -96,7 +103,13 @@ And the index of the video of a playlist: (starts with the third video)
 ---
 
 ## Build the Documentation Locally
-The Wasabi documentation website is built using an open source static site generator called VuePress. It is extrememly customizable and offers great defaults out-of-the-box. Check out the [VuePress documentation](https://v1.vuepress.vuejs.org/) for details on how to use it powerfully.
+
+
+If you have front end skills and would like to help improve the theme/look of the website, we welcome your input! Check out the [VuePress documentation](https://v1.vuepress.vuejs.org/) for details on how it works.
+
+The [Wasabi documentation website](https://docs.wasabiwallet.io) is built using an open source static site generator called VuePress. 
+It is extrememly customizable in the [configuration](https://github.com/zkSNACKs/WasabiDoc/blob/master/docs/.vuepress/config.js) and [theme](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/.vuepress/styles) and offers great defaults out-of-the-box.
+Check out the [VuePress documentation](https://v1.vuepress.vuejs.org/) for details on how to use it powerfully.
 
 In order to build the website locally, you'll need [Node.js](https://nodejs.org/en/download/).
 
