@@ -39,7 +39,7 @@ module.exports = {
         {
           title: "Why Wasabi",
           collapsable: false,
-	        sidebarDepth: 2,
+	  sidebarDepth: 2,
           children: [
             "/why-wasabi/WhyPrivacyImportant.md",
             "/why-wasabi/BitcoinPrivacy.md",
@@ -51,7 +51,7 @@ module.exports = {
         {
           title: "Using Wasabi",
           collapsable: false,
-	        sidebarDepth: 2,
+	  sidebarDepth: 2,
           children: [
             "/using-wasabi/InstallPackage.md",
             "/using-wasabi/BuildSource.md",
@@ -69,7 +69,7 @@ module.exports = {
         {
           title: "Building Wasabi",
           collapsable: false,
-	        sidebarDepth: 2,
+	  sidebarDepth: 2,
           children: [
             "/building-wasabi/TechnicalOverview.md",
             "/building-wasabi/ContributionChecklist.md",
@@ -91,7 +91,7 @@ module.exports = {
         {
           title: "FAQ",
           collapsable: false,
-	        sidebarDepth: 2,
+	  sidebarDepth: 2,
           children: [
             "/FAQ/FAQ-Introduction.md",
             "/FAQ/FAQ-Installation.md",
