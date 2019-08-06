@@ -166,7 +166,7 @@ testnet=[0/1]
 [main/test].rpcpassword=password
 [main/test].whitebind=127.0.0.1:[8333/18333]
 ```
-[Bitcoin Core v0.17.0](https://bitcoincore.org/en/releases/0.17.0/)
+[Bitcoin Core v0.18.0](https://bitcoincore.org/en/releases/0.18.0/)
 [How to run Lightninb BTC node and start mining](https://medium.com/@loopring/how-to-run-lighting-btc-node-and-start-mining-b55c4bab8ad)
 [Adding a Firewall](https://github.com/MrChrisJ/fullnode/issues/18)
 
