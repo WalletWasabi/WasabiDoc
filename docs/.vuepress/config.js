@@ -2,8 +2,8 @@ const customBlock = require('markdown-it-custom-block')
 const youtubeEmbed = path => `<div class="ytEmbed"><iframe src="https://www.youtube-nocookie.com/embed/${path}" frameborder="0" allow="autoplay;encrypted-media;picture-in-picture" allowfullscreen></iframe></div>`
 
 module.exports = {
-  title: "Wasabi",
-  description: "Wasabi is an open-source, non-custodial, privacy focused Bitcoin wallet for desktop.",
+  title: "Wasabi docs",
+  description: "Wasabi Wallet is an open-source, non-custodial, desktop, privacy focused Bitcoin wallet.",
   head: [
     ["link", { rel: "icon", href: "/favicon.ico" }],
     ["link", { rel: "stylesheet", href: "https://fonts.googleapis.com/css?family=Inconsolata:400,700|Playfair+Display:700&display=swap" }]
