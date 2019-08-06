@@ -10,7 +10,7 @@
 It's always best to download software directly from the official source acknowledged by the developers.
 You can find the recent version of the compiled packages for Linux, Windows and Mac available on the official [wasabiwallet.io](https://wasabiwallet.io).
 In order to preserve your network level privacy from the very first step on, please consider visiting the tor hidden service [wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion).
-The old versions of the software can be found in the [releases](https://github.com/zksnacks/walletwasabi/releases) of the GitHub repository, [here](https://github.com/zksnacks/walletwasabi) You also find the libre & open source code for when You want to [build it Yourself](https://docs.wasabiwallet.io/using-wasabi/BuildSource.html).
+The old versions of the software can be found in the [releases](https://github.com/zksnacks/walletwasabi/releases) of the GitHub repository, [here](https://github.com/zksnacks/walletwasabi) you also find the libre & open source code for when you want to [build it yourself](https://docs.wasabiwallet.io/using-wasabi/BuildSource.html).
 Please take special care to verify the PGP signatures of Àdàm's PGP key [21D7 CA45 565D BCCE BE45 115D B4B7 2266 C47E 075E](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt) over the software packages and code commits.
 
 ### Why is it important to verify PGP signatures?
@@ -20,10 +20,10 @@ don't trust ~ verify
 
 These are not just empty words.
 Self sovereignty is at the core of Bitcoin in general, and Wasabi specifically.
-You have powerful tools at Your disposal, yet they only work when used as they are designed.
-Wasabi is tailor made so that You do **not** have to trust anyone, but You have the power to verify everything.
+You have powerful tools at your disposal, yet they only work when used as they are designed.
+Wasabi is tailor made so that you do **not** have to trust anyone, but you have the power to verify everything.
 
-With PGP signatures You can verify that the software package You download is actually the one by the developers.
+With PGP signatures you can verify that the software package you download is actually the one by the developers.
 Every release of Wasabi is signed by [Ádám Ficsor aka nopara73](https://github.com/nopara73), the lead developer and maintainer of the repository, as well as the co-founder and CTO of [zkSnacks Ltd](https://zksnacks.com/).
 You can verify that the PGP key [21D7 CA45 565D BCCE BE45 115D B4B7 2266 C47E 075E](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt) is actually the one of [Ádám](https://pgp.key-server.io/search/nopara73) by exploring the [web of trust](https://en.wikipedia.org/wiki/Web_of_trust).
 When you have a software package that was signed by this key, then you can be sure that this is an official release approved by Adam.
@@ -32,7 +32,7 @@ This protects you against malicious man in the middle attacks where bad guys giv
 @[youtubePlaylist](PLPj3KCksGbSZkVpgAZjAFfFp4D0SHLnFw)
 
 ### How can I verify PGP signatures?
-On the [WasabiWallet.io](https://wasabiwallet.io) website You can download the packages of the latest release.
+On the [WasabiWallet.io](https://wasabiwallet.io) website you can download the packages of the latest release.
 Make sure that in addition you also download the separate signature `.asc` file.
 In the terminal, change the directory to the one with the downloaded files, and verify the signature with `gpg --verify Wasabi-1.1.6.deb.asc`.
 Everything is valid if it returns `Good signature from nopara73 aka Ficsór Ádám` and that it was signed with the `Primary key fingerprint: 21D7 CA45 565D BCCE BE45 115D B4B7 2266 C47E 075E`.
@@ -116,7 +116,7 @@ Yes, just follow the [How do I install Wasabi on other Linux?](/FAQ-Installation
 ### How do I compile Wasabi from source?
 A new version of Wasabi is released when ready, roughly once every #twoweeks.
 Yet in the meantime there are many commits to the latest master branch, not just bug fixes, but also new features and stability improvements.
-If You cannot wait until the next release, and You want to experience the most cutting-edge version of Wasabi, then You can [build the source code](/using-wasabi/BuildSourc.md).
+If you cannot wait until the next release, and you want to experience the most cutting-edge version of Wasabi, then you can [build the source code](/using-wasabi/BuildSourc.md).
 
 The only two required tools are [Git](https://git-scm.com/downloads) and [.NET Core 2.2 SDK](https://www.microsoft.com/net/download) for "Building Apps".
 You can download every line in the code by `git clone https://github.com/zkSNACKs/WalletWasabi.git`, this will create a new directory called `WalletWasabi`.
@@ -126,8 +126,8 @@ To start Wasabi simply execute `dotnet run` from the `WalletWasabi.Gui` folder.
 You can update the master branch with `git pull`.
 
 ### How can I verify the deterministic build?
-Wasabi has [reproducible and deterministic builds](/using-wasabi/DeterministicBuild.html), which means that You can verify that the compiled packages are from the [source code](https://github.com/zksnacks/walletwasabi).
-On Windows, You can verify this with `git diff --no-index win7-x64 "C:\Program Files\WasabiWallet".
+Wasabi has [reproducible and deterministic builds](/using-wasabi/DeterministicBuild.html), which means that you can verify that the compiled packages are from the [source code](https://github.com/zksnacks/walletwasabi).
+On Windows, you can verify this with `git diff --no-index win7-x64 "C:\Program Files\WasabiWallet".
 On Debian and Ubuntu do `git diff --no-index linux-x64/ /usr/local/bin/wasabiwallet/`.
 On other Linux do `git diff --no-index linux-x64/ WasabiLinux-1.1.6`.
 And on Mac first unzip with `7z x Wasabi-1.1.6.dmg -oWasabiOsx` and verify with `git diff --no-index osx-x64/ WasabiOsx/Wasabi\ Wallet.App/Contents/MacOS/`.
