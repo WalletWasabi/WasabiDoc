@@ -1,14 +1,10 @@
 # Use of Wasabi
 
-[[toc]]
-
----
-
 ## Wallet Manager
 
 @[youtube](XykixYdbFpA)
 
-### How do I generate a new wallet?
+:::details How do I generate a new wallet?
 You can generate as many new wallets as you'd like, for now extra cost and without asking for permission.
 Go to the `Wallet Manager` tab and the `Generate Wallet` menu.
 As with everything in Wasabi, it is required to label this new wallet, make sure that you are precise so that you know later what this is for.
@@ -28,8 +24,11 @@ In order to protect your paper backup, consider to store the password and recove
 You have successfully setup your wallet when you click `I wrote down my Recovery Words!`
 
 ![](/WalletManagerRecoveryWords.png)
+:::
 
+::::details
 ### How do I back up my mnemonic words?
+
 :::tip
 Always back up your encrypted private keys!
 :::
@@ -51,7 +50,7 @@ Use two different backups and locations for the mnemonic and password, because w
 Find a secure physical location to store the backups, maybe home safe, or an expert security deposit box.
 
 Please see [this great guide](https://github.com/6102bitcoin/FAQ/blob/master/seed.md#3-Storing-your-Seed) on how to properly store your seed.
-
+::::
 
 ## Synchronization
 
@@ -60,7 +59,6 @@ Please see [this great guide](https://github.com/6102bitcoin/FAQ/blob/master/see
 ## Receive
 
 @[youtube](9i7CceIdFg4)
-:::
 
 :::details Why is it bad to re-use addresses?
 Bitcoin is designed so that for every payment you can use a new address that is not tied to any of your previous addresses.
@@ -71,7 +69,7 @@ Take good care to whom you tell your addresses, and every time, tell someone a d
 
 Because you have all the private keys, for all these addresses, you can produce a valid signature for any of them.
 So you can proof that these are your bitcoin, without relying on reputation that you have any other coins.
-You can easily generate and store many billions of private keys and addresses in a convenient [BIP 44 multi-account hierarchy for deterministic wallets](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki) so that you can backup everything in your 12 word mnemonic phrase. 
+You can easily generate and store many billions of private keys and addresses in a convenient [BIP 44 multi-account hierarchy for deterministic wallets](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki) so that you can backup everything in your 12 word mnemonic phrase.
 
 This is what is used in Wasabi, you have on mnemonic backup, and unlimited numbers of new addresses.
 Everytime you a coin is received, then the address is removed from the GUI so that you are not tempted to use it again.
@@ -92,10 +90,8 @@ Be careful, if you send all your coins from an old wallet to a new wallet (from 
 @[youtube](PRlAAxunmdU)
 
 @[youtube](AdmlM-Qvco0)
-:::
 
 :::details Why does Wasabi choose a new random node every time I send a transaction?
-
 When you broadcast a transaction from a full node, that transaction is flooded into the network.
 Essentially, all nearby nodes are passed your transaction, and those nodes will pass to all of their nearby nodes, etc.
 However, if a malicious adversary were to get enough relay nodes in the network, they could pretty easily connect the initial location of a transaction by simply observing from which node the transaction appeared first.
@@ -107,7 +103,6 @@ This reduces the risk of a passive bystander being able to link two transactions
 :::
 
 ## History
-
 
 ## CoinJoin
 
@@ -129,13 +124,13 @@ In this case, the difference is split between the active outputs of the mix.
 :::
 
 :::details What is the anonymity set?
-The anonymity set is effectively the size of the group you are hiding in. 
+The anonymity set is effectively the size of the group you are hiding in.
 
 If 3 people take part in a CoinJoin (with equal size inputs) and there are 3 outputs then each of those output coins has an anonymity set of 3.
 
 ```
 0.1 BTC (Alice)       0.1 BTC (Anon set 3)
-0.3 BTC (Bob) 	  ->  0.1 BTC (Anon set 3)
+0.3 BTC (Bob)     ->  0.1 BTC (Anon set 3)
 0.4 BTC (Charlie)     0.1 BTC (Anon set 3)
                       0.2 BTC (Change Coin Bob)
                       0.3 BTC (Change Coin Charlie)
@@ -150,7 +145,6 @@ With Wasabi we are trying to do lower estimations, rather than higher ones.
 :::
 
 :::details Can I mix more than the round's minimum?
-
 Yes.
 
 In a round with a ~0.1 BTC minimum, you could mix ~0.3 BTC and get a ~0.1 BTC output & a ~ 0.2 BTC output.
@@ -164,9 +158,8 @@ The possible values of equal output that can be created are 0.1 x 2^n where n is
 :::
 
 :::details Why are the denominations such an odd number?
-
 The output value changes each round to ensure that you can enqueue a coin and have it remix (mix over and over again - increasing the anonymity set, improving privacy).
-As a result the round mixing amount will often be a specific number which generally decreases as the rounds proceed, with a reset once a lower bound is reached. 
+As a result the round mixing amount will often be a specific number which generally decreases as the rounds proceed, with a reset once a lower bound is reached.
 :::
 
 :::details What is happening in the input registration phase?
@@ -228,7 +221,7 @@ Now that all inputs and outputs are registered, the Wasabi coordinator can start
 He sends this transaction to all the Alice's of this round.
 Each Alice verifies that: [i] the committed round Hash is equal to the hash of all the inputs in the proposed transaction; and [ii] her inputs and outputs are correctly included.
 Then she signs the transaction with the private keys of her inputs.
-Alice sends the uniqueld, the signature and the input index to the coordinator, who then verifies this information. 
+Alice sends the uniqueld, the signature and the input index to the coordinator, who then verifies this information.
 
 The signing phase ends when the coordinator has all the valid signatures for all the registered inputs.
 :::
@@ -283,12 +276,11 @@ The finalized transaction (xxx-final.txn) can now be broadcasted by Wasabi Walle
 :::details How can I import and broadcast a final transaction from ColdCard?
 In the Wallet Explorer you go to ```YourWallet>Advanced>Broadcast Transaction``` and click ```Import Transaction```, now you can select the previously finalized (and signed) transaction file from the MicroSD card.
 If this fails you can manually type the path to this file in Wasabi Wallet to load the transaction.
-Now click ```Broadcast Transaction``` to send it off over Tor to a random Bitcoin node so it can flood over to the miners for confirmation in a block. 
+Now click ```Broadcast Transaction``` to send it off over Tor to a random Bitcoin node so it can flood over to the miners for confirmation in a block.
 :::
 
 :::details Can I CoinJoin the bitcoin on my hardware wallet?
 You can't do that directly, so send them (in small portions >0.1BTC if needed) to a ''hot'' Wasabi Wallet for CoinJoin and then send them back to a new address on the Hardware wallet for cold-storage.
-:::
 
 ## Settings
 
@@ -298,7 +290,7 @@ The server will still send you [BIP 158 block filters](https://github.com/bitcoi
 One attack vector could be that Wasabi lies to you and gives you wrong filters that exclude your transaction, thus you would see in the wallet less coins than you actually control. [BIP 157 solves this](https://github.com/bitcoin/bips/blob/master/bip-0157.mediawiki).
 
 When your full node is on the same hardware [computer, laptop] as your Wasabi Wallet, then it will automatically recognize it and pull blocks from there.
-If your node is on a remote device [raspberry pi, nodl, server], then you can specify your local IP in the Settings tab, or in line 11 of the config file. 
+If your node is on a remote device [raspberry pi, nodl, server], then you can specify your local IP in the Settings tab, or in line 11 of the config file.
 
 @[youtube](gWo2RAkIVrE)
 :::
@@ -312,7 +304,7 @@ In the second case, if you happen to broadcast a transaction of yours to a full 
 
 :::details How can I change the anonset target?
 In the Settings tab at the bottom you can change the three `PrivacyLevelX` values of the desired anon set of the yellow, green, and checkmark shield button in the GUI.
-The `MixUntilAnonymitySet` is the last selected value from previous use. 
+The `MixUntilAnonymitySet` is the last selected value from previous use.
 
 Alternatively, open the config file from the wallet GUI, go to `File`>`Open`>`Config File` and in the last 4 lines you see:
 
@@ -349,7 +341,7 @@ If you would like to dive into the details of this topic, you can [read more her
 :::details How can I send my anonset coins to my hardware wallet?
 Most hardware wallets communicate with servers to provide you with your balance.
 This reveals your public key to the server, which damages your privacy - the hardware company can now theoretically link together all your addresses.
-As a result **it is not recommended** that you send your mixed coins to an address associated with your hardware wallet unless you are confident that you have set up your hardware wallet in a way that it does not communicate with a 3rd party server (see below). 
+As a result **it is not recommended** that you send your mixed coins to an address associated with your hardware wallet unless you are confident that you have set up your hardware wallet in a way that it does not communicate with a 3rd party server (see below).
 
 You can, however, manage your hardware wallet with the Wasabi interface.
 Alternatively, you can use your hardware wallet with Electrum, which connects to your Bitcoin Core full node through [Electrum Personal Server](https://github.com/chris-belcher/electrum-personal-server).
@@ -387,32 +379,33 @@ It is wise to assume that every one knows what the coordinator knows.
 So consolidating in a CoinJoin is better, but it might still reveal the common ownership of the coins.
 
 **Your Options**
+
 - If you do not care about linking the history of the coins because they are all from the same source then you could combine them in a mix (queue all the change from the same source until you reach the minimum input required to mix, currently ~ 0.1 BTC).
 - Mix with [Joinmarket](https://github.com/JoinMarket-Org/joinmarket-clientserver).
 - Donate them (e.g. [to the EFF](https://www.eff.org/))
 - Spend them on something that is not a particular privacy risk (eg. gift cards).
-- Open a lightning channel. 
-- The ultimate solution is to 'close the loop' i.e. spend a change coin without merging it with other coins, do not generate it in the first place by sending whole coins. 
+- Open a lightning channel.
+- The ultimate solution is to 'close the loop' i.e. spend a change coin without merging it with other coins, do not generate it in the first place by sending whole coins.
 :::
 
----
-
-#### Further Questions
-
+### Further Questions
 
 Wallet Manager
+
 - What password should I use?
 - Can I spend my bitcoin without the password?
 - How do I backup my wallet?
 - What's up with the Chinese characters?
 
 Synchronization
+
 - What are BIP-158 block filters?
 - How does Wasabi download a relevant block?
 - How long does the initial, and a subsequent synchronization take?
 - How do I know if the synchronization is finished?
 
 Receive
+
 - How do I generate a new receiving address?
 - Why do I have to label my address?
 - How can I change the label of my address?
@@ -421,6 +414,7 @@ Receive
 - Are there privacy concerns regarding whom I send my address?
 
 Send
+
 - What are coins?
 - Why is coin control so important?
 - How do I select coins for spending?
@@ -432,10 +426,12 @@ Send
 - How is the tansaction broadcasted?
 
 History
+
 - How can I check the history of transactions?
 - Can I export a list of transaction?
 
 CoinJoin
+
 - How can I select UTXOs for CoinJoin?
 - What are the denominations created in one round?
 - How much anonymity set do I need?
@@ -444,6 +440,7 @@ CoinJoin
 - Why are the denominations such an odd number?
 
 Hardware Wallet
+
 - Why does Wasabi use the Hardware Wallet Interface?
 - What specific hardware wallets does Wasabi support?
 - How can I type in the PIN of my Trezor One?
@@ -451,5 +448,6 @@ Hardware Wallet
 - Can I use the passphrase of my Trezor One?
 
 Coin Control Best Practices
+
 - Which coins can I select for CoinJoins?
 - How can I mix large amounts?
