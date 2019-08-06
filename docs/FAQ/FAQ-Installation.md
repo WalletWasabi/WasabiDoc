@@ -11,6 +11,7 @@ Please take special care to verify the PGP signatures of Àdàm's PGP key [21D7 
 :::
 
 :::details Why is it important to verify PGP signatures?
+
 :::: danger
 don't trust ~ verify
 ::::
@@ -27,7 +28,6 @@ When you have a software package that was signed by this key, then you can be su
 This protects you against malicious man in the middle attacks where bad guys give you a fake version of Wasabi with malicious code.
 
 @[youtubePlaylist](PLPj3KCksGbSZkVpgAZjAFfFp4D0SHLnFw)
-
 :::
 
 :::details How can I verify PGP signatures?
