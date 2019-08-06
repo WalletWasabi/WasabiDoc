@@ -8,6 +8,27 @@
 
 @[youtube](XykixYdbFpA)
 
+### How do I generate a new wallet?
+You can generate as many new wallets as You'd like, for now extra cost and without asking for permission.
+Go to the `Wallet Manager` tab and the `Generate Wallet` menu.
+As with everything in Wasabi, it is required to label this new wallet, make sure that you are precise so that you know later what this is for.
+The password is used to encrypt the private key on the computer and on the backup.
+**Careful!!**
+**Without knowledge of the password, you CAN NOT spend your bitcoin!!**
+Make sure that you properly back up and write down this password.
+Please also read and agree to the terms and conditions, the privacy policy and the legal issues.
+Now You can continue with clicking `Generage`.
+
+![](/WalletManagerGenerateWallet.png)
+
+Now you will see the 12 recovery words, this is the mnemonic seed that you can use to back-up and recover your wallet.
+Make sure, and tripple check, that you have done a proper backup of BOTH the password AND the mnemonic.
+When you only have the recovery words, but not the password, then you will NOT be able to recover your wallet.
+In order to protect your paper backup, consider to store the password and recovery words in two different locations.
+You have successfully setup your wallet when you click `I wrote down my Recovery Words!`
+
+![](/WalletManagerRecoveryWords.png)
+
 ## Synchronization
 
 @[youtube](qguwAvA5Fx4)
@@ -331,7 +352,6 @@ So consolidating in a CoinJoin is better, but it might still reveal the common o
 
 
 Wallet Manager
-- How do I generate a new wallet?
 - How do I back up my mnemonic seed?
 - What password should I use?
 - Can I spend my bitcoin without the password?
