@@ -7,13 +7,13 @@
 ## The Basics
 
 ### Explain Wasabi like I'm 5
-Wasabi is a software wallet to manage Your Bitcoin private keys.
-It is tailor made to protect Your privacy on every step.
+Wasabi is a software wallet to manage your Bitcoin private keys.
+It is tailor made to protect your privacy on every step.
 You can easily send and receive bitcoin without the permission of anyone.
-With a special tool called a CoinJoin You can make sure nobody finds out how you spend your money.
+With a special tool called a CoinJoin you can make sure nobody finds out how you spend your money.
 Although Wasabi has some very advanced magic under the hood, it is rather easy to use.
-You can also use Wasabi to manage Your hardware wallet, and it even connects to Your own full node.
-Of course, Wasabi is libre and open source, which means You have full control over the software You manage Your money with.
+You can also use Wasabi to manage your hardware wallet, and it even connects to your own full node.
+Of course, Wasabi is libre and open source, which means you have full control over the software you manage your money with.
 
 ### Who can use Wasabi?
 Every single line of code in Wasabi, the [wallet](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Gui), the [backend server](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Backend), the [tests](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Tests), the [packager](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Packager), the [library](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi), the [daemon](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Gui/CommandLine), the [api](https://wasabiwallet.io/swagger/), the [documentation](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs) - has always been and will always be libre and open source under the [MIT license](https://github.com/zkSNACKs/WalletWasabi/blob/master/LICENSE.md). 

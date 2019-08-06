@@ -53,7 +53,7 @@ dotnet restore && dotnet build
 6. Wait until your transaction is confirmed.
 7. You can now start mixing in the CoinJoin tab if you want to.
 
-## Note, You Can Update Wasabi With These Commands:
+## Note, you Can Update Wasabi With These Commands:
 
 ```sh
 git pull
