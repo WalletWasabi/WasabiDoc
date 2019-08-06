@@ -17,7 +17,7 @@ The password is used to encrypt the private key on the computer and on the backu
 **Without knowledge of the password, you CAN NOT spend your bitcoin!!**
 Make sure that you properly back up and write down this password.
 Please also read and agree to the terms and conditions, the privacy policy and the legal issues.
-Now You can continue with clicking `Generage`.
+Now You can continue with clicking `Generate`.
 
 ![](/WalletManagerGenerateWallet.png)
 
