@@ -56,3 +56,31 @@ What would happen next is that a Bitcoin node would give the same filter that it
 Once a block filter has come in and the client believes that there is a transaction that affects the client, the client pings a single random node for a single full block.
 It then parses the block, and finds the transaction.
 This has been proven to be by far the best way to do light clients privately, and is the way Wasabi works today.
+
+### [BIP 156: Dandelion - Privacy Enhancing Routing](https://github.com/bitcoin/bips/blob/master/bip-0156.mediawiki)
+
+Bitcoin's transaction spreading protocol is vulnerable to deanonymization attacks. Dandelion is a transaction routing mechanism that provides formal anonymity guarantees against these attacks. When a node generates a transaction without Dandelion, it transmits that transaction to its peers with independent, exponential delays. This approach, known as diffusion in academia, allows network adversaries to link transactions to IP addresses.
+Dandelion mitigates this class of attacks by sending transactions over a randomly selected path before diffusion. Transactions travel along this path during the "stem phase" and are then diffused during the "fluff phase" (hence Dandelion). We have shown that this routing protocol provides near-optimal anonymity guarantees among schemes that do not introduce additional encryption mechanisms. 
+
+
+### [BIP 157: Client Side Block Filtering](https://github.com/bitcoin/bips/blob/master/bip-0157.mediawiki)
+
+BIP 157 describes a new light client protocol in Bitcoin that improves upon currently available options. The standard light client protocol in use today, defined in [BIP 37](/BIP.html#bip-37-connection-bloom-filters), has known flaws that weaken the security and privacy of clients and allow denial-of-service attack vectors on full nodes. The new protocol overcomes these issues by allowing light clients to obtain compact probabilistic filters of block content from full nodes and download full blocks if the filter matches relevant data.
+New P2P messages empower light clients to securely sync the blockchain without relying on a trusted source. This BIP also defines a filter header, which serves as a commitment to all filters for previous blocks and provides the ability to efficiently detect malicious or faulty peers serving invalid filters. The resulting protocol guarantees that light clients with at least one honest peer are able to identify the correct block filters.
+
+### [BIP 322: Generic Signed Message Format](https://github.com/bitcoin/bips/blob/master/bip-0322.mediawiki)
+
+A standard for interoperable generic signed messages based on the Bitcoin Script format.
+
+### [BIP Schnorr](https://github.com/sipa/bips/blob/bip-schnorr/bip-schnorr.mediawiki)
+
+Schnorr is a digital signature scheme which has many benefits over the status-quo ECDSA. One side effect is that any N-of-N and M-of-N multisignature can be easily made to look like a single-sig when included on the blockchain.
+
+### [BIP Taproot](https://github.com/sipa/bips/blob/bip-schnorr/bip-taproot.mediawiki)
+
+Taproot is a way to combine Schnorr signatures with [MAST](https://bitcoinmagazine.com/articles/the-next-step-to-improve-bitcoin-s-flexibility-scalability-and-privacy-is-called-mast-1476388597/). The Schnorr signature can be used to spend the coin, but also a MAST tree can be revealed only when the user wants to use it. The schnorr signature can be any N-of-N or use any scriptless script contract. The consequence of taproot is a much larger anonymity set for interesting smart contracts, as any contract such as Lightning Network, CoinSwap, multisignature, etc would appear indistinguishable from regular single-signature on-chain transaction.
+The taproot scheme is so useful because it is almost always the case that interesting scripts have a logical top level branch which allows satisfaction of the contract with nothing other than a signature by all parties. Other branches would only be used where some participant is failing to cooperate.
+
+### [BIP Tapscript](https://github.com/sipa/bips/blob/bip-schnorr/bip-tapscript.mediawiki)
+
+Tapscript defines a slight variation on Bitcoin’s existing Script language to be used in BIP Taproot merkle spends.
