@@ -27,6 +27,7 @@ When you have a software package that was signed by this key, then you can be su
 This protects you against malicious man in the middle attacks where bad guys give you a fake version of Wasabi with malicious code.
 
 @[youtubePlaylist](PLPj3KCksGbSZkVpgAZjAFfFp4D0SHLnFw)
+
 :::
 
 :::details How can I verify PGP signatures?
@@ -38,6 +39,7 @@ Everything is valid if it returns `Good signature from nopara73 aka Ficsór Ád�
 For an in depth guide for [Debian and Ubuntu](/using-wasabi/InstallPackage.html#debian-and-ubuntu), [other Linux](/using-wasabi/InstallPackage.html#other-linux), [Windows](/using-wasabi/InstallPackage.html#windows), and [OSX](/using-wasabi/InstallPackage.html#osx) see the main documentation.
 
 @[youtube](mTrClVA_o5A)
+
 :::
 
 :::details How do I install Wasabi on Debian and Ubuntu?
@@ -50,6 +52,7 @@ Now install Wasabi with `sudo dpkg -i Wasabi-1.1.6.deb.asc`, and run it with `wa
 Checkout the main documentation for a [step-by-step guide](/using-wasabi/InstallPackage.html#debian-and-ubuntu).
 
 @[youtube](mTrClVA_o5A,122)
+
 :::
 
 :::details How do I install Wasabi on other Linux?
@@ -82,6 +85,7 @@ Now install Wasabi with double clicking the `.dmg` file.
 Checkout the main documentation for a [step-by-step guide](/using-wasabi/InstallPackage.html#mac).
 
 @[youtube](_Zmc54XYzBA)
+
 :::
 
 :::details How do I check the current version of Wasabi?
