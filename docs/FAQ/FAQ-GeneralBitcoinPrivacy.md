@@ -45,9 +45,9 @@ This is why making lots of transactions, increases your anonymity in the Bitcoin
 Similarly, if you receive 0.5 bitcoin but want to spend 1 bitcoin, you need to own additional Bitcoin addresses with a combined value of at least 0.5 bitcoin in them.
 Again it’s a 50% guess, but now you have one extra publicly visible Bitcoin address.
 Having publicly visible Bitcoin addresses could make it easier to find out your identity.
+:::
 
 ## The Privacy of Tor
-:::
 
 :::details How does Tor protect my network-level privacy? 
 
@@ -62,3 +62,4 @@ Route everything through Tor by default.
 
 It is also good practice to route your chats through the Tor network.
 You can also configure many cloud storage providers in this way.
+:::
