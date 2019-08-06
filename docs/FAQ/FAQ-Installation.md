@@ -105,6 +105,12 @@ Note that in this case you are still private, except when you CoinJoin and when 
 In the first case, the coordinator would know the links between your inputs and outputs based on your IP address.
 In the second case, if you happen to broadcast a transaction of yours to a full node that is spying on you, it will know the link between your transaction and your IP address.
 
+
+### Can I install Wasabi on TAILS?
+
+Yes, just follow the [How do I install Wasabi on other Linux?](/FAQ-Installation.html#how-do-i-install-wasabi-on-other-linux) guide and remember to save/backup the wallet on the Persistence.
+
+
 ## Advanced Installation
 
 ### How do I compile Wasabi from source?
