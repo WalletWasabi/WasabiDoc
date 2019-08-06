@@ -50,7 +50,7 @@ module.exports = {
       },
       {
         text: "FAQ",
-        link: "/FAQ/"
+        link: "/FAQ/FAQ-Introduction.md"
       }
     ],
     sidebar: {
