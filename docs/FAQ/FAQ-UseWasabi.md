@@ -9,7 +9,7 @@
 @[youtube](XykixYdbFpA)
 
 ### How do I generate a new wallet?
-You can generate as many new wallets as You'd like, for now extra cost and without asking for permission.
+You can generate as many new wallets as you'd like, for now extra cost and without asking for permission.
 Go to the `Wallet Manager` tab and the `Generate Wallet` menu.
 As with everything in Wasabi, it is required to label this new wallet, make sure that you are precise so that you know later what this is for.
 The password is used to encrypt the private key on the computer and on the backup.
@@ -17,7 +17,7 @@ The password is used to encrypt the private key on the computer and on the backu
 **Without knowledge of the password, you CAN NOT spend your bitcoin!!**
 Make sure that you properly back up and write down this password.
 Please also read and agree to the terms and conditions, the privacy policy and the legal issues.
-Now You can continue with clicking `Generate`.
+Now you can continue with clicking `Generate`.
 
 ![](/WalletManagerGenerateWallet.png)
 
