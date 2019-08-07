@@ -102,7 +102,8 @@ module.exports = {
             "/building-wasabi/ManualTesting.md",
             "/building-wasabi/HardwareWalletTestingGuide.md",
             "/building-wasabi/HowToDebug.md",
-            "/building-wasabi/Ports.md"
+            "/building-wasabi/Ports.md",
+            "/building-wasabi/LICENSE.md"
           ]
         }
       ],
