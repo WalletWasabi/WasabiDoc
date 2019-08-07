@@ -14,6 +14,21 @@
       "contributions": [
         "design"
       ]
+    },
+    {
+      "login": "MaxHillebrand",
+      "name": "Max Hillebrand",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/30683012?v=4",
+      "profile": "http://towardsliberty.com",
+      "contributions": [
+        "content",
+        "doc",
+        "example",
+        "maintenance",
+        "projectManagement",
+        "review",
+        "video"
+      ]
     }
   ],
   "contributorsPerLine": 7,
