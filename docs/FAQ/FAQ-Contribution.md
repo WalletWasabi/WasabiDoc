@@ -35,14 +35,6 @@ Because Wasabi is libre and open source software, anyone can support the project
 Thus it is relatively tricky to give a precise roadmap with what will be implemented in the near and distant future.
 You can check the [ToDo list](/building-wasabi/ToDo.md) for a somewhat up-to-date summary of the short term priorities of the next #twoweeks, and what might be implemented in the distant future.
 
-### Is there a bounty program?
-Yes!
-The beauty of Wasabi is that it's not just a very awesome wallet by default, but it has the additional opt-in CoinJoin serivce.
-This is provided by [zkSnacks Ltd.](https://zksnacks.com), and in exchange for this additional product the user pays a coordinator fee.
-In return, zkSnacks is supporting several developers to dedicate their full time to contributing to this open source project.
-There are also projects like the [contribution game](/building-wasabi/ContributionGame.md) where a bounty is paid out to any contributor worthy the praise.
-Specifically for the documentation, there is a monthly budged of 1.000 USD to pay for the maintainence and expansion of this knowledge archive.
-
 ## You can become a Wasabika
 
 ### How should I start contributing to Wasabi?
@@ -52,6 +44,14 @@ Thus your help is deeply appreciated, and very much needed!
 First please read the [contribution checklist](/building-wasabi/ContributionChecklist.md) to get introduced to the project and to start out in the right direction.
 You can also see the [ToDo list](/building-wasabi/ToDo.md) for inspiration of what other Wasabikas are tinkering on.
 Join our [Slack](https://join.slack.com/t/tumblebit/shared_invite/enQtNjQ1MTQ2NzQ1ODI0LWIzOTg5YTM3YmNkOTg1NjZmZTQ3NmM1OTAzYmQyYzk1M2M0MTdlZDk2OTQwNzFiNTg1ZmExNzM0NjgzY2M0Yzg), [Telegram](https://t.me/WasabiWallet) or [Sub-Reddit](https://www.reddit.com/r/WasabiWallet/), and check out the [GitHub](https://github.com/zkSnacks/WalletWasabi), so that you can stay up-to-date with the latest contributions.
+
+### Is there a bounty program?
+Yes!
+The beauty of Wasabi is that it's not just a very awesome wallet by default, but it has the additional opt-in CoinJoin serivce.
+This is provided by [zkSnacks Ltd.](https://zksnacks.com), and in exchange for this additional product the user pays a coordinator fee.
+In return, zkSnacks is supporting several developers to dedicate their full time to contributing to this open source project.
+There are also projects like the [contribution game](/building-wasabi/ContributionGame.md) where a bounty is paid out to any contributor worthy the praise.
+Specifically for the documentation, there is a monthly budged of 1.000 USD to pay for the maintainence and expansion of this knowledge archive.
 
 ### How can I report a bug?
 Code is speech, and can never be perfect.
