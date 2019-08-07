@@ -25,13 +25,11 @@ Osu!
 
 ### Yellow Belts
 
-
 | Wasabika       | Contact                    | Achievements                           | Promotions                     |
 |----------------|----------------------------|----------------------------------------|--------------------------------|
 | Max Hillebrand | [Twitter][5] [GitHub][37]              | [All Wasabi Videos][6], [Wasabi Tutorials][34], [Wasabi Interviews][35], [Zero Link Framework Reading][36]           | [2019-04][33]: yellow belt by nopara73 |
 
 ### Blue Belts
-
 
 | Wasabika       | Contact                    | Achievements                           | Promotions                     |
 |----------------|----------------------------|----------------------------------------|--------------------------------|
@@ -40,7 +38,6 @@ Osu!
 | KevinKelbie    | [Twitter][29]              | [Wasabi Python Library (Outdated)][30] | 2019-01: blue belt by nopara73 |
 
 ### White Belts
-
 
 | Wasabika         | Contact                     | Achievements                             | Promotions                      |
 |------------------|-----------------------------|------------------------------------------|---------------------------------|
@@ -107,3 +104,12 @@ Osu!
 [47]: https://twitter.com/dennisreimann
 [48]: https://github.com/zkSNACKs/WasabiDoc/commits?author=dennisreimann
 [49]: https://github.com/zkSNACKs/WasabiDoc/commits?author=thunderbiscuit
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
+<table>
+  <tr>
+    <td align="center"><a href="https://dennisreimann.de"><img src="https://avatars2.githubusercontent.com/u/886?v=4" width="100px;" alt="Dennis Reimann"/><br /><sub><b>Dennis Reimann</b></sub></a><br /><a href="#design-dennisreimann" title="Design">🎨</a></td>
+  </tr>
+</table>
+<!-- ALL-CONTRIBUTORS-LIST:END -->
