@@ -3,7 +3,7 @@
 [Wasabi Wallet](https://wasabiwallet.io) is an open-source, non-custodial, privacy focused Bitcoin wallet for desktop.
 It implements trustless coin shuffling: [Schnorrian CoinJoin](https://github.com/nopara73/ZeroLink/).
 
-This is Wasabi Wallet's open source [documentation](https://docs.wasabiwallet.io) repository.
+This is Wasabi Wallets open source [documentation](https://docs.wasabiwallet.io) repository.
 Here you will find information about the nuances of privacy in Bitcoin, how Wasabi solves some of the existing problems, and how you can use this tool to defend yourself.
 
 If you would like to support the project by educating other people, this documentation repository is the right place for your efforts!
@@ -17,25 +17,25 @@ The developers repository can be found [here](https://github.com/zkSNACKs/Wallet
 
 ## The pillars of the documentation
 
-### [Why Wasabi](https://docs.wasabiwallet.io/why-wasabi/)
+### [Why Wasabi](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/why-wasabi/)
 
 **Why privacy is important.**
 
 An introduction to the over-arching reason why we are so enthusiastic about Bitcoin in general and Wasabi specifically.
 
-### [Using Wasabi](https://docs.wasabiwallet.io/using-wasabi/)
+### [Using Wasabi](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/using-wasabi/)
 
 **How to use Wasabi Wallet.**
 
 A step by step guide to all the aspects, starting at beginner level, all the way up to power user features and advanced privacy practices.
 
-### [Building Wasabi](https://docs.wasabiwallet.io/building-wasabi/)
+### [Building Wasabi](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/building-wasabi/)
 
 **How to contribute to Wasabi.**
 
 All the knowledge needed to give new contributors a swift start on their path to black-belt of the Dojo.
 
-### [Wasabi FAQ](https://docs.wasabiwallet.io/FAQ/)
+### [Wasabi FAQ](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/FAQ/)
 
 **Frequently asked questions.**
 
@@ -48,7 +48,7 @@ Most common questions answered with linked reference to the main documentation.
 Just like the Wasabi wallet software, this documentation is libre and open source under the [MIT license](LICENSE).
 Not only do we appreciate the contribution of everyone, but we desperately need it!
 
-If you have front end skills and would like to help improve the theme/look of the website, we welcome your input!
+If you have front end skills and would like to help improve the theme/look of the website, we welcome your input! If you have a question, [open an issue](https://github.com/zkSNACKs/WasabiDoc/issues) and if you know the answer, then [make a pull request](https://github.com/zkSNACKs/WasabiDoc/pulls).
 
 ### VuePress
 
