@@ -1,6 +1,7 @@
 {
   "files": [
-    "README.md"
+    "README.md",
+    "docs/building-wasabi/Dojo.md"
   ],
   "imageSize": 100,
   "commit": false,
