@@ -9,7 +9,7 @@ Here you will find information about the nuances of privacy in Bitcoin, how Wasa
 If you would like to support the project by educating other people, this documentation repository is the right place for your efforts!
 If you have a question that is not yet covered, please [open an issue](https://github.com/zkSNACKs/WasabiDoc/issues).
 If you have an answer to a question, please [open a pull request](https://github.com/zkSNACKs/WasabiDoc/pulls).
-For more details on how to contribute, see the [contribution checklist](https://docs.wasabiwallet.io/building-wasabi/ContributionChecklist.html) or the [to-do](https://docs.wasabiwallet.io/building-wasabi/ToDo.html) list.
+For more details on how to contribute, see the [contribution checklist](/docs/building-wasabi/ContributionChecklist.md) or the [to-do](/docs/building-wasabi/ToDo.md) list.
 
 The developers repository can be found [here](https://github.com/zkSNACKs/WalletWasabi).
 
