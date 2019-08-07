@@ -24,7 +24,7 @@ So after CoinJoin you might want to send some of those coins back to the Hardwar
 
 *You will need to enter a PIN and open the Bitcoin app on a Ledger Nano S
 
-For Hardware-wallet related questions see: https://github.com/zkSNACKs/WasabiDoc/blob/master/docs/FAQ/FAQ-UseWasabi.md#hardware-wallet
+For Hardware-wallet related questions see: [FAQ-UseWasabi](FAQ-UseWasabi.md#hardware-wallet)
 
 6. Load Wallet to import the xpub or Public Key (used to generate all receive addresses)
 
