@@ -29,6 +29,15 @@
         "review",
         "video"
       ]
+    },
+    {
+      "login": "thunderBiscuit",
+      "name": "thunderBiscuit",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/39974688?v=4",
+      "profile": "http://thunder-development.org",
+      "contributions": [
+        "ideas"
+      ]
     }
   ],
   "contributorsPerLine": 7,
