@@ -1,4 +1,5 @@
 # Wasabi Documentation
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 
 [Wasabi Wallet](https://wasabiwallet.io) is an open-source, non-custodial, privacy focused Bitcoin wallet for desktop.
 It implements trustless coin shuffling: [Schnorrian CoinJoin](https://github.com/nopara73/ZeroLink/).
@@ -117,3 +118,19 @@ In order to build the website locally, you'll need [Node.js](https://nodejs.org/
 npm install
 npm start
 ```
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
+<table>
+  <tr>
+    <td align="center"><a href="https://dennisreimann.de"><img src="https://avatars2.githubusercontent.com/u/886?v=4" width="100px;" alt="Dennis Reimann"/><br /><sub><b>Dennis Reimann</b></sub></a><br /><a href="#design-dennisreimann" title="Design">🎨</a></td>
+  </tr>
+</table>
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
