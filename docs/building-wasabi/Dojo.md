@@ -110,6 +110,8 @@ Osu!
 <table>
   <tr>
     <td align="center"><a href="https://dennisreimann.de"><img src="https://avatars2.githubusercontent.com/u/886?v=4" width="100px;" alt="Dennis Reimann"/><br /><sub><b>Dennis Reimann</b></sub></a><br /><a href="#design-dennisreimann" title="Design">🎨</a></td>
+    <td align="center"><a href="http://towardsliberty.com"><img src="https://avatars1.githubusercontent.com/u/30683012?v=4" width="100px;" alt="Max Hillebrand"/><br /><sub><b>Max Hillebrand</b></sub></a><br /><a href="#content-MaxHillebrand" title="Content">🖋</a> <a href="https://github.com/zkSNACKs/WasabiDoc/commits?author=MaxHillebrand" title="Documentation">📖</a> <a href="#example-MaxHillebrand" title="Examples">💡</a> <a href="#maintenance-MaxHillebrand" title="Maintenance">🚧</a> <a href="#projectManagement-MaxHillebrand" title="Project Management">📆</a> <a href="#review-MaxHillebrand" title="Reviewed Pull Requests">👀</a> <a href="#video-MaxHillebrand" title="Videos">📹</a></td>
   </tr>
 </table>
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
