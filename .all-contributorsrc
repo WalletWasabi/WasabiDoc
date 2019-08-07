@@ -7,15 +7,6 @@
   "commit": false,
   "contributors": [
     {
-      "login": "dennisreimann",
-      "name": "Dennis Reimann",
-      "avatar_url": "https://avatars2.githubusercontent.com/u/886?v=4",
-      "profile": "https://dennisreimann.de",
-      "contributions": [
-        "design"
-      ]
-    },
-    {
       "login": "MaxHillebrand",
       "name": "Max Hillebrand",
       "avatar_url": "https://avatars1.githubusercontent.com/u/30683012?v=4",
@@ -28,6 +19,16 @@
         "projectManagement",
         "review",
         "video"
+      ]
+    },
+    {
+      "login": "dennisreimann",
+      "name": "Dennis Reimann",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/886?v=4",
+      "profile": "https://dennisreimann.de",
+      "contributions": [
+        "code",
+        "design"
       ]
     },
     {
@@ -59,7 +60,7 @@
       ]
     }
   ],
-  "contributorsPerLine": 7,
+  "contributorsPerLine": 5,
   "projectName": "WasabiDoc",
   "projectOwner": "zkSNACKs",
   "repoType": "github",
