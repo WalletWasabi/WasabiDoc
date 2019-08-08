@@ -204,6 +204,16 @@
         "doc",
         "content"
       ]
+    },
+    {
+      "login": "francispouliot",
+      "name": "Francis Pouliot",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/7997682?v=4",
+      "profile": "http://bullbitcoin.com",
+      "contributions": [
+        "business",
+        "ideas"
+      ]
     }
   ],
   "contributorsPerLine": 5,
