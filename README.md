@@ -45,7 +45,7 @@ Most common questions answered with linked reference to the main documentation.
 
 ## Contribute to the Documentation
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-11-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-12-orange.svg?style=flat-square)](#contributors)
 
 Just like the Wasabi wallet software, this documentation is libre and open source under the [MIT license](LICENSE).
 Not only do we appreciate the contribution of everyone, but we desperately need it!
@@ -73,6 +73,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
   <tr>
     <td align="center"><a href="https://github.com/yahiheb"><img src="https://avatars0.githubusercontent.com/u/52379387?v=4" width="100px;" alt="yahiheb"/><br /><sub><b>yahiheb</b></sub></a><br /><a href="https://github.com/zkSNACKs/WasabiDoc/commits?author=yahiheb" title="Code">💻</a> <a href="#review-yahiheb" title="Reviewed Pull Requests">👀</a> <a href="https://github.com/zkSNACKs/WasabiDoc/commits?author=yahiheb" title="Tests">⚠️</a> <a href="https://github.com/zkSNACKs/WasabiDoc/issues?q=author%3Ayahiheb" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="https://github.com/danwalmsley"><img src="https://avatars3.githubusercontent.com/u/4672627?v=4" width="100px;" alt="danwalmsley"/><br /><sub><b>danwalmsley</b></sub></a><br /><a href="https://github.com/zkSNACKs/WasabiDoc/commits?author=danwalmsley" title="Code">💻</a> <a href="#review-danwalmsley" title="Reviewed Pull Requests">👀</a> <a href="#design-danwalmsley" title="Design">🎨</a> <a href="#ideas-danwalmsley" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/zkSNACKs/WasabiDoc/commits?author=danwalmsley" title="Tests">⚠️</a></td>
   </tr>
 </table>
 
