@@ -90,6 +90,3 @@ You can use the search function in the top navbar to look for a specific topic, 
 Though often times it is quite useful to start a conversation with other Wasabikas about a specific problem.
 Here it is useful to reach out to the contributors on [Twitter](https://twitter.com/wasabiwallet), [Reddit](https://old.reddit.com/r/WasabiWallet/), and [Telegram](https://t.me/WasabiWallet).
 If your trouble is specific to the code, then it might also be suitable to check the existing [GitHub issues](https://github.com/zkSNACKs/WalletWasabi/issues/) and open a new one.
-
-#### Further questions
-- What does the Wasabi project need help with?
