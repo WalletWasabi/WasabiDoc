@@ -173,6 +173,17 @@
         "video",
         "tutorial"
       ]
+    },
+    {
+      "login": "raindogdance",
+      "name": "raindogdance",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/35657440?v=4",
+      "profile": "https://github.com/raindogdance",
+      "contributions": [
+        "tutorial",
+        "doc",
+        "content"
+      ]
     }
   ],
   "contributorsPerLine": 5,
