@@ -78,6 +78,7 @@ module.exports = {
             "/using-wasabi/ClientDeployment.md",
             "/using-wasabi/BackendDeployment.md",
             "/using-wasabi/AddressReuse.md",
+            "/using-wasabi/NetworkLevelPrivacy.md",
             "/using-wasabi/BIP.md",
             "/using-wasabi/PasswordFinder.md",
             "/using-wasabi/PayToEndPoint.md"
