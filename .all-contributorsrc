@@ -106,6 +106,18 @@
         "ideas",
         "review"
       ]
+    },
+    {
+      "login": "benthecarman",
+      "name": "Ben Carman",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/15256660?v=4",
+      "profile": "https://lightning-rod.net/",
+      "contributions": [
+        "code",
+        "bug",
+        "review",
+        "design"
+      ]
     }
   ],
   "contributorsPerLine": 5,
