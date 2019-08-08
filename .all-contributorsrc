@@ -71,6 +71,18 @@
         "review",
         "talk"
       ]
+    },
+    {
+      "login": "molnard",
+      "name": "Dávid Molnár",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/9844978?v=4",
+      "profile": "https://github.com/molnard",
+      "contributions": [
+        "blog",
+        "code",
+        "review",
+        "maintenance"
+      ]
     }
   ],
   "contributorsPerLine": 5,

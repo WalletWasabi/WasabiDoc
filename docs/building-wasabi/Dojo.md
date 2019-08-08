@@ -125,6 +125,7 @@ We are currently in the process of completing it to match the contributors liste
   </tr>
   <tr>
     <td align="center"><a href="https://github.com/nopara73"><img src="https://avatars0.githubusercontent.com/u/9156103?v=4" width="100px;" alt="nopara73"/><br /><sub><b>nopara73</b></sub></a><br /><a href="https://github.com/zkSNACKs/WasabiDoc/commits?author=nopara73" title="Code">💻</a> <a href="#ideas-nopara73" title="Ideas, Planning, & Feedback">🤔</a> <a href="#maintenance-nopara73" title="Maintenance">🚧</a> <a href="#review-nopara73" title="Reviewed Pull Requests">👀</a> <a href="#talk-nopara73" title="Talks">📢</a></td>
+    <td align="center"><a href="https://github.com/molnard"><img src="https://avatars2.githubusercontent.com/u/9844978?v=4" width="100px;" alt="Dávid Molnár"/><br /><sub><b>Dávid Molnár</b></sub></a><br /><a href="#blog-molnard" title="Blogposts">📝</a> <a href="https://github.com/zkSNACKs/WasabiDoc/commits?author=molnard" title="Code">💻</a> <a href="#review-molnard" title="Reviewed Pull Requests">👀</a> <a href="#maintenance-molnard" title="Maintenance">🚧</a></td>
   </tr>
 </table>
 
