@@ -234,6 +234,17 @@
         "code",
         "bug"
       ]
+    },
+    {
+      "login": "AdamISZ",
+      "name": "Adam Gibson",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/4278257?v=4",
+      "profile": "https://joinmarket.me/blog/",
+      "contributions": [
+        "ideas",
+        "example",
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 5,
