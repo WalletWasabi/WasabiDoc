@@ -10,12 +10,10 @@ The old versions of the software can be found in the [releases](https://github.c
 Please take special care to verify the PGP signatures of Àdàm's PGP key [21D7 CA45 565D BCCE BE45 115D B4B7 2266 C47E 075E](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt) over the software packages and code commits.
 :::
 
-:::details Why is it important to verify PGP signatures?
-
-:::: danger
-don't trust ~ verify
-::::
-
+::::details Why is it important to verify PGP signatures?
+:::danger
+**Don't trust ~ verify.**
+:::
 These are not just empty words.
 Self sovereignty is at the core of Bitcoin in general, and Wasabi specifically.
 You have powerful tools at your disposal, yet they only work when used as they are designed.
@@ -28,7 +26,7 @@ When you have a software package that was signed by this key, then you can be su
 This protects you against malicious man in the middle attacks where bad guys give you a fake version of Wasabi with malicious code.
 
 @[youtubePlaylist](PLPj3KCksGbSZkVpgAZjAFfFp4D0SHLnFw)
-:::
+::::
 
 :::details How can I verify PGP signatures?
 On the [WasabiWallet.io](https://wasabiwallet.io) website you can download the packages of the latest release.
@@ -39,7 +37,6 @@ Everything is valid if it returns `Good signature from nopara73 aka Ficsór Ád�
 For an in depth guide for [Debian and Ubuntu](/using-wasabi/InstallPackage.html#debian-and-ubuntu), [other Linux](/using-wasabi/InstallPackage.html#other-linux), [Windows](/using-wasabi/InstallPackage.html#windows), and [OSX](/using-wasabi/InstallPackage.html#osx) see the main documentation.
 
 @[youtube](mTrClVA_o5A)
-
 :::
 
 :::details How do I install Wasabi on Debian and Ubuntu?
@@ -52,7 +49,6 @@ Now install Wasabi with `sudo dpkg -i Wasabi-1.1.6.deb.asc`, and run it with `wa
 Checkout the main documentation for a [step-by-step guide](/using-wasabi/InstallPackage.html#debian-and-ubuntu).
 
 @[youtube](mTrClVA_o5A,122)
-
 :::
 
 :::details How do I install Wasabi on other Linux?
@@ -85,7 +81,6 @@ Now install Wasabi with double clicking the `.dmg` file.
 Checkout the main documentation for a [step-by-step guide](/using-wasabi/InstallPackage.html#mac).
 
 @[youtube](_Zmc54XYzBA)
-
 :::
 
 :::details How do I check the current version of Wasabi?
@@ -117,7 +112,6 @@ In the second case, if you happen to broadcast a transaction of yours to a full 
 :::
 
 :::details Can I install Wasabi on TAILS?
-
 Yes, just follow the [How do I install Wasabi on other Linux?](/FAQ-Installation.html#how-do-i-install-wasabi-on-other-linux) guide and remember to save/backup the wallet on the Persistence.
 :::
 
@@ -138,15 +132,27 @@ You can update the master branch with `git pull`.
 
 :::details How can I verify the deterministic build?
 Wasabi has [reproducible and deterministic builds](/using-wasabi/DeterministicBuild.html), which means that you can verify that the compiled packages are from the [source code](https://github.com/zksnacks/walletwasabi).
+
 On Windows, you can verify this with `git diff --no-index win7-x64 "C:\Program Files\WasabiWallet".
-On Debian and Ubuntu do `git diff --no-index linux-x64/ /usr/local/bin/wasabiwallet/`.
-On other Linux do `git diff --no-index linux-x64/ WasabiLinux-1.1.6`.
-And on Mac first unzip with `7z x Wasabi-1.1.6.dmg -oWasabiOsx` and verify with `git diff --no-index osx-x64/ WasabiOsx/Wasabi\ Wallet.App/Contents/MacOS/`.
+
+On Debian and Ubuntu do
+<br />
+`git diff --no-index linux-x64/ /usr/local/bin/wasabiwallet/`.
+
+On other Linux do
+<br />
+`git diff --no-index linux-x64/ WasabiLinux-1.1.6`.
+
+And on Mac first unzip with
+<br />
+`7z x Wasabi-1.1.6.dmg -oWasabiOsx`
+<br />
+and verify with
+<br />
+`git diff --no-index osx-x64/ WasabiOsx/Wasabi\ Wallet.App/Contents/MacOS/`.
 :::
 
----
-
-### Further Questions
+## Further Questions
 
 - How can I install Wasabi headless daemon without GUI?
 - How do I install the Wasabi backend server?

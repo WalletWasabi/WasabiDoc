@@ -1,3 +1,4 @@
+const { slugify } = require('@vuepress/shared-utils')
 const customBlock = require('markdown-it-custom-block')
 const youtubeEmbed = path => `<div class="ytEmbed"><iframe src="https://www.youtube-nocookie.com/embed/${path}" frameborder="0" allow="autoplay;encrypted-media;picture-in-picture" allowfullscreen></iframe></div>`
 
@@ -12,7 +13,7 @@ module.exports = {
     "@vuepress/back-to-top",
     ["container", {
       type: "details",
-      before: title => `<details><summary>${title}</summary>`,
+      before: title => `<details id="${slugify(title)}"><summary>${title}</summary>`,
       after: '</details>'
     }],
   ],

@@ -12,7 +12,7 @@ You can also use Wasabi to manage your hardware wallet, and it even connects to 
 Of course, Wasabi is libre and open source, which means you have full control over the software you manage your money with.
 :::
 
-:::details Who can use Wasabi?
+::::details Who can use Wasabi?
 Every single line of code in Wasabi, the [wallet](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Gui), the [backend server](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Backend), the [tests](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Tests), the [packager](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Packager), the [library](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi), the [daemon](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Gui/CommandLine), the [api](https://wasabiwallet.io/swagger/), the [documentation](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs) - has always been and will always be libre and open source under the [MIT license](https://github.com/zkSNACKs/WalletWasabi/blob/master/LICENSE.md).
 This means that anyone, yes, ANYONE can use Wasabi without permission, for any use case, free of charge.
 
@@ -20,10 +20,10 @@ Wasabi is used by individuals to receive and spend every day payments, to manage
 There are also entrepreneurs who use Wasabi to defend their customers from spies and to ensure a private business relationship.
 Young kids have Wasabi to stack the sats gifted by grandma, and they learn the importance of hodling.
 
-::::tip
+:::tip
 Wasabi is a tool for everyone.
-::::
 :::
+::::
 
 :::details What is a CoinJoin?
 A mechanism by which multiple participants combine their coins (or UTXOs, to be more precise) into one large transaction with multiple inputs and multiple outputs.
@@ -102,9 +102,7 @@ That said, if multiple chain-analysis companies attempt to flood the zkSNACKs mi
 See [here](https://github.com/nopara73/ZeroLink/#e-sybil-attack) for more info.
 :::
 
----
-
-### Further Questions
+## Further Questions
 
 - What is the history of Wasabi?
 - How does Zero Link differ from other CoinJoin implementations?

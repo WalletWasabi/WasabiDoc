@@ -352,7 +352,7 @@ There are no hard and fast rules for what to do with the change.
 Generally try to avoid the change and use the `Max` button extensively to send whole coins.
 The most problematic type of change is what has `anonymity set 1` [red shield] You should treat it as a kind of toxic waste [handled with great care].
 
-**Warning**
+#### Warning
 
 You want to avoid merging `anonymity set 1 coins` with `anonymity set > 1 coins` wherever possible, because this will link your `anonymity set > 1 coin` to the coin you merge it with.
 Note that, this is also true if you merge them in a mix, however that is slightly less problematic, because some blockchain analysis techniques become [computationally infeasible](https://www.comsys.rwth-aachen.de/fileadmin/papers/2017/2017-maurer-trustcom-coinjoin.pdf).
@@ -378,7 +378,7 @@ Thus the coordinator knows that this is a consolidation transaction.
 It is wise to assume that every one knows what the coordinator knows.
 So consolidating in a CoinJoin is better, but it might still reveal the common ownership of the coins.
 
-**Your Options**
+#### Your Options
 
 - If you do not care about linking the history of the coins because they are all from the same source then you could combine them in a mix (queue all the change from the same source until you reach the minimum input required to mix, currently ~ 0.1 BTC).
 - Mix with [Joinmarket](https://github.com/JoinMarket-Org/joinmarket-clientserver).
@@ -388,7 +388,7 @@ So consolidating in a CoinJoin is better, but it might still reveal the common o
 - The ultimate solution is to 'close the loop' i.e. spend a change coin without merging it with other coins, do not generate it in the first place by sending whole coins.
 :::
 
-### Further Questions
+## Further Questions
 
 Wallet Manager
 
