@@ -42,11 +42,11 @@ module.exports = {
       },
       {
         text: "Using Wasabi",
-        link: "/using-wasabi/InstallPackage.md"
+        link: "/using-wasabi/"
       },
       {
         text: "Building Wasabi",
-        link: "/building-wasabi/TechnicalOverview.md"
+        link: "/building-wasabi/"
       },
       {
         text: "FAQ",
