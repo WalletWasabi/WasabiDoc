@@ -146,6 +146,7 @@ We are currently in the process of completing it to match the contributors liste
   </tr>
   <tr>
     <td align="center"><a href="https://keybase.io/guggero"><img src="https://avatars0.githubusercontent.com/u/1008879?v=4" width="100px;" alt="Oliver Gugger"/><br /><sub><b>Oliver Gugger</b></sub></a><br /><a href="https://github.com/zkSNACKs/WasabiDoc/commits?author=guggero" title="Code">💻</a> <a href="https://github.com/zkSNACKs/WasabiDoc/issues?q=author%3Aguggero" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="https://joinmarket.me/blog/"><img src="https://avatars2.githubusercontent.com/u/4278257?v=4" width="100px;" alt="Adam Gibson"/><br /><sub><b>Adam Gibson</b></sub></a><br /><a href="#ideas-AdamISZ" title="Ideas, Planning, & Feedback">🤔</a> <a href="#example-AdamISZ" title="Examples">💡</a> <a href="#review-AdamISZ" title="Reviewed Pull Requests">👀</a></td>
   </tr>
 </table>
 
