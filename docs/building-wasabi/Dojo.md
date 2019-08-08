@@ -153,6 +153,7 @@ We are currently in the process of completing it to match the contributors liste
   </tr>
   <tr>
     <td align="center"><a href="https://github.com/kravens"><img src="https://avatars1.githubusercontent.com/u/9646902?v=4" width="100px;" alt="kravens"/><br /><sub><b>kravens</b></sub></a><br /><a href="https://github.com/zkSNACKs/WasabiDoc/commits?author=kravens" title="Documentation">📖</a> <a href="#content-kravens" title="Content">🖋</a></td>
+    <td align="center"><a href="http://www.michaeltoth.me"><img src="https://avatars3.githubusercontent.com/u/1676164?v=4" width="100px;" alt="Michael Toth"/><br /><sub><b>Michael Toth</b></sub></a><br /><a href="https://github.com/zkSNACKs/WasabiDoc/commits?author=michaeltoth" title="Documentation">📖</a> <a href="#content-michaeltoth" title="Content">🖋</a></td>
   </tr>
 </table>
 
