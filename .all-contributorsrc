@@ -224,6 +224,16 @@
         "doc",
         "content"
       ]
+    },
+    {
+      "login": "guggero",
+      "name": "Oliver Gugger",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/1008879?v=4",
+      "profile": "https://keybase.io/guggero",
+      "contributions": [
+        "code",
+        "bug"
+      ]
     }
   ],
   "contributorsPerLine": 5,
