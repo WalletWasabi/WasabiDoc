@@ -45,7 +45,7 @@ Most common questions answered with linked reference to the main documentation.
 
 ## Contribute to the Documentation
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors)
 
 Just like the Wasabi wallet software, this documentation is libre and open source under the [MIT license](LICENSE).
 Not only do we appreciate the contribution of everyone, but we desperately need it!
@@ -59,10 +59,13 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="http://towardsliberty.com"><img src="https://avatars1.githubusercontent.com/u/30683012?v=4" width="100px;" alt="Max Hillebrand"/><br /><sub><b>Max Hillebrand</b></sub></a><br /><a href="#content-MaxHillebrand" title="Content">🖋</a> <a href="https://github.com/zkSNACKs/WasabiDoc/commits?author=MaxHillebrand" title="Documentation">📖</a> <a href="#example-MaxHillebrand" title="Examples">💡</a> <a href="#maintenance-MaxHillebrand" title="Maintenance">🚧</a> <a href="#projectManagement-MaxHillebrand" title="Project Management">📆</a> <a href="#review-MaxHillebrand" title="Reviewed Pull Requests">👀</a> <a href="#video-MaxHillebrand" title="Videos">📹</a></td>
-    <td align="center"><a href="https://dennisreimann.de"><img src="https://avatars2.githubusercontent.com/u/886?v=4" width="100px;" alt="Dennis Reimann"/><br /><sub><b>Dennis Reimann</b></sub></a><br /><a href="#code-dennisreimann" title="Code">💻</a> <a href="#design-dennisreimann" title="Design">🎨</a></td>
+    <td align="center"><a href="https://dennisreimann.de"><img src="https://avatars2.githubusercontent.com/u/886?v=4" width="100px;" alt="Dennis Reimann"/><br /><sub><b>Dennis Reimann</b></sub></a><br /><a href="https://github.com/zkSNACKs/WasabiDoc/commits?author=dennisreimann" title="Code">💻</a> <a href="#design-dennisreimann" title="Design">🎨</a></td>
     <td align="center"><a href="http://thunder-development.org"><img src="https://avatars2.githubusercontent.com/u/39974688?v=4" width="100px;" alt="thunderBiscuit"/><br /><sub><b>thunderBiscuit</b></sub></a><br /><a href="#ideas-thunderBiscuit" title="Ideas, Planning, & Feedback">🤔</a></td>
     <td align="center"><a href="http://mayank.ch"><img src="https://avatars1.githubusercontent.com/u/10330103?v=4" width="100px;" alt="Mayank Chhabra"/><br /><sub><b>Mayank Chhabra</b></sub></a><br /><a href="#design-mayankchhabra" title="Design">🎨</a></td>
     <td align="center"><a href="https://github.com/6102bitcoin"><img src="https://avatars0.githubusercontent.com/u/42300012?v=4" width="100px;" alt="6102bitcoin"/><br /><sub><b>6102bitcoin</b></sub></a><br /><a href="#ideas-6102bitcoin" title="Ideas, Planning, & Feedback">🤔</a> <a href="#content-6102bitcoin" title="Content">🖋</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/nopara73"><img src="https://avatars0.githubusercontent.com/u/9156103?v=4" width="100px;" alt="nopara73"/><br /><sub><b>nopara73</b></sub></a><br /><a href="https://github.com/zkSNACKs/WasabiDoc/commits?author=nopara73" title="Code">💻</a> <a href="#ideas-nopara73" title="Ideas, Planning, & Feedback">🤔</a> <a href="#maintenance-nopara73" title="Maintenance">🚧</a> <a href="#review-nopara73" title="Reviewed Pull Requests">👀</a> <a href="#talk-nopara73" title="Talks">📢</a></td>
   </tr>
 </table>
 
