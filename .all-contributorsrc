@@ -184,6 +184,16 @@
         "doc",
         "content"
       ]
+    },
+    {
+      "login": "wintercooled",
+      "name": "Matthew Haywood",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/25693053?v=4",
+      "profile": "https://twitter.com/wintercooled",
+      "contributions": [
+        "doc",
+        "content"
+      ]
     }
   ],
   "contributorsPerLine": 5,
