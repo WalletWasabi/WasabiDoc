@@ -90,3 +90,11 @@ You can use the search function in the top navbar to look for a specific topic, 
 Though often times it is quite useful to start a conversation with other Wasabikas about a specific problem.
 Here it is useful to reach out to the contributors on [Twitter](https://twitter.com/wasabiwallet), [Reddit](https://old.reddit.com/r/WasabiWallet/), and [Telegram](https://t.me/WasabiWallet).
 If your trouble is specific to the code, then it might also be suitable to check the existing [GitHub issues](https://github.com/zkSNACKs/WalletWasabi/issues/) and open a new one.
+
+### What does the Wasabi project need help with?
+Wasabi is libre and open source software, thus it relies on the support of several contributors on all fronts.
+Of course, this includes coding new features, bug fixes and stability improvements.
+Yet just equally important is the review of the commits of all other Wasabikas.
+It's not just the contributions to the code, but also to the documentation and in the effort to educate peers using Wasabi.
+This includes education in meatspace tribe gatherings, but also in cyberspace peer support.
+So basically, we need help with building and shilling Wasabi!
