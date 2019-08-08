@@ -256,6 +256,16 @@
         "example",
         "review"
       ]
+    },
+    {
+      "login": "RiccardoMasutti",
+      "name": "Riccardo Masutti",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/46527252?v=4",
+      "profile": "https://www.riccardomasutti.com",
+      "contributions": [
+        "doc",
+        "content"
+      ]
     }
   ],
   "contributorsPerLine": 5,
