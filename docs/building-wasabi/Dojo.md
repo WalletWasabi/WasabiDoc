@@ -137,6 +137,9 @@ We are currently in the process of completing it to match the contributors liste
     <td align="center"><a href="https://github.com/jmacato"><img src="https://avatars0.githubusercontent.com/u/16554748?v=4" width="100px;" alt="Jumar Macato"/><br /><sub><b>Jumar Macato</b></sub></a><br /><a href="https://github.com/zkSNACKs/WasabiDoc/commits?author=jmacato" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/Zolgarr"><img src="https://avatars2.githubusercontent.com/u/42039790?v=4" width="100px;" alt="zolgarr"/><br /><sub><b>zolgarr</b></sub></a><br /><a href="#content-zolgarr" title="Content">🖋</a> <a href="https://github.com/zkSNACKs/WasabiDoc/commits?author=zolgarr" title="Documentation">📖</a> <a href="#video-zolgarr" title="Videos">📹</a> <a href="#tutorial-zolgarr" title="Tutorials">✅</a></td>
   </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/raindogdance"><img src="https://avatars2.githubusercontent.com/u/35657440?v=4" width="100px;" alt="raindogdance"/><br /><sub><b>raindogdance</b></sub></a><br /><a href="#tutorial-raindogdance" title="Tutorials">✅</a> <a href="https://github.com/zkSNACKs/WasabiDoc/commits?author=raindogdance" title="Documentation">📖</a> <a href="#content-raindogdance" title="Content">🖋</a></td>
+  </tr>
 </table>
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
