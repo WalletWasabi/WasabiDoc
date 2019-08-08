@@ -130,6 +130,19 @@
         "test",
         "bug"
       ]
+    },
+    {
+      "login": "danwalmsley",
+      "name": "danwalmsley",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/4672627?v=4",
+      "profile": "https://github.com/danwalmsley",
+      "contributions": [
+        "code",
+        "review",
+        "design",
+        "ideas",
+        "test"
+      ]
     }
   ],
   "contributorsPerLine": 5,
