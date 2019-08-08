@@ -45,7 +45,7 @@ Most common questions answered with linked reference to the main documentation.
 
 ## Contribute to the Documentation
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-19-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-20-orange.svg?style=flat-square)](#contributors)
 
 Just like the Wasabi wallet software, this documentation is libre and open source under the [MIT license](LICENSE).
 Not only do we appreciate the contribution of everyone, but we desperately need it!
@@ -83,6 +83,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://twitter.com/wintercooled"><img src="https://avatars1.githubusercontent.com/u/25693053?v=4" width="100px;" alt="Matthew Haywood"/><br /><sub><b>Matthew Haywood</b></sub></a><br /><a href="https://github.com/zkSNACKs/WasabiDoc/commits?author=wintercooled" title="Documentation">📖</a> <a href="#content-wintercooled" title="Content">🖋</a></td>
     <td align="center"><a href="https://github.com/Mixelated"><img src="https://avatars3.githubusercontent.com/u/11422373?v=4" width="100px;" alt="Marc"/><br /><sub><b>Marc</b></sub></a><br /><a href="https://github.com/zkSNACKs/WasabiDoc/commits?author=Mixelated" title="Documentation">📖</a> <a href="#content-Mixelated" title="Content">🖋</a></td>
     <td align="center"><a href="http://bullbitcoin.com"><img src="https://avatars3.githubusercontent.com/u/7997682?v=4" width="100px;" alt="Francis Pouliot"/><br /><sub><b>Francis Pouliot</b></sub></a><br /><a href="#business-francispouliot" title="Business development">💼</a> <a href="#ideas-francispouliot" title="Ideas, Planning, & Feedback">🤔</a></td>
+    <td align="center"><a href="https://twitter.com/xavierfiechter"><img src="https://avatars0.githubusercontent.com/u/31884704?v=4" width="100px;" alt="Xavier Fiechter"/><br /><sub><b>Xavier Fiechter</b></sub></a><br /><a href="https://github.com/zkSNACKs/WasabiDoc/commits?author=xavierfiechter" title="Documentation">📖</a> <a href="#content-xavierfiechter" title="Content">🖋</a></td>
   </tr>
 </table>
 
