@@ -214,6 +214,16 @@
         "business",
         "ideas"
       ]
+    },
+    {
+      "login": "xavierfiechter",
+      "name": "Xavier Fiechter",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/31884704?v=4",
+      "profile": "https://twitter.com/xavierfiechter",
+      "contributions": [
+        "doc",
+        "content"
+      ]
     }
   ],
   "contributorsPerLine": 5,
