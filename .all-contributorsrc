@@ -245,6 +245,17 @@
         "example",
         "review"
       ]
+    },
+    {
+      "login": "chris-belcher",
+      "name": "chris-belcher",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/8398185?v=4",
+      "profile": "https://github.com/chris-belcher",
+      "contributions": [
+        "ideas",
+        "example",
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 5,
