@@ -20,5 +20,8 @@
     "@vuepress/plugin-back-to-top": "1.0.3",
     "markdown-it-custom-block": "^0.1.1",
     "vuepress": "^1.0.3"
+  },
+  "engines": {
+    "node": ">=10.16"
   }
 }

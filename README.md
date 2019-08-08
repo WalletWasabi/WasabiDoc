@@ -151,6 +151,7 @@ Optionally you can also specify the start position of a video in seconds: (e.g. 
 ```
 
 And the index of the video of a playlist: (e.g. starts the third video)
+
 ```md
 @[youtubePlaylist](PLAYLIST_ID,3)
 ```
@@ -159,7 +160,7 @@ And the index of the video of a playlist: (e.g. starts the third video)
 
 ## Build the Documentation Locally
 
-In order to build the website locally, you'll need [Node.js](https://nodejs.org/).
+In order to build the website locally, you'll need [Node.js](https://nodejs.org/) >= 10.16 (or basically the latest LTS version).
 
 ### Serve locally
 
