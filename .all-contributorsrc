@@ -118,6 +118,18 @@
         "review",
         "design"
       ]
+    },
+    {
+      "login": "yahiheb",
+      "name": "yahiheb",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/52379387?v=4",
+      "profile": "https://github.com/yahiheb",
+      "contributions": [
+        "code",
+        "review",
+        "test",
+        "bug"
+      ]
     }
   ],
   "contributorsPerLine": 5,
