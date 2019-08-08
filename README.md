@@ -45,7 +45,7 @@ Most common questions answered with linked reference to the main documentation.
 
 ## Contribute to the Documentation
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-10-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-11-orange.svg?style=flat-square)](#contributors)
 
 Just like the Wasabi wallet software, this documentation is libre and open source under the [MIT license](LICENSE).
 Not only do we appreciate the contribution of everyone, but we desperately need it!
@@ -70,6 +70,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="http://geeks.ms/blogs/lontivero"><img src="https://avatars1.githubusercontent.com/u/127973?v=4" width="100px;" alt="Lucas Ontivero"/><br /><sub><b>Lucas Ontivero</b></sub></a><br /><a href="https://github.com/zkSNACKs/WasabiDoc/commits?author=lontivero" title="Code">💻</a> <a href="#review-lontivero" title="Reviewed Pull Requests">👀</a> <a href="#maintenance-lontivero" title="Maintenance">🚧</a> <a href="#projectManagement-lontivero" title="Project Management">📆</a></td>
     <td align="center"><a href="http://nicolas-dorier.com/"><img src="https://avatars0.githubusercontent.com/u/3020646?v=4" width="100px;" alt="Nicolas Dorier"/><br /><sub><b>Nicolas Dorier</b></sub></a><br /><a href="https://github.com/zkSNACKs/WasabiDoc/commits?author=NicolasDorier" title="Code">💻</a> <a href="#ideas-NicolasDorier" title="Ideas, Planning, & Feedback">🤔</a> <a href="#review-NicolasDorier" title="Reviewed Pull Requests">👀</a></td>
     <td align="center"><a href="https://lightning-rod.net/"><img src="https://avatars3.githubusercontent.com/u/15256660?v=4" width="100px;" alt="Ben Carman"/><br /><sub><b>Ben Carman</b></sub></a><br /><a href="https://github.com/zkSNACKs/WasabiDoc/commits?author=benthecarman" title="Code">💻</a> <a href="https://github.com/zkSNACKs/WasabiDoc/issues?q=author%3Abenthecarman" title="Bug reports">🐛</a> <a href="#review-benthecarman" title="Reviewed Pull Requests">👀</a> <a href="#design-benthecarman" title="Design">🎨</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/yahiheb"><img src="https://avatars0.githubusercontent.com/u/52379387?v=4" width="100px;" alt="yahiheb"/><br /><sub><b>yahiheb</b></sub></a><br /><a href="https://github.com/zkSNACKs/WasabiDoc/commits?author=yahiheb" title="Code">💻</a> <a href="#review-yahiheb" title="Reviewed Pull Requests">👀</a> <a href="https://github.com/zkSNACKs/WasabiDoc/commits?author=yahiheb" title="Tests">⚠️</a> <a href="https://github.com/zkSNACKs/WasabiDoc/issues?q=author%3Ayahiheb" title="Bug reports">🐛</a></td>
   </tr>
 </table>
 
