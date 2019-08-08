@@ -151,6 +151,9 @@ We are currently in the process of completing it to match the contributors liste
     <td align="center"><a href="https://www.riccardomasutti.com"><img src="https://avatars1.githubusercontent.com/u/46527252?v=4" width="100px;" alt="Riccardo Masutti"/><br /><sub><b>Riccardo Masutti</b></sub></a><br /><a href="https://github.com/zkSNACKs/WasabiDoc/commits?author=RiccardoMasutti" title="Documentation">📖</a> <a href="#content-RiccardoMasutti" title="Content">🖋</a></td>
     <td align="center"><a href="https://github.com/CryptoRafe"><img src="https://avatars0.githubusercontent.com/u/51679301?v=4" width="100px;" alt="CryptoRafe"/><br /><sub><b>CryptoRafe</b></sub></a><br /><a href="https://github.com/zkSNACKs/WasabiDoc/commits?author=CryptoRafe" title="Documentation">📖</a> <a href="#content-CryptoRafe" title="Content">🖋</a></td>
   </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/kravens"><img src="https://avatars1.githubusercontent.com/u/9646902?v=4" width="100px;" alt="kravens"/><br /><sub><b>kravens</b></sub></a><br /><a href="https://github.com/zkSNACKs/WasabiDoc/commits?author=kravens" title="Documentation">📖</a> <a href="#content-kravens" title="Content">🖋</a></td>
+  </tr>
 </table>
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->

@@ -45,7 +45,7 @@ Most common questions answered with linked reference to the main documentation.
 
 ## Contribute to the Documentation
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-25-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-26-orange.svg?style=flat-square)](#contributors)
 
 Just like the Wasabi wallet software, this documentation is libre and open source under the [MIT license](LICENSE).
 Not only do we appreciate the contribution of everyone, but we desperately need it!
@@ -91,6 +91,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/chris-belcher"><img src="https://avatars2.githubusercontent.com/u/8398185?v=4" width="100px;" alt="chris-belcher"/><br /><sub><b>chris-belcher</b></sub></a><br /><a href="#ideas-chris-belcher" title="Ideas, Planning, & Feedback">🤔</a> <a href="#example-chris-belcher" title="Examples">💡</a> <a href="#review-chris-belcher" title="Reviewed Pull Requests">👀</a></td>
     <td align="center"><a href="https://www.riccardomasutti.com"><img src="https://avatars1.githubusercontent.com/u/46527252?v=4" width="100px;" alt="Riccardo Masutti"/><br /><sub><b>Riccardo Masutti</b></sub></a><br /><a href="https://github.com/zkSNACKs/WasabiDoc/commits?author=RiccardoMasutti" title="Documentation">📖</a> <a href="#content-RiccardoMasutti" title="Content">🖋</a></td>
     <td align="center"><a href="https://github.com/CryptoRafe"><img src="https://avatars0.githubusercontent.com/u/51679301?v=4" width="100px;" alt="CryptoRafe"/><br /><sub><b>CryptoRafe</b></sub></a><br /><a href="https://github.com/zkSNACKs/WasabiDoc/commits?author=CryptoRafe" title="Documentation">📖</a> <a href="#content-CryptoRafe" title="Content">🖋</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/kravens"><img src="https://avatars1.githubusercontent.com/u/9646902?v=4" width="100px;" alt="kravens"/><br /><sub><b>kravens</b></sub></a><br /><a href="https://github.com/zkSNACKs/WasabiDoc/commits?author=kravens" title="Documentation">📖</a> <a href="#content-kravens" title="Content">🖋</a></td>
   </tr>
 </table>
 
