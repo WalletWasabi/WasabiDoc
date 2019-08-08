@@ -45,7 +45,7 @@ Most common questions answered with linked reference to the main documentation.
 
 ## Contribute to the Documentation
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors)
 
 Just like the Wasabi wallet software, this documentation is libre and open source under the [MIT license](LICENSE).
 Not only do we appreciate the contribution of everyone, but we desperately need it!
@@ -67,6 +67,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="https://github.com/nopara73"><img src="https://avatars0.githubusercontent.com/u/9156103?v=4" width="100px;" alt="nopara73"/><br /><sub><b>nopara73</b></sub></a><br /><a href="https://github.com/zkSNACKs/WasabiDoc/commits?author=nopara73" title="Code">💻</a> <a href="#ideas-nopara73" title="Ideas, Planning, & Feedback">🤔</a> <a href="#maintenance-nopara73" title="Maintenance">🚧</a> <a href="#review-nopara73" title="Reviewed Pull Requests">👀</a> <a href="#talk-nopara73" title="Talks">📢</a></td>
     <td align="center"><a href="https://github.com/molnard"><img src="https://avatars2.githubusercontent.com/u/9844978?v=4" width="100px;" alt="Dávid Molnár"/><br /><sub><b>Dávid Molnár</b></sub></a><br /><a href="#blog-molnard" title="Blogposts">📝</a> <a href="https://github.com/zkSNACKs/WasabiDoc/commits?author=molnard" title="Code">💻</a> <a href="#review-molnard" title="Reviewed Pull Requests">👀</a> <a href="#maintenance-molnard" title="Maintenance">🚧</a></td>
+    <td align="center"><a href="http://geeks.ms/blogs/lontivero"><img src="https://avatars1.githubusercontent.com/u/127973?v=4" width="100px;" alt="Lucas Ontivero"/><br /><sub><b>Lucas Ontivero</b></sub></a><br /><a href="https://github.com/zkSNACKs/WasabiDoc/commits?author=lontivero" title="Code">💻</a> <a href="#review-lontivero" title="Reviewed Pull Requests">👀</a> <a href="#maintenance-lontivero" title="Maintenance">🚧</a> <a href="#projectManagement-lontivero" title="Project Management">📆</a></td>
   </tr>
 </table>
 

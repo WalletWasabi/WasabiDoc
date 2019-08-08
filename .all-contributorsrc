@@ -83,6 +83,18 @@
         "review",
         "maintenance"
       ]
+    },
+    {
+      "login": "lontivero",
+      "name": "Lucas Ontivero",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/127973?v=4",
+      "profile": "http://geeks.ms/blogs/lontivero",
+      "contributions": [
+        "code",
+        "review",
+        "maintenance",
+        "projectManagement"
+      ]
     }
   ],
   "contributorsPerLine": 5,
