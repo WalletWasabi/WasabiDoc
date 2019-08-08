@@ -276,6 +276,16 @@
         "doc",
         "content"
       ]
+    },
+    {
+      "login": "kravens",
+      "name": "kravens",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/9646902?v=4",
+      "profile": "https://github.com/kravens",
+      "contributions": [
+        "doc",
+        "content"
+      ]
     }
   ],
   "contributorsPerLine": 5,
