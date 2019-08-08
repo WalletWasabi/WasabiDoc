@@ -13,7 +13,7 @@ module.exports = {
     "@vuepress/back-to-top",
     ["container", {
       type: "details",
-      before: title => `<details id="${slugify(title)}"><summary>${title}</summary>`,
+      before: title => `<details id="${slugify(title)}"><summary><h3><a href="#${slugify(title)}" aria-hidden="true" class="header-anchor">#</a> ${title}</h3></summary>`,
       after: '</details>'
     }],
   ],
