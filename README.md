@@ -45,7 +45,7 @@ Most common questions answered with linked reference to the main documentation.
 
 ## Contribute to the Documentation
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-26-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-27-orange.svg?style=flat-square)](#contributors)
 
 Just like the Wasabi wallet software, this documentation is libre and open source under the [MIT license](LICENSE).
 Not only do we appreciate the contribution of everyone, but we desperately need it!
@@ -94,6 +94,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
   <tr>
     <td align="center"><a href="https://github.com/kravens"><img src="https://avatars1.githubusercontent.com/u/9646902?v=4" width="100px;" alt="kravens"/><br /><sub><b>kravens</b></sub></a><br /><a href="https://github.com/zkSNACKs/WasabiDoc/commits?author=kravens" title="Documentation">📖</a> <a href="#content-kravens" title="Content">🖋</a></td>
+    <td align="center"><a href="http://www.michaeltoth.me"><img src="https://avatars3.githubusercontent.com/u/1676164?v=4" width="100px;" alt="Michael Toth"/><br /><sub><b>Michael Toth</b></sub></a><br /><a href="https://github.com/zkSNACKs/WasabiDoc/commits?author=michaeltoth" title="Documentation">📖</a> <a href="#content-michaeltoth" title="Content">🖋</a></td>
   </tr>
 </table>
 

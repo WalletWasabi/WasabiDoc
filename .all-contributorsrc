@@ -286,6 +286,16 @@
         "doc",
         "content"
       ]
+    },
+    {
+      "login": "michaeltoth",
+      "name": "Michael Toth",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/1676164?v=4",
+      "profile": "http://www.michaeltoth.me",
+      "contributions": [
+        "doc",
+        "content"
+      ]
     }
   ],
   "contributorsPerLine": 5,
