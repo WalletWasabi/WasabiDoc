@@ -139,6 +139,7 @@ We are currently in the process of completing it to match the contributors liste
   </tr>
   <tr>
     <td align="center"><a href="https://github.com/raindogdance"><img src="https://avatars2.githubusercontent.com/u/35657440?v=4" width="100px;" alt="raindogdance"/><br /><sub><b>raindogdance</b></sub></a><br /><a href="#tutorial-raindogdance" title="Tutorials">✅</a> <a href="https://github.com/zkSNACKs/WasabiDoc/commits?author=raindogdance" title="Documentation">📖</a> <a href="#content-raindogdance" title="Content">🖋</a></td>
+    <td align="center"><a href="https://github.com/Mixelated"><img src="https://avatars3.githubusercontent.com/u/11422373?v=4" width="100px;" alt="Marc"/><br /><sub><b>Marc</b></sub></a><br /><a href="https://github.com/zkSNACKs/WasabiDoc/commits?author=mixelated" title="Documentation">📖</a> <a href="#content-mixelated" title="Content">🖋</a></td>
   </tr>
 </table>
 
