@@ -58,6 +58,19 @@
         "ideas",
         "content"
       ]
+    },
+    {
+      "login": "nopara73",
+      "name": "nopara73",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/9156103?v=4",
+      "profile": "https://github.com/nopara73",
+      "contributions": [
+        "code",
+        "ideas",
+        "maintenance",
+        "review",
+        "talk"
+      ]
     }
   ],
   "contributorsPerLine": 5,
