@@ -614,6 +614,13 @@ The check mark indicates that the transaction is confirmed in the longest proof-
 ![](/History.png)
 :::
 
+:::details
+### Can I export a list of transaction?
+
+There is currently no convenient way to export a list with transaction details.
+However, you can see the `wallet.json` files in the `.walletwasabi/client/WalletBackups/` folder which contain all the public keys, labels and anonset.
+:::
+
 ## Settings
 
 :::details
@@ -745,9 +752,6 @@ Send
 - Can I see the fee in Satoshis per byte?
 - How is the tansaction broadcasted?
 
-History
-
-- Can I export a list of transaction?
 
 CoinJoin
 
