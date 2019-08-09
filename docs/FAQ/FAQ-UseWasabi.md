@@ -29,6 +29,22 @@ You have successfully setup your wallet when you click `I wrote down my Recovery
 :::
 
 ::::details
+### What password should I use?
+The password you set is used to encrypt the mnemonic recovery words, and the private keys stored on the computer.
+This is the password that will unlock your bitcoin to anyone who has access to the backup or computer.
+You will need to type in the password before you can spend from Wasabi wallet.
+So if your backup gets compromised, this password is the only thing protecting your precious sats.
+
+:::danger
+It is **VERY** important to use a random and long password.
+:::
+
+Since it is very difficult for humans to generate true randomness, it is good to use a tool to help find a strong password.
+This can be the [dice ware wordlist](https://www.eff.org/deeplinks/2016/07/new-wordlists-random-passphrases), for true off-line password.
+A secure password manager software might also be used, but be careful here.
+::::
+
+::::details
 ### How do I back up my mnemonic words?
 
 :::tip
@@ -62,7 +78,7 @@ Please see [this great guide](https://github.com/6102bitcoin/FAQ/blob/master/see
 
 @[youtube](9i7CceIdFg4)
 
-:::details
+::::details
 ### Why is it bad to re-use addresses?
 
 Bitcoin is designed so that for every payment you can use a new address that is not tied to any of your previous addresses.
@@ -78,7 +94,21 @@ You can easily generate and store many billions of private keys and addresses in
 This is what is used in Wasabi, you have on mnemonic backup, and unlimited numbers of new addresses.
 Everytime you a coin is received, then the address is removed from the GUI so that you are not tempted to use it again.
 
-Remember: ***NEVER RE-USE ADDRESSES***
+:::danger
+**NEVER RE-USE ADDRESSES**
+:::
+::::
+
+:::details
+### How do I generate a new receiving address?
+
+You can generate a new bech32 address in the `Receive` tab of Wasabi Wallet.
+First you must set a label for it, so that you later know who has send you bitcoin to this address.
+Be precise in the reason for the payment, labeling is an important part of good [coin control](/FAQ-UseWasabi.md#why-is-coin-control-so-important) privacy best practices.
+Then you can click on `Generate` which will now show you the address, and immediately copy it to the clipboard.
+After a coin has been sent to this address, it is removed from the GUI, this is a good feature to help protect you against [address reuse](/FAQ-UseWasabi.md#why-is-it-bad-to-re-use-addresses).
+
+![](/ReceiveLabelingRequired.png)
 :::
 
 :::details
@@ -98,6 +128,35 @@ Be careful, if you send all your coins from an old wallet to a new wallet (from 
 @[youtube](AdmlM-Qvco0)
 
 :::details
+### What are coins?
+
+Bitcoin uses a system of inputs and outputs to keep track who owns how many sats.
+Every transaction specifies one or more inputs, the chunk of bitcoin being spend, and one or more outputs, the destination of who receives the bitcoin.
+A coin is also called an unspent transaction output UTXO, meaning that this output has not been used as the input of a new transaction - it is yet to be spend.
+In order to spend an UTXO, the valid signature and script has to be provided in the transaction.
+This ensures that only with knowledge of the correct private key can this coin be send to a new address.
+This chain of links between inputs being spent and outputs being generated is verified by every full node, and stored on the timechain.
+:::
+
+:::details
+### Why is coin control so important?
+
+Satoshis, the base currency in the Bitcoin network, are fungible units of account.
+It's just a number that shows how much value is being transfered, and the number `100` is "the same" any time the number `100` is used.
+The 9000 sats you spend on stickers are equal to the 9000 sats you spend on coffee.
+Just like 1 gram of gold atoms are equal to any other 1 gram of gold atoms.
+
+However, the unspent transaction outputs, the coins that hold the satoshi, they are not fungible.
+Every UTXO is a unique snowflake that has it's own transaction history, as well as an independent spending condition.
+The coin worth 2 bitcoin and locked by Alice's public key is not the same as the UTXO worth 5 bitcoin locked by the 2-of-3 multi signature of Bob, Charlie and David.
+So when sending bitcoin, it's important to consider which actual outputs are being send in the transaction.
+
+It might be a problem when Alice sends the coin she received for a months worth of labor, in exchange for a coffee in Bob's store.
+Now Bob knows the amount Alice gets paid, and this is none of his business.
+Alice can protect herself against this by using a CoinJoin UTXO, because now Bob can not know the previous transactions from Alice.
+:::
+
+:::details
 ### Why does Wasabi choose a new random node every time I send a transaction?
 
 When you broadcast a transaction from a full node, that transaction is flooded into the network.
@@ -109,8 +168,6 @@ So to fix this Wasabi broadcasts your transactions to a random node, and message
 When you want to subsequently send another transaction on the network, Wasabi destroys the original TOR bridge and connection to the node and established a new TOR bridge and connection with a brand new node.
 This reduces the risk of a passive bystander being able to link two transactions together that appear from the same location.
 :::
-
-## History
 
 ## CoinJoin
 
@@ -447,7 +504,6 @@ So consolidating in a CoinJoin is better, but it might still reveal the common o
 
 Wallet Manager
 
-- What password should I use?
 - Can I spend my bitcoin without the password?
 - How do I backup my wallet?
 - What's up with the Chinese characters?
@@ -461,7 +517,6 @@ Synchronization
 
 Receive
 
-- How do I generate a new receiving address?
 - Why do I have to label my address?
 - How can I change the label of my address?
 - Where can I find my public key?
@@ -470,8 +525,6 @@ Receive
 
 Send
 
-- What are coins?
-- Why is coin control so important?
 - How do I select coins for spending?
 - What is the cluster history?
 - How do I set a destination address?
