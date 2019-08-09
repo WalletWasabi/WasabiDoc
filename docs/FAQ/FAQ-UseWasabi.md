@@ -361,6 +361,16 @@ These sats are precious, so don't overpay on fees!
 :::
 ::::
 
+:::details
+### How can I display the fee in satoshis per byte?
+
+The fee you pay to get confirmation on the Bitcoin timechain is denominated in satoshis per virtual byte.
+This means that the larger your transaction size, meaning the number of inputs and outputs, then the more total bitcoin do you have to pay for confirmation.
+If you want faster confirmation, then you have to pay proportionally more sats per vByte.
+
+You can toggle the display of the fee between `sat/vByte` & `percentage of transfered value` & `total bitcoin` & `total USD` by clicking on the text of the fee.
+:::
+
 ## CoinJoin
 
 @[youtube](ypfZT9GlqTw)
@@ -749,7 +759,6 @@ Send
 
 - How do I select coins for spending?
 - What is the cluster history?
-- Can I see the fee in Satoshis per byte?
 - How is the tansaction broadcasted?
 
 
@@ -759,7 +768,6 @@ CoinJoin
 - How much anonymity set do I need?
 - How many rounds should I CoinJoin?
 - How does my wallet communicate with the Wasabi coordinator server?
-- Why are the denominations such an odd number?
 
 Hardware Wallet
 
