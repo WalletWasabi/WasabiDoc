@@ -29,6 +29,20 @@ You have successfully setup your wallet when you click `I wrote down my Recovery
 
 ![](/WalletManagerRecoveryWords.png)
 
+### What password should I use?
+The password you set is used to encrypt the mnemonic recovery words, and the private keys stored on the computer.
+This is the password that will unlock your bitcoin to anyone who has access to the backup or computer.
+You will need to type in the password before you can spend from Wasabi wallet.
+So if your backup gets compromised, this password is the only thing protecting your precious sats.
+
+:::danger
+It is **VERY** important to use a random and long password.
+:::
+
+Since it is very difficult for humans to generate true randomness, it is good to use a tool to help find a strong password.
+This can be the [dice ware wordlist](https://www.eff.org/deeplinks/2016/07/new-wordlists-random-passphrases), for true off-line password.
+A secure password manager software might also be used, but be careful here.
+
 ### How do I back up my mnemonic words?
 :::tip
 Always back up your encrypted private keys!
@@ -411,7 +425,6 @@ So consolidating in a CoinJoin is better, but it might still reveal the common o
 
 
 Wallet Manager
-- What password should I use?
 - Can I spend my bitcoin without the password?
 - How do I backup my wallet?
 - What's up with the Chinese characters?
