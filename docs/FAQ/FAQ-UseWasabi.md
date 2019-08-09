@@ -99,6 +99,22 @@ In order to spend an UTXO, the valid signature and script has to be provided in 
 This ensures that only with knowledge of the correct private key can this coin be send to a new address.
 This chain of links between inputs being spent and outputs being generated is verified by every full node, and stored on the timechain.
 
+### Why is coin control so important?
+Satoshis, the base currency in the Bitcoin network, are fungible units of account.
+It's just a number that shows how much value is being transfered, and the number `100` is "the same" any time the number `100` is used.
+The 9000 sats you spend on stickers are equal to the 9000 sats you spend on coffee.
+Just like 1 gram of gold atoms are equal to any other 1 gram of gold atoms.
+
+However, the unspent transaction outputs, the coins that hold the satoshi, they are not fungible.
+Every UTXO is a unique snowflake that has it's own transaction history, as well as an independent spending condition.
+The coin worth 2 bitcoin and locked by Alice's public key is not the same as the UTXO worth 5 bitcoin locked by the 2-of-3 multi signature of Bob, Charlie and David.
+So when sending bitcoin, it's important to consider which actual outputs are being send in the transaction.
+
+It might be a problem when Alice sends the coin she received for a months worth of labor, in exchange for a coffee in Bob's store.
+Now Bob knows the amount Alice gets paid, and this is none of his business.
+Alice can protect herself against this by using a CoinJoin UTXO, because now Bob can not know the previous transactions from Alice.
+
+
 ### Why does Wasabi choose a new random node every time I send a transaction?
 
 When you broadcast a transaction from a full node, that transaction is flooded into the network.
@@ -404,7 +420,6 @@ Receive
 - Are there privacy concerns regarding whom I send my address?
 
 Send
-- Why is coin control so important?
 - How do I select coins for spending?
 - What is the cluster history?
 - How do I set a destination address?
