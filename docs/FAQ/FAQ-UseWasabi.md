@@ -323,6 +323,7 @@ Now click ```Broadcast Transaction``` to send it off over Tor to a random Bitcoi
 ### Can I CoinJoin the bitcoin on my hardware wallet?
 
 You can't do that directly, so send them (in small portions >0.1BTC if needed) to a ''hot'' Wasabi Wallet for CoinJoin and then send them back to a new address on the Hardware wallet for cold-storage.
+:::
 
 ## Settings
 
