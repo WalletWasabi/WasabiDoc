@@ -131,6 +131,15 @@ The solution is to manage your funds with a wallet which does support Bech32, [s
 Be careful, if you send all your coins from an old wallet to a new wallet (from the table above) in one transaction then you will merge all your coins which is bad for privacy - instead, **send the coins individually** or if possible **import the seed in the new wallet**.
 :::
 
+:::details
+### Where can I find my address QR code and public key?
+
+You can see the address QR code, public key and the key path in the drop down menu of the `Receive` tab.
+Click on the arrow on the left side of the address to reveal the extra details.
+
+![](/ReceiveAddressDropDown.png)
+:::
+
 ## Send
 
 @[youtube](PRlAAxunmdU)
@@ -556,7 +565,6 @@ Synchronization
 Receive
 
 - Why do I have to label my address?
-- Where can I find my public key?
 - Where can I find a QR code of the address?
 - Are there privacy concerns regarding whom I send my address?
 
