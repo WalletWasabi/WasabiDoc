@@ -228,6 +228,20 @@ This is very bad for your privacy because of [address reuse](/using-wasabi/Addre
 ![](/ReceiveAddressMenu.png)
 :::
 
+::::details
+### Are there privacy concerns regarding whom I send my address?
+
+Yes.
+Whomever you send your address, he knows that this address, and any coin sent to it, belongs to you.
+Thus it is important to have labeled receiving addresses, so that you know which address is for what purpose.
+It is important that you avoid sending the same address to several different individuals.
+Because there is a risk that both of them send coins to this same destination, thus unnecessarily linking the payments.
+
+:::danger
+It is especially important to **NEVER** send your extended public key to any third party server. This is a complete de-anonymization of your entire wallet!!
+:::
+::::
+
 :::details
 ### Why does Wasabi only use SegWit bech32 addresses?
 
@@ -703,10 +717,6 @@ So consolidating in a CoinJoin is better, but it might still reveal the common o
 Synchronization
 
 - How long does the initial, and a subsequent synchronization take?
-
-Receive
-
-- Are there privacy concerns regarding whom I send my address?
 
 Send
 
