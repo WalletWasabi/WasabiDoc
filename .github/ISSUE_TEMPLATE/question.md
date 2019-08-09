@@ -3,6 +3,8 @@ name: New Question
 about: A new question yet to be answered in the documentation.
 ---
 
+> Please know that you are opening an issue in the [Wasabi documentation](https://docs.wasabiwallet.io) repository. If you have an issue regarding the software specifically, please [open an issue in the main Wasabi repository](https://github.com/zkSNACKs/WalletWasabi/issues/new/choose).
+
 ### In what context is your question?
 
 Please explain which general pillar your question is about.
