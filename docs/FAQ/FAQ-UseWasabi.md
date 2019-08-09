@@ -92,6 +92,35 @@ Always backup your encrypted mnemonic recovery words, and your password in two s
 
 @[youtube](qguwAvA5Fx4)
 
+::::details
+### What are BIP-158 block filters?
+
+When you do not run a full node, then you need to communicate with some third party node to find out how much money you have.
+There are very bad wallets that simply send the extended public key, and thus all your addresses and your entire transaction history, to a selected, or random server.
+This means that this trusted third party has full knowledge of a lot your sensitive financial data.
+
+:::danger This is not acceptable
+Do not send your extended public key to a third party server!
+:::
+
+::: tip
+This is why Wasabi uses [BIP-158 block filters](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki) to ensure [network level privacy](/using-wasabi/NetworkLevelPrivacy.md), as good as running a full node.
+:::
+
+The Wasabi coordinator will send your wallet comparatively small block filters, and you check locally if the block contains a transaction with your coins.
+If not, then the filter is stored for later reference and for syncing new wallets.
+If yes, then the wallet connects to a random Bitcoin peer-to-peer full node to request this entire block.
+Your wallet does not communicate with the Wasabi server to download the block, because there's no need to trust him.
+For every block download, Wasabi establishes a new and unique tor identity, meaning that it is not easy to link that it is the same entity downloading all these blocks.
+The P2P node that serves you the block does not know if you are a regular Bitcoin full node, or a Wasabi light client node.
+You are yet another peer in the network.
+
+It is important to note that although the privacy is as good as with a full node, you do not verify that the coins are actually valid.
+In order to do this, you must run a full node and verify the entire timechain.
+With the block filters, you trust that the Wasabi server gives you the correct filters, and does not withhold any of them.
+You also do not have proof that the block you download from a P2P node is actually in the valid chain, but you can verify the proof of work in the block header.
+::::
+
 ## Receive
 
 @[youtube](9i7CceIdFg4)
@@ -233,8 +262,12 @@ The lower the fee is, the longer the estimated wait; and the higher the fee, the
 There are several different confidence levels, each of them gives an educated guess how soon the transaction will confirm.
 But the the provided time frames are only a rough estimation, and not at all a precise metric.
 
+![](/SendFeeSlider.png)
+
 Because confirmation fee estimation is more an art than a science, you can also set the fee manually.
 Then you can go after your gut feeling, [mempool chart analysis](https://jochen-hoenicke.de/queue/#0,24h), or just putting the minimum of 1 sat/vByte.
+
+![](/SendNoFee.png)
 
 For a transaction to yourself, for example from your hot CoinJoin wallet to your hardware wallet, you don't need to have fast confirmation, so you can set a slow fee.
 But to send from the hot CoinJoin wallet to the coffee shop, you might want to get faster confirmation, thus paying a higher fee.
@@ -614,7 +647,6 @@ Wallet Manager
 
 Synchronization
 
-- What are BIP-158 block filters?
 - How does Wasabi download a relevant block?
 - How long does the initial, and a subsequent synchronization take?
 - How do I know if the synchronization is finished?
