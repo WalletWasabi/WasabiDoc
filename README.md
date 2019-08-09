@@ -153,6 +153,18 @@ And the index of the video of a playlist: (e.g. starts the third video)
 @[youtubePlaylist](PLAYLIST_ID,3)
 ```
 
+### Frequently asked questions
+
+Use this markdown box with the headers to write the FAQ:
+```
+:::details
+### question
+
+answer answer answer.
+answer answer answer.
+:::
+```
+
 ---
 
 ## Build the Documentation Locally
