@@ -2,7 +2,9 @@
 
 ## The Basics
 
-:::details Explain Wasabi like I'm 5
+:::details
+### Explain Wasabi like I'm 5
+
 Wasabi is a software wallet to manage your Bitcoin private keys.
 It is tailor made to protect your privacy on every step.
 You can easily send and receive bitcoin without the permission of anyone.
@@ -12,7 +14,9 @@ You can also use Wasabi to manage your hardware wallet, and it even connects to 
 Of course, Wasabi is libre and open source, which means you have full control over the software you manage your money with.
 :::
 
-::::details Who can use Wasabi?
+::::details
+### Who can use Wasabi?
+
 Every single line of code in Wasabi, the [wallet](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Gui), the [backend server](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Backend), the [tests](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Tests), the [packager](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Packager), the [library](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi), the [daemon](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Gui/CommandLine), the [api](https://wasabiwallet.io/swagger/), the [documentation](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs) - has always been and will always be libre and open source under the [MIT license](https://github.com/zkSNACKs/WalletWasabi/blob/master/LICENSE.md).
 This means that anyone, yes, ANYONE can use Wasabi without permission, for any use case, free of charge.
 
@@ -25,7 +29,9 @@ Wasabi is a tool for everyone.
 :::
 ::::
 
-:::details What is a CoinJoin?
+:::details
+### What is a CoinJoin?
+
 A mechanism by which multiple participants combine their coins (or UTXOs, to be more precise) into one large transaction with multiple inputs and multiple outputs.
 An observer cannot determine which output belongs to which input, and neither can the participants themselves.
 This makes it difficult for outside parties to trace where a particular coin originated from and where it was sent to (as opposed to regular bitcoin transactions, where there is usually one sender and one receiver).
@@ -46,13 +52,16 @@ In very simple terms, CoinJoin means: “when you want to make a transaction, fi
 See also the [Bitcoin Wiki on CoinJoins](https://en.bitcoin.it/wiki/CoinJoin)
 :::
 
-:::details Do I need to trust Wasabi with my coins?
+:::details
+### Do I need to trust Wasabi with my coins?
+
 No, Wasabi's CoinJoin implementation is trustless by design.
 The participants do not need to trust each other or any third party. Both the sending address (the CoinJoin input) and the receiving address (the CoinJoin output) are controlled by your own private keys.
 Wasabi merely coordinates the process of combining the inputs of the participants into one single transaction, but the wallet can neither steal your coins, nor figure out which outputs belong to which inputs (look up “[Chaumian CoinJoin](https://github.com/nopara73/ZeroLink#ii-chaumian-coinjoin)” if you want to know more).
 :::
 
-:::details What is the privacy I get after mixing with Wasabi?
+:::details
+### What is the privacy I get after mixing with Wasabi?
 This depends on how you handle your outputs after the CoinJoin.
 There are some ways how you can unintentionally undo the mixing by being careless.
 For example, if you make a 1.8 BTC transaction into Wasabi, do the CoinJoin, and then make one single outgoing transaction of 1.8 BTC, a third party observer can reasonably assume that both transactions belong to one single entity, due to both amounts being virtually the same even though they have been through a CoinJoin.
@@ -64,13 +73,17 @@ The practice of being careful with your post-mix outputs is commonly facilitated
 Find out more about coin control it [here](https://medium.com/@nopara73/coin-control-is-must-learn-if-you-care-about-your-privacy-in-bitcoin-33b9a5f224a2).
 :::
 
-:::details Can I hurt my privacy using Wasabi?
+:::details
+### Can I hurt my privacy using Wasabi?
+
 No.
 The worst thing that can happen (through user’s negligence post-mix) is that the level of your privacy stays the same as before CoinJoin.
 It is crucial to understand that Wasabi is not a fool-proof solution if you neglect to practice coin control after the mixing process.
 :::
 
-:::details Why is Wasabi Bitcoin-only?
+:::details
+### Why is Wasabi Bitcoin-only?
+
 There are countless reasons why it is the only logical choice to be [bitcoin-only](https://bitcoin-only.com).
 With Bitcoin we have a once in a lifetime opportunity to manifest libre sound money.
 If we suceed, then this might emerge an utmost beautiful agora of sovereign individuals.
@@ -81,7 +94,9 @@ Any line of code written to support a random shitcoin takes away scarce develope
 
 ## For advanced Wasabikas
 
-:::details Can the coordinator attack me?
+:::details
+### Can the coordinator attack me?
+
 The nature of Wasabi is that you should not need to trust the developers or the Wasabi coordinating server, as you can verify that the code does not leak information to anyone.
 The developers have gone to great lengths in an attempt to ensure that the coordinator cannot steal funds nor harvest information (for example, the outputs sent from your Wasabi Wallet are blinded, meaning that even the Wasabi server cannot link the outputs to the inputs).
 

@@ -2,7 +2,9 @@
 
 ## Installing the Package
 
-:::details Where can I download Wasabi?
+:::details
+### Where can I download Wasabi?
+
 It's always best to download software directly from the official source acknowledged by the developers.
 You can find the recent version of the compiled packages for Linux, Windows and Mac available on the official [wasabiwallet.io](https://wasabiwallet.io).
 In order to preserve your network level privacy from the very first step on, please consider visiting the tor hidden service [wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion).
@@ -10,7 +12,9 @@ The old versions of the software can be found in the [releases](https://github.c
 Please take special care to verify the PGP signatures of Àdàm's PGP key [21D7 CA45 565D BCCE BE45 115D B4B7 2266 C47E 075E](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt) over the software packages and code commits.
 :::
 
-::::details Why is it important to verify PGP signatures?
+::::details
+### Why is it important to verify PGP signatures?
+
 :::danger
 **Don't trust ~ verify.**
 :::
@@ -28,7 +32,9 @@ This protects you against malicious man in the middle attacks where bad guys giv
 @[youtubePlaylist](PLPj3KCksGbSZkVpgAZjAFfFp4D0SHLnFw)
 ::::
 
-:::details How can I verify PGP signatures?
+:::details
+### How can I verify PGP signatures?
+
 On the [WasabiWallet.io](https://wasabiwallet.io) website you can download the packages of the latest release.
 Make sure that in addition you also download the separate signature `.asc` file.
 In the terminal, change the directory to the one with the downloaded files, and verify the signature with `gpg --verify Wasabi-1.1.6.deb.asc`.
@@ -39,7 +45,9 @@ For an in depth guide for [Debian and Ubuntu](/using-wasabi/InstallPackage.html#
 @[youtube](mTrClVA_o5A)
 :::
 
-:::details How do I install Wasabi on Debian and Ubuntu?
+:::details
+### How do I install Wasabi on Debian and Ubuntu?
+
 [Download](/FAQ-Installation.md#where-can-i-download-wasabi) the most recent `.deb` package and the `.deb.asc` signature file from the [wasabiwallet.io](https://wasabiwallet.io) or the [tor hidden service](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion).
 
 ![](/DownloadDeb.png)
@@ -51,7 +59,9 @@ Checkout the main documentation for a [step-by-step guide](/using-wasabi/Install
 @[youtube](mTrClVA_o5A,122)
 :::
 
-:::details How do I install Wasabi on other Linux?
+:::details
+### How do I install Wasabi on other Linux?
+
 [Download](/FAQ-Installation.md#where-can-i-download-wasabi) the most recent `.tar.gz` package and the `.tar.gz.asc` signature file from the [wasabiwallet.io](https://wasabiwallet.io) or the [tor hidden service](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion).
 
 ![](/DownloadTar.png)
@@ -61,7 +71,9 @@ Now install Wasabi with `sudo tar -pxzf Wasabi-X.X.X.tar.gz`, and run it with `.
 Checkout the main documentation for a [step-by-step guide](/using-wasabi/InstallPackage.html#other-linux).
 :::
 
-:::details How do I install Wasabi on Windows?
+:::details
+### How do I install Wasabi on Windows?
+
 [Download](/FAQ-Installation.md#where-can-i-download-wasabi) the most recent `.msi` package and the `.msi.asc` signature file from the [wasabiwallet.io](https://wasabiwallet.io) or the [tor hidden service](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion).
 
 ![](/DownloadWindows.png)
@@ -71,7 +83,9 @@ Now install Wasabi with double clicking the `.msi` file.
 Checkout the main documentation for a [step-by-step guide](/using-wasabi/InstallPackage.html#windows).
 :::
 
-:::details How do I install Wasabi on OSX?
+:::details
+### How do I install Wasabi on OSX?
+
 [Download](/FAQ-Installation.md#where-can-i-download-wasabi) the most recent `.dmg` package and the `.dmg.asc` signature file from the [wasabiwallet.io](https://wasabiwallet.io) or the [tor hidden service](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion).
 
 ![](/DownloadMac.png)
@@ -83,25 +97,33 @@ Checkout the main documentation for a [step-by-step guide](/using-wasabi/Install
 @[youtube](_Zmc54XYzBA)
 :::
 
-:::details How do I check the current version of Wasabi?
+:::details
+### How do I check the current version of Wasabi?
+
 In the GUI go to the top left menu `Help > About`, here you see the current version of your Wasabi.
 You can also verify in the command line by executing `wassabee --version`.
 Wasabi is cutting edge software, so it is well advised to stay up-to-date.
 :::
 
-:::details How do I know about a new version of Wasabi?
+:::details
+### How do I know about a new version of Wasabi?
+
 When a new version has been released, you'll see a notification in the bottom left status bar `New Version Available`.
 The [website](https://wasabiwallet.io) always links to the most recent build of the software.
 It will also be announced on [Twitter](https://twitter.com/wasabiwallet), [Reddit](https://old.reddit.com/r/WasabiWallet/), and [Telegram](https://t.me/WasabiWallet).
 :::
 
-:::details How do I securely upgrade Wasabi?
+:::details
+### How do I securely upgrade Wasabi?
+
 You can download the software build for the different operating systems on the main [website](https://wasabiwallet.io) or better over [Tor](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion).
 Make sure you also download the signatures of the build and verify them for [Adam Ficsor's public key](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt).
 For step by step instructions, follow [this guide](https://github.com/zkSNACKs/WalletWasabi/blob/master/WalletWasabi.Documentation/Guides/InstallInstructions.md) or [see this video](https://youtu.be/DUc9A76rwX4).
 :::
 
-:::details Do I need to install Tor separately?
+:::details
+### Do I need to install Tor separately?
+
 All Wasabi network traffic goes via Tor by default - no need to set up Tor yourself.
 If you do already have Tor, and it is running, then Wasabi will try to use that first.
 
@@ -111,13 +133,17 @@ In the first case, the coordinator would know the links between your inputs and 
 In the second case, if you happen to broadcast a transaction of yours to a full node that is spying on you, it will know the link between your transaction and your IP address.
 :::
 
-:::details Can I install Wasabi on TAILS?
+:::details
+### Can I install Wasabi on TAILS?
+
 Yes, just follow the [How do I install Wasabi on other Linux?](/FAQ-Installation.html#how-do-i-install-wasabi-on-other-linux) guide and remember to save/backup the wallet on the Persistence.
 :::
 
 ## Advanced Installation
 
-:::details How do I compile Wasabi from source?
+:::details
+### How do I compile Wasabi from source?
+
 A new version of Wasabi is released when ready, roughly once every #twoweeks.
 Yet in the meantime there are many commits to the latest master branch, not just bug fixes, but also new features and stability improvements.
 If you cannot wait until the next release, and you want to experience the most cutting-edge version of Wasabi, then you can [build the source code](/using-wasabi/BuildSourc.md).
@@ -130,7 +156,9 @@ To start Wasabi simply execute `dotnet run` from the `WalletWasabi.Gui` folder.
 You can update the master branch with `git pull`.
 :::
 
-:::details How can I verify the deterministic build?
+:::details
+### How can I verify the deterministic build?
+
 Wasabi has [reproducible and deterministic builds](/using-wasabi/DeterministicBuild.html), which means that you can verify that the compiled packages are from the [source code](https://github.com/zksnacks/walletwasabi).
 
 On Windows, you can verify this with `git diff --no-index win7-x64 "C:\Program Files\WasabiWallet".

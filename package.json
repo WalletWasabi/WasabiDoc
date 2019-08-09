@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "[Wasabi](https://wasabiwallet.io) is an open-source, non-custodial, privacy focused Bitcoin wallet for desktop. It implements trustless coin shuffling: [Schnorrian CoinJoin](https://github.com/nopara73/ZeroLink/).",
   "scripts": {
+    "prestart": "rm -rf docs/.vuepress/dist",
     "start": "vuepress dev docs",
     "build": "vuepress build docs",
     "deploy": "./deploy.sh"

@@ -13,8 +13,25 @@ module.exports = {
     "@vuepress/back-to-top",
     ["container", {
       type: "details",
-      before: title => `<details id="${slugify(title)}"><summary><h3><a href="#${slugify(title)}" aria-hidden="true" class="header-anchor">#</a> ${title}</h3></summary>`,
-      after: '</details>'
+      render (tokens, idx) {
+        const token = tokens[idx]
+
+        if (token.type === 'container_details_open') {
+          const next = tokens[idx + 1]
+          const match = token.info.trim().match(/^details\s+(.*)$/)
+          let title = match && match[1]
+          if (next.type === 'heading_open' && !title) {
+            const headNext = tokens[idx + 2]
+            title = headNext && headNext.content || ''
+          } else {
+            title = ''
+          }
+          const slug = slugify(title)
+          return `<details><summary><h3 id="${slug}"><a href="#${slug}" aria-hidden="true" class="header-anchor">#</a> ${title}</h3></summary>`
+        } else if (token.type === 'container_details_close') {
+          return '</details>'
+        }
+      }
     }],
   ],
   markdown: {
