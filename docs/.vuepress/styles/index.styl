@@ -197,10 +197,15 @@ body
 
     .custom-block
       background-color $codeBgColor
+      &.danger
+        color #c00
+        a
+          color #e63e3e
       &.warning
         color #c8af33
       @media (prefers-color-scheme: light)
-        &.tip
+        &.tip,
+        &.danger
           background-color #f3f5f7
         &.warning
           color #6b5900
