@@ -48,7 +48,7 @@ Most common questions answered with linked reference to the main documentation.
 [![All Contributors](https://img.shields.io/badge/all_contributors-27-orange.svg?style=flat-square)](#contributors)
 
 Just like the Wasabi wallet software, this documentation is libre and open source under the [MIT license](LICENSE).
-Not only do we appreciate the contribution of everyone, but we desperately need it!
+Not only do we appreciate everyone's contribution, but we desperately need it!
 
 If you have a question, [open an issue](https://github.com/zkSNACKs/WasabiDoc/issues) and if you know the answer, then [make a pull request](https://github.com/zkSNACKs/WasabiDoc/pulls).
 

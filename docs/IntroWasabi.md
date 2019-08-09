@@ -1,9 +1,12 @@
 # WasabiDoc
 
-[Wasabi](https://wasabiwallet.io) is an open-source, non-custodial, privacy focused Bitcoin wallet for desktop. It implements trustless coin shuffling: [Schnorrian CoinJoin](https://github.com/nopara73/ZeroLink/).
+[Wasabi Wallet](https://wasabiwallet.io) is an open-source, non-custodial, privacy focused Bitcoin wallet for desktop.
+It implements trustless coin shuffling: [Schnorrian CoinJoin](https://github.com/nopara73/ZeroLink/).
 
-This is the open source documentation repository of Wasabi Wallet, here you will find information about the nuances of privacy in Bitcoin, how Wasabi solves these difficult problems, and how you can use these tools to defend yourself.
-If you have a question that is not yet covered, please [open an issue](https://github.com/zkSNACKs/WasabiDoc/issues), if you have a good answer to a question, please [open a pull request](https://github.com/zkSNACKs/WasabiDoc/pulls).
+This is Wasabi Wallet's open source [documentation](https://docs.wasabiwallet.io) repository.
+Here you will find information about the nuances of privacy in Bitcoin, how Wasabi solves some of the existing problems, and how you can use this tool to defend yourself.
+If you have a question that is not yet covered, please [open an issue](https://github.com/zkSNACKs/WasabiDoc/issues).
+If you have an answer to a question, please [open a pull request](https://github.com/zkSNACKs/WasabiDoc/pulls).
 
 
 ## Basics
@@ -61,7 +64,7 @@ If you have a question that is not yet covered, please [open an issue](https://g
 - SegWit bech32 only
 - Labeling
 
-### Send 
+### Send
 - Coin selection
 - Cluster history
 - Transaction fee
