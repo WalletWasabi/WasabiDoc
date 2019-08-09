@@ -133,6 +133,14 @@ If the node is on the same computer, then it is connected automatically per defa
 You can also specify the local IP or tor hidden service of your remote full node.
 :::
 
+:::details
+### How do I know if the synchronization is finished?
+
+You know that tor is properly connected, that all the block filters and all the relevant blocks are downloaded when you see that the status bar is `Ready`.
+
+![](/StatusBar.png)
+:::
+
 ## Receive
 
 @[youtube](9i7CceIdFg4)
@@ -660,7 +668,6 @@ Wallet Manager
 Synchronization
 
 - How long does the initial, and a subsequent synchronization take?
-- How do I know if the synchronization is finished?
 
 Receive
 
