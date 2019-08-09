@@ -5,6 +5,7 @@
 
 ## The Privacy of Bitcoin
 
+:::details
 ### How is Bitcoin good in terms of privacy?
 
 Privacy in traditional banking is guaranteed by the institutions that make up the system, such as banks, credit card companies, and governments.
@@ -15,13 +16,15 @@ Instead, in Bitcoin pseudonyms protect your identity.
 In the Bitcoin ecosystem, everyone can see the history of every account balance, but they cannot see who controls an account.
 All addresses and transactions are recorded in Bitcoin’s publicly distributed database, the blockchain.
 The addresses do not have names or IP addresses attached to them, so it is not always possible to know which transaction belongs to which individual.
+:::
 
+:::details
 ### How is Bitcoin bad in terms of privacy?
 
 Bitcoin is by default a transparent system, in which every piece of information is available to the public.
 As such, every Bitcoin user requires some level of protection.
 Anyone with substantial wealth in Bitcoin would not want to advertise their funds to every person they transact with, for obvious reasons.
-But every time you spend just a tiny portion of your Bitcoin wallet, you reveal your wealth to the other party. 
+But every time you spend just a tiny portion of your Bitcoin wallet, you reveal your wealth to the other party.
 Doing that on the internet is like flashing large stacks of cash in a dark back alley, so obviously it’s not advisable!
 A criminal might see how much you have and decide to come after it.
 Distributing your wealth between several wallets and using a different address for each transaction is a common practice that prevents others from knowing how much Bitcoin you have.
@@ -44,10 +47,12 @@ This is why making lots of transactions, increases your anonymity in the Bitcoin
 Similarly, if you receive 0.5 bitcoin but want to spend 1 bitcoin, you need to own additional Bitcoin addresses with a combined value of at least 0.5 bitcoin in them.
 Again it’s a 50% guess, but now you have one extra publicly visible Bitcoin address.
 Having publicly visible Bitcoin addresses could make it easier to find out your identity.
+:::
 
 ## The Privacy of Tor
 
-### How does Tor protect my network-level privacy? 
+:::details
+### How does Tor protect my network-level privacy?
 
 When you make a Bitcoin transaction, you are essentially creating a message on your phone or computer and sending it to the Bitcoin network.
 Someone operating a large number of nodes in the Bitcoin network might be able to match some of your transactions to your IP address, then deanonymize your stack of bitcoin.
@@ -60,3 +65,4 @@ Route everything through Tor by default.
 
 It is also good practice to route your chats through the Tor network.
 You can also configure many cloud storage providers in this way.
+:::

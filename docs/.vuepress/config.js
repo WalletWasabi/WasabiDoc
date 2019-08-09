@@ -1,3 +1,4 @@
+const { slugify } = require('@vuepress/shared-utils')
 const customBlock = require('markdown-it-custom-block')
 const youtubeEmbed = path => `<div class="ytEmbed"><iframe src="https://www.youtube-nocookie.com/embed/${path}" frameborder="0" allow="autoplay;encrypted-media;picture-in-picture" allowfullscreen></iframe></div>`
 
@@ -9,7 +10,34 @@ module.exports = {
     ["link", { rel: "stylesheet", href: "https://fonts.googleapis.com/css?family=Inconsolata:400,700|Playfair+Display:700&display=swap" }]
   ],
   plugins: [
-    "@vuepress/back-to-top"
+    "@vuepress/back-to-top",
+    ["container", {
+      type: "details",
+      render (tokens, idx) {
+        const token = tokens[idx]
+        // turn details headline into summary
+        if (token.type === 'container_details_open') {
+          const next = tokens[idx + 1]
+          const match = token.info.trim().match(/^details\s+(.*)$/)
+          let title = match && match[1]
+          if (next.type === 'heading_open' && !title) {
+            const headContent = tokens[idx + 2]
+            const headClose = tokens[idx + 3]
+            // hide headline and its contents
+            next.hidden = headClose.hidden = headContent.hidden = true
+            headContent.children = []
+            // extract title
+            title = headContent.content || ''
+          } else {
+            title = ''
+          }
+          const slug = slugify(title)
+          return `<details id="${slug}"><summary><a href="#${slug}" aria-hidden="true" class="header-anchor">#</a> ${title}</summary>`
+        } else if (token.type === 'container_details_close') {
+          return '</details>'
+        }
+      }
+    }]
   ],
   markdown: {
     extendMarkdown (md) {

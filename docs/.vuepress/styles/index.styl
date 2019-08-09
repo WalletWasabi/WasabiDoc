@@ -49,9 +49,28 @@ body
 
   h3
   h4
+  summary
     text-transform uppercase
     letter-spacing 0.05rem
     font-weight 700
+
+  details
+    margin -4rem 0 0 0
+    &[open]
+      > :last-child
+        margin-bottom 3rem
+
+  summary
+    margin-top (0.5rem - $navbarHeight)
+    padding-top ($navbarHeight + 1rem)
+    margin-bottom 0
+    &:first-child
+      margin-top -1.5rem
+      margin-bottom 1rem
+    &:hover .header-anchor
+      opacity 1
+    &::marker
+      color $accentColor
 
   // home
   .home
@@ -143,7 +162,6 @@ body
 
   // content
   .page
-
     a:not(.nav-link)
       text-decoration none
       color $accentColor
@@ -213,7 +231,7 @@ body
 
     .ytEmbed
       position relative
-      margin-bottom 2rem
+      margin 1rem 0 2rem
       height 0
       overflow hidden
       max-width 100%
