@@ -29,6 +29,30 @@ You have successfully setup your wallet when you click `I wrote down my Recovery
 
 ![](/WalletManagerRecoveryWords.png)
 
+### How do I back up my mnemonic words?
+:::tip
+Always back up your encrypted private keys!
+:::
+
+Wasabi uses [BIP 39: mnemonic code for generating deterministic keys](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) to enable easy backups of all private keys in the wallet.
+The mnemonic is displayed as 12 recovery words that are only shown once during the wallet generation.
+
+![](/WalletManagerRecoveryWords.png)
+
+But these words are encrypted with [BIP 38: password-protected private key](https://github.com/bitcoin/bips/blob/master/bip-0038.mediawiki), so that the computer stores the private key in cyphertext and not cleartext.
+
+:::danger
+In order to restore a wallet from backup, you need BOTH the mnemonic words AND the password!
+:::
+
+It is a good idea to keep the two in separate analog backups, like a laminated paper written with pencil.
+In order to defend against nature destroying fragile paper, you can consider to stamp the words into metal.
+Use two different backups and locations for the mnemonic and password, because whoever has both [including a physical attacker] has full access to your sats.
+Find a secure physical location to store the backups, maybe home safe, or an expert security deposit box.
+
+Please see [this great guide](https://github.com/6102bitcoin/FAQ/blob/master/seed.md#3-Storing-your-Seed) on how to properly store your seed.
+
+
 ## Synchronization
 
 @[youtube](qguwAvA5Fx4)
@@ -352,7 +376,6 @@ So consolidating in a CoinJoin is better, but it might still reveal the common o
 
 
 Wallet Manager
-- How do I back up my mnemonic seed?
 - What password should I use?
 - Can I spend my bitcoin without the password?
 - How do I backup my wallet?
