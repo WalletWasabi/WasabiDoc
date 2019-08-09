@@ -70,6 +70,24 @@ Find a secure physical location to store the backups, maybe home safe, or an exp
 Please see [this great guide](https://github.com/6102bitcoin/FAQ/blob/master/seed.md#3-Storing-your-Seed) on how to properly store your seed.
 ::::
 
+::::details
+### Can I spend my bitcoin without the password?
+
+:::danger
+NO!!! Without knowledge of your password, even when you have the wallet file and recovery words, you can NOT spend your bitcoin!
+:::
+
+When creating a new wallet, after labeling it properly, the next step is to select a long and random password.
+This is used to encrypt the private key on your computer, which has a insecure operating system and is connected to the internet.
+Every time you want to spend your coins from Wasabi, you MUST provide this password.
+Also, the same password is used to encrypt the mnemonic recovery words that you must backup in the next step of wallet creation.
+So even when you have these words securely engraved on metal, without the password, you cannot restore the backup of your wallet.
+
+:::tip
+Always backup your encrypted mnemonic recovery words, and your password in two separate secure locations.
+:::
+::::
+
 ## Synchronization
 
 @[youtube](qguwAvA5Fx4)
@@ -361,20 +379,20 @@ Wasabi is saving on mining fees by setting a confirmation target of roughly 12 h
 
 @[youtube](sM2uhyROpAQ)
 
-:::details
+::::details
 ### What hardware wallets does Wasabi support?
 
 The answer is simple:
 
-::::tip
+:::tip
 All of them!
-::::
+:::
 
 This is thanks to awesome Hardware Wallet Interface of Bitcoin core.
 
 However, not all of the many hardware wallets have been tested and reviewed by the developers.
 Everything seems to work fine with the ColdCard, Trezor, Ledger and KeepKey.
-:::
+::::
 
 :::details
 ### Why does Wasabi use the Hardware Wallet Interface?
@@ -562,11 +580,14 @@ So consolidating in a CoinJoin is better, but it might still reveal the common o
 - The ultimate solution is to 'close the loop' i.e. spend a change coin without merging it with other coins, do not generate it in the first place by sending whole coins.
 :::
 
-## Further Questions
+---
+
+---
+
+#### Unanswered Questions
 
 Wallet Manager
 
-- Can I spend my bitcoin without the password?
 - How do I backup my wallet?
 - What's up with the Chinese characters?
 
