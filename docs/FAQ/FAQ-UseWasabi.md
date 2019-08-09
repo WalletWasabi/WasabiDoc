@@ -599,6 +599,21 @@ Now click ```Broadcast Transaction``` to send it off over Tor to a random Bitcoi
 You can't do that directly, so send them (in small portions >0.1BTC if needed) to a ''hot'' Wasabi Wallet for CoinJoin and then send them back to a new address on the Hardware wallet for cold-storage.
 :::
 
+## History
+
+:::details
+### How can I check the transactions history?
+
+In the `History` tab you see a list of all the transactions made with this Wasabi wallet.
+It includes the value being sent out of the wallet, meaning the payment to an external address and the fee.
+If the number is red, then you have sent sats out of the wallet - if the number is green, then you have received and stacked sats.
+A coin join is a payment within the same wallet, thus it only shows the coordination and mining fee leaving the wallet.
+You also have a list of all the transaction identification numbers for detailed reference.
+The check mark indicates that the transaction is confirmed in the longest proof-of-work timechain.
+
+![](/History.png)
+:::
+
 ## Settings
 
 :::details
@@ -732,7 +747,6 @@ Send
 
 History
 
-- How can I check the history of transactions?
 - Can I export a list of transaction?
 
 CoinJoin
