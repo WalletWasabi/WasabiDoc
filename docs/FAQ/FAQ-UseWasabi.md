@@ -167,6 +167,14 @@ So make sure that the coins to got into the right hands.
 :::
 
 :::details
+### Can I send to many addresses?
+
+Unfortunately pay to many is not not yet implemented.
+But this is on the [ToDo list](/building-wasabi/ToDo.md)!
+Coming in #twoweeks.
+:::
+
+:::details
 ### Why does Wasabi choose a new random node every time I send a transaction?
 
 When you broadcast a transaction from a full node, that transaction is flooded into the network.
@@ -547,7 +555,6 @@ Send
 
 - How do I select coins for spending?
 - What is the cluster history?
-- Can I send to many addresses?
 - What fee should I select?
 - Can I see the fee in Satoshis per byte?
 - How is the tansaction broadcasted?
