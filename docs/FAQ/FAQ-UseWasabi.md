@@ -224,6 +224,27 @@ When you want to subsequently send another transaction on the network, Wasabi de
 This reduces the risk of a passive bystander being able to link two transactions together that appear from the same location.
 :::
 
+::::details
+### What fee should I select?
+
+Wasabi uses the `[smartfee](https://bitcointechtalk.com/an-introduction-to-bitcoin-core-fee-estimation-27920880ad0)` estimation algorithm provided by bitcoind.
+This integrates both data from recent blocks, as well as the local mempool to estimate the current and future demand for blockspace.
+The lower the fee is, the longer the estimated wait; and the higher the fee, the faster the confirmation will come.
+There are several different confidence levels, each of them gives an educated guess how soon the transaction will confirm.
+But the the provided time frames are only a rough estimation, and not at all a precise metric.
+
+Because confirmation fee estimation is more an art than a science, you can also set the fee manually.
+Then you can go after your gut feeling, [mempool chart analysis](https://jochen-hoenicke.de/queue/#0,24h), or just putting the minimum of 1 sat/vByte.
+
+For a transaction to yourself, for example from your hot CoinJoin wallet to your hardware wallet, you don't need to have fast confirmation, so you can set a slow fee.
+But to send from the hot CoinJoin wallet to the coffee shop, you might want to get faster confirmation, thus paying a higher fee.
+This really depends on your own time preference in every unique moment.
+
+:::tip Remember
+These sats are precious, so don't overpay on fees!
+:::
+::::
+
 ## CoinJoin
 
 @[youtube](ypfZT9GlqTw)
@@ -608,7 +629,6 @@ Send
 
 - How do I select coins for spending?
 - What is the cluster history?
-- What fee should I select?
 - Can I see the fee in Satoshis per byte?
 - How is the tansaction broadcasted?
 
