@@ -71,6 +71,20 @@ Please see [this great guide](https://github.com/6102bitcoin/FAQ/blob/master/see
 ::::
 
 ::::details
+### How do I backup my wallet file?
+
+Although you can backup your private keys with the mnemonic words and password, this is only a last resort recovery.
+If you want to also secure your address labels, the anonset and additional metadata, then you can do a digital backup.
+Simply copy the `.walletwasabi/client/WalletBackups` folder with the `wallet.json` files onto suitable hardware, for example an encrypted USB stick.
+Note that this file has the encrypted private keys, meaning that you only need the password to spend the bitcoin.
+This also contains the unencrypted extended public keys and address labels, meaning that it completely links all the coins, both pre- and post mix, with clear proof. 
+
+:::tip
+The wallet backup is sensitive, in terms of privacy, bur not critical in terms of loss of funds. So it is good advice to encrypt this wallet file.
+:::
+::::
+
+::::details
 ### Can I spend my bitcoin without the password?
 
 :::danger
@@ -674,10 +688,6 @@ So consolidating in a CoinJoin is better, but it might still reveal the common o
 ---
 
 #### Unanswered Questions
-
-Wallet Manager
-
-- How do I backup my wallet?
 
 Synchronization
 
