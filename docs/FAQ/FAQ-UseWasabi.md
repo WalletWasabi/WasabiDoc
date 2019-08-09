@@ -112,6 +112,16 @@ After a coin has been sent to this address, it is removed from the GUI, this is 
 :::
 
 :::details
+### How can I change the label of my address?
+You can change the label of your receive address in the right click menu by clicking `Change Label`, then type in the new label.
+This is useful for when you have generated a receiving address with a specific label, but then the cause for receiving is no longer present.
+But take care with whom you have shared this address, because if you send it to several people, they might all send many coins to the same address.
+This is very bad for your privacy because of [address reuse](/using-wasabi/AddressReuse.md), and it confuses you with the labeling of each unique coin.
+
+![](/ReceiveAddressMenu.png)
+:::
+
+:::details
 ### Why does Wasabi only use SegWit bech32 addresses?
 
 Wasabi generates Bech32 addresses only, also known as bc1 addresses or native SegWit addresses.
@@ -546,7 +556,6 @@ Synchronization
 Receive
 
 - Why do I have to label my address?
-- How can I change the label of my address?
 - Where can I find my public key?
 - Where can I find a QR code of the address?
 - Are there privacy concerns regarding whom I send my address?
