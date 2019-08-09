@@ -362,6 +362,21 @@ Wasabi is saving on mining fees by setting a confirmation target of roughly 12 h
 @[youtube](sM2uhyROpAQ)
 
 :::details
+### What hardware wallets does Wasabi support?
+
+The answer is simple:
+
+::::tip
+All of them!
+::::
+
+This is thanks to awesome Hardware Wallet Interface of Bitcoin core.
+
+However, not all of the many hardware wallets have been tested and reviewed by the developers.
+Everything seems to work fine with the ColdCard, Trezor, Ledger and KeepKey.
+:::
+
+:::details
 ### Why does Wasabi use the Hardware Wallet Interface?
 Wasabi uses the [Bitcoin Core Hardware Wallet Interface [HWI]](https://github.com/bitcoin-core/HWI), a python library tool for proper integration of off-line signing devices.
 It provides a standard way for any software wallet to communicate with any hardware wallet without needing any device specific drivers.
@@ -591,7 +606,6 @@ CoinJoin
 
 Hardware Wallet
 
-- What specific hardware wallets does Wasabi support?
 - How can I type in the PIN of my Trezor One?
 - How can I manage the passphrase of my Trezor T?
 - Can I use the passphrase of my Trezor One?
