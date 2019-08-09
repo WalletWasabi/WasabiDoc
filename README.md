@@ -7,11 +7,11 @@ This is Wasabi Wallet's open source [documentation](https://docs.wasabiwallet.io
 Here you will find information about the nuances of privacy in Bitcoin, how Wasabi solves some of the existing problems, and how you can use this tool to defend yourself.
 
 If you would like to support the project by educating other people, this documentation repository is the right place for your efforts!
-If you have a question that is not yet covered, please [open an issue](https://github.com/zkSNACKs/WasabiDoc/issues).
+If you have a question regarding the documentation, please [open an issue](https://github.com/zkSNACKs/WasabiDoc/issues).
 If you have an answer to a question, please [open a pull request](https://github.com/zkSNACKs/WasabiDoc/pulls).
 For more details on how to contribute, see the [contribution checklist](https://docs.wasabiwallet.io/building-wasabi/ContributionChecklist.html) or the [to-do](https://docs.wasabiwallet.io/building-wasabi/ToDo.html) list.
 
-The developers repository can be found [here](https://github.com/zkSNACKs/WalletWasabi).
+If you have a bug regarding the software specifically, please [open an issue](https://github.com/zkSNACKs/WalletWasabi/issues/new/choose) in Wasabi Wallet's [main repository](https://github.com/zkSNACKs/WalletWasabi).
 
 ---
 
@@ -49,8 +49,6 @@ Most common questions answered with linked reference to the main documentation.
 
 Just like the Wasabi wallet software, this documentation is libre and open source under the [MIT license](LICENSE).
 Not only do we appreciate everyone's contribution, but we desperately need it!
-
-If you have a question, [open an issue](https://github.com/zkSNACKs/WasabiDoc/issues) and if you know the answer, then [make a pull request](https://github.com/zkSNACKs/WasabiDoc/pulls).
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 

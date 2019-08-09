@@ -5,7 +5,7 @@ It implements trustless coin shuffling: [Schnorrian CoinJoin](https://github.com
 
 This is Wasabi Wallet's open source [documentation](https://docs.wasabiwallet.io) repository.
 Here you will find information about the nuances of privacy in Bitcoin, how Wasabi solves some of the existing problems, and how you can use this tool to defend yourself.
-If you have a question that is not yet covered, please [open an issue](https://github.com/zkSNACKs/WasabiDoc/issues).
+If you have a question regarding the documentation, please [open an issue](https://github.com/zkSNACKs/WasabiDoc/issues).
 If you have an answer to a question, please [open a pull request](https://github.com/zkSNACKs/WasabiDoc/pulls).
 
 
