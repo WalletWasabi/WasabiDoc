@@ -193,14 +193,14 @@ All an observer knows is that a specific anon set output coin is owned by one of
 Your Wasabi software has limited information on what the anonymity set should be, so the anonymity set that the software presents you is just an estimation, not an accurate value.
 With Wasabi we are trying to do lower estimations, rather than higher ones.
 
-### Can I mix more than the round's minimum?
+### What are the denominations created in one round?
 
-Yes.
-
-In a round with a ~0.1 BTC minimum, you could mix ~0.3 BTC and get a ~0.1 BTC output & a ~ 0.2 BTC output.
-
-Similarly, with a 0.7 BTC input you would expect the following outputs: ~0.1, ~0.2, ~0.4 BTC.
-The possible values of equal output that can be created are 0.1 x 2^n where n is a positive integer (or zero).
+In every CoinJoin round the minimum to register is roughly 0.1 BTC, you need to have at least this much to participate.
+Within the same transaction, Wasabi also efficiently generates larger value zero link CoinJoin denominatins.
+They are 0.2, 0.4, 0.8, 1.6, 3.2, and so on... 
+The possible values of equal output that can be created are 0.1 x 2^n where n is a positive integer.
+This is the mathematically most efficient way to get anonymity set for any amount you desire.
+For example, with a 0.7 BTC input you would expect the following outputs: ~0.1, ~0.2, ~0.4 BTC.
 
 @[youtube](PKtxzSLPWFU)
 
@@ -284,6 +284,13 @@ Wasabi is saving on mining fees by setting a confirmation target of roughly 12 h
 @[youtube](kocEpndQcsg)
 
 @[youtube](sM2uhyROpAQ)
+
+### Why does Wasabi use the Hardware Wallet Interface?
+Wasabi uses the [Bitcoin Core Hardware Wallet Interface [HWI]](https://github.com/bitcoin-core/HWI), a python library tool for proper integration of off-line signing devices.
+It provides a standard way for any software wallet to communicate with any hardware wallet without needing any device specific drivers.
+HWI was developed and carefully reviewed over several years, with outstanding contributions by especially [Andre Chow](https://github.com/achow101).
+Wasabi implements C# code that executes the HWI tool.
+Wasabi uses this powerful tool because there are no other dependencies necessary to support all the existing and future hardware wallets.
 
 ### How can I generate a Wasabi skeleton wallet file in ColdCard?
 On the ColdCard (Mk2, firmware 2.1.1 and up) you go to ```>Advanced>MicrcoSD Card>Wasabi Wallet``` and it will save a skeleton json-file to the MicroSD card in the hardware wallet.
@@ -457,14 +464,12 @@ History
 
 CoinJoin
 - How can I select UTXOs for CoinJoin?
-- What are the denominations created in one round?
 - How much anonymity set do I need?
 - How many rounds should I CoinJoin?
 - How does my wallet communicate with the Wasabi coordinator server?
 - Why are the denominations such an odd number?
 
 Hardware Wallet
-- Why does Wasabi use the Hardware Wallet Interface?
 - What specific hardware wallets does Wasabi support?
 - How can I type in the PIN of my Trezor One?
 - How can I manage the passphrase of my Trezor T?
