@@ -170,6 +170,15 @@ You know that tor is properly connected, that all the block filters and all the 
 ![](/StatusBar.png)
 :::
 
+:::details
+### How long does the initial, and a subsequent synchronization take?
+
+It usually only takes a couple seconds to scan the block filters, download and parse the blocks.
+However, for large wallets with a many transactions, this synchronization can take up to several minutes.
+We are constantly improving the speed and reliability of the loading process.
+Yet for especially old wallets, it might be worth considering to start a new wallet with a shorter transaction history.
+:::
+
 ## Receive
 
 @[youtube](9i7CceIdFg4)
@@ -713,10 +722,6 @@ So consolidating in a CoinJoin is better, but it might still reveal the common o
 ---
 
 #### Unanswered Questions
-
-Synchronization
-
-- How long does the initial, and a subsequent synchronization take?
 
 Send
 
