@@ -157,6 +157,16 @@ Alice can protect herself against this by using a CoinJoin UTXO, because now Bob
 :::
 
 :::details
+### How do I set a destination address?
+
+In the `Send` tab, there is a text box for the `Address` right under the coin list.
+If you have an address in the clipboard, then it is automatically pasted when you click on the box.
+You can also type in the bech32 address manually, there is a checksum to make help you find typos.
+Be careful and double check the address, there is no way to revert this transaction and change the destination.
+So make sure that the coins to got into the right hands.
+:::
+
+:::details
 ### Why does Wasabi choose a new random node every time I send a transaction?
 
 When you broadcast a transaction from a full node, that transaction is flooded into the network.
@@ -537,7 +547,6 @@ Send
 
 - How do I select coins for spending?
 - What is the cluster history?
-- How do I set a destination address?
 - Can I send to many addresses?
 - What fee should I select?
 - Can I see the fee in Satoshis per byte?
