@@ -3,7 +3,7 @@
 This is how you can safely eat cold Wasabi, or store your coins on a hardware wallet after one or more rounds of CoinJoin using Wasabi Wallet.
 Both a 'Hot'(CoinJoin) and a 'Cold'(Storage) Wasabi Wallet instances will be running side-by-side, label them accordingly so you don't mix them up.
 
-![Wasabi_EatCold_flow.png](/Wasabi_EatCold_flow.png)
+![](/docs/.vuepress/public/ColdWasabi1.png)
 
 ## Detailed walkthrough
 
@@ -38,4 +38,4 @@ You are now eating Cold Wasabi!
 When you want to safely spend some of those Cold-Wasabi funds from the hardware wallet, you could use the Partially Signed Bitcoin Transaction for offline/airgapped signing of transactions for an extra layer of defence.
 
 ## Workflow diagram
-![Wasabi_PSBT_flow.png](/Wasabi_PSBT_flow.png)
+![](/docs/.vuepress/public/ColdWasabi2.png)
