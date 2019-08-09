@@ -121,6 +121,18 @@ With the block filters, you trust that the Wasabi server gives you the correct f
 You also do not have proof that the block you download from a P2P node is actually in the valid chain, but you can verify the proof of work in the block header.
 ::::
 
+:::details
+### How does Wasabi download a relevant block?
+
+Wasabi uses BIP 158 block filter to find out that a specific block contains a transaction of this wallet.
+If yes, then by default Wasabi connects to a random Bitcoin peer to peer full node over tor, and requests only to download this block.
+For each block, it generates a new and separate tor identity.
+
+If you are running your own node, then you can pull this block directly from the timechain that you have fully verified your self.
+If the node is on the same computer, then it is connected automatically per default.
+You can also specify the local IP or tor hidden service of your remote full node.
+:::
+
 ## Receive
 
 @[youtube](9i7CceIdFg4)
@@ -647,7 +659,6 @@ Wallet Manager
 
 Synchronization
 
-- How does Wasabi download a relevant block?
 - How long does the initial, and a subsequent synchronization take?
 - How do I know if the synchronization is finished?
 
