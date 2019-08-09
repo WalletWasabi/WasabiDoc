@@ -75,7 +75,18 @@ You can easily generate and store many billions of private keys and addresses in
 This is what is used in Wasabi, you have on mnemonic backup, and unlimited numbers of new addresses.
 Everytime you a coin is received, then the address is removed from the GUI so that you are not tempted to use it again.
 
-Remember: ***NEVER RE-USE ADDRESSES***
+:::danger
+**NEVER RE-USE ADDRESSES**
+:::
+
+### How do I generate a new receiving address?
+You can generate a new bech32 address in the `Receive` tab of Wasabi Wallet.
+First you must set a label for it, so that you later know who has send you bitcoin to this address.
+Be precise in the reason for the payment, labeling is an important part of good [coin control](/FAQ-UseWasabi.md#why-is-coin-control-so-important) privacy best practices.
+Then you can click on `Generate` which will now show you the address, and immediately copy it to the clipboard.
+After a coin has been sent to this address, it is removed from the GUI, this is a good feature to help protect you against [address reuse](/FAQ-UseWasabi.md#why-is-it-bad-to-re-use-addresses).
+
+![](/ReceiveLabelingRequired.png)
 
 ### Why does Wasabi only use SegWit bech32 addresses?
 Wasabi generates Bech32 addresses only, also known as bc1 addresses or native SegWit addresses.
@@ -412,7 +423,6 @@ Synchronization
 - How do I know if the synchronization is finished?
 
 Receive
-- How do I generate a new receiving address?
 - Why do I have to label my address?
 - How can I change the label of my address?
 - Where can I find my public key?
