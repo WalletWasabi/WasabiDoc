@@ -208,6 +208,17 @@ After a coin has been sent to this address, it is removed from the GUI, this is 
 :::
 
 :::details
+### Why do I have to label my address?
+
+Bitcoin addresses look like cyphertext, they are not easily remembered and it's not clear how they were used previously.
+Thus when you do not label all your transactions, then there is no meta-data for you to understand the context of that coin.
+When you clearly label a receiving address, then later when spending this coin, you know where it came from.
+This helps you to judge weather there are privacy concerns when sending a specific coin to some specific receiver.
+
+![](/ReceiveLabelingRequired.png)
+:::
+
+:::details
 ### How can I change the label of my address?
 You can change the label of your receive address in the right click menu by clicking `Change Label`, then type in the new label.
 This is useful for when you have generated a receiving address with a specific label, but then the cause for receiving is no longer present.
@@ -695,8 +706,6 @@ Synchronization
 
 Receive
 
-- Why do I have to label my address?
-- Where can I find a QR code of the address?
 - Are there privacy concerns regarding whom I send my address?
 
 Send
