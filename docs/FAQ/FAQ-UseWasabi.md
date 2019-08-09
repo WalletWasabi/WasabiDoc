@@ -91,6 +91,14 @@ Be careful, if you send all your coins from an old wallet to a new wallet (from 
 
 @[youtube](AdmlM-Qvco0)
 
+### What are coins?
+Bitcoin uses a system of inputs and outputs to keep track who owns how many sats.
+Every transaction specifies one or more inputs, the chunk of bitcoin being spend, and one or more outputs, the destination of who receives the bitcoin.
+A coin is also called an unspent transaction output UTXO, meaning that this output has not been used as the input of a new transaction - it is yet to be spend.
+In order to spend an UTXO, the valid signature and script has to be provided in the transaction.
+This ensures that only with knowledge of the correct private key can this coin be send to a new address.
+This chain of links between inputs being spent and outputs being generated is verified by every full node, and stored on the timechain.
+
 ### Why does Wasabi choose a new random node every time I send a transaction?
 
 When you broadcast a transaction from a full node, that transaction is flooded into the network.
@@ -396,7 +404,6 @@ Receive
 - Are there privacy concerns regarding whom I send my address?
 
 Send
-- What are coins?
 - Why is coin control so important?
 - How do I select coins for spending?
 - What is the cluster history?
