@@ -1,7 +1,22 @@
 # General Bitcoin Privacy
-- I have nothing to hide, do I still need financial privacy?
-- Why is it important to use a new address for every payment?
-- Why is it important for my privacy to run a full node?
+
+## Why Privacy matters
+
+::::details
+### I have nothing to hide, do I still need financial privacy?
+
+What did you say to your spouse in bed last night?
+How much money did you earn last month?
+What websites have you visited yesterday?
+
+:::tip
+It's not that I have nothing to hide, it's that I have nothing to share.
+:::
+
+There are many tasks in everyday life that are simply non of your business.
+Knowledge you choose not to share with others, things you only tell one individual, actions that you do while nobody is watching.
+How much money you earn, and where you spend it, is only your business, and of no concern to most other individuals.
+::::
 
 ## The Privacy of Bitcoin
 
@@ -66,3 +81,12 @@ Route everything through Tor by default.
 It is also good practice to route your chats through the Tor network.
 You can also configure many cloud storage providers in this way.
 :::
+
+---
+
+---
+
+#### Unanswered Questions
+
+- Why is it important to use a new address for every payment?
+- Why is it important for my privacy to run a full node?
