@@ -675,6 +675,20 @@ Remember that you pay a fee proportional to the Anonymity Set.
 @[youtube](gWo2RAkIVrE)
 :::
 
+:::details
+### What is the dust threshold?
+
+Dust can mean [a lot of things](https://bitcoin.stackexchange.com/questions/10986/what-is-meant-by-bitcoin-dust), depending how you look at it.
+It can be a non economical inputs, that is an UTXO that has less value then the fees it would cost to spend this coin.
+A dust attack is actually about [forced address reuse](https://en.bitcoin.it/Privacy#Forced_address_reuse), the malicious actor sends very small amounts into old addresses and consolidation of these dust UTXOs can link several coins in a wallet cluster.
+
+Specifically in the context of Wasabi, with the dust threshold settings you can limit the value of coins shown in the GUI.
+When you set it to `0.0000 1000 bitcoin`, and when you receive a coin worth `0.0000 0300 bitcoin`, then this coin will not be shown in the coin list.
+
+![](/SettingsDustThreshold.png)
+:::
+
+
 ## Coin Control Best Practices
 
 @[youtube](iyJ81JRvLQk)
