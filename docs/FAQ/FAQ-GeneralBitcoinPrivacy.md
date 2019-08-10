@@ -64,6 +64,19 @@ Again it’s a 50% guess, but now you have one extra publicly visible Bitcoin ad
 Having publicly visible Bitcoin addresses could make it easier to find out your identity.
 :::
 
+::::details
+### Why is it important to run a full node?
+
+:::tip
+not your node ~ not your rules
+:::
+
+When you download and install [bitcoind](https://github.com/bitcoin/bitcoin) then you define the precise rules of your monetary system.
+Then you call out to other nodes on the internet, and only connect to the peers who have agreed to play by the same rules.
+All those who break your own rules, you simply disconnect and ignore.
+Your full node defines, verifies and enforces the sound money you use to store your value.
+::::
+
 ## The Privacy of Tor
 
 :::details
@@ -89,4 +102,3 @@ You can also configure many cloud storage providers in this way.
 #### Unanswered Questions
 
 - Why is it important to use a new address for every payment?
-- Why is it important for my privacy to run a full node?
