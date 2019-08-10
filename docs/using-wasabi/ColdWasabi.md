@@ -19,7 +19,7 @@ Now you are set up for using the CoinJoin function with the "hot" Wasabi Wallet 
 
 This is fine for small amounts of bitcoin, but not for larger bitcoin holdings.
 That is where "Cold" hardware wallet storage comes in!
-So after the CoinJoin you might want to send some of those coins back to the hardware wallet, but not expose those addresses to the central servers of the Hardware Wallet company or some sneaky peaky Electrum Wallet spies...
+So after the CoinJoin you might want to send some of those coins back to the hardware wallet, but not expose those addresses to the central servers of the hardware wallet company or some sneaky peaky Electrum Wallet spies...
 
 5. Connect your hardware wallet device (for the PSBT-protocol use a MicroSD card instead) 
 
@@ -32,7 +32,7 @@ For hardware wallet related questions see: [FAQ-UseWasabi](/docs/FAQ/FAQ-UseWasa
 7. `Load Wallet` to import the xpub or Public Key (used to generate all receive addresses)
 
 8. Go to Receive tab and Generate Receive Address, send the mixed coin (don't combine all UTXO's/coins in a single address! 
-this hurts your anon-set badly) from your "Hot" Wasabi wallet to this "Cold" Wasabi Wallet.
+this hurts your anon-set badly) from your "Hot" Wasabi Wallet to this "Cold" Wasabi Wallet.
 
 おめでとうございます!
 You are now eating Cold Wasabi!
