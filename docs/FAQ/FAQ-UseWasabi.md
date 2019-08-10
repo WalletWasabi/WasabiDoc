@@ -688,6 +688,15 @@ When you set it to `0.0000 1000 bitcoin`, and when you receive a coin worth `0.0
 ![](/SettingsDustThreshold.png)
 :::
 
+:::details
+### Where can I find the logs?
+
+In the top left menu `File > Open` you can see there are several logs available.
+The `Log File` shows you the general information about Wasabi wallet.
+The `Tor Log File` shows the Tor specific logs.
+![](/MenuFileOpen.png)
+:::
+
 
 ## Coin Control Best Practices
 
