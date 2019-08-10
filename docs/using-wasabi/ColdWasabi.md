@@ -7,29 +7,32 @@ Both a 'Hot'(CoinJoin) and a 'Cold'(Storage) Wasabi Wallet instances will be run
 
 ## Detailed walkthrough
 
-1. Create new Hot-Wasabi wallet, see: [FAQ-UseWasabi](/docs/FAQ/FAQ-UseWasabi.md#how-do-i-generate-a-new-wallet)
+1. Create a new Hot-Wasabi wallet
 
-Now your set up for using the "Hot" Wasabi function called CoinJoin, with a wallet that holds the encrypted keys on an internet connected computer.
+2. Generate a new Receive address
 
-2. Generate new Receive address
+Now you are set up for using the CoinJoin function with the "hot" Wasabi Wallet that holds the encrypted keys on an internet connected computer.
 
-3. Send coins you want to anonymize to "Hot" Wasabi wallet
+3. Send coins you want to anonymize to the "Hot" Wasabi Wallet
 
 4. CoinJoin!
 
-This is fine for small amounts of bitcoin, but not your larger bitcoin holdings, that is where "Cold" Hardware Wallet storage comes in!
-So after CoinJoin you might want to send some of those coins back to the Hardware Wallet, but not expose those addresses to the central servers of Ledger HQ or some sneaky peaky Electrum Wallet spies...
+This is fine for small amounts of bitcoin, but not for larger bitcoin holdings.
+That is where "Cold" Hardware Wallet storage comes in!
+So after the CoinJoin you might want to send some of those coins back to the Hardware Wallet, but not expose those addresses to the central servers of LedgerHQ or some sneaky peaky Electrum Wallet spies...
 
-5. Open another Wasabi Wallet instance, select "Hardware Wallet" to find your connected device.
+5. Connect your Hardware wallet device (for the PSBT-protocol use a MicroSD card instead) 
 
-*You will need to enter a PIN and open the Bitcoin app on a Ledger Nano S
+6. Open another Wasabi Wallet instance, select "Hardware Wallet" to find your connected device.
+
+*You will need to enter a PIN and unlock the Hardware wallet*
 
 For Hardware-wallet related questions see: [FAQ-UseWasabi](/docs/FAQ/FAQ-UseWasabi.md#hardware-wallet)
 
-6. Load Wallet to import the xpub or Public Key (used to generate all receive addresses)
+7. Load Wallet to import the xpub or Public Key (used to generate all receive addresses)
 
-7. Go to Receive tab and Generate Receive Address, send the mixed coin (don't combine all UTXO/coins in a single address! 
-this hurts your anon-set badly) from your "Hot" Wasabi wallet to this "Cold" Wasabi address.
+8. Go to Receive tab and Generate Receive Address, send the mixed coin (don't combine all UTXO's/coins in a single address! 
+this hurts your anon-set badly) from your "Hot" Wasabi wallet to this "Cold" Wasabi Wallet.
 
 おめでとうございます!
 You are now eating Cold Wasabi!
