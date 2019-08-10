@@ -7,7 +7,7 @@ Both a 'Hot'(CoinJoin) and a 'Cold'(Storage) Wasabi Wallet instances will be run
 
 ## Detailed walkthrough
 
-1. Create a new Hot-Wasabi wallet
+1. Create a new Hot-Wasabi Wallet
 
 2. Generate a new Receive address
 
@@ -18,18 +18,18 @@ Now you are set up for using the CoinJoin function with the "hot" Wasabi Wallet 
 4. CoinJoin!
 
 This is fine for small amounts of bitcoin, but not for larger bitcoin holdings.
-That is where "Cold" Hardware Wallet storage comes in!
-So after the CoinJoin you might want to send some of those coins back to the Hardware Wallet, but not expose those addresses to the central servers of the Hardware Wallet company or some sneaky peaky Electrum Wallet spies...
+That is where "Cold" hardware wallet storage comes in!
+So after the CoinJoin you might want to send some of those coins back to the hardware wallet, but not expose those addresses to the central servers of the Hardware Wallet company or some sneaky peaky Electrum Wallet spies...
 
-5. Connect your Hardware wallet device (for the PSBT-protocol use a MicroSD card instead) 
+5. Connect your hardware wallet device (for the PSBT-protocol use a MicroSD card instead) 
 
-6. Open another Wasabi Wallet instance, select "Hardware Wallet" to find your connected device.
+6. Open another Wasabi Wallet instance, select `Hardware Wallet` to find your connected device.
 
-*You will need to enter a PIN and unlock the Hardware wallet*
+*You will need to enter a PIN and unlock the hardware wallet*
 
-For Hardware-wallet related questions see: [FAQ-UseWasabi](/docs/FAQ/FAQ-UseWasabi.md#hardware-wallet)
+For hardware wallet related questions see: [FAQ-UseWasabi](/docs/FAQ/FAQ-UseWasabi.md#hardware-wallet)
 
-7. Load Wallet to import the xpub or Public Key (used to generate all receive addresses)
+7. `Load Wallet` to import the xpub or Public Key (used to generate all receive addresses)
 
 8. Go to Receive tab and Generate Receive Address, send the mixed coin (don't combine all UTXO's/coins in a single address! 
 this hurts your anon-set badly) from your "Hot" Wasabi wallet to this "Cold" Wasabi Wallet.
