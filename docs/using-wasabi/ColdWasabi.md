@@ -11,15 +11,15 @@ Both a 'Hot'(CoinJoin) and a 'Cold'(Storage) Wasabi Wallet instances will be run
 
 2. Generate a new Receive address
 
-Now you are set up for using the CoinJoin function with the "hot" Wasabi Wallet that holds the encrypted keys on an internet connected computer.
-
 3. Send coins you want to anonymize to the "Hot" Wasabi Wallet
+
+Now you are set up for using the CoinJoin function with the "hot" Wasabi Wallet that holds the encrypted keys on an internet connected computer.
 
 4. CoinJoin!
 
 This is fine for small amounts of bitcoin, but not for larger bitcoin holdings.
 That is where "Cold" Hardware Wallet storage comes in!
-So after the CoinJoin you might want to send some of those coins back to the Hardware Wallet, but not expose those addresses to the central servers of LedgerHQ or some sneaky peaky Electrum Wallet spies...
+So after the CoinJoin you might want to send some of those coins back to the Hardware Wallet, but not expose those addresses to the central servers of the Hardware Wallet company or some sneaky peaky Electrum Wallet spies...
 
 5. Connect your Hardware wallet device (for the PSBT-protocol use a MicroSD card instead) 
 
@@ -38,7 +38,7 @@ this hurts your anon-set badly) from your "Hot" Wasabi wallet to this "Cold" Was
 You are now eating Cold Wasabi!
 
 # Cold-Wasabi PSBT protocol
-When you want to safely spend some of those Cold-Wasabi funds from the hardware wallet, you could use the Partially Signed Bitcoin Transaction for offline/airgapped signing of transactions for an extra layer of defence.
+When you want to safely spend some of those Cold-Wasabi funds from the hardware wallet, you could use the Partially Signed Bitcoin Transaction for offline/airgapped signing of transactions for an extra layer of defense.
 
 ## Workflow diagram
 ![](/docs/.vuepress/public/ColdWasabi2.png)
