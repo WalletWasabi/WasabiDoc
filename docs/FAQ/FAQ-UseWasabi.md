@@ -124,6 +124,15 @@ Surprisingly, since the introduction of the Chinese characters, the number of lo
 So this fun and unconventional work flow has saved the loss of many sats already, thus it's a truly great feature.
 :::
 
+:::details
+## Why BIP 38?
+
+[BIP 38](https://github.com/bitcoin/bips/blob/master/bip-0038.mediawiki) is a good standard, a well-tested and very secure way to encrypt a private key.
+It is also implemented in the [NBitcoin library](https://github.com/MetacoSA/NBitcoin) so, it easy to use.
+Additionally, there is no standard way (bip) to encrypt HD wallets.
+Take into account that it is not only encryption what bip38 provides but also a brute-force protection.
+:::
+
 ## Synchronization
 
 @[youtube](qguwAvA5Fx4)
