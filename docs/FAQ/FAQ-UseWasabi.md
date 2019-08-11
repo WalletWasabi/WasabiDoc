@@ -337,9 +337,17 @@ So make sure that the coins to got into the right hands.
 :::
 
 :::details
-### Can I send to many addresses?
+### How do I set the payment amount?
 
-Unfortunately pay to many is not not yet implemented.
+When you have selected one or more coins in the send tab, say you take two anonset coins worth each 0.1 bitcoin.
+You can manually set the exact amount that the destination address will receive in the output of the transaction, say 0.15 bitcoin.
+Then Wasabi will help you with automatically calculating the precise change output value with `inputs - destination output - confirmation fee`.
+:::
+
+:::details
+### Can I pay to many addresses?
+
+Unfortunately say to many is not not yet implemented.
 But this is on the [ToDo list](/building-wasabi/ToDo.md)!
 Coming in #twoweeks.
 :::
