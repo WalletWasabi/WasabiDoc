@@ -1,3 +1,10 @@
+---
+{
+  "title": "ToDo List",
+  "description": "A collection of short term ToDo's and long term roadmap goals of Wasabi Wallet."
+}
+---
+
 # ToDo's in Wasabi
 
 Wasabi Wallet is libre and open source software.

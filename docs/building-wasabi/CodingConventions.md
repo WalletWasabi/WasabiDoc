@@ -1,3 +1,12 @@
+---
+{
+  "title": "Coding Conventions",
+  "description": "A collection of all the coding conventions that contributors should take care to follow."
+}
+---
+
+
+
 # Coding Conventions
 
 [[toc]]

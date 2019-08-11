@@ -1,3 +1,12 @@
+---
+{
+  "title": "Hardware Wallet Integration Testing",
+  "description": "This is a checklist for the testers of different hardware wallets to ensure proper integration with off-line signing devices."
+}
+---
+
+
+
 # Wasabi Hardware Wallet Integration Testing
 
 |                | Windows | OSX     | Linux   |

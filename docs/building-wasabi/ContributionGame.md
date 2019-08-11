@@ -1,3 +1,10 @@
+---
+{
+  "title": "Contribution Game",
+  "description": "Here are the rules and updates to the Wasabi contribution game, a bounty program for all Wasabikas."
+}
+---
+
 # Contribution Game
 
 We are happy to announce an experiment, called: **The Wasabi Contribution Game**, where we will be distributing 1 BTC among contributors of this repository in proportion to their contributions.

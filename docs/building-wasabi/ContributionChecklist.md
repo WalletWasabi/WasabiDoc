@@ -1,3 +1,12 @@
+---
+{
+  "title": "Contribution Checklist",
+  "description": "A collection of tips for new Wasabikas who are interested in supporting Wasabi. Here you find all the details to enable a swift start to your contribution."
+}
+---
+
+
+
 # Contribution Checklist
 
 [[toc]]

@@ -1,3 +1,10 @@
+---
+{
+  "title": "Manual Testing",
+  "description": "A guide for developers on how to do manual testing on Wasabi."
+}
+---
+
 # Manual Testing
 
 [[toc]]

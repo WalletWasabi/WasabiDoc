@@ -1,3 +1,10 @@
+---
+{
+  "title": "Developers debugging Guide",
+  "description": "A step by step guide for developers about how to debug Wasabi."
+}
+---
+
 # Developers' Guide for debugging Wasabi
 
 [[toc]]

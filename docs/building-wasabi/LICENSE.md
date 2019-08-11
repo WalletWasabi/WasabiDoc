@@ -1,3 +1,12 @@
+---
+{
+  "title": "MIT License",
+  "description": "Every line of code in Wasabi wallet and documentation is libre and open source under the MIT license."
+}
+---
+
+
+
 # MIT License
 
 Copyright (c) 2019 zkSNACKs
