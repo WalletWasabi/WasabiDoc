@@ -30,7 +30,7 @@ Wasabi uses [BIP 38: Password-Protected Private Key](https://github.com/bitcoin/
                    |        |
    +-------------  |        |
    | Password    +-+  +-----v-------+
-   +-------------+ |  | Entended Key|
+   +-------------+ |  | Extended Key|
                    |  +-------------+
                    |        |
                    |        |
@@ -41,7 +41,7 @@ Wasabi uses [BIP 38: Password-Protected Private Key](https://github.com/bitcoin/
                    +------->+ <-------------+  Network    |
                             |               +-------------+
                       +-----v-------+
-                      | Encrtpted   |
+                      | Encrypted   |
                       | secret      |
                       +-------------+
                             |
@@ -67,5 +67,4 @@ This is needed to backup and recover your wallet:
 | extendedkey |  Yes, it is encrypted |
 | privatekey+chaincode+fingreprint | Yes, it is encrypted |
 | encryptedsecret+chaincode+fingreprint  | Yes, **(this is the Wasabi Backup)** |
-
 
