@@ -1,3 +1,10 @@
+---
+{
+  "title": "Contribution FAQ",
+  "description": "Frequently asked questions about how Wasabikas can support the project."
+}
+---
+
 # Contributions to Wasabi
 
 ## The Wasabikas of the dojo

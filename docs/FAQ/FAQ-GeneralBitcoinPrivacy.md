@@ -1,3 +1,10 @@
+---
+{
+  "title": "Bitcoin Privacy FAQ",
+  "description": "Frequently asked questions about the nuances of privacy in Bitcoin in general."
+}
+---
+
 # General Bitcoin Privacy
 
 ## Why Privacy matters

@@ -1,3 +1,10 @@
+---
+{
+  "title": "Use of Wasabi FAQ",
+  "description": "Frequently asked questions about the nuances of how to use Wasabi properly."
+}
+---
+
 # Use of Wasabi
 
 ## Wallet Manager

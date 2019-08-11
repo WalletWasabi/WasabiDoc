@@ -1,3 +1,10 @@
+---
+{
+  "title": "Introduction FAQ",
+  "description": "Frequently asked questions regarding the introduction to Wasabi in general."
+}
+---
+
 # Introduction to Wasabi
 
 ## The Basics

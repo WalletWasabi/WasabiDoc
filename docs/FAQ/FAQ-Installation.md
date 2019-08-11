@@ -1,3 +1,10 @@
+---
+{
+  "title": "Installation FAQ",
+  "description": "Frequently asked questions about how to propperly install Wasabi Wallet."
+}
+---
+
 # Installation of Wasabi
 
 ## Installing the Package
