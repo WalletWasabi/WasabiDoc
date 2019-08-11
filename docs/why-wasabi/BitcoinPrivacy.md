@@ -1,3 +1,10 @@
+---
+{
+  "title": "Privacy in Bitcoin",
+  "description": "An introduction to the positive and negative side of Privacy in Bitcoin today."
+}
+---
+
 # Privacy in Bitcoin
 
 [[toc]]

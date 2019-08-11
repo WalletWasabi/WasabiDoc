@@ -1,3 +1,10 @@
+---
+{
+  "title": "Why Privacy is Important",
+  "description": "An explanation of why Privacy is a fundamental human right, and why financial privacy is worth fighting for."
+}
+---
+
 # Why Privacy is Important
 
 > It's not that I have something to hide.

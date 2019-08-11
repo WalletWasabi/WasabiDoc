@@ -1,3 +1,10 @@
+---
+{
+  "title": "Ten Commandments",
+  "description": "The very basics of Wasabi that enable you to use this powerful tool properly."
+}
+---
+
 # The Ten Commandments
 
 [[toc]]
