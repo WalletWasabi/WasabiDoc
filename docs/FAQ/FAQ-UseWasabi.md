@@ -270,6 +270,27 @@ Click on the arrow on the left side of the address to reveal the extra details.
 ![](/ReceiveAddressDropDown.png)
 :::
 
+:::details
+### Can I generate a multi signature script?
+
+No.
+
+Multi signature scripts define that there need to be m-of-n signautres provided in order to spend this UTXO.
+For example in a 2-of-3, Alice alone cannot spend the sats, she needs the collaboration of either Bob or Charlie.
+In the current way of implementation, a legacy and SegWit v0 multisig address is clearly disdinguishable, there are three public keys and two signatures, and not one single public key and signature.
+This means that your anonymit set, the croud you hide in, gets a lot smaller.
+If some one knows that you use a multisig, then he can narrow down his search for your coins.
+Thus, multisignatures decrease your privacy, and Wasabi is not implementing tools that degrade your privacy.
+
+Yet multisig is a popular feature, and many Wasabikas do request it for extra security, willing to trade-off some privacy.
+[Electrum Wallet](https://electrum.org) is a fantastic wallet with many features, but only private if you connect to your own Electrum server full node.
+Electrum can be used to create different types of m-of-n multisig scripts, including with your hardware wallet.
+
+Anyway, since Wasabi is using the Hardware Wallet Interface with partially signed Bitcoin transactions, the implementation might come in #twoweeks, check the [ToDo list](/building-wasabi/ToDo.md).
+Schnorr key and signature aggregation with MuSig increases the privacy, since only one public key, not n, are committed on the timechain.
+So when Schnorr is activated in the Bitcoin consensus, in #twoweeks, there are no privacy concerns standing in the way of Wasabi multisig!
+:::
+
 ## Send
 
 @[youtube](PRlAAxunmdU)
