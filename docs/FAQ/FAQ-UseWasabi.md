@@ -337,20 +337,47 @@ So make sure that the coins to got into the right hands.
 :::
 
 :::details
-### How do I set the payment amount?
-
-When you have selected one or more coins in the send tab, say you take two anonset coins worth each 0.1 bitcoin.
-You can manually set the exact amount that the destination address will receive in the output of the transaction, say 0.15 bitcoin.
-Then Wasabi will help you with automatically calculating the precise change output value with `inputs - destination output - confirmation fee`.
-:::
-
-:::details
 ### Can I pay to many addresses?
 
 Unfortunately say to many is not not yet implemented.
 But this is on the [ToDo list](/building-wasabi/ToDo.md)!
 Coming in #twoweeks.
 :::
+
+:::details
+### How do I set the payment amount?
+
+After you select one or more coins as inputs in send tab, saytwo anonset coins worth each 0.1 bitcoin.
+You can manually set the exact amount that the destination address will receive in the output of the transaction, say 0.15 bitcoin.
+Then Wasabi will help you with automatically calculating the precise change output value with `inputs - destination output - confirmation fee`.
+
+![](/SendAmountFeePassword.png)
+:::
+
+::::details
+### How can I use the MAX button?
+
+When you select one or more coins as inputs in send tab, say two anonset coins worth each 0.1 bitcoin.
+You can click the `MAX` button and the transaction will have only one output with the destination address, and no change output. 
+Wasabi will calculate the precise value for the destination output with `inputs - confirmation fee`.
+This means you send the entire two coins to the receiving address, and there is no change coming back to your own wallet, you are sending a "whole coin".
+
+![](/SendAmountFeePassword.png)
+
+The timechain spy heuristic is that this is a transaction to your self, for example to your hardware wallet for long-term hodling.
+Most of the times this assumption is correct - the amount of an external payment is rarely exactly the same as the value of the sum of coins in the input, thus requiring change.
+It does not matter what value the coin has when you send it to your self, thus there is no change.
+But you can use this assumption to your advantage by sending the MAX amount to your external destination, for example for the pizza at the tribe gathering.
+If the change would be only a small amount, maybe you accept the overpayment as price for your privacy.
+If the input is not high enough value for the payment, maybe the receiver accepts a slight underpayment.
+You can also use payment rails like Lightning Network to send the small value change private off-chain.
+
+:::tip
+When using the MAX button, it looks like you send back to your self.
+This can be used to spy on you!
+But you can also use it to your advantage when paying others.
+:::
+::::
 
 :::details
 ### Why does Wasabi choose a new random node every time I send a transaction?
