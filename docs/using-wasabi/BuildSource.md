@@ -1,3 +1,10 @@
+---
+{
+  "title": "Build from source code",
+  "description": "A step by step guide on how to build Wasabi from source code."
+}
+---
+
 # Build from source code
 
 ## Get The Requirements

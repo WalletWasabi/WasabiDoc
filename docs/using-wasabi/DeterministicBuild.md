@@ -1,3 +1,10 @@
+---
+{
+  "title": "Deterministic Build",
+  "description": "A step by step guide on how to reproduce the deterministic builds of Wasabi."
+}
+---
+
 # Deterministic Build
 
 [[toc]]

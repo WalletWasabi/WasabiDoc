@@ -1,3 +1,10 @@
+---
+{
+  "title": "Password Finder",
+  "description": "A step by step guide on how to use the Wasabi password finder to fix typos in forgotten passwords."
+}
+---
+
 # Password Finder
 
 [[toc]]

@@ -1,3 +1,10 @@
+---
+{
+  "title": "Lost Password Strategy",
+  "description": "An explanation of the design decisions in Wasabi to protect you from losing and forgetting your password."
+}
+---
+
 # Lost Password Strategy
 
 It is common that users lose or mistype their passwords.

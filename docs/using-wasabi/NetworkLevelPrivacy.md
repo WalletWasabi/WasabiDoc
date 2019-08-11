@@ -1,3 +1,10 @@
+---
+{
+  "title": "Network Level Privacy",
+  "description": "A comparison of the network level privacy of Wasabi wallet and Bitcoin Core."
+}
+---
+
 # Network Level Privacy - Bitcoin Core vs Wasabi Wallet
 
 [[toc]]

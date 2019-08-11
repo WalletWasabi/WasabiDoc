@@ -1,3 +1,10 @@
+---
+{
+  "title": "Address Reuse",
+  "description": "Address reuse links all these coins to you. Here is explained why it is important to use a new address for every transaction."
+}
+---
+
 # Address Reuse
 
 :::tip

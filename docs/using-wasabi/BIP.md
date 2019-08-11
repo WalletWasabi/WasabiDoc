@@ -1,3 +1,10 @@
+---
+{
+  "title": "Supported BIPs",
+  "description": "A collection and explanation of all the Bitcoin Improvement Proposals that are supported by Wasabi."
+}
+---
+
 # Supported BIPs
 
 [[toc]]

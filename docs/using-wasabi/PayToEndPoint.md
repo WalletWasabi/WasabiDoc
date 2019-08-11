@@ -1,3 +1,10 @@
+---
+{
+  "title": "Pay to EndPoint",
+  "description": "A detailed explanation of how Pay to EndPoint can be used to hide transaction metadata in a collaborative CoinJoin."
+}
+---
+
 # Pay To EndPoint
 
 [[toc]]

@@ -1,3 +1,10 @@
+---
+{
+  "title": "Install package",
+  "description": "A step by step guide on how to securely download, verify and install the software packages of Wasabi for Linux, Windows and Mac."
+}
+---
+
 # Install package
 
 [[toc]]
