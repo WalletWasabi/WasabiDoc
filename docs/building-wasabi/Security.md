@@ -1,3 +1,10 @@
+---
+{
+  "title": "Security Policy",
+  "description": "For those looking to responsibly disclose a vulnerability. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
+}
+---
+
 # Security Policy
 
 Feel free to report a vulnerability as a GitHub issue only if the vulnerability you found does not compromise users' privacy or security.

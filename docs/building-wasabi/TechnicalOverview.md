@@ -1,5 +1,9 @@
 ---
-sidebarDepth: 1
+{
+  "title": "Technical Overview of Wasabi Wallet",
+  "description": "An in depth guide over many nuances of Wasabi, how to use it properly, and where further improvements are needed. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop.",
+  "sidebarDepth": "1"
+}
 ---
 
 # A Technical Overview of Wasabi Wallet, Future Ideas, Plans and Strategy

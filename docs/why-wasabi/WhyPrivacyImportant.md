@@ -1,3 +1,10 @@
+---
+{
+  "title": "Why Privacy is Important",
+  "description": "An explanation of why Privacy is a fundamental human right, and why financial privacy is worth fighting for. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
+}
+---
+
 # Why Privacy is Important
 
 > It's not that I have something to hide.

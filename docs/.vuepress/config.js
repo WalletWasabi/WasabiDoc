@@ -4,7 +4,7 @@ const youtubeEmbed = path => `<div class="ytEmbed"><iframe src="https://www.yout
 
 module.exports = {
   title: "Wasabi",
-  description: "Wasabi is an open-source, non-custodial, privacy focused Bitcoin wallet for desktop.",
+  description: "This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop.",
   head: [
     ["link", { rel: "icon", href: "/favicon.ico" }],
     ["link", { rel: "stylesheet", href: "https://fonts.googleapis.com/css?family=Inconsolata:400,700|Playfair+Display:700&display=swap" }]

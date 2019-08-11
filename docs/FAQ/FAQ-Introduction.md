@@ -1,3 +1,10 @@
+---
+{
+  "title": "Introduction FAQ",
+  "description": "Frequently asked questions regarding the introduction to Wasabi in general. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
+}
+---
+
 # Introduction to Wasabi
 
 ## The Basics

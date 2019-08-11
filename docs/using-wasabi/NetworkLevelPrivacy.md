@@ -1,3 +1,10 @@
+---
+{
+  "title": "Network Level Privacy",
+  "description": "A comparison of the network level privacy of Wasabi wallet and Bitcoin Core. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
+}
+---
+
 # Network Level Privacy - Bitcoin Core vs Wasabi Wallet
 
 [[toc]]

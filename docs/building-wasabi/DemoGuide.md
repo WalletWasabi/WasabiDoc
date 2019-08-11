@@ -1,3 +1,10 @@
+---
+{
+  "title": "Demo Guide",
+  "description": "A collection of notes and tips to help you demo Wasabi to future-coiners and potential CoinJoin peers. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
+}
+---
+
 # Demo Guide
 
 - At 2018.07.19 17:00, UTC I will do a live demo of Wasabi on Youtube.

@@ -1,3 +1,10 @@
+---
+{
+  "title": "Use of Wasabi FAQ",
+  "description": "Frequently asked questions about the nuances of how to use Wasabi properly. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
+}
+---
+
 # Use of Wasabi
 
 ## Wallet Manager

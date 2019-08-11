@@ -1,3 +1,10 @@
+---
+{
+  "title": "Installation FAQ",
+  "description": "Frequently asked questions about how to propperly install Wasabi Wallet. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
+}
+---
+
 # Installation of Wasabi
 
 ## Installing the Package

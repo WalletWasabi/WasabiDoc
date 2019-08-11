@@ -1,6 +1,13 @@
+---
+{
+  "title": "Ports",
+  "description": "A reference of common local ports used by Wasabi and related software. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
+}
+---
+
 # Ports
 
-A reference of common local ports used by HiddenWallet and related software.
+A reference of common local ports used by Wasabi and related software.
 HiddenWallet's ports (3712x) are chosen within a long range of unassigned IANA ports, based on [this](https://stackoverflow.com/a/28369841/2061103) statistic, but also checked against [Service Name and Transport Protocol Port Number Registry](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml).
   
 |Port  | Application |

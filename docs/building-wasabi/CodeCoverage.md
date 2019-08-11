@@ -1,4 +1,11 @@
-# Code coverage (How to)
+---
+{
+  "title": "Code Coverage"
+  "description: "This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
+}
+---
+
+# Code Coverage
 
 Wasabi Wallet is built using dotnet core. Given there is no cross-platform Profiling API like the one available on Windows, we use [AltCover](https://github.com/SteveGilham/altcover) package for instrumenting the assemblies and recording the execution
 coverage.

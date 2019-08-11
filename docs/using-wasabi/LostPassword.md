@@ -1,3 +1,10 @@
+---
+{
+  "title": "Lost Password Strategy",
+  "description": "An explanation of the design decisions in Wasabi to protect you from losing and forgetting your password. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
+}
+---
+
 # Lost Password Strategy
 
 It is common that users lose or mistype their passwords.

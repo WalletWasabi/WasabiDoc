@@ -1,3 +1,10 @@
+---
+{
+  "title": "ToDo List",
+  "description": "A collection of short term ToDo's and long term road-map goals of Wasabi Wallet. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
+}
+---
+
 # ToDo's in Wasabi
 
 Wasabi Wallet is libre and open source software.

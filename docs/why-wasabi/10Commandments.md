@@ -1,3 +1,10 @@
+---
+{
+  "title": "Ten Commandments",
+  "description": "The very basics of Wasabi that enable you to use this powerful tool properly. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
+}
+---
+
 # The Ten Commandments
 
 [[toc]]

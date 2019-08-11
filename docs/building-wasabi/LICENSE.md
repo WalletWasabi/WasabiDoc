@@ -1,3 +1,12 @@
+---
+{
+  "title": "MIT License",
+  "description": "Every line of code in Wasabi wallet and documentation is libre and open source under the MIT license. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
+}
+---
+
+
+
 # MIT License
 
 Copyright (c) 2019 zkSNACKs
