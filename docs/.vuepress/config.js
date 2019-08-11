@@ -106,6 +106,7 @@ module.exports = {
             "/using-wasabi/AddressReuse.md",
             "/using-wasabi/NetworkLevelPrivacy.md",
             "/using-wasabi/BIP.md",
+            "/using-wasabi/LostPassword.md",
             "/using-wasabi/PasswordFinder.md",
             "/using-wasabi/Daemon.md",
             "/using-wasabi/PayToEndPoint.md"
