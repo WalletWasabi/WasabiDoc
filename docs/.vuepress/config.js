@@ -103,6 +103,7 @@ module.exports = {
             "/using-wasabi/InstallPackage.md",
             "/using-wasabi/BuildSource.md",
             "/using-wasabi/DeterministicBuild.md",
+            "/using-wasabi/WalletGeneration.md",
             "/using-wasabi/AddressReuse.md",
             "/using-wasabi/NetworkLevelPrivacy.md",
             "/using-wasabi/BIP.md",
