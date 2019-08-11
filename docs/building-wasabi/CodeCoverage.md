@@ -1,6 +1,7 @@
 ---
 {
   "title": "Code Coverage"
+  "description: "This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
 }
 ---
 

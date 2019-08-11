@@ -1,7 +1,7 @@
 ---
 {
   "title": "Dojo",
-  "description": "The Dojo is the place where all the many Wasabikas get together and collaborate. Here we honor those who have already earned their belts, and celebrate those who get promoted."
+  "description": "The Dojo is the place where all the many Wasabikas get together and collaborate. Here we honor those who have already earned their belts, and celebrate those who get promoted. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
 }
 ---
 

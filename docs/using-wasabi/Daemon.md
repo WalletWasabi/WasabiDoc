@@ -1,7 +1,7 @@
 ---
 {
   "title": "Headless Wasabi Daemon",
-  "description": "A guide on how to use the light weight headless Wasabi daemon to mix your coins."
+  "description": "A guide on how to use the light weight headless Wasabi daemon to mix your coins. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
 }
 ---
 

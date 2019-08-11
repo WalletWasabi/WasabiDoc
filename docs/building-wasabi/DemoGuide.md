@@ -1,7 +1,7 @@
 ---
 {
   "title": "Demo Guide",
-  "description": "A collection of notes and tips to help you demo Wasabi to future-coiners and potential CoinJoin peers."
+  "description": "A collection of notes and tips to help you demo Wasabi to future-coiners and potential CoinJoin peers. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
 }
 ---
 

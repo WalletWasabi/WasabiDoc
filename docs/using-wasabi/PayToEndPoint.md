@@ -1,7 +1,7 @@
 ---
 {
   "title": "Pay to EndPoint",
-  "description": "A detailed explanation of how Pay to EndPoint can be used to hide transaction metadata in a collaborative CoinJoin."
+  "description": "A detailed explanation of how Pay to EndPoint can be used to hide transaction metadata in a collaborative CoinJoin. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
 }
 ---
 

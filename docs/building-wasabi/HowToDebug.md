@@ -1,7 +1,7 @@
 ---
 {
   "title": "Developers debugging Guide",
-  "description": "A step by step guide for developers about how to debug Wasabi."
+  "description": "A step by step guide for developers about how to debug Wasabi. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
 }
 ---
 

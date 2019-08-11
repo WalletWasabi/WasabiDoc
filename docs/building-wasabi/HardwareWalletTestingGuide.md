@@ -1,7 +1,7 @@
 ---
 {
   "title": "Hardware Wallet Integration Testing",
-  "description": "This is a checklist for the testers of different hardware wallets to ensure proper integration with off-line signing devices."
+  "description": "This is a checklist for the testers of different hardware wallets to ensure proper integration with off-line signing devices. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
 }
 ---
 

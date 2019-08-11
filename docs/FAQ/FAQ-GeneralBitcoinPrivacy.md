@@ -1,7 +1,7 @@
 ---
 {
   "title": "Bitcoin Privacy FAQ",
-  "description": "Frequently asked questions about the nuances of privacy in Bitcoin in general."
+  "description": "Frequently asked questions about the nuances of privacy in Bitcoin in general. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
 }
 ---
 

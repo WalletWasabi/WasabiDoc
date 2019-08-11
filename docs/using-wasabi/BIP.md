@@ -1,7 +1,7 @@
 ---
 {
   "title": "Supported BIPs",
-  "description": "A collection and explanation of all the Bitcoin Improvement Proposals that are supported by Wasabi."
+  "description": "A collection and explanation of all the Bitcoin Improvement Proposals that are supported by Wasabi. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
 }
 ---
 

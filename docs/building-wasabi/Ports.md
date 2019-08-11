@@ -1,7 +1,7 @@
 ---
 {
   "title": "Ports",
-  "description": "A reference of common local ports used by Wasabi and related software"
+  "description": "A reference of common local ports used by Wasabi and related software. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
 }
 ---
 

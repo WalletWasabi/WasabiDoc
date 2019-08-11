@@ -1,7 +1,7 @@
 ---
 {
   "title": "Contribution Checklist",
-  "description": "A collection of tips for new Wasabikas who are interested in supporting Wasabi. Here you find all the details to enable a swift start to your contribution."
+  "description": "A collection of tips for new Wasabikas who are interested in supporting Wasabi. Here you find all the details to enable a swift start to your contribution. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
 }
 ---
 

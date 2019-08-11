@@ -1,7 +1,7 @@
 ---
 {
   "title": "Privacy in Bitcoin",
-  "description": "An introduction to the positive and negative side of Privacy in Bitcoin today."
+  "description": "An introduction to the positive and negative side of Privacy in Bitcoin today. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
 }
 ---
 

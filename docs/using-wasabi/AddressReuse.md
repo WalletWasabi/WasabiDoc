@@ -1,7 +1,7 @@
 ---
 {
   "title": "Address Reuse",
-  "description": "Address reuse links all these coins to you. Here is explained why it is important to use a new address for every transaction."
+  "description": "Address reuse links all these coins to you. Here is explained why it is important to use a new address for every transaction. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
 }
 ---
 

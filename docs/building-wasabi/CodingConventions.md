@@ -1,7 +1,7 @@
 ---
 {
   "title": "Coding Conventions",
-  "description": "A collection of all the coding conventions that contributors should take care to follow."
+  "description": "A collection of all the coding conventions that contributors should take care to follow. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
 }
 ---
 

@@ -1,7 +1,7 @@
 ---
 {
   "title": "Password Finder",
-  "description": "A step by step guide on how to use the Wasabi password finder to fix typos in forgotten passwords."
+  "description": "A step by step guide on how to use the Wasabi password finder to fix typos in forgotten passwords. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
 }
 ---
 

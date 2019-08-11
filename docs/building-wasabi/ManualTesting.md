@@ -1,7 +1,7 @@
 ---
 {
   "title": "Manual Testing",
-  "description": "A guide for developers on how to do manual testing on Wasabi."
+  "description": "A guide for developers on how to do manual testing on Wasabi. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
 }
 ---
 
