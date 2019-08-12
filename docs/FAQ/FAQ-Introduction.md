@@ -99,9 +99,10 @@ There is no room for wasted time and energy, this Great Work requires our full a
 Any line of code written to support a random shitcoin takes away scarce developer time to work on real problems.
 :::
 
+:::details
 ### Why is the anonymity set 100??
 
-Sufficient anonymity set is a hard question, that no research attempted to answer it so far.
+Sufficient anonymity set is a hard question, that not yet enough research done to answer it definitively.
 The rough consensus among many privacy researchers is that an anonymity set above 50 could be considered sufficient.
 Furthermore our calculations have shown that with the liquidity of today’s mixers our mixing rounds would take 1 to 5 minutes with 100 anonymity set and 0.1 BTC fixed denomination.
 :::
