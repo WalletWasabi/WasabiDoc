@@ -127,7 +127,7 @@ See [here](https://github.com/nopara73/ZeroLink/#e-sybil-attack) for more info.
 :::details
 ### What is the history of Wasabi?
 
-Ádám Ficsor worked with several others on a privacy-focused Bitcoin wallet called Hidden Wallet all the way back in 2015.
+Ádám Ficsor worked with several others on a privacy-focused Bitcoin wallet called Hidden Wallet all the way [back in December 2015](https://docs.google.com/drawings/d/1wLL7aSgYBWNoyzllg6_haisFt-gQCf-QUzVzQPkARts/edit).
 Wasabi was unveiled in 2018 at the Building on Bitcoin conference by Ádám.
 At the time, Wasabi was essentially HiddenWallet rebranded and rewritten from scratch with some new features.
 Key dates:
