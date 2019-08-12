@@ -35,23 +35,23 @@ You have successfully setup your wallet when you click `I wrote down my Recovery
 ![](/WalletManagerRecoveryWords.png)
 :::
 
-::::details
+:::details
 ### What password should I use?
 The password you set is used to encrypt the mnemonic recovery words, and the private keys stored on the computer.
 This is the password that will unlock your bitcoin to anyone who has access to the backup or computer.
 You will need to type in the password before you can spend from Wasabi wallet.
 So if your backup gets compromised, this password is the only thing protecting your precious sats.
 
-:::danger
+::danger
 It is **VERY** important to use a random and long password.
 :::
 
 Since it is very difficult for humans to generate true randomness, it is good to use a tool to help find a strong password.
 This can be the [dice ware wordlist](https://www.eff.org/deeplinks/2016/07/new-wordlists-random-passphrases), for true off-line password.
 A secure password manager software might also be used, but be careful here.
-::::
+:::
 
-::::details
+:::details
 ### How do I back up my mnemonic words?
 
 :::tip
@@ -75,9 +75,9 @@ Use two different backups and locations for the mnemonic and password, because w
 Find a secure physical location to store the backups, maybe home safe, or an expert security deposit box.
 
 Please see [this great guide](https://github.com/6102bitcoin/FAQ/blob/master/seed.md#3-Storing-your-Seed) on how to properly store your seed.
-::::
+:::
 
-::::details
+:::details
 ### How do I backup my wallet file?
 
 Although you can backup your private keys with the mnemonic words and password, this is only a last resort recovery.
@@ -89,9 +89,9 @@ This also contains the unencrypted extended public keys and address labels, mean
 :::tip
 The wallet backup is sensitive, in terms of privacy, bur not critical in terms of loss of funds. So it is good advice to encrypt this wallet file.
 :::
-::::
+:::
 
-::::details
+:::details
 ### Can I spend my bitcoin without the password?
 
 :::danger
@@ -107,7 +107,7 @@ So even when you have these words securely engraved on metal, without the passwo
 :::tip
 Always backup your encrypted mnemonic recovery words, and your password in two separate secure locations.
 :::
-::::
+:::
 
 :::details
 ### What is up with the Chinese characters?
@@ -137,7 +137,7 @@ Take into account that it is not only encryption what bip38 provides but also a 
 
 @[youtube](qguwAvA5Fx4)
 
-::::details
+:::details
 ### What are BIP-158 block filters?
 
 When you do not run a full node, then you need to communicate with some third party node to find out how much money you have.
@@ -164,7 +164,7 @@ It is important to note that although the privacy is as good as with a full node
 In order to do this, you must run a full node and verify the entire timechain.
 With the block filters, you trust that the Wasabi server gives you the correct filters, and does not withhold any of them.
 You also do not have proof that the block you download from a P2P node is actually in the valid chain, but you can verify the proof of work in the block header.
-::::
+:::
 
 :::details
 ### How does Wasabi download a relevant block?
@@ -199,7 +199,7 @@ Yet for especially old wallets, it might be worth considering to start a new wal
 
 @[youtube](9i7CceIdFg4)
 
-::::details
+:::details
 ### Why is it bad to re-use addresses?
 
 Bitcoin is designed so that for every payment you can use a new address that is not tied to any of your previous addresses.
@@ -218,7 +218,7 @@ Everytime you a coin is received, then the address is removed from the GUI so th
 :::danger
 **NEVER RE-USE ADDRESSES**
 :::
-::::
+:::
 
 :::details
 ### How do I generate a new receiving address?
@@ -253,7 +253,7 @@ This is very bad for your privacy because of [address reuse](/using-wasabi/Addre
 ![](/ReceiveAddressMenu.png)
 :::
 
-::::details
+:::details
 ### Are there privacy concerns regarding whom I send my address?
 
 Yes.
@@ -265,7 +265,7 @@ Because there is a risk that both of them send coins to this same destination, t
 :::danger
 It is especially important to **NEVER** send your extended public key to any third party server. This is a complete de-anonymization of your entire wallet!!
 :::
-::::
+:::
 
 :::details
 ### Why does Wasabi only use SegWit bech32 addresses?
@@ -370,7 +370,7 @@ Then Wasabi will help you with automatically calculating the precise change outp
 ![](/SendAmountFeePassword.png)
 :::
 
-::::details
+:::details
 ### How can I use the MAX button?
 
 When you select one or more coins as inputs in send tab, say two anonset coins worth each 0.1 bitcoin.
@@ -393,7 +393,7 @@ When using the MAX button, it looks like you send back to your self.
 This can be used to spy on you!
 But you can also use it to your advantage when paying others.
 :::
-::::
+:::
 
 :::details
 ### Why does Wasabi choose a new random node every time I send a transaction?
@@ -408,7 +408,7 @@ When you want to subsequently send another transaction on the network, Wasabi de
 This reduces the risk of a passive bystander being able to link two transactions together that appear from the same location.
 :::
 
-::::details
+:::details
 ### What fee should I select?
 
 Wasabi uses the `[smartfee](https://bitcointechtalk.com/an-introduction-to-bitcoin-core-fee-estimation-27920880ad0)` estimation algorithm provided by bitcoind.
@@ -431,7 +431,7 @@ This really depends on your own time preference in every unique moment.
 :::tip Remember
 These sats are precious, so don't overpay on fees!
 :::
-::::
+:::
 
 :::details
 ### How can I display the fee in satoshis per byte?
@@ -598,7 +598,7 @@ Wasabi is saving on mining fees by setting a confirmation target of roughly 12 h
 
 @[youtube](sM2uhyROpAQ)
 
-::::details
+:::details
 ### What hardware wallets does Wasabi support?
 
 The answer is simple:
@@ -611,7 +611,7 @@ This is thanks to awesome Hardware Wallet Interface of Bitcoin core.
 
 However, not all of the many hardware wallets have been tested and reviewed by the developers.
 Everything seems to work fine with the ColdCard, Trezor, Ledger and KeepKey.
-::::
+:::
 
 :::details
 ### Why does Wasabi use the Hardware Wallet Interface?
