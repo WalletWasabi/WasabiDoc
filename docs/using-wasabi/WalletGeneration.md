@@ -65,7 +65,7 @@ This is needed to backup and recover your wallet:
 | mnemonic | No, this is unencrypted |
 | seed |  Yes, it is encrypted |
 | extendedkey |  Yes, it is encrypted |
-| privatekey+chaincode+fingreprint | Yes, it is encrypted |
-| encryptedsecret+chaincode+fingreprint  | Yes, **(this is the Wasabi Backup)** |
+| privatekey+chaincode+fingerprint | Yes, it is encrypted |
+| encryptedsecret+chaincode+fingerprint  | Yes, **(this is the Wasabi Backup)** |
 
 
