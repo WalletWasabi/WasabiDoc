@@ -16,9 +16,9 @@ When you are ever bored and want to be productive, why not pick up one of these 
 
 ## Short Term ToDo's
 
-- [Manually change the anonset shield]()
+- [Manually change the anonset shield](https://github.com/zkSNACKs/WalletWasabi/issues/1980)
 - [Pay to many](https://github.com/zkSNACKs/WalletWasabi/issues/733)
-- Upgrade to Avalonia v8
+- Upgrade to Avalonia v0.9
 - Guide user to not consolidate [#1958](https://github.com/zkSNACKs/WalletWasabi/issues/1958) [#1983](https://github.com/zkSNACKs/WalletWasabi/issues/1983)
 - Improve PSBT ColdCard workflow [#2015](https://github.com/zkSNACKs/WalletWasabi/issues/2015)
 - User choice for CoinJoin denomination [#1900](https://github.com/zkSNACKs/WalletWasabi/issues/1900) [#1904](https://github.com/zkSNACKs/WalletWasabi/issues/1904)
