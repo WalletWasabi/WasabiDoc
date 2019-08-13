@@ -84,7 +84,7 @@ Although you can backup your private keys with the mnemonic words and password, 
 If you want to also secure your address labels, the anonset and additional metadata, then you can do a digital backup.
 Simply copy the `.walletwasabi/client/WalletBackups` folder with the `wallet.json` files onto suitable hardware, for example an encrypted USB stick.
 Note that this file has the encrypted private keys, meaning that you only need the password to spend the bitcoin.
-This also contains the unencrypted extended public keys and address labels, meaning that it completely links all the coins, both pre- and post mix, with clear proof. 
+This also contains the unencrypted extended public keys and address labels, meaning that it completely links all the coins, both pre- and post mix, with clear proof.
 
 :::tip
 The wallet backup is sensitive, in terms of privacy, bur not critical in terms of loss of funds. So it is good advice to encrypt this wallet file.
@@ -374,7 +374,7 @@ Then Wasabi will help you with automatically calculating the precise change outp
 ### How can I use the MAX button?
 
 When you select one or more coins as inputs in send tab, say two anonset coins worth each 0.1 bitcoin.
-You can click the `MAX` button and the transaction will have only one output with the destination address, and no change output. 
+You can click the `MAX` button and the transaction will have only one output with the destination address, and no change output.
 Wasabi will calculate the precise value for the destination output with `inputs - confirmation fee`.
 This means you send the entire two coins to the receiving address, and there is no change coming back to your own wallet, you are sending a "whole coin".
 
@@ -493,7 +493,7 @@ With Wasabi we are trying to do lower estimations, rather than higher ones.
 
 In every CoinJoin round the minimum to register is roughly 0.1 BTC, you need to have at least this much to participate.
 Within the same transaction, Wasabi also efficiently generates larger value zero link CoinJoin denominatins.
-They are 0.2, 0.4, 0.8, 1.6, 3.2, and so on... 
+They are 0.2, 0.4, 0.8, 1.6, 3.2, and so on...
 The possible values of equal output that can be created are 0.1 x 2^n where n is a positive integer.
 This is the mathematically most efficient way to get anonymity set for any amount you desire.
 For example, with a 0.7 BTC input you would expect the following outputs: ~0.1, ~0.2, ~0.4 BTC.
@@ -844,18 +844,13 @@ So consolidating in a CoinJoin is better, but it might still reveal the common o
 - The ultimate solution is to 'close the loop' i.e. spend a change coin without merging it with other coins, do not generate it in the first place by sending whole coins.
 :::
 
----
-
----
-
-#### Unanswered Questions
+## Further Questions
 
 Send
 
 - How do I select coins for spending?
 - What is the cluster history?
 - How is the tansaction broadcasted?
-
 
 CoinJoin
 

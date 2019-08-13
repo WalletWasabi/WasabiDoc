@@ -112,10 +112,6 @@ It is also good practice to route your chats through the Tor network.
 You can also configure many cloud storage providers in this way.
 :::
 
----
-
----
-
-#### Unanswered Questions
+## Further Questions
 
 - Why is it important to use a new address for every payment?
