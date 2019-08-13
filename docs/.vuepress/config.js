@@ -96,21 +96,34 @@ module.exports = {
       ],
       "/using-wasabi/": [
         {
-          title: "Using Wasabi",
+          title: "Installing Wasabi",
           collapsable: false,
           sidebarDepth: 2,
           children: [
             "/using-wasabi/InstallPackage.md",
             "/using-wasabi/BuildSource.md",
             "/using-wasabi/DeterministicBuild.md",
+          ]
+        },
+	{
+          title: "Using Wasabi",
+          collapsable: false,
+          sidebarDepth: 2,
+          children: [
             "/using-wasabi/WalletGeneration.md",
-            "/using-wasabi/AddressReuse.md",
-            "/using-wasabi/NetworkLevelPrivacy.md",
-            "/using-wasabi/BIP.md",
-            "/using-wasabi/LostPassword.md",
             "/using-wasabi/PasswordFinder.md",
             "/using-wasabi/Daemon.md",
-            "/using-wasabi/PayToEndPoint.md"
+            "/using-wasabi/BIP.md",
+          ]
+        },
+	{
+          title: "Privacy Best Practices",
+          collapsable: false,
+          sidebarDepth: 2,
+          children: [
+            "/using-wasabi/AddressReuse.md",
+            "/using-wasabi/LostPassword.md",
+            "/using-wasabi/NetworkLevelPrivacy.md",
           ]
         }
       ],
