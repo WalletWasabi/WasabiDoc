@@ -57,6 +57,51 @@ But if the password is correct, then the wallet will load, because now it is cle
 
 ![](/TestPassword.png)
 
+## What password to choose
+
+Wasabi integrates [BIP 38: Password-Protected Private Key](https://github.com/bitcoin/bips/blob/master/bip-0038.mediawiki), which means that the the secrets needed to spend the bitcoin are encrypted on the computer.
+When some one only has the encrypted cyphertext, for example anyone who has compromised your operating system and hardware, then no bitcoin can be spend.
+You need **both** the encrypted wallet file, and the password in order to reveal the private key which can sign a spending transaction.
+This means that the password is your last line of defense against anyone who tries to steal your bitcoin.
+
+:::tip
+It is very much recommended to use a long and random password to encrypt your private keys.
+:::
+
+If you would use `ilikebitcoin21` to encrypt your private keys, then anyone can quickly guess that this is the password, and thus brute force access to your money.
+So it is very important to use long and randomly chosen passwords, for everything really, but especially for your money!
+
+### What not to do
+
+The question how to generate randomness is not at all easy to answer, and this is the holy grail for any Bitcoin wallet.
+Here are a couple examples that do it completely wrong, you should not generate your password like this!
+
+1. Do not use publicly known information like your grandma's maiden name and the birthday of your Dog.
+`Emma1992` is a really really really bad password, because it can easily be guessed and is very short.
+
+2. Do not use the same password as the one you have used in other places.
+You should never use the same password twice, because then if this one secret leaks, both services are compromised.
+
+3. Do not use only letters, or only numbers in your password.
+`61813346113` could be even more secure, if there were more than the numbers `0-9` possible, for example the additional 26 letters of the alphabet.
+
+### Best Practice
+
+Don't roll your own crypto.
+Meaning you shouldn't try to re-invent the wheel for something as complicated and nuanced as cryptography, and especially in regards to entropy.
+These are some of the industry best practices:
+
+1. Roll your own dice might be the easiest way to get high entropy and randomness in numbers.
+You can also use the [diceware word-list](https://www.eff.org/deeplinks/2016/07/new-wordlists-random-passphrases) to get a something similar to your Bitcoin mnemonic recovery words.
+Now you have a verbal password that was generated completely off-line with sufficient randomness.
+
+2. Flip through the pages of a book, stopping after on an arbitrary page to get one word somewhere on this page.
+Although this is not as random as a dice-roll, there is still a large set of possible words in a book.
+You can further increase the randomness by selecting several different books.
+
+3. Use a well tested software password manager with a cryptographic secure random number generator.
+A good password manager will use sufficient entropy to generate a password with letters, numbers and special characters.
+Although this is on-line and digital, a good software should still be secure enough for most cases.
 
 ## How are the secrets created
 
