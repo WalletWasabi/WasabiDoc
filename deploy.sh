@@ -14,6 +14,6 @@ echo 'docs.wasabiwallet.io' > CNAME
 git init
 git add -A
 git commit -m 'deploy'
-git push -f ${REPO_URL:='git@github.com:zksnacks/WasabiDoc.git'} master:gh-pages
+git push -f https://$GITHUB_DEPLOY_ACCESS_TOKEN@github.com/zkSNACKs/WasabiDoc.git master:gh-pages
 
 cd -
