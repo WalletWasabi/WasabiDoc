@@ -104,6 +104,35 @@ And the index of the video of a playlist: (e.g. starts the third video)
 @[youtubePlaylist](PLAYLIST_ID,3)
 ```
 
+### Text Highlights
+
+There are three types of text highlights that can be used to display different colored boxes.
+
+A green box displaying a [friendly tip](https://docs.wasabiwallet.io/using-wasabi/AddressReuse.html#_1-donations):
+
+```
+:::tip
+foo
+:::
+```
+
+A yellow box with a [cautious warning](https://docs.wasabiwallet.io/using-wasabi/AddressReuse.html#_1-donations):
+
+```
+:::warning
+foo
+:::
+```
+
+A red box with a [clear danger](https://docs.wasabiwallet.io/using-wasabi/AddressReuse.html#_1-donations), you can also add a title `foo` to any container:
+
+```
+:::danger foo
+bar
+:::
+```
+
+
 ### Frequently asked questions
 
 Use this markdown box with the headers to write the FAQ:
@@ -115,6 +144,20 @@ answer answer answer.
 answer answer answer.
 :::
 ```
+
+When you want to [highlight text](README.md#text-highlights) within a question, then you need to [next containers](https://github.com/markdown-it/markdown-it-container/issues/6#issuecomment-213789283). The outer `details` container has now four `::::`, and the inner `warning` container has still three `:::`.
+
+```
+::::details
+### question
+
+answer answer answer.
+
+:::warning
+answer answer answer.
+:::
+::::
+````
 
 ### Thanks goes to the Wasabikas, Osu!
 
