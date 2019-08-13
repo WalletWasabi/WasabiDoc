@@ -22,8 +22,8 @@ steps:
     path: $(npm_config_cache)
   displayName: Cache npm
 - script: |
-    git config user.email "azure-pipeline@wasabiwallet.io"
-    git config user.name "Azure Pipeline"
+    git config --global user.email "azure-pipeline@wasabiwallet.io"
+    git config --global user.name "Azure Pipeline"
     npm ci
   displayName: 'Setup'
 - script: |
