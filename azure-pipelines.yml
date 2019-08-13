@@ -22,19 +22,8 @@ steps:
     path: $(npm_config_cache)
   displayName: Cache npm
 - script: |
-    # install dependencies
+    git config --global user.email "azure-pipeline@wasabiwallet.io"
+    git config --global user.name "Azure Pipeline"
     npm ci
-    npm run build
-    # navigate into the build output directory
-    cd docs/.vuepress/dist
-    echo 'docs.wasabiwallet.io' > CNAME
-    # git setup
-    git init
-    git config user.email "azure-pipeline@wasabiwallet.io"
-    git config user.name "Azure Pipeline"
-    git remote add origin https://lontivero:$(GITHUB_DEPLOY_ACCESS_TOKEN)@github.com/zkSNACKs/WasabiDoc.git
-    # add and push build
-    git add -A
-    git commit -m 'deploy'
-    git push -f origin master:gh-pages
-  displayName: 'Build and Deploy'
+    REPO_URL=https://$GITHUB_DEPLOY_ACCESS_TOKEN@github.com/zkSNACKs/WasabiDoc.git npm run deploy
+  displayName: 'Build and deploy'
