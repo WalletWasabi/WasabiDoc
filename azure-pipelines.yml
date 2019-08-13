@@ -25,8 +25,5 @@ steps:
     git config --global user.email "azure-pipeline@wasabiwallet.io"
     git config --global user.name "Azure Pipeline"
     npm ci
-  displayName: 'Setup'
-- script: |
-    export REPO_URL=https://$GITHUB_DEPLOY_ACCESS_TOKEN@github.com/zkSNACKs/WasabiDoc.git
-    npm run deploy
+    REPO_URL=https://$(GITHUB_DEPLOY_ACCESS_TOKEN)@github.com/zkSNACKs/WasabiDoc.git npm run deploy
   displayName: 'Build and Deploy'
