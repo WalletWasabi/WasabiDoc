@@ -24,5 +24,5 @@ steps:
 - script: |
     npm ci
     npm run build
-    npm run deploy -- -r https://$GITHUB_DEPLOY_ACCESS_TOKEN@github.com/zkSNACKs/WasabiDoc.git -u "Azure Pipeline <azure-pipeline@wasabiwallet.io>"
+    npm run deploy -- -r https://$(GITHUB_DEPLOY_ACCESS_TOKEN)@github.com/zkSNACKs/WasabiDoc.git -u "Azure Pipeline <azure-pipeline@wasabiwallet.io>"
   displayName: 'Build and deploy'
