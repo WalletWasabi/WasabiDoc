@@ -26,7 +26,7 @@ When you are ever bored and want to be productive, why not pick up one of these 
 - [Improve cluster history](https://github.com/zkSNACKs/WalletWasabi/issues/612)
 - [Replace by fee integration](https://github.com/zkSNACKs/WalletWasabi/issues/1543)
 - [Encryption manager BIP 322](https://github.com/zkSNACKs/WalletWasabi/issues/1121)
-- [Adress typo location detector](https://github.com/zkSNACKs/WalletWasabi/issues/2114)
+- [Address typo location detector](https://github.com/zkSNACKs/WalletWasabi/issues/2114)
 - [Sweap private key](https://github.com/zkSNACKs/WalletWasabi/issues/486)
 
 
