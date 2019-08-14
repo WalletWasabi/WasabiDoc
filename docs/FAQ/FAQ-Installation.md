@@ -36,7 +36,7 @@ You can verify that the PGP key [21D7 CA45 565D BCCE BE45 115D B4B7 2266 C47E 07
 When you have a software package that was signed by this key, then you can be sure that this is an official release approved by Adam.
 This protects you against malicious man in the middle attacks where bad guys give you a fake version of Wasabi with malicious code.
 
-@[youtubePlaylist](PLPj3KCksGbSZkVpgAZjAFfFp4D0SHLnFw)
+@[youtubePlaylist](PLPj3KCksGbSZkVpgAZjAFfFp4D0SHLnFw,psl35MisYxo)
 ::::
 
 :::details

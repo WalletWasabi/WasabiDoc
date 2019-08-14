@@ -101,7 +101,7 @@ Optionally you can also specify the start position of a video in seconds: (e.g. 
 And the index of the video of a playlist: (e.g. starts the third video)
 
 ```md
-@[youtubePlaylist](PLAYLIST_ID,3)
+@[youtubePlaylist](PLAYLIST_ID,VIDEO_ID)
 ```
 
 ### Text Highlights

@@ -9,6 +9,16 @@ const openDetails = hash => {
   }
 }
 
+const openVideo = embedEl => {
+  const lazyAttr = 'data-src'
+  const iframe = embedEl.querySelector(`iframe[${lazyAttr}]`)
+  if (iframe) {
+    const src = iframe.getAttribute(lazyAttr)
+    console.log(src)
+    iframe.setAttribute('src', src)
+  }
+}
+
 export default () => {
   if (typeof process === 'undefined' || process.env.VUE_ENV !== 'server') {
     // initial page rendering
@@ -16,10 +26,15 @@ export default () => {
       window.setTimeout(() => openDetails(location.hash), 500)
     })
 
-    // sidebar link clicks
     document.addEventListener('click', e => {
+      // sidebar link clicks
       if (e.target.matches('.sidebar-link')) {
         openDetails(location.hash)
+      }
+
+      // youtube previews
+      if (e.target.matches('.ytEmbed')) {
+        openVideo(e.target)
       }
     })
   }
