@@ -132,11 +132,99 @@ That said, if multiple chain-analysis companies attempt to flood the zkSNACKs mi
 See [here](https://github.com/nopara73/ZeroLink/#e-sybil-attack) for more info.
 :::
 
+:::details
+### What is the history of Wasabi?
+
+Ádám Ficsor worked with several others on a privacy-focused Bitcoin wallet called Hidden Wallet all the way [back in December 2015](https://docs.google.com/drawings/d/1wLL7aSgYBWNoyzllg6_haisFt-gQCf-QUzVzQPkARts/edit).
+Wasabi was unveiled in 2018 at the Building on Bitcoin conference by Ádám.
+At the time, Wasabi was essentially HiddenWallet rebranded and rewritten from scratch with some new features.
+Key dates:
+- The Beta release was on August 1 (on the first anniversary of UASF.)
+- The 1.0 release was on October 31 (on the tenth anniversary of the Bitcoin Whitepaper.)
+
+@[youtube](XORDEX-RrAI,6420)
+
+:::
+
+:::details
+### Who is contributing to Wasabi??
+
+There are many Wasabikas working with great effort and care to manifest this powerful tool of self defense.
+[Over 35 peers](https://github.com/zkSNACKs/WalletWasabi/graphs/contributors) have already contributed to the repository, and more and more supporters are joining the [dojo](/building-wasabi/Dojo.md).
+Four of the main contributors are [Ádám Ficsor](https://github.com/nopara73) [co-founder and CTO of [zkSnacks Ltd](https://zksnacks.com/), co-author of the [zero link Bitcoin fungibility framework](https://github.com/nopara73/ZeroLink)], [Lucas Ontivero](https://github.com/lontivero) [lead engineer of [zkSnacks Ltd](https://zksnacks.com/)], [Dávid Molnár](https://github.com/molnard) [[zkSnacks Ltd](https://zksnacks.com/) employee], and [Dan Walmsley](https://github.com/danwalmsley) [maintainer of [Avalonia UI Framework](https://github.com/AvaloniaUI/Avalonia)].
+For an inclusive list of all the Wasabikas, not just the code developers, please visit the [dojo](/building-wasabi/Dojo.md).
+
+@[youtube](F8xNSOhbWrw)
+
+@[youtube](Yg7_3LIutJA)
+
+@[youtube](X9BB_9faJE8)
+
+:::
+
+::::details
+### Why is Wasabi libre and open source software?
+
+Wasabi follows the philosophy behind Bitcoin by making the software open source and by publishing it under MIT License.
+Average Bitcoin users prefer open source software to proprietary software for a number of reasons, including:
+
+:::tip Control
+Many people prefer open source software because they have more control over that kind of software.
+:::
+
+They can examine the code to make sure it's not doing anything they don't want it to do, and they can change parts of it they don't like.
+Users who aren't programmers also benefit from open source software, because they can use this software for any purpose they wish—not merely the way someone else thinks they should.
+
+:::tip Training
+Other people like open source software because it helps them become better programmers.
+:::
+
+Because open source code is publicly accessible, students can easily study it as they learn to make better software.
+Students can also share their work with others, inviting comment and critique, as they develop their skills.
+When people discover mistakes in programs' source code, they can share those mistakes with others to help them avoid making those same mistakes themselves.
+
+:::tip Security
+Some people prefer open source software because they consider it more secure and stable than proprietary software.
+:::
+
+Because anyone can view and modify open source software, someone might spot and correct errors or omissions that a program's original authors might have missed.
+And because so many programmers can work on a piece of open source software without asking for permission from original authors, they can fix, update, and upgrade open source software more quickly than they can proprietary software.
+
+:::tip Stability
+Many users prefer open source software to proprietary software for important, long-term projects.
+:::
+
+Because programmers publicly distribute the source code for open source software, users relying on that software for critical tasks can be sure their tools won't disappear or fall into disrepair if their original creators stop working on them.
+Additionally, open source software tends to both incorporate and operate according to open standards.
+::::
+
+:::details
+### What is the general idea of ZeroLink CoinJoin?
+
+While fungibility is an essential property of good money, Bitcoin has its limitations in this area.
+Numerous fungibility improvements have been proposed; however none of them have addressed the privacy issues in full.
+ZeroLink is designed so that no participant or outside observer can spy on the user.
+The scope of ZeroLink is not limited to a single transaction, it extends to transaction chains and it addresses various network layer deanonymizations, however its scope is limited to Bitcoin's first layer.
+Even if an off-chain anonymity solution gets widely adopted, ultimately the entrance and exit transactions will always be settled on-chain.
+Therefore there will always be need for on-chain privacy.
+
+Ideal fungibility requires every Bitcoin transaction to be indistinguishable from each other, but it is an unrealistic goal.
+ZeroLink's objective is to break all links between separate sets of coins.
+ZeroLink presents a wallet privacy framework coupled with Chaumian CoinJoin, which was first introduced in 2013 by Gregory Maxwell.
+A mixing round runs within seconds, its anonymity set can go beyond a single CoinJoin transaction's if needed, and its DoS resilience presumes a transaction fee environment above $1 Bitcoin.
+Hopefully, ZeroLink will enable the usage of Bitcoin in a fully anonymous way for the first time.
+
+ZeroLink defines a pre-mix and a post-mix wallet and a mixing technique.
+Pre-mix wallet functionality can be added to any Bitcoin wallet without much overhead.
+Post-mix wallets on the other hand have strong privacy requirements, regarding coin selection, private transaction and balance retrieval, transaction input and output indexing and broadcasting.
+The requirements and recommendations for pre and post-mix wallets together define the Wallet Privacy Framework.
+Coins from pre-mix wallets to post-mix wallets are moved by mixing. Most on-chain mixing techniques, like CoinShuffle, CoinShuffle++ or TumbleBit's Classic Tumbler mode can be used.
+However ZeroLink defines its own mixing technique: Chaumian CoinJoin.
+
+For the complete explanation please read [ZeroLink: The Bitcoin Fungibility Framework](https://github.com/nopara73/ZeroLink/).
+:::
+
 ## Further Questions
 
-- What is the history of Wasabi?
-- How does Zero Link differ from other CoinJoin implementations?
-- Who is contributing to Wasabi?
 - What are the minimal requirements to run Wasabi?
-- Why is Wasabi libre and open source software?
 - What do peers say about Wasabi?
