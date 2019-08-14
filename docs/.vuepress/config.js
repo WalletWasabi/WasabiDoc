@@ -5,7 +5,7 @@ const youtubeEmbed = (id, path) => `
   <div class="ytEmbed" data-id="${id}" style="background-image:url(https://img.youtube.com/vi/${id}/hqdefault.jpg);">
     <iframe
       title="YouTube ${id}"
-      data-src="https://www.youtube-nocookie.com/embed/${path}&autoplay=1&modestbranding=1&color=white"
+      data-src="https://www.youtube-nocookie.com/embed/${path}&autoplay=1&autohide=1&modestbranding=1&color=white&rel=0"
       frameborder="0"
       allow="autoplay;encrypted-media;picture-in-picture"
       allowfullscreen
