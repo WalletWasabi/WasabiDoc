@@ -154,9 +154,9 @@ Among others, here is where your wallet files and your logs reside.
 
 ## OSX
 
-Check out this video guide:
-
 @[youtube](_Zmc54XYzBA)
+
+@[youtube](UZ9z5COXaG0)
 
 If you have already imported Ádám Ficsor's public key, then jump to step 4.
 
