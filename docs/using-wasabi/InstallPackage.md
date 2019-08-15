@@ -98,8 +98,6 @@ Press `OK` and close Kleopatra.
 
 ## Debian and Ubuntu
 
-Check out this video guide:
-
 @[youtube](DUc9A76rwX4)
 
 If you have already imported Ádám Ficsor's public key, then jump to step 2.
@@ -123,11 +121,9 @@ Among others, here is where your wallet files and your logs reside.
 
 ## Other Linux
 
-Check out this video guide: (Note that this video was created on OSX, but the steps are the same for Linux)
+(Note that this video was created on OSX, but the steps are the same for Linux)
 
 @[youtube](qFbv_b-bju4)
-
-Or this video guide:
 
 @[youtube](zPKpC9cRcZo)
 
