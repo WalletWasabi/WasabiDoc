@@ -15,10 +15,6 @@
 
 This guide describes how to reproduce Wasabi's builds.
 
-1. [Assert Correct Environment](DeterministicBuild.md#1-assert-correct-environment)
-2. [Reproduce Builds](DeterministicBuild.md#2-reproduce-builds)
-3. [Verify Builds](DeterministicBuild.md#3-verify-builds)
-
 ---
 
 ## 1. Assert Correct Environment
