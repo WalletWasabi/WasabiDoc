@@ -64,6 +64,24 @@ In the Bitcoin ecosystem, everyone can see the history of every account balance,
 All addresses and transactions are recorded in Bitcoin’s publicly distributed database, the blockchain.
 The addresses do not have names or IP addresses attached to them, so it is not always possible to know which transaction belongs to which individual.
 
+_**Threat model**_
+
+When considering privacy you need to think about exactly who you're hiding from.
+You must examine how a hypothetical adversary could spy on you, what kind of information is most important to you and which technology you need to use to protect your privacy.
+The kind of behaviour needed to protect your privacy therefore depends on your threat model.
+
+Newcomers to privacy often think that they can simply download some software and all their privacy concerns will be solved.
+This is not so.
+Privacy requires a change in behaviour, however slight.
+For example, imagine if you had a perfectly private internet where who you're communicating with and what you say are completely private.
+You could still use this to communicate with a social media website to write your real name, upload a selfie and talk about what you're doing right now.
+Anybody on the internet could view that information so your privacy would be ruined even though you were using perfectly private technology.
+
+For details read the talk [Opsec for Hackers by grugq](https://www.slideshare.net/grugq/opsec-for-hackers).
+The talk is aimed mostly at political activists who need privacy from governments, but much the advice generally applies to all of us.
+
+Much of the time plausible deniability is not good enough because lots of spying methods only need to work on a statistical level (e.g. targeted advertising).
+
 ## Address Reuse
 
 The first rule of Bitcoin privacy:
