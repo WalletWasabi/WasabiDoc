@@ -101,7 +101,7 @@ Addresses being used more than once is very damaging to privacy because that lin
 The most private and secure way to use bitcoin is to send a brand new address to each person who pays you.
 After the received coins have been spent the address should never be used again.
 Also, a brand new bitcoin address should be demanded when sending bitcoin.
-Wasabi has a user interface which discourages address reuse.
+Wasabi has a user interface which discourages address reuse, by removing from the GUI ana address which has received a coin.
 
 It has been argued that the phrase "bitcoin address" was a bad name for this object because it implies it can be reused like an email address.
 A better name would be something like "bitcoin invoice".
