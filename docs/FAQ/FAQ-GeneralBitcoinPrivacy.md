@@ -94,6 +94,23 @@ There are bad ways to communicate, like querying a block explorer over clearnet,
 But regardless, running your own full node means that you don't need to communicate with anyone about your specific coins, and this is strictly better.
 ::::
 
+:::details
+### Why is it important to use a new address for every payment?
+
+Addresses being used more than once is very damaging to privacy because that links together more blockchain transactions with proof that they were created by the same entity.
+The most private and secure way to use bitcoin is to send a brand new address to each person who pays you.
+After the received coins have been spent the address should never be used again.
+Also, a brand new bitcoin address should be demanded when sending bitcoin.
+Wasabi has a user interface which discourages address reuse, by removing from the GUI ana address which has received a coin.
+
+It has been argued that the phrase "bitcoin address" was a bad name for this object because it implies it can be reused like an email address.
+A better name would be something like "bitcoin invoice".
+
+Bitcoin isn't anonymous but pseudonymous, and the pseudonyms are bitcoin addresses.
+Avoiding address reuse is like throwing away a pseudonym after its been used.
+:::
+
+
 ## The Privacy of Tor
 
 :::details
@@ -113,5 +130,3 @@ You can also configure many cloud storage providers in this way.
 :::
 
 ## Further Questions
-
-- Why is it important to use a new address for every payment?
