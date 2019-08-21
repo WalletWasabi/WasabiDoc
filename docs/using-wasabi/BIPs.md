@@ -22,12 +22,12 @@ Here is a list of all the supported and integrated Bitcoin Improvement Proposals
 - [BIP 39: Mnemonic Code for Generating Deterministic Keys](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki)
 - [BIP 44: Multi-Account Hierarchy for Deterministic Wallets](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki)
 - [BIP 72: bitcoin: uri extensions for Payment Protocol](https://github.com/bitcoin/bips/blob/master/bip-0072.mediawiki)
-- [BIP 84: Derivation scheme for P2WPKH Based Accounts](BIP.md#bip-84-derivation-scheme-for-p2wpkh-based-accounts)
+- [BIP 84: Derivation scheme for P2WPKH Based Accounts](BIPs.md#bip-84-derivation-scheme-for-p2wpkh-based-accounts)
 - [BIP 141: Segregated Witness (Consensus Layer)](https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki)
 - [BIP 142: Address Format for Segregated Witness](https://github.com/bitcoin/bips/blob/master/bip-0142.mediawiki)
 - [BIP 143: Transaction Signature Verification for Version 0 Witness Program](https://github.com/bitcoin/bips/blob/master/bip-0143.mediawiki)
 - [BIP 144: Segregated Witness (Peer Services)](https://github.com/bitcoin/bips/blob/master/bip-0144.mediawiki)
-- [BIP 158: Compact Block Filters for Light Clients](BIP.md#bip-158-compact-block-filters-for-light-clients)
+- [BIP 158: Compact Block Filters for Light Clients](BIPs.md#bip-158-compact-block-filters-for-light-clients)
 - [BIP 173: Base32 address format for native v0-16 witness outputs](https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki)
 - [BIP 174: Partially Signed Bitcoin Transaction Format](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki)
 - [Hardware Wallet Interface](https://github.com/bitcoin-core/HWI)
@@ -43,7 +43,7 @@ Here is a list of all the supported and integrated Bitcoin Improvement Proposals
 
 ## What is not supported
 
-- [BIP 37: Connection Bloom Filtering](BIP.md#bip-37-connection-bloom-filters)
+- [BIP 37: Connection Bloom Filtering](BIPs.md#bip-37-connection-bloom-filters)
 - [BIP 69: Lexicographical Indexing of Transaction Inputs and Outputs](https://github.com/bitcoin/bips/blob/master/bip-0069.mediawiki)
 - [BIP 70: Payment Protocol](https://github.com/bitcoin/bips/blob/master/bip-0070.mediawiki)
 - [BIP 125: Opt-In full Replace-by-Fee Signaling](https://github.com/bitcoin/bips/blob/master/bip-0125.mediawiki)
