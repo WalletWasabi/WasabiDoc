@@ -123,7 +123,7 @@ module.exports = {
             "/using-wasabi/WalletGeneration.md",
             "/using-wasabi/PasswordFinder.md",
             "/using-wasabi/Daemon.md",
-            "/using-wasabi/BIP.md",
+            "/using-wasabi/BIPs.md",
           ]
         },
 	{
