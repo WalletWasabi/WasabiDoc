@@ -224,7 +224,16 @@ However ZeroLink defines its own mixing technique: Chaumian CoinJoin.
 For the complete explanation please read [ZeroLink: The Bitcoin Fungibility Framework](https://github.com/nopara73/ZeroLink/).
 :::
 
+:::details
+### What are the minimal requirements to run Wasabi?
+
+- 64-bit architecture
+- Windows 7 or newer
+- MacOS 10.12 or newer
+- For Linux it depends on the specific OS
+
+:::
+
 ## Further Questions
 
-- What are the minimal requirements to run Wasabi?
 - What do peers say about Wasabi?
