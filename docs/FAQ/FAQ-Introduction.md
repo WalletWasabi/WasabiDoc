@@ -230,7 +230,7 @@ For the complete explanation please read [ZeroLink: The Bitcoin Fungibility Fram
 - 64-bit architecture
 - Windows 7 or newer
 - MacOS 10.12 or newer
-- For Linux it depend on the specific OS
+- For Linux it depends on the specific OS
 
 :::
 
