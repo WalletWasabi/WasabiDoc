@@ -125,13 +125,14 @@ So this fun and unconventional work flow has saved the loss of many sats already
 :::
 
 :::details
-## Why BIP 38?
+### Why BIP 38?
 
 [BIP 38](https://github.com/bitcoin/bips/blob/master/bip-0038.mediawiki) is a good standard, a well-tested and very secure way to encrypt a private key.
 It is also implemented in the [NBitcoin library](https://github.com/MetacoSA/NBitcoin) so, it's easy to use.
 Additionally, there is no standard way (bip) to encrypt HD wallets.
 Take into account that it is not only encryption what bip38 provides but also a brute-force protection.
 :::
+
 
 ## Synchronization
 
@@ -284,6 +285,14 @@ You can see the address QR code, public key and the key path in the drop down me
 Click on the arrow on the left side of the address to reveal the extra details.
 
 ![](/ReceiveAddressDropDown.png)
+:::
+
+:::details
+### What derivation paths does Wasabi use?
+
+Wasabi follows [BIP 84: Derivation scheme for P2WPKH Based Accounts](IP 84: Derivation scheme for P2WPKH Based Accounts), so the main path is `m/84'/0'/0'`.
+On TestNet and RegTest Wasabi uses `m/84'/0'/0'`, and not the standard `m/84'/1'/0'`.
+Due to the CoinJoin implementation, the key depth can be rather large, thus when recovering the gap limit should be elevated to at least 100.
 :::
 
 :::details
