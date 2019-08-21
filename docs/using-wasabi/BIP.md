@@ -22,7 +22,7 @@ Here is a list of all the supported and integrated Bitcoin Improvement Proposals
 - [BIP 39: Mnemonic Code for Generating Deterministic Keys](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki)
 - [BIP 44: Multi-Account Hierarchy for Deterministic Wallets](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki)
 - [BIP 72: bitcoin: uri extensions for Payment Protocol](https://github.com/bitcoin/bips/blob/master/bip-0072.mediawiki)
-- [BIP 84: Derivation scheme for P2WPKH Based Accounts](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki)
+- [BIP 84: Derivation scheme for P2WPKH Based Accounts](BIP.md#bip-84-derivation-scheme-for-p2wpkh-based-accounts)
 - [BIP 141: Segregated Witness (Consensus Layer)](https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki)
 - [BIP 142: Address Format for Segregated Witness](https://github.com/bitcoin/bips/blob/master/bip-0142.mediawiki)
 - [BIP 143: Transaction Signature Verification for Version 0 Witness Program](https://github.com/bitcoin/bips/blob/master/bip-0143.mediawiki)
@@ -55,6 +55,14 @@ Here is a list of all the supported and integrated Bitcoin Improvement Proposals
 Bloom filters (BIP37) are filters that a client will send a Bitcoin full node which says "Hey, if you see any transactions that get caught in this filter, they may or may not be mine!".
 What would happen next is that a Bitcoin node would start sending tons and tons of transactions to the client, and the client would proceed to distinguish the 99% irrelevant transactions against the 1% relevant ones.
 This was quite brilliant of an idea at the time, but has since been proven to not protect user privacy, at the expense of wasting a ton of bandwidth and subjecting users to other risks.
+
+### [BIP 84: Derivation scheme for P2WPKH Based Accounts](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki)
+
+This BIP defines a standard derivation scheme for hirarchical deterministic wallets BIP 32, specifically for segregated witness P2WPKH BIP 173.
+This allows to generate one root master seed that can derive a tree of public keys with different paths BIP 44.
+`m / purpose' / coin_type' / account' / change / address_index`.
+Wasabi specifically uses this standard `m/84'/0'/0'`.
+On the TestNet and on the RegTest Wasabi deviates from the standard and usees `m/84'/0'/0'` instead of `m/84'/1'/0'`.
 
 ### [BIP 158: Compact Block Filters for Light Clients](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki)
 
