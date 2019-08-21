@@ -22,7 +22,6 @@ Here is a list of all the supported and integrated Bitcoin Improvement Proposals
 ### BIP 21: URI Scheme
 
 [BIP 21: URI Scheme](https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki)
-foo
 :::
 
 :::details
@@ -59,8 +58,8 @@ foo
 :::details
 ### BIP 84: Derivation scheme for P2WPKH Based Accounts
 
-[BIP 84](BIP.md#bip-84-derivation-scheme-for-p2wpkh-based-accounts) defines a standard derivation scheme for hirarchical deterministic wallets BIP 32, specifically for segregated witness P2WPKH BIP 173.
-This allows to generate one root master seed that can derive a tree of public keys with different paths BIP 44.
+[BIP 84](BIP.md#bip-84-derivation-scheme-for-p2wpkh-based-accounts) defines a standard derivation scheme for hirarchical deterministic wallets BIP 32, specifically for segregated witness P2WPKH [BIP 173](BIP.md#bip-173-base32-address-format-for-native-v0-16-witness-outputs).
+This allows to generate one root master seed that can derive a tree of public keys with different paths [BIP 44](BIP.md#bip-44-multi-account-hierarchy-for-deterministic-wallets).
 `m / purpose' / coin_type' / account' / change / address_index`.
 Wasabi specifically uses this standard `m/84'/0'/0'`.
 On the TestNet and on the RegTest Wasabi deviates from the standard and usees `m/84'/0'/0'` instead of `m/84'/1'/0'`.
