@@ -58,7 +58,7 @@ Here is a list of all the supported and integrated Bitcoin Improvement Proposals
 :::details
 ### BIP 84: Derivation scheme for P2WPKH Based Accounts
 
-[BIP 84](BIP.md#bip-84-derivation-scheme-for-p2wpkh-based-accounts) defines a standard derivation scheme for hirarchical deterministic wallets BIP 32, specifically for segregated witness P2WPKH [BIP 173](BIP.md#bip-173-base32-address-format-for-native-v0-16-witness-outputs).
+[BIP 84](BIP.md#bip-84-derivation-scheme-for-p2wpkh-based-accounts) defines a standard derivation scheme for hierarchical deterministic wallets BIP 32, specifically for segregated witness P2WPKH [BIP 173](BIP.md#bip-173-base32-address-format-for-native-v0-16-witness-outputs).
 This allows to generate one root master seed that can derive a tree of public keys with different paths [BIP 44](BIP.md#bip-44-multi-account-hierarchy-for-deterministic-wallets).
 `m / purpose' / coin_type' / account' / change / address_index`.
 Wasabi specifically uses this standard `m/84'/0'/0'`.
@@ -184,7 +184,7 @@ Other branches would only be used where some participant is failing to cooperate
 :::details
 ### BIP 37: Connection Bloom Filtering
 
-[Bloom filters](BIP.md#bip-37-connection-bloom-filters) are filters that a client will send a Bitcoin full node which says "Hey, if you see any transactions that get caught in this filter, they may or may not be mine!".
+[Bloom filters](BIP.md#bip-37-connection-bloom-filters) are filters that a client will send to a Bitcoin full node which says "Hey, if you see any transactions that get caught in these filters, they may or may not be mine!".
 What would happen next is that a Bitcoin node would start sending tons and tons of transactions to the client, and the client would proceed to distinguish the 99% irrelevant transactions against the 1% relevant ones.
 This was quite brilliant of an idea at the time, but has since been proven to not protect user privacy, at the expense of wasting a ton of bandwidth and subjecting users to other risks.
 
