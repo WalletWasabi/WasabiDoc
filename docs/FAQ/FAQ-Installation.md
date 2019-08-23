@@ -33,7 +33,7 @@ Wasabi is tailor made so that you do **not** have to trust anyone, but you have 
 With PGP signatures you can verify that the software package you download is actually the one by the developers.
 Every release of Wasabi is signed by [zkSNACKs](https://zksnacks.com/), the company behind Wasabi.
 You can verify that the PGP key [6FB3 872B 5D42 292F 5992 0797 8563 4832 8949 861E](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt) is actually the one of [zkSNACKs](https://pgp.key-server.io/search/zksnacks) by exploring the [web of trust](https://en.wikipedia.org/wiki/Web_of_trust).
-When you have a software package that was signed by this key, then you can be sure that this is an official release approved by Adam.
+When you have a software package that was signed by this key, then you can be sure that this is an official release approved by zkSNACKs.
 This protects you against malicious man in the middle attacks where bad guys give you a fake version of Wasabi with malicious code.
 
 @[youtubePlaylist](PLPj3KCksGbSZkVpgAZjAFfFp4D0SHLnFw,psl35MisYxo)
@@ -124,7 +124,7 @@ It will also be announced on [Twitter](https://twitter.com/wasabiwallet), [Reddi
 ### How do I securely upgrade Wasabi?
 
 You can download the software build for the different operating systems on the main [website](https://wasabiwallet.io) or better over [Tor](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion).
-Make sure you also download the signatures of the build and verify them for [Adam Ficsor's public key](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt).
+Make sure you also download the signatures of the build and verify them for [zkSNACKs' public key](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt).
 For step by step instructions, follow [this guide](https://github.com/zkSNACKs/WalletWasabi/blob/master/WalletWasabi.Documentation/Guides/InstallInstructions.md) or [see this video](https://youtu.be/DUc9A76rwX4).
 :::
 
