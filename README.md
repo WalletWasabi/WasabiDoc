@@ -64,12 +64,12 @@ Know that you do not need to understand/deal with VuePress at all in this case.
 
 - Wasabi [capitalized]
 - CoinJoin [capitalized, one word]
-- Every sentense must start in a new line.
+- Every sentence must start in a new line.
 - For a paragraph, add an `empty line` or `</br>` in the markdown.
 
 ### Reference files
 
-Please consider this repsoitory structure for hyperlinks, and use relative links whenever possible, for example:
+Please consider this repository structure for hyperlinks, and use relative links whenever possible, for example:
 
 ```
 [What is a CoinJoin?](FAQ-Introduction.md#what-is-a-coinjoin)
@@ -93,13 +93,13 @@ Youtube videos and playlists can be embedded via the following custom markdown t
 @[youtubePlaylist](PLAYLIST_ID)
 ```
 
-Optionally you can also specify the start position of a video in seconds: (e.g. starts at 100 seconds)
+Optionally you can also specify the start position of a video in seconds (e.g. starts at 100 seconds):
 
 ```md
 @[youtube](VIDEO_ID,100)
 ```
 
-And the index of the video of a playlist: (e.g. starts the third video)
+And the index of the video of a playlist (e.g. starts the third video):
 
 ```md
 @[youtubePlaylist](PLAYLIST_ID,VIDEO_ID)
