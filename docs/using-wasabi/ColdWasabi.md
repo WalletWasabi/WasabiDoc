@@ -1,3 +1,10 @@
+---
+{
+  "title": "Cold-Wasabi protocol",
+  "description": "A step by step guide on how to CoinJoin and send bitcoin to a hardware wallet for cold storage using WasabiWallet only."
+}
+---
+
 # Cold-Wasabi protocol
 
 This is how you can safely eat cold Wasabi, or store your coins on a hardware wallet after one or more rounds of CoinJoin using Wasabi Wallet.
