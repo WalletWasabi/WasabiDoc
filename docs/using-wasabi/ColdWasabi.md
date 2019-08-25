@@ -1,7 +1,7 @@
 ---
 {
   "title": "Cold-Wasabi protocol",
-  "description": "A step by step guide on how to CoinJoin and send bitcoin to a hardware wallet for cold storage using WasabiWallet only."
+  "description": "A step by step guide on how to CoinJoin and send bitcoin to a hardware wallet for cold storage using WasabiWallet only. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
 }
 ---
 
