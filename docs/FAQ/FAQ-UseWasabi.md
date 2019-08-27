@@ -273,7 +273,7 @@ It is especially important to **NEVER** send your extended public key to any thi
 
 Wasabi generates Bech32 addresses only, also known as bc1 addresses or native SegWit addresses.
 These addresses start with the characters `bc1...` Some wallets/exchanges do not yet support this type of address and may give an error message (e.g. "unknown bitcoin address").
-The solution is to manage your funds with a wallet which does support Bech32, [see list](https://en.bitcoin.it/wiki/Bech32_adoption).
+The solution is to manage your funds with a wallet which does support Bech32. To check Bech32 adoption and exchange/wallet support you can follow [Bitcoin.it Wiki](https://en.bitcoin.it/wiki/Bech32_adoption) and [When Segwit? website](https://whensegwit.com/#who).
 
 Be careful, if you send all your coins from an old wallet to a new wallet (from the table above) in one transaction then you will merge all your coins which is bad for privacy - instead, **send the coins individually** or if possible **import the seed in the new wallet**.
 :::
