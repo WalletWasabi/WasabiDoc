@@ -25,6 +25,43 @@ Knowledge you choose not to share with others, things you only tell one individu
 How much money you earn, and where you spend it, is only your business, and of no concern to most other individuals.
 ::::
 
+:::details
+### How is financial privacy an essential element to fungibility in Bitcoin?
+
+If you can meaningfully distinguish one coin from another, then their fungibility is weak.
+If our fungibility is too weak in practice, then we cannot be decentralized: if someone important announces a list of stolen coins they won't accept coins derived from, you must carefully check coins you receive against that list and return the ones that fail.
+Everyone gets stuck checking blacklists issued by various authorities because in that world we'd all not like to get stuck with bad coins.
+This adds friction and transactional costs and makes Bitcoin less valuable as a money.
+:::
+
+:::details
+### How is financial privacy is an essential for entrepreneurs?
+
+If you run a business, you cannot effectively set prices if your suppliers and customers can see all your transactions against your will.
+You cannot compete effectively if your competition is tracking your sales.
+Individually your informational leverage is lost in your private dealings if you don't have privacy over your accounts: if you pay your landlord in Bitcoin without enough privacy in place, your landlord will see when you've received a pay raise and can hit you up for more rent.
+:::
+
+:::details
+### How is financial privacy essential for personal safety?
+
+If thieves can see your spending, income, and holdings, they can use that information to target and exploit you.
+Without privacy malicious parties have more ability to steal your identity, snatch your large purchases off your doorstep, or impersonate businesses you transact with towards you... they can tell exactly how much to try to scam you for.
+:::
+
+:::details
+### How is financial privacy essential for human dignity?
+
+No one wants the snotty barista at the coffee shop or their nosy neighbors commenting on their income or spending habits.
+No one wants their baby-crazy in-laws asking why they're buying contraception (or sex toys).
+Your employer has no business knowing what church you donate to.
+Only in a perfectly enlightened discrimination free world where no one has undue authority over anyone else could we retain our dignity and make our lawful transactions freely without self-censorship if we don't have privacy.
+
+Most importantly, financial privacy isn't incompatible with things like law enforcement or transparency.
+You can always keep records, be ordered (or volunteer) to provide them to whomever, have judges hold against your interest when you can't produce records (as is the case today).
+None of this requires globally visible public records.
+:::
+
 ## The Privacy of Bitcoin
 
 :::details
@@ -69,6 +106,19 @@ This is why making lots of transactions, increases your anonymity in the Bitcoin
 Similarly, if you receive 0.5 bitcoin but want to spend 1 bitcoin, you need to own additional Bitcoin addresses with a combined value of at least 0.5 bitcoin in them.
 Again it’s a 50% guess, but now you have one extra publicly visible Bitcoin address.
 Having publicly visible Bitcoin addresses could make it easier to find out your identity.
+:::
+
+:::details
+### What financial privacy does Bitcoin promise?
+
+Globally visible public records in finance are completely unheard-of.
+They are undesirable and arguably intolerable.
+The Bitcoin whitepaper made a promise of how we could get around the visibility of the ledger with pseudonymous addresses, but the ecosystem has broken that promise in a bunch of places and we ought to fix it.
+Bitcoin could have coded your name or IP address into every transaction.
+It didn't.
+The whitepaper even has a section on privacy.
+It's incorrect to say that Bitcoin isn't focused on privacy.
+Sufficient privacy is an essential prerequisite for a viable digital currency.
 :::
 
 ::::details
