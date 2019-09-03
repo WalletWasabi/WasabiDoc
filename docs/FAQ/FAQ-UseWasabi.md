@@ -457,6 +457,18 @@ You can toggle the display of the fee between `sat/vByte` & `percentage of trans
 @[youtube](ypfZT9GlqTw)
 
 :::details
+### What's the legal status of Wasabi/CoinJoin?
+
+FinCEN is a bureau of the U.S. Department of the Treasury.
+Collected all relevant rules together and gave a guidance: FIN-2019-G001 (May 9, 2019)
+Wasabi is an Anonymizing software provider as described in 4.5.1(b) so it is not a money transmitter, thus not under BSA(Bank Secrecy Act) regulations.
+Basically we can continue to operate like now and it is compliant.
+
+Here's a great explanation about it:
+@[youtube](tLOMcU8MhWM,1305)
+:::
+
+:::details
 ### Why aren't there smaller equal denomination outputs like 0.05 BTC?
 
 There are many reasons for that.
@@ -655,6 +667,24 @@ The signing phase ends when the coordinator has all the valid signatures for all
 The CoinJoin transaction is successfully built and signed, and it is now ready to be [broadcasted](https://github.com/nopara73/zerolink#transaction-broadcasting) to the peers of the Bitcoin network.
 The coordinator sends this transaction over the tor network to a random full node, and from there it is gossiped to other nodes and miners.
 Wasabi is saving on mining fees by setting a confirmation target of roughly 12 hours, but you can re-register unconfirmed anonset outputs for the next round of CoinJoin.
+:::
+
+:::details
+### Is there any additional anonymity using multiple wallets for CoinJoins?
+
+You'd gain 1 less anonymity set than if you'd only mix with one wallet (and Wasabi doesn't display that).
+On the other hand, the systemic anonymity is slightly improved if a few people are mixing with multiple wallets, because that removes the certainly on this Blockchain analysis assumption.
+:::
+
+:::details
+### How is the peer target determined for CoinJoins?
+
+`2*2 = 4` and `3*3 = 9`. `2->3: 50% increase`, `4->9:125%` increase.
+So remixing with larger anonsets is exponentially more effective than smaller anonsets.
+Regarding why do we want 100 number, is among some other reasons, because that was our calculation to be that would make rounds happen in every 2-5 minutes, considering the liquidity of the centralized mixers.
+Regarding DoS attack, right now our DoS configuration is set to be pretty weak and this seems to be sufficient for the time being.
+If a DoS attack would to happen, Wasabi team would just harden it in the config file and would kick the bad actors out.
+Now if even that'd fail, then we can start thinking about lowering the required peers and also other methods.
 :::
 
 ## Hardware Wallet
