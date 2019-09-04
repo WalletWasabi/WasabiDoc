@@ -8,7 +8,7 @@
 # Contributions to Wasabi
 
 :::details
-### How to donate to WasabiWallet?
+### How to donate to Wasabi Wallet?
 
 Adam Ficsor had a donation address for a few years while he was working alone on Wasabi.
 It's not the case anymore.
