@@ -459,9 +459,9 @@ You can toggle the display of the fee between `sat/vByte` & `percentage of trans
 :::details
 ### What's the legal status of Wasabi/CoinJoin?
 
-FinCEN is a bureau of the U.S. Department of the Treasury.
-Collected all relevant rules together and gave a guidance: FIN-2019-G001 (May 9, 2019)
-Wasabi is an Anonymizing software provider as described in 4.5.1(b) so it is not a money transmitter, thus not under BSA(Bank Secrecy Act) regulations.
+On May 9, 2019, the Financial Crimes Enforcement Network (FinCEN) issued an interpretive guidance that stated the following in section 4.5.1(b):
+> An anonymizing software provider is not a money transmitter. FinCEN regulations exempt from the definition of money transmitter those persons providing "the delivery, communication, or network access services used by a money transmitter to support money transmission services."
+Wasabi is an Anonymizing software provider so it is not a money transmitter, thus not under Bank Secrecy Act (BSA) regulations.
 Basically we can continue to operate like now and it is compliant.
 
 Here's a great explanation about it:
