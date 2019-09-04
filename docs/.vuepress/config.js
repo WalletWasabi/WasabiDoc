@@ -12,12 +12,19 @@ const youtubeEmbed = (id, path) => `
     ></iframe>
   </div>`
 
+const themeColor = "#211b24"
+
 module.exports = {
   title: "Wasabi",
   description: "This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop.",
   head: [
     ["link", { rel: "icon", href: "/favicon.ico" }],
-    ["link", { rel: "stylesheet", href: "https://fonts.googleapis.com/css?family=Inconsolata:400,700|Playfair+Display:700&display=swap" }]
+    ["link", { rel: "apple-touch-icon", href: "/apple-touch-icon.png", sizes: "180x180" }],
+    ["link", { rel: "manifest", href: "/site.webmanifest" }],
+    ["link", { rel: "mask-icon", href: "/safari-pinned-tab.svg", color: themeColor }],
+    ["link", { rel: "stylesheet", href: "https://fonts.googleapis.com/css?family=Inconsolata:400,700|Playfair+Display:700&display=swap" }],
+    ["meta", { name: "msapplication-TileColor", content: themeColor }],
+    ["meta", { name: "theme-color", content: themeColor }],
   ],
   plugins: [
     "@vuepress/back-to-top",
