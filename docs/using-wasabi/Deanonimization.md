@@ -32,7 +32,7 @@ To avoid being tracked in this way, it is important to make all payment requests
 A signed message is the only strong proof that you own a Bitcoin address without revealing the private key.
 Be careful when signing messages using your Bitcoin keys, though.
 Signed messages are a great feature, but they allow anybody to know that you control the Bitcoin address you signed from.
-If someone is trying to de-anonymize you, they might be satisfied with a weaker form of proof than a signed message: Knowing that you keep records of public addresses is enough evidence for someone to draw the conclusion that you are involved in Bitcoin transactions and the Bitcoin blockchain will point them exactly to which transactions.
+If someone is trying to de-anonymize you, they might be satisfied with a weaker form of proof than a signed message: knowing that you keep records of public addresses is enough evidence for someone to draw the conclusion that you are involved in Bitcoin transactions and the Bitcoin blockchain will point them exactly to which transactions.
 All they have to do is search for the address you recorded.
 Wasabi stores and encrypts public addresses and private keys.
 You can safely store your wallet in an external USB drive, a cloud storage service, or even your email account if the private keys are sufficiently encrypted.
