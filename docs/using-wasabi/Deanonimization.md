@@ -23,7 +23,7 @@ Before that happens, it's likely that only two parties (the recipient and the se
 If you are making a search for an address that is not in the blockchain, either you are the owner of this address, or someone is requesting a payment from you.
 To avoid being tracked in this way, it is important to make all payment requests and other mentions of addresses via encrypted channels:
 - Make sure the website you are visiting has HTTPS enabled when you search for Bitcoin addresses
-- Use VPNs and Tor when possible. You should check addresses with Blockstream Explora via their [.onion v3 address](http://explorerzydxu5ecjrkwceayqybizmpjjznk5izmitf2modhcusuqlid.onion/)
+- Use VPNs and Tor when possible. You should check addresses with Blockstream Explorer via their [.onion v3 address](http://explorerzydxu5ecjrkwceayqybizmpjjznk5izmitf2modhcusuqlid.onion/).
 - Encrypt your communications with PGP (emails, files and text) and OTR (chats)
 
 
