@@ -7,7 +7,8 @@
 
 # How you can be de-anonymized using Bitcoin
 
-Sadly, there are hundreds of ways a Bitcoin transaction can be linked to someone's real identity, even by using Wasabi. True pseudonymity against a resourceful adversary is very difficult to achieve.
+Sadly, there are many ways a Bitcoin transaction can be linked to someone's real identity, even by using Wasabi.
+True pseudonymity against a resourceful adversary is very difficult to achieve.
 Any sincere approach to anonymity in Bitcoin requires a holistic use of encryption and communication tools.
 Over the course of just a few months, you could come into contact with hundreds of Bitcoin addresses.
 It is often only necessary to associate just one of these addresses with your real identity to work out your real identity.
