@@ -236,4 +236,11 @@ For the complete explanation please read [ZeroLink: The Bitcoin Fungibility Fram
 
 ## Further Questions
 
+:::details
+### Is there a way to check Wasabi uptime status?
+
+Yes, you can check the status of Wasabi-related services and websites (like coordinator, API, backend, etc.) via [UptimeRobot Wasabi Status Page](https://stats.uptimerobot.com/W7q65in4y)
+
+:::
+
 - What do peers say about Wasabi?
