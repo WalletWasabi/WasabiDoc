@@ -38,3 +38,9 @@ Wasabi stores and encrypts public addresses and private keys.
 You can safely store your wallet in an external USB drive, a cloud storage service, or even your email account if the private keys are sufficiently encrypted.
 But anybody with access to these mediums could estimate what addresses you control and the transactions you make.
 To protect yourself, you should encrypt all backups with a second password or PGP.
+
+## Be careful with public spaces
+
+Unless your intention is to receive public donations or payments with full transparency, publishing a Bitcoin address on any public space such as a website or social network is not a good idea when it comes to privacy.
+If you choose to do so, always remember that if you move any funds with this address to one of your other addresses, they will be publicly tainted by the history of your public address.
+Additionally, you might also want to be careful not to publish information about your transactions and purchases that could allow someone to identify your Bitcoin addresses.
