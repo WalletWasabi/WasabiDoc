@@ -190,7 +190,7 @@ You know that tor is properly connected, that all the block filters and all the 
 :::details
 ### What does it mean "Missing Filters"?
 
-The `Missing Filters` label indicates that Wasabi is still downloading the block filters and it's synching your wallet. You have just to wait until the status bar is `Ready`.
+The `Missing Filters` label indicates that Wasabi is still downloading the block filters and it's synchronizing your wallet. You have just to wait until the status bar is `Ready`.
 ::::
 
 :::details
