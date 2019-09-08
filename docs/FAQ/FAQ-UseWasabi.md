@@ -459,7 +459,7 @@ You can toggle the display of the fee between `sat/vByte` & `percentage of trans
 :::details
 ### What's the legal status of Wasabi/CoinJoin?
 
-On May 9, 2019, the Financial Crimes Enforcement Network (FinCEN) issued an interpretive guidance that stated the following in section 4.5.1(b):
+USA: On May 9, 2019, the Financial Crimes Enforcement Network (FinCEN) issued an interpretive guidance that stated the following in section 4.5.1(b):
 > An anonymizing software provider is not a money transmitter. FinCEN regulations exempt from the definition of money transmitter those persons providing "the delivery, communication, or network access services used by a money transmitter to support money transmission services."
 
 Wasabi is an Anonymizing software provider so it is not a money transmitter, thus not under Bank Secrecy Act (BSA) regulations.
@@ -683,7 +683,7 @@ On the other hand, the systemic anonymity is slightly improved if a few people a
 `2*2 = 4` and `3*3 = 9`. `2->3: 50% increase`, `4->9:125%` increase.
 So remixing with larger anonsets is exponentially more effective than smaller anonsets.
 Regarding why do we want 100 number, is among some other reasons, because that was our calculation to be that would make rounds happen in every 2-5 minutes, considering the liquidity of the centralized mixers.
-Regarding DoS attack, right now our DoS configuration is set to be pretty weak and this seems to be sufficient for the time being.
+Regarding DoS attack, right now our DoS configuration is set to be pretty permissive and this seems to be sufficient for the time being.
 If a DoS attack would to happen, Wasabi team would just harden it in the config file and would kick the bad actors out.
 Now if even that'd fail, then we can start thinking about lowering the required peers and also other methods.
 :::
