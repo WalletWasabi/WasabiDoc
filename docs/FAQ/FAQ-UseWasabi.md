@@ -664,7 +664,7 @@ You can try to make a CoinJoin via Wasabi by using tBTC (testnet BTC).
 Just download Wasabi and and get free tBTC from faucets like:
 [Coinfaucet.eu](https://coinfaucet.eu/en/btc-testnet/)
 or
-[Mempool.co](https://testnet-faucet.mempool.co/)
+[https://testnet-faucet.mempool.co/](https://testnet-faucet.mempool.co/)
 :::
 
 ## Hardware Wallet
