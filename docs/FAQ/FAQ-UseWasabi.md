@@ -660,7 +660,8 @@ Wasabi is saving on mining fees by setting a confirmation target of roughly 12 h
 :::details
 ### I'd like to experience CoinJoin but I'm not comfortable using real Bitcoin. What can I do?
 
-You can try to make a CoinJoin via Wasabi by using tBTC (testnet BTC).
+You can try to make a CoinJoin via Wasabi on the Bitcoin TestNet (an alternative Bitcoin blockchain, to be used for testing).
+Go to settings and change the network to TestNet.
 Just download Wasabi and and get free tBTC from faucets like:
 [Coinfaucet.eu](https://coinfaucet.eu/en/btc-testnet/)
 or
