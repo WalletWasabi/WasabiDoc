@@ -21,7 +21,7 @@ Bitcoin transactions are somewhat *traceable* and this creates the need for a wa
 
 *_"What kind of privacy? I'm not sure if I need that."_*
 
-When we make traditional financial transactions (banks, PayPal, etc.), no one but the service provider is able to track our spendings habits or account balances.
+When we make traditional financial transactions (Banks, PayPal, etc.), no one but the service provider is able to track our spending habits or account balances.
 
 ### Wasabi Wallet
 
