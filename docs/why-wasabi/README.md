@@ -15,7 +15,7 @@ And why Wasabi can make Bitcoin to an even better tool of self defense by defaul
 
 ## Gaining privacy with Wasabi Wallet for Bitcoin transactions
 
-### The peirceived problem
+### The perceived problem
 
 Bitcoin transactions are somewhat *traceable* and this creates the need for a wallet that specializes in privacy.
 
