@@ -25,7 +25,7 @@ When we make traditional financial transactions (Banks, PayPal, etc.), no one bu
 
 ### Wasabi Wallet
 
-Wasabi Wallet is an *open source* and *non-custodial* desktop wallet offered by zkSNACKs Ltd.
+Wasabi Wallet is an *open source*, *non-custodial*, *privacy-focused*, desktop Bitcoin wallet offered by zkSNACKs Ltd.
 it differentiates itself from many other wallets for its strong *focus on user privacy*.
 
 Wasabi's goal is to *not only provide the traditional privacy* of our banks but to go even further and *guarantee privacy against Wasabi itself*.
