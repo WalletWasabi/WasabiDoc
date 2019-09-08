@@ -43,4 +43,4 @@ To protect yourself, you should encrypt all backups with a second password or PG
 
 Unless your intention is to receive public donations or payments with full transparency, publishing a Bitcoin address on any public space such as a website or a social network is not a good idea when it comes to privacy.
 If you choose to do so, always remember that if you move any funds with this address to one of your other addresses, they will be publicly tainted by the history of your public address.
-Additionally, you might also want to be careful not to publish information about your transactions and purchases that could allow someone to identify your Bitcoin addresses.
+Additionally, you might also want to be careful not to publish information about your transactions that could allow someone to identify your Bitcoin addresses.
