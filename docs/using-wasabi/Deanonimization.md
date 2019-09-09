@@ -35,7 +35,7 @@ Be careful when signing messages using your Bitcoin keys, though.
 Signed messages are a great feature, but they allow anybody to know that you control the Bitcoin address you signed from.
 If someone is trying to de-anonymize you, they might be satisfied with a weaker form of proof than a signed message: knowing that you keep records of public addresses is enough evidence for someone to draw the conclusion that you are involved in Bitcoin transactions and the Bitcoin blockchain will point them exactly to which transactions.
 All they have to do is search for the address you recorded.
-Wasabi stores and encrypts public addresses and private keys.
+Wasabi encrypts and stores the master private key.
 You can safely store your wallet in an external USB drive, a cloud storage service, or even your email account if the private keys are sufficiently encrypted.
 But anybody with access to these mediums could estimate what addresses you control and the transactions you make.
 To protect yourself, you should encrypt all backups with a second password or PGP.
