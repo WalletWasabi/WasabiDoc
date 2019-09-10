@@ -682,10 +682,21 @@ On the other hand, the systemic anonymity is slightly improved if a few people a
 
 `2*2 = 4` and `3*3 = 9`. `2->3: 50% increase`, `4->9:125%` increase.
 So remixing with larger anonsets is exponentially more effective than smaller anonsets.
-Regarding why do we want 100 number, is among some other reasons, because that was our calculation to be that would make rounds happen in every 2-5 minutes, considering the liquidity of the centralized mixers.
+Regarding why do we want 100 number, is among some other reasons, because that was our calculation to be that would make rounds happen in every 2-5 minutes, considering the liquidity of some custodial mixers.
 Regarding DoS attack, right now our DoS configuration is set to be pretty permissive and this seems to be sufficient for the time being.
 If a DoS attack would to happen, Wasabi team would just harden it in the config file and would kick the bad actors out.
 Now if even that'd fail, then we can start thinking about lowering the required peers and also other methods.
+:::
+
+:::details
+### I'd like to experience CoinJoin but I'm not comfortable using real Bitcoin. What can I do?
+
+You can try to make a CoinJoin via Wasabi on the Bitcoin TestNet (an alternative Bitcoin blockchain, to be used for testing).
+Go to settings and change the network to TestNet.
+You can get tBTC from faucets like:
+[testnet-faucet.mempool.co](https://testnet-faucet.mempool.co/)
+or
+[coinfaucet.eu/en/btc-testnet](https://coinfaucet.eu/en/btc-testnet/)
 :::
 
 ## Hardware Wallet
@@ -983,8 +994,15 @@ Wasabi will implement the [Dandelion](https://github.com/gfanti/bips/blob/master
 
 CoinJoin
 
+:::details
+### How much anonymity set do I need?
+
+It is commonly said that an anonymity set of 50 is sufficient to evade blockchain forensics analysis.
+At least one round to re-mix your coins can increase your privacy drastically.
+With Wasabi this can be achieved in a matter of hours (or minutes if there are a lot of users).
+:::
+
 - How can I select UTXOs for CoinJoin?
-- How much anonymity set do I need?
 - How many rounds should I CoinJoin?
 - How does my wallet communicate with the Wasabi coordinator server?
 
