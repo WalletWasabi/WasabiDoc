@@ -142,6 +142,7 @@ module.exports = {
             "/using-wasabi/AddressReuse.md",
             "/using-wasabi/LostPassword.md",
             "/using-wasabi/NetworkLevelPrivacy.md",
+            "/using-wasabi/Deanonimization.md",
           ]
         }
       ],
