@@ -188,6 +188,13 @@ You know that tor is properly connected, that all the block filters and all the 
 :::
 
 :::details
+### What does it mean "Missing Filters"?
+
+The `Missing Filters` label indicates that Wasabi is still downloading the BIP158 block filters and it's synchronizing your wallet.
+You have just to wait until the status bar is `Ready`.
+::::
+
+:::details
 ### How long does the initial, and a subsequent synchronization take?
 
 It usually only takes a couple seconds to scan the block filters, download and parse the blocks.
