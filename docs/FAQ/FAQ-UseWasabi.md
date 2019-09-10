@@ -666,8 +666,6 @@ You can get tBTC from faucets like:
 [testnet-faucet.mempool.co](https://testnet-faucet.mempool.co/)
 or
 [coinfaucet.eu/en/btc-testnet](https://coinfaucet.eu/en/btc-testnet/)
-or
-[testnet-faucet.mempool.co](https://testnet-faucet.mempool.co/)
 :::
 
 ## Hardware Wallet
