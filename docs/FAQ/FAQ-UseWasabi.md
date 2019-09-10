@@ -657,6 +657,17 @@ The coordinator sends this transaction over the tor network to a random full nod
 Wasabi is saving on mining fees by setting a confirmation target of roughly 12 hours, but you can re-register unconfirmed anonset outputs for the next round of CoinJoin.
 :::
 
+:::details
+### I'd like to experience CoinJoin but I'm not comfortable using real Bitcoin. What can I do?
+
+You can try to make a CoinJoin via Wasabi on the Bitcoin TestNet (an alternative Bitcoin blockchain, to be used for testing).
+Go to settings and change the network to TestNet.
+You can get tBTC from faucets like:
+[testnet-faucet.mempool.co](https://testnet-faucet.mempool.co/)
+or
+[coinfaucet.eu/en/btc-testnet](https://coinfaucet.eu/en/btc-testnet/)
+:::
+
 ## Hardware Wallet
 
 @[youtube](aU8ysH9JH9M)
