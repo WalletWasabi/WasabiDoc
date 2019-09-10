@@ -11,6 +11,11 @@ We are happy to announce an experiment, called: **The Wasabi Contribution Game**
 
 ![](/ContributionGame.png)
 
+
+## Update (2019-07-25)
+
+[The Resolution Of The First Wasabi Contribution Game](https://github.com/zkSNACKs/WalletWasabi/issues/2016)
+
 ## Update (2019-07-08)
 
 In PR [link](https://github.com/zkSNACKs/WalletWasabi/pull/1850) nopara73 implemented @NicolasDorier's changes, so 17+217=234 points added to Nicolas's score.
