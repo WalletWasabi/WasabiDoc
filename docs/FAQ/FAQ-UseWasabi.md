@@ -678,7 +678,7 @@ On the other hand, the systemic anonymity is slightly improved if a few people a
 :::
 
 :::details
-### How is the peer target determined for CoinJoins?
+### How is the anonymity set target determined for CoinJoins?
 
 `2*2 = 4` and `3*3 = 9`. `2->3: 50% increase`, `4->9:125%` increase.
 So remixing with larger anonsets is exponentially more effective than smaller anonsets.
