@@ -663,9 +663,11 @@ Wasabi is saving on mining fees by setting a confirmation target of roughly 12 h
 You can try to make a CoinJoin via Wasabi on the Bitcoin TestNet (an alternative Bitcoin blockchain, to be used for testing).
 Go to settings and change the network to TestNet.
 You can get tBTC from faucets like:
-[https://coinfaucet.eu/en/btc-testnet/](https://coinfaucet.eu/en/btc-testnet/)
+[testnet-faucet.mempool.co](https://testnet-faucet.mempool.co/)
 or
-[https://testnet-faucet.mempool.co/](https://testnet-faucet.mempool.co/)
+[coinfaucet.eu/en/btc-testnet](https://coinfaucet.eu/en/btc-testnet/)
+or
+[testnet-faucet.mempool.co](https://testnet-faucet.mempool.co/)
 :::
 
 ## Hardware Wallet
