@@ -956,8 +956,10 @@ CoinJoin
 ### How much anonymity set do I need?
 
 It is commonly said that an anonymity set of 50 is sufficient to evade blockchain forensics analysis.
+At least one round to re-mix your coins can increase your privacy drastically.
 With Wasabi this can be achieved in a matter of hours (or minutes if there are a lot of users).
 :::
+
 - How can I select UTXOs for CoinJoin?
 - How many rounds should I CoinJoin?
 - How does my wallet communicate with the Wasabi coordinator server?
