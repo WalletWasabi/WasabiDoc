@@ -9,7 +9,7 @@
 
 # Lurking Wife Mode (LWM)
 
-Lurking Wife Mode is a function of Wasabi Wallet that hides sensitive and critical information from physical observers and allows you to post screenshots without having to worry about your privacy.
+Lurking Wife Mode is an exclusive Wasabi Wallet feature that hides sensitive and critical information from physical observers and allows you to post screenshots without worrying about your privacy.
 
 ![](https://i.imgur.com/4OgtaHP.png)
 
