@@ -98,7 +98,7 @@ In some cases it might be useful to see your logs, though please consider your p
 
 :::danger
 If you find a critical bug that puts users at serious harm, please take great care with responsible disclosure!
-Securely encrypt the detailed report with Ádám Ficsor's PGP key [21D7 CA45 565D BCCE BE45 115D B4B7 2266 C47E 075E](https://github.com/zkSNACKs/WalletWasabi/blob/master/SECURITY.md) and send it to [adam.ficsor73@gmail.com](mailto:adam.ficsor73@gmail.com).
+Securely encrypt the detailed report with Ádám Ficsor's PGP key [21D7 CA45 565D BCCE BE45 115D B4B7 2266 C47E 075E](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt) and send it to [adam.ficsor73@gmail.com](mailto:adam.ficsor73@gmail.com).
 :::
 ::::
 
