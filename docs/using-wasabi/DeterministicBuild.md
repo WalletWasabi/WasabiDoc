@@ -65,15 +65,15 @@ After installing WSL, just type `wsl` in explorer where your downloaded and buil
 #### .deb
 
 ```sh
-sudo dpkg -i Wasabi-1.1.6.deb
+sudo dpkg -i Wasabi-1.1.7.deb
 git diff --no-index linux-x64/ /usr/local/bin/wasabiwallet/
 ```
 
 #### .tar.gz
 
 ```sh
-tar -pxzf WasabiLinux-1.1.6.tar.gz
-git diff --no-index linux-x64/ WasabiLinux-1.1.6
+tar -pxzf WasabiLinux-1.1.7.tar.gz
+git diff --no-index linux-x64/ WasabiLinux-1.1.7
 ```
 
 #### .dmg
@@ -81,6 +81,6 @@ git diff --no-index linux-x64/ WasabiLinux-1.1.6
 You will need to install [7z](https://www.7-zip.org/) (or something else) to extract the `.dmg`: `sudo apt install p7zip-full`
 
 ```sh
-7z x Wasabi-1.1.6.dmg -oWasabiOsx
+7z x Wasabi-1.1.7.dmg -oWasabiOsx
 git diff --no-index osx-x64/ WasabiOsx/Wasabi\ Wallet.App/Contents/MacOS/
 ```
