@@ -23,7 +23,6 @@ And all the necessary information you need to quickly start with your invaluable
 - [Contribution Game](/building-wasabi/ContributionGame.html)
 - [Security Policy](/building-wasabi/Security.html)
 - [Code Coverage](/building-wasabi/CodeCoverage.html)
-- [Manual Testing](/building-wasabi/ManualTesting.html)
 - [Hardware Wallet Integration Testing](/building-wasabi/HardwareWalletTestingGuide.html)
 - [Developers debugging Guide](/building-wasabi/HowToDebug.html)
 - [Ports](/building-wasabi/Ports.html)
