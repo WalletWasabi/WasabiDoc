@@ -885,6 +885,12 @@ The `Tor Log File` shows the Tor specific logs.
 ![](/MenuFileOpen.png)
 :::
 
+:::details
+### How to activate Lurking Wife Mode?
+
+You can activate Lurking Wife Mode from `Settings` or by clicking on your wallet balance.
+You can read more about Lurking Wife Mode [here](/using-wasabi/LurkingWifeMode.md).
+:::
 
 ## Coin Control Best Practices
 
