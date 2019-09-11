@@ -1,7 +1,7 @@
 ---
 {
   "title": "Lurking Wife Mode",
-  "description": "A function that hides sensitive and critical information from physical observers and allows you to post screenshots without having to worry about your privacy. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
+  "description": "A feature that hides sensitive and critical information from physical observers and allows you to post screenshots without worrying about your privacy. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
 }
 ---
 
