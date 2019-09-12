@@ -168,7 +168,7 @@ You can update the master branch with `git pull`.
 
 Wasabi has [reproducible and deterministic builds](/using-wasabi/DeterministicBuild.html), which means that you can verify that the compiled packages are from the [source code](https://github.com/zksnacks/walletwasabi).
 
-On Windows, you can verify this with `git diff --no-index win7-x64 "C:\Program Files\WasabiWallet".
+On Windows, you can verify this with `git diff --no-index win7-x64 "C:\Program Files\WasabiWallet"`.
 
 On Debian and Ubuntu do
 <br />
@@ -180,7 +180,7 @@ On other Linux do
 
 And on Mac first unzip with
 <br />
-`7z x Wasabi-1.1.7.dmg -oWasabiOsx`
+`7z x Wasabi-1.1.7.dmg -oWasabiOsx`.
 <br />
 and verify with
 <br />
@@ -189,5 +189,13 @@ and verify with
 
 ## Further Questions
 
-- How can I install Wasabi headless daemon without GUI?
+:::details
+### How can I install Wasabi headless daemon without GUI?
+
+To use Wasabi's command line tools on Windows you have to use `wassabeed.exe` that is inside your `Program Files\WasabiWallet`.
+On Linux and OSX you can use the same software that you use for launching the GUI (`wassabee`).
+Let us start giving a glance to the command `help`:
+`$ wassabee run help`
+:::
+
 - How do I install the Wasabi backend server?
