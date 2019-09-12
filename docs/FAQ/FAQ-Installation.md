@@ -196,6 +196,11 @@ To use Wasabi's command line tools on Windows you have to use `wassabeed.exe` th
 On Linux and OSX you can use the same software that you use for launching the GUI (`wassabee`).
 Let us start giving a glance to the command `help`:
 `$ wassabee run help`
+
+One can run it with the same command: `wassabee mix --wallet WalletName`.
+Optionally you can add a `--keepalive` flag that will make sure your daemon will run forever and mixes forever.
+On Linux and OSX you can just add some parameters to the Wasabi executable and it'll act like a daemon, on Windows you have to use `wassabeed.exe` from Program Files.
+You may want to start with `--help`.
 :::
 
 - How do I install the Wasabi backend server?
