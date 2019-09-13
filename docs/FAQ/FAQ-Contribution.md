@@ -97,8 +97,8 @@ There is constantly a lot of work done to the code base, thus it's good to know 
 In some cases it might be useful to see your logs, though please consider your privacy and encrypt this data properly in direct communication with the developers.
 
 :::danger
-If you find a critical bug that puts users at serious harm, please take great care with responsible disclosure!
-Securely encrypt the detailed report with Ádám Ficsor's PGP key [21D7 CA45 565D BCCE BE45 115D B4B7 2266 C47E 075E](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt) and send it to [adam.ficsor73@gmail.com](mailto:adam.ficsor73@gmail.com).
+If you find a bug that puts users' privacy or security at serious risk, please take great care with responsible disclosure!
+Send an email to [adam.ficsor73@gmail.com](mailto:adam.ficsor73@gmail.com), preferably using PGP encryption [21D7 CA45 565D BCCE BE45 115D B4B7 2266 C47E 075E](https://github.com/zkSNACKs/WalletWasabi/blob/master/SECURITY.md).
 :::
 ::::
 
