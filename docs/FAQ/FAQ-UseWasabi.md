@@ -988,8 +988,7 @@ We connect to each peer through a different Tor stream.
 This enabled us to replace our transaction broadcasting mechanism.
 Now, we broadcast transactions to only one peer over Tor and immediately after that we disconnect the peer.
 
-If a user has a local Bitcoin node running, Wasabi will attempt to broadcast transactions from there.
-If Wasabi cannot broadcast a transaction locally or through a random node over Tor, it will (in the last resort) send the transaction to the coordinator backend for broadcasting.
+If Wasabi cannot broadcast a transaction through a random node over Tor, it will (in the last resort) send the transaction to the coordinator backend for broadcasting.
 
 Once a transaction is sent, Wasabi will always open a new Tor circuit with a new random node on the network, in order to avoid giving away too much information to one party.
 When you send two consecutive transactions via Wasabi, you can be sure that they appear in two very different places on the network.
