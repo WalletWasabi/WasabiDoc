@@ -255,7 +255,7 @@ Yes, you can check the status of Wasabi-related services and websites (like APIs
 :::
 
 :::details
-### Is the Transaction Coordinator's code available as open source?
+### Is the Backend's (Coordinator) code open source?
 
 Yes, you can verify the code on [GitHub](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Backend).
 :::
