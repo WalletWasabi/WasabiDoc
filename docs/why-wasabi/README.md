@@ -11,6 +11,13 @@ This is the place with an introduction to privacy in general, and why especially
 Here is covered how Bitcoin is already good for privacy, much better than the incumbent monetary system.
 And why Wasabi can make Bitcoin to an even better tool of self defense by default.
 
+### Chapters
+
+- [Why Privacy is Important](/why-wasabi/WhyPrivacyImportant.html)
+- [Privacy in Bitcoin](/why-wasabi/BitcoinPrivacy.html)
+- [Ten Commandments](/why-wasabi/10Commandments.html)
+- [Transaction Surveillance Companies](/why-wasabi/TransactionSurveillanceCompanies.html)
+
 ![](/InfographicWhyWasabi.png)
 
 ## Gaining privacy with Wasabi Wallet for Bitcoin transactions

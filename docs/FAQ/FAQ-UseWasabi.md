@@ -110,21 +110,6 @@ Always backup your encrypted mnemonic recovery words, and your password in two s
 ::::
 
 :::details
-### What is up with the Chinese characters?
-
-The first and most important reason is: why not?
-We like to have fun when building and using Wasabi, so the Chinese characters are a nice addition to the UX as an insider joke.
-Each of the characters actually carry deep insights and wisdoms distilled over centuries.
-
-Yet there is also a very practical security design to this.
-There have been many reports of users forgetting their password that they did not properly backup.
-Unfortunately this means that they cannot spend the bitcoin ever again.
-So we wanted to figure out how to break the user flow at wallet generation, so that you pay attention to what you are doing at this critical point.
-Surprisingly, since the introduction of the Chinese characters, the number of lost password reports has drastically decreased, which is a great sign.
-So this fun and unconventional work flow has saved the loss of many sats already, thus it's a truly great feature.
-:::
-
-:::details
 ### Why BIP 38?
 
 [BIP 38](https://github.com/bitcoin/bips/blob/master/bip-0038.mediawiki) is a good standard, a well-tested and very secure way to encrypt a private key.
@@ -885,6 +870,12 @@ The `Tor Log File` shows the Tor specific logs.
 ![](/MenuFileOpen.png)
 :::
 
+:::details
+### How to activate Lurking Wife Mode?
+
+You can activate Lurking Wife Mode from `Settings` or by clicking on your wallet balance.
+You can read more about Lurking Wife Mode [here](/using-wasabi/LurkingWifeMode.md).
+:::
 
 ## Coin Control Best Practices
 
