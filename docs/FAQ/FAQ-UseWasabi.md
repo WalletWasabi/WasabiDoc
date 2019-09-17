@@ -782,6 +782,14 @@ Now click ```Broadcast Transaction``` to send it off over Tor to a random Bitcoi
 You can't do that directly, so send them (in small portions >0.1BTC if needed) to a ''hot'' Wasabi Wallet for CoinJoin and then send them back to a new address on the Hardware wallet for cold-storage.
 :::
 
+:::details
+### Does Ledger know and track the xpub?
+
+Yes Ledger Wallet leaks your public addresses if the wallet is created with Ledger Live app.
+To avoid that you can use a Ledger wallet in combination with Wasabi by going into the Settings of your Ledger and creating a PIN-specific passphrase.
+Now you have a new xpub that you don't need to use with Ledger Live application.
+:::
+
 ## History
 
 :::details
