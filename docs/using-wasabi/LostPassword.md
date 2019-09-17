@@ -13,14 +13,6 @@ Here we explain some of the tricks we had in mind to help Wasabikas avoid losing
 
 [[toc]]
 
-## Chinese Password Box
-
-Mistyping passwords happen, because of carelessness.
-The Chinese password box aims to break the usual flow of our users, hoping they will pay more attention not to make typos when choosing a password.
-It is also a cool feature, and we like having fun.
-
-![](/WalletManagerGenerateWallet.png)
-
 ## Moving Password Confirmation to Next Page
 
 This also aims to disrupt the flow of the user.
