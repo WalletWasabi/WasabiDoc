@@ -90,7 +90,6 @@ If you have an answer to a question, please [open a pull request](https://github
 - [Wasabi coding conventions](CodingConventions.md)
 - [Security policy](SECURITY.md)
 - [Code coverage](CodeCoverage.md)
-- [Manual testing](ManualTesting.md)
 - [Hardware wallet testing](HardwareWalletTestingGuide.md)
 - [Debug Guide](HowToDebug.md)
 - [Ports](Ports.md)
