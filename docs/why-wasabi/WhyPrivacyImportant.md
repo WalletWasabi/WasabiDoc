@@ -60,5 +60,5 @@ That is not something I am willing to support or live under. - Edward Snowden in
 > We all need places where we can go to explore without the judgmental eyes of other people being cast upon us, only in a realm where we're not being watched can we really test the limits of who we want to be.
 It's really in the private realm where dissent, creativity and personal exploration lie. - Glenn Greenwald in [Huffington Post](https://www.huffingtonpost.com/2014/06/20/glenn-greenwald-privacy_n_5509704.html)
 
-@[youtube](WJOK7ORAQ)
+@[youtube](-_WJOK7ORAQ)
 
