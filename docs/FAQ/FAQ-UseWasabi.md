@@ -788,7 +788,7 @@ You can't do that directly, so send them (in small portions >0.1BTC if needed) t
 Yes, when using the Ledger Live software wallet to manage your coins, you send your extended public key to the Ledger company server.
 With this information they know exactly how many bitcoins you have and in what transactions you spend them.
 To avoid that you can use a Ledger hardware in combination with Wasabi as software interface, and because Wasabi does not leak your xpub, your transaction history is not shared with anyone.
-Make sure you are generating a completely new wallet with new mnemonic backup so that the compromized old wallet is no longer an issue.
+Make sure you are generating a completely new wallet with a new seed phrase backup so that the compromised old wallet is no longer an issue.
 You can also go into the Settings of your Ledger and create a PIN-specific passphrase.
 :::
 
