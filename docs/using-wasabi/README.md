@@ -20,6 +20,8 @@ Further tutorials about the different parts of the wallet, for newbies and power
 #### Installing Wasabi
 - [Wallet Generation](/using-wasabi/WalletGeneration.html)
 - [Password Finder](/using-wasabi/PasswordFinder.html)
+- [Cold-Wasabi Protocol](/using-wasabi/ColdWasabi.html)
+- [Lurking Wife Mode](/using-wasabi/LurkingWifeMode.html)
 - [Headless Wasabi Deamon](/using-wasabi/Daemon.html)
 - [Supported BIPs](/using-wasabi/BIPs.html)
 #### Privacy Best Practices
@@ -27,3 +29,4 @@ Further tutorials about the different parts of the wallet, for newbies and power
 - [Lost Password Strategy](/using-wasabi/LostPassword.html)
 - [Network Level Privacy](/using-wasabi/NetworkLevelPrivacy.html)
 - [How you can be de-anonymized using Bitcoin](/using-wasabi/Deanonimization.html)
+- [Pay to EndPoint](/using-wasabi/PayToEndPoint.html)
