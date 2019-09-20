@@ -790,6 +790,9 @@ With this information they know exactly how many bitcoins you have and in what t
 To avoid that you can use a Ledger hardware in combination with Wasabi as software interface, and because Wasabi does not leak your xpub, your transaction history is not shared with anyone.
 Make sure you are generating a completely new wallet with a new seed phrase backup so that the compromised old wallet is no longer an issue.
 You can also go into the Settings of your Ledger and create a PIN-specific passphrase.
+
+To create a new Ledger Wallet *offline* and make sure that your newly created wallet doesn't leak any information to Ledger's servers you can follow [this guide](https://support.ledger.com/hc/en-us/articles/115005172609).
+After that, you can use the wallet in combination with Wasabi without having concerns about your privacy!
 :::
 
 ## History
