@@ -260,4 +260,11 @@ Yes, you can check the status of Wasabi-related services and websites (like APIs
 Yes, you can verify the code on [GitHub](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Backend).
 :::
 
+:::details
+### Is there an Android/iOs version? 
+
+No, Wasabi and CoinJoin features require considerable computational power, not currently replicable on a smartphone.
+In addition to this, a privacy-oriented wallet is not well seen by Google Play and App Store and it is extremely difficult to be accepted.
+:::
+
 - What do peers say about Wasabi?
