@@ -21,7 +21,7 @@ We assume the reader has already read the project [README](https://github.com/zk
 ## Install VS Code and extensions
 ### 1: Get Visual Studio Code
 Install Visual Studio Code (VSC).
-Pick the latest VSC version from here: https://code.visualstudio.com/download
+Pick the latest VSC version from here: [https://code.visualstudio.com/download](https://code.visualstudio.com/download)
 
 
 ### 2: Install C# Extension
