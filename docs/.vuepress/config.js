@@ -119,6 +119,7 @@ module.exports = {
           sidebarDepth: 2,
           children: [
             "/using-wasabi/InstallPackage.md",
+            "/using-wasabi/WasabiSetupTails.md",
             "/using-wasabi/BuildSource.md",
             "/using-wasabi/DeterministicBuild.md"
           ]
