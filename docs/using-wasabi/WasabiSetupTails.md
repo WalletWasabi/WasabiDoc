@@ -11,7 +11,7 @@
 
 ---
 
-This essay is excerpted from this step by step [guide](https://github.com/PulpCattel/Tails-BitcoinCore-Wasabi), which also include tutorial on how to install Tails, create a persistent storage and use Bitcoin Core alongside with it. 
+This essay is extracted from this step by step [guide](https://github.com/PulpCattel/Tails-BitcoinCore-Wasabi), which also includes tutorials on how to install Tails, create a persistent storage and use Bitcoin Core alongside with it.
 
 ## CREATE ADMIN PASSWORD
 
@@ -40,7 +40,7 @@ You can now save your Wasabi-X.X.X.deb into the persistent storage, which should
 
 As of version 1.1.9 Wasabi doesn’t offer easy ways, especially without command line, to change install directory. There is though a quick workaround.
 
-Wasabi saves session files in /Home/.walletwasabi/client, you need to mark the “show hidden files” setting to see it. 
+Wasabi saves session files in `/Home/.walletwasabi/client`, you need to mark the “show hidden files” setting to see it. 
 
 Create a directory in your persistent with the same hierarchical structure, like this:
 
@@ -51,17 +51,17 @@ Create a directory in your persistent with the same hierarchical structure, like
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `/.walletwasabi`   
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;`/client` (here we save our wallet files, filters and blocks)
 
-After every session, when you’re done, navigate into /Home/.walletwasabi/client and copy the desired folders into your persistent directory.
+After every session, when you’re done, navigate into `/Home/.walletwasabi/client` and copy the desired folders into your persistent directory.
 
-Generally, you’d like to save the `Wallets` and `Blocks` folders. 
+Generally, you’d like to save the `Wallets` and `Blocks` folders.
 
-The former contains your wallet informations (e.g. keys, labels), while the latter include the blocks needed to establish your balance. 
+The former contains your wallet information (e.g. keys, labels), while the latter includes the blocks needed to establish your balance.
 
-Could be also nice to save the `BitcoinStore` folder, which contains the filters, so that you don’t have to download them again. 
+Could be also nice to save the `BitcoinStore` folder, which contains the filters, so that you don’t have to download them again.
 
 ## INSTALL WASABI
 
-Drop the Wasabi-X.X.X.deb file from /Home/Persistent into desktop. 
+Drop the Wasabi-X.X.X.deb file from `/Home/Persistent` into desktop.
 
 Open the terminal and run:
 
@@ -72,7 +72,7 @@ Type the password you created at “Tails Greeter”.
 
 ([Info](https://help.ubuntu.com/lts/serverguide/dpkg.html) about dpkg)
 
-Wasabi will show as a normal application in your activities overview menu, ready to start. 
+Wasabi will show as a normal application in your activities overview menu, ready to start.
 
 * Press [Windows key](https://en.wikipedia.org/wiki/Windows_key)
 * Type "wasabi"
@@ -92,9 +92,9 @@ After the first time you save a Wasabi session, your persistent storage will loo
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;`/Blocks` (blocks)    
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;`/BitcoinStore` (filters)  
 
-To load your saved session, drop the .walletwasabi folder into /Home before starting Wasabi.  
+To load your saved session, drop the .walletwasabi folder into /Home before starting Wasabi.
  
-You can save multiple copies of .walletwasabi in your persistent, each with different data: 
+You can save multiple copies of .walletwasabi in your persistent, each with different data:
 
 `/Persistent`  
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `/bitcoin-0.18.1` (Bitcoin Core launcher folder)    
