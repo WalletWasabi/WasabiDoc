@@ -8,7 +8,7 @@
 # Demo Guide
 
 - At 2018.07.19 17:00, UTC I will do a live demo of Wasabi on Youtube.
-- I will post the livestream link to Twitter: https://twitter.com/nopara73
+- I will post the livestream link to Twitter: [https://twitter.com/nopara73](https://twitter.com/nopara73)
 - You are free to ask questions in the chat.
 - At the end of the stream, we will do a mixing round on the mainnet. This will be the first ever Chaumian CoinJoin mainnet mix, you are free to participate.
 - In order to participate, you may want to make sure to setup and prefund the wallet before the stream, by going through the following instructions.
@@ -22,11 +22,11 @@
 
 ## Get The Requirements
 
-1. Get Git: https://git-scm.com/downloads
-2. Get .NET Core 2.2 SDK: https://www.microsoft.com/net/download
-3. [OSX] Get Brew: https://stackoverflow.com/a/20381183/2061103
+1. Get Git: [https://git-scm.com/downloads](https://git-scm.com/downloads)
+2. Get .NET Core 2.2 SDK: [https://www.microsoft.com/net/download](https://www.microsoft.com/net/download)
+3. [OSX] Get Brew: [https://stackoverflow.com/a/20381183/2061103](https://stackoverflow.com/a/20381183/2061103)
 4. Get Tor: </br>
-  [Windows] Install the Tor Expert Bundle: https://www.torproject.org/download/ </br>
+  [Windows] Install the Tor Expert Bundle: [https://www.torproject.org/download/](https://www.torproject.org/download/) </br>
   [Linux] `apt-get install tor` </br>
   [OSX] `brew install tor` </br>
   
