@@ -134,7 +134,7 @@ Though this would not affect the users who are able to successfully mix with oth
 The follow-up concern is the inverse of the above.
 It is possible that the server could *only* include one 'honest/real' coin in the mix and supply the other coins themselves.
 This would give a false sense of security, **but it would not worsen the existing privacy of the coin**.
-It would also be noticaable to all users excluding the user being targeted as their coins would not be mixed.
+It would also be noticeable to all users excluding the user being targeted as their coins would not be mixed.
 It has been argued that this 'attack' would be very costly in terms of fees because the number of coins being mixed is verifiable.
 Though it is true that fees would have to be paid to zkSNACKs every round, this does not matter if it is zkSNACKs that is acting maliciously (as they get the funds back).
 Typical rounds currently have <100 people per mix, with the minimum input being ~0.1 BTC with a fee of 0.003% per anonymity set.

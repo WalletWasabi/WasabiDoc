@@ -7,7 +7,7 @@
 
 # Building Wasabi
 
-This is the place with all the nuances of how Wasabi wallet is being build.
+This is the place with all the nuances of how Wasabi wallet is being built.
 Here you find out about the Wasabikas who have already supported this open source project.
 Some of the issues they are working on now as well as the research for future ideas.
 And all the necessary information you need to quickly start with your invaluable contribution.
