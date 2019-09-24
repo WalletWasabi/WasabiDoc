@@ -29,7 +29,7 @@ https://www.wasabiwallet.io/#download
 Verify the download. As of now (Bitcoin block 595524), the Wasabi PGP key fingerprint is:  
 `6FB3 872B 5D42 292F 5992 0797 8563 4832 8949 861E`
 
-You can now save your Wasabi-X.X.X.deb into the persistent storage, which should look like this:
+You can now save your `Wasabi-X.X.X.deb` into the persistent storage, which should look like this:
 
 `/Persistent`  
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `/bitcoin-0.18.1` (Bitcoin Core launcher folder)    
@@ -61,7 +61,7 @@ Could be also nice to save the `BitcoinStore` folder, which contains the filters
 
 ## INSTALL WASABI
 
-Drop the Wasabi-X.X.X.deb file from `/Home/Persistent` into desktop.
+Drop the `Wasabi-X.X.X.deb` file from `/Home/Persistent` into desktop.
 
 Open the terminal and run:
 
