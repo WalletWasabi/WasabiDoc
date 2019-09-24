@@ -53,7 +53,6 @@ Create a directory in your persistent with the same hierarchical structure, like
  &emsp; `/.walletwasabi`   
  &emsp; &emsp; `/client` (here we save our wallet files, filters and blocks)
 
-
 After every session, when you’re done, navigate into `/Home/.walletwasabi/client` and copy the desired folders into your persistent directory.
 
 Generally, you’d like to save the `Wallets` and `Blocks` folders.
