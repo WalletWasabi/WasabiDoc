@@ -100,8 +100,7 @@ To load your saved session, drop the `.walletwasabi` folder into `/Home` before 
  
 You can save multiple copies of `.walletwasabi` in your persistent, each with different data:
 
-`/Persistent` 
-
+`/Persistent`  
 &emsp; `/bitcoin-0.18.1` (Bitcoin Core launcher folder)    
 &emsp; `/Bitcoin`  (Bitcoin Core data folder)  
 &emsp; `/Wasabi`   
