@@ -26,10 +26,10 @@ http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion (tor hidde
 or  
 https://www.wasabiwallet.io/#download
 
-Verify the PGP signature of the downloaded package, the zkSnacks PGP key fingerprint is:  
+Verify the PGP signature of the downloaded package, the zkSNACKs' PGP key fingerprint is:  
 `6FB3 872B 5D42 292F 5992 0797 8563 4832 8949 861E`
 
-`gpg -v Wasabi-X.X.X.deb`
+`gpg -v Wasabi-X.X.X.deb` (For more details check this [guide](https://docs.wasabiwallet.io/using-wasabi/InstallPackage.html#debian-and-ubuntu))
 
 You can now save your `Wasabi-X.X.X.deb` into the persistent storage, which should look like this:
 
