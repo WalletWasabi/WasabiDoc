@@ -35,7 +35,7 @@ You can now save your `Wasabi-X.X.X.deb` into the persistent storage, which shou
 
 `/Persistent`  
 &emsp; `/bitcoin-0.18.1` (Bitcoin Core launcher folder)  
-&emsp; `/Bitcoin`  (Bitcoin Core data folder)  
+&emsp; `/Bitcoin` (Bitcoin Core data folder)  
 &emsp; `/Wasabi-X.X.X.deb` (Wasabi installer)
 
 ## WASABI DATA FOLDER
@@ -48,7 +48,7 @@ Create a directory in your persistent with the same hierarchical structure, like
 
 `/Persistent`  
  &emsp; `/bitcoin-0.18.1` (Bitcoin Core launcher folder)  
- &emsp; `/Bitcoin`  (Bitcoin Core data folder)  
+ &emsp; `/Bitcoin` (Bitcoin Core data folder)  
  &emsp; `/Wasabi-X.X.X.deb` (Wasabi installer)  
  &emsp; `/.walletwasabi`  
  &emsp; &emsp; `/client` (here we save our wallet files, filters and blocks)
@@ -88,7 +88,7 @@ After the first time you save a Wasabi session, your persistent storage will loo
 
 `/Persistent`  
 &emsp; `/bitcoin-0.18.1` (Bitcoin Core launcher folder)  
-&emsp; `/Bitcoin`  (Bitcoin Core data folder)  
+&emsp; `/Bitcoin` (Bitcoin Core data folder)  
 &emsp; `/Wasabi-X.X.X.deb` (Wasabi installer)  
 &emsp; `/.walletwasabi`  
 &emsp; &emsp; `/client` (here we save our wallet files, filters and blocks)  
@@ -102,7 +102,7 @@ You can save multiple copies of `.walletwasabi` in your persistent, each with di
 
 `/Persistent`  
 &emsp; `/bitcoin-0.18.1` (Bitcoin Core launcher folder)  
-&emsp; `/Bitcoin`  (Bitcoin Core data folder)  
+&emsp; `/Bitcoin` (Bitcoin Core data folder)  
 &emsp; `/Wasabi`  
 &emsp; &emsp; `/Wasabi-X.X.X.deb` (Wasabi installer)  
 &emsp; &emsp; `/BitcoinStore` (No need to keep multiple copies of same filters)  
