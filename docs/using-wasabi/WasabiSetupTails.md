@@ -123,7 +123,6 @@ You can save multiple copies of `.walletwasabi` in your persistent, each with di
 &emsp; &emsp; &emsp; &emsp; &emsp; `/Wallets` (wallet files)   
 &emsp; &emsp; &emsp; &emsp; &emsp; `/Blocks` (blocks)
 
-
 This is only a minor example, tune it to your own needs.
 
 :::danger
