@@ -97,9 +97,8 @@ At first glance, this may be seen as hazardous to privacy, however Wasabi user u
 In the future, as more and more wallets adopt bech32, Wasabi developers will have to look at how to scale the performance and network usage of the wallet.
 Failing that, Wasabi's initial sync will slow down.
 
-These pages show the wallets that can be used to send to and receive from Wasabi: [https://en.bitcoin.it/wiki/Bech32_adoption#Software_Wallets](https://en.bitcoin.it/wiki/Bech32_adoption#Software_Wallets)
+The [Bitcoin Wiki](https://en.bitcoin.it/wiki/Bech32_adoption#Software_Wallets) and [When Segwit](https://whensegwit.com/#who) show the wallets that can be used to send to and receive from Wasabi.
 
-[https://whensegwit.com/#who](https://whensegwit.com/#who)
 
 ![](/Receive.png)
 
