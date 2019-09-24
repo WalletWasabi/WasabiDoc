@@ -117,7 +117,7 @@ You can save multiple copies of `.walletwasabi` in your persistent, each with di
 &emsp; &emsp; &emsp; &emsp; `/client` (here we save our wallet files, filters and blocks)   
 &emsp; &emsp; &emsp; &emsp; &emsp; `/Wallets` (wallet files)   
 &emsp; &emsp; &emsp; &emsp; &emsp; `/Blocks` (blocks)  
-&emsp; &emsp;`/watch-only coldstorage B`   
+&emsp; &emsp; `/watch-only coldstorage B`   
 &emsp; &emsp; &emsp; `/.walletwasabi`    
 &emsp; &emsp; &emsp; &emsp; `/client` (here we save our wallet files, filters and blocks)   
 &emsp; &emsp; &emsp; &emsp; &emsp; `/Wallets` (wallet files)   
