@@ -15,6 +15,7 @@ Further tutorials about the different parts of the wallet, for newbies and power
 
 #### Installing Wasabi
 - [Install package](/using-wasabi/InstallPackage.html)
+- [Wasabi Setup on Tails](/using-wasabi/WasabiSetupTails.html)
 - [Build from source code](/using-wasabi/BuildSource.html)
 - [Deterministic Build](/using-wasabi/DeterministicBuild.html)
 #### Installing Wasabi

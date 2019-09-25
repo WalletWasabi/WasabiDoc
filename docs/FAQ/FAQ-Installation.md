@@ -143,8 +143,7 @@ In the second case, if you happen to broadcast a transaction of yours to a full 
 :::details
 ### Can I install Wasabi on TAILS?
 
-Yes, just follow the [How do I install Wasabi on other Linux?](/FAQ-Installation.html#how-do-i-install-wasabi-on-other-linux) guide and remember to save/backup the wallet on the Persistence.
-For a step-by-step tutorial you can follow [this guide](https://github.com/PulpCattel/Tails-BitcoinCore-Wasabi/blob/master/README.md).
+Yes, just follow the [Wasabi Setup on Tails](/using-wasabi/WasabiSetupTails.html) guide and remember to save/backup the wallet on the Persistence.
 :::
 
 ## Advanced Installation
