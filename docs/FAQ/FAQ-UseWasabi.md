@@ -237,7 +237,8 @@ Let's see an example:
 `m/84'/0'/0'/0/1` this will be the second.  
 `m/84'/0'/0'/0/2` this will be the third, and so on...
 
-At `m/84'/0'/0'/0/20` (your 21st address), if you never used any of the previously generated addresses, Wasabi will start recycling the previous unused ones and will automatically overwrite the labels. e.g., Wasabi will not generate address `m/84'/0'/0'/0/21` with label: "address n. 22", instead it'll regenerate one between `m/84'/0'/0'/0/0` and `m/84'/0'/0'/0/20` and will overwrite previous label to "address n. 22".
+At `m/84'/0'/0'/0/20` (your 21st address), if you never used any of the previously generated addresses, Wasabi will start recycling the previous unused ones and will automatically overwrite the labels. 
+E.g., Wasabi will not generate address `m/84'/0'/0'/0/21` with label: "address n. 22", instead it'll regenerate one between `m/84'/0'/0'/0/0` and `m/84'/0'/0'/0/20` and will overwrite previous label to "address n. 22".
 
 To increase the number of freshly new generated addresses, you have to increase the `MinGapLimit` json property of your `wallet.json` file.
 
