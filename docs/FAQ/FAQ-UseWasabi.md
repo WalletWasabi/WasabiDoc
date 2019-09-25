@@ -228,7 +228,9 @@ After a coin has been sent to this address, it is removed from the GUI, this is 
 :::details
 ### How do I generate multiple new receiving addresses?
 
-Wasabi as default allows up to 21 unused addresses, you see this reflected in the graphical interface, that shows by default max 21 addresses. After that, it'll start to repropose you the same addresses, this is to avoid bloating of the software. More info [here](https://github.com/zkSNACKs/WalletWasabi/issues/2340#issuecomment-534885887).  
+Wasabi by default allows up to 21 unused addresses, you see this reflected in the graphical interface, that shows max 21 addresses.
+After that, it'll regenerate the same addresses, this is to avoid bloating the software.
+More info [here](https://github.com/zkSNACKs/WalletWasabi/issues/2340#issuecomment-534885887).  
 Let's see an example:
 
 `m/84'/0'/0'` is the dafault BIP84 derivation path, as explained [here](FAQ-UseWasabi.md#What-derivation-paths-does-Wasabi-use), and so this'll be your first receiving address: `m/84'/0'/0'/0/0`.  
