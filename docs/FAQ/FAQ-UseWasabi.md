@@ -128,7 +128,7 @@ Take into account that it is not only encryption what bip38 provides but also a 
 
 When you do not run a full node, you need to communicate with some third party node to find out how much money you have.
 There are very bad wallets that simply send the extended public key, and thus all your addresses and your entire transaction history, to a selected, or random server.
-This means that this trusted third party has full knowledge of a lot your sensitive financial data.
+This means that this trusted third party has full knowledge of a lot of your sensitive financial data.
 
 :::danger This is not acceptable
 Do not send your extended public key to a third party server!
@@ -197,8 +197,8 @@ For especially old wallets, it might be worth considering to start a new wallet 
 
 Bitcoin is designed so that for every payment you can use a new address that is not tied to any of your previous addresses.
 When you use a new address for every coin, then it becomes much much more difficult to find out that these coins are from you.
-However, when you use the same address for every coin, then everyone knows that they all can be spend by one individual who has knowledge of the private key - you!
-Thus, when someone finds out that you have that address, maybe you published it in your social media profile for donations, or you send a coin to another peer who knows you, then they know also how many bitcoin you have in the other coins with that same address.
+However, when you use the same address for every coin, then everyone knows that all coins can be spent by one individual who has the private key - you!
+Thus, when someone finds out that you have that address, maybe you published it in your social media profile for donations, or you send a coin to another peer who knows you, then he knows also how many bitcoin you have in that same address.
 Take good care to whom you tell your addresses, and every time, tell someone a different address.
 
 Because you have all the private keys, for all these addresses, you can produce a valid signature for any of them.
@@ -460,7 +460,7 @@ These sats are precious, so don't overpay on fees!
 ### How can I display the fee in satoshis per byte?
 
 The fee you pay to get confirmation on the Bitcoin timechain is denominated in satoshis per virtual byte.
-This means that the larger your transaction size, meaning the number of inputs and outputs, then the more total bitcoin you have to pay for confirmation.
+This means that the larger your transaction size, meaning the number of inputs and outputs, the more total bitcoin you have to pay for confirmation.
 If you want faster confirmation, then you have to pay proportionally more sats per vByte.
 
 You can toggle the display of the fee between `sat/vByte` & `percentage of transfered value` & `total bitcoin` & `total USD` by clicking on the text of the fee.
@@ -660,7 +660,7 @@ Because Alice has sent the clear-text input, and Bob sends the clear-text output
 So, if the two were to be linked, then the coordinator can specifically link the input to the output, meaning that the anonymity set is 1.
 Because Alice commits to the output by sending it blinded, and because Bob is a new tor identity not linked to Alice, the coordinator can verify that nobody is cheating, but he cannot deanonymize the peers.
 
-The output registration phase ends when the value of clear-text outputs plus change outputs is equal to the the value of inputs.
+The output registration phase ends when the value of clear-text outputs plus change outputs is equal to the value of inputs.
 If after a timeout not all outputs are registered, then this round is abandoned, the missing peers are banned, and a new round is started.
 :::
 
