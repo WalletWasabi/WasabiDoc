@@ -483,7 +483,7 @@ Here's a great explanation about it:
 @[youtube](tLOMcU8MhWM,1305)
 :::
 
-:::details
+::::details
 ### Why aren't there smaller equal denomination outputs like 0.05 BTC?
 
 There are many reasons for that.
@@ -539,7 +539,7 @@ Notice that in the average case, users are regularly paying almost 0.5% for Coin
 In the extreme case, which simply cannot be overlooked as the network is volatile in terms of daily usage, the miner is earning 5.5x what Wasabi coordinator is charging, and the users are burdened with a 2% fee for CJ!
 This is simply ridiculous!
 So there you have it! Here is the trade-off with CJ output denominations and why it currently makes sense for 0.1 BTC, but not for much lower.
-:::
+::::
 
 :::details
 ### What are the fees for the CoinJoin?
