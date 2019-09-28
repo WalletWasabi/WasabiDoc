@@ -527,7 +527,7 @@ Average: 10 sat/vbyte: 1,680 satoshis per participant (0.0168 %)
 High: 100 sat/vbyte: 16,800 satoshis per participant (0.168 %)
 :::
 Here, we already observe that in some extreme cases, the miner is earning almost 0.2%!
-Recall that Wasabi has a coordinator fee that is capped at 0.3%, so in these extreme cases the actual fee paid by the user (you) is not 0.3% as promised, but closer to 0.5%.
+Recall that Wasabi has a coordinator fee that is capped at 0.3%, so in these extreme cases the total fee paid by the user (you) is closer to 0.5%.
 Now we proceed to go to a smaller denominaton, 0.01 BTC:
 :::tip
 Minimum: 2 sat/vbyte: 336 satoshis per participant (0.0336 %)
@@ -544,13 +544,13 @@ So there you have it! Here is the trade-off with CJ output denominations and why
 :::details
 ### What are the fees for the CoinJoin?
 
-You currently pay a fee of 0.003% * anonymity set.
+You pay a coordinator fee of 0.003% * anonymity set.
 If the anonymity set of a coin is 50 then you pay 0.003% * 50 (=0.15%).
 If you set the target anonymity set to 53 then Wasabi will continue mixing until this is reached, so you may end up with an anonymity set of say 60, and you will pay 0.003% * 60 (=0.18%).
 
-There are also edge cases where you do not pay the full fee or where you pay more.
-For example if you're the smallest registrant to a round, you will never pay a fee.
-Also when you are remixing and you cannot pay the full fee with your input, then you only pay as much as you have, but if the change amount leftover would be too small, then that is also added to the fee.
+There are also edge cases where you do not pay the full coordinator fee or where you pay more.
+For example if you're the smallest registrant to a round, you will never pay a coordinator fee.
+Also when you are remixing and you cannot pay the full coordinator fee with your input, then you only pay as much as you have, but if the change amount leftover would be too small, then that is also added to the coordinator fee.
 Currently the minimum change amount to be paid out is 0.7% of the base denomination (~0.1BTC.)
 
 It is also possible that you get more back from mixing than you put in.
@@ -825,7 +825,7 @@ After that, you can use the wallet in combination with Wasabi without having con
 In the `History` tab you see a list of all the transactions made with this Wasabi wallet.
 It includes the value being sent out of the wallet, meaning the payment to an external address and the fee.
 If the number is red, then you have sent sats out of the wallet - if the number is green, then you have received and stacked sats.
-A coin join is a payment within the same wallet, thus it only shows the coordination and mining fee leaving the wallet.
+A CoinJoin is a payment within the same wallet, thus it only shows the coordination and mining fee leaving the wallet.
 You also have a list of all the transaction identification numbers for detailed reference.
 The check mark indicates that the transaction is confirmed in the longest proof-of-work timechain.
 
