@@ -266,4 +266,12 @@ Yes, you can verify the code on [GitHub](https://github.com/zkSNACKs/WalletWasab
 No, Wasabi and CoinJoin features require considerable computational power, not currently replicable on a smartphone.
 :::
 
+:::details
+### Where can I find Wasabi Wallet on social media?
+
+You can find us on [Twitter](https://twitter.com/wasabiwallet) and [Reddit](https://www.reddit.com/r/WasabiWallet/).
+For chat groups you can find us on [Telegram](https://t.me/WasabiWallet) and [Keybase](https://keybase.io/team/wasabiwallet).
+
+:::
+
 - What do peers say about Wasabi?
