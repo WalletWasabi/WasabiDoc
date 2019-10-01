@@ -180,3 +180,9 @@ You can also configure many cloud storage providers in this way.
 :::
 
 ## Further Questions
+
+:::details
+### What is a CoinJoin Sudoku?
+
+CoinJoin Sudoku is a type of intra-transaction analysis attack on CoinJoin transactions that aims to link inputs and outputs together based on their combinatorial sums.
+:::
