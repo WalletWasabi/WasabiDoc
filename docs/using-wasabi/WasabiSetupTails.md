@@ -17,14 +17,14 @@ This essay is extracted from this step by step [guide](https://github.com/PulpCa
 
 You need sudo privileges to install Wasabi, at “Tails Greeter” create your admin password in “additional settings” and launch Tails.
 
-(Source: https://tails.boum.org/doc/first_steps/startup_options/administration_password/index.en.html)
+(Source: [https://tails.boum.org/doc/first_steps/startup_options/administration_password/index.en.html](https://tails.boum.org/doc/first_steps/startup_options/administration_password/index.en.html))
 
 ## DOWNLOAD
 
 Download for Debian/Ubuntu from:  
-http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion (tor hidden service)  
+[http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion) (tor hidden service)  
 or  
-https://www.wasabiwallet.io/#download
+[https://www.wasabiwallet.io/#download](https://www.wasabiwallet.io/#download)
 
 Verify the PGP signature of the downloaded package, the zkSNACKs' PGP key fingerprint is:  
 `6FB3 872B 5D42 292F 5992 0797 8563 4832 8949 861E`
