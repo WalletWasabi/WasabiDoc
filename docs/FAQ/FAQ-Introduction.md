@@ -119,6 +119,24 @@ The rough consensus among many privacy researchers is that an anonymity set abov
 Furthermore our calculations have shown that with the liquidity of today’s mixers our mixing rounds would take 1 to 5 minutes with 100 anonymity set and 0.1 BTC fixed denomination.
 :::
 
+:::details
+### Is there a way to check Wasabi uptime status?
+
+Yes, you can check the status of Wasabi-related services and websites (like APIs, Backend, etc.) via [UptimeRobot Wasabi Status Page](https://stats.uptimerobot.com/W7q65in4y).
+:::
+
+:::details
+### Is the Backend's (Coordinator) code open source?
+
+Yes, you can verify the code on [GitHub](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Backend).
+:::
+
+:::details
+### Is there an Android/iOs version?
+
+No, Wasabi and CoinJoin features require considerable computational power, not currently replicable on a smartphone.
+:::
+
 ## For advanced Wasabikas
 
 :::details
@@ -247,23 +265,5 @@ For the complete explanation please read [ZeroLink: The Bitcoin Fungibility Fram
 :::
 
 ## Further Questions
-
-:::details
-### Is there a way to check Wasabi uptime status?
-
-Yes, you can check the status of Wasabi-related services and websites (like APIs, Backend, etc.) via [UptimeRobot Wasabi Status Page](https://stats.uptimerobot.com/W7q65in4y).
-:::
-
-:::details
-### Is the Backend's (Coordinator) code open source?
-
-Yes, you can verify the code on [GitHub](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Backend).
-:::
-
-:::details
-### Is there an Android/iOs version? 
-
-No, Wasabi and CoinJoin features require considerable computational power, not currently replicable on a smartphone.
-:::
 
 - What do peers say about Wasabi?

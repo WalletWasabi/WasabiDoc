@@ -187,8 +187,6 @@ and verify with
 `git diff --no-index osx-x64/ WasabiOsx/Wasabi\ Wallet.App/Contents/MacOS/`.
 :::
 
-## Further Questions
-
 :::details
 ### How can I install Wasabi headless daemon without GUI?
 
@@ -202,5 +200,7 @@ Optionally you can add a `--keepalive` flag that will make sure your daemon will
 On Linux and OSX you can just add some parameters to the Wasabi executable and it'll act like a daemon, on Windows you have to use `wassabeed.exe` from Program Files.
 You may want to start with `--help`.
 :::
+
+## Further Questions
 
 - How do I install the Wasabi backend server?
