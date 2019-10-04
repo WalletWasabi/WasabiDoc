@@ -38,7 +38,7 @@ This will build our binaries for Windows, OSX and Linux from source code and ope
 
 ## 3. Verify Builds
 
-You can compare our binaries with the downloads we have on the website: https://wasabiwallet.io/
+You can compare our binaries with the downloads we have on the website: [https://wasabiwallet.io/](https://wasabiwallet.io/)
 In order to end-to-end verify all the downloaded packages you need a Windows, a Linux, and an OSX machine.
 
 ![](https://i.imgur.com/aI9Kx0c.png)
