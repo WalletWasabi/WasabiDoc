@@ -1,6 +1,6 @@
 ---
 {
-  "title": "Wallet Generation",
+  "title": "Restoring Wasabi Wallet to Electrum",
   "description": "A detailed guide about restoring a wallet created from Wasabi to Electrum. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
 }
 ---
