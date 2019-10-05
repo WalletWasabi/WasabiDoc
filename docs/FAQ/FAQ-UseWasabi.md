@@ -118,6 +118,12 @@ Additionally, there is no standard way (bip) to encrypt HD wallets.
 Take into account that it is not only encryption what bip38 provides but also a brute-force protection.
 :::
 
+:::details
+### Does Wasabi support Trezor's and Ledger's hidden wallets?
+
+Yes. Instead of 12 or 24 words, enter the passphrase as the 13th or 25th word. It’s part of BIP39.
+:::
+
 
 ## Synchronization
 
