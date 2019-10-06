@@ -54,7 +54,7 @@ Create a directory in your persistent with the same hierarchical structure, like
 |__ /Bitcoin           # Bitcoin Core data folder
 |__ /Wasabi-X.X.X.deb  # Wasabi installer
 |__ /.walletwasabi
-    |__ /client        # wallet files, filters and blocks
+    |__ /client        # Here we save our wallet files, filters and blocks
 ```
 
 After every session, when you’re done, navigate into `/Home/.walletwasabi/client` and copy the desired folders into your persistent directory.
@@ -96,10 +96,10 @@ After the first time you save a Wasabi session, your persistent storage will loo
 |__ /Bitcoin               # Bitcoin Core data folder
 |__ /Wasabi-X.X.X.deb      # Wasabi installer
 |__ /.walletwasabi
-    |__ /client
-        |__ /Wallets       # wallet files
-        |__ /Blocks        # blocks
-        |__ /BitcoinStore  # filters
+    |__ /client            # Here we save our wallet files, blocks and filters
+        |__ /Wallets
+        |__ /Blocks
+        |__ /BitcoinStore
 ```
 
 To load your saved session, drop the `.walletwasabi` folder into `/Home` before starting Wasabi.
@@ -112,20 +112,20 @@ You can save multiple copies of `.walletwasabi` in your persistent, each with di
 |__ /Bitcoin               # Bitcoin Core data folder
 |__ /Wasabi                # General Wasabi folder
     |__ /Wasabi-X.X.X.deb  # Wasabi installer
-    |__ /BitcoinStore      # No need to keep multiple copies of same filters
+    |__ /BitcoinStore      # Filters (No need to keep multiple copies of them)
     |__ /CoinJoin wallet
     |   |__ /.walletwasabi
-    |       |__ /client    # Here we save our wallet files, filters and blocks
+    |       |__ /client
     |           |__ /Wallets
     |           |__ /Blocks
     |__ /watch-only coldstorage A
     |   |__ /.walletwasabi
-    |       |__ /client    # Here we save our wallet files, filters and blocks
+    |       |__ /client
     |           |__ /Wallets
     |           |__ /Blocks
     |__ /watch-only coldstorage B
         |__ /.walletwasabi
-            |__ /client    # Here we save our wallet files, filters and blocks
+            |__ /client
                 |__ /Wallets
                 |__ /Blocks
 ```
