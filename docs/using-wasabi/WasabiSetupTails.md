@@ -22,11 +22,15 @@ You need sudo privileges to install Wasabi, at “Tails Greeter” create your a
 ## DOWNLOAD
 
 Download for Debian/Ubuntu from:
+<br>
 http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion (tor hidden service)
+<br>
 or
+<br>
 https://www.wasabiwallet.io/#download
 
 Verify the PGP signature of the downloaded package, the zkSNACKs' PGP key fingerprint is:
+<br>
 `6FB3 872B 5D42 292F 5992 0797 8563 4832 8949 861E`
 
 `gpg -v Wasabi-X.X.X.deb` (For more details check this [guide](https://docs.wasabiwallet.io/using-wasabi/InstallPackage.html#debian-and-ubuntu))
@@ -108,14 +112,14 @@ You can save multiple copies of `.walletwasabi` in your persistent, each with di
 
 ```sh
 /Persistent
-|__ /bitcoin-0.18.1        # Bitcoin Core launcher folder
-|__ /Bitcoin               # Bitcoin Core data folder
-|__ /Wasabi                # General Wasabi folder
-    |__ /Wasabi-X.X.X.deb  # Wasabi installer
-    |__ /BitcoinStore      # Filters (No need to keep multiple copies of them)
+|__ /bitcoin-0.18.1                # Bitcoin Core launcher folder
+|__ /Bitcoin                       # Bitcoin Core data folder
+|__ /Wasabi                        # General Wasabi folder
+    |__ /Wasabi-X.X.X.deb          # Wasabi installer
+    |__ /BitcoinStore              # Filters (No need to keep multiple copies of them)
     |__ /CoinJoin wallet
     |   |__ /.walletwasabi
-    |       |__ /client
+    |       |__ /client            # Here we save our wallet files and blocks
     |           |__ /Wallets
     |           |__ /Blocks
     |__ /watch-only coldstorage A
