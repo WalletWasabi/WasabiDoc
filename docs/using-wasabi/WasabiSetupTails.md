@@ -33,7 +33,7 @@ Verify the PGP signature of the downloaded package, the zkSNACKs' PGP key finger
 
 You can now save your `Wasabi-X.X.X.deb` into the persistent storage, which should look like this:
 
-```
+```sh
 /Persistent
 |__ /bitcoin-0.18.1    # Bitcoin Core launcher folder
 |__ /Bitcoin           # Bitcoin Core data folder
@@ -48,7 +48,7 @@ Wasabi saves session files in `/Home/.walletwasabi/client`, you need to mark the
 
 Create a directory in your persistent with the same hierarchical structure, like this:
 
-```
+```sh
 /Persistent
 |__ /bitcoin-0.18.1    # Bitcoin Core launcher folder
 |__ /Bitcoin           # Bitcoin Core data folder
@@ -71,7 +71,7 @@ Drop the `Wasabi-X.X.X.deb` file from `/Home/Persistent` into desktop.
 
 Open the terminal and run:
 
-```
+```sh
 cd Desktop
 sudo dpkg -i Wasabi-X.X.X.deb
 ```
@@ -90,7 +90,7 @@ Wasabi will show as a normal application in your activities overview menu, ready
 
 After the first time you save a Wasabi session, your persistent storage will look like:
 
-```
+```sh
 /Persistent
 |__ /bitcoin-0.18.1        # Bitcoin Core launcher folder
 |__ /Bitcoin               # Bitcoin Core data folder
@@ -106,7 +106,7 @@ To load your saved session, drop the `.walletwasabi` folder into `/Home` before 
 
 You can save multiple copies of `.walletwasabi` in your persistent, each with different data:
 
-```
+```sh
 /Persistent
 |__ /bitcoin-0.18.1        # Bitcoin Core launcher folder
 |__ /Bitcoin               # Bitcoin Core data folder
