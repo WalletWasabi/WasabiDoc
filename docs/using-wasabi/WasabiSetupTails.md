@@ -21,12 +21,12 @@ You need sudo privileges to install Wasabi, at “Tails Greeter” create your a
 
 ## DOWNLOAD
 
-Download for Debian/Ubuntu from:  
-http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion (tor hidden service)  
-or  
+Download for Debian/Ubuntu from:
+http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion (tor hidden service)
+or
 https://www.wasabiwallet.io/#download
 
-Verify the PGP signature of the downloaded package, the zkSNACKs' PGP key fingerprint is:  
+Verify the PGP signature of the downloaded package, the zkSNACKs' PGP key fingerprint is:
 `6FB3 872B 5D42 292F 5992 0797 8563 4832 8949 861E`
 
 `gpg -v Wasabi-X.X.X.deb` (For more details check this [guide](https://docs.wasabiwallet.io/using-wasabi/InstallPackage.html#debian-and-ubuntu))
@@ -34,9 +34,9 @@ Verify the PGP signature of the downloaded package, the zkSNACKs' PGP key finger
 You can now save your `Wasabi-X.X.X.deb` into the persistent storage, which should look like this:
 
 ```
-/Persistent  
+/Persistent
 |__ /bitcoin-0.18.1    # Bitcoin Core launcher folder
-|__ /Bitcoin           # Bitcoin Core data folder  
+|__ /Bitcoin           # Bitcoin Core data folder
 |__ /Wasabi-X.X.X.deb  # Wasabi installer
 ```
 
@@ -51,7 +51,7 @@ Create a directory in your persistent with the same hierarchical structure, like
 ```
 /Persistent
 |__ /bitcoin-0.18.1    # Bitcoin Core launcher folder
-|__ /Bitcoin           # Bitcoin Core data folder  
+|__ /Bitcoin           # Bitcoin Core data folder
 |__ /Wasabi-X.X.X.deb  # Wasabi installer
 |__ /.walletwasabi
     |__ /client        # wallet files, filters and blocks
@@ -93,7 +93,7 @@ After the first time you save a Wasabi session, your persistent storage will loo
 ```
 /Persistent
 |__ /bitcoin-0.18.1        # Bitcoin Core launcher folder
-|__ /Bitcoin               # Bitcoin Core data folder  
+|__ /Bitcoin               # Bitcoin Core data folder
 |__ /Wasabi-X.X.X.deb      # Wasabi installer
 |__ /.walletwasabi
     |__ /client
@@ -109,11 +109,11 @@ You can save multiple copies of `.walletwasabi` in your persistent, each with di
 ```
 /Persistent
 |__ /bitcoin-0.18.1        # Bitcoin Core launcher folder
-|__ /Bitcoin               # Bitcoin Core data folder  
+|__ /Bitcoin               # Bitcoin Core data folder
 |__ /Wasabi                # General Wasabi folder
     |__ /Wasabi-X.X.X.deb  # Wasabi installer
     |__ /BitcoinStore      # No need to keep multiple copies of same filters
-    |__ /CoinJoin wallet   
+    |__ /CoinJoin wallet
     |   |__ /.walletwasabi
     |       |__ /client    # Here we save our wallet files, filters and blocks
     |           |__ /Wallets
