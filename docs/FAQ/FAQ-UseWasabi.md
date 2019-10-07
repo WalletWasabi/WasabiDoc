@@ -754,6 +754,29 @@ or
 :::
 
 :::details
+### Does Wasabi have to stay on during CoinJoin?
+
+Yes, Wasabi needs to stay on during CoinJoins, you cannot be offline and still participate in CoinJoins.
+
+A CoinJoin transaction is different from a normal transaction, where you are the only person signing, and requires many people to sign **the same transaction**.
+Until all the peers are here, no peer knows what transaction to sign.
+
+Here it's how Wasabi handles different scenarios:
+
+|  | During [input registration phase](FAQ-UseWasabi.md#What-is-happening-in-the-input-registration-phase) | After input registration phase |
+|:---:|:---:|:---:|
+| You close Wasabi | Your registered coins are automatically dequequed | Wasabi will make you wait until the round finishes |
+| Wasabi goes offline | Your registered coins are automatically timed out by the coordinator after 1 minute | Your registered coins will be banned for 24h from particing in another CoinJoin. (This is to prevent [DoS attacks](https://github.com/nopara73/ZeroLink/#d-dos-attack)) |
+:::
+
+:::details
+### What if there's a power outage during CoinJoin? Do I loose my coins?
+
+No you don't.
+CoinJoins are atomic, they happen or they don't.
+If your wallet crash or your computer goes offline during CoinJoin you can simply register for a new CoinJoin, look at table [here](/FAQ/FAQ-UseWasabi.html#Does-my-computer-have-to-stay-on-during-CoinJoin) for more info.
+:::
+
 ### How much anonymity set do I need?
 
 It is commonly said that an anonymity set of 50 is sufficient to evade blockchain forensics analysis.
