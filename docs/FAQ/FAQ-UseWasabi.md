@@ -714,7 +714,7 @@ or
 :::
 
 :::details
-### Does my computer have to stay on during CoinJoin?
+### Does Wasabi have to stay on during CoinJoin?
 
 Yes your computer needs to stay on during CoinJoins, you cannot be offline and still participate in CoinJoins.
 :::
