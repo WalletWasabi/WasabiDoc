@@ -52,6 +52,7 @@ Steps to find your master private inside Wasabi:
 ### Steps:
 
 1. Create a new text file
+
 This will be your Electrum Wallet file.
 
 2. Paste the following code:
