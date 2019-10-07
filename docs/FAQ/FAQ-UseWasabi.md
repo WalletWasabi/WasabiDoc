@@ -734,6 +734,7 @@ Here it's how Wasabi handles different scenarios:
 ### What if there's a power outage during CoinJoin? Do I loose my coins?
 
 No you don't.
+CoinJoins are atomic, they happen or they don't.
 If your wallet crash or your computer goes offline during CoinJoin you can simply register for a new CoinJoin.
 :::
 
