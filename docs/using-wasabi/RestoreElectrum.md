@@ -89,4 +89,4 @@ By copypasting the master private key on a hot or compromised device, you risk l
 
 4. Load the wallet you created in Electrum
 
-5. 5. Open Electrum's console and digit `wallet.gap_limit_for_change = 100` to change your `gap limit` to 100
+5. Open Electrum's console and digit `wallet.gap_limit_for_change = 100` to change your `gap limit` to 100
