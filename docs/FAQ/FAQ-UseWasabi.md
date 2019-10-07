@@ -713,6 +713,18 @@ or
 [coinfaucet.eu/en/btc-testnet](https://coinfaucet.eu/en/btc-testnet/)
 :::
 
+:::details
+### Does my computer have to stay on during CoinJoin?
+
+Yes your computer needs to stay on during CoinJoins, you cannot be offline and still participate in CoinJoins.
+:::
+
+:::details
+### What if there's a power outage during CoinJoin? Do I loose my coins?
+
+No you don't. If your wallet crash or your computer goes offline during CoinJoin you can simply register for a new CoinJoin.
+:::
+
 ## Hardware Wallet
 
 @[youtube](aU8ysH9JH9M)
