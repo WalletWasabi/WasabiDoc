@@ -77,7 +77,7 @@ This will be your Electrum Wallet file.
 
 3. Replace `xprv` and `xpub` sections with Wasabi's
 
-::: tip
+:::tip
 Steps to find your master private inside Wasabi:
 - Go to `Advanced Info` tab.
 - Copy your `Extended Master zprv`
