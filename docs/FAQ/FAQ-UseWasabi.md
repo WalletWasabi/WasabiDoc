@@ -1042,6 +1042,11 @@ Testnet coins (tBTC) are separate and distinct from actual bitcoins, and are nev
 This allows application developers or bitcoin testers to experiment, without having to use real bitcoins or worrying about breaking the main bitcoin chain.
 You can try to make a [CoinJoin with Wasabi on the Bitcoin TestNet](/FAQ/FAQ-UseWasabi.html#i-d-like-to-experience-coinjoin-but-i-m-not-comfortable-using-real-bitcoin-what-can-i-do) without being afraid of losing 'real' bitcoins.
 
+You can get tBTC from faucets like:
+[testnet-faucet.mempool.co](https://testnet-faucet.mempool.co/)
+or
+[coinfaucet.eu/en/btc-testnet](https://coinfaucet.eu/en/btc-testnet/)
+
 There have been three generations of testnet.
 Testnet2 was just the first testnet reset with a different genesis block, because people were starting to trade testnet coins for real money.
 Testnet3 is the current test network.
