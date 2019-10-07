@@ -79,7 +79,7 @@ This will be your Electrum Wallet file.
 
 :::tip
 Steps to find your master private inside Wasabi:
-- Go to `Advanced Info` tab.
+- Go to `Advanced` tab -> `Wallet Info`.
 - Copy your `Extended Master zprv`
 :::
 
