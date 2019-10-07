@@ -134,7 +134,8 @@ module.exports = {
             "/using-wasabi/ColdWasabi.md",
             "/using-wasabi/LurkingWifeMode.md",
             "/using-wasabi/Daemon.md",
-            "/using-wasabi/BIPs.md"
+            "/using-wasabi/BIPs.md",
+            "/using-wasabi/RPC.md"
           ]
         },
     {
