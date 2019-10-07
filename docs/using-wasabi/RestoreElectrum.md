@@ -35,6 +35,7 @@ Choose a name for your new Electrum wallet.
 4. Choose `I already have a seed` or `Use a master key`
 
 :::danger You are at risk!
+
 By typing/pasting the seed or the master private key on a hot or compromised device, you risk losing your funds.
 :::
 
