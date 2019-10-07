@@ -20,7 +20,7 @@ You can follow two different tutorials to get this done:
 
 ## Restoring Wasabi Wallet via Electrum GUI
 
-###Steps:
+### Steps:
 
 1. Launch Electrum
 If you don't have a wallet created on Electrum it should automatically display an Install Wizard. If it opens your default wallet then go to `File` -> `New/Restore`.
