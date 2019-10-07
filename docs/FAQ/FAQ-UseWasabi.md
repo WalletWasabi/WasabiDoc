@@ -118,6 +118,14 @@ Additionally, there is no standard way (bip) to encrypt HD wallets.
 Take into account that it is not only encryption what bip38 provides but also a brute-force protection.
 :::
 
+:::details
+### Does Wasabi support Trezor's and Ledger's hidden wallets?
+
+Yes.
+After the 12 or 24 words, enter the passphrase as the 13th or 25th word.
+It’s part of BIP39.
+:::
+
 
 ## Synchronization
 
@@ -1020,7 +1028,7 @@ So consolidating in a CoinJoin is better, but it might still reveal the common o
 
 - If you do not care about linking the history of the coins because they are all from the same source then you could combine them in a mix (queue all the change from the same source until you reach the minimum input required to mix, currently ~ 0.1 BTC).
 - Mix with [Joinmarket](https://github.com/JoinMarket-Org/joinmarket-clientserver).
-- Donate them (e.g. [to the EFF](https://www.eff.org/))
+- Donate them (e.g. [to the EFF](https://www.eff.org/)), you can find a list of organizations that accept bitcoin donations [here](https://en.bitcoin.it/wiki/Donation-accepting_organizations_and_projects).
 - Spend them on something that is not a particular privacy risk (eg. gift cards).
 - Open a lightning channel.
 - The ultimate solution is to 'close the loop' i.e. spend a change coin without merging it with other coins, do not generate it in the first place by sending whole coins.

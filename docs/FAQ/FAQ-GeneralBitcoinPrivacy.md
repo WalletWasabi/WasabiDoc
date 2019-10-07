@@ -134,7 +134,7 @@ All those who break your own rules, you simply disconnect and ignore.
 Your full node defines, verifies and enforces the sound money you use to store your value.
 ::::
 
-::::details
+:::details
 ### How does a full node protect my privacy?
 
 When you run your own full node, then on your local computer you can verify exactly if the bitcoin you receive are actually valid.
@@ -142,7 +142,14 @@ When you do not verify this for yourself, then you need to ask another trusted t
 Regardless how you ask this other server, there is now more metadata available to potentially link your coins to your identity.
 There are bad ways to communicate, like querying a block explorer over clearnet, and good ways to communicate, like using BIP 158 block filters over tor.
 But regardless, running your own full node means that you don't need to communicate with anyone about your specific coins, and this is strictly better.
-::::
+:::
+
+:::details
+### Can Wasabi work with a pruned bitcoin node??
+
+Yes.
+Wasabi is a hybrid, if your node doesn't have a block, then it acquires it from someone else.
+:::
 
 :::details
 ### Why is it important to use a new address for every payment?

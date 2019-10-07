@@ -264,6 +264,28 @@ For the complete explanation please read [ZeroLink: The Bitcoin Fungibility Fram
 
 :::
 
-## Further Questions
+:::details
+### Is there a way to check Wasabi uptime status?
 
-- What do peers say about Wasabi?
+Yes, you can check the status of Wasabi-related services and websites (like APIs, Backend, etc.) via [UptimeRobot Wasabi Status Page](https://stats.uptimerobot.com/W7q65in4y).
+:::
+
+:::details
+### Is the Backend's (Coordinator) code open source?
+
+Yes, you can verify the code on [GitHub](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Backend).
+:::
+
+:::details
+### Is there an Android/iOs version? 
+
+No, Wasabi and CoinJoin features require considerable computational power, not currently replicable on a smartphone.
+:::
+
+:::details
+### Where can I find Wasabi Wallet on social media?
+
+You can find us on [Twitter](https://twitter.com/wasabiwallet) and [Reddit](https://www.reddit.com/r/WasabiWallet/).
+For chat groups you can find us on [Telegram](https://t.me/WasabiWallet) and [Keybase](https://keybase.io/team/wasabiwallet).
+
+:::
