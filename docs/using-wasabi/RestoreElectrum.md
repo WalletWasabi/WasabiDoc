@@ -49,7 +49,7 @@ Steps to find your master private inside Wasabi:
 
 ## Restoring Wasabi Wallet manually by creating a new wallet file
 
-###Steps:
+### Steps:
 
 1. Create a new text file
 This will be your Electrum Wallet file.
