@@ -17,26 +17,29 @@ This essay is extracted from this step by step [guide](https://github.com/PulpCa
 
 You need sudo privileges to install Wasabi, at “Tails Greeter” create your admin password in “additional settings” and launch Tails.
 
-(Source: https://tails.boum.org/doc/first_steps/startup_options/administration_password/index.en.html)
+Source: [https://tails.boum.org/doc/first_steps/startup_options/administration_password/index.en.html](https://tails.boum.org/doc/first_steps/startup_options/administration_password/index.en.html)
 
 ## DOWNLOAD
 
 Download for Debian/Ubuntu from:  
-http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion (tor hidden service)  
+[http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion) (tor hidden service)  
 or  
-https://www.wasabiwallet.io/#download
+[https://www.wasabiwallet.io/#download](https://www.wasabiwallet.io/#download)
 
-Verify the PGP signature of the downloaded package, the zkSNACKs' PGP key fingerprint is:  
+Verify the PGP signature of the downloaded package, the zkSNACKs' PGP key fingerprint is:
+<br>
 `6FB3 872B 5D42 292F 5992 0797 8563 4832 8949 861E`
 
 `gpg -v Wasabi-X.X.X.deb` (For more details check this [guide](https://docs.wasabiwallet.io/using-wasabi/InstallPackage.html#debian-and-ubuntu))
 
 You can now save your `Wasabi-X.X.X.deb` into the persistent storage, which should look like this:
 
-`/Persistent`  
-&emsp; `/bitcoin-0.18.1` (Bitcoin Core launcher folder)  
-&emsp; `/Bitcoin` (Bitcoin Core data folder)  
-&emsp; `/Wasabi-X.X.X.deb` (Wasabi installer)
+```sh
+/Persistent
+|__ /bitcoin-0.18.1    # Bitcoin Core launcher folder
+|__ /Bitcoin           # Bitcoin Core data folder
+|__ /Wasabi-X.X.X.deb  # Wasabi installer
+```
 
 ## WASABI DATA FOLDER
 
@@ -46,12 +49,14 @@ Wasabi saves session files in `/Home/.walletwasabi/client`, you need to mark the
 
 Create a directory in your persistent with the same hierarchical structure, like this:
 
-`/Persistent`  
- &emsp; `/bitcoin-0.18.1` (Bitcoin Core launcher folder)  
- &emsp; `/Bitcoin` (Bitcoin Core data folder)  
- &emsp; `/Wasabi-X.X.X.deb` (Wasabi installer)  
- &emsp; `/.walletwasabi`  
- &emsp; &emsp; `/client` (here we save our wallet files, filters and blocks)
+```sh
+/Persistent
+|__ /bitcoin-0.18.1    # Bitcoin Core launcher folder
+|__ /Bitcoin           # Bitcoin Core data folder
+|__ /Wasabi-X.X.X.deb  # Wasabi installer
+|__ /.walletwasabi
+    |__ /client        # Here we save our wallet files, filters and blocks
+```
 
 After every session, when you’re done, navigate into `/Home/.walletwasabi/client` and copy the desired folders into your persistent directory.
 
@@ -67,7 +72,7 @@ Drop the `Wasabi-X.X.X.deb` file from `/Home/Persistent` into desktop.
 
 Open the terminal and run:
 
-```
+```sh
 cd Desktop
 sudo dpkg -i Wasabi-X.X.X.deb
 ```
@@ -86,41 +91,45 @@ Wasabi will show as a normal application in your activities overview menu, ready
 
 After the first time you save a Wasabi session, your persistent storage will look like:
 
-`/Persistent`  
-&emsp; `/bitcoin-0.18.1` (Bitcoin Core launcher folder)  
-&emsp; `/Bitcoin` (Bitcoin Core data folder)  
-&emsp; `/Wasabi-X.X.X.deb` (Wasabi installer)  
-&emsp; `/.walletwasabi`  
-&emsp; &emsp; `/client` (here we save our wallet files, filters and blocks)  
-&emsp; &emsp; &emsp; `/Wallets` (wallet files)  
-&emsp; &emsp; &emsp; `/Blocks` (blocks)  
-&emsp; &emsp; &emsp; `/BitcoinStore` (filters)
+```sh
+/Persistent
+|__ /bitcoin-0.18.1        # Bitcoin Core launcher folder
+|__ /Bitcoin               # Bitcoin Core data folder
+|__ /Wasabi-X.X.X.deb      # Wasabi installer
+|__ /.walletwasabi
+    |__ /client            # Here we save our wallet files, blocks and filters
+        |__ /Wallets
+        |__ /Blocks
+        |__ /BitcoinStore
+```
 
 To load your saved session, drop the `.walletwasabi` folder into `/Home` before starting Wasabi.
 
 You can save multiple copies of `.walletwasabi` in your persistent, each with different data:
 
-`/Persistent`  
-&emsp; `/bitcoin-0.18.1` (Bitcoin Core launcher folder)  
-&emsp; `/Bitcoin` (Bitcoin Core data folder)  
-&emsp; `/Wasabi`  
-&emsp; &emsp; `/Wasabi-X.X.X.deb` (Wasabi installer)  
-&emsp; &emsp; `/BitcoinStore` (No need to keep multiple copies of same filters)  
-&emsp; &emsp; `/CoinJoin wallet`  
-&emsp; &emsp; &emsp; `/.walletwasabi`  
-&emsp; &emsp; &emsp; &emsp; `/client` (here we save our wallet files, filters and blocks)  
-&emsp; &emsp; &emsp; &emsp; &emsp; `/Wallets` (wallet files)  
-&emsp; &emsp; &emsp; &emsp; &emsp; `/Blocks` (blocks)  
-&emsp; &emsp; `/watch-only coldstorage A`  
-&emsp; &emsp; &emsp; `/.walletwasabi`  
-&emsp; &emsp; &emsp; &emsp; `/client` (here we save our wallet files, filters and blocks)  
-&emsp; &emsp; &emsp; &emsp; &emsp; `/Wallets` (wallet files)  
-&emsp; &emsp; &emsp; &emsp; &emsp; `/Blocks` (blocks)  
-&emsp; &emsp; `/watch-only coldstorage B`  
-&emsp; &emsp; &emsp; `/.walletwasabi`  
-&emsp; &emsp; &emsp; &emsp; `/client` (here we save our wallet files, filters and blocks)  
-&emsp; &emsp; &emsp; &emsp; &emsp; `/Wallets` (wallet files)  
-&emsp; &emsp; &emsp; &emsp; &emsp; `/Blocks` (blocks)
+```sh
+/Persistent
+|__ /bitcoin-0.18.1                # Bitcoin Core launcher folder
+|__ /Bitcoin                       # Bitcoin Core data folder
+|__ /Wasabi                        # General Wasabi folder
+    |__ /Wasabi-X.X.X.deb          # Wasabi installer
+    |__ /BitcoinStore              # Filters (No need to keep multiple copies of them)
+    |__ /CoinJoin wallet
+    |   |__ /.walletwasabi
+    |       |__ /client            # Here we save our wallet files and blocks
+    |           |__ /Wallets
+    |           |__ /Blocks
+    |__ /watch-only coldstorage A
+    |   |__ /.walletwasabi
+    |       |__ /client
+    |           |__ /Wallets
+    |           |__ /Blocks
+    |__ /watch-only coldstorage B
+        |__ /.walletwasabi
+            |__ /client
+                |__ /Wallets
+                |__ /Blocks
+```
 
 This is only a minor example, tune it to your own needs.
 

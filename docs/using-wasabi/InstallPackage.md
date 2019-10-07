@@ -102,7 +102,7 @@ Press `OK` and close Kleopatra.
 
 If you have already imported zkSNACKs' public key, then jump to step 2.
 
-1. Download zkSNACKs' PGP public key [here](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt), and then import it with `gpg --import PGP.txt`.
+1. Download PGP public key [here](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt), and then import it with `gpg --import PGP.txt`.
 Verify that the fingerprint is `6FB3 872B 5D42 292F 5992 0797 8563 4832 8949 861E`.
 [Next time you can skip previous steps because the public key is already imported.]
 
@@ -130,6 +130,7 @@ Among others, here is where your wallet files and your logs reside.
 If you have already imported zkSNACKs' public key, then jump to step 2.
 
 1. Download zkSNACKs' PGP public key [here](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt), and then import it with `gpg --import PGP.txt`.
+
 Verify that the fingerprint is `6FB3 872B 5D42 292F 5992 0797 8563 4832 8949 861E`.
 [Next time you can skip previous steps because the public key is already imported.]
 
@@ -154,7 +155,7 @@ Among others, here is where your wallet files and your logs reside.
 
 @[youtube](UZ9z5COXaG0)
 
-If you have already imported zkSNACKs' public key, then jump to step 4.
+If you have already imported zkSNACKs public key, then jump to step 4.
 
 1. [Get GnuPG](https://www.gnupg.org/download/index.html).
 
