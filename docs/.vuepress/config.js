@@ -148,6 +148,14 @@ module.exports = {
             "/using-wasabi/Deanonimization.md",
             "/using-wasabi/PayToEndPoint.md"
           ]
+        },
+        {
+          title: "Restoring Wasabi",
+          collapsable: false,
+          sidebarDepth: 2,
+          children: [
+            "/using-wasabi/RestoreElectrum.md"
+          ]
         }
       ],
       "/building-wasabi/": [
