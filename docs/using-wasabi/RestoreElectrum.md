@@ -40,6 +40,7 @@ By typing/pasting the seed or the master private key on a hot or compromised dev
 :::
 
 Here you can type your seed or paste your master private key.
+
 :::tip
 Steps to find your master private inside Wasabi:
 - Go to `Advanced Info` tab.
