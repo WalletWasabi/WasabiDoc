@@ -118,6 +118,14 @@ Additionally, there is no standard way (bip) to encrypt HD wallets.
 Take into account that it is not only encryption what bip38 provides but also a brute-force protection.
 :::
 
+:::details
+### Does Wasabi support Trezor's and Ledger's hidden wallets?
+
+Yes.
+After the 12 or 24 words, enter the passphrase as the 13th or 25th word.
+It’s part of BIP39.
+:::
+
 
 ## Synchronization
 
@@ -466,6 +474,38 @@ If you want faster confirmation, then you have to pay proportionally more sats p
 You can toggle the display of the fee between `sat/vByte` & `percentage of transfered value` & `total bitcoin` & `total USD` by clicking on the text of the fee.
 :::
 
+:::details
+### How do I select coins for spending?
+
+Unlike other Bitcoin wallets, the user cannot spend from Wasabi without selecting coins, since ["Coin Control Is Must Learn If You Care About Your Privacy In Bitcoin"](https://medium.com/@nopara73/coin-control-is-must-learn-if-you-care-about-your-privacy-in-bitcoin-33b9a5f224a2), at least for today.
+The label field of the Send tab is also compulsory.
+The received coins will appear in your Send tab and you'll have to manually select which coins you'll want to spend from.
+By clicking on the Max button, one can spend all selected coins.
+Spending whole coins is beneficial to privacy.
+![](/Send.png)
+:::
+
+:::details
+### How is the tansaction broadcasted?
+
+Wasabi previously did not maintain its P2P connections over Tor.
+Since Wasabi is a non-listening node, broadcasting transactions through other P2P nodes over the clearnet would’ve let the peer to link your IP address to the transaction.
+This is why we were broadcasting our transactions to our backend server over Tor.
+Now, we started tunneling all our P2P traffic through Tor, too:
+We did it in a way that we only connect to onion nodes, so end to end encryption is now enforced between us and our peers.
+All this without involving any exit node.
+We connect to each peer through a different Tor stream.
+This enabled us to replace our transaction broadcasting mechanism.
+Now, we broadcast transactions to only one peer over Tor and immediately after that we disconnect the peer.
+
+If Wasabi cannot broadcast a transaction through a random node over Tor, it will (in the last resort) send the transaction to the coordinator backend for broadcasting.
+
+Once a transaction is sent, Wasabi will always open a new Tor circuit with a new random node on the network, in order to avoid giving away too much information to one party.
+When you send two consecutive transactions via Wasabi, you can be sure that they appear in two very different places on the network.
+
+Wasabi will implement the [Dandelion](https://github.com/gfanti/bips/blob/master/bip-dandelion.mediawiki) protocol for transaction broadcasting when the Bitcoin network adopts it.
+:::
+
 ## CoinJoin
 
 @[youtube](ypfZT9GlqTw)
@@ -711,6 +751,14 @@ You can get tBTC from faucets like:
 [testnet-faucet.mempool.co](https://testnet-faucet.mempool.co/)
 or
 [coinfaucet.eu/en/btc-testnet](https://coinfaucet.eu/en/btc-testnet/)
+:::
+
+:::details
+### How much anonymity set do I need?
+
+It is commonly said that an anonymity set of 50 is sufficient to evade blockchain forensics analysis.
+At least one round to re-mix your coins can increase your privacy drastically.
+With Wasabi this can be achieved in a matter of hours (or minutes if there are a lot of users).
 :::
 
 ## Hardware Wallet
@@ -980,51 +1028,18 @@ So consolidating in a CoinJoin is better, but it might still reveal the common o
 
 - If you do not care about linking the history of the coins because they are all from the same source then you could combine them in a mix (queue all the change from the same source until you reach the minimum input required to mix, currently ~ 0.1 BTC).
 - Mix with [Joinmarket](https://github.com/JoinMarket-Org/joinmarket-clientserver).
-- Donate them (e.g. [to the EFF](https://www.eff.org/))
+- Donate them (e.g. [to the EFF](https://www.eff.org/)), you can find a list of organizations that accept bitcoin donations [here](https://en.bitcoin.it/wiki/Donation-accepting_organizations_and_projects).
 - Spend them on something that is not a particular privacy risk (eg. gift cards).
 - Open a lightning channel.
 - The ultimate solution is to 'close the loop' i.e. spend a change coin without merging it with other coins, do not generate it in the first place by sending whole coins.
 :::
 
-## Further Questions
-
-Send
-
 :::details
-### How do I select coins for spending?
+### How can I mix large amounts?
 
-Unlike other Bitcoin wallets, the user cannot spend from Wasabi without selecting coins, since ["Coin Control Is Must Learn If You Care About Your Privacy In Bitcoin"](https://medium.com/@nopara73/coin-control-is-must-learn-if-you-care-about-your-privacy-in-bitcoin-33b9a5f224a2), at least for today.
-The label field of the Send tab is also compulsory.
-The received coins will appear in your Send tab and you'll have to manually select which coins you'll want to spend from.
-By clicking on the Max button, one can spend all selected coins.
-Spending whole coins is beneficial to privacy.
-![](/Send.png)
+Use Unequal Input Mixing and gain fungibility for UTXOs of 0.1, 0.2, 0.4, 0.8, 1.6, 3.2, ... bitcoin!
+@[youtube](3Ezru07J674)
 :::
-
-:::details
-### How is the tansaction broadcasted?
-
-Wasabi previously did not maintain its P2P connections over Tor.
-Since Wasabi is a non-listening node, broadcasting transactions through other P2P nodes over the clearnet would’ve let the peer to link your IP address to the transaction.
-This is why we were broadcasting our transactions to our backend server over Tor.
-Now, we started tunneling all our P2P traffic through Tor, too:
-We did it in a way that we only connect to onion nodes, so end to end encryption is now enforced between us and our peers.
-All this without involving any exit node.
-We connect to each peer through a different Tor stream.
-This enabled us to replace our transaction broadcasting mechanism.
-Now, we broadcast transactions to only one peer over Tor and immediately after that we disconnect the peer.
-
-If Wasabi cannot broadcast a transaction through a random node over Tor, it will (in the last resort) send the transaction to the coordinator backend for broadcasting.
-
-Once a transaction is sent, Wasabi will always open a new Tor circuit with a new random node on the network, in order to avoid giving away too much information to one party.
-When you send two consecutive transactions via Wasabi, you can be sure that they appear in two very different places on the network.
-
-Wasabi will implement the [Dandelion](https://github.com/gfanti/bips/blob/master/bip-dandelion.mediawiki) protocol for transaction broadcasting when the Bitcoin network adopts it.
-:::
-
-- What is the cluster history?
-
-CoinJoin
 
 :::details
 ### How much anonymity set do I need?
@@ -1053,6 +1068,9 @@ Testnet3 is the current test network.
 It was introduced with the 0.7 release, introduced a third genesis block, a new rule to avoid the "difficulty was too high, is now too low, and transactions take too long to verify" problem, and contains blocks with edge-case transactions designed to test implementation compatibility.
 :::
 
+
+### Further Questions
+
 - How can I select UTXOs for CoinJoin?
 - How many rounds should I CoinJoin?
 - How does my wallet communicate with the Wasabi coordinator server?
@@ -1066,10 +1084,3 @@ Hardware Wallet
 Coin Control Best Practices
 
 - Which coins can I select for CoinJoins?
-
-:::details
-### How can I mix large amounts?
-
-Use Unequal Input Mixing and gain fungibility for UTXOs of 0.1, 0.2, 0.4, 0.8, 1.6, 3.2, ... bitcoin!
-@[youtube](3Ezru07J674)
-:::
