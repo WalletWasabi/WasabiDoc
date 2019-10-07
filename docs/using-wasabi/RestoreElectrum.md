@@ -42,7 +42,7 @@ Steps to find your master private inside Wasabi:
 - Copy your `Extended Master zprv`
 :::
 
-4. On `Script type and Derivation path` tab, choose `native segwit (p2wpkh) or manually insert `m/84'/0'/0'` and proceed to the next steps
+4. On `Script type and Derivation path` tab, choose `native segwit (p2wpkh)` or manually insert `m/84'/0'/0'` and proceed to the next steps
 
 5. Open Electrum's console and digit `wallet.gap_limit_for_change = 100` to change your `gap limit` to 100
 
