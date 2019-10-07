@@ -722,7 +722,8 @@ Yes your computer needs to stay on during CoinJoins, you cannot be offline and s
 :::details
 ### What if there's a power outage during CoinJoin? Do I loose my coins?
 
-No you don't. If your wallet crash or your computer goes offline during CoinJoin you can simply register for a new CoinJoin.
+No you don't.
+If your wallet crash or your computer goes offline during CoinJoin you can simply register for a new CoinJoin.
 :::
 
 ## Hardware Wallet
