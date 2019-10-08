@@ -226,9 +226,9 @@ Everytime a coin is received, the address is removed from the GUI so that you ar
 
 You can generate a new bech32 address in the `Receive` tab of Wasabi Wallet.
 First you must set a label for it, so that you later know who has sent you bitcoin to this address.
-Be precise in the reason for the payment, labeling is an important part of good [coin control](/FAQ-UseWasabi.md#why-is-coin-control-so-important) privacy best practices.
+Be precise in the reason for the payment, labeling is an important part of good [coin control](/docs/FAQ/FAQ-UseWasabi.md#why-is-coin-control-so-important) privacy best practices.
 Then you can click on `Generate` which will now show you the address, and immediately copy it to the clipboard.
-After a coin has been sent to this address, it is removed from the GUI, this is a good feature to help protect you against [address reuse](/FAQ-UseWasabi.md#why-is-it-bad-to-re-use-addresses).
+After a coin has been sent to this address, it is removed from the GUI, this is a good feature to help protect you against [address reuse](/docs/FAQ/FAQ-UseWasabi.md#why-is-it-bad-to-re-use-addresses).
 
 ![](/ReceiveLabelingRequired.png)
 :::
@@ -241,7 +241,7 @@ After that, it'll regenerate the same addresses, this is to avoid bloating the s
 More info [here](https://github.com/zkSNACKs/WalletWasabi/issues/2340#issuecomment-534885887).  
 Let's see an example:
 
-`m/84'/0'/0'` is the dafault BIP84 derivation path, as explained [here](FAQ-UseWasabi.md#What-derivation-paths-does-Wasabi-use), and so this'll be your first receiving address: `m/84'/0'/0'/0/0`.  
+`m/84'/0'/0'` is the dafault BIP84 derivation path, as explained [here](FAQ-UseWasabi.md#what-derivation-paths-does-wasabi-use), and so this'll be your first receiving address: `m/84'/0'/0'/0/0`.  
 `m/84'/0'/0'/0/1` this will be the second.  
 `m/84'/0'/0'/0/2` this will be the third, and so on...
 
@@ -560,7 +560,7 @@ Average: 10 sat/vbyte: 1,680 satoshis per participant (0.00168 %)
 High: 100 sat/vbyte: 16,800 satoshis per participant (0.0168 %)
 :::
 Notice that for such a large amount, the miner, even in extreme cases only takes <0.02% (note this is not 2%!).
-Let's observer for 0.1 BTC:
+Let's observe for 0.1 BTC:
 :::tip
 Minimum: 2 sat/vbyte: 336 satoshis per participant (0.00336 %)
 Average: 10 sat/vbyte: 1,680 satoshis per participant (0.0168 %)
@@ -761,12 +761,12 @@ Yes, Wasabi needs to stay on during CoinJoins, you cannot be offline and still p
 A CoinJoin transaction is different from a normal transaction, where you are the only person signing, and requires many people to sign **the same transaction**.
 Until all the peers are here, no peer knows what transaction to sign.
 
-Here it's how Wasabi handles different scenarios:
+Here is how Wasabi handles different scenarios:
 
-|  | During [input registration phase](FAQ-UseWasabi.md#What-is-happening-in-the-input-registration-phase) | After input registration phase |
+|  | During [input registration phase](FAQ-UseWasabi.md#what-is-happening-in-the-input-registration-phase) | After input registration phase |
 |:---:|:---:|:---:|
-| You close Wasabi | Your registered coins are automatically dequequed | Wasabi will make you wait until the round finishes |
-| Wasabi goes offline | Your registered coins are automatically timed out by the coordinator after 1 minute | Your registered coins will be banned for 24h from particing in another CoinJoin. (This is to prevent [DoS attacks](https://github.com/nopara73/ZeroLink/#d-dos-attack)) |
+| You close Wasabi | Your registered coins are automatically dequeued | Wasabi will make you wait until the round finishes |
+| Wasabi goes offline | Your registered coins are automatically timed out by the coordinator after 1 minute | Your registered coins will be banned for 24h from participating in another CoinJoin. (This is to prevent [DoS attacks](https://github.com/nopara73/ZeroLink/#d-dos-attack)) |
 :::
 
 :::details
@@ -774,9 +774,10 @@ Here it's how Wasabi handles different scenarios:
 
 No you don't.
 CoinJoins are atomic, they happen or they don't.
-If your wallet crash or your computer goes offline during CoinJoin you can simply register for a new CoinJoin, look at table [here](/docs/FAQ/FAQ-UseWasabi.md#does-wasabi-have-to-stay-on-during-coinjoin) for more info.
+If your wallet crashes or your computer goes offline during CoinJoin you can simply register for a new CoinJoin, look at table [here](/docs/FAQ/FAQ-UseWasabi.md#does-wasabi-have-to-stay-on-during-coinjoin) for more info.
 :::
 
+:::details
 ### How much anonymity set do I need?
 
 It is commonly said that an anonymity set of 50 is sufficient to evade blockchain forensics analysis.
@@ -980,7 +981,7 @@ The `Tor Log File` shows the Tor specific logs.
 ### How to activate Lurking Wife Mode?
 
 You can activate Lurking Wife Mode from `Settings` or by clicking on your wallet balance.
-You can read more about Lurking Wife Mode [here](/using-wasabi/LurkingWifeMode.md).
+You can read more about Lurking Wife Mode [here](/docs/using-wasabi/LurkingWifeMode.md).
 :::
 
 ## Coin Control Best Practices
@@ -1064,13 +1065,8 @@ Use Unequal Input Mixing and gain fungibility for UTXOs of 0.1, 0.2, 0.4, 0.8, 1
 @[youtube](3Ezru07J674)
 :::
 
-:::details
-### How much anonymity set do I need?
 
-It is commonly said that an anonymity set of 50 is sufficient to evade blockchain forensics analysis.
-At least one round to re-mix your coins can increase your privacy drastically.
-With Wasabi this can be achieved in a matter of hours (or minutes if there are a lot of users).
-:::
+## Further Questions
 
 :::details
 ### What is Testnet?
@@ -1091,8 +1087,11 @@ Testnet3 is the current test network.
 It was introduced with the 0.7 release, introduced a third genesis block, a new rule to avoid the "difficulty was too high, is now too low, and transactions take too long to verify" problem, and contains blocks with edge-case transactions designed to test implementation compatibility.
 :::
 
+Send
 
-### Further Questions
+- What is the cluster history?
+
+CoinJoin
 
 - How can I select UTXOs for CoinJoin?
 - How many rounds should I CoinJoin?

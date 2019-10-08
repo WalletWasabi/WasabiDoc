@@ -62,7 +62,7 @@ Here is a list of all the supported and integrated Bitcoin Improvement Proposals
 This allows to generate one root master seed that can derive a tree of public keys with different paths [BIP 44](BIPs.md#bip-44-multi-account-hierarchy-for-deterministic-wallets).
 `m / purpose' / coin_type' / account' / change / address_index`.
 Wasabi specifically uses this standard `m/84'/0'/0'`.
-On the TestNet and on the RegTest Wasabi deviates from the standard and usees `m/84'/0'/0'` instead of `m/84'/1'/0'`.
+On the TestNet and on the RegTest Wasabi deviates from the standard and uses `m/84'/0'/0'` instead of `m/84'/1'/0'`.
 
 :::
 
