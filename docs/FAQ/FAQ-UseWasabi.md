@@ -226,9 +226,9 @@ Everytime a coin is received, the address is removed from the GUI so that you ar
 
 You can generate a new bech32 address in the `Receive` tab of Wasabi Wallet.
 First you must set a label for it, so that you later know who has sent you bitcoin to this address.
-Be precise in the reason for the payment, labeling is an important part of good [coin control](/FAQ-UseWasabi.md#why-is-coin-control-so-important) privacy best practices.
+Be precise in the reason for the payment, labeling is an important part of good [coin control](/docs/FAQ/FAQ-UseWasabi.md#why-is-coin-control-so-important) privacy best practices.
 Then you can click on `Generate` which will now show you the address, and immediately copy it to the clipboard.
-After a coin has been sent to this address, it is removed from the GUI, this is a good feature to help protect you against [address reuse](/FAQ-UseWasabi.md#why-is-it-bad-to-re-use-addresses).
+After a coin has been sent to this address, it is removed from the GUI, this is a good feature to help protect you against [address reuse](/docs/FAQ/FAQ-UseWasabi.md#why-is-it-bad-to-re-use-addresses).
 
 ![](/ReceiveLabelingRequired.png)
 :::
@@ -241,7 +241,7 @@ After that, it'll regenerate the same addresses, this is to avoid bloating the s
 More info [here](https://github.com/zkSNACKs/WalletWasabi/issues/2340#issuecomment-534885887).  
 Let's see an example:
 
-`m/84'/0'/0'` is the dafault BIP84 derivation path, as explained [here](FAQ-UseWasabi.md#What-derivation-paths-does-Wasabi-use), and so this'll be your first receiving address: `m/84'/0'/0'/0/0`.  
+`m/84'/0'/0'` is the dafault BIP84 derivation path, as explained [here](FAQ-UseWasabi.md#what-derivation-paths-does-wasabi-use), and so this'll be your first receiving address: `m/84'/0'/0'/0/0`.  
 `m/84'/0'/0'/0/1` this will be the second.  
 `m/84'/0'/0'/0/2` this will be the third, and so on...
 
@@ -763,7 +763,7 @@ Until all the peers are here, no peer knows what transaction to sign.
 
 Here it's how Wasabi handles different scenarios:
 
-|  | During [input registration phase](FAQ-UseWasabi.md#What-is-happening-in-the-input-registration-phase) | After input registration phase |
+|  | During [input registration phase](FAQ-UseWasabi.md#what-is-happening-in-the-input-registration-phase) | After input registration phase |
 |:---:|:---:|:---:|
 | You close Wasabi | Your registered coins are automatically dequequed | Wasabi will make you wait until the round finishes |
 | Wasabi goes offline | Your registered coins are automatically timed out by the coordinator after 1 minute | Your registered coins will be banned for 24h from particing in another CoinJoin. (This is to prevent [DoS attacks](https://github.com/nopara73/ZeroLink/#d-dos-attack)) |
@@ -980,7 +980,7 @@ The `Tor Log File` shows the Tor specific logs.
 ### How to activate Lurking Wife Mode?
 
 You can activate Lurking Wife Mode from `Settings` or by clicking on your wallet balance.
-You can read more about Lurking Wife Mode [here](/using-wasabi/LurkingWifeMode.md).
+You can read more about Lurking Wife Mode [here](/docs/using-wasabi/LurkingWifeMode.md).
 :::
 
 ## Coin Control Best Practices
