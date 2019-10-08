@@ -27,3 +27,4 @@ And all the necessary information you need to quickly start with your invaluable
 - [Developers debugging Guide](/building-wasabi/HowToDebug.html)
 - [Ports](/building-wasabi/Ports.html)
 - [MIT License](/building-wasabi/LICENSE.html)
+- [Credits](/building-wasabi/Credits.html)
