@@ -18,7 +18,7 @@ Further tutorials about the different parts of the wallet, for newbies and power
 - [Wasabi Setup on Tails](/using-wasabi/WasabiSetupTails.html)
 - [Build from source code](/using-wasabi/BuildSource.html)
 - [Deterministic Build](/using-wasabi/DeterministicBuild.html)
-#### Installing Wasabi
+#### Using Wasabi
 - [Wallet Generation](/using-wasabi/WalletGeneration.html)
 - [Password Finder](/using-wasabi/PasswordFinder.html)
 - [Cold-Wasabi Protocol](/using-wasabi/ColdWasabi.html)
@@ -31,5 +31,5 @@ Further tutorials about the different parts of the wallet, for newbies and power
 - [Network Level Privacy](/using-wasabi/NetworkLevelPrivacy.html)
 - [How you can be de-anonymized using Bitcoin](/using-wasabi/Deanonimization.html)
 - [Pay to EndPoint](/using-wasabi/PayToEndPoint.html)
-### Restoring Wasabi
+#### Restoring Wasabi
 - [Restoring Wasabi Wallet to Electrum](/using-wasabi/RestoreElectrum.html)

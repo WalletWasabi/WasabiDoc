@@ -560,7 +560,7 @@ Average: 10 sat/vbyte: 1,680 satoshis per participant (0.00168 %)
 High: 100 sat/vbyte: 16,800 satoshis per participant (0.0168 %)
 :::
 Notice that for such a large amount, the miner, even in extreme cases only takes <0.02% (note this is not 2%!).
-Let's observer for 0.1 BTC:
+Let's observe for 0.1 BTC:
 :::tip
 Minimum: 2 sat/vbyte: 336 satoshis per participant (0.00336 %)
 Average: 10 sat/vbyte: 1,680 satoshis per participant (0.0168 %)
