@@ -560,7 +560,7 @@ Average: 10 sat/vbyte: 1,680 satoshis per participant (0.00168 %)
 High: 100 sat/vbyte: 16,800 satoshis per participant (0.0168 %)
 :::
 Notice that for such a large amount, the miner, even in extreme cases only takes <0.02% (note this is not 2%!).
-Let's observer for 0.1 BTC:
+Let's observe for 0.1 BTC:
 :::tip
 Minimum: 2 sat/vbyte: 336 satoshis per participant (0.00336 %)
 Average: 10 sat/vbyte: 1,680 satoshis per participant (0.0168 %)
@@ -761,12 +761,12 @@ Yes, Wasabi needs to stay on during CoinJoins, you cannot be offline and still p
 A CoinJoin transaction is different from a normal transaction, where you are the only person signing, and requires many people to sign **the same transaction**.
 Until all the peers are here, no peer knows what transaction to sign.
 
-Here it's how Wasabi handles different scenarios:
+Here is how Wasabi handles different scenarios:
 
 |  | During [input registration phase](FAQ-UseWasabi.md#what-is-happening-in-the-input-registration-phase) | After input registration phase |
 |:---:|:---:|:---:|
-| You close Wasabi | Your registered coins are automatically dequequed | Wasabi will make you wait until the round finishes |
-| Wasabi goes offline | Your registered coins are automatically timed out by the coordinator after 1 minute | Your registered coins will be banned for 24h from particing in another CoinJoin. (This is to prevent [DoS attacks](https://github.com/nopara73/ZeroLink/#d-dos-attack)) |
+| You close Wasabi | Your registered coins are automatically dequeued | Wasabi will make you wait until the round finishes |
+| Wasabi goes offline | Your registered coins are automatically timed out by the coordinator after 1 minute | Your registered coins will be banned for 24h from participating in another CoinJoin. (This is to prevent [DoS attacks](https://github.com/nopara73/ZeroLink/#d-dos-attack)) |
 :::
 
 :::details
@@ -774,7 +774,7 @@ Here it's how Wasabi handles different scenarios:
 
 No you don't.
 CoinJoins are atomic, they happen or they don't.
-If your wallet crash or your computer goes offline during CoinJoin you can simply register for a new CoinJoin, look at table [here](/FAQ/FAQ-UseWasabi.html#Does-my-computer-have-to-stay-on-during-CoinJoin) for more info.
+If your wallet crashes or your computer goes offline during CoinJoin you can simply register for a new CoinJoin, look at table [here](/FAQ/FAQ-UseWasabi.html#Does-my-computer-have-to-stay-on-during-CoinJoin) for more info.
 :::
 
 ### How much anonymity set do I need?

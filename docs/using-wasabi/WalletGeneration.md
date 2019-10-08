@@ -46,7 +46,7 @@ But whoever has both, gets full access to all the transaction history and gains 
 :::danger Backup your recovery words!
 Without the recovery words (Seed phrase) and the password, you cannot recover your wallet.
 So tripple check that you have a proper backup!
-Make sure the backup is separate from the password, which decrypts the recovery words.
+Make sure the backup is separate from the password.
 :::
 
 ![](/WalletManagerRecoveryWords.png)
