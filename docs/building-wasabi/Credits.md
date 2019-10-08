@@ -5,8 +5,6 @@
 }
 ---
 
-
-
 # Credits
 
 Part of the content in this documentation comes from other open source projects.
