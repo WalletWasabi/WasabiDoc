@@ -777,6 +777,7 @@ CoinJoins are atomic, they happen or they don't.
 If your wallet crash or your computer goes offline during CoinJoin you can simply register for a new CoinJoin, look at table [here](/FAQ/FAQ-UseWasabi.html#Does-my-computer-have-to-stay-on-during-CoinJoin) for more info.
 :::
 
+:::details
 ### How much anonymity set do I need?
 
 It is commonly said that an anonymity set of 50 is sufficient to evade blockchain forensics analysis.
@@ -1064,13 +1065,8 @@ Use Unequal Input Mixing and gain fungibility for UTXOs of 0.1, 0.2, 0.4, 0.8, 1
 @[youtube](3Ezru07J674)
 :::
 
-:::details
-### How much anonymity set do I need?
 
-It is commonly said that an anonymity set of 50 is sufficient to evade blockchain forensics analysis.
-At least one round to re-mix your coins can increase your privacy drastically.
-With Wasabi this can be achieved in a matter of hours (or minutes if there are a lot of users).
-:::
+## Further Questions
 
 :::details
 ### What is Testnet?
@@ -1091,8 +1087,11 @@ Testnet3 is the current test network.
 It was introduced with the 0.7 release, introduced a third genesis block, a new rule to avoid the "difficulty was too high, is now too low, and transactions take too long to verify" problem, and contains blocks with edge-case transactions designed to test implementation compatibility.
 :::
 
+Send
 
-### Further Questions
+- What is the cluster history?
+
+CoinJoin
 
 - How can I select UTXOs for CoinJoin?
 - How many rounds should I CoinJoin?
