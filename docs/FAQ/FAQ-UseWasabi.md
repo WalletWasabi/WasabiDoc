@@ -241,11 +241,11 @@ After that, it'll regenerate the same addresses, this is to avoid bloating the s
 More info [here](https://github.com/zkSNACKs/WalletWasabi/issues/2340#issuecomment-534885887).  
 Let's see an example:
 
-`m/84'/0'/0'` is the dafault BIP84 derivation path, as explained [here](FAQ-UseWasabi.md#what-derivation-paths-does-wasabi-use), and so this'll be your first receiving address: `m/84'/0'/0'/0/0`.  
+`m/84'/0'/0'` is the default BIP84 derivation path, as explained [here](FAQ-UseWasabi.md#what-derivation-paths-does-wasabi-use), and so this'll be your first receiving address: `m/84'/0'/0'/0/0`.  
 `m/84'/0'/0'/0/1` this will be the second.  
 `m/84'/0'/0'/0/2` this will be the third, and so on...
 
-At `m/84'/0'/0'/0/20` (your 21st address), if you never used any of the previously generated addresses, Wasabi will start recycling the previous unused ones and will automatically overwrite the labels. 
+At `m/84'/0'/0'/0/20` (your 21st address), if you never used any of the previously generated addresses, Wasabi will start recycling the previous unused ones and will automatically overwrite the labels.
 E.g., Wasabi will not generate address `m/84'/0'/0'/0/21` with label: "address n. 22", instead it'll regenerate one between `m/84'/0'/0'/0/0` and `m/84'/0'/0'/0/20` and will overwrite previous label to "address n. 22".
 
 To increase the number of freshly new generated addresses, you have to increase the `MinGapLimit` json property of your `wallet.json` file.
@@ -654,10 +654,20 @@ Then Wasabi generates several addresses, depending on the value of inputs regist
 The address of the anonset CoinJoin output must not be linked to your input, and thus it is [cryptographically blinded](https://en.wikipedia.org/wiki/Blind_signature) to incomprehensible cypher-text.
 Since the change output can be easily linked to your input with CoinJoin sudoku [reference missing], this address is not blinded, but sent in clear-text.
 
-Wasabi wallet generates a new tor identity [reference missing] called Alice, she is like a separate entity, and for every round you use a new Alice who is not linked to any previous connection.
-With Alice, you send some information to the Wasabi coordinator server: [i] the input coin that you want to register, together with the input proof signature; [ii] the clear text change address; and [iii] the blinded anonset CoinJoin output.
+Wasabi wallet generates a new tor identity [reference missing] called **Alice**, she is like a separate entity, and for every round you use a new Alice who is not linked to any previous connection.
+With Alice, you send some information to the Wasabi coordinator server:
 
-The Wasabi coordinator now verifies that: [i] there is still room for more peers on this CoinJoin; [ii] the blinded output has never been registered before; [iii] each input has not been registered before, is not banned, is unspent, and that the input proof is valid; and [iv] that the sum value of inputs is higher than the minimum required value of 0.1 bitcoin.
+* The input coin that you want to register, together with the input proof signature.
+* The clear text change address.
+* The blinded anonset CoinJoin output.
+
+The Wasabi coordinator now verifies that:
+
+* There is still room for more peers on this CoinJoin.
+* The blinded output has never been registered before.
+* Each input has not been registered before, is not banned, is unspent, and that the input proof is valid.
+* That the sum value of inputs is higher than the minimum required value of 0.1 bitcoin.
+
 Only when all these checks are valid does the coordinator sign the blinded output.
 He does not know the address that he is signing, because it is blinded.
 This signature is proof that the coordinator has verified that Alice is not cheating.
@@ -691,8 +701,13 @@ The connection confirmation phase ends when all Alice's have provided their inpu
 ### What is happening in the output registration phase?
 
 Now that all peers are online, we are ready to proceed with the [output registration phase](https://github.com/nopara73/zerolink#2-output-registration-phase) of the round.
-Wasabi generates a completely new tor identity Bob, he is in no way tied to Alice.
-Bob sends to the Wasabi coordinator: [i] the clear-text address for the anonset CoinJoin output; [ii] the coordinator signature over that output; and [iii] the round hash of all the inputs.
+Wasabi generates a completely new tor identity **Bob**, he is in no way tied to Alice.
+Bob sends to the Wasabi coordinator:
+
+* The clear-text address for the anonset CoinJoin output.
+* The coordinator signature over that output.
+* The round hash of all the inputs.
+
 Because the coordinator can verify his own signature, he knows that this output was initially sent by any Alice [he cannot know which Alice exactly] and that he has verified that everything is in order.
 
 It is very important that the coordinator cannot link Alice to Bob.
@@ -709,7 +724,11 @@ If after a timeout not all outputs are registered, then this round is abandoned,
 
 Now that all inputs and outputs are registered, the Wasabi coordinator can start the [signing phase](https://github.com/nopara73/zerolink#3-signing-phase) by building the CoinJoin transaction with all the registered inputs, the anonset outputs, and the change outputs.
 He sends this transaction to all the Alice's of this round.
-Each Alice verifies that: [i] the committed round hash is equal to the hash of all the inputs in the proposed transaction; and [ii] her inputs and outputs are correctly included.
+Each Alice verifies that:
+
+* The committed round hash is equal to the hash of all the inputs in the proposed transaction.
+* Her inputs and outputs are correctly included.
+
 Then she signs the transaction with the private keys of her inputs.
 Alice sends the uniqueID, the signature and the input index to the coordinator, who then verifies this information.
 
