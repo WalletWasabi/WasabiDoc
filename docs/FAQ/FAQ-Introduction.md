@@ -126,6 +126,12 @@ Yes, you can check the status of Wasabi-related services and websites (like APIs
 :::
 
 :::details
+### What software supplies the block filters that Wasabi uses?
+
+The Wasabi coordinator supplies the filters.
+:::
+
+:::details
 ### Is the Backend's (Coordinator) code open source?
 
 Yes, you can verify the code on [GitHub](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Backend).
