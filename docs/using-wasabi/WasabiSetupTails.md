@@ -136,3 +136,44 @@ This is only a minor example, tune it to your own needs.
 :::danger
 Remember to do backups!
 :::
+
+## Script to automatically install Wasabi on Tails
+
+Alternatively, you can use this script made by [permabull](https://github.com/permabull/wasabi_tails_installer/blob/master/wasabi_tails_installer), which, after downloading Wasabi by following [step 2](/using-wasabi/WasabiSetupTails.html#download), automatically installs Wasabi from the persistent folder and moves the wallet you wanna open (or all of them) by userinput:
+```
+#!/bin/bash
+
+sudo dpkg -i Wasabi-1.1.9.1.deb
+
+wassabee </dev/null &>/dev/null &
+
+sleep 5s
+
+pkill wassabee
+
+echo "*********************"
+
+ls -1 -d */
+
+echo "*********************"
+
+while true
+do	
+    read -p "Enter wallet to open: " wallet_name
+    FOLDER="$wallet_name"
+
+    if [ -d "$FOLDER" ]
+    then
+        echo "$FOLDER wallet found."
+	cd "$FOLDER"/.walletwasabi/
+	cp -r client/* ~/.walletwasabi/client
+	echo "Your files has been moved to wasabi folder"
+	break
+    else
+	echo ""$FOLDER" wallet dont exist"
+	continue
+fi
+done
+
+wassabee </dev/null &>/dev/null &
+```
