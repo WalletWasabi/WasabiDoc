@@ -167,7 +167,7 @@ do
         echo "$FOLDER wallet found."
 	cd "$FOLDER"/.walletwasabi/
 	cp -r client/* ~/.walletwasabi/client
-	echo "Your files has been moved to wasabi folder"
+	echo "Your files have been moved to wasabi folder"
 	break
     else
 	echo ""$FOLDER" wallet doesn't exist"
