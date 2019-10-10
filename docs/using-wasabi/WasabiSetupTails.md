@@ -139,7 +139,7 @@ Remember to do backups!
 
 ## Script to automatically install Wasabi on Tails
 
-Alternatively, you can use this script made by [permabull](https://github.com/permabull/wasabi_tails_installer/blob/master/wasabi_tails_installer), which, after downloading Wasabi by following [step 2](/using-wasabi/WasabiSetupTails.html#download), automatically installs Wasabi from the persistent folder and moves the wallet you wanna open (or all of them) by userinput:
+Alternatively, you can use this [script](https://github.com/permabull/wasabi_tails_installer/blob/master/wasabi_tails_installer) made by [permabull](https://github.com/permabull), which, after downloading Wasabi by following [step 2](/using-wasabi/WasabiSetupTails.html#download), automatically installs Wasabi from the persistent folder and moves the wallet you wanna open (or all of them) by user input:
 ```
 #!/bin/bash
 
