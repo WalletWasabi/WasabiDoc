@@ -203,4 +203,8 @@ You may want to start with `--help`.
 
 ## Further Questions
 
-- How do I install the Wasabi backend server?
+:::details
+## How do I install the Wasabi backend server?
+
+To install Wasabi backend server you can follow [this guide](/using-wasabi/InstallBackend.md).
+:::
