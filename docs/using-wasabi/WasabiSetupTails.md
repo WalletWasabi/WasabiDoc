@@ -170,7 +170,7 @@ do
 	echo "Your files has been moved to wasabi folder"
 	break
     else
-	echo ""$FOLDER" wallet dont exist"
+	echo ""$FOLDER" wallet doesn't exist"
 	continue
 fi
 done
