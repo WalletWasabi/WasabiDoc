@@ -25,6 +25,7 @@ Further tutorials about the different parts of the wallet, for newbies and power
 - [Lurking Wife Mode](/using-wasabi/LurkingWifeMode.html)
 - [Headless Wasabi Deamon](/using-wasabi/Daemon.html)
 - [Supported BIPs](/using-wasabi/BIPs.html)
+- [Install Wasabi backend server](/using-wasabi/InstallBackend.html)
 #### Privacy Best Practices
 - [Address Reuse](/using-wasabi/AddressReuse.html)
 - [Lost Password Strategy](/using-wasabi/LostPassword.html)
