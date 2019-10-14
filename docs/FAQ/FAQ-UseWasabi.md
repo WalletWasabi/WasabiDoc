@@ -512,7 +512,7 @@ Wasabi will implement the [Dandelion](https://github.com/gfanti/bips/blob/master
 Clusters are a property of a Bitcoin wallet with strong coin-control and good labeling.
 When you use Wasabi, you must label every coin that you receive.
 The reason why this is important, is that your "wallet" is really just a collection of coins (similar to a physical wallet, not to a bank account).
-When you receive coins from somewhere that you have labelled with a fresh address, Wasabi will store the label locally on your device, for example:
+When you receive coins from somewhere to a labelled address, Wasabi will store the label locally on your device, for example:
 
 `----> 0.65 BTC (From my Boss Bob)`
 
