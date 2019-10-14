@@ -537,7 +537,7 @@ But when you combine (consolidate) your coins in this way, you reveal to your bo
 
 When you mix coins with Wasabi, you actually de-link the trail from your boss/Coinbase, to the coins in your wallet.
 This is represented to you in two ways:
-1. The coins will have an anonymity set >1, and typically will have a green shield.
+1. The coin will have an anonymity set > 1, and typically will have a green shield.
 2. The coin will say "ZeroLink mixed coin".
 This coin you can spend without having to worry about your boss or Coinbase being able to track your behavior.
 
