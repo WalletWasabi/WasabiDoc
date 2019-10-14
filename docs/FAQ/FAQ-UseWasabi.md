@@ -793,7 +793,7 @@ Here is how Wasabi handles different scenarios:
 
 No you don't.
 CoinJoins are atomic, they happen or they don't.
-If your wallet crashes or your computer goes offline during CoinJoin you can simply register for a new CoinJoin, look at table [here](/FAQ/FAQ-UseWasabi.html#Does-my-computer-have-to-stay-on-during-CoinJoin) for more info.
+If your wallet crashes or your computer goes offline during CoinJoin you can simply register for a new CoinJoin, look at table [here](/FAQ/FAQ-UseWasabi.md#does-wasabi-have-to-stay-on-during-coinjoin) for more info.
 :::
 
 :::details
