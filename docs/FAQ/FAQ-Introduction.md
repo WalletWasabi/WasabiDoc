@@ -128,7 +128,9 @@ Yes, you can check the status of Wasabi-related services and websites (like APIs
 :::details
 ### What software supplies the block filters that Wasabi uses?
 
-The Wasabi coordinator supplies the filters.
+The zkSnacks coordinator supplies the filters.
+This means you rely on the server providing you valid filters.
+But because you download the blocks from a random Bitcoin peer-to-peer node - or your own node - the coordinator cannot spy on which blocks you are interested in.
 :::
 
 :::details
