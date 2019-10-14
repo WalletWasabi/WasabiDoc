@@ -528,7 +528,7 @@ This is how the transaction will look like:
 
 ```
 0.65 BTC (From my Boss Bob) -----> 2.75 BTC (From my Boss Bob & Coinbase)
-2.1 BTC (From Coinbase)
+2.1 BTC (The person's name, Coinbase)
 ```
 
 The problem with this transaction, is your boss knows you, and knows that the 0.65 BTC is in your possession, and can monitor your transaction behavior.
