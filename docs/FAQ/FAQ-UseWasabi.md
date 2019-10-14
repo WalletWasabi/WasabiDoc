@@ -520,6 +520,7 @@ Wasabi is an Anonymizing software provider so it is not a money transmitter, thu
 Basically we can continue to operate like now and it is compliant.
 
 Here's a great explanation about it:
+
 @[youtube](tLOMcU8MhWM,1305)
 :::
 
@@ -1081,6 +1082,7 @@ So consolidating in a CoinJoin is better, but it might still reveal the common o
 ### How can I mix large amounts?
 
 Use Unequal Input Mixing and gain fungibility for UTXOs of 0.1, 0.2, 0.4, 0.8, 1.6, 3.2, ... bitcoin!
+
 @[youtube](3Ezru07J674)
 :::
 
