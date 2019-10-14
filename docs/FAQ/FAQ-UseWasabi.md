@@ -888,6 +888,18 @@ You can follow these links to have a full explanation on that:
 5. [BROADCASTING PHASE](/FAQ/FAQ-UseWasabi.html#what-is-happening-in-the-broadcasting-phase)
 :::
 
+:::details
+### What are Wasabi's mixing times?
+
+It depends on many things.
+First of all from your desired anonimity set.
+Wasabi is developed in a way that there's a round at least once every two hours.
+If there are 100 peers registered earlier, then there can be many per hour.
+Regarding why do we want 100 number, is among some other reasons, because that was our calculation to be that would make rounds happen in every 2-5 minutes, considering the liquidity of some custodial mixers.
+
+Summing up: the more peers partecipates in CoinJoins, the faster the mixes are.
+:::
+
 ## Hardware Wallet
 
 @[youtube](aU8ysH9JH9M)
