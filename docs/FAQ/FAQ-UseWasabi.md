@@ -226,9 +226,9 @@ Everytime a coin is received, the address is removed from the GUI so that you ar
 
 You can generate a new bech32 address in the `Receive` tab of Wasabi Wallet.
 First you must set a label for it, so that you later know who has sent you bitcoin to this address.
-Be precise in the reason for the payment, labeling is an important part of good [coin control](/docs/FAQ/FAQ-UseWasabi.md#why-is-coin-control-so-important) privacy best practices.
+Be precise in the reason for the payment, labeling is an important part of good [coin control](/FAQ/FAQ-UseWasabi.md#why-is-coin-control-so-important) privacy best practices.
 Then you can click on `Generate` which will now show you the address, and immediately copy it to the clipboard.
-After a coin has been sent to this address, it is removed from the GUI, this is a good feature to help protect you against [address reuse](/docs/FAQ/FAQ-UseWasabi.md#why-is-it-bad-to-re-use-addresses).
+After a coin has been sent to this address, it is removed from the GUI, this is a good feature to help protect you against [address reuse](/FAQ/FAQ-UseWasabi.md#why-is-it-bad-to-re-use-addresses).
 
 ![](/ReceiveLabelingRequired.png)
 :::
@@ -1001,7 +1001,7 @@ The `Tor Log File` shows the Tor specific logs.
 ### How to activate Lurking Wife Mode?
 
 You can activate Lurking Wife Mode from `Settings` or by clicking on your wallet balance.
-You can read more about Lurking Wife Mode [here](/docs/using-wasabi/LurkingWifeMode.md).
+You can read more about Lurking Wife Mode [here](/using-wasabi/LurkingWifeMode.md).
 :::
 
 ## Coin Control Best Practices
