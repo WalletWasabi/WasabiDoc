@@ -506,6 +506,52 @@ When you send two consecutive transactions via Wasabi, you can be sure that they
 Wasabi will implement the [Dandelion](https://github.com/gfanti/bips/blob/master/bip-dandelion.mediawiki) protocol for transaction broadcasting when the Bitcoin network adopts it.
 :::
 
+:::details
+### What is the cluster history?
+
+Clusters are a property of a Bitcoin wallet with strong coin-control and good labeling.
+When you use Wasabi, you must label every coin that you receive.
+The reason why this is important, is that your "wallet" is really just a collection of coins (similar to a physical wallet, but not to your online bank account).
+When you receive coins from somewhere that you have labelled with a fresh address, Wasabi will store the label locally on your device, for example:
+
+`----> 0.65 BTC (From my Boss Bob)`
+
+Now if you receive money from another person, for example, let's say you received money from an exchange that, your label would look like this:
+
+`----> 2.1 BTC (From Coinbase)`
+
+Now here is where things can be a bit tricky for folks unfamiliar with Bitcoin.
+Suppose you wanted to send all of your coins to a hardware wallet.
+So you think to yourself "What's the harm in sending my money to one address?"
+
+This is how the transaction will look like:
+
+```
+0.65 BTC (From my Boss Bob) -----> 2.75 BTC (From my Boss Bob & Coinbase)
+2.1 BTC (From Coinbase)
+```
+
+The problem with this transaction, is your boss knows you, and knows that the 0.65 BTC is in your possession, and can monitor your transaction behavior.
+Coinbase also knows you, and can do the same thing.
+But when you combine (or consolidate) your coins in this way, you reveal to your boss that you also have 2.1 BTC from somewhere else, and you reveal to Coinbase that you have 0.65 Bitcoin from somewhere else.
+Now your Boss knows how much money you have in total, and Coinbase knows that you are getting paid in Bitcoin.
+
+When you mix coins with Wasabi, you actually de-link the trail from your boss/Coinbase, to the coins in your wallet.
+This is represented to you in two ways:
+1. The coins will have an anonymity set >1, and typically will have a green shield.
+2. The coin will say "ZeroLink mixed coin".
+This coin you can spend without having to worry about your boss or Coinbase being able to track your behavior.
+
+However, when you mix a coin, there is often change.
+This change is marked in a red 'x' and has an anonymity set ==1 (with a couple of small exceptions regarding remixing).
+The change is completely linked to your coins from before the mix, and so need to be dealt with properly.
+If you combine the tiny bit of change you received from your boss and from Coinbase, they might still know how much money you have (but now know where you are spending it).
+
+So the idea around clusters is to make it easier for users to follow the transaction graph.
+The transaction graph is the history of where a coin has been, and is important if different histories need to be separated.
+For example, if you buy coins anonymously in a P2P way, you should try to avoid mixing those coins with coins you got in a public way (donation, coinbase, etc.).
+:::
+
 ## CoinJoin
 
 @[youtube](ypfZT9GlqTw)
@@ -803,6 +849,43 @@ If your wallet crashes or your computer goes offline during CoinJoin you can sim
 It is commonly said that an anonymity set of 50 is sufficient to evade blockchain forensics analysis.
 At least one round to re-mix your coins can increase your privacy drastically.
 With Wasabi this can be achieved in a matter of hours (or minutes if there are a lot of users).
+:::
+
+:::details
+### How many rounds should I CoinJoin?
+
+There's a round at least once every two hours. 
+If there are 100 peers registered earlier, then there can be many per hour.
+Wasabi automatically registers your UTXO for a new CoinJoin by following your desired anonimity set.
+Remember that after a mix, Wasabi lowers the next round minimum denomination in such a way that if you remix you pay less or zero.
+However that only works when the network fees are low.
+So, you should assume that will pay the coordinator for the new mix round too.
+:::
+
+:::details
+### How can I select UTXOs for CoinJoin?
+
+You need to go to `CoinJoin` tab and select your desired UTXO. It will be queued and registered for the next CoinJoin round.
+:::
+
+:::details
+### How does my wallet communicate with the Wasabi coordinator server?
+
+Wasabi communicates in many ways to the coordinator server.
+First of all, Wasabi uses BIP-158 block filters to ensure network level privacy.
+You can follow these FAQs to have a full explanation on the theme:
+- [What are BIP-158 Block Filters?](/FAQ/FAQ-UseWasabi.html#what-are-bip-158-block-filters)
+- [What software supplies the block filters that Wasabi uses?](/FAQ/FAQ-Introduction.html#what-software-supplies-the-block-filters-that-wasabi-uses)
+- [Can the coordinator attack me?](/FAQ/FAQ-Introduction.html#can-the-coordinator-attack-me)
+- [Is the backend's coordinator code open source?](/FAQ/FAQ-Introduction.html#is-the-backend-s-coordinator-code-open-source)
+
+Then, there are five different phases in a CoinJoin.
+You can follow these links to have a full explanation on that:
+1. [INPUT REGISTRATION PHASE](/FAQ/FAQ-UseWasabi.html#what-is-happening-in-the-input-registration-phase)
+2. [CONNECTION CONFIRMATION PHASE](/FAQ/FAQ-UseWasabi.html#what-is-happening-in-the-connection-confirmation-phase)
+3. [OUTPUT REGISTRATION PHASE](/FAQ/FAQ-UseWasabi.html#what-is-happening-in-the-output-registration-phase)
+4. [SIGNING PHASE](/FAQ/FAQ-UseWasabi.html#what-is-happening-in-the-signing-phase)
+5. [BROADCASTING PHASE](/FAQ/FAQ-UseWasabi.html#what-is-happening-in-the-broadcasting-phase)
 :::
 
 ## Hardware Wallet
@@ -1107,16 +1190,6 @@ Testnet2 was just the first testnet reset with a different genesis block, becaus
 Testnet3 is the current test network.
 It was introduced with the 0.7 release, introduced a third genesis block, a new rule to avoid the "difficulty was too high, is now too low, and transactions take too long to verify" problem, and contains blocks with edge-case transactions designed to test implementation compatibility.
 :::
-
-Send
-
-- What is the cluster history?
-
-CoinJoin
-
-- How can I select UTXOs for CoinJoin?
-- How many rounds should I CoinJoin?
-- How does my wallet communicate with the Wasabi coordinator server?
 
 Hardware Wallet
 
