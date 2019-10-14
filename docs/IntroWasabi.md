@@ -11,27 +11,25 @@ If you have an answer to a question, please [open a pull request](https://github
 
 ## Basics
 
-- [Why Privacy is Important](WhyPrivacyImportant.md)
-- [Privacy in Bitcoin](BitcoinPrivacy.md) </br>
-  -- [Address Reuse](BitcoinPrivacy.md#address-reuse) </br>
-  -- [Inputs and Outputs](BitcoinPrivacy.md#inputs-and-outputs) </br>
-  -- [Transaction Graph](BitcoinPrivacy.md#transaction-graph) </br>
-  -- [Network Snooping](BitcoinPrivacy.md#network-snooping) </br>
+- [Why Privacy is Important](why-wasabi/WhyPrivacyImportant.md)
+- [Privacy in Bitcoin](why-wasabi/BitcoinPrivacy.md) </br>
+  -- [Address Reuse](why-wasabi/BitcoinPrivacy.md#address-reuse) </br>
+  -- [Inputs and Outputs](why-wasabi/BitcoinPrivacy.md#inputs-and-outputs) </br>
+  -- [Transaction Graph](why-wasabi/BitcoinPrivacy.md#transaction-graph) </br>
+  -- [Network Snooping](why-wasabi/BitcoinPrivacy.md#network-snooping) </br>
 - Getting started
-- [Wasabi 10 Commandments](10Commandments.md)
+- [Wasabi 10 Commandments](why-wasabi/10Commandments.md)
 - Wasabi compared to other Wallets
 
 ## Installing Wasabi
 
-- [Install package](InstallPackage.md) </br>
-  -- [Windows](InstallPackage.md#windows) </br>
-  -- [Debian and Ubuntu](InstallPackage.md#debian-and-ubuntu) </br>
-  -- [Other Linux](InstallPackage.md#other-linux) </br>
-  -- [OSX](InstallPackage.md#osx) </br>
-- [Build from source code](BuildSource.md)
-- [Deterministic build](DeterministicBuild.md)
-- [Client deployment](ClientDeployment.md)
-- [Backend deployment](BackendDeployment.md)
+- [Install package](using-wasabi/InstallPackage.md) </br>
+  -- [Windows](using-wasabi/InstallPackage.md#windows) </br>
+  -- [Debian and Ubuntu](using-wasabi/InstallPackage.md#debian-and-ubuntu) </br>
+  -- [Other Linux](using-wasabi/InstallPackage.md#other-linux) </br>
+  -- [OSX](using-wasabi/InstallPackage.md#osx) </br>
+- [Build from source code](using-wasabi/BuildSource.md)
+- [Deterministic build](using-wasabi/DeterministicBuild.md)
 
 ## Features 
 
@@ -39,7 +37,7 @@ If you have an answer to a question, please [open a pull request](https://github
 - Label
 - Seed and mnemonic
 - Password
-- [Password Finder](PasswordFinder.md)
+- [Password Finder](using-wasabi/PasswordFinder.md)
 
 ### Hardware Wallet
 - Trezor One PIN
@@ -54,7 +52,7 @@ If you have an answer to a question, please [open a pull request](https://github
 -- Broadcast PSBT </br>
 
 ### Load Wallet
-- [Network Level Privacy - Bitcoin Core vs Wasabi Wallet](NetworkLevelPrivacy.md)
+- [Network Level Privacy - Bitcoin Core vs Wasabi Wallet](using-wasabi/NetworkLevelPrivacy.md)
 - Difference hot / watch only wallet
 - BIP 158 block filter
 - Download of blocks over tor & full node
@@ -81,18 +79,18 @@ If you have an answer to a question, please [open a pull request](https://github
 - Minimum amount and denomination
 - Duration
 - Fees
-- [Pay To EndPoint](PayToEndPoint.md)
+- [Pay To EndPoint](using-wasabi/PayToEndPoint.md)
 
 
 ## Development
 
-- [A technical overview of Wasabi Wallet](TechnicalOverview.md)
-- [Wasabi coding conventions](CodingConventions.md)
-- [Security policy](SECURITY.md)
-- [Code coverage](CodeCoverage.md)
-- [Hardware wallet testing](HardwareWalletTestingGuide.md)
-- [Debug Guide](HowToDebug.md)
-- [Ports](Ports.md)
+- [A technical overview of Wasabi Wallet](building-wasabi/TechnicalOverview.md)
+- [Wasabi coding conventions](building-wasabi/CodingConventions.md)
+- [Security policy](building-wasabi/Security.md)
+- [Code coverage](building-wasabi/CodeCoverage.md)
+- [Hardware wallet testing](building-wasabi/HardwareWalletTestingGuide.md)
+- [Debug Guide](building-wasabi/HowToDebug.md)
+- [Ports](building-wasabi/Ports.md)
 
 ## [FAQ and Common Issues](/docs/FAQ/README.md#frequently-asked-questions-about-wasabi-wallet)
 
@@ -113,9 +111,9 @@ If you have an answer to a question, please [open a pull request](https://github
 
 ## Dojo
 
-- [Dojo](Dojo.md)
+- [Dojo](building-wasabi/Dojo.md)
 - Support
-- [Short term ToDo's and long term roadmap](ToDo.md)
-- [Contribution Checklist](ContributionChecklist.md)
-- [Demo Guide](DemoGuide.md)
-- [Contribution Game](ContributionGame.md)
+- [Short term ToDo's and long term roadmap](building-wasabi/ToDo.md)
+- [Contribution Checklist](building-wasabi/ContributionChecklist.md)
+- [Demo Guide](building-wasabi/DemoGuide.md)
+- [Contribution Game](building-wasabi/ContributionGame.md)

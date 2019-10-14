@@ -157,7 +157,7 @@ So after the CoinJoin you might want to send some of those coins back to the har
 
 *You will need to enter a PIN and unlock the hardware wallet*
 
-For hardware wallet related questions see: [FAQ-UseWasabi](/docs/FAQ/FAQ-UseWasabi.md#hardware-wallet)
+For hardware wallet related questions see: [FAQ-UseWasabi](/FAQ/FAQ-UseWasabi.md#hardware-wallet)
 
 7. `Load Wallet` to import the xpub or Public Key (used to generate all receive addresses)
 
