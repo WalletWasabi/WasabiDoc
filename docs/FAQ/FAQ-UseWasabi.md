@@ -516,7 +516,7 @@ When you receive coins from somewhere to a labelled address, Wasabi will store t
 
 `----> 0.65 BTC (From my Boss Bob)`
 
-Now if you receive money from another person, for example, let's say you received money from an exchange that, your label would look like this:
+Now if you receive money from another person who uses an exchange, then your label would look like this:
 
 `----> 2.1 BTC (From Coinbase)`
 
