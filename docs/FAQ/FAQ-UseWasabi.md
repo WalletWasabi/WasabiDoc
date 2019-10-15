@@ -544,7 +544,7 @@ This coin can now be spent without having to worry about your boss or Coinbase t
 However, when you mix a coin, there is often change.
 This change is marked in a red 'x' and has an anonymity set = 1 (with a couple of small exceptions regarding remixing).
 The change is completely linked to your coins before the mix, and so needs to be dealt with properly.
-If you combine the tiny bit of change you received from your boss and from Coinbase, they might still know how much money you have (but now know where you are spending it).
+If you combine the tiny bit of change you received from your boss and from Coinbase, they still know how much money you had (but not where you are spending it).
 
 So the idea around clusters is to make it easier for users to follow the transaction graph.
 The transaction graph is the history of where a coin has been, and is important if different histories need to be separated.
