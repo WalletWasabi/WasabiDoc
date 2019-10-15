@@ -853,7 +853,7 @@ With Wasabi this can be achieved in a matter of hours (or minutes if there are a
 :::details
 ### How many rounds should I CoinJoin?
 
-There's a round at least once every two hours. 
+There's a round at least once every two hours.
 If there are 100 peers registered earlier, then there can be many per hour.
 Wasabi automatically registers your UTXO for a new CoinJoin by following your desired anonimity set.
 Remember that after a mix, Wasabi lowers the next round minimum denomination in such a way that if you remix you pay less or zero.
