@@ -548,7 +548,7 @@ If you combine the tiny bit of change you received from your boss and from Coinb
 
 So the idea around clusters is to make it easier for users to follow the transaction graph.
 The transaction graph is the history of where a coin has been, and is important if different histories need to be separated.
-For example, if you buy coins anonymously in a P2P way, you should try to avoid mixing those coins with coins you got in a public way (donation, coinbase, etc.).
+For example, if you buy coins anonymously in a P2P way, you should try to avoid mixing those coins with coins you got in a public way (donation, Coinbase, etc.).
 :::
 
 ## CoinJoin
