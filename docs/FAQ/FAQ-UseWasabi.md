@@ -539,7 +539,7 @@ When you CoinJoin (mix) coins with Wasabi, you actually de-link the trail from y
 This is represented to you in two ways:
 1. The coin will have an anonymity set > 1, and typically will have a green shield.
 2. The coin will say "ZeroLink mixed coin".
-This coin you can spend without having to worry about your boss or Coinbase being able to track your behavior.
+This coin can now be spent without having to worry about your boss or Coinbase tracking your behavior.
 
 However, when you mix a coin, there is often change.
 This change is marked in a red 'x' and has an anonymity set ==1 (with a couple of small exceptions regarding remixing).
