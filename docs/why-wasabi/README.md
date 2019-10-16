@@ -13,10 +13,10 @@ And why Wasabi can make Bitcoin an even better tool of self defense by default.
 
 ### Chapters
 
-- [Why Privacy is Important](/why-wasabi/WhyPrivacyImportant.html)
-- [Privacy in Bitcoin](/why-wasabi/BitcoinPrivacy.html)
-- [Ten Commandments](/why-wasabi/10Commandments.html)
-- [Transaction Surveillance Companies](/why-wasabi/TransactionSurveillanceCompanies.html)
+- [Why Privacy is Important](/why-wasabi/WhyPrivacyImportant.md)
+- [Privacy in Bitcoin](/why-wasabi/BitcoinPrivacy.md)
+- [Ten Commandments](/why-wasabi/10Commandments.md)
+- [Transaction Surveillance Companies](/why-wasabi/TransactionSurveillanceCompanies.md)
 
 ![](/InfographicWhyWasabi.png)
 
