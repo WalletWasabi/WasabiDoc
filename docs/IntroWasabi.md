@@ -12,10 +12,10 @@ If you have an answer to a question, please [open a pull request](https://github
 ## Why Wasabi
 
 - [Why Privacy is Important](/why-wasabi/WhyPrivacyImportant.md)
-- [Privacy in Bitcoin](/why-wasabi/BitcoinPrivacy.md)
-  -- [Address Reuse](/why-wasabi/BitcoinPrivacy.md#address-reuse)
-  -- [Inputs and Outputs](/why-wasabi/BitcoinPrivacy.md#inputs-and-outputs)
-  -- [Transaction Graph](/why-wasabi/BitcoinPrivacy.md#transaction-graph)
+- [Privacy in Bitcoin](/why-wasabi/BitcoinPrivacy.md) </br>
+  -- [Address Reuse](/why-wasabi/BitcoinPrivacy.md#address-reuse) </br>
+  -- [Inputs and Outputs](/why-wasabi/BitcoinPrivacy.md#inputs-and-outputs) </br>
+  -- [Transaction Graph](/why-wasabi/BitcoinPrivacy.md#transaction-graph) </br>
   -- [Network Snooping](/why-wasabi/BitcoinPrivacy.md#network-snooping)
 - [Wasabi 10 Commandments](/why-wasabi/10Commandments.md)
 - [Transaction Surveillance Companies](/why-wasabi/TransactionSurveillanceCompanies.md)
@@ -25,10 +25,10 @@ If you have an answer to a question, please [open a pull request](https://github
 
 ## Installing Wasabi
 
-- [Install package](/using-wasabi/InstallPackage.md)
-  -- [Windows](/using-wasabi/InstallPackage.md#windows)
-  -- [Debian and Ubuntu](/using-wasabi/InstallPackage.md#debian-and-ubuntu)
-  -- [Other Linux](/using-wasabi/InstallPackage.md#other-linux)
+- [Install package](/using-wasabi/InstallPackage.md) </br>
+  -- [Windows](/using-wasabi/InstallPackage.md#windows) </br>
+  -- [Debian and Ubuntu](/using-wasabi/InstallPackage.md#debian-and-ubuntu) </br>
+  -- [Other Linux](/using-wasabi/InstallPackage.md#other-linux) </br>
   -- [OSX](/using-wasabi/InstallPackage.md#osx)
 - [Wasabi Setup on Tails](/using-wasabi/WasabiSetupTails.md)
 - [Build from source code](/using-wasabi/BuildSource.md)
