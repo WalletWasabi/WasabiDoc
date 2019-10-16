@@ -864,7 +864,8 @@ So, you should assume that will pay the coordinator for the new mix round too.
 :::details
 ### How can I select UTXOs for CoinJoin?
 
-You need to go to `CoinJoin` tab and select your desired UTXO. It will be queued and registered for the next CoinJoin round.
+You need to go to `CoinJoin` tab and select your desired UTXO by clicking the checkbox.
+It will be queued and registered for the next CoinJoin round.
 :::
 
 :::details
