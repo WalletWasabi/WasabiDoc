@@ -871,7 +871,8 @@ It will be queued and registered for the next CoinJoin round.
 :::details
 ### How does my wallet communicate with the Wasabi coordinator server?
 
-Wasabi communicates in many ways to the coordinator server.
+Wasabi communicates in many ways to the coordinator server, and it is always over the tor network
+
 First of all, Wasabi uses BIP-158 block filters to ensure network level privacy.
 You can follow these FAQs to have a full explanation on the theme:
 - [What are BIP-158 Block Filters?](/FAQ/FAQ-UseWasabi.html#what-are-bip-158-block-filters)
@@ -886,6 +887,8 @@ You can follow these links to have a full explanation on that:
 3. [OUTPUT REGISTRATION PHASE](/FAQ/FAQ-UseWasabi.html#what-is-happening-in-the-output-registration-phase)
 4. [SIGNING PHASE](/FAQ/FAQ-UseWasabi.html#what-is-happening-in-the-signing-phase)
 5. [BROADCASTING PHASE](/FAQ/FAQ-UseWasabi.html#what-is-happening-in-the-broadcasting-phase)
+
+You also get information about the current mempool for fee estimation as well as the fiat exchange rate.
 :::
 
 :::details
