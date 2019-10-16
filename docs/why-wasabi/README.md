@@ -48,4 +48,4 @@ The motivation behind Wasabi is to provide the *strongest privacy for its users*
 - It's the only [Light wallet that doesn't fail against network analysis](/using-wasabi/NetworkLevelPrivacy.md).
 - [Tor anonymity network is integrated into the wallet](/FAQ/FAQ-GeneralBitcoinPrivacy.md#how-does-tor-protect-my-network-level-privacy), making it harder to trace your transaction's path.
 - *It implements [Chaumian CoinJoin](https://github.com/nopara73/ZeroLink/#ii-chaumian-coinjoin)* to allow unlinking coins from their past.
-- It complies with *[Zero Link: The Bitcoin Fungibility Framework](https://github.com/nopara73/ZeroLink/)*.
+- It complies with [Zero Link: The Bitcoin Fungibility Framework](https://github.com/nopara73/ZeroLink/).
