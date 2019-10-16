@@ -857,8 +857,6 @@ There's a round at least once every two hours.
 If there are 100 peers registered earlier, then there can be many per hour.
 Wasabi automatically registers your UTXO for a new CoinJoin by following your desired anonymity set.
 Remember that after a mix, Wasabi lowers the next round minimum denomination to ensure that you can enqueue a coin and have it remix.
-However that only works when the network fees are low.
-So, you should assume that will pay the coordinator for the new mix round too.
 :::
 
 :::details
