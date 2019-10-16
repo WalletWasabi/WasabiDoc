@@ -109,7 +109,7 @@ And the index of the video of a playlist (e.g. starts the third video):
 
 There are three types of text highlights that can be used to display different colored boxes.
 
-A green box displaying a [friendly tip](https://docs.wasabiwallet.io/using-wasabi/AddressReuse.html#_1-donations):
+A green box displaying a [friendly tip](https://docs.wasabiwallet.io/using-wasabi/AddressReuse.html):
 
 ```
 :::tip
@@ -117,7 +117,7 @@ foo
 :::
 ```
 
-A yellow box with a [cautious warning](https://docs.wasabiwallet.io/using-wasabi/AddressReuse.html#_1-donations):
+A yellow box with a [cautious warning](https://docs.wasabiwallet.io/using-wasabi/AddressReuse.html):
 
 ```
 :::warning
@@ -125,7 +125,7 @@ foo
 :::
 ```
 
-A red box with a [clear danger](https://docs.wasabiwallet.io/using-wasabi/AddressReuse.html#_1-donations), you can also add a title `foo` to any container:
+A red box with a [clear danger](https://docs.wasabiwallet.io/using-wasabi/RestoreElectrum.html), you can also add a title `foo` to any container:
 
 ```
 :::danger foo
@@ -146,7 +146,7 @@ answer answer answer.
 :::
 ```
 
-When you want to [highlight text](README.md#text-highlights) within a question, then you need to [next containers](https://github.com/markdown-it/markdown-it-container/issues/6#issuecomment-213789283). The outer `details` container has now four `::::`, and the inner `warning` container has still three `:::`.
+When you want to [highlight text](README.md#text-highlights) within a question, then you need to [nest containers](https://github.com/markdown-it/markdown-it-container/issues/6#issuecomment-213789283) by adding more `:` for the outer block start/end. The outer `details` container has now four `::::`, and the inner `warning` container has still three `:::`.
 
 ```
 ::::details
