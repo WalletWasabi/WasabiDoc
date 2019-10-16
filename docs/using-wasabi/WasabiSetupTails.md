@@ -143,7 +143,7 @@ Alternatively, you can use this [script](https://github.com/permabull/wasabi_tai
 ```
 #!/bin/bash
 
-sudo dpkg -i Wasabi-1.1.9.1.deb
+sudo dpkg -i Wasabi-1.1.9.2.deb
 
 wassabee </dev/null &>/dev/null &
 
