@@ -103,7 +103,7 @@ If you have an answer to a question, please [open a pull request](https://github
 ### Load Wallet
 - [Network Level Privacy - Bitcoin Core vs Wasabi Wallet](using-wasabi/NetworkLevelPrivacy.md)
 - Difference hot / watch only wallet
-- BIP 158 block filter
+- [BIP 158 block filter](/FAQ/FAQ-UseWasabi.md#what-are-bip-158-block-filters)
 - Download of blocks over tor & full node
 
 ### Receive
