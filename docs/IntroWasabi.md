@@ -79,3 +79,53 @@ If you have an answer to a question, please [open a pull request](https://github
 - [Use of Wasabi FAQ](/FAQ/FAQ-UseWasabi.md)
 - [Bitcoin Privacy FAQ](/FAQ/FAQ-GeneralBitcoinPrivacy.md)
 - [Contribution FAQ](/FAQ/FAQ-Contribution.md)
+
+## Features 
+
+### Generate Wallet
+- Label
+- Seed and mnemonic
+- Password
+- [Password Finder](using-wasabi/PasswordFinder.md)
+
+### Hardware Wallet
+- Trezor One PIN
+- Trezor One passphrase
+- Trezor passphrase
+- ColdCard </br>
+-- Import skeleton wallet </br>
+-- Build PSBT </br>
+-- Export PSBT </br>
+-- Sign PSBT </br>
+-- Import PSBT </br>
+-- Broadcast PSBT </br>
+
+### Load Wallet
+- [Network Level Privacy - Bitcoin Core vs Wasabi Wallet](using-wasabi/NetworkLevelPrivacy.md)
+- Difference hot / watch only wallet
+- BIP 158 block filter
+- Download of blocks over tor & full node
+
+### Receive
+- HD path
+- SegWit bech32 only
+- Labeling
+
+### Send
+- Coin selection
+- Cluster history
+- Transaction fee
+- Password
+
+### CoinJoin
+- Zero Link </br>
+-- Input registration </br>
+-- Connection confirmation </br>
+-- Output registration </br>
+-- Signing </br>
+-- Broadcasting </br>
+- Anonymity set target
+- Minimum amount and denomination
+- Duration
+- Fees
+- [Pay To EndPoint](using-wasabi/PayToEndPoint.md)
