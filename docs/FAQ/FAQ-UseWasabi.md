@@ -518,7 +518,7 @@ When you receive coins from somewhere to a labelled address, Wasabi will store t
 
 Now if you receive money from another person who uses an exchange, then your label would look like this:
 
-`----> 2.1 BTC (The person's name, Coinbase)`
+`----> 2.1 BTC (The person's name)`
 
 Now here is where things can be a bit tricky for folks unfamiliar with Bitcoin.
 Suppose you wanted to send all of your coins to a hardware wallet.
