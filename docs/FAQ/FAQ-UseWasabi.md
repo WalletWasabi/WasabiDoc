@@ -871,7 +871,7 @@ It will be queued and registered for the next CoinJoin round.
 :::details
 ### How does my wallet communicate with the Wasabi coordinator server?
 
-Wasabi communicates in many ways to the coordinator server, and it is always over the tor network
+Wasabi communicates in many ways to the coordinator server, and it is always over the tor network.
 
 First of all, Wasabi uses BIP-158 block filters to ensure network level privacy.
 You can follow these FAQs to have a full explanation on the theme:
