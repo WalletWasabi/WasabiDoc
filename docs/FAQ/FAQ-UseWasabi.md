@@ -892,15 +892,15 @@ You also get information about the current mempool for fee estimation as well as
 :::
 
 :::details
-### What are Wasabi's mixing times?
+### How long does it take to mix my coins?
 
-It depends on many things.
-First of all from your desired anonimity set.
+It depends on many things, the longest period is the wait for all peers to register their coins.
+First of all from your desired anonimity set, every round has a goal of 100 anonymity set.
 Wasabi is developed in a way that there's a round at least once every two hours.
-If there are 100 peers registered earlier, then there can be many per hour.
-Regarding why do we want 100 number, is among some other reasons, because that was our calculation to be that would make rounds happen in every 2-5 minutes, considering the liquidity of some custodial mixers.
+If the 100 peers registered earlier, then there can be many rounds per hour.
+When all peers are registered, then the signing phase is done within a couple of seconds.
 
-Summing up: the more peers partecipates in CoinJoins, the faster the mixes are.
+Summing up: the faster peers register in the CoinJoins, the faster the mixes are.
 :::
 
 ## Hardware Wallet
