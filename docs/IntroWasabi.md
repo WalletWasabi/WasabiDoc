@@ -18,9 +18,9 @@ If you have an answer to a question, please [open a pull request](https://github
   -- [Transaction Graph](/why-wasabi/BitcoinPrivacy.md#transaction-graph) </br>
   -- [Network Snooping](/why-wasabi/BitcoinPrivacy.md#network-snooping)
 - [Wasabi 10 Commandments](/why-wasabi/10Commandments.md)
-- [Transaction Surveillance Companies](/why-wasabi/TransactionSurveillanceCompanies.md)
--- [Spying technology](/why-wasabi/TransactionSurveillanceCompanies.md#spying-technology)
--- [Criticisms](/why-wasabi/TransactionSurveillanceCompanies.md#criticisms)
+- [Transaction Surveillance Companies](/why-wasabi/TransactionSurveillanceCompanies.md) </br>
+-- [Spying technology](/why-wasabi/TransactionSurveillanceCompanies.md#spying-technology) </br>
+-- [Criticisms](/why-wasabi/TransactionSurveillanceCompanies.md#criticisms) </br>
 -- [Examples](/why-wasabi/TransactionSurveillanceCompanies.md#examples)
 
 ## Installing Wasabi
