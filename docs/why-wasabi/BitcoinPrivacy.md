@@ -204,4 +204,4 @@ Now they check locally if the block contains a transaction with their address.
 If not, then the filter is stored for later reference, and no block is downloaded. However, if there is a user transaction in that block, then Wasabi connects to a random Bitcoin P2P node over Tor, and asks for this entire block, not only one transaction.
 This block request is indistinguishable from the regular P2P gossip, and thus nobody, neither the server nor the full node, know which addresses belong to the user.
 
-Wasabi is per default [as private as a Bitcoin full node](https://medium.com/@nopara73/bitcoin-core-vs-wasabi-wallet-network-level-privacy-bdca1d501387).
+Wasabi is per default [as private as a Bitcoin full node](/using-wasabi/NetworkLevelPrivacy.md).
