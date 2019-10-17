@@ -138,7 +138,7 @@ This means that coin consolidation can lead to an overall decrease of privacy, e
 
 _**Manual coin labeling and selection**_
 
-Contrarily to many other wallets, Wasabi does not show only the total value of bitcoins in the wallet. Rather, in the `Send` and `Coin Join` tab is a list of all the UTXOs individually.
+Contrarily to many other wallets, Wasabi does not show only the total value of bitcoins in the wallet. Rather, in the `Send` and `CoinJoin` tab is a list of all the UTXOs individually.
 Because it is required to label every receiving address, the history of this coin is clear at first glance.
 In order to spend a specific coin, it is manually selected, which prevents the wrong coin being included in the transaction.
 
