@@ -536,9 +536,7 @@ Coinbase also knows you, and can do the same thing.
 But when you combine (consolidate) your coins in this way, you reveal to your boss that you also have 2.1 BTC from somewhere else, and you reveal to Coinbase that you have 0.65 bitcoin from somewhere else.
 
 When you CoinJoin (mix) coins with Wasabi, you actually de-link the trail from your boss/Coinbase, to the coins in your wallet.
-This is represented to you in two ways:
-1. The coin will have an anonymity set > 1, and typically will have a green shield.
-2. The coin will say "ZeroLink mixed coin".
+The coin will have an anonymity set > 1, and typically will have a green shield.
 This coin can now be spent without having to worry about your boss or Coinbase tracking your behavior.
 
 However, when you mix a coin, there is often change.
