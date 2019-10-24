@@ -851,6 +851,8 @@ With Wasabi this can be achieved in a matter of hours (or minutes if there are a
 :::details
 ### How many rounds should I CoinJoin?
 
+There is no simple answer for this.
+If you want more anonymity you should CoinJoin multiple times and do many rounds as possible.
 There's a round at least once every two hours.
 If there are 100 peers registered earlier, then there can be many per hour.
 Wasabi automatically registers your UTXO for a new CoinJoin by following your desired anonymity set.
