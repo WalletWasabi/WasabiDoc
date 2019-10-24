@@ -852,10 +852,6 @@ With Wasabi this can be achieved in a matter of hours (or minutes if there are a
 
 There is no simple answer for this.
 If you want more anonymity you should CoinJoin multiple times.
-There's a round at least once every two hours.
-If there are 100 peers registered earlier, then there can be many per hour.
-Wasabi automatically registers your UTXO for a new CoinJoin by following your desired anonymity set.
-Remember that after a mix, Wasabi lowers the next round minimum denomination to ensure that you can enqueue a coin and have it remix.
 :::
 
 :::details
