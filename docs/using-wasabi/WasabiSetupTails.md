@@ -42,7 +42,7 @@ You can now save your `Wasabi-{{ $page.currentVersion }}.deb` into the persisten
 
 ## WASABI DATA FOLDER
 
-As of version 1.1.9.2 Wasabi doesn’t offer easy ways, especially without command line, to change install directory. There is though a quick workaround.
+As of version 1.1.9 Wasabi doesn’t offer easy ways, especially without command line, to change install directory. There is though a quick workaround.
 
 Wasabi saves session files in `/Home/.walletwasabi/client`, you need to mark the “show hidden files” setting to see it.
 
