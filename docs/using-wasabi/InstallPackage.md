@@ -110,11 +110,11 @@ Verify that the fingerprint is `6FB3 872B 5D42 292F 5992 0797 8563 4832 8949 861
 
 ![](/DownloadDeb.png)
 
-3. Verify the signature in the Download repository with `gpg --verify Wasabi-X.X.X.deb.asc` [Change `X.X.X` to version you downloaded.]
+3. Verify the signature in the Download repository with `gpg --verify Wasabi-{{ $page.currentVersion }}.deb.asc.
 If the message returned says `Good signature from zkSNACKs` and that it was signed with `Primary key fingerprint: 6FB3 872B 5D42 292F 5992 0797 8563 4832 8949 861E`, then the software was not tampered with since the developer signed it.
 
 4. [GUI] Install by double clicking and follow the GUI Instruction. </br>
-   [CLI] In the Download repository, run the command `sudo dpkg -i Wasabi-X.X.X.deb`. [Change `X.X.X` to version you downloaded.]
+   [CLI] In the Download repository, run the command `sudo dpkg -i Wasabi-{{ $page.currentVersion }}.deb`.
 
 After the first run, a working directory will be created: `~/.walletwasabi/`.
 Among others, here is where your wallet files and your logs reside.
@@ -138,11 +138,10 @@ Verify that the fingerprint is `6FB3 872B 5D42 292F 5992 0797 8563 4832 8949 861
 
 ![](/DownloadTar.png)
 
-3. In the Download folder, run `gpg2 --verify Wasabi.X.X.X.tar.gz.asc`.
-[Change `X.X.X` to version you downloaded.]
+3. In the Download folder, run `gpg2 --verify Wasabi.{{ $page.currentVersion }}.tar.gz.asc`.
 If the message returned says `Good signature from zkSNACKs` and that it was signed with `Primary key fingerprint: 6FB3 872B 5D42 292F 5992 0797 8563 4832 8949 861E`, then the software was not tampered with since the developer signed it.
 
-4. Extract the archive while keeping the file permissions: `tar -pxzf WasabiLinux-X.X.X.tar.gz`. [Change `X.X.X` to version you downloaded.]
+4. Extract the archive while keeping the file permissions: `tar -pxzf WasabiLinux-{{ $page.currentVersion }}.tar.gz`.
 
 5. Run Wasabi by executing `./wassabee`.
 
@@ -170,8 +169,7 @@ This should return the output: `key 856348328949861E: public key "zkSNACKs <zksn
 
 ![](/DownloadMac.png)
 
-5. In the Download folder, run `sudo gpg2 --verify Wasabi-X.X.X.dmg.asc`.
-[Change `X.X.X` to version you downloaded.]
+5. In the Download folder, run `sudo gpg2 --verify Wasabi-{{ $page.currentVersion }}.dmg.asc`.
 If the message returned says `Good signature from zkSNACKs` and that it was signed with `Primary key fingerprint: 6FB3 872B 5D42 292F 5992 0797 8563 4832 8949 861E`, then the software was not tampered with since the developer signed it.
 
 6. Double click `.dmg` to open it.
