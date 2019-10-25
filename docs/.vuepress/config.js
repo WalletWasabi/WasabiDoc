@@ -26,6 +26,9 @@ module.exports = {
     ["meta", { name: "msapplication-TileColor", content: themeColor }],
     ["meta", { name: "theme-color", content: themeColor }],
   ],
+  extendPageData ($page) {
+    $page.currentVersion = '1.1.9.2'
+  },
   plugins: [
     "@vuepress/back-to-top",
     ["container", {
