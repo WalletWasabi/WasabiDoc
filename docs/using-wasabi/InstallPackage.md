@@ -110,7 +110,7 @@ Verify that the fingerprint is `6FB3 872B 5D42 292F 5992 0797 8563 4832 8949 861
 
 ![](/DownloadDeb.png)
 
-3. Verify the signature in the Download repository with `gpg --verify Wasabi-{{ $page.currentVersion }}.deb.asc.
+3. Verify the signature in the Download repository with `gpg --verify Wasabi-{{ $page.currentVersion }}.deb.asc`.
 If the message returned says `Good signature from zkSNACKs` and that it was signed with `Primary key fingerprint: 6FB3 872B 5D42 292F 5992 0797 8563 4832 8949 861E`, then the software was not tampered with since the developer signed it.
 
 4. [GUI] Install by double clicking and follow the GUI Instruction. </br>
