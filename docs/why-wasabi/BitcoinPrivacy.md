@@ -198,7 +198,8 @@ It is also possible to connect Wasabi to a remote full node on another computer 
 Now Wasabi pulls the verified blocks from the full node, and it also broadcasts the transactions to the P2P network from this full node.
 
 However, even if no full node is installed, Wasabi has a light client mode based on [BIP 158 block filters](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki).
-When the user sends the extended public key, or a filter of all the addresses to the central server, then the server can **COMPLETELY** deanonymize the users.
+When the user sends the extended public key, or a filter of all the addresses to the central server, then the server can **COMPLETELY** deanonymize the users. An extended public (xPub) key is a part of the Bitcoin standard ([BIP32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki#Extended_keys)). It can be thought of a master view into a wallet. Using the extended public key it's possible to derive all past and future public addresses and unspent transaction outputs (UTXOs).  
+
 Therefore the Wasabi server sends a filter of all the transactions in each block to all the users.
 Now they check locally if the block contains a transaction with their address.
 If not, then the filter is stored for later reference, and no block is downloaded. However, if there is a user transaction in that block, then Wasabi connects to a random Bitcoin P2P node over Tor, and asks for this entire block, not only one transaction.
