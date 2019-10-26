@@ -1057,7 +1057,7 @@ If you combine that red coin with the green, then it's clear that both of them b
 
 When you take a 100 anonset coin, and you register it again for CoinJoin, then you get one coin with anonset 200, and one change with anonset 100.
 This change has anonset 100 because it can be linked to the input of the second CoinJoin, but this coin has anonset 100 already.
-So, although this change can still reveal pre-mix history, because the pr-mix history is another CoinJoin, you cannot go further back.
+This change can still reveal premix history which is another CoinJoin, therefore you cannot go further back.
 So, it might be ok to send this second change output to some place, or even consolidate it, because it still has anonset.
 
 When you consolidate several small change coins in a regular transaction, then every outside observer knows that they belong to the same cluster.
