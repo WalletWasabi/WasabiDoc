@@ -200,7 +200,7 @@ Now Wasabi pulls the verified blocks from the full node, and it also broadcasts 
 However, even if no full node is installed, Wasabi has a light client mode based on [BIP 158 block filters](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki).
 When the user sends the extended public key, or a filter of all the addresses to the central server, then the server can **COMPLETELY** deanonymize the users.
 An extended public (xPub) key is a part of the Bitcoin standard [BIP32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki#Extended_keys).
-It can be thought of a master view into a wallet.
+It can be thought of as a master view into a wallet.
 By using the extended public key it's possible to derive all past and future public addresses and unspent transaction outputs (UTXOs).  
 
 Therefore the Wasabi server sends a filter of all the transactions in each block to all the users.
