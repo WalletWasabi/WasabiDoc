@@ -516,9 +516,9 @@ When you receive coins from somewhere to a labelled address, Wasabi will store t
 
 `----> 0.65 BTC (From my Boss Bob)`
 
-Now if you receive money from another person who uses an exchange, then your label would look like this:
+Now if you receive money from Alice who uses an exchange, then your label would look like this:
 
-`----> 2.1 BTC (The person's name)`
+`----> 2.1 BTC (From Alice, from exchange)`
 
 Now here is where things can be a bit tricky for folks unfamiliar with Bitcoin.
 Suppose you wanted to send all of your coins to a hardware wallet.
@@ -527,25 +527,25 @@ So you think to yourself "What's the harm in sending my money to one address?"
 This is how the transaction will look like:
 
 ```
-0.65 BTC (From my Boss Bob) -----> 2.75 BTC (From my Boss Bob & Coinbase)
-2.1 BTC (The person's name, Coinbase)
+0.65 BTC (From my Boss Bob)     ----->  2.75 BTC (From my Boss Bob & from exchange)
+2.1 BTC (Alice, from exchange)
 ```
 
 The problem with this transaction, is your boss knows you, and knows that the 0.65 BTC is in your possession, and can monitor your transaction behavior.
-But when you combine (consolidate) your coins in this way, you reveal to your boss that you also have 2.1 BTC from somewhere else, and you reveal to Coinbase that you have 0.65 bitcoin from somewhere else.
+But when you combine (consolidate) your coins in this way, you reveal to your boss that you also have 2.1 BTC from somewhere else, and you reveal to the exchange that you have 0.65 bitcoin from somewhere else.
 
-When you CoinJoin (mix) coins with Wasabi, you actually de-link the trail from your boss/Coinbase, to the coins in your wallet.
+When you CoinJoin (mix) coins with Wasabi, you actually de-link the trail from your boss/exchange, to the coins in your wallet.
 The coin will have an anonymity set > 1, and typically will have a green shield.
-This coin can now be spent without having to worry about your boss or Coinbase tracking your behavior.
+This coin can now be spent without having to worry about your boss or the exchange tracking your behavior.
 
 However, when you mix a coin, there is often change.
 This change is marked in a red 'x' and has an anonymity set = 1 (with a couple of small exceptions regarding remixing).
 The change is completely linked to your coins before the mix, and so needs to be dealt with properly.
-If you combine the tiny bit of change you received from your boss and from Coinbase, they still know how much money you had (but not where you are spending it).
+If you combine the tiny bit of change you received from your boss and from the exchange, they still know how much money you had (but not where you are spending it).
 
 So the idea around clusters is to make it easier for users to follow the transaction graph.
 The transaction graph is the history of where a coin has been, and is important if different histories need to be separated.
-For example, if you buy coins anonymously in a P2P way, you should try to avoid mixing those coins with coins you got in a public way (donation, Coinbase, etc.).
+For example, if you buy coins anonymously in a P2P way, you should try to avoid mixing those coins with coins you got in a public way (donation, exchange, etc.).
 :::
 
 ## CoinJoin
