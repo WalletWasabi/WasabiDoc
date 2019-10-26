@@ -138,7 +138,7 @@ This means that coin consolidation can lead to an overall decrease of privacy, e
 
 _**Manual coin labeling and selection**_
 
-Contrarily to many other wallets, Wasabi does not show only the total value of bitcoins in the wallet. Rather, in the `Send` and `Coin Join` tab is a list of all the UTXOs individually.
+Contrarily to many other wallets, Wasabi does not show only the total value of bitcoins in the wallet. Rather, in the `Send` and `CoinJoin` tab is a list of all the UTXOs individually.
 Because it is required to label every receiving address, the history of this coin is clear at first glance.
 In order to spend a specific coin, it is manually selected, which prevents the wrong coin being included in the transaction.
 
@@ -204,4 +204,4 @@ Now they check locally if the block contains a transaction with their address.
 If not, then the filter is stored for later reference, and no block is downloaded. However, if there is a user transaction in that block, then Wasabi connects to a random Bitcoin P2P node over Tor, and asks for this entire block, not only one transaction.
 This block request is indistinguishable from the regular P2P gossip, and thus nobody, neither the server nor the full node, know which addresses belong to the user.
 
-Wasabi is per default [as private as a Bitcoin full node](https://medium.com/@nopara73/bitcoin-core-vs-wasabi-wallet-network-level-privacy-bdca1d501387).
+Wasabi is per default [as private as a Bitcoin full node](/using-wasabi/NetworkLevelPrivacy.md).

@@ -34,7 +34,7 @@ sudo groupadd plugdev
 sudo usermod -aG plugdev `whoami`
 ```
 
-More info here: [https://github.com/bitcoin-core/HWI/tree/master/udev](https://github.com/bitcoin-core/HWI/tree/master/udev)
+More info here: [https://github.com/bitcoin-core/HWI/tree/master/hwilib/udev](https://github.com/bitcoin-core/HWI/tree/master/hwilib/udev)
 
 ## Step 1: Build From Source Code
 

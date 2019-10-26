@@ -44,7 +44,7 @@ This protects you against malicious man in the middle attacks where bad guys giv
 
 On the [WasabiWallet.io](https://wasabiwallet.io) website you can download the packages of the latest release.
 Make sure that in addition you also download the separate signature `.asc` file.
-In the terminal, change the directory to the one with the downloaded files, and verify the signature with `gpg --verify Wasabi-1.1.9.2.deb.asc`.
+In the terminal, change the directory to the one with the downloaded files, and verify the signature with `gpg --verify Wasabi-${currentVersion}.deb.asc`.
 Everything is valid if it returns `Good signature from zkSNACKs` and that it was signed with the `Primary key fingerprint: 6FB3 872B 5D42 292F 5992 0797 8563 4832 8949 861E`.
 
 For an in depth guide for [Debian and Ubuntu](/using-wasabi/InstallPackage.md#debian-and-ubuntu), [other Linux](/using-wasabi/InstallPackage.md#other-linux), [Windows](/using-wasabi/InstallPackage.md#windows), and [OSX](/using-wasabi/InstallPackage.md#osx) see the main documentation.
@@ -60,7 +60,8 @@ For an in depth guide for [Debian and Ubuntu](/using-wasabi/InstallPackage.md#de
 ![](/DownloadDeb.png)
 
 Verify the signature of the package with `gpg --verify Wasabi-X.X.X.deb` and ensure the software was signed by zkSNACKs' PGP key [6FB3 872B 5D42 292F 5992 0797 8563 4832 8949 861E](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt).
-Now install Wasabi with `sudo dpkg -i Wasabi-1.1.9.2.deb.asc`, and run it with `wassabee`.
+
+Now install Wasabi with `sudo dpkg -i Wasabi-${currentVersion}.deb.asc`, and run it with `wassabee`.
 Checkout the main documentation for a [step-by-step guide](/using-wasabi/InstallPackage.md#debian-and-ubuntu).
 
 @[youtube](mTrClVA_o5A,122)
@@ -176,11 +177,11 @@ On Debian and Ubuntu do
 
 On other Linux do
 <br />
-`git diff --no-index linux-x64/ WasabiLinux-1.1.9.2`.
+`git diff --no-index linux-x64/ WasabiLinux-${currentVersion}`.
 
 And on Mac first unzip with
 <br />
-`7z x Wasabi-1.1.9.2.dmg -oWasabiOsx`.
+`7z x Wasabi-${currentVersion}.dmg -oWasabiOsx`.
 <br />
 and verify with
 <br />

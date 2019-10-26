@@ -55,7 +55,7 @@ git diff --no-index win7-x64 "C:\Program Files\WasabiWallet"
 ### Linux && OSX
 
 You can use the Windows Subsystem for Linux to verify all the packages in one go.
-At the time of writing this guide we provide a `.tar.gz` and a `.deb` package for Linux and .dmg for OSX. 
+At the time of writing this guide we provide a `.tar.gz` and a `.deb` package for Linux and .dmg for OSX.
 Install the `.deb` package and extract the `tar.gz` and `.dmg` packages, then compare them with your build.
 
 After installing WSL, just type `wsl` in explorer where your downloaded and built packages are located.
@@ -65,15 +65,15 @@ After installing WSL, just type `wsl` in explorer where your downloaded and buil
 #### .deb
 
 ```sh
-sudo dpkg -i Wasabi-1.1.9.2.deb
+sudo dpkg -i Wasabi-${currentVersion}.deb
 git diff --no-index linux-x64/ /usr/local/bin/wasabiwallet/
 ```
 
 #### .tar.gz
 
 ```sh
-tar -pxzf WasabiLinux-1.1.9.2.tar.gz
-git diff --no-index linux-x64/ WasabiLinux-1.1.9.2
+tar -pxzf WasabiLinux-${currentVersion}.tar.gz
+git diff --no-index linux-x64/ WasabiLinux-${currentVersion}
 ```
 
 #### .dmg
@@ -81,6 +81,6 @@ git diff --no-index linux-x64/ WasabiLinux-1.1.9.2
 You will need to install [7z](https://www.7-zip.org/) (or something else) to extract the `.dmg`: `sudo apt install p7zip-full`
 
 ```sh
-7z x Wasabi-1.1.9.2.dmg -oWasabiOsx
+7z x Wasabi-${currentVersion}.dmg -oWasabiOsx
 git diff --no-index osx-x64/ WasabiOsx/Wasabi\ Wallet.App/Contents/MacOS/
 ```

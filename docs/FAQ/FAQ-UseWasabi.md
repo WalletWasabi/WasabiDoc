@@ -983,7 +983,7 @@ It can be non economical inputs, that is a UTXO that has less value than the fee
 A dust attack is actually about [forced address reuse](https://en.bitcoin.it/Privacy#Forced_address_reuse), the malicious actor sends very small amounts into old addresses and consolidation of these dust UTXOs can link several coins in a wallet cluster.
 
 Specifically in the context of Wasabi, with the dust threshold settings you can limit the value of coins shown in the GUI.
-When you set it to `0.0000 1000 bitcoin`, and when you receive a coin worth `0.0000 0300 bitcoin`, then this coin will not be shown in the coin list.
+When you set it to `0.0000 5000 bitcoin`, and when you receive a coin worth `0.0000 4000 bitcoin`, then this coin will not be shown in the coin list.
 
 ![](/SettingsDustThreshold.png)
 :::
@@ -1057,7 +1057,7 @@ If you combine that red coin with the green, then it's clear that both of them b
 
 When you take a 100 anonset coin, and you register it again for CoinJoin, then you get one coin with anonset 200, and one change with anonset 100.
 This change has anonset 100 because it can be linked to the input of the second CoinJoin, but this coin has anonset 100 already.
-So, although this change can still reveal pre-mix history, because the pr-mix history is another CoinJoin, you cannot go further back.
+This change can still reveal premix history which is another CoinJoin, therefore you cannot go further back.
 So, it might be ok to send this second change output to some place, or even consolidate it, because it still has anonset.
 
 When you consolidate several small change coins in a regular transaction, then every outside observer knows that they belong to the same cluster.
