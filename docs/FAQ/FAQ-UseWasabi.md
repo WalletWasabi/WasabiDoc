@@ -765,7 +765,7 @@ Now if even that'd fail, then we can start thinking about lowering the required 
 :::details
 ### I'd like to experience CoinJoin but I'm not comfortable using real Bitcoin. What can I do?
 
-You can try to make a CoinJoin via Wasabi on the Bitcoin [TestNet](/FAQ/FAQ-UseWasabi.html#what-is-testnet) (an alternative Bitcoin blockchain, to be used for testing).
+You can try to make a CoinJoin via Wasabi on the Bitcoin [TestNet](/FAQ/FAQ-UseWasabi.md#what-is-testnet) (an alternative Bitcoin blockchain, to be used for testing).
 Go to settings and change the network to TestNet.
 You can get tBTC from faucets like:
 [testnet-faucet.mempool.co](https://testnet-faucet.mempool.co/)
@@ -1095,7 +1095,7 @@ Use Unequal Input Mixing and gain fungibility for UTXOs of 0.1, 0.2, 0.4, 0.8, 1
 The testnet is an alternative Bitcoin blockchain, to be used for testing.
 Testnet coins (tBTC) are separate and distinct from actual bitcoins, and are never supposed to have any value.
 This allows application developers or bitcoin testers to experiment, without having to use real bitcoins or worrying about breaking the main bitcoin chain.
-You can try to make a [CoinJoin with Wasabi on the Bitcoin TestNet](/FAQ/FAQ-UseWasabi.html#i-d-like-to-experience-coinjoin-but-i-m-not-comfortable-using-real-bitcoin-what-can-i-do) without being afraid of losing 'real' bitcoins.
+You can try to make a [CoinJoin with Wasabi on the Bitcoin TestNet](/FAQ/FAQ-UseWasabi.md#i-d-like-to-experience-coinjoin-but-i-m-not-comfortable-using-real-bitcoin-what-can-i-do) without being afraid of losing 'real' bitcoins.
 
 You can get tBTC from faucets like:
 [testnet-faucet.mempool.co](https://testnet-faucet.mempool.co/)

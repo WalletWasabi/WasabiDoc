@@ -14,22 +14,22 @@ Further tutorials about the different parts of the wallet, for newbies and power
 ### Chapters
 
 #### Installing Wasabi
-- [Install package](/using-wasabi/InstallPackage.html)
-- [Wasabi Setup on Tails](/using-wasabi/WasabiSetupTails.html)
-- [Build from source code](/using-wasabi/BuildSource.html)
-- [Deterministic Build](/using-wasabi/DeterministicBuild.html)
+- [Install package](/using-wasabi/InstallPackage.md)
+- [Wasabi Setup on Tails](/using-wasabi/WasabiSetupTails.md)
+- [Build from source code](/using-wasabi/BuildSource.md)
+- [Deterministic Build](/using-wasabi/DeterministicBuild.md)
 #### Using Wasabi
-- [Wallet Generation](/using-wasabi/WalletGeneration.html)
-- [Password Finder](/using-wasabi/PasswordFinder.html)
-- [Cold-Wasabi Protocol](/using-wasabi/ColdWasabi.html)
-- [Lurking Wife Mode](/using-wasabi/LurkingWifeMode.html)
-- [Headless Wasabi Deamon](/using-wasabi/Daemon.html)
-- [Supported BIPs](/using-wasabi/BIPs.html)
+- [Wallet Generation](/using-wasabi/WalletGeneration.md)
+- [Password Finder](/using-wasabi/PasswordFinder.md)
+- [Cold-Wasabi Protocol](/using-wasabi/ColdWasabi.md)
+- [Lurking Wife Mode](/using-wasabi/LurkingWifeMode.md)
+- [Headless Wasabi Deamon](/using-wasabi/Daemon.md)
+- [Supported BIPs](/using-wasabi/BIPs.md)
 #### Privacy Best Practices
-- [Address Reuse](/using-wasabi/AddressReuse.html)
-- [Lost Password Strategy](/using-wasabi/LostPassword.html)
-- [Network Level Privacy](/using-wasabi/NetworkLevelPrivacy.html)
-- [How you can be de-anonymized using Bitcoin](/using-wasabi/Deanonimization.html)
-- [Pay to EndPoint](/using-wasabi/PayToEndPoint.html)
+- [Address Reuse](/using-wasabi/AddressReuse.md)
+- [Lost Password Strategy](/using-wasabi/LostPassword.md)
+- [Network Level Privacy](/using-wasabi/NetworkLevelPrivacy.md)
+- [How you can be de-anonymized using Bitcoin](/using-wasabi/Deanonimization.md)
+- [Pay to EndPoint](/using-wasabi/PayToEndPoint.md)
 #### Restoring Wasabi
-- [Restoring Wasabi Wallet to Electrum](/using-wasabi/RestoreElectrum.html)
+- [Restoring Wasabi Wallet to Electrum](/using-wasabi/RestoreElectrum.md)

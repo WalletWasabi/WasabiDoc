@@ -30,7 +30,7 @@ Verify the PGP signature of the downloaded package, the zkSNACKs' PGP key finger
 <br>
 `6FB3 872B 5D42 292F 5992 0797 8563 4832 8949 861E`
 
-`gpg -v Wasabi-${currentVersion}.deb` (For more details check this [guide](https://docs.wasabiwallet.io/using-wasabi/InstallPackage.html#debian-and-ubuntu))
+`gpg -v Wasabi-${currentVersion}.deb` (For more details check this [guide](/using-wasabi/InstallPackage.md#debian-and-ubuntu))
 
 You can now save your `Wasabi-${currentVersion}.deb` into the persistent storage, which should look like this:
 

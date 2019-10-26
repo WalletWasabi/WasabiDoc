@@ -15,7 +15,7 @@ It's not the case anymore.
 Though it's most likely not an issue to accept Bitcoin donations, zkSNACKs team discontinued accepting donations because they don't want to get into accidental legal gray areas.
 Wasabi has a coordinator fee that is capped at 0.3% for every CoinJoin and it became zkSNACKs' main income.
 To help Wasabi development, just CoinJoin your bitcoins via Wasabi!
-If you want to read more about fees here is a nice explanation: [What are the fees for the CoinJoin](https://docs.wasabiwallet.io/FAQ/FAQ-UseWasabi.html#what-are-the-fees-for-the-coinjoin).
+If you want to read more about fees here is a nice explanation: [What are the fees for the CoinJoin](/FAQ/FAQ-UseWasabi.md#what-are-the-fees-for-the-coinjoin).
 :::
 
 ## The Wasabikas of the dojo
