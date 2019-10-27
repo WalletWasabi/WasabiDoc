@@ -46,7 +46,7 @@ Most common questions answered with linked reference to the main documentation.
 ## Contribute to the Documentation
 
 [![Build Status](https://dev.azure.com/zkSNACKs/WasabiDoc/_apis/build/status/zkSNACKs.WasabiDoc?branchName=master)](https://dev.azure.com/zkSNACKs/WasabiDoc/_build/latest?definitionId=4&branchName=master)
-[![All Contributors](https://img.shields.io/badge/all_contributors-27-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-26-orange.svg?style=flat-square)](#contributors)
 
 Just like the Wasabi wallet software, this documentation is libre and open source under the [MIT license](LICENSE).
 Not only do we appreciate everyone's contribution, but we desperately need it!
