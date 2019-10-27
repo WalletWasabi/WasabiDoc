@@ -13,17 +13,6 @@
 
 ![](/Dojo.png)
 
-## Belt System
-
-White -> Blue -> Yellow -> Green -> Brown -> Black
-
-You can only be promoted by someone two belts above you.
-Consequently you can promote anyone two belts below you.
-For example if you are a Blue belt you can promote anyone to be a White belt.
-It is advised that you only promote someone if he or she deserves it.
-Promotion happens through Pull Requests to this page.
-Osu!
-
 ## All Contributors
 
 This list is assembled with [all-contributors](https://github.com/all-contributors/all-contributors).
@@ -75,6 +64,17 @@ We are currently in the process of completing it to match the contributors liste
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 </div>
+
+## Belt System
+
+White -> Blue -> Yellow -> Green -> Brown -> Black
+
+You can only be promoted by someone two belts above you.
+Consequently you can promote anyone two belts below you.
+For example if you are a Blue belt you can promote anyone to be a White belt.
+It is advised that you only promote someone if he or she deserves it.
+Promotion happens through Pull Requests to this page.
+Osu!
 
 ## Wasabikas
 
