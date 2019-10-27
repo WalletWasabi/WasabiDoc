@@ -82,7 +82,7 @@ A few years ago, the only type of wallet that wasn't vulnerable was a full node,
 The first iteration of Wasabi was [HiddenWallet](https://github.com/zkSNACKs/WalletWasabi/tree/hiddenwallet-v0.6), which was a full-block SPV wallet that aimed to leverage usability without compromising privacy through the omission of initial blockchain downloading compared to a full node.
 In theory, it was a light wallet.
 In practice, it was hard to compete with Bitcoin Core's micro-optimizations and it was still painful to wait for wallet synchronization every time the wallet was opened.
-[Read more about network level Bitcoin wallet privacy here.](https://medium.com/@nopara73/bitcoin-core-vs-wasabi-wallet-network-level-privacy-bdca1d501387)
+[Read more about network level Bitcoin wallet privacy here.](/using-wasabi/NetworkLevelPrivacy.md)
 
 ![](/StatusBarBackendConnected.png)
 
