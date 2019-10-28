@@ -161,7 +161,7 @@ For hardware wallet related questions see: [FAQ-UseWasabi](/FAQ/FAQ-UseWasabi.md
 
 7. `Load Wallet` to import the xpub or Public Key (used to generate all receive addresses)
 
-8. Go to Receive tab and Generate Receive Address, send the mixed coin (don't combine all UTXO's/coins in a single address! this hurts your anon-set badly) from your "Hot" Wasabi Wallet to this "Cold" Wasabi Wallet.
+8. Go to `Receive` tab and Generate Receive Address, send the mixed coin (don't combine all UTXO's/coins in a single address! this hurts your anon-set badly) from your "Hot" Wasabi Wallet to this "Cold" Wasabi Wallet.
 
 おめでとうございます!
 You are now eating Cold Wasabi!
