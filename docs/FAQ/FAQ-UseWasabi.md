@@ -358,6 +358,9 @@ This chain of links between inputs being spent and outputs being generated is ve
 :::details
 ### Why is coin control so important?
 
+Coin control is a feature in Wasabi that allows the user to choose which coins are to be spent as inputs in an outgoing transaction.
+Coin control is aimed to avoid as much as possible transactions where privacy leaks are caused by amounts, change addresses, the transaction graph and the common-input-ownership heuristic.
+
 Satoshis, the base currency in the Bitcoin network, are fungible units of account.
 It's just a number that shows how much value is being transferred, and the number `100` is "the same" any time the number `100` is used.
 The 9000 sats you spend on stickers are equal to the 9000 sats you spend on coffee.
