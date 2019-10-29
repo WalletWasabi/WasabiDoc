@@ -163,9 +163,9 @@ For hardware wallet related questions see: [FAQ-UseWasabi](/FAQ/FAQ-UseWasabi.md
 
 8. Go to Receive tab and Generate Receive Address, Copy this to clipboard (memorise the first/last few characters). (Note, don't generate more than 20 unused recieve addresses).
 
-9. Send a single mixed coin (don't combine UTXO's/coins as this hurts your anon-set badly) from your "Hot" Wasabi Wallet to this "Cold" Wasabi Wallet recieve address by pasting from clipboard (check address hasn't changed).
+9. Send a single mixed coin (don't combine UTXOs/coins as this hurts your anon-set badly) from your "Hot" Wasabi Wallet to this "Cold" Wasabi Wallet receive address by pasting from clipboard (check address hasn't changed).
 
-10. Repeat Steps 8 & 9 for each UTXO (new address each time) but vary fee rate & stagger timing (don't send all in one 1h session) for maximum privacy.
+10. Repeat steps 8 & 9 for each UTXO (new address each time) but vary fee rate & stagger timing (don't send all in one 1h session) for maximum privacy.
 
 おめでとうございます!
 You are now eating Cold Wasabi!
