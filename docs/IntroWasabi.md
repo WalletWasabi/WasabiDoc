@@ -9,29 +9,76 @@ If you have a question regarding the documentation, please [open an issue](https
 If you have an answer to a question, please [open a pull request](https://github.com/zkSNACKs/WasabiDoc/pulls).
 
 
-## Basics
+## Why Wasabi
 
-- [Why Privacy is Important](WhyPrivacyImportant.md)
-- [Privacy in Bitcoin](BitcoinPrivacy.md) </br>
-  -- [Address Reuse](BitcoinPrivacy.md#address-reuse) </br>
-  -- [Inputs and Outputs](BitcoinPrivacy.md#inputs-and-outputs) </br>
-  -- [Transaction Graph](BitcoinPrivacy.md#transaction-graph) </br>
-  -- [Network Snooping](BitcoinPrivacy.md#network-snooping) </br>
-- Getting started
-- [Wasabi 10 Commandments](10Commandments.md)
-- Wasabi compared to other Wallets
+- [Why Privacy is Important](why-wasabi/WhyPrivacyImportant.md)
+- [Privacy in Bitcoin](why-wasabi/BitcoinPrivacy.md) </br>
+  -- [Address Reuse](why-wasabi/BitcoinPrivacy.md#address-reuse) </br>
+  -- [Inputs and Outputs](why-wasabi/BitcoinPrivacy.md#inputs-and-outputs) </br>
+  -- [Transaction Graph](why-wasabi/BitcoinPrivacy.md#transaction-graph) </br>
+  -- [Network Snooping](why-wasabi/BitcoinPrivacy.md#network-snooping)
+- [Wasabi 10 Commandments](why-wasabi/10Commandments.md)
+- [Transaction Surveillance Companies](why-wasabi/TransactionSurveillanceCompanies.md) </br>
+-- [Spying technology](why-wasabi/TransactionSurveillanceCompanies.md#spying-technology) </br>
+-- [Criticisms](why-wasabi/TransactionSurveillanceCompanies.md#criticisms) </br>
+-- [Examples](why-wasabi/TransactionSurveillanceCompanies.md#examples)
 
 ## Installing Wasabi
 
-- [Install package](InstallPackage.md) </br>
-  -- [Windows](InstallPackage.md#windows) </br>
-  -- [Debian and Ubuntu](InstallPackage.md#debian-and-ubuntu) </br>
-  -- [Other Linux](InstallPackage.md#other-linux) </br>
-  -- [OSX](InstallPackage.md#osx) </br>
-- [Build from source code](BuildSource.md)
-- [Deterministic build](DeterministicBuild.md)
-- [Client deployment](ClientDeployment.md)
-- [Backend deployment](BackendDeployment.md)
+- [Install package](using-wasabi/InstallPackage.md) </br>
+  -- [Windows](using-wasabi/InstallPackage.md#windows) </br>
+  -- [Debian and Ubuntu](using-wasabi/InstallPackage.md#debian-and-ubuntu) </br>
+  -- [Other Linux](using-wasabi/InstallPackage.md#other-linux) </br>
+  -- [OSX](using-wasabi/InstallPackage.md#osx)
+- [Wasabi Setup on Tails](using-wasabi/WasabiSetupTails.md)
+- [Build from source code](using-wasabi/BuildSource.md)
+- [Deterministic build](using-wasabi/DeterministicBuild.md)
+
+## Using Wasabi
+
+- [Wallet Generation](using-wasabi/WalletGeneration.md)
+- [Password Finder](using-wasabi/PasswordFinder.md)
+- [Cold-Wasabi Protocol](using-wasabi/ColdWasabi.md)
+- [Lurking Wife Mode](using-wasabi/LurkingWifeMode.md)
+- [Headless Wasabi Deamon](using-wasabi/Daemon.md)
+- [Supported BIPs](using-wasabi/BIPs.md)
+
+## Privacy Best Practices
+
+- [Address Reuse](using-wasabi/AddressReuse.md)
+- [Lost Password Strategy](using-wasabi/LostPassword.md)
+- [Network Level Privacy](using-wasabi/NetworkLevelPrivacy.md)
+- [How you can be de-anonymized using Bitcoin](using-wasabi/Deanonimization.md)
+- [Pay to EndPoint](using-wasabi/PayToEndPoint.md)
+
+## Restoring Wasabi
+
+- [Restoring Wasabi Wallet to Electrum](using-wasabi/RestoreElectrum.md)
+
+## Building Wasabi
+
+- [Technical Overview of Wasabi Wallet](building-wasabi/TechnicalOverview.md)
+- [Contribution Checklist](building-wasabi/ContributionChecklist.md)
+- [Dojo](building-wasabi/Dojo.md)
+- [ToDo List](building-wasabi/ToDo.md)
+- [Coding Conventions](building-wasabi/CodingConventions.md)
+- [Demo Guide](building-wasabi/DemoGuide.md)
+- [Contribution Game](building-wasabi/ContributionGame.md)
+- [Security Policy](building-wasabi/Security.md)
+- [Code Coverage](building-wasabi/CodeCoverage.md)
+- [Hardware Wallet Integration Testing](building-wasabi/HardwareWalletTestingGuide.md)
+- [Developers debugging Guide](building-wasabi/HowToDebug.md)
+- [Ports](building-wasabi/Ports.md)
+- [MIT License](building-wasabi/LICENSE.md)
+- [Credits](building-wasabi/Credits.md)
+
+## FAQs
+
+- [Introduction FAQ](FAQ/FAQ-Introduction.md)
+- [Installation FAQ](FAQ/FAQ-Installation.md)
+- [Use of Wasabi FAQ](FAQ/FAQ-UseWasabi.md)
+- [Bitcoin Privacy FAQ](FAQ/FAQ-GeneralBitcoinPrivacy.md)
+- [Contribution FAQ](FAQ/FAQ-Contribution.md)
 
 ## Features 
 
@@ -39,7 +86,7 @@ If you have an answer to a question, please [open a pull request](https://github
 - Label
 - Seed and mnemonic
 - Password
-- [Password Finder](PasswordFinder.md)
+- [Password Finder](using-wasabi/PasswordFinder.md)
 
 ### Hardware Wallet
 - Trezor One PIN
@@ -54,9 +101,9 @@ If you have an answer to a question, please [open a pull request](https://github
 -- Broadcast PSBT </br>
 
 ### Load Wallet
-- [Network Level Privacy - Bitcoin Core vs Wasabi Wallet](NetworkLevelPrivacy.md)
+- [Network Level Privacy - Bitcoin Core vs Wasabi Wallet](using-wasabi/NetworkLevelPrivacy.md)
 - Difference hot / watch only wallet
-- BIP 158 block filter
+- [BIP 158 block filter](FAQ/FAQ-UseWasabi.md#what-are-bip-158-block-filters)
 - Download of blocks over tor & full node
 
 ### Receive
@@ -81,41 +128,4 @@ If you have an answer to a question, please [open a pull request](https://github
 - Minimum amount and denomination
 - Duration
 - Fees
-- [Pay To EndPoint](PayToEndPoint.md)
-
-
-## Development
-
-- [A technical overview of Wasabi Wallet](TechnicalOverview.md)
-- [Wasabi coding conventions](CodingConventions.md)
-- [Security policy](SECURITY.md)
-- [Code coverage](CodeCoverage.md)
-- [Hardware wallet testing](HardwareWalletTestingGuide.md)
-- [Debug Guide](HowToDebug.md)
-- [Ports](Ports.md)
-
-## [FAQ and Common Issues](/docs/FAQ/README.md#frequently-asked-questions-about-wasabi-wallet)
-
-- [General Bitcoin Privacy](/docs/FAQ/FAQ-GeneralBitcoinPrivacy.md)
-- [Introduction to Wasabi](/docs/FAQ/FAQ-Introduction.md)
-- [Installation of Wasabi](/docs/FAQ/FAQ-Installation.md)
-- [Use of Wasabi](/docs/FAQ/FAQ-UseWasabi.md) </br>
-  -- [Wallet Manager](/docs/FAQ/FAQ-UseWasabi.md#wallet-manager) </br>
-  -- [Synchronization](/docs/FAQ/FAQ-UseWasabi.md#synchronization) </br>
-  -- [Receive](/docs/FAQ/FAQ-UseWasabi.md#receive) </br>
-  -- [Send](/docs/FAQ/FAQ-UseWasabi.md#send) </br>
-  -- [History](/docs/FAQ/FAQ-UseWasabi.md#history) </br>
-  -- [CoinJoin](/docs/FAQ/FAQ-UseWasabi.md#coinjoin) </br>
-  -- [Hardware Wallet](/docs/FAQ/FAQ-UseWasabi.md#hardware-wallet) </br>
-  -- [Settings](/docs/FAQ/FAQ-UseWasabi.md#settings) </br>
-  -- [Coin Control Best Practices](/docs/FAQ/FAQ-UseWasabi.md#coin-control-best-practices) </br>
-- [Contributions to Wasabi](/docs/FAQ/FAQ-Contribution.md)
-
-## Dojo
-
-- [Dojo](Dojo.md)
-- Support
-- [Short term ToDo's and long term roadmap](ToDo.md)
-- [Contribution Checklist](ContributionChecklist.md)
-- [Demo Guide](DemoGuide.md)
-- [Contribution Game](ContributionGame.md)
+- [Pay To EndPoint](using-wasabi/PayToEndPoint.md)

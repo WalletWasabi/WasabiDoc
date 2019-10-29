@@ -14,8 +14,8 @@ Further the questions for those who are interested in contributing to Wasabi.
 
 ### List
 
-- [Introduction FAQ](/FAQ/FAQ-Introduction.html)
-- [Installation FAQ](/FAQ/FAQ-Installation.html)
-- [Use of Wasabi FAQ](/FAQ/FAQ-UseWasabi.html)
-- [Bitcoin Privacy FAQ](/FAQ/FAQ-GeneralBitcoinPrivacy.html)
-- [Contribution FAQ](/FAQ/FAQ-Contribution.html)
+- [Introduction FAQ](/FAQ/FAQ-Introduction.md)
+- [Installation FAQ](/FAQ/FAQ-Installation.md)
+- [Use of Wasabi FAQ](/FAQ/FAQ-UseWasabi.md)
+- [Bitcoin Privacy FAQ](/FAQ/FAQ-GeneralBitcoinPrivacy.md)
+- [Contribution FAQ](/FAQ/FAQ-Contribution.md)

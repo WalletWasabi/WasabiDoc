@@ -30,7 +30,7 @@ Verify the PGP signature of the downloaded package, the zkSNACKs' PGP key finger
 <br>
 `6FB3 872B 5D42 292F 5992 0797 8563 4832 8949 861E`
 
-`gpg -v Wasabi-X.X.X.deb` (For more details check this [guide](https://docs.wasabiwallet.io/using-wasabi/InstallPackage.html#debian-and-ubuntu))
+`gpg -v Wasabi-${currentVersion}.deb` (For more details check this [guide](/using-wasabi/InstallPackage.md#debian-and-ubuntu))
 
 You can now save your `Wasabi-${currentVersion}.deb` into the persistent storage, which should look like this:
 
@@ -95,7 +95,7 @@ After the first time you save a Wasabi session, your persistent storage will loo
 /Persistent
 |__ /bitcoin-0.18.1        # Bitcoin Core launcher folder
 |__ /Bitcoin               # Bitcoin Core data folder
-|__ /Wasabi-${currentVersion}.deb    # Wasabi installer
+|__ /Wasabi-${currentVersion}.deb      # Wasabi installer
 |__ /.walletwasabi
     |__ /client            # Here we save our wallet files, blocks and filters
         |__ /Wallets
@@ -112,7 +112,7 @@ You can save multiple copies of `.walletwasabi` in your persistent, each with di
 |__ /bitcoin-0.18.1            	   # Bitcoin Core launcher folder
 |__ /Bitcoin                       # Bitcoin Core data folder
 |__ /Wasabi                        # General Wasabi folder
-    |__ /Wasabi-${currentVersion}.deb        # Wasabi installer
+    |__ /Wasabi-${currentVersion}.deb          # Wasabi installer
     |__ /BitcoinStore              # Filters (No need to keep multiple copies of them)
     |__ /CoinJoin wallet
     |   |__ /.walletwasabi

@@ -99,7 +99,7 @@ NO!!! Without knowledge of your password, even when you have the wallet file and
 :::
 
 When creating a new wallet, after labeling it properly, the next step is to select a long and random password.
-This is used to encrypt the private key on your computer, which has an insecure operating system and is connected to the internet.
+This is used to encrypt the private key on your computer, which has an insecure operating system and is connected to the Internet.
 Every time you want to spend your coins from Wasabi, you MUST provide this password.
 Also, the same password is used to encrypt the mnemonic recovery words that you must backup in the next step of wallet creation.
 So even if you have these words securely engraved in metal, without the password, you cannot restore the backup of your wallet.
@@ -226,9 +226,9 @@ Everytime a coin is received, the address is removed from the GUI so that you ar
 
 You can generate a new bech32 address in the `Receive` tab of Wasabi Wallet.
 First you must set a label for it, so that you later know who has sent you bitcoin to this address.
-Be precise in the reason for the payment, labeling is an important part of good [coin control](/docs/FAQ/FAQ-UseWasabi.md#why-is-coin-control-so-important) privacy best practices.
+Be precise in the reason for the payment, labeling is an important part of good [coin control](/FAQ/FAQ-UseWasabi.md#why-is-coin-control-so-important) privacy best practices.
 Then you can click on `Generate` which will now show you the address, and immediately copy it to the clipboard.
-After a coin has been sent to this address, it is removed from the GUI, this is a good feature to help protect you against [address reuse](/docs/FAQ/FAQ-UseWasabi.md#why-is-it-bad-to-re-use-addresses).
+After a coin has been sent to this address, it is removed from the GUI, this is a good feature to help protect you against [address reuse](/FAQ/FAQ-UseWasabi.md#why-is-it-bad-to-re-use-addresses).
 
 ![](/ReceiveLabelingRequired.png)
 :::
@@ -324,18 +324,18 @@ No.
 
 Multi signature scripts define that there need to be m-of-n signatures provided in order to spend this UTXO.
 For example in a 2-of-3, Alice alone cannot spend the sats, she needs the collaboration of either Bob or Charlie.
-In the current way of implementation, a legacy and SegWit v0 multisig address is clearly disdinguishable, there are three public keys and two signatures, and not one single public key and signature.
+In current implementations, a legacy and SegWit v0 multisig address is clearly distinguishable, there are three public keys and two signatures, and not one single public key and signature.
 This means that your anonymity set, the crowd you hide in, gets a lot smaller.
-If some one knows that you use a multisig, then they can narrow down their search for your coins.
-Thus, multisignatures decrease your privacy, and Wasabi is not implementing tools that degrade your privacy.
+If some one knows that you use a multisig wallet, then they can narrow down their search for your coins.
+Thus, use of multisig decreases your privacy, and Wasabi is not implementing tools that degrade your privacy.
 
 Yet multisig is a popular feature, and many Wasabikas do request it for extra security, willing to trade-off some privacy.
 [Electrum Wallet](https://electrum.org) is a fantastic wallet with many features, but only private if you connect to your own Electrum server full node.
-Electrum can be used to create different types of m-of-n multisig scripts, including with your hardware wallet.
+Electrum can be used to create different types of m-of-n multisig scripts, including the use of hardware wallets.
 
-Anyway, since Wasabi is using the Hardware Wallet Interface with partially signed Bitcoin transactions, the implementation might come in #twoweeks, check the [ToDo list](/building-wasabi/ToDo.md).
+Anyway, since Wasabi is using the Hardware Wallet Interface with Partially Signed Bitcoin Transactions (PSBT), the implementation might come in #twoweeks, check the [ToDo list](/building-wasabi/ToDo.md).
 Schnorr key and signature aggregation with MuSig increases the privacy, since only one public key, not n, are committed on the timechain.
-So when Schnorr is activated in the Bitcoin consensus, in #twoweeks, there are no privacy concerns standing in the way of Wasabi multisig!
+So when Schnorr is activated in the Bitcoin consensus layer, in #twoweeks, there are no privacy concerns standing in the way of Wasabi multisig!
 :::
 
 ## Send
@@ -358,13 +358,16 @@ This chain of links between inputs being spent and outputs being generated is ve
 :::details
 ### Why is coin control so important?
 
+Coin control is a feature in Wasabi that allows the user to choose which coins are to be spent as inputs in an outgoing transaction.
+Coin control is aimed to avoid as much as possible transactions where privacy leaks are caused by amounts, change addresses, the transaction graph and the common-input-ownership heuristic.
+
 Satoshis, the base currency in the Bitcoin network, are fungible units of account.
 It's just a number that shows how much value is being transferred, and the number `100` is "the same" any time the number `100` is used.
 The 9000 sats you spend on stickers are equal to the 9000 sats you spend on coffee.
 Just like 1 gram of gold atoms are equal to any other 1 gram of gold atoms.
 
-However, the unspent transaction outputs, the coins that hold the satoshi, they are not fungible.
-Every UTXO is a unique snowflake that has it's own transaction history, as well as an independent spending condition.
+However, the unspent transaction outputs, the "coins" that hold the satoshi themselves are not fungible.
+Every UTXO is a unique snowflake that has its own transaction history, as well as an independent spending condition.
 The coin worth 2 bitcoin and locked by Alice's public key is not the same as the UTXO worth 5 bitcoin locked by the 2-of-3 multi signature of Bob, Charlie and David.
 So when sending bitcoin, it's important to consider which actual outputs are being sent in the transaction.
 
@@ -378,7 +381,7 @@ Alice can protect herself against this by using a CoinJoin UTXO, because now Bob
 
 In the `Send` tab, there is a text box for the `Address` right under the coin list.
 If you have an address in the clipboard, then it is automatically pasted when you click on the box.
-You can also type in the bech32 address manually, there is a checksum to make help you find typos.
+You can also type in the Bech32 address manually, there is a checksum to help you identify typos.
 Be careful and double check the address, there is no way to revert this transaction and change the destination.
 So make sure that the coins get into the right hands.
 :::
@@ -394,7 +397,7 @@ Coming in #twoweeks.
 :::details
 ### How do I set the payment amount?
 
-After you select one or more coins as inputs in send tab, say two anonset coins worth 0.1 bitcoin each.
+After you select one or more coins as inputs in `Send` tab, say two anonset coins worth 0.1 bitcoin each.
 You can manually set the exact amount that the destination address will receive in the output of the transaction, say 0.15 bitcoin.
 Then Wasabi will help you with automatically calculating the precise change output value with `inputs - destination output - confirmation fee`.
 
@@ -404,7 +407,7 @@ Then Wasabi will help you with automatically calculating the precise change outp
 ::::details
 ### How can I use the MAX button?
 
-When you select one or more coins as inputs in send tab, say two anonset coins worth each 0.1 bitcoin.
+When you select one or more coins as inputs in `Send` tab, say two anonset coins worth each 0.1 bitcoin.
 You can click the `MAX` button and the transaction will have only one output with the destination address, and no change output.
 Wasabi will calculate the precise value for the destination output with `inputs - confirmation fee`.
 This means you send the entire two coins to the receiving address, and there is no change coming back to your own wallet, you are sending a "whole coin".
@@ -442,7 +445,7 @@ This reduces the risk of a passive bystander being able to link two transactions
 ::::details
 ### What fee should I select?
 
-Wasabi uses the `[smartfee](https://bitcointechtalk.com/an-introduction-to-bitcoin-core-fee-estimation-27920880ad0)` estimation algorithm provided by bitcoind.
+Wasabi uses the [smartfee](https://bitcointechtalk.com/an-introduction-to-bitcoin-core-fee-estimation-27920880ad0) estimation algorithm provided by bitcoind.
 This integrates both data from recent blocks, as well as the local mempool to estimate the current and future demand for blockspace.
 The lower the fee is, the longer the estimated wait; and the higher the fee, the faster the confirmation will come.
 There are several different confidence levels, each of them gives an educated guess how soon the transaction will confirm.
@@ -478,8 +481,8 @@ You can toggle the display of the fee between `sat/vByte` & `percentage of trans
 ### How do I select coins for spending?
 
 Unlike other Bitcoin wallets, the user cannot spend from Wasabi without selecting coins, since ["Coin Control Is Must Learn If You Care About Your Privacy In Bitcoin"](https://medium.com/@nopara73/coin-control-is-must-learn-if-you-care-about-your-privacy-in-bitcoin-33b9a5f224a2), at least for today.
-The label field of the Send tab is also compulsory.
-The received coins will appear in your Send tab and you'll have to manually select which coins you'll want to spend from.
+The label field of the `Send` tab is also compulsory.
+The received coins will appear in your `Send` tab and you'll have to manually select which coins you'll want to spend from.
 By clicking on the Max button, one can spend all selected coins.
 Spending whole coins is beneficial to privacy.
 ![](/Send.png)
@@ -506,6 +509,62 @@ When you send two consecutive transactions via Wasabi, you can be sure that they
 Wasabi will implement the [Dandelion](https://github.com/gfanti/bips/blob/master/bip-dandelion.mediawiki) protocol for transaction broadcasting when the Bitcoin network adopts it.
 :::
 
+:::details
+### What is the cluster history?
+
+Clusters are a property of a Bitcoin wallet with strong coin-control and good labeling.
+When you use Wasabi, you must label every coin that you receive.
+The reason why this is important, is that your "wallet" is really just a collection of coins (similar to a physical wallet, not to a bank account).
+When you receive coins from somewhere to a labeled address, Wasabi will store the label locally on your device, for example:
+
+`----> 0.65 BTC (From my Boss Bob)`
+
+Now if you receive money from Alice who uses an exchange, then your label would look like this:
+
+`----> 2.1 BTC (From Alice, from exchange)`
+
+Now here is where things can be a bit tricky for folks unfamiliar with Bitcoin.
+Suppose you wanted to send all of your coins to a hardware wallet.
+So you think to yourself "What's the harm in sending my money to one address?"
+
+This is how the transaction will look like:
+
+```
+0.65 BTC (From my Boss Bob)     ----->  2.75 BTC (From my Boss Bob & from exchange)
+2.1 BTC (Alice, from exchange)
+```
+
+The problem with this transaction, is your boss knows you, and knows that the 0.65 BTC is in your possession, and can monitor your transaction behavior.
+But when you combine (consolidate) your coins in this way, you reveal to your boss that you also have 2.1 BTC from somewhere else, and you reveal to the exchange that you have 0.65 bitcoin from somewhere else.
+
+When you CoinJoin (mix) coins with Wasabi, you actually de-link the trail from your boss/exchange, to the coins in your wallet.
+The coin will have an anonymity set > 1, and typically will have a green shield.
+This coin can now be spent without having to worry about your boss or the exchange tracking your behavior.
+
+However, when you mix a coin, there is often change.
+This change is marked in a red `x` and has an anonymity set = 1 (with a couple of small exceptions regarding remixing).
+The change is completely linked to your coins before the mix, and so needs to be dealt with properly.
+If you combine the tiny bit of change you received from your boss and from the exchange, they still know how much money you had (but not where you are spending it).
+
+So the idea around clusters is to make it easier for users to follow the transaction graph.
+The transaction graph is the history of where a coin has been, and is important if different histories need to be separated.
+For example, if you buy coins anonymously in a P2P way, you should try to avoid mixing those coins with coins you got in a public way (donation, exchange, etc.).
+:::
+
+:::details
+### What's the difference between Send and Build Transaction?
+
+The only difference is that `Build Transaction` does not propagate the transaction, it simply builds it.
+It works differently for watch-only and hardware wallets than normal wallets.
+
+In summary:
+| hot wallet   | watch-only wallet     | hardware wallet       |                       |
+|--------------|-----------------------|-----------------------|-----------------------|
+| build tx     | send tab, buildtx tab | send tab, buildtx tab | send tab, buildtx tab |
+| sign tx      | send tab, buildtx tab |                       | send tab              |
+| broadcast tx | send tab              |                       |                       |
+:::
+
 ## CoinJoin
 
 @[youtube](ypfZT9GlqTw)
@@ -520,6 +579,7 @@ Wasabi is an Anonymizing software provider so it is not a money transmitter, thu
 Basically we can continue to operate like now and it is compliant.
 
 Here's a great explanation about it:
+
 @[youtube](tLOMcU8MhWM,1305)
 :::
 
@@ -680,7 +740,7 @@ The input registration phase ends when either, the number of registered inputs e
 
 @[youtube](v1fIjFR6e5Q)
 
-[missing: explanation of uniqueld]
+[missing: explanation of unique ID]
 :::
 
 :::details
@@ -694,7 +754,7 @@ The connection confirmation phase ends when all Alice's have provided their inpu
 
 @[youtube](hhkL0QvIaGY)
 
-[missing: explanation of uniqueld]
+[missing: explanation of unique ID]
 :::
 
 :::details
@@ -764,7 +824,7 @@ Now if even that'd fail, then we can start thinking about lowering the required 
 :::details
 ### I'd like to experience CoinJoin but I'm not comfortable using real Bitcoin. What can I do?
 
-You can try to make a CoinJoin via Wasabi on the Bitcoin [TestNet](/FAQ/FAQ-UseWasabi.html#what-is-testnet) (an alternative Bitcoin blockchain, to be used for testing).
+You can try to make a CoinJoin via Wasabi on the Bitcoin [TestNet](/FAQ/FAQ-UseWasabi.md#what-is-testnet) (an alternative Bitcoin blockchain, to be used for testing).
 Go to settings and change the network to TestNet.
 You can get tBTC from faucets like:
 [testnet-faucet.mempool.co](https://testnet-faucet.mempool.co/)
@@ -793,7 +853,7 @@ Here is how Wasabi handles different scenarios:
 
 No you don't.
 CoinJoins are atomic, they happen or they don't.
-If your wallet crashes or your computer goes offline during CoinJoin you can simply register for a new CoinJoin, look at table [here](/FAQ/FAQ-UseWasabi.html#Does-my-computer-have-to-stay-on-during-CoinJoin) for more info.
+If your wallet crashes or your computer goes offline during CoinJoin you can simply register for a new CoinJoin, look at table [here](/FAQ/FAQ-UseWasabi.md#does-wasabi-have-to-stay-on-during-coinjoin) for more info.
 :::
 
 :::details
@@ -802,6 +862,55 @@ If your wallet crashes or your computer goes offline during CoinJoin you can sim
 It is commonly said that an anonymity set of 50 is sufficient to evade blockchain forensics analysis.
 At least one round to re-mix your coins can increase your privacy drastically.
 With Wasabi this can be achieved in a matter of hours (or minutes if there are a lot of users).
+:::
+
+:::details
+### How many rounds should I CoinJoin?
+
+There is no simple answer for this.
+If you want more anonymity you should CoinJoin multiple times.
+:::
+
+:::details
+### How can I select UTXOs for CoinJoin?
+
+You need to go to `CoinJoin` tab and select your desired UTXO by clicking the checkbox.
+It will be queued and registered for the next CoinJoin round.
+:::
+
+:::details
+### How does my wallet communicate with the Wasabi coordinator server?
+
+Wasabi communicates in many ways to the coordinator server, and it is always over the tor network.
+
+First of all, Wasabi uses BIP-158 block filters to ensure network level privacy.
+You can follow these FAQs to have a full explanation on the theme:
+- [What are BIP-158 Block Filters?](/FAQ/FAQ-UseWasabi.html#what-are-bip-158-block-filters)
+- [What software supplies the block filters that Wasabi uses?](/FAQ/FAQ-Introduction.html#what-software-supplies-the-block-filters-that-wasabi-uses)
+- [Can the coordinator attack me?](/FAQ/FAQ-Introduction.html#can-the-coordinator-attack-me)
+- [Is the backend's coordinator code open source?](/FAQ/FAQ-Introduction.html#is-the-backend-s-coordinator-code-open-source)
+
+Then, there are five different phases in a CoinJoin.
+You can follow these links to have a full explanation on that:
+1. [INPUT REGISTRATION PHASE](/FAQ/FAQ-UseWasabi.html#what-is-happening-in-the-input-registration-phase)
+2. [CONNECTION CONFIRMATION PHASE](/FAQ/FAQ-UseWasabi.html#what-is-happening-in-the-connection-confirmation-phase)
+3. [OUTPUT REGISTRATION PHASE](/FAQ/FAQ-UseWasabi.html#what-is-happening-in-the-output-registration-phase)
+4. [SIGNING PHASE](/FAQ/FAQ-UseWasabi.html#what-is-happening-in-the-signing-phase)
+5. [BROADCASTING PHASE](/FAQ/FAQ-UseWasabi.html#what-is-happening-in-the-broadcasting-phase)
+
+You also get information about the current mempool for fee estimation as well as the fiat exchange rate.
+:::
+
+:::details
+### How long does it take to mix my coins?
+
+It depends on many things, the longest period is the wait for all peers to register their coins.
+First of all from your desired anonymity set, every round has a goal of 100 anonymity set.
+Wasabi is developed in a way that there's a round at least once every two hours.
+If the 100 peers registered earlier, then there can be many rounds per hour.
+When all peers are registered, then the signing phase is done within a couple of seconds.
+
+Summing up: the faster peers register in the CoinJoins, the faster the mixes are.
 :::
 
 ## Hardware Wallet
@@ -839,54 +948,54 @@ Wasabi uses this powerful tool because there are no other dependencies necessary
 :::details
 ### How can I generate a Wasabi skeleton wallet file in ColdCard?
 
-On the ColdCard (Mk2, firmware 2.1.1 and up) you go to ```>Advanced>MicrcoSD Card>Wasabi Wallet``` and it will save a skeleton json-file to the MicroSD card in the hardware wallet.
+On the ColdCard (Mk2, firmware 2.1.1 and up) you go to `>Advanced>MicrcoSD Card>Wasabi Wallet` and it will save a skeleton json-file to the MicroSD card in the hardware wallet.
 :::
 
 :::details
 ### How can I import the Wasabi skeleton wallet file?
 
 Take the MicroSD card from the ColdCard and plug it in the computer with the Wasabi Wallet software.
-In Wasabi Wallet go to the Wallet Manager, select Hardware Wallet option and in the bottom right corner click ```Import Coldcard```.
+In Wasabi Wallet go to the Wallet Manager, select Hardware Wallet option and in the bottom right corner click `Import Coldcard`.
 Now select the Wasabi skeleton json-file from the MicroSD card, if this fails you can manually enter the file location in Wasabi Wallet window and load the file.
 :::
 
 :::details
 ### How can I generate a receiving address of my hardware wallet?
 
-In Wasabi Wallet you load your previously imported wallet (from Wasabi skeleton, or USB detection) and go to the ```Receive``` tab, here you enter a label for the incoming transaction and click ```Generate Receive Address```.
-In the tab below the newly generated receive address can be viewd/copied.
+In Wasabi Wallet you load your previously imported wallet (from Wasabi skeleton, or USB detection) and go to the `Receive` tab, here you enter a label for the incoming transaction and click `Generate Receive Address`.
+In the tab below the newly generated receive address can be viewed / copied.
 :::
 
 :::details
 ### How can I sign a transaction with a USB connected hardware wallet?
 
-To send a transaction you will need to connect your Hardware wallet and unlock the device (using PIN or password), in Wasabi Wallet you go to the ```Send``` tab where you can specify the address to send to, amount of bitcoin to send and which coins to use as input (only use green/private coins here!).
-After filling in all transaction details you click ```Send Transaction``` to sign it with the connected hardware wallet and broadcast on the network.
+To send a transaction you will need to connect your Hardware wallet and unlock the device (using PIN or password), in Wasabi Wallet you go to the `Send` tab where you can specify the address to send to, amount of bitcoin to send and which coins to use as input (only use green/private coins here!).
+After filling in all transaction details you click `Send Transaction` to sign it with the connected hardware wallet and broadcast on the network.
 :::
 
 :::details
 ### How can I build and export a transaction to ColdCard?
 
-In the Wallet Explorer on the right side of the GUI, select ```YourWallet>Advanced>Build Transaction```.
-This brings up the ```Build Transaction``` tab where you can specify the address, amount of bitcoin and coins to use.
-Then by clicking ```Build Transaction``` a new tab will open containing the raw transaction data, here you click ```Export Binary PSBT``` to save the partially signed bitcoin transaction (PSBT) to a file.
+In the Wallet Explorer on the right side of the GUI, select `YourWallet>Advanced>Build Transaction`.
+This brings up the `Build Transaction` tab where you can specify the address, amount of bitcoin and coins to use.
+Then by clicking `Build Transaction` a new tab will open containing the raw transaction data, here you click `Export Binary PSBT` to save the partially signed bitcoin transaction (PSBT) to a file.
 This file should be moved to the MicroSD card that you can then insert in the ColdCard for manual verification and signing.
 :::
 
 :::details
 ### How can I sign a transaction on the ColdCard?
 
-On the ColdCard (Mk2, firmware 2.1.1 and up) you enter the PIN code to unlock the hardware wallet and press ```>Ready To Sign``` with the MicroSD card containing the previously generated transaction or PSBT-file.
+On the ColdCard (Mk2, firmware 2.1.1 and up) you enter the PIN code to unlock the hardware wallet and press `>Ready To Sign` with the MicroSD card containing the previously generated transaction or PSBT-file.
 Verify the address and amount and the ColdCard will then create a signed.psbt and final.txn file on the MicroSD card.
-The finalized transaction (xxx-final.txn) can now be broadcasted by Wasabi Wallet or even a radio or satelite dish if someone is listening!
+The finalized transaction (xxx-final.txn) can now be broadcast by Wasabi Wallet or even a radio or satellite dish if someone is listening!
 :::
 
 :::details
 ### How can I import and broadcast a final transaction from ColdCard?
 
-In the Wallet Explorer you go to ```YourWallet>Advanced>Broadcast Transaction``` and click ```Import Transaction```, now you can select the previously finalized (and signed) transaction file from the MicroSD card.
+In the Wallet Explorer you go to `YourWallet>Advanced>Broadcast Transaction` and click `Import Transaction`, now you can select the previously finalized (and signed) transaction file from the MicroSD card.
 If this fails you can manually type the path to this file in Wasabi Wallet to load the transaction.
-Now click ```Broadcast Transaction``` to send it off over Tor to a random Bitcoin node so it can flood over to the miners for confirmation in a block.
+Now click `Broadcast Transaction` to send it off over Tor to a random Bitcoin node so it can flood over to the miners for confirmation in a block.
 :::
 
 :::details
@@ -940,7 +1049,7 @@ The server will still send you [BIP 158 block filters](https://github.com/bitcoi
 One attack vector could be that Wasabi lies to you and gives you wrong filters that exclude your transaction, thus you would see in the wallet less coins than you actually control. [BIP 157 solves this](https://github.com/bitcoin/bips/blob/master/bip-0157.mediawiki).
 
 When your full node is on the same hardware [computer, laptop] as your Wasabi Wallet, it will automatically recognize it and pull blocks from there.
-If your node is on a remote device [raspberry pi, nodl, server], then you can specify your local IP in the Settings tab, or in line 11 of the config file.
+If your node is on a remote device [raspberry pi, nodl, server], then you can specify your local IP in the `Settings` tab, or in line 11 of the config file.
 
 @[youtube](gWo2RAkIVrE)
 :::
@@ -957,7 +1066,7 @@ In the second case, if you happen to broadcast a transaction of yours to a full 
 :::details
 ### How can I change the anonset target?
 
-In the Settings tab at the bottom you can change the three `PrivacyLevelX` values of the desired anon set of the yellow, green, and checkmark shield button in the GUI.
+In the `Settings` tab at the bottom you can change the three `PrivacyLevelX` values of the desired anon set of the yellow, green, and checkmark shield button in the GUI.
 The `MixUntilAnonymitySet` is the last selected value from previous use.
 
 Alternatively, open the config file from the wallet GUI, go to `File`>`Open`>`Config File` and in the last 4 lines you see:
@@ -982,7 +1091,7 @@ It can be non economical inputs, that is a UTXO that has less value than the fee
 A dust attack is actually about [forced address reuse](https://en.bitcoin.it/Privacy#Forced_address_reuse), the malicious actor sends very small amounts into old addresses and consolidation of these dust UTXOs can link several coins in a wallet cluster.
 
 Specifically in the context of Wasabi, with the dust threshold settings you can limit the value of coins shown in the GUI.
-When you set it to `0.0000 1000 bitcoin`, and when you receive a coin worth `0.0000 0300 bitcoin`, then this coin will not be shown in the coin list.
+When you set it to `0.0000 5000 bitcoin`, and when you receive a coin worth `0.0000 4000 bitcoin`, then this coin will not be shown in the coin list.
 
 ![](/SettingsDustThreshold.png)
 :::
@@ -1000,7 +1109,7 @@ The `Tor Log File` shows the Tor specific logs.
 ### How to activate Lurking Wife Mode?
 
 You can activate Lurking Wife Mode from `Settings` or by clicking on your wallet balance.
-You can read more about Lurking Wife Mode [here](/docs/using-wasabi/LurkingWifeMode.md).
+You can read more about Lurking Wife Mode [here](/using-wasabi/LurkingWifeMode.md).
 :::
 
 ## Coin Control Best Practices
@@ -1056,11 +1165,11 @@ If you combine that red coin with the green, then it's clear that both of them b
 
 When you take a 100 anonset coin, and you register it again for CoinJoin, then you get one coin with anonset 200, and one change with anonset 100.
 This change has anonset 100 because it can be linked to the input of the second CoinJoin, but this coin has anonset 100 already.
-So, although this change can still reveal pre-mix history, because the pr-mix history is another CoinJoin, you cannot go further back.
+This change can still reveal premix history which is another CoinJoin, therefore you cannot go further back.
 So, it might be ok to send this second change output to some place, or even consolidate it, because it still has anonset.
 
 When you consolidate several small change coins in a regular transaction, then every outside observer knows that they belong to the same cluster.
-However, you can consolidate within a CoinJoin by simply selecting all these coins in the CoinJoin tab.
+However, you can consolidate within a CoinJoin by simply selecting all these coins in the `CoinJoin` tab.
 Because the Wasabi CoinJoin transaction shuffles inputs, for an outside observer it is not clear which inputs belong to the same Alice.
 However, the coordinator gets the input proof of **ALL** the coins that Alice has provided during the input registration phase.
 Thus the coordinator knows that this is a consolidation transaction.
@@ -1081,6 +1190,7 @@ So consolidating in a CoinJoin is better, but it might still reveal the common o
 ### How can I mix large amounts?
 
 Use Unequal Input Mixing and gain fungibility for UTXOs of 0.1, 0.2, 0.4, 0.8, 1.6, 3.2, ... bitcoin!
+
 @[youtube](3Ezru07J674)
 :::
 
@@ -1093,7 +1203,7 @@ Use Unequal Input Mixing and gain fungibility for UTXOs of 0.1, 0.2, 0.4, 0.8, 1
 The testnet is an alternative Bitcoin blockchain, to be used for testing.
 Testnet coins (tBTC) are separate and distinct from actual bitcoins, and are never supposed to have any value.
 This allows application developers or bitcoin testers to experiment, without having to use real bitcoins or worrying about breaking the main bitcoin chain.
-You can try to make a [CoinJoin with Wasabi on the Bitcoin TestNet](/FAQ/FAQ-UseWasabi.html#i-d-like-to-experience-coinjoin-but-i-m-not-comfortable-using-real-bitcoin-what-can-i-do) without being afraid of losing 'real' bitcoins.
+You can try to make a [CoinJoin with Wasabi on the Bitcoin TestNet](/FAQ/FAQ-UseWasabi.md#i-d-like-to-experience-coinjoin-but-i-m-not-comfortable-using-real-bitcoin-what-can-i-do) without being afraid of losing 'real' bitcoins.
 
 You can get tBTC from faucets like:
 [testnet-faucet.mempool.co](https://testnet-faucet.mempool.co/)
@@ -1105,16 +1215,6 @@ Testnet2 was just the first testnet reset with a different genesis block, becaus
 Testnet3 is the current test network.
 It was introduced with the 0.7 release, introduced a third genesis block, a new rule to avoid the "difficulty was too high, is now too low, and transactions take too long to verify" problem, and contains blocks with edge-case transactions designed to test implementation compatibility.
 :::
-
-Send
-
-- What is the cluster history?
-
-CoinJoin
-
-- How can I select UTXOs for CoinJoin?
-- How many rounds should I CoinJoin?
-- How does my wallet communicate with the Wasabi coordinator server?
 
 Hardware Wallet
 
