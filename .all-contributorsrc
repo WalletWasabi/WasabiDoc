@@ -285,6 +285,15 @@
         "doc",
         "content"
       ]
+    },
+    {
+      "login": "jonathancross",
+      "name": "Jonathan Cross",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/5115470?v=4",
+      "profile": "https://JonathanCross.com",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 5,
