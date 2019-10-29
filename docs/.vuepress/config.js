@@ -1,3 +1,4 @@
+const { resolve } = require('path')
 const { slugify } = require('@vuepress/shared-utils')
 const customBlock = require('markdown-it-custom-block')
 
@@ -56,6 +57,14 @@ module.exports = {
       }
     }]
   ],
+  chainWebpack (config) {
+    return config.module
+      .rule('md')
+      .test(/\.md$/)
+      .use(resolve(__dirname, './variables'))
+        .loader(resolve(__dirname, './variables'))
+        .end()
+  },
   markdown: {
     extendMarkdown (md) {
       md.use(customBlock, {

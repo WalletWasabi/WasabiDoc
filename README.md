@@ -133,7 +133,6 @@ bar
 :::
 ```
 
-
 ### Frequently asked questions
 
 Use this markdown box with the headers to write the FAQ:
@@ -158,7 +157,13 @@ answer answer answer.
 answer answer answer.
 :::
 ::::
-````
+```
+
+### Variables
+
+To have a single place to maintain universal strings like the current Wasabi version number, we use variables in the Markdown (i.e.  `${currentVersion}`).
+These variables are managed in `docs/.vuepress/variables.js`.
+Occurrences of `${variableName}` get substituted before the Markdown is processed.
 
 ### Thanks goes to the Wasabikas, Osu!
 
@@ -204,6 +209,7 @@ Checkout what each emoji means [here](https://allcontributors.org/docs/en/emoji-
   </tr>
   <tr>
     <td align="center"><a href="http://www.michaeltoth.me"><img src="https://avatars3.githubusercontent.com/u/1676164?v=4" width="100px;" alt="Michael Toth"/><br /><sub><b>Michael Toth</b></sub></a><br /><a href="https://github.com/zkSNACKs/WasabiDoc/commits?author=michaeltoth" title="Documentation">📖</a> <a href="#content-michaeltoth" title="Content">🖋</a></td>
+    <td align="center"><a href="https://JonathanCross.com"><img src="https://avatars3.githubusercontent.com/u/5115470?v=4" width="100px;" alt="Jonathan Cross"/><br /><sub><b>Jonathan Cross</b></sub></a><br /><a href="https://github.com/zkSNACKs/WasabiDoc/commits?author=jonathancross" title="Documentation">📖</a></td>
   </tr>
 </table>
 
