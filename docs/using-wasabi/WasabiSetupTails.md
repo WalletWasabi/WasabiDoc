@@ -95,7 +95,7 @@ After the first time you save a Wasabi session, your persistent storage will loo
 /Persistent
 |__ /bitcoin-0.18.1        # Bitcoin Core launcher folder
 |__ /Bitcoin               # Bitcoin Core data folder
-|__ /Wasabi-${currentVersion}.deb      # Wasabi installer
+|__ /Wasabi-${currentVersion}.deb    # Wasabi installer
 |__ /.walletwasabi
     |__ /client            # Here we save our wallet files, blocks and filters
         |__ /Wallets
@@ -112,7 +112,7 @@ You can save multiple copies of `.walletwasabi` in your persistent, each with di
 |__ /bitcoin-0.18.1            	   # Bitcoin Core launcher folder
 |__ /Bitcoin                       # Bitcoin Core data folder
 |__ /Wasabi                        # General Wasabi folder
-    |__ /Wasabi-${currentVersion}.deb          # Wasabi installer
+    |__ /Wasabi-${currentVersion}.deb        # Wasabi installer
     |__ /BitcoinStore              # Filters (No need to keep multiple copies of them)
     |__ /CoinJoin wallet
     |   |__ /.walletwasabi
