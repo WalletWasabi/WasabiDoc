@@ -551,6 +551,20 @@ The transaction graph is the history of where a coin has been, and is important 
 For example, if you buy coins anonymously in a P2P way, you should try to avoid mixing those coins with coins you got in a public way (donation, exchange, etc.).
 :::
 
+:::details
+### What's the difference between Send and Build Transaction?
+
+The only difference is that `Build Transaction` does not propagate the transaction, it simply builds it.
+It works differently for watch-only and hardware wallets than normal wallets.
+
+In summary:
+| hot wallet   | watch-only wallet     | hardware wallet       |                       |
+|--------------|-----------------------|-----------------------|-----------------------|
+| build tx     | send tab, buildtx tab | send tab, buildtx tab | send tab, buildtx tab |
+| sign tx      | send tab, buildtx tab |                       | send tab              |
+| broadcast tx | send tab              |                       |                       |
+:::
+
 ## CoinJoin
 
 @[youtube](ypfZT9GlqTw)
