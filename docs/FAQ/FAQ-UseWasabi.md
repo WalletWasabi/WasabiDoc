@@ -397,7 +397,7 @@ Coming in #twoweeks.
 :::details
 ### How do I set the payment amount?
 
-After you select one or more coins as inputs in send tab, say two anonset coins worth 0.1 bitcoin each.
+After you select one or more coins as inputs in `Send` tab, say two anonset coins worth 0.1 bitcoin each.
 You can manually set the exact amount that the destination address will receive in the output of the transaction, say 0.15 bitcoin.
 Then Wasabi will help you with automatically calculating the precise change output value with `inputs - destination output - confirmation fee`.
 
@@ -407,7 +407,7 @@ Then Wasabi will help you with automatically calculating the precise change outp
 ::::details
 ### How can I use the MAX button?
 
-When you select one or more coins as inputs in send tab, say two anonset coins worth each 0.1 bitcoin.
+When you select one or more coins as inputs in `Send` tab, say two anonset coins worth each 0.1 bitcoin.
 You can click the `MAX` button and the transaction will have only one output with the destination address, and no change output.
 Wasabi will calculate the precise value for the destination output with `inputs - confirmation fee`.
 This means you send the entire two coins to the receiving address, and there is no change coming back to your own wallet, you are sending a "whole coin".
@@ -481,8 +481,8 @@ You can toggle the display of the fee between `sat/vByte` & `percentage of trans
 ### How do I select coins for spending?
 
 Unlike other Bitcoin wallets, the user cannot spend from Wasabi without selecting coins, since ["Coin Control Is Must Learn If You Care About Your Privacy In Bitcoin"](https://medium.com/@nopara73/coin-control-is-must-learn-if-you-care-about-your-privacy-in-bitcoin-33b9a5f224a2), at least for today.
-The label field of the Send tab is also compulsory.
-The received coins will appear in your Send tab and you'll have to manually select which coins you'll want to spend from.
+The label field of the `Send` tab is also compulsory.
+The received coins will appear in your `Send` tab and you'll have to manually select which coins you'll want to spend from.
 By clicking on the Max button, one can spend all selected coins.
 Spending whole coins is beneficial to privacy.
 ![](/Send.png)
@@ -542,7 +542,7 @@ The coin will have an anonymity set > 1, and typically will have a green shield.
 This coin can now be spent without having to worry about your boss or the exchange tracking your behavior.
 
 However, when you mix a coin, there is often change.
-This change is marked in a red 'x' and has an anonymity set = 1 (with a couple of small exceptions regarding remixing).
+This change is marked in a red `x` and has an anonymity set = 1 (with a couple of small exceptions regarding remixing).
 The change is completely linked to your coins before the mix, and so needs to be dealt with properly.
 If you combine the tiny bit of change you received from your boss and from the exchange, they still know how much money you had (but not where you are spending it).
 
@@ -948,44 +948,44 @@ Wasabi uses this powerful tool because there are no other dependencies necessary
 :::details
 ### How can I generate a Wasabi skeleton wallet file in ColdCard?
 
-On the ColdCard (Mk2, firmware 2.1.1 and up) you go to ```>Advanced>MicrcoSD Card>Wasabi Wallet``` and it will save a skeleton json-file to the MicroSD card in the hardware wallet.
+On the ColdCard (Mk2, firmware 2.1.1 and up) you go to `>Advanced>MicrcoSD Card>Wasabi Wallet` and it will save a skeleton json-file to the MicroSD card in the hardware wallet.
 :::
 
 :::details
 ### How can I import the Wasabi skeleton wallet file?
 
 Take the MicroSD card from the ColdCard and plug it in the computer with the Wasabi Wallet software.
-In Wasabi Wallet go to the Wallet Manager, select Hardware Wallet option and in the bottom right corner click ```Import Coldcard```.
+In Wasabi Wallet go to the Wallet Manager, select Hardware Wallet option and in the bottom right corner click `Import Coldcard`.
 Now select the Wasabi skeleton json-file from the MicroSD card, if this fails you can manually enter the file location in Wasabi Wallet window and load the file.
 :::
 
 :::details
 ### How can I generate a receiving address of my hardware wallet?
 
-In Wasabi Wallet you load your previously imported wallet (from Wasabi skeleton, or USB detection) and go to the ```Receive``` tab, here you enter a label for the incoming transaction and click ```Generate Receive Address```.
+In Wasabi Wallet you load your previously imported wallet (from Wasabi skeleton, or USB detection) and go to the `Receive` tab, here you enter a label for the incoming transaction and click `Generate Receive Address`.
 In the tab below the newly generated receive address can be viewed / copied.
 :::
 
 :::details
 ### How can I sign a transaction with a USB connected hardware wallet?
 
-To send a transaction you will need to connect your Hardware wallet and unlock the device (using PIN or password), in Wasabi Wallet you go to the ```Send``` tab where you can specify the address to send to, amount of bitcoin to send and which coins to use as input (only use green/private coins here!).
-After filling in all transaction details you click ```Send Transaction``` to sign it with the connected hardware wallet and broadcast on the network.
+To send a transaction you will need to connect your Hardware wallet and unlock the device (using PIN or password), in Wasabi Wallet you go to the `Send` tab where you can specify the address to send to, amount of bitcoin to send and which coins to use as input (only use green/private coins here!).
+After filling in all transaction details you click `Send Transaction` to sign it with the connected hardware wallet and broadcast on the network.
 :::
 
 :::details
 ### How can I build and export a transaction to ColdCard?
 
-In the Wallet Explorer on the right side of the GUI, select ```YourWallet>Advanced>Build Transaction```.
-This brings up the ```Build Transaction``` tab where you can specify the address, amount of bitcoin and coins to use.
-Then by clicking ```Build Transaction``` a new tab will open containing the raw transaction data, here you click ```Export Binary PSBT``` to save the partially signed bitcoin transaction (PSBT) to a file.
+In the Wallet Explorer on the right side of the GUI, select `YourWallet>Advanced>Build Transaction`.
+This brings up the `Build Transaction` tab where you can specify the address, amount of bitcoin and coins to use.
+Then by clicking `Build Transaction` a new tab will open containing the raw transaction data, here you click `Export Binary PSBT` to save the partially signed bitcoin transaction (PSBT) to a file.
 This file should be moved to the MicroSD card that you can then insert in the ColdCard for manual verification and signing.
 :::
 
 :::details
 ### How can I sign a transaction on the ColdCard?
 
-On the ColdCard (Mk2, firmware 2.1.1 and up) you enter the PIN code to unlock the hardware wallet and press ```>Ready To Sign``` with the MicroSD card containing the previously generated transaction or PSBT-file.
+On the ColdCard (Mk2, firmware 2.1.1 and up) you enter the PIN code to unlock the hardware wallet and press `>Ready To Sign` with the MicroSD card containing the previously generated transaction or PSBT-file.
 Verify the address and amount and the ColdCard will then create a signed.psbt and final.txn file on the MicroSD card.
 The finalized transaction (xxx-final.txn) can now be broadcast by Wasabi Wallet or even a radio or satellite dish if someone is listening!
 :::
@@ -993,9 +993,9 @@ The finalized transaction (xxx-final.txn) can now be broadcast by Wasabi Wallet 
 :::details
 ### How can I import and broadcast a final transaction from ColdCard?
 
-In the Wallet Explorer you go to ```YourWallet>Advanced>Broadcast Transaction``` and click ```Import Transaction```, now you can select the previously finalized (and signed) transaction file from the MicroSD card.
+In the Wallet Explorer you go to `YourWallet>Advanced>Broadcast Transaction` and click `Import Transaction`, now you can select the previously finalized (and signed) transaction file from the MicroSD card.
 If this fails you can manually type the path to this file in Wasabi Wallet to load the transaction.
-Now click ```Broadcast Transaction``` to send it off over Tor to a random Bitcoin node so it can flood over to the miners for confirmation in a block.
+Now click `Broadcast Transaction` to send it off over Tor to a random Bitcoin node so it can flood over to the miners for confirmation in a block.
 :::
 
 :::details
@@ -1049,7 +1049,7 @@ The server will still send you [BIP 158 block filters](https://github.com/bitcoi
 One attack vector could be that Wasabi lies to you and gives you wrong filters that exclude your transaction, thus you would see in the wallet less coins than you actually control. [BIP 157 solves this](https://github.com/bitcoin/bips/blob/master/bip-0157.mediawiki).
 
 When your full node is on the same hardware [computer, laptop] as your Wasabi Wallet, it will automatically recognize it and pull blocks from there.
-If your node is on a remote device [raspberry pi, nodl, server], then you can specify your local IP in the Settings tab, or in line 11 of the config file.
+If your node is on a remote device [raspberry pi, nodl, server], then you can specify your local IP in the `Settings` tab, or in line 11 of the config file.
 
 @[youtube](gWo2RAkIVrE)
 :::
@@ -1066,7 +1066,7 @@ In the second case, if you happen to broadcast a transaction of yours to a full 
 :::details
 ### How can I change the anonset target?
 
-In the Settings tab at the bottom you can change the three `PrivacyLevelX` values of the desired anon set of the yellow, green, and checkmark shield button in the GUI.
+In the `Settings` tab at the bottom you can change the three `PrivacyLevelX` values of the desired anon set of the yellow, green, and checkmark shield button in the GUI.
 The `MixUntilAnonymitySet` is the last selected value from previous use.
 
 Alternatively, open the config file from the wallet GUI, go to `File`>`Open`>`Config File` and in the last 4 lines you see:
@@ -1169,7 +1169,7 @@ This change can still reveal premix history which is another CoinJoin, therefore
 So, it might be ok to send this second change output to some place, or even consolidate it, because it still has anonset.
 
 When you consolidate several small change coins in a regular transaction, then every outside observer knows that they belong to the same cluster.
-However, you can consolidate within a CoinJoin by simply selecting all these coins in the CoinJoin tab.
+However, you can consolidate within a CoinJoin by simply selecting all these coins in the `CoinJoin` tab.
 Because the Wasabi CoinJoin transaction shuffles inputs, for an outside observer it is not clear which inputs belong to the same Alice.
 However, the coordinator gets the input proof of **ALL** the coins that Alice has provided during the input registration phase.
 Thus the coordinator knows that this is a consolidation transaction.
