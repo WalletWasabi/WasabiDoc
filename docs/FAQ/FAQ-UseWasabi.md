@@ -99,7 +99,7 @@ NO!!! Without knowledge of your password, even when you have the wallet file and
 :::
 
 When creating a new wallet, after labeling it properly, the next step is to select a long and random password.
-This is used to encrypt the private key on your computer, which has an insecure operating system and is connected to the internet.
+This is used to encrypt the private key on your computer, which has an insecure operating system and is connected to the Internet.
 Every time you want to spend your coins from Wasabi, you MUST provide this password.
 Also, the same password is used to encrypt the mnemonic recovery words that you must backup in the next step of wallet creation.
 So even if you have these words securely engraved in metal, without the password, you cannot restore the backup of your wallet.
@@ -324,18 +324,18 @@ No.
 
 Multi signature scripts define that there need to be m-of-n signatures provided in order to spend this UTXO.
 For example in a 2-of-3, Alice alone cannot spend the sats, she needs the collaboration of either Bob or Charlie.
-In the current way of implementation, a legacy and SegWit v0 multisig address is clearly disdinguishable, there are three public keys and two signatures, and not one single public key and signature.
+In current implementations, a legacy and SegWit v0 multisig address is clearly distinguishable, there are three public keys and two signatures, and not one single public key and signature.
 This means that your anonymity set, the crowd you hide in, gets a lot smaller.
-If some one knows that you use a multisig, then they can narrow down their search for your coins.
-Thus, multisignatures decrease your privacy, and Wasabi is not implementing tools that degrade your privacy.
+If some one knows that you use a multisig wallet, then they can narrow down their search for your coins.
+Thus, use of multisig decreases your privacy, and Wasabi is not implementing tools that degrade your privacy.
 
 Yet multisig is a popular feature, and many Wasabikas do request it for extra security, willing to trade-off some privacy.
 [Electrum Wallet](https://electrum.org) is a fantastic wallet with many features, but only private if you connect to your own Electrum server full node.
-Electrum can be used to create different types of m-of-n multisig scripts, including with your hardware wallet.
+Electrum can be used to create different types of m-of-n multisig scripts, including the use of hardware wallets.
 
-Anyway, since Wasabi is using the Hardware Wallet Interface with partially signed Bitcoin transactions, the implementation might come in #twoweeks, check the [ToDo list](/building-wasabi/ToDo.md).
+Anyway, since Wasabi is using the Hardware Wallet Interface with Partially Signed Bitcoin Transactions (PSBT), the implementation might come in #twoweeks, check the [ToDo list](/building-wasabi/ToDo.md).
 Schnorr key and signature aggregation with MuSig increases the privacy, since only one public key, not n, are committed on the timechain.
-So when Schnorr is activated in the Bitcoin consensus, in #twoweeks, there are no privacy concerns standing in the way of Wasabi multisig!
+So when Schnorr is activated in the Bitcoin consensus layer, in #twoweeks, there are no privacy concerns standing in the way of Wasabi multisig!
 :::
 
 ## Send
@@ -366,8 +366,8 @@ It's just a number that shows how much value is being transferred, and the numbe
 The 9000 sats you spend on stickers are equal to the 9000 sats you spend on coffee.
 Just like 1 gram of gold atoms are equal to any other 1 gram of gold atoms.
 
-However, the unspent transaction outputs, the coins that hold the satoshi, they are not fungible.
-Every UTXO is a unique snowflake that has it's own transaction history, as well as an independent spending condition.
+However, the unspent transaction outputs, the "coins" that hold the satoshi themselves are not fungible.
+Every UTXO is a unique snowflake that has its own transaction history, as well as an independent spending condition.
 The coin worth 2 bitcoin and locked by Alice's public key is not the same as the UTXO worth 5 bitcoin locked by the 2-of-3 multi signature of Bob, Charlie and David.
 So when sending bitcoin, it's important to consider which actual outputs are being sent in the transaction.
 
@@ -381,7 +381,7 @@ Alice can protect herself against this by using a CoinJoin UTXO, because now Bob
 
 In the `Send` tab, there is a text box for the `Address` right under the coin list.
 If you have an address in the clipboard, then it is automatically pasted when you click on the box.
-You can also type in the bech32 address manually, there is a checksum to make help you find typos.
+You can also type in the Bech32 address manually, there is a checksum to help you identify typos.
 Be careful and double check the address, there is no way to revert this transaction and change the destination.
 So make sure that the coins get into the right hands.
 :::
@@ -445,7 +445,7 @@ This reduces the risk of a passive bystander being able to link two transactions
 ::::details
 ### What fee should I select?
 
-Wasabi uses the `[smartfee](https://bitcointechtalk.com/an-introduction-to-bitcoin-core-fee-estimation-27920880ad0)` estimation algorithm provided by bitcoind.
+Wasabi uses the [smartfee](https://bitcointechtalk.com/an-introduction-to-bitcoin-core-fee-estimation-27920880ad0) estimation algorithm provided by bitcoind.
 This integrates both data from recent blocks, as well as the local mempool to estimate the current and future demand for blockspace.
 The lower the fee is, the longer the estimated wait; and the higher the fee, the faster the confirmation will come.
 There are several different confidence levels, each of them gives an educated guess how soon the transaction will confirm.
@@ -515,7 +515,7 @@ Wasabi will implement the [Dandelion](https://github.com/gfanti/bips/blob/master
 Clusters are a property of a Bitcoin wallet with strong coin-control and good labeling.
 When you use Wasabi, you must label every coin that you receive.
 The reason why this is important, is that your "wallet" is really just a collection of coins (similar to a physical wallet, not to a bank account).
-When you receive coins from somewhere to a labelled address, Wasabi will store the label locally on your device, for example:
+When you receive coins from somewhere to a labeled address, Wasabi will store the label locally on your device, for example:
 
 `----> 0.65 BTC (From my Boss Bob)`
 
@@ -726,7 +726,7 @@ The input registration phase ends when either, the number of registered inputs e
 
 @[youtube](v1fIjFR6e5Q)
 
-[missing: explanation of uniqueld]
+[missing: explanation of unique ID]
 :::
 
 :::details
@@ -740,7 +740,7 @@ The connection confirmation phase ends when all Alice's have provided their inpu
 
 @[youtube](hhkL0QvIaGY)
 
-[missing: explanation of uniqueld]
+[missing: explanation of unique ID]
 :::
 
 :::details
@@ -891,7 +891,7 @@ You also get information about the current mempool for fee estimation as well as
 ### How long does it take to mix my coins?
 
 It depends on many things, the longest period is the wait for all peers to register their coins.
-First of all from your desired anonimity set, every round has a goal of 100 anonymity set.
+First of all from your desired anonymity set, every round has a goal of 100 anonymity set.
 Wasabi is developed in a way that there's a round at least once every two hours.
 If the 100 peers registered earlier, then there can be many rounds per hour.
 When all peers are registered, then the signing phase is done within a couple of seconds.
@@ -949,7 +949,7 @@ Now select the Wasabi skeleton json-file from the MicroSD card, if this fails yo
 ### How can I generate a receiving address of my hardware wallet?
 
 In Wasabi Wallet you load your previously imported wallet (from Wasabi skeleton, or USB detection) and go to the ```Receive``` tab, here you enter a label for the incoming transaction and click ```Generate Receive Address```.
-In the tab below the newly generated receive address can be viewd/copied.
+In the tab below the newly generated receive address can be viewed / copied.
 :::
 
 :::details
@@ -973,7 +973,7 @@ This file should be moved to the MicroSD card that you can then insert in the Co
 
 On the ColdCard (Mk2, firmware 2.1.1 and up) you enter the PIN code to unlock the hardware wallet and press ```>Ready To Sign``` with the MicroSD card containing the previously generated transaction or PSBT-file.
 Verify the address and amount and the ColdCard will then create a signed.psbt and final.txn file on the MicroSD card.
-The finalized transaction (xxx-final.txn) can now be broadcasted by Wasabi Wallet or even a radio or satelite dish if someone is listening!
+The finalized transaction (xxx-final.txn) can now be broadcast by Wasabi Wallet or even a radio or satellite dish if someone is listening!
 :::
 
 :::details
