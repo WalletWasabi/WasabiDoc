@@ -181,7 +181,7 @@ On other Linux do
 
 And on Mac first unzip with
 <br />
-`7z x Wasabi-${currentVersion}.dmg -oWasabiOsx`.
+`7z x Wasabi-${currentVersion}.dmg -o WasabiOsx`.
 <br />
 and verify with
 <br />
