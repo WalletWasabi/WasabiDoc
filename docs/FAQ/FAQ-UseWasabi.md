@@ -558,11 +558,12 @@ The only difference is that `Build Transaction` does not propagate the transacti
 It works differently for watch-only and hardware wallets than normal wallets.
 
 In summary:
-| hot wallet   | watch-only wallet     | hardware wallet       |                       |
-|--------------|-----------------------|-----------------------|-----------------------|
-| build tx     | send tab, buildtx tab | send tab, buildtx tab | send tab, buildtx tab |
-| sign tx      | send tab, buildtx tab |                       | send tab              |
-| broadcast tx | send tab              |                       |                       |
+
+.|hot wallet|watch-only wallet|hardware wallet
+:---:|:---|:---|:---
+build tx|send tab, buildtx tab|send tab, buildtx tab|send tab, buildtx tab
+sign tx|send tab, buildtx tab||send tab
+broadcast tx|send tab||send tab
 :::
 
 ## CoinJoin
