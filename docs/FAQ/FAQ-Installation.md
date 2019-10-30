@@ -154,7 +154,7 @@ Yes, just follow the [Wasabi Setup on Tails](/using-wasabi/WasabiSetupTails.md) 
 
 A new version of Wasabi is released when ready, roughly once every #twoweeks.
 Yet in the meantime there are many commits to the latest master branch, not just bug fixes, but also new features and stability improvements.
-If you cannot wait until the next release, and you want to experience the most cutting-edge version of Wasabi, then you can [build the source code](/using-wasabi/BuildSourc.md).
+If you cannot wait until the next release, and you want to experience the most cutting-edge version of Wasabi, then you can [build the source code](/using-wasabi/BuildSource.md).
 
 The only two required tools are [Git](https://git-scm.com/downloads) and [.NET Core 2.2 SDK](https://www.microsoft.com/net/download) for "Building Apps".
 You can download every line in the code by `git clone https://github.com/zkSNACKs/WalletWasabi.git`, this will create a new directory called `WalletWasabi`.
