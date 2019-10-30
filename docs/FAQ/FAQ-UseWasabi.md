@@ -564,6 +564,7 @@ In summary:
 build tx|send tab, buildtx tab|send tab, buildtx tab|send tab, buildtx tab
 sign tx|send tab, buildtx tab||send tab
 broadcast tx|send tab||send tab
+
 :::
 
 ## CoinJoin
