@@ -1201,6 +1201,7 @@ Use Unequal Input Mixing and gain fungibility for UTXOs of 0.1, 0.2, 0.4, 0.8, 1
 
 :::details
 ### What does spent coin status mean?
+
 The `spent` coin status is a symptom of corrupted wallet state.
 Currently this is the largest known bug in Wasabi Wallet.
 It currently affects about 1-5% of users.
