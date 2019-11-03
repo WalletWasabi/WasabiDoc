@@ -129,7 +129,7 @@ It’s part of BIP39.
 :::details
 ### I forgot my lockscreen PIN, what should I do?
 
-Yes, as described in the settings, you can just delete it.
+As described in the settings, you can just delete it.
 Open the `UiConfig.json` and make sure about these entries:
 
 ```
