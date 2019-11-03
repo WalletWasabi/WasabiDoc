@@ -126,6 +126,17 @@ After the 12 or 24 words, enter the passphrase as the 13th or 25th word.
 It’s part of BIP39.
 :::
 
+:::details
+### I forgot my lockscreen PIN, can I recover the wallet?
+
+Yes, as described in the settings, you can just delete it.
+Open the `UiConfig.json` and make sure about these entries:
+
+```
+"LockScreenActive": false,
+"LockScreenPinHash": ""
+```
+:::
 
 ## Synchronization
 
