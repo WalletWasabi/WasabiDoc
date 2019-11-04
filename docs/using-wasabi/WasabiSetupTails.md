@@ -208,14 +208,23 @@ So, it does not matter which features are enabled when you create the persistent
 ### Create or update your backup
 
 1- Start on your current Tails and set up an administration password.
+
 2- Choose `Applications ▸ Accessories ▸ Files` to open the Files browser.
+
 3- Plug in your backup Tails USB stick.
+
 4- If your backup Tails is outdated, you can upgrade it by cloning your current Tails using Tails Installer.
+
 For detailed instructions, see how to manually upgrade from another Tails.
+
 5-A new encrypted volume appears in the sidebar of the Files browser.
+
 Click on it and enter the passphrase of your backup Tails to unlock it.
+
 6- Your backup now appears as the TailsData volume in the sidebar.
+
 7- Choose `Applications ▸ System Tools ▸ Root Terminal` to open a terminal with administration rights.
+
 8- Execute the following command to backup your persistent volume:
 `rsync -PaSHAX --del /live/persistence/TailsData_unlocked/ /media/amnesia/TailsData/`
 
