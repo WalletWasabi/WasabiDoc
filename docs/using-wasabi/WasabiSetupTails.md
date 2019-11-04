@@ -193,7 +193,8 @@ Make sure that this new USB stick is at least as large as your current Tails USB
 
 3- Shutdown and unplug your current Tails USB stick.
 
-4- Restart on your backup Tails and create a persistent volume on it. For detailed instructions, see how to [create & configure the persistent volume](https://tails.boum.org/doc/first_steps/persistence/configure/index.en.html).
+4- Restart on your backup Tails and create a persistent volume on it.
+For detailed instructions, see how to [create & configure the persistent volume](https://tails.boum.org/doc/first_steps/persistence/configure/index.en.html).
 
 :::tip
 We recommend using the same passphrase as your current Tails so that the passphrase is easier to remember.
@@ -214,11 +215,9 @@ So, it does not matter which features are enabled when you create the persistent
 3- Plug in your backup Tails USB stick.
 
 4- If your backup Tails is outdated, you can upgrade it by cloning your current Tails using Tails Installer.
-
 For detailed instructions, see how to manually upgrade from another Tails.
 
 5-A new encrypted volume appears in the sidebar of the Files browser.
-
 Click on it and enter the passphrase of your backup Tails to unlock it.
 
 6- Your backup now appears as the TailsData volume in the sidebar.
@@ -238,4 +237,4 @@ total size is 32.30M  speedup is 1.00
 Each time you update your backup, only the files that have changed are copied.
 :::
 
-You can now eject the TailsData volume in the Files browser and unplug your backup Tails USB stick.
+You can now eject the `TailsData` volume in the Files browser and unplug your backup Tails USB stick.
