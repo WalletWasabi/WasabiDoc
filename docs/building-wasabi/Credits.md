@@ -17,3 +17,4 @@ Here are some credits, thanks and sources (in casual order):
 - [Bitcoin.org](https://bitcoin.org/en/)
 - [Bitcoin GitHub repository](https://github.com/bitcoin/)
 - [CryptoSeb, Cryptopaper](https://github.com/cryptoseb/CryptoPaper)
+- [Tails](https://tails.boum.org/)
