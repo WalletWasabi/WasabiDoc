@@ -177,3 +177,56 @@ done
 
 wassabee </dev/null &>/dev/null &
 ```
+
+## Backup your persistent volume
+
+### Create a new Tails to store your backup
+
+In these instructions, we recommend you to create another Tails to store your backup.
+This way, if your Tails is lost or damaged, you will be able to replace it immediately with your backup Tails.
+
+1- Install Tails on a new USB stick on which you want to create your backup Tails.
+For detailed instructions, see how to [install Tails from another Tails](https://tails.boum.org/install/clone/index.en.html#install-tails).
+Make sure that this new USB stick is at least as large as your current Tails USB stick.
+
+2- We recommend making your backup Tails USB stick look different than your current Tails USB stick to avoid using your backup Tails by mistake.
+
+3- Shutdown and unplug your current Tails USB stick.
+
+4- Restart on your backup Tails and create a persistent volume on it. For detailed instructions, see how to [create & configure the persistent volume](https://tails.boum.org/doc/first_steps/persistence/configure/index.en.html).
+
+:::tip
+We recommend using the same passphrase as your current Tails so that the passphrase is easier to remember.
+:::
+
+5- When the persistent volume configuration shows a list of the possible persistence features, click Save and exit.
+The backup process described below overrides the configuration of the persistent volume.
+So, it does not matter which features are enabled when you create the persistent volume.
+
+6- Shutdown and unplug your backup Tails USB stick.
+
+### Create or update your backup
+
+1- Start on your current Tails and set up an administration password.
+2- Choose `Applications ▸ Accessories ▸ Files` to open the Files browser.
+3- Plug in your backup Tails USB stick.
+4- If your backup Tails is outdated, you can upgrade it by cloning your current Tails using Tails Installer.
+For detailed instructions, see how to manually upgrade from another Tails.
+5-A new encrypted volume appears in the sidebar of the Files browser.
+Click on it and enter the passphrase of your backup Tails to unlock it.
+6- Your backup now appears as the TailsData volume in the sidebar.
+7- Choose `Applications ▸ System Tools ▸ Root Terminal` to open a terminal with administration rights.
+8- Execute the following command to backup your persistent volume:
+`rsync -PaSHAX --del /live/persistence/TailsData_unlocked/ /media/amnesia/TailsData/`
+
+When the command finishes, it displays a summary of the data that was copied. For example:
+```
+sent 32.32M bytes  received 1.69K bytes  21.55M bytes/sec
+total size is 32.30M  speedup is 1.00
+```
+
+:::warning
+Each time you update your backup, only the files that have changed are copied.
+:::
+
+You can now eject the TailsData volume in the Files browser and unplug your backup Tails USB stick.
