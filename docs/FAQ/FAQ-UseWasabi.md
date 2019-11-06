@@ -862,7 +862,7 @@ Here is how Wasabi handles different scenarios:
 :::
 
 :::details
-### What if there's a power outage during CoinJoin? Do I loose my coins?
+### What if there's a power outage during CoinJoin? Do I lose my coins?
 
 No you don't.
 CoinJoins are atomic, they happen or they don't.
