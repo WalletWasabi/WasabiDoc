@@ -94,7 +94,7 @@ It is crucial to understand that Wasabi is not a fool-proof solution if you negl
 All Wasabi network traffic goes via Tor by default - no need to set up Tor yourself.
 If you do already have Tor, and it is running, then Wasabi will try to use that first.
 
-You can turn off Tor in the Settings.
+You can turn off Tor in the `Settings`.
 Note that in this case you are still private, except when you CoinJoin and when you broadcast a transaction.
 In the first case, the coordinator would know the links between your inputs and outputs based on your IP address.
 In the second case, if you happen to broadcast a transaction of yours to a full node that is spying on you, it will know the link between your transaction and your IP address.
