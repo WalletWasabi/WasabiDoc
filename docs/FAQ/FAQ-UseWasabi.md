@@ -494,7 +494,7 @@ You can toggle the display of the fee between `sat/vByte` & `percentage of trans
 Unlike other Bitcoin wallets, the user cannot spend from Wasabi without selecting coins, since ["Coin Control Is Must Learn If You Care About Your Privacy In Bitcoin"](https://medium.com/@nopara73/coin-control-is-must-learn-if-you-care-about-your-privacy-in-bitcoin-33b9a5f224a2), at least for today.
 The label field of the `Send` tab is also compulsory.
 The received coins will appear in your `Send` tab and you'll have to manually select which coins you'll want to spend from.
-By clicking on the Max button, one can spend all selected coins.
+By clicking on the `Max` button, one can spend all selected coins.
 Spending whole coins is beneficial to privacy.
 ![](/Send.png)
 :::
@@ -946,7 +946,7 @@ All of them!
 This is thanks to awesome Hardware Wallet Interface of Bitcoin core.
 
 However, not all of the many hardware wallets have been tested and reviewed by the developers.
-Everything seems to work fine with the ColdCard, Trezor, Ledger and KeepKey.
+Everything seems to work fine with the ColdCard, BitBox, Trezor, Ledger and KeepKey.
 ::::
 
 :::details

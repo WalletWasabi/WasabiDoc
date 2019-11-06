@@ -92,7 +92,7 @@ Each Bitcoin transaction contains at least one input (where the Bitcoin are from
 This means that once a single address is known, there is a trail to follow the Bitcoin.
 
 Another characteristic of Bitcoin transactions is that they always need to match the previous transaction.
-If you previously received 1 bitcoin, but you only want to spend 0.4 Bitcoin, you will first need to make a transaction where 1 bitcoin will leave your account.
+If you previously received 1 bitcoin, but you only want to spend 0.4 bitcoin, you will first need to make a transaction where 1 bitcoin will leave your account.
 0.4 bitcoin will go as payment, then 0.6 bitcoin will return to you as change.
 Your Bitcoin wallet will handle this process automatically, but it is important to understand the principle in order to use it anonymously.
 
