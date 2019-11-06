@@ -67,7 +67,7 @@ Do this in order to ensure your contribution is:
 
 - something that the relevant maintainer(s) would be likely to merge;
 - subjected to as much feedback as possible while still an idea and thus cheap to change or abort;
-- something that might be considered in the [contribution game](ContributionGame.md) and bouty programs.
+- something that might be considered in the [contribution game](ContributionGame.md) and bounty programs.
 
 Remember: _every contributor_ is free to work on what they want, including maintainers who may or may not want to review and merge your pull request if they don't have any prior context for it, or reason to believe it's worth spending their time on.
 
