@@ -79,9 +79,9 @@ This adds friction and transactional costs and makes Bitcoin less valuable as a 
 There appears to be no recourse for someone affected by false positive identification of exchange-disapproved transaction history.
 This could result in them wrongly having their coins confiscated.
 
-### Jurisidiction
+### Jurisdiction
 
-Transaction surveillance company market themselves as a tool for finding "bad guys", but its unclear which jurisidiction that applies to.
+Transaction surveillance company market themselves as a tool for finding "bad guys", but its unclear which jurisdiction that applies to.
 For example, could one day the government of China pressure those companies into marking certain coins as "bad" because they belong to users who disagree with Chinese government policy?
 
 ### Incentivized to oppose bitcoin updates
