@@ -570,11 +570,11 @@ It works differently for watch-only and hardware wallets than normal wallets.
 
 In summary:
 
-.|hot wallet|watch-only wallet|hardware wallet
+.|Hot wallet|Watch-only wallet|Hardware wallet
 :---:|:---|:---|:---
-build tx|send tab, buildtx tab|send tab, buildtx tab|send tab, buildtx tab
-sign tx|send tab, buildtx tab||send tab
-broadcast tx|send tab||send tab
+Build tx|Send tab, Build tx tab|Send tab, Build tx tab|Send tab, Build tx tab
+Sign tx|Send tab, Build tx tab||Send tab
+Broadcast tx|Send tab||Send tab
 
 :::
 
