@@ -134,7 +134,7 @@ You can save multiple copies of `.walletwasabi` in your persistent, each with di
 This is only a minor example, tune it to your own needs.
 
 :::danger
-Remember to do backups!
+Remember to backup either your files or your [persistent storage](https://tails.boum.org/doc/first_steps/persistence/copy/index.en.html)!
 :::
 
 ## Script to automatically install Wasabi on Tails
@@ -177,3 +177,4 @@ done
 
 wassabee </dev/null &>/dev/null &
 ```
+
