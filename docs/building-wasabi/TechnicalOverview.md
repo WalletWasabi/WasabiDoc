@@ -66,9 +66,9 @@ To better understand the architecture of the wallet it is helpful to go through 
 
 The "Tor" label shows the status of the Tor daemon.
 Tor is an anonymity network which Wasabi ships with by default and runs in the background.
-The user can also opt to use their own Tor instance. All Internet traffic goes through Tor and by deafault all this traffic stays inside the onion network.
+The user can also opt to use their own Tor instance. All Internet traffic goes through Tor and by default all this traffic stays inside the onion network.
 Exit nodes are only involved in fallback scenarios.
-For example if the Tor hidden service of the backend becomes unavaiable for the user, the wallet falls back communicating with the backend's clearnet endpoint, still over Tor.
+For example if the Tor hidden service of the backend becomes unavailable for the user, the wallet falls back communicating with the backend's clearnet endpoint, still over Tor.
 Wasabi also frequently utilizes multiple Tor streams where applicable.
 For example, registration of CoinJoin inputs and outputs is done through different Tor streams to avoid linking.
 
@@ -107,7 +107,7 @@ After Wasabi receives the filters from the backend, it can download the required
 Wasabi then stores the block in its entirety on disk so it won't fetch it again.
 Storing blocks on the disk may take up too much space when the wallet is used extensively.
 There is room for improvement there as well.
-Wasabi only connects to onion peers, which faciliates end to end encryption, and it connects to them on a different Tor streams.
+Wasabi only connects to onion peers, which facilitates end to end encryption, and it connects to them on a different Tor streams.
 After every block download Wasabi disconnects the peer.
 
 Furthermore, if you have a full node running in the background Wasabi won't download blocks from peers, but rather will use the full node to fetch the block from instead.
@@ -341,7 +341,7 @@ This however may lead to enterprise adoption, which is good for liquidity, but t
 May become more likely.
 For example an exchange could decide to add CoinJoins and if they acquire 50% of liquidity in Wasabi, this way many of the wallet assumptions about anonymity sets would become less accurate. [https://github.com/zkSNACKs/Meta/issues/12](https://github.com/zkSNACKs/Meta/issues/12)
 Wasabi already has a public web API.
-However developers should not build wallets on top of it, since breakin changes must be expected.
+However developers should not build wallets on top of it, since breaking changes must be expected.
 Misc things like Twitter bots are fine: [http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion/swagger/index.html](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion/swagger/index.html) ([https://wasabiwallet.io/swagger/index.html](https://wasabiwallet.io/swagger/index.html))
 
 ### .NET Ecosystem

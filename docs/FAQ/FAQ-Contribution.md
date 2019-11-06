@@ -75,7 +75,7 @@ Join our [Slack](https://join.slack.com/t/tumblebit/shared_invite/enQtNjQ1MTQ2Nz
 ### Is there a bounty program?
 
 Yes!
-The beauty of Wasabi is that it's not just a very awesome wallet by default, but it has the additional opt-in CoinJoin serivce.
+The beauty of Wasabi is that it's not just a very awesome wallet by default, but it has the additional opt-in CoinJoin service.
 This is provided by [zkSnacks Ltd.](https://zksnacks.com), and in exchange for this additional service the user pays a coordinator fee.
 In return, zkSnacks is supporting several developers to dedicate their full time to contribute to this open source project.
 There are also projects like the [contribution game](/building-wasabi/ContributionGame.md) where a bounty is paid out to any contributor worthy the praise.
