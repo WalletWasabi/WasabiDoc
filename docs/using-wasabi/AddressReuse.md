@@ -72,7 +72,7 @@ Furthermore if I would want to Sybil attack Wasabi I would do it in a way to try
 There’s nothing to improve.
 Because the CoinJoin output is blinded in the first steps of the ceremony, it cannot be noticed before the output registration phase.
 We could refuse the registration of these actors, but then they’d change their addresses, then we’d have to pick them out again, then they’d change their addresses again and so on…
-This would also decrease the denial of service protectiosn currently implemented.
+This would also decrease the denial of service protections currently implemented.
 
 ## 5. Mixing With Same Wallet File
 
