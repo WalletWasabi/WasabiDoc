@@ -32,4 +32,5 @@ Further tutorials about the different parts of the wallet, for newbies and power
 - [How you can be de-anonymized using Bitcoin](/using-wasabi/Deanonimization.md)
 - [Pay to EndPoint](/using-wasabi/PayToEndPoint.md)
 #### Restoring Wasabi
+- [Wallet Recovery](/using-wasabi/WalletRecovery.md)
 - [Restoring Wasabi Wallet to Electrum](/using-wasabi/RestoreElectrum.md)
