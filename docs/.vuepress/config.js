@@ -163,6 +163,7 @@ module.exports = {
           collapsable: false,
           sidebarDepth: 2,
           children: [
+            "/using-wasabi/WalletRecovery.md",
             "/using-wasabi/RestoreElectrum.md"
           ]
         }
