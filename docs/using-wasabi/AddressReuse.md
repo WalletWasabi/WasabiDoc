@@ -29,28 +29,28 @@ Many peers post one of their Bitcoin addresses on the internet, and then the sam
 It is very easy and convenient to have such a donation address, and thus many peers do this.
 
 To register such a donation UTXO for coin join is not only legitimate, but desired. 
-If you accept donations to an address, you should be registering these UTXOs together to one coinjoin round. 
-Of course block explorers will note it as address reuse in the coinjoin, which is technically correct, but it misleads the observer, because he will think something is wrong. 
-You better consolidate your donations into one UTXO instead of many, and you might as well do it in a coinjoin.
+If you accept donations to an address, you should be registering these UTXOs together to one CoinJoin round. 
+Of course block explorers will note it as address reuse in the CoinJoin, which is technically correct, but it misleads the observer, because he will think something is wrong. 
+You better consolidate your donations into one UTXO instead of many, and you might as well do it in a CoinJoin.
 
 **How to improve?** 
-To encourage address reuse here, when we are selecting coins to coinjoin, we should intentionally select coins together those are on the same address.
+To encourage address reuse here, when we are selecting coins to CoinJoin, we should intentionally select coins together those are on the same address.
 
 ## 2. Coordinator Address
 
-The coordinator address participates in every coinjoin, thus it’s address reuse.
-The idea is to be transparent about what a Wasabi coinjoin is and what isn’t, as well as to show the total fee earnings of Wasabi.
+The coordinator address participates in every CoinJoin, thus it’s address reuse.
+The idea is to be transparent about what a Wasabi CoinJoin is and what isn’t, as well as to show the total fee earnings of Wasabi.
 Otherwise only blockchain analysis would be able to figure this information out, and it’d be able to do this without a mistake. 
 This way anyone can.
 
 **How to improve?**
 The idea of coordinator address reuse is transparency. 
-We could give up transparency here to confuse less sophisticated observers by creating a new coordinator address for every CJ. 
+We could give up transparency here to confuse less sophisticated observers by creating a new coordinator address for every CoinJoin. 
 It’s a different tradeoff, not an improvement.
 
 ## 3. Dusting
 
-A while ago someone dusted many Wasabi coinjoin UTXOs, this is also called the [forced address reuse attack](https://en.bitcoin.it/Privacy#Forced_address_reuse).
+A while ago someone dusted many Wasabi CoinJoin UTXOs, this is also called the [forced address reuse attack](https://en.bitcoin.it/Privacy#Forced_address_reuse).
 Here the attacker sends a small amount of bitcoin to an already existing address of a old coin.
 The hope is that this dust coin is consolidated with another coin, thus linking the two in a cluster.
 This is also address reuse, there’s nothing to do about it, Bitcoin is a push-based system.
@@ -61,7 +61,7 @@ While this mitigates the potential privacy implications, this doesn’t make the
 
 ## 4. Intentional
 
-Since Wasabi is libre and open source, anyone can modify a fork of Wasabi to make sure the same two addresses are recycled in every coinjoin registration. 
+Since Wasabi is libre and open source, anyone can modify a fork of Wasabi to make sure the same two addresses are recycled in every CoinJoin registration. 
 This is someone intentionally deanonymizing himself, such a behavior might have quite dubious motives. 
 However there are numerous claims about this being some kind of Sybil attack, which makes no sense in multiple levels. 
 One bad actor participating in numerous mixes lowers our anonymity set, but only a bit. 
@@ -88,7 +88,7 @@ But for this we will have to build out multi-wallet monitoring and by extension 
 ## 6. Wallet State Issue
 
 Finally we arrived to the type of address reuse that was actually a known bug in Wasabi. 
-This was happening, because Wasabi sometimes lost unconfirmed transactions, so the wallet wasn’t aware of that an address was used, thus it registered it to a coinjoin.
+This was happening, because Wasabi sometimes lost unconfirmed transactions, so the wallet wasn’t aware of that an address was used, thus it registered it to a CoinJoin.
 The unconfirmed tx loss is thought to be eliminated since version 1.1.6, but of course this still happens for those who are using older software versions.
 Because only very few users report this bugs there’s no need for forcing everyone to update.
 Although rigorous testing by several contributors, we could not reproduce the bug in the v1.1.6 release.
