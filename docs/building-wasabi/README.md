@@ -22,6 +22,7 @@ And all the necessary information you need to quickly start with your invaluable
 - [Demo Guide](/building-wasabi/DemoGuide.md)
 - [Contribution Game](/building-wasabi/ContributionGame.md)
 - [Security Policy](/building-wasabi/Security.md)
+- [CodeChain](/building-wasabi/CodeChain.md)
 - [Code Coverage](/building-wasabi/CodeCoverage.md)
 - [Hardware Wallet Integration Testing](/building-wasabi/HardwareWalletTestingGuide.md)
 - [Developers debugging Guide](/building-wasabi/HowToDebug.md)
