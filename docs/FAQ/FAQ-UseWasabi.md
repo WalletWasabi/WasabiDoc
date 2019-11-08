@@ -1211,6 +1211,36 @@ Use Unequal Input Mixing and gain fungibility for UTXOs of 0.1, 0.2, 0.4, 0.8, 1
 ## Further Questions
 
 :::details
+### What does spent coin status mean?
+
+The `spent` coin status is a symptom of corrupted wallet state.
+Currently this is the largest known bug in Wasabi Wallet.
+It currently affects about 1-5% of users.
+This issue was introduced to Wasabi with the [v1.1.4 release](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v1.1.4) in April, 2019 by adding a wallet cache, that resulted in 12 times faster wallet load.
+It was [thought to be fixed](https://old.reddit.com/r/WasabiWallet/comments/c2hco8/announcement_spent_coin_and_lost_unconfirmed/) in June by adding an autocorrection mechanism, but some users are still reporting this issue, so it is not fixed.  
+
+The easy fix could be removing the wallet cache altogether, but that would make the wallet load painfully slow, which makes it a no-go.
+Because of this, Wasabi team is working on a comprehensive refactoring of wallet internals for a fairly long time now and they are slowly getting there to fix the issue without performance hit.
+Read more: [WIP1 - Wasabi Improvement Proposal Refactoring Internals](https://github.com/zkSNACKs/WalletWasabi/issues/2359).
+
+#### What can you do in the meantime?
+
+Change the network in the settings from mainnet to testnet and back to mainnet.
+This will result in rebuilding the wallet cache when you load your wallet on the mainnet.
+
+##### Step By Step
+
+1. Open the settings of Wasabi Wallet
+2. Change the `Bitcoin Network` field from `MainNet` to `TestNet`
+3. Shut down and open Wasabi
+4. Open the settings of Wasabi Wallet
+5. Change the `Bitcoin Network` field from `TestNet` to `MainNet`
+6. Shut down and open Wasabi
+
+Because Wasabi was loaded in the `TestNet` last time, it will think it does not have a wallet cache built for the `Main` network, so it will clear the cache and build it again.
+:::
+
+:::details
 ### What is Testnet?
 
 The testnet is an alternative Bitcoin blockchain, to be used for testing.
