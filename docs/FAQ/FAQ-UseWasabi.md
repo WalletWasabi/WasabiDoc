@@ -1226,7 +1226,7 @@ This will result in rebuilding the wallet cache when you load your wallet on the
 5. Change the `Bitcoin Network` field from `TestNet` to `MainNet`
 6. Shut down and open Wasabi
 
-Wasabi will think that the wallet was loaded in the `TestNet` last time, so it will think it does not have a wallet cache built for the `Main` network, so it will clear the cache and build it again.
+Because Wasabi was loaded in the `TestNet` last time, it will think it does not have a wallet cache built for the `Main` network, so it will clear the cache and build it again.
 :::
 
 :::details
