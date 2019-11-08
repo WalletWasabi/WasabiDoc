@@ -29,7 +29,7 @@ There are several problems with such an approach:
 The main attacks of such a signing and distribution process are:
 - Key compromise (attacker can produce valid signatures).
 - Developer coercion (wrench attack, blackmailing or bribing).
-- Regression (supression of updates).
+- Regression (suppression of updates).
 
 :::danger
 This is far from optimal.
