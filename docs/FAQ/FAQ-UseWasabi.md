@@ -1207,6 +1207,43 @@ Use Unequal Input Mixing and gain fungibility for UTXOs of 0.1, 0.2, 0.4, 0.8, 1
 @[youtube](3Ezru07J674)
 :::
 
+:::details
+### Which coins can I select for CoinJoins?
+You can select any coin, as long as the total sum reaches the mininum to register (usually ~0.1 BTC).
+You can't select coins that are spent or banned.
+Coins used to disrupt the CoinJoin process in previous rounds are temporarily banned, usually because your wallet disconnected during the signing phase.
+In this case, your UTXO is banned for about 24 hours or so.
+
+Unless you closed Wasabi after you registered the coin, it's probably a known issue of Tor.
+If Wasabi goes offline after input registration phase your registered coins will be banned for 24h from participating in another CoinJoin, to prevent DoS attacks.
+You can ready more about this topic [here]().
+
+:::
+
+:::details
+### Wasabi says that I'm banned from CoinJoin. Why do my coins occasionally get banned from participation?
+
+A CoinJoin consists of multiple users registering inputs (coins) and blinded outputs.
+Once the appropriate number of participants have registered, the actual transaction (the CoinJoin) is constructed by the coordinator, and given to all participants in the span of about 60 seconds.
+At this point, all registered participants must sign off on the CoinJoin, and if a single one of the participants fails to sign their input, the entire CoinJoin must be restarted.
+
+So this introduces a problem, or attack vector - a malicious user could purposefully register coins, only to wait for the signing phase and not sign.
+This would halt the entire CoinJoin process for all other participants and Wasabi would no longer work.
+
+So a simple solution looks like this - the coordinator could collect signatures from all inputs, and if one or more inputs refuses to sign, the coordinator could record that input and temporarily (or even permanently) ban that coin from participation.
+This is a nice solution, as it mitigates a single coin from ruining all CoinJoins, but it too comes with trade-offs.
+
+For example, most of the time, users fail to sign a CoinJoin for non-malicious reasons.
+Perhaps their TOR connection went down in precisely that moment, or perhaps their Wifi had a temporary flicker at the wrong time.
+Further, some users don't even realize that the signing phase is happening, and sometimes shut down their computer at exactly the wrong moment.
+All of these things hinder a successful CoinJoin for all other participants, but by pure accident.
+
+If you are one of the victims of this temporary banning then simply wait for the ban to expire and try again.
+The best thing you can do to avoid the issue is to have a strong internet connection and keep your computer online throughout the whole process.
+
+*NOTE*: Banning does not mean freezing.
+You can send banned coins to anyone you want, and the keys still belong entirely to you and not to anyone else.
+This is a temporary censorship on your coins in participation of the CoinJoin.
 
 ## Further Questions
 
@@ -1264,7 +1301,3 @@ Hardware Wallet
 - How can I type in the PIN of my Trezor One?
 - How can I manage the passphrase of my Trezor T?
 - Can I use the passphrase of my Trezor One?
-
-Coin Control Best Practices
-
-- Which coins can I select for CoinJoins?
