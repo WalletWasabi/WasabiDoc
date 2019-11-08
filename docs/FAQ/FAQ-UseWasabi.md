@@ -1030,6 +1030,16 @@ To create a new Ledger Wallet *offline* and make sure that your newly created wa
 After that, you can use the wallet in combination with Wasabi without having concerns about your privacy!
 :::
 
+:::details
+### After I CoinJoined my coins and reached green anonset, I sent them to my hardware wallet address. When i check my HW via Wasabi, the coins are now red. Why?
+
+Everything is working as expected.
+
+The anonymity set info (number) is tied to your wallet that you used to CoinJoin, if you send it to another Wasabi Wallet of yours (hardware wallet or normal wallet) the utxo (coin) will have an anonymity set 1 (red coin) because this wallet doesn't know that this coin was coinjoined.
+
+You should put a meaningful label when you generate a receive address in your hardware wallet, e.g. "coinjoined utxo with anonymity set 70" (something that reminds you that you got this utxo from your Wasabi Wallet and it was coinjoined).
+:::
+
 ## History
 
 :::details
