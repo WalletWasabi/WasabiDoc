@@ -201,7 +201,3 @@ Optionally you can add a `--keepalive` flag that will make sure your daemon will
 On Linux and OSX you can just add some parameters to the Wasabi executable and it'll act like a daemon, on Windows you have to use `wassabeed.exe` from Program Files.
 You may want to start with `--help`.
 :::
-
-## Further Questions
-
-- How do I install the Wasabi backend server?
