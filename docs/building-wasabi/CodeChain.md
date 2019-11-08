@@ -23,7 +23,7 @@ There are several problems with such an approach:
 - They are stored on a network server and thus easily stolen.
 - There is no method for key rotation.
 - Only one key signs the package, this is a single point of failure.
-- The verification is rather combersom, especially for commit signatures.
+- The verification is rather cumbersome, especially for commit signatures.
 - Users cannot verify which version of the package is the most recent one.
 
 The main attacks of such a signing and distribution process are:
@@ -38,7 +38,7 @@ We can and must do better.
 
 ### The Proposed Solution
 
-CodChain is about secure multi-party code reviews with threshold signatures and unmodifiable hash chains, which prevents any single developer from including a generic backdoor in the software.
+CodeChain is about secure multi-party code reviews with threshold signatures and unmodifiable hash chains, which prevents any single developer from including a generic backdoor in the software.
 A single source of truth mechanism is used to ensure that every user runs the same version of the software, which prevents targeted backdoors and the suppression of updates.
 It is a design for secure software distribution and development, and includes a verifiable build process.
 
