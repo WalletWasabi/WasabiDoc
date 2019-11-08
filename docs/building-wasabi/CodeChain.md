@@ -19,7 +19,7 @@ However, users do not verify the git commit signatures, and only a few verify th
 Packages are distributed on the Wasabi website, with no verification of what the most recent version is.
 
 There are several problems with such an approach:
-- The PGP keys can be very and this long validity time makes stolen keys disastrous.
+- The PGP keys can be very old and long validity time makes stolen keys disastrous.
 - They are stored on a network server and thus easily stolen.
 - There is no method for key rotation.
 - Only one key signs the package, this is a single point of failure.
