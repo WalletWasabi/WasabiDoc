@@ -36,3 +36,14 @@ This is far from optimal.
 We can and must do better.
 :::
 
+### The Proposed Solution
+
+CodChain is about secure multi-party code reviews with threshold signatures and unmodifiable hash chains, which prevents any single developer from including a generic backdoor in the software.
+A single source of truth mechanism is used to ensure that every user runs the same version of the software, which prevents targeted backdoors and the suppression of updates.
+It is a design for secure software distribution and development, and includes a verifiable build process.
+
+:::tip
+The user can verify that he is running the same version as all other users, and that the code is claimed to be reviewed by m-of-n developers.
+:::
+
+
