@@ -1,7 +1,7 @@
 ---
 {
   "title": "CodeChain",
-  "description": "A guide on how to use Code Chain to sign and distribute the Wasabi source and package. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
+  "description": "A guide on how to use CodeChain to sign and distribute the Wasabi source and package. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
 }
 ---
 
