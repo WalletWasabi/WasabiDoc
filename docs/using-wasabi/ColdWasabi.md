@@ -171,7 +171,7 @@ For hardware wallet related questions see: [FAQ-UseWasabi](/FAQ/FAQ-UseWasabi.md
 You are now eating Cold Wasabi!
 
 :::warning
-The anonymity set is tied to the wallet that you used to CoinJoin, if you send it to another Wasabi Wallet (in this case, the one tied to your hardware wallet), the utxo (coin) will have an anonymity set 1 (red) because this wallet doesn't know that this coin was coinjoined.
+The anonymity set is tied to the wallet that you used to CoinJoin, if you send a mixed coin to another Wasabi Wallet (in this case your hardware wallet), it will have an anonymity set 1 (red) because this wallet doesn't know that the coin was coinjoined.
 
 You should put a meaningful label when you generate a receive address in your hardware wallet, e.g. "coinjoined utxo with anonymity set 70" (something that reminds you that you got this utxo from your Wasabi Wallet and it was coinjoined).
 :::
