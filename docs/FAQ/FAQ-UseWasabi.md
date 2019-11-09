@@ -1235,7 +1235,7 @@ If you are one of the victims of this temporary banning then simply wait for the
 The best thing you can do to avoid the issue is to have a strong internet connection and keep your computer online throughout the whole process.
 
 *NOTE*: Banning does not mean freezing.
-You can send banned coins to anyone you want, and the keys still belong entirely to you and not to anyone else.
+You can send banned coins to anyone you want.
 This is a temporary ban on your coins in participation of the CoinJoin.
 
 ## Further Questions
