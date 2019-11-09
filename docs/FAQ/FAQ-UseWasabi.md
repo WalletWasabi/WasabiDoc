@@ -1210,13 +1210,9 @@ Use Unequal Input Mixing and gain fungibility for UTXOs of 0.1, 0.2, 0.4, 0.8, 1
 :::details
 ### Which coins can I select for CoinJoins?
 You can select any coin, as long as the total sum reaches the mininum to register (usually ~0.1 BTC).
-You can't select coins that are spent or banned.
-Coins used to disrupt the CoinJoin process in previous rounds are temporarily banned, usually because your wallet disconnected during the signing phase.
-In this case, your UTXO is banned for about 24 hours or so.
 
-Unless you closed Wasabi after you registered the coin, it's probably a known issue of Tor.
-If Wasabi goes offline after input registration phase your registered coins will be banned for 24h from participating in another CoinJoin, to prevent DoS attacks.
-You can read more about this topic [here](/FAQ/FAQ-UseWasabi.md/#wasabi-says-that-im-banned-from-coinjoin-why-do-my-coins-occasionally-get-banned-from-participation).
+You can't select coins that are spent or banned.
+Read more about this topic [here](/FAQ/FAQ-UseWasabi.md/#wasabi-says-that-im-banned-from-coinjoin-why-do-my-coins-occasionally-get-banned-from-participation).
 
 :::
 
