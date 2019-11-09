@@ -30,5 +30,5 @@ The gap limit is about how far Wasabi will check the HD wallet structure for add
 
 ## Backup Wallet File
 
-Wasabi Wallet creates a backup of your wallet file at `~/.walletwasabi/client/WalletBackup/`.
-If you have done a backup of this file, then you can copy it to `~/.walletwasabi/client/Wallets/`, and upon the next restart of Wasabi, it will show this wallet in the `Wallet Manager`, from where you can open it as usual.
+Wasabi Wallet creates a backup of your wallet file inside `WalletBackups` in your [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#Where-is-the-Wasabi-data-folder) .
+If you have done a backup of this file, then you can copy it to the `Wallets` folder, and upon the next restart of Wasabi, it will show this wallet in the `Wallet Manager`, from where you can open it as usual.
