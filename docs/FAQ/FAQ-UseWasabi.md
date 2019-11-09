@@ -1227,7 +1227,7 @@ So a simple solution looks like this - the coordinator could collect signatures 
 This is a nice solution, as it mitigates a single coin from ruining all CoinJoins, but it too comes with trade-offs.
 
 For example, most of the time, users fail to sign a CoinJoin for non-malicious reasons.
-Perhaps their TOR connection went down in precisely that moment, or perhaps their Wifi had a temporary flicker at the wrong time.
+Perhaps their TOR connection went down in precisely that moment, or perhaps their WiFi had a temporary flicker at the wrong time.
 Further, some users don't even realize that the signing phase is happening, and sometimes shut down their computer at exactly the wrong moment.
 All of these things hinder a successful CoinJoin for all other participants, but by pure accident.
 
