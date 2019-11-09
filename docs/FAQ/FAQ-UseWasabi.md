@@ -78,7 +78,7 @@ Please see [this great guide](https://github.com/6102bitcoin/FAQ/blob/master/see
 ::::
 
 ::::details
-### Where is the Wasabi data folder?
+### Where can I find the Wasabi data folder?
 
 * Windows: `/Users/{your username}/AppData/Roaming/WalletWasabi/client`
 * Linux: `/Home/.walletwasabi/client`
@@ -95,7 +95,7 @@ You can also easily reach it from inside Wasabi: `File > Open > Data Folder` :::
 
 Although you can backup your private keys with the mnemonic words and password, this is only a last resort recovery.
 If you want to also secure your address labels, the anonset and additional metadata, then you can do a digital backup.
-Simply copy the `WalletBackups` folder with the `wallet.json` files from your [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#Where-is-the-Wasabi-data-folder) onto suitable hardware, for example an encrypted USB stick.
+Simply copy the `WalletBackups` folder with the `wallet.json` files from your [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) onto suitable hardware, for example an encrypted USB stick.
 Note that this file has the encrypted private keys, meaning that you only need the password to spend the bitcoin.
 This also contains the unencrypted extended public keys and address labels, meaning that it completely links all the coins, both pre and post mix, with clear proof.
 
@@ -143,7 +143,7 @@ It’s part of BIP39.
 ### I forgot my lockscreen PIN, what should I do?
 
 As described in the settings, you can just delete it.
-Open the `UiConfig.json` file inside your [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#Where-is-the-Wasabi-data-folder) and set these entries as follows:
+Open the `UiConfig.json` file inside your [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) and set these entries as follows:
 
 ```
 "LockScreenActive": false,
@@ -274,7 +274,7 @@ E.g., Wasabi will not generate address `m/84'/0'/0'/0/21` with label: "address n
 
 To increase the number of freshly new generated addresses, you have to increase the `MinGapLimit` json property of your `wallet.json` file.
 
-* Go to `File/Open/Wallets Folder` or navigate into the `Wallets` folder inside your [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#Where-is-the-Wasabi-data-folder) and open your wallet file.
+* Go to `File/Open/Wallets Folder` or navigate into the `Wallets` folder inside your [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) and open your wallet file.
 * Close Wasabi Wallet.
 * Edit the `MinGapLimit` json property in the wallet file.
 :::
@@ -1062,7 +1062,7 @@ The check mark indicates that the transaction is confirmed in the longest proof-
 ### Can I export a list of transactions?
 
 There is currently no convenient way to export a list with transaction details.
-However, you can see the `wallet.json` files inside the `WalletBackups` folder (you can find it in your [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#Where-is-the-Wasabi-data-folder)) which contains all the public keys, labels and anonset.
+However, you can see the `wallet.json` files inside the `WalletBackups` folder (you can find it in your [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder)) which contains all the public keys, labels and anonset.
 :::
 
 ## Settings
@@ -1131,7 +1131,7 @@ In the top left menu `File > Open` you can see there are several logs available.
 
 ![](/MenuFileOpen.png)
 
-Alternatively, you can find the logs inside your [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#Where-is-the-Wasabi-data-folder) :::
+Alternatively, you can find the logs inside your [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) :::
 
 :::details
 ### How to activate Lurking Wife Mode?
