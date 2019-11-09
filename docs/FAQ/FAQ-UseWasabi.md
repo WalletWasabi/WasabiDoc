@@ -274,7 +274,7 @@ E.g., Wasabi will not generate address `m/84'/0'/0'/0/21` with label: "address n
 
 To increase the number of freshly new generated addresses, you have to increase the `MinGapLimit` json property of your `wallet.json` file.
 
-* Go to `File/Open/Wallets Folder` or navigate into `Wallets` folder inside your [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#Where-is-the-Wasabi-data-folder) and open your wallet file.
+* Go to `File/Open/Wallets Folder` or navigate into the `Wallets` folder inside your [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#Where-is-the-Wasabi-data-folder) and open your wallet file.
 * Close Wasabi Wallet.
 * Edit the `MinGapLimit` json property in the wallet file.
 :::
