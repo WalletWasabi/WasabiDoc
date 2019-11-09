@@ -80,15 +80,16 @@ Please see [this great guide](https://github.com/6102bitcoin/FAQ/blob/master/see
 ::::details
 ### Where can I find the Wasabi data folder?
 
-* Windows: `/Users/{your username}/AppData/Roaming/WalletWasabi/client`
+* Windows: `/Users/{your username}/AppData/Roaming/WalletWasabi/Client`
 * Linux: `/Home/.walletwasabi/client`
 * MacOS: `/Users/{your username}/.walletwasabi/client`
 
 :::tip
-You need to mark the “show hidden files” setting to see it
+You need to mark the “show hidden files” setting to see it.
 :::
 
-You can also easily reach it from inside Wasabi: `File > Open > Data Folder` ::::
+You can also easily reach it from inside Wasabi: `File > Open > Data Folder`.
+::::
 
 ::::details
 ### How do I backup my wallet file?
@@ -1126,7 +1127,7 @@ When you set it to `0.0000 5000 bitcoin`, and when you receive a coin worth `0.0
 ### Where can I find the logs?
 
 In the top left menu `File > Open` you can see there are several logs available.
-* The `Log File` shows you the general information about Wasabi wallet.
+* The `Log File` shows you the general information about Wasabi Wallet.
 * The `Tor Log File` shows the Tor specific logs.
 
 ![](/MenuFileOpen.png)
