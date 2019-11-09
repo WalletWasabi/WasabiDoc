@@ -1239,7 +1239,7 @@ The best thing you can do to avoid the issue is to have a strong internet connec
 
 *NOTE*: Banning does not mean freezing.
 You can send banned coins to anyone you want, and the keys still belong entirely to you and not to anyone else.
-This is a temporary censorship on your coins in participation of the CoinJoin.
+This is a temporary ban on your coins in participation of the CoinJoin.
 
 ## Further Questions
 
