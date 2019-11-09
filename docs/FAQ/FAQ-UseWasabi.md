@@ -1223,7 +1223,7 @@ At this point, all registered participants must sign off on the CoinJoin, and if
 So this introduces a problem, or attack vector - a malicious user could purposefully register coins, only to wait for the signing phase and not sign.
 This would halt the entire CoinJoin process for all other participants and Wasabi would no longer work.
 
-So a simple solution looks like this - the coordinator could collect signatures from all inputs, and if one or more inputs refuses to sign, the coordinator could record that input and temporarily (or even permanently) ban that coin from participation.
+So a simple solution looks like this - the coordinator could collect signatures from all inputs, and if one or more input refuses to sign, the coordinator could record that input and temporarily (or even permanently) ban that coin from participation.
 This is a nice solution, as it mitigates a single coin from ruining all CoinJoins, but it too comes with trade-offs.
 
 For example, most of the time, users fail to sign a CoinJoin for non-malicious reasons.
