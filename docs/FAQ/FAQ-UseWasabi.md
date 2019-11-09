@@ -1221,7 +1221,7 @@ You can ready more about this topic [here](/FAQ/FAQ-UseWasabi.md/#wasabi-says-th
 :::
 
 :::details
-### Wasabi says that I'm banned from CoinJoin. Why do my coins occasionally get banned from participation?
+### Why do my coins occasionally get banned from participating in CoinJoin?
 
 A CoinJoin consists of multiple users registering inputs (coins) and blinded outputs.
 Once the appropriate number of participants have registered, the actual transaction (the CoinJoin) is constructed by the coordinator, and given to all participants in the span of about 60 seconds.
