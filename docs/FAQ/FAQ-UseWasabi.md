@@ -1220,7 +1220,7 @@ A CoinJoin consists of multiple users registering inputs (coins) and blinded out
 Once the appropriate number of participants have registered, the actual transaction (the CoinJoin) is constructed by the coordinator, and given to all participants in the span of about 60 seconds.
 At this point, all registered participants must sign off on the CoinJoin, and if a single one of the participants fails to sign their input, the entire CoinJoin must be restarted.
 
-So this introduces a problem, or attack vector - a malicious user could purposefully register coins, only to wait for the signing phase and not sign.
+So this introduces a problem, or an attack vector - a malicious user could purposefully register coins, only to wait for the signing phase and not sign.
 This would halt the entire CoinJoin process for all other participants and Wasabi would no longer work.
 
 So a simple solution looks like this - the coordinator could collect signatures from all inputs, and if one or more input refuses to sign, the coordinator could record that input and temporarily (or even permanently) ban that coin from participation.
