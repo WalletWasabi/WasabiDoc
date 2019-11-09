@@ -28,7 +28,7 @@ or
 
 Verify the PGP signature of the downloaded package, the zkSNACKs' PGP key fingerprint is:
 <br>
-`6FB3 872B 5D42 292F 5992 0797 8563 4832 8949 861E`
+`${zksnacksPublicKeyFingerprint}`
 
 `gpg -v Wasabi-${currentVersion}.deb` (For more details check this [guide](/using-wasabi/InstallPackage.md#debian-and-ubuntu))
 
