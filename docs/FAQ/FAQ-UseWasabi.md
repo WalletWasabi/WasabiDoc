@@ -1211,9 +1211,6 @@ Use Unequal Input Mixing and gain fungibility for UTXOs of 0.1, 0.2, 0.4, 0.8, 1
 ### Which coins can I select for CoinJoins?
 You can select any coin, as long as the total sum reaches the mininum to register (usually ~0.1 BTC).
 
-You can't select coins that are spent or banned.
-Read more about this topic [here](/FAQ/FAQ-UseWasabi.md/#wasabi-says-that-im-banned-from-coinjoin-why-do-my-coins-occasionally-get-banned-from-participation).
-
 :::
 
 :::details
