@@ -1209,7 +1209,7 @@ Use Unequal Input Mixing and gain fungibility for UTXOs of 0.1, 0.2, 0.4, 0.8, 1
 
 :::details
 ### Which coins can I select for CoinJoins?
-You can select any coin, as long as the total sum reaches the mininum to register (usually ~0.1 BTC).
+You can select any coin, as long as the total sum reaches the minimum to register (usually ~0.1 BTC).
 
 :::
 
