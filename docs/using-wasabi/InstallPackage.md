@@ -11,14 +11,14 @@
 
 ---
 
-It is strongly recommended to **VERIFY PGP SIGNATURES** of the downloaded packages before installing Wasabi. This protects you against malicious phishing sites giving you back-doored Wallet software.
+It is strongly recommended to **VERIFY PGP SIGNATURES** of the downloaded packages with zkSNACKs' PGP public key [${zksnacksPublicKeyFingerprint}](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt) before installing Wasabi. This protects you against malicious phishing sites giving you back-doored Wallet software.
 Don't trust - Verify!
 
 Download the packages either from the official [WasabiWallet.io](https://wasabiwallet.io/) clearnet website, or for your privacy's sake, from the official tor hidden service [http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion/](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion/).
 
 ![](/DownloadAll.png)
 
-If you have personally verified zkSNACKs' PGP public key and you are familiar with the [Web Of Trust](https://security.stackexchange.com/questions/147447/gpg-why-is-my-trusted-key-not-certified-with-a-trusted-signature), please consider also [signing it](https://www.gnupg.org/gph/en/manual/x334.html).
+If you have personally verified zkSNACKs' PGP public key [${zksnacksPublicKeyFingerprint}](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt) and you are familiar with the [Web Of Trust](https://security.stackexchange.com/questions/147447/gpg-why-is-my-trusted-key-not-certified-with-a-trusted-signature), please consider also [signing it](https://www.gnupg.org/gph/en/manual/x334.html).
 
 ---
 
@@ -34,7 +34,7 @@ If you have already imported zkSNACKs' PGP public key, then jump to step 7.
 
 ![](/InstallWindowsGpgp4winSetup.png)
 
-2. [Download](https://wasabiwallet.io) the latest Wasabi release, both the `.msi` installer and the corresponding `.msi.asc` signature file.
+2. [Download](https://wasabiwallet.io/#download) the latest Wasabi release, both the `.msi` installer and the corresponding `.msi.asc` signature file.
 
 ![](/DownloadWindows.png)
 
@@ -106,7 +106,7 @@ If you have already imported zkSNACKs' PGP public key, then jump to step 2.
 Verify that the fingerprint is `${zksnacksPublicKeyFingerprint}`.
 [Next time you can skip previous steps because the PGP public key is already imported.]
 
-2. [Download](https://wasabiwallet.io) the latest Wasabi release, both the `.deb` package and the corresponding `.asc` signature file.
+2. [Download](https://wasabiwallet.io/#download) the latest Wasabi release, both the `.deb` package and the corresponding `.asc` signature file.
 
 ![](/DownloadDeb.png)
 
@@ -134,7 +134,7 @@ If you have already imported zkSNACKs' PGP public key, then jump to step 2.
 Verify that the fingerprint is `${zksnacksPublicKeyFingerprint}`.
 [Next time you can skip previous steps because the PGP public key is already imported.]
 
-2. [Download](https://wasabiwallet.io) the latest Wasabi release, both the `.tar.gz` archive and the corresponding `.asc` signature file.
+2. [Download](https://wasabiwallet.io/#download) the latest Wasabi release, both the `.tar.gz` archive and the corresponding `.asc` signature file.
 
 ![](/DownloadTar.png)
 
@@ -165,7 +165,7 @@ Before saving, you need to go to `Format / Make Plain Text` (otherwise TextEdit 
 This should return the output: `key 856348328949861E: public key "zkSNACKs <zksnacks@gmail.com>" imported`.
 [Next time you can skip previous steps because the PGP public key is already imported.]
 
-4. [Download](https://wasabiwallet.io) the latest Wasabi release, both the `.dmg` package and the corresponding `.asc` signature file.
+4. [Download](https://wasabiwallet.io/#download) the latest Wasabi release, both the `.dmg` package and the corresponding `.asc` signature file.
 
 ![](/DownloadMac.png)
 
