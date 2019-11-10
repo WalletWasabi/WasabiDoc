@@ -358,9 +358,9 @@ Yet multisig is a popular feature, and many Wasabikas do request it for extra se
 [Electrum Wallet](https://electrum.org) is a fantastic wallet with many features, but only private if you connect to your own Electrum server full node.
 Electrum can be used to create different types of m-of-n multisig scripts, including the use of hardware wallets.
 
-Anyway, since Wasabi is using the Hardware Wallet Interface with Partially Signed Bitcoin Transactions (PSBT), the implementation might come in #twoweeks, check the [ToDo list](/building-wasabi/ToDo.md).
+Anyway, since Wasabi is using the Hardware Wallet Interface with Partially Signed Bitcoin Transactions (PSBT), the implementation might come in the future, check the [ToDo list](/building-wasabi/ToDo.md).
 Schnorr key and signature aggregation with MuSig increases the privacy, since only one public key, not n, are committed on the timechain.
-So when Schnorr is activated in the Bitcoin consensus layer, in #twoweeks, there are no privacy concerns standing in the way of Wasabi multisig!
+So when Schnorr is activated in the Bitcoin consensus layer, in the future, there are no privacy concerns standing in the way of Wasabi multisig!
 :::
 
 ## Send
@@ -416,7 +416,7 @@ So make sure that the coins get into the right hands.
 
 Unfortunately pay to many is not not yet implemented.
 But this is on the [ToDo list](/building-wasabi/ToDo.md)!
-Coming in #twoweeks.
+Coming in the future.
 :::
 
 :::details
