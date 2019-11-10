@@ -152,7 +152,7 @@ Yes, just follow the [Wasabi Setup on Tails](/using-wasabi/WasabiSetupTails.md) 
 :::details
 ### How do I compile Wasabi from source?
 
-A new version of Wasabi is released when ready, roughly once every #twoweeks.
+A new version of Wasabi is released when ready, roughly once every two weeks.
 Yet in the meantime there are many commits to the latest master branch, not just bug fixes, but also new features and stability improvements.
 If you cannot wait until the next release, and you want to experience the most cutting-edge version of Wasabi, then you can [build the source code](/using-wasabi/BuildSource.md).
 
