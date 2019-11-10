@@ -55,7 +55,7 @@ There are three developers who have the ability to merge code into master branch
 Wasabi is far from complete, there are many Wasabikas contributing every day to make this tool of self defense even more powerful.
 Because Wasabi is libre and open source software, anyone can support the project without asking for permission.
 Thus it is relatively tricky to give a precise roadmap with what will be implemented in the near and distant future.
-You can check the [ToDo list](/building-wasabi/ToDo.md) for a somewhat up-to-date summary of the short term priorities of the next #twoweeks, and what might be implemented in the distant future.
+You can check the [ToDo list](/building-wasabi/ToDo.md) for a somewhat up-to-date summary of the short term priorities of the next two weeks, and what might be implemented in the distant future.
 :::
 
 ## You can become a Wasabika
