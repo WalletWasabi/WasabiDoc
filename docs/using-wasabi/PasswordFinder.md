@@ -21,7 +21,7 @@ It is important to know that Wasabi Password Finder is not for breaking wallet p
 
 ## Usage
 
-To use Wasabi's command line tools on Windows you have to use `wassabeed.exe` that is inside your `Program Files\WasabiWallet`.
+To use Wasabi's command line tools on Windows you have to use `wassabeed.exe` that is inside `WasabiWallet` in your [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder).
 On Linux and OSX you can use the same software that you use for launching the GUI (`wassabee`).
 
 Let us start giving a glance to the command `help`:
