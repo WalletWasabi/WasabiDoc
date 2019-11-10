@@ -26,7 +26,7 @@ Download for Debian/Ubuntu from:
 or  
 [https://www.wasabiwallet.io/#download](https://www.wasabiwallet.io/#download)
 
-Verify the PGP signature of the downloaded package, the zkSNACKs' PGP key fingerprint is:
+Verify the PGP signature of the downloaded package, the zkSNACKs' PGP public key fingerprint is:
 <br>
 `${zksnacksPublicKeyFingerprint}`
 
