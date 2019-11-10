@@ -8,7 +8,7 @@
 # Supported BIPs
 
 - [What is supported today](BIPs.md#what-is-supported-today)
-- [What will be supported in #twoweeks](BIPs.md#what-will-be-supported-in-twoweeks)
+- [What will be supported in the future](BIPs.md#what-will-be-supported-in-the-future)
 - [What is not supported](BIPs.md#what-is-not-supported)
 
 ---
@@ -120,7 +120,7 @@ This has been proven to be by far the best way to do light clients privately, an
 :::
 
 
-## What will be supported in #twoweeks
+## What will be supported in the future
 
 :::details
 ### BIP 156: Dandelion - Privacy Enhancing Routing
