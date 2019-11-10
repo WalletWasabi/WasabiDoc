@@ -42,7 +42,7 @@ If you have already imported zkSNACKs' PGP public key, then jump to step 7.
 
 ![](/InstallWindowsGUIVerify.png)
 
-4. You see that this is signed by the fingerprint `6FB3 872B 5D42 292F 5992 0797 8563 4832 8949 861E`, press `Search` to look for the entire PGP public key.
+4. You see that this is signed by the fingerprint `${zksnacksPublicKeyFingerprint}`, press `Search` to look for the entire PGP public key.
 
 ![](/InstallWindowsKleopatraSearchPGP.png)
 
@@ -55,7 +55,7 @@ If you have already imported zkSNACKs' PGP public key, then jump to step 7.
 
 ![](/InstallWindowsKleopatraPGPConfirm.png)
 
-7. Select all and verify the fingerprint: `6FB3 872B 5D42 292F 5992 0797 8563 4832 8949 861E`
+7. Select all and verify the fingerprint: `${zksnacksPublicKeyFingerprint}`
 
 ![](/InstallWindowsKleopatraVerifyFingerprint.png)
 
@@ -103,7 +103,7 @@ Press `OK` and close Kleopatra.
 If you have already imported zkSNACKs' PGP public key, then jump to step 2.
 
 1. Download zkSNACKs' PGP public key [here](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt), and then import it with `gpg --import PGP.txt`.
-Verify that the fingerprint is `6FB3 872B 5D42 292F 5992 0797 8563 4832 8949 861E`.
+Verify that the fingerprint is `${zksnacksPublicKeyFingerprint}`.
 [Next time you can skip previous steps because the PGP public key is already imported.]
 
 2. [Download](https://wasabiwallet.io) the latest Wasabi release, both the `.deb` package and the corresponding `.asc` signature file.
@@ -111,7 +111,7 @@ Verify that the fingerprint is `6FB3 872B 5D42 292F 5992 0797 8563 4832 8949 861
 ![](/DownloadDeb.png)
 
 3. Verify the signature in the Download repository with `gpg --verify Wasabi-${currentVersion}.deb.asc`.
-If the message returned says `Good signature from zkSNACKs` and that it was signed with `Primary key fingerprint: 6FB3 872B 5D42 292F 5992 0797 8563 4832 8949 861E`, then the software was not tampered with since the developer signed it.
+If the message returned says `Good signature from zkSNACKs` and that it was signed with `Primary key fingerprint: ${zksnacksPublicKeyFingerprint}`, then the software was not tampered with since the developer signed it.
 
 4. [GUI] Install by double clicking and follow the GUI Instruction. </br>
    [CLI] In the Download repository, run the command `sudo dpkg -i Wasabi-${currentVersion}.deb`.
@@ -131,7 +131,7 @@ If you have already imported zkSNACKs' PGP public key, then jump to step 2.
 
 1. Download zkSNACKs' PGP public key [here](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt), and then import it with `gpg --import PGP.txt`.
 
-Verify that the fingerprint is `6FB3 872B 5D42 292F 5992 0797 8563 4832 8949 861E`.
+Verify that the fingerprint is `${zksnacksPublicKeyFingerprint}`.
 [Next time you can skip previous steps because the PGP public key is already imported.]
 
 2. [Download](https://wasabiwallet.io) the latest Wasabi release, both the `.tar.gz` archive and the corresponding `.asc` signature file.
@@ -139,7 +139,7 @@ Verify that the fingerprint is `6FB3 872B 5D42 292F 5992 0797 8563 4832 8949 861
 ![](/DownloadTar.png)
 
 3. In the Download folder, run `gpg2 --verify Wasabi.${currentVersion}.tar.gz.asc`.
-If the message returned says `Good signature from zkSNACKs` and that it was signed with `Primary key fingerprint: 6FB3 872B 5D42 292F 5992 0797 8563 4832 8949 861E`, then the software was not tampered with since the developer signed it.
+If the message returned says `Good signature from zkSNACKs` and that it was signed with `Primary key fingerprint: ${zksnacksPublicKeyFingerprint}`, then the software was not tampered with since the developer signed it.
 
 4. Extract the archive while keeping the file permissions: `tar -pxzf WasabiLinux-${currentVersion}.tar.gz`.
 
@@ -170,7 +170,7 @@ This should return the output: `key 856348328949861E: public key "zkSNACKs <zksn
 ![](/DownloadMac.png)
 
 5. In the Download folder, run `sudo gpg2 --verify Wasabi-${currentVersion}.dmg.asc`.
-If the message returned says `Good signature from zkSNACKs` and that it was signed with `Primary key fingerprint: 6FB3 872B 5D42 292F 5992 0797 8563 4832 8949 861E`, then the software was not tampered with since the developer signed it.
+If the message returned says `Good signature from zkSNACKs` and that it was signed with `Primary key fingerprint: ${zksnacksPublicKeyFingerprint}`, then the software was not tampered with since the developer signed it.
 
 6. Double click `.dmg` to open it.
 
