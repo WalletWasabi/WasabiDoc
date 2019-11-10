@@ -18,7 +18,7 @@ Download the packages either from the official [WasabiWallet.io](https://wasabiw
 
 ![](/DownloadAll.png)
 
-If you have personally verified zkSNACKs' PGP key and you are familiar with the [Web Of Trust](https://security.stackexchange.com/questions/147447/gpg-why-is-my-trusted-key-not-certified-with-a-trusted-signature), please consider also [signing it](https://www.gnupg.org/gph/en/manual/x334.html).
+If you have personally verified zkSNACKs' PGP public key and you are familiar with the [Web Of Trust](https://security.stackexchange.com/questions/147447/gpg-why-is-my-trusted-key-not-certified-with-a-trusted-signature), please consider also [signing it](https://www.gnupg.org/gph/en/manual/x334.html).
 
 ---
 
@@ -28,7 +28,7 @@ If you have personally verified zkSNACKs' PGP key and you are familiar with the 
 
 @[youtube](D8U53PFEsVk)
 
-If you have already imported zkSNACKs' public key, then jump to step 7.
+If you have already imported zkSNACKs' PGP public key, then jump to step 7.
 
 1. [Download](https://www.gnupg.org/download/index.html) and install Gpg4win
 
@@ -46,12 +46,12 @@ If you have already imported zkSNACKs' public key, then jump to step 7.
 
 ![](/InstallWindowsKleopatraSearchPGP.png)
 
-5. `Import` the public key of zkSNACKs [zksnacks@gmail.com]. Who are they? The company behind Wasabi [zkSNACKs Ltd.](https://zksnacks.com/)
+5. `Import` zkSNACKs' PGP public key [zksnacks@gmail.com]. Who are they? The company behind Wasabi [zkSNACKs Ltd.](https://zksnacks.com/)
 
 ![](/InstallWindowsKleopatraImportPGP.png)
 
-6. Confirm to import zkSNACKs' public key by clicking `Yes`.
-[Next time you can skip previous steps because the public key is already imported.]
+6. Confirm to import zkSNACKs' PGP public key by clicking `Yes`.
+[Next time you can skip previous steps because the PGP public key is already imported.]
 
 ![](/InstallWindowsKleopatraPGPConfirm.png)
 
@@ -69,9 +69,9 @@ Wasabi will be installed to your `C:\Program Files\WasabiWallet\` folder.
 You will also have an icon in your Start Menu and on your Desktop. After the first run, a working directory will be created: `%appdata%\WalletWasabi\`.
 Among others, here is where your wallet files and your logs reside.
 
-### Manual public key import
+### Manual PGP public key import
 
-If you get an error upon the import of zkSNACKs' PGP key, then you can manually import it.
+If you get an error upon the import of zkSNACKs' PGP public key, then you can manually import it.
 
 1. Copy zkSNACKs' PGP public key from [here](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt).
 
@@ -90,7 +90,7 @@ In the context menu navigate to `More GpgEx options/Import keys`.
 
 ![](/InstallWindowsImportPGPManualImport.png)
 
-6. Kleopatra pops up and zkSNACKs' key is imported.
+6. Kleopatra pops up and zkSNACKs' PGP public key is imported.
 Press `OK` and close Kleopatra.
 
 ![](/InstallWindowsImportPGPManualKleopatra.png)
@@ -100,11 +100,11 @@ Press `OK` and close Kleopatra.
 
 @[youtube](DUc9A76rwX4)
 
-If you have already imported zkSNACKs' public key, then jump to step 2.
+If you have already imported zkSNACKs' PGP public key, then jump to step 2.
 
 1. Download zkSNACKs' PGP public key [here](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt), and then import it with `gpg --import PGP.txt`.
 Verify that the fingerprint is `6FB3 872B 5D42 292F 5992 0797 8563 4832 8949 861E`.
-[Next time you can skip previous steps because the public key is already imported.]
+[Next time you can skip previous steps because the PGP public key is already imported.]
 
 2. [Download](https://wasabiwallet.io) the latest Wasabi release, both the `.deb` package and the corresponding `.asc` signature file.
 
@@ -127,12 +127,12 @@ Among others, here is where your wallet files and your logs reside.
 
 @[youtube](zPKpC9cRcZo)
 
-If you have already imported zkSNACKs' public key, then jump to step 2.
+If you have already imported zkSNACKs' PGP public key, then jump to step 2.
 
 1. Download zkSNACKs' PGP public key [here](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt), and then import it with `gpg --import PGP.txt`.
 
 Verify that the fingerprint is `6FB3 872B 5D42 292F 5992 0797 8563 4832 8949 861E`.
-[Next time you can skip previous steps because the public key is already imported.]
+[Next time you can skip previous steps because the PGP public key is already imported.]
 
 2. [Download](https://wasabiwallet.io) the latest Wasabi release, both the `.tar.gz` archive and the corresponding `.asc` signature file.
 
@@ -154,16 +154,16 @@ Among others, here is where your wallet files and your logs reside.
 
 @[youtube](UZ9z5COXaG0)
 
-If you have already imported zkSNACKs' public key, then jump to step 4.
+If you have already imported zkSNACKs' PGP public key, then jump to step 4.
 
 1. [Get GnuPG](https://www.gnupg.org/download/index.html).
 
 2. Copy [zkSNACKs' PGP public key](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt) into a new `TextEdit` document and saving it as `PGP.txt`.
 Before saving, you need to go to `Format / Make Plain Text` (otherwise TextEdit will not be able to save it as a .txt file).
 
-3. Open Terminal and go to the folder in which you saved the `PGP.txt` file and import the public key with `sudo gpg2 --import PGP.txt`.
+3. Open Terminal and go to the folder in which you saved the `PGP.txt` file and import the PGP public key with `sudo gpg2 --import PGP.txt`.
 This should return the output: `key 856348328949861E: public key "zkSNACKs <zksnacks@gmail.com>" imported`.
-[Next time you can skip previous steps because the public key is already imported.]
+[Next time you can skip previous steps because the PGP public key is already imported.]
 
 4. [Download](https://wasabiwallet.io) the latest Wasabi release, both the `.dmg` package and the corresponding `.asc` signature file.
 
