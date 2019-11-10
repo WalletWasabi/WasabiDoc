@@ -1238,8 +1238,6 @@ You can send banned coins to anyone you want.
 This is a temporary ban on your coins in participation of the CoinJoin.
 :::
 
-## Further Questions
-
 :::details
 ### What does spent coin status mean?
 
@@ -1288,6 +1286,8 @@ Testnet2 was just the first testnet reset with a different genesis block, becaus
 Testnet3 is the current test network.
 It was introduced with the 0.7 release, introduced a third genesis block, a new rule to avoid the "difficulty was too high, is now too low, and transactions take too long to verify" problem, and contains blocks with edge-case transactions designed to test implementation compatibility.
 :::
+
+## Further Questions
 
 Hardware Wallet
 
