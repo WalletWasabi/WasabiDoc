@@ -852,7 +852,7 @@ Now if even that'd fail, then we can start thinking about lowering the required 
 ### I'd like to experience CoinJoin but I'm not comfortable using real Bitcoin. What can I do?
 
 You can try to make a CoinJoin via Wasabi on the Bitcoin [TestNet](/FAQ/FAQ-UseWasabi.md#what-is-testnet) (an alternative Bitcoin blockchain, to be used for testing).
-Go to settings and change the network to TestNet.
+Go to `Settings` and change the network to `TestNet`.
 You can get tBTC from faucets like:
 [testnet-faucet.mempool.co](https://testnet-faucet.mempool.co/)
 or
