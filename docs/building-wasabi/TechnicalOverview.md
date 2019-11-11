@@ -139,7 +139,7 @@ By clicking on the Max button, one can spend all selected coins. Spending whole 
 The Bitcoin fee rates are fetched from the backend server, the source of these fees are Bitcoin Core's `estimatesmartfee`'s `CONSERVATIVE` output.
 Every fee query happens over Tor with a new Tor identity.
 When clicking send, the wallet will broadcast the transaction to a random peer, then disconnects the peer.
-This is currently [the optimal way to broadcast transactions from a privacy point of view,](https://medium.com/@nopara73/bitcoin-core-vs-wasabi-wallet-network-level-privacy-bdca1d501387) but a more ideal way would be to implement the [Dandelion](https://github.com/gfanti/bips/blob/master/bip-dandelion.mediawiki) protocol for transaction broadcasting when the Bitcoin network adopts it.
+This is currently [the optimal way to broadcast transactions from a privacy point of view,](/using-wasabi/NetworkLevelPrivacy.md) but a more ideal way would be to implement the [Dandelion](https://github.com/gfanti/bips/blob/master/bip-dandelion.mediawiki) protocol for transaction broadcasting when the Bitcoin network adopts it.
 
 ![](/SendAmountFeePassword.png)
 
@@ -158,7 +158,7 @@ If the user does not wish to proceed, they can dequeue their coins.
 
 ![](/CoinJoinStatus.png)
 
-After a mix has successfully executed, the resulting CoinJoin transaction will look like the [following real example](https://www.smartbit.com.au/tx/a0855875fd3d19522568ad673e4b52e11691d837021d74eef0d177f9e0950bf2):
+After a mix has successfully executed, the resulting CoinJoin transaction will look like the [following real example](https://blockstream.info/tx/a0855875fd3d19522568ad673e4b52e11691d837021d74eef0d177f9e0950bf2):
 
 ![](/TXCoinJoin.png)
 
