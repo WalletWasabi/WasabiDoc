@@ -33,7 +33,7 @@ This will help others point you in the right direction.
 This will help you to find the interesting challenges you can work on.
 
 ## Learn how we work
-- To understand how Wasabi coin joins work, read [Zero Link: The Bitcoin Fungibility Framework](https://github.com/nopara73/zerolink) and explore the [Documentation](/FAQ/FAQ-UseWasabi.html#coinjoin).
+- To understand how Wasabi coin joins work, read [Zero Link: The Bitcoin Fungibility Framework](https://github.com/nopara73/zerolink) and explore the [Documentation](/FAQ/FAQ-UseWasabi.md#coinjoin).
 - Familiarize yourself with [C4: The Collective Code Construction Contract](https://rfc.unprotocols.org/spec:1/C4/).
 It’s a simple set of collaboration rules based on GitHub’s fork+pull request model, and a foundational part of how we work together.
 
