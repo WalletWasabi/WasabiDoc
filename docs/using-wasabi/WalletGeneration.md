@@ -18,7 +18,7 @@ So with several wallets you can conveniently manage your bitcoin for different u
 ## Generating the wallet step-by-step
 
 1. Launch Wasabi Wallet.
-The very first time you run the software the `Generate Wallet` tab will be automatically open, but you can also access it by clicking on File -> Generate Wallet in the menu bar.
+The very first time you run the software the `Generate Wallet` tab will be automatically open, but you can also access it by clicking on `File -> Generate Wallet` in the menu bar.
 
 2. Label the new wallet precisely to ensure a proper differentiation at any point in the future.
 This label is not shared with anyone, it is only stored locally on your computer.
