@@ -1282,7 +1282,7 @@ Read more: [WIP1 - Wasabi Improvement Proposal Refactoring Internals](https://gi
 Change the network in the settings from mainnet to testnet and back to mainnet.
 This will result in rebuilding the wallet cache when you load your wallet on the mainnet.
 
-##### Step By Step
+##### Change Networks
 
 1. Open the settings of Wasabi Wallet
 2. Change the `Bitcoin Network` field from `MainNet` to `TestNet`
@@ -1292,6 +1292,16 @@ This will result in rebuilding the wallet cache when you load your wallet on the
 6. Shut down and open Wasabi
 
 Because Wasabi was loaded in the `TestNet` last time, it will think it does not have a wallet cache built for the `Main` network, so it will clear the cache and build it again.
+
+##### Delete the Block States
+
+1. Close Wasabi
+2. Open the relevant wallet file in the [`Wallets` folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) in a text editor.
+3. Delete the lines starting from `"BlockStates": [` and ending with the line closing the bracket `]`. This includes the `BlockHash`, `BlockHight`, and `TransactionIndices` data blocks.
+4. Restart Wasabi
+
+Then Wasabi will rescan the block filters, find all the blocks that have transactions with your coins and re-calculate your total wallet balance, without the spent coins.
+Wasabi will not re-download your filters and blocks, so there are no bandwidth costs.
 :::
 
 :::details
