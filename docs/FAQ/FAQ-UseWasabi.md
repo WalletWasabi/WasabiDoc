@@ -1282,7 +1282,7 @@ Read more: [WIP1 - Wasabi Improvement Proposal Refactoring Internals](https://gi
 Change the network in the settings from mainnet to testnet and back to mainnet.
 This will result in rebuilding the wallet cache when you load your wallet on the mainnet.
 
-##### Change Networks
+##### Switch Networks
 
 1. Open the settings of Wasabi Wallet
 2. Change the `Bitcoin Network` field from `MainNet` to `TestNet`
