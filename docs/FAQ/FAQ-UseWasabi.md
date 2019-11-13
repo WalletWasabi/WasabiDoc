@@ -1297,7 +1297,7 @@ Because Wasabi was loaded in the `TestNet` last time, it will think it does not 
 
 1. Close Wasabi
 2. Go to the `Wallets` folder located in the [Wasabi Data Folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) and open the relevant wallet file in a text editor
-3. Delete the lines starting from `"BlockStates": [` and ending with the line closing the bracket `]`. This includes the `BlockHash`, `BlockHight`, and `TransactionIndices` data blocks.
+3. Delete the lines starting from `"BlockStates": [` and ending with the line closing the bracket `]`. This includes the `BlockHash`, `BlockHeight`, and `TransactionIndices` data blocks
 4. Restart Wasabi
 
 Then Wasabi will rescan the block filters, find all the blocks that have transactions with your coins and re-calculate your total wallet balance, without the spent coins.
