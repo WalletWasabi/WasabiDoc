@@ -64,7 +64,7 @@ If you have already imported zkSNACKs' PGP public key, then jump to step 7.
 ![](/InstallWindowsKleopatraValidSig.png)
 
 :::tip
-The output from the verify command may contain a warning that the "key is not certified with a trusted signature". 
+The output from the verify command may contain `WARNING: This key is not certified with a trusted signature!`.
 You can ignore this, but if you want to fully verify your download, you need to ask people you trust to confirm that the key fingerprint belongs to zkSNACKs.
 :::
 
@@ -72,7 +72,7 @@ You can ignore this, but if you want to fully verify your download, you need to 
 
 Wasabi will be installed to your `C:\Program Files\WasabiWallet\` folder.
 You will also have an icon in your Start Menu and on your Desktop. 
-After the first run, a [working directory](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) will be created. 
+After the first run, a [data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) will be created. 
 Among others, here is where your wallet files and your logs reside.
 
 ### Manual PGP public key import
@@ -120,14 +120,14 @@ Verify that the fingerprint is `${zksnacksPublicKeyFingerprint}`.
 If the message returned says `Good signature from zkSNACKs` and that it was signed with `Primary key fingerprint: ${zksnacksPublicKeyFingerprint}`, then the software was not tampered with since the developer signed it.
 
 :::tip
-The output from the verify command may contain a warning that the "key is not certified with a trusted signature". 
+The output from the verify command may contain `WARNING: This key is not certified with a trusted signature!`.
 You can ignore this, but if you want to fully verify your download, you need to ask people you trust to confirm that the key fingerprint belongs to zkSNACKs.
 :::
 
 4. [GUI] Install by double clicking and follow the GUI Instruction. </br>
    [CLI] In the Download repository, run the command `sudo dpkg -i Wasabi-${currentVersion}.deb`.
 
-After the first run, a [working directory](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) will be created.
+After the first run, a [data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) will be created.
 Among others, here is where your wallet files and your logs reside.
 
 ## Other Linux
@@ -153,7 +153,7 @@ Verify that the fingerprint is `${zksnacksPublicKeyFingerprint}`.
 If the message returned says `Good signature from zkSNACKs` and that it was signed with `Primary key fingerprint: ${zksnacksPublicKeyFingerprint}`, then the software was not tampered with since the developer signed it.
 
 :::tip
-The output from the verify command may contain a warning that the "key is not certified with a trusted signature". 
+The output from the verify command may contain `WARNING: This key is not certified with a trusted signature!`.
 You can ignore this, but if you want to fully verify your download, you need to ask people you trust to confirm that the key fingerprint belongs to zkSNACKs.
 :::
 
@@ -161,7 +161,7 @@ You can ignore this, but if you want to fully verify your download, you need to 
 
 5. Run Wasabi by executing `./wassabee`.
 
-After the first run, a [working directory](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) will be created.
+After the first run, a [data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) will be created.
 Among others, here is where your wallet files and your logs reside.
 
 ## OSX
@@ -189,7 +189,7 @@ This should return the output: `key 856348328949861E: public key "zkSNACKs <zksn
 If the message returned says `Good signature from zkSNACKs` and that it was signed with `Primary key fingerprint: ${zksnacksPublicKeyFingerprint}`, then the software was not tampered with since the developer signed it.
 
 :::tip
-The output from the verify command may contain a warning that the "key is not certified with a trusted signature". 
+The output from the verify command may contain `WARNING: This key is not certified with a trusted signature!`.
 You can ignore this, but if you want to fully verify your download, you need to ask people you trust to confirm that the key fingerprint belongs to zkSNACKs.
 :::
 
@@ -207,5 +207,5 @@ Click the button and confirm by entering your Mac user password.
 
 ![](/InstallMacConfirmOpen.png)
 
-After the first run, a [working directory](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) will be created.
+After the first run, a [data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) will be created.
 Among others, here is where your wallet files and your logs reside.
