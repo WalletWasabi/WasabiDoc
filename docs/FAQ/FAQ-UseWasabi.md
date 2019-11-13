@@ -1296,7 +1296,7 @@ Because Wasabi was loaded in the `TestNet` last time, it will think it does not 
 ##### Delete the Block States
 
 1. Close Wasabi
-2. Open the relevant wallet file in the [`Wallets` folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) in a text editor.
+2. Go to the `Wallets` folder located in the [Wasabi Data Folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) and open the relevant wallet file in a text editor
 3. Delete the lines starting from `"BlockStates": [` and ending with the line closing the bracket `]`. This includes the `BlockHash`, `BlockHight`, and `TransactionIndices` data blocks.
 4. Restart Wasabi
 
