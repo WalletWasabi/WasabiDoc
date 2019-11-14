@@ -58,7 +58,7 @@ Here is a list of all the supported and integrated Bitcoin Improvement Proposals
 :::details
 ### BIP 84: Derivation scheme for P2WPKH Based Accounts
 
-[BIP 84](BIPs.md#bip-84-derivation-scheme-for-p2wpkh-based-accounts) defines a standard derivation scheme for hierarchical deterministic wallets BIP 32, specifically for segregated witness P2WPKH [BIP 173](BIPs.md#bip-173-base32-address-format-for-native-v0-16-witness-outputs).
+[BIP 84](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki) defines a standard derivation scheme for hierarchical deterministic wallets BIP 32, specifically for segregated witness P2WPKH [BIP 173](BIPs.md#bip-173-base32-address-format-for-native-v0-16-witness-outputs).
 This allows to generate one root master seed that can derive a tree of public keys with different paths [BIP 44](BIPs.md#bip-44-multi-account-hierarchy-for-deterministic-wallets).
 `m / purpose' / coin_type' / account' / change / address_index`.
 Wasabi specifically uses this standard `m/84'/0'/0'`.
@@ -93,7 +93,7 @@ On the TestNet and on the RegTest Wasabi deviates from the standard and uses `m/
 :::details
 ### BIP 158: Compact Block Filters for Light Clients
 
-[BIP 158 Block filters](BIPs.md#bip-158-compact-block-filters-for-light-clients) are the reverse of [BIP 37 Bloom filters](BIPs.md#bip-37-connection-bloom-filters) - the client will connect to a Bitcoin node and say "Hey, for every block, I would like a condensed list of addresses that were affected."
+[BIP 158 Block filters](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki) are the reverse of [BIP 37 Bloom filters](BIPs.md#bip-37-connection-bloom-filters) - the client will connect to a Bitcoin node and say "Hey, for every block, I would like a condensed list of addresses that were affected."
 What would happen next is that a Bitcoin node would give the same filter that it gives to every client, because the client has thus far revealed nothing!
 Once a block filter has come in and the client believes that there is a transaction that affects the client, the client pings a single random node for a single full block.
 It then parses the block, and finds the transaction.
@@ -184,7 +184,7 @@ Other branches would only be used where some participant is failing to cooperate
 :::details
 ### BIP 37: Connection Bloom Filtering
 
-[Bloom filters](BIPs.md#bip-37-connection-bloom-filters) are filters that a client will send to a Bitcoin full node which says "Hey, if you see any transactions that get caught in these filters, they may or may not be mine!".
+[BIP 37 Bloom filters](https://github.com/bitcoin/bips/blob/master/bip-0037.mediawiki) are filters that a client will send to a Bitcoin full node which says "Hey, if you see any transactions that get caught in these filters, they may or may not be mine!".
 What would happen next is that a Bitcoin node would start sending tons and tons of transactions to the client, and the client would proceed to distinguish the 99% irrelevant transactions against the 1% relevant ones.
 This was quite brilliant of an idea at the time, but has since been proven to not protect user privacy, at the expense of wasting a ton of bandwidth and subjecting users to other risks.
 
