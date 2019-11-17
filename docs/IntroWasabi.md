@@ -39,7 +39,7 @@ If you have an answer to a question, please [open a pull request](https://github
 - [Wallet Generation](using-wasabi/WalletGeneration.md)
 - [Password Finder](using-wasabi/PasswordFinder.md)
 - [Cold-Wasabi Protocol](using-wasabi/ColdWasabi.md)
-- [Lurking Wife Mode](using-wasabi/LurkingWifeMode.md)
+- [Shielded Screen Mode](using-wasabi/ShieldedScreenMode.md)
 - [Headless Wasabi Deamon](using-wasabi/Daemon.md)
 - [Supported BIPs](using-wasabi/BIPs.md)
 

@@ -141,7 +141,7 @@ module.exports = {
             "/using-wasabi/WalletGeneration.md",
             "/using-wasabi/PasswordFinder.md",
             "/using-wasabi/ColdWasabi.md",
-            "/using-wasabi/LurkingWifeMode.md",
+            "/using-wasabi/ShieldedScreenMode.md",
             "/using-wasabi/Daemon.md",
             "/using-wasabi/BIPs.md"
           ]

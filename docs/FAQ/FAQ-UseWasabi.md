@@ -1145,10 +1145,10 @@ In the top left menu `File > Open` you can see there are several logs available.
 Alternatively, you can find the logs inside your [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) :::
 
 :::details
-### How to activate Lurking Wife Mode?
+### How to activate Shielded Screen Mode?
 
-You can activate Lurking Wife Mode from `Settings` or by clicking on your wallet balance.
-You can read more about Lurking Wife Mode [here](/using-wasabi/LurkingWifeMode.md).
+You can activate Shielded Screen Mode from `Settings` or by clicking on your wallet balance.
+You can read more about Shielded Screen Mode [here](/using-wasabi/ShieldedScreenMode.md).
 :::
 
 ## Coin Control Best Practices
