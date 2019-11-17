@@ -773,11 +773,11 @@ The input registration phase ends when either, the number of registered inputs e
 :::details
 ### What is happening in the connection confirmation phase?
 
-There are many Alice's registering their inputs in the first phase, and the connection confirmation phase makes sure that all of them are still online.
-The coordinator verifies the unique ID from all the Alice's, and when everyone is still communicating, then the coordinator returns the round hash of all the registered inputs.
-The round is abandoned and re-started if too many Alice's have dropped, for example when Wasabi is shut down, or when the tor connection is temporarily broken.
+There are many Alices registering their inputs in the first phase, and the connection confirmation phase makes sure that all of them are still online.
+The coordinator verifies the unique ID from all the Alices, and when everyone is still communicating, then the coordinator returns the round hash of all the registered inputs.
+The round is abandoned and re-started if too many Alices have dropped, for example when Wasabi is shut down, or when the tor connection is temporarily broken.
 
-The connection confirmation phase ends when all Alice's have provided their inputs, or after a timeout when the online Alice's are still larger than the required number of peers.
+The connection confirmation phase ends when all Alices have provided their inputs, or after a timeout when the online Alices are still larger than the required number of peers.
 
 @[youtube](hhkL0QvIaGY)
 
@@ -810,7 +810,7 @@ If after a timeout not all outputs are registered, then this round is abandoned,
 ### What is happening in the signing phase?
 
 Now that all inputs and outputs are registered, the Wasabi coordinator can start the [signing phase](https://github.com/nopara73/zerolink#3-signing-phase) by building the CoinJoin transaction with all the registered inputs, the anonset outputs, and the change outputs.
-He sends this transaction to all the Alice's of this round.
+He sends this transaction to all the Alices of this round.
 Each Alice verifies that:
 
 * The committed round hash is equal to the hash of all the inputs in the proposed transaction.
@@ -834,7 +834,7 @@ Wasabi is saving on mining fees by setting a confirmation target of roughly 12 h
 ### Is there any additional anonymity using multiple wallets for CoinJoins?
 
 You'd gain 1 less anonymity set than if you'd only mix with one wallet (and Wasabi doesn't display that).
-On the other hand, the systemic anonymity is slightly improved if a few people are mixing with multiple wallets, because that removes the certainly on this Blockchain analysis assumption.
+On the other hand, the systemic anonymity is slightly improved if a few people are mixing with multiple wallets, because that removes the certainty on this Blockchain analysis assumption.
 :::
 
 :::details
