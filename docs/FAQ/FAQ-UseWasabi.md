@@ -912,18 +912,18 @@ Wasabi communicates in many ways to the coordinator server, and it is always ove
 
 First of all, Wasabi uses [BIP 158 block filters](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients) to ensure network level privacy.
 You can follow these FAQs to have a full explanation on the theme:
-- [What are BIP-158 Block Filters?](/FAQ/FAQ-UseWasabi.html#what-are-bip-158-block-filters)
-- [What software supplies the block filters that Wasabi uses?](/FAQ/FAQ-Introduction.html#what-software-supplies-the-block-filters-that-wasabi-uses)
-- [Can the coordinator attack me?](/FAQ/FAQ-Introduction.html#can-the-coordinator-attack-me)
-- [Is the backend's coordinator code open source?](/FAQ/FAQ-Introduction.html#is-the-backend-s-coordinator-code-open-source)
+- [What are BIP-158 Block Filters?](/FAQ/FAQ-UseWasabi.md#what-are-bip-158-block-filters)
+- [What software supplies the block filters that Wasabi uses?](/FAQ/FAQ-Introduction.md#what-software-supplies-the-block-filters-that-wasabi-uses)
+- [Can the coordinator attack me?](/FAQ/FAQ-Introduction.md#can-the-coordinator-attack-me)
+- [Is the backend's coordinator code open source?](/FAQ/FAQ-Introduction.md#is-the-backend-s-coordinator-code-open-source)
 
 Then, there are five different phases in a CoinJoin.
 You can follow these links to have a full explanation on that:
-1. [INPUT REGISTRATION PHASE](/FAQ/FAQ-UseWasabi.html#what-is-happening-in-the-input-registration-phase)
-2. [CONNECTION CONFIRMATION PHASE](/FAQ/FAQ-UseWasabi.html#what-is-happening-in-the-connection-confirmation-phase)
-3. [OUTPUT REGISTRATION PHASE](/FAQ/FAQ-UseWasabi.html#what-is-happening-in-the-output-registration-phase)
-4. [SIGNING PHASE](/FAQ/FAQ-UseWasabi.html#what-is-happening-in-the-signing-phase)
-5. [BROADCASTING PHASE](/FAQ/FAQ-UseWasabi.html#what-is-happening-in-the-broadcasting-phase)
+1. [INPUT REGISTRATION PHASE](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-input-registration-phase)
+2. [CONNECTION CONFIRMATION PHASE](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-connection-confirmation-phase)
+3. [OUTPUT REGISTRATION PHASE](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-output-registration-phase)
+4. [SIGNING PHASE](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-signing-phase)
+5. [BROADCASTING PHASE](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-broadcasting-phase)
 
 You also get information about the current mempool for fee estimation as well as the fiat exchange rate.
 :::
