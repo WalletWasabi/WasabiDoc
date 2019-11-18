@@ -14,13 +14,13 @@
 Bitcoin Core, more specifically full nodes are considered to be the pinnacle of network level privacy in Bitcoin wallets that no other wallet type can come close to.
 It is not difficult to see why: full nodes download the whole Blockchain and establish your wallet balances locally, so there is zero chance of any third party figuring out which addresses are in your wallet and which addresses are not.
 
-Compare this to other light wallets, which query a backend server to get information regarding specific addresses or use [BIP37](https://github.com/bitcoin/bips/blob/master/bip-0037.mediawiki) bloom filtering SPV wallet protocol, which is probably [even worse](https://jonasnick.github.io/blog/2015/02/12/privacy-in-bitcoinj/).
+Compare this to other light wallets, which query a backend server to get information regarding specific addresses or use [BIP 37](/using-wasabi/BIPs.md#bip-37-connection-bloom-filtering) bloom filtering SPV wallet protocol, which is probably [even worse](https://jonasnick.github.io/blog/2015/02/12/privacy-in-bitcoinj/).
 And there is Electrum, which [sends your addresses](https://www.reddit.com/r/Bitcoin/comments/2feox9/electrum_securityprivacy_model/ck8szc0/) to random Electrum servers.
 
 The vision of a light wallet that does not leak too much information while establishing the user’s UTXO set had haunted Bitcoin developers for centuries.
-In fact, even BIP37 started out as a privacy improvement, it just turned out to be not one later.
+In fact, even [BIP 37](/using-wasabi/BIPs.md#bip-37-connection-bloom-filtering) started out as a privacy improvement, it just turned out to be not one later.
 But there were decent attempts: some developers, like Jonas Schnelli, the Stratis team and myself [built](https://github.com/bitcoin/bitcoin/pull/9076) [wallet](https://github.com/stratisproject/Breeze) [software](https://github.com/zkSNACKs/WalletWasabi/tree/hiddenwallet-v0.6) that only downloaded blocks from the creation of the user’s wallet.
-Some devs, like Nicolas Dorier attempted to [patch](https://github.com/NicolasDorier/NBitcoin.SPVSample) the BIP37 and some others, like the guys at Lightning Labs came up with a whole new light wallet architecture: BIP[157](https://github.com/bitcoin/bips/blob/master/bip-0157.mediawiki)-[158](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki).
+Some devs, like Nicolas Dorier attempted to [patch](https://github.com/NicolasDorier/NBitcoin.SPVSample) the [BIP 37](/using-wasabi/BIPs.md#bip-37-connection-bloom-filtering) and some others, like the guys at Lightning Labs came up with a whole new light wallet architecture: [BIP 157](/using-wasabi/BIPs.md#bip-157-client-side-block-filtering)-[BIP 158](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients).
 The MoneroWorld folks want you to delegate [running your node to the cloud](https://moneroworld.com/).
 There were also others, like Chris Belcher, who said: “fuck that” and created [Electrum Personal Server](https://github.com/chris-belcher/electrum-personal-server) that lets you connect your Electrum client to your full node.
 Finally I have been noticing a positive trend recently of companies selling [boxes](https://www.nodl.it) those will run a full node for you out of the box.
@@ -67,9 +67,9 @@ Client sends bloom filter to full nodes, full nodes send back data matching the 
 Lets you test if an element is in a set without revealing the set itself.
 
 `Golomb-Rice Filters`.
-Smaller bloom filters, used by BIP158.
+Smaller bloom filters, used by [BIP 158](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients).
 
-`Client Side Filtering`, Neutrino Filtering, [BIP157](https://github.com/bitcoin/bips/blob/master/bip-0157.mediawiki), [BIP158](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki).
+`Client Side Filtering`, Neutrino Filtering, [BIP 157](/using-wasabi/BIPs.md#bip-157-client-side-block-filtering), [BIP 158](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients).
 The idea that clients don’t have to send filters to full nodes, but rather they do the opposite: full nodes create filters and send them to clients instead.
 From here on clients can download blocks from other sources.
 It’s a decently private way of establishing wallet UTXO state.
@@ -102,7 +102,7 @@ Bitcoin Core broadcasts transactions to other peers on the clearnet, unencrypted
 Other peers cannot figure out which transaction originates from a specific node, because Core does not only broadcast its own transactions, but also propagates every other transaction that hits its mempool.
 However some papers note it’s not bulletproof:
 
-> Bitcoin transaction propagation does not hide the source of a transaction very well, especially against a “supernode” eavesdropper that forms a large number of outgoing connections to reachable nodes on the network [[1,2,3]](https://github.com/gfanti/bips/blob/master/bip-dandelion.mediawiki).
+> Bitcoin transaction propagation does not hide the source of a transaction very well, especially against a “supernode” eavesdropper that forms a large number of outgoing connections to reachable nodes on the network [[1,2,3]](/using-wasabi/BIPs.md#bip-156-dandelion-privacy-enhancing-routing).
 
 While in practice I suspect it doesn’t matter much, this article intends to examine the details in order to compare Core with Wasabi, thus I start collecting the relevant identified adversaries from here on:
 
@@ -157,7 +157,7 @@ How do you make sure you are the only peer a client connects to for en extended 
 
 The second issue is, what if your ISP is spying on you for an extended period of time?
 This is more plausible.
-In fact Wasabi’s privacy rating on Bitcoin.org listing was almost scored down to be the same as Bread wallet, because of this, which of course would’ve been ridiculous, since Bread is a BIP37 wallet.
+In fact Wasabi’s privacy rating on Bitcoin.org listing was almost scored down to be the same as Bread wallet, because of this, which of course would’ve been ridiculous, since Bread is a [BIP 37](/using-wasabi/BIPs.md#bip-37-connection-bloom-filtering) wallet.
 What saved the rating was that I noted, if ISP is an adversary, then Bitcoin Core would’ve failed that in a more spectacular way, since transactions are broadcasted over the clearnet and even if the node is listening, the only transaction that doesn’t come in, but only goes out of the wallet must be the one that originates from the node.
 
 Anyway, Wasabi does this over Tor now.
