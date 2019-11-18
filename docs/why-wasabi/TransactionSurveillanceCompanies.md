@@ -28,7 +28,7 @@ Important techniques are the common-input-ownership heuristic and address reuse.
 ### Wallet synchronization analysis
 Bitcoin lightweight wallets often download their own history and balance by querying a third-party server.
 Transaction surveillance companies often try to exploit this to learn which addresses and transactions belong to certain wallets.
-The companies have been known to collect BIP37 filters from BIP37-enabled wallets.
+The companies have been known to collect [BIP 37](/using-wasabi/BIPs.md#bip-37-connection-bloom-filtering) filters from BIP37-enabled wallets.
 They almost-certainly also run many Electrum servers which can spy on any Electrum wallet that connects to them.
 
 ### Transaction broadcasting
