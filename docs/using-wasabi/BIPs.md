@@ -123,6 +123,15 @@ This has been proven to be by far the best way to do light clients privately, an
 ## What will be supported in #twoweeks
 
 :::details
+### BIP 47: Reusable Payment Codes for Hierarchical Deterministic Wallets
+
+[BIP 47](https://github.com/bitcoin/bips/blob/master/bip-0047.mediawiki) defines a technique for creating a payment code which can be publicly advertised and associated with a real-life identity without creating the loss of security or privacy inherent to P2PKH address reuse.
+
+This BIP is a particular application of [BIP 43](https://github.com/bitcoin/bips/blob/master/bip-0043.mediawiki) and is intended to supplement HD wallets which implement BIP44.
+:::
+
+
+:::details
 ### BIP 156: Dandelion - Privacy Enhancing Routing
 
 [BIP 156 Dandelion](https://github.com/bitcoin/bips/blob/master/bip-0156.mediawiki) is a transaction routing mechanism that provides formal anonymity guarantees against attacks on Bitcoin's transaction spreading protocol.
