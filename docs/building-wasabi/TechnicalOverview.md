@@ -74,7 +74,7 @@ For example, registration of CoinJoin inputs and outputs is done through differe
 
 ![](/StatusBarTorRunning.png)
 
-Wasabi's backend is used to facilitate [Chaumian CoinJoin](https://github.com/nopara73/ZeroLink#ii-chaumian-coinjoin) coordination between the mixing participants and to serve Golomb-Rice filters to the clients, similarly to [BIP158](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki).
+Wasabi's backend is used to facilitate [Chaumian CoinJoin](https://github.com/nopara73/ZeroLink#ii-chaumian-coinjoin) coordination between the mixing participants and to serve Golomb-Rice filters to the clients, similarly to [BIP 158](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients).
 More information will be provided about the difference soon.
 Before that, it is worth pointing out that the design choice of building a light wallet was made because such a wallet can attract orders of magnitude more users compared to a wallet on top of a full node, and more users means larger and faster CoinJoins.
 Historically, all light wallets were vulnerable to some kind of network observer due to unprivate utxo fetching.
@@ -139,7 +139,7 @@ By clicking on the Max button, one can spend all selected coins. Spending whole 
 The Bitcoin fee rates are fetched from the backend server, the source of these fees are Bitcoin Core's `estimatesmartfee`'s `CONSERVATIVE` output.
 Every fee query happens over Tor with a new Tor identity.
 When clicking send, the wallet will broadcast the transaction to a random peer, then disconnects the peer.
-This is currently [the optimal way to broadcast transactions from a privacy point of view,](/using-wasabi/NetworkLevelPrivacy.md) but a more ideal way would be to implement the [Dandelion](https://github.com/gfanti/bips/blob/master/bip-dandelion.mediawiki) protocol for transaction broadcasting when the Bitcoin network adopts it.
+This is currently [the optimal way to broadcast transactions from a privacy point of view,](/using-wasabi/NetworkLevelPrivacy.md) but a more ideal way would be to implement the [Dandelion](/using-wasabi/BIPs.md#bip-156-dandelion-privacy-enhancing-routing) protocol for transaction broadcasting when the Bitcoin network adopts it.
 
 ![](/SendAmountFeePassword.png)
 
@@ -258,7 +258,7 @@ Some additional thoughts and details on this section can be found [here](https:/
 
 - JoinMarket: [https://github.com/zkSNACKs/Meta/issues/5](https://github.com/zkSNACKs/Meta/issues/5)
 - Friend CoinJoin Network: [https://github.com/zkSNACKs/Meta/issues/17](https://github.com/zkSNACKs/Meta/issues/17)
-- Merge Avoidance with BIP47 Payment Codes: [https://github.com/zkSNACKs/Meta/issues/10](https://github.com/zkSNACKs/Meta/issues/10)
+- Merge Avoidance with [BIP 47](/using-wasabi/BIPs.md#bip-47-reusable-payment-codes-for-hierarchical-deterministic-wallets) Payment Codes: [https://github.com/zkSNACKs/Meta/issues/10](https://github.com/zkSNACKs/Meta/issues/10)
 - Clusterfuck Wallet Strategies: [https://github.com/zkSNACKs/Meta/issues/11](https://github.com/zkSNACKs/Meta/issues/11), [https://github.com/zkSNACKs/Meta/issues/18](https://github.com/zkSNACKs/Meta/issues/1), [https://github.com/nopara73/ZeroLink/issues/42](https://github.com/nopara73/ZeroLink/issues/42), [https://github.com/zkSNACKs/Meta/issues/18](https://github.com/zkSNACKs/Meta/issues/18)
 - Pay to EndPoint: [https://github.com/zkSNACKs/Meta/issues/18](https://github.com/zkSNACKs/Meta/issues/18), [https://github.com/zkSNACKs/Meta/issues/18](https://github.com/zkSNACKs/Meta/issues/18), [https://github.com/zkSNACKs/Meta/issues/23](https://github.com/zkSNACKs/Meta/issues/23)
 - GroupSend: [https://github.com/zkSNACKs/WalletWasabi/issues/760](https://github.com/zkSNACKs/WalletWasabi/issues/760)
