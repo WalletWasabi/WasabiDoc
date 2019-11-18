@@ -140,7 +140,7 @@ Your full node defines, verifies and enforces the sound money you use to store y
 When you run your own full node, then on your local computer you can verify exactly if the bitcoin you receive are actually valid.
 When you do not verify this for yourself, then you need to ask another trusted third party how much money you have.
 Regardless how you ask this other server, there is now more metadata available to potentially link your coins to your identity.
-There are bad ways to communicate, like querying a block explorer over clearnet, and good ways to communicate, like using [BIP 158](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki) block filters over tor.
+There are bad ways to communicate, like querying a block explorer over clearnet, and good ways to communicate, like using [BIP 158](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients) block filters over tor.
 But regardless, running your own full node means that you don't need to communicate with anyone about your specific coins, and this is strictly better.
 :::
 
