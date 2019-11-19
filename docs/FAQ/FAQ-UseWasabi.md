@@ -944,7 +944,7 @@ Summing up: the faster peers register in the CoinJoins, the faster the mixes are
 ### What is coordinator's address?
 
 The coordinator participates in every CoinJoin.
-For transparency reasons, the coordinator address is used for every CoinJoin.
+And for transparency reasons, the same coordinator address is used.
 
 The current address used by the Wasabi coordinator is `bc1qa24tsgchvuxsaccp8vrnkfd85hrcpafg20kmjw`.
 
