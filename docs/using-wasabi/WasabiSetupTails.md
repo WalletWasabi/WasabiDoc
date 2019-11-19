@@ -64,7 +64,7 @@ Generally, you’d like to save the `Wallets` and `Blocks` folders.
 
 The former contains your wallet information (e.g. keys, labels), while the latter includes the blocks needed to establish your balance.
 
-Could be also nice to save the `BitcoinStore` folder, which contains the BIP 158 block filters, so that you don’t have to download them again.
+Could be also nice to save the `BitcoinStore` folder, which contains the [BIP 158](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients) block filters, so that you don’t have to download them again.
 
 ## INSTALL WASABI
 
