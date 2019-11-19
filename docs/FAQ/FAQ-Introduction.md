@@ -197,7 +197,7 @@ Key dates:
 ### Who is contributing to Wasabi??
 
 There are many Wasabikas working with great effort and care to manifest this powerful tool of self defense.
-[Over 35 peers](https://github.com/zkSNACKs/WalletWasabi/graphs/contributors) have already contributed to the repository, and more and more supporters are joining the [dojo](/building-wasabi/Dojo.md).
+[Over 40 peers](https://github.com/zkSNACKs/WalletWasabi/graphs/contributors) have already contributed to the repository, and more and more supporters are joining the [dojo](/building-wasabi/Dojo.md).
 Four of the main contributors are [Ádám Ficsor](https://github.com/nopara73) [co-founder and CTO of [zkSnacks Ltd](https://zksnacks.com/), co-author of the [zero link Bitcoin fungibility framework](https://github.com/nopara73/ZeroLink)], [Lucas Ontivero](https://github.com/lontivero) [lead engineer of [zkSnacks Ltd](https://zksnacks.com/)], [Dávid Molnár](https://github.com/molnard) [[zkSnacks Ltd](https://zksnacks.com/) employee], and [Dan Walmsley](https://github.com/danwalmsley) [maintainer of [Avalonia UI Framework](https://github.com/AvaloniaUI/Avalonia)].
 For an inclusive list of all the Wasabikas, not just the code developers, please visit the [dojo](/building-wasabi/Dojo.md).
 
