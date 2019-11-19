@@ -109,3 +109,8 @@ Whether the activities of transaction surveillance company actually help against
 - [Blockchain Group](https://blockchaingroup.io/)
 - [Cyphertrace](https://ciphertrace.com/)
 - [Comply Advantage](https://complyadvantage.com/aml-crypto-compliance/)
+- [IdentityMind](https://identitymindglobal.com/)
+- [Elementus](https://elementus.io/)
+- [BlockSeer](https://www.blockseer.com/)
+- [ScoreChain](https://www.scorechain.com/)
+- [Crystal](https://crystalblockchain.com/)
