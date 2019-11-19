@@ -48,6 +48,8 @@ The idea of coordinator address reuse is transparency.
 We could give up transparency here to confuse less sophisticated observers by creating a new coordinator address for every CoinJoin. 
 It’s a different tradeoff, not an improvement.
 
+You can check every address used by Wasabi coordinator [here](/FAQ/FAQ-UseWasabi.md#what-is-coordinators-address).
+
 ## 3. Dusting
 
 A while ago someone dusted many Wasabi CoinJoin UTXOs, this is also called the [forced address reuse attack](https://en.bitcoin.it/Privacy#Forced_address_reuse).
