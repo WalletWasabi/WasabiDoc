@@ -946,7 +946,7 @@ Summing up: the faster peers register in the CoinJoins, the faster the mixes are
 The coordinator participates in every CoinJoin.
 For transparency reasons, the coordinator address is used for every CoinJoin.
 
-The last address used by Wasabi coordinator is `bc1qa24tsgchvuxsaccp8vrnkfd85hrcpafg20kmjw`.
+The current address used by the Wasabi coordinator is `bc1qa24tsgchvuxsaccp8vrnkfd85hrcpafg20kmjw`.
 
 Old addresses:
 - `bc1qs604c7jv6amk4cxqlnvuxv26hv3e48cds4m0ew`
