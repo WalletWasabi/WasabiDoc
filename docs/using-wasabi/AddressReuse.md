@@ -48,7 +48,7 @@ The idea of coordinator address reuse is transparency.
 We could give up transparency here to confuse less sophisticated observers by creating a new coordinator address for every CoinJoin. 
 It’s a different tradeoff, not an improvement.
 
-You can check every address used by Wasabi coordinator [here](/FAQ/FAQ-UseWasabi.md#what-is-coordinators-address).
+You can check every address used by the Wasabi coordinator [here](/FAQ/FAQ-UseWasabi.md#what-is-coordinators-address).
 
 ## 3. Dusting
 
