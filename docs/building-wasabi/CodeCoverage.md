@@ -1,7 +1,7 @@
 ---
 {
   "title": "Code Coverage",
-  "description": "This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
+  "description": "Information on code coverage of Wasabi Wallet. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
 }
 ---
 
@@ -10,7 +10,7 @@
 Wasabi Wallet is built using dotnet core. Given there is no cross-platform Profiling API like the one available on Windows, we use [AltCover](https://github.com/SteveGilham/altcover) package for instrumenting the assemblies and recording the execution
 coverage.
 
-So, first of all we need to install the package in the `WalletWasabi.Tests` project as follow:
+So, first of all we need to install the package in the [WalletWasabi.Tests](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Tests) project as follow:
 
 ```sh
 dotnet add WalletWasabi.Tests/WalletWasabi.Tests.csproj package AltCover
@@ -27,6 +27,6 @@ As a result we get a `lcov.info` file containing the covered lines.
 In order to be able to see what lines
 are covered we need to install a `vscode extension` called  [Coverage Gutters](https://github.com/ryanluker/vscode-coverage-gutters).
 
-Run vscode and click on "Watch":
+Run vscode and click on `Watch`:
 
 ![](https://i.imgur.com/W4hXXda.png)
