@@ -1268,9 +1268,13 @@ In [Joinmarket](https://github.com/JoinMarket-Org/joinmarket-clientserver) as a 
 So you can send the Wasabi change to your Joinmarket wallet and take an offer to mix for some rounds.
 The coin you will receive after the tumbling algorithm can have sufficient anonymity set, and you can use it for spending again.
 
-
-
-- Open a lightning channel.
+#### Open a lightning network channel.
+The lightning network can be a very private way of sending bitcoin, and you can choose the channel size to be exactly the size of your change coin.
+However, it is very important that you do not link this non-private coin to your main lightning node public key.
+So a good strategy is to create a new lightning node and public key, send the whole change coin into this fresh wallet, and open a channel of this amount to a random peer on the network.
+Then route a payment either to a merchant for goods and services, or to your own main lightning node for further use.
+After the balance of the channel is entirely on the other side, cooperatively close the channel with your peer, so that he gets the only output in the closing transaction.
+Since Wasabi does not yet support lightning network functionality, you must use a different wallet for this task.
 :::
 
 :::details
