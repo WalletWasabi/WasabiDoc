@@ -8,21 +8,18 @@
 # Restoring Wasabi Wallet to Electrum
 
 :::danger Bad for your privacy!
-
 If you do this, you send all your Wasabi addresses to 3rd party Electrum servers, losing the anonymity against those entities, so you must make a judgement call by being aware of this.
 
 To gain some privacy by using Electrum you should setup Tor on Network preferences or by installing your own Electrum server via [Electrum Personal Server](https://github.com/chris-belcher/electrum-personal-server) or [Electrs](https://github.com/romanz/electrs).
 :::
 
-You can follow two different tutorials to get this done:
+Follow one of these two tutorials to get this done:
 
 [[toc]]
 
 ---
 
 ## Restoring Wasabi Wallet via Electrum GUI
-
-Steps:
 
 1. Launch Electrum
 
@@ -37,7 +34,6 @@ If you don't have a wallet created on Electrum it should automatically display a
 5. Type your seed or paste your master private key
 
 :::danger You are at risk!
-
 By typing the seed or pasting the master private key on a hot or compromised device, you risk losing your funds.
 :::
 
@@ -55,7 +51,7 @@ The following steps are only necessary if you have previously chosen the option 
 
 If your balance is not correct maybe it is necessary to change the `gap_limit` or the `gap_limit_for_change` to 100 or even more if needed.
 
-8. Open Electrum's Console and type the following commands:
+8. Open Electrum's `Console` and type the following commands:
 
 ```
 wallet.change_gap_limit(100)
@@ -65,11 +61,9 @@ wallet.synchronize()
 
 ## Restoring Wasabi Wallet manually by creating a new wallet file
 
-Steps:
+1. Create a new empty text file
 
-1. Create a new text file
-
-This will be your Electrum Wallet file.
+This will be your Electrum wallet file.
 
 2. Paste the following code:
 
@@ -87,18 +81,27 @@ This will be your Electrum Wallet file.
 }
 ```
 
-3. Replace `xprv` and `xpub` sections with Wasabi's
+3. Replace `xprv` and `xpub` sections with your Wasabi wallet's `Extended Account zprv` and `Extended Account zpub`
 
 :::tip
 Steps to find your master private key inside Wasabi:
 - Go to `Advanced` tab -> `Wallet Info`.
 - Copy your `Extended Account zprv`
+- Copy your `Extended Account zpub`
 :::
 
 :::danger You are at risk!
-By copypasting the master private key on a hot or compromised device, you risk losing your funds.
+By pasting the master private key on a hot or compromised device, you risk losing your funds.
 :::
 
-4. Load the wallet you created in Electrum
+4. Open the wallet file you created in Electrum
 
-5. Open Electrum's console, type `wallet.gap_limit_for_change = 100` then press Enter to increase your `gap limit for change` to 100
+If your balance is not correct maybe it is necessary to change the `gap_limit` or the `gap_limit_for_change` to 100 or even more if needed.
+
+5. Open Electrum's `Console` and type the following commands:
+
+```
+wallet.change_gap_limit(100)
+wallet.gap_limit_for_change = 100
+wallet.synchronize()
+```
