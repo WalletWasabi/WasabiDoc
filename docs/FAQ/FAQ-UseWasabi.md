@@ -1236,31 +1236,26 @@ So consolidating in a CoinJoin is better, but it might still reveal the common o
 
 #### Your Options
 
-:::details
-### Spend the change to the same entity as the initial transaction, but always use a new address.
+
+#### Spend the change to the same entity as the initial transaction, but always use a new address.
 So if in the first transaction you have 0.1 bitcoin and send Alice 0.04 bitcoin, you get 0.06 bitcoin back as change.
 Now in the second transaction where you want to send Alice 0.05 bitcoin, you can select that 0.06 bitcoin change coin without loosing any privacy, because Alice already knows this is your coins.
 In this second transaction you will get back 0.01 bitcoin as change.
 If in a third transaction you want to send Alice 0.02 bitcoin, then you can consolidate the 0.01 bitcoin change with a new 0.1 bitcoin anonymity set coin, thus getting 0.09 bitcoin change.
 Now Alice will know that you owned that 0.1 bitcoin and the 0.09 bitcoin change, but she cannot find out about your pre-mix transaction history.
-:::
 
-:::details
-### Spend the change to another entity, if these two won't make you trouble knowing you interact with both of them.
+#### Spend the change to another entity, if these two won't make you trouble knowing you interact with both of them.
 For example when with a 0.1 bitcoin anonymity set coin you buy coffee from Alice for 0.01 bitcoin, you get back 0.09 bitcoin change that Alice knows is yours.
 If in the next transaction you spend the 0.09 bitcoin change in the pizza restaurant of Bob, then Alice might find out that you go to Bob's restaurant, and if she doesn't like that, then she can refuse to serve you coffee the next time, or even worse.
 But if instead you spend the 0.09 bitcoin change in a transaction to Carol, a good friend of Alice, then Alice might not care and will still give you coffee for the next round.
-::: 
 
-:::details
-### Consolidate several change coins, but in a CoinJoin directly.
+#### Consolidate several change coins, but in a CoinJoin directly.
 If you would consolidate many change coins in a regular non-CoinJoin transaction in the `Send` tab, then any outside observer can easily see that one user controls all these coins.
 Because there are many hundreds of randomly ordered inputs in a Wasabi CoinJoin transaction, it is no longer this easy to find out which ones of these belong to one single user.
 However, during the [input registration phase](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-input-registration-phase), your wallet provides an input proof for all the registered coins to the coordinator.
 Thus the coordinator knows that you control all these coins, and although zkSnacks claims to not keep any logs, it is a reasonable assumption that everyone knows what the coordinator knows.
 In this CoinJoin you get an equal value anonymity set coin, which is no longer tied to any of your change coins, and a change output that can be tied to these inputs.
 So consolidating your change in a CoinJoin is strictly better than consolidating in a regular sending transaction, but it still leaks sensitive information to the coordinator.
-:::
 
 - Mix with [Joinmarket](https://github.com/JoinMarket-Org/joinmarket-clientserver).
 - Donate them (e.g. [to the EFF](https://www.eff.org/)), you can find a list of organizations that accept bitcoin donations [here](https://en.bitcoin.it/wiki/Donation-accepting_organizations_and_projects).
@@ -1314,7 +1309,7 @@ The `spent` coin status is a symptom of corrupted wallet state.
 Currently this is the largest known bug in Wasabi Wallet.
 It currently affects about 1-5% of users.
 This issue was introduced to Wasabi with the [v1.1.4 release](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v1.1.4) in April, 2019 by adding a wallet cache, that resulted in 12 times faster wallet load.
-It was [thought to be fixed](https://old.reddit.com/r/WasabiWallet/comments/c2hco8/announcement_spent_coin_and_lost_unconfirmed/) in June by adding an autocorrection mechanism, but some users are still reporting this issue, so it is not fixed.  
+It was [thought to be fixed](https://old.reddit.com/r/WasabiWallet/comments/c2hco8/announcement_spent_coin_and_lost_unconfirmed/) in June by adding an autocorrection mechanism, but some users are still reporting this issue, so it is not fixed.
 
 The easy fix could be removing the wallet cache altogether, but that would make the wallet load painfully slow, which makes it a no-go.
 Because of this, Wasabi team is working on a comprehensive refactoring of wallet internals for a fairly long time now and they are slowly getting there to fix the issue without performance hit.
