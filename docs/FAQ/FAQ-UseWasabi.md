@@ -1241,6 +1241,7 @@ When ever possible, send transactions where the destination addresses receives t
 This can easily done by clicking the `Max` button in the `Send` tab, this will automatically deduct the mining fee and send the highest amount possible to the destination.
 This might not be possible in some cases where you have to pay a specific value of a payment request.
 However, in other cases it is possible, like for example for donations or when depositing at an exchange.
+Consider supporting invaluable projects like [the tor project](https://fund.btcpayserver.org) or [the electronic fountier foundation](https://supporters.eff.org/donate/donate), you can find a list of organizations that accept bitcoin donations [here](https://en.bitcoin.it/wiki/Donation-accepting_organizations_and_projects).
 
 #### Spend the change to the same entity as the initial transaction, but always use a new address.
 So if in the first transaction you have 0.1 bitcoin and send Alice 0.04 bitcoin, you get 0.06 bitcoin back as change.
@@ -1269,7 +1270,6 @@ The coin you will receive after the tumbling algorithm can have sufficient anony
 
 
 
-- Donate them (e.g. [to the EFF](https://www.eff.org/)), you can find a list of organizations that accept bitcoin donations [here](https://en.bitcoin.it/wiki/Donation-accepting_organizations_and_projects).
 - Open a lightning channel.
 :::
 
