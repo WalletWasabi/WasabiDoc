@@ -1236,18 +1236,20 @@ So consolidating in a CoinJoin is better, but it might still reveal the common o
 
 #### Your Options
 
-- Spend the change to the same destination as the initial transaction, but always use a new address.
-So if in the first transaction you had 0.1 bitcoin and sent Alice 0.04 bitcoin, you get 0.06 bitcoin back as change.
+- Spend the change to the same entity as the initial transaction, but always use a new address.
+So if in the first transaction you have 0.1 bitcoin and send Alice 0.04 bitcoin, you get 0.06 bitcoin back as change.
 Now in the second transaction where you want to send Alice 0.05 bitcoin, you can select that 0.06 bitcoin change coin without loosing any privacy, because Alice already knows this is your coins.
 In this second transaction you will get back 0.01 bitcoin as change.
 If in a third transaction you want to send Alice 0.02 bitcoin, then you can consolidate the 0.01 bitcoin change with a new 0.1 bitcoin anonset coin, thus getting 0.09 bitcoin change.
-Now Alice will know that you owned that 0.1 bitcoin and the 0.09 bitcoin change, but she cannot find out about your pre-mix transaction history. 
-
+Now Alice will know that you owned that 0.1 bitcoin and the 0.09 bitcoin change, but she cannot find out about your pre-mix transaction history.
+- Spend the change to another entity, if these two won't make you trouble knowing you interact with both of them.
+For example when with a 0.1 bitcoin anonymity set coin you buy coffee from Alice for 0.01 bitcoin, you get back 0.09 bitcoin change that Alice knows is yours.
+If in the next transaction you spend the 0.09 bitcoin change in the pizza restaurant of Bob, then Alice might find out that you go to Bob's restaurant, and if she doesn't like that, then she can refuse to serve you coffee the next time, or even worse.
+But if instead you spend the 0.09 bitcoin change in a transaction to Carol, a good friend of Alice, then Alice might not care and will still give you coffee for the next round.
 
 - If you do not care about linking the history of the coins because they are all from the same source then you could combine them in a mix (queue all the change from the same source until you reach the minimum input required to mix, currently ~ 0.1 BTC).
 - Mix with [Joinmarket](https://github.com/JoinMarket-Org/joinmarket-clientserver).
 - Donate them (e.g. [to the EFF](https://www.eff.org/)), you can find a list of organizations that accept bitcoin donations [here](https://en.bitcoin.it/wiki/Donation-accepting_organizations_and_projects).
-- Spend them on something that is not a particular privacy risk (eg. gift cards).
 - Open a lightning channel.
 - The ultimate solution is to 'close the loop' i.e. spend a change coin without merging it with other coins, do not generate it in the first place by sending whole coins.
 :::
