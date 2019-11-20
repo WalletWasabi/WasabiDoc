@@ -1262,10 +1262,15 @@ Thus the coordinator knows that you control all these coins, and although zkSnac
 In this CoinJoin you get an equal value anonymity set coin, which is no longer tied to any of your change coins, and a change output that can be tied to these inputs.
 So consolidating your change in a CoinJoin is strictly better than consolidating in a regular sending transaction, but it still leaks sensitive information to the coordinator.
 
-- Mix with [Joinmarket](https://github.com/JoinMarket-Org/joinmarket-clientserver).
+#### Mix with Joinmarket.
+In [Joinmarket](https://github.com/JoinMarket-Org/joinmarket-clientserver) as a market taker you can specify exactly what denomination of equal value outputs are generated in the CoinJoin.
+So you can send the Wasabi change to your Joinmarket wallet and take an offer to mix for some rounds.
+The coin you will receive after the tumbling algorithm can have sufficient anonymity set, and you can use it for spending again.
+
+
+
 - Donate them (e.g. [to the EFF](https://www.eff.org/)), you can find a list of organizations that accept bitcoin donations [here](https://en.bitcoin.it/wiki/Donation-accepting_organizations_and_projects).
 - Open a lightning channel.
-- The ultimate solution is to 'close the loop' i.e. spend a change coin without merging it with other coins, do not generate it in the first place by sending whole coins.
 :::
 
 :::details
