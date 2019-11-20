@@ -1170,6 +1170,17 @@ You can activate Lurking Wife Mode from `Settings` or by clicking on your wallet
 You can read more about Lurking Wife Mode [here](/using-wasabi/LurkingWifeMode.md).
 :::
 
+:::details
+### How can I change to the white theme?
+
+You can change from the default dark to the white theme in the `.walletwasabi/client/Gui/Settings/` [data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder).
+Open the `GlobalSettings.json` file and change the line from `"theme": "Visual Studio Dark"` to `"theme": "Visual Studio Light"`.
+Save the file and restart Wasabi.
+Please note that Wasabi is designed for the dark theme, and some color schemes might not look beautiful in the white mode.
+
+![](/WhiteMode.png)
+:::
+
 ## Coin Control Best Practices
 
 @[youtube](iyJ81JRvLQk)
