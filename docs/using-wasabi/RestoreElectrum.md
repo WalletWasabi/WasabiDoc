@@ -49,11 +49,11 @@ Steps to find your master private key inside Wasabi:
 
 The following steps are only necessary if you have previously chosen the option `I already have a seed`.
 
-6. Click the `Options` button, then check `BIP39 seed` and if you created your Wasabi wallet with a password make sure to check `Extend this seed with custom words` and type your password in the `Seed extension` window.
+6. Click the `Options` button, then check `BIP39 seed` and if you created your Wasabi wallet with a password make sure to check `Extend this seed with custom words` and type your password in the `Seed extension` window
 
 7. On `Script type and Derivation path` window, choose `native segwit (p2wpkh)` or manually insert `m/84'/0'/0'`
 
-If your balance is not correct maybe it is necessary to change the `gap_limit` or the `gap_limit_for_change`.
+If your balance is not correct maybe it is necessary to change the `gap_limit` or the `gap_limit_for_change` to 100 or even more if needed.
 
 8. Open Electrum's Console and type the following commands:
 
