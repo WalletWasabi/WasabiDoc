@@ -1079,6 +1079,25 @@ However, you can see the `wallet.json` files inside the `WalletBackups` folder (
 ## Settings
 
 :::details
+### What is Testnet?
+
+The testnet is an alternative Bitcoin blockchain, to be used for testing.
+Testnet coins (tBTC) are separate and distinct from actual bitcoins, and are never supposed to have any value.
+This allows application developers or bitcoin testers to experiment, without having to use real bitcoins or worrying about breaking the main bitcoin chain.
+You can try to make a [CoinJoin with Wasabi on the Bitcoin TestNet](/FAQ/FAQ-UseWasabi.md#i-d-like-to-experience-coinjoin-but-i-m-not-comfortable-using-real-bitcoin-what-can-i-do) without being afraid of losing 'real' bitcoins.
+
+You can get tBTC from faucets like:
+[testnet-faucet.mempool.co](https://testnet-faucet.mempool.co/)
+or
+[coinfaucet.eu/en/btc-testnet](https://coinfaucet.eu/en/btc-testnet/)
+
+There have been three generations of testnet.
+Testnet2 was just the first testnet reset with a different genesis block, because people were starting to trade testnet coins for real money.
+Testnet3 is the current test network.
+It was introduced with the 0.7 release, introduced a third genesis block, a new rule to avoid the "difficulty was too high, is now too low, and transactions take too long to verify" problem, and contains blocks with edge-case transactions designed to test implementation compatibility.
+:::
+
+:::details
 ### How do I connect my own full node to Wasabi?
 
 There is currently a basic implementation of connecting your full node to Wasabi.
@@ -1304,24 +1323,6 @@ Then Wasabi will rescan the block filters, find all the blocks that have transac
 Wasabi will not re-download your filters and blocks, so there are no bandwidth costs.
 :::
 
-:::details
-### What is Testnet?
-
-The testnet is an alternative Bitcoin blockchain, to be used for testing.
-Testnet coins (tBTC) are separate and distinct from actual bitcoins, and are never supposed to have any value.
-This allows application developers or bitcoin testers to experiment, without having to use real bitcoins or worrying about breaking the main bitcoin chain.
-You can try to make a [CoinJoin with Wasabi on the Bitcoin TestNet](/FAQ/FAQ-UseWasabi.md#i-d-like-to-experience-coinjoin-but-i-m-not-comfortable-using-real-bitcoin-what-can-i-do) without being afraid of losing 'real' bitcoins.
-
-You can get tBTC from faucets like:
-[testnet-faucet.mempool.co](https://testnet-faucet.mempool.co/)
-or
-[coinfaucet.eu/en/btc-testnet](https://coinfaucet.eu/en/btc-testnet/)
-
-There have been three generations of testnet.
-Testnet2 was just the first testnet reset with a different genesis block, because people were starting to trade testnet coins for real money.
-Testnet3 is the current test network.
-It was introduced with the 0.7 release, introduced a third genesis block, a new rule to avoid the "difficulty was too high, is now too low, and transactions take too long to verify" problem, and contains blocks with edge-case transactions designed to test implementation compatibility.
-:::
 
 ## Further Questions
 
