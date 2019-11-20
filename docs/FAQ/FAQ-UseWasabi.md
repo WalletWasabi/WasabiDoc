@@ -1236,6 +1236,11 @@ So consolidating in a CoinJoin is better, but it might still reveal the common o
 
 #### Your Options
 
+#### Avoid change in the first place.
+When ever possible, send transactions where the destination addresses receives the entire value, and you don't get any change back.
+This can easily done by clicking the `Max` button in the `Send` tab, this will automatically deduct the mining fee and send the highest amount possible to the destination.
+This might not be possible in some cases where you have to pay a specific value of a payment request.
+However, in other cases it is possible, like for example for donations or when depositing at an exchange.
 
 #### Spend the change to the same entity as the initial transaction, but always use a new address.
 So if in the first transaction you have 0.1 bitcoin and send Alice 0.04 bitcoin, you get 0.06 bitcoin back as change.
