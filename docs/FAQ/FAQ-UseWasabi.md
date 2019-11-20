@@ -1248,7 +1248,7 @@ So if in the first transaction you have 0.1 bitcoin and send Alice 0.04 bitcoin,
 Now in the second transaction where you want to send Alice 0.05 bitcoin, you can select that 0.06 bitcoin change coin without loosing any privacy, because Alice already knows this is your coins.
 In this second transaction you will get back 0.01 bitcoin as change.
 If in a third transaction you want to send Alice 0.02 bitcoin, then you can consolidate the 0.01 bitcoin change with a new 0.1 bitcoin anonymity set coin, thus getting 0.09 bitcoin change.
-Now Alice will know that you owned that 0.1 bitcoin and the 0.09 bitcoin change, but she cannot find out about your pre-mix transaction history.
+Now Alice will know that you owned that 0.1 bitcoin and the 0.09 bitcoin change, but she cannot find out about your premix transaction history.
 
 #### Spend the change to another entity, if these two won't make you trouble knowing you interact with both of them.
 For example when with a 0.1 bitcoin anonymity set coin you buy coffee from Alice for 0.01 bitcoin, you get back 0.09 bitcoin change that Alice knows is yours.
