@@ -1247,11 +1247,11 @@ Consider supporting invaluable projects like [the tor project](https://fund.btcp
 So if in the first transaction you have 0.1 bitcoin and send Alice 0.04 bitcoin, you get 0.06 bitcoin back as change.
 Now in the second transaction where you want to send Alice 0.05 bitcoin, you can select that 0.06 bitcoin change coin without loosing any privacy, because Alice already knows this is your coin.
 In this second transaction you will get back 0.01 bitcoin as change.
-If in a third transaction you want to send Alice 0.02 bitcoin, then you can consolidate the 0.01 bitcoin change with a new 0.1 bitcoin anonymity set coin, thus getting 0.09 bitcoin change.
+If in a third transaction you want to send Alice 0.02 bitcoin, then you can consolidate the 0.01 bitcoin change with a new 0.1 bitcoin mixed coin, thus getting 0.09 bitcoin change.
 Now Alice will know that you owned that 0.1 bitcoin and the 0.09 bitcoin change, but she cannot find out about your premix transaction history.
 
 #### Spend the change to another entity, if these two won't make you trouble knowing you interact with both of them.
-For example when with a 0.1 bitcoin anonymity set coin you buy coffee from Alice for 0.01 bitcoin, you get back 0.09 bitcoin change that Alice knows is yours.
+For example when with a 0.1 bitcoin mixed coin you buy coffee from Alice for 0.01 bitcoin, you get back 0.09 bitcoin change that Alice knows is yours.
 If in the next transaction you spend the 0.09 bitcoin change in the pizza restaurant of Bob, then Alice might find out that you go to Bob's restaurant, and if she doesn't like that, then she can refuse to serve you coffee the next time, or even worse.
 But if instead you spend the 0.09 bitcoin change in a transaction to Carol, a good friend of Alice, then Alice might not care and will still give you coffee for the next round.
 
@@ -1260,7 +1260,7 @@ If you would consolidate many change coins in a regular non-CoinJoin transaction
 Because there are hundreds of randomly ordered inputs in a Wasabi CoinJoin transaction, it is no longer easy to find out which coins belong to one single user.
 However, during the [input registration phase](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-input-registration-phase), your wallet provides an input proof for all the registered coins to the coordinator.
 Thus the coordinator knows that you control all these coins, and although zkSNACKs claims to not keep any logs, it is a reasonable assumption that everyone knows what the coordinator knows.
-In this CoinJoin you get an equal value anonymity set coin, which is no longer tied to any of your change coins, and a change output that can be tied to these inputs.
+In this CoinJoin you get an equal value mixed coin, which is no longer tied to any of your change coins, and a change output that can be tied to these inputs.
 So consolidating your change in a CoinJoin is strictly better than consolidating in a regular sending transaction, but it still leaks sensitive information to the coordinator.
 
 #### Mix with Joinmarket.
