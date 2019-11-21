@@ -1222,7 +1222,7 @@ You can spend the change to the same entity as the initial transaction, without 
 Only spend the change to another entity, if these two won't make you trouble knowing you interact with both of them.
 If needed, you can consolidate several change coins, but we advise you to do it in a CoinJoin.
 In Joinmarket you can join mixes worth exactly the amount of the change.
-Or open a new lightning network node and channel and route the funds back to you.
+Or open a new Lightning Network node, create a channel and route the funds back to you.
 
 :::tip
 For more information, see this [dedicated chapter](/using-wasabi/ChangeCoins.md).
