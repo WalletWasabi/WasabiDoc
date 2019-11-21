@@ -9,35 +9,37 @@
 
 [[toc]]
 
-## Why change is an issue
-
-You want to avoid merging `anonymity set 1 coins` with `anonymity set > 1 coins` wherever possible, because this will link your `anonymity set > 1 coin` to the coin you merge it with.
-Note that, this is also true if you merge them in a mix, however that is slightly less problematic, because some blockchain analysis techniques become [computationally infeasible](https://www.comsys.rwth-aachen.de/fileadmin/papers/2017/2017-maurer-trustcom-coinjoin.pdf).
-
-It is also important that you do not send different coins to the same receiving address (even if performed as separate transactions) as this will also link the coins together, damaging your privacy.
 
 ## Types of change
 
-There are two different types of zero link change:
+### Non CoinJoin change
+
+When you want to buy some coffee from Alice, then in the `Send` tab you select one or more of your own coins, and they are the input of the transaction, for example one redshield `anonymity set 1` coin worth 2 bitcoin.
+You put Alice's address in the `Receiving Address` field, and set the spending `Amount`, for example 0.5 bitcoin, this will make the first output of the transaction.
+The left over amount of 1.5 bitcoin will automatically go back to an address of you, and this is the change output.
+This change coin can easily be tied to the input of the transaction, and thus also has `anonymity set 1`.
+So when you send this change coin in a next transaction, this receiver knows that you were part of the transaction to Alice.
+
+### First round CoinJoin change
 
 When you have a KYC coin with red anonset 1 and you register it for CoinJoin, then you get one anonset 100 green coin and one red anonset 1 change.
 This change is very clearly tied to your KYC input coin, but the CoinJoin output is pretty good with anonset 100.
 If you combine that red coin with the green, then it's clear that both of them belong to you, and thus the anonset of the output in this transaction becomes the lowest common denominator, in this case anonset 1.
+
+### Second round CoinJoin change
 
 When you take a 100 anonset coin, and you register it again for CoinJoin, then you get one coin with anonset 200, and one change with anonset 100.
 This change has anonset 100 because it can be linked to the input of the second CoinJoin, but this coin has anonset 100 already.
 This change can still reveal premix history which is another CoinJoin, therefore you cannot go further back.
 So, it might be ok to send this second change output to some place, or even consolidate it, because it still has anonset.
 
-When you consolidate several small change coins in a regular transaction, then every outside observer knows that they belong to the same cluster.
-However, you can consolidate within a CoinJoin by simply selecting all these coins in the `CoinJoin` tab.
-Because the Wasabi CoinJoin transaction shuffles inputs, for an outside observer it is not clear which inputs belong to the same Alice.
-However, the coordinator gets the input proof of **ALL** the coins that Alice has provided during the input registration phase.
-Thus the coordinator knows that this is a consolidation transaction.
-It is wise to assume that every one knows what the coordinator knows.
-So consolidating in a CoinJoin is better, but it might still reveal the common ownership of the coins.
+## Why change is an issue
 
-## Your options
+Change is not inherently bad, it's a fundamental part of how Bitcoin and the UTXO model works.
+However, when spending a change coin, then the receiver can easily deduce that the sender was also part of the previous transaction that generated the change.
+You want to avoid merging `anonymity set 1 coins` with `anonymity set > 1 coins` wherever possible, because this will link your `anonymity set > 1 coin` to the coin you merge it with.
+
+## Your options to use change privately
 
 ### Avoid change in the first place.
 Whenever possible, send transactions where the destination addresses receive the entire value, and you don't get any change back.

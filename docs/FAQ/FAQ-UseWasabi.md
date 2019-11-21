@@ -1225,7 +1225,7 @@ In Joinmarket you can buy mixes worth exactly the amount of the change.
 Or open a new lightning network node and channel and route the funds back to you.
 
 :::tip
-For more information, see this [dedicated chapter](/using-wasabi/ChangeCoins.md/).
+For more information, see this [dedicated chapter](/using-wasabi/ChangeCoins.md).
 :::
 ::::
 
