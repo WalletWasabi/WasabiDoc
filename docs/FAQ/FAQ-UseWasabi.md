@@ -1247,12 +1247,45 @@ So consolidating in a CoinJoin is better, but it might still reveal the common o
 
 #### Your Options
 
-- If you do not care about linking the history of the coins because they are all from the same source then you could combine them in a mix (queue all the change from the same source until you reach the minimum input required to mix, currently ~ 0.1 BTC).
-- Mix with [Joinmarket](https://github.com/JoinMarket-Org/joinmarket-clientserver).
-- Donate them (e.g. [to the EFF](https://www.eff.org/)), you can find a list of organizations that accept bitcoin donations [here](https://en.bitcoin.it/wiki/Donation-accepting_organizations_and_projects).
-- Spend them on something that is not a particular privacy risk (eg. gift cards).
-- Open a lightning channel.
-- The ultimate solution is to 'close the loop' i.e. spend a change coin without merging it with other coins, do not generate it in the first place by sending whole coins.
+#### Avoid change in the first place.
+Whenever possible, send transactions where the destination addresses receive the entire value, and you don't get any change back.
+This can easily be done by clicking the `Max` button in the `Send` tab, which will automatically deduct the mining fee and send the highest amount possible to the destination.
+This might not be possible in some cases where you have to pay a specific value of a payment request.
+However, in other cases it is possible, for example donations or when depositing to an exchange.
+Consider supporting invaluable projects like [the tor project](https://donate.torproject.org/cryptocurrency) or [the electronic frontier foundation](https://supporters.eff.org/donate/donate), you can find a list of organizations that accept bitcoin donations [here](https://en.bitcoin.it/wiki/Donation-accepting_organizations_and_projects).
+
+#### Spend the change to the same entity as the initial transaction, but always use a new address.
+So if in the first transaction you have 0.1 bitcoin and send Alice 0.04 bitcoin, you get 0.06 bitcoin back as change.
+Now in the second transaction where you want to send Alice 0.05 bitcoin, you can select that 0.06 bitcoin change coin without loosing any privacy, because Alice already knows this is your coin.
+In this second transaction you will get back 0.01 bitcoin as change.
+If in a third transaction you want to send Alice 0.02 bitcoin, then you can consolidate the 0.01 bitcoin change with a new 0.1 bitcoin mixed coin, thus getting 0.09 bitcoin change.
+Now Alice will know that you owned that 0.1 bitcoin and the 0.09 bitcoin change, but she cannot find out about your premix transaction history.
+
+#### Spend the change to another entity, if these two won't make you trouble knowing you interact with both of them.
+For example when with a 0.1 bitcoin mixed coin you buy coffee from Alice for 0.01 bitcoin, you get back 0.09 bitcoin change that Alice knows is yours.
+If in the next transaction you spend the 0.09 bitcoin change in the pizza restaurant of Bob, then Alice might find out that you go to Bob's restaurant, and if she doesn't like that, then she can refuse to serve you coffee the next time, or even worse.
+But if instead you spend the 0.09 bitcoin change in a transaction to Carol, a good friend of Alice, then Alice might not care and will still give you coffee for the next round.
+
+#### Consolidate several change coins, but in a CoinJoin directly.
+If you would consolidate many change coins in a regular non-CoinJoin transaction in the `Send` tab, then any outside observer can easily see that one user controls all these coins.
+Because there are hundreds of randomly ordered inputs in a Wasabi CoinJoin transaction, it is no longer easy to find out which coins belong to one single user.
+However, during the [input registration phase](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-input-registration-phase), your wallet provides an input proof for all the registered coins to the coordinator.
+Thus the coordinator knows that you control all these coins, and although zkSNACKs claims to not keep any logs, it is a reasonable assumption that everyone knows what the coordinator knows.
+In this CoinJoin you get an equal value mixed coin, which is no longer tied to any of your change coins, and a change output that can be tied to these inputs.
+So consolidating your change in a CoinJoin is strictly better than consolidating in a regular sending transaction, but it still leaks sensitive information to the coordinator.
+
+#### Mix with Joinmarket.
+In [Joinmarket](https://github.com/JoinMarket-Org/joinmarket-clientserver) as a market taker you can specify exactly what denomination of equal value outputs are generated in the CoinJoin.
+So you can send the Wasabi change to your Joinmarket wallet and take an offer to mix for some rounds.
+The coin you will receive after the tumbling algorithm can have sufficient anonymity set, and you can use it for spending again.
+
+#### Open a lightning network channel.
+The lightning network can be a very private way of sending bitcoin, and you can choose the channel size to be exactly the size of your change coin.
+However, it is very important that you do not link this non-private coin to your main lightning node public key.
+So a good strategy is to create a new lightning node and public key, send the whole change coin into this fresh wallet, and open a channel of this amount to a random peer on the network.
+Then route a payment either to a merchant for goods and services, or to your own main lightning node for further use.
+After the balance of the channel is entirely on the other side, cooperatively close the channel with your peer, so that he gets the only output in the closing transaction.
+Since Wasabi does not yet support lightning network functionality, you must use a different wallet for this task.
 :::
 
 :::details
@@ -1301,7 +1334,7 @@ The `spent` coin status is a symptom of corrupted wallet state.
 Currently this is the largest known bug in Wasabi Wallet.
 It currently affects about 1-5% of users.
 This issue was introduced to Wasabi with the [v1.1.4 release](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v1.1.4) in April, 2019 by adding a wallet cache, that resulted in 12 times faster wallet load.
-It was [thought to be fixed](https://old.reddit.com/r/WasabiWallet/comments/c2hco8/announcement_spent_coin_and_lost_unconfirmed/) in June by adding an autocorrection mechanism, but some users are still reporting this issue, so it is not fixed.  
+It was [thought to be fixed](https://old.reddit.com/r/WasabiWallet/comments/c2hco8/announcement_spent_coin_and_lost_unconfirmed/) in June by adding an autocorrection mechanism, but some users are still reporting this issue, so it is not fixed.
 
 The easy fix could be removing the wallet cache altogether, but that would make the wallet load painfully slow, which makes it a no-go.
 Because of this, Wasabi team is working on a comprehensive refactoring of wallet internals for a fairly long time now and they are slowly getting there to fix the issue without performance hit.
