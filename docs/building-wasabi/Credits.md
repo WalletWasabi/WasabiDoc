@@ -18,4 +18,4 @@ Here are some credits, thanks and sources (in casual order):
 - [Bitcoin GitHub repository](https://github.com/bitcoin/)
 - [CryptoSeb, Cryptopaper](https://github.com/cryptoseb/CryptoPaper)
 - [Tails](https://tails.boum.org/)
-- [BitSniff](https://79jke.github.io/BitSniff/)
+- [BitSniff](https://github.com/m417z/bitsniff/)
