@@ -44,7 +44,7 @@ This label is only for you and is stored exclusively on your device.
 Wasabi has strong coin control features, and as you continue to use the wallet, you will observe that the history of your coins will appear, and this history is only useful to you if you are practicing good labeling. 
 An example of a good label:
 
-`From Max, via BitPay`
+`Max, BitPay`
 
 `Bob, Coinbase`
 
