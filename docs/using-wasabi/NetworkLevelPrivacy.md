@@ -204,7 +204,7 @@ Yet the amount of extra communications in the seconds following a new block is s
 This effect may not be noticeable for a single block, but over time it gets statistically significant, and may get exploited.
 
 As reported by [Niko Kudriastev and Michael Maltsev](https://m417z.com/bitsniff/), it is possible to detect Bitcoin communications using nothing but traffic volume over time - an information even most privacy concerned individuals are likely leaking to their law-abiding Internet Service Provider.
-In this case, using a VPN and running the node over Tor it may not be enough to avoid being detected.
+In this case, using a VPN and running the node over Tor may not be enough to avoid being detected.
 
 ### Protection
 
