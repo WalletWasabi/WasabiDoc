@@ -14,7 +14,7 @@
 
 ### Non CoinJoin change
 
-When you want to buy some coffee from Alice, then in the `Send` tab you select one or more of your own coins, and they are the input of the transaction, for example one redshield `anonymity set 1` coin worth 2 bitcoin.
+When you want to buy some coffee from Alice, then in the `Send` tab you select one or more of your own coins, and they are the input of the transaction, for example one red shield `anonymity set 1` coin worth 2 bitcoin.
 You put Alice's address in the `Receiving Address` field, and set the spending `Amount`, for example 0.5 bitcoin, this will make the first output of the transaction.
 The left over amount of 1.5 bitcoin will automatically go back to an address of you, and this is the change output.
 This change coin can easily be tied to the input of the transaction, and thus also has `anonymity set 1`.
