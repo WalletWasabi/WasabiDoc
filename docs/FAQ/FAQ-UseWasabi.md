@@ -47,7 +47,8 @@ It is **VERY** important to use a random and long password.
 :::
 
 Since it is very difficult for humans to generate true randomness, it is good to use a tool to help find a strong password.
-This can be the [dice ware wordlist](https://www.eff.org/deeplinks/2016/07/new-wordlists-random-passphrases), for true off-line password.
+This can be the [Diceware english wordlist](https://www.eff.org/deeplinks/2016/07/new-wordlists-random-passphrases), for true off-line password.
+For Diceware in other languages follow [this link](http://world.std.com/~reinhold/diceware.html#Diceware%20in%20Other%20Languages|outline).
 A secure password manager software might also be used, but be careful here.
 ::::
 
