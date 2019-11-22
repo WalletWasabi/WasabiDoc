@@ -1221,7 +1221,7 @@ The most problematic type of change is what has `anonymity set 1` [red shield] Y
 You can spend the change to the same entity as the initial transaction, without loosing any privacy.
 Only spend the change to another entity, if these two won't make you trouble knowing you interact with both of them.
 If needed, you can consolidate several change coins, but we advise you to do it in a CoinJoin.
-In Joinmarket you can join mixes worth exactly the amount of the change.
+In JoinMarket you can specify the exact amount of CoinJoin, so it can be exactly the amount of the change.
 Or open a new Lightning Network node, create a channel and route the funds back to you.
 
 :::tip
