@@ -294,7 +294,7 @@ This helps you to judge weather there are privacy concerns when sending a specif
 You should ask yourself: "Who know this address is mine?"
 An example of a good label:
 
-`From Max, via BitPay`
+`Max, BitPay`
 
 `Bob, Coinbase`
 :::
