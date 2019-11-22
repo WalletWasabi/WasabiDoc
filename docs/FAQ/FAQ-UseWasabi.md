@@ -940,6 +940,18 @@ When all peers are registered, then the signing phase is done within a couple of
 Summing up: the faster peers register in the CoinJoins, the faster the mixes are.
 :::
 
+:::details
+### What is the coordinator address?
+
+The coordinator gets paid in every CoinJoin.
+And for transparency reasons, the same coordinator address is used.
+
+The current address used by the Wasabi coordinator is `bc1qa24tsgchvuxsaccp8vrnkfd85hrcpafg20kmjw`.
+
+Old addresses:
+- `bc1qs604c7jv6amk4cxqlnvuxv26hv3e48cds4m0ew`
+:::
+
 ## Hardware Wallet
 
 @[youtube](aU8ysH9JH9M)

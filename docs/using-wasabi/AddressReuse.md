@@ -49,6 +49,8 @@ We could give up transparency here to confuse less sophisticated observers by cr
 It’s a different tradeoff, not an improvement.
 The current coordinator address is `bc1qs604c7jv6amk4cxqlnvuxv26hv3e48cds4m0ew`, and the new one is `bc1qa24tsgchvuxsaccp8vrnkfd85hrcpafg20kmjw`.
 
+You can check every address used by the Wasabi coordinator [here](/FAQ/FAQ-UseWasabi.md#what-is-the-coordinator-address).
+
 ## 3. Dusting
 
 A while ago someone dusted many Wasabi CoinJoin UTXOs, this is also called the [forced address reuse attack](https://en.bitcoin.it/Privacy#Forced_address_reuse).
