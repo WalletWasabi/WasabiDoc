@@ -24,7 +24,7 @@ So when you send this change coin in a new transaction, the receiver knows that 
 
 When you have a KYC red shield `anonymity set 1` coin and you register it for CoinJoin, you get one green coin `anonymity set 100` and one red shield `anonymity set 1` change coin.
 This change is clearly tied to your KYC input coin, but the green coin is not.
-If you combine that red coin with the green, then it's clear that both of them belong to you, and thus the anonset of the output in this transaction becomes the lowest common denominator, in this case anonset 1.
+If you combine the red coin with the green one in a transaction, then it's clear that both of them belong to you, and thus the anonset of the output in this transaction becomes the lowest common denominator, in this case anonset 1.
 
 ### Second round CoinJoin change
 
