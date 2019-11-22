@@ -70,7 +70,7 @@ So consolidating your change in a CoinJoin is strictly better than consolidating
 
 ### Mix with Joinmarket.
 In [JoinMarket](https://github.com/JoinMarket-Org/joinmarket-clientserver) as a market taker you can specify exactly what denomination of equal value outputs are generated in the CoinJoin.
-So you can send the Wasabi change to your Joinmarket wallet and take an offer to mix for some rounds.
+So you can send the Wasabi change to your JoinMarket wallet and take an offer to mix for some rounds.
 The coin you will receive after the tumbling algorithm can have sufficient anonymity set, and you can use it for spending again.
 
 ### Open a Lightning Network channel.
