@@ -291,11 +291,12 @@ This helps you to judge weather there are privacy concerns when sending a specif
 
 ![](/ReceiveLabelingRequired.png)
 
+You should ask yourself: "Who know this address is mine?"
 An example of a good label:
 
-`June 20 - $400 from Coinbase, primary account`
+`From Max, via BitPay`
 
-`June 7 - 0.2 BTC Received from Bob via Bisq`
+`Bob, Coinbase`
 :::
 
 :::details
