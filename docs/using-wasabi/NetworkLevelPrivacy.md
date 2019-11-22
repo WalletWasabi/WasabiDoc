@@ -208,7 +208,7 @@ In this case, using a VPN and running the node over Tor it may not be enough to 
 
 ### Protection
 
-There are many ways to go about it, but staying completely undetected is far from trivial - traditional privacy enhancing tools mostly focus on the packet level, which is orthogonal to the technique. Let’s break up the potential defence vectors.
+There are many ways to go about it, but staying completely undetected is far from trivial - traditional privacy enhancing tools mostly focus on the packet level, which is orthogonal to the technique. Let’s break down the potential defence vectors.
 
 a. **VPN / Tor** - unlikely to affect the time series shape much, and therefore for larger traffic lengths the statistical significance of block-related spikes will inevitably become overwhelming.
 
