@@ -31,7 +31,7 @@ If you combine the red coin with the green one in a transaction, then it's clear
 When you take a 100 anonset coin, and you register it again for CoinJoin, then you get one coin with anonset 200, and one change with anonset 100.
 This change still has anonset 100 because it is the change output of a second CoinJoin that used a 100 anonset coin as input.
 This change can still reveal premix history which is another CoinJoin, therefore you cannot go further back.
-So, it might be ok to send this second change output to some place, or even consolidate it, because it still has anonset.
+So, it is ok to send this change output to some place, or even consolidate it, because it still has anonset 100.
 
 ## Why change is an issue
 
