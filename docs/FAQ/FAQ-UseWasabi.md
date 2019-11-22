@@ -290,6 +290,12 @@ When you clearly label a receiving address, then later when spending this coin, 
 This helps you to judge weather there are privacy concerns when sending a specific coin to some specific receiver.
 
 ![](/ReceiveLabelingRequired.png)
+
+An example of a good label:
+
+`June 20 - $400 from Coinbase, primary account`
+
+`June 7 - 0.2 BTC Received from Bob via Bisq`
 :::
 
 :::details
