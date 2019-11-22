@@ -56,7 +56,7 @@ If in a third transaction you want to send Alice 0.02 bitcoin, then you can cons
 Now Alice knows that you owned the 0.1 bitcoin and and that you currently own the 0.09 bitcoin change, but she cannot find out about your premix transaction history.
 
 ### Spend the change to another entity, if these two won't make you trouble knowing you interact with both of them.
-For example when with a 0.1 bitcoin mixed coin you buy coffee from Alice for 0.01 bitcoin, you get back 0.09 bitcoin change that Alice knows is yours.
+For example when you buy coffee with a 0.1 bitcoin mixed coin from Alice for 0.01 bitcoin, you get back 0.09 bitcoin change that Alice knows is yours.
 If in the next transaction you spend the 0.09 bitcoin change in the pizza restaurant of Bob, then Alice might find out that you go to Bob's restaurant, and if she doesn't like that, then she can refuse to serve you coffee the next time, or even worse.
 But if instead you spend the 0.09 bitcoin change in a transaction to Carol, a good friend of Alice, then Alice might not care and will still give you coffee for the next round.
 
