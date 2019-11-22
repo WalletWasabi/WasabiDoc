@@ -291,7 +291,8 @@ This helps you to judge weather there are privacy concerns when sending a specif
 
 ![](/ReceiveLabelingRequired.png)
 
-You should ask yourself: "Who know this address is mine?"
+You should ask yourself: "Who knows this address is mine?"
+
 An example of a good label:
 
 `Max, BitPay`
