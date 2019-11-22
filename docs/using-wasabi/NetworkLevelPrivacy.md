@@ -219,6 +219,7 @@ c. **Being your own ISP** - too spicy for most, but that should work.
 
 d. **Blockstream Satellite** - the ultimate solution.
 Eliminates the traffic analysis threat altogether.
+
 Beyond active measures available now, both privacy and bandwidth efficiency of Bitcoin communications are actively worked on.
 It is entirely possible that the messaging protocol will get to the point where block propagation doesn’t trigger any significant spikes in traffic volume.
 
