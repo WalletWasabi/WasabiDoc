@@ -18,7 +18,7 @@ When you want to buy some coffee from Alice, then in the `Send` tab you select o
 You put Alice's address in the `Receiving Address` field, and set the spending `Amount`, for example 0.5 bitcoin, this will be the first output of the transaction.
 The left over amount of 1.5 bitcoin will automatically go to a new address that you control, and this is the change output.
 This change coin can easily be tied to the input of the transaction, and thus also has `anonymity set 1`.
-So when you send this change coin in a next transaction, this receiver knows that you were part of the transaction to Alice.
+So when you send this change coin in a new transaction, the receiver knows that you were part of the transaction to Alice.
 
 ### First round CoinJoin change
 
