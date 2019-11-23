@@ -292,7 +292,7 @@ This helps you to judge weather there are privacy concerns when sending a specif
 ![](/ReceiveLabelingRequired.png)
 
 Not only, Wasabi uses a **smart coins selection algorithm** which allows Wasabi itself to recognize entities behind a transaction and then it can automatically select the group of coins that belong to those clusters already known.
-This allows the final user to merge more inputs from the same entities to make a transaction or partecipate in a CoinJoin round.
+This allows the final user to merge more inputs from the same entities to make a transaction or participate in a CoinJoin round.
 This is fantastic, but it requires the final user to label in detail every address.
 
 You should ask yourself: "Who knows this address is mine?"
