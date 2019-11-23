@@ -42,11 +42,27 @@ Lastly, understand that if you lose your password, it becomes much harder (if no
 Each time you receive coins, you will be asked to create a label.
 This label is only for you and is stored exclusively on your device.
 Wasabi has strong coin control features, and as you continue to use the wallet, you will observe that the history of your coins will appear, and this history is only useful to you if you are practicing good labeling. 
-An example of a good label:
 
-`Max, BitPay`
+Not only, Wasabi uses a **smart coins selection algorithm** which allows Wasabi himself to recognize entities behind a transaction and then it can automatically selects the group of coins that belong to those clusters already known.
+This allows the final user to merge more inputs from the same entities to make a transaction or partecipate in a CoinJoin round.
+This is fantastic, but it requires the final user to label in detail every address.
 
-`Bob, Coinbase`
+You should ask yourself: "Who knows this address is mine?"
+Labels should contain the comma-separated names of people/entities that may be aware about the transaction and could follow its trail like:
+
+`Name of the sender, name of the exchange`
+
+So, a good label could be:
+
+`Alice, Bitfinex`
+
+or:
+
+`Company Boss`
+
+or again:
+
+`Alice and Bob` (that is not the same as `Alice, Bob` as they are multiple entities separated by a comma).
 
 Examples of bad labels:
 
