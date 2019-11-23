@@ -77,18 +77,7 @@ Because the CoinJoin output is blinded in the first steps of the ceremony, it ca
 We could refuse the registration of these actors, but then they’d change their addresses, then we’d have to pick them out again, then they’d change their addresses again and so on…
 This would also decrease the denial of service protections currently implemented.
 
-## 5. Mixing With Same Wallet File
-
-In order to increase the speed of mixing large amounts, some are running multiple Wasabi instances with the same wallet file. 
-In this case one wallet software instance is not aware of the other registering the same coin to a mix and it results in address reuse.
-This is not how Wasabi is designed to be used, and such a hack around the proper work flow is always dangerous.
-
-**How to improve?**
-We could prevent mixing with the same wallet file, but we have long term plans to fix it. 
-In the future we want to prevent opening multiple Wasabi instances altogether. 
-But for this we will have to build out multi-wallet monitoring and by extension multiwallet loading so to not take away existing functionality without providing an alternative.
-
-## 6. Wallet State Issue
+## 5. Wallet State Issue
 
 Finally we arrived to the type of address reuse that was actually a known bug in Wasabi. 
 This was happening, because Wasabi sometimes lost unconfirmed transactions, so the wallet wasn’t aware of that an address was used, thus it registered it to a CoinJoin.
