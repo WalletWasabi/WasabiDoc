@@ -63,10 +63,11 @@ But if instead you spend the 0.09 bitcoin change in a transaction to Carol, a go
 ### Consolidate several change coins, but in a CoinJoin directly.
 If you would consolidate many change coins in a regular non-CoinJoin transaction in the `Send` tab, then any outside observer can easily see that one user controls all these coins.
 Because there are hundreds of randomly ordered inputs in a Wasabi CoinJoin transaction, it is no longer easy to find out which coins belong to one single user.
-However, during the [input registration phase](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-input-registration-phase), your wallet provides an input proof for all the registered coins to the coordinator.
+However, a well resourced attacker can perform [CoinJoin sudoku](/FAQ/FAQ-GeneralBitcoinPrivacy.md#what-is-a-coinjoin-sudoku) to find out which several inputs fund the change output.
+Further, during the [input registration phase](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-input-registration-phase), your wallet provides an input proof for all the registered coins to the coordinator.
 Thus the coordinator knows that you control all these coins, and although zkSNACKs claims to not keep any logs, it is a reasonable assumption that everyone knows what the coordinator knows.
 In this CoinJoin you get an equal value mixed coin, which is no longer tied to any of your change coins, and a change output that can be tied to these inputs.
-So consolidating your change in a CoinJoin is strictly better than consolidating in a regular sending transaction, but it still leaks sensitive information to the coordinator.
+So consolidating your change in a CoinJoin is strictly more private and efficient than consolidating in a regular sending transaction, but it still leaks sensitive information to the coordinator.
 
 ### Mix with Joinmarket.
 In [JoinMarket](https://github.com/JoinMarket-Org/joinmarket-clientserver) as a market taker you can specify exactly what denomination of equal value outputs are generated in the CoinJoin.
