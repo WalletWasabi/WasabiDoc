@@ -297,7 +297,7 @@ An example of a good label:
 
 `Alice, BTCPay`
 
-`Bob, Coinbase`
+`Bob, Bull Bitcoin`
 :::
 
 :::details
