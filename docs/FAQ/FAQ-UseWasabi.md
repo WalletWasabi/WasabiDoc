@@ -295,7 +295,7 @@ You should ask yourself: "Who knows this address is mine?"
 
 An example of a good label:
 
-`Max, BitPay`
+`Alice, BTCPay`
 
 `Bob, Coinbase`
 :::
