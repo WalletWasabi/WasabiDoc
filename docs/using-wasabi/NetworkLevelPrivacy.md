@@ -191,3 +191,38 @@ This article will surely help me win Internet arguments.
 And, in the end, isn’t that’s what really matters?
 
 @[youtube](qguwAvA5Fx4)
+
+## Who else knows you are running Bitcoin?
+
+Every time you use software that interacts with a Bitcoin network, and especially a Bitcoin node, you leave a sticky fingerprint in your traffic.
+It comes in the form of a small, but unavoidable spike in volume every time a new block is mined and the nodes start gossiping about it.
+The blocks in Bitcoin are quite big, and the propagation speed is critical for consensus (greater delay means more frequent accidental forks), so such effect is predictable, and, in a sense, inherent to the Bitcoin architecture.
+
+Notably, the volume of block-related messages was drastically reduced since the introduction of Compact Block Relay ([BIP 152](https://github.com/bitcoin/bips/blob/master/bip-0152.mediawiki).
+Instead of requesting whole blocks, mostly consisting of transactions already known to the node, the peer informed of a new block is only requesting the missing transactions.
+Yet the amount of extra communications in the seconds following a new block is still considerable.
+This effect may not be noticeable for a single block, but over time it gets statistically significant, and may get exploited.
+
+As reported by [Niko Kudriastev and Michael Maltsev](https://m417z.com/bitsniff/), it is possible to detect Bitcoin communications using nothing but traffic volume over time - an information even most privacy concerned individuals are likely leaking to their law-abiding Internet Service Provider.
+In this case, using a VPN and running the node over Tor may not be enough to avoid being detected.
+
+### Protection
+
+There are many ways to go about it, but staying completely undetected is far from trivial - traditional privacy enhancing tools mostly focus on the packet level, which is orthogonal to the technique. Let’s break down the potential defense vectors.
+
+a. **VPN / Tor** - unlikely to affect the time series shape much, and therefore for larger traffic lengths the statistical significance of block-related spikes will inevitably become overwhelming.
+
+b. **Traffic mixing** - for traffic volumes that are orders of magnitude higher than Bitcoin P2P communications, mixing is likely to be very effective.
+That would, however, demand constant shielding of both upstream and downstream communications, and couldn’t be done effectively by just running the node on a general purpose machine - any noticeably long unshielded period may be enough for detection.
+
+c. **Being your own ISP** - too spicy for most, but that should work.
+
+d. **Blockstream Satellite** - the ultimate solution.
+Eliminates the traffic analysis threat altogether.
+
+Beyond active measures available now, both privacy and bandwidth efficiency of Bitcoin communications are actively worked on.
+It is entirely possible that the messaging protocol will get to the point where block propagation doesn’t trigger any significant spikes in traffic volume.
+
+You can read more about BitSniff [here](https://79jke.github.io/BitSniff/) and check the interactive demo [here](https://m417z.com/bitsniff/).
+
+@[youtube](9S8xsDq3PTU)
