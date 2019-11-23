@@ -60,15 +60,6 @@ For example when you buy coffee with a 0.1 bitcoin mixed coin from Alice for 0.0
 If in the next transaction you spend the 0.09 bitcoin change in the pizza restaurant of Bob, then Alice might find out that you go to Bob's restaurant, and if she doesn't like that, then she can refuse to serve you coffee the next time, or even worse.
 But if instead you spend the 0.09 bitcoin change in a transaction to Carol, a good friend of Alice, then Alice might not care and will still give you coffee for the next round.
 
-### Consolidate several change coins, but in a CoinJoin directly.
-If you would consolidate many change coins in a regular non-CoinJoin transaction in the `Send` tab, then any outside observer can easily see that one user controls all these coins.
-Because there are hundreds of randomly ordered inputs in a Wasabi CoinJoin transaction, it is no longer easy to find out which coins belong to one single user.
-However, a well resourced attacker can perform [CoinJoin sudoku](/FAQ/FAQ-GeneralBitcoinPrivacy.md#what-is-a-coinjoin-sudoku) to find out which several inputs fund the change output.
-Further, during the [input registration phase](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-input-registration-phase), your wallet provides an input proof for all the registered coins to the coordinator.
-Thus the coordinator knows that you control all these coins, and although zkSNACKs claims to not keep any logs, it is a reasonable assumption that everyone knows what the coordinator knows.
-In this CoinJoin you get an equal value mixed coin, which is no longer tied to any of your change coins, and a change output that can be tied to these inputs.
-So consolidating your change in a CoinJoin is strictly more private and efficient than consolidating in a regular sending transaction, but it still leaks sensitive information to the coordinator.
-
 ### Mix with Joinmarket.
 In [JoinMarket](https://github.com/JoinMarket-Org/joinmarket-clientserver) as a market taker you can specify exactly what denomination of equal value outputs are generated in the CoinJoin.
 So you can send the Wasabi change to your JoinMarket wallet and take an offer to mix for some rounds.
@@ -81,3 +72,12 @@ So a good strategy is to create a new lightning node and public key, send the wh
 Then route a payment either to a merchant for goods and services, or to your own main Lightning node for further use.
 After the balance of the channel is entirely on the other side, cooperatively close the channel with your peer, so that he gets the only output in the closing transaction.
 Since Wasabi does not yet support Lightning Network functionality, you must use a different wallet for this task.
+
+### Consolidate several change coins, but in a CoinJoin directly.
+If you would consolidate many change coins in a regular non-CoinJoin transaction in the `Send` tab, then any outside observer can easily see that one user controls all these coins.
+But when consolidating in a CoinJoin directly, because there are hundreds of randomly ordered inputs in a Wasabi CoinJoin transaction, it is no longer easy to find out which coins belong to one single user.
+However, a well resourced attacker can perform [CoinJoin sudoku](/FAQ/FAQ-GeneralBitcoinPrivacy.md#what-is-a-coinjoin-sudoku) to find out which several inputs fund the change output.
+Further, during the [input registration phase](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-input-registration-phase), your wallet provides an input proof for all the registered coins to the coordinator.
+Thus the coordinator knows that you control all these coins, and although zkSNACKs claims to not keep any logs, it is a reasonable assumption that everyone knows what the coordinator knows.
+In this CoinJoin you get an equal value mixed coin, which is no longer tied to any of your change coins, and a change output that can be tied to these inputs.
+So consolidating your change in a CoinJoin is strictly more private and efficient than consolidating in a regular sending transaction, but it still leaks sensitive information to the coordinator.
