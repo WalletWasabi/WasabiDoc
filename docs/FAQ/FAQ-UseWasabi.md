@@ -296,7 +296,7 @@ This allows the final user to merge more inputs from the same entities to make a
 This is fantastic, but it requires the final user to label in detail every address.
 
 You should ask yourself: "Who knows this address is mine?"
-Labels should contain the comma-separated names of people/entities that may be aware about the transaction and could follow its trail like:
+Labels should contain the comma-separated names of people/entities that may be aware of the transaction and could follow its trail like:
 
 `Name of the sender, name of the exchange`
 
