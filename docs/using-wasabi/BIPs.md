@@ -164,8 +164,12 @@ The resulting protocol guarantees that light clients with at least one honest pe
 ### BIP 322: Generic Message Signing Format
 
 [BIP 322](https://github.com/bitcoin/bips/blob/master/bip-0322.mediawiki) is a standard for interoperable generic signed messages based on the Bitcoin Script format.
-
 :::
+
+:::details
+### BIP 325: Signet
+
+[BIP 325](https://github.com/bitcoin/bips/blob/master/bip-0325.mediawiki) is a new model for a testing network of Bitcoin that is based on block signing, not block mining.
 
 :::details
 ### BIP Schnorr
