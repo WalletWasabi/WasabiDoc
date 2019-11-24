@@ -37,7 +37,8 @@ So, it is ok to send this change output to some place, or even consolidate it, b
 
 Change is not inherently bad, it's a fundamental part of how Bitcoin and the UTXO model works.
 However, when spending a change coin, then the receiver can easily deduce that the sender was also part of the previous transaction that generated the change.
-You want to avoid merging `anonymity set 1` coin with `anonymity set > 1` coin whenever possible, because this will link your `anonymity set > 1` coin to the coin you merge it with.
+When ever you are merging coins in one transaction, it becomes clear to any outside observer that these coins belong to the same entity, thus linking the previous transaction history.
+You want to avoid merging `anonymity set 1` coin with `anonymity set > 1` mixed coin whenever possible, because this will link these coins and negate the privacy gained through the CoinJoin.
 
 ## Your options to use change privately
 
