@@ -106,7 +106,7 @@ The connection confirmation phase ends when all Alices have provided their input
 ### Output registration
 
 Now that all peers are online, we are ready to proceed with the [output registration phase](https://github.com/nopara73/zerolink#2-output-registration-phase) of the round.
-Your Wasabi client generates a completely new tor identity **Bob**, he is in no way tied to Alice.
+Your Wasabi client generates a completely new tor identity **Bob**, that is in no way tied to Alice.
 Bob sends to the Wasabi coordinator:
 
 * The clear-text address for the anonset CoinJoin output.
