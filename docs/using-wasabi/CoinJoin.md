@@ -101,7 +101,7 @@ The connection confirmation phase ends when all Alice's have provided their inpu
 ### Output registration
 
 Now that all peers are online, we are ready to proceed with the [output registration phase](https://github.com/nopara73/zerolink#2-output-registration-phase) of the round.
-Wasabi generates a completely new tor identity **Bob**, he is in no way tied to Alice.
+Your Wasabi client generates a completely new tor identity **Bob**, he is in no way tied to Alice.
 Bob sends to the Wasabi coordinator:
 
 * The clear-text address for the anonset CoinJoin output.
@@ -115,7 +115,7 @@ Because Alice has sent the clear-text input, and Bob sends the clear-text output
 So, if the two were to be linked, then the coordinator can specifically link the input to the output, meaning that the anonymity set is 1.
 Because Alice commits to the output by sending it blinded, and because Bob is a new tor identity not linked to Alice, the coordinator can verify that nobody is cheating, but he cannot deanonymize the peers.
 
-The output registration phase ends when the value of clear-text outputs plus change outputs is equal to the value of inputs.
+The output registration phase ends when the value of clear-text outputs plus change outputs is equal to the value of inputs, meaning all Bobs have registered.
 If after a timeout not all outputs are registered, then this round is abandoned, the missing peers are banned, and a new round is started.
 
 ### Signing
