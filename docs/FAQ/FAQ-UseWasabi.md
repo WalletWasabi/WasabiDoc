@@ -742,7 +742,8 @@ But regardless how many participatns, two hours after the last CoinJoin this rou
 :::details
 ### What is happening in the connection confirmation phase?
 
-
+Because the input registration phase can take up to two hours, after it is complete the coordinator needs to ensure that everyone is still online and ready to continue.
+So in the [connection confirmation phase](/using-wasabi/CoinJoin.md#connection-confirmation) every Alice sends a life signal to the coordinator, and when all have checked in, this phase concludes.
 :::
 
 :::details
