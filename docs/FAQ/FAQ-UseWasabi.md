@@ -734,7 +734,9 @@ As a result the round mixing amount will often be a specific number which genera
 :::details
 ### What is happening in the input registration phase?
 
-
+During this phase you and all other peers have the opportunity to register coins that you want to mix in this round.
+Since the goal is to have 100 peers in one round, the [input registration phase](/using-wasabi/CoinJoin.md#input-registration) can take quite a long time.
+But regardless how many participatns, two hours after the last CoinJoin this round is complete.
 :::
 
 :::details
