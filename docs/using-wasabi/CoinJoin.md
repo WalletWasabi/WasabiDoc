@@ -61,7 +61,7 @@ From now on there is no more interaction required, just leave Wasabi running in 
 During the [input registration](https://github.com/nopara73/zerolink#1-input-registration-phase), you select which coins you want to register for CoinJoin.
 These coins need to be confirmed on the Bitcoin timechain, unless they are from a Wasabi CoinJoin and you re-register them.
 In the background, Wasabi generates an input proof, a signature over a challenge message with the private key that locks up the coins.
-With this the coordinator can verify that you actually own this coin.
+With this the coordinator can verify that you actually own these coins.
 Then your Wasabi client generates several fresh addresses, depending on the value of inputs registered.
 The address of the anonset CoinJoin output must not be linked to your input, and thus it is [cryptographically blinded](https://en.wikipedia.org/wiki/Blind_signature) to incomprehensible cypher-text.
 Since the change output can be easily linked to your input with [CoinJoin sudoku](/FAQ/FAQ-GeneralBitcoinPrivacy.md#what-is-a-coinjoin-sudoku), this address is not blinded, but kept in clear-text.
@@ -142,4 +142,3 @@ The signing phase ends when the coordinator has all the valid signatures for all
 The CoinJoin transaction is successfully built and signed, and it is now ready to be [broadcasted](https://github.com/nopara73/zerolink#transaction-broadcasting) to the peers of the Bitcoin network.
 The coordinator sends this transaction over the tor network to a random Bitcoin P2P node, and from there it is gossiped to other nodes and miners.
 Wasabi is saving on mining fees by setting a confirmation target of roughly 12 hours, but you can re-register unconfirmed anonset outputs for the next round of CoinJoin.
-
