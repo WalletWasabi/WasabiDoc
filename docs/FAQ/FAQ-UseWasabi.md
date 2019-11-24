@@ -738,7 +738,7 @@ During this phase you have the opportunity to register coins that you want to mi
 Your Wasabi client connects to the coordinator server with a unique tor identity called Alice, and with it you send the input proofs, the clear-text change output, and the blinded anonset CoinJoin address.
 When all the proofs are valid, the coordinator signs the blinded output without knowing which address this is, and sends this back to Alice.
 Since the goal is to have 100 peers in one round, the [input registration phase](/using-wasabi/CoinJoin.md#input-registration) can take some time.
-But regardless how many participatns, two hours after the last CoinJoin this round is complete.
+But regardless of how many participants, two hours after the last CoinJoin this phase is complete.
 :::
 
 :::details
