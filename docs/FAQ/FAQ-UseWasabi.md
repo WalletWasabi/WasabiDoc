@@ -763,13 +763,13 @@ Immediately after Bob disconnects and the [output registration phase](/using-was
 After all Alices have registered their inputs and change outputs, and all Bobs their anonset outputs, the coordinator has all the information to build the CoinJoin transaction and include his fee output.
 This raw transaction is send to all Alices, each of them verifies if the transaction is valid and then signs it.
 The signature is send back to the coordinator who accumulates all of them and builds the signed final CoinJoin transaction.
-The [singing phase](/using-wasabi/CoinJoin.md#signing-phase) is concluded when the coordinator receives all the signatures.
+The [singing phase](/using-wasabi/CoinJoin.md#signing) is concluded when the coordinator receives all the signatures.
 :::
 
 :::details
 ### What is happening in the broadcasting phase?
 
-
+In the [broadcasting phase](/using-wasabi/CoinJoin.md#broadcasting) the coordinator sends the signed final CoinJoin transaction to several random Bitcoin peer to peer nodes, and it is gossiped throughout the network to the miners.
 :::
 
 :::details
