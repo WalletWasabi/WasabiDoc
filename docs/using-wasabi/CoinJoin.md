@@ -15,7 +15,7 @@
 
 1. Launch Wasabi, and open your wallet with the coins that you want to join.
 Notice that it is not yet possible to CoinJoin from a hardware wallet, the keys must be "hot" on your computer.
-Then open the `CoinJoin` tab in the tab or the right side menu.
+Then open the `CoinJoin` tab from the right side menu.
 
 ![](/CoinJoin.png)
 
@@ -59,7 +59,6 @@ From now on there is no more interaction required, so you can leave Wasabi runni
 ### Signing
 
 ### Broadcasting
-
 
 
 
