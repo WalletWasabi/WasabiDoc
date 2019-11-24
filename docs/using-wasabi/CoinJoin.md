@@ -46,7 +46,7 @@ From now on there is no more interaction required, just leave Wasabi running in 
 
 ![](/CoinJoinStatus.png)
 
-6. Eventually the round is successful, and the CoinJoin transaction broadcasted, then you will receive fresh coins with a high anonymity set, as well as non-private change.
+6. When the CoinJoin is finished, and the CoinJoin transaction is broadcast, you will receive a fresh coin with a high anonymity set, as well as non-private change.
 
 
 ## ZeroLink protocol step-by-step
