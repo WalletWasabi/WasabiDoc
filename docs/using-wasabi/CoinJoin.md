@@ -94,7 +94,7 @@ The input registration phase ends when either, the number of registered inputs e
 
 ### Connection confirmation
 
-There are many Alices of different users registering their inputs in the first phase, and this takes a while, up to two hours.
+There are many Alices (different users) registering their inputs in the first phase, and this takes a while, up to two hours.
 The connection confirmation phase makes sure that all of them are still online and ready to continue.
 The coordinator verifies the unique ID from all the Alices, and when everyone is still communicating, then the coordinator returns the round hash of all the registered inputs.
 The round is abandoned and re-started if too many Alices have dropped, for example when their Wasabi is shut down, or when their tor connection is temporarily broken.
