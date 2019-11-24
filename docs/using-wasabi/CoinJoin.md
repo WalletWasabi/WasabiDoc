@@ -51,17 +51,17 @@ From now on there is no more interaction required, just leave Wasabi running in 
 
 ## ZeroLink protocol step-by-step
 
-
 ### Input registration
 
 During the [input registration](https://github.com/nopara73/zerolink#1-input-registration-phase), you select which coins you want to register for CoinJoin.
 These coins need to be confirmed on the Bitcoin timechain, unless they are from a Wasabi CoinJoin and you re-register them.
-In the background, Wasabi generates an input proof so that the coordinator can verify that you actually own this coin.
-Then Wasabi generates several addresses, depending on the value of inputs registered.
+In the background, Wasabi generates an input proof, a signature over a challenge message with the private key that locks up the coins.
+With this the coordinator can verify that you actually own this coin.
+Then your Wasabi client generates several fresh addresses, depending on the value of inputs registered.
 The address of the anonset CoinJoin output must not be linked to your input, and thus it is [cryptographically blinded](https://en.wikipedia.org/wiki/Blind_signature) to incomprehensible cypher-text.
-Since the change output can be easily linked to your input with CoinJoin sudoku [reference missing], this address is not blinded, but sent in clear-text.
+Since the change output can be easily linked to your input with [CoinJoin sudoku](/FAQ/FAQ-GeneralBitcoinPrivacy.md#what-is-a-coinjoin-sudoku), this address is not blinded, but kept in clear-text.
 
-Wasabi wallet generates a new tor identity [reference missing] called **Alice**, she is like a separate entity, and for every round you use a new Alice who is not linked to any previous connection.
+Wasabi wallet generates a new [tor identity](https://tb-manual.torproject.org/managing-identities/) called **Alice**, she is like a separate entity, and for every round you use a new Alice who is not linked to any previous connection.
 With Alice, you send some information to the Wasabi coordinator server:
 
 * The input coin that you want to register, together with the input proof signature.
@@ -73,14 +73,14 @@ The Wasabi coordinator now verifies that:
 * There is still room for more peers on this CoinJoin.
 * The blinded output has never been registered before.
 * Each input has not been registered before, is not banned, is unspent, and that the input proof is valid.
-* That the sum value of inputs is higher than the minimum required value of 0.1 bitcoin.
+* That the sum value of inputs is higher than the minimum required value of roughly 0.1 bitcoin.
 
 Only when all these checks are valid does the coordinator sign the blinded output.
-He does not know the address that he is signing, because it is blinded.
+He does not know the address that he is signing, because it is blinded cypher-text.
 This signature is proof that the coordinator has verified that Alice is not cheating.
 The coordinator sends the signed blinded output back to Alice.
 
-Alice has the private key to unblind the signed blinded output.
+Alice has the secret parameters needed to unblind the signed blinded output.
 With the magic of cryptography, she can reveal the clear-text address of the anonset CoinJoin output, however, the coordinator signature is still attached to this address.
 
 The input registration phase ends when either, the number of registered inputs exceeds the number of required inputs [meaning anonymity set of 100 peers]; or when the last round was two hours ago.
