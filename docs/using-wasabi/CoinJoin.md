@@ -99,7 +99,7 @@ The connection confirmation phase makes sure that all of them are still online a
 The coordinator verifies the unique ID from all the Alices, and when everyone is still communicating, then the coordinator returns the round hash of all the registered inputs.
 The round is abandoned and re-started if too many Alices have dropped, for example when their Wasabi is shut down, or when their tor connection is temporarily broken.
 
-The connection confirmation phase ends when all Alice's have provided their inputs, or after a timeout when the online Alices are still larger than the required number of peers.
+The connection confirmation phase ends when all Alices have provided their inputs, or after a timeout when the online Alices are still larger than the required number of peers.
 
 @[youtube](hhkL0QvIaGY)
 
