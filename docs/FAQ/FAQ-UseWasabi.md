@@ -735,6 +735,8 @@ As a result the round mixing amount will often be a specific number which genera
 ### What is happening in the input registration phase?
 
 During this phase you and all other peers have the opportunity to register coins that you want to mix in this round.
+Your Wasabi client connects to the coordinator server with a unique tor identity called Alice, and with her you send the input proofs, the clear-text change output, and the blinded anonset CoinJoin address.
+When all the proofs are valid, the coordinator signs the blinded output without knowing which address this is, and sends this back to Alice.
 Since the goal is to have 100 peers in one round, the [input registration phase](/using-wasabi/CoinJoin.md#input-registration) can take quite a long time.
 But regardless how many participatns, two hours after the last CoinJoin this round is complete.
 :::
@@ -749,7 +751,10 @@ So in the [connection confirmation phase](/using-wasabi/CoinJoin.md#connection-c
 :::details
 ### What is happening in the output registration phase?
 
-
+You use some secret parameters to unblind the blinded CoinJoin output to reveal the cleartext address that still contains the signature of the coordinator.
+Wasabi creates a new tor identity called Bob, and he sends the unblinded anonset output together with the signature to the coordinator.
+The coordinator can now verify his own signature, thus he knows that previously he has confirmed that Alice had all valid inputs.
+Immediately after Bob disconnects.
 :::
 
 :::details
