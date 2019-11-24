@@ -21,7 +21,7 @@ Then open the `CoinJoin` tab from the right side menu.
 
 2. Select coins for joining by clicking the check box in the coin list.
 You can select one or more coins, but when several are selected, then they can be linked and clustered by an attacker.
-So choose carefully which coins you want others to know belong to the same entity.
+So choose carefully which coins you want others to know belong to the same entity (you).
 You can select red shield coins, which are not private yet, but will gain anonymity set in this round of CoinJoin.
 Also you can select green shield coins, who come from a previous round of CoinJoin, so that they gain even more anonymity set.
 What is important is that the sum of coins registered have a value larger than the minimum level, which is currently roughly 0.1 bitcoin.
@@ -59,6 +59,5 @@ From now on there is no more interaction required, so you can leave Wasabi runni
 ### Signing
 
 ### Broadcasting
-
 
 
