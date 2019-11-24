@@ -78,7 +78,7 @@ The Wasabi coordinator now verifies that:
 Only when all these checks are valid does the coordinator sign the blinded output.
 He does not know the address that he is signing, because it is blinded cypher-text.
 This signature is proof that the coordinator has verified that Alice is not cheating.
-The coordinator sends the signed blinded output back to Alice.
+The coordinator sends the signed blinded output back to Alice, together with a unique ID that is the identifier of this specific Alice in this round.
 
 Alice has the secret parameters needed to unblind the signed blinded output.
 With the magic of cryptography, she can reveal the clear-text address of the anonset CoinJoin output, however, the coordinator signature is still attached to this address.
@@ -89,11 +89,12 @@ The input registration phase ends when either, the number of registered inputs e
 
 ### Connection confirmation
 
-There are many Alices registering their inputs in the first phase, and the connection confirmation phase makes sure that all of them are still online.
+There are many Alices of different users registering their inputs in the first phase, and this takes a while, up to two hours.
+The connection confirmation phase makes sure that all of them are still online and ready to continue.
 The coordinator verifies the unique ID from all the Alices, and when everyone is still communicating, then the coordinator returns the round hash of all the registered inputs.
-The round is abandoned and re-started if too many Alices have dropped, for example when Wasabi is shut down, or when the tor connection is temporarily broken.
+The round is abandoned and re-started if too many Alices have dropped, for example when their Wasabi is shut down, or when their tor connection is temporarily broken.
 
-The connection confirmation phase ends when all Alices have provided their inputs, or after a timeout when the online Alices are still larger than the required number of peers.
+The connection confirmation phase ends when all Alice's have provided their inputs, or after a timeout when the online Alices are still larger than the required number of peers.
 
 @[youtube](hhkL0QvIaGY)
 
