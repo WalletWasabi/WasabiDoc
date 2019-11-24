@@ -41,7 +41,7 @@ You only have to enter the password for the first round of mixing, the re-mix di
 
 ![](/CoinJoinCoinsBeingCoinJoined.png)
 
-5. Now wait until the protocol is complete, the round continues either as soon as 100 peers have registered their coins, or after two hours since the last round.
+5. Now wait until the CoinJoin is complete, the round starts either as soon as 100 peers have registered their coins, or after two hours since the last round.
 From now on there is no more interaction required, so you can leave Wasabi running in the background of your computer.
 
 ![](/CoinJoinStatus.png)
@@ -59,5 +59,4 @@ From now on there is no more interaction required, so you can leave Wasabi runni
 ### Signing
 
 ### Broadcasting
-
 
