@@ -73,6 +73,14 @@ Then route a payment either to a merchant for goods and services, or to your own
 After the balance of the channel is entirely on the other side, cooperatively close the channel with your peer, so that he gets the only output in the closing transaction.
 Since Wasabi does not yet support Lightning Network functionality, you must use a different wallet for this task.
 
+### Atomic swap into Lightning Network
+There are some services who provide an atomic swap where you send the whole change coin to a multisignature hashed time locked contract on-chain.
+In exchange you receive a payment routed through the Lightning Network into one of your payment channels.
+The swap is atomic, meaning either you receive the lightning payment, or you get the bitcoin back on-chain, so the service provider cannot steal from you.
+If you use a regular lightning invoice to receive the funds, then the service provider knows your node public key and the channel he sends the bitcoin to.
+For much superior privacy, use rendezvous routing so that the sender does not gain knowledge of your receiving node.
+Also ensure that the communication with the swap server is done over the tor network.
+
 ### Consolidate several change coins, but in a CoinJoin directly.
 If you would consolidate many change coins in a regular non-CoinJoin transaction in the `Send` tab, then any outside observer can easily see that one user controls all these coins.
 But when consolidating in a CoinJoin directly, because there are hundreds of randomly ordered inputs in a Wasabi CoinJoin transaction, it is no longer easy to find out which coins belong to one single user.
