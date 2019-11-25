@@ -47,7 +47,7 @@ This way anyone can.
 The idea of coordinator address reuse is transparency. 
 We could give up transparency here to confuse less sophisticated observers by creating a new coordinator address for every CoinJoin. 
 It’s a different tradeoff, not an improvement.
-The current coordinator address is `bc1qs604c7jv6amk4cxqlnvuxv26hv3e48cds4m0ew`, and the new one is `bc1qa24tsgchvuxsaccp8vrnkfd85hrcpafg20kmjw`.
+The current coordinator address is `bc1qa24tsgchvuxsaccp8vrnkfd85hrcpafg20kmjw`, and the old one is `bc1qs604c7jv6amk4cxqlnvuxv26hv3e48cds4m0ew`.
 
 You can check every address used by the Wasabi coordinator [here](/FAQ/FAQ-UseWasabi.md#what-is-the-coordinator-address).
 
