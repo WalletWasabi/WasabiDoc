@@ -10,8 +10,13 @@
 ## Get The Requirements
 
 1. Install [Git](https://git-scm.com/downloads)
-2. Install [.NET Core 3.0 SDK](https://www.microsoft.com/net/download) for "Building Apps" (Note, optionally you can disable .NET's telemetry by typing on Linux and OSX: `export DOTNET_CLI_TELEMETRY_OPTOUT=1` or on Windows `set DOTNET_CLI_TELEMETRY_OPTOUT=1`.)
-  
+2. Install [.NET Core 3.0 SDK](https://www.microsoft.com/net/download) for "Building Apps" 
+
+
+:::tip Optional
+You can disable .NET's telemetry, which is sending some usage information to Microsoft, by typing on Linux and OSX: `export DOTNET_CLI_TELEMETRY_OPTOUT=1` or on Windows `set DOTNET_CLI_TELEMETRY_OPTOUT=1`.
+:::
+
 ## Get Wasabi
 
 Clone & Restore & Build
