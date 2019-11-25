@@ -46,14 +46,15 @@ If you have an answer to a question, please [open a pull request](https://github
 ## Privacy Best Practices
 
 - [Address Reuse](using-wasabi/AddressReuse.md)
-- [Lost Password Strategy](using-wasabi/LostPassword.md)
 - [Network Level Privacy](using-wasabi/NetworkLevelPrivacy.md)
 - [How you can be de-anonymized using Bitcoin](using-wasabi/Deanonimization.md)
 - [Pay to EndPoint](using-wasabi/PayToEndPoint.md)
 
 ## Restoring Wasabi
 
+- [Wallet Recovery](/using-wasabi/WalletRecovery.md)
 - [Restoring Wasabi Wallet to Electrum](using-wasabi/RestoreElectrum.md)
+- [Lost Password Strategy](using-wasabi/LostPassword.md)
 
 ## Building Wasabi
 
