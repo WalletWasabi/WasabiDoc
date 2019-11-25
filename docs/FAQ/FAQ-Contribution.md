@@ -45,8 +45,11 @@ Especially review by experienced C# developers are vitally important, yet even t
 
 There are three developers who have the ability to merge code into master branch.
 - [Ádám Ficsor](https://github.com/nopara73) [co-founder and former CTO of [zkSnacks Ltd](https://zksnacks.com/), co-author of the [zero link Bitcoin fungibility framework](https://github.com/nopara73/ZeroLink)] is the [admin](https://help.github.com/en/articles/repository-permission-levels-for-an-organization) of the [GitHub repository](https://github.com/zksnacks/walletwasabi) and has full write access to everything in it, he has the ability to merge any code that he wants.
-- [Lucas Ontivero](https://github.com/lontivero) [lead engineer of [zkSnacks Ltd](https://zksnacks.com/)] is [co-maintainer](https://help.github.com/en/articles/repository-permission-levels-for-an-organization) of the [GitHub repository](https://github.com/zksnacks/walletwasabi), he can merge a pull request, but only when both Ádám and Dávid have reviewed and acknowledged the changes.
-- [Dávid Molnár](https://github.com/molnard) is [co-maintainer](https://help.github.com/en/articles/repository-permission-levels-for-an-organization) of the [GitHub repository](https://github.com/zksnacks/walletwasabi), he can merge a pull request, but only when both Ádám and Lucas have reviewed and acknowledged the changes.
+However, the agreed upon convention is that he only merges code that one of either Lucas or Dávid have reviewed and acknowledged.
+- [Lucas Ontivero](https://github.com/lontivero) [lead engineer of [zkSnacks Ltd](https://zksnacks.com/)] is [co-maintainer](https://help.github.com/en/articles/repository-permission-levels-for-an-organization) and administrator of the [GitHub repository](https://github.com/zksnacks/walletwasabi), he can merge any pull request.
+However, the agreed upon convention is that he only merges code that one of either Ádám or Dávid have reviewed and acknowledged.
+- [Dávid Molnár](https://github.com/molnard) is [co-maintainer](https://help.github.com/en/articles/repository-permission-levels-for-an-organization) and administrator of the [GitHub repository](https://github.com/zksnacks/walletwasabi), he can merge any pull request.
+However, the agreed upon convention is that he only merges code that one of either Ádám or Lucas have reviewed and acknowledged.
 :::
 
 :::details
