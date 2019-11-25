@@ -147,6 +147,20 @@ In the second case, if you happen to broadcast a transaction of yours to a full 
 Yes, just follow the [Wasabi Setup on Tails](/using-wasabi/WasabiSetupTails.md) guide and remember to save/backup the wallet on the Persistence.
 :::
 
+:::details
+### What are the differences between the Debian/Ubuntu version and the "Other Linux" version?
+
+`Debian/Ubuntu` version contains `.deb` package.
+`Other Linux` version contains `.tar.gz` package.
+
+The advantages of the .deb format is solely packaging related.
+It installs Wasabi in your computer, so you're able to access it from start menu, remove it through apt, and so on.
+
+The "Other Linux" option is just a generic install method not targeted to Debian/Ubuntu specifically but that works on it anyway because it is still linux.
+
+There's no difference in the code, the same binaries are being delivered in different formats.
+:::
+
 ## Advanced Installation
 
 :::details
