@@ -364,6 +364,16 @@ Schnorr key and signature aggregation with MuSig increases the privacy, since on
 So when Schnorr is activated in the Bitcoin consensus layer, in #twoweeks, there are no privacy concerns standing in the way of Wasabi multisig!
 :::
 
+:::details
+### How does Wasabi know of incoming transactions to the mempool?
+
+When Wasabi is running, it connects to random Bitcoin peer to peer nodes and listens for their gossip of all transactions on the network.
+Based on this information Wasabi builds its own local mempool of unconfirmed transactions.
+So when you have Wasabi running, you will be notified about an incoming receiving transaction as soon as it is gossiped on the network.
+But when Wasabi is offline, it does not listen to the network and it will not know about your unconfirmed transaction when you next start up Wasabi.
+In this case you have to wait until your transaction is confirmed in a block, and based on the [BIP 158 block filters](/BIPs.md#bip-158-compact-block-filters-for-light-clients) Wasabi will download that whole block including your transaction from a random P2P node.
+:::
+
 ## Send
 
 @[youtube](PRlAAxunmdU)
