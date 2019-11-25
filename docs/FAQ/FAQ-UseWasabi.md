@@ -331,6 +331,7 @@ Be careful, if you send all your coins from an old wallet to a new wallet (from 
 
 You can see the address QR code, public key and the key path in the drop down menu of the `Receive` tab.
 Click on the arrow on the left side of the address to reveal the extra details.
+You can save the png file of the QR code in the right click menu.
 
 ![](/ReceiveAddressDropDown.png)
 :::
