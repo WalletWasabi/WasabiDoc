@@ -505,6 +505,12 @@ These sats are precious, so don't overpay on fees!
 ::::
 
 :::details
+### How do I set custom fee rate?
+
+To set your own custom fee, simply click on the `Fee` box and manually type the exact amount you want to spend.
+:::
+
+:::details
 ### How can I display the fee in satoshis per byte?
 
 The fee you pay to get confirmation on the Bitcoin timechain is denominated in satoshis per virtual byte.
