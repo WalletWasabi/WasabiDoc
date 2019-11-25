@@ -20,6 +20,7 @@ Further tutorials about the different parts of the wallet, for newbies and power
 - [Deterministic Build](/using-wasabi/DeterministicBuild.md)
 #### Using Wasabi
 - [Wallet Generation](/using-wasabi/WalletGeneration.md)
+- [Receive](/using-wasabi/Receive.md)
 - [Password Finder](/using-wasabi/PasswordFinder.md)
 - [Cold-Wasabi Protocol](/using-wasabi/ColdWasabi.md)
 - [Lurking Wife Mode](/using-wasabi/LurkingWifeMode.md)
