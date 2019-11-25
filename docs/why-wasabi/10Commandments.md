@@ -45,30 +45,8 @@ Wasabi has strong coin control features, and as you continue to use the wallet, 
 
 Not only, Wasabi uses a **smart coins selection algorithm** which allows Wasabi himself to recognize entities behind a transaction and then it can automatically selects the group of coins that belong to those clusters already known.
 This allows the final user to merge more inputs from the same entities to make a transaction or partecipate in a CoinJoin round.
-This is fantastic, but it requires the final user to label in detail every address.
 
-You should ask yourself: "Who knows this address is mine?"
-Labels should contain the comma-separated names of people/entities that may be aware about the transaction and could follow its trail like:
-
-`Name of the sender, name of the exchange`
-
-So, a good label could be:
-
-`Alice, Bitfinex`
-
-or:
-
-`Company Boss`
-
-or again:
-
-`Alice and Bob` (that is not the same as `Alice, Bob` as they are multiple entities separated by a comma).
-
-Examples of bad labels:
-
-`Address #1`
-
-`0.5 BTC`
+You can read more about labels [here](/FAQ/FAQ-UseWasabi.md#why-do-i-have-to-label-my-address)
 
 Lastly, if you must use an exchange, try to ask for a new deposit address on each deposit.
 In the same way that you should never receive Bitcoin to the same address twice, you should try to avoiding sending Bitcoin to the same address twice.
