@@ -44,12 +44,11 @@ Wasabi is cutting-edge, high security software, and there can never be enough ey
 Especially review by experienced C# developers are vitally important, yet even typo and grammar fixes are necessary.
 
 There are three developers who have the ability to merge code into master branch.
-- [Ádám Ficsor](https://github.com/nopara73) [co-founder and former CTO of [zkSnacks Ltd](https://zksnacks.com/), co-author of the [zero link Bitcoin fungibility framework](https://github.com/nopara73/ZeroLink)] is the [admin](https://help.github.com/en/articles/repository-permission-levels-for-an-organization) of the [GitHub repository](https://github.com/zksnacks/walletwasabi) and has full write access to everything in it, he has the ability to merge any code that he wants.
-However, the agreed upon convention is that he only merges code that one of either Lucas or Dávid have reviewed and acknowledged.
-- [Lucas Ontivero](https://github.com/lontivero) [lead engineer of [zkSnacks Ltd](https://zksnacks.com/)] is [co-maintainer](https://help.github.com/en/articles/repository-permission-levels-for-an-organization) and administrator of the [GitHub repository](https://github.com/zksnacks/walletwasabi), he can merge any pull request.
-However, the agreed upon convention is that he only merges code that one of either Ádám or Dávid have reviewed and acknowledged.
-- [Dávid Molnár](https://github.com/molnard) is [co-maintainer](https://help.github.com/en/articles/repository-permission-levels-for-an-organization) and administrator of the [GitHub repository](https://github.com/zksnacks/walletwasabi), he can merge any pull request.
-However, the agreed upon convention is that he only merges code that one of either Ádám or Lucas have reviewed and acknowledged.
+Per default, they [require at least one review](https://help.github.com/en/github/administering-a-repository/about-required-reviews-for-pull-requests) by one of the other maintainers before a pull request can be merged.
+However, since all three are administrators, they can still force the merge without the approval of others, but this will raise alarm bells.
+- [Ádám Ficsor](https://github.com/nopara73) [co-founder and former CTO of [zkSnacks Ltd](https://zksnacks.com/), co-author of the [zero link Bitcoin fungibility framework](https://github.com/nopara73/ZeroLink)] is the [admin](https://help.github.com/en/articles/repository-permission-levels-for-an-organization) of the [GitHub repository](https://github.com/zksnacks/walletwasabi).
+- [Lucas Ontivero](https://github.com/lontivero) [lead engineer of [zkSnacks Ltd](https://zksnacks.com/)] is also [admin](https://help.github.com/en/articles/repository-permission-levels-for-an-organization) of the [GitHub repository](https://github.com/zksnacks/walletwasabi).
+- [Dávid Molnár](https://github.com/molnard) is also [admin](https://help.github.com/en/articles/repository-permission-levels-for-an-organization) and administrator of the [GitHub repository](https://github.com/zksnacks/walletwasabi).
 :::
 
 :::details
