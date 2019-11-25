@@ -49,13 +49,6 @@ This might not be possible in some cases where you have to pay a specific value 
 However, in other cases it is possible, for example donations or when depositing to an exchange.
 Consider supporting invaluable projects like [the tor project](https://donate.torproject.org/cryptocurrency) or [the electronic frontier foundation](https://supporters.eff.org/donate/donate), you can find a list of organizations that accept bitcoin donations [here](https://en.bitcoin.it/wiki/Donation-accepting_organizations_and_projects).
 
-### Spend the change to the same entity as the initial transaction, but always use a new address.
-So if in the first transaction you have 0.1 bitcoin and send Alice 0.04 bitcoin, you get 0.06 bitcoin back as change.
-Now in the second transaction where you want to send Alice 0.05 bitcoin, you can select that 0.06 bitcoin change coin without loosing any privacy, because Alice already knows this is your coin.
-In this second transaction you will get back 0.01 bitcoin as change.
-If in a third transaction you want to send Alice 0.02 bitcoin, then you can consolidate the 0.01 bitcoin change with a new 0.1 bitcoin mixed coin, thus getting 0.09 bitcoin change.
-Now Alice knows that you owned the 0.1 bitcoin and and that you currently own the 0.09 bitcoin change, but she cannot find out about your premix transaction history.
-
 ### Spend the change to another entity, if these two won't make you trouble knowing you interact with both of them.
 For example when you buy coffee with a 0.1 bitcoin mixed coin from Alice for 0.01 bitcoin, you get back 0.09 bitcoin change that Alice knows is yours.
 If in the next transaction you spend the 0.09 bitcoin change in the pizza restaurant of Bob, then Alice might find out that you go to Bob's restaurant, and if she doesn't like that, then she can refuse to serve you coffee the next time, or even worse.
@@ -90,3 +83,10 @@ Further, during the [input registration phase](/FAQ/FAQ-UseWasabi.md#what-is-hap
 Thus the coordinator knows that you control all these coins, and although zkSNACKs claims to not keep any logs, it is a reasonable assumption that everyone knows what the coordinator knows.
 In this CoinJoin you get an equal value mixed coin, which is no longer tied to any of your previous change coins (inputs), and a change output that can be tied to these inputs.
 So consolidating your change in a CoinJoin is strictly more private and efficient than consolidating in a regular sending transaction, but it still leaks sensitive information.
+
+### Spend the change to the same entity as the initial transaction, but always use a new address.
+So if in the first transaction you have 0.1 bitcoin and send Alice 0.04 bitcoin, you get 0.06 bitcoin back as change.
+Now in the second transaction where you want to send Alice 0.05 bitcoin, you can select that 0.06 bitcoin change coin without loosing any privacy, because Alice already knows this is your coin.
+In this second transaction you will get back 0.01 bitcoin as change.
+If in a third transaction you want to send Alice 0.02 bitcoin, then you can consolidate the 0.01 bitcoin change with a new 0.1 bitcoin mixed coin, thus getting 0.09 bitcoin change.
+Now Alice knows that you owned the 0.1 bitcoin and and that you currently own the 0.09 bitcoin change, but she cannot find out about your premix transaction history.
