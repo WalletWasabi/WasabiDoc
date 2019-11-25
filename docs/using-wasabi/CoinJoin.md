@@ -8,7 +8,7 @@
 # CoinJoin
 
 A [CoinJoin](https://en.bitcoin.it/Privacy#CoinJoin) is a special Bitcoin transaction where several peers get together to literally join their coins in a single transaction.
-They collaboratively build a transaction where each of them provides some coins in the input, and each of them fresh addresses in the output.
+They collaboratively build a transaction where each of them provides some coins as inputs, and fresh addresses as outputs.
 The concept has been around since the early days of Bitcoin, and it was formalized by the great Greg Maxwell in [this awesome introductory thread](https://bitcointalk.org/index.php?topic=279249.msg2983902).
 The goal is to gain privacy by breaking the link of which input "pays" which output, so that any of the outputs cannot be attributed to the owner of the input.
 And therefor it is very important that the value of the outputs is exactly equal.
