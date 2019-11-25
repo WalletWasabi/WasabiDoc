@@ -30,9 +30,9 @@ If you have an answer to a question, please [open a pull request](https://github
   -- [Debian and Ubuntu](using-wasabi/InstallPackage.md#debian-and-ubuntu) </br>
   -- [Other Linux](using-wasabi/InstallPackage.md#other-linux) </br>
   -- [OSX](using-wasabi/InstallPackage.md#osx)
-- [Wasabi Setup on Tails](using-wasabi/WasabiSetupTails.md)
 - [Build from source code](using-wasabi/BuildSource.md)
 - [Deterministic build](using-wasabi/DeterministicBuild.md)
+- [Wasabi Setup on Tails](using-wasabi/WasabiSetupTails.md)
 
 ## Using Wasabi
 
