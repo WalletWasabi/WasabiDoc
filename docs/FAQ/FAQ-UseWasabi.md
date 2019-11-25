@@ -762,7 +762,7 @@ Immediately after that, Bob disconnects and the [output registration phase](/usi
 
 After all Alices have registered their inputs and change outputs, and all Bobs their anonset outputs, the coordinator has all the information to build the CoinJoin transaction and include his fee output.
 This raw transaction is sent to all Alices, each of them verifies the transaction is valid and then signs it.
-The signature is send back to the coordinator who accumulates all of them and builds the signed final CoinJoin transaction.
+The signature is sent back to the coordinator who accumulates all of them and builds the signed final CoinJoin transaction.
 The [singing phase](/using-wasabi/CoinJoin.md#signing) is concluded when the coordinator receives all the signatures.
 :::
 
