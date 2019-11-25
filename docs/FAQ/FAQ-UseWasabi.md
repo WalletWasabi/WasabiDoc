@@ -310,7 +310,7 @@ or:
 
 or again:
 
-`Alice and Bob` (that is not the same as `Alice, Bob` as they are multiple entities separated by a comma).
+`Alice & Bob` (in this case, `Alice & Bob` is the name of a company. Remember that is not the same as `Alice, Bob` as they are multiple entities separated by a comma).
 :::
 
 :::details
