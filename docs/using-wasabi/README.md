@@ -27,6 +27,7 @@ Further tutorials about the different parts of the wallet, for newbies and power
 - [Supported BIPs](/using-wasabi/BIPs.md)
 #### Privacy Best Practices
 - [Address Reuse](/using-wasabi/AddressReuse.md)
+- [Change Coins](/using-wasabi/ChangeCoins.md)
 - [Lost Password Strategy](/using-wasabi/LostPassword.md)
 - [Network Level Privacy](/using-wasabi/NetworkLevelPrivacy.md)
 - [How you can be de-anonymized using Bitcoin](/using-wasabi/Deanonimization.md)

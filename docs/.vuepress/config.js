@@ -152,6 +152,7 @@ module.exports = {
           sidebarDepth: 2,
           children: [
             "/using-wasabi/AddressReuse.md",
+            "/using-wasabi/ChangeCoins.md",
             "/using-wasabi/LostPassword.md",
             "/using-wasabi/NetworkLevelPrivacy.md",
             "/using-wasabi/Deanonimization.md",
