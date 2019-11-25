@@ -181,7 +181,6 @@ module.exports = {
             "/building-wasabi/ToDo.md",
             "/building-wasabi/CodingConventions.md",
             "/building-wasabi/DemoGuide.md",
-            "/building-wasabi/ContributionGame.md",
             "/building-wasabi/Security.md",
             "/building-wasabi/CodeCoverage.md",
             "/building-wasabi/HardwareWalletTestingGuide.md",
