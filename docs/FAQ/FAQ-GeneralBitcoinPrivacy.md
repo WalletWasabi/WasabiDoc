@@ -167,6 +167,13 @@ Bitcoin isn't anonymous but pseudonymous, and the pseudonyms are bitcoin address
 Avoiding address reuse is like throwing away a pseudonym after its been used.
 :::
 
+:::details
+### What is a CoinJoin Sudoku?
+
+CoinJoin Sudoku is a type of intra-transaction analysis attack on CoinJoin transactions that aims to link inputs and outputs together based on their combinatorial sums.
+You can read more about CoinJoin Sudoku [here](https://www.coinjoinsudoku.com/advisory/).
+:::
+
 
 ## The Privacy of Tor
 
@@ -186,11 +193,3 @@ It is also good practice to route your chats through the Tor network.
 You can also configure many cloud storage providers in this way.
 :::
 
-## Further Questions
-
-:::details
-### What is a CoinJoin Sudoku?
-
-CoinJoin Sudoku is a type of intra-transaction analysis attack on CoinJoin transactions that aims to link inputs and outputs together based on their combinatorial sums.
-You can read more about CoinJoin Sudoku [here](https://www.coinjoinsudoku.com/advisory/).
-:::

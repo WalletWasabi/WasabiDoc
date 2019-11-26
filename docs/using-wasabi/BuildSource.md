@@ -10,11 +10,16 @@
 ## Get The Requirements
 
 1. Install [Git](https://git-scm.com/downloads)
-2. Install [.NET Core 2.2 SDK](https://www.microsoft.com/net/download) for "Building Apps" (Note, you can disable .NET's telemetry by typing on Linux and OSX: `export DOTNET_CLI_TELEMETRY_OPTOUT=1` or on Windows `set DOTNET_CLI_TELEMETRY_OPTOUT=1`.)
-  
+2. Install [.NET Core 3.0 SDK](https://www.microsoft.com/net/download) for "Building Apps" 
+
+
+:::tip Optional for privacy
+You can disable .NET's telemetry, which is sending some usage information to Microsoft, by typing on Linux and OSX: `export DOTNET_CLI_TELEMETRY_OPTOUT=1` or on Windows `set DOTNET_CLI_TELEMETRY_OPTOUT=1`.
+:::
+
 ## Get Wasabi
 
-Clone & Restore & Build
+Clone & build
 
 ```sh
 git clone https://github.com/zkSNACKs/WalletWasabi.git
@@ -24,10 +29,30 @@ dotnet build
 
 ## Run Wasabi
 
-Run Wasabi with `dotnet run` from the `WalletWasabi.Gui` folder.
+Run Wasabi from the `WalletWasabi.Gui` folder
+
+```sh
+dotnet run
+```
 
 ## Update Wasabi
 
 ```sh
 git pull
 ```
+
+## Checkout a developer branch
+
+Add the developer to your remote & fetch his work & checkout the branch & pull the latest commits
+
+```sh
+git remote add nopara73 https://github.com/nopara73/WalletWasabi
+git fetch nopara73
+git checkout branchname
+git pull
+```
+
+:::warning Experimental
+These developer branches are not thoroughly reviewed by other contributors, and there might be critical bugs in the software that can even cause loss of funds.
+So only compile these branches if you know what you are doing, and run them at your own risk only on testnet.
+:::

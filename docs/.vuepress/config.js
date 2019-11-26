@@ -128,9 +128,9 @@ module.exports = {
           sidebarDepth: 2,
           children: [
             "/using-wasabi/InstallPackage.md",
-            "/using-wasabi/WasabiSetupTails.md",
             "/using-wasabi/BuildSource.md",
-            "/using-wasabi/DeterministicBuild.md"
+            "/using-wasabi/DeterministicBuild.md",
+            "/using-wasabi/WasabiSetupTails.md"
           ]
         },
     {
@@ -139,6 +139,7 @@ module.exports = {
           sidebarDepth: 2,
           children: [
             "/using-wasabi/WalletGeneration.md",
+            "/using-wasabi/Receive.md",
             "/using-wasabi/CoinJoin.md",
             "/using-wasabi/PasswordFinder.md",
             "/using-wasabi/ColdWasabi.md",
@@ -153,7 +154,7 @@ module.exports = {
           sidebarDepth: 2,
           children: [
             "/using-wasabi/AddressReuse.md",
-            "/using-wasabi/LostPassword.md",
+            "/using-wasabi/ChangeCoins.md",
             "/using-wasabi/NetworkLevelPrivacy.md",
             "/using-wasabi/Deanonimization.md",
             "/using-wasabi/PayToEndPoint.md"
@@ -165,7 +166,8 @@ module.exports = {
           sidebarDepth: 2,
           children: [
             "/using-wasabi/WalletRecovery.md",
-            "/using-wasabi/RestoreElectrum.md"
+            "/using-wasabi/RestoreElectrum.md",
+            "/using-wasabi/LostPassword.md"
           ]
         }
       ],

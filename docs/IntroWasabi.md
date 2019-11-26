@@ -30,13 +30,15 @@ If you have an answer to a question, please [open a pull request](https://github
   -- [Debian and Ubuntu](using-wasabi/InstallPackage.md#debian-and-ubuntu) </br>
   -- [Other Linux](using-wasabi/InstallPackage.md#other-linux) </br>
   -- [OSX](using-wasabi/InstallPackage.md#osx)
-- [Wasabi Setup on Tails](using-wasabi/WasabiSetupTails.md)
 - [Build from source code](using-wasabi/BuildSource.md)
 - [Deterministic build](using-wasabi/DeterministicBuild.md)
+- [Wasabi Setup on Tails](using-wasabi/WasabiSetupTails.md)
 
 ## Using Wasabi
 
 - [Wallet Generation](using-wasabi/WalletGeneration.md)
+- [CoinJoin](/using-wasabi/CoinJoin.md)
+- [Receive](/using-wasabi/Receive.md)
 - [CoinJoin](/using-wasabi/CoinJoin.md)
 - [Password Finder](using-wasabi/PasswordFinder.md)
 - [Cold-Wasabi Protocol](using-wasabi/ColdWasabi.md)
@@ -47,14 +49,15 @@ If you have an answer to a question, please [open a pull request](https://github
 ## Privacy Best Practices
 
 - [Address Reuse](using-wasabi/AddressReuse.md)
-- [Lost Password Strategy](using-wasabi/LostPassword.md)
 - [Network Level Privacy](using-wasabi/NetworkLevelPrivacy.md)
 - [How you can be de-anonymized using Bitcoin](using-wasabi/Deanonimization.md)
 - [Pay to EndPoint](using-wasabi/PayToEndPoint.md)
 
 ## Restoring Wasabi
 
+- [Wallet Recovery](/using-wasabi/WalletRecovery.md)
 - [Restoring Wasabi Wallet to Electrum](using-wasabi/RestoreElectrum.md)
+- [Lost Password Strategy](using-wasabi/LostPassword.md)
 
 ## Building Wasabi
 

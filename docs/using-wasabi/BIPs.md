@@ -63,7 +63,12 @@ This allows to generate one root master seed that can derive a tree of public ke
 `m / purpose' / coin_type' / account' / change / address_index`.
 Wasabi specifically uses this standard `m/84'/0'/0'`.
 On the TestNet and on the RegTest Wasabi deviates from the standard and uses `m/84'/0'/0'` instead of `m/84'/1'/0'`.
+:::
 
+:::details
+### BIP 125: Opt-In full Replace-by-Fee Signaling
+
+[BIP 125: Opt-In full Replace-by-Fee Signaling](https://github.com/bitcoin/bips/blob/master/bip-0125.mediawiki) is activated for a subset of transactions chosen randomly, so to decrease wallet fingerprinting.
 :::
 
 :::details
@@ -159,8 +164,12 @@ The resulting protocol guarantees that light clients with at least one honest pe
 ### BIP 322: Generic Message Signing Format
 
 [BIP 322](https://github.com/bitcoin/bips/blob/master/bip-0322.mediawiki) is a standard for interoperable generic signed messages based on the Bitcoin Script format.
-
 :::
+
+:::details
+### BIP 325: Signet
+
+[BIP 325](https://github.com/bitcoin/bips/blob/master/bip-0325.mediawiki) is a new model for a testing network of Bitcoin that is based on block signing, not block mining.
 
 :::details
 ### BIP Schnorr
@@ -211,9 +220,4 @@ This was quite brilliant of an idea at the time, but has since been proven to no
 [BIP 70: Payment Protocol](https://github.com/bitcoin/bips/blob/master/bip-0070.mediawiki)
 :::
 
-:::details
-### BIP 125: Opt-In full Replace-by-Fee Signaling
-
-[BIP 125: Opt-In full Replace-by-Fee Signaling](https://github.com/bitcoin/bips/blob/master/bip-0125.mediawiki)
-:::
 
