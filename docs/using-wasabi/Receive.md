@@ -40,7 +40,7 @@ This is why Wasabi removes the address from the `Receive` tab as soon as it has 
 
 Satoshis are the base unit currency of the Bitcoin network and are truly fungible, meaning that any 100 000 000 satoshis are always equal to 1 bitcoin.
 Just like with gold atoms, it doesn't matter which specific gold atoms you have, as long as it's gold, it's gold.
-However, an unspent transaction output, a bitcoin, is a chunk of money and is not fungible, because it has a different amount of satoshis in it, a different public key locking it up, and a unique transaction history.
+However, an unspent transaction output, a bitcoin, is a chunk of money and is not fungible, because it has a different amount of satoshis in it, a different public key locking it up, a unique transaction history, and a unique index number.
 This is just like a gold coin, with a unique amount of gold atoms, and either a pretty mintage, or an old chipped broken coin.
 Because UTXOs are not fungible, it is very important to know exactly which coin is which, and that is done by carefully labeling.
 
