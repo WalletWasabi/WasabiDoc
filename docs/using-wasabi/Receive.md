@@ -28,7 +28,7 @@ Wasabi Wallet does not "store your money", rather it stores your private and pub
 
 ## The problem with address reuse
 
-When ever you use the same address to lock up several different UTXOs, then all these coins can be spend by the one who knows the private key.
+Whenever you use the same address to lock up different UTXOs, then all these coins can be spent by anyone who knows the private key.
 This makes it obvious for anyone that this one entity [you] owns all these coins, which is very bad for privacy.
 The first rule of Bitcoin privacy is [never reuse addresses](/using-wasabi/AddressReuse.md)!
 
