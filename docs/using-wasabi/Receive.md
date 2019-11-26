@@ -15,7 +15,7 @@ The Bitcoin protocol utilizes [public key cryptography](https://en.wikipedia.org
 A private key is a large random number that should be kept secret.
 With the [elliptic curve digital signature algorithm](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm), based on the private key you can calculate a public key.
 If someone has only the public key, it is computationally infeasible [pretty much impossible] to calculate the private key.
-Whoever has knowledge of the private key can calculate a cryptography signature over a message, which proves that the private key was known by the signer, without actually revealing the secret.
+Whoever knows the private key can calculate a cryptography signature over a message, which proves that the private key was known by the signer, without actually revealing the secret.
 
 For data size efficiency, in Bitcoin the public key is [hashed](https://en.wikipedia.org/wiki/Cryptographic_hash_function) and encoded into a [bech32](/using-wasabi/BIPs.md#bip-173-base32-address-format-for-native-v0-16-witness-outputs) address.
 This address commits to the public key, which commits to the private key.
