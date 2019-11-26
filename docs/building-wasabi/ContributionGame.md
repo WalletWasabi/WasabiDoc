@@ -7,40 +7,16 @@
 
 # Contribution Game
 
-We are happy to announce an experiment, called: **The Wasabi Contribution Game**, where we will be distributing 1 BTC among contributors of this repository in proportion to their contributions.
+[[toc]]
+
+For some occasions there is a **Wasabi Contribution Game**, where the zkSNACKs company is distributing a bounty among contributors of the Wasabi repository in proportion to their contributions.
 
 ![](/ContributionGame.png)
 
+## Contribution Game of July 2019
 
-## Update (2019-07-25)
-
-[The Resolution Of The First Wasabi Contribution Game](https://github.com/zkSNACKs/WalletWasabi/issues/2016)
-
-## Update (2019-07-08)
-
-In PR [link](https://github.com/zkSNACKs/WalletWasabi/pull/1850) nopara73 implemented @NicolasDorier's changes, so 17+217=234 points added to Nicolas's score.
-
-## Update (2019-06-28)
-
-PR [link](https://github.com/zkSNACKs/WalletWasabi/pull/1661) moved around large files.
-49+154+50 lines have been removed and added, so 506 lines will come down from @jmacato's score.
-
-## Update (2019-06-28)
-
-- The originally posted links on additions and deletions do not work, due to a GitHub bug.
-It seems like the timeframe specified is lagging behind 5 days, so it may appear that nobody contributed, yet it is 28 already and there were many contributions, so the adjusted links are:
-- For additions: [link](https://github.com/zkSNACKs/WalletWasabi/graphs/contributors?from=2019-06-20&to=2019-07-20&type=a)
-- For deletions: [link](https://github.com/zkSNACKs/WalletWasabi/graphs/contributors?from=2019-06-20&to=2019-07-20&type=d)
-- nopara73 is disqualified from this game.
-
-## Rules
-
-- Checking the current status of the game: [additions](https://github.com/zkSNACKs/WalletWasabi/graphs/contributors?from=2019-06-25&to=2019-07-25&type=d) and [deletions](https://github.com/zkSNACKs/WalletWasabi/graphs/contributors?from=2019-06-25&to=2019-07-25&type=a)
-- The game starts at **2019-06-25** and ends at **2019-07-25**.
-- Anyone can participate. 
-- Number of commits DO NOT count.
-- The sum of additions and deletions DO count.
-- Only merged pull requests count.
-- Merges of the maintainer (nopara73) may skew the results. We will investigate this and if we find this to be the case, the maintainer's merges will either be discounted or the maintainer will be disqualified.
-- If someone is found intentionally manipulating the results, she or he will be disqualified. We do not plan to actively look for reasons to disqualify anyone, we would like to trust in the honesty of all contributors.
-- Keep checking your GitHub bells, because at the end of the game we will open an issue, in that tagging all the contributors, describing where they should send their BTC addresses for the payouts.
+The first contribution game was in between the 25th of June and the 25th of July in 2019.
+Anyone could participate and the metric of success was the numbers of lines added and removed to the code base in pull requests that were ultimately merged.
+The total bounty was `1 bitcoin`, that ended up being distributed to 15 contributors, see the full results [here](https://github.com/zkSNACKs/WalletWasabi/issues/2016).
+There were special boni for critical bugs discovered, as well as for the creation of this documentation.
+Over all this was a great success, as several new peers started to contribute to Wasabi, specifically [@Yahiheb](https://github.com/yahiheb) and [@JMacato](https://github.com/jmacato) who stuck around for the long term.
