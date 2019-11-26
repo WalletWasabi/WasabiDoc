@@ -17,15 +17,15 @@ For some occasions there is a **Wasabi contribution game**, where the zkSNACKs c
 
 The first contribution game was in between the 25th of June and the 25th of July in 2019.
 Anyone could participate and the metric of success was the numbers of lines added and removed to the code base in pull requests that were ultimately merged.
-The total bounty was `1 bitcoin`, that ended up being distributed to 15 contributors, see the full results [here](https://github.com/zkSNACKs/WalletWasabi/issues/2016).
+The total bounty was `1 bitcoin`, which ended up being distributed to 15 contributors, see the full results [here](https://github.com/zkSNACKs/WalletWasabi/issues/2016).
 There were special boni for critical bugs discovered, as well as for the creation of this documentation.
-Over all this was a great success, as several new peers started to contribute to Wasabi, specifically [@Yahiheb](https://github.com/yahiheb) and [@JMacato](https://github.com/jmacato) who stuck around for the long term.
+Over all, this was a great success, as several new peers started to contribute to Wasabi, specifically [@Yahiheb](https://github.com/yahiheb) and [@JMacato](https://github.com/jmacato) who stuck around for the long term.
 
 ## Monthly contribution game for the documentation
 
 Having a well educated user base is essential for any complex software such as Wasabi.
 In order to create and maintain this top notch documentation, there is an ongoing contribution game for any supporter of this archive of knowledge.
-The metric of success is a combination of number of pull requests, lines added and removed, and effort in review of the changes.
+The metric of success is a combination of number of pull requests, lines added and removed, as well as review of the changes.
 The bounty of `1000 US Dollars` worth of bitcoin is paid out every month on the 25th.
 The depth, quality and continuous maintenance of this documentation is proof of the success of this contribution game!
 
@@ -33,6 +33,6 @@ The depth, quality and continuous maintenance of this documentation is proof of 
 
 After the release of v1.1.9.2 a monumental amount of work has gone into Wasabi, introducing many new features, upgrading dependencies and fixing many bugs.
 In order to ensure rigorous peer review of such a complex change, two methods were introduced for the first time.
-The publishing of release candidate packages for all operating systems, so that testers do not need to compile the software from source.
+The publishing of release candidate packages for all operating systems, so that testers don't need to compile the software from source.
 This enabled many more reviewers to check out the latest additions to the software so to test for bugs and instabilities.
 Also there was a [contribution game](https://github.com/zkSNACKs/WalletWasabi/issues/2631) where any reviewer who provided a thorough report and notified the developers of bugs was eligible for a bounty of in total `0.5 bitcoin`.
