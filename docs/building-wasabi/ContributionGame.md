@@ -19,7 +19,7 @@ The first contribution game took place between 25th June and the 25th July of 20
 Anyone could have participated and the metric of success was the numbers of lines added and removed to the code base in pull requests that were ultimately merged.
 The total bounty was `1 bitcoin`, which ended up being distributed to 15 contributors, see the full results [here](https://github.com/zkSNACKs/WalletWasabi/issues/2016).
 There were special bonuses for critical bugs discovered, as well as for the creation of this documentation repository.
-Over all, this was a great success, as several new peers started to contribute to Wasabi, specifically [@Yahiheb](https://github.com/yahiheb) and [@JMacato](https://github.com/jmacato) who stuck around for the long term.
+Over all, this was a great success, as several new peers started to contribute to Wasabi, specifically [@yahiheb](https://github.com/yahiheb) and [@JMacato](https://github.com/jmacato) who stuck around for the long term.
 
 ## Monthly contribution game for the documentation
 
