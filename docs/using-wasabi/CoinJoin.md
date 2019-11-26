@@ -31,6 +31,12 @@ You can select red shield coins, which are not private yet, but will gain anonym
 Also you can select green shield coins, who come from a previous round of CoinJoin, so that they gain even more anonymity set.
 What is important is that the sum of coins registered have a value larger than the minimum level, which is currently roughly 0.1 bitcoin.
 
+:::danger
+Do not select coins with different colors (different anonymity sets) to CoinJoin in the same round.
+Because the coins with higher anonymity set will loose some of their anonymity set to equal the anonymity set of the lower ones.
+The best option would be to select coins with the same anonymity set.
+:::
+
 3. Specify anonymity set target.
 Wasabi will automatically re-register your coin for the next round until this target is reached.
 You can easily toggle between three levels by clicking on the shield.
