@@ -12,7 +12,7 @@
 ## Bitcoin public keys and addresses
 
 The Bitcoin protocol utilizes [public key cryptography](https://en.wikipedia.org/wiki/Public-key_cryptography) to defend and verify the property rights of the individuals holding and transacting bitcoin.
-A private key is a large random number, and it is very important to keep this number a secret.
+A private key is a large random number that should be kept secret.
 With the [elliptic curve digital signature algorithm](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm), based on the private key you can calculate a public key.
 If someone has only the public key, it is computationally infeasible [pretty much impossible] to calculate the private key.
 Whoever has knowledge of the private key can calculate a cryptography signature over a message, which proves that the private key was known by the signer, without actually revealing the secret.
