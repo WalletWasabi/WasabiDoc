@@ -15,7 +15,7 @@ For some occasions there is a **Wasabi contribution game**, where the zkSNACKs c
 
 ## Contribution game of July 2019
 
-The first contribution game was in between the 25th of June and the 25th of July in 2019.
+The first contribution game took place between 25th June and the 25th July of 2019.
 Anyone could participate and the metric of success was the numbers of lines added and removed to the code base in pull requests that were ultimately merged.
 The total bounty was `1 bitcoin`, which ended up being distributed to 15 contributors, see the full results [here](https://github.com/zkSNACKs/WalletWasabi/issues/2016).
 There were special boni for critical bugs discovered, as well as for the creation of this documentation.
