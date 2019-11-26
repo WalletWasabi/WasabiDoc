@@ -913,7 +913,7 @@ If you want more anonymity you should CoinJoin multiple times.
 :::details
 ### Are coins automatically requeued after the round is complete?
 
-Yes, they are requeued based on your anonset setting.
+Yes they are, based on the anonymity set target.
 If it’s below the specified target then it’s queued automatically for another round.
 :::
 
