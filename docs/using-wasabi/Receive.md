@@ -45,7 +45,7 @@ This is just like a gold coin, with a unique amount of gold atoms, and either a 
 Because UTXOs are not fungible, it is very important to know exactly which coin is which, and that is done by carefully labeling.
 
 :::tip
-In Wasabi it is mandatory to give every address a label of which entities know about this address, so that later you know where you got the coin from.
+In Wasabi it is mandatory to give every address a label of which entities know about this address, so that later you know where you got the coin from and you know how to spend it.
 :::
 
 ![](/ReceiveLabelingRequired.png)
