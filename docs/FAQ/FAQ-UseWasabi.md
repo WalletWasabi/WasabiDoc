@@ -507,7 +507,8 @@ These sats are precious, so don't overpay on fees!
 :::details
 ### How do I set custom fee rate?
 
-To set your own custom fee, simply click on the `Fee` box and manually type the exact amount you want to spend.
+Go to `Settings` and under the UI category turn on `Manual fee entry`.
+In the `Send` tab, simply click on the `Fee` box and manually type the fee rate (sat/byte) you want.
 :::
 
 :::details
