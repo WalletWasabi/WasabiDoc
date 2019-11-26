@@ -140,6 +140,7 @@ module.exports = {
           children: [
             "/using-wasabi/WalletGeneration.md",
             "/using-wasabi/Receive.md",
+            "/using-wasabi/CoinJoin.md",
             "/using-wasabi/PasswordFinder.md",
             "/using-wasabi/ColdWasabi.md",
             "/using-wasabi/LurkingWifeMode.md",
