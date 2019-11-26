@@ -55,7 +55,7 @@ In Wasabi it is mandatory to give every address a label of which entities know a
 1. Start Wasabi and open the wallet that you want to receive coins into.
 2. Go to the `Receive` tab.
 3. Specify a label of the entities who know about this address.
-4. Click on `Generate Address` and it is automatically copied to your clipboard.
+4. Click on `Generate Address`.
 5. Optionally change the label in the right click menu if new entities learn about the address.
 
 ![](/ReceiveAddressDropDown.png)
