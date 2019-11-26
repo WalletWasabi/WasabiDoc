@@ -860,6 +860,15 @@ If you want more anonymity you should CoinJoin multiple times.
 :::
 
 :::details
+### Are coins automatically requeued after the round is complete?
+
+Yes they are, based on the anonymity set target.
+If the coins' anonymity sets are below the specified target after a round is complete, then the coins are requeued automatically for the next round.
+When the anonymity set after a round is above the target, then the coin will no longer be registered automatically.
+However, you can manually enqueue it for a new round at any time.
+:::
+
+:::details
 ### How can I select UTXOs for CoinJoin?
 
 You need to go to `CoinJoin` tab and select your desired UTXO by clicking the checkbox.
