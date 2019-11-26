@@ -54,5 +54,5 @@ git pull
 
 :::warning Experimental
 These developer branches are not thoroughly reviewed by other contributors, and there might be critical bugs in the software that can even cause loss of funds.
-So only compile these branches if you know what you are doing, and run them only on testnet.
+So only compile these branches if you know what you are doing, and run them at your own risk only on testnet.
 :::
