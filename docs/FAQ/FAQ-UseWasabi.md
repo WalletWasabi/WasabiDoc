@@ -864,8 +864,8 @@ If you want more anonymity you should CoinJoin multiple times.
 
 Yes they are, based on the anonymity set target.
 If the coins' anonymity sets are below the specified target after a round is complete, then the coins are requeued automatically for the next round.
-When the anonymity set after a round is above the target, then the coin will no longer be registered automatically.
-However, you can manually enqueue it for a new round at any time.
+But when the anonymity sets are above the target after a round, then the coins will no longer be registered automatically.
+However, you can manually enqueue them for a new round at any time.
 :::
 
 :::details

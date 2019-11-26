@@ -37,7 +37,6 @@ If you have an answer to a question, please [open a pull request](https://github
 ## Using Wasabi
 
 - [Wallet Generation](using-wasabi/WalletGeneration.md)
-- [CoinJoin](/using-wasabi/CoinJoin.md)
 - [Receive](/using-wasabi/Receive.md)
 - [CoinJoin](/using-wasabi/CoinJoin.md)
 - [Password Finder](using-wasabi/PasswordFinder.md)
