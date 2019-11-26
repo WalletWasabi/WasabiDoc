@@ -48,7 +48,7 @@ Add the developer to your remote & fetch his work & checkout the branch & pull t
 ```sh
 git remote add nopara73 https://github.com/nopara73/WalletWasabi
 git fetch nopara73
-git checkout dev-branch
+git checkout branchname
 git pull
 ```
 
