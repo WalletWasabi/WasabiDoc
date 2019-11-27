@@ -38,7 +38,7 @@ For an inclusive list of all the Wasabikas, not just the code developers, please
 :::details
 ### Who reviews and merges the pull requests?
 
-As the Wasabi code is libre and open source, anyone has access to review the latest contritions and browse the [open pull requests](https://github.com/zkSNACKs/WalletWasabi/pulls?q=is%3Apr+is%3Aopen+sort%3Aupdated-desc).
+As the Wasabi code is libre and open source, anyone has access to review the latest contributions and browse the [open pull requests](https://github.com/zkSNACKs/WalletWasabi/pulls?q=is%3Apr+is%3Aopen+sort%3Aupdated-desc).
 The review of any Wasabika is not just deeply appreciated, but desperately needed!
 Wasabi is cutting-edge, high security software, and there can never be enough eyes seeking and squashing bugs.
 Especially review by experienced C# developers are vitally important, yet even typo and grammar fixes are necessary.
