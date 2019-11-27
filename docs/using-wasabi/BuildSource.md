@@ -41,6 +41,13 @@ dotnet run
 git pull
 ```
 
+:::warning Experimental
+The next step is optional, it can be used for testing specific branches that are currently being worked on.
+
+These developer branches are not thoroughly reviewed by other contributors, and there might be critical bugs in the software that can even cause loss of funds.
+So only compile these branches if you know what you are doing, and run them at your own risk only on testnet.
+:::
+
 ## Checkout a developer branch
 
 Add the developer to your remote & fetch his work & checkout the branch & pull the latest commits
@@ -51,8 +58,3 @@ git fetch nopara73
 git checkout branchname
 git pull
 ```
-
-:::warning Experimental
-These developer branches are not thoroughly reviewed by other contributors, and there might be critical bugs in the software that can even cause loss of funds.
-So only compile these branches if you know what you are doing, and run them at your own risk only on testnet.
-:::
