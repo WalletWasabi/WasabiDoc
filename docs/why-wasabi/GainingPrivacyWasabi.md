@@ -25,11 +25,11 @@ It differentiates itself from many other wallets for its strong *focus on user p
 Wasabi's goal is to *not only provide the traditional privacy* of our banks but to go even further and *guarantee privacy against Wasabi itself*.
 So not even the service provider (zkSNACKs) will be able to track your money.
 
-### The vision for a better Bitcoin
+## The vision for a better Bitcoin
 
 The motivation behind Wasabi is to provide the *strongest privacy for its users* that is technically possible today.
 
-### Technology behind Wasabi
+## Technology behind Wasabi
 
 - It has [advanced coin control features](/FAQ/FAQ-UseWasabi.md#coin-control-best-practices) to avoid linking coins from different transactions.
 - It's the only [Light wallet that doesn't fail against network analysis](/using-wasabi/NetworkLevelPrivacy.md).
