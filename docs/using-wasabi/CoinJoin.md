@@ -142,3 +142,8 @@ The signing phase ends when the coordinator has all the valid signatures for all
 The CoinJoin transaction is successfully built and signed, and it is now ready to be [broadcasted](https://github.com/nopara73/zerolink#transaction-broadcasting) to the peers of the Bitcoin network.
 The coordinator sends this transaction over the tor network to a random Bitcoin P2P node, and from there it is gossiped to other nodes and miners.
 Wasabi is saving on mining fees by setting a confirmation target of roughly 12 hours, but you can re-register unconfirmed anonset outputs for the next round of CoinJoin.
+
+## Read more
+
+Want to read more about CoinJoins on Wasabi?
+[CoinJoin FAQs](/FAQ/FAQ-UseWasabi.md#coinjoin) is here to help you.
