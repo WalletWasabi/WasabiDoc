@@ -92,7 +92,7 @@ Each Bitcoin transaction contains at least one input (where the Bitcoin are from
 This means that once a single address is known, there is a trail to follow the Bitcoin.
 
 Another characteristic of Bitcoin transactions is that they always need to match the previous transaction.
-If you previously received 1 bitcoin, but you only want to spend 0.4 Bitcoin, you will first need to make a transaction where 1 bitcoin will leave your account.
+If you previously received 1 bitcoin, but you only want to spend 0.4 bitcoin, you will first need to make a transaction where 1 bitcoin will leave your account.
 0.4 bitcoin will go as payment, then 0.6 bitcoin will return to you as change.
 Your Bitcoin wallet will handle this process automatically, but it is important to understand the principle in order to use it anonymously.
 
@@ -140,7 +140,7 @@ Your full node defines, verifies and enforces the sound money you use to store y
 When you run your own full node, then on your local computer you can verify exactly if the bitcoin you receive are actually valid.
 When you do not verify this for yourself, then you need to ask another trusted third party how much money you have.
 Regardless how you ask this other server, there is now more metadata available to potentially link your coins to your identity.
-There are bad ways to communicate, like querying a block explorer over clearnet, and good ways to communicate, like using BIP 158 block filters over tor.
+There are bad ways to communicate, like querying a block explorer over clearnet, and good ways to communicate, like using [BIP 158](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients) block filters over tor.
 But regardless, running your own full node means that you don't need to communicate with anyone about your specific coins, and this is strictly better.
 :::
 
@@ -167,6 +167,13 @@ Bitcoin isn't anonymous but pseudonymous, and the pseudonyms are bitcoin address
 Avoiding address reuse is like throwing away a pseudonym after its been used.
 :::
 
+:::details
+### What is a CoinJoin Sudoku?
+
+CoinJoin Sudoku is a type of intra-transaction analysis attack on CoinJoin transactions that aims to link inputs and outputs together based on their combinatorial sums.
+You can read more about CoinJoin Sudoku [here](https://www.coinjoinsudoku.com/advisory/).
+:::
+
 
 ## The Privacy of Tor
 
@@ -186,11 +193,3 @@ It is also good practice to route your chats through the Tor network.
 You can also configure many cloud storage providers in this way.
 :::
 
-## Further Questions
-
-:::details
-### What is a CoinJoin Sudoku?
-
-CoinJoin Sudoku is a type of intra-transaction analysis attack on CoinJoin transactions that aims to link inputs and outputs together based on their combinatorial sums.
-You can read more about CoinJoin Sudoku [here](https://www.coinjoinsudoku.com/advisory/).
-:::

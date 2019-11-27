@@ -112,14 +112,14 @@ The idea is to make the recipient participate in the transaction, which would be
 For now, we had a practical problem to solve.
 How do we establish a connection between the sender and the recipient in a P2P way?
 
-Jessie’s idea was to extend the [BIP21 Bitcoin URI Scheme](https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki) with an endpoint.
+Jessie’s idea was to extend the [BIP21 Bitcoin URI Scheme](/using-wasabi/BIPs.md#bip-21-uri-scheme) with an endpoint.
 Somehow like this: 
 `bitcoin:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W?endpoint=http://3g2upl4pq6kufc4m.onion`
 
 In this case, first the sender would try to figure out if the recipient is online.
 If it is, then make a joint transaction together.
 If it is not, then make the transaction in the traditional way.
-The problem is BIP21 is not fully adopted and it would be confusing to some user to copypaste a BIP21 uri instead of just an address.
+The problem is [BIP 21](/using-wasabi/BIPs.md#bip-21-uri-scheme) is not fully adopted and it would be confusing to some user to copypaste a [BIP 21](/using-wasabi/BIPs.md#bip-21-uri-scheme) uri instead of just an address.
 Team Rocket still debates if this is acceptable or not.
 
 **James has provided an arguably infeasible solution to this issue. What if we would generate the endpoint from the given Bitcoin address?**

@@ -66,15 +66,15 @@ To better understand the architecture of the wallet it is helpful to go through 
 
 The "Tor" label shows the status of the Tor daemon.
 Tor is an anonymity network which Wasabi ships with by default and runs in the background.
-The user can also opt to use their own Tor instance. All Internet traffic goes through Tor and by deafault all this traffic stays inside the onion network.
+The user can also opt to use their own Tor instance. All Internet traffic goes through Tor and by default all this traffic stays inside the onion network.
 Exit nodes are only involved in fallback scenarios.
-For example if the Tor hidden service of the backend becomes unavaiable for the user, the wallet falls back communicating with the backend's clearnet endpoint, still over Tor.
+For example if the Tor hidden service of the backend becomes unavailable for the user, the wallet falls back communicating with the backend's clearnet endpoint, still over Tor.
 Wasabi also frequently utilizes multiple Tor streams where applicable.
 For example, registration of CoinJoin inputs and outputs is done through different Tor streams to avoid linking.
 
 ![](/StatusBarTorRunning.png)
 
-Wasabi's backend is used to facilitate [Chaumian CoinJoin](https://github.com/nopara73/ZeroLink#ii-chaumian-coinjoin) coordination between the mixing participants and to serve Golomb-Rice filters to the clients, similarly to [BIP158](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki).
+Wasabi's backend is used to facilitate [Chaumian CoinJoin](https://github.com/nopara73/ZeroLink#ii-chaumian-coinjoin) coordination between the mixing participants and to serve Golomb-Rice filters to the clients, similarly to [BIP 158](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients).
 More information will be provided about the difference soon.
 Before that, it is worth pointing out that the design choice of building a light wallet was made because such a wallet can attract orders of magnitude more users compared to a wallet on top of a full node, and more users means larger and faster CoinJoins.
 Historically, all light wallets were vulnerable to some kind of network observer due to unprivate utxo fetching.
@@ -82,7 +82,7 @@ A few years ago, the only type of wallet that wasn't vulnerable was a full node,
 The first iteration of Wasabi was [HiddenWallet](https://github.com/zkSNACKs/WalletWasabi/tree/hiddenwallet-v0.6), which was a full-block SPV wallet that aimed to leverage usability without compromising privacy through the omission of initial blockchain downloading compared to a full node.
 In theory, it was a light wallet.
 In practice, it was hard to compete with Bitcoin Core's micro-optimizations and it was still painful to wait for wallet synchronization every time the wallet was opened.
-[Read more about network level Bitcoin wallet privacy here.](https://medium.com/@nopara73/bitcoin-core-vs-wasabi-wallet-network-level-privacy-bdca1d501387)
+[Read more about network level Bitcoin wallet privacy here.](/using-wasabi/NetworkLevelPrivacy.md)
 
 ![](/StatusBarBackendConnected.png)
 
@@ -107,7 +107,7 @@ After Wasabi receives the filters from the backend, it can download the required
 Wasabi then stores the block in its entirety on disk so it won't fetch it again.
 Storing blocks on the disk may take up too much space when the wallet is used extensively.
 There is room for improvement there as well.
-Wasabi only connects to onion peers, which faciliates end to end encryption, and it connects to them on a different Tor streams.
+Wasabi only connects to onion peers, which facilitates end to end encryption, and it connects to them on a different Tor streams.
 After every block download Wasabi disconnects the peer.
 
 Furthermore, if you have a full node running in the background Wasabi won't download blocks from peers, but rather will use the full node to fetch the block from instead.
@@ -139,7 +139,7 @@ By clicking on the Max button, one can spend all selected coins. Spending whole 
 The Bitcoin fee rates are fetched from the backend server, the source of these fees are Bitcoin Core's `estimatesmartfee`'s `CONSERVATIVE` output.
 Every fee query happens over Tor with a new Tor identity.
 When clicking send, the wallet will broadcast the transaction to a random peer, then disconnects the peer.
-This is currently [the optimal way to broadcast transactions from a privacy point of view,](https://medium.com/@nopara73/bitcoin-core-vs-wasabi-wallet-network-level-privacy-bdca1d501387) but a more ideal way would be to implement the [Dandelion](https://github.com/gfanti/bips/blob/master/bip-dandelion.mediawiki) protocol for transaction broadcasting when the Bitcoin network adopts it.
+This is currently [the optimal way to broadcast transactions from a privacy point of view,](/using-wasabi/NetworkLevelPrivacy.md) but a more ideal way would be to implement the [Dandelion](/using-wasabi/BIPs.md#bip-156-dandelion-privacy-enhancing-routing) protocol for transaction broadcasting when the Bitcoin network adopts it.
 
 ![](/SendAmountFeePassword.png)
 
@@ -158,7 +158,7 @@ If the user does not wish to proceed, they can dequeue their coins.
 
 ![](/CoinJoinStatus.png)
 
-After a mix has successfully executed, the resulting CoinJoin transaction will look like the [following real example](https://www.smartbit.com.au/tx/a0855875fd3d19522568ad673e4b52e11691d837021d74eef0d177f9e0950bf2):
+After a mix has successfully executed, the resulting CoinJoin transaction will look like the [following real example](https://blockstream.info/tx/a0855875fd3d19522568ad673e4b52e11691d837021d74eef0d177f9e0950bf2):
 
 ![](/TXCoinJoin.png)
 
@@ -258,7 +258,7 @@ Some additional thoughts and details on this section can be found [here](https:/
 
 - JoinMarket: [https://github.com/zkSNACKs/Meta/issues/5](https://github.com/zkSNACKs/Meta/issues/5)
 - Friend CoinJoin Network: [https://github.com/zkSNACKs/Meta/issues/17](https://github.com/zkSNACKs/Meta/issues/17)
-- Merge Avoidance with BIP47 Payment Codes: [https://github.com/zkSNACKs/Meta/issues/10](https://github.com/zkSNACKs/Meta/issues/10)
+- Merge Avoidance with [BIP 47](/using-wasabi/BIPs.md#bip-47-reusable-payment-codes-for-hierarchical-deterministic-wallets) Payment Codes: [https://github.com/zkSNACKs/Meta/issues/10](https://github.com/zkSNACKs/Meta/issues/10)
 - Clusterfuck Wallet Strategies: [https://github.com/zkSNACKs/Meta/issues/11](https://github.com/zkSNACKs/Meta/issues/11), [https://github.com/zkSNACKs/Meta/issues/18](https://github.com/zkSNACKs/Meta/issues/1), [https://github.com/nopara73/ZeroLink/issues/42](https://github.com/nopara73/ZeroLink/issues/42), [https://github.com/zkSNACKs/Meta/issues/18](https://github.com/zkSNACKs/Meta/issues/18)
 - Pay to EndPoint: [https://github.com/zkSNACKs/Meta/issues/18](https://github.com/zkSNACKs/Meta/issues/18), [https://github.com/zkSNACKs/Meta/issues/18](https://github.com/zkSNACKs/Meta/issues/18), [https://github.com/zkSNACKs/Meta/issues/23](https://github.com/zkSNACKs/Meta/issues/23)
 - GroupSend: [https://github.com/zkSNACKs/WalletWasabi/issues/760](https://github.com/zkSNACKs/WalletWasabi/issues/760)
@@ -341,7 +341,7 @@ This however may lead to enterprise adoption, which is good for liquidity, but t
 May become more likely.
 For example an exchange could decide to add CoinJoins and if they acquire 50% of liquidity in Wasabi, this way many of the wallet assumptions about anonymity sets would become less accurate. [https://github.com/zkSNACKs/Meta/issues/12](https://github.com/zkSNACKs/Meta/issues/12)
 Wasabi already has a public web API.
-However developers should not build wallets on top of it, since breakin changes must be expected.
+However developers should not build wallets on top of it, since breaking changes must be expected.
 Misc things like Twitter bots are fine: [http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion/swagger/index.html](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion/swagger/index.html) ([https://wasabiwallet.io/swagger/index.html](https://wasabiwallet.io/swagger/index.html))
 
 ### .NET Ecosystem

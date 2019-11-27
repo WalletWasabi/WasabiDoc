@@ -46,7 +46,7 @@ Most common questions answered with linked reference to the main documentation.
 ## Contribute to the Documentation
 
 [![Build Status](https://dev.azure.com/zkSNACKs/WasabiDoc/_apis/build/status/zkSNACKs.WasabiDoc?branchName=master)](https://dev.azure.com/zkSNACKs/WasabiDoc/_build/latest?definitionId=4&branchName=master)
-[![All Contributors](https://img.shields.io/badge/all_contributors-27-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-26-orange.svg?style=flat-square)](#contributors)
 
 Just like the Wasabi wallet software, this documentation is libre and open source under the [MIT license](LICENSE).
 Not only do we appreciate everyone's contribution, but we desperately need it!
@@ -210,6 +210,7 @@ Checkout what each emoji means [here](https://allcontributors.org/docs/en/emoji-
   <tr>
     <td align="center"><a href="http://www.michaeltoth.me"><img src="https://avatars3.githubusercontent.com/u/1676164?v=4" width="100px;" alt="Michael Toth"/><br /><sub><b>Michael Toth</b></sub></a><br /><a href="https://github.com/zkSNACKs/WasabiDoc/commits?author=michaeltoth" title="Documentation">📖</a> <a href="#content-michaeltoth" title="Content">🖋</a></td>
     <td align="center"><a href="https://github.com/PulpCattel"><img src="https://avatars0.githubusercontent.com/u/51127079?v=4" width="100px;" alt="Luke"/><br /><sub><b>Luke</b></sub></a><br /><a href="https://github.com/zkSNACKs/WasabiDoc/commits?author=PulpCattel" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://JonathanCross.com"><img src="https://avatars3.githubusercontent.com/u/5115470?v=4" width="100px;" alt="Jonathan Cross"/><br /><sub><b>Jonathan Cross</b></sub></a><br /><a href="https://github.com/zkSNACKs/WasabiDoc/commits?author=jonathancross" title="Documentation">📖</a></td>
   </tr>
 </table>
 

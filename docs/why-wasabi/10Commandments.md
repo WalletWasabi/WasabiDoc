@@ -23,10 +23,10 @@ Clear-net: [wasabiwallet.io](https://wasabiwallet.io)
 
 Tor hidden service: [wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion)
 
-Please [check signatures](InstallPackage.md) after completing downloads.
+Please [check signatures](/using-wasabi/InstallPackage.md) after completing downloads.
 The concern here is that you may accidentally fall for a phishing attempt and be on a malicious site downloading a malicious piece of software.
 
-Alternatively, as Wasabi is [libre and open source software](https://github.com/zkSNACKs/WalletWasabi), you may also [build the code from source](BuildSource.md).
+Alternatively, as Wasabi is [libre and open source software](https://github.com/zkSNACKs/WalletWasabi), you may also [build the code from source](/using-wasabi/BuildSource.md).
 
 ## 3. Keep your mnemonic words and password safely stored (BOTH!)
 
@@ -44,15 +44,15 @@ This label is only for you and is stored exclusively on your device.
 Wasabi has strong coin control features, and as you continue to use the wallet, you will observe that the history of your coins will appear, and this history is only useful to you if you are practicing good labeling. 
 An example of a good label:
 
-June 20 - $400 from Coinbase, primary account
+`June 20 - $400 from Coinbase, primary account`
 
-June 7 - 0.2 BTC Received from Bob via Bisq
+`June 7 - 0.2 BTC Received from Bob via Bisq`
 
 Examples of bad labels:
 
-Address #1
+`Address #1`
 
-0.5 BTC
+`0.5 BTC`
 
 Lastly, if you must use an exchange, try to ask for a new deposit address on each deposit.
 In the same way that you should never receive Bitcoin to the same address twice, you should try to avoiding sending Bitcoin to the same address twice.
@@ -100,7 +100,7 @@ If you think that forensics companies are not paying big money to block explorer
 Even something as simple as leaving a comment on a YouTube video or Reddit post will be scraped.
 
 More importantly, if you are using a hardware wallet, an easy way to undo the previous times you plugged in the wallet through non-private applications is to create a new account on the device with a passphrase.
-For example, for ledger nano s, you can do this in the device home screen > security > passphrase.
+For example, for ledger nano s, you can do this in the device `home screen > security > passphrase`.
 Remember Commandment 2!
 
 Remember, Bitcoin is a peer-to-peer cash system, so when you have the opportunity to do so, buy your coins directly from someone you know or through a P2P market place.

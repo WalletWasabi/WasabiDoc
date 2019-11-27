@@ -12,7 +12,7 @@ Including about the basics of privacy and Bitcoin in general.
 The important details of how to install Wasabi properly and the best practices how to use it.
 Further the questions for those who are interested in contributing to Wasabi.
 
-### List
+### Chapters
 
 - [Introduction FAQ](/FAQ/FAQ-Introduction.md)
 - [Installation FAQ](/FAQ/FAQ-Installation.md)

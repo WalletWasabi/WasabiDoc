@@ -7,6 +7,13 @@
 
 # Privacy in Bitcoin
 
+> The possibility to be anonymous or pseudonymous relies on you not revealing any identifying information about yourself in connection with the bitcoin addresses you use.
+If you post your bitcoin address on the web, then you’re associating that address and any transactions with it with the name you posted under.
+If you posted under a handle that you haven’t associated with your real identity, then you’re still pseudonymous.
+For greater privacy, it's best to use bitcoin addresses only once.
+
+By Satoshi Nakamoto in [How anonymous are bitcoins? - Bitcointalk](https://bitcointalk.org/index.php?topic=8.msg34#msg34)
+
 [[toc]]
 
 ---
@@ -110,7 +117,7 @@ Read more about the privacy concerns of address reuse in the [separate entry](ht
 
 _**Remove used address from GUI**_
 
-Wasabi uses the industry best practice [BIP 44 hierarchical deterministic wallet](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki), where out of one master secret a tree structure of child private keys are generated.
+Wasabi uses the industry best practice [BIP 44 hierarchical deterministic wallet](/using-wasabi/BIPs.md#bip-44-multi-account-hierarchy-for-deterministic-wallets), where out of one master secret a tree structure of child private keys are generated.
 It is deterministic because the same parent secret always calculates the same child private keys. When given a hardened child private key, then the parent private key cannot be calculated.
 In the `Receive` tab, a new address is generated every time, and as soon as a coin is sent to it, this specific address is removed from the GUI. 
 
@@ -197,8 +204,12 @@ If [bitcoind](https://github.com/bitcoin/bitcoin) is installed on the same compu
 It is also possible to connect Wasabi to a remote full node on another computer by specifying the local IP address or Tor hidden service in the settings.
 Now Wasabi pulls the verified blocks from the full node, and it also broadcasts the transactions to the P2P network from this full node.
 
-However, even if no full node is installed, Wasabi has a light client mode based on [BIP 158 block filters](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki).
+However, even if no full node is installed, Wasabi has a light client mode based on [BIP 158 block filters](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients).
 When the user sends the extended public key, or a filter of all the addresses to the central server, then the server can **COMPLETELY** deanonymize the users.
+An extended public (xPub) key is a part of the Bitcoin standard [BIP32](/using-wasabi/BIPs.md#bip-32-hierarchical-deterministic-wallets).
+It can be thought of as a master view into a wallet.
+By using the extended public key it's possible to derive all past and future public addresses and unspent transaction outputs (UTXOs).  
+
 Therefore the Wasabi server sends a filter of all the transactions in each block to all the users.
 Now they check locally if the block contains a transaction with their address.
 If not, then the filter is stored for later reference, and no block is downloaded. However, if there is a user transaction in that block, then Wasabi connects to a random Bitcoin P2P node over Tor, and asks for this entire block, not only one transaction.

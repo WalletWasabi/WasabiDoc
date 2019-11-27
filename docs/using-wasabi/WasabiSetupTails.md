@@ -26,9 +26,9 @@ Download for Debian/Ubuntu from:
 or  
 [https://www.wasabiwallet.io/#download](https://www.wasabiwallet.io/#download)
 
-Verify the PGP signature of the downloaded package, the zkSNACKs' PGP key fingerprint is:
+Verify the PGP signature of the downloaded package, the zkSNACKs' PGP public key fingerprint is:
 <br>
-`6FB3 872B 5D42 292F 5992 0797 8563 4832 8949 861E`
+`${zksnacksPublicKeyFingerprint}`
 
 `gpg -v Wasabi-${currentVersion}.deb` (For more details check this [guide](/using-wasabi/InstallPackage.md#debian-and-ubuntu))
 
@@ -45,7 +45,7 @@ You can now save your `Wasabi-${currentVersion}.deb` into the persistent storage
 
 As of version 1.1.9 Wasabi doesn’t offer easy ways, especially without command line, to change install directory. There is though a quick workaround.
 
-Wasabi saves session files in `/Home/.walletwasabi/client`, you need to mark the “show hidden files” setting to see it.
+Wasabi [saves session files](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) in `/Home/.walletwasabi/client`, you need to mark the “show hidden files” setting to see it.
 
 Create a directory in your persistent with the same hierarchical structure, like this:
 
@@ -64,7 +64,7 @@ Generally, you’d like to save the `Wallets` and `Blocks` folders.
 
 The former contains your wallet information (e.g. keys, labels), while the latter includes the blocks needed to establish your balance.
 
-Could be also nice to save the `BitcoinStore` folder, which contains the BIP 158 block filters, so that you don’t have to download them again.
+Could be also nice to save the `BitcoinStore` folder, which contains the [BIP 158](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients) block filters, so that you don’t have to download them again.
 
 ## INSTALL WASABI
 
@@ -109,7 +109,7 @@ You can save multiple copies of `.walletwasabi` in your persistent, each with di
 
 ```sh
 /Persistent
-|__ /bitcoin-0.18.1                # Bitcoin Core launcher folder
+|__ /bitcoin-0.18.1            	   # Bitcoin Core launcher folder
 |__ /Bitcoin                       # Bitcoin Core data folder
 |__ /Wasabi                        # General Wasabi folder
     |__ /Wasabi-${currentVersion}.deb          # Wasabi installer
@@ -134,5 +134,47 @@ You can save multiple copies of `.walletwasabi` in your persistent, each with di
 This is only a minor example, tune it to your own needs.
 
 :::danger
-Remember to do backups!
+Remember to backup either your files or your [persistent storage](https://tails.boum.org/doc/first_steps/persistence/copy/index.en.html)!
 :::
+
+## Script to automatically install Wasabi on Tails
+
+Alternatively, you can use this [script](https://github.com/permabull/wasabi_tails_installer/blob/master/wasabi_tails_installer) made by [permabull](https://github.com/permabull), which, after downloading Wasabi by following [step 2](/using-wasabi/WasabiSetupTails.html#download), automatically installs Wasabi from the persistent folder and moves the wallet you wanna open (or all of them) by user input:
+```
+#!/bin/bash
+
+sudo dpkg -i Wasabi-${currentVersion}.deb
+
+wassabee </dev/null &>/dev/null &
+
+sleep 5s
+
+pkill wassabee
+
+echo "*********************"
+
+ls -1 -d */
+
+echo "*********************"
+
+while true
+do	
+    read -p "Enter wallet to open: " wallet_name
+    FOLDER="$wallet_name"
+
+    if [ -d "$FOLDER" ]
+    then
+        echo "$FOLDER wallet found."
+	cd "$FOLDER"/.walletwasabi/
+	cp -r client/* ~/.walletwasabi/client
+	echo "Your files have been moved to wasabi folder"
+	break
+    else
+	echo ""$FOLDER" wallet doesn't exist"
+	continue
+fi
+done
+
+wassabee </dev/null &>/dev/null &
+```
+
