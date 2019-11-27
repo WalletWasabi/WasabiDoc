@@ -26,7 +26,7 @@ Over all, this was a great success, as several new peers started to contribute t
 Having a well educated user base is essential for any complex software such as Wasabi.
 In order to create and maintain this top notch documentation, there is an ongoing contribution game for any supporter of this archive of knowledge.
 The metric of success is a combination of number of pull requests, lines added and removed, as well as review of the changes.
-The bounty of `1000 US Dollars` worth of bitcoin is paid out every month on the 25th.
+The bounty of 0.1 BTC` is paid out every month on the 25th.
 The depth, quality and continuous maintenance of this documentation is a proof of the success of this contribution game!
 
 ## Contribution game to review v1.1.10
