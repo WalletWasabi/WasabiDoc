@@ -1,7 +1,7 @@
 ---
 {
   "title": "Gaining Privacy with Wasabi Wallet for Bitcoin transactions",
-  "description": "An explanation of how Wasabi Wallet is able to give privacy to its users with references to the technology used."
+  "description": "An explanation of how Wasabi Wallet is able to give privacy to its users while adding references to the technology behind it. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
 }
 ---
 
