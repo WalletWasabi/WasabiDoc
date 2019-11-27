@@ -9,7 +9,10 @@
 
 > The possibility to be anonymous or pseudonymous relies on you not revealing any identifying information about yourself in connection with the bitcoin addresses you use.
 If you post your bitcoin address on the web, then you’re associating that address and any transactions with it with the name you posted under.
-If you posted under a handle that you haven’t associated with your real identity, then you’re still pseudonymous. - Satoshi Nakamoto in [How anonymous are bitcoins? - Bitcointalk](https://bitcointalk.org/index.php?topic=8.msg34#msg34)
+If you posted under a handle that you haven’t associated with your real identity, then you’re still pseudonymous.
+For greater privacy, it's best to use bitcoin addresses only once.
+
+By Satoshi Nakamoto in [How anonymous are bitcoins? - Bitcointalk](https://bitcointalk.org/index.php?topic=8.msg34#msg34)
 
 [[toc]]
 
