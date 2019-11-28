@@ -749,15 +749,15 @@ For example, with a 0.7 BTC input you would expect the following outputs: ~0.1, 
 You can CoinJoin whenever you want.
 That said, the ideal way to CoinJoin would be when:
 
-1- Mempool is clean.
+1. Mempool is clean.
 CoinJoins are unfairly cheap when the mempool is empty.
 Remember to take a look at websites like [Johoe's Bitcoin Mempool Statistics](https://jochen-hoenicke.de/queue/#0,24h) or [mempool.space](https://mempool.space/) to see mempool statistics in real time.
 
-2- Your inputs are the same or little higher as the minimal denomination for the current round.
+2. Your inputs are the same or little higher as the minimal denomination for the current round.
 [Change is an issue](/using-wasabi/ChangeCoins.md#why-change-is-an-issue).
 For this reason, you should try to CoinJoin with the required denomination for the current round (starting roughly from 0.1 BTC).
 
-3- Mix at different times
+3. Mix at different times
 To avoid traffic detection and behavioral analysis, you should CoinJoin at different times (days and hours).
 :::
 
