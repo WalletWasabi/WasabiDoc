@@ -16,7 +16,7 @@ Every voice contains a link to the respective full document for more details.
 ### BIP
 
 Bitcoin Improvement Proposal.
-A set of proposals that members of the bitcoin community have submitted to improve bitcoin.
+A proposal that members of the bitcoin community have submitted to improve bitcoin.
 Read more: [Wasabi Supported BIPs](/using-wasabi/BIPs.md)
 :::
 
