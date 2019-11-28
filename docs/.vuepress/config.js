@@ -105,6 +105,10 @@ module.exports = {
       {
         text: "FAQ",
         link: "/FAQ/"
+      },
+      {
+        text: "Glossary",
+        link: "/glossary/"
       }
     ],
     sidebar: {
