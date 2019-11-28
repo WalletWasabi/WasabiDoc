@@ -55,7 +55,7 @@ Read more: [Use Lightning](/why-wasabi/10Commandments.md#_10-use-lightning)
 :::details
 ### Mempool
 
-The bitcoin Mempool (memory pool) is a collection of all transaction data in a block that have been verified by bitcoin nodes, but are not yet confirmed.
+The Bitcoin Mempool (memory pool) is a collection of all transaction data in a block that have been verified by Bitcoin nodes, but are not yet confirmed.
 Read more: [How does Wasabi know of incoming transactions to the mempool?](/FAQ/FAQ-UseWasabi.html#how-does-wasabi-know-of-incoming-transactions-to-the-mempool)
 :::
 
