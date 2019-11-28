@@ -23,7 +23,7 @@ Read more: [Wasabi Supported BIPs](/using-wasabi/BIPs.md)
 :::details
 ### Cold Storage
 
-Refers to keeping a reserve of bitcoin offline.
+Refers to keeping a reserve of important Bitcoin secrets offline.
 Cold storage is achieved when Bitcoin private keys are created and stored in a secure offline environment.
 Cold storage is important for anyone with bitcoin holdings.
 Online computers are vulnerable to hackers and should not be used to store a significant amount of bitcoin.
