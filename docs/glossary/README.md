@@ -34,7 +34,7 @@ Read more: [Cold Wasabi Protocol](/using-wasabi/ColdWasabi.md)
 ### Fees
 
 The sender of a transaction often includes a fee to the network for processing the requested transaction.
-Most transactions require a minimum fee of 0.5 mBTC.
+Most transactions require a minimum fee.
 Read more: [What fee should I select?](/FAQ/FAQ-UseWasabi.md#what-fee-should-i-select)
 :::
 
