@@ -40,7 +40,7 @@ Read more: [What fee should I select?](/FAQ/FAQ-UseWasabi.md#what-fee-should-i-s
 
 :::details
 ### Hardware Wallet
-A hardware wallet is a special type of Bitcoin wallet which generates stores the user’s private keys in a tailor made hardware device.
+A hardware wallet is a special type of Bitcoin wallet which generates and stores the user’s private keys in a tailor made hardware device.
 Read more: [Hardware Wallet FAQs](/FAQ/FAQ-UseWasabi.md#hardware-wallet)
 :::
 
