@@ -185,6 +185,15 @@ Read more: [Wasabi's Solution](/why-wasabi/BitcoinPrivacy.md#wasabi-s-solution-4
 :::
 
 :::details
+### #twoweeks
+
+The #twoweeks is a fun inside joke often used in the Wasabu documentation and, more generally, in the Internet community.
+In the case of Wasabi documentation, it usually indicates the arrival of a new function or update, to which the future date is still uncertain.
+
+Eg. "Lightning Network is coming to Wasabi in #twoweeks"
+:::
+
+:::details
 ### Wallet fingerprinting
 
 A careful analyst sometimes deduce which software created a certain transaction, because the many different wallet softwares don't always create transactions in exactly the same way.
