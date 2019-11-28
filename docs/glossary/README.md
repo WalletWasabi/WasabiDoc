@@ -76,7 +76,7 @@ Output, transaction output, or TxOut is an output in a transaction which contain
 :::details
 ### Pay-to-Witness-Public-Key-Hash (P2WPKH)
 
-The signature of a P2WPKH (Pay-to-Witness-Public-Key-Hash) contains the same information as a P2PKH spending, but is located in the witness field instead of the scriptSig field.
+The signature of a P2WPKH contains the same information as a Pay-to-Public-Key-Hash (P2PKH) spending, but is located in the witness field instead of the scriptSig field.
 The scriptPubKey is also modified.
 Read more: [BIP 84 derivation scheme for P2WPKH based accounts](/using-wasabi/BIPs.md#bip-84-derivation-scheme-for-p2wpkh-based-accounts)
 :::
