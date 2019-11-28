@@ -170,7 +170,7 @@ Read more: [What is the dust threshold](/FAQ/FAQ-UseWasabi.html#what-is-the-dust
 :::details
 ### KYC
 
-Know your customer (KYC) is the process of a business, identifying and verifying the identity of its clients.
+Know your customer (KYC) is the process of a business being forced to identify and verify the identity of its clients, and to share this information with a government.
 The term is also used to refer to the bank regulation which governs these activities.
 Read more: [AML/KYC Information](/why-wasabi/TransactionSurveillanceCompanies.md#aml-kyc-information)
 :::
