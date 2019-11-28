@@ -126,7 +126,7 @@ Read more: [What is the anonimity set?](/FAQ/FAQ-UseWasabi.md#what-is-the-anonym
 :::details
 ### Change address detection
 
-Many bitcoin transactions have change outputs.
+Many Bitcoin transactions have change outputs.
 It would be a serious privacy leak if the change address can be somehow found, as it would link the ownership of the (now spent) inputs with a new output.
 Read more: [Change coins](/using-wasabi/ChangeCoins.md)
 :::
