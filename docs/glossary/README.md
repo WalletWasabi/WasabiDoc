@@ -33,7 +33,7 @@ Read more: [Cold Wasabi Protocol](/using-wasabi/ColdWasabi.md)
 :::details
 ### Fees
 
-The sender of a transaction often includes a fee to the network for processing the requested transaction.
+The sender of a transaction includes a fee to the network for processing the requested transaction.
 Most transactions require a minimum fee.
 Read more: [What fee should I select?](/FAQ/FAQ-UseWasabi.md#what-fee-should-i-select)
 :::
