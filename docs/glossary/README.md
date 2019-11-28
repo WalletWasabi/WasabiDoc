@@ -8,7 +8,7 @@
 # Glossary
 
 This glossary contains the explanations of common words used in Wasabi and regarding Bitcoin Privacy in general.
-Every voice contains a link to the respective full document for more details.
+Every item contains a link to the respective full document for more details.
 
 ## Bitcoin in general
 
