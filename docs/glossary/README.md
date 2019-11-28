@@ -110,7 +110,8 @@ Read more: [How can I select UTXOs for CoinJoin?](/FAQ/FAQ-UseWasabi.md#how-can-
 ### Address reuse
 
 Address reuse is a serious privacy leak.
-If an output address has been reused it is very likely to be a payment output, not a change output.
+If an output address has been reused the same private key can spend now several coins, thus it is clear that all of these coins belong to one entity.
+Further, it is very likely to be a payment output, not a change output.
 This is because change addresses are created automatically by wallet software but payment addresses are manually sent between humans.
 Read more: [Address reuse](/using-wasabi/AddressReuse.md)
 
