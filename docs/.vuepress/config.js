@@ -209,7 +209,9 @@ module.exports = {
             "/FAQ/FAQ-UseWasabi.md",
             "/FAQ/FAQ-GeneralBitcoinPrivacy.md",
             "/FAQ/FAQ-Contribution.md"
-          ],
+          ]
+        }
+      ],
       "/glossary/": [
         {
           title: "Glossary",
