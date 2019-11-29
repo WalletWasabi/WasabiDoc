@@ -154,7 +154,7 @@ Read more: [Wasabi Wallet under the hood](/building-wasabi/TechnicalOverview.md#
 :::details
 ### Coordinator
 
-The coordinator is zkSNACKs' server which creates CoinJoins and accepts UTXOs in the mix.
+The coordinator is a server which creates CoinJoins and accepts UTXOs in the mix.
 Read more: [Wasabi Wallet under the hood](/FAQ/FAQ-UseWasabi.md#how-does-my-wallet-communicate-with-the-wasabi-coordinator-server)
 :::
 
