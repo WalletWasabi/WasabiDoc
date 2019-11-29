@@ -194,6 +194,6 @@ Eg. "Lightning Network is coming to Wasabi in #twoweeks"
 :::details
 ### Wallet fingerprinting
 
-A careful analyst sometimes deduce which software created a certain transaction, because the many different wallet softwares don't always create transactions in exactly the same way.
+A careful analyst sometimes deduces which software created a certain transaction, because many different wallet softwares don't always create transactions in exactly the same way.
 Read more: [Technical Overview of Wasabi Wallet](/building-wasabi/TechnicalOverview.md)
 :::
