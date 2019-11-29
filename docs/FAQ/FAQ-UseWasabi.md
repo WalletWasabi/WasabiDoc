@@ -1044,7 +1044,7 @@ To create a new Ledger Wallet *offline* and make sure that your newly created wa
 After that, you can use the wallet in combination with Wasabi without having concerns about your privacy!
 
 :::warning
-You still ened Ledger Live app to update the firmware of your Ledger wallet hardware.
+You still need Ledger Live app to update the firmware of your Ledger wallet hardware.
 By not using Ledger Live, you seriously jeopardize your safety.
 Please consider carefully before making this decision.
 :::
