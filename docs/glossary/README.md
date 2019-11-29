@@ -92,7 +92,7 @@ Read more: [How can I display the fee in satoshi per byte?](/FAQ/FAQ-UseWasabi.m
 :::details
 ### Simplified Payment Verification (SPV)
 
-SPV or simplified payment verification is a method for verifying particular transactions were included in a block without downloading the entire block.
+SPV is a method for verifying particular transactions were included in a block without downloading the entire block.
 The method is used by some lightweight Bitcoin clients.
 Read more: [Wasabi Wallet under the hood](/building-wasabi/TechnicalOverview.md#wasabi-wallet-under-the-hood)
 :::
@@ -110,10 +110,7 @@ Read more: [How can I select UTXOs for CoinJoin?](/FAQ/FAQ-UseWasabi.md#how-can-
 :::details
 ### Address reuse
 
-Address reuse is a serious privacy leak.
-If an output address has been reused the same private key can spend now several coins, thus it is clear that all of these coins belong to one entity.
-Further, it is very likely to be a payment output, not a change output.
-This is because change addresses are created automatically by wallet software but payment addresses are manually sent between humans.
+Address reuse refers to the use of the same address for multiple transactions, this is very bad for privacy.
 Read more: [Address reuse](/using-wasabi/AddressReuse.md)
 
 :::details
