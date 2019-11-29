@@ -41,6 +41,12 @@ All the knowledge needed to give new contributors a swift start on their path to
 
 Most common questions answered with linked reference to the main documentation.
 
+### [Wasabi Glossary](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/glossary/)
+
+**Glossary.**
+
+Explanations of common words used in Wasabi and regarding Bitcoin privacy.
+
 ---
 
 ## Contribute to the Documentation
