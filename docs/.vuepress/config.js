@@ -114,9 +114,9 @@ module.exports = {
           collapsable: false,
           sidebarDepth: 2,
           children: [
-            "/why-wasabi/GainingPrivacyWasabi.md",
             "/why-wasabi/WhyPrivacyImportant.md",
             "/why-wasabi/BitcoinPrivacy.md",
+            "/why-wasabi/GainingPrivacyWasabi.md",
             "/why-wasabi/10Commandments.md",
             "/why-wasabi/TransactionSurveillanceCompanies.md"
           ]
