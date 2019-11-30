@@ -114,7 +114,7 @@ Address reuse refers to the use of the same address for multiple transactions, t
 Read more: [Address reuse](/using-wasabi/AddressReuse.md)
 
 :::details
-### Anonimity Set (or anonset)
+### Anonymity Set (anonset)
 
 The anonymity set is effectively the size of the group you are hiding in during a CoinJoin.
 It's the quantity of equal value outputs of one CoinJoin transaction.
