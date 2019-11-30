@@ -291,24 +291,16 @@ This helps you to judge weather there are privacy concerns when sending a specif
 
 ![](/ReceiveLabelingRequired.png)
 
-Not only, Wasabi uses a **smart coins selection algorithm** which allows Wasabi itself to recognize entities behind a transaction and then it can automatically select the group of coins that belong to those clusters already known.
-This allows the final user to merge more inputs from the same entities to make a transaction or participate in a CoinJoin round.
-This is fantastic, but it requires the final user to label in detail every address.
-
-You should ask yourself: "Who knows this address is mine?"
+You should ask yourself: "Who knows this address is mine?" or "Who will I share this address with?"
 Labels should contain the comma-separated names of people/entities that may be aware of the transaction and could follow its trail like:
 
-`Name of the sender, name of the exchange`
+`Name of the sender, name of the exchange, name of the payment processor`
 
 So, a good label could be:
 
-`Alice, Bitfinex`
+`Alice, Bitfinex, BTCPay Server`
 
 or:
-
-`Company Boss`
-
-or again:
 
 `Alice & Bob` (in this case, `Alice & Bob` is the name of a company. Remember that is not the same as `Alice, Bob` as they are multiple entities separated by a comma).
 :::
