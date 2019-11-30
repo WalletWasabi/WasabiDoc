@@ -1031,7 +1031,7 @@ Now click `Broadcast Transaction` to send it off over Tor to a random Bitcoin no
 You can't do that directly, you have to send the bitcoins (in small portions > 0.1 BTC if needed) to a `hot` Wasabi Wallet, do the CoinJoin and then send them back to a new address on the Hardware wallet for cold-storage.
 :::
 
-:::details
+::::details
 ### Does Ledger Live server spy on my xpub?
 
 Yes, when using the Ledger Live software wallet to manage your coins, you send your extended public key to the Ledger company server.
@@ -1040,9 +1040,15 @@ To avoid that you can use a Ledger hardware in combination with Wasabi as softwa
 Make sure you are generating a completely new wallet with a new seed phrase backup so that the compromised old wallet is no longer an issue.
 You can also go into the Settings of your Ledger and create a PIN-specific passphrase.
 
-To create a new Ledger Wallet *offline* and make sure that your newly created wallet doesn't leak any information to Ledger's servers you can follow [this guide](https://support.ledger.com/hc/en-us/articles/115005172609).
+To create a new Ledger Wallet *offline* and make sure that your newly created wallet doesn't leak any information to Ledger's servers you must not use Ledger Live (neither to configure it for the first time, nor to use it).
 After that, you can use the wallet in combination with Wasabi without having concerns about your privacy!
+
+:::warning
+You still need Ledger Live app to update the firmware of your Ledger hardware wallet.
+By not using Ledger Live, you seriously jeopardize the safety of your funds.
+Please consider this carefully before making a decision.
 :::
+::::
 
 :::details
 ### After I CoinJoined my coins and reached green anonset, I sent them to my hardware wallet address. When i check my HW via Wasabi, the coins are now red. Why?
