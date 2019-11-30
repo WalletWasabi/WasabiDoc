@@ -84,7 +84,7 @@ Read more: [BIP 84 derivation scheme for P2WPKH based accounts](/using-wasabi/BI
 :::details
 ### satoshi
 
-A satoshi (sat) is the smallest denomination of bitcoin that can be recorded on the blockchain.
+A satoshi is the smallest denomination of bitcoin that can be recorded on the blockchain.
 It is the equivalent of 0.00000001 bitcoin and is named after the creator of Bitcoin, Satoshi Nakamoto.
 Read more: [How can I display the fee in satoshi per byte?](/FAQ/FAQ-UseWasabi.md#how-can-i-display-the-fee-in-satoshis-per-byte)
 :::
