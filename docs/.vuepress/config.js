@@ -120,6 +120,7 @@ module.exports = {
           children: [
             "/why-wasabi/WhyPrivacyImportant.md",
             "/why-wasabi/BitcoinPrivacy.md",
+            "/why-wasabi/GainingPrivacyWasabi.md",
             "/why-wasabi/10Commandments.md",
             "/why-wasabi/TransactionSurveillanceCompanies.md"
           ]
