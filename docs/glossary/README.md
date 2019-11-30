@@ -62,7 +62,7 @@ Read more: [How does Wasabi know of incoming transactions to the mempool?](/FAQ/
 :::details
 ### Multisignature
 
-Multisignature (m-of-n multisig) refers to requiring more than one key to authorize a bitcoin transaction.
+Multisignature (m-of-n multisig) refers to requiring more than one key to authorize a Bitcoin transaction.
 Only with `m` signatures of `n` public keys can the bitcoin be spend.
 Read more: [Can I generate a multi signature script?](/FAQ/FAQ-UseWasabi.md#can-i-generate-a-multi-signature-script)
 :::
