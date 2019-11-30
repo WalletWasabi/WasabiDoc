@@ -105,6 +105,10 @@ module.exports = {
       {
         text: "FAQ",
         link: "/FAQ/"
+      },
+      {
+        text: "Glossary",
+        link: "/glossary/"
       }
     ],
     sidebar: {
@@ -206,6 +210,13 @@ module.exports = {
             "/FAQ/FAQ-GeneralBitcoinPrivacy.md",
             "/FAQ/FAQ-Contribution.md"
           ]
+        }
+      ],
+      "/glossary/": [
+        {
+          title: "Glossary",
+          collapsable: false,
+          sidebarDepth: 2,
         }
       ]
     }
