@@ -41,10 +41,7 @@ Lastly, understand that if you lose your password, it becomes much harder (if no
 
 Each time you receive coins, you will be asked to create a label.
 This label is only for you and is stored exclusively on your device.
-Wasabi has strong coin control features, and as you continue to use the wallet, you will observe that the history of your coins will appear, and this history is only useful to you if you are practicing good labeling. 
-
-Not only, Wasabi uses a **smart coins selection algorithm** which allows Wasabi itself to recognize entities behind a transaction and then it can automatically selects the group of coins that belong to those clusters already known.
-This allows the final user to merge more inputs from the same entities to make a transaction or participate in a CoinJoin round.
+Wasabi has strong coin control features, and as you continue to use the wallet, you will observe that the history of your coins will appear, and this history is only useful to you if you are practicing good labeling.
 
 You can read more about labels [here](/FAQ/FAQ-UseWasabi.md#why-do-i-have-to-label-my-address)
 
