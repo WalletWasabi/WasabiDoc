@@ -176,6 +176,13 @@ Read more: [AML/KYC Information](/why-wasabi/TransactionSurveillanceCompanies.md
 :::
 
 :::details
+### Peers
+
+Peers are those who use Bitcoin and Wasabi.
+They are literally peers in the network, or in the CoinJoin.
+:::
+
+:::details
 ### XPUB (Extended Public Key)
 
 An xpub, also know as Extended Public Key, is a part of BIP-32 that will allow you to observe your wallet without the private key (xpriv).
