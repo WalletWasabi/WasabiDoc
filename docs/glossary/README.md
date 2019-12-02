@@ -193,7 +193,7 @@ Read more: [Wasabi's Solution](/why-wasabi/BitcoinPrivacy.md#wasabi-s-solution-4
 ### Tor
 
 Tor (The Onion Routing) is free and open-source software for enabling anonymous communication.
-It is extensively used by Wasabi.
+It is widely used by Wasabi.
 Read more: [How does Tor protect my network level privacy?](/FAQ/FAQ-GeneralBitcoinPrivacy.md#how-does-tor-protect-my-network-level-privacy)
 :::
 
