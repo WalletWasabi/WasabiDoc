@@ -190,6 +190,14 @@ Read more: [Wasabi's Solution](/why-wasabi/BitcoinPrivacy.md#wasabi-s-solution-4
 :::
 
 :::details
+### Tor
+
+Tor (The Onion Routing) is free and open-source software for enabling anonymous communication.
+It is extensively used by Wasabi.
+Read more: [How does Tor protect my network level privacy?](/FAQ/FAQ-GeneralBitcoinPrivacy.md#how-does-tor-protect-my-network-level-privacy)
+:::
+
+:::details
 ### #twoweeks
 
 The #twoweeks is a fun inside joke often used in the Wasabi documentation and, more generally, in the Internet community.
