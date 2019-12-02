@@ -103,6 +103,10 @@ module.exports = {
         link: "/building-wasabi/"
       },
       {
+        text: "Scenarios",
+        link: "/scenarios/"
+      },
+      {
         text: "FAQ",
         link: "/FAQ/"
       },
@@ -197,6 +201,13 @@ module.exports = {
             "/building-wasabi/LICENSE.md",
             "/building-wasabi/Credits.md"
           ]
+        }
+      ],
+      "/scenarios/": [
+        {
+          title: "Scenarios",
+          collapsable: false,
+          sidebarDepth: 2,
         }
       ],
       "/FAQ/": [
