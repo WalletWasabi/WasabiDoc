@@ -216,6 +216,6 @@ Read more: [Technical Overview of Wasabi Wallet](/building-wasabi/TechnicalOverv
 :::details
 ### Wasabika
 
-Wasabika is a is a recurring word in the documentation.
+Wasabika is a recurring word in the documentation.
 Wasabikas are essentially builders of Wasabi in general.
 :::
