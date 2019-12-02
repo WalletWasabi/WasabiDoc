@@ -197,3 +197,10 @@ Eg. "Lightning Network is coming to Wasabi in #twoweeks"
 A careful analyst sometimes deduces which software created a certain transaction, because many different wallet softwares don't always create transactions in exactly the same way.
 Read more: [Technical Overview of Wasabi Wallet](/building-wasabi/TechnicalOverview.md)
 :::
+
+:::details
+### Wasabika
+
+Wasabika is a is a recurring word in the documentation.
+Wasabikas are essentially builders of Wasabi in general.
+:::
