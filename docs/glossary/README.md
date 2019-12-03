@@ -178,7 +178,7 @@ Read more: [AML/KYC Information](/why-wasabi/TransactionSurveillanceCompanies.md
 :::details
 ### Peers
 
-Peers are those who use Bitcoin and Wasabi.
+Peers in our documentation refers mainly to Bitcoin and Wasabi Wallet users, but it also means people.
 They are literally peers in the network, or in the CoinJoin.
 :::
 
@@ -217,5 +217,5 @@ Read more: [Technical Overview of Wasabi Wallet](/building-wasabi/TechnicalOverv
 ### Wasabika
 
 Wasabika is a recurring word in the documentation.
-Wasabikas are essentially builders of Wasabi in general.
+Wasabikas are essentially builders and users of Wasabi in general.
 :::
