@@ -176,10 +176,25 @@ Read more: [AML/KYC Information](/why-wasabi/TransactionSurveillanceCompanies.md
 :::
 
 :::details
+### Peers
+
+Peers in our documentation refers mainly to Bitcoin and Wasabi Wallet users, but it also means people.
+They are literally peers in the network, or in the CoinJoin.
+:::
+
+:::details
 ### XPUB (Extended Public Key)
 
 An xpub, also know as Extended Public Key, is a part of BIP-32 that will allow you to observe your wallet without the private key (xpriv).
 Read more: [Wasabi's Solution](/why-wasabi/BitcoinPrivacy.md#wasabi-s-solution-4)
+:::
+
+:::details
+### Tor
+
+Tor (The Onion Router) is free and open-source software for enabling anonymous communication.
+It is widely used by Wasabi.
+Read more: [How does Tor protect my network level privacy?](/FAQ/FAQ-GeneralBitcoinPrivacy.md#how-does-tor-protect-my-network-level-privacy)
 :::
 
 :::details
@@ -196,4 +211,10 @@ Eg. "Lightning Network is coming to Wasabi in #twoweeks"
 
 A careful analyst sometimes deduces which software created a certain transaction, because many different wallet softwares don't always create transactions in exactly the same way.
 Read more: [Technical Overview of Wasabi Wallet](/building-wasabi/TechnicalOverview.md)
+:::
+
+:::details
+### Wasabika
+
+Wasabikas are essentially builders and users of Wasabi in general.
 :::
