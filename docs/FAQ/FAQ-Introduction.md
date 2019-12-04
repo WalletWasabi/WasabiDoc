@@ -112,7 +112,7 @@ Any line of code written to support a random shitcoin takes away scarce develope
 :::
 
 :::details
-### Why is the anonymity set 100??
+### Why is the anonymity set 100?
 
 Sufficient anonymity set is a hard question, that not yet enough research done to answer it definitively.
 The rough consensus among many privacy researchers is that an anonymity set above 50 could be considered sufficient.
@@ -194,7 +194,7 @@ Key dates:
 :::
 
 :::details
-### Who is contributing to Wasabi??
+### Who is contributing to Wasabi?
 
 There are many Wasabikas working with great effort and care to manifest this powerful tool of self defense.
 [Many peers](https://github.com/zkSNACKs/WalletWasabi/graphs/contributors) have already contributed to the repository, and more and more supporters are joining the [dojo](/building-wasabi/Dojo.md).
