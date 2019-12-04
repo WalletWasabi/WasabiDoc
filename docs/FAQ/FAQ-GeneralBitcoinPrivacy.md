@@ -145,7 +145,7 @@ But regardless, running your own full node means that you don't need to communic
 :::
 
 :::details
-### Can Wasabi work with a pruned bitcoin node??
+### Can Wasabi work with a pruned bitcoin node?
 
 Yes.
 Wasabi is a hybrid, if your node doesn't have a block, then it acquires it from someone else.
@@ -192,4 +192,3 @@ Route everything through Tor by default.
 It is also good practice to route your chats through the Tor network.
 You can also configure many cloud storage providers in this way.
 :::
-
