@@ -1278,40 +1278,12 @@ This is a temporary ban on your coins in participation of the CoinJoin.
 ### What does spent coin status mean?
 
 The `spent` coin status is a symptom of corrupted wallet state.
-Currently this is the largest known bug in Wasabi Wallet.
-It currently affects about 1-5% of users.
+This used to be the largest known bug in Wasabi Wallet.
+It affected about 1-5% of users.
 This issue was introduced to Wasabi with the [v1.1.4 release](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v1.1.4) in April, 2019 by adding a wallet cache, that resulted in 12 times faster wallet load.
 It was [thought to be fixed](https://old.reddit.com/r/WasabiWallet/comments/c2hco8/announcement_spent_coin_and_lost_unconfirmed/) in June by adding an autocorrection mechanism, but some users are still reporting this issue, so it is not fixed.
 
-The easy fix could be removing the wallet cache altogether, but that would make the wallet load painfully slow, which makes it a no-go.
-Because of this, Wasabi team is working on a comprehensive refactoring of wallet internals for a fairly long time now and they are slowly getting there to fix the issue without performance hit.
-Read more: [WIP1 - Wasabi Improvement Proposal Refactoring Internals](https://github.com/zkSNACKs/WalletWasabi/issues/2359).
-
-#### What can you do in the meantime?
-
-Change the network in the settings from mainnet to testnet and back to mainnet.
-This will result in rebuilding the wallet cache when you load your wallet on the mainnet.
-
-##### Switch Networks
-
-1. Open the settings of Wasabi Wallet
-2. Change the `Bitcoin Network` field from `MainNet` to `TestNet`
-3. Shut down and open Wasabi
-4. Open the settings of Wasabi Wallet
-5. Change the `Bitcoin Network` field from `TestNet` to `MainNet`
-6. Shut down and open Wasabi
-
-Because Wasabi was loaded in the `TestNet` last time, it will think it does not have a wallet cache built for the `Main` network, so it will clear the cache and build it again.
-
-##### Delete the Block States
-
-1. Close Wasabi
-2. Go to the `Wallets` folder located in the [Wasabi Data Folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) and open the relevant wallet file in a text editor
-3. Delete the lines starting from `"BlockStates": [` and ending with the line closing the bracket `]`. This includes the `BlockHash`, `BlockHeight`, and `TransactionIndices` data blocks
-4. Restart Wasabi
-
-Then Wasabi will rescan the block filters, find all the blocks that have transactions with your coins and re-calculate your total wallet balance, without the spent coins.
-Wasabi will not re-download your filters and blocks, so there are no bandwidth costs.
+It ultimately got fixed in [v1.1.10](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v1.1.10) by introducing an upgraded version of [BIP 158 block filters](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients/) and changing the wallet cache architecture.
 :::
 
 
