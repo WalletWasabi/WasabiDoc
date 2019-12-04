@@ -257,28 +257,9 @@ Then you can click on `Generate` which will now show you the address, and immedi
 After a coin has been sent to this address, it is removed from the GUI, this is a good feature to help protect you against [address reuse](/FAQ/FAQ-UseWasabi.md#why-is-it-bad-to-re-use-addresses).
 
 ![](/ReceiveLabelingRequired.png)
-:::
 
-:::details
-### How do I generate multiple new receiving addresses?
-
-Wasabi by default allows up to 21 unused addresses, you see this reflected in the graphical interface, that shows max 21 addresses.
-After that, it'll regenerate the same addresses, this is to avoid bloating the software.
-More info [here](https://github.com/zkSNACKs/WalletWasabi/issues/2340#issuecomment-534885887).  
-Let's see an example:
-
-`m/84'/0'/0'` is the default [BIP 84](/using-wasabi/BIPs.md#bip-84-derivation-scheme-for-p2wpkh-based-accounts) derivation path, as explained [here](FAQ-UseWasabi.md#what-derivation-paths-does-wasabi-use), and so this'll be your first receiving address: `m/84'/0'/0'/0/0`.  
-`m/84'/0'/0'/0/1` this will be the second.  
-`m/84'/0'/0'/0/2` this will be the third, and so on...
-
-At `m/84'/0'/0'/0/20` (your 21st address), if you never used any of the previously generated addresses, Wasabi will start recycling the previous unused ones and will automatically overwrite the labels.
-E.g., Wasabi will not generate address `m/84'/0'/0'/0/21` with label: "address n. 22", instead it'll regenerate one between `m/84'/0'/0'/0/0` and `m/84'/0'/0'/0/20` and will overwrite previous label to "address n. 22".
-
-To increase the number of freshly new generated addresses, you have to increase the `MinGapLimit` json property of your `wallet.json` file.
-
-* Go to `File/Open/Wallets Folder` or navigate into the `Wallets` folder inside your [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) and open your wallet file.
-* Close Wasabi Wallet.
-* Edit the `MinGapLimit` json property in the wallet file.
+If you generate more than 21 unused addresses, a pop up will appear saying `MinGapLimit increased from 21 to 22.` and so on. 
+The MinGapLimit is the maximum number of consecutive unused addresses in your sequence of addresses, Wasabi automatically increases this value if needed when you generate new receiving addresses. 
 :::
 
 :::details
