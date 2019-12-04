@@ -145,6 +145,16 @@ But regardless, running your own full node means that you don't need to communic
 :::
 
 :::details
+### How can I setup a full node?
+
+Following are listed some of the most reliable projects:
+- [Raspiblitz](https://github.com/rootzoll/raspiblitz), a DIY project based on the Raspberry platform
+- [Nodl](https://www.nodl.it/), works out of the box and runs on a powerful Rockchip CPU
+- [myNode](https://mynodebtc.com/), a DIY project with optional paid versions
+- [Casa](https://keys.casa/lightning-bitcoin-node/), works out of the box on the Raspberry platform
+:::
+
+:::details
 ### Can Wasabi work with a pruned bitcoin node??
 
 Yes.
@@ -192,4 +202,3 @@ Route everything through Tor by default.
 It is also good practice to route your chats through the Tor network.
 You can also configure many cloud storage providers in this way.
 :::
-
