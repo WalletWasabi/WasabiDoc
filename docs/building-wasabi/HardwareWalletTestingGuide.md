@@ -9,7 +9,7 @@
 
 # Wasabi Hardware Wallet Integration Testing
 
-|                | Windows | OSX     | Linux   |
+|                | Windows | macOS     | Linux   |
 |----------------|---------|---------|---------|
 | Coldcard       | pass    | pass    | pass    |
 | Digital BitBox |         |         |         |

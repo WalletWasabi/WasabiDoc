@@ -32,14 +32,14 @@ dotnet build
 dotnet run -- --onlybinaries
 ```
 
-This will build our binaries for Windows, OSX and Linux from source code and open them in a file explorer for you.
+This will build our binaries for Windows, macOS and Linux from source code and open them in a file explorer for you.
 
 ![](https://i.imgur.com/8XAQzz4.png)
 
 ## 3. Verify Builds
 
 You can compare our binaries with the downloads we have on the website: [https://wasabiwallet.io/](https://wasabiwallet.io/)
-In order to end-to-end verify all the downloaded packages you need a Windows, a Linux, and an OSX machine.
+In order to end-to-end verify all the downloaded packages you need a Windows, a Linux, and a macOS machine.
 
 ![](https://i.imgur.com/aI9Kx0c.png)
 
@@ -52,10 +52,10 @@ You can compare it with your build:
 git diff --no-index win7-x64 "C:\Program Files\WasabiWallet"
 ```
 
-### Linux && OSX
+### Linux && macOS
 
 You can use the Windows Subsystem for Linux to verify all the packages in one go.
-At the time of writing this guide we provide a `.tar.gz` and a `.deb` package for Linux and .dmg for OSX.
+At the time of writing this guide we provide a `.tar.gz` and a `.deb` package for Linux and .dmg for macOS.
 Install the `.deb` package and extract the `tar.gz` and `.dmg` packages, then compare them with your build.
 
 After installing WSL, just type `wsl` in explorer where your downloaded and built packages are located.
