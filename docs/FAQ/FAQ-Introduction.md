@@ -275,8 +275,8 @@ For the complete explanation please read [ZeroLink: The Bitcoin Fungibility Fram
 ### What are the minimal requirements to run Wasabi?
 
 - 64-bit architecture
-- Windows 7 or newer
-- MacOS 10.13 or newer
+- Windows 7 SP1+
+- macOS 10.13 or newer
 - For Linux it depends on the specific OS
 
 :::
