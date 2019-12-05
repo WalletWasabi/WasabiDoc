@@ -611,6 +611,15 @@ Broadcast tx|Send tab||Send tab
 
 :::
 
+:::details
+### Why Wasabi did not send some of my selected coins?
+
+Because they were not necessary for the transaction.
+Wasabi Wallet will use only the necessary coins to make the transaction.
+
+Example: If you select 10 coins with total value of 2 btc and you want to send 1 btc but the sum of 4 coins is enough to make the transaction, then Wasabi will use only those 4 coins.
+:::
+
 ## CoinJoin
 
 @[youtube](ypfZT9GlqTw)
@@ -938,6 +947,21 @@ The current address used by the Wasabi coordinator is `bc1qa24tsgchvuxsaccp8vrnk
 
 Old addresses:
 - `bc1qs604c7jv6amk4cxqlnvuxv26hv3e48cds4m0ew`
+:::
+
+:::details
+### What is the maximum number of coins that can be registered in a CoinJoin?
+
+Wasabi Wallet will register only up to 7 coins in a CoinJoin.
+:::
+
+:::details
+### Why Wasabi did not register some of my enqueued coins?
+
+Because they were not necessary for the CoinJoin.
+Wasabi Wallet will use only the necessary coins to CoinJoin (up to 7 coins).
+
+Example: If you select 10 coins with total value of 0.2 btc but the sum of 4 coins is enough to CoinJoin, then Wasabi will use only those 4 coins.
 :::
 
 ## Hardware Wallet
