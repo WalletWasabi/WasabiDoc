@@ -94,7 +94,7 @@ So if you want to check on the status of a transaction or the balance on an addr
 
 (b) Check through your full node
 
-(c) Use a block explorer through Tor (e.g. [Blockstream Esplora Tor](http://http://explorerzydxu5ecjrkwceayqybizmpjjznk5izmitf2modhcusuqlid.onion/))
+(c) Use a block explorer through Tor (e.g. [Blockstream Esplora Tor](http://explorerzydxu5ecjrkwceayqybizmpjjznk5izmitf2modhcusuqlid.onion/))
 
 If you think that forensics companies are not paying big money to block explorers for user information, you are wrong.
 Even something as simple as leaving a comment on a YouTube video or Reddit post will be scraped.
@@ -121,6 +121,6 @@ Currently Wasabi does not support in-wallet lightning features, but it is on the
 
 ## Credits
 
-Much of this list comes from the work of our good friends at JoinMaket.
+Much of this list comes from the work of our good friends at JoinMarket.
 In particular, we need to thank [Adam Gibson](https://twitter.com/waxwing__) and [Chris Belcher](https://twitter.com/chris_belcher_) for their outstanding contribution to privacy in Bitcoin.
 Please take a look at the [Bitcoin Privacy Wiki](https://en.bitcoin.it/wiki/Privacy), the [Join Market Wiki](https://en.bitcoin.it/wiki/JoinMarket) and the [Join Market source code](https://github.com/JoinMarket-Org).
