@@ -258,7 +258,7 @@ After a coin has been sent to this address, it is removed from the GUI, this is 
 
 ![](/ReceiveLabelingRequired.png)
 
-If you generate more than 21 unused addresses, a warning will appear saying `MinGapLimit increased from 21 to 22.` and so on. 
+If you generate more than 21 unused addresses, a notification will appear saying `Warning! MinGapLimit increased from 21 to 22.` and so on.
 The `MinGapLimit` is the maximum number of consecutive unused addresses in your sequence of addresses, Wasabi automatically increases this value if needed when you generate new receiving addresses.
 :::
 
