@@ -617,7 +617,7 @@ Broadcast tx|Send tab||Send tab
 Because they were not necessary for the transaction.
 Wasabi Wallet will use only the necessary coins to make the transaction.
 
-Ex: If you select 10 coins with total value of 2 btc and you want to send 1 btc but the sum of 4 coins is enough to make the transaction, then Wasabi will use only those 4 coins.
+Example: If you select 10 coins with total value of 2 btc and you want to send 1 btc but the sum of 4 coins is enough to make the transaction, then Wasabi will use only those 4 coins.
 :::
 
 ## CoinJoin
@@ -961,7 +961,7 @@ Wasabi Wallet will register only up to 7 coins in a CoinJoin.
 Because they were not necessary for the CoinJoin.
 Wasabi Wallet will use only the necessary coins to CoinJoin (up to 7 coins).
 
-Ex: If you select 10 coins with total value of 0.2 btc but the sum of 4 coins is enough to CoinJoin, then Wasabi will use only those 4 coins.
+Example: If you select 10 coins with total value of 0.2 btc but the sum of 4 coins is enough to CoinJoin, then Wasabi will use only those 4 coins.
 :::
 
 ## Hardware Wallet
