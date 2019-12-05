@@ -147,7 +147,11 @@ But regardless, running your own full node means that you don't need to communic
 :::details
 ### How can I setup a full node?
 
-Following are listed some of the most reliable projects:
+Starting with v1.1.10 release, Wasabi comes pre-installed with bitcoind from [Bitcoin Core](https://bitcoincore.org/) and it can be started on the same desktop or laptop computer with just one click. This is likely the most convenient solution for Wasabikas.
+
+There are also other node implementations different from Bitcoin Core, such as [Bitcoin Knots](https://github.com/bitcoinknots/bitcoin/) or [Libbitcoin](https://github.com/libbitcoin/libbitcoin-node), that could be used as well.
+
+Instead, if you prefer to use some dedicated hardware solutions, these are some of the most reliable projects:
 - [Raspiblitz](https://github.com/rootzoll/raspiblitz), a DIY project based on the Raspberry platform
 - [Nodl](https://www.nodl.it/), works out of the box and runs on a powerful Rockchip CPU
 - [myNode](https://mynodebtc.com/), a DIY project with optional paid versions
