@@ -613,6 +613,7 @@ Broadcast tx|Send tab||Send tab
 
 :::details
 ### Why Wasabi did not send some of my selected coins?
+
 Because they were not necessary for the transaction.
 Wasabi Wallet will use only the necessary coins to make the transaction.
 
