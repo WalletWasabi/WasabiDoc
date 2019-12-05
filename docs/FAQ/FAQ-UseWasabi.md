@@ -957,6 +957,7 @@ Wasabi Wallet will register only up to 7 coins in a CoinJoin.
 
 :::details
 ### Why Wasabi did not register some of my enqueued coins?
+
 Because they were not necessary for the CoinJoin.
 Wasabi Wallet will use only the necessary coins to CoinJoin (up to 7 coins).
 
