@@ -276,7 +276,10 @@ For the complete explanation please read [ZeroLink: The Bitcoin Fungibility Fram
 
 - 64-bit architecture
 - Windows 7 SP1+
-- macOS 10.13 or newer
-- For Linux it depends on the specific OS
+- macOS 10.13+
+- Debian 9+
+- Ubuntu 16.04+
+- For other Linux it depends on the specific OS.
+Click [here](https://github.com/dotnet/core/blob/master/release-notes/3.0/3.0-supported-os.md) to check if .NET Core 3.0 supports your OS. 
 
 :::
