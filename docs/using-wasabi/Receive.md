@@ -50,6 +50,18 @@ In Wasabi it is mandatory to give every address a label of which entities know a
 
 ![](/ReceiveLabelingRequired.png)
 
+An example of a good label:
+
+`June 20 - $400 from Coinbase, primary account`
+
+`June 7 - 0.2 BTC Received from Bob via Bisq`
+
+Examples of bad labels:
+
+`Address #1`
+
+`0.5 BTC`
+
 ## Generating addresses step-by-step
 
 1. Start Wasabi and open the wallet that you want to receive coins into.
