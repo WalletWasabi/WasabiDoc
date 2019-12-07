@@ -307,7 +307,6 @@ This is very bad for your privacy because of [address reuse](/using-wasabi/Addre
 ### How can I edit the label of my address after a transaction has gone through?
 
 To date there is no possibility to change the label of an address after it has sent or received bitcoins.
-
 :::
 
 ::::details
