@@ -52,7 +52,7 @@ You can compare it with your build:
 git diff --no-index win7-x64 "C:\Program Files\WasabiWallet"
 ```
 
-### Linux && macOS
+### Linux & macOS
 
 You can use the Windows Subsystem for Linux to verify all the packages in one go.
 At the time of writing this guide we provide a `.tar.gz` and a `.deb` package for Linux and .dmg for macOS.
