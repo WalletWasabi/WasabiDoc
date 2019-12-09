@@ -14,7 +14,11 @@
 
 
 :::tip Optional for privacy
-You can disable .NET's telemetry, which is sending some usage information to Microsoft, by typing on Linux and macOS: `export DOTNET_CLI_TELEMETRY_OPTOUT=1` or on Windows `set DOTNET_CLI_TELEMETRY_OPTOUT=1`.
+You can disable .NET's telemetry, which is sending some usage information to Microsoft, by typing:
+
+`export DOTNET_CLI_TELEMETRY_OPTOUT=1` on Linux and macOS.
+
+`set DOTNET_CLI_TELEMETRY_OPTOUT=1` on Windows, or `setx DOTNET_CLI_TELEMETRY_OPTOUT 1` to disable it permanently.
 :::
 
 ## Get Wasabi
