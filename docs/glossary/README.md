@@ -213,7 +213,7 @@ Read more: [Lurking Wife Mode](/using-wasabi/LurkingWifeMode.md)
 :::details
 ### Pay to EndPoint (P2EP)
 
-Pay to EndPoint simplifies the sending of bitcoins with more security and privacy than Pay to IP (P2IP).
+Pay to EndPoint is sending of bitcoins where the receiver adds one of his own coins as input for a two party CoinJoin.
 Read more: [Pay to EndPoint](/using-wasabi/PayToEndPoint.md)
 :::
 
