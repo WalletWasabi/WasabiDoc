@@ -13,7 +13,7 @@ Every item contains a link to the respective full document for more details.
 ## Bitcoin in general
 
 :::details
-### BIP
+### Bitcoin Improvement Proposal (BIP)
 
 Bitcoin Improvement Proposal.
 A design document for introducing features or information to Bitcoin.
@@ -39,13 +39,13 @@ Read more: [What fee should I select?](/FAQ/FAQ-UseWasabi.md#what-fee-should-i-s
 :::
 
 :::details
-### Hardware Wallet
+### Hardware Wallet (HW)
 A hardware wallet is a special type of Bitcoin wallet which generates and stores the user's private keys in a tailor made hardware device.
 Read more: [Hardware Wallet FAQs](/FAQ/FAQ-UseWasabi.md#hardware-wallet)
 :::
 
 :::details
-### Lightning Network
+### Lightning Network (LN)
 
 Lightning Network is a proposed implementation of Hashed Timelock Contracts (HTLCs) with bi-directional payment channels which allows payments to be securely routed across multiple peer-to-peer payment channels.
 This allows the formation of a network where any peer on the network can pay any other peer even if they don't directly have a channel open between each other.
@@ -138,7 +138,7 @@ Read more: [Change coins](/using-wasabi/ChangeCoins.md)
 :::
 
 :::details
-### CoinJoin
+### CoinJoin (CJ)
 
 CoinJoin is a trustless method for combining multiple Bitcoin payments from multiple spenders into a single transaction to make it more difficult for outside parties to determine which spender paid which recipient.
 Read more: [What is a CoinJoin?](/FAQ/FAQ-Introduction.md#what-is-a-coinjoin)
@@ -176,11 +176,18 @@ Read more: [What is the dust threshold](/FAQ/FAQ-UseWasabi.html#what-is-the-dust
 :::
 
 :::details
-### KYC
+### Know Your Customer (KYC)
 
 KYC (Know Your Customer) is the process of a business being forced to identify and verify the identity of its clients, and to share this information with a government.
 The term is also used to refer to the bank regulation which governs these activities.
 Read more: [AML/KYC Information](/why-wasabi/TransactionSurveillanceCompanies.md#aml-kyc-information)
+:::
+
+:::details
+### Lurking Wife Mode (LWM)
+
+Lurking Wife Mode is a Wasabi feature that hides sensitive and critical information on the wallet itself.
+Read more: [Lurking Wife Mode](/using-wasabi/LurkingWifeMode.md)
 :::
 
 :::details
@@ -198,7 +205,7 @@ Read more: [Wasabi's Solution](/why-wasabi/BitcoinPrivacy.md#wasabi-s-solution-4
 :::
 
 :::details
-### Tor
+### The Onion Router (TOR)
 
 Tor (The Onion Router) is free and open-source software for enabling anonymous communication.
 It is widely used by Wasabi.
