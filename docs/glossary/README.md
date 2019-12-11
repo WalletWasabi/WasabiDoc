@@ -191,6 +191,13 @@ Read more: [Lurking Wife Mode](/using-wasabi/LurkingWifeMode.md)
 :::
 
 :::details
+### Pay to EndPoint (P2EP)
+
+Pay to EndPoint simplifies the sending of bitcoins with more security and privacy than Pay to IP (P2IP).
+Read more: [Pay to EndPoint](/using-wasabi/PayToEndPoint.md)
+:::
+
+:::details
 ### Peers
 
 Peers in our documentation refers mainly to Bitcoin and Wasabi Wallet users, but it also means people.
