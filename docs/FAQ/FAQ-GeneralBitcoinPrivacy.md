@@ -214,4 +214,19 @@ You can also configure many cloud storage providers in this way.
 Tor bridges, also called Tor bridge relays, are alternative entry points to the Tor network that are not all listed publicly.
 If you suspect your access to the Tor network is being blocked, you may want to use bridges.
 You can read more on [The Tor Project's dedicated page about bridges](https://www.torproject.org/docs/bridges).
+
+**Steps:**
+
+1. Download and install the [Tor Browser](https://www.torproject.org/)
+2. Change the `Settings` of the Tor Browser to use one of the bridges or pluggable transports
+3. Leave Tor Browser running after connecting with a bridge
+4. Change the `Settings` of Wasabi Wallet and edit `TorSocks5 Endpoint` from `127.0.0.1:9050` to `127.0.0.1:9150`
+5. Restart Wasabi
+
+After this, Wasabi will connect to Tor using the Tor Browser's connection via a random bridge.
+
+:::warning
+To make use of Tor bridges on Wasabi, you must always keep Tor Browser open.
+:::
+
 :::
