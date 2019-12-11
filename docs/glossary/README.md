@@ -145,7 +145,7 @@ Read more: [What is the anonimity set?](/FAQ/FAQ-UseWasabi.md#what-is-the-anonym
 :::details
 ### Bloom Filter
 
-A filter used primarily by SPV clients to request only matching transactions and merkle blocks from full nodes.
+A filter used primarily by SPV clients to request only block headers and merkle proofs of a given transaction from full nodes.
 Read more: [BIP 37: Connection Bloom Filtering](/using-wasabi/BIPs.md#bip-37-connection-bloom-filtering)
 :::
 
