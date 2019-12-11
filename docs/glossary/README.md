@@ -74,6 +74,14 @@ Output, transaction output, or TxOut is an output in a transaction which contain
 :::
 
 :::details
+### Partially Signed Bitcoin Transaction (PSBT)
+
+PSBT is a binary transaction format which contains the information necessary for a signer to produce signatures for the transaction and holds the signatures for an input while the input does not have a complete set of signatures.
+The signer can be offline as all necessary information will be provided in the transaction.
+Read more: [BIP 174 Partially Signed Bitcoin Transaction Format](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki)
+:::
+
+:::details
 ### Pay-to-Witness-Public-Key-Hash (P2WPKH)
 
 The signature of a P2WPKH contains the same information as a Pay-to-Public-Key-Hash (P2PKH) spending, but is located in the witness field instead of the scriptSig field.
