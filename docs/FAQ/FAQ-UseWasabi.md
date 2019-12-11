@@ -293,13 +293,20 @@ This helps you to judge weather there are privacy concerns when sending a specif
 :::
 
 :::details
-### How can I change the label of my address?
+### How can I change the label of my receive address?
+
 You can change the label of your receive address in the right click menu by clicking `Change Label`, then type in the new label.
 This is useful for when you have generated a receiving address with a specific label, but then the cause for receiving is no longer present.
 Take care with whom you have shared this address, because if you send it to several people, they might all send many coins to the same address.
 This is very bad for your privacy because of [address reuse](/using-wasabi/AddressReuse.md), and it confuses you with the labeling of each unique coin.
 
 ![](/ReceiveAddressMenu.png)
+:::
+
+:::details
+### How can I edit the label of my address after a transaction has gone through?
+
+To date there is no possibility to change the label of an address after it has sent or received bitcoins.
 :::
 
 ::::details
