@@ -235,7 +235,7 @@ Read more: [Wasabi's Solution](/why-wasabi/BitcoinPrivacy.md#wasabi-s-solution-4
 ### Taint
 
 Taint is equivalent to the 'trail' that a Bitcoin transaction leaves during the course of its journey.
-The taint analysis of a Bitcoin transaction evaluates the association between an address and the previous addresses involved in transactions.
+The taint analysis of a Bitcoin transaction evaluates the association between an address involved in the chain of transactions.
 The higher the number of taint, the stronger the connection between the two addresses.
 Read more: [Blockchain Analysis](/why-wasabi/TransactionSurveillanceCompanies.md#blockchain-analysis)
 :::
