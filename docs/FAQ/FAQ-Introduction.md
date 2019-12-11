@@ -281,6 +281,6 @@ For the complete explanation please read [ZeroLink: The Bitcoin Fungibility Fram
 - Ubuntu 16.04+
 - For other Linux distributions, it depends on the specific OS.
 
-Click [here](https://github.com/dotnet/core/blob/master/release-notes/3.0/3.0-supported-os.md) to check if .NET Core 3.0 supports your OS. 
+Click [here](https://github.com/dotnet/core/blob/master/release-notes/3.1/3.1-supported-os.md) to check if .NET Core 3.1 supports your OS. 
 
 :::
