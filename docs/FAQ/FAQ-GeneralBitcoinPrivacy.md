@@ -207,3 +207,11 @@ Route everything through Tor by default.
 It is also good practice to route your chats through the Tor network.
 You can also configure many cloud storage providers in this way.
 :::
+
+:::details
+### My country/ISP is blocking/censoring TOR, how can I use Wasabi?
+
+Tor bridges, also called Tor bridge relays, are alternative entry points to the Tor network that are not all listed publicly.
+If you suspect your access to the Tor network is being blocked, you may want to use bridges.
+You can read more on [The Tor Project's dedicated page about bridges](https://www.torproject.org/docs/bridges).
+:::
