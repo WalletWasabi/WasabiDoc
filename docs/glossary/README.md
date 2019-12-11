@@ -97,6 +97,12 @@ Read more: [BIP 84 derivation scheme for P2WPKH based accounts](/using-wasabi/BI
 :::
 
 :::details
+### Replace by Fee (RBF)
+
+Replacing one version of an unconfirmed transaction with a different version of the transaction that pays a higher transaction fee.
+:::
+
+:::details
 ### satoshi (sat)
 
 A satoshi is the smallest denomination of bitcoin that can be recorded on the blockchain.
