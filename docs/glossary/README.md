@@ -206,7 +206,7 @@ Read more: [AML/KYC Information](/why-wasabi/TransactionSurveillanceCompanies.md
 :::details
 ### Lurking Wife Mode (LWM)
 
-Lurking Wife Mode is a Wasabi feature that hides sensitive and critical information on the wallet itself.
+Lurking Wife Mode is a Wasabi feature that hides sensitive and critical information on the wallet itself, which is useful for screenshots.
 Read more: [Lurking Wife Mode](/using-wasabi/LurkingWifeMode.md)
 :::
 
