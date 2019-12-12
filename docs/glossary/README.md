@@ -206,6 +206,13 @@ Read more: [How does Tor protect my network level privacy?](/FAQ/FAQ-GeneralBitc
 :::
 
 :::details
+### Tumbling / Tumbler
+
+Tumbling is a synonim of 'Mixing'.
+Similarly, Tumbler is the synonym of 'Mixer'.
+:::
+
+:::details
 ### #twoweeks
 
 The #twoweeks is a fun inside joke often used in the Wasabi documentation and, more generally, in the Internet community.
