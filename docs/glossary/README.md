@@ -41,7 +41,7 @@ Read more: [What fee should I select?](/FAQ/FAQ-UseWasabi.md#what-fee-should-i-s
 :::details
 ### Fungibility
 
-Fungibility is a property of a Bitcoin utxo which are indistinguishable from each other.
+Fungibility is a property of Bitcoin UTXOs that are indistinguishable from each other.
 Read more: [Transaction surveillance companies attempting to destroy fungibility](/why-wasabi/TransactionSurveillanceCompanies.md#attempt-to-destroy-fungibility)
 :::
 
