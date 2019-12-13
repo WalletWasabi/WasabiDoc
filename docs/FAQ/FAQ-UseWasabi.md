@@ -222,6 +222,13 @@ We are constantly improving the speed and reliability of the loading process.
 For especially old wallets, it might be worth considering to start a new wallet with a shorter transaction history.
 :::
 
+:::details
+### Can Wasabi work with a pruned bitcoin node?
+
+Yes.
+Wasabi is a hybrid, if your node doesn't have a block, then it acquires it from someone else.
+:::
+
 ## Receive
 
 @[youtube](9i7CceIdFg4)

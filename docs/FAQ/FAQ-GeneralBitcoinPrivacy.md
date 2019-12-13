@@ -160,13 +160,6 @@ Instead, if you prefer to use some dedicated hardware solutions, these are some 
 :::
 
 :::details
-### Can Wasabi work with a pruned bitcoin node?
-
-Yes.
-Wasabi is a hybrid, if your node doesn't have a block, then it acquires it from someone else.
-:::
-
-:::details
 ### Why is it important to use a new address for every payment?
 
 Addresses being used more than once is very damaging to privacy because that links together more blockchain transactions with proof that they were created by the same entity.
