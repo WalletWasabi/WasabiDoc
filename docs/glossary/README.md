@@ -13,7 +13,7 @@ Every item contains a link to the respective full document for more details.
 ## Bitcoin in general
 
 :::details
-### BIP
+### Bitcoin Improvement Proposal (BIP)
 
 Bitcoin Improvement Proposal.
 A design document for introducing features or information to Bitcoin.
@@ -39,13 +39,20 @@ Read more: [What fee should I select?](/FAQ/FAQ-UseWasabi.md#what-fee-should-i-s
 :::
 
 :::details
-### Hardware Wallet
+### Fungibility
+
+Fungibility is a desirable property of Bitcoin UTXOs that are indistinguishable from each other.
+Read more: [Transaction surveillance companies attempting to destroy fungibility](/why-wasabi/TransactionSurveillanceCompanies.md#attempt-to-destroy-fungibility)
+:::
+
+:::details
+### Hardware Wallet (HW)
 A hardware wallet is a special type of Bitcoin wallet which generates and stores the user's private keys in a tailor made hardware device.
 Read more: [Hardware Wallet FAQs](/FAQ/FAQ-UseWasabi.md#hardware-wallet)
 :::
 
 :::details
-### Lightning Network
+### Lightning Network (LN)
 
 Lightning Network is a proposed implementation of Hashed Timelock Contracts (HTLCs) with bi-directional payment channels which allows payments to be securely routed across multiple peer-to-peer payment channels.
 This allows the formation of a network where any peer on the network can pay any other peer even if they don't directly have a channel open between each other.
@@ -90,6 +97,12 @@ Read more: [BIP 84 derivation scheme for P2WPKH based accounts](/using-wasabi/BI
 :::
 
 :::details
+### Replace by Fee (RBF)
+
+Replacing one version of an unconfirmed transaction with a different version of the transaction that pays a higher transaction fee.
+:::
+
+:::details
 ### satoshi (sat)
 
 A satoshi is the smallest denomination of bitcoin that can be recorded on the blockchain.
@@ -130,6 +143,13 @@ Read more: [What is the anonimity set?](/FAQ/FAQ-UseWasabi.md#what-is-the-anonym
 :::
 
 :::details
+### Bloom Filter
+
+A filter used primarily by SPV clients to request only block headers and merkle proofs of a given transaction from full nodes.
+Read more: [BIP 37: Connection Bloom Filtering](/using-wasabi/BIPs.md#bip-37-connection-bloom-filtering)
+:::
+
+:::details
 ### Change address detection
 
 Many Bitcoin transactions have change outputs.
@@ -138,7 +158,7 @@ Read more: [Change coins](/using-wasabi/ChangeCoins.md)
 :::
 
 :::details
-### CoinJoin
+### CoinJoin (CJ)
 
 CoinJoin is a trustless method for combining multiple Bitcoin payments from multiple spenders into a single transaction to make it more difficult for outside parties to determine which spender paid which recipient.
 Read more: [What is a CoinJoin?](/FAQ/FAQ-Introduction.md#what-is-a-coinjoin)
@@ -176,11 +196,25 @@ Read more: [What is the dust threshold](/FAQ/FAQ-UseWasabi.html#what-is-the-dust
 :::
 
 :::details
-### KYC
+### Know Your Customer (KYC)
 
 KYC (Know Your Customer) is the process of a business being forced to identify and verify the identity of its clients, and to share this information with a government.
 The term is also used to refer to the bank regulation which governs these activities.
 Read more: [AML/KYC Information](/why-wasabi/TransactionSurveillanceCompanies.md#aml-kyc-information)
+:::
+
+:::details
+### Lurking Wife Mode (LWM)
+
+Lurking Wife Mode is a Wasabi feature that hides sensitive and critical information on the wallet itself, which is useful for screenshots.
+Read more: [Lurking Wife Mode](/using-wasabi/LurkingWifeMode.md)
+:::
+
+:::details
+### Pay to EndPoint (P2EP)
+
+Pay to EndPoint is sending of bitcoins where the receiver adds one of his own coins as input for a two party CoinJoin.
+Read more: [Pay to EndPoint](/using-wasabi/PayToEndPoint.md)
 :::
 
 :::details
@@ -198,7 +232,15 @@ Read more: [Wasabi's Solution](/why-wasabi/BitcoinPrivacy.md#wasabi-s-solution-4
 :::
 
 :::details
-### Tor
+### Taint
+
+Taint is equivalent to the 'trail' that a Bitcoin transaction leaves during the course of its journey.
+The taint analysis of a Bitcoin transaction evaluates the association between an address involved in the chain of transactions.
+Read more: [Blockchain Analysis](/why-wasabi/TransactionSurveillanceCompanies.md#blockchain-analysis)
+:::
+
+:::details
+### The Onion Router (TOR)
 
 Tor (The Onion Router) is free and open-source software for enabling anonymous communication.
 It is widely used by Wasabi.
