@@ -13,13 +13,18 @@
 
 This essay is extracted from this step by step [guide](https://github.com/PulpCattel/Tails-BitcoinCore-Wasabi), which also includes tutorials on how to install Tails, create a persistent storage and use Bitcoin Core alongside with it.
 
-## CREATE ADMIN PASSWORD
+:::tip
+Starting with v1.1.10 release, Wasabi comes pre-installed with bitcoind from [Bitcoin Core](https://bitcoincore.org/) and it can be started on the same desktop or laptop computer with just one click.
+This is likely the most convenient solution for Wasabikas.
+:::
+
+## Create admin password
 
 You need sudo privileges to install Wasabi, at “Tails Greeter” create your admin password in “additional settings” and launch Tails.
 
 Source: [https://tails.boum.org/doc/first_steps/startup_options/administration_password/index.en.html](https://tails.boum.org/doc/first_steps/startup_options/administration_password/index.en.html)
 
-## DOWNLOAD
+## Download
 
 Download for Debian/Ubuntu from:  
 [http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion) (tor hidden service)  
@@ -41,7 +46,7 @@ You can now save your `Wasabi-${currentVersion}.deb` into the persistent storage
 |__ /Wasabi-${currentVersion}.deb  # Wasabi installer
 ```
 
-## WASABI DATA FOLDER
+## Wasabi data folder
 
 As of version 1.1.9 Wasabi doesn’t offer easy ways, especially without command line, to change install directory. There is though a quick workaround.
 
@@ -66,7 +71,7 @@ The former contains your wallet information (e.g. keys, labels), while the latte
 
 Could be also nice to save the `BitcoinStore` folder, which contains the [BIP 158](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients) block filters, so that you don’t have to download them again.
 
-## INSTALL WASABI
+## Install Wasabi
 
 Drop the `Wasabi-${currentVersion}.deb` file from `/Home/Persistent` into desktop.
 
@@ -87,7 +92,7 @@ Wasabi will show as a normal application in your activities overview menu, ready
 * Type "wasabi"
 * Launch it
 
-## LOAD FROM YOUR DATA DIRECTORY
+## Load from your data directory
 
 After the first time you save a Wasabi session, your persistent storage will look like:
 
