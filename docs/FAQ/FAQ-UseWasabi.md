@@ -17,7 +17,7 @@
 You can generate as many new wallets as you'd like, for no extra cost and without asking for permission.
 Go to the `Wallet Manager` tab and the `Generate Wallet` menu.
 As with everything in Wasabi, you are required to label this new wallet. Make sure that you are precise so that you know what this is for later.
-The password is used to encrypt the private key on the computer and on the backup.
+The password is used to encrypt the private key (extracted from the extended private key) on the computer.
 **Careful!!**
 **Without knowledge of the password, you CANNOT spend your bitcoin!!**
 Make sure that you properly back up and write down this password.
@@ -56,7 +56,7 @@ A secure password manager software might also be used, but be careful here.
 ### How do I back up my mnemonic words?
 
 :::tip
-Always backup your encrypted private keys!
+Write down your recovery words!
 :::
 
 Wasabi uses [BIP 39: mnemonic code for generating deterministic keys](/using-wasabi/BIPs.md#bip-39-mnemonic-code-for-generating-deterministic-keys) to enable easy backups of all private keys in the wallet.
@@ -64,10 +64,8 @@ The mnemonic is displayed as 12 recovery words that are only shown once during t
 
 ![](/WalletManagerRecoveryWords.png)
 
-But these words are encrypted with [BIP 38: password-protected private key](/using-wasabi/BIPs.md#bip-38-password-protected-private-key), so that the computer stores the private key in cyphertext and not cleartext.
-
 :::danger
-In order to restore a wallet from backup, you need BOTH the mnemonic words AND the password!
+In order to restore a wallet, you need BOTH the mnemonic words AND the password!
 :::
 
 It is a good idea to keep the two in separate analog backups, such as a laminated paper written with pencil.
@@ -98,11 +96,11 @@ You can also easily reach it from inside Wasabi: `File > Open > Data Folder`.
 Although you can backup your private keys with the mnemonic words and password, this is only a last resort recovery.
 If you want to also secure your address labels, the anonset and additional metadata, then you can do a digital backup.
 Simply copy the `WalletBackups` folder with the `wallet.json` files from your [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) onto suitable hardware, for example an encrypted USB stick.
-Note that this file has the encrypted private keys, meaning that you only need the password to spend the bitcoin.
+Note that this file has the encrypted private key (extracted from the extended private key), meaning that you only need the password to spend the bitcoin.
 This also contains the unencrypted extended public keys and address labels, meaning that it completely links all the coins, both pre and post mix, with clear proof.
 
 :::tip
-The wallet backup is sensitive, in terms of privacy, but not critical in terms of loss of funds. So it is good advice to encrypt this wallet file.
+The wallet file backup is sensitive, in terms of privacy, but not critical in terms of loss of funds (if a password was used when generating the wallet). So it is good advice to encrypt this wallet file.
 :::
 ::::
 
@@ -114,13 +112,12 @@ NO!!! Without knowledge of your password, even when you have the wallet file and
 :::
 
 When creating a new wallet, after labeling it properly, the next step is to select a long and random password.
-This is used to encrypt the private key on your computer, which has an insecure operating system and is connected to the Internet.
+This is used to encrypt the private key (extracted from the extended private key) on your computer, which has an insecure operating system and is connected to the Internet.
 Every time you want to spend your coins from Wasabi, you MUST provide this password.
-Also, the same password is used to encrypt the mnemonic recovery words that you must backup in the next step of wallet creation.
 So even if you have these words securely engraved in metal, without the password, you cannot restore the backup of your wallet.
 
 :::tip
-Always backup your encrypted mnemonic recovery words, and your password in two separate secure locations.
+Always backup your mnemonic recovery words, and your password in two separate secure locations.
 :::
 ::::
 
