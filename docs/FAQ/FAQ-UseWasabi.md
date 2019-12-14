@@ -37,7 +37,7 @@ You have successfully setup your wallet when you click `I wrote down my Recovery
 
 ::::details
 ### What password should I use?
-The password you set is used to encrypt the mnemonic recovery words, and the private keys stored on the computer.
+The password you set is used as a 13th word (passphrase) as described in [BIP 39](../using-wasabi/BIPs.md#bip-39-mnemonic-code-for-generating-deterministic-keys), and is used to encrypt the private key of the extended private key as described in [BIP 38](../using-wasabi/BIPs.md#bip-38-password-protected-private-key) to get an encrypted private key which is stored on the computer.
 This is the password that will unlock your bitcoin to anyone who has access to the backup or computer.
 You will need to type in the password before you can spend from Wasabi wallet.
 So if your backup gets compromised, this password is the only thing protecting your precious sats.
