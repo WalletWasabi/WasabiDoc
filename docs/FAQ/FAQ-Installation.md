@@ -228,6 +228,6 @@ If you are still not sure, before starting Wasabi, you can check that it is safe
 
 :::tip
 Remember to report Wasabi as a safe software/false positive to your antivirus.
-In doing so you will help users who use your own antivirus.
+In doing so you will help users who use the same antivirus.
 :::
 :::
