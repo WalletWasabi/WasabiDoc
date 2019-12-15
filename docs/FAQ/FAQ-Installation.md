@@ -215,3 +215,19 @@ Optionally you can add a `--keepalive` flag that will make sure your daemon will
 On Linux and macOS you can just add some parameters to the Wasabi executable and it'll act like a daemon, on Windows you have to use `wassabeed.exe` from Program Files.
 You may want to start with `--help`.
 :::
+
+:::details
+### My antivirus marks Wasabi Wallet as a virus. Am I downloading the right software? How can I stay safe?
+
+First, make sure you have downloaded Wasabi from the [official website](https://wasabiwallet.io/) or from the [official GitHub repository](https://github.com/zkSNACKs/WalletWasabi/releases).
+After downloading the file, make sure to [verify the digital signatures](/FAQ/FAQ-Installation.md#how-can-i-verify-pgp-signatures).
+
+If you have downloaded and verified digital signatures and your antivirus continues to report Wasabi as positive, you don't have to worry about anything; it is a false positive.
+
+If you are still not sure, before starting Wasabi, you can check that it is safe by uploading and scan it via [VirusTotal](https://www.virustotal.com/).
+
+:::tip
+Remember to report Wasabi as a safe software/false positive to your antivirus.
+In doing so you will help users who use your own antivirus.
+:::
+:::
