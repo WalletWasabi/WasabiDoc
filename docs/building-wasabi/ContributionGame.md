@@ -35,4 +35,6 @@ After the release of v1.1.9.2 a monumental amount of work has gone into Wasabi, 
 In order to ensure rigorous peer review of such a complex change, two methods were introduced for the first time.
 The publishing of a [release candidate packages](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v1.1.10rc1) for all operating systems, so that testers don't need to compile the software from source.
 This enabled many more reviewers to check out the latest additions to the software so to test for bugs and instabilities.
-Also there was a [contribution game](https://github.com/zkSNACKs/WalletWasabi/issues/2631) where any reviewer who provided a thorough report and notified the developers of bugs was eligible for a bounty of in total `0.5 bitcoin`.
+Also there was a [contribution game](https://github.com/zkSNACKs/WalletWasabi/issues/2631) where any reviewer who provided a thorough report and notified the developers of bugs was eligible for a bounty of in total `0.3 bitcoin`.
+
+The total bounty ended up being distributed to 6 contributors, see the full results [here](https://github.com/zkSNACKs/WalletWasabi/issues/2631#issuecomment-565746074).
