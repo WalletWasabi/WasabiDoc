@@ -97,7 +97,7 @@ In case none of those combinations are acceptable for you then you should CoinJo
 
 Those that participate in a Wasabi [CoinJoin](/using-wasabi/CoinJoin.md) transaction receive at least one coin with an anonymity set level that depends on the number of participants in that transaction.
 By default Wasabi tries to create transactions with 100 unknown participants, so the received coin can have 100 anonymity set which means it is really hard for an observer to know who that coin belongs to.
-For that reason a coin with high anonymity set loses the cluster which it originally belonged to.
+For that reason a coin with a high anonymity set loses the cluster which it originally had.
 
 ### Automatic selection
 
