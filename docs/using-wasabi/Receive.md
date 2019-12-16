@@ -50,6 +50,87 @@ In Wasabi it is mandatory to give every address a label of which entities know a
 
 ![](/ReceiveLabelingRequired.png)
 
+Wasabi is not like most of other bitcoin wallets, it is a privacy oriented wallet and every feature and every design decision is based mainly (sometimes exclusively) on privacy cost/benefits analysis.
+For that reason many features depend on each other and a correct understanding of how they play together is critical to achieve and improve the privacy of our transactions.
+
+### Coin control
+
+Coin control is a key feature that enables all the rest of features.
+How could we CoinJoin our coins if we weren't able to select those coins we want to participate with?
+How could we know which coins are being spend in a transaction without a coin control?
+How could we decide what to reveal to a KYC exchange without this feature?
+Well, it is not possible.
+
+Wasabi is a coins-oriented wallet in the sense that coins are the most important unit of information information to take decisions about privacy.
+
+### Labels
+
+As a privacy-oriented solution the focus is always on minimizing how much we reveal about our financial activity to others. 
+For that reason when we create a new address to receive bitcoins, we are forced to label that coin!
+And what kind of information do we have to provide here?
+The label has to tell us who is/are the one/s that know about that coin.
+
+For example, if I create a new address to receive a 0.5 BTC payment from Andrew for an old laptop that I sold to him then the label has to be: `Andrew`.
+
+Most of other wallets out there don't care much about privacy (or at least no so much as Wasabi does) and for that reason the don't allow us to attach this critical data to our coins.
+Instead, they provide a way to add a description to the transactions, in those wallets it is expected to add something like `Payment from Andrew for my old laptop` so, if tomorrow I see that amount i can know what is the reason.
+Wasabi does not have this and it is something that doesn't provide any extra privacy.
+
+Understanding this difference between labeling a coin (Wasabi) and describing a transaction (Many other wallets) is critical important for your privacy.
+
+### Clusters
+
+Following with the previous example, if I have to send a fraction (`0.1 BTC`) of the coin received in exchange for my laptop to a Charlie (a guy who usually I sell bitcoins to for dollars) then that transaction label has to be: `Charlie`.
+In that way, the change (`0.3999xxx BTC`) will be known by Andrew and Charlie because they both will be able to follow the change.
+That's exactly what Wasabi displays in the coins list (cluster column), Wasabi tells us who are the ones that know about each of our coins in order to allow us to decide what to do with our coins.
+
+Let's make now another example.
+Imagine you have other coins, let say one known by Alice, other known by Coinbase and finally one know by Charlie.
+Imagine you need to sell a few sats to Charlie, which coin/s should you send?
+The obvious election is the one already known by Charlie because doing that he cannot learn anything new about our wallet, moreover, nobody can learn anything new!
+But what if the coin is not big enough and we need to use more than one coin?
+You can use the one known by Alice or the one known by Coinbase but, are you okay with Charlie knowing about your deposit (or withdrawal) from the exchange?
+Are you okay with Alice knowing about your deal with Charlie?
+In case none of those combinations are acceptable for you then you should CoinJoin your coins.
+
+### CoinJoined coins
+
+Those that participate in a Wasabi CoinJoin transaction receive at least one coin with a anonymity set level that depends on the number of participants in that transaction.
+By default Wasabi tries to create transactions with 100 unknown participants so, the received coin can have 100 anonymity set what means that it is really hard for an observer to know who that coin belong to.
+For that reason a coin with high anonymity set loses the cluster original cluster which it belonged.
+
+### Automatic selection
+
+As we can see now the correct labeling of coins allows Wasabi to display useful information about who know about our wallet and how much they know.
+It also allow Wasabi to select coins for you if you want (not recommended).
+Basically, if you select all your coins Wasabi will select those that minimize the number of people that will learn more about your wallet.
+
+It #twoweeks Wasabi will implement a selection strategy that chooses the coins based on the receiver knowledge of our coins by sending him/her those that are already known by him/her, etc.
+
+### Final words about labels and examples
+
+4 coins with good labels:
+
+```
+Andrew
+David, Me
+Carlos, Sofia
+Coinbase
+```
+
+2 coins with bad labels:
+
+```
+Payment from Andrew for my old laptop
+From my old wallet
+```
+
+In case we take the two first coins with good labels and send that to María, look how the change cluster will be displayed: `Maria, Andrew, David, Me` (this people knows about the coin).
+Now, look how this will be displayed if I use the two coins with bad labels: `Maria, Payment from Andrew for my old laptop, From my old wallet` (what the heck is this telling me!?)
+
+So, think in coins, think in who knows and think that you have to take decisions about privacy based on what you are going to reveal to whom.
+Wasabi doesn't care about why you transact with bitcoins, it only cares about who you transact with because it need to take care of your privacy.
+
 ## Generating addresses step-by-step
 
 1. Start Wasabi and open the wallet that you want to receive coins into.
