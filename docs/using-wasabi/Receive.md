@@ -129,7 +129,7 @@ In case we take the two first coins with good labels and send that to María, lo
 Now, look how this will be displayed if I use the two coins with bad labels: `Maria, Payment from Andrew for my old laptop, From my old wallet` (what the heck is this telling me!?)
 
 So, think in coins, think in who knows and think that you have to take decisions about privacy based on what you are going to reveal to whom.
-Wasabi doesn't care about why you transact with bitcoins, it only cares about who you transact with because it need to take care of your privacy.
+Wasabi doesn't care about why you transact with bitcoins, it only cares about who you transact with, because this is what helps you reclaim your privacy.
 
 ## Generating addresses step-by-step
 
