@@ -185,7 +185,7 @@ The only adversary that could possibly overcome this would have to setup thousan
 ### Private UTXO Retrieval
 
 If you have a listening full node running in the background (not only Bitcoin Core, any full node) then Wasabi automatically picks it up and instead of asking peers for blocks, it asks blocks from your own node.
-Using Wasabi this way results in the same privacy model as Bitcoin Core’s regarding Private UTXO Retrieval.+
+Using Wasabi this way results in the same privacy model as Bitcoin Core’s regarding Private UTXO Retrieval.
 
 :::tip
 Since [v1.1.10](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v1.1.10), Wasabi has [partial Bitcoin Core integration](https://github.com/zkSNACKs/WalletWasabi/pull/2495).
