@@ -65,7 +65,7 @@ Wasabi is a coins-oriented wallet in the sense that coins are the most important
 
 ### Labels
 
-As a privacy-oriented solution the focus is always on minimizing how much we reveal about our financial activity to others. 
+As a privacy-oriented solution the focus is always on minimizing how much we reveal about our financial activity.
 For that reason when we create a new address to receive bitcoins, we are forced to label that coin!
 And what kind of information do we have to provide here?
 The label has to tell us who is/are the one/s that know about that coin.
