@@ -50,7 +50,7 @@ In Wasabi it is mandatory to give every address a label of which entities know a
 
 ![](/ReceiveLabelingRequired.png)
 
-Wasabi is not like most of other bitcoin wallets, it is a privacy oriented wallet and every feature and every design decision is based mainly (sometimes exclusively) on privacy cost/benefits analysis.
+Wasabi is not like most of other bitcoin wallets, it is a privacy-oriented wallet and every feature and every design decision is based mainly (sometimes exclusively) on privacy cost/benefits analysis.
 For that reason many features depend on each other and a correct understanding of how they play together is critical to achieve and improve the privacy of our transactions.
 
 ### Coin control
