@@ -105,7 +105,7 @@ As we can see now the correct labeling of coins allows Wasabi to display useful 
 It also allow Wasabi to select coins for you if you want (not recommended).
 Basically, if you select all your coins Wasabi will select those that minimize the number of people that will learn more about your wallet.
 
-It #twoweeks Wasabi will implement a selection strategy that chooses the coins based on the receiver knowledge of our coins by sending him/her those that are already known by him/her, etc.
+In #twoweeks Wasabi will implement a selection strategy that chooses the coins based on the receiver knowledge of our coins by sending him/her those that are already known by him/her, etc.
 
 ### Final words about labels and examples
 
