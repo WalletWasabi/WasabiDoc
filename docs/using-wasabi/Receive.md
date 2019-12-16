@@ -70,7 +70,7 @@ For that reason when we create a new address to receive bitcoins, we are forced 
 And what kind of information do we have to provide here?
 The label has to tell us who is/are the one/s that know about that coin.
 
-For example, if I create a new address to receive a `0.5 BTC` payment from Andrew for an old laptop that I sold to him then the label has to be: `Andrew`.
+For example, if I create a new address to receive a `0.5 BTC` payment from Andrew for a laptop that I sold to him then the label has to be: `Andrew`.
 
 Most of the wallets out there don't care much about privacy (or at least not as much as Wasabi does) and for that reason they don't allow us to attach this critical data to our coins.
 
