@@ -126,7 +126,7 @@ From my old wallet
 ```
 
 In case we take the two first coins with good labels and send them to María, look how the change cluster will be displayed: `Maria, Andrew, David, Me` (this people knows about the coin).
-Now, look how this will be displayed if I use the two coins with bad labels: `Maria, Payment from Andrew for my old laptop, From my old wallet` (Is this high-quality info about the privacy level of my coin? Of course not).
+Now, look how this will be displayed if I use the two coins with bad labels: `Maria, Payment from Andrew for my laptop, From my old wallet` (Is this high-quality info about the privacy level of my coin? Of course not).
 
 So, think in coins, think in who knows and think that you have to take decisions about privacy based on what you are going to reveal to whom.
 Wasabi doesn't care about why you transact with bitcoins, it only cares about who you transact with, because this is what helps you reclaim your privacy.
