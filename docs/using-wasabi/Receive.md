@@ -73,7 +73,6 @@ The label has to tell us who is/are the one/s that know about that coin.
 For example, if I create a new address to receive a 0.5 BTC payment from Andrew for an old laptop that I sold to him then the label has to be: `Andrew`.
 
 Most of other wallets out there don't care much about privacy (or at least no so much as Wasabi does) and for that reason the don't allow us to attach this critical data to our coins.
-Instead, they provide a way to add a description to the transactions, in those wallets it is expected to add something like `Payment from Andrew for my old laptop` so, if tomorrow I see that amount i can know what is the reason.
 Wasabi does not have this and it is something that doesn't provide any extra privacy.
 
 Understanding this difference between labeling a coin (Wasabi) and describing a transaction (Many other wallets) is critical important for your privacy.
