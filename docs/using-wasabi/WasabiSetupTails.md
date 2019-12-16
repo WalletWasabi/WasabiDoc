@@ -26,6 +26,12 @@ You need sudo privileges to install Wasabi, at “Tails Greeter” create your a
 
 Source: [https://tails.boum.org/doc/first_steps/startup_options/administration_password/index.en.html](https://tails.boum.org/doc/first_steps/startup_options/administration_password/index.en.html)
 
+:::tip
+If you don't want to activate root privileges, you can always download Wasabi in .tar.gz format and extract the folder.
+
+This way, you can launch Wasabi from the terminal via `./wassabee` command, and not installing any .deb package.
+:::
+
 ## Download
 
 Download for Debian/Ubuntu from:  
