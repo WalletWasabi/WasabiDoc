@@ -85,7 +85,7 @@ In that way, the change (`0.3999 BTC`) will be known by Andrew and Charlie becau
 That's exactly what Wasabi displays in the coins list (cluster column), Wasabi tells us who are the ones that know about each of our coins in order to allow us to decide what to do with our coins.
 
 Let's make now another example.
-Imagine you have other coins, let say one known by Alice, other known by Coinbase and finally one know by Charlie.
+Imagine you have other coins, let say one known by Alice, other known by the KYC exchange and finally one know by Charlie.
 Imagine you need to sell a few sats to Charlie, which coin/s should you send?
 The obvious election is the one already known by Charlie because doing that he cannot learn anything new about our wallet, moreover, neither Alice nor the KYC exchange can learn anything new!
 But what if the coin is not big enough and we need to use more than one coin?
