@@ -274,11 +274,24 @@ When you import the wallet file into a new Wasabi client, then it will use this 
 ### Why do I have to label my address?
 
 Bitcoin addresses look like cyphertext, they are not easily remembered and it's not clear how they were used previously.
-Thus when you do not label all your transactions, then there is no meta-data for you to understand the context of that coin.
-When you clearly label a receiving address, then later when spending this coin, you know where it came from.
-This helps you to judge weather there are privacy concerns when sending a specific coin to some specific receiver.
+Thus when you do not label all your transactions (sending & receiving), then there is no meta-data for you to understand the context of that coin.
+Receiving addresses and sending transactions that generate a change should be carefully labeled.
+This helps you know where your coins came from so that you can judge whether there are privacy concerns when sending a specific coin to a specific receiver.
 
 ![](/ReceiveLabelingRequired.png)
+
+When labeling a newly generated address you should ask yourself: "Who knows this address is mine?" or "Who will I share this address with?" or "To whom I am sending bitcoin?"
+Labels should contain the comma-separated names of people/entities that may be aware of the transaction and could follow its trail like:
+
+`Name of the sender or the receiver, name of the exchange, name of the payment processor`
+
+So, a good label could be:
+
+`Alice, Bitfinex, BTCPay Server`
+
+or:
+
+`Alice & Bob` (in this case, `Alice & Bob` is the name of a company. Remember that is not the same as `Alice, Bob` as they are multiple entities separated by a comma).
 :::
 
 :::details
