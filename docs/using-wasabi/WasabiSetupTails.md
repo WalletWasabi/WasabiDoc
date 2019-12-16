@@ -75,7 +75,7 @@ Could be also nice to save the `BitcoinStore` folder, which contains the [BIP 15
 
 ## Install Wasabi
 
-Drop the `Wasabi-${currentVersion}.deb` file from `/Home/Persistent` into desktop.
+Drop the `Wasabi-${currentVersion}.deb` file from `/home/amnesia/Persistent` into desktop.
 
 Open the terminal and run:
 
