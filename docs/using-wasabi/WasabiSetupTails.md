@@ -16,6 +16,8 @@ This essay is extracted from this step by step [guide](https://github.com/PulpCa
 :::tip
 Starting with v1.1.10 release, Wasabi comes pre-installed with bitcoind from [Bitcoin Core](https://bitcoincore.org/) and it can be started on the same desktop or laptop computer with just one click.
 This is likely the most convenient solution for Wasabikas.
+
+Remember that you will need at least a 300GB USB or SD card to download the entire blockchain.
 :::
 
 ## Create admin password
