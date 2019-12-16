@@ -103,7 +103,7 @@ For that reason a coin with a high anonymity set loses the cluster which it orig
 
 As we can see now the correct labeling of coins allows Wasabi to display useful information about who knows about our wallet and how much they know.
 It also allows Wasabi to select coins for you if you want (not recommended).
-Basically, if you select all your coins Wasabi will select those that minimize the number of people that will learn more about your wallet.
+Basically, if you select all your coins and the amount you want to send is smaller than the total, Wasabi will select only the coins that minimize the number of people that will learn more about your wallet.
 
 In #twoweeks Wasabi will implement a selection strategy that chooses the coins based on the receiver knowledge of our coins by sending him/her those that are already known by him/her, etc.
 
