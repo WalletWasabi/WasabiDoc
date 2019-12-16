@@ -121,7 +121,7 @@ Coinbase
 2 coins with bad labels:
 
 ```
-Payment from Andrew for my old laptop
+Payment from Andrew for my laptop
 From my old wallet
 ```
 
