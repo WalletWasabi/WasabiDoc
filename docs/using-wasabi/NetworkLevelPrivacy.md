@@ -28,6 +28,12 @@ Finally I have been noticing a positive trend recently of companies selling [box
 And then, there’s [Wasabi Wallet](https://wasabiwallet.io), which is a BIP157-ish client side filtering light wallet and partly integrates to your full node, too.
 Which brings me to the topic of this article: Just a few hours ago, with Wasabi Wallet, we achieved the best network level privacy that is possible with today’s Bitcoin.
 
+:::tip
+Since [v1.1.10](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v1.1.10), Wasabi has [Partial Bitcoin Core integration](https://github.com/zkSNACKs/WalletWasabi/pull/2495).
+This means that it is possible (but not mandatory) to start Bitcoin Core during the startup of Wasabi.
+Without having to install or configure anything.
+:::
+
 ## Terminology
 
 `V` Stands for Verification or Validation.
@@ -179,7 +185,13 @@ The only adversary that could possibly overcome this would have to setup thousan
 ### Private UTXO Retrieval
 
 If you have a listening full node running in the background (not only Bitcoin Core, any full node) then Wasabi automatically picks it up and instead of asking peers for blocks, it asks blocks from your own node.
-Using Wasabi this way results in the same privacy model as Bitcoin Core’s regarding Private UTXO Retrieval.
+Using Wasabi this way results in the same privacy model as Bitcoin Core’s regarding Private UTXO Retrieval.+
+
+:::tip
+Since [v1.1.10](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v1.1.10), Wasabi has [Partial Bitcoin Core integration](https://github.com/zkSNACKs/WalletWasabi/pull/2495).
+This means that it is possible (but not mandatory) to start Bitcoin Core during the startup of Wasabi.
+Without having to install or configure anything.
+:::
 
 ## Conclusion
 
