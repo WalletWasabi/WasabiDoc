@@ -87,7 +87,7 @@ That's exactly what Wasabi displays in the coins list (cluster column), Wasabi t
 Let's make now another example.
 Imagine you have other coins, let say one known by Alice, other known by Coinbase and finally one know by Charlie.
 Imagine you need to sell a few sats to Charlie, which coin/s should you send?
-The obvious election is the one already known by Charlie because doing that he cannot learn anything new about our wallet, moreover, nobody can learn anything new!
+The obvious election is the one already known by Charlie because doing that he cannot learn anything new about our wallet, moreover, neither Alice nor the KYC exchange can learn anything new!
 But what if the coin is not big enough and we need to use more than one coin?
 You can use the one known by Alice or the one known by Coinbase but, are you okay with Charlie knowing about your deposit (or withdrawal) from the exchange?
 Are you okay with Alice knowing about your deal with Charlie?
