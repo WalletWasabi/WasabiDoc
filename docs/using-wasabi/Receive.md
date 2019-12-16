@@ -81,7 +81,7 @@ Understanding this difference between labeling a coin (Wasabi) and describing a 
 ### Clusters
 
 Following with the previous example, if I have to send a fraction (`0.1 BTC`) of the coin received in exchange for my laptop to a Charlie then that transaction label has to be: `Charlie`.
-In that way, the change (`0.3999 BTC`) will be known by Andrew and Charlie because they both will be able to follow the change.
+In that way, the change (`0.4 BTC`) will be known by Andrew and Charlie because they both will be able to follow the change.
 That's exactly what Wasabi displays in the coins list (cluster column), Wasabi tells us who are the ones that know about each of our coins in order to allow us to decide what to do with our coins.
 
 Let's make now another example.
