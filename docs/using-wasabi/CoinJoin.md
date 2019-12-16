@@ -149,6 +149,15 @@ The CoinJoin transaction is successfully built and signed, and it is now ready t
 The coordinator sends this transaction over the tor network to a random Bitcoin P2P node, and from there it is gossiped to other nodes and miners.
 Wasabi is saving on mining fees by setting a confirmation target of roughly 12 hours, but you can re-register unconfirmed anonset outputs for the next round of CoinJoin.
 
+## Wasabi CoinJoin examples
+
+Here's a list of Wasabi CoinJoin examples and how they appear on an explorer:
+- [e4a789d16a24a6643dfee06e018ad27648b896daae6a3577ae0f4eddcc4d9174](https://blockstream.info/tx/e4a789d16a24a6643dfee06e018ad27648b896daae6a3577ae0f4eddcc4d9174) | [.onion version](http://explorerzydxu5ecjrkwceayqybizmpjjznk5izmitf2modhcusuqlid.onion/tx/e4a789d16a24a6643dfee06e018ad27648b896daae6a3577ae0f4eddcc4d9174)
+- [c69aed505ca50473e2883130221915689c1474be3c66bcf7ac7dc0e26246afc8](https://blockstream.info/tx/c69aed505ca50473e2883130221915689c1474be3c66bcf7ac7dc0e26246afc8) | [.onion version](http://explorerzydxu5ecjrkwceayqybizmpjjznk5izmitf2modhcusuqlid.onion/tx/c69aed505ca50473e2883130221915689c1474be3c66bcf7ac7dc0e26246afc8)
+- [ef329b3ed8e790f10f0b522346f1b3d9f1c9d45dfa5b918e92d6f0a25d91c7ce](https://blockstream.info/tx/ef329b3ed8e790f10f0b522346f1b3d9f1c9d45dfa5b918e92d6f0a25d91c7ce) | [.onion version](http://explorerzydxu5ecjrkwceayqybizmpjjznk5izmitf2modhcusuqlid.onion/tx/ef329b3ed8e790f10f0b522346f1b3d9f1c9d45dfa5b918e92d6f0a25d91c7ce)
+- [f82206145413db5c1272d5609c88581c414815e36e400aee6410e0de9a2d46b5](https://blockstream.info/tx/f82206145413db5c1272d5609c88581c414815e36e400aee6410e0de9a2d46b5) | [.onion version](http://explorerzydxu5ecjrkwceayqybizmpjjznk5izmitf2modhcusuqlid.onion/tx/f82206145413db5c1272d5609c88581c414815e36e400aee6410e0de9a2d46b5)
+- [a7157780b7c696ab24767113d9d34cdbc0eba5c394c89aec4ed1a9feb326bea5](https://blockstream.info/tx/a7157780b7c696ab24767113d9d34cdbc0eba5c394c89aec4ed1a9feb326bea5) | [.onion version](http://explorerzydxu5ecjrkwceayqybizmpjjznk5izmitf2modhcusuqlid.onion/tx/a7157780b7c696ab24767113d9d34cdbc0eba5c394c89aec4ed1a9feb326bea5)
+
 ## Read more
 
 Want to read more about CoinJoins on Wasabi?
