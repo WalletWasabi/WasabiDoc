@@ -89,7 +89,7 @@ Imagine you have three coins, one known by Alice, one known by a KYC exchange an
 Imagine you need to sell few sats to Charlie, which coin/s should you send?
 The obvious selection is the one already known by Charlie because by doing that he cannot learn anything new about our wallet, moreover, neither Alice nor the KYC exchange can learn anything new!
 But what if the coin is not big enough and we need to use more than one coin?
-You can use the one known by Alice or the one known by the KYC exchange but, are you okay with Charlie knowing about your deposit (or withdrawal) from the exchange?
+You can use the one known by Alice or the one known by the KYC exchange, but are you okay with Charlie knowing about your deposit/withdrawal from the exchange?
 Are you okay with Alice knowing about your deal with Charlie?
 In case none of those combinations are acceptable for you then you should CoinJoin your coins.
 
