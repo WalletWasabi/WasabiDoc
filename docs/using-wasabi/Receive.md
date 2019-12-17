@@ -61,7 +61,7 @@ How could we know which coins are being spend in a transaction without a coin co
 How could we decide what to reveal to a KYC exchange?
 Well, it is not possible.
 
-Wasabi is a coins-oriented wallet in the sense that coins are the most important unit of information to take decisions about privacy.
+Wasabi is a coins-oriented wallet in the sense that coins are the most important unit of information to take decisions to protect privacy.
 
 ### Labels
 
