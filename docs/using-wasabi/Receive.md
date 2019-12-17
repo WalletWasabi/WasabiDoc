@@ -55,7 +55,7 @@ For that reason many of its features depend on each other and a correct understa
 
 ### Coin control
 
-Coin control is a key feature that enables all the rest of features.
+Coin control is a key feature that enables all the other features.
 How could we CoinJoin our coins if we weren't able to select those coins we want to participate with?
 How could we know which coins are being spend in a transaction without a coin control?
 How could we decide what to reveal to a KYC exchange?
