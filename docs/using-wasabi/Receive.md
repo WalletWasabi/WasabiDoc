@@ -113,7 +113,7 @@ Basically, if you select all your coins and the amount you want to send is small
 Andrew
 David, Me
 Carlos, Sofia
-Coinbase
+KYC exchange
 ```
 
 2 coins with bad labels:
