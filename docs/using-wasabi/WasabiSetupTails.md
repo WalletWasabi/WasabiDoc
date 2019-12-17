@@ -16,6 +16,8 @@ This essay is extracted from this step by step [guide](https://github.com/PulpCa
 :::tip
 Starting with v1.1.10 release, Wasabi comes pre-installed with bitcoind from [Bitcoin Core](https://bitcoincore.org/) and it can be started on the same desktop or laptop computer with just one click.
 This is likely the most convenient solution for Wasabikas.
+
+Remember that you will need at least a 300GB USB or SD card to download the entire blockchain.
 :::
 
 ## Create admin password
@@ -23,6 +25,12 @@ This is likely the most convenient solution for Wasabikas.
 You need sudo privileges to install Wasabi, at “Tails Greeter” create your admin password in “additional settings” and launch Tails.
 
 Source: [https://tails.boum.org/doc/first_steps/startup_options/administration_password/index.en.html](https://tails.boum.org/doc/first_steps/startup_options/administration_password/index.en.html)
+
+:::tip
+If you don't want to activate root privileges, you can always download Wasabi in .tar.gz format and extract the folder.
+
+This way, you can launch Wasabi from the terminal via `./wassabee` command, and not installing any .deb package.
+:::
 
 ## Download
 
@@ -73,7 +81,7 @@ Could be also nice to save the `BitcoinStore` folder, which contains the [BIP 15
 
 ## Install Wasabi
 
-Drop the `Wasabi-${currentVersion}.deb` file from `/Home/Persistent` into desktop.
+Drop the `Wasabi-${currentVersion}.deb` file from `/home/amnesia/Persistent` into desktop.
 
 Open the terminal and run:
 
