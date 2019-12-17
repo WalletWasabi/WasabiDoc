@@ -105,7 +105,6 @@ As we can see now the correct labeling of coins allows Wasabi to display useful 
 It also allows Wasabi to select coins for you if you want (not recommended).
 Basically, if you select all your coins and the amount you want to send is smaller than the total, Wasabi will select only the coins that minimize the number of people that will learn more about your wallet.
 
-
 ### Final words about labels and examples
 
 4 coins with good labels:
