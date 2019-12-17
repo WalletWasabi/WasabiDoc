@@ -57,7 +57,7 @@ For that reason many of its features depend on each other and a correct understa
 
 Coin control is a key feature that enables all the other features.
 How could we CoinJoin our coins if we aren't able to select the ones we want to participate with?
-How could we know which coins are being spend in a transaction without a coin control?
+How could we know which coins are being spent in a transaction?
 How could we decide what to reveal to a KYC exchange?
 Well, it is not possible.
 
