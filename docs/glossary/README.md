@@ -158,10 +158,25 @@ Read more: [Change coins](/using-wasabi/ChangeCoins.md)
 :::
 
 :::details
+### Cluster
+
+A history and mapping of coins and who they are revealed to.
+For example, this coin belongs to a cluster that is known by Coinbase and Alice.
+Read more: [What is the cluster history?](/FAQ/FAQ-UseWasabi.md#what-is-the-cluster-history)
+:::
+
+:::details
 ### CoinJoin (CJ)
 
 CoinJoin is a trustless method for combining multiple Bitcoin payments from multiple spenders into a single transaction to make it more difficult for outside parties to determine which spender paid which recipient.
 Read more: [What is a CoinJoin?](/FAQ/FAQ-Introduction.md#what-is-a-coinjoin)
+:::
+
+:::details
+### CoinJoined coins
+
+Coins that have successfully participated in a Wasabi CoinJoin (with the exception of the change) and thus lose their association to a previous cluster.
+Read more: [What is the privacy I get after mixing with Wasabi?](/FAQ/FAQ-Introduction.md#what-is-the-privacy-i-get-after-mixing-with-wasabi)
 :::
 
 :::details
@@ -201,6 +216,14 @@ Read more: [What is the dust threshold](/FAQ/FAQ-UseWasabi.html#what-is-the-dust
 KYC (Know Your Customer) is the process of a business being forced to identify and verify the identity of its clients, and to share this information with a government.
 The term is also used to refer to the bank regulation which governs these activities.
 Read more: [AML/KYC Information](/why-wasabi/TransactionSurveillanceCompanies.md#aml-kyc-information)
+:::
+
+:::details
+### Label
+
+A way to track who knows about the ownership of your coins.
+Not to be confused with a description of a transaction.
+Read more: [The importance of labeling](/using-wasabi/Receive.md#the-importance-of-labeling)
 :::
 
 :::details
