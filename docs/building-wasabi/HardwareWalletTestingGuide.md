@@ -15,7 +15,7 @@
 | Digital BitBox |         |         |         |
 | KeepKey        |         |         |         |
 | Ledger Nano S  | pass    | pass    | pass    |
-| Ledger Nano S  | fail    | fail    | fail    |
+| Ledger Nano X  | fail    | fail    | fail    |
 | Trezor One     |         |         |         |
 | Trezor Model T | pass    | pass    | pass    |
 
