@@ -175,7 +175,7 @@ Read more: [What is a CoinJoin?](/FAQ/FAQ-Introduction.md#what-is-a-coinjoin)
 :::details
 ### CoinJoined coins
 
-Coins that have successfully participated in a Wasabi CoinJoin (with the exception of the change) and thus lose their association to a previous cluster.
+Coins that have successfully participated in a CoinJoin (with the exception of the change) and thus lose their association to a previous cluster.
 Read more: [What is the privacy I get after mixing with Wasabi?](/FAQ/FAQ-Introduction.md#what-is-the-privacy-i-get-after-mixing-with-wasabi)
 :::
 
