@@ -216,7 +216,7 @@ On Linux and macOS you can just add some parameters to the Wasabi executable and
 You may want to start with `--help`.
 :::
 
-:::details
+::::details
 ### My antivirus marks Wasabi Wallet as a virus. Am I downloading the right software? How can I stay safe?
 
 First, make sure you have downloaded Wasabi from the [official website](https://wasabiwallet.io/) or from the [official GitHub repository](https://github.com/zkSNACKs/WalletWasabi/releases).
@@ -230,4 +230,18 @@ If you are still not sure, before starting Wasabi, you can check that it is safe
 Remember to report Wasabi as a safe software/false positive to your antivirus.
 In doing so you will help users who use the same antivirus.
 :::
+::::
+
+:::details
+### Why is the executable called wassabee?
+
+The most obvious thing would be to call the executable `Wasabi Wallet.exe` on Windows and `Wasabi Wallet` on Linux and Mac.
+
+However launching Wasabi Wallet from certain terminals/command lines is problematic, so we should remove the spacing: `WasabiWallet`, and the case sensitivity differences between the operating systems can also cause issues, so that must go too: `wasabiwallet`.
+
+But it's too long, it needs a faster way to launch: `wasabi`.
+
+However this is too generic, it'll certainly cause conflicts, we need to make it unique: `wassabee`.
+
+Also, this sounds awesome and is a [fun inside joke](https://www.youtube.com/watch?v=dLzFKx6ONZQ).
 :::
