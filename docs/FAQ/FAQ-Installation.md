@@ -237,7 +237,7 @@ In doing so you will help users who use the same antivirus.
 
 The most obvious thing would be to call the executable `Wasabi Wallet.exe?  on Windows and `Wasabi Wallet` on Linux and Mac.
 
-However launching Wasabi Wallet from certain terminals/command lines are problematic, so we should remove the spacing: `WasabiWallet`, and the case sensitivity differences between the operating systems can also cause issues, so that must go too: `wasabiwallet`.
+However launching Wasabi Wallet from certain terminals/command lines is problematic, so we should remove the spacing: `WasabiWallet`, and the case sensitivity differences between the operating systems can also cause issues, so that must go too: `wasabiwallet`.
 
 But it's too long, it needs a faster way to launch: `wasabi`.
 
