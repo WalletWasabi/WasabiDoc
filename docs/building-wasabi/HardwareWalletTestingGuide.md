@@ -15,6 +15,7 @@
 | Digital BitBox |         |         |         |
 | KeepKey        |         |         |         |
 | Ledger Nano S  | pass    | pass    | pass    |
+| Ledger Nano S  | fail    | fail    | fail    |
 | Trezor One     |         |         |         |
 | Trezor Model T | pass    | pass    | pass    |
 
@@ -51,7 +52,5 @@ Follow this step-by-step [guide](../using-wasabi/BuildSource.md).
 Report results on GitHub or Reddit.
 
 On GitHub by commenting under this pull request: [https://github.com/zkSNACKs/WalletWasabi/pull/1341](https://github.com/zkSNACKs/WalletWasabi/pull/1341)
-
-On Reddit by commenting under this thread: [https://old.reddit.com/r/WasabiWallet/comments/bdyz84/wasabi_wallet_hardware_wallet_integration_testing/](https://old.reddit.com/r/WasabiWallet/comments/bdyz84/wasabi_wallet_hardware_wallet_integration_testing/)
 
 Please include your OS version and your hardware wallet type.
