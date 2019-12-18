@@ -47,14 +47,14 @@ Whenever possible, send transactions where the destination addresses receive the
 This can easily be done by clicking the `Max` button in the `Send` tab, which will automatically deduct the mining fee and send the highest amount possible to the destination.
 This might not be possible in some cases where you have to pay a specific value of a payment request.
 However, in other cases it is possible, for example donations or when depositing to an exchange.
-Consider supporting invaluable projects like [the tor project](https://donate.torproject.org/cryptocurrency) or [the electronic frontier foundation](https://supporters.eff.org/donate/donate), you can find a list of organizations that accept bitcoin donations [here](https://en.bitcoin.it/wiki/Donation-accepting_organizations_and_projects).
+Consider supporting invaluable projects like [The Tor Project](https://donate.torproject.org/cryptocurrency) or [the Electronic Frontier Foundation](https://supporters.eff.org/donate/donate), you can find a list of organizations that accept bitcoin donations [here](https://en.bitcoin.it/wiki/Donation-accepting_organizations_and_projects).
 
 ### Spend the change to another entity, if these two won't make you trouble knowing you interact with both of them.
 For example when you buy coffee with a 0.1 bitcoin mixed coin from Alice for 0.01 bitcoin, you get back 0.09 bitcoin change that Alice knows is yours.
 If in the next transaction you spend the 0.09 bitcoin change in the pizza restaurant of Bob, then Alice might find out that you go to Bob's restaurant, and if she doesn't like that, then she can refuse to serve you coffee the next time, or even worse.
 But if instead you spend the 0.09 bitcoin change in a transaction to Carol, a good friend of Alice, then Alice might not care and will still give you coffee for the next round.
 
-### Mix with Joinmarket.
+### Mix with JoinMarket.
 In [JoinMarket](https://github.com/JoinMarket-Org/joinmarket-clientserver) as a market taker you can specify exactly what denomination of equal value outputs are generated in the CoinJoin.
 So you can send the Wasabi change to your JoinMarket wallet and take an offer to mix for some rounds.
 The coin you will receive after the tumbling algorithm can have sufficient anonymity set, and you can use it for spending again.
