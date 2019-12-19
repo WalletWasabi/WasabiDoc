@@ -1256,7 +1256,7 @@ For more information, see this [dedicated chapter](/using-wasabi/ChangeCoins.md)
 ### How can I mix large amounts?
 
 Use Unequal Input Mixing and gain fungibility for UTXOs of 0.1, 0.2, 0.4, 0.8, 1.6, 3.2, ... bitcoin!
-Read more: [What are the denominations created in one round?](/FAQ/FAQ-UseWasabi.md#what-are-the-denominations-created-in-one-round)
+Read more: [What are the equal denominations created in one mixing round?](/FAQ/FAQ-UseWasabi.md#what-are-the-equal-denominations-created-in-one-mixing-round)
 
 @[youtube](3Ezru07J674)
 :::
