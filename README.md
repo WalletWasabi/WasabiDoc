@@ -167,8 +167,8 @@ answer answer answer.
 
 ### Variables
 
-To have a single place to maintain universal strings like the current Wasabi version number, we use variables in the Markdown (i.e.  `${currentVersion}`).
-These variables are managed in `docs/.vuepress/variables.js`.
+To have a single place to maintain universal strings like the current Wasabi version number, we use variables in the Markdown (i.e.  `${currentVersion}`and `${zksnacksPublicKeyFingerprint}`).
+These variables are managed in [`docs/.vuepress/variables.js`](https://github.com/zkSNACKs/WasabiDoc/blob/master/docs/.vuepress/variables.js).
 Occurrences of `${variableName}` get substituted before the Markdown is processed.
 
 ### Thanks goes to the Wasabikas, Osu!
