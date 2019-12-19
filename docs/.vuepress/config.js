@@ -17,7 +17,7 @@ const themeColor = "#211b24"
 
 module.exports = {
   themeConfig: {
-    searchPlaceholder: 'Search or jump to...'
+    searchPlaceholder: 'Search the docs...'
   }
 }
 
