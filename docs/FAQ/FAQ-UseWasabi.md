@@ -731,7 +731,7 @@ With Wasabi we are trying to do lower estimations, rather than higher ones.
 
 
 :::details
-### What are the denominations created in one round?
+### What are the equal denominations created in one mixing round?
 
 In every CoinJoin round the minimum to register is roughly 0.1 BTC, you need to have at least this much to participate.
 Within the same transaction, Wasabi also efficiently generates larger value zero link CoinJoin denominations.
@@ -1256,6 +1256,7 @@ For more information, see this [dedicated chapter](/using-wasabi/ChangeCoins.md)
 ### How can I mix large amounts?
 
 Use Unequal Input Mixing and gain fungibility for UTXOs of 0.1, 0.2, 0.4, 0.8, 1.6, 3.2, ... bitcoin!
+Read more: [What are the equal denominations created in one mixing round?](/FAQ/FAQ-UseWasabi.md#what-are-the-equal-denominations-created-in-one-mixing-round)
 
 @[youtube](3Ezru07J674)
 :::
