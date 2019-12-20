@@ -280,7 +280,7 @@ This helps you know where your coins came from so that you can judge whether the
 
 ![](/ReceiveLabelingRequired.png)
 
-When labeling a newly generated address you should ask yourself: "Who knows this address is mine?" or "Who will I share this address with?" or "To whom I am sending bitcoin?"
+When labeling a newly generated address or a sending transaction that generates a change coin you should ask yourself: "Who knows this address is mine?" or "Who will I share this address with?" or "From whom I am receiving bitcoin?" or "To whom I am sending bitcoin?"
 Labels should contain the comma-separated names of people/entities that may be aware of the transaction and could follow its trail like:
 
 `Name of the sender or the receiver, name of the exchange, name of the payment processor`
