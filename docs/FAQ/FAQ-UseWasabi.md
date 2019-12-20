@@ -274,7 +274,7 @@ When you import the wallet file into a new Wasabi client, then it will use this 
 ### Why do I have to label my address?
 
 Bitcoin addresses look like cyphertext, they are not easily remembered and it's not clear how they were used previously.
-Thus when you do not label all your addresses, then there is no meta-data for you to understand the context of their coins.
+When you do not label all your addresses, there is no meta-data for you to understand the context of their coins.
 Receiving addresses and sending transactions that generate a change coin should be carefully labeled.
 This helps you know where your coins came from so that you can judge whether there are privacy concerns when sending a specific coin to a specific receiver.
 
