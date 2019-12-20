@@ -59,7 +59,7 @@ Coin control is a key feature that enables all the other features.
 How could we CoinJoin our coins if we aren't able to select the ones we want to participate with?
 How could we know which coins are being spent in a transaction?
 How could we decide what to reveal to a KYC exchange?
-Well, it is not possible.
+Well, without coin control it is not possible.
 
 Wasabi is a coins-oriented wallet in the sense that coins are the most important unit of information to take decisions to protect privacy.
 
