@@ -41,7 +41,7 @@ Lastly, understand that if you lose your password, it becomes much harder (if no
 
 Each time you receive coins, you will be asked to create a label.
 This label is only for you and is stored exclusively on your device.
-Wasabi has strong coin control features, and as you continue to use the wallet, you will observe that the history of your coins will appear, and this history is only useful to you if you are practicing good labeling.
+Wasabi has strong coin control features, and as you continue to use the wallet, you can see how known are your coins, which is possible only if you practice good labeling.
 
 You can read more about labels [here](/using-wasabi/Receive.md#the-importance-of-labeling).
 
