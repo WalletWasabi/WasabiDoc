@@ -217,7 +217,7 @@ You can read more on [The Tor Project's dedicated page about bridges](https://ww
 
 :::tip
 If you are using Tor Browser Bundle it is extremely easy to configure it to use bridges.
-Configuring Tor bridges running in a daemon mode it's more difficult and takes longer
+Configuring Tor bridges running in a daemon mode is more difficult and takes more time.
 :::
 
 **Steps with Tor Browser:**
