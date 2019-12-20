@@ -241,7 +241,7 @@ These are commands for Debian.
 Feel free to edit these commands according to your distribution.
 :::
 
-1. Get Tor Bridges at [https://bridges.torproject.org/bridges](https://bridges.torproject.org/bridges)
+1. Get [Tor Bridges](https://bridges.torproject.org/bridges)
 2. Install Tor daemon with `sudo apt-get install tor`
 3. Install OBFS4 support (needed to connect to bridges), by editing your `/etc/apt/sources.list` and add these lines:
 ```
