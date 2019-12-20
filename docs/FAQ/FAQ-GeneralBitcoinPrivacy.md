@@ -255,7 +255,7 @@ UseBridges 1
 
 
 
-# Your bridges from Step 1, do not copy this information directly!
+# Adapt to your bridges from Step 1, do not copy this information directly!
 
 Bridge 88.153.28.205:443 AD16D468305F6CEBA66CFBE37B7721C05282065D
 
