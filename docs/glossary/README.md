@@ -160,7 +160,7 @@ Read more: [Change coins](/using-wasabi/ChangeCoins.md)
 :::details
 ### Cluster
 
-A history and mapping of coins and who they are revealed to.
+Which entities know about which coins.
 For example, this coin belongs to a cluster that is known by Coinbase and Alice.
 Read more: [What is the cluster history?](/FAQ/FAQ-UseWasabi.md#what-is-the-cluster-history)
 :::
