@@ -291,7 +291,7 @@ So, a good label could be:
 
 or:
 
-`Alice & Bob` (in this case, `Alice & Bob` is the name of a company.
+`Alice & Bob` (This is one entity which is not the same as `Alice, Bob` as they are multiple entities and thus separated by a comma)
 Remember that is not the same as `Alice, Bob` as they are multiple entities separated by a comma).
 :::
 
