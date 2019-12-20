@@ -238,12 +238,12 @@ To make use of Tor bridges on Wasabi, you must always keep Tor Browser open.
 
 :::tip
 These are commands for Debian.
-Feel free to edit these commands according to your distribution)
+Feel free to edit these commands according to your distribution.
 :::
 
 1. Get Tor Bridges at [https://bridges.torproject.org/bridges](https://bridges.torproject.org/bridges)
-2. Install Tor daemon with `sudo apt-get install  tor`
-3. Install OBFS4 support (needed to connect to bridges), by editing your `/etc/apt/sources.list` and adding these lines:
+2. Install Tor daemon with `sudo apt-get install tor`
+3. Install OBFS4 support (needed to connect to bridges), by editing your `/etc/apt/sources.list` and add these lines:
 ```
 # Tor Bridges
 deb http://deb.torproject.org/torproject.org obfs4proxy main
