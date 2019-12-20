@@ -144,17 +144,3 @@ Wasabi uses [BIP 38: Password-Protected Private Key](/using-wasabi/BIPs.md#bip-3
                   +--------------------+
 
 ```
-
-## What do you need to get the keys?
-
-This is needed to backup and recover your wallet:
-
-| Data | Does it need password to recover? |
-|----------------------|--------------------------------|
-| entropy |  No, this is unencrypted |
-| mnemonic | No, this is unencrypted |
-| seed |  Yes, it is encrypted |
-| extendedkey |  Yes, it is encrypted |
-| privatekey+chaincode+fingerprint | Yes, it is encrypted |
-| encryptedsecret+chaincode+fingerprint  | Yes, **(this is the Wasabi Backup)** |
-
