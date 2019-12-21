@@ -254,7 +254,6 @@ deb http://deb.torproject.org/torproject.org obfs4proxy main
 UseBridges 1
 
 
-
 # Adapt to your bridges from Step 1, do not copy this information directly!
 
 Bridge 88.153.28.205:443 AD16D468305F6CEBA66CFBE37B7721C05282065D
@@ -262,7 +261,6 @@ Bridge 88.153.28.205:443 AD16D468305F6CEBA66CFBE37B7721C05282065D
 Bridge 37.218.246.193:19924 B56436117274B0DA0BA8EDDF78679ECFF4C0E2AA
 
 Bridge 194.132.209.92:26848 14FF5F91FE1CD6C1EDAB2D41A897B70FCC5DFAFA
-
 
 
 ServerTransportPlugin obfs4 exec /usr/bin/obfs4proxy
