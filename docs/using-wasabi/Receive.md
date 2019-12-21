@@ -137,5 +137,4 @@ Wasabi doesn't care about why you transact with bitcoins, it only cares about wh
 4. Click on `Generate Address`.
 5. Optionally change the label in the right click menu if new entities learn about the address.
 
-![](/ReceiveAddressDropDown.png)
-![](/ReceiveAddressMenu.png)
+![](/ReceiveAddressDropDownMenu.png)
