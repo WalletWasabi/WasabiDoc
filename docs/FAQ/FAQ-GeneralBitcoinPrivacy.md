@@ -200,3 +200,64 @@ Route everything through Tor by default.
 It is also good practice to route your chats through the Tor network.
 You can also configure many cloud storage providers in this way.
 :::
+
+:::details
+### My country/ISP is blocking/censoring TOR, how can I use Wasabi?
+
+Tor bridges, also called Tor bridge relays, are alternative entry points to the Tor network that are not all listed publicly.
+If you suspect your access to the Tor network is being blocked, you may want to use bridges.
+You can read more on [The Tor Project's dedicated page about bridges](https://www.torproject.org/docs/bridges).
+
+:::tip
+If you are using Tor Browser Bundle it is extremely easy to configure it to use bridges.
+Configuring Tor bridges running in a daemon mode is more difficult and takes more time.
+:::
+
+**Steps with Tor Browser:**
+
+1. Download and install the [Tor Browser](https://www.torproject.org/)
+2. Change the `Settings` of the Tor Browser to use one of the bridges or pluggable transports
+3. Leave Tor Browser running after connecting with a bridge
+4. Change the `Settings` of Wasabi Wallet and edit `TorSocks5 Endpoint` from `127.0.0.1:9050` to `127.0.0.1:9150`
+5. Restart Wasabi
+
+After this, Wasabi will connect to Tor using the Tor Browser's connection via a random bridge.
+
+:::warning
+To make use of Tor bridges on Wasabi, you must always keep Tor Browser open.
+:::
+
+**Steps with Tor Daemon on Linux:**
+
+:::tip
+These are commands for Debian.
+Feel free to edit these commands according to your distribution.
+:::
+
+1. Get [Tor Bridges](https://bridges.torproject.org/bridges)
+2. Install Tor daemon with `sudo apt-get install tor`
+3. Install OBFS4 support (needed to connect to bridges), by editing your `/etc/apt/sources.list` and add these lines:
+```
+# Tor Bridges
+deb http://deb.torproject.org/torproject.org obfs4proxy main
+```
+4. Update package list with `sudo apt-get update` and install OBFS4 with `sudo apt-get install obfs4proxy`
+5. Configure Tor by editing your `/etc/tor/torrc` file and add these lines:
+```
+UseBridges 1
+
+
+# Adapt to your bridges from Step 1, do not copy this information directly!
+
+Bridge 88.153.28.205:443 AD16D468305F6CEBA66CFBE37B7721C05282065D
+
+Bridge 37.218.246.193:19924 B56436117274B0DA0BA8EDDF78679ECFF4C0E2AA
+
+Bridge 194.132.209.92:26848 14FF5F91FE1CD6C1EDAB2D41A897B70FCC5DFAFA
+
+
+ServerTransportPlugin obfs4 exec /usr/bin/obfs4proxy
+```
+6. Restart Tor with `sudo service tor restart` and check logs with `sudo tail -f /var/log/tor/log` to verify that everything is working properly
+
+:::
