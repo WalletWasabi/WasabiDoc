@@ -201,8 +201,8 @@ It is also good practice to route your chats through the Tor network.
 You can also configure many cloud storage providers in this way.
 :::
 
-:::details
-### My country/ISP is blocking/censoring TOR, how can I use Wasabi?
+::::details
+### My country/ISP is blocking/censoring TOR, how can I use Wasabi with TOR bridges?
 
 Tor bridges, also called Tor bridge relays, are alternative entry points to the Tor network that are not all listed publicly.
 If you suspect your access to the Tor network is being blocked, you may want to use bridges.
@@ -260,4 +260,4 @@ ServerTransportPlugin obfs4 exec /usr/bin/obfs4proxy
 ```
 6. Restart Tor with `sudo service tor restart` and check logs with `sudo tail -f /var/log/tor/log` to verify that everything is working properly
 
-:::
+::::
