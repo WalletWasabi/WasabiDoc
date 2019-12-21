@@ -16,12 +16,6 @@ const youtubeEmbed = (id, path) => `
 const themeColor = "#211b24"
 
 module.exports = {
-  themeConfig: {
-    searchPlaceholder: 'Search the docs...'
-  }
-}
-
-module.exports = {
   title: "Wasabi Docs",
   description: "This is the Wasabi documentation, an archive of knowledge about Wasabi Wallet, the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop.",
   head: [
@@ -89,6 +83,7 @@ module.exports = {
   },
   themeConfig: {
     logo: "/Logo_without_text.png",
+    searchPlaceholder: 'Search the docs...',
     displayAllHeaders: false,
     sidebarDepth: 0,
     repo: "zkSNACKs/WasabiDoc",
