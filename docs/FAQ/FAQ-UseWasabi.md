@@ -1103,7 +1103,7 @@ You should put a meaningful label when you generate a receive address in your ha
 :::details
 ### How can I type in the passphrase of my Trezor T?
 
-After connecting the Trezor T to your computer and you open Wasabi wallet, then you enter the passprase on the touchscreen of your Trezor T.
+After connecting the Trezor T to your computer and upon trying to load your wallet, you get a message to choose where to type your passphrase, on the device or the host (computer), choose the first option (device) then enter the passprase using the touchscreen of your Trezor T.
 Wasabi wallet will now load this passphrase protected wallet.
 :::
 
