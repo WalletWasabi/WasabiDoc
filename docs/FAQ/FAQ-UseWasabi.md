@@ -1118,6 +1118,13 @@ Wasabi does support the empty button PIN input field, as this is secure to use o
 However, Wasabi does not support to use the hot computer keyboard to type in the passphrase.
 :::
 
+:::details
+### How can I type in the passphrase of my Trezor T?
+
+After connecting the Trezor T to your computer and upon trying to load your wallet, you get a message on the Trezor T to choose where to type your passphrase, on the device or the host (computer), choose the first option (device) then enter the passprase using the touchscreen of your Trezor T.
+Wasabi wallet will now load this passphrase protected wallet.
+:::
+
 ## History
 
 :::details
@@ -1346,10 +1353,3 @@ It was [thought to be fixed](https://old.reddit.com/r/WasabiWallet/comments/c2hc
 
 It ultimately got fixed in [v1.1.10](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v1.1.10) by introducing an upgraded version of [BIP 158 block filters](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients/) and changing the wallet cache architecture.
 :::
-
-
-## Further Questions
-
-Hardware Wallet
-
-- How can I manage the passphrase of my Trezor T?
