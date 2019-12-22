@@ -236,25 +236,20 @@ Feel free to edit these commands according to your distribution.
 
 1. Get [Tor Bridges](https://bridges.torproject.org/bridges)
 2. Install Tor daemon with `sudo apt-get install tor`
-3. Install OBFS4 support (needed to connect to bridges), by editing your `/etc/apt/sources.list` and add these lines:
+3. Install OBFS4 support (needed to connect to bridges), by editing your `/etc/apt/sources.list` and adding this line:
 ```
 # Tor Bridges
 deb http://deb.torproject.org/torproject.org obfs4proxy main
 ```
 4. Update package list with `sudo apt-get update` and install OBFS4 with `sudo apt-get install obfs4proxy`
-5. Configure Tor by editing your `/etc/tor/torrc` file and add these lines:
+5. Configure Tor by editing your `/etc/tor/torrc` file and adding these lines:
 ```
 UseBridges 1
 
-
-# Adapt to your bridges from Step 1, do not copy this information directly!
-
+# Do not use the following bridges, instead use the ones you get in Step 1!
 Bridge 88.153.28.205:443 AD16D468305F6CEBA66CFBE37B7721C05282065D
-
 Bridge 37.218.246.193:19924 B56436117274B0DA0BA8EDDF78679ECFF4C0E2AA
-
 Bridge 194.132.209.92:26848 14FF5F91FE1CD6C1EDAB2D41A897B70FCC5DFAFA
-
 
 ServerTransportPlugin obfs4 exec /usr/bin/obfs4proxy
 ```
