@@ -21,6 +21,15 @@ Read more: [Wasabi Supported BIPs](/using-wasabi/BIPs.md)
 :::
 
 :::details
+### Block
+
+A block is a batch of valid Bitcoin transactions and it must hash to a value below a certain difficulty target to proof the work of the miner.
+Each block references the hash of the previous block, thus creating a hash chain of blocks.
+On average a new block is created every 10 minutes.
+A block can be up to 4 weight units [or 4 virtual bytes] in size.
+:::
+
+:::details
 ### Cold Storage
 
 Refers to keeping a reserve of important Bitcoin secrets offline.
