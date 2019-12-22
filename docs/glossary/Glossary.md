@@ -282,7 +282,7 @@ Similarly, Tumbler is the synonym of 'Mixer'.
 
 A transaction surveillance company is one which attempts to spy on all bitcoin users.
 Their business model is usually to sell the data to any governments, corporations and individuals willing to pay for their services.
-Read more: [Transaction Surveillance Companies](/why-wasabi/TransactionSurveillanceCompanies.md#spying-technology)
+Read more: [Transaction Surveillance Companies](/why-wasabi/TransactionSurveillanceCompanies.md)
 :::
 
 :::details
