@@ -97,6 +97,16 @@ Read more: [BIP 84 derivation scheme for P2WPKH based accounts](/using-wasabi/BI
 :::
 
 :::details
+### Public Key
+
+A public key is calculated by multiplying the private key to the generator point of an elliptical curve.
+Given only the public key, the private key cannot be calculated. 
+Anyone can encrypt a message to the public key, which can only be decrypted with the knowledge of the private key.
+Given a public key and a signature over a message, anyone can verify that the signer had knowledge of the private key and message.
+In Bitcoin, the public key is the pseudonymous identity of the owner of a coin.
+:::
+
+:::details
 ### Replace by Fee (RBF)
 
 Replacing one version of an unconfirmed transaction with a different version of the transaction that pays a higher transaction fee.
