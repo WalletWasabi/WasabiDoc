@@ -143,6 +143,14 @@ Read more: [What is the anonimity set?](/FAQ/FAQ-UseWasabi.md#what-is-the-anonym
 :::
 
 :::details
+### Blockchain Analysis
+
+Blockchain analysis is used by transaction surveillance companies to follow the transaction history of coins.
+Techniques like the common-input-ownership heuristic or change detection are used to create a cluster of transactions belonging to one user.
+Read more: [Blockchain Analysis](/why-wasabi/TransactionSurveillanceCompanies.md#blockchain-analysis)
+:::
+
+:::details
 ### Bloom Filter
 
 A filter used primarily by SPV clients to request only block headers and merkle proofs of a given transaction from full nodes.
