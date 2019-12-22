@@ -263,7 +263,7 @@ Read more: [Blockchain Analysis](/why-wasabi/TransactionSurveillanceCompanies.md
 :::
 
 :::details
-### The Onion Router (TOR)
+### The Onion Router (Tor)
 
 Tor (The Onion Router) is free and open-source software for enabling anonymous communication.
 It is widely used by Wasabi.
