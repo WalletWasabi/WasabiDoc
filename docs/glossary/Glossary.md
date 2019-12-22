@@ -52,6 +52,13 @@ Read more: [Hardware Wallet FAQs](/FAQ/FAQ-UseWasabi.md#hardware-wallet)
 :::
 
 :::details
+### Hot Wallet
+
+A hot wallet is a software wallet that runs on a computer which is connected to the internet.
+Wasabi is a hot wallet by default.
+:::
+
+:::details
 ### Lightning Network (LN)
 
 Lightning Network is a proposed implementation of Hashed Timelock Contracts (HTLCs) with bi-directional payment channels which allows payments to be securely routed across multiple peer-to-peer payment channels.
