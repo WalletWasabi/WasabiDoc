@@ -158,6 +158,13 @@ Read more: [Change coins](/using-wasabi/ChangeCoins.md)
 :::
 
 :::details
+### Chaumian CoinJoin
+
+A Chaumian CoinJoin is a special type of CoinJoin that utilizes Chaumian [or Schnorr] blind signatures to prevent the central coordinator from spying on the linkage between inputs and outputs.
+Read more: [Use of blind signatures in CoinJoin](/using-wasabi/CoinJoin.md#zerolink-protocol-step-by-step)
+:::
+
+:::details
 ### Cluster
 
 Which entities know about which coins.
