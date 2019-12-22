@@ -54,7 +54,7 @@ Read more: [Hardware Wallet FAQs](/FAQ/FAQ-UseWasabi.md#hardware-wallet)
 :::details
 ### Hot Wallet
 
-A hot wallet is a software wallet that runs on a computer which is connected to the internet.
+A hot wallet is a software wallet that runs on a computer which is connected to the Internet.
 Wasabi is a hot wallet by default.
 :::
 
