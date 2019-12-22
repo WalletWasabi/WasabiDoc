@@ -1091,13 +1091,21 @@ Please consider this carefully before making a decision.
 ::::
 
 :::details
-### After I CoinJoined my coins and reached green anonset, I sent them to my hardware wallet address. When i check my HW via Wasabi, the coins are now red. Why?
+### After I CoinJoined my coins and reached green anonset, I sent them to my hardware wallet address. When I check my HW via Wasabi, the coins are now red. Why?
 
 Everything is working as expected.
 
 The anonymity set info (number) is tied to your wallet that you used to CoinJoin, if you send a mixed coin to another Wasabi Wallet of yours (hardware wallet or normal wallet) it will have an anonymity set 1 (red) because this wallet doesn't know that the coin was coinjoined.
 
 You should put a meaningful label when you generate a receive address in your hardware wallet, e.g. "coinjoined utxo with anonymity set 70" (something that reminds you that you got this utxo from your Wasabi Wallet and it was coinjoined).
+:::
+
+:::details
+### How can I enter the PIN of my Trezor One?
+
+You can enter the PIN to unlock your Trezor One the same way you use the Trezor browser wallet.
+As soon as you plug in the Trezor One in your laptop and open Wasabi, it will show 9 empty buttons, and on the Trezor One screen you will see 9 boxes with numbers in random order.
+Inside Wasabi, click on the boxes that correspond to your PIN in the order shown on the Trezor One screen.
 :::
 
 ## History
