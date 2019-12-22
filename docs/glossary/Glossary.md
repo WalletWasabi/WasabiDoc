@@ -303,7 +303,7 @@ Wasabikas are essentially builders and users of Wasabi in general.
 ### ZeroLink
 
 ZeroLink is a framework to holistically design a privacy and fungibility setup for Bitcoin.
-This encompasses more than just a single CoinJoin transaction, but also includes network level privacy defends against third parties spying.
+This encompasses more than just a single CoinJoin transaction, but also includes network level privacy defense against third party spying.
 
 Read more: [ZeroLink: the Bitcoin Fungibility Framework](/using-wasabi/CoinJoin.md#zerolink-protocol-step-by-step)
 :::
