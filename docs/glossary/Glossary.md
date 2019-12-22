@@ -104,6 +104,7 @@ Given only the public key, the private key cannot be calculated.
 Anyone can encrypt a message to the public key, which can only be decrypted with the knowledge of the private key.
 Given a public key and a signature over a message, anyone can verify that the signer had knowledge of the private key and message.
 In Bitcoin, the public key is the pseudonymous identity of the owner of a coin.
+Read more: [Bitcoin private keys](/using-wasabi/Receive.html#bitcoin-public-keys-and-addresses)
 :::
 
 :::details
