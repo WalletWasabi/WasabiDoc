@@ -101,7 +101,8 @@ Read more: [BIP 84 derivation scheme for P2WPKH based accounts](/using-wasabi/BI
 
 A public key is calculated by multiplying the private key to the generator point of an elliptical curve.
 Given only the public key, the private key cannot be calculated. 
-Anyone can encrypt a message to the public key, which can only be decrypted with the knowledge of the private key.
+Anyone can encrypt a message using a public key.
+This cyphertext message can only be decrypted through the related private key.
 Given a public key and a signature over a message, anyone can verify that the signer had knowledge of the private key and message.
 In Bitcoin, the public key is the pseudonymous identity of the owner of a coin.
 Read more: [Bitcoin private keys](/using-wasabi/Receive.html#bitcoin-public-keys-and-addresses)
