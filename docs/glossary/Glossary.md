@@ -97,7 +97,7 @@ Read more: [BIP 84 derivation scheme for P2WPKH based accounts](/using-wasabi/BI
 :::
 
 :::details
-### Proof of Work
+### Proof of Work (POW)
 
 A Bitcoin block is only valid if the hash of it is below a certain difficulty target.
 In order to create a valid block, a miner must thus repeatedly hash a candidate block with changing nonce until by sheer luck he finds a hash with low value.
