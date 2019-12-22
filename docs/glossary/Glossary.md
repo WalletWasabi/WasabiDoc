@@ -31,7 +31,7 @@ Read more: [Cold Wasabi Protocol](/using-wasabi/ColdWasabi.md)
 :::
 
 :::details
-### Fees
+### Transaction Fees
 
 The sender of a transaction includes a fee to the network for processing the requested transaction.
 Most transactions require a minimum fee.
@@ -46,7 +46,7 @@ Read more: [Transaction surveillance companies attempting to destroy fungibility
 :::
 
 :::details
-### Hardware Wallet (HW)
+### Hardware Wallet (HWW)
 A hardware wallet is a special type of Bitcoin wallet which generates and stores the user's private keys in a tailor made hardware device.
 Read more: [Hardware Wallet FAQs](/FAQ/FAQ-UseWasabi.md#hardware-wallet)
 :::
@@ -129,7 +129,7 @@ Read more: [How can I select UTXOs for CoinJoin?](/FAQ/FAQ-UseWasabi.md#how-can-
 ## Privacy and Wasabi
 
 :::details
-### Address reuse
+### Address Reuse
 
 Address reuse refers to the use of the same address for multiple transactions, this is very bad for privacy.
 Read more: [Address reuse](/using-wasabi/AddressReuse.md)
@@ -150,7 +150,7 @@ Read more: [BIP 37: Connection Bloom Filtering](/using-wasabi/BIPs.md#bip-37-con
 :::
 
 :::details
-### Change address detection
+### Change Address Detection
 
 Many Bitcoin transactions have change outputs.
 It would be a serious privacy leak if the change address can be somehow found, as it would link the ownership of the (now spent) inputs with a new output.
@@ -188,7 +188,7 @@ Read more: [Coin Control Best Practices](/FAQ/FAQ-UseWasabi.md#coin-control-best
 :::
 
 :::details
-### Common-input-ownership heuristic
+### Common-Input-Ownership heuristic
 
 This is a heuristic or assumption which says that if a transaction has more than one input then all those inputs are owned by the same entity.
 Read more: [Wasabi Wallet under the hood](/building-wasabi/TechnicalOverview.md#wasabi-wallet-under-the-hood)
@@ -296,5 +296,5 @@ Read more: [Technical Overview of Wasabi Wallet](/building-wasabi/TechnicalOverv
 :::details
 ### Wasabika
 
-Wasabikas are essentially builders and users of Wasabi in general.
+Wasabikas are builders, users and supporters of Wasabi in general.
 :::
