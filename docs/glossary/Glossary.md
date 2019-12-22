@@ -119,6 +119,14 @@ Read more: [Wasabi Wallet under the hood](/building-wasabi/TechnicalOverview.md#
 :::
 
 :::details
+### Timechain
+
+The timechain is the one chain of valid Bitcoin blocks with the most accumulated proof of work.
+It is an append only data structure with new blocks being added on average every 10 minutes.
+Because of its uniquely verifiable and global consensus, it is a revolutionary standard for time.
+:::
+
+:::details
 ### Unspent Transaction Output (UTXO)
 
 UTXO is an unspent transaction output that can be spent as an input in a new transaction.
