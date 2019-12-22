@@ -1100,6 +1100,16 @@ The anonymity set info (number) is tied to your wallet that you used to CoinJoin
 You should put a meaningful label when you generate a receive address in your hardware wallet, e.g. "coinjoined utxo with anonymity set 70" (something that reminds you that you got this utxo from your Wasabi Wallet and it was coinjoined).
 :::
 
+:::details
+### How can I type in the passphrase of my Trezor One?
+
+The Trezor One was a pioneer in offline signing devices, however it has one critical design flaw.
+It requires to use the hot computer to input some data, like the PIN or passphrase.
+This is contrary to the thread model of offline signing devices where the hot computer cannot be trusted.
+Wasabi does support the empty button PIN input field, as this is secure to use on the hot wallet.
+However, Wasabi does not support to use the hot computer keyboard to type in the passphrase to decrypt the seed.
+:::
+
 ## History
 
 :::details
@@ -1334,6 +1344,5 @@ It ultimately got fixed in [v1.1.10](https://github.com/zkSNACKs/WalletWasabi/re
 
 Hardware Wallet
 
-- How can I type in the PIN of my Trezor One?
 - How can I manage the passphrase of my Trezor T?
 - Can I use the passphrase of my Trezor One?
