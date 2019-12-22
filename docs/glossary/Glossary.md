@@ -13,6 +13,15 @@ Every item contains a link to the respective full document for more details.
 ## Bitcoin in general
 
 :::details
+### Address
+
+A Bitcoin invoice address commits to a public key or script which defines who can spend the coin.
+It is specified in the output of a transaction, and it should only be used once.
+Wasabi uses the bech32 format to encode native segregated witness addresses.
+Read more: [Bitcoin addresses](/using-wasabi/Receive.md#bitcoin-public-keys-and-addresses)
+:::
+
+:::details
 ### Bitcoin Improvement Proposal (BIP)
 
 Bitcoin Improvement Proposal.
