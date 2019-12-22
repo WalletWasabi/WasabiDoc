@@ -1107,7 +1107,7 @@ The Trezor One was a pioneer in offline signing devices, however it has one crit
 It requires to use the hot computer to input some data, like the PIN or passphrase.
 This is contrary to the threat model of offline signing devices where the hot computer should not be trusted.
 Wasabi does support the empty button PIN input field, as this is secure to use on the hot wallet.
-However, Wasabi does not support to use the hot computer keyboard to type in the passphrase to decrypt the seed.
+However, Wasabi does not support to use the hot computer keyboard to type in the passphrase.
 :::
 
 ## History
