@@ -1100,6 +1100,13 @@ The anonymity set info (number) is tied to your wallet that you used to CoinJoin
 You should put a meaningful label when you generate a receive address in your hardware wallet, e.g. "coinjoined utxo with anonymity set 70" (something that reminds you that you got this utxo from your Wasabi Wallet and it was coinjoined).
 :::
 
+:::details
+### How can I type in the passphrase of my Trezor T?
+
+After connecting the Trezor T to your computer and you open Wasabi wallet, then you enter the passprase on the touchscreen of your Trezor T.
+Wasabi wallet will now load this passphrase protected wallet.
+:::
+
 ## History
 
 :::details
@@ -1335,5 +1342,4 @@ It ultimately got fixed in [v1.1.10](https://github.com/zkSNACKs/WalletWasabi/re
 Hardware Wallet
 
 - How can I type in the PIN of my Trezor One?
-- How can I manage the passphrase of my Trezor T?
 - Can I use the passphrase of my Trezor One?
