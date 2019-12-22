@@ -111,6 +111,14 @@ Read more: [How can I display the fee in satoshi per byte?](/FAQ/FAQ-UseWasabi.m
 :::
 
 :::details
+### SegWit
+
+Segregated Witness is a structure where the witness [signature or redeem script] is stored separately from the transaction Merkle tree.
+This is separated because the witness contains only data concerning transaction validity, but not about transaction effect.
+Read more: [Why Wasabi uses only SegWit](/FAQ/FAQ-UseWasabi.md#why-does-wasabi-only-use-segwit-bech32-addresses)
+:::
+
+:::details
 ### Simplified Payment Verification (SPV)
 
 SPV is a method for verifying particular transactions were included in a block without downloading the entire block.
