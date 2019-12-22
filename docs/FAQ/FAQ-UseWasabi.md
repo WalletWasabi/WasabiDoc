@@ -16,7 +16,8 @@
 
 You can generate as many new wallets as you'd like, for no extra cost and without asking for permission.
 Go to the `Wallet Manager` tab and the `Generate Wallet` menu.
-As with everything in Wasabi, you are required to label this new wallet. Make sure that you are precise so that you know what this is for later.
+As with everything in Wasabi, you are required to label this new wallet.
+Make sure that you are precise so that you know what this is for later.
 The password is used to encrypt the private key (extracted from the extended private key) on the computer.
 **Careful!!**
 **Without knowledge of the password, you CANNOT spend your bitcoin!!**
@@ -39,7 +40,7 @@ You have successfully setup your wallet when you click `I wrote down my Recovery
 ### What password should I use?
 The password you set is used as a 13th word (passphrase) as described in [BIP 39](../using-wasabi/BIPs.md#bip-39-mnemonic-code-for-generating-deterministic-keys), and is used to encrypt the private key of the extended private key as described in [BIP 38](../using-wasabi/BIPs.md#bip-38-password-protected-private-key) to get an encrypted private key which is stored on the computer.
 This is the password that will unlock your bitcoin to anyone who has access to the backup or computer.
-You will need to type in the password before you can spend from Wasabi wallet.
+You will need to type in the password before you can spend from a Wasabi wallet.
 So if your backup gets compromised, this password is the only thing protecting your precious sats.
 
 :::danger
@@ -104,7 +105,8 @@ Make sure to back up your password separately because it is necessary to spend y
 :::
 
 :::tip
-The wallet file backup is sensitive, in terms of privacy, but not critical in terms of loss of funds (if a password was used when generating the wallet). So it is good advice to encrypt this wallet file.
+The wallet file backup is sensitive, in terms of privacy, but not critical in terms of loss of funds (if a password was used when generating the wallet).
+So it is good advice to encrypt this wallet file.
 :::
 ::::
 
@@ -170,7 +172,8 @@ Do not send your extended public key to a third party server!
 :::
 
 ::: tip
-This is why Wasabi uses [BIP-158 block filters](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients) to ensure [network level privacy](/using-wasabi/NetworkLevelPrivacy.md). It's as good as running a full node.
+This is why Wasabi uses [BIP-158 block filters](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients) to ensure [network level privacy](/using-wasabi/NetworkLevelPrivacy.md).
+It's as good as running a full node.
 :::
 
 The Wasabi coordinator will send your wallet comparatively small block filters, and you check locally if the block contains a transaction with your coins.
@@ -238,17 +241,18 @@ Wasabi is a hybrid, if your node doesn't have a block, then it acquires it from 
 ### Why is it bad to re-use addresses?
 
 Bitcoin is designed so that for every payment you can use a new address that is not tied to any of your previous addresses.
-When you use a new address for every coin, then it becomes much much more difficult to find out that these coins are from you.
+When you use a new address for every coin, then it becomes much much more difficult to find out that these coins are yours.
 However, when you use the same address for every coin, then everyone knows that all coins can be spent by one individual who has the private key - you!
-Thus, when someone finds out that you have that address, maybe you published it in your social media profile for donations, or you send a coin to another peer who knows you, then he knows also how many bitcoin you have in that same address.
-Take good care to whom you tell your addresses, and every time, tell someone a different address.
+Thus, when someone finds out that you have that address, maybe you published it in your social media profile for donations, or you sent a coin to another peer who knows you, then he knows also how many bitcoin you have in that same address.
+Take good care to whom you tell your addresses, and every time use a different address.
 
 Because you have all the private keys, for all these addresses, you can produce a valid signature for any of them.
 So you can prove that these are your bitcoin, without relying on reputation that you have any other coins.
-You can easily generate and store many billions of private keys and addresses in a convenient [BIP 44 multi-account hierarchy for deterministic wallets](/using-wasabi/BIPs.md#bip-44-multi-account-hierarchy-for-deterministic-wallets) so that you can backup everything in your 12 word mnemonic phrase.
+You can easily generate and store billions of private keys and addresses in a convenient [BIP 44 multi-account hierarchy for deterministic wallets](/using-wasabi/BIPs.md#bip-44-multi-account-hierarchy-for-deterministic-wallets) so that you can backup everything in your 12 word mnemonic phrase.
 
-This is what is used in Wasabi. You have on mnemonic backup, and unlimited numbers of new addresses.
-Everytime a coin is received, the address is removed from the GUI so that you are not tempted to use it again.
+This is what is used in Wasabi.
+You have a mnemonic backup, and an unlimited number of new addresses.
+Every time a coin is received, the address is removed from the GUI so that you are not tempted to use it again.
 
 :::danger
 **NEVER RE-USE ADDRESSES**
@@ -322,7 +326,8 @@ It is important that you avoid sending the same address to several different ind
 There is a risk that both of them send coins to this same destination, thus unnecessarily linking the payments.
 
 :::danger
-It is especially important to **NEVER** send your extended public key to any third party server. This is a complete de-anonymization of your entire wallet!!
+It is especially important to **NEVER** send your extended public key to any third party server.
+This is a complete de-anonymization of your entire wallet!!
 :::
 ::::
 
@@ -331,7 +336,8 @@ It is especially important to **NEVER** send your extended public key to any thi
 
 Wasabi generates Bech32 addresses only, also known as bc1 addresses or native SegWit addresses.
 These addresses start with the characters `bc1...` Some wallets/exchanges do not yet support this type of address and may give an error message (e.g. "unknown bitcoin address").
-The solution is to manage your funds with a wallet which does support Bech32. To check Bech32 adoption and exchange/wallet support you can follow [Bitcoin.it Wiki](https://en.bitcoin.it/wiki/Bech32_adoption) and [When Segwit? website](https://whensegwit.com/#who).
+The solution is to manage your funds with a wallet which does support Bech32.
+To check Bech32 adoption and exchange/wallet support you can follow [Bitcoin.it Wiki](https://en.bitcoin.it/wiki/Bech32_adoption) and [When Segwit? website](https://whensegwit.com/#who).
 
 Be careful, if you send all your coins from an old wallet to a new wallet (from the table above) in one transaction then you will merge all your coins which is bad for privacy - instead, **send the coins individually** or if possible **import the seed in the new wallet**.
 :::
@@ -842,7 +848,7 @@ On the other hand, the systemic anonymity is slightly improved if a few people a
 So remixing with larger anonsets is exponentially more effective than smaller anonsets.
 Regarding why do we want 100 number, is among some other reasons, because that was our calculation to be that would make rounds happen in every 2-5 minutes, considering the liquidity of some custodial mixers.
 Regarding DoS attack, right now our DoS configuration is set to be pretty permissive and this seems to be sufficient for the time being.
-If a DoS attack would to happen, Wasabi team would just harden it in the config file and would kick the bad actors out.
+If a DoS attack would happen, Wasabi team would just harden it in the config file and would kick the bad actors out.
 Now if even that'd fail, then we can start thinking about lowering the required peers and also other methods.
 :::
 
@@ -1142,7 +1148,8 @@ It was introduced with the 0.7 release, introduced a third genesis block, a new 
 
 There is currently a basic implementation of connecting your full node to Wasabi.
 The server will still send you [BIP 158 block filters](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients), and when you realize that a block contains a transaction of yours, then you pull this block from your own full node, instead of a random P2P node, thus you can verify that this is actually a valid block including your transaction.
-One attack vector could be that Wasabi lies to you and gives you wrong filters that exclude your transaction, thus you would see in the wallet less coins than you actually control. [BIP 157 solves this](/using-wasabi/BIPs.md#bip-157-client-side-block-filtering).
+One attack vector could be that Wasabi lies to you and gives you wrong filters that exclude your transaction, thus you would see in the wallet less coins than you actually control.
+[BIP 157 solves this](/using-wasabi/BIPs.md#bip-157-client-side-block-filtering).
 
 When your full node is on the same hardware [computer, laptop] as your Wasabi Wallet, it will automatically recognize it and pull blocks from there.
 If your node is on a remote device [raspberry pi, nodl, server], then you can specify your local IP in the `Settings` tab, or in line 11 of the config file.
@@ -1233,7 +1240,8 @@ Please note that Wasabi is designed for the dark theme, and some color schemes m
 It is advisable to limit the recombining of mixed coins because it can only decrease the privacy of said coins.
 This links all the consolidated UTXOs in one transaction, creating only one output, which then clearly controls all these funds.
 That said, if you combine less than 1 BTC it is less likely to reveal your pre-CoinJoin transaction history.
-The potential issue comes when you spend that coin. Depending on what you do with the coin you might reduce the privacy of the resulting change (if you send half your coin to an exchange for example, as they will know that you own the coin change).
+The potential issue comes when you spend that coin.
+Depending on what you do with the coin you might reduce the privacy of the resulting change (if you send half your coin to an exchange for example, as they will know that you own the coin change).
 As a result it is best not to recombine ALL your mixed change, though you may wish to recombine some coins if you are planning on hodling for many years as this will reduce the fees required to spend the coins later.
 
 If you would like to dive into the details of this topic, you can [read more here](https://old.reddit.com/r/WasabiWallet/comments/avxbjy/combining_mixed_coins_privacy_megathread/) and see more here:
