@@ -78,12 +78,6 @@ On the TestNet and on the RegTest Wasabi deviates from the standard and uses `m/
 :::
 
 :::details
-### BIP 142: Address Format for Segregated Witness
-
-[BIP 142: Address Format for Segregated Witness](https://github.com/bitcoin/bips/blob/master/bip-0142.mediawiki)
-:::
-
-:::details
 ### BIP 143: Transaction Signature Verification for Version 0 Witness Program
 
 [BIP 143: Transaction Signature Verification for Version 0 Witness Program](https://github.com/bitcoin/bips/blob/master/bip-0143.mediawiki)
