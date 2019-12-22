@@ -1342,6 +1342,4 @@ It ultimately got fixed in [v1.1.10](https://github.com/zkSNACKs/WalletWasabi/re
 
 Hardware Wallet
 
-- How can I type in the PIN of my Trezor One?
 - How can I manage the passphrase of my Trezor T?
-- Can I use the passphrase of my Trezor One?
