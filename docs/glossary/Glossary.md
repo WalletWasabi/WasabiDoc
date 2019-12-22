@@ -97,6 +97,14 @@ Read more: [BIP 84 derivation scheme for P2WPKH based accounts](/using-wasabi/BI
 :::
 
 :::details
+### Proof of Work
+
+A Bitcoin block is only valid if the hash of it is below a certain difficulty target.
+In order to create a valid block, a miner must thus repeatedly hash a candidate block with changing nonce until by sheer luck he finds a hash with low value.
+By providing this pre-image block and hash, anyone can verify the amount of computational energy that a miner on average should have invested in order to find this block.
+:::
+
+:::details
 ### Replace by Fee (RBF)
 
 Replacing one version of an unconfirmed transaction with a different version of the transaction that pays a higher transaction fee.
