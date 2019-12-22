@@ -52,6 +52,15 @@ Read more: [Hardware Wallet FAQs](/FAQ/FAQ-UseWasabi.md#hardware-wallet)
 :::
 
 :::details
+### Hash
+
+A cryptographic hash function takes any input of arbitrary size [the message] and computes a value of fixed size that is unique to the input.
+If one bit of the input changes, the output will be completely different, there are no two messages that result in the same hash [collision resistance].
+The only way to get any given input, is by computing all possible inputs, it is a one-way function [pre-image resistance].
+Bitcoin uses the SHA256 in many parts of the protocol.
+:::
+
+:::details
 ### Lightning Network (LN)
 
 Lightning Network is a proposed implementation of Hashed Timelock Contracts (HTLCs) with bi-directional payment channels which allows payments to be securely routed across multiple peer-to-peer payment channels.
