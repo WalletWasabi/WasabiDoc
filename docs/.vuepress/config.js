@@ -109,7 +109,7 @@ module.exports = {
       },
       {
         text: "Glossary",
-        link: "/glossary/"
+        link: "/glossary/Glossary.md"
       }
     ],
     sidebar: {
@@ -218,6 +218,9 @@ module.exports = {
           title: "Glossary",
           collapsable: false,
           sidebarDepth: 2,
+          children: [
+            "/glossary/Glossary.md"
+          ]
         }
       ]
     }
