@@ -205,8 +205,7 @@ Read more: [Wasabi Wallet under the hood](/FAQ/FAQ-UseWasabi.md#how-does-my-wall
 ### Dust
 
 Dust is an UTXO that is uneconomical to spend.
-Also, small portions of bitcoin can lead to serious consequences about one's privacy.
-An example would be the so called `forced address reuse attack`.
+Also, small portions of bitcoin can lead to serious consequences about one's privacy, for example the so called `forced address reuse attack`.
 Read more: [What is the dust threshold](/FAQ/FAQ-UseWasabi.html#what-is-the-dust-threshold)
 :::
 
