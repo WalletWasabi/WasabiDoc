@@ -24,7 +24,6 @@ Read more: [Wasabi Supported BIPs](/using-wasabi/BIPs.md)
 ### Change
 
 In a spending transaction where the provided input coins are larger than the value sent to the destination address, then the leftover change is sent to a new address of the same wallet.
-CoinJoins create standardized equal value outputs, and the change of a CoinJoin can easily be linked to the input, thus they have 0 anonymity set.
 Read more: [Change coins](/using-wasabi/ChangeCoins.md)
 :::
 
