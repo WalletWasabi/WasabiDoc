@@ -146,7 +146,7 @@ Read more: [What is the anonimity set?](/FAQ/FAQ-UseWasabi.md#what-is-the-anonym
 ### Block filters
 
 A filter representing a compact list of addresses in one block.
-Wasabi checks locally if any block has transactions with addresses of this wallet.
+Wasabi checks locally if any block filter contains transactions with addresses of the wallet.
 No public keys are send to a third party server, thus it is very private.
 Read more: [BIP 158: Compact Block Filters for Light Clients](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients)
 :::
