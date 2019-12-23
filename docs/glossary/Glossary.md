@@ -100,7 +100,7 @@ Read more: [BIP 84 derivation scheme for P2WPKH based accounts](/using-wasabi/BI
 ### Private Key
 
 A private key is a large number that was chosen at random, it is a very secure password that must be kept secret.
-With knowledge of this number, anyone can easily compute the public key, and a signature over a message.
+With knowledge of this number, anyone can easily compute the public key, and a signature over any message.
 It can also be used to decrypt a message that was encrypted to the public key corresponding to the private key.
 In Bitcoin, a signature over a valid transaction message gives the right to spend a coin, thus knowledge of the private key corresponds to ownership of the bitcoin.
 Read more: [Bitcoin private keys](/using-wasabi/Receive.html#bitcoin-public-keys-and-addresses)
