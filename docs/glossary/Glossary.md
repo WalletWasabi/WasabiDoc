@@ -122,7 +122,7 @@ Read more: [Wasabi Wallet under the hood](/building-wasabi/TechnicalOverview.md#
 ### Timechain
 
 The timechain is the one chain of valid Bitcoin blocks with the most accumulated proof of work.
-It is an append-only data structure with new blocks being added on average every 10 minutes.
+It is an append-only data structure with new blocks being added on average every 10 minutes, thus some call it blockchain.
 Because of its uniquely verifiable and global consensus, it is a revolutionary standard for time.
 :::
 
