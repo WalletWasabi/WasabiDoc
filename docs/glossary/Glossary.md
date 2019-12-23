@@ -47,7 +47,7 @@ Read more: [Transaction surveillance companies attempting to destroy fungibility
 
 :::details
 ### Hardware Wallet (HWW)
-A hardware wallet is a special type of Bitcoin wallet which generates and stores the user's private keys in a tailor made hardware device.
+A hardware wallet is a special type of Bitcoin wallet which generates and stores the user's private keys on a dedicated hardware device.
 Read more: [Hardware Wallet FAQs](/FAQ/FAQ-UseWasabi.md#hardware-wallet)
 :::
 
