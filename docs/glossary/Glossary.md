@@ -35,7 +35,7 @@ Read more: [Cold Wasabi Protocol](/using-wasabi/ColdWasabi.md)
 
 A Bitcoin block is only valid if its hash is below a certain difficulty target.
 Every 2016 blocks, the difficulty target is adjusted upwards [if hashing power has decreased] or downwards [if hashing power has increased].
-This ensures that regardless how much hashing power is invested into mining blocks, on average a new block is found every 10 minutes.
+This ensures that regardless of how much hashing power is invested into mining blocks, on average a new block is found every 10 minutes.
 :::
 
 :::details
