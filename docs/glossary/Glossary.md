@@ -54,7 +54,7 @@ Read more: [Hardware Wallet FAQs](/FAQ/FAQ-UseWasabi.md#hardware-wallet)
 :::details
 ### Hash
 
-A cryptographic hash function takes any input of arbitrary size [the message] and computes a value of fixed size that is unique to the input.
+A cryptographic hash function takes any input of arbitrary size [the message] and computes a value of fixed size that is unique to the input, which is called a hash or a digest.
 If one bit of the input changes, the output will be completely different [avalanche effect].
 And there are no two messages that result in the same hash [collision resistance].
 The only way to get any given input, is by computing all possible inputs, it is a one-way function [pre-image resistance].
