@@ -101,7 +101,7 @@ Read more: [BIP 84 derivation scheme for P2WPKH based accounts](/using-wasabi/BI
 
 One of the requirements for a Bitcoin block to be valid is its hash should be below a certain difficulty target.
 In order to create a valid block, a miner must repeatedly hash a candidate block with a changing nonce until by sheer luck he finds a hash with low value.
-By providing this pre-image block and hash, anyone can verify the amount of computational energy that a miner on average should have invested in order to find this block.
+By providing this pre-image block, anyone can verify the amount of computational energy that a miner on average should have invested in order to find this block.
 :::
 
 :::details
