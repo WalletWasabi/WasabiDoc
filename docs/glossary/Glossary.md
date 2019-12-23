@@ -99,7 +99,7 @@ Read more: [BIP 84 derivation scheme for P2WPKH based accounts](/using-wasabi/BI
 :::details
 ### Public Key
 
-A public key is calculated by multiplying the private key to the generator point of an elliptical curve.
+A public key is calculated by multiplying the private key to the generator point of an elliptic curve.
 Given only the public key, the private key cannot be calculated. 
 Anyone can encrypt a message using a public key.
 This cyphertext message can only be decrypted through the related private key.
