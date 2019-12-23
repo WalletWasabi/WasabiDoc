@@ -332,6 +332,14 @@ Similarly, Tumbler is the synonym of 'Mixer'.
 :::
 
 :::details
+### Transaction Surveillance Company
+
+A transaction surveillance company is one which attempts to spy on all Bitcoin users.
+Their business model is usually to sell the data to any government, corporation or individual willing to pay for their services.
+Read more: [Transaction Surveillance Companies](/why-wasabi/TransactionSurveillanceCompanies.md)
+:::
+
+:::details
 ### #twoweeks
 
 The #twoweeks is a fun inside joke often used in the Wasabi documentation and, more generally, in the Internet community.
