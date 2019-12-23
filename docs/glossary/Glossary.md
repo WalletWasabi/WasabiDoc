@@ -52,6 +52,12 @@ Read more: [Hardware Wallet FAQs](/FAQ/FAQ-UseWasabi.md#hardware-wallet)
 :::
 
 :::details
+### Input
+
+Input, transaction input, or TxIn is an input in a Bitcoin transaction which contains two fields: a unique transaction hash and an index number, which references one utxo of a previous transaction which is spent in this transaction.
+:::
+
+:::details
 ### Lightning Network (LN)
 
 Lightning Network is a proposed implementation of Hashed Timelock Contracts (HTLCs) with bi-directional payment channels which allows payments to be securely routed across multiple peer-to-peer payment channels.
@@ -77,7 +83,7 @@ Read more: [Can I generate a multi signature script?](/FAQ/FAQ-UseWasabi.md#can-
 :::details
 ### Output
 
-Output, transaction output, or TxOut is an output in a transaction which contains two fields: a value field for transferring zero or more satoshis and a pubkey script for indicating what conditions must be fulfilled for those satoshis to be further spent.
+Output, transaction output, or TxOut is an output in a Bitcoin transaction which contains two fields: a value field for transferring zero or more satoshis and a pubkey script for indicating what conditions must be fulfilled for those satoshis to be further spent.
 :::
 
 :::details
@@ -143,6 +149,15 @@ Read more: [What is the anonimity set?](/FAQ/FAQ-UseWasabi.md#what-is-the-anonym
 :::
 
 :::details
+### Block filters
+
+A filter representing a compact list of addresses in one block.
+Wasabi checks locally if any block filter contains transactions with addresses of the wallet.
+No public keys are sent to any third party server, thus it is very private.
+Read more: [BIP 158: Compact Block Filters for Light Clients](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients)
+:::
+
+:::details
 ### Blockchain Analysis
 
 Blockchain analysis is used by transaction surveillance companies to follow the transaction history of coins.
@@ -154,6 +169,7 @@ Read more: [Blockchain Analysis](/why-wasabi/TransactionSurveillanceCompanies.md
 ### Bloom Filter
 
 A filter used primarily by SPV clients to request only block headers and merkle proofs of a given transaction from full nodes.
+This is very bad for privacy, as third party servers learn about which addresses you are interested in.
 Read more: [BIP 37: Connection Bloom Filtering](/using-wasabi/BIPs.md#bip-37-connection-bloom-filtering)
 :::
 
@@ -163,6 +179,13 @@ Read more: [BIP 37: Connection Bloom Filtering](/using-wasabi/BIPs.md#bip-37-con
 Many Bitcoin transactions have change outputs.
 It would be a serious privacy leak if the change address can be somehow found, as it would link the ownership of the (now spent) inputs with a new output.
 Read more: [Change coins](/using-wasabi/ChangeCoins.md)
+:::
+
+:::details
+### Chaumian CoinJoin
+
+A Chaumian CoinJoin is a special type of CoinJoin that utilizes Chaumian [or Schnorr] blind signatures to prevent the central coordinator from spying on the linkage between inputs and outputs.
+Read more: [Use of blind signatures in CoinJoin](/using-wasabi/CoinJoin.md#zerolink-protocol-step-by-step)
 :::
 
 :::details
@@ -305,4 +328,13 @@ Read more: [Technical Overview of Wasabi Wallet](/building-wasabi/TechnicalOverv
 ### Wasabika
 
 Wasabikas are essentially builders and users of Wasabi in general.
+:::
+
+:::details
+### ZeroLink
+
+ZeroLink is a framework to holistically design a privacy and fungibility setup for Bitcoin.
+This encompasses more than just a single CoinJoin transaction, but also includes network level privacy defense against third party spying.
+
+Read more: [ZeroLink: the Bitcoin Fungibility Framework](/using-wasabi/CoinJoin.md#zerolink-protocol-step-by-step)
 :::
