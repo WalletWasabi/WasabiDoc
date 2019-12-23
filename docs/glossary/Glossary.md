@@ -155,7 +155,7 @@ Read more: [BIP 158: Compact Block Filters for Light Clients](/using-wasabi/BIPs
 ### Bloom Filter
 
 A filter used primarily by SPV clients to request only block headers and merkle proofs of a given transaction from full nodes.
-This is very bad for privacy, as a third party learns about which addresses you are interested in.
+This is very bad for privacy, as third party servers learn about which addresses you are interested in.
 Read more: [BIP 37: Connection Bloom Filtering](/using-wasabi/BIPs.md#bip-37-connection-bloom-filtering)
 :::
 
