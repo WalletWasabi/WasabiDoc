@@ -61,6 +61,13 @@ Read more: [Hardware Wallet FAQs](/FAQ/FAQ-UseWasabi.md#hardware-wallet)
 :::
 
 :::details
+### Hot Wallet
+
+A hot wallet is a software wallet that runs on a computer which is connected to the Internet.
+Wasabi is a hot wallet by default.
+:::
+
+:::details
 ### Input
 
 Input, transaction input, or TxIn is an input in a Bitcoin transaction which contains two fields: a unique transaction hash and an index number, which references one utxo of a previous transaction which is spent in this transaction.
