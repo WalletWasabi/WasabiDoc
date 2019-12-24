@@ -39,7 +39,7 @@ Lastly, understand that if you lose your password, it becomes much harder (if no
 
 ## 4. Practice good labeling AND try to never reuse addresses
 
-Each time you receive coins, you will be asked to create a label.
+Each time you receive coins, you will be asked to create a label with the involved parties of the transaction.
 This label is only for you and is stored exclusively on your device.
 Wasabi has strong coin control features, and as you continue to use the wallet, you can see how known are your coins, which is possible only if you practice good labeling.
 

@@ -264,7 +264,7 @@ Every time a coin is received, the address is removed from the GUI so that you a
 
 You can generate a new bech32 address in the `Receive` tab of Wasabi Wallet.
 First you must set a label for it, so that you later know who has sent you bitcoin to this address.
-Be precise in the reason for the payment, labeling is an important part of good [coin control](/FAQ/FAQ-UseWasabi.md#why-is-coin-control-so-important) privacy best practices.
+Be precise in the reason for the payment, labeling the involved parties is an important part of good [coin control](/FAQ/FAQ-UseWasabi.md#why-is-coin-control-so-important) privacy best practices.
 Then you can click on `Generate` which will now show you the address, and immediately copy it to the clipboard.
 After a coin has been sent to this address, it is removed from the GUI, this is a good feature to help protect you against [address reuse](/FAQ/FAQ-UseWasabi.md#why-is-it-bad-to-re-use-addresses).
 
@@ -280,7 +280,7 @@ When you import the wallet file into a new Wasabi client, then it will use this 
 
 Bitcoin addresses look like cyphertext, they are not easily remembered and it's not clear how they were used previously.
 When you do not label all your addresses, there is no meta-data for you to understand the context of their coins.
-Thus receiving addresses and sending transactions that generate a change coin should be carefully labeled.
+Thus receiving addresses and sending transactions that generate a change coin should be carefully labeled with the involved parties who know about this.
 This helps you know where your coins came from so that you can judge whether there are privacy concerns when sending a specific coin to a specific receiver.
 
 ![](/ReceiveLabelingRequired.png)
@@ -307,7 +307,7 @@ This is useful for when you have generated a receiving address with a specific l
 Take care with whom you have shared this address, because if you send it to several people, they might all send many coins to the same address.
 This is very bad for your privacy because of [address reuse](/using-wasabi/AddressReuse.md), and it confuses you with the labeling of each unique coin.
 
-![](/ReceiveAddressMenu.png)
+![](/ReceiveAddressDropDownMenu.png)
 :::
 
 :::details
@@ -321,7 +321,7 @@ To date there is no possibility to change the label of an address after it has s
 
 Yes.
 Whomever you send your address, he knows that this address, and any coin sent to it, belongs to you.
-Thus it is important to have labeled receiving addresses, so that you know which address is for what purpose.
+Thus it is important to have labeled receiving addresses, so that you know which address is known by whom.
 It is important that you avoid sending the same address to several different individuals.
 There is a risk that both of them send coins to this same destination, thus unnecessarily linking the payments.
 
@@ -573,15 +573,15 @@ Wasabi will implement the [Dandelion](/using-wasabi/BIPs.md#bip-156-dandelion-pr
 ### What is the cluster history?
 
 Clusters are a property of a Bitcoin wallet with strong coin-control and good labeling.
-When you use Wasabi, you must label every coin that you receive.
+When you use Wasabi, you must label every coin that you receive with the involved parties.
 The reason why this is important, is that your "wallet" is really just a collection of coins (similar to a physical wallet, not to a bank account).
 When you receive coins from somewhere to a labeled address, Wasabi will store the label locally on your device, for example:
 
-`----> 0.65 BTC (From my Boss Bob)`
+`----> 0.65 BTC (Bob)`
 
 Now if you receive money from Alice who uses an exchange, then your label would look like this:
 
-`----> 2.1 BTC (From Alice, from exchange)`
+`----> 2.1 BTC (Alice, exchange)`
 
 Now here is where things can be a bit tricky for folks unfamiliar with Bitcoin.
 Suppose you wanted to send all of your coins to a hardware wallet.
@@ -590,8 +590,8 @@ So you think to yourself "What's the harm in sending my money to one address?"
 This is how the transaction will look like:
 
 ```
-0.65 BTC (From my Boss Bob)     ----->  2.75 BTC (From my Boss Bob & from exchange)
-2.1 BTC (Alice, from exchange)
+0.65 BTC (Bob)           ----->  2.75 BTC (Bob, Alice, exchange)
+2.1 BTC (Alice,exchange)
 ```
 
 The problem with this transaction, is your boss knows you, and knows that the 0.65 BTC is in your possession, and can monitor your transaction behavior.
@@ -677,29 +677,36 @@ But it is important to note that many users provide 2 inputs (UTXOs) or even som
 :::
 Excellent, this is the Cost-per-participant of an equal-output CoinJoin.
 Now let's consider the variable miner fees in sat/vbyte that we might pay to get the CoinJoin mined within a reasonable time (<24 hours):
+
 :::tip
 Minimum: 2 sat/vbyte: 336 satoshis per participant
 Average: 10 sat/vbyte: 1,680 satoshis per participant
 High: 100 sat/vbyte: 16,800 satoshis per participant
 :::
+
 So now let's examine how much (as a percentage) users have to pay for different denominations of equal output coinjoins.
 We will take the example of 1 BTC, 0.1 BTC (current setting) and 0.01 BTC (proposed):
 First 1 BTC:
+
 :::tip
 Minimum: 2 sat/vbyte: 336 satoshis per participant (0.000336 %)
 Average: 10 sat/vbyte: 1,680 satoshis per participant (0.00168 %)
 High: 100 sat/vbyte: 16,800 satoshis per participant (0.0168 %)
 :::
+
 Notice that for such a large amount, the miner, even in extreme cases only takes <0.02% (note this is not 2%!).
 Let's observe for 0.1 BTC:
+
 :::tip
 Minimum: 2 sat/vbyte: 336 satoshis per participant (0.00336 %)
 Average: 10 sat/vbyte: 1,680 satoshis per participant (0.0168 %)
 High: 100 sat/vbyte: 16,800 satoshis per participant (0.168 %)
 :::
+
 Here, we already observe that in some extreme cases, the miner is earning almost 0.2%!
 Recall that Wasabi has a coordinator fee that is capped at 0.3%, so in these extreme cases the total fee paid by the user (you) is closer to 0.5%.
 Now we proceed to go to a smaller denominaton, 0.01 BTC:
+
 :::tip
 Minimum: 2 sat/vbyte: 336 satoshis per participant (0.0336 %)
 Average: 10 sat/vbyte: 1,680 satoshis per participant (0.168 %)
@@ -1029,7 +1036,7 @@ Now select the Wasabi skeleton json-file from the MicroSD card, if this fails yo
 :::details
 ### How can I generate a receiving address of my hardware wallet?
 
-In Wasabi Wallet you load your previously imported wallet (from Wasabi skeleton, or USB detection) and go to the `Receive` tab, here you enter a label for the incoming transaction and click `Generate Receive Address`.
+In Wasabi Wallet you load your previously imported wallet (from Wasabi skeleton, or USB detection) and go to the `Receive` tab, here you enter a label for the involved parties of the incoming transaction and click `Generate Receive Address`.
 In the tab below the newly generated receive address can be viewed / copied.
 :::
 
