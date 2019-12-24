@@ -591,7 +591,7 @@ This is how the transaction will look like:
 
 ```
 0.65 BTC (Bob)           ----->  2.75 BTC (Bob, Alice, exchange)
-2.1 BTC (Alice,exchange)
+2.1 BTC (Alice, exchange)
 ```
 
 The problem with this transaction, is your boss knows you, and knows that the 0.65 BTC is in your possession, and can monitor your transaction behavior.
