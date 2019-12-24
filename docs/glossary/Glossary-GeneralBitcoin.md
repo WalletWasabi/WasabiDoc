@@ -1,6 +1,6 @@
 ---
 {
-  "title": "Glossary",
+  "title": "Bitcoin in general",
   "description": "Explanations of common words used in Wasabi and regarding Bitcoin privacy with links to the docs for more details. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
 }
 ---
