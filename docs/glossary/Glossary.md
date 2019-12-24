@@ -146,6 +146,16 @@ Read more: [Bitcoin private keys](/using-wasabi/Receive.html#bitcoin-public-keys
 :::
 
 :::details
+### Private Key
+
+A private key is a large number that must be chosen at random, it is thus a very secure password and should be kept secret.
+With knowledge of this number, anyone can easily compute the public key, and a signature over any message.
+It can also be used to decrypt any message that was encrypted to the public key corresponding to the private key.
+In Bitcoin, a signature over a valid transaction message gives the right to spend a coin, thus knowledge of the private key corresponds to ownership of the bitcoin.
+Read more: [Bitcoin private keys](/using-wasabi/Receive.html#bitcoin-public-keys-and-addresses)
+:::
+
+:::details
 ### Proof of Work (POW)
 
 One of the requirements for a Bitcoin block to be valid is its hash should be below a certain difficulty target.
