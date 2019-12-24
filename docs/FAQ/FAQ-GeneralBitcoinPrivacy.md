@@ -20,7 +20,7 @@ What websites have you visited yesterday?
 It's not that I have nothing to hide, it's that I have nothing to share.
 :::
 
-There are many tasks in everyday life that are simply non of your business.
+There are many tasks in everyday life that are simply none of your business.
 Knowledge you choose not to share with others, things you only tell one individual, actions that you do while nobody is watching.
 How much money you earn, and where you spend it, is only your business, and of no concern to most other individuals.
 ::::
@@ -35,7 +35,7 @@ This adds friction and transactional costs and makes Bitcoin less valuable as a 
 :::
 
 :::details
-### How is financial privacy is an essential for entrepreneurs?
+### How is financial privacy essential for entrepreneurs?
 
 If you run a business, you cannot effectively set prices if your suppliers and customers can see all your transactions against your will.
 You cannot compete effectively if your competition is tracking your sales.
@@ -46,7 +46,7 @@ Individually your informational leverage is lost in your private dealings if you
 ### How is financial privacy essential for personal safety?
 
 If thieves can see your spending, income, and holdings, they can use that information to target and exploit you.
-Without privacy malicious parties have more ability to steal your identity, snatch your large purchases off your doorstep, or impersonate businesses you transact with towards you... they can tell exactly how much to try to scam you for.
+Without privacy, malicious parties have more ability to steal your identity, snatch your large purchases off your doorstep, or impersonate businesses you transact with towards you... they can tell exactly how much to try to scam you for.
 :::
 
 :::details
@@ -99,9 +99,9 @@ Your Bitcoin wallet will handle this process automatically, but it is important 
 The owner of the original Bitcoin doesn’t know what you did with the money, but they can see the amounts involved.
 They can see two transactions on your account: one for 0.4 bitcoin and one for 0.6 bitcoin.
 They cannot see which was the purchase and which is the “change,” but it’s a 50% guess.
-The next time you make a transaction, it’s a 25% guess, and so on.
+The next time you make a transaction, it’s a 25% guess and so on.
 
-This is why making lots of transactions, increases your anonymity in the Bitcoin network (as long as you [don't reuse addresses](/using-wasabi/AddressReuse.md)!).
+This is why making lots of transactions increases your anonymity in the Bitcoin network (as long as you [don't reuse addresses](/using-wasabi/AddressReuse.md)!).
 
 Similarly, if you receive 0.5 bitcoin but want to spend 1 bitcoin, you need to own additional Bitcoin addresses with a combined value of at least 0.5 bitcoin in them.
 Again it’s a 50% guess, but now you have one extra publicly visible Bitcoin address.
@@ -125,11 +125,11 @@ Sufficient privacy is an essential prerequisite for a viable digital currency.
 ### Why is it important to run a full node?
 
 :::tip
-not your node ~ not your rules
+Not your node ~ not your rules
 :::
 
-When you download and install [bitcoind](https://github.com/bitcoin/bitcoin) you define the precise rules of your monetary system.
-Then you call out to other nodes on the internet, and only connect to the peers who have agreed to play by the same rules.
+When you download and install [bitcoind](https://github.com/bitcoin/bitcoin), you define the precise rules of your monetary system.
+Then you call out to other nodes on the internet and only connect to the peers who have agreed to play by the same rules.
 All those who break your own rules, you simply disconnect and ignore.
 Your full node defines, verifies and enforces the sound money you use to store your value.
 ::::
@@ -140,8 +140,8 @@ Your full node defines, verifies and enforces the sound money you use to store y
 When you run your own full node, then on your local computer you can verify exactly if the bitcoin you receive are actually valid.
 When you do not verify this for yourself, then you need to ask another trusted third party how much money you have.
 Regardless how you ask this other server, there is now more metadata available to potentially link your coins to your identity.
-There are bad ways to communicate, like querying a block explorer over clearnet, and good ways to communicate, like using [BIP 158](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients) block filters over tor.
-But regardless, running your own full node means that you don't need to communicate with anyone about your specific coins, and this is strictly better.
+There are bad ways to communicate, like querying a block explorer over clearnet, and good ways to communicate, like using [BIP 158](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients) block filters over Tor.
+But regardless, running your own full node means that you don't need to communicate with anyone about your specific coins and this is strictly better.
 :::
 
 :::details
@@ -154,6 +154,7 @@ There are also other node implementations different from Bitcoin Core, such as [
 
 Instead, if you prefer to use some dedicated hardware solutions, these are some of the most reliable projects:
 - [Raspiblitz](https://github.com/rootzoll/raspiblitz), a DIY project based on the Raspberry platform
+- [RaspiBolt](https://stadicus.github.io/RaspiBolt/), another Raspberry DIY node
 - [Nodl](https://www.nodl.it/), works out of the box and runs on a powerful Rockchip CPU
 - [myNode](https://mynodebtc.com/), a DIY project with optional paid versions
 - [Casa](https://keys.casa/lightning-bitcoin-node/), works out of the box on the Raspberry platform
@@ -164,15 +165,15 @@ Instead, if you prefer to use some dedicated hardware solutions, these are some 
 
 Addresses being used more than once is very damaging to privacy because that links together more blockchain transactions with proof that they were created by the same entity.
 The most private and secure way to use bitcoin is to send a brand new address to each person who pays you.
-After the received coins have been spent the address should never be used again.
+After the received coins have been spent, the address should never be used again.
 Also, a brand new bitcoin address should be demanded when sending bitcoin.
-Wasabi has a user interface which discourages address reuse, by removing from the GUI ana address which has received a coin.
+Wasabi has a user interface which discourages address reuse by removing from the GUI addresses which have received a coin.
 
 It has been argued that the phrase "bitcoin address" was a bad name for this object because it implies it can be reused like an email address.
 A better name would be something like "bitcoin invoice".
 
 Bitcoin isn't anonymous but pseudonymous, and the pseudonyms are bitcoin addresses.
-Avoiding address reuse is like throwing away a pseudonym after its been used.
+Avoiding address reuse is like throwing away a pseudonym after it has been used.
 :::
 
 :::details
@@ -189,7 +190,7 @@ You can read more about CoinJoin Sudoku [here](https://www.coinjoinsudoku.com/ad
 ### How does Tor protect my network-level privacy?
 
 When you make a Bitcoin transaction, you are essentially creating a message on your phone or computer and sending it to the Bitcoin network.
-Someone operating a large number of nodes in the Bitcoin network might be able to match some of your transactions to your IP address, then deanonymize your stack of bitcoin.
+Someone operating a large number of nodes on the Bitcoin network might be able to match some of your transactions to your IP address, then deanonymize your stack of bitcoin.
 
 It is relatively easy to avoid this on a computer by relaying all transactions through the Tor network.
 Wasabi routes all traffic via Tor’s SOCKS5 proxy, by default.
@@ -202,7 +203,7 @@ You can also configure many cloud storage providers in this way.
 :::
 
 ::::details
-### My country/ISP is blocking/censoring TOR, how can I use Wasabi with TOR bridges?
+### My country/ISP is blocking/censoring Tor, how can I use Wasabi with Tor bridges?
 
 Tor bridges, also called Tor bridge relays, are alternative entry points to the Tor network that are not all listed publicly.
 If you suspect your access to the Tor network is being blocked, you may want to use bridges.
