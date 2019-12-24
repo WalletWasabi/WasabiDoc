@@ -90,6 +90,10 @@ module.exports = {
     docsDir: "docs",
     editLinks: true,
     lastUpdated: 'Last Updated',
+    algolia: {
+      indexName: 'wasabiwallet',
+      apiKey: 'c9d9b7688e0f9e6d0ed534655321a424'
+    },
     nav: [
       {
         text: "Why Wasabi",
