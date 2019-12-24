@@ -21,6 +21,14 @@ Read more: [Wasabi Supported BIPs](/using-wasabi/BIPs.md)
 :::
 
 :::details
+### Blockchain
+
+The blockchain is the one chain of valid Bitcoin blocks with the most accumulated proof of work.
+It is an append-only data structure with new blocks being added on average every 10 minutes.
+Because of its uniquely verifiable and global consensus, it is a revolutionary standard for time, thus some call it timechain.
+:::
+
+:::details
 ### Cold Storage
 
 Refers to keeping a reserve of important Bitcoin secrets offline.
@@ -116,14 +124,6 @@ Read more: [How can I display the fee in satoshi per byte?](/FAQ/FAQ-UseWasabi.m
 SPV is a method for verifying particular transactions were included in a block without downloading the entire block.
 The method is used by some lightweight Bitcoin clients.
 Read more: [Wasabi Wallet under the hood](/building-wasabi/TechnicalOverview.md#wasabi-wallet-under-the-hood)
-:::
-
-:::details
-### Timechain
-
-The timechain is the one chain of valid Bitcoin blocks with the most accumulated proof of work.
-It is an append-only data structure with new blocks being added on average every 10 minutes, thus some call it blockchain.
-Because of its uniquely verifiable and global consensus, it is a revolutionary standard for time.
 :::
 
 :::details
