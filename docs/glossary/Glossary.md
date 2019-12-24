@@ -13,6 +13,15 @@ Every item contains a link to the respective full document for more details.
 ## Bitcoin in general
 
 :::details
+### Address
+
+A Bitcoin invoice address commits to a public key or script which defines who can spend the coin.
+It is specified in the output of a transaction, and it should only be used once.
+Wasabi uses the bech32 format to encode native segregated witness addresses.
+Read more: [Bitcoin addresses](/using-wasabi/Receive.md#bitcoin-public-keys-and-addresses)
+:::
+
+:::details
 ### Bitcoin Improvement Proposal (BIP)
 
 Bitcoin Improvement Proposal.
@@ -21,11 +30,26 @@ Read more: [Wasabi Supported BIPs](/using-wasabi/BIPs.md)
 :::
 
 :::details
+### Block
+
+A block is a batch of valid Bitcoin transactions and its hash must be a value below a certain difficulty target to prove the work of the miner.
+Each block references the hash of the previous block, thus creating a hash chain of blocks.
+On average a new block is mined every 10 minutes.
+:::
+
+:::details
 ### Blockchain
 
 The blockchain is the one chain of valid Bitcoin blocks with the most accumulated proof of work.
 It is an append-only data structure with new blocks being added on average every 10 minutes.
 Because of its uniquely verifiable and global consensus, it is a revolutionary standard for time, thus some call it timechain.
+:::
+
+:::details
+### Change
+
+In a spending transaction where the provided input coins are larger than the value sent to the destination address, then the leftover change is sent to a new address of the same wallet.
+Read more: [Change coins](/using-wasabi/ChangeCoins.md)
 :::
 
 :::details
@@ -39,7 +63,7 @@ Read more: [Cold Wasabi Protocol](/using-wasabi/ColdWasabi.md)
 :::
 
 :::details
-### Fees
+### Transaction Fees
 
 The sender of a transaction includes a fee to the network for processing the requested transaction.
 Most transactions require a minimum fee.
@@ -54,9 +78,32 @@ Read more: [Transaction surveillance companies attempting to destroy fungibility
 :::
 
 :::details
-### Hardware Wallet (HW)
-A hardware wallet is a special type of Bitcoin wallet which generates and stores the user's private keys in a tailor made hardware device.
+### Hardware Wallet (HWW)
+A hardware wallet is a special type of Bitcoin wallet which generates and stores the user's private keys on a dedicated hardware device.
 Read more: [Hardware Wallet FAQs](/FAQ/FAQ-UseWasabi.md#hardware-wallet)
+:::
+
+:::details
+### Hash
+
+A cryptographic hash function takes any input of arbitrary size [the message] and computes a value of fixed size that is unique to the input, which is called a hash or a digest.
+If one bit of the input changes, the output will be completely different [avalanche effect].
+And there are no two messages that result in the same hash [collision resistance].
+The only way to get any given input, is by computing all possible inputs, it is a one-way function [pre-image resistance].
+Bitcoin uses the SHA256 in many parts of the protocol.
+:::
+
+:::details
+### Hot Wallet
+
+A hot wallet is a software wallet that runs on a computer which is connected to the Internet.
+Wasabi is a hot wallet by default.
+:::
+
+:::details
+### Input
+
+Input, transaction input, or TxIn is an input in a Bitcoin transaction which contains two fields: a unique transaction hash and an index number, which references one utxo of a previous transaction which is spent in this transaction.
 :::
 
 :::details
@@ -85,7 +132,7 @@ Read more: [Can I generate a multi signature script?](/FAQ/FAQ-UseWasabi.md#can-
 :::details
 ### Output
 
-Output, transaction output, or TxOut is an output in a transaction which contains two fields: a value field for transferring zero or more satoshis and a pubkey script for indicating what conditions must be fulfilled for those satoshis to be further spent.
+Output, transaction output, or TxOut is an output in a Bitcoin transaction which contains two fields: a value field for transferring zero or more satoshis and a pubkey script for indicating what conditions must be fulfilled for those satoshis to be further spent.
 :::
 
 :::details
@@ -105,6 +152,36 @@ Read more: [BIP 84 derivation scheme for P2WPKH based accounts](/using-wasabi/BI
 :::
 
 :::details
+### Public Key
+
+A public key is calculated by multiplying the private key to the generator point of an elliptic curve.
+Given only the public key, the private key cannot be calculated.
+Anyone can encrypt a message using a public key.
+This encrypted message (cyphertext) can only be decrypted through the related private key.
+Given a public key and a signature over a message, anyone can verify that the signer had the private key and the message.
+In Bitcoin, the public key is the pseudonymous identity of the owner of a coin.
+Read more: [Bitcoin private keys](/using-wasabi/Receive.html#bitcoin-public-keys-and-addresses)
+:::
+
+:::details
+### Private Key
+
+A private key is a large number that must be chosen at random, it is thus a very secure password and should be kept secret.
+With knowledge of this number, anyone can easily compute the public key, and a signature over any message.
+It can also be used to decrypt any message that was encrypted to the public key corresponding to the private key.
+In Bitcoin, a signature over a valid transaction message gives the right to spend a coin, thus knowledge of the private key corresponds to ownership of the bitcoin.
+Read more: [Bitcoin private keys](/using-wasabi/Receive.html#bitcoin-public-keys-and-addresses)
+:::
+
+:::details
+### Proof of Work (POW)
+
+One of the requirements for a Bitcoin block to be valid is its hash should be below a certain difficulty target.
+In order to create a valid block, a miner must repeatedly hash a candidate block with a changing nonce until by sheer luck he finds a hash with low value.
+By providing this pre-image block, anyone can verify the amount of computational energy that a miner on average should have invested in order to find this block, and this is what is known as Proof of Work.
+:::
+
+:::details
 ### Replace by Fee (RBF)
 
 Replacing one version of an unconfirmed transaction with a different version of the transaction that pays a higher transaction fee.
@@ -116,6 +193,14 @@ Replacing one version of an unconfirmed transaction with a different version of 
 A satoshi is the smallest denomination of bitcoin that can be recorded on the blockchain.
 It is the equivalent of 0.00000001 bitcoin and is named after the creator of Bitcoin, Satoshi Nakamoto.
 Read more: [How can I display the fee in satoshi per byte?](/FAQ/FAQ-UseWasabi.md#how-can-i-display-the-fee-in-satoshis-per-byte)
+:::
+
+:::details
+### SegWit
+
+Segregated Witness is a structure where the witness [signature or redeem script] is stored separately from the transaction Merkle tree.
+This is separated because the witness contains only data concerning transaction validity, but not about transaction effect.
+Read more: [Why Wasabi uses only SegWit](/FAQ/FAQ-UseWasabi.md#why-does-wasabi-only-use-segwit-bech32-addresses)
 :::
 
 :::details
@@ -137,7 +222,7 @@ Read more: [How can I select UTXOs for CoinJoin?](/FAQ/FAQ-UseWasabi.md#how-can-
 ## Privacy and Wasabi
 
 :::details
-### Address reuse
+### Address Reuse
 
 Address reuse refers to the use of the same address for multiple transactions, this is very bad for privacy.
 Read more: [Address reuse](/using-wasabi/AddressReuse.md)
@@ -151,18 +236,43 @@ Read more: [What is the anonimity set?](/FAQ/FAQ-UseWasabi.md#what-is-the-anonym
 :::
 
 :::details
+### Block filters
+
+A filter representing a compact list of addresses in one block.
+Wasabi checks locally if any block filter contains transactions with addresses of the wallet.
+No public keys are sent to any third party server, thus it is very private.
+Read more: [BIP 158: Compact Block Filters for Light Clients](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients)
+:::
+
+:::details
+### Blockchain Analysis
+
+Blockchain analysis is used by transaction surveillance companies to follow the transaction history of coins.
+Techniques like the common-input-ownership heuristic or change detection are used to create a cluster of transactions belonging to one user.
+Read more: [Blockchain Analysis](/why-wasabi/TransactionSurveillanceCompanies.md#blockchain-analysis)
+:::
+
+:::details
 ### Bloom Filter
 
 A filter used primarily by SPV clients to request only block headers and merkle proofs of a given transaction from full nodes.
+This is very bad for privacy, as third party servers learn about which addresses you are interested in.
 Read more: [BIP 37: Connection Bloom Filtering](/using-wasabi/BIPs.md#bip-37-connection-bloom-filtering)
 :::
 
 :::details
-### Change address detection
+### Change Address Detection
 
 Many Bitcoin transactions have change outputs.
 It would be a serious privacy leak if the change address can be somehow found, as it would link the ownership of the (now spent) inputs with a new output.
 Read more: [Change coins](/using-wasabi/ChangeCoins.md)
+:::
+
+:::details
+### Chaumian CoinJoin
+
+A Chaumian CoinJoin is a special type of CoinJoin that utilizes Chaumian [or Schnorr] blind signatures to prevent the central coordinator from spying on the linkage between inputs and outputs.
+Read more: [Use of blind signatures in CoinJoin](/using-wasabi/CoinJoin.md#zerolink-protocol-step-by-step)
 :::
 
 :::details
@@ -196,7 +306,7 @@ Read more: [Coin Control Best Practices](/FAQ/FAQ-UseWasabi.md#coin-control-best
 :::
 
 :::details
-### Common-input-ownership heuristic
+### Common-Input-Ownership heuristic
 
 This is a heuristic or assumption which says that if a transaction has more than one input then all those inputs are owned by the same entity.
 Read more: [Wasabi Wallet under the hood](/building-wasabi/TechnicalOverview.md#wasabi-wallet-under-the-hood)
@@ -213,8 +323,7 @@ Read more: [Wasabi Wallet under the hood](/FAQ/FAQ-UseWasabi.md#how-does-my-wall
 ### Dust
 
 Dust is an UTXO that is uneconomical to spend.
-Also, small portions of bitcoin can lead to serious consequences about one's privacy.
-An example would be the so called `forced address reuse attack`.
+Also, small portions of bitcoin can lead to serious consequences for one's privacy, for example the so called `forced address reuse attack`.
 Read more: [What is the dust threshold](/FAQ/FAQ-UseWasabi.html#what-is-the-dust-threshold)
 :::
 
@@ -271,7 +380,7 @@ Read more: [Blockchain Analysis](/why-wasabi/TransactionSurveillanceCompanies.md
 :::
 
 :::details
-### The Onion Router (TOR)
+### The Onion Router (Tor)
 
 Tor (The Onion Router) is free and open-source software for enabling anonymous communication.
 It is widely used by Wasabi.
@@ -283,6 +392,14 @@ Read more: [How does Tor protect my network level privacy?](/FAQ/FAQ-GeneralBitc
 
 Tumbling is a synonym of 'Mixing'.
 Similarly, Tumbler is the synonym of 'Mixer'.
+:::
+
+:::details
+### Transaction Surveillance Company
+
+A transaction surveillance company is one which attempts to spy on all Bitcoin users.
+Their business model is usually to sell the data to any government, corporation or individual willing to pay for their services.
+Read more: [Transaction Surveillance Companies](/why-wasabi/TransactionSurveillanceCompanies.md)
 :::
 
 :::details
@@ -304,5 +421,14 @@ Read more: [Technical Overview of Wasabi Wallet](/building-wasabi/TechnicalOverv
 :::details
 ### Wasabika
 
-Wasabikas are essentially builders and users of Wasabi in general.
+Wasabikas are builders, users and supporters of Wasabi in general.
+:::
+
+:::details
+### ZeroLink
+
+ZeroLink is a framework to holistically design a privacy and fungibility setup for Bitcoin.
+This encompasses more than just a single CoinJoin transaction, but also includes network level privacy defense against third party spying.
+
+Read more: [ZeroLink: the Bitcoin Fungibility Framework](/using-wasabi/CoinJoin.md#zerolink-protocol-step-by-step)
 :::
