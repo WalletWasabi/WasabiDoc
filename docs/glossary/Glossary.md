@@ -13,11 +13,27 @@ Every item contains a link to the respective full document for more details.
 ## Bitcoin in general
 
 :::details
+### Address
+
+A Bitcoin invoice address commits to a public key or script which defines who can spend the coin.
+It is specified in the output of a transaction, and it should only be used once.
+Wasabi uses the bech32 format to encode native segregated witness addresses.
+Read more: [Bitcoin addresses](/using-wasabi/Receive.md#bitcoin-public-keys-and-addresses)
+:::
+
+:::details
 ### Bitcoin Improvement Proposal (BIP)
 
 Bitcoin Improvement Proposal.
 A design document for introducing features or information to Bitcoin.
 Read more: [Wasabi Supported BIPs](/using-wasabi/BIPs.md)
+:::
+
+:::details
+### Change
+
+In a spending transaction where the provided input coins are larger than the value sent to the destination address, then the leftover change is sent to a new address of the same wallet.
+Read more: [Change coins](/using-wasabi/ChangeCoins.md)
 :::
 
 :::details
@@ -52,6 +68,19 @@ Read more: [Hardware Wallet FAQs](/FAQ/FAQ-UseWasabi.md#hardware-wallet)
 :::
 
 :::details
+### Hot Wallet
+
+A hot wallet is a software wallet that runs on a computer which is connected to the Internet.
+Wasabi is a hot wallet by default.
+:::
+
+:::details
+### Input
+
+Input, transaction input, or TxIn is an input in a Bitcoin transaction which contains two fields: a unique transaction hash and an index number, which references one utxo of a previous transaction which is spent in this transaction.
+:::
+
+:::details
 ### Lightning Network (LN)
 
 Lightning Network is a proposed implementation of Hashed Timelock Contracts (HTLCs) with bi-directional payment channels which allows payments to be securely routed across multiple peer-to-peer payment channels.
@@ -77,7 +106,7 @@ Read more: [Can I generate a multi signature script?](/FAQ/FAQ-UseWasabi.md#can-
 :::details
 ### Output
 
-Output, transaction output, or TxOut is an output in a transaction which contains two fields: a value field for transferring zero or more satoshis and a pubkey script for indicating what conditions must be fulfilled for those satoshis to be further spent.
+Output, transaction output, or TxOut is an output in a Bitcoin transaction which contains two fields: a value field for transferring zero or more satoshis and a pubkey script for indicating what conditions must be fulfilled for those satoshis to be further spent.
 :::
 
 :::details
@@ -94,6 +123,18 @@ Read more: [BIP 174 Partially Signed Bitcoin Transaction Format](https://github.
 The signature of a P2WPKH contains the same information as a Pay-to-Public-Key-Hash (P2PKH) spending, but is located in the witness field instead of the scriptSig field.
 The scriptPubKey is also modified.
 Read more: [BIP 84 derivation scheme for P2WPKH based accounts](/using-wasabi/BIPs.md#bip-84-derivation-scheme-for-p2wpkh-based-accounts)
+:::
+
+:::details
+### Public Key
+
+A public key is calculated by multiplying the private key to the generator point of an elliptic curve.
+Given only the public key, the private key cannot be calculated.
+Anyone can encrypt a message using a public key.
+This encrypted message (cyphertext) can only be decrypted through the related private key.
+Given a public key and a signature over a message, anyone can verify that the signer had the private key and the message.
+In Bitcoin, the public key is the pseudonymous identity of the owner of a coin.
+Read more: [Bitcoin private keys](/using-wasabi/Receive.html#bitcoin-public-keys-and-addresses)
 :::
 
 :::details
@@ -151,9 +192,27 @@ Read more: [What is the anonimity set?](/FAQ/FAQ-UseWasabi.md#what-is-the-anonym
 :::
 
 :::details
+### Block filters
+
+A filter representing a compact list of addresses in one block.
+Wasabi checks locally if any block filter contains transactions with addresses of the wallet.
+No public keys are sent to any third party server, thus it is very private.
+Read more: [BIP 158: Compact Block Filters for Light Clients](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients)
+:::
+
+:::details
+### Blockchain Analysis
+
+Blockchain analysis is used by transaction surveillance companies to follow the transaction history of coins.
+Techniques like the common-input-ownership heuristic or change detection are used to create a cluster of transactions belonging to one user.
+Read more: [Blockchain Analysis](/why-wasabi/TransactionSurveillanceCompanies.md#blockchain-analysis)
+:::
+
+:::details
 ### Bloom Filter
 
 A filter used primarily by SPV clients to request only block headers and merkle proofs of a given transaction from full nodes.
+This is very bad for privacy, as third party servers learn about which addresses you are interested in.
 Read more: [BIP 37: Connection Bloom Filtering](/using-wasabi/BIPs.md#bip-37-connection-bloom-filtering)
 :::
 
@@ -163,6 +222,13 @@ Read more: [BIP 37: Connection Bloom Filtering](/using-wasabi/BIPs.md#bip-37-con
 Many Bitcoin transactions have change outputs.
 It would be a serious privacy leak if the change address can be somehow found, as it would link the ownership of the (now spent) inputs with a new output.
 Read more: [Change coins](/using-wasabi/ChangeCoins.md)
+:::
+
+:::details
+### Chaumian CoinJoin
+
+A Chaumian CoinJoin is a special type of CoinJoin that utilizes Chaumian [or Schnorr] blind signatures to prevent the central coordinator from spying on the linkage between inputs and outputs.
+Read more: [Use of blind signatures in CoinJoin](/using-wasabi/CoinJoin.md#zerolink-protocol-step-by-step)
 :::
 
 :::details
@@ -286,6 +352,14 @@ Similarly, Tumbler is the synonym of 'Mixer'.
 :::
 
 :::details
+### Transaction Surveillance Company
+
+A transaction surveillance company is one which attempts to spy on all Bitcoin users.
+Their business model is usually to sell the data to any government, corporation or individual willing to pay for their services.
+Read more: [Transaction Surveillance Companies](/why-wasabi/TransactionSurveillanceCompanies.md)
+:::
+
+:::details
 ### #twoweeks
 
 The #twoweeks is a fun inside joke often used in the Wasabi documentation and, more generally, in the Internet community.
@@ -305,4 +379,13 @@ Read more: [Technical Overview of Wasabi Wallet](/building-wasabi/TechnicalOverv
 ### Wasabika
 
 Wasabikas are essentially builders and users of Wasabi in general.
+:::
+
+:::details
+### ZeroLink
+
+ZeroLink is a framework to holistically design a privacy and fungibility setup for Bitcoin.
+This encompasses more than just a single CoinJoin transaction, but also includes network level privacy defense against third party spying.
+
+Read more: [ZeroLink: the Bitcoin Fungibility Framework](/using-wasabi/CoinJoin.md#zerolink-protocol-step-by-step)
 :::
