@@ -38,6 +38,14 @@ On average a new block is mined every 10 minutes.
 :::
 
 :::details
+### Blockchain
+
+The blockchain is the one chain of valid Bitcoin blocks with the most accumulated proof of work.
+It is an append-only data structure with new blocks being added on average every 10 minutes.
+Because of its uniquely verifiable and global consensus, it is a revolutionary standard for time, thus some call it timechain.
+:::
+
+:::details
 ### Change
 
 In a spending transaction where the provided input coins are larger than the value sent to the destination address, then the leftover change is sent to a new address of the same wallet.
