@@ -30,6 +30,14 @@ Read more: [Wasabi Supported BIPs](/using-wasabi/BIPs.md)
 :::
 
 :::details
+### Block
+
+A block is a batch of valid Bitcoin transactions and its hash must be a value below a certain difficulty target to prove the work of the miner.
+Each block references the hash of the previous block, thus creating a hash chain of blocks.
+On average a new block is mined every 10 minutes.
+:::
+
+:::details
 ### Change
 
 In a spending transaction where the provided input coins are larger than the value sent to the destination address, then the leftover change is sent to a new address of the same wallet.
