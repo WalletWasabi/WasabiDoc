@@ -22,28 +22,11 @@ Read more: [What is the anonimity set?](/FAQ/FAQ-UseWasabi.md#what-is-the-anonym
 :::
 
 :::details
-### Block filters
-
-A filter representing a compact list of addresses in one block.
-Wasabi checks locally if any block filter contains transactions with addresses of the wallet.
-No public keys are sent to any third party server, thus it is very private.
-Read more: [BIP 158: Compact Block Filters for Light Clients](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients)
-:::
-
-:::details
 ### Blockchain Analysis
 
 Blockchain analysis is used by transaction surveillance companies to follow the transaction history of coins.
 Techniques like the common-input-ownership heuristic or change detection are used to create a cluster of transactions belonging to one user.
 Read more: [Blockchain Analysis](/why-wasabi/TransactionSurveillanceCompanies.md#blockchain-analysis)
-:::
-
-:::details
-### Bloom Filter
-
-A filter used primarily by SPV clients to request only block headers and merkle proofs of a given transaction from full nodes.
-This is very bad for privacy, as third party servers learn about which addresses you are interested in.
-Read more: [BIP 37: Connection Bloom Filtering](/using-wasabi/BIPs.md#bip-37-connection-bloom-filtering)
 :::
 
 :::details

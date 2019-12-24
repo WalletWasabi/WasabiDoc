@@ -1,6 +1,6 @@
 ---
 {
-  "title": "Bitcoin Glossary",
+  "title": "Glossary",
   "description": "Explanations of common words used in Wasabi and regarding Bitcoin privacy with links to the docs for more details. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
 }
 ---
@@ -22,6 +22,31 @@ Read more: [Bitcoin addresses](/using-wasabi/Receive.md#bitcoin-public-keys-and-
 Bitcoin Improvement Proposal.
 A design document for introducing features or information to Bitcoin.
 Read more: [Wasabi Supported BIPs](/using-wasabi/BIPs.md)
+:::
+
+:::details
+### Block
+
+A block is a batch of valid Bitcoin transactions and its hash must be a value below a certain difficulty target to prove the work of the miner.
+Each block references the hash of the previous block, thus creating a hash chain of blocks.
+On average a new block is mined every 10 minutes.
+:::
+
+:::details
+### Block filters
+
+A filter representing a compact list of addresses in one block.
+Wasabi checks locally if any block filter contains transactions with addresses of the wallet.
+No public keys are sent to any third party server, thus it is very private.
+Read more: [BIP 158: Compact Block Filters for Light Clients](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients)
+:::
+
+:::details
+### Bloom Filter
+
+A filter used primarily by SPV clients to request only block headers and merkle proofs of a given transaction from full nodes.
+This is very bad for privacy, as third party servers learn about which addresses you are interested in.
+Read more: [BIP 37: Connection Bloom Filtering](/using-wasabi/BIPs.md#bip-37-connection-bloom-filtering)
 :::
 
 :::details
@@ -60,6 +85,16 @@ Read more: [Transaction surveillance companies attempting to destroy fungibility
 ### Hardware Wallet (HW)
 A hardware wallet is a special type of Bitcoin wallet which generates and stores the user's private keys in a tailor made hardware device.
 Read more: [Hardware Wallet FAQs](/FAQ/FAQ-UseWasabi.md#hardware-wallet)
+:::
+
+:::details
+### Hash
+
+A cryptographic hash function takes any input of arbitrary size [the message] and computes a value of fixed size that is unique to the input, which is called a hash or a digest.
+If one bit of the input changes, the output will be completely different [avalanche effect].
+And there are no two messages that result in the same hash [collision resistance].
+The only way to get any given input, is by computing all possible inputs, it is a one-way function [pre-image resistance].
+Bitcoin uses the SHA256 in many parts of the protocol.
 :::
 
 :::details
@@ -121,6 +156,36 @@ Read more: [BIP 84 derivation scheme for P2WPKH based accounts](/using-wasabi/BI
 :::
 
 :::details
+### Public Key
+
+A public key is calculated by multiplying the private key to the generator point of an elliptic curve.
+Given only the public key, the private key cannot be calculated.
+Anyone can encrypt a message using a public key.
+This encrypted message (cyphertext) can only be decrypted through the related private key.
+Given a public key and a signature over a message, anyone can verify that the signer had the private key and the message.
+In Bitcoin, the public key is the pseudonymous identity of the owner of a coin.
+Read more: [Bitcoin private keys](/using-wasabi/Receive.html#bitcoin-public-keys-and-addresses)
+:::
+
+:::details
+### Private Key
+
+A private key is a large number that must be chosen at random, it is thus a very secure password and should be kept secret.
+With knowledge of this number, anyone can easily compute the public key, and a signature over any message.
+It can also be used to decrypt any message that was encrypted to the public key corresponding to the private key.
+In Bitcoin, a signature over a valid transaction message gives the right to spend a coin, thus knowledge of the private key corresponds to ownership of the bitcoin.
+Read more: [Bitcoin private keys](/using-wasabi/Receive.html#bitcoin-public-keys-and-addresses)
+:::
+
+:::details
+### Proof of Work (POW)
+
+One of the requirements for a Bitcoin block to be valid is its hash should be below a certain difficulty target.
+In order to create a valid block, a miner must repeatedly hash a candidate block with a changing nonce until by sheer luck he finds a hash with low value.
+By providing this pre-image block, anyone can verify the amount of computational energy that a miner on average should have invested in order to find this block, and this is what is known as Proof of Work.
+:::
+
+:::details
 ### Replace by Fee (RBF)
 
 Replacing one version of an unconfirmed transaction with a different version of the transaction that pays a higher transaction fee.
@@ -132,6 +197,14 @@ Replacing one version of an unconfirmed transaction with a different version of 
 A satoshi is the smallest denomination of bitcoin that can be recorded on the blockchain.
 It is the equivalent of 0.00000001 bitcoin and is named after the creator of Bitcoin, Satoshi Nakamoto.
 Read more: [How can I display the fee in satoshi per byte?](/FAQ/FAQ-UseWasabi.md#how-can-i-display-the-fee-in-satoshis-per-byte)
+:::
+
+:::details
+### SegWit
+
+Segregated Witness is a structure where the witness [signature or redeem script] is stored separately from the transaction Merkle tree.
+This is separated because the witness contains only data concerning transaction validity, but not about transaction effect.
+Read more: [Why Wasabi uses only SegWit](/FAQ/FAQ-UseWasabi.md#why-does-wasabi-only-use-segwit-bech32-addresses)
 :::
 
 :::details
