@@ -92,7 +92,11 @@ module.exports = {
     lastUpdated: 'Last Updated',
     algolia: {
       indexName: 'wasabiwallet',
-      apiKey: 'c9d9b7688e0f9e6d0ed534655321a424'
+      apiKey: 'c9d9b7688e0f9e6d0ed534655321a424',
+      // See https://www.algolia.com/doc/api-reference/api-parameters/
+      algoliaOptions: {
+        hitsPerPage: 25
+      }
     },
     nav: [
       {
