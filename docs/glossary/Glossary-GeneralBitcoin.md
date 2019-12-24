@@ -33,20 +33,11 @@ On average a new block is mined every 10 minutes.
 :::
 
 :::details
-### Block filters
+### Blockchain
 
-A filter representing a compact list of addresses in one block.
-Wasabi checks locally if any block filter contains transactions with addresses of the wallet.
-No public keys are sent to any third party server, thus it is very private.
-Read more: [BIP 158: Compact Block Filters for Light Clients](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients)
-:::
-
-:::details
-### Bloom Filter
-
-A filter used primarily by SPV clients to request only block headers and merkle proofs of a given transaction from full nodes.
-This is very bad for privacy, as third party servers learn about which addresses you are interested in.
-Read more: [BIP 37: Connection Bloom Filtering](/using-wasabi/BIPs.md#bip-37-connection-bloom-filtering)
+The blockchain is the one chain of valid Bitcoin blocks with the most accumulated proof of work.
+It is an append-only data structure with new blocks being added on average every 10 minutes.
+Because of its uniquely verifiable and global consensus, it is a revolutionary standard for time, thus some call it timechain.
 :::
 
 :::details
@@ -67,7 +58,7 @@ Read more: [Cold Wasabi Protocol](/using-wasabi/ColdWasabi.md)
 :::
 
 :::details
-### Fees
+### Transaction Fees
 
 The sender of a transaction includes a fee to the network for processing the requested transaction.
 Most transactions require a minimum fee.
@@ -82,8 +73,8 @@ Read more: [Transaction surveillance companies attempting to destroy fungibility
 :::
 
 :::details
-### Hardware Wallet (HW)
-A hardware wallet is a special type of Bitcoin wallet which generates and stores the user's private keys in a tailor made hardware device.
+### Hardware Wallet (HWW)
+A hardware wallet is a special type of Bitcoin wallet which generates and stores the user's private keys on a dedicated hardware device.
 Read more: [Hardware Wallet FAQs](/FAQ/FAQ-UseWasabi.md#hardware-wallet)
 :::
 

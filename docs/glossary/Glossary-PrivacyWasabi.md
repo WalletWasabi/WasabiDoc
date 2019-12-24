@@ -8,7 +8,7 @@
 ## Privacy and Wasabi
 
 :::details
-### Address reuse
+### Address Reuse
 
 Address reuse refers to the use of the same address for multiple transactions, this is very bad for privacy.
 Read more: [Address reuse](/using-wasabi/AddressReuse.md)
@@ -22,6 +22,15 @@ Read more: [What is the anonimity set?](/FAQ/FAQ-UseWasabi.md#what-is-the-anonym
 :::
 
 :::details
+### Block filters
+
+A filter representing a compact list of addresses in one block.
+Wasabi checks locally if any block filter contains transactions with addresses of the wallet.
+No public keys are sent to any third party server, thus it is very private.
+Read more: [BIP 158: Compact Block Filters for Light Clients](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients)
+:::
+
+:::details
 ### Blockchain Analysis
 
 Blockchain analysis is used by transaction surveillance companies to follow the transaction history of coins.
@@ -30,7 +39,15 @@ Read more: [Blockchain Analysis](/why-wasabi/TransactionSurveillanceCompanies.md
 :::
 
 :::details
-### Change address detection
+### Bloom Filter
+
+A filter used primarily by SPV clients to request only block headers and merkle proofs of a given transaction from full nodes.
+This is very bad for privacy, as third party servers learn about which addresses you are interested in.
+Read more: [BIP 37: Connection Bloom Filtering](/using-wasabi/BIPs.md#bip-37-connection-bloom-filtering)
+:::
+
+:::details
+### Change Address Detection
 
 Many Bitcoin transactions have change outputs.
 It would be a serious privacy leak if the change address can be somehow found, as it would link the ownership of the (now spent) inputs with a new output.
@@ -75,7 +92,7 @@ Read more: [Coin Control Best Practices](/FAQ/FAQ-UseWasabi.md#coin-control-best
 :::
 
 :::details
-### Common-input-ownership heuristic
+### Common-Input-Ownership heuristic
 
 This is a heuristic or assumption which says that if a transaction has more than one input then all those inputs are owned by the same entity.
 Read more: [Wasabi Wallet under the hood](/building-wasabi/TechnicalOverview.md#wasabi-wallet-under-the-hood)
@@ -92,8 +109,7 @@ Read more: [Wasabi Wallet under the hood](/FAQ/FAQ-UseWasabi.md#how-does-my-wall
 ### Dust
 
 Dust is an UTXO that is uneconomical to spend.
-Also, small portions of bitcoin can lead to serious consequences about one's privacy.
-An example would be the so called `forced address reuse attack`.
+Also, small portions of bitcoin can lead to serious consequences for one's privacy, for example the so called `forced address reuse attack`.
 Read more: [What is the dust threshold](/FAQ/FAQ-UseWasabi.html#what-is-the-dust-threshold)
 :::
 
@@ -150,7 +166,7 @@ Read more: [Blockchain Analysis](/why-wasabi/TransactionSurveillanceCompanies.md
 :::
 
 :::details
-### The Onion Router (TOR)
+### The Onion Router (Tor)
 
 Tor (The Onion Router) is free and open-source software for enabling anonymous communication.
 It is widely used by Wasabi.
@@ -191,7 +207,7 @@ Read more: [Technical Overview of Wasabi Wallet](/building-wasabi/TechnicalOverv
 :::details
 ### Wasabika
 
-Wasabikas are essentially builders and users of Wasabi in general.
+Wasabikas are builders, users and supporters of Wasabi in general.
 :::
 
 :::details
