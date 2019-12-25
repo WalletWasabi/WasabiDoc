@@ -117,7 +117,7 @@ module.exports = {
       },
       {
         text: "Glossary",
-        link: "/glossary/Glossary.md"
+        link: "/glossary/"
       }
     ],
     sidebar: {
@@ -227,7 +227,8 @@ module.exports = {
           collapsable: false,
           sidebarDepth: 2,
           children: [
-            "/glossary/Glossary.md"
+            "/glossary/Glossary-GeneralBitcoin.md",
+            "/glossary/Glossary-PrivacyWasabi.md"
           ]
         }
       ]
