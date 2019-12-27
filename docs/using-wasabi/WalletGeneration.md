@@ -86,7 +86,7 @@ You shouldn't try to re-invent the wheel for something as complicated and nuance
 These are some of the industry best practices:
 
 1. Rolling a dice might be the easiest way to get high entropy and randomness in numbers.
-You can also use the [diceware wordlists](https://www.eff.org/deeplinks/2016/07/new-wordlists-random-passphrases) to get something similar to your Bitcoin recovery words (Seed phrase).
+You can also use the [Diceware tutorial](/using-wasabi/WalletGeneration.md#create-strong-passwords-with-diceware) to get something similar to your Bitcoin recovery words (Seed phrase).
 Now you have a verbal password that was generated completely off-line with sufficient randomness.
 
 2. Flip through the pages of a book, stopping on an arbitrary page and pick up one word somewhere on that page.
@@ -96,6 +96,40 @@ You can further increase the randomness by selecting different books.
 3. Use a well tested password manager with a cryptographic secure random number generator.
 A good password manager will use sufficient entropy to generate a password with letters, numbers and special characters.
 Although this is on-line and digital, a good software should still be secure enough for most cases.
+
+## Create Strong Passwords with Diceware
+
+Diceware is a great way to generate secure, memorable, random, and long passwords.
+It’s a great strategy for your most precious passwords, especially those for which two-factor authentication or a password manager is unfeasible (e.g. the password to your computer, your backups, or your encryption key).
+You can even use Diceware to create secure wallets.
+
+To generate a password using Diceware, you just need a good die and some pen and paper.
+You can find the diceware list at the [Electronic Frontier Foundation website](https://www.eff.org/deeplinks/2016/07/new-wordlists-random-passphrases).
+Make sure you are alone and there are no cameras nearby.
+For maximum protection, disconnect your computer from the internet (after you save the Diceware list) and cover
+your webcam.
+
+To start, roll the die five times.
+Record the number from each roll on the pen and paper.
+You will end up with a five-digit number.
+We got `52611`.
+Now search on the Diceware list for the five digit number you just created.
+Write down the word the number corresponds to, in our case it is `salvo`.
+This word by itself is not a good password, it would only take about a thousandth of a second to crack.
+Repeat the dice rolling process at least, four times.
+
+After five sets of five rolls, we ended up with `52611` `51631` `63432` `43123` `21641`.
+This corresponds to the password `salvo rhoda walton mudd croft`.
+
+It would take a single computer about six nonillion (which is 6*10^30 ) years to crack this.
+It is an unimaginably large number and for comparison, the universe is only 14 x 10 to the power of 9 years old.
+If you had a billion computers, each one a billion times stronger than the computers available today, you would still not be able to crack this password.
+Memorize this password and then shred the piece of paper on which you recorded your dice results.
+Ideally, you should burn it and/or backup it in a [secure storage](/using-wasabi/ColdWasabi.md#a-list-of-the-more-common-mediums-of-cold-storage-with-some-of-their-weaknesses).
+
+To remember your new Diceware password, you will need to use it regularly, especially while it is still fresh in your memory.
+Frequently log into the service you created this password for, or set yourself a routine to practice it.
+Eventually, the password will become muscle memory and typing it will be as natural as drinking or eating.
 
 ## How are the secrets created
 
