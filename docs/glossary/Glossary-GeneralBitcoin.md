@@ -91,7 +91,6 @@ When several nodes, usually most nodes on the network, all have the same blocks 
 ### Consensus Rules
 
 The block validation rules that full nodes follow to stay in consensus with other nodes.
-Not to be confused with consensus.
 :::
 
 :::details
