@@ -410,7 +410,7 @@ Transactions are transmitted over the bitcoin network, collected by miners, and 
 :::details
 ### Transaction Fees
 
-The sender of a transaction includes a fee to the network for processing the requested transaction.
+A transaction includes a fee to the network for processing the requested transaction.
 Most transactions require a minimum fee.
 Read more: [What fee should I select?](/FAQ/FAQ-UseWasabi.md#what-fee-should-i-select)
 :::
