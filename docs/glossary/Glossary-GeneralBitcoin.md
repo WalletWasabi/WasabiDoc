@@ -331,7 +331,7 @@ Replacing one version of an unconfirmed transaction with a different version of 
 :::
 
 :::details
-### Reward
+### Mining Reward
 
 An amount included in each new block as a reward by the network to the miner who found the Proof-of-Work solution.
 It is currently 12.5 BTC per block.
