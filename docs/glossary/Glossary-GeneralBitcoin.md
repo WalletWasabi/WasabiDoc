@@ -333,7 +333,7 @@ Replacing one version of an unconfirmed transaction with a different version of 
 :::details
 ### Mining Reward
 
-An amount included in each new block as a reward by the network to the miner who found the Proof-of-Work solution.
+An amount of satoshis included in each new block as a reward by the network to the miner who found the Proof-of-Work solution.
 Initially it was 50 bitcoin per block, which is halvend every 210 000 blocks, or roughly 4 years.
 This leads to a total money supply of just below 21 million bitcoin. 
 :::
