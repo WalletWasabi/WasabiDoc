@@ -397,7 +397,6 @@ Read more: [Wasabi Wallet under the hood](/building-wasabi/TechnicalOverview.md#
 ### Soft Fork
 
 Soft fork or soft-forking change is a fork in the blockchain which commonly occurs when miners using non-upgraded nodes don’t follow a new consensus rule their nodes don’t know about.
-Not to be confused with fork, hard fork, software fork or Git fork.
 :::
 
 :::details
