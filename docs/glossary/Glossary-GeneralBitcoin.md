@@ -262,7 +262,6 @@ With P2SH the complex script that details the spending conditions (redeem script
 ### P2WPKH
 
 The signature of a P2WPKH (Pay-to-Witness-Public-Key-Hash) contains the same information as a P2PKH spending, but is located in the witness field instead of the scriptSig field.
-The scriptPubKey is also modified.
 :::
 
 :::details
