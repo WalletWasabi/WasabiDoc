@@ -282,7 +282,7 @@ Read more: [BIP 174 Partially Signed Bitcoin Transaction Format](https://github.
 :::details
 ### Payment Channels
 
-A micropayment channel or payment channel is class of techniques designed to allow users to make multiple bitcoin transactions without committing all of the transactions to the bitcoin blockchain.
+A payment channel is class of techniques designed to allow users to make multiple bitcoin transactions without committing all of the transactions to the bitcoin blockchain.
 In a typical payment channel, only two transactions are added to the block chain but an unlimited or nearly unlimited number of payments can be made between the participants.
 :::
 
