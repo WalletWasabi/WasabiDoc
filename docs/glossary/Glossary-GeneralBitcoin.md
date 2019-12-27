@@ -134,7 +134,8 @@ The first block in the blockchain, used to initialize the cryptocurrency.
 :::details
 ### Hard Fork
 
-Hard fork, also known as Hard-Forking Change, is a permanent divergence in the blockchain, commonly occurs when non-upgraded nodes can’t validate blocks created by upgraded nodes that follow newer consensus rules.
+Hard fork, also known as hard-forking change, is a permanent divergence in the blockchain, it occurs when non-upgraded nodes can not validate blocks created by upgraded nodes that follow newer consensus rules.
+The upgraded nodes break the rules of the legacy nodes.
 Not to be confused with fork, soft fork, software fork or Git fork.
 :::
 
