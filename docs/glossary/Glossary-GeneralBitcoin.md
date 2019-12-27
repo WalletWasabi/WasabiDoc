@@ -307,7 +307,7 @@ Read more: [Bitcoin private keys](/using-wasabi/Receive.html#bitcoin-public-keys
 :::
 
 :::details
-### Private Key (or secret key)
+### Private Key
 
 A private key is a large number that must be chosen at random, it is thus a very secure password and should be kept secret.
 With knowledge of this number, anyone can easily compute the public key, and a signature over any message.
