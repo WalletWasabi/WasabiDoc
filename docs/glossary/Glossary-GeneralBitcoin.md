@@ -351,7 +351,7 @@ Read more: [How can I display the fee in satoshi per byte?](/FAQ/FAQ-UseWasabi.m
 
 Satoshi Nakamoto is the name used by the person or people who designed Bitcoin and created its original reference implementation, Bitcoin Core.
 As a part of the implementation, they also devised the first blockchain database.
-In the process they were the first to solve the double-spending problem for digital currency.
+In the process they were the first to solve the double-spending problem for digital currency in a decentralized and self verifying nature.
 Their real identity remains unknown.
 :::
 
