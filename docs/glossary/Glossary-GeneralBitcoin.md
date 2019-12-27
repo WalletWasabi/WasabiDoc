@@ -60,7 +60,6 @@ Not to be confused with Coinbase transaction.
 
 The first transaction in a block.
 Always created by a miner, it includes a single coinbase.
-Not to be confused with Coinbase.
 :::
 
 :::details
