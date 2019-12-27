@@ -269,7 +269,6 @@ The signature of a P2WPKH (Pay-to-Witness-Public-Key-Hash) contains the same inf
 
 In the most specific sense, a paper wallet is a document containing all the secrets to spend a bitcoin UTXO. 
 It is a way of storing bitcoin offline as a physical document.
-This second definition also includes paper keys and redeemable codes.
 :::
 
 :::details
