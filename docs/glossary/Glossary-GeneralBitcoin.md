@@ -254,7 +254,7 @@ An output locked by a P2PKH script can be unlocked (spent) by presenting a publi
 :::details
 ### P2SH
 
-P2SH or Pay-to-Script-Hash is a powerful new type of transaction that greatly simplifies the use of complex transaction scripts.
+P2SH or Pay-to-Script-Hash is a type of transaction that simplifies the use of complex transaction scripts.
 With P2SH the complex script that details the conditions for spending the output (redeem script) is not presented in the locking script.
 Instead, only a hash of it is in the locking script.
 :::
