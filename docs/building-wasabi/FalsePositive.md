@@ -10,10 +10,11 @@
 [[toc]]
 
 ## Mail Template
+:::tip
+Ensure that the email subject line starts with the word FALSE.
+:::
 
 ```
-IMPORTANT: Ensure that the email subject line starts with the word FALSE.
-
 To: mailof@antivirusvendor.here
 Subject: FALSE: files being detected by {AntivirusVendorHere} - False Positive Report
 
