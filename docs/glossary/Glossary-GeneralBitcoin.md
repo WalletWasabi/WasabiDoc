@@ -85,7 +85,6 @@ Six or more confirmations is considered sufficient proof that a transaction cann
 ### Consensus
 
 When several nodes, usually most nodes on the network, all have the same blocks in their locally-validated best block chain.
-Not to be confused with consensus rules.
 :::
 
 :::details
