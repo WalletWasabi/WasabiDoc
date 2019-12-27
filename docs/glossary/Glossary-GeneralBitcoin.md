@@ -52,7 +52,6 @@ Read more: [Change coins](/using-wasabi/ChangeCoins.md)
 
 A special field used as the sole input for coinbase transactions.
 The coinbase allows claiming the block reward and provides up to 100 bytes for arbitrary data.
-Not to be confused with Coinbase transaction.
 :::
 
 :::details
