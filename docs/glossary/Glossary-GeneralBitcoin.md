@@ -240,7 +240,8 @@ The rest of the fields may not be changed, as they have a defined meaning.
 ### Off-chain transaction
 
 An off-chain transaction is the movement of value outside of the block chain.
-While an on-chain transaction—usually referred to as simply a transaction—modifies the blockchain and depends on the blockchain to determine its validity an off-chain transaction relies on other methods to record and validate the transaction.
+While an on-chain transaction—usually referred to as simply a transaction—modifies the blockchain and depends on the blockchain to determine its validity.
+An off-chain transaction relies on other methods to record and validate the transaction.
 :::
 
 :::details
