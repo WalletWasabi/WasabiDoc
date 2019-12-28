@@ -162,7 +162,7 @@ The Hierarchical Deterministic (HD) key creation and transfer protocol (BIP32), 
 :::
 
 :::details
-### HD wallet
+### HD Wallet
 
 Wallets using the Hierarchical Deterministic (HD Protocol) key creation and transfer protocol (BIP32).
 :::
