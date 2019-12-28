@@ -372,7 +372,7 @@ It is purposefully not Turing-complete, with no loops.
 :::details
 ### ScriptPubKey
 
-ScriptPubKey or pubkey script, is a script included in outputs which sets the conditions that must be fulfilled for those satoshis to be spend.
+ScriptPubKey or pubkey script, is a script included in outputs which sets the conditions that must be fulfilled for those satoshis to be spent.
 Data for fulfilling the conditions can be provided in a signature script.
 :::
 
