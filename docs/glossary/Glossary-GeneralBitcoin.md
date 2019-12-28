@@ -224,12 +224,6 @@ Read more: [Can I generate a multi signature script?](/FAQ/FAQ-UseWasabi.md#can-
 :::
 
 :::details
-### Miner
-
-A network node that finds valid proof of work for new blocks, by repeated hashing.
-:::
-
-:::details
 ### Nonce
 
 The "nonce" in a bitcoin block is a 32-bit (4-byte) field whose value is set so that the hash of the block will contain a run of leading zeros.
