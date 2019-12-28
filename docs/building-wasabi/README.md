@@ -20,6 +20,7 @@ And all the necessary information you need to quickly start with your invaluable
 - [ToDo List](/building-wasabi/ToDo.md)
 - [Coding Conventions](/building-wasabi/CodingConventions.md)
 - [Contribution Game](/building-wasabi/ContributionGame.md)
+- [False Positive](/building-wasabi/FalsePositive.md)
 - [Security Policy](/building-wasabi/Security.md)
 - [Code Coverage](/building-wasabi/CodeCoverage.md)
 - [Hardware Wallet Integration Testing](/building-wasabi/HardwareWalletTestingGuide.md)
