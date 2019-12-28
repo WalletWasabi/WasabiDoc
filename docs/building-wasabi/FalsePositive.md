@@ -29,7 +29,7 @@ To: mailof@antivirusvendor.here
 Subject: FALSE: files being detected by {AntivirusVendorHere} - False Positive Report
 
 Body: Dear {AntivirusVendorHere},
-I write this email to report as a false positives two different software.
+I write this email to report as false positives two different software.
 
 Unfortunately, your antivirus reports two open source and safe Bitcoin software as malware; more specifically, they are categorized as "Bitcoin Miner". This claim is extremely incorrect.
 The two software are, respectively, "Bitcoin Core" and "Wasabi Wallet".
