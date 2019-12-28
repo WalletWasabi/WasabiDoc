@@ -110,7 +110,7 @@ For maximum protection, disconnect your computer from the internet (after you sa
 your webcam.
 
 To start, roll the die five times.
-Record the number from each roll on the pen and paper.
+Record the number from each roll using the pen and paper.
 You will end up with a five-digit number.
 We got `52611`.
 Now search on the Diceware list for the five digit number you just created.
