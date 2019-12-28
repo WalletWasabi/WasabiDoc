@@ -125,7 +125,6 @@ It would take a single computer about six nonillion (which is 6*10^30 ) years to
 It is an unimaginably large number and for comparison, the universe is only 14 x 10 to the power of 9 years old.
 If you had a billion computers, each one a billion times stronger than the computers available today, you would still not be able to crack this password.
 Memorize this password and keep a [secure backup](/using-wasabi/ColdWasabi.md#a-list-of-the-more-common-mediums-of-cold-storage-with-some-of-their-weaknesses) of the password, but store it in a separate location from your main 12 recovery words.
-Ideally, you should burn it and/or backup it in a [secure storage](/using-wasabi/ColdWasabi.md#a-list-of-the-more-common-mediums-of-cold-storage-with-some-of-their-weaknesses).
 
 To remember your new Diceware password, you will need to use it regularly, especially while it is still fresh in your memory.
 Frequently log into the service you created this password for, or set yourself a routine to practice it.
