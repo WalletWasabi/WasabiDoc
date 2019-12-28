@@ -55,7 +55,7 @@ The coinbase allows claiming the block reward and provides up to 100 bytes for a
 :::
 
 :::details
-### Coinbase transaction
+### Coinbase Transaction
 
 The first transaction in a block.
 Always created by a miner, it includes a single coinbase.
