@@ -246,7 +246,7 @@ Output, transaction output, or TxOut is an output in a Bitcoin transaction which
 ### Off-chain Transaction
 
 An off-chain transaction is the movement of value outside of the blockchain.
-While an on-chain transaction—usually referred to as simply a transaction—modifies the blockchain and depends on the blockchain to determine its validity.
+While an on-chain transaction - usually referred to as simply a transaction - modifies the blockchain and depends on the blockchain to determine its validity.
 An off-chain transaction relies on other methods to record and validate the transaction.
 :::
 
