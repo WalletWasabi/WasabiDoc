@@ -38,7 +38,7 @@ Bitcoin Core (https://github.com/bitcoin/bitcoin), despite being one of the most
 Bitcoin Core is considered to be Bitcoin's reference implementation, serves as a Bitcoin node and provides a Bitcoin wallet which fully verifies payments.
 It is not possible to mine with this software, since the mining code was removed in 2013 (https://bitcoin.stackexchange.com/questions/49664/since-which-version-the-mining-functionality-removed-from-wallet).
 
-Wasabi Wallet (https://github.com/zkSNACKs/WalletWasabi/) is a open-source and non-custodial, Bitcoin wallet that integrates Bitcoin Core within it to validate transactions without having to connect to third party servers on the network, and for this reason, it is also reported as "Bitcoin Miner", when its only task is to allow users to manage bitcoins in a secure and user friendly way.
+Wasabi Wallet (https://github.com/zkSNACKs/WalletWasabi/) is an open-source, non-custodial, Bitcoin wallet that integrates Bitcoin Core within it to validate transactions without having to connect to third party servers on the network, and for this reason, it is also reported as "Bitcoin Miner", when its only task is to allow users to manage bitcoins in a secure and user friendly way.
 Again, Wasabi Wallet cannot in any way mine bitcoins (or any other cryptocurrency), as its sole purpose is to manage bitcoins.
 
 (optional from here, edit according to your antivirus - The more information there is, the better)
