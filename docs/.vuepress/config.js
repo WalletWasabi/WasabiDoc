@@ -83,12 +83,21 @@ module.exports = {
   },
   themeConfig: {
     logo: "/Logo_without_text.png",
+    searchPlaceholder: 'Search the docs...',
     displayAllHeaders: false,
     sidebarDepth: 0,
     repo: "zkSNACKs/WasabiDoc",
     docsDir: "docs",
     editLinks: true,
     lastUpdated: 'Last Updated',
+    algolia: {
+      indexName: 'wasabiwallet',
+      apiKey: 'c9d9b7688e0f9e6d0ed534655321a424',
+      // See https://www.algolia.com/doc/api-reference/api-parameters/
+      algoliaOptions: {
+        hitsPerPage: 25
+      }
+    },
     nav: [
       {
         text: "Why Wasabi",
@@ -105,6 +114,10 @@ module.exports = {
       {
         text: "FAQ",
         link: "/FAQ/"
+      },
+      {
+        text: "Glossary",
+        link: "/glossary/"
       }
     ],
     sidebar: {
@@ -116,6 +129,7 @@ module.exports = {
           children: [
             "/why-wasabi/WhyPrivacyImportant.md",
             "/why-wasabi/BitcoinPrivacy.md",
+            "/why-wasabi/GainingPrivacyWasabi.md",
             "/why-wasabi/10Commandments.md",
             "/why-wasabi/TransactionSurveillanceCompanies.md"
           ]
@@ -128,9 +142,9 @@ module.exports = {
           sidebarDepth: 2,
           children: [
             "/using-wasabi/InstallPackage.md",
-            "/using-wasabi/WasabiSetupTails.md",
             "/using-wasabi/BuildSource.md",
-            "/using-wasabi/DeterministicBuild.md"
+            "/using-wasabi/DeterministicBuild.md",
+            "/using-wasabi/WasabiSetupTails.md"
           ]
         },
     {
@@ -139,6 +153,8 @@ module.exports = {
           sidebarDepth: 2,
           children: [
             "/using-wasabi/WalletGeneration.md",
+            "/using-wasabi/Receive.md",
+            "/using-wasabi/CoinJoin.md",
             "/using-wasabi/PasswordFinder.md",
             "/using-wasabi/ColdWasabi.md",
             "/using-wasabi/LurkingWifeMode.md",
@@ -152,7 +168,7 @@ module.exports = {
           sidebarDepth: 2,
           children: [
             "/using-wasabi/AddressReuse.md",
-            "/using-wasabi/LostPassword.md",
+            "/using-wasabi/ChangeCoins.md",
             "/using-wasabi/NetworkLevelPrivacy.md",
             "/using-wasabi/Deanonimization.md",
             "/using-wasabi/PayToEndPoint.md"
@@ -163,7 +179,9 @@ module.exports = {
           collapsable: false,
           sidebarDepth: 2,
           children: [
-            "/using-wasabi/RestoreElectrum.md"
+            "/using-wasabi/WalletRecovery.md",
+            "/using-wasabi/RestoreElectrum.md",
+            "/using-wasabi/LostPassword.md"
           ]
         }
       ],
@@ -178,7 +196,6 @@ module.exports = {
             "/building-wasabi/Dojo.md",
             "/building-wasabi/ToDo.md",
             "/building-wasabi/CodingConventions.md",
-            "/building-wasabi/DemoGuide.md",
             "/building-wasabi/ContributionGame.md",
             "/building-wasabi/Security.md",
             "/building-wasabi/CodeCoverage.md",
@@ -201,6 +218,17 @@ module.exports = {
             "/FAQ/FAQ-UseWasabi.md",
             "/FAQ/FAQ-GeneralBitcoinPrivacy.md",
             "/FAQ/FAQ-Contribution.md"
+          ]
+        }
+      ],
+      "/glossary/": [
+        {
+          title: "Glossary",
+          collapsable: false,
+          sidebarDepth: 2,
+          children: [
+            "/glossary/Glossary-GeneralBitcoin.md",
+            "/glossary/Glossary-PrivacyWasabi.md"
           ]
         }
       ]

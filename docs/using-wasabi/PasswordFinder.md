@@ -16,13 +16,13 @@ This tool tries to find the password that decrypts the encrypted secret key stor
 
 ## Limitations
 
-Wasabi Wallet protects the encrypted secret key with the same technology used to protect paper wallets (bip 38) and for that reason it is computationally infeasible to brute force the password using all the possible combinations.
+Wasabi Wallet protects the encrypted secret key with the same technology used to protect paper wallets ([BIP 38](/using-wasabi/BIPs.md#bip-38-password-protected-private-key)) and for that reason it is computationally infeasible to brute force the password using all the possible combinations.
 It is important to know that Wasabi Password Finder is not for breaking wallet passwords but for finding errors (typos) in an already known password. 
 
 ## Usage
 
 To use Wasabi's command line tools on Windows you have to use `wassabeed.exe` that is inside your `Program Files\WasabiWallet`.
-On Linux and OSX you can use the same software that you use for launching the GUI (`wassabee`).
+On Linux and macOS you can use the same software that you use for launching the GUI (`wassabee`).
 
 Let us start giving a glance to the command `help`:
 

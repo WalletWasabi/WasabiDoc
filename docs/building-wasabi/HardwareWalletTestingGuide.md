@@ -9,7 +9,7 @@
 
 # Wasabi Hardware Wallet Integration Testing
 
-|                | Windows | OSX     | Linux   |
+|                | Windows | macOS     | Linux   |
 |----------------|---------|---------|---------|
 | Coldcard       | pass    | pass    | pass    |
 | Digital BitBox |         |         |         |
@@ -38,26 +38,7 @@ More info here: [https://github.com/bitcoin-core/HWI/tree/master/hwilib/udev](ht
 
 ## Step 1: Build From Source Code
 
-### Get The Requirements
-
-1. Get Git: [https://git-scm.com/downloads](https://git-scm.com/downloads)
-2. Get .NET Core 2.2 SDK: [https://www.microsoft.com/net/download](https://www.microsoft.com/net/download) (Note, you can disable .NET's telemetry by typing `export DOTNET_CLI_TELEMETRY_OPTOUT=1` on Linux and OSX or `set DOTNET_CLI_TELEMETRY_OPTOUT=1` on Windows.)
-  
-### Get Wasabi
-
-Clone & Restore & Build
-
-```sh
-git clone https://github.com/zkSNACKs/WalletWasabi.git --recursive
-cd WalletWasabi/WalletWasabi.Gui
-dotnet build
-```
-
-### Run Wasabi
-
-Run Wasabi with `dotnet run` from the `WalletWasabi.Gui` folder.
-
-More info here: [https://github.com/zkSNACKs/WalletWasabi/blob/master/README.md](https://github.com/zkSNACKs/WalletWasabi/blob/master/README.md)
+Follow this step-by-step [guide](../using-wasabi/BuildSource.md).
 
 ## Step 2: Test
 

@@ -19,7 +19,6 @@ And all the necessary information you need to quickly start with your invaluable
 - [Dojo](/building-wasabi/Dojo.md)
 - [ToDo List](/building-wasabi/ToDo.md)
 - [Coding Conventions](/building-wasabi/CodingConventions.md)
-- [Demo Guide](/building-wasabi/DemoGuide.md)
 - [Contribution Game](/building-wasabi/ContributionGame.md)
 - [Security Policy](/building-wasabi/Security.md)
 - [Code Coverage](/building-wasabi/CodeCoverage.md)

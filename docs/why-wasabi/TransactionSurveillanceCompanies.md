@@ -28,7 +28,7 @@ Important techniques are the common-input-ownership heuristic and address reuse.
 ### Wallet synchronization analysis
 Bitcoin lightweight wallets often download their own history and balance by querying a third-party server.
 Transaction surveillance companies often try to exploit this to learn which addresses and transactions belong to certain wallets.
-The companies have been known to collect BIP37 filters from BIP37-enabled wallets.
+The companies have been known to collect [BIP 37](/using-wasabi/BIPs.md#bip-37-connection-bloom-filtering) filters from BIP37-enabled wallets.
 They almost-certainly also run many Electrum servers which can spy on any Electrum wallet that connects to them.
 
 ### Transaction broadcasting
@@ -79,9 +79,9 @@ This adds friction and transactional costs and makes Bitcoin less valuable as a 
 There appears to be no recourse for someone affected by false positive identification of exchange-disapproved transaction history.
 This could result in them wrongly having their coins confiscated.
 
-### Jurisidiction
+### Jurisdiction
 
-Transaction surveillance company market themselves as a tool for finding "bad guys", but its unclear which jurisidiction that applies to.
+Transaction surveillance company market themselves as a tool for finding "bad guys", but its unclear which jurisdiction that applies to.
 For example, could one day the government of China pressure those companies into marking certain coins as "bad" because they belong to users who disagree with Chinese government policy?
 
 ### Incentivized to oppose bitcoin updates
@@ -103,9 +103,14 @@ Whether the activities of transaction surveillance company actually help against
 
 - [Chainanalysis](https://www.chainalysis.com/)
 - [Elliptic](https://www.elliptic.co/)
-- [Convalidation](http://coinvalidation.com/)
+- [Coinvalidation](http://coinvalidation.com/)
 - [Neutrino](https://www.neutrino.nu/)
 - [Coinfirm](https://www.coinfirm.io/)
 - [Blockchain Group](https://blockchaingroup.io/)
-- [Cyphertrace](https://ciphertrace.com/)
+- [Ciphertrace](https://ciphertrace.com/)
 - [Comply Advantage](https://complyadvantage.com/aml-crypto-compliance/)
+- [IdentityMind](https://identitymindglobal.com/)
+- [Elementus](https://elementus.io/)
+- [BlockSeer](https://www.blockseer.com/)
+- [ScoreChain](https://www.scorechain.com/)
+- [Crystal](https://crystalblockchain.com/)

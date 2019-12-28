@@ -23,10 +23,10 @@ Clear-net: [wasabiwallet.io](https://wasabiwallet.io)
 
 Tor hidden service: [wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion)
 
-Please [check signatures](InstallPackage.md) after completing downloads.
+Please [check signatures](/using-wasabi/InstallPackage.md) after completing downloads.
 The concern here is that you may accidentally fall for a phishing attempt and be on a malicious site downloading a malicious piece of software.
 
-Alternatively, as Wasabi is [libre and open source software](https://github.com/zkSNACKs/WalletWasabi), you may also [build the code from source](BuildSource.md).
+Alternatively, as Wasabi is [libre and open source software](https://github.com/zkSNACKs/WalletWasabi), you may also [build the code from source](/using-wasabi/BuildSource.md).
 
 ## 3. Keep your mnemonic words and password safely stored (BOTH!)
 
@@ -41,18 +41,9 @@ Lastly, understand that if you lose your password, it becomes much harder (if no
 
 Each time you receive coins, you will be asked to create a label.
 This label is only for you and is stored exclusively on your device.
-Wasabi has strong coin control features, and as you continue to use the wallet, you will observe that the history of your coins will appear, and this history is only useful to you if you are practicing good labeling. 
-An example of a good label:
+Wasabi has strong coin control features, and as you continue to use the wallet, you can see how known are your coins, which is possible only if you practice good labeling.
 
-June 20 - $400 from Coinbase, primary account
-
-June 7 - 0.2 BTC Received from Bob via Bisq
-
-Examples of bad labels:
-
-Address #1
-
-0.5 BTC
+You can read more about labels [here](/using-wasabi/Receive.md#the-importance-of-labeling).
 
 Lastly, if you must use an exchange, try to ask for a new deposit address on each deposit.
 In the same way that you should never receive Bitcoin to the same address twice, you should try to avoiding sending Bitcoin to the same address twice.
@@ -94,13 +85,13 @@ So if you want to check on the status of a transaction or the balance on an addr
 
 (b) Check through your full node
 
-(c) Use a block explorer through Tor (e.g. [Blockstream Esplora Tor](http://http://explorerzydxu5ecjrkwceayqybizmpjjznk5izmitf2modhcusuqlid.onion/))
+(c) Use a block explorer through Tor (e.g. [Blockstream Esplora Tor](http://explorerzydxu5ecjrkwceayqybizmpjjznk5izmitf2modhcusuqlid.onion/))
 
 If you think that forensics companies are not paying big money to block explorers for user information, you are wrong.
 Even something as simple as leaving a comment on a YouTube video or Reddit post will be scraped.
 
 More importantly, if you are using a hardware wallet, an easy way to undo the previous times you plugged in the wallet through non-private applications is to create a new account on the device with a passphrase.
-For example, for ledger nano s, you can do this in the device home screen > security > passphrase.
+For example, for ledger nano s, you can do this in the device `home screen > security > passphrase`.
 Remember Commandment 2!
 
 Remember, Bitcoin is a peer-to-peer cash system, so when you have the opportunity to do so, buy your coins directly from someone you know or through a P2P market place.
@@ -121,6 +112,6 @@ Currently Wasabi does not support in-wallet lightning features, but it is on the
 
 ## Credits
 
-Much of this list comes from the work of our good friends at JoinMaket.
+Much of this list comes from the work of our good friends at JoinMarket.
 In particular, we need to thank [Adam Gibson](https://twitter.com/waxwing__) and [Chris Belcher](https://twitter.com/chris_belcher_) for their outstanding contribution to privacy in Bitcoin.
 Please take a look at the [Bitcoin Privacy Wiki](https://en.bitcoin.it/wiki/Privacy), the [Join Market Wiki](https://en.bitcoin.it/wiki/JoinMarket) and the [Join Market source code](https://github.com/JoinMarket-Org).
