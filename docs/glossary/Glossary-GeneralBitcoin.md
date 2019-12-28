@@ -113,7 +113,7 @@ It specifies the numeric value the hash of a valid block must not be above.
 :::details
 ### Fork
 
-Fork, also known as accidental fork, occurs when two or more blocks have the same block height, forking the block chain. 
+Fork, also known as accidental fork, occurs when two or more blocks have the same block height, forking the blockchain.
 Typically occurs when two or more miners find blocks at nearly the same time.
 Can also happen as part of an attack.
 :::
