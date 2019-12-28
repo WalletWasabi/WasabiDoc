@@ -13,7 +13,7 @@ This means that it is possible (but not mandatory) to start Bitcoin Core during 
 Unfortunately, Bitcoin Core is detected as an unsecure Bitcoin Miner by some antiviruses, despite it being one of the most (if not the most) highly scrutinized and maintained open source software in existence.
 This creates a huge problem as several users are no longer able to download and use Bitcoin Core and Wasabi Wallet, despite being two extremely safe and malware-free software.
 
-**The whole community is called to download [Bitcoin Core](https://bitcoin.org/en/download) and [Wasabi Wallet](https://wasabiwallet.io/#download), and report them to their antivirus as a false positive.**
+**The whole community is called to download [Bitcoin Core](https://bitcoincore.org/en/download/) and [Wasabi Wallet](https://wasabiwallet.io/#download), and report them to their antivirus as a false positive.**
 
 This page contains online form submissions, email template, addresses and GUI tutorials.
 
