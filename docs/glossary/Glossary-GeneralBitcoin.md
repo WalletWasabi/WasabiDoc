@@ -230,10 +230,16 @@ A network node that finds valid proof of work for new blocks, by repeated hashin
 :::
 
 :::details
-### Output
+### Nonce
 
 The "nonce" in a bitcoin block is a 32-bit (4-byte) field whose value is set so that the hash of the block will contain a run of leading zeros.
 The rest of the fields may not be changed, as they have a defined meaning.
+:::
+
+:::details
+### Output
+
+Output, transaction output, or TxOut is an output in a Bitcoin transaction which contains two fields: a value field for transferring zero or more satoshis and a pubkey script for indicating what conditions must be fulfilled for those satoshis to be further spent.
 :::
 
 :::details
