@@ -156,7 +156,7 @@ Bitcoin uses the SHA256 in many parts of the protocol.
 :::
 
 :::details
-### HD protocol
+### HD Protocol
 
 The Hierarchical Deterministic (HD) key creation and transfer protocol (BIP32), which allows creating child keys from parent keys in a hierarchy.
 :::
