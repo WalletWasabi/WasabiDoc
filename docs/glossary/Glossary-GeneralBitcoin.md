@@ -224,7 +224,7 @@ Read more: [Can I generate a multi signature script?](/FAQ/FAQ-UseWasabi.md#can-
 :::
 
 :::details
-### Nonce
+### Miner
 
 A network node that finds valid proof of work for new blocks, by repeated hashing.
 :::
