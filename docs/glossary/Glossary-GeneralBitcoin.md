@@ -98,7 +98,7 @@ A network-wide setting that controls how much computation is required to produce
 :::
 
 :::details
-### Difficulty Retargeting
+### Difficulty Retargeting (Difficulty Adjustment)
 
 A network-wide recalculation of the difficulty that occurs once every 2,016 blocks and considers the hashing power of the previous 2,016 blocks.
 :::
