@@ -7,6 +7,17 @@
 
 # False positive
 
+Since [v1.1.10](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v1.1.10), Wasabi has [partial Bitcoin Core integration](https://github.com/zkSNACKs/WalletWasabi/pull/2495).
+This means that it is possible (but not mandatory) to start Bitcoin Core during the startup of Wasabi.
+Without having to install or configure anything.
+
+Unfortunately, Bitcoin Core is detected as an unsecure Bitcoin Miner by some antiviruses, despite it being one of the most (if not the most) highly scrutinized and maintained open source software in existence.
+This creates a huge problem as several users are no longer able to download and use Bitcoin Core and Wasabi Wallet, despite being two extremely safe and malware-free software.
+
+**The whole community is called to download [Bitcoin Core](https://bitcoin.org/en/download) and [Wasabi Wallet](https://wasabiwallet.io/#download), and report them to their antivirus as a false positive.**
+
+This page contains online form submissions, email template, addresses and GUI tutorials.
+
 [[toc]]
 
 ## Mail Template
@@ -49,7 +60,7 @@ Name and Surname
   
 |Antivirus  | Online Form | eMail address
 |----  | ----   | ---- |
-|Antity | N/A | http://submit@antiy.com/
+|Antity | N/A | submit@antiy.com
 |Arcabit | N/A | virus@arcabit.com
 |Avast | https://www.avast.com/false-positive-file-form.php | N/A
 |AVG | https://www.avg.com/en-us/false-positive-file-form | N/A
@@ -71,6 +82,8 @@ Name and Surname
 |TrendMicro  | https://www.trendmicro.com/en_us/about/legal/detection-reevaluation.html | N/A
 
 ## GUI Tutorials
+
+This list contains tutorials on how to report Bitcoin Core and Wasabi Wallet as false positive, directly from your antivirus software:
 
 - ESET-NOD32: https://forum.eset.com/topic/18724-how-to-submit-suspicious-file-to-eset-research-lab-via-program-gui/
 - TrendMicro: https://success.trendmicro.com/solution/1115860-reporting-a-false-positive-issue-in-worry-free-business-security-wfbs
