@@ -100,7 +100,7 @@ Although this is on-line and digital, a good software should still be secure eno
 ## Create Strong Passwords with Diceware
 
 Diceware is a great way to generate secure, memorable, random, and long passwords.
-It’s a great strategy for your most precious passwords, especially those for which two-factor authentication or a password manager is unfeasible (e.g. the password to your computer, your backups, or your encryption key).
+It’s a great strategy for your most precious passwords (e.g. the password to your computer, your backups, or your encryption key).
 You can even use Diceware to create secure wallets.
 
 To generate a password using Diceware, you just need a good die and some pen and paper.
