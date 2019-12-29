@@ -129,6 +129,22 @@ body
       color $navbarTextColor
       font-size 1em
 
+    .search-box
+      order 10
+      margin 0 0 0 2rem
+
+    .ds-dropdown-menu
+      position fixed !important
+      top 3.25rem !important
+      bottom 0 !important
+      right 0 !important
+      overflow-y auto
+      border-radius 0
+      border-color lighten($navbarBgColor, 10%)
+
+      [class^="ds-dataset-"]
+        border-radius 0
+
     .suggestions
       background $navbarBgColor
       @media (prefers-color-scheme: light)
