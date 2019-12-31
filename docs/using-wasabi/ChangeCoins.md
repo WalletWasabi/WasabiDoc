@@ -78,11 +78,18 @@ Also ensure that the communication with the swap server is done over the tor net
 ### Consolidate several change coins, but in a CoinJoin directly.
 If you would consolidate many change coins in a regular non-CoinJoin transaction in the `Send` tab, then any outside observer can easily see that one user controls all these coins.
 But when consolidating in a CoinJoin directly, because there are hundreds of randomly ordered inputs in a Wasabi CoinJoin transaction, it is no longer easy to find out which coins belong to one single user.
-However, a well resourced attacker can perform [CoinJoin sudoku](/FAQ/FAQ-GeneralBitcoinPrivacy.md#what-is-a-coinjoin-sudoku) to find out which several inputs fund the change output.
+However, a well resourced attacker can perform [CoinJoin Sudoku](/FAQ/FAQ-GeneralBitcoinPrivacy.md#what-is-a-coinjoin-sudoku) to find out which several inputs fund the change output.
+
+:::tip
+Remember that a Wasabi CoinJoin gives you back an anonymous (green) coins and the non-anonymous (red) change.
+The resulted non-anonymous change could be linked to the inputs (which are, in this specific case, inputs derived from multiple change outputs of previous CoinJoins).
+Once a Wasabi CoinJoin with equal denominations between users is made, it is no longer possible to connect the inputs to the outputs; even if the inputs are in turn consolidated change outputs.
+:::
+
 Further, during the [input registration phase](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-input-registration-phase), your wallet provides an input proof for all the registered coins to the coordinator.
 Thus the coordinator knows that you control all these coins, and although zkSNACKs claims to not keep any logs, it is a reasonable assumption that everyone knows what the coordinator knows.
 In this CoinJoin you get an equal value mixed coin, which is no longer tied to any of your previous change coins (inputs), and a change output that can be tied to these inputs.
-So consolidating your change in a CoinJoin is strictly more private and efficient than consolidating in a regular sending transaction, but it still leaks sensitive information.
+So consolidating your change in a CoinJoin is strictly more private and efficient than consolidating in a regular sending transaction, but it is always possible to follow the path of (red) generated non-anonymous change outputs; while the anonymous (green) equal denominated mixed outputs are in no way connected to the previous inputs.
 
 ### Spend the change to the same entity as the initial transaction, but always use a new address.
 So if in the first transaction you have 0.1 bitcoin and send Alice 0.04 bitcoin, you get 0.06 bitcoin back as change.
