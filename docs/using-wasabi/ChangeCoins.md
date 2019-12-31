@@ -81,7 +81,7 @@ But when consolidating in a CoinJoin directly, because there are hundreds of ran
 However, a well resourced attacker can perform [CoinJoin Sudoku](/FAQ/FAQ-GeneralBitcoinPrivacy.md#what-is-a-coinjoin-sudoku) to find out which several inputs fund the change output.
 
 :::tip
-Remember that a Wasabi CoinJoin gives you back an anonymous (green) coins and the non-anonymous (red) change.
+Remember that a Wasabi CoinJoin gives you back an anonymous (green) coin and a non-anonymous (red) change coin.
 The resulted non-anonymous change could be linked to the inputs (which are, in this specific case, inputs derived from multiple change outputs of previous CoinJoins).
 Once a Wasabi CoinJoin with equal denominations between users is made, it is no longer possible to connect the inputs to the outputs; even if the inputs are in turn consolidated change outputs.
 :::
