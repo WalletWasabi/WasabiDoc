@@ -139,7 +139,12 @@ Take into account that it is not only encryption what [BIP 38](/using-wasabi/BIP
 :::details
 ### Does Wasabi support Trezor's, Ledger's and Coldcard's hidden wallets?
 
-Partially. Only device side passphrase is supported. PC side passphrase is not. This means the hidden wallet feature can be used with Trezor T, Ledger Nano S and ColdCard, but it cannot be used with Trezor One. After the 12 or 24 words, enter the passphrase as the 13th or 25th word. It’s part of [BIP 39](/using-wasabi/BIPs.md#bip-39-mnemonic-code-for-generating-deterministic-keys).
+Partially.
+Only device side passphrase is supported.
+PC side passphrase is not.
+This means the hidden wallet feature can be used with Trezor T, Ledger Nano S and ColdCard, but it cannot be used with Trezor One.
+After the 12 or 24 words, enter the passphrase as the 13th or 25th word.
+It’s part of [BIP 39](/using-wasabi/BIPs.md#bip-39-mnemonic-code-for-generating-deterministic-keys).
 :::
 
 :::details
