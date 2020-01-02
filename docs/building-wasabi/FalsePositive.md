@@ -65,7 +65,7 @@ Name and Surname
 |AVG | [Yes](https://www.avg.com/en-us/false-positive-file-form) | N/A
 |Avira | [Yes](https://www.avira.com/en/analysis/submit) | virus@avira.com
 |BitDefender | [Yes](https://www.bitdefender.com/submit/) | virus_submission@bitdefender.com
-|Cyren | N/A | info@cyren.com
+|Cyren | No | info@cyren.com
 |eScan | [Yes](http://support.mwti.net/support/index.php) | fp@escanav.com
 |e-Gambit  | [Yes](https://tehtris.com/en/fp-egambit/) | N/A
 |ESET-NOD32  | No | samples@eset.com
