@@ -59,26 +59,26 @@ Name and Surname
   
 |Antivirus  | Online Form | eMail address
 |----  | ----   | ---- |
-|Antity | N/A | submit@antiy.com
-|Arcabit | N/A | virus@arcabit.com
-|Avast | https://www.avast.com/false-positive-file-form.php | N/A
-|AVG | https://www.avg.com/en-us/false-positive-file-form | N/A
-|Avira | https://www.avira.com/en/analysis/submit | virus@avira.com
-|BitDefender | https://www.bitdefender.com/submit/ | virus_submission@bitdefender.com
-|Cyren | N/A | info@cyren.com
-|eScan | http://support.mwti.net/support/index.php | fp@escanav.com
-|e-Gambit  | https://tehtris.com/en/fp-egambit/ | N/A
-|ESET-NOD32  | N/A | samples@eset.com
-|FireEye  | N/A | info@fireeye.com
-|Fortinet  | https://fortiguard.com/faq/onlinescanner | submitvirus@fortinet.com
-|F-Secure  | https://www.f-secure.com/en/business/support-and-downloads/submit-a-sample | N/A
-|Gdata  | https://su.gdatasoftware.com/en/sample-submission | N/A
-|Ikarus  | N/A | samples@ikarus.at / probe@ikarus.at
-|Jiangmin  | N/A | support@jiangmin.com
-|Kaspersky  | https://virusdesk.kaspersky.com/ | N/A
-|K7 Computing | https://www.k7computing.com/us/contact-us | reportfp@k7computing.com
-|MAX  | N/A | info@maxpcsecure.com
-|TrendMicro  | https://www.trendmicro.com/en_us/about/legal/detection-reevaluation.html | N/A
+|Antity | No | submit@antiy.com
+|Arcabit | No | virus@arcabit.com
+|Avast | [Yes](https://www.avast.com/false-positive-file-form.php) | N/A
+|AVG | [Yes](https://www.avg.com/en-us/false-positive-file-form) | N/A
+|Avira | [Yes](https://www.avira.com/en/analysis/submit) | virus@avira.com
+|BitDefender | [Yes](https://www.bitdefender.com/submit/) | virus_submission@bitdefender.com
+|Cyren | No | info@cyren.com
+|eScan | [Yes](http://support.mwti.net/support/index.php) | fp@escanav.com
+|e-Gambit  | [Yes](https://tehtris.com/en/fp-egambit/) | N/A
+|ESET-NOD32  | No | samples@eset.com
+|FireEye  | No | info@fireeye.com
+|Fortinet  | [Yes](https://fortiguard.com/faq/onlinescanner) | submitvirus@fortinet.com
+|F-Secure  | [Yes](https://www.f-secure.com/en/business/support-and-downloads/submit-a-sample) | N/A
+|Gdata  | [Yes](https://su.gdatasoftware.com/en/sample-submission) | N/A
+|Ikarus  | No | samples@ikarus.at, probe@ikarus.at
+|Jiangmin  | No | support@jiangmin.com
+|Kaspersky  | [Yes](https://virusdesk.kaspersky.com/) | N/A
+|K7 Computing | [Yes](https://www.k7computing.com/us/contact-us) | reportfp@k7computing.com
+|MAX  | No | info@maxpcsecure.com
+|TrendMicro  | [Yes](https://www.trendmicro.com/en_us/about/legal/detection-reevaluation.html) | N/A
 
 ## GUI Tutorials
 
