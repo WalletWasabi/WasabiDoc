@@ -56,7 +56,7 @@ This file contains the list of projects that can be launched, how to do it, what
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build-client",
-      "program": "${workspaceFolder}/WalletWasabi.Gui/bin/Debug/netcoreapp3.0/WalletWasabi.Gui.dll",
+      "program": "${workspaceFolder}/WalletWasabi.Gui/bin/Debug/netcoreapp3.1/WalletWasabi.Gui.dll",
       "args": [],
       "cwd": "${workspaceFolder}/WalletWasabi.Gui",
       "stopAtEntry": false,
@@ -99,7 +99,7 @@ Add the following launcher to the array of `configurations` in the `.vscode/laun
    "type": "coreclr",
    "request": "launch",
    "preLaunchTask": "build-backend",
-   "program": "${workspaceFolder}/WalletWasabi.Backend/bin/Debug/netcoreapp3.0/WalletWasabi.Backend.dll",
+   "program": "${workspaceFolder}/WalletWasabi.Backend/bin/Debug/netcoreapp3.1/WalletWasabi.Backend.dll",
    "args": [],
    "cwd": "${workspaceFolder}/WalletWasabi.Backend",
    "stopAtEntry": false,
@@ -164,7 +164,7 @@ Once this has been done a developer can press (CTRL+SHIFT+D) to go to the debugg
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build-client",
-            "program": "${workspaceFolder}/WalletWasabi.Gui/bin/Debug/netcoreapp3.0/WalletWasabi.Gui.dll",
+            "program": "${workspaceFolder}/WalletWasabi.Gui/bin/Debug/netcoreapp3.1/WalletWasabi.Gui.dll",
             "args": [],
             "cwd": "${workspaceFolder}/WalletWasabi.Gui",
             "stopAtEntry": false,
@@ -175,7 +175,7 @@ Once this has been done a developer can press (CTRL+SHIFT+D) to go to the debugg
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build-backend",
-            "program": "${workspaceFolder}/WalletWasabi.Backend/bin/Debug/netcoreapp3.0/WalletWasabi.Backend.dll",
+            "program": "${workspaceFolder}/WalletWasabi.Backend/bin/Debug/netcoreapp3.1/WalletWasabi.Backend.dll",
             "args": [],
             "cwd": "${workspaceFolder}/WalletWasabi.Backend",
             "stopAtEntry": false,
@@ -206,7 +206,7 @@ Once this has been done a developer can press (CTRL+SHIFT+D) to go to the debugg
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build-client",
-            "program": "${workspaceFolder}/WalletWasabi.Gui/bin/Debug/netcoreapp3.0/WalletWasabi.Gui.dll",
+            "program": "${workspaceFolder}/WalletWasabi.Gui/bin/Debug/netcoreapp3.1/WalletWasabi.Gui.dll",
             "args": [
                 "mix", "--wallet:TestNet"
             ],
@@ -278,7 +278,7 @@ Once this has been done a developer can press (CTRL+SHIFT+D) to go to the debugg
                 "/consoleloggerparameters:NoSummary"
                 ],
             "problemMatcher": "$msCompile"
-        },        
+        },
         {
             "label": "watch",
             "command": "dotnet",
@@ -296,7 +296,7 @@ Once this has been done a developer can press (CTRL+SHIFT+D) to go to the debugg
 }
 ```
 
-## How to setup and run the whole system 
+## How to setup and run the whole system
 
 Sometimes, as developers, we need to test an advanced interaction between the Bitcoin Core node, the Coordinator and one or more Wasabi clients, just imagine the case we want to verify the system behavior after a blockchain reorg. In this cases we have to setup and run all the components and use the regtest.
 
@@ -310,7 +310,7 @@ Download and install Bitcoin Core from https://bitcoincore.org/bin/.
 There are more than one way to do this:
 
 * From **VSCode** go to the Debug panel (CTRL+SHIFT+D), select `Wasabi Backend .NET Core` and press play.
-* From **Terminal** just type `dotnet run <WasabiProjectFolder>/WalletWasabi.Backend/WalletWasabi.Backend.csproj` 
+* From **Terminal** just type `dotnet run <WasabiProjectFolder>/WalletWasabi.Backend/WalletWasabi.Backend.csproj`
 
 ### Get some coins to test
 
