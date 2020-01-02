@@ -59,30 +59,30 @@ Name and Surname
   
 |Antivirus  | Online Form | eMail address
 |----  | ----   | ---- |
-|Antity | No | submit@antiy.com
-|Arcabit | No | virus@arcabit.com
+|Antity | No | [submit@antiy.com](mailto:submit@antiy.com)
+|Arcabit | No | [virus@arcabit.com](mailto:virus@arcabit.com)
 |Avast | [Yes](https://www.avast.com/false-positive-file-form.php) | N/A
 |AVG | [Yes](https://www.avg.com/en-us/false-positive-file-form) | N/A
-|Avira | [Yes](https://www.avira.com/en/analysis/submit) | virus@avira.com
-|BitDefender | [Yes](https://www.bitdefender.com/submit/) | virus_submission@bitdefender.com
-|Cyren | No | info@cyren.com
-|eScan | [Yes](http://support.mwti.net/support/index.php) | fp@escanav.com
+|Avira | [Yes](https://www.avira.com/en/analysis/submit) | [virus@avira.com](mailto:virus@avira.com)
+|BitDefender | [Yes](https://www.bitdefender.com/submit/) | [virus_submission@bitdefender.com](mailto:virus_submission@bitdefender.com)
+|Cyren | No | [info@cyren.com](mailto:info@cyren.com)
+|eScan | [Yes](http://support.mwti.net/support/index.php) | [fp@escanav.com](mailto:fp@escanav.com)
 |e-Gambit  | [Yes](https://tehtris.com/en/fp-egambit/) | N/A
-|ESET-NOD32  | No | samples@eset.com
-|FireEye  | No | info@fireeye.com
-|Fortinet  | [Yes](https://fortiguard.com/faq/onlinescanner) | submitvirus@fortinet.com
+|ESET-NOD32  | No | [samples@eset.com](mailto:samples@eset.com)
+|FireEye  | No | [info@fireeye.com](mailto:info@fireeye.com)
+|Fortinet  | [Yes](https://fortiguard.com/faq/onlinescanner) | [submitvirus@fortinet.com](mailto:submitvirus@fortinet.com)
 |F-Secure  | [Yes](https://www.f-secure.com/en/business/support-and-downloads/submit-a-sample) | N/A
 |Gdata  | [Yes](https://su.gdatasoftware.com/en/sample-submission) | N/A
-|Ikarus  | No | samples@ikarus.at, probe@ikarus.at
-|Jiangmin  | No | support@jiangmin.com
+|Ikarus  | No | [samples@ikarus.at](mailto:samples@ikarus.at), [probe@ikarus.at](mailto:probe@ikarus.at)
+|Jiangmin  | No | [support@jiangmin.com](mailto:support@jiangmin.com)
 |Kaspersky  | [Yes](https://virusdesk.kaspersky.com/) | N/A
-|K7 Computing | [Yes](https://www.k7computing.com/us/contact-us) | reportfp@k7computing.com
-|MAX  | No | info@maxpcsecure.com
+|K7 Computing | [Yes](https://www.k7computing.com/us/contact-us) | [reportfp@k7computing.com](mailto:reportfp@k7computing.com)
+|MAX  | No | [info@maxpcsecure.com](mailto:info@maxpcsecure.com)
 |TrendMicro  | [Yes](https://www.trendmicro.com/en_us/about/legal/detection-reevaluation.html) | N/A
 
 ## GUI Tutorials
 
 This list contains tutorials on how to report Bitcoin Core and Wasabi Wallet as false positive, directly from your antivirus software:
 
-- ESET-NOD32: https://forum.eset.com/topic/18724-how-to-submit-suspicious-file-to-eset-research-lab-via-program-gui/
-- TrendMicro: https://success.trendmicro.com/solution/1115860-reporting-a-false-positive-issue-in-worry-free-business-security-wfbs
+- ESET-NOD32: [https://forum.eset.com/topic/18724-how-to-submit-suspicious-file-to-eset-research-lab-via-program-gui/](https://forum.eset.com/topic/18724-how-to-submit-suspicious-file-to-eset-research-lab-via-program-gui/)
+- TrendMicro: [https://success.trendmicro.com/solution/1115860-reporting-a-false-positive-issue-in-worry-free-business-security-wfbs](https://success.trendmicro.com/solution/1115860-reporting-a-false-positive-issue-in-worry-free-business-security-wfbs)
