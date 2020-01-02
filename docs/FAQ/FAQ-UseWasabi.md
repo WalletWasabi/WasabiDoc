@@ -137,7 +137,7 @@ Take into account that it is not only encryption what [BIP 38](/using-wasabi/BIP
 :::
 
 :::details
-### Does Wasabi support Trezor's, Ledger's and Coldcard's hidden wallets?
+### Does Wasabi support the hidden wallets of hardware wallets?
 
 Partially.
 Only device side passphrase is supported.
