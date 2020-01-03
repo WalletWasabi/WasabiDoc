@@ -50,7 +50,7 @@ module.exports = {
             title = ''
           }
           const slug = slugify(title)
-          return `<details id="${slug}"><summary><a href="#${slug}" aria-hidden="true" class="header-anchor">#</a> ${title}</summary>`
+          return `<details id="${slug}"><summary><a href="#${slug}" aria-hidden="true" class="header-anchor">#</a> <h4>${title}</h4></summary>`
         } else if (token.type === 'container_details_close') {
           return '</details>'
         }
@@ -197,6 +197,7 @@ module.exports = {
             "/building-wasabi/ToDo.md",
             "/building-wasabi/CodingConventions.md",
             "/building-wasabi/ContributionGame.md",
+            "/building-wasabi/FalsePositive.md",
             "/building-wasabi/Security.md",
             "/building-wasabi/CodeCoverage.md",
             "/building-wasabi/HardwareWalletTestingGuide.md",
