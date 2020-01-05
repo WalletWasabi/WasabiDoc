@@ -19,7 +19,8 @@ In the `Send` tab you select one or more UTXO, these are the inputs of the trans
 For example, let's assume that you choose a red-shield / anonymity set 1 UTXO worth 2 bitcoins.
 You put Alice's address in the `Receiving Address` field, and set the spending `Amount`. In this example, we are sending 0.5 bitcoin. This will be the first output of the transaction.   
 
-Since your chosen UTXO contained 2 bitcoins, after sending 0.5 to Alice there will be 1.5 bitcoin remaining from the original amount. This left over amount will automatically go to a new address in your wallet, and this is called the change output.  
+Since your chosen UTXO contained 2 bitcoins, after sending 0.5 to Alice there will be 1.5 bitcoin remaining from the original amount.
+This left over amount will automatically go to a new address in your wallet, and this is called the change output.
 
 This leftover 1.5 bitcoin change UTXO is connected to the input UTXO of the transaction, and thus also has an `anonymity set` of 1.
 As a result, when you send any part of this leftover/change coin in a new transaction, it is clear to any observer that you were part of the transaction that sent 0.5 bitcoin to Alice.  
