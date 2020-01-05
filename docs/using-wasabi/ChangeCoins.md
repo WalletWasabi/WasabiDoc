@@ -51,7 +51,7 @@ Whenever you combine and send more than one UTXO in a single transaction, the lo
 
 When you take a 100 anonset UTXO, and you CoinJoin it again in a new 100 participant round, then you receive one UTXO with new, combined anonset of 200, and one leftover/change UTXO with same anonset as the input UTXO: 100.
 
-The change UTXO still has an anonset 100 because it is the leftover, non-CoinJoined change output of a second CoinJoin that used the 100 anonset UTXO as beginning input.
+The change UTXO still has an anonset 100 because it is the leftover, non-coinjoined change output of a second CoinJoin that used the 100 anonset UTXO as beginning input.
 This change can still reveal premix history which is another CoinJoin, but ownership analysis cannot go further back than the first CoinJoin.
 
 It is ok to use and spend this change output. Depending on who you are sending to, and what level of privacy you desire in that transaction, you could choose to send your coins with an anonset of 100, or for even more privacy, you can choose to send the coins with an anonset of 200. Just remember that if you combine the two in same transaction, your effective anonymity set will be the lower anonymity set number of the selected coins. 
