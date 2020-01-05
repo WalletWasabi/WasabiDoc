@@ -79,7 +79,8 @@ This can easily be done by clicking the `Max` button in the `Send` tab, which wi
 This might not be possible in some cases where you have to pay a specific value of a payment request.
 
 However, in other cases it is possible, for example donations or when depositing to an exchange.
-Consider supporting invaluable projects like [The Tor Project](https://donate.torproject.org/cryptocurrency) or [the Electronic Frontier Foundation](https://supporters.eff.org/donate/donate). You can find a list of organizations that accept bitcoin donations [here](https://en.bitcoin.it/wiki/Donation-accepting_organizations_and_projects).
+Consider supporting invaluable projects like [The Tor Project](https://donate.torproject.org/cryptocurrency) or [the Electronic Frontier Foundation](https://supporters.eff.org/donate/donate).
+You can find a list of organizations that accept bitcoin donations [here](https://en.bitcoin.it/wiki/Donation-accepting_organizations_and_projects).
 
 ### Spend the change with another entity, where you don't mind if each of the two know that you transact with the other entity.
 For example, if you buy something from Alice that costs 0.03 bitcoin, and you choose a UTXO in your wallet containing 0.1 bitcoin to use for payment.
