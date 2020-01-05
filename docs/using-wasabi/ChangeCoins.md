@@ -116,7 +116,7 @@ So consolidating your change in a CoinJoin is significantly more private and eff
 
 ### Spend the change to the same entity as in the initial transaction, but always use a new address.
 So, if in the first transaction you have 0.10 bitcoin and send Alice 0.04 bitcoin, you get 0.06 bitcoin back as change in a new address, which Alice can see belongs to you.
-Now, in a second transaction where you want to send Alice 0.05 bitcoin, you can select that 0.06 bitcoin change coin without losing any privacy, because Alice already knows this is your coin.  
+Now, in a second transaction where you want to send Alice 0.05 bitcoin, you can select that 0.06 bitcoin change coin without losing any privacy, because Alice already knows this is your coin.
 
 In this second transaction you will get back 0.01 bitcoin as change, which again, will still be known to Alice.
 If, in a third transaction you want to send Alice 0.02 bitcoin, then you can consolidate the 0.01 bitcoin change with a new 0.10 bitcoin mixed coin, thus getting 0.09 bitcoin change.
