@@ -26,7 +26,7 @@ This process is applicable to any bitcoin transaction where the "send" amount is
 
 ### First round CoinJoin change
 
-When you have a KYC red-shield `anonymity set 1` UTXO and you register it for a CoinJoin round, you will afterwards receive 1 green-shield `anonymity set 'x'` UTXO, and one red-shield `anonymity set 1` change UTXO. The number represented by 'x' shown in the green-shield will reflect your chosen anonymity set size for that round.
+When you have a KYC red-shield `anonymity set 1` UTXO and you register it for a CoinJoin round, you will afterwards receive 1 green-shield `anonymity set 'x'` UTXO, and one red-shield `anonymity set 1` change UTXO. The number represented by 'x' shown in the green-shield will reflect the anonymity set size for that round.
 
 In this example, lets assume that the current minimum amount that can be registered for a CoinJoin round is 0.10 bitcoin. You happen to have a UTXO worth 0.105 bitcoin, and you select it to be CoinJoined.  
 
