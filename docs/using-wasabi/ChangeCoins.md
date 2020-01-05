@@ -107,7 +107,7 @@ Since Wasabi does not yet support Lightning Network functionality, you must use 
 
 ### Atomic swap into Lightning Network
 There are some services that provide an atomic swap where you send the whole change coin to a multisignature hashed time locked contract on-chain.
-In exchange, you receive a payment routed through the Lightning Network into one of your payment channels.  
+In exchange, you receive a payment routed through the Lightning Network into one of your payment channels.
 
 The swap is atomic, meaning either you receive the lightning payment, or you get the bitcoin back on-chain, so the service provider cannot steal from you.
 If you use a regular lightning invoice to receive the funds, then the service provider knows your node's public key and the channel he sends the bitcoin to.  
