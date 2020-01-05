@@ -121,4 +121,4 @@ Now, in a second transaction where you want to send Alice 0.05 bitcoin, you can 
 In this second transaction you will get back 0.01 bitcoin as change, which again, will still be known to Alice.
 If, in a third transaction you want to send Alice 0.02 bitcoin, then you can consolidate the 0.01 bitcoin change with a new 0.10 bitcoin mixed coin, thus getting 0.09 bitcoin change.  
 
-Now Alice will know that you owned the 0.10 bitcoin and and that you currently own the 0.09 bitcoin change, but she cannot find out about your premix transaction history.
+Now Alice will know that you owned the 0.10 bitcoin and that you currently own the 0.09 bitcoin change, but she cannot find out about your premix transaction history.
