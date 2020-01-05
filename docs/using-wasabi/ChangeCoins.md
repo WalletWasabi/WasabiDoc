@@ -79,7 +79,7 @@ UTXO in your wallet containing 0.10 bitcoin to use for payment. Alice receives h
 If you then send that 0.07 bitcoin to someone else that Alice doesn't like, she can see it and could potentially use that information against you. But if instead you spend the 0.07 bitcoin change in a transaction to Carol, who you know is a good friend of Alice, then Alice probably won't mind.
 
 ### Mix with JoinMarket.
-In [JoinMarket](https://github.com/JoinMarket-Org/joinmarket-clientserver) as a "market taker" you can specify exactly what denomination of equal value outputs are generated in the CoinJoin.
+In [JoinMarket](https://github.com/JoinMarket-Org/joinmarket-clientserver) as a `market taker` you can specify exactly what denomination of equal value outputs are generated in the CoinJoin.
 So you can send the Wasabi change to your JoinMarket wallet and take an offer to mix for some number of rounds.
 
 The coins you will receive after the JoinMarket tumbling algorithm will have a sufficient anonymity set, and you can use them for spending again.
