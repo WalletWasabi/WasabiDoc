@@ -60,7 +60,7 @@ You want to avoid merging `anonymity set 1` coins with `anonymity set > 1` mixed
 ## Your options to use change privately
 
 ### Avoid change in the first place.
-Whenever possible, choose UTXO's for transactions where the destination addresses receive the entire value, of your UTXO, and you don't get any change back.
+Whenever possible, choose UTXO's for transactions where the destination addresses receive the entire value of your UTXO's, and you don't get any change back.
 This can easily be done by clicking the `Max` button in the `Send` tab, which will automatically deduct the mining fee and send the highest amount possible to the destination.
 This might not be possible in some cases where you have to pay a specific value of a payment request.
 
