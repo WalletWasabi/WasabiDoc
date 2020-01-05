@@ -36,7 +36,9 @@ When you have a KYC red-shield `anonymity set 1` UTXO and you register it for a 
 In this example, let's assume that the current minimum amount that can be registered for a CoinJoin round is 0.1 bitcoin.
 You happen to have a UTXO worth 0.105 bitcoin, and you select it to be coinjoined.
 
- After this CoinJoin round has concluded, you will receive 2 separate UTXO's. The larger UTXO will have a green-shield that indicates the size of the anonymity set achieved in that CoinJoin round. The other, much smaller UXTO will be the amount (change) that was left over, and it will have a red-shield indicating an anonymity set of '1' as it did not participate in the CoinJoin. 
+After this CoinJoin round has concluded, you will receive 2 separate UTXOs.
+The larger UTXO will have a green-shield that indicates the size of the anonymity set achieved in that CoinJoin round.
+The other, much smaller UTXO will be the amount (change) that was left over, and it will have a red-shield indicating an anonymity set of `1` as it did not participate in the CoinJoin.
 
 Remember, all inputs and outputs to a CoinJoin round must be exactly the same size. Otherwise, it would be easy to trace any of the output UTXO's back to its original/input UTXO. So, in the vast majority of CoinJoin rounds, there will be at least a small amount of leftover/change after the round has completed.
 
