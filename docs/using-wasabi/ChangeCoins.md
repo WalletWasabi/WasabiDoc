@@ -19,7 +19,7 @@ You put Alice's address in the `Receiving Address` field, and set the spending `
 
 Since your chosen UTXO contained 2 bitcoins, after sending 0.5 to Alice there will be 1.5 bitcoin remaining from the original amount. This left over amount will automatically go to a new address in your wallet, and this is called the change output.  
 
-This leftover 1.5 bitcoin change UTXO is connected to the input UTXO of the transaction, and thus also has an `anonymity set' of 1.
+This leftover 1.5 bitcoin change UTXO is connected to the input UTXO of the transaction, and thus also has an `anonymity set` of 1.
 As a result, when you send any part of this leftover/change coin in a new transaction, it is clear to any observer that you were part of the transaction that sent 0.5 bitcoin to Alice.  
 
 This process is applicable to any bitcoin transaction where the "send" amount is less than the total number of bitcoins associated with a given address/UTXO. 
