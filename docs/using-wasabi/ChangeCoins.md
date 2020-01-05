@@ -82,7 +82,7 @@ If you then send that 0.07 bitcoin to someone else that Alice doesn't like, she 
 In [JoinMarket](https://github.com/JoinMarket-Org/joinmarket-clientserver) as a "market taker" you can specify exactly what denomination of equal value outputs are generated in the CoinJoin.
 So you can send the Wasabi change to your JoinMarket wallet and take an offer to mix for some number of rounds.  
 
-The coins you will receive after the JoinMarket tumbling algorithm will have a sufficient anonymity set, and you can use it for spending again.
+The coins you will receive after the JoinMarket tumbling algorithm will have a sufficient anonymity set, and you can use them for spending again.
 
 ### Open a Lightning Network channel.
 The Lightning Network can be a very private way of sending bitcoin, and you can choose the channel size to be exactly the size of your change coin.
