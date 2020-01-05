@@ -80,7 +80,7 @@ If you then send that 0.07 bitcoin to someone else that Alice doesn't like, she 
 
 ### Mix with JoinMarket.
 In [JoinMarket](https://github.com/JoinMarket-Org/joinmarket-clientserver) as a "market taker" you can specify exactly what denomination of equal value outputs are generated in the CoinJoin.
-So you can send the Wasabi change to your JoinMarket wallet and take an offer to mix for some number of rounds.  
+So you can send the Wasabi change to your JoinMarket wallet and take an offer to mix for some number of rounds.
 
 The coins you will receive after the JoinMarket tumbling algorithm will have a sufficient anonymity set, and you can use them for spending again.
 
