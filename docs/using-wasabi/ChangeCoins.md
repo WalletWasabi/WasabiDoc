@@ -112,7 +112,8 @@ In exchange, you receive a payment routed through the Lightning Network into one
 The swap is atomic, meaning either you receive the lightning payment, or you get the bitcoin back on-chain, so the service provider cannot steal from you.
 If you use a regular lightning invoice to receive the funds, then the service provider knows your node's public key and the channel he sends the bitcoin to.  
 
-For much better privacy, use rendezvous routing so that the sender does not gain knowledge of your receiving node. Also ensure that the communication with the swap server is done over the tor network.
+For much better privacy, use rendezvous routing so that the sender does not gain knowledge of your receiving node.
+Also ensure that the communication with the swap server is done over the tor network.
 
 ### Consolidate several change coins, but in a CoinJoin directly.
 If you consolidate many change coins in a regular non-CoinJoin transaction in the `Send` tab, then any outside observer can easily see that one user controls all these coins.
