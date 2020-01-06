@@ -15,7 +15,7 @@ This guide is for giving detailed instructions about how to debug Wasabi Wallet 
 We will focus on how to achieve this with `vscode` first because that is the cross-platform IDE used by some of the developer team members.
 
 ## Before to start
-We assume the reader has already read the project [README](https://github.com/zkSNACKs/WalletWasabi/blob/master/README.md) file  and has installed the .NET Core SDK, knows how to clone the repository and build the Wasabi solution.
+We assume the reader has already read the project [README](https://github.com/zkSNACKs/WalletWasabi/blob/master/README.md) file  and has installed the [.NET Core ${dotnetVersion} SDK](https://www.microsoft.com/net/download), knows how to clone the repository and build the Wasabi solution.
 
 
 ## Install VS Code and extensions
@@ -56,7 +56,7 @@ This file contains the list of projects that can be launched, how to do it, what
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build-client",
-      "program": "${workspaceFolder}/WalletWasabi.Gui/bin/Debug/netcoreapp3.1/WalletWasabi.Gui.dll",
+      "program": "${workspaceFolder}/WalletWasabi.Gui/bin/Debug/netcoreapp${dotnetVersion}/WalletWasabi.Gui.dll",
       "args": [],
       "cwd": "${workspaceFolder}/WalletWasabi.Gui",
       "stopAtEntry": false,
@@ -99,7 +99,7 @@ Add the following launcher to the array of `configurations` in the `.vscode/laun
    "type": "coreclr",
    "request": "launch",
    "preLaunchTask": "build-backend",
-   "program": "${workspaceFolder}/WalletWasabi.Backend/bin/Debug/netcoreapp3.1/WalletWasabi.Backend.dll",
+   "program": "${workspaceFolder}/WalletWasabi.Backend/bin/Debug/netcoreapp${dotnetVersion}/WalletWasabi.Backend.dll",
    "args": [],
    "cwd": "${workspaceFolder}/WalletWasabi.Backend",
    "stopAtEntry": false,
@@ -164,7 +164,7 @@ Once this has been done a developer can press (CTRL+SHIFT+D) to go to the debugg
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build-client",
-            "program": "${workspaceFolder}/WalletWasabi.Gui/bin/Debug/netcoreapp3.1/WalletWasabi.Gui.dll",
+            "program": "${workspaceFolder}/WalletWasabi.Gui/bin/Debug/netcoreapp${dotnetVersion}/WalletWasabi.Gui.dll",
             "args": [],
             "cwd": "${workspaceFolder}/WalletWasabi.Gui",
             "stopAtEntry": false,
@@ -175,7 +175,7 @@ Once this has been done a developer can press (CTRL+SHIFT+D) to go to the debugg
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build-backend",
-            "program": "${workspaceFolder}/WalletWasabi.Backend/bin/Debug/netcoreapp3.1/WalletWasabi.Backend.dll",
+            "program": "${workspaceFolder}/WalletWasabi.Backend/bin/Debug/netcoreapp${dotnetVersion}/WalletWasabi.Backend.dll",
             "args": [],
             "cwd": "${workspaceFolder}/WalletWasabi.Backend",
             "stopAtEntry": false,
@@ -206,7 +206,7 @@ Once this has been done a developer can press (CTRL+SHIFT+D) to go to the debugg
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build-client",
-            "program": "${workspaceFolder}/WalletWasabi.Gui/bin/Debug/netcoreapp3.1/WalletWasabi.Gui.dll",
+            "program": "${workspaceFolder}/WalletWasabi.Gui/bin/Debug/netcoreapp${dotnetVersion}/WalletWasabi.Gui.dll",
             "args": [
                 "mix", "--wallet:TestNet"
             ],
