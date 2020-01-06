@@ -42,7 +42,7 @@ The larger UTXO will have a green-shield that indicates the size of the anonymit
 The other, much smaller UTXO will be the amount (change) that was left over, and it will have a red-shield indicating an anonymity set of `1` as it did not participate in the CoinJoin.
 
 Remember, to have green-shield UTXOs, all denomination outputs of a CoinJoin round must be equal.
-Otherwise, it would be easy to trace any of the output UTXOs back to its original/input UTXO.
+Otherwise, it would be easy to trace any of the output UTXOs back to its original input UTXO.
 So, in the vast majority of CoinJoin rounds, there will be at least a small amount of leftover/change after the round has completed.
 
 The small UTXO that is leftover/change from a CoinJoin round is clearly tied to your KYC input UTXO, but the green-shield UTXO is not.
