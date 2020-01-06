@@ -5,7 +5,7 @@
 }
 ---
 
-## What to do with "change" coins
+# Change coins
 
 [[toc]]
 
