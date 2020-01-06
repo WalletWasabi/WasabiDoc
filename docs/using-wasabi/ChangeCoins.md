@@ -61,7 +61,7 @@ This change can still reveal premix history which is another CoinJoin, but owner
 
 It is ok to use and spend this change output.
 Depending on who you are sending to, and what level of privacy you desire in that transaction, you could choose to send your coins with an anonset of 100, or for even more privacy, you can choose to send the coins with an anonset of 200.
-Just remember that if you combine the two in the same transaction, your effective anonymity set will be the lower anonymity set number of the selected coins.
+Just remember that if you consolidate the two in the same transaction, your effective anonymity set will be the lower anonymity set number of the selected coins, in this case 100.
 
 ## Why change is an issue
 
