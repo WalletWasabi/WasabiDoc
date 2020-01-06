@@ -39,7 +39,7 @@ You happen to have a UTXO worth 0.105 bitcoin, and you select it to be coinjoine
 
 After this CoinJoin round has concluded, you will receive 2 separate UTXOs.
 The larger UTXO will have a green-shield that indicates the size of the anonymity set achieved in that CoinJoin round.
-The other, much smaller UTXO will be the amount (change) that was left over, and it will have a red-shield indicating an anonymity set of `1` as it did not participate in the CoinJoin.
+The other, much smaller UTXO will be the amount (change) that was left over, and it will have a red-shield indicating an anonymity set of `1` as it does not have the equal value denomination of the CoinJoin.
 
 Remember, to have green-shield UTXOs, all denomination outputs of a CoinJoin round must be equal.
 Otherwise, it would be easy to trace any of the output UTXOs back to its original input UTXO.
