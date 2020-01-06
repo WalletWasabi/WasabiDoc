@@ -72,7 +72,7 @@ Name and Surname
 |FireEye  | No | [info@fireeye.com](mailto:info@fireeye.com)
 |Fortinet  | [Yes](https://fortiguard.com/faq/onlinescanner) | [submitvirus@fortinet.com](mailto:submitvirus@fortinet.com)
 |F-Secure  | [Yes](https://www.f-secure.com/en/business/support-and-downloads/submit-a-sample) | [customer-care@f-secure.com](mailto:customer-care@f-secure.com)
-|Gdata  | [Yes](https://su.gdatasoftware.com/en/sample-submission) | N/A
+|Gdata  | [Yes](https://su.gdatasoftware.com/en/sample-submission) | [en-supportx@gdata.de](mailto:en-supportx@gdata.de)
 |Ikarus  | No | [samples@ikarus.at](mailto:samples@ikarus.at), [probe@ikarus.at](mailto:probe@ikarus.at)
 |Jiangmin  | No | [support@jiangmin.com](mailto:support@jiangmin.com)
 |Kaspersky  | [Yes](https://virusdesk.kaspersky.com/) | N/A
