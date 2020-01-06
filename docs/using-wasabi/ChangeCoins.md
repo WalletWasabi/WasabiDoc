@@ -55,7 +55,6 @@ Whenever you combine and send more than one UTXO in a single transaction, the lo
 ### Second round CoinJoin change
 
 When you take a 100 anonset UTXO, and you CoinJoin it again in a new 100 participant round, then you receive one UTXO with new, combined anonset of 200, and one leftover/change UTXO with same anonset as the input UTXO: 100.
-
 The change UTXO still has an anonset 100 because it is the leftover, non-coinjoined change output of a second CoinJoin that used the 100 anonset UTXO as beginning input.
 This change can still reveal premix history which is another CoinJoin, but ownership analysis cannot go further back than the first CoinJoin.
 
