@@ -59,15 +59,17 @@ Name and Surname
   
 |Antivirus  | Online Form | eMail address
 |----  | ----   | ---- |
-|AVG | [Yes](https://www.avg.com/en-us/false-positive-file-form) | N/A
 |Antity | No | [submit@antiy.com](mailto:submit@antiy.com)
 |Arcabit | No | [virus@arcabit.com](mailto:virus@arcabit.com), [pomoc@antywirus.pl](mailto:pomoc@antywirus.pl)
 |Avast | [Yes](https://www.avast.com/false-positive-file-form.php) | N/A
+|AVG | [Yes](https://www.avg.com/en-us/false-positive-file-form) | N/A
 |Avira | [Yes](https://www.avira.com/en/analysis/submit) | [virus@avira.com](mailto:virus@avira.com)
 |BitDefender | [Yes](https://www.bitdefender.com/submit/) | [virus_submission@bitdefender.com](mailto:virus_submission@bitdefender.com)
 |Cyren | No | [info@cyren.com](mailto:info@cyren.com)
-|ESET-NOD32  | No | [samples@eset.com](mailto:samples@eset.com)
+|e-Gambit  | [Yes](https://tehtris.com/en/fp-egambit/) | N/A
 |Emsisoft (BitDefender engine) | [Yes](https://www.emsisoft.com/en/support/submit/) | [fp@emsisoft.com](mailto:fp@emsisoft.com)
+|eScan | [Yes](http://support.mwti.net/support/index.php) | [fp@escanav.com](mailto:fp@escanav.com)
+|ESET-NOD32  | No | [samples@eset.com](mailto:samples@eset.com)
 |F-Secure  | [Yes](https://www.f-secure.com/en/business/support-and-downloads/submit-a-sample) | [customer-care@f-secure.com](mailto:customer-care@f-secure.com)
 |FireEye  | No | [info@fireeye.com](mailto:info@fireeye.com)
 |Fortinet  | [Yes](https://fortiguard.com/faq/onlinescanner) | [submitvirus@fortinet.com](mailto:submitvirus@fortinet.com)
@@ -79,8 +81,6 @@ Name and Surname
 |MAX  | No | [sales@stsc.com](mailto:sales@stsc.com), [root@malwares.com](mailto:root@malwares.com)
 |Qihoo-360 | [Yes](https://www.360totalsecurity.com/en/suspicion/false-positive/) | N/A
 |TrendMicro  | [Yes](https://www.trendmicro.com/en_us/about/legal/detection-reevaluation.html) | N/A
-|e-Gambit  | [Yes](https://tehtris.com/en/fp-egambit/) | N/A
-|eScan | [Yes](http://support.mwti.net/support/index.php) | [fp@escanav.com](mailto:fp@escanav.com)
 
 ## GUI Tutorials
 
