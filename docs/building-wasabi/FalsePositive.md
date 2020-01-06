@@ -60,7 +60,7 @@ Name and Surname
 |Antivirus  | Online Form | eMail address
 |----  | ----   | ---- |
 |Antity | No | [submit@antiy.com](mailto:submit@antiy.com)
-|Arcabit | No | [virus@arcabit.com](mailto:virus@arcabit.com)
+|Arcabit | No | [virus@arcabit.com](mailto:virus@arcabit.com), [pomoc@antywirus.pl](mailto:pomoc@antywirus.pl)
 |Avast | [Yes](https://www.avast.com/false-positive-file-form.php) | N/A
 |AVG | [Yes](https://www.avg.com/en-us/false-positive-file-form) | N/A
 |Avira | [Yes](https://www.avira.com/en/analysis/submit) | [virus@avira.com](mailto:virus@avira.com)
@@ -71,13 +71,13 @@ Name and Surname
 |ESET-NOD32  | No | [samples@eset.com](mailto:samples@eset.com)
 |FireEye  | No | [info@fireeye.com](mailto:info@fireeye.com)
 |Fortinet  | [Yes](https://fortiguard.com/faq/onlinescanner) | [submitvirus@fortinet.com](mailto:submitvirus@fortinet.com)
-|F-Secure  | [Yes](https://www.f-secure.com/en/business/support-and-downloads/submit-a-sample) | N/A
+|F-Secure  | [Yes](https://www.f-secure.com/en/business/support-and-downloads/submit-a-sample) | [customer-care@f-secure.com](mailto:customer-care@f-secure.com)
 |Gdata  | [Yes](https://su.gdatasoftware.com/en/sample-submission) | N/A
 |Ikarus  | No | [samples@ikarus.at](mailto:samples@ikarus.at), [probe@ikarus.at](mailto:probe@ikarus.at)
 |Jiangmin  | No | [support@jiangmin.com](mailto:support@jiangmin.com)
 |Kaspersky  | [Yes](https://virusdesk.kaspersky.com/) | N/A
 |K7 Computing | [Yes](https://www.k7computing.com/us/contact-us) | [reportfp@k7computing.com](mailto:reportfp@k7computing.com)
-|MAX  | No | [info@maxpcsecure.com](mailto:info@maxpcsecure.com)
+|MAX  | No | [sales@stsc.com](mailto:sales@stsc.com), [root@malwares.com](mailto:root@malwares.com)
 |TrendMicro  | [Yes](https://www.trendmicro.com/en_us/about/legal/detection-reevaluation.html) | N/A
 
 ## GUI Tutorials
