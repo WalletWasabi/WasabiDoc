@@ -27,7 +27,7 @@ This left over amount will automatically go to a new address in your wallet, and
 This leftover 1.5 bitcoin change UTXO is connected to the input UTXO of the transaction, and thus also has an `anonymity set` of 1.
 As a result, when you send this leftover/change coin in a new transaction, it is clear to any observer that you were part of the transaction that sent 0.5 bitcoin to Alice.
 
-This process is applicable to any bitcoin transaction where the "send" amount is less than the total number of bitcoins associated with a given address/UTXO. 
+This process is applicable to any Bitcoin transaction where the `sent` amount is less than the total value of the input UTXO.
 
 ### First round CoinJoin change
 
