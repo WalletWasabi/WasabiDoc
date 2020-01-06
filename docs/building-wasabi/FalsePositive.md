@@ -68,6 +68,7 @@ Name and Surname
 |Cyren | No | [info@cyren.com](mailto:info@cyren.com)
 |eScan | [Yes](http://support.mwti.net/support/index.php) | [fp@escanav.com](mailto:fp@escanav.com)
 |e-Gambit  | [Yes](https://tehtris.com/en/fp-egambit/) | N/A
+|Emsisoft | [Yes](https://www.emsisoft.com/en/support/submit/) | [fp@emsisoft.com](mailto:fp@emsisoft.com)
 |ESET-NOD32  | No | [samples@eset.com](mailto:samples@eset.com)
 |FireEye  | No | [info@fireeye.com](mailto:info@fireeye.com)
 |Fortinet  | [Yes](https://fortiguard.com/faq/onlinescanner) | [submitvirus@fortinet.com](mailto:submitvirus@fortinet.com)
