@@ -70,17 +70,19 @@ Name and Surname
 |Emsisoft (BitDefender engine) | [Yes](https://www.emsisoft.com/en/support/submit/) | [fp@emsisoft.com](mailto:fp@emsisoft.com)
 |eScan | [Yes](http://support.mwti.net/support/index.php) | [fp@escanav.com](mailto:fp@escanav.com)
 |ESET-NOD32  | No | [samples@eset.com](mailto:samples@eset.com)
-|F-Secure  | [Yes](https://www.f-secure.com/en/business/support-and-downloads/submit-a-sample) | [customer-care@f-secure.com](mailto:customer-care@f-secure.com)
+|F-Secure  | [Yes](https://www.f-secure.com/en/business/support-and-downloads/submit-a-sample) | N/A
 |FireEye  | No | [info@fireeye.com](mailto:info@fireeye.com)
 |Fortinet  | [Yes](https://fortiguard.com/faq/onlinescanner) | [submitvirus@fortinet.com](mailto:submitvirus@fortinet.com)
-|Gdata  | [Yes](https://su.gdatasoftware.com/en/sample-submission) | [en-supportx@gdata.de](mailto:en-supportx@gdata.de)
+|Gdata  | [Yes](https://su.gdatasoftware.com/en/sample-submission) | N/A
 |Ikarus  | No | [samples@ikarus.at](mailto:samples@ikarus.at), [probe@ikarus.at](mailto:probe@ikarus.at)
 |Jiangmin  | No | [support@jiangmin.com](mailto:support@jiangmin.com)
 |K7 Computing | [Yes](https://www.k7computing.com/us/contact-us) | [reportfp@k7computing.com](mailto:reportfp@k7computing.com)
 |Kaspersky  | [Yes](https://virusdesk.kaspersky.com/) | N/A
-|MAX  | No | [sales@stsc.com](mailto:sales@stsc.com), [root@malwares.com](mailto:root@malwares.com)
+|MAX  | No | [root@malwares.com](mailto:root@malwares.com)
+|Microsoft  | [Yes](https://www.microsoft.com/en-us/wdsi/filesubmission) | N/A
 |Qihoo-360 | [Yes](https://www.360totalsecurity.com/en/suspicion/false-positive/) | N/A
 |TrendMicro  | [Yes](https://www.trendmicro.com/en_us/about/legal/detection-reevaluation.html) | N/A
+
 
 ## GUI Tutorials
 
