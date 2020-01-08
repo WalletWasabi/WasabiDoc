@@ -27,7 +27,7 @@ If you are on Linux you must add some `udev` rules if you have not already, so y
 
 ```sh
 git clone https://github.com/bitcoin-core/HWI.git
-cd HWI/
+cd HWI/hwilib/
 sudo cp udev/*.rules /etc/udev/rules.d/
 sudo udevadm trigger
 sudo udevadm control --reload-rules
