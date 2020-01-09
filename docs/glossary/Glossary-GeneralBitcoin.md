@@ -283,7 +283,7 @@ Read more: [BIP 174 Partially Signed Bitcoin Transaction Format](https://github.
 :::details
 ### Payment Channels
 
-A payment channel is class of techniques designed to allow users to make multiple bitcoin transactions without committing all of the transactions to the bitcoin blockchain.
+A payment channel is class of techniques designed to allow users to make multiple Bitcoin transactions without committing all of the transactions to the Bitcoin blockchain.
 In a typical payment channel, only two transactions are added to the blockchain but an unlimited or nearly unlimited number of payments can be made between the participants.
 :::
 
