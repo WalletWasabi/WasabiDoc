@@ -404,7 +404,7 @@ Soft fork or soft-forking change is a fork in the blockchain which commonly occu
 
 In simple terms, a transfer of bitcoin from one address to another.
 More precisely, a transaction is a signed data structure expressing a transfer of value.
-Transactions are transmitted over the bitcoin network, collected by miners, and included into blocks, made permanent on the blockchain.
+Transactions are transmitted over the Bitcoin network, collected by miners, and included into blocks, made permanent on the blockchain.
 :::
 
 :::details
