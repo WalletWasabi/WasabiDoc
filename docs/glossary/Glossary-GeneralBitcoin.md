@@ -247,7 +247,9 @@ An off-chain transaction relies on other methods to record and validate the tran
 :::details
 ### P2PKH
 
-These outputs contain a locking script that locks the output to a public key hash, more commonly known as a bitcoin address. An output locked by a P2PKH script can be unlocked (spent) by presenting a public key and a digital signature created by the corresponding private key.
+Many transactions processed on the bitcoin network spend outputs locked with a Pay-to-Public-Key-Hash or "P2PKH" script.
+These outputs contain a locking script that locks the output to a public key hash, more commonly known as a bitcoin address.
+An output locked by a P2PKH script can be unlocked (spent) by presenting a public key and a digital signature created by the corresponding private key.
 :::
 
 :::details
