@@ -114,7 +114,7 @@ There are some services that provide an atomic swap where you send the whole cha
 In exchange, you receive a payment routed through the Lightning Network into one of your payment channels.
 
 The swap is atomic, meaning either you receive the lightning payment, or you get the bitcoin back on-chain, so the service provider cannot steal from you.
-If you use a regular lightning invoice to receive the funds, then the service provider knows your node's public key and the channel he sends the bitcoin to.  
+If you use a regular Lightning invoice to receive the funds, then the service provider knows your node's public key and the channel he sends the bitcoin to.
 
 For much better privacy, use rendezvous routing so that the sender does not gain knowledge of your receiving node.
 Also ensure that the communication with the swap server is done over the tor network.
