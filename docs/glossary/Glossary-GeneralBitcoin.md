@@ -425,6 +425,6 @@ Read more: [How can I select UTXOs for CoinJoin?](/FAQ/FAQ-UseWasabi.md#how-can-
 :::details
 ### Wallet
 
-Software that holds all your bitcoin addresses and secret keys.
+Software that holds all your Bitcoin addresses and secret keys.
 Use it to send, receive, and store your bitcoin.
 :::
