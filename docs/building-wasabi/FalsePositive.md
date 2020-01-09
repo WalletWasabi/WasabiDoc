@@ -60,25 +60,29 @@ Name and Surname
 |Antivirus  | Online Form | eMail address
 |----  | ----   | ---- |
 |Antity | No | [submit@antiy.com](mailto:submit@antiy.com)
-|Arcabit | No | [virus@arcabit.com](mailto:virus@arcabit.com)
+|Arcabit | No | [virus@arcabit.com](mailto:virus@arcabit.com), [pomoc@antywirus.pl](mailto:pomoc@antywirus.pl)
 |Avast | [Yes](https://www.avast.com/false-positive-file-form.php) | N/A
 |AVG | [Yes](https://www.avg.com/en-us/false-positive-file-form) | N/A
 |Avira | [Yes](https://www.avira.com/en/analysis/submit) | [virus@avira.com](mailto:virus@avira.com)
 |BitDefender | [Yes](https://www.bitdefender.com/submit/) | [virus_submission@bitdefender.com](mailto:virus_submission@bitdefender.com)
 |Cyren | No | [info@cyren.com](mailto:info@cyren.com)
-|eScan | [Yes](http://support.mwti.net/support/index.php) | [fp@escanav.com](mailto:fp@escanav.com)
 |e-Gambit  | [Yes](https://tehtris.com/en/fp-egambit/) | N/A
+|Emsisoft (BitDefender engine) | [Yes](https://www.emsisoft.com/en/support/submit/) | [fp@emsisoft.com](mailto:fp@emsisoft.com)
+|eScan | [Yes](http://support.mwti.net/support/index.php) | [samples@escanav.com](mailto:samples@escanav.com)
 |ESET-NOD32  | No | [samples@eset.com](mailto:samples@eset.com)
+|F-Secure  | [Yes](https://www.f-secure.com/en/business/support-and-downloads/submit-a-sample) | N/A
 |FireEye  | No | [info@fireeye.com](mailto:info@fireeye.com)
 |Fortinet  | [Yes](https://fortiguard.com/faq/onlinescanner) | [submitvirus@fortinet.com](mailto:submitvirus@fortinet.com)
-|F-Secure  | [Yes](https://www.f-secure.com/en/business/support-and-downloads/submit-a-sample) | N/A
 |Gdata  | [Yes](https://su.gdatasoftware.com/en/sample-submission) | N/A
 |Ikarus  | No | [samples@ikarus.at](mailto:samples@ikarus.at), [probe@ikarus.at](mailto:probe@ikarus.at)
 |Jiangmin  | No | [support@jiangmin.com](mailto:support@jiangmin.com)
-|Kaspersky  | [Yes](https://virusdesk.kaspersky.com/) | N/A
 |K7 Computing | [Yes](https://www.k7computing.com/us/contact-us) | [reportfp@k7computing.com](mailto:reportfp@k7computing.com)
-|MAX  | No | [info@maxpcsecure.com](mailto:info@maxpcsecure.com)
+|Kaspersky  | [Yes](https://virusdesk.kaspersky.com/) | N/A
+|MAX  | No | [root@malwares.com](mailto:root@malwares.com)
+|Microsoft  | [Yes](https://www.microsoft.com/en-us/wdsi/filesubmission) | N/A
+|Qihoo-360 | [Yes](https://www.360totalsecurity.com/en/suspicion/false-positive/) | N/A
 |TrendMicro  | [Yes](https://www.trendmicro.com/en_us/about/legal/detection-reevaluation.html) | N/A
+
 
 ## GUI Tutorials
 
