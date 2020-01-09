@@ -226,7 +226,7 @@ Read more: [Can I generate a multi signature script?](/FAQ/FAQ-UseWasabi.md#can-
 :::details
 ### Nonce
 
-The "nonce" in a bitcoin block is a 32-bit (4-byte) field whose value is set so that the hash of the block will contain a run of leading zeros.
+The `nonce` in a Bitcoin block is a 32-bit (4-byte) field whose value is set so that the hash of the block will contain a run of leading zeros.
 The rest of the fields may not be changed, as they have a defined meaning.
 :::
 
