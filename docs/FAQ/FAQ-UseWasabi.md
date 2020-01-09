@@ -1236,7 +1236,8 @@ In the top left menu `File > Open` you can see there are several logs available.
 
 ![](/MenuFileOpen.png)
 
-Alternatively, you can find the logs inside your [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) :::
+Alternatively, you can find the logs inside your [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder)
+:::
 
 :::details
 ### How to activate Lurking Wife Mode?
