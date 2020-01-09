@@ -107,7 +107,7 @@ A network-wide recalculation of the difficulty that occurs once every 2,016 bloc
 ### Difficulty Target
 
 A difficulty at which all the computation in the network will find blocks approximately every 10 minutes.
-It specifies the numeric value the hash of a valid block must not be above.
+It specifies the numeric value the hash of a block must not be above to be considered a valid block.
 :::
 
 :::details
