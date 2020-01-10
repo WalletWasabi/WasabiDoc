@@ -88,7 +88,7 @@ You can find a list of organizations that accept Bitcoin donations [here](https:
 
 ### Spend the change with another entity, where you don't mind if each of the two know that you transact with the other entity.
 For example, if you buy something from Alice that costs 0.03 bitcoin, and you choose a UTXO in your wallet containing 0.1 bitcoin to use for payment.
-Alice receives her 0.03 bitcoin, and the remaining change (0.07) bitcoin is assigned to another address in your wallet.
+Alice receives her 0.03 bitcoin, and the remaining change 0.07 bitcoin is assigned to another address in your wallet.
 Since Alice knows the details of the transaction, she knows that the 0.07 bitcoin at that address belongs to you.
 
 This creates a situation where, when you spend these 0.07 bitcoin to an address, Alice knows that you are involved in this transaction, and she could potentially use that information against you.
