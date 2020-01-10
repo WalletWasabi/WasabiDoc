@@ -51,7 +51,7 @@ So, in the vast majority of CoinJoin rounds, there will be at least a small amou
 
 The small UTXO that is leftover/change from a CoinJoin round is clearly tied to your KYC input UTXO, but the green-shield UTXO is not.
 If afterwards, you combine the red-shield UTXO with a green-shield UTXO in a single transaction, then it is clear that both came from the same owner.
-Since your identity was already known in the red-shield/anonset 1 UTXO, it is now linked with certainty to your coinjoined UTXO.
+Since your identity was already known in the red-shield/anonset 1 UTXO, it can now be linked to your coinjoined UTXO.
 
 Whenever you combine and send more than one UTXO in a single transaction, the lowest anonymity set among the inputs becomes the overriding anonymity set for all of the UTXOs used in that transaction.
 
