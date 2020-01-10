@@ -48,6 +48,20 @@ Read more: [Change coins](/using-wasabi/ChangeCoins.md)
 :::
 
 :::details
+### Coinbase
+
+A special field used as the sole input for coinbase transactions.
+The coinbase allows claiming the block reward and provides up to 100 bytes for arbitrary data.
+:::
+
+:::details
+### Coinbase Transaction
+
+The first transaction in a block.
+Always created by a miner, it includes a single coinbase.
+:::
+
+:::details
 ### Cold Storage
 
 Refers to keeping a reserve of important Bitcoin secrets offline.
@@ -58,11 +72,50 @@ Read more: [Cold Wasabi Protocol](/using-wasabi/ColdWasabi.md)
 :::
 
 :::details
-### Transaction Fees
+### Confirmations
 
-The sender of a transaction includes a fee to the network for processing the requested transaction.
-Most transactions require a minimum fee.
-Read more: [What fee should I select?](/FAQ/FAQ-UseWasabi.md#what-fee-should-i-select)
+Once a transaction is included in a block, it has one confirmation.
+As soon as another block is mined on the same blockchain, the transaction has two confirmations, and so on.
+Six or more confirmations is considered sufficient proof that a transaction cannot be reversed.
+:::
+
+:::details
+### Consensus
+
+When several nodes, usually most nodes on the network, all have the same blocks in their locally-validated best blockchain.
+:::
+
+:::details
+### Consensus Rules
+
+The block validation rules that full nodes follow to stay in consensus with other nodes.
+:::
+
+:::details
+### Difficulty
+
+A network-wide setting that controls how much computation is required to produce a proof of work.
+:::
+
+:::details
+### Difficulty Retargeting (Difficulty Adjustment)
+
+A network-wide recalculation of the difficulty that occurs once every 2,016 blocks and considers the hashing power of the previous 2,016 blocks.
+:::
+
+:::details
+### Difficulty Target
+
+A difficulty at which all the computation in the network will find blocks approximately every 10 minutes.
+It specifies the numeric value the hash of a block must not be above to be considered a valid block.
+:::
+
+:::details
+### Fork
+
+Fork, also known as accidental fork, occurs when two or more blocks have the same block height, forking the blockchain.
+Typically occurs when two or more miners find blocks at nearly the same time.
+Can also happen as part of an attack.
 :::
 
 :::details
@@ -70,6 +123,20 @@ Read more: [What fee should I select?](/FAQ/FAQ-UseWasabi.md#what-fee-should-i-s
 
 Fungibility is a desirable property of Bitcoin UTXOs that are indistinguishable from each other.
 Read more: [Transaction surveillance companies attempting to destroy fungibility](/why-wasabi/TransactionSurveillanceCompanies.md#attempt-to-destroy-fungibility)
+:::
+
+:::details
+### Genesis Block
+
+The first block in the blockchain, used to initialize the cryptocurrency.
+:::
+
+:::details
+### Hard Fork
+
+Hard fork, also known as hard-forking change, is a permanent divergence in the blockchain, it occurs when non-upgraded nodes can not validate blocks created by upgraded nodes that follow newer consensus rules.
+The upgraded nodes break the rules of the legacy nodes.
+Not to be confused with fork, soft fork, software fork or Git fork.
 :::
 
 :::details
@@ -86,6 +153,18 @@ If one bit of the input changes, the output will be completely different [avalan
 And there are no two messages that result in the same hash [collision resistance].
 The only way to get any given input, is by computing all possible inputs, it is a one-way function [pre-image resistance].
 Bitcoin uses the SHA256 in many parts of the protocol.
+:::
+
+:::details
+### HD Protocol
+
+The Hierarchical Deterministic (HD) key creation and transfer protocol (BIP32), which allows creating child keys from parent keys in a hierarchy.
+:::
+
+:::details
+### HD Wallet
+
+Wallets using the Hierarchical Deterministic (HD Protocol) key creation and transfer protocol (BIP32).
 :::
 
 :::details
@@ -117,11 +196,38 @@ Read more: [How does Wasabi know of incoming transactions to the mempool?](/FAQ/
 :::
 
 :::details
+### Merkle Root
+
+The root node of a merkle tree, a descendant of all the hashed pairs in the tree.
+Block headers must include a valid merkle root descended from all transactions in that block.
+:::
+
+:::details
+### Merkle Tree
+
+A tree constructed by hashing paired data (the leaves), then pairing and hashing the results until a single hash remains, the merkle root.
+In Bitcoin, the leaves are almost always transactions from a single block.
+:::
+
+:::details
+### Miner
+
+A network node that finds valid proof of work for new blocks, by repeated hashing.
+:::
+
+:::details
 ### Multisignature (multisig)
 
 Multisignature (m-of-n multisig) refers to requiring more than one key to authorize a Bitcoin transaction.
 Only with `m` signatures of `n` public keys can the bitcoin be spent.
 Read more: [Can I generate a multi signature script?](/FAQ/FAQ-UseWasabi.md#can-i-generate-a-multi-signature-script)
+:::
+
+:::details
+### Nonce
+
+The `nonce` in a Bitcoin block is a 32-bit (4-byte) field whose value is set so that the hash of the block will contain a run of leading zeros.
+The rest of the fields may not be changed, as they have a defined meaning.
 :::
 
 :::details
@@ -131,11 +237,54 @@ Output, transaction output, or TxOut is an output in a Bitcoin transaction which
 :::
 
 :::details
+### Off-chain Transaction
+
+An off-chain transaction is the movement of value outside of the blockchain.
+While an on-chain transaction - usually referred to as simply a transaction - modifies the blockchain and depends on the blockchain to determine its validity.
+An off-chain transaction relies on other methods to record and validate the transaction.
+:::
+
+:::details
+### P2PKH
+
+Many transactions processed on the Bitcoin network spend outputs locked with a Pay-to-Public-Key-Hash or `P2PKH` script.
+These outputs contain a locking script that locks the output to a public key hash, more commonly known as a Bitcoin address.
+An output locked by a P2PKH script can be unlocked (spent) by presenting a public key and a digital signature created by the corresponding private key.
+:::
+
+:::details
+### P2SH
+
+P2SH or Pay-to-Script-Hash is a type of transaction that simplifies the use of complex transaction scripts.
+With P2SH the complex script that details the spending conditions (redeem script) is committed to with a hash in the locking script.
+:::
+
+:::details
+### P2WPKH
+
+The signature of a P2WPKH (Pay-to-Witness-Public-Key-Hash) contains the same information as a P2PKH spending, but is located in the witness field instead of the scriptSig field.
+:::
+
+:::details
+### Paper Wallet
+
+In the most specific sense, a paper wallet is a document containing all the secrets to spend a Bitcoin UTXO.
+It is a way of storing bitcoin offline as a physical document.
+:::
+
+:::details
 ### Partially Signed Bitcoin Transaction (PSBT)
 
 PSBT is a binary transaction format which contains the information necessary for a signer to produce signatures for the transaction and holds the signatures for an input while the input does not have a complete set of signatures.
 The signer can be offline as all necessary information will be provided in the transaction.
 Read more: [BIP 174 Partially Signed Bitcoin Transaction Format](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki)
+:::
+
+:::details
+### Payment Channels
+
+A payment channel is class of techniques designed to allow users to make multiple Bitcoin transactions without committing all of the transactions to the Bitcoin blockchain.
+In a typical payment channel, only two transactions are added to the blockchain but an unlimited or nearly unlimited number of payments can be made between the participants.
 :::
 
 :::details
@@ -183,6 +332,14 @@ Replacing one version of an unconfirmed transaction with a different version of 
 :::
 
 :::details
+### Mining Reward
+
+An amount of satoshis included in each new block as a reward by the network to the miner who found the proof of work solution.
+Initially it was 50 bitcoin per block, which is halvend every 210 000 blocks, or roughly 4 years.
+This leads to a total money supply of just below 21 million bitcoin.
+:::
+
+:::details
 ### satoshi (sat)
 
 A satoshi is the smallest denomination of bitcoin that can be recorded on the blockchain.
@@ -191,7 +348,37 @@ Read more: [How can I display the fee in satoshi per byte?](/FAQ/FAQ-UseWasabi.m
 :::
 
 :::details
-### SegWit
+### Satoshi Nakamoto
+
+Satoshi Nakamoto is the name used by the person or people who designed Bitcoin and created its original reference implementation, Bitcoin Core.
+As a part of the implementation, they also devised the first blockchain database.
+In the process they were the first to solve the double-spending problem for digital currency in a decentralized and self verifying nature.
+Their real identity remains unknown.
+:::
+
+:::details
+### Script
+
+Bitcoin uses a scripting system for transactions.
+Forth-like, Script is simple, stack-based and processed from left to right.
+It is purposefully not Turing-complete, with no loops.
+:::
+
+:::details
+### ScriptPubKey
+
+ScriptPubKey or pubkey script, is a script included in outputs which sets the conditions that must be fulfilled for those satoshis to be spent.
+Data for fulfilling the conditions can be provided in a signature script.
+:::
+
+:::details
+### ScriptSig
+
+ScriptSig or signature script, is the data generated by a spender which is almost always used as variables to satisfy a pubkey script.
+:::
+
+:::details
+### Segregated Witness (SegWit)
 
 Segregated Witness is a structure where the witness [signature or redeem script] is stored separately from the transaction Merkle tree.
 This is separated because the witness contains only data concerning transaction validity, but not about transaction effect.
@@ -207,9 +394,37 @@ Read more: [Wasabi Wallet under the hood](/building-wasabi/TechnicalOverview.md#
 :::
 
 :::details
+### Soft Fork
+
+Soft fork or soft-forking change is a fork in the blockchain which commonly occurs when miners using non-upgraded nodes don’t follow a new consensus rule their nodes don’t know about.
+:::
+
+:::details
+### Transaction
+
+In simple terms, a transfer of bitcoin.
+More precisely, a transaction is a signed data structure expressing a transfer of value.
+Transactions are transmitted over the Bitcoin network, collected by miners, and included into blocks, made permanent on the blockchain.
+:::
+
+:::details
+### Transaction Fees
+
+A transaction includes a fee to the network for processing the requested transaction.
+Most transactions require a minimum fee.
+Read more: [What fee should I select?](/FAQ/FAQ-UseWasabi.md#what-fee-should-i-select)
+:::
+
+:::details
 ### Unspent Transaction Output (UTXO)
 
 UTXO is an unspent transaction output that can be spent as an input in a new transaction.
 Read more: [How can I select UTXOs for CoinJoin?](/FAQ/FAQ-UseWasabi.md#how-can-i-select-utxos-for-coinjoin)
 :::
 
+:::details
+### Wallet
+
+Software that holds all your Bitcoin addresses and secret keys.
+Use it to send, receive, and store your bitcoin.
+:::
