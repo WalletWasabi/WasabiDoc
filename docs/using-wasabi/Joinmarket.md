@@ -11,7 +11,7 @@
 
 ## Introduction and History
 
-[Joinmarket](https://github.com/JoinMarket-Org/joinmarket-clientserver) is a CoinJoin protocol implemented in a wallet software which requires Bitcoin Core as backend.
+[Joinmarket](https://github.com/JoinMarket-Org/joinmarket-clientserver) is a CoinJoin protocol implemented in a wallet software which requires Bitcoin Core as the back end.
 Its novel innovation is to introduced incentive structures to encourage users to mix their coins.
 One market taker can pay many market makers to create a tailor made CoinJoin.
 The software consists of several python scripts, has a graphical user interface, and utilizes IRC communication channels.
@@ -65,4 +65,3 @@ Further, the mixing fees you earn might be enough to pay at least for the transa
 This will break the Joinmarket history of these coins, thus nobody knows you were a maker.
 
 4. With these high anonset coins, coordinate a tailor made CoinJoin as a Joinmarket taker, where you can specify exactly the value you want to actually send.
-
