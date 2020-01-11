@@ -28,11 +28,25 @@ Joinmarket makers are users running the [yield generator script](https://github.
 These users advertize the total volume of bitcoin they would like to mix [for example a range from 0.1 to 5 bitcoin], as well as the fee they charge for their provided service [for example at least 2000 sats, or 0.02% of the CoinJoin denomination] to a public IRC channel.
 The requirement is an always on, stable and relatively high bandwidth internet connection, so to successfully coordinate many mixes.
 
-:::tip
-Joinmarket makers get paid to do tailormade CoinJoins with the taker!
+:::tip Reclaim your privacy & stack sats!
+Joinmarket makers get paid to do tailormade CoinJoins with the taker.
 :::
 
 ## Market Takers
 
+Joinmarket takers are users who coordinate a tailor made CoinJoin, and they pay the makers to provide the liqudity.
+Takers analyze the range and fees of offered coins of makers, specify a transaction where the makers coins are part of the input, and the output creates equal value coins.
+The number of makers and the value of the outputs is completely up to the taker, it is a tailor made CoinJoin.
+Although makers can not deanonymize the input to output link of other makers, the taker knows exactly which maker gets which output.
+
+:::tip Create CoinJoins just how you like them!
+Joinmarket takers can coordinate tailormade mixes.
+:::
 
 ## Join Market + Wasabi
+
+
+
+
+
+
