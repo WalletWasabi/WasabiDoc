@@ -62,7 +62,7 @@ This means that your pre-mix coins are not tied to the following Joinmarket mixe
 In this step you gain privacy, in that you were part of the initial Wasabi mix.
 Further, the mixing fees you earn might be enough to pay at least for the transaction and coordination fees of the whole process.
 
-3. With these Joinmarket coins, make at least two rounds of Wasabi zero link CoinJoins.
+3. With these Joinmarket coins, make at least two rounds of Wasabi ZeroLink CoinJoins.
 This will break the Joinmarket history of these coins, thus nobody knows you were a maker.
 
 4. With these high anonset coins, coordinate a tailor made CoinJoin as a Joinmarket taker, where you can specify exactly the value you want to actually send.
