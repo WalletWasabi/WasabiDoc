@@ -172,7 +172,7 @@ module.exports = {
             "/using-wasabi/NetworkLevelPrivacy.md",
             "/using-wasabi/Deanonimization.md",
             "/using-wasabi/PayToEndPoint.md",
-            "/usinq-wasabi/JoinMarket.md"
+            "/usinq-wasabi/Joinmarket.md"
           ]
         },
         {
