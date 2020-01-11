@@ -65,4 +65,4 @@ Further, the mixing fees you earn might be enough to pay at least for the transa
 3. With these Joinmarket coins, make at least two rounds of Wasabi ZeroLink CoinJoins.
 This will break the Joinmarket history of these coins, thus nobody knows you were a maker.
 
-4. With these high anonset coins, coordinate a tailor made CoinJoin as a Joinmarket taker, where you can specify exactly the value you want to actually send.
+4. With these high anonset coins, coordinate a tailor-made CoinJoin as a Joinmarket taker, where you can specify exactly the value you want to actually send.
