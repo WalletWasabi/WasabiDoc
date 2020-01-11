@@ -20,6 +20,8 @@ The software consists of several python scripts, has a graphical user interface,
 The initial v0.1.0 release was in December 2015 by [Chris Belcher](https://github.com/chris-belcher), and since then it has gathered steady support by several contributors, most notably [Adam Gibson](https://github.com/AdamISZ).
 Joinmarket is an integral part of the Bitcoin privacy infrastructure, and the research and implementation by the contributors is invaluable.
 
+Joinmarket is well [documentated](https://github.com/JoinMarket-Org/joinmarket-clientserver/tree/master/docs) in regards for [installation](https://github.com/JoinMarket-Org/joinmarket-clientserver/blob/master/docs/INSTALL.md), usage of the [command line interface](https://github.com/JoinMarket-Org/joinmarket-clientserver/blob/master/docs/USAGE.md) and [graphical user interface](https://github.com/JoinMarket-Org/joinmarket-clientserver/blob/master/docs/JOINMARKET-QT-GUIDE.md).
+
 ## Market Makers
 
 
