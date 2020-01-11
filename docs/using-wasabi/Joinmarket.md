@@ -55,7 +55,7 @@ The problems with Wasabi are the strenght of Joinmarket, and the downsides of Jo
 These two tools can be combined in great effect, thus it is on the long term road-map to implement Joinmarket functionality in Wasabi wallet.
 For example such a protocol:
 
-1. With your non-private coins, make at least two rounds of Wasabi zero link CoinJoins.
+1. With your non-private coins, make at least two rounds of Wasabi ZeroLink CoinJoins.
 This means that your pre-mix coins are not tied to the following Joinmarket mixers.
 
 2. With these anonset coins, run the yield generator as a Joinmarket maker for as long as possible, partaking in many mixes with many different takers.
