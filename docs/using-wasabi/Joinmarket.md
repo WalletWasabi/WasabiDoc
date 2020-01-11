@@ -43,10 +43,28 @@ Although makers can not deanonymize the input to output link of other makers, th
 Joinmarket takers can coordinate tailormade mixes.
 :::
 
-## Join Market + Wasabi
+## Joinmarket + Wasabi
 
+The advantage of Joinmarket is that the taker can coordinate tailormade mixes, and that the maker get's paid to join.
+The problem with Joinmarket is that the taker can spy on the makers.
+The advantage of Wasabi is that the coordinator cannot spy, and that mixes achieve high anonset. 
+The problem with Wasabi is that there are standardized equal value output amounts.
 
+:::tip A perfect match!
+The problems with Wasabi are the strenght of Joinmarket, and the downsides of Joinmarket are the features of Wasabi!
+:::
 
+These two tools can be combined in great effect, for example by this protocol:
 
+1. With your non-private coins, make at least two rounds of Wasabi zero link CoinJoins.
+This means that your pre-mix coins are no longer tied to the following Joinmarket mixers.
 
+2. With these anonset coins, run the yield generator as a Joinmarket maker, for as long as possible, partaking in many mixes with many different takers.
+In this step you gain privacy that you were part of the initial Wasabi mix.
+Further, the mixing fees you earn might be enough to pay at least for the transaction and coordination fees of the whole process.
+
+3. With these Joinmarket coins, make at least two rounds of Wasabi zero link CoinJoins.
+This will break the Joinmarket history of these coins, thus nobody knows you were a maker.
+
+4. With these high anonset coins, coordinate a tailor made CoinJoin as a Joinmarket taker, where you can specify exactly the value you want to actually send.
 
