@@ -32,7 +32,7 @@ Joinmarket makers get paid to do tailor-made CoinJoins with the taker.
 
 ## Market Takers
 
-Joinmarket takers are users who coordinate a tailor made CoinJoin, and they pay the makers to provide the liquidity.
+Joinmarket takers are users who coordinate a tailor-made CoinJoin, and they pay the makers to provide the liquidity.
 Takers analyze the range and fees of offered coins of makers, specify a transaction where the makers coins are part of the input, and the output creates equal value coins.
 The number of makers and the value of the outputs is completely up to the taker, it is a tailor made CoinJoin.
 Although makers can not anonymity the input to output link of other makers, the taker knows exactly which maker gets which output.
