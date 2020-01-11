@@ -52,7 +52,8 @@ The problem with Wasabi is that there are standardized equal value output amount
 The problems with Wasabi are the strenght of Joinmarket, and the downsides of Joinmarket are the features of Wasabi!
 :::
 
-These two tools can be combined in great effect, thus it is on the long term road-map to implement Joinmarket functionality in Wasabi wallet, for example such a protocol:
+These two tools can be combined in great effect, thus it is on the long term road-map to implement Joinmarket functionality in Wasabi wallet.
+For example such a protocol:
 
 1. With your non-private coins, make at least two rounds of Wasabi zero link CoinJoins.
 This means that your pre-mix coins are not tied to the following Joinmarket mixers.
