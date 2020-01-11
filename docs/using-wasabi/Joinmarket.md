@@ -24,7 +24,7 @@ Joinmarket is well [documentation](https://github.com/JoinMarket-Org/joinmarket-
 
 Joinmarket makers are users running the [yield generator script](https://github.com/JoinMarket-Org/joinmarket-clientserver/blob/master/docs/YIELDGENERATOR.md) and offering their coins as potential inputs in a CoinJoin transaction.
 These users advertise the total volume of bitcoin they would like to mix [for example a range from 0.1 to 5 bitcoin], as well as the fee they charge for their provided service [for example at least 2000 sats, or 0.02% of the CoinJoin denomination] to a public IRC channel.
-The requirement is an always on, stable and relatively high bandwidth internet connection, so to successfully coordinate many mixes.
+The requirement is an always on, stable and relatively high bandwidth internet connection, so as to successfully coordinate many mixes.
 
 :::tip Reclaim your privacy & stack sats!
 Joinmarket makers get paid to do tailor-made CoinJoins with the taker.
