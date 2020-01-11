@@ -59,7 +59,7 @@ For example such a protocol:
 This means that your pre-mix coins are not tied to the following Joinmarket mixers.
 
 2. With these anonset coins, run the yield generator as a Joinmarket maker for as long as possible, partaking in many mixes with many different takers.
-In this step you gain privacy that you were part of the initial Wasabi mix.
+In this step you gain privacy, in that you were part of the initial Wasabi mix.
 Further, the mixing fees you earn might be enough to pay at least for the transaction and coordination fees of the whole process.
 
 3. With these Joinmarket coins, make at least two rounds of Wasabi zero link CoinJoins.
