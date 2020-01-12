@@ -96,6 +96,10 @@ module.exports = {
       // See https://www.algolia.com/doc/api-reference/api-parameters/
       algoliaOptions: {
         hitsPerPage: 25
+      },
+      // See https://community.algolia.com/docsearch/behavior.html#autocompleteoptions
+      autocompleteOptions: {
+        openOnFocus: true
       }
     },
     nav: [
