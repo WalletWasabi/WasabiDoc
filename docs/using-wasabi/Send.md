@@ -11,6 +11,11 @@
 
 ## Coins
 
+A coin is an unspent transaction output, a chunk of bitcoin which can be send in a future transaction.
+In the Wasabi wallet `Send` tab, you see a list of all the coins you can spend because you have the private keys.
+
+![](/Send.png)
+
 ## Clusters
 
 ## Anonymity Set
