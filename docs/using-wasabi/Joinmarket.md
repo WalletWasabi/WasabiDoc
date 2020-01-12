@@ -46,7 +46,7 @@ Joinmarket takers pay for coordinating tailor-made mixes.
 
 The advantage of Joinmarket is that the taker can coordinate tailor-made mixes, and that the maker gets paid to join.
 The problem with Joinmarket is that the taker can spy on the makers.
-The advantage of Wasabi is that the coordinator cannot spy, and that Wasabi mixes achieve high anonset. 
+The advantage of Wasabi is that the coordinator cannot spy, and that Wasabi mixes achieve high anonset.
 The problem with Wasabi is that there are standardized equal value output amounts.
 
 :::tip A perfect match!
