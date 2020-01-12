@@ -1,5 +1,5 @@
 // https://v1.vuepress.vuejs.org/guide/basic-config.html#app-level-enhancements
-const openDetails = (timeout = 10) => {
+const openDetails = (timeout = 150) => {
   setTimeout(() => { // wait for hash to change after link click
     const { hash } = location
     if (hash && hash.length) {
@@ -12,7 +12,7 @@ const openDetails = (timeout = 10) => {
         }
       }, timeout)
     }
-  }, 100)
+  }, 150)
 }
 
 const openVideo = embedEl => {
