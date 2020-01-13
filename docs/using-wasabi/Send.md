@@ -42,6 +42,13 @@ The address can be a public key hash [starting with 1...], a script hash [starti
 Make sure that you ask the receiver for a [new address](/using-wasabi/AddressReuse.md) for every payment to protect your privacy.
 Wasabi will calculate the checksum and notify you if the provided address is wrong.
 
+## Label
+
+Similar to the `Receive` tab, you must label every new address with the observers who know that this is your address.
+In the `Send` tab an address is generated to receive the change amount, thus a label is not required when you send the max amount.
+The observer of a sending transaction is of course the receiver of it, as well as any other third party that will find out about it, for example a payment processor or exchange.
+This metadata will be used to build an curate cluster of who knows about your coins.
+
 ## Payment Amount
 
 ## Mining Fee
