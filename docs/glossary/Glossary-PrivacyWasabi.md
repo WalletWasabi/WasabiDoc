@@ -18,7 +18,7 @@ Read more: [Address reuse](/using-wasabi/AddressReuse.md)
 
 The anonymity set is effectively the size of the group you are hiding in during a CoinJoin.
 It's the quantity of equal value outputs of one CoinJoin transaction.
-Read more: [What is the anonimity set?](/FAQ/FAQ-UseWasabi.md#what-is-the-anonymity-set)
+Read more: [What is the anonymity set?](/FAQ/FAQ-UseWasabi.md#what-is-the-anonymity-set)
 :::
 
 :::details
