@@ -34,6 +34,8 @@ Thus the higher the anonymity set, the more your post-mix coin is delinked from 
 Wasabi shows you three levels of anonymity set, the yellow shield, the green shield and the check mark shield.
 By default they have an anonymity set of `2`, `21` and `50`, however, this can be [changed in the settings](/FAQ/FAQ-UseWasabi.md#how-can-i-change-the-anonset-target).
 
+![](/SendAnonset.png)
+
 ## Receiving Address
 
 When sending bitcoin, you need to know the destination address of the receiver.
@@ -61,6 +63,18 @@ This makes it easy to find out that the spending amount was the `0.01 bitcoin`, 
 So in order to increase your privacy, you can set a non-rounded amount, like `0.01016843`.
 
 ## Mining Fee
+
+Every transaction must specify a fee which incentives the miner to include it in a block, it is calculated by `value of inputs - value of outputs`.
+The higher the fee per virtual byte transaction size, the more likely miners are to confirm this transaction.
+Wasabi uses Bitcoin Core's `smart fee` algorithm to estimate the hours it will take to confirm at the given fee level.
+You can change the fee by moving the slider, or even specify it manually by activating this functionality in the settings.
+By clicking on the fee in the brackets below the slider, you can cycle through total bitcoin amount, sats per vbyte, percentage fee of sending amount or US Dollar equivalent.
+
+![](/SendFeeSlider.png)
+
+In some cases, there is very little demand for blockspace, and then Wasabi will set the minimum fee of `1 sat/vbyte`.
+
+![](/SendNoFee.png)
 
 ## Password
 
