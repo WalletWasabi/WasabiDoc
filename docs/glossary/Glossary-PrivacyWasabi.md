@@ -159,7 +159,7 @@ Coins in your wallet have shields (red, yellow, green and green +).
 Each shield represents the [Anonymity Set](/FAQ/FAQ-UseWasabi.md#what-is-the-anonymity-set) level of a given coin.
 By the anonymity set levels are `2`, `21` and `50`, however, this can be [changed in the settings](/FAQ/FAQ-UseWasabi.md#how-can-i-change-the-anonset-target).
 
-Essentially, when we talk about shields, we indicate a specific Privacy Level.
+Essentially, when we talk about shields, we mean a specific privacy level set by the user.
 :::
 
 :::details
