@@ -92,3 +92,8 @@ In order to spend a coin, the transaction must be signed by the private key corr
 Wasabi stores your master private key on the computer, encrypted with the password that you specified during [wallet generation](/using-wasabi/WalletGeneration.md#what-password-to-choose).
 To spend a coin you need to type in or copy and paste the password, which decrypts the master private key, which is used to sign the transaction.
 Afterwards the password is wiped from memory.
+
+## Broadcast
+
+Once the transaction is singed, Wasabi will connect to a random Bitcoin P2P node over Tor and provide this transaction, then it will immediately disconnect.
+This first node will gossip the transaction throughout the network, also to miners who include it in a block.
