@@ -159,7 +159,6 @@ Coins in your wallet have shields (red, yellow, green and green +).
 Each shield represents the [Anonimity Set](/FAQ/FAQ-UseWasabi.md#what-is-the-anonymity-set) of a given coin.
 
 Essentially, when we talk about shields, we indicate a specific Privacy Level.
-Read more: [What is a CoinJoin?](/FAQ/FAQ-Introduction.md#what-is-a-coinjoin)
 :::
 
 :::details
