@@ -9,14 +9,14 @@
 
 [[toc]]
 
+![](/Send.png)
+
 ## Coins
 
 A coin is an unspent transaction output (UTXO), a chunk of bitcoin which can be sent in a future transaction.
 In the Wasabi wallet `Send` tab, you see a list of all the coins you can spend because you have their private keys.
 You can get a coin by first [receiving](/using-wasabi/Receive.md) them from someone else, for example by earning them or buying them for fiat currency.
 You can spend one or more whole coins by selecting it in the `Send` tab, if your payment amount is below the value of the selected coins, then you will receive a [change coin](/using-wasabi/Change.md) back.
-
-![](/Send.png)
 
 ## Clusters
 
@@ -49,7 +49,16 @@ In the `Send` tab an address is generated to receive the change amount, thus a l
 The observer of a sending transaction is of course the receiver of it, as well as any other third party that will find out about it, for example a payment processor or exchange.
 This metadata will be used to build an curate cluster of who knows about your coins.
 
-## Payment Amount
+## Amount
+
+In the amount text box you can specify how many bitcoins the receiving address will gain.
+If it is blow the value of the selected inputs, then the leftover will be send to an automatically generated change address of yours.
+You can send a whole coin by selecting the `Max` button, which will build a transaction with only one output, the receiving address, and no change.
+You can also see the current US Dollar value of the sending amount.
+
+If you specify a rounded amount, like `0.01000000 bitcoin`, then the change output will not be rounded, like `0.08968413 bitcoin`.
+This makes it easy to find out that the spending amount was the `0.01 bitcoin`, and that the other output is the change back to the sender.
+So in order to increase your privacy, you can set a non-rounded amount, like `0.01016843`.
 
 ## Mining Fee
 
