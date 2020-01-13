@@ -9,6 +9,16 @@
 
 [[toc]]
 
+## How to send bitcoin step by step
+
+1. Select the coins you want to spend.
+2. Specify a destination address.
+3. Label the observers of this transaction.
+4. Specify the amount send to the destination address, press the `Max` button to send a whole coin.
+5. Select a mining fee.
+6. Enter the password.
+7. Click `Send Transaction`.
+
 ![](/Send.png)
 
 ## Coins
@@ -82,23 +92,3 @@ In order to spend a coin, the transaction must be signed by the private key corr
 Wasabi stores your master private key on the computer, encrypted with the password that you specified during [wallet generation](/using-wasabi/WalletGeneration.md#what-password-to-choose).
 To spend a coin you need to type in or copy and paste the password, which decrypts the master private key, which is used to sign the transaction.
 Afterwards the password is wiped from memory.
-
-## How to send bitcoin step by step
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
