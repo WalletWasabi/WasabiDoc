@@ -65,7 +65,7 @@ This metadata will be used to build an accurate cluster of observers who knows a
 ## Amount
 
 In the `Amount` text box you can specify how many bitcoins the receiving address will gain.
-If it is blow the value of the selected inputs, then the leftover will be send to an automatically generated change address of yours.
+If it is below the value of the selected inputs, then the leftover value will be sent to an automatically generated change address of yours.
 You can send a whole coin by selecting the `Max` button, which will build a transaction with only one output, the receiving address, and no change.
 You can also see the current US Dollar value of the sending amount.
 
