@@ -37,6 +37,22 @@ You have successfully setup your wallet when you click `I wrote down my Recovery
 :::
 
 ::::details
+### Can I rename my Wallet?
+
+Yes you can.
+Go to `Wallets` folder (inside the [Wasabi data folder](/using-wasabi/WasabiSetupTails.md#wasabi-data-folder)) and rename the .json Wallet file.
+Then go to `WalletBackups` folder (inside [Wasabi data folder](/using-wasabi/WasabiSetupTails.md#wasabi-data-folder)) and rename the .json Wallet file.
+
+:::tip
+You need to mark the “show hidden files” setting to see the Wasabi data folder.
+:::
+
+:::danger
+To avoid problems, make sure you turn off Wasabi Wallet before proceeding to rename one of your Wallets.
+:::
+::::
+
+::::details
 ### What password should I use?
 The password you set is used as a 13th word (passphrase) as described in [BIP 39](../using-wasabi/BIPs.md#bip-39-mnemonic-code-for-generating-deterministic-keys), and is used to encrypt the private key of the extended private key as described in [BIP 38](../using-wasabi/BIPs.md#bip-38-password-protected-private-key) to get an encrypted private key which is stored on the computer.
 This is the password that will unlock your bitcoin to anyone who has access to the backup or computer.
