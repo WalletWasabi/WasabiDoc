@@ -9,6 +9,16 @@
 
 [[toc]]
 
+## Generating addresses step by step
+
+1. Start Wasabi and open the wallet that you want to receive coins into.
+2. Go to the `Receive` tab.
+3. Specify a label of the entities who know about this address.
+4. Click on `Generate Address`.
+5. Optionally change the label in the right click menu if new entities learn about the address.
+
+![](/ReceiveAddressDropDownMenu.png)
+
 ## Bitcoin public keys and addresses
 
 The Bitcoin protocol utilizes [public key cryptography](https://en.wikipedia.org/wiki/Public-key_cryptography) to defend and verify the property rights of the individuals holding and transacting bitcoin.
@@ -128,13 +138,3 @@ Now, look how this will be displayed if I use the two coins with bad labels: `Ma
 
 So, think about coins, think about who knows and make sure to take decisions about privacy based on what you are going to reveal and to whom.
 Wasabi doesn't care about why you transact with bitcoins, it only cares about who you transact with, because this is what helps you reclaim your privacy.
-
-## Generating addresses step-by-step
-
-1. Start Wasabi and open the wallet that you want to receive coins into.
-2. Go to the `Receive` tab.
-3. Specify a label of the entities who know about this address.
-4. Click on `Generate Address`.
-5. Optionally change the label in the right click menu if new entities learn about the address.
-
-![](/ReceiveAddressDropDownMenu.png)
