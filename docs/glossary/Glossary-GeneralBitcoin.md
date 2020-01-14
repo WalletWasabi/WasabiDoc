@@ -247,7 +247,8 @@ A non-custodial wallet is any wallet where the private keys of your coins are in
 Non-custodial wallets give you full control over your bitcoins.
 
 A non-custodial mixer like Wasabi eliminates the risk that the coordinator can steal your bitcoin.
-Each of the signatures are created on the participants’ computers, so anyone trying to connect the signatures is unable to alter the transaction or redirect the funds.
+Each participant verifies the proposed transaction, and signs it only if it is valid.
+This signature is only valid for this transaction, so any attempt to change the transaction after the fact is futile.
 The funds will always be in a Bitcoin address that you control.
 :::
 
