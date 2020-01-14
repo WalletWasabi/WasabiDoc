@@ -98,7 +98,7 @@ A custodial wallet is any wallet where the private keys of your coins are in the
 In essence, they operate similarly to traditional banks.
 
 A custodial mixer needs you to send your bitcoins to a central part before mixing.
-This means that you risk losing your money or being stolen.
+This means that you are at risk of being stolen from.
 :::
 
 :::details
