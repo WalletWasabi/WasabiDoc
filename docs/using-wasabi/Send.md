@@ -77,7 +77,7 @@ So in order to increase your privacy, you can set a non-rounded amount, like `0.
 
 Every transaction must specify a fee which incentives the miner to include it in a block, it is calculated by `value of inputs - value of outputs`.
 The higher the fee per virtual byte (vbyte) transaction size, the more likely miners are to confirm this transaction.
-Wasabi uses Bitcoin Core's `smart fee` algorithm to estimate the hours it will take to confirm at the given fee level.
+Wasabi uses Bitcoin Core's `smart fee` algorithm to estimate the time it will take to confirm at the given fee level.
 You can change the fee by moving the slider, or even specify it manually by activating this functionality in the settings.
 By clicking on the fee in the brackets below the slider, you can cycle through `total bitcoin amount`, `sats per vbyte`, `percentage fee of sending amount` or `US Dollar equivalent`.
 
