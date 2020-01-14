@@ -65,6 +65,7 @@ Name and Surname
 |AVG | [Yes](https://www.avg.com/en-us/false-positive-file-form) | N/A
 |Avira | [Yes](https://www.avira.com/en/analysis/submit) | [virus@avira.com](mailto:virus@avira.com)
 |BitDefender | [Yes](https://www.bitdefender.com/submit/) | [virus_submission@bitdefender.com](mailto:virus_submission@bitdefender.com)
+|Comodo | [Yes](https://www.comodo.com/home/internet-security/submit.php) | [falsepositive@avlab.comodo.com](mailto:falsepositive@avlab.comodo.com)
 |Cyren | No | [info@cyren.com](mailto:info@cyren.com)
 |e-Gambit  | [Yes](https://tehtris.com/en/fp-egambit/) | N/A
 |Emsisoft (BitDefender engine) | [Yes](https://www.emsisoft.com/en/support/submit/) | [fp@emsisoft.com](mailto:fp@emsisoft.com)
