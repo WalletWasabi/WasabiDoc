@@ -97,4 +97,4 @@ Afterwards the password is wiped from memory.
 ## Broadcast
 
 Once the transaction is signed, Wasabi will connect to a random Bitcoin P2P node over Tor and provide this transaction, then it will immediately disconnect.
-This first node will gossip the transaction throughout the network, also to miners who include it in a block.
+This first node will gossip the transaction throughout the network, then miners can include it in a block.
