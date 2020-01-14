@@ -70,7 +70,7 @@ You can send a whole coin by selecting the `Max` button, which will build a tran
 You can also see the current US Dollar value of the sending amount.
 
 If you specify a rounded amount, like `0.01000000 bitcoin`, then the change output will not be rounded, like `0.08968413 bitcoin`.
-This makes it easy to find out that the spending amount was the `0.01 bitcoin`, and that the other output is the change back to the sender.
+This makes it easy for an observer to conclude that the spending amount was the `0.01 bitcoin`, and that the other output is the change back to the sender.
 So in order to increase your privacy, you can set a non-rounded amount, like `0.01016843`.
 
 ## Mining Fee
