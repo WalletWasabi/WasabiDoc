@@ -25,6 +25,7 @@ Joinmarket is well [documented](https://github.com/JoinMarket-Org/joinmarket-cli
 
 Joinmarket makers are users running the [yield generator script](https://github.com/JoinMarket-Org/joinmarket-clientserver/blob/master/docs/YIELDGENERATOR.md) and offering their coins as potential inputs in a CoinJoin transaction.
 These users advertise the total volume of bitcoin they would like to mix [for example a range from 0.1 to 5 bitcoins], as well as the fee they charge for their provided service [for example at least 2000 sats, or 0.02% of the CoinJoin denomination] to a public IRC channel.
+A maker chooses to offer coins for liquidity knowing that the taker can deanonymze the maker in this one transaction, thus it is adviced to do several rounds of making with different takers to gain privacy even against any one taker. 
 The requirement is an always on, stable and relatively high bandwidth internet connection, so as to successfully coordinate many mixes.
 
 :::tip Reclaim your privacy & stack sats!
@@ -45,7 +46,7 @@ Joinmarket takers pay for coordinating tailor-made mixes.
 ## Joinmarket + Wasabi
 
 The advantage of Joinmarket is that the taker can coordinate tailor-made mixes, and that the maker gets paid to join.
-The problem with Joinmarket is that the taker can spy on the makers.
+The problem with Joinmarket is that the maker has no privacy against the coordinating taker.
 The advantage of Wasabi is that the coordinator cannot spy, and that Wasabi mixes achieve high anonset.
 The problem with Wasabi is that there are standardized equal value output amounts.
 
