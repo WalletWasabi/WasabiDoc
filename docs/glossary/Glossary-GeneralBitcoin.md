@@ -92,6 +92,16 @@ The block validation rules that full nodes follow to stay in consensus with othe
 :::
 
 :::details
+### Custodial (Wallet or Mixer)
+
+A custodial wallet is any wallet where the private keys of your coins are in the hands of a third party.
+In essence, they operate similarly to traditional banks.
+
+A custodial mixer needs you to send your bitcoins to a central part before mixing.
+This means that you are at risk of being stolen from.
+:::
+
+:::details
 ### Difficulty
 
 A network-wide setting that controls how much computation is required to produce a proof of work.
@@ -228,6 +238,18 @@ Read more: [Can I generate a multi signature script?](/FAQ/FAQ-UseWasabi.md#can-
 
 The `nonce` in a Bitcoin block is a 32-bit (4-byte) field whose value is set so that the hash of the block will contain a run of leading zeros.
 The rest of the fields may not be changed, as they have a defined meaning.
+:::
+
+:::details
+### Non-Custodial (Wallet or Mixer)
+
+A non-custodial wallet is any wallet where the private keys of your coins are in your hands.
+Non-custodial wallets give you full control over your bitcoins.
+
+A non-custodial mixer like Wasabi eliminates the risk that the coordinator can steal your bitcoin.
+Each participant verifies the proposed transaction, and signs it only if it is valid.
+This signature is only valid for this transaction, so any attempt to change the transaction after the fact is futile.
+The funds will always be in a Bitcoin address that you control.
 :::
 
 :::details
