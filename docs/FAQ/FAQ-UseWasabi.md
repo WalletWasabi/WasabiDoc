@@ -48,7 +48,7 @@ You need to mark the “show hidden files” setting to see the Wasabi data fold
 :::
 
 :::danger
-To avoid problems, make sure you turn off Wasabi Wallet before proceeding to rename one of your Wallets.
+To avoid problems, make sure you close Wasabi Wallet before proceeding to rename any of your wallets.
 :::
 ::::
 
