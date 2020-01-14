@@ -51,7 +51,7 @@ By default they have an anonymity set of `2`, `21` and `50`, however, this can b
 When sending bitcoin, you need to know the destination address of the receiver.
 This commits to the spending condition that the receiver agrees to have for this coin.
 The address can be a public key hash [starting with 1...], a script hash [starting with 3...], or a native segwit bech32 public key hash [starting with bc1q...].
-Make sure that you ask the receiver for a [new address](/using-wasabi/AddressReuse.md) for every payment to protect your privacy.
+Make sure that you ask the receiver for a [new address](/using-wasabi/AddressReuse.md) for every payment to protect your privacy and theirs.
 Wasabi will calculate the checksum and notify you if the provided address is wrong.
 
 ## Label
