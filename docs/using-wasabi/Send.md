@@ -90,7 +90,7 @@ In some cases, there is very little demand for block space, and then Wasabi will
 ## Password
 
 In order to spend a coin, the transaction must be signed by the private key corresponding to that coin.
-Wasabi stores your master private key on the computer, encrypted with the password that you specified during [wallet generation](/using-wasabi/WalletGeneration.md#what-password-to-choose).
+Wasabi stores your master private key on the computer, encrypted with the password that you specified during the [wallet generation](/using-wasabi/WalletGeneration.md#what-password-to-choose).
 To spend a coin you need to type in or copy and paste the password, which decrypts the master private key, which is used to sign the transaction.
 Afterwards the password is wiped from memory.
 
