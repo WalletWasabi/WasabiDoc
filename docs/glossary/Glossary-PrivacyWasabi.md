@@ -152,7 +152,7 @@ They are literally peers in the network, or in the CoinJoin.
 :::
 
 :::details
-### Shield (or anonset shield/anonymity set shield)
+### Shield (or anonset shield)
 
 We often talk about check-mark, green, yellow and red shields... but what are they?
 Coins in your wallet have shields (red, yellow, green and green check-mark).
