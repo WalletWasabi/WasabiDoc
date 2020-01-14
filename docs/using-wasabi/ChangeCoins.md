@@ -34,7 +34,7 @@ This process is applicable to any Bitcoin transaction where the `sent` amount is
 Let's say that you have a KYC red-shield `anonymity set 1` UTXO, and you register it for a CoinJoin round.
 Afterwards, depending on the value of your UTXO in relation to the minimum CoinJoin amount and on the value of UTXOs of the other participants, you will receive two or more UTXOs.
 One of those will be the change left over from the round, and it will retain the red-shield `anonymity set 1` designation.
-The remaining UTXO(s) will have either a yellow, green, or check-marked shield. 
+The remaining UTXO(s) will have either a yellow, a green, or a check-marked shield. 
 You can see the `anonymity set` size for any UTXO by hovering your mouse-pointer over its associated shield.
 The number represented by 'x' shown in the green-shield will reflect the anonymity set size for that round.
 
