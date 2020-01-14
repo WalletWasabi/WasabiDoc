@@ -34,7 +34,7 @@ Every time you receive a payment, you first must [label the observers](/using-wa
 This transaction metadata is used to build a cluster of which people know about your coins.
 For example, if you receive a coin from Alice, then the cluster is `Alice`.
 If you now send half of this coin to Bob, then the cluster of your change coin is `Alice, Bob`.
-The goal is to know the observers who know about your coins.
+The goal is to know the observers who know about your coins and try to reduce their number for each coin.
 
 ## Anonymity Set
 
