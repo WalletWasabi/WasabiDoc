@@ -13,7 +13,7 @@
 
 1. Select the coins you want to spend.
 2. Specify a destination address.
-3. Label the observers of this transaction.
+3. If necessary label the observers of this transaction.
 4. Specify the amount to send to the destination address, press the `Max` button to send the whole coins.
 5. Select a mining fee.
 6. Enter the password.
