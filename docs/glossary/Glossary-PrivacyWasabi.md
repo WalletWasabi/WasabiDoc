@@ -12,6 +12,7 @@
 
 Address reuse refers to the use of the same address for multiple transactions, this is very bad for privacy.
 Read more: [Address reuse](/using-wasabi/AddressReuse.md)
+:::
 
 :::details
 ### Anonymity Set (anonset)
@@ -148,6 +149,17 @@ Read more: [Pay to EndPoint](/using-wasabi/PayToEndPoint.md)
 
 Peers in our documentation refers mainly to Bitcoin and Wasabi Wallet users, but it also means people.
 They are literally peers in the network, or in the CoinJoin.
+:::
+
+:::details
+### Shield (or anonset shield)
+
+We often talk about check-mark, green, yellow and red shields... but what are they?
+Coins in your wallet have shields (red, yellow, green and green check-mark).
+Each shield represents the [Anonymity Set](/FAQ/FAQ-UseWasabi.md#what-is-the-anonymity-set) level of a given coin.
+By the anonymity set levels are `2`, `21` and `50`, however, this can be [changed in the settings](/FAQ/FAQ-UseWasabi.md#how-can-i-change-the-anonset-target).
+
+Essentially, when we talk about shields, we mean a specific privacy level set by the user.
 :::
 
 :::details
