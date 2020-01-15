@@ -78,7 +78,7 @@ Here are a couple of examples that do it completely wrong. You should not genera
 2. Do not use the same password that you have used in other places.
 Because if one password is leaked, then other ones are compromised.
 
-3. Try to use a mix of both uppercase and lowercase letters, numbers, and special characters (&$%@ etc.)
+3. Try to use a mix of uppercase and lowercase letters, numbers, and special characters (&$%@ etc.)
 in your password.
 
 Here is a reliable tool to [check the strength](https://www.grc.com/haystack.htm) of a RANDOMLY DERIVED password.
