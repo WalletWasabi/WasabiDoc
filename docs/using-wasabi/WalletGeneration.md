@@ -7,7 +7,7 @@
 
 # Wallet Generation
 
-With Wasabi you can generate unlimited number of Bitcoin wallets very fast, without any cost, and without asking anyone for permission.
+With Wasabi you can generate an unlimited number of Bitcoin wallets very fast, without any cost, and without asking anyone for permission.
 Each wallet has separate private and public keys in a unique backup, and they are not at all linked to the other wallets generated on the same computer.
 So with several wallets you can conveniently manage your bitcoin for different use cases without worrying about revealing that you control them.
 
@@ -18,13 +18,14 @@ So with several wallets you can conveniently manage your bitcoin for different u
 ## Generating the wallet step-by-step
 
 1. Launch Wasabi Wallet.
-The very first time you run the software the `Generate Wallet` tab will be automatically open, but you can also access it by clicking on `File -> Generate Wallet` in the menu bar.
+The very first time you run the software the `Generate Wallet` tab will automatically be open, but you can also access it by clicking on `File -> Generate Wallet` in the menu bar.
 
 2. Label the new wallet precisely to ensure a proper differentiation at any point in the future.
 This label is not shared with anyone, it is only stored locally on your computer.
 
-3. Write a long and random password and back it up.
-It encrypts your secrets and you will need it every time you want to spend bitcoin from this wallet.
+3. Write a long and random password and _back it up_.
+It encrypts your secrets and you will need it every time you want to spend bitcoin from this wallet, or recover your wallet.
+
 Consider using [diceware wordlists](https://www.eff.org/deeplinks/2016/07/new-wordlists-random-passphrases) or a secure password generator to protect yourself against brute force attacks.
 
 :::danger Backup your password!
@@ -39,7 +40,7 @@ So triple check that you have a proper backup!
 ![](/WalletManagerGenerateWallet.png)
 
 6. Write down the 12 recovery words (Seed phrase).
-You can use this seed phrase with your password to recover your wallet on a different computer using Wasabi or another [BIP 38](/using-wasabi/BIPs.md#bip-38-password-protected-private-key) compliant wallet.
+You can use this seed phrase _with_ your password to recover your wallet on a different computer using Wasabi or another [BIP 38](/using-wasabi/BIPs.md#bip-38-password-protected-private-key) compliant wallet.
 If you have only the recovery words, but not the password, then you cannot spend the bitcoin nor recover this wallet.
 But whoever has both, gets full access to all the transaction history and gains control over every satoshi locked up in this wallet.
 
