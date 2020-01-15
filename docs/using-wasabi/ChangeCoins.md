@@ -128,8 +128,14 @@ However, a well resourced attacker can perform [CoinJoin sudoku](/FAQ/FAQ-Genera
 Further, during the [input registration phase](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-input-registration-phase), your wallet provides an input proof for all the registered coins to the coordinator.
 Thus the coordinator knows that you control all these coins, and although zkSNACKs claims to not keep any logs, it is a reasonable assumption that everyone knows what the coordinator knows.
 
+:::tip
+Remember that a Wasabi CoinJoin gives you back an anonymous (green) coin and a non-anonymous (red) change coin.
+The resulted non-anonymous change coin could be linked to the inputs (which are, in this specific case, derived from multiple change outputs of previous CoinJoins).
+Once a Wasabi CoinJoin is made, it is no longer possible to connect the inputs to the equal value outputs; even if the inputs are in turn consolidated change outputs.
+:::
+
 In this CoinJoin you get an equal value mixed coin, which is no longer tied to any of your previous change coins (inputs), and a change output that can be tied to these inputs.
-So consolidating your change in a CoinJoin is significantly more private and efficient than consolidating in a regular sending transaction, but it still leaks sensitive information.
+So consolidating your change in a CoinJoin is significantly more private and efficient than consolidating in a regular sending transaction, but it is always possible to follow the path of (red) non-anonymous change outputs; while the anonymous (green) equal denominated mixed outputs are in no way connected to the previous inputs.
 
 ### Spend the change to the same entity as in the initial transaction, but always use a new address.
 So, if in the first transaction you have 0.10 bitcoin and send Alice 0.04 bitcoin, you get 0.06 bitcoin back as change in a new address, which Alice can see belongs to you.
