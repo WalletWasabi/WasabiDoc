@@ -9,7 +9,7 @@
 
 With Wasabi you can generate an unlimited number of Bitcoin wallets very fast, without any cost, and without asking anyone for permission.
 Each wallet has separate private and public keys in a unique backup, and they are not at all linked to the other wallets generated on the same computer.
-So with several wallets you can conveniently manage your bitcoin for different use cases without worrying about revealing that you control them.
+So, with several wallets you can conveniently manage your bitcoin for different use cases without worrying about revealing that you control them.
 
 [[toc]]
 
@@ -30,7 +30,7 @@ Consider using [diceware wordlists](https://www.eff.org/deeplinks/2016/07/new-wo
 
 :::danger Backup your password!
 Without the password, you cannot spend your bitcoin or recover your wallet, even if you have the recovery words (Seed phrase).
-So triple check that you have a proper backup!
+So, triple-check that you have a proper backup!
 :::
 
 4. Click the checkbox after carefully reading the Terms and Conditions, the Privacy Policy and the Legal Issues of zkSNACKs Ltd. and Wasabi Wallet.
@@ -46,14 +46,14 @@ But whoever has both, gets full access to all the transaction history and gains 
 
 :::danger Backup your recovery words!
 Without the recovery words (Seed phrase) AND the password, you cannot recover your wallet.
-So triple check that you have a proper backup!
-Make sure the backup is stored separately from the password.
+So, triple-check that you have a proper backup!
+Make sure the backup of your recovery words is stored separately from the password backup.
 :::
 
 ![](/WalletManagerRecoveryWords.png)
 
 7. Test the password before you can load the wallet, to make sure that your backup password is correct.
-So type or paste the password in the text box, and click `Load Wallet`.
+So, type or paste the password in the text box, and click `Load Wallet`.
 
 ![](/TestPassword.png)
 
@@ -61,7 +61,7 @@ So type or paste the password in the text box, and click `Load Wallet`.
 
 Wasabi integrates [BIP 38: Password-Protected Private Key](/using-wasabi/BIPs.md#bip-38-password-protected-private-key), which means that the secrets needed to spend the bitcoin are encrypted on the computer.
 If someone has compromised your operating system and hardware and he only has the encrypted secrets, then no bitcoin can be spent by him.
-You need **both** the encrypted secrets, and the password in order to get the private key which can sign a spending transaction.
+You need **both** the encrypted secrets, and the password in order to enable the private key which can sign a spending transaction.
 This means that the password is your last line of defense against anyone who tries to steal your bitcoin.
 
 :::tip
@@ -80,6 +80,7 @@ Because if one password is leaked, then other ones are compromised.
 
 3. Try to use a mix of both uppercase and lowercase letters, numbers, and special characters (&$%@ etc.)
 in your password.
+
 Here is a reliable tool to [check the strength](https://www.grc.com/haystack.htm) of a RANDOMLY DERIVED password.
 While the site hosting this tool has an excellent reputation, it is always best to make a copy of a webpage used with
 sensitive information, and run it on an offline computer.
@@ -98,9 +99,9 @@ Now you have a verbal password that was generated completely off-line with suffi
 Although this is not as random as a dice-roll, there is still a large set of possible words in a book.
 You can further increase the randomness by selecting different books.
 
-3. Use a well tested password manager with a cryptographic secure random number generator.
+3. Use a well tested password manager with a cryptographically secure random number generator.
 A good password manager will use sufficient entropy to generate a password with letters, numbers and special characters.
-Although this is on-line and digital, a good software should still be secure enough for most cases.
+Although this is on-line and digital, a good password manager should still be secure enough for most cases.
 
 ## How are the secrets created
 
