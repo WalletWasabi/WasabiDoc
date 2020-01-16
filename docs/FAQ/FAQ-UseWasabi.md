@@ -264,7 +264,7 @@ Every time a coin is received, the address is removed from the GUI so that you a
 
 You can generate a new bech32 address in the `Receive` tab of Wasabi Wallet.
 First you must set a label for it, so that you later know who has sent you bitcoin to this address.
-Be precise in the reason for the payment, labeling the involved parties is an important part of good [coin control](/FAQ/FAQ-UseWasabi.md#why-is-coin-control-so-important) privacy best practices.
+Be precise in the reason for the payment, labeling the observers is an important part of good [coin control](/FAQ/FAQ-UseWasabi.md#why-is-coin-control-so-important) privacy best practices.
 Then you can click on `Generate` which will now show you the address, and immediately copy it to the clipboard.
 After a coin has been sent to this address, it is removed from the GUI, this is a good feature to help protect you against [address reuse](/FAQ/FAQ-UseWasabi.md#why-is-it-bad-to-re-use-addresses).
 
@@ -280,7 +280,7 @@ When you import the wallet file into a new Wasabi client, then it will use this 
 
 Bitcoin addresses look like cyphertext, they are not easily remembered and it's not clear how they were used previously.
 When you do not label all your addresses, there is no meta-data for you to understand the context of their coins.
-Thus receiving addresses and sending transactions that generate a change coin should be carefully labeled with the involved parties who know about this.
+Thus receiving addresses and sending transactions that generate a change coin should be carefully labeled with the observers who know about this.
 This helps you know where your coins came from so that you can judge whether there are privacy concerns when sending a specific coin to a specific receiver.
 
 ![](/ReceiveLabelingRequired.png)
@@ -573,7 +573,7 @@ Wasabi will implement the [Dandelion](/using-wasabi/BIPs.md#bip-156-dandelion-pr
 ### What is the cluster history?
 
 Clusters are a property of a Bitcoin wallet with strong coin-control and good labeling.
-When you use Wasabi, you must label every coin that you receive with the involved parties.
+When you use Wasabi, you must label every coin that you receive with the observers.
 The reason why this is important, is that your "wallet" is really just a collection of coins (similar to a physical wallet, not to a bank account).
 When you receive coins from somewhere to a labeled address, Wasabi will store the label locally on your device, for example:
 
@@ -1036,7 +1036,7 @@ Now select the Wasabi skeleton json-file from the MicroSD card, if this fails yo
 :::details
 ### How can I generate a receiving address of my hardware wallet?
 
-In Wasabi Wallet you load your previously imported wallet (from Wasabi skeleton, or USB detection) and go to the `Receive` tab, here you enter a label for the involved parties of the incoming transaction and click `Generate Receive Address`.
+In Wasabi Wallet you load your previously imported wallet (from Wasabi skeleton, or USB detection) and go to the `Receive` tab, here you enter a label for the observers of the incoming transaction and click `Generate Receive Address`.
 In the tab below the newly generated receive address can be viewed / copied.
 :::
 

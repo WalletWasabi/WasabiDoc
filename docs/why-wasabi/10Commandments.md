@@ -39,7 +39,7 @@ Lastly, understand that if you lose your password, it becomes much harder (if no
 
 ## 4. Practice good labeling AND try to never reuse addresses
 
-Each time you generate an addresses to receive coins or you send a transactions that generates change coins, you must label the addresses with the involved parties of this transaction.
+Each time you generate an addresses to receive coins or you send a transactions that generates change coins, you must label the addresses with the observers of this transaction.
 This label is only for you and is stored exclusively on your device.
 Wasabi has strong coin control features, and as you continue to use the wallet, you can see how known are your coins, which is possible only if you practice good labeling.
 
