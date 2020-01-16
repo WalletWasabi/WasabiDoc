@@ -326,7 +326,7 @@ This is useful for when you have generated a receiving address with a specific l
 Take care with whom you have shared this address, because if you send it to several people, they might all send many coins to the same address.
 This is very bad for your privacy because of [address reuse](/using-wasabi/AddressReuse.md), and it confuses you with the labeling of each unique coin.
 
-![](/ReceiveAddressMenu.png)
+![](/ReceiveAddressDropDownMenu.png)
 :::
 
 :::details
