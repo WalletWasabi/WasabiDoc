@@ -176,7 +176,8 @@ module.exports = {
             "/using-wasabi/ChangeCoins.md",
             "/using-wasabi/NetworkLevelPrivacy.md",
             "/using-wasabi/Deanonimization.md",
-            "/using-wasabi/PayToEndPoint.md"
+            "/using-wasabi/PayToEndPoint.md",
+            "/using-wasabi/Joinmarket.md"
           ]
         },
         {
