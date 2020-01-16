@@ -568,7 +568,7 @@ Spending whole coins is beneficial to privacy.
 :::
 
 :::details
-### How is the tansaction broadcasted?
+### How is the transaction broadcasted?
 
 Wasabi previously did not maintain its P2P connections over Tor.
 Since Wasabi is a non-listening node, broadcasting transactions through other P2P nodes over the clearnet would’ve let the peer to link your IP address to the transaction.
