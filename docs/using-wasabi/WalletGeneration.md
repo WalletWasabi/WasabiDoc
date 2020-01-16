@@ -70,7 +70,8 @@ It is strongly recommended to use long and random passwords for everything, espe
 
 ### What not to do
 
-Here are a couple of examples that do it completely wrong. You should not generate your password like this:
+Here are a couple of examples that do it completely wrong. 
+You should not generate your password like this:
 
 1. Do not use publicly known information like your grandma's maiden name and the birthday of your dog.
 `Emma1992` is a really, really, really bad password, because it can easily be guessed and it is very short.
@@ -78,8 +79,7 @@ Here are a couple of examples that do it completely wrong. You should not genera
 2. Do not use the same password that you have used in other places.
 Because if one password is leaked, then other ones are compromised.
 
-3. Try to use a mix of uppercase and lowercase letters, numbers, and special characters (&$%@ etc.)
-in your password.
+3. Do try to use a mix of uppercase and lowercase letters, numbers, and special characters (&$%@ etc.) in your password.
 
 ### Best Practices
 
