@@ -15,6 +15,7 @@
 | Digital BitBox |         |         |         |
 | KeepKey        |         |         |         |
 | Ledger Nano S  | pass    | pass    | pass    |
+| Ledger Nano X  |         |         |         |
 | Trezor One     |         |         |         |
 | Trezor Model T | pass    | pass    | pass    |
 
@@ -26,7 +27,7 @@ If you are on Linux you must add some `udev` rules if you have not already, so y
 
 ```sh
 git clone https://github.com/bitcoin-core/HWI.git
-cd HWI/
+cd HWI/hwilib/
 sudo cp udev/*.rules /etc/udev/rules.d/
 sudo udevadm trigger
 sudo udevadm control --reload-rules
@@ -48,10 +49,6 @@ Follow this step-by-step [guide](../using-wasabi/BuildSource.md).
 
 ## Step 3: Report Results
 
-Report results on GitHub or Reddit.
-
-On GitHub by commenting under this pull request: [https://github.com/zkSNACKs/WalletWasabi/pull/1341](https://github.com/zkSNACKs/WalletWasabi/pull/1341)
-
-On Reddit by commenting under this thread: [https://old.reddit.com/r/WasabiWallet/comments/bdyz84/wasabi_wallet_hardware_wallet_integration_testing/](https://old.reddit.com/r/WasabiWallet/comments/bdyz84/wasabi_wallet_hardware_wallet_integration_testing/)
+Report the results on GitHub by commenting under [this pull request](https://github.com/zkSNACKs/WalletWasabi/pull/1341).
 
 Please include your OS version and your hardware wallet type.

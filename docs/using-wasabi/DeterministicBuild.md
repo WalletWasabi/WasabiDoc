@@ -19,7 +19,7 @@ This guide describes how to reproduce Wasabi's builds.
 
 ## 1. Assert Correct Environment
 
-In order to reproduce Wasabi's builds you need [Git](https://git-scm.com/downloads), [Windows 10](https://www.microsoft.com/en-us/software-download/windows10ISO) and [.NET Core 3.1 SDK](https://www.microsoft.com/net/download).
+In order to reproduce Wasabi's builds you need [Git](https://git-scm.com/downloads), [Windows 10](https://www.microsoft.com/en-us/software-download/windows10ISO) and [.NET Core ${dotnetVersion} SDK](https://www.microsoft.com/net/download).
 
 ## 2. Reproduce Builds
 

@@ -11,7 +11,7 @@
 
 ---
 
-This essay is extracted from this step by step [guide](https://github.com/PulpCattel/Tails-BitcoinCore-Wasabi), which also includes tutorials on how to install Tails, create a persistent storage and use Bitcoin Core alongside with it.
+This essay is extracted from this step-by-step [guide](https://github.com/PulpCattel/Tails-BitcoinCore-Wasabi), which also includes tutorials on how to install Tails, create a persistent storage and use Bitcoin Core alongside with it.
 
 :::tip
 Starting with v1.1.10 release, Wasabi comes pre-installed with bitcoind from [Bitcoin Core](https://bitcoincore.org/) and it can be started on the same desktop or laptop computer with just one click.

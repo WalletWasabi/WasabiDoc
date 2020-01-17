@@ -50,7 +50,7 @@ module.exports = {
             title = ''
           }
           const slug = slugify(title)
-          return `<details id="${slug}"><summary><a href="#${slug}" aria-hidden="true" class="header-anchor">#</a> ${title}</summary>`
+          return `<details id="${slug}"><summary><a href="#${slug}" aria-hidden="true" class="header-anchor">#</a> <h4>${title}</h4></summary>`
         } else if (token.type === 'container_details_close') {
           return '</details>'
         }
@@ -84,6 +84,7 @@ module.exports = {
   themeConfig: {
     logo: "/Logo_without_text.png",
     searchPlaceholder: 'Search the docs...',
+    smoothScroll: true,
     displayAllHeaders: false,
     sidebarDepth: 0,
     repo: "zkSNACKs/WasabiDoc",
@@ -92,7 +93,15 @@ module.exports = {
     lastUpdated: 'Last Updated',
     algolia: {
       indexName: 'wasabiwallet',
-      apiKey: 'c9d9b7688e0f9e6d0ed534655321a424'
+      apiKey: 'c9d9b7688e0f9e6d0ed534655321a424',
+      // See https://www.algolia.com/doc/api-reference/api-parameters/
+      algoliaOptions: {
+        hitsPerPage: 25
+      },
+      // See https://community.algolia.com/docsearch/behavior.html#autocompleteoptions
+      autocompleteOptions: {
+        openOnFocus: true
+      }
     },
     nav: [
       {
@@ -113,7 +122,7 @@ module.exports = {
       },
       {
         text: "Glossary",
-        link: "/glossary/Glossary.md"
+        link: "/glossary/"
       }
     ],
     sidebar: {
@@ -150,6 +159,7 @@ module.exports = {
           children: [
             "/using-wasabi/WalletGeneration.md",
             "/using-wasabi/Receive.md",
+            "/using-wasabi/Send.md",
             "/using-wasabi/CoinJoin.md",
             "/using-wasabi/PasswordFinder.md",
             "/using-wasabi/ColdWasabi.md",
@@ -167,7 +177,8 @@ module.exports = {
             "/using-wasabi/ChangeCoins.md",
             "/using-wasabi/NetworkLevelPrivacy.md",
             "/using-wasabi/Deanonimization.md",
-            "/using-wasabi/PayToEndPoint.md"
+            "/using-wasabi/PayToEndPoint.md",
+            "/using-wasabi/Joinmarket.md"
           ]
         },
         {
@@ -193,6 +204,7 @@ module.exports = {
             "/building-wasabi/ToDo.md",
             "/building-wasabi/CodingConventions.md",
             "/building-wasabi/ContributionGame.md",
+            "/building-wasabi/FalsePositive.md",
             "/building-wasabi/Security.md",
             "/building-wasabi/CodeCoverage.md",
             "/building-wasabi/HardwareWalletTestingGuide.md",
@@ -223,7 +235,8 @@ module.exports = {
           collapsable: false,
           sidebarDepth: 2,
           children: [
-            "/glossary/Glossary.md"
+            "/glossary/Glossary-GeneralBitcoin.md",
+            "/glossary/Glossary-PrivacyWasabi.md"
           ]
         }
       ]

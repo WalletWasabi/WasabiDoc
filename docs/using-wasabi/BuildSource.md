@@ -10,7 +10,7 @@
 ## Get The Requirements
 
 1. Install [Git](https://git-scm.com/downloads)
-2. Install [.NET Core 3.1 SDK](https://www.microsoft.com/net/download) for "Building Apps"
+2. Install [.NET Core ${dotnetVersion} SDK](https://www.microsoft.com/net/download) for "Building Apps"
 
 :::tip Optional for privacy
 You can disable .NET's telemetry, which is sending some usage information to Microsoft, by typing:

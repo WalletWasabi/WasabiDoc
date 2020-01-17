@@ -94,7 +94,7 @@ Such a complex software requires constant and rigorous review by the developers 
 When you stumble upon an issue that needs fixing, please first check the open [issues](https://github.com/zkSNACKs/WalletWasabi/issues/) and [pull requests](https://github.com/zkSNACKs/WalletWasabi/pulls) if there is already someone working on it.
 If yes, then you can comment your situation and bug report under the open issue.
 If no, then please consider to [open a new issue](https://github.com/zkSNACKs/WalletWasabi/issues/new?template=bug-report.md) and give a detailed report on the problem.
-It is especially helpful when you provide a step by step guide on how to reproduce what you have found.
+It is especially helpful when you provide a step-by-step guide on how to reproduce what you have found.
 There is constantly a lot of work done to the code base, thus it's good to know which version of Wasabi, and what operating system you are using.
 In some cases it might be useful to see your logs, though please consider your privacy and encrypt this data properly in direct communication with the developers.
 

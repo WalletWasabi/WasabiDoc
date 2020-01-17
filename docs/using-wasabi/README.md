@@ -22,6 +22,7 @@ Further tutorials about the different parts of the wallet, for newbies and power
 #### Using Wasabi
 - [Wallet Generation](/using-wasabi/WalletGeneration.md)
 - [Receive](/using-wasabi/Receive.md)
+- [Send](/using-wasabi/Send.md)
 - [CoinJoin](/using-wasabi/CoinJoin.md)
 - [Password Finder](/using-wasabi/PasswordFinder.md)
 - [Cold-Wasabi Protocol](/using-wasabi/ColdWasabi.md)
@@ -35,6 +36,7 @@ Further tutorials about the different parts of the wallet, for newbies and power
 - [Network Level Privacy](/using-wasabi/NetworkLevelPrivacy.md)
 - [How you can be de-anonymized using Bitcoin](/using-wasabi/Deanonimization.md)
 - [Pay to EndPoint](/using-wasabi/PayToEndPoint.md)
+- [Joinmarket](/using-wasabi/Joinmarket.md)
 
 #### Restoring Wasabi
 - [Wallet Recovery](/using-wasabi/WalletRecovery.md)

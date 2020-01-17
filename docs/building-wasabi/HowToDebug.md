@@ -14,8 +14,8 @@
 This guide is for giving detailed instructions about how to debug Wasabi Wallet components to those developers who want to contribute to the project.
 We will focus on how to achieve this with `vscode` first because that is the cross-platform IDE used by some of the developer team members.
 
-## Before to start
-We assume the reader has already read the project [README](https://github.com/zkSNACKs/WalletWasabi/blob/master/README.md) file  and has installed the .NET Core SDK, knows how to clone the repository and build the Wasabi solution.
+## Before Starting
+We assume the reader has already read the project [README](https://github.com/zkSNACKs/WalletWasabi/blob/master/README.md) file and has installed the [.NET Core ${dotnetVersion} SDK](https://www.microsoft.com/net/download), and knows how to clone the repository and build the Wasabi solution.
 
 
 ## Install VS Code and extensions
@@ -32,16 +32,16 @@ Installing this extension can take a while.
 
 ### 3: Open the WalletWasabi directory in VS Code
 Go to `File->Open Folder` and open the WalletWasabi directory in Visual Studio Code.
-The Wasabi vscode settings forces to download the latest omnisharp versions every time the folder is opened and this can take a while.
+The Wasabi vscode settings forces a download of the latest omnisharp versions every time the folder is opened and this can take a while.
 
 After this step we are ready to start configuring the build tasks and the launches.
 
 ## Understanding the Wasabi components
 
-Wasabi Wallet is a client/server system where the client part is the Wasabi Wallet that users download and install on their machines and the server part is the Wasabi backend that runs on the zkSNACKs servers.
-Additionally the solution contains other components like the Packager used to prepare Wasabi client to be distributed, integration tests project and others.
+Wasabi Wallet is a client/server system where the client part is the Wasabi Wallet that users download and install on their machines, and the server part is the Wasabi backend that runs on the zkSNACKs servers.
+Additionally, the solution contains other components like the Packager used to prepare the Wasabi client to be distributed, integration tests, project, and others.
 
-Here we are going to focus on how to debug the client component first and the backend component after.
+Here we are going to focus first on how to debug the client component, and then the backend component.
 
 ### Wasabi Client
 
@@ -56,7 +56,7 @@ This file contains the list of projects that can be launched, how to do it, what
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build-client",
-      "program": "${workspaceFolder}/WalletWasabi.Gui/bin/Debug/netcoreapp3.0/WalletWasabi.Gui.dll",
+      "program": "${workspaceFolder}/WalletWasabi.Gui/bin/Debug/netcoreapp${dotnetVersion}/WalletWasabi.Gui.dll",
       "args": [],
       "cwd": "${workspaceFolder}/WalletWasabi.Gui",
       "stopAtEntry": false,
@@ -99,7 +99,7 @@ Add the following launcher to the array of `configurations` in the `.vscode/laun
    "type": "coreclr",
    "request": "launch",
    "preLaunchTask": "build-backend",
-   "program": "${workspaceFolder}/WalletWasabi.Backend/bin/Debug/netcoreapp3.0/WalletWasabi.Backend.dll",
+   "program": "${workspaceFolder}/WalletWasabi.Backend/bin/Debug/netcoreapp${dotnetVersion}/WalletWasabi.Backend.dll",
    "args": [],
    "cwd": "${workspaceFolder}/WalletWasabi.Backend",
    "stopAtEntry": false,
@@ -164,7 +164,7 @@ Once this has been done a developer can press (CTRL+SHIFT+D) to go to the debugg
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build-client",
-            "program": "${workspaceFolder}/WalletWasabi.Gui/bin/Debug/netcoreapp3.0/WalletWasabi.Gui.dll",
+            "program": "${workspaceFolder}/WalletWasabi.Gui/bin/Debug/netcoreapp${dotnetVersion}/WalletWasabi.Gui.dll",
             "args": [],
             "cwd": "${workspaceFolder}/WalletWasabi.Gui",
             "stopAtEntry": false,
@@ -175,7 +175,7 @@ Once this has been done a developer can press (CTRL+SHIFT+D) to go to the debugg
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build-backend",
-            "program": "${workspaceFolder}/WalletWasabi.Backend/bin/Debug/netcoreapp3.0/WalletWasabi.Backend.dll",
+            "program": "${workspaceFolder}/WalletWasabi.Backend/bin/Debug/netcoreapp${dotnetVersion}/WalletWasabi.Backend.dll",
             "args": [],
             "cwd": "${workspaceFolder}/WalletWasabi.Backend",
             "stopAtEntry": false,
@@ -206,7 +206,7 @@ Once this has been done a developer can press (CTRL+SHIFT+D) to go to the debugg
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build-client",
-            "program": "${workspaceFolder}/WalletWasabi.Gui/bin/Debug/netcoreapp3.0/WalletWasabi.Gui.dll",
+            "program": "${workspaceFolder}/WalletWasabi.Gui/bin/Debug/netcoreapp${dotnetVersion}/WalletWasabi.Gui.dll",
             "args": [
                 "mix", "--wallet:TestNet"
             ],
@@ -278,7 +278,7 @@ Once this has been done a developer can press (CTRL+SHIFT+D) to go to the debugg
                 "/consoleloggerparameters:NoSummary"
                 ],
             "problemMatcher": "$msCompile"
-        },        
+        },
         {
             "label": "watch",
             "command": "dotnet",
@@ -296,9 +296,11 @@ Once this has been done a developer can press (CTRL+SHIFT+D) to go to the debugg
 }
 ```
 
-## How to setup and run the whole system 
+## How to setup and run the whole system
 
-Sometimes, as developers, we need to test an advanced interaction between the Bitcoin Core node, the Coordinator and one or more Wasabi clients, just imagine the case we want to verify the system behavior after a blockchain reorg. In this cases we have to setup and run all the components and use the regtest.
+Sometimes, as developers, we need to test an advanced interaction between the Bitcoin Core node, the Coordinator, and one or more Wasabi clients. 
+Just imagine a case in which we want to verify the system behavior after a blockchain reorg.
+In these cases we have to setup and run all the components, and use regtest.
 
 ### Install Bitcoin Core
 
@@ -307,14 +309,14 @@ Download and install Bitcoin Core from https://bitcoincore.org/bin/.
 
 ### Running the backend (coordinator)
 
-There are more than one way to do this:
+There is more than one way to do this:
 
 * From **VSCode** go to the Debug panel (CTRL+SHIFT+D), select `Wasabi Backend .NET Core` and press play.
-* From **Terminal** just type `dotnet run <WasabiProjectFolder>/WalletWasabi.Backend/WalletWasabi.Backend.csproj` 
+* From **Terminal** just type `dotnet run <WasabiProjectFolder>/WalletWasabi.Backend/WalletWasabi.Backend.csproj`
 
 ### Get some coins to test
 
-Once the Wasabi backend, the bitcoin node and the Wasabi client are running, we can mine some blocks and get the new mined coins in our Wasabi wallet.
+Once the Wasabi backend, the bitcoin node and the Wasabi client are running, we can mine some blocks and get the new mined coins into our Wasabi wallet.
 
 1. Go to Wasabi and generate a new address
 2. Open a terminal and type `bitcoin-cli -regtest generatetoaddress 101 <your-wasabi-address>`

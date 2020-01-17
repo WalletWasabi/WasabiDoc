@@ -37,6 +37,22 @@ You have successfully setup your wallet when you click `I wrote down my Recovery
 :::
 
 ::::details
+### Can I rename my Wallet?
+
+Yes you can.
+Go to `Wallets` folder (inside the [Wasabi data folder](/using-wasabi/WasabiSetupTails.md#wasabi-data-folder)) and rename the .json Wallet file.
+Then go to `WalletBackups` folder (inside [Wasabi data folder](/using-wasabi/WasabiSetupTails.md#wasabi-data-folder)) and rename the .json Wallet file.
+
+:::tip
+You need to mark the “show hidden files” setting to see the Wasabi data folder.
+:::
+
+:::danger
+To avoid problems, make sure you close Wasabi Wallet before proceeding to rename any of your wallets.
+:::
+::::
+
+::::details
 ### What password should I use?
 The password you set is used as a 13th word (passphrase) as described in [BIP 39](../using-wasabi/BIPs.md#bip-39-mnemonic-code-for-generating-deterministic-keys), and is used to encrypt the private key of the extended private key as described in [BIP 38](../using-wasabi/BIPs.md#bip-38-password-protected-private-key) to get an encrypted private key which is stored on the computer.
 This is the password that will unlock your bitcoin to anyone who has access to the backup or computer.
@@ -137,9 +153,12 @@ Take into account that it is not only encryption what [BIP 38](/using-wasabi/BIP
 :::
 
 :::details
-### Does Wasabi support Trezor's and Ledger's hidden wallets?
+### Does Wasabi support the hidden wallets of hardware wallets?
 
-Yes.
+Partially.
+Only device side passphrase is supported.
+PC side passphrase is not.
+This means the hidden wallet feature can be used with Trezor T, Ledger Nano S and ColdCard, but it cannot be used with Trezor One.
 After the 12 or 24 words, enter the passphrase as the 13th or 25th word.
 It’s part of [BIP 39](/using-wasabi/BIPs.md#bip-39-mnemonic-code-for-generating-deterministic-keys).
 :::
@@ -549,7 +568,7 @@ Spending whole coins is beneficial to privacy.
 :::
 
 :::details
-### How is the tansaction broadcasted?
+### How is the transaction broadcasted?
 
 Wasabi previously did not maintain its P2P connections over Tor.
 Since Wasabi is a non-listening node, broadcasting transactions through other P2P nodes over the clearnet would’ve let the peer to link your IP address to the transaction.
@@ -1240,7 +1259,8 @@ In the top left menu `File > Open` you can see there are several logs available.
 
 ![](/MenuFileOpen.png)
 
-Alternatively, you can find the logs inside your [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) :::
+Alternatively, you can find the logs inside your [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder)
+:::
 
 :::details
 ### How to activate Lurking Wife Mode?
