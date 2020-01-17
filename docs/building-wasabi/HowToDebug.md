@@ -304,7 +304,7 @@ In these cases we have to setup and run all the components, and use regtest.
 
 ### Install Bitcoin Core
 
-Download and install Bitcoin Core from https://bitcoincore.org/bin/.
+Download and install Bitcoin Core from [https://bitcoincore.org/bin/](https://bitcoincore.org/bin/).
 
 
 ### Running the backend (coordinator)
