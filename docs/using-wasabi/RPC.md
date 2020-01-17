@@ -1,4 +1,11 @@
-# Wasabi Remote Procedure Call interface
+---
+{
+  "title": "RPC Interface",
+  "description": "A step by step guide on how to use the Wasabi RPC interface. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
+}
+---
+
+# Wasabi Remote Procedure Call Interface
 
 Wasabi Wallet provides an RPC interface to interact with the wallet programmatically. The RPC server is listening by default on port 37128.
 
