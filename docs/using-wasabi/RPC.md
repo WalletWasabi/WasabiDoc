@@ -7,36 +7,38 @@
 
 # Wasabi Remote Procedure Call Interface
 
-Wasabi Wallet provides an RPC interface to interact with the wallet programmatically. The RPC server is listening by default on port 37128.
+Wasabi Wallet provides an RPC interface to interact with the wallet programmatically.
+The RPC server is listening by default on port 37128.
 
 ## Limitations
 
-The RPC server does NOT support batch requests nor TLS communication (because it is not supported on Linux nor Mac: https://github.com/dotnet/corefx/issues/14691). Requests are served in order one by one in serie (no parallel processing).
+The RPC server does NOT support neither batch requests nor TLS communications (because it is not supported on Linux and on Mac: https://github.com/dotnet/corefx/issues/14691).
+Requests are served in order one by one in series (no parallel processing).
 It is intentionally limited to serve only one whitelisted local address and it is disabled by default.
 
 # Before start (Enable RPC)
 
-The RPC server has to be configured and enabled. This is done in the `Config.json` file and the relevant settings are:
+The RPC server has to be configured and enabled.
+This is done in the `Config.json` file and the relevant settings are:
 
-* JsonRpcServerEnabled: [true | false]  (default: false)
+* JsonRpcServerEnabled: [true | false] (default: false)
 * JsonRpcServerPrefixes: [an array of string with prefixes]
 	(default: [	"http://127.0.0.1:37128/", "http://localhost:37128/"])
 
 # Authentication
 
-The RPC server can be configured to allow `Anonymous` access or `Basic  authentication` just by editing the
+The RPC server can be configured to allow `Anonymous` access or `Basic authentication` just by editing:
 
-* JsonRpcUser: [the username]  (default: empty)
-* JsonRpcPassword: [the password]  (default: empty)
+* JsonRpcUser: [username] (default: empty)
+* JsonRpcPassword: [password] (default: empty)
 
-By default both `JsonRpcUser` and `JsonRpcPassword` are empty (`""`) that that means that `Anonymous` requests are allowd. On the other hand, if `JsonRpcUser` and `JsonRpcPassword` setting are not empty it means that the requester has to provide the right credential, otherwise it will get a http statuc code 401 (Unauthorized).
+By default both `JsonRpcUser` and `JsonRpcPassword` are empty `""`, which means that `Anonymous` requests are allowed.
+On the other hand, if `JsonRpcUser` and `JsonRpcPassword` are not empty it means that the requester has to provide the right credentials, otherwise he will get a http status code 401 (Unauthorized).
 
+# Available methods
 
-#
-
-# Methods available
-
-Current version only handles the following method `listunspentcoins`, `getstatus`, `getwalletinfo`, `getnewaddress`, `enqueue`, `dequeue`, `send`, `listkeys` and `stop`. These can can be tested as follow:
+The current version only handles the following methods: `listunspentcoins`, `getstatus`, `getwalletinfo`, `getnewaddress`, `enqueue`, `dequeue`, `send`, `listkeys` and `stop`.
+They can be tested as follows:
 
 ## getstatus
 
@@ -52,8 +54,7 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getstatus"}' http://1
     "torStatus": "Running",
     "backendStatus": "Connected",
     "bestBlockchainHeight": "1517613",
-    "bestBlockchainHash": "0000000000000064db138798b6b789910bc7f29546a1ff506734dc7bb5780b
-28",
+    "bestBlockchainHash": "0000000000000064db138798b6b789910bc7f29546a1ff506734dc7bb5780b28",
     "filtersCount": 689039,
     "filtersLeft": 0,
     "network": "TestNet",
@@ -184,10 +185,8 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getwalletinfo"}' http
   "jsonrpc": "2.0",
   "result": {
     "walletFile": "/home/user/.walletwasabi/client/Wallets/testnet-wallet.json",
-    "extendedAccountPublicKey": "tpubDCd1v6acjNY3uUqAtBGC6oBTGrCBWphMvkWjAqM2SFZahZb91JUT
-XZeZqxzscezR16XHkwi1723qo94EKgR75aoFaahnaHiiLP2JrrTh2Rk",
-    "extendedAccountZpub": "vpub5YarnXR6ijVdw6G5mGhrUhf5bnodeCDJYtszFVW7LL3vr5HyRmJF8zfTZ
-Wzv6LjLPukmeR11ebWhLPLVVRjqbfyknJZdiwRWCyJcKeDdsC8",
+    "extendedAccountPublicKey": "tpubDCd1v6acjNY3uUqAtBGC6oBTGrCBWphMvkWjAqM2SFZahZb91JUTXZeZqxzscezR16XHkwi1723qo94EKgR75aoFaahnaHiiLP2JrrTh2Rk",
+    "extendedAccountZpub": "vpub5YarnXR6ijVdw6G5mGhrUhf5bnodeCDJYtszFVW7LL3vr5HyRmJF8zfTZWzv6LjLPukmeR11ebWhLPLVVRjqbfyknJZdiwRWCyJcKeDdsC8",
     "accountKeyPath": "m/84'/0'/0'",
     "masterKeyFingerprint": "323ec8d9"
   },
@@ -273,13 +272,12 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"send", "params": { "p
 }
 ```
 
-The fees for the transaction will be added on top of the sum of the outputs' amounts. If you have
-three outputs with 0.4, 0.3 and 0.3 BTC, the amount of BTC in the inputs must be at least
-0.4+0.3+0.3 + mining fees.
+The fees for the transaction will be added on top of the sum of the outputs' amounts.
+If you have three outputs with 0.4, 0.3 and 0.3 BTC, the amount of BTC in the inputs must be at least 0.4+0.3+0.3 + mining fees.
 
-You can add `subtractFee: true` to one of the request's payments to change this behaviour. Now the mining fee
-will be subtracted from the output in which `subtractFee` was set to `true` so the input amounts summed up can be exactly
-the output amounts summed up.  ( 0.4 - (mining fee) ) + 0.3 + 0.3
+You can add `subtractFee: true` to one of the request's payments to change this behaviour.
+Now the mining fee will be subtracted from the output in which `subtractFee` was set to `true` so the input amounts summed up can be exactly the output amounts summed up.
+( 0.4 - (mining fee) ) + 0.3 + 0.3
 
 ```bash
 curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"send", "params": { "payments":[ {"sendto": "tb1qgvnht40a08gumw32kp05hs8mny954hp2snhxcz", "amount": 15000, "label": "To David", "subtractFee": true }, {"sendto":"tb1qpyhfrpys6skr2mmnc35p3dp7zlv9ew4k0gn7qm", "amount": 86200, "label": "To Michael"} ], "coins":[{"transactionid":"ab83d9d0b2a9873b8ab0dc48b618098f3e7fbd807e27a10f789e9bc330ca89f7", "index":0}], "feeTarget":2 }}' http://127.0.0.1:37128/
