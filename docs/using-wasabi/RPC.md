@@ -37,7 +37,7 @@ On the other hand, if `JsonRpcUser` and `JsonRpcPassword` are not empty it means
 
 # Available methods
 
-The current version only handles the following methods: `listunspentcoins`, `getstatus`, `getwalletinfo`, `getnewaddress`, `enqueue`, `dequeue`, `send`, `listkeys` and `stop`.
+The current version handles the following methods: `listunspentcoins`, `getstatus`, `getwalletinfo`, `getnewaddress`, `enqueue`, `dequeue`, `send`, `listkeys` and `stop`.
 They can be tested as follows:
 
 ## getstatus
@@ -131,7 +131,7 @@ $ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"listunspentcoins"}'
       "amount": 109859,
       "anonymitySet": 1,
       "confirmed": true,
-      "label": "sss",
+      "label": "kyced-exchange",
       "keyPath": "84'/0'/0'/0/616",
       "address": "tb1qgcng6v7wt03t80x6gh7s2x4rawg9zhenzrek4y"
     },
@@ -151,7 +151,7 @@ $ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"listunspentcoins"}'
       "amount": 195218,
       "anonymitySet": 1,
       "confirmed": true,
-      "label": "hola loco",
+      "label": "Maria, Andrew",
       "keyPath": "84'/0'/0'/0/623",
       "address": "tb1q2dgj9u3ggjg08hvvhf3l4m3u3ncpdxud8m0yqu"
     }
@@ -212,7 +212,7 @@ In case there is no wallet open it will return:
 Creates an address and returns detailed information about it.
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getnewaddress","params":["payment order #178659"]}' http://127.0.0.1:37128/
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getnewaddress","params":["Daniel"]}' http://127.0.0.1:37128/
 ```
 
 ```json
@@ -221,7 +221,7 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getnewaddress","param
   "result": {
     "address": "tb1qdskc4y529ayqkqrddknnhdjqwnqc9wzl8940pn",
     "keyPath": "84'/0'/0'/0/30",
-    "label": "payment order #178659",
+    "label": "Daniel",
     "publicKey": "0263ea6712e56277bcb07b14b61c30bae2267ec10e0bbf7a024d2c6a0634d6e634",
     "p2wpkh": "00146c2d8a928a2f480b006d6da73bb64074c182b85f"
   },
@@ -260,7 +260,7 @@ In case an empty label is provided:
 Builds and broadcasts a transaction.
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"send", "params": { "payments":[ {"sendto": "tb1qgvnht40a08gumw32kp05hs8mny954hp2snhxcz", "amount": 15000, "label": "To David" }, {"sendto":"tb1qpyhfrpys6skr2mmnc35p3dp7zlv9ew4k0gn7qm", "amount": 86200, "label": "To Michael"} ], "coins":[{"transactionid":"ab83d9d0b2a9873b8ab0dc48b618098f3e7fbd807e27a10f789e9bc330ca89f7", "index":0}], "feeTarget":2, "password": "password1234" }}' http://127.0.0.1:37128/
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"send", "params": { "payments":[ {"sendto": "tb1qgvnht40a08gumw32kp05hs8mny954hp2snhxcz", "amount": 15000, "label": "David" }, {"sendto":"tb1qpyhfrpys6skr2mmnc35p3dp7zlv9ew4k0gn7qm", "amount": 86200, "label": "Michael"} ], "coins":[{"transactionid":"ab83d9d0b2a9873b8ab0dc48b618098f3e7fbd807e27a10f789e9bc330ca89f7", "index":0}], "feeTarget":2, "password": "password1234" }}' http://127.0.0.1:37128/
 ```
 
 ```json
@@ -280,13 +280,13 @@ Now the mining fee will be subtracted from the output in which `subtractFee` was
 ( 0.4 - (mining fee) ) + 0.3 + 0.3
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"send", "params": { "payments":[ {"sendto": "tb1qgvnht40a08gumw32kp05hs8mny954hp2snhxcz", "amount": 15000, "label": "To David", "subtractFee": true }, {"sendto":"tb1qpyhfrpys6skr2mmnc35p3dp7zlv9ew4k0gn7qm", "amount": 86200, "label": "To Michael"} ], "coins":[{"transactionid":"ab83d9d0b2a9873b8ab0dc48b618098f3e7fbd807e27a10f789e9bc330ca89f7", "index":0}], "feeTarget":2 }}' http://127.0.0.1:37128/
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"send", "params": { "payments":[ {"sendto": "tb1qgvnht40a08gumw32kp05hs8mny954hp2snhxcz", "amount": 15000, "label": "David", "subtractFee": true }, {"sendto":"tb1qpyhfrpys6skr2mmnc35p3dp7zlv9ew4k0gn7qm", "amount": 86200, "label": "Michael"} ], "coins":[{"transactionid":"ab83d9d0b2a9873b8ab0dc48b618098f3e7fbd807e27a10f789e9bc330ca89f7", "index":0}], "feeTarget":2 }}' http://127.0.0.1:37128/
 ```
 
 In case of error, it is reported in the json's error object:
 
 ```bash
- curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"send", "params": { "payments": [{ "sendto": "tb1qnmfmkylkd548bbbcd9115b322891e27f741eb42c83ed982861ee121", "amount": 2015663, "label": "test" }], "coins":[{"transactionid":"c68dacd548bbbcd9115b38ed982861ee121c5ef6e0f1022891e27f741eb42c83", "index":0}], "feeTarget": 2 }}' http://127.0.0.1:37128/
+ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"send", "params": { "payments": [{ "sendto": "tb1qnmfmkylkd548bbbcd9115b322891e27f741eb42c83ed982861ee121", "amount": 2015663, "label": "Mr. Who" }], "coins":[{"transactionid":"c68dacd548bbbcd9115b38ed982861ee121c5ef6e0f1022891e27f741eb42c83", "index":0}], "feeTarget": 2 }}' http://127.0.0.1:37128/
 ```
 
 ```json
@@ -331,7 +331,7 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"gethistory"}' http:/1
       "datetime": "2019-09-22T11:59:32+00:00",
       "height": 5965600,
       "amount": 44480000,
-      "label": "Coinbase",
+      "label": "kyed-exchange",
       "tx": "6a2e99298dbbd201230a99e62ea584d7f63f62ad1de7166f24eb2e24867f6faf"
     },
 ```
