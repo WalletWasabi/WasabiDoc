@@ -27,7 +27,7 @@ Further tutorials about the different parts of the wallet, for newbies and power
 - [Password Finder](/using-wasabi/PasswordFinder.md)
 - [Cold-Wasabi Protocol](/using-wasabi/ColdWasabi.md)
 - [Lurking Wife Mode](/using-wasabi/LurkingWifeMode.md)
-- [Headless Wasabi Deamon](/using-wasabi/Daemon.md)
+- [Headless Wasabi Daemon](/using-wasabi/Daemon.md)
 - [Supported BIPs](/using-wasabi/BIPs.md)
 
 #### Privacy Best Practices
