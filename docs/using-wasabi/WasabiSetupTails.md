@@ -22,9 +22,7 @@ Remember that you will need at least a 300GB USB or SD card to download the enti
 
 ## Create admin password
 
-You need sudo privileges to install Wasabi, at “Tails Greeter” create your admin password in “additional settings” and launch Tails.
-
-Source: [https://tails.boum.org/doc/first_steps/startup_options/administration_password/index.en.html](https://tails.boum.org/doc/first_steps/startup_options/administration_password/index.en.html)
+You need sudo privileges to install Wasabi, at “Tails Greeter” [create your admin password](https://tails.boum.org/doc/first_steps/startup_options/administration_password/index.en.html) in “additional settings” and launch Tails.
 
 :::tip
 If you don't want to activate root privileges, you can always download Wasabi in .tar.gz format and extract the folder.
@@ -34,13 +32,10 @@ This way, you can launch Wasabi from the terminal via `./wassabee` command, and 
 
 ## Download
 
-Download for Debian/Ubuntu from:  
-[http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion) (tor hidden service)  
-or  
-[https://www.wasabiwallet.io/#download](https://www.wasabiwallet.io/#download)
+Download Wasabi for Debian/Ubuntu from the [tor hidden service](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion] or [clearnet](https://www.wasabiwallet.io/#download)
 
 Verify the PGP signature of the downloaded package, the zkSNACKs' PGP public key fingerprint is:
-<br>
+
 `${zksnacksPublicKeyFingerprint}`
 
 `gpg -v Wasabi-${currentVersion}.deb` (For more details check this [guide](/using-wasabi/InstallPackage.md#debian-and-ubuntu))
@@ -152,7 +147,8 @@ Remember to backup either your files or your [persistent storage](https://tails.
 
 ## Script to automatically install Wasabi on Tails
 
-Alternatively, you can use this [script](https://github.com/permabull/wasabi_tails_installer/blob/master/wasabi_tails_installer) made by [permabull](https://github.com/permabull), which, after downloading Wasabi by following [step 2](/using-wasabi/WasabiSetupTails.html#download), automatically installs Wasabi from the persistent folder and moves the wallet you wanna open (or all of them) by user input:
+Alternatively, you can use this [script](https://github.com/permabull/wasabi_tails_installer/blob/master/wasabi_tails_installer) made by [permabull](https://github.com/permabull), which, after downloading Wasabi by following [step 2](/using-wasabi/WasabiSetupTails.html#download), automatically installs Wasabi from the persistent folder and moves the wallet you want to open (or all of them) by user input:
+
 ```
 #!/bin/bash
 
