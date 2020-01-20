@@ -55,7 +55,7 @@ This is just like a gold coin, with a unique amount of gold atoms, and either a 
 Because UTXOs are not fungible, it is very important to know exactly which coin is which, and that is done by carefully labeling.
 
 :::tip
-In Wasabi it is mandatory to give every address a label of which entities know about this address, so that later you know where you got the coin from and you know how to spend it.
+In Wasabi it is mandatory to give every address a label of the observers who know about this address, so that later you know where you got the coin from and you know how to spend it.
 :::
 
 ![](/ReceiveLabelingRequired.png)
@@ -78,7 +78,7 @@ Wasabi is a coins-oriented wallet in the sense that coins are the most important
 As a privacy-oriented solution the focus is always on minimizing how much we reveal about our financial activity.
 For that reason when we create a new address to receive bitcoins or when we send a transaction that generates a change coin, we are forced to label that coin!
 And what kind of information do we have to provide here?
-The label has to tell us who is/are the one/s that know about that coin.
+The label has to tell us who are the observers that know about that coin.
 
 For example, if I create a new address to receive a `0.5 BTC` payment from Andrew for a laptop that I sold to him then the label has to be: `Andrew`.
 
