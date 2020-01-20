@@ -164,7 +164,6 @@ module.exports = {
             "/using-wasabi/PasswordFinder.md",
             "/using-wasabi/ColdWasabi.md",
             "/using-wasabi/LurkingWifeMode.md",
-            "/using-wasabi/Daemon.md",
             "/using-wasabi/RPC.md",
             "/using-wasabi/BIPs.md"
           ]
