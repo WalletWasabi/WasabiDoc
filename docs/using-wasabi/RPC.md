@@ -7,6 +7,8 @@
 
 # Wasabi Remote Procedure Call Interface
 
+[[toc]]
+
 Wasabi Wallet provides an RPC interface to interact with the wallet programmatically.
 The RPC server is listening by default on port 37128.
 
