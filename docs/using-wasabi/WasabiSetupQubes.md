@@ -16,8 +16,15 @@ There is a separation of the virtual machines running Wasabi on testnet, and tho
 If a reviewer compiles a malicious developer branch, then his mainnet private keys are secure in a different qube.
 
 This is a step by step guide on how to properly compile Wasabi Wallet from source in independent qubes.
+For tutorials on how to [download](https://www.qubes-os.org/downloads/) and [install](https://www.qubes-os.org/doc/installation-guide/) Qubes, please see their exhaustive documentation.
 
 ## Generate Template VM
+
+In order to get the dependencies to [compile Wasabi from source](/using-wasabi/BuildSource.md), first generate a new template VM by cloning the Debian template in the dom0 terminal.
+
+```
+qvm-clone template-debian-10 template-wasabi
+```
 
 ## Install Dependencies
 
