@@ -329,11 +329,6 @@ Nevertheless [this question](https://github.com/zkSNACKs/Meta/issues/20) deserve
 
 Wasabi has [hardware wallet integration](https://github.com/zkSNACKs/WalletWasabi/pull/134) however in this mode CoinJoining is not possible.
 
-### Bitcoin Core
-
-Some of the users use full nodes, mainly Bitcoin Core as their personal wallet, because this is the ultimate way of minimizing trust.
-Wasabi could ship with a bitcoind, much the same way as it does with Tor.
-
 ### .NET Ecosystem
 
 Wasabi could roll out a NuGet package, enabling developers to build applications with Wasabi.
