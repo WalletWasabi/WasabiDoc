@@ -57,4 +57,10 @@ Now shut down `template-wasabi`.
 
 ## Generate App VM
 
+Create a new App VM `wasabi` which is based on `template-wasabi`.
+
+```
+[user@dom0 ~]$ qvm-create wasabi --template template-wasabi --label red
+```
+
 ## Run Wasabi
