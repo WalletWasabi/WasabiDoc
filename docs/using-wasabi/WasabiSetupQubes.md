@@ -93,3 +93,19 @@ Pull the latest commits and compile from source.
 [user@source-wasabi ~]$ git pull
 [user@source-wasabi ~]$ dotnet run
 ```
+
+## Install Package in App VM
+
+Alternatively, you can also install the package in a new App VM, this is a stable version suitable to use on mainnet and is separated from the development App VM.
+There are no additional dependencies required, so the App VM can be based on `template-debian-10` directly.
+
+```sh
+[user@dom0 ~]$ qvm-create package-wasabi --template template-debian-10 --label red
+[user@dom0 ~]$ qvm-run -a package-wasabi gnome-terminal
+```
+
+Download, verify and install the .deb package in `package-wasabi` as described [here](/using-wasabi/InstallPackage.md#debian-and-ubuntu), then start Wasabi.
+
+```sh
+[user@package-wasabi ~]$ wassabee
+```
