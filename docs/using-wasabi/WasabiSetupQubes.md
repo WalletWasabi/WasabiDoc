@@ -9,8 +9,8 @@
 
 [[toc]]
 
-[Qubes](https://qubes-os.org/) is a free and open-source security-oriented operating system meant for single-user desktop computing.
-Qubes OS leverages xen-based virtualization to allow for the creation and management of isolated virtual machines called qubes.
+[Qubes](https://www.qubes-os.org/) is a free and open-source security-oriented operating system meant for single-user desktop computing.
+Qubes OS leverages xen-based virtualization to allow for the creation and management of isolated virtual machines (VMs) called qubes.
 This is valuable for users of high security software like Wasabi Wallet, and especially useful for testers of cutting edge developer branches.
 There is a separation of the virtual machines running Wasabi on testnet, and those running on mainnet with valuable private keys.
 If a reviewer compiles a malicious developer branch, then his mainnet private keys are secure in a different qube.
