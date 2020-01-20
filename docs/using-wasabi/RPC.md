@@ -14,8 +14,8 @@ The RPC server is listening by default on port 37128.
 
 ## Limitations
 
-The RPC server does NOT support neither batch requests nor TLS communications (because it is not supported on Linux and on Mac: https://github.com/dotnet/corefx/issues/14691).
-Requests are served in order one by one in series (no parallel processing).
+The RPC server does NOT support batch requests or TLS communications (because it is not supported on Linux and on Mac: https://github.com/dotnet/corefx/issues/14691).
+Requests are served in order one-by-one in series (no parallel processing).
 It is intentionally limited to serve only one whitelisted local address and it is disabled by default.
 
 # Before start (Enable RPC)
