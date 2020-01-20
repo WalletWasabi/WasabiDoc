@@ -42,7 +42,7 @@ Update the `template-wasabi`.
 [user@template-wasabi ~]$ sudo apt dist-upgrade
 ```
 
-Install [.NET Core ${dotnetVersion} SDK](https://www.microsoft.com/net/download) for "Building Apps"
+Install [.NET Core ${dotnetVersion} SDK](https://www.microsoft.com/net/download) for "Building Apps" in `template-wasabi`.
 
 :::tip Optional for privacy
 You can disable .NET's telemetry, which is sending some usage information to Microsoft:
@@ -55,9 +55,16 @@ You can disable .NET's telemetry, which is sending some usage information to Mic
 If you need to update .NET Core, then do it in this VM.
 Now shut down `template-wasabi`.
 
+```sh
+[user@dom0 ~]$ qvm-shutdown template-wasabi
+```
+
 ## Generate App VM
 
 Create a new App VM `source-wasabi` which is based on `template-wasabi`.
+This qube will be used to download, compile and run the Wasabi source code.
+This way you can create multiple App VMs for different testing purposes.
+All these App VMs will be updated when you update `template-wasabi`.
 
 ```sh
 [user@dom0 ~]$ qvm-create source-wasabi --template template-wasabi --label red
@@ -104,7 +111,7 @@ There are no additional dependencies required, so the App VM can be based on `te
 [user@dom0 ~]$ qvm-run -a package-wasabi gnome-terminal
 ```
 
-Download, verify and install the .deb package in `package-wasabi` as described [here](/using-wasabi/InstallPackage.md#debian-and-ubuntu), then start Wasabi.
+[Download, verify and install](/using-wasabi/InstallPackage.md#debian-and-ubuntu) the latest `Wasabi-${currentVersion}.deb` package in `package-wasabi`, then start Wasabi.
 
 ```sh
 [user@package-wasabi ~]$ wassabee
