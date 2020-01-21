@@ -149,7 +149,8 @@ module.exports = {
             "/using-wasabi/InstallPackage.md",
             "/using-wasabi/BuildSource.md",
             "/using-wasabi/DeterministicBuild.md",
-            "/using-wasabi/WasabiSetupTails.md"
+            "/using-wasabi/WasabiSetupTails.md",
+            "/using-wasabi/WasabiSetupVM.md"
           ]
         },
     {

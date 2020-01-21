@@ -18,6 +18,7 @@ Further tutorials about the different parts of the wallet, for newbies and power
 - [Build from source code](/using-wasabi/BuildSource.md)
 - [Deterministic Build](/using-wasabi/DeterministicBuild.md)
 - [Wasabi Setup on Tails](/using-wasabi/WasabiSetupTails.md)
+- [Wasabi Setup on Qubes](/using-wasabi/WasabiSetupVM.md)
 
 #### Using Wasabi
 - [Wallet Generation](/using-wasabi/WalletGeneration.md)
