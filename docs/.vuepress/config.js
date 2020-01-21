@@ -150,7 +150,7 @@ module.exports = {
             "/using-wasabi/BuildSource.md",
             "/using-wasabi/DeterministicBuild.md",
             "/using-wasabi/WasabiSetupTails.md",
-            "/using-wasabi/WasabiSetupQubes.md"
+            "/using-wasabi/WasabiSetupVM.md"
           ]
         },
     {
