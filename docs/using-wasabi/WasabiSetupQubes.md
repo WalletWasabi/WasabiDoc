@@ -15,7 +15,7 @@ This is valuable for users of high security software like Wasabi Wallet, and esp
 There is a separation of the virtual machines running Wasabi on testnet, and those running on mainnet with valuable private keys.
 If a reviewer compiles a malicious developer branch, then his mainnet private keys are secure in a different qube.
 
-This is a step by step guide on how to properly compile Wasabi Wallet from source in independent qubes.
+This is a step-by-step guide on how to properly compile Wasabi Wallet from source in independent qubes.
 For tutorials on how to [download](https://www.qubes-os.org/downloads/) and [install](https://www.qubes-os.org/doc/installation-guide/) Qubes, please see their exhaustive documentation.
 
 ## Generate Template VM
