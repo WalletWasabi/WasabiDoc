@@ -1,7 +1,7 @@
 ---
 {
-  "title": "Wasabi Setup on Qubes",
-  "description": "A step by step guide on how to use Wasabi Wallet in Qubes OS. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
+  "title": "Wasabi Setup in Virtual Machines",
+  "description": "A step by step guide on how to use Wasabi Wallet in virtual machines like Qubes OS or VirtualBox. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
 }
 ---
 
