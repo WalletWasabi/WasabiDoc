@@ -91,7 +91,7 @@ If you think that forensics companies are not paying big money to block explorer
 Even something as simple as leaving a comment on a YouTube video or Reddit post will be scraped.
 
 More importantly, if you are using a hardware wallet, an easy way to undo the previous times you plugged in the wallet through non-private applications is to create a new account on the device with a passphrase.
-For example, for ledger nano s, you can do this in the device `home screen > security > passphrase`.
+For example, for Ledger Nano S, you can do this in the device `home screen > security > passphrase`.
 Remember Commandment 2!
 
 Remember, Bitcoin is a peer-to-peer cash system, so when you have the opportunity to do so, buy your coins directly from someone you know or through a P2P market place.
