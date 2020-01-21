@@ -135,7 +135,7 @@ Once a Wasabi CoinJoin is made, it is no longer possible to connect the inputs t
 :::
 
 In this CoinJoin you get an equal value mixed coin, which is no longer tied to any of your previous change coins (inputs), and a change output that can be tied to these inputs.
-So consolidating your change in a CoinJoin is strictly more private and efficient than consolidating in a regular sending transaction, but it is always possible to follow the path of (red) non-anonymous change outputs; while the anonymous (yellow, green or check-marked) equal denominated mixed outputs are in no way connected to the previous inputs.
+So consolidating your change in a CoinJoin is strictly more private and efficient than consolidating in a regular sending transaction, but it is always possible to follow the path of (red) non-anonymous change outputs, while the anonymous (yellow, green or check-marked) equal denominated mixed outputs are in no way connected to the previous inputs.
 
 ### Spend the change to the same entity as in the initial transaction, but always use a new address.
 So, if in the first transaction you have 0.10 bitcoin and send Alice 0.04 bitcoin, you get 0.06 bitcoin back as change in a new address, which Alice can see belongs to you.
