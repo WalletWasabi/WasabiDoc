@@ -16,7 +16,7 @@
 | KeepKey        |         |         |         |
 | Ledger Nano S  | pass    | pass    | pass    |
 | Ledger Nano X  |         |         |         |
-| Trezor One     |         |         |         |
+| Trezor One     | pass    | pass    | pass    |
 | Trezor Model T | pass    | pass    | pass    |
 
 # How to test?
