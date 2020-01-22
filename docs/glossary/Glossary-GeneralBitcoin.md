@@ -356,7 +356,7 @@ By providing this pre-image block, anyone can verify the amount of computational
 :::details
 ### Regtest
 
-A local testing environment in which users can almost instantly generate blocks on demand for testing events, and can create private satoshis with no real-world value.
+A local testing environment in which users can instantly generate blocks on demand for testing events, and can create private satoshis with no real-world value.
 :::
 
 :::details
