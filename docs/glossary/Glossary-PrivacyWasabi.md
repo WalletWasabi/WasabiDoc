@@ -107,6 +107,13 @@ Read more: [Wasabi Wallet under the hood](/FAQ/FAQ-UseWasabi.md#how-does-my-wall
 :::
 
 :::details
+### Daemon
+
+A daemon is a command line interface to use Wasabi without the GUI (Graphical User Interface).
+Read more: [Headless Wasabi Daemon](/using-wasabi/Daemon.md)
+:::
+
+:::details
 ### Dust
 
 Dust is an UTXO that is uneconomical to spend.
