@@ -18,7 +18,7 @@ The RPC server does NOT support batch requests or TLS communications (because it
 Requests are served in order one-by-one in series (no parallel processing).
 It is intentionally limited to serve only one whitelisted local address and it is disabled by default.
 
-# Before start (Enable RPC)
+# Configure RPC
 
 The RPC server has to be configured and enabled.
 This is done in the `Config.json` file and the relevant settings are:
@@ -27,8 +27,6 @@ This is done in the `Config.json` file and the relevant settings are:
 * JsonRpcServerPrefixes: [an array of string with prefixes]
 	(default: [	"http://127.0.0.1:37128/", "http://localhost:37128/"])
 
-# Authentication
-
 The RPC server can be configured to allow `Anonymous` access or `Basic authentication` just by editing:
 
 * JsonRpcUser: [username] (default: empty)
@@ -36,6 +34,9 @@ The RPC server can be configured to allow `Anonymous` access or `Basic authentic
 
 By default both `JsonRpcUser` and `JsonRpcPassword` are empty `""`, which means that `Anonymous` requests are allowed.
 On the other hand, if `JsonRpcUser` and `JsonRpcPassword` are not empty it means that the requester has to provide the right credentials, otherwise he will get a http status code 401 (Unauthorized).
+
+Then start Wasabi Wallet either in the GUI or [headless daemon](/using-wasabi/Daemon.md).
+Now you can use the following RPC commands to interact with your wallet, instead of the GUI.
 
 # Available methods
 
