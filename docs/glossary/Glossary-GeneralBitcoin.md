@@ -436,7 +436,7 @@ Soft fork or soft-forking change is a fork in the blockchain which commonly occu
 :::details
 ### Testnet
 
-A testing environment in which users can obtain and spend satoshis that have no real-world value on a network that is very similar to the Bitcoin mainnet.
+A testing environment in which users can obtain and spend satoshis that have no real-world value on a global network that is very similar to the Bitcoin mainnet.
 :::
 
 :::details
