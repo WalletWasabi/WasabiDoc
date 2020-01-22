@@ -454,7 +454,7 @@ curl -s --data-binary '{"jsonrpc":"2.0" []}' http://127.0.0.1:37128/ | jq
 ### Mismatching parameters
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0", "method": "getnewaddress", "params": { "lable": "label with a type" }, "id":"1" }' http://127.0.0.1:37128/ | jq
+curl -s --data-binary '{"jsonrpc":"2.0", "method": "getnewaddress", "params": { "lable": "label with a typo" }, "id":"1" }' http://127.0.0.1:37128/ | jq
 ```
 
 ```json
