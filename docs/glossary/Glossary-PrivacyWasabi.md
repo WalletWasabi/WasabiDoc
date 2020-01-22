@@ -109,7 +109,7 @@ Read more: [Wasabi Wallet under the hood](/FAQ/FAQ-UseWasabi.md#how-does-my-wall
 :::details
 ### Daemon
 
-A daemon is a command line interface to use Wasabi without the GUI (Graphical User Interface).
+A daemon is a command line interface to run Wasabi without the GUI (Graphical User Interface).
 Read more: [Headless Wasabi Daemon](/using-wasabi/Daemon.md)
 :::
 
