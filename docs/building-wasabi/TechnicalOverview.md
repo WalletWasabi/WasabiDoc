@@ -387,7 +387,7 @@ Wasabi now offers 3 different ways to connect to a full node:
 ### Daemon/API
 
 Wasabi now offers an RPC interface.
-Full information can be found [here.](/using-wasabi/RPC.html)
+Full information can be found [here.](/using-wasabi/RPC.md)
 
 ### .NET Ecosystem
 
