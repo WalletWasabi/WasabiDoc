@@ -152,6 +152,13 @@ They are literally peers in the network, or in the CoinJoin.
 :::
 
 :::details
+### RPC
+
+RPC, or Remote Procedure Call, is an interface to interact with Wasabi Wallet programmatically.
+Read more: [RPC Interface](/using-wasabi/RPC.md)
+:::
+
+:::details
 ### Shield (or anonset shield)
 
 We often talk about check-mark, green, yellow and red shields... but what are they?
