@@ -1,7 +1,7 @@
 ---
 {
   "title": "RPC Interface",
-  "description": "A step by step guide on how to use the Wasabi RPC interface. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
+  "description": "A step by step guide on how to use the Wasabi remote procedure call interface. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
 }
 ---
 
@@ -23,19 +23,23 @@ It is intentionally limited to serve only one whitelisted local address and it i
 The RPC server has to be configured and enabled.
 This is done in the `Config.json` file and the relevant settings are:
 
-* JsonRpcServerEnabled: [true | false] (default: false)
-* JsonRpcServerPrefixes: [an array of string with prefixes]
+```
+JsonRpcServerEnabled: [true | false] (default: false)
+JsonRpcServerPrefixes: [an array of string with prefixes]
 	(default: [	"http://127.0.0.1:37128/", "http://localhost:37128/"])
+```
 
 The RPC server can be configured to allow `Anonymous` access or `Basic authentication` just by editing:
 
-* JsonRpcUser: [username] (default: empty)
-* JsonRpcPassword: [password] (default: empty)
+```
+JsonRpcUser: [username] (default: empty)
+JsonRpcPassword: [password] (default: empty)
+```
 
 By default both `JsonRpcUser` and `JsonRpcPassword` are empty `""`, which means that `Anonymous` requests are allowed.
 On the other hand, if `JsonRpcUser` and `JsonRpcPassword` are not empty it means that the requester has to provide the right credentials, otherwise he will get a http status code 401 (Unauthorized).
 
-Optionally you can install the `jq` [command line json processor](https://stedolan.github.io/jq/) with `sudo apt-get install jq`, and then adding `| jq` at the end of every RPC command to have a structured output.
+It is recommended to install the `jq` [command line json processor](https://stedolan.github.io/jq/) with `sudo apt-get install jq`, and then adding `| jq` at the end of every RPC command to have a structured output.
 
 Then start Wasabi Wallet either in the GUI or [headless daemon](/using-wasabi/Daemon.md) and load the wallet you want to use.
 Now you can use the following RPC commands to interact with your wallet, instead of the GUI.
@@ -43,15 +47,16 @@ Now you can use the following RPC commands to interact with your wallet, instead
 # Available methods
 
 The current version handles the following methods: `listunspentcoins`, `getstatus`, `getwalletinfo`, `getnewaddress`, `enqueue`, `dequeue`, `send`, `listkeys` and `stop`.
-They can be tested as follows:
+They can be used as follows:
 
 ## getstatus
 
 Returns information useful to understand the status Wasabi and its synchronization status.
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getstatus"}' http://127.0.0.1:37128/
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getstatus"}' http://127.0.0.1:37128/ | jq
 ```
+
 ```json
 {
   "jsonrpc": "2.0",
@@ -124,8 +129,9 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getstatus"}' http://1
 Returns the list of confirmed and unconfirmed coins that are unspent.
 
 ```bash
-$ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"listunspentcoins"}' http://127.0.0.1:37128/
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"listunspentcoins"}' http://127.0.0.1:37128/ | jq
 ```
+
 ```json
 {
   "jsonrpc": "2.0",
@@ -182,7 +188,7 @@ In case there is no wallet open it will return:
 Returns information about the current loaded wallet.
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getwalletinfo"}' http://127.0.0.1:37128/
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getwalletinfo"}' http://127.0.0.1:37128/ | jq
 ```
 
 ```json
@@ -217,7 +223,7 @@ In case there is no wallet open it will return:
 Creates an address and returns detailed information about it.
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getnewaddress","params":["Daniel"]}' http://127.0.0.1:37128/
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getnewaddress","params":["Daniel"]}' http://127.0.0.1:37128/ | jq
 ```
 
 ```json
@@ -265,7 +271,7 @@ In case an empty label is provided:
 Builds and broadcasts a transaction.
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"send", "params": { "payments":[ {"sendto": "tb1qgvnht40a08gumw32kp05hs8mny954hp2snhxcz", "amount": 15000, "label": "David" }, {"sendto":"tb1qpyhfrpys6skr2mmnc35p3dp7zlv9ew4k0gn7qm", "amount": 86200, "label": "Michael"} ], "coins":[{"transactionid":"ab83d9d0b2a9873b8ab0dc48b618098f3e7fbd807e27a10f789e9bc330ca89f7", "index":0}], "feeTarget":2, "password": "password1234" }}' http://127.0.0.1:37128/
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"send", "params": { "payments":[ {"sendto": "tb1qgvnht40a08gumw32kp05hs8mny954hp2snhxcz", "amount": 15000, "label": "David" }, {"sendto":"tb1qpyhfrpys6skr2mmnc35p3dp7zlv9ew4k0gn7qm", "amount": 86200, "label": "Michael"} ], "coins":[{"transactionid":"ab83d9d0b2a9873b8ab0dc48b618098f3e7fbd807e27a10f789e9bc330ca89f7", "index":0}], "feeTarget":2, "password": "password1234" }}' http://127.0.0.1:37128/ | jq
 ```
 
 ```json
@@ -285,13 +291,13 @@ Now the mining fee will be subtracted from the output in which `subtractFee` was
 ( 0.4 - (mining fee) ) + 0.3 + 0.3
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"send", "params": { "payments":[ {"sendto": "tb1qgvnht40a08gumw32kp05hs8mny954hp2snhxcz", "amount": 15000, "label": "David", "subtractFee": true }, {"sendto":"tb1qpyhfrpys6skr2mmnc35p3dp7zlv9ew4k0gn7qm", "amount": 86200, "label": "Michael"} ], "coins":[{"transactionid":"ab83d9d0b2a9873b8ab0dc48b618098f3e7fbd807e27a10f789e9bc330ca89f7", "index":0}], "feeTarget":2 }}' http://127.0.0.1:37128/
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"send", "params": { "payments":[ {"sendto": "tb1qgvnht40a08gumw32kp05hs8mny954hp2snhxcz", "amount": 15000, "label": "David", "subtractFee": true }, {"sendto":"tb1qpyhfrpys6skr2mmnc35p3dp7zlv9ew4k0gn7qm", "amount": 86200, "label": "Michael"} ], "coins":[{"transactionid":"ab83d9d0b2a9873b8ab0dc48b618098f3e7fbd807e27a10f789e9bc330ca89f7", "index":0}], "feeTarget":2 }}' http://127.0.0.1:37128/ | jq
 ```
 
 In case of error, it is reported in the json's error object:
 
 ```bash
- curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"send", "params": { "payments": [{ "sendto": "tb1qnmfmkylkd548bbbcd9115b322891e27f741eb42c83ed982861ee121", "amount": 2015663, "label": "Mr. Who" }], "coins":[{"transactionid":"c68dacd548bbbcd9115b38ed982861ee121c5ef6e0f1022891e27f741eb42c83", "index":0}], "feeTarget": 2 }}' http://127.0.0.1:37128/
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"send", "params": { "payments": [{ "sendto": "tb1qnmfmkylkd548bbbcd9115b322891e27f741eb42c83ed982861ee121", "amount": 2015663, "label": "Mr. Who" }], "coins":[{"transactionid":"c68dacd548bbbcd9115b38ed982861ee121c5ef6e0f1022891e27f741eb42c83", "index":0}], "feeTarget": 2 }}' http://127.0.0.1:37128/ | jq
 ```
 
 ```json
@@ -312,7 +318,7 @@ In case of error, it is reported in the json's error object:
 Returns the list of all transactions sent and received.
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"gethistory"}' http:/127.0.0.1:37128
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"gethistory"}' http:/127.0.0.1:37128 | jq
 ```
 
 ```json
@@ -346,7 +352,7 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"gethistory"}' http:/1
 Returns the list of all the generated keys.
 
 ```bash
-curl --data-binary '{"jsonrpc":"2.0","id":"1","method":"listkeys"}' http://127.0.0.1:37128/
+curl --data-binary '{"jsonrpc":"2.0","id":"1","method":"listkeys"}' http://127.0.0.1:37128/ | jq
 ```
 
 ```json
@@ -390,7 +396,7 @@ curl --data-binary '{"jsonrpc":"2.0","id":"1","method":"listkeys"}' http://127.0
 Enqueue coins in order to participate in coinjoin.
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"enqueue", "params": { "coins": [{"transactionId": "ba70587b37ba8b4de143929994d3b8ee2810340cef23e8016020687716117a52", "index":"12"}]} }' http://127.0.0.1:37128/
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"enqueue", "params": { "coins": [{"transactionId": "ba70587b37ba8b4de143929994d3b8ee2810340cef23e8016020687716117a52", "index":"12"}]} }' http://127.0.0.1:37128/ | jq
 ```
 
 ## dequeue
@@ -398,7 +404,7 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"enqueue", "params": {
 Dequeues coins that were queued to participate in a CoinJoin.
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"dequeue", "params": { "coins": [{"transactionId": "ba70587b37ba8b4de143929994d3b8ee2810340cef23e8016020687716117a52", "index":"12"}]} }' http://127.0.0.1:37128/
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"dequeue", "params": { "coins": [{"transactionId": "ba70587b37ba8b4de143929994d3b8ee2810340cef23e8016020687716117a52", "index":"12"}]} }' http://127.0.0.1:37128/ | jq
 ```
 
 ## stop
@@ -406,7 +412,7 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"dequeue", "params": {
 Stops and exits Wasabi.
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0", "method":"stop"}' http://127.0.0.1:37128/
+curl -s --data-binary '{"jsonrpc":"2.0", "method":"stop"}' http://127.0.0.1:37128/ | jq
 ```
 
 ------
@@ -416,7 +422,10 @@ curl -s --data-binary '{"jsonrpc":"2.0", "method":"stop"}' http://127.0.0.1:3712
 ### Method not found
 
 ```bash
-$ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"howknows"}' http://127.0.0.1:37128/
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"howknows"}' http://127.0.0.1:37128/ | jq
+```
+
+```json
 {
   "jsonrpc": "2.0",
   "error": {
@@ -429,7 +438,7 @@ $ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"howknows"}' http://
 
 ### Parse error
 ```bash
-$ curl -s --data-binary '{"jsonrpc":"2.0" []}' http://127.0.0.1:37128/
+curl -s --data-binary '{"jsonrpc":"2.0" []}' http://127.0.0.1:37128/ | jq
 ```
 
 ```json
@@ -445,7 +454,7 @@ $ curl -s --data-binary '{"jsonrpc":"2.0" []}' http://127.0.0.1:37128/
 ### Mismatching parameters
 
 ```bash
-$ curl -s --data-binary '{"jsonrpc":"2.0", "method": "getnewaddress", "params": { "lable": "label with a type" }, "id":"1" }' http://127.0.0.1:37128/
+curl -s --data-binary '{"jsonrpc":"2.0", "method": "getnewaddress", "params": { "lable": "label with a type" }, "id":"1" }' http://127.0.0.1:37128/ | jq
 ```
 
 ```json
