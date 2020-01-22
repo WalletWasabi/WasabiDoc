@@ -199,6 +199,12 @@ Read more: [Use Lightning](/why-wasabi/10Commandments.md#_10-use-lightning)
 :::
 
 :::details
+### Mainnet
+
+The original and main network for Bitcoin transactions, where satoshis have real economic value.
+:::
+
+:::details
 ### Mempool
 
 The Bitcoin Mempool (memory pool) is a collection of all transaction data in a block that have been verified by Bitcoin nodes, but are not yet confirmed.
@@ -348,6 +354,12 @@ By providing this pre-image block, anyone can verify the amount of computational
 :::
 
 :::details
+### Regtest
+
+A local testing environment in which developers can instantly generate blocks on demand for testing events, and can create private satoshis with no real-world value.
+:::
+
+:::details
 ### Replace by Fee (RBF)
 
 Replacing one version of an unconfirmed transaction with a different version of the transaction that pays a higher transaction fee.
@@ -419,6 +431,12 @@ Read more: [Wasabi Wallet under the hood](/building-wasabi/TechnicalOverview.md#
 ### Soft Fork
 
 Soft fork or soft-forking change is a fork in the blockchain which commonly occurs when miners using non-upgraded nodes don’t follow a new consensus rule their nodes don’t know about.
+:::
+
+:::details
+### Testnet
+
+A testing environment in which users can obtain and spend satoshis that have no real-world value on a global network that is very similar to the Bitcoin mainnet.
 :::
 
 :::details
