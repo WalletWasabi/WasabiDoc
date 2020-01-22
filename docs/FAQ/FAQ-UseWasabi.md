@@ -295,6 +295,25 @@ When you import the wallet file into a new Wasabi client, then it will use this 
 :::
 
 :::details
+### How do I delete a generated address?
+
+There might be reasons why you do no longer want to see a labeled and generated address in the GUI, like when you have accidentally revealed to others that this address is yours.
+Then you can delete the address from the Wasabi GUI by manually deleting the public key from your wallet files.
+1. Note the label of the address.
+2. Open the wallet file in the `Wallets` and `WalletBackup` folder.
+3. Search for the label and delete the whole block.
+
+```
+{
+ "PubKey": "03e13c493218306fd89741392c702336088f4382e823e3ea2a73a3ca5cf51a34a3",
+ "FullKeyPath": "84'/0'/0'/0/5",
+ "Label": "",
+ "KeyState": 0
+}
+```
+:::
+
+:::details
 ### Why do I have to label my address?
 
 Bitcoin addresses look like cyphertext, they are not easily remembered and it's not clear how they were used previously.
