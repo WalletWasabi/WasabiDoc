@@ -216,7 +216,7 @@ In our calculations, if Wasabi would acquire the volume of the most popular Bitc
 This section consists of many small issues, waiting to be solved one-by-one.
 Since solving these issues is often more effective than discussing them, they won't be discussed in this document.
 
-The Wasabi developers are responsive, and encourage you to report problems or ideas for improvement [here.](https://github.com/zkSNACKs/WasabiDoc/issues)
+The Wasabi developers are responsive, and encourage you to report problems or ideas for improvement [here](https://github.com/zkSNACKs/WasabiDoc/issues).
 
 ## III. Education
 
