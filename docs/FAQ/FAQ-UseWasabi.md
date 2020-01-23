@@ -552,7 +552,7 @@ The fee you pay to get confirmation on the Bitcoin timechain is denominated in s
 This means that the larger your transaction size, meaning the number of inputs and outputs, the more total bitcoin you have to pay for confirmation.
 If you want faster confirmation, then you have to pay proportionally more sats per vByte.
 
-You can toggle the display of the fee between `sat/vByte` & `percentage of transfered value` & `total bitcoin` & `total USD` by clicking on the text of the fee.
+You can toggle the display of the fee between `sat/vByte` & `percentage of transferred value` & `total bitcoin` & `total USD` by clicking on the text of the fee.
 :::
 
 :::details
@@ -723,7 +723,7 @@ High: 100 sat/vbyte: 16,800 satoshis per participant (0.168 %)
 
 Here, we already observe that in some extreme cases, the miner is earning almost 0.2%!
 Recall that Wasabi has a coordinator fee that is capped at 0.3%, so in these extreme cases the total fee paid by the user (you) is closer to 0.5%.
-Now we proceed to go to a smaller denominaton, 0.01 BTC:
+Now we proceed to go to a smaller denomination, 0.01 BTC:
 
 :::tip
 Minimum: 2 sat/vbyte: 336 satoshis per participant (0.0336 %)

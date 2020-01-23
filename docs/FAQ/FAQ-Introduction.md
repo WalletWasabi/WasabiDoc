@@ -105,7 +105,7 @@ In the second case, if you happen to broadcast a transaction of yours to a full 
 
 There are countless reasons why it is the only logical choice to be [bitcoin-only](https://bitcoin-only.com).
 With Bitcoin we have a once in a lifetime opportunity to manifest libre sound money.
-If we suceed, then this might emerge an utmost beautiful agora of sovereign individuals.
+If we succeed, then this might emerge an utmost beautiful agora of sovereign individuals.
 If we fail, then this will conjure up the most horrific Orwellian nightmare.
 There is no room for wasted time and energy, this Great Work requires our full attention.
 Any line of code written to support a random shitcoin takes away scarce developer time to work on real problems.

@@ -161,7 +161,7 @@ For hardware wallet related questions see: [Hardware Wallet FAQs](/FAQ/FAQ-UseWa
 
 7. `Load Wallet` to import the xpub or Public Key (used to generate all receive addresses)
 
-8. Go to `Receive` tab and Generate Receive Address, Copy this to clipboard (memorise the first/last few characters). (Note, don't generate more than 20 unused receive addresses).
+8. Go to `Receive` tab and Generate Receive Address, Copy this to clipboard (memorize the first/last few characters). (Note, don't generate more than 20 unused receive addresses).
 
 9. Send a single mixed coin (don't combine UTXOs/coins as this hurts your anon-set badly) from your "Hot" Wasabi Wallet to this "Cold" Wasabi Wallet receive address by pasting from clipboard (check address hasn't changed).
 
