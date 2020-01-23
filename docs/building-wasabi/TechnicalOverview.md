@@ -77,7 +77,7 @@ Our UX design choices have naturally led us down this road.
 ![](/WalletManagerLoadWallet.png)
 
 Wasabi has a status bar that shows meta-information about the state of the wallet.
-To better understand the architecture of the wallet it, is helpful to go through the information provided.
+To better understand the architecture of the wallet, it is helpful to go through the information provided.
 
 The "Tor" label shows the status of the Tor daemon.
 Tor is an anonymity network which Wasabi includes and runs by default in the background.
