@@ -116,7 +116,7 @@ After loading the wallet, the user can generate a receive address.
 Some important design choices were made here.
 First, Wasabi had to be a Segregated Witness only wallet, so the registration of unconfirmed CoinJoin outputs into a new CoinJoin round is done to prevent malleability attacks.
 
-However, the developers of Wasabi decided to make the wallet native Segwit (bech32) only, not supporting wrapped SegWit.
+However, the developers of Wasabi decided to make the wallet native SegWit (bech32) only, not supporting wrapped SegWit.
 This way, the backend server can leverage this, and only generate filters regarding bech32 addresses.
 This makes Wasabi's filter size a few megabytes today, instead of >4GB.
 
