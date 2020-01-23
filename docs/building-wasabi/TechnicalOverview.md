@@ -337,7 +337,7 @@ Wasabi today has all the features a Bitcoin wallet needs that are not related to
 - Read QR Code (currently it only shows it): [https://github.com/zkSNACKs/WalletWasabi/issues/731](https://github.com/zkSNACKs/WalletWasabi/issues/731)
 - Bitcoin URL Support: [https://github.com/zkSNACKs/WalletWasabi/issues/732](https://github.com/zkSNACKs/WalletWasabi/issues/732)
 
-The more users use the wallet, the more privacy it can provide.</p>
+The more users use the wallet, the more privacy it can provide.
 
 ### Localization
 
