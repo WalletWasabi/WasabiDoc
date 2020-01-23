@@ -122,7 +122,7 @@ This way, the backend server can leverage this, and only generate filters regard
 This makes Wasabi's filter size a few megabytes today, instead of >4GB.
 
 At first glance, this may be seen as hazardous to privacy.
-However, since Wasabi user UTXOs can be recognized as such by the huge CoinJoins that only Wasabi does anyway, there is minimal-to-no additional privacy loss.
+However, since UTXOs CoinJoined by using Wasabi can be recognized as such by their huge anonymity sets that only Wasabi creates, there is minimal-to-no additional privacy loss.
 In the future, as more and more wallets adopt bech32, Wasabi developers will have to look at how to scale the performance and network usage of the wallet.
 
 Failing that, Wasabi's initial sync will slow down.
