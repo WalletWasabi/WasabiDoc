@@ -354,7 +354,7 @@ On the other hand, this could be considered a backward-looking short-sighted imp
 
 A way of facilitating funds to make their way into the wallet would be to introduce transitionary P2WPKH over P2SH addresses.
 Those would not be checked against Golomb-Rice filters.
-Instead, a single backend query would establish its balance only once, and then immediately sweep the money to a bech32 wallet-managed address: [https://github.com/zkSNACKs/Meta/issues/34](https://github.com/zkSNACKs/Meta/issues/34)
+Instead, a single backend query would establish its balance only once, and then immediately sweep the money to a bech32 wallet-managed address: [https://github.com/zkSNACKs/Meta/issues/34](https://github.com/zkSNACKs/Meta/issues/34).
 
 ### Smartphone
 
