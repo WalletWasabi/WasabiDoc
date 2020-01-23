@@ -81,7 +81,8 @@ To better understand the architecture of the wallet, it is helpful to go through
 
 The "Tor" label shows the status of the Tor daemon.
 Tor is an anonymity network which Wasabi includes and runs by default in the background.
-The user can also opt to use their own Tor instance. All Internet traffic goes through Tor, and by default all this traffic stays inside the onion network.
+The user can also opt to use their own Tor instance.
+All Internet traffic goes through Tor, and by default all this traffic stays inside the onion network.
 Exit nodes are only involved in fallback scenarios.
 
 For example, if the Tor hidden service of the backend becomes unavailable for the user, the wallet falls back to communicating with the backend's clearnet endpoint, still over Tor.
