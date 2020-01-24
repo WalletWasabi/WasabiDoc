@@ -1,5 +1,5 @@
 // https://v1.vuepress.vuejs.org/guide/basic-config.html#app-level-enhancements
-const openDetails = (timeout = 150) => {
+const openDetails = (timeout = 50) => {
   setTimeout(() => { // wait for hash to change after link click
     const { hash } = location
     if (hash && hash.length) {
