@@ -27,6 +27,7 @@ Further tutorials about the different parts of the wallet, for newbies and power
 - [CoinJoin](/using-wasabi/CoinJoin.md)
 - [Password Finder](/using-wasabi/PasswordFinder.md)
 - [Cold-Wasabi Protocol](/using-wasabi/ColdWasabi.md)
+- [Bitcoin Core](/using-wasabi/BitcoinCore.md)
 - [Lurking Wife Mode](/using-wasabi/LurkingWifeMode.md)
 - [Headless Wasabi Daemon](/using-wasabi/Daemon.md)
 - [RPC Interface](/using-wasabi/RPC.md)
