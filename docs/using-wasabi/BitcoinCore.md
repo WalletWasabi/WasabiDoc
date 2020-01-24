@@ -24,7 +24,21 @@ With your full node you define, verify and enforce the rules of your sound money
 Only when running your own node do you verify if the money you receive is actually valid bitcoin.
 You do not trust on an external third party, and thus you also do not leak any sensitive financial information to them.
 
-## How Wasabi uses Bitcoin Core
+There are several software implementations that function as a full node, for example [Bitcoin Core](https://bitcoincore.org/), [Bitcoin Knots](https://http://bitcoinknots.org/), or [LibBitcoin](https://libbitcoin.info/).
+
+## How Wasabi uses your Bitcoin full node
+
+Wasabi currently has a work in progress partial Bitcoin Core integration.
+The zkSNACKs coordinating server broadcasts [BIP 158 block filters](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients) to all Wasabi clients, who locally check if the filter hits for their public keys.
+
+:::warning 
+The zkSNACKs server has to be trusted to serve correct filters, until [BIP 157 client side block filtering](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients) is implemented in Bitcoin Core.
+:::
+
+If a full node is connected to Wasabi, then the relevant block is fetched from this trusted node, and not from a random P2P node.
+Wasabi also queries if your local mempool has unconfirmed transactions that are of interest to you.
+Further, your full node is used to estimate the current mining fee level based on the bitcoind `smartfee` algorithm.
+Your full node is not used to broadcast your transactions, as this is done through a random peer-to-peer node with a new tor identity, which is better for your [network level privacy](/using-wasabi/NetworkLevelPrivacy.md).
 
 ## bitcoind within Wasabi
 
