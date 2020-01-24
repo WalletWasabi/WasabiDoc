@@ -170,6 +170,9 @@ Read more: [RPC Interface](/using-wasabi/RPC.md)
 
 We often talk about check-mark, green, yellow and red shields... but what are they?
 Coins in your wallet have shields (red, yellow, green and green check-mark).
+
+<img src="/Shields.png" alt="Shields" style="border:0;" />
+
 Each shield represents the [Anonymity Set](/FAQ/FAQ-UseWasabi.md#what-is-the-anonymity-set) level of a given coin.
 By the anonymity set levels are `2`, `21` and `50`, however, this can be [changed in the settings](/FAQ/FAQ-UseWasabi.md#how-can-i-change-the-anonset-target).
 
