@@ -13,7 +13,7 @@
 
 When running a Bitcoin full node, you define the precise monetary rules that you voluntarily agree on, nobody else forces this choice upon you.
 Thus any sovereign individual who wants to claim financial independence must run a full node.
-Once your own rules are firmly established, your software discovers other nodes in the Bitcoin peer-to-peer network which adhere to the exact same set of rules.
+Once your own rules are firmly established, your software discovers other nodes in the Bitcoin peer-to-peer network which do not break your rules.
 These peers send you transactions and blocks which are valid according to their set of rules, and you verify for your self if they are also correct for you.
 If one of the proposed transactions breaks your own rules, then you mark it as invalid, disconnect from and ban the node who send you the malicious transaction.
 
@@ -22,7 +22,7 @@ With your full node you define, verify and enforce the rules of your sound money
 :::
 
 Only when running your own node do you verify if the money you receive is actually valid bitcoin.
-You do not trust on an external third party, and thus you also do not leak any sensitive financial information to them.
+You do not trust an external third party, and thus you also do not leak any sensitive financial information to them.
 
 There are several software implementations that function as a full node, for example [Bitcoin Core](https://bitcoincore.org/), [Bitcoin Knots](https://http://bitcoinknots.org/), or [LibBitcoin](https://libbitcoin.info/).
 
@@ -57,7 +57,7 @@ This is especially useful to save on bandwidth, as you have already downloaded a
 
 ## Using an already existing remote Bitcoin full node
 
-If you have a Bitcoin full node already on a remote computer, then Wasabi Wallet can use this too.
+If you have a Bitcoin full node already on a remote computer, then Wasabi Wallet can use this, too.
 In the settings specify the local IP address, or the tor hidden service .onion of your full node.
 
 ![](/SettingsBitcoinCore.png)
