@@ -27,9 +27,16 @@ const openVideo = embedEl => {
 const isEnter = e => e.code === 'Enter' || (e.keyCode || e.which) === 13
 
 const handleClick = e => {
+  const isSearchInput = e.target.matches('#algolia-search-input') && isEnter(e)
+
   // faq details
-  if (e.target.matches('.sidebar-link,.header-anchor,[class*="algolia"]') || (e.target.matches('#algolia-search-input') && isEnter(e))) {
+  if (e.target.matches('.sidebar-link,.header-anchor,[class*="algolia"]') || isSearchInput) {
     openDetails()
+  }
+
+  // blur search field on select
+  if (e.target.matches('.ds-dropdown-menu *') || isSearchInput) {
+    document.getElementById('algolia-search-input').blur()
   }
 
   // youtube previews
