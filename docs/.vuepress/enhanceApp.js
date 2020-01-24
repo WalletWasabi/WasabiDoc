@@ -24,6 +24,20 @@ const openVideo = embedEl => {
   }
 }
 
+const isEnter = e => e.code === 'Enter' || (e.keyCode || e.which) === 13
+
+const handleClick = e => {
+  // faq details
+  if (e.target.matches('.sidebar-link,.header-anchor,[class*="algolia"]') || (e.target.matches('#algolia-search-input') && isEnter(e))) {
+    openDetails()
+  }
+
+  // youtube previews
+  if (e.target.matches('.ytEmbed')) {
+    openVideo(e.target)
+  }
+}
+
 export default ({ router }) => {
   if (typeof process === 'undefined' || process.env.VUE_ENV !== 'server') {
     router.onReady(() => {
@@ -32,16 +46,9 @@ export default ({ router }) => {
       // initial page rendering
       app.$once('hook:mounted', () => openDetails(500))
 
-      document.addEventListener('click', e => {
-        // faq details
-        if (e.target.matches('.sidebar-link,.header-anchor,[class*="algolia"]')) {
-          openDetails()
-        }
-
-        // youtube previews
-        if (e.target.matches('.ytEmbed')) {
-          openVideo(e.target)
-        }
+      document.addEventListener('click', handleClick)
+      document.addEventListener('keyup', e => {
+        if (isEnter(e)) handleClick(e)
       })
     })
   }
