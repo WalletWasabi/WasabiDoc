@@ -14,8 +14,8 @@ Further the questions for those who are interested in contributing to Wasabi.
 
 ### Chapters
 
-- [Introduction FAQ](/FAQ/FAQ-Introduction.md)
-- [Installation FAQ](/FAQ/FAQ-Installation.md)
-- [Use of Wasabi FAQ](/FAQ/FAQ-UseWasabi.md)
-- [Bitcoin Privacy FAQ](/FAQ/FAQ-GeneralBitcoinPrivacy.md)
-- [Contribution FAQ](/FAQ/FAQ-Contribution.md)
+- [Introduction FAQ](https://github.com/zkSNACKs/WasabiDoc/blob/master/docs/FAQ/FAQ-Introduction.md)
+- [Installation FAQ](https://github.com/zkSNACKs/WasabiDoc/blob/master/docs/FAQ/FAQ-Installation.md)
+- [Use of Wasabi FAQ](https://github.com/zkSNACKs/WasabiDoc/blob/master/docs/FAQ/FAQ-UseWasabi.md)
+- [Bitcoin Privacy FAQ](https://github.com/zkSNACKs/WasabiDoc/blob/master/docs/FAQ/FAQ-GeneralBitcoinPrivacy.md)
+- [Contribution FAQ](https://github.com/zkSNACKs/WasabiDoc/blob/master/docs/FAQ/FAQ-Contribution.md)
