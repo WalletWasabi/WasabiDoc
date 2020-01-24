@@ -49,6 +49,26 @@ It is optional to keep bitcoind running even after Wasabi Wallet is shut down, s
 
 ![](/SettingsBitcoinCore.png)
 
-## Using an already existing local Bitcoin Core
+## Using an already existing local Bitcoin full node
 
-## Using an already existing remote Bitcoin Core
+If you have a Bitcoin full node already pre-installed on the same computer you use to run Wasabi Wallet, then since [version 1.1.1](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v1.1.1) Wasabi will use your node by default.
+You do not need to change anything in the settings, it should work plug and play.
+This is especially useful to save on bandwidth, as you have already downloaded and verified a block with your full node, so you don't need to download it again with Wasabi.
+
+## Using an already existing remote Bitcoin full node
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
