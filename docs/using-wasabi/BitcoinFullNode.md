@@ -1,11 +1,11 @@
 ---
 {
-  "title": "Bitcoin Core",
+  "title": "Bitcoin Full Node",
   "description": "Information and step-by-step guides on how to use your own Bitcoin Core full node together with Wasabi Wallet. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
 }
 ---
 
-# Bitcoin Core
+# Bitcoin Full Node
 
 [[toc]]
 
