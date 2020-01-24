@@ -42,6 +42,13 @@ Your full node is not used to broadcast your transactions, as this is done throu
 
 ## bitcoind within Wasabi
 
+Since [version 1.1.10](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v1.1.10), Wasabi Wallet ships with the [bitcoind binaries](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi/Microservices/Binaries) of Bitcoin Core.
+This means that every Wasabi client has the necessary software to run a Bitcoin full node and define, verify and enforce monetary consensus.
+By default, bitcoind is not started together with Wasabi, this must be activated explicitly in the settings, because this is a bandwidth, CPU and storage intensive program.
+It is optional to keep bitcoind running even after Wasabi Wallet is shut down, so to verify blocks as soon as they are received.
+
+![](/SettingsBitcoinCore.png)
+
 ## Using an already existing local Bitcoin Core
 
 ## Using an already existing remote Bitcoin Core
