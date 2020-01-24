@@ -57,18 +57,7 @@ This is especially useful to save on bandwidth, as you have already downloaded a
 
 ## Using an already existing remote Bitcoin full node
 
+If you have a Bitcoin full node already on a remote computer, then Wasabi Wallet can use this too.
+In the settings specify the local IP address, or the tor hidden service .onion of your full node.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![](/SettingsBitcoinCore.png)
