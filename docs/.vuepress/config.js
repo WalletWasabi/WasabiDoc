@@ -164,6 +164,7 @@ module.exports = {
             "/using-wasabi/CoinJoin.md",
             "/using-wasabi/PasswordFinder.md",
             "/using-wasabi/ColdWasabi.md",
+            "/using-wasabi/BitcoinFullNode.md",
             "/using-wasabi/LurkingWifeMode.md",
             "/using-wasabi/Daemon.md",
             "/using-wasabi/RPC.md",

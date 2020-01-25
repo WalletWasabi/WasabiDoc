@@ -204,7 +204,7 @@ The P2P node that serves you the block does not know if you are a regular Bitcoi
 You are yet another peer in the network.
 
 It is important to note that although the privacy is as good as with a full node, you do not verify that the coins are actually valid.
-In order to do this, you must run a full node and verify the entire timechain.
+In order to do this, you must run a [full node](/using-wasabi/BitcoinFullNode.md) and verify the entire blockchain.
 With the block filters, you trust that the Wasabi server gives you the correct filters, and does not withhold any of them.
 You also do not have proof that the block you download from a P2P node is actually in the valid chain, but you can verify the proof of work in the block header.
 ::::
@@ -216,7 +216,7 @@ Wasabi uses [BIP 158](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-li
 If so, then by default Wasabi connects to a random Bitcoin peer to peer full node over tor, and requests only to download this block.
 For each block, it generates a new and separate tor identity.
 
-If you are running your own node, then you can pull this block directly from the timechain that you have fully verified your self.
+If you are running [your own node](/using-wasabi/BitcoinFullNode.md), then you can pull this block directly from the blockchain that you have fully verified your self.
 If the node is on the same computer, then it is connected automatically by default.
 You can also specify the local IP or tor hidden service of your remote full node.
 :::
@@ -1196,7 +1196,7 @@ It was introduced with the 0.7 release, introduced a third genesis block, a new 
 :::details
 ### How do I connect my own full node to Wasabi?
 
-There is currently a basic implementation of connecting your full node to Wasabi.
+There is currently a basic implementation of connecting [your full node to Wasabi](/using-wasabi/BitcoinFullNode.md).
 The server will still send you [BIP 158 block filters](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients), and when you realize that a block contains a transaction of yours, then you pull this block from your own full node, instead of a random P2P node, thus you can verify that this is actually a valid block including your transaction.
 One attack vector could be that Wasabi lies to you and gives you wrong filters that exclude your transaction, thus you would see in the wallet less coins than you actually control.
 [BIP 157 solves this](/using-wasabi/BIPs.md#bip-157-client-side-block-filtering).
