@@ -16,7 +16,7 @@
 
 Let's assume you want to send 0.5 bitcoin to Alice.
 In the `Send` tab you select one or more UTXO, these are the inputs of the transaction.
-For example, let's assume that you choose a red-shield / anonymity set 1 UTXO worth 2 bitcoins.
+For example, let's assume that you choose a <img src="/ShieldRed.png" alt="red shield" class="shield" /> / anonymity set 1 UTXO worth 2 bitcoins.
 You put Alice's address in the `Receiving Address` field, and set the spending `Amount`.
 In this example, we are sending 0.5 bitcoin.
 This will be one output of the transaction.
@@ -34,7 +34,7 @@ This process is applicable to any Bitcoin transaction where the `sent` amount is
 Let's say that you have a KYC red-shield `anonymity set 1` UTXO, and you register it for a CoinJoin round.
 Afterwards, depending on the value of your UTXO in relation to the minimum CoinJoin amount and on the value of UTXOs of the other participants, you will receive two or more UTXOs.
 One of those will be the change left over from the round, and it will retain the red-shield `anonymity set 1` designation.
-The remaining UTXO(s) will have either a yellow, a green, or a check-marked shield. 
+The remaining UTXO(s) will have either a yellow, a green, or a check-marked shield.
 You can see the `anonymity set` size for any UTXO by hovering your mouse-pointer over its associated shield.
 The number represented by 'x' shown in the green-shield will reflect the anonymity set size for that round.
 

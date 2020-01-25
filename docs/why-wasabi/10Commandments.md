@@ -66,7 +66,7 @@ In the same way that reusing addresses hurts your privacy, consolidating all of 
 
 ## 7. Never merge mixed and unmixed coins, and avoid large merges of mixed coins!
 
-The first part should be somewhat intuitive - coins in your wallet have shields (red, yellow, green and green +) and it is at a minimum important to never send non-red coins (coins with anonset > 1) with red coins (coins with anonset == 1).
+The first part should be somewhat intuitive - coins in your wallet have shields <img src="/Shields.png" alt="Shields" width="74" height="15" style="margin:0;border:0;" /> and it is at a minimum important to never send non-red coins (coins with anonset > 1) with red coins (coins with anonset == 1).
 By merging your tainted coins with your mixed coins, you undo the privacy benefits of CoinJoins!
 Further, when sending mixed coins to your cold storage, make sure to send your coins in parallel.
 Don't merge all of your Bitcoin (more than 0.8 BTC) in a single transaction!

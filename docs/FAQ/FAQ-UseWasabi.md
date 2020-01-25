@@ -616,7 +616,7 @@ The problem with this transaction, is your boss knows you, and knows that the 0.
 But when you combine (consolidate) your coins in this way, you reveal to your boss that you also have 2.1 BTC from somewhere else, and you reveal to the exchange that you have 0.65 bitcoin from somewhere else.
 
 When you CoinJoin (mix) coins with Wasabi, you actually de-link the trail from your boss/exchange, to the coins in your wallet.
-The coin will have an anonymity set > 1, and typically will have a green shield.
+The coin will have an anonymity set > 1, and typically will have a <img src="/ShieldGreen.png" alt="green" class="shield" /> shield.
 This coin can now be spent without having to worry about your boss or the exchange tracking your behavior.
 
 However, when you mix a coin, there is often change.
@@ -1219,7 +1219,11 @@ In the second case, if you happen to broadcast a transaction of yours to a full 
 :::details
 ### How can I change the anonset target?
 
-In the `Settings` tab at the bottom you can change the three `PrivacyLevelX` values of the desired anon set of the yellow, green, and checkmark shield button in the GUI.
+In the `Settings` tab at the bottom you can change the three `PrivacyLevelX` values of the desired anon set of the
+<img src="/ShieldYellow.png" alt="yellow" class="shield" />,
+<img src="/ShieldGreen.png" alt="green" class="shield" /> and
+<img src="/ShieldCheckmark.png" alt="checkmark" class="shield" />
+shield button in the GUI.
 The `MixUntilAnonymitySet` is the last selected value from previous use.
 
 Alternatively, open the config file from the wallet GUI, go to `File`>`Open`>`Config File` and in the last 4 lines you see:
@@ -1316,7 +1320,8 @@ Alternatively, you can use your hardware wallet with Electrum, which connects to
 
 There are no hard and fast rules for what to do with the change.
 Generally try to avoid the change and use the `Max` button extensively to send whole coins.
-The most problematic type of change is what has `anonymity set 1` [red shield] You should treat it as a kind of toxic waste [handled with great care].
+The most problematic type of change is what has `anonymity set 1` <img src="/ShieldRed.png" alt="red" class="shield" />.
+You should treat it as a kind of toxic waste [handled with great care].
 You can spend the change to the same entity as the initial transaction, without loosing any privacy.
 Only spend the change to another entity, if these two won't make you trouble knowing you interact with both of them.
 If needed, you can consolidate several change coins, but we advise you to do it in a CoinJoin.
