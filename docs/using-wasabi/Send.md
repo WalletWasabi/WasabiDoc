@@ -41,7 +41,10 @@ The goal is to know the observers who know about your coins and try to reduce th
 In a Wasabi [CoinJoin](/using-wasabi/CoinJoin.md), many peers register coins in the input of the transaction, and in the output there are several equal value coins, for example 100 coins worth exactly 0.1 bitcoin.
 This means that when looking at one of these CoinJoin outputs, there is a 1 in 100 chance to find the corresponding input.
 Thus the higher the anonymity set, the more your post-mix coin is delinked from the pre-mix history.
-Wasabi shows you three levels of anonymity sets: the yellow shield, the green shield and the check-mark shield.
+Wasabi shows you three levels of anonymity sets:
+<img src="/ShieldYellow.png" alt="yellow" class="shield" />,
+<img src="/ShieldGreen.png" alt="green" class="shield" /> and
+<img src="/ShieldCheckmark.png" alt="checkmark" class="shield" />.
 By default they have an anonymity set of `2`, `21` and `50`, however, this can be [changed in the settings](/FAQ/FAQ-UseWasabi.md#how-can-i-change-the-anonset-target).
 
 ![](/SendAnonset.png)
