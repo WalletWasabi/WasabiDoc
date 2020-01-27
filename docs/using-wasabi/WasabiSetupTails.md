@@ -32,7 +32,7 @@ This way, you can launch Wasabi from the terminal via `./wassabee` command, and 
 
 ## Download
 
-Download Wasabi for Debian/Ubuntu from the [tor hidden service](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion] or [clearnet](https://www.wasabiwallet.io/#download)
+Download Wasabi for Debian/Ubuntu from the [Tor hidden service](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion) or [clearnet](https://www.wasabiwallet.io/#download).
 
 Verify the PGP signature of the downloaded package, the zkSNACKs' PGP public key fingerprint is:
 
@@ -76,7 +76,7 @@ Could be also nice to save the `BitcoinStore` folder, which contains the [BIP 15
 
 ## Install Wasabi
 
-Drop the `Wasabi-${currentVersion}.deb` file from `/home/amnesia/Persistent` into desktop.
+Copy and paste the `Wasabi-${currentVersion}.deb` file from `/home/amnesia/Persistent` into desktop.
 
 Open the terminal and run:
 
@@ -111,7 +111,7 @@ After the first time you save a Wasabi session, your persistent storage will loo
         |__ /BitcoinStore
 ```
 
-To load your saved session, drop the `.walletwasabi` folder into `/Home` before starting Wasabi.
+To load your saved session, copy and paste the `.walletwasabi` folder into `/Home` before starting Wasabi.
 
 You can save multiple copies of `.walletwasabi` in your persistent, each with different data:
 
