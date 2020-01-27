@@ -52,6 +52,7 @@ You can disable .NET's telemetry, which is sending some usage information to Mic
 ```sh
 [user@template-wasabi ~]$ export DOTNET_CLI_TELEMETRY_OPTOUT=1
 ```
+
 :::
 
 If you need to update .NET Core, then do it in this VM.
@@ -118,3 +119,231 @@ There are no additional dependencies required, so the App VM can be based on `te
 ```sh
 [user@package-wasabi ~]$ wassabee
 ```
+
+## VirtualBox
+
+[VirtualBox](https://virtualbox.org) is a powerful free and open-source virtualization tool that allows you to run one or more independent operating systems as "virtual machines" (VM's) on your computer.
+The computer on which VirtualBox is installed is referred to as the "host" machine, and the VM's that are created are referred to as "guests".
+
+Presently, VirtualBox runs on Windows, Linux, Macintosh, and Solaris hosts and supports a large number of guest operating systems including, but not limited to Windows (NT 4.0, 2000, XP, Server 2003, Vista, Windows 7, Windows 8, Windows 10), DOS/Windows 3.x, Linux (2.4, 2.6, 3.x and 4.x), Solaris and OpenSolaris, OS/2, and OpenBSD.
+
+VirtualBox allows you to create and run as many VM's at one time as desired.
+The only constraints are the amount of RAM and hard disk space installed on the host computer.
+Each VM is isolated from the host machine.
+Therefore, such things as corrupted files, configuration errors, malware, etc., encountered during the use of a VM do not affect the host computer.
+
+If you a developer, VirtualBox offers you several very powerful features.
+You can easily:
+
+- Create snapshots of a VM's state at any time.
+These snaphots can be restored later if a problem or undesired condition arises in the current state of the VM.
+
+- Set up a template VM with a desired development environment or configuration, and then quickly create lightweight, disposable clones of the template for specific tests.
+
+- Develop and/or test applications in Windows, Linux, and MacOS at the same time, on the same computer.
+You can link them together in a customizable internal network if desired.
+
+For developers, VirtualBox offers some of the basic version control features of git, but applied to operating systems rather than files or projects.
+
+Here are the steps to install VirtualBox, and create a virtual machine on your computer:
+
+### Download VirtualBox
+
+You can download the latest Virtualbox binary for your host OS [here](https://www.virtualbox.org/wiki/Downloads).
+
+Make sure that you also download the VirtualBox Extension Pack, shown just below the links for downloading the binary installation files.
+This package will add several useful capabilities to VirtualBox.
+
+![](https://i.imgur.com/3lobFHSl.png)
+
+### Install and Start VirtualBox
+
+VirtualBox comes in many different packages, and installation depends on your host OS.
+If you have installed software before, the installation should be straightforward.
+
+On each host platform, VirtualBox uses the installation method that is most common and easy to use for the host OS.
+
+When your installation has completed, start Virtualbox in accordance with your host OS's method.
+
+Locate the Extension Pack file that you downloaded in the previous step, and double-click on the file to add it to your VirtualBox installation.
+
+If you run into trouble or have special requirements, the complete User Manual can be
+found [here](https://download.virtualbox.org/virtualbox/UserManual.pdf).
+
+### Create a Template VM
+
+For each operating system version that you wish to use in a VM, you will need an .iso installation file.
+This file can be detected and used by VirtualBox on either your internal drive, a USB, or a CD/DVD Drive.
+
+To start, select a version of an OS that you would like to create as a virtual machine, and download its ".iso" installation file from the official website of that OS.
+
+Then, launch Virtualbox in the manner prescribed by your host OS.
+
+You will be presented with the "VirtualBox Manager":
+
+![](https://i.imgur.com/CK2Ka36l.png)
+
+Click on the blue "New" button to start the "New VM" Wizard.
+
+In just a few steps, the Wizard will ask you for the bare minimum of information that is needed to create a VM, in particular:
+
+A name for the new VM.
+Be sure to assign each VM a descriptive name that identifies the OS and software running on the VM.
+For example, "Debian 10 with VSCode".
+
+For Operating System Type, select the OS that you want to install.
+The supported OS's are grouped in the menu.
+If you want to install something very unusual that is not listed, select "Other".
+Depending on your selection, VirtualBox will enable or disable certain VM settings that your guest OS may require.
+
+Next, you will be asked to decide how much memory (RAM) that VirtualBox should allocate to your VM each time that it is started.
+The amount of memory given here will be taken away from your host machine and presented to the guest OS, which will report this size as the virtual machine's installed RAM.
+
+Always ensure that the host OS has enough RAM remaining.
+If insufficient RAM remains, the system might excessively swap memory to the hard disk, which effectively brings the host system to a standstill.
+As with the other settings, you can change this setting later, after you have created the VM.
+
+Next, you must specify a Virtual Hard Disk type and size for your VM.
+
+- Click "Create a virtual hard disk now".
+
+- You want to choose __"VDI"__ for the type.
+
+- Then choose __"Dynamically allocated"__.
+
+A really nice VirtualBox feature for VM hard drives is something called "dynamic allocation".
+This feature allows you to just specify a maximum size for the drive.
+Let's say for example, 500GB.
+
+When the VM is new, with no data or additional applications added, it will likely only occupy 10-20GB of physical drive space on your computer, even though you have allowed for up to 500GB to this particular VM.
+
+As you add data and install applications, the size of the VM's storage drive will grow commensurately on your computer's physical drive, until it reaches the amount that you specified as a maximum during the VM setup.
+
+Good news!
+If your VM grows over time, and its size is nearing the maximum hard drive size that you selected during the VM creation process, you can easily enlarge the allotted space, assuming that you have sufficient room on your host hard drive.
+
+Now, it is time to attach the .iso file for the OS which you would like to create in your new VM.
+
+This is done by first, clicking the "Storage" button in your VM's settings.
+
+![](https://i.imgur.com/nT93MLTl.png)
+
+Second, click on the "Add Disk" icon shown in the "Storage Devices" window.
+
+![](https://i.imgur.com/VPNvSsIl.png)
+
+Follow the ensuing directions to attach your .iso file as a virtual CD-ROM drive.
+
+When this is completed, click "OK".
+
+Now it is time to start your VM, and complete the installation of the OS of your choice.
+
+Click the green "Start" arrow, as shown:
+
+![](https://i.imgur.com/2tjtiDel.png)
+
+Your chosen VM should launch, and offer an "Install" option.
+
+Follow the installation instructions just as you would if you were installing that particular OS to your host computer.
+
+__Please Note:__
+
+During the installation process for whatever OS you have chosen for your VM, you will likely see references to your hard disk and/or Master Boot Record.
+
+Be assured that those references are pertaining to your "virtual" hard drive and/or boot records that are a part of the VM.
+
+They are NOT referring to your computer's physical drive or boot records.
+
+Other than the creation of a folder which holds the data for each VM that you may create, your physical hard drive and/or boot records will not be altered or harmed by the installation of an OS inside the VM.
+
+### One last step...Optional, but strongly recommmended
+
+By now, you have finished creating your VM, and installing the desired OS for it to run.
+It is now strongly recommended that you install a module called "Guest Additions", which will give you a full-screen display, and ease the of use for your computer's mouse.
+
+Here are the steps:
+
+- Start your VM.
+- Click on "Devices" on the top menu bar.
+- Click on "Insert Guest Additions CD image", as shown below.
+
+![](https://i.imgur.com/PtChV61l.png)
+
+- __If your new VM is Linux__, open a terminal window and enter: cd /media/_your_distro_name_/VBox `Tab`
+(filling in the "_your_distro_name_" with the name of your Linux distribution: ubuntu, debian, fedora, etc.)
+- Enter sudo sh ./VBoxLinuxAdditions.run, and provide the administrator password that you established during the VM installation process.
+- Wait for the ensuing script to finish running.
+- Reboot.
+
+This should complete the Linux VM installation process!
+
+- __If your new VM is Windows__, after clicking on "Insert Guest Additions CD image", go to My Computer (This PC in Windows 10) and open the Guest Additions CD drive under the Devices and drivers section.
+- Right click on VBoxWindowsAdditions and select Run as administrator, using the password that you established during the VM installation process.
+- Wait for the ensuing script to finish running.
+- Reboot.
+
+![](https://i.imgur.com/uxvpEDTl.png)
+
+And that's it!
+
+__Congratulations!__
+
+It's now time to start customizing your development templates!
+
+To run Wasabi from source, you will first need to install the current version of [.NET Core SDK](https://dotnet.microsoft.com/download) for your VM's operating system.
+
+Add any other tools that you prefer, such as Visual Studio / Visual Studio Code, git, Atom, etc..
+
+If you would like to help with Wasabi development,
+refer to our [developers debugging guide](building-wasabi/HowToDebug.html#before-starting).
+
+### Back It Up
+
+- At this point, it would be a good idea to create a snapshot of your finished Template VM, so that you can revert to it if any future problems arise with it.
+
+Open your VirtualBox Manager and click once on your VM, which will be shown in the left column.
+
+Click on the "Take" button, and follow the ensuing directions.
+
+![](https://i.imgur.com/ofJMmkul.png)
+
+### Cloning a Virtual Machine
+
+At this point, you should have a Template VM set up with your preferred tools and environment, and have it securely backed up.
+
+Now the real fun begins, and you will be rewarded for all of your hard work to get to this point!
+
+VirtualBox will allow you to make as many lightweight, or "linked" clones from a template as you may need.
+"Linked" means that the vast majority of the system files are borrowed from the template VM while the clone is running, so that the clone takes up much, much less hard drive space.
+
+Any changes to the clone VM, constructive or destructive, do not affect the template VM.
+You may think of a linked clone as a "disposable" copy of your template.
+Perfect for experimentation, with no risk to your template or your computer!
+
+### How to Create a Linked Clone
+
+- Open the VirtualBox Manager and click once on the VM which you want to clone.
+- Click on the "Clone" button, as shown:
+
+![](https://i.imgur.com/DLqC4yKl.png)
+
+In the next window, select "Generate new MAC addresses" on the pull-down menu.
+This will avoid network conflicts if you end up with several clones of the same template running at once.
+
+![](https://i.imgur.com/iQPVWHFl.png)
+
+Lastly, select "Linked Clone" when the next window opens.
+
+![](https://i.imgur.com/GBdqgJcl.png)
+
+Click on the "Clone" button, and you now have a disposable copy of your desired environment.
+
+If you are comfortable with [Git](https://git-scm.com/), you can now have several versions of Wasabi running for testing purposes, at the same time, on the same computer
+
+### Get Wasabi
+
+If you would like to install and run the latest Wasabi release/package click [here](/using-wasabi/InstallPackage.md).
+
+If you would like to build Wasabi from source, click [here](/using-wasabi/BuildSource.md).
+
+__Have fun, and please consider contributing to the Wasabi project!__
