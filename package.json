@@ -9,6 +9,7 @@
     "prestart": "rm -rf $npm_package_config_dist",
     "start": "vuepress dev docs",
     "build": "vuepress build docs",
+    "lint": "markdownlint README.md docs/**/*.md",
     "deploy": "echo 'docs.wasabiwallet.io' > $npm_package_config_dist/CNAME && gh-pages -d $npm_package_config_dist -m 'deploy'"
   },
   "repository": {
@@ -24,6 +25,7 @@
     "@vuepress/plugin-back-to-top": "1.2.0",
     "gh-pages": "2.2.0",
     "markdown-it-custom-block": "0.1.1",
+    "markdownlint-cli": "^0.21.0",
     "vuepress": "1.2.0"
   },
   "engines": {

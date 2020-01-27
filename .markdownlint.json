@@ -1,0 +1,7 @@
+{
+  "default": true,
+  "no-trailing-punctuation": false,
+  "no-inline-html": {
+    "allowed_elements": ["iframe"]
+  }
+}
