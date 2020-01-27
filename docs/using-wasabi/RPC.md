@@ -172,6 +172,7 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"listunspentcoins"}' h
 ```
 
 In case there is no wallet open it will return:
+
 ```json
 {
   "jsonrpc": "2.0",
@@ -468,6 +469,7 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"howknows"}' http://12
 ```
 
 ### Parse error
+
 ```bash
 curl -s --data-binary '{"jsonrpc":"2.0" []}' http://127.0.0.1:37128/ | jq
 ```

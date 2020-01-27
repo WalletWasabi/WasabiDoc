@@ -6,9 +6,10 @@
 ---
 
 # Headless Wasabi Daemon
+
 The default of how to interact with your Wasabi wallet is the graphical user interface.
 There is also a headless daemon where you do not run a resource intensive GUI, but only the command line interface.
-This daemon is especially useful for power users mixing bitcoin in the backend of their servers. 
+This daemon is especially useful for power users mixing bitcoin in the backend of their servers.
 
 To start the daemon, in the command line type:
 

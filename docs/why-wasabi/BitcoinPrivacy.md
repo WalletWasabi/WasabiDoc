@@ -32,7 +32,7 @@ Two aspects in particular—privacy and identity—function very differently wit
 
 _**Pseudonyms protect your identity in Bitcoin**_
 
-A bank account, PayPal account, or credit card is always tied to a real identity, making it difficult for many people to open them. 
+A bank account, PayPal account, or credit card is always tied to a real identity, making it difficult for many people to open them.
 Bitcoin allows you to use any persona or online identity you wish.
 
 Being able to use the internet anonymously or pseudonymously is the only way for many people to truly be themselves.
@@ -40,7 +40,7 @@ Hundreds of millions of people around the globe are not accepted in their societ
 
 Pseudonyms are used by women speaking up for their rights, atheists living in religious societies, and people critical of their governments to spread their thoughts, empower their causes, and encourage those around them to do the same.
 
-These courageous men and women put their own safety and well-being at risk to defend who they are and what they believe in. 
+These courageous men and women put their own safety and well-being at risk to defend who they are and what they believe in.
 Technology empowers them to become leaders of social change in societies by providing this very pseudonymity.
 Technology also connects like-minded individuals so they can form the communities for which they strive.
 
@@ -106,7 +106,7 @@ _**Easy wallet clustering**_
 A Bitcoin address commits to the spending condition of this UTXO.
 For example in Wasabi, each address is a [native SegWit pay to witness public key hash P2WPKH](https://programmingblockchain.gitbook.io/programmingblockchain/other_types_of_ownership/p2wpkh_pay_to_witness_public_key_hash), meaning that this coin can only be spend with a single valid signature of the corresponding private key.
 When the same address is used for several UTXOs, then this means that the same private key can spend all these coins.
-It is very easy to find all the UTXOs with the same address, and thus to find out how many bitcoin this private key holds. 
+It is very easy to find all the UTXOs with the same address, and thus to find out how many bitcoin this private key holds.
 
 Further, when in a transaction one output has a reused address, then it is very likely that this output is the payment destination, and not the change.
 Most wallets automatically generate new change addresses for every transaction, but payment addresses are selected manually by the user.
@@ -119,8 +119,7 @@ _**Remove used address from GUI**_
 
 Wasabi uses the industry best practice [BIP 44 hierarchical deterministic wallet](/using-wasabi/BIPs.md#bip-44-multi-account-hierarchy-for-deterministic-wallets), where out of one master secret a tree structure of child private keys are generated.
 It is deterministic because the same parent secret always calculates the same child private keys. When given a hardened child private key, then the parent private key cannot be calculated.
-In the `Receive` tab, a new address is generated every time, and as soon as a coin is sent to it, this specific address is removed from the GUI. 
-
+In the `Receive` tab, a new address is generated every time, and as soon as a coin is sent to it, this specific address is removed from the GUI.
 
 ## Inputs and outputs
 
@@ -149,7 +148,6 @@ Contrarily to many other wallets, Wasabi does not show only the total value of b
 Because it is required to label every receiving address, the history of this coin is clear at first glance.
 In order to spend a specific coin, it is manually selected, which prevents the wrong coin being included in the transaction.
 
-
 ## Transaction graph
 
 ### Problem
@@ -173,7 +171,6 @@ However, the equal value CoinJoin outputs with an anonymity set can not be tied 
 This means that when sending an anonset coin, the receiver does not know about the transaction history before the CoinJoin.
 And when the receiver does a CoinJoin himself, then the sender cannot spy on the later spending patterns.
 An outside observer can only guess the correct link at a rate of 1 in the anonset, for example 1-in-100, or 1%.
-
 
 ## Network snooping
 

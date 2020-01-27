@@ -9,6 +9,7 @@
 
 Part of the content in this documentation comes from other open source projects.
 Here are some credits, thanks and sources (in casual order):
+
 - [Bitcoin Wiki](https://en.bitcoin.it/wiki/Main_Page)
 - [BTC Pay Server Documentation](https://docs.btcpayserver.org/)
 - [Bisq Documentation](https://docs.bisq.network/)

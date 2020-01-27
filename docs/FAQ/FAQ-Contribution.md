@@ -8,6 +8,7 @@
 # Contributions to Wasabi
 
 :::details
+
 ### How to donate to Wasabi Wallet?
 
 Adam Ficsor had a donation address for a few years while he was working alone on Wasabi.
@@ -21,6 +22,7 @@ If you want to read more about fees here is a nice explanation: [What are the fe
 ## The Wasabikas of the dojo
 
 :::details
+
 ### Who is contributing to Wasabi already?
 
 There are many Wasabikas working with great effort and care to manifest this powerful tool of self defense.
@@ -36,6 +38,7 @@ For an inclusive list of all the Wasabikas, not just the code developers, please
 :::
 
 :::details
+
 ### Who reviews and merges the pull requests?
 
 As the Wasabi code is libre and open source, anyone has access to review the latest contributions and browse the [open pull requests](https://github.com/zkSNACKs/WalletWasabi/pulls?q=is%3Apr+is%3Aopen+sort%3Aupdated-desc).
@@ -46,12 +49,14 @@ Especially review by experienced C# developers are vitally important, yet even t
 There are three developers who have the ability to merge code into master branch.
 Per default, they [require at least one approving review](https://help.github.com/en/github/administering-a-repository/about-required-reviews-for-pull-requests) by one of the other maintainers before a pull request can be merged.
 However, since all three are administrators, they can still force the merge without the approval of others, but this will be noticed by many contributors.
+
 - [Ádám Ficsor](https://github.com/nopara73) [co-founder and former CTO of [zkSNACKs Ltd](https://zksnacks.com/), co-author of the [zero link Bitcoin fungibility framework](https://github.com/nopara73/ZeroLink)] is the [admin](https://help.github.com/en/articles/repository-permission-levels-for-an-organization) of the [Wasabi Wallet repository](https://github.com/zksnacks/walletwasabi).
 - [Lucas Ontivero](https://github.com/lontivero) [lead engineer of [zkSNACKs Ltd](https://zksnacks.com/)] is also [admin](https://help.github.com/en/articles/repository-permission-levels-for-an-organization) of the [Wasabi Wallet repository](https://github.com/zksnacks/walletwasabi).
 - [Dávid Molnár](https://github.com/molnard) [CTO of [zkSNACKs Ltd](https://zksnacks.com/)] is also [admin](https://help.github.com/en/articles/repository-permission-levels-for-an-organization) of the [Wasabi Wallet repository](https://github.com/zksnacks/walletwasabi).
 :::
 
 :::details
+
 ### What is on the future roadmap of Wasabi development?
 
 Wasabi is far from complete, there are many Wasabikas contributing every day to make this tool of self defense even more powerful.
@@ -63,6 +68,7 @@ You can check the [ToDo list](/building-wasabi/ToDo.md) for a somewhat up-to-dat
 ## You can become a Wasabika
 
 :::details
+
 ### How should I start contributing to Wasabi?
 
 Thank you for considering to support this beautiful libre and open source project!
@@ -74,6 +80,7 @@ Join our [Slack](https://join.slack.com/t/tumblebit/shared_invite/enQtNjQ1MTQ2Nz
 :::
 
 :::details
+
 ### Is there a bounty program?
 
 Yes!
@@ -85,6 +92,7 @@ Specifically for the documentation, there is a monthly budget of 1.000 USD to co
 :::
 
 ::::details
+
 ### How can I report a bug?
 
 Code is speech, and can never be perfect.
@@ -105,6 +113,7 @@ Send an email to [adam.ficsor73@gmail.com](mailto:adam.ficsor73@gmail.com), pref
 ::::
 
 :::details
+
 ### How can I request a feature?
 
 Wasabi is a quite beautiful piece of software already.
@@ -121,6 +130,7 @@ To flesh our your argument, please consider alternatives and different approache
 :::
 
 :::details
+
 ### How can I get help and support?
 
 You are already on the right track by first checking [this documentation](https://docs.wasabiwallet.io) for the knowledge you are seeking.
@@ -132,6 +142,7 @@ If your trouble is specific to the code, then it might also be suitable to check
 :::
 
 :::details
+
 ### What does the Wasabi project need help with?
 
 Wasabi is libre and open source software, thus it relies on the support of several contributors on all fronts.

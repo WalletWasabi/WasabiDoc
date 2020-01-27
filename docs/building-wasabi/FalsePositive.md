@@ -20,6 +20,7 @@ This page contains online form submissions, email template, addresses and GUI tu
 [[toc]]
 
 ## Email Template
+
 :::tip
 Ensure that the email subject line starts with the word FALSE.
 :::
@@ -83,7 +84,6 @@ Name and Surname
 |Microsoft  | [Yes](https://www.microsoft.com/en-us/wdsi/filesubmission) | N/A
 |Qihoo-360 | [Yes](https://www.360totalsecurity.com/en/suspicion/false-positive/) | N/A
 |TrendMicro  | [Yes](https://www.trendmicro.com/en_us/about/legal/detection-reevaluation.html) | N/A
-
 
 ## GUI Tutorials
 

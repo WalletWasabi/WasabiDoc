@@ -67,7 +67,6 @@ Osu!
 | ThunderBiscuit   | [Twitter][46]               | [Wasabi Documentation][49]   | 2019-08: white belt by Max Hillebrand|
 | Riccardo Masutti   | [Twitter][50]               | [Wasabi Documentation][51]   | 2019-11: white belt by Max Hillebrand|
 
-
 [1]: https://twitter.com/NicolasDorier/
 [2]: https://github.com/NicolasDorier/
 [3]: https://github.com/MetacoSA/NBitcoin/

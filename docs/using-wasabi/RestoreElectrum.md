@@ -39,6 +39,7 @@ By typing the seed or pasting the master private key on a hot or compromised dev
 
 :::tip
 Steps to find your master private key inside Wasabi:
+
 - Go to `Advanced` tab -> `Wallet Info`.
 - Copy your `Extended Account zprv`
 :::
@@ -85,6 +86,7 @@ This will be your Electrum wallet file.
 
 :::tip
 Steps to find your master private key inside Wasabi:
+
 - Go to `Advanced` tab -> `Wallet Info`.
 - Copy your `Extended Account zprv`
 - Copy your `Extended Account zpub`

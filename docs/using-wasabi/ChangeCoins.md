@@ -9,7 +9,6 @@
 
 [[toc]]
 
-
 ## Types of change
 
 ### Non-CoinJoin change
@@ -55,7 +54,6 @@ Since your identity was already known in the red-shield/anonset 1 UTXO, it can n
 
 Whenever you combine and send more than one UTXO in a single transaction, the lowest anonymity set among the inputs becomes the overriding anonymity set for all of the UTXOs used in that transaction.
 
-
 ### Second round CoinJoin change
 
 When you take a 100 anonset UTXO, and you CoinJoin it again in a new 100 participant round, then you receive one UTXO with new, combined anonset of 200, and one leftover/change UTXO with same anonset as the input UTXO: 100.
@@ -78,6 +76,7 @@ You want to avoid merging `anonymity set 1` coins with `anonymity set > 1` mixed
 ## Your options to use change privately
 
 ### Avoid change in the first place.
+
 Whenever possible, choose UTXO's for transactions where the destination addresses receive the entire value of your UTXO's, and you don't get any change back.
 This can easily be done by clicking the `Max` button in the `Send` tab, which will automatically deduct the mining fee and send the highest amount possible to the destination.
 This might not be possible in some cases where you have to pay a specific value of a payment request.
@@ -87,6 +86,7 @@ Consider supporting invaluable projects like [The Tor Project](https://donate.to
 You can find a list of organizations that accept Bitcoin donations [here](https://en.bitcoin.it/wiki/Donation-accepting_organizations_and_projects).
 
 ### Spend the change with another entity, where you don't mind if each of the two know that you transact with the other entity.
+
 For example, if you buy something from Alice that costs 0.03 bitcoin, and you choose a UTXO in your wallet containing 0.1 bitcoin to use for payment.
 Alice receives her 0.03 bitcoin, and the remaining change 0.07 bitcoin is assigned to another address in your wallet.
 Since Alice knows the details of the transaction, she knows that the 0.07 bitcoin at that address belongs to you.
@@ -94,12 +94,14 @@ Since Alice knows the details of the transaction, she knows that the 0.07 bitcoi
 When you later spend these 0.07 bitcoin to an address, Alice knows that you are involved in this transaction, and she could potentially use that information against you.
 
 ### Mix with JoinMarket.
+
 In [JoinMarket](https://github.com/JoinMarket-Org/joinmarket-clientserver) as a `market taker` you can specify exactly what denomination of equal value outputs are generated in the CoinJoin.
 So you can send the Wasabi change to your JoinMarket wallet and take an offer to mix for some number of rounds.
 
 The coins you will receive after the JoinMarket tumbling algorithm will have a sufficient anonymity set, and you can use them for spending again.
 
 ### Open a Lightning Network channel.
+
 The Lightning Network can be a very private way of sending bitcoin, and you can choose the channel size to be exactly the size of your change coin.
 However, it is very important that you do not link this non-private coin to your main Lightning node public key.
 
@@ -111,6 +113,7 @@ After the balance of the channel is entirely on the other side, cooperatively cl
 Since Wasabi does not yet support Lightning Network functionality, you must use a different wallet for this task.
 
 ### Atomic swap into Lightning Network
+
 There are some services that provide an atomic swap where you send the whole change coin to a multisignature hashed time locked contract on-chain.
 In exchange, you receive a payment routed through the Lightning Network into one of your payment channels.
 
@@ -121,6 +124,7 @@ For much better privacy, use rendezvous routing so that the sender does not gain
 Also ensure that the communication with the swap server is done over the tor network.
 
 ### Consolidate several change coins, but in a CoinJoin directly.
+
 If you consolidate many change coins in a regular non-CoinJoin transaction in the `Send` tab, then any outside observer can easily see that one user controls all these coins.
 But when consolidating in a CoinJoin directly, because there are hundreds of randomly ordered inputs in a Wasabi CoinJoin transaction, it is no longer easy to find out which coins belong to one single user.
 
@@ -138,6 +142,7 @@ In this CoinJoin you get an equal value mixed coin, which is no longer tied to a
 So consolidating your change in a CoinJoin is strictly more private and efficient than consolidating in a regular sending transaction, but it is always possible to follow the path of (red) non-anonymous change outputs, while the anonymous (yellow, green or check-marked) equal denominated mixed outputs are in no way connected to the previous inputs.
 
 ### Spend the change to the same entity as in the initial transaction, but always use a new address.
+
 So, if in the first transaction you have 0.10 bitcoin and send Alice 0.04 bitcoin, you get 0.06 bitcoin back as change in a new address, which Alice can see belongs to you.
 Now, in a second transaction where you want to send Alice 0.05 bitcoin, you can select that 0.06 bitcoin change coin without losing any privacy, because Alice already knows this is your coin.
 

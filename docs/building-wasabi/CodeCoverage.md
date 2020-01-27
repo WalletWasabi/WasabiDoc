@@ -16,7 +16,6 @@ So, first of all we need to install the package in the [WalletWasabi.Tests](http
 dotnet add WalletWasabi.Tests/WalletWasabi.Tests.csproj package AltCover
 ```
 
-
 Next, run:
 
 ```sh

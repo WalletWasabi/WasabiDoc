@@ -153,6 +153,7 @@ bar
 ### Frequently asked questions
 
 Use this markdown box with the headers to write the FAQ:
+
 ```
 :::details
 ### question

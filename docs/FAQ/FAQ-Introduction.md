@@ -10,6 +10,7 @@
 ## The Basics
 
 :::details
+
 ### Explain Wasabi like I'm 5
 
 Wasabi is a software wallet to manage your Bitcoin private keys.
@@ -22,6 +23,7 @@ Of course, Wasabi is libre and open source, which means you have full control ov
 :::
 
 ::::details
+
 ### Who can use Wasabi?
 
 Every single line of code in Wasabi, the [wallet](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Gui), the [backend server](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Backend), the [tests](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Tests), the [packager](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Packager), the [library](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi), the [daemon](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Gui/CommandLine), the [api](https://wasabiwallet.io/swagger/), the [documentation](https://github.com/zkSNACKs/WasabiDoc) - has always been and will always be libre and open source under the [MIT license](https://github.com/zkSNACKs/WalletWasabi/blob/master/LICENSE.md).
@@ -37,6 +39,7 @@ Wasabi is a tool for everyone.
 ::::
 
 :::details
+
 ### What is a CoinJoin?
 
 A mechanism by which multiple participants combine their coins (or UTXOs, to be more precise) into one large transaction with multiple inputs and multiple outputs.
@@ -60,6 +63,7 @@ See also the [Bitcoin Wiki on CoinJoins](https://en.bitcoin.it/wiki/CoinJoin)
 :::
 
 :::details
+
 ### Do I need to trust Wasabi with my coins?
 
 No, Wasabi's CoinJoin implementation is trustless by design.
@@ -68,7 +72,9 @@ Wasabi merely coordinates the process of combining the inputs of the participant
 :::
 
 :::details
+
 ### What is the privacy I get after mixing with Wasabi?
+
 This depends on how you handle your outputs after the CoinJoin.
 There are some ways how you can unintentionally undo the mixing by being careless.
 For example, if you make a 1.8 BTC transaction into Wasabi, do the CoinJoin, and then make one single outgoing transaction of 1.8 BTC, a third party observer can reasonably assume that both transactions belong to one single entity, due to both amounts being virtually the same even though they have been through a CoinJoin.
@@ -81,6 +87,7 @@ Find out more about coin control it [here](https://medium.com/@nopara73/coin-con
 :::
 
 :::details
+
 ### Can I hurt my privacy using Wasabi?
 
 No.
@@ -89,6 +96,7 @@ It is crucial to understand that Wasabi is not a fool-proof solution if you negl
 :::
 
 :::details
+
 ### Do I need to run Tor?
 
 All Wasabi network traffic goes via Tor by default - no need to set up Tor yourself.
@@ -101,6 +109,7 @@ In the second case, if you happen to broadcast a transaction of yours to a full 
 :::
 
 :::details
+
 ### Why is Wasabi Bitcoin-only?
 
 There are countless reasons why it is the only logical choice to be [bitcoin-only](https://bitcoin-only.com).
@@ -112,6 +121,7 @@ Any line of code written to support a random shitcoin takes away scarce develope
 :::
 
 :::details
+
 ### Why is the anonymity set 100?
 
 Sufficient anonymity set is a hard question, that not yet enough research done to answer it definitively.
@@ -120,12 +130,14 @@ Furthermore our calculations have shown that with the liquidity of today’s mix
 :::
 
 :::details
+
 ### Is there a way to check Wasabi uptime status?
 
 Yes, you can check the status of Wasabi-related services and websites (like APIs, Backend, etc.) via [UptimeRobot Wasabi Status Page](https://stats.uptimerobot.com/YQqGyUL8A7).
 :::
 
 :::details
+
 ### What software supplies the block filters that Wasabi uses?
 
 The zkSNACKs coordinator supplies the same set of filters to every client.
@@ -135,18 +147,21 @@ Furthermore, the random node will only know which block is needed but it won't h
 :::
 
 :::details
+
 ### Is the Backend's (Coordinator) code open source?
 
 Yes, you can verify the code on [GitHub](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Backend).
 :::
 
 :::details
+
 ### Is there an Android/iOs version?
 
 No, Wasabi and CoinJoin features require considerable computational power, not currently replicable on a smartphone.
 :::
 
 :::details
+
 ### Where can I find Wasabi Wallet on social media?
 
 You can find us on [Twitter](https://twitter.com/wasabiwallet) and [Reddit](https://www.reddit.com/r/WasabiWallet/).
@@ -157,12 +172,14 @@ For chat groups you can find us on [Slack](https://join.slack.com/t/tumblebit/sh
 ## For advanced Wasabikas
 
 :::details
+
 ### Can the coordinator attack me?
 
 The nature of Wasabi is that you should not need to trust the developers or the Wasabi coordinating server, as you can verify that the code does not leak information to anyone.
 The developers have gone to great lengths in an attempt to ensure that the coordinator cannot steal funds nor harvest information (for example, the outputs sent from your Wasabi Wallet are blinded, meaning that even the Wasabi server cannot link the outputs to the inputs).
 
 The only known possible 'malicious' actions that the server *could* perform are two sides of the same coin;
+
 - **Blacklisted UTXO's**:
 Though this would not affect the users who are able to successfully mix with other 'honest/real' peers.
 - **Targeted Sybil Attack**:
@@ -180,12 +197,14 @@ See [here](https://github.com/nopara73/ZeroLink/#e-sybil-attack) for more info.
 :::
 
 :::details
+
 ### What is the history of Wasabi?
 
 Ádám Ficsor worked with several others on a privacy-focused Bitcoin wallet called Hidden Wallet all the way [back in December 2015](https://docs.google.com/drawings/d/1wLL7aSgYBWNoyzllg6_haisFt-gQCf-QUzVzQPkARts/edit).
 Wasabi was unveiled in 2018 at the Building on Bitcoin conference by Ádám.
 At the time, Wasabi was essentially HiddenWallet rebranded and rewritten from scratch with some new features.
 Key dates:
+
 - The Beta release was on August 1 (on the first anniversary of UASF.)
 - The 1.0 release was on October 31 (on the tenth anniversary of the Bitcoin Whitepaper.)
 
@@ -194,6 +213,7 @@ Key dates:
 :::
 
 :::details
+
 ### Who is contributing to Wasabi?
 
 There are many Wasabikas working with great effort and care to manifest this powerful tool of self defense.
@@ -210,6 +230,7 @@ For an inclusive list of all the Wasabikas, not just the code developers, please
 :::
 
 ::::details
+
 ### Why is Wasabi libre and open source software?
 
 Wasabi follows the philosophy behind Bitcoin by making the software open source and by publishing it under MIT License.
@@ -246,6 +267,7 @@ Additionally, open source software tends to both incorporate and operate accordi
 ::::
 
 :::details
+
 ### What is the general idea of ZeroLink CoinJoin?
 
 While fungibility is an essential property of good money, Bitcoin has its limitations in this area.
@@ -272,6 +294,7 @@ For the complete explanation please read [ZeroLink: The Bitcoin Fungibility Fram
 :::
 
 :::details
+
 ### What are the minimal requirements to run Wasabi?
 
 - 64-bit architecture
@@ -281,6 +304,6 @@ For the complete explanation please read [ZeroLink: The Bitcoin Fungibility Fram
 - Ubuntu 16.04+
 - For other Linux distributions, it depends on the specific OS.
 
-Click [here](https://github.com/dotnet/core/blob/master/release-notes/3.1/3.1-supported-os.md) to check if .NET Core 3.1 supports your OS. 
+Click [here](https://github.com/dotnet/core/blob/master/release-notes/3.1/3.1-supported-os.md) to check if .NET Core 3.1 supports your OS.
 
 :::

@@ -15,6 +15,7 @@ It offers a high level of protection for digital assets, because keys are secure
 However, cold storage should be considered as an option for everyone who is managing digital assets.
 It can be the secure foundation for a more complex scenario that also involves hot wallets, offering the maximum security for whatever percentage of funds don't need to be actively available at all times.
 A few questions can help you determine if you can move some of your funds from hot wallets to cold storage:
+
 - How much readily available liquidity do you need?
 - How often are you moving your digital assets?
 - How often are you exchanging your digital assets?
@@ -28,6 +29,7 @@ To minimize the possibility that an intruder could steal the entire reserve in a
 The only amount kept on the server is the amount needed to cover anticipated withdrawals.
 
 Methods of cold storage include keeping bitcoins:
+
 - On a USB drive or other data storage medium in a safe place (e.g. safe deposit box, safe)
 - On a paper wallet
 - On a bearer item such as a physical bitcoin
@@ -40,7 +42,9 @@ There are a number of cases where secret/private keys and/or backup seeds can be
 ## A list of the more common mediums of cold storage with some of their weaknesses:
 
 :::details
+
 ### Written on a piece of paper
+
 - Anyone who can see it, can steal it
 - Handwriting can be hard to read or completely illegible
 - Human error in transcription can cause errors on end product
@@ -48,7 +52,9 @@ There are a number of cases where secret/private keys and/or backup seeds can be
 :::
 
 :::details
+
 ### Printed on a piece of paper
+
 - Anyone who can see it, can steal it
 - Type of printer - non-laser printers can run if paper gets wet
 - Have to trust printer - some have internet connections, wifi, and memory
@@ -56,7 +62,9 @@ There are a number of cases where secret/private keys and/or backup seeds can be
 :::
 
 :::details
+
 ### On laminated paper
+
 - Anyone who can see it, can steal it
 - Lamination is prone or degradation over time and puncture or cuts that could allow moisture to get trapped in the paper and cause deterioration or rotting in some circumstances | store in cool dry place
 - Can burn or be smoke damaged
@@ -65,7 +73,9 @@ Remember people can just carry out a small safe
 :::
 
 :::details
+
 ### Engraved / etched/ ablated/ stamped on a piece of metal
+
 - Anyone who can see it, can steal it
 - Some metals can deteriorate or corrode, choose a good metal; also store your metal away from direct contact other metals. - Some metals that are corrosion resistant have low melting points, are extremely expensive, or hard to machine.
 - Metals can still deform or melt from heat, destroying any engraved SK. "Most house fires do not burn hotter than 1,200 degrees Fahrenheit.
@@ -80,7 +90,9 @@ Titanium is above the housefire range and so is tungsten, however tungsten rings
 :::
 
 :::details
+
 ### Stored digitally on a computer
+
 - Computers can crash, making data recovery expensive
 - Data can still technically be recovered after a system is abandoned by the user. In some cases data can be recovered after multiple overwriting attempts and physical destruction (as long as the attacker can get all or most the pieces) so if you copy files to a new computer and ditch the old one, be careful.
 - Can burn or be smoke damaged
@@ -95,7 +107,9 @@ Titanium is above the housefire range and so is tungsten, however tungsten rings
 :::
 
 :::details
+
 ### Stored digitally on CD, floppy disk, laserdisc, or mini-disc
+
 - Plastics break down over time and with exposure to heat, humidity, regular light, all sorts of chemicals, even the oxygen in the air.
 This can lead to the loss of your data when stored on a medium made of plastic or written/printed on plastic.
 - Can burn or be smoke damaged
@@ -105,7 +119,9 @@ This can lead to the loss of your data when stored on a medium made of plastic o
 :::
 
 :::details
+
 ### Stored digitally on a flash drive
+
 - Can break and have to be physically repaired before use
 - Rapidly changing magnetic fields (See MRIs) can damage the data stored on flash drives
 - Can burn or be smoke damaged
@@ -118,7 +134,9 @@ There are large quality differences in drives but I am assuming you aren't using
 :::
 
 :::details
+
 ### A pre-funded physical bitcoin coin (where the manufacturer generates and installs the secret key)
+
 - The medium that the key is on is often paper/plastic which can burn or be smoke damaged
 - Trust in the manufacturer themselves, they could copy the key
 - Trust in their key generation procedure
@@ -151,7 +169,7 @@ This is fine for small amounts of bitcoin, but not for larger bitcoin holdings.
 That is where "Cold" hardware wallet storage comes in!
 So after the CoinJoin you might want to send some of those coins back to the hardware wallet, but not expose those addresses to the central servers of the hardware wallet company or some sneaky peaky Electrum Wallet spies...
 
-5. Connect your hardware wallet device (for the PSBT-protocol use a MicroSD card instead) 
+5. Connect your hardware wallet device (for the PSBT-protocol use a MicroSD card instead)
 
 6. Open another Wasabi Wallet instance, select `Hardware Wallet` to find your connected device.
 
@@ -177,7 +195,9 @@ You should put a meaningful label when you generate a receive address in your ha
 :::
 
 # Cold-Wasabi PSBT protocol
+
 When you want to safely spend some of those Cold-Wasabi funds from the hardware wallet, you could use the Partially Signed Bitcoin Transaction for offline/airgapped signing of transactions for an extra layer of defense.
 
 ## Workflow diagram
+
 ![](/ColdWasabiPSBTWorkflow.png)

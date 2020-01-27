@@ -70,7 +70,7 @@ It is strongly recommended to use long and random passwords for everything, espe
 
 ### What not to do
 
-Here are a couple of examples that do it completely wrong. 
+Here are a couple of examples that do it completely wrong.
 You should not generate your password like this:
 
 1. Do not use publicly known information like your grandma's maiden name and the birthday of your dog.

@@ -117,7 +117,7 @@ You can save multiple copies of `.walletwasabi` in your persistent, each with di
 
 ```sh
 /Persistent
-|__ /bitcoin-0.18.1            	   # Bitcoin Core launcher folder
+|__ /bitcoin-0.18.1                # Bitcoin Core launcher folder
 |__ /Bitcoin                       # Bitcoin Core data folder
 |__ /Wasabi                        # General Wasabi folder
     |__ /Wasabi-${currentVersion}.deb          # Wasabi installer
@@ -149,7 +149,7 @@ Remember to backup either your files or your [persistent storage](https://tails.
 
 Alternatively, you can use this [script](https://github.com/permabull/wasabi_tails_installer/blob/master/wasabi_tails_installer) made by [permabull](https://github.com/permabull), which, after downloading Wasabi by following [step 2](/using-wasabi/WasabiSetupTails.html#download), automatically installs Wasabi from the persistent folder and moves the wallet you want to open (or all of them) by user input:
 
-```
+```bash
 #!/bin/bash
 
 sudo dpkg -i Wasabi-${currentVersion}.deb
@@ -167,23 +167,22 @@ ls -1 -d */
 echo "*********************"
 
 while true
-do	
-    read -p "Enter wallet to open: " wallet_name
-    FOLDER="$wallet_name"
+do
+  read -p "Enter wallet to open: " wallet_name
+  FOLDER="$wallet_name"
 
-    if [ -d "$FOLDER" ]
-    then
-        echo "$FOLDER wallet found."
-	cd "$FOLDER"/.walletwasabi/
-	cp -r client/* ~/.walletwasabi/client
-	echo "Your files have been moved to wasabi folder"
-	break
-    else
-	echo ""$FOLDER" wallet doesn't exist"
-	continue
-fi
+  if [ -d "$FOLDER" ]
+  then
+    echo "$FOLDER wallet found."
+    cd "$FOLDER"/.walletwasabi/
+    cp -r client/* ~/.walletwasabi/client
+    echo "Your files have been moved to wasabi folder"
+    break
+  else
+    echo ""$FOLDER" wallet doesn't exist"
+    continue
+  fi
 done
 
 wassabee </dev/null &>/dev/null &
 ```
-

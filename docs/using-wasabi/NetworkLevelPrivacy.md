@@ -175,6 +175,7 @@ You cannot even tie together two connections of the client, since the client con
 The only adversary that could possibly overcome this would have to setup thousands of full nodes over onion and also break Tor itself.
 
 ### Adversaries Identified
+
 - ISP
 - Tor Breaker Sybil Attacker With Thousands Of Full Nodes Over Onion
 

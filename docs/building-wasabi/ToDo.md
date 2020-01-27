@@ -33,7 +33,7 @@ When you are ever bored and want to be productive, why not pick up one of these 
 - Join Market integration
 - [SNICKER integration: Simple Non-Interactive CoinJoin with Keys for Encryption Reused](https://github.com/zkSNACKs/Meta/issues/67)
 - [Encryption manager BIP 322](https://github.com/zkSNACKs/WalletWasabi/issues/1121)
-- Lightning network integration 
+- Lightning network integration
 - CoinJoin statistics database and website
 - SegWit v1 Schnorr / Taproot
 - [SigNet integration](https://github.com/zkSNACKs/Meta/issues/66)

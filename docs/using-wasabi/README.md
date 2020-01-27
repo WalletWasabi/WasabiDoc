@@ -14,6 +14,7 @@ Further tutorials about the different parts of the wallet, for newbies and power
 ### Chapters
 
 #### Installing Wasabi
+
 - [Install package](/using-wasabi/InstallPackage.md)
 - [Build from source code](/using-wasabi/BuildSource.md)
 - [Deterministic Build](/using-wasabi/DeterministicBuild.md)
@@ -21,6 +22,7 @@ Further tutorials about the different parts of the wallet, for newbies and power
 - [Wasabi Setup on Qubes](/using-wasabi/WasabiSetupVM.md)
 
 #### Using Wasabi
+
 - [Wallet Generation](/using-wasabi/WalletGeneration.md)
 - [Receive](/using-wasabi/Receive.md)
 - [Send](/using-wasabi/Send.md)
@@ -34,6 +36,7 @@ Further tutorials about the different parts of the wallet, for newbies and power
 - [Supported BIPs](/using-wasabi/BIPs.md)
 
 #### Privacy Best Practices
+
 - [Address Reuse](/using-wasabi/AddressReuse.md)
 - [Change Coins](/using-wasabi/ChangeCoins.md)
 - [Network Level Privacy](/using-wasabi/NetworkLevelPrivacy.md)
@@ -42,6 +45,7 @@ Further tutorials about the different parts of the wallet, for newbies and power
 - [Joinmarket](/using-wasabi/Joinmarket.md)
 
 #### Restoring Wasabi
+
 - [Wallet Recovery](/using-wasabi/WalletRecovery.md)
 - [Restoring Wasabi Wallet to Electrum](/using-wasabi/RestoreElectrum.md)
 - [Lost Password Strategy](/using-wasabi/LostPassword.md)

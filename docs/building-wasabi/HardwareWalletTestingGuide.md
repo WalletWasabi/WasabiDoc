@@ -44,7 +44,9 @@ Follow this step-by-step [guide](../using-wasabi/BuildSource.md).
 ## Step 2: Test
 
 ### 1. Does Wasabi recognize your hardware wallet?
+
 ### 2. Does Wasabi load your hardware wallet?
+
 ### 3. Can you send transaction using Wasabi and your hardware wallet?
 
 ## Step 3: Report Results

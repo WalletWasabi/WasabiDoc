@@ -113,7 +113,7 @@ For now, we had a practical problem to solve.
 How do we establish a connection between the sender and the recipient in a P2P way?
 
 Jessie’s idea was to extend the [BIP21 Bitcoin URI Scheme](/using-wasabi/BIPs.md#bip-21-uri-scheme) with an endpoint.
-Somehow like this: 
+Somehow like this:
 `bitcoin:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W?endpoint=http://3g2upl4pq6kufc4m.onion`
 
 In this case, first the sender would try to figure out if the recipient is online.
@@ -171,31 +171,36 @@ However if it the receiver participated in the transaction above, then this tran
 What does not exist, that does not exist.
 Thus if some people start using strange schemes, that affects how Blockchain analysis interprets other transactions, too.
 
-#### Side effect 1: 
+#### Side effect 1:
+
 In exchange for the privacy benefit, the sender has to pay more fees than a normal transaction.
 It is a con for the sender, but a pro for the receiver, since the receiver does not have to consolidate its coin later.
 Also it is a pro from a global point of view, due to its UTXO consolidation effects, I will detail a few lines below.
 
-#### Side effect 2: 
+#### Side effect 2:
+
 Harder to coordinate, since the receiver must be online and the payment will take a few seconds longer.
 But it is arguable, that if everyone would be able to use this scheme all the time, then that would be the new pattern, thus the new reliable Heuristics for Blockchain analysis.
 It is crucial that not everyone use this pattern all the time. Its practical limitations achieves its goal.
 
-#### Side effect 3: 
+#### Side effect 3:
+
 Receiver must have a hot wallet.
 This is problematic in a buyer to merchant payment, since merchants usually receive coins to cold wallets.
 While my above comment still applies here, notice that this notion makes our problem of UTXO spying a corner case?
 That attack only applied if “the receiver is publicly known.”
 In peer to peer, person to person payments, the attacker would have to somehow first acquire an endpoint to a receiver.
 
-#### Side effect 4: 
+#### Side effect 4:
+
 Wallets must be deencrypted.
 Since many wallets only send-time decrypt the private keys, it would need to decrypt receive-time, too.
 There are multiple ways to implement this.
 It could be implemented in address generation time, which in our case it is also an endpoint generation time.
 But if it is strictly implemented at receive time, the UTXO spying defense may not be needed at all.
 
-##### Side effect 5: 
+##### Side effect 5:
+
 It helps with UTXO bloat.
 Let us assume the above transaction is a Sender-Receiver transaction.
 Then, if the receiver would not participate, that would mostly result in a one input, two output transaction.

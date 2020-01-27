@@ -13,7 +13,6 @@ Any serious approach to anonymity in Bitcoin requires a total use of encryption 
 Over the course of just a few months, you could come into contact with hundreds of Bitcoin addresses.
 It is often only necessary to associate just one of these addresses to your real identity to de-anonymize you.
 
-
 [[toc]]
 
 ## Revealing your Bitcoin address before it goes into the blockchain could let others track you
@@ -22,11 +21,11 @@ As soon as a Bitcoin address is entered into the blockchain, it is publicly reco
 Before that happens, it's likely that only two parties (the recipient and the sender) had knowledge of this address.
 If you are making a search for an address that is not in the blockchain, either you are the owner of this address, or someone is requesting a payment from you.
 To avoid being tracked in this way, it is important to make all payment requests and other mentions of addresses via encrypted channels:
+
 - Make sure the website you are visiting has HTTPS enabled when you search for Bitcoin addresses.
 - Use VPNs and Tor when possible.
 You should check addresses with Blockstream Explorer via their [.onion v3 address](http://explorerzydxu5ecjrkwceayqybizmpjjznk5izmitf2modhcusuqlid.onion/).
 - Encrypt your communications with PGP (emails, files and text) and OTR (chats).
-
 
 ## Possessing a wallet file might be enough proof that you control Bitcoin
 

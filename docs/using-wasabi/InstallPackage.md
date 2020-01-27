@@ -71,8 +71,8 @@ You can ignore this, but if you want to fully verify your download, you need to 
 9. You can install Wasabi by double clicking the `.msi` and following the GUI instructions.
 
 Wasabi will be installed to your `C:\Program Files\WasabiWallet\` folder.
-You will also have an icon in your Start Menu and on your Desktop. 
-After the first run, a [data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) will be created. 
+You will also have an icon in your Start Menu and on your Desktop.
+After the first run, a [data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) will be created.
 Among others, here is where your wallet files and your logs reside.
 
 ### Manual PGP public key import
@@ -100,7 +100,6 @@ In the context menu navigate to `More GpgEx options/Import keys`.
 Press `OK` and close Kleopatra.
 
 ![](/InstallWindowsImportPGPManualKleopatra.png)
-
 
 ## Debian and Ubuntu
 

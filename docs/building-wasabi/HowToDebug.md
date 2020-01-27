@@ -15,22 +15,24 @@ This guide is for giving detailed instructions about how to debug Wasabi Wallet 
 We will focus on how to achieve this with `vscode` first because that is the cross-platform IDE used by some of the developer team members.
 
 ## Before Starting
+
 We assume the reader has already read the project [README](https://github.com/zkSNACKs/WalletWasabi/blob/master/README.md) file and has installed the [.NET Core ${dotnetVersion} SDK](https://www.microsoft.com/net/download), and knows how to clone the repository and build the Wasabi solution.
 
-
 ## Install VS Code and extensions
+
 ### 1: Get Visual Studio Code
+
 Install Visual Studio Code (VSC).
 Pick the latest VSC version from here: [https://code.visualstudio.com/download](https://code.visualstudio.com/download)
 
-
 ### 2: Install C# Extension
+
 Open the command palette in VS Code (press <kbd>F1</kbd>) and type `ext install C#` to trigger the installation of the extension.
 VS Code will show a message that the extension has been installed and it will restart.
 Installing this extension can take a while.
 
-
 ### 3: Open the WalletWasabi directory in VS Code
+
 Go to `File->Open Folder` and open the WalletWasabi directory in Visual Studio Code.
 The Wasabi vscode settings forces a download of the latest omnisharp versions every time the folder is opened and this can take a while.
 
@@ -126,6 +128,7 @@ Add the following launcher to the array of `configurations` in the `.vscode/laun
    }
 }
 ```
+
 As before, we need to create a task for compiling the backend project before executing the code, and this is done again in the `.vscode/tasks.jon` file.
 Add the following task to the array of tasks:
 
@@ -144,8 +147,6 @@ Add the following task to the array of tasks:
 
 And that is all.
 Once this has been done a developer can press (CTRL+SHIFT+D) to go to the debugger, set a couple of breakpoints, select the `Wasabi Backend .NET Core` launcher and press the play button to start debugging.
-
-
 
 ### Files
 
@@ -237,7 +238,6 @@ Once this has been done a developer can press (CTRL+SHIFT+D) to go to the debugg
 }
 ```
 
-
 #### .vscode/tasks.json
 
 ```json
@@ -298,14 +298,13 @@ Once this has been done a developer can press (CTRL+SHIFT+D) to go to the debugg
 
 ## How to setup and run the whole system
 
-Sometimes, as developers, we need to test an advanced interaction between the Bitcoin Core node, the Coordinator, and one or more Wasabi clients. 
+Sometimes, as developers, we need to test an advanced interaction between the Bitcoin Core node, the Coordinator, and one or more Wasabi clients.
 Just imagine a case in which we want to verify the system behavior after a blockchain reorg.
 In these cases we have to setup and run all the components, and use regtest.
 
 ### Install Bitcoin Core
 
 Download and install Bitcoin Core from [https://bitcoincore.org/bin/](https://bitcoincore.org/bin/).
-
 
 ### Running the backend (coordinator)
 

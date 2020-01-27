@@ -12,12 +12,12 @@
 ---
 
 [Wasabi Password Finder](https://github.com/lontivero/WasabiPasswordFinder) is a tool for helping those who made a mistake typing the password during the wallet creation process.
-This tool tries to find the password that decrypts the encrypted secret key stored in a given wallet file. 
+This tool tries to find the password that decrypts the encrypted secret key stored in a given wallet file.
 
 ## Limitations
 
 Wasabi Wallet protects the encrypted secret key with the same technology used to protect paper wallets ([BIP 38](/using-wasabi/BIPs.md#bip-38-password-protected-private-key)) and for that reason it is computationally infeasible to brute force the password using all the possible combinations.
-It is important to know that Wasabi Password Finder is not for breaking wallet passwords but for finding errors (typos) in an already known password. 
+It is important to know that Wasabi Password Finder is not for breaking wallet passwords but for finding errors (typos) in an already known password.
 
 ## Usage
 
@@ -66,11 +66,9 @@ Note that for a 4 characters length password it took more than a minute to find.
 Moreover, the process is heavy in CPU and for that reason it can be a good idea to use the best combination of parameters to reduce the search space.
 
 * __language__ (default: en) specify the charset (characters to search in) to reduce the search space.
-For example, while the *Italian* charset is "abcdefghimnopqrstuvxyzABCDEFGHILMNOPQRSTUVXYZ", the *French* charset is "aâàbcçdæeéèëœfghiîïjkmnoôpqrstuùüvwxyÿzAÂÀBCÇDÆEÉÈËŒFGHIÎÏJKMNOÔPQRSTUÙÜVWXYŸZ". 
+For example, while the *Italian* charset is "abcdefghimnopqrstuvxyzABCDEFGHILMNOPQRSTUVXYZ", the *French* charset is "aâàbcçdæeéèëœfghiîïjkmnoôpqrstuùüvwxyÿzAÂÀBCÇDÆEÉÈËŒFGHIÎÏJKMNOÔPQRSTUÙÜVWXYŸZ".
 
 * __numbers__ (default: true) is for indicating that our password contains, or could contain, at least one digit. This increases the charset by 10 (from 0 to 9).
 
 * __symbols__ (default: true) is for indicating that our password contains, or could contain, at least one symbol.
 This increases the charset by 34 (|!¡@$¿?_-\"#$/%&()´+*=[]{},;:.^`<>). Note that only the most commonly used characters are available.
-
-

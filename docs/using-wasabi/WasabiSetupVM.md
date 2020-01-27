@@ -52,6 +52,7 @@ You can disable .NET's telemetry, which is sending some usage information to Mic
 ```sh
 [user@template-wasabi ~]$ export DOTNET_CLI_TELEMETRY_OPTOUT=1
 ```
+
 :::
 
 If you need to update .NET Core, then do it in this VM.

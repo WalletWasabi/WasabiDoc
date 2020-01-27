@@ -33,7 +33,7 @@ Wasabi currently has a work in progress partial Bitcoin Core integration.
 The zkSNACKs coordinating server broadcasts [BIP 158 block filters](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients) to all Wasabi clients, who locally check if the filter hits for their public keys.
 Then you know that this block has a transaction of yours included, or maybe it is a false positive.
 
-:::warning 
+:::warning
 The zkSNACKs server has to be trusted to serve correct filters, until [BIP 157 client side block filtering](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients) is implemented in Bitcoin Core.
 :::
 
