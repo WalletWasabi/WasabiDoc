@@ -311,7 +311,7 @@ Labels should contain the comma-separated names of people/entities that may be a
 
 So, a good label could be:
 
-`Alice, Bitfinex, BTCPay Server`
+`Alice, KYC exchange, BTCPay Server`
 
 or:
 
