@@ -236,7 +236,7 @@ your@vm:~$ cd WalletWasabi/WalletWasabi.Gui
 your@vm:~$ dotnet build
 ```
 
-Add the development branches to your git.
+Checkout a developer branch:
 
 ```sh
 your@vm:~$ git remote add nopara73 https://github.com/nopara73/WalletWasabi
@@ -244,7 +244,7 @@ your@vm:~$ git fetch nopara73
 your@vm:~$ git checkout <development branch>
 ```
 
-Pull the latest commits and compile from source.
+Pull the latest commits and compile from source:
 
 ```sh
 your@vm:~$ git pull
