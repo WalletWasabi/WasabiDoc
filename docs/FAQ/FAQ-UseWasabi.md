@@ -1025,7 +1025,8 @@ All of them!
 This is thanks to awesome Hardware Wallet Interface of Bitcoin core.
 
 However, not all of the many hardware wallets have been tested and reviewed by the developers.
-Everything seems to work fine with the ColdCard, BitBox, Trezor, Ledger and KeepKey.
+Everything seems to work fine with the ColdCard, BitBox, Trezor, 
+and KeepKey.
 ::::
 
 :::details
@@ -1097,21 +1098,13 @@ You can't do that directly, you have to send the bitcoins (in small portions > 0
 :::
 
 ::::details
-### Does Ledger Live server spy on my xpub?
+### Does Ledger Live send my xpub in a way that harms my privacy?
 
-Yes, when using the Ledger Live software wallet to manage your coins, you send your extended public key to the Ledger company server.
-With this information they know exactly how many bitcoins you have and in what transactions you spend them.
-To avoid that you can use a Ledger hardware in combination with Wasabi as software interface, and because Wasabi does not leak your xpub, your transaction history is not shared with anyone.
-Make sure you are generating a completely new wallet with a new seed phrase backup so that the compromised old wallet is no longer an issue.
-You can also go into the Settings of your Ledger and create a PIN-specific passphrase.
-
-To create a new Ledger Wallet *offline* and make sure that your newly created wallet doesn't leak any information to Ledger's servers you must not use Ledger Live (neither to configure it for the first time, nor to use it).
-After that, you can use the wallet in combination with Wasabi without having concerns about your privacy!
+No, when using the Ledger Live application to manage your Ledger device and coins, your extended public key is never sent to Ledger's servers. Ledger Live stores your xpub locally on your computer or smartphone and encrypts it with your optional password.
+Ledger Live sends individual public addresses to Ledger's blockchain explorers to calculate the balance of your accounts, though these are not stored during normal operation. For increased privacy, users should run their own node or may use their Ledger hardware wallet in combination with Wasabi as a software interface.
 
 :::warning
-You still need Ledger Live app to update the firmware of your Ledger hardware wallet.
-By not using Ledger Live, you seriously jeopardize the safety of your funds.
-Please consider this carefully before making a decision.
+Please make sure you regularly update the firmware of your Ledger hardware wallet using Ledger Live to benefit from the latest security features and more.  
 :::
 ::::
 
