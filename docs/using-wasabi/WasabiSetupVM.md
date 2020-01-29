@@ -9,13 +9,13 @@
 
 ## Benefits of Virtual Machines
 
-Virtualization allows you to create and run as many virtual machines (VM's) on a single computer at one time as desired.
-The only constraints are the amount of RAM and hard disk space installed on the host computer.
+Virtualization allows you to create and run as many virtual machines (VMs) on a single computer at one time as desired.
+The only constraints are the amount of RAM and hard disk space available on the host computer.
 
 Each VM is isolated from the host machine.
 Therefore, such things as corrupted files, configuration errors, malware, etc., encountered during the use of a VM do not affect the host computer.
 
-If you a developer, using virtual machines gives you several very powerful features.
+If you are a developer, using virtual machines gives you several powerful features.
 You can easily:
 
 - Create snapshots of a VM's state at any time.
@@ -143,8 +143,8 @@ There are no additional dependencies required, so the App VM can be based on `te
 
 ## VirtualBox
 
-[VirtualBox](https://virtualbox.org) is a lightweight, powerful free and open-source virtualization tool that allows you to run one or more independent operating systems as "virtual machines" (VM's) on your computer.
-The computer on which VirtualBox is installed is referred to as the "host" machine, and the VM's that are created are referred to as "guests".
+[VirtualBox](https://virtualbox.org) is a lightweight, powerful free and open-source virtualization tool that allows you to run one or more independent operating systems as "virtual machines" (VMs) on your computer.
+The computer on which VirtualBox is installed is referred to as the "host" machine, and the VMs that are created are referred to as "guests".
 
 Presently, VirtualBox runs on Windows, Linux, Macintosh, and Solaris hosts and supports a large number of guest operating systems including, but not limited to Windows (NT 4.0, 2000, XP, Server 2003, Vista, Windows 7, Windows 8, Windows 10), DOS/Windows 3.x, Linux (2.4, 2.6, 3.x and 4.x), Solaris and OpenSolaris, OS/2, and OpenBSD.
 
@@ -157,8 +157,7 @@ This package will add several useful capabilities to VirtualBox.
 
 Detailed instructions for installing VirtualBox on your host computer can be found [here](https://www.virtualbox.org/manual/UserManual.html#installation).
 
-If you run into trouble or have special requirements, the complete User Manual can be
-found [here](https://download.virtualbox.org/virtualbox/UserManual.pdf).
+If you run into trouble or have special requirements, the complete User Manual can be found [here](https://download.virtualbox.org/virtualbox/UserManual.pdf).
 
 ### Create Your First Virtual Machine
 
@@ -170,22 +169,22 @@ __Things to Note:__
 
 - During the installation process for whatever OS you have chosen for your VM, you will likely see references to your hard disk and/or Master Boot Record.
 Be assured that those references are pertaining to your "virtual" hard drive and/or boot records that are a part of the VM.
-They are NOT referring to your computer's physical drive or boot records.<br>
+They are NOT referring to your computer's physical drive or boot records.
+
 Other than the creation of a folder which holds the data for each VM that you may create, your physical hard drive and/or boot records will not be altered or harmed by the installation of an OS inside the VM.
 
 - Optional, but strongly recommended: Enable the built-in "Guest Additions" functions of Virtualbox.
-This step will give you a full-sized display, and make the usage of your
-mouse seamless when switching between different VM's that are running at the same time.
+This step will give you a full-sized display, and make the usage of your mouse seamless when switching between different VMs that are running at the same time.
 Instruction for enabling "Guest Additions" can be found [here](https://www.virtualbox.org/manual/UserManual.html#guestadd-intro).
 
 ### Generate a Template VM
 
 It's now time to start customizing your development templates!
-Make sure that you have run any needed updates for your VM.<br>
-Next, the dependencies to [compile Wasabi from source](/using-wasabi/BuildSource.md) will be downloaded and installed in a new template VM,which can be based on your preferred OS.
+Make sure that you have run any needed updates for your VM.
 
-With VirtualBox, you can create separate templates based on Windows, or
-any Linux distribution.
+Next, the dependencies to [compile Wasabi from source](/using-wasabi/BuildSource.md) will be downloaded and installed in a new template VM, which can be based on your preferred OS.
+
+With VirtualBox, you can create separate templates based on Windows, or any Linux distribution.
 Finally, you can add any other tools that you prefer, such as Visual Studio / Visual Studio Code, Atom, etc..
 
 ### Install Required Dependencies
@@ -200,7 +199,6 @@ In your terminal window, run:
 
 ```sh
 your@vm:~$ export DOTNET_CLI_TELEMETRY_OPTOUT=1
-
 ```
 
 :::
@@ -211,7 +209,7 @@ Now, shut down your template VM.
 
 ### Cloning a Virtual Machine
 
-At this point, you should have a Template VM set up with your preferred tools and environmen.
+At this point, you should have a Template VM set up with your preferred tools and environment.
 
 Now the real fun begins, and you will be rewarded for all of your hard work to get to this point!
 
@@ -265,5 +263,4 @@ There are no additional dependencies required to run this version.
 
 __Have fun, and please consider contributing to the Wasabi project!__
 
-If you would like to help with Wasabi development,
-refer to our [developers debugging guide](building-wasabi/HowToDebug.html#before-starting).
+If you would like to help with Wasabi development, refer to our [developers debugging guide](building-wasabi/HowToDebug.html#before-starting).
