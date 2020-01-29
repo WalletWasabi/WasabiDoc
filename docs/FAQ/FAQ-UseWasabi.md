@@ -1025,8 +1025,7 @@ All of them!
 This is thanks to awesome Hardware Wallet Interface of Bitcoin core.
 
 However, not all of the many hardware wallets have been tested and reviewed by the developers.
-Everything seems to work fine with the ColdCard, BitBox, Trezor, 
-and KeepKey.
+Everything seems to work fine with the ColdCard, BitBox, Trezor, and KeepKey.
 ::::
 
 :::details
