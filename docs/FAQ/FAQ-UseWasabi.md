@@ -1025,7 +1025,7 @@ All of them!
 This is thanks to awesome Hardware Wallet Interface of Bitcoin core.
 
 However, not all of the many hardware wallets have been tested and reviewed by the developers.
-Everything seems to work fine with the ColdCard, BitBox, Trezor, and KeepKey.
+Everything seems to work fine with the ColdCard, BitBox, Trezor, Ledger and KeepKey.
 ::::
 
 :::details
@@ -1099,8 +1099,10 @@ You can't do that directly, you have to send the bitcoins (in small portions > 0
 ::::details
 ### Does Ledger Live send my xpub in a way that harms my privacy?
 
-No, when using the Ledger Live application to manage your Ledger device and coins, your extended public key is never sent to Ledger's servers. Ledger Live stores your xpub locally on your computer or smartphone and encrypts it with your optional password.
-Ledger Live sends individual public addresses to Ledger's blockchain explorers to calculate the balance of your accounts, though these are not stored during normal operation. For increased privacy, users should run their own node or may use their Ledger hardware wallet in combination with Wasabi as a software interface.
+No, when using the Ledger Live application to manage your Ledger device and coins, your extended public key is never sent to Ledger's servers. 
+Ledger Live stores your xpub locally on your computer or smartphone and encrypts it with your optional password.
+Ledger Live sends individual public addresses to Ledger's blockchain explorers to calculate the balance of your accounts, though these are not stored during normal operation. 
+For increased privacy, users should run their own node or may use their Ledger hardware wallet in combination with Wasabi as a software interface.
 
 :::warning
 Please make sure you regularly update the firmware of your Ledger hardware wallet using Ledger Live to benefit from the latest security features and more.  
