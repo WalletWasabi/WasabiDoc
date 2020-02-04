@@ -66,7 +66,7 @@ Read more: [Use of blind signatures in CoinJoin](/using-wasabi/CoinJoin.md#zerol
 ### Cluster
 
 Which entities know about which coins.
-For example, this coin belongs to a cluster that is known by KYC exchange and Alice.
+For example, this coin belongs to a cluster that is known by a KYC exchange and Alice.
 Read more: [What is the cluster history?](/FAQ/FAQ-UseWasabi.md#what-is-the-cluster-history)
 :::
 
