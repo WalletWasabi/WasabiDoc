@@ -14,9 +14,12 @@ This is the Wasabi documentation, an archive of knowledge about the open-source,
 
 Wasabi is an open-source, non-custodial, privacy-focused Bitcoin wallet.
 It is a piece of software that runs on your computer and helps you to manage your bitcoins.
+Although Wasabi has some very advanced magic under the hood, it is rather easy to use.
 You can generate a new set of private keys, or import already existing ones.
 With Wasabi you can receive bitcoins into your full control, and you can send them to someone else without needing permission from any other person or entity.
-There is also a powerful [CoinJoin](/using-wasabi/CoinJoin.md) feature to help obfuscate your transaction history.
+There is also a powerful CoinJoin feature to help obfuscate your transaction history.
+You can also use Wasabi to manage your hardware wallet, and it even connects to your own full node.
+Of course, Wasabi is libre and open source, which means you have full control over the software you manage your money with.
 
 ## Installing Wasabi
 
