@@ -34,3 +34,12 @@ You will always need this password when you want to spend your bitcoins, so take
 In the next step, Wasabi will show your 12 recovery words, these must be carefully backed up also, as they can help you access your bitcoins when your computer breaks.
 
 See [this chapter](/using-wasabi/WalletGeneration.md) for more information on how to securely generate your wallet.
+
+## Receiving bitcoin
+
+In order to receive your first bitcoins, you can generate an address in the `Receive` tab.
+But before you must label it with the observer who knows that this address is yours.
+For example, if Alice pays you back for last nights pizza, then the label is `Alice`.
+This is an important feature so that you know which coin is from whom, and it will help with your privacy in the future.
+
+See [this chapter](/using-wasabi/Receive.md) for a tutorial on how to properly label your addresses and receive bitcoin.
