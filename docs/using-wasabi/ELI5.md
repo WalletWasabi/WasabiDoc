@@ -56,7 +56,11 @@ See [this chapter](/using-wasabi/CoinJoin.md) for a thorough analysis of CoinJoi
 ## Sending bitcoin
 
 In the Wasabi `Send` tab you can give your bitcoins to someone else, or send them to another wallet of yours.
-Select the coins which you want to spend, paste the address of the receiver, label the observers who know of this transaction, specify the amount the receiver should get and select how fast you want the transaction to confirm.
+* Select the coins which you want to spend.
+* Insert the address of the receiver.
+* Label the observers who know of this transaction.
+* Specify the amount the receiver should get.
+* Set the fee to select how fast you want the transaction to confirm.
 Verify that everything is correct, then type in your password and hit the `Send` button.
 
 See [this chapter](/using-wasabi/Send.md) for more details on sending bitcoins and the privacy nuances of coin control.
