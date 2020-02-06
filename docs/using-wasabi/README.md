@@ -16,31 +16,35 @@ Further tutorials about the different parts of the wallet, for newbies and power
 #### Installing Wasabi
 - [Install package](/using-wasabi/InstallPackage.md)
 - [Build from source code](/using-wasabi/BuildSource.md)
-- [Deterministic Build](/using-wasabi/DeterministicBuild.md)
-- [Wasabi Setup on Tails](/using-wasabi/WasabiSetupTails.md)
-- [Wasabi Setup on Qubes](/using-wasabi/WasabiSetupVM.md)
 
 #### Using Wasabi
 - [Wallet Generation](/using-wasabi/WalletGeneration.md)
 - [Receive](/using-wasabi/Receive.md)
-- [Send](/using-wasabi/Send.md)
 - [CoinJoin](/using-wasabi/CoinJoin.md)
-- [Password Finder](/using-wasabi/PasswordFinder.md)
-- [Cold-Wasabi Protocol](/using-wasabi/ColdWasabi.md)
-- [Lurking Wife Mode](/using-wasabi/LurkingWifeMode.md)
-- [Headless Wasabi Daemon](/using-wasabi/Daemon.md)
-- [RPC Interface](/using-wasabi/RPC.md)
-- [Supported BIPs](/using-wasabi/BIPs.md)
+- [Send](/using-wasabi/Send.md)
 
 #### Privacy Best Practices
 - [Address Reuse](/using-wasabi/AddressReuse.md)
 - [Change Coins](/using-wasabi/ChangeCoins.md)
 - [Network Level Privacy](/using-wasabi/NetworkLevelPrivacy.md)
 - [How you can be de-anonymized using Bitcoin](/using-wasabi/Deanonimization.md)
-- [Pay to EndPoint](/using-wasabi/PayToEndPoint.md)
-- [Joinmarket](/using-wasabi/Joinmarket.md)
+
+#### Advanced
+- [Deterministic Build](/using-wasabi/DeterministicBuild.md)
+- [Wasabi Setup on Tails](/using-wasabi/WasabiSetupTails.md)
+- [Wasabi Setup on Qubes](/using-wasabi/WasabiSetupVM.md)
+- [Cold-Wasabi Protocol](/using-wasabi/ColdWasabi.md)
+- [Headless Wasabi Daemon](/using-wasabi/Daemon.md)
+- [RPC Interface](/using-wasabi/RPC.md)
+- [Lurking Wife Mode](/using-wasabi/LurkingWifeMode.md)
+- [Supported BIPs](/using-wasabi/BIPs.md)
 
 #### Restoring Wasabi
 - [Wallet Recovery](/using-wasabi/WalletRecovery.md)
 - [Restoring Wasabi Wallet to Electrum](/using-wasabi/RestoreElectrum.md)
 - [Lost Password Strategy](/using-wasabi/LostPassword.md)
+- [Password Finder](/using-wasabi/PasswordFinder.md)
+
+#### Research
+- [Pay to EndPoint](/using-wasabi/PayToEndPoint.md)
+- [Joinmarket](/using-wasabi/Joinmarket.md)

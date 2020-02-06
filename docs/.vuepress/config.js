@@ -140,6 +140,7 @@ module.exports = {
           ]
         }
       ],
+
       "/using-wasabi/": [
         {
           title: "Installing Wasabi",
@@ -147,10 +148,7 @@ module.exports = {
           sidebarDepth: 2,
           children: [
             "/using-wasabi/InstallPackage.md",
-            "/using-wasabi/BuildSource.md",
-            "/using-wasabi/DeterministicBuild.md",
-            "/using-wasabi/WasabiSetupTails.md",
-            "/using-wasabi/WasabiSetupVM.md"
+            "/using-wasabi/BuildSource.md"
           ]
         },
     {
@@ -160,14 +158,8 @@ module.exports = {
           children: [
             "/using-wasabi/WalletGeneration.md",
             "/using-wasabi/Receive.md",
-            "/using-wasabi/Send.md",
             "/using-wasabi/CoinJoin.md",
-            "/using-wasabi/PasswordFinder.md",
-            "/using-wasabi/ColdWasabi.md",
-            "/using-wasabi/LurkingWifeMode.md",
-            "/using-wasabi/Daemon.md",
-            "/using-wasabi/RPC.md",
-            "/using-wasabi/BIPs.md"
+            "/using-wasabi/Send.md"
           ]
         },
     {
@@ -178,22 +170,46 @@ module.exports = {
             "/using-wasabi/AddressReuse.md",
             "/using-wasabi/ChangeCoins.md",
             "/using-wasabi/NetworkLevelPrivacy.md",
-            "/using-wasabi/Deanonimization.md",
-            "/using-wasabi/PayToEndPoint.md",
-            "/using-wasabi/Joinmarket.md"
+            "/using-wasabi/Deanonimization.md"
           ]
         },
-        {
-          title: "Restoring Wasabi",
+    {
+          title: "Advanced",
           collapsable: false,
           sidebarDepth: 2,
           children: [
-            "/using-wasabi/WalletRecovery.md",
-            "/using-wasabi/RestoreElectrum.md",
-            "/using-wasabi/LostPassword.md"
-          ]
+            "/using-wasabi/DeterministicBuild.md",
+            "/using-wasabi/WasabiSetupTails.md",
+            "/using-wasabi/WasabiSetupVM.md",
+	    "/using-wasabi/ColdWasabi.md",
+            "/using-wasabi/Daemon.md",
+            "/using-wasabi/RPC.md",
+            "/using-wasabi/LurkingWifeMode.md",
+            "/using-wasabi/BIPs.md"
+         ]
+        },
+    {
+	  title: "Restoring Wasabi",
+	  collapsable: false,
+	  sidebarDepth: 2,
+	  children: [
+	    "/using-wasabi/WalletRecovery.md",
+	    "/using-wasabi/RestoreElectrum.md",
+	    "/using-wasabi/LostPassword.md",
+	    "/using-wasabi/PasswordFinder.md"
+	  ]
+	},
+     {
+          title: "Research",
+          collapsable: false,
+          sidebarDepth: 2,
+          children: [
+            "/using-wasabi/Joinmarket.md",
+	    "/using-wasabi/PayToEndPoint.md"
+         ]
         }
       ],
+
       "/building-wasabi/": [
         {
           title: "Building Wasabi",
@@ -217,6 +233,7 @@ module.exports = {
           ]
         }
       ],
+
       "/FAQ/": [
         {
           title: "FAQ",
