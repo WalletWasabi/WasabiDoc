@@ -12,11 +12,11 @@ This is the Wasabi documentation, an archive of knowledge about the open-source,
 
 ## Introduction
 
-Wasabi is a Bitcoin wallet, tailor-made to protect your privacy.
+Wasabi is an open-source, non-custodial, privacy-focused Bitcoin wallet.
 It is a piece of software that runs on your computer and helps you to manage your bitcoins.
 You can generate a new set of private keys, or import already existing ones.
 With Wasabi you can receive bitcoins into your full control, and you can send them to someone else without needing permission from any other person or entity.
-There is also a powerful CoinJoin feature to help obfuscate your transaction history.
+There is also a powerful [CoinJoin](/using-wasabi/CoinJoin.md) feature to help obfuscate your transaction history.
 
 ## Installing Wasabi
 
@@ -32,7 +32,11 @@ When you start Wasabi for the first time, the tab to generate a new wallet will 
 You can set a unique name for the wallet so that you remember what it is for.
 Choose a very secure password, as this encrypts the secrets, and should not be guessed by others.
 You will always need this password in order to spend your bitcoins, so take great care to back it up properly.
-Important: If you ever need to restore this wallet on Wasabi, or any other wallet, you will need both: this password AND your 12 recovery words.```
+
+:::warning
+If you ever need to restore this wallet on Wasabi, or any other wallet, you will need both: this password AND your 12 recovery words.
+:::
+
 In the next step, Wasabi will show your 12 recovery words.
 These must be carefully backed up also, as they will be needed to access your bitcoins when your computer breaks.
 Make sure you store the backup of your recovery words in a different location than the backup of your password.
