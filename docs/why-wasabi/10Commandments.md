@@ -50,9 +50,9 @@ In the same way that you should never receive Bitcoin to the same address twice,
 
 ## 5. CoinJoin whenever possible and be patient!
 
-The process of engaging in a CoinJoin is as simple as selecting a coin or coins to en-queue and entering your password.
-Once coins have en-queued for CoinJoining, you must keep your computer online and awake, as the coin join process is interactive.
-As a coin join is really just many users (up to 100) en-queuing coins at the same time, it may take up to two hours for you to successfully participate in a CoinJoin and clean outputs should only be spent once the coin join transaction is confirmed.
+The process of engaging in a CoinJoin is as simple as selecting a coin or coins to enqueue and entering your password.
+Once coins have enqueued for coinjoining, you must keep your computer online and awake, as the CoinJoin process is interactive.
+As a CoinJoin is really just many users (up to 100) enqueuing coins at the same time, it may take up to two hours for you to successfully participate in a CoinJoin and clean outputs should only be spent once the CoinJoin transaction is confirmed.
 For context, Wasabi currently does 18 CoinJoins a day, or roughly one every 1 hour and 20 minutes.
 As more users join the network, the frequency of these CoinJoins will go up.
 Lastly, if you are able and patient enough to re-mix your coins, please do so.
