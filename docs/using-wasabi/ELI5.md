@@ -43,3 +43,12 @@ For example, if Alice pays you back for last nights pizza, then the label is `Al
 This is an important feature so that you know which coin is from whom, and it will help with your privacy in the future.
 
 See [this chapter](/using-wasabi/Receive.md) for a tutorial on how to properly label your addresses and receive bitcoin.
+
+## CoinJoin with Wasabi
+
+If you don't like that your employer knows about where you spend your money, or that a merchant can find out how much money you have, then you should CoinJoin your bitcoin, as this breaks the transaction history.
+Although the CoinJoin protocol is a bit complex, it is very easy to use in Wasabi.
+Go to the `CoinJoin` tab, select the coins you want to make private, type in your password and click enqueue.
+Now have a little patience, within a short while you should have sufficient anonymity set to protect your privacy.
+
+See [this chapter](/using-wasabi/CoinJoin.md) for a thorough analysis of CoinJoin, details on the Wasabi implementation and best practices how to use it properly.
