@@ -24,3 +24,13 @@ Go to the official website [wasabiwallet.io](https://wasabiwallet.io), scroll do
 You can then install Wasabi as you would do any other software on your computer.
 
 See [this chapter](/using-wasabi/InstallPackage.md) for a detailed step-by-step tutorial for all operating systems, and also how to verify the PGP signature.
+
+## Generating a Wallet
+
+When for the first time you start Wasabi, it will open in the tab to generate a new wallet.
+You can set a unique name for the wallet so that you remember what it is for.
+Choose a very secure password, as this encrypts the secrets, and should not be guessed by others.
+You will always need this password when you want to spend your bitcoins, so take great care to back it up properly.
+In the next step, Wasabi will show your 12 recovery words, these must be carefully backed up also, as they can help you access your bitcoins when your computer breaks.
+
+See [this chapter](/using-wasabi/WalletGeneration.md) for more information on how to securely generate your wallet.
