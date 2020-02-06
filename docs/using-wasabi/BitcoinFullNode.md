@@ -25,7 +25,7 @@ With your full node you define, verify, and enforce the rules of your sound mone
 Only by running a full node, do you verify by yourself that the money you receive is actually valid bitcoin.
 You do not trust an external third party, and thus you also do not leak any sensitive financial information.
 
-There are several software implementations that function as a full node, for example [Bitcoin Core](https://bitcoincore.org/), [Bitcoin Knots](https://http://bitcoinknots.org/), or [LibBitcoin](https://libbitcoin.info/).
+There are several software implementations that function as a full node, for example [Bitcoin Core](https://bitcoincore.org/), [Bitcoin Knots](https://bitcoinknots.org/), or [LibBitcoin](https://libbitcoin.info/).
 
 ## How does Wasabi use your Bitcoin full node
 
