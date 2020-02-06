@@ -13,6 +13,9 @@ Further tutorials about the different parts of the wallet, for newbies and power
 
 ### Chapters
 
+#### Introducing Wasabi
+- [Explain Wasabi like I'm 5](/using-wasabi/ELI5.md)
+
 #### Installing Wasabi
 - [Install package](/using-wasabi/InstallPackage.md)
 - [Build from source code](/using-wasabi/BuildSource.md)
