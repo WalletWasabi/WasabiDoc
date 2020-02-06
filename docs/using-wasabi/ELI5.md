@@ -52,3 +52,11 @@ Go to the `CoinJoin` tab, select the coins you want to make private, type in you
 Now have a little patience, within a short while you should have sufficient anonymity set to protect your privacy.
 
 See [this chapter](/using-wasabi/CoinJoin.md) for a thorough analysis of CoinJoin, details on the Wasabi implementation and best practices how to use it properly.
+
+## Sending bitcoin
+
+In the Wasabi `Send` tab you can give your bitcoins to someone else, or send them to another wallet of yours.
+Select the coins which you want to spend, paste the address of the receiver, label the observers who know of this transaction, specify the amount the receiver should get and select how fast you want the transaction to confirm.
+Verify that everything is correct, then type in your password and hit the `Send` button.
+
+See [this chapter](/using-wasabi/Send.md) for more details on sending bitcoins and the privacy nuances of coin control.
