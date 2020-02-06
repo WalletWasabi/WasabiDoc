@@ -33,7 +33,7 @@ Further tutorials about the different parts of the wallet, for newbies and power
 #### Advanced
 - [Deterministic Build](/using-wasabi/DeterministicBuild.md)
 - [Wasabi Setup on Tails](/using-wasabi/WasabiSetupTails.md)
-- [Wasabi Setup on Qubes](/using-wasabi/WasabiSetupVM.md)
+- [Wasabi Setup using Virtual Machines](/using-wasabi/WasabiSetupVM.md)
 - [Cold-Wasabi Protocol](/using-wasabi/ColdWasabi.md)
 - [Headless Wasabi Daemon](/using-wasabi/Daemon.md)
 - [RPC Interface](/using-wasabi/RPC.md)
