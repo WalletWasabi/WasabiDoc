@@ -66,7 +66,7 @@ Read more: [Use of blind signatures in CoinJoin](/using-wasabi/CoinJoin.md#zerol
 ### Cluster
 
 Which entities know about which coins.
-For example, this coin belongs to a cluster that is known by Coinbase and Alice.
+For example, this coin belongs to a cluster that is known by a KYC exchange and Alice.
 Read more: [What is the cluster history?](/FAQ/FAQ-UseWasabi.md#what-is-the-cluster-history)
 :::
 
@@ -168,8 +168,14 @@ Read more: [RPC Interface](/using-wasabi/RPC.md)
 :::details
 ### Shield (or anonset shield)
 
-We often talk about check-mark, green, yellow and red shields... but what are they?
-Coins in your wallet have shields (red, yellow, green and green check-mark).
+We often talk about
+<img src="/ShieldCheckmark.png" alt="checkmark" class="shield" />,
+<img src="/ShieldGreen.png" alt="green" class="shield" />,
+<img src="/ShieldYellow.png" alt="yellow" class="shield" /> and
+<img src="/ShieldRed.png" alt="red" class="shield" />
+shields... but what are they?
+Coins in your wallet have shields.
+
 Each shield represents the [Anonymity Set](/FAQ/FAQ-UseWasabi.md#what-is-the-anonymity-set) level of a given coin.
 By the anonymity set levels are `2`, `21` and `50`, however, this can be [changed in the settings](/FAQ/FAQ-UseWasabi.md#how-can-i-change-the-anonset-target).
 

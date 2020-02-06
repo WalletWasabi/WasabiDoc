@@ -23,6 +23,7 @@ Further tutorials about the different parts of the wallet, for newbies and power
 - [CoinJoin](/using-wasabi/CoinJoin.md)
 - [Send](/using-wasabi/Send.md)
 
+
 #### Privacy Best Practices
 - [Address Reuse](/using-wasabi/AddressReuse.md)
 - [Change Coins](/using-wasabi/ChangeCoins.md)

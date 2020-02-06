@@ -204,7 +204,7 @@ The P2P node that serves you the block does not know if you are a regular Bitcoi
 You are yet another peer in the network.
 
 It is important to note that although the privacy is as good as with a full node, you do not verify that the coins are actually valid.
-In order to do this, you must run a full node and verify the entire timechain.
+In order to do this, you must run a [full node](/using-wasabi/BitcoinFullNode.md) and verify the entire blockchain.
 With the block filters, you trust that the Wasabi server gives you the correct filters, and does not withhold any of them.
 You also do not have proof that the block you download from a P2P node is actually in the valid chain, but you can verify the proof of work in the block header.
 ::::
@@ -216,7 +216,7 @@ Wasabi uses [BIP 158](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-li
 If so, then by default Wasabi connects to a random Bitcoin peer to peer full node over tor, and requests only to download this block.
 For each block, it generates a new and separate tor identity.
 
-If you are running your own node, then you can pull this block directly from the timechain that you have fully verified your self.
+If you are running [your own node](/using-wasabi/BitcoinFullNode.md), then you can pull this block directly from the blockchain that you have fully verified your self.
 If the node is on the same computer, then it is connected automatically by default.
 You can also specify the local IP or tor hidden service of your remote full node.
 :::
@@ -311,7 +311,7 @@ Labels should contain the comma-separated names of people/entities that may be a
 
 So, a good label could be:
 
-`Alice, Bitfinex, BTCPay Server`
+`Alice, <name of KYC exchange>, BTCPay Server`
 
 or:
 
@@ -616,7 +616,7 @@ The problem with this transaction, is your boss knows you, and knows that the 0.
 But when you combine (consolidate) your coins in this way, you reveal to your boss that you also have 2.1 BTC from somewhere else, and you reveal to the exchange that you have 0.65 bitcoin from somewhere else.
 
 When you CoinJoin (mix) coins with Wasabi, you actually de-link the trail from your boss/exchange, to the coins in your wallet.
-The coin will have an anonymity set > 1, and typically will have a green shield.
+The coin will have an anonymity set > 1, and typically will have a <img src="/ShieldGreen.png" alt="green" class="shield" /> shield.
 This coin can now be spent without having to worry about your boss or the exchange tracking your behavior.
 
 However, when you mix a coin, there is often change.
@@ -1196,7 +1196,7 @@ It was introduced with the 0.7 release, introduced a third genesis block, a new 
 :::details
 ### How do I connect my own full node to Wasabi?
 
-There is currently a basic implementation of connecting your full node to Wasabi.
+There is currently a basic implementation of connecting [your full node to Wasabi](/using-wasabi/BitcoinFullNode.md).
 The server will still send you [BIP 158 block filters](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients), and when you realize that a block contains a transaction of yours, then you pull this block from your own full node, instead of a random P2P node, thus you can verify that this is actually a valid block including your transaction.
 One attack vector could be that Wasabi lies to you and gives you wrong filters that exclude your transaction, thus you would see in the wallet less coins than you actually control.
 [BIP 157 solves this](/using-wasabi/BIPs.md#bip-157-client-side-block-filtering).
@@ -1219,7 +1219,11 @@ In the second case, if you happen to broadcast a transaction of yours to a full 
 :::details
 ### How can I change the anonset target?
 
-In the `Settings` tab at the bottom you can change the three `PrivacyLevelX` values of the desired anon set of the yellow, green, and checkmark shield button in the GUI.
+In the `Settings` tab at the bottom you can change the three `PrivacyLevelX` values of the desired anon set of the
+<img src="/ShieldYellow.png" alt="yellow" class="shield" />,
+<img src="/ShieldGreen.png" alt="green" class="shield" /> and
+<img src="/ShieldCheckmark.png" alt="checkmark" class="shield" />
+shield button in the GUI.
 The `MixUntilAnonymitySet` is the last selected value from previous use.
 
 Alternatively, open the config file from the wallet GUI, go to `File`>`Open`>`Config File` and in the last 4 lines you see:
@@ -1316,7 +1320,8 @@ Alternatively, you can use your hardware wallet with Electrum, which connects to
 
 There are no hard and fast rules for what to do with the change.
 Generally try to avoid the change and use the `Max` button extensively to send whole coins.
-The most problematic type of change is what has `anonymity set 1` [red shield] You should treat it as a kind of toxic waste [handled with great care].
+The most problematic type of change is what has `anonymity set 1` <img src="/ShieldRed.png" alt="red" class="shield" />.
+You should treat it as a kind of toxic waste [handled with great care].
 You can spend the change to the same entity as the initial transaction, without loosing any privacy.
 Only spend the change to another entity, if these two won't make you trouble knowing you interact with both of them.
 If needed, you can consolidate several change coins, but we advise you to do it in a CoinJoin.

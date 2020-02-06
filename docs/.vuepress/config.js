@@ -181,22 +181,22 @@ module.exports = {
             "/using-wasabi/DeterministicBuild.md",
             "/using-wasabi/WasabiSetupTails.md",
             "/using-wasabi/WasabiSetupVM.md",
-	    "/using-wasabi/ColdWasabi.md",
+            "/using-wasabi/ColdWasabi.md",
             "/using-wasabi/Daemon.md",
             "/using-wasabi/RPC.md",
             "/using-wasabi/LurkingWifeMode.md",
             "/using-wasabi/BIPs.md"
          ]
         },
-    {
-	  title: "Restoring Wasabi",
-	  collapsable: false,
-	  sidebarDepth: 2,
-	  children: [
-	    "/using-wasabi/WalletRecovery.md",
-	    "/using-wasabi/RestoreElectrum.md",
-	    "/using-wasabi/LostPassword.md",
-	    "/using-wasabi/PasswordFinder.md"
+    {          
+          title: "Restoring Wasabi",
+          collapsable: false,
+          sidebarDepth: 2,
+          children: [
+            "/using-wasabi/WalletRecovery.md",
+            "/using-wasabi/RestoreElectrum.md",
+            "/using-wasabi/LostPassword.md",
+            "/using-wasabi/PasswordFinder.md"
 	  ]
 	},
      {
@@ -205,7 +205,7 @@ module.exports = {
           sidebarDepth: 2,
           children: [
             "/using-wasabi/Joinmarket.md",
-	    "/using-wasabi/PayToEndPoint.md"
+            "/using-wasabi/PayToEndPoint.md"
          ]
         }
       ],
