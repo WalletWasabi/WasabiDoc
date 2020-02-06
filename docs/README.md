@@ -24,7 +24,7 @@ If you have an answer to a question, please [open a pull request](https://github
 
 This documentation is a good place to start your education on how to use Wasabi Wallet, as it is a thorough archive about many nuances of Bitcoin privacy.
 
-### Explain it like I'm 5
+### Explain Like I'm 5
 
 If you are new to Wasabi and want to get a quick tutorial on how to use it, you may [start here](/using-wasabi/ELI5.md).
 
@@ -34,4 +34,4 @@ If you are interested in the nuances of how one specific aspect of Wasabi works,
 
 ### Search function
 
-If you have a question about some particular detail, then use the search function at the top right corner to brows the entire archive, including the [frequently asked questions](/faq/).
+If you have a question about some particular detail, then use the search function at the top right corner to browse the entire archive, including the [frequently asked questions](/faq/).
