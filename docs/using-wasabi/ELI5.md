@@ -18,7 +18,7 @@ Although Wasabi has some very advanced magic under the hood, it is rather easy t
 You can generate a new set of private keys, or import already existing ones.
 With Wasabi you can receive bitcoins into your full control, and you can send them to someone else without needing permission from any other person or entity.
 There is also a powerful CoinJoin feature to help obfuscate your transaction history.
-You can also use Wasabi to manage your hardware wallet, and it even connects to your own full node.
+You can use Wasabi to manage your hardware wallet, and it even connects to your own full node.
 Of course, Wasabi is libre and open source, which means you have full control over the software you manage your money with.
 
 ## Installing Wasabi
@@ -35,14 +35,13 @@ When you start Wasabi for the first time, the tab to generate a new wallet will 
 You can set a unique name for the wallet so that you remember what it is for.
 Choose a very secure password, as this encrypts the secrets, and should not be guessed by others.
 You will always need this password in order to spend your bitcoins, so take great care to back it up properly.
-
-:::warning
-If you ever need to restore this wallet on Wasabi, or any other wallet, you will need both: this password AND your 12 recovery words.
-:::
-
 In the next step, Wasabi will show your 12 recovery words.
 These must be carefully backed up also, as they will be needed to access your bitcoins when your computer breaks.
 Make sure you store the backup of your recovery words in a different location than the backup of your password.
+
+:::warning
+If you ever need to restore your wallet in Wasabi, or any other wallet, you will need both: your password AND your 12 recovery words.
+:::
 
 See [this chapter](/using-wasabi/WalletGeneration.md) for more information on how to securely generate your wallet.
 
@@ -59,7 +58,11 @@ See [this chapter](/using-wasabi/Receive.md) for a tutorial on how to properly l
 
 If you don't like that your employer knows about where you spend your money, or that a merchant can find out how much money you have, then you should CoinJoin your bitcoin, as this breaks the transaction history.
 Although the CoinJoin protocol is a bit complex, it is very easy to use in Wasabi.
-Go to the `CoinJoin` tab, select the coins you want to make private, type in your password and click enqueue.
+1. Go to the `CoinJoin` tab.
+2. Select the coins you want to make private.
+3. Type in your password.
+4. Click enqueue.
+
 Now have a little patience, within a short while you should have a sufficient anonymity set to protect your privacy.
 
 See [this chapter](/using-wasabi/CoinJoin.md) for a thorough analysis of CoinJoin, details on the Wasabi implementation and best practices how to use it properly.
@@ -68,12 +71,13 @@ See [this chapter](/using-wasabi/CoinJoin.md) for a thorough analysis of CoinJoi
 
 In the Wasabi `Send` tab you can give your bitcoins to someone else, or send them to another wallet of yours.
 You'll have to:
-* Select the coins which you want to spend.
-* Insert the address of the receiver.
-* Label the observers who know of this transaction.
-* Specify the amount the receiver should get.
-* Set the fee to select how fast you want the transaction to confirm.
-
-Verify that everything is correct, then type in your password and hit the `Send` button.
+1. Select the coins which you want to spend.
+2. Insert the address of the receiver.
+3. Label the observers who know of this transaction.
+4. Specify the amount the receiver should get.
+5. Set the fee to select how fast you want the transaction to confirm.
+6. Verify that everything is correct.
+7. Type in your password.
+8. Hit the `Send` button.
 
 See [this chapter](/using-wasabi/Send.md) for more details on sending bitcoins and the privacy nuances of coin control.
