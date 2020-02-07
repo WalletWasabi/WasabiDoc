@@ -28,79 +28,19 @@ If you have personally verified zkSNACKs' PGP public key [${zksnacksPublicKeyFin
 
 @[youtube](D8U53PFEsVk)
 
-If you have already imported zkSNACKs' PGP public key, then jump to step 7.
-
-1. [Download](https://www.gnupg.org/download/index.html) and install Gpg4win
-
-![](/InstallWindowsGpgp4winSetup.png)
-
-2. [Download](https://wasabiwallet.io/#download) the latest Wasabi release, both the `.msi` installer and the corresponding `.msi.asc` signature file.
+1. [Download](https://wasabiwallet.io/#download) the `.msi` installer of the latest Wasabi release.
 
 ![](/DownloadWindows.png)
 
-3. Double click on `.msi.asc` file or right click `More GpgEX options / Verify`.
+2. Install Wasabi by double clicking the `.msi` and following the GUI instructions.
 
-![](/InstallWindowsGUIVerify.png)
-
-4. You see that this is signed by the fingerprint `${zksnacksPublicKeyFingerprint}`, press `Search` to look for the entire PGP public key.
-
-![](/InstallWindowsKleopatraSearchPGP.png)
-
-5. `Import` zkSNACKs' PGP public key [zksnacks@gmail.com]. Who are they? The company behind Wasabi [zkSNACKs Ltd.](https://zksnacks.com/)
-
-![](/InstallWindowsKleopatraImportPGP.png)
-
-6. Confirm to import zkSNACKs' PGP public key by clicking `Yes`.
-[Next time you can skip previous steps because the PGP public key is already imported.]
-
-![](/InstallWindowsKleopatraPGPConfirm.png)
-
-7. Select all and verify the fingerprint: `${zksnacksPublicKeyFingerprint}`
-
-![](/InstallWindowsKleopatraVerifyFingerprint.png)
-
-8. Press `Next`, `Next`, `Next`, until you have successfully validated that the package was signed properly.
-
-![](/InstallWindowsKleopatraValidSig.png)
-
-:::tip
-The output from the verify command may contain `WARNING: This key is not certified with a trusted signature!`.
-You can ignore this, but if you want to fully verify your download, you need to ask people you trust to confirm that the key fingerprint belongs to zkSNACKs.
-:::
-
-9. You can install Wasabi by double clicking the `.msi` and following the GUI instructions.
+3. Make sure that you see this window that verifies the installer was signed by zkSNACKs ltd.
+Manual PGP verification is optional, as the package is signed and verified automatically on Windows.
 
 Wasabi will be installed to your `C:\Program Files\WasabiWallet\` folder.
 You will also have an icon in your Start Menu and on your Desktop. 
 After the first run, a [data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) will be created. 
 Among others, here is where your wallet files and your logs reside.
-
-### Manual PGP public key import
-
-If you get an error upon the import of zkSNACKs' PGP public key, then you can manually import it.
-
-1. Copy zkSNACKs' PGP public key from [here](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt).
-
-2. Create a TXT file `PGP.txt`.
-
-![](/InstallWindowsImportPGPManualNewFile.png)
-
-3. Open it and right click and paste.
-
-![](/InstallWindowsImportPGPManualText.png)
-
-4. Save the file and close.
-
-5. Right click on `PGP.txt`.
-In the context menu navigate to `More GpgEx options/Import keys`.
-
-![](/InstallWindowsImportPGPManualImport.png)
-
-6. Kleopatra pops up and zkSNACKs' PGP public key is imported.
-Press `OK` and close Kleopatra.
-
-![](/InstallWindowsImportPGPManualKleopatra.png)
-
 
 ## Debian and Ubuntu
 
