@@ -295,6 +295,34 @@ When you import the wallet file into a new Wasabi client, then it will use this 
 :::
 
 :::details
+### How do I change the gap limit of a wallet?
+
+You can set the gap limit of an already existing Wasabi wallet by editing the wallets settings file.
+Access the settings file via the `File->Open->Wallets Folder` menu.
+
+Close Wasabi and edit the `MinGapLimit` setting (which is `21` by default).
+The value depends on the settings of other tools that use the wallet too (e.g. use `100` for [BTCPay Server](https://docs.btcpayserver.org/faq-and-common-issues/faq-wallet#missing-payments-in-my-software-or-hardware-wallet)).
+
+You might also need to reset the height of your wallet, so that it gets reindexed.
+This can be done by setting the `BlockchainState->Height` to `0`:
+
+```json
+{ // only relevant parts are shown
+  "MinGapLimit": 100,
+  "BlockchainState": {
+    "Network": "Main",
+    "Height": "0"
+  }
+}
+```
+
+Start Wasabi again, open the wallet and wait for the synchronization.
+You should see all your transactions and the correct balance.
+
+If you are recovering a wallet with the 12 recovery words, then in the advanced section you can increase the gap limit from a default of 100.
+:::
+
+:::details
 ### Why do I have to label my address?
 
 Bitcoin addresses look like cyphertext, they are not easily remembered and it's not clear how they were used previously.
