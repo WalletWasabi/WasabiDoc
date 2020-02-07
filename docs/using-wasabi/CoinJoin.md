@@ -28,8 +28,8 @@ Then click on the `CoinJoin` tab, either from the top tabs or the right-side men
 2. Select coins for joining by clicking the check box in the coin list.
 You can select one or more coins, but when several are selected, they can be linked and clustered by an attacker.
 So, choose carefully which coins you want others to know belong to the same entity (you).
-You can select red shield coins, which are not private yet, but will gain anonymity set in this round of CoinJoin.
-Also, you can select green shield coins, which come from a previous round of CoinJoin, so that they gain an even larger anonymity set.
+You can select <img src="/ShieldRed.png" alt="red shield" class="shield" /> coins, which are not private yet, but will gain anonymity set in this round of CoinJoin.
+Also, you can select <img src="/ShieldGreen.png" alt="green shield" class="shield" /> coins, which come from a previous round of CoinJoin, so that they gain an even larger anonymity set.
 What is important is that the sum of coins registered have a value larger than the minimum level, which is currently roughly 0.1 bitcoin.
 
 :::danger

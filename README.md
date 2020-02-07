@@ -90,6 +90,17 @@ They can be embedded via the following markdown tags:
 ![](/IMAGENAME.png)
 ```
 
+### Embedding shields
+
+To insert the shield images inline with the text, use these HTML tags:
+
+```html
+<img src="/ShieldCheckmark.png" alt="checkmark" class="shield" />
+<img src="/ShieldGreen.png" alt="green" class="shield" />
+<img src="/ShieldYellow.png" alt="yellow" class="shield" />
+<img src="/ShieldRed.png" alt="red" class="shield" />
+```
+
 ### Embedding videos
 
 Youtube videos and playlists can be embedded via the following custom markdown tags:

@@ -16,7 +16,7 @@
 
 Let's assume you want to send 0.5 bitcoin to Alice.
 In the `Send` tab you select one or more UTXO, these are the inputs of the transaction.
-For example, let's assume that you choose a red-shield / anonymity set 1 UTXO worth 2 bitcoins.
+For example, let's assume that you choose a <img src="/ShieldRed.png" alt="red shield" class="shield" /> / anonymity set 1 UTXO worth 2 bitcoins.
 You put Alice's address in the `Receiving Address` field, and set the spending `Amount`.
 In this example, we are sending 0.5 bitcoin.
 This will be one output of the transaction.
@@ -31,27 +31,27 @@ This process is applicable to any Bitcoin transaction where the `sent` amount is
 
 ### First round CoinJoin change
 
-Let's say that you have a KYC red-shield `anonymity set 1` UTXO, and you register it for a CoinJoin round.
+Let's say that you have a KYC <img src="/ShieldRed.png" alt="red-shield" class="shield" /> `anonymity set 1` UTXO, and you register it for a CoinJoin round.
 Afterwards, depending on the value of your UTXO in relation to the minimum CoinJoin amount and on the value of UTXOs of the other participants, you will receive two or more UTXOs.
-One of those will be the change left over from the round, and it will retain the red-shield `anonymity set 1` designation.
-The remaining UTXO(s) will have either a yellow, a green, or a check-marked shield. 
+One of those will be the change left over from the round, and it will retain the <img src="/ShieldRed.png" alt="red-shield" class="shield" /> `anonymity set 1` designation.
+The remaining UTXO(s) will have either a <img src="/ShieldYellow.png" alt="yellow" class="shield" />, <img src="/ShieldGreen.png" alt="green" class="shield" /> or <img src="/ShieldCheckmark.png" alt="checkmark" class="shield" /> shield.
 You can see the `anonymity set` size for any UTXO by hovering your mouse-pointer over its associated shield.
-The number represented by 'x' shown in the green-shield will reflect the anonymity set size for that round.
+The number represented by 'x' shown in the <img src="/ShieldGreen.png" alt="green-shield" class="shield" /> will reflect the anonymity set size for that round.
 
 In this example, let's assume that the current minimum amount that can be registered for a CoinJoin round is 0.1 bitcoin.
 You happen to have a UTXO worth 0.105 bitcoin, and you select it to be coinjoined.
 
 After this CoinJoin round has concluded, you will receive 2 separate UTXOs.
-The larger UTXO will have a colored shield (yellow, green, or check-marked based on your [Privacy Level Settings](/FAQ/FAQ-UseWasabi.md#how-can-i-change-the-anonset-target)) that indicates the size of the anonymity set achieved in that CoinJoin round.
-The other, much smaller UTXO will be the amount (change) that was left over, and it will have a red-shield indicating an anonymity set of `1` as it does not have the equal value denomination of the CoinJoin.
+The larger UTXO will have a colored shield (<img src="/ShieldYellow.png" alt="yellow" class="shield" />, <img src="/ShieldGreen.png" alt="green" class="shield" /> or <img src="/ShieldCheckmark.png" alt="checkmark" class="shield" /> based on your [Privacy Level Settings](/FAQ/FAQ-UseWasabi.md#how-can-i-change-the-anonset-target)) that indicates the size of the anonymity set achieved in that CoinJoin round.
+The other, much smaller UTXO will be the amount (change) that was left over, and it will have a <img src="/ShieldRed.png" alt="red-shield" class="shield" /> indicating an anonymity set of `1` as it does not have the equal value denomination of the CoinJoin.
 
-Remember, to have green-shield UTXOs, all denomination outputs of a CoinJoin round must be equal.
+Remember, to have <img src="/ShieldGreen.png" alt="green-shield" class="shield" /> UTXOs, all denomination outputs of a CoinJoin round must be equal.
 Otherwise, it would be easy to trace any of the output UTXOs back to its original input UTXO.
 So, in the vast majority of CoinJoin rounds, there will be at least a small amount of leftover/change after the round has completed.
 
-The small UTXO that is leftover/change from a CoinJoin round is clearly tied to your KYC input UTXO, but the green-shield UTXO is not.
-If afterwards, you combine the red-shield UTXO with a green-shield UTXO in a single transaction, then it is clear that both came from the same owner.
-Since your identity was already known in the red-shield/anonset 1 UTXO, it can now be linked to your coinjoined UTXO.
+The small UTXO that is leftover/change from a CoinJoin round is clearly tied to your KYC input UTXO, but the <img src="/ShieldGreen.png" alt="green-shield" class="shield" /> UTXO is not.
+If afterwards, you combine the <img src="/ShieldRed.png" alt="red-shield" class="shield" /> UTXO with a <img src="/ShieldGreen.png" alt="green-shield" class="shield" /> UTXO in a single transaction, then it is clear that both came from the same owner.
+Since your identity was already known in the <img src="/ShieldRed.png" alt="red-shield" class="shield" /> `anonymity set 1`, it can now be linked to your coinjoined UTXO.
 
 Whenever you combine and send more than one UTXO in a single transaction, the lowest anonymity set among the inputs becomes the overriding anonymity set for all of the UTXOs used in that transaction.
 
@@ -129,13 +129,13 @@ Further, during the [input registration phase](/FAQ/FAQ-UseWasabi.md#what-is-hap
 Thus the coordinator knows that you control all these coins, and although zkSNACKs claims to not keep any logs, it is a reasonable assumption that everyone knows what the coordinator knows.
 
 :::tip
-Remember that a Wasabi CoinJoin gives you back an anonymous coin (yellow, green or check-marked, based on your [Privacy Level Settings](/FAQ/FAQ-UseWasabi.md#how-can-i-change-the-anonset-target)) and a non-anonymous (red) change coin.
+Remember that a Wasabi CoinJoin gives you back an anonymous coin (<img src="/ShieldYellow.png" alt="yellow" class="shield" /> <img src="/ShieldGreen.png" alt="green" class="shield" /> <img src="/ShieldCheckmark.png" alt="checkmark" class="shield" />), based on your [Privacy Level Settings](/FAQ/FAQ-UseWasabi.md#how-can-i-change-the-anonset-target)) and a non-anonymous (<img src="/ShieldRed.png" alt="red" class="shield" />) change coin.
 The resulting non-anonymous change coin could be linked to the inputs (which are, in this specific case, derived from multiple change outputs of previous CoinJoins).
 Once a Wasabi CoinJoin is made, it is no longer possible to connect the inputs to the equal value outputs; even if the inputs are in turn consolidated change outputs.
 :::
 
 In this CoinJoin you get an equal value mixed coin, which is no longer tied to any of your previous change coins (inputs), and a change output that can be tied to these inputs.
-So consolidating your change in a CoinJoin is strictly more private and efficient than consolidating in a regular sending transaction, but it is always possible to follow the path of (red) non-anonymous change outputs, while the anonymous (yellow, green or check-marked) equal denominated mixed outputs are in no way connected to the previous inputs.
+So consolidating your change in a CoinJoin is strictly more private and efficient than consolidating in a regular sending transaction, but it is always possible to follow the path of (<img src="/ShieldRed.png" alt="red" class="shield" />) non-anonymous change outputs, while the anonymous (<img src="/ShieldYellow.png" alt="yellow" class="shield" /> <img src="/ShieldGreen.png" alt="green" class="shield" /> <img src="/ShieldCheckmark.png" alt="checkmark" class="shield" />) equal denominated mixed outputs are in no way connected to the previous inputs.
 
 ### Spend the change to the same entity as in the initial transaction, but always use a new address.
 So, if in the first transaction you have 0.10 bitcoin and send Alice 0.04 bitcoin, you get 0.06 bitcoin back as change in a new address, which Alice can see belongs to you.

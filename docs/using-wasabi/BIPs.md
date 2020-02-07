@@ -166,16 +166,16 @@ The resulting protocol guarantees that light clients with at least one honest pe
 [BIP 325](https://github.com/bitcoin/bips/blob/master/bip-0325.mediawiki) is a new model for a testing network of Bitcoin that is based on block signing, not block mining.
 
 :::details
-### BIP Schnorr
+### BIP 340: Schnorr Signatures for secp256k1
 
-[BIP Schnorr](https://github.com/sipa/bips/blob/bip-schnorr/bip-schnorr.mediawiki) is a digital signature scheme which has many benefits over the status-quo ECDSA.
+[BIP 340 Schnorr Signatures for secp256k1](https://github.com/sipa/bips/blob/bip-schnorr/bip-schnorr.mediawiki) is a digital signature scheme which has many benefits over the status-quo ECDSA.
 One advantage is that any N-of-N and M-of-N multisignature can be easily made to look like a single-sig when included on the blockchain.
 :::
 
 :::details
-### BIP Taproot
+### BIP 341: Taproot: SegWit version 1 output spending rules
 
-[BIP Taproot](https://github.com/sipa/bips/blob/bip-schnorr/bip-taproot.mediawiki) is a way to combine [Schnorr signatures](BIPs.md#bip-schnorr) with [MAST](https://bitcoinmagazine.com/articles/the-next-step-to-improve-bitcoin-s-flexibility-scalability-and-privacy-is-called-mast-1476388597/).
+[BIP 341 Taproot: SegWit version 1 output spending rules](https://github.com/sipa/bips/blob/bip-schnorr/bip-taproot.mediawiki) is a way to combine [Schnorr signatures](BIPs.md#bip-schnorr) with [MAST](https://bitcoinmagazine.com/articles/the-next-step-to-improve-bitcoin-s-flexibility-scalability-and-privacy-is-called-mast-1476388597/).
 The Schnorr signature can be used to spend the coin, but also a MAST tree can be revealed only when the user wants to use it.
 The schnorr signature can be any N-of-N or use any scriptless script contract.
 The consequence of taproot is a much larger anonymity set for interesting smart contracts, as any contract such as Lightning Network, CoinSwap, multisignature, etc would appear indistinguishable from regular single-signature on-chain transaction.
@@ -185,9 +185,9 @@ Other branches would only be used where some participant is failing to cooperate
 :::
 
 :::details
-### BIP Tapscript
+### BIP 342: Validation of Taproot Scripts
 
-[BIP Tapscript](https://github.com/sipa/bips/blob/bip-schnorr/bip-tapscript.mediawiki) defines a slight variation on Bitcoin’s existing Script language to be used in [BIP Taproot](BIPs.md#bip-taproot) merkle spends.
+[BIP Validation of Taproot Scripts](https://github.com/sipa/bips/blob/bip-schnorr/bip-tapscript.mediawiki) defines a slight variation on Bitcoin’s existing Script language to be used in [BIP Taproot](BIPs.md#bip-taproot) merkle spends.
 :::
 
 
