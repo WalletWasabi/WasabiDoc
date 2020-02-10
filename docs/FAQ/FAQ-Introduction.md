@@ -9,18 +9,6 @@
 
 ## The Basics
 
-:::details
-### Explain Wasabi like I'm 5
-
-Wasabi is a software wallet to manage your Bitcoin private keys.
-It is tailor made to protect your privacy on every step.
-You can easily send and receive bitcoin without the permission of anyone.
-With a special tool called a CoinJoin you can make sure nobody finds out how you spend your money.
-Although Wasabi has some very advanced magic under the hood, it is rather easy to use.
-You can also use Wasabi to manage your hardware wallet, and it even connects to your own full node.
-Of course, Wasabi is libre and open source, which means you have full control over the software you manage your money with.
-:::
-
 ::::details
 ### Who can use Wasabi?
 

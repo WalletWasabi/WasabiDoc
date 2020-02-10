@@ -142,7 +142,15 @@ module.exports = {
       ],
 
       "/using-wasabi/": [
-        {
+	{
+	  title: "Introducing Wasabi",
+	  collapsable: false,
+	  sidebarDepth: 2,
+	  children: [
+	    "/using-wasabi/ELI5.md"
+	  ]
+       },
+   {
           title: "Installing Wasabi",
           collapsable: false,
           sidebarDepth: 2,

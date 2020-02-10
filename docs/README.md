@@ -3,7 +3,7 @@ home: true
 heroText: Wasabi Documentation
 heroImage: /Logo_without_text.png
 actionText: Reclaim Your Privacy →
-actionLink: /why-wasabi/WhyPrivacyImportant.md
+actionLink: /using-wasabi/ELI5.md
 features:
 - title: Open-source
   details: Don't trust, verify. Wasabi is libre and open source software under the MIT license. You have full access to every single line of code, and you can do with it as you please.
