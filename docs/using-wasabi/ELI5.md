@@ -23,7 +23,7 @@ Of course, Wasabi is libre and open-source, which means you have full control ov
 
 ## Installing Wasabi
 
-Installing Wasabi is super easy.
+Installing Wasabi is super-easy.
 Go to the official website [wasabiwallet.io](https://wasabiwallet.io), scroll down and download the version for your operating system.
 You can then install Wasabi as you would do any other software on your computer.
 
