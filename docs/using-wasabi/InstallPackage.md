@@ -37,6 +37,8 @@ If you have personally verified zkSNACKs' PGP public key [${zksnacksPublicKeyFin
 3. Make sure that you see this window that verifies the installer was signed by zkSNACKs ltd.
 Manual PGP verification is optional, as the package is signed and verified automatically on Windows.
 
+![](/InstallWindowsSignature.png)
+
 Wasabi will be installed to your `C:\Program Files\WasabiWallet\` folder.
 You will also have an icon in your Start Menu and on your Desktop. 
 After the first run, a [data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) will be created. 
