@@ -19,7 +19,7 @@ You can generate a new set of private keys, or import already existing ones.
 With Wasabi you can receive bitcoins into your full control, and you can send them to someone else without needing permission from any other person or entity.
 There is also a powerful CoinJoin feature to help obfuscate your transaction history.
 You can use Wasabi to manage your hardware wallet, and it even connects to your own full node.
-Of course, Wasabi is libre and open source, which means you have full control over the software you manage your money with.
+Of course, Wasabi is libre and open-source, which means you have full control over the software you manage your money with.
 
 ## Installing Wasabi
 
