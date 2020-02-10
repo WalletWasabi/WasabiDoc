@@ -34,7 +34,7 @@ If you have personally verified zkSNACKs' PGP public key [${zksnacksPublicKeyFin
 
 2. Install Wasabi by double clicking the `.msi` and following the GUI instructions.
 
-3. Make sure that you see this window that verifies the installer was signed by zkSNACKs ltd.
+3. Make sure that you see this window that verifies the installer was signed by zkSNACKs Limited.
 Manual PGP verification is optional, as the package is signed and verified automatically on Windows.
 
 ![](/InstallWindowsSignature.png)
