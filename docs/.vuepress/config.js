@@ -189,6 +189,7 @@ module.exports = {
             "/using-wasabi/DeterministicBuild.md",
             "/using-wasabi/WasabiSetupTails.md",
             "/using-wasabi/WasabiSetupVM.md",
+            "/using-wasabi/WasabiSetupWhonix.md",
             "/using-wasabi/ColdWasabi.md",
             "/using-wasabi/Daemon.md",
             "/using-wasabi/RPC.md",
