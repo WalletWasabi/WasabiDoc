@@ -126,3 +126,15 @@ __NOTE__: From here on, the "original" Workstation VM that was cloned, will be r
 If it is desired to use Whonix for purposes other than Wasabi, a new clone of the template VM should always created for that purpose, rather than simply using the template VM.
 This keeps the template VM clean and free of any possible malware.
 :::
+
+## Installing Wasabi on Qubes or VirtualBox
+
+### Installing The Latest Release
+
+To install and run the latest official Wasabi release on a Whonix VM, follow the detailed instructions found [here](using-wasabi/InstallPackage.md). When the browser loads that link, click on the "Debian and Ubuntu" link under the "install package" heading, and follow that set of resulting instructions.
+
+When finished, to start the Wasabi Wallet open a terminal window and enter:
+
+```sh
+[user@your-whonix-vm ~]$ wassabee
+```
