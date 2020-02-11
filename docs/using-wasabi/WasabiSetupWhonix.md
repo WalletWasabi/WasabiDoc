@@ -17,20 +17,20 @@ Whonix is a free and open-source desktop operating system (OS) that is specifica
 Based on Tor, Debian GNU/Linux and the principle of security by isolation, Whonix realistically addresses common attack vectors while maintaining usability.
 Online anonymity and censorship circumvention is attainable via fail-safe, automatic and desktop-wide use of the Tor network, meaning all connections are forced through Tor or blocked.
 
-The Whonix OS consists of two VMs: the Whonix Gateway and the Whonix Workstation.
+The Whonix OS consists of two virtual machines (VMs): the Whonix Gateway and the Whonix Workstation.
 The former runs Tor processes and acts as a proxy, while the latter runs user applications on a completely isolated network.
 
 ## Getting and Using Whonix
 
 To use Whonix, it is necessary to install either VirtualBox or Qubes.
 [Qubes](https://www.qubes-os.org/doc/) is a free-standing VM-based OS, designed for the best possible security.
-Whonix can added to Qubes as an option during the installation process.
+Whonix can be added to Qubes as an option during the installation process.
 
 [VirtualBox](https://www.virtualbox.org/wiki/End-user_documentation) is a lightweight VM manager
 that can be installed on Windows, Linux, or MacOS.
 Whonix is added to VirtualBox by downloading and importing the Whonix installation .ova file.
 
-Depending upon which of these two options chosen, there is detailed information available
+Depending upon which of these two options is chosen, there is detailed information available
 on the use of Whonix in Qubes [here](https://www.whonix.org/wiki/Qubes/Install), and the required downloads and information for using Whonix in VirtualBox [here](https://www.whonix.org/wiki/VirtualBox/XFCE).
 
 :::warning Caution
@@ -49,7 +49,7 @@ To change the password:
 ## Creating A Wasabi-Only VM
 
 A Wasabi-Only Whonix VM requires a very small amount of disk space.
-This allows the luxury and security option of being able to dedicate a Whonix Workstation VM for the exclusive purpose of safely holding the Wasabi Wallet.
+This allows the luxury and security option of being able to create and dedicate a Whonix Workstation VM for the exclusive purpose of safely holding the Wasabi Wallet.
 
 To avoid the risk of the wallet VM being compromised by malicious software or websites, do not install any applications in this VM other than those required by the Wasabi Wallet, or direct the Tor browser to any URL that is not necessary to install Wasabi.
 
@@ -60,7 +60,7 @@ As this is beyond the scope of this tutorial, consult the Qubes or VirtualBox us
 
 ### Qubes Users
 
-Start Qubes and update all templates using the "Qubes Update Tool", which can be found in the System Tools menu.
+Start Qubes and update all templates using the "Qubes Update Tool", which can be found in the "System Tools" menu.
 
 In Qubes, the first step is to create a copy of the Whonix Workstation VM template, into which the Wasabi Wallet will be installed.
 
@@ -78,7 +78,7 @@ To create a Whonix Workstation AppVM:
 These steps will create a lightweight copy of the Whonix Workstation VM template.
 All of the vital system files remain on the template in read-only mode and therefore cannot be altered by malware.
 
-The new VM will be used to install and run the Wasabi Wallet files, and it will interact with the system files on the template VM to run seamlessly.
+The newly created VM will be used to install and run the Wasabi Wallet files, and it will interact with the system files on the template VM to run seamlessly.
 
 When the new AppVM is started, Qubes will automatically use a Whonix Gateway VM to connect to the Tor network, and will feed that connection to the AppVM through the "sys-whonix" connection that was chosen for the VM network.
 
@@ -86,7 +86,7 @@ Now is the time to change the user password, as described earlier in the yellow 
 
 ### VirtualBox Users
 
-After importing the Whonix installation .ova file into VirtualBox, find and click the Whonix Gateway and Whonix Workstation "Start" buttons on the VirtualBox Manager.
+After importing the Whonix installation .ova file into VirtualBox, find and click the Whonix Gateway and the Whonix Workstation "Start" buttons on the VirtualBox Manager.
 
 It will take a minute or two for the Tor network to become operational.
 
@@ -141,7 +141,7 @@ When finished, to start the Wasabi Wallet open a terminal window and enter:
 
 ### Installing from Source Code
 
-If it is desired to see and/or test the very latest Wasabi Wallet development features (using testnet), that may also be done in the Wasabi VM.
+If it is desired to see and/or test the very latest Wasabi Wallet development features (using testnet is recommended), that may also be done in the Wasabi VM.
 The process for installing Wasabi from source code is the same for either Qubes or VirtualBox.
 
 First, it is necessary to install the required dependencies for compiling and running Wasabi from source.
@@ -183,3 +183,26 @@ Run the following commands:
 [user@your-whonix-vm ~]$ dotnet build
 [user@your-whonix-vm ~]$ dotnet run
 ```
+
+Add the development branches to git.
+
+```sh
+[user@source-wasabi ~]$ git remote add nopara73 https://github.com/nopara73/WalletWasabi
+[user@source-wasabi ~]$ git fetch nopara73
+[user@source-wasabi ~]$ git checkout <development branch>
+```
+
+Pull the latest commits and compile from source.
+
+```sh
+[user@source-wasabi ~]$ git pull
+[user@source-wasabi ~]$ dotnet run
+```
+
+This concludes the tutorial on installing and running Wasabi Wallet in Whonix.
+
+The instructions provided an isolated, completely Tor-ified environment in which a user may:
+
+- Run the currently released Wasabi Wallet as their primary wallet.
+- Check out and test a development branch or pull request.
+- Create additional VM's for specific testing and development purposes, if desired.
