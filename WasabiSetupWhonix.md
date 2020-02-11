@@ -138,3 +138,48 @@ When finished, to start the Wasabi Wallet open a terminal window and enter:
 ```sh
 [user@your-whonix-vm ~]$ wassabee
 ```
+
+### Installing from Source Code
+
+If it is desired to see and/or test the very latest Wasabi Wallet development features (using testnet), that may also be done in the Wasabi VM.
+The process for installing Wasabi from source code is the same for either Qubes or VirtualBox.
+
+First, it is necessary to install the required dependencies for compiling and running Wasabi from source.
+This will be done in the "template" Workstation VM.
+
+Start the template VM and open a terminal window.
+Then, make sure that the VM is updated.
+
+```sh
+[user@whonix-template ~]$ sudo apt update
+[user@whonix-template ~]$ sudo apt upgrade
+[user@whonix-template ~]$ sudo apt dist-upgrade
+```
+
+Install [.NET Core ${dotnetVersion} SDK](https://www.microsoft.com/net/download) for "Building Apps" in the `whonix-template`.
+
+:::tip Optional for privacy
+To disable .NET's telemetry, which sends some usage information to Microsoft:
+
+```sh
+[user@whonix-template ~]$ export DOTNET_CLI_TELEMETRY_OPTOUT=1
+```
+
+:::
+
+In the future, when it is necessary to update .NET Core, then do it in this VM.
+
+Now, shut down this VM.
+
+Start the Wasabi-Whonix Workstation VM
+
+Run the following commands:
+
+```sh
+[user@your-whonix-vm ~]$ sudo apt update
+[user@your-whonix-vm ~]$ sudo apt install git
+[user@your-whonix-vm ~]$ git clone https://github.com/zksnacks/walletwasabi.git
+[user@your-whonix-vm ~]$ cd walletwasabi/WalletWasabi.Gui
+[user@your-whonix-vm ~]$ dotnet build
+[user@your-whonix-vm ~]$ dotnet run
+```
