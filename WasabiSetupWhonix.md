@@ -45,3 +45,15 @@ To change the password:
 - Type: "passwd" (without the quotes) and hit 'Enter'.
 - Follow the ensuing directions on the screen.
 :::
+
+## Creating A Wasabi-Only VM
+
+A Wasabi-Only Whonix VM requires a very small amount of disk space.
+This allows the luxury and security option of being able to dedicate a Whonix Workstation VM for the exclusive purpose of safely holding the Wasabi Wallet.
+
+To avoid the risk of the wallet VM being compromised by malicious software or websites, do not install any applications in this VM other than those required by the Wasabi Wallet, or direct the Tor browser to any URL that is not necessary to install Wasabi.
+
+For an advanced layer of security, it is possible to install and run the Wasabi Wallet VM using a removable storage medium e.g., USB drive or SD card.
+This allows the storage your wallet in a safe place away from the computer.
+
+As this is beyond the scope of this tutorial, consult the Qubes or VirtualBox user guide for details.
