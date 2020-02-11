@@ -57,3 +57,29 @@ For an advanced layer of security, it is possible to install and run the Wasabi 
 This allows the storage your wallet in a safe place away from the computer.
 
 As this is beyond the scope of this tutorial, consult the Qubes or VirtualBox user guide for details.
+
+### Qubes Users
+
+Start Qubes and update all templates using the "Qubes Update Tool", which can be found in the System Tools menu.
+
+In Qubes, the first step is to create a copy of the Whonix Workstation VM template, into which the Wasabi Wallet will be installed.
+
+Qubes refers to this type of VM as a "AppVM".
+
+To create a Whonix Workstation AppVM:
+
+1. Click on the blue "Q" icon on the top/left panel.
+2. On the resulting pull-down menu, select "Create Qubes VM".
+3. In the Settings window that opens, give the VM a descriptive name, such as "Wasabi-Wallet-Whonix", and select a label color.
+4. Select "AppVM" as the "Type".
+5. Select "whonix-ws-15" as the "Template".
+6. Select "sys-whonix" for "Networking".
+
+These steps will create a lightweight copy of the Whonix Workstation VM template.
+All of the vital system files remain on the template in read-only mode and therefore cannot be altered by malware.
+
+The new VM will be used to install and run the Wasabi Wallet files, and it will interact with the system files on the template VM to run seamlessly.
+
+When the new AppVM is started, Qubes will automatically use a Whonix Gateway VM to connect to the Tor network, and will feed that connection to the AppVM through the "sys-whonix" connection that was chosen for the VM network.
+
+Now is the time to change the user password, as described earlier in the yellow "Caution" section.
