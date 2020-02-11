@@ -19,3 +19,29 @@ Online anonymity and censorship circumvention is attainable via fail-safe, autom
 
 The Whonix OS consists of two VMs: the Whonix Gateway and the Whonix Workstation.
 The former runs Tor processes and acts as a proxy, while the latter runs user applications on a completely isolated network.
+
+## Getting and Using Whonix
+
+To use Whonix, it is necessary to install either VirtualBox or Qubes.
+[Qubes](https://www.qubes-os.org/doc/) is a free-standing VM-based OS, designed for the best possible security.
+Whonix can added to Qubes as an option during the installation process.
+
+[VirtualBox](https://www.virtualbox.org/wiki/End-user_documentation) is a lightweight VM manager
+that can be installed on Windows, Linux, or MacOS.
+Whonix is added to VirtualBox by downloading and importing the Whonix installation .ova file.
+
+Depending upon which of these two options chosen, there is detailed information available
+on the use of Whonix in Qubes [here](https://www.whonix.org/wiki/Qubes/Install), and the required downloads and information for using Whonix in VirtualBox [here](https://www.whonix.org/wiki/VirtualBox/XFCE).
+
+:::warning Caution
+Unlike other operating systems in which a username and password are created during the installation process,
+Whonix installations come with the default username: "user", and default password: "changeme".
+The default user has administrative privileges.
+
+At a minimum, the password should be changed when first starting Whonix.
+To change the password:
+
+- Open a terminal window.
+- Type: "passwd" (without the quotes) and hit 'Enter'.
+- Follow the ensuing directions on the screen.
+:::
