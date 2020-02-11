@@ -83,3 +83,46 @@ The new VM will be used to install and run the Wasabi Wallet files, and it will 
 When the new AppVM is started, Qubes will automatically use a Whonix Gateway VM to connect to the Tor network, and will feed that connection to the AppVM through the "sys-whonix" connection that was chosen for the VM network.
 
 Now is the time to change the user password, as described earlier in the yellow "Caution" section.
+
+### VirtualBox Users
+
+After importing the Whonix installation .ova file into VirtualBox, find and click the Whonix Gateway and Whonix Workstation "Start" buttons on the VirtualBox Manager.
+
+It will take a minute or two for the Tor network to become operational.
+
+Everything is ready to go when the small globe icons on the bottom-right side of both VMs turn green, as shown here:
+
+![](https://i.imgur.com/EnjucPel.png)
+
+Change the Whonix user password for both VMs, as described earlier in the yellow "Caution" section.
+Then, run any needed updates for both the Gateway and Workstation VMs.
+To do so, open the terminal in both VMs by clicking on the small monitor icon on the bottom panel of each.
+
+Run the following commands in each.
+
+```sh
+[user@your-whonix-vm ~]$ sudo apt update
+[user@your-whonix-vm ~]$ sudo apt upgrade
+[user@your-whonix-vm ~]$ sudo apt dist-upgrade
+```
+
+Now it is time to create the Wasabi Whonix VM.
+
+1. If the Whonix Workstation is currently running, shut it down.
+2. Open the VirtualBox manager and click once on the Whonix-Workstation tab on the left.
+3. Find and click on the "Clone" button on the top toolbar of the VirtualBox Manager.
+4. In the Settings window that opens, give the VM a descriptive name, such as "Wasabi-Wallet-Whonix".
+5. For "MAC Address Policy" select "Generate new MAC addresses for all network adaptors".
+6. Click the "Next>" button.
+7. Select "Linked clone" and then click on the "Clone" button.
+
+These steps will create a lightweight copy of the Whonix Workstation VM template.
+All of the vital system files remain on the original, or template VM in read-only mode and therefore cannot be altered by malware.
+The new cloned VM will be used only to install and run the Wasabi Wallet files.
+
+__NOTE__: From here on, the "original" Workstation VM that was cloned, will be referred to as the "template" VM.
+
+:::tip Tip
+If it is desired to use Whonix for purposes other than Wasabi, a new clone of the template VM should always created for that purpose, rather than simply using the template VM.
+This keeps the template VM clean and free of any possible malware.
+:::
