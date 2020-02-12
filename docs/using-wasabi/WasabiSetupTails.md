@@ -194,7 +194,6 @@ On Linux you need to create a set of `udev` rules to allow hardware wallet acces
 Since Wasabi keeps the configuration files on `$HOME` it's necessary to change persistence in order to keep them.
 
 So configure persistence, download Wasabi and unpack it inside `Persistent` folder then reboot tails with `root` support and launch the following commands from the Terminal:
-reboot tails with `root` support and launch the following commands from the Terminal:
 
 ```
 sudo -i
