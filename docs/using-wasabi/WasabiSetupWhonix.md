@@ -39,7 +39,7 @@ At a minimum, the password should be changed when first starting Whonix.
 To change the password:
 
 - Open a terminal window.
-- Type: "passwd" (without the quotes) and hit 'Enter'.
+- Type: `passwd` and hit 'Enter'.
 - Follow the ensuing directions on the screen.
 :::
 
