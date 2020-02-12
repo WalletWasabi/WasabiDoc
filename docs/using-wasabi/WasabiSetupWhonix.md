@@ -54,7 +54,7 @@ This allows the luxury and security option of being able to create and dedicate 
 To avoid the risk of the wallet VM being compromised by malicious software or websites, do not install any applications in this VM other than those required by the Wasabi Wallet, or direct the Tor browser to any URL that is not necessary to install Wasabi.
 
 For an advanced layer of security, it is possible to install and run the Wasabi Wallet VM using a removable storage medium e.g., USB drive or SD card.
-This allows the storage your wallet in a safe place away from the computer.
+This allows the wallet to be stored in a safe place away from the computer.
 
 As this is beyond the scope of this tutorial, consult the Qubes or VirtualBox user guide for details.
 
@@ -92,7 +92,7 @@ It will take a minute or two for the Tor network to become operational.
 
 Everything is ready to go when the small globe icons on the bottom-right side of both VMs turn green, as shown here:
 
-![](https://i.imgur.com/EnjucPel.png)
+![](/WhonixGlobe.png)
 
 Change the Whonix user password for both VMs, as described earlier in the yellow "Caution" section.
 Then, run any needed updates for both the Gateway and Workstation VMs.
@@ -131,7 +131,8 @@ This keeps the template VM clean and free of any possible malware.
 
 ### Installing The Latest Release
 
-To install and run the latest official Wasabi release on a Whonix VM, follow the detailed instructions found [here](using-wasabi/InstallPackage.md). When the browser loads that link, click on the "Debian and Ubuntu" link under the "install package" heading, and follow that set of resulting instructions.
+To install and run the latest official Wasabi release on a Whonix VM, follow the detailed instructions found [here](using-wasabi/InstallPackage.md). 
+When the browser loads that link, click on the "Debian and Ubuntu" link under the "install package" heading, and follow that set of resulting instructions.
 
 When finished, to start the Wasabi Wallet open a terminal window and enter:
 
@@ -201,7 +202,7 @@ Pull the latest commits and compile from source.
 
 This concludes the tutorial on installing and running Wasabi Wallet in Whonix.
 
-The instructions provided an isolated, completely Tor-ified environment in which a user may:
+Following the steps in this tutorial will create an isolated, completely Tor-ified online environment in which a user may:
 
 - Run the currently released Wasabi Wallet as their primary wallet.
 - Check out and test a development branch or pull request.
