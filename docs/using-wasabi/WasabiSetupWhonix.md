@@ -26,16 +26,13 @@ To use Whonix, it is necessary to install either VirtualBox or Qubes.
 [Qubes](https://www.qubes-os.org/doc/) is a free-standing VM-based OS, designed for the best possible security.
 Whonix can be added to Qubes as an option during the installation process.
 
-[VirtualBox](https://www.virtualbox.org/wiki/End-user_documentation) is a lightweight VM manager
-that can be installed on Windows, Linux, or MacOS.
+[VirtualBox](https://www.virtualbox.org/wiki/End-user_documentation) is a lightweight VM manager that can be installed on Windows, Linux, or MacOS.
 Whonix is added to VirtualBox by downloading and importing the Whonix installation .ova file.
 
-Depending upon which of these two options is chosen, there is detailed information available
-on the use of Whonix in Qubes [here](https://www.whonix.org/wiki/Qubes/Install), and the required downloads and information for using Whonix in VirtualBox [here](https://www.whonix.org/wiki/VirtualBox/XFCE).
+Depending upon which of these two options is chosen, there is detailed information available on the use of Whonix in Qubes [here](https://www.whonix.org/wiki/Qubes/Install), and the required downloads and information for using Whonix in VirtualBox [here](https://www.whonix.org/wiki/VirtualBox/XFCE).
 
 :::warning Caution
-Unlike other operating systems in which a username and password are created during the installation process,
-Whonix installations come with the default username: "user", and default password: "changeme".
+Unlike other operating systems in which a username and password are created during the installation process, Whonix installations come with the default username: "user", and default password: "changeme".
 The default user has administrative privileges.
 
 At a minimum, the password should be changed when first starting Whonix.
@@ -56,7 +53,7 @@ To avoid the risk of the wallet VM being compromised by malicious software or we
 For an advanced layer of security, it is possible to install and run the Wasabi Wallet VM using a removable storage medium e.g., USB drive or SD card.
 This allows the wallet to be stored in a safe place away from the computer.
 
-As this is beyond the scope of this tutorial, consult the Qubes or VirtualBox user guide for details.
+As this is beyond the scope of this tutorial, consult the Qubes, VirtualBox or Whonix user guide for details. The [Whonix documentation](https://www.whonix.org/wiki/Documentation) in particular offers multiple pages on security, hardening and privacy techniques.
 
 ### Qubes Users
 
@@ -90,7 +87,7 @@ After importing the Whonix installation .ova file into VirtualBox, find and clic
 
 It will take a minute or two for the Tor network to become operational.
 
-Everything is ready to go when the small globe icons on the bottom-right side of both VMs turn green, as shown here:
+Everything is ready to go when the small globe icon on the bottom-right side of both VMs turns green, as shown here:
 
 ![](/WhonixGlobe.png)
 
@@ -100,10 +97,14 @@ To do so, open the terminal in both VMs by clicking on the small monitor icon on
 
 Run the following commands in each.
 
+:::tip
+For better security and privacy, you can [onionize](https://www.whonix.org/wiki/Onionizing_Repositories) the Debian and Whonix repositories.
+:::
+
 ```sh
-[user@your-whonix-vm ~]$ sudo apt update
-[user@your-whonix-vm ~]$ sudo apt upgrade
-[user@your-whonix-vm ~]$ sudo apt dist-upgrade
+[user@your-whonix-vm ~]$ sudo apt-get update
+[user@your-whonix-vm ~]$ sudo apt-get upgrade
+[user@your-whonix-vm ~]$ sudo apt-get dist-upgrade
 ```
 
 Now it is time to create the Wasabi Whonix VM.
@@ -123,7 +124,7 @@ The new cloned VM will be used only to install and run the Wasabi Wallet files.
 __NOTE__: From here on, the "original" Workstation VM that was cloned, will be referred to as the "template" VM.
 
 :::tip Tip
-If it is desired to use Whonix for purposes other than Wasabi, a new clone of the template VM should always created for that purpose, rather than simply using the template VM.
+If it is desired to use Whonix for purposes other than Wasabi, a new clone of the template VM should always be created for that purpose, rather than simply using the template VM.
 This keeps the template VM clean and free of any possible malware.
 :::
 
@@ -152,9 +153,9 @@ Start the template VM and open a terminal window.
 Then, make sure that the VM is updated.
 
 ```sh
-[user@whonix-template ~]$ sudo apt update
-[user@whonix-template ~]$ sudo apt upgrade
-[user@whonix-template ~]$ sudo apt dist-upgrade
+[user@whonix-template ~]$ sudo apt-get update
+[user@whonix-template ~]$ sudo apt-get upgrade
+[user@whonix-template ~]$ sudo apt-get dist-upgrade
 ```
 
 Install [.NET Core ${dotnetVersion} SDK](https://www.microsoft.com/net/download) for "Building Apps" in the `whonix-template`.
@@ -165,7 +166,6 @@ To disable .NET's telemetry, which sends some usage information to Microsoft:
 ```sh
 [user@whonix-template ~]$ export DOTNET_CLI_TELEMETRY_OPTOUT=1
 ```
-
 :::
 
 In the future, when it is necessary to update .NET Core, then do it in this VM.
@@ -177,7 +177,7 @@ Start the Wasabi-Whonix Workstation VM
 Run the following commands:
 
 ```sh
-[user@your-whonix-vm ~]$ sudo apt update
+[user@your-whonix-vm ~]$ sudo apt-get update
 [user@your-whonix-vm ~]$ sudo apt-get install git
 [user@your-whonix-vm ~]$ git clone https://github.com/zksnacks/walletwasabi.git
 [user@your-whonix-vm ~]$ cd walletwasabi/WalletWasabi.Gui
