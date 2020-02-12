@@ -166,6 +166,7 @@ To disable .NET's telemetry, which sends some usage information to Microsoft:
 ```sh
 [user@whonix-template ~]$ export DOTNET_CLI_TELEMETRY_OPTOUT=1
 ```
+
 :::
 
 In the future, when it is necessary to update .NET Core, then do it in this VM.
