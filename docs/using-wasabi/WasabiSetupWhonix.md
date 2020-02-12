@@ -131,7 +131,7 @@ This keeps the template VM clean and free of any possible malware.
 
 ### Installing The Latest Release
 
-To install and run the latest official Wasabi release on a Whonix VM, follow the detailed instructions found [here](using-wasabi/InstallPackage.md). 
+To install and run the latest official Wasabi release on a Whonix VM, follow the detailed instructions found [here](using-wasabi/InstallPackage.md).
 When the browser loads that link, click on the "Debian and Ubuntu" link under the "install package" heading, and follow that set of resulting instructions.
 
 When finished, to start the Wasabi Wallet open a terminal window and enter:
