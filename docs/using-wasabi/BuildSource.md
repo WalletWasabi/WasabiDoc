@@ -42,6 +42,7 @@ dotnet run
 
 ```sh
 git pull
+dotnet build
 ```
 
 :::warning Experimental
@@ -60,4 +61,5 @@ git remote add nopara73 https://github.com/nopara73/WalletWasabi
 git fetch nopara73
 git checkout branchname
 git pull
+dotnet build
 ```
