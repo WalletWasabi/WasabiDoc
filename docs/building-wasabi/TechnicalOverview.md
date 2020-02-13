@@ -164,7 +164,7 @@ The label field of the `Send` tab is also compulsory.
 
 ![](/Send.png)
 
-By clicking on the `Max` button, one can spend all of any selected coins.
+By clicking on the `Max` button, one can spend all of the selected coins.
 Spending entire coins is beneficial to your privacy, as it leaves no change to potentially betray your identity in later transactions.
 The Bitcoin fee rates are fetched from the backend server.
 The source of these fees are Bitcoin Core's `estimatesmartfee`'s `CONSERVATIVE` output.
