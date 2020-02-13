@@ -122,6 +122,7 @@ Pull the latest commits and compile from source.
 
 ```sh
 [user@source-wasabi ~]$ git pull
+[user@source-wasabi ~]$ dotnet build
 [user@source-wasabi ~]$ dotnet run
 ```
 
@@ -248,6 +249,7 @@ Pull the latest commits and compile from source:
 
 ```sh
 your@vm:~$ git pull
+your@vm:~$ dotnet build
 your@vm:~$ dotnet run
 ```
 
