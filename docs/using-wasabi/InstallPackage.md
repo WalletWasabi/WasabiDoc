@@ -30,6 +30,12 @@ If you have personally verified zkSNACKs' PGP public key [${zksnacksPublicKeyFin
 Don't trust - Verify!
 :::
 
+## Install Wasabi step-by-step
+
+1. Download the Wasabi package relevant to your operating system from [wasabiwallet.io](https://wasabiwallet.io).
+2. Verify the PGP signatures of the download.
+3. Install Wasabi package as you would do any other software on your operating system.
+
 ---
 
 ## Windows
