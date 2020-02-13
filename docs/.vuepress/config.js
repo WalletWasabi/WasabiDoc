@@ -175,7 +175,6 @@ module.exports = {
           collapsable: false,
           sidebarDepth: 2,
           children: [
-            "/using-wasabi/AddressReuse.md",
             "/using-wasabi/ChangeCoins.md",
             "/using-wasabi/NetworkLevelPrivacy.md",
             "/using-wasabi/Deanonimization.md"

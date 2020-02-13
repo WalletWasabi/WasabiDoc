@@ -113,6 +113,22 @@ Most wallets automatically generate new change addresses for every transaction, 
 
 Read more about the privacy concerns of address reuse in the [separate entry](https://en.bitcoin.it/wiki/Address_reuse) and the [privacy chapter](https://en.bitcoin.it/Privacy#Address_reuse) of the Bitcoin wiki.
 
+There are several different types of address reuse.
+
+#### Publicly advertised addresses
+
+Here one person sends one address to a public forum, like in the bio of a social media network or on a website, and anyone can send bitcoin to this address.
+
+#### Dusting
+
+With a [forced address reuse attack](https://en.bitcoin.it/Privacy#Forced_address_reuse), an attacker sends a small amount of bitcoin to an already existing address of a old coin.
+The hope is that this dust coin is consolidated with another coin, thus linking the two in a cluster.
+
+#### Intentionally malicious
+
+Since Wasabi is libre and open source, anyone can modify a fork of Wasabi to make sure the same two addresses are recycled in every CoinJoin registration.
+This is someone intentionally deanonymizing himself, such a behavior might have quite dubious motives.
+
 ### Wasabi's Solution
 
 _**Remove used address from GUI**_
@@ -120,7 +136,7 @@ _**Remove used address from GUI**_
 Wasabi uses the industry best practice [BIP 44 hierarchical deterministic wallet](/using-wasabi/BIPs.md#bip-44-multi-account-hierarchy-for-deterministic-wallets), where out of one master secret a tree structure of child private keys are generated.
 It is deterministic because the same parent secret always calculates the same child private keys. When given a hardened child private key, then the parent private key cannot be calculated.
 In the `Receive` tab, a new address is generated every time, and as soon as a coin is sent to it, this specific address is removed from the GUI. 
-
+To protect against forced address reuse attacks, Wasabi has a modifiable dust limit, where the wallet does not show coins below a certain threshold value.
 
 ## Inputs and outputs
 
