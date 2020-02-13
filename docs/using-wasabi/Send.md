@@ -1,7 +1,7 @@
 ---
 {
   "title": "Send",
-  "description": "A step by step guide on how to send bitcoin in Wasabi. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
+  "description": "A step-by-step guide on how to send bitcoin in Wasabi. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
 }
 ---
 
@@ -9,7 +9,7 @@
 
 [[toc]]
 
-## How to send bitcoin step by step
+## How to send bitcoin step-by-step
 
 1. Select the coins you want to spend.
 2. Specify a destination address.
