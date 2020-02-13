@@ -108,7 +108,7 @@ In practice, it was hard to compete with Bitcoin Core's micro-optimizations, and
 
 Now, Wasabi Wallet users have the option of using the built-in Bitcoin Core full node, connecting to a different full node, or running the wallet in "light" mode.
 
-[Read more about network-level Bitcoin wallet privacy here.](/using-wasabi/NetworkLevelPrivacy.md)
+[Read more about network-level Bitcoin wallet privacy here.](/why-wasabi/NetworkLevelPrivacy.md)
 
 ![](/StatusBarBackendConnected.png)
 
@@ -171,7 +171,7 @@ The source of these fees are Bitcoin Core's `estimatesmartfee`'s `CONSERVATIVE` 
 
 Every fee query happens over Tor with a new Tor identity.
 When clicking `Send`, the wallet will broadcast the transaction to a random peer, and then disconnect that peer.
-This is currently [the optimal way to broadcast transactions from a privacy point of view,](/using-wasabi/NetworkLevelPrivacy.md).
+This is currently [the optimal way to broadcast transactions from a privacy point of view,](/why-wasabi/NetworkLevelPrivacy.md).
 
 A more ideal way would be to implement the [Dandelion](/using-wasabi/BIPs.md#bip-156-dandelion-privacy-enhancing-routing) protocol for transaction broadcasting when the Bitcoin network adopts it.
 
