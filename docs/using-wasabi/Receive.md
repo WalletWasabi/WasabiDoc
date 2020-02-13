@@ -1,7 +1,7 @@
 ---
 {
   "title": "Receive",
-  "description": "A step by step guide on how to receive bitcoin in Wasabi. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
+  "description": "A step-by-step guide on how to receive bitcoin in Wasabi. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
 }
 ---
 
@@ -9,7 +9,7 @@
 
 [[toc]]
 
-## Generating addresses step by step
+## Generating addresses step-by-step
 
 1. Start Wasabi and open the wallet that you want to receive coins into.
 2. Go to the `Receive` tab.
