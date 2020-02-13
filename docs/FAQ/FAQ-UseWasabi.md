@@ -327,12 +327,12 @@ If you are recovering a wallet with the 12 recovery words, then in the advanced 
 
 Bitcoin addresses look like cyphertext, they are not easily remembered and it's not clear how they were used previously.
 When you do not label all your addresses, there is no meta-data for you to understand the context of their coins.
-Thus receiving addresses and sending transactions that generate a change coin should be carefully labeled with the observers who know about this.
+Thus receiving addresses and sending transactions should be carefully labeled with the observers who know about this.
 This helps you know where your coins came from so that you can judge whether there are privacy concerns when sending a specific coin to a specific receiver.
 
 ![](/ReceiveLabelingRequired.png)
 
-When labeling a newly generated address or a sending transaction that generates a change coin you should ask yourself: "Who knows this address is mine?" or "Who will I share this address with?" or "From whom I am receiving bitcoin?" or "To whom I am sending bitcoin?"
+When labeling a newly generated address or a sending transaction you should ask yourself: "Who knows this address is mine?" or "Who will I share this address with?" or "From whom I am receiving bitcoin?" or "To whom I am sending bitcoin?"
 Labels should contain the comma-separated names of people/entities that may be aware of the transaction and could follow its trail like:
 
 `Name of the sender or the receiver, name of the exchange, name of the payment processor`

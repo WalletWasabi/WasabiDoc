@@ -61,7 +61,7 @@ Wasabi will calculate the checksum and notify you if the provided address is wro
 
 Similar to the `Receive` tab, you must label every new address with the observers who know that this is your address.
 In the `Send` tab an address is automatically generated to receive the change amount.
-A label is not required when you send an entire coin, as there will be no change left.
+A label is not required (except in edge cases) when you send an entire coin, as there will be no change left.
 The observer of a sending transaction is of course the receiver of it, as well as any other third party that will find out about it, for example a payment processor or an exchange.
 This metadata will be used to build an accurate cluster of observers who know about your coins.
 
