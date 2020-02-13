@@ -105,7 +105,7 @@ As shown in the following examples, you can:
 
 #### HTML tag example with the image on the left:
 
-`<img src="https://docs.wasabiwallet.io/Logo_with_text.png"
+`<img src="/Logo_with_text.png"
 style="float:left;width:250px;height:250px;margin-right:50px;margin-left:50px;margin-top:0px;margin-bottom:0px"><p><br>This code will result in an image nested on the left side of a paragraph, and sized at 250 x 250 pixels, with a 50 pixel margin on the left and right side of the image, and the text centered vertically, relative to the image.</p>`
 
 __Result:__
@@ -116,7 +116,7 @@ style="float:left;width:250px;height:250px;margin-right:50px;margin-left:50px;ma
 
 #### HTML tag example with the image on the right:
 
-`<img src="https://docs.wasabiwallet.io/Logo_with_text.png"
+`<img src="/Logo_with_text.png"
 style="float:right;width:400px;height:300px;margin-right:20px;margin-left:10px;margin-top:0px;margin-bottom:0px"><p>This code will result in an image nested on the left side of a paragraph, and sized at 400 x 300 pixels, with a 20 pixel margin on the right, and a 10 pixel margin on left side of the image, and the text *not* centered vertically, relative to the image.</p>`
 
 __Result:__
