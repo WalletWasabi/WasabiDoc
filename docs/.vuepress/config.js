@@ -134,6 +134,7 @@ module.exports = {
           children: [
             "/why-wasabi/WhyPrivacyImportant.md",
             "/why-wasabi/BitcoinPrivacy.md",
+	    "/why-wasabi/NetworkLevelPrivacy.md",
             "/why-wasabi/GainingPrivacyWasabi.md",
             "/why-wasabi/10Commandments.md",
             "/why-wasabi/TransactionSurveillanceCompanies.md"
@@ -177,7 +178,6 @@ module.exports = {
           children: [
             "/using-wasabi/AddressReuse.md",
             "/using-wasabi/ChangeCoins.md",
-            "/using-wasabi/NetworkLevelPrivacy.md",
             "/using-wasabi/Deanonimization.md"
           ]
         },
