@@ -90,6 +90,41 @@ They can be embedded via the following markdown tags:
 ![](/IMAGENAME.png)
 ```
 
+### Nesting Images Alongside Text
+
+Images may be nested on one side or the other of a block of text, and the image size may be customized, 
+using html tags.
+
+As shown in the following examples, you can:
+
+- Use `float` tags to place the image on the left or right side of the text.
+- Use `width` and `height` tags to size the image as desired.
+- Use `margin-left`, `margin-right`, `margin-top`, or `margin-bottom` tags to place a buffer space on any side of the image.
+- Use `<p>` and `</p>` paragraph tags to contain the text.
+- Use `<br>` line-breaks to format and position text placement relative to the images.
+
+#### HTML tag example with the image on the left:
+
+`<img src="https://docs.wasabiwallet.io/Logo_with_text.png"
+style="float:left;width:250px;height:250px;margin-right:50px;margin-left:50px;margin-top:0px;margin-bottom:0px"><p><br>This code will result in an image nested on the left side of a paragraph, and sized at 250 x 250 pixels, with a 50 pixel margin on the left and right side of the image, and the text centered vertically, relative to the image.</p>`
+
+__Result:__
+
+<img src="https://docs.wasabiwallet.io/Logo_with_text.png"
+style="float:left;width:250px;height:250px;margin-right:50px;margin-left:50px;margin-top:0px;margin-bottom:0px"><p><br>This code will result in an image nested on the left side of a paragraph, and sized at 250 x 250 pixels, with a 50 pixel margin on the left and right side of the image, and the text centered vertically, relative to the image.</p>
+<br>
+
+#### HTML tag example with the image on the right:
+
+`<img src="https://docs.wasabiwallet.io/Logo_with_text.png"
+style="float:right;width:400px;height:300px;margin-right:20px;margin-left:10px;margin-top:0px;margin-bottom:0px"><p>This code will result in an image nested on the left side of a paragraph, and sized at 400 x 300 pixels, with a 20 pixel margin on the right, and a 10 pixel margin on left side of the image, and the text *not* centered vertically, relative to the image.</p>`
+
+__Result:__
+
+<img src="https://docs.wasabiwallet.io/Logo_with_text.png"
+style="float:right;width:400px;height:300px;margin-right:20px;margin-left:10px"><p>This code will result in an image nested on the left side of a paragraph, and sized at 400 x 300 pixels, with a 20 pixel margin on the right, and a 10 pixel margin on left side of the image, and the text *not* centered vertically, relative to the image.</p>
+<br>
+
 ### Embedding shields
 
 To insert the shield images inline with the text, use these HTML tags:
