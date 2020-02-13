@@ -16,6 +16,8 @@ By Satoshi Nakamoto in [How anonymous are bitcoins? - Bitcointalk](https://bitco
 
 [[toc]]
 
+![](/InfographicWhyWasabi.png)
+
 ---
 
 ## Why it is important to keep your funds private
@@ -112,6 +114,16 @@ Further, when in a transaction one output has a reused address, then it is very 
 Most wallets automatically generate new change addresses for every transaction, but payment addresses are selected manually by the user.
 
 Read more about the privacy concerns of address reuse in the [separate entry](https://en.bitcoin.it/wiki/Address_reuse) and the [privacy chapter](https://en.bitcoin.it/Privacy#Address_reuse) of the Bitcoin wiki.
+
+### Wasabi's Solution
+
+_**Remove used address from GUI**_
+
+Here one person sends one address to a public forum, like in the bio of a social media network or on a website, and anyone can send bitcoin to this address.
+
+#### Dusting
+
+tb1qg6dzr2yzgyyc7q59w4e4r4yu8ax87zaclh0x36
 
 ### Wasabi's Solution
 
