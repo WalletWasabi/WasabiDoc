@@ -177,7 +177,7 @@ shields... but what are they?
 Coins in your wallet have shields.
 
 Each shield represents the [Anonymity Set](/FAQ/FAQ-UseWasabi.md#what-is-the-anonymity-set) level of a given coin.
-By the anonymity set levels are `2`, `21` and `50`, however, this can be [changed in the settings](/FAQ/FAQ-UseWasabi.md#how-can-i-change-the-anonset-target).
+By default the anonymity set levels are `2`, `21` and `50`, however, this can be [changed in the settings](/FAQ/FAQ-UseWasabi.md#how-can-i-change-the-anonset-target).
 
 Essentially, when we talk about shields, we mean a specific privacy level set by the user.
 :::

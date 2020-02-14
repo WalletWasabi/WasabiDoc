@@ -113,10 +113,10 @@ Having publicly visible Bitcoin addresses could make it easier to find out your 
 
 Globally visible public records in finance are completely unheard-of.
 They are undesirable and arguably intolerable.
-The Bitcoin whitepaper made a promise of how we could get around the visibility of the ledger with pseudonymous addresses, but the ecosystem has broken that promise in a bunch of places and we ought to fix it.
+The Bitcoin white paper made a promise of how we could get around the visibility of the ledger with pseudonymous addresses, but the ecosystem has broken that promise in a bunch of places and we ought to fix it.
 Bitcoin could have coded your name or IP address into every transaction.
 It didn't.
-The whitepaper even has a section on privacy.
+The white paper even has a section on privacy.
 It's incorrect to say that Bitcoin isn't focused on privacy.
 Sufficient privacy is an essential prerequisite for a viable digital currency.
 :::
