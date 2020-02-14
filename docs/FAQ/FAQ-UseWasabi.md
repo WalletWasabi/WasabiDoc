@@ -191,7 +191,7 @@ Do not send your extended public key to a third party server!
 :::
 
 ::: tip
-This is why Wasabi uses [BIP-158 block filters](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients) to ensure [network level privacy](/using-wasabi/NetworkLevelPrivacy.md).
+This is why Wasabi uses [BIP-158 block filters](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients) to ensure [network level privacy](/why-wasabi/NetworkLevelPrivacy.md).
 It's as good as running a full node.
 :::
 
