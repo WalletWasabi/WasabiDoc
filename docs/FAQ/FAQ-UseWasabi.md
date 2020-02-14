@@ -191,7 +191,7 @@ Do not send your extended public key to a third party server!
 :::
 
 ::: tip
-This is why Wasabi uses [BIP-158 block filters](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients) to ensure [network level privacy](/using-wasabi/NetworkLevelPrivacy.md).
+This is why Wasabi uses [BIP-158 block filters](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients) to ensure [network level privacy](/why-wasabi/NetworkLevelPrivacy.md).
 It's as good as running a full node.
 :::
 
@@ -240,7 +240,7 @@ You have just to wait until the status bar is `Ready`.
 ### How long does the initial, and a subsequent synchronization take?
 
 It usually only takes a couple seconds to scan the block filters, download and parse the blocks.
-However, for large wallets with a many transactions, this synchronization can take up to several minutes.
+However, for large wallets with many transactions, this synchronization can take up to several minutes.
 We are constantly improving the speed and reliability of the loading process.
 For especially old wallets, it might be worth considering to start a new wallet with a shorter transaction history.
 :::
@@ -297,7 +297,7 @@ When you import the wallet file into a new Wasabi client, then it will use this 
 :::details
 ### How do I change the gap limit of a wallet?
 
-You can set the gap limit of an already existing Wasabi wallet by editing the wallets settings file.
+You can set the gap limit of an already existing Wasabi wallet by editing the wallet's settings file.
 Access the settings file via the `File->Open->Wallets Folder` menu.
 
 Close Wasabi and edit the `MinGapLimit` setting (which is `21` by default).
@@ -352,7 +352,7 @@ or:
 You can change the label of your receive address in the right click menu by clicking `Change Label`, then type in the new label.
 This is useful for when you have generated a receiving address with a specific label, but then the cause for receiving is no longer present.
 Take care with whom you have shared this address, because if you send it to several people, they might all send many coins to the same address.
-This is very bad for your privacy because of [address reuse](/using-wasabi/AddressReuse.md), and it confuses you with the labeling of each unique coin.
+This is very bad for your privacy because of [address reuse](/why-wasabi/BitcoinPrivacy.md#address-reuse), and it confuses you with the labeling of each unique coin.
 
 ![](/ReceiveAddressDropDownMenu.png)
 :::
@@ -489,7 +489,7 @@ So make sure that the coins get into the right hands.
 :::details
 ### Can I pay to many addresses?
 
-Unfortunately pay to many is not not yet implemented in the GUI.
+Unfortunately pay to many is not yet implemented in the GUI.
 However, you can use the [RPC server `send` call](/using-wasabi/RPC.md#send) and specify multiple receiving addresses.
 :::
 
@@ -1049,7 +1049,7 @@ The answer is simple:
 All of them!
 :::
 
-This is thanks to awesome Hardware Wallet Interface of Bitcoin core.
+This is thanks to the awesome Hardware Wallet Interface of Bitcoin core.
 
 However, not all of the many hardware wallets have been tested and reviewed by the developers.
 Everything seems to work fine with the ColdCard, BitBox, Trezor, Ledger and KeepKey.

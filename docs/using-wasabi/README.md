@@ -15,6 +15,7 @@ Further tutorials about the different parts of the wallet, for newbies and power
 
 #### Introducing Wasabi
 - [Explain Wasabi like I'm 5](/using-wasabi/ELI5.md)
+- [Ten Commandments](/using-wasabi/10commandments.md)
 
 #### Installing Wasabi
 - [Install package](/using-wasabi/InstallPackage.md)
@@ -27,9 +28,7 @@ Further tutorials about the different parts of the wallet, for newbies and power
 - [Send](/using-wasabi/Send.md)
 
 #### Privacy Best Practices
-- [Address Reuse](/using-wasabi/AddressReuse.md)
 - [Change Coins](/using-wasabi/ChangeCoins.md)
-- [Network Level Privacy](/using-wasabi/NetworkLevelPrivacy.md)
 - [How you can be de-anonymized using Bitcoin](/using-wasabi/Deanonimization.md)
 
 #### Restoring Wasabi

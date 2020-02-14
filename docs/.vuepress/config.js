@@ -134,7 +134,7 @@ module.exports = {
           children: [
             "/why-wasabi/WhyPrivacyImportant.md",
             "/why-wasabi/BitcoinPrivacy.md",
-            "/why-wasabi/10Commandments.md",
+            "/why-wasabi/NetworkLevelPrivacy.md",
             "/why-wasabi/TransactionSurveillanceCompanies.md"
           ]
         }
@@ -146,7 +146,8 @@ module.exports = {
 	  collapsable: false,
 	  sidebarDepth: 2,
 	  children: [
-	    "/using-wasabi/ELI5.md"
+          "/using-wasabi/ELI5.md",
+          "/using-wasabi/10Commandments.md"
 	  ]
        },
    {
@@ -174,9 +175,7 @@ module.exports = {
           collapsable: false,
           sidebarDepth: 2,
           children: [
-            "/using-wasabi/AddressReuse.md",
             "/using-wasabi/ChangeCoins.md",
-            "/using-wasabi/NetworkLevelPrivacy.md",
             "/using-wasabi/Deanonimization.md"
           ]
         },
@@ -206,7 +205,7 @@ module.exports = {
             "/using-wasabi/BIPs.md"
          ]
         },
-    {
+     {
           title: "Research",
           collapsable: false,
           sidebarDepth: 2,
