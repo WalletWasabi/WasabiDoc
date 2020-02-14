@@ -104,7 +104,7 @@ The second rule of Bitcoin privacy:
 _**Easy wallet clustering**_
 
 A Bitcoin address commits to the spending condition of this UTXO.
-For example in Wasabi, each address is a [native SegWit pay to witness public key hash P2WPKH](https://programmingblockchain.gitbook.io/programmingblockchain/other_types_of_ownership/p2wpkh_pay_to_witness_public_key_hash), meaning that this coin can only be spend with a single valid signature of the corresponding private key.
+For example in Wasabi, each address is a [native SegWit pay to witness public key hash P2WPKH](https://programmingblockchain.gitbook.io/programmingblockchain/other_types_of_ownership/p2wpkh_pay_to_witness_public_key_hash), meaning that this coin can only be spent with a single valid signature of the corresponding private key.
 When the same address is used for several UTXOs, then this means that the same private key can spend all these coins.
 It is very easy to find all the UTXOs with the same address, and thus to find out how many bitcoin this private key holds. 
 
@@ -127,7 +127,7 @@ In the `Receive` tab, a new address is generated every time, and as soon as a co
 Bitcoin has an accounting model of [unspent transaction outputs [UTXO]](https://bitcoin.org/en/blockchain-guide#introduction).
 A transaction has inputs: the coins that are spent, and outputs: the coins that are received.
 The input of one transaction has to be an output of a previous transaction that is not yet spent.
-Each UTXO is the tip of the chain of links between inputs and outputs, all the way back to a [coin base transaction](https://en.bitcoin.it/wiki/Coinbase) that pays the miner.
+Each UTXO is the tip of the chain of links between inputs and outputs, all the way back to a [coinbase transaction](https://en.bitcoin.it/wiki/Coinbase) that pays the miner.
 
 ### Problem
 

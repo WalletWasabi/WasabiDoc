@@ -328,7 +328,8 @@ However, if Bitcoin is successful in the future, there will be a need to think a
 
 ## V. General Wallet Features
 
-Wasabi today has all the features a Bitcoin wallet needs that are not related to privacy. There may be other useful features to add, however.
+Wasabi today has all the features a Bitcoin wallet needs that are not related to privacy.
+There may be other useful features to add, however.
 
 - Pay to Many: [https://github.com/zkSNACKs/WalletWasabi/issues/733](https://github.com/zkSNACKs/WalletWasabi/issues/733)
 - Advanced RBF (ethical concerns here): [https://github.com/zkSNACKs/Meta/issues/15](https://github.com/zkSNACKs/Meta/issues/15)

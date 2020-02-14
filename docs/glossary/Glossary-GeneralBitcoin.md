@@ -180,7 +180,7 @@ Wallets using the Hierarchical Deterministic (HD Protocol) key creation and tran
 :::details
 ### Hot Wallet
 
-A hot wallet is a software wallet that runs on a computer which is connected to the Internet.
+A hot wallet is a software wallet that runs on a device which is connected to the Internet.
 Wasabi is a hot wallet by default.
 :::
 
