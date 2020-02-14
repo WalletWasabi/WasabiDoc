@@ -92,7 +92,7 @@ They can be embedded via the following markdown tags:
 
 ### Nesting Images Alongside Text
 
-Images may be nested on one side or the other of a block of text, and the image size may be customized, 
+Images may be nested on one side or the other of a block of text, and the image size may be customized, using html tags.
 using html tags.
 
 As shown in the following examples, you can:
