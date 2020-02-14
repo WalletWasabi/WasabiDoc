@@ -1,7 +1,7 @@
 ---
 {
   "title": "Send",
-  "description": "A step by step guide on how to send bitcoin in Wasabi. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
+  "description": "A step-by-step guide on how to send bitcoin in Wasabi. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
 }
 ---
 
@@ -9,7 +9,7 @@
 
 [[toc]]
 
-## How to send bitcoin step by step
+## How to send bitcoin step-by-step
 
 1. Select the coins you want to spend.
 2. Specify a destination address.
@@ -54,14 +54,14 @@ By default they have an anonymity set of `2`, `21` and `50`, however, this can b
 When sending bitcoin, you need to know the destination address of the receiver.
 This commits to the spending condition that the receiver agrees to have for this coin.
 The address can be a public key hash [starting with 1...], a script hash [starting with 3...], or a native segwit bech32 public key hash [starting with bc1q...].
-Make sure that you ask the receiver for a [new address](/using-wasabi/AddressReuse.md) for every payment to protect your privacy and theirs.
+Make sure that you ask the receiver for a [new address](/why-wasabi/BitcoinPrivacy.md#address-reuse) for every payment to protect your privacy and theirs.
 Wasabi will calculate the checksum and notify you if the provided address is wrong.
 
 ## Label
 
 Similar to the `Receive` tab, you must label every new address with the observers who know that this is your address.
 In the `Send` tab an address is automatically generated to receive the change amount.
-A label is not required when you send an entire coin, as there will be no change left.
+A label is not required (except in edge cases) when you send an entire coin, as there will be no change left.
 The observer of a sending transaction is of course the receiver of it, as well as any other third party that will find out about it, for example a payment processor or an exchange.
 This metadata will be used to build an accurate cluster of observers who know about your coins.
 

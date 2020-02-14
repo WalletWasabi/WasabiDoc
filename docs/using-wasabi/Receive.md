@@ -1,7 +1,7 @@
 ---
 {
   "title": "Receive",
-  "description": "A step by step guide on how to receive bitcoin in Wasabi. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
+  "description": "A step-by-step guide on how to receive bitcoin in Wasabi. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
 }
 ---
 
@@ -9,7 +9,7 @@
 
 [[toc]]
 
-## Generating addresses step by step
+## Generating addresses step-by-step
 
 1. Start Wasabi and open the wallet that you want to receive coins into.
 2. Go to the `Receive` tab.
@@ -40,7 +40,7 @@ Wasabi Wallet does not "store your money", rather it stores your public keys and
 
 Whenever you use the same address to lock up different UTXOs, then all these coins can be spent by anyone who knows the private key.
 This makes it obvious for anyone that this one entity [you] owns all these coins, which is very bad for privacy.
-The first rule of Bitcoin privacy is [never reuse addresses](/using-wasabi/AddressReuse.md)!
+The first rule of Bitcoin privacy is [never reuse addresses](/why-wasabi/BitcoinPrivacy.md#address-reuse)!
 
 :::tip
 This is why Wasabi removes the address from the `Receive` tab as soon as it has received a coin.
@@ -76,7 +76,7 @@ Wasabi is a coins-oriented wallet in the sense that coins are the most important
 ### Labels
 
 As a privacy-oriented solution the focus is always on minimizing how much we reveal about our financial activity.
-For that reason when we create a new address to receive bitcoins or when we send a transaction that generates a change coin, we are forced to label that coin!
+For that reason when we create a new address to receive bitcoins or when we send a transaction, we are forced to label that coin!
 And what kind of information do we have to provide here?
 The label has to tell us who are the observers that know about that coin.
 

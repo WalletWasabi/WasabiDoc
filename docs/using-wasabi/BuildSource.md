@@ -7,6 +7,15 @@
 
 # Build from source code
 
+[[toc]]
+
+---
+
+You can compile the source code in order to get the most recent commits by the developers.
+This enables you to try out features or fixes that are not yet released.
+This can be the main repository master branch for those changes that should be in the next release, or developer branches for cutting edge features.
+Be aware that these branches might be unstable and can include bugs that lead to a loss of funds, so use with caution and on testnet.
+
 ## Get The Requirements
 
 1. Install [Git](https://git-scm.com/downloads)
@@ -42,6 +51,7 @@ dotnet run
 
 ```sh
 git pull
+dotnet build
 ```
 
 :::warning Experimental
@@ -60,4 +70,5 @@ git remote add nopara73 https://github.com/nopara73/WalletWasabi
 git fetch nopara73
 git checkout branchname
 git pull
+dotnet build
 ```

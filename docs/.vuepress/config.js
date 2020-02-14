@@ -134,6 +134,7 @@ module.exports = {
           children: [
             "/why-wasabi/WhyPrivacyImportant.md",
             "/why-wasabi/BitcoinPrivacy.md",
+            "/why-wasabi/NetworkLevelPrivacy.md",
             "/why-wasabi/GainingPrivacyWasabi.md",
             "/why-wasabi/TransactionSurveillanceCompanies.md"
           ]
@@ -175,12 +176,21 @@ module.exports = {
           collapsable: false,
           sidebarDepth: 2,
           children: [
-            "/using-wasabi/AddressReuse.md",
             "/using-wasabi/ChangeCoins.md",
-            "/using-wasabi/NetworkLevelPrivacy.md",
             "/using-wasabi/Deanonimization.md"
           ]
         },
+    {          
+          title: "Restoring Wasabi",
+          collapsable: false,
+          sidebarDepth: 2,
+          children: [
+            "/using-wasabi/WalletRecovery.md",
+            "/using-wasabi/RestoreElectrum.md",
+            "/using-wasabi/LostPassword.md",
+            "/using-wasabi/PasswordFinder.md"
+	  ]
+	},
     {
           title: "Advanced",
           collapsable: false,
@@ -196,17 +206,6 @@ module.exports = {
             "/using-wasabi/BIPs.md"
          ]
         },
-    {          
-          title: "Restoring Wasabi",
-          collapsable: false,
-          sidebarDepth: 2,
-          children: [
-            "/using-wasabi/WalletRecovery.md",
-            "/using-wasabi/RestoreElectrum.md",
-            "/using-wasabi/LostPassword.md",
-            "/using-wasabi/PasswordFinder.md"
-	  ]
-	},
      {
           title: "Research",
           collapsable: false,

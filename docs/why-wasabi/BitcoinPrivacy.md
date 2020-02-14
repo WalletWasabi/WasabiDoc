@@ -104,7 +104,7 @@ The second rule of Bitcoin privacy:
 _**Easy wallet clustering**_
 
 A Bitcoin address commits to the spending condition of this UTXO.
-For example in Wasabi, each address is a [native SegWit pay to witness public key hash P2WPKH](https://programmingblockchain.gitbook.io/programmingblockchain/other_types_of_ownership/p2wpkh_pay_to_witness_public_key_hash), meaning that this coin can only be spend with a single valid signature of the corresponding private key.
+For example in Wasabi, each address is a [native SegWit pay to witness public key hash P2WPKH](https://programmingblockchain.gitbook.io/programmingblockchain/other_types_of_ownership/p2wpkh_pay_to_witness_public_key_hash), meaning that this coin can only be spent with a single valid signature of the corresponding private key.
 When the same address is used for several UTXOs, then this means that the same private key can spend all these coins.
 It is very easy to find all the UTXOs with the same address, and thus to find out how many bitcoin this private key holds. 
 
@@ -112,6 +112,22 @@ Further, when in a transaction one output has a reused address, then it is very 
 Most wallets automatically generate new change addresses for every transaction, but payment addresses are selected manually by the user.
 
 Read more about the privacy concerns of address reuse in the [separate entry](https://en.bitcoin.it/wiki/Address_reuse) and the [privacy chapter](https://en.bitcoin.it/Privacy#Address_reuse) of the Bitcoin wiki.
+
+There are different types of address reuse.
+
+#### Publicly advertised addresses (donations)
+
+Here one person sends one address to a public forum, like in the bio of a social media network or on a website, and anyone can send bitcoin to this address.
+
+#### Dusting
+
+With a [forced address reuse attack](https://en.bitcoin.it/Privacy#Forced_address_reuse), an attacker sends a small amount of bitcoin to an already existing address of an old coin.
+The hope is that this dust coin is consolidated with another coin, thus linking the two in a cluster.
+
+#### Intentionally malicious
+
+Since Wasabi is libre and open source, anyone can modify a fork of Wasabi to make sure the same two addresses are recycled in every CoinJoin registration.
+This is someone intentionally deanonymizing himself, such a behavior might have quite dubious motives.
 
 ### Wasabi's Solution
 
@@ -121,13 +137,14 @@ Wasabi uses the industry best practice [BIP 44 hierarchical deterministic wallet
 It is deterministic because the same parent secret always calculates the same child private keys. When given a hardened child private key, then the parent private key cannot be calculated.
 In the `Receive` tab, a new address is generated every time, and as soon as a coin is sent to it, this specific address is removed from the GUI. 
 
+To protect against forced address reuse attack (Dusting), Wasabi has a modifiable dust limit, where the wallet does not show coins below a certain threshold value.
 
 ## Inputs and outputs
 
 Bitcoin has an accounting model of [unspent transaction outputs [UTXO]](https://bitcoin.org/en/blockchain-guide#introduction).
 A transaction has inputs: the coins that are spent, and outputs: the coins that are received.
 The input of one transaction has to be an output of a previous transaction that is not yet spent.
-Each UTXO is the tip of the chain of links between inputs and outputs, all the way back to a [coin base transaction](https://en.bitcoin.it/wiki/Coinbase) that pays the miner.
+Each UTXO is the tip of the chain of links between inputs and outputs, all the way back to a [coinbase transaction](https://en.bitcoin.it/wiki/Coinbase) that pays the miner.
 
 ### Problem
 
@@ -215,4 +232,4 @@ Now they check locally if the block contains a transaction with their address.
 If not, then the filter is stored for later reference, and no block is downloaded. However, if there is a user transaction in that block, then Wasabi connects to a random Bitcoin P2P node over Tor, and asks for this entire block, not only one transaction.
 This block request is indistinguishable from the regular P2P gossip, and thus nobody, neither the server nor the full node, know which addresses belong to the user.
 
-Wasabi is per default [as private as a Bitcoin full node](/using-wasabi/NetworkLevelPrivacy.md).
+Wasabi is per default [as private as a Bitcoin full node](/why-wasabi/NetworkLevelPrivacy.md).
