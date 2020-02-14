@@ -16,6 +16,8 @@ By Satoshi Nakamoto in [How anonymous are bitcoins? - Bitcointalk](https://bitco
 
 [[toc]]
 
+![](/InfographicWhyWasabi.png)
+
 ---
 
 ## Why it is important to keep your funds private
