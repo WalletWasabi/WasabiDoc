@@ -11,14 +11,30 @@
 
 ---
 
-It is strongly recommended to **VERIFY PGP SIGNATURES** of the downloaded packages with zkSNACKs' PGP public key [${zksnacksPublicKeyFingerprint}](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt) before installing Wasabi. This protects you against malicious phishing sites giving you back-doored Wallet software.
+The easiest way to start with Wasabi is to download, verify and install the released package.
 Don't trust - Verify!
+This is a version of the software that is thoroughly reviewed by the contributors and it should be stable.
+The package has the binary code that is needed to run the Wasabi Wallet client including the graphical user interface.
+For compiling the open source code with cutting edge development features, also including the backend server, see this [tutorial here](/using-wasabi/BuildSource.md).
+
 
 Download the packages either from the official [WasabiWallet.io](https://wasabiwallet.io/) clearnet website, or for your privacy's sake, from the official tor hidden service [http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion/](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion/).
 
 ![](/DownloadAll.png)
 
+Although there is automatic signature verification on Windows and MacOS, it is still recommended to manually **VERIFY PGP SIGNATURES** of the downloaded package with zkSNACKs' PGP public key [${zksnacksPublicKeyFingerprint}](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt) before installing Wasabi.
+This protects you against malicious phishing sites giving you back-doored wallet software.
 If you have personally verified zkSNACKs' PGP public key [${zksnacksPublicKeyFingerprint}](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt) and you are familiar with the [Web Of Trust](https://security.stackexchange.com/questions/147447/gpg-why-is-my-trusted-key-not-certified-with-a-trusted-signature), please consider also [signing it](https://www.gnupg.org/gph/en/manual/x334.html).
+
+:::tip Always
+Don't trust - Verify!
+:::
+
+## Install Wasabi step-by-step
+
+1. Download the Wasabi package relevant to your operating system from [wasabiwallet.io](https://wasabiwallet.io).
+2. Verify the PGP signatures of the download.
+3. Install Wasabi package as you would do any other software on your operating system.
 
 ---
 
