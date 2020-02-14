@@ -22,7 +22,7 @@ Download the packages either from the official [WasabiWallet.io](https://wasabiw
 
 ![](/DownloadAll.png)
 
-Although there is automatic signature verification on Windows and MacOS, it is still recommended to manually **VERIFY PGP SIGNATURES** of the downloaded packages with zkSNACKs' PGP public key [${zksnacksPublicKeyFingerprint}](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt) before installing Wasabi.
+Although there is automatic signature verification on Windows and MacOS, it is still recommended to manually **VERIFY PGP SIGNATURES** of the downloaded package with zkSNACKs' PGP public key [${zksnacksPublicKeyFingerprint}](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt) before installing Wasabi.
 This protects you against malicious phishing sites giving you back-doored wallet software.
 If you have personally verified zkSNACKs' PGP public key [${zksnacksPublicKeyFingerprint}](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt) and you are familiar with the [Web Of Trust](https://security.stackexchange.com/questions/147447/gpg-why-is-my-trusted-key-not-certified-with-a-trusted-signature), please consider also [signing it](https://www.gnupg.org/gph/en/manual/x334.html).
 
