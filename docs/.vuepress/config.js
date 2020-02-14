@@ -136,7 +136,6 @@ module.exports = {
             "/why-wasabi/BitcoinPrivacy.md",
             "/why-wasabi/NetworkLevelPrivacy.md",
             "/why-wasabi/GainingPrivacyWasabi.md",
-            "/why-wasabi/10Commandments.md",
             "/why-wasabi/TransactionSurveillanceCompanies.md"
           ]
         }
@@ -148,7 +147,8 @@ module.exports = {
 	  collapsable: false,
 	  sidebarDepth: 2,
 	  children: [
-	    "/using-wasabi/ELI5.md"
+          "/using-wasabi/ELI5.md",
+          "/using-wasabi/10Commandments.md"
 	  ]
        },
    {
