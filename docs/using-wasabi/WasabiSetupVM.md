@@ -102,15 +102,15 @@ Start the gnome-terminal of `source-wasabi`.
 [user@dom0 ~]$ qvm-run -a source-wasabi gnome-terminal
 ```
 
-Clone & build Wasabi
+Clone & run Wasabi.
 
 ```sh
 [user@source-wasabi ~]$ git clone https://github.com/zkSNACKs/WalletWasabi.git
 [user@source-wasabi ~]$ cd WalletWasabi/WalletWasabi.Gui
-[user@source-wasabi ~]$ dotnet build
+[user@source-wasabi ~]$ dotnet run
 ```
 
-Add the development branches to your git.
+Checkout a developer branch.
 
 ```sh
 [user@source-wasabi ~]$ git remote add nopara73 https://github.com/nopara73/WalletWasabi
@@ -118,12 +118,10 @@ Add the development branches to your git.
 [user@source-wasabi ~]$ git checkout <development branch>
 ```
 
-Pull the latest commits and compile from source.
+Pull the latest commits.
 
 ```sh
 [user@source-wasabi ~]$ git pull
-[user@source-wasabi ~]$ dotnet build
-[user@source-wasabi ~]$ dotnet run
 ```
 
 ### Install Package in App VM
@@ -229,15 +227,15 @@ Instructions on how to create linked clones in VirtualBox can be found [here](ht
 
 Start your cloned VM, and open a terminal window.
 
-To clone & build Wasabi, do:
+Clone & run Wasabi.
 
 ```sh
 your@vm:~$ git clone https://github.com/zkSNACKs/WalletWasabi.git
 your@vm:~$ cd WalletWasabi/WalletWasabi.Gui
-your@vm:~$ dotnet build
+your@vm:~$ dotnet run
 ```
 
-Checkout a developer branch:
+Checkout a developer branch.
 
 ```sh
 your@vm:~$ git remote add nopara73 https://github.com/nopara73/WalletWasabi
@@ -245,12 +243,10 @@ your@vm:~$ git fetch nopara73
 your@vm:~$ git checkout <development branch>
 ```
 
-Pull the latest commits and compile from source:
+Pull the latest commits.
 
 ```sh
 your@vm:~$ git pull
-your@vm:~$ dotnet build
-your@vm:~$ dotnet run
 ```
 
 If you are comfortable with [Git](https://git-scm.com/), you can now have several versions of Wasabi running for testing purposes, at the same time, on the same computer.
