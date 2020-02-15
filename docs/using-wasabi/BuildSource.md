@@ -31,12 +31,11 @@ You can disable .NET's telemetry, which is sending some usage information to Mic
 
 ## Get Wasabi
 
-Clone & build
+Clone Wasabi repository
 
 ```sh
 git clone https://github.com/zkSNACKs/WalletWasabi.git
 cd WalletWasabi/WalletWasabi.Gui
-dotnet build
 ```
 
 ## Run Wasabi
@@ -51,7 +50,6 @@ dotnet run
 
 ```sh
 git pull
-dotnet build
 ```
 
 :::warning Experimental
@@ -70,5 +68,4 @@ git remote add nopara73 https://github.com/nopara73/WalletWasabi
 git fetch nopara73
 git checkout branchname
 git pull
-dotnet build
 ```
