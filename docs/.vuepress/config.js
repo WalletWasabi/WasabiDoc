@@ -167,7 +167,8 @@ module.exports = {
             "/using-wasabi/WalletGeneration.md",
             "/using-wasabi/Receive.md",
             "/using-wasabi/CoinJoin.md",
-            "/using-wasabi/Send.md"
+            "/using-wasabi/Send.md",
+            "/using-wasabi/BitcoinFullNode.md"
           ]
         },
     {
