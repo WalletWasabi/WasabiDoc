@@ -13,105 +13,83 @@
 
 ## 1. Wasabi is for defense only
 
+Wasabi is a powerful free and open source Bitcoin wallet, and it shall only be used to protect your property, never to steal from others.
+
 ## 2. Verify the integrity of your software
 
-Wasabi Wallet is an open-source project with many contributors.
-When downloading the wallet, you may choose to go to the official site or to the official GitHub to build from source.
-Wasabi is available at our official site:
-
-Clear-net: [wasabiwallet.io](https://wasabiwallet.io)
-
-Tor hidden service: [wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion)
-
-Please [check signatures](/using-wasabi/InstallPackage.md) after completing downloads.
+When installing the wallet, you may choose to [download the package](/using-wasabi/InstallPackage.md) from the official [clearnet](https://wasabiwallet.io) or [tor hidden service](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion), or [compile the source code](/using-wasabi/BuildSource.md) from the official [GitHub repository](https://github.com/zkSNACKs/WalletWasabi
+)
+Please [verify signatures](/using-wasabi/InstallPackage.md) after completing downloads.
 The concern here is that you may accidentally fall for a phishing attempt and be on a malicious site downloading a malicious piece of software.
 
-Alternatively, as Wasabi is [libre and open source software](https://github.com/zkSNACKs/WalletWasabi), you may also [build the code from source](/using-wasabi/BuildSource.md).
+## 3. Backup your mnemonic words and password (BOTH!)
 
-## 3. Keep your mnemonic words and password safely stored (BOTH!)
-
-When creating a new wallet - write down your mnemonic seed AND password and store them safely.
-Wasabi is a fully non-custodial wallet, which means that you should always be in possession of your keys, and this means safely storing a backup in case your computer is lost or the wallet crashes.
-Often times when things go wrong, users panic.
-If you have done this step, there is very little you have to worry about.
+When [creating a new wallet](/using-wasabi/WalletGeneration.md), write down your mnemonic recovery words **AND** password and store them safely.
+Wasabi is a fully non-custodial wallet, which means that you should always be in possession of your keys, and this means safely storing a backup.
+If you have done this step, then even if your computer crashes, there is very little you have to worry about, you can always [recover your wallet](/using-wasabi/WalletRecovery.md).
 Also, under no circumstance should you reveal the password or mnemonic words to anyone that asks for them.
-Lastly, understand that if you lose your password, it becomes much harder (if not impossible) to restore your wallet - so store both safely!
+Lastly, understand that if you [lose your password](/using-wasabi/LostPassword.md), it becomes much harder (if not impossible) to restore your wallet - so store both safely!
 
 ## 4. Practice good labeling AND try to never reuse addresses
 
-Each time you generate an address to receive bitcoin or you send a transaction, you must label the address with the observers of this transaction.
-This label is only for you and is stored exclusively on your device.
-Wasabi has strong coin control features, and as you continue to use the wallet, you can see how known are your coins, which is possible only if you practice good labeling.
+Each time you generate an address to [receive bitcoin](/using-wasabi/Receive.md) or you [send a transaction](/using-wasabi/Send.md), you must label the address with the observers of this transaction.
+This label is here to help you with understanding your wallet, and is stored exclusively on your device.
+Wasabi has strong coin control features, and as you continue to use the wallet properly, you can see who knows are your coins.
 
-You can read more about labels [here](/using-wasabi/Receive.md#the-importance-of-labeling).
-
-Lastly, if you must use an exchange, try to ask for a new deposit address on each deposit.
-In the same way that you should never receive Bitcoin to the same address twice, you should try to avoiding sending Bitcoin to the same address twice.
+Lastly, in the same way that you should never receive bitcoin to the same address twice, you should try to avoiding sending bitcoin to the same address twice.
+So ask the recipients to provide you a new address for every transaction.
 
 ## 5. CoinJoin whenever possible and be patient!
 
-The process of engaging in a CoinJoin is as simple as selecting a coin or coins to enqueue and entering your password.
-Once coins have enqueued for coinjoining, you must keep your computer online and awake, as the CoinJoin process is interactive.
-As a CoinJoin is really just many users (up to 100) enqueuing coins at the same time, it may take up to two hours for you to successfully participate in a CoinJoin and clean outputs should only be spent once the CoinJoin transaction is confirmed.
-For context, Wasabi currently does 18 CoinJoins a day, or roughly one every 1 hour and 20 minutes.
+The process of engaging in a [CoinJoin](/using-wasabi/CoinJoin.md) is as simple as selecting a coins to enqueue and entering your password.
+Once coins have enqueued for coinjoining, you must keep your computer online and awake, because this is an interactive process.
+As a CoinJoin is up to 100 users enqueuing coins at the same time, it may take up to one hour for you to successfully participate in a CoinJoin.
 As more users join the network, the frequency of these CoinJoins will go up.
-Lastly, if you are able and patient enough to re-mix your coins, please do so.
+Lastly, if you remix your coins, this provides you and your peers with plenty of additional privacy.
 
-## 6. Use separate profiles
+## 6. Never merge mixed and unmixed coins, and avoid large merges of mixed coins!
 
-When you put a label on an address, or ask a question on Reddit or send coins to a merchant be wary of the profile you choose.
-If you can create a dummy Reddit account as opposed to an account where you may have revealed your personal details elsewhere - use that.
-When you spend coins from your wallet, consider what you might want to keep private from the merchant or individual you are interacting with.
-In the same way that reusing addresses hurts your privacy, consolidating all of your online behavior into one profile can do the same.
-
-## 7. Never merge mixed and unmixed coins, and avoid large merges of mixed coins!
-
-The first part should be somewhat intuitive - coins in your wallet have shields <img src="/Shields.png" alt="Shields" width="74" height="15" style="margin:0;border:0;" /> and it is at a minimum important to never send non-red coins (coins with anonset > 1) with red coins (coins with anonset == 1).
+The first part should be somewhat intuitive - coins in your wallet have anonymity set shields, and it is very important to never send <img src="/ShieldCheckmark.png" alt="checkmark" class="shield" /> <img src="/ShieldGreen.png" alt="green" class="shield" /> <img src="/ShieldYellow.png" alt="yellow" class="shield" /> coins (with anonset > 1) with <img src="/ShieldRed.png" alt="red" class="shield" /> coins (with anonset = 1).
 By merging your tainted coins with your mixed coins, you undo the privacy benefits of CoinJoins!
-Further, when sending mixed coins to your cold storage, make sure to send your coins in parallel.
-Don't merge all of your Bitcoin (more than 0.8 BTC) in a single transaction!
-Instead, take your time and send coins to multiple addresses belong to your cold storage over a few hours or days.
-If you are sending coins to an exchange, you can get the same result by requesting a brand new address to receive coins.
+
+Further, when sending mixed coins to your cold storage, make sure to send your coins in small batches after each other.
+Don't merge all of your bitcoin in one single transaction!
+This would reveal that one entity controls all of these several coins.
+Instead, take your time and send coins to multiple addresses of your cold storage over a few hours or days.
 
 For more information, please see the discussions [here](https://www.reddit.com/r/WasabiWallet/comments/avxbjy/combining_mixed_coins_privacy_megathread/).
 
-## 8. Avoid 3rd party servers & Buy Bitcoin P2P
+## 7. Avoid 3rd party servers
 
-Wasabi is designed to allow users to see their balances without any concern that a third party would be able to link your addresses to you, or to each other.
-Very few wallets can say this, but if you proceed to enter your address into a block explorer, or use a third party wallet with your keys or your hardware device - all bets are off.
+Wasabi is designed to allow users to see their balances [without any concern that a third party](/why-wasabi/BitcoinPrivacy.html#network-snooping) would be able to link your addresses to you, or to each other.
+But if you proceed to enter your address into a block explorer, or use trust a third party server with your public keys - all bets are off.
 So if you want to check on the status of a transaction or the balance on an address, you should first:
 
-(a) Check your Wasabi Wallet
-
-(b) Check through your full node
-
-(c) Use a block explorer through Tor (e.g. [Blockstream Esplora Tor](http://explorerzydxu5ecjrkwceayqybizmpjjznk5izmitf2modhcusuqlid.onion/))
+1. Check your Wasabi Wallet
+2. Check through your full node
+3. Use a block explorer through Tor (e.g. [Blockstream Esplora Tor](http://explorerzydxu5ecjrkwceayqybizmpjjznk5izmitf2modhcusuqlid.onion/)) and generate new Tor identities for every query.
 
 If you think that forensics companies are not paying big money to block explorers for user information, you are wrong.
 Even something as simple as leaving a comment on a YouTube video or Reddit post will be scraped.
 
-More importantly, if you are using a hardware wallet, an easy way to undo the previous times you plugged in the wallet through non-private applications is to create a new account on the device with a passphrase.
-For example, for Ledger Nano S, you can do this in the device `home screen > security > passphrase`.
-Remember Commandment 2!
+## 8. Run your own full node (if you can)
 
-Remember, Bitcoin is a peer-to-peer cash system, so when you have the opportunity to do so, buy your coins directly from someone you know or through a P2P market place.
-Not only will this benefit your privacy, it will save you on exchange fees and potential insolvency issues with the exchange you are dealing with.
+Wasabi will protect your network level privacy even without your own full node.
+However, if you can spare the resources on your device, running a full node is the only way to properly verify the bitcoin you receive.
+Wasabi comes [packaged with a Bitcoin full node](/using-wasabi/BitcoinFullNode.md), and you can easily start it with one click in the settings.
+If you have a full node already running on the same device, Wasabi will use it automatically per default.
+Finally, you can even connect to your remote node over Tor.
 
-## 9. Run your own full node (if you can)
+## 9. Use separate profiles
 
-Wasabi will work just fine without a local full node on your device, however, if you can spare the resources on your device, running a full node will do that much more for your privacy.
-Local full nodes will (when running in tandem with Wasabi) be automatically used for querying blocks.
+When you ask a question on Reddit or send coins to a merchant, be wary of the public identity you choose.
+You can create a dummy Reddit account as opposed to an account where you may have revealed your personal details elsewhere.
+When you spend coins from your wallet, consider what you might want to keep private from the merchant or individual you are interacting with.
+In the same way that reusing addresses hurts your privacy, consolidating all of your online behavior into one profile can do the same.
 
 ## 10. Use Lightning
 
 Wasabi is an ideal wallet for many things, but trade-offs exist with everything.
-If you have small amounts of un-mixed change from previous CoinJoins and you are unable to meet the requirements to engage in a CoinJoin, consider using that coin to open a lightning channel.
 Lightning is still a project in its early days, but the privacy topology of lightning payments is much more ideal over on-chain payments if you have the choice.
 Routing large amounts can be uncertain, but for small amounts the network is becoming steadily more reliable.
 Currently Wasabi does not support in-wallet lightning features, but it is on the road-map.
-
-## Credits
-
-Much of this list comes from the work of our good friends at JoinMarket.
-In particular, we need to thank [Adam Gibson](https://twitter.com/waxwing__) and [Chris Belcher](https://twitter.com/chris_belcher_) for their outstanding contribution to privacy in Bitcoin.
-Please take a look at the [Bitcoin Privacy Wiki](https://en.bitcoin.it/wiki/Privacy), the [Join Market Wiki](https://en.bitcoin.it/wiki/JoinMarket) and the [Join Market source code](https://github.com/JoinMarket-Org).
