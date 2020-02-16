@@ -1223,13 +1223,17 @@ It was introduced with the 0.7 release, introduced a third genesis block, a new 
 :::details
 ### How do I connect my own full node to Wasabi?
 
-There is currently a basic implementation of connecting [your full node to Wasabi](/using-wasabi/BitcoinFullNode.md).
-The server will still send you [BIP 158 block filters](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients), and when you realize that a block contains a transaction of yours, then you pull this block from your own full node, instead of a random P2P node, thus you can verify that this is actually a valid block including your transaction.
-One attack vector could be that Wasabi lies to you and gives you wrong filters that exclude your transaction, thus you would see in the wallet less coins than you actually control.
-[BIP 157 solves this](/using-wasabi/BIPs.md#bip-157-client-side-block-filtering).
+There are several benefits to running your own [full node with Wasabi](/using-wasabi/BitcoinFullNode.md).
+Currently, there is a work in progress Bitcoin Core integration that is further being improved upon.
 
-When your full node is on the same hardware [computer, laptop] as your Wasabi Wallet, it will automatically recognize it and pull blocks from there.
-If your node is on a remote device [raspberry pi, nodl, server], then you can specify your local IP in the `Settings` tab, or in line 11 of the config file.
+There are three different ways of using your full node with Wasabi:
+- If you have a full node already running on the same computer as Wasabi, it will automatically be detected and used by default.
+- If you have a full node on a remote computer, then you can connect to it by specifying the local network IP address or tor hidden service in the Wasabi `Settings` tab.
+
+![](/SettingsBitcoinCoreRemote.png)
+- If you are not yet running a full node, Wasabi has the bitcoind binaries included, and with one click in the `Settings`, you can start Bitcoin together with Wasabi.
+
+![](/SettingsBitcoinCore.png)
 
 @[youtube](gWo2RAkIVrE)
 :::
