@@ -187,3 +187,59 @@ done
 wassabee </dev/null &>/dev/null &
 ```
 
+## Hardware Wallet tutorial (udev rules)
+
+On Linux you need to create a set of `udev` rules to allow hardware wallet access.
+
+Since Wasabi keeps the configuration files on `$HOME` it's necessary to change persistence in order to keep them.
+
+So configure persistence, download Wasabi and unpack it inside `Persistent` folder then reboot tails with `root` support and launch the following commands from the Terminal:
+
+```
+sudo -i
+echo -e "/home/amnesia/.walletwasabi\tsource=walletwasabi" >> /live/persistence/TailsData_unlocked/persistence.conf
+mkdir -p /live/persistence/TailsData_unlocked/walletwasabi
+chown amnesia:amnesia /live/persistence/TailsData_unlocked/walletwasabi
+```
+
+### ColdCard Wallet
+
+If you want to use a ColdCard device, you need to configure the udev rules:
+
+```
+mkdir -p /live/persistence/TailsData_unlocked/udev.rules.d
+wget -P /live/persistence/TailsData_unlocked/udev.rules.d https://raw.githubusercontent.com/Coldcard/ckcc-protocol/master/51-coinkite.rules
+echo -e "/etc/udev/rules.d\tsource=udev.rules.d,link" >> /live/persistence/TailsData_unlocked/persistence.conf
+```
+
+### Ledger devices
+
+If you want to use a Ledger device, you need to configure the udev rules:
+
+```
+mkdir -p /live/persistence/TailsData_unlocked/udev.rules.d
+wget -P /live/persistence/TailsData_unlocked/udev.rules.d https://raw.githubusercontent.com/LedgerHQ/udev-rules/master/20-hw1.rules
+echo -e "/etc/udev/rules.d\tsource=udev.rules.d,link" >> /live/persistence/TailsData_unlocked/persistence.conf
+```
+
+### Trezor devices
+
+If you want to use a Trezor device, you need to configure the udev rules:
+
+```
+mkdir -p /live/persistence/TailsData_unlocked/udev.rules.d
+wget -P /live/persistence/TailsData_unlocked/udev.rules.d https://raw.githubusercontent.com/trezor/trezor-common/master/udev/51-trezor.rules
+echo -e "/etc/udev/rules.d\tsource=udev.rules.d,link" >> /live/persistence/TailsData_unlocked/persistence.conf
+```
+
+### Keepkey devices
+
+If you want to use a KeepKey device, you need to configure the udev rules:
+
+```
+mkdir -p /live/persistence/TailsData_unlocked/udev.rules.d
+wget -P /live/persistence/TailsData_unlocked/udev.rules.d https://raw.githubusercontent.com/keepkey/udev-rules/master/51-usb-keepkey.rules
+echo -e "/etc/udev/rules.d\tsource=udev.rules.d,link" >> /live/persistence/TailsData_unlocked/persistence.conf
+```
+
+Now just reboot and enjoy!
