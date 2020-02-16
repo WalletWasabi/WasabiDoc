@@ -13,7 +13,14 @@ And why Wasabi can make Bitcoin an even better tool of self defense by default.
 
 ### Chapters
 
+#### Why Privacy
+
 - [Why Privacy is Important](/why-wasabi/WhyPrivacyImportant.md)
-- [Privacy in Bitcoin](/why-wasabi/BitcoinPrivacy.md)
+- [Why Financial Privacy is Especially Important](/why-wasabi/WhyFinancialPrivacy.md)
+
+#### Privacy in Bitcoin
+- [Address Reuse](/why-wasabi/AddressReuse.md)
+- [Coins](/why-wasabi/Coins.md)
+- [Transaction Graph](/TransactionGraph.md)
 - [Network Level Privacy](/why-wasabi/NetworkLevelPrivacy.md)
 - [Transaction Surveillance Companies](/why-wasabi/TransactionSurveillanceCompanies.md)
