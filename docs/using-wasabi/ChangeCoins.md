@@ -1,6 +1,6 @@
 ---
 {
-  "title": "What to do with Change Coins",
+  "title": "Change Coins",
   "description": "Details about the privacy of different types of change and strategies for using them. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
 }
 ---
@@ -74,6 +74,79 @@ However, when sending a coin that is change from an earlier transaction, then th
 Whenever you are merging coins in one transaction, it becomes clear to any outside observer that these coins belong to the same entity, thus linking the previous transaction history.
 
 You want to avoid merging `anonymity set 1` coins with `anonymity set > 1` mixed coins whenever possible, because this will link these coins and negate the privacy of the mixed coins gained through the CoinJoin.
+
+## Heuristics identifying change
+
+One prime goal of [transaction surveillance companies](/why-wasabi/TransactionSurveillanceCompanies.md) is to identify the change coin of a Bitcoin transaction, as this is vital information to build a cluster of coins belonging to one entity.
+There are several heuristics that are used to deanonymize users.
+
+### Address reuse
+
+When several coins have the same address, then they are owned all by the same entity.
+Thus if a transaction has a reused address in the output, it is very likely to be the payment amount from one to the other entity.
+Thus the other output of this transaction, is likely to be the change of the entity providing the inputs in the transaction.
+
+:::warning Remember
+Never reuse addresses!
+:::
+
+### Wallet fingerprinting
+
+Different software wallets have different methods of creating Bitcoin transactions.
+So if it becomes known that a transaction was created by a specific wallet, then it can be checked how this wallet handles change.
+
+Wasabi tries to build the most common form of transaction structure, thus reducing the likely hood to identify any given transaction to be from Wasabi.
+However, Wasabi CoinJoins are very easily fingerprinted, and any coin associated is clearly managed with Wasabi Wallet.
+
+### Round numbers
+
+When making a payment, then often the destination address receives a rounded number of bitcoin.
+Because the input is usually a non-rounded amount, the second output will also be non-rounded.
+This makes it clear that the second output is the change back to the sender.
+
+```
+A [0.1293 0112 btc]  -->  B [0.0500 0000 btc]
+                          C [0.1189 4849 btc] (= change)
+```
+
+:::tip
+In order to protect your privacy, add or remove a couple sats from the payment amount to obfuscate your change.
+:::
+
+### CoinJoin
+
+A CoinJoin has many unequal value inputs, and creates several equal value anonset outputs, as well as unequal value outputs, making it clear that these are the change outputs.
+
+:::tip
+This is why the CoinJoin change has only 1 anonset <img src="/ShieldRed.png" alt="red" class="shield" />.
+:::
+
+```
+                C [1 btc]
+A [6 btc]  -->  D [1 btc]
+B [3 btc]       E [5 btc] (= change)
+                F [2 btc] (= change)
+
+```
+
+### Replace by Fee
+
+[BIP 125](/using-wasabi/BIPs.md#bip-125-opt-in-full-replace-by-fee-signaling) allows for one unconfirmed transaction to be double spent and replaced by a second transaction that pays a higher fee.
+However, the output that is reduced in the second transaction is likely to be the change output, as the sender pays the fee.
+
+```
+First tranaction
+
+A [1.3576 1516 btc]  -->  B [1.0135 6515 btc]
+                          C [0.3440 4861 btc] 
+
+Second transaction
+
+A [1.3576 1516 btc]  -->  B [1.0135 6515 btc]
+                          C [0.3440 4721 btc] (= change)
+```
+
+Out of this privacy concern, Wasabi does not utilize RBF fee bumping.
 
 ## Your options to use change privately
 
