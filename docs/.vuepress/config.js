@@ -135,7 +135,6 @@ module.exports = {
             "/why-wasabi/WhyPrivacyImportant.md",
             "/why-wasabi/BitcoinPrivacy.md",
             "/why-wasabi/NetworkLevelPrivacy.md",
-            "/why-wasabi/GainingPrivacyWasabi.md",
             "/why-wasabi/TransactionSurveillanceCompanies.md"
           ]
         }
