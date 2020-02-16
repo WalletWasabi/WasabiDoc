@@ -180,17 +180,6 @@ module.exports = {
             "/using-wasabi/Deanonimization.md"
           ]
         },
-    {          
-          title: "Restoring Wasabi",
-          collapsable: false,
-          sidebarDepth: 2,
-          children: [
-            "/using-wasabi/WalletRecovery.md",
-            "/using-wasabi/RestoreElectrum.md",
-            "/using-wasabi/LostPassword.md",
-            "/using-wasabi/PasswordFinder.md"
-	  ]
-	},
     {
           title: "Advanced",
           collapsable: false,
@@ -206,7 +195,18 @@ module.exports = {
             "/using-wasabi/BIPs.md"
          ]
         },
-    {
+    {          
+          title: "Restoring Wasabi",
+          collapsable: false,
+          sidebarDepth: 2,
+          children: [
+            "/using-wasabi/WalletRecovery.md",
+            "/using-wasabi/RestoreElectrum.md",
+            "/using-wasabi/LostPassword.md",
+            "/using-wasabi/PasswordFinder.md"
+	  ]
+	},
+     {
           title: "Research",
           collapsable: false,
           sidebarDepth: 2,

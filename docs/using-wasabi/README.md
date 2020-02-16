@@ -26,17 +26,12 @@ Further tutorials about the different parts of the wallet, for newbies and power
 - [CoinJoin](/using-wasabi/CoinJoin.md)
 - [Send](/using-wasabi/Send.md)
 
+
 #### Privacy Best Practices
 - [Address Reuse](/using-wasabi/AddressReuse.md)
 - [Change Coins](/using-wasabi/ChangeCoins.md)
 - [Network Level Privacy](/using-wasabi/NetworkLevelPrivacy.md)
 - [How you can be de-anonymized using Bitcoin](/using-wasabi/Deanonimization.md)
-
-#### Restoring Wasabi
-- [Wallet Recovery](/using-wasabi/WalletRecovery.md)
-- [Restoring Wasabi Wallet to Electrum](/using-wasabi/RestoreElectrum.md)
-- [Lost Password Strategy](/using-wasabi/LostPassword.md)
-- [Password Finder](/using-wasabi/PasswordFinder.md)
 
 #### Advanced
 - [Deterministic Build](/using-wasabi/DeterministicBuild.md)
@@ -47,6 +42,12 @@ Further tutorials about the different parts of the wallet, for newbies and power
 - [RPC Interface](/using-wasabi/RPC.md)
 - [Lurking Wife Mode](/using-wasabi/LurkingWifeMode.md)
 - [Supported BIPs](/using-wasabi/BIPs.md)
+
+#### Restoring Wasabi
+- [Wallet Recovery](/using-wasabi/WalletRecovery.md)
+- [Restoring Wasabi Wallet to Electrum](/using-wasabi/RestoreElectrum.md)
+- [Lost Password Strategy](/using-wasabi/LostPassword.md)
+- [Password Finder](/using-wasabi/PasswordFinder.md)
 
 #### Research
 - [Pay to EndPoint](/using-wasabi/PayToEndPoint.md)
