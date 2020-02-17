@@ -853,13 +853,13 @@ During this phase you have the opportunity to register coins that you want to mi
 Your Wasabi client connects to the coordinator server with a unique tor identity called Alice, and with it you send the input proofs, the clear-text change output, and the blinded anonset CoinJoin address.
 When all the proofs are valid, the coordinator signs the blinded output without knowing which address this is, and sends this back to Alice.
 Since the goal is to have 100 peers in one round, the [input registration phase](/using-wasabi/CoinJoin.md#input-registration) can take some time.
-But regardless of how many participants, two hours after the last CoinJoin this phase is complete.
+But regardless of how many participants, one hour after the last CoinJoin this phase is complete.
 :::
 
 :::details
 ### What is happening in the connection confirmation phase?
 
-Because the input registration phase can take up to two hours, the coordinator needs to ensure that everyone is still online and ready to continue.
+Because the input registration phase can take up to one hour, the coordinator needs to ensure that everyone is still online and ready to continue.
 So in the [connection confirmation phase](/using-wasabi/CoinJoin.md#connection-confirmation) every Alice sends a signal to the coordinator, and when all have checked in, this phase concludes.
 :::
 
@@ -999,7 +999,7 @@ You also get information about the current mempool for fee estimation as well as
 
 It depends on many things, the longest period is the wait for all peers to register their coins.
 First of all from your desired anonymity set, every round has a goal of 100 anonymity set.
-Wasabi is developed in a way that there's a round at least once every two hours.
+Wasabi is developed in a way that there's a round at least once every one hour.
 If the 100 peers registered earlier, then there can be many rounds per hour.
 When all peers are registered, then the signing phase is done within a couple of seconds.
 
