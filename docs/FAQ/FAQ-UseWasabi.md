@@ -1231,7 +1231,8 @@ There are three different ways of using your full node with Wasabi:
 - If you have a full node on a remote computer, then you can connect to it by specifying the local network IP address or tor hidden service in the Wasabi `Settings` tab.
 
 ![](/SettingsBitcoinCoreRemote.png)
-- If you are not yet running a full node, Wasabi has the bitcoind binaries included, and with one click in the `Settings`, you can start Bitcoin together with Wasabi.
+
+- If you are not yet running a full node, Wasabi has the bitcoind binaries included, and with one click in the `Settings`, you can start Bitcoin Core together with Wasabi.
 
 ![](/SettingsBitcoinCore.png)
 
