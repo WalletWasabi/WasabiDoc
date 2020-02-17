@@ -73,11 +73,11 @@ However, when sending a coin that is change from an earlier transaction, then th
 
 Whenever you are merging coins in one transaction, it becomes clear to any outside observer that these coins belong to the same entity, thus linking the previous transaction history.
 
-You want to avoid merging `anonymity set 1` coins with `anonymity set > 1` mixed coins whenever possible, because this will link these coins and negate the privacy of the mixed coins gained through the CoinJoin.
+You want to avoid merging `anonymity set 1` coins with `anonymity set > 1` mixed coins whenever possible, because this will link these coins, and negate the privacy of the mixed coins that was gained through the CoinJoin.
 
 ## Heuristics identifying change
 
-One prime goal of [transaction surveillance companies](/why-wasabi/TransactionSurveillanceCompanies.md) is to identify the change coin of a Bitcoin transaction, as this is vital information to build a cluster of coins belonging to one entity.
+One prime goal of [transaction surveillance companies](/why-wasabi/TransactionSurveillanceCompanies.md) is to identify the change coin of a Bitcoin transaction, as this is vital information for building a cluster of coins belonging to one entity.
 There are several heuristics that are used to deanonymize users.
 
 ### Address reuse
@@ -95,7 +95,7 @@ Never reuse addresses!
 Different software wallets have different methods of creating Bitcoin transactions.
 So if it is known that a transaction was created by a specific wallet, then it can be checked how this wallet handles change.
 
-Wasabi tries to build the most common form of transaction structure, thus reducing the likely hood to identify any given transaction to be from Wasabi.
+Wasabi tries to build the most common form of transaction structure, thus reducing the likelihood of identifying any given transaction as being from Wasabi.
 However, Wasabi CoinJoins are very easily fingerprinted, and any coin associated is clearly managed with Wasabi Wallet.
 
 ### Round numbers
