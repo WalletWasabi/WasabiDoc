@@ -13,7 +13,7 @@
 
 ## 1. Wasabi is for defense only
 
-Wasabi is a powerful free and open source Bitcoin wallet, and it shall only be used to protect your property, never to steal from others.
+Wasabi is a powerful free and open source Bitcoin wallet, and it is used to protect your privacy.
 
 ## 2. Verify the integrity of your software
 
@@ -24,7 +24,7 @@ The concern here is that you may accidentally fall for a phishing attempt and be
 ## 3. Backup your recovery words and password (BOTH!)
 
 When [creating a new wallet](/using-wasabi/WalletGeneration.md), write down your recovery words **AND** password and store them safely in separate locations.
-This way, if a malicious person manages to find one of them, he or she will still need to find the other in order to gain access to your coins.
+This way, if a malicious person manages to find one of them, he or she still needs to find the other in order to gain access to your coins.
 It also gives you time to move your coins to a different wallet if you notice that one of the two storage locations has been compromised.
 
 
