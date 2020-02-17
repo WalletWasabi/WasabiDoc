@@ -235,7 +235,6 @@ module.exports = {
             "/building-wasabi/ContributionChecklist.md",
             "/building-wasabi/Dojo.md",
             "/building-wasabi/ToDo.md",
-            "/building-wasabi/CodingConventions.md",
             "/building-wasabi/ContributionGame.md",
             "/building-wasabi/FalsePositive.md",
             "/building-wasabi/Security.md",
