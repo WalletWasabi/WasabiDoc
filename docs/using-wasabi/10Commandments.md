@@ -23,7 +23,11 @@ The concern here is that you may accidentally fall for a phishing attempt and be
 
 ## 3. Backup your recovery words and password (BOTH!)
 
-When [creating a new wallet](/using-wasabi/WalletGeneration.md), write down your recovery words **AND** password and store them safely.
+When [creating a new wallet](/using-wasabi/WalletGeneration.md), write down your recovery words **AND** password and store them safely in separate locations.
+This way, if a malicious person manages to find one of them, he or she will still need to find the other in order to gain access to your coins.
+It also gives you time to move your coins to a different wallet if you notice that one of the two storage locations has been compromised.
+
+
 Wasabi is a fully non-custodial wallet, which means that you are always in possession of your keys, and this means safely storing a backup.
 If you have done this step, then even if your computer crashes, there is very little you have to worry about, you can always [recover your wallet](/using-wasabi/WalletRecovery.md).
 Also, under no circumstance should you reveal the password or mnemonic words to anyone that asks for them.
