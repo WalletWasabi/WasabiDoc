@@ -40,10 +40,6 @@ Don't trust - Verify!
 
 ## Windows
 
-@[youtube](tkaaC8yET1o)
-
-@[youtube](D8U53PFEsVk)
-
 1. [Download](https://wasabiwallet.io/#download) the `.msi` installer of the latest Wasabi release.
 
 ![](/DownloadWindows.png)
@@ -60,9 +56,11 @@ You will also have an icon in your Start Menu and on your Desktop.
 After the first run, a [data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) will be created. 
 Among others, here is where your wallet files and your logs reside.
 
-## Debian and Ubuntu
+@[youtube](tkaaC8yET1o)
 
-@[youtube](DUc9A76rwX4)
+@[youtube](D8U53PFEsVk)
+
+## Debian and Ubuntu
 
 If you have already imported zkSNACKs' PGP public key, then jump to step 2.
 
@@ -88,13 +86,9 @@ You can ignore this, but if you want to fully verify your download, you need to 
 After the first run, a [data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) will be created.
 Among others, here is where your wallet files and your logs reside.
 
+@[youtube](DUc9A76rwX4)
+
 ## Other Linux
-
-(Note that this video was created on macOS, but the steps are the same for Linux)
-
-@[youtube](qFbv_b-bju4)
-
-@[youtube](zPKpC9cRcZo)
 
 If you have already imported zkSNACKs' PGP public key, then jump to step 2.
 
@@ -122,11 +116,13 @@ You can ignore this, but if you want to fully verify your download, you need to 
 After the first run, a [data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) will be created.
 Among others, here is where your wallet files and your logs reside.
 
+(Note that this video was created on macOS, but the steps are the same for Linux)
+
+@[youtube](qFbv_b-bju4)
+
+@[youtube](zPKpC9cRcZo)
+
 ## macOS
-
-@[youtube](_Zmc54XYzBA)
-
-@[youtube](UZ9z5COXaG0)
 
 If you have already imported zkSNACKs' PGP public key, then jump to step 4.
 
@@ -167,3 +163,7 @@ Click the button and confirm by entering your Mac user password.
 
 After the first run, a [data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) will be created.
 Among others, here is where your wallet files and your logs reside.
+
+@[youtube](_Zmc54XYzBA)
+
+@[youtube](UZ9z5COXaG0)
