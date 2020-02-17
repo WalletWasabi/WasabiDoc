@@ -78,7 +78,7 @@ You want to avoid merging `anonymity set 1` coins with `anonymity set > 1` mixed
 ## Heuristics identifying change
 
 One prime goal of [transaction surveillance companies](/why-wasabi/TransactionSurveillanceCompanies.md) is to identify the change coin of a Bitcoin transaction, as this is vital information for building a cluster of coins belonging to one entity.
-There are several heuristics that are used to deanonymize users.
+There are several heuristics, practical assumptions which are not guaranteed to be accurate or optimal, that are used to deanonymize users.
 
 ### Address reuse
 
@@ -87,7 +87,7 @@ Thus if a transaction has a reused address in the output, it is very likely to b
 Thus the other output of this transaction, is likely to be the change of the entity providing the inputs of the transaction.
 
 :::warning Remember
-Never reuse addresses!
+Never [reuse addresses](/why-wasabi/BitcoinPrivacy.md#address-reuse)!
 :::
 
 ### Wallet fingerprinting
@@ -124,8 +124,8 @@ This is why the CoinJoin change has only 1 anonset <img src="/ShieldRed.png" alt
 ```
                 C [1 btc]
 A [6 btc]  -->  D [1 btc]
-B [3 btc]       E [5 btc] (= change)
-                F [2 btc] (= change)
+B [3 btc]       E [5 btc] (= change A)
+                F [2 btc] (= change B)
 
 ```
 
@@ -146,7 +146,9 @@ A [1.3576 1516 btc]  -->  B [1.0135 6515 btc]
                           C [0.3440 4721 btc] (= change)
 ```
 
+:::tip
 Because of this privacy leak, Wasabi does not utilize RBF fee bumping.
+:::
 
 ## Your options to use change privately
 
