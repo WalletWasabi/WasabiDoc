@@ -32,7 +32,7 @@ This speedy process makes it possible to create hundreds of separate accounts if
 
 Two aspects in particular—privacy and identity—function very differently with Bitcoin than in the legacy financial system.
 
-_**Pseudonyms protect your identity in Bitcoin**_
+#### Pseudonyms protect your identity in Bitcoin
 
 A bank account, PayPal account, or credit card is always tied to a real identity, making it difficult for many people to open them. 
 Bitcoin allows you to use any persona or online identity you wish.
@@ -49,7 +49,7 @@ Technology also connects like-minded individuals so they can form the communitie
 Maintaining an identity with a large following might require paid services such as blogs, logo designs, stock photos, VPNs, or translations.
 Without the ability to pay for these services anonymously, you would be forced to reveal your true identity in order to maintain your pseudonym situation which clearly makes no sense, and one with potentially dangerous ramifications.
 
-_**How Bitcoin empowers anonymity**_
+#### How Bitcoin empowers anonymity
 
 Bitcoin is an important, empowering technology.
 Using a Bitcoin account with a pseudonym protects your right to remain anonymous on the internet.
@@ -63,7 +63,7 @@ The money could be used for servers, flyers, remote helpers… and all without t
 
 Likewise, a domestic abuse victim might use Bitcoin to securely stack away funds to prepare for an independent life.
 
-_**Privacy through pseudonymous accounts**_
+#### Privacy through pseudonymous accounts
 
 Privacy in traditional banking is guaranteed by the institutions that make up the system, such as banks, credit card companies, and governments.
 They (try to) ensure that your bank balance stays a secret.
@@ -73,7 +73,7 @@ In the Bitcoin ecosystem, everyone can see the history of every account balance,
 All addresses and transactions are recorded in Bitcoin’s publicly distributed database, the blockchain.
 The addresses do not have names or IP addresses attached to them, so it is not always possible to know which transaction belongs to which individual.
 
-_**Threat model**_
+#### Threat model
 
 When considering privacy you need to think about exactly who you're hiding from.
 You must examine how a hypothetical adversary could spy on you, what kind of information is most important to you and which technology you need to use to protect your privacy.
@@ -103,7 +103,7 @@ The second rule of Bitcoin privacy:
 
 ### Problem
 
-_**Easy wallet clustering**_
+#### Easy wallet clustering
 
 A Bitcoin address commits to the spending condition of this UTXO.
 For example in Wasabi, each address is a [native SegWit pay to witness public key hash P2WPKH](https://programmingblockchain.gitbook.io/programmingblockchain/other_types_of_ownership/p2wpkh_pay_to_witness_public_key_hash), meaning that this coin can only be spent with a single valid signature of the corresponding private key.
@@ -133,7 +133,7 @@ This is someone intentionally deanonymizing himself, such a behavior might have 
 
 ### Wasabi's Solution
 
-_**Remove used address from GUI**_
+#### Remove used address from GUI
 
 Wasabi uses the industry best practice [BIP 44 hierarchical deterministic wallet](/using-wasabi/BIPs.md#bip-44-multi-account-hierarchy-for-deterministic-wallets), where out of one master secret a tree structure of child private keys are generated.
 It is deterministic because the same parent secret always calculates the same child private keys. When given a hardened child private key, then the parent private key cannot be calculated.
@@ -150,7 +150,7 @@ Each UTXO is the tip of the chain of links between inputs and outputs, all the w
 
 ### Problem
 
-_**UTXOs are not fungible**_
+#### UTXOs are not fungible
 
 Each UTXO is a unique snow flake with a public transaction history.
 For example, when Alice sends a coin to Bob, then Bob does not just have any random UTXO, but he has specifically the coin that Alice has sent him.
@@ -162,7 +162,7 @@ This means that coin consolidation can lead to an overall decrease of privacy, e
 
 ### Wasabi's Solution
 
-_**Manual coin labeling and selection**_
+#### Manual coin labeling and selection
 
 Contrarily to many other wallets, Wasabi does not show only the total value of bitcoins in the wallet. Rather, in the `Send` and `CoinJoin` tab is a list of all the UTXOs individually.
 Because it is required to label every receiving address, the history of this coin is clear at first glance.
@@ -173,7 +173,7 @@ In order to spend a specific coin, it is manually selected, which prevents the w
 
 ### Problem
 
-_**Public transaction history**_
+#### Public transaction history
 
 Because of the input and output model of Bitcoin, there is a chain of digital signatures all the way from the coinbase reward, to the current UTXO.
 This transaction history can reveal sensitive information of the spending patterns of individuals.
@@ -182,7 +182,7 @@ And the sender can see the future spending of the receiver.
 
 ### Wasabi's Solution
 
-_**Zero Link CoinJoins**_
+#### Zero Link CoinJoins
 
 In order to obfuscate the link between outputs and inputs, Wasabi uses the [Zero Link](https://github.com/nopara73/zerolink) CoinJoin protocol.
 The Wasabi central coordinator cannot steal and cannot spy, he simply helps many peers to build a huge transaction, with many inputs, and many outputs.
@@ -201,7 +201,7 @@ There is a lot of communication between them and metadata can be used to de-anon
 
 ### Problem
 
-_**Clear net light clients**_
+#### Clear net light clients
 
 When the communication to the network is unencrypted over clear net, then there is a easy correlation of the Bitcoin transactions to the IP address of the peer who sent it.
 The IP address can be used to even find out about the physical location of the user!
@@ -212,7 +212,7 @@ However, when a node or wallet does not gossip all transactions, but only the tr
 
 ### Wasabi's Solution
 
-_**Full node by default & block filters over tor**_
+#### Full node by default & block filters over tor
 
 Wasabi checks if there is a local Tor instance installed, and if so, it uses this to onion-route all the traffic to and from the network.
 If Tor is not already installed, then it is installed automatically within Wasabi.
