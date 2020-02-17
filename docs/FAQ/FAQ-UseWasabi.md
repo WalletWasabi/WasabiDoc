@@ -1124,14 +1124,14 @@ You can't do that directly, you have to send the bitcoins (in small portions > 0
 :::
 
 :::details
-### Does Ledger Live send my public keys to a third party server?
+### Does Ledger Live send my public keys (addresses) to a third party server?
 
 Yes.
-When using the Ledger Live software wallet to manage your coins, you send all of your used, and 20 unused future public keys to the Ledger company server.
+When using the Ledger Live software wallet to manage your coins, you send all of your used, and 20 unused public keys to the Ledger company server.
 With this information they know exactly how many bitcoins you have and in what transactions you spend them.
 Your extended public key, however, is not shared with this server, but rather stored encrypted on your local machine.
 
-To avoid this privacy leak, you can use a Ledger hardware in combination with Wasabi as software interface, and because Wasabi does not leak your public keys, your transaction history is not shared with anyone.
+To avoid this privacy leak, you can use a Ledger hardware in combination with Wasabi as a software interface, and because Wasabi does not leak your public keys, your transaction history is not shared with anyone.
 
 If you have already used Ledger Live, make sure you are generating a completely new wallet with a new seed phrase backup so that the compromised old wallet is no longer an issue.
 
