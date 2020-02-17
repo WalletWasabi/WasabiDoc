@@ -17,15 +17,14 @@ Wasabi is a powerful free and open source Bitcoin wallet, and it shall only be u
 
 ## 2. Verify the integrity of your software
 
-When installing the wallet, you may choose to [download the package](/using-wasabi/InstallPackage.md) from the official [clearnet](https://wasabiwallet.io) or [tor hidden service](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion), or [compile the source code](/using-wasabi/BuildSource.md) from the official [GitHub repository](https://github.com/zkSNACKs/WalletWasabi
-)
-Please [verify signatures](/using-wasabi/InstallPackage.md) after completing downloads.
+When installing the wallet, you may choose to [download the package](/using-wasabi/InstallPackage.md) from the official [clearnet](https://wasabiwallet.io) or the [tor hidden service](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion), or to [compile the source code](/using-wasabi/BuildSource.md) from the official [GitHub repository](https://github.com/zkSNACKs/WalletWasabi)
+Please [verify the signatures](/using-wasabi/InstallPackage.md) after completing downloads.
 The concern here is that you may accidentally fall for a phishing attempt and be on a malicious site downloading a malicious piece of software.
 
-## 3. Backup your mnemonic words and password (BOTH!)
+## 3. Backup your recovery words and password (BOTH!)
 
-When [creating a new wallet](/using-wasabi/WalletGeneration.md), write down your mnemonic recovery words **AND** password and store them safely.
-Wasabi is a fully non-custodial wallet, which means that you should always be in possession of your keys, and this means safely storing a backup.
+When [creating a new wallet](/using-wasabi/WalletGeneration.md), write down your recovery words **AND** password and store them safely.
+Wasabi is a fully non-custodial wallet, which means that you are always in possession of your keys, and this means safely storing a backup.
 If you have done this step, then even if your computer crashes, there is very little you have to worry about, you can always [recover your wallet](/using-wasabi/WalletRecovery.md).
 Also, under no circumstance should you reveal the password or mnemonic words to anyone that asks for them.
 Lastly, understand that if you [lose your password](/using-wasabi/LostPassword.md), it becomes much harder (if not impossible) to restore your wallet - so store both safely!
@@ -33,19 +32,19 @@ Lastly, understand that if you [lose your password](/using-wasabi/LostPassword.m
 ## 4. Practice good labeling AND try to never reuse addresses
 
 Each time you generate an address to [receive bitcoin](/using-wasabi/Receive.md) or you [send a transaction](/using-wasabi/Send.md), you must label the address with the observers of this transaction.
-This label is here to help you with understanding your wallet, and is stored exclusively on your device.
-Wasabi has strong coin control features, and as you continue to use the wallet properly, you can see who knows are your coins.
+This label helps you use your bitcoin privately, and is stored exclusively on your device.
+Wasabi has strong coin control features, and as you continue to use the wallet properly, you can see who knows about your coins.
 
-Lastly, in the same way that you should never receive bitcoin to the same address twice, you should try to avoiding sending bitcoin to the same address twice.
+Lastly, in the same way that you should never receive bitcoin to the same address twice, you should try to avoid sending bitcoin to the same address twice.
 So ask the recipients to provide you a new address for every transaction.
 
 ## 5. CoinJoin whenever possible and be patient!
 
-The process of engaging in a [CoinJoin](/using-wasabi/CoinJoin.md) is as simple as selecting a coins to enqueue and entering your password.
+The process of engaging in a [CoinJoin](/using-wasabi/CoinJoin.md) is as simple as selecting a coin to enqueue and entering your password.
 Once coins have enqueued for coinjoining, you must keep your computer online and awake, because this is an interactive process.
-As a CoinJoin is up to 100 users enqueuing coins at the same time, it may take up to one hour for you to successfully participate in a CoinJoin.
+As a CoinJoin is just many users (up to 100) enqueuing coins, it may take up to one hour for you to successfully participate in a CoinJoin.
 As more users join the network, the frequency of these CoinJoins will go up.
-Lastly, if you remix your coins, this provides you and your peers with plenty of additional privacy.
+Lastly, if you remix your coins, this provides you and the other participants with plenty of additional privacy.
 
 ## 6. Never merge mixed and unmixed coins, and avoid large merges of mixed coins!
 
