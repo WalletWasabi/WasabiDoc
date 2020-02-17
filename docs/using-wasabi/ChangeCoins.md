@@ -82,9 +82,9 @@ There are several heuristics that are used to deanonymize users.
 
 ### Address reuse
 
-When several coins have the same address, then they are owned all by the same entity.
-Thus if a transaction has a reused address in the output, it is very likely to be the payment amount from one to the other entity.
-Thus the other output of this transaction, is likely to be the change of the entity providing the inputs in the transaction.
+When several coins have the same address, then they are owned by the same entity.
+Thus if a transaction has a reused address in the output, it is very likely to be the payment amount from one entity to another.
+Thus the other output of this transaction, is likely to be the change of the entity providing the inputs of the transaction.
 
 :::warning Remember
 Never reuse addresses!
@@ -93,24 +93,24 @@ Never reuse addresses!
 ### Wallet fingerprinting
 
 Different software wallets have different methods of creating Bitcoin transactions.
-So if it becomes known that a transaction was created by a specific wallet, then it can be checked how this wallet handles change.
+So if it is known that a transaction was created by a specific wallet, then it can be checked how this wallet handles change.
 
 Wasabi tries to build the most common form of transaction structure, thus reducing the likely hood to identify any given transaction to be from Wasabi.
 However, Wasabi CoinJoins are very easily fingerprinted, and any coin associated is clearly managed with Wasabi Wallet.
 
 ### Round numbers
 
-When making a payment, then often the destination address receives a rounded number of bitcoin.
-Because the input is usually a non-rounded amount, the second output will also be non-rounded.
-This makes it clear that the second output is the change back to the sender.
+When making a payment, then often the destination address receives a round number of bitcoin.
+Because the input is usually a non-round number, the other output will also be non-round number.
+This makes it clear that the non-round number output is the change back to the sender.
 
 ```
 A [0.1293 0112 btc]  -->  B [0.0500 0000 btc]
-                          C [0.1189 4849 btc] (= change)
+                          C [0.0792 9962 btc] (= change)
 ```
 
 :::tip
-In order to protect your privacy, add or remove a couple sats from the payment amount to obfuscate your change.
+In order to protect your privacy, add (or remove when possible) a couple sats from the payment amount to obfuscate your change.
 :::
 
 ### CoinJoin
@@ -140,13 +140,13 @@ First tranaction
 A [1.3576 1516 btc]  -->  B [1.0135 6515 btc]
                           C [0.3440 4861 btc] 
 
-Second transaction
+Second transaction (RBF)
 
 A [1.3576 1516 btc]  -->  B [1.0135 6515 btc]
                           C [0.3440 4721 btc] (= change)
 ```
 
-Out of this privacy concern, Wasabi does not utilize RBF fee bumping.
+Because of this privacy leak, Wasabi does not utilize RBF fee bumping.
 
 ## Your options to use change privately
 
