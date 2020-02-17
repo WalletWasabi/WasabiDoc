@@ -1124,7 +1124,7 @@ You can't do that directly, you have to send the bitcoins (in small portions > 0
 :::
 
 :::details
-### Does Ledger Live send my public keys (addresses) to a third party server?
+### Does Ledger Live send my public keys and addresses to a third party server?
 
 Yes.
 When using the Ledger Live software wallet to manage your coins, you send all of your used, and 20 unused public keys to the Ledger company server.
