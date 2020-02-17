@@ -1223,10 +1223,8 @@ It was introduced with the 0.7 release, introduced a third genesis block, a new 
 :::details
 ### How do I connect my own full node to Wasabi?
 
-There are several benefits to running your own [full node with Wasabi](/using-wasabi/BitcoinFullNode.md).
-Currently, there is a work in progress Bitcoin Core integration that is further being improved upon.
+There are three different ways of using your [Bitcoin full node with Wasabi](/using-wasabi/BitcoinFullNode.md):
 
-There are three different ways of using your full node with Wasabi:
 - If you have a full node already running on the same computer as Wasabi, it will automatically be detected and used by default.
 - If you have a full node on a remote computer, then you can connect to it by specifying the local network IP address or tor hidden service in the Wasabi `Settings` tab.
 
