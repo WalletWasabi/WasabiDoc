@@ -182,7 +182,6 @@ Run the following commands:
 [user@your-whonix-vm ~]$ sudo apt-get install git
 [user@your-whonix-vm ~]$ git clone https://github.com/zksnacks/walletwasabi.git
 [user@your-whonix-vm ~]$ cd walletwasabi/WalletWasabi.Gui
-[user@your-whonix-vm ~]$ dotnet build
 [user@your-whonix-vm ~]$ dotnet run
 ```
 
@@ -194,12 +193,10 @@ Add the development branches to git.
 [user@source-wasabi ~]$ git checkout <development branch>
 ```
 
-Pull the latest commits and compile from source.
+Pull the latest commits.
 
 ```sh
 [user@source-wasabi ~]$ git pull
-[user@source-wasabi ~]$ dotnet build
-[user@source-wasabi ~]$ dotnet run
 ```
 
 This concludes the tutorial on installing and running Wasabi Wallet in Whonix.
