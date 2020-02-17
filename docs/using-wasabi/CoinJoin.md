@@ -53,7 +53,7 @@ You only have to enter your password for the first round of mixing, as any re-mi
 ![](/CoinJoinCoinsBeingCoinJoined.png)
 
 5. Now, wait until the CoinJoin is complete.
-The round starts either as soon as 100 peers have registered their coins, or after two hours have elapsed since the last round.
+The round starts either as soon as 100 peers have registered their coins, or after one hour has elapsed since the last round.
 From now on there is no more interaction required.
 Just leave Wasabi running in the background of your computer.
 
@@ -99,13 +99,13 @@ Alice has the secret parameters needed to unblind the signed, blinded output.
 With the magic of cryptography, she can reveal the clear-text address of the anonset CoinJoin output.
 However, the coordinator signature is still attached to this address.
 
-The input registration phase ends when either: the number of registered inputs exceeds the number of required inputs (meaning anonymity set of 100 peers), or when the time elapsed since the previous round reaches two hours.
+The input registration phase ends when either: the number of registered inputs exceeds the number of required inputs (meaning anonymity set of 100 peers), or when the time elapsed since the previous round reaches one hour.
 
 @[youtube](v1fIjFR6e5Q)
 
 ### Connection confirmation
 
-There are many Alices (different users) registering their inputs in the first phase, and this takes a while, up to two hours.
+There are many Alices (different users) registering their inputs in the first phase, and this takes a while, up to one hour.
 The connection confirmation phase makes sure that all of them are still online and ready to continue.
 The coordinator verifies the unique ID from all the Alices, and while everyone is still communicating, the coordinator returns the round hash of all the registered inputs.
 

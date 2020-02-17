@@ -43,6 +43,7 @@ So ask the recipients to provide you a new address for every transaction.
 The process of engaging in a [CoinJoin](/using-wasabi/CoinJoin.md) is as simple as selecting a coin to enqueue and entering your password.
 Once coins have enqueued for coinjoining, you must keep your computer online and awake, because this is an interactive process.
 As a CoinJoin is just many users (up to 100) enqueuing coins, it may take up to one hour for you to successfully participate in a CoinJoin.
+
 As more users join the network, the frequency of these CoinJoins will go up.
 Lastly, if you remix your coins, this provides you and the other participants with plenty of additional privacy.
 

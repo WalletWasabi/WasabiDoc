@@ -167,7 +167,8 @@ module.exports = {
             "/using-wasabi/WalletGeneration.md",
             "/using-wasabi/Receive.md",
             "/using-wasabi/CoinJoin.md",
-            "/using-wasabi/Send.md"
+            "/using-wasabi/Send.md",
+            "/using-wasabi/BitcoinFullNode.md"
           ]
         },
     {
@@ -191,13 +192,21 @@ module.exports = {
 	  ]
 	},
     {
-          title: "Advanced",
+          title: "Advanced Installing Wasabi",
           collapsable: false,
           sidebarDepth: 2,
           children: [
             "/using-wasabi/DeterministicBuild.md",
             "/using-wasabi/WasabiSetupTails.md",
             "/using-wasabi/WasabiSetupVM.md",
+            "/using-wasabi/WasabiSetupWhonix.md"
+         ]
+        },
+    {
+          title: "Advanced Using Wasabi",
+          collapsable: false,
+          sidebarDepth: 2,
+          children: [
             "/using-wasabi/ColdWasabi.md",
             "/using-wasabi/Daemon.md",
             "/using-wasabi/RPC.md",

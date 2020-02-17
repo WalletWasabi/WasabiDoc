@@ -853,13 +853,13 @@ During this phase you have the opportunity to register coins that you want to mi
 Your Wasabi client connects to the coordinator server with a unique tor identity called Alice, and with it you send the input proofs, the clear-text change output, and the blinded anonset CoinJoin address.
 When all the proofs are valid, the coordinator signs the blinded output without knowing which address this is, and sends this back to Alice.
 Since the goal is to have 100 peers in one round, the [input registration phase](/using-wasabi/CoinJoin.md#input-registration) can take some time.
-But regardless of how many participants, two hours after the last CoinJoin this phase is complete.
+But regardless of how many participants, one hour after the last CoinJoin this phase is complete.
 :::
 
 :::details
 ### What is happening in the connection confirmation phase?
 
-Because the input registration phase can take up to two hours, the coordinator needs to ensure that everyone is still online and ready to continue.
+Because the input registration phase can take up to one hour, the coordinator needs to ensure that everyone is still online and ready to continue.
 So in the [connection confirmation phase](/using-wasabi/CoinJoin.md#connection-confirmation) every Alice sends a signal to the coordinator, and when all have checked in, this phase concludes.
 :::
 
@@ -999,7 +999,7 @@ You also get information about the current mempool for fee estimation as well as
 
 It depends on many things, the longest period is the wait for all peers to register their coins.
 First of all from your desired anonymity set, every round has a goal of 100 anonymity set.
-Wasabi is developed in a way that there's a round at least once every two hours.
+Wasabi is developed in a way that there's a round at least once every one hour.
 If the 100 peers registered earlier, then there can be many rounds per hour.
 When all peers are registered, then the signing phase is done within a couple of seconds.
 
@@ -1223,13 +1223,16 @@ It was introduced with the 0.7 release, introduced a third genesis block, a new 
 :::details
 ### How do I connect my own full node to Wasabi?
 
-There is currently a basic implementation of connecting [your full node to Wasabi](/using-wasabi/BitcoinFullNode.md).
-The server will still send you [BIP 158 block filters](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients), and when you realize that a block contains a transaction of yours, then you pull this block from your own full node, instead of a random P2P node, thus you can verify that this is actually a valid block including your transaction.
-One attack vector could be that Wasabi lies to you and gives you wrong filters that exclude your transaction, thus you would see in the wallet less coins than you actually control.
-[BIP 157 solves this](/using-wasabi/BIPs.md#bip-157-client-side-block-filtering).
+There are three different ways of using your [Bitcoin full node with Wasabi](/using-wasabi/BitcoinFullNode.md):
 
-When your full node is on the same hardware [computer, laptop] as your Wasabi Wallet, it will automatically recognize it and pull blocks from there.
-If your node is on a remote device [raspberry pi, nodl, server], then you can specify your local IP in the `Settings` tab, or in line 11 of the config file.
+- If you have a full node already running on the same computer as Wasabi, it will automatically be detected and used by default.
+- If you have a full node on a remote computer, then you can connect to it by specifying the local network IP address or tor hidden service in the Wasabi `Settings` tab.
+
+![](/SettingsBitcoinCoreRemote.png)
+
+- If you are not yet running a full node, Wasabi has the bitcoind binaries included, and with one click in the `Settings`, you can start Bitcoin Core together with Wasabi.
+
+![](/SettingsBitcoinCore.png)
 
 @[youtube](gWo2RAkIVrE)
 :::
