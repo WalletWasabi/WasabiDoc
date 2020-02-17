@@ -38,11 +38,13 @@ Further tutorials about the different parts of the wallet, for newbies and power
 - [Lost Password Strategy](/using-wasabi/LostPassword.md)
 - [Password Finder](/using-wasabi/PasswordFinder.md)
 
-#### Advanced
+#### Advanced Installing Wasabi
 - [Deterministic Build](/using-wasabi/DeterministicBuild.md)
 - [Wasabi Setup on Tails](/using-wasabi/WasabiSetupTails.md)
 - [Wasabi Setup using Virtual Machines](/using-wasabi/WasabiSetupVM.md)
 - [Wasabi Setup using Whonix](/using-wasabi/WasabiSetupWhonix.md)
+
+#### Advanced Using Wasabi
 - [Cold-Wasabi Protocol](/using-wasabi/ColdWasabi.md)
 - [Headless Wasabi Daemon](/using-wasabi/Daemon.md)
 - [RPC Interface](/using-wasabi/RPC.md)
