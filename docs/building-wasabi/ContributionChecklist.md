@@ -42,7 +42,7 @@ It’s a simple set of collaboration rules based on GitHub’s fork and pull req
 ## Do valuable work
 Ok. You’re all set up and ready to work. Here’s what to do next.
 1. **Find a problem somewhere in Wasabi-land** that (a) needs fixing and (b) is a match for your skills and interests.
-Browse [open issues](https://github.com/zksnacks/walletwasabi/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc) and [ToDo's](/building-wasabi/ToDo.md), ask around about what other contributors think needs fixing.
+Browse [open issues](https://github.com/zksnacks/walletwasabi/issues) and [ToDo's](/building-wasabi/ToDo.md), ask around about what other contributors think needs fixing.
 Because while you don’t need anybody’s permission and you can work on whatever you want, you’ll want to know up front whether anybody else is going to care about the work you do.
 2. **Do work to fix that problem.** Submit your fix for review with a pull request (for [code](https://github.com/zkSNACKs/WalletWasabi/pulls?q=is%3Apr+is%3Aopen+sort%3Aupdated-desc) and [documentation](https://github.com/zkSNACKs/WasabiDoc/pulls) changes) or with a GitHub [issue](https://github.com/zksnacks/walletwasabi/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc) (for everything else).
 3. **Request that others review your work.** The best way to do this is by writing good commit comments and pull request/issue descriptions that clearly explain the problem your work is intended to solve, why it’s important, and why you fixed it the way you did.
