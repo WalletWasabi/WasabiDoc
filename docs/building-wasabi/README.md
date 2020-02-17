@@ -18,7 +18,6 @@ And all the necessary information you need to quickly start with your invaluable
 - [Contribution Checklist](/building-wasabi/ContributionChecklist.md)
 - [Dojo](/building-wasabi/Dojo.md)
 - [ToDo List](/building-wasabi/ToDo.md)
-- [Coding Conventions](/building-wasabi/CodingConventions.md)
 - [Contribution Game](/building-wasabi/ContributionGame.md)
 - [False Positive](/building-wasabi/FalsePositive.md)
 - [Security Policy](/building-wasabi/Security.md)
