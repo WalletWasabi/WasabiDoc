@@ -25,7 +25,7 @@ By Satoshi Nakamoto in [How anonymous are bitcoins? - Bitcointalk](https://bitco
 One of the apparent contradictions of Bitcoin is the notion that your transactions can be private but have a public transaction record.
 
 As a financial system, Bitcoin functions completely differently from the established banking network.
-Bitcoin allows you to store funds yourself, without the need for a third party, and therefore places the burden of keeping said funds secure and accessible on you.
+Bitcoin allows you to store funds yourself, without the need for a third party, and therefore places the burden on you of keeping said funds secure and accessible.
 
 While opening an account with a traditional bank or other financial institution requires significant cost and effort, creating a Bitcoin account is quick and easy to do on your home computer.
 This speedy process makes it possible to create hundreds of separate accounts if you wish.
@@ -47,7 +47,8 @@ Technology empowers them to become leaders of social change in societies by prov
 Technology also connects like-minded individuals so they can form the communities for which they strive.
 
 Maintaining an identity with a large following might require paid services such as blogs, logo designs, stock photos, VPNs, or translations.
-Without the ability to pay for these services anonymously, you would be forced to reveal your true identity in order to maintain your pseudonym situation which clearly makes no sense, and one with potentially dangerous ramifications.
+Without the ability to pay for these services anonymously, you would be forced to reveal your true identity in order to maintain your pseudonym situation.
+This clearly makes no sense, and has potentially dangerous ramifications.
 
 ## How Bitcoin empowers anonymity
 
@@ -90,4 +91,3 @@ For details read the talk [Opsec for Hackers by grugq](https://www.slideshare.ne
 The talk is aimed mostly at political activists who need privacy from governments, but much the advice generally applies to all of us.
 
 Much of the time plausible deniability is not good enough because lots of spying methods only need to work on a statistical level (e.g. targeted advertising).
-

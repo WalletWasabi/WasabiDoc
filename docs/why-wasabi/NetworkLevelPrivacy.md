@@ -11,17 +11,17 @@
 
 ---
 
-Bitcoin is a peer to peer network of full nodes, who define, verify and enforce the Nakamoto consensus rules.
+Bitcoin is a peer to peer network of full nodes which define, verify, and enforce the Nakamoto consensus rules.
 There is a lot of communication between them and metadata can be used to de-anonymize Bitcoin users.
 
 ## Problem
 
-_**Clear net light clients**_
+_**Clearnet light clients**_
 
-When the communication to the network is unencrypted over clear net, then there is a easy correlation of the Bitcoin transactions to the IP address of the peer who sent it.
-The IP address can be used to even find out about the physical location of the user!
+When the communication to the network is unencrypted over clearnet, then there is an easy correlation of the Bitcoin transactions to the IP address of the peer who sent it.
+The IP address can even be used to find the physical location of the user!
 
-A Bitcoin full node broadcasts not just the transaction of its user, but also it gossips all the other transactions it has received from its peers.
+A Bitcoin full node broadcasts not just the transaction of its user, but it also gossips all of the other transactions that it has received from its peers.
 Thus it is very difficult to find out which transactions are sent from which full node.
 However, when a node or wallet does not gossip all transactions, but only the transactions of the user, then it is easier to find out which node has sent that specific transaction.
 
@@ -30,13 +30,13 @@ However, when a node or wallet does not gossip all transactions, but only the tr
 _**Full node by default & block filters over tor**_
 
 Wasabi checks if there is a local Tor instance installed, and if so, it uses this to onion-route all the traffic to and from the network.
-If Tor is not already installed, then it is installed automatically within Wasabi.
+If Tor is not already installed, then it is accessed automatically from within Wasabi.
 This means that by default, all network communication is secured from outside snooping and the IP address is hidden.
 
 In order to fully verify everything, running a full node is essential.
 If [bitcoind](https://github.com/bitcoin/bitcoin) is installed on the same computer as Wasabi, then it will automatically and by default connect to the full node.
 It is also possible to connect Wasabi to a remote full node on another computer by specifying the local IP address or Tor hidden service in the settings.
-Now Wasabi pulls the verified blocks from the full node, and it also broadcasts the transactions to the P2P network from this full node.
+Then, Wasabi pulls the verified blocks from the full node, and it also broadcasts the transactions to the P2P network from this full node.
 
 However, even if no full node is installed, Wasabi has a light client mode based on [BIP 158 block filters](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients).
 When the user sends the extended public key, or a filter of all the addresses to the central server, then the server can **COMPLETELY** deanonymize the users.
@@ -53,7 +53,7 @@ Wasabi is per default [as private as a Bitcoin full node](/why-wasabi/NetworkLev
 
 ## In Depth
 
-Bitcoin Core, more specifically full nodes are considered to be the pinnacle of network level privacy in Bitcoin wallets that no other wallet type can come close to.
+Bitcoin Core, more specifically full nodes, are considered to be the pinnacle of network level privacy in Bitcoin wallets that no other wallet type can come close to.
 It is not difficult to see why: full nodes download the whole Blockchain and establish your wallet balances locally, so there is zero chance of any third party figuring out which addresses are in your wallet and which addresses are not.
 
 Compare this to other light wallets, which query a backend server to get information regarding specific addresses or use [BIP 37](/using-wasabi/BIPs.md#bip-37-connection-bloom-filtering) bloom filtering SPV wallet protocol, which is probably [even worse](https://jonasnick.github.io/blog/2015/02/12/privacy-in-bitcoinj/).
