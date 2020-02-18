@@ -11,7 +11,7 @@
 
 ---
 
-Bitcoin is a peer to peer network of full nodes which define, verify, and enforce the Bitcoin consensus rules.
+Bitcoin is a peer-to-peer network of full nodes which define, verify, and enforce the Bitcoin consensus rules.
 There is a lot of communication between them and metadata can be used to de-anonymize Bitcoin users.
 
 ## Problem
@@ -45,7 +45,7 @@ It can be thought of as a master view into a wallet.
 By using the extended public key it's possible to derive all past and future addresses and unspent transaction outputs (UTXOs).
 
 Therefore the Wasabi server sends a filter of all the transactions in each block to all the users.
-Now they check locally if the block contains any transactions with their addresses.
+Then, they check locally if the block contains any transactions with their addresses.
 If not, then the filter is stored for later reference, and no block is downloaded.
 However, if there is a user transaction in that block, then Wasabi connects to a random Bitcoin P2P node over Tor, and asks for this entire block, not only one transaction.
 This block request is indistinguishable from the regular P2P gossip, and thus nobody, neither the server nor the full node, know which addresses belong to the user.
