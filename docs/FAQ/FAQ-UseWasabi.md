@@ -1321,7 +1321,7 @@ Please note that Wasabi is designed for the dark theme, and some color schemes m
 
 It is advisable to limit the recombining of <img src="/ShieldCheckmark.png" alt="checkmark" class="shield" /> <img src="/ShieldGreen.png" alt="green" class="shield" /> <img src="/ShieldYellow.png" alt="yellow" class="shield" /> mixed coins because it can only decrease the privacy of these coins.
 This reveals that all the consolidated UTXOs are controlled by one entity, which was not known before the consolidation.
-That said, if you combine less than 10 BTC, you might not reveal your pre-CoinJoin transaction history, especially when you did several re-mixes.
+That said, if you combine only a couple of mixed coins, you might not reveal your pre-CoinJoin transaction history, especially when you did several re-mixes.
 
 :::warning Take great care!
 Never consolidate <img src="/ShieldRed.png" alt="red" class="shield" /> unmixed coins with <img src="/ShieldCheckmark.png" alt="checkmark" class="shield" /> <img src="/ShieldGreen.png" alt="green" class="shield" /> <img src="/ShieldYellow.png" alt="yellow" class="shield" /> mixed coins, as this negates the privacy benefits of the CoinJoin.
