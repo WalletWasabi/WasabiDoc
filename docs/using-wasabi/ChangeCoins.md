@@ -206,7 +206,6 @@ Thus the coordinator knows that you control all these coins, and although zkSNAC
 For these reasons it is not recommended that you consolidate change coins.
 That said, consolidating your change in a CoinJoin is strictly more private and efficient than consolidating in a regular sending transaction.
 
-
 :::tip
 Remember that a Wasabi CoinJoin gives you back an anonymous coin (<img src="/ShieldYellow.png" alt="yellow" class="shield" /> <img src="/ShieldGreen.png" alt="green" class="shield" /> <img src="/ShieldCheckmark.png" alt="checkmark" class="shield" />), based on your [Privacy Level Settings](/FAQ/FAQ-UseWasabi.md#how-can-i-change-the-anonset-target)) and a non-anonymous (<img src="/ShieldRed.png" alt="red" class="shield" />) change coin.
 The resulting non-anonymous change coin could be linked to the inputs (which are, in this specific case, derived from multiple change outputs of previous CoinJoins).
