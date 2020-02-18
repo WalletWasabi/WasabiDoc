@@ -1123,24 +1123,21 @@ Now click `Broadcast Transaction` to send it off over Tor to a random Bitcoin no
 You can't do that directly, you have to send the bitcoins (in small portions > 0.1 BTC if needed) to a `hot` Wasabi Wallet, do the CoinJoin and then send them back to a new address on the Hardware wallet for cold-storage.
 :::
 
-::::details
-### Does Ledger Live server spy on my xpub?
+:::details
+### Does Ledger Live send my public keys and addresses to a third party server?
 
-Yes, when using the Ledger Live software wallet to manage your coins, you send your extended public key to the Ledger company server.
+Yes.
+When using the Ledger Live software wallet to manage your coins, you send all of your used, and 20 unused public keys to the Ledger company server. [Source](https://support.ledger.com/hc/en-us/articles/360010892360)
 With this information they know exactly how many bitcoins you have and in what transactions you spend them.
-To avoid that you can use a Ledger hardware in combination with Wasabi as software interface, and because Wasabi does not leak your xpub, your transaction history is not shared with anyone.
-Make sure you are generating a completely new wallet with a new seed phrase backup so that the compromised old wallet is no longer an issue.
-You can also go into the Settings of your Ledger and create a PIN-specific passphrase.
+Your extended public key, however, is not shared with this server, but rather stored encrypted on your local machine. [Source](https://support.ledger.com/hc/en-us/articles/360011069619)
 
-To create a new Ledger Wallet *offline* and make sure that your newly created wallet doesn't leak any information to Ledger's servers you must not use Ledger Live (neither to configure it for the first time, nor to use it).
-After that, you can use the wallet in combination with Wasabi without having concerns about your privacy!
+To avoid this privacy leak, you can use a Ledger hardware in combination with Wasabi as a software interface, and because Wasabi does not leak your public keys, your transaction history is not shared with anyone.
 
-:::warning
-You still need Ledger Live app to update the firmware of your Ledger hardware wallet.
-By not using Ledger Live, you seriously jeopardize the safety of your funds.
-Please consider this carefully before making a decision.
+If you have already used Ledger Live, make sure you are generating a completely new wallet with a new seed phrase backup so that the compromised old wallet is no longer an issue.
+
+If you need to use Ledger Live, for example to update your firmware, then only connect to it with a passphrase that leads to an unused and empty wallet.
+Then use your Ledger hardware with the correct passphrase with Wasabi Wallet without having concerns about your privacy.
 :::
-::::
 
 :::details
 ### After I CoinJoined my coins and reached green anonset, I sent them to my hardware wallet address. When I check my HW via Wasabi, the coins are now red. Why?
