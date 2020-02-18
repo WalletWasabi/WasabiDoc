@@ -126,7 +126,7 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getstatus"}' http://1
 
 ## createwallet
 
-Returns the twelve words of the freshly generated wallet. 
+Returns the twelve recovery words of the freshly generated wallet. 
 
 ```bash
 curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"createwallet","params":["WalletName", "Password"]}' http://127.0.0.1:37128/ | jq                                                   
