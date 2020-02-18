@@ -18,13 +18,13 @@ This checklist will get you plugged in and productive as quickly as possible.
 
 ## Who is a contributor?
 
+**A contributor is any individual who works to improve and add value to Wasabi and its users.**
+
 :::tip You can become a Wasabika!
 Wasabi is free and open source software, but contributing is **not** just about writing code.
-**A contributor is any individual who works to improve and add value to Wasabi and its users.**
-:::
-
-This can mean anything from fixing typos in documentation, to answering questions of fellow Wasabikas, to implementing new Wasabi features and everything in-between.
+This means anything from fixing typos in documentation, to answering questions of fellow Wasabikas, to implementing new Wasabi features and everything in-between.
 All such contributions are very welcomed and greatly appreciated.
+:::
 
 ## Say hello and get started
 - Join our [Slack](https://join.slack.com/t/tumblebit/shared_invite/enQtNjQ1MTQ2NzQ1ODI0LWIzOTg5YTM3YmNkOTg1NjZmZTQ3NmM1OTAzYmQyYzk1M2M0MTdlZDk2OTQwNzFiNTg1ZmExNzM0NjgzY2M0Yzg), [Telegram](https://t.me/WasabiWallet), [Riot](https://riot.im/app/#/room/#wasabiwallet:matrix.org) or [Reddit](https://www.reddit.com/r/WasabiWallet/), and especially check out the [GitHub](https://github.com/zkSnacks/WalletWasabi)
