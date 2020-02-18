@@ -1316,20 +1316,19 @@ Please note that Wasabi is designed for the dark theme, and some color schemes m
 
 @[youtube](k4VzJ6dUT9I)
 
-:::details
+::::details
 ### Can I consolidate anonset coins?
 
-It is advisable to limit the recombining of mixed coins because it can only decrease the privacy of said coins.
-This links all the consolidated UTXOs in one transaction, creating only one output, which then clearly controls all these funds.
-That said, if you combine less than 1 BTC it is less likely to reveal your pre-CoinJoin transaction history.
-The potential issue comes when you spend that coin.
-Depending on what you do with the coin you might reduce the privacy of the resulting change (if you send half your coin to an exchange for example, as they will know that you own the coin change).
-As a result it is best not to recombine ALL your mixed change, though you may wish to recombine some coins if you are planning on hodling for many years as this will reduce the fees required to spend the coins later.
+It is advisable to limit the recombining of <img src="/ShieldCheckmark.png" alt="checkmark" class="shield" /> <img src="/ShieldGreen.png" alt="green" class="shield" /> <img src="/ShieldYellow.png" alt="yellow" class="shield" /> mixed coins because it can only decrease the privacy of these coins.
+This reveals that all the consolidated UTXOs are controlled by one entity, which was not known before the consolidation.
+That said, if you combine only a couple of mixed coins, you might not reveal your pre-CoinJoin transaction history, especially when you did several re-mixes.
 
-If you would like to dive into the details of this topic, you can [read more here](https://old.reddit.com/r/WasabiWallet/comments/avxbjy/combining_mixed_coins_privacy_megathread/) and see more here:
+:::warning Take great care!
+Never consolidate <img src="/ShieldRed.png" alt="red" class="shield" /> unmixed coins with <img src="/ShieldCheckmark.png" alt="checkmark" class="shield" /> <img src="/ShieldGreen.png" alt="green" class="shield" /> <img src="/ShieldYellow.png" alt="yellow" class="shield" /> mixed coins, as this negates the privacy benefits of the CoinJoin.
+:::
 
 @[youtube](Tk8-N1kHa4g)
-:::
+::::
 
 :::details
 ### How can I send my anonset coins to my hardware wallet?
