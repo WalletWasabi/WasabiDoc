@@ -29,7 +29,6 @@ When you are ever bored and want to be productive, why not pick up one of these 
 
 - [Rework the Wasabi UX](https://github.com/zkSNACKs/WalletWasabi/issues/1369)
 - [Researching new CoinJoin mechanism](https://github.com/zkSNACKs/WasabiResearchClub/)
-- Complete rework of CoinJoin mechanism
 - User choice for CoinJoin denomination [#1900](https://github.com/zkSNACKs/WalletWasabi/issues/1900) [#1904](https://github.com/zkSNACKs/WalletWasabi/issues/1904)
 - Pay to EndPoint integration
 - Join Market integration
