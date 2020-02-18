@@ -18,6 +18,7 @@ When you are ever bored and want to be productive, why not pick up one of these 
 
 - [Manually change the anonset shield](https://github.com/zkSNACKs/WalletWasabi/issues/1980)
 - RAM usage improvements
+- [Proper bitcoind integration](https://github.com/zkSNACKs/WalletWasabi/issues/2107)
 - [Pay to many](https://github.com/zkSNACKs/WalletWasabi/issues/733)
 - [Multi wallet support](https://github.com/zkSNACKs/WalletWasabi/issues/1476)
 - [Improve cluster history](https://github.com/zkSNACKs/WalletWasabi/issues/612)
@@ -27,7 +28,7 @@ When you are ever bored and want to be productive, why not pick up one of these 
 ## Long Term Roadmap
 
 - [Rework the Wasabi UX](https://github.com/zkSNACKs/WalletWasabi/issues/1369)
-- [Proper bitcoind integration](https://github.com/zkSNACKs/WalletWasabi/issues/2107)
+- [Researching new CoinJoin mechanism](https://github.com/zkSNACKs/WasabiResearchClub/)
 - User choice for CoinJoin denomination [#1900](https://github.com/zkSNACKs/WalletWasabi/issues/1900) [#1904](https://github.com/zkSNACKs/WalletWasabi/issues/1904)
 - Pay to EndPoint integration
 - Join Market integration
