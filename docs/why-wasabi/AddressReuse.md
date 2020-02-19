@@ -53,6 +53,6 @@ Wasabi uses the industry best practice [BIP 44 hierarchical deterministic wallet
 It is deterministic because the same parent secret always calculates the same child private keys.
 BIP 44 HD wallets use an alternative key derivation function called "hardened derivation", which alters the relationship between parent keys and child keys in a way that increases security significantly.
 When given a hardened child private key, then the parent private key cannot be calculated.
-In the `Receive` tab, a new address is generated every time, and as soon as a coin is sent to it, this specific address is removed from the GUI.
+An address gets removed from the GUI in the `Receive` tab as soon as a coin is received to it.
 
 To protect against forced address reuse attack (Dusting), Wasabi has a modifiable dust limit, where the wallet does not show coins below a certain threshold value.
