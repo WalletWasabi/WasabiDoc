@@ -125,15 +125,27 @@ module.exports = {
         link: "/glossary/"
       }
     ],
+
     sidebar: {
       "/why-wasabi/": [
         {
-          title: "Why Wasabi",
+          title: "Why Privacy",
           collapsable: false,
           sidebarDepth: 2,
           children: [
             "/why-wasabi/WhyPrivacyImportant.md",
-            "/why-wasabi/BitcoinPrivacy.md",
+            "/why-wasabi/WhyFinancialPrivacy.md"
+          ]
+        },
+
+        {
+          title: "Privacy in Bitcoin",
+          collapsable: false,
+          sidebarDepth: 2,
+          children: [
+            "/why-wasabi/AddressReuse.md",
+            "/why-wasabi/Coins.md",
+            "/why-wasabi/TransactionGraph.md",
             "/why-wasabi/NetworkLevelPrivacy.md",
             "/why-wasabi/TransactionSurveillanceCompanies.md"
           ]

@@ -11,7 +11,50 @@
 
 ---
 
-Bitcoin Core, more specifically full nodes are considered to be the pinnacle of network level privacy in Bitcoin wallets that no other wallet type can come close to.
+Bitcoin is a peer-to-peer network of full nodes which define, verify, and enforce the Bitcoin consensus rules.
+There is a lot of communication between them and metadata can be used to de-anonymize Bitcoin users.
+
+## Problem
+
+#### Clearnet light clients
+
+When the communication to the network is unencrypted over clearnet, then there is an easy correlation of the Bitcoin transactions to the IP address of the peer who sent it.
+The IP address can even be used to find the physical location of the user!
+
+A Bitcoin full node broadcasts not just the transactions of its user, but it also gossips all of the other transactions that it has received from its peers.
+Thus it is very difficult to find out which transactions originated from which full node.
+However, when a node or a wallet does not gossip all transactions, but only the transactions of its user, then it is easier to find out which node has sent those specific transactions.
+
+## Wasabi's Solution
+
+#### Full node by default & block filters over tor
+
+Wasabi checks if there is a local Tor instance installed, and if so, it uses this to onion-route all the traffic to and from the network.
+If Tor is not already installed, then it is accessed automatically from within Wasabi.
+This means that by default, all network communication is secured from outside snooping and the IP address is hidden.
+
+In order to fully verify everything, running a full node is essential.
+If [bitcoind](https://github.com/bitcoin/bitcoin) is installed and run on the same computer as Wasabi, then it will automatically and by default connect to the full node.
+It is also possible to connect Wasabi to a remote full node on another computer by specifying the local IP address or Tor hidden service in the settings.
+Then, Wasabi pulls the verified blocks and queries the mempool from the full node.
+
+However, even if no full node is installed, Wasabi has a light client mode based on [BIP 158 block filters](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients).
+When the user sends the extended public key, or a filter of all the addresses to the central server, then the server can **COMPLETELY** deanonymize the users.
+An extended public (xPub) key is a part of the Bitcoin standard [BIP32](/using-wasabi/BIPs.md#bip-32-hierarchical-deterministic-wallets).
+It can be thought of as a master view into a wallet.
+By using the extended public key it's possible to derive all past and future addresses and unspent transaction outputs (UTXOs).
+
+Therefore the Wasabi server sends a filter of all the transactions in each block to all the users.
+Then, they check locally if the block contains any transactions with their addresses.
+If not, then the filter is stored for later reference, and no block is downloaded.
+However, if there is a user transaction in that block, then Wasabi connects to a random Bitcoin P2P node over Tor, and asks for this entire block, not only one transaction.
+This block request is indistinguishable from the regular P2P gossip, and thus nobody, neither the server nor the full node, know which addresses belong to the user.
+
+Wasabi is per default [as private as a Bitcoin full node](/why-wasabi/NetworkLevelPrivacy.md).
+
+## In Depth
+
+Bitcoin Core, more specifically full nodes, are considered to be the pinnacle of network level privacy in Bitcoin wallets that no other wallet type can come close to.
 It is not difficult to see why: full nodes download the whole Blockchain and establish your wallet balances locally, so there is zero chance of any third party figuring out which addresses are in your wallet and which addresses are not.
 
 Compare this to other light wallets, which query a backend server to get information regarding specific addresses or use [BIP 37](/using-wasabi/BIPs.md#bip-37-connection-bloom-filtering) bloom filtering SPV wallet protocol, which is probably [even worse](https://jonasnick.github.io/blog/2015/02/12/privacy-in-bitcoinj/).

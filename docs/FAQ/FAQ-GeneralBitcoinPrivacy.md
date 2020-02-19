@@ -101,7 +101,7 @@ They can see two transactions on your account: one for 0.4 bitcoin and one for 0
 They cannot see which was the purchase and which is the “change,” but it’s a 50% guess.
 The next time you make a transaction, it’s a 25% guess and so on.
 
-This is why making lots of transactions increases your anonymity in the Bitcoin network (as long as you [don't reuse addresses](/why-wasabi/BitcoinPrivacy.md#address-reuse)!).
+This is why making lots of transactions increases your anonymity in the Bitcoin network (as long as you [don't reuse addresses](/why-wasabi/AddressReuse.md)!).
 
 Similarly, if you receive 0.5 bitcoin but want to spend 1 bitcoin, you need to own additional Bitcoin addresses with a combined value of at least 0.5 bitcoin in them.
 Again it’s a 50% guess, but now you have one extra publicly visible Bitcoin address.
