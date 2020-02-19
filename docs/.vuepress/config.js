@@ -239,18 +239,24 @@ module.exports = {
 
       "/building-wasabi/": [
         {
-          title: "Building Wasabi",
+          title: "Contributing to Wasabi",
           collapsable: false,
           sidebarDepth: 2,
           children: [
             "/building-wasabi/TechnicalOverview.md",
             "/building-wasabi/ContributionChecklist.md",
-            "/building-wasabi/Dojo.md",
-            "/building-wasabi/ToDo.md",
             "/building-wasabi/ContributionGame.md",
-            "/building-wasabi/FalsePositive.md",
+            "/building-wasabi/Dojo.md",
+            "/building-wasabi/ToDo.md"
+          ]
+        },
+        {
+          title: "Advanced",
+          collapsable: false,
+          sidebarDepth: 2,
+          children: [
+           "/building-wasabi/FalsePositive.md",
             "/building-wasabi/Security.md",
-            "/building-wasabi/CodeCoverage.md",
             "/building-wasabi/HardwareWalletTestingGuide.md",
             "/building-wasabi/HowToDebug.md",
             "/building-wasabi/Ports.md",
@@ -262,7 +268,7 @@ module.exports = {
 
       "/FAQ/": [
         {
-          title: "FAQ",
+          title: "Frequently Asked Questions",
           collapsable: false,
           sidebarDepth: 2,
           children: [
