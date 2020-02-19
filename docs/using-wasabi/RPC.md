@@ -46,7 +46,7 @@ Now you can use the following RPC commands to interact with your wallet, instead
 
 # Available methods
 
-The current version handles the following methods: `listunspentcoins`, `getstatus`, `getwalletinfo`, `getnewaddress`, `enqueue`, `dequeue`, `send`, `listkeys` and `stop`.
+The current version handles the following methods: `getstatus`, `createwallet`, `listunspentcoins`, `getwalletinfo`, `getnewaddress`, `send`, `gethistory`, `listkeys`, `enqueue`, `dequeue`, and `stop`.
 They can be used as follows:
 
 ## getstatus
@@ -124,6 +124,61 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getstatus"}' http://1
 }
 ```
 
+## createwallet
+
+Returns the twelve recovery words of the freshly generated wallet. 
+
+```bash
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"createwallet","params":["WalletName", "Password"]}' http://127.0.0.1:37128/ | jq                                                   
+```
+
+```json
+{                                                                                                            
+  "jsonrpc": "2.0",
+  "result": "jazz garment survey smart cricket child pizza reform physical alien envelope lesson",
+  "id": "1"
+}
+```
+
+In case we try to generate a wallet with an already existing name it will return:
+
+```json
+{                                                                                                            
+  "jsonrpc": "2.0",
+  "error": {
+    "code": -32603,
+    "message": "Wallet name is already taken."
+  },
+  "id": "1"
+}
+```
+
+In case we try to generate a wallet with a reserved wallet name it will return:
+
+```json
+{                                                                                                            
+  "jsonrpc": "2.0",
+  "error": {
+    "code": -32603,
+    "message": "Invalid wallet name."
+  },
+  "id": "1"
+}
+```
+
+In case we try to generate a wallet with too long of a password it will return:
+
+```json
+{
+  "jsonrpc": "2.0",
+  "error": {                                                                                                  
+    "code": -32603,
+    "message": "Password is too long (Max 150 characters)."
+  },
+  "id": "1"
+}
+```
+
 ## listunspentcoins
 
 Returns the list of confirmed and unconfirmed coins that are unspent.
@@ -172,6 +227,7 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"listunspentcoins"}' h
 ```
 
 In case there is no wallet open it will return:
+
 ```json
 {
   "jsonrpc": "2.0",
@@ -199,7 +255,8 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getwalletinfo"}' http
     "extendedAccountPublicKey": "tpubDCd1v6acjNY3uUqAtBGC6oBTGrCBWphMvkWjAqM2SFZahZb91JUTXZeZqxzscezR16XHkwi1723qo94EKgR75aoFaahnaHiiLP2JrrTh2Rk",
     "extendedAccountZpub": "vpub5YarnXR6ijVdw6G5mGhrUhf5bnodeCDJYtszFVW7LL3vr5HyRmJF8zfTZWzv6LjLPukmeR11ebWhLPLVVRjqbfyknJZdiwRWCyJcKeDdsC8",
     "accountKeyPath": "m/84'/0'/0'",
-    "masterKeyFingerprint": "323ec8d9"
+    "masterKeyFingerprint": "323ec8d9",
+    "balance": 0
   },
   "id": "1"
 }
@@ -223,7 +280,7 @@ In case there is no wallet open it will return:
 Creates an address and returns detailed information about it.
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getnewaddress","params":["Daniel"]}' http://127.0.0.1:37128/ | jq
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getnewaddress","params":["Daniel, Alice"]}' http://127.0.0.1:37128/ | jq
 ```
 
 ```json
@@ -232,7 +289,7 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getnewaddress","param
   "result": {
     "address": "tb1qdskc4y529ayqkqrddknnhdjqwnqc9wzl8940pn",
     "keyPath": "84'/0'/0'/0/30",
-    "label": "Daniel",
+    "label": ["Alice", "Daniel"],
     "publicKey": "0263ea6712e56277bcb07b14b61c30bae2267ec10e0bbf7a024d2c6a0634d6e634",
     "p2wpkh": "00146c2d8a928a2f480b006d6da73bb64074c182b85f"
   },
@@ -255,12 +312,12 @@ In case there is no wallet open it will return:
 
 In case an empty label is provided:
 
-```
+```json
 {
   "jsonrpc": "2.0",
   "error": {
     "code": -32603,
-    "message": "A non-empty label is required."
+    "message": "Parameter cannot be empty. (Parameter 'label')"
   },
   "id": "1"
 }
@@ -278,7 +335,8 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"send", "params": { "p
 {
   "jsonrpc":"2.0",
   "result": {
-    "txid":"c493bf3d9e0279968bf677f0b3661f8f67823b6d7524b9c8a278701d0fb357a5","tx":"0100000000010121e11e8682d93ec842eb41f7271e8922b31591cdbb8b54cdda680cf1e0f65e8c0000000000ffffffff0247590000000000001600143cc0c9d8649532ad77fe0ac5032c1c9ad9529109983a00000000000016001497ff0a7a7ab2078d379e21aade978b6c1bdcba480247304402206bdbf36d0be8062e69b22441ed496ce6b5d639663bd4e580d11b71e34d79c6760220375219a8eb695f15a992b502ff4b639ea809547a3b7f0596cf9a69c1ae1d0df60121033e8670324ec33f15dcb17f346c1927ee3b717070596e397eb00020899c9c913300000000"
+    "txid":"c493bf3d9e0279968bf677f0b3661f8f67823b6d7524b9c8a278701d0fb357a5",
+    "tx":"0100000000010121e11e8682d93ec842eb41f7271e8922b31591cdbb8b54cdda680cf1e0f65e8c0000000000ffffffff0247590000000000001600143cc0c9d8649532ad77fe0ac5032c1c9ad9529109983a00000000000016001497ff0a7a7ab2078d379e21aade978b6c1bdcba480247304402206bdbf36d0be8062e69b22441ed496ce6b5d639663bd4e580d11b71e34d79c6760220375219a8eb695f15a992b502ff4b639ea809547a3b7f0596cf9a69c1ae1d0df60121033e8670324ec33f15dcb17f346c1927ee3b717070596e397eb00020899c9c913300000000"
   }
 }
 ```
@@ -291,13 +349,13 @@ Now the mining fee will be subtracted from the output in which `subtractFee` was
 ( 0.4 - (mining fee) ) + 0.3 + 0.3
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"send", "params": { "payments":[ {"sendto": "tb1qgvnht40a08gumw32kp05hs8mny954hp2snhxcz", "amount": 15000, "label": "David", "subtractFee": true }, {"sendto":"tb1qpyhfrpys6skr2mmnc35p3dp7zlv9ew4k0gn7qm", "amount": 86200, "label": "Michael"} ], "coins":[{"transactionid":"ab83d9d0b2a9873b8ab0dc48b618098f3e7fbd807e27a10f789e9bc330ca89f7", "index":0}], "feeTarget":2 }}' http://127.0.0.1:37128/ | jq
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"send", "params": { "payments":[ {"sendto": "tb1qgvnht40a08gumw32kp05hs8mny954hp2snhxcz", "amount": 15000, "label": "David", "subtractFee": true }, {"sendto":"tb1qpyhfrpys6skr2mmnc35p3dp7zlv9ew4k0gn7qm", "amount": 86200, "label": "Michael"} ], "coins":[{"transactionid":"ab83d9d0b2a9873b8ab0dc48b618098f3e7fbd807e27a10f789e9bc330ca89f7", "index":0}], "feeTarget":2, "password": "password1234" }}' http://127.0.0.1:37128/ | jq
 ```
 
 In case of error, it is reported in the json's error object:
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"send", "params": { "payments": [{ "sendto": "tb1qnmfmkylkd548bbbcd9115b322891e27f741eb42c83ed982861ee121", "amount": 2015663, "label": "Mr. Who" }], "coins":[{"transactionid":"c68dacd548bbbcd9115b38ed982861ee121c5ef6e0f1022891e27f741eb42c83", "index":0}], "feeTarget": 2 }}' http://127.0.0.1:37128/ | jq
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"send", "params": { "payments": [{ "sendto": "tb1qnmfmkylkd548bbbcd9115b322891e27f741eb42c83ed982861ee121", "amount": 2015663, "label": "Mr. Who" }], "coins":[{"transactionid":"c68dacd548bbbcd9115b38ed982861ee121c5ef6e0f1022891e27f741eb42c83", "index":0}], "feeTarget": 2, "password": "password1234" }}' http://127.0.0.1:37128/ | jq
 ```
 
 ```json
@@ -461,7 +519,7 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"howknows"}' http://12
   "jsonrpc": "2.0",
   "error": {
     "code": -32601,
-    "message": "howknows method not found."
+    "message": "'howknows' method not found."
   },
   "id": "1"
 }
