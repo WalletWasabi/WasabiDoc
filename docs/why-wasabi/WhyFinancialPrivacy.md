@@ -40,12 +40,6 @@ Bitcoin doesn't require any identity to be part of this network.
 Being able to use the internet anonymously or pseudonymously is the only way for many people to truly be themselves.
 Hundreds of millions of people around the globe are not accepted in their societies for reasons they cannot control.
 
-Pseudonyms are used by women speaking up for their rights, atheists living in religious societies, and people critical of their governments to spread their thoughts, empower their causes, and encourage those around them to do the same.
-
-These courageous men and women put their own safety and well-being at risk to defend who they are and what they believe in. 
-Technology empowers them to become leaders of social change in societies by providing this very pseudonymity.
-Technology also connects like-minded individuals so they can form the communities for which they strive.
-
 Maintaining an identity with a large following might require paid services such as blogs, logo designs, stock photos, VPNs, or translations.
 Without the ability to pay for these services anonymously, you would be forced to reveal your true identity in order to maintain your pseudonym situation.
 This clearly makes no sense, and has potentially dangerous ramifications.

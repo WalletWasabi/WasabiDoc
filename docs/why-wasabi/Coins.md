@@ -19,6 +19,7 @@ Each UTXO is the tip of the chain of links between inputs and outputs, all the w
 Each UTXO is a unique snowflake with a public transaction history.
 For example, when Alice sends a coin to Bob, then Bob does not just have any random UTXO, but he has specifically the coin that Alice has sent him.
 When Bob sends this coin to Charlie, then Charlie can check the history of the coin and see the transaction from Alice to Bob.
+But due to the pseudonymity of Bitcoin, he does not necessarily find out that Alice is involved.
 
 Further, when Alice has one non-private coin and one private coin, and she selects both of them as the inputs of a transaction, the linking of these two coins strongly suggests that the coin that was private also belongs to Alice.
 This means that coin consolidation can lead to an overall decrease of privacy, especially when using an automatic coin selection algorithm.

@@ -36,7 +36,7 @@ This means that by default, all network communication is secured from outside sn
 In order to fully verify everything, running a full node is essential.
 If [bitcoind](https://github.com/bitcoin/bitcoin) is installed and run on the same computer as Wasabi, then it will automatically and by default connect to the full node.
 It is also possible to connect Wasabi to a remote full node on another computer by specifying the local IP address or Tor hidden service in the settings.
-Then, Wasabi pulls the verified blocks from the full node, and it also broadcasts the transactions to the P2P network from this full node.
+Then, Wasabi pulls the verified blocks and queries the mempool from the full node.
 
 However, even if no full node is installed, Wasabi has a light client mode based on [BIP 158 block filters](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients).
 When the user sends the extended public key, or a filter of all the addresses to the central server, then the server can **COMPLETELY** deanonymize the users.
