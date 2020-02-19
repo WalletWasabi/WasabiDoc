@@ -19,3 +19,6 @@ Here are some credits, thanks and sources (in casual order):
 - [CryptoSeb, Cryptopaper](https://github.com/cryptoseb/CryptoPaper)
 - [Tails](https://tails.boum.org/)
 - [BitSniff](https://github.com/m417z/bitsniff/)
+- [Qubes Operating System](https://qubes-os.org/doc/)
+- [Whonix](https://whonix.org)
+- [VirtualBox](https://virtualbox.org)
