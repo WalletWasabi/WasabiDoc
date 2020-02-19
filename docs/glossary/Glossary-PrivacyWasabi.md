@@ -11,7 +11,7 @@
 ### Address Reuse
 
 Address reuse refers to the use of the same address for multiple transactions, this is very bad for privacy.
-Read more: [Address reuse](/why-wasabi/BitcoinPrivacy.md#address-reuse)
+Read more: [Address reuse](/why-wasabi/AddressReuse.md)
 :::
 
 :::details

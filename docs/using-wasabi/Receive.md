@@ -40,7 +40,7 @@ Wasabi Wallet does not "store your money", rather it stores your public keys and
 
 Whenever you use the same address to lock up different UTXOs, then all these coins can be spent by anyone who knows the private key.
 This makes it obvious for anyone that this one entity [you] owns all these coins, which is very bad for privacy.
-The first rule of Bitcoin privacy is [never reuse addresses](/why-wasabi/BitcoinPrivacy.md#address-reuse)!
+The first rule of Bitcoin privacy is [never reuse addresses](/why-wasabi/AddressReuse.md)!
 
 :::tip
 This is why Wasabi removes the address from the `Receive` tab as soon as it has received a coin.
