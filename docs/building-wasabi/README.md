@@ -23,6 +23,7 @@ And all the necessary information you need to quickly start with your invaluable
 - [ToDo List](/building-wasabi/ToDo.md)
 
 ### Advanced
+
 - [False Positive](/building-wasabi/FalsePositive.md)
 - [Security Policy](/building-wasabi/Security.md)
 - [Hardware Wallet Integration Testing](/building-wasabi/HardwareWalletTestingGuide.md)

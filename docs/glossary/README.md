@@ -10,5 +10,7 @@
 This glossary contains the explanations of common words used in Wasabi and regarding Bitcoin privacy in general.
 Every item contains a link to the respective full document for more details.
 
+## Chapters
+
 - [Bitcoin in general](/glossary/Glossary-GeneralBitcoin.md)
 - [Privacy and Wasabi](/glossary/Glossary-PrivacyWasabi.md)
