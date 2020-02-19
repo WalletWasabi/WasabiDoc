@@ -1124,19 +1124,17 @@ You can't do that directly, you have to send the bitcoins (in small portions > 0
 :::
 
 :::details
-### Does Ledger Live send my public keys and addresses to a third party server?
+### Does Ledger Live send my public addresses to a third party server?
 
-Yes.
-When using the Ledger Live software wallet to manage your coins, you send all of your used, and 20 unused public keys to the Ledger company server. [Source](https://support.ledger.com/hc/en-us/articles/360010892360)
-With this information they know exactly how many bitcoins you have and in what transactions you spend them.
-Your extended public key, however, is not shared with this server, but rather stored encrypted on your local machine. [Source](https://support.ledger.com/hc/en-us/articles/360011069619)
+Only if you add your accounts in the app, but not if you update your device firmware or install apps. 
+When using the Ledger Live software wallet to manage your coins, you send all of your used, and 20 unused public addresses to Ledger's nodes. [Source](https://support.ledger.com/hc/en-us/articles/360010892360)
+Ledger says it does not use this information to track its users' coins and transactions, but as a user you cannot verify this.
+Your extended public key, however, is not shared with Ledger's node, but rather stored encrypted on your local machine. [Source](https://support.ledger.com/hc/en-us/articles/360011069619)
 
-To avoid this privacy leak, you can use a Ledger hardware in combination with Wasabi as a software interface, and because Wasabi does not leak your public keys, your transaction history is not shared with anyone.
+To avoid this privacy leak, you can use a Ledger hardware wallet in combination with Wasabi as a software interface, and because Wasabi does not leak your public addresses, your transaction history is not shared with anyone.
 
 If you have already used Ledger Live, make sure you are generating a completely new wallet with a new seed phrase backup so that the compromised old wallet is no longer an issue.
 
-If you need to use Ledger Live, for example to update your firmware, then only connect to it with a passphrase that leads to an unused and empty wallet.
-Then use your Ledger hardware with the correct passphrase with Wasabi Wallet without having concerns about your privacy.
 :::
 
 :::details
