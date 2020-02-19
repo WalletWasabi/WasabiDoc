@@ -8,7 +8,8 @@
 # Credits
 
 Part of the content in this documentation comes from other open source projects.
-Here are some credits, thanks and sources (in casual order):
+Here are some credits, thanks and sources (in casual order):7
+
 - [Bitcoin Wiki](https://en.bitcoin.it/wiki/Main_Page)
 - [BTC Pay Server Documentation](https://docs.btcpayserver.org/)
 - [Bisq Documentation](https://docs.bisq.network/)
@@ -19,3 +20,7 @@ Here are some credits, thanks and sources (in casual order):
 - [CryptoSeb, Cryptopaper](https://github.com/cryptoseb/CryptoPaper)
 - [Tails](https://tails.boum.org/)
 - [BitSniff](https://github.com/m417z/bitsniff/)
+- [Microsoft](https://dotnet.microsoft.com/download)
+- [Qubes Operating System](https://qubes-os.org/doc/)
+- [Whonix](https://whonix.org)
+- [VirtualBox](https://virtualbox.org)
