@@ -12,16 +12,19 @@ Here you find out about the Wasabikas who have already supported this open sourc
 Some of the issues they are working on now as well as the research for future ideas.
 And all the necessary information you need to quickly start with your invaluable contribution.
 
-### Chapters
+## Chapters
+
+### Contributing to Wasabi
 
 - [Technical Overview of Wasabi Wallet](/building-wasabi/TechnicalOverview.md)
 - [Contribution Checklist](/building-wasabi/ContributionChecklist.md)
+- [Contribution Game](/building-wasabi/ContributionGame.md)
 - [Dojo](/building-wasabi/Dojo.md)
 - [ToDo List](/building-wasabi/ToDo.md)
-- [Contribution Game](/building-wasabi/ContributionGame.md)
+
+### Advanced
 - [False Positive](/building-wasabi/FalsePositive.md)
 - [Security Policy](/building-wasabi/Security.md)
-- [Code Coverage](/building-wasabi/CodeCoverage.md)
 - [Hardware Wallet Integration Testing](/building-wasabi/HardwareWalletTestingGuide.md)
 - [Developers debugging Guide](/building-wasabi/HowToDebug.md)
 - [Ports](/building-wasabi/Ports.md)
