@@ -1133,8 +1133,6 @@ Your extended public key, however, is not shared with Ledger's node, but rather 
 
 To avoid this privacy leak, you can use a Ledger hardware wallet in combination with Wasabi as a software interface, and because Wasabi does not leak your addresses, your transaction history is not shared with anyone.
 
-If you have already used Ledger Live, make sure you are generating a completely new wallet with a new seed phrase backup so that the compromised old wallet is no longer an issue.
-
 :::
 
 :::details
