@@ -9,8 +9,8 @@
 
 This is an archive with some of the many questions that Wasabikas have frequently.
 Including about the basics of privacy and Bitcoin in general.
-The important details of how to install Wasabi properly and the best practices how to use it.
-Further the questions for those who are interested in contributing to Wasabi.
+The important details of how to install Wasabi properly and the best practices for using it.
+Further, providing guidance for those who are interested in contributing to Wasabi.
 
 ## Chapters
 
