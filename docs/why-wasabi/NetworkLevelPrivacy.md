@@ -25,12 +25,8 @@ A Bitcoin full node broadcasts not just the transactions of its user, but it als
 Thus it is very difficult to find out which transactions originated from which full node.
 However, when a node or a wallet does not gossip all transactions, but only the transactions of its user, then it is easier to find out which node has sent those specific transactions.
 
-Compare this to other 
-
 There are light wallets, which query a backend server to get information regarding specific addresses, or use [BIP 37](/using-wasabi/BIPs.md#bip-37-connection-bloom-filtering) bloom filtering SPV wallet protocol, which is [extremely bad for privacy](https://jonasnick.github.io/blog/2015/02/12/privacy-in-bitcoinj/).
 And there is Electrum, which [sends your addresses](https://www.reddit.com/r/Bitcoin/comments/2feox9/electrum_securityprivacy_model/ck8szc0/) to random Electrum servers.
-An extended public (xPub) key is a part of the Bitcoin standard [BIP32](/using-wasabi/BIPs.md#bip-32-hierarchical-deterministic-wallets), it can be thought of as a master view into a wallet.
-By using the extended public key it's possible to derive all past and future addresses and unspent transaction outputs (UTXOs).
 
 :::danger
 When the user sends the extended public key, or a filter of all the addresses to the central server, then the server can **COMPLETELY** deanonymize the users.
@@ -88,7 +84,7 @@ Other peers cannot figure out which transaction originates from a specific node,
 However some papers note it’s not bulletproof:
 
 > Bitcoin transaction propagation does not hide the source of a transaction very well, especially against a “supernode” eavesdropper that forms a large number of outgoing connections to reachable nodes on the network.
->  ~ [Dandelion: Privacy-Preserving Transaction Propagation](/using-wasabi/BIPs.md#bip-156-dandelion-privacy-enhancing-routing).
+>  [Dandelion: Privacy-Preserving Transaction Propagation](/using-wasabi/BIPs.md#bip-156-dandelion-privacy-enhancing-routing).
 
 #### Adversaries identified
 
@@ -101,7 +97,7 @@ You can use Bitcoin Core with Tor, which solves some of the above mentioned issu
 In this case a supernode cannot track back transactions to your IP address.
 
 An entity that can break Tor is a universal adversary, however, most Tor attacks are not possible if exit nodes are not involved.
-It is reasonable to assume that this entity can break the onion routing, not Tor’s encryption itself.
+It is reasonable to assume that this entity can break the onion routing, not Tor's encryption itself.
 
 #### Adversaries identified
 
@@ -124,7 +120,7 @@ Wasabi broadcast transactions to only one peer over Tor, and immediately after t
 #### Private UTXO retrieval
 
 The backend server served a constant filter table to all the clients over Tor.
-From those filters the clients figure out which blocks they are interested in and downloaded these [and some false-positive blocks] from peers.
+From those filters the clients figure out which blocks they are interested in and download them [and some false-positive blocks] from peers.
 One block per peer, and always over a fresh Tor stream.
 When a block was acquired, the peer was disconnected.
 Because of the end-to-end encryption of the onion network, it immediately defeats an ISP adversary and makes the already impossible job of the Sybil adversary even more impossible.
@@ -149,7 +145,7 @@ Even when Wasabi is connected to your own node, it will broadcast the transactio
 #### Private UTXO retrieval
 
 If you have a listening full node running in the background (not only Bitcoin Core, any full node) then Wasabi automatically picks it up and instead of asking peers for blocks, it asks for blocks from your own node.
-Using Wasabi this way results in the same privacy model as Bitcoin Core’s, regarding Private UTXO Retrieval.
+Using Wasabi this way results in the same privacy model as Bitcoin Core's, regarding Private UTXO Retrieval.
 
 ## Universal Attacks
 
