@@ -346,7 +346,8 @@ If you have three outputs with 0.4, 0.3 and 0.3 BTC, the amount of BTC in the in
 
 You can add `subtractFee: true` to one of the request's payments to change this behaviour.
 Now the mining fee will be subtracted from the output in which `subtractFee` was set to `true` so the input amounts summed up can be exactly the output amounts summed up.
-( 0.4 - (mining fee) ) + 0.3 + 0.3
+`( 0.4 - (mining fee) ) + 0.3 + 0.3`
+With this you can send the max amount of the coin, by setting the same value of the input coins for the output address.
 
 ```bash
 curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"send", "params": { "payments":[ {"sendto": "tb1qgvnht40a08gumw32kp05hs8mny954hp2snhxcz", "amount": 15000, "label": "David", "subtractFee": true }, {"sendto":"tb1qpyhfrpys6skr2mmnc35p3dp7zlv9ew4k0gn7qm", "amount": 86200, "label": "Michael"} ], "coins":[{"transactionid":"ab83d9d0b2a9873b8ab0dc48b618098f3e7fbd807e27a10f789e9bc330ca89f7", "index":0}], "feeTarget":2, "password": "password1234" }}' http://127.0.0.1:37128/ | jq
