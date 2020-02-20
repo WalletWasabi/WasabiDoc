@@ -7,10 +7,11 @@
 
 # Frequently Asked Questions
 
-This is an archive with some of the many questions that Wasabikas have frequently.
-Including about the basics of privacy and Bitcoin in general.
-The important details of how to install Wasabi properly and the best practices for using it.
-Further, providing guidance for those who are interested in contributing to Wasabi.
+This is an archive with some of the many questions that Wasabikas have asked most frequently, including:
+
+- Answers about the basics of privacy and Bitcoin in general.
+- The important details of how to install Wasabi properly, and the best practices for using it.
+- Further guidance for those who are interested in contributing to Wasabi.
 
 ## Chapters
 
