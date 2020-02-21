@@ -196,7 +196,6 @@ So, a 5-word passphrase selected randomly from the EFF list will have 5 x 12.92 
 A password constructed with lower and upper-case letters, numbers, and special characters will have log2(95), or 6.57 bits of entropy for each character that comprises the password.
 From that, we can now calculate that, in order to get the same level of entropy with a password instead of a 5-word passphrase, the password must be at least 10 characters in length.
 
-Knowing that, we can calculate that each word contributes log2(2084), or 11 bits of entropy, giving the entire 12 word seed 132 bits of entropy.
 
 
 ## How are the secrets created
