@@ -66,7 +66,7 @@ This means that the password is your last line of defense against anyone who tri
 
 :::tip
 A good password or passphrase should be both randomly constructed, and long.
-It is the last line of defense between an attacker and your Bitcoins!
+It is the last line of defense between an attacker and your bitcoins!
 :::
 
 ### Password basics
