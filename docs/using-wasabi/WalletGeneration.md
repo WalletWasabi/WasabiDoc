@@ -152,7 +152,7 @@ A 6-word passphrase derived as just discussed has 77 [bits of entropy](/using-wa
 Best practices for being secure against any adversary [currently recommend](https://blog.securityevaluators.com/understanding-password-complexity-5e0d23643a2a) a minimum of near 80 bits of entropy, so this example phrase barely qualifies.
 
 __Once again:__
-Keep a [secure backup](/using-wasabiColdWasabimd#a-list-of-the-more-common-mediums-of-cold-storage-with-some-of-their-weaknesses) of the password, but store it in a separate location from your main 12 recovery words.
+Keep a [secure backup](/using-wasabi/ColdWasabi.md#a-list-of-the-more-common-mediums-of-cold-storage-with-some-of-their-weaknesses) of the password, but store it in a separate location from your main 12 recovery words.
 
 ### Advanced password analysis
 
