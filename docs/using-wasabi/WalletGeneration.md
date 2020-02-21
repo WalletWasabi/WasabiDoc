@@ -74,7 +74,7 @@ It is the last line of defense between an attacker and your bitcoins!
 1. Randomness is the single-most important requirement for a strong password, because randomness means that the password has no predictable pattern to it.
 This makes it impossible to crack without doing an exhaustive, "brute-force" attack.
 2. Assuming a password is constructed randomly, its length has the most impact on its strength.
-However, a password that is very long, but not randomly constructed, such as: "thequickbrownfoxjumpedoverthelazydogsback", or a passage from literature, is certain to be on every serious hacker's guess list.
+However, a password that is very long, but not randomly constructed, such as: `thequickbrownfoxjumpedoverthelazydogsback`, or a passage from literature, is certain to be on every serious hacker's guess list.
 3. "Entropy" is a term commonly used to define password strength.
 It is typically used to describe the combined effect of randomness, length, and number of characters (lower-case/upper-case letters, numbers, and special characters) or words in a password or passphrase.
 
