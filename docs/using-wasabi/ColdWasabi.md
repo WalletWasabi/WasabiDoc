@@ -61,6 +61,7 @@ The final transaction is automatically broadcast over Tor with Wasabi Wallet.
 ### Connecting Coldcard via SD card
 
 You can use Wasabi Wallet together with Coldcard without ever connecting it via USB, further reducing possible attack vectors.
+For more details see the [Coldcard documentation](https://coldcardwallet.com/docs/microsd).
 
 #### Import the skeleton wallet
 
