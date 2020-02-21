@@ -134,18 +134,18 @@ A list of the more common mediums for backups with some of their weaknesses:
 ### Written on a piece of paper
 - Anyone who can see it, can steal it
 - Handwriting can be hard to read or completely illegible
-- Human error in transcription can cause errors on end product
+- Human error in transcription can cause errors on the end product
 - Paper can rot, be torn, burn, or be smoke damaged
 
 ### Printed on a piece of paper
 - Anyone who can see it, can steal it
-- Type of printer - non-laser printers can run if paper gets wet
+- Type of printer - non-laser printers ink can run if the paper gets wet
 - Have to trust printer - some have internet connections, wifi, and memory
 - Paper can rot, be torn, burn, or be smoke damaged
 
 ### On laminated paper
 - Anyone who can see it, can steal it
-- Lamination is prone or degradation over time and puncture or cuts that could allow moisture to get trapped in the paper and cause deterioration or rotting in some circumstances | store in cool dry place
+- Lamination is prone to degradation over time, as well as punctures or cuts that could allow moisture to get trapped in the paper and cause deterioration or rotting in some circumstances | store in cool dry place
 - Can burn or be smoke damaged
 - 'Fireproof' & 'Fire-resistant' boxes can help protect paper in a small house fire but be warned that they can sometimes fall apart in the fire and get wet if the fire is put out with water.
 Remember people can just carry out a small safe
@@ -171,9 +171,9 @@ Titanium is above the housefire range and so is tungsten, however tungsten rings
 - A non-negligible amount of HDDs suffer from factory defects that will cause them to fail unexpectedly during their - lifetime
 - Accidents can happen that could result in loss of data
 - Solid state drives (SSDs) will lose data if unpowered, they may last years before this becomes a problem but it is unwise to store long-term data in unpowered SSDs
-- If connected to internet it is another attack vector and the safety is only as good as the encryption used; I don't know what I would recommend but it wouldn't be BitLocker. Someone could be trying to break into the computer constantly. Even with good encryption if the machine or location is compromised the key could be stolen as soon as it is decrypted.
+- Connecting to the internet is another attack vector and the safety is only as good as the encryption used; I don't know what I would recommend but it wouldn't be BitLocker. Someone could be trying to break into the computer constantly. Even with good encryption if the machine or location is compromised the key could be stolen as soon as it is decrypted.
 - There are a lot of ongoing threats with computers, from 0-day exploits to firmware exploits and malicious USB cords
-- External hdds are good for storage for a few years at least if stored properly
+- External HDDs are good for storage for a few years at least if stored properly
 - If not connected to internet, safety is only as good as the physical protection encryption used; could someone break into the location and copy the data without anyone noticing?
 
 ### Stored digitally on CD, floppy disk, laserdisc, or mini-disc
@@ -187,12 +187,13 @@ This can lead to the loss of your data when stored on a medium made of plastic o
 ### Stored digitally on a flash drive
 - Can break and have to be physically repaired before use
 - Rapidly changing magnetic fields (See MRIs) can damage the data stored on flash drives
-- Can burn or be smoke damaged
+- Can burn, or be smoke damaged
 - Can become corroded from salt water or some atmospheric conditions
 - If they break apart, some lighting conditions can cause data corruption (you can also put them back together and often still get the data)
-- Different devices are all different, even similar devices from the same production batch can be different.
-There are large quality differences in drives but I am assuming you aren't using these for anything but storage.
-- There are some fake flash drives that look like they saved the data but you can't get it back later
+- Different devices are inconsistent.
+Even similar devices from the same production batch can be different.
+There are large quality differences in drives, but I am assuming you aren't using these for anything but storage.
+- There are some fake flash drives that look like they saved the data but you can't get it back later.
 - Flash drives are not advised for long term storage; they can be used as one part of a multi-medium-location-format plan.
 
 ### A pre-funded physical bitcoin coin (where the manufacturer generates and installs the secret key)
