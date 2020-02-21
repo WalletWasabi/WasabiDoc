@@ -142,7 +142,7 @@ Repeat the dice rolling process at least five more times.
 After six sets of five rolls, we ended up with `52611` `51631` `63432` `43123` `21641` and `14146`.
 This corresponds to the password `salvo rhoda walton mudd croft bride`.
 
-This six-word passphrase, even though easy to remember, is just one of 2.21 x 10^23, or 22.1 sextillion possible six-word combinations taken from the list of 7776 words.
+This six-word passphrase, even though easy to remember, is just one of 2.21 x 10^23, or 221 sextillion possible six-word combinations taken from the list of 7776 words.
 A computer capable of 1 trillion guesses/second would take, on average, over 3500 years to correctly guess this or any six-word combination of words from the list, if they are chosen randomly.
 
 A 6-word passphrase derived as just discussed has 77 [bits of entropy](/using-wasabi/WalletGeneration.md#advanced-password-analysis).
