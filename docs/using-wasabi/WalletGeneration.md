@@ -103,7 +103,10 @@ It will not fool any serious hacker, even if you throw in substitutions such as:
 
 ### Best practices
 
+:::tip
 Don't "roll your own" crypto.
+:::
+
 You shouldn't try to re-invent the wheel for something as complicated and nuanced as cryptography, and especially in regards to entropy.
 These are some of the industry best practices:
 
