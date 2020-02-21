@@ -162,7 +162,6 @@ Assuming a password or passphrase is constructed randomly, its level of entropy 
 C raised to the power of L, or C^L.<br>
 Example: `jwodnrosqf` is lower-case only (C = 26) and 10 characters long (L = 10). So, 26^10 = 141,000,000,000,000 (141 trillion) or: 1.41 x 10^14.<br>
 Including upper-case letters in the same password: `jWoDNrosqF` to double (C), results in 52^10 possible passwords = 145,000,000,000,000,000 (145 quadrillion) or : 1.45 x 10^17.<br>
-Including special characters in the same password: `jW0DNro$qF` raises (C) to 95, resulting in 95^10 possibilities = 59,900,000,000,000,000,000 (59.9 quintillion) or : 5.99 x 10^19.
 
 - For a passphrase chosen randomly from a list of words, the total number of possible outcomes given a specific number of words (N) and wordlist size (S) is: S raised to the power of N, or S^N.<br>
 Example: The EFF diceware wordlist contains 7776 words.
