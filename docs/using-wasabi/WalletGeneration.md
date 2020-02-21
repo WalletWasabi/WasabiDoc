@@ -20,7 +20,7 @@ So, with several wallets you can conveniently manage your bitcoin for different 
 1. Launch Wasabi Wallet.
 The very first time you run the software the `Generate Wallet` tab will be open automatically, but you can also access it by clicking on `File -> Generate Wallet` in the menu bar.
 
-2. Label the new wallet precisely to ensure a proper differentiation from wallets created in the future.
+2. Name the new wallet precisely to ensure a proper differentiation from wallets created in the future.
 This label is not shared with anyone, it is only stored locally on your computer.
 
 3. Write a long and random password and _back it up_.
@@ -79,7 +79,7 @@ However, a password that is very long, but not randomly constructed, such as: "t
 It is typically used to describe the combined effect of randomness, length, and number of characters (lower-case/upper-case letters, numbers, and special characters) or words in a password or passphrase.
 
 Calculating entropy allows the strength of different randomly constructed passwords or phrases to be compared.
-It also defines the size of the search-space an attacker would need cover to find the password by trying all possibilities.
+It also defines the size of the search-space an attacker would need to cover to find the password by trying all possibilities.
 
 If you are interested, there is a deeper dive into [how to calculate and evaluate entropy](/using-wasabi/WalletGeneration.md#advanced-password-analysis) later in this chapter.
 
@@ -247,5 +247,4 @@ Wasabi uses [BIP 38: Password-Protected Private Key](/using-wasabi/BIPs.md#bip-3
                   +--------------------+
 
 ```
-
 
