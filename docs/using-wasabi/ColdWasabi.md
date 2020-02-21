@@ -20,7 +20,7 @@ Alternatively, you can [build a PSBT](using-wasabi/ColdWasabi.md#connecting-cold
 
 :::warning No CoinJoin
 Unfortunately, as of now you cannot [CoinJoin](/using-wasabi/CoinJoin.md) with just the private keys on your hardware wallet.
-The keys need to on the internet connected computer to be available to Wasabi Wallet.
+The keys need to be on the internet connected computer to be able to CoinJoin.
 :::
 
 ## What is Cold Storage
