@@ -165,7 +165,7 @@ Including upper-case letters in the same password: `jWoDNrosqF` to double (C), r
 
 - For a passphrase chosen randomly from a list of words, the total number of possible outcomes given a specific number of words (N) and wordlist size (S) is: S raised to the power of N, or S^N.<br>
 Example: The EFF diceware wordlist contains 7776 words.
-Randomly selecting 5 words from the list results in 7776^5 possible passphrases = 28,400,000,000,000,000,000 (28.4 quintillion) or: 2.84 x 10^19.
+Randomly selecting 5 words from the list results in 7776^5 possible passphrases = 28,400,000,000,000,000,000 (28.4 quintillion).
 
 #### How Much Entropy Is Needed
 
