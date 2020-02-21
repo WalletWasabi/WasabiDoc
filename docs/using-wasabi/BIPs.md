@@ -112,13 +112,6 @@ This has been proven to be by far the best way to do light clients privately, an
 [BIP 174: Partially Signed Bitcoin Transaction Format](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki)
 :::
 
-:::details
-### Hardware Wallet Interface
-
-[Hardware Wallet Interface](https://github.com/bitcoin-core/HWI)
-:::
-
-
 ## What will be supported in #twoweeks
 
 :::details
