@@ -26,6 +26,7 @@ Further tutorials about the different parts of the wallet, for newbies and power
 - [Receive](/using-wasabi/Receive.md)
 - [CoinJoin](/using-wasabi/CoinJoin.md)
 - [Send](/using-wasabi/Send.md)
+- [Cold-Wasabi Hardware Wallet Mode](/using-wasabi/ColdWasabi.md)
 - [Bitcoin Full Node](/using-wasabi/BitcoinFullNode.md)
 
 ### Privacy Best Practices
@@ -45,7 +46,6 @@ Further tutorials about the different parts of the wallet, for newbies and power
 - [Wasabi Setup using Whonix](/using-wasabi/WasabiSetupWhonix.md)
 
 ### Advanced Using Wasabi
-- [Cold-Wasabi Protocol](/using-wasabi/ColdWasabi.md)
 - [Headless Wasabi Daemon](/using-wasabi/Daemon.md)
 - [RPC Interface](/using-wasabi/RPC.md)
 - [Lurking Wife Mode](/using-wasabi/LurkingWifeMode.md)
