@@ -1,183 +1,169 @@
 ---
 {
-  "title": "Cold-Wasabi protocol",
+  "title": "Cold-Wasabi Hardware Wallet Mode",
   "description": "A step by step guide on how to CoinJoin and send bitcoin to a hardware wallet for cold storage using WasabiWallet only. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
 }
 ---
 
-# What is Cold Storage
+# Cold-Wasabi Hardware Wallet Mode
 
-Cold storage in the context of Bitcoin refers to keeping a reserve of Bitcoins offline.
-This is often a necessary security precaution, especially dealing with large amounts of Bitcoin.
+[[toc]]
 
-Cold storage is primarily intended for digital-asset custodians who do not actively trade their digital assets.
-It offers a high level of protection for digital assets, because keys are secured offline or in hardware and should never be on networked computers.
-However, cold storage should be considered as an option for everyone who is managing digital assets.
-It can be the secure foundation for a more complex scenario that also involves hot wallets, offering the maximum security for whatever percentage of funds don't need to be actively available at all times.
-A few questions can help you determine if you can move some of your funds from hot wallets to cold storage:
-- How much readily available liquidity do you need?
-- How often are you moving your digital assets?
-- How often are you exchanging your digital assets?
+## Using hardware wallet step-by-step
 
-After you answer these questions, you may discover that you don’t actually need all of your funds to be always available.
-The remainder should then be moved off of exchanges into a cold-storage scenario, and the following can provide a model for that.
-Even if you determine that all of your funds must remain hot, our cold-storage scenario still suggests a variety of best practices for managing digital-asset keys, and does so in the context of risks and adversaries that can be used to model other scenarios.
+1. Start your Wasabi Wallet and connect your hardware wallet with USB.
+Alternatively you can import a Coldcard skeleton file via SD card.
+2. The `Hardware Wallet` tab will open, and show all connected hardware wallets.
+3. Click `Load Wallet`, then you can [receive](/using-wasabi/Receive.md) bitcoin to addresses controlled by the hardware wallet.
+4. You can [spend](/using-wasabi/Send.md) these coins in the `Send` tab, though the hardware wallet must be connected via USB to confirm before signing the transaction.
+Alternatively you can [build a PSBT](using-wasabi/ColdWasabi.md#connecting-coldcard-via-sd-card), export this via SD card to your Coldcard wallet for signing, then import the final transaction to Wasabi for broadcasting.
 
-For example, a Bitcoin exchange typically offers an instant withdrawal feature, and might be a steward over hundreds of thousands of bitcoins.
-To minimize the possibility that an intruder could steal the entire reserve in a security breach, the operator of the website follows a best practice by keeping the majority of the reserve in cold storage, or in other words, not present on the web server or any other computer.
-The only amount kept on the server is the amount needed to cover anticipated withdrawals.
+:::warning No CoinJoin
+Unfortunately, as of now you cannot [CoinJoin](/using-wasabi/CoinJoin.md) with the private keys on your hardware wallet.
+The keys need to be hot in Wasabi Wallet on the internet connected computer.
+:::
 
-Methods of cold storage include keeping bitcoins:
-- On a USB drive or other data storage medium in a safe place (e.g. safe deposit box, safe)
+## What is Cold Storage
+
+Cold storage refers to keeping a reserve of bitcoin protected by private keys which are generated and stored completely offline.
+This is an often used security precaution, especially dealing with large amounts of bitcoin.
+Because the private keys are not on a computer which is connected to the internet, many remote attack vectors are nullified.
+
+Methods of cold storage include keeping private keys:
+- On a [USB drive](/using-wasabi/WasabiSetupTails.md) or other data storage medium
 - On a paper wallet
 - On a bearer item such as a physical bitcoin
-- Use a offline Bitcoin Hardware wallet
+- On a hardware wallet
 
-Potential problems with cold storage methods exist but can be mitigated.
+## Hardware Wallet with Wasabi
 
-There are a number of cases where secret/private keys and/or backup seeds can be lost because of the medium on which they are stored.
+You can use Wasabi Wallet with almost any hardware wallet out there, because Wasabi utilizes [Bitcoin Core hardware wallet integration [HWI]](https://github.com/bitcoin-core/hwi).
+The setup is thoroughly tested for [Trezor model One and T](https://trezor.io), [Ledger Nano S](https://ledgerwallet.com), [Coldcard](https://coldcardwallet.com).
 
-## A list of the more common mediums of cold storage with some of their weaknesses:
+### Connecting via USB
 
-:::details
-### Written on a piece of paper
-- Anyone who can see it, can steal it
-- Handwriting can be hard to read or completely illegible
-- Human error in transcription can cause errors on end product
-- Paper can rot, be torn, burn, or be smoke damaged
+#### Import the wallet
+
+When Wasabi is running, the hardware wallet can be connected via USB to the same computer.
+Wasabi should automatically detect the hardware, and open the `Hardware Wallet` tab where you can load the wallet.
+
+#### Receiving bitcoin
+
+After the first time you loaded a new device, the public keys will be stored locally on the computer, and you can use Wasabi to [receive bitcoin](/using-wasabi/Receive.md) to the hardware wallet without connecting it again.
+
+#### Sending bitcoin
+
+Only when you want to [send bitcoin](/using-wasabi/Send.md) do you need to connect the device over USB again.
+In the `Send` tab, after selecting your coins, destination address, payment amount and fee, click the `Sign Transaction` button.
+The private keys are not on the computer, thus the transaction is signed on the hardware wallet, after you confirm with a physical button click.
+The final transaction is automatically broadcast over Tor with Wasabi Wallet.
+
+### Connecting Coldcard via SD card
+
+You can use Wasabi Wallet together with Coldcard without ever connecting it via USB, further reducing possible attack vectors.
+
+#### Import the skeleton wallet
+
+Power your Coldcard on a power bank or electricity socket, then unlock it with your pin.
+Put in a Micro SD card and go to `Advanced > MicroSD Card > Export Wallet > Wasabi Wallet`.
+This will write the public keys, wallet fingerprint, derivation path and other metadata to a skeleton file `new-wallet.json`.
+
+:::warning Protect your public keys!
+This file does not include your private keys, so an attack can not use it to spend your bitcoin.
+However, he can use it to derive a full transaction history, thus it is a potential privacy leak.
 :::
 
-:::details
-### Printed on a piece of paper
-- Anyone who can see it, can steal it
-- Type of printer - non-laser printers can run if paper gets wet
-- Have to trust printer - some have internet connections, wifi, and memory
-- Paper can rot, be torn, burn, or be smoke damaged
-:::
+Now plug in the SD card to your computer, and open Wasabi Wallet.
+Go to the `Hardware Wallet` tab, and click the button `Import Coldcard`, browse to the SD card and select the `new-wallet.json` file.
+Wasabi will automatically important and modify this skeleton file and store in your `Wallets` and `WalletBackup` folder.
 
-:::details
-### On laminated paper
-- Anyone who can see it, can steal it
-- Lamination is prone or degradation over time and puncture or cuts that could allow moisture to get trapped in the paper and cause deterioration or rotting in some circumstances | store in cool dry place
-- Can burn or be smoke damaged
-- 'Fireproof' & 'Fire-resistant' boxes can help protect paper in a small house fire but be warned that they can sometimes fall apart in the fire and get wet if the fire is put out with water.
-Remember people can just carry out a small safe
-:::
+#### Receiving bitcoin
 
-:::details
-### Engraved / etched/ ablated/ stamped on a piece of metal
-- Anyone who can see it, can steal it
-- Some metals can deteriorate or corrode, choose a good metal; also store your metal away from direct contact other metals. - Some metals that are corrosion resistant have low melting points, are extremely expensive, or hard to machine.
-- Metals can still deform or melt from heat, destroying any engraved SK. "Most house fires do not burn hotter than 1,200 degrees Fahrenheit.
-This temperature is typically associated with the hottest portion of a home, which is in the roof area.
-Homes that burn for longer than 30 minutes or consist of multiple levels sometimes burn at higher temperatures."
-You want to pick a metal that won't be destroyed by a fire.
-So magnesium, tin, and lead are all out as engraving materials.
-- Silver, gold, copper, brass, bronze, nickel, cobalt, would survive the housefire fire unmelted.
-Some Aluminium alloys can survive but you have to have the right ones.
-At around 1500° Steel and Nickel should be okay.
-Titanium is above the housefire range and so is tungsten, however tungsten rings are known to shatter due to the brittle nature of the very hard metal.
-:::
+After the skeleton wallet is imported, you can open the wallet in the `Load Wallet` tab without using your Coldcard.
+Then label the observer and generate the [receiving address](/using-wasabi/Receive.md) as usual.
+This address belongs to the private keys which are on the hardware wallet.
 
-:::details
-### Stored digitally on a computer
-- Computers can crash, making data recovery expensive
-- Data can still technically be recovered after a system is abandoned by the user. In some cases data can be recovered after multiple overwriting attempts and physical destruction (as long as the attacker can get all or most the pieces) so if you copy files to a new computer and ditch the old one, be careful.
-- Can burn or be smoke damaged
-- A traditional hard disc drive can have data corrupted by powerful magnetic fields and can physically shatter
-- A non-negligible amount of HDDs suffer from factory defects that will cause them to fail unexpectedly during their - lifetime
-- Accidents can happen that could result in loss of data
-- Solid state drives (SSDs) will lose data if unpowered, they may last years before this becomes a problem but it is unwise to store long-term data in unpowered SSDs
-- If connected to internet it is another attack vector and the safety is only as good as the encryption used; I don't know what I would recommend but it wouldn't be BitLocker. Someone could be trying to break into the computer constantly. Even with good encryption if the machine or location is compromised the key could be stolen as soon as it is decrypted.
-- There are a lot of ongoing threats with computers, from 0-day exploits to firmware exploits and malicious USB cords
-- External hdds are good for storage for a few years at least if stored properly
-- If not connected to internet, safety is only as good as the physical protection encryption used; could someone break into the location and copy the data without anyone noticing?
-:::
+#### Sending bitcoin
+ 
+In the right side Wallet explorer, click in the `Advanced` section and `Build Transaction`.
+This shows you a tab similar to `Send`, you select coins, specify the destination address, payment amount and mining fee.
+Then you click `Build Transaction`, and it will generate an unsigned Bitcoin transaction.
+Click on `Export Binary PSBT`, select the SD card and click `OK`.
 
-:::details
-### Stored digitally on CD, floppy disk, laserdisc, or mini-disc
-- Plastics break down over time and with exposure to heat, humidity, regular light, all sorts of chemicals, even the oxygen in the air.
-This can lead to the loss of your data when stored on a medium made of plastic or written/printed on plastic.
-- Can burn or be smoke damaged
-- Can be physically damaged, making data recovery expensive or even impossible
-- Magnetic media (tapes, floppy disc) can be damaged by magnets
-- Data can become difficult to recover if the software and/or hardware to decode is old, don't use proprietary formats
-:::
+![](/PSBTUnsigned.png)
 
-:::details
-### Stored digitally on a flash drive
-- Can break and have to be physically repaired before use
-- Rapidly changing magnetic fields (See MRIs) can damage the data stored on flash drives
-- Can burn or be smoke damaged
-- Can become corroded from salt water or some atmospheric conditions
-- If they break apart, some lighting conditions can cause data corruption (you can also put them back together and often still get the data)
-- Different devices are all different, even similar devices from the same production batch can be different.
-There are large quality differences in drives but I am assuming you aren't using these for anything but storage.
-- There are some fake flash drives that look like they saved the data but you can't get it back later
-- Flash drives are not advised for long term storage; they can be used as one part of a multi-medium-location-format plan.
-:::
+Unplug your SD card from the computer and put it into your Coldcard.
+Then in the Coldcard main menu click on `Ready to Sign`.
+Verify the transaction details shown on the Coldcard, and approve the transaction for signing.
+After this unplug the micro SD card from Coldcard and plug it into the computer.
+In Wasabi, click on the top menu `Tools` and then `Transaction Broadcaster`.
+In this tab, select `Import PSBT`, lookup the SD card with the final signed transaction, and click `OK`.
+Then click `Broadcast Transaction`, and Wasabi will privately announce it to the Bitcoin network.
 
-:::details
-### A pre-funded physical bitcoin coin (where the manufacturer generates and installs the secret key)
-- The medium that the key is on is often paper/plastic which can burn or be smoke damaged
-- Trust in the manufacturer themselves, they could copy the key
-- Trust in their key generation procedure
-- Trust in the operational security of the manufacturer, they could be generating the keys on their everyday computer
-- Trust no one is successfully spying on them, electronically, looking through their documents while they are out of town, or with tiny tin foil hat cameras or long range ones
-- Trust that the object was not tampered with in delivery
-- Trust that no one has tampered with the object since you got it
-:::
+![](/PSBTBroadcast.png)
 
-# Cold-Wasabi protocol
+## Cold-Wasabi protocol
 
 This is how you can safely eat cold Wasabi, or store your coins on a hardware wallet after one or more rounds of CoinJoin using Wasabi Wallet.
-Both a 'Hot'(CoinJoin) and a 'Cold'(Storage) Wasabi Wallet instances will be running side-by-side, label them accordingly so you don't mix them up.
+Because you cannot yet do CoinJoin with private keys on the hardware wallet, you will need generate and load two different Wasabi Wallets.
+A 'Hot' (CoinJoin) and a 'Cold' (Storage) Wasabi Wallet instances will be running side-by-side, label them accordingly so you don't mix them up.
 
-![](/ColdWasabiGeneral.png)
+### CoinJoin on the hot Wasabi
 
-## Detailed walkthrough
+:::tip First
+ou will want to make your existing coins private.
+It is useful to generate a complete new hot wallet for this, so to keep the CoinJoin transaction history separate from other wallets.
+:::
 
-1. Create a new Hot-Wasabi Wallet
+1. [Generate a new Hot-Wasabi Wallet](/using-wasabi/WalletGeneratation.md).
+2. Open the [Receive](/using-wasabi/Receive.md) tab to get a new addresis.
+3. From a pre-existing wallet, send bitcoin into this Hot-Wasabi Wallet.
+4. In the [CoinJoin](/using-wasabi/CoinJoin.md) tab, select the relevant coins and enqueue them.
+Remix often so to gain a high anonymity set.
 
-2. Generate a new Receive address
+### Setup your cold Wasabi
 
-3. Send coins you want to anonymize to the "Hot" Wasabi Wallet
+:::tip Second
+In order to separate these new private coins, you will want to generate a fresh wallet on your hardware device.
+:::
 
-Now you are set up for using the CoinJoin function with the "hot" Wasabi Wallet that holds the encrypted keys on an internet connected computer.
+5. Generate and backup a new and unused set of keys on your hardware wallet.
+6. Load your hardware wallet device to Wasabi, either via USB or SD card. 
+7. Label and generate a receive address for the hardware wallet.
+For the first setup you need to connect the hardware wallet to the computer that runs Wasabi, afterwards you can generate receive addresses without the device being connected.
+8. Copy the receiving address from the cold-Wasabi.
 
-4. CoinJoin!
+### Send bitcoins from hot to cold Wasabi
 
-This is fine for small amounts of bitcoin, but not for larger bitcoin holdings.
-That is where "Cold" hardware wallet storage comes in!
-So after the CoinJoin you might want to send some of those coins back to the hardware wallet, but not expose those addresses to the central servers of the hardware wallet company or some sneaky peaky Electrum Wallet spies...
+:::tip Thrid
+In order to keep the mixed coins separate and without revealing that you own all of them, send the anonymity set coins without consolidating them.
+Wait some time inbetween sending them, so that timing analysis becomes more difficult.
+:::
 
-5. Connect your hardware wallet device (for the PSBT-protocol use a MicroSD card instead) 
+9. Go to the hot-Wasabi `Send` tab, and select the coins with high anonymity set.
+Do not consolidate all your <img src="/ShieldCheckmark.png" alt="checkmark" class="shield" /> coins, but send them in small time staggered batches.
+10. Paste the cold-Wasabi address.
+11. Select the amount to be sent, consider using the `MAX` button to avoid change.
 
-6. Open another Wasabi Wallet instance, select `Hardware Wallet` to find your connected device.
+### Send bitcoins from cold Wasabi
 
-*You will need to enter a PIN and unlock the hardware wallet*
+:::tip Finally
+You can at any time spend the bitcoin from the cold Wasabi.
+:::
 
-For hardware wallet related questions see: [Hardware Wallet FAQs](/FAQ/FAQ-UseWasabi.md#hardware-wallet)
+12. Connect your hardware wallet to the computer.
+13. Load the cold Wasabi wallet.
+14. Go to the `Send`, select the coins and destination, then sign the transaction with click on the hardware wallet.
+Alternatively go to the `Build Transaction` tab and do the Coldcard SD card workflow. 
 
-7. `Load Wallet` to import the xpub or Public Key (used to generate all receive addresses)
-
-8. Go to `Receive` tab and Generate Receive Address, Copy this to clipboard (memorize the first/last few characters). (Note, don't generate more than 20 unused receive addresses).
-
-9. Send a single mixed coin (don't combine UTXOs/coins as this hurts your anon-set badly) from your "Hot" Wasabi Wallet to this "Cold" Wasabi Wallet receive address by pasting from clipboard (check address hasn't changed).
-
-10. Repeat steps 8 & 9 for each UTXO (new address each time) but vary fee rate & stagger timing (don't send all in one 1h session) for maximum privacy.
-
+:::tip Success!
 おめでとうございます!
+
 You are now eating Cold Wasabi!
+:::
 
 :::warning
 The anonymity set is tied to the wallet that you used to CoinJoin, if you send a mixed coin to another Wasabi Wallet (in this case your hardware wallet), it will have an anonymity set 1 (red) because this wallet doesn't know that the coin was coinjoined.
 
-You should put a meaningful label when you generate a receive address in your hardware wallet, e.g. "coinjoined utxo with anonymity set 70" (something that reminds you that you got this utxo from your Wasabi Wallet and it was coinjoined).
+You should put a meaningful label when you generate a receive address in your hardware wallet, e.g. "My hot Wasabi 100 anonset" (something that reminds you that you got this utxo from your Wasabi Wallet and it was coinjoined).
 :::
-
-# Cold-Wasabi PSBT protocol
-When you want to safely spend some of those Cold-Wasabi funds from the hardware wallet, you could use the Partially Signed Bitcoin Transaction for offline/airgapped signing of transactions for an extra layer of defense.
-
-## Workflow diagram
-![](/ColdWasabiPSBTWorkflow.png)
