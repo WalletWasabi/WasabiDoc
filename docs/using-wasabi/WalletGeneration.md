@@ -198,7 +198,6 @@ The 12 seed words that create a Wasabi wallet come from a standard list of 2084 
 Knowing that, we can calculate that each word contributes log2(2084), or 11 bits of entropy, giving the entire 12 word seed 132 bits of entropy.
 At this level of entropy, an NSA-level search of 1 trillion guesses/second would take, on average, 106,398,614,554,997,456,896 years to correctly guess the seed.
 
-[Return to Password Basics](/using-wasabi/WalletGeneration.md#password-basics)
 
 ## How are the secrets created
 
@@ -247,4 +246,3 @@ Wasabi uses [BIP 38: Password-Protected Private Key](/using-wasabi/BIPs.md#bip-3
                   +--------------------+
 
 ```
-
