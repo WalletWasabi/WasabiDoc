@@ -375,7 +375,7 @@ Nevertheless [this question](https://github.com/zkSNACKs/Meta/issues/20) deserve
 
 ### Hardware Wallet
 
-Wasabi has [hardware wallet integration](https://github.com/zkSNACKs/WalletWasabi/pull/134) however in this mode CoinJoining is not possible.
+Wasabi uses the [Bitcoin Core Hardware Wallet Interface [HWI]](https://github.com/bitcoin-core/HWI) ([PR #1341](https://github.com/zkSNACKs/WalletWasabi/pull/1341) & [PR #1905](https://github.com/zkSNACKs/WalletWasabi/pull/1905)) however in this mode coinjoining is not possible.
 
 ### Bitcoin Core
 
