@@ -49,6 +49,6 @@ Follow this step-by-step [guide](../using-wasabi/BuildSource.md).
 
 ## Step 3: Report Results
 
-Report the results on GitHub by commenting under [this pull request](https://github.com/zkSNACKs/WalletWasabi/pull/1341).
+Report the results on GitHub by commenting under one of the following pull requests: [PR #1341](https://github.com/zkSNACKs/WalletWasabi/pull/1341) or [PR #1905](https://github.com/zkSNACKs/WalletWasabi/pull/1905).
 
 Please include your OS version and your hardware wallet type.
