@@ -24,7 +24,7 @@ Rolling dice is an easy and effective way to get high entropy and randomness in 
 The Diceware method is a great strategy for your most precious passwords (e.g. the password to your computer, your backups, or your encryption key).
 You can even use Diceware to create secure wallets.
 
-To generate a password using Diceware, you just need a good die, a pen, and some paper.
+To generate a password using Diceware, you just need a high-quality die, a pen, and some paper.
 You can find EFF's Diceware list at the [Electronic Frontier Foundation website](https://www.eff.org/deeplinks/2016/07/new-wordlists-random-passphrases).
 Make sure you are alone and there are no cameras nearby.
 For maximum protection, disconnect your computer from the internet (after you save the Diceware list) and cover your webcam.
