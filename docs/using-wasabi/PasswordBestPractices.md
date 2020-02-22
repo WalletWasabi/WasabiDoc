@@ -106,7 +106,8 @@ Assuming a password or passphrase is constructed randomly, its level of entropy 
 
 - For a password, the total number of possible outcomes given a specific length (L), and number of characters used (C), is:
 C raised to the power of L, or C^L.<br>
-Example: `jwodnrosqf` is lower-case only (C = 26) and 10 characters long (L = 10). So, 26^10 = 141,000,000,000,000 (141 trillion).<br><br>
+Example: `jwodnrosqf` is lower-case only (C = 26) and 10 characters long (L = 10).
+So, 26^10 = 141,000,000,000,000 (141 trillion).<br><br>
 Including upper-case letters in the same password: `jWoDNrosqF` to double (C), results in 52^10 possible passwords = 145,000,000,000,000,000 (145 quadrillion).<br><br>
 Including special characters in the same password: `jW0DNro$qF` raises (C) to 95, resulting in 95^10 possibilities = 59,900,000,000,000,000,000 (59.9 quintillion).
 
