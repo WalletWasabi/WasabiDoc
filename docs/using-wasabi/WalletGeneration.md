@@ -150,28 +150,33 @@ A list of the more common mediums for backups with some of their weaknesses:
 - 'Fireproof' & 'Fire-resistant' boxes can help protect paper in a small house fire but be warned that they can sometimes fall apart in the fire and get wet if the fire is put out with water.
 Remember people can just carry out a small safe
 
-### Engraved / etched/ ablated/ stamped on a piece of metal
+### Engraved / etched / ablated / stamped on a piece of metal
 - Anyone who can see it, can steal it
-- Some metals can deteriorate or corrode, choose a good metal; also store your metal away from direct contact other metals. - Some metals that are corrosion resistant have low melting points, are extremely expensive, or hard to machine.
-- Metals can still deform or melt from heat, destroying any engraved SK. "Most house fires do not burn hotter than 1,200 degrees Fahrenheit.
+- Some metals can deteriorate or corrode, choose a good metal; also store your metal away from direct contact other metals.
+- Some metals that are corrosion resistant have low melting points, are extremely expensive, or hard to machine.
+- Metals can still deform or melt from heat, destroying any engraved SK.
+"Most house fires do not burn hotter than 1,200 degrees Fahrenheit.
 This temperature is typically associated with the hottest portion of a home, which is in the roof area.
 Homes that burn for longer than 30 minutes or consist of multiple levels sometimes burn at higher temperatures."
 You want to pick a metal that won't be destroyed by a fire.
 So magnesium, tin, and lead are all out as engraving materials.
-- Silver, gold, copper, brass, bronze, nickel, cobalt, would survive the housefire fire unmelted.
+- Silver, gold, copper, brass, bronze, nickel, cobalt, would survive the housefire unmelted.
 Some Aluminium alloys can survive but you have to have the right ones.
 At around 1500° Steel and Nickel should be okay.
 Titanium is above the housefire range and so is tungsten, however tungsten rings are known to shatter due to the brittle nature of the very hard metal.
 
 ### Stored digitally on a computer
 - Computers can crash, making data recovery expensive
-- Data can still technically be recovered after a system is abandoned by the user. In some cases data can be recovered after multiple overwriting attempts and physical destruction (as long as the attacker can get all or most the pieces) so if you copy files to a new computer and ditch the old one, be careful.
+- Data can still technically be recovered after a system is abandoned by the user.
+In some cases data can be recovered after multiple overwriting attempts and physical destruction (as long as the attacker can get all or most the of pieces) so if you copy files to a new computer and ditch the old one, be careful.
 - Can burn or be smoke damaged
 - A traditional hard disc drive can have data corrupted by powerful magnetic fields and can physically shatter
-- A non-negligible amount of HDDs suffer from factory defects that will cause them to fail unexpectedly during their - lifetime
+- A non-negligible amount of HDDs suffer from factory defects that will cause them to fail unexpectedly during their lifetime
 - Accidents can happen that could result in loss of data
 - Solid state drives (SSDs) will lose data if unpowered, they may last years before this becomes a problem but it is unwise to store long-term data in unpowered SSDs
-- Connecting to the internet is another attack vector and the safety is only as good as the encryption used; I don't know what I would recommend but it wouldn't be BitLocker. Someone could be trying to break into the computer constantly. Even with good encryption if the machine or location is compromised the key could be stolen as soon as it is decrypted.
+- Connecting to the internet is another attack vector and the safety is only as good as the encryption used; I don't know what I would recommend but it wouldn't be BitLocker.
+Someone could be trying to break into the computer constantly.
+Even with good encryption if the machine or location is compromised the key could be stolen as soon as it is decrypted.
 - There are a lot of ongoing threats with computers, from 0-day exploits to firmware exploits and malicious USB cords
 - External HDDs are good for storage for a few years at least if stored properly
 - If not connected to internet, safety is only as good as the physical protection encryption used; could someone break into the location and copy the data without anyone noticing?
