@@ -53,7 +53,8 @@ All of the major languages have at least 100,000 words in their dictionaries.
 Most have over 300,000 words.
 You can take a dictionary in any language that you are comfortable with and create a very strong password by randomly selecting as few as 5 words from it.
 
-The quick, but not technically random way would be to flip open your chosen dictionary to any seemingly random page, close your eyes, and put your fingertip down on the page. Choose the word nearest your fingertip that has at least 4 letters.
+The quick, but not technically random way would be to flip open your chosen dictionary to any seemingly random page, close your eyes, and put your fingertip down on the page.
+Choose the word nearest your fingertip that has at least 4 letters.
 Repeat this process at least 4 more times.
 
 If you'd prefer a truly random way to select pages, and you are using either Windows or Linux, you can easily create random numbers in a selected range (such as the number of pages in your dictionary) from your terminal.
