@@ -109,7 +109,7 @@ Including upper-case letters in the same password: `jWoDNrosqF` to double (C), r
 Including special characters in the same password: `jW0DNro$qF` raises (C) to 95, resulting in 95^10 possibilities = 59,900,000,000,000,000,000 (59.9 quintillion).
 
 - For a passphrase chosen randomly from a list of words, the total number of possible outcomes given a specific number of words (N) and wordlist size (S) is: S raised to the power of N, or S^N.<br>
-Example: The EFF diceware wordlist contains 7776 words.
+Example: The EFF Diceware list contains 7776 words.
 Randomly selecting 5 words from the list results in 7776^5 possible passphrases = 28,400,000,000,000,000,000 (28.4 quintillion).
 
 Just knowing how to do these basic calculations allows you to compare the strength of different randomly-generated passwords or phrases.
@@ -143,5 +143,4 @@ Keep in mind that Snowden's information in quite old, in a processing-power cont
 We have no way of knowing what is currently possible, so if a State-Level attacker is a part of your assumed threat-model, it would be wise to assume that their tools are now much more powerful.
 
 Even if a given threat-model does not include State-Level attackers, it is still important to consider that there are GPU-based password hacking tools publicly available that are capable of guessing well into the billions of guesses/second.
-
 
