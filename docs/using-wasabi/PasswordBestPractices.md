@@ -24,7 +24,7 @@ Rolling dice is an easy and effective way to get high entropy and randomness in 
 The Diceware method is a great strategy for your most precious passwords (e.g. the password to your computer, your backups, or your encryption key).
 You can even use Diceware to create secure wallets.
 
-To generate a password using Diceware, you just need a good di, a pen, and some paper.
+To generate a password using Diceware, you just need a good die, a pen, and some paper.
 You can find the diceware list at the [Electronic Frontier Foundation website](https://www.eff.org/deeplinks/2016/07/new-wordlists-random-passphrases).
 Make sure you are alone and there are no cameras nearby.
 For maximum protection, disconnect your computer from the internet (after you save the Diceware list) and cover your webcam.
@@ -112,7 +112,7 @@ Including special characters in the same password: `jW0DNro$qF` raises (C) to 95
 Example: The EFF diceware wordlist contains 7776 words.
 Randomly selecting 5 words from the list results in 7776^5 possible passphrases = 28,400,000,000,000,000,000 (28.4 quintillion).
 
-Just knowing how to do these basic calculation allows you to compare the strength of different randomly-generated passwords or phrases.
+Just knowing how to do these basic calculations allows you to compare the strength of different randomly-generated passwords or phrases.
 
 ### "Bits" of entropy
 
@@ -121,10 +121,11 @@ This is, of course, because computers can only process 0's and 1's, or bits, so 
 To calculate bits of entropy, use a [calculator that does logarithms](https://miniwebtool.com/log-base-2-calculator/?num1=7776) and compute log2(x), where x = the total number of possible outcomes for an event.
 
 For example, there are 7776 words on the EFF wordlist commonly used with dice to create passphrases.
-Plugging 7776 into the calulator to get log2(7776), it is shown that each word taken randomly from the list contributes 12.92 bits of entropy to the strength of the passphrase.
+Plugging 7776 into the calculator to get log2(7776), it is shown that each word taken randomly from the list contributes 12.92 bits of entropy to the strength of the passphrase.
 So, a 5-word passphrase selected randomly from the EFF list will have 5 x 12.92 = 64 bits of entropy.
 
 Since the combination of: lower + uppercase letters, numbers, and special characters = 95, a password constructed using all of these will have log2(95), or 6.57 bits of entropy for each character that comprises the password.
+
 From that, we can now calculate that, in order to get the same level of entropy with a password instead of a 5-word passphrase, the password must be at least 10 characters in length.
 
 ### How much entropy is needed
