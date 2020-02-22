@@ -114,7 +114,7 @@ A 'Hot' (CoinJoin) and a 'Cold' (Storage) Wasabi Wallet instances will both be r
 ### CoinJoin on the hot Wasabi
 
 :::tip First
-you will want to make your existing coins private.
+You should make your existing coins private.
 It is useful to generate a complete new hot wallet for this, so as to keep the CoinJoin transaction history separate from other wallets.
 :::
 
