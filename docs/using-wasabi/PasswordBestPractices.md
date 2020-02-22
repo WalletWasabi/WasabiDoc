@@ -120,7 +120,7 @@ Just knowing how to do these basic calculations allows you to compare the streng
 
 Password entropy is often discussed and compared in a context of `bits of entropy`.
 This is, of course, because computers can only process 0's and 1's, or bits, so everything related is expressed that way.
-To calculate bits of entropy, use a [calculator that does logarithms](https://miniwebtool.com/log-base-2-calculator/?num1=7776) and compute log2(x), where x = the total number of possible outcomes for an event.
+To calculate bits of entropy, use a [calculator that does logarithms](https://miniwebtool.com/log-base-2-calculator/) and compute log2(x), where x = the total number of possible outcomes for an event.
 
 For example, there are 7776 words on the EFF wordlist commonly used with dice to create passphrases.
 Plugging 7776 into the calculator to get log2(7776), it is shown that each word taken randomly from the list contributes 12.92 bits of entropy to the strength of the passphrase.
