@@ -49,7 +49,8 @@ Best practices for being secure against any adversary [currently recommend](http
 
 ## Use a dictionary
 
-All of the major languages have at least 100,000 words in their dictionaries. Most have over 300,000 words.
+All of the major languages have at least 100,000 words in their dictionaries.
+Most have over 300,000 words.
 You can take a dictionary in any language that you are comfortable with and create a very strong password by randomly selecting as few as 5 words from it.
 
 The quick, but not technically random way would be to flip open your chosen dictionary to any seemingly random page, close your eyes, and put your fingertip down on the page. Choose the word nearest your fingertip that has at least 4 letters.
