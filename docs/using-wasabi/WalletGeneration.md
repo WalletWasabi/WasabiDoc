@@ -24,7 +24,8 @@ The very first time you run the software the `Generate Wallet` tab will be open 
 This label is not shared with anyone, it is only stored locally on your computer.
 
 3. Write a long and random password and _back it up_.
-It encrypts your secrets, and you will need it every time you want to spend bitcoin from this wallet, or recover your wallet.<br>
+It encrypts your secrets, and you will need it every time you want to spend bitcoin from this wallet, or recover your wallet.
+
 If you are uncertain about how to create a secure password, refer to [Password basics](/using-wasabi/WalletGeneration.md#password-basics) and [Password Best Practices](/using-wasabi/PasswordBestPractices.md) for helpful information.
 
 

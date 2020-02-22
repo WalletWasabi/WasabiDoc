@@ -24,8 +24,8 @@ Rolling dice is an easy and effective way to get high entropy and randomness in 
 The Diceware method is a great strategy for your most precious passwords (e.g. the password to your computer, your backups, or your encryption key).
 You can even use Diceware to create secure wallets.
 
-To generate a password using Diceware, you just need a good die, a pen, and some paper.
-You can find the diceware list at the [Electronic Frontier Foundation website](https://www.eff.org/deeplinks/2016/07/new-wordlists-random-passphrases).
+To generate a password using Diceware, you just need a high-quality die, a pen, and some paper.
+You can find EFF's Diceware list at the [Electronic Frontier Foundation website](https://www.eff.org/deeplinks/2016/07/new-wordlists-random-passphrases).
 Make sure you are alone and there are no cameras nearby.
 For maximum protection, disconnect your computer from the internet (after you save the Diceware list) and cover your webcam.
 
@@ -49,10 +49,12 @@ Best practices for being secure against any adversary [currently recommend](http
 
 ## Use a dictionary
 
-All of the major languages have at least 100,000 words in their dictionaries. Most have over 300,000 words.
+All of the major languages have at least 100,000 words in their dictionaries.
+Most have over 300,000 words.
 You can take a dictionary in any language that you are comfortable with and create a very strong password by randomly selecting as few as 5 words from it.
 
-The quick, but not technically random way would be to flip open your chosen dictionary to any seemingly random page, close your eyes, and put your fingertip down on the page. Choose the word nearest your fingertip that has at least 4 letters.
+The quick, but not technically random way would be to flip open your chosen dictionary to any seemingly random page, close your eyes, and put your fingertip down on the page.
+Choose the word nearest your fingertip that has at least 4 letters.
 Repeat this process at least 4 more times.
 
 If you'd prefer a truly random way to select pages, and you are using either Windows or Linux, you can easily create random numbers in a selected range (such as the number of pages in your dictionary) from your terminal.
@@ -104,12 +106,13 @@ Assuming a password or passphrase is constructed randomly, its level of entropy 
 
 - For a password, the total number of possible outcomes given a specific length (L), and number of characters used (C), is:
 C raised to the power of L, or C^L.<br>
-Example: `jwodnrosqf` is lower-case only (C = 26) and 10 characters long (L = 10). So, 26^10 = 141,000,000,000,000 (141 trillion).<br><br>
+Example: `jwodnrosqf` is lower-case only (C = 26) and 10 characters long (L = 10).
+So, 26^10 = 141,000,000,000,000 (141 trillion).<br><br>
 Including upper-case letters in the same password: `jWoDNrosqF` to double (C), results in 52^10 possible passwords = 145,000,000,000,000,000 (145 quadrillion).<br><br>
 Including special characters in the same password: `jW0DNro$qF` raises (C) to 95, resulting in 95^10 possibilities = 59,900,000,000,000,000,000 (59.9 quintillion).
 
 - For a passphrase chosen randomly from a list of words, the total number of possible outcomes given a specific number of words (N) and wordlist size (S) is: S raised to the power of N, or S^N.<br>
-Example: The EFF diceware wordlist contains 7776 words.
+Example: The EFF Diceware list contains 7776 words.
 Randomly selecting 5 words from the list results in 7776^5 possible passphrases = 28,400,000,000,000,000,000 (28.4 quintillion).
 
 Just knowing how to do these basic calculations allows you to compare the strength of different randomly-generated passwords or phrases.
@@ -118,7 +121,7 @@ Just knowing how to do these basic calculations allows you to compare the streng
 
 Password entropy is often discussed and compared in a context of `bits of entropy`.
 This is, of course, because computers can only process 0's and 1's, or bits, so everything related is expressed that way.
-To calculate bits of entropy, use a [calculator that does logarithms](https://miniwebtool.com/log-base-2-calculator/?num1=7776) and compute log2(x), where x = the total number of possible outcomes for an event.
+To calculate bits of entropy, use a [calculator that does logarithms](https://miniwebtool.com/log-base-2-calculator/) and compute log2(x), where x = the total number of possible outcomes for an event.
 
 For example, there are 7776 words on the EFF wordlist commonly used with dice to create passphrases.
 Plugging 7776 into the calculator to get log2(7776), it is shown that each word taken randomly from the list contributes 12.92 bits of entropy to the strength of the passphrase.
@@ -134,14 +137,12 @@ Entropy matters because it allows one to compare the required `search-space` of 
 In doing so, it is possible to then know how long it would take an adversary with known resources to attempt every mathematically possible password or passphrase for a given level of entropy.
 
 Edward Snowden revealed in 2013 that the NSA had the ability to guess passwords at a rate of 1 trillion guesses/second.
-At that speed of guessing, the password in the above example (28.4 quintillion possibilities) could be guessed in an average of 5 months.
+At that speed of guessing, the password in the above example (28.4 quintillion possibilities) could be guessed in at most, 11 months.
 
 Since there is an equal chance of finding the password in the first half of the total number of guesses as there is in finding it in the second half of the total number, it is accurate to assume that on average, a password will be found in 1/2 of the time required to do an exhaustive search.
-That means just over 11 months for the example just mentioned.
+That means just over 5 months for the example just mentioned.
 
 Keep in mind that Snowden's information in quite old, in a processing-power context.
 We have no way of knowing what is currently possible, so if a State-Level attacker is a part of your assumed threat-model, it would be wise to assume that their tools are now much more powerful.
 
 Even if a given threat-model does not include State-Level attackers, it is still important to consider that there are GPU-based password hacking tools publicly available that are capable of guessing well into the billions of guesses/second.
-
-
