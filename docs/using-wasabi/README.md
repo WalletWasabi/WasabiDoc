@@ -48,6 +48,7 @@ Further tutorials about the different parts of the wallet, for newbies and power
 - [Cold-Wasabi Protocol](/using-wasabi/ColdWasabi.md)
 - [Headless Wasabi Daemon](/using-wasabi/Daemon.md)
 - [RPC Interface](/using-wasabi/RPC.md)
+- [Password Best Practices](/using-wasabi/PasswordBestPractices.md)
 - [Lurking Wife Mode](/using-wasabi/LurkingWifeMode.md)
 - [Supported BIPs](/using-wasabi/BIPs.md)
 
