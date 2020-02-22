@@ -140,7 +140,7 @@ Edward Snowden revealed in 2013 that the NSA had the ability to guess passwords 
 At that speed of guessing, the password in the above example (28.4 quintillion possibilities) could be guessed in at most, 11 months..
 
 Since there is an equal chance of finding the password in the first half of the total number of guesses as there is in finding it in the second half of the total number, it is accurate to assume that on average, a password will be found in 1/2 of the time required to do an exhaustive search.
-That means just over 11 months for the example just mentioned.
+That means just over 5 months for the example just mentioned.
 
 Keep in mind that Snowden's information in quite old, in a processing-power context.
 We have no way of knowing what is currently possible, so if a State-Level attacker is a part of your assumed threat-model, it would be wise to assume that their tools are now much more powerful.
