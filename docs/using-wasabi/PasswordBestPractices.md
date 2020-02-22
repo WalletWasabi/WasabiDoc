@@ -137,7 +137,7 @@ Entropy matters because it allows one to compare the required `search-space` of 
 In doing so, it is possible to then know how long it would take an adversary with known resources to attempt every mathematically possible password or passphrase for a given level of entropy.
 
 Edward Snowden revealed in 2013 that the NSA had the ability to guess passwords at a rate of 1 trillion guesses/second.
-At that speed of guessing, the password in the above example (28.4 quintillion possibilities) could be guessed in at most, 11 months..
+At that speed of guessing, the password in the above example (28.4 quintillion possibilities) could be guessed in at most, 11 months.
 
 Since there is an equal chance of finding the password in the first half of the total number of guesses as there is in finding it in the second half of the total number, it is accurate to assume that on average, a password will be found in 1/2 of the time required to do an exhaustive search.
 That means just over 5 months for the example just mentioned.
