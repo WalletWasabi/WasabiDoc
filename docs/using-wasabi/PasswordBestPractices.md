@@ -25,7 +25,7 @@ The Diceware method is a great strategy for your most precious passwords (e.g. t
 You can even use Diceware to create secure wallets.
 
 To generate a password using Diceware, you just need a good die, a pen, and some paper.
-You can find the diceware list at the [Electronic Frontier Foundation website](https://www.eff.org/deeplinks/2016/07/new-wordlists-random-passphrases).
+You can find EFF's Diceware list at the [Electronic Frontier Foundation website](https://www.eff.org/deeplinks/2016/07/new-wordlists-random-passphrases).
 Make sure you are alone and there are no cameras nearby.
 For maximum protection, disconnect your computer from the internet (after you save the Diceware list) and cover your webcam.
 
@@ -143,4 +143,3 @@ Keep in mind that Snowden's information in quite old, in a processing-power cont
 We have no way of knowing what is currently possible, so if a State-Level attacker is a part of your assumed threat-model, it would be wise to assume that their tools are now much more powerful.
 
 Even if a given threat-model does not include State-Level attackers, it is still important to consider that there are GPU-based password hacking tools publicly available that are capable of guessing well into the billions of guesses/second.
-
