@@ -65,7 +65,6 @@ This file can be found in [Wasabi's Data Folder](/FAQ/FAQ-UseWasabi.md#where-can
 * Linux: `/Home/.walletwasabi/client`
 * MacOS: `/Users/{your username}/.walletwasabi/client`
 
-:::tip
 
 3. Find `LockScreenPinHash` at the bottom of this file, and delete the string of characters that are between the two quotation marks.
 
