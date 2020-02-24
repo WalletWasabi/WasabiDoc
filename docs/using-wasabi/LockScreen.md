@@ -11,6 +11,14 @@ The `Lock Screen` feature allows you to lock your Wasabi Wallet from being viewe
 
 [[toc]]
 
+:::warning Caution!
+This feature is only intended to be used if you are stepping away from your computer for a very short time.
+
+The PIN can be deleted and your wallet accessed by anyone that gets physical access to your computer and knows how to find and alter your UIConfig.json file.
+
+Do not treat this feature as a strong, fail-safe lock on your wallet.
+:::
+
 ## How to set the Lock Screen feature
 
 You can active the `Lock Screen` feature by going to the menu bar on the top/left corner of your Wasabi Wallet and clicking on `Tools`.
