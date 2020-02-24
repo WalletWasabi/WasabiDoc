@@ -1,7 +1,7 @@
 ---
 {
   "title": "Lock Screen",
-  "description": "A feature that allows you to lock your Wasabi wallet from being viewed or used while it is running, and then unlock it at any time with a user-specified PIN. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
+  "description": "A feature that allows you to lock your Wasabi Wallet from being viewed or used while it is running, and then unlock it at any time with a user-specified PIN. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
 }
 ---
 
