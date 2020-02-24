@@ -34,7 +34,7 @@ Choose and enter a numerical PIN up to 10 digits in length in the PIN box, and c
 
 ## How to lock your screen
 
-You can now activate the Lock Screen feature in two ways:
+You can now lock your screen in two ways:
 
 1. Hit `Ctrl-L` on your keyboard.
 2. On the top/left menu bar, click on `File`, then `Lock Screen`.
