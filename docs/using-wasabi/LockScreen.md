@@ -14,7 +14,7 @@ The `Lock Screen` feature allows you to lock your Wasabi Wallet from being viewe
 :::warning Caution!
 This feature is only intended to be used if you are stepping away from your computer for a very short time.
 
-The PIN can be deleted and your wallet accessed by anyone that gets physical access to your computer and knows how to find and alter your UIConfig.json file.
+The PIN can be deleted and your wallet accessed by anyone that gets physical access to your computer and knows how to find and alter your `UIConfig.json` file.
 
 Do not treat this feature as a strong, fail-safe lock on your wallet.
 :::
