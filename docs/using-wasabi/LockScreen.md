@@ -50,7 +50,7 @@ To unlock, just enter the correct PIN in the provided box.
 If you wish to delete or change your PIN:
 
 1. Go to the top/left menu bar and click on `Tools`, then `Settings`.
-2. Scroll down the `Settings` page to the Lock Screen section.
+2. Scroll down the `Settings` page to the `Lock Screen` section.
 3. Enter your PIN in the PIN box, and click `Clear`.
 4. If a new PIN is desired, enter it in the PIN box and click `Set`, otherwise the `Lock Screen` feature is now disabled.
 
