@@ -50,7 +50,7 @@ If you wish to delete or change your PIN:
 
 If you have forgotten your PIN, you can delete it with these steps:
 
-1. Shut down your Wasabi wallet.
+1. Shut down Wasabi Wallet.
 2. Open your UIConfig.json file using a text editor.
 
 This file can be found here:
