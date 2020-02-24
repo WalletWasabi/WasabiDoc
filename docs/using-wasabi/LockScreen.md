@@ -7,7 +7,7 @@
 
 # Lock Screen
 
-The `Lock Screen` feature allows you to lock your Wasabi wallet from being viewed or used while it is running, and then unlock it at any time with a user-specified PIN.
+The `Lock Screen` feature allows you to lock your Wasabi Wallet from being viewed or used while it is running, and then unlock it at any time with a user-specified PIN.
 
 [[toc]]
 
