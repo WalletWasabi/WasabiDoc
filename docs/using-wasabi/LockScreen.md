@@ -13,7 +13,7 @@ The `Lock Screen` feature allows you to lock your Wasabi wallet from being viewe
 
 ## How to set the Lock Screen feature
 
-You can active the `Lock Screen` feature by going to the menu bar on the top/left corner of your Wasabi wallet and clicking on `Tools`.
+You can active the `Lock Screen` feature by going to the menu bar on the top/left corner of your Wasabi Wallet and clicking on `Tools`.
 In the resulting dropdown menu, click on `Settings`.
 
 ![](/LockScreenSet1.png)
