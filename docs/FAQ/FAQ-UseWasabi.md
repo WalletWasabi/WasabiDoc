@@ -1128,9 +1128,11 @@ You can't do that directly, you have to send the bitcoins (in small portions > 0
 
 Only if you add your accounts in the app, but not if you update your device firmware or install apps. 
 When using the Ledger Live software wallet to manage your coins, you send all of your used, and 20 unused addresses to Ledger's nodes. [Source](https://support.ledger.com/hc/en-us/articles/360010892360)
-Ledger says it does not use this information to track its users' coins and transactions, but as a user you cannot verify this.
+
 Your extended public key, however, is not shared with Ledger's node, but rather stored encrypted on your local machine.
 Read more [here](https://support.ledger.com/hc/en-us/articles/360011069619).
+
+Though Ledger says it does not use this information to try to identify how much bitcoin you have and what your transactions you make, Ledger could potentially do so.
 
 To avoid this privacy leak, you can use a Ledger hardware wallet in combination with Wasabi as a software interface, and because Wasabi does not leak your addresses, your transaction history is not shared with anyone.
 
