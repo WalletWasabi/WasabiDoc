@@ -61,10 +61,6 @@ If you have forgotten your PIN, you can delete it with these steps:
 1. Shut down Wasabi Wallet.
 2. Open your `UIConfig.json` file using a text editor.
 This file can be found in [Wasabi's Data Folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder).
-* Linux: `/Home/.walletwasabi/client`
-* MacOS: `/Users/{your username}/.walletwasabi/client`
-
-
 3. Find `LockScreenPinHash` at the bottom of this file, and delete the string of characters that are between the two quotation marks.
 
 ![](/UIConfigLocked.png)
