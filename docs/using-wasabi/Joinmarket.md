@@ -1,7 +1,7 @@
 ---
 {
-  "title": "Joinmarket",
-  "description": "Details about the Joinmarket mixing technique and implementation. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
+  "title": "JoinMarket",
+  "description": "Details about the JoinMarket mixing technique and implementation. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
 }
 ---
 
