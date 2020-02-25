@@ -180,6 +180,7 @@ module.exports = {
             "/using-wasabi/Receive.md",
             "/using-wasabi/CoinJoin.md",
             "/using-wasabi/Send.md",
+            "/using-wasabi/ColdWasabi.md",
             "/using-wasabi/BitcoinFullNode.md"
           ]
         },
@@ -219,7 +220,6 @@ module.exports = {
           collapsable: false,
           sidebarDepth: 2,
           children: [
-            "/using-wasabi/ColdWasabi.md",
             "/using-wasabi/Daemon.md",
             "/using-wasabi/RPC.md",
             "/using-wasabi/LurkingWifeMode.md",
