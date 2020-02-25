@@ -49,8 +49,9 @@ Further tutorials about the different parts of the wallet, for newbies and power
 - [Headless Wasabi Daemon](/using-wasabi/Daemon.md)
 - [RPC Interface](/using-wasabi/RPC.md)
 - [Lurking Wife Mode](/using-wasabi/LurkingWifeMode.md)
+- [Password Best Practices](/using-wasabi/PasswordBestPractices.md)
 - [Supported BIPs](/using-wasabi/BIPs.md)
 
 ### Research
 - [Pay to EndPoint](/using-wasabi/PayToEndPoint.md)
-- [Joinmarket](/using-wasabi/Joinmarket.md)
+- [JoinMarket](/using-wasabi/Joinmarket.md)

@@ -223,6 +223,7 @@ module.exports = {
             "/using-wasabi/Daemon.md",
             "/using-wasabi/RPC.md",
             "/using-wasabi/LurkingWifeMode.md",
+            "/using-wasabi/PasswordBestPractices.md",
             "/using-wasabi/BIPs.md"
          ]
         },
