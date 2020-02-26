@@ -257,7 +257,6 @@ module.exports = {
           collapsable: false,
           sidebarDepth: 2,
           children: [
-           "/building-wasabi/FalsePositive.md",
             "/building-wasabi/Security.md",
             "/building-wasabi/HardwareWalletTestingGuide.md",
             "/building-wasabi/HowToDebug.md",
