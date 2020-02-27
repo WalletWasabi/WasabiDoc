@@ -260,7 +260,6 @@ module.exports = {
            "/building-wasabi/FalsePositive.md",
             "/building-wasabi/Security.md",
             "/building-wasabi/HardwareWalletTestingGuide.md",
-            "/building-wasabi/Ports.md",
             "/building-wasabi/LICENSE.md",
             "/building-wasabi/Credits.md"
           ]
