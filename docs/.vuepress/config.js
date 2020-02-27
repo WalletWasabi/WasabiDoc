@@ -259,8 +259,6 @@ module.exports = {
           children: [
            "/building-wasabi/FalsePositive.md",
             "/building-wasabi/Security.md",
-            "/building-wasabi/HowToDebug.md",
-            "/building-wasabi/Ports.md",
             "/building-wasabi/LICENSE.md",
             "/building-wasabi/Credits.md"
           ]
