@@ -26,6 +26,5 @@ You will also find some of the issues they are working on now, the research for 
 - [False Positive](/building-wasabi/FalsePositive.md)
 - [Security Policy](/building-wasabi/Security.md)
 - [Hardware Wallet Integration Testing](/building-wasabi/HardwareWalletTestingGuide.md)
-- [Developers debugging Guide](/building-wasabi/HowToDebug.md)
 - [MIT License](/building-wasabi/LICENSE.md)
 - [Credits](/building-wasabi/Credits.md)
