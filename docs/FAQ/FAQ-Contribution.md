@@ -46,10 +46,10 @@ Especially review by experienced C# developers are vitally important, yet even t
 There are four developers who have the ability to merge code into master branch.
 Per default, they [require at least one approving review](https://help.github.com/en/github/administering-a-repository/about-required-reviews-for-pull-requests) by one of the other maintainers before a pull request can be merged.
 However, since all three are administrators, they can still force the merge without the approval of others, but this will be noticed by many contributors.
-- [Ádám Ficsor](https://github.com/nopara73) [co-founder and former CTO of [zkSNACKs Ltd](https://zksnacks.com/), co-author of the [zero link Bitcoin fungibility framework](https://github.com/nopara73/ZeroLink)].
-- [Lucas Ontivero](https://github.com/lontivero) [lead engineer of [zkSNACKs Ltd](https://zksnacks.com/)].
-- [Dávid Molnár](https://github.com/molnard) [CTO of [zkSNACKs Ltd](https://zksnacks.com/)].
-- [Dan Walmsley](https://github.com/danwalmsley) [co-maintainer of [Avalonia](https://github.com/AvaloniaUI/Avalonia/)].
+- [Ádám Ficsor](https://github.com/nopara73) co-founder and former CTO of [zkSNACKs Ltd](https://zksnacks.com/), co-author of the [zero link Bitcoin fungibility framework](https://github.com/nopara73/ZeroLink).
+- [Lucas Ontivero](https://github.com/lontivero) lead engineer of [zkSNACKs Ltd](https://zksnacks.com/).
+- [Dávid Molnár](https://github.com/molnard) CTO of [zkSNACKs Ltd](https://zksnacks.com/).
+- [Dan Walmsley](https://github.com/danwalmsley) co-maintainer of [Avalonia](https://github.com/AvaloniaUI/Avalonia/).
 :::
 
 :::details
