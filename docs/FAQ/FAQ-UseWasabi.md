@@ -1132,9 +1132,9 @@ When using the Ledger Live software wallet to manage your coins, you send all of
 Your extended public key, however, is not shared with Ledger's node, but rather stored encrypted on your local machine.
 Read more [here](https://support.ledger.com/hc/en-us/articles/360011069619).
 
-Though Ledger says it does not use this information to try to identify how much bitcoin you have and what your transactions you make, Ledger could potentially do so.
+Ledger could potentially analyze information from API calls to their nodes to link addresses to individual users, though Ledger says no logs are kept during normal operation.
 
-To avoid this privacy leak, you can use a Ledger hardware wallet in combination with Wasabi as a software interface, and because Wasabi does not leak your addresses, your transaction history is not shared with anyone.
+To avoid any privacy leak, you can use a Ledger hardware wallet in combination with Wasabi as a software interface, and because Wasabi does not leak your addresses, your transaction history is not shared with anyone.
 
 :::
 
