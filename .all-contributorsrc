@@ -285,6 +285,24 @@
         "doc",
         "content"
       ]
+    },
+    {
+      "login": "PulpCattel",
+      "name": "Luke",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/51127079?v=4",
+      "profile": "https://github.com/PulpCattel"
+       "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "jonathancross",
+      "name": "Jonathan Cross",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/5115470?v=4",
+      "profile": "https://JonathanCross.com",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 5,

@@ -65,6 +65,8 @@ Osu!
 | BTC Sessions     | [Twitter][44]               | [Wasabi end-to-end video tutorial][45]   | 2019-07: white belt by lontivero|
 | Dennis Reimann   | [Twitter][47]               | [Wasabi Documentation][48]   | 2019-08: white belt by Max Hillebrand|
 | ThunderBiscuit   | [Twitter][46]               | [Wasabi Documentation][49]   | 2019-08: white belt by Max Hillebrand|
+| Riccardo Masutti   | [Twitter][50]               | [Wasabi Documentation][51]   | 2019-11: white belt by Max Hillebrand|
+
 
 [1]: https://twitter.com/NicolasDorier/
 [2]: https://github.com/NicolasDorier/
@@ -113,6 +115,8 @@ Osu!
 [47]: https://twitter.com/dennisreimann
 [48]: https://github.com/zkSNACKs/WasabiDoc/commits?author=dennisreimann
 [49]: https://github.com/zkSNACKs/WasabiDoc/commits?author=thunderbiscuit
+[50]: https://twitter.com/RiccardoMasutti
+[51]: https://github.com/zkSNACKs/WasabiDoc/commits?author=RiccardoMasutti
 
 <br />
 
@@ -162,6 +166,8 @@ We are currently in the process of completing it to match the contributors liste
   </tr>
   <tr>
     <td align="center"><a href="http://www.michaeltoth.me"><img src="https://avatars3.githubusercontent.com/u/1676164?v=4" width="100px;" alt="Michael Toth"/><br /><sub><b>Michael Toth</b></sub></a><br /><a href="https://github.com/zkSNACKs/WasabiDoc/commits?author=michaeltoth" title="Documentation">📖</a> <a href="#content-michaeltoth" title="Content">🖋</a></td>
+    <td align="center"><a href="https://github.com/PulpCattel"><img src="https://avatars0.githubusercontent.com/u/51127079?v=4" width="100px;" alt="Luke"/><br /><sub><b>Luke</b></sub></a><br /><a href="https://github.com/zkSNACKs/WasabiDoc/commits?author=PulpCattel" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://JonathanCross.com"><img src="https://avatars3.githubusercontent.com/u/5115470?v=4" width="100px;" alt="Jonathan Cross"/><br /><sub><b>Jonathan Cross</b></sub></a><br /><a href="https://github.com/zkSNACKs/WasabiDoc/commits?author=jonathancross" title="Documentation">📖</a></td>
   </tr>
 </table>
 

@@ -15,7 +15,7 @@ It's not the case anymore.
 Though it's most likely not an issue to accept Bitcoin donations, zkSNACKs team discontinued accepting donations because they don't want to get into accidental legal gray areas.
 Wasabi has a coordinator fee that is capped at 0.3% for every CoinJoin and it became zkSNACKs' main income.
 To help Wasabi development, just CoinJoin your bitcoins via Wasabi!
-If you want to read more about fees here is a nice explanation: [What are the fees for the CoinJoin](https://docs.wasabiwallet.io/FAQ/FAQ-UseWasabi.html#what-are-the-fees-for-the-coinjoin).
+If you want to read more about fees here is a nice explanation: [What are the fees for the CoinJoin](/FAQ/FAQ-UseWasabi.md#what-are-the-fees-for-the-coinjoin).
 :::
 
 ## The Wasabikas of the dojo
@@ -24,8 +24,8 @@ If you want to read more about fees here is a nice explanation: [What are the fe
 ### Who is contributing to Wasabi already?
 
 There are many Wasabikas working with great effort and care to manifest this powerful tool of self defense.
-[Over 35 peers](https://github.com/zkSNACKs/WalletWasabi/graphs/contributors) have already contributed to the repository, and more and more supporters are joining the [dojo](/building-wasabi/Dojo.md).
-Four of the main contributors are [Ádám Ficsor](https://github.com/nopara73) [co-founder and CTO of [zkSnacks Ltd](https://zksnacks.com/), co-author of the [zero link Bitcoin fungibility framework](https://github.com/nopara73/ZeroLink)], [Lucas Ontivero](https://github.com/lontivero) [lead engineer of [zkSnacks Ltd](https://zksnacks.com/)], [Dávid Molnár](https://github.com/molnard) [[zkSnacks Ltd](https://zksnacks.com/) employee], and [Dan Walmsley](https://github.com/danwalmsley) [maintainer of [Avalonia UI Framework](https://github.com/AvaloniaUI/Avalonia)].
+[Over 40 peers](https://github.com/zkSNACKs/WalletWasabi/graphs/contributors) have already contributed to the repository, and more and more supporters are joining the [dojo](/building-wasabi/Dojo.md).
+Four of the main contributors are [Ádám Ficsor](https://github.com/nopara73) [co-founder and former CTO of [zkSnacks Ltd](https://zksnacks.com/), co-author of the [zero link Bitcoin fungibility framework](https://github.com/nopara73/ZeroLink)], [Lucas Ontivero](https://github.com/lontivero) [lead engineer of [zkSnacks Ltd](https://zksnacks.com/)], [Dávid Molnár](https://github.com/molnard) [[zkSnacks Ltd](https://zksnacks.com/) employee], and [Dan Walmsley](https://github.com/danwalmsley) [maintainer of [Avalonia UI Framework](https://github.com/AvaloniaUI/Avalonia)].
 For an inclusive list of all the Wasabikas, not just the code developers, please visit the [dojo](/building-wasabi/Dojo.md).
 
 @[youtube](F8xNSOhbWrw)
@@ -38,15 +38,18 @@ For an inclusive list of all the Wasabikas, not just the code developers, please
 :::details
 ### Who reviews and merges the pull requests?
 
-As the Wasabi code is libre and open source, anyone has access to review the latest contritions and browse the [open pull requests](https://github.com/zkSNACKs/WalletWasabi/pulls?q=is%3Apr+is%3Aopen+sort%3Aupdated-desc).
+As the Wasabi code is libre and open source, anyone has access to review the latest contributions and browse the [open pull requests](https://github.com/zkSNACKs/WalletWasabi/pulls?q=is%3Apr+is%3Aopen+sort%3Aupdated-desc).
 The review of any Wasabika is not just deeply appreciated, but desperately needed!
 Wasabi is cutting-edge, high security software, and there can never be enough eyes seeking and squashing bugs.
 Especially review by experienced C# developers are vitally important, yet even typo and grammar fixes are necessary.
 
-There are three developers who have the ability to merge code into master branch.
-- [Ádám Ficsor](https://github.com/nopara73) [co-founder and CTO of [zkSnacks Ltd](https://zksnacks.com/), co-author of the [zero link Bitcoin fungibility framework](https://github.com/nopara73/ZeroLink)] is the [admin](https://help.github.com/en/articles/repository-permission-levels-for-an-organization) of the [GitHub repository](https://github.com/zksnacks/walletwasabi) and has full write access to everything in it, he has the ability to merge any code that he wants.
-- [Lucas Ontivero](https://github.com/lontivero) [lead engineer of [zkSnacks Ltd](https://zksnacks.com/)] is [co-maintainer](https://help.github.com/en/articles/repository-permission-levels-for-an-organization) of the [GitHub repository](https://github.com/zksnacks/walletwasabi), he can merge a pull request, but only when both Ádám and Dávid have reviewed and acknowledged the changes.
-- [Dávid Molnár](https://github.com/molnard) is [co-maintainer](https://help.github.com/en/articles/repository-permission-levels-for-an-organization) of the [GitHub repository](https://github.com/zksnacks/walletwasabi), he can merge a pull request, but only when both Ádám and Lucas have reviewed and acknowledged the changes.
+There are four developers who have the ability to merge code into master branch.
+Per default, they [require at least one approving review](https://help.github.com/en/github/administering-a-repository/about-required-reviews-for-pull-requests) by one of the other maintainers before a pull request can be merged.
+However, since all three are administrators, they can still force the merge without the approval of others, but this will be noticed by many contributors.
+- [Ádám Ficsor](https://github.com/nopara73), co-founder and former CTO of [zkSNACKs Ltd](https://zksnacks.com/), co-author of the [zero link Bitcoin fungibility framework](https://github.com/nopara73/ZeroLink).
+- [Lucas Ontivero](https://github.com/lontivero), lead engineer of [zkSNACKs Ltd](https://zksnacks.com/).
+- [Dávid Molnár](https://github.com/molnard), CTO of [zkSNACKs Ltd](https://zksnacks.com/).
+- [Dan Walmsley](https://github.com/danwalmsley), co-maintainer of [Avalonia](https://github.com/AvaloniaUI/Avalonia/).
 :::
 
 :::details
@@ -68,14 +71,14 @@ Nobody owns this software, and thus it is the responsibility of everyone using i
 Thus your help is deeply appreciated, and very much needed!
 First please read the [contribution checklist](/building-wasabi/ContributionChecklist.md) to get introduced to the project and to start out in the right direction.
 You can also see the [ToDo list](/building-wasabi/ToDo.md) for inspiration of what other Wasabikas are tinkering on.
-Join our [Slack](https://join.slack.com/t/tumblebit/shared_invite/enQtNjQ1MTQ2NzQ1ODI0LWIzOTg5YTM3YmNkOTg1NjZmZTQ3NmM1OTAzYmQyYzk1M2M0MTdlZDk2OTQwNzFiNTg1ZmExNzM0NjgzY2M0Yzg), [Telegram](https://t.me/WasabiWallet) or [Sub-Reddit](https://www.reddit.com/r/WasabiWallet/), and check out the [GitHub](https://github.com/zkSnacks/WalletWasabi), so that you can stay up-to-date with the latest contributions.
+Join our [Slack](https://join.slack.com/t/tumblebit/shared_invite/enQtNjQ1MTQ2NzQ1ODI0LWIzOTg5YTM3YmNkOTg1NjZmZTQ3NmM1OTAzYmQyYzk1M2M0MTdlZDk2OTQwNzFiNTg1ZmExNzM0NjgzY2M0Yzg), [Telegram](https://t.me/WasabiWallet), [Riot](https://riot.im/app/#/room/#wasabiwallet:matrix.org) or [Reddit](https://www.reddit.com/r/WasabiWallet/), and check out the [GitHub](https://github.com/zkSnacks/WalletWasabi), so that you can stay up-to-date with the latest contributions.
 :::
 
 :::details
 ### Is there a bounty program?
 
 Yes!
-The beauty of Wasabi is that it's not just a very awesome wallet by default, but it has the additional opt-in CoinJoin serivce.
+The beauty of Wasabi is that it's not just a very awesome wallet by default, but it has the additional opt-in CoinJoin service.
 This is provided by [zkSnacks Ltd.](https://zksnacks.com), and in exchange for this additional service the user pays a coordinator fee.
 In return, zkSnacks is supporting several developers to dedicate their full time to contribute to this open source project.
 There are also projects like the [contribution game](/building-wasabi/ContributionGame.md) where a bounty is paid out to any contributor worthy the praise.
@@ -92,7 +95,7 @@ Such a complex software requires constant and rigorous review by the developers 
 When you stumble upon an issue that needs fixing, please first check the open [issues](https://github.com/zkSNACKs/WalletWasabi/issues/) and [pull requests](https://github.com/zkSNACKs/WalletWasabi/pulls) if there is already someone working on it.
 If yes, then you can comment your situation and bug report under the open issue.
 If no, then please consider to [open a new issue](https://github.com/zkSNACKs/WalletWasabi/issues/new?template=bug-report.md) and give a detailed report on the problem.
-It is especially helpful when you provide a step by step guide on how to reproduce what you have found.
+It is especially helpful when you provide a step-by-step guide on how to reproduce what you have found.
 There is constantly a lot of work done to the code base, thus it's good to know which version of Wasabi, and what operating system you are using.
 In some cases it might be useful to see your logs, though please consider your privacy and encrypt this data properly in direct communication with the developers.
 
@@ -125,7 +128,7 @@ You are already on the right track by first checking [this documentation](https:
 It's likely that you are not the first peer who has an issue and question, and hopefully one has curated the answer in here already.
 You can use the search function in the top navbar to look for a specific topic, and the sidebar menu as a table of content.
 Though often times it is quite useful to start a conversation with other Wasabikas about a specific problem.
-It is useful to reach out to the contributors on [Twitter](https://twitter.com/wasabiwallet), [Reddit](https://old.reddit.com/r/WasabiWallet/), and [Telegram](https://t.me/WasabiWallet).
+It is useful to reach out to the contributors on [Twitter](https://twitter.com/wasabiwallet), [Reddit](https://old.reddit.com/r/WasabiWallet/), [Riot](https://riot.im/app/#/room/#wasabiwallet:matrix.org) and [Telegram](https://t.me/WasabiWallet).
 If your trouble is specific to the code, then it might also be suitable to check the existing [GitHub issues](https://github.com/zkSNACKs/WalletWasabi/issues/) and open a new one.
 :::
 

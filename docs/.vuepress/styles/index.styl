@@ -80,6 +80,9 @@ body
       opacity 1
     &::marker
       color $accentColor
+    h4
+      margin 0
+      display inline
 
   hr
     margin 2.5rem 0
@@ -128,6 +131,31 @@ body
       background $navbarBgColor
       color $navbarTextColor
       font-size 1em
+
+    .search-box
+      order 10
+      margin 0 0 0 2rem
+      input
+        background-color white !important
+
+      .search-query.ds-hint
+        display none !important
+
+      @media (max-width: 899px)
+        input
+          left 0
+
+    .ds-dropdown-menu
+      position fixed !important
+      top 3.25rem !important
+      bottom 0 !important
+      right 0 !important
+      overflow-y auto
+      border-radius 0
+      border-color lighten($navbarBgColor, 10%)
+
+      [class^="ds-dataset-"]
+        border-radius 0
 
     .suggestions
       background $navbarBgColor
@@ -209,9 +237,20 @@ body
       @media (prefers-color-scheme: light)
         border-left-color lighten($reducedTextColor, 50%)
 
+    ul
+      padding-left 1em
+
+    ol
+      padding-left 1.5em
+
     img
       margin 1rem 0
       border 1px solid $borderColor
+      &.shield
+        width 14px
+        height 15px
+        margin 0
+        border 0
 
     table
       display table

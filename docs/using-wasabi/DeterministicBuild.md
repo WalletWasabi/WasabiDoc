@@ -19,7 +19,7 @@ This guide describes how to reproduce Wasabi's builds.
 
 ## 1. Assert Correct Environment
 
-In order to reproduce Wasabi's builds you need [Git](https://git-scm.com/downloads), [Windows 10](https://www.microsoft.com/en-us/software-download/windows10ISO) and the version of [.NET Core SDK](https://www.microsoft.com/net/download) that was the most recent in the time of building the [release](https://github.com/zkSNACKs/WalletWasabi/releases).
+In order to reproduce Wasabi's builds you need [Git](https://git-scm.com/downloads), [Windows 10](https://www.microsoft.com/en-us/software-download/windows10ISO) and [.NET Core ${dotnetVersion} SDK](https://www.microsoft.com/net/download).
 
 ## 2. Reproduce Builds
 
@@ -32,14 +32,14 @@ dotnet build
 dotnet run -- --onlybinaries
 ```
 
-This will build our binaries for Windows, OSX and Linux from source code and open them in a file explorer for you.
+This will build our binaries for Windows, macOS and Linux from source code and open them in a file explorer for you.
 
 ![](https://i.imgur.com/8XAQzz4.png)
 
 ## 3. Verify Builds
 
 You can compare our binaries with the downloads we have on the website: [https://wasabiwallet.io/](https://wasabiwallet.io/)
-In order to end-to-end verify all the downloaded packages you need a Windows, a Linux, and an OSX machine.
+In order to end-to-end verify all the downloaded packages you need a Windows, a Linux, and a macOS machine.
 
 ![](https://i.imgur.com/aI9Kx0c.png)
 
@@ -52,10 +52,10 @@ You can compare it with your build:
 git diff --no-index win7-x64 "C:\Program Files\WasabiWallet"
 ```
 
-### Linux && OSX
+### Linux & macOS
 
 You can use the Windows Subsystem for Linux to verify all the packages in one go.
-At the time of writing this guide we provide a `.tar.gz` and a `.deb` package for Linux and .dmg for OSX. 
+At the time of writing this guide we provide a `.tar.gz` and a `.deb` package for Linux and .dmg for macOS.
 Install the `.deb` package and extract the `tar.gz` and `.dmg` packages, then compare them with your build.
 
 After installing WSL, just type `wsl` in explorer where your downloaded and built packages are located.
@@ -65,15 +65,15 @@ After installing WSL, just type `wsl` in explorer where your downloaded and buil
 #### .deb
 
 ```sh
-sudo dpkg -i Wasabi-1.1.9.2.deb
+sudo dpkg -i Wasabi-${currentVersion}.deb
 git diff --no-index linux-x64/ /usr/local/bin/wasabiwallet/
 ```
 
 #### .tar.gz
 
 ```sh
-tar -pxzf WasabiLinux-1.1.9.2.tar.gz
-git diff --no-index linux-x64/ WasabiLinux-1.1.9.2
+tar -pxzf WasabiLinux-${currentVersion}.tar.gz
+git diff --no-index linux-x64/ WasabiLinux-${currentVersion}
 ```
 
 #### .dmg
@@ -81,6 +81,6 @@ git diff --no-index linux-x64/ WasabiLinux-1.1.9.2
 You will need to install [7z](https://www.7-zip.org/) (or something else) to extract the `.dmg`: `sudo apt install p7zip-full`
 
 ```sh
-7z x Wasabi-1.1.9.2.dmg -oWasabiOsx
+7z x Wasabi-${currentVersion}.dmg -oWasabiOsx
 git diff --no-index osx-x64/ WasabiOsx/Wasabi\ Wallet.App/Contents/MacOS/
 ```

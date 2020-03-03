@@ -9,22 +9,10 @@
 
 ## The Basics
 
-:::details
-### Explain Wasabi like I'm 5
-
-Wasabi is a software wallet to manage your Bitcoin private keys.
-It is tailor made to protect your privacy on every step.
-You can easily send and receive bitcoin without the permission of anyone.
-With a special tool called a CoinJoin you can make sure nobody finds out how you spend your money.
-Although Wasabi has some very advanced magic under the hood, it is rather easy to use.
-You can also use Wasabi to manage your hardware wallet, and it even connects to your own full node.
-Of course, Wasabi is libre and open source, which means you have full control over the software you manage your money with.
-:::
-
 ::::details
 ### Who can use Wasabi?
 
-Every single line of code in Wasabi, the [wallet](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Gui), the [backend server](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Backend), the [tests](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Tests), the [packager](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Packager), the [library](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi), the [daemon](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Gui/CommandLine), the [api](https://wasabiwallet.io/swagger/), the [documentation](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs) - has always been and will always be libre and open source under the [MIT license](https://github.com/zkSNACKs/WalletWasabi/blob/master/LICENSE.md).
+Every single line of code in Wasabi, the [wallet](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Gui), the [backend server](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Backend), the [tests](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Tests), the [packager](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Packager), the [library](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi), the [daemon](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Gui/CommandLine), the [api](https://wasabiwallet.io/swagger/), the [documentation](https://github.com/zkSNACKs/WasabiDoc) - has always been and will always be libre and open source under the [MIT license](https://github.com/zkSNACKs/WalletWasabi/blob/master/LICENSE.md).
 This means that anyone, yes, ANYONE can use Wasabi without permission, for any use case, free of charge.
 
 Wasabi is used by individuals to receive and spend every day payments, to manage their hardware wallet long term hodlings, and to CoinJoin their sats for added privacy.
@@ -91,13 +79,8 @@ It is crucial to understand that Wasabi is not a fool-proof solution if you negl
 :::details
 ### Do I need to run Tor?
 
-All Wasabi network traffic goes via Tor by default - no need to set up Tor yourself.
+No you don't need to set up Tor yourself, all Wasabi network traffic goes via Tor by default.
 If you do already have Tor, and it is running, then Wasabi will try to use that first.
-
-You can turn off Tor in the Settings.
-Note that in this case you are still private, except when you CoinJoin and when you broadcast a transaction.
-In the first case, the coordinator would know the links between your inputs and outputs based on your IP address.
-In the second case, if you happen to broadcast a transaction of yours to a full node that is spying on you, it will know the link between your transaction and your IP address.
 :::
 
 :::details
@@ -105,14 +88,14 @@ In the second case, if you happen to broadcast a transaction of yours to a full 
 
 There are countless reasons why it is the only logical choice to be [bitcoin-only](https://bitcoin-only.com).
 With Bitcoin we have a once in a lifetime opportunity to manifest libre sound money.
-If we suceed, then this might emerge an utmost beautiful agora of sovereign individuals.
+If we succeed, then this might emerge an utmost beautiful agora of sovereign individuals.
 If we fail, then this will conjure up the most horrific Orwellian nightmare.
 There is no room for wasted time and energy, this Great Work requires our full attention.
 Any line of code written to support a random shitcoin takes away scarce developer time to work on real problems.
 :::
 
 :::details
-### Why is the anonymity set 100??
+### Why is the anonymity set 100?
 
 Sufficient anonymity set is a hard question, that not yet enough research done to answer it definitively.
 The rough consensus among many privacy researchers is that an anonymity set above 50 could be considered sufficient.
@@ -150,7 +133,7 @@ No, Wasabi and CoinJoin features require considerable computational power, not c
 ### Where can I find Wasabi Wallet on social media?
 
 You can find us on [Twitter](https://twitter.com/wasabiwallet) and [Reddit](https://www.reddit.com/r/WasabiWallet/).
-For chat groups you can find us on [Telegram](https://t.me/WasabiWallet) and [Keybase](https://keybase.io/team/wasabiwallet).
+For chat groups you can find us on [Slack](https://join.slack.com/t/tumblebit/shared_invite/enQtNjQ1MTQ2NzQ1ODI0LWIzOTg5YTM3YmNkOTg1NjZmZTQ3NmM1OTAzYmQyYzk1M2M0MTdlZDk2OTQwNzFiNTg1ZmExNzM0NjgzY2M0Yzg), [Telegram](https://t.me/WasabiWallet), [Riot](https://riot.im/app/#/room/#wasabiwallet:matrix.org) and [Keybase](https://keybase.io/team/wasabiwallet).
 
 :::
 
@@ -194,10 +177,10 @@ Key dates:
 :::
 
 :::details
-### Who is contributing to Wasabi??
+### Who is contributing to Wasabi?
 
 There are many Wasabikas working with great effort and care to manifest this powerful tool of self defense.
-[Over 35 peers](https://github.com/zkSNACKs/WalletWasabi/graphs/contributors) have already contributed to the repository, and more and more supporters are joining the [dojo](/building-wasabi/Dojo.md).
+[Many peers](https://github.com/zkSNACKs/WalletWasabi/graphs/contributors) have already contributed to the repository, and more and more supporters are joining the [dojo](/building-wasabi/Dojo.md).
 Four of the main contributors are [Ádám Ficsor](https://github.com/nopara73) [co-founder and CTO of [zkSnacks Ltd](https://zksnacks.com/), co-author of the [zero link Bitcoin fungibility framework](https://github.com/nopara73/ZeroLink)], [Lucas Ontivero](https://github.com/lontivero) [lead engineer of [zkSnacks Ltd](https://zksnacks.com/)], [Dávid Molnár](https://github.com/molnard) [[zkSnacks Ltd](https://zksnacks.com/) employee], and [Dan Walmsley](https://github.com/danwalmsley) [maintainer of [Avalonia UI Framework](https://github.com/AvaloniaUI/Avalonia)].
 For an inclusive list of all the Wasabikas, not just the code developers, please visit the [dojo](/building-wasabi/Dojo.md).
 
@@ -275,8 +258,12 @@ For the complete explanation please read [ZeroLink: The Bitcoin Fungibility Fram
 ### What are the minimal requirements to run Wasabi?
 
 - 64-bit architecture
-- Windows 7 or newer
-- MacOS 10.12 or newer
-- For Linux it depends on the specific OS
+- Windows 10+
+- macOS 10.13+
+- Debian 9+
+- Ubuntu 16.04+
+- For other Linux distributions, it depends on the specific OS.
+
+Click [here](https://github.com/dotnet/core/blob/master/release-notes/3.1/3.1-supported-os.md) to check if .NET Core 3.1 supports your OS. 
 
 :::

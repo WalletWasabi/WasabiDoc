@@ -7,29 +7,52 @@
 
 # Using Wasabi
 
-Here are all the nuances of how to use Wasabi wallet in all regards.
+Here are all the nuances of how to use Wasabi Wallet in all regards.
 Starting with a step-by-step guide on how to verify and install the software.
 Further tutorials about the different parts of the wallet, for newbies and power users.
 
-### Chapters
+## Chapters
 
-#### Installing Wasabi
-- [Install package](/using-wasabi/InstallPackage.html)
-- [Wasabi Setup on Tails](/using-wasabi/WasabiSetupTails.html)
-- [Build from source code](/using-wasabi/BuildSource.html)
-- [Deterministic Build](/using-wasabi/DeterministicBuild.html)
-#### Using Wasabi
-- [Wallet Generation](/using-wasabi/WalletGeneration.html)
-- [Password Finder](/using-wasabi/PasswordFinder.html)
-- [Cold-Wasabi Protocol](/using-wasabi/ColdWasabi.html)
-- [Lurking Wife Mode](/using-wasabi/LurkingWifeMode.html)
-- [Headless Wasabi Deamon](/using-wasabi/Daemon.html)
-- [Supported BIPs](/using-wasabi/BIPs.html)
-#### Privacy Best Practices
-- [Address Reuse](/using-wasabi/AddressReuse.html)
-- [Lost Password Strategy](/using-wasabi/LostPassword.html)
-- [Network Level Privacy](/using-wasabi/NetworkLevelPrivacy.html)
-- [How you can be de-anonymized using Bitcoin](/using-wasabi/Deanonimization.html)
-- [Pay to EndPoint](/using-wasabi/PayToEndPoint.html)
-#### Restoring Wasabi
-- [Restoring Wasabi Wallet to Electrum](/using-wasabi/RestoreElectrum.html)
+### Introducing Wasabi
+- [Explain Wasabi like I'm 5](/using-wasabi/ELI5.md)
+- [Ten Commandments](/using-wasabi/10commandments.md)
+
+### Installing Wasabi
+- [Install package](/using-wasabi/InstallPackage.md)
+- [Build from source code](/using-wasabi/BuildSource.md)
+
+### Using Wasabi
+- [Wallet Generation](/using-wasabi/WalletGeneration.md)
+- [Receive](/using-wasabi/Receive.md)
+- [CoinJoin](/using-wasabi/CoinJoin.md)
+- [Send](/using-wasabi/Send.md)
+- [Cold-Wasabi Hardware Wallet Mode](/using-wasabi/ColdWasabi.md)
+- [Bitcoin Full Node](/using-wasabi/BitcoinFullNode.md)
+
+### Privacy Best Practices
+- [Change Coins](/using-wasabi/ChangeCoins.md)
+- [How you can be de-anonymized using Bitcoin](/using-wasabi/Deanonimization.md)
+
+### Restoring Wasabi
+- [Wallet Recovery](/using-wasabi/WalletRecovery.md)
+- [Restoring Wasabi Wallet to Electrum](/using-wasabi/RestoreElectrum.md)
+- [Lost Password Strategy](/using-wasabi/LostPassword.md)
+- [Password Finder](/using-wasabi/PasswordFinder.md)
+
+### Advanced Installing Wasabi
+- [Deterministic Build](/using-wasabi/DeterministicBuild.md)
+- [Wasabi Setup on Tails](/using-wasabi/WasabiSetupTails.md)
+- [Wasabi Setup using Virtual Machines](/using-wasabi/WasabiSetupVM.md)
+- [Wasabi Setup using Whonix](/using-wasabi/WasabiSetupWhonix.md)
+
+### Advanced Using Wasabi
+- [Headless Wasabi Daemon](/using-wasabi/Daemon.md)
+- [RPC Interface](/using-wasabi/RPC.md)
+- [Lurking Wife Mode](/using-wasabi/LurkingWifeMode.md)
+- [Lock Screen](/using-wasabi/LockScreen.md)
+- [Password Best Practices](/using-wasabi/PasswordBestPractices.md)
+- [Supported BIPs](/using-wasabi/BIPs.md)
+
+### Research
+- [Pay to EndPoint](/using-wasabi/PayToEndPoint.md)
+- [JoinMarket](/using-wasabi/Joinmarket.md)
