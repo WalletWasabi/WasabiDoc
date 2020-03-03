@@ -42,5 +42,5 @@ The total bounty ended up being distributed to 6 contributors, see the full resu
 ## Merchandise design
 
 In order to find a beautiful design for Wasabi t-shirts, hoodies and stickers, there was a [contribution game for artists](https://github.com/zkSNACKs/Meta/issues/76).
-The art should reflect privacy in general, Bitcoin and Wasabi specifically.
+The subject was about privacy in general, Bitcoin and Wasabi specifically.
 There was a total bounty of up to 0.1 bitcoin.
