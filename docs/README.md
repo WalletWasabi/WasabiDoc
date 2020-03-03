@@ -26,12 +26,12 @@ This documentation is a good place to start your education on how to use Wasabi 
 
 ### Explain Like I'm 5
 
-If you are new to Wasabi and want to get a quick tutorial on how to use it, you may [start here](/using-wasabi/ELI5.md).
+If you are new to Wasabi and want to get a quick tutorial on how to use it, you may [start here](https://github.com/zkSNACKs/WasabiDoc/blob/master/docs/using-wasabi/ELI5.md).
 
 ### Stand-alone chapters
 
-If you are interested in the nuances of how one specific aspect of Wasabi works, then check-out the [detailed chapters here](/using-wasabi/).
+If you are interested in the nuances of how one specific aspect of Wasabi works, then check-out the [detailed chapters here](https://github.com/zkSNACKs/WasabiDoc/blob/master/docs/using-wasabi/).
 
 ### Search function
 
-If you have a question about some particular detail, then use the search function at the top right corner to browse the entire archive, including the [frequently asked questions](/faq/).
+If you have a question about some particular detail, then use the search function at the top right corner to browse the entire archive, including the [frequently asked questions](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/FAQ).
