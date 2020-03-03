@@ -23,7 +23,7 @@ When you are ever bored and want to be productive, why not pick up one of these 
 - [Multi wallet support](https://github.com/zkSNACKs/WalletWasabi/issues/1476)
 - [Improve cluster history](https://github.com/zkSNACKs/WalletWasabi/issues/612)
 - [Address typo location detector](https://github.com/zkSNACKs/WalletWasabi/issues/2114)
-- [Sweap private key](https://github.com/zkSNACKs/WalletWasabi/issues/486)
+- [Sweep private key](https://github.com/zkSNACKs/WalletWasabi/issues/486)
 
 ## Long Term Roadmap
 
