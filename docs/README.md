@@ -34,4 +34,4 @@ If you are interested in the nuances of how one specific aspect of Wasabi works,
 
 ### Search function
 
-If you have a question about some particular detail, then use the search function at the top right corner to browse the entire archive, including the [frequently asked questions](/faq/).
+If you have a question about some particular detail, then use the search function at the top right corner to browse the entire archive, including the [frequently asked questions](/FAQ/).
