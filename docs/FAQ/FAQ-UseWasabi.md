@@ -70,30 +70,6 @@ A secure password manager software might also be used, but be careful here.
 ::::
 
 ::::details
-### How do I back up my mnemonic words?
-
-:::tip
-Write down your recovery words!
-:::
-
-Wasabi uses [BIP 39: mnemonic code for generating deterministic keys](/using-wasabi/BIPs.md#bip-39-mnemonic-code-for-generating-deterministic-keys) to enable easy backups of all private keys in the wallet.
-The mnemonic is displayed as 12 recovery words that are only shown once during the wallet generation.
-
-![](/WalletManagerRecoveryWords.png)
-
-:::danger
-In order to restore a wallet, you need BOTH the mnemonic words AND the password!
-:::
-
-It is a good idea to keep the two in separate analog backups, such as a laminated paper written with pencil.
-In order to defend against nature destroying fragile paper, you can consider stamping the words into metal.
-Use two different backups and locations for the mnemonic and password, because whoever has both [including a physical attacker] has full access to your sats.
-Find a secure physical location to store the backups, maybe a home safe, or an expert security deposit box.
-
-Please see [this great guide](https://github.com/6102bitcoin/FAQ/blob/master/seed.md#3-Storing-your-Seed) on how to properly store your seed.
-::::
-
-::::details
 ### Where can I find the Wasabi data folder?
 
 * Windows: `/Users/{your username}/AppData/Roaming/WalletWasabi/Client`
@@ -105,25 +81,6 @@ You need to mark the “show hidden files” setting to see it.
 :::
 
 You can also easily reach it from inside Wasabi: `File > Open > Data Folder`.
-::::
-
-::::details
-### How do I backup my wallet file?
-
-Although you can backup your private keys with the mnemonic words and password, this is only a last resort recovery.
-If you want to also secure your address labels, the anonset and additional metadata, then you can do a digital backup.
-Simply copy the `WalletBackups` folder with the `wallet.json` files from your [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) onto suitable hardware, for example an encrypted USB stick.
-Note that this file has the encrypted private key (extracted from the extended private key), meaning that you only need the password to spend the bitcoin.
-This also contains the extended public key, the public keys, and the address labels, meaning that it completely links all the coins, both pre and post mix, with clear proof.
-
-:::warning
-Make sure to back up your password separately because it is necessary to spend your bitcoin.
-:::
-
-:::tip
-The wallet file backup is sensitive, in terms of privacy, but not critical in terms of loss of funds (if a password was used when generating the wallet).
-So it is good advice to encrypt this wallet file.
-:::
 ::::
 
 ::::details
@@ -1030,6 +987,69 @@ Because they were not necessary for the CoinJoin.
 Wasabi Wallet will use only the necessary coins to CoinJoin (up to 7 coins).
 
 Example: If you select 10 coins with total value of 0.2 btc but the sum of 4 coins is enough to CoinJoin, then Wasabi will use only those 4 coins.
+:::
+
+## Backup and Recovery
+
+::::details
+### How do I back up my mnemonic words?
+
+:::tip
+Write down your recovery words!
+:::
+
+Wasabi uses [BIP 39: mnemonic code for generating deterministic keys](/using-wasabi/BIPs.md#bip-39-mnemonic-code-for-generating-deterministic-keys) to enable easy backups of all private keys in the wallet.
+The mnemonic is displayed as 12 recovery words that are only shown once during the wallet generation.
+
+![](/WalletManagerRecoveryWords.png)
+
+:::danger
+In order to restore a wallet, you need BOTH the mnemonic words AND the password!
+:::
+
+It is a good idea to keep the two in separate analog backups, such as a laminated paper written with pencil.
+In order to defend against nature destroying fragile paper, you can consider stamping the words into metal.
+Use two different backups and locations for the mnemonic and password, because whoever has both [including a physical attacker] has full access to your sats.
+Find a secure physical location to store the backups, maybe a home safe, or an expert security deposit box.
+
+Please see [this great guide](https://github.com/6102bitcoin/FAQ/blob/master/seed.md#3-Storing-your-Seed) on how to properly store your seed.
+::::
+
+::::details
+### How do I backup my wallet file?
+
+Although you can backup your private keys with the mnemonic words and password, this is only a last resort recovery.
+If you want to also secure your address labels, the anonset and additional metadata, then you can do a digital backup.
+Simply copy the `WalletBackups` folder with the `wallet.json` files from your [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) onto suitable hardware, for example an encrypted USB stick.
+Note that this file has the encrypted private key (extracted from the extended private key), meaning that you only need the password to spend the bitcoin.
+This also contains the extended public key, the public keys, and the address labels, meaning that it completely links all the coins, both pre and post mix, with clear proof.
+
+:::warning
+Make sure to back up your password separately because it is necessary to spend your bitcoin.
+:::
+
+:::tip
+The wallet file backup is sensitive, in terms of privacy, but not critical in terms of loss of funds (if a password was used when generating the wallet).
+So it is good advice to encrypt this wallet file.
+:::
+::::
+
+:::details
+### Can I recover my wallet without the password?
+
+No, the password is necessary to spend your bitcoin or to recover your wallet, the password you set is used as a 13th word (passphrase) as described in BIP39, you should back it up when you generate a wallet.
+
+Try to use the [Password Finder Tool](https://docs.wasabiwallet.io/using-wasabi/PasswordFinder.html) to find your password.
+Having a close guess of what the password is increases the possibility that you get your password.
+:::
+
+::::details
+### I lost seed words but still have .json file and the password. Is my wallet still recoverable?
+
+Yes, the .json file contains your private keys in it.
+That gives you access to your wallet in combination with the passphrase that you still have.
+
+In this case it is still advisable to create a new wallet from scratch and save the new seed + password.
 :::
 
 ## Hardware Wallet
