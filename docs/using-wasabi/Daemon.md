@@ -13,13 +13,12 @@ This daemon is especially useful for power users mixing bitcoin in the backend o
 To start the daemon, in the command line type:
 
 ```
-./wassabee mix --wallet:MyWalletName --mixall --keepalive --loglevel:info
+./wassabee mix --wallet:MyWalletName --keepalive --loglevel:info
 ```
 
 `./wassabee` command starts Wasabi wallet.
 `mix` makes sure it starts in daemon and not the GUI.
 `--wallet:` specifies which of your hot wallets you want to mix.
-`--mixall` will mix each coin in the wallet at least once and until the anonymity set target is reached.
 `--keepalive` will keep the daemon running after all coins are mixed, and continue mixing as soon as new coins are send to the wallet.
 `--loglevel:` specifies the verbosity of the logs.
 `--help` shows the manpage.
