@@ -15,7 +15,7 @@ Further tutorials about the different parts of the wallet, for newbies and power
 
 ### Introducing Wasabi
 - [Explain Wasabi like I'm 5](/using-wasabi/ELI5.md)
-- [Ten Commandments](/using-wasabi/10commandments.md)
+- [Ten Commandments](/using-wasabi/10Commandments.md)
 
 ### Installing Wasabi
 - [Install package](/using-wasabi/InstallPackage.md)
