@@ -159,7 +159,7 @@ Wasabi also has a `History` tab like any other Bitcoin wallet.
 
 ![](/History.png)
 
-Unlike other Bitcoin wallets, the user cannot spend from Wasabi without selecting coins, since ["Coin Control Is Must Learn If You Care About Your Privacy In Bitcoin"](https://medium.com/@nopara73/coin-control-is-must-learn-if-you-care-about-your-privacy-in-bitcoin-33b9a5f224a2), at least for today.
+Unlike other Bitcoin wallets, the user cannot spend from Wasabi without [selecting coins](/FAQ/FAQ-UseWasabi.md#coin-control-best-practices), at least for today.
 The label field of the `Send` tab is also compulsory.
 
 ![](/Send.png)
@@ -202,8 +202,6 @@ After a mix has successfully executed, the resulting CoinJoin transaction will l
 ![](/TXCoinJoin.png)
 
 Wasabi also has a Tor website where one can see real-time statistics about the mixes: [wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion/)
-
-To this day, Wasabi's CoinJoins have created >22941 BTC outputs with equal value.
 
 ## II. Stability, Performance, UX, Code Quality
 
