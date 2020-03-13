@@ -103,27 +103,6 @@ Furthermore our calculations have shown that with the liquidity of today’s mix
 :::
 
 :::details
-### Is there a way to check Wasabi uptime status?
-
-Yes, you can check the status of Wasabi-related services and websites (like APIs, Backend, etc.) via [UptimeRobot Wasabi Status Page](https://stats.uptimerobot.com/YQqGyUL8A7).
-:::
-
-:::details
-### What software supplies the block filters that Wasabi uses?
-
-The zkSNACKs coordinator supplies the same set of filters to every client.
-This means you rely on the Wasabi backend providing you valid filters.
-But because you download the blocks from a random Bitcoin peer-to-peer node - or your own node - the coordinator cannot spy on which blocks you are interested in.
-Furthermore, the random node will only know which block is needed but it won't have any clue which transaction(s) belongs to the wallet.
-:::
-
-:::details
-### Is the Backend's (Coordinator) code open source?
-
-Yes, you can verify the code on [GitHub](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Backend).
-:::
-
-:::details
 ### Is there an Android/iOs version?
 
 No, Wasabi and CoinJoin features require considerable computational power, not currently replicable on a smartphone.
@@ -160,6 +139,27 @@ Taking the 'worst case' (100 people, each mixing 0.1 BTC) gives 0.03 BTC per rou
 This is not prohibitive and is thus a valid concern.
 That said, if multiple chain-analysis companies attempt to flood the zkSNACKs mix (to decrease the true anonymity set) they will hinder each other's efforts (unless they are cooperating).
 See [here](https://github.com/nopara73/ZeroLink/#e-sybil-attack) for more info.
+:::
+
+:::details
+### Is there a way to check Wasabi uptime status?
+
+Yes, you can check the status of Wasabi-related services and websites (like APIs, Backend, etc.) via [UptimeRobot Wasabi Status Page](https://stats.uptimerobot.com/YQqGyUL8A7).
+:::
+
+:::details
+### What software supplies the block filters that Wasabi uses?
+
+The zkSNACKs coordinator supplies the same set of filters to every client.
+This means you rely on the Wasabi backend providing you valid filters.
+But because you download the blocks from a random Bitcoin peer-to-peer node - or your own node - the coordinator cannot spy on which blocks you are interested in.
+Furthermore, the random node will only know which block is needed but it won't have any clue which transaction(s) belongs to the wallet.
+:::
+
+:::details
+### Is the Backend's (Coordinator) code open source?
+
+Yes, you can verify the code on [GitHub](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Backend).
 :::
 
 :::details
