@@ -396,7 +396,7 @@ You can see the address QR code, public key and the key path in the drop down me
 Click on the arrow on the left side of the address to reveal the extra details.
 You can save the png file of the QR code in the right click menu.
 
-![](/ReceiveAddressDropDown.png)
+![](/ReceiveAddressDropDownMenu.png)
 :::
 
 :::details
@@ -435,7 +435,7 @@ When Wasabi is running, it connects to random Bitcoin peer to peer nodes and lis
 Based on this information Wasabi builds its own local mempool of unconfirmed transactions.
 So when you have Wasabi running, you will be notified about an incoming receiving transaction as soon as it is gossiped on the network.
 But when Wasabi is offline, it does not listen to the network and it will not know about your unconfirmed transaction when you next start up Wasabi.
-In this case you have to wait until your transaction is confirmed in a block, and based on the [BIP 158 block filters](/BIPs.md#bip-158-compact-block-filters-for-light-clients) Wasabi will download that whole block including your transaction from a random P2P node.
+In this case you have to wait until your transaction is confirmed in a block, and based on the [BIP 158 block filters](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients) Wasabi will download that whole block including your transaction from a random P2P node.
 :::
 
 ## Send
