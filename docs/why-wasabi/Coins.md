@@ -45,7 +45,7 @@ Thus if a transaction has a reused address in the output, it is very likely to b
 Thus the other output of this transaction, is likely to be the change of the entity providing the inputs of the transaction.
 
 :::warning Remember
-Never [reuse addresses](/why-wasabi/BitcoinPrivacy.md#address-reuse)!
+Never [reuse addresses](/why-wasabi/https://docs.wasabiwallet.io/why-wasabi/AddressReuse.md#problem)!
 :::
 
 ### Wallet fingerprinting
