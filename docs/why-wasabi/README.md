@@ -21,6 +21,6 @@ And why Wasabi can make Bitcoin an even better tool of self defense by default.
 #### Privacy in Bitcoin
 - [Address Reuse](/why-wasabi/AddressReuse.md)
 - [Coins](/why-wasabi/Coins.md)
-- [Transaction Graph](/TransactionGraph.md)
+- [Transaction Graph](/why-wasabi/TransactionGraph.md)
 - [Network Level Privacy](/why-wasabi/NetworkLevelPrivacy.md)
 - [Transaction Surveillance Companies](/why-wasabi/TransactionSurveillanceCompanies.md)
