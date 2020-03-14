@@ -4,13 +4,20 @@
   "description": "Frequently asked questions regarding the introduction to Wasabi in general. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
 }
 ---
+<div itemscope itemtype="https://schema.org/FAQPage">
 
 # Introduction to Wasabi
 
 ## The Basics
 
 ::::details
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div itemprop="name">
+
 ### Who can use Wasabi?
+</div>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
 
 Every single line of code in Wasabi, the [wallet](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Gui), the [backend server](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Backend), the [tests](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Tests), the [packager](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Packager), the [library](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi), the [daemon](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Gui/CommandLine), the [api](https://wasabiwallet.io/swagger/), the [documentation](https://github.com/zkSNACKs/WasabiDoc) - has always been and will always be libre and open source under the [MIT license](https://github.com/zkSNACKs/WalletWasabi/blob/master/LICENSE.md).
 This means that anyone, yes, ANYONE can use Wasabi without permission, for any use case, free of charge.
@@ -22,11 +29,19 @@ Young kids have Wasabi to stack the sats gifted by grandma, and they learn the i
 :::tip
 Wasabi is a tool for everyone.
 :::
+</div>
 ::::
+</div>
 
 :::details
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div itemprop="name">
+
 ### What is a CoinJoin?
 
+</div>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
 A mechanism by which multiple participants combine their coins (or UTXOs, to be more precise) into one large transaction with multiple inputs and multiple outputs.
 An observer cannot determine which output belongs to which input, and neither can the participants themselves.
 This makes it difficult for outside parties to trace where a particular coin originated from and where it was sent to (as opposed to regular bitcoin transactions, where there is usually one sender and one receiver).
@@ -45,18 +60,35 @@ It is even possible that this functionality might one day be included directly o
 In very simple terms, CoinJoin means: “when you want to make a transaction, find someone else who also wants to make a transaction and make a joint transaction together”.
 
 See also the [Bitcoin Wiki on CoinJoins](https://en.bitcoin.it/wiki/CoinJoin)
+</div>
 :::
+</div>
 
 :::details
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div itemprop="name">
+
 ### Do I need to trust Wasabi with my coins?
+</div>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
 
 No, Wasabi's CoinJoin implementation is trustless by design.
 The participants do not need to trust each other or any third party. Both the sending address (the CoinJoin input) and the receiving address (the CoinJoin output) are controlled by your own private keys.
 Wasabi merely coordinates the process of combining the inputs of the participants into one single transaction, but the wallet can neither steal your coins, nor figure out which outputs belong to which inputs (look up “[Chaumian CoinJoin](https://github.com/nopara73/ZeroLink#ii-chaumian-coinjoin)” if you want to know more).
+</div>
 :::
+</div>
 
 :::details
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div itemprop="name">
+
 ### What is the privacy I get after mixing with Wasabi?
+</div>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
+
 This depends on how you handle your outputs after the CoinJoin.
 There are some ways how you can unintentionally undo the mixing by being careless.
 For example, if you make a 1.8 BTC transaction into Wasabi, do the CoinJoin, and then make one single outgoing transaction of 1.8 BTC, a third party observer can reasonably assume that both transactions belong to one single entity, due to both amounts being virtually the same even though they have been through a CoinJoin.
@@ -66,25 +98,49 @@ Another deanonymizing scenario happens when you combine mixed outputs with unmix
 
 The practice of being careful with your post-mix outputs is commonly facilitated through coin control, which is the default way of interacting with the wallet.
 Find out more about coin control it [here](https://medium.com/@nopara73/coin-control-is-must-learn-if-you-care-about-your-privacy-in-bitcoin-33b9a5f224a2).
+</div>
 :::
+</div>
 
 :::details
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div itemprop="name">
+  
 ### Can I hurt my privacy using Wasabi?
 
+</div>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
 No.
 The worst thing that can happen (through user’s negligence post-mix) is that the level of your privacy stays the same as before CoinJoin.
 It is crucial to understand that Wasabi is not a fool-proof solution if you neglect to practice coin control after the mixing process.
+</div>
 :::
+</div>
 
 :::details
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div itemprop="name">
+
 ### Do I need to run Tor?
 
+</div>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
 No you don't need to set up Tor yourself, all Wasabi network traffic goes via Tor by default.
 If you do already have Tor, and it is running, then Wasabi will try to use that first.
+</div>
 :::
+</div>
 
 :::details
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div itemprop="name">
+
 ### Why is Wasabi Bitcoin-only?
+</div>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
 
 There are countless reasons why it is the only logical choice to be [bitcoin-only](https://bitcoin-only.com).
 With Bitcoin we have a once in a lifetime opportunity to manifest libre sound money.
@@ -92,55 +148,110 @@ If we succeed, then this might emerge an utmost beautiful agora of sovereign ind
 If we fail, then this will conjure up the most horrific Orwellian nightmare.
 There is no room for wasted time and energy, this Great Work requires our full attention.
 Any line of code written to support a random shitcoin takes away scarce developer time to work on real problems.
+</div>
 :::
+</div>
 
 :::details
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div itemprop="name">
+
 ### Why is the anonymity set 100?
+</div>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
 
 Sufficient anonymity set is a hard question, that not yet enough research done to answer it definitively.
 The rough consensus among many privacy researchers is that an anonymity set above 50 could be considered sufficient.
 Furthermore our calculations have shown that with the liquidity of today’s mixers our mixing rounds would take 1 to 5 minutes with 100 anonymity set and 0.1 BTC fixed denomination.
+</div>
 :::
+</div>
 
 :::details
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div itemprop="name">
+
 ### Is there a way to check Wasabi uptime status?
+</div>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
 
 Yes, you can check the status of Wasabi-related services and websites (like APIs, Backend, etc.) via [UptimeRobot Wasabi Status Page](https://stats.uptimerobot.com/YQqGyUL8A7).
+</div>
 :::
+</div>
 
 :::details
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div itemprop="name">
+
 ### What software supplies the block filters that Wasabi uses?
+</div>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
 
 The zkSNACKs coordinator supplies the same set of filters to every client.
 This means you rely on the Wasabi backend providing you valid filters.
 But because you download the blocks from a random Bitcoin peer-to-peer node - or your own node - the coordinator cannot spy on which blocks you are interested in.
 Furthermore, the random node will only know which block is needed but it won't have any clue which transaction(s) belongs to the wallet.
+</div>
 :::
+</div>
 
 :::details
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div itemprop="name">
+
 ### Is the Backend's (Coordinator) code open source?
+</div>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
 
 Yes, you can verify the code on [GitHub](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Backend).
+</div>
 :::
+</div>
 
 :::details
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div itemprop="name">
+
 ### Is there an Android/iOs version?
+</div>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
 
 No, Wasabi and CoinJoin features require considerable computational power, not currently replicable on a smartphone.
+</div>
 :::
+</div>
 
 :::details
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div itemprop="name">
+
 ### Where can I find Wasabi Wallet on social media?
+</div>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
 
 You can find us on [Twitter](https://twitter.com/wasabiwallet) and [Reddit](https://www.reddit.com/r/WasabiWallet/).
 For chat groups you can find us on [Slack](https://join.slack.com/t/tumblebit/shared_invite/enQtNjQ1MTQ2NzQ1ODI0LWIzOTg5YTM3YmNkOTg1NjZmZTQ3NmM1OTAzYmQyYzk1M2M0MTdlZDk2OTQwNzFiNTg1ZmExNzM0NjgzY2M0Yzg), [Telegram](https://t.me/WasabiWallet), [Riot](https://riot.im/app/#/room/#wasabiwallet:matrix.org) and [Keybase](https://keybase.io/team/wasabiwallet).
-
+</div>
 :::
+</div>
 
 ## For advanced Wasabikas
 
 :::details
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div itemprop="name">
+
 ### Can the coordinator attack me?
+</div>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
 
 The nature of Wasabi is that you should not need to trust the developers or the Wasabi coordinating server, as you can verify that the code does not leak information to anyone.
 The developers have gone to great lengths in an attempt to ensure that the coordinator cannot steal funds nor harvest information (for example, the outputs sent from your Wasabi Wallet are blinded, meaning that even the Wasabi server cannot link the outputs to the inputs).
@@ -160,10 +271,18 @@ Taking the 'worst case' (100 people, each mixing 0.1 BTC) gives 0.03 BTC per rou
 This is not prohibitive and is thus a valid concern.
 That said, if multiple chain-analysis companies attempt to flood the zkSNACKs mix (to decrease the true anonymity set) they will hinder each other's efforts (unless they are cooperating).
 See [here](https://github.com/nopara73/ZeroLink/#e-sybil-attack) for more info.
+</div>
 :::
+</div>
 
 :::details
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div itemprop="name">
+
 ### What is the history of Wasabi?
+</div>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
 
 Ádám Ficsor worked with several others on a privacy-focused Bitcoin wallet called Hidden Wallet all the way [back in December 2015](https://docs.google.com/drawings/d/1wLL7aSgYBWNoyzllg6_haisFt-gQCf-QUzVzQPkARts/edit).
 Wasabi was unveiled in 2018 at the Building on Bitcoin conference by Ádám.
@@ -173,11 +292,18 @@ Key dates:
 - The 1.0 release was on October 31 (on the tenth anniversary of the Bitcoin Whitepaper.)
 
 @[youtube](XORDEX-RrAI,6420)
-
+</div>
 :::
+</div>
 
 :::details
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div itemprop="name">
+
 ### Who is contributing to Wasabi?
+</div>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
 
 There are many Wasabikas working with great effort and care to manifest this powerful tool of self defense.
 [Many peers](https://github.com/zkSNACKs/WalletWasabi/graphs/contributors) have already contributed to the repository, and more and more supporters are joining the [dojo](/building-wasabi/Dojo.md).
@@ -189,11 +315,18 @@ For an inclusive list of all the Wasabikas, not just the code developers, please
 @[youtube](Yg7_3LIutJA)
 
 @[youtube](X9BB_9faJE8)
-
+</div>
 :::
+</div>
 
 ::::details
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div itemprop="name">
+
 ### Why is Wasabi libre and open source software?
+</div>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
 
 Wasabi follows the philosophy behind Bitcoin by making the software open source and by publishing it under MIT License.
 Average Bitcoin users prefer open source software to proprietary software for a number of reasons, including:
@@ -226,10 +359,18 @@ Many users prefer open source software to proprietary software for important, lo
 
 Because programmers publicly distribute the source code for open source software, users relying on that software for critical tasks can be sure their tools won't disappear or fall into disrepair if their original creators stop working on them.
 Additionally, open source software tends to both incorporate and operate according to open standards.
+</div>
 ::::
+</div>
 
 :::details
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div itemprop="name">
+
 ### What is the general idea of ZeroLink CoinJoin?
+</div>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
 
 While fungibility is an essential property of good money, Bitcoin has its limitations in this area.
 Numerous fungibility improvements have been proposed; however none of them have addressed the privacy issues in full.
@@ -252,10 +393,18 @@ Coins from pre-mix wallets to post-mix wallets are moved by mixing. Most on-chai
 However ZeroLink defines its own mixing technique: Chaumian CoinJoin.
 
 For the complete explanation please read [ZeroLink: The Bitcoin Fungibility Framework](https://github.com/nopara73/ZeroLink/).
+</div>
 :::
+</div>
 
 :::details
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div itemprop="name">
+
 ### What are the minimal requirements to run Wasabi?
+</div>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
 
 - 64-bit architecture
 - Windows 10+
@@ -265,5 +414,8 @@ For the complete explanation please read [ZeroLink: The Bitcoin Fungibility Fram
 - For other Linux distributions, it depends on the specific OS.
 
 Click [here](https://github.com/dotnet/core/blob/master/release-notes/3.1/3.1-supported-os.md) to check if .NET Core 3.1 supports your OS. 
+</div>
+::::
+</div>
 
-:::
+</div>
