@@ -93,7 +93,7 @@ B [3 btc]       E [5 btc] (= change A)
 However, the output that is reduced in the second transaction is likely to be the change output, as the sender pays the fee.
 
 ```
-First tranaction
+First transaction
 
 A [1.3576 1516 btc]  -->  B [1.0135 6515 btc]
                           C [0.3440 4861 btc] 
