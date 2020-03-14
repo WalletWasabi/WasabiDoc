@@ -186,7 +186,7 @@ Essentially, when we talk about shields, we mean a specific privacy level set by
 ### XPUB (Extended Public Key)
 
 An xpub, also know as Extended Public Key, is a part of BIP-32 that will allow you to observe your wallet without the private key (xpriv).
-Read more: [Wasabi's Solution](/why-wasabi/BitcoinPrivacy.md#wasabi-s-solution-4)
+Read more: [Wasabi's Solution](/why-wasabi/AddressReuse.html#wasabi-s-solution)
 :::
 
 :::details

@@ -126,7 +126,7 @@ And the index of the video of a playlist (e.g. starts the third video):
 
 There are three types of text highlights that can be used to display different colored boxes.
 
-A green box displaying a [friendly tip](https://docs.wasabiwallet.io/using-wasabi/AddressReuse.html):
+A green box displaying a [friendly tip](https://docs.wasabiwallet.io/using-wasabi/PasswordBestPractices.html):
 
 ```
 :::tip
@@ -134,7 +134,7 @@ foo
 :::
 ```
 
-A yellow box with a [cautious warning](https://docs.wasabiwallet.io/using-wasabi/AddressReuse.html):
+A yellow box with a [cautious warning](https://docs.wasabiwallet.io/using-wasabi/WalletRecovery.html#backup-wallet-file-and-password):
 
 ```
 :::warning
