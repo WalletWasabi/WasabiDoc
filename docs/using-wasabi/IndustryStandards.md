@@ -15,7 +15,7 @@ Wasabi Wallet strives toward establishing solid industry best practices and stan
 Here is a list of all the supported and integrated standards:
 
 :::details
-### Hardware Wallet Interface
+## Hardware Wallet Interface
 
 [Hardware Wallet Interface](https://github.com/bitcoin-core/HWI)
 :::
