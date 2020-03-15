@@ -1,7 +1,7 @@
 ---
 {
   "title": "Cold-Wasabi Hardware Wallet Mode",
-  "description": "A step by step guide on how to CoinJoin and send bitcoin to a hardware wallet for cold storage using WasabiWallet only. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
+  "description": "A step by step guide on how to CoinJoin and send bitcoin to a hardware wallet for cold storage using Wasabi Wallet only. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
 }
 ---
 
@@ -16,7 +16,7 @@ Alternatively, you can import a Coldcard skeleton file via SD card.
 2. The `Hardware Wallet` tab will open, and there you can search all connected hardware wallets.
 3. Click `Load Wallet`, then you can [receive](/using-wasabi/Receive.md) bitcoin to addresses controlled by the hardware wallet.
 4. You can [spend](/using-wasabi/Send.md) these coins in the `Send` tab, though the hardware wallet must be connected via USB to confirm before signing the transaction.
-Alternatively, you can [build a PSBT](using-wasabi/ColdWasabi.md#connecting-coldcard-via-sd-card), export this via SD card to your Coldcard wallet for signing, then import the final transaction to Wasabi for broadcasting.
+Alternatively, you can [build a PSBT](/using-wasabi/ColdWasabi.md#connecting-coldcard-via-sd-card), export this via SD card to your Coldcard wallet for signing, then import the final transaction to Wasabi for broadcasting.
 
 :::warning No CoinJoin
 Unfortunately, as of now you cannot [CoinJoin](/using-wasabi/CoinJoin.md) with just the private keys on your hardware wallet.
@@ -118,7 +118,7 @@ You should make your existing coins private.
 It is useful to generate a complete new hot wallet for this, so as to keep the CoinJoin transaction history separate from other wallets.
 :::
 
-1. [Generate a new Hot-Wasabi Wallet](/using-wasabi/WalletGeneratation.md).
+1. [Generate a new Hot-Wasabi Wallet](/using-wasabi/WalletGeneration.md).
 2. Open the [Receive](/using-wasabi/Receive.md) tab to get a new address.
 3. From a pre-existing wallet, send bitcoin into this Hot-Wasabi Wallet.
 4. In the [CoinJoin](/using-wasabi/CoinJoin.md) tab, select the relevant coins, enqueue them, and wait for the CoinJoin to be done.
