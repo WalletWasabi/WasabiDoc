@@ -146,7 +146,7 @@ We have shown that this routing protocol provides near-optimal anonymity guarant
 ### BIP 157: Client Side Block Filtering
 
 [BIP 157](https://github.com/bitcoin/bips/blob/master/bip-0157.mediawiki) describes a new light client protocol in Bitcoin that improves upon currently available options.
-The standard light client protocol in use today, defined in [BIP 37](BIP.md#bip-37-connection-bloom-filters), has known flaws that weaken the security and privacy of clients and allow denial-of-service attack vectors on full nodes.
+The standard light client protocol in use today, defined in [BIP 37](BIPs.md#bip-37-connection-bloom-filters), has known flaws that weaken the security and privacy of clients and allow denial-of-service attack vectors on full nodes.
 The new protocol overcomes these issues by allowing light clients to obtain compact probabilistic filters of block content from full nodes and download full blocks if the filter matches relevant data.
 
 New P2P messages empower light clients to securely sync the blockchain without relying on a trusted source.
