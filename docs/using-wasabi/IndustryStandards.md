@@ -7,9 +7,7 @@
 
 # Supported Standards
 
-- [What is supported today](IndustryStandards.md#what-is-supported-today)
-- [What will be supported in #twoweeks](IndustryStandards.md#what-will-be-supported-in-twoweeks)
-- [What is not supported](IndustryStandards.md#what-is-not-supported)
+[[toc]]
 
 ---
 
