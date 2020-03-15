@@ -14,8 +14,6 @@
 Wasabi Wallet strives toward establishing solid industry best practices and standards.
 Here is a list of all the supported and integrated standards:
 
-## What is supported today
-
 :::details
 ### Hardware Wallet Interface
 
