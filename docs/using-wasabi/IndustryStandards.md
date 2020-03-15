@@ -23,7 +23,3 @@ Here is a list of all the supported and integrated standards:
 
 [Hardware Wallet Interface](https://github.com/bitcoin-core/HWI)
 :::
-
-## What will be supported in #twoweeks
-
-## What is not supported
