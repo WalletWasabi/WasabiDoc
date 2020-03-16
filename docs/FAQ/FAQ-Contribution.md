@@ -8,7 +8,13 @@
 # Contributions to Wasabi
 
 :::details
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div itemprop="name">
+
 ### How to donate to Wasabi Wallet?
+</div>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
 
 Adam Ficsor had a donation address for a few years while he was working alone on Wasabi.
 It's not the case anymore.
@@ -16,12 +22,20 @@ Though it's most likely not an issue to accept Bitcoin donations, zkSNACKs team 
 Wasabi has a coordinator fee that is capped at 0.3% for every CoinJoin and it became zkSNACKs' main income.
 To help Wasabi development, just CoinJoin your bitcoins via Wasabi!
 If you want to read more about fees here is a nice explanation: [What are the fees for the CoinJoin](/FAQ/FAQ-UseWasabi.md#what-are-the-fees-for-the-coinjoin).
+</div>
 :::
+</div>
 
 ## The Wasabikas of the dojo
 
 :::details
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div itemprop="name">
+
 ### Who is contributing to Wasabi already?
+</div>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
 
 There are many Wasabikas working with great effort and care to manifest this powerful tool of self defense.
 [Over 40 peers](https://github.com/zkSNACKs/WalletWasabi/graphs/contributors) have already contributed to the repository, and more and more supporters are joining the [dojo](/building-wasabi/Dojo.md).
@@ -33,10 +47,18 @@ For an inclusive list of all the Wasabikas, not just the code developers, please
 @[youtube](Yg7_3LIutJA)
 
 @[youtube](X9BB_9faJE8)
+</div>
 :::
+</div>
 
 :::details
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div itemprop="name">
+
 ### Who reviews and merges the pull requests?
+</div>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
 
 As the Wasabi code is libre and open source, anyone has access to review the latest contributions and browse the [open pull requests](https://github.com/zkSNACKs/WalletWasabi/pulls?q=is%3Apr+is%3Aopen+sort%3Aupdated-desc).
 The review of any Wasabika is not just deeply appreciated, but desperately needed!
@@ -50,21 +72,37 @@ However, since all three are administrators, they can still force the merge with
 - [Lucas Ontivero](https://github.com/lontivero), lead engineer of [zkSNACKs Ltd](https://zksnacks.com/).
 - [Dávid Molnár](https://github.com/molnard), CTO of [zkSNACKs Ltd](https://zksnacks.com/).
 - [Dan Walmsley](https://github.com/danwalmsley), co-maintainer of [Avalonia](https://github.com/AvaloniaUI/Avalonia/).
+</div>
 :::
+</div>
 
 :::details
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div itemprop="name">
+
 ### What is on the future roadmap of Wasabi development?
+</div>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
 
 Wasabi is far from complete, there are many Wasabikas contributing every day to make this tool of self defense even more powerful.
 Because Wasabi is libre and open source software, anyone can support the project without asking for permission.
 Thus it is relatively tricky to give a precise roadmap with what will be implemented in the near and distant future.
 You can check the [ToDo list](/building-wasabi/ToDo.md) for a somewhat up-to-date summary of the short term priorities of the next #twoweeks, and what might be implemented in the distant future.
+</div>
 :::
+</div>
 
 ## You can become a Wasabika
 
 :::details
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div itemprop="name">
+
 ### How should I start contributing to Wasabi?
+</div>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
 
 Thank you for considering to support this beautiful libre and open source project!
 Nobody owns this software, and thus it is the responsibility of everyone using it to contribute to its growth.
@@ -72,10 +110,18 @@ Thus your help is deeply appreciated, and very much needed!
 First please read the [contribution checklist](/building-wasabi/ContributionChecklist.md) to get introduced to the project and to start out in the right direction.
 You can also see the [ToDo list](/building-wasabi/ToDo.md) for inspiration of what other Wasabikas are tinkering on.
 Join our [Slack](https://join.slack.com/t/tumblebit/shared_invite/enQtNjQ1MTQ2NzQ1ODI0LWIzOTg5YTM3YmNkOTg1NjZmZTQ3NmM1OTAzYmQyYzk1M2M0MTdlZDk2OTQwNzFiNTg1ZmExNzM0NjgzY2M0Yzg), [Telegram](https://t.me/WasabiWallet), [Riot](https://riot.im/app/#/room/#wasabiwallet:matrix.org) or [Reddit](https://www.reddit.com/r/WasabiWallet/), and check out the [GitHub](https://github.com/zkSnacks/WalletWasabi), so that you can stay up-to-date with the latest contributions.
+</div>
 :::
+</div>
 
 :::details
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div itemprop="name">
+
 ### Is there a bounty program?
+</div>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
 
 Yes!
 The beauty of Wasabi is that it's not just a very awesome wallet by default, but it has the additional opt-in CoinJoin service.
@@ -83,10 +129,18 @@ This is provided by [zkSnacks Ltd.](https://zksnacks.com), and in exchange for t
 In return, zkSnacks is supporting several developers to dedicate their full time to contribute to this open source project.
 There are also projects like the [contribution game](/building-wasabi/ContributionGame.md) where a bounty is paid out to any contributor worthy the praise.
 Specifically for the documentation, there is a monthly budget of 1.000 USD to cover for the maintenance and expansion of this knowledge archive.
+</div>
 :::
+</div>
 
 ::::details
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div itemprop="name">
+
 ### How can I report a bug?
+</div>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
 
 Code is speech, and can never be perfect.
 Thus it is expected that there are many known and unknown bugs, quirks and issues in Wasabi.
@@ -103,10 +157,18 @@ In some cases it might be useful to see your logs, though please consider your p
 If you find a bug that puts users' privacy or security at serious risk, please take great care with responsible disclosure!
 Send an email to [adam.ficsor73@gmail.com](mailto:adam.ficsor73@gmail.com), preferably using PGP encryption [21D7 CA45 565D BCCE BE45 115D B4B7 2266 C47E 075E](https://github.com/zkSNACKs/WalletWasabi/blob/master/SECURITY.md).
 :::
+</div>
 ::::
+</div>
 
 :::details
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div itemprop="name">
+
 ### How can I request a feature?
+</div>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
 
 Wasabi is a quite beautiful piece of software already.
 Yet there are also 1001 things that could be just a little better, or even quite substantially superior.
@@ -119,10 +181,18 @@ If no, then please consider to [open a new issue](https://github.com/zkSNACKs/Wa
 It makes sense to first explain the problem you have in the incumbent version of Wasabi, this is the place to express your frustrations and annoyances.
 Then describe the solution that you have envisioned, with all the nuances and details of how this would fix your problem.
 To flesh our your argument, please consider alternatives and different approaches to this feature request.
+</div>
 :::
+</div>
 
 :::details
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div itemprop="name">
+
 ### How can I get help and support?
+</div>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
 
 You are already on the right track by first checking [this documentation](https://docs.wasabiwallet.io) for the knowledge you are seeking.
 It's likely that you are not the first peer who has an issue and question, and hopefully one has curated the answer in here already.
@@ -130,10 +200,18 @@ You can use the search function in the top navbar to look for a specific topic, 
 Though often times it is quite useful to start a conversation with other Wasabikas about a specific problem.
 It is useful to reach out to the contributors on [Twitter](https://twitter.com/wasabiwallet), [Reddit](https://old.reddit.com/r/WasabiWallet/), [Riot](https://riot.im/app/#/room/#wasabiwallet:matrix.org) and [Telegram](https://t.me/WasabiWallet).
 If your trouble is specific to the code, then it might also be suitable to check the existing [GitHub issues](https://github.com/zkSNACKs/WalletWasabi/issues/) and open a new one.
+</div>
 :::
+</div>
 
 :::details
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div itemprop="name">
+
 ### What does the Wasabi project need help with?
+</div>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
 
 Wasabi is libre and open source software, thus it relies on the support of several contributors on all fronts.
 Of course, this includes coding new features, bug fixes and stability improvements.
@@ -141,4 +219,6 @@ Yet just equally important is the review of the commits of all other Wasabikas.
 It's not just the contributions to the code, but also to the documentation and the effort to educate peers using Wasabi.
 This includes education in meatspace tribe gatherings, but also in cyberspace peer support.
 So basically, we need help with building and shilling Wasabi!
+</div>
 :::
+</div>
