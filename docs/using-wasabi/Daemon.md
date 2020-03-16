@@ -22,3 +22,10 @@ To start the daemon, in the command line type:
 `--mixall` will mix each coin in the wallet at least once and until the anonymity set target is reached.
 `--keepalive` will keep the daemon running after all coins are mixed, and continue mixing as soon as new coins are send to the wallet.
 `--help` shows the manpage.
+
+To use Wasabi's command line tools on Windows you have to use `wassabeed.exe` that is inside your `Program Files\WasabiWallet` folder.
+So the command should be:
+
+```
+wassabeed mix --wallet:MyWalletName --keepalive
+```
