@@ -104,7 +104,7 @@ The coins you will receive after the JoinMarket tumbling algorithm will have a s
 The Lightning Network can be a very private way of sending bitcoin, and you can choose the channel size to be exactly the size of your change coin.
 However, it is very important that you do not link this non-private coin to your main Lightning node public key.
 
-So, a good strategy is to create a new Lightning node and public key, send the whole change coin into this fresh wallet, and open a channel of this amount to a random peer on the network.
+So, a good strategy is to create a new Lightning node and public key, send the whole change coin into this fresh wallet, and open a private channel of this amount to a random peer on the network.
 Then route a payment either to a merchant for goods and services, or to your own main Lightning node for further use.
 
 After the balance of the channel is entirely on the other side, cooperatively close the channel with your peer, so that he gets the only output in the closing transaction.
