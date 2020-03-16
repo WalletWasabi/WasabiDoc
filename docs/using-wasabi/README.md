@@ -52,6 +52,7 @@ Further tutorials about the different parts of the wallet, for newbies and power
 - [Lock Screen](/using-wasabi/LockScreen.md)
 - [Password Best Practices](/using-wasabi/PasswordBestPractices.md)
 - [Supported BIPs](/using-wasabi/BIPs.md)
+- [Supported Industry Standards](/using-wasabi/IndustryStandards.md)
 
 ### Research
 - [JoinMarket](/using-wasabi/Joinmarket.md)
