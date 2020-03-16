@@ -4,13 +4,20 @@
   "description": "Frequently asked questions about the nuances of privacy in Bitcoin in general. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
 }
 ---
+<div itemscope itemtype="https://schema.org/FAQPage">
 
 # General Bitcoin Privacy
 
 ## Why Privacy matters
 
 ::::details
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div itemprop="name">
+
 ### I have nothing to hide, do I still need financial privacy?
+</div>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
 
 What did you say to your spouse in bed last night?
 How much money did you earn last month?
@@ -23,34 +30,66 @@ It's not that I have nothing to hide, it's that I have nothing to share.
 There are many tasks in everyday life that are simply none of your business.
 Knowledge you choose not to share with others, things you only tell one individual, actions that you do while nobody is watching.
 How much money you earn, and where you spend it, is only your business, and of no concern to most other individuals.
+</div>
 ::::
+</div>
 
 :::details
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div itemprop="name">
+
 ### How is financial privacy an essential element to fungibility in Bitcoin?
+</div>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
 
 If you can meaningfully distinguish one coin from another, then their fungibility is weak.
 If our fungibility is too weak in practice, then we cannot be decentralized: if someone important announces a list of stolen coins they won't accept coins derived from, you must carefully check coins you receive against that list and return the ones that fail.
 Everyone gets stuck checking blacklists issued by various authorities because in that world we'd all not like to get stuck with bad coins.
 This adds friction and transactional costs and makes Bitcoin less valuable as a money.
+</div>
 :::
+</div>
 
 :::details
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div itemprop="name">
+
 ### How is financial privacy essential for entrepreneurs?
+</div>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
 
 If you run a business, you cannot effectively set prices if your suppliers and customers can see all your transactions against your will.
 You cannot compete effectively if your competition is tracking your sales.
 Individually your informational leverage is lost in your private dealings if you don't have privacy over your accounts: if you pay your landlord in Bitcoin without enough privacy in place, your landlord will see when you've received a pay raise and can hit you up for more rent.
+</div>
 :::
+</div>
 
 :::details
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div itemprop="name">
+
 ### How is financial privacy essential for personal safety?
+</div>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
 
 If thieves can see your spending, income, and holdings, they can use that information to target and exploit you.
 Without privacy, malicious parties have more ability to steal your identity, snatch your large purchases off your doorstep, or impersonate businesses you transact with towards you... they can tell exactly how much to try to scam you for.
+</div>
 :::
+</div>
 
 :::details
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div itemprop="name">
+
 ### How is financial privacy essential for human dignity?
+</div>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
 
 No one wants the snotty barista at the coffee shop or their nosy neighbors commenting on their income or spending habits.
 No one wants their baby-crazy in-laws asking why they're buying contraception (or sex toys).
@@ -60,12 +99,20 @@ Only in a perfectly enlightened discrimination free world where no one has undue
 Most importantly, financial privacy isn't incompatible with things like law enforcement or transparency.
 You can always keep records, be ordered (or volunteer) to provide them to whomever, have judges hold against your interest when you can't produce records (as is the case today).
 None of this requires globally visible public records.
+</div>
 :::
+</div>
 
 ## The Privacy of Bitcoin
 
 :::details
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div itemprop="name">
+
 ### How is Bitcoin good in terms of privacy?
+</div>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
 
 Privacy in traditional banking is guaranteed by the institutions that make up the system, such as banks, credit card companies, and governments.
 They (try to) ensure that your bank balance stays a secret.
@@ -75,10 +122,18 @@ Instead, in Bitcoin pseudonyms protect your identity.
 In the Bitcoin ecosystem, everyone can see the history of every account balance, but they cannot see who controls an account.
 All addresses and transactions are recorded in Bitcoin’s publicly distributed database, the blockchain.
 The addresses do not have names or IP addresses attached to them, so it is not always possible to know which transaction belongs to which individual.
+</div>
 :::
+</div>
 
 :::details
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div itemprop="name">
+
 ### How is Bitcoin bad in terms of privacy?
+</div>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
 
 Bitcoin is by default a transparent system, in which every piece of information is available to the public.
 As such, every Bitcoin user requires some level of protection.
@@ -106,10 +161,18 @@ This is why making lots of transactions increases your anonymity in the Bitcoin 
 Similarly, if you receive 0.5 bitcoin but want to spend 1 bitcoin, you need to own additional Bitcoin addresses with a combined value of at least 0.5 bitcoin in them.
 Again it’s a 50% guess, but now you have one extra publicly visible Bitcoin address.
 Having publicly visible Bitcoin addresses could make it easier to find out your identity.
+</div>
 :::
+</div
 
 :::details
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div itemprop="name">
+
 ### What financial privacy does Bitcoin promise?
+</div>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
 
 Globally visible public records in finance are completely unheard-of.
 They are undesirable and arguably intolerable.
@@ -119,10 +182,18 @@ It didn't.
 The white paper even has a section on privacy.
 It's incorrect to say that Bitcoin isn't focused on privacy.
 Sufficient privacy is an essential prerequisite for a viable digital currency.
+</div>
 :::
+</div>
 
 ::::details
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div itemprop="name">
+
 ### Why is it important to run a full node?
+</div>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
 
 :::tip
 Not your node ~ not your rules
@@ -132,20 +203,36 @@ When you download and install [bitcoind](https://github.com/bitcoin/bitcoin), yo
 Then you call out to other nodes on the internet and only connect to the peers who have agreed to play by the same rules.
 All those who break your own rules, you simply disconnect and ignore.
 Your full node defines, verifies and enforces the sound money you use to store your value.
+</div>
 ::::
+</div>
 
 :::details
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div itemprop="name">
+
 ### How does a full node protect my privacy?
+</div>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
 
 When you run your own full node, then on your local computer you can verify exactly if the bitcoin you receive are actually valid.
 When you do not verify this for yourself, then you need to ask another trusted third party how much money you have.
 Regardless how you ask this other server, there is now more metadata available to potentially link your coins to your identity.
 There are bad ways to communicate, like querying a block explorer over clearnet, and good ways to communicate, like using [BIP 158](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients) block filters over Tor.
 But regardless, running your own full node means that you don't need to communicate with anyone about your specific coins and this is strictly better.
+</div>
 :::
+</div>
 
 :::details
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div itemprop="name">
+
 ### How can I setup a full node?
+</div>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
 
 Starting with v1.1.10 release, Wasabi comes pre-installed with bitcoind from [Bitcoin Core](https://bitcoincore.org/) and it can be started on the same desktop or laptop computer with just one click.
 This is likely the most convenient solution for Wasabikas.
@@ -158,10 +245,18 @@ Instead, if you prefer to use some dedicated hardware solutions, these are some 
 - [Nodl](https://www.nodl.it/), works out of the box and runs on a powerful Rockchip CPU
 - [myNode](https://mynodebtc.com/), a DIY project with optional paid versions
 - [Casa](https://keys.casa/lightning-bitcoin-node/), works out of the box on the Raspberry platform
+</div>
 :::
+</div
 
 :::details
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div itemprop="name">
+
 ### Why is it important to use a new address for every payment?
+</div>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
 
 Addresses being used more than once is very damaging to privacy because that links together more blockchain transactions with proof that they were created by the same entity.
 The most private and secure way to use bitcoin is to send a brand new address to each person who pays you.
@@ -174,20 +269,35 @@ A better name would be something like "bitcoin invoice".
 
 Bitcoin isn't anonymous but pseudonymous, and the pseudonyms are bitcoin addresses.
 Avoiding address reuse is like throwing away a pseudonym after it has been used.
+</div>
 :::
+</div>
 
 :::details
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div itemprop="name">
+
 ### What is a CoinJoin Sudoku?
+</div>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
 
 CoinJoin Sudoku is a type of intra-transaction analysis attack on CoinJoin transactions that aims to link inputs and outputs together based on their combinatorial sums.
 You can read more about CoinJoin Sudoku [here](https://www.coinjoinsudoku.com/advisory/).
+</div>
 :::
-
+</div>
 
 ## The Privacy of Tor
 
 :::details
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div itemprop="name">
+
 ### How does Tor protect my network-level privacy?
+</div>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
 
 When you make a Bitcoin transaction, you are essentially creating a message on your phone or computer and sending it to the Bitcoin network.
 Someone operating a large number of nodes on the Bitcoin network might be able to match some of your transactions to your IP address, then deanonymize your stack of bitcoin.
@@ -200,10 +310,18 @@ Route everything through Tor by default.
 
 It is also good practice to route your chats through the Tor network.
 You can also configure many cloud storage providers in this way.
+</div>
 :::
+</div>
 
 ::::details
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div itemprop="name">
+
 ### My country/ISP is blocking/censoring Tor, how can I use Wasabi with Tor bridges?
+</div>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
 
 Tor bridges, also called Tor bridge relays, are alternative entry points to the Tor network that are not all listed publicly.
 If you suspect your access to the Tor network is being blocked, you may want to use bridges.
@@ -256,4 +374,8 @@ ServerTransportPlugin obfs4 exec /usr/bin/obfs4proxy
 ```
 6. Restart Tor with `sudo service tor restart` and check logs with `sudo tail -f /var/log/tor/log` to verify that everything is working properly
 
+</div>
 ::::
+</div>
+
+</div>
