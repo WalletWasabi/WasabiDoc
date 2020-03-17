@@ -18,16 +18,16 @@ Their business model is usually to sell the data to any governments, corporation
 There are a number of techniques probably used by transaction surveillance companies:
 
 ### AML/KYC information
-Many bitcoin exchanges require users to undergo Anti-Money Laundering (AML) Know-Your-Customer (KYC) checks, which requires users to reveal all kinds of invasive personal information such as their real name, residence, occupation, net worth and income.
+Many bitcoin exchanges require users to undergo Anti-Money Laundering (AML) and Know-Your-Customer (KYC) checks, which requires users to reveal all kinds of invasive personal information such as their real name, residence, occupation, net worth and income.
 All this information is usually passed onto the exchange's partner transaction surveillance company, which keeps a database linking the victim's personal information with their bitcoin addresses and transactions.
 
 ### Blockchain analysis
 Bitcoin on-chain transactions are visible to all and so can be analyzed.
-Important techniques are the common-input-ownership heuristic and address reuse.
+Important techniques are the [common-input-ownership](/FAQ/FAQ-UseWasabi.md#why-is-coin-control-so-important) heuristic and [address reuse](/why-wasabi/AddressReuse.md).
 
 ### Wallet synchronization analysis
 Bitcoin lightweight wallets often download their own history and balance by querying a third-party server.
-Transaction surveillance companies often try to exploit this to learn which addresses and transactions belong to certain wallets.
+Transaction surveillance companies often try to exploit this to learn which addresses and transactions belong to certain wallets and IPs.
 The companies have been known to collect [BIP 37](/using-wasabi/BIPs.md#bip-37-connection-bloom-filtering) filters from BIP37-enabled wallets.
 They almost-certainly also run many Electrum servers which can spy on any Electrum wallet that connects to them.
 

@@ -55,7 +55,7 @@ For an in depth guide for [Debian and Ubuntu](/using-wasabi/InstallPackage.md#de
 :::details
 ### How do I install Wasabi on Debian and Ubuntu?
 
-[Download](/FAQ-Installation.md#where-can-i-download-wasabi) the most recent `.deb` package and the `.deb.asc` signature file from the [wasabiwallet.io](https://wasabiwallet.io) or the [tor hidden service](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion).
+[Download](/FAQ/FAQ-Installation.md#where-can-i-download-wasabi) the most recent `.deb` package and the `.deb.asc` signature file from the [wasabiwallet.io](https://wasabiwallet.io) or the [tor hidden service](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion).
 
 ![](/DownloadDeb.png)
 
@@ -200,20 +200,6 @@ And on Mac first unzip with
 and verify with
 <br />
 `git diff --no-index osx-x64/ WasabiOsx/Wasabi\ Wallet.App/Contents/MacOS/`.
-:::
-
-:::details
-### How can I install Wasabi headless daemon without GUI?
-
-To use Wasabi's command line tools on Windows you have to use `wassabeed.exe` that is inside your `Program Files\WasabiWallet`.
-On Linux and macOS you can use the same software that you use for launching the GUI (`wassabee`).
-Let us start giving a glance to the command `help`:
-`$ wassabee run help`
-
-One can run it with the same command: `wassabee mix --wallet WalletName`.
-Optionally you can add a `--keepalive` flag that will make sure your daemon will run forever and mixes forever.
-On Linux and macOS you can just add some parameters to the Wasabi executable and it'll act like a daemon, on Windows you have to use `wassabeed.exe` from Program Files.
-You may want to start with `--help`.
 :::
 
 ::::details

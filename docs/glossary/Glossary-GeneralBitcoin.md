@@ -195,7 +195,7 @@ Input, transaction input, or TxIn is an input in a Bitcoin transaction which con
 
 Lightning Network is a proposed implementation of Hashed Timelock Contracts (HTLCs) with bi-directional payment channels which allows payments to be securely routed across multiple peer-to-peer payment channels.
 This allows the formation of a network where any peer on the network can pay any other peer even if they don't directly have a channel open between each other.
-Read more: [Use Lightning](/why-wasabi/10Commandments.md#_10-use-lightning)
+Read more: [Use Lightning](/using-wasabi/10Commandments.md#_10-use-lightning)
 :::
 
 :::details

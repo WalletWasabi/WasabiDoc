@@ -40,7 +40,7 @@ The zkSNACKs server has to be trusted to serve correct filters, until [BIP 157 c
 If a full node is connected to Wasabi, then the relevant block is fetched from this trusted node, and not from a random P2P node.
 Wasabi also queries if your local mempool has unconfirmed transactions that are of interest to you.
 Further, your full node is used to estimate the current mining fee level based on the bitcoind `smartfee` algorithm.
-Your full node is not used to broadcast your transactions, as this is done through a random peer-to-peer node with a new tor identity, which is better for your [network level privacy](/using-wasabi/NetworkLevelPrivacy.md).
+Your full node is not used to broadcast your transactions, as this is done through a random peer-to-peer node with a new tor identity, which is better for your [network level privacy](/why-wasabi/NetworkLevelPrivacy.md).
 
 ## bitcoind within Wasabi
 
