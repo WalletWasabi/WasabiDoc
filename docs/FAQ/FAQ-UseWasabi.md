@@ -252,20 +252,6 @@ Yes.
 Wasabi is a hybrid, if your node doesn't have a block, then it acquires it from someone else.
 :::
 
-:::details
-### In Tor Browser, the guard node remains the same for a long time, does Wasabi use the same approach?
-
-Yes.
-Circuits are constantly changing meanwhile the guard node remains the same.
-
-Wasabi just asks Tor to use a new stream with every request.
-The Tor stream concept is an abstraction around Tor circuits so, new stream means new circuit.
-However, most of the times, the new circuit uses the same entry router (guard onion router) because in that way the entry point is already connected and handshaked what is expensive.
-
-However, remember that Wasabi never leaves Tor, so there are no exit nodes. 
-
-:::
-
 ## Receive
 
 @[youtube](9i7CceIdFg4)
