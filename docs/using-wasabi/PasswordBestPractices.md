@@ -133,7 +133,7 @@ From that, we can now calculate that, in order to get the same level of entropy 
 
 ### How much entropy is needed
 
-Entropy matters because it allows one to compare the required `search-space` of a potential password with the `search-speed` known to be availble to various potential adversaries.
+Entropy matters because it allows one to compare the required `search-space` of a potential password with the `search-speed` known to be available to various potential adversaries.
 In doing so, it is possible to then know how long it would take an adversary with known resources to attempt every mathematically possible password or passphrase for a given level of entropy.
 
 Edward Snowden revealed in 2013 that the NSA had the ability to guess passwords at a rate of 1 trillion guesses/second.
