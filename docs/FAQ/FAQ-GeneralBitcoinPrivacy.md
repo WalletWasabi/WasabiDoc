@@ -28,6 +28,7 @@ How much money you earn, and where you spend it, is only your business, and of n
 :::details
 ### How is financial privacy an essential element to fungibility in Bitcoin?
 
+Fungability is the possibility for an individual receiving bitcoin to safely ignore any connection between this bitcoin and any particular individual or use case it interacted with in the past.
 If you can meaningfully distinguish one coin from another, then their fungibility is weak.
 If our fungibility is too weak in practice, then we cannot be decentralized: if someone important announces a list of stolen coins they won't accept coins derived from, you must carefully check coins you receive against that list and return the ones that fail.
 Everyone gets stuck checking blacklists issued by various authorities because in that world we'd all not like to get stuck with bad coins.
@@ -45,8 +46,10 @@ Individually your informational leverage is lost in your private dealings if you
 :::details
 ### How is financial privacy essential for personal safety?
 
-If thieves can see your spending, income, and holdings, they can use that information to target and exploit you.
-Without privacy, malicious parties have more ability to steal your identity, snatch your large purchases off your doorstep, or impersonate businesses you transact with towards you... they can tell exactly how much to try to scam you for.
+If thieves can see your income, holdings, and spending, they can use this information to target and exploit you.
+Without privacy, malicious parties have more ability to steal your identity, snatch your large purchases off your doorstep, or impersonate businesses you transact with towards you.
+They can tell exactly how much to try to scam you for.
+If thiefs don't know how much bitcoin you have, then they don't know if you are worth the effort to attack.
 :::
 
 :::details
@@ -83,42 +86,25 @@ The addresses do not have names or IP addresses attached to them, so it is not a
 Bitcoin is by default a transparent system, in which every piece of information is available to the public.
 As such, every Bitcoin user requires some level of protection.
 Anyone with substantial wealth in Bitcoin would not want to advertise their funds to every person they transact with, for obvious reasons.
-But every time you spend just a tiny portion of your Bitcoin wallet, you reveal your wealth to the other party.
+But every time you spend just a tiny portion of your Bitcoin wallet, you might reveal your wealth to the other party.
 Doing that on the internet is like flashing large stacks of cash in a dark back alley, so obviously it’s not advisable!
 A criminal might see how much you have and decide to come after it.
-Distributing your wealth between several wallets and using a different address for each transaction is a common practice that prevents others from knowing how much Bitcoin you have.
+Distributing your wealth between several coins and using a different address for each transaction is a common practice that prevents others from knowing how much Bitcoin you have.
 
 Each Bitcoin transaction contains at least one input (where the Bitcoin are from) and at least one output (where the Bitcoin are being sent).
 This means that once a single address is known, there is a trail to follow the Bitcoin.
 
-Another characteristic of Bitcoin transactions is that they always need to match the previous transaction.
-If you previously received 1 bitcoin, but you only want to spend 0.4 bitcoin, you will first need to make a transaction where 1 bitcoin will leave your account.
+Another characteristic of Bitcoin transactions is that the value of the input always need to match the value of the previous transaction output.
+If you previously received 1 bitcoin, but you only want to spend 0.4 bitcoin, you will first need to make a transaction where 1 bitcoin is spent.
 0.4 bitcoin will go as payment, then 0.6 bitcoin will return to you as change.
 Your Bitcoin wallet will handle this process automatically, but it is important to understand the principle in order to use it anonymously.
 
-The owner of the original Bitcoin doesn’t know what you did with the money, but they can see the amounts involved.
-They can see two transactions on your account: one for 0.4 bitcoin and one for 0.6 bitcoin.
-They cannot see which was the purchase and which is the “change,” but it’s a 50% guess.
-The next time you make a transaction, it’s a 25% guess and so on.
+The owner of the original Bitcoin doesn't necessarily know whom you paid the money, but they can see the amounts and addresses involved.
+They can see two outputs of the transaction: one worth 0.4 bitcoin and one worth 0.6 bitcoin.
+They might not know for certain which was the purchase and which is the change, but they can apply heuristics to estimate it.
 
-This is why making lots of transactions increases your anonymity in the Bitcoin network (as long as you [don't reuse addresses](/why-wasabi/AddressReuse.md)!).
-
-Similarly, if you receive 0.5 bitcoin but want to spend 1 bitcoin, you need to own additional Bitcoin addresses with a combined value of at least 0.5 bitcoin in them.
-Again it’s a 50% guess, but now you have one extra publicly visible Bitcoin address.
-Having publicly visible Bitcoin addresses could make it easier to find out your identity.
-:::
-
-:::details
-### What financial privacy does Bitcoin promise?
-
-Globally visible public records in finance are completely unheard-of.
-They are undesirable and arguably intolerable.
-The Bitcoin white paper made a promise of how we could get around the visibility of the ledger with pseudonymous addresses, but the ecosystem has broken that promise in a bunch of places and we ought to fix it.
-Bitcoin could have coded your name or IP address into every transaction.
-It didn't.
-The white paper even has a section on privacy.
-It's incorrect to say that Bitcoin isn't focused on privacy.
-Sufficient privacy is an essential prerequisite for a viable digital currency.
+Similarly, if you receive 0.5 bitcoin but want to spend 1 bitcoin, you need to own additional coins with a combined value of at least 0.5 bitcoin in them.
+When spending two coins within one transaction, it is often assumed that both of these belong to the same entity, this is the common input ownership heuristic.
 :::
 
 ::::details
@@ -129,7 +115,7 @@ Not your node ~ not your rules
 :::
 
 When you download and install [bitcoind](https://github.com/bitcoin/bitcoin), you define the precise rules of your monetary system.
-Then you call out to other nodes on the internet and only connect to the peers who have agreed to play by the same rules.
+Then you call out to other nodes and only connect to the peers who have agreed to play by the same rules.
 All those who break your own rules, you simply disconnect and ignore.
 Your full node defines, verifies and enforces the sound money you use to store your value.
 ::::
@@ -147,7 +133,7 @@ But regardless, running your own full node means that you don't need to communic
 :::details
 ### How can I setup a full node?
 
-Starting with v1.1.10 release, Wasabi comes pre-installed with bitcoind from [Bitcoin Core](https://bitcoincore.org/) and it can be started on the same desktop or laptop computer with just one click.
+Starting with v1.1.10 release, Wasabi comes [pre-installed with bitcoind](/using-wasabi/BitcoinFullNode.md) from [Bitcoin Core](https://bitcoincore.org/) and it can be started on the same desktop or laptop computer with just one click.
 This is likely the most convenient solution for Wasabikas.
 
 There are also other node implementations different from Bitcoin Core, such as [Bitcoin Knots](https://github.com/bitcoinknots/bitcoin/) or [Libbitcoin](https://github.com/libbitcoin/libbitcoin-node), that could be used as well.
@@ -165,8 +151,8 @@ Instead, if you prefer to use some dedicated hardware solutions, these are some 
 
 Addresses being used more than once is very damaging to privacy because that links together more blockchain transactions with proof that they were created by the same entity.
 The most private and secure way to use bitcoin is to send a brand new address to each person who pays you.
-After the received coins have been spent, the address should never be used again.
-Also, a brand new bitcoin address should be demanded when sending bitcoin.
+After an address has received a coin, it should never be used again.
+Also, a brand new bitcoin address should be demanded from the recipient when sending bitcoin.
 Wasabi has a user interface which discourages address reuse by removing from the GUI addresses which have received a coin.
 
 It has been argued that the phrase "bitcoin address" was a bad name for this object because it implies it can be reused like an email address.
@@ -238,13 +224,13 @@ Feel free to edit these commands according to your distribution.
 1. Get [Tor Bridges](https://bridges.torproject.org/bridges)
 2. Install Tor daemon with `sudo apt-get install tor`
 3. Install OBFS4 support (needed to connect to bridges), by editing your `/etc/apt/sources.list` and adding this line:
-```
+```sh
 # Tor Bridges
 deb http://deb.torproject.org/torproject.org obfs4proxy main
 ```
 4. Update package list with `sudo apt-get update` and install OBFS4 with `sudo apt-get install obfs4proxy`
 5. Configure Tor by editing your `/etc/tor/torrc` file and adding these lines:
-```
+```sh
 UseBridges 1
 
 # Do not use the following bridges, instead use the ones you get in Step 1!
