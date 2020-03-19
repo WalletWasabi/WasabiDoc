@@ -28,7 +28,7 @@ How much money you earn, and where you spend it, is only your business, and of n
 :::details
 ### How is financial privacy an essential element to fungibility in Bitcoin?
 
-Fungability is the possibility for an individual receiving bitcoin to safely ignore any connection between this bitcoin and any particular individual or use case it interacted with in the past.
+Fungibility is the possibility for an individual receiving bitcoin to safely ignore any connection between this bitcoin and any particular individual or use case it interacted with in the past.
 If you can meaningfully distinguish one coin from another, then their fungibility is weak.
 If our fungibility is too weak in practice, then we cannot be decentralized: if someone important announces a list of stolen coins they won't accept coins derived from, you must carefully check coins you receive against that list and return the ones that fail.
 Everyone gets stuck checking blacklists issued by various authorities because in that world we'd all not like to get stuck with bad coins.
@@ -86,25 +86,25 @@ The addresses do not have names or IP addresses attached to them, so it is not a
 Bitcoin is by default a transparent system, in which every piece of information is available to the public.
 As such, every Bitcoin user requires some level of protection.
 Anyone with substantial wealth in Bitcoin would not want to advertise their funds to every person they transact with, for obvious reasons.
-But every time you spend just a tiny portion of your Bitcoin wallet, you might reveal your wealth to the other party.
+But every time you spend just a tiny portion of your bitcoin, you might reveal your wealth to the other party.
 Doing that on the internet is like flashing large stacks of cash in a dark back alley, so obviously it’s not advisable!
 A criminal might see how much you have and decide to come after it.
-Distributing your wealth between several coins and using a different address for each transaction is a common practice that prevents others from knowing how much Bitcoin you have.
+Distributing your wealth between several wallets and using a different address for each transaction is a common practice that prevents others from knowing how much bitcoin you have.
 
 Each Bitcoin transaction contains at least one input (where the Bitcoin are from) and at least one output (where the Bitcoin are being sent).
 This means that once a single address is known, there is a trail to follow the Bitcoin.
 
-Another characteristic of Bitcoin transactions is that the value of the input always need to match the value of the previous transaction output.
-If you previously received 1 bitcoin, but you only want to spend 0.4 bitcoin, you will first need to make a transaction where 1 bitcoin is spent.
+Another characteristic of Bitcoin transactions is that the value of the input always needs to match the value of the previous transaction output.
+If you previously received 1 bitcoin, and you want to spend 0.4 bitcoin, the transaction needs to spend the whole 1 bitcoin.
 0.4 bitcoin will go as payment, then 0.6 bitcoin will return to you as change.
 Your Bitcoin wallet will handle this process automatically, but it is important to understand the principle in order to use it anonymously.
 
-The owner of the original Bitcoin doesn't necessarily know whom you paid the money, but they can see the amounts and addresses involved.
+The owner of the original bitcoin doesn't know whom you paid the money or what you did with it, but they can see the amounts and addresses involved.
 They can see two outputs of the transaction: one worth 0.4 bitcoin and one worth 0.6 bitcoin.
-They might not know for certain which was the purchase and which is the change, but they can apply heuristics to estimate it.
+They might not know for certain which is the purchase and which is the change, but they can apply heuristics to estimate it.
 
 Similarly, if you receive 0.5 bitcoin but want to spend 1 bitcoin, you need to own additional coins with a combined value of at least 0.5 bitcoin in them.
-When spending two coins within one transaction, it is often assumed that both of these belong to the same entity, this is the common input ownership heuristic.
+When spending two coins within one transaction, it is often assumed that both of these coins belong to the same entity, this is the common input ownership heuristic.
 :::
 
 ::::details
