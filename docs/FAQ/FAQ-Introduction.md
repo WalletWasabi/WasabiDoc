@@ -27,8 +27,8 @@ Wasabi is a tool for everyone.
 :::details
 ### What is a CoinJoin?
 
-A mechanism by which multiple participants combine many individual transactions into one large transaction with multiple inputs and multiple outputs.
-Because a CoinJoin creates equal value outputs, an observer cannot determine which output belongs to which input, and neither can the participants themselves.
+A mechanism by which multiple participants combine their coins (or UTXOs, to be more precise) into one large transaction with multiple inputs and multiple outputs.
+An observer cannot determine which output belongs to which input, and neither can the participants themselves.
 This makes it difficult for outside parties to trace where a particular coin originated from and where it was sent to (as opposed to regular bitcoin transactions, where there is usually one sender and one receiver).
 
 This can be done with non-custodial software like Wasabi that eliminates the risk of funds disappearing or being stolen.
@@ -46,7 +46,7 @@ See also the [Bitcoin Wiki on CoinJoins](https://en.bitcoin.it/wiki/CoinJoin)
 No, Wasabi's CoinJoin implementation is trustless by design.
 The participants do not need to trust each other or any third party.
 Both the sending address (the CoinJoin input) and the receiving address (the CoinJoin output) are controlled by your own private keys.
-Wasabi merely coordinates the process of combining the many individual transactions of the participants into one single transaction, but the coordinator can neither steal your coins, nor figure out which outputs belong to which inputs (look up “[Chaumian CoinJoin](/using-wasabi/CoinJoin.md)” if you want to know more).
+The server merely coordinates the process of combining the inputs of the participants into one single transaction, but the wallet can neither steal your coins, nor figure out which outputs belong to which inputs (look up “[Chaumian CoinJoin](/using-wasabi/CoinJoin.md)” if you want to know more).
 :::
 
 :::details
@@ -57,10 +57,10 @@ There are some ways how you can unintentionally undo the mixing by being careles
 For example, if you have a coin on a specific address before the CoinJoin, and you send bitcoin after a CoinJoin onto this same address, then anyone can see that both coins are controlled by the same entity.
 [Address reuse](/why-wasabi/AddressReuse.md) is very bad for your privacy.
 Another deanonymizing scenario happens when you combine mixed outputs with unmixed ones when sending: a third party will be able to make the connection between them as belonging to the same sender.
-This is why you need to be careful with [change coins](/using-wasabiChangeCoins.md).
+This is why you need to be careful with [change coins](/using-wasabi/ChangeCoins.md).
 
 The practice of being careful with your post-mix outputs is commonly facilitated through coin control, which is the default way of interacting with the wallet.
-Find out more about coin control it [here](/why-wasabi/Coins.md).
+Find out more about coin control in [here](/why-wasabi/Coins.md).
 :::
 
 :::details
@@ -212,7 +212,7 @@ Therefore there will always be need for on-chain privacy.
 Ideal fungibility requires every Bitcoin transaction to be indistinguishable from each other, but it is an unrealistic goal.
 ZeroLink's objective is to break all links between separate sets of coins.
 ZeroLink presents a wallet privacy framework coupled with Chaumian CoinJoin, which was first introduced in 2013 by Gregory Maxwell.
-A mixing round runs within seconds, its anonymity set can go beyond a single CoinJoin transaction's if needed, and its denial of service resilience is based on a transaction fee environment.
+A mixing round runs within seconds, and through remixing its anonymity set can go beyond a single CoinJoin transaction's.
 Hopefully, ZeroLink will enable the usage of Bitcoin in a fully anonymous way for the first time.
 
 ZeroLink defines a pre-mix and a post-mix wallet and a mixing technique.
