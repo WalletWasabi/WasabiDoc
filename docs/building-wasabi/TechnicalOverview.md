@@ -199,7 +199,7 @@ After a mix has successfully executed, the resulting CoinJoin transaction will l
 
 ![](/TXCoinJoin.png)
 
-Wasabi also has a Tor website where one can see real-time statistics about the mixes: [wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion/)
+Wasabi also has a Tor website where one can see real-time statistics about the mixes: [${wasabiHiddenService}](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion/)
 
 To this day, Wasabi's CoinJoins have created >22941 BTC outputs with equal value.
 
