@@ -211,6 +211,7 @@ And on Mac first unzip and verify with
 7z x Wasabi-${currentVersion}.dmg -o WasabiOsx
 git diff --no-index osx-x64/ WasabiOsx/Wasabi\ Wallet.App/Contents/MacOS/
 ```
+:::
 
 ::::details
 ### My antivirus marks Wasabi Wallet as a virus. Am I downloading the right software?
