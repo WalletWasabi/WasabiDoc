@@ -90,7 +90,7 @@ The Wasabi package is signed and automatically verified on Windows when you inst
 
 ![](/InstallWindowsSignature.png)
 
-Optionally, you can still verify the PGP signature of the package with with `right click on the signature file > More GpgEX options > Verify` and ensure the software was signed by zkSNACKs' PGP public key [${zksnacksPublicKeyFingerprint}](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt).
+Optionally, you can still verify the PGP signature of the package with `right click on the signature file > More GpgEX options > Verify` and ensure the software was signed by zkSNACKs' PGP public key [${zksnacksPublicKeyFingerprint}](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt).
 Now install Wasabi with double clicking the `.msi` file.
 Checkout the main documentation for a [step-by-step guide](/using-wasabi/InstallPackage.md#windows).
 :::
@@ -104,7 +104,7 @@ Checkout the main documentation for a [step-by-step guide](/using-wasabi/Install
 
 The Wasabi package is signed and automatically verified on macOS when you install it.
 
-Optionall, you can still verify the PGP signature of the package with with `sudo gpg2 --verify Wasabi-${currentVersion}.dmg.asc` and ensure the software was signed by zkSNACKs' PGP public key [${zksnacksPublicKeyFingerprint}](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt).
+Optionall, you can still verify the PGP signature of the package with `sudo gpg2 --verify Wasabi-${currentVersion}.dmg.asc` and ensure the software was signed by zkSNACKs' PGP public key [${zksnacksPublicKeyFingerprint}](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt).
 Now install Wasabi with double clicking the `.dmg` file.
 Checkout the main documentation for a [step-by-step guide](/using-wasabi/InstallPackage.md#mac).
 
@@ -133,7 +133,6 @@ It will also be announced on [Twitter](https://twitter.com/wasabiwallet), [Reddi
 
 You can download the software build for the different operating systems on the main [website](https://wasabiwallet.io) or better over [Tor](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion).
 Make sure you also download the signatures of the build and verify them with [zkSNACKs' PGP public key](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt).
-To update Wasabi, install the new version the same way as usual, it will replace the old version.
 For step-by-step instructions, follow [this guide](/using-wasabi/InstallPackage.md) or [see this video](https://youtu.be/DUc9A76rwX4).
 :::
 
@@ -147,7 +146,7 @@ If you do already have Tor, and it is running, then Wasabi will try to use that 
 You can turn off Tor in the Settings.
 Be careful, as this will compromise your privacy.
 When you CoinJoin over clearnet, the coordinator would know the links between your inputs and outputs based on your IP address.
-When you broadcast a transaction ofer clearnet, the connected full node will know the link between your transaction and your IP address.
+When you broadcast a transaction over clearnet, the connected full node will know the link between your transaction and your IP address.
 :::
 
 :::details
@@ -212,16 +211,6 @@ And on Mac first unzip and verify with
 7z x Wasabi-${currentVersion}.dmg -o WasabiOsx
 git diff --no-index osx-x64/ WasabiOsx/Wasabi\ Wallet.App/Contents/MacOS/
 ```
-:::
-
-:::details
-### How can I run Wasabi headless daemon without GUI?
-
-To use Wasabi's command line tools on Windows you have to use `wassabeed.exe` that is inside your `Program Files\WasabiWallet`.
-On Linux and macOS you can use the same software that you use for launching the GUI (`wassabee`).
-One can run it with the same command: `wassabee mix --wallet WalletName`.
-Optionally you can add a `--keepalive` flag that will make sure your daemon will run forever and mixes forever.
-:::
 
 ::::details
 ### My antivirus marks Wasabi Wallet as a virus. Am I downloading the right software?
