@@ -49,7 +49,7 @@ Individually your informational leverage is lost in your private dealings if you
 If thieves can see your income, holdings, and spending, they can use this information to target and exploit you.
 Without privacy, malicious parties have more ability to steal your identity, snatch your large purchases off your doorstep, or impersonate businesses you transact with towards you.
 They can tell exactly how much to try to scam you for.
-If thiefs don't know how much bitcoin you have, then they don't know if you are worth the effort to attack.
+If thieves don't know how much bitcoin you have, then they don't know if you are worth the effort to attack.
 :::
 
 :::details
