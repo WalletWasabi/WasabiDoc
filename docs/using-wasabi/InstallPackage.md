@@ -18,7 +18,7 @@ The package has the binary code that is needed to run the Wasabi Wallet client i
 For compiling the open source code with cutting edge development features, also including the backend server, see this [tutorial here](/using-wasabi/BuildSource.md).
 
 
-Download the packages either from the official [WasabiWallet.io](https://wasabiwallet.io/) clearnet website, or for your privacy's sake, from the official tor hidden service [http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion/](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion/).
+Download the packages either from the official [WasabiWallet.io](https://wasabiwallet.io/) clearnet website, or for your privacy's sake, from the official tor hidden service [${wasabiHiddenService}](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion/).
 
 ![](/DownloadAll.png)
 
