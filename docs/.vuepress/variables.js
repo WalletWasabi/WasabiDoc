@@ -2,7 +2,8 @@
 const variables = {
   currentVersion: '1.1.10.3',
   dotnetVersion: '3.1',
-  zksnacksPublicKeyFingerprint: '6FB3 872B 5D42 292F 5992 0797 8563 4832 8949 861E'
+  zksnacksPublicKeyFingerprint: '6FB3 872B 5D42 292F 5992 0797 8563 4832 8949 861E',
+  wasabiHiddenService: 'http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion/'
 }
 
 module.exports = source =>
