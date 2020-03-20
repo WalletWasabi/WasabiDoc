@@ -46,7 +46,7 @@ See also the [Bitcoin Wiki on CoinJoins](https://en.bitcoin.it/wiki/CoinJoin)
 No, Wasabi's CoinJoin implementation is trustless by design.
 The participants do not need to trust each other or any third party.
 Both the sending address (the CoinJoin input) and the receiving address (the CoinJoin output) are controlled by your own private keys.
-The server merely coordinates the process of combining the inputs of the participants into one single transaction, but the wallet can neither steal your coins, nor figure out which outputs belong to which inputs (look up “[Chaumian CoinJoin](/using-wasabi/CoinJoin.md)” if you want to know more).
+The Wasabi server merely coordinates the process of combining the inputs of the participants into one single transaction, but the Wasabi Wallet can neither steal your coins, nor figure out which outputs belong to which inputs (look up “[Chaumian CoinJoin](/using-wasabi/CoinJoin.md)” if you want to know more).
 :::
 
 :::details
@@ -131,7 +131,7 @@ For chat groups you can find us on [Slack](https://join.slack.com/t/tumblebit/sh
 ### Can the coordinator attack me?
 
 The nature of Wasabi is that you should not need to trust the developers or the Wasabi coordinating server, as you can verify that the code does not leak information to anyone.
-The developers have gone to great lengths in an attempt to ensure that the coordinator cannot steal funds nor harvest information about a link between inputs to outputs.
+The developers have gone to great lengths in an attempt to ensure that the coordinator cannot steal funds nor link inputs to outputs.
 
 The only known possible 'malicious' actions that the server *could* perform are two sides of the same coin;
 - **Blacklisted UTXO's**:
@@ -212,7 +212,6 @@ Therefore there will always be need for on-chain privacy.
 Ideal fungibility requires every Bitcoin transaction to be indistinguishable from each other, but it is an unrealistic goal.
 ZeroLink's objective is to break all links between separate sets of coins.
 ZeroLink presents a wallet privacy framework coupled with Chaumian CoinJoin, which was first introduced in 2013 by Gregory Maxwell.
-A mixing round runs within seconds, and through remixing its anonymity set can go beyond a single CoinJoin transaction's.
 Hopefully, ZeroLink will enable the usage of Bitcoin in a fully anonymous way for the first time.
 
 ZeroLink defines a pre-mix and a post-mix wallet and a mixing technique.
