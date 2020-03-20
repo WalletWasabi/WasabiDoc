@@ -30,9 +30,9 @@ How much money you earn, and where you spend it, is only your business, and of n
 
 Fungibility is the possibility for an individual receiving bitcoin to safely ignore any connection between this bitcoin and any particular individual or use case it interacted with in the past.
 If you can meaningfully distinguish one coin from another, then their fungibility is weak.
-If our fungibility is too weak in practice, then we cannot be decentralized: if someone important announces a list of stolen coins they won't accept coins derived from, you must carefully check coins you receive against that list and return the ones that fail.
+If Bitcoin fungibility is too weak in practice, then it cannot be decentralized: if someone important announces a list of stolen coins they won't accept coins derived from, you must carefully check coins you receive against that list and return the ones that fail.
 Everyone gets stuck checking blacklists issued by various authorities because in that world we'd all not like to get stuck with bad coins.
-This adds friction and transactional costs and makes Bitcoin less valuable as a money.
+This adds friction and transactional costs and makes Bitcoin less valuable as money.
 :::
 
 :::details
