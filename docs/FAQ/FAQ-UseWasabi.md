@@ -56,8 +56,8 @@ To avoid problems, make sure you close Wasabi Wallet before proceeding to rename
 ::::
 
 :::details
-### What type of password is used?
-The password you set is used as a 13th word (passphrase) as described in [BIP 39](/using-wasabi/BIPs.md#bip-39-mnemonic-code-for-generating-deterministic-keys), and is used to encrypt the private key as described in [BIP 38](/using-wasabi/BIPs.md#bip-38-password-protected-private-key) to get an encrypted private key which is stored on the computer.
+### What is the password used for?
+The password you set is used as a 13th word (passphrase) as described in [BIP 39](/using-wasabi/BIPs.md#bip-39-mnemonic-code-for-generating-deterministic-keys), is used to encrypt the private key of the extended private key as described in [BIP 38](/using-wasabi/BIPs.md#bip-38-password-protected-private-key) to get an encrypted private key which is stored on the computer.
 This is the password that will unlock your bitcoin to anyone who has access to the recovery word backup or computer.
 You will need to type in the password before you can spend from Wasabi Wallet.
 So if your backup gets compromised, this password is the only thing protecting your precious sats.
@@ -93,6 +93,7 @@ In order to restore a wallet, you need BOTH the mnemonic words AND the password!
 
 It is a good idea to keep the two in separate analog backups, such as a laminated paper written with pencil.
 In order to defend against nature destroying fragile paper, you can consider stamping the words into metal.
+Use two different backups and locations for the mnemonic and password, because whoever has both [including a physical attacker] has full access to your sats.
 Find a secure physical location to store the backups, maybe a home safe, or an expert security deposit box.
 
 Please see [this great guide](https://github.com/6102bitcoin/FAQ/blob/master/seed.md#3-Storing-your-Seed) on how to properly store your seed.
@@ -154,7 +155,7 @@ Always backup your mnemonic recovery words, and your password in two separate se
 
 [BIP 38](/using-wasabi/BIPs.md#bip-38-password-protected-private-key) is a good standard, a well-tested and very secure way to encrypt a private key.
 It is also implemented in the [NBitcoin library](https://github.com/MetacoSA/NBitcoin), which is used by Wasabi.
-Additionally, there is no standard way (BIP) to encrypt HD wallets.
+Additionally, there is no standard way (BIP) to encrypt HD wallets, and BIP39 also provides brute-force protection.
 :::
 
 :::details
@@ -444,7 +445,7 @@ In this case you have to wait until your transaction is confirmed in a block, an
 Bitcoin uses a system of [inputs and outputs](/why-wasabi/Coins.md) to keep track who owns how many sats.
 Every transaction specifies one or more inputs, the chunk of bitcoin being spent, and one or more outputs, the destination of who receives the bitcoin.
 A coin is also called an unspent transaction output (UTXO), meaning that this output has not been used as the input of a new transaction - it is yet to be spent.
-In order to spend an UTXO, the valid signature and script has to be provided in the transaction.
+In order to spend a UTXO, the valid signature and script has to be provided in the transaction.
 This ensures that only with knowledge of the correct private key can this coin be sent to a new address.
 This chain of links between inputs being spent and outputs being generated is verified by every full node, and stored on the blockchain.
 :::
