@@ -71,7 +71,7 @@ It is **VERY** important to use a [random and long password](/using-wasabi/Passw
 :::
 
 Since it is very difficult for humans to generate true randomness, it is good to use a tool to help find a strong password.
-This can be the [Diceware english wordlist](https://www.eff.org/deeplinks/2016/07/new-wordlists-random-passphrases) for true off-line password.
+This can be the [Diceware english wordlist](https://www.eff.org/deeplinks/2016/07/new-wordlists-random-passphrases) for true off-line password generation.
 A secure password manager software might also be used, but be careful here.
 ::::
 
@@ -187,9 +187,8 @@ Open the `UiConfig.json` file inside your [Wasabi data folder](/FAQ/FAQ-UseWasab
 :::details
 ### What are BIP-158 block filters?
 
-E
 A [BIP-158 block filter](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients) is a data structure that contains a hash of all the addresses referenced in a block.
-It is a lot smaller than the whole block itself.
+It is much smaller than the whole block itself.
 The Wasabi coordinator generates these block filters, and sends them out to any wallet that requests them.
 A wallet client checks locally if the block filter matches any of the addresses in the wallet.
 If not, then the filter is stored for later reference and for syncing new wallets.
@@ -338,8 +337,7 @@ or:
 ### How can I change the label of my receive address?
 
 You can change the label of your receive address in the right click menu by clicking `Change Label`, then type in the new label.
-This is useful for when a new party finds out this address is yours.
-Or when you have generated a receiving address with a specific label, but then the cause for receiving is no longer present.
+This is useful when you have generated a receiving address with a specific label, but then the cause for receiving has changed.
 Take care with whom you have shared this address, because if you send it to several people, they might all send many coins to the same address.
 This is very bad for your privacy because of [address reuse](/why-wasabi/AddressReuse.md), and it confuses you with the labeling of each unique coin.
 
@@ -370,7 +368,7 @@ This is a complete de-anonymization of your entire wallet!!
 :::details
 ### Why does Wasabi only use SegWit bech32 addresses?
 
-Wasabi generates bech32 addresses only, also known as bc1q addresses or native SegWit addresses.
+Wasabi generates bech32 addresses only, also known as `bc1q` addresses or native SegWit addresses.
 These addresses start with the characters `bc1q...`.
 Wasabi was created after the activation of SegWit, and it makes sense to support the most advanced address type, which has numerous benefits.
 For example, due to the malleability fix of SegWit, you can now remix CoinJoin outputs which are currently unconfirmed.
@@ -378,9 +376,9 @@ There are also large savings on mining fees for SegWit transactions.
 :::
 
 :::details
-### A third party service says the Wasabi address is invalid?
+### Why do some third party services say the Wasabi address is invalid?
 
-Some wallets/exchanges do not yet support native SegWit bech32 address and may give an error message (e.g. "unknown bitcoin address").
+Some wallets/exchanges do not yet support native SegWit bech32 addresses and may give an error message (e.g. "unknown bitcoin address").
 Please contact these services to upgrade their infrastructure to support the latest industry standards.
 Wasabi cannot generate non-SegWit addresses, so one solution is to manage your funds with a wallet which does support legacy addresses.
 To check Bech32 adoption and exchange/wallet support you can follow [Bitcoin.it Wiki](https://en.bitcoin.it/wiki/Bech32_adoption) and [When Segwit? website](https://whensegwit.com/#who).
@@ -534,8 +532,8 @@ Essentially, all nearby nodes are passed your transaction, and those nodes will 
 However, if a malicious adversary were to get enough relay nodes in the network, they could pretty easily connect the initial location of a transaction by simply observing from which node the transaction appeared first.
 For this reason, broadcasting transaction through your own node may reveal your IP address.
 
-So to fix this, Wasabi broadcasts your transactions to a random node over Tor, so this node cannot detect your IP address.
-When you want to subsequently send another transaction on the network, Wasabi destroys the original Tor circuit and establishes a new Tor identity and connection with a brand new node.
+So to fix this, Wasabi broadcasts your transaction to a random node over Tor, so this node cannot detect your IP address.
+When you want to send another transaction, Wasabi destroys the original Tor circuit and establishes a new Tor identity and connection with a brand new node.
 This reduces the risk of a passive bystander being able to link two transactions together that appear from the same location.
 :::
 
@@ -585,8 +583,8 @@ You can toggle the display of the fee between `sat/vByte` & `percentage of trans
 ### How do I select coins for spending?
 
 Unlike other Bitcoin wallets, the user cannot spend from Wasabi without selecting coins, since ["Coin Control Is Must Learn If You Care About Your Privacy In Bitcoin"](https://medium.com/@nopara73/coin-control-is-must-learn-if-you-care-about-your-privacy-in-bitcoin-33b9a5f224a2), at least for today.
-In order to spend a coin, simply select the checkbox from the list.
-Wasabi will automatically build a transaction with the best combination of selected coins.
+In order to spend some coins, simply select them by clicking their checkboxes from the list.
+Wasabi will automatically build a transaction with the best combination of the selected coins.
 
 ![](/Send.png)
 :::
@@ -595,11 +593,11 @@ Wasabi will automatically build a transaction with the best combination of selec
 ### How is the transaction broadcast?
 
 Wasabi connects only to Bitcoin nodes that provide a Tor hidden service, so end-to-end encryption is enforced between the peers, without involving any exit node.
-Each peer is connected through a different Tor stream.
-Transactions are broadcast to only one peer over Tor and immediately after that this peer is disconnected.
+Each peer is connected to through a different Tor stream.
+Transactions are broadcast to only one random peer over Tor and immediately after that this peer is disconnected.
 
 If for some reason this fails, and a local [Bitcoin full node](/using-wasabi/BitcoinFullNode.md) is connected, then this is used to broadcast the transaction.
-By default it is gossiped to 8 peers over clearnet, but this depends on how it is configured by the user.
+By default it is gossiped to 8 peers over clearnet, but this depends on how the full node is configured by the user.
 
 If this too fails, Wasabi will (in the last resort) send the transaction through a new Tor identity to the coordinator backend for broadcasting.
 
