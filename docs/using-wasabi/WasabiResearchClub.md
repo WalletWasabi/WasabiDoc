@@ -16,7 +16,7 @@ The meeting takes place on Google Hangouts and the duration of the call varies f
 Anyone is free to join the discussions, however being familiar with the topic is recommended.
 Discussions are recorded and published.
 
-You can find all the information, past recordings, slides links and much more [here](https://github.com/zkSNACKs/WasabiResearchClub/).
+You can find all the information, past recordings, slides, links, and much more [here](https://github.com/zkSNACKs/WasabiResearchClub/).
 
 The call is every Monday at 20:00 UTC.
 Remember to follow us on our [social media channels](/FAQ/FAQ-Introduction.md#where-can-i-find-wasabi-wallet-on-social-media) to receive news about Wasabi Research Club!
