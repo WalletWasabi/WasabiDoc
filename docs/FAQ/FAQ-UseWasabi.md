@@ -155,7 +155,8 @@ Always backup your mnemonic recovery words, and your password in two separate se
 
 [BIP 38](/using-wasabi/BIPs.md#bip-38-password-protected-private-key) is a good standard, a well-tested and very secure way to encrypt a private key.
 It is also implemented in the [NBitcoin library](https://github.com/MetacoSA/NBitcoin), which is used by Wasabi.
-Additionally, there is no standard way (BIP) to encrypt HD wallets, and BIP39 also provides brute-force protection.
+Additionally, there is no standard way (BIP) to encrypt HD wallets.
+Take into account that it is not only encryption what BIP 38 provides but also a brute-force protection.
 :::
 
 :::details
