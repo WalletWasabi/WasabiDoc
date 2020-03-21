@@ -130,7 +130,7 @@ So it is good advice to encrypt this wallet file.
 ### Can I spend my bitcoin without the password?
 
 :::danger
-NO!!! Without knowledge of your password, even when you have the wallet file and recovery words, you can NOT spend your bitcoin!
+NO!!! Without knowledge of your password, even when you have the wallet file and recovery words, you CANNOT spend your bitcoin!
 :::
 
 When creating a new wallet, after labeling it properly, the next step is to select a long and random password.
@@ -473,7 +473,7 @@ So when sending bitcoin, it's important to consider which actual outputs are bei
 
 It might be a problem when Alice sends the coin she received for a months worth of labor, in exchange for a coffee in Bob's store.
 Now Bob knows the amount Alice gets paid, and this is none of his business.
-Alice can protect herself against this by using a CoinJoin UTXO, because now Bob can not know the previous transactions from Alice.
+Alice can protect herself against this by using a CoinJoin UTXO, because now Bob cannot know the previous transactions from Alice.
 :::
 
 :::details
