@@ -57,3 +57,4 @@ Further tutorials about the different parts of the wallet, for newbies and power
 ### Research
 - [JoinMarket](/using-wasabi/Joinmarket.md)
 - [Pay to EndPoint](/using-wasabi/PayToEndPoint.md)
+- [Wasabi Research Club](/using-wasabi/WasabiResearchClub.md)
