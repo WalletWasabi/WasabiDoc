@@ -58,7 +58,6 @@ However, since all four are administrators, they can still force the merge witho
 Wasabi is far from complete, there are many Wasabikas contributing every day to make this tool of self defense even more powerful.
 Because Wasabi is libre and open source software, anyone can support the project without asking for permission.
 Thus it is relatively tricky to give a precise roadmap with what will be implemented in the near and distant future.
-You can check the [ToDo list](/building-wasabi/ToDo.md) for a somewhat up-to-date summary of the short term priorities of the next #twoweeks, and what might be implemented in the distant future.
 :::
 
 ## You can become a Wasabika
@@ -70,7 +69,6 @@ Thank you for considering to support this beautiful libre and open source projec
 Nobody owns this software, and thus it is the responsibility of everyone using it to contribute to its growth.
 Your help is deeply appreciated, and very much needed!
 First please read the [contribution checklist](/building-wasabi/ContributionChecklist.md) to get introduced to the project and to start out in the right direction.
-You can also see the [ToDo list](/building-wasabi/ToDo.md) for inspiration of what other Wasabikas are tinkering on.
 Join our [Slack](https://join.slack.com/t/tumblebit/shared_invite/enQtNjQ1MTQ2NzQ1ODI0LWIzOTg5YTM3YmNkOTg1NjZmZTQ3NmM1OTAzYmQyYzk1M2M0MTdlZDk2OTQwNzFiNTg1ZmExNzM0NjgzY2M0Yzg), [Telegram](https://t.me/WasabiWallet), [Riot](https://riot.im/app/#/room/#wasabiwallet:matrix.org) or [Reddit](https://www.reddit.com/r/WasabiWallet/), and check out the [GitHub](https://github.com/zkSnacks/WalletWasabi), so that you can stay up-to-date with the latest contributions.
 :::
 
