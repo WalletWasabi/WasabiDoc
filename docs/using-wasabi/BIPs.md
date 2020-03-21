@@ -134,10 +134,3 @@ This was quite brilliant of an idea at the time, but has since been proven to no
 [BIP 69: Lexicographical Indexing of Transaction Inputs and Outputs](https://github.com/bitcoin/bips/blob/master/bip-0069.mediawiki)
 :::
 
-:::details
-### BIP 70: Payment Protocol
-
-[BIP 70: Payment Protocol](https://github.com/bitcoin/bips/blob/master/bip-0070.mediawiki)
-:::
-
-
