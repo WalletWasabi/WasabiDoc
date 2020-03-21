@@ -54,7 +54,7 @@ The Wasabi server merely coordinates the process of combining the inputs of the 
 
 This depends on how you handle your outputs after the CoinJoin.
 There are some ways how you can unintentionally undo the mixing by being careless.
-For example, if you have a coin on a specific address before the CoinJoin, and you send bitcoin after a CoinJoin onto this same address, then anyone can see that both coins are controlled by the same entity.
+For example, if you send a mixed coin to an already used address, then anyone can see that both coins are controlled by the same entity and more importantly anyone who know that the address is yours know that you own that mixed coin.
 [Address reuse](/why-wasabi/AddressReuse.md) is very bad for your privacy.
 Another deanonymizing scenario happens when you combine mixed outputs with unmixed ones when sending: a third party will be able to make the connection between them as belonging to the same sender.
 This is why you need to be careful with [change coins](/using-wasabi/ChangeCoins.md).
