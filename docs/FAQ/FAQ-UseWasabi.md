@@ -136,7 +136,7 @@ So it is good advice to encrypt this wallet file.
 
 :::danger
 NO!!!
-Without knowledge of your password, even when you have the wallet file and recovery words, you can NOT spend your bitcoin!
+Without knowledge of your password, even when you have the wallet file and recovery words, you CANNOT spend your bitcoin!
 :::
 
 When creating a new wallet, after labeling it properly, the next step is to select a long and random password.
@@ -446,7 +446,7 @@ Every transaction specifies one or more inputs, the chunk of bitcoin being spent
 A coin is also called an unspent transaction output (UTXO), meaning that this output has not been used as the input of a new transaction - it is yet to be spent.
 In order to spend an UTXO, the valid signature and script has to be provided in the transaction.
 This ensures that only with knowledge of the correct private key can this coin be sent to a new address.
-This chain of links between inputs being spent and outputs being generated is verified by every full node, and stored on the timechain.
+This chain of links between inputs being spent and outputs being generated is verified by every full node, and stored on the blockchain.
 :::
 
 :::details
@@ -467,7 +467,7 @@ So when sending bitcoin, it's important to consider which actual outputs are bei
 
 It might be a problem when Alice sends the coin she received for a months worth of labor, in exchange for a coffee in Bob's store.
 Now Bob knows the amount Alice gets paid, and this is none of his business.
-Alice can protect herself against this by using a [CoinJoin](/using-wasabi/CoinJoin.md) UTXO, because now Bob can not know the previous transactions from Alice.
+Alice can protect herself against this by using a [CoinJoin](/using-wasabi/CoinJoin.md) UTXO, because now Bob cannot know the previous transactions from Alice.
 :::
 
 :::details
@@ -509,7 +509,7 @@ This means you send the entire two coins to the receiving address, and there is 
 
 ![](/SendAmountFeePassword.png)
 
-The timechain spy heuristic is that this is a transaction to yourself, for example to your hardware wallet for long-term hodling.
+The blockchain spy heuristic is that this is a transaction to yourself, for example to your hardware wallet for long-term hodling.
 Most of the time this assumption is correct - the amount of an external payment is rarely exactly the same as the value of the sum of coins in the input, thus requiring change.
 It does not matter what value the coin has when you send it to yourself, thus there is no change.
 But you can use this assumption to your advantage by sending the MAX amount to your external destination, for example for pizza at the tribe gathering.
@@ -572,7 +572,7 @@ In the `Send` tab, simply click on the `Fee` box and manually type the fee rate 
 :::details
 ### How can I display the fee in satoshis per vByte?
 
-The fee you pay to get confirmation on the Bitcoin timechain is denominated in satoshis per virtual byte.
+The fee you pay to get confirmation on the Bitcoin blockchain is denominated in satoshis per virtual byte.
 This means that the larger your transaction size, meaning the number of inputs and outputs, the more total bitcoin you have to pay for confirmation.
 If you want faster confirmation, then you have to pay proportionally more sats per vByte.
 
@@ -1180,7 +1180,7 @@ It includes the value being sent out of the wallet, meaning the payment to an ex
 If the number is red, then you have sent sats out of the wallet - if the number is green, then you have received and stacked sats.
 A CoinJoin is a payment within the same wallet, thus it only shows the coordination and mining fee leaving the wallet.
 You also have a list of all the transaction identification numbers for detailed reference.
-The check mark indicates that the transaction is confirmed in the longest proof-of-work timechain.
+The check mark indicates that the transaction is confirmed in the longest proof-of-work blockchain.
 
 ![](/History.png)
 :::

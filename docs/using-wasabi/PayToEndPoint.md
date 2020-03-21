@@ -189,7 +189,7 @@ That attack only applied if “the receiver is publicly known.”
 In peer to peer, person to person payments, the attacker would have to somehow first acquire an endpoint to a receiver.
 
 #### Side effect 4: 
-Wallets must be deencrypted.
+Wallets must be decrypted.
 Since many wallets only send-time decrypt the private keys, it would need to decrypt receive-time, too.
 There are multiple ways to implement this.
 It could be implemented in address generation time, which in our case it is also an endpoint generation time.
