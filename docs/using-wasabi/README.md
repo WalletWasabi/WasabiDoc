@@ -15,7 +15,7 @@ Further tutorials about the different parts of the wallet, for newbies and power
 
 ### Introducing Wasabi
 - [Explain Wasabi like I'm 5](/using-wasabi/ELI5.md)
-- [Ten Commandments](/using-wasabi/10commandments.md)
+- [Ten Commandments](/using-wasabi/10Commandments.md)
 
 ### Installing Wasabi
 - [Install package](/using-wasabi/InstallPackage.md)
@@ -34,7 +34,7 @@ Further tutorials about the different parts of the wallet, for newbies and power
 - [How you can be de-anonymized using Bitcoin](/using-wasabi/Deanonimization.md)
 
 ### Restoring Wasabi
-- [Wallet Recovery](/using-wasabi/WalletRecovery.md)
+- [Recover Wasabi Wallet](/using-wasabi/WalletRecovery.md)
 - [Restoring Wasabi Wallet to Electrum](/using-wasabi/RestoreElectrum.md)
 - [Lost Password Strategy](/using-wasabi/LostPassword.md)
 - [Password Finder](/using-wasabi/PasswordFinder.md)
@@ -52,7 +52,8 @@ Further tutorials about the different parts of the wallet, for newbies and power
 - [Lock Screen](/using-wasabi/LockScreen.md)
 - [Password Best Practices](/using-wasabi/PasswordBestPractices.md)
 - [Supported BIPs](/using-wasabi/BIPs.md)
+- [Supported Industry Standards](/using-wasabi/IndustryStandards.md)
 
 ### Research
-- [Pay to EndPoint](/using-wasabi/PayToEndPoint.md)
 - [JoinMarket](/using-wasabi/Joinmarket.md)
+- [Pay to EndPoint](/using-wasabi/PayToEndPoint.md)

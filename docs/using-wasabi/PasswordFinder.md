@@ -59,6 +59,12 @@ SUCCESS: Password found: >>> pass <<<
 
 ```
 
+On Windows the command should be:
+
+```
+$ wassabeed findpassword --wallet:MagicalCryptoWallet
+```
+
 Note that you can also specify an encrypted secret instead of the wallet file.
 This is useful if you lost your password for a Bitcoin wallet, other than Wasabi.
 

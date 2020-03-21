@@ -195,7 +195,7 @@ There are multiple ways to implement this.
 It could be implemented in address generation time, which in our case it is also an endpoint generation time.
 But if it is strictly implemented at receive time, the UTXO spying defense may not be needed at all.
 
-##### Side effect 5: 
+#### Side effect 5: 
 It helps with UTXO bloat.
 Let us assume the above transaction is a Sender-Receiver transaction.
 Then, if the receiver would not participate, that would mostly result in a one input, two output transaction.
