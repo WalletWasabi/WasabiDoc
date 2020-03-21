@@ -731,7 +731,7 @@ Average: 10 sat/vbyte: 1,680 satoshis per participant (0.00168 %)
 High: 100 sat/vbyte: 16,800 satoshis per participant (0.0168 %)
 ```
 
-Notice that for such a large amount, the miner, even in extreme cases only takes <0.02% (note this is not 2%!) from every Wasabi user.
+Notice that for such a large amount, the miner, even in extreme cases only takes < 0.02% (not 2%!) from every Wasabi user.
 Let's observe for 0.1 BTC:
 
 ```
@@ -915,7 +915,7 @@ or
 
 Yes, Wasabi needs to stay on during CoinJoins, you cannot be offline and still participate in CoinJoins.
 
-A CoinJoin transaction is different from a normal transaction, where you are the only person signing, and requires many people to sign the same transaction at the same time.
+A CoinJoin transaction is different from a normal transaction, where you are the only person signing, and requires many people to sign the same transaction.
 
 Here is how Wasabi handles different scenarios:
 
@@ -930,7 +930,7 @@ Here is how Wasabi handles different scenarios:
 
 No you don't.
 CoinJoins are atomic, they either happen or they don't.
-If your wallet crashes or your computer goes offline during CoinJoin you can simply don't participate in this CoinJoin, look at table [here](/FAQ/FAQ-UseWasabi.md#does-wasabi-have-to-stay-on-during-coinjoin) for more info.
+If your wallet crashes or your computer goes offline during CoinJoin you simply don't participate in this CoinJoin, look at table [here](/FAQ/FAQ-UseWasabi.md#does-wasabi-have-to-stay-on-during-coinjoin) for more info.
 :::
 
 :::details
@@ -957,8 +957,6 @@ Yes they are, based on the anonymity set target.
 If the coins' anonymity sets are below the specified target after a round is complete, then the coins are requeued automatically for the next round.
 But when the anonymity sets are above the target after a round, then the coins will no longer be registered automatically.
 However, you can manually enqueue them for a new round at any time.
-
-If you are mixing with a different wallet as destination, like your hardware wallet, then until the anonymity set is reached, the coin goes into your starting wallet again, and with the next round, it is coinjoined directly into your destination wallet.
 :::
 
 :::details
@@ -1120,7 +1118,7 @@ Read more [here](/using-wasabi/ColdWasabi.md#connecting-via-sd-card).
 :::details
 ### How can I import and broadcast a final transaction from ColdCard?
 
-In top menu bar, go to `Tools > Broadcast Transaction` and in this tab click `Import Transaction`, now you can select the previously finalized (and signed) transaction file from the MicroSD card.
+In the top menu bar, go to `Tools > Broadcast Transaction` and in this tab click `Import Transaction`, now you can select the previously finalized (and signed) transaction file from the MicroSD card.
 If this fails you can manually type the path to this file in Wasabi Wallet to load the transaction.
 Now click `Broadcast Transaction` to send it off over Tor to a random Bitcoin node so it can flood over to the miners for confirmation in a block.
 Read more [here](/using-wasabi/ColdWasabi.md#connecting-via-sd-card).
@@ -1132,7 +1130,6 @@ Read more [here](/using-wasabi/ColdWasabi.md#connecting-via-sd-card).
 No.
 A CoinJoin is a multi round interactive process, and requires fast signing by the participants, thus the keys need to be on a hot computer.
 Thus you have to send the bitcoins (in small portions > 0.1 BTC if needed) from your hardware wallet to a `hot` Wasabi Wallet, do the CoinJoin and then send them back to a new address on the Hardware wallet for cold-storage.
-You can also CoinJoin directly from your hot wallet into your hardware wallet, which is more private and saves one transaction.
 Read more [here](/using-wasabi/ColdWasabi.md#cold-wasabi-protocol)
 :::
 
@@ -1257,7 +1254,7 @@ In the second case, if you happen to broadcast a transaction of yours to a full 
 
 :::danger
 It is recommended to always use Tor!
-The setting to turn it off is only intended for debuging and trouble shooting.
+The setting to turn it off is only intended for debugging and trouble shooting.
 ::::
 
 :::details
@@ -1319,7 +1316,7 @@ You can read more about Lurking Wife Mode [here](/using-wasabi/LurkingWifeMode.m
 :::details
 ### How can I change to the white theme?
 
-You can change from the default dark to the white theme when you [build Wasabi from source code](/using-wasabi/BuildSource.md) in the `.walletwasabi/client/Gui/Settings/` [data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder).
+You can change from the default dark to the white theme in the `.walletwasabi/client/Gui/Settings/` [data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder).
 Open the `GlobalSettings.json` file and change the line from `"theme": "Visual Studio Dark"` to `"theme": "Visual Studio Light"`.
 Save the file and restart Wasabi.
 Please note that Wasabi is designed for the dark theme, and some color schemes might not look beautiful in the white mode.
@@ -1427,7 +1424,7 @@ The `spent` coin status is a symptom of corrupted wallet state.
 This used to be the largest known bug in Wasabi Wallet.
 It affected about 1-5% of users.
 This issue was introduced to Wasabi with the [v1.1.4 release](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v1.1.4) in April, 2019 by adding a wallet cache, that resulted in 12 times faster wallet load.
-It was [thought to be fixed](https://old.reddit.com/r/WasabiWallet/comments/c2hco8/announcement_spent_coin_and_lost_unconfirmed/) in June by adding an autocorrection mechanism, but some users are still reporting this issue, so it was not fixed.
+It was [thought to be fixed](https://old.reddit.com/r/WasabiWallet/comments/c2hco8/announcement_spent_coin_and_lost_unconfirmed/) in June by adding an autocorrection mechanism, but some users were still reporting this issue.
 
 It ultimately got fixed in [v1.1.10](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v1.1.10) by introducing an upgraded version of [BIP 158 block filters](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients/) and changing the wallet cache architecture.
 :::
