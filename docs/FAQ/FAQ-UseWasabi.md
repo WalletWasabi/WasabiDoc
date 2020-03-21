@@ -420,7 +420,7 @@ Yet multisig is a popular feature, and many Wasabikas do request it for extra se
 [Electrum Wallet](https://electrum.org) is a fantastic wallet with many features, but only private if you connect to your own Electrum server full node.
 Electrum can be used to create different types of m-of-n multisig scripts, including the use of hardware wallets.
 
-Schnorr key and signature aggregation with MuSig increases the privacy, since only one public key, not n, are committed on the timechain.
+Schnorr key and signature aggregation with MuSig increases the privacy, since only one public key, not n, are committed on the blockchain.
 So when Taproot is activated in the Bitcoin consensus layer, in #twoweeks, there are no privacy concerns standing in the way of Wasabi multisig!
 :::
 

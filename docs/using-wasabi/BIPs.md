@@ -8,6 +8,7 @@
 # Supported BIPs
 
 - [What is supported today](BIPs.md#what-is-supported-today)
+- [What is not supported](BIPs.md#what-is-not-supported)
 
 ---
 
@@ -114,5 +115,22 @@ This has been proven to be by far the best way to do light clients privately, an
 ### Hardware Wallet Interface
 
 [Hardware Wallet Interface](https://github.com/bitcoin-core/HWI)
+:::
+
+## What is not supported
+
+:::details
+### BIP 37: Connection Bloom Filtering
+
+[BIP 37 Bloom filters](https://github.com/bitcoin/bips/blob/master/bip-0037.mediawiki) are filters that a client will send to a Bitcoin full node which says "Hey, if you see any transactions that get caught in these filters, they may or may not be mine!".
+What would happen next is that a Bitcoin node would start sending tons and tons of transactions to the client, and the client would proceed to distinguish the 99% irrelevant transactions against the 1% relevant ones.
+This was quite brilliant of an idea at the time, but has since been proven to not protect user privacy, at the expense of wasting a ton of bandwidth and subjecting users to other risks.
+
+:::
+
+:::details
+### BIP 69: Lexicographical Indexing of Transaction Inputs and Outputs
+
+[BIP 69: Lexicographical Indexing of Transaction Inputs and Outputs](https://github.com/bitcoin/bips/blob/master/bip-0069.mediawiki)
 :::
 
