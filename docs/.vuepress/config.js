@@ -249,8 +249,7 @@ module.exports = {
             "/building-wasabi/TechnicalOverview.md",
             "/building-wasabi/ContributionChecklist.md",
             "/building-wasabi/ContributionGame.md",
-            "/building-wasabi/Dojo.md",
-            "/building-wasabi/ToDo.md"
+            "/building-wasabi/Dojo.md"
           ]
         },
         {

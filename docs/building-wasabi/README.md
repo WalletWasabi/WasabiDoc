@@ -19,7 +19,6 @@ You will also find some of the issues they are working on now, the research for 
 - [Contribution Checklist](/building-wasabi/ContributionChecklist.md)
 - [Contribution Game](/building-wasabi/ContributionGame.md)
 - [Dojo](/building-wasabi/Dojo.md)
-- [ToDo List](/building-wasabi/ToDo.md)
 
 ### Advanced
 
