@@ -11,7 +11,7 @@
 
 ## Introduction
 
-Wasabi Research Club it is a weekly meeting focused on Bitcoin privacy.
+Wasabi Research Club is a weekly meeting focused on Bitcoin privacy.
 The meeting takes place on Google Hangouts and the duration of the call varies from about 1 hour to 1 hour and a half.
 Anyone is free to join the discussions, however being familiar with the topic is recommended.
 Discussions are recorded and published.
