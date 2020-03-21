@@ -67,7 +67,7 @@ Just leave Wasabi running in the background of your computer.
 ### Input registration
 
 During the [input registration](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-input-registration-phase), you select which coins you want to register for CoinJoin.
-These coins need to be confirmed on the Bitcoin timechain, unless they are from a Wasabi CoinJoin and you re-register them.
+These coins need to be confirmed on the Bitcoin blockchain, unless they are from a Wasabi CoinJoin and you re-register them.
 In the background, Wasabi generates an input proof, a signature over a challenge message with the private key that locks up the coins.
 
 With this, the coordinator can verify that you actually own these coins.
