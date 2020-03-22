@@ -57,7 +57,10 @@ To avoid problems, make sure you close Wasabi Wallet before proceeding to rename
 
 :::details
 ### What is the password used for?
-The password you set is used as a 13th word (passphrase) as described in [BIP 39](/using-wasabi/BIPs.md#bip-39-mnemonic-code-for-generating-deterministic-keys), is used to encrypt the private key of the extended private key as described in [BIP 38](/using-wasabi/BIPs.md#bip-38-password-protected-private-key) to get an encrypted private key which is stored on the computer.
+The password you set is used:
+* as a 13th word (passphrase) as described in [BIP 39](/using-wasabi/BIPs.md#bip-39-mnemonic-code-for-generating-deterministic-keys) 
+* to encrypt the private key of the extended private key as described in [BIP 38](/using-wasabi/BIPs.md#bip-38-password-protected-private-key) to get an encrypted private key which is stored on the computer.
+
 This is the password that will unlock your bitcoin to anyone who has access to the recovery word backup or computer.
 You will need to type in the password before you can spend from Wasabi Wallet.
 So if your backup gets compromised, this password is the only thing protecting your precious sats.
