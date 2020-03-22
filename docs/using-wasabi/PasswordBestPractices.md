@@ -17,6 +17,8 @@ These are some of the industry best practices:
 
 [[toc]]
 
+---
+
 ## Use Diceware
 
 Rolling dice is an easy and effective way to get high entropy and randomness in a password that can even be memorized.

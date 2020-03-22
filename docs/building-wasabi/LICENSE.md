@@ -5,8 +5,6 @@
 }
 ---
 
-
-
 # MIT License
 
 Wasabi Wallet and Wasabi documentation is licensed under the MIT License.

@@ -13,6 +13,8 @@ Here we explain some of the tricks we had in mind to help Wasabikas avoid losing
 
 [[toc]]
 
+---
+
 ## Moving Password Confirmation to Next Page
 
 This aims to disrupt the flow of the user.

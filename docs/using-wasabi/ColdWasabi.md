@@ -9,6 +9,8 @@
 
 [[toc]]
 
+---
+
 ## Using hardware wallet step-by-step
 
 1. Start your Wasabi Wallet and connect your hardware wallet with USB.
