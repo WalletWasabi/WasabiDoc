@@ -12,11 +12,9 @@
 ---
 
 The easiest way to start with Wasabi is to download, verify and install the released package.
-Don't trust - Verify!
 This is a version of the software that is thoroughly reviewed by the contributors and it should be stable.
 The package has the binary code that is needed to run the Wasabi Wallet client including the graphical user interface.
 For compiling the open source code with cutting edge development features, also including the backend server, see this [tutorial here](/using-wasabi/BuildSource.md).
-
 
 Download the packages either from the official [WasabiWallet.io](https://wasabiwallet.io/) clearnet website, or for your privacy's sake, from the official tor hidden service [http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion/](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion/).
 

@@ -7,13 +7,11 @@
 
 # Deterministic Build
 
-[[toc]]
-
----
-
 > Reproducible [or deterministic] builds are a set of software development practices that create an independently-verifiable path from source to binary code.  ~ [ReproducibleBuilds.org](https://reproducible-builds.org/)
 
 This guide describes how to reproduce Wasabi's builds.
+
+[[toc]]
 
 ---
 

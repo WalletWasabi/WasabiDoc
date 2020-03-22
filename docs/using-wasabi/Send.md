@@ -9,6 +9,8 @@
 
 [[toc]]
 
+---
+
 ## How to send bitcoin step-by-step
 
 1. Select the coins you want to spend.

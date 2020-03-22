@@ -5,16 +5,14 @@
 }
 ---
 
-
-
 # Contribution Checklist
+
+So you're interested in contributing to Wasabi - welcome!
+This checklist will get you plugged in and productive as quickly as possible.
 
 [[toc]]
 
 ---
-
-So you're interested in contributing to Wasabi - welcome!
-This checklist will get you plugged in and productive as quickly as possible.
 
 ## Who is a contributor?
 

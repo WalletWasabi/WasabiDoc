@@ -7,12 +7,12 @@
 
 # Password Finder
 
+[Wasabi Password Finder](https://github.com/lontivero/WasabiPasswordFinder) is a tool for helping those who made a mistake typing the password during the wallet creation process.
+This tool tries to find the password that decrypts the encrypted secret key stored in a given wallet file.
+
 [[toc]]
 
 ---
-
-[Wasabi Password Finder](https://github.com/lontivero/WasabiPasswordFinder) is a tool for helping those who made a mistake typing the password during the wallet creation process.
-This tool tries to find the password that decrypts the encrypted secret key stored in a given wallet file. 
 
 ## Limitations
 

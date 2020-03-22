@@ -8,7 +8,7 @@
 
 # A Technical Overview of Wasabi Wallet, Future Ideas, Plans and Strategy
 
-## Abstract
+---
 
 Wasabi Wallet is a privacy focused Bitcoin wallet that is based on the [ZeroLink Fungibility Framework](https://github.com/nopara73/ZeroLink/).
 While statistical privacy can be achieved today with it, the cost, convenience, intuitiveness, and strength of this privacy can be greatly improved.
@@ -17,8 +17,6 @@ Wasabi must also improve its accessibility and its general Bitcoin wallet featur
 Furthermore, Wasabi should look into ways of extending the scope of its privacy protection to other, not closely Bitcoin related fields, such as end-to-end encrypted messaging.
 Finally, Wasabi also needs to concentrate on its stability, performance, UX, and code quality.
 This document aims to outline a starting plan to progress towards these objectives.
-
-## Table Of Contents
 
 [[toc]]
 

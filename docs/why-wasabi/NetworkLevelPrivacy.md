@@ -7,12 +7,12 @@
 
 # Network Level Privacy - Bitcoin Core vs Wasabi Wallet
 
+Bitcoin is a peer-to-peer network of full nodes which define, verify, and enforce the Bitcoin consensus rules.
+There is a lot of communication between them and metadata can be used to de-anonymize Bitcoin users.
+
 [[toc]]
 
 ---
-
-Bitcoin is a peer-to-peer network of full nodes which define, verify, and enforce the Bitcoin consensus rules.
-There is a lot of communication between them and metadata can be used to de-anonymize Bitcoin users.
 
 ## Problem
 

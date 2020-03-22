@@ -7,6 +7,10 @@
 
 # Wasabi Setup in Virtual Machines
 
+[[toc]]
+
+---
+
 ## Benefits of Virtual Machines
 
 Virtualization allows you to create and run as many virtual machines (VMs) on a single computer at one time as desired.

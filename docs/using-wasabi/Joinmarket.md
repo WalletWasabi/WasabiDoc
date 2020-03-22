@@ -9,6 +9,8 @@
 
 [[toc]]
 
+---
+
 ## Introduction and History
 
 [JoinMarket](https://github.com/JoinMarket-Org/joinmarket-clientserver) is a CoinJoin protocol implemented in a wallet software which requires Bitcoin Core as the back end.

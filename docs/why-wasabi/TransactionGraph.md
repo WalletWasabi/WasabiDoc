@@ -7,6 +7,10 @@
 
 # Transaction Graph
 
+[[toc]]
+
+---
+
 ## Problem
 
 #### Public transaction history

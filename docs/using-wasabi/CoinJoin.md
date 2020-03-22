@@ -17,6 +17,8 @@ Wasabi enables trustless (meaning nobody can steal) and private (meaning even th
 
 [[toc]]
 
+---
+
 ## Doing CoinJoin step-by-step
 
 1. Launch Wasabi, and open your wallet that contains the coins that you want to CoinJoin.

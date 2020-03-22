@@ -7,10 +7,6 @@
 
 # Wasabi Setup on Tails
 
-[[toc]]
-
----
-
 This essay is extracted from this step-by-step [guide](https://github.com/PulpCattel/Tails-BitcoinCore-Wasabi), which also includes tutorials on how to install Tails, create a persistent storage and use Bitcoin Core alongside with it.
 
 :::tip
@@ -19,6 +15,10 @@ This is likely the most convenient solution for Wasabikas.
 
 Remember that you will need at least a 300GB USB or SD card to download the entire blockchain.
 :::
+
+[[toc]]
+
+---
 
 ## Create admin password
 

@@ -7,8 +7,6 @@
 
 # Address Reuse
 
-[[toc]]
-
 The first rule of Bitcoin privacy:
 
 > Never reuse addresses!
@@ -16,6 +14,10 @@ The first rule of Bitcoin privacy:
 The second rule of Bitcoin privacy:
 
 > NEVER reuse addresses!!
+
+[[toc]]
+
+---
 
 ## Problem
 
