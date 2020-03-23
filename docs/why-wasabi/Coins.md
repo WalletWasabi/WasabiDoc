@@ -18,7 +18,7 @@ Each UTXO is the tip of the chain of links between inputs and outputs, all the w
 
 ## Problem
 
-#### UTXOs are not fungible
+### UTXOs are not fungible
 
 Each UTXO is a unique snowflake with a public transaction history.
 For example, when Alice sends a coin to Bob, then Bob does not just have any random UTXO, but he has specifically the coin that Alice has sent him.
@@ -30,7 +30,7 @@ This means that coin consolidation can lead to an overall decrease of privacy, e
 
 ## Wasabi's Solution
 
-#### Manual coin labeling and selection
+### Manual coin labeling and selection
 
 Contrary to many other wallets, Wasabi does not show only the total value of bitcoin in the wallet.
 Rather, in both the `Send` and `CoinJoin` tabs there is a list of all the individual UTXOs.
@@ -40,7 +40,7 @@ In order to spend a specific coin, it must be manually selected, which prevents 
 ## Heuristics identifying change
 
 One prime goal of [transaction surveillance companies](/why-wasabi/TransactionSurveillanceCompanies.md) is to identify the change coin of a Bitcoin transaction, as this is vital information for building a cluster of coins belonging to one entity.
-There are several heuristics, practical assumptions which are not guaranteed to be accurate or optimal, that are used to deanonymize users.
+There are several heuristics, practical assumptions which are not guaranteed to be accurate or optimal, that are used to deanonymize users:
 
 ### Address reuse
 
