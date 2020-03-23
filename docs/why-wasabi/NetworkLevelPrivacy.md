@@ -16,7 +16,7 @@ There is a lot of communication between them and metadata can be used to de-anon
 
 ## Problem
 
-#### Clearnet light clients
+### Clearnet light clients
 
 When the communication to the network is unencrypted over clearnet, then there is an easy correlation of the Bitcoin transactions to the IP address of the peer who sent it.
 The IP address can even be used to find the physical location of the user!
@@ -34,7 +34,7 @@ When the user sends the extended public key, or a filter of all the addresses to
 
 ## Wasabi's solution
 
-#### Full node by default & block filters over tor
+### Full node by default & block filters over tor
 
 Wasabi checks if there is a local Tor instance installed, and if so, it uses this to onion-route all the traffic to and from the network.
 If Tor is not already installed, then it is accessed automatically from within Wasabi.
@@ -61,7 +61,6 @@ This block request is indistinguishable from the regular P2P gossip, and thus no
 :::tip Privacy by default!
 Wasabi has network level privacy as good as a Bitcoin full node.
 :::
-
 
 ## In depth comparison 
 
