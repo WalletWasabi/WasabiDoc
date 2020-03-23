@@ -44,8 +44,8 @@ You can now save your `Wasabi-${currentVersion}.deb` into the persistent storage
 
 ```sh
 /Persistent
-|__ /bitcoin-0.18.1    # Bitcoin Core launcher folder
-|__ /Bitcoin           # Bitcoin Core data folder
+|__ /bitcoin-0.18.1       # Bitcoin Core launcher folder
+|__ /Bitcoin              # Bitcoin Core data folder
 |__ /Wasabi-${currentVersion}.deb  # Wasabi installer
 ```
 
@@ -59,11 +59,11 @@ Create a directory in your persistent with the same hierarchical structure, like
 
 ```sh
 /Persistent
-|__ /bitcoin-0.18.1    # Bitcoin Core launcher folder
-|__ /Bitcoin           # Bitcoin Core data folder
+|__ /bitcoin-0.18.1       # Bitcoin Core launcher folder
+|__ /Bitcoin              # Bitcoin Core data folder
 |__ /Wasabi-${currentVersion}.deb  # Wasabi installer
 |__ /.walletwasabi
-    |__ /client        # Here we save our wallet files, filters and blocks
+    |__ /client           # Here we save our wallet files, filters and blocks
 ```
 
 After every session, when you’re done, navigate into `/Home/.walletwasabi/client` and copy the desired folders into your persistent directory.
@@ -103,7 +103,7 @@ After the first time you save a Wasabi session, your persistent storage will loo
 /Persistent
 |__ /bitcoin-0.18.1        # Bitcoin Core launcher folder
 |__ /Bitcoin               # Bitcoin Core data folder
-|__ /Wasabi-${currentVersion}.deb      # Wasabi installer
+|__ /Wasabi-${currentVersion}.deb   # Wasabi installer
 |__ /.walletwasabi
     |__ /client            # Here we save our wallet files, blocks and filters
         |__ /Wallets
@@ -120,7 +120,7 @@ You can save multiple copies of `.walletwasabi` in your persistent, each with di
 |__ /bitcoin-0.18.1            	   # Bitcoin Core launcher folder
 |__ /Bitcoin                       # Bitcoin Core data folder
 |__ /Wasabi                        # General Wasabi folder
-    |__ /Wasabi-${currentVersion}.deb          # Wasabi installer
+    |__ /Wasabi-${currentVersion}.deb       # Wasabi installer
     |__ /BitcoinStore              # Filters (No need to keep multiple copies of them)
     |__ /CoinJoin wallet
     |   |__ /.walletwasabi
