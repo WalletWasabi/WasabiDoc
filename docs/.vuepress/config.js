@@ -137,7 +137,6 @@ module.exports = {
             "/why-wasabi/WhyFinancialPrivacy.md"
           ]
         },
-
         {
           title: "Privacy in Bitcoin",
           collapsable: false,
@@ -153,16 +152,16 @@ module.exports = {
       ],
 
       "/using-wasabi/": [
-	{
-	  title: "Introducing Wasabi",
-	  collapsable: false,
-	  sidebarDepth: 2,
-	  children: [
-          "/using-wasabi/ELI5.md",
-          "/using-wasabi/10Commandments.md"
-	  ]
-       },
-   {
+        {
+          title: "Introducing Wasabi",
+          collapsable: false,
+          sidebarDepth: 2,
+          children: [
+            "/using-wasabi/ELI5.md",
+            "/using-wasabi/10Commandments.md"
+          ]
+        },
+        {
           title: "Installing Wasabi",
           collapsable: false,
           sidebarDepth: 2,
@@ -171,7 +170,7 @@ module.exports = {
             "/using-wasabi/BuildSource.md"
           ]
         },
-    {
+        {
           title: "Using Wasabi",
           collapsable: false,
           sidebarDepth: 2,
@@ -184,7 +183,7 @@ module.exports = {
             "/using-wasabi/BitcoinFullNode.md"
           ]
         },
-    {
+        {
           title: "Privacy Best Practices",
           collapsable: false,
           sidebarDepth: 2,
@@ -193,7 +192,7 @@ module.exports = {
             "/using-wasabi/Deanonimization.md"
           ]
         },
-    {          
+        {
           title: "Restoring Wasabi",
           collapsable: false,
           sidebarDepth: 2,
@@ -202,9 +201,9 @@ module.exports = {
             "/using-wasabi/RestoreElectrum.md",
             "/using-wasabi/LostPassword.md",
             "/using-wasabi/PasswordFinder.md"
-	  ]
-	},
-    {
+          ]
+        },
+        {
           title: "Advanced Installing Wasabi",
           collapsable: false,
           sidebarDepth: 2,
@@ -213,9 +212,9 @@ module.exports = {
             "/using-wasabi/WasabiSetupTails.md",
             "/using-wasabi/WasabiSetupVM.md",
             "/using-wasabi/WasabiSetupWhonix.md"
-         ]
+          ]
         },
-    {
+        {
           title: "Advanced Using Wasabi",
           collapsable: false,
           sidebarDepth: 2,
@@ -227,16 +226,16 @@ module.exports = {
             "/using-wasabi/PasswordBestPractices.md",
             "/using-wasabi/BIPs.md",
             "/using-wasabi/IndustryStandards.md"
-         ]
+          ]
         },
-     {
+        {
           title: "Research",
           collapsable: false,
           sidebarDepth: 2,
           children: [
             "/using-wasabi/Joinmarket.md",
             "/using-wasabi/PayToEndPoint.md"
-         ]
+          ]
         }
       ],
 
@@ -279,6 +278,7 @@ module.exports = {
           ]
         }
       ],
+
       "/glossary/": [
         {
           title: "Glossary",
