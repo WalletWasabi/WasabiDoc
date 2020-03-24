@@ -152,7 +152,7 @@ When you broadcast a transaction over clearnet, the connected full node will kno
 :::details
 ### Can I install Wasabi on TAILS?
 
-Yes, just follow the [Wasabi Setup on Tails](/using-wasabi/WasabiSetupTails.md) guide and remember to save/backup the wallet on the Persistence.
+Yes, just follow the [Wasabi Setup on Tails](/using-wasabi/WasabiSetupTails.md) guide and remember to save/back up the wallet on the Persistence.
 :::
 
 :::details

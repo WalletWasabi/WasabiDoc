@@ -30,7 +30,7 @@ Now you can continue with clicking `Generate`.
 
 ![](/WalletManagerGenerateWallet.png)
 
-Now you will see the 12 recovery words, this is the mnemonic seed that you can use to backup and recover your wallet.
+Now you will see the 12 recovery words, this is the mnemonic seed that you can use to back up and recover your wallet.
 Make sure, and triple check, that you have done a proper backup of BOTH the password AND the mnemonic.
 When you only have the recovery words, but not the password, then you will NOT be able to recover your wallet.
 In order to protect your paper backup, consider storing the password and recovery words in two different locations.
@@ -109,7 +109,7 @@ Every time you want to spend your coins from Wasabi, you MUST provide this passw
 So even if you have these words securely engraved in metal, without the password, you cannot restore the backup of your wallet.
 
 :::tip
-Always backup your mnemonic recovery words, and your password in two separate secure locations.
+Always back up your mnemonic recovery words, and your password in two separate secure locations.
 :::
 ::::
 
@@ -218,8 +218,9 @@ However, when you use [the same address for every coin](/why-wasabi/AddressReuse
 Thus, when someone finds out that you control this address, maybe you published it in your social media profile for donations, or you sent a coin to another peer who knows you, then he knows also how many bitcoin you have in that same address.
 Take good care to whom you tell your addresses, and every time use a different address.
 
-Wasabi uses [BIP 44 multi-account hierarchy for deterministic wallets](/using-wasabi/BIPs.md#bip-44-multi-account-hierarchy-for-deterministic-wallets) so that you can generate countless addresses and have them all securely backed-up in the 12 recovery words.
 Every time a coin is received, the address is removed from the GUI so that you are not tempted to use it again.
+
+Wasabi uses [BIP 44 multi-account hierarchy for deterministic wallets](/using-wasabi/BIPs.md#bip-44-multi-account-hierarchy-for-deterministic-wallets) so that you can generate countless addresses and have them all securely backed-up in the 12 recovery words.
 
 :::danger
 **NEVER RE-USE ADDRESSES**
@@ -1020,9 +1021,9 @@ Please see [this great guide](https://github.com/6102bitcoin/FAQ/blob/master/see
 ::::
 
 ::::details
-### How do I backup my wallet file?
+### How do I back up my wallet file?
 
-Although you can backup your private keys with the mnemonic words and password, this is only a last resort recovery.
+Although you can back up your private keys with the mnemonic words and password, this is only a last resort recovery.
 If you want to also secure your address labels, the anonset and additional metadata, then you can do a digital backup.
 Simply copy the `WalletBackups` folder with the `wallet.json` files from your [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) onto suitable hardware, for example an encrypted USB stick.
 Note that this file has the encrypted private key (extracted from the extended private key), meaning that you only need the password to spend the bitcoin.
