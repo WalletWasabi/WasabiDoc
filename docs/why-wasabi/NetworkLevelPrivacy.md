@@ -104,6 +104,15 @@ It is reasonable to assume that this entity can break the onion routing, not Tor
 
 ### Wasabi Wallet light node
 
+#### Private UTXO retrieval
+
+The backend server served a constant filter table to all the clients over Tor.
+From those filters the clients figure out which blocks they are interested in and download them [and some false-positive blocks] from peers.
+One block per peer, and always over a fresh Tor stream.
+When a block was acquired, the peer was disconnected.
+Because of the end-to-end encryption of the onion network, it immediately defeats an ISP adversary and makes the already impossible job of the Sybil adversary even more impossible.
+The only adversary that could possibly overcome this would have to setup thousands of full nodes over onion and also break Tor itself.
+
 #### Private transaction broadcasting
 
 All Wasabi traffic is tunneled through Tor.
@@ -115,15 +124,6 @@ A new Bitcoin peer is chosen for every transaction broadcast.
 :::tip Everything over Tor!
 Wasabi broadcast transactions to only one peer over Tor, and immediately after that the peer is disconnected.
 :::
-
-#### Private UTXO retrieval
-
-The backend server served a constant filter table to all the clients over Tor.
-From those filters the clients figure out which blocks they are interested in and download them [and some false-positive blocks] from peers.
-One block per peer, and always over a fresh Tor stream.
-When a block was acquired, the peer was disconnected.
-Because of the end-to-end encryption of the onion network, it immediately defeats an ISP adversary and makes the already impossible job of the Sybil adversary even more impossible.
-The only adversary that could possibly overcome this would have to setup thousands of full nodes over onion and also break Tor itself.
 
 #### Adversaries identified
 - ISP
@@ -137,14 +137,14 @@ This means that it is possible (but not mandatory) to start Bitcoin Core during 
 Without having to install or configure anything.
 :::
 
-#### Private transaction broadcasting
-
-Even when Wasabi is connected to your own node, it will broadcast the transaction in the above described way: to one new peer over Tor.
-
 #### Private UTXO retrieval
 
 If you have a listening full node running in the background (not only Bitcoin Core, any full node) then Wasabi automatically picks it up and instead of asking peers for blocks, it asks for blocks from your own node.
 Using Wasabi this way results in the same privacy model as Bitcoin Core's, regarding Private UTXO Retrieval.
+
+#### Private transaction broadcasting
+
+Even when Wasabi is connected to your own node, it will broadcast the transaction in the above described way: to one new peer over Tor.
 
 ## Universal Attacks
 
