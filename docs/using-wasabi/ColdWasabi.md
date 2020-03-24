@@ -132,7 +132,7 @@ Remix often to gain a high anonymity set.
 In order to separate these new private coins, you should generate a fresh wallet on your hardware device.
 :::
 
-5. Generate and backup a new set of keys on your hardware wallet.
+5. Generate and back up a new set of keys on your hardware wallet.
 6. Load your hardware wallet device to Wasabi, either via USB or SD card.
 7. Label and generate a receive address for the hardware wallet.
 For the first setup you need to connect the hardware wallet to the computer that runs Wasabi, afterwards you can generate receive addresses without the device being connected.
