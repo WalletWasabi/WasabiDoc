@@ -105,7 +105,6 @@ Without knowledge of your password, even when you have the wallet file and recov
 :::
 
 When creating a new wallet, after labeling it properly, the next step is to select a long and random password.
-This is used to encrypt the private key (extracted from the extended private key) on your computer.
 Every time you want to spend your coins from Wasabi, you MUST provide this password.
 So even if you have these words securely engraved in metal, without the password, you cannot restore the backup of your wallet.
 
