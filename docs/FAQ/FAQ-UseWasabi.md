@@ -171,7 +171,7 @@ If you are running [your own node](/using-wasabi/BitcoinFullNode.md), then you c
 If the node is on the same computer, then it is connected automatically by default.
 You can also specify the local IP or tor hidden service of your remote full node.
 
-The Wasabi client does never download a block from the Wasabi backend server.
+The Wasabi client never downloads a block from the Wasabi backend server.
 :::
 
 :::details
@@ -242,7 +242,7 @@ After a coin has been sent to this address, it is removed from the GUI, this is 
 :::details
 ### What is the gap limit?
 
-The gap limit is the maximum number of consecutive unused addresses in your sequence of addresses.
+The gap limit is the maximum number of consecutive unused addresses in your wallet.
 Wasabi automatically increases this value if needed when you generate new receiving addresses.
 When you import the wallet file into a new Wasabi client, then it will use this `MinGapLimit` to find all your coins in the wallet.
 :::
@@ -347,7 +347,7 @@ There are also large savings on mining fees for SegWit transactions.
 Some wallets/exchanges do not yet support native SegWit bech32 addresses and may give an error message (e.g. "unknown bitcoin address").
 Please contact these services to upgrade their infrastructure to support the latest industry standards.
 Wasabi cannot generate non-SegWit addresses, so one solution is to manage your funds with a wallet which does support legacy addresses.
-To check Bech32 adoption and exchange/wallet support you can follow [Bitcoin.it Wiki](https://en.bitcoin.it/wiki/Bech32_adoption) and [When Segwit? website](https://whensegwit.com/#who).
+To check Bech32 adoption and wallets/exchanges support you can follow the [Bitcoin Wiki](https://en.bitcoin.it/wiki/Bech32_adoption#Software_Wallets), [When Segwit](https://whensegwit.com/#who), and [Bitcoin Optech](https://bitcoinops.org/en/compatibility/#segwit-addresses).
 :::
 
 :::details
