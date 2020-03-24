@@ -70,10 +70,7 @@ Sufficient privacy is an essential prerequisite for a viable digital currency.
 Privacy invasions can lead to damaging or destroying bitcoin fungibility.
 The aim of bitcoin is to be a decentralized digital currency, but if all users are eventually required to consult centralized blacklists before accepting bitcoin then its decentralization will be destroyed.
 
-Financial privacy is an essential element to fungibility in Bitcoin: if you can meaningfully distinguish one coin from another, then their fungibility is weak.
-If our fungibility is too weak in practice, then we cannot be decentralized: if someone important announces a list of stolen coins they won't accept coins derived from, you must carefully check coins you accept against that list and return the ones that fail.
-Everyone gets stuck checking blacklists issued by various authorities because in that world we'd all not like to get stuck with bad coins.
-This adds friction and transactional costs and makes Bitcoin less valuable as a money.
+[How is financial privacy an essential element to fungibility in Bitcoin?](/FAQ/FAQ-GeneralBitcoinPrivacy.md#how-is-financial-privacy-an-essential-element-to-fungibility-in-bitcoin)
 
 ### No mechanism for oversight or appeal
 
