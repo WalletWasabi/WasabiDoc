@@ -9,8 +9,6 @@
 
 [[toc]]
 
----
-
 > Satoshi's Vision + CoinJoin + Bulletproofs = Sad Blockchain Analysts
 
 I attended a brainstorming event on Bitcoin privacy.
@@ -30,6 +28,8 @@ But before that, I’d like to credit some attendees and link to their articles 
 - [Danger Shony](https://twitter.com/dangershony)
 - [Tim Ruffing](https://twitter.com/real_or_random)
 - [Adam Gibson](https://twitter.com/waxwing__)
+
+---
 
 ## The Basics
 

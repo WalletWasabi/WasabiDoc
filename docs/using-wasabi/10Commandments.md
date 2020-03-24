@@ -65,7 +65,7 @@ For more information, please see the discussions [here](https://www.reddit.com/r
 
 ## 7. Avoid 3rd party servers
 
-Wasabi is designed to allow users to see their balances [without any concern that a third party](https://docs.wasabiwallet.io/why-wasabi/NetworkLevelPrivacy.md) would be able to link your addresses to you, or to each other.
+Wasabi is designed to allow users to see their balances [without any concern that a third party](/why-wasabi/NetworkLevelPrivacy.md) would be able to link your addresses to you, or to each other.
 But if you proceed to enter your address into a block explorer, or use a wallet which trusts a third party server with your public keys - all bets are off.
 So if you want to check on the status of a transaction or the balance on an address, you should first:
 

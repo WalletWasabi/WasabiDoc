@@ -9,6 +9,8 @@
 
 [[toc]]
 
+---
+
 ## Using hardware wallet step-by-step
 
 1. Start your Wasabi Wallet and connect your hardware wallet with USB.
@@ -138,7 +140,7 @@ For the first setup you need to connect the hardware wallet to the computer that
 
 ### Send bitcoins from hot to cold Wasabi
 
-:::tip Thrid
+:::tip Third
 In order to keep the mixed coins separate and without revealing that you own all of them, send the <img src="/ShieldCheckmark.png" alt="checkmark" class="shield" /> coins without consolidating them.
 Wait some time in-between sending them, so that timing analysis becomes more difficult.
 :::

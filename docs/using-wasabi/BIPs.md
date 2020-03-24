@@ -7,15 +7,14 @@
 
 # Supported BIPs
 
-- [What is supported today](BIPs.md#what-is-supported-today)
-- [What is not supported](BIPs.md#what-is-not-supported)
+[[toc]]
 
 ---
 
 Wasabi Wallet strives toward establishing solid industry best practices and standards.
 Here is a list of all the supported and integrated Bitcoin Improvement Proposals:
 
-## What is supported today
+## What is supported
 
 :::details
 ### BIP 21: URI Scheme

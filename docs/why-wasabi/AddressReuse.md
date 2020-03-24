@@ -7,8 +7,6 @@
 
 # Address Reuse
 
-[[toc]]
-
 The first rule of Bitcoin privacy:
 
 > Never reuse addresses!
@@ -17,9 +15,13 @@ The second rule of Bitcoin privacy:
 
 > NEVER reuse addresses!!
 
+[[toc]]
+
+---
+
 ## Problem
 
-#### Easy wallet clustering
+### Easy wallet clustering
 
 If the an address is used more than once, it means that the same private key can spend all its coins.
 It is very easy to find all the UTXOs of an address, and thus to find out how many bitcoin the private key holds.
@@ -47,7 +49,7 @@ This is someone intentionally deanonymizing himself, and he might have quite dub
 
 ## Wasabi's Solution
 
-#### Remove used address from GUI
+### Remove used address from GUI
 
 Wasabi uses the industry best practice [BIP 44 hierarchical deterministic wallet](/using-wasabi/BIPs.md#bip-44-multi-account-hierarchy-for-deterministic-wallets) where, from one master secret, a tree structure of child private keys are generated.
 It is deterministic because the same parent secret always calculates the same child private keys.
