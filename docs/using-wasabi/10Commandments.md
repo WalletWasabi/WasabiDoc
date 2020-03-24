@@ -21,7 +21,7 @@ When installing the wallet, you may choose to [download the package](/using-wasa
 Please [verify the signatures](/using-wasabi/InstallPackage.md) after completing downloads.
 The concern here is that you may accidentally fall for a phishing attempt and be on a malicious site downloading a malicious piece of software.
 
-## 3. Backup your recovery words and password (BOTH!)
+## 3. Back up your recovery words and password (BOTH!)
 
 When [creating a new wallet](/using-wasabi/WalletGeneration.md), write down your recovery words **AND** password and store them safely in separate locations.
 This way, if a malicious person manages to find one of them, he or she still needs to find the other in order to gain access to your coins.
