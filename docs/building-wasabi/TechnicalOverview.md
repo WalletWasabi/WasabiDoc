@@ -124,7 +124,7 @@ However, since UTXOs CoinJoined by using Wasabi can be recognized as such by the
 In the future, as more and more wallets adopt bech32, Wasabi developers will have to look at how to scale the performance and network usage of the wallet.
 
 Failing that, Wasabi's initial sync will slow down.
-The [Bitcoin Wiki](https://en.bitcoin.it/wiki/Bech32_adoption#Software_Wallets) and [When Segwit](https://whensegwit.com/#who) show the wallets that can be used to send to and receive from Wasabi.
+The [Bitcoin Wiki](https://en.bitcoin.it/wiki/Bech32_adoption#Software_Wallets), [When Segwit](https://whensegwit.com/#who), and [Bitcoin Optech](https://bitcoinops.org/en/compatibility/#segwit-addresses) show the wallets/exchanges that can be used to send to and receive from Wasabi.
 
 Wasabi also maintains a connection to the Bitcoin P2P network over Tor.
 After Wasabi receives the filters from the backend, it can download the required blocks (there are false positives, too) one block from one peer.
