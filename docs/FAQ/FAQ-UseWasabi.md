@@ -1037,19 +1037,25 @@ So it is good advice to encrypt this wallet file.
 :::details
 ### Can I recover my wallet without the password?
 
-No, the password is necessary to spend your bitcoin or to recover your wallet, the password you set is used as a 13th word (passphrase) as described in BIP39, you should back it up when you generate a wallet.
+No.
+The password you set is used as a 13th word (passphrase) as described in BIP39, you should back it up when you generate a wallet.
+It is necessary to spend your bitcoin or to recover your wallet.
+:::
 
-Try to use the [Password Finder Tool](https://docs.wasabiwallet.io/using-wasabi/PasswordFinder.html) to find your password.
+:::details
+### What should I do if I forget my password?
+
+Try to use the [Password Finder Tool](/using-wasabi/PasswordFinder.md) to find your password.
 Having a close guess of what the password is increases the possibility that you get your password.
 :::
 
-::::details
-### I lost seed words but still have .json file and the password. Is my wallet still recoverable?
+:::details
+### I lost the recovery words but I still have the .json file and the password. Is my wallet still recoverable?
 
-Yes, the .json file contains your private keys in it.
-That gives you access to your wallet in combination with the passphrase that you still have.
+Yes, but in this case it is advisable to create a new wallet and back up the new recovery words and the password, then move your bitcoin there.
 
-In this case it is still advisable to create a new wallet from scratch and save the new seed + password.
+The .json file contains the encrypted secret that requires the password to derive your private keys.
+That gives you access to your bitcoin.
 :::
 
 ## Hardware Wallet
