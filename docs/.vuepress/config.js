@@ -26,6 +26,7 @@ module.exports = {
     ["link", { rel: "stylesheet", href: "https://fonts.googleapis.com/css?family=Inconsolata:400,700|Playfair+Display:700&display=swap" }],
     ["meta", { name: "msapplication-TileColor", content: themeColor }],
     ["meta", { name: "theme-color", content: themeColor }],
+    ["meta", { name: "google-site-verification", content: "JFhwCGTYfDv-U2qJwHzdovZaD4c-SoRGRTJuD_MF-x0" }],
   ],
   plugins: [
     "@vuepress/back-to-top",
