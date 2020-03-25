@@ -23,7 +23,7 @@ The second rule of Bitcoin privacy:
 
 ### Easy wallet clustering
 
-If the an address is used more than once, it means that the same private key can spend all its coins.
+If an address is used more than once, it means that the same private key can spend all its coins.
 It is very easy to find all the UTXOs of an address, and thus to find out how many bitcoin the private key holds.
 
 Further, in a transaction where one output has a reused address, then it is very likely that this output is the payment destination, and not the change.
