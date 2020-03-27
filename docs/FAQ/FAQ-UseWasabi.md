@@ -646,6 +646,7 @@ USA: On May 9, 2019, the Financial Crimes Enforcement Network (FinCEN) issued an
 
 Wasabi is an Anonymizing software provider so it is not a money transmitter, thus not under Bank Secrecy Act (BSA) regulations.
 Basically we can continue to operate like now and it is compliant.
+Read more: [CoinJoin Legal Concern](/why-wasabi/LegalConcern.md)
 
 Here's a great explanation about it:
 
