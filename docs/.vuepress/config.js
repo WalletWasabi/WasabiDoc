@@ -134,7 +134,8 @@ module.exports = {
           sidebarDepth: 2,
           children: [
             "/why-wasabi/WhyPrivacyImportant.md",
-            "/why-wasabi/WhyFinancialPrivacy.md"
+            "/why-wasabi/WhyFinancialPrivacy.md",
+            "/using-wasabi/LegalConcern.md"
           ]
         },
 
