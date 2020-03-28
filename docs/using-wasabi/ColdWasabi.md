@@ -178,7 +178,7 @@ After building Wasabi, open a new terminal and run `dotnet run -- mix --wallet:M
 The software stops when it finishes the mix or if you press `CTRL+C` (`CMD+C` on macOS) to stop it.
 
 Wasabi coinjoins normally until your target anonymity set is reached (default 50).
-This number can be changed by editing your `Wallet1.json` file, located inside [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder)
+This number can be changed by editing your `Wallet1.json` file, located inside [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder).
 After that it starts registering outputs to the CoinJoins from your destination wallet, thus you are slowly and privately CoinJoining your money to your cold wallet.
 
 :::tip Success!
