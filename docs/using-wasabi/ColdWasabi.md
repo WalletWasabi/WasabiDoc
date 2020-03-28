@@ -175,9 +175,6 @@ Alternatively go to the `Build Transaction` tab and do the Coldcard SD card work
 
 After building Wasabi, open a new terminal and run `dotnet run -- mix --wallet:MyWallet1 --destination:MyWallet2`, where `MyWallet1` is the name of your _hot_ Wasabi Wallet and `MyWallet2` is your fresh imported _cold_ Wallet from Coldcard.
 
-`dotnet run` is what you use to build & run Wasabi, `--` is escaping out the argument list of `dotnet` command and tells it to let the software parse the rest of the arguments itself.
-The software is Wasabi and its command is mix .
-
 The software stops when it finishes the mix or if you press `CTRL+C` (`CMD+C` on macOS) to stop it.
 
 Wasabi CoinJoins normally until your target anonymity set is reached (default 50).
