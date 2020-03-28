@@ -117,7 +117,7 @@ There are two different ways of following the Cold-Wasabi Protocol, one using th
 - [GUI tutorial](/using-wasabi/ColdWasabi.md#gui-tutorial)
 - [Daemon tutorial](/using-wasabi/ColdWasabi.md#daemon-tutorial)
 
-At the moment, only the latter allows to carry out the whole process (CoinJoin then Send) automatically, while the process through GUI requires that you enter the addresses (cold) to send the X manually.
+At the moment, only the latter allows to CoinJoin to a different wallet.
 
 ## GUI tutorial
 
