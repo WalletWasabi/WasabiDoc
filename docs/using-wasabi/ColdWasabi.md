@@ -173,7 +173,7 @@ Alternatively go to the `Build Transaction` tab and do the Coldcard SD card work
 
 ### Mix to Another Wallet
 
-After building Wasabi, open a new terminal and run `dotnet run -- mix --wallet:MyWallet1 --destination:MyWallet2`, where `MyWallet1` is the name of your _hot_ Wasabi Wallet and `MyWallet2` is your fresh imported _cold_ Wallet from Coldcard.
+Use the [daemon](/using-wasabi/Daemon.md) and run `dotnet run -- mix --wallet:MyWallet1 --destination:MyWallet2`, where `MyWallet1` is the name of your _hot_ Wasabi Wallet and `MyWallet2` is your  _cold_ Wallet from Coldcard.
 
 The software stops when it finishes the mix or if you press `CTRL+C` (`CMD+C` on macOS) to stop it.
 
