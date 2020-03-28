@@ -693,7 +693,7 @@ USA: On May 9, 2019, the Financial Crimes Enforcement Network (FinCEN) issued an
 > An anonymizing software provider is not a money transmitter. FinCEN regulations exempt from the definition of money transmitter those persons providing "the delivery, communication, or network access services used by a money transmitter to support money transmission services."
 
 Wasabi is an Anonymizing software provider so it is not a money transmitter, thus not under Bank Secrecy Act (BSA) regulations.
-Basically we can continue to operate like now and it is compliant.
+Basically we can continue to operate like now and [it is compliant](/why-wasabi/LegalConcern.md).
 
 Here's a great explanation about it:
 
