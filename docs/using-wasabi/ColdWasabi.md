@@ -179,7 +179,7 @@ The software stops when it finishes the mix or if you press `CTRL+C` (`CMD+C` on
 
 Wasabi coinjoins normally until your target anonymity set is reached (default 50).
 This number can be changed by editing your `Wallet1.json` file, located inside [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder).
-After that it starts registering outputs to the CoinJoins from your destination wallet, thus you are slowly and privately CoinJoining your money to your cold wallet.
+After that it starts registering outputs from the CoinJoin to your destination wallet, thus you are slowly and privately coinjoining your money to your cold wallet.
 
 :::tip Success!
 おめでとうございます!
