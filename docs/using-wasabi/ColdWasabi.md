@@ -171,21 +171,6 @@ Alternatively go to the `Build Transaction` tab and do the Coldcard SD card work
 
 ## Daemon tutorial
 
-#### Import the skeleton wallet
-
-Power your Coldcard on a power bank or electricity socket, then unlock it with your pin.
-Put in a Micro SD card and go to `Advanced > MicroSD Card > Export Wallet > Wasabi Wallet`.
-This will write the public keys, wallet fingerprint, derivation path and other metadata to a skeleton file `new-wallet.json`.
-
-:::warning Protect your public keys!
-This file does not include your private keys, so an attacker cannot use it to spend your bitcoin.
-However, he can use it to derive a full transaction history, thus it is a potential privacy leak.
-:::
-
-Now plug in the SD card to your computer, and open Wasabi Wallet.
-Go to the `Hardware Wallet` tab, and click the button `Import Coldcard`, browse to the SD card and select the `new-wallet.json` file.
-Wasabi will automatically import and modify this skeleton file and store it in your `Wallets` and `WalletBackups` folders.
-
 ### Mix to Another Wallet
 
 After building Wasabi, open a new terminal and run `dotnet run -- mix --wallet:MyWallet1 --destination:MyWallet2`, where `MyWallet1` is the name of your _hot_ Wasabi Wallet and `MyWallet2` is your fresh imported _cold_ Wallet from Coldcard.
