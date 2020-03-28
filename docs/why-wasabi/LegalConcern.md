@@ -9,24 +9,26 @@
 
 [[toc]] 
 
-Using Bitcoin and other cryptocurrencies in the everyday course of businesses are becoming more and more popular.
+---
+
+Using Bitcoin and other cryptocurrencies in the everyday course of businesses is becoming more and more popular.
 Digital money has a lot of advantages, from unstoppable transactions, to low fees, and instant execution of international payments.
 But all come at a price: the blockchain stores sensitive information like the amount and involved addresses of a transaction, giving away too much business-related information to the public.
-However, this does not necessarily need to be the case. 
+However, this does not necessarily need to be the case.
 
 ## Overview
 
-A CoinJoin transaction obfuscates the history of a given coin, making it hard to trace a certain coin back to the originator of the funds.
-The implementation of Wasabi Wallet CoinJoin happens in a way that the original user gets back the fund with an obfuscated history.
+A CoinJoin transaction obfuscates the history of a given coin, making it hard to trace the coin back to the originator of the funds.
+The implementation of Wasabi Wallet CoinJoin allows the original user to get back his funds with an obfuscated history.
 
 It is often assumed that the main problem with an obfuscated transaction history is that financial regulators may have concerns about money laundering.
-However, this is only the first impression, if we go into the details it can become more transparent why institutions should not worry about violating AML rules and why companies could have a direct competitive advantage of using CoinJoin transactions. 
+However, this is only the first impression, if we go into the details it can become more transparent why institutions should not worry about violating AML rules and why companies could have a direct competitive advantage using CoinJoin transactions.
 
 With a transparent financial track record, companies paying with cryptocurrencies may find themselves in a squeezing situation, where their suppliers, clients, and competitors are aware of all of their payment steps and prices.
 For institutional investors each step would be scrutinized by the market causing intentional or unintentional price manipulation.
 
-While the Bitcoin blockchain does not store personal information about the owners of the specific Bitcoin addresses, using metadata it is still possible to link Bitcoin addresses to certain companies and individuals.
-If such a link can be established, all past and future transactions can be always traced.
+While the Bitcoin blockchain does not store personal information about the owners of the specific Bitcoin addresses, using metadata makes it possible to link Bitcoin addresses to certain companies and individuals.
+If such a link can be established, all past and future transactions can be traced.
 
 ## CoinJoin transactions
 
@@ -51,13 +53,13 @@ Since the Bitcoin blockchain is transparent, transactions cannot be kept secret.
 Currently, one prevalent solution in Bitcoin to gain privacy is to CoinJoin the different coins to obfuscate their history.
 By the use of this tool, a custodial service provider can at least start to protect its users’ financial privacy.
 
-## Privacy perspective from the companies point of view
+## Privacy perspective from the companies' point of view
 
-The essence of competitive advantages to keep and hold business secrets.
-Each and every successful company has developed its own mechanism to deliver the best product and services to its customers.
+The essence of competitive advantages is to keep and hold business secrets.
+Each and every successful company has developed its own mechanism to deliver the best products and services to its customers.
 To reach this, they usually use a secret sauce, called the business secret to deliver the results.
-If everything, even financial payment becomes fully transparent this business secret is evaporating, leaving a lot of confusion, anger and jealousy behind.
-Let’s look into this a bit deeper what exactly this means for companies, who would like to use Bitcoin as the payment method, where all transactions are recorded on the blockchain.
+If anything, when a financial payment becomes fully transparent this business secret is evaporating
+Let’s look a bit deeper into what exactly this means for companies, who would like to use Bitcoin as the payment method, where all transactions are recorded on the blockchain.
 
 ### Suppliers
 
@@ -66,12 +68,12 @@ For these products and services, of course, they pay a reasonable price.
 However, this price is usually negotiable, especially in B2B relationships or large scale orders.
 What would happen if all of a sudden, the price of raw materials for a company becomes fully public?
 Other competitors can now demand similar discounts, forcing industries into a vicious cycle of price reduction.
-As each and every price discount is negotiated on a case by case basis, considering factors as creditworthiness and timing of payment, transparent supplier prices would only cause enormous pressure on suppliers to deal with negotiations. 
+As each and every price discount is negotiated on a case by case basis, considering factors as creditworthiness and timing of payment, transparent supplier prices would only cause enormous pressure on suppliers to deal with negotiations.
 
 Beyond the price of products, the timing of payments is also fully transparent on the blockchain.
 However, in certain circumstances, it is also a crucial business secret to keep the information of the sequence of invoice payments indoors.
 Considering cash flow implications, it can happen that one invoice is paid on time, while other invoices are still pending payment.
-In the case of blockchain transactions however all payments are transparent, so it can be clear for each counterparty that only a selected number of invoices has been paid even if the sufficient funds are available that can cause unnecessary tension between business partners.
+In the case of blockchain transactions however all payments are transparent, so it can be clear for each counterparty that only a selected number of invoices has been paid even if the sufficient funds are available which can cause unnecessary tension between business partners.
 
 Additionally, if all historical transactions of a company are known, its creditworthiness might be considered incorrectly.
 It can happen that the creditworthiness is considered better than it is, if the incoming funds to a specific address is extraordinarily high, but these funds are needed in other parts of the business, so the overall solvency of the business can be still negative despite the large funds.
@@ -86,7 +88,7 @@ But in reality, the seasonality of incoming funds is not disclosed for all compa
 
 Another aspect is the possible price negotiations on the client-side.
 If a client finds out that another client is paying less for a service or product, they can demand similar discounts which can result in a downward price pressure in the industry.
-This can ultimately result in companies going out of businesses who cannot adjust to the lower price levels which are below the equilibrium prices. 
+This can ultimately result in companies going out of businesses if they cannot adjust to the lower price levels which are below the equilibrium prices.
 
 ### Competitors
 
@@ -97,7 +99,7 @@ Although external factors should be considered in pricing, they should not be th
 
 ### Employees
 
-There is now a growing number of companies that are paying their employees the salaries in bitcoin due to the trustless transaction with low fees especially with international transactions. 
+There is now a growing number of companies that are paying their employees' salaries in bitcoin due to the trustless transactions with low fees especially with international transactions.
 
 With transparent transaction history, employees would be aware of each other’s salaries without the company disclosing this information.
 Although there are some theories supporting a transparent salary structure, up to now the majority of the companies prefer to keep salaries as secret and obligate employees to keep salary and wage information confidential.
@@ -106,18 +108,18 @@ Obfuscated transaction history can help companies to keep salary information con
 ### Phishing attacks
 
 Disclosing financial information for a company makes them more vulnerable to phishing attacks.
-If the exact time and amount of payment are publicly known, attackers can use this information to build trust with the company and squeeze out other crucial, business information pretending to be a trusted partner.  
+If the exact time and amount of payment are publicly known, attackers can use this information to build trust with the company and squeeze out other crucial business information pretending to be a trusted partner.
 
 
 ## Privacy perspective from the institutional investor’s point of view
 
-The Bitcoin market is considered [fairly concentrated](https://bitinfocharts.com/top-100-richest-bitcoin-addresses.html) in the sense that our of the millions of Bitcoin addresses, less than 1% holds 87% of bitcoins.
+The Bitcoin market is considered [fairly concentrated](https://bitinfocharts.com/top-100-richest-bitcoin-addresses.html) in the sense that out of the millions of Bitcoin addresses, less than 1% holds 87% of bitcoins.
 
 ![](/AddressDistribution.png)
 
 Institutional investors and cryptocurrency exchanges are holding large sums of bitcoin on a blockchain where transactions are completely transparent.
 These so-called whales sometimes need to move large amounts of coins for any reason which can often lead to unintentional price manipulation.
-If a large bitcoin holding is on the move, it can always raise concern in the media regarding the future of bitcoin, causing unnecessary price fluctuations.
+If a large bitcoin holding is on the move, it can always raise concern in the media regarding the future of Bitcoin, causing unnecessary price fluctuations.
 In the case of unintentional price manipulation, it is difficult to prove there has been no insider trading on the institutional side, which can cause loss of faith from the clients.
 
 Using obfuscated transaction history in large bitcoin transactions can help to keep the market stable and avoid unintentional price manipulations. 
@@ -142,10 +144,10 @@ These set different rules to be kept in order to preserve individual privacy bot
 By now in mainly all jurisdictions custodial cryptocurrency service providers (wallet, exchange, payment processor, etc.) are requested to run KYC/AML checks on users and their transactions.
 The KYC process and inner policies should ensure personal data protection.
 The accounts are assigned to these individual users, who are verified by the provider.
-This means the provider identified the user just like a legacy bank would do.
+This means the provider identifies the user just like a legacy bank would do.
 The different AML checks are run on deposits or withdrawals.
 The suspicious transactions can be linked to users based on the transactions that are initiated by them personally.
-KYC and AML procedures now ensure that all transactions involving fiat (like buying and selling bitcoin on exchanges for fiat currency) have a detailed background in terms of who is sending what money to whom, the identification of transactions are even more strict than in the current banking world, where two companies or individuals can send even large funds without the need to verify the source of funds.
+KYC and AML procedures now ensure that all transactions involving fiat (like buying and selling bitcoin on exchanges for fiat currency) have a detailed background in terms of who is sending what money to whom, the identification of transactions are even more strict than in the current banking world, where two companies or individuals can send even large funds without the need to verify their source.
  
 ### Using CoinJoin as a custodial service provider
 
@@ -163,12 +165,12 @@ The only thing CoinJoin does, in this case, is protecting the user from third-pa
 ### FinCEN guidance on legal framework
 
 The Financial Crimes Enforcement Network (FinCEN) is a bureau of the United States Department of the Treasury that collects and analyzes information about financial transactions.
-It is claimed to be in order to combat domestic and international money laundering, terrorist financing, and other financial crimes.
+It is claimed that its job is to combat domestic and international money laundering, terrorist financing, and other financial crimes.
 Its latest regulation regarding cryptocurrencies is in effect since May 2019.
 The regulation places money transmitting in the center of the discussion.
-Money transmitters must develop a certain process in terms of reporting and monitoring to help to combat money laundering and terrorist financing.
+Money transmitters must develop a certain process in terms of reporting and monitoring to help combat money laundering and terrorist financing.
 FinCEN guidance explicitly states that those persons and businesses who provide the delivery, communication, or network access services used by a money transmitter to support money transmission services are NOT considered money transmitters.
-Furthermore, in section 4.5 anonymity-enhanced cryptocurrency transactions are detailed and concluded that they are subject to the same AML and KYC regulations as any other transactions. 
+Furthermore, in section 4.5 anonymity-enhanced cryptocurrency transactions are detailed and concluded that they are subject to the same AML and KYC regulations as any other transactions.
 This means in an investigation even the obfuscated transaction history can be given out to authorities upon request if it is needed for a procedure, so it can be concluded that using CoinJoin transactions will not help money-laundering.
 The KYC-ed participant’s data and pre-obfuscated transaction history can be given away to the authorities.
 
