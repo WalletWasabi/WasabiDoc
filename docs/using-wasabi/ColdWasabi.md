@@ -114,8 +114,6 @@ Because you cannot do CoinJoin with the private keys on the hardware wallet, you
 A 'Hot' (CoinJoin) and a 'Cold' (Storage) Wasabi Wallet instances will both be running side-by-side, label them accordingly so you don't mix them up.
 
 There are two different ways of following the Cold-Wasabi Protocol, one using the GUI (Graphical User Interface) and one using the [daemon](/using-wasabi/Daemon.md).
-- [GUI tutorial](/using-wasabi/ColdWasabi.md#gui-tutorial)
-- [Daemon tutorial](/using-wasabi/ColdWasabi.md#daemon-tutorial)
 
 At the moment, only the latter allows to CoinJoin to a different wallet.
 
