@@ -171,11 +171,6 @@ Alternatively go to the `Build Transaction` tab and do the Coldcard SD card work
 
 ## Daemon tutorial
 
-### Get Requirements
-
-Since the feature is not yet released, we’ll proceed with building Wasabi from source code.
-Get [the requirements](/using-wasabi/BuildSource.md#get-the-requirements) and [Wasabi](/using-wasabi/BuildSource.md#get-wasabi).
-
 #### Import the skeleton wallet
 
 Power your Coldcard on a power bank or electricity socket, then unlock it with your pin.
