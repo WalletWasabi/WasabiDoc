@@ -113,7 +113,7 @@ This is how you can safely eat cold Wasabi, or store your coins on a hardware wa
 Because you cannot do CoinJoin with the private keys on the hardware wallet, you will need to generate and load two different Wasabi Wallets.
 A 'Hot' (CoinJoin) and a 'Cold' (Storage) Wasabi Wallet instances will both be running side-by-side, label them accordingly so you don't mix them up.
 
-There are two different ways of following the Cold-Wasabi Protocol, one is through the GUI (Graphical User Interface) and one through the [daemon](/using-wasabi/Daemon.md):
+There are two different ways of following the Cold-Wasabi Protocol, one using the GUI (Graphical User Interface) and one using the [daemon](/using-wasabi/Daemon.md).
 - [GUI tutorial](/using-wasabi/ColdWasabi.md#gui-tutorial)
 - [Daemon tutorial](/using-wasabi/ColdWasabi.md#daemon-tutorial)
 
