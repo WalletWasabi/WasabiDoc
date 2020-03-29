@@ -113,6 +113,12 @@ This is how you can safely eat cold Wasabi, or store your coins on a hardware wa
 Because you cannot do CoinJoin with the private keys on the hardware wallet, you will need to generate and load two different Wasabi Wallets.
 A 'Hot' (CoinJoin) and a 'Cold' (Storage) Wasabi Wallet instances will both be running side-by-side, label them accordingly so you don't mix them up.
 
+There are two different ways of following the Cold-Wasabi Protocol, one using the GUI (Graphical User Interface) and one using the [daemon](/using-wasabi/Daemon.md).
+
+At the moment, only the latter allows to CoinJoin to a different wallet.
+
+## GUI tutorial
+
 ### CoinJoin on the hot Wasabi
 
 :::tip First
@@ -160,6 +166,18 @@ You can at any time spend the bitcoin from the cold Wasabi.
 13. Load the cold Wasabi wallet.
 14. Go to the `Send`, select the coins and destination, then sign the transaction with the hardware wallet.
 Alternatively go to the `Build Transaction` tab and do the Coldcard SD card workflow.
+
+## Daemon tutorial
+
+### Mix to Another Wallet
+
+Use the [daemon](/using-wasabi/Daemon.md) and run `dotnet run -- mix --wallet:MyWallet1 --destination:MyWallet2`, where `MyWallet1` is the name of your _hot_ Wasabi Wallet and `MyWallet2` is your  _cold_ Wallet from Coldcard.
+
+The software stops when it finishes the mix or if you press `CTRL+C` (`CMD+C` on macOS) to stop it.
+
+Wasabi coinjoins normally until your target anonymity set is reached (default 50).
+This number can be changed by editing your `Wallet1.json` file, located inside [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder).
+After that it starts registering outputs from the CoinJoin to your destination wallet, thus you are slowly and privately coinjoining your money to your cold wallet.
 
 :::tip Success!
 おめでとうございます!
