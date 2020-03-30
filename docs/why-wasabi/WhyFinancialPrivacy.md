@@ -42,7 +42,7 @@ Hundreds of millions of people around the globe are not accepted in their societ
 
 Maintaining an identity with a large following might require paid services such as blogs, logo designs, stock photos, VPNs, or translations.
 Without the ability to pay for these services anonymously, you would be forced to reveal your true identity in order to maintain your pseudonym situation.
-This clearly makes no sense, and has potentially dangerous ramifications.
+This clearly makes no sense and has potentially dangerous ramifications.
 
 ## How Bitcoin empowers anonymity
 
