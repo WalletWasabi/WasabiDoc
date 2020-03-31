@@ -22,7 +22,7 @@ The ability to keep a secret is an essential part of the human experience.
 
 Economic trade of goods and services is based on mutual beneficial voluntary action.
 But when an outside authority demands that the peers reveal the details of their exchange, then they must beg for permission of every act.
-Yet individuals can use the tools of self defense at their disposal to regain their sovereignty.
+Yet individuals can use the tools of self-defense at their disposal to regain their sovereignty.
 
 > Without financial privacy, there is no human dignity.
 
