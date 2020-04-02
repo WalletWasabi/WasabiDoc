@@ -50,5 +50,5 @@ There was a total bounty of up to 0.1 bitcoin.
 ## Contribution game to review v1.1.11
 
 After more than three months of work since the previous major release of v1.1.10, there was yet another contribution game to review the [v1.1.11 release candidates](https://github.com/molnard/WalletWasabi/releases/tag/v1.1.11rc1).
-There were [detialed ŧest vectors](https://github.com/zkSNACKs/WalletWasabi/issues/3396) to ensure that all the new additions were thoroughly covered in the review.
+There were [detailed test vectors](https://github.com/zkSNACKs/WalletWasabi/issues/3396) to ensure that all the new additions were thoroughly covered in the review.
 This contribution game had a total bounty of up to `0.3 bitcoin`, sponsored by zkSNACKs.
