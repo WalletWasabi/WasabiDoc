@@ -134,7 +134,7 @@ foo
 :::
 ```
 
-A yellow box with a [cautious warning](https://docs.wasabiwallet.io/using-wasabi/WalletRecovery.html#backup-wallet-file-and-password):
+A yellow box with a [cautious warning](https://docs.wasabiwallet.io/using-wasabi/WalletRecovery.html#back-up-wallet-file-and-password):
 
 ```
 :::warning

@@ -19,6 +19,8 @@ This page contains online form submissions, email template, addresses and GUI tu
 
 [[toc]]
 
+---
+
 ## Email Template
 :::tip
 Ensure that the email subject line starts with the word FALSE.

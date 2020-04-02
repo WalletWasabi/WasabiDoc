@@ -11,6 +11,8 @@ There are two different ways that you can recover an already used wallet in Wasa
 
 [[toc]]
 
+---
+
 ## Mnemonic Recovery Words and Password
 
 Wasabi uses the [BIP 39](/using-wasabi/BIPs.md#bip-39-mnemonic-code-for-generating-deterministic-keys) mnemonic code for generating [BIP 32](/using-wasabi/BIPs.md#bip-32-hierarchical-deterministic-wallets) hierarchical deterministic wallets.
@@ -32,7 +34,7 @@ The gap limit is about how far Wasabi will check the HD wallet structure for con
 
 ![](/WalletRecoveryAdvanced.png)
 
-## Backup Wallet File and Password
+## Back up Wallet File and Password
 
 Wasabi Wallet creates a backup of your wallet file inside `WalletBackups` in your [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder).
 If you have done a backup of this file, then you can copy it to the `Wallets` folder, and upon the next restart of Wasabi, it will show this wallet in the `Wallet Manager`, from there you can open it as usual.

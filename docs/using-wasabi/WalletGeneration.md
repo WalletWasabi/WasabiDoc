@@ -29,7 +29,7 @@ It encrypts your secrets, and you will need it every time you want to spend bitc
 If you are uncertain about how to create a secure password, refer to [Password basics](/using-wasabi/WalletGeneration.md#password-basics) and [Password Best Practices](/using-wasabi/PasswordBestPractices.md) for helpful information.
 
 
-:::danger Backup your password!
+:::danger Back up your password!
 Without the password, you cannot spend your bitcoin or recover your wallet, even if you have the recovery words (Seed phrase).
 So, triple-check that you have a proper backup!
 :::
@@ -45,7 +45,7 @@ You can use this seed phrase _with_ your password to recover your wallet on a di
 If you have only the recovery words, but not the password, then you cannot spend the bitcoin nor recover this wallet.
 But whoever has both, gets full access to all the transaction history and gains control over every satoshi locked up in this wallet.
 
-:::danger Backup your recovery words!
+:::danger Back up your recovery words!
 Without the recovery words (Seed phrase) AND the password, you cannot recover your wallet.
 So, triple-check that you have a proper backup!
 Make sure the backup of your recovery words is stored separately from the password backup.

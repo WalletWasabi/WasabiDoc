@@ -32,15 +32,8 @@ An observer cannot determine which output belongs to which input, and neither ca
 This makes it difficult for outside parties to trace where a particular coin originated from and where it was sent to (as opposed to regular bitcoin transactions, where there is usually one sender and one receiver).
 
 This can be done with non-custodial software like Wasabi that eliminates the risk of funds disappearing or being stolen.
-Each of the signatures are created on the participants’ computers, so anyone trying to connect the signatures is unable to alter the transaction or redirect the funds.
+Each of the signatures are created on the participants’ computers after thorough verification, so nobody can alter the transaction or redirect the funds.
 The funds will always be in a Bitcoin address that you control.
-
-It’s possible to do this in a decentralized way so that the service does not rely on external parties or centralized servers.
-It just needs the participants of the transaction.
-
-CoinJoin can be applied multiple times, and as many transactions are grouped together, participants may save on transaction fees.
-CoinJoin is the preferred method of gaining privacy in the Bitcoin network.
-It is even possible that this functionality might one day be included directly on the protocol level as standard, as some altcoins already do.
 
 In very simple terms, CoinJoin means: “when you want to make a transaction, find someone else who also wants to make a transaction and make a joint transaction together”.
 
@@ -51,36 +44,31 @@ See also the [Bitcoin Wiki on CoinJoins](https://en.bitcoin.it/wiki/CoinJoin)
 ### Do I need to trust Wasabi with my coins?
 
 No, Wasabi's CoinJoin implementation is trustless by design.
-The participants do not need to trust each other or any third party. Both the sending address (the CoinJoin input) and the receiving address (the CoinJoin output) are controlled by your own private keys.
-Wasabi merely coordinates the process of combining the inputs of the participants into one single transaction, but the wallet can neither steal your coins, nor figure out which outputs belong to which inputs (look up “[Chaumian CoinJoin](https://github.com/nopara73/ZeroLink#ii-chaumian-coinjoin)” if you want to know more).
+The participants do not need to trust each other or any third party.
+Both the sending address (the CoinJoin input) and the receiving address (the CoinJoin output) are controlled by your own private keys.
+The Wasabi server merely coordinates the process of combining the inputs of the participants into one single transaction, but the Wasabi Wallet can neither steal your coins, nor figure out which outputs belong to which inputs (look up “[Chaumian CoinJoin](/using-wasabi/CoinJoin.md)” if you want to know more).
 :::
 
 :::details
 ### What is the privacy I get after mixing with Wasabi?
+
 This depends on how you handle your outputs after the CoinJoin.
 There are some ways how you can unintentionally undo the mixing by being careless.
-For example, if you make a 1.8 BTC transaction into Wasabi, do the CoinJoin, and then make one single outgoing transaction of 1.8 BTC, a third party observer can reasonably assume that both transactions belong to one single entity, due to both amounts being virtually the same even though they have been through a CoinJoin.
-In this scenario, Wasabi will barely make any improvement to your privacy, although it will still have a protective effect against unsophisticated observers.
-
+For example, if you send a mixed coin to an already used address, then anyone can see that both coins are controlled by the same entity and more importantly anyone who know that the address is yours know that you own that mixed coin.
+[Address reuse](/why-wasabi/AddressReuse.md) is very bad for your privacy.
 Another deanonymizing scenario happens when you combine mixed outputs with unmixed ones when sending: a third party will be able to make the connection between them as belonging to the same sender.
+This is why you need to be careful with [change coins](/using-wasabi/ChangeCoins.md).
 
 The practice of being careful with your post-mix outputs is commonly facilitated through coin control, which is the default way of interacting with the wallet.
-Find out more about coin control it [here](https://medium.com/@nopara73/coin-control-is-must-learn-if-you-care-about-your-privacy-in-bitcoin-33b9a5f224a2).
+Find out more about coin control in [here](/why-wasabi/Coins.md).
 :::
 
 :::details
 ### Can I hurt my privacy using Wasabi?
 
 No.
-The worst thing that can happen (through user’s negligence post-mix) is that the level of your privacy stays the same as before CoinJoin.
+The worst thing that can happen (through user’s negligence post-mix) is that the level of your privacy stays the same as before the CoinJoin.
 It is crucial to understand that Wasabi is not a fool-proof solution if you neglect to practice coin control after the mixing process.
-:::
-
-:::details
-### Do I need to run Tor?
-
-No you don't need to set up Tor yourself, all Wasabi network traffic goes via Tor by default.
-If you do already have Tor, and it is running, then Wasabi will try to use that first.
 :::
 
 :::details
@@ -112,7 +100,7 @@ Yes, you can check the status of Wasabi-related services and websites (like APIs
 ### What software supplies the block filters that Wasabi uses?
 
 The zkSNACKs coordinator supplies the same set of filters to every client.
-This means you rely on the Wasabi backend providing you valid filters.
+This means you rely on the [Wasabi backend](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Backend) providing you valid filters.
 But because you download the blocks from a random Bitcoin peer-to-peer node - or your own node - the coordinator cannot spy on which blocks you are interested in.
 Furthermore, the random node will only know which block is needed but it won't have any clue which transaction(s) belongs to the wallet.
 :::
@@ -143,7 +131,7 @@ For chat groups you can find us on [Slack](https://join.slack.com/t/tumblebit/sh
 ### Can the coordinator attack me?
 
 The nature of Wasabi is that you should not need to trust the developers or the Wasabi coordinating server, as you can verify that the code does not leak information to anyone.
-The developers have gone to great lengths in an attempt to ensure that the coordinator cannot steal funds nor harvest information (for example, the outputs sent from your Wasabi Wallet are blinded, meaning that even the Wasabi server cannot link the outputs to the inputs).
+The developers have gone to great lengths in an attempt to ensure that the coordinator cannot steal funds nor link inputs to outputs.
 
 The only known possible 'malicious' actions that the server *could* perform are two sides of the same coin;
 - **Blacklisted UTXO's**:
@@ -173,37 +161,20 @@ Key dates:
 - The 1.0 release was on October 31 (on the tenth anniversary of the Bitcoin Whitepaper.)
 
 @[youtube](XORDEX-RrAI,6420)
-
-:::
-
-:::details
-### Who is contributing to Wasabi?
-
-There are many Wasabikas working with great effort and care to manifest this powerful tool of self defense.
-[Many peers](https://github.com/zkSNACKs/WalletWasabi/graphs/contributors) have already contributed to the repository, and more and more supporters are joining the [dojo](/building-wasabi/Dojo.md).
-Four of the main contributors are [Ádám Ficsor](https://github.com/nopara73) [co-founder and CTO of [zkSnacks Ltd](https://zksnacks.com/), co-author of the [zero link Bitcoin fungibility framework](https://github.com/nopara73/ZeroLink)], [Lucas Ontivero](https://github.com/lontivero) [lead engineer of [zkSnacks Ltd](https://zksnacks.com/)], [Dávid Molnár](https://github.com/molnard) [[zkSnacks Ltd](https://zksnacks.com/) employee], and [Dan Walmsley](https://github.com/danwalmsley) [maintainer of [Avalonia UI Framework](https://github.com/AvaloniaUI/Avalonia)].
-For an inclusive list of all the Wasabikas, not just the code developers, please visit the [dojo](/building-wasabi/Dojo.md).
-
-@[youtube](F8xNSOhbWrw)
-
-@[youtube](Yg7_3LIutJA)
-
-@[youtube](X9BB_9faJE8)
-
 :::
 
 ::::details
 ### Why is Wasabi libre and open source software?
 
 Wasabi follows the philosophy behind Bitcoin by making the software open source and by publishing it under MIT License.
-Average Bitcoin users prefer open source software to proprietary software for a number of reasons, including:
+Bitcoin users prefer open source software to proprietary software for a number of reasons, including:
 
 :::tip Control
-Many people prefer open source software because they have more control over that kind of software.
+Many people prefer open source software because they have more control over the software they run.
 :::
 
 They can examine the code to make sure it's not doing anything they don't want it to do, and they can change parts of it they don't like.
-Users who aren't programmers also benefit from open source software, because they can use this software for any purpose they wish—not merely the way someone else thinks they should.
+Users who aren't programmers also benefit from open source software, because they can use this software for any purpose they wish, not merely the way someone else thinks they should.
 
 :::tip Training
 Other people like open source software because it helps them become better programmers.
@@ -241,7 +212,6 @@ Therefore there will always be need for on-chain privacy.
 Ideal fungibility requires every Bitcoin transaction to be indistinguishable from each other, but it is an unrealistic goal.
 ZeroLink's objective is to break all links between separate sets of coins.
 ZeroLink presents a wallet privacy framework coupled with Chaumian CoinJoin, which was first introduced in 2013 by Gregory Maxwell.
-A mixing round runs within seconds, its anonymity set can go beyond a single CoinJoin transaction's if needed, and its DoS resilience presumes a transaction fee environment above $1 Bitcoin.
 Hopefully, ZeroLink will enable the usage of Bitcoin in a fully anonymous way for the first time.
 
 ZeroLink defines a pre-mix and a post-mix wallet and a mixing technique.
@@ -249,7 +219,7 @@ Pre-mix wallet functionality can be added to any Bitcoin wallet without much ove
 Post-mix wallets on the other hand have strong privacy requirements, regarding coin selection, private transaction and balance retrieval, transaction input and output indexing and broadcasting.
 The requirements and recommendations for pre and post-mix wallets together define the Wallet Privacy Framework.
 Coins from pre-mix wallets to post-mix wallets are moved by mixing. Most on-chain mixing techniques, like CoinShuffle, CoinShuffle++ or TumbleBit's Classic Tumbler mode can be used.
-However ZeroLink defines its own mixing technique: Chaumian CoinJoin.
+However ZeroLink defines its own mixing technique: [Chaumian CoinJoin](/using-wasabi/CoinJoin.md).
 
 For the complete explanation please read [ZeroLink: The Bitcoin Fungibility Framework](https://github.com/nopara73/ZeroLink/).
 :::

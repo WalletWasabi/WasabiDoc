@@ -16,6 +16,8 @@ It is often only necessary to associate just one of these addresses to your real
 
 [[toc]]
 
+---
+
 ## Revealing your Bitcoin address before it goes into the blockchain could let others track you
 
 As soon as a Bitcoin address is entered into the blockchain, it is publicly recorded in an immutable distributed ledger.

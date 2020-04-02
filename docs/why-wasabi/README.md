@@ -9,16 +9,19 @@
 
 This is the place with an introduction to privacy in general, and why especially financial privacy is so important.
 Here is covered how Bitcoin is already good for privacy, much better than the incumbent monetary system.
-And why Wasabi can make Bitcoin an even better tool of self defense by default.
+And why Wasabi can make Bitcoin an even better tool of self-defense by default.
+
+---
 
 ## Chapters
 
-#### Why Privacy
+### Why Privacy
 
 - [Why Privacy is Important](/why-wasabi/WhyPrivacyImportant.md)
 - [Why Financial Privacy is Especially Important](/why-wasabi/WhyFinancialPrivacy.md)
+- [CoinJoin Legal Concern](/why-wasabi/LegalConcern.md)
 
-#### Privacy in Bitcoin
+### Privacy in Bitcoin
 - [Address Reuse](/why-wasabi/AddressReuse.md)
 - [Coins](/why-wasabi/Coins.md)
 - [Transaction Graph](/why-wasabi/TransactionGraph.md)

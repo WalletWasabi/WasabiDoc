@@ -9,6 +9,7 @@
 
 [[toc]]
 
+---
 
 ## Types of change
 

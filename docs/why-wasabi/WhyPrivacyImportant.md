@@ -22,11 +22,15 @@ The ability to keep a secret is an essential part of the human experience.
 
 Economic trade of goods and services is based on mutual beneficial voluntary action.
 But when an outside authority demands that the peers reveal the details of their exchange, then they must beg for permission of every act.
-Yet individuals can use the tools of self defense at their disposal to regain their sovereignty.
+Yet individuals can use the tools of self-defense at their disposal to regain their sovereignty.
 
 > Without financial privacy, there is no human dignity.
 
-# Privacy? I don't have anything to hide.
+[[toc]]
+
+---
+
+## Privacy? I don't have anything to hide.
 
 > Over the last 16 months, as I've debated this issue around the world, every single time somebody has said to me, "I don't really worry about invasions of privacy because I don't have anything to hide."
 I always say the same thing to them. I get out a pen, I write down my email address.
@@ -41,12 +45,12 @@ Whether that be having dinner at the table, watching a movie with your kids, or 
 None of these things are illegal by any means but even knowing this, we still keep the curtains and blinds on our windows.
 We clearly have this strong desire for privacy when it comes to our personal life and the public. - Joshua in [The Crypto Paper](https://github.com/cryptoseb/CryptoPaper#let-me-explain-further)
 
-# Read also:
+## Read also:
 - [Nothing to hide argument (Wikipedia)](https://en.wikipedia.org/wiki/Nothing_to_hide_argument)
 - [How do you counter the "I have nothing to hide?" argument? (reddit.com)](https://www.reddit.com/r/privacy/comments/3hynvp/how_do_you_counter_the_i_have_nothing_to_hide/)
 - ['I've Got Nothing to Hide' and Other Misunderstandings of Privacy (Daniel J. Solove - San Diego Law Review)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=998565)
 
-# Quotes
+## Quotes
 > Arguing that you don't care about the right to privacy because you have nothing to hide is no different than saying you don't care about free speech because you have nothing to say. - Edward Snowden on [Reddit](https://www.reddit.com/r/IAmA/comments/36ru89/just_days_left_to_kill_mass_surveillance_under/crglgh2)
 
 > The NSA has built an infrastructure that allows it to intercept almost everything.
