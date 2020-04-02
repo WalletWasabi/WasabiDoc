@@ -181,6 +181,52 @@ In case we try to generate a wallet with too long of a password it will return:
 }
 ```
 
+### selectwallet
+
+Allows the RPC server to open/switch wallets.
+
+```bash
+curl -s --data-binary '{"jsonrpc":"2.0","method":"selectwallet", "params" : ["TestNet"]}' http://127.0.0.1:37128/
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getwalletinfo"}' http://127.0.0.1:37128/ | jq
+```
+
+```json
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "walletName": "TestNet",
+    "walletFile": "/home/user/walletwasabi/client/Wallets/TestNet.json",
+    "extendedAccountPublicKey": "tpubDDJNwA959ut6YbF1bL3XC7rY388rS1EcG5xokPfGjcvV39BAaGoc1BjefhzuP4pzMKAhft4X1d6NHRzUL7emJiLwd2xBmeZ9gR3cAcUEB7G",
+    "extendedAccountZpub": "vpub5ZGDoayZ9GqgaCfvLRVBa2LAN4kJZNkYtEL4q3pMdhQqBeszzjdPcckYPFzwrkZuk8QBZMMXZCZDpgGjVryVpoXSpkp2vJFwZ1KudQ6GMJP",
+    "accountKeyPath": "m/84'/0'/0'",
+    "masterKeyFingerprint": "d95c5299",
+    "balance": 11741169
+  },
+  "id": "1"
+}
+```
+
+```bash
+curl -s --data-binary '{"jsonrpc":"2.0","method":"selectwallet", "params" : ["TestNet Small"]}' http://127.0.0.1:37128/
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getwalletinfo"}' http://127.0.0.1:37128/ | jq
+```
+
+```json
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "walletName": "TestNet Small",
+    "walletFile": "/home/user/.walletwasabi/client/Wallets/TestNet Small.json",
+    "extendedAccountPublicKey": "tpubDCd1v6acjNY3uUqArBGC6oBTGrCBWphMvkWjAqM2SFZahZb91JUTXZeZqxzscezR16XHkwi1723qo94EKgR75aoFaahnaHiiLP2JrrTh2Rk",
+    "extendedAccountZpub": "vpub5YarnXR6ijVdw6G5mGhfUhf5bnodeCDJYtszFVW7LL3vr5HyRmJF8zfTZWzv6LjLPukmeR11ebWhLPLVVRjqbfyknJZdiwRWCyJcKeDdsC8",
+    "accountKeyPath": "m/84'/0'/0'",
+    "masterKeyFingerprint": "323ec8d9",
+    "balance": 13182012
+  },
+  "id": "1"
+}
+```
+
 ### listunspentcoins
 
 Returns the list of confirmed and unconfirmed coins that are unspent.
