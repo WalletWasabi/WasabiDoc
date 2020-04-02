@@ -235,7 +235,8 @@ module.exports = {
           sidebarDepth: 2,
           children: [
             "/using-wasabi/Joinmarket.md",
-            "/using-wasabi/PayToEndPoint.md"
+            "/using-wasabi/PayToEndPoint.md",
+            "/using-wasabi/WasabiResearchClub.md"
           ]
         }
       ],
