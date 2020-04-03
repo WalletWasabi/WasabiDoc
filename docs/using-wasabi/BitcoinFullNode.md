@@ -46,7 +46,7 @@ Your full node is not used to broadcast your transactions, as this is done throu
 
 ## bitcoind within Wasabi
 
-Since version 1.1.10.4], Wasabi Wallet ships with Bitcoin Knots.
+Since version 1.1.11], Wasabi Wallet ships with Bitcoin Knots.
 This means that every Wasabi client has the necessary software to run a Bitcoin full node and define, verify, and enforce monetary consensus.
 By default, bitcoind is not started together with Wasabi.
 This must be activated explicitly in the settings, because this is a bandwidth, CPU and storage intensive program.
