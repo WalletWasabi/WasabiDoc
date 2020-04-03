@@ -104,7 +104,7 @@ This was a full-block SPV wallet that aimed to leverage usability without compro
 In theory, it was a light wallet.
 In practice, it was hard to compete with Bitcoin Core's micro-optimizations, and it was still painful to wait for wallet synchronization every time the wallet was opened.
 
-Now, Wasabi Wallet users have the option of using the built-in Bitcoin Core full node, connecting to a different full node, or running the wallet in "light" mode.
+Now, Wasabi Wallet users have the option of using the built-in Bitcoin Knots full node, connecting to a different full node, or running the wallet in "light" mode.
 
 [Read more about network-level Bitcoin wallet privacy here.](/why-wasabi/NetworkLevelPrivacy.md)
 
