@@ -45,9 +45,9 @@ If [bitcoind](https://github.com/bitcoin/bitcoin) is installed and run on the sa
 It is also possible to connect Wasabi to a remote full node on another computer by specifying the local IP address or Tor hidden service in the settings.
 Then, Wasabi pulls the verified blocks and queries the mempool from the full node.
 
-:::tip Wasabi ships with Bitcoin Core!
-Since [v1.1.10](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v1.1.10), Wasabi has [partial Bitcoin Core integration](/using-wasabi/BitcoinFullNode.md).
-This means that it is possible (but not mandatory) to start Bitcoin Core during the startup of Wasabi.
+:::tip Wasabi ships with Bitcoin Knots!
+Since v1.1.10.4 Wasabi has [partial Bitcoin Knots integration](/using-wasabi/BitcoinFullNode.md).
+This means that it is possible (but not mandatory) to start Bitcoin Knots during the startup of Wasabi.
 Without having to install or configure anything.
 :::
 
