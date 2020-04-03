@@ -104,7 +104,7 @@ This was a full-block SPV wallet that aimed to leverage usability without compro
 In theory, it was a light wallet.
 In practice, it was hard to compete with Bitcoin Core's micro-optimizations, and it was still painful to wait for wallet synchronization every time the wallet was opened.
 
-Now, Wasabi Wallet users have the option of using the built-in Bitcoin Core full node, connecting to a different full node, or running the wallet in "light" mode.
+Now, Wasabi Wallet users have the option of using the built-in Bitcoin Knots full node, connecting to a different full node, or running the wallet in "light" mode.
 
 [Read more about network-level Bitcoin wallet privacy here.](/why-wasabi/NetworkLevelPrivacy.md)
 
@@ -373,14 +373,14 @@ Nevertheless [this question](https://github.com/zkSNACKs/Meta/issues/20) deserve
 
 Wasabi uses the [Bitcoin Core Hardware Wallet Interface [HWI]](https://github.com/bitcoin-core/HWI) ([PR #1341](https://github.com/zkSNACKs/WalletWasabi/pull/1341) & [PR #1905](https://github.com/zkSNACKs/WalletWasabi/pull/1905)) however in this mode coinjoining is not possible.
 
-### Bitcoin Core
+### Bitcoin Full Node
 
 A wallet that is connected to a full node is the ultimate way of minimizing trust.
 Wasabi now offers 3 different ways to connect to a full node:
 
 - If you are already running a full node on the same computer, Wasabi will automatically detect and connect to it.
 - You may connect to a trusted remote node via the `Settings` tab.
-- Wasabi includes an optional, integrated full node, which can be enabled in the `Settings` tab.
+- Wasabi includes an optional, integrated full node (Bitcoin Knots), which can be enabled in the `Settings` tab.
 
 ### Daemon/API
 
