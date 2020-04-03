@@ -30,6 +30,10 @@ As a result, when you send this leftover/change coin in a new transaction, it is
 
 This process is applicable to any Bitcoin transaction where the `sent` amount is less than the total value of the input UTXO.
 
+:::tip
+Since Wasabi v1.1.10.4, is it possible to define a custom change address for transactions
+:::
+
 ### First round CoinJoin change
 
 Let's say that you have a KYC <img src="/ShieldRed.png" alt="red-shield" class="shield" /> `anonymity set 1` UTXO, and you register it for a CoinJoin round.
