@@ -31,7 +31,7 @@ There are several software implementations that function as a full node, for exa
 
 ## How does Wasabi use your Bitcoin full node
 
-Wasabi currently has a work in progress partial Bitcoin Core integration.
+Wasabi currently has a work in progress partial Bitcoin Knots integration.
 The zkSNACKs coordinating server broadcasts [BIP 158 block filters](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients) to all Wasabi clients, who locally check if the filter hits for their public keys.
 Then you know that this block has a transaction of yours included, or maybe it is a false positive.
 
@@ -46,7 +46,7 @@ Your full node is not used to broadcast your transactions, as this is done throu
 
 ## bitcoind within Wasabi
 
-Since [version 1.1.10](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v1.1.10), Wasabi Wallet ships with the [bitcoind binaries](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi/Microservices/Binaries) of Bitcoin Core.
+Since version 1.1.10.4], Wasabi Wallet ships with Bitcoin Knots.
 This means that every Wasabi client has the necessary software to run a Bitcoin full node and define, verify, and enforce monetary consensus.
 By default, bitcoind is not started together with Wasabi.
 This must be activated explicitly in the settings, because this is a bandwidth, CPU and storage intensive program.
