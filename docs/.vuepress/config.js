@@ -84,7 +84,6 @@ module.exports = {
   themeConfig: {
     logo: "/Logo_without_text.png",
     searchPlaceholder: 'Search the docs...',
-    smoothScroll: true,
     displayAllHeaders: false,
     sidebarDepth: 0,
     repo: "zkSNACKs/WasabiDoc",
