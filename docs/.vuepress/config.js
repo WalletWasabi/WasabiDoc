@@ -228,16 +228,6 @@ module.exports = {
             "/using-wasabi/BIPs.md",
             "/using-wasabi/IndustryStandards.md"
           ]
-        },
-        {
-          title: "Research",
-          collapsable: false,
-          sidebarDepth: 2,
-          children: [
-            "/using-wasabi/Joinmarket.md",
-            "/using-wasabi/PayToEndPoint.md",
-            "/using-wasabi/WasabiResearchClub.md"
-          ]
         }
       ],
 
@@ -258,12 +248,22 @@ module.exports = {
           collapsable: false,
           sidebarDepth: 2,
           children: [
-           "/building-wasabi/FalsePositive.md",
+            "/building-wasabi/FalsePositive.md",
             "/building-wasabi/Security.md",
             "/building-wasabi/LICENSE.md",
             "/building-wasabi/Credits.md"
           ]
-        }
+        },
+	{
+	  title: "Research",
+	  collapsable: false,
+	  sidebarDepth: 2,
+	  children: [
+	    "/building-wasabi/Joinmarket.md",
+	    "/building-wasabi/PayToEndPoint.md",
+	    "/building-wasabi/WasabiResearchClub.md"
+	  ]
+	}	
       ],
 
       "/FAQ/": [
