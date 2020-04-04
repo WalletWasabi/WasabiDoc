@@ -29,7 +29,7 @@ A coin will appear on the wallet icon to indicate the loaded wallets.
 
 ### Wallet Manager
 
-Alternatively, you can select a wallet in the `Load Wallet` tab, and click the `load wallet` button.
+Alternatively, you can double click a wallet in the `Load Wallet` tab, or select it and click the `load wallet` button.
 
 ![](/WalletManagerLoadWallet.png)
 
