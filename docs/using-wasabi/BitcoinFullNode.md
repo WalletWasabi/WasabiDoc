@@ -35,8 +35,9 @@ Wasabi currently has a work in progress partial Bitcoin Knots integration.
 The zkSNACKs coordinating server broadcasts [BIP 158 block filters](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients) to all Wasabi clients, who locally check if the filter hits for their public keys.
 Then you know that this block has a transaction of yours included, or maybe it is a false positive.
 
-:::warning 
-The zkSNACKs server has to be trusted to serve correct filters, until [BIP 157 client side block filtering](https://github.com/bitcoin/bips/blob/master/bip-0157.mediawiki) is implemented in Bitcoin Core.
+:::warning Work in progress
+The zkSNACKs server has to be trusted to serve correct filters.
+This current work in progress integration **does not** verify consensus within Wasabi. 
 :::
 
 If a full node is connected to Wasabi, then the relevant block is fetched from this trusted node, and not from a random P2P node.
@@ -46,8 +47,8 @@ Your full node is not used to broadcast your transactions, as this is done throu
 
 ## bitcoind within Wasabi
 
-Since version 1.1.11], Wasabi Wallet ships with Bitcoin Knots.
-This means that every Wasabi client has the necessary software to run a Bitcoin full node and define, verify, and enforce monetary consensus.
+Since version [1.1.11](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v1.1.11), Wasabi Wallet ships with [Bitcoin Knots](https://bitcoinknots.org).
+This means that every Wasabi client has the necessary software to run a Bitcoin full node and define, verify, and enforce monetary consensus with bitcoind, but this verificatin is not yet used within Wasabi itself, it is a work in progress.
 By default, bitcoind is not started together with Wasabi.
 This must be activated explicitly in the settings, because this is a bandwidth, CPU and storage intensive program.
 It is optional to keep bitcoind running even after Wasabi Wallet is shut down, so as to verify blocks as soon as they are received.
