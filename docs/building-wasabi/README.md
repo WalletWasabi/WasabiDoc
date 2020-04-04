@@ -28,3 +28,10 @@ You will also find some of the issues they are working on now, the research for 
 - [Security Policy](/building-wasabi/Security.md)
 - [MIT License](/building-wasabi/LICENSE.md)
 - [Credits](/building-wasabi/Credits.md)
+
+### Research
+
+- [JoinMarket](/building-wasabi/Joinmarket.md)
+- [Pay to EndPoint](/building-wasabi/PayToEndPoint.md)
+- [Wasabi Research Club](/building-wasabi/WasabiResearchClub.md)
+

@@ -57,7 +57,3 @@ Further tutorials about the different parts of the wallet, for newbies and power
 - [Supported BIPs](/using-wasabi/BIPs.md)
 - [Supported Industry Standards](/using-wasabi/IndustryStandards.md)
 
-### Research
-- [JoinMarket](/using-wasabi/Joinmarket.md)
-- [Pay to EndPoint](/using-wasabi/PayToEndPoint.md)
-- [Wasabi Research Club](/using-wasabi/WasabiResearchClub.md)
