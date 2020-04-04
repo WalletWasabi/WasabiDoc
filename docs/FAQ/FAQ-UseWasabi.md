@@ -163,15 +163,15 @@ If yes, then the wallet connects to a random Bitcoin peer-to-peer full node over
 :::details
 ### How does Wasabi download a relevant block?
 
-Wasabi uses [BIP 158](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients) block filter to find out if a specific block contains a transaction of a specific wallet.
-If so, then by default Wasabi connects to a random Bitcoin peer to peer full node over Tor, and requests only to download this block.
-For each block, it generates a new and separate tor identity.
+There are three ways Wasabi can get a block:
 
-If you are running [your own node](/using-wasabi/BitcoinFullNode.md), then you can pull this block directly from the blockchain that you have fully verified your self.
-If the node is on the same computer, then it is connected automatically by default.
-You can also specify the local IP or tor hidden service of your remote full node.
+1. If you are connected to [your own full node](/using-wasabi/BitcoinFullNode.md) then it will fetch the block from there.
 
-The Wasabi client never downloads a block from the Wasabi backend server.
+2. By default from a random Bitcoin P2P node, connected through a new Tor identity only for this one download request.
+
+3. If both cases fail, then the fallback is to connect to the backend server with a new Tor identity and download the block from there.
+
+Read more [ħere](/using-wasabi/WalletLoad.md)
 :::
 
 :::details
