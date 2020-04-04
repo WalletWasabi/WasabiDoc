@@ -26,11 +26,11 @@ Do not treat this feature as a strong, fail-safe lock on your wallet.
 You can active the `Lock Screen` feature by going to the menu bar on the top/left corner of your Wasabi Wallet and clicking on `Tools`.
 In the resulting dropdown menu, click on `Settings`.
 
-![](/LockScreenSet1.png)
+![](/MenuTools.png)
 
 Then, scroll down the `Settings` page until you see the `Lock Screen` section.
 
-![](/LockScreenSet2.png)
+![](/SettingsLockScreen.png)
 
 Choose and enter a numerical PIN up to 10 digits in length in the PIN box, and click on `Set`.
 
