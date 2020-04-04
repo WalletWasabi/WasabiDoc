@@ -15,12 +15,12 @@ There are two ways of loading your wallets in Wasabi, and you can load multiple 
 
 ## Wallet Explorer
 
-On the right side of Wasabi is the `Wallet Explorer`, where you see an alphabetically sorted list of all the previously [generated](/WalletGeneration.md) wallets.
+On the right side of Wasabi is the `Wallet Explorer`, where you see an alphabetically sorted list of all the previously [generated](/using-wasabi/WalletGeneration.md) wallets.
 
 ![](/WalletExplorerUnloaded.png)
 
-You can load a wallet simply by double clicking the line.
-A coin icon will appear to indicate the loaded wallets.
+You can load a wallet simply by double clicking on it or by right-clicking on it and then choosing `Load Wallet`.
+A coin will appear on the wallet icon to indicate the loaded wallets.
 
 ![](/WalletExplorerLoaded.png)
 
