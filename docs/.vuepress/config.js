@@ -254,16 +254,16 @@ module.exports = {
             "/building-wasabi/Credits.md"
           ]
         },
-	{
-	  title: "Research",
-	  collapsable: false,
-	  sidebarDepth: 2,
-	  children: [
-	    "/building-wasabi/Joinmarket.md",
-	    "/building-wasabi/PayToEndPoint.md",
-	    "/building-wasabi/WasabiResearchClub.md"
-	  ]
-	}	
+        {
+          title: "Research",
+          collapsable: false,
+          sidebarDepth: 2,
+          children: [
+            "/building-wasabi/Joinmarket.md",
+            "/building-wasabi/PayToEndPoint.md",
+            "/building-wasabi/WasabiResearchClub.md"
+          ]
+        }
       ],
 
       "/FAQ/": [
