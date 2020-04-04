@@ -9,14 +9,22 @@
 
 Lurking Wife Mode is an exclusive Wasabi Wallet feature that hides sensitive and critical information from physical observers and allows you to post screenshots without worrying about your privacy.
 
-![](https://i.imgur.com/4OgtaHP.png)
+![](/Send.png)
 
 [[toc]]
 
 ---
 
 ## How to activate Lurking Wife Mode
-You can activate LWM from Settings or by clicking the 👁 (eye) icon on the Wallet Explorer header in the top right corner. 
+You can activate or deactivate LWM from Settings or by clicking the 👁 (eye) icon on the Wallet Explorer header in the top right corner.
+
+![](/LWMExplorerActivate.png)
+
+![](/LWMExplorerDeactivate.png)
+
+Alternatively, you can toggle the button in the `Settings` tab.
+
+![](/LWMSettings.png)
 
 ## More information on LWM
 - In LWM the wallet is still usable, which means input field information isn't hidden.  
