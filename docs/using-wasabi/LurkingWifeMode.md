@@ -16,7 +16,7 @@ Lurking Wife Mode is an exclusive Wasabi Wallet feature that hides sensitive and
 ---
 
 ## How to activate Lurking Wife Mode
-You can activate or deactivate LWM from Settings or by clicking the 👁 (eye) icon on the Wallet Explorer header in the top right corner.
+You can activate or deactivate by clicking the 👁 (eye) icon on the `Wallet Explorer` header in the top right corner.
 
 ![](/LWMExplorerActivate.png)
 
