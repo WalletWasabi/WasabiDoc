@@ -122,7 +122,7 @@ Among others, here is where your wallet files and your logs reside.
 
 ## macOS
 
-1. [Download](https://wasabiwallet.io/#download) the `.dmg` package of the latest Wasabi release ${currentVersion}.
+1. [Download](https://wasabiwallet.io/#download) the `.dmg` package of Wasabi ${currentVersion}.
 
 ![](/DownloadMac.png)
 
