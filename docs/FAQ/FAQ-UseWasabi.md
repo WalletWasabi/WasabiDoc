@@ -169,7 +169,7 @@ There are three ways Wasabi can get a block:
 
 2. By default from a random Bitcoin P2P node, connected through a new Tor identity only for this one download request.
 
-3. If both cases fail, then the fallback is to connect to the backend server with a new Tor identity and download the block there.
+3. If both cases fail, then the fallback is to connect to the backend server with a new Tor identity and download the block from there.
 
 Read more [ħere](/using-wasabi/WalletLoad.md)
 :::
@@ -194,7 +194,7 @@ You have to wait until the status bar is `Ready`.
 
 It usually only takes a couple seconds to scan the block filters, and to download and parse the blocks.
 However, for large wallets with many transactions, this synchronization can take up to several minutes.
-The speed and reliability of the loading process is constantly improved, for example a 70x increase with v1.1.11.
+The speed and reliability of the loading process is constantly improved.
 For especially old wallets, it might be worth considering to generate a new wallet with a shorter transaction history.
 :::
 

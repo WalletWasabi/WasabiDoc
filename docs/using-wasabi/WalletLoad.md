@@ -18,18 +18,18 @@ The synchronizing of your wallet happens fast and is very private by default.
 
 ### Wallet Explorer
 
-1. On the right side of Wasabi is the `Wallet Explorer`, where you see an alphabetically sorted list of all the previously [generated](/using-wasabi/WalletGeneration.md) wallets.
+On the right side of Wasabi is the `Wallet Explorer`, where you see an alphabetically sorted list of all the previously [generated](/using-wasabi/WalletGeneration.md) wallets.
 
 ![](/WalletExplorerUnloaded.png)
 
-2. You can load a wallet simply by double clicking on it or by right-clicking on it and then choosing `Load Wallet`.
+You can load a wallet simply by double clicking on it or by right-clicking on it and then choosing `Load Wallet`.
 A coin will appear on the wallet icon to indicate the loaded wallets.
 
 ![](/WalletExplorerLoaded.png)
 
 ### Wallet Manager
 
-3. Alternatively, you can select a wallet in the `Load Wallet` tab, and click the `load wallet` button.
+Alternatively, you can select a wallet in the `Load Wallet` tab, and click the `load wallet` button.
 
 ![](/WalletManagerLoadWallet.png)
 
@@ -43,13 +43,13 @@ At the first start this can take a couple minutes because all filters need to be
 ### Filter scanning
 
 When you load a wallet, it checks if the generated addresses within the gap limit hit against a block filter.
-Most filter do not, and then the wallet is certain that this block does not contain a transaction of yours.
+Most filters do not hit, and then the wallet is certain that this block does not contain a transaction of yours so it will not download it.
 If a transaction of yours is in a block, then the corresponding filter will always be hit, and the wallet will know this is a relevant block for you.
 There can be a small chance for a false positive where the filter matches, but the block actually does not contain a transaction.
 
 ### Block download
 
-When a block filter hits, either a true match or a false positive, then this block is interesting for you and the wallet will get it.
+When a block filter hits, either a true match or a false positive, then this block is important for you, so the wallet will download it.
 If you have [a Bitcoin full node connected](/using-wasabi/BitcoinFullNode.md), then it will fetch the verified block locally.
 If not, then Wasabi will connect to a random Bitcoin P2P node with a new Tor identity, request only this block for download, and then disconnect.
-In this step, your Wasabi behaves like any other full node, and cannot be differentiated. 
+In this step, your Wasabi behaves like any other full node, and cannot be differentiated.
