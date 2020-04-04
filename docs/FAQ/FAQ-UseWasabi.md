@@ -458,7 +458,7 @@ However, you can use the [RPC server `send` call](/using-wasabi/RPC.md#send) and
 :::details
 ### How can I set a custom change address?
 
-You can activate the option to set a custom change address in the settings.
+You can activate the option to set a custom change address in the `Settings` tab.
 
 ![](/SettingsCustomChange.png)
 
