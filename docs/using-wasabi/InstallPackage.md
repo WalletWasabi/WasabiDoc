@@ -132,6 +132,9 @@ Among others, here is where your wallet files and your logs reside.
 
 ![](/InstallMacDragDrop.png)
 
+4. At first startup, there will be a pop-up that Wasabi was downloaded from the internet.
+Click on `Open` and restart Wasabi.
+
 ::::details
 ### Optional PGP Verification
 
