@@ -132,9 +132,8 @@ Wasabi broadcast transactions to only one peer over Tor, and immediately after t
 ### Wasabi Wallet + full node
 
 :::tip
-Since [v1.1.10](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v1.1.10), Wasabi has [partial Bitcoin Core integration](https://github.com/zkSNACKs/WalletWasabi/pull/2495).
-This means that it is possible (but not mandatory) to start Bitcoin Core during the launch of Wasabi.
-Without having to install or configure anything.
+Since version [1.1.11](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v1.1.11), Wasabi has partial Bitcoin Knots integration.
+This means that it is possible (but not mandatory) to start Bitcoin Knots during the launch of Wasabi, without having to install or configure anything.
 :::
 
 #### Private UTXO retrieval
