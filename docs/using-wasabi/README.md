@@ -25,6 +25,7 @@ Further tutorials about the different parts of the wallet, for newbies and power
 
 ### Using Wasabi
 - [Wallet Generation](/using-wasabi/WalletGeneration.md)
+- [Wallet Load](/using-wasabi/WalletLoad.md)
 - [Receive](/using-wasabi/Receive.md)
 - [CoinJoin](/using-wasabi/CoinJoin.md)
 - [Send](/using-wasabi/Send.md)

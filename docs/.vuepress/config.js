@@ -176,6 +176,7 @@ module.exports = {
           sidebarDepth: 2,
           children: [
             "/using-wasabi/WalletGeneration.md",
+            "/using-wasabi/WalletLoad.md",
             "/using-wasabi/Receive.md",
             "/using-wasabi/CoinJoin.md",
             "/using-wasabi/Send.md",
