@@ -142,10 +142,10 @@ If you have already imported zkSNACKs' PGP public key, then jump to step 4.
 
 1. [Get GnuPG](https://www.gnupg.org/download/index.html).
 
-2. Copy [zkSNACKs' PGP public key](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt) into a new `TextEdit` document and saving it as `PGP.txt`.
+2. Copy [zkSNACKs' PGP public key](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt) into a new `TextEdit` document and saving it as `zkSNACKsPubKey.txt`.
 Before saving, you need to go to `Format / Make Plain Text` (otherwise TextEdit will not be able to save it as a .txt file).
 
-3. Open Terminal and go to the folder in which you saved the `PGP.txt` file and import the PGP public key with `sudo gpg2 --import PGP.txt`.
+3. Open Terminal and go to the folder in which you saved the `zkSNACKsPubKey.txt` file and import the PGP public key with `sudo gpg2 --import zkSNACKsPubKey.txt`.
 This should return the output: `key 856348328949861E: public key "zkSNACKs <zksnacks@gmail.com>" imported`.
 [Next time you can skip previous steps because the PGP public key is already imported.]
 
