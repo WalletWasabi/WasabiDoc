@@ -92,6 +92,18 @@ In some cases, there is very little demand for block space, and then Wasabi will
 
 ![](/SendNoFee.png)
 
+## Custom Change Address
+
+In the `Settings` tab you can activate the option to set a custom change address.
+
+![](/SettingsCustomChange.png)
+
+This will show a second address field in the `Send` tab, where you can paste an address that will be used for the change output of the transaction.
+The specified sending amount will go to the first address, the value of `input coins - payment amount - fee` will go to this change address.
+If no address is pasted in this field, then it will pull an address from this same wallet, the same way as the default.
+
+![](/SendCustomChange.png)
+
 ## Password
 
 In order to spend a coin, the transaction must be signed by the private key corresponding to that coin.

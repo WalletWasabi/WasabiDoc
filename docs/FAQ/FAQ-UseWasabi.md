@@ -456,6 +456,19 @@ However, you can use the [RPC server `send` call](/using-wasabi/RPC.md#send) and
 :::
 
 :::details
+### How can I set a custom change address?
+
+You can activate the option to set a custom change address in the settings.
+
+![](/SettingsCustomChange.png)
+
+Then simply paste the address you want to send the change to in the `Send` tab GUI.
+Read more [here](/using-wasabi/Send.md#custom-change-address).
+
+![](/SendCustomChange.png)
+:::
+
+:::details
 ### How do I set the payment amount?
 
 After you select one or more coins as inputs in `Send` tab, say two anonset coins worth 0.1 bitcoin each.
