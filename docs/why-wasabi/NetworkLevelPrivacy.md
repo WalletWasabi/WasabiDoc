@@ -47,7 +47,7 @@ Then, Wasabi pulls the verified blocks and queries the mempool from the full nod
 
 :::tip Wasabi ships with Bitcoin Knots!
 Since v1.1.11 Wasabi has [partial Bitcoin Knots integration](/using-wasabi/BitcoinFullNode.md).
-This means that it is possible (but not mandatory) to start Bitcoin Knots during the startup of Wasabi.
+This means that it is possible (but not mandatory) to start Bitcoin Knots during the launch of Wasabi.
 Without having to install or configure anything.
 :::
 
@@ -133,7 +133,7 @@ Wasabi broadcast transactions to only one peer over Tor, and immediately after t
 
 :::tip
 Since [v1.1.10](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v1.1.10), Wasabi has [partial Bitcoin Core integration](https://github.com/zkSNACKs/WalletWasabi/pull/2495).
-This means that it is possible (but not mandatory) to start Bitcoin Core during the startup of Wasabi.
+This means that it is possible (but not mandatory) to start Bitcoin Core during the launch of Wasabi.
 Without having to install or configure anything.
 :::
 

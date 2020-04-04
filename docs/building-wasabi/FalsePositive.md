@@ -8,7 +8,7 @@
 # False positive
 
 Since [v1.1.10](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v1.1.10), Wasabi has [partial Bitcoin Core integration](https://github.com/zkSNACKs/WalletWasabi/pull/2495).
-This means that it is possible (but not mandatory) to start Bitcoin Core during the startup of Wasabi, without having to install or configure anything.
+This means that it is possible (but not mandatory) to start Bitcoin Core during the launch of Wasabi, without having to install or configure anything.
 
 Unfortunately, Bitcoin Core is detected as an unsecure Bitcoin Miner by some antiviruses, despite it being one of the most (if not the most) highly scrutinized and maintained open source software in existence.
 This creates a huge problem as several users are no longer able to download and use Bitcoin Core and Wasabi Wallet, despite being two extremely safe and malware-free software.
