@@ -1,11 +1,11 @@
 ---
 {
-  "title": "Terms and Conditions",
-  "description": "The terms and conditions and privacy policy that govern the use of Wasabi CoinJoin. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
+  "title": "Legal Documents",
+  "description": "The terms and conditions, privacy policy and legal statement that govern the use of Wasabi CoinJoin. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
 }
 ---
 
-# Terms and Conditions
+# Legal Documents
 
 [[toc]]
 

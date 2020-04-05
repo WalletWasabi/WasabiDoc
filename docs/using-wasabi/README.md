@@ -56,4 +56,4 @@ Further tutorials about the different parts of the wallet, for newbies and power
 - [Password Best Practices](/using-wasabi/PasswordBestPractices.md)
 - [Supported BIPs](/using-wasabi/BIPs.md)
 - [Supported Industry Standards](/using-wasabi/IndustryStandards.md)
-- [Terms and Conditions](/using-wasabi/TaC.md)
+- [Legal Documents](/using-wasabi/LegalDocuments.md)

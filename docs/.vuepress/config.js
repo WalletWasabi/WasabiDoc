@@ -227,8 +227,7 @@ module.exports = {
             "/using-wasabi/PasswordBestPractices.md",
             "/using-wasabi/BIPs.md",
             "/using-wasabi/IndustryStandards.md",
-            "/using-wasabi/TaC.md"
-
+            "/using-wasabi/LegalDocuments.md"
           ]
         }
       ],
