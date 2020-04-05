@@ -1284,7 +1284,7 @@ There are three different ways of using your [Bitcoin full node with Wasabi](/us
 
 ![](/SettingsBitcoinCoreRemote.png)
 
-- If you are not yet running a full node, Wasabi has the bitcoind binaries included, and with one click in the `Settings`, you can start Bitcoin Core together with Wasabi.
+- If you are not yet running a full node, Wasabi has the bitcoind binaries included, and with one click in the `Settings`, you can start Bitcoin Knots together with Wasabi.
 
 ![](/SettingsBitcoinCore.png)
 

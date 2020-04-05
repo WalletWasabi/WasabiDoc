@@ -1,17 +1,18 @@
 ---
 {
   "title": "False positive",
-  "description": "A guide on how to report Bitcoin Core and Wasabi as false positive. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
+  "description": "A guide on how to report Bitcoin Core/Knots and Wasabi as false positive. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
 }
 ---
 
 # False positive
 
-Since [v1.1.10](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v1.1.10), Wasabi has [partial Bitcoin Core integration](https://github.com/zkSNACKs/WalletWasabi/pull/2495).
-This means that it is possible (but not mandatory) to start Bitcoin Core during the launch of Wasabi, without having to install or configure anything.
+In version [1.1.10](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v1.1.10), Wasabi had [partial Bitcoin Core integration](https://github.com/zkSNACKs/WalletWasabi/pull/2495).
+But in version [1.1.11](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v1.1.11), changed that and partially intergrated Bitcoin Knots.
+This means that it is possible (but not mandatory) to start Bitcoin Knots during the launch of Wasabi, without having to install or configure anything.
 
-Unfortunately, Bitcoin Core is detected as an unsecure Bitcoin Miner by some antiviruses, despite it being one of the most (if not the most) highly scrutinized and maintained open source software in existence.
-This creates a huge problem as several users are no longer able to download and use Bitcoin Core and Wasabi Wallet, despite being two extremely safe and malware-free software.
+Unfortunately, Bitcoin Core/Knots is detected as an unsecure Bitcoin Miner by some antiviruses, despite it being one of the most (if not the most) highly scrutinized and maintained open source software in existence.
+This creates a huge problem as several users are no longer able to download and use Bitcoin Knots and Wasabi Wallet, despite being two extremely safe and malware-free software.
 
 **The whole community is called to download [Bitcoin Core](https://bitcoincore.org/en/download/) and [Wasabi Wallet](https://wasabiwallet.io/#download), and report them to their antivirus as a false positive.**
 
@@ -40,7 +41,7 @@ Bitcoin Core (https://github.com/bitcoin/bitcoin), despite being one of the most
 Bitcoin Core is considered to be Bitcoin's reference implementation, serves as a Bitcoin node and provides a Bitcoin wallet which fully verifies payments.
 It is not possible to mine with this software, since the mining code was removed in 2013 (https://bitcoin.stackexchange.com/questions/49664/since-which-version-the-mining-functionality-removed-from-wallet).
 
-Wasabi Wallet (https://github.com/zkSNACKs/WalletWasabi/) is an open-source, non-custodial, Bitcoin wallet that integrates Bitcoin Core within it to validate transactions without having to connect to third party servers on the network, and for this reason, it is also reported as "Bitcoin Miner", when its only task is to allow users to manage bitcoins in a secure and user friendly way.
+Wasabi Wallet (https://github.com/zkSNACKs/WalletWasabi/) is an open-source, non-custodial, Bitcoin wallet that integrates Bitcoin Knots within it to validate transactions without having to connect to third party servers on the network, and for this reason, it is also reported as "Bitcoin Miner", when its only task is to allow users to manage bitcoins in a secure and user friendly way.
 Again, Wasabi Wallet cannot in any way mine bitcoins (or any other cryptocurrency), as its sole purpose is to manage bitcoins.
 
 (optional from here, edit according to your antivirus - The more information there is, the better)
