@@ -226,7 +226,9 @@ module.exports = {
             "/using-wasabi/LockScreen.md",
             "/using-wasabi/PasswordBestPractices.md",
             "/using-wasabi/BIPs.md",
-            "/using-wasabi/IndustryStandards.md"
+            "/using-wasabi/IndustryStandards.md",
+            "/using-wasabi/TaC.md"
+
           ]
         }
       ],
