@@ -16,12 +16,16 @@ This daemon is especially useful for power users mixing bitcoin in the backend o
 
 ## Available Commands
 
-`mix` starts Wasabi in daemon and not the GUI.
+`wassabee` or `wassabeed` starts Wasabi wallet when the package is installed.
+
+`dotnet run` builds the source code and starts Wasabi.
+
+`mix` makes sure Wasabi starts in daemon and not the GUI.
 
 `--wallet:` specifies the name of the hot wallet with the coins you want to CoinJoin.
 
 `--destination:` specifies the destination wallet that the mixed coins will be coinjoined into, after the target anonymity set is reached.
-A coin will be coinjoined into the first wallet, until anonymity set target is reached, then there will be one additional CoinJoin into the `--destination` wallet.
+A coin will be coinjoined into the first wallet, until anonymity set target is reached, then there will be one additional CoinJoin into the `destination` wallet.
 
 `--keepalive` keeps the daemon running after all coins have reached the anonymity set target, and continue to CoinJoin when new coins are received into the wallet.
 
@@ -38,7 +42,7 @@ If the package is installed, execute in the command line in any directory:
 ~$ wassabee mix --wallet:MyFirstWallet --destination:MySecondWallet --keepalive
 ```
 
-If the source code is built, navigate to the Gui directory and execute:
+If the source code is built, navigate to the WalletWasabi.Gui folder (inside the cloned repo) and execute:
 
 ```bash
 ~/WalletWasabi/WalletWasabi.Gui$ dotnet run -- mix --wallet:MyFirstWallet --destination:MySecondWallet --keepalive
@@ -52,7 +56,7 @@ If the package is installed, navigate to the Applications directory and execute:
 ~/Applications/Wasabi\ Wallet.app/Contents/MacOs $ wassabee mix --wallet:MyFirstWallet --destination:MySecondWallet --keepalive
 ```
 
-If the source code is built, navigate to the Gui directory and execute:
+If the source code is built, navigate to the WalletWasabi.Gui folder (inside the cloned repo) and execute:
 
 ```bash
 ~/WalletWasabi/WalletWasabi.Gui$ dotnet run -- mix --wallet:MyFirstWallet --destination:MySecondWallet --keepalive
@@ -66,8 +70,8 @@ If the package is installed, navigate to the WasabiWallet folder and execute:
 C:\Program Files\WasabiWallet> wassabeed.exe mix --wallet:MyFirstWallet --destination:MySecondWallet --keepalive
 ```
 
-If the source code is installed, navigate to the Gui folder and execute:
+If the source code is installed, navigate to the WalletWasabi.Gui folder (inside the cloned repo) and execute:
 
 ```bash
-C:\USER\WalletWasabi\WalletWasabi.Gui> dotnet run -- mix --wallet:MyFirstWallet --destination:MySecondWallet --keepalive
+\WalletWasabi\WalletWasabi.Gui> dotnet run -- mix --wallet:MyFirstWallet --destination:MySecondWallet --keepalive
 ```
