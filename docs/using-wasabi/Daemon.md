@@ -13,13 +13,13 @@ This daemon is especially useful for power users mixing bitcoin in the backend o
 To start the daemon, in the command line type:
 
 ```
-./wassabee mix --wallet:MyWalletName --keepalive
+wassabee mix --wallet:MyWalletName --keepalive
 ```
 
 To mix to another wallet use the following command:
 
 ```
-./wassabee mix --wallet:MyWallet1 --destination:MyWallet2
+wassabee mix --wallet:MyWallet1 --destination:MyWallet2
 ```
 
 `./wassabee` command starts Wasabi wallet.
@@ -34,4 +34,10 @@ So the command should be:
 
 ```
 wassabeed mix --wallet:MyWalletName --keepalive
+```
+
+If you build Wasabi from source, then run
+
+```
+~/WalletWasabi/WalletWasabi.Gui$ dotnet run mix --wallet:MyWalletName
 ```
