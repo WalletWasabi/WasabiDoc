@@ -20,6 +20,7 @@ And why Wasabi can make Bitcoin an even better tool of self-defense by default.
 - [Why Privacy is Important](/why-wasabi/WhyPrivacyImportant.md)
 - [Why Financial Privacy is Especially Important](/why-wasabi/WhyFinancialPrivacy.md)
 - [CoinJoin Legal Concern](/why-wasabi/LegalConcern.md)
+- [Myths about Wasabi](/why-wasabi/Myths.md)
 
 ### Privacy in Bitcoin
 - [Address Reuse](/why-wasabi/AddressReuse.md)

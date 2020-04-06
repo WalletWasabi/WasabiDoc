@@ -134,7 +134,8 @@ module.exports = {
           children: [
             "/why-wasabi/WhyPrivacyImportant.md",
             "/why-wasabi/WhyFinancialPrivacy.md",
-            "/why-wasabi/LegalConcern.md"
+            "/why-wasabi/LegalConcern.md",
+            "/why-wasabi/Myths.md"
           ]
         },
         {
