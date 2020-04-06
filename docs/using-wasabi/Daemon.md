@@ -18,7 +18,6 @@ This daemon is especially useful for power users mixing bitcoin in the backend o
 
 `wassabee` or `wassabeed` starts Wasabi wallet when the package is installed.
 
-
 `mix` makes sure Wasabi starts in daemon and not the GUI.
 
 `--wallet:` specifies the name of the hot wallet with the coins you want to CoinJoin.
