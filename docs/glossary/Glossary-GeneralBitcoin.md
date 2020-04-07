@@ -19,8 +19,8 @@ Read more: [Bitcoin addresses](/using-wasabi/Receive.md#bitcoin-public-keys-and-
 :::details
 ### Bitcoin
 
-Bitcoin is an innovative payment network and a new kind of money.
-Bitcoin is a cryptocurrency, a form of electronic cash.
+Bitcoin is a peer-to-peer electronic cash system.
+An innovative payment network and a new kind of money.
 It is a decentralized digital currency without a central bank or single administrator that can be sent from user to user on the peer-to-peer bitcoin blockchain network without the need for intermediaries.
 :::
 
