@@ -342,7 +342,7 @@ In a typical payment channel, only two transactions are added to the blockchain 
 :::details
 ### Plausible deniability
 
-Plausible deniability is the ability to deny knowledge of or responsibility for any damnable actions committed by others in an organizational hierarchy because of a lack of evidence that can confirm their participation, even if they were personally involved in or at least willfully ignorant of the actions. 
+Plausible deniability is the ability to deny knowledge of or responsibility for any damnable actions committed by others in an organizational hierarchy because of a lack of evidence that can confirm their participation, even if they were personally involved in or at least willfully ignorant of the actions.
 :::
 
 :::details
