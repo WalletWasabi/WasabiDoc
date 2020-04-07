@@ -745,7 +745,7 @@ There are also edge cases where you do not pay the full coordinator fee or where
 For example if you're the smallest registrant to a round, you will never pay a coordinator fee.
 Also when you are remixing and you cannot pay the full coordinator fee with your input, then you only pay as much as you have.
 But if your input is larger than the minimum, and the change amount leftover would be too small, then that is also added to the coordinator fee.
-Currently the minimum change amount to be paid out is 0.7% of the base denomination (~0.1BTC.)
+Currently the minimum change amount to be paid out is 0.3% of the base denomination (~0.1BTC.)
 
 It is also possible that you get more back from mixing than you put in.
 This happens when network fees go down between the start of the round and its end.
