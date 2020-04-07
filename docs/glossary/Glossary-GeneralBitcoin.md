@@ -17,6 +17,14 @@ Read more: [Bitcoin addresses](/using-wasabi/Receive.md#bitcoin-public-keys-and-
 :::
 
 :::details
+### Bitcoin
+
+Bitcoin is a peer-to-peer electronic cash system.
+An innovative payment network and a new kind of money.
+It is a decentralized digital currency without a central bank or single administrator that can be sent from user to user on the peer-to-peer bitcoin blockchain network without the need for intermediaries.
+:::
+
+:::details
 ### Bitcoin Improvement Proposal (BIP)
 
 Bitcoin Improvement Proposal.
@@ -329,6 +337,12 @@ Read more: [BIP 84 derivation scheme for P2WPKH based accounts](/using-wasabi/BI
 
 A payment channel is class of techniques designed to allow users to make multiple Bitcoin transactions without committing all of the transactions to the Bitcoin blockchain.
 In a typical payment channel, only two transactions are added to the blockchain but an unlimited or nearly unlimited number of payments can be made between the participants.
+:::
+
+:::details
+### Plausible deniability
+
+Plausible deniability is the ability to deny knowledge of or responsibility for any damnable actions committed by others in an organizational hierarchy because of a lack of evidence that can confirm their participation, even if they were personally involved in or at least willfully ignorant of the actions.
 :::
 
 :::details
