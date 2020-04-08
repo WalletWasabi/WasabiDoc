@@ -45,7 +45,7 @@ Read more: [Wasabi Supported BIPs](/using-wasabi/BIPs.md)
 :::details
 ### Bitcoin Knots
 
-Bitcoin Knots is a derivative of Bitcoin Core with a collection of improvements backported from and sometimes maintained outside of the master git tree.
+Bitcoin Knots is a derivative of Bitcoin Core with a collection of improvements backported from and sometimes maintained outside of Core's master git tree.
 Since version 1.1.11, Wasabi has partial Bitcoin Knots integration.
 This means that it is possible (but not mandatory) to start Bitcoin Knots during the launch of Wasabi, without having to install or configure anything.
 Read more: [Bitcoin Knots Website](https://bitcoinknots.org/)
