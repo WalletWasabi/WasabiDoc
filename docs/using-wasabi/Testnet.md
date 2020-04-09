@@ -11,12 +11,6 @@
 
 ---
 
-## How to use testnet step-by-step
-
-1. Start Wasabi and open the `Settings` tab.
-2. In the network menu, select `TestNet`.
-3. Close and restart Wasabi, now you can use it to receive, send and CoinJoin testnet bitcoin.
-
 ## Bitcoin testnet
 
 The Bitcoin testnet is a network that behaves almost exactly the same as the Bitcoin mainnet.
@@ -45,8 +39,6 @@ It will load on mainnet the next time you start it.
 
 You can [load](/using-wasabi/WalletLoad.md) any previously generated wallet on testnet, by double clicking on it in the Wallet Explorer.
 However, it is recommended to use a dedicated testnet wallet.
-Then Wasabi will check if any of the testnet block filters hit against your public keys.
-If yes, then it will download the relevant block either from the backend server, or your [own Bitcoin testnet node](/using-wasabi/BitcoinFullNode.md).
 Notice that Wasabi uses the same wallet file and keys for both mainnet and testnet, you can load the same wallet file in either network.
 
 ## Receiving testnet bitcoin
