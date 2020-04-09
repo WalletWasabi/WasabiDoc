@@ -1097,7 +1097,7 @@ At least those following industry standards.
 This is thanks to the awesome [Hardware Wallet Interface of Bitcoin Core](https://github.com/bitcoin-core/HWI/).
 
 However, not all of the many hardware wallets have been tested and reviewed by the developers.
-Everything seems to work fine with the [ColdCard](https://coldcardwallet.com), [BitBox](https://shiftcrypto.ch/bitbox02), [Trezor](https://trezor.io), [Ledger](https://ledgerwallet.com) and [KeepKey](https://shapeshift.io/keepkey).
+Everything seems to work fine with the [ColdCard](https://coldcardwallet.com), [BitBox](https://shiftcrypto.ch/bitbox02), [Trezor](https://trezor.io), [Ledger](https://ledger.com) and [KeepKey](https://shapeshift.io/keepkey).
 ::::
 
 :::details
