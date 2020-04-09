@@ -30,7 +30,8 @@ It is a decentralized digital currency without a central bank or single administ
 Bitcoin Core is an open source project which maintains and releases Bitcoin client software called `Bitcoin Core`, considered to be Bitcoin's reference implementation.
 It is a direct descendant of the original Bitcoin software client released by Satoshi Nakamoto after he published the famous Bitcoin whitepaper.
 
-Bitcoin Core consists of both “full-node” software for fully validating the blockchain as well as a bitcoin wallet. The project also currently maintains related software such as the cryptography library libsecp256k1 and others located at GitHub.
+Bitcoin Core consists of both `full-node` software for fully validating the blockchain as well as a Bitcoin wallet.
+The project also currently maintains related software such as the cryptography library libsecp256k1 and others located at GitHub.
 Read more: [Bitcoin Core Website](https://bitcoincore.org/)
 :::
 
