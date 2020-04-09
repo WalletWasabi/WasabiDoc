@@ -879,7 +879,7 @@ Now if even that would fail, then we can start thinking about lowering the requi
 :::details
 ### I'd like to experience CoinJoin but I'm not comfortable using real Bitcoin. What can I do?
 
-You can try to make a CoinJoin via Wasabi on the Bitcoin [TestNet](/FAQ/FAQ-UseWasabi.md#what-is-testnet) (an alternative Bitcoin blockchain, to be used for testing).
+You can try to make a CoinJoin via Wasabi on the Bitcoin [TestNet](/using-wasabi/Testnet.md) (an alternative Bitcoin blockchain, to be used for testing).
 Go to `Settings` and change the network to `TestNet`.
 Then restart your Wasabi, and it will synchronize for the TestNet, and generate TestNet addresses.
 You can get tBTC from faucets like:
@@ -1261,7 +1261,7 @@ You can use the [Wasabi RPC server `gethistory` call](/using-wasabi/RPC.md#gethi
 The testnet is an alternative Bitcoin blockchain, to be used for testing.
 Testnet coins (tBTC) are separate and distinct from actual bitcoins, and are never supposed to have any financial value.
 This allows application developers or bitcoin testers to experiment, without having to use real bitcoins or worrying about breaking the main Bitcoin chain.
-You can try to make a [CoinJoin with Wasabi on the Bitcoin TestNet](/FAQ/FAQ-UseWasabi.md#i-d-like-to-experience-coinjoin-but-i-m-not-comfortable-using-real-bitcoin-what-can-i-do) without being afraid of losing 'real' bitcoins.
+You can try to make a [CoinJoin with Wasabi on the Bitcoin TestNet](/using-wasabi/Testnet.md#coinjoin-on-testnet) without being afraid of losing 'real' bitcoins.
 
 You can get tBTC from faucets like:
 [testnet-faucet.mempool.co](https://testnet-faucet.mempool.co/)
