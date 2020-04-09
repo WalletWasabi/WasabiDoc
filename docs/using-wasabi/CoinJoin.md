@@ -11,7 +11,7 @@ A [CoinJoin](https://en.bitcoin.it/Privacy#CoinJoin) is a special Bitcoin transa
 They collaboratively build a transaction where each of them provides some coins as inputs, and fresh addresses as outputs.
 The concept has been around since the early days of Bitcoin, and it was formalized by the great Greg Maxwell in [this awesome introductory thread](https://bitcointalk.org/index.php?topic=279249.msg2983902).
 
-The goal is to gain privacy by breaking the link of which input "pays" which output, so that any of the outputs cannot be attributed to the owner of the input.
+The goal is to gain privacy by breaking the link of which input "pays" which output so that any of the outputs cannot be attributed to the owner of the input.
 Therefore, it is very important that the values of the outputs are exactly equal.
 Wasabi enables trustless (meaning nobody can steal) and private (meaning even the coordinator cannot spy) Schnorr blind signature CoinJoin according to the [ZeroLink fungibility framework](https://github.com/nopara73/zerolink).
 
@@ -27,12 +27,12 @@ Then click on the `CoinJoin` tab, either from the top tabs or the right-side men
 
 ![](/CoinJoin.png)
 
-2. Select coins for joining by clicking the check box in the coin list.
+2. Select coins for joining by clicking the checkbox in the coin list.
 You can select one or more coins, but when several are selected, they can be linked and clustered by an attacker.
-So, choose carefully which coins you want others to know belong to the same entity (you).
-You can select <img src="/ShieldRed.png" alt="red shield" class="shield" /> coins, which are not private yet, but will gain anonymity set in this round of CoinJoin.
+So, choose carefully which coins you want others to know to belong to the same entity (you).
+You can select <img src="/ShieldRed.png" alt="red shield" class="shield" /> coins, which are not private yet but will gain anonymity set in this round of CoinJoin.
 Also, you can select <img src="/ShieldGreen.png" alt="green shield" class="shield" /> coins, which come from a previous round of CoinJoin, so that they gain an even larger anonymity set.
-What is important is that the sum of coins registered have a value larger than the minimum level, which is currently roughly 0.1 bitcoin.
+What is important is that the sum of coins registered has a value larger than the minimum level, which is currently roughly 0.1 bitcoin.
 
 :::danger
 Do not select coins with different colors (different anonymity sets) to CoinJoin in the same round.
@@ -69,16 +69,16 @@ Just leave Wasabi running in the background of your computer.
 ### Input registration
 
 During the [input registration](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-input-registration-phase), you select which coins you want to register for CoinJoin.
-These coins need to be confirmed on the Bitcoin blockchain, unless they are from a Wasabi CoinJoin and you re-register them.
+These coins need to be confirmed on the Bitcoin blockchain unless they are from a Wasabi CoinJoin and you re-register them.
 In the background, Wasabi generates an input proof, a signature over a challenge message with the private key that locks up the coins.
 
 With this, the coordinator can verify that you actually own these coins.
 Then your Wasabi client generates several fresh addresses, depending on the value of inputs registered.
 The address of the anonset CoinJoin output must not be linked to your input, and thus it is [cryptographically blinded](https://en.wikipedia.org/wiki/Blind_signature) to incomprehensible cypher-text.
-Since the change output can be easily linked to your input with [CoinJoin Sudoku](/FAQ/FAQ-GeneralBitcoinPrivacy.md#what-is-a-coinjoin-sudoku), this address is not blinded, but kept in clear-text.
+Since the change output can be easily linked to your input with [CoinJoin Sudoku](/FAQ/FAQ-GeneralBitcoinPrivacy.md#what-is-a-coinjoin-sudoku), this address is not blinded but kept in clear-text.
 
 Wasabi wallet generates a new [Tor identity](https://tb-manual.torproject.org/managing-identities/) called **Alice**.
-She is like a separate entity, and for every round you use a new Alice who is not linked to any previous connection.
+She is like a separate entity, and for every round, you use a new Alice who is not linked to any previous connection.
 With Alice, you send some information to the Wasabi coordinator server:
 
 * The input coin that you want to register, together with the input proof signature.
@@ -112,7 +112,7 @@ The connection confirmation phase makes sure that all of them are still online a
 The coordinator verifies the unique ID from all the Alices, and while everyone is still communicating, the coordinator returns the round hash of all the registered inputs.
 
 The round is abandoned and re-started if too many Alices have dropped, for example when their Wasabi is shut down, or when their tor connection is temporarily broken.
-The connection confirmation phase ends when all Alices have provided their inputs, or after a timeout when the number of online Alices are still larger than the required number of peers.
+The connection confirmation phase ends when all Alices have provided their inputs, or after a timeout when the number of online Alices is still larger than the required number of peers.
 
 @[youtube](hhkL0QvIaGY)
 
@@ -126,7 +126,7 @@ Bob sends to the Wasabi coordinator:
 * The coordinator signature over that output.
 * The round hash of all the inputs.
 
-Because the coordinator can verify his own signature, he knows that this output was initially sent by any Alice (he cannot know which Alice exactly), and that he has verified that everything is in order.
+Because the coordinator can verify his own signature, he knows that this output was initially sent by any Alice (he cannot know which Alice exactly) and that he has verified that everything is in order.
 
 It is very important that the coordinator cannot link Alice to Bob.
 Because Alice has sent the clear-text input, and Bob sends the clear-text output.
