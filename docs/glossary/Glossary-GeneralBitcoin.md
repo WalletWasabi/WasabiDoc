@@ -25,11 +25,31 @@ It is a decentralized digital currency without a central bank or single administ
 :::
 
 :::details
+### Bitcoin Core
+
+Bitcoin Core is an open source project which maintains and releases Bitcoin client software called `Bitcoin Core`, considered to be Bitcoin's reference implementation.
+It is a direct descendant of the original Bitcoin software client released by Satoshi Nakamoto after he published the famous Bitcoin whitepaper.
+
+Bitcoin Core consists of both `full-node` software for fully validating the blockchain as well as a Bitcoin wallet.
+The project also currently maintains related software such as the cryptography library libsecp256k1 and others located at GitHub.
+Read more: [Bitcoin Core Website](https://bitcoincore.org/)
+:::
+
+:::details
 ### Bitcoin Improvement Proposal (BIP)
 
 Bitcoin Improvement Proposal.
 A design document for introducing features or information to Bitcoin.
 Read more: [Wasabi Supported BIPs](/using-wasabi/BIPs.md)
+:::
+
+:::details
+### Bitcoin Knots
+
+Bitcoin Knots is a derivative of Bitcoin Core with a collection of improvements backported from and sometimes maintained outside of Core's master git tree.
+Since version 1.1.11, Wasabi has partial Bitcoin Knots integration.
+This means that it is possible (but not mandatory) to start Bitcoin Knots during the launch of Wasabi, without having to install or configure anything.
+Read more: [Bitcoin Knots Website](https://bitcoinknots.org/)
 :::
 
 :::details
