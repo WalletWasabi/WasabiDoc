@@ -159,7 +159,9 @@ Can also happen as part of an attack.
 :::details
 ### Full node
 
-Any computer that connects to the Bitcoin network is called a node. Nodes that fully verify all of the rules of Bitcoin are called full nodes. Full nodes download every block and transaction and check them against Bitcoin's consensus rules.
+Any computer that connects to the Bitcoin network is called a node.
+Nodes that fully verify all of the rules of Bitcoin are called full nodes.
+Full nodes download every block and transaction and check them against Bitcoin's consensus rules.
 :::
 
 :::details
