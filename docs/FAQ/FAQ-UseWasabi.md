@@ -1261,7 +1261,7 @@ You can use the [Wasabi RPC server `gethistory` call](/using-wasabi/RPC.md#gethi
 The testnet is an alternative Bitcoin blockchain, to be used for testing.
 Testnet coins (tBTC) are separate and distinct from actual bitcoins, and are never supposed to have any financial value.
 This allows application developers or bitcoin testers to experiment, without having to use real bitcoins or worrying about breaking the main Bitcoin chain.
-You can try to make a [CoinJoin with Wasabi on the Bitcoin TestNet](/using-wasabi/Testnet.md#CoinJoin-on-testnet) without being afraid of losing 'real' bitcoins.
+You can try to make a [CoinJoin with Wasabi on the Bitcoin TestNet](/using-wasabi/Testnet.md#coinjoin-on-testnet) without being afraid of losing 'real' bitcoins.
 
 You can get tBTC from faucets like:
 [testnet-faucet.mempool.co](https://testnet-faucet.mempool.co/)
