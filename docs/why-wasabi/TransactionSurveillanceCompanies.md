@@ -101,7 +101,6 @@ Whether the activities of transaction surveillance company actually help against
 
 - [Chainanalysis](https://www.chainalysis.com/)
 - [Elliptic](https://www.elliptic.co/)
-- [Coinvalidation](http://coinvalidation.com/)
 - [Neutrino](https://www.neutrino.nu/)
 - [Coinfirm](https://www.coinfirm.io/)
 - [Blockchain Group](https://blockchaingroup.io/)
@@ -112,3 +111,4 @@ Whether the activities of transaction surveillance company actually help against
 - [BlockSeer](https://www.blockseer.com/)
 - [ScoreChain](https://www.scorechain.com/)
 - [Crystal](https://crystalblockchain.com/)
+- Coinvalidation
