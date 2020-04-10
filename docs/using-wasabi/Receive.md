@@ -36,7 +36,7 @@ In a Bitcoin transaction, the output creates a new unspent transaction output wh
 The input of the transaction spends a UTXO by providing a valid signature of the public key that the address committed to.
 
 :::tip
-Wasabi Wallet does not "store your money", rather it stores your public keys and the password encrypted private keys.
+Wasabi Wallet does not "store your money", rather it stores your public keys and an encrypted secret that requires your password to derive the private keys.
 It creates addresses for receiving bitcoin, and it signs transactions that spend your bitcoin.
 :::
 
@@ -109,7 +109,7 @@ In case none of those combinations are acceptable for you then you should CoinJo
 
 Those that participate in a Wasabi [CoinJoin](/using-wasabi/CoinJoin.md) transaction receive at least one coin with an anonymity set level that depends on the number of participants in that transaction.
 By default Wasabi tries to create transactions with 100 unknown participants, so the received coin can have 100 anonymity set which means it is really hard for an observer to know who that coin belongs to.
-For that reason a <img src="/ShieldCheckmark.png" alt="checkmark" class="shield" /> coin with a high anonymity set loses the cluster which it originally had.
+For that reason a coin with a high anonymity set loses the cluster which it originally had.
 
 ### Final words about labels and examples
 
