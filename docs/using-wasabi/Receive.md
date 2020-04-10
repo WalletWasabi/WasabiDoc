@@ -111,12 +111,6 @@ Those that participate in a Wasabi [CoinJoin](/using-wasabi/CoinJoin.md) transac
 By default Wasabi tries to create transactions with 100 unknown participants, so the received coin can have 100 anonymity set which means it is really hard for an observer to know who that coin belongs to.
 For that reason a <img src="/ShieldCheckmark.png" alt="checkmark" class="shield" /> coin with a high anonymity set loses the cluster which it originally had.
 
-### Automatic selection
-
-As we can see now the correct labeling of coins allows Wasabi to display useful information about who knows about our wallet and how much they know.
-It also allows Wasabi to select which coins to use in a transaction when you select more than the needed value.
-Basically, if you select all your coins and the amount you want to send is smaller than the total, Wasabi will select only enough coins to minimize the number of people that will learn more about your wallet.
-
 ### Final words about labels and examples
 
 4 coins with good labels:
