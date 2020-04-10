@@ -30,11 +30,11 @@ Then click on the `CoinJoin` tab, either from the top tabs or the right-side `Wa
 2. Select up to seven coins for coinjoining by clicking the checkbox in the coin list.
 The selected value must be above the minimum required amount, currently roughly `0.1 bitcoin`.
 
-	:::danger Consolidation is not good for privacy
-	Try not to select coins with different privacy shields (different anonymity sets) to CoinJoin in the same round.
-	This is because the coins with the higher anonymity set will lose some of their anonymity set, to equal the anonymity set of the lower ones.
-	The best option would be to select coins with the same anonymity set.
-	:::
+:::danger Consolidation is not good for privacy
+Try not to select coins with different privacy shields (different anonymity sets) to CoinJoin in the same round.
+This is because the coins with the higher anonymity set will lose some of their anonymity set, to equal the anonymity set of the lower ones.
+The best option would be to select coins with the same anonymity set.
+:::
 
 3. Specify anonymity set target.
 Wasabi will automatically re-register your coin for the next round until this target is reached.
