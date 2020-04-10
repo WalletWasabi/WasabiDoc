@@ -26,7 +26,7 @@
 ## Coins
 
 A coin is an unspent transaction output (UTXO), a chunk of bitcoin which can be sent in a future transaction.
-In the Wasabi wallet `Send` tab, you see a list of all the coins you can spend because.
+In the Wasabi wallet `Send` tab, you see a list of all the coins you can spend.
 You can get a coin by first [receiving](/using-wasabi/Receive.md) them from someone else, for example by earning them or exchanging them for fiat currency.
 You can spend one or more coins by selecting them in the `Send` tab, if your payment amount is below the value of the selected coins, then you will receive a [change coin](/using-wasabi/ChangeCoins.md) back.
 
@@ -40,7 +40,7 @@ The goal is to know the observers who know about your coins and try to reduce th
 
 ## Anonymity Set
 
-When you receive a bitcoin in a regular transaction with one input, and two outputs, then your coin can be linked to this one output.
+When you send a bitcoin in a regular transaction with one input, and two outputs, then your change coin can be linked to this one input.
 There is a 1 in 1 chance to find this link, and no plausible deniability.
 Thus, Wasabi shows this coin with an anonymity set of `1` <img src="/ShieldRed.png" alt="red" class="shield" />.
 
@@ -56,7 +56,7 @@ By default they have an anonymity set of `2`, `21` and `50`, however, this can b
 
 When sending bitcoin, you need to know the destination address of the receiver.
 This commits to the spending condition that the receiver agrees to have for this coin.
-The address can be a public key hash [starting with `1...`], a script hash [starting with `3...`], or a native segwit bech32 public key hash [starting with `bc1q...`].
+The address can be a public key hash [starting with `1`], a script hash [starting with `3`], or a native segwit bech32 public key hash [starting with `bc1q`].
 Make sure that you ask the receiver for a [new address](/why-wasabi/AddressReuse.md) for every payment to protect your privacy and theirs.
 Wasabi will calculate the checksum and notify you if the provided address is wrong.
 
@@ -122,4 +122,4 @@ Once the transaction is signed, Wasabi will connect to a random Bitcoin P2P node
 This first node will gossip the transaction throughout the network, then miners can include it in a block.
 
 If for some reason the first broadcast fails, then if you have Wasabi connected to [your own Bitcoin full node](/using-wasabi/BitcoinFullNode.md) this node will broadcast the transaction to the network.
-If this also fails, or you don't have a full node, then the transaction is send to the backend coordinator with a new Tor identity, who then gossips the transaction to the network.
+If this also fails, then the transaction is sent to the backend coordinator with a new Tor identity, who then broadcasts the transaction to the network.
