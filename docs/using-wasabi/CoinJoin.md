@@ -153,7 +153,7 @@ Wasabi saves on mining fees by setting a confirmation target of roughly 12 hours
 
 ## Wasabi CoinJoin examples
 
-Here's a list of Wasabi CoinJoin examples and how they appear on an block explorer:
+Here's a list of Wasabi CoinJoin examples and how they appear on a block explorer:
 
 - [e4a789d16a24a6643dfee06e018ad27648b896daae6a3577ae0f4eddcc4d9174](https://blockstream.info/tx/e4a789d16a24a6643dfee06e018ad27648b896daae6a3577ae0f4eddcc4d9174) | [.onion version](http://explorerzydxu5ecjrkwceayqybizmpjjznk5izmitf2modhcusuqlid.onion/tx/e4a789d16a24a6643dfee06e018ad27648b896daae6a3577ae0f4eddcc4d9174)
 - [c69aed505ca50473e2883130221915689c1474be3c66bcf7ac7dc0e26246afc8](https://blockstream.info/tx/c69aed505ca50473e2883130221915689c1474be3c66bcf7ac7dc0e26246afc8) | [.onion version](http://explorerzydxu5ecjrkwceayqybizmpjjznk5izmitf2modhcusuqlid.onion/tx/c69aed505ca50473e2883130221915689c1474be3c66bcf7ac7dc0e26246afc8)
