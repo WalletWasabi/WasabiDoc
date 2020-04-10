@@ -23,7 +23,7 @@ Wasabi enables trustless (meaning nobody can steal) and private (meaning even th
 
 1. Launch Wasabi, and open your wallet that contains the coins that you want to CoinJoin.
 Notice that it is not yet possible to CoinJoin from a hardware wallet, the keys must be "hot" on your computer.
-Then click on the `CoinJoin` tab, either from the top tabs or the right-side wallet explorer.
+Then click on the `CoinJoin` tab, either from the top tabs or the right-side `Wallet Explorer`.
 
 ![](/CoinJoin.png)
 
@@ -160,4 +160,3 @@ Here's a list of Wasabi CoinJoin examples and how they appear on an block explor
 - [ef329b3ed8e790f10f0b522346f1b3d9f1c9d45dfa5b918e92d6f0a25d91c7ce](https://blockstream.info/tx/ef329b3ed8e790f10f0b522346f1b3d9f1c9d45dfa5b918e92d6f0a25d91c7ce) | [.onion version](http://explorerzydxu5ecjrkwceayqybizmpjjznk5izmitf2modhcusuqlid.onion/tx/ef329b3ed8e790f10f0b522346f1b3d9f1c9d45dfa5b918e92d6f0a25d91c7ce)
 - [f82206145413db5c1272d5609c88581c414815e36e400aee6410e0de9a2d46b5](https://blockstream.info/tx/f82206145413db5c1272d5609c88581c414815e36e400aee6410e0de9a2d46b5) | [.onion version](http://explorerzydxu5ecjrkwceayqybizmpjjznk5izmitf2modhcusuqlid.onion/tx/f82206145413db5c1272d5609c88581c414815e36e400aee6410e0de9a2d46b5)
 - [a7157780b7c696ab24767113d9d34cdbc0eba5c394c89aec4ed1a9feb326bea5](https://blockstream.info/tx/a7157780b7c696ab24767113d9d34cdbc0eba5c394c89aec4ed1a9feb326bea5) | [.onion version](http://explorerzydxu5ecjrkwceayqybizmpjjznk5izmitf2modhcusuqlid.onion/tx/a7157780b7c696ab24767113d9d34cdbc0eba5c394c89aec4ed1a9feb326bea5)
-
