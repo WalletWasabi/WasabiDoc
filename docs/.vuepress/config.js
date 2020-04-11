@@ -226,6 +226,7 @@ module.exports = {
             "/using-wasabi/Testnet.md",
             "/using-wasabi/LockScreen.md",
             "/using-wasabi/PasswordBestPractices.md",
+            "/using-wasabi/BackupBestPractices.md", 
             "/using-wasabi/BIPs.md",
             "/using-wasabi/IndustryStandards.md"
           ]
