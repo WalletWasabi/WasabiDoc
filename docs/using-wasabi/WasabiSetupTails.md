@@ -69,7 +69,7 @@ Create a directory in your persistent with the same hierarchical structure, like
 
 After every session, when you’re done, navigate into `/Home/.walletwasabi/client` and copy the desired folders into your persistent directory.
 
-Generally, you’d like to save the `Wallets` [keys, labels], `Blocks` [which are interesting to the wallet] and `BitcoinStore` [block filters] folders.
+Generally, you’d like to save the `Wallets` (keys, labels), `Blocks` (which are interesting to the wallet) and `BitcoinStore` (block filters) folders.
 
 ## Install Wasabi
 
