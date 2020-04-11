@@ -26,7 +26,7 @@ This label is not shared with anyone, it is only stored locally on your computer
 3. Write a long and random password and **[back it up](/using-wasabi/BackupBestPractices)**.
 It encrypts your secrets, and you will need it every time you want to spend bitcoin from this wallet, or recover your wallet.
 
-	If you are uncertain about how to create a secure password, refer to [Password basics](/using-wasabi/WalletGeneration.md#password-basics) and [Password Best Practices](/using-wasabi/PasswordBestPractices.md) for helpful information.
+If you are uncertain about how to create a secure password, refer to [Password Best Practices](/using-wasabi/PasswordBestPractices.md) for helpful information.
 
 
 	:::danger Back up your password!
@@ -59,39 +59,6 @@ Wasabi integrates [BIP 38: Password-Protected Private Key](/using-wasabi/BIPs.md
 If someone has compromised your operating system and hardware and he only has the encrypted secrets, then no bitcoin can be spent by him.
 You need **both** the encrypted secrets, and the password in order to enable the private key which can sign a spending transaction.
 This means that the password is your last line of defense against anyone who tries to steal your bitcoin.
-
-## Password basics
-
-1. Randomness is the single-most important requirement for a strong password, because randomness means that the password has no predictable pattern to it.
-This makes it impossible to crack without doing an exhaustive, "brute-force" attack.
-
-2. Assuming a password is constructed randomly, its length has the most impact on its strength.
-However, a password that is very long, but not randomly constructed, such as: `thequickbrownfoxjumpedoverthelazydogsback`, or a passage from literature, is certain to be on every serious hacker's guess list.
-
-3. "Entropy" is a term commonly used to define the strength of a random password.
-There is a tutorial about how to calculate and evaluate entropy in your password [here](/using-wasabi/PasswordBestPractices.md#how-to-calculate-entropy).
-
-## What not to do
-
-Here are a few examples that do it completely wrong.
-You should not generate your password like this:
-
-1. Do not use publicly known information like your grandma's maiden name and the birthday of your dog.
-`Emma1992` is a really, really, really bad password, because it can easily be guessed and it is very short.
-Here is a list of the worst and [most commonly used passwords](https://en.wikipedia.org/wiki/List_of_the_most_common_passwords#SplashData) in recent years.
-Password hackers start with lists like this.
-
-2. Do not use the same password that you have used in other places.
-Because if one password is leaked, then other ones are compromised.
-
-3. Do try to use a mix of uppercase and lowercase letters, numbers, and special characters (&$%@ etc.) in your password.
-
-4. Do not take a famous quote, or well-known passage from literature and use it for a password.
-It will not fool any serious hacker, even if you throw in substitutions such as: "@" instead of "a", or "$" instead of "s".
-
-:::danger Make a secure password!!
-It is of utmost importance to generate a secure password following [best practices](/using-wasabi/PasswordBestPractices.md).
-:::
 
 ## How are the secrets created
 

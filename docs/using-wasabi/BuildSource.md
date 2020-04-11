@@ -14,7 +14,7 @@
 You can compile the source code in order to get the most recent commits by the developers.
 This enables you to try out features or fixes that are not yet released.
 This can be the main repository master branch for those changes that should be in the next release, or developer branches for cutting edge features.
-Be aware that these branches might be unstable and can include bugs that lead to a loss of funds, so use with caution and on testnet.
+Be aware that these branches might be unstable and can include bugs that lead to a loss of funds, so use with caution and on [testnet](/using-wasabi/Testnet.md).
 
 ## Get The Requirements
 
@@ -31,7 +31,7 @@ You can disable .NET's telemetry, which is sending some usage information to Mic
 
 ## Get Wasabi
 
-Clone Wasabi repository
+Clone Wasabi repository:
 
 ```sh
 git clone https://github.com/zkSNACKs/WalletWasabi.git
@@ -40,7 +40,7 @@ cd WalletWasabi/WalletWasabi.Gui
 
 ## Run Wasabi
 
-Run Wasabi from the `WalletWasabi.Gui` folder
+Build and run the Wasabi client application from the `WalletWasabi.Gui` folder:
 
 ```sh
 dotnet run
@@ -52,6 +52,8 @@ dotnet run
 git pull
 ```
 
+## Checkout a developer branch
+
 :::warning Experimental
 The next step is optional, it can be used for testing specific branches that are currently being worked on.
 
@@ -59,9 +61,7 @@ These developer branches are not thoroughly reviewed by other contributors, and 
 So only compile these branches if you know what you are doing, and run them at your own risk only on [testnet](/using-wasabi/Testnet.md).
 :::
 
-## Checkout a developer branch
-
-Add the developer to your remote & fetch his work & checkout the branch & pull the latest commits
+Add the developer to your remote & fetch his work & checkout the branch & pull the latest commits:
 
 ```sh
 git remote add nopara73 https://github.com/nopara73/WalletWasabi
