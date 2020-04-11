@@ -44,7 +44,7 @@ In order to end-to-end verify all the downloaded packages you need a Windows, a 
 
 ### Windows
 
-After you installed Wasabi from the `.msi` package downlaoded from the website, it will be in `C:\Program Files\WasabiWallet` folder.
+After you installed Wasabi from the `.msi` package downloaded from the website, it will be in `C:\Program Files\WasabiWallet` folder.
 You can compare it with your build:
 
 ```sh
@@ -56,7 +56,7 @@ git diff --no-index win7-x64 "C:\Program Files\WasabiWallet"
 You can use the `Windows Subsystem for Linux` to verify all the packages in one go.
 Install the `.deb` package and extract the `tar.gz` and `.dmg` packages, then compare them with your build.
 
-After installing Windows Subsystem for Linux, just type `wsl` in explorer where your downloaded and built packages are located.
+After installing `Windows Subsystem for Linux`, just type `wsl` in explorer where your downloaded and built packages are located.
 
 ![](/DeterministicBuildAll.png)
 
