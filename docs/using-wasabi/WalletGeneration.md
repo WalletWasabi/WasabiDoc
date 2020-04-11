@@ -33,6 +33,7 @@ If you are uncertain about how to create a secure password, refer to [Password B
 	Without the password, you cannot spend your bitcoin or recover your wallet, even if you have the recovery words (Seed phrase).
 	So, triple-check that you have a proper backup!
 	:::
+
 4. Click the `Generate` button.
 
 ![](/WalletManagerGenerateWallet.png)
