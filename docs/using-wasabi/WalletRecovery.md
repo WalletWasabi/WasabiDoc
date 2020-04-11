@@ -1,11 +1,11 @@
 ---
 {
-  "title": "Recover Wasabi Wallet",
+  "title": "Recover a Wallet",
   "description": "A detailed guide about restoring a wallet in Wasabi. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
 }
 ---
 
-# Recover Wasabi Wallet
+# Recover a Wallet
 
 There are two different ways that you can recover an already used wallet in Wasabi.
 
