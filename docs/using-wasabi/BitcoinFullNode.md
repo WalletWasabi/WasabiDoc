@@ -45,7 +45,7 @@ Wasabi also queries if your local mempool has unconfirmed transactions that are 
 Further, your full node is used to estimate the current mining fee level based on the bitcoind `smartfee` algorithm.
 Your full node is not used to broadcast your transactions, as this is done through a random peer-to-peer node with a new tor identity, which is better for your [network level privacy](/why-wasabi/NetworkLevelPrivacy.md).
 
-The future goal is that the local full node is used to generate the BIP 158 block filters from the verified blocks.
+The future goal is that the local full node (Knots) is used to generate the BIP 158 block filters from the verified blocks.
 Only then is there full verification, and no trust in the zkSNACKs server.
 
 ## bitcoind within Wasabi
