@@ -27,7 +27,7 @@ The keys need to be on the internet connected computer to be able to CoinJoin.
 
 ## What is Cold Storage
 
-Cold storage refers to keeping bitcoin protected by private keys which are generated and stored completely offline.
+Cold storage refers to generating and storing private keys completely offline.
 This is an often-used security precaution, especially dealing with large amounts of bitcoin.
 Because the private keys are not on a computer which is connected to the internet, many remote attack vectors are nullified.
 
@@ -48,7 +48,7 @@ The setup is thoroughly tested for [Trezor model One and T](https://trezor.io), 
 
 When Wasabi is running, the hardware wallet can be connected via USB to the computer.
 Wasabi should automatically detect the hardware, and open the `Hardware Wallet` tab where you can load the wallet.
-This wallet can be used as a watch-only wallet when the hardware wallet device is not connected, then it can be loaded as any other wallet in the `Wallet Explorer`.
+This wallet can be used as a watch-only wallet when the hardware wallet device is not connected.
 
 #### Receiving bitcoin
 
