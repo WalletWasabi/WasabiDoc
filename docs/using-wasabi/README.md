@@ -37,7 +37,7 @@ Further tutorials about the different parts of the wallet, for newbies and power
 - [How you can be de-anonymized using Bitcoin](/using-wasabi/Deanonimization.md)
 
 ### Restoring Wasabi
-- [Recover Wasabi Wallet](/using-wasabi/WalletRecovery.md)
+- [Recover a Wallet](/using-wasabi/WalletRecovery.md)
 - [Restoring Wasabi Wallet to Electrum](/using-wasabi/RestoreElectrum.md)
 - [Lost Password Strategy](/using-wasabi/LostPassword.md)
 - [Password Finder](/using-wasabi/PasswordFinder.md)
