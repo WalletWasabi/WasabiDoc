@@ -200,7 +200,6 @@ module.exports = {
           children: [
             "/using-wasabi/WalletRecovery.md",
             "/using-wasabi/RestoreElectrum.md",
-            "/using-wasabi/LostPassword.md",
             "/using-wasabi/PasswordFinder.md"
           ]
         },

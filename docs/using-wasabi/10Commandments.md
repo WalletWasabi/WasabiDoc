@@ -31,7 +31,7 @@ It also gives you time to move your coins to a different wallet if you notice th
 Wasabi is a fully non-custodial wallet, which means that you are always in possession of your keys, and this means safely storing a backup.
 If you have done this step, then even if your computer crashes, there is very little you have to worry about, you can always [recover your wallet](/using-wasabi/WalletRecovery.md).
 Also, under no circumstance should you reveal the password or mnemonic words to anyone that asks for them.
-Lastly, understand that if you [lose your password](/using-wasabi/LostPassword.md), it becomes much harder (if not impossible) to restore your wallet - so store both safely!
+Lastly, understand that if you lose your password, it becomes much harder (if not impossible) to restore your wallet, so store both safely!
 
 ## 4. Practice good labeling AND try to never reuse addresses
 
