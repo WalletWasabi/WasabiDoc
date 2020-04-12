@@ -53,7 +53,7 @@ If the package is installed, navigate to the Applications directory and execute:
 
 ```bash
 ~$ cd ~/Applications/Wasabi\ Wallet.app/Contents/MacOs
-~/Applications/Wasabi\ Wallet.app/Contents/MacOs $ wassabee mix --wallet:MyFirstWallet --destination:MySecondWallet --keepalive
+~/Applications/Wasabi\ Wallet.app/Contents/MacOs$ ./wassabee mix --wallet:MyFirstWallet --destination:MySecondWallet --keepalive
 ```
 
 If the source code is built, navigate to the WalletWasabi.Gui folder (inside the cloned repo) and execute:
