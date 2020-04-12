@@ -17,11 +17,11 @@
 
 Let's assume you want to send 0.5 bitcoin to Alice.
 In the `Send` tab you select one or more UTXO, these are the inputs of the transaction.
-For example, let's assume that you choose a <img src="/ShieldRed.png" alt="red shield" class="shield" /> anonymity set 1 UTXO worth 2 bitcoins.
+For example, let's assume that you choose a <img src="/ShieldRed.png" alt="red shield" class="shield" /> 1 anonymity set UTXO worth 2 bitcoins.
 You put Alice's address in the `Receiving Address` field, and set the spending `Amount` to 0.5 bitcoin.
 This will be one output of the transaction.
 
-Since your chosen UTXO contains 2 bitcoins, after sending 0.5 bitcoin to Alice there will be 1.5 bitcoins remaining from the original amount.
+Since your chosen UTXO is worth 2 bitcoins, after sending 0.5 bitcoin to Alice there will be 1.5 bitcoins change from the original amount.
 This left over amount will automatically go to a new address in your wallet, and this is called the change output.
 
 This leftover 1.5 bitcoins change UTXO is connected to the input UTXO of the transaction, and thus also has an `anonymity set` of 1.
@@ -49,11 +49,11 @@ After this CoinJoin round has concluded, you will receive 2 separate UTXOs.
 The larger UTXO will have a colored shield (<img src="/ShieldYellow.png" alt="yellow" class="shield" />, <img src="/ShieldGreen.png" alt="green" class="shield" /> or <img src="/ShieldCheckmark.png" alt="checkmark" class="shield" /> based on your [Privacy Level Settings](/FAQ/FAQ-UseWasabi.md#how-can-i-change-the-anonset-target)) that indicates the size of the anonymity set achieved in that CoinJoin round.
 The other, much smaller UTXO will be the amount (change) that was left over, and it will have a <img src="/ShieldRed.png" alt="red-shield" class="shield" /> indicating an anonymity set of `1` as it does not have the equal value denomination of the CoinJoin.
 
-Remember, to have an anonymity set UTXOs, all denomination outputs of a CoinJoin round must be equal.
-For non-equal change outputs, an attacker can do subset sum analysis and find a link between input and change output.
+Remember, to have anonymity set UTXOs, all denomination outputs of a CoinJoin round must be equal.
+For non-equal change outputs, an attacker can do subset sum analysis and find a link between inputs and change outputs.
 In some cases, when the change is close to the minimum denomination, this calculation can become computationally infeasible, meaning that there are too many possible interpretations that cannot be calculated.
 Thus, in practice, such a change coin can have privacy too.
-But in other cases, especially when coinjoining large amounts, this link can be done easily.
+But in most cases, especially when coinjoining large amounts, this link can be done easily.
 Thus, it is best to assume that the change coin has no anonymity set.
 
 The small UTXO that is leftover/change from a CoinJoin round is clearly tied to your KYC input UTXO, but the <img src="/ShieldCheckmark.png" alt="checkmark" class="shield" /> UTXO is not.
@@ -81,7 +81,7 @@ However, when sending a coin that is change from an earlier transaction, then th
 Whenever you are merging coins in one transaction, it becomes clear to any outside observer that these coins belong to the same entity, thus linking the previous transaction history.
 Thus [identifying change](/why-wasabi/Coins.md#heuristics-identifying-change) based on some heuristics is a top goal of transaction surveillance.
 
-You want to avoid merging coins with different anonymity set values whenever possible, because this will link these coins, reduce their anonymity set to the lowest value.
+You want to avoid merging coins with different anonymity set values whenever possible, because this will link these coins and reduce their anonymity set to the lowest value.
 
 ## Your options to use change privately
 
@@ -98,7 +98,7 @@ You can find a list of organizations that accept Bitcoin donations [here](https:
 ### Make it difficult to deduce the change.
 
 There are [common heuristics identifying change outputs](/why-wasabi/Coins.md#heuristics-identifying-change), try to avoid these with every transaction.
-This means, don't reuse addresses, don't send precise amounts but randomize it, don't use replace by fee, and try to send to bech32 addresses.
+Don't reuse addresses, don't send precise amounts but randomize them, don't use replace by fee, and try to send to bech32 addresses.
 
 ### Spend the change to the same entity as in the initial transaction.
 
@@ -144,9 +144,7 @@ The swap is atomic, meaning either you receive the lightning payment, or you get
 If you use a regular Lightning invoice to receive the funds, then the service provider knows your node's public key and the channel he sends the bitcoin to.
 
 For much better privacy, use rendezvous routing so that the sender does not gain knowledge of your receiving node.
-Also ensure that the communication with the swap server is done over the TPresumably, your mother and father won't
-
-or network.
+Also ensure that the communication with the swap server is done over the Tor network.
 
 ### Consolidate several change coins, but in a CoinJoin directly.
 
