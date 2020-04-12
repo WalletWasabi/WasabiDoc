@@ -7,7 +7,8 @@
 
 # Deterministic Build
 
-> Reproducible [or deterministic] builds are a set of software development practices that create an independently-verifiable path from source to binary code.  ~ [ReproducibleBuilds.org](https://reproducible-builds.org/)
+> Reproducible [or deterministic] builds are a set of software development practices that create an independently-verifiable path from source to binary code.
+~ [ReproducibleBuilds.org](https://reproducible-builds.org/)
 
 This guide describes how to reproduce Wasabi's builds.
 
@@ -32,18 +33,18 @@ dotnet run -- --onlybinaries
 
 This will build our binaries for Windows, macOS and Linux from source code and open them in a file explorer for you.
 
-![](https://i.imgur.com/8XAQzz4.png)
+![](/DeterministicBuildFolders.png)
 
 ## 3. Verify Builds
 
-You can compare our binaries with the downloads we have on the website: [https://wasabiwallet.io/](https://wasabiwallet.io/)
+You can compare your built binaries with the binaries distributed on the [Wasabi website](https://wasabiwallet.io/#download).
 In order to end-to-end verify all the downloaded packages you need a Windows, a Linux, and a macOS machine.
 
-![](https://i.imgur.com/aI9Kx0c.png)
+![](/DeterministicBuildFiles.png)
 
 ### Windows
 
-After you installed Wasabi from the `.msi`, it will be in `C:\Program Files\WasabiWallet` folder.
+After you installed Wasabi from the `.msi` package downloaded from the website, it will be in `C:\Program Files\WasabiWallet` folder.
 You can compare it with your build:
 
 ```sh
@@ -52,13 +53,12 @@ git diff --no-index win7-x64 "C:\Program Files\WasabiWallet"
 
 ### Linux & macOS
 
-You can use the Windows Subsystem for Linux to verify all the packages in one go.
-At the time of writing this guide we provide a `.tar.gz` and a `.deb` package for Linux and .dmg for macOS.
+You can use the `Windows Subsystem for Linux` to verify all the packages in one go.
 Install the `.deb` package and extract the `tar.gz` and `.dmg` packages, then compare them with your build.
 
-After installing WSL, just type `wsl` in explorer where your downloaded and built packages are located.
+After installing `Windows Subsystem for Linux`, just type `wsl` in explorer where your downloaded and built packages are located.
 
-![](https://i.imgur.com/yRUjxvG.png)
+![](/DeterministicBuildAll.png)
 
 #### .deb
 
