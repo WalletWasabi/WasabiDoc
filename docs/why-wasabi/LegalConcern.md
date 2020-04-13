@@ -11,7 +11,7 @@
 
 ---
 
-Using Bitcoin and other cryptocurrencies in the everyday course of businesses are becoming more and more popular.
+Using Bitcoin and other cryptocurrencies in the everyday course of businesses is becoming more and more popular.
 Digital money has a lot of advantages, from unstoppable transactions to low fees, and instant execution of international payments.
 But all come at a price: the blockchain stores sensitive information like the amount and involved addresses of a transaction, giving away too much business-related information to the public.
 However, this does not necessarily need to be the case.
