@@ -106,7 +106,7 @@ It is reasonable to assume that this entity can break the onion routing, not Tor
 
 #### Private UTXO retrieval
 
-The backend server served a constant filter table to all the clients over Tor.
+The backend server serves a constant filter table to all the clients over Tor.
 From those filters the clients figure out which blocks they are interested in and download them [and some false-positive blocks] from peers.
 One block per peer, and always over a fresh Tor stream.
 When a block was acquired, the peer was disconnected.
