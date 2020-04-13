@@ -55,7 +55,7 @@ git pull
 ## Checkout a developer branch
 
 :::warning Experimental
-The next step is optional, it can be used for testing specific branches that are currently being worked on.
+This step is optional, it can be used for testing specific branches that are currently being worked on.
 
 These developer branches are not thoroughly reviewed by other contributors, and there might be critical bugs in the software that can even cause loss of funds.
 So only compile these branches if you know what you are doing, and run them at your own risk only on [testnet](/using-wasabi/Testnet.md).
