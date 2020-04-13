@@ -63,4 +63,5 @@ This file can be found in [Wasabi's Data Folder](/FAQ/FAQ-UseWasabi.md#where-can
 ![](/UIConfigUnlocked.png)
 
 4. Save your changes to this file, and re-start Wasabi.
+
 The `Lock Screen` function should now be disabled, and you can create a new PIN if desired.
