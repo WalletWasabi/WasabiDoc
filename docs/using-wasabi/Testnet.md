@@ -35,11 +35,15 @@ For the first start, this may take a couple of minutes.
 After the testing, set the settings back to mainnet, and close Wasabi.
 It will load on mainnet the next time you start it.
 
+Alternatively, you can edit the `Config.json` file in your [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder).
+In the second line you can modify the value of `"Network":`, to `"Main"`, `"TestNet"`, or `"RegTest"`.
+The changes will apply on the next launch of Wasabi.
+
 ## Loading a wallet
 
 You can [load](/using-wasabi/WalletLoad.md) any previously generated wallet on testnet, by double clicking on it in the Wallet Explorer.
 However, it is recommended to use a dedicated testnet wallet.
-Notice that Wasabi uses the same wallet file and keys for both mainnet and testnet, you can load the same wallet file in either network.
+Notice that Wasabi uses the same wallet file and keys for both mainnet, testnet, and regtest, you can load the same wallet file in either network.
 
 ## Receiving testnet bitcoin
 
@@ -54,6 +58,6 @@ You may also ask other developers if they have a couple spare testnet coins avai
 
 [CoinJoin](/using-wasabi/CoinJoin.md) on testnet is as easy as on mainnet.
 In the `CoinJoin` tab, select the coins you want to CoinJoin, enter the password and click `enqueue selected coins`.
-Notice that the minimum denomination and anonymity set are much lower on testnet, for example `0.001 btc` and `2 anonymity set`.
+Notice that the minimum denomination and anonymity set are much lower on testnet, for example `0.001 btc` and `anonymity set 2`.
 This is done to enable many rounds of CoinJoin quickly, the privacy gain does not have to be substantial or efficient, as this is for testing.
 Usually there are other testers doing a CoinJoin, but if you are the only one at the moment, then load two wallets and enqueue coins in both of them.
