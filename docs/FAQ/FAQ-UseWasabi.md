@@ -59,7 +59,7 @@ To avoid problems, make sure you close Wasabi Wallet before proceeding to rename
 ### What is the password used for?
 
 The password you set is used:
-* As a 13th word (passphrase) as described in [BIP 39](/using-wasabi/BIPs.md#bip-39-mnemonic-code-for-generating-deterministic-keys).
+* As a 13th word (passphrase) as described in [BIP 39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki).
 * To encrypt the private key of the extended private key as described in [BIP 38](/using-wasabi/BIPs.md#bip-38-password-protected-private-key) to get an encrypted secret which is stored on the computer.
 
 Wasabi stores only the BIP38 encrypted blob, so you'll need to type in the password to spend or CoinJoin from Wasabi.
@@ -130,7 +130,7 @@ Only device side passphrase is supported.
 PC side passphrase is not.
 This means the hidden wallet feature can be used with Trezor T, Ledger Nano S and ColdCard, but it cannot be used with Trezor One.
 After the 12 or 24 words, enter the passphrase as the 13th or 25th word.
-It’s part of [BIP 39](/using-wasabi/BIPs.md#bip-39-mnemonic-code-for-generating-deterministic-keys).
+It’s part of [BIP 39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki).
 :::
 
 :::details
@@ -1016,7 +1016,7 @@ Example: If you select 10 coins with total value of 0.2 btc but the sum of 4 coi
 Write down your recovery words!
 :::
 
-Wasabi uses [BIP 39: mnemonic code for generating deterministic keys](/using-wasabi/BIPs.md#bip-39-mnemonic-code-for-generating-deterministic-keys) to enable easy backups of all private keys in the wallet.
+Wasabi uses [BIP 39: mnemonic code for generating deterministic keys](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) to enable easy backups of all private keys in the wallet.
 The mnemonic is displayed as 12 recovery words that are only shown once during the wallet generation.
 
 ![](/WalletManagerRecoveryWords.png)
@@ -1056,7 +1056,7 @@ So it is good advice to encrypt this wallet file.
 ### Can I recover my wallet without the password?
 
 No.
-The password you set is used as a 13th word (passphrase) as described in BIP39, you should back it up when you generate a wallet.
+The password you set is used as a 13th word (passphrase) as described in [BIP 39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki), you should back it up when you generate a wallet.
 It is necessary to spend your bitcoin or to recover your wallet.
 :::
 
