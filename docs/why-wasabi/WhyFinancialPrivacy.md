@@ -25,7 +25,7 @@ By Satoshi Nakamoto in [How anonymous are bitcoins? - Bitcointalk](https://bitco
 One of the apparent contradictions of Bitcoin is the notion that your transactions can be private but have a public transaction record.
 
 As a financial system, Bitcoin functions completely differently from the established banking network.
-Bitcoin allows you to store funds yourself, without the need for a third party, and therefore places the burden on you of keeping said funds secure and accessible.
+Bitcoin allows you to store funds yourself, without the need for a third party and therefore places the burden on you of keeping said funds secure and accessible.
 
 While opening an account with a traditional bank or other financial institution requires significant cost and effort, creating a Bitcoin wallet is quick and easy to do on your home computer.
 This speedy process makes it possible to create hundreds of separate wallets if you wish.
