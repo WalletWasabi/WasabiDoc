@@ -148,7 +148,7 @@ Open the `UiConfig.json` file inside your [Wasabi data folder](/FAQ/FAQ-UseWasab
 :::details
 ### Can I import a watch-only extended public key?
 
-Yes, but not yet in the GUI, you will need to create your own wallet file.
+Yes, but not yet in the GUI, you will need to manually create a new wallet file.
 Open a text editor and paste the following wallet structure:
 
 ```
