@@ -169,17 +169,17 @@ Open a text editor and paste the following wallet structure:
 }
 ```
 
-Then paste your extended public key inbetween the quotes of the field `"ExtPubKey": "<paste xpub here>",`.
+Then paste your extended public key in-between the quotes of the field `"ExtPubKey": "paste xpub here",`.
 You can also change the `"AccountKeyPath": "84'/0'/0'",` field if you want to import a different derivation path.
 But notice that Wasabi only works with native SegWit bech32 addresses.
 
-Save this file in your [`Wallets` data folder](/FAQ/FAQ-UseWasabi.html#where-can-i-find-the-wasabi-data-folder) with `WalletName.json`.
+Save this file in your [`Wallets` data folder](/FAQ/FAQ-UseWasabi.html#where-can-i-find-the-wasabi-data-folder) as a json file like this: `WalletName.json`.
 The `WalletName` will be displayed in the GUI.
 
 Then start Wasabi and load the wallet to synchronize it.
 For watch only wallets, the `Send` tab is disabled.
 However, you can use the `Build Transaction` tab in the `Advanced` section of the `Wallet Explorer` to build an unsigned PSBT transaction.
-When this is signed on the device with the private key (like an offline laptop running Electrum wallet), then you can use the `Broadcast Transaction` tab in the `Tools` menu.
+When this is signed on the device with the private key (like an offline laptop running Electrum wallet or a hardware wallet), then you can broadcast the signed transaction using the `Broadcast Transaction` tab in the `Tools` menu.
 :::
 
 ## Synchronization
