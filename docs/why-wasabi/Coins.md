@@ -63,7 +63,7 @@ However, Wasabi CoinJoins are very easily fingerprinted, and any coin associated
 ### Round numbers
 
 When making a payment, then often the destination address receives a round number of bitcoin.
-Because the input is usually a non-round number, the other output will also a be non-round number.
+Because the input is usually a non-round number, the other output will also be a non-round number.
 This makes it clear that the non-round number output is the change back to the sender.
 
 ```
@@ -111,4 +111,3 @@ A [1.3576 1516 btc]  -->  B [1.0135 6515 btc]
 :::tip
 Because of this privacy leak, Wasabi does not utilize RBF fee bumping.
 :::
-
