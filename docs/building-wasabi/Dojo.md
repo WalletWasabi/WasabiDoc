@@ -69,7 +69,7 @@ Osu!
 | ThunderBiscuit   | [Twitter][46]               | [Wasabi Documentation][49]   | 2019-08: white belt by Max Hillebrand|
 | Riccardo Masutti   | [Twitter][50]               | [Wasabi Documentation][51]   | 2019-11: white belt by Max Hillebrand|
 | Rafael Yakobi   | [Twitter][52]               | [Wasabi Guide][53]   | 2020-03: white belt by Max Hillebrand|
-| Greg Hajdu   | [Wasabika][54]              | [Naming of the new CoinJoin technology][56] - [Wabi Sabi][55]   | 2020-04: white belt by David Molnar|
+| Greg Hajdu   | [Twitter][54]              | [Naming of the new CoinJoin technology][56] - [Wabi Sabi][55]   | 2020-04: white belt by David Molnar|
 
 
 [1]: https://twitter.com/NicolasDorier/
