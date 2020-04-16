@@ -143,12 +143,12 @@ Using Wasabi this way results in the same privacy model as Bitcoin Core's, regar
 
 #### Private transaction broadcasting
 
-Even when Wasabi is connected to your own node, it will broadcast the transaction in an above-described way: to one new peer over Tor.
+Even when Wasabi is connected to your own node, it will broadcast the transaction in the above-described way: to one new peer over Tor.
 
 ## Universal Attacks
 
 Every time you use software that interacts with a Bitcoin network, and especially a Bitcoin node, you leave a sticky fingerprint in your traffic.
-It comes in the form of a small, but an unavoidable spike in volume every time a new block is mined and the nodes start gossiping about it.
+It comes in the form of a small but unavoidable spike in volume every time a new block is mined and the nodes start gossiping about it.
 The blocks in Bitcoin are quite big, and the propagation speed is critical for consensus (greater delay means more frequent accidental forks), so such effect is predictable, and, in a sense, inherent to the Bitcoin architecture.
 
 Notably, the volume of block-related messages was drastically reduced since the introduction of Compact Block Relay ([BIP 152](https://github.com/bitcoin/bips/blob/master/bip-0152.mediawiki).
@@ -174,7 +174,7 @@ That would, however, demand constant shielding of both upstream and downstream c
 - **Blockstream Satellite** - the ultimate solution.
 Eliminates the traffic analysis threat altogether.
 
-Beyond active measures available now, both the privacy and bandwidth efficiency of Bitcoin communications are actively worked on.
+Beyond active measures available now, both the privacy and the bandwidth efficiency of Bitcoin communications are actively worked on.
 It is entirely possible that the messaging protocol will get to the point where block propagation doesn't trigger any significant spikes in traffic volume.
 
 You can read more about BitSniff [here](https://79jke.github.io/BitSniff/) and check the interactive demo [here](https://m417z.com/bitsniff/).
