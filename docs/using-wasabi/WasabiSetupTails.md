@@ -110,6 +110,30 @@ After the first time you save a Wasabi session, your persistent storage will loo
 
 To load your saved session, copy and paste the `.walletwasabi` folder into `/Home` before starting Wasabi.
 
+You can save multiple copies of `.walletwasabi` in your persistent, each with different data:
+
+```sh
+/Persistent
+|__ /bitcoin-0.18.1            	   # Bitcoin Core launcher folder
+|__ /Bitcoin                       # Bitcoin Core data folder
+|__ /Wasabi                        # General Wasabi folder
+    |__ /Wasabi-${currentVersion}.deb       # Wasabi installer
+    |__ /BitcoinStore              # Filters (No need to keep multiple copies of them)
+    |__ /Wallets A,B,C
+    |   |__ /.walletwasabi
+    |       |__ /client            # Here we save our wallet files and blocks
+    |           |__ /Wallets
+    |           |__ /Blocks
+    |__ /Wallets D,E,F
+    |   |__ /.walletwasabi
+    |       |__ /client
+    |           |__ /Wallets
+    |           |__ /Blocks
+    |__ /Wallets G,H,I
+        |__ /.walletwasabi
+            |__ /client
+                |__ /Wallets
+                |__ /Blocks
 :::danger
 Remember to back up either your files or your [persistent storage](https://tails.boum.org/doc/first_steps/persistence/copy/index.en.html)!
 :::
