@@ -9,8 +9,6 @@
 
 [[toc]]
 
----
-
 > Satoshi's Vision + CoinJoin + Bulletproofs = Sad Blockchain Analysts
 
 I attended a brainstorming event on Bitcoin privacy.
@@ -30,6 +28,8 @@ But before that, I’d like to credit some attendees and link to their articles 
 - [Danger Shony](https://twitter.com/dangershony)
 - [Tim Ruffing](https://twitter.com/real_or_random)
 - [Adam Gibson](https://twitter.com/waxwing__)
+
+---
 
 ## The Basics
 
@@ -189,13 +189,13 @@ That attack only applied if “the receiver is publicly known.”
 In peer to peer, person to person payments, the attacker would have to somehow first acquire an endpoint to a receiver.
 
 #### Side effect 4: 
-Wallets must be deencrypted.
+Wallets must be decrypted.
 Since many wallets only send-time decrypt the private keys, it would need to decrypt receive-time, too.
 There are multiple ways to implement this.
 It could be implemented in address generation time, which in our case it is also an endpoint generation time.
 But if it is strictly implemented at receive time, the UTXO spying defense may not be needed at all.
 
-##### Side effect 5: 
+#### Side effect 5: 
 It helps with UTXO bloat.
 Let us assume the above transaction is a Sender-Receiver transaction.
 Then, if the receiver would not participate, that would mostly result in a one input, two output transaction.

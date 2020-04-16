@@ -7,6 +7,10 @@
 
 # Wasabi Setup in Virtual Machines
 
+[[toc]]
+
+---
+
 ## Benefits of Virtual Machines
 
 Virtualization allows you to create and run as many virtual machines (VMs) on a single computer at one time as desired.
@@ -260,5 +264,3 @@ There are no additional dependencies required to run this version.
 [Download, verify and install](/using-wasabi/InstallPackage.md) the latest `Wasabi-${currentVersion}` package in your VM, then start Wasabi.
 
 __Have fun, and please consider contributing to the Wasabi project!__
-
-If you would like to help with Wasabi development, refer to our [developers debugging guide](building-wasabi/HowToDebug.html#before-starting).

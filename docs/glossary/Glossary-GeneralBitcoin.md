@@ -17,11 +17,39 @@ Read more: [Bitcoin addresses](/using-wasabi/Receive.md#bitcoin-public-keys-and-
 :::
 
 :::details
+### Bitcoin
+
+Bitcoin is a peer-to-peer electronic cash system.
+An innovative payment network and a new kind of money.
+It is a decentralized digital currency without a central bank or single administrator that can be sent from user to user on the peer-to-peer bitcoin blockchain network without the need for intermediaries.
+:::
+
+:::details
+### Bitcoin Core
+
+Bitcoin Core is an open source project which maintains and releases Bitcoin client software called `Bitcoin Core`, considered to be Bitcoin's reference implementation.
+It is a direct descendant of the original Bitcoin software client released by Satoshi Nakamoto after he published the famous Bitcoin whitepaper.
+
+Bitcoin Core consists of both `full-node` software for fully validating the blockchain as well as a Bitcoin wallet.
+The project also currently maintains related software such as the cryptography library libsecp256k1 and others located at GitHub.
+Read more: [Bitcoin Core Website](https://bitcoincore.org/)
+:::
+
+:::details
 ### Bitcoin Improvement Proposal (BIP)
 
 Bitcoin Improvement Proposal.
 A design document for introducing features or information to Bitcoin.
 Read more: [Wasabi Supported BIPs](/using-wasabi/BIPs.md)
+:::
+
+:::details
+### Bitcoin Knots
+
+Bitcoin Knots is a derivative of Bitcoin Core with a collection of improvements backported from and sometimes maintained outside of Core's master git tree.
+Since version 1.1.11, Wasabi has partial Bitcoin Knots integration.
+This means that it is possible (but not mandatory) to start Bitcoin Knots during the launch of Wasabi, without having to install or configure anything.
+Read more: [Bitcoin Knots Website](https://bitcoinknots.org/)
 :::
 
 :::details
@@ -129,6 +157,14 @@ Can also happen as part of an attack.
 :::
 
 :::details
+### Full node
+
+Any computer that connects to the Bitcoin network is called a node.
+Nodes that fully verify all of the rules of Bitcoin are called full nodes.
+Full nodes download every block and transaction and check them against Bitcoin's consensus rules.
+:::
+
+:::details
 ### Fungibility
 
 Fungibility is a desirable property of Bitcoin UTXOs that are indistinguishable from each other.
@@ -195,7 +231,7 @@ Input, transaction input, or TxIn is an input in a Bitcoin transaction which con
 
 Lightning Network is a proposed implementation of Hashed Timelock Contracts (HTLCs) with bi-directional payment channels which allows payments to be securely routed across multiple peer-to-peer payment channels.
 This allows the formation of a network where any peer on the network can pay any other peer even if they don't directly have a channel open between each other.
-Read more: [Use Lightning](/why-wasabi/10Commandments.md#_10-use-lightning)
+Read more: [Use Lightning](/using-wasabi/10Commandments.md#_10-use-lightning)
 :::
 
 :::details
@@ -232,18 +268,19 @@ A network node that finds valid proof of work for new blocks, by repeated hashin
 :::
 
 :::details
+### Mining Reward
+
+An amount of satoshis included in each new block as a reward by the network to the miner who found the proof of work solution.
+Initially it was 50 bitcoin per block, which is halved every 210 000 blocks, or roughly 4 years.
+This leads to a total money supply of just below 21 million bitcoin.
+:::
+
+:::details
 ### Multisignature (multisig)
 
 Multisignature (m-of-n multisig) refers to requiring more than one key to authorize a Bitcoin transaction.
 Only with `m` signatures of `n` public keys can the bitcoin be spent.
 Read more: [Can I generate a multi signature script?](/FAQ/FAQ-UseWasabi.md#can-i-generate-a-multi-signature-script)
-:::
-
-:::details
-### Nonce
-
-The `nonce` in a Bitcoin block is a 32-bit (4-byte) field whose value is set so that the hash of the block will contain a run of leading zeros.
-The rest of the fields may not be changed, as they have a defined meaning.
 :::
 
 :::details
@@ -259,9 +296,10 @@ The funds will always be in a Bitcoin address that you control.
 :::
 
 :::details
-### Output
+### Nonce
 
-Output, transaction output, or TxOut is an output in a Bitcoin transaction which contains two fields: a value field for transferring zero or more satoshis and a pubkey script for indicating what conditions must be fulfilled for those satoshis to be further spent.
+The `nonce` in a Bitcoin block is a 32-bit (4-byte) field whose value is set so that the hash of the block will contain a run of leading zeros.
+The rest of the fields may not be changed, as they have a defined meaning.
 :::
 
 :::details
@@ -270,6 +308,12 @@ Output, transaction output, or TxOut is an output in a Bitcoin transaction which
 An off-chain transaction is the movement of value outside of the blockchain.
 While an on-chain transaction - usually referred to as simply a transaction - modifies the blockchain and depends on the blockchain to determine its validity.
 An off-chain transaction relies on other methods to record and validate the transaction.
+:::
+
+:::details
+### Output
+
+Output, transaction output, or TxOut is an output in a Bitcoin transaction which contains two fields: a value field for transferring zero or more satoshis and a pubkey script for indicating what conditions must be fulfilled for those satoshis to be further spent.
 :::
 
 :::details
@@ -309,13 +353,6 @@ Read more: [BIP 174 Partially Signed Bitcoin Transaction Format](https://github.
 :::
 
 :::details
-### Payment Channels
-
-A payment channel is class of techniques designed to allow users to make multiple Bitcoin transactions without committing all of the transactions to the Bitcoin blockchain.
-In a typical payment channel, only two transactions are added to the blockchain but an unlimited or nearly unlimited number of payments can be made between the participants.
-:::
-
-:::details
 ### Pay-to-Witness-Public-Key-Hash (P2WPKH)
 
 The signature of a P2WPKH contains the same information as a Pay-to-Public-Key-Hash (P2PKH) spending, but is located in the witness field instead of the scriptSig field.
@@ -324,15 +361,16 @@ Read more: [BIP 84 derivation scheme for P2WPKH based accounts](/using-wasabi/BI
 :::
 
 :::details
-### Public Key
+### Payment Channels
 
-A public key is calculated by multiplying the private key to the generator point of an elliptic curve.
-Given only the public key, the private key cannot be calculated.
-Anyone can encrypt a message using a public key.
-This encrypted message (cyphertext) can only be decrypted through the related private key.
-Given a public key and a signature over a message, anyone can verify that the signer had the private key and the message.
-In Bitcoin, the public key is the pseudonymous identity of the owner of a coin.
-Read more: [Bitcoin private keys](/using-wasabi/Receive.html#bitcoin-public-keys-and-addresses)
+A payment channel is class of techniques designed to allow users to make multiple Bitcoin transactions without committing all of the transactions to the Bitcoin blockchain.
+In a typical payment channel, only two transactions are added to the blockchain but an unlimited or nearly unlimited number of payments can be made between the participants.
+:::
+
+:::details
+### Plausible deniability
+
+Plausible deniability is the ability to deny knowledge of or responsibility for any damnable actions committed by others in an organizational hierarchy because of a lack of evidence that can confirm their participation, even if they were personally involved in or at least willfully ignorant of the actions.
 :::
 
 :::details
@@ -354,6 +392,18 @@ By providing this pre-image block, anyone can verify the amount of computational
 :::
 
 :::details
+### Public Key
+
+A public key is calculated by multiplying the private key to the generator point of an elliptic curve.
+Given only the public key, the private key cannot be calculated.
+Anyone can encrypt a message using a public key.
+This encrypted message (cyphertext) can only be decrypted through the related private key.
+Given a public key and a signature over a message, anyone can verify that the signer had the private key and the message.
+In Bitcoin, the public key is the pseudonymous identity of the owner of a coin.
+Read more: [Bitcoin private keys](/using-wasabi/Receive.html#bitcoin-public-keys-and-addresses)
+:::
+
+:::details
 ### Regtest
 
 A local testing environment in which developers can instantly generate blocks on demand for testing events, and can create private satoshis with no real-world value.
@@ -363,14 +413,6 @@ A local testing environment in which developers can instantly generate blocks on
 ### Replace by Fee (RBF)
 
 Replacing one version of an unconfirmed transaction with a different version of the transaction that pays a higher transaction fee.
-:::
-
-:::details
-### Mining Reward
-
-An amount of satoshis included in each new block as a reward by the network to the miner who found the proof of work solution.
-Initially it was 50 bitcoin per block, which is halved every 210 000 blocks, or roughly 4 years.
-This leads to a total money supply of just below 21 million bitcoin.
 :::
 
 :::details

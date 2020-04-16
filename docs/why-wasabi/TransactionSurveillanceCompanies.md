@@ -7,27 +7,28 @@
 
 #  Transaction Surveillance Companies
 
+A transaction surveillance company is one which attempts to spy on all bitcoin users.
+Their business model is usually to sell the data to any governments, corporations and individuals willing to pay for their services.
+
 [[toc]]
 
 ---
-A transaction surveillance company is one which attempts to spy on all bitcoin users.
-Their business model is usually to sell the data to any governments, corporations and individuals willing to pay for their services.
 
 ## Spying technology
 
 There are a number of techniques probably used by transaction surveillance companies:
 
 ### AML/KYC information
-Many bitcoin exchanges require users to undergo Anti-Money Laundering (AML) Know-Your-Customer (KYC) checks, which requires users to reveal all kinds of invasive personal information such as their real name, residence, occupation, net worth and income.
+Many bitcoin exchanges require users to undergo Anti-Money Laundering (AML) and Know-Your-Customer (KYC) checks, which requires users to reveal all kinds of invasive personal information such as their real name, residence, occupation, net worth and income.
 All this information is usually passed onto the exchange's partner transaction surveillance company, which keeps a database linking the victim's personal information with their bitcoin addresses and transactions.
 
 ### Blockchain analysis
 Bitcoin on-chain transactions are visible to all and so can be analyzed.
-Important techniques are the common-input-ownership heuristic and address reuse.
+Important techniques are the [common-input-ownership](/FAQ/FAQ-UseWasabi.md#why-is-coin-control-so-important) heuristic and [address reuse](/why-wasabi/AddressReuse.md).
 
 ### Wallet synchronization analysis
 Bitcoin lightweight wallets often download their own history and balance by querying a third-party server.
-Transaction surveillance companies often try to exploit this to learn which addresses and transactions belong to certain wallets.
+Transaction surveillance companies often try to exploit this to learn which addresses and transactions belong to certain wallets and IPs.
 The companies have been known to collect [BIP 37](/using-wasabi/BIPs.md#bip-37-connection-bloom-filtering) filters from BIP37-enabled wallets.
 They almost-certainly also run many Electrum servers which can spy on any Electrum wallet that connects to them.
 
@@ -69,10 +70,7 @@ Sufficient privacy is an essential prerequisite for a viable digital currency.
 Privacy invasions can lead to damaging or destroying bitcoin fungibility.
 The aim of bitcoin is to be a decentralized digital currency, but if all users are eventually required to consult centralized blacklists before accepting bitcoin then its decentralization will be destroyed.
 
-Financial privacy is an essential element to fungibility in Bitcoin: if you can meaningfully distinguish one coin from another, then their fungibility is weak.
-If our fungibility is too weak in practice, then we cannot be decentralized: if someone important announces a list of stolen coins they won't accept coins derived from, you must carefully check coins you accept against that list and return the ones that fail.
-Everyone gets stuck checking blacklists issued by various authorities because in that world we'd all not like to get stuck with bad coins.
-This adds friction and transactional costs and makes Bitcoin less valuable as a money.
+[How is financial privacy an essential element to fungibility in Bitcoin?](/FAQ/FAQ-GeneralBitcoinPrivacy.md#how-is-financial-privacy-an-essential-element-to-fungibility-in-bitcoin)
 
 ### No mechanism for oversight or appeal
 
@@ -103,7 +101,6 @@ Whether the activities of transaction surveillance company actually help against
 
 - [Chainanalysis](https://www.chainalysis.com/)
 - [Elliptic](https://www.elliptic.co/)
-- [Coinvalidation](http://coinvalidation.com/)
 - [Neutrino](https://www.neutrino.nu/)
 - [Coinfirm](https://www.coinfirm.io/)
 - [Blockchain Group](https://blockchaingroup.io/)
@@ -114,3 +111,4 @@ Whether the activities of transaction surveillance company actually help against
 - [BlockSeer](https://www.blockseer.com/)
 - [ScoreChain](https://www.scorechain.com/)
 - [Crystal](https://crystalblockchain.com/)
+- Coinvalidation

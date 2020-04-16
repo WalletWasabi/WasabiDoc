@@ -7,9 +7,13 @@
 
 # Transaction Graph
 
+[[toc]]
+
+---
+
 ## Problem
 
-#### Public transaction history
+### Public transaction history
 
 Because of the input and output model of Bitcoin, there is a chain of digital signatures all the way from the coinbase reward, to the current UTXO.
 This transaction history can reveal sensitive information of the spending patterns of individuals.
@@ -18,7 +22,7 @@ And the sender can see the future spending of the receiver.
 
 ## Wasabi's Solution
 
-#### Zero Link CoinJoins
+### Zero Link CoinJoins
 
 In order to obfuscate the link between inputs and outputs, Wasabi uses the [Zero Link](https://github.com/nopara73/zerolink) CoinJoin protocol.
 The Wasabi central coordinator cannot steal and cannot spy, it simply helps many peers to build a huge transaction, with many inputs, and many outputs.

@@ -21,7 +21,7 @@ When installing the wallet, you may choose to [download the package](/using-wasa
 Please [verify the signatures](/using-wasabi/InstallPackage.md) after completing downloads.
 The concern here is that you may accidentally fall for a phishing attempt and be on a malicious site downloading a malicious piece of software.
 
-## 3. Backup your recovery words and password (BOTH!)
+## 3. Back up your recovery words and password (BOTH!)
 
 When [creating a new wallet](/using-wasabi/WalletGeneration.md), write down your recovery words **AND** password and store them safely in separate locations.
 This way, if a malicious person manages to find one of them, he or she still needs to find the other in order to gain access to your coins.
@@ -31,7 +31,7 @@ It also gives you time to move your coins to a different wallet if you notice th
 Wasabi is a fully non-custodial wallet, which means that you are always in possession of your keys, and this means safely storing a backup.
 If you have done this step, then even if your computer crashes, there is very little you have to worry about, you can always [recover your wallet](/using-wasabi/WalletRecovery.md).
 Also, under no circumstance should you reveal the password or mnemonic words to anyone that asks for them.
-Lastly, understand that if you [lose your password](/using-wasabi/LostPassword.md), it becomes much harder (if not impossible) to restore your wallet - so store both safely!
+Lastly, understand that if you lose your password, it becomes much harder (if not impossible) to restore your wallet, so store both safely!
 
 ## 4. Practice good labeling AND try to never reuse addresses
 
@@ -65,7 +65,7 @@ For more information, please see the discussions [here](https://www.reddit.com/r
 
 ## 7. Avoid 3rd party servers
 
-Wasabi is designed to allow users to see their balances [without any concern that a third party](/why-wasabi/BitcoinPrivacy.html#network-snooping) would be able to link your addresses to you, or to each other.
+Wasabi is designed to allow users to see their balances [without any concern that a third party](/why-wasabi/NetworkLevelPrivacy.md) would be able to link your addresses to you, or to each other.
 But if you proceed to enter your address into a block explorer, or use a wallet which trusts a third party server with your public keys - all bets are off.
 So if you want to check on the status of a transaction or the balance on an address, you should first:
 

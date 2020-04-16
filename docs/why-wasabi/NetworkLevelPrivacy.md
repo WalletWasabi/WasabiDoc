@@ -7,16 +7,16 @@
 
 # Network Level Privacy - Bitcoin Core vs Wasabi Wallet
 
+Bitcoin is a peer-to-peer network of full nodes which define, verify, and enforce the Bitcoin consensus rules.
+There is a lot of communication between them and metadata can be used to de-anonymize Bitcoin users.
+
 [[toc]]
 
 ---
 
-Bitcoin is a peer-to-peer network of full nodes which define, verify, and enforce the Bitcoin consensus rules.
-There is a lot of communication between them and metadata can be used to de-anonymize Bitcoin users.
-
 ## Problem
 
-#### Clearnet light clients
+### Clearnet light clients
 
 When the communication to the network is unencrypted over clearnet, then there is an easy correlation of the Bitcoin transactions to the IP address of the peer who sent it.
 The IP address can even be used to find the physical location of the user!
@@ -34,7 +34,7 @@ When the user sends the extended public key, or a filter of all the addresses to
 
 ## Wasabi's solution
 
-#### Full node by default & block filters over tor
+### Full node by default & block filters over tor
 
 Wasabi checks if there is a local Tor instance installed, and if so, it uses this to onion-route all the traffic to and from the network.
 If Tor is not already installed, then it is accessed automatically from within Wasabi.
@@ -45,9 +45,9 @@ If [bitcoind](https://github.com/bitcoin/bitcoin) is installed and run on the sa
 It is also possible to connect Wasabi to a remote full node on another computer by specifying the local IP address or Tor hidden service in the settings.
 Then, Wasabi pulls the verified blocks and queries the mempool from the full node.
 
-:::tip Wasabi ships with Bitcoin Core!
-Since [v1.1.10](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v1.1.10), Wasabi has [partial Bitcoin Core integration](/using-wasabi/BitcoinFullNode.md).
-This means that it is possible (but not mandatory) to start Bitcoin Core during the startup of Wasabi.
+:::tip Wasabi ships with Bitcoin Knots!
+Since v1.1.11 Wasabi has [partial Bitcoin Knots integration](/using-wasabi/BitcoinFullNode.md).
+This means that it is possible (but not mandatory) to start Bitcoin Knots during the launch of Wasabi.
 Without having to install or configure anything.
 :::
 
@@ -61,7 +61,6 @@ This block request is indistinguishable from the regular P2P gossip, and thus no
 :::tip Privacy by default!
 Wasabi has network level privacy as good as a Bitcoin full node.
 :::
-
 
 ## In depth comparison 
 
@@ -105,6 +104,15 @@ It is reasonable to assume that this entity can break the onion routing, not Tor
 
 ### Wasabi Wallet light node
 
+#### Private UTXO retrieval
+
+The backend server serves a constant filter table to all the clients over Tor.
+From those filters the clients figure out which blocks they are interested in and download them [and some false-positive blocks] from peers.
+One block per peer, and always over a fresh Tor stream.
+When a block was acquired, the peer was disconnected.
+Because of the end-to-end encryption of the onion network, it immediately defeats an ISP adversary and makes the already impossible job of the Sybil adversary even more impossible.
+The only adversary that could possibly overcome this would have to setup thousands of full nodes over onion and also break Tor itself.
+
 #### Private transaction broadcasting
 
 All Wasabi traffic is tunneled through Tor.
@@ -117,15 +125,6 @@ A new Bitcoin peer is chosen for every transaction broadcast.
 Wasabi broadcast transactions to only one peer over Tor, and immediately after that the peer is disconnected.
 :::
 
-#### Private UTXO retrieval
-
-The backend server served a constant filter table to all the clients over Tor.
-From those filters the clients figure out which blocks they are interested in and download them [and some false-positive blocks] from peers.
-One block per peer, and always over a fresh Tor stream.
-When a block was acquired, the peer was disconnected.
-Because of the end-to-end encryption of the onion network, it immediately defeats an ISP adversary and makes the already impossible job of the Sybil adversary even more impossible.
-The only adversary that could possibly overcome this would have to setup thousands of full nodes over onion and also break Tor itself.
-
 #### Adversaries identified
 - ISP
 - Tor Breaker Sybil Attacker With Thousands Of Full Nodes Over Onion
@@ -133,19 +132,18 @@ The only adversary that could possibly overcome this would have to setup thousan
 ### Wasabi Wallet + full node
 
 :::tip
-Since [v1.1.10](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v1.1.10), Wasabi has [partial Bitcoin Core integration](https://github.com/zkSNACKs/WalletWasabi/pull/2495).
-This means that it is possible (but not mandatory) to start Bitcoin Core during the startup of Wasabi.
-Without having to install or configure anything.
+Since version [1.1.11](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v1.1.11), Wasabi has partial Bitcoin Knots integration.
+This means that it is possible (but not mandatory) to start Bitcoin Knots during the launch of Wasabi, without having to install or configure anything.
 :::
-
-#### Private transaction broadcasting
-
-Even when Wasabi is connected to your own node, it will broadcast the transaction in the above described way: to one new peer over Tor.
 
 #### Private UTXO retrieval
 
 If you have a listening full node running in the background (not only Bitcoin Core, any full node) then Wasabi automatically picks it up and instead of asking peers for blocks, it asks for blocks from your own node.
 Using Wasabi this way results in the same privacy model as Bitcoin Core's, regarding Private UTXO Retrieval.
+
+#### Private transaction broadcasting
+
+Even when Wasabi is connected to your own node, it will broadcast the transaction in the above described way: to one new peer over Tor.
 
 ## Universal Attacks
 
@@ -163,7 +161,8 @@ In this case, using a VPN and running the node over Tor may not be enough to avo
 
 ### Protection
 
-There are many ways to go about it, but staying completely undetected is far from trivial - traditional privacy enhancing tools mostly focus on the packet level, which is orthogonal to the technique. Let’s break down the potential defense vectors.
+There are many ways to go about it, but staying completely undetected is far from trivial - traditional privacy enhancing tools mostly focus on the packet level, which is orthogonal to the technique.
+Let’s break down the potential defense vectors.
 
 - **VPN / Tor** - unlikely to affect the time series shape much, and therefore for larger traffic lengths the statistical significance of block-related spikes will inevitably become overwhelming.
 

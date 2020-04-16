@@ -7,10 +7,12 @@
 
 # Wasabi Remote Procedure Call Interface
 
-[[toc]]
-
 Wasabi Wallet provides an RPC interface to interact with the wallet programmatically.
 The RPC server is listening by default on port 37128.
+
+[[toc]]
+
+---
 
 ## Limitations
 
@@ -18,7 +20,7 @@ The RPC server does NOT support batch requests or TLS communications (because it
 Requests are served in order one-by-one in series (no parallel processing).
 It is intentionally limited to serve only one whitelisted local address and it is disabled by default.
 
-# Configure RPC
+## Configure RPC
 
 The RPC server has to be configured and enabled.
 This is done in the `Config.json` file and the relevant settings are:
@@ -44,12 +46,12 @@ It is recommended to install the `jq` [command line json processor](https://sted
 Then start Wasabi Wallet either in the GUI or [headless daemon](/using-wasabi/Daemon.md) and load the wallet you want to use.
 Now you can use the following RPC commands to interact with your wallet, instead of the GUI.
 
-# Available methods
+## Available methods
 
 The current version handles the following methods: `getstatus`, `createwallet`, `listunspentcoins`, `getwalletinfo`, `getnewaddress`, `send`, `gethistory`, `listkeys`, `enqueue`, `dequeue`, and `stop`.
 They can be used as follows:
 
-## getstatus
+### getstatus
 
 Returns information useful to understand the status Wasabi and its synchronization status.
 
@@ -124,7 +126,7 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getstatus"}' http://1
 }
 ```
 
-## createwallet
+### createwallet
 
 Returns the twelve recovery words of the freshly generated wallet. 
 
@@ -179,7 +181,53 @@ In case we try to generate a wallet with too long of a password it will return:
 }
 ```
 
-## listunspentcoins
+### selectwallet
+
+Allows the RPC server to open/switch wallets.
+
+```bash
+curl -s --data-binary '{"jsonrpc":"2.0","method":"selectwallet", "params" : ["TestNet"]}' http://127.0.0.1:37128/
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getwalletinfo"}' http://127.0.0.1:37128/ | jq
+```
+
+```json
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "walletName": "TestNet",
+    "walletFile": "/home/user/walletwasabi/client/Wallets/TestNet.json",
+    "extendedAccountPublicKey": "tpubDDJNwA959ut6YbF1bL3XC7rY388rS1EcG5xokPfGjcvV39BAaGoc1BjefhzuP4pzMKAhft4X1d6NHRzUL7emJiLwd2xBmeZ9gR3cAcUEB7G",
+    "extendedAccountZpub": "vpub5ZGDoayZ9GqgaCfvLRVBa2LAN4kJZNkYtEL4q3pMdhQqBeszzjdPcckYPFzwrkZuk8QBZMMXZCZDpgGjVryVpoXSpkp2vJFwZ1KudQ6GMJP",
+    "accountKeyPath": "m/84'/0'/0'",
+    "masterKeyFingerprint": "d95c5299",
+    "balance": 11741169
+  },
+  "id": "1"
+}
+```
+
+```bash
+curl -s --data-binary '{"jsonrpc":"2.0","method":"selectwallet", "params" : ["TestNet Small"]}' http://127.0.0.1:37128/
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getwalletinfo"}' http://127.0.0.1:37128/ | jq
+```
+
+```json
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "walletName": "TestNet Small",
+    "walletFile": "/home/user/.walletwasabi/client/Wallets/TestNet Small.json",
+    "extendedAccountPublicKey": "tpubDCd1v6acjNY3uUqArBGC6oBTGrCBWphMvkWjAqM2SFZahZb91JUTXZeZqxzscezR16XHkwi1723qo94EKgR75aoFaahnaHiiLP2JrrTh2Rk",
+    "extendedAccountZpub": "vpub5YarnXR6ijVdw6G5mGhfUhf5bnodeCDJYtszFVW7LL3vr5HyRmJF8zfTZWzv6LjLPukmeR11ebWhLPLVVRjqbfyknJZdiwRWCyJcKeDdsC8",
+    "accountKeyPath": "m/84'/0'/0'",
+    "masterKeyFingerprint": "323ec8d9",
+    "balance": 13182012
+  },
+  "id": "1"
+}
+```
+
+### listunspentcoins
 
 Returns the list of confirmed and unconfirmed coins that are unspent.
 
@@ -239,7 +287,7 @@ In case there is no wallet open it will return:
 }
 ```
 
-## getwalletinfo
+### getwalletinfo
 
 Returns information about the current loaded wallet.
 
@@ -275,7 +323,7 @@ In case there is no wallet open it will return:
 }
 ```
 
-## getnewaddress
+### getnewaddress
 
 Creates an address and returns detailed information about it.
 
@@ -323,7 +371,7 @@ In case an empty label is provided:
 }
 ```
 
-## send
+### send
 
 Builds and broadcasts a transaction.
 
@@ -372,7 +420,7 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"send", "params": { "p
 
 **Note**: error codes are generic and not Wasabi specific.
 
-## gethistory
+### gethistory
 
 Returns the list of all transactions sent and received.
 
@@ -406,7 +454,7 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"gethistory"}' http:/1
     },
 ```
 
-## listkeys
+### listkeys
 
 Returns the list of all the generated keys.
 
@@ -451,37 +499,37 @@ curl --data-binary '{"jsonrpc":"2.0","id":"1","method":"listkeys"}' http://127.0
 
 This call can be adapted to query certain keys too.
 
-### All unused keys
+#### All unused keys
 
 ```bash
 curl --data-binary '{"jsonrpc":"2.0","id":"1","method":"listkeys"}' http://127.0.0.1:37128/ | jq '.result[] | select(.keyState == 0)'
 ```
 
-### All unused keys for change
+#### All unused keys for change
 
 ```bash
 curl --data-binary '{"jsonrpc":"2.0","id":"1","method":"listkeys"}' http://127.0.0.1:37128/ | jq '.result[] | select(.keyState == 0 and .internal == true)'
 ```
 
-### Unused keys generated by the user
+#### Unused keys generated by the user
 
 ```bash
 curl --data-binary '{"jsonrpc":"2.0","id":"1","method":"listkeys"}' http://127.0.0.1:37128/ | jq '.result[] | select(.keyState == 0 and .internal == false and .label != "")'
 ```
 
-### All already used keys
+#### All already used keys
 
 ```bash
 curl --data-binary '{"jsonrpc":"2.0","id":"1","method":"listkeys"}' http://127.0.0.1:37128/ | jq '.result[] | select(.keyState == 2)'
 ```
 
-### All unused locked keys (reserved for coinjoins)
+#### All unused locked keys (reserved for coinjoins)
 
 ```bash
 curl --data-binary '{"jsonrpc":"2.0","id":"1","method":"listkeys"}' http://127.0.0.1:37128/ | jq '.result[] | select(.keyState == 2)'
 ```
 
-## enqueue
+### enqueue
 
 Enqueue coins in order to participate in coinjoin.
 
@@ -489,7 +537,7 @@ Enqueue coins in order to participate in coinjoin.
 curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"enqueue", "params": { "coins": [{"transactionId": "ba70587b37ba8b4de143929994d3b8ee2810340cef23e8016020687716117a52", "index":"12"}]} }' http://127.0.0.1:37128/ | jq
 ```
 
-## dequeue
+### dequeue
 
 Dequeues coins that were queued to participate in a CoinJoin.
 
@@ -497,7 +545,7 @@ Dequeues coins that were queued to participate in a CoinJoin.
 curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"dequeue", "params": { "coins": [{"transactionId": "ba70587b37ba8b4de143929994d3b8ee2810340cef23e8016020687716117a52", "index":"12"}]} }' http://127.0.0.1:37128/ | jq
 ```
 
-## stop
+### stop
 
 Stops and exits Wasabi.
 

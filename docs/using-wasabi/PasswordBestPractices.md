@@ -17,6 +17,41 @@ These are some of the industry best practices:
 
 [[toc]]
 
+---
+
+## Password basics
+
+1. Randomness is the single-most important requirement for a strong password, because randomness means that the password has no predictable pattern to it.
+This makes it impossible to crack without doing an exhaustive, "brute-force" attack.
+
+2. Assuming a password is constructed randomly, its length has the most impact on its strength.
+However, a password that is very long, but not randomly constructed, such as: `thequickbrownfoxjumpedoverthelazydogsback`, or a passage from literature, is certain to be on every serious hacker's guess list.
+
+3. "Entropy" is a term commonly used to define the strength of a random password.
+There is a tutorial about how to calculate and evaluate entropy in your password [here](/using-wasabi/PasswordBestPractices.md#how-to-calculate-entropy).
+
+## What not to do
+
+Here are a few examples that do it completely wrong.
+You should not generate your password like this:
+
+1. Do not use publicly known information like your grandma's maiden name and the birthday of your dog.
+`Emma1992` is a really, really, really bad password, because it can easily be guessed and it is very short.
+Here is a list of the worst and [most commonly used passwords](https://en.wikipedia.org/wiki/List_of_the_most_common_passwords#SplashData) in recent years.
+Password hackers start with lists like this.
+
+2. Do not use the same password that you have used in other places.
+Because if one password is leaked, then other ones are compromised.
+
+3. Do try to use a mix of uppercase and lowercase letters, numbers, and special characters (&$%@ etc.) in your password.
+
+4. Do not take a famous quote, or well-known passage from literature and use it for a password.
+It will not fool any serious hacker, even if you throw in substitutions such as: "@" instead of "a", or "$" instead of "s".
+
+:::danger Make a secure password!!
+It is of utmost importance to generate a secure password following [best practices](/using-wasabi/PasswordBestPractices.md).
+:::
+
 ## Use Diceware
 
 Rolling dice is an easy and effective way to get high entropy and randomness in a password that can even be memorized.
@@ -133,7 +168,7 @@ From that, we can now calculate that, in order to get the same level of entropy 
 
 ### How much entropy is needed
 
-Entropy matters because it allows one to compare the required `search-space` of a potential password with the `search-speed` known to be availble to various potential adversaries.
+Entropy matters because it allows one to compare the required `search-space` of a potential password with the `search-speed` known to be available to various potential adversaries.
 In doing so, it is possible to then know how long it would take an adversary with known resources to attempt every mathematically possible password or passphrase for a given level of entropy.
 
 Edward Snowden revealed in 2013 that the NSA had the ability to guess passwords at a rate of 1 trillion guesses/second.

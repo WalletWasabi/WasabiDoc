@@ -11,11 +11,13 @@ Here are all the nuances of how to use Wasabi Wallet in all regards.
 Starting with a step-by-step guide on how to verify and install the software.
 Further tutorials about the different parts of the wallet, for newbies and power users.
 
+---
+
 ## Chapters
 
 ### Introducing Wasabi
 - [Explain Wasabi like I'm 5](/using-wasabi/ELI5.md)
-- [Ten Commandments](/using-wasabi/10commandments.md)
+- [Ten Commandments](/using-wasabi/10Commandments.md)
 
 ### Installing Wasabi
 - [Install package](/using-wasabi/InstallPackage.md)
@@ -23,6 +25,7 @@ Further tutorials about the different parts of the wallet, for newbies and power
 
 ### Using Wasabi
 - [Wallet Generation](/using-wasabi/WalletGeneration.md)
+- [Wallet Load](/using-wasabi/WalletLoad.md)
 - [Receive](/using-wasabi/Receive.md)
 - [CoinJoin](/using-wasabi/CoinJoin.md)
 - [Send](/using-wasabi/Send.md)
@@ -34,9 +37,8 @@ Further tutorials about the different parts of the wallet, for newbies and power
 - [How you can be de-anonymized using Bitcoin](/using-wasabi/Deanonimization.md)
 
 ### Restoring Wasabi
-- [Wallet Recovery](/using-wasabi/WalletRecovery.md)
+- [Recover a Wallet](/using-wasabi/WalletRecovery.md)
 - [Restoring Wasabi Wallet to Electrum](/using-wasabi/RestoreElectrum.md)
-- [Lost Password Strategy](/using-wasabi/LostPassword.md)
 - [Password Finder](/using-wasabi/PasswordFinder.md)
 
 ### Advanced Installing Wasabi
@@ -49,10 +51,10 @@ Further tutorials about the different parts of the wallet, for newbies and power
 - [Headless Wasabi Daemon](/using-wasabi/Daemon.md)
 - [RPC Interface](/using-wasabi/RPC.md)
 - [Lurking Wife Mode](/using-wasabi/LurkingWifeMode.md)
+- [Testnet](/using-wasabi/Testnet.md)
 - [Lock Screen](/using-wasabi/LockScreen.md)
 - [Password Best Practices](/using-wasabi/PasswordBestPractices.md)
+- [Backup Best Practices](/using-wasabi/BackupBestPractices.md)
 - [Supported BIPs](/using-wasabi/BIPs.md)
+- [Supported Industry Standards](/using-wasabi/IndustryStandards.md)
 
-### Research
-- [Pay to EndPoint](/using-wasabi/PayToEndPoint.md)
-- [JoinMarket](/using-wasabi/Joinmarket.md)

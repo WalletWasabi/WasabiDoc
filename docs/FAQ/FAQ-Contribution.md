@@ -24,7 +24,7 @@ If you want to read more about fees here is a nice explanation: [What are the fe
 ### Who is contributing to Wasabi already?
 
 There are many Wasabikas working with great effort and care to manifest this powerful tool of self defense.
-[Over 40 peers](https://github.com/zkSNACKs/WalletWasabi/graphs/contributors) have already contributed to the repository, and more and more supporters are joining the [dojo](/building-wasabi/Dojo.md).
+[Over 50 peers](https://github.com/zkSNACKs/WalletWasabi/graphs/contributors) have already contributed to the repository, and more and more supporters are joining the [dojo](/building-wasabi/Dojo.md).
 Four of the main contributors are [Ádám Ficsor](https://github.com/nopara73) [co-founder and former CTO of [zkSnacks Ltd](https://zksnacks.com/), co-author of the [zero link Bitcoin fungibility framework](https://github.com/nopara73/ZeroLink)], [Lucas Ontivero](https://github.com/lontivero) [lead engineer of [zkSnacks Ltd](https://zksnacks.com/)], [Dávid Molnár](https://github.com/molnard) [[zkSnacks Ltd](https://zksnacks.com/) employee], and [Dan Walmsley](https://github.com/danwalmsley) [maintainer of [Avalonia UI Framework](https://github.com/AvaloniaUI/Avalonia)].
 For an inclusive list of all the Wasabikas, not just the code developers, please visit the [dojo](/building-wasabi/Dojo.md).
 
@@ -45,7 +45,7 @@ Especially review by experienced C# developers are vitally important, yet even t
 
 There are four developers who have the ability to merge code into master branch.
 Per default, they [require at least one approving review](https://help.github.com/en/github/administering-a-repository/about-required-reviews-for-pull-requests) by one of the other maintainers before a pull request can be merged.
-However, since all three are administrators, they can still force the merge without the approval of others, but this will be noticed by many contributors.
+However, since all four are administrators, they can still force the merge without the approval of others, but this will be noticed by many contributors.
 - [Ádám Ficsor](https://github.com/nopara73), co-founder and former CTO of [zkSNACKs Ltd](https://zksnacks.com/), co-author of the [zero link Bitcoin fungibility framework](https://github.com/nopara73/ZeroLink).
 - [Lucas Ontivero](https://github.com/lontivero), lead engineer of [zkSNACKs Ltd](https://zksnacks.com/).
 - [Dávid Molnár](https://github.com/molnard), CTO of [zkSNACKs Ltd](https://zksnacks.com/).
@@ -58,7 +58,6 @@ However, since all three are administrators, they can still force the merge with
 Wasabi is far from complete, there are many Wasabikas contributing every day to make this tool of self defense even more powerful.
 Because Wasabi is libre and open source software, anyone can support the project without asking for permission.
 Thus it is relatively tricky to give a precise roadmap with what will be implemented in the near and distant future.
-You can check the [ToDo list](/building-wasabi/ToDo.md) for a somewhat up-to-date summary of the short term priorities of the next #twoweeks, and what might be implemented in the distant future.
 :::
 
 ## You can become a Wasabika
@@ -68,9 +67,8 @@ You can check the [ToDo list](/building-wasabi/ToDo.md) for a somewhat up-to-dat
 
 Thank you for considering to support this beautiful libre and open source project!
 Nobody owns this software, and thus it is the responsibility of everyone using it to contribute to its growth.
-Thus your help is deeply appreciated, and very much needed!
+Your help is deeply appreciated, and very much needed!
 First please read the [contribution checklist](/building-wasabi/ContributionChecklist.md) to get introduced to the project and to start out in the right direction.
-You can also see the [ToDo list](/building-wasabi/ToDo.md) for inspiration of what other Wasabikas are tinkering on.
 Join our [Slack](https://join.slack.com/t/tumblebit/shared_invite/enQtNjQ1MTQ2NzQ1ODI0LWIzOTg5YTM3YmNkOTg1NjZmZTQ3NmM1OTAzYmQyYzk1M2M0MTdlZDk2OTQwNzFiNTg1ZmExNzM0NjgzY2M0Yzg), [Telegram](https://t.me/WasabiWallet), [Riot](https://riot.im/app/#/room/#wasabiwallet:matrix.org) or [Reddit](https://www.reddit.com/r/WasabiWallet/), and check out the [GitHub](https://github.com/zkSnacks/WalletWasabi), so that you can stay up-to-date with the latest contributions.
 :::
 
@@ -79,10 +77,10 @@ Join our [Slack](https://join.slack.com/t/tumblebit/shared_invite/enQtNjQ1MTQ2Nz
 
 Yes!
 The beauty of Wasabi is that it's not just a very awesome wallet by default, but it has the additional opt-in CoinJoin service.
-This is provided by [zkSnacks Ltd.](https://zksnacks.com), and in exchange for this additional service the user pays a coordinator fee.
+This is provided by [zkSnacks Ltd.](https://zksnacks.com), and in exchange for this service, the user pays a coordinator fee.
 In return, zkSnacks is supporting several developers to dedicate their full time to contribute to this open source project.
 There are also projects like the [contribution game](/building-wasabi/ContributionGame.md) where a bounty is paid out to any contributor worthy the praise.
-Specifically for the documentation, there is a monthly budget of 1.000 USD to cover for the maintenance and expansion of this knowledge archive.
+Specifically for the documentation, there is a monthly budget of 1.000 USD to reward contributors for the maintenance and expansion of this knowledge archive.
 :::
 
 ::::details
@@ -110,10 +108,10 @@ Send an email to [adam.ficsor73@gmail.com](mailto:adam.ficsor73@gmail.com), pref
 
 Wasabi is a quite beautiful piece of software already.
 Yet there are also 1001 things that could be just a little better, or even quite substantially superior.
-The beauty and bain of libre and open source software is that it is never complete, there is always more work to be done.
+The beauty and bane of libre and open source software is that it is never complete, there is always more work to be done.
 
-Regardless if you are a new user of Wasabi, or a veteran black belt Wasabika, any suggestions on how to improve are desperately needed and very welcome.
-Please first check the existing [issues](https://github.com/zkSNACKs/WalletWasabi/issues/) and [pull requests](https://github.com/zkSNACKs/WalletWasabi/pulls) if some one has the same feature request as you.
+Regardless if you are a new user of Wasabi, or a veteran black belt Wasabika, any suggestions on how to improve are very welcome.
+Please first check the existing [issues](https://github.com/zkSNACKs/WalletWasabi/issues/) and [pull requests](https://github.com/zkSNACKs/WalletWasabi/pulls) if someone has the same feature request as you.
 If yes, then you can comment your desired improvement under the open issue.
 If no, then please consider to [open a new issue](https://github.com/zkSNACKs/WalletWasabi/issues/new?template=feature-request.md) and give a detailed request.
 It makes sense to first explain the problem you have in the incumbent version of Wasabi, this is the place to express your frustrations and annoyances.

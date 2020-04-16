@@ -7,12 +7,12 @@
 
 # Password Finder
 
+[Wasabi Password Finder](https://github.com/lontivero/WasabiPasswordFinder) is a tool for helping those who made a mistake typing the password during the wallet creation process.
+This tool tries to find the password that decrypts the encrypted secret key stored in a given wallet file.
+
 [[toc]]
 
 ---
-
-[Wasabi Password Finder](https://github.com/lontivero/WasabiPasswordFinder) is a tool for helping those who made a mistake typing the password during the wallet creation process.
-This tool tries to find the password that decrypts the encrypted secret key stored in a given wallet file. 
 
 ## Limitations
 
@@ -57,6 +57,12 @@ Enter password: ****    <---- Here I typed the password that I think used to cre
 Completed in 00:01:11.5134519
 SUCCESS: Password found: >>> pass <<<
 
+```
+
+On Windows the command should be:
+
+```
+$ wassabeed findpassword --wallet:MagicalCryptoWallet
 ```
 
 Note that you can also specify an encrypted secret instead of the wallet file.

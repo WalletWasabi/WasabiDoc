@@ -8,6 +8,15 @@
 ## Privacy and Wasabi
 
 :::details
+### #twoweeks
+
+The #twoweeks is a fun inside joke often used in the Wasabi documentation and, more generally, in the Internet community.
+In the case of Wasabi documentation, it usually indicates the arrival of a new function or update, to which the future date is still uncertain.
+
+Eg. "Lightning Network is coming to Wasabi in #twoweeks"
+:::
+
+:::details
 ### Address Reuse
 
 Address reuse refers to the use of the same address for multiple transactions, this is very bad for privacy.
@@ -71,6 +80,14 @@ Read more: [What is the cluster history?](/FAQ/FAQ-UseWasabi.md#what-is-the-clus
 :::
 
 :::details
+### Coin Control
+
+Coin control is a must learn if you care about your privacy in Bitcoin.
+As can be understood from the name, this is a proper control of one's coins.
+Read more: [Coin Control Best Practices](/FAQ/FAQ-UseWasabi.md#coin-control-best-practices)
+:::
+
+:::details
 ### CoinJoin (CJ)
 
 CoinJoin is a trustless method for combining multiple Bitcoin payments from multiple spenders into a single transaction to make it more difficult for outside parties to determine which spender paid which recipient.
@@ -82,14 +99,6 @@ Read more: [What is a CoinJoin?](/FAQ/FAQ-Introduction.md#what-is-a-coinjoin)
 
 Coins that have successfully participated in a CoinJoin (with the exception of the change) and thus lose their association to a previous cluster.
 Read more: [What is the privacy I get after mixing with Wasabi?](/FAQ/FAQ-Introduction.md#what-is-the-privacy-i-get-after-mixing-with-wasabi)
-:::
-
-:::details
-### Coin Control
-
-Coin control is a must learn if you care about your privacy in Bitcoin.
-As can be understood from the name, this is a proper control of one's coins.
-Read more: [Coin Control Best Practices](/FAQ/FAQ-UseWasabi.md#coin-control-best-practices)
 :::
 
 :::details
@@ -148,7 +157,7 @@ Read more: [Lurking Wife Mode](/using-wasabi/LurkingWifeMode.md)
 ### Pay to EndPoint (P2EP)
 
 Pay to EndPoint is sending of bitcoins where the receiver adds one of his own coins as input for a two party CoinJoin.
-Read more: [Pay to EndPoint](/using-wasabi/PayToEndPoint.md)
+Read more: [Pay to EndPoint](/building-wasabi/PayToEndPoint.md)
 :::
 
 :::details
@@ -183,13 +192,6 @@ Essentially, when we talk about shields, we mean a specific privacy level set by
 :::
 
 :::details
-### XPUB (Extended Public Key)
-
-An xpub, also know as Extended Public Key, is a part of BIP-32 that will allow you to observe your wallet without the private key (xpriv).
-Read more: [Wasabi's Solution](/why-wasabi/BitcoinPrivacy.md#wasabi-s-solution-4)
-:::
-
-:::details
 ### Taint
 
 Taint is equivalent to the 'trail' that a Bitcoin transaction leaves during the course of its journey.
@@ -206,13 +208,6 @@ Read more: [How does Tor protect my network level privacy?](/FAQ/FAQ-GeneralBitc
 :::
 
 :::details
-### Tumbling / Tumbler
-
-Tumbling is a synonym of 'Mixing'.
-Similarly, Tumbler is the synonym of 'Mixer'.
-:::
-
-:::details
 ### Transaction Surveillance Company
 
 A transaction surveillance company is one which attempts to spy on all Bitcoin users.
@@ -221,12 +216,10 @@ Read more: [Transaction Surveillance Companies](/why-wasabi/TransactionSurveilla
 :::
 
 :::details
-### #twoweeks
+### Tumbling / Tumbler
 
-The #twoweeks is a fun inside joke often used in the Wasabi documentation and, more generally, in the Internet community.
-In the case of Wasabi documentation, it usually indicates the arrival of a new function or update, to which the future date is still uncertain.
-
-Eg. "Lightning Network is coming to Wasabi in #twoweeks"
+Tumbling is a synonym of 'Mixing'.
+Similarly, Tumbler is the synonym of 'Mixer'.
 :::
 
 :::details
@@ -240,6 +233,13 @@ Read more: [Technical Overview of Wasabi Wallet](/building-wasabi/TechnicalOverv
 ### Wasabika
 
 Wasabikas are builders, users and supporters of Wasabi in general.
+:::
+
+:::details
+### XPUB (Extended Public Key)
+
+An xpub, also know as Extended Public Key, is a part of BIP-32 that will allow you to observe your wallet without the private key (xpriv).
+Read more: [Wasabi's Solution](/why-wasabi/AddressReuse.html#wasabi-s-solution)
 :::
 
 :::details

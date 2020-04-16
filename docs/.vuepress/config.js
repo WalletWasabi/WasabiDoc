@@ -17,7 +17,7 @@ const themeColor = "#211b24"
 
 module.exports = {
   title: "Wasabi Docs",
-  description: "This is the Wasabi documentation, an archive of knowledge about Wasabi Wallet, the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop.",
+  description: "An archive of knowledge about Wasabi Wallet, an open-source, non-custodial and privacy-focused Bitcoin wallet for desktop.",
   head: [
     ["link", { rel: "icon", href: "/favicon.ico" }],
     ["link", { rel: "apple-touch-icon", href: "/apple-touch-icon.png", sizes: "180x180" }],
@@ -84,7 +84,6 @@ module.exports = {
   themeConfig: {
     logo: "/Logo_without_text.png",
     searchPlaceholder: 'Search the docs...',
-    smoothScroll: true,
     displayAllHeaders: false,
     sidebarDepth: 0,
     repo: "zkSNACKs/WasabiDoc",
@@ -134,10 +133,10 @@ module.exports = {
           sidebarDepth: 2,
           children: [
             "/why-wasabi/WhyPrivacyImportant.md",
-            "/why-wasabi/WhyFinancialPrivacy.md"
+            "/why-wasabi/WhyFinancialPrivacy.md",
+            "/why-wasabi/LegalConcern.md"
           ]
         },
-
         {
           title: "Privacy in Bitcoin",
           collapsable: false,
@@ -153,16 +152,16 @@ module.exports = {
       ],
 
       "/using-wasabi/": [
-	{
-	  title: "Introducing Wasabi",
-	  collapsable: false,
-	  sidebarDepth: 2,
-	  children: [
-          "/using-wasabi/ELI5.md",
-          "/using-wasabi/10Commandments.md"
-	  ]
-       },
-   {
+        {
+          title: "Introducing Wasabi",
+          collapsable: false,
+          sidebarDepth: 2,
+          children: [
+            "/using-wasabi/ELI5.md",
+            "/using-wasabi/10Commandments.md"
+          ]
+        },
+        {
           title: "Installing Wasabi",
           collapsable: false,
           sidebarDepth: 2,
@@ -171,12 +170,13 @@ module.exports = {
             "/using-wasabi/BuildSource.md"
           ]
         },
-    {
+        {
           title: "Using Wasabi",
           collapsable: false,
           sidebarDepth: 2,
           children: [
             "/using-wasabi/WalletGeneration.md",
+            "/using-wasabi/WalletLoad.md",
             "/using-wasabi/Receive.md",
             "/using-wasabi/CoinJoin.md",
             "/using-wasabi/Send.md",
@@ -184,7 +184,7 @@ module.exports = {
             "/using-wasabi/BitcoinFullNode.md"
           ]
         },
-    {
+        {
           title: "Privacy Best Practices",
           collapsable: false,
           sidebarDepth: 2,
@@ -193,18 +193,17 @@ module.exports = {
             "/using-wasabi/Deanonimization.md"
           ]
         },
-    {          
+        {
           title: "Restoring Wasabi",
           collapsable: false,
           sidebarDepth: 2,
           children: [
             "/using-wasabi/WalletRecovery.md",
             "/using-wasabi/RestoreElectrum.md",
-            "/using-wasabi/LostPassword.md",
             "/using-wasabi/PasswordFinder.md"
-	  ]
-	},
-    {
+          ]
+        },
+        {
           title: "Advanced Installing Wasabi",
           collapsable: false,
           sidebarDepth: 2,
@@ -213,9 +212,9 @@ module.exports = {
             "/using-wasabi/WasabiSetupTails.md",
             "/using-wasabi/WasabiSetupVM.md",
             "/using-wasabi/WasabiSetupWhonix.md"
-         ]
+          ]
         },
-    {
+        {
           title: "Advanced Using Wasabi",
           collapsable: false,
           sidebarDepth: 2,
@@ -223,19 +222,13 @@ module.exports = {
             "/using-wasabi/Daemon.md",
             "/using-wasabi/RPC.md",
             "/using-wasabi/LurkingWifeMode.md",
+            "/using-wasabi/Testnet.md",
             "/using-wasabi/LockScreen.md",
             "/using-wasabi/PasswordBestPractices.md",
-            "/using-wasabi/BIPs.md"
-         ]
-        },
-     {
-          title: "Research",
-          collapsable: false,
-          sidebarDepth: 2,
-          children: [
-            "/using-wasabi/Joinmarket.md",
-            "/using-wasabi/PayToEndPoint.md"
-         ]
+            "/using-wasabi/BackupBestPractices.md", 
+            "/using-wasabi/BIPs.md",
+            "/using-wasabi/IndustryStandards.md"
+          ]
         }
       ],
 
@@ -248,8 +241,7 @@ module.exports = {
             "/building-wasabi/TechnicalOverview.md",
             "/building-wasabi/ContributionChecklist.md",
             "/building-wasabi/ContributionGame.md",
-            "/building-wasabi/Dojo.md",
-            "/building-wasabi/ToDo.md"
+            "/building-wasabi/Dojo.md"
           ]
         },
         {
@@ -257,10 +249,19 @@ module.exports = {
           collapsable: false,
           sidebarDepth: 2,
           children: [
-           "/building-wasabi/FalsePositive.md",
             "/building-wasabi/Security.md",
             "/building-wasabi/LICENSE.md",
             "/building-wasabi/Credits.md"
+          ]
+        },
+        {
+          title: "Research",
+          collapsable: false,
+          sidebarDepth: 2,
+          children: [
+            "/building-wasabi/Joinmarket.md",
+            "/building-wasabi/PayToEndPoint.md",
+            "/building-wasabi/WasabiResearchClub.md"
           ]
         }
       ],
@@ -279,6 +280,7 @@ module.exports = {
           ]
         }
       ],
+
       "/glossary/": [
         {
           title: "Glossary",

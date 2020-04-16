@@ -9,26 +9,21 @@
 
 The `Lock Screen` feature allows you to lock your Wasabi Wallet from being viewed or used while it is running, and then unlock it at any time with a user-specified PIN.
 
-[[toc]]
-
-:::warning Caution!
-This feature is only intended to be used if you are stepping away from your computer for a very short time.
-
-The PIN can be deleted and your wallet accessed by anyone that gets physical access to your computer and knows how to find and alter your `UIConfig.json` file.
-
+:::warning No strong encryption
+This feature only locks the GUI, it does not encrypt your public keys.
+An attacker can circumvent the locked screen.
 Do not treat this feature as a strong, fail-safe lock on your wallet.
 :::
 
+[[toc]]
+
+---
+
 ## How to set the Lock Screen feature
 
-You can active the `Lock Screen` feature by going to the menu bar on the top/left corner of your Wasabi Wallet and clicking on `Tools`.
-In the resulting dropdown menu, click on `Settings`.
+In the `Settings` tab, go to the `Lock Screen` section.
 
-![](/LockScreenSet1.png)
-
-Then, scroll down the `Settings` page until you see the `Lock Screen` section.
-
-![](/LockScreenSet2.png)
+![](/SettingsLockScreen.png)
 
 Choose and enter a numerical PIN up to 10 digits in length in the PIN box, and click on `Set`.
 
@@ -39,9 +34,9 @@ You can now lock your screen in two ways:
 1. Hit `Ctrl-L` on your keyboard.
 2. On the top/left menu bar, click on `File`, then `Lock Screen`.
 
-Your wallet is now locked to anyone who does not have your PIN.
+![](/MenuFile.png)
 
-To unlock, just enter the correct PIN in the provided box.
+Now the GUI is locked until the correct PIN is entered in the box.
 
 ![](/LockedScreen.png)
 
@@ -49,14 +44,14 @@ To unlock, just enter the correct PIN in the provided box.
 
 If you wish to delete or change your PIN:
 
-1. Go to the top/left menu bar and click on `Tools`, then `Settings`.
-2. Scroll down the `Settings` page to the `Lock Screen` section.
-3. Enter your PIN in the PIN box, and click `Clear`.
-4. If a new PIN is desired, enter it in the PIN box and click `Set`, otherwise the `Lock Screen` feature is now disabled.
+1. In the `Settings` tab, go to the `Lock Screen` section.
+2. Enter your PIN in the PIN box, and click `Clear`.
+3. If a new PIN is desired, enter it in the PIN box and click `Set`, otherwise the `Lock Screen` feature is now disabled.
 
 ## If you forget your PIN
 
-If you have forgotten your PIN, you can delete it with these steps:
+If you have forgotten your PIN, you can delete it with these steps.
+Notice that an attacker can do the same to circumvent the screen lock without knowing the PIN.
 
 1. Shut down Wasabi Wallet.
 2. Open your `UIConfig.json` file using a text editor.
@@ -65,9 +60,8 @@ This file can be found in [Wasabi's Data Folder](/FAQ/FAQ-UseWasabi.md#where-can
 
 ![](/UIConfigLocked.png)
 
-When you are finished, it should look like this:
-
 ![](/UIConfigUnlocked.png)
 
-Save your changes to this file, and re-start Wasabi.
+4. Save your changes to this file, and re-start Wasabi.
+
 The `Lock Screen` function should now be disabled, and you can create a new PIN if desired.

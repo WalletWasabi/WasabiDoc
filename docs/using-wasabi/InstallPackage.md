@@ -12,11 +12,9 @@
 ---
 
 The easiest way to start with Wasabi is to download, verify and install the released package.
-Don't trust - Verify!
-This is a version of the software that is thoroughly reviewed by the contributors and it should be stable.
+This is a version of the software that is thoroughly reviewed by the contributors.
 The package has the binary code that is needed to run the Wasabi Wallet client including the graphical user interface.
 For compiling the open source code with cutting edge development features, also including the backend server, see this [tutorial here](/using-wasabi/BuildSource.md).
-
 
 Download the packages either from the official [WasabiWallet.io](https://wasabiwallet.io/) clearnet website, or for your privacy's sake, from the official tor hidden service [http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion/](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion/).
 
@@ -124,14 +122,30 @@ Among others, here is where your wallet files and your logs reside.
 
 ## macOS
 
+1. [Download](https://wasabiwallet.io/#download) the `.dmg` package of Wasabi ${currentVersion}.
+
+![](/DownloadMac.png)
+
+2. Double click `.dmg` to open it.
+
+3. Install Wasabi by dragging it into your `Applications` folder.
+
+4. At first startup, there will be a pop-up that Wasabi was downloaded from the internet.
+Click on `Open` and restart Wasabi.
+
+![](/InstallMacConfirm.png)
+
+::::details
+### Optional PGP Verification
+
 If you have already imported zkSNACKs' PGP public key, then jump to step 4.
 
 1. [Get GnuPG](https://www.gnupg.org/download/index.html).
 
-2. Copy [zkSNACKs' PGP public key](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt) into a new `TextEdit` document and saving it as `PGP.txt`.
+2. Copy [zkSNACKs' PGP public key](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt) into a new `TextEdit` document and saving it as `zkSNACKsPubKey.txt`.
 Before saving, you need to go to `Format / Make Plain Text` (otherwise TextEdit will not be able to save it as a .txt file).
 
-3. Open Terminal and go to the folder in which you saved the `PGP.txt` file and import the PGP public key with `sudo gpg2 --import PGP.txt`.
+3. Open Terminal and go to the folder in which you saved the `zkSNACKsPubKey.txt` file and import the PGP public key with `sudo gpg2 --import zkSNACKsPubKey.txt`.
 This should return the output: `key 856348328949861E: public key "zkSNACKs <zksnacks@gmail.com>" imported`.
 [Next time you can skip previous steps because the PGP public key is already imported.]
 
@@ -146,20 +160,8 @@ If the message returned says `Good signature from zkSNACKs` and that it was sign
 The output from the verify command may contain `WARNING: This key is not certified with a trusted signature!`.
 You can ignore this, but if you want to fully verify your download, you need to ask people you trust to confirm that the key fingerprint belongs to zkSNACKs.
 :::
+::::
 
-6. Double click `.dmg` to open it.
-
-7. Install Wasabi by dragging it into your `Applications` folder.
-
-![](/InstallMacDragDrop.png)
-
-8. After opening Wasabi, you may encounter a security popup.
-You can bypass it in multiple ways.
-One way would be to keep the control key down while opening Wasabi.
-Another way is to go to System Preferences / Security & Privacy, where you should find a message `"Wasabi Wallet" was blocked from opening because it is not from an identified developer` and an `open anyway` button.
-Click the button and confirm by entering your Mac user password.
-
-![](/InstallMacConfirmOpen.png)
 
 After the first run, a [data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) will be created.
 Among others, here is where your wallet files and your logs reside.

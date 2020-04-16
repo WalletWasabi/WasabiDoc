@@ -14,9 +14,9 @@ For greater privacy, it's best to use bitcoin addresses only once.
 
 By Satoshi Nakamoto in [How anonymous are bitcoins? - Bitcointalk](https://bitcointalk.org/index.php?topic=8.msg34#msg34)
 
-[[toc]]
-
 ![](/InfographicWhyWasabi.png)
+
+[[toc]]
 
 ---
 
@@ -25,7 +25,7 @@ By Satoshi Nakamoto in [How anonymous are bitcoins? - Bitcointalk](https://bitco
 One of the apparent contradictions of Bitcoin is the notion that your transactions can be private but have a public transaction record.
 
 As a financial system, Bitcoin functions completely differently from the established banking network.
-Bitcoin allows you to store funds yourself, without the need for a third party, and therefore places the burden on you of keeping said funds secure and accessible.
+Bitcoin allows you to store funds yourself, without the need for a third party and therefore places the burden on you of keeping said funds secure and accessible.
 
 While opening an account with a traditional bank or other financial institution requires significant cost and effort, creating a Bitcoin wallet is quick and easy to do on your home computer.
 This speedy process makes it possible to create hundreds of separate wallets if you wish.
@@ -42,7 +42,7 @@ Hundreds of millions of people around the globe are not accepted in their societ
 
 Maintaining an identity with a large following might require paid services such as blogs, logo designs, stock photos, VPNs, or translations.
 Without the ability to pay for these services anonymously, you would be forced to reveal your true identity in order to maintain your pseudonym situation.
-This clearly makes no sense, and has potentially dangerous ramifications.
+This clearly makes no sense and has potentially dangerous ramifications.
 
 ## How Bitcoin empowers anonymity
 

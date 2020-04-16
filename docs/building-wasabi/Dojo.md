@@ -5,13 +5,15 @@
 }
 ---
 
-
-
 # Dojo
 
 > Here are the 2 Rules of zkSNACKs-Ryu Karate. Rule Number 1: **Wasabi is for defense only.** Rule Number 2: ‘First learn rule number 1.’ - Mr. Miyagi
 
 ![](/Dojo.png)
+
+[[toc]]
+
+---
 
 ## Belt System
 
@@ -66,6 +68,7 @@ Osu!
 | Dennis Reimann   | [Twitter][47]               | [Wasabi Documentation][48]   | 2019-08: white belt by Max Hillebrand|
 | ThunderBiscuit   | [Twitter][46]               | [Wasabi Documentation][49]   | 2019-08: white belt by Max Hillebrand|
 | Riccardo Masutti   | [Twitter][50]               | [Wasabi Documentation][51]   | 2019-11: white belt by Max Hillebrand|
+| Rafael Yakobi   | [Twitter][52]               | [Wasabi Guide][53]   | 2020-03: white belt by Max Hillebrand|
 
 
 [1]: https://twitter.com/NicolasDorier/
@@ -117,6 +120,8 @@ Osu!
 [49]: https://github.com/zkSNACKs/WasabiDoc/commits?author=thunderbiscuit
 [50]: https://twitter.com/RiccardoMasutti
 [51]: https://github.com/zkSNACKs/WasabiDoc/commits?author=RiccardoMasutti
+[52]: https://twitter.com/CACryptoLawyer
+[53]: https://billfodl.com/blogs/hodl-blog/how-to-coinjoin
 
 <br />
 
