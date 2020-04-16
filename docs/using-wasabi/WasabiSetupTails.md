@@ -134,6 +134,10 @@ You can save multiple copies of `.walletwasabi` in your persistent, each with di
             |__ /client
                 |__ /Wallets
                 |__ /Blocks
+```
+
+This is only a minor example, tune it to your own needs.
+
 :::danger
 Remember to back up either your files or your [persistent storage](https://tails.boum.org/doc/first_steps/persistence/copy/index.en.html)!
 :::
