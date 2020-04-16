@@ -142,8 +142,8 @@ module.exports = {
           collapsable: false,
           sidebarDepth: 2,
           children: [
-            "/why-wasabi/AddressReuse.md",
             "/why-wasabi/Coins.md",
+            "/why-wasabi/AddressReuse.md",
             "/why-wasabi/TransactionGraph.md",
             "/why-wasabi/NetworkLevelPrivacy.md",
             "/why-wasabi/TransactionSurveillanceCompanies.md"
