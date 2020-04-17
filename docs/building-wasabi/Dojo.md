@@ -70,7 +70,7 @@ Osu!
 | Riccardo Masutti | [Twitter][50]               | [Wasabi Documentation][51]   | 2019-11: white belt by Max Hillebrand|
 | Rafael Yakobi    | [Twitter][52]               | [Wasabi Guide][53]   | 2020-03: white belt by Max Hillebrand|
 | Greg Hajdu       | [Twitter][54]               | [Naming of the new CoinJoin technology][56] - [Wabi Sabi][55]   | 2020-04: white belt by David Molnar|
-| Arkad            | [Twitter][57]               | [Multiple video tutorial I][58] and [II][59]| 2020-04: white belt ny lontivero |
+| Arkad            | [Twitter][57]               | Multiple video tutorials [I][58] and [II][59]| 2020-04: white belt by lontivero |
 
 [1]: https://twitter.com/NicolasDorier/
 [2]: https://github.com/NicolasDorier/
@@ -127,8 +127,8 @@ Osu!
 [55]: https://imgur.com/HpEMnIm
 [56]: https://github.com/zkSNACKs/WabiSabi
 [57]: https://twitter.com/Multicripto
-[58]: https://twitter.com/lunaticoin/status/1250737978906943488?s=20
-[59]: https://twitter.com/Multicripto/status/1250505298382643201?s=20
+[58]: https://twitter.com/lunaticoin/status/1250737978906943488
+[59]: https://twitter.com/Multicripto/status/1250505298382643201
 
 
 <br />
