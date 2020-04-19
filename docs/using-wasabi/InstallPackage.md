@@ -64,7 +64,6 @@ If you have already imported zkSNACKs' PGP public key, then jump to step 2.
 
 1. Download zkSNACKs' PGP public key [here](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt) by following the first four steps [here](./InstallPackage.md#manual-pgp-public-key-import), and then import it with `gpg --import PGP.txt`.
 Verify that the fingerprint is `${zksnacksPublicKeyFingerprint}`.
-[Next time you can skip previous steps because the PGP public key is already imported.]
 
 2. [Download](https://wasabiwallet.io/#download) the latest Wasabi release, both the `.deb` package and the corresponding `.asc` signature file.
 
@@ -93,7 +92,6 @@ If you have already imported zkSNACKs' PGP public key, then jump to step 2.
 1. Download zkSNACKs' PGP public key [here](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt) by following the first four steps [here](./InstallPackage.md#manual-pgp-public-key-import), and then import it with `gpg --import PGP.txt`.
 
 Verify that the fingerprint is `${zksnacksPublicKeyFingerprint}`.
-[Next time you can skip previous steps because the PGP public key is already imported.]
 
 2. [Download](https://wasabiwallet.io/#download) the latest Wasabi release, both the `.tar.gz` archive and the corresponding `.asc` signature file.
 
@@ -147,7 +145,6 @@ Before saving, you need to go to `Format / Make Plain Text` (otherwise TextEdit 
 
 3. Open Terminal and go to the folder in which you saved the `zkSNACKsPubKey.txt` file and import the PGP public key with `sudo gpg2 --import zkSNACKsPubKey.txt`.
 This should return the output: `key 856348328949861E: public key "zkSNACKs <zksnacks@gmail.com>" imported`.
-[Next time you can skip previous steps because the PGP public key is already imported.]
 
 4. [Download](https://wasabiwallet.io/#download) the latest Wasabi release, both the `.dmg` package and the corresponding `.asc` signature file.
 
