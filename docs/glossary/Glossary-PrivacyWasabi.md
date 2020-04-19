@@ -139,18 +139,18 @@ Read more: [AML/KYC Information](/why-wasabi/TransactionSurveillanceCompanies.md
 :::
 
 :::details
-### Label
-
-A way to track who knows about the ownership of your coins.
-Not to be confused with a description of a transaction.
-Read more: [The importance of labeling](/using-wasabi/Receive.md#the-importance-of-labeling)
-:::
-
-:::details
 ### Lurking Wife Mode (LWM)
 
 Lurking Wife Mode is a Wasabi feature that hides sensitive and critical information on the wallet itself, which is useful for screenshots.
 Read more: [Lurking Wife Mode](/using-wasabi/LurkingWifeMode.md)
+:::
+
+:::details
+### Observers
+
+A way to track who knows about the ownership of your coins.
+Not to be confused with a description of a transaction.
+Read more: [The importance of labeling](/using-wasabi/Receive.md#the-importance-of-labeling)
 :::
 
 :::details
