@@ -1176,8 +1176,9 @@ Read more [here](/using-wasabi/ColdWasabi.md).
 :::details
 ### How can I sign a transaction with a USB connected hardware wallet?
 
-To send a transaction you will need to connect your hardware wallet and unlock the device (using PIN or password), in Wasabi Wallet you go to the `Send` tab where you can specify the address to send to, amount of bitcoin to send and which coins to use as input (only use green/private coins here!).
-After filling in all transaction details you click `Send Transaction` to sign it with the connected hardware wallet and broadcast on the network.
+To send a transaction you will need to connect your hardware wallet and unlock the device (using PIN or password).
+Then go to the `Send` tab where you can specify the address to send to, the amount of bitcoin to spend and which coins to use as inputs.
+After filling in all transaction details you click `Send Transaction` to sign it with the connected hardware wallet and broadcast to the network.
 Read more [here](/using-wasabi/ColdWasabi.md#connecting-via-usb)
 :::
 
@@ -1237,7 +1238,7 @@ To avoid any privacy leak, you can use a Ledger hardware wallet in combination w
 
 Everything is working as expected.
 
-The anonymity set info (number) is tied to your wallet that you used to CoinJoin, if you send a mixed coin to another Wasabi Wallet of yours (hardware wallet or normal wallet) it will have an anonymity set 1 (red) because this wallet doesn't know that the coin was coinjoined.
+The anonymity set info (number) is tied to your wallet that you used to CoinJoin, if you send a mixed coin to another Wasabi Wallet of yours (hardware wallet or normal wallet) it will have an anonymity set 1 <img src="/ShieldRed.png" alt="red" class="shield" /> because this wallet doesn't know that the coin was coinjoined.
 
 You should put a meaningful label when you generate a receive address in your hardware wallet, e.g. "coinjoined utxo with anonymity set 70" (something that reminds you that you got this utxo from your Wasabi Wallet and it was coinjoined).
 :::
