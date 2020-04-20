@@ -111,7 +111,7 @@ From those filters, the clients figure out which blocks they are interested in a
 One block per peer, and always over a fresh Tor stream.
 When a block was acquired, the peer was disconnected.
 Because of the end-to-end encryption of the onion network, it immediately defeats an ISP adversary and makes the already impossible job of the Sybil adversary even more impossible.
-The only adversary that could possibly overcome this would have to setup thousands of full nodes over the onion and also break Tor itself.
+The only adversary that could possibly overcome this would have to setup thousands of full nodes over Tor and also break Tor itself.
 
 #### Private transaction broadcasting
 
