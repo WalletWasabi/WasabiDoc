@@ -7,7 +7,7 @@
 
 #  Transaction Surveillance Companies
 
-A transaction surveillance company is one that attempts to spy on all bitcoin users.
+A transaction surveillance company is one that attempts to spy on bitcoin users.
 Their business model is usually to sell the data to any governments, corporations and individuals willing to pay for their services.
 
 [[toc]]
