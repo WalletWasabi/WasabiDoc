@@ -15,9 +15,9 @@
 
 1. Start Wasabi and open the wallet that you want to receive coins into.
 2. Go to the `Receive` tab.
-3. Specify a label of the entities who know about this address.
+3. Specify the observers which are the entities who know about this address.
 4. Click on `Generate Address`.
-5. Optionally change the label in the right click menu if new entities learn about the address.
+5. Optionally you can change the observers in the right click menu if new entities learn about the address.
 
 ![](/ReceiveLabelingRequired.png)
 ![](/ReceiveAddressDropDownMenu.png)
@@ -77,7 +77,7 @@ Well, without coin control it is not possible.
 
 Wasabi is a coins-oriented wallet in the sense that coins are the most important unit of information to take decisions to protect privacy.
 
-### Labels
+### Observers
 
 As a privacy-oriented solution the focus is always on minimizing how much we selectively reveal about our financial activity.
 For that reason when we create a new address to receive bitcoins or when we send a transaction, we are forced to label that coin!
@@ -92,7 +92,7 @@ Understanding this difference between labeling an address and describing a trans
 
 ### Clusters
 
-Following with the previous example, if I have to send a fraction (`0.1 BTC`) of the previously received coin to Charlie then in the `Send` tab the label should be: `Charlie`.
+Following with the previous example, if I have to send a fraction (`0.1 BTC`) of the previously received coin to Charlie then in the `Send` tab the observers should be: `Charlie`.
 In that way, the change (`0.4 BTC`) will be known by Andrew and Charlie because they both will be able to follow the change.
 That's exactly what Wasabi displays in the coins list (cluster column), Wasabi tells us who are the ones that know about each of our coins in order to allow us to decide what to do with the coins.
 

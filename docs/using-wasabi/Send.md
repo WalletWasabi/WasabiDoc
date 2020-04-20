@@ -60,7 +60,7 @@ The address can be a public key hash [starting with `1`], a script hash [startin
 Make sure that you ask the receiver for a [new address](/why-wasabi/AddressReuse.md) for every payment to protect your privacy and theirs.
 Wasabi will calculate the checksum and notify you if the provided address is wrong.
 
-## Label
+## Observers
 
 Similar to the `Receive` tab, you must [label](/using-wasabi/Receive.md#the-importance-of-labeling) every new address with the observers who know that this is your address.
 In the `Send` tab an address is automatically generated to receive the change amount.

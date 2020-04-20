@@ -325,8 +325,8 @@ This helps you know where your coins came from so that you can judge whether the
 
 ![](/ReceiveLabelingRequired.png)
 
-When labeling a newly generated address or a sending transaction you should ask yourself: "Who knows this address is mine?" or "Whom will I share this address with?" or "From whom am I receiving bitcoin?" or "To whom am I sending bitcoin?"
-Labels should contain the comma-separated names of people/entities that may be aware of the transaction and could follow its trail like:
+When labeling a newly generated address or a sending transaction you should ask yourself: "Who knows this address is mine?" or "Whom will I share this address with?" or "From whom am I receiving bitcoin?" or "To whom am I sending bitcoin?".
+Observers should contain the comma-separated names of people/entities that may be aware of the transaction and could follow its trail like:
 
 `Name of the sender or the receiver, name of the exchange, name of the payment processor`
 
@@ -340,9 +340,9 @@ or:
 :::
 
 :::details
-### How can I change the label of my receive address?
+### How can I change the observers of my receive address?
 
-You can change the label of your receive address in the right click menu by clicking `Change Label`, then type in the new label.
+You can change the observers of your receive address in the right click menu by clicking `Change Observers`, then type in the new label.
 This is useful when you have generated a receiving address with a specific label, but then the cause for receiving has changed.
 Take care with whom you have shared this address, because if you send it to several people, they might all send many coins to the same address.
 This is very bad for your privacy because of [address reuse](/why-wasabi/AddressReuse.md), and it confuses you with the labeling of each unique coin.
@@ -351,7 +351,7 @@ This is very bad for your privacy because of [address reuse](/why-wasabi/Address
 :::
 
 :::details
-### How can I edit the label of my address after a transaction has gone through?
+### How can I edit the observers of my address after a transaction has gone through?
 
 To date there is no possibility to change the label of an address after it has sent or received bitcoins.
 :::
