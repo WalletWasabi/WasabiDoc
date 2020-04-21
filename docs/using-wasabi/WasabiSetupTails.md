@@ -22,7 +22,7 @@ Remember that you will need at least a 300GB USB or SD card to download the enti
 
 ## Create admin password
 
-You need sudo privileges to install Wasabi, at “Tails Greeter” [create your admin password](https://tails.boum.org/doc/first_steps/startup_options/administration_password/index.en.html) in “additional settings” and launch Tails.
+You need sudo privileges to install Wasabi, at “Tails Greeter” [create your admin password](https://tails.boum.org/doc/first_steps/welcome_screen/administration_password/index.en.html) in “additional settings” and launch Tails.
 
 :::tip
 If you don't want to activate root privileges, you can always download Wasabi in .tar.gz format and extract the folder.
