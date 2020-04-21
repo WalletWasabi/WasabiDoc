@@ -106,7 +106,12 @@ After the first time you save a Wasabi session, your persistent storage will loo
         |__ /Wallets
         |__ /Blocks
         |__ /BitcoinStore
+        |__ /Legal
 ```
+
+:::tip
+Make sure to copy `Legal` folder to avoid having to agree to Terms of Service and Privacy Policy every time you start Wasabi Wallet.
+:::
 
 To load your saved session, copy and paste the `.walletwasabi` folder into `/Home` before starting Wasabi.
 
