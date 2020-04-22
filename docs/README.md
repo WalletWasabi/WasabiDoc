@@ -17,8 +17,7 @@ features:
 
 This is [Wasabi Wallet's](https://wasabiwallet.io) open source documentation.
 Here you will find information about the nuances of privacy in Bitcoin, how Wasabi solves some of the existing problems, and how you can use this tool to defend yourself.
-If you have a question regarding the documentation, please [open an issue](https://github.com/zkSNACKs/WasabiDoc/issues).
-If you have an answer to a question, please [open a pull request](https://github.com/zkSNACKs/WasabiDoc/pulls).
+Everyone is welcome to make the Wasabi Wallet documentation better, by contributing [on GitHub](https://github.com/zkSNACKs/WasabiDoc/)!
 
 ## How to use this documentation
 
