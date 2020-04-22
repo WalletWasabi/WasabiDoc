@@ -26,7 +26,7 @@ Of course, Wasabi is libre and open-source, which means you have full control ov
 ## Installing Wasabi
 
 Installing Wasabi is super-easy.
-Go to the official website [wasabiwallet.io](https://wasabiwallet.io), scroll down and download the version for your operating system.
+Go to the official website [wasabiwallet.io](https://wasabiwallet.io) and download the version for your operating system.
 You can then install Wasabi as you would do any other software on your computer.
 
 See [this chapter](/using-wasabi/InstallPackage.md) for a detailed step-by-step tutorial for all operating systems, and also how to verify the PGP signature.
@@ -38,10 +38,10 @@ You can set a unique name for the wallet so that you remember what it is for.
 Choose a very secure password, as this encrypts the secrets, and should not be guessed by others.
 You will always need this password in order to spend your bitcoins, so take great care to back it up properly.
 In the next step, Wasabi will show your 12 recovery words.
-These must be carefully backed up also, as they will be needed to access your bitcoins when your computer breaks.
+These must also be carefully backed up, as they are needed to access your bitcoins on another computer or in another wallet software.
 Make sure you store the backup of your recovery words in a different location than the backup of your password.
 
-:::warning
+:::warning Backup both!
 If you ever need to restore your wallet in Wasabi, or any other wallet, you will need both: your password AND your 12 recovery words.
 :::
 
@@ -49,10 +49,10 @@ See [this chapter](/using-wasabi/WalletGeneration.md) for more information on ho
 
 ## Receiving bitcoin
 
-In order to receive your first bitcoins, you can generate an address in the `Receive` tab.
+In order to receive bitcoins, you can generate an address in the `Receive` tab.
 But first, you must label it with the names of any observers who know that this address is yours.
 For example, if Alice pays you back for last nights pizza, then the label is `Alice`.
-This is an important feature so that you know which coin is from whom, and it will help with your privacy in the future.
+This is an important feature for you to know which coin is from whom, and it will help with your privacy in the future.
 
 See [this chapter](/using-wasabi/Receive.md) for a tutorial on how to properly label your addresses and receive bitcoin.
 
@@ -72,7 +72,6 @@ See [this chapter](/using-wasabi/CoinJoin.md) for a thorough analysis of CoinJoi
 ## Sending bitcoin
 
 In the Wasabi `Send` tab you can give your bitcoins to someone else, or send them to another wallet of yours.
-You'll have to:
 1. Select the coins which you want to spend.
 2. Insert the address of the receiver.
 3. Label the observers who know of this transaction.
