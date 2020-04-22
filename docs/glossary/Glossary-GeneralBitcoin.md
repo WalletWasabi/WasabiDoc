@@ -482,6 +482,13 @@ A testing environment in which users can obtain and spend satoshis that have no 
 :::
 
 :::details
+### Timechain
+
+Timechain is a synonym of [blockchain](/glossary/Glossary-GeneralBitcoin.md#blockchain).
+It emphasizes the achievement of the Bitcoin protocol to establish consensus on the temporal order of transactions so to prevent double spends.
+:::
+
+:::details
 ### Transaction
 
 In simple terms, a transfer of bitcoin.
