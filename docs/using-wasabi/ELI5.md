@@ -38,7 +38,7 @@ You can set a unique name for the wallet so that you remember what it is for.
 Choose a very secure password, as this encrypts the secrets, and should not be guessed by others.
 You will always need this password in order to spend your bitcoins, so take great care to back it up properly.
 In the next step, Wasabi will show your 12 recovery words.
-These must also be carefully backed up, as they are needed to access your bitcoins on another computer or in another wallet software.
+These must also be carefully backed up, as they are needed to recover your wallet (together with the password) on another computer or in another wallet software.
 Make sure you store the backup of your recovery words in a different location than the backup of your password.
 
 :::warning Backup both!
@@ -49,7 +49,7 @@ See [this chapter](/using-wasabi/WalletGeneration.md) for more information on ho
 
 ## Receiving bitcoin
 
-In order to receive bitcoins, you can generate an address in the `Receive` tab.
+In order to receive bitcoins, you should generate an address in the `Receive` tab.
 But first, you must label it with the names of any observers who know that this address is yours.
 For example, if Alice pays you back for last nights pizza, then the label is `Alice`.
 This is an important feature for you to know which coin is from whom, and it will help with your privacy in the future.
