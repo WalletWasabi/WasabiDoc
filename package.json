@@ -9,6 +9,7 @@
     "prestart": "rm -rf $npm_package_config_dist",
     "start": "vuepress dev docs",
     "build": "vuepress build docs",
+    "export": "vuepress export docs",
     "deploy": "echo 'docs.wasabiwallet.io' > $npm_package_config_dist/CNAME && gh-pages -d $npm_package_config_dist -m 'deploy'"
   },
   "repository": {
@@ -20,13 +21,14 @@
     "url": "https://github.com/zkSNACKs/WasabiDoc/issues"
   },
   "homepage": "https://github.com/zkSNACKs/WasabiDoc#readme",
+  "engines": {
+    "node": ">=10.16"
+  },
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "1.4.1",
     "gh-pages": "2.2.0",
     "markdown-it-custom-block": "0.1.1",
-    "vuepress": "1.4.1"
-  },
-  "engines": {
-    "node": ">=10.16"
+    "vuepress": "1.4.1",
+    "vuepress-plugin-export": "^0.2.0"
   }
 }

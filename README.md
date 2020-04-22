@@ -250,3 +250,9 @@ In order to build the website locally, you'll need [Node.js](https://nodejs.org/
 npm install
 npm start
 ```
+
+### PDF Export
+
+```bash
+npm run export
+```

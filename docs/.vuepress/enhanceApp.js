@@ -57,6 +57,17 @@ export default ({ router }) => {
       document.addEventListener('keyup', e => {
         if (isEnter(e)) handleClick(e)
       })
+
+      // print/export
+      if (window.matchMedia) {
+        window.matchMedia('print').addListener(mql => {
+          if (mql.matches) {
+            document.getElementsByTagName("details").forEach(details => details.setAttribute("open", true))
+          } else {
+            document.getElementsByTagName("details").forEach(details => details.removeAttribute("open"))
+          }
+        })
+      }
     })
   }
 }
