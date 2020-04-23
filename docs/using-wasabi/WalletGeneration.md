@@ -9,7 +9,7 @@
 
 With Wasabi you can generate an unlimited number of Bitcoin wallets very quickly, without any cost, and without asking anyone for permission.
 Each wallet has separate private and public keys in a unique backup, and they are not at all linked to the other wallets generated on the same computer.
-So, with several wallets you can conveniently manage your bitcoin for different use cases without worrying about revealing that you control them.
+So, with several wallets, you can conveniently manage your bitcoin for different use cases without worrying about revealing that you control them.
 
 [[toc]]
 
@@ -24,7 +24,7 @@ The very first time you run the software the `Generate Wallet` tab will be open 
 This label is not shared with anyone, it is only stored locally on your computer.
 
 3. Write a long and random password and **[back it up](/using-wasabi/BackupBestPractices.md)**.
-It encrypts your secrets, and you will need it every time you want to spend bitcoin from this wallet, or recover your wallet.
+It encrypts your secrets, and you will need it every time you want to spend bitcoin from this wallet or recover your wallet.
 
 If you are uncertain about how to create a secure password, refer to [Password Best Practices](/using-wasabi/PasswordBestPractices.md) for helpful information.
 
@@ -58,7 +58,7 @@ So, type or paste the password in the text box, and click `Load Wallet`.
 
 Wasabi integrates [BIP 38: Password-Protected Private Key](/using-wasabi/BIPs.md#bip-38-password-protected-private-key), which means that the secrets needed to spend the bitcoin are encrypted on the computer.
 If someone has compromised your operating system and hardware and he only has the encrypted secrets, then no bitcoin can be spent by him.
-You need **both** the encrypted secrets, and the password in order to enable the private key which can sign a spending transaction.
+You need **both** the encrypted secrets and the password in order to enable the private key which can sign a spending transaction.
 This means that the password is your last line of defense against anyone who tries to steal your bitcoin.
 
 ## How are the secrets created
