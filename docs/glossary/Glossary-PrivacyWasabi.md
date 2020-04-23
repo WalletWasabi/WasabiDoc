@@ -105,14 +105,13 @@ Read more: [What is the privacy I get after mixing with Wasabi?](/FAQ/FAQ-Introd
 ### Common-Input-Ownership heuristic
 
 This is a heuristic or assumption which says that if a transaction has more than one input then all those inputs are owned by the same entity.
-Read more: [Wasabi Wallet under the hood](/building-wasabi/TechnicalOverview.md#wasabi-wallet-under-the-hood)
 :::
 
 :::details
 ### Coordinator
 
 The coordinator is a server which creates CoinJoins and accepts UTXOs in the mix.
-Read more: [Wasabi Wallet under the hood](/FAQ/FAQ-UseWasabi.md#how-does-my-wallet-communicate-with-the-wasabi-coordinator-server)
+Read more: [How does my wallet communicate with the Wasabi coordinator server?](/FAQ/FAQ-UseWasabi.md#how-does-my-wallet-communicate-with-the-wasabi-coordinator-server)
 :::
 
 :::details
