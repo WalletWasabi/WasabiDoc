@@ -33,10 +33,10 @@ If you don't have a wallet created on Electrum it should automatically display a
 
 	:::tip Get your master private key inside Wasabi:
 	- Go to `Advanced` tab -> `Wallet Info`.
-	- Copy your `Extended Account zprv`
+	- Copy your `Extended Account zprv`.
 	:::
 
-	The following steps are only necessary if you have previously chosen the option `I already have a seed`.
+The following steps are only necessary if you have previously chosen the option `I already have a seed`.
 
 6. Click the `Options` button, then check `BIP39 seed` and if you created your Wasabi wallet with a password make sure to check `Extend this seed with custom words` and type your password in the `Seed extension` window
 
@@ -74,8 +74,8 @@ If you don't have a wallet created on Electrum it should automatically display a
 
 	:::tip Get your master private and public keys inside Wasabi:
 	- Go to `Advanced` tab -> `Wallet Info`.
-	- Copy your `Extended Account zprv`
-	- Copy your `Extended Account zpub`
+	- Copy your `Extended Account zprv`.
+	- Copy your `Extended Account zpub`.
 	:::
 
 4. Open the wallet file you created in Electrum.
