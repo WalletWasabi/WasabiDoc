@@ -87,7 +87,7 @@ A secure password manager software might also be used, but be careful here.
 
 * Windows: `/Users/{your username}/AppData/Roaming/WalletWasabi/Client`
 * Linux: `/Home/.walletwasabi/client`
-* MacOS: `/Users/{your username}/.walletwasabi/client`
+* macOS: `/Users/{your username}/.walletwasabi/client`
 
 :::tip
 You need to mark the “show hidden files” setting to see it.
