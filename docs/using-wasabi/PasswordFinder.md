@@ -16,10 +16,8 @@ This tool tries to find the password that decrypts the encrypted secret key stor
 
 ## Limitations
 
-Wasabi Wallet protects the encrypted secret key with a user specified password ([BIP 38](/using-wasabi/BIPs.md#bip-38-password-protected-private-key)).
-One of the features of this method is that it has brute force protection, meaning even if the password is wrong, it still generates a valid (but unused) private key.
-However, the Wasabi Password Finder has the wallet file, and thus it knows the used public keys of the wallet, and it can check the generated private key against the known to be valid public key.
-It is important to know that Wasabi Password Finder is not for breaking wallet passwords but for finding minor errors (typos) in a roughly known password. 
+Wasabi Wallet protects the encrypted secret key with the same technology used to protect paper wallets ([BIP 38](/using-wasabi/BIPs.md#bip-38-password-protected-private-key)) and for that reason it is computationally infeasible to brute force the password using all the possible combinations. (assuming a secure password was chosen)
+It is important to know that Wasabi Password Finder is not for breaking wallet passwords but for finding errors (typos) in an already known password.
 
 ## Usage
 
