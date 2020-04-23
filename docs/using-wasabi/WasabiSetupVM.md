@@ -114,7 +114,7 @@ Clone & run Wasabi.
 [user@source-wasabi ~]$ dotnet run
 ```
 
-Checkout a developer branch.
+Check out a developer branch.
 
 ```sh
 [user@source-wasabi ~]$ git remote add nopara73 https://github.com/nopara73/WalletWasabi
@@ -239,7 +239,7 @@ your@vm:~$ cd WalletWasabi/WalletWasabi.Gui
 your@vm:~$ dotnet run
 ```
 
-Checkout a developer branch.
+Check out a developer branch.
 
 ```sh
 your@vm:~$ git remote add nopara73 https://github.com/nopara73/WalletWasabi
