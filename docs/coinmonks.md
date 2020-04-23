@@ -1,20 +1,19 @@
 # Wasabi Wallet?
 
-## Introducing this privacy weapon
+## Introducing this privacy tool
 
 [Wasabi](https://wasabiwallet.io) is an open-source, non-custodial, privacy-focused Bitcoin wallet.
 It is a piece of software that runs on your computer and helps you to manage your bitcoins.
 Although Wasabi has some very advanced magic under the hood, it is rather easy to use.
 You can generate a new set of private keys, or import already existing ones.
 With Wasabi you can receive bitcoins into your full control, and you can send them to someone else without needing permission from any other person or entity.
-There is also a powerful CoinJoin feature to help obfuscate your transaction history.
+There is also a powerful CoinJoin feature to help obfuscate your transaction history, this has helped its users to reclaim the privacy of several hundred thousand bitcoin, and the liquidity is ever increasing.
 You can use Wasabi to manage your hardware wallet, and it even connects to your own full node.
 Of course, Wasabi is libre and open-source, which means you have full control over the software you manage your money with.
 
 Recently, there was a new release of the software that introduced several awesome features.
 This was the culmination of different streams of development efforts over the past year.
-The feedback from the community of users has been overwhelming, and with this release Wasabi has been [downloaded and installed](https://docs.wasabiwallet.io/using-wasabi/InstallPackage.html) well over 100 000 times already.
-The advanced CoinJoin feature has helped its users to reclaim the privacy of several hundred thousand bitcoin, and the liquidity is ever increasing.
+The feedback from the community of users has been overwhelming, and with this release Wasabi has been [downloaded and installed](https://docs.wasabiwallet.io/using-wasabi/InstallPackage.html) well [over 100 000 times](https://somsubhra.com/github-release-stats/?username=zksnacks&repository=WalletWasabi) already.
 
 ## It all starts with synchronization
 
@@ -37,7 +36,7 @@ This is an important feature so that you know which coin is from whom, and it wi
 When receiving bitcoin on an address, then you will notice two important aspects in the graphical user interface.
 First, the receiving address will be removed, as these should only be used once, [and never reused](https://docs.wasabiwallet.io/why-wasabi/AddressReuse.html)!
 Address reuse is one of the biggest privacy leaks in Bitcoin, as this makes it trivial for anyone to see which coins belong to the same user.
-Second, instead of showing only a total balance of the wallet, there is a list of all the coins that can be spend, these are unspent transaction outputs.
+Second, instead of showing only a total balance of the wallet, there is a list of all the coins that can be spent, these are unspent transaction outputs.
 Every coin is clearly labeled by the observers who know about the coin, as this was specified when generating the address.
 This makes coin control and conscious coin selection very intuitive and helps enormously with privacy.
 
@@ -72,7 +71,7 @@ All the above mentioned would make Wasabi already a top-notch Bitcoin wallet, bu
 For a long time, you can connect [your own Bitcoin full node](https://docs.wasabiwallet.io/using-wasabi/BitcoinFullNode.html) to Wasabi, and now Wasabi itself has the bitcoind binaries included in the software.
 This means that any user can now run a Bitcoin full node with only one single click in the Wasabi GUI.
 As of now, Wasabi does not yet use the full node for consensus verification, but the developers are working hard on making this a reality.
-Further, running your own node is not even a privacy improvement, as Wasabi as a light client is already as good as, maybe even better than, running a full node.
+Further, running your own node is not even a privacy improvement, even as a light client Wasabi is already as good as, maybe even better than, running a full node.
 However, this is a bandwidth improvement, as blocks don't have to be downloaded again.
 Of course, every Bitcoin user should run his own full node, and this obviously includes Wasabi users.
 
@@ -84,16 +83,16 @@ After the hardware wallet verified and signed the transaction, it can be broadca
 This is all enabled by the brilliant Hardware Wallet Interface of the Bitcoin Core project.
 
 The recent release also introduced multi wallet support, meaning that multiple Wasabi wallets can be loaded within one instance of the software.
-This make sit fast and easy to load different wallets and send in between them.
+This makes it fast and easy to load different wallets and send in between them.
 Part of this is also the amazing feature of [coinjoining directly into another wallet](https://docs.wasabiwallet.io/using-wasabi/Daemon.html), like your hardware wallet.
 
 ## What's coming up next
 
 This project is far from finished, and there are multiple open source developers continuously working to improve it further.
-The near term roadmap includes integration of PayJoin, a stegnographic CoinJoin technique between one sender and one receiver.
-Wasabi is already pretty intuitive to use, once you get the hang of it, but the team is working on a complete re-design of the user experience to make it ever more beautiful.
+The near term roadmap includes the integration of PayJoin, a steganographic CoinJoin technique between one sender and one receiver.
+Wasabi is already pretty intuitive to use, once you get the hang of it, but the team is working on a complete re-design of the user experience to make it even more beautiful.
 For the long term, there is ongoing research into WabiSabi, a novel CoinJoin technique which aims to enable sending arbitrary values to third party addresses directly in the CoinJoin.
-If the team succeeds to research and implement this, it would be a massive improvement to current CoinJoin techniques.
+If the team succeeds to research and implement this, it would be a massive improvement to the current CoinJoin techniques.
 
 ## To sum up
 
