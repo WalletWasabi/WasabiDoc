@@ -40,23 +40,26 @@ If the package is installed, execute in the command line in any directory:
 ~$ wassabee mix --wallet:MyFirstWallet --destination:MySecondWallet --keepalive
 ```
 
-If the source code is built, navigate to the WalletWasabi.Gui folder (inside the cloned repo) and execute:
+If the source code is built:
 
 ```bash
+~$ cd ~/WalletWasabi/WalletWasabi.Gui
 ~/WalletWasabi/WalletWasabi.Gui$ dotnet run -- mix --wallet:MyFirstWallet --destination:MySecondWallet --keepalive
 ```
 
 ### macOS
 
-If the package is installed, navigate to the Applications directory and execute: 
+If the package is installed:
 
 ```bash
-~/Applications/Wasabi\ Wallet.app/Contents/MacOs $ wassabee mix --wallet:MyFirstWallet --destination:MySecondWallet --keepalive
+~$ cd ~/Applications/Wasabi\ Wallet.app/Contents/MacOs
+~/Applications/Wasabi\ Wallet.app/Contents/MacOs$ ./wassabee mix --wallet:MyFirstWallet --destination:MySecondWallet --keepalive
 ```
 
-If the source code is built, navigate to the WalletWasabi.Gui folder (inside the cloned repo) and execute:
+If the source code is built:
 
 ```bash
+~$ cd ~/WalletWasabi/WalletWasabi.Gui
 ~/WalletWasabi/WalletWasabi.Gui$ dotnet run -- mix --wallet:MyFirstWallet --destination:MySecondWallet --keepalive
 ```
 
