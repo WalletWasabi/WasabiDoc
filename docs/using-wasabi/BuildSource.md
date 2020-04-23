@@ -52,7 +52,7 @@ dotnet run
 git pull
 ```
 
-## Checkout a developer branch
+## Check out a developer branch
 
 :::warning Experimental
 This step is optional, it can be used for testing specific branches that are currently being worked on.
