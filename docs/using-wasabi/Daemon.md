@@ -46,7 +46,7 @@ If the source code is built, navigate to the WalletWasabi.Gui folder (inside the
 ~/WalletWasabi/WalletWasabi.Gui$ dotnet run -- mix --wallet:MyFirstWallet --destination:MySecondWallet --keepalive
 ```
 
-### MacOS
+### macOS
 
 If the package is installed, navigate to the Applications directory and execute: 
 
