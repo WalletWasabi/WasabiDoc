@@ -466,7 +466,6 @@ Read more: [Why Wasabi uses only SegWit](/FAQ/FAQ-UseWasabi.md#why-does-wasabi-o
 
 SPV is a method for verifying particular transactions were included in a block without downloading the entire block.
 The method is used by some lightweight Bitcoin clients.
-Read more: [Wasabi Wallet under the hood](/building-wasabi/TechnicalOverview.md#wasabi-wallet-under-the-hood)
 :::
 
 :::details
