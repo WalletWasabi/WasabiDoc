@@ -26,7 +26,7 @@ To use Whonix, it is necessary to install either VirtualBox or Qubes.
 [Qubes](https://www.qubes-os.org/doc/) is a free-standing VM-based OS, designed for the best possible security.
 Whonix can be added to Qubes as an option during the installation process.
 
-[VirtualBox](https://www.virtualbox.org/wiki/End-user_documentation) is a lightweight VM manager that can be installed on Windows, Linux, or MacOS.
+[VirtualBox](https://www.virtualbox.org/wiki/End-user_documentation) is a lightweight VM manager that can be installed on Windows, Linux, or macOS.
 Whonix is added to VirtualBox by downloading and importing the Whonix installation .ova file.
 
 Depending upon which of these two options is chosen, there is detailed information available on the use of Whonix in Qubes [here](https://www.whonix.org/wiki/Qubes/Install), and the required downloads and information for using Whonix in VirtualBox [here](https://www.whonix.org/wiki/VirtualBox/XFCE).
