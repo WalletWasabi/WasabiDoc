@@ -87,7 +87,7 @@ A secure password manager software might also be used, but be careful here.
 
 * Windows: `/Users/{your username}/AppData/Roaming/WalletWasabi/Client`
 * Linux: `/Home/.walletwasabi/client`
-* MacOS: `/Users/{your username}/.walletwasabi/client`
+* macOS: `/Users/{your username}/.walletwasabi/client`
 
 :::tip
 You need to mark the “show hidden files” setting to see it.
@@ -159,6 +159,46 @@ Moreover, our trustless software architecture prevents us from gathering this in
 - We only provide written support, and NEVER ask for recovery words, passwords or similar security critical information.
 
 Read the whole document of [terms and conditions, privacy policy, and legal statement here](https://github.com/zkSNACKs/WalletWasabi/blob/master/WalletWasabi/Legal/Assets/LegalDocuments.txt)
+:::
+
+:::details
+### Can I import a watch-only extended public key?
+
+Yes, but not yet in the GUI, you will need to manually create a new wallet file.
+
+Open a text editor and paste the following wallet structure:
+
+```
+{
+  "EncryptedSecret": null,
+  "ChainCode": null,
+  "MasterFingerprint": null,
+  "ExtPubKey": "",
+  "PasswordVerified": true,
+  "MinGapLimit": 21,
+  "AccountKeyPath": "84'/0'/0'",
+  "BlockchainState": {
+    "Network": "Main",
+    "Height": "0"
+  },
+  "HdPubKeys": [
+  ]
+}
+```
+
+Then paste your extended public key in-between the quotes of the field `"ExtPubKey": "paste xpub here",`.
+
+You can also change the `"AccountKeyPath": "84'/0'/0'",` field if you want to import a different derivation path.
+But notice that Wasabi only works with native SegWit bech32 addresses.
+
+Save this file in your [`Wallets` data folder](/FAQ/FAQ-UseWasabi.html#where-can-i-find-the-wasabi-data-folder) as a json file like this: `WalletName.json`.
+The `WalletName` will be displayed in the GUI.
+
+Then start Wasabi and load the wallet to synchronize it.
+
+For watch only wallets, the `Send` tab is disabled.
+However, you can use the `Build Transaction` tab in the `Advanced` section of the `Wallet Explorer` to build an unsigned PSBT transaction.
+When this is signed on the device with the private key (like an offline laptop running Electrum wallet or a hardware wallet), then you can broadcast the signed transaction using the `Broadcast Transaction` tab in the `Tools` menu.
 :::
 
 ## Synchronization
@@ -301,8 +341,8 @@ This helps you know where your coins came from so that you can judge whether the
 
 ![](/ReceiveLabelingRequired.png)
 
-When labeling a newly generated address or a sending transaction you should ask yourself: "Who knows this address is mine?" or "Whom will I share this address with?" or "From whom am I receiving bitcoin?" or "To whom am I sending bitcoin?"
-Labels should contain the comma-separated names of people/entities that may be aware of the transaction and could follow its trail like:
+When labeling a newly generated address or a sending transaction you should ask yourself: "Who knows this address is mine?" or "Whom will I share this address with?" or "From whom am I receiving bitcoin?" or "To whom am I sending bitcoin?".
+Observers should contain the comma-separated names of people/entities that may be aware of the transaction and could follow its trail like:
 
 `Name of the sender or the receiver, name of the exchange, name of the payment processor`
 
@@ -316,9 +356,9 @@ or:
 :::
 
 :::details
-### How can I change the label of my receive address?
+### How can I change the observers of my receive address?
 
-You can change the label of your receive address in the right click menu by clicking `Change Label`, then type in the new label.
+You can change the observers of your receive address in the right click menu by clicking `Change Observers`, then type in the new label.
 This is useful when you have generated a receiving address with a specific label, but then the cause for receiving has changed.
 Take care with whom you have shared this address, because if you send it to several people, they might all send many coins to the same address.
 This is very bad for your privacy because of [address reuse](/why-wasabi/AddressReuse.md), and it confuses you with the labeling of each unique coin.
@@ -327,7 +367,7 @@ This is very bad for your privacy because of [address reuse](/why-wasabi/Address
 :::
 
 :::details
-### How can I edit the label of my address after a transaction has gone through?
+### How can I edit the observers of my address after a transaction has gone through?
 
 To date there is no possibility to change the label of an address after it has sent or received bitcoins.
 :::
@@ -350,8 +390,6 @@ This is a complete de-anonymization of your entire wallet!!
 :::details
 ### Why does Wasabi only use SegWit bech32 addresses?
 
-Wasabi generates bech32 addresses only, also known as `bc1q` addresses or native SegWit addresses.
-These addresses start with the characters `bc1q...`.
 Wasabi was created after the activation of SegWit, and it makes sense to support the most advanced address type, which has numerous benefits.
 For example, due to the malleability fix of SegWit, you can now remix CoinJoin outputs which are currently unconfirmed.
 There are also large savings on mining fees for SegWit transactions.
@@ -761,7 +799,7 @@ There are also edge cases where you do not pay the full coordinator fee or where
 For example if you're the smallest registrant to a round, you will never pay a coordinator fee.
 Also when you are remixing and you cannot pay the full coordinator fee with your input, then you only pay as much as you have.
 But if your input is larger than the minimum, and the change amount leftover would be too small, then that is also added to the coordinator fee.
-Currently the minimum change amount to be paid out is 0.7% of the base denomination (~0.1BTC.)
+Currently the minimum change amount to be paid out is 0.3% of the base denomination (~0.1BTC.)
 
 It is also possible that you get more back from mixing than you put in.
 This happens when network fees go down between the start of the round and its end.
@@ -895,7 +933,7 @@ Now if even that would fail, then we can start thinking about lowering the requi
 :::details
 ### I'd like to experience CoinJoin but I'm not comfortable using real Bitcoin. What can I do?
 
-You can try to make a CoinJoin via Wasabi on the Bitcoin [TestNet](/FAQ/FAQ-UseWasabi.md#what-is-testnet) (an alternative Bitcoin blockchain, to be used for testing).
+You can try to make a CoinJoin via Wasabi on the Bitcoin [TestNet](/using-wasabi/Testnet.md) (an alternative Bitcoin blockchain, to be used for testing).
 Go to `Settings` and change the network to `TestNet`.
 Then restart your Wasabi, and it will synchronize for the TestNet, and generate TestNet addresses.
 You can get tBTC from faucets like:
@@ -1113,7 +1151,7 @@ At least those following industry standards.
 This is thanks to the awesome [Hardware Wallet Interface of Bitcoin Core](https://github.com/bitcoin-core/HWI/).
 
 However, not all of the many hardware wallets have been tested and reviewed by the developers.
-Everything seems to work fine with the [ColdCard](https://coldcardwallet.com), [BitBox](https://shiftcrypto.ch/bitbox02), [Trezor](https://trezor.io), [Ledger](https://ledgerwallet.com) and [KeepKey](https://shapeshift.io/keepkey).
+Everything seems to work fine with the [ColdCard](https://coldcardwallet.com), [BitBox](https://shiftcrypto.ch/bitbox02), [Trezor](https://trezor.io), [Ledger](https://ledger.com) and [KeepKey](https://shapeshift.io/keepkey).
 ::::
 
 :::details
@@ -1154,8 +1192,9 @@ Read more [here](/using-wasabi/ColdWasabi.md).
 :::details
 ### How can I sign a transaction with a USB connected hardware wallet?
 
-To send a transaction you will need to connect your hardware wallet and unlock the device (using PIN or password), in Wasabi Wallet you go to the `Send` tab where you can specify the address to send to, amount of bitcoin to send and which coins to use as input (only use green/private coins here!).
-After filling in all transaction details you click `Send Transaction` to sign it with the connected hardware wallet and broadcast on the network.
+To send a transaction you will need to connect your hardware wallet and unlock the device (using PIN or password).
+Then go to the `Send` tab where you can specify the address to send to, the amount of bitcoin to spend and which coins to use as inputs.
+After filling in all transaction details you click `Send Transaction` to sign it with the connected hardware wallet and broadcast to the network.
 Read more [here](/using-wasabi/ColdWasabi.md#connecting-via-usb)
 :::
 
@@ -1215,7 +1254,7 @@ To avoid any privacy leak, you can use a Ledger hardware wallet in combination w
 
 Everything is working as expected.
 
-The anonymity set info (number) is tied to your wallet that you used to CoinJoin, if you send a mixed coin to another Wasabi Wallet of yours (hardware wallet or normal wallet) it will have an anonymity set 1 (red) because this wallet doesn't know that the coin was coinjoined.
+The anonymity set info (number) is tied to your wallet that you used to CoinJoin, if you send a mixed coin to another Wasabi Wallet of yours (hardware wallet or normal wallet) it will have an anonymity set 1 <img src="/ShieldRed.png" alt="red" class="shield" /> because this wallet doesn't know that the coin was coinjoined.
 
 You should put a meaningful label when you generate a receive address in your hardware wallet, e.g. "coinjoined utxo with anonymity set 70" (something that reminds you that you got this utxo from your Wasabi Wallet and it was coinjoined).
 :::
@@ -1270,25 +1309,6 @@ You can use the [Wasabi RPC server `gethistory` call](/using-wasabi/RPC.md#gethi
 :::
 
 ## Settings
-
-:::details
-### What is Testnet?
-
-The testnet is an alternative Bitcoin blockchain, to be used for testing.
-Testnet coins (tBTC) are separate and distinct from actual bitcoins, and are never supposed to have any financial value.
-This allows application developers or bitcoin testers to experiment, without having to use real bitcoins or worrying about breaking the main Bitcoin chain.
-You can try to make a [CoinJoin with Wasabi on the Bitcoin TestNet](/FAQ/FAQ-UseWasabi.md#i-d-like-to-experience-coinjoin-but-i-m-not-comfortable-using-real-bitcoin-what-can-i-do) without being afraid of losing 'real' bitcoins.
-
-You can get tBTC from faucets like:
-[testnet-faucet.mempool.co](https://testnet-faucet.mempool.co/)
-or
-[coinfaucet.eu/en/btc-testnet](https://coinfaucet.eu/en/btc-testnet/)
-
-There have been three generations of testnet.
-The first Testnet was reset to Testnet2 with a different genesis block, because people were starting to trade testnet coins for real money.
-Testnet3 is the current testing network.
-It was introduced with the Bitcoin Core v0.7 release, introduced a third genesis block, a new rule to avoid the "difficulty was too high, is now too low, and transactions take too long to verify" problem, and contains blocks with edge-case transactions designed to test implementation compatibility.
-:::
 
 :::details
 ### How do I connect my own full node to Wasabi?

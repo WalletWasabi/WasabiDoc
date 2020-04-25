@@ -24,7 +24,6 @@ You will also find some of the issues they are working on now, the research for 
 
 ### Advanced
 
-- [False Positive](/building-wasabi/FalsePositive.md)
 - [Security Policy](/building-wasabi/Security.md)
 - [MIT License](/building-wasabi/LICENSE.md)
 - [Credits](/building-wasabi/Credits.md)

@@ -17,11 +17,39 @@ Read more: [Bitcoin addresses](/using-wasabi/Receive.md#bitcoin-public-keys-and-
 :::
 
 :::details
+### Bitcoin
+
+Bitcoin is a peer-to-peer electronic cash system.
+An innovative payment network and a new kind of money.
+It is a decentralized digital currency without a central bank or single administrator that can be sent from user to user on the peer-to-peer bitcoin blockchain network without the need for intermediaries.
+:::
+
+:::details
+### Bitcoin Core
+
+Bitcoin Core is an open source project which maintains and releases Bitcoin client software called `Bitcoin Core`, considered to be Bitcoin's reference implementation.
+It is a direct descendant of the original Bitcoin software client released by Satoshi Nakamoto after he published the famous Bitcoin whitepaper.
+
+Bitcoin Core consists of both `full-node` software for fully validating the blockchain as well as a Bitcoin wallet.
+The project also currently maintains related software such as the cryptography library libsecp256k1 and others located at GitHub.
+Read more: [Bitcoin Core Website](https://bitcoincore.org/)
+:::
+
+:::details
 ### Bitcoin Improvement Proposal (BIP)
 
 Bitcoin Improvement Proposal.
 A design document for introducing features or information to Bitcoin.
 Read more: [Wasabi Supported BIPs](/using-wasabi/BIPs.md)
+:::
+
+:::details
+### Bitcoin Knots
+
+Bitcoin Knots is a derivative of Bitcoin Core with a collection of improvements backported from and sometimes maintained outside of Core's master git tree.
+Since version 1.1.11, Wasabi has partial Bitcoin Knots integration.
+This means that it is possible (but not mandatory) to start Bitcoin Knots during the launch of Wasabi, without having to install or configure anything.
+Read more: [Bitcoin Knots Website](https://bitcoinknots.org/)
 :::
 
 :::details
@@ -126,6 +154,14 @@ It specifies the numeric value the hash of a block must not be above to be consi
 Fork, also known as accidental fork, occurs when two or more blocks have the same block height, forking the blockchain.
 Typically occurs when two or more miners find blocks at nearly the same time.
 Can also happen as part of an attack.
+:::
+
+:::details
+### Full node
+
+Any computer that connects to the Bitcoin network is called a node.
+Nodes that fully verify all of the rules of Bitcoin are called full nodes.
+Full nodes download every block and transaction and check them against Bitcoin's consensus rules.
 :::
 
 :::details
@@ -332,6 +368,12 @@ In a typical payment channel, only two transactions are added to the blockchain 
 :::
 
 :::details
+### Plausible deniability
+
+Plausible deniability is the ability to deny knowledge of or responsibility for any damnable actions committed by others in an organizational hierarchy because of a lack of evidence that can confirm their participation, even if they were personally involved in or at least willfully ignorant of the actions.
+:::
+
+:::details
 ### Private Key
 
 A private key is a large number that must be chosen at random, it is thus a very secure password and should be kept secret.
@@ -424,7 +466,6 @@ Read more: [Why Wasabi uses only SegWit](/FAQ/FAQ-UseWasabi.md#why-does-wasabi-o
 
 SPV is a method for verifying particular transactions were included in a block without downloading the entire block.
 The method is used by some lightweight Bitcoin clients.
-Read more: [Wasabi Wallet under the hood](/building-wasabi/TechnicalOverview.md#wasabi-wallet-under-the-hood)
 :::
 
 :::details
@@ -437,6 +478,13 @@ Soft fork or soft-forking change is a fork in the blockchain which commonly occu
 ### Testnet
 
 A testing environment in which users can obtain and spend satoshis that have no real-world value on a global network that is very similar to the Bitcoin mainnet.
+:::
+
+:::details
+### Timechain
+
+Timechain is a synonym of [blockchain](/glossary/Glossary-GeneralBitcoin.md#blockchain).
+It emphasizes the achievement of the Bitcoin protocol to establish consensus on the temporal order of transactions so to prevent double spends.
 :::
 
 :::details

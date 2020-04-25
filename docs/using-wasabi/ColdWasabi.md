@@ -27,28 +27,28 @@ The keys need to be on the internet connected computer to be able to CoinJoin.
 
 ## What is Cold Storage
 
-Cold storage refers to keeping a reserve of bitcoin protected by private keys which are generated and stored completely offline.
+Cold storage refers to generating and storing private keys completely offline.
 This is an often-used security precaution, especially dealing with large amounts of bitcoin.
 Because the private keys are not on a computer which is connected to the internet, many remote attack vectors are nullified.
 
-Methods of cold storage include keeping private keys:
-- On a USB drive or other data storage medium
-- On a paper wallet
-- On a bearer item such as a physical bitcoin
-- On a hardware wallet
+Methods of cold storage include keeping private keys on a:
+- USB drive or other data storage medium
+- Paper wallet
+- Bearer item such as a physical bitcoin
+- Hardware wallet
 
 ## Hardware Wallet with Wasabi
 
 You can use Wasabi Wallet with almost any hardware wallet out there, because Wasabi utilizes [Bitcoin Core Hardware Wallet Interface [HWI]](https://github.com/bitcoin-core/hwi).
-The setup is thoroughly tested for [Trezor model One and T](https://trezor.io), [Ledger Nano S](https://ledgerwallet.com), [Coldcard](https://coldcardwallet.com).
+The setup is thoroughly tested for [Trezor model One and T](https://trezor.io), [Ledger Nano S](https://ledger.com), and [Coldcard](https://coldcardwallet.com).
 
 ### Connecting via USB
 
 #### Import the wallet
 
-When Wasabi is running, the hardware wallet can be connected via USB to the same computer.
+When Wasabi is running, the hardware wallet can be connected via USB to the computer.
 Wasabi should automatically detect the hardware, and open the `Hardware Wallet` tab where you can load the wallet.
-This wallet will be used as a watch-only wallet when the hardware wallet device is not connected.
+This wallet can be used as a watch-only wallet when the hardware wallet device is not connected.
 
 #### Receiving bitcoin
 
@@ -77,19 +77,19 @@ This file does not include your private keys, so an attacker cannot use it to sp
 However, he can use it to derive a full transaction history, thus it is a potential privacy leak.
 :::
 
-Now plug in the SD card to your computer, and open Wasabi Wallet.
+Now insert the SD card to your computer, and open Wasabi Wallet.
 Go to the `Hardware Wallet` tab, and click the button `Import Coldcard`, browse to the SD card and select the `new-wallet.json` file.
 Wasabi will automatically import and modify this skeleton file and store it in your `Wallets` and `WalletBackups` folders.
 
 #### Receiving bitcoin
 
-After the skeleton wallet is imported, you can open the wallet in the `Load Wallet` tab without using your Coldcard.
+After the skeleton wallet is imported, you can open the wallet in the `Load Wallet` tab or `Wallet Explorer` without using your Coldcard.
 Generate a [receiving address](/using-wasabi/Receive.md) as usual.
 The private key corresponding to this address is on the hardware wallet.
 
 #### Sending bitcoin
  
-In the right-side Wallet explorer, click on `Advanced` then `Build Transaction`.
+In the right-side `Wallet Explorer`, click on `Advanced` of your hardware wallet, then on `Build Transaction`.
 This shows you a tab similar to the `Send` tab.
 You select coins, specify the destination address, payment amount and mining fee.
 Then you click the `Build Transaction` button, and it will generate an unsigned Bitcoin transaction.
@@ -97,25 +97,25 @@ Click on `Export Binary PSBT`, select the SD card and click `OK`.
 
 ![](/PSBTUnsigned.png)
 
-Unplug your SD card from the computer and put it into your Coldcard.
+Remove the SD card from the computer and put it into your Coldcard.
 Then, in the Coldcard main menu click on `Ready to Sign`.
 Verify the transaction details shown on the Coldcard, and approve the transaction for signing.
-After this, unplug the micro SD card from Coldcard and plug it into the computer.
+After this, remove the micro SD card from Coldcard and insert it into the computer.
 In Wasabi, click on the top menu `Tools` and then `Transaction Broadcaster`.
 In this tab, select `Import Transaction`, lookup the SD card with the final signed transaction, and click `OK`.
-Then click `Broadcast Transaction`, and Wasabi will privately announce it to the Bitcoin network.
+Then click `Broadcast Transaction`, and Wasabi will privately announce it to the Bitcoin network over Tor.
 
 ![](/PSBTBroadcast.png)
 
 ## Cold-Wasabi protocol
 
 This is how you can safely eat cold Wasabi, or store your coins on a hardware wallet after one or more rounds of CoinJoin using Wasabi Wallet.
-Because you cannot do CoinJoin with the private keys on the hardware wallet, you will need to generate and load two different Wasabi Wallets.
-A 'Hot' (CoinJoin) and a 'Cold' (Storage) Wasabi Wallet instances will both be running side-by-side, label them accordingly so you don't mix them up.
+Because you cannot do CoinJoin with the private keys on the hardware wallet, you will need to generate and load two different wallets in Wasabi.
+A 'hot' (CoinJoin) and a 'cold' (Storage) wallet will both be running in parallel, label them accordingly so you don't mix them up.
 
 There are two different ways of following the Cold-Wasabi Protocol, one using the GUI (Graphical User Interface) and one using the [daemon](/using-wasabi/Daemon.md).
 
-At the moment, only the latter allows to CoinJoin to a different wallet.
+At the moment, only the latter allows to CoinJoin directly into a different wallet.
 
 ## GUI tutorial
 
@@ -126,13 +126,13 @@ You should make your existing coins private.
 It is useful to generate a complete new hot wallet for this, so as to keep the CoinJoin transaction history separate from other wallets.
 :::
 
-1. [Generate a new Hot-Wasabi Wallet](/using-wasabi/WalletGeneration.md).
+1. [Generate a new hot-Wasabi Wallet](/using-wasabi/WalletGeneration.md).
 2. Open the [Receive](/using-wasabi/Receive.md) tab to get a new address.
 3. From a pre-existing wallet, send bitcoin into this Hot-Wasabi Wallet.
 4. In the [CoinJoin](/using-wasabi/CoinJoin.md) tab, select the relevant coins, enqueue them, and wait for the CoinJoin to be done.
 Remix often to gain a high anonymity set.
 
-### Setup your cold Wasabi
+### Setup your cold-Wasabi
 
 :::tip Second
 In order to separate these new private coins, you should generate a fresh wallet on your hardware device.
@@ -154,30 +154,30 @@ Wait some time in-between sending them, so that timing analysis becomes more dif
 9. Go to the hot-Wasabi `Send` tab, and select the coins with high anonymity set.
 Do not consolidate your <img src="/ShieldCheckmark.png" alt="checkmark" class="shield" /> coins, but send them in small, time-staggered batches.
 10. Paste the cold-Wasabi address.
-11. Click the `MAX` button to send the whole mixed coin.
+11. Click the `MAX` button to send the whole mixed coin without generating change.
 
 ### Send bitcoins from cold Wasabi
 
 :::tip Finally
-You can at any time spend the bitcoin from the cold Wasabi.
+You can at any time spend the bitcoin from the cold-Wasabi.
 :::
 
 12. Connect your hardware wallet to the computer.
 13. Load the cold Wasabi wallet.
-14. Go to the `Send`, select the coins and destination, then sign the transaction with the hardware wallet.
+14. Go to the `Send` tab, select the coins and destination, then sign the transaction with the hardware wallet.
 Alternatively go to the `Build Transaction` tab and do the Coldcard SD card workflow.
 
 ## Daemon tutorial
 
 ### Mix to Another Wallet
 
-Use the [daemon](/using-wasabi/Daemon.md) and run `dotnet run -- mix --wallet:MyWallet1 --destination:MyWallet2`, where `MyWallet1` is the name of your _hot_ Wasabi Wallet and `MyWallet2` is your  _cold_ Wallet from Coldcard.
+Use the [daemon](/using-wasabi/Daemon.md) and run `wassabee mix --wallet:hotWasabi --destination:coldWasabi`.
 
-The software stops when it finishes the mix or if you press `CTRL+C` (`CMD+C` on macOS) to stop it.
-
-Wasabi coinjoins normally until your target anonymity set is reached (default 50).
-This number can be changed by editing your `Wallet1.json` file, located inside [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder).
+The daemon stops when all coins have reached the target anonymity set, or if you press `CTRL+C` (`CMD+C` on macOS) to stop it.
+The target anonymity set is by default `50`, but it can be changed in the `Settings` tab.
 After that it starts registering outputs from the CoinJoin to your destination wallet, thus you are slowly and privately coinjoining your money to your cold wallet.
+
+![](/SettingsAnonLevels.png)
 
 :::tip Success!
 おめでとうございます!
@@ -188,5 +188,5 @@ You are now eating Cold Wasabi!
 :::warning
 The anonymity set is tied to the wallet that you used to CoinJoin, if you send a mixed coin to another Wasabi Wallet (in this case your hardware wallet), it will have an anonymity set 1 (red) because this wallet doesn't know that the coin was coinjoined.
 
-You should use a meaningful label when you generate a receive address in your hardware wallet, e.g. "My hot Wasabi 100 anonset" (something that reminds you that you got this utxo from your Wasabi Wallet and it was coinjoined).
+You should use a meaningful label when you generate a receive address in your hardware wallet, e.g. "Myself 100 anonset" (something that reminds you that you got this utxo from your Wasabi Wallet and it was coinjoined).
 :::

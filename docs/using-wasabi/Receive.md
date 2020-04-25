@@ -15,10 +15,11 @@
 
 1. Start Wasabi and open the wallet that you want to receive coins into.
 2. Go to the `Receive` tab.
-3. Specify a label of the entities who know about this address.
+3. Specify the observers which are the entities who know about this address.
 4. Click on `Generate Address`.
-5. Optionally change the label in the right click menu if new entities learn about the address.
+5. Optionally you can change the observers in the right click menu if new entities learn about the address.
 
+![](/ReceiveLabelingRequired.png)
 ![](/ReceiveAddressDropDownMenu.png)
 
 ## Bitcoin public keys and addresses
@@ -35,12 +36,13 @@ In a Bitcoin transaction, the output creates a new unspent transaction output wh
 The input of the transaction spends a UTXO by providing a valid signature of the public key that the address committed to.
 
 :::tip
-Wasabi Wallet does not "store your money", rather it stores your public keys and the encrypted secret that requires a password to derive the private keys, it creates addresses for receiving bitcoin, and it signs transactions that spend your bitcoin.
+Wasabi Wallet does not "store your money", rather it stores your public keys and an encrypted secret that requires your password to derive the private keys.
+It creates addresses for receiving bitcoin, and it signs transactions that spend your bitcoin.
 :::
 
 ## The problem with address reuse
 
-Whenever you use the same address to lock up different UTXOs, then all these coins can be spent by anyone who knows the private key.
+Whenever you use the same address to lock up different UTXOs, then all these coins can be spent by anyone who knows the same private key.
 This makes it obvious for anyone that this one entity [you] owns all these coins, which is very bad for privacy.
 The first rule of Bitcoin privacy is [never reuse addresses](/why-wasabi/AddressReuse.md)!
 
@@ -75,24 +77,22 @@ Well, without coin control it is not possible.
 
 Wasabi is a coins-oriented wallet in the sense that coins are the most important unit of information to take decisions to protect privacy.
 
-### Labels
+### Observers
 
-As a privacy-oriented solution the focus is always on minimizing how much we reveal about our financial activity.
+As a privacy-oriented solution the focus is always on minimizing how much we selectively reveal about our financial activity.
 For that reason when we create a new address to receive bitcoins or when we send a transaction, we are forced to label that coin!
 And what kind of information do we have to provide here?
 The label has to tell us who are the observers that know about that coin.
 
 For example, if I create a new address to receive a `0.5 BTC` payment from Andrew for a laptop that I sold to him then the label has to be: `Andrew`.
 
-Most of the wallets out there don't care much about privacy (or at least not as much as Wasabi does) and for that reason they don't allow us to attach this critical data to our coins.
-
 Wasabi does not label transactions, but the addresses that control the coins.
 The label is not for describing the `reason for payment`, but rather to list the `involved parties`.
-Understanding this difference between labeling an address (Wasabi) and describing a transaction (many other wallets) is very important for our privacy.
+Understanding this difference between labeling an address and describing a transaction is very important for our privacy.
 
 ### Clusters
 
-Following with the previous example, if I have to send a fraction (`0.1 BTC`) of the previously received coin to a Charlie then that transaction label has to be: `Charlie`.
+Following with the previous example, if I have to send a fraction (`0.1 BTC`) of the previously received coin to Charlie then in the `Send` tab the observers should be: `Charlie`.
 In that way, the change (`0.4 BTC`) will be known by Andrew and Charlie because they both will be able to follow the change.
 That's exactly what Wasabi displays in the coins list (cluster column), Wasabi tells us who are the ones that know about each of our coins in order to allow us to decide what to do with the coins.
 
@@ -110,12 +110,6 @@ In case none of those combinations are acceptable for you then you should CoinJo
 Those that participate in a Wasabi [CoinJoin](/using-wasabi/CoinJoin.md) transaction receive at least one coin with an anonymity set level that depends on the number of participants in that transaction.
 By default Wasabi tries to create transactions with 100 unknown participants, so the received coin can have 100 anonymity set which means it is really hard for an observer to know who that coin belongs to.
 For that reason a coin with a high anonymity set loses the cluster which it originally had.
-
-### Automatic selection
-
-As we can see now the correct labeling of coins allows Wasabi to display useful information about who knows about our wallet and how much they know.
-It also allows Wasabi to select coins for you if you want (not recommended).
-Basically, if you select all your coins and the amount you want to send is smaller than the total, Wasabi will select only enough coins to minimize the number of people that will learn more about your wallet.
 
 ### Final words about labels and examples
 
@@ -136,7 +130,7 @@ From my old wallet
 ```
 
 In case we take the two first coins with good labels and send them to María, look how the change cluster will be displayed: `Maria, Andrew, David, Me` (these people know about the coin).
-Now, look how this will be displayed if I use the two coins with bad labels: `Maria, Payment from Andrew for my laptop, From my old wallet` (Is this high-quality info about the privacy level of my coin? Of course not).
+Now, look how this will be displayed if I use the two coins with bad labels: `Maria, Payment from Andrew for my laptop, From my old wallet` (Is this high-quality info about the privacy level of my coin? Not really.).
 
 So, think about coins, think about who knows and make sure to take decisions about privacy based on what you are going to reveal and to whom.
 Wasabi doesn't care about why you transact with bitcoins, it only cares about who you transact with, because this is what helps you reclaim your privacy.

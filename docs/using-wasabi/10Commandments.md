@@ -13,7 +13,7 @@
 
 ## 1. Wasabi is for defense only
 
-Wasabi is a powerful free and open source Bitcoin wallet, and it is used to protect your privacy.
+Wasabi is a powerful free and open-source Bitcoin wallet, and it is used to protect your privacy.
 
 ## 2. Verify the integrity of your software
 
@@ -31,7 +31,7 @@ It also gives you time to move your coins to a different wallet if you notice th
 Wasabi is a fully non-custodial wallet, which means that you are always in possession of your keys, and this means safely storing a backup.
 If you have done this step, then even if your computer crashes, there is very little you have to worry about, you can always [recover your wallet](/using-wasabi/WalletRecovery.md).
 Also, under no circumstance should you reveal the password or mnemonic words to anyone that asks for them.
-Lastly, understand that if you [lose your password](/using-wasabi/LostPassword.md), it becomes much harder (if not impossible) to restore your wallet - so store both safely!
+Lastly, understand that if you lose your password, it becomes much harder (if not impossible) to restore your wallet, so store both safely!
 
 ## 4. Practice good labeling AND try to never reuse addresses
 
@@ -39,7 +39,7 @@ Each time you generate an address to [receive bitcoin](/using-wasabi/Receive.md)
 This label helps you use your bitcoin privately, and is stored exclusively on your device.
 Wasabi has strong coin control features, and as you continue to use the wallet properly, you can see who knows about your coins.
 
-Lastly, in the same way that you should never receive bitcoin to the same address twice, you should try to avoid sending bitcoin to the same address twice.
+Lastly, in the same way, that you should never receive bitcoin to the same address twice, you should try to avoid sending bitcoin to the same address twice.
 So ask the recipients to provide you a new address for every transaction.
 
 ## 5. CoinJoin whenever possible and be patient!
@@ -66,7 +66,7 @@ For more information, please see the discussions [here](https://www.reddit.com/r
 ## 7. Avoid 3rd party servers
 
 Wasabi is designed to allow users to see their balances [without any concern that a third party](/why-wasabi/NetworkLevelPrivacy.md) would be able to link your addresses to you, or to each other.
-But if you proceed to enter your address into a block explorer, or use a wallet which trusts a third party server with your public keys - all bets are off.
+But if you proceed to enter your address into a block explorer, or use a wallet that trusts a third party server with your public keys - all bets are off.
 So if you want to check on the status of a transaction or the balance on an address, you should first:
 
 1. Check your Wasabi Wallet
@@ -78,7 +78,7 @@ Even something as simple as leaving a comment on a YouTube video or Reddit post 
 
 ## 8. Run your own full node (if you can)
 
-Wasabi will protect your network level privacy even without your own full node.
+Wasabi will protect your network-level privacy even without your own full node.
 However, if you can spare the resources on your device, running a full node is the only way to properly verify the bitcoin you receive.
 Wasabi comes [packaged with a Bitcoin full node](/using-wasabi/BitcoinFullNode.md), and you can easily start it with one click in the settings.
 If you have a full node already running on the same device, Wasabi will use it automatically per default.
@@ -95,5 +95,5 @@ In the same way that reusing addresses hurts your privacy, consolidating all of 
 
 Wasabi is an ideal wallet for many things, but trade-offs exist with everything.
 Lightning is still a project in its early days, but the privacy topology of lightning payments is much more ideal over on-chain payments if you have the choice.
-Routing large amounts can be uncertain, but for small amounts the network is becoming steadily more reliable.
-Currently Wasabi does not support in-wallet lightning features, but it is on the road-map.
+Routing large amounts can be uncertain, but for small amounts, the network is becoming steadily more reliable.
+Currently, Wasabi does not support in-wallet lightning features, but it is on the road-map.

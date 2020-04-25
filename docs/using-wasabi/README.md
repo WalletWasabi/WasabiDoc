@@ -37,9 +37,8 @@ Further tutorials about the different parts of the wallet, for newbies and power
 - [How you can be de-anonymized using Bitcoin](/using-wasabi/Deanonimization.md)
 
 ### Restoring Wasabi
-- [Recover Wasabi Wallet](/using-wasabi/WalletRecovery.md)
+- [Recover a Wallet](/using-wasabi/WalletRecovery.md)
 - [Restoring Wasabi Wallet to Electrum](/using-wasabi/RestoreElectrum.md)
-- [Lost Password Strategy](/using-wasabi/LostPassword.md)
 - [Password Finder](/using-wasabi/PasswordFinder.md)
 
 ### Advanced Installing Wasabi
@@ -52,8 +51,10 @@ Further tutorials about the different parts of the wallet, for newbies and power
 - [Headless Wasabi Daemon](/using-wasabi/Daemon.md)
 - [RPC Interface](/using-wasabi/RPC.md)
 - [Lurking Wife Mode](/using-wasabi/LurkingWifeMode.md)
+- [Testnet](/using-wasabi/Testnet.md)
 - [Lock Screen](/using-wasabi/LockScreen.md)
 - [Password Best Practices](/using-wasabi/PasswordBestPractices.md)
+- [Backup Best Practices](/using-wasabi/BackupBestPractices.md)
 - [Supported BIPs](/using-wasabi/BIPs.md)
 - [Supported Industry Standards](/using-wasabi/IndustryStandards.md)
 

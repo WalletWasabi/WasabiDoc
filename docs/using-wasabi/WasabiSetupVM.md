@@ -27,7 +27,7 @@ These snaphots can be restored later if a problem or undesired condition arises 
 
 - Set up a template VM with a desired development environment or configuration, and then quickly create lightweight, disposable clones of the template for specific tests.
 
-- Develop and/or test applications in Windows, Linux, and MacOS at the same time, on the same computer.
+- Develop and/or test applications in Windows, Linux, and macOS at the same time, on the same computer.
 You can link them together in a customizable internal network if desired.
 
 For developers, the use of virtual machines offers some of the basic version control features of git, but applied to operating systems rather than files or projects.
@@ -114,7 +114,7 @@ Clone & run Wasabi.
 [user@source-wasabi ~]$ dotnet run
 ```
 
-Checkout a developer branch.
+Check out a developer branch.
 
 ```sh
 [user@source-wasabi ~]$ git remote add nopara73 https://github.com/nopara73/WalletWasabi
@@ -239,7 +239,7 @@ your@vm:~$ cd WalletWasabi/WalletWasabi.Gui
 your@vm:~$ dotnet run
 ```
 
-Checkout a developer branch.
+Check out a developer branch.
 
 ```sh
 your@vm:~$ git remote add nopara73 https://github.com/nopara73/WalletWasabi
