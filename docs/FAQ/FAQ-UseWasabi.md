@@ -25,7 +25,7 @@ Without knowledge of the password, you CANNOT spend your bitcoin!!
 :::
 
 Make sure that you properly back up and write down this password.
-Please also read and agree to the terms and conditions, the privacy policy and the legal issues.
+Please also read and agree to the [terms and conditions, the privacy policy and the legal statement](https://github.com/zkSNACKs/WalletWasabi/blob/master/WalletWasabi/Legal/Assets/LegalDocuments.txt).
 Now you can continue with clicking `Generate`.
 
 ![](/WalletManagerGenerateWallet.png)
@@ -143,6 +143,22 @@ Open the `UiConfig.json` file inside your [Wasabi data folder](/FAQ/FAQ-UseWasab
 "LockScreenActive": false,
 "LockScreenPinHash": ""
 ```
+:::
+
+:::details
+### What are the terms and conditions?
+
+The most important parts of the legal documents are summarized in the following points:
+- The service is open-source under the MIT license.
+- The service is provided on a non-custodial basis.
+Safekeeping of keys are the sole responsibility of the user.
+- The user is solely responsible to act according to their local laws and regulations.
+- We do not store any personally identifiable information.
+Moreover, our trustless software architecture prevents us from gathering this information in the first place.
+- A transaction fee is only charged by the service provider for CoinJoin transactions.
+- We only provide written support, and NEVER ask for recovery words, passwords or similar security critical information.
+
+Read the whole document of [terms and conditions, privacy policy, and legal statement here](https://github.com/zkSNACKs/WalletWasabi/blob/master/WalletWasabi/Legal/Assets/LegalDocuments.txt)
 :::
 
 :::details
