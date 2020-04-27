@@ -8,7 +8,7 @@
 # Wallet Load
 
 There are two ways of loading your wallets in Wasabi, and you can load multiple wallets at the same time.
-The synchronizing of your wallet happens fast and is very private by default.
+The synchronization of your wallet happens fast and is very private by default.
 
 [[toc]]
 
@@ -22,7 +22,7 @@ On the right side of Wasabi is the `Wallet Explorer`, where you see an alphabeti
 
 ![](/WalletExplorerUnloaded.png)
 
-You can load a wallet simply by double clicking on it or by right-clicking on it and then choosing `Load Wallet`.
+You can load a wallet simply by double-clicking on it or by right-clicking on it and then choosing `Load Wallet`.
 A coin will appear on the wallet icon to indicate the loaded wallets.
 
 ![](/WalletExplorerLoaded.png)
@@ -38,7 +38,7 @@ Alternatively, you can double click a wallet in the `Load Wallet` tab, or select
 ### Filter download
 
 As soon as you start Wasabi, it connects to the backend server with a new Tor identity and requests the [BIP 158 block filters](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients).
-At the first start this can take a couple minutes because all filters need to be downloaded, but for the subsequent starts this is faster as only the most recent filters are requested.
+At the first start, this can take a couple of minutes because all filters need to be downloaded, but for the subsequent starts, this is faster as only the most recent filters are requested.
 
 ### Filter scanning
 
