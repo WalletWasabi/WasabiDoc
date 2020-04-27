@@ -27,7 +27,7 @@ With your full node you define, verify, and enforce the rules of your sound mone
 Only by running a full node, do you verify by yourself that the money you receive is actually valid bitcoin.
 You do not trust an external third party, and thus you also do not leak any sensitive financial information.
 
-There are several software implementations that function as a full node, for example [Bitcoin Core](https://bitcoincore.org/), [Bitcoin Knots](https://bitcoinknots.org/), or [LibBitcoin](https://libbitcoin.info/).
+There are several software implementations that function as a full node, for example, [Bitcoin Core](https://bitcoincore.org/), [Bitcoin Knots](https://bitcoinknots.org/), or [LibBitcoin](https://libbitcoin.info/).
 
 ## How does Wasabi use your Bitcoin full node
 
@@ -43,7 +43,7 @@ This current work in progress integration **does not** verify consensus within W
 If a full node is connected to Wasabi, then the relevant block is fetched from this trusted node, and not from a random P2P node.
 Wasabi also queries if your local mempool has unconfirmed transactions that are of interest to you.
 Further, your full node is used to estimate the current mining fee level based on the bitcoind `smartfee` algorithm.
-Your full node is not used to broadcast your transactions, as this is done through a random peer-to-peer node with a new tor identity, which is better for your [network level privacy](/why-wasabi/NetworkLevelPrivacy.md).
+Your full node is not used to broadcast your transactions, as this is done through a random peer-to-peer node with a new tor identity, which is better for your [network-level privacy](/why-wasabi/NetworkLevelPrivacy.md).
 
 The future goal is that the local full node (Knots) is used to generate the BIP 158 block filters from the verified blocks.
 Only then is there full verification, and no trust in the zkSNACKs server.
@@ -53,7 +53,7 @@ Only then is there full verification, and no trust in the zkSNACKs server.
 Since version [1.1.11](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v1.1.11), Wasabi Wallet ships with [Bitcoin Knots](https://bitcoinknots.org).
 This means that every Wasabi client has the necessary software to run a Bitcoin full node and define, verify, and enforce monetary consensus with bitcoind, but this verification is not yet used within Wasabi itself, it is a work in progress.
 By default, bitcoind is not started together with Wasabi.
-This must be activated explicitly in the settings, because this is a bandwidth, CPU and storage intensive program.
+This must be activated explicitly in the settings because this is a bandwidth, CPU and storage-intensive program.
 It is optional to keep bitcoind running even after Wasabi Wallet is shut down, so as to verify blocks as soon as they are received.
 
 ![](/SettingsBitcoinCore.png)
