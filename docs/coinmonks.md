@@ -9,9 +9,8 @@ You can generate a new set of private keys, or import already existing ones.
 With Wasabi you can receive bitcoins into your full control, and you can send them to someone else without needing permission from any other person or entity.
 There is also a powerful CoinJoin feature to help obfuscate your transaction history, this has helped its users to reclaim the privacy of several hundred thousand bitcoin, and the liquidity is ever increasing.
 You can use Wasabi to manage your hardware wallet, and it even connects to your own full node.
-Of course, Wasabi is libre and open-source, which means you have full control over the software you manage your money with.
+Wasabi is libre and open-source, which means you can verify and build the software you manage your money with.
 
-Recently, there was a new release of the software that introduced several awesome features.
 This was the culmination of different streams of development efforts over the past year.
 The feedback from the community of users has been overwhelming, and with this release Wasabi has been [downloaded and installed](https://docs.wasabiwallet.io/using-wasabi/InstallPackage.html) well [over 100 000 times](https://somsubhra.com/github-release-stats/?username=zksnacks&repository=WalletWasabi) already.
 
@@ -22,9 +21,9 @@ This already starts when [loading a wallet and synchronising it](https://docs.wa
 Wasabi is the first wallet to implement BIP 158 block filters, which is a new technique for light clients to privately find out how much bitcoin they have.
 The important thing is that Wasabi does not send your extended public key or addresses to any third party server.
 This sensitive financial data never leaves your computer.
-Instead, the back-end server gives your wallet these block filters, and you check locally if a block is relevant to you.
+Instead, the back-end server gives your wallet a constant set of filters, and your wallet checks locally if a block contains a transaction relevant to you.
 If yes, then the wallet client downloads this block from a Bitcoin P2P node, just like any other full node.
-This all happens over the Tor network, and with new Tor identities every time, of course.
+This all happens over the Tor network, and with new Tor identities every time.
 
 ## Know who knows about your coins
 
@@ -42,7 +41,7 @@ This makes coin control and conscious coin selection very intuitive and helps en
 
 ## CoinJoin to reclaim your privacy
 
-If you don't like that your employer knows about where you spend your money, or that a merchant can find out how much money you have, then you should [CoinJoin your bitcoin](https://docs.wasabiwallet.io/using-wasabi/CoinJoin.html), as this breaks the transaction history.
+If you don't like that your employer knows about where you spend your money, or that a merchant can find out how much money you have, then you should [CoinJoin your bitcoin](https://docs.wasabiwallet.io/using-wasabi/CoinJoin.html), as this breaks the link between inputs and outputs of a transaction.
 It is good to know that Wasabi's CoinJoin are non-custodial [meaning nobody can steal from you] and trust-less [meaning nobody, even the central coordinator, can spy on you].
 Although the CoinJoin protocol is a bit complex, it is very easy to use in Wasabi, and this feature makes Wasabi extra powerful.
 Because every coin is clearly labeled, you know which one are not yet private, for example when You have bought them at a KYC exchange.
@@ -68,7 +67,7 @@ Wasabi will securely sign the transaction, and then broadcast it over the Tor ne
 ## But wait, there's more
 
 All the above mentioned would make Wasabi already a top-notch Bitcoin wallet, but there are several more important features that make it even better.
-For a long time, you can connect [your own Bitcoin full node](https://docs.wasabiwallet.io/using-wasabi/BitcoinFullNode.html) to Wasabi, and now Wasabi itself has the bitcoind binaries included in the software.
+For a long time, you can connect [your own Bitcoin full node](https://docs.wasabiwallet.io/using-wasabi/BitcoinFullNode.html) to Wasabi, and now Wasabi itself has the Bitcoin Knots bitcoind binaries included in the software.
 This means that any user can now run a Bitcoin full node with only one single click in the Wasabi GUI.
 As of now, Wasabi does not yet use the full node for consensus verification, but the developers are working hard on making this a reality.
 Further, running your own node is not even a privacy improvement, even as a light client Wasabi is already as good as, maybe even better than, running a full node.
