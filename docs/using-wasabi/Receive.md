@@ -96,7 +96,7 @@ Following the previous example, if I have to send a fraction (`0.1 BTC`) of the 
 In that way, the change (`0.4 BTC`) will be known by Andrew and Charlie because they both will be able to follow the change.
 That's exactly what Wasabi displays in the coins list (cluster column), Wasabi tells us who are the ones that know about each of our coins in order to allow us to decide what to do with the coins.
 
-Let's take another example:
+Let's take a look at another example:
 Imagine you have three coins, one known by Alice, one known by a KYC exchange and finally one known by Charlie.
 Imagine you need to sell a few sats to Charlie, which coin/s should you send?
 The obvious selection is the one already known by Charlie because by doing that he cannot learn anything new about our wallet, moreover, neither Alice nor the KYC exchange can learn anything new!
