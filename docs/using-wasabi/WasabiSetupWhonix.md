@@ -15,7 +15,7 @@
 
 Whonix is a free and open-source desktop operating system (OS) that is specifically designed for advanced security and privacy.
 Based on Tor, Debian GNU/Linux and the principle of security by isolation, Whonix realistically addresses common attack vectors while maintaining usability.
-Online anonymity and censorship circumvention is attainable via fail-safe, automatic and desktop-wide use of the Tor network, meaning all connections are forced through Tor or blocked.
+Online anonymity and censorship circumvention are attainable via fail-safe, automatic and desktop-wide use of the Tor network, meaning all connections are forced through Tor or blocked.
 
 The Whonix OS consists of two virtual machines (VMs): the Whonix Gateway and the Whonix Workstation.
 The former runs Tor processes and acts as a proxy, while the latter runs user applications on a completely isolated network.
@@ -53,7 +53,7 @@ To avoid the risk of the wallet VM being compromised by malicious software or we
 For an advanced layer of security, it is possible to install and run the Wasabi Wallet VM using a removable storage medium e.g., USB drive or SD card.
 This allows the wallet to be stored in a safe place away from the computer.
 
-As this is beyond the scope of this tutorial, consult the Qubes, VirtualBox or Whonix user guide for details. The [Whonix documentation](https://www.whonix.org/wiki/Documentation) in particular offers multiple pages on security, hardening and privacy techniques.
+As this is beyond the scope of this tutorial, consult the Qubes, VirtualBox or Whonix user guide for details. The [Whonix documentation](https://www.whonix.org/wiki/Documentation), in particular, offers multiple pages on security, hardening and privacy techniques.
 
 ### Qubes Users
 
@@ -61,7 +61,7 @@ Start Qubes and update all templates using the "Qubes Update Tool", which can be
 
 In Qubes, the first step is to create a copy of the Whonix Workstation VM template, into which the Wasabi Wallet will be installed.
 
-Qubes refers to this type of VM as a "AppVM".
+Qubes refers to this type of VM as an "AppVM".
 
 To create a Whonix Workstation AppVM:
 
@@ -77,7 +77,7 @@ All of the vital system files remain on the template in read-only mode and there
 
 The newly created VM will be used to install and run the Wasabi Wallet files, and it will interact with the system files on the template VM to run seamlessly.
 
-When the new AppVM is started, Qubes will automatically use a Whonix Gateway VM to connect to the Tor network, and will feed that connection to the AppVM through the "sys-whonix" connection that was chosen for the VM network.
+When the new AppVM is started, Qubes will automatically use a Whonix Gateway VM to connect to the Tor network and will feed that connection to the AppVM through the "sys-whonix" connection that was chosen for the VM network.
 
 Now is the time to change the user password, as described earlier in the yellow "Caution" section.
 
