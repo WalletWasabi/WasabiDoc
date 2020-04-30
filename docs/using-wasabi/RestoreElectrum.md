@@ -8,9 +8,9 @@
 # Restoring Wasabi Wallet in Electrum
 
 :::danger Potential privacy leak!
-If you do not run your own Electrum server, you will leak all your addresses to random third party servers, losing anonymity against those entities, so you must make a judgement call by being aware of this.
+If you do not run your own Electrum server, you will leak all your addresses to random third-party servers, losing anonymity against those entities, so you must make a judgement call by being aware of this.
 
-To gain some privacy by using Electrum you should setup Tor on Network preferences or by installing your own Electrum server via [Electrum Personal Server](https://github.com/chris-belcher/electrum-personal-server), [ElectrumX](https://github.com/kyuupichan/electrumx) or [Electrs](https://github.com/romanz/electrs).
+To gain some privacy by using Electrum you should set up Tor on Network preferences or by installing your own Electrum server via [Electrum Personal Server](https://github.com/chris-belcher/electrum-personal-server), [ElectrumX](https://github.com/kyuupichan/electrumx) or [Electrs](https://github.com/romanz/electrs).
 :::
 
 [[toc]]
