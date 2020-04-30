@@ -22,7 +22,7 @@ It is often only necessary to associate just one of these addresses to your real
 
 As soon as a Bitcoin address is entered into the blockchain, it is publicly recorded in an immutable distributed ledger.
 Before that happens, it's likely that only two parties (the recipient and the sender) had knowledge of this address.
-If you are making a search for an address that is not in the blockchain, either you are the owner of this address, or someone is requesting a payment from you.
+If you are making a search for an address that is not in the blockchain, either you are the owner of this address, or someone is requesting payment from you.
 To avoid being tracked in this way, it is important to make all payment requests and other mentions of addresses via encrypted channels:
 - Make sure the website you are visiting has HTTPS enabled when you search for Bitcoin addresses.
 - Use VPNs and Tor when possible.
