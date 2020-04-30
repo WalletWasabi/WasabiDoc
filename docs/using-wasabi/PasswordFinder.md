@@ -16,7 +16,7 @@ This tool tries to find the password that decrypts the encrypted secret key stor
 
 ## Limitations
 
-Wasabi Wallet protects the encrypted secret key with the same technology used to protect paper wallets ([BIP 38](/using-wasabi/BIPs.md#bip-38-password-protected-private-key)) and for that reason it is computationally infeasible to brute force the password using all the possible combinations. (assuming a secure password was chosen)
+Wasabi Wallet protects the encrypted secret key with the same technology used to protect paper wallets ([BIP 38](/using-wasabi/BIPs.md#bip-38-password-protected-private-key)) and for that reason, it is computationally infeasible to brute force the password using all the possible combinations. (assuming a secure password was chosen)
 It is important to know that Wasabi Password Finder is not for breaking wallet passwords but for finding errors (typos) in an already known password.
 
 ## Usage
@@ -65,7 +65,7 @@ Note that you can also specify an encrypted secret instead of the wallet file.
 This is useful if you lost your password for a Bitcoin wallet, other than Wasabi.
 
 Note that for a 4 characters length password it took more than one minute to find.
-Moreover, the process is heavy in CPU and for that reason it can be a good idea to use the best combination of parameters to reduce the search space.
+Moreover, the process is heavy in CPU and for that reason, it can be a good idea to use the best combination of parameters to reduce the search space.
 
 * __language__ (default: en) specify the charset (characters to search in) to reduce the search space.
 For example, while the *Italian* charset is "abcdefghimnopqrstuvxyzABCDEFGHILMNOPQRSTUVXYZ", the *French* charset is "aâàbcçdæeéèëœfghiîïjkmnoôpqrstuùüvwxyÿzAÂÀBCÇDÆEÉÈËŒFGHIÎÏJKMNOÔPQRSTUÙÜVWXYŸZ". 
