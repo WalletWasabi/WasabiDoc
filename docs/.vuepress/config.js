@@ -185,11 +185,13 @@ module.exports = {
           ]
         },
         {
-          title: "Privacy Best Practices",
+          title: "Best Practices",
           collapsable: false,
           sidebarDepth: 2,
           children: [
             "/using-wasabi/ChangeCoins.md",
+            "/using-wasabi/PasswordBestPractices.md",
+            "/using-wasabi/BackupBestPractices.md",
             "/using-wasabi/Deanonimization.md"
           ]
         },
@@ -224,8 +226,6 @@ module.exports = {
             "/using-wasabi/LurkingWifeMode.md",
             "/using-wasabi/Testnet.md",
             "/using-wasabi/LockScreen.md",
-            "/using-wasabi/PasswordBestPractices.md",
-            "/using-wasabi/BackupBestPractices.md", 
             "/using-wasabi/BIPs.md",
             "/using-wasabi/IndustryStandards.md"
           ]
