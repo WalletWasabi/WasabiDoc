@@ -7,7 +7,7 @@
 
 # Wasabi Setup on Tails
 
-This essay is extracted from this step-by-step [guide](https://github.com/PulpCattel/Tails-BitcoinCore-Wasabi), which also includes tutorials on how to install Tails, create a persistent storage and use Bitcoin Core alongside with it.
+This essay is extracted from this step-by-step [guide](https://github.com/PulpCattel/Tails-BitcoinCore-Wasabi), which also includes tutorials on how to install Tails, create persistent storage and use Bitcoin Core alongside with it.
 
 :::tip
 Starting with v1.1.11 release, Wasabi comes pre-installed with bitcoind from [Bitcoin Knots](https://bitcoinknots.org/) and it can be started on the same desktop or laptop computer with just one click.
@@ -94,7 +94,7 @@ Wasabi will show as a normal application in your activities overview menu, ready
 
 ## Load from your data directory
 
-After the first time you save a Wasabi session, your persistent storage will look like:
+After the first time, you save a Wasabi session, your persistent storage will look like:
 
 ```sh
 /Persistent
@@ -187,11 +187,11 @@ wassabee </dev/null &>/dev/null &
 
 ## Hardware Wallet tutorial (udev rules)
 
-On Linux you need to create a set of `udev` rules to allow hardware wallet access.
+On Linux, you need to create a set of `udev` rules to allow hardware wallet access.
 
 Since Wasabi keeps the configuration files on `$HOME` it's necessary to change persistence in order to keep them.
 
-So configure persistence, download Wasabi and unpack it inside `Persistent` folder then reboot tails with `root` support and launch the following commands from the Terminal:
+So, configure persistence, download Wasabi and unpack it inside `Persistent` folder then reboot tails with `root` support and launch the following commands from the Terminal:
 
 ```
 sudo -i
