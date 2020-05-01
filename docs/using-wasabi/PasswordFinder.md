@@ -25,7 +25,7 @@ It is important to know that Wasabi Password Finder is not for breaking wallet p
 
 To use Wasabi's command line tools on Windows you have to use `wassabeed.exe` that is inside your `Program Files\WasabiWallet`.
 
-### Linus and macOS
+### Linux and macOS
 
 Use the `wassabee` command.
 
@@ -49,7 +49,7 @@ For example, there is a wallet called `MagicalCryptoWallet.json`, the correct pa
 
 ```
 $ wassabee findpassword --wallet:MagicalCryptoWallet
-WARNING: This tool will display you password if it finds it. Also, the process status displays your wrong password chars.
+WARNING: This tool will display your password if it finds it. Also, the process status displays your wrong password chars.
          You can cancel this by CTRL+C combination anytime.
 
 Enter password: pasd
