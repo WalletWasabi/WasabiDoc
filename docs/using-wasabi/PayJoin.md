@@ -32,9 +32,10 @@ Further, it reduces the transaction fees paid by the merchant due to consolidati
 ## Coordination
 
 The coordination of this CoinJoin is done with the PayToEndPoint [P2EP] concept.
-The receiver opens a Tor hidden service, and accepts incoming connections to it.
+The receiver is reachable over the internet, either over a Tor hidden service or clearnet IP address, and accepts incoming connections to it.
 The link is included in a BIP21 Bitcoin URI, and is provided to the sender as the payment invoice.
-The sender uses this hidden service to connect to the server of the receiver and communicate the further protocol.
+The sender uses this hidden service or IP address to connect to the server of the receiver and communicate the further protocol.
+The coordination is usually done within seconds, and will abort to the fallback transaction after for example two minutes if the connection breaks.
 
 ## Fallback transaction
 
@@ -66,12 +67,12 @@ The sender broadcasts this transaction to the Bitcoin network.
 
 First and foremost, the common input ownership heuristic is broken, meaning that the inputs do not belong to one single entity, but to several of them.
 This breaks one of the most important assumptions of transaction surveillance companies.
-Contrarily to other CoinJoin implementations, the outputs are not of equal value, so it is not obvious that this transaction is in fact a CoinJoin.
+Contrarily to other CoinJoin implementations, the outputs are not of equal value, so it is not obvious that this transaction is in fact a CoinJoin, and that the assumption is wrong.
 
 Further, the outputs do not reflect the actual value of the transaction.
 In our example, the economic transfer is of `0.2 bitcoin` from Alice to Bob, but the outputs are worth `0.7 bitcoin` and `0.8 bitcoin`.
 This is obfuscating the actual amount payed.
 
-Finally, the receiver is consolidating his coins, which is a way for him to save on future transaction fees.
+Finally, the receiver is consolidating his coins, thus saving on future transaction fees.
 Without the PayJoin, the receiver would have two coins, worth `0.2 bitcoin` and `0.5 bitcoin`, and he would have to pay twice the transaction fee to spend these coins.
 But because of using PayJoin, he only has one coin, worth `0.7 bitcoin`, thus reducing his future transaction costs when spending this coin.
