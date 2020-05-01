@@ -22,7 +22,7 @@ You put Alice's address in the `Receiving Address` field, and set the spending `
 This will be one output of the transaction.
 
 Since your chosen UTXO is worth 2 bitcoins, after sending 0.5 bitcoin to Alice there will be 1.5 bitcoins change from the original amount.
-This left over amount will automatically go to a new address in your wallet, and this is called the change output.
+This leftover amount will automatically go to a new address in your wallet, and this is called the change output.
 
 This leftover 1.5 bitcoins change UTXO is connected to the input UTXO of the transaction, and thus also has an `anonymity set` of 1.
 As a result, when you send this leftover/change coin in a new transaction, it is clear to any observer that you were part of the transaction that sent 0.5 bitcoin to someone.
@@ -38,7 +38,7 @@ You can activate this in the settings.
 
 Let's say that you have a KYC <img src="/ShieldRed.png" alt="red-shield" class="shield" /> `anonymity set 1` UTXO, and you register it for a CoinJoin round.
 Afterwards, depending on the value of your UTXO in relation to the minimum CoinJoin amount and on the value of UTXOs of the other participants, you will receive two or more UTXOs.
-One of those will be the change left over from the round, and it will retain the <img src="/ShieldRed.png" alt="red-shield" class="shield" /> `anonymity set 1` designation.
+One of those will be the change leftover from the round, and it will retain the <img src="/ShieldRed.png" alt="red-shield" class="shield" /> `anonymity set 1` designation.
 The remaining UTXO(s) will have either a <img src="/ShieldYellow.png" alt="yellow" class="shield" />, <img src="/ShieldGreen.png" alt="green" class="shield" /> or <img src="/ShieldCheckmark.png" alt="checkmark" class="shield" /> shield.
 You can see the `anonymity set` size for any UTXO by hovering your mouse-pointer over its associated shield.
 
@@ -106,11 +106,11 @@ If in the first transaction you have 0.10 bitcoin and send Alice 0.04 bitcoin, y
 Now, in a second transaction where you want to send Alice 0.05 bitcoin, you can select that 0.06 bitcoin change coin without losing any privacy, because Alice already knows this is your coin.
 
 In this second transaction you will get back 0.01 bitcoin as change, which again, will still be known to Alice.
-If, in a third transaction you want to send Alice 0.02 bitcoin, then you can consolidate the 0.01 bitcoin change with a new 0.10 bitcoin mixed coin, thus getting 0.09 bitcoin change.
+If in a third transaction you want to send Alice 0.02 bitcoin, then you can consolidate the 0.01 bitcoin change with a new 0.10 bitcoin mixed coin, thus getting 0.09 bitcoin change.
 
 Now Alice will know that you owned the 0.10 bitcoin and that you currently own the 0.09 bitcoin change, but she cannot find out about your premix transaction history.
 
-### Spend the change with another entity, where you don't mind if each of the two know that you transact with the other entity.
+### Spend the change with another entity, where you don't mind if each of the two knows that you transact with the other entity.
 
 When you send a transaction to Alice, then she knows that the change output goes back to you.
 You can use this change to send bitcoin to Bob, and if he has bad privacy habits, Alice can find out you sent to him.
@@ -137,21 +137,21 @@ Since Wasabi does not yet support Lightning Network functionality, you must use 
 
 ### Atomic swap into Lightning Network
 
-There are some services that provide an atomic swap where you send the whole change coin to a multisignature hashed time locked contract on-chain.
+There are some services that provide an atomic swap where you send the whole change coin to a multisignature hashed time-locked contract on-chain.
 In exchange, you receive a payment routed through the Lightning Network into one of your payment channels.
 
 The swap is atomic, meaning either you receive the lightning payment, or you get the bitcoin back on-chain, so the service provider cannot steal from you.
 If you use a regular Lightning invoice to receive the funds, then the service provider knows your node's public key and the channel he sends the bitcoin to.
 
 For much better privacy, use rendezvous routing so that the sender does not gain knowledge of your receiving node.
-Also ensure that the communication with the swap server is done over the Tor network.
+Also, ensure that the communication with the swap server is done over the Tor network.
 
 ### Consolidate several change coins, but in a CoinJoin directly.
 
 If you consolidate many change coins in a regular non-CoinJoin transaction in the `Send` tab, then any outside observer can easily see that one user controls all these coins.
 But when consolidating in a CoinJoin directly, because there are hundreds of randomly ordered inputs in a Wasabi CoinJoin transaction, it is no longer easy to find out which coins belong to one single user.
 
-However, a well resourced attacker can perform [subset sum analysis](/FAQ/FAQ-GeneralBitcoinPrivacy.md#what-is-a-coinjoin-sudoku) to find out which of the many inputs fund the change output.
+However, a well-resourced attacker can perform [subset sum analysis](/FAQ/FAQ-GeneralBitcoinPrivacy.md#what-is-a-coinjoin-sudoku) to find out which of the many inputs fund the change output.
 Further, during the [input registration phase](/using-wasabi/CoinJoin.md#input-registration), the same Tor identity Alice provides input proofs for **all** the registered coins to the coordinator.
 Thus the coordinator knows that you control all these coins, and although zkSNACKs claims to not keep any logs, it is a reasonable assumption that everyone knows what the coordinator knows.
 
