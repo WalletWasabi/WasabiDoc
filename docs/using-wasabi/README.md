@@ -32,7 +32,9 @@ Further tutorials about the different parts of the wallet, for newbies and power
 - [Cold-Wasabi Hardware Wallet Mode](/using-wasabi/ColdWasabi.md)
 - [Bitcoin Full Node](/using-wasabi/BitcoinFullNode.md)
 
-### Privacy Best Practices
+### Best Practices
+- [Passwords](/using-wasabi/PasswordBestPractices.md)
+- [Backups](/using-wasabi/BackupBestPractices.md)
 - [Change Coins](/using-wasabi/ChangeCoins.md)
 - [How you can be de-anonymized using Bitcoin](/using-wasabi/Deanonimization.md)
 
@@ -53,8 +55,5 @@ Further tutorials about the different parts of the wallet, for newbies and power
 - [Lurking Wife Mode](/using-wasabi/LurkingWifeMode.md)
 - [Testnet](/using-wasabi/Testnet.md)
 - [Lock Screen](/using-wasabi/LockScreen.md)
-- [Password Best Practices](/using-wasabi/PasswordBestPractices.md)
-- [Backup Best Practices](/using-wasabi/BackupBestPractices.md)
 - [Supported BIPs](/using-wasabi/BIPs.md)
 - [Supported Industry Standards](/using-wasabi/IndustryStandards.md)
-
