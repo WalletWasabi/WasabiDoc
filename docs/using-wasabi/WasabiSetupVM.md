@@ -23,14 +23,14 @@ If you are a developer, using virtual machines gives you several powerful featur
 You can easily:
 
 - Create snapshots of a VM's state at any time.
-These snaphots can be restored later if a problem or undesired condition arises in the current state of the VM.
+These snapshots can be restored later if a problem or undesired condition arises in the current state of the VM.
 
 - Set up a template VM with a desired development environment or configuration, and then quickly create lightweight, disposable clones of the template for specific tests.
 
 - Develop and/or test applications in Windows, Linux, and macOS at the same time, on the same computer.
 You can link them together in a customizable internal network if desired.
 
-For developers, the use of virtual machines offers some of the basic version control features of git, but applied to operating systems rather than files or projects.
+For developers, the use of virtual machines offers some of the basic version control features of git but applied to operating systems rather than files or projects.
 
 [[toc]]
 
@@ -187,7 +187,7 @@ Make sure that you have run any needed updates for your VM.
 
 Next, the dependencies to [compile Wasabi from source](/using-wasabi/BuildSource.md) will be downloaded and installed in a new template VM, which can be based on your preferred OS.
 
-With VirtualBox, you can create separate templates based on Windows, or any Linux distribution.
+With VirtualBox, you can create separate templates based on Windows or any Linux distribution.
 Finally, you can add any other tools that you prefer, such as Visual Studio / Visual Studio Code, Atom, etc..
 
 ### Install Required Dependencies
