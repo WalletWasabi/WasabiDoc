@@ -74,4 +74,4 @@ This is obfuscating the actual amount payed.
 
 Finally, the receiver is consolidating his coins, which is a way for him to save on future transaction fees.
 Without the PayJoin, the receiver would have two coins, worth `0.2 bitcoin` and `0.5 bitcoin`, and he would have to pay twice the transaction fee to spend these coins.
-But because of using PayJoin, he only has one coin, worth `0.8 bitcoin`, thus reducing his future transaction costs when spending this coin.
+But because of using PayJoin, he only has one coin, worth `0.7 bitcoin`, thus reducing his future transaction costs when spending this coin.
