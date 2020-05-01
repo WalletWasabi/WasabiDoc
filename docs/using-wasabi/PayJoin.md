@@ -25,7 +25,7 @@
 
 ## The goal of PayJoin
 
-PayJoin is a collaborative transaction amongst the sender and the receiver of a payment, for example the merchant and the customer.
+[PayJoin](https://docs.btcpayserver.org/features/payjoin/payjoin-spec) is a collaborative transaction among the sender and the receiver of a payment, for example the merchant and the customer.
 The goal of the protocol is to break the common input ownership heuristic, while making it difficult to fingerprint that the transaction is in fact a CoinJoin.
 Further, it reduces the transaction fees paid by the merchant due to consolidation of coins.
 
@@ -33,7 +33,7 @@ Further, it reduces the transaction fees paid by the merchant due to consolidati
 
 The coordination of this CoinJoin is done with the PayToEndPoint [P2EP] concept.
 The receiver opens a Tor hidden service, and accepts incoming connections to it.
-The .onion link is included in a BIP21 Bitcoin URI, and is provided to the sender as the payment invoice.
+The link is included in a BIP21 Bitcoin URI, and is provided to the sender as the payment invoice.
 The sender uses this hidden service to connect to the server of the receiver and communicate the further protocol.
 
 ## Fallback transaction
