@@ -119,7 +119,7 @@ But if you have a trusted relationship with the two, then this is alright, and n
 ### Mix with JoinMarket.
 
 In [JoinMarket](/building-wasabi/JoinMarket.md) as a `market taker` you can specify exactly what denomination of equal value outputs are generated in the CoinJoin.
-So you can send the Wasabi change to your JoinMarket wallet and make an offer to CoinJoin for several rounds.
+So you can send the Wasabi change to your JoinMarket wallet and take an offer to CoinJoin for several rounds.
 
 The coins you will receive after the JoinMarket tumbling algorithm will have a sufficient anonymity set, and you can use them for spending again.
 
