@@ -25,9 +25,11 @@
 
 ## The goal of PayJoin
 
-[PayJoin](https://docs.btcpayserver.org/features/payjoin/payjoin-spec) is a collaborative transaction between the sender and the receiver of a payment, for example the merchant and the customer.
+PayJoin is a collaborative transaction between the sender and the receiver of a payment, for example the merchant and the customer.
 The goal of the protocol is to break the common input ownership heuristic, while making it difficult to fingerprint that the transaction is in fact a CoinJoin.
 Further, it reduces the transaction fees paid by the merchant due to consolidation of coins.
+
+Wasabi diverges from [the initial BIP 79 Bustapay proposal](https://github.com/bitcoin/bips/blob/master/bip-0079.mediawiki), the details of the implemented specification are [documented here](https://docs.btcpayserver.org/features/payjoin/payjoin-spec).
 
 ## Coordination
 
