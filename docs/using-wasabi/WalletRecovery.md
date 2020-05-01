@@ -21,7 +21,7 @@ The specified wallet name is for future recognition of the wallet.
 The recovery words are spell checked based on the [official wordlist](https://github.com/bitcoin/bips/blob/master/bip-0039/english.txt), with the right word shown below the textbox.
 Now you can click on `Recover`, and Wasabi will recover your wallet, and [load the wallet](/using-wasabi/WalletLoad.md).
 After a short loading period, you can use Wasabi as usual.
-With this level only the private keys are imported, but not the labels of your addresses.
+With this level, only the private keys are imported, but not the labels of your addresses.
 
 ![](/WalletRecovery.png)
 
@@ -31,12 +31,12 @@ If you type a wrong password a completely different wallet will be recovered.
 :::
 
 You can also toggle the advanced option and specify an account key path of the HD wallet structure.
-The gap limit is about how far Wasabi will check the HD wallet structure for consecutive addresses that have no coins, in some cases you may want to increase this limit.
+The gap limit is about how far Wasabi will check the HD wallet structure for consecutive addresses that have no coins, in some cases, you may want to increase this limit.
 
 ![](/WalletRecoveryAdvanced.png)
 
 :::tip
-With this method you can recover a wallet which was generated with any BIP39 compatible software, not just a Wasabi generated wallet.
+With this method, you can recover a wallet that was generated with any BIP39 compatible software, not just a Wasabi generated wallet.
 :::
 
 ## Back up Wallet File and Password
