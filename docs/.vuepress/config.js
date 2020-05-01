@@ -189,9 +189,9 @@ module.exports = {
           collapsable: false,
           sidebarDepth: 2,
           children: [
-            "/using-wasabi/ChangeCoins.md",
             "/using-wasabi/PasswordBestPractices.md",
             "/using-wasabi/BackupBestPractices.md",
+            "/using-wasabi/ChangeCoins.md",
             "/using-wasabi/Deanonimization.md"
           ]
         },
