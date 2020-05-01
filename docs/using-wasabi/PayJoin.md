@@ -25,7 +25,7 @@
 
 ## The goal of PayJoin
 
-[PayJoin](https://docs.btcpayserver.org/features/payjoin/payjoin-spec) is a collaborative transaction among the sender and the receiver of a payment, for example the merchant and the customer.
+[PayJoin](https://docs.btcpayserver.org/features/payjoin/payjoin-spec) is a collaborative transaction between the sender and the receiver of a payment, for example the merchant and the customer.
 The goal of the protocol is to break the common input ownership heuristic, while making it difficult to fingerprint that the transaction is in fact a CoinJoin.
 Further, it reduces the transaction fees paid by the merchant due to consolidation of coins.
 
@@ -48,6 +48,8 @@ Alice input   1 bitcoin   -->   Bob output            0.2 bitcoin
                                 Alice change output   0.8 bitcoin
 ```
 
+Both the sender and the receiver _could_ broadcast this transaction.
+
 ## PayJoin transaction
 
 The receiving server responds to this initial proposal, with a transaction that adds more inputs to the transaction.
@@ -64,11 +66,11 @@ The sender broadcasts this transaction to the Bitcoin network.
 
 First and foremost, the common input ownership heuristic is broken, meaning that the inputs do not belong to one single entity, but to several of them.
 This breaks one of the most important assumptions of transaction surveillance companies.
-Contrarily to other CoinJoin implementations, the outputs are not of equal value, so it is not obvious that this transaction is in fact a PayJoin.
+Contrarily to other CoinJoin implementations, the outputs are not of equal value, so it is not obvious that this transaction is in fact a CoinJoin.
 
 Further, the outputs do not reflect the actual value of the transaction.
 In our example, the economic transfer is of `0.2 bitcoin` from Alice to Bob, but the outputs are worth `0.7 bitcoin` and `0.8 bitcoin`.
-This is obfuscating the actual amount transacted. 
+This is obfuscating the actual amount payed.
 
 Finally, the receiver is consolidating his coins, which is a way for him to save on future transaction fees.
 Without the PayJoin, the receiver would have two coins, worth `0.2 bitcoin` and `0.5 bitcoin`, and he would have to pay twice the transaction fee to spend these coins.
