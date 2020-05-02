@@ -66,7 +66,7 @@ Thus it is relatively tricky to give a precise roadmap with what will be impleme
 ### How should I start contributing to Wasabi?
 
 Thank you for considering to support this beautiful libre and open source project!
-Nobody owns this software, and thus it is the responsibility of everyone using it to contribute to its growth.
+It is the responsibility of everyone using the software to contribute to its growth.
 Your help is deeply appreciated, and very much needed!
 First please read the [contribution checklist](/building-wasabi/ContributionChecklist.md) to get introduced to the project and to start out in the right direction.
 Join our [Slack](https://join.slack.com/t/tumblebit/shared_invite/enQtNjQ1MTQ2NzQ1ODI0LWIzOTg5YTM3YmNkOTg1NjZmZTQ3NmM1OTAzYmQyYzk1M2M0MTdlZDk2OTQwNzFiNTg1ZmExNzM0NjgzY2M0Yzg), [Reddit](https://www.reddit.com/r/WasabiWallet/), [Telegram](https://t.me/WasabiWallet), [Riot](https://riot.im/app/#/room/#wasabiwallet:matrix.org), and check out the [GitHub](https://github.com/zkSnacks/WalletWasabi), so that you can stay up-to-date with the latest contributions.
