@@ -261,7 +261,6 @@ module.exports = {
           sidebarDepth: 2,
           children: [
             "/building-wasabi/Joinmarket.md",
-            "/building-wasabi/PayToEndPoint.md",
             "/building-wasabi/WasabiResearchClub.md"
           ]
         }
