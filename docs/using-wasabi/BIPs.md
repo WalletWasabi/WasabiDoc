@@ -90,12 +90,12 @@ On the TestNet and on the RegTest Wasabi deviates from the standard and uses `m/
 :::details
 ### BIP 158: Compact Block Filters for Light Clients
 
-[BIP 158 Block filters](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki) are the reverse of [BIP 37 Bloom filters](BIPs.md#bip-37-connection-bloom-filters) - the client will connect to a Bitcoin node and say "Hey, for every block, I would like a condensed list of addresses that were affected."
-What would happen next is that a Bitcoin node would give the same filter that it gives to every client, because the client has thus far revealed nothing!
-Once a block filter has come in and the client believes that there is a transaction that affects the client, the client pings a single random node for a single full block.
+[BIP 158 Block filters](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki) are the reverse of [BIP 37 Bloom filters](BIPs.md#bip-37-connection-bloom-filters).
+The client connects to a Bitcoin node and say "Hey, for every block, I would like a condensed list of the affected addresses."
+The Bitcoin node would then give the same filter that it gives to every client, because the client has thus far revealed nothing!
+Once a block filter has come in and the client believes that there is a transaction that affects the client, it pings a single random node for a single full block.
 It then parses the block, and finds the transaction.
 This has been proven to be by far the best way to do light clients privately, and is the way Wasabi works today.
-
 :::
 
 :::details
@@ -124,7 +124,6 @@ This has been proven to be by far the best way to do light clients privately, an
 [BIP 37 Bloom filters](https://github.com/bitcoin/bips/blob/master/bip-0037.mediawiki) are filters that a client will send to a Bitcoin full node which says "Hey, if you see any transactions that get caught in these filters, they may or may not be mine!".
 What would happen next is that a Bitcoin node would start sending tons and tons of transactions to the client, and the client would proceed to distinguish the 99% irrelevant transactions against the 1% relevant ones.
 This was quite brilliant of an idea at the time, but has since been proven to not protect user privacy, at the expense of wasting a ton of bandwidth and subjecting users to other risks.
-
 :::
 
 :::details
@@ -132,4 +131,3 @@ This was quite brilliant of an idea at the time, but has since been proven to no
 
 [BIP 69: Lexicographical Indexing of Transaction Inputs and Outputs](https://github.com/bitcoin/bips/blob/master/bip-0069.mediawiki)
 :::
-
