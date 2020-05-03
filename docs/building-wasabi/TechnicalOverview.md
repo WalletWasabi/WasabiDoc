@@ -106,7 +106,7 @@ In practice, it was hard to compete with Bitcoin Core's micro-optimizations, and
 
 Now, Wasabi Wallet users have the option of using the built-in Bitcoin Knots full node, connecting to a different full node, or running the wallet in "light" mode.
 
-[Read more about network-level Bitcoin wallet privacy here.](/why-wasabi/NetworkLevelPrivacy.md)
+Read more about network-level Bitcoin wallet privacy [here](/why-wasabi/NetworkLevelPrivacy.md).
 
 ![](/StatusBarBackendConnected.png)
 
@@ -213,7 +213,7 @@ In our calculations, if Wasabi would acquire the volume of the most popular Bitc
 This section consists of many small issues, waiting to be solved one-by-one.
 Since solving these issues is often more effective than discussing them, they won't be discussed in this document.
 
-The Wasabi developers are responsive, and encourage you to report problems or ideas for improvement [here](https://github.com/zkSNACKs/WasabiDoc/issues).
+The Wasabi developers are responsive, and encourage you to report problems or ideas for improvement [here](https://github.com/zkSNACKs/WalletWasabi/issues).
 
 ## III. Education
 
@@ -299,10 +299,10 @@ Some additional thoughts and details on this section can be found [here](https:/
 
 - JoinMarket: [https://github.com/zkSNACKs/Meta/issues/5](https://github.com/zkSNACKs/Meta/issues/5)
 - Friend CoinJoin Network: [https://github.com/zkSNACKs/Meta/issues/17](https://github.com/zkSNACKs/Meta/issues/17)
-- Merge Avoidance with [BIP 47](/using-wasabi/BIPs.md#bip-47-reusable-payment-codes-for-hierarchical-deterministic-wallets) Payment Codes: [https://github.com/zkSNACKs/Meta/issues/10](https://github.com/zkSNACKs/Meta/issues/10)
-- Clusterfuck Wallet Strategies: [https://github.com/zkSNACKs/Meta/issues/11](https://github.com/zkSNACKs/Meta/issues/11), [https://github.com/zkSNACKs/Meta/issues/18](https://github.com/zkSNACKs/Meta/issues/1), [https://github.com/nopara73/ZeroLink/issues/42](https://github.com/nopara73/ZeroLink/issues/42), [https://github.com/zkSNACKs/Meta/issues/18](https://github.com/zkSNACKs/Meta/issues/18)
-- Pay to EndPoint: [https://github.com/zkSNACKs/Meta/issues/18](https://github.com/zkSNACKs/Meta/issues/18), [https://github.com/zkSNACKs/Meta/issues/18](https://github.com/zkSNACKs/Meta/issues/18), [https://github.com/zkSNACKs/Meta/issues/23](https://github.com/zkSNACKs/Meta/issues/23)
-- GroupSend: [https://github.com/zkSNACKs/WalletWasabi/issues/760](https://github.com/zkSNACKs/WalletWasabi/issues/760)
+- Merge Avoidance with [BIP 47](https://github.com/bitcoin/bips/blob/master/bip-0047.mediawiki) Payment Codes: [https://github.com/zkSNACKs/Meta/issues/10](https://github.com/zkSNACKs/Meta/issues/10)
+- Clusterfuck Wallet Strategies: [https://github.com/zkSNACKs/Meta/issues/11](https://github.com/zkSNACKs/Meta/issues/11), [https://github.com/zkSNACKs/Meta/issues/18](https://github.com/zkSNACKs/Meta/issues/18), [https://github.com/nopara73/ZeroLink/issues/42](https://github.com/nopara73/ZeroLink/issues/42)
+- Pay to EndPoint: [https://github.com/zkSNACKs/Meta/issues/18](https://github.com/zkSNACKs/Meta/issues/18), [https://github.com/zkSNACKs/Meta/issues/23](https://github.com/zkSNACKs/Meta/issues/23)
+- GroupSend: [https://github.com/zkSNACKs/Meta/issues/29](https://github.com/zkSNACKs/Meta/issues/29)
 
 ### Coin Control and Privacy Feedback Improvements
 
@@ -311,7 +311,7 @@ Improving the user friendliness, the accuracy of coin awareness, and what happen
 - New Type of Bitcoin UI: [https://github.com/zkSNACKs/Meta/issues/8](https://github.com/zkSNACKs/Meta/issues/8)
 - Input Joining Avoidance Strategy by Killing Kittens: [https://github.com/nopara73/ZeroLink/issues/65](https://github.com/nopara73/ZeroLink/issues/65)
 - Improve History of a Coin: [https://github.com/zkSNACKs/WalletWasabi/issues/612](https://github.com/zkSNACKs/WalletWasabi/issues/612)
-- Accurate Anonymity Set Calculation: [https://github.com/zkSNACKs/WalletWasabi/issues/728](https://github.com/zkSNACKs/WalletWasabi/issues/728)
+- Accurate Anonymity Set Calculation: [https://github.com/zkSNACKs/Meta/issues/35](https://github.com/zkSNACKs/Meta/issues/35)
 - Interactive Privacy Suggestions when Spending - [https://github.com/zkSNACKs/WalletWasabi/issues/729](https://github.com/zkSNACKs/WalletWasabi/issues/729)
 
 ### Lightning Network Leverage
@@ -333,7 +333,6 @@ There may be other useful features to add, however.
 - Sweep Private Key: [https://github.com/zkSNACKs/WalletWasabi/issues/486](https://github.com/zkSNACKs/WalletWasabi/issues/486)
 - Paper Wallet Generation: [https://github.com/zkSNACKs/WalletWasabi/issues/727](https://github.com/zkSNACKs/WalletWasabi/issues/727)
 - Read QR Code (currently it only shows it): [https://github.com/zkSNACKs/WalletWasabi/issues/731](https://github.com/zkSNACKs/WalletWasabi/issues/731)
-- Bitcoin URL Support: [https://github.com/zkSNACKs/WalletWasabi/issues/732](https://github.com/zkSNACKs/WalletWasabi/issues/732)
 
 The more users use the wallet, the more privacy it can provide.
 
