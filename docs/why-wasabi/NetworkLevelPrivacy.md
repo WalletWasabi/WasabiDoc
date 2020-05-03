@@ -106,10 +106,10 @@ It is reasonable to assume that this entity can break the onion routing, not Tor
 
 #### Private UTXO retrieval
 
-The backend server serves a constant filter table to all the clients over Tor.
+The backend server serves block filters to all the clients over Tor.
 From those filters, the clients figure out which blocks they are interested in and download them [and some false-positive blocks] from peers.
 One block per peer, and always over a fresh Tor stream.
-When a block was acquired, the peer was disconnected.
+When a block is acquired, the peer gets disconnected.
 Because of the end-to-end encryption of the onion network, it immediately defeats an ISP adversary and makes the already impossible job of the Sybil adversary even more impossible.
 The only adversary that could possibly overcome this would have to setup thousands of full nodes over Tor and also break Tor itself.
 
