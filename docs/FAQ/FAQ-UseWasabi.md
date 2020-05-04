@@ -298,9 +298,9 @@ After a coin has been sent to this address, it is removed from the GUI, this is 
 :::details
 ### What is the gap limit?
 
-The gap limit is the maximum number of consecutive unused addresses in your wallet.
+The gap limit is the maximum number of consecutive unused addresses that your wallet will generate when recovering it.
 Wasabi automatically increases this value if needed when you generate new receiving addresses.
-When you import the wallet file into a new Wasabi client, then it will use this `MinGapLimit` to find all your coins in the wallet.
+When you import the wallet file into a new Wasabi client, then it will use this `MinGapLimit` to find your coins in the wallet.
 :::
 
 :::details
