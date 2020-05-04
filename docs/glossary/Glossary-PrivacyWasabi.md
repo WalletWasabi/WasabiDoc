@@ -155,8 +155,8 @@ Read more: [The importance of labeling](/using-wasabi/Receive.md#the-importance-
 :::details
 ### Pay to EndPoint (P2EP)
 
-Pay to EndPoint is sending of bitcoins where the receiver adds one of his own coins as input for a two party CoinJoin.
-Read more: [Pay to EndPoint](/building-wasabi/PayToEndPoint.md)
+Pay to EndPoint is when the receiver is reachable over the internet and the sender communicates with the receiver to coordinate a more advanced transaction.
+The Tor hidden service, IP address or domain of the receiver is included in a BIP21 Bitcoin URI payment link.
 :::
 
 :::details
