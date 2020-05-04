@@ -31,17 +31,17 @@ Use the `wassabee` command.
 
 ```
 $ wassabee help findpassword
-usage: findpassword --wallet:WalletName --language:lang --numbers:[TRUE|FALSE] --symbold:[TRUE|FALSE]
+usage: findpassword --wallet:WalletName --language:lang --numbers:[TRUE|FALSE] --symbols:[TRUE|FALSE]
 
 Tries to find typing mistakes in the user password by brute forcing it char by char.
-eg: ./wassabee findpassword --wallet:MyWalletName --numbers:false --symbold:true
+eg: ./wassabee findpassword --wallet:MyWalletName --numbers:false --symbols:true
 
   -w, --wallet=VALUE         The name of the wallet file.
   -s, --secret=VALUE         You can specify an encrypted secret key instead of wallet. Example of encrypted secret:
                                6PYTMDmkxQrSv8TK4761tuKrV8yFwPyZDqjJafcGEiLBHiqBV6WviFxJV4
   -l, --language=VALUE       The charset to use: en, es, it, fr, pt. Default=en.
   -n, --numbers=VALUE        Try passwords with numbers. Default=true.
-  -x, --symbols=VALUE        Try passwords with symbolds. Default=true.
+  -x, --symbols=VALUE        Try passwords with symbols. Default=true.
   -h, --help                 Show Help
 ```
 
