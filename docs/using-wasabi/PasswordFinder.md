@@ -40,8 +40,8 @@ eg: ./wassabee findpassword --wallet:MyWalletName --numbers:false --symbols:true
   -s, --secret=VALUE         You can specify an encrypted secret key instead of wallet. Example of encrypted secret:
                                6PYTMDmkxQrSv8TK4761tuKrV8yFwPyZDqjJafcGEiLBHiqBV6WviFxJV4
   -l, --language=VALUE       The charset to use: en, es, it, fr, pt. Default=en.
-  -n, --numbers=VALUE        Try passwords with numbers. Default=true.
-  -x, --symbols=VALUE        Try passwords with symbols. Default=true.
+  -n, --numbers=VALUE        Try passwords with numbers. Default=false.
+  -x, --symbols=VALUE        Try passwords with symbols. Default=false.
   -h, --help                 Show Help
 ```
 
