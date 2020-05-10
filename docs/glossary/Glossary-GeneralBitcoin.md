@@ -491,7 +491,7 @@ It emphasizes the achievement of the Bitcoin protocol to establish consensus on 
 ### Transaction
 
 In simple terms, a transfer of bitcoin.
-More precisely, a transaction is a signed data structure expressing a transfer of value from inputs to outputs.
+More precisely, a transaction is a signed data structure expressing a transfer of value and consisting mainly of inputs and outputs
 Transactions are transmitted over the Bitcoin network, collected by miners, and included into blocks, made permanent on the blockchain.
 :::
 
