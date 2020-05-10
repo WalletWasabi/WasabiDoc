@@ -15,7 +15,7 @@
 
 1. Load a wallet and open the `Send` tab.
 
-2. Copy a [BIP21 Bitcoin URI](/using-wasabi/BIPs.md#bip-21-uri-scheme): with the flag `pj=` and paste it into the address field of the `Send` tab.
+2. Request from the receiver a [BIP21 Bitcoin URI](/using-wasabi/BIPs.md#bip-21-uri-scheme) with the flag `pj=` and paste it into the address field of the `Send` tab.
 
 3. Select the coins you want to send.
 
