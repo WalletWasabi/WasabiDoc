@@ -15,7 +15,7 @@
 
 1. Load a wallet and open the `Send` tab.
 
-2. Copy a [BIP21 Bitcoin URI](/using-wasabi/BIPs.md#bip-21-uri-scheme): with the flag `pj=` and paste it into the address field of the `Send` tab.
+2. Request from the receiver a [BIP21 Bitcoin URI](/using-wasabi/BIPs.md#bip-21-uri-scheme) with the flag `pj=` and paste it into the address field of the `Send` tab.
 
 3. Select the coins you want to send.
 
@@ -25,16 +25,19 @@
 
 ## The goal of PayJoin
 
-[PayJoin](https://docs.btcpayserver.org/features/payjoin/payjoin-spec) is a collaborative transaction between the sender and the receiver of a payment, for example the merchant and the customer.
+PayJoin is a collaborative transaction between the sender and the receiver of a payment, for example the merchant and the customer.
 The goal of the protocol is to break the common input ownership heuristic, while making it difficult to fingerprint that the transaction is in fact a CoinJoin.
 Further, it reduces the transaction fees paid by the merchant due to consolidation of coins.
+
+Wasabi diverges from [the initial BIP 79 Bustapay proposal](https://github.com/bitcoin/bips/blob/master/bip-0079.mediawiki), the details of the implemented specification are [documented here](https://docs.btcpayserver.org/features/payjoin/payjoin-spec).
 
 ## Coordination
 
 The coordination of this CoinJoin is done with the PayToEndPoint [P2EP] concept.
-The receiver opens a Tor hidden service, and accepts incoming connections to it.
+The receiver is reachable over the internet, either over a Tor hidden service or clearnet IP address.
 The link is included in a BIP21 Bitcoin URI, and is provided to the sender as the payment invoice.
-The sender uses this hidden service to connect to the server of the receiver and communicate the further protocol.
+The sender uses this hidden service or IP address to connect to the server of the receiver and communicate the further protocol.
+The coordination is usually done within seconds, and will abort to the fallback transaction after some time if the connection breaks.
 
 ## Fallback transaction
 
@@ -72,6 +75,6 @@ Further, the outputs do not reflect the actual value of the transaction.
 In our example, the economic transfer is of `0.2 bitcoin` from Alice to Bob, but the outputs are worth `0.7 bitcoin` and `0.8 bitcoin`.
 This is obfuscating the actual amount payed.
 
-Finally, the receiver is consolidating his coins, which is a way for him to save on future transaction fees.
+Finally, the receiver is consolidating his coins, thus saving on future transaction fees.
 Without the PayJoin, the receiver would have two coins, worth `0.2 bitcoin` and `0.5 bitcoin`, and he would have to pay twice the transaction fee to spend these coins.
 But because of using PayJoin, he only has one coin, worth `0.7 bitcoin`, thus reducing his future transaction costs when spending this coin.

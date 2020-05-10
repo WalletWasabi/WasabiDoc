@@ -54,6 +54,15 @@ Here is a list of all the supported and integrated Bitcoin Improvement Proposals
 :::
 
 :::details
+### BIP 79: Bustapay: A Practical CoinJoin Protocol
+
+[BIP 79: Bustapay: A Practical CoinJoin Protocol](https://github.com/bitcoin/bips/blob/master/bip-0079.mediawiki)
+
+Wasabi deviates from BIP 79 in some aspects.
+The exact details of the implementation are [documented here](https://docs.btcpayserver.org/features/payjoin/payjoin-spec)
+:::
+
+:::details
 ### BIP 84: Derivation scheme for P2WPKH Based Accounts
 
 [BIP 84](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki) defines a standard derivation scheme for hierarchical deterministic wallets BIP 32, specifically for segregated witness P2WPKH [BIP 173](BIPs.md#bip-173-base32-address-format-for-native-v0-16-witness-outputs).
