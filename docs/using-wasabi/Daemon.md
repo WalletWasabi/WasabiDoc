@@ -7,7 +7,7 @@
 
 # Headless Wasabi Daemon
 The default of how to interact with your Wasabi wallet is the graphical user interface.
-There is also a headless daemon where you do not run a resource intensive GUI, but only the command line interface.
+There is also a headless daemon where you do not run a resource-intensive GUI, but only the command line interface.
 This daemon is especially useful for power users mixing bitcoin in the backend of their servers. 
 
 [[toc]]
@@ -23,7 +23,7 @@ This daemon is especially useful for power users mixing bitcoin in the backend o
 `--wallet:` specifies the name of the hot wallet with the coins you want to CoinJoin.
 
 `--destination:` specifies the destination wallet that the mixed coins will be coinjoined into, after the target anonymity set is reached.
-A coin will be coinjoined into the first wallet, until anonymity set target is reached, then there will be one additional CoinJoin into the `destination` wallet.
+A coin will be coinjoined into the first wallet until anonymity set target is reached, then there will be one additional CoinJoin into the `destination` wallet.
 
 `--keepalive` keeps the daemon running after all coins have reached the anonymity set target, and continue to CoinJoin when new coins are received into the wallet.
 
