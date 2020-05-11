@@ -137,7 +137,7 @@ We are currently in the process of completing it to match the contributors liste
 
 <div class="all-contributors">
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore -->
+<!-- prettier-ignore-start -->
 <table>
   <tr>
     <td align="center"><a href="http://towardsliberty.com"><img src="https://avatars1.githubusercontent.com/u/30683012?v=4" width="100px;" alt="Max Hillebrand"/><br /><sub><b>Max Hillebrand</b></sub></a><br /><a href="#content-MaxHillebrand" title="Content">🖋</a> <a href="https://github.com/zkSNACKs/WasabiDoc/commits?author=MaxHillebrand" title="Documentation">📖</a> <a href="#example-MaxHillebrand" title="Examples">💡</a> <a href="#maintenance-MaxHillebrand" title="Maintenance">🚧</a> <a href="#projectManagement-MaxHillebrand" title="Project Management">📆</a> <a href="#review-MaxHillebrand" title="Reviewed Pull Requests">👀</a> <a href="#video-MaxHillebrand" title="Videos">📹</a></td>
@@ -181,5 +181,6 @@ We are currently in the process of completing it to match the contributors liste
   </tr>
 </table>
 
+<!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 </div>
