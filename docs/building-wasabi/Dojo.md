@@ -130,9 +130,6 @@ Osu!
 [58]: https://twitter.com/lunaticoin/status/1250737978906943488
 [59]: https://twitter.com/Multicripto/status/1250505298382643201
 
-
-<br />
-
 ## All Contributors
 
 This list is assembled with [all-contributors](https://github.com/all-contributors/all-contributors).
