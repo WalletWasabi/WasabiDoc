@@ -53,7 +53,7 @@ They can be used as follows:
 
 ### getstatus
 
-Returns information useful to understand the status Wasabi and its synchronization status.
+Returns information useful to understand Wasabi and its synchronization status.
 
 ```bash
 curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getstatus"}' http://127.0.0.1:37128/ | jq
@@ -168,7 +168,7 @@ In case we try to generate a wallet with a reserved wallet name it will return:
 }
 ```
 
-In case we try to generate a wallet with too long of a password it will return:
+In case we try to generate a wallet with a too long password it will return:
 
 ```json
 {
