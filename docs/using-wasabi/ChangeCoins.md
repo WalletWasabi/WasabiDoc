@@ -40,13 +40,14 @@ Let's say that you have a KYC <img src="/ShieldRed.png" alt="red-shield" class="
 Afterwards, depending on the value of your UTXO in relation to the minimum CoinJoin amount and on the value of UTXOs of the other participants, you will receive two or more UTXOs.
 One of those will be the change leftover from the round, and it will retain the <img src="/ShieldRed.png" alt="red-shield" class="shield" /> `anonymity set 1` designation.
 The remaining UTXO(s) will have either a <img src="/ShieldYellow.png" alt="yellow" class="shield" />, <img src="/ShieldGreen.png" alt="green" class="shield" /> or <img src="/ShieldCheckmark.png" alt="checkmark" class="shield" /> shield.
-You can see the `anonymity set` size for any UTXO by hovering your mouse-pointer over its associated shield.
+You can see the `anonymity set` value of any UTXO by hovering your mouse-pointer over its associated shield.
+
 
 In this example, let's assume that the current minimum amount that can be registered for a CoinJoin round is 0.1 bitcoin.
 You happen to have a UTXO worth 0.105 bitcoin, and you select it to be coinjoined.
 
 After this CoinJoin round has concluded, you will receive 2 separate UTXOs.
-The larger UTXO will have a colored shield (<img src="/ShieldYellow.png" alt="yellow" class="shield" />, <img src="/ShieldGreen.png" alt="green" class="shield" /> or <img src="/ShieldCheckmark.png" alt="checkmark" class="shield" /> based on your [Privacy Level Settings](/FAQ/FAQ-UseWasabi.md#how-can-i-change-the-anonset-target)) that indicates the size of the anonymity set achieved in that CoinJoin round.
+The larger UTXO will (most probably) have a colored shield (<img src="/ShieldYellow.png" alt="yellow" class="shield" />, <img src="/ShieldGreen.png" alt="green" class="shield" /> or <img src="/ShieldCheckmark.png" alt="checkmark" class="shield" /> based on your [Privacy Level Settings](/FAQ/FAQ-UseWasabi.md#how-can-i-change-the-anonset-target)) that indicates the level of the anonymity set achieved in that CoinJoin round.
 The other, much smaller UTXO will be the amount (change) that was left over, and it will have a <img src="/ShieldRed.png" alt="red-shield" class="shield" /> indicating an anonymity set of `1` as it does not have the equal value denomination of the CoinJoin.
 
 Remember, to have anonymity set UTXOs, all denomination outputs of a CoinJoin round must be equal.
