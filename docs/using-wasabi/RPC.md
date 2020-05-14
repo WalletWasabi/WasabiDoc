@@ -245,6 +245,7 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"listunspentcoins"}' h
       "amount": 109859,
       "anonymitySet": 1,
       "confirmed": true,
+      "confirmations": 6,
       "label": "kyced-exchange",
       "keyPath": "84'/0'/0'/0/616",
       "address": "tb1qgcng6v7wt03t80x6gh7s2x4rawg9zhenzrek4y"
@@ -255,6 +256,7 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"listunspentcoins"}' h
       "amount": 2994272,
       "anonymitySet": 9,
       "confirmed": true,
+      "confirmations": 1,
       "label": "",
       "keyPath": "84'/0'/0'/1/79",
       "address": "tb1qgfcv3pgj6tvzc5g73l7tps58q30zx8qk3y35uu"
@@ -265,6 +267,7 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"listunspentcoins"}' h
       "amount": 195218,
       "anonymitySet": 1,
       "confirmed": true,
+      "confirmations": 245,
       "label": "Maria, Andrew",
       "keyPath": "84'/0'/0'/0/623",
       "address": "tb1q2dgj9u3ggjg08hvvhf3l4m3u3ncpdxud8m0yqu"
