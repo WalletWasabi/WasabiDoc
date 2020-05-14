@@ -701,6 +701,18 @@ Example: If you select 10 coins with total value of 2 btc and you want to send 1
 This is good for privacy, and also saves you some transaction fees.
 :::
 
+:::details
+### How can I bump the transaction fee with child pays for parent (CPFP)?
+
+If you have sent or received a transaction with a low fee and it does not get confirmed within reasonable time, then you can do child pays for parent to get it confirmed faster.
+The trick is, to make a new transaction which spends the unconfirmed coin that you have received with a higher fee.
+This can be either a payment transaction from you to another person, or a self spend transaction.
+
+The transaction will get confirmed based on the fee level of the combined parent and child transactions.
+For example, if the initial transaction pays a 1 sat/vbyte fee and the child transaction pays a 5 sat/vbyte fee, then the combined fee level is the average of both, thus 3 sat/vbyte.
+(Assuming both transactions are roughly the same size.)
+:::
+
 ## CoinJoin
 
 @[youtube](ypfZT9GlqTw)
