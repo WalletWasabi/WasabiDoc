@@ -709,7 +709,7 @@ The trick is, to make a new transaction which spends the unconfirmed coin that y
 This can be either a payment transaction from you to another person, or a self spend transaction.
 
 The transaction will get confirmed based on the fee level of the combined parent and child transactions.
-For example, if the inital transactions pays a 1 sat/vbyte fee and the child transaction pays a 5 sat/vbyte fee, then the combined fee level is the average of both, thus 3 sat/vbyte.
+For example, if the initial transaction pays a 1 sat/vbyte fee and the child transaction pays a 5 sat/vbyte fee, then the combined fee level is the average of both, thus 3 sat/vbyte.
 (Assuming both transactions are roughly the same size.)
 :::
 
