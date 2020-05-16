@@ -24,8 +24,8 @@ In order to reproduce Wasabi's builds you need [Git](https://git-scm.com/downloa
 
 ```sh
 git clone https://github.com/zkSNACKs/WalletWasabi.git
-git checkout {hash of the release} // This works from 1.1.3 release, https://github.com/zkSNACKs/WalletWasabi/releases
 cd WalletWasabi/WalletWasabi.Packager/
+git checkout {hash of the release} // This works from 1.1.3 release, https://github.com/zkSNACKs/WalletWasabi/releases
 dotnet restore
 dotnet build
 dotnet run -- --onlybinaries
@@ -48,6 +48,7 @@ After you installed Wasabi from the `.msi` package downloaded from the website, 
 You can compare it with your build:
 
 ```sh
+cd WalletWasabi.Gui\bin\dist
 git diff --no-index win7-x64 "C:\Program Files\WasabiWallet"
 ```
 
