@@ -23,7 +23,7 @@ If you want to read more about fees here is a nice explanation: [What are the fe
 :::details
 ### Who is contributing to Wasabi already?
 
-There are many Wasabikas working with great effort and care to manifest this powerful tool of self defense.
+There are many Wasabikas working with great effort and care to manifest this powerful tool of self-defense.
 [Over 50 peers](https://github.com/zkSNACKs/WalletWasabi/graphs/contributors) have already contributed to the repository, and more and more supporters are joining the [dojo](/building-wasabi/Dojo.md).
 Four of the main contributors are [Ádám Ficsor](https://github.com/nopara73) [co-founder and former CTO of [zkSnacks Ltd](https://zksnacks.com/), co-author of the [zero link Bitcoin fungibility framework](https://github.com/nopara73/ZeroLink)], [Lucas Ontivero](https://github.com/lontivero) [lead engineer of [zkSnacks Ltd](https://zksnacks.com/)], [Dávid Molnár](https://github.com/molnard) [CTO of [zkSnacks Ltd](https://zksnacks.com/)], and [Dan Walmsley](https://github.com/danwalmsley) [co-maintainer of [Avalonia UI Framework](https://github.com/AvaloniaUI/Avalonia)].
 For an inclusive list of all the Wasabikas, not just the code developers, please visit the [dojo](/building-wasabi/Dojo.md).
@@ -55,7 +55,7 @@ However, since all four are administrators, they can still force the merge witho
 :::details
 ### What is on the future roadmap of Wasabi development?
 
-Wasabi is far from complete, there are many Wasabikas contributing every day to make this tool of self defense even more powerful.
+Wasabi is far from complete, there are many Wasabikas contributing every day to make this tool of self-defense even more powerful.
 Because Wasabi is libre and open source software, anyone can support the project without asking for permission.
 Thus it is relatively tricky to give a precise roadmap with what will be implemented in the near and distant future.
 :::
