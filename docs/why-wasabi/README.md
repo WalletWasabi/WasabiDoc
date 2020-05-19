@@ -26,5 +26,5 @@ And why Wasabi can make Bitcoin an even better tool of self-defense by default.
 - [Coins](/why-wasabi/Coins.md)
 - [Address Reuse](/why-wasabi/AddressReuse.md)
 - [Transaction Graph](/why-wasabi/TransactionGraph.md)
-- [Network Level Privacy](/why-wasabi/NetworkLevelPrivacy.md)
+- [Network-Level Privacy](/why-wasabi/NetworkLevelPrivacy.md)
 - [Transaction Surveillance Companies](/why-wasabi/TransactionSurveillanceCompanies.md)
