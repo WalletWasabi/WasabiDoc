@@ -124,7 +124,7 @@ Among others, here is where your wallet files and your logs reside.
 
 ![](/DownloadMac.png)
 
-2. Double click `.dmg` to open it.
+2. Double-click `.dmg` to open it.
 
 3. Install Wasabi by dragging it into your `Applications` folder.
 
