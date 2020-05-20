@@ -248,7 +248,7 @@ You have to wait until the status bar is `Ready`.
 :::details
 ### How long does the initial, and a subsequent synchronization take?
 
-It usually only takes a couple seconds to scan the block filters, and to download and parse the blocks.
+It usually only takes a couple of seconds to scan the block filters, and to download and parse the blocks.
 However, for large wallets with many transactions, this synchronization can take up to several minutes.
 The speed and reliability of the loading process is constantly improved.
 For especially old wallets, it might be worth considering to generate a new wallet with a shorter transaction history.
