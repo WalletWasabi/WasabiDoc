@@ -82,3 +82,4 @@ Second, check the connected peers inside your full node.
 Wasabi will show up as one of the peers while it is downloading a block.
 In the Bitcoin Core / Knots GUI, click on `Window -> Peers`.
 During the periode where Wasabi is fetching a block, it will show up in the `User Agent` column.
+Or call the Bitcoin RPC call `bitcoin-cli getpeerinfo` and see the Wasabi client listed.
