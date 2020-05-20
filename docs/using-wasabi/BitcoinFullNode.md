@@ -70,3 +70,12 @@ If you have a Bitcoin full node already on a remote computer, then Wasabi Wallet
 In the settings specify the local IP address and port, or the tor hidden service .onion of your full node.
 
 ![](/SettingsBitcoinCoreRemote.png)
+
+## Verify the full node is connected
+
+There are two ways to verify that your Wasabi client is connected to your own full node.
+First, in the Wasabi logs, during the download of a block:
+`Block acquired from local P2P connection.`
+
+Second, check the connected peers inside your full node.
+Wasabi will show up as one of the peers while it is downloading a block.
