@@ -58,7 +58,7 @@ If thieves don't know how much bitcoin you have, then they don't know if you are
 No one wants the snotty barista at the coffee shop or their nosy neighbors commenting on their income or spending habits.
 No one wants their baby-crazy in-laws asking why they're buying contraception (or sex toys).
 Your employer has no business knowing what church you donate to.
-Only in a perfectly enlightened discrimination free world where no one has undue authority over anyone else could we retain our dignity and make our lawful transactions freely without self-censorship if we don't have privacy.
+Only in a perfectly enlightened discrimination-free world where no one has undue authority over anyone else could we retain our dignity and make our lawful transactions freely without self-censorship if we don't have privacy.
 
 Most importantly, financial privacy isn't incompatible with things like law enforcement or transparency.
 You can always keep records, be ordered (or volunteer) to provide them to whomever, have judges hold against your interest when you can't produce records (as is the case today).
