@@ -52,7 +52,7 @@ Notice that testnet SegWit addresses start with `tb1q...`, and not with `bc1q...
 
 Because testnet bitcoin don't have economical value, they are gifted by different sources.
 There are [faucets](https://en.bitcoin.it/wiki/Testnet#Faucets) like [this one](https://testnet-faucet.mempool.co/) that give a certain amount of testnet bitcoin per time period.
-You may also ask other developers if they have a couple spare testnet coins available.
+You may also ask other developers if they have a couple of spare testnet coins available.
 
 ## CoinJoin on testnet
 
