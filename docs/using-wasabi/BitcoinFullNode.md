@@ -76,11 +76,11 @@ In the settings specify the local IP address and port, or the tor hidden service
 There are two ways to confirm that your Wasabi client is connected to your own full node.
 
 First, in the Wasabi logs.
-When  downloading a block, you should see:
+When downloading a block, you should see:
 `Block acquired from local P2P connection.`
 
 Second, by checking the connected peers inside your full node.
 Wasabi will show up as one of the connected peers while it is downloading a block.
 You can check this in the Bitcoin Core / Knots GUI, by clicking on `Window -> Peers`.
-During the periode where Wasabi is fetching a block, it will show up in the `User Agent` column.
-Alternatively, you can call the Bitcoin RPC call `bitcoin-cli getpeerinfo` and see the Wasabi client listed.
+During the period when Wasabi is fetching a block, it will show up in the `User Agent` column.
+Alternatively, you can use the Bitcoin RPC call `bitcoin-cli getpeerinfo` and see the Wasabi client listed.
