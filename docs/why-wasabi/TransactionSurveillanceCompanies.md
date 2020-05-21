@@ -74,7 +74,7 @@ The aim of bitcoin is to be a decentralized digital currency, but if all users a
 
 ### No mechanism for oversight or appeal
 
-There appears to be no recourse for someone affected by false-positive identification of exchange-disapproved transaction history.
+There appears to be no recourse for someone affected by false positive identification of exchange-disapproved transaction history.
 This could result in them wrongly having their coins confiscated.
 
 ### Jurisdiction
