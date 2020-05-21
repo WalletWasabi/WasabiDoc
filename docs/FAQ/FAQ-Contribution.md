@@ -38,7 +38,7 @@ For an inclusive list of all the Wasabikas, not just the code developers, please
 :::details
 ### Who reviews and merges the pull requests?
 
-As the Wasabi code is libre and open source, anyone has access to review the latest contributions and browse the [open pull requests](https://github.com/zkSNACKs/WalletWasabi/pulls?q=is%3Apr+is%3Aopen+sort%3Aupdated-desc).
+As the Wasabi code is libre and open-source, anyone has access to review the latest contributions and browse the [open pull requests](https://github.com/zkSNACKs/WalletWasabi/pulls?q=is%3Apr+is%3Aopen+sort%3Aupdated-desc).
 The review of any Wasabika is not just deeply appreciated, but desperately needed!
 Wasabi is cutting-edge, high security software, and there can never be enough eyes seeking and squashing bugs.
 Especially review by experienced C# developers are vitally important, yet even typo and grammar fixes are necessary.
@@ -56,7 +56,7 @@ However, since all four are administrators, they can still force the merge witho
 ### What is on the future roadmap of Wasabi development?
 
 Wasabi is far from complete, there are many Wasabikas contributing every day to make this tool of self-defense even more powerful.
-Because Wasabi is libre and open source software, anyone can support the project without asking for permission.
+Because Wasabi is libre and open-source software, anyone can support the project without asking for permission.
 Thus it is relatively tricky to give a precise roadmap with what will be implemented in the near and distant future.
 :::
 
@@ -65,7 +65,7 @@ Thus it is relatively tricky to give a precise roadmap with what will be impleme
 :::details
 ### How should I start contributing to Wasabi?
 
-Thank you for considering to support this beautiful libre and open source project!
+Thank you for considering to support this beautiful libre and open-source project!
 It is the responsibility of everyone using the software to contribute to its growth.
 Your help is deeply appreciated, and very much needed!
 First please read the [contribution checklist](/building-wasabi/ContributionChecklist.md) to get introduced to the project and to start out in the right direction.
@@ -78,7 +78,7 @@ Join our [Slack](https://join.slack.com/t/tumblebit/shared_invite/enQtNjQ1MTQ2Nz
 Yes!
 The beauty of Wasabi is that it's not just a very awesome wallet by default, but it has the additional opt-in CoinJoin service.
 This is provided by [zkSnacks Ltd.](https://zksnacks.com), and in exchange for this service, the user pays a coordinator fee.
-In return, zkSnacks is supporting several developers to dedicate their full time to contribute to this open source project.
+In return, zkSnacks is supporting several developers to dedicate their full time to contribute to this open-source project.
 There are also projects like the [contribution game](/building-wasabi/ContributionGame.md) where a bounty is paid out to any contributor worthy the praise.
 Specifically for the documentation, there is a monthly budget of 1.000 USD to reward contributors for the maintenance and expansion of this knowledge archive.
 :::
@@ -108,7 +108,7 @@ Send an email to [adam.ficsor73@gmail.com](mailto:adam.ficsor73@gmail.com), pref
 
 Wasabi is a quite beautiful piece of software already.
 Yet there are also 1001 things that could be just a little better, or even quite substantially superior.
-The beauty and bane of libre and open source software is that it is never complete, there is always more work to be done.
+The beauty and bane of libre and open-source software is that it is never complete, there is always more work to be done.
 
 Regardless if you are a new user of Wasabi, or a veteran black belt Wasabika, any suggestions on how to improve are very welcome.
 Please first check the existing [issues](https://github.com/zkSNACKs/WalletWasabi/issues/) and [pull requests](https://github.com/zkSNACKs/WalletWasabi/pulls) if someone has the same feature request as you.
@@ -133,7 +133,7 @@ If your trouble is specific to the code, then it might also be suitable to check
 :::details
 ### What does the Wasabi project need help with?
 
-Wasabi is libre and open source software, thus it relies on the support of several contributors on all fronts.
+Wasabi is libre and open-source software, thus it relies on the support of several contributors on all fronts.
 Of course, this includes coding new features, bug fixes and stability improvements.
 Yet just equally important is the review of the commits of all other Wasabikas.
 It's not just the contributions to the code, but also to the documentation and the effort to educate peers using Wasabi.

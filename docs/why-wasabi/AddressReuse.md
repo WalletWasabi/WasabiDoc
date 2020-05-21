@@ -44,7 +44,7 @@ The attacker hopes that this dust coin is consolidated with another coin, thus l
 
 ### Intentionally malicious
 
-Since Wasabi is libre and open source, anyone can modify a fork of Wasabi to make sure the same two addresses are recycled in every CoinJoin registration.
+Since Wasabi is libre and open-source, anyone can modify a fork of Wasabi to make sure the same two addresses are recycled in every CoinJoin registration.
 This is someone intentionally deanonymizing himself, and he might have quite dubious motives.
 
 ## Wasabi's Solution

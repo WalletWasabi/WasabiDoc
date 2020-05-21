@@ -54,7 +54,7 @@ At this point it is unclear if Wasabi will ever have the resources to tackle oth
 ### Wasabi Wallet Under the Hood
 
 Wasabi is an [open-source](https://github.com/zkSNACKs/WalletWasabi/), desktop Bitcoin wallet, working on Windows, Linux and macOS.
-It is written in [.NET Core](https://en.wikipedia.org/wiki/.NET_Core) (C#), which is cross-platform and open source .NET.
+It is written in [.NET Core](https://en.wikipedia.org/wiki/.NET_Core) (C#), which is cross-platform and open-source .NET.
 Wasabi uses [NBitcoin](https://github.com/MetacoSA/NBitcoin/) as its Bitcoin library, to which Wasabi developers are frequent contributors: [@lontivero](https://github.com/lontivero), [@nopara73](https://github.com/nopara73).
 
 Wasabi uses the [Avalonia](https://github.com/AvaloniaUI/Avalonia/) library as its UI framework, where Wasabi developer [@danwalmsley](https://github.com/danwalmsley) is a maintainer.
@@ -344,7 +344,7 @@ Since most of the world does not speak English, localization ([https://github.co
 
 Wasabi wallet uses bech32 addresses only.
 These addresses are not fully supported by the whole Bitcoin ecosystem.
-It would be beneficial to make pull requests to open source softwares to support sending money to bech32 addresses: [https://github.com/zkSNACKs/WalletWasabi/issues/951](https://github.com/zkSNACKs/WalletWasabi/issues/951)
+It would be beneficial to make pull requests to open-source softwares to support sending money to bech32 addresses: [https://github.com/zkSNACKs/WalletWasabi/issues/951](https://github.com/zkSNACKs/WalletWasabi/issues/951)
 
 Wasabi, in theory could use P2SH over P2WPKH, wrapped SegWit addresses, ([https://github.com/zkSNACKs/Meta/issues/7](https://github.com/zkSNACKs/Meta/issues/7))since the ability to spend to bech32 addresses is not yet universal.
 On the other hand, this could be considered a backward-looking short-sighted improvement.

@@ -3,7 +3,7 @@
 [Wasabi Wallet](https://wasabiwallet.io) is an open-source, non-custodial, privacy focused Bitcoin wallet for desktop.
 It implements trustless coin shuffling: [Schnorrian CoinJoin](https://github.com/nopara73/ZeroLink/).
 
-This is Wasabi Wallet's open source [documentation](https://docs.wasabiwallet.io) repository.
+This is Wasabi Wallet's open-source [documentation](https://docs.wasabiwallet.io) repository.
 Here you will find information about the nuances of privacy in Bitcoin, how Wasabi solves some of the existing problems, and how you can use this tool to defend yourself.
 
 If you would like to support the project by educating other people, this documentation repository is the right place for your efforts!
@@ -53,12 +53,12 @@ Explanations of common words used in Wasabi and regarding Bitcoin privacy.
 
 [![Build Status](https://dev.azure.com/zkSNACKs/WasabiDoc/_apis/build/status/zkSNACKs.WasabiDoc?branchName=master)](https://dev.azure.com/zkSNACKs/WasabiDoc/_build/latest?definitionId=4&branchName=master)
 
-Just like the Wasabi wallet software, this documentation is libre and open source under the [MIT license](LICENSE).
+Just like the Wasabi wallet software, this documentation is libre and open-source under the [MIT license](LICENSE).
 Not only do we appreciate everyone's contribution, but we desperately need it!
 
 ### VuePress
 
-The [Wasabi documentation website](https://docs.wasabiwallet.io) is built using an open source static site generator called VuePress.
+The [Wasabi documentation website](https://docs.wasabiwallet.io) is built using an open-source static site generator called VuePress.
 Its [configuration](https://github.com/zkSNACKs/WasabiDoc/blob/master/docs/.vuepress/config.js) and [theme](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/.vuepress/styles) are extremely customizable, and it offers great defaults out-of-the-box.
 Check out the [VuePress website](https://v1.vuepress.vuejs.org/) for details on how to use it.
 
