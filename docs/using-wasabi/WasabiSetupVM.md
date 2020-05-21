@@ -32,8 +32,6 @@ You can link them together in a customizable internal network if desired.
 
 For developers, the use of virtual machines offers some of the basic version control features of git but applied to operating systems rather than files or projects.
 
-[[toc]]
-
 ## Qubes
 
 [Qubes](https://www.qubes-os.org/) is a free and open-source security-oriented operating system meant for single-user desktop computing.
