@@ -19,7 +19,7 @@ This checklist will get you plugged in and productive as quickly as possible.
 **A contributor is any individual who works to improve and add value to Wasabi and its users.**
 
 :::tip You can become a Wasabika!
-Wasabi is free and open source software, but contributing is **not** just about writing code.
+Wasabi is free and open-source software, but contributing is **not** just about writing code.
 This means anything from fixing typos in documentation, to answering questions of fellow Wasabikas, to implementing new Wasabi features and everything in-between.
 All such contributions are very welcomed and greatly appreciated.
 :::
