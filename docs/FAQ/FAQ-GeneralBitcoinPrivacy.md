@@ -131,7 +131,7 @@ But regardless, running your own full node means that you don't need to communic
 :::
 
 :::details
-### How can I setup a full node?
+### How can I set up a full node?
 
 Starting with v1.1.11 release, Wasabi comes [pre-installed with bitcoind](/using-wasabi/BitcoinFullNode.md) from [Bitcoin Knots](https://bitcoinknots.org/) and it can be started on the same desktop or laptop computer with just one click.
 This is likely the most convenient solution for Wasabikas.

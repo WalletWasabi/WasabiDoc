@@ -132,7 +132,7 @@ It is useful to generate a complete new hot wallet for this, so as to keep the C
 4. In the [CoinJoin](/using-wasabi/CoinJoin.md) tab, select the relevant coins, enqueue them, and wait for the CoinJoin to be done.
 Remix often to gain a high anonymity set.
 
-### Setup your cold-Wasabi
+### Set up your cold-Wasabi
 
 :::tip Second
 In order to separate these new private coins, you should generate a fresh wallet on your hardware device.
