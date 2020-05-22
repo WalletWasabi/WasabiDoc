@@ -65,7 +65,7 @@ Qubes refers to this type of VM as an "AppVM".
 
 To create a Whonix Workstation AppVM:
 
-1. Click on the blue "Q" icon on the top/left panel.
+1. Click on the blue "Q" icon on the top left panel.
 2. On the resulting pull-down menu, select "Create Qubes VM".
 3. In the Settings window that opens, give the VM a descriptive name, such as "Wasabi-Wallet-Whonix", and select a label color.
 4. Select "AppVM" as the "Type".
@@ -87,7 +87,7 @@ After importing the Whonix installation .ova file into VirtualBox, find and clic
 
 It will take a minute or two for the Tor network to become operational.
 
-Everything is ready to go when the small globe icon on the bottom-right side of both VMs turns green, as shown here:
+Everything is ready to go when the small globe icon on the bottom right side of both VMs turns green, as shown here:
 
 ![](/WhonixGlobe.png)
 
