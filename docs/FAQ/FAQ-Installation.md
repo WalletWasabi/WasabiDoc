@@ -116,7 +116,7 @@ Check out the main documentation for a [step-by-step guide](/using-wasabi/Instal
 
 In the GUI go to the top left menu `Help > About`, here you see the current version of your Wasabi.
 You can also verify the version using the command line by executing `wassabee --version` or `wassabeed --version` if you are on Windows.
-Wasabi is cutting edge software, so it is well advised to stay up-to-date.
+Wasabi is cutting edge software, so it is well-advised to stay up-to-date.
 :::
 
 :::details

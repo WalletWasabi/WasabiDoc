@@ -21,7 +21,7 @@ The mainnet launch was in March 2015, with v0.1.0 released in December 2015 by [
 JoinMarket is an integral part of the Bitcoin privacy infrastructure.
 The research and implementation by the contributors are invaluable.
 
-JoinMarket is well [documented](https://github.com/JoinMarket-Org/joinmarket-clientserver/tree/master/docs) in regards to [installation](https://github.com/JoinMarket-Org/joinmarket-clientserver/blob/master/docs/INSTALL.md), usage of the [command line interface](https://github.com/JoinMarket-Org/joinmarket-clientserver/blob/master/docs/USAGE.md) and [graphical user interface](https://github.com/JoinMarket-Org/joinmarket-clientserver/blob/master/docs/JOINMARKET-QT-GUIDE.md).
+JoinMarket is [well-documented](https://github.com/JoinMarket-Org/joinmarket-clientserver/tree/master/docs) in regards to [installation](https://github.com/JoinMarket-Org/joinmarket-clientserver/blob/master/docs/INSTALL.md), usage of the [command line interface](https://github.com/JoinMarket-Org/joinmarket-clientserver/blob/master/docs/USAGE.md) and [graphical user interface](https://github.com/JoinMarket-Org/joinmarket-clientserver/blob/master/docs/JOINMARKET-QT-GUIDE.md).
 
 ## Market Makers
 
