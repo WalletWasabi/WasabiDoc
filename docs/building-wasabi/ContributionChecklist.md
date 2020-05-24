@@ -30,7 +30,7 @@ All such contributions are very welcomed and greatly appreciated.
 This will help others point you in the right direction.
 - Explore the communication channels and find out what the peers are tinkering on, learn about the project and who is contributing in what way.
 This will help you to find the interesting challenges you can work on.
-- Follow [@WasabiWallet](https://twitter.com/wasabiwallet) on Twitter and subscribe to the [Wasabi YouTube channel](https://www.youtube.com/channel/UCobsrSexTuVkL39mbrQ35VQ) to stay up to date.
+- Follow [@WasabiWallet](https://twitter.com/wasabiwallet) on Twitter and subscribe to the [Wasabi YouTube channel](https://www.youtube.com/channel/UCobsrSexTuVkL39mbrQ35VQ) to stay up-to-date.
 
 ## Learn how we work
 - To understand how Wasabi CoinJoins work, read [Zero Link: The Bitcoin Fungibility Framework](https://github.com/nopara73/zerolink) and explore the [Documentation](/using-wasabi/CoinJoin.md).
