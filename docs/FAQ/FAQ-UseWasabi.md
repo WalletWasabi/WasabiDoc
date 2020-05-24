@@ -31,7 +31,7 @@ Now you can continue with clicking `Generate`.
 ![](/WalletManagerGenerateWallet.png)
 
 Now you will see the 12 recovery words, this is the mnemonic seed that you can use to back up and recover your wallet.
-Make sure, and triple check, that you have done a proper backup of BOTH the password AND the mnemonic.
+Make sure, and triple-check that you have done a proper backup of BOTH the password AND the mnemonic.
 When you only have the recovery words, but not the password, then you will NOT be able to recover your wallet.
 In order to protect your paper backup, consider storing the password and recovery words in two different locations.
 You have successfully setup your wallet when you click `I wrote down my Recovery Words!`
@@ -496,7 +496,7 @@ Alice can protect herself against this by using a [CoinJoin](/using-wasabi/CoinJ
 In the `Send` tab, there is a text box for the `Address` right under the coin list.
 If you have an address in the clipboard, then it is automatically pasted when you click on the box.
 You can also type in the address manually, there is a checksum to help you identify typos.
-Be careful and double check the address, there is no way to revert this transaction and change the destination.
+Be careful and double-check the address, there is no way to revert this transaction and change the destination.
 So make sure that the coins get into the right hands.
 
 ![](/SendAmountFeePassword.png)
