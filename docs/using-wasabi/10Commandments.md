@@ -42,7 +42,7 @@ Wasabi has strong coin control features, and as you continue to use the wallet p
 Lastly, in the same way, that you should never receive bitcoin to the same address twice, you should try to avoid sending bitcoin to the same address twice.
 So ask the recipients to provide you a new address for every transaction.
 
-## 5. CoinJoin whenever possible and be patient!
+## 5. CoinJoin whenever possible and be patient
 
 The process of engaging in a [CoinJoin](/using-wasabi/CoinJoin.md) is as simple as selecting a coin to enqueue and entering your password.
 Once coins have enqueued for coinjoining, you must keep your computer online and awake, because this is an interactive process.
@@ -51,7 +51,7 @@ As a CoinJoin is just many users (up to 100) enqueuing coins, it may take up to 
 As more users join the network, the frequency of these CoinJoins will go up.
 Lastly, if you remix your coins, this provides you and the other participants with plenty of additional privacy.
 
-## 6. Never merge mixed and unmixed coins, and avoid large merges of mixed coins!
+## 6. Never merge mixed and unmixed coins, and avoid large merges of mixed coins
 
 The first part should be somewhat intuitive - coins in your wallet have anonymity set shields, and it is very important to never send <img src="/ShieldCheckmark.png" alt="checkmark" class="shield" /> <img src="/ShieldGreen.png" alt="green" class="shield" /> <img src="/ShieldYellow.png" alt="yellow" class="shield" /> coins (with anonset > 1) with <img src="/ShieldRed.png" alt="red" class="shield" /> coins (with anonset = 1).
 By merging your tainted coins with your mixed coins, you undo the privacy benefits of CoinJoins!
