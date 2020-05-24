@@ -887,7 +887,7 @@ The range is roughly between 0.105 and 0.095 bitcoin, and it is reset manually b
 ### What is happening in the input registration phase?
 
 During this phase you have the opportunity to register coins that you want to mix in this round.
-Your Wasabi client connects to the coordinator server with a unique Tor identity called Alice, and with it you send the input proofs, the clear-text change output, and the blinded anonset CoinJoin address.
+Your Wasabi client connects to the coordinator server with a unique Tor identity called Alice, and with it you send the input proofs, the cleartext change output, and the blinded anonset CoinJoin address.
 When all the proofs are valid, the coordinator signs the blinded output without knowing which address this is, and sends this back to Alice.
 Since the goal is to have 100 peers in one round, the [input registration phase](/using-wasabi/CoinJoin.md#input-registration) can take some time.
 But regardless of how many participants, one hour after the last CoinJoin this phase is complete.
@@ -903,7 +903,7 @@ So in the [connection confirmation phase](/using-wasabi/CoinJoin.md#connection-c
 :::details
 ### What is happening in the output registration phase?
 
-You use some secret parameters to unblind the blinded CoinJoin output to reveal the clear text address that still contains the signature of the coordinator.
+You use some secret parameters to unblind the blinded CoinJoin output to reveal the cleartext address that still contains the signature of the coordinator.
 Wasabi creates a new Tor identity called Bob, and with it you send the unblinded anonset output together with the signature to the coordinator.
 The coordinator can now verify his own signature, thus he knows that previously he has confirmed that Alice had all valid inputs.
 Immediately after that, Bob disconnects and the [output registration phase](/using-wasabi/CoinJoin.md#output-registration) is complete.
