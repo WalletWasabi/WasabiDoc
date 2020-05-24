@@ -70,14 +70,14 @@ With this, the coordinator can verify that you actually own these coins.
 
 Then your Wasabi client generates several fresh addresses, depending on the value of inputs registered.
 The address of the anonset CoinJoin output must not be linked to your input, and thus it is [cryptographically blinded](https://en.wikipedia.org/wiki/Blind_signature) to incomprehensible cypher-text.
-Since the change output can be easily linked to your input with [CoinJoin Sudoku](/FAQ/FAQ-GeneralBitcoinPrivacy.md#what-is-a-coinjoin-sudoku), this address is not blinded but kept in clear-text.
+Since the change output can be easily linked to your input with [CoinJoin Sudoku](/FAQ/FAQ-GeneralBitcoinPrivacy.md#what-is-a-coinjoin-sudoku), this address is not blinded but kept in cleartext.
 
 Wasabi wallet generates a new [Tor identity](https://tb-manual.torproject.org/managing-identities/) called **Alice**.
 She is a separate entity, and for every round you use a new Alice who is not linked to any previous connection.
 With Alice, you send some information to the Wasabi coordinator server:
 
 * The input coins that you want to register, together with the input proof signature.
-* The clear text change address.
+* The cleartext change address.
 * The blinded anonset CoinJoin output.
 
 The Wasabi coordinator now verifies that:
@@ -93,7 +93,7 @@ This signature is proof that the coordinator has verified that Alice is not chea
 The coordinator sends the signed blinded output back to Alice, together with a uniqueID that is the identifier of this specific Alice in this round.
 
 Alice has the secret parameters needed to unblind the signed, blinded output.
-With the magic of cryptography, she can reveal the clear-text address of the anonset CoinJoin output.
+With the magic of cryptography, she can reveal the cleartext address of the anonset CoinJoin output.
 However, the coordinator signature is still attached to this address.
 
 The input registration phase ends when either: the number of registered inputs exceeds the number of required inputs (meaning anonymity set of 100 peers), or when the time elapsed since the previous round reaches one hour.
@@ -117,18 +117,18 @@ Now that all peers are online, we are ready to proceed with the [output registra
 Your Wasabi client generates a completely new Tor identity **Bob**, who is in no way tied to Alice.
 Bob sends to the Wasabi coordinator:
 
-* The clear-text address for the anonset CoinJoin output.
+* The cleartext address for the anonset CoinJoin output.
 * The coordinator signature over that output.
 * The round hash of all the inputs.
 
 Because the coordinator can verify his own signature, he knows that this output was initially sent by any Alice (he cannot know which Alice exactly) and that he has verified that everything is in order.
 
 It is very important that the coordinator cannot link Alice to Bob.
-Because Alice has sent the clear-text input, and Bob sends the clear-text output.
+Because Alice has sent the cleartext input, and Bob sends the cleartext output.
 So, if the two were to be linked, then the coordinator can specifically link the input to the output, meaning that the anonymity set is 1.
 Because Alice commits to the output by sending it blinded, and because Bob is a new Tor identity not linked to Alice, the coordinator can verify that nobody is cheating, but he cannot deanonymize the peers.
 
-The output registration phase ends when the value of clear-text outputs plus change outputs is equal to the value of inputs, meaning all Bobs have registered.
+The output registration phase ends when the value of cleartext outputs plus change outputs is equal to the value of inputs, meaning all Bobs have registered.
 If after a timeout not all outputs are registered, then this round is abandoned, the missing peers are banned, and a new round is started.
 
 ### Signing
