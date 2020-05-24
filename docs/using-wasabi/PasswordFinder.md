@@ -76,7 +76,7 @@ Moreover, the process is heavy in CPU and for that reason, it can be a good idea
 * __language__ (default: en) specify the charset (characters to search in) to reduce the search space.
 For example, while the *Italian* charset is "abcdefghimnopqrstuvxyzABCDEFGHILMNOPQRSTUVXYZ", the *French* charset is "aâàbcçdæeéèëœfghiîïjkmnoôpqrstuùüvwxyÿzAÂÀBCÇDÆEÉÈËŒFGHIÎÏJKMNOÔPQRSTUÙÜVWXYŸZ". 
 
-* __numbers__ (default: true) is for indicating that our password could contain at least one digit. This increases the charset by 10 (from 0 to 9).
+* __numbers__ (default: false) is for indicating that our password could contain at least one digit. This increases the charset by 10 (from 0 to 9).
 
-* __symbols__ (default: true) is for indicating that our password could contain at least one symbol.
+* __symbols__ (default: false) is for indicating that our password could contain at least one symbol.
 This increases the charset by 34 (|!¡@$¿?_-\"#$/%&()´+*=[]{},;:.^`<>). Note that only the most commonly used characters are available.
