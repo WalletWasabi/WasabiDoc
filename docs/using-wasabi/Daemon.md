@@ -65,14 +65,15 @@ If the source code is built:
 
 ### Windows
 
-If the package is installed, navigate to the WasabiWallet folder and execute:
+If the package is installed, open the cmd and execute the following commands:
 
 ```bash
-C:\Program Files\WasabiWallet> wassabeed.exe mix --wallet:MyFirstWallet --destination:MySecondWallet --keepalive
+cd C:\Program Files\WasabiWallet
+wassabeed.exe mix --wallet:MyFirstWallet --destination:MySecondWallet --keepalive
 ```
 
-If the source code is installed, navigate to the WalletWasabi.Gui folder (inside the cloned repo) and execute:
+If the source code is built, open the cmd and navigate to the WalletWasabi.Gui folder (inside the cloned repo) and execute:
 
 ```bash
-\WalletWasabi\WalletWasabi.Gui> dotnet run -- mix --wallet:MyFirstWallet --destination:MySecondWallet --keepalive
+dotnet run -- mix --wallet:MyFirstWallet --destination:MySecondWallet --keepalive
 ```
