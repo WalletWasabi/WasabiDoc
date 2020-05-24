@@ -23,27 +23,15 @@ It is important to know that Wasabi Password Finder is not for breaking wallet p
 
 ### Windows
 
-To use Wasabi's command line tools on Windows you have to use `wassabeed.exe` that is inside your `Program Files\WasabiWallet`.
+To use Wasabi's command line tools on Windows you have to use `wassabeed.exe` that is inside your `Program Files\WasabiWallet`:
+
+- Open the `cmd`
+- Navigate to the Wasabi install directory with the command: `cd C:\Program Files\WasabiWallet`
+- Launch `wassabeed` with the `findpassword` command to your wallet name: `wassabeed.exe findpassword --wallet:WalletName`
 
 ### Linux and macOS
 
 Use the `wassabee` command.
-
-```
-$ wassabee help findpassword
-usage: findpassword --wallet:WalletName --language:lang --numbers:[TRUE|FALSE] --symbols:[TRUE|FALSE]
-
-Tries to find typing mistakes in the user password by brute forcing it char by char.
-eg: ./wassabee findpassword --wallet:MyWalletName --numbers:false --symbols:true
-
-  -w, --wallet=VALUE         The name of the wallet file.
-  -s, --secret=VALUE         You can specify an encrypted secret key instead of wallet. Example of encrypted secret:
-                               6PYTMDmkxQrSv8TK4761tuKrV8yFwPyZDqjJafcGEiLBHiqBV6WviFxJV4
-  -l, --language=VALUE       The charset to use: en, es, it, fr, pt. Default=en.
-  -n, --numbers=VALUE        Try passwords with numbers. Default=false.
-  -x, --symbols=VALUE        Try passwords with symbols. Default=false.
-  -h, --help                 Show Help
-```
 
 For example, there is a wallet called `MagicalCryptoWallet.json`, the correct password is `pass`, but the user thinks it is `pasd`.
 
@@ -59,6 +47,24 @@ Enter password: pasd
 Completed in 00:01:11.5134519
 SUCCESS: Password found: >>> pass <<<
 
+```
+
+## Notes
+
+```
+$ wassabee help findpassword
+usage: findpassword --wallet:WalletName --language:lang --numbers:[TRUE|FALSE] --symbols:[TRUE|FALSE]
+
+Tries to find typing mistakes in the user password by brute forcing it char by char.
+eg: ./wassabee findpassword --wallet:MyWalletName --numbers:false --symbols:true
+
+  -w, --wallet=VALUE         The name of the wallet file.
+  -s, --secret=VALUE         You can specify an encrypted secret key instead of wallet. Example of encrypted secret:
+                               6PYTMDmkxQrSv8TK4761tuKrV8yFwPyZDqjJafcGEiLBHiqBV6WviFxJV4
+  -l, --language=VALUE       The charset to use: en, es, it, fr, pt. Default=en.
+  -n, --numbers=VALUE        Try passwords with numbers. Default=false.
+  -x, --symbols=VALUE        Try passwords with symbols. Default=false.
+  -h, --help                 Show Help
 ```
 
 Note that you can also specify an encrypted secret instead of the wallet file.
