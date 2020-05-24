@@ -34,7 +34,7 @@ When the user sends the extended public key or a filter of all the addresses to 
 
 ## Wasabi's solution
 
-### Full node by default & block filters over tor
+### Full node by default & block filters over Tor
 
 Wasabi checks if there is a local Tor instance installed, and if so, it uses this to onion-route all the traffic to and from the network.
 If Tor is not already installed, then it is accessed automatically from within Wasabi.
