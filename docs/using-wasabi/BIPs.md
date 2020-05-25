@@ -56,7 +56,7 @@ Here is a list of all the supported and integrated Bitcoin Improvement Proposals
 :::details
 ### BIP 79: Bustapay: A Practical CoinJoin Protocol
 
-[BIP 79: Bustapay: A Practical CoinJoin Protocol](https://github.com/bitcoin/bips/blob/master/bip-0079.mediawiki) is a stegenographic CoinJoin between sender and receiver.
+[BIP 79: Bustapay: A Practical CoinJoin Protocol](https://github.com/bitcoin/bips/blob/master/bip-0079.mediawiki) is a steganographic CoinJoin between sender and receiver.
 The goal is to make blockchain surveillance heuristics less reliable.
 
 Wasabi deviates from BIP 79 in some aspects.
