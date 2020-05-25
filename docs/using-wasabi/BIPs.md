@@ -76,7 +76,7 @@ On the TestNet and on the RegTest Wasabi deviates from the standard and uses `m/
 ### BIP 125: Opt-In full Replace-by-Fee Signaling
 
 [BIP 125: Opt-In full Replace-by-Fee Signaling](https://github.com/bitcoin/bips/blob/master/bip-0125.mediawiki) is a policy that allows the sender to signal that the transaction can be replaced in the future.
-This is useful in order to bump the fee of an unconfirmed transaction to incentivise miners for faster confirmation.
+This is useful in order to bump the fee of an unconfirmed transaction to incentivize miners to include the transaction in their candidate block for faster confirmation.
 In Wasabi it is activated for a subset of transactions chosen randomly, so to decrease wallet fingerprinting.
 :::
 
