@@ -81,7 +81,8 @@ On the TestNet and on the RegTest Wasabi deviates from the standard and uses `m/
 :::details
 ### BIP 141: Segregated Witness (Consensus Layer)
 
-[BIP 141: Segregated Witness (Consensus Layer)](https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki)
+[BIP 141: Segregated Witness (Consensus Layer)](https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki) defines a new structure called "witness" which is committed to a block separate from the transaction merkle tree.
+It contains data regarding transaction validity (naimly the signatures, or witness scripts) but not regarding the transaction effect (data like value of bitcoin transacted etc.).
 :::
 
 :::details
