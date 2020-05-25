@@ -38,7 +38,8 @@ Here is a list of all the supported and integrated Bitcoin Improvement Proposals
 :::details
 ### BIP 39: Mnemonic Code for Generating Deterministic Keys
 
-[BIP 39: Mnemonic Code for Generating Deterministic Keys](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki)
+[BIP 39: Mnemonic Code for Generating Deterministic Keys](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) is a method to display the backup of private keys in easy to read sentence of 12, 18 or 24 words.
+It is based on a wordlist of 2048 words, where each word is unique in the first four characters for easy typo recognition.
 :::
 
 :::details
