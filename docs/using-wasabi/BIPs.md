@@ -50,7 +50,9 @@ Here is a list of all the supported and integrated Bitcoin Improvement Proposals
 :::details
 ### BIP 72: bitcoin: uri extensions for Payment Protocol
 
-[BIP 72: bitcoin: uri extensions for Payment Protocol](https://github.com/bitcoin/bips/blob/master/bip-0072.mediawiki)
+[BIP 72: bitcoin: uri extensions for Payment Protocol](https://github.com/bitcoin/bips/blob/master/bip-0072.mediawiki) is an extension to BIP 21 URIs for the BIP 70 payment protocol.
+It is backwards compatible, meaning that wallets that do not support BIP 70 can still understand the URI and fallback to a standard address.
+Wasabi does not support BIP 70, so the fallback address will be used.
 :::
 
 :::details
