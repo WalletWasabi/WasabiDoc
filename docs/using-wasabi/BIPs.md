@@ -116,7 +116,8 @@ This has been proven to be by far the best way to do light clients privately, an
 :::details
 ### BIP 174: Partially Signed Bitcoin Transaction Format
 
-[BIP 174: Partially Signed Bitcoin Transaction Format](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki)
+[BIP 174: Partially Signed Bitcoin Transaction Format](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki) is a binary transaction format containing all the information that a signer needs to produce a transaction signature.
+This is especially useful for offline signing devices such as hardware wallets, and multisignature scripts.
 :::
 
 :::details
