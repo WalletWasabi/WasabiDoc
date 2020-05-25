@@ -27,7 +27,7 @@ Here is a list of all the supported and integrated Bitcoin Improvement Proposals
 
 [BIP 32: Hierarchical Deterministic Wallets](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) has one master private key, which is the root of a tree of chils private keys in each derivation path.
 The parent private key cannot be calculated with the child private key, and the private key cannot be calculated with the public key.
-This allows the user to selectively share parts of his wallet, for example only a public key watch only derivation path.
+This allows the user to selectively share parts of his wallet, for example only a public key watch-only derivation path.
 :::
 
 
