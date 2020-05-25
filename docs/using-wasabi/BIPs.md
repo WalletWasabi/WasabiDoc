@@ -45,7 +45,8 @@ Here is a list of all the supported and integrated Bitcoin Improvement Proposals
 ### BIP 44: Multi-Account Hierarchy for Deterministic Wallets
 
 [BIP 44: Multi-Account Hierarchy for Deterministic Wallets](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki)
-:::
+It has 5 levels of derivation paths `m / purpose' / coin_type' / account' / change / address_index`.
+Wasabi specifically uses the native segwit path `m / 84' / 0' / 0'`.
 
 :::details
 ### BIP 72: bitcoin: uri extensions for Payment Protocol
