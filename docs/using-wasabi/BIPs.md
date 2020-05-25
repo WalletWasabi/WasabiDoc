@@ -138,5 +138,8 @@ This was quite brilliant of an idea at the time, but has since been proven to no
 :::details
 ### BIP 69: Lexicographical Indexing of Transaction Inputs and Outputs
 
-[BIP 69: Lexicographical Indexing of Transaction Inputs and Outputs](https://github.com/bitcoin/bips/blob/master/bip-0069.mediawiki)
+[BIP 69: Lexicographical Indexing of Transaction Inputs and Outputs](https://github.com/bitcoin/bips/blob/master/bip-0069.mediawiki) is a standard to sort inputs and outputs deterministically.
+This was intended to improve privacy, but it only does if all the wallets use this standard.
+Because only a minority of wallets do however, this leads to an easy wallet fingerprint.
+Thus, Wasabi doesn't support this standard.
 :::
