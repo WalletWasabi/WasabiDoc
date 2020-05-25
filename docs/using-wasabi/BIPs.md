@@ -110,7 +110,8 @@ This has been proven to be by far the best way to do light clients privately, an
 :::details
 ### BIP 173: Base32 address format for native v0-16 witness outputs
 
-[BIP 173: Base32 address format for native v0-16 witness outputs](https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki)
+[BIP 173: Base32 address format for native v0-16 witness outputs](https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki) is an address format specifically for segwit addresses.
+It is all lower case, and has a checksum which allows for easy typo detection.
 :::
 
 :::details
