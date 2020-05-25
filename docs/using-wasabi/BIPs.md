@@ -33,7 +33,7 @@ Here is a list of all the supported and integrated Bitcoin Improvement Proposals
 ### BIP 38: Password-Protected Private Key
 
 [BIP 38: Password-Protected Private Key](https://github.com/bitcoin/bips/blob/master/bip-0038.mediawiki) is a method to encrypt the secret that allows spending the bitcoin of a wallet.
-Thus two things are needed to derive the private key, the encrypted secret, and the password.
+Thus two things are needed to derive the private key, the encrypted secret and the password.
 :::
 
 :::details
