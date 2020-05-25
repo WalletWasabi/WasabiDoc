@@ -19,7 +19,10 @@ Here is a list of all the supported and integrated Bitcoin Improvement Proposals
 :::details
 ### BIP 21: URI Scheme
 
-[BIP 21: URI Scheme](https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki)
+The [BIP 21: URI Scheme](https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki) (uniform resource identifier) is a standardized string of characters to convey all the information necessary to request a bitcoin payment.
+It is provided by the receiver to the sender of the transaction.
+It includes the bitcoin address, requested payment amount, a label, message and a P2EP address.
+A wallet can conveniently show this information to the user after the URI has been entered.
 :::
 
 :::details
