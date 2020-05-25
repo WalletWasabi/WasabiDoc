@@ -93,7 +93,7 @@ On the TestNet and on the RegTest Wasabi deviates from the standard and uses `m/
 :::details
 ### BIP 144: Segregated Witness (Peer Services)
 
-[BIP 144: Segregated Witness (Peer Services)](https://github.com/bitcoin/bips/blob/master/bip-0144.mediawiki)
+[BIP 144: Segregated Witness (Peer Services)](https://github.com/bitcoin/bips/blob/master/bip-0144.mediawiki) defines the messages and serialization formats that is used by Bitcoin nodes to propagate segwit transactions and blocks.
 :::
 
 :::details
