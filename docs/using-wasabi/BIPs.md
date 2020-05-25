@@ -87,7 +87,7 @@ On the TestNet and on the RegTest Wasabi deviates from the standard and uses `m/
 :::details
 ### BIP 143: Transaction Signature Verification for Version 0 Witness Program
 
-[BIP 143: Transaction Signature Verification for Version 0 Witness Program](https://github.com/bitcoin/bips/blob/master/bip-0143.mediawiki)
+[BIP 143: Transaction Signature Verification for Version 0 Witness Program](https://github.com/bitcoin/bips/blob/master/bip-0143.mediawiki) defines the signature verification algorithm for segwit version 0 transactions.
 :::
 
 :::details
