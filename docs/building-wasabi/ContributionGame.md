@@ -31,6 +31,8 @@ The metric of success is a combination of number of pull requests, lines added a
 The bounty of `1000 US Dollars` worth of bitcoin is paid out every month on the 25th.
 The depth, quality and continuous maintenance of this documentation is a proof of the success of this contribution game!
 
+The documentation contribution game got replaced by the education contribution game in June 2020.
+
 ## Contribution game to review v1.1.10
 
 After the release of v1.1.9.2 a monumental amount of work has gone into Wasabi, introducing many new features, upgrading dependencies and fixing many bugs.
@@ -54,3 +56,10 @@ There were [detailed test vectors](https://github.com/zkSNACKs/WalletWasabi/issu
 This contribution game had a total bounty of up to `0.3 bitcoin`, sponsored by zkSNACKs.
 
 The total bounty ended up being distributed to 6 contributors, see the full results [here](https://github.com/zkSNACKs/WalletWasabi/issues/3396#issuecomment-610313893).
+
+## Education contribution game
+
+Education is a vitally important aspect of Bitcoin privacy in general and Wasabi specifically.
+This contribution game was started in June 2020 to reward those who help out their peers in learning on how to use these tools properly.
+It includes work on the documentation, the creation of videos and podcasts, and direct peer support in the communication channels.
+The monthly budget is 1500 USD, paid out in bitcoin and kindly sponsored by zkSNACKs.
