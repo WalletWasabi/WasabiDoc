@@ -23,17 +23,17 @@ Here is a list of all the supported and integrated Bitcoin Improvement Proposals
 - [BIP 44: Multi-Account Hierarchy for Deterministic Wallets](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki)
 - [BIP 72: bitcoin: uri extensions for Payment Protocol](https://github.com/bitcoin/bips/blob/master/bip-0072.mediawiki)
 - [BIP 79: Bustapay: A Practical CoinJoin Protocol](https://github.com/bitcoin/bips/blob/master/bip-0079.mediawiki)
-- [BIP 84](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki)
+- [BIP 84: Derivation scheme for P2WPKH based accounts](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki)
 - [BIP 125: Opt-In full Replace-by-Fee Signaling](https://github.com/bitcoin/bips/blob/master/bip-0125.mediawiki)
 - [BIP 141: Segregated Witness (Consensus Layer)](https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki)
 - [BIP 143: Transaction Signature Verification for Version 0 Witness Program](https://github.com/bitcoin/bips/blob/master/bip-0143.mediawiki)
 - [BIP 144: Segregated Witness (Peer Services)](https://github.com/bitcoin/bips/blob/master/bip-0144.mediawiki)
-- [BIP 158 Block filters](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki)
+- [BIP 158: Block filters](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki)
 - [BIP 173: Base32 address format for native v0-16 witness outputs](https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki)
 - [BIP 174: Partially Signed Bitcoin Transaction Format](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki)
 - [Hardware Wallet Interface](https://github.com/bitcoin-core/HWI)
 
 ## What is not supported
 
-- [BIP 37 Bloom filters](https://github.com/bitcoin/bips/blob/master/bip-0037.mediawiki)
+- [BIP 37: Bloom filters](https://github.com/bitcoin/bips/blob/master/bip-0037.mediawiki)
 - [BIP 69: Lexicographical Indexing of Transaction Inputs and Outputs](https://github.com/bitcoin/bips/blob/master/bip-0069.mediawiki)
