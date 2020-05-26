@@ -31,7 +31,7 @@ The metric of success is a combination of number of pull requests, lines added a
 The bounty of `1000 US Dollars` worth of bitcoin is paid out every month on the 25th.
 The depth, quality and continuous maintenance of this documentation is a proof of the success of this contribution game!
 
-The documentation contribution game got expanded to the education contribution game in June 2020.
+The documentation contribution game got replaced by the education contribution game in June 2020.
 
 ## Contribution game to review v1.1.10
 
