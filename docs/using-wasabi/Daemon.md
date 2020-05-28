@@ -56,23 +56,22 @@ If the package is installed:
 ~/Applications/Wasabi\ Wallet.app/Contents/MacOs$ ./wassabee mix --wallet:MyFirstWallet --destination:MySecondWallet --keepalive
 ```
 
-If the source code is built:
+If the source code is built, open the Terminal and navigate to the WalletWasabi.Gui folder (inside the cloned repo) and execute:
 
 ```bash
-~$ cd ~/WalletWasabi/WalletWasabi.Gui
-~/WalletWasabi/WalletWasabi.Gui$ dotnet run -- mix --wallet:MyFirstWallet --destination:MySecondWallet --keepalive
+dotnet run -- mix --wallet:MyFirstWallet --destination:MySecondWallet --keepalive
 ```
 
 ### Windows
 
-If the package is installed, open the cmd and execute the following commands:
+If the package is installed, open the Command Line (cmd) and execute the following commands:
 
 ```bash
 cd C:\Program Files\WasabiWallet
 wassabeed.exe mix --wallet:MyFirstWallet --destination:MySecondWallet --keepalive
 ```
 
-If the source code is built, open the cmd and navigate to the WalletWasabi.Gui folder (inside the cloned repo) and execute:
+If the source code is built, open the Command Line (cmd) and navigate to the WalletWasabi.Gui folder (inside the cloned repo) and execute:
 
 ```bash
 dotnet run -- mix --wallet:MyFirstWallet --destination:MySecondWallet --keepalive
