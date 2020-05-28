@@ -49,11 +49,11 @@ If the source code is built:
 
 ### macOS
 
-If the package is installed:
+If the package is installed, open the Terminal and execute the following commands:
 
 ```bash
-~$ cd ~/Applications/Wasabi\ Wallet.app/Contents/MacOs
-~/Applications/Wasabi\ Wallet.app/Contents/MacOs$ ./wassabee mix --wallet:MyFirstWallet --destination:MySecondWallet --keepalive
+cd /Applications/Wasabi\ Wallet.app/Contents/MacOs
+./wassabee mix --wallet:MyFirstWallet --destination:MySecondWallet --keepalive
 ```
 
 If the source code is built:
