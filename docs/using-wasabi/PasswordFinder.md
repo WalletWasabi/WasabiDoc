@@ -23,11 +23,14 @@ It is important to know that Wasabi Password Finder is not for breaking wallet p
 
 ### Windows
 
-To use Wasabi's command line tools on Windows you have to use `wassabeed.exe` that is inside your `Program Files\WasabiWallet`:
+To use Wasabi's command line tools on Windows you have to use `wassabeed.exe` that is inside your `Program Files\WasabiWallet`.
 
-- Open the Command Line (cmd)
-- Navigate to the Wasabi install directory with the command: `cd C:\Program Files\WasabiWallet`
-- Launch `wassabeed` with the `findpassword` command to your wallet name: `wassabeed.exe findpassword --wallet:WalletName`
+Open the Command Line (cmd) and execute the following commands:
+
+```
+cd C:\Program Files\WasabiWallet
+wassabeed.exe findpassword --wallet:WalletName
+```
 
 ### Linux
 
