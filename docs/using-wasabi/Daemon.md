@@ -52,14 +52,14 @@ If the source code is built:
 If the package is installed:
 
 ```bash
-~$ cd ~/Applications/Wasabi\ Wallet.app/Contents/MacOs
-~/Applications/Wasabi\ Wallet.app/Contents/MacOs$ ./wassabee mix --wallet:MyFirstWallet --destination:MySecondWallet --keepalive
+cd /Applications/Wasabi\ Wallet.app/Contents/MacOs
+./wassabee mix --wallet:MyFirstWallet --destination:MySecondWallet --keepalive
 ```
 
 If the source code is built, open the Terminal and execute:
 
 ```bash
-cd /Applications/Wasabi\ Wallet.app/Contents/MacOs
+cd ~/WalletWasabi/WalletWasabi.Gui
 dotnet run -- mix --wallet:MyFirstWallet --destination:MySecondWallet --keepalive
 ```
 
