@@ -40,9 +40,10 @@ If the package is installed, execute in the command line in any directory:
 wassabee mix --wallet:MyFirstWallet --destination:MySecondWallet --keepalive
 ```
 
-If the source code is built, open the Command Line and navigate to the WalletWasabi.Gui folder (inside the cloned repo) and execute:
+If the source code is built, open the command line terminal and execute:
 
 ```bash
+cd ~/WalletWasabi/WalletWasabi.Gui
 dotnet run -- mix --wallet:MyFirstWallet --destination:MySecondWallet --keepalive
 ```
 
