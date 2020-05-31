@@ -34,7 +34,7 @@ A coin will be coinjoined into the first wallet until anonymity set target is re
 
 ### Linux
 
-If the package is installed, execute in the command line in any directory: 
+If the package is installed, open the command line terminal and execute in any directory:
 
 ```bash
 wassabee mix --wallet:MyFirstWallet --destination:MySecondWallet --keepalive
