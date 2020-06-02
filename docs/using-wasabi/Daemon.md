@@ -34,17 +34,16 @@ A coin will be coinjoined into the first wallet until anonymity set target is re
 
 ### Linux
 
-If the package is installed, execute in the command line in any directory: 
+If the package is installed, open the command line terminal and execute in any directory:
 
 ```bash
-~$ wassabee mix --wallet:MyFirstWallet --destination:MySecondWallet --keepalive
+wassabee mix --wallet:MyFirstWallet --destination:MySecondWallet --keepalive
 ```
 
-If the source code is built:
+If the source code is built, open the terminal, navigate to the `WalletWasabi.Gui` folder inside the cloned repository, and execute:
 
 ```bash
-~$ cd ~/WalletWasabi/WalletWasabi.Gui
-~/WalletWasabi/WalletWasabi.Gui$ dotnet run -- mix --wallet:MyFirstWallet --destination:MySecondWallet --keepalive
+dotnet run -- mix --wallet:MyFirstWallet --destination:MySecondWallet --keepalive
 ```
 
 ### macOS
