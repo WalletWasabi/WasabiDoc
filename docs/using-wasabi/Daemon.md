@@ -32,45 +32,33 @@ A coin will be coinjoined into the first wallet until anonymity set target is re
 
 ## Usage
 
-### Linux
+### If the package is installed
 
-If the package is installed, open the command line terminal and execute in any directory:
+Depending on your operation system, open the command line and execute:
+
+#### Linux
 
 ```bash
 wassabee mix --wallet:MyFirstWallet --destination:MySecondWallet --keepalive
 ```
 
-If the source code is built, open the terminal, navigate to the `WalletWasabi.Gui` folder inside the cloned repository, and execute:
-
-```bash
-dotnet run -- mix --wallet:MyFirstWallet --destination:MySecondWallet --keepalive
-```
-
-### macOS
-
-If the package is installed, open the Terminal and execute the following commands:
+#### macOS
 
 ```bash
 cd /Applications/Wasabi\ Wallet.app/Contents/MacOs
 ./wassabee mix --wallet:MyFirstWallet --destination:MySecondWallet --keepalive
 ```
 
-If the source code is built, open the terminal, navigate to the `WalletWasabi.Gui` folder inside the cloned repository, and execute:
-
-```bash
-dotnet run -- mix --wallet:MyFirstWallet --destination:MySecondWallet --keepalive
-```
-
-### Windows
-
-If the package is installed, open the Command Line (cmd) and execute the following commands:
+#### Windows
 
 ```bash
 cd C:\Program Files\WasabiWallet
 wassabeed.exe mix --wallet:MyFirstWallet --destination:MySecondWallet --keepalive
 ```
 
-If the source code is built, open the Command Line (cmd) and navigate to the WalletWasabi.Gui folder (inside the cloned repo) and execute:
+### If building from source code
+
+Open the terminal, navigate to the `WalletWasabi.Gui` folder inside the cloned repository and execute:
 
 ```bash
 dotnet run -- mix --wallet:MyFirstWallet --destination:MySecondWallet --keepalive
