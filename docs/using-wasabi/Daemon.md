@@ -21,6 +21,7 @@ This daemon is especially useful for power users mixing bitcoin in the backend o
 `mix` makes sure Wasabi starts in daemon and not the GUI.
 
 `--wallet:` specifies the name of the hot wallet with the coins you want to CoinJoin.
+Capitalization and whitespace is important, so for example `--wallet:"Hot Wallet".
 
 `--destination:` specifies the destination wallet that the mixed coins will be coinjoined into, after the target anonymity set is reached.
 A coin will be coinjoined into the first wallet until anonymity set target is reached, then there will be one additional CoinJoin into the `destination` wallet.
