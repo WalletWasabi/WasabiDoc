@@ -26,6 +26,7 @@ This daemon is especially useful for power users mixing bitcoin in the backend o
 A coin will be coinjoined into the first wallet until anonymity set target is reached, then there will be one additional CoinJoin into the `destination` wallet.
 
 `--keepalive` keeps the daemon running after all coins have reached the anonymity set target, and continue to CoinJoin when new coins are received into the wallet.
+This flag is needed if the daemon should mix into the `destination` wallet.
 
 `--help` displays help page and exit.
 
