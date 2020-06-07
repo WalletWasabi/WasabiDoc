@@ -171,7 +171,7 @@ Alternatively, go to the `Build Transaction` tab and do the Coldcard SD card wor
 
 ### Mix to Another Wallet
 
-Use the [daemon](/using-wasabi/Daemon.md) and run `wassabee mix --wallet:hotWasabi --destination:coldWasabi`.
+Use the [daemon](/using-wasabi/Daemon.md) and run `wassabee mix --wallet:hotWasabi --destination:coldWasabi --keepalive`.
 
 The daemon stops when all coins have reached the target anonymity set, or if you press `CTRL+C` (`CMD+C` on macOS) to stop it.
 The target anonymity set is by default `50`, but it can be changed in the `Settings` tab.
