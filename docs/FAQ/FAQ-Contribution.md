@@ -4,7 +4,7 @@
   "description": "Frequently asked questions about how Wasabikas can support the project. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
 }
 ---
-
+<div itemscope itemtype="https://schema.org/FAQPage">
 # Contributions to Wasabi
 
 :::details
@@ -140,3 +140,4 @@ It's not just the contributions to the code, but also to the documentation and t
 This includes education in meatspace tribe gatherings, but also in cyberspace peer support.
 So basically, we need help with building and shilling Wasabi!
 :::
+</div>
