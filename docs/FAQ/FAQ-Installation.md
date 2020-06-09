@@ -4,7 +4,7 @@
   "description": "Frequently asked questions about how to propperly install Wasabi Wallet. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
 }
 ---
-
+<div itemscope itemtype="https://schema.org/FAQPage">
 # Installation of Wasabi
 
 ## Installing the Package
@@ -242,3 +242,4 @@ However this is too generic, it'll certainly cause conflicts, we need to make it
 
 Also, this sounds awesome and is a [fun inside joke](https://www.youtube.com/watch?v=dLzFKx6ONZQ).
 :::
+</div>
