@@ -50,9 +50,9 @@ module.exports = {
             title = ''
           }
           const slug = slugify(title)
-          return `<details id="${slug}"><summary><a href="#${slug}" aria-hidden="true" class="header-anchor">#</a> <h4>${title}</h4></summary>`
+          return `<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question"><details id="${slug}"><summary><a href="#${slug}" aria-hidden="true" class="header-anchor">#</a> <h4><span itemprop="name">${title}</h4></span></summary><div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><div itemprop="text">`
         } else if (token.type === 'container_details_close') {
-          return '</details>'
+          return '</div></div></details></div>'
         }
       }
     }]
