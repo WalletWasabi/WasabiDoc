@@ -4,7 +4,7 @@
   "description": "Frequently asked questions regarding the introduction to Wasabi in general. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
 }
 ---
-
+<div itemscope itemtype="https://schema.org/FAQPage">
 # Introduction to Wasabi
 
 ## The Basics
@@ -237,3 +237,4 @@ For the complete explanation please read [ZeroLink: The Bitcoin Fungibility Fram
 Click [here](https://github.com/dotnet/core/blob/master/release-notes/3.1/3.1-supported-os.md) to check if .NET Core 3.1 supports your OS. 
 
 :::
+</div>
