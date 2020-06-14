@@ -30,6 +30,6 @@ You will also find some of the issues they are working on now, the research for 
 
 ### Research
 
-- [JoinMarket](/building-wasabi/Joinmarket.md)
+- [WabiSabi](/building-wasabi/WabiSabi.md)
 - [Wasabi Research Club](/building-wasabi/WasabiResearchClub.md)
-
+- [JoinMarket](/building-wasabi/Joinmarket.md)
