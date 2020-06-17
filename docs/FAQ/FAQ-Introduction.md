@@ -166,7 +166,7 @@ Key dates:
 ::::details
 ### Why is Wasabi libre and open-source software?
 
-Wasabi follows the philosophy behind Bitcoin by making the software open-source and by publishing it under MIT License.
+Wasabi follows the philosophy behind Bitcoin by making the software [open-source](https://github.com/zkSNACKs/WalletWasabi/) and by publishing it under [MIT license](https://github.com/zkSNACKs/WalletWasabi/blob/master/LICENSE.md).
 Bitcoin users prefer open-source software to proprietary software for a number of reasons, including:
 
 :::tip Control
