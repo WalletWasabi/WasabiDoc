@@ -15,7 +15,7 @@ There are two different ways that you can recover an already used wallet in Wasa
 
 ## Mnemonic Recovery Words and Password
 
-Wasabi uses the [BIP 39](/using-wasabi/BIPs.md#bip-39-mnemonic-code-for-generating-deterministic-keys) mnemonic code for generating [BIP 32](/using-wasabi/BIPs.md#bip-32-hierarchical-deterministic-wallets) hierarchical deterministic wallets.
+Wasabi uses the [BIP 39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) mnemonic code for generating [BIP 32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) hierarchical deterministic wallets.
 **Both** your password **and** the generated 12 mnemonic recovery words are the necessary secrets to recover your wallet.
 The specified wallet name is for future recognition of the wallet.
 The recovery words are spell checked based on the [official wordlist](https://github.com/bitcoin/bips/blob/master/bip-0039/english.txt), with the right word shown below the text box.
