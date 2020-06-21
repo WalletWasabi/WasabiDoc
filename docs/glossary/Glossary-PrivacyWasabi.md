@@ -53,7 +53,7 @@ Read more: [Blockchain Analysis](/why-wasabi/TransactionSurveillanceCompanies.md
 
 A filter used primarily by SPV clients to request only block headers and merkle proofs of a given transaction from full nodes.
 This is very bad for privacy, as third party servers learn about which addresses you are interested in.
-Read more: [BIP 37: Connection Bloom Filtering](/using-wasabi/BIPs.md#bip-37-connection-bloom-filtering)
+Read more: [BIP 37: Connection Bloom Filtering](https://github.com/bitcoin/bips/blob/master/bip-0037.mediawiki)
 :::
 
 :::details
