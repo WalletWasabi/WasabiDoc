@@ -637,7 +637,7 @@ If this too fails, Wasabi will (in the last resort) send the transaction through
 Once a transaction is sent, Wasabi will always open a new Tor circuit with a new random node on the network, in order to avoid giving away too much information to one party.
 When you send two consecutive transactions via Wasabi, you can be sure that they appear in two very different places on the network.
 
-Wasabi will implement the [Dandelion](/using-wasabi/BIPs.md#bip-156-dandelion-privacy-enhancing-routing) protocol for transaction broadcasting when the Bitcoin network adopts it.
+Wasabi might implement [BIP 156](https://github.com/bitcoin/bips/blob/master/bip-0156.mediawiki) the Dandelion protocol for transaction broadcasting when the Bitcoin network adopts it.
 :::
 
 :::details

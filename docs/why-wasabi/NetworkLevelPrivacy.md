@@ -83,7 +83,7 @@ Other peers cannot figure out which transaction originates from a specific node 
 However, some papers note it’s not bulletproof:
 
 > Bitcoin transaction propagation does not hide the source of a transaction very well, especially against a “supernode” eavesdropper that forms a large number of outgoing connections to reachable nodes on the network.
->  [Dandelion: Privacy-Preserving Transaction Propagation](/using-wasabi/BIPs.md#bip-156-dandelion-privacy-enhancing-routing).
+>  [Dandelion: Privacy-Preserving Transaction Propagation](https://github.com/bitcoin/bips/blob/master/bip-0156.mediawiki).
 
 #### Adversaries identified
 

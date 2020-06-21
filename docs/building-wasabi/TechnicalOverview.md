@@ -169,7 +169,7 @@ Every fee query happens over Tor with a new Tor identity.
 When clicking `Send`, the wallet will broadcast the transaction to a random peer, and then disconnect that peer.
 This is currently [the optimal way to broadcast transactions from a privacy point of view,](/why-wasabi/NetworkLevelPrivacy.md).
 
-A more ideal way would be to implement the [Dandelion](/using-wasabi/BIPs.md#bip-156-dandelion-privacy-enhancing-routing) protocol for transaction broadcasting when the Bitcoin network adopts it.
+A more ideal way would be to implement [BIP 156](https://github.com/bitcoin/bips/blob/master/bip-0156.mediawiki) the Dandelion protocol for transaction broadcasting when the Bitcoin network adopts it.
 
 ![](/SendAmountFeePassword.png)
 
