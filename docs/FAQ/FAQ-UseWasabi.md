@@ -60,7 +60,7 @@ To avoid problems, make sure you close Wasabi Wallet before proceeding to rename
 
 The password you set is used:
 * As a 13th word (passphrase) as described in [BIP 39](/using-wasabi/BIPs.md#bip-39-mnemonic-code-for-generating-deterministic-keys).
-* To encrypt the private key of the extended private key as described in [BIP 38](/using-wasabi/BIPs.md#bip-38-password-protected-private-key) to get an encrypted secret which is stored on the computer.
+* To encrypt the private key of the extended private key as described in [BIP 38](https://github.com/bitcoin/bips/blob/master/bip-0038.mediawiki) to get an encrypted secret which is stored on the computer.
 
 Wasabi stores only the BIP38 encrypted blob, so you'll need to type in the password to spend or CoinJoin from Wasabi.
 
@@ -116,7 +116,7 @@ Always back up your mnemonic recovery words, and your password in two separate s
 :::details
 ### Why BIP 38?
 
-[BIP 38](/using-wasabi/BIPs.md#bip-38-password-protected-private-key) is a good standard, a well-tested and very secure way to encrypt a private key.
+[BIP 38](https://github.com/bitcoin/bips/blob/master/bip-0038.mediawiki) is a good standard, a well-tested and very secure way to encrypt a private key.
 It is also implemented in the [NBitcoin library](https://github.com/MetacoSA/NBitcoin), which is used by Wasabi.
 Additionally, there is no standard way (BIP) to encrypt HD wallets.
 Take into account that it is not only encryption what BIP 38 provides but also a brute-force protection.
@@ -276,7 +276,7 @@ Take good care to whom you tell your addresses, and every time use a different a
 
 Every time a coin is received, the address is removed from the GUI so that you are not tempted to use it again.
 
-Wasabi uses [BIP 44 multi-account hierarchy for deterministic wallets](/using-wasabi/BIPs.md#bip-44-multi-account-hierarchy-for-deterministic-wallets) so that you can generate countless addresses and have them all securely backed-up in the 12 recovery words.
+Wasabi uses [BIP 44 multi-account hierarchy for deterministic wallets](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki) so that you can generate countless addresses and have them all securely backed-up in the 12 recovery words.
 
 :::danger
 **NEVER RE-USE ADDRESSES**
@@ -417,7 +417,7 @@ You can save the png file of the QR code in the right click menu.
 :::details
 ### What derivation paths does Wasabi use?
 
-Wasabi follows [BIP 84: Derivation scheme for P2WPKH Based Accounts](/using-wasabi/BIPs.md#bip-84-derivation-scheme-for-p2wpkh-based-accounts), so the main path is `m/84'/0'/0'`.
+Wasabi follows [BIP 84: Derivation scheme for P2WPKH Based Accounts](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki), so the main path is `m/84'/0'/0'`.
 On TestNet and RegTest Wasabi uses `m/84'/0'/0'`, and not the standard `m/84'/1'/0'`.
 Due to the CoinJoin implementation, the key depth can be rather large, thus when recovering the gap limit should be elevated to at least 100.
 :::
