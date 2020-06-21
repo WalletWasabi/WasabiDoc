@@ -57,4 +57,4 @@ BIP 44 HD wallets use an alternative key derivation function called "hardened de
 When given a hardened child private key, then the parent private key cannot be calculated.
 An address gets removed from the GUI in the `Receive` tab as soon as a coin is received to it.
 
-To protect against forced address reuse attack (Dusting), Wasabi has a modifiable dust limit, where the wallet does not show coins below a certain threshold value.
+To protect against forced address reuse attack (Dusting), Wasabi has a modifiable [dust limit](/FAQ/FAQ-UseWasabi.md#what-is-the-dust-threshold), where the wallet does not show coins below a certain threshold value.
