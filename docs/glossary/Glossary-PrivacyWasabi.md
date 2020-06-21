@@ -37,7 +37,7 @@ Read more: [What is the anonymity set?](/FAQ/FAQ-UseWasabi.md#what-is-the-anonym
 A filter representing a compact list of addresses in one block.
 Wasabi checks locally if any block filter contains transactions with addresses of the wallet.
 No public keys are sent to any third party server, thus it is very private.
-Read more: [BIP 158: Compact Block Filters for Light Clients](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients)
+Read more: [BIP 158: Compact Block Filters for Light Clients](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki)
 :::
 
 :::details

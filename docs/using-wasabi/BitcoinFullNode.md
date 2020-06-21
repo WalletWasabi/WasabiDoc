@@ -32,7 +32,7 @@ There are several software implementations that function as a full node, for exa
 ## How does Wasabi use your Bitcoin full node
 
 Wasabi currently has a work in progress partial Bitcoin Knots integration.
-As of now, the zkSNACKs coordinating server broadcasts [BIP 158 block filters](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients) to all Wasabi clients, who locally check if the filter hits for their public keys.
+As of now, the zkSNACKs coordinating server broadcasts [BIP 158 block filters](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki) to all Wasabi clients, who locally check if the filter hits for their public keys.
 Then you know that this block has a transaction of yours included, or maybe it is a false positive.
 
 :::warning Work in progress

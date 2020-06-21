@@ -208,7 +208,7 @@ When this is signed on the device with the private key (like an offline laptop r
 :::details
 ### What are BIP-158 block filters?
 
-A [BIP-158 block filter](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients) is a data structure that contains a hash of all the addresses referenced in a block.
+A [BIP-158 block filter](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki) is a data structure that contains a hash of all the addresses referenced in a block.
 It is much smaller than the whole block itself.
 The Wasabi coordinator generates these block filters, and sends them out to any wallet that requests them.
 A wallet client checks locally if the block filter matches any of the addresses in the wallet.
@@ -241,7 +241,7 @@ You know that Tor is properly connected, that all the block filters and all the 
 :::details
 ### What does it mean "Missing Filters"?
 
-The `Missing Filters` label indicates that Wasabi is still downloading the [BIP 158 block filters](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients) and it's synchronizing your wallet.
+The `Missing Filters` label indicates that Wasabi is still downloading the [BIP 158 block filters](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki) and it's synchronizing your wallet.
 You have to wait until the status bar is `Ready`.
 ::::
 
@@ -449,7 +449,7 @@ When Wasabi is running, it connects to random Bitcoin peer to peer nodes and lis
 Based on this information Wasabi builds its own local mempool of unconfirmed transactions.
 So when you have Wasabi running, you will be notified about an incoming receiving transaction as soon as it is gossiped on the network.
 But when Wasabi is offline, it does not listen to the network and it will not know about your unconfirmed transaction when you next launch Wasabi.
-In this case you have to wait until your transaction is confirmed in a block, and based on the [BIP 158 block filters](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients), Wasabi will download that whole block including your transaction from a random P2P node.
+In this case you have to wait until your transaction is confirmed in a block, and based on the [BIP 158 block filters](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki), Wasabi will download that whole block including your transaction from a random P2P node.
 :::
 
 ## Send
@@ -1015,7 +1015,7 @@ It will be queued and registered for the next CoinJoin round.
 
 Wasabi communicates in many ways to the coordinator server, and it is always over the Tor network.
 
-First of all, Wasabi uses [BIP 158 block filters](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients) to ensure network level privacy.
+First of all, Wasabi uses [BIP 158 block filters](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki) to ensure network level privacy.
 You can follow these FAQs to have a full explanation on the theme:
 - [What are BIP-158 Block Filters?](/FAQ/FAQ-UseWasabi.md#what-are-bip-158-block-filters)
 - [What software supplies the block filters that Wasabi uses?](/FAQ/FAQ-Introduction.md#what-software-supplies-the-block-filters-that-wasabi-uses)
@@ -1521,5 +1521,5 @@ It affected about 1-5% of users.
 This issue was introduced to Wasabi with the [v1.1.4 release](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v1.1.4) in April, 2019 by adding a wallet cache, that resulted in 12 times faster wallet load.
 It was [thought to be fixed](https://old.reddit.com/r/WasabiWallet/comments/c2hco8/announcement_spent_coin_and_lost_unconfirmed/) in June by adding an autocorrection mechanism, but some users were still reporting this issue.
 
-It ultimately got fixed in [v1.1.10](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v1.1.10) by introducing an upgraded version of [BIP 158 block filters](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients/) and changing the wallet cache architecture.
+It ultimately got fixed in [v1.1.10](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v1.1.10) by introducing an upgraded version of [BIP 158 block filters](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki) and changing the wallet cache architecture.
 :::

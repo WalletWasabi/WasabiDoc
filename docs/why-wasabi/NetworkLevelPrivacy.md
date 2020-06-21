@@ -51,7 +51,7 @@ This means that it is possible (but not mandatory) to start Bitcoin Knots during
 Without having to install or configure anything.
 :::
 
-However, even if no full node is installed, Wasabi has a light client mode based on [BIP 158 block filters](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients).
+However, even if no full node is installed, Wasabi has a light client mode based on [BIP 158 block filters](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki).
 The Wasabi server sends a filter of all the transactions in each block to all the users.
 Then, users check locally if the block contains any transactions with their addresses.
 If not, then the filter is stored for later reference, and no block is downloaded.

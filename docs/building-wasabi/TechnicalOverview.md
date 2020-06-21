@@ -90,7 +90,7 @@ Importantly, registration of CoinJoin inputs and outputs is done through differe
 
 ![](/StatusBarTorRunning.png)
 
-Wasabi's backend is used to facilitate [Chaumian CoinJoin](https://github.com/nopara73/ZeroLink#ii-chaumian-coinjoin) coordination between the mixing participants, and to serve Golomb-Rice filters to the clients, similarly to [BIP 158](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients).
+Wasabi's backend is used to facilitate [Chaumian CoinJoin](https://github.com/nopara73/ZeroLink#ii-chaumian-coinjoin) coordination between the mixing participants, and to serve Golomb-Rice filters to the clients, similarly to [BIP 158](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki).
 More information will be provided about the difference soon.
 
 It is worth pointing out that the initial design choice of a light wallet was made because such a wallet can attract orders of magnitude more users, compared to a wallet on top of a full node.
