@@ -97,7 +97,7 @@ Verify that the fingerprint is `${zksnacksPublicKeyFingerprint}`.
 
 ![](/DownloadTar.png)
 
-3. In the Download folder, run `gpg2 --verify Wasabi.${currentVersion}.tar.gz.asc`.
+3. In the Download folder, run `gpg2 --verify WasabiLinux.${currentVersion}.tar.gz.asc`.
 If the message returned says `Good signature from zkSNACKs` and that it was signed with `Primary key fingerprint: ${zksnacksPublicKeyFingerprint}`, then the software was not tampered with since the developer signed it.
 
 :::tip
