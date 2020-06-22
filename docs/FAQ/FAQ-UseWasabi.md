@@ -59,8 +59,8 @@ To avoid problems, make sure you close Wasabi Wallet before proceeding to rename
 ### What is the password used for?
 
 The password you set is used:
-* As a 13th word (passphrase) as described in [BIP 39](/using-wasabi/BIPs.md#bip-39-mnemonic-code-for-generating-deterministic-keys).
-* To encrypt the private key of the extended private key as described in [BIP 38](/using-wasabi/BIPs.md#bip-38-password-protected-private-key) to get an encrypted secret which is stored on the computer.
+* As a 13th word (passphrase) as described in [BIP 39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki).
+* To encrypt the private key of the extended private key as described in [BIP 38](https://github.com/bitcoin/bips/blob/master/bip-0038.mediawiki) to get an encrypted secret which is stored on the computer.
 
 Wasabi stores only the BIP38 encrypted blob, so you'll need to type in the password to spend or CoinJoin from Wasabi.
 
@@ -116,7 +116,7 @@ Always back up your mnemonic recovery words, and your password in two separate s
 :::details
 ### Why BIP 38?
 
-[BIP 38](/using-wasabi/BIPs.md#bip-38-password-protected-private-key) is a good standard, a well-tested and very secure way to encrypt a private key.
+[BIP 38](https://github.com/bitcoin/bips/blob/master/bip-0038.mediawiki) is a good standard, a well-tested and very secure way to encrypt a private key.
 It is also implemented in the [NBitcoin library](https://github.com/MetacoSA/NBitcoin), which is used by Wasabi.
 Additionally, there is no standard way (BIP) to encrypt HD wallets.
 Take into account that it is not only encryption what BIP 38 provides but also a brute-force protection.
@@ -130,7 +130,7 @@ Only device side passphrase is supported.
 PC side passphrase is not.
 This means the hidden wallet feature can be used with Trezor T, Ledger Nano S and ColdCard, but it cannot be used with Trezor One.
 After the 12 or 24 words, enter the passphrase as the 13th or 25th word.
-It’s part of [BIP 39](/using-wasabi/BIPs.md#bip-39-mnemonic-code-for-generating-deterministic-keys).
+It’s part of [BIP 39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki).
 :::
 
 :::details
@@ -208,7 +208,7 @@ When this is signed on the device with the private key (like an offline laptop r
 :::details
 ### What are BIP-158 block filters?
 
-A [BIP-158 block filter](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients) is a data structure that contains a hash of all the addresses referenced in a block.
+A [BIP-158 block filter](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki) is a data structure that contains a hash of all the addresses referenced in a block.
 It is much smaller than the whole block itself.
 The Wasabi coordinator generates these block filters, and sends them out to any wallet that requests them.
 A wallet client checks locally if the block filter matches any of the addresses in the wallet.
@@ -241,7 +241,7 @@ You know that Tor is properly connected, that all the block filters and all the 
 :::details
 ### What does it mean "Missing Filters"?
 
-The `Missing Filters` label indicates that Wasabi is still downloading the [BIP 158 block filters](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients) and it's synchronizing your wallet.
+The `Missing Filters` label indicates that Wasabi is still downloading the [BIP 158 block filters](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki) and it's synchronizing your wallet.
 You have to wait until the status bar is `Ready`.
 ::::
 
@@ -276,7 +276,7 @@ Take good care to whom you tell your addresses, and every time use a different a
 
 Every time a coin is received, the address is removed from the GUI so that you are not tempted to use it again.
 
-Wasabi uses [BIP 44 multi-account hierarchy for deterministic wallets](/using-wasabi/BIPs.md#bip-44-multi-account-hierarchy-for-deterministic-wallets) so that you can generate countless addresses and have them all securely backed-up in the 12 recovery words.
+Wasabi uses [BIP 44 multi-account hierarchy for deterministic wallets](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki) so that you can generate countless addresses and have them all securely backed-up in the 12 recovery words.
 
 :::danger
 **NEVER RE-USE ADDRESSES**
@@ -417,7 +417,7 @@ You can save the png file of the QR code in the right click menu.
 :::details
 ### What derivation paths does Wasabi use?
 
-Wasabi follows [BIP 84: Derivation scheme for P2WPKH Based Accounts](/using-wasabi/BIPs.md#bip-84-derivation-scheme-for-p2wpkh-based-accounts), so the main path is `m/84'/0'/0'`.
+Wasabi follows [BIP 84: Derivation scheme for P2WPKH Based Accounts](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki), so the main path is `m/84'/0'/0'`.
 On TestNet and RegTest Wasabi uses `m/84'/0'/0'`, and not the standard `m/84'/1'/0'`.
 Due to the CoinJoin implementation, the key depth can be rather large, thus when recovering the gap limit should be elevated to at least 100.
 :::
@@ -449,7 +449,7 @@ When Wasabi is running, it connects to random Bitcoin peer to peer nodes and lis
 Based on this information Wasabi builds its own local mempool of unconfirmed transactions.
 So when you have Wasabi running, you will be notified about an incoming receiving transaction as soon as it is gossiped on the network.
 But when Wasabi is offline, it does not listen to the network and it will not know about your unconfirmed transaction when you next launch Wasabi.
-In this case you have to wait until your transaction is confirmed in a block, and based on the [BIP 158 block filters](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients), Wasabi will download that whole block including your transaction from a random P2P node.
+In this case you have to wait until your transaction is confirmed in a block, and based on the [BIP 158 block filters](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki), Wasabi will download that whole block including your transaction from a random P2P node.
 :::
 
 ## Send
@@ -637,7 +637,7 @@ If this too fails, Wasabi will (in the last resort) send the transaction through
 Once a transaction is sent, Wasabi will always open a new Tor circuit with a new random node on the network, in order to avoid giving away too much information to one party.
 When you send two consecutive transactions via Wasabi, you can be sure that they appear in two very different places on the network.
 
-Wasabi will implement the [Dandelion](/using-wasabi/BIPs.md#bip-156-dandelion-privacy-enhancing-routing) protocol for transaction broadcasting when the Bitcoin network adopts it.
+Wasabi might implement [BIP 156](https://github.com/bitcoin/bips/blob/master/bip-0156.mediawiki) the Dandelion protocol for transaction broadcasting when the Bitcoin network adopts it.
 :::
 
 :::details
@@ -1015,7 +1015,7 @@ It will be queued and registered for the next CoinJoin round.
 
 Wasabi communicates in many ways to the coordinator server, and it is always over the Tor network.
 
-First of all, Wasabi uses [BIP 158 block filters](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients) to ensure network level privacy.
+First of all, Wasabi uses [BIP 158 block filters](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki) to ensure network level privacy.
 You can follow these FAQs to have a full explanation on the theme:
 - [What are BIP-158 Block Filters?](/FAQ/FAQ-UseWasabi.md#what-are-bip-158-block-filters)
 - [What software supplies the block filters that Wasabi uses?](/FAQ/FAQ-Introduction.md#what-software-supplies-the-block-filters-that-wasabi-uses)
@@ -1082,7 +1082,7 @@ Example: If you select 10 coins with total value of 0.2 btc but the sum of 4 coi
 Write down your recovery words!
 :::
 
-Wasabi uses [BIP 39: mnemonic code for generating deterministic keys](/using-wasabi/BIPs.md#bip-39-mnemonic-code-for-generating-deterministic-keys) to enable easy backups of all private keys in the wallet.
+Wasabi uses [BIP 39: mnemonic code for generating deterministic keys](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) to enable easy backups of all private keys in the wallet.
 The mnemonic is displayed as 12 recovery words that are only shown once during the wallet generation.
 
 ![](/WalletManagerRecoveryWords.png)
@@ -1521,5 +1521,5 @@ It affected about 1-5% of users.
 This issue was introduced to Wasabi with the [v1.1.4 release](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v1.1.4) in April, 2019 by adding a wallet cache, that resulted in 12 times faster wallet load.
 It was [thought to be fixed](https://old.reddit.com/r/WasabiWallet/comments/c2hco8/announcement_spent_coin_and_lost_unconfirmed/) in June by adding an autocorrection mechanism, but some users were still reporting this issue.
 
-It ultimately got fixed in [v1.1.10](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v1.1.10) by introducing an upgraded version of [BIP 158 block filters](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients/) and changing the wallet cache architecture.
+It ultimately got fixed in [v1.1.10](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v1.1.10) by introducing an upgraded version of [BIP 158 block filters](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki) and changing the wallet cache architecture.
 :::

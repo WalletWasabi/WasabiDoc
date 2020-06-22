@@ -93,7 +93,7 @@ B [3 btc]       E [5 btc] (= change A)
 
 ### Replace by Fee
 
-[BIP 125](/using-wasabi/BIPs.md#bip-125-opt-in-full-replace-by-fee-signaling) allows for one unconfirmed transaction to be double-spent and replaced by a second transaction that pays a higher fee.
+[BIP 125](https://github.com/bitcoin/bips/blob/master/bip-0125.mediawiki) allows for one unconfirmed transaction to be double-spent and replaced by a second transaction that pays a higher fee.
 However, the output that is reduced in the second transaction is likely to be the change output, as the sender pays the fee.
 
 ```

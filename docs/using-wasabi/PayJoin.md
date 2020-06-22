@@ -15,7 +15,7 @@
 
 1. Load a wallet and open the `Send` tab.
 
-2. Request from the receiver a [BIP21 Bitcoin URI](/using-wasabi/BIPs.md#bip-21-uri-scheme) with the flag `pj=` and paste it into the address field of the `Send` tab.
+2. Request from the receiver a [BIP21 Bitcoin URI](https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki) with the flag `pj=` and paste it into the address field of the `Send` tab.
 
 3. Select the coins you want to send.
 
@@ -29,7 +29,8 @@ PayJoin is a collaborative transaction between the sender and the receiver of a 
 The goal of the protocol is to break the common input ownership heuristic, while making it difficult to fingerprint that the transaction is in fact a CoinJoin.
 Further, it reduces the transaction fees paid by the merchant due to consolidation of coins.
 
-Wasabi diverges from [the initial BIP 79 Bustapay proposal](https://github.com/bitcoin/bips/blob/master/bip-0079.mediawiki), the details of the implemented specification are [documented here](https://docs.btcpayserver.org/features/payjoin/payjoin-spec).
+Wasabi diverges from [the BIP 79 Bustapay](https://github.com/bitcoin/bips/blob/master/bip-0079.mediawiki).
+The details of the implemented specification are documented [here](https://docs.btcpayserver.org/features/payjoin/payjoin-spec).
 
 ## Coordination
 

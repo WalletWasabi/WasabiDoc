@@ -51,7 +51,7 @@ This is someone intentionally deanonymizing himself, and he might have quite dub
 
 ### Remove used address from GUI
 
-Wasabi uses the industry best practice [BIP 44 hierarchical deterministic wallet](/using-wasabi/BIPs.md#bip-44-multi-account-hierarchy-for-deterministic-wallets) where, from one master secret, a tree structure of child private keys are generated.
+Wasabi uses the industry best practice [BIP 44 Multi-Account Hierarchy for Deterministic Wallets](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki), where from one master secret a tree structure of child private keys are generated.
 It is deterministic because the same parent secret always calculates the same child private keys.
 BIP 44 HD wallets use an alternative key derivation function called "hardened derivation", which alters the relationship between parent keys and child keys in a way that increases security significantly.
 When given a hardened child private key, then the parent private key cannot be calculated.

@@ -37,7 +37,7 @@ Read more: [What is the anonymity set?](/FAQ/FAQ-UseWasabi.md#what-is-the-anonym
 A filter representing a compact list of addresses in one block.
 Wasabi checks locally if any block filter contains transactions with addresses of the wallet.
 No public keys are sent to any third party server, thus it is very private.
-Read more: [BIP 158: Compact Block Filters for Light Clients](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients)
+Read more: [BIP 158: Compact Block Filters for Light Clients](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki)
 :::
 
 :::details
@@ -53,7 +53,7 @@ Read more: [Blockchain Analysis](/why-wasabi/TransactionSurveillanceCompanies.md
 
 A filter used primarily by SPV clients to request only block headers and merkle proofs of a given transaction from full nodes.
 This is very bad for privacy, as third party servers learn about which addresses you are interested in.
-Read more: [BIP 37: Connection Bloom Filtering](/using-wasabi/BIPs.md#bip-37-connection-bloom-filtering)
+Read more: [BIP 37: Connection Bloom Filtering](https://github.com/bitcoin/bips/blob/master/bip-0037.mediawiki)
 :::
 
 :::details

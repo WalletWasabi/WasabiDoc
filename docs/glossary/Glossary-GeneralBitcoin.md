@@ -357,7 +357,7 @@ Read more: [BIP 174 Partially Signed Bitcoin Transaction Format](https://github.
 
 The signature of a P2WPKH contains the same information as a Pay-to-Public-Key-Hash (P2PKH) spending, but is located in the witness field instead of the scriptSig field.
 The scriptPubKey is also modified.
-Read more: [BIP 84 derivation scheme for P2WPKH based accounts](/using-wasabi/BIPs.md#bip-84-derivation-scheme-for-p2wpkh-based-accounts)
+Read more: [BIP 84 derivation scheme for P2WPKH based accounts](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki)
 :::
 
 :::details

@@ -90,7 +90,7 @@ Importantly, registration of CoinJoin inputs and outputs is done through differe
 
 ![](/StatusBarTorRunning.png)
 
-Wasabi's backend is used to facilitate [Chaumian CoinJoin](https://github.com/nopara73/ZeroLink#ii-chaumian-coinjoin) coordination between the mixing participants, and to serve Golomb-Rice filters to the clients, similarly to [BIP 158](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients).
+Wasabi's backend is used to facilitate [Chaumian CoinJoin](https://github.com/nopara73/ZeroLink#ii-chaumian-coinjoin) coordination between the mixing participants, and to serve Golomb-Rice filters to the clients, similarly to [BIP 158](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki).
 More information will be provided about the difference soon.
 
 It is worth pointing out that the initial design choice of a light wallet was made because such a wallet can attract orders of magnitude more users, compared to a wallet on top of a full node.
@@ -169,7 +169,7 @@ Every fee query happens over Tor with a new Tor identity.
 When clicking `Send`, the wallet will broadcast the transaction to a random peer, and then disconnect that peer.
 This is currently [the optimal way to broadcast transactions from a privacy point of view,](/why-wasabi/NetworkLevelPrivacy.md).
 
-A more ideal way would be to implement the [Dandelion](/using-wasabi/BIPs.md#bip-156-dandelion-privacy-enhancing-routing) protocol for transaction broadcasting when the Bitcoin network adopts it.
+A more ideal way would be to implement [BIP 156](https://github.com/bitcoin/bips/blob/master/bip-0156.mediawiki) the Dandelion protocol for transaction broadcasting when the Bitcoin network adopts it.
 
 ![](/SendAmountFeePassword.png)
 

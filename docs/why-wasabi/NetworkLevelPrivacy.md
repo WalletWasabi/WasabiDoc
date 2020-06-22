@@ -25,7 +25,7 @@ A Bitcoin full node broadcasts not just the transactions of its user, but it als
 Thus it is very difficult to find out which transactions originated from which full node.
 However, when a node or a wallet does not gossip all transactions, but only the transactions of its user, then it is easier to find out which node has sent those specific transactions.
 
-There are light wallets, which query a backend server to get information regarding specific addresses or use [BIP 37](/using-wasabi/BIPs.md#bip-37-connection-bloom-filtering) bloom filtering SPV wallet protocol, which is [extremely bad for privacy](https://jonasnick.github.io/blog/2015/02/12/privacy-in-bitcoinj/).
+There are light wallets, which query a backend server to get information regarding specific addresses or use [BIP 37](https://github.com/bitcoin/bips/blob/master/bip-0037.mediawiki) bloom filtering SPV wallet protocol, which is [extremely bad for privacy](https://jonasnick.github.io/blog/2015/02/12/privacy-in-bitcoinj/).
 And there is Electrum, which [sends your addresses](https://www.reddit.com/r/Bitcoin/comments/2feox9/electrum_securityprivacy_model/ck8szc0/) to random Electrum servers.
 
 :::danger
@@ -51,7 +51,7 @@ This means that it is possible (but not mandatory) to start Bitcoin Knots during
 Without having to install or configure anything.
 :::
 
-However, even if no full node is installed, Wasabi has a light client mode based on [BIP 158 block filters](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients).
+However, even if no full node is installed, Wasabi has a light client mode based on [BIP 158 block filters](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki).
 The Wasabi server sends a filter of all the transactions in each block to all the users.
 Then, users check locally if the block contains any transactions with their addresses.
 If not, then the filter is stored for later reference, and no block is downloaded.
@@ -83,7 +83,7 @@ Other peers cannot figure out which transaction originates from a specific node 
 However, some papers note it’s not bulletproof:
 
 > Bitcoin transaction propagation does not hide the source of a transaction very well, especially against a “supernode” eavesdropper that forms a large number of outgoing connections to reachable nodes on the network.
->  [Dandelion: Privacy-Preserving Transaction Propagation](/using-wasabi/BIPs.md#bip-156-dandelion-privacy-enhancing-routing).
+>  [Dandelion: Privacy-Preserving Transaction Propagation](https://github.com/bitcoin/bips/blob/master/bip-0156.mediawiki).
 
 #### Adversaries identified
 

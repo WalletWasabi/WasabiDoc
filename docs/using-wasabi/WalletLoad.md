@@ -37,7 +37,7 @@ Alternatively, you can double-click a wallet in the `Load Wallet` tab, or select
 
 ### Filter download
 
-As soon as you start Wasabi, it connects to the backend server with a new Tor identity and requests the [BIP 158 block filters](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients).
+As soon as you start Wasabi, it connects to the backend server with a new Tor identity and requests the [BIP 158 block filters](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki).
 At the first start, this can take a couple of minutes because all filters need to be downloaded, but for the subsequent starts, this is faster as only the most recent filters are requested.
 
 ### Filter scanning

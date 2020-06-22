@@ -29,7 +29,7 @@ Here you find a drop-down menu of which network Wasabi should use, `Main`, `Test
 ![](/SettingsNetwork.png)
 
 Notice that the setting does only apply for the next start of Wasabi, so you must close Wasabi, and then re-open it before you are on testnet.
-When Wasabi is started in testnet, it will fetch testnet [BIP 158 block filters](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients) from the coordinator.
+When Wasabi is started in testnet, it will fetch testnet [BIP 158 block filters](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki) from the coordinator.
 For the first start, this may take a couple of minutes.
 
 After the testing, set the settings back to mainnet, and close Wasabi.

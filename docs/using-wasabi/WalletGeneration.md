@@ -39,7 +39,7 @@ If you are uncertain about how to create a secure password, refer to [Password B
 ![](/WalletManagerGenerateWallet.png)
 
 5. Write down the 12 recovery words (mnemonic seed phrase).
-You can use this seed phrase **together with** your password to recover your wallet on a different computer using Wasabi or another [BIP 38](/using-wasabi/BIPs.md#bip-38-password-protected-private-key) compliant wallet.
+You can use this seed phrase **together with** your password to recover your wallet on a different computer using Wasabi or another [BIP 38](https://github.com/bitcoin/bips/blob/master/bip-0038.mediawiki) compliant wallet.
 
 :::danger Back up your recovery words!
 Without the recovery words (Seed phrase) AND the password, you cannot recover your wallet.
@@ -56,14 +56,14 @@ So, type or paste the password in the text box, and click `Load Wallet`.
 
 ## Important info about your wallet password
 
-Wasabi integrates [BIP 38: Password-Protected Private Key](/using-wasabi/BIPs.md#bip-38-password-protected-private-key), which means that the secrets needed to spend the bitcoin are encrypted on the computer.
+Wasabi integrates [BIP 38: Password-Protected Private Key](https://github.com/bitcoin/bips/blob/master/bip-0038.mediawiki), which means that the secrets needed to spend the bitcoin are encrypted on the computer.
 If someone has compromised your operating system and hardware and he only has the encrypted secrets, then no bitcoin can be spent by him.
 You need **both** the encrypted secrets and the password in order to enable the private key which can sign a spending transaction.
 This means that the password is your last line of defense against anyone who tries to steal your bitcoin.
 
 ## How are the secrets created
 
-Wasabi uses [BIP 38: Password-Protected Private Key](/using-wasabi/BIPs.md#bip-38-password-protected-private-key)
+Wasabi uses [BIP 38: Password-Protected Private Key](https://github.com/bitcoin/bips/blob/master/bip-0038.mediawiki)
 
 ```
                       +--------------+
