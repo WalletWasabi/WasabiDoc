@@ -260,7 +260,6 @@ module.exports = {
           collapsable: false,
           sidebarDepth: 2,
           children: [
-            "/building-wasabi/Joinmarket.md",
             "/building-wasabi/WasabiResearchClub.md"
           ]
         }
