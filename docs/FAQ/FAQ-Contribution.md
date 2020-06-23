@@ -80,7 +80,7 @@ The beauty of Wasabi is that it's not just a very awesome wallet by default, but
 This is provided by [zkSnacks Ltd.](https://zksnacks.com), and in exchange for this service, the user pays a coordinator fee.
 In return, zkSnacks is supporting several developers to dedicate their full time to contribute to this open-source project.
 There are also projects like the [contribution game](/building-wasabi/ContributionGame.md) where a bounty is paid out to any contributor worthy the praise.
-Specifically for [education](/building-wasabi/ContributionGame.md#education-contribution-game), there is a monthly budget of 1.000 USD to reward contributors for the maintenance and expansion if this documentation, the creation of videos and podcasts, and direct peer support in the communication channels.
+Specifically for [education](/building-wasabi/ContributionGame.md#education-contribution-game), there is a monthly budget of 1.000 USD to reward contributors for the maintenance and expansion if the documentation, the creation of videos and podcasts, and direct peer support in the communication channels.
 :::
 
 ::::details
