@@ -39,7 +39,7 @@ If you are uncertain about how to create a secure password, refer to [Password B
 ![](/WalletManagerGenerateWallet.png)
 
 5. Write down the 12 recovery words (mnemonic seed phrase).
-You can use this seed phrase **together with** your password to recover your wallet on a different computer using Wasabi or another [BIP 38](https://github.com/bitcoin/bips/blob/master/bip-0038.mediawiki) compliant wallet.
+You can use this seed phrase **together with** your password to recover your wallet on a different computer using Wasabi or another [BIP 39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) compliant wallet.
 
 :::danger Back up your recovery words!
 Without the recovery words (Seed phrase) AND the password, you cannot recover your wallet.
