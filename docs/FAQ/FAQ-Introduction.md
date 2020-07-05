@@ -228,6 +228,6 @@ For the complete explanation please read [ZeroLink: The Bitcoin Fungibility Fram
 ### What are the minimal requirements to run Wasabi?
 
 Wasabi runs in most operating systems with 64-bit architecture.
-For the complete list of all the officially supported software and devices by Wasabi Wallet. click [here](https://github.com/zkSNACKs/WalletWasabi/blob/master/WalletWasabi.Documentation/WasabiCompatibility.md).
+For the complete list of all the officially supported software and devices by Wasabi Wallet, click [here](https://github.com/zkSNACKs/WalletWasabi/blob/master/WalletWasabi.Documentation/WasabiCompatibility.md).
 
 :::
