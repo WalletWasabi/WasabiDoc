@@ -1154,7 +1154,7 @@ That gives you access to your bitcoin.
 ### What hardware wallets does Wasabi support?
 
 Wasabi supports a variety hardware wallets thanks to the [Bitcoin Core Hardware Wallet Interface (HWI)](https://github.com/bitcoin-core/HWI).
-For the complete list of all the officially supported hardware wallets by Wasabi Wallet. click [here](https://github.com/zkSNACKs/WalletWasabi/blob/master/WalletWasabi.Documentation/WasabiCompatibility.md).
+For the complete list of all the officially supported hardware wallets by Wasabi Wallet, click [here](https://github.com/zkSNACKs/WalletWasabi/blob/master/WalletWasabi.Documentation/WasabiCompatibility.md).
 ::::
 
 :::details
