@@ -1153,17 +1153,8 @@ That gives you access to your bitcoin.
 ::::details
 ### What hardware wallets does Wasabi support?
 
-The answer is simple:
-
-:::tip
-All of them!
-At least those following industry standards.
-:::
-
-This is thanks to the awesome [Hardware Wallet Interface of Bitcoin Core](https://github.com/bitcoin-core/HWI/).
-
-However, not all of the many hardware wallets have been tested and reviewed by the developers.
-Everything seems to work fine with the [ColdCard](https://coldcardwallet.com), [BitBox](https://shiftcrypto.ch/bitbox02), [Trezor](https://trezor.io), [Ledger](https://ledger.com) and [KeepKey](https://shapeshift.io/keepkey).
+Wasabi uses the Bitcoin Core [Hardware Wallet Interface (HWI)](https://github.com/bitcoin-core/HWI) which allows it to support a variety of hardware wallets.
+For the complete list of all the officially supported hardware wallets, click [here](https://github.com/zkSNACKs/WalletWasabi/blob/master/WalletWasabi.Documentation/WasabiCompatibility.md#officially-supported-hardware-wallets).
 ::::
 
 :::details
