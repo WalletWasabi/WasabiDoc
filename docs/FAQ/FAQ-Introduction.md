@@ -227,13 +227,7 @@ For the complete explanation please read [ZeroLink: The Bitcoin Fungibility Fram
 :::details
 ### What are the minimal requirements to run Wasabi?
 
-- 64-bit architecture
-- Windows 10+
-- macOS 10.13+
-- Debian 9+
-- Ubuntu 16.04+
-- For other Linux distributions, it depends on the specific OS.
-
-Click [here](https://github.com/dotnet/core/blob/master/release-notes/3.1/3.1-supported-os.md) to check if .NET Core 3.1 supports your OS. 
+Wasabi runs in most operating systems with 64-bit architecture.
+For the complete list of all the officially supported operating systems, click [here](https://github.com/zkSNACKs/WalletWasabi/blob/master/WalletWasabi.Documentation/WasabiCompatibility.md#officially-supported-operating-systems).
 
 :::
