@@ -76,7 +76,7 @@ In the settings specify the local IP address and port, or the tor hidden service
 There are two ways to confirm that your Wasabi client is connected to your own full node.
 
 First, in the Wasabi logs.
-When downloading a block, you should see:
+Once you receive a transaction Wasabi downloads the block containing that transaction from your node, and in the logs you should see:
 `Block acquired from local P2P connection.`
 
 Second, by checking the connected peers inside your full node.
