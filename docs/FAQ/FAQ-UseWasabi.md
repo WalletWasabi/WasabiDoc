@@ -1241,7 +1241,7 @@ Read more [here](/using-wasabi/ColdWasabi.md#cold-wasabi-protocol)
 :::details
 ### Does Ledger Live send my public keys and addresses to a third party server?
 
-Only if you add your accounts in the app, but not if you update your device firmware or install apps. 
+Only if you add your accounts in the app, but not if you update your device firmware or install apps.
 When using the Ledger Live software wallet to manage your coins, you send all of your used, and 20 unused addresses to Ledger's nodes. [Source](https://support.ledger.com/hc/en-us/articles/360010892360)
 
 Your extended public key, however, is not shared with Ledger's node, but rather stored encrypted on your local machine.
@@ -1393,9 +1393,9 @@ Alternatively, you can find the logs inside your [Wasabi data folder](/FAQ/FAQ-U
 :::
 
 :::details
-### How to activate Lurking Wife Mode?
+### How to activate/deactivate Lurking Wife Mode?
 
-You can activate Lurking Wife Mode from `Settings` or by clicking on your wallet balance in the top right corner.
+You can activate/deactivate Lurking Wife Mode from `Settings` or by clicking the eye icon on the `Wallet Explorer` header in the top right corner.
 You can read more about Lurking Wife Mode [here](/using-wasabi/LurkingWifeMode.md).
 :::
 
