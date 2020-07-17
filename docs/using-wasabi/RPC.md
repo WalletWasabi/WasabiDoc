@@ -128,7 +128,7 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getstatus"}' http://1
 
 ### createwallet
 
-Returns the twelve recovery words of the freshly generated wallet. 
+Returns the twelve recovery words of the freshly generated wallet.
 
 ```bash
 curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"createwallet","params":["WalletName", "Password"]}' http://127.0.0.1:37128/ | jq                                                   
@@ -186,7 +186,7 @@ In case we try to generate a wallet with a too long password it will return:
 Allows the RPC server to open/switch wallets.
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0","method":"selectwallet", "params" : ["TestNet"]}' http://127.0.0.1:37128/
+curl -s --data-binary '{"jsonrpc":"2.0","method":"selectwallet", "params" : ["WalletName", "TestNet"]}' http://127.0.0.1:37128/
 curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getwalletinfo"}' http://127.0.0.1:37128/ | jq
 ```
 
