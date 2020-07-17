@@ -302,7 +302,9 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getwalletinfo"}' http
 {
   "jsonrpc": "2.0",
   "result": {
+    "walletName": "testnet-wallet",
     "walletFile": "/home/user/.walletwasabi/client/Wallets/testnet-wallet.json",
+    "State": "Started",
     "extendedAccountPublicKey": "tpubDCd1v6acjNY3uUqAtBGC6oBTGrCBWphMvkWjAqM2SFZahZb91JUTXZeZqxzscezR16XHkwi1723qo94EKgR75aoFaahnaHiiLP2JrrTh2Rk",
     "extendedAccountZpub": "vpub5YarnXR6ijVdw6G5mGhrUhf5bnodeCDJYtszFVW7LL3vr5HyRmJF8zfTZWzv6LjLPukmeR11ebWhLPLVVRjqbfyknJZdiwRWCyJcKeDdsC8",
     "accountKeyPath": "m/84'/0'/0'",
@@ -440,6 +442,7 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"gethistory"}' http:/1
       "amount": -2110090,
       "label": "David",
       "tx": "680d8940145f53cf2a0c24b27ba0bb53fbd639011eba3d23c9d53123ddae5f32"
+      "islikelycoinjoin": "false"
     },
     {
       "datetime": "2019-10-04T17:00:15+00:00",
@@ -447,6 +450,7 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"gethistory"}' http:/1
       "amount": -2120000,
       "label": "Pablo",
       "tx": "e5e4486ad2c9fc6f3c262c4c64fa5fbcc607aa301182d45848a6692c5a0d0fc0"
+      "islikelycoinjoin": "true"
     },
     {
       "datetime": "2019-09-22T11:59:32+00:00",
@@ -454,6 +458,7 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"gethistory"}' http:/1
       "amount": 44480000,
       "label": "kyed-exchange",
       "tx": "6a2e99298dbbd201230a99e62ea584d7f63f62ad1de7166f24eb2e24867f6faf"
+      "islikelycoinjoin": "false"
     },
 ```
 
