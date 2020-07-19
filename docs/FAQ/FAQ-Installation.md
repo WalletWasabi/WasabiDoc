@@ -187,29 +187,7 @@ You can update the master branch with `git pull`.
 :::details
 ### How can I verify the deterministic build?
 
-Wasabi has [reproducible and deterministic builds](/using-wasabi/DeterministicBuild.md), which means that you can verify that the compiled packages are from the [source code](https://github.com/zksnacks/walletwasabi).
-
-On Windows, you can verify this with `git diff --no-index win7-x64 "C:\Program Files\WasabiWallet"`.
-
-On Debian and Ubuntu do
-
-```sh
-git diff --no-index linux-x64/ /usr/local/bin/wasabiwallet/
-```
-
-On other Linux do
-
-```sh
-git diff --no-index linux-x64/ WasabiLinux-${currentVersion}
-```
-
-And on Mac first unzip and verify with
-
-```sh
-7z x Wasabi-${currentVersion}.dmg -o WasabiOsx
-git diff --no-index osx-x64/ WasabiOsx/Wasabi\ Wallet.App/Contents/MacOS/
-```
-:::
+The guide for the deterministic builds can be found in the [WalletWasabi repository](https://github.com/zkSNACKs/WalletWasabi/blob/master/WalletWasabi.Documentation/Guides/DeterministicBuildGuide.md).
 
 ::::details
 ### My antivirus marks Wasabi Wallet as a virus. Am I downloading the right software?
