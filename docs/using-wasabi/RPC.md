@@ -35,7 +35,7 @@ The RPC server can be configured to allow `Anonymous` access or `Basic authentic
 
 ```
 JsonRpcUser: [username] (default: empty)
-JsonRpcPassword: [password] (default: empty)
+JsonRpcPassword: [userpassword] (default: empty)
 ```
 
 By default both `JsonRpcUser` and `JsonRpcPassword` are empty `""`, which means that `Anonymous` requests are allowed.
@@ -131,7 +131,7 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getstatus"}' http://1
 Returns the twelve recovery words of the freshly generated wallet.
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"createwallet","params":["WalletName", "Password"]}' http://127.0.0.1:37128/ | jq
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"createwallet","params":["WalletName", "UserPassword"]}' http://127.0.0.1:37128/ | jq
 ```
 
 ```json
@@ -145,7 +145,7 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"createwallet","params
 In case we try to generate a wallet with an already existing name it will return:
 
 ```json
-{                                                                                                            
+{
   "jsonrpc": "2.0",
   "error": {
     "code": -32603,
@@ -158,7 +158,7 @@ In case we try to generate a wallet with an already existing name it will return
 In case we try to generate a wallet with a reserved wallet name it will return:
 
 ```json
-{                                                                                                            
+{
   "jsonrpc": "2.0",
   "error": {
     "code": -32603,
@@ -173,7 +173,7 @@ In case we try to generate a wallet with a too long password it will return:
 ```json
 {
   "jsonrpc": "2.0",
-  "error": {                                                                                                  
+  "error": {
     "code": -32603,
     "message": "Password is too long (Max 150 characters)."
   },
@@ -215,7 +215,7 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getwalletinfo"}' http
 {
   "jsonrpc": "2.0",
   "result": {
-    "walletName": "TestNet Small",
+    "walletName": "WalletName2",
     "walletFile": "/home/user/.walletwasabi/client/Wallets/WalletName2.json",
     "extendedAccountPublicKey": "tpubDCd1v6acjNY3uUqArBGC6oBTGrCBWphMvkWjAqM2SFZahZb91JUTXZeZqxzscezR16XHkwi1723qo94EKgR75aoFaahnaHiiLP2JrrTh2Rk",
     "extendedAccountZpub": "vpub5YarnXR6ijVdw6G5mGhfUhf5bnodeCDJYtszFVW7LL3vr5HyRmJF8zfTZWzv6LjLPukmeR11ebWhLPLVVRjqbfyknJZdiwRWCyJcKeDdsC8",
@@ -381,7 +381,7 @@ In case an empty label is provided:
 Builds and broadcasts a transaction.
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"send", "params": { "payments":[ {"sendto": "tb1qgvnht40a08gumw32kp05hs8mny954hp2snhxcz", "amount": 15000, "label": "David" }, {"sendto":"tb1qpyhfrpys6skr2mmnc35p3dp7zlv9ew4k0gn7qm", "amount": 86200, "label": "Michael"} ], "coins":[{"transactionid":"ab83d9d0b2a9873b8ab0dc48b618098f3e7fbd807e27a10f789e9bc330ca89f7", "index":0}], "feeTarget":2, "password": "Password" }}' http://127.0.0.1:37128/ | jq
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"send", "params": { "payments":[ {"sendto": "tb1qgvnht40a08gumw32kp05hs8mny954hp2snhxcz", "amount": 15000, "label": "David" }, {"sendto":"tb1qpyhfrpys6skr2mmnc35p3dp7zlv9ew4k0gn7qm", "amount": 86200, "label": "Michael"} ], "coins":[{"transactionid":"ab83d9d0b2a9873b8ab0dc48b618098f3e7fbd807e27a10f789e9bc330ca89f7", "index":0}], "feeTarget":2, "password": "UserPassword" }}' http://127.0.0.1:37128/ | jq
 ```
 
 ```json
@@ -403,13 +403,13 @@ Now the mining fee will be subtracted from the output in which `subtractFee` was
 With this you can send the max amount of the coin, by setting the same value of the input coins for the output address.
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"send", "params": { "payments":[ {"sendto": "tb1qgvnht40a08gumw32kp05hs8mny954hp2snhxcz", "amount": 15000, "label": "David", "subtractFee": true }, {"sendto":"tb1qpyhfrpys6skr2mmnc35p3dp7zlv9ew4k0gn7qm", "amount": 86200, "label": "Michael"} ], "coins":[{"transactionid":"ab83d9d0b2a9873b8ab0dc48b618098f3e7fbd807e27a10f789e9bc330ca89f7", "index":0}], "feeTarget":2, "password": "Password" }}' http://127.0.0.1:37128/ | jq
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"send", "params": { "payments":[ {"sendto": "tb1qgvnht40a08gumw32kp05hs8mny954hp2snhxcz", "amount": 15000, "label": "David", "subtractFee": true }, {"sendto":"tb1qpyhfrpys6skr2mmnc35p3dp7zlv9ew4k0gn7qm", "amount": 86200, "label": "Michael"} ], "coins":[{"transactionid":"ab83d9d0b2a9873b8ab0dc48b618098f3e7fbd807e27a10f789e9bc330ca89f7", "index":0}], "feeTarget":2, "password": "UserPassword" }}' http://127.0.0.1:37128/ | jq
 ```
 
 In case of error, it is reported in the json's error object:
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"send", "params": { "payments": [{ "sendto": "tb1qnmfmkylkd548bbbcd9115b322891e27f741eb42c83ed982861ee121", "amount": 2015663, "label": "Mr. Who" }], "coins":[{"transactionid":"c68dacd548bbbcd9115b38ed982861ee121c5ef6e0f1022891e27f741eb42c83", "index":0}], "feeTarget": 2, "password": "Password" }}' http://127.0.0.1:37128/ | jq
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"send", "params": { "payments": [{ "sendto": "tb1qnmfmkylkd548bbbcd9115b322891e27f741eb42c83ed982861ee121", "amount": 2015663, "label": "Mr. Who" }], "coins":[{"transactionid":"c68dacd548bbbcd9115b38ed982861ee121c5ef6e0f1022891e27f741eb42c83", "index":0}], "feeTarget": 2, "password": "UserPassword" }}' http://127.0.0.1:37128/ | jq
 ```
 
 ```json
@@ -542,7 +542,7 @@ curl --data-binary '{"jsonrpc":"2.0","id":"1","method":"listkeys"}' http://127.0
 Enqueue coins in order to participate in coinjoin.
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"enqueue", "params": { "coins": [{"transactionId": "ba70587b37ba8b4de143929994d3b8ee2810340cef23e8016020687716117a52", "index":"12"}], "password":"Password"} }' http://127.0.0.1:37128/ | jq
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"enqueue", "params": { "coins": [{"transactionId": "ba70587b37ba8b4de143929994d3b8ee2810340cef23e8016020687716117a52", "index":"12"}], "password":"UserPassword"} }' http://127.0.0.1:37128/ | jq
 ```
 
 ### dequeue
