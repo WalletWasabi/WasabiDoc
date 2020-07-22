@@ -16,12 +16,22 @@
 1. Load a wallet and open the `Send` tab.
 
 2. Request from the receiver a [BIP21 Bitcoin URI](https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki) with the flag `pj=` and paste it into the address field of the `Send` tab.
+(Eg. `bitcoin:bc1q52089pawz7vqmyafzpf9xuklpmzh0qhszqx23h?amount=0.07361908&pj=https://btcpay.kukks.org/BTC/pj`
 
 3. Select the coins you want to send.
 
 4. Verify the information is correct, type in the password, and press `Send`.
 
 ![](/PayJoinSend.png)
+
+:::warning The success of a PayJoin transaction is not something that depends on Wasabi.
+It may happen that the transaction is broadcasted with success, but that it is not a PayJoin.
+This can happen for several reasons including:
+
+- The receiver did not have any utxos to contribute towards a PayJoin
+- Your wallet does not use the same format as the receiver's (essential to not raise suspicion to [surveillance companies](/why-wasabi/TransactionSurveillanceCompanies.md))
+- The PayJoin server is not available
+:::
 
 ## The goal of PayJoin
 
