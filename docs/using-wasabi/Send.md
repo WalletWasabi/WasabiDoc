@@ -114,8 +114,6 @@ If you have a transaction that is high-priority and you really want it to be con
 3. Select a fee that is well above the current highest fee....perhaps double or triple it....the extra cost is likely to be not that much, especially if it's very important to you that the transaction is confirmed soon.
 :::
 
-
-
 ## Custom Change Address
 
 In the `Settings` tab you can activate the option to set a custom change address.
