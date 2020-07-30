@@ -99,7 +99,7 @@ In some cases, there is very little demand for block space, and then Wasabi will
 
 :::tip High-priority transaction fees
 
-When using Bitcoin Core's `smart fee` algorithm to estimate the time a transaction will take to confirm given the current mempool, keep in mind that the algorithm can only make a fee estimate based on the mempool and fees at the time you are sending your coins.
+When using Bitcoin Core's `smart fee` algorithm to estimate the time a transaction will take to confirm given the current mempool, the algorithm considers the historic data for transactions in the mempool and in recent blocks.
 
 If, after you select the highest fee for a `send`, other people decide to send coins using even higher fees than you selected, their transactions will be placed ahead of yours in the mempool.
 
