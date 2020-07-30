@@ -111,7 +111,7 @@ If you have a transaction that is high-priority and you really want it to be con
 
 1. Go into your Wasabi `Settings` and change to `Manual Fees`.
 2. Use [a mempool monitor](https://mempool.space) to see what fees are likely to get a transaction to be confirmed in the next block.
-3. Select a fee that is well above the current highest fee....perhaps double or triple it....the extra cost is likely to be not that much, especially if it's very important to you that the transaction is confirmed soon.
+3. Select a fee that is well above the current highest fee....perhaps double or triple it....if it is very important to you that the transaction is confirmed soon.
 :::
 
 ## Custom Change Address
