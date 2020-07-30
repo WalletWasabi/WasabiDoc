@@ -97,6 +97,26 @@ In some cases, there is very little demand for block space, and then Wasabi will
 
 ![](/SendNoFee.png)
 
+:::tip
+High-priority transaction fees:
+
+When using Bitcoin Core's `smart fee` algorithm to estimate the time a transaction will take to confirm given the current mempool, keep in mind that the algorithm can only make a fee estimate based on the mempool and fees at the time you are sending your coins.
+
+If, after you select the highest fee for a `send`, other people decide to send coins using even higher fees than you selected, their transactions will be placed ahead of yours in the mempool.
+
+The placement of a transaction in line to be confirmed in the mempool is an ongoing auction for block space.
+
+As such, a fee that is high enough to be confirmed in the next block when you create a transaction can be outbid by people sending coins after you who also want to be in the next block, which places your transaction farther back in line to be confirmed.
+
+If you have a transaction that is high-priority and you really want it to be confirmed ASAP:
+
+1. Go into your Wasabi `Settings` and change to `Manual Fees`.
+2. Use [a mempool monitor](https://mempool.space) to see what fees are currently being confirmed in the next block.
+3. Select a fee that is well above the current highest fee....perhaps double or triple it....the extra cost is likely to be not that much, especially if it's very important to you that the transaction is confirmed soon.
+:::
+
+
+
 ## Custom Change Address
 
 In the `Settings` tab you can activate the option to set a custom change address.
