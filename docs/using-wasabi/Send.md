@@ -110,7 +110,7 @@ As such, a fee that is high enough to be confirmed in the next block when you cr
 If you have a transaction that is high-priority and you really want it to be confirmed ASAP:
 
 1. Go into your Wasabi `Settings` and turn on `Manual fee entry`.
-2. Use [a mempool monitor](https://mempool.space) to see what fees are likely to get a transaction to be confirmed in the next block.
+2. Use [a mempool monitor](https://mempool.space) (available [Tor onion website](http://mempoolhqx4isw62xs7abwphsq7ldayuidyx2v2oethdhhj6mlo2r6ad.onion/)) to see what fees are likely to get a transaction to be confirmed in the next block.
 3. Select a fee that is well above the current highest fee....perhaps double or triple it....if it is very important to you that the transaction is confirmed soon.
 
 For a deeper dive into the fee estimation process, [this article](https://bitcointechtalk.com/an-introduction-to-bitcoin-core-fee-estimation-27920880ad0) is worth reading.
