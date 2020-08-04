@@ -32,7 +32,7 @@ This way, you can launch Wasabi from the terminal via `./wassabee` command, and 
 
 ## Download
 
-Download Wasabi for Debian/Ubuntu from the [Tor hidden service](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion) or [clearnet](https://www.wasabiwallet.io/#download).
+Download Wasabi for Debian/Ubuntu from the [Tor onion service](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion) or [clearnet](https://www.wasabiwallet.io/#download).
 
 Verify the PGP signature of the downloaded package, the zkSNACKs' PGP public key fingerprint is:
 

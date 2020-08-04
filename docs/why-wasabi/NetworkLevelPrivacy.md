@@ -42,7 +42,7 @@ This means that by default, all network communication is secured from outside sn
 
 In order to fully verify everything, running a full node is essential.
 If [bitcoind](https://github.com/bitcoin/bitcoin) is installed and run on the same computer as Wasabi, then it will automatically and by default connect to the full node.
-It is also possible to connect Wasabi to a remote full node on another computer by specifying the local IP address or Tor hidden service in the settings.
+It is also possible to connect Wasabi to a remote full node on another computer by specifying the local IP address or Tor onion service in the settings.
 Then, Wasabi pulls the verified blocks and queries the mempool from the full node.
 
 :::tip Wasabi ships with Bitcoin Knots!

@@ -17,7 +17,7 @@ Wasabi is a powerful free and open-source Bitcoin wallet, and it is used to prot
 
 ## 2. Verify the integrity of your software
 
-When installing the wallet, you may choose to [download the package](/using-wasabi/InstallPackage.md) from the official [clearnet](https://wasabiwallet.io) or the [tor hidden service](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion), or to [compile the source code](/using-wasabi/BuildSource.md) from the official [GitHub repository](https://github.com/zkSNACKs/WalletWasabi)
+When installing the wallet, you may choose to [download the package](/using-wasabi/InstallPackage.md) from the official [clearnet](https://wasabiwallet.io) or the [tor onion service](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion), or to [compile the source code](/using-wasabi/BuildSource.md) from the official [GitHub repository](https://github.com/zkSNACKs/WalletWasabi)
 Please [verify the signatures](/using-wasabi/InstallPackage.md) after completing downloads.
 The concern here is that you may accidentally fall for a phishing attempt and be on a malicious site downloading a malicious piece of software.
 

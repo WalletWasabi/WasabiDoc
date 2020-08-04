@@ -83,7 +83,7 @@ The user can also opt to use their own Tor instance.
 All Internet traffic goes through Tor, and by default all this traffic stays inside the onion network.
 Exit nodes are only involved in fallback scenarios.
 
-For example, if the Tor hidden service of the backend becomes unavailable for the user, the wallet falls back to communicating with the backend's clearnet endpoint, still over Tor.
+For example, if the Tor onion service of the backend becomes unavailable for the user, the wallet falls back to communicating with the backend's clearnet endpoint, still over Tor.
 Wasabi also frequently utilizes multiple Tor streams where applicable.
 
 Importantly, registration of CoinJoin inputs and outputs is done through different Tor streams to avoid linking.

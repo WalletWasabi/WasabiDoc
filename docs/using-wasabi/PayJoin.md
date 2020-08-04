@@ -35,9 +35,9 @@ The details of the implemented specification are documented [here](https://docs.
 ## Coordination
 
 The coordination of this CoinJoin is done with the PayToEndPoint [P2EP] concept.
-The receiver is reachable over the internet, either over a Tor hidden service or clearnet IP address.
+The receiver is reachable over the internet, either over a Tor onion service or clearnet IP address.
 The link is included in a BIP21 Bitcoin URI, and is provided to the sender as the payment invoice.
-The sender uses this hidden service or IP address to connect to the server of the receiver and communicate the further protocol.
+The sender uses this onion service or IP address to connect to the server of the receiver and communicate the further protocol.
 The coordination is usually done within seconds, and will abort to the fallback transaction after some time if the connection breaks.
 
 ## Fallback transaction
