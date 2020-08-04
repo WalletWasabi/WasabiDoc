@@ -625,7 +625,7 @@ Wasabi will automatically build a transaction with the best combination of the s
 :::details
 ### How is the transaction broadcast?
 
-Wasabi connects only to Bitcoin nodes that provide a Tor hidden service, so end-to-end encryption is enforced between the peers, without involving any exit node.
+Wasabi connects only to Bitcoin nodes that provide a Tor onion service, so end-to-end encryption is enforced between the peers, without involving any exit node.
 Each peer is connected to through a different Tor stream.
 Transactions are broadcast to only one random peer over Tor and immediately after that this peer is disconnected.
 
@@ -1319,7 +1319,7 @@ You can use the [Wasabi RPC server `gethistory` call](/using-wasabi/RPC.md#gethi
 There are three different ways of using your [Bitcoin full node with Wasabi](/using-wasabi/BitcoinFullNode.md):
 
 - If you have a full node already running on the same computer as Wasabi, it will automatically be detected and used by default.
-- If you have a full node on a remote computer, then you can connect to it by specifying the local network IP address or Tor hidden service in the Wasabi `Settings` tab.
+- If you have a full node on a remote computer, then you can connect to it by specifying the local network IP address or Tor onion service in the Wasabi `Settings` tab.
 
 ![](/SettingsBitcoinCoreRemote.png)
 

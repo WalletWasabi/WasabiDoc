@@ -156,7 +156,7 @@ Read more: [The importance of labeling](/using-wasabi/Receive.md#the-importance-
 ### Pay to EndPoint (P2EP)
 
 Pay to EndPoint is when the receiver is reachable over the internet and the sender communicates with the receiver to coordinate a more advanced transaction.
-The Tor hidden service, IP address or domain of the receiver is included in a BIP21 Bitcoin URI payment link.
+The Tor onion service, IP address or domain of the receiver is included in a BIP21 Bitcoin URI payment link.
 :::
 
 :::details
