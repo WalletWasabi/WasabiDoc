@@ -22,7 +22,7 @@ Here is a list of all the supported and integrated Bitcoin Improvement Proposals
 - [BIP 39: Mnemonic Code for Generating Deterministic Keys](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki)
 - [BIP 44: Multi-Account Hierarchy for Deterministic Wallets](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki)
 - [BIP 72: bitcoin: uri extensions for Payment Protocol](https://github.com/bitcoin/bips/blob/master/bip-0072.mediawiki)
-- [BIP 79: Bustapay: A Practical CoinJoin Protocol](https://github.com/bitcoin/bips/blob/master/bip-0079.mediawiki)
+- [BIP 78: A Simple Payjoin Proposal](https://github.com/bitcoin/bips/blob/master/bip-0078.mediawiki)
 - [BIP 84: Derivation scheme for P2WPKH based accounts](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki)
 - [BIP 125: Opt-In full Replace-by-Fee Signaling](https://github.com/bitcoin/bips/blob/master/bip-0125.mediawiki)
 - [BIP 141: Segregated Witness (Consensus Layer)](https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki)
