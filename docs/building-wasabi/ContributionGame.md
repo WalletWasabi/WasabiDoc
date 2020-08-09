@@ -57,7 +57,7 @@ The total bounty ended up being distributed to 6 contributors, see the full resu
 This version is already compatible with the v4 coordinator protocol.
 Thus, it is extraordinarily important that the release is thoroughly tested to ensure a smooth hardfork without major bugs.
 The [test vectors](https://github.com/zksnacks/walletwasabi/issues/3782) for the [release candidate](https://github.com/molnard/WalletWasabi/releases/tag/v1.1.12rc1) guide the testers what to focus on in their review.
-This contribution game had a total bounty of up to `0.3 bitcoin`, sponsored by zkSNACKs.
+This contribution game had a total bounty of up to `0.5 bitcoin`, sponsored by zkSNACKs.
 
 ## Merchandise design
 
