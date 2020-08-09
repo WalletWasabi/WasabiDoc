@@ -43,14 +43,15 @@ The publishing of a [release candidate packages](https://github.com/zkSNACKs/Wal
 This enabled many more reviewers to check out the latest additions to the software so to test for bugs and instabilities.
 Also there was a [contribution game](https://github.com/zkSNACKs/WalletWasabi/issues/2631) where any reviewer who provided a thorough report and notified the developers of bugs was eligible for a bounty of in total `0.3 bitcoin`.
 
-The total bounty ended up being distributed to 6 contributors, see the full results [here](https://github.com/zkSNACKs/WalletWasabi/issues/2631#issuecomment-565746074).
+The total bounty ended up being distributed to 6 reviewers, see the full results [here](https://github.com/zkSNACKs/WalletWasabi/issues/2631#issuecomment-565746074).
+
 ### v1.1.11
 
 After more than three months of work since the previous major release of v1.1.10, there was yet another contribution game to review the release candidates [v1.1.11rc1](https://github.com/molnard/WalletWasabi/releases/tag/v1.1.11rc1), [v1.1.11rc2](https://github.com/molnard/WalletWasabi/releases/tag/v1.1.11rc2).
 There were [detailed test vectors](https://github.com/zkSNACKs/WalletWasabi/issues/3396) to ensure that all the new additions were thoroughly covered in the review.
 This contribution game had a total bounty of up to `0.3 bitcoin`, sponsored by zkSNACKs.
 
-The total bounty ended up being distributed to 6 contributors, see the full results [here](https://github.com/zkSNACKs/WalletWasabi/issues/3396#issuecomment-610313893).
+The total bounty ended up being distributed to 6 reviewers, see the full results [here](https://github.com/zkSNACKs/WalletWasabi/issues/3396#issuecomment-610313893).
 
 ### v1.1.12
 
@@ -58,6 +59,8 @@ This version is already compatible with the v4 coordinator protocol.
 Thus, it is extraordinarily important that the release is thoroughly tested to ensure a smooth hardfork without major bugs.
 The [test vectors](https://github.com/zksnacks/walletwasabi/issues/3782) for the [release candidate](https://github.com/molnard/WalletWasabi/releases/tag/v1.1.12rc1) guide the testers what to focus on in their review.
 This contribution game had a total bounty of up to `0.5 bitcoin`, sponsored by zkSNACKs.
+
+The total bounty ended up being distributed to 13 reviewers, see the full results [here](https://github.com/zkSNACKs/WalletWasabi/issues/3782#issuecomment-670464293).
 
 ## Merchandise design
 
