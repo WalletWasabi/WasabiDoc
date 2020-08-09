@@ -534,7 +534,7 @@ curl --data-binary '{"jsonrpc":"2.0","id":"1","method":"listkeys"}' http://127.0
 #### All unused locked keys (reserved for coinjoins)
 
 ```bash
-curl --data-binary '{"jsonrpc":"2.0","id":"1","method":"listkeys"}' http://127.0.0.1:37128/ | jq '.result[] | select(.keyState == 2)'
+curl --data-binary '{"jsonrpc":"2.0","id":"1","method":"listkeys"}' http://127.0.0.1:37128/ | jq '.result[] | select(.keyState == 1 and .internal == true)'
 ```
 
 ### enqueue
