@@ -310,7 +310,7 @@ You can set the gap limit of an already existing Wasabi wallet by editing the wa
 Access the settings file via the `File->Open->Wallets Folder` menu.
 
 Close Wasabi and edit the `MinGapLimit` setting (which is `21` by default).
-The value depends on the settings of other tools that use the wallet too (e.g. use `100` for [BTCPay Server](https://docs.btcpayserver.org/faq-and-common-issues/faq-wallet#missing-payments-in-my-software-or-hardware-wallet)).
+The value depends on the settings of other tools that use the wallet too (e.g. use `100` for [BTCPay Server](https://docs.btcpayserver.org/FAQ/FAQ-Wallet/#missing-payments-in-my-software-or-hardware-wallet)).
 
 You might also need to reset the height of your wallet, so that it gets reindexed.
 This can be done by setting the `BlockchainState->Height` to `0`:
