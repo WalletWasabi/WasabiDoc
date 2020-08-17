@@ -225,8 +225,6 @@ There are three ways Wasabi can get a block:
 
 2. By default from a random Bitcoin P2P node, connected through a new Tor identity only for this one download request.
 
-3. If both cases fail, then the fallback is to connect to the backend server with a new Tor identity and download the block from there.
-
 Read more [ħere](/using-wasabi/WalletLoad.md)
 :::
 
