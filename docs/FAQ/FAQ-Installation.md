@@ -125,7 +125,7 @@ Wasabi is cutting edge software, so it is well-advised to stay up-to-date.
 When a new major version [v1.1.X] has been released, you'll see a notification in the bottom left status bar `New Version Available`.
 There are occasional silent releases [v1.1.10.X] which fix issues that were introduced in the major release, and these are not notified in the GUI.
 The [website](https://wasabiwallet.io) always links to the most recent build of the software.
-It will also be announced on [Twitter](https://twitter.com/wasabiwallet), [Reddit](https://old.reddit.com/r/WasabiWallet/), and [Telegram](https://t.me/WasabiWallet).
+It will also be announced on [Twitter](https://twitter.com/wasabiwallet) and [Reddit](https://reddit.com/r/WasabiWallet/).
 :::
 
 :::details
