@@ -1,2 +1,5 @@
 /docs/.vuepress/dist
 /node_modules
+/.vs/ProjectSettings.json
+/.vs/WasabiDoc/config/applicationhost.config
+/.vs/slnx.sqlite

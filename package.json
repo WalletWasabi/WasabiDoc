@@ -1,7 +1,7 @@
 {
   "name": "wasabidoc",
   "version": "0.1.0",
-  "description": "[Wasabi](https://wasabiwallet.io) is an open-source, non-custodial, privacy focused Bitcoin wallet for desktop. It implements trustless coin shuffling: [Schnorrian CoinJoin](https://github.com/nopara73/ZeroLink/).",
+  "description": "[Wasabi](https://wasabiwallet.io) is an open-source, non-custodial, privacy focused Bitcoin wallet for desktop. It implements a trustless privacy technique, called [Chaumian CoinJoin](https://github.com/nopara73/ZeroLink/).",
   "config": {
     "dist": "docs/.vuepress/dist"
   },
