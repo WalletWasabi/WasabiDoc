@@ -12,7 +12,7 @@
 ::::details
 ### Who can use Wasabi?
 
-Every single line of code in Wasabi, the [wallet](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Gui), the [backend server](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Backend), the [tests](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Tests), the [packager](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Packager), the [library](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi), the [daemon](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Gui/CommandLine), the [api](https://wasabiwallet.io/swagger/), the [documentation](https://github.com/zkSNACKs/WasabiDoc) - has always been and will always be libre and open source under the [MIT license](https://github.com/zkSNACKs/WalletWasabi/blob/master/LICENSE.md).
+Every single line of code in Wasabi, the [wallet](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Gui), the [backend server](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Backend), the [tests](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Tests), the [packager](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Packager), the [library](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi), the [daemon](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Gui/CommandLine), the [api](https://wasabiwallet.io/swagger/), the [documentation](https://github.com/zkSNACKs/WasabiDoc) - has always been and will always be libre and open-source under the [MIT license](https://github.com/zkSNACKs/WalletWasabi/blob/master/LICENSE.md).
 This means that anyone, yes, ANYONE can use Wasabi without permission, for any use case, free of charge.
 
 Wasabi is used by individuals to receive and spend every day payments, to manage their hardware wallet long term hodlings, and to CoinJoin their sats for added privacy.
@@ -93,7 +93,7 @@ Furthermore our calculations have shown that with the liquidity of today’s mix
 :::details
 ### Is there a way to check Wasabi uptime status?
 
-Yes, you can check the status of Wasabi-related services and websites (like APIs, Backend, etc.) via [UptimeRobot Wasabi Status Page](https://stats.uptimerobot.com/YQqGyUL8A7).
+Yes, you can check the status of Wasabi-related services and websites (like APIs, Backend, etc.) via [UptimeRobot Wasabi Status Page](https://stats.uptimerobot.com/EZW50TW1Go).
 :::
 
 :::details
@@ -106,7 +106,7 @@ Furthermore, the random node will only know which block is needed but it won't h
 :::
 
 :::details
-### Is the Backend's (Coordinator) code open source?
+### Is the Backend's (Coordinator) code open-source?
 
 Yes, you can verify the code on [GitHub](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Backend).
 :::
@@ -121,8 +121,9 @@ No, Wasabi and CoinJoin features require considerable computational power, not c
 ### Where can I find Wasabi Wallet on social media?
 
 You can find us on [Twitter](https://twitter.com/wasabiwallet) and [Reddit](https://www.reddit.com/r/WasabiWallet/).
-For chat groups you can find us on [Slack](https://join.slack.com/t/tumblebit/shared_invite/enQtNjQ1MTQ2NzQ1ODI0LWIzOTg5YTM3YmNkOTg1NjZmZTQ3NmM1OTAzYmQyYzk1M2M0MTdlZDk2OTQwNzFiNTg1ZmExNzM0NjgzY2M0Yzg), [Telegram](https://t.me/WasabiWallet), [Riot](https://riot.im/app/#/room/#wasabiwallet:matrix.org) and [Keybase](https://keybase.io/team/wasabiwallet).
+For chat groups you can find us on [Slack](https://join.slack.com/t/tumblebit/shared_invite/enQtNjQ1MTQ2NzQ1ODI0LWIzOTg5YTM3YmNkOTg1NjZmZTQ3NmM1OTAzYmQyYzk1M2M0MTdlZDk2OTQwNzFiNTg1ZmExNzM0NjgzY2M0Yzg), [Telegram](https://t.me/WasabiWallet) and [Keybase](https://keybase.io/team/wasabiwallet).
 
+Also, remember to follow our [blog](https://blog.wasabiwallet.io) to get the latest insights and information about Wasabi Wallet and Bitcoin privacy.
 :::
 
 ## For advanced Wasabikas
@@ -164,39 +165,39 @@ Key dates:
 :::
 
 ::::details
-### Why is Wasabi libre and open source software?
+### Why is Wasabi libre and open-source software?
 
-Wasabi follows the philosophy behind Bitcoin by making the software open source and by publishing it under MIT License.
-Bitcoin users prefer open source software to proprietary software for a number of reasons, including:
+Wasabi follows the philosophy behind Bitcoin by making the software [open-source](https://github.com/zkSNACKs/WalletWasabi/) and by publishing it under [MIT license](https://github.com/zkSNACKs/WalletWasabi/blob/master/LICENSE.md).
+Bitcoin users prefer open-source software to proprietary software for a number of reasons, including:
 
 :::tip Control
-Many people prefer open source software because they have more control over the software they run.
+Many people prefer open-source software because they have more control over the software they run.
 :::
 
 They can examine the code to make sure it's not doing anything they don't want it to do, and they can change parts of it they don't like.
-Users who aren't programmers also benefit from open source software, because they can use this software for any purpose they wish, not merely the way someone else thinks they should.
+Users who aren't programmers also benefit from open-source software, because they can use this software for any purpose they wish, not merely the way someone else thinks they should.
 
 :::tip Training
-Other people like open source software because it helps them become better programmers.
+Other people like open-source software because it helps them become better programmers.
 :::
 
-Because open source code is publicly accessible, students can easily study it as they learn to make better software.
+Because open-source code is publicly accessible, students can easily study it as they learn to make better software.
 Students can also share their work with others, inviting comment and critique, as they develop their skills.
 When people discover mistakes in programs' source code, they can share those mistakes with others to help them avoid making those same mistakes themselves.
 
 :::tip Security
-Some people prefer open source software because they consider it more secure and stable than proprietary software.
+Some people prefer open-source software because they consider it more secure and stable than proprietary software.
 :::
 
-Because anyone can view and modify open source software, someone might spot and correct errors or omissions that a program's original authors might have missed.
-And because so many programmers can work on a piece of open source software without asking for permission from original authors, they can fix, update, and upgrade open source software more quickly than they can proprietary software.
+Because anyone can view and modify open-source software, someone might spot and correct errors or omissions that a program's original authors might have missed.
+And because so many programmers can work on a piece of open-source software without asking for permission from original authors, they can fix, update, and upgrade open-source software more quickly than they can proprietary software.
 
 :::tip Stability
-Many users prefer open source software to proprietary software for important, long-term projects.
+Many users prefer open-source software to proprietary software for important, long-term projects.
 :::
 
-Because programmers publicly distribute the source code for open source software, users relying on that software for critical tasks can be sure their tools won't disappear or fall into disrepair if their original creators stop working on them.
-Additionally, open source software tends to both incorporate and operate according to open standards.
+Because programmers publicly distribute the source code for open-source software, users relying on that software for critical tasks can be sure their tools won't disappear or fall into disrepair if their original creators stop working on them.
+Additionally, open-source software tends to both incorporate and operate according to open standards.
 ::::
 
 :::details
@@ -227,13 +228,7 @@ For the complete explanation please read [ZeroLink: The Bitcoin Fungibility Fram
 :::details
 ### What are the minimal requirements to run Wasabi?
 
-- 64-bit architecture
-- Windows 10+
-- macOS 10.13+
-- Debian 9+
-- Ubuntu 16.04+
-- For other Linux distributions, it depends on the specific OS.
-
-Click [here](https://github.com/dotnet/core/blob/master/release-notes/3.1/3.1-supported-os.md) to check if .NET Core 3.1 supports your OS. 
+Wasabi runs in most operating systems with 64-bit architecture.
+For the complete list of all the officially supported operating systems, click [here](https://github.com/zkSNACKs/WalletWasabi/blob/master/WalletWasabi.Documentation/WasabiCompatibility.md#officially-supported-operating-systems).
 
 :::

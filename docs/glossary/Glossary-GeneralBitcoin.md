@@ -27,7 +27,7 @@ It is a decentralized digital currency without a central bank or single administ
 :::details
 ### Bitcoin Core
 
-Bitcoin Core is an open source project which maintains and releases Bitcoin client software called `Bitcoin Core`, considered to be Bitcoin's reference implementation.
+Bitcoin Core is an open-source project which maintains and releases Bitcoin client software called `Bitcoin Core`, considered to be Bitcoin's reference implementation.
 It is a direct descendant of the original Bitcoin software client released by Satoshi Nakamoto after he published the famous Bitcoin whitepaper.
 
 Bitcoin Core consists of both `full-node` software for fully validating the blockchain as well as a Bitcoin wallet.
@@ -202,15 +202,15 @@ Bitcoin uses the SHA256 in many parts of the protocol.
 :::
 
 :::details
-### HD Protocol
+### Hierarchical Deterministic (HD) Protocol
 
-The Hierarchical Deterministic (HD) key creation and transfer protocol (BIP32), which allows creating child keys from parent keys in a hierarchy.
+The Hierarchical Deterministic key creation and transfer protocol (BIP32), which allows creating child keys from parent keys in a hierarchy.
 :::
 
 :::details
-### HD Wallet
+### Hierarchical Deterministitc (HD) Wallet
 
-Wallets using the Hierarchical Deterministic (HD Protocol) key creation and transfer protocol (BIP32).
+Wallets using the Hierarchical Deterministic Protocol key creation and transfer protocol (BIP32).
 :::
 
 :::details
@@ -264,7 +264,7 @@ In Bitcoin, the leaves are almost always transactions from a single block.
 :::details
 ### Miner
 
-A network node that finds valid proof of work for new blocks, by repeated hashing.
+A Bitcoin user that attempts to find valid proof of work for new candidate blocks, by repeated hashing until the difficulty target is met.
 :::
 
 :::details
@@ -298,7 +298,7 @@ The funds will always be in a Bitcoin address that you control.
 :::details
 ### Nonce
 
-The `nonce` in a Bitcoin block is a 32-bit (4-byte) field whose value is set so that the hash of the block will contain a run of leading zeros.
+The nonce in a Bitcoin block is a 32-bit (4-byte) field whose value is set so that the hash of the block will contain a run of leading zeros.
 The rest of the fields may not be changed, as they have a defined meaning.
 :::
 
@@ -357,14 +357,14 @@ Read more: [BIP 174 Partially Signed Bitcoin Transaction Format](https://github.
 
 The signature of a P2WPKH contains the same information as a Pay-to-Public-Key-Hash (P2PKH) spending, but is located in the witness field instead of the scriptSig field.
 The scriptPubKey is also modified.
-Read more: [BIP 84 derivation scheme for P2WPKH based accounts](/using-wasabi/BIPs.md#bip-84-derivation-scheme-for-p2wpkh-based-accounts)
+Read more: [BIP 84 derivation scheme for P2WPKH based accounts](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki)
 :::
 
 :::details
 ### Payment Channels
 
 A payment channel is class of techniques designed to allow users to make multiple Bitcoin transactions without committing all of the transactions to the Bitcoin blockchain.
-In a typical payment channel, only two transactions are added to the blockchain but an unlimited or nearly unlimited number of payments can be made between the participants.
+In a typical payment channel, only two transactions are added to the blockchain, one funding and one closing transaction, but a nearly unlimited number of payments can be made between the participants.
 :::
 
 :::details
@@ -420,13 +420,12 @@ Replacing one version of an unconfirmed transaction with a different version of 
 
 A satoshi is the smallest denomination of bitcoin that can be recorded on the blockchain.
 It is the equivalent of 0.00000001 bitcoin and is named after the creator of Bitcoin, Satoshi Nakamoto.
-Read more: [How can I display the fee in satoshi per byte?](/FAQ/FAQ-UseWasabi.md#how-can-i-display-the-fee-in-satoshis-per-byte)
 :::
 
 :::details
 ### Satoshi Nakamoto
 
-Satoshi Nakamoto is the name used by the person or people who designed Bitcoin and created its original reference implementation, Bitcoin Core.
+Satoshi Nakamoto is the name used by the person or group of people who designed Bitcoin and created its original reference implementation.
 As a part of the implementation, they also devised the first blockchain database.
 In the process they were the first to solve the double-spending problem for digital currency in a decentralized and self verifying nature.
 Their real identity remains unknown.
@@ -466,13 +465,13 @@ Read more: [Why Wasabi uses only SegWit](/FAQ/FAQ-UseWasabi.md#why-does-wasabi-o
 
 SPV is a method for verifying particular transactions were included in a block without downloading the entire block.
 The method is used by some lightweight Bitcoin clients.
-Read more: [Wasabi Wallet under the hood](/building-wasabi/TechnicalOverview.md#wasabi-wallet-under-the-hood)
 :::
 
 :::details
 ### Soft Fork
 
-Soft fork or soft-forking change is a fork in the blockchain which commonly occurs when miners using non-upgraded nodes don’t follow a new consensus rule their nodes don’t know about.
+A soft fork is a change to the Bitcoin consensus rules that is backwards compatible.
+Users of this update do not break the rules of legacy users, but rather restrict themselves to a more narrow rule set.
 :::
 
 :::details
@@ -482,18 +481,25 @@ A testing environment in which users can obtain and spend satoshis that have no 
 :::
 
 :::details
+### Timechain
+
+Timechain is a synonym of [blockchain](/glossary/Glossary-GeneralBitcoin.md#blockchain).
+It emphasizes the achievement of the Bitcoin protocol to establish consensus on the temporal order of transactions so to prevent double-spends.
+:::
+
+:::details
 ### Transaction
 
 In simple terms, a transfer of bitcoin.
-More precisely, a transaction is a signed data structure expressing a transfer of value.
+More precisely, a transaction is a signed data structure expressing a transfer of value and consisting mainly of inputs and outputs.
 Transactions are transmitted over the Bitcoin network, collected by miners, and included into blocks, made permanent on the blockchain.
 :::
 
 :::details
 ### Transaction Fees
 
-A transaction includes a fee to the network for processing the requested transaction.
-Most transactions require a minimum fee.
+A transaction has a fee payment to the miner who includes the transaction in a valid block.
+It is implied by the difference of `inputs - outputs`.
 Read more: [What fee should I select?](/FAQ/FAQ-UseWasabi.md#what-fee-should-i-select)
 :::
 

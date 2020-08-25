@@ -26,7 +26,7 @@ When Bob sends this coin to Charlie, then Charlie can check the history of the c
 But due to the pseudonymity of Bitcoin, he does not necessarily find out that Alice is involved.
 
 Further, when Alice has one non-private coin and one private coin, and she selects both of them as the inputs of a transaction, the linking of these two coins strongly suggests that the coin that was private also belongs to Alice.
-This means that coin consolidation can lead to an overall decrease of privacy, especially when using an automatic coin selection algorithm.
+This means that coin consolidation can lead to an overall decrease in privacy, especially when using an automatic coin selection algorithm.
 
 ## Wasabi's Solution
 
@@ -46,7 +46,7 @@ There are several heuristics, practical assumptions which are not guaranteed to 
 
 When several coins have the same address, then they are owned by the same entity.
 Thus if a transaction has a reused address in the output, it is very likely to be the payment amount from one entity to another.
-Thus the other output of this transaction, is likely to be the change of the entity providing the inputs of the transaction.
+Thus the other output of this transaction is likely to be the change of the entity providing the inputs of the transaction.
 
 :::warning Remember
 Never [reuse addresses](/why-wasabi/AddressReuse.md#problem)!
@@ -63,7 +63,7 @@ However, Wasabi CoinJoins are very easily fingerprinted, and any coin associated
 ### Round numbers
 
 When making a payment, then often the destination address receives a round number of bitcoin.
-Because the input is usually a non-round number, the other output will also be non-round number.
+Because the input is usually a non-round number, the other output will also be a non-round number.
 This makes it clear that the non-round number output is the change back to the sender.
 
 ```
@@ -72,7 +72,7 @@ A [0.1293 0112 btc]  -->  B [0.0500 0000 btc]
 ```
 
 :::tip
-In order to protect your privacy, add (or remove when possible) a couple sats from the payment amount to obfuscate your change.
+In order to protect your privacy, add (or remove when possible) a couple of sats from the payment amount to obfuscate your change.
 :::
 
 ### CoinJoin
@@ -93,7 +93,7 @@ B [3 btc]       E [5 btc] (= change A)
 
 ### Replace by Fee
 
-[BIP 125](/using-wasabi/BIPs.md#bip-125-opt-in-full-replace-by-fee-signaling) allows for one unconfirmed transaction to be double spent and replaced by a second transaction that pays a higher fee.
+[BIP 125](https://github.com/bitcoin/bips/blob/master/bip-0125.mediawiki) allows for one unconfirmed transaction to be double-spent and replaced by a second transaction that pays a higher fee.
 However, the output that is reduced in the second transaction is likely to be the change output, as the sender pays the fee.
 
 ```
@@ -111,4 +111,3 @@ A [1.3576 1516 btc]  -->  B [1.0135 6515 btc]
 :::tip
 Because of this privacy leak, Wasabi does not utilize RBF fee bumping.
 :::
-

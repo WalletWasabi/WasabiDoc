@@ -7,7 +7,7 @@
 
 # Headless Wasabi Daemon
 The default of how to interact with your Wasabi wallet is the graphical user interface.
-There is also a headless daemon where you do not run a resource intensive GUI, but only the command line interface.
+There is also a headless daemon where you do not run a resource-intensive GUI, but only the command line interface.
 This daemon is especially useful for power users mixing bitcoin in the backend of their servers. 
 
 [[toc]]
@@ -23,53 +23,44 @@ This daemon is especially useful for power users mixing bitcoin in the backend o
 `--wallet:` specifies the name of the hot wallet with the coins you want to CoinJoin.
 
 `--destination:` specifies the destination wallet that the mixed coins will be coinjoined into, after the target anonymity set is reached.
-A coin will be coinjoined into the first wallet, until anonymity set target is reached, then there will be one additional CoinJoin into the `destination` wallet.
+A coin will be coinjoined into the first wallet until anonymity set target is reached, then there will be one additional CoinJoin into the `destination` wallet.
 
 `--keepalive` keeps the daemon running after all coins have reached the anonymity set target, and continue to CoinJoin when new coins are received into the wallet.
+This flag is needed if the daemon should mix into the `destination` wallet.
 
 `--help` displays help page and exit.
 
 
 ## Usage
 
-### Linux
+### If the package is installed
 
-If the package is installed, execute in the command line in any directory: 
+Depending on your operation system, open the command line and execute:
+
+#### Linux
 
 ```bash
-~$ wassabee mix --wallet:MyFirstWallet --destination:MySecondWallet --keepalive
+wassabee mix --wallet:MyFirstWallet --destination:MySecondWallet --keepalive
 ```
 
-If the source code is built, navigate to the WalletWasabi.Gui folder (inside the cloned repo) and execute:
+#### macOS
 
 ```bash
-~/WalletWasabi/WalletWasabi.Gui$ dotnet run -- mix --wallet:MyFirstWallet --destination:MySecondWallet --keepalive
+cd /Applications/Wasabi\ Wallet.app/Contents/MacOs
+./wassabee mix --wallet:MyFirstWallet --destination:MySecondWallet --keepalive
 ```
 
-### MacOS
-
-If the package is installed, navigate to the Applications directory and execute: 
+#### Windows
 
 ```bash
-~/Applications/Wasabi\ Wallet.app/Contents/MacOs $ wassabee mix --wallet:MyFirstWallet --destination:MySecondWallet --keepalive
+cd C:\Program Files\WasabiWallet
+wassabeed.exe mix --wallet:MyFirstWallet --destination:MySecondWallet --keepalive
 ```
 
-If the source code is built, navigate to the WalletWasabi.Gui folder (inside the cloned repo) and execute:
+### If building from source code
+
+Open the terminal, navigate to the `WalletWasabi.Gui` folder inside the cloned repository and execute:
 
 ```bash
-~/WalletWasabi/WalletWasabi.Gui$ dotnet run -- mix --wallet:MyFirstWallet --destination:MySecondWallet --keepalive
-```
-
-### Windows
-
-If the package is installed, navigate to the WasabiWallet folder and execute:
-
-```bash
-C:\Program Files\WasabiWallet> wassabeed.exe mix --wallet:MyFirstWallet --destination:MySecondWallet --keepalive
-```
-
-If the source code is installed, navigate to the WalletWasabi.Gui folder (inside the cloned repo) and execute:
-
-```bash
-\WalletWasabi\WalletWasabi.Gui> dotnet run -- mix --wallet:MyFirstWallet --destination:MySecondWallet --keepalive
+dotnet run -- mix --wallet:MyFirstWallet --destination:MySecondWallet --keepalive
 ```

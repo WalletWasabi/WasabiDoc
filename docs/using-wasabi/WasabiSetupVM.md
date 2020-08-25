@@ -23,16 +23,14 @@ If you are a developer, using virtual machines gives you several powerful featur
 You can easily:
 
 - Create snapshots of a VM's state at any time.
-These snaphots can be restored later if a problem or undesired condition arises in the current state of the VM.
+These snapshots can be restored later if a problem or undesired condition arises in the current state of the VM.
 
 - Set up a template VM with a desired development environment or configuration, and then quickly create lightweight, disposable clones of the template for specific tests.
 
-- Develop and/or test applications in Windows, Linux, and MacOS at the same time, on the same computer.
+- Develop and/or test applications in Windows, Linux, and macOS at the same time, on the same computer.
 You can link them together in a customizable internal network if desired.
 
-For developers, the use of virtual machines offers some of the basic version control features of git, but applied to operating systems rather than files or projects.
-
-[[toc]]
+For developers, the use of virtual machines offers some of the basic version control features of git but applied to operating systems rather than files or projects.
 
 ## Qubes
 
@@ -114,7 +112,7 @@ Clone & run Wasabi.
 [user@source-wasabi ~]$ dotnet run
 ```
 
-Checkout a developer branch.
+Check out a developer branch.
 
 ```sh
 [user@source-wasabi ~]$ git remote add nopara73 https://github.com/nopara73/WalletWasabi
@@ -187,7 +185,7 @@ Make sure that you have run any needed updates for your VM.
 
 Next, the dependencies to [compile Wasabi from source](/using-wasabi/BuildSource.md) will be downloaded and installed in a new template VM, which can be based on your preferred OS.
 
-With VirtualBox, you can create separate templates based on Windows, or any Linux distribution.
+With VirtualBox, you can create separate templates based on Windows or any Linux distribution.
 Finally, you can add any other tools that you prefer, such as Visual Studio / Visual Studio Code, Atom, etc..
 
 ### Install Required Dependencies
@@ -239,7 +237,7 @@ your@vm:~$ cd WalletWasabi/WalletWasabi.Gui
 your@vm:~$ dotnet run
 ```
 
-Checkout a developer branch.
+Check out a developer branch.
 
 ```sh
 your@vm:~$ git remote add nopara73 https://github.com/nopara73/WalletWasabi

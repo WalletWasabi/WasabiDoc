@@ -1,13 +1,13 @@
 ---
 {
-  "title": "Network Level Privacy",
-  "description": "A comparison of the network level privacy of Wasabi wallet and Bitcoin Core. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
+  "title": "Network-Level Privacy",
+  "description": "A comparison of the network-level privacy of Wasabi wallet and Bitcoin Core. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
 }
 ---
 
-# Network Level Privacy - Bitcoin Core vs Wasabi Wallet
+# Network-Level Privacy - Bitcoin Core vs Wasabi Wallet
 
-Bitcoin is a peer-to-peer network of full nodes which define, verify, and enforce the Bitcoin consensus rules.
+Bitcoin is a peer-to-peer network of full nodes that define, verify, and enforce the Bitcoin consensus rules.
 There is a lot of communication between them and metadata can be used to de-anonymize Bitcoin users.
 
 [[toc]]
@@ -25,16 +25,16 @@ A Bitcoin full node broadcasts not just the transactions of its user, but it als
 Thus it is very difficult to find out which transactions originated from which full node.
 However, when a node or a wallet does not gossip all transactions, but only the transactions of its user, then it is easier to find out which node has sent those specific transactions.
 
-There are light wallets, which query a backend server to get information regarding specific addresses, or use [BIP 37](/using-wasabi/BIPs.md#bip-37-connection-bloom-filtering) bloom filtering SPV wallet protocol, which is [extremely bad for privacy](https://jonasnick.github.io/blog/2015/02/12/privacy-in-bitcoinj/).
+There are light wallets, which query a backend server to get information regarding specific addresses or use [BIP 37](https://github.com/bitcoin/bips/blob/master/bip-0037.mediawiki) bloom filtering SPV wallet protocol, which is [extremely bad for privacy](https://jonasnick.github.io/blog/2015/02/12/privacy-in-bitcoinj/).
 And there is Electrum, which [sends your addresses](https://www.reddit.com/r/Bitcoin/comments/2feox9/electrum_securityprivacy_model/ck8szc0/) to random Electrum servers.
 
 :::danger
-When the user sends the extended public key, or a filter of all the addresses to the central server, then the server can **COMPLETELY** deanonymize the users.
+When the user sends the extended public key or a filter of all the addresses to the central server, then the server can **COMPLETELY** deanonymize the users.
 :::
 
 ## Wasabi's solution
 
-### Full node by default & block filters over tor
+### Full node by default & block filters over Tor
 
 Wasabi checks if there is a local Tor instance installed, and if so, it uses this to onion-route all the traffic to and from the network.
 If Tor is not already installed, then it is accessed automatically from within Wasabi.
@@ -42,7 +42,7 @@ This means that by default, all network communication is secured from outside sn
 
 In order to fully verify everything, running a full node is essential.
 If [bitcoind](https://github.com/bitcoin/bitcoin) is installed and run on the same computer as Wasabi, then it will automatically and by default connect to the full node.
-It is also possible to connect Wasabi to a remote full node on another computer by specifying the local IP address or Tor hidden service in the settings.
+It is also possible to connect Wasabi to a remote full node on another computer by specifying the local IP address or Tor onion service in the settings.
 Then, Wasabi pulls the verified blocks and queries the mempool from the full node.
 
 :::tip Wasabi ships with Bitcoin Knots!
@@ -51,20 +51,20 @@ This means that it is possible (but not mandatory) to start Bitcoin Knots during
 Without having to install or configure anything.
 :::
 
-However, even if no full node is installed, Wasabi has a light client mode based on [BIP 158 block filters](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients).
+However, even if no full node is installed, Wasabi has a light client mode based on [BIP 158 block filters](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki).
 The Wasabi server sends a filter of all the transactions in each block to all the users.
 Then, users check locally if the block contains any transactions with their addresses.
 If not, then the filter is stored for later reference, and no block is downloaded.
-However, if there is a user transaction in that block, then Wasabi connects to a random Bitcoin P2P node over Tor, and asks for this entire block, not only one transaction.
+However, if there is a user transaction in that block, then Wasabi connects to a random Bitcoin P2P node over Tor and asks for this entire block, not only one transaction.
 This block request is indistinguishable from the regular P2P gossip, and thus nobody, neither the server nor the full node, know which addresses belong to the user.
 
 :::tip Privacy by default!
-Wasabi has network level privacy as good as a Bitcoin full node.
+Wasabi has network-level privacy as good as a Bitcoin full node.
 :::
 
-## In depth comparison 
+## In-depth comparison 
 
-Furthermore, network level privacy consists of two sub-categories.
+Furthermore, network-level privacy consists of two sub-categories.
 
 - Private UTXO Retrieval
 - Private Transaction Broadcasting
@@ -79,11 +79,11 @@ This is as good as it gets.
 #### Private transaction broadcasting
 
 Bitcoin Core broadcasts transactions to other peers on the clearnet, unencrypted.
-Other peers cannot figure out which transaction originates from a specific node, because Core does not only broadcast its own transactions, but also propagates every other transaction that hits its mempool.
-However some papers note it’s not bulletproof:
+Other peers cannot figure out which transaction originates from a specific node because Core does not only broadcast its own transactions but also propagates every other transaction that hits its mempool.
+However, some papers note it’s not bulletproof:
 
 > Bitcoin transaction propagation does not hide the source of a transaction very well, especially against a “supernode” eavesdropper that forms a large number of outgoing connections to reachable nodes on the network.
->  [Dandelion: Privacy-Preserving Transaction Propagation](/using-wasabi/BIPs.md#bip-156-dandelion-privacy-enhancing-routing).
+>  [Dandelion: Privacy-Preserving Transaction Propagation](https://github.com/bitcoin/bips/blob/master/bip-0156.mediawiki).
 
 #### Adversaries identified
 
@@ -92,8 +92,8 @@ However some papers note it’s not bulletproof:
 
 ### Bitcoin Core + Tor
 
-You can use Bitcoin Core with Tor, which solves some of the above mentioned issues.
-In this case a supernode cannot track back transactions to your IP address.
+You can use Bitcoin Core with Tor, which solves some of the above-mentioned issues.
+In this case, a supernode cannot track back transactions to your IP address.
 
 An entity that can break Tor is a universal adversary, however, most Tor attacks are not possible if exit nodes are not involved.
 It is reasonable to assume that this entity can break the onion routing, not Tor's encryption itself.
@@ -106,12 +106,12 @@ It is reasonable to assume that this entity can break the onion routing, not Tor
 
 #### Private UTXO retrieval
 
-The backend server served a constant filter table to all the clients over Tor.
-From those filters the clients figure out which blocks they are interested in and download them [and some false-positive blocks] from peers.
+The backend server serves block filters to all the clients over Tor.
+From those filters, the clients figure out which blocks they are interested in and download them [and some false positive blocks] from peers.
 One block per peer, and always over a fresh Tor stream.
-When a block was acquired, the peer was disconnected.
+When a block is acquired, the peer gets disconnected.
 Because of the end-to-end encryption of the onion network, it immediately defeats an ISP adversary and makes the already impossible job of the Sybil adversary even more impossible.
-The only adversary that could possibly overcome this would have to setup thousands of full nodes over onion and also break Tor itself.
+The only adversary that could possibly overcome this would have to setup thousands of full nodes over Tor and also break Tor itself.
 
 #### Private transaction broadcasting
 
@@ -143,38 +143,38 @@ Using Wasabi this way results in the same privacy model as Bitcoin Core's, regar
 
 #### Private transaction broadcasting
 
-Even when Wasabi is connected to your own node, it will broadcast the transaction in the above described way: to one new peer over Tor.
+Even when Wasabi is connected to your own node, it will broadcast the transaction in the above-described way: to one new peer over Tor.
 
 ## Universal Attacks
 
 Every time you use software that interacts with a Bitcoin network, and especially a Bitcoin node, you leave a sticky fingerprint in your traffic.
-It comes in the form of a small, but unavoidable spike in volume every time a new block is mined and the nodes start gossiping about it.
+It comes in the form of a small but unavoidable spike in volume every time a new block is mined and the nodes start gossiping about it.
 The blocks in Bitcoin are quite big, and the propagation speed is critical for consensus (greater delay means more frequent accidental forks), so such effect is predictable, and, in a sense, inherent to the Bitcoin architecture.
 
 Notably, the volume of block-related messages was drastically reduced since the introduction of Compact Block Relay ([BIP 152](https://github.com/bitcoin/bips/blob/master/bip-0152.mediawiki).
 Instead of requesting whole blocks, mostly consisting of transactions already known to the node, the peer informed of a new block is only requesting the missing transactions.
 Yet the amount of extra communications in the seconds following a new block is still considerable.
-This effect may not be noticeable for a single block, but over time it gets statistically significant, and may get exploited.
+This effect may not be noticeable for a single block, but over time it gets statistically significant and may get exploited.
 
-As reported by [Niko Kudriastev and Michael Maltsev](https://m417z.com/bitsniff/), it is possible to detect Bitcoin communications using nothing but traffic volume over time - an information even most privacy concerned individuals are likely leaking to their law-abiding Internet Service Provider.
+As reported by [Niko Kudriastev and Michael Maltsev](https://m417z.com/bitsniff/), it is possible to detect Bitcoin communications using nothing but traffic volume over time - a piece of information even most privacy concerned individuals are likely leaking to their law-abiding Internet Service Provider.
 In this case, using a VPN and running the node over Tor may not be enough to avoid being detected.
 
 ### Protection
 
-There are many ways to go about it, but staying completely undetected is far from trivial - traditional privacy enhancing tools mostly focus on the packet level, which is orthogonal to the technique.
+There are many ways to go about it, but staying completely undetected is far from trivial - traditional privacy-enhancing tools mostly focus on the packet level, which is orthogonal to the technique.
 Let’s break down the potential defense vectors.
 
 - **VPN / Tor** - unlikely to affect the time series shape much, and therefore for larger traffic lengths the statistical significance of block-related spikes will inevitably become overwhelming.
 
 - **Traffic mixing** - for traffic volumes that are orders of magnitude higher than Bitcoin P2P communications, mixing is likely to be very effective.
-That would, however, demand constant shielding of both upstream and downstream communications, and couldn't be done effectively by just running the node on a general purpose machine - any noticeably long unshielded period may be enough for detection.
+That would, however, demand constant shielding of both upstream and downstream communications, and couldn't be done effectively by just running the node on a general-purpose machine - any noticeably long unshielded period may be enough for detection.
 
 - **Being your own ISP** - too spicy for most, but that should work.
 
 - **Blockstream Satellite** - the ultimate solution.
 Eliminates the traffic analysis threat altogether.
 
-Beyond active measures available now, both privacy and bandwidth efficiency of Bitcoin communications are actively worked on.
+Beyond active measures available now, both the privacy and the bandwidth efficiency of Bitcoin communications are actively worked on.
 It is entirely possible that the messaging protocol will get to the point where block propagation doesn't trigger any significant spikes in traffic volume.
 
 You can read more about BitSniff [here](https://79jke.github.io/BitSniff/) and check the interactive demo [here](https://m417z.com/bitsniff/).

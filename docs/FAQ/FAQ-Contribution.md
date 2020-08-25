@@ -23,9 +23,9 @@ If you want to read more about fees here is a nice explanation: [What are the fe
 :::details
 ### Who is contributing to Wasabi already?
 
-There are many Wasabikas working with great effort and care to manifest this powerful tool of self defense.
+There are many Wasabikas working with great effort and care to manifest this powerful tool of self-defense.
 [Over 50 peers](https://github.com/zkSNACKs/WalletWasabi/graphs/contributors) have already contributed to the repository, and more and more supporters are joining the [dojo](/building-wasabi/Dojo.md).
-Four of the main contributors are [Ádám Ficsor](https://github.com/nopara73) [co-founder and former CTO of [zkSnacks Ltd](https://zksnacks.com/), co-author of the [zero link Bitcoin fungibility framework](https://github.com/nopara73/ZeroLink)], [Lucas Ontivero](https://github.com/lontivero) [lead engineer of [zkSnacks Ltd](https://zksnacks.com/)], [Dávid Molnár](https://github.com/molnard) [[zkSnacks Ltd](https://zksnacks.com/) employee], and [Dan Walmsley](https://github.com/danwalmsley) [maintainer of [Avalonia UI Framework](https://github.com/AvaloniaUI/Avalonia)].
+Four of the main contributors are [Ádám Ficsor](https://github.com/nopara73) [co-founder and former CTO of [zkSNACKs Ltd](https://zksnacks.com/), co-author of the [zero link Bitcoin fungibility framework](https://github.com/nopara73/ZeroLink)], [Lucas Ontivero](https://github.com/lontivero) [lead engineer of [zkSNACKs Ltd](https://zksnacks.com/)], [Dávid Molnár](https://github.com/molnard) [CTO of [zkSNACKs Ltd](https://zksnacks.com/)], and [Dan Walmsley](https://github.com/danwalmsley) [co-maintainer of [Avalonia UI Framework](https://github.com/AvaloniaUI/Avalonia)].
 For an inclusive list of all the Wasabikas, not just the code developers, please visit the [dojo](/building-wasabi/Dojo.md).
 
 @[youtube](F8xNSOhbWrw)
@@ -38,7 +38,7 @@ For an inclusive list of all the Wasabikas, not just the code developers, please
 :::details
 ### Who reviews and merges the pull requests?
 
-As the Wasabi code is libre and open source, anyone has access to review the latest contributions and browse the [open pull requests](https://github.com/zkSNACKs/WalletWasabi/pulls?q=is%3Apr+is%3Aopen+sort%3Aupdated-desc).
+As the Wasabi code is libre and open-source, anyone has access to review the latest contributions and browse the [open pull requests](https://github.com/zkSNACKs/WalletWasabi/pulls?q=is%3Apr+is%3Aopen+sort%3Aupdated-desc).
 The review of any Wasabika is not just deeply appreciated, but desperately needed!
 Wasabi is cutting-edge, high security software, and there can never be enough eyes seeking and squashing bugs.
 Especially review by experienced C# developers are vitally important, yet even typo and grammar fixes are necessary.
@@ -55,8 +55,8 @@ However, since all four are administrators, they can still force the merge witho
 :::details
 ### What is on the future roadmap of Wasabi development?
 
-Wasabi is far from complete, there are many Wasabikas contributing every day to make this tool of self defense even more powerful.
-Because Wasabi is libre and open source software, anyone can support the project without asking for permission.
+Wasabi is far from complete, there are many Wasabikas contributing every day to make this tool of self-defense even more powerful.
+Because Wasabi is libre and open-source software, anyone can support the project without asking for permission.
 Thus it is relatively tricky to give a precise roadmap with what will be implemented in the near and distant future.
 :::
 
@@ -65,11 +65,11 @@ Thus it is relatively tricky to give a precise roadmap with what will be impleme
 :::details
 ### How should I start contributing to Wasabi?
 
-Thank you for considering to support this beautiful libre and open source project!
-Nobody owns this software, and thus it is the responsibility of everyone using it to contribute to its growth.
+Thank you for considering to support this beautiful libre and open-source project!
+It is the responsibility of everyone using the software to contribute to its growth.
 Your help is deeply appreciated, and very much needed!
 First please read the [contribution checklist](/building-wasabi/ContributionChecklist.md) to get introduced to the project and to start out in the right direction.
-Join our [Slack](https://join.slack.com/t/tumblebit/shared_invite/enQtNjQ1MTQ2NzQ1ODI0LWIzOTg5YTM3YmNkOTg1NjZmZTQ3NmM1OTAzYmQyYzk1M2M0MTdlZDk2OTQwNzFiNTg1ZmExNzM0NjgzY2M0Yzg), [Telegram](https://t.me/WasabiWallet), [Riot](https://riot.im/app/#/room/#wasabiwallet:matrix.org) or [Reddit](https://www.reddit.com/r/WasabiWallet/), and check out the [GitHub](https://github.com/zkSnacks/WalletWasabi), so that you can stay up-to-date with the latest contributions.
+Join our [Slack](https://join.slack.com/t/tumblebit/shared_invite/enQtNjQ1MTQ2NzQ1ODI0LWIzOTg5YTM3YmNkOTg1NjZmZTQ3NmM1OTAzYmQyYzk1M2M0MTdlZDk2OTQwNzFiNTg1ZmExNzM0NjgzY2M0Yzg), [Reddit](https://www.reddit.com/r/WasabiWallet/), [Telegram](https://t.me/WasabiWallet), and check out our [GitHub repository](https://github.com/zkSNACKs/WalletWasabi), so that you can stay up-to-date with the latest contributions.
 :::
 
 :::details
@@ -77,10 +77,10 @@ Join our [Slack](https://join.slack.com/t/tumblebit/shared_invite/enQtNjQ1MTQ2Nz
 
 Yes!
 The beauty of Wasabi is that it's not just a very awesome wallet by default, but it has the additional opt-in CoinJoin service.
-This is provided by [zkSnacks Ltd.](https://zksnacks.com), and in exchange for this service, the user pays a coordinator fee.
-In return, zkSnacks is supporting several developers to dedicate their full time to contribute to this open source project.
+This is provided by [zkSNACKs Ltd.](https://zksnacks.com), and in exchange for this service, the user pays a coordinator fee.
+In return, zkSNACKs is supporting several developers to dedicate their full time to contribute to this open-source project.
 There are also projects like the [contribution game](/building-wasabi/ContributionGame.md) where a bounty is paid out to any contributor worthy the praise.
-Specifically for the documentation, there is a monthly budget of 1.000 USD to reward contributors for the maintenance and expansion of this knowledge archive.
+Specifically for [education](/building-wasabi/ContributionGame.md#education-contribution-game), there is a monthly budget of 1500 USD to reward contributors for the maintenance and expansion of the documentation, the creation of videos and podcasts, and direct peer support in the communication channels.
 :::
 
 ::::details
@@ -108,7 +108,7 @@ Send an email to [adam.ficsor73@gmail.com](mailto:adam.ficsor73@gmail.com), pref
 
 Wasabi is a quite beautiful piece of software already.
 Yet there are also 1001 things that could be just a little better, or even quite substantially superior.
-The beauty and bane of libre and open source software is that it is never complete, there is always more work to be done.
+The beauty and bane of libre and open-source software is that it is never complete, there is always more work to be done.
 
 Regardless if you are a new user of Wasabi, or a veteran black belt Wasabika, any suggestions on how to improve are very welcome.
 Please first check the existing [issues](https://github.com/zkSNACKs/WalletWasabi/issues/) and [pull requests](https://github.com/zkSNACKs/WalletWasabi/pulls) if someone has the same feature request as you.
@@ -126,14 +126,14 @@ You are already on the right track by first checking [this documentation](https:
 It's likely that you are not the first peer who has an issue and question, and hopefully one has curated the answer in here already.
 You can use the search function in the top navbar to look for a specific topic, and the sidebar menu as a table of content.
 Though often times it is quite useful to start a conversation with other Wasabikas about a specific problem.
-It is useful to reach out to the contributors on [Twitter](https://twitter.com/wasabiwallet), [Reddit](https://old.reddit.com/r/WasabiWallet/), [Riot](https://riot.im/app/#/room/#wasabiwallet:matrix.org) and [Telegram](https://t.me/WasabiWallet).
+It is useful to reach out to the contributors on [Twitter](https://twitter.com/wasabiwallet), [Reddit](https://old.reddit.com/r/WasabiWallet/) or [Telegram](https://t.me/WasabiWallet).
 If your trouble is specific to the code, then it might also be suitable to check the existing [GitHub issues](https://github.com/zkSNACKs/WalletWasabi/issues/) and open a new one.
 :::
 
 :::details
 ### What does the Wasabi project need help with?
 
-Wasabi is libre and open source software, thus it relies on the support of several contributors on all fronts.
+Wasabi is libre and open-source software, thus it relies on the support of several contributors on all fronts.
 Of course, this includes coding new features, bug fixes and stability improvements.
 Yet just equally important is the review of the commits of all other Wasabikas.
 It's not just the contributions to the code, but also to the documentation and the effort to educate peers using Wasabi.

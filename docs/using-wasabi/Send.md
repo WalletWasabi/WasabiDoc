@@ -40,15 +40,15 @@ The goal is to know the observers who know about your coins and try to reduce th
 
 ## Anonymity Set
 
-When you send a bitcoin in a regular transaction with one input, and two outputs, then your change coin can be linked to this one input.
-There is a 1 in 1 chance to find this link, and no plausible deniability.
+When you send a bitcoin in a regular transaction with one input and two outputs, then your change coin can be linked to this one input.
+There is a 1 in 1 chance to find this link and no plausible deniability.
 Thus, Wasabi shows this coin with an anonymity set of `1` <img src="/ShieldRed.png" alt="red" class="shield" />.
 
-In a Wasabi [CoinJoin](/using-wasabi/CoinJoin.md), many peers register coins in the input of the transaction, and in the output there are several equal value coins, for example 100 coins worth exactly 0.1 bitcoin.
+In a Wasabi [CoinJoin](/using-wasabi/CoinJoin.md), many peers register coins in the input of the transaction, and in the output, there are several equal value coins, for example, 100 coins worth exactly 0.1 bitcoin.
 This means that when looking at one of these CoinJoin outputs, there is a 1 in 100 chance to find the corresponding input.
 Thus the higher the anonymity set, the more your post-mix coin is delinked from the pre-mix history.
 Wasabi shows you three levels of anonymity sets: <img src="/ShieldYellow.png" alt="yellow" class="shield" />, <img src="/ShieldGreen.png" alt="green" class="shield" /> and <img src="/ShieldCheckmark.png" alt="checkmark" class="shield" />.
-By default they have an anonymity set of `2`, `21` and `50`, however, this can be [changed in the settings](/FAQ/FAQ-UseWasabi.md#how-can-i-change-the-anonset-target).
+By default, they have an anonymity set of `2`, `21` and `50`, however, this can be [changed in the settings](/FAQ/FAQ-UseWasabi.md#how-can-i-change-the-anonset-target).
 
 ![](/SendAnonset.png)
 
@@ -56,15 +56,15 @@ By default they have an anonymity set of `2`, `21` and `50`, however, this can b
 
 When sending bitcoin, you need to know the destination address of the receiver.
 This commits to the spending condition that the receiver agrees to have for this coin.
-The address can be a public key hash [starting with `1`], a script hash [starting with `3`], or a native segwit bech32 public key hash [starting with `bc1q`].
+The address can be a public key hash [starting with `1`], a script hash [starting with `3`], or a native SegWit bech32 public key hash [starting with `bc1q`].
 Make sure that you ask the receiver for a [new address](/why-wasabi/AddressReuse.md) for every payment to protect your privacy and theirs.
 Wasabi will calculate the checksum and notify you if the provided address is wrong.
 
-## Label
+## Observers
 
 Similar to the `Receive` tab, you must [label](/using-wasabi/Receive.md#the-importance-of-labeling) every new address with the observers who know that this is your address.
 In the `Send` tab an address is automatically generated to receive the change amount.
-The observer of a sending transaction is of course the receiver of it, as well as any other third party that will find out about it, for example a payment processor or an exchange.
+The observer of a sending transaction is, of course, the receiver of it, as well as any other third party that will find out about it, for example, a payment processor or an exchange.
 This metadata will be used to build an accurate cluster of observers who know about your coins.
 A label is not required (except in edge cases) when you send an entire coin, as there will be no change left.
 
@@ -97,6 +97,25 @@ In some cases, there is very little demand for block space, and then Wasabi will
 
 ![](/SendNoFee.png)
 
+:::tip High-priority transaction fees
+
+When using Bitcoin Core's `smart fee` algorithm to estimate the time a transaction will take to confirm given the current mempool, the algorithm considers the historic data for transactions in the mempool and in recent blocks.
+
+If, after you select the highest fee for a `send`, other people decide to send coins using even higher fees than you selected, their transactions will be placed ahead of yours in the mempool.
+
+The placement of a transaction in line to be confirmed in the mempool is an ongoing auction for block space.
+
+As such, a fee that is high enough to be confirmed in the next block when you create a transaction can be outbid by people sending coins after you who also want to be in the next block, which places your transaction farther back in line to be confirmed.
+
+If you have a transaction that is high-priority and you really want it to be confirmed ASAP:
+
+1. Go into your Wasabi `Settings` and turn on `Manual fee entry`.
+2. Use [a mempool monitor](https://mempool.space) (available [Tor onion website](http://mempoolhqx4isw62xs7abwphsq7ldayuidyx2v2oethdhhj6mlo2r6ad.onion/)) to see what fees are likely to get a transaction to be confirmed in the next block.
+3. Select a fee that is well above the current highest fee....perhaps double or triple it....if it is very important to you that the transaction is confirmed soon.
+
+For a deeper dive into the fee estimation process, [this article](https://bitcointechtalk.com/an-introduction-to-bitcoin-core-fee-estimation-27920880ad0) is worth reading.
+:::
+
 ## Custom Change Address
 
 In the `Settings` tab you can activate the option to set a custom change address.
@@ -114,7 +133,7 @@ If no address is pasted in this field, then it will pull an address from this sa
 In order to spend a coin, the transaction must be signed by the private key corresponding to that coin.
 Wasabi stores a secret on the computer, encrypted with the password that you specified during the [wallet generation](/using-wasabi/WalletGeneration.md#what-password-to-choose).
 To spend a coin you need to type in the password, which decrypts the encrypted secret, and then derive the child private key that signs the transaction.
-Afterwards the password is wiped from the memory.
+Afterwards, the password is wiped from memory.
 
 ## Broadcast
 

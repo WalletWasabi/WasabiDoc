@@ -32,13 +32,14 @@ Further tutorials about the different parts of the wallet, for newbies and power
 - [Cold-Wasabi Hardware Wallet Mode](/using-wasabi/ColdWasabi.md)
 - [Bitcoin Full Node](/using-wasabi/BitcoinFullNode.md)
 
-### Privacy Best Practices
+### Best Practices
+- [Passwords](/using-wasabi/PasswordBestPractices.md)
+- [Backups](/using-wasabi/BackupBestPractices.md)
 - [Change Coins](/using-wasabi/ChangeCoins.md)
 
 ### Restoring Wasabi
-- [Recover Wasabi Wallet](/using-wasabi/WalletRecovery.md)
+- [Recover a Wallet](/using-wasabi/WalletRecovery.md)
 - [Restoring Wasabi Wallet to Electrum](/using-wasabi/RestoreElectrum.md)
-- [Lost Password Strategy](/using-wasabi/LostPassword.md)
 - [Password Finder](/using-wasabi/PasswordFinder.md)
 
 ### Advanced Installing Wasabi
@@ -51,10 +52,8 @@ Further tutorials about the different parts of the wallet, for newbies and power
 - [Headless Wasabi Daemon](/using-wasabi/Daemon.md)
 - [RPC Interface](/using-wasabi/RPC.md)
 - [Lurking Wife Mode](/using-wasabi/LurkingWifeMode.md)
+- [PayJoin](/using-wasabi/PayJoin.md)
 - [Testnet](/using-wasabi/Testnet.md)
 - [Lock Screen](/using-wasabi/LockScreen.md)
-- [Password Best Practices](/using-wasabi/PasswordBestPractices.md)
-- [Backup Best Practices](/using-wasabi/BackupBestPractices.md)
 - [Supported BIPs](/using-wasabi/BIPs.md)
 - [Supported Industry Standards](/using-wasabi/IndustryStandards.md)
-

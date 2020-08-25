@@ -37,7 +37,7 @@ Read more: [What is the anonymity set?](/FAQ/FAQ-UseWasabi.md#what-is-the-anonym
 A filter representing a compact list of addresses in one block.
 Wasabi checks locally if any block filter contains transactions with addresses of the wallet.
 No public keys are sent to any third party server, thus it is very private.
-Read more: [BIP 158: Compact Block Filters for Light Clients](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients)
+Read more: [BIP 158: Compact Block Filters for Light Clients](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki)
 :::
 
 :::details
@@ -53,7 +53,7 @@ Read more: [Blockchain Analysis](/why-wasabi/TransactionSurveillanceCompanies.md
 
 A filter used primarily by SPV clients to request only block headers and merkle proofs of a given transaction from full nodes.
 This is very bad for privacy, as third party servers learn about which addresses you are interested in.
-Read more: [BIP 37: Connection Bloom Filtering](/using-wasabi/BIPs.md#bip-37-connection-bloom-filtering)
+Read more: [BIP 37: Connection Bloom Filtering](https://github.com/bitcoin/bips/blob/master/bip-0037.mediawiki)
 :::
 
 :::details
@@ -105,14 +105,13 @@ Read more: [What is the privacy I get after mixing with Wasabi?](/FAQ/FAQ-Introd
 ### Common-Input-Ownership heuristic
 
 This is a heuristic or assumption which says that if a transaction has more than one input then all those inputs are owned by the same entity.
-Read more: [Wasabi Wallet under the hood](/building-wasabi/TechnicalOverview.md#wasabi-wallet-under-the-hood)
 :::
 
 :::details
 ### Coordinator
 
 The coordinator is a server which creates CoinJoins and accepts UTXOs in the mix.
-Read more: [Wasabi Wallet under the hood](/FAQ/FAQ-UseWasabi.md#how-does-my-wallet-communicate-with-the-wasabi-coordinator-server)
+Read more: [How does my wallet communicate with the Wasabi coordinator server?](/FAQ/FAQ-UseWasabi.md#how-does-my-wallet-communicate-with-the-wasabi-coordinator-server)
 :::
 
 :::details
@@ -139,14 +138,6 @@ Read more: [AML/KYC Information](/why-wasabi/TransactionSurveillanceCompanies.md
 :::
 
 :::details
-### Label
-
-A way to track who knows about the ownership of your coins.
-Not to be confused with a description of a transaction.
-Read more: [The importance of labeling](/using-wasabi/Receive.md#the-importance-of-labeling)
-:::
-
-:::details
 ### Lurking Wife Mode (LWM)
 
 Lurking Wife Mode is a Wasabi feature that hides sensitive and critical information on the wallet itself, which is useful for screenshots.
@@ -154,10 +145,18 @@ Read more: [Lurking Wife Mode](/using-wasabi/LurkingWifeMode.md)
 :::
 
 :::details
+### Observers
+
+A way to track who knows about the ownership of your coins.
+Not to be confused with a description of a transaction.
+Read more: [The importance of labeling](/using-wasabi/Receive.md#the-importance-of-labeling)
+:::
+
+:::details
 ### Pay to EndPoint (P2EP)
 
-Pay to EndPoint is sending of bitcoins where the receiver adds one of his own coins as input for a two party CoinJoin.
-Read more: [Pay to EndPoint](/building-wasabi/PayToEndPoint.md)
+Pay to EndPoint is when the receiver is reachable over the internet and the sender communicates with the receiver to coordinate a more advanced transaction.
+The Tor onion service, IP address or domain of the receiver is included in a BIP21 Bitcoin URI payment link.
 :::
 
 :::details

@@ -142,8 +142,8 @@ module.exports = {
           collapsable: false,
           sidebarDepth: 2,
           children: [
-            "/why-wasabi/AddressReuse.md",
             "/why-wasabi/Coins.md",
+            "/why-wasabi/AddressReuse.md",
             "/why-wasabi/TransactionGraph.md",
             "/why-wasabi/NetworkLevelPrivacy.md",
             "/why-wasabi/TransactionSurveillanceCompanies.md"
@@ -185,10 +185,12 @@ module.exports = {
           ]
         },
         {
-          title: "Privacy Best Practices",
+          title: "Best Practices",
           collapsable: false,
           sidebarDepth: 2,
           children: [
+            "/using-wasabi/PasswordBestPractices.md",
+            "/using-wasabi/BackupBestPractices.md",
             "/using-wasabi/ChangeCoins.md"
           ]
         },
@@ -199,7 +201,6 @@ module.exports = {
           children: [
             "/using-wasabi/WalletRecovery.md",
             "/using-wasabi/RestoreElectrum.md",
-            "/using-wasabi/LostPassword.md",
             "/using-wasabi/PasswordFinder.md"
           ]
         },
@@ -222,10 +223,9 @@ module.exports = {
             "/using-wasabi/Daemon.md",
             "/using-wasabi/RPC.md",
             "/using-wasabi/LurkingWifeMode.md",
+            "/using-wasabi/PayJoin.md",
             "/using-wasabi/Testnet.md",
             "/using-wasabi/LockScreen.md",
-            "/using-wasabi/PasswordBestPractices.md",
-            "/using-wasabi/BackupBestPractices.md", 
             "/using-wasabi/BIPs.md",
             "/using-wasabi/IndustryStandards.md"
           ]
@@ -249,7 +249,6 @@ module.exports = {
           collapsable: false,
           sidebarDepth: 2,
           children: [
-            "/building-wasabi/FalsePositive.md",
             "/building-wasabi/Security.md",
             "/building-wasabi/LICENSE.md",
             "/building-wasabi/Credits.md"
@@ -260,8 +259,6 @@ module.exports = {
           collapsable: false,
           sidebarDepth: 2,
           children: [
-            "/building-wasabi/Joinmarket.md",
-            "/building-wasabi/PayToEndPoint.md",
             "/building-wasabi/WasabiResearchClub.md"
           ]
         }

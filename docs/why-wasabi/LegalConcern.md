@@ -12,7 +12,7 @@
 ---
 
 Using Bitcoin and other cryptocurrencies in the everyday course of businesses is becoming more and more popular.
-Digital money has a lot of advantages, from unstoppable transactions, to low fees, and instant execution of international payments.
+Digital money has a lot of advantages, from unstoppable transactions to low fees, and instant execution of international payments.
 But all come at a price: the blockchain stores sensitive information like the amount and involved addresses of a transaction, giving away too much business-related information to the public.
 However, this does not necessarily need to be the case.
 
@@ -25,7 +25,7 @@ It is often assumed that the main problem with an obfuscated transaction history
 However, this is only the first impression, if we go into the details it can become more transparent why institutions should not worry about violating AML rules and why companies could have a direct competitive advantage using CoinJoin transactions.
 
 With a transparent financial track record, companies paying with cryptocurrencies may find themselves in a squeezing situation, where their suppliers, clients, and competitors are aware of all of their payment steps and prices.
-For institutional investors each step would be scrutinized by the market causing intentional or unintentional price manipulation.
+For institutional investors, each step would be scrutinized by the market causing intentional or unintentional price manipulation.
 
 While the Bitcoin blockchain does not store personal information about the owners of the specific Bitcoin addresses, using metadata makes it possible to link Bitcoin addresses to certain companies and individuals.
 If such a link can be established, all past and future transactions can be traced.
@@ -45,7 +45,7 @@ There is no question a service provider who keeps a record of personal informati
 In the ordinary banking system personal financial information is handled as a secret thus preserving individual privacy from third parties.
 Whereas in the open blockchain system this information by the nature of the technology cannot be kept secret, so there is a large risk of a privacy leak of sensitive financial information.
 This is obviously not intentional and even though the personal information might be protected, the financial information is nevertheless leaked due to the pseudonym nature of the system.
-This information has a similar sensitivity as name, address, gender, etc. so it should be handled with great care.
+This information has similar sensitivity as name, address, gender, etc. so it should be handled with great care.
 
 ### CoinJoin as a privacy-preserving tool
 
@@ -71,12 +71,12 @@ Other competitors can now demand similar discounts, forcing industries into a vi
 As each and every price discount is negotiated on a case by case basis, considering factors as creditworthiness and timing of payment, transparent supplier prices would only cause enormous pressure on suppliers to deal with negotiations.
 
 Beyond the price of products, the timing of payments is also fully transparent on the blockchain.
-However, in certain circumstances, it is also a crucial business secret to keep the information of the sequence of invoice payments indoors.
+However, in certain circumstances, it is also a crucial business secret to keep the information on the sequence of invoice payments indoors.
 Considering cash flow implications, it can happen that one invoice is paid on time, while other invoices are still pending payment.
 In the case of blockchain transactions however all payments are transparent, so it can be clear for each counterparty that only a selected number of invoices has been paid even if the sufficient funds are available which can cause unnecessary tension between business partners.
 
 Additionally, if all historical transactions of a company are known, its creditworthiness might be considered incorrectly.
-It can happen that the creditworthiness is considered better than it is, if the incoming funds to a specific address is extraordinarily high, but these funds are needed in other parts of the business, so the overall solvency of the business can be still negative despite the large funds.
+It can happen that the creditworthiness is considered better than it is if the incoming funds to a specific address are extraordinarily high, but these funds are needed in other parts of the business, so the overall solvency of the business can be still negative despite the large funds.
 On the other hand, creditworthiness can be considered worse than it actually is, if only a handful of addresses are taken into consideration for the solvency analysis, neglecting other forms of wealth, like other Bitcoin addresses, or fiat accounts.
 
 ### Clients
@@ -87,7 +87,7 @@ If for example, there are no incoming funds for a given period, clients may stay
 But in reality, the seasonality of incoming funds is not disclosed for all companies, so it can be a  perfectly stable business situation to receive incoming funds only in a given period of a year, while still being able to deliver service throughout the year.
 
 Another aspect is the possible price negotiations on the client-side.
-If a client finds out that another client is paying less for a service or product, they can demand similar discounts which can result in a downward price pressure in the industry.
+If a client finds out that another client is paying less for a service or product, they can demand similar discounts which can result in downward price pressure in the industry.
 This can ultimately result in companies going out of businesses if they cannot adjust to the lower price levels which are below the equilibrium prices.
 
 ### Competitors
@@ -99,7 +99,7 @@ Although external factors should be considered in pricing, they should not be th
 
 ### Employees
 
-There is now a growing number of companies that are paying their employees' salaries in bitcoin due to the trustless transactions with low fees especially with international transactions.
+There is now a growing number of companies that are paying their employees' salaries in bitcoin due to the trustless transactions with low fees, especially with international transactions.
 
 With transparent transaction history, employees would be aware of each other’s salaries without the company disclosing this information.
 Although there are some theories supporting a transparent salary structure, up to now the majority of the companies prefer to keep salaries as secret and obligate employees to keep salary and wage information confidential.
@@ -136,7 +136,7 @@ Using privacy tools to obfuscate transactions is completely legal and in accorda
 
 In all jurisdictions, there are different laws and acts that are made to protect individual privacy.
 This is not limited only to personal data but also financial data.
-In the EU there is GDPR, in the USA there is the Privacy Act of 1974, in Canada there is the Privacy Act of 1985, etc.
+In the EU there is GDPR, in the USA there is the Privacy Act of 1974, in Canada, there is the Privacy Act of 1985, etc.
 These set different rules to be kept in order to preserve individual privacy both on personal and financial levels.
 
 ### KYC/AML

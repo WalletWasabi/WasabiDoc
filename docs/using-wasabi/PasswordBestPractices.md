@@ -130,7 +130,7 @@ As it so often happens, more convenience means less security in this decision.
 ## Password entropy
 
 "Entropy" is a term commonly used to define password strength.
-It is typically used to describe the combined effect of randomness, length, and number of characters (lower-case/upper-case letters, numbers, and special characters) or words in a password or passphrase.
+It is typically used to describe the combined effect of randomness, length, and number of characters (lowercase/uppercase letters, numbers, and special characters) or words in a password or passphrase.
 
 Calculating entropy allows the strength of different randomly constructed passwords or phrases to be compared.
 It also defines the size of the search-space an attacker would need to cover to find the password by trying all possibilities.
@@ -141,9 +141,9 @@ Assuming a password or passphrase is constructed randomly, its level of entropy 
 
 - For a password, the total number of possible outcomes given a specific length (L), and number of characters used (C), is:
 C raised to the power of L, or C^L.<br>
-Example: `jwodnrosqf` is lower-case only (C = 26) and 10 characters long (L = 10).
+Example: `jwodnrosqf` is lowercase only (C = 26) and 10 characters long (L = 10).
 So, 26^10 = 141,000,000,000,000 (141 trillion).<br><br>
-Including upper-case letters in the same password: `jWoDNrosqF` to double (C), results in 52^10 possible passwords = 145,000,000,000,000,000 (145 quadrillion).<br><br>
+Including uppercase letters in the same password: `jWoDNrosqF` to double (C), results in 52^10 possible passwords = 145,000,000,000,000,000 (145 quadrillion).<br><br>
 Including special characters in the same password: `jW0DNro$qF` raises (C) to 95, resulting in 95^10 possibilities = 59,900,000,000,000,000,000 (59.9 quintillion).
 
 - For a passphrase chosen randomly from a list of words, the total number of possible outcomes given a specific number of words (N) and wordlist size (S) is: S raised to the power of N, or S^N.<br>
@@ -162,7 +162,7 @@ For example, there are 7776 words on the EFF wordlist commonly used with dice to
 Plugging 7776 into the calculator to get log2(7776), it is shown that each word taken randomly from the list contributes 12.92 bits of entropy to the strength of the passphrase.
 So, a 5-word passphrase selected randomly from the EFF list will have 5 x 12.92 = 64 bits of entropy.
 
-Since the combination of: lower + uppercase letters, numbers, and special characters = 95, a password constructed using all of these will have log2(95), or 6.57 bits of entropy for each character that comprises the password.
+Since the combination of: lowercase + uppercase letters, numbers, and special characters = 95, a password constructed using all of these will have log2(95), or 6.57 bits of entropy for each character that comprises the password.
 
 From that, we can now calculate that, in order to get the same level of entropy with a password instead of a 5-word passphrase, the password must be at least 10 characters in length.
 

@@ -58,7 +58,7 @@ If thieves don't know how much bitcoin you have, then they don't know if you are
 No one wants the snotty barista at the coffee shop or their nosy neighbors commenting on their income or spending habits.
 No one wants their baby-crazy in-laws asking why they're buying contraception (or sex toys).
 Your employer has no business knowing what church you donate to.
-Only in a perfectly enlightened discrimination free world where no one has undue authority over anyone else could we retain our dignity and make our lawful transactions freely without self-censorship if we don't have privacy.
+Only in a perfectly enlightened discrimination-free world where no one has undue authority over anyone else could we retain our dignity and make our lawful transactions freely without self-censorship if we don't have privacy.
 
 Most importantly, financial privacy isn't incompatible with things like law enforcement or transparency.
 You can always keep records, be ordered (or volunteer) to provide them to whomever, have judges hold against your interest when you can't produce records (as is the case today).
@@ -126,17 +126,17 @@ Your full node defines, verifies and enforces the sound money you use to store y
 When you run your own full node, then on your local computer you can verify exactly if the bitcoin you receive are actually valid.
 When you do not verify this for yourself, then you need to ask another trusted third party how much money you have.
 Regardless how you ask this other server, there is now more metadata available to potentially link your coins to your identity.
-There are bad ways to communicate, like querying a block explorer over clearnet, and good ways to communicate, like using [BIP 158](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients) block filters over Tor.
+There are bad ways to communicate, like querying a block explorer over clearnet, and good ways to communicate, like using [BIP 158](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki) block filters over Tor.
 But regardless, running your own full node means that you don't need to communicate with anyone about your specific coins and this is strictly better.
 :::
 
 :::details
-### How can I setup a full node?
+### How can I set up a full node?
 
-Starting with v1.1.10 release, Wasabi comes [pre-installed with bitcoind](/using-wasabi/BitcoinFullNode.md) from [Bitcoin Core](https://bitcoincore.org/) and it can be started on the same desktop or laptop computer with just one click.
+Starting with v1.1.11 release, Wasabi comes [pre-installed with bitcoind](/using-wasabi/BitcoinFullNode.md) from [Bitcoin Knots](https://bitcoinknots.org/) and it can be started on the same desktop or laptop computer with just one click.
 This is likely the most convenient solution for Wasabikas.
 
-There are also other node implementations different from Bitcoin Core, such as [Bitcoin Knots](https://github.com/bitcoinknots/bitcoin/) or [Libbitcoin](https://github.com/libbitcoin/libbitcoin-node), that could be used as well.
+There are also other node implementations different from Bitcoin Knots, such as [Bitcoin Core](https://bitcoincore.org/) or [Libbitcoin](https://github.com/libbitcoin/libbitcoin-node), that could be used as well.
 
 Instead, if you prefer to use some dedicated hardware solutions, these are some of the most reliable projects:
 - [Raspiblitz](https://github.com/rootzoll/raspiblitz), a DIY project based on the Raspberry platform

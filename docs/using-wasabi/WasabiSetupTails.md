@@ -7,10 +7,10 @@
 
 # Wasabi Setup on Tails
 
-This essay is extracted from this step-by-step [guide](https://github.com/PulpCattel/Tails-BitcoinCore-Wasabi), which also includes tutorials on how to install Tails, create a persistent storage and use Bitcoin Core alongside with it.
+This essay is extracted from this step-by-step [guide](https://github.com/PulpCattel/Tails-BitcoinCore-Wasabi), which also includes tutorials on how to install Tails, create persistent storage and use Bitcoin Core alongside with it.
 
 :::tip
-Starting with v1.1.10 release, Wasabi comes pre-installed with bitcoind from [Bitcoin Core](https://bitcoincore.org/) and it can be started on the same desktop or laptop computer with just one click.
+Starting with v1.1.11 release, Wasabi comes pre-installed with bitcoind from [Bitcoin Knots](https://bitcoinknots.org/) and it can be started on the same desktop or laptop computer with just one click.
 This is likely the most convenient solution for Wasabikas.
 
 Remember that you will need at least a 300GB USB or SD card to download the entire blockchain.
@@ -22,7 +22,7 @@ Remember that you will need at least a 300GB USB or SD card to download the enti
 
 ## Create admin password
 
-You need sudo privileges to install Wasabi, at “Tails Greeter” [create your admin password](https://tails.boum.org/doc/first_steps/startup_options/administration_password/index.en.html) in “additional settings” and launch Tails.
+You need sudo privileges to install Wasabi, at “Tails Greeter” [create your admin password](https://tails.boum.org/doc/first_steps/welcome_screen/administration_password/index.en.html) in “additional settings” and launch Tails.
 
 :::tip
 If you don't want to activate root privileges, you can always download Wasabi in .tar.gz format and extract the folder.
@@ -32,13 +32,14 @@ This way, you can launch Wasabi from the terminal via `./wassabee` command, and 
 
 ## Download
 
-Download Wasabi for Debian/Ubuntu from the [Tor hidden service](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion) or [clearnet](https://www.wasabiwallet.io/#download).
+Download Wasabi for Debian/Ubuntu from the [Tor onion service](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion) or [clearnet](https://www.wasabiwallet.io/#download).
 
 Verify the PGP signature of the downloaded package, the zkSNACKs' PGP public key fingerprint is:
 
 `${zksnacksPublicKeyFingerprint}`
 
-`gpg -v Wasabi-${currentVersion}.deb` (For more details check this [guide](/using-wasabi/InstallPackage.md#debian-and-ubuntu))
+`gpg -v Wasabi-${currentVersion}.deb`
+(For more details check this [guide](/using-wasabi/InstallPackage.md#debian-and-ubuntu))
 
 You can now save your `Wasabi-${currentVersion}.deb` into the persistent storage, which should look like this:
 
@@ -68,11 +69,7 @@ Create a directory in your persistent with the same hierarchical structure, like
 
 After every session, when you’re done, navigate into `/Home/.walletwasabi/client` and copy the desired folders into your persistent directory.
 
-Generally, you’d like to save the `Wallets` and `Blocks` folders.
-
-The former contains your wallet information (e.g. keys, labels), while the latter includes the blocks needed to establish your balance.
-
-Could be also nice to save the `BitcoinStore` folder, which contains the [BIP 158](/using-wasabi/BIPs.md#bip-158-compact-block-filters-for-light-clients) block filters, so that you don’t have to download them again.
+Generally, you’d like to save the `Wallets` (keys, labels), `Blocks` (which are interesting to the wallet) and `BitcoinStore` (block filters) folders.
 
 ## Install Wasabi
 
@@ -97,7 +94,7 @@ Wasabi will show as a normal application in your activities overview menu, ready
 
 ## Load from your data directory
 
-After the first time you save a Wasabi session, your persistent storage will look like:
+After the first time, you save a Wasabi session, your persistent storage will look like:
 
 ```sh
 /Persistent
@@ -109,6 +106,7 @@ After the first time you save a Wasabi session, your persistent storage will loo
         |__ /Wallets
         |__ /Blocks
         |__ /BitcoinStore
+        |__ /Legal
 ```
 
 To load your saved session, copy and paste the `.walletwasabi` folder into `/Home` before starting Wasabi.
@@ -122,17 +120,17 @@ You can save multiple copies of `.walletwasabi` in your persistent, each with di
 |__ /Wasabi                        # General Wasabi folder
     |__ /Wasabi-${currentVersion}.deb       # Wasabi installer
     |__ /BitcoinStore              # Filters (No need to keep multiple copies of them)
-    |__ /CoinJoin wallet
+    |__ /Wallets A,B,C
     |   |__ /.walletwasabi
     |       |__ /client            # Here we save our wallet files and blocks
     |           |__ /Wallets
     |           |__ /Blocks
-    |__ /watch-only coldstorage A
+    |__ /Wallets D,E,F
     |   |__ /.walletwasabi
     |       |__ /client
     |           |__ /Wallets
     |           |__ /Blocks
-    |__ /watch-only coldstorage B
+    |__ /Wallets G,H,I
         |__ /.walletwasabi
             |__ /client
                 |__ /Wallets
@@ -189,11 +187,11 @@ wassabee </dev/null &>/dev/null &
 
 ## Hardware Wallet tutorial (udev rules)
 
-On Linux you need to create a set of `udev` rules to allow hardware wallet access.
+On Linux, you need to create a set of `udev` rules to allow hardware wallet access.
 
 Since Wasabi keeps the configuration files on `$HOME` it's necessary to change persistence in order to keep them.
 
-So configure persistence, download Wasabi and unpack it inside `Persistent` folder then reboot tails with `root` support and launch the following commands from the Terminal:
+So, configure persistence, download Wasabi and unpack it inside `Persistent` folder then reboot tails with `root` support and launch the following commands from the Terminal:
 
 ```
 sudo -i

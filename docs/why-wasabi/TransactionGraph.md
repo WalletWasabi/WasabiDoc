@@ -15,8 +15,8 @@
 
 ### Public transaction history
 
-Because of the input and output model of Bitcoin, there is a chain of digital signatures all the way from the coinbase reward, to the current UTXO.
-This transaction history can reveal sensitive information of the spending patterns of individuals.
+Because of the input and output model of Bitcoin, there is a chain of digital signatures all the way from the coinbase reward to the current UTXO.
+This transaction history can reveal sensitive information about the spending patterns of individuals.
 The receiver of a coin can look back into the transaction history of the sender.
 And the sender can see the future spending of the receiver.
 
@@ -31,4 +31,4 @@ However, the equal value CoinJoin outputs with an anonymity set cannot be tied t
 
 This means that when sending an anonset coin, the receiver does not know about the transaction history before the CoinJoin.
 And when the receiver does a CoinJoin himself, then the sender cannot spy on the later spending patterns.
-An outside observer can only guess the correct link at a rate of 1 in the anonset, for example 1-in-100, or 1%.
+An outside observer can only guess the correct link at a rate of 1 in the anonset, for example, 1-in-100, or 1%.
