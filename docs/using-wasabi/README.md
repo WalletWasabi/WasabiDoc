@@ -36,7 +36,6 @@ Further tutorials about the different parts of the wallet, for newbies and power
 - [Passwords](/using-wasabi/PasswordBestPractices.md)
 - [Backups](/using-wasabi/BackupBestPractices.md)
 - [Change Coins](/using-wasabi/ChangeCoins.md)
-- [How you can be de-anonymized using Bitcoin](/using-wasabi/Deanonimization.md)
 
 ### Restoring Wasabi
 - [Recover a Wallet](/using-wasabi/WalletRecovery.md)

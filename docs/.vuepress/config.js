@@ -191,8 +191,7 @@ module.exports = {
           children: [
             "/using-wasabi/PasswordBestPractices.md",
             "/using-wasabi/BackupBestPractices.md",
-            "/using-wasabi/ChangeCoins.md",
-            "/using-wasabi/Deanonimization.md"
+            "/using-wasabi/ChangeCoins.md"
           ]
         },
         {
