@@ -69,7 +69,7 @@ Thank you for considering to support this beautiful libre and open-source projec
 It is the responsibility of everyone using the software to contribute to its growth.
 Your help is deeply appreciated, and very much needed!
 First please read the [contribution checklist](/building-wasabi/ContributionChecklist.md) to get introduced to the project and to start out in the right direction.
-Join our [Slack](https://join.slack.com/t/tumblebit/shared_invite/enQtNjQ1MTQ2NzQ1ODI0LWIzOTg5YTM3YmNkOTg1NjZmZTQ3NmM1OTAzYmQyYzk1M2M0MTdlZDk2OTQwNzFiNTg1ZmExNzM0NjgzY2M0Yzg), [Reddit](https://www.reddit.com/r/WasabiWallet/), [Telegram](https://t.me/WasabiWallet), [Riot](https://riot.im/app/#/room/#wasabiwallet:matrix.org), and check out the [GitHub](https://github.com/zkSNACKs/WalletWasabi), so that you can stay up-to-date with the latest contributions.
+Join our [Slack](https://join.slack.com/t/tumblebit/shared_invite/enQtNjQ1MTQ2NzQ1ODI0LWIzOTg5YTM3YmNkOTg1NjZmZTQ3NmM1OTAzYmQyYzk1M2M0MTdlZDk2OTQwNzFiNTg1ZmExNzM0NjgzY2M0Yzg), [Reddit](https://www.reddit.com/r/WasabiWallet/), [Telegram](https://t.me/WasabiWallet), and check out our [GitHub repository](https://github.com/zkSNACKs/WalletWasabi), so that you can stay up-to-date with the latest contributions.
 :::
 
 :::details
@@ -126,7 +126,7 @@ You are already on the right track by first checking [this documentation](https:
 It's likely that you are not the first peer who has an issue and question, and hopefully one has curated the answer in here already.
 You can use the search function in the top navbar to look for a specific topic, and the sidebar menu as a table of content.
 Though often times it is quite useful to start a conversation with other Wasabikas about a specific problem.
-It is useful to reach out to the contributors on [Twitter](https://twitter.com/wasabiwallet), [Reddit](https://old.reddit.com/r/WasabiWallet/), [Telegram](https://t.me/WasabiWallet) or [Riot](https://riot.im/app/#/room/#wasabiwallet:matrix.org).
+It is useful to reach out to the contributors on [Twitter](https://twitter.com/wasabiwallet), [Reddit](https://old.reddit.com/r/WasabiWallet/) or [Telegram](https://t.me/WasabiWallet).
 If your trouble is specific to the code, then it might also be suitable to check the existing [GitHub issues](https://github.com/zkSNACKs/WalletWasabi/issues/) and open a new one.
 :::
 
