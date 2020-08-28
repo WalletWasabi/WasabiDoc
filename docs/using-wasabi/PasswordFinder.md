@@ -22,7 +22,7 @@ It is important to know that Wasabi Password Finder is not for breaking wallet p
 
 ## Usage
 
-If you have Wasabi installed then you can use it's built-in Password Finder as described below, otherwise use the stand alone tool linked above.
+If you have Wasabi installed then you can use its built-in Password Finder as described below, otherwise use the stand alone tool linked above.
 
 ### Windows
 
