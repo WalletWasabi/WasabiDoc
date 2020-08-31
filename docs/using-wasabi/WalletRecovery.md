@@ -23,7 +23,7 @@ Now you can click on `Recover`, and Wasabi will recover your wallet, and [load t
 After a short loading period, you can use Wasabi as usual.
 With this level, only the private keys are imported, but not the labels of your addresses.
 
-![](/WalletRecovery.png)
+![Wasabi Wallet Recovery tab](/WalletRecovery.png "Wasabi Wallet Recovery tab")
 
 :::danger
 At recovery, Wasabi is unable to check if your password is correct or not.
@@ -33,7 +33,7 @@ If you type a wrong password a completely different wallet will be recovered.
 You can also toggle the advanced option and specify an account key path of the HD wallet structure.
 The gap limit is about how far Wasabi will check the HD wallet structure for consecutive addresses that have no coins, in some cases, you may want to increase this limit.
 
-![](/WalletRecoveryAdvanced.png)
+![Wasabi Wallet Recovery tab advanced options](/WalletRecoveryAdvanced.png "Wasabi Wallet Recovery tab advanced options")
 
 :::tip
 With this method, you can recover a wallet that was generated with any BIP39 compatible software, not just a Wasabi generated wallet.

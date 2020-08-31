@@ -23,7 +23,7 @@ Do not treat this feature as a strong, fail-safe lock on your wallet.
 
 In the `Settings` tab, go to the `Lock Screen` section.
 
-![](/SettingsLockScreen.png)
+![Wasabi Wallet Lock Screen feature](/SettingsLockScreen.png "Wasabi Wallet Lock Screen feature")
 
 Choose and enter a numerical PIN up to 10 digits in length in the PIN box, and click on `Set`.
 
@@ -34,11 +34,11 @@ You can now lock your screen in two ways:
 1. Hit `Ctrl-L` on your keyboard.
 2. On the top left menu bar, click on `File`, then `Lock Screen`.
 
-![](/MenuFile.png)
+![Lock Screen in Wasabi Wallet](/MenuFile.png "Lock Screen in Wasabi Wallet")
 
 Now the GUI is locked until the correct PIN is entered in the box.
 
-![](/LockedScreen.png)
+![Wasabi Wallet Locked with PIN](/LockedScreen.png "Wasabi Wallet Locked with PIN")
 
 ## How to clear your Lock Screen PIN
 
@@ -58,9 +58,9 @@ Notice that an attacker can do the same to circumvent the screen lock without kn
 This file can be found in [Wasabi's Data Folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder).
 3. Find `LockScreenPinHash` at the bottom of this file, and delete the string of characters that are between the two quotation marks.
 
-![](/UIConfigLocked.png)
+![Wasabi Wallet Lock Screen PIN Hash](/UIConfigLocked.png "Wasabi Wallet Lock Screen PIN Hash")
 
-![](/UIConfigUnlocked.png)
+![Delete Lock Screen PIN Hash in Wasabi Wallet](/UIConfigUnlocked.png "Delete Lock Screen PIN Hash in Wasabi Wallet")
 
 4. Save your changes to this file, and re-start Wasabi.
 

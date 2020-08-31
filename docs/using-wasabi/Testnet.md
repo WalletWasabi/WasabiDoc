@@ -26,7 +26,7 @@ When testing cutting edge software like Wasabi, use testnet to ensure that your 
 First, open your Wasabi Wallet and go to the `Settings` tab.
 Here you find a drop-down menu of which network Wasabi should use, `Main`, `TestNet` or `RegTest`, select `TestNet`.
 
-![](/SettingsNetwork.png)
+![Activating Bitcoin testnet network in Wasabi Wallet](/SettingsNetwork.png "Activating Bitcoin testnet network in Wasabi Wallet")
 
 Notice that the setting does only apply for the next start of Wasabi, so you must close Wasabi, and then re-open it before you are on testnet.
 When Wasabi is started in testnet, it will fetch testnet [BIP 158 block filters](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki) from the coordinator.

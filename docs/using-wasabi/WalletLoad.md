@@ -20,18 +20,18 @@ The synchronization of your wallet happens fast and is very private by default.
 
 On the right side of Wasabi is the `Wallet Explorer`, where you see an alphabetically sorted list of all the previously [generated](/using-wasabi/WalletGeneration.md) wallets.
 
-![](/WalletExplorerUnloaded.png)
+![Wasabi Wallet Explorer tab](/WalletExplorerUnloaded.png "Wasabi Wallet Explorer tab")
 
 You can load a wallet simply by double-clicking on it or by right-clicking on it and then choosing `Load Wallet`.
 A coin will appear on the wallet icon to indicate the loaded wallets.
 
-![](/WalletExplorerLoaded.png)
+![Load Wallet in Wasabi](/WalletExplorerLoaded.png "Load Wallet in Wasabi")
 
 ### Wallet Manager
 
 Alternatively, you can double-click a wallet in the `Load Wallet` tab, or select it and click the `load wallet` button.
 
-![](/WalletManagerLoadWallet.png)
+![Load Wallet in Wasabi](/WalletManagerLoadWallet.png "Load Wallet in Wasabi")
 
 ## Synchronization
 

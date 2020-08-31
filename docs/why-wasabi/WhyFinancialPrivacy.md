@@ -14,7 +14,7 @@ For greater privacy, it's best to use bitcoin addresses only once.
 
 By Satoshi Nakamoto in [How anonymous are bitcoins? - Bitcointalk](https://bitcointalk.org/index.php?topic=8.msg34#msg34)
 
-![](/InfographicWhyWasabi.png)
+![Gaining privacy with Wasabi Wallet for Bitcoin transactions](/InfographicWhyWasabi.png "Wasabi Wallet infographic")
 
 [[toc]]
 

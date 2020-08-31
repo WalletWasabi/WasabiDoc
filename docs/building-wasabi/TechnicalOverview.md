@@ -62,7 +62,7 @@ Wasabi uses the [Avalonia](https://github.com/AvaloniaUI/Avalonia/) library as i
 Wasabi does not support and does not plan to support other currencies in the future.
 
 Let's look at what is going on under the hood for Wasabi: what design decisions and tradeoffs the developers have made, so we can later understand where it can be improved.
-After setting up Wasabi and generating a wallet, Wasabi welcomes the user with a "Load Wallet" screen.
+After setting up Wasabi and generating a wallet, Wasabi welcomes the user with a `Load Wallet` screen.
 
 Unlike other wallets, Wasabi has a convenient way to use multiple wallets.
 Privacy-centric users may be already used to achieving coin separation this way.
@@ -72,12 +72,12 @@ More information will be provided about that later on.
 Since coin separation can be easily achieved without multiple wallet files, initially the developers did not plan for such a wallet management system.
 Our UX design choices have naturally led us down this road.
 
-![](/WalletManagerLoadWallet.png)
+![Wasabi Wallet Load Wallet tab](/WalletManagerLoadWallet.png "Wasabi Wallet Load Wallet tab")
 
 Wasabi has a status bar that shows meta-information about the state of the wallet.
 To better understand the architecture of the wallet, it is helpful to go through the information provided.
 
-The "Tor" label shows the status of the Tor daemon.
+The `Tor` label shows the status of the Tor daemon.
 Tor is an anonymity network which Wasabi includes and runs by default in the background.
 The user can also opt to use their own Tor instance.
 All Internet traffic goes through Tor, and by default all this traffic stays inside the onion network.
@@ -88,7 +88,7 @@ Wasabi also frequently utilizes multiple Tor streams where applicable.
 
 Importantly, registration of CoinJoin inputs and outputs is done through different Tor streams to avoid linking.
 
-![](/StatusBarTorRunning.png)
+![Wasabi Wallet Tor Status Bar](/StatusBarTorRunning.png "Wasabi Wallet Tor Status Bar")
 
 Wasabi's backend is used to facilitate [Chaumian CoinJoin](https://github.com/nopara73/ZeroLink#ii-chaumian-coinjoin) coordination between the mixing participants, and to serve Golomb-Rice filters to the clients, similarly to [BIP 158](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki).
 More information will be provided about the difference soon.
@@ -108,7 +108,7 @@ Now, Wasabi Wallet users have the option of using the built-in Bitcoin Knots ful
 
 Read more about network-level Bitcoin wallet privacy [here](/why-wasabi/NetworkLevelPrivacy.md).
 
-![](/StatusBarBackendConnected.png)
+![Wasabi Wallet Backend Status Bar](/StatusBarBackendConnected.png "Wasabi Wallet Backend Status Bar")
 
 Back to Wasabi.
 After loading the wallet, the user can generate a receive address.
@@ -137,28 +137,28 @@ After each block download Wasabi disconnects the related peer.
 
 Furthermore, if you have a full node running in the background Wasabi won't download blocks from peers, but will instead use your full node to fetch the needed blocks.
 
-![](/StatusBarPeers.png)
+![Wasabi Wallet Peers Status Bar](/StatusBarPeers.png "Wasabi Wallet Peers Status Bar")
 
 Wasabi receives incoming transactions from the nodes it is connected to.
 This is, while privacy preserving, a relatively insecure way of handling this, and should be improved in the future.
 Generally, unconfirmed transactions are considered to be insecure regardless.
 
-![](/StatusBarReady.png)
+![Wasabi Wallet Ready Status Bar](/StatusBarReady.png "Wasabi Wallet Ready Status Bar")
 
 Unlike in other Bitcoin wallets, generating a label for each Bitcoin address is not optional, but required.
 That is because Wasabi has an intra-wallet blockchain analysis tool built into it, which tries to cluster UTXOs (Wasabi calls them coins).
 Based on these clusters, the user can make an educated decision on which coins to merge.
 
-![](/ReceiveLabelingRequired.png)
+![Wasabi Wallet Observers label](/ReceiveLabelingRequired.png "Wasabi Wallet Observers label")
 
 Wasabi also has a `History` tab like any other Bitcoin wallet.
 
-![](/History.png)
+![Wasabi Wallet History tab](/History.png "Wasabi Wallet History tab")
 
 Unlike other Bitcoin wallets, the user cannot spend from Wasabi without [selecting coins](/FAQ/FAQ-UseWasabi.md#coin-control-best-practices), at least for today.
 The label field of the `Send` tab is also compulsory.
 
-![](/Send.png)
+![Wasabi Wallet Send tab](/Send.png "Wasabi Wallet Send tab")
 
 By clicking on the `Max` button, one can spend all of the selected coins.
 Spending entire coins is beneficial to your privacy, as it leaves no change to potentially betray your identity in later transactions.
@@ -171,7 +171,7 @@ This is currently [the optimal way to broadcast transactions from a privacy poin
 
 A more ideal way would be to implement [BIP 156](https://github.com/bitcoin/bips/blob/master/bip-0156.mediawiki) the Dandelion protocol for transaction broadcasting when the Bitcoin network adopts it.
 
-![](/SendAmountFeePassword.png)
+![Wasabi Wallet Send transaction](/SendAmountFeePassword.png "Wasabi Wallet Send transaction")
 
 Coins in Wasabi have Privacy and History properties.
 The anonymity set is just a momentary estimation.
@@ -182,20 +182,20 @@ For example, if the user joins together a "foo" labeled coin with a "bar" labele
 From this, users are able to make educated decisions as to which coins not to join together at any cost.
 Human input is invaluable.
 
-![](/SendAnonset.png)
+![Wasabi Wallet anonimity set](/SendAnonset.png "Wasabi Wallet anonimity set")
 
 Wasabi has a `CoinJoin` tab as well, and its use is straightforward.
 The user queues their coins for CoinJoin and waits for others to join the mix.
 
-![](/CoinJoin.png)
+![Wasabi Wallet CoinJoin tab](/CoinJoin.png "Wasabi Wallet CoinJoin tab")
 
 If the user does not wish to proceed, they can dequeue their coins.
 
-![](/CoinJoinStatus.png)
+![Wasabi Wallet CoinJoin status](/CoinJoinStatus.png "Wasabi Wallet CoinJoin status")
 
 After a mix has successfully executed, the resulting CoinJoin transaction will look like the [following real example](https://blockstream.info/tx/a0855875fd3d19522568ad673e4b52e11691d837021d74eef0d177f9e0950bf2):
 
-![](/TXCoinJoin.png)
+![Wasabi Wallet's CoinJoin transaction](/TXCoinJoin.png "Wasabi Wallet's CoinJoin transaction")
 
 Wasabi also has a Tor website where one can see real-time statistics about the mixes: [wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion/)
 

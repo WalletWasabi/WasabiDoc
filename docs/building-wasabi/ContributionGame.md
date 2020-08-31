@@ -9,7 +9,7 @@
 
 For some occasions there is a **Wasabi contribution game**, where the zkSNACKs company is distributing a bounty among contributors to the [Wasabi Wallet repository](https://github.com/zkSNACKs/WalletWasabi) in proportion to their contributions.
 
-![](/ContributionGame.png)
+![Wasabi Wallet Contribution Game](/ContributionGame.png "Wasabi Wallet Contribution Game")
 
 [[toc]]
 

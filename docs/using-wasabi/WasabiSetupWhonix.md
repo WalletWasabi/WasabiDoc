@@ -89,7 +89,7 @@ It will take a minute or two for the Tor network to become operational.
 
 Everything is ready to go when the small globe icon on the bottom right side of both VMs turns green, as shown here:
 
-![](/WhonixGlobe.png)
+![Wasabi Wallet Whonix](/WhonixGlobe.png "Wasabi Wallet Whonix")
 
 Change the Whonix user password for both VMs, as described earlier in the yellow "Caution" section.
 Then, run any needed updates for both the Gateway and Workstation VMs.

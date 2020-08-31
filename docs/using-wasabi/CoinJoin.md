@@ -25,7 +25,7 @@ Wasabi enables trustless (meaning nobody can steal) and private (meaning even th
 Notice that it is not yet possible to CoinJoin from a hardware wallet, the keys must be "hot" on your computer.
 Then click on the `CoinJoin` tab, either from the top tabs or the right-side `Wallet Explorer`.
 
-![](/CoinJoin.png)
+![Wasabi Wallet CoinJoin tab](/CoinJoin.png "Wasabi Wallet CoinJoin tab")
 
 2. Select up to seven coins for coinjoining by clicking the checkbox in the coin list.
 The selected value must be above the minimum required amount, currently roughly `0.1 bitcoin`.
@@ -41,23 +41,23 @@ Wasabi will automatically re-register your coin for the next round until this ta
 You can easily toggle between three levels by clicking on the shield.
 You can also [change the value](/FAQ/FAQ-UseWasabi.md#how-can-i-change-the-anonset-target) of the three shields in the settings.
 
-![](/CoinJoinAnonsetTargetYellow.png)
-![](/CoinJoinAnonsetTargetGreen.png)
-![](/CoinJoinAnonsetTargetCheck.png)
+![Wasabi Wallet yellow anonimity set](/CoinJoinAnonsetTargetYellow.png "Wasabi Wallet yellow anonimity set")
+![Wasabi Wallet green anonimity set](/CoinJoinAnonsetTargetGreen.png "Wasabi Wallet green anonimity set")
+![Wasabi Wallet checkmark anonimity set](/CoinJoinAnonsetTargetCheck.png ""Wasabi Wallet checkmark anonimity set)
 
 4. Enter your password and click `Enqueue Selected Coins`.
 You only have to enter your password for the first round of mixing, as any automatic re-mix rounds are done without requiring a password input.
 
-![](/CoinJoinCoinsBeingCoinJoined.png)
+![Wasabi Wallet CoinJoin process](/CoinJoinCoinsBeingCoinJoined.png "Wasabi Wallet CoinJoin process")
 
 5. Now, wait until the CoinJoin is complete.
 The round starts either as soon as 100 peers have registered their coins, or after one hour has elapsed since the last round.
 From now on there is no more user input required.
 Just leave Wasabi running in the background of your computer.
 
-![](/CoinJoinStatus.png)
+![Wasabi Wallet CoinJoin status](/CoinJoinStatus.png "Wasabi Wallet CoinJoin status")
 
-6. When the CoinJoin is finished, and the CoinJoin transaction is broadcast, you will receive at least one anonymity set coin <img src="/ShieldCheckmark.png" alt="checkmark" class="shield" /> <img src="/ShieldGreen.png" alt="green" class="shield" /> <img src="/ShieldYellow.png" alt="yellow" class="shield" />, and possibly non-private change <img src="/ShieldRed.png" alt="red" class="shield" />.
+6. When the CoinJoin is finished, and the CoinJoin transaction is broadcast, you will receive at least one anonymity set coin <img src="/ShieldCheckmark.png" alt="Wasabi Wallet checkmark shield" class="shield" /> <img src="/ShieldGreen.png" alt="Wasabi Wallet green shield" class="shield" /> <img src="/ShieldYellow.png" alt="Wasabi Wallet yellow shield" class="shield" />, and possibly non-private change <img src="/ShieldRed.png" alt="Wasabi Wallet red shield" class="shield" />.
 
 ## ZeroLink protocol step-by-step
 

@@ -17,7 +17,7 @@
 
 Let's assume you want to send 0.5 bitcoin to Alice.
 In the `Send` tab you select one or more UTXO, these are the inputs of the transaction.
-For example, let's assume that you choose a <img src="/ShieldRed.png" alt="red shield" class="shield" /> 1 anonymity set UTXO worth 2 bitcoins.
+For example, let's assume that you choose a <img src="/ShieldRed.png" alt="Wasabi Wallet red shield anonimity set" title="Wasabi Wallet red shield anonimity set" class="shield" /> 1 anonymity set UTXO worth 2 bitcoins.
 You put Alice's address in the `Receiving Address` field, and set the spending `Amount` to 0.5 bitcoin.
 This will be one output of the transaction.
 
@@ -36,10 +36,10 @@ You can activate this in the settings.
 
 ### First round CoinJoin change
 
-Let's say that you have a KYC <img src="/ShieldRed.png" alt="red-shield" class="shield" /> `anonymity set 1` UTXO, and you register it for a CoinJoin round.
+Let's say that you have a KYC <img src="/ShieldRed.png" alt="Wasabi Wallet red shield anonimity set" title="Wasabi Wallet red shield anonimity set" class="shield" /> `anonymity set 1` UTXO, and you register it for a CoinJoin round.
 Afterwards, depending on the value of your UTXO in relation to the minimum CoinJoin amount and on the value of UTXOs of the other participants, you will receive two or more UTXOs.
-One of those will be the change leftover from the round, and it will retain the <img src="/ShieldRed.png" alt="red-shield" class="shield" /> `anonymity set 1` designation.
-The remaining UTXO(s) will have either a <img src="/ShieldYellow.png" alt="yellow" class="shield" />, <img src="/ShieldGreen.png" alt="green" class="shield" /> or <img src="/ShieldCheckmark.png" alt="checkmark" class="shield" /> shield.
+One of those will be the change leftover from the round, and it will retain the <img src="/ShieldRed.png" alt="Wasabi Wallet red shield anonimity set" title="Wasabi Wallet red shield anonimity set" class="shield" /> `anonymity set 1` designation.
+The remaining UTXO(s) will have either a <img src="/ShieldYellow.png" alt="Wasabi Wallet yellow shield anonimity set" title="Wasabi Wallet yellow shield anonimity set" class="shield" />, <img src="/ShieldGreen.png" alt="Wasabi Wallet green shield anonimity set" title="Wasabi Wallet green shield anonimity set" class="shield" /> or <img src="/ShieldCheckmark.png" alt="Wasabi Wallet green checkmark shield anonimity set" title="Wasabi Wallet green checkmark shield anonimity set" class="shield" /> shield.
 You can see the `anonymity set` value of any UTXO by hovering your mouse-pointer over its associated shield.
 
 
@@ -47,8 +47,8 @@ In this example, let's assume that the current minimum amount that can be regist
 You happen to have a UTXO worth 0.105 bitcoin, and you select it to be coinjoined.
 
 After this CoinJoin round has concluded, you will receive 2 separate UTXOs.
-The larger UTXO will (most probably) have a colored shield (<img src="/ShieldYellow.png" alt="yellow" class="shield" />, <img src="/ShieldGreen.png" alt="green" class="shield" /> or <img src="/ShieldCheckmark.png" alt="checkmark" class="shield" /> based on your [Privacy Level Settings](/FAQ/FAQ-UseWasabi.md#how-can-i-change-the-anonset-target)) that indicates the level of the anonymity set achieved in that CoinJoin round.
-The other, much smaller UTXO will be the amount (change) that was left over, and it will have a <img src="/ShieldRed.png" alt="red-shield" class="shield" /> indicating an anonymity set of `1` as it does not have the equal value denomination of the CoinJoin.
+The larger UTXO will (most probably) have a colored shield (<img src="/ShieldYellow.png" alt="Wasabi Wallet yellow shield anonimity set" title="Wasabi Wallet yellow shield anonimity set" class="shield" />, <img src="/ShieldGreen.png" alt="Wasabi Wallet green shield anonimity set" title="Wasabi Wallet green shield anonimity set" class="shield" /> or <img src="/ShieldCheckmark.png" alt="checkmark" class="shield" /> based on your [Privacy Level Settings](/FAQ/FAQ-UseWasabi.md#how-can-i-change-the-anonset-target)) that indicates the level of the anonymity set achieved in that CoinJoin round.
+The other, much smaller UTXO will be the amount (change) that was left over, and it will have a <img src="/ShieldRed.png" alt="Wasabi Wallet red shield anonimity set" title="Wasabi Wallet red shield anonimity set" class="shield" /> indicating an anonymity set of `1` as it does not have the equal value denomination of the CoinJoin.
 
 Remember, to have anonymity set UTXOs, all denomination outputs of a CoinJoin round must be equal.
 For non-equal change outputs, an attacker can do subset sum analysis and find a link between inputs and change outputs.
@@ -57,16 +57,16 @@ Thus, in practice, such a change coin can have privacy too.
 But in most cases, especially when coinjoining large amounts, this link can be done easily.
 Thus, it is best to assume that the change coin has no anonymity set.
 
-The small UTXO that is leftover/change from a CoinJoin round is clearly tied to your KYC input UTXO, but the <img src="/ShieldCheckmark.png" alt="checkmark" class="shield" /> UTXO is not.
-If afterwards, you combine the <img src="/ShieldRed.png" alt="red-shield" class="shield" /> UTXO with a <img src="/ShieldCheckmark.png" alt="green-checkmark" class="shield" /> UTXO in a single transaction, then it is clear that both came from the same owner.
-Since your identity was already known in the <img src="/ShieldRed.png" alt="red-shield" class="shield" /> `anonymity set 1`, it can now be linked to your coinjoined UTXO.
+The small UTXO that is leftover/change from a CoinJoin round is clearly tied to your KYC input UTXO, but the <img src="/ShieldCheckmark.png" alt="Wasabi Wallet green checkmark shield anonimity set" title="Wasabi Wallet green checkmark shield anonimity set" class="shield" /> UTXO is not.
+If afterwards, you combine the <img src="/ShieldRed.png" alt="Wasabi Wallet red shield anonimity set" title="Wasabi Wallet red shield anonimity set" class="shield" /> UTXO with a <img src="/ShieldCheckmark.png" alt="Wasabi Wallet green checkmark shield anonimity set" title="Wasabi Wallet green checkmark shield anonimity set" class="shield" /> UTXO in a single transaction, then it is clear that both came from the same owner.
+Since your identity was already known in the <img src="/ShieldRed.png" alt="Wasabi Wallet red shield anonimity set" title="Wasabi Wallet red shield anonimity set" class="shield" /> `anonymity set 1`, it can now be linked to your coinjoined UTXO.
 
 Whenever you combine and send more than one UTXO in a single transaction, the lowest anonymity set among the inputs becomes the overriding anonymity set for all of the UTXOs used in that transaction.
 
 
 ### Second round CoinJoin change
 
-When you take a <img src="/ShieldCheckmark.png" alt="checkmark" class="shield" /> 100 anonset UTXO, and you CoinJoin it again in a new 100 participant round, then you receive one <img src="/ShieldCheckmark.png" alt="checkmark" class="shield" /> UTXO with combined anonset of 200, and one <img src="/ShieldCheckmark.png" alt="checkmark" class="shield" /> leftover/change UTXO with the same anonset as the input UTXO: 100.
+When you take a <img src="/ShieldCheckmark.png" alt="Wasabi Wallet green checkmark shield anonimity set" title="Wasabi Wallet green checkmark shield anonimity set" class="shield" /> 100 anonset UTXO, and you CoinJoin it again in a new 100 participant round, then you receive one <img src="/ShieldCheckmark.png" alt="Wasabi Wallet green checkmark shield anonimity set" title="Wasabi Wallet green checkmark shield anonimity set" class="shield" /> UTXO with combined anonset of 200, and one <img src="/ShieldCheckmark.png" alt="Wasabi Wallet green checkmark shield anonimity set" title="Wasabi Wallet green checkmark shield anonimity set" class="shield" /> leftover/change UTXO with the same anonset as the input UTXO: 100.
 The change UTXO still has an anonymity set of 100 because with subset sum analysis it can potentially be linked to its corresponding input, which is a previous CoinJoin output with 100 anonymity set.
 This change can still reveal premix history which is another CoinJoin, but ownership analysis cannot go further back than the first CoinJoin.
 
