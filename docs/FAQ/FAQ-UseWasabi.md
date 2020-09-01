@@ -36,7 +36,7 @@ When you only have the recovery words, but not the password, then you will NOT b
 In order to protect your paper backup, consider storing the password and recovery words in two different locations.
 You have successfully setup your wallet when you click `I wrote down my Recovery Words!`
 
-![Wasabi Wallet seed recovery words](/WalletManagerRecoveryWords.png "Wasabi Wallet seed recovery words")
+![Wasabi Wallet recovery words](/WalletManagerRecoveryWords.png "Wasabi Wallet recovery words")
 :::
 
 ::::details
@@ -512,7 +512,7 @@ However, you can use the [RPC server `send` call](/using-wasabi/RPC.md#send) and
 
 You can activate the option to set a custom change address in the `Settings` tab.
 
-![Wasabi Wallet Custom Change settings](/SettingsCustomChange.png "Wasabi Wallet Custom Change settings")
+![Wasabi Wallet custom change address setting](/SettingsCustomChange.png "Wasabi Wallet custom change address setting")
 
 Then simply paste the address you want to send the change to in the `Send` tab GUI.
 Read more [here](/using-wasabi/Send.md#custom-change-address).
@@ -582,7 +582,7 @@ But the provided time frames are only a rough estimation, and not at all a preci
 Because confirmation fee estimation is more an art than a science, you can also set the fee manually.
 Then you can go after your gut feeling, [mempool chart analysis](https://jochen-hoenicke.de/queue/#0,24h), or just putting the minimum of 1 sat/vByte.
 
-![Wasabi Wallet minimum mining fees](/SendNoFee.png "Wasabi Wallet minimum mining fees")
+![Wasabi Wallet minimum mining fee](/SendNoFee.png "Wasabi Wallet minimum mining fee")
 
 For a transaction to yourself, for example from your hot CoinJoin wallet to your hardware wallet, you don't need to have fast confirmation, so you can set a relatively low fee.
 But to send from the hot CoinJoin wallet to the coffee shop, you might want to get faster confirmation, thus paying a higher fee.
@@ -1083,7 +1083,7 @@ Write down your recovery words!
 Wasabi uses [BIP 39: mnemonic code for generating deterministic keys](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) to enable easy backups of all private keys in the wallet.
 The mnemonic is displayed as 12 recovery words that are only shown once during the wallet generation.
 
-![Wasabi Wallet seed recovery words](/WalletManagerRecoveryWords.png "Wasabi Wallet seed recovery words")
+![Wasabi Wallet recovery words](/WalletManagerRecoveryWords.png "Wasabi Wallet recovery words")
 
 :::danger
 In order to restore a wallet, you need BOTH the mnemonic words AND the password!
@@ -1417,7 +1417,7 @@ Please note that Wasabi is designed for the dark theme, and some color schemes m
 ::::details
 ### Can I consolidate anonset coins?
 
-It is advisable to limit the recombining of <img src="/ShieldCheckmark.png" alt="Wasabi Wallet green checkmark shield anonimity set" title="Wasabi Wallet green checkmark shield anonimity set" class="shield" /> <img src="/ShieldGreen.png" alt="green" class="shield" /> <img src="/ShieldYellow.png" alt="Wasabi Wallet yellow shield anonimity set" title="Wasabi Wallet yellow shield anonimity set" class="shield" /> mixed coins because it can only decrease the privacy of these coins.
+It is advisable to limit the recombining of <img src="/ShieldCheckmark.png" alt="Wasabi Wallet green checkmark shield anonimity set" title="Wasabi Wallet green checkmark shield anonimity set" class="shield" /> <img src="/ShieldGreen.png" alt="Wasabi Wallet green shield anonimity set" title="Wasabi Wallet green shield anonimity set" class="shield" /> <img src="/ShieldYellow.png" alt="Wasabi Wallet yellow shield anonimity set" title="Wasabi Wallet yellow shield anonimity set" class="shield" /> mixed coins because it can only decrease the privacy of these coins.
 This reveals that all the consolidated UTXOs are controlled by one entity, which was not known before the consolidation.
 That said, if you combine only a couple of mixed coins, you might not reveal your pre-CoinJoin transaction history, especially when you did several re-mixes.
 
