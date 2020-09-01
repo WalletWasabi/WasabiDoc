@@ -42,7 +42,7 @@ The goal is to know the observers who know about your coins and try to reduce th
 
 When you send a bitcoin in a regular transaction with one input and two outputs, then your change coin can be linked to this one input.
 There is a 1 in 1 chance to find this link and no plausible deniability.
-Thus, Wasabi shows this coin with an anonymity set of `1` <img src="/ShieldRed.png" alt="red" class="shield" />.
+Thus, Wasabi shows this coin with an anonymity set of `1` <img src="/ShieldRed.png" alt="Wasabi Wallet red shield anonymity set" title="Wasabi Wallet red shield anonymity set" class="shield" />.
 
 In a Wasabi [CoinJoin](/using-wasabi/CoinJoin.md), many peers register coins in the input of the transaction, and in the output, there are several equal value coins, for example, 100 coins worth exactly 0.1 bitcoin.
 This means that when looking at one of these CoinJoin outputs, there is a 1 in 100 chance to find the corresponding input.

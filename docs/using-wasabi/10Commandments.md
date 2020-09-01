@@ -53,7 +53,7 @@ Lastly, if you remix your coins, this provides you and the other participants wi
 
 ## 6. Never merge mixed and unmixed coins, and avoid large merges of mixed coins
 
-The first part should be somewhat intuitive - coins in your wallet have anonymity set shields, and it is very important to never send <img src="/ShieldCheckmark.png" alt="checkmark" class="shield" /> <img src="/ShieldGreen.png" alt="green" class="shield" /> <img src="/ShieldYellow.png" alt="yellow" class="shield" /> coins (with anonset > 1) with <img src="/ShieldRed.png" alt="red" class="shield" /> coins (with anonset = 1).
+The first part should be somewhat intuitive - coins in your wallet have anonymity set shields, and it is very important to never send <img src="/ShieldCheckmark.png" alt="Wasabi Wallet green checkmark shield anonymity set" title="Wasabi Wallet green checkmark shield anonymity set" class="shield" /> <img src="/ShieldGreen.png" alt="Wasabi Wallet green shield anonymity set" title="Wasabi Wallet green shield anonymity set" class="shield" /> <img src="/ShieldYellow.png" alt="Wasabi Wallet yellow shield anonymity set" title="Wasabi Wallet yellow shield anonymity set" class="shield" /> coins (with anonset > 1) with <img src="/ShieldRed.png" alt="Wasabi Wallet red shield anonymity set" title="Wasabi Wallet red shield anonymity set" class="shield" /> coins (with anonset = 1).
 By merging your tainted coins with your mixed coins, you undo the privacy benefits of CoinJoins!
 
 Further, when sending mixed coins to your cold storage, make sure to send your coins in small batches after each other.

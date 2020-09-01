@@ -147,12 +147,12 @@ For the first setup, you need to connect the hardware wallet to the computer tha
 ### Send bitcoins from hot to cold Wasabi
 
 :::tip Third
-In order to keep the mixed coins separate and without revealing that you own all of them, send the <img src="/ShieldCheckmark.png" alt="checkmark" class="shield" /> coins without consolidating them.
+In order to keep the mixed coins separate and without revealing that you own all of them, send the <img src="/ShieldCheckmark.png" alt="Wasabi Wallet green checkmark shield anonymity set" title="Wasabi Wallet green checkmark shield anonymity set" class="shield" /> coins without consolidating them.
 Wait some time in-between sending them, so that timing analysis becomes more difficult.
 :::
 
 9. Go to the hot-Wasabi `Send` tab, and select the coins with high anonymity set.
-Do not consolidate your <img src="/ShieldCheckmark.png" alt="checkmark" class="shield" /> coins, but send them in small, time-staggered batches.
+Do not consolidate your <img src="/ShieldCheckmark.png" alt="Wasabi Wallet green checkmark shield anonymity set" title="Wasabi Wallet green checkmark shield anonymity set" class="shield" /> coins, but send them in small, time-staggered batches.
 10. Paste the cold-Wasabi address.
 11. Click the `MAX` button to send the whole mixed coin without generating change.
 
