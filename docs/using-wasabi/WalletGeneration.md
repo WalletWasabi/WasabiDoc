@@ -29,10 +29,10 @@ It encrypts your secrets, and you will need it every time you want to spend bitc
 If you are uncertain about how to create a secure password, refer to [Password Best Practices](/using-wasabi/PasswordBestPractices.md) for helpful information.
 
 
-:::danger Back up your password!
-Without the password, you cannot spend your bitcoin or recover your wallet, even if you have the recovery words (Seed phrase).
-So, triple-check that you have a proper backup!
-:::
+	:::danger Back up your password!
+	Without the password, you cannot spend your bitcoin or recover your wallet, even if you have the recovery words (Seed phrase).
+	So, triple-check that you have a proper backup!
+	:::
 
 4. Click the `Generate` button.
 
