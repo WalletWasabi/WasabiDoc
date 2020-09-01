@@ -7,7 +7,7 @@
 
 # Password Finder
 
-[Wasabi Password Finder](https://github.com/lontivero/WasabiPasswordFinder) is a tool for helping those who made a mistake typing the password during the wallet creation process.
+Wasabi Password Finder is a tool for helping those who made a mistake typing the password during the wallet creation process.
 This tool tries to find the password that decrypts the encrypted secret key stored in a given wallet file.
 
 [[toc]]
@@ -16,7 +16,8 @@ This tool tries to find the password that decrypts the encrypted secret key stor
 
 ## Limitations
 
-Wasabi Wallet protects the encrypted secret key with the same technology used to protect paper wallets ([BIP 38](https://github.com/bitcoin/bips/blob/master/bip-0038.mediawiki)) and for that reason, it is computationally infeasible to brute force the password using all the possible combinations. (assuming a secure password was chosen)
+Wasabi Wallet protects the encrypted secret key with the same technology used to protect paper wallets ([BIP 38](https://github.com/bitcoin/bips/blob/master/bip-0038.mediawiki)) and for that reason, it is computationally infeasible to brute force the password using all the possible combinations (assuming a secure password was chosen).
+
 It is important to know that Wasabi Password Finder is not for breaking wallet passwords but for finding errors (typos) in an already known password.
 
 ## Usage
