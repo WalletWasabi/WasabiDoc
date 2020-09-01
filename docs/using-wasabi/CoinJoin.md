@@ -41,9 +41,9 @@ Wasabi will automatically re-register your coin for the next round until this ta
 You can easily toggle between three levels by clicking on the shield.
 You can also [change the value](/FAQ/FAQ-UseWasabi.md#how-can-i-change-the-anonset-target) of the three shields in the settings.
 
-![Wasabi Wallet yellow anonimity set](/CoinJoinAnonsetTargetYellow.png "Wasabi Wallet yellow anonimity set")
-![Wasabi Wallet green anonimity set](/CoinJoinAnonsetTargetGreen.png "Wasabi Wallet green anonimity set")
-![Wasabi Wallet checkmark anonimity set](/CoinJoinAnonsetTargetCheck.png ""Wasabi Wallet checkmark anonimity set)
+![Wasabi Wallet yellow anonimity set target](/CoinJoinAnonsetTargetYellow.png "Wasabi Wallet yellow anonimity set target")
+![Wasabi Wallet green anonimity set target](/CoinJoinAnonsetTargetGreen.png "Wasabi Wallet green anonimity set target")
+![Wasabi Wallet green checkmark anonimity set target](/CoinJoinAnonsetTargetCheck.png "Wasabi Wallet green checkmark anonimity set target")
 
 4. Enter your password and click `Enqueue Selected Coins`.
 You only have to enter your password for the first round of mixing, as any automatic re-mix rounds are done without requiring a password input.
@@ -57,7 +57,7 @@ Just leave Wasabi running in the background of your computer.
 
 ![Wasabi Wallet CoinJoin status](/CoinJoinStatus.png "Wasabi Wallet CoinJoin status")
 
-6. When the CoinJoin is finished, and the CoinJoin transaction is broadcast, you will receive at least one anonymity set coin <img src="/ShieldCheckmark.png" alt="Wasabi Wallet checkmark shield" class="shield" /> <img src="/ShieldGreen.png" alt="Wasabi Wallet green shield" class="shield" /> <img src="/ShieldYellow.png" alt="Wasabi Wallet yellow shield" class="shield" />, and possibly non-private change <img src="/ShieldRed.png" alt="Wasabi Wallet red shield" class="shield" />.
+6. When the CoinJoin is finished, and the CoinJoin transaction is broadcast, you will receive at least one anonymity set coin <img src="/ShieldCheckmark.png" alt="Wasabi Wallet green checkmark shield" class="shield" /> <img src="/ShieldGreen.png" alt="Wasabi Wallet green shield" class="shield" /> <img src="/ShieldYellow.png" alt="Wasabi Wallet yellow shield" class="shield" />, and possibly non-private change <img src="/ShieldRed.png" alt="Wasabi Wallet red shield" class="shield" />.
 
 ## ZeroLink protocol step-by-step
 

@@ -47,7 +47,7 @@ So, triple-check that you have a proper backup!
 Make sure the backup of your recovery words is stored separately from the password backup.
 :::
 
-![Wasabi Wallet seed recovery words](/WalletManagerRecoveryWords.png "Wasabi Wallet seed recovery words")
+![Wasabi Wallet recovery words](/WalletManagerRecoveryWords.png "Wasabi Wallet recovery words")
 
 6. You must test the password before you can load the wallet, to make sure that your password is correct.
 So, type or paste the password in the text box, and click `Load Wallet`.

@@ -18,7 +18,7 @@ For compiling the open-source code with cutting edge development features, also 
 
 Download the packages either from the official [WasabiWallet.io](https://wasabiwallet.io/) clearnet website or for your privacy's sake, from the official Tor onion service [http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion/](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion/).
 
-![Operative systems supported by Wasabi Wallet](/DownloadAll.png "Operative systems supported by Wasabi Wallet")
+![Operating systems supported by Wasabi Wallet](/DownloadAll.png "Operating systems supported by Wasabi Wallet")
 
 Although there is automatic signature verification on Windows and macOS, it is still recommended to manually **VERIFY PGP SIGNATURES** of the downloaded package with zkSNACKs' PGP public key [${zksnacksPublicKeyFingerprint}](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt) before installing Wasabi.
 This protects you against malicious phishing sites giving you back-doored wallet software.
@@ -40,7 +40,7 @@ Don't trust - Verify!
 
 1. [Download](https://wasabiwallet.io/#download) the `.msi` installer of the latest Wasabi release.
 
-![Wasabi Wallet Windows download](/DownloadWindows.png "Wasabi Wallet Windows download")
+![Download Wasabi Wallet for Windows](/DownloadWindows.png "Download Wasabi Wallet for Windows")
 
 2. Install Wasabi by double-clicking the `.msi` and following the GUI instructions.
 
@@ -67,7 +67,7 @@ Verify that the fingerprint is `${zksnacksPublicKeyFingerprint}`.
 
 2. [Download](https://wasabiwallet.io/#download) the latest Wasabi release, both the `.deb` package and the corresponding `.asc` signature file.
 
-![Wasabi Wallet Debian Download](/DownloadDeb.png "Wasabi Wallet Debian download")
+![Download Wasabi Wallet for Debian](/DownloadDeb.png "Download Wasabi Wallet for Debian")
 
 3. Verify the signature in the Download repository with `gpg --verify Wasabi-${currentVersion}.deb.asc`.
 If the message returned says `Good signature from zkSNACKs` and that it was signed with `Primary key fingerprint: ${zksnacksPublicKeyFingerprint}`, then the software was not tampered with since the developer signed it.
@@ -95,7 +95,7 @@ Verify that the fingerprint is `${zksnacksPublicKeyFingerprint}`.
 
 2. [Download](https://wasabiwallet.io/#download) the latest Wasabi release, both the `.tar.gz` archive and the corresponding `.asc` signature file.
 
-![Wasabi Wallet Linux download](/DownloadTar.png "Wasabi Wallet Linux download")
+![Download Wasabi Wallet for Linux](/DownloadTar.png "Download Wasabi Wallet for Linux")
 
 3. In the Download folder, run `gpg2 --verify Wasabi.${currentVersion}.tar.gz.asc`.
 If the message returned says `Good signature from zkSNACKs` and that it was signed with `Primary key fingerprint: ${zksnacksPublicKeyFingerprint}`, then the software was not tampered with since the developer signed it.
@@ -122,7 +122,7 @@ Among others, here is where your wallet files and your logs reside.
 
 1. [Download](https://wasabiwallet.io/#download) the `.dmg` package of Wasabi ${currentVersion}.
 
-![Wasabi Wallet macOS download](/DownloadMac.png "Wasabi Wallet macOS download")
+![Download Wasabi Wallet for macOS](/DownloadMac.png "Download Wasabi Wallet for macOS")
 
 2. Double-click `.dmg` to open it.
 
