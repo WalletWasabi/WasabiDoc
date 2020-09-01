@@ -337,7 +337,7 @@ When you do not label all your addresses, there is no meta-data for you to under
 Thus receiving addresses and sending transactions should be carefully labeled with the observers who know about them.
 This helps you know where your coins came from so that you can judge whether there are privacy concerns when sending a specific coin to a specific receiver.
 
-![Wasabi Wallet Observers label](/ReceiveLabelingRequired.png "Wasabi Wallet Observers label")
+![Wasabi Wallet known by label](/ReceiveLabelingRequired.png "Wasabi Wallet known by label")
 
 When labeling a newly generated address or a sending transaction you should ask yourself: "Who knows this address is mine?" or "Whom will I share this address with?" or "From whom am I receiving bitcoin?" or "To whom am I sending bitcoin?".
 Observers should contain the comma-separated names of people/entities that may be aware of the transaction and could follow its trail like:

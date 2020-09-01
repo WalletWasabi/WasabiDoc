@@ -149,7 +149,7 @@ Unlike in other Bitcoin wallets, generating a label for each Bitcoin address is 
 That is because Wasabi has an intra-wallet blockchain analysis tool built into it, which tries to cluster UTXOs (Wasabi calls them coins).
 Based on these clusters, the user can make an educated decision on which coins to merge.
 
-![Wasabi Wallet Observers label](/ReceiveLabelingRequired.png "Wasabi Wallet Observers label")
+![Wasabi Wallet known by label](/ReceiveLabelingRequired.png "Wasabi Wallet known by label")
 
 Wasabi also has a `History` tab like any other Bitcoin wallet.
 

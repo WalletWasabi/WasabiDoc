@@ -19,7 +19,7 @@
 4. Click on `Generate Address`.
 5. Optionally you can change the observers in the right-click menu if new entities learn about the address.
 
-![Set Observers in Wasabi Wallet](/ReceiveLabelingRequired.png "Set Observers in Wasabi Wallet")
+![Set known by in Wasabi Wallet](/ReceiveLabelingRequired.png "Set known by in Wasabi Wallet")
 ![Wasabi Wallet address details](/ReceiveAddressDropDownMenu.png "Wasabi Wallet address details")
 
 ## Bitcoin public keys and addresses
@@ -62,7 +62,7 @@ Because UTXOs are not fungible, it is very important to know exactly which coin 
 In Wasabi it is mandatory to give every address a label of the observers who know about this address so that later you know where you got the coin from and you know how to spend it.
 :::
 
-![Set Observers in Wasabi Wallet](/ReceiveLabelingRequired.png "Set Observers in Wasabi Wallet")
+![Set known by in Wasabi Wallet](/ReceiveLabelingRequired.png "Set known by in Wasabi Wallet")
 
 Wasabi is not like other Bitcoin wallets, it is a privacy-oriented wallet and every feature and every design decision is based mainly (sometimes exclusively) on privacy costs/benefits analysis.
 For that reason, many of its features depend on each other and a correct understanding of how they play together is critical to achieve and improve the privacy of our transactions.
