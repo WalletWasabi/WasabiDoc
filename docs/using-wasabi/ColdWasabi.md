@@ -177,7 +177,7 @@ The daemon stops when all coins have reached the target anonymity set, or if you
 The target anonymity set is by default `50`, but it can be changed in the `Settings` tab.
 After that it starts registering outputs from the CoinJoin to your destination wallet, thus you are slowly and privately coinjoining your money to your cold wallet.
 
-![Wasabi Wallet anonimity set levels](/SettingsAnonLevels.png "Wasabi Wallet anonimity set levels")
+![Wasabi Wallet anonymity set levels](/SettingsAnonLevels.png "Wasabi Wallet anonymity set levels")
 
 :::tip Success!
 おめでとうございます!

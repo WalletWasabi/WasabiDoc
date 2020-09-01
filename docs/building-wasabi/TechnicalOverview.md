@@ -182,7 +182,7 @@ For example, if the user joins together a "foo" labeled coin with a "bar" labele
 From this, users are able to make educated decisions as to which coins not to join together at any cost.
 Human input is invaluable.
 
-![Wasabi Wallet anonimity set](/SendAnonset.png "Wasabi Wallet anonimity set")
+![Wasabi Wallet anonymity set](/SendAnonset.png "Wasabi Wallet anonymity set")
 
 Wasabi has a `CoinJoin` tab as well, and its use is straightforward.
 The user queues their coins for CoinJoin and waits for others to join the mix.

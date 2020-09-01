@@ -41,9 +41,9 @@ Wasabi will automatically re-register your coin for the next round until this ta
 You can easily toggle between three levels by clicking on the shield.
 You can also [change the value](/FAQ/FAQ-UseWasabi.md#how-can-i-change-the-anonset-target) of the three shields in the settings.
 
-![Wasabi Wallet yellow anonimity set target](/CoinJoinAnonsetTargetYellow.png "Wasabi Wallet yellow anonimity set target")
-![Wasabi Wallet green anonimity set target](/CoinJoinAnonsetTargetGreen.png "Wasabi Wallet green anonimity set target")
-![Wasabi Wallet green checkmark anonimity set target](/CoinJoinAnonsetTargetCheck.png "Wasabi Wallet green checkmark anonimity set target")
+![Wasabi Wallet yellow anonymity set target](/CoinJoinAnonsetTargetYellow.png "Wasabi Wallet yellow anonymity set target")
+![Wasabi Wallet green anonymity set target](/CoinJoinAnonsetTargetGreen.png "Wasabi Wallet green anonymity set target")
+![Wasabi Wallet green checkmark anonymity set target](/CoinJoinAnonsetTargetCheck.png "Wasabi Wallet green checkmark anonymity set target")
 
 4. Enter your password and click `Enqueue Selected Coins`.
 You only have to enter your password for the first round of mixing, as any automatic re-mix rounds are done without requiring a password input.

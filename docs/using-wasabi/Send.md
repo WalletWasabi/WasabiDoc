@@ -47,10 +47,10 @@ Thus, Wasabi shows this coin with an anonymity set of `1` <img src="/ShieldRed.p
 In a Wasabi [CoinJoin](/using-wasabi/CoinJoin.md), many peers register coins in the input of the transaction, and in the output, there are several equal value coins, for example, 100 coins worth exactly 0.1 bitcoin.
 This means that when looking at one of these CoinJoin outputs, there is a 1 in 100 chance to find the corresponding input.
 Thus the higher the anonymity set, the more your post-mix coin is delinked from the pre-mix history.
-Wasabi shows you three levels of anonymity sets: <img src="/ShieldYellow.png" alt="Wasabi Wallet yellow shield anonimity set" title="Wasabi Wallet yellow shield anonimity set" class="shield" />, <img src="/ShieldGreen.png" alt="Wasabi Wallet green shield anonimity set" title="Wasabi Wallet green shield anonimity set" class="shield" /> and <img src="/ShieldCheckmark.png" alt="Wasabi Wallet green checkmark shield anonimity set" title="Wasabi Wallet green checkmark shield anonimity set" class="shield" />.
+Wasabi shows you three levels of anonymity sets: <img src="/ShieldYellow.png" alt="Wasabi Wallet yellow shield anonymity set" title="Wasabi Wallet yellow shield anonymity set" class="shield" />, <img src="/ShieldGreen.png" alt="Wasabi Wallet green shield anonymity set" title="Wasabi Wallet green shield anonymity set" class="shield" /> and <img src="/ShieldCheckmark.png" alt="Wasabi Wallet green checkmark shield anonymity set" title="Wasabi Wallet green checkmark shield anonymity set" class="shield" />.
 By default, they have an anonymity set of `2`, `21` and `50`, however, this can be [changed in the settings](/FAQ/FAQ-UseWasabi.md#how-can-i-change-the-anonset-target).
 
-![Wasabi Wallet anonimity set](/SendAnonset.png "Wasabi Wallet anonimity set")
+![Wasabi Wallet anonymity set](/SendAnonset.png "Wasabi Wallet anonymity set")
 
 ## Receiving Address
 
