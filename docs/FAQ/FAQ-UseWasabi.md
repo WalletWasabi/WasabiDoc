@@ -667,11 +667,11 @@ The problem with this transaction, is Bob knows you, and knows that the 0.65 BTC
 But when you combine (consolidate) your coins in this way, you reveal to Bob that you also have 2.1 BTC from somewhere else, and you reveal to the exchange that you have 0.65 bitcoin from somewhere else.
 
 When you [CoinJoin](/using-wasabi/CoinJoin.md) coins with Wasabi, you actually de-link the trail from Bob/exchange, to the coins in your wallet.
-The coin will have an anonymity set > 1, and typically will have a <img src="/ShieldGreen.png" alt="Wasabi Wallet green shield anonimity set" title="Wasabi Wallet green shield anonimity set" class="shield" /> shield.
+The coin will have an anonymity set > 1, and typically will have a <img src="/ShieldGreen.png" alt="Wasabi Wallet green shield anonymity set" title="Wasabi Wallet green shield anonymity set" class="shield" /> shield.
 This coin can now be spent without having to worry about your boss or the exchange tracking your behavior.
 
 However, when you mix a coin, there is often change.
-This change is marked <img src="/ShieldRed.png" alt="Wasabi Wallet red shield anonimity set" title="Wasabi Wallet red shield anonimity set" class="shield" /> and has an anonymity set = 1 (with a couple of small exceptions regarding remixing).
+This change is marked <img src="/ShieldRed.png" alt="Wasabi Wallet red shield anonymity set" title="Wasabi Wallet red shield anonymity set" class="shield" /> and has an anonymity set = 1 (with a couple of small exceptions regarding remixing).
 The change is completely linked to your coins before the mix, and so needs to be dealt with properly.
 If you combine the tiny bit of change you received from Bob and from the exchange, they still know how much money you had (but not where you are spending it).
 
@@ -1255,7 +1255,7 @@ To avoid any privacy leak, you can use a Ledger hardware wallet in combination w
 
 Everything is working as expected.
 
-The anonymity set info (number) is tied to your wallet that you used to CoinJoin, if you send a mixed coin to another Wasabi Wallet of yours (hardware wallet or normal wallet) it will have an anonymity set 1 <img src="/ShieldRed.png" alt="Wasabi Wallet red shield anonimity set" title="Wasabi Wallet red shield anonimity set" class="shield" /> because this wallet doesn't know that the coin was coinjoined.
+The anonymity set info (number) is tied to your wallet that you used to CoinJoin, if you send a mixed coin to another Wasabi Wallet of yours (hardware wallet or normal wallet) it will have an anonymity set 1 <img src="/ShieldRed.png" alt="Wasabi Wallet red shield anonymity set" title="Wasabi Wallet red shield anonymity set" class="shield" /> because this wallet doesn't know that the coin was coinjoined.
 
 You should put a meaningful label when you generate a receive address in your hardware wallet, e.g. "coinjoined utxo with anonymity set 70" (something that reminds you that you got this utxo from your Wasabi Wallet and it was coinjoined).
 :::
@@ -1345,9 +1345,9 @@ The setting to turn it off is only intended for debugging and trouble shooting.
 ### How can I change the anonset target?
 
 In the `Settings` tab at the bottom you can change the three `PrivacyLevel` values of the desired anon set of the
-<img src="/ShieldYellow.png" alt="Wasabi Wallet yellow shield anonimity set" title="Wasabi Wallet yellow shield anonimity set" class="shield" />,
-<img src="/ShieldGreen.png" alt="Wasabi Wallet green shield anonimity set" title="Wasabi Wallet green shield anonimity set" class="shield" /> and
-<img src="/ShieldCheckmark.png" alt="Wasabi Wallet green checkmark shield anonimity set" title="Wasabi Wallet green checkmark shield anonimity set" class="shield" />
+<img src="/ShieldYellow.png" alt="Wasabi Wallet yellow shield anonymity set" title="Wasabi Wallet yellow shield anonymity set" class="shield" />,
+<img src="/ShieldGreen.png" alt="Wasabi Wallet green shield anonymity set" title="Wasabi Wallet green shield anonymity set" class="shield" /> and
+<img src="/ShieldCheckmark.png" alt="Wasabi Wallet green checkmark shield anonymity set" title="Wasabi Wallet green checkmark shield anonymity set" class="shield" />
 shield button in the GUI.
 The `MixUntilAnonymitySet` is the last selected value from previous use.
 
@@ -1417,12 +1417,12 @@ Please note that Wasabi is designed for the dark theme, and some color schemes m
 ::::details
 ### Can I consolidate anonset coins?
 
-It is advisable to limit the recombining of <img src="/ShieldCheckmark.png" alt="Wasabi Wallet green checkmark shield anonimity set" title="Wasabi Wallet green checkmark shield anonimity set" class="shield" /> <img src="/ShieldGreen.png" alt="Wasabi Wallet green shield anonimity set" title="Wasabi Wallet green shield anonimity set" class="shield" /> <img src="/ShieldYellow.png" alt="Wasabi Wallet yellow shield anonimity set" title="Wasabi Wallet yellow shield anonimity set" class="shield" /> mixed coins because it can only decrease the privacy of these coins.
+It is advisable to limit the recombining of <img src="/ShieldCheckmark.png" alt="Wasabi Wallet green checkmark shield anonymity set" title="Wasabi Wallet green checkmark shield anonymity set" class="shield" /> <img src="/ShieldGreen.png" alt="Wasabi Wallet green shield anonymity set" title="Wasabi Wallet green shield anonymity set" class="shield" /> <img src="/ShieldYellow.png" alt="Wasabi Wallet yellow shield anonymity set" title="Wasabi Wallet yellow shield anonymity set" class="shield" /> mixed coins because it can only decrease the privacy of these coins.
 This reveals that all the consolidated UTXOs are controlled by one entity, which was not known before the consolidation.
 That said, if you combine only a couple of mixed coins, you might not reveal your pre-CoinJoin transaction history, especially when you did several re-mixes.
 
 :::warning Take great care!
-Never consolidate <img src="/ShieldRed.png" alt="Wasabi Wallet red shield anonimity set" title="Wasabi Wallet red shield anonimity set" class="shield" /> unmixed coins with <img src="/ShieldCheckmark.png" alt="Wasabi Wallet green checkmark shield anonimity set" title="Wasabi Wallet green checkmark shield anonimity set" class="shield" /> <img src="/ShieldGreen.png" alt="Wasabi Wallet green shield anonimity set" title="Wasabi Wallet green shield anonimity set" class="shield" /> <img src="/ShieldYellow.png" alt="Wasabi Wallet yellow shield anonimity set" title="Wasabi Wallet yellow shield anonimity set" class="shield" /> mixed coins, as this negates the privacy benefits of the CoinJoin.
+Never consolidate <img src="/ShieldRed.png" alt="Wasabi Wallet red shield anonymity set" title="Wasabi Wallet red shield anonymity set" class="shield" /> unmixed coins with <img src="/ShieldCheckmark.png" alt="Wasabi Wallet green checkmark shield anonymity set" title="Wasabi Wallet green checkmark shield anonymity set" class="shield" /> <img src="/ShieldGreen.png" alt="Wasabi Wallet green shield anonymity set" title="Wasabi Wallet green shield anonymity set" class="shield" /> <img src="/ShieldYellow.png" alt="Wasabi Wallet yellow shield anonymity set" title="Wasabi Wallet yellow shield anonymity set" class="shield" /> mixed coins, as this negates the privacy benefits of the CoinJoin.
 :::
 
 @[youtube](Tk8-N1kHa4g)
@@ -1444,7 +1444,7 @@ Alternatively, you can use your hardware wallet with Electrum, and in order to n
 
 There are no hard and fast rules for [what to do with the change](/using-wasabi/ChangeCoins.md).
 Generally try to avoid the change and use the `Max` button extensively to send whole coins.
-The most problematic type of change is what has `anonymity set 1` <img src="/ShieldRed.png" alt="Wasabi Wallet red shield anonimity set" title="Wasabi Wallet red shield anonimity set" class="shield" />.
+The most problematic type of change is what has `anonymity set 1` <img src="/ShieldRed.png" alt="Wasabi Wallet red shield anonymity set" title="Wasabi Wallet red shield anonymity set" class="shield" />.
 You should treat it as a kind of toxic waste [handled with great care].
 You can spend the change to the same entity as the initial transaction, without loosing any privacy.
 Only spend the change to another entity, if these two won't make you trouble knowing you interact with both of them.
