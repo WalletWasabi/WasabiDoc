@@ -85,7 +85,7 @@ The images are stored in the [`/docs/.vuepress/public/`](https://github.com/zkSN
 They can be embedded via the following markdown tags:
 
 ```
-![](/IMAGENAME.png)
+![Alternative text of the image](/IMAGENAME.png "Title of the image")
 ```
 
 ### Embedding shields
