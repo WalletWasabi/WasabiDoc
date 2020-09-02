@@ -57,7 +57,7 @@ For an in-depth guide for [Debian and Ubuntu](/using-wasabi/InstallPackage.md#de
 
 [Download](/FAQ/FAQ-Installation.md#where-can-i-download-wasabi) the most recent `.deb` package and the `.deb.asc` signature file from the [wasabiwallet.io](https://wasabiwallet.io) or the [Tor onion service](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion).
 
-![](/DownloadDeb.png)
+![Download Wasabi Wallet for Debian](/DownloadDeb.png "Download Wasabi Wallet for Debian")
 
 Verify the signature of the package with `gpg --verify Wasabi-${currentVersion}.deb` and ensure the software was signed by zkSNACKs' PGP public key [${zksnacksPublicKeyFingerprint}](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt).
 
@@ -72,7 +72,7 @@ Check out the main documentation for a [step-by-step guide](/using-wasabi/Instal
 
 [Download](/FAQ/FAQ-Installation.md#where-can-i-download-wasabi) the most recent `.tar.gz` package and the `.tar.gz.asc` signature file from the [wasabiwallet.io](https://wasabiwallet.io) or the [Tor onion service](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion).
 
-![](/DownloadTar.png)
+![Download Wasabi Wallet for Linux](/DownloadTar.png "Download Wasabi Wallet for Linux")
 
 Verify the signature of the package with `gpg --verify Wasabi-${currentVersion}.tar.gz.asc` and ensure the software was signed by zkSNACKs' PGP public key [${zksnacksPublicKeyFingerprint}](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt).
 Now install Wasabi with `sudo tar -pxzf Wasabi-${currentVersion}.tar.gz`, and run it with `./wassabee`.
@@ -84,11 +84,11 @@ Check out the main documentation for a [step-by-step guide](/using-wasabi/Instal
 
 [Download](/FAQ/FAQ-Installation.md#where-can-i-download-wasabi) the most recent `.msi` package and the `.msi.asc` signature file from the [wasabiwallet.io](https://wasabiwallet.io) or the [Tor onion service](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion).
 
-![](/DownloadWindows.png)
+![Download Wasabi Wallet for Windows](/DownloadWindows.png "Download Wasabi Wallet for Windows")
 
 The Wasabi package is signed and automatically verified on Windows when you install it.
 
-![](/InstallWindowsSignature.png)
+![Wasabi Wallet Windows signature verification](/InstallWindowsSignature.png "Wasabi Wallet Windows signature verification")
 
 Optionally, you can still verify the PGP signature of the package by `right-clicking on the signature file > More GpgEX options > Verify` and ensure the software was signed by zkSNACKs' PGP public key [${zksnacksPublicKeyFingerprint}](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt).
 Now install Wasabi by double-clicking the `.msi` file.
@@ -100,7 +100,7 @@ Check out the main documentation for a [step-by-step guide](/using-wasabi/Instal
 
 [Download](/FAQ-Installation.md#where-can-i-download-wasabi) the most recent `.dmg` package and the `.dmg.asc` signature file from the [wasabiwallet.io](https://wasabiwallet.io) or the [Tor onion service](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion).
 
-![](/DownloadMac.png)
+![Download Wasabi Wallet for macOS](/DownloadMac.png "Download Wasabi Wallet for macOS")
 
 The Wasabi package is signed and automatically verified on macOS when you install it.
 

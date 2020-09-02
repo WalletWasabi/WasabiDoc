@@ -56,7 +56,7 @@ By default, bitcoind is not started together with Wasabi.
 This must be activated explicitly in the settings because this is a bandwidth, CPU and storage-intensive program.
 It is optional to keep bitcoind running even after Wasabi Wallet is shut down, so as to verify blocks as soon as they are received.
 
-![](/SettingsBitcoinCore.png)
+![Wasabi Wallet Bitcoin Knots full node integration](/SettingsBitcoinCore.png "Wasabi Wallet Bitcoin Knots full node integration")
 
 ## Using an already existing local Bitcoin full node
 
@@ -69,7 +69,7 @@ This is especially useful to save on bandwidth, as you have already downloaded a
 If you have a Bitcoin full node already on a remote computer, then Wasabi Wallet can use this, too.
 In the settings specify the local IP address and port, or the Tor onion service of your full node.
 
-![](/SettingsBitcoinCoreRemote.png)
+![Wasabi Wallet remote Bitcoin P2P full node endpoint](/SettingsBitcoinCoreRemote.png "Wasabi Wallet remote Bitcoin P2P full node endpoint")
 
 ## Verify that Wasabi is connected to your full node
 

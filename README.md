@@ -85,7 +85,7 @@ The images are stored in the [`/docs/.vuepress/public/`](https://github.com/zkSN
 They can be embedded via the following markdown tags:
 
 ```
-![](/IMAGENAME.png)
+![Alternative text of the image](/IMAGENAME.png "Title of the image")
 ```
 
 ### Embedding shields
@@ -93,10 +93,10 @@ They can be embedded via the following markdown tags:
 To insert the shield images inline with the text, use these HTML tags:
 
 ```html
-<img src="/ShieldCheckmark.png" alt="checkmark" class="shield" />
-<img src="/ShieldGreen.png" alt="green" class="shield" />
-<img src="/ShieldYellow.png" alt="yellow" class="shield" />
-<img src="/ShieldRed.png" alt="red" class="shield" />
+<img src="/ShieldCheckmark.png" alt="Wasabi Wallet green checkmark shield anonymity set" title="Wasabi Wallet green checkmark shield anonymity set" class="shield" />
+<img src="/ShieldGreen.png" alt="Wasabi Wallet green shield anonymity set" title="Wasabi Wallet green shield anonymity set" class="shield" />
+<img src="/ShieldYellow.png" alt="Wasabi Wallet yellow shield anonymity set" title="Wasabi Wallet yellow shield anonymity set" class="shield" />
+<img src="/ShieldRed.png" alt="Wasabi Wallet red shield anonymity set" title="Wasabi Wallet red shield anonymity set" class="shield" />
 ```
 
 ### Embedding videos

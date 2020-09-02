@@ -154,7 +154,7 @@ You can download the latest Virtualbox binary for your host OS [here](https://ww
 Make sure that you also download the VirtualBox Extension Pack, shown just below the links for downloading the binary installation files.
 This package will add several useful capabilities to VirtualBox.
 
-![](/Virtualbox.png)
+![Wasabi Wallet Virtualbox](/Virtualbox.png "Wasabi Wallet virtualbox")
 
 Detailed instructions for installing VirtualBox on your host computer can be found [here](https://www.virtualbox.org/manual/UserManual.html#installation).
 

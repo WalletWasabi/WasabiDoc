@@ -21,7 +21,7 @@
 6. Enter the password.
 7. Click `Send Transaction`.
 
-![](/Send.png)
+![Wasabi Wallet Send tab](/Send.png "Wasabi Wallet Send tab")
 
 ## Coins
 
@@ -42,15 +42,15 @@ The goal is to know the observers who know about your coins and try to reduce th
 
 When you send a bitcoin in a regular transaction with one input and two outputs, then your change coin can be linked to this one input.
 There is a 1 in 1 chance to find this link and no plausible deniability.
-Thus, Wasabi shows this coin with an anonymity set of `1` <img src="/ShieldRed.png" alt="red" class="shield" />.
+Thus, Wasabi shows this coin with an anonymity set of `1` <img src="/ShieldRed.png" alt="Wasabi Wallet red shield anonymity set" title="Wasabi Wallet red shield anonymity set" class="shield" />.
 
 In a Wasabi [CoinJoin](/using-wasabi/CoinJoin.md), many peers register coins in the input of the transaction, and in the output, there are several equal value coins, for example, 100 coins worth exactly 0.1 bitcoin.
 This means that when looking at one of these CoinJoin outputs, there is a 1 in 100 chance to find the corresponding input.
 Thus the higher the anonymity set, the more your post-mix coin is delinked from the pre-mix history.
-Wasabi shows you three levels of anonymity sets: <img src="/ShieldYellow.png" alt="yellow" class="shield" />, <img src="/ShieldGreen.png" alt="green" class="shield" /> and <img src="/ShieldCheckmark.png" alt="checkmark" class="shield" />.
+Wasabi shows you three levels of anonymity sets: <img src="/ShieldYellow.png" alt="Wasabi Wallet yellow shield anonymity set" title="Wasabi Wallet yellow shield anonymity set" class="shield" />, <img src="/ShieldGreen.png" alt="Wasabi Wallet green shield anonymity set" title="Wasabi Wallet green shield anonymity set" class="shield" /> and <img src="/ShieldCheckmark.png" alt="Wasabi Wallet green checkmark shield anonymity set" title="Wasabi Wallet green checkmark shield anonymity set" class="shield" />.
 By default, they have an anonymity set of `2`, `21` and `50`, however, this can be [changed in the settings](/FAQ/FAQ-UseWasabi.md#how-can-i-change-the-anonset-target).
 
-![](/SendAnonset.png)
+![Wasabi Wallet anonymity set](/SendAnonset.png "Wasabi Wallet anonymity set")
 
 ## Receiving Address
 
@@ -81,7 +81,7 @@ This makes it easy for an observer to conclude that the spending amount was the 
 So in order to increase your privacy, you can set a non-rounded amount, like `0.0101 6843`.
 :::
 
-![](/SendAmountFeePassword.png)
+![Wasabi Wallet send transaction](/SendAmountFeePassword.png "Wasabi Wallet send transaction")
 
 ## Mining Fee
 
@@ -91,11 +91,11 @@ Wasabi uses Bitcoin Core's `smart fee` algorithm to estimate the time it will ta
 You can change the fee by moving the slider, or even specify it manually by activating this functionality in the [settings](/FAQ/FAQ-UseWasabi.html#how-do-i-set-custom-fee-rate).
 By clicking on the fee in the brackets below the slider, you can cycle through displaying the `total bitcoin amount`, `sats per vbyte`, `percentage fee of sending amount` or `US Dollar equivalent`.
 
-![](/SendFeeSlider.png)
+![Wasabi Wallet custom mining fee](/SendFeeSlider.png "Wasabi Wallet custom mining fee")
 
 In some cases, there is very little demand for block space, and then Wasabi will set the minimum fee of `1 sat/vbyte`.
 
-![](/SendNoFee.png)
+![Wasabi Wallet minimum mining fee](/SendNoFee.png "Wasabi Wallet minimum mining fee")
 
 :::tip High-priority transaction fees
 
@@ -120,13 +120,13 @@ For a deeper dive into the fee estimation process, [this article](https://bitcoi
 
 In the `Settings` tab you can activate the option to set a custom change address.
 
-![](/SettingsCustomChange.png)
+![Wasabi Wallet custom change address setting](/SettingsCustomChange.png "Wasabi Wallet custom change address setting")
 
 This will show a second address field in the `Send` tab, where you can paste an address that will be used for the change output of the transaction.
 The specified sending amount will go to the first address, the value of `input coins - payment amount - fee` will go to this change address.
 If no address is pasted in this field, then it will pull an address from this same wallet, the same way as the default.
 
-![](/SendCustomChange.png)
+![Set Custom Change address in Wasabi Wallet](/SendCustomChange.png "Set Custom Change address in Wasabi Wallet")
 
 ## Password
 

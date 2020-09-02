@@ -22,7 +22,7 @@
 
 4. Verify the information is correct, type in the password, and press `Send`.
 
-	![](/PayJoinSend.png)
+![Send Bitcoin PayJoin transaction in Wasabi Wallet](/PayJoinSend.png "Send Bitcoin PayJoin transaction in Wasabi Wallet")
 
 	:::warning The success of a PayJoin transaction is not something that depends on Wasabi.
 	It may happen that the transaction is broadcast with success, but that it is not a PayJoin.

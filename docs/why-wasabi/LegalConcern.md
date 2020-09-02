@@ -115,7 +115,7 @@ If the exact time and amount of payment are publicly known, attackers can use th
 
 The Bitcoin market is considered [fairly concentrated](https://bitinfocharts.com/top-100-richest-bitcoin-addresses.html) in the sense that out of the millions of Bitcoin addresses, less than 1% holds 87% of bitcoins.
 
-![](/AddressDistribution.png)
+![Bitcoin address distribution](/AddressDistribution.png "Bitcoin address distribution")
 
 Institutional investors and cryptocurrency exchanges are holding large sums of bitcoin on a blockchain where transactions are completely transparent.
 These so-called whales sometimes need to move large amounts of coins for any reason which can often lead to unintentional price manipulation.

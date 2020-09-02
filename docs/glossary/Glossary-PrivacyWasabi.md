@@ -174,13 +174,13 @@ Read more: [RPC Interface](/using-wasabi/RPC.md)
 :::
 
 :::details
-### Shield (or anonset shield)
+### Shield (or anonymity set shield)
 
 We often talk about
-<img src="/ShieldCheckmark.png" alt="checkmark" class="shield" />,
-<img src="/ShieldGreen.png" alt="green" class="shield" />,
-<img src="/ShieldYellow.png" alt="yellow" class="shield" /> and
-<img src="/ShieldRed.png" alt="red" class="shield" />
+<img src="/ShieldCheckmark.png" alt="Wasabi Wallet green checkmark shield anonymity set" title="Wasabi Wallet green checkmark shield anonymity set" class="shield" />,
+<img src="/ShieldGreen.png" alt="Wasabi Wallet green shield anonymity set" title="Wasabi Wallet green shield anonymity set" class="shield" />,
+<img src="/ShieldYellow.png" alt="Wasabi Wallet yellow shield anonymity set" title="Wasabi Wallet yellow shield anonymity set" class="shield" /> and
+<img src="/ShieldRed.png" alt="Wasabi Wallet red shield anonymity set" title="Wasabi Wallet red shield anonymity set" class="shield" />
 shields... but what are they?
 Coins in your wallet have shields.
 

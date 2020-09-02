@@ -28,7 +28,7 @@ Make sure that you properly back up and write down this password.
 Please also read and agree to the [terms and conditions, the privacy policy and the legal statement](https://github.com/zkSNACKs/WalletWasabi/blob/master/WalletWasabi/Legal/Assets/LegalDocuments.txt).
 Now you can continue with clicking `Generate`.
 
-![](/WalletManagerGenerateWallet.png)
+![Generate new wallet in Wasabi](/WalletManagerGenerateWallet.png "Generate new wallet in Wasabi")
 
 Now you will see the 12 recovery words, this is the mnemonic seed that you can use to back up and recover your wallet.
 Make sure, and triple-check that you have done a proper backup of BOTH the password AND the mnemonic.
@@ -36,7 +36,7 @@ When you only have the recovery words, but not the password, then you will NOT b
 In order to protect your paper backup, consider storing the password and recovery words in two different locations.
 You have successfully setup your wallet when you click `I wrote down my Recovery Words!`
 
-![](/WalletManagerRecoveryWords.png)
+![Wasabi Wallet recovery words](/WalletManagerRecoveryWords.png "Wasabi Wallet recovery words")
 :::
 
 ::::details
@@ -233,7 +233,7 @@ Read more [ħere](/using-wasabi/WalletLoad.md)
 
 You know that Tor is properly connected, that all the block filters and all the relevant blocks are downloaded when you see that the status bar is `Ready`.
 
-![](/StatusBar.png)
+![Wasabi Wallet Status Bar](/StatusBar.png "Wasabi Wallet Status Bar")
 :::
 
 :::details
@@ -290,7 +290,7 @@ Be precise in the label of the observers who know this address is yours, this is
 Then you can click on `Generate` which will now show you the address, and immediately copy it to the clipboard.
 After a coin has been sent to this address, it is removed from the GUI, this is a good feature to help protect you against [address reuse](/why-wasabi/AddressReuse.md).
 
-![](/ReceiveLabelingRequired.png)
+![Wasabi Wallet Observers label](/ReceiveLabelingRequired.png "Wasabi Wallet Observers label")
 :::
 
 :::details
@@ -337,7 +337,7 @@ When you do not label all your addresses, there is no meta-data for you to under
 Thus receiving addresses and sending transactions should be carefully labeled with the observers who know about them.
 This helps you know where your coins came from so that you can judge whether there are privacy concerns when sending a specific coin to a specific receiver.
 
-![](/ReceiveLabelingRequired.png)
+![Wasabi Wallet known by label](/ReceiveLabelingRequired.png "Wasabi Wallet known by label")
 
 When labeling a newly generated address or a sending transaction you should ask yourself: "Who knows this address is mine?" or "Whom will I share this address with?" or "From whom am I receiving bitcoin?" or "To whom am I sending bitcoin?".
 Observers should contain the comma-separated names of people/entities that may be aware of the transaction and could follow its trail like:
@@ -361,7 +361,7 @@ This is useful when you have generated a receiving address with a specific label
 Take care with whom you have shared this address, because if you send it to several people, they might all send many coins to the same address.
 This is very bad for your privacy because of [address reuse](/why-wasabi/AddressReuse.md), and it confuses you with the labeling of each unique coin.
 
-![](/ReceiveAddressDropDownMenu.png)
+![Wasabi Wallet address details](/ReceiveAddressDropDownMenu.png "Wasabi Wallet address details")
 :::
 
 :::details
@@ -409,7 +409,7 @@ You can see the address QR code, public key and the key path in the drop down me
 Click on the arrow on the left side of the address to reveal the extra details.
 You can save the png file of the QR code in the right click menu.
 
-![](/ReceiveAddressDropDownMenu.png)
+![Wasabi Wallet address' QR code](/ReceiveAddressDropDownMenu.png "Wasabi Wallet address' QR code")
 :::
 
 :::details
@@ -497,7 +497,7 @@ You can also type in the address manually, there is a checksum to help you ident
 Be careful and double-check the address, there is no way to revert this transaction and change the destination.
 So make sure that the coins get into the right hands.
 
-![](/SendAmountFeePassword.png)
+![Wasabi Wallet Send tab](/SendAmountFeePassword.png "Wasabi Wallet Send tab")
 :::
 
 :::details
@@ -512,12 +512,12 @@ However, you can use the [RPC server `send` call](/using-wasabi/RPC.md#send) and
 
 You can activate the option to set a custom change address in the `Settings` tab.
 
-![](/SettingsCustomChange.png)
+![Wasabi Wallet custom change address setting](/SettingsCustomChange.png "Wasabi Wallet custom change address setting")
 
 Then simply paste the address you want to send the change to in the `Send` tab GUI.
 Read more [here](/using-wasabi/Send.md#custom-change-address).
 
-![](/SendCustomChange.png)
+![Set Custom Change address in Wasabi Wallet](/SendCustomChange.png "Set Custom Change address in Wasabi Wallet")
 :::
 
 :::details
@@ -527,7 +527,7 @@ After you select one or more coins as inputs in `Send` tab, say two anonset coin
 You can manually set the exact amount that the destination address will receive in the output of the transaction, say 0.15 bitcoin.
 Then Wasabi will help you with automatically calculating the precise change output value with `inputs - destination output - transaction fee`.
 
-![](/SendAmountFeePassword.png)
+![Wasabi Wallet Send tab](/SendAmountFeePassword.png "Wasabi Wallet Send tab")
 :::
 
 ::::details
@@ -538,7 +538,7 @@ You can click the `MAX` button and the transaction will have only one output wit
 Wasabi will calculate the precise value for the destination output with `inputs - transaction fee`.
 This means you send the entire two coins to the receiving address, and there is no change coming back to your own wallet, you are sending a "whole coin".
 
-![](/SendAmountFeePassword.png)
+![Wasabi Wallet Send tab](/SendAmountFeePassword.png "Wasabi Wallet Send tab")
 
 The blockchain spy heuristic is that this is a transaction to yourself, for example to your hardware wallet for long-term hodling.
 Most of the time this assumption is correct - the amount of an external payment is rarely exactly the same as the value of the sum of coins in the input, thus requiring change.
@@ -577,12 +577,12 @@ The lower the fee is, the longer the estimated wait; and the higher the fee, the
 There are several different confidence levels, each of them gives an educated guess how soon the transaction will confirm.
 But the provided time frames are only a rough estimation, and not at all a precise metric.
 
-![](/SendFeeSlider.png)
+![Wasabi Wallet mining fee settings](/SendFeeSlider.png "Wasabi Wallet mining fee settings")
 
 Because confirmation fee estimation is more an art than a science, you can also set the fee manually.
 Then you can go after your gut feeling, [mempool chart analysis](https://jochen-hoenicke.de/queue/#0,24h), or just putting the minimum of 1 sat/vByte.
 
-![](/SendNoFee.png)
+![Wasabi Wallet minimum mining fee](/SendNoFee.png "Wasabi Wallet minimum mining fee")
 
 For a transaction to yourself, for example from your hot CoinJoin wallet to your hardware wallet, you don't need to have fast confirmation, so you can set a relatively low fee.
 But to send from the hot CoinJoin wallet to the coffee shop, you might want to get faster confirmation, thus paying a higher fee.
@@ -617,7 +617,7 @@ Unlike other Bitcoin wallets, the user cannot spend from Wasabi without selectin
 In order to spend some coins, simply select them by clicking their checkboxes from the list.
 Wasabi will automatically build a transaction with the best combination of the selected coins.
 
-![](/Send.png)
+![Wasabi Wallet Send tab](/Send.png "Wasabi Wallet Send tab")
 :::
 
 :::details
@@ -667,11 +667,11 @@ The problem with this transaction, is Bob knows you, and knows that the 0.65 BTC
 But when you combine (consolidate) your coins in this way, you reveal to Bob that you also have 2.1 BTC from somewhere else, and you reveal to the exchange that you have 0.65 bitcoin from somewhere else.
 
 When you [CoinJoin](/using-wasabi/CoinJoin.md) coins with Wasabi, you actually de-link the trail from Bob/exchange, to the coins in your wallet.
-The coin will have an anonymity set > 1, and typically will have a <img src="/ShieldGreen.png" alt="green" class="shield" /> shield.
+The coin will have an anonymity set > 1, and typically will have a <img src="/ShieldGreen.png" alt="Wasabi Wallet green shield anonymity set" title="Wasabi Wallet green shield anonymity set" class="shield" /> shield.
 This coin can now be spent without having to worry about your boss or the exchange tracking your behavior.
 
 However, when you mix a coin, there is often change.
-This change is marked <img src="/ShieldRed.png" alt="red" class="shield" /> and has an anonymity set = 1 (with a couple of small exceptions regarding remixing).
+This change is marked <img src="/ShieldRed.png" alt="Wasabi Wallet red shield anonymity set" title="Wasabi Wallet red shield anonymity set" class="shield" /> and has an anonymity set = 1 (with a couple of small exceptions regarding remixing).
 The change is completely linked to your coins before the mix, and so needs to be dealt with properly.
 If you combine the tiny bit of change you received from Bob and from the exchange, they still know how much money you had (but not where you are spending it).
 
@@ -1083,7 +1083,7 @@ Write down your recovery words!
 Wasabi uses [BIP 39: mnemonic code for generating deterministic keys](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) to enable easy backups of all private keys in the wallet.
 The mnemonic is displayed as 12 recovery words that are only shown once during the wallet generation.
 
-![](/WalletManagerRecoveryWords.png)
+![Wasabi Wallet recovery words](/WalletManagerRecoveryWords.png "Wasabi Wallet recovery words")
 
 :::danger
 In order to restore a wallet, you need BOTH the mnemonic words AND the password!
@@ -1255,7 +1255,7 @@ To avoid any privacy leak, you can use a Ledger hardware wallet in combination w
 
 Everything is working as expected.
 
-The anonymity set info (number) is tied to your wallet that you used to CoinJoin, if you send a mixed coin to another Wasabi Wallet of yours (hardware wallet or normal wallet) it will have an anonymity set 1 <img src="/ShieldRed.png" alt="red" class="shield" /> because this wallet doesn't know that the coin was coinjoined.
+The anonymity set info (number) is tied to your wallet that you used to CoinJoin, if you send a mixed coin to another Wasabi Wallet of yours (hardware wallet or normal wallet) it will have an anonymity set 1 <img src="/ShieldRed.png" alt="Wasabi Wallet red shield anonymity set" title="Wasabi Wallet red shield anonymity set" class="shield" /> because this wallet doesn't know that the coin was coinjoined.
 
 You should put a meaningful label when you generate a receive address in your hardware wallet, e.g. "coinjoined utxo with anonymity set 70" (something that reminds you that you got this utxo from your Wasabi Wallet and it was coinjoined).
 :::
@@ -1297,7 +1297,7 @@ A CoinJoin is a payment within the same wallet, thus it only shows the coordinat
 You also have a list of all the transaction identification numbers for detailed reference.
 The check mark indicates that the transaction is confirmed in the longest proof-of-work blockchain.
 
-![](/History.png)
+![Wasabi Wallet History tab](/History.png "Wasabi Wallet History tab")
 :::
 
 :::details
@@ -1319,11 +1319,11 @@ There are three different ways of using your [Bitcoin full node with Wasabi](/us
 - If you have a full node already running on the same computer as Wasabi, it will automatically be detected and used by default.
 - If you have a full node on a remote computer, then you can connect to it by specifying the local network IP address or Tor onion service in the Wasabi `Settings` tab.
 
-![](/SettingsBitcoinCoreRemote.png)
+![Wasabi Wallet Remote P2P Bitcoin Endpoint full node](/SettingsBitcoinCoreRemote.png "Wasabi Wallet Remote P2P Bitcoin Endpoint full node")
 
 - If you are not yet running a full node, Wasabi has the bitcoind binaries included, and with one click in the `Settings`, you can start Bitcoin Knots together with Wasabi.
 
-![](/SettingsBitcoinCore.png)
+![Wasabi Wallet local Bitcoin Knots full node integration](/SettingsBitcoinCore.png "Wasabi Wallet local Bitcoin Knots full node integration")
 
 @[youtube](gWo2RAkIVrE)
 :::
@@ -1345,9 +1345,9 @@ The setting to turn it off is only intended for debugging and trouble shooting.
 ### How can I change the anonset target?
 
 In the `Settings` tab at the bottom you can change the three `PrivacyLevel` values of the desired anon set of the
-<img src="/ShieldYellow.png" alt="yellow" class="shield" />,
-<img src="/ShieldGreen.png" alt="green" class="shield" /> and
-<img src="/ShieldCheckmark.png" alt="checkmark" class="shield" />
+<img src="/ShieldYellow.png" alt="Wasabi Wallet yellow shield anonymity set" title="Wasabi Wallet yellow shield anonymity set" class="shield" />,
+<img src="/ShieldGreen.png" alt="Wasabi Wallet green shield anonymity set" title="Wasabi Wallet green shield anonymity set" class="shield" /> and
+<img src="/ShieldCheckmark.png" alt="Wasabi Wallet green checkmark shield anonymity set" title="Wasabi Wallet green checkmark shield anonymity set" class="shield" />
 shield button in the GUI.
 The `MixUntilAnonymitySet` is the last selected value from previous use.
 
@@ -1375,7 +1375,7 @@ A dust attack is actually about [forced address reuse](https://en.bitcoin.it/Pri
 Specifically in the context of Wasabi, with the dust threshold settings you can limit the value of coins shown in the GUI.
 When you set it to `0.0000 5000 bitcoin`, and when you receive a coin worth `0.0000 4000 bitcoin`, then this coin will not be shown in the coin list.
 
-![](/SettingsDustThreshold.png)
+![Wasabi Wallet Dust threshold settings](/SettingsDustThreshold.png "Wasabi Wallet Dust threshold settings")
 :::
 
 :::details
@@ -1385,7 +1385,7 @@ In the top left menu `File > Open` you can see there are several logs available.
 * The `Log File` shows you the general information about Wasabi Wallet.
 * The `Tor Log File` shows the Tor specific logs.
 
-![](/MenuFileOpen.png)
+![Wasabi Wallet open log file](/MenuFileOpen.png "Wasabi Wallet open log file")
 
 Alternatively, you can find the logs inside your [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder).
 :::
@@ -1405,7 +1405,7 @@ Open the `GlobalSettings.json` file and change the line from `"theme": "Visual S
 Save the file and restart Wasabi.
 Please note that Wasabi is designed for the dark theme, and some color schemes might not look beautiful in the white mode.
 
-![](/WhiteMode.png)
+![Wasabi Wallet white theme](/WhiteMode.png "Wasabi Wallet white theme")
 :::
 
 ## Coin Control Best Practices
@@ -1417,12 +1417,12 @@ Please note that Wasabi is designed for the dark theme, and some color schemes m
 ::::details
 ### Can I consolidate anonset coins?
 
-It is advisable to limit the recombining of <img src="/ShieldCheckmark.png" alt="checkmark" class="shield" /> <img src="/ShieldGreen.png" alt="green" class="shield" /> <img src="/ShieldYellow.png" alt="yellow" class="shield" /> mixed coins because it can only decrease the privacy of these coins.
+It is advisable to limit the recombining of <img src="/ShieldCheckmark.png" alt="Wasabi Wallet green checkmark shield anonymity set" title="Wasabi Wallet green checkmark shield anonymity set" class="shield" /> <img src="/ShieldGreen.png" alt="Wasabi Wallet green shield anonymity set" title="Wasabi Wallet green shield anonymity set" class="shield" /> <img src="/ShieldYellow.png" alt="Wasabi Wallet yellow shield anonymity set" title="Wasabi Wallet yellow shield anonymity set" class="shield" /> mixed coins because it can only decrease the privacy of these coins.
 This reveals that all the consolidated UTXOs are controlled by one entity, which was not known before the consolidation.
 That said, if you combine only a couple of mixed coins, you might not reveal your pre-CoinJoin transaction history, especially when you did several re-mixes.
 
 :::warning Take great care!
-Never consolidate <img src="/ShieldRed.png" alt="red" class="shield" /> unmixed coins with <img src="/ShieldCheckmark.png" alt="checkmark" class="shield" /> <img src="/ShieldGreen.png" alt="green" class="shield" /> <img src="/ShieldYellow.png" alt="yellow" class="shield" /> mixed coins, as this negates the privacy benefits of the CoinJoin.
+Never consolidate <img src="/ShieldRed.png" alt="Wasabi Wallet red shield anonymity set" title="Wasabi Wallet red shield anonymity set" class="shield" /> unmixed coins with <img src="/ShieldCheckmark.png" alt="Wasabi Wallet green checkmark shield anonymity set" title="Wasabi Wallet green checkmark shield anonymity set" class="shield" /> <img src="/ShieldGreen.png" alt="Wasabi Wallet green shield anonymity set" title="Wasabi Wallet green shield anonymity set" class="shield" /> <img src="/ShieldYellow.png" alt="Wasabi Wallet yellow shield anonymity set" title="Wasabi Wallet yellow shield anonymity set" class="shield" /> mixed coins, as this negates the privacy benefits of the CoinJoin.
 :::
 
 @[youtube](Tk8-N1kHa4g)
@@ -1444,7 +1444,7 @@ Alternatively, you can use your hardware wallet with Electrum, and in order to n
 
 There are no hard and fast rules for [what to do with the change](/using-wasabi/ChangeCoins.md).
 Generally try to avoid the change and use the `Max` button extensively to send whole coins.
-The most problematic type of change is what has `anonymity set 1` <img src="/ShieldRed.png" alt="red" class="shield" />.
+The most problematic type of change is what has `anonymity set 1` <img src="/ShieldRed.png" alt="Wasabi Wallet red shield anonymity set" title="Wasabi Wallet red shield anonymity set" class="shield" />.
 You should treat it as a kind of toxic waste [handled with great care].
 You can spend the change to the same entity as the initial transaction, without loosing any privacy.
 Only spend the change to another entity, if these two won't make you trouble knowing you interact with both of them.

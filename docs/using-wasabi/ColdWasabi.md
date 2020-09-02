@@ -95,7 +95,7 @@ You select coins, specify the destination address, payment amount and mining fee
 Then you click the `Build Transaction` button, and it will generate an unsigned Bitcoin transaction.
 Click on `Export Binary PSBT`, select the SD card and click `OK`.
 
-![](/PSBTUnsigned.png)
+![Wasabi Wallet export PSBT](/PSBTUnsigned.png "Wasabi Wallet Partial Signed Bitcoin Transaction")
 
 Remove the SD card from the computer and put it into your Coldcard.
 Then, in the Coldcard main menu click on `Ready to Sign`.
@@ -105,7 +105,7 @@ In Wasabi, click on the top menu `Tools` and then `Transaction Broadcaster`.
 In this tab, select `Import Transaction`, lookup the SD card with the final signed transaction, and click `OK`.
 Then click `Broadcast Transaction`, and Wasabi will privately announce it to the Bitcoin network over Tor.
 
-![](/PSBTBroadcast.png)
+![Wasabi Wallet Transaction Broadcaster](/PSBTBroadcast.png "Wasabi Wallet Transaction Broadcaster")
 
 ## Cold-Wasabi protocol
 
@@ -148,12 +148,12 @@ For the first setup, you need to connect the hardware wallet to the computer tha
 ### Send bitcoins from hot to cold Wasabi
 
 :::tip Third
-In order to keep the mixed coins separate and without revealing that you own all of them, send the <img src="/ShieldCheckmark.png" alt="checkmark" class="shield" /> coins without consolidating them.
+In order to keep the mixed coins separate and without revealing that you own all of them, send the <img src="/ShieldCheckmark.png" alt="Wasabi Wallet green checkmark shield anonymity set" title="Wasabi Wallet green checkmark shield anonymity set" class="shield" /> coins without consolidating them.
 Wait some time in-between sending them, so that timing analysis becomes more difficult.
 :::
 
 9. Go to the hot-Wasabi `Send` tab, and select the coins with high anonymity set.
-Do not consolidate your <img src="/ShieldCheckmark.png" alt="checkmark" class="shield" /> coins, but send them in small, time-staggered batches.
+Do not consolidate your <img src="/ShieldCheckmark.png" alt="Wasabi Wallet green checkmark shield anonymity set" title="Wasabi Wallet green checkmark shield anonymity set" class="shield" /> coins, but send them in small, time-staggered batches.
 10. Paste the cold-Wasabi address.
 11. Click the `MAX` button to send the whole mixed coin without generating change.
 
@@ -178,7 +178,7 @@ The daemon stops when all coins have reached the target anonymity set, or if you
 The target anonymity set is by default `50`, but it can be changed in the `Settings` tab.
 After that it starts registering outputs from the CoinJoin to your destination wallet, thus you are slowly and privately coinjoining your money to your cold wallet.
 
-![](/SettingsAnonLevels.png)
+![Wasabi Wallet anonymity set levels](/SettingsAnonLevels.png "Wasabi Wallet anonymity set levels")
 
 :::tip Success!
 おめでとうございます!

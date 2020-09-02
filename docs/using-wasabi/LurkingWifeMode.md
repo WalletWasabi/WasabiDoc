@@ -9,7 +9,7 @@
 
 Lurking Wife Mode is a Wasabi Wallet feature that hides sensitive and critical information from physical observers and allows you to post screenshots without worrying about your privacy.
 
-![](/Send.png)
+![Wasabi Wallet Lurking Wife Mode](/Send.png "Wasabi Wallet Lurking Wife Mode")
 
 [[toc]]
 
@@ -18,13 +18,13 @@ Lurking Wife Mode is a Wasabi Wallet feature that hides sensitive and critical i
 ## How to activate/deactivate Lurking Wife Mode
 You can activate or deactivate by clicking the eye icon on the `Wallet Explorer` header in the top right corner.
 
-![](/LWMExplorerActivate.png)
+![Enable Lurking Wife Mode in Wasabi Wallet](/LWMExplorerActivate.png "Enable Lurking Wife Mode in Wasabi Wallet")
 
-![](/LWMExplorerDeactivate.png)
+![Disable Lurking Wife Mode in Wasabi Wallet](/LWMExplorerDeactivate.png "Disable Lurking Wife Mode in Wasabi Wallet")
 
 Alternatively, you can toggle the button in the `Settings` tab.
 
-![](/LWMSettings.png)
+![Wasabi Wallet Lurking Wife Mode Settings](/LWMSettings.png "Wasabi Wallet Lurking Wife Mode Settings")
 
 ## More information on LWM
 - In LWM the wallet is still usable, which means input field information isn't hidden.
