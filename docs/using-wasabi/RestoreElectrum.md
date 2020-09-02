@@ -21,7 +21,7 @@ To gain some privacy by using Electrum you should set up Tor on Network preferen
 
 1. Launch Electrum.
 
-If you don't have a wallet created on Electrum it should automatically display an Install Wizard. If it opens your default wallet then go to `File` -> `New/Restore`.
+	If you don't have a wallet created on Electrum it should automatically display an Install Wizard. If it opens your default wallet then go to `File` -> `New/Restore`.
 
 2. Name your new Electrum wallet.
 
@@ -36,7 +36,7 @@ If you don't have a wallet created on Electrum it should automatically display a
 	- Copy your `Extended Account zprv`.
 	:::
 
-The following steps are only necessary if you have previously chosen the option `I already have a seed`.
+The next steps are only necessary if you have previously chosen the option `I already have a seed`.
 
 6. Click the `Options` button, then check `BIP39 seed` and if you created your Wasabi wallet with a password make sure to check `Extend this seed with custom words` and type your password in the `Seed extension` window.
 

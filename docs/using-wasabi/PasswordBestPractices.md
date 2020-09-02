@@ -48,9 +48,9 @@ Because if one password is leaked, then other ones are compromised.
 4. Do not take a famous quote, or well-known passage from literature and use it for a password.
 It will not fool any serious hacker, even if you throw in substitutions such as: "@" instead of "a", or "$" instead of "s".
 
-:::danger Make a secure password!!
-It is of utmost importance to generate a secure password following [best practices](/using-wasabi/PasswordBestPractices.md).
-:::
+	:::danger Make a secure password!!
+	It is of utmost importance to generate a secure password following [best practices](/using-wasabi/PasswordBestPractices.md).
+	:::
 
 ## Use Diceware
 

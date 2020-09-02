@@ -16,11 +16,13 @@
 1. Start Wasabi and open the wallet that you want to receive coins into.
 2. Go to the `Receive` tab.
 3. Specify the observers which are the entities who know about this address.
+
+	![](/ReceiveLabelingRequired.png)
+
 4. Click on `Generate Address`.
 5. Optionally you can change the observers in the right-click menu if new entities learn about the address.
 
-![](/ReceiveLabelingRequired.png)
-![](/ReceiveAddressDropDownMenu.png)
+	![](/ReceiveAddressDropDownMenu.png)
 
 ## Bitcoin public keys and addresses
 

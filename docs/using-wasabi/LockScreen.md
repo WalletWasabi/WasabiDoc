@@ -34,7 +34,7 @@ You can now lock your screen in two ways:
 1. Hit `Ctrl-L` on your keyboard.
 2. On the top left menu bar, click on `File`, then `Lock Screen`.
 
-![](/MenuFile.png)
+	![](/MenuFile.png)
 
 Now the GUI is locked until the correct PIN is entered in the box.
 
