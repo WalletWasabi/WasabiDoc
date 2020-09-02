@@ -869,7 +869,7 @@ Remember to take a look at websites like [Johoe's Bitcoin Mempool Statistics](ht
 [Change is an issue](/using-wasabi/ChangeCoins.md#why-change-is-an-issue).
 For this reason, whenever possible it is recommended to CoinJoin with exactly the required denomination for the current round (roughly 0.1 BTC) to not get any change back.
 
-3. Mix at different times
+3. Mix at different times.
 To avoid traffic detection and behavioral analysis, you should CoinJoin at different times (days and hours).
 :::
 

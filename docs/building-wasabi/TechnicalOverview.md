@@ -193,11 +193,9 @@ If the user does not wish to proceed, they can dequeue their coins.
 
 ![Wasabi Wallet CoinJoin status](/CoinJoinStatus.png "Wasabi Wallet CoinJoin status")
 
-After a mix has successfully executed, the resulting CoinJoin transaction will look like the [following real example](https://blockstream.info/tx/a0855875fd3d19522568ad673e4b52e11691d837021d74eef0d177f9e0950bf2):
+After a mix has successfully executed, the resulting CoinJoin transaction will look like the following real example: [clearnet explorer](https://blockstream.info/tx/a0855875fd3d19522568ad673e4b52e11691d837021d74eef0d177f9e0950bf2) | [onion service explorer](http://explorerzydxu5ecjrkwceayqybizmpjjznk5izmitf2modhcusuqlid.onion/tx/a0855875fd3d19522568ad673e4b52e11691d837021d74eef0d177f9e0950bf2)
 
 ![Wasabi Wallet's CoinJoin transaction](/TXCoinJoin.png "Wasabi Wallet's CoinJoin transaction")
-
-Wasabi also has a Tor website where one can see real-time statistics about the mixes: [wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion/)
 
 ## II. Stability, Performance, UX, Code Quality
 

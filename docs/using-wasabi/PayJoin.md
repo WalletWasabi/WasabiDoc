@@ -24,14 +24,14 @@
 
 ![Send Bitcoin PayJoin transaction in Wasabi Wallet](/PayJoinSend.png "Send Bitcoin PayJoin transaction in Wasabi Wallet")
 
-:::warning The success of a PayJoin transaction is not something that depends on Wasabi.
-It may happen that the transaction is broadcast with success, but that it is not a PayJoin.
-This can happen for several reasons including:
+	:::warning The success of a PayJoin transaction is not something that depends on Wasabi.
+	It may happen that the transaction is broadcast with success, but that it is not a PayJoin.
+	This can happen for several reasons including:
 
-- The receiver did not have any utxos to contribute towards a PayJoin.
-- Your wallet does not use the same address format as the receiver's.
-- The PayJoin server is not available.
-:::
+	- The receiver did not have any utxos to contribute towards a PayJoin.
+	- Your wallet does not use the same address format as the receiver's.
+	- The PayJoin server is not available.
+	:::
 
 ## The goal of PayJoin
 

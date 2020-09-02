@@ -26,8 +26,7 @@ This label is not shared with anyone, it is only stored locally on your computer
 3. Write a long and random password and **[back it up](/using-wasabi/BackupBestPractices.md)**.
 It encrypts your secrets, and you will need it every time you want to spend bitcoin from this wallet or recover your wallet.
 
-If you are uncertain about how to create a secure password, refer to [Password Best Practices](/using-wasabi/PasswordBestPractices.md) for helpful information.
-
+	If you are uncertain about how to create a secure password, refer to [Password Best Practices](/using-wasabi/PasswordBestPractices.md) for helpful information.
 
 	:::danger Back up your password!
 	Without the password, you cannot spend your bitcoin or recover your wallet, even if you have the recovery words (Seed phrase).
@@ -41,11 +40,11 @@ If you are uncertain about how to create a secure password, refer to [Password B
 5. Write down the 12 recovery words (mnemonic seed phrase).
 You can use this seed phrase **together with** your password to recover your wallet on a different computer using Wasabi or another [BIP 39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) compliant wallet.
 
-:::danger Back up your recovery words!
-Without the recovery words (Seed phrase) AND the password, you cannot recover your wallet.
-So, triple-check that you have a proper backup!
-Make sure the backup of your recovery words is stored separately from the password backup.
-:::
+	:::danger Back up your recovery words!
+	Without the recovery words (Seed phrase) AND the password, you cannot recover your wallet.
+	So, triple-check that you have a proper backup!
+	Make sure the backup of your recovery words is stored separately from the password backup.
+	:::
 
 ![Wasabi Wallet recovery words](/WalletManagerRecoveryWords.png "Wasabi Wallet recovery words")
 

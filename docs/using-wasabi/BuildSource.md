@@ -21,13 +21,13 @@ Be aware that these branches might be unstable and can include bugs that lead to
 1. Install [Git](https://git-scm.com/downloads)
 2. Install [.NET Core ${dotnetVersion} SDK](https://www.microsoft.com/net/download) for "Building Apps"
 
-:::tip Optional for privacy
-You can disable .NET's telemetry, which is sending some usage information to Microsoft, by typing:
+	:::tip Optional for privacy
+	You can disable .NET's telemetry, which is sending some usage information to Microsoft, by typing:
 
-`export DOTNET_CLI_TELEMETRY_OPTOUT=1` on Linux and macOS.
+	`export DOTNET_CLI_TELEMETRY_OPTOUT=1` on Linux and macOS.
 
-`setx DOTNET_CLI_TELEMETRY_OPTOUT 1` to disable it permanently on Windows.
-:::
+	`setx DOTNET_CLI_TELEMETRY_OPTOUT 1` to disable it permanently on Windows.
+	:::
 
 ## Get Wasabi
 
