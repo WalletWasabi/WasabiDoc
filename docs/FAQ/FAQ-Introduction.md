@@ -43,7 +43,7 @@ See also the [Bitcoin Wiki on CoinJoins](https://en.bitcoin.it/wiki/CoinJoin)
 :::details
 ### Should I trust Wasabi with my coins?
 
- Since Wasabi's CoinJoin implementation is trustless by design,there is no need for participants to trust each other or a third party.
+ Since Wasabi's CoinJoin implementation is trustless by design, there is no need for participants to trust each other or a third party.
 Both the sending address (the CoinJoin input) and the receiving address (the CoinJoin output) are controlled by your own private keys.
 The Wasabi server merely coordinates the process of combining  each participant's input into one single transaction, but the Wasabi Wallet can neither steal your coins, nor figure out which outputs belong to which inputs (look up “[Chaumian CoinJoin](/using-wasabi/CoinJoin.md)” if you want to know more).
 :::
