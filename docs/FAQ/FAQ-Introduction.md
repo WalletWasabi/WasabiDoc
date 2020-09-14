@@ -27,7 +27,7 @@ Wasabi is a tool for everyone.
 :::details
 ### What is a CoinJoin?
 
-Coinjoin is a mechanism by which multiple participants combine their coins (or UTXOs, to be more precise) into one large transaction with multiple inputs and multiple outputs.
+CoinJoin is a mechanism by which multiple participants combine their coins (or UTXOs, to be more precise) into one large transaction with multiple inputs and multiple outputs.
 An observer cannot determine which output belongs to which input, and neither can the participants themselves.
 This makes it difficult for outside parties to trace where a particular coin originated from and where it was sent to (as opposed to regular bitcoin transactions, where there is usually one sender and one receiver).
 
