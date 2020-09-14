@@ -100,7 +100,7 @@ Yes, you can check the status of Wasabi-related services and websites (like APIs
 ### What software supplies the block filters that Wasabi uses?
 
 The zkSNACKs coordinator supplies identical filters to every client.
-This means that you rely on the [Wasabi backend](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Backend) to provide  valid filters.
+This means that you rely on the [Wasabi backend](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Backend) to provide valid filters.
 But because you download the blocks from a random Bitcoin peer-to-peer node - or your own node - the coordinator cannot spy on which blocks you are interested in.
 Furthermore, the random node will only know which block is needed but it won't have any clue which transaction(s) belongs to the wallet.
 :::
