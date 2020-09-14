@@ -15,9 +15,9 @@
 Every single line of code in Wasabi, the [wallet](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Gui), the [backend server](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Backend), the [tests](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Tests), the [packager](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Packager), the [library](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi), the [daemon](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Gui/CommandLine), the [api](https://wasabiwallet.io/swagger/), the [documentation](https://github.com/zkSNACKs/WasabiDoc) - has always been and will always be libre and open-source under the [MIT license](https://github.com/zkSNACKs/WalletWasabi/blob/master/LICENSE.md).
 This means that anyone, yes, ANYONE can use Wasabi without permission, for any use case, free of charge.
 
-Wasabi is used by individuals to receive and spend every day payments, to manage their hardware wallet long term hodlings, and to CoinJoin their sats for added privacy.
-There are also entrepreneurs who use Wasabi to defend their customers from spies and to ensure a private business relationship.
-Young kids have Wasabi to stack the sats gifted by grandma, and they learn the importance of hodling.
+Wasabi is used by individuals to receive and spend make everyday payments, to manage their hardware wallet long term hodlings, and to CoinJoin their sats for added privacy.
+Entrepreneurs may use Wasabi to defend their customers from spies and to ensure a private business relationship.
+While kids may use Wasabi to stack the sats gifted by grandma, and they learn the importance of hodling.
 
 :::tip
 Wasabi is a tool for everyone.
@@ -27,7 +27,7 @@ Wasabi is a tool for everyone.
 :::details
 ### What is a CoinJoin?
 
-A mechanism by which multiple participants combine their coins (or UTXOs, to be more precise) into one large transaction with multiple inputs and multiple outputs.
+Coinjoin is a mechanism by which multiple participants combine their coins (or UTXOs, to be more precise) into one large transaction with multiple inputs and multiple outputs.
 An observer cannot determine which output belongs to which input, and neither can the participants themselves.
 This makes it difficult for outside parties to trace where a particular coin originated from and where it was sent to (as opposed to regular bitcoin transactions, where there is usually one sender and one receiver).
 
@@ -41,12 +41,11 @@ See also the [Bitcoin Wiki on CoinJoins](https://en.bitcoin.it/wiki/CoinJoin)
 :::
 
 :::details
-### Do I need to trust Wasabi with my coins?
+### Should I trust Wasabi with my coins?
 
-No, Wasabi's CoinJoin implementation is trustless by design.
-The participants do not need to trust each other or any third party.
+ Since Wasabi's CoinJoin implementation is trustless by design,there is no need for participants to trust each other or a third party.
 Both the sending address (the CoinJoin input) and the receiving address (the CoinJoin output) are controlled by your own private keys.
-The Wasabi server merely coordinates the process of combining the inputs of the participants into one single transaction, but the Wasabi Wallet can neither steal your coins, nor figure out which outputs belong to which inputs (look up “[Chaumian CoinJoin](/using-wasabi/CoinJoin.md)” if you want to know more).
+The Wasabi server merely coordinates the process of combining  each participant's input into one single transaction, but the Wasabi Wallet can neither steal your coins, nor figure out which outputs belong to which inputs (look up “[Chaumian CoinJoin](/using-wasabi/CoinJoin.md)” if you want to know more).
 :::
 
 :::details
@@ -54,9 +53,9 @@ The Wasabi server merely coordinates the process of combining the inputs of the 
 
 This depends on how you handle your outputs after the CoinJoin.
 There are some ways how you can unintentionally undo the mixing by being careless.
-For example, if you send a mixed coin to an already used address, then anyone can see that both coins are controlled by the same entity and more importantly anyone who know that the address is yours know that you own that mixed coin.
-[Address reuse](/why-wasabi/AddressReuse.md) is very bad for your privacy.
-Another deanonymizing scenario happens when you combine mixed outputs with unmixed ones when sending: a third party will be able to make the connection between them as belonging to the same sender.
+For example, if you send a mixed coin to an already used address, then anyone can see that both coins are controlled by the same entity. More importantly, anyone who knows that the address belongs to you knows that you own that mixed coin.
+[Address reuse](/why-wasabi/AddressReuse.md) compromises  your privacy.
+Another deanonymizing scenario occurs  when you combine mixed outputs with unmixed ones when sending: a third party will be able to make the connection between them as belonging to the same sender.
 This is why you need to be careful with [change coins](/using-wasabi/ChangeCoins.md).
 
 The practice of being careful with your post-mix outputs is commonly facilitated through coin control, which is the default way of interacting with the wallet.
@@ -67,7 +66,7 @@ Find out more about coin control in [here](/why-wasabi/Coins.md).
 ### Can I hurt my privacy using Wasabi?
 
 No.
-The worst thing that can happen (through user’s negligence post-mix) is that the level of your privacy stays the same as before the CoinJoin.
+The worst-case scenario  (through user’s negligence post-mix) may be that the level of your privacy stays the same as before the CoinJoin.
 It is crucial to understand that Wasabi is not a fool-proof solution if you neglect to practice coin control after the mixing process.
 :::
 
@@ -76,22 +75,22 @@ It is crucial to understand that Wasabi is not a fool-proof solution if you negl
 
 There are countless reasons why it is the only logical choice to be [bitcoin-only](https://bitcoin-only.com).
 With Bitcoin we have a once in a lifetime opportunity to manifest libre sound money.
-If we succeed, then this might emerge an utmost beautiful agora of sovereign individuals.
+If we succeed, then an utmost beautiful agora of sovereign individuals may emerge .
 If we fail, then this will conjure up the most horrific Orwellian nightmare.
-There is no room for wasted time and energy, this Great Work requires our full attention.
+There is no room for wasted time and energy, this great work requires our full attention.
 Any line of code written to support a random shitcoin takes away scarce developer time to work on real problems.
 :::
 
 :::details
 ### Why is the anonymity set 100?
 
-Sufficient anonymity set is a hard question, that not yet enough research done to answer it definitively.
-The rough consensus among many privacy researchers is that an anonymity set above 50 could be considered sufficient.
+ It is difficult to determine a sufficient anonymity set since enough research hasn’t been conducted to provide a definitive answer.
+However,the rough consensus among many privacy researchers is that an anonymity set above 50 could be considered sufficient.
 Furthermore our calculations have shown that with the liquidity of today’s mixers our mixing rounds would take 1 to 5 minutes with 100 anonymity set and 0.1 BTC fixed denomination.
 :::
 
 :::details
-### Is there a way to check Wasabi uptime status?
+### Is there a way to check Wasabi's uptime status?
 
 Yes, you can check the status of Wasabi-related services and websites (like APIs, Backend, etc.) via [UptimeRobot Wasabi Status Page](https://stats.uptimerobot.com/EZW50TW1Go).
 :::
@@ -99,8 +98,8 @@ Yes, you can check the status of Wasabi-related services and websites (like APIs
 :::details
 ### What software supplies the block filters that Wasabi uses?
 
-The zkSNACKs coordinator supplies the same set of filters to every client.
-This means you rely on the [Wasabi backend](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Backend) providing you valid filters.
+The zkSNACKs coordinator supplies identical filters to every client.
+This means that you rely on the [Wasabi backend](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Backend) to provide  valid filters.
 But because you download the blocks from a random Bitcoin peer-to-peer node - or your own node - the coordinator cannot spy on which blocks you are interested in.
 Furthermore, the random node will only know which block is needed but it won't have any clue which transaction(s) belongs to the wallet.
 :::
