@@ -56,7 +56,7 @@ There are some ways how you can unintentionally undo the mixing by being careles
 For example, if you send a mixed coin to an already used address, then anyone can see that both coins are controlled by the same entity.
 More importantly, anyone who knows that the address belongs to you knows that you own that mixed coin.
 [Address reuse](/why-wasabi/AddressReuse.md) compromises  your privacy.
-Another deanonymizing scenario occurs  when you combine mixed outputs with unmixed ones when sending: a third party will be able to make the connection between them as belonging to the same sender.
+Another deanonymizing scenario occurs when you combine mixed outputs with unmixed ones when sending: a third party will be able to make the connection between them as belonging to the same sender.
 This is why you need to be careful with [change coins](/using-wasabi/ChangeCoins.md).
 
 The practice of being careful with your post-mix outputs is commonly facilitated through coin control, which is the default way of interacting with the wallet.
