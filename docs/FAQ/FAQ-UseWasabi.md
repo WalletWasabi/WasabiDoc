@@ -1,7 +1,7 @@
 ---
 {
   "title": "Use of Wasabi FAQ",
-  "description": "Frequently asked questions about the nuances of how to use Wasabi properly. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
+  "description": " This is the  official Wasabi documentation on frequently asked questions about the nuances of how to  properly use the Wasabi Wallet. Here you can find an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
 }
 ---
 
