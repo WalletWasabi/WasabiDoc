@@ -62,11 +62,13 @@ This contribution game had a total bounty of `0.5 bitcoin`, sponsored by zkSNACK
 
 The bounty ended up being distributed to 13 reviewers, see the full results [here](https://github.com/zkSNACKs/WalletWasabi/issues/3782#issuecomment-670464293).
 
-## Merchandise design
+## Art contribution game
 
-In order to find a beautiful design for Wasabi t-shirts, hoodies and stickers, there was a [contribution game for artists](https://github.com/zkSNACKs/Meta/issues/76).
+In order to find beautiful backgrounds and design for Wasabi t-shirts, hoodies and stickers, there was a [contribution game for artists](https://github.com/zkSNACKs/Meta/issues/76).
 The subject was about privacy in general, Bitcoin and Wasabi specifically.
 There was a total bounty of 0.1 bitcoin.
+
+The bounty ended up being distributed to 3 artists, see the full results and designs [here](https://twitter.com/wasabiwallet/status/1299280601070145537).
 
 ## Education contribution game
 
