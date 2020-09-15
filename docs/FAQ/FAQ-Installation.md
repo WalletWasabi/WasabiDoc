@@ -1,7 +1,7 @@
 ---
 {
   "title": "Installation FAQ",
-  "description": "Frequently asked questions about how to propperly install Wasabi Wallet. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
+  "description": "Frequently asked questions about how to properly install Wasabi Wallet. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
 }
 ---
 
@@ -12,8 +12,8 @@
 :::details
 ### Where can I download Wasabi?
 
-It's always best to download software directly from the official source acknowledged by the developers.
 You can find the recent version of the compiled packages for Linux, Windows and Mac available on the official [wasabiwallet.io](https://wasabiwallet.io).
+It's always best to download software directly from the official source acknowledged by the developers.
 In order to preserve your network level privacy from the very first step on, please consider visiting the Tor onion service [wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion).
 The old versions of the software can be found in the [releases](https://github.com/zksnacks/walletwasabi/releases) of the GitHub repository, [here](https://github.com/zksnacks/walletwasabi) you also find the libre & open source code for when you want to [build it yourself](/using-wasabi/BuildSource.md).
 Please take special care to verify the PGP signatures of zkSNACKs' PGP public key [${zksnacksPublicKeyFingerprint}](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt) over the software packages and code commits.
@@ -43,7 +43,7 @@ This protects you against malicious man in the middle attacks where bad guys giv
 ### How can I verify PGP signatures?
 
 On the [WasabiWallet.io](https://wasabiwallet.io) website you can download the packages of the latest release.
-Make sure that in addition you also download the separate signature `.asc` file.
+Ensure that you also download the separate signature `.asc` file.
 In the terminal, change the directory to the one with the downloaded files, and verify the signature with `gpg --verify Wasabi-${currentVersion}.deb.asc`.
 Everything is valid if it returns `Good signature from zkSNACKs` and that it was signed with the `Primary key fingerprint: ${zksnacksPublicKeyFingerprint}`.
 
@@ -86,7 +86,7 @@ Check out the main documentation for a [step-by-step guide](/using-wasabi/Instal
 
 ![Download Wasabi Wallet for Windows](/DownloadWindows.png "Download Wasabi Wallet for Windows")
 
-The Wasabi package is signed and automatically verified on Windows when you install it.
+The Wasabi package is signed and automatically verified on Windows upon installation.
 
 ![Wasabi Wallet Windows signature verification](/InstallWindowsSignature.png "Wasabi Wallet Windows signature verification")
 
@@ -102,9 +102,9 @@ Check out the main documentation for a [step-by-step guide](/using-wasabi/Instal
 
 ![Download Wasabi Wallet for macOS](/DownloadMac.png "Download Wasabi Wallet for macOS")
 
-The Wasabi package is signed and automatically verified on macOS when you install it.
+The Wasabi package is signed and automatically verified on macOS upon installation.
 
-Optionall, you can still verify the PGP signature of the package with `sudo gpg2 --verify Wasabi-${currentVersion}.dmg.asc` and ensure the software was signed by zkSNACKs' PGP public key [${zksnacksPublicKeyFingerprint}](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt).
+Optionally, you can still verify the PGP signature of the package with `sudo gpg2 --verify Wasabi-${currentVersion}.dmg.asc` and ensure that the software has been signed by zkSNACKs' PGP public key [${zksnacksPublicKeyFingerprint}](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt).
 Now install Wasabi by double-clicking the `.dmg` file.
 Check out the main documentation for a [step-by-step guide](/using-wasabi/InstallPackage.md#mac).
 
@@ -114,7 +114,7 @@ Check out the main documentation for a [step-by-step guide](/using-wasabi/Instal
 :::details
 ### How do I check the current version of Wasabi?
 
-In the GUI go to the top left menu `Help > About`, here you see the current version of your Wasabi.
+In the GUI, go to the top left menu `Help > About`, here you will be able to see the current version of your Wasabi.
 You can also verify the version using the command line by executing `wassabee --version` or `wassabeed --version` if you are on Windows.
 Wasabi is cutting edge software, so it is well-advised to stay up-to-date.
 :::
@@ -123,7 +123,7 @@ Wasabi is cutting edge software, so it is well-advised to stay up-to-date.
 ### How do I know about a new version of Wasabi?
 
 When a new major version [v1.1.X] has been released, you'll see a notification in the bottom left status bar `New Version Available`.
-There are occasional silent releases [v1.1.10.X] which fix issues that were introduced in the major release, and these are not notified in the GUI.
+There are occasional silent releases [v1.1.10.X] which fix issues that were introduced in the major release, and these are not not announced in the GUI.
 The [website](https://wasabiwallet.io) always links to the most recent build of the software.
 It will also be announced on [Twitter](https://twitter.com/wasabiwallet) and [Reddit](https://reddit.com/r/WasabiWallet/).
 :::
@@ -192,8 +192,7 @@ The guide for the deterministic builds can be found in the [WalletWasabi reposit
 ::::details
 ### My antivirus marks Wasabi Wallet as a virus. Am I downloading the right software?
 
-First, make sure you have downloaded Wasabi from the [official website](https://wasabiwallet.io/) or from the [official GitHub repository](https://github.com/zkSNACKs/WalletWasabi/releases).
-After downloading the file, make sure to [verify the PGP signatures](/FAQ/FAQ-Installation.md#how-can-i-verify-pgp-signatures).
+After you have downloaded Wasabi from the [official website](https://wasabiwallet.io/) or from the [official GitHub repository](https://github.com/zkSNACKs/WalletWasabi/releases),make sure you have [verified the PGP signatures](/FAQ/FAQ-Installation.md#how-can-i-verify-pgp-signatures).
 
 If you have downloaded and verified digital signatures and your antivirus continues to report Wasabi as positive, you don't have to worry about anything; it is a false positive.
 
