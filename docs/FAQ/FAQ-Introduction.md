@@ -130,6 +130,7 @@ Also, remember to follow our [blog](https://blog.wasabiwallet.io) to get the lat
 
 :::details
 ### Can the coordinator attack me?
+
 The developers have gone to great lengths to ensure that the coordinator cannot steal funds nor link inputs to outputs. 
 The nature of Wasabi is that you should not need to trust the developers or the Wasabi coordinating server, as you can verify that the code does not leak information to anyone.
 
@@ -180,7 +181,8 @@ Users who aren't programmers also benefit from open-source software, since they 
 Other people like open-source software because it helps them become better programmers.
 :::
 
-Open-source code is publicly accessible.Students can easily study it as they learn to make better software.
+Open-source code is publicly accessible.
+Students can easily study it as they learn to make better software.
 Students can also share their work with others, inviting comments and critique, as they develop their skills.
 When people discover mistakes in programs' source code, they can share those mistakes with others to help them avoid making those same mistakes themselves.
 
@@ -188,14 +190,16 @@ When people discover mistakes in programs' source code, they can share those mis
 Some people prefer open-source software because they consider it more secure and stable than proprietary software.
 :::
 
-Anyone can view and modify open-source software. Other users may spot and correct errors or omissions that a program's original authors might have missed.
+Anyone can view and modify open-source software.
+Other users may spot and correct errors or omissions that a program's original authors might have missed.
 And because so many programmers can work on a piece of open-source software without asking for permission from original authors, they can fix, update, and upgrade open-source software more quickly than they can proprietary software.
 
 :::tip Stability
 Many users prefer open-source software to proprietary software for important, long-term projects.
 :::
 
-Programmers publicly distribute the source code for open-source software. Users relying on that software for critical tasks can be sure their tools won't disappear or fall into disrepair if their original creators stop working on them.
+Programmers publicly distribute the source code for open-source software.
+Users relying on that software for critical tasks can be sure their tools won't disappear or fall into disrepair if their original creators stop working on them.
 Additionally, open-source software tends to both incorporate and operate according to open standards.
 ::::
 
@@ -205,7 +209,8 @@ Additionally, open-source software tends to both incorporate and operate accordi
 While fungibility is an essential property of good money, Bitcoin has its limitations in this area.
 Numerous fungibility improvements have been proposed; however, none of them have addressed the privacy issues in full.
 ZeroLink is designed so that no participant or outside observer can spy on the user.
-The scope of ZeroLink is not limited to a single transaction, it extends to transaction chains and it addresses various network layer deanonymizations. However, its scope is limited to Bitcoin's first layer.
+The scope of ZeroLink is not limited to a single transaction, it extends to transaction chains and it addresses various network layer deanonymizations.
+However, its scope is limited to Bitcoin's first layer.
 Even if an off-chain anonymity solution gets widely adopted, ultimately the entrance and exit transactions will always be settled on-chain.
 Therefore, there will always be need for on-chain privacy.
 
