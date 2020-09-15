@@ -123,7 +123,7 @@ Wasabi is cutting edge software, so it is well-advised to stay up-to-date.
 ### How do I know about a new version of Wasabi?
 
 When a new major version [v1.1.X] has been released, you'll see a notification in the bottom left status bar `New Version Available`.
-There are occasional silent releases [v1.1.10.X] which fix issues that were introduced in the major release, and these are not not announced in the GUI.
+There are occasional silent releases like [v1.1.10.X] which fix issues that were introduced in a major release, and these are not announced in the GUI.
 The [website](https://wasabiwallet.io) always links to the most recent build of the software.
 It will also be announced on [Twitter](https://twitter.com/wasabiwallet) and [Reddit](https://reddit.com/r/WasabiWallet/).
 :::
@@ -192,7 +192,7 @@ The guide for the deterministic builds can be found in the [WalletWasabi reposit
 ::::details
 ### My antivirus marks Wasabi Wallet as a virus. Am I downloading the right software?
 
-After you have downloaded Wasabi from the [official website](https://wasabiwallet.io/) or from the [official GitHub repository](https://github.com/zkSNACKs/WalletWasabi/releases),make sure you have [verified the PGP signatures](/FAQ/FAQ-Installation.md#how-can-i-verify-pgp-signatures).
+After you have downloaded Wasabi from the [official website](https://wasabiwallet.io/) or from the [official GitHub repository](https://github.com/zkSNACKs/WalletWasabi/releases), make sure you have [verified the PGP signatures](/FAQ/FAQ-Installation.md#how-can-i-verify-pgp-signatures).
 
 If you have downloaded and verified digital signatures and your antivirus continues to report Wasabi as positive, you don't have to worry about anything; it is a false positive.
 
