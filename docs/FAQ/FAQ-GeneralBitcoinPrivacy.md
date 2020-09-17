@@ -194,7 +194,7 @@ You can also configure many cloud storage providers in this way.
 There are two main reasons: user experience and privacy.
 
 If a user closes Wasabi and then starts it again, he's already connected to Tor and he does not need to build a new Tor circuit.
-This means that the next Wasabi startup will be much faster, because the Tor circuit is already established.
+This means that Wasabi's startup will be much faster, because the Tor circuit is already established.
 
 Regarding the privacy, this is done to avoid time correlation attacks when using Wasabi Wallet.
 In fact, if a user creates a new Tor circuit every time he opens Wasabi Wallet, he would send a series of information to the Bitcoin network, which could allow a correlation and deanonymization of the user himself.
