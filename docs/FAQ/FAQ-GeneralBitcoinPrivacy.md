@@ -173,18 +173,6 @@ You can read more about CoinJoin Sudoku [here](https://www.coinjoinsudoku.com/ad
 ## The Privacy of Tor
 
 :::details
-### Why does Tor process keep running after closing Wasabi Wallet?
-
-There are two main reasons: user experience and privacy.
-
-If a user closes Wasabi and then starts it again, he's already connected to Tor and he does not need to build a new Tor circuit.
-This means that the next Wasabi startup will be much faster, because the Tor circuit is already established.
-
-Regarding the privacy, this is done to avoid time correlation attacks when using Wasabi Wallet.
-In fact, if a user creates a new Tor circuit every time he opens Wasabi Wallet, he would send a series of information to the Bitcoin network, which could allow a correlation and deanonymization of the user himself.
-:::
-
-:::details
 ### How does Tor protect my network-level privacy?
 
 When you make a Bitcoin transaction, you are essentially creating a message on your phone or computer and sending it to the Bitcoin network.
@@ -198,6 +186,18 @@ Route everything through Tor by default.
 
 It is also good practice to route your chats through the Tor network.
 You can also configure many cloud storage providers in this way.
+:::
+
+:::details
+### Why does Tor process keep running after closing Wasabi Wallet?
+
+There are two main reasons: user experience and privacy.
+
+If a user closes Wasabi and then starts it again, he's already connected to Tor and he does not need to build a new Tor circuit.
+This means that the next Wasabi startup will be much faster, because the Tor circuit is already established.
+
+Regarding the privacy, this is done to avoid time correlation attacks when using Wasabi Wallet.
+In fact, if a user creates a new Tor circuit every time he opens Wasabi Wallet, he would send a series of information to the Bitcoin network, which could allow a correlation and deanonymization of the user himself.
 :::
 
 ::::details
