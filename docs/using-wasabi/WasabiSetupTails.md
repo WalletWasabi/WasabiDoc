@@ -45,7 +45,7 @@ You can now save your `Wasabi-${currentVersion}.deb` into the persistent storage
 
 ```sh
 /Persistent
-|__ /bitcoin-0.18.1       # Bitcoin Core launcher folder
+|__ /bitcoin-${bitcoinCoreVersion}       # Bitcoin Core launcher folder
 |__ /Bitcoin              # Bitcoin Core data folder
 |__ /Wasabi-${currentVersion}.deb  # Wasabi installer
 ```
@@ -60,7 +60,7 @@ Create a directory in your persistent with the same hierarchical structure, like
 
 ```sh
 /Persistent
-|__ /bitcoin-0.18.1       # Bitcoin Core launcher folder
+|__ /bitcoin-${bitcoinCoreVersion}       # Bitcoin Core launcher folder
 |__ /Bitcoin              # Bitcoin Core data folder
 |__ /Wasabi-${currentVersion}.deb  # Wasabi installer
 |__ /.walletwasabi
@@ -98,7 +98,7 @@ After the first time, you save a Wasabi session, your persistent storage will lo
 
 ```sh
 /Persistent
-|__ /bitcoin-0.18.1        # Bitcoin Core launcher folder
+|__ /bitcoin-${bitcoinCoreVersion}        # Bitcoin Core launcher folder
 |__ /Bitcoin               # Bitcoin Core data folder
 |__ /Wasabi-${currentVersion}.deb   # Wasabi installer
 |__ /.walletwasabi
@@ -115,7 +115,7 @@ You can save multiple copies of `.walletwasabi` in your persistent, each with di
 
 ```sh
 /Persistent
-|__ /bitcoin-0.18.1            	   # Bitcoin Core launcher folder
+|__ /bitcoin-${bitcoinCoreVersion}            	   # Bitcoin Core launcher folder
 |__ /Bitcoin                       # Bitcoin Core data folder
 |__ /Wasabi                        # General Wasabi folder
     |__ /Wasabi-${currentVersion}.deb       # Wasabi installer
