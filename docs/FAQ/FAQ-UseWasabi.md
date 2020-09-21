@@ -1412,7 +1412,7 @@ Please note that Wasabi is designed for the dark theme, and some color schemes m
 ### How can I connect to a different coordinator?
 
 To reach the coordinator you need their hidden service .onion address.
-Open the `Conf.json` file through the top menu bar.
+Open the `Config.json` file through the top menu bar.
 
 ![Wasabi Wallet File Options](/MenuFileOpen.png "Wasabi Wallet File Options")
 
