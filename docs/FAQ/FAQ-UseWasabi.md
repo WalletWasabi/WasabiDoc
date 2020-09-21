@@ -1408,6 +1408,17 @@ Please note that Wasabi is designed for the dark theme, and some color schemes m
 ![Wasabi Wallet white theme](/WhiteMode.png "Wasabi Wallet white theme")
 :::
 
+:::details
+### How can I connect to a different coordinator?
+
+To reach the coordinator you need their hidden service .onion address.
+Open the `Conf.json`  file through the top menu bar.
+
+![Wasabi Wallet File Options](/MenuFileOpen.png "Wasabi Wallet File Options")
+
+Change the relevant line 3 `"MainNetBackendUriV3": "<coordinator hidden service>",` and line 4 `"TestNetBackendUriV3": "<coordinator hidden service>",`. 
+:::
+
 ## Coin Control Best Practices
 
 @[youtube](iyJ81JRvLQk)
