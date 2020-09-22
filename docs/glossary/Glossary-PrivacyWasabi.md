@@ -1,7 +1,7 @@
 ---
 {
   "title": "Privacy and Wasabi",
-  "description": "Explanations of common words regarding Bitcoin privacy. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
+  "description": "Explanations of common words regarding Wasabi and Bitcoin privacy. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
 }
 ---
 
