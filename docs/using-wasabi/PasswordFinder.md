@@ -33,6 +33,8 @@ cd C:\Program Files\WasabiWallet
 wassabeed.exe findpassword --wallet:WalletName
 ```
 
+Make sure that the name of your wallet doesn't contain any space character.
+
 ### Linux
 
 Use the `wassabee` command.
