@@ -222,7 +222,7 @@ module.exports = {
           children: [
             "/using-wasabi/Daemon.md",
             "/using-wasabi/RPC.md",
-            "/using-wasabi/LurkingWifeMode.md",
+            "/using-wasabi/PrivacyMode.md",
             "/using-wasabi/PayJoin.md",
             "/using-wasabi/Testnet.md",
             "/using-wasabi/LockScreen.md",

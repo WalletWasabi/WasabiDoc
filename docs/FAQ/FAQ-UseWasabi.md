@@ -1391,10 +1391,10 @@ Alternatively, you can find the logs inside your [Wasabi data folder](/FAQ/FAQ-U
 :::
 
 :::details
-### How to activate/deactivate Lurking Wife Mode?
+### How to activate/deactivate Privacy Mode?
 
-You can activate/deactivate Lurking Wife Mode from `Settings` or by clicking the eye icon on the `Wallet Explorer` header in the top right corner.
-You can read more about Lurking Wife Mode [here](/using-wasabi/LurkingWifeMode.md).
+You can activate/deactivate Privacy Mode from `Settings` or by clicking the eye icon on the `Wallet Explorer` header in the top right corner.
+You can read more about Privacy Mode [here](/using-wasabi/PrivacyMode.md).
 :::
 
 :::details
