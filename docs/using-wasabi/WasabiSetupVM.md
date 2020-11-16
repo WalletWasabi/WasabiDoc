@@ -67,7 +67,7 @@ Update the `template-wasabi`.
 [user@template-wasabi ~]$ sudo apt dist-upgrade
 ```
 
-Install [.NET Core ${dotnetVersion} SDK](https://www.microsoft.com/net/download) for "Building Apps" in `template-wasabi`.
+Install [.NET ${dotnetVersion} SDK](https://www.microsoft.com/net/download) for "Building Apps" in `template-wasabi`.
 
 :::tip Optional for privacy
 You can disable .NET's telemetry, which is sending some usage information to Microsoft:
@@ -78,7 +78,7 @@ You can disable .NET's telemetry, which is sending some usage information to Mic
 
 :::
 
-If you need to update .NET Core, then do it in this VM.
+If you need to update .NET, then do it in this VM.
 Now shut down `template-wasabi`.
 
 ```sh
@@ -192,7 +192,7 @@ Finally, you can add any other tools that you prefer, such as Visual Studio / Vi
 
 Start your template VM and open a terminal window.
 
-Install [.NET Core ${dotnetVersion} SDK](https://www.microsoft.com/net/download) for "Building Apps".
+Install [.NET ${dotnetVersion} SDK](https://www.microsoft.com/net/download) for "Building Apps".
 
 :::tip Optional for privacy
 You can disable .NET's telemetry, which is sending some usage information to Microsoft.
@@ -204,7 +204,7 @@ your@vm:~$ export DOTNET_CLI_TELEMETRY_OPTOUT=1
 
 :::
 
-If you need to update .NET Core, do it in this VM.
+If you need to update .NET, do it in this VM.
 
 Now, shut down your template VM.
 
