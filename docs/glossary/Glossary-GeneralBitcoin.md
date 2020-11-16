@@ -71,7 +71,7 @@ Because of its uniquely verifiable and global consensus, it is a revolutionary s
 :::details
 ### Change
 
-In a spending transaction where the provided input coins are larger than the value sent to the destination address, then the leftover change is sent to a new address of the same wallet.
+In a transaction where the provided input coins are larger than the value sent to the destination address, then the leftover change is sent to a new address of the same wallet.
 Read more: [Change coins](/using-wasabi/ChangeCoins.md)
 :::
 
