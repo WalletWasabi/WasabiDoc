@@ -176,7 +176,7 @@ There's no difference in the code, the same binaries are being delivered in diff
 
 If you cannot wait until the next release, and you want to experience the most cutting-edge version of Wasabi, then you can [build the source code](/using-wasabi/BuildSource.md).
 
-The only two required tools are [Git](https://git-scm.com/downloads) and [.NET Core ${dotnetVersion} SDK](https://www.microsoft.com/net/download) for "Building Apps".
+The only two required tools are [Git](https://git-scm.com/downloads) and [.NET ${dotnetVersion} SDK](https://www.microsoft.com/net/download) for "Building Apps".
 You can download every line of the Wasabi code by `git clone https://github.com/zkSNACKs/WalletWasabi.git`, this will create a new directory called `WalletWasabi`.
 In order to build and run the Wallet software, change directory to `cd WalletWasabi/WalletWasabi.Gui`.
 Wasabi is written in C# with the .NET framework, and it is very easy to run it.

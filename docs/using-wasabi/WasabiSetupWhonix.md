@@ -158,7 +158,7 @@ Then, make sure that the VM is updated.
 [user@whonix-template ~]$ sudo apt-get dist-upgrade
 ```
 
-Install [.NET Core ${dotnetVersion} SDK](https://www.microsoft.com/net/download) for "Building Apps" in the `whonix-template`.
+Install [.NET ${dotnetVersion} SDK](https://www.microsoft.com/net/download) for "Building Apps" in the `whonix-template`.
 
 :::tip Optional for privacy
 To disable .NET's telemetry, which sends some usage information to Microsoft:
@@ -169,7 +169,7 @@ To disable .NET's telemetry, which sends some usage information to Microsoft:
 
 :::
 
-In the future, when it is necessary to update .NET Core, then do it in this VM.
+In the future, when it is necessary to update .NET, then do it in this VM.
 
 Now, shut down this VM.
 
