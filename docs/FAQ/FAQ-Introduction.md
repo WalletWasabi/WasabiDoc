@@ -17,7 +17,7 @@ This means that anyone, yes, ANYONE can use Wasabi without permission, for any u
 
 Wasabi is used by individuals to receive and spend make everyday payments, to manage their hardware wallet long term hodlings, and to CoinJoin their sats for added privacy.
 Entrepreneurs may use Wasabi to defend their customers from spies and to ensure a private business relationship.
-While kids may use Wasabi to stack the sats gifted by grandma, and they learn the importance of hodling.
+While kids may use Wasabi to stack the sats gifted by grandma, and learn the importance of hodling.
 
 :::tip
 Wasabi is a tool for everyone.
