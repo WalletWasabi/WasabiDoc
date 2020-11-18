@@ -16,7 +16,7 @@
 1. Load a wallet and open the `Send` tab.
 
 2. Request from the receiver a [BIP21 Bitcoin URI](https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki) with the flag `pj=` and paste it into the address field of the `Send` tab.
-(E.g. `bitcoin:tb1q0382a3m2jzvyk5lkea5h5jcht88xa6l0jufgwx?amount=0.00010727&pj=https://demo.payjoin.kukks.org/BTC/pj`)
+(E.g. `bitcoin:tb1q0382a3m2jzvyk5lkea5h5jcht88xa6l0jufgwx?amount=0.00010727&pj=https://payjoin.test.kukks.org/BTC/pj`)
 
 3. Select the coins you want to send.
 
