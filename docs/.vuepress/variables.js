@@ -1,6 +1,6 @@
 // Add custom variables here:
 const variables = {
-  currentVersion: '1.1.12.2',
+  currentVersion: '1.1.12.3',
   dotnetVersion: '5.0',
   zksnacksPublicKeyFingerprint: '6FB3 872B 5D42 292F 5992 0797 8563 4832 8949 861E'
 }
