@@ -32,8 +32,6 @@ A step by step guide to all the aspects, starting at beginner level, all the way
 
 **How to contribute to Wasabi.**
 
-All the knowledge needed to give new contributors a swift start on their path to black-belt of the Dojo.
-
 ### [Wasabi FAQ](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/FAQ/)
 
 **Frequently asked questions.**
