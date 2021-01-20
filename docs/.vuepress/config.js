@@ -240,8 +240,7 @@ module.exports = {
           children: [
             "/building-wasabi/TechnicalOverview.md",
             "/building-wasabi/ContributionChecklist.md",
-            "/building-wasabi/ContributionGame.md",
-            "/building-wasabi/Dojo.md"
+            "/building-wasabi/ContributionGame.md"
           ]
         },
         {

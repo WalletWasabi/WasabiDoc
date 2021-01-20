@@ -20,7 +20,6 @@ You will also find some of the issues they are working on now, the research for 
 - [Technical Overview of Wasabi Wallet](/building-wasabi/TechnicalOverview.md)
 - [Contribution Checklist](/building-wasabi/ContributionChecklist.md)
 - [Contribution Game](/building-wasabi/ContributionGame.md)
-- [Dojo](/building-wasabi/Dojo.md)
 
 ### Advanced
 
