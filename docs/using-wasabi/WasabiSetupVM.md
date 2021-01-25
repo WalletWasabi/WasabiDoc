@@ -192,7 +192,7 @@ Finally, you can add any other tools that you prefer, such as Visual Studio / Vi
 
 Start your template VM and open a terminal window.
 
-Install [.NET ${dotnetVersion} SDK](https://dotnet.microsoft.com/download/dotnet/5.0) for "Build Apps".
+Install [.NET ${dotnetVersion} SDK](https://dotnet.microsoft.com/download) for "Build apps".
 
 :::tip Optional for privacy
 You can disable .NET's telemetry, which is sending some usage information to Microsoft.
