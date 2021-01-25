@@ -188,6 +188,7 @@ You can update the master branch with `git pull`.
 ### How can I verify the deterministic build?
 
 The guide for the deterministic builds can be found in the [WalletWasabi repository](https://github.com/zkSNACKs/WalletWasabi/blob/master/WalletWasabi.Documentation/Guides/DeterministicBuildGuide.md).
+:::
 
 ::::details
 ### My antivirus marks Wasabi Wallet as a virus. Am I downloading the right software?
