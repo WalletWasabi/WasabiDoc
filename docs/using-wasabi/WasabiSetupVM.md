@@ -67,7 +67,7 @@ Update the `template-wasabi`.
 [user@template-wasabi ~]$ sudo apt dist-upgrade
 ```
 
-Install [.NET ${dotnetVersion} SDK](https://dotnet.microsoft.com/download/dotnet/5.0) for "Build Apps" in `template-wasabi`.
+Install [.NET ${dotnetVersion} SDK](https://dotnet.microsoft.com/download) for "Build apps" in `template-wasabi`.
 
 :::tip Optional for privacy
 You can disable .NET's telemetry, which is sending some usage information to Microsoft:
