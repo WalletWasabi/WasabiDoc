@@ -158,7 +158,7 @@ Then, make sure that the VM is updated.
 [user@whonix-template ~]$ sudo apt-get dist-upgrade
 ```
 
-Install [.NET ${dotnetVersion} SDK](https://dotnet.microsoft.com/download/dotnet/5.0) for "Build Apps" in the `whonix-template`.
+Install [.NET ${dotnetVersion} SDK](https://dotnet.microsoft.com/download) for "Build apps" in the `whonix-template`.
 
 :::tip Optional for privacy
 To disable .NET's telemetry, which sends some usage information to Microsoft:
