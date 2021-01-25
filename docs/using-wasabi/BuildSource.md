@@ -19,7 +19,7 @@ Be aware that these branches might be unstable and can include bugs that lead to
 ## Get The Requirements
 
 1. Install [Git](https://git-scm.com/downloads)
-2. Install [.NET ${dotnetVersion} SDK](https://www.microsoft.com/net/download) for "Building Apps"
+2. Install [.NET ${dotnetVersion} SDK](https://dotnet.microsoft.com/download) for "Build apps"
 
 	:::tip Optional for privacy
 	You can disable .NET's telemetry, which is sending some usage information to Microsoft, by typing:

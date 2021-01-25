@@ -67,7 +67,7 @@ Update the `template-wasabi`.
 [user@template-wasabi ~]$ sudo apt dist-upgrade
 ```
 
-Install [.NET ${dotnetVersion} SDK](https://www.microsoft.com/net/download) for "Building Apps" in `template-wasabi`.
+Install [.NET ${dotnetVersion} SDK](https://dotnet.microsoft.com/download) for "Build apps" in `template-wasabi`.
 
 :::tip Optional for privacy
 You can disable .NET's telemetry, which is sending some usage information to Microsoft:
@@ -192,7 +192,7 @@ Finally, you can add any other tools that you prefer, such as Visual Studio / Vi
 
 Start your template VM and open a terminal window.
 
-Install [.NET ${dotnetVersion} SDK](https://www.microsoft.com/net/download) for "Building Apps".
+Install [.NET ${dotnetVersion} SDK](https://dotnet.microsoft.com/download) for "Build apps".
 
 :::tip Optional for privacy
 You can disable .NET's telemetry, which is sending some usage information to Microsoft.
