@@ -124,7 +124,7 @@ To flesh our your argument, please consider alternatives and different approache
 You are already on the right track by first checking [this documentation](https://docs.wasabiwallet.io) for the knowledge you are seeking.
 It's likely that you are not the first person who has an issue or a question, and hopefully someone has curated the answer in here already.
 You can use the search function in the top navbar to look for a specific topic, and the sidebar menu as a table of content.
-You can also use our [subreddit](https://www.reddit.com/r/WasabiWallet/) to find solutions to different issues and to ask questions if necessary.
+You can also use our [GitHub Discussions](https://github.com/zkSNACKs/WalletWasabi/discussions/5185) to find solutions to different issues and to ask questions if necessary.
 If your trouble is specific to the code, then it might also be suitable to check the existing [GitHub issues](https://github.com/zkSNACKs/WalletWasabi/issues/) and open a new one.
 :::
 
