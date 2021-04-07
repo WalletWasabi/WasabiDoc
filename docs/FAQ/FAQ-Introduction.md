@@ -64,14 +64,6 @@ Find out more about coin control in [here](/why-wasabi/Coins.md).
 :::
 
 :::details
-### Can I hurt my privacy using Wasabi?
-
-No.
-The worst-case scenario (through user’s negligence post-mix) may be that the level of your privacy stays the same as before the CoinJoin.
-It is crucial to understand that Wasabi is not a fool-proof solution if you neglect to practice coin control after the mixing process.
-:::
-
-:::details
 ### Why is Wasabi Bitcoin-only?
 
 There are countless reasons why it is the only logical choice to be [bitcoin-only](https://bitcoin-only.com).
