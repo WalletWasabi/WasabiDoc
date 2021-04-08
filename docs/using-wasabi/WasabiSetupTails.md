@@ -185,7 +185,7 @@ done
 wassabee </dev/null &>/dev/null &
 ```
 
-## Hardware Wallet tutorial (udev rules)
+## Using Hardware Wallet with Tails (udev rules)
 
 On Linux, you need to create a set of `udev` rules to allow hardware wallet access.
 
@@ -200,38 +200,7 @@ mkdir -p /live/persistence/TailsData_unlocked/walletwasabi
 chown amnesia:amnesia /live/persistence/TailsData_unlocked/walletwasabi
 ```
 
-### ColdCard Wallet
+You will also need to configure `udev` rules according to your Hardware Wallet. Instructions can be found [here](https://github.com/bitcoin-core/HWI/blob/master/hwilib/udev/README.md)
 
-If you want to use a ColdCard device, you need to configure the udev rules:
-
-```
-mkdir -p /live/persistence/TailsData_unlocked/udev.rules.d
-wget -P /live/persistence/TailsData_unlocked/udev.rules.d https://raw.githubusercontent.com/Coldcard/ckcc-protocol/master/51-coinkite.rules
-echo -e "/etc/udev/rules.d\tsource=udev.rules.d,link" >> /live/persistence/TailsData_unlocked/persistence.conf
-```
-
-### Ledger devices
-
-If you want to use a Ledger device, you need to configure the udev rules:
-
-```
-mkdir -p /live/persistence/TailsData_unlocked/udev.rules.d
-wget -P /live/persistence/TailsData_unlocked/udev.rules.d https://raw.githubusercontent.com/LedgerHQ/udev-rules/master/20-hw1.rules
-echo -e "/etc/udev/rules.d\tsource=udev.rules.d,link" >> /live/persistence/TailsData_unlocked/persistence.conf
-```
-
-### Trezor devices
-
-If you want to use a Trezor device, you need to configure the udev rules:
-
-```
-mkdir -p /live/persistence/TailsData_unlocked/udev.rules.d
-wget -P /live/persistence/TailsData_unlocked/udev.rules.d https://raw.githubusercontent.com/trezor/trezor-common/master/udev/51-trezor.rules
-echo -e "/etc/udev/rules.d\tsource=udev.rules.d,link" >> /live/persistence/TailsData_unlocked/persistence.conf
-```
-
-:::tip
-Since [v4.3](https://tails.boum.org/news/version_4.3/index.en.html), Tails is shipped with the `trezor` package, which provides a command line tool to use a Trezor hardware wallet.
-:::
 
 Now just reboot and enjoy!
