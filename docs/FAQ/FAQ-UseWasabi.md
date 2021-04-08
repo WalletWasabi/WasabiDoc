@@ -1516,16 +1516,7 @@ It ultimately got fixed in [v1.1.10](https://github.com/zkSNACKs/WalletWasabi/re
 :::details
 ### How can I use Hardware Wallets on Linux (udev rules)?
 
-On Tails, you need to create a set of `udev` rules to allow hardware wallet access.
-Since Wasabi keeps the configuration files on `$HOME` it's necessary to change persistence in order to keep them.
-So, configure persistence, download Wasabi and unpack it inside `Persistent` folder then reboot tails with `root` support and launch the following commands from the Terminal:
+On Linux, you need to create a set of `udev rules` for the hardware wallet to be reachable.
 
-```
-sudo -i
-echo -e "/home/amnesia/.walletwasabi\tsource=walletwasabi" >> /live/persistence/TailsData_unlocked/persistence.conf
-mkdir -p /live/persistence/TailsData_unlocked/walletwasabi
-chown amnesia:amnesia /live/persistence/TailsData_unlocked/walletwasabi
-```
-
-You also need to configure `udev` rules according to your Hardware Wallet. Instructions can be found [here](https://github.com/bitcoin-core/HWI/blob/master/hwilib/udev/README.md)
+Udev rules instructions can be found [here](https://github.com/bitcoin-core/HWI/blob/master/hwilib/udev/README.md).
 :::
