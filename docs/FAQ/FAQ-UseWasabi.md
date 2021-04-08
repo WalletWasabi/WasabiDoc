@@ -1285,6 +1285,14 @@ After connecting the Trezor T to your computer and upon trying to load your wall
 Wasabi wallet will now load this passphrase protected wallet.
 :::
 
+:::details
+### How can I use Hardware Wallets on Linux (udev rules)?
+
+On Linux, you need to create a set of `udev rules` for the hardware wallet to be reachable.
+
+Udev rules instructions can be found [here](https://github.com/bitcoin-core/HWI/blob/master/hwilib/udev/README.md).
+:::
+
 ## History
 
 :::details
@@ -1511,12 +1519,4 @@ This issue was introduced to Wasabi with the [v1.1.4 release](https://github.com
 It was [thought to be fixed](https://reddit.com/r/WasabiWallet/comments/c2hco8/announcement_spent_coin_and_lost_unconfirmed/) in June by adding an autocorrection mechanism, but some users were still reporting this issue.
 
 It ultimately got fixed in [v1.1.10](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v1.1.10) by introducing an upgraded version of [BIP 158 block filters](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki) and changing the wallet cache architecture.
-:::
-
-:::details
-### How can I use Hardware Wallets on Linux (udev rules)?
-
-On Linux, you need to create a set of `udev rules` for the hardware wallet to be reachable.
-
-Udev rules instructions can be found [here](https://github.com/bitcoin-core/HWI/blob/master/hwilib/udev/README.md).
 :::
