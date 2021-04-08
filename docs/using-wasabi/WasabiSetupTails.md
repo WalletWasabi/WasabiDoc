@@ -184,5 +184,3 @@ done
 
 wassabee </dev/null &>/dev/null &
 ```
-
-Now just reboot and enjoy!
