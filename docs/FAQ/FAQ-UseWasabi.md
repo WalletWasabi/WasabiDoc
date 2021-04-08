@@ -1514,7 +1514,7 @@ It ultimately got fixed in [v1.1.10](https://github.com/zkSNACKs/WalletWasabi/re
 :::
 
 :::details
-### How can I use Hardware Wallet in Tails?
+### How can I use Hardware Wallets on Linux (udev rules)?
 
 On Tails, you need to create a set of `udev` rules to allow hardware wallet access.
 Since Wasabi keeps the configuration files on `$HOME` it's necessary to change persistence in order to keep them.
