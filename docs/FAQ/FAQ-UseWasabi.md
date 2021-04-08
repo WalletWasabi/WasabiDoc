@@ -1285,6 +1285,14 @@ After connecting the Trezor T to your computer and upon trying to load your wall
 Wasabi wallet will now load this passphrase protected wallet.
 :::
 
+:::details
+### How can I use Hardware Wallets on Linux (udev rules)?
+
+On Linux, you need to create a set of `udev rules` for the hardware wallet to be reachable.
+
+Udev rules instructions can be found [here](https://github.com/bitcoin-core/HWI/blob/master/hwilib/udev/README.md).
+:::
+
 ## History
 
 :::details
