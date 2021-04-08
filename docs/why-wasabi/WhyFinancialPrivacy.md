@@ -64,7 +64,7 @@ Privacy in traditional banking is guaranteed by the institutions that make up th
 They (try to) ensure that your bank balance stays a secret.
 This puts them in a powerful position, where only they have complete oversight as to what is going on.
 
-In the Bitcoin ecosystem, everyone can see the history of every account balance, but they cannot see who controls an account.
+In the Bitcoin ecosystem, everyone can see the history and balance of every address, but they cannot necessarily see who controls it.
 All addresses and transactions are recorded in Bitcoin's publicly distributed database, the blockchain.
 The addresses do not have names or IP addresses attached to them, so it is not always possible to know which transaction belongs to which individual.
 
