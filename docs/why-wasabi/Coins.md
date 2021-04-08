@@ -34,7 +34,7 @@ This means that coin consolidation can lead to an overall decrease in privacy, e
 
 Contrary to many other wallets, Wasabi does not show only the total value of bitcoin in the wallet.
 Rather, in both the `Send` and `CoinJoin` tabs there is a list of all the individual UTXOs.
-Because Wasabi requires users to label every receiving address, the history of each coin is clear at first glance.
+Because Wasabi requires users to label every receiving address, the history of each coin is clear for them at first glance.
 In order to spend a specific coin, it must be manually selected, which prevents the wrong coin from being included in the transaction.
 
 ## Heuristics identifying change
@@ -72,7 +72,7 @@ A [0.1293 0112 btc]  -->  B [0.0500 0000 btc]
 ```
 
 :::tip
-In order to protect your privacy, add (or remove when possible) a couple of sats from the payment amount to obfuscate your change.
+In order to protect your privacy, add or remove (when possible) a couple of sats from the payment amount to obfuscate which output is your change and which one is the payment.
 :::
 
 ### CoinJoin
@@ -80,7 +80,7 @@ In order to protect your privacy, add (or remove when possible) a couple of sats
 A CoinJoin has many unequal value inputs, and creates several equal value anonset outputs, as well as unequal value outputs, making it clear that these are the change outputs.
 
 :::tip
-This is why the CoinJoin change has only 1 anonset <img src="/ShieldRed.png" alt="Wasabi Wallet red shield anonymity set" title="Wasabi Wallet red shield anonymity set" class="shield" />.
+This is why the CoinJoin change has only 1 [anonset](https://docs.wasabiwallet.io/glossary/Glossary-PrivacyWasabi.html) <img src="/ShieldRed.png" alt="Wasabi Wallet red shield anonymity set" title="Wasabi Wallet red shield anonymity set" class="shield" />.
 :::
 
 ```
@@ -109,5 +109,5 @@ A [1.3576 1516 btc]  -->  B [1.0135 6515 btc]
 ```
 
 :::tip
-Because of this privacy leak, Wasabi does not utilize RBF fee bumping.
+Because of this privacy leak, Wasabi does not utilize RBF fee bumping, even though it signals it to mimic other wallets fingerprint.
 :::
