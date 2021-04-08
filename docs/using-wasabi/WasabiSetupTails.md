@@ -234,5 +234,4 @@ echo -e "/etc/udev/rules.d\tsource=udev.rules.d,link" >> /live/persistence/Tails
 Since [v4.3](https://tails.boum.org/news/version_4.3/index.en.html), Tails is shipped with the `trezor` package, which provides a command line tool to use a Trezor hardware wallet.
 :::
 
-
 Now just reboot and enjoy!
