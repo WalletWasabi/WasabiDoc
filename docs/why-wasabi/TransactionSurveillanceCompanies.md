@@ -33,7 +33,7 @@ The companies have been known to collect [BIP 37](https://github.com/bitcoin/bip
 They almost-certainly also run many Electrum servers which can spy on any Electrum wallet that connects to them.
 
 ### Transaction broadcasting
-Surveillance companies have been known to sybil attack the bitcoin network in order to try to find the source IP addresses of unconfirmed transactions.
+Surveillance companies have been known to sybil- and eclipse attack the bitcoin network, and specific nodes, in order to try to find the source IP addresses of unconfirmed transactions.
 
 ## Criticisms
 
