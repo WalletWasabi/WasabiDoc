@@ -1,4 +1,8 @@
-# Wasabi Documentation
+<p align="center">
+  <a href="https://docs.wasabiwallet.io">
+    <img src="https://user-images.githubusercontent.com/51679301/114181477-39209b80-994a-11eb-80c8-611c034b1252.png"/>
+  </a>
+</p>
 
 [Wasabi Wallet](https://wasabiwallet.io) is an open-source, non-custodial, privacy focused Bitcoin wallet for desktop. It implements a trustless privacy technique, called [Chaumian CoinJoin](https://github.com/nopara73/ZeroLink/).
 
@@ -10,39 +14,24 @@ If you have a question regarding the documentation, please [open an issue](https
 If you have an answer to a question, please [open a pull request](https://github.com/zkSNACKs/WasabiDoc/pulls).
 For more details on how to contribute, see the [contribution checklist](https://docs.wasabiwallet.io/building-wasabi/ContributionChecklist.html) or the [to-do](https://docs.wasabiwallet.io/building-wasabi/ToDo.html) list.
 
-If you have a bug regarding the software specifically, please [open an issue](https://github.com/zkSNACKs/WalletWasabi/issues/new/choose) in Wasabi Wallet's [main repository](https://github.com/zkSNACKs/WalletWasabi).
+If you need help regarding the software specifically, please check out [Discussions](https://github.com/zkSNACKs/WalletWasabi/discussions) in Wasabi Wallet's [main repository](https://github.com/zkSNACKs/WalletWasabi).
+
+[![Build Status](https://dev.azure.com/zkSNACKs/WasabiDoc/_apis/build/status/zkSNACKs.WasabiDoc?branchName=master)](https://dev.azure.com/zkSNACKs/WasabiDoc/_build/latest?definitionId=4&branchName=master)
 
 ---
 
-## The pillars of the documentation
+## 🏛️ The pillars of the documentation
 
-### [Why Wasabi](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/why-wasabi/)
-
-**Why privacy is important.**
-
-An introduction to the over-arching reason why we are so enthusiastic about Bitcoin in general and Wasabi specifically.
-
-### [Using Wasabi](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/using-wasabi/)
-
-**How to use Wasabi Wallet.**
-
-A step by step guide to all the aspects, starting at beginner level, all the way up to power user features and advanced privacy practices.
-
-### [Building Wasabi](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/building-wasabi/)
-
-**How to contribute to Wasabi.**
-
-### [Wasabi FAQ](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/FAQ/)
-
-**Frequently asked questions.**
-
-Most common questions answered with linked reference to the main documentation.
-
-### [Wasabi Glossary](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/glossary/)
-
-**Glossary.**
-
-Explanations of common words used in Wasabi and regarding Bitcoin privacy.
+* ### [Why Wasabi](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/why-wasabi/)
+  * Why privacy is important.
+* ### [Using Wasabi](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/using-wasabi/)
+  * How to use Wasabi Wallet.
+* ### [Building Wasabi](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/building-wasabi/)
+  * How to contribute to Wasabi.
+* ### [Wasabi FAQ](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/FAQ/)
+  * Frequently asked questions.
+* ### [Wasabi Glossary](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/glossary/)
+  * Explanations of common words.
 
 ---
 
