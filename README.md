@@ -35,12 +35,24 @@ If you need help regarding the software specifically, please check out [Discussi
 
 ---
 
-## Contribute to the Documentation
-
-[![Build Status](https://dev.azure.com/zkSNACKs/WasabiDoc/_apis/build/status/zkSNACKs.WasabiDoc?branchName=master)](https://dev.azure.com/zkSNACKs/WasabiDoc/_build/latest?definitionId=4&branchName=master)
+## 📄 Contribute to the Documentation
 
 Just like the Wasabi wallet software, this documentation is libre and open-source under the [MIT license](LICENSE).
 Not only do we appreciate everyone's contribution, but we desperately need it!
+
+* ### [VuePress](#-VuePress)
+* ### [Writing Conventions](#-Writing-Conventions)
+* ### [Reference files](#-Reference-files)
+* ### [Embedding images](#-Embedding-images)
+* ### [Embedding shields](Embedding-shields)
+* ### [Embedding videos](#-Embedding-videos)
+* ### [Text Highlights](#-Text-Highlights)
+* ### [Frequently asked questions](#-Frequently-asked-questions)
+* ### [Variables](#-Variables)
+* ### [Build the Documentation Locally](#-Build-the-Documentation-Locally)
+* ### [Serve locally](#-Serve-locally)
+
+---
 
 ### VuePress
 
@@ -167,9 +179,7 @@ To have a single place to maintain universal strings like the current Wasabi ver
 These variables are managed in [`docs/.vuepress/variables.js`](https://github.com/zkSNACKs/WasabiDoc/blob/master/docs/.vuepress/variables.js).
 Occurrences of `${variableName}` get substituted before the Markdown is processed.
 
----
-
-## Build the Documentation Locally
+### Build the Documentation Locally
 
 In order to build the website locally, you'll need [Node.js](https://nodejs.org/) >= 10.16 (or basically the latest LTS version).
 
