@@ -40,17 +40,17 @@ If you need help regarding the software specifically, please check out [Discussi
 Just like the Wasabi wallet software, this documentation is libre and open-source under the [MIT license](LICENSE).
 Not only do we appreciate everyone's contribution, but we desperately need it!
 
-* [VuePress](#-vuepress)
-* [Writing Conventions](#-writing-conventions)
-* [Reference files](#-reference-files)
-* [Embedding images](#-embedding-images)
-* [Embedding shields](embedding-shields)
-* [Embedding videos](#-embedding-videos)
-* [Text Highlights](#-text-highlights)
-* [Frequently asked questions](#-frequently-asked-questions)
-* [Variables](#-variables)
-* [Build the Documentation Locally](#-build-the-documentation-locally)
-* [Serve locally](#-serve-locally)
+* [VuePress](#vuepress)
+* [Writing Conventions](#writing-conventions)
+* [Reference files](#reference-files)
+* [Embedding images](#embedding-images)
+* [Embedding shields](#embedding-shields)
+* [Embedding videos](#embedding-videos)
+* [Text Highlights](#text-highlights)
+* [Frequently asked questions](#frequently-asked-questions)
+* [Variables](#variables)
+* [Build the Documentation Locally](#build-the-documentation-locally)
+* [Serve locally](#serve-locally)
 
 ---
 
