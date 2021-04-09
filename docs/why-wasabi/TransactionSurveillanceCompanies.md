@@ -84,7 +84,7 @@ For example, could one day the government of China pressure those companies into
 
 ### Incentivized to oppose bitcoin updates
 
-During the deployment of a segregated witness, certain transaction surveillance companies were believed to have spread misinformation about it, because the update enables Lightning Network. The companies saw it as a threat to their business, since it can enable transacting with bitcoin more privately.
+During the deployment of segregated witness, certain transaction surveillance companies were believed to have spread misinformation about it, because the update enables Lightning Network. The companies saw it as a threat to their business, since it can enable transacting with bitcoin more privately.
 
 ### Oversold effectiveness
 
