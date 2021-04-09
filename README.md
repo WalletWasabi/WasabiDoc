@@ -20,7 +20,7 @@ If you need help regarding the software specifically, please check out [Discussi
 
 ---
 
-## 🏛️ The pillars of the documentation
+# 🏛️ The pillars of the documentation
 
 * ## [Why Wasabi](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/why-wasabi/)
   * Why privacy is important.
@@ -35,7 +35,7 @@ If you need help regarding the software specifically, please check out [Discussi
 
 ---
 
-## 📄 Contribute to the Documentation
+# 📄 Contribute to the Documentation
 
 Just like the Wasabi wallet software, this documentation is libre and open-source under the [MIT license](LICENSE).
 Not only do we appreciate everyone's contribution, but we desperately need it!
