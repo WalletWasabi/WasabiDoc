@@ -39,14 +39,14 @@ Surveillance companies have been known to sybil attack the bitcoin network in or
 
 ### Attempt to invade privacy
 
-The right to privacy is recognized as a human right by the US constitution, European Union regulations and the Constitution of India.
+The right to privacy is recognized as a human right for instance in the US constitution, European Union regulations and the Constitution of India.
 
 Financial privacy is an essential criteria for the efficient operation of a free market: if you run a business, you cannot effectively set prices if your suppliers and customers can see all your transactions against your will.
 You cannot compete effectively if your competition is tracking your sales.
 Individually your informational leverage is lost in your private dealings if you don't have privacy over your accounts: if you pay your landlord in Bitcoin without enough privacy in place, your landlord will see when you've received a pay raise and can hit you up for more rent.
 
 Financial privacy is essential for personal safety: if thieves can see your income, holdings, and spending, they can use that information to target and exploit you.
-Without privacy, malicious parties have more ability to steal your identity, snatch your large purchases off your doorstep, or impersonate businesses you transact with towards you... they can tell exactly how much to try to scam you for.
+Without privacy, malicious parties have more ability to steal your identity, snatch your packages from your doorstep, or impersonate businesses you transact with. They also know exactly how much to try to scam you for.
 
 Financial privacy is essential for human dignity: no one wants the snotty barista at the coffee shop or their nosy neighbors commenting on their income or spending habits.
 No one wants their baby-crazy in-laws asking why they're buying contraception (or sex toys).
@@ -67,8 +67,8 @@ Sufficient privacy is an essential prerequisite for a viable digital currency.
 
 ### Attempt to destroy fungibility
 
-Privacy invasions can lead to damaging or destroying bitcoin fungibility.
-The aim of bitcoin is to be a decentralized digital currency, but if all users are eventually required to consult centralized blacklists before accepting bitcoin then its decentralization will be destroyed.
+Privacy invasions can lead to damaging or destroying bitcoin [fungibility](https://docs.wasabiwallet.io/glossary/Glossary-GeneralBitcoin.html#fungibility).
+The aim of bitcoin is to be a decentralized digital currency, but if all users are eventually required to consult centralized blacklists before accepting bitcoin, then its decentralization will be destroyed.
 
 [How is financial privacy an essential element to fungibility in Bitcoin?](/FAQ/FAQ-GeneralBitcoinPrivacy.md#how-is-financial-privacy-an-essential-element-to-fungibility-in-bitcoin)
 
@@ -84,7 +84,7 @@ For example, could one day the government of China pressure those companies into
 
 ### Incentivized to oppose bitcoin updates
 
-During the deployment of segregated witness certain transaction surveillance companies were believed to have spread misinformation about it, because the update enables Lightning Network, which the companies saw as a threat to their business.
+During the deployment of a segregated witness, certain transaction surveillance companies were believed to have spread misinformation about it, because the update enables Lightning Network. The companies saw it as a threat to their business, since it can enable transacting with bitcoin more privately.
 
 ### Oversold effectiveness
 
@@ -96,6 +96,10 @@ Laws surrounding anti-money-laundering typically require businesses to make reas
 Usually, the transaction surveillance company's customers simply want to legally protect themselves, regardless of whether the surveillance actually works.
 There is a lot of money in this space from governments and other authorities, who usually don't understand the underlying technology and are happy to throw money at several startups who claim to be able to accurately track everything.
 Whether the activities of transaction surveillance companies actually help against money laundering is an open question.
+
+![image](https://user-images.githubusercontent.com/51679301/114173811-6bc59680-9940-11eb-8ff9-d59b61475978.png)
+
+_According to an excerpt from Chainalysis in their [2021 report](https://blog.chainalysis.com/reports/2021-crypto-crime-report-intro-ransomware-scams-darknet-markets), in 2019, criminal activity represented only 2.1% of all cryptocurrency transaction volume._
 
 ## Examples
 
