@@ -39,7 +39,7 @@ Surveillance companies have been known to sybil attack the bitcoin network in or
 
 ### Attempt to invade privacy
 
-The right to privacy is recognized as a human right for instance in the US constitution, European Union regulations and the Constitution of India.
+The right to privacy is recognized as a human right, for instance in the US constitution, European Union regulations and the Constitution of India.
 
 Financial privacy is an essential criteria for the efficient operation of a free market: if you run a business, you cannot effectively set prices if your suppliers and customers can see all your transactions against your will.
 You cannot compete effectively if your competition is tracking your sales.
