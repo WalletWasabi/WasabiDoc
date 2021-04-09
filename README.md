@@ -20,41 +20,41 @@ If you need help regarding the software specifically, please check out [Discussi
 
 ---
 
-## 🏛️ The pillars of the documentation
+# 🏛️ The pillars of the documentation
 
-* ### [Why Wasabi](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/why-wasabi/)
+* ## [Why Wasabi](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/why-wasabi/)
   * Why privacy is important.
-* ### [Using Wasabi](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/using-wasabi/)
+* ## [Using Wasabi](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/using-wasabi/)
   * How to use Wasabi Wallet.
-* ### [Building Wasabi](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/building-wasabi/)
+* ## [Building Wasabi](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/building-wasabi/)
   * How to contribute to Wasabi.
-* ### [Wasabi FAQ](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/FAQ/)
+* ## [Wasabi FAQ](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/FAQ/)
   * Frequently asked questions.
-* ### [Wasabi Glossary](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/glossary/)
+* ## [Wasabi Glossary](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/glossary/)
   * Explanations of common words.
 
 ---
 
-## 📄 Contribute to the Documentation
+# 📄 Contribute to the Documentation
 
 Just like the Wasabi wallet software, this documentation is libre and open-source under the [MIT license](LICENSE).
 Not only do we appreciate everyone's contribution, but we desperately need it!
 
-* ### [VuePress](#-VuePress)
-* ### [Writing Conventions](#-Writing-Conventions)
-* ### [Reference files](#-Reference-files)
-* ### [Embedding images](#-Embedding-images)
-* ### [Embedding shields](Embedding-shields)
-* ### [Embedding videos](#-Embedding-videos)
-* ### [Text Highlights](#-Text-Highlights)
-* ### [Frequently asked questions](#-Frequently-asked-questions)
-* ### [Variables](#-Variables)
-* ### [Build the Documentation Locally](#-Build-the-Documentation-Locally)
-* ### [Serve locally](#-Serve-locally)
+* [VuePress](#-vuepress)
+* [Writing Conventions](#-writing-conventions)
+* [Reference files](#-reference-files)
+* [Embedding images](#-embedding-images)
+* [Embedding shields](embedding-shields)
+* [Embedding videos](#-embedding-videos)
+* [Text Highlights](#-text-highlights)
+* [Frequently asked questions](#-frequently-asked-questions)
+* [Variables](#-variables)
+* [Build the Documentation Locally](#-build-the-documentation-locally)
+* [Serve locally](#-serve-locally)
 
 ---
 
-### VuePress
+## VuePress
 
 The [Wasabi documentation website](https://docs.wasabiwallet.io) is built using an open-source static site generator called VuePress.
 Its [configuration](https://github.com/zkSNACKs/WasabiDoc/blob/master/docs/.vuepress/config.js) and [theme](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/.vuepress/styles) are extremely customizable, and it offers great defaults out-of-the-box.
@@ -63,14 +63,14 @@ Check out the [VuePress website](https://v1.vuepress.vuejs.org/) for details on 
 To contribute to the content of the website, you can make PRs related to the markdown files in the `/docs/` directory, and if merged, the changes will automatically be integrated into the documentation website by VuePress.
 Know that you do not need to understand/deal with VuePress at all in this case.
 
-### Writing Conventions
+## Writing Conventions
 
 - Wasabi [capitalized]
 - CoinJoin [capitalized, one word]
 - Every sentence must start in a new line.
 - For a paragraph, add an `empty line` or `</br>` in the markdown.
 
-### Reference files
+## Reference files
 
 Please consider this repository structure for hyperlinks, and use relative links whenever possible, for example:
 
@@ -78,7 +78,7 @@ Please consider this repository structure for hyperlinks, and use relative links
 [What is a CoinJoin?](FAQ-Introduction.md#what-is-a-coinjoin)
 ```
 
-### Embedding images
+## Embedding images
 
 The images are stored in the [`/docs/.vuepress/public/`](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/.vuepress/public) directory.
 They can be embedded via the following markdown tags:
@@ -87,7 +87,7 @@ They can be embedded via the following markdown tags:
 ![Alternative text of the image](/IMAGENAME.png "Title of the image")
 ```
 
-### Embedding shields
+## Embedding shields
 
 To insert the shield images inline with the text, use these HTML tags:
 
@@ -98,7 +98,7 @@ To insert the shield images inline with the text, use these HTML tags:
 <img src="/ShieldRed.png" alt="Wasabi Wallet red shield anonymity set" title="Wasabi Wallet red shield anonymity set" class="shield" />
 ```
 
-### Embedding videos
+## Embedding videos
 
 Youtube videos and playlists can be embedded via the following custom markdown tags:
 
@@ -119,7 +119,7 @@ And the index of the video of a playlist (e.g. starts the third video):
 @[youtubePlaylist](PLAYLIST_ID,VIDEO_ID)
 ```
 
-### Text Highlights
+## Text Highlights
 
 There are three types of text highlights that can be used to display different colored boxes.
 
@@ -147,7 +147,7 @@ bar
 :::
 ```
 
-### Frequently asked questions
+## Frequently asked questions
 
 Use this markdown box with the headers to write the FAQ:
 ```
@@ -173,17 +173,17 @@ answer answer answer.
 ::::
 ```
 
-### Variables
+## Variables
 
 To have a single place to maintain universal strings like the current Wasabi version number, we use variables in the Markdown (i.e.  `${currentVersion}`and `${zksnacksPublicKeyFingerprint}`).
 These variables are managed in [`docs/.vuepress/variables.js`](https://github.com/zkSNACKs/WasabiDoc/blob/master/docs/.vuepress/variables.js).
 Occurrences of `${variableName}` get substituted before the Markdown is processed.
 
-### Build the Documentation Locally
+## Build the Documentation Locally
 
 In order to build the website locally, you'll need [Node.js](https://nodejs.org/) >= 10.16 (or basically the latest LTS version).
 
-### Serve locally
+## Serve locally
 
 1. Install dependencies
 2. Serve locally (by default on port 8080)
