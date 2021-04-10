@@ -39,7 +39,7 @@ The ordinary banking system is closed, a very non-transparent system, where the 
 In opposition, the blockchain is transparent and open to everyone.
 This means not only the “bank” (custodial service provider) but also outsider 3rd party observers are capable of tracking these transactions.
 
-### Service providers obligations regarding privacy
+### Service providers’ obligations regarding privacy
 
 There is no question a service provider who keeps a record of personal information needs to deal with the different privacy regulations and act according to them.
 In the ordinary banking system personal financial information is handled as a secret thus preserving individual privacy from third parties.
@@ -51,9 +51,9 @@ This information has similar sensitivity as name, address, gender, etc. so it sh
 
 Since the Bitcoin blockchain is transparent, transactions cannot be kept secret.
 Currently, one prevalent solution in Bitcoin to gain privacy is to CoinJoin the different coins to obfuscate their history.
-By the use of this tool, a custodial service provider can at least start to protect its users financial privacy.
+By the use of this tool, a custodial service provider can at least start to protect its users’ financial privacy.
 
-## Privacy perspective from the companies point of view
+## Privacy perspective from the companies' point of view
 
 The essence of competitive advantages is to keep and hold business secrets.
 Each and every successful company has developed its own mechanism to deliver the best products and services to its customers.
