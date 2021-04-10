@@ -46,7 +46,8 @@ You cannot compete effectively if your competition is tracking your sales.
 Individually your informational leverage is lost in your private dealings if you don't have privacy over your accounts: if you pay your landlord in Bitcoin without enough privacy in place, your landlord will see when you've received a pay raise and can hit you up for more rent.
 
 Financial privacy is essential for personal safety: if thieves can see your income, holdings, and spending, they can use that information to target and exploit you.
-Without privacy, malicious parties have more ability to steal your identity, snatch your packages from your doorstep, or impersonate businesses you transact with. They also know exactly how much to try to scam you for.
+Without privacy, malicious parties have more ability to steal your identity, snatch your packages from your doorstep, or impersonate businesses you transact with.
+They also know exactly how much to try to scam you for.
 
 Financial privacy is essential for human dignity: no one wants the snotty barista at the coffee shop or their nosy neighbors commenting on their income or spending habits.
 No one wants their baby-crazy in-laws asking why they're buying contraception (or sex toys).
