@@ -47,8 +47,6 @@ Not only do we appreciate everyone's contribution, but we desperately need it!
 * [Text Highlights](#text-highlights)
 * [Frequently asked questions](#frequently-asked-questions)
 * [Variables](#variables)
-* [Build the Documentation Locally](#build-the-documentation-locally)
-* [Serve locally](#serve-locally)
 
 ---
 
@@ -177,7 +175,7 @@ To have a single place to maintain universal strings like the current Wasabi ver
 These variables are managed in [`docs/.vuepress/variables.js`](https://github.com/zkSNACKs/WasabiDoc/blob/master/docs/.vuepress/variables.js).
 Occurrences of `${variableName}` get substituted before the Markdown is processed.
 
-## Build the Documentation Locally
+# Build the Documentation Locally
 
 In order to build the website locally, you'll need [Node.js](https://nodejs.org/) >= 10.16 (or basically the latest LTS version).
 
