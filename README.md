@@ -16,8 +16,6 @@ For more details on how to contribute, see the [contribution checklist](https://
 
 If you need help regarding the software specifically, please check out [Discussions](https://github.com/zkSNACKs/WalletWasabi/discussions) in Wasabi Wallet's [main repository](https://github.com/zkSNACKs/WalletWasabi).
 
-[![Build Status](https://dev.azure.com/zkSNACKs/WasabiDoc/_apis/build/status/zkSNACKs.WasabiDoc?branchName=master)](https://dev.azure.com/zkSNACKs/WasabiDoc/_build/latest?definitionId=4&branchName=master)
-
 ---
 
 # 🏛️ The pillars of the documentation
