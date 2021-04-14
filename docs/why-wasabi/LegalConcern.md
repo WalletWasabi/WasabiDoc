@@ -12,7 +12,7 @@
 ---
 
 Using Bitcoin and other cryptocurrencies in the everyday course of businesses is becoming more and more popular.
-Digital money has a lot of advantages, from unstoppable transactions to low fees, and instant execution of international payments.
+Digital money has a lot of advantages, from unstoppable transactions to relatively low fees, and quick final settlement of international payments.
 But all come at a price: the blockchain stores sensitive information like the amount and involved addresses of a transaction, giving away too much business-related information to the public.
 However, this does not necessarily need to be the case.
 
@@ -39,7 +39,7 @@ The ordinary banking system is closed, a very non-transparent system, where the 
 In opposition, the blockchain is transparent and open to everyone.
 This means not only the “bank” (custodial service provider) but also outsider 3rd party observers are capable of tracking these transactions.
 
-### Service providers’ obligations regarding privacy
+### Service providers' obligations regarding privacy
 
 There is no question a service provider who keeps a record of personal information needs to deal with the different privacy regulations and act according to them.
 In the ordinary banking system personal financial information is handled as a secret thus preserving individual privacy from third parties.
@@ -51,7 +51,7 @@ This information has similar sensitivity as name, address, gender, etc. so it sh
 
 Since the Bitcoin blockchain is transparent, transactions cannot be kept secret.
 Currently, one prevalent solution in Bitcoin to gain privacy is to CoinJoin the different coins to obfuscate their history.
-By the use of this tool, a custodial service provider can at least start to protect its users’ financial privacy.
+By the use of this tool, a custodial service provider can at least start to protect its users' financial privacy.
 
 ## Privacy perspective from the companies' point of view
 
@@ -99,7 +99,7 @@ Although external factors should be considered in pricing, they should not be th
 
 ### Employees
 
-There is now a growing number of companies that are paying their employees' salaries in bitcoin due to the trustless transactions with low fees, especially with international transactions.
+There is now a growing number of companies that are paying their employees salaries in bitcoin due to the trustless transactions with relatively low fees, especially with international transactions.
 
 With transparent transaction history, employees would be aware of each other’s salaries without the company disclosing this information.
 Although there are some theories supporting a transparent salary structure, up to now the majority of the companies prefer to keep salaries as secret and obligate employees to keep salary and wage information confidential.
@@ -127,21 +127,21 @@ Using obfuscated transaction history in large bitcoin transactions can help to k
 ## Resolving AML conflicts
 
 Privacy is not just for criminals.
-One of the major critiques against using CoinJoin is that if the transaction history is not known for a company it can be used as a way to launder money.
+One of the major critiques against using CoinJoin is that if the transaction history is not known for a company, it may be used as a way to launder money.
 From the above-listed cases, we already see that currently using fiat payments, during the normal course of businesses, companies do not disclose all financial information as that would result in a loss of business secrets.
-Why would they need to do this if they are just using a new method of payment, called cryptocurrencies?
-Using privacy tools to obfuscate transactions is completely legal and in accordance with the current legal framework.
+Why would they need to do this if they are just using a new method of payment, called Bitcoin?
+Using privacy tools to obfuscate Bitcoin transactions is completely legal and in accordance with the current legal framework.
 
 ### User privacy
 
-In all jurisdictions, there are different laws and acts that are made to protect individual privacy.
+In all jurisdictions, there are different laws and acts that are made to protect customers privacy.
 This is not limited only to personal data but also financial data.
 In the EU there is GDPR, in the USA there is the Privacy Act of 1974, in Canada, there is the Privacy Act of 1985, etc.
 These set different rules to be kept in order to preserve individual privacy both on personal and financial levels.
 
 ### KYC/AML
 
-By now in mainly all jurisdictions custodial cryptocurrency service providers (wallet, exchange, payment processor, etc.) are requested to run KYC/AML checks on users and their transactions.
+By now in mainly all jurisdictions, custodial cryptocurrency service providers (wallet, exchange, payment processor, etc.) are requested to run KYC/AML checks on users and their transactions.
 The KYC process and inner policies should ensure personal data protection.
 The accounts are assigned to these individual users, who are verified by the provider.
 This means the provider identifies the user just like a legacy bank would do.
@@ -154,7 +154,7 @@ KYC and AML procedures now ensure that all transactions involving fiat (like buy
 As soon as a user deposits the funds to any of these service providers, the funds are in one large cluster.
 From now on the funds are possessed by the service provider and the actual user balances are only kept on internal records.
 At this point all KYC/AML procedures are done, funds should be considered “clean”.
-At this point, the funds are controlled by the service provider and different policies are set for securing these funds (hot and cold storage, multisig, etc.).
+The funds are controlled by the service provider and different policies are set for securing these funds (hot and cold storage, multisig, etc.).
 The record system of the provider will show the exact value of funds belonging to the different users.
 This is the time when a provider could preserve its users’ privacy by applying CoinJoin on these funds.
 In case of a withdrawal, coinjoined UTXOs could be sent to the user.
