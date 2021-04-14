@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://docs.wasabiwallet.io">
-    <img src="https://user-images.githubusercontent.com/51679301/114181477-39209b80-994a-11eb-80c8-611c034b1252.png"/>
+    <img src="https://github.com/zkSNACKs/WasabiDoc/docs/.vuepress/public/WasabiWalletDocs.png"/>
   </a>
 </p>
 
