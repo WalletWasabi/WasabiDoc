@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://docs.wasabiwallet.io">
-    <img src="https://github.com/zkSNACKs/WasabiDoc/docs/.vuepress/public/WasabiWalletDocs.png"/>
+    <img src="https://github.com/BTCparadigm/WasabiDoc/blob/master/docs/.vuepress/public/WasabiWalletDocs.png"/>
   </a>
 </p>
 
