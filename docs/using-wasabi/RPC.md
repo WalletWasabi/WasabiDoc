@@ -48,7 +48,7 @@ Open a new terminal and use the following RPC commands to interact with your wal
 
 ## Available methods
 
-The current version handles the following methods: `getstatus`, `createwallet`, `listunspentcoins`, `getwalletinfo`, `getnewaddress`, `send`, `gethistory`, `listkeys`, `enqueue`, `dequeue`, and `stop`.
+The current version handles the following methods: `getstatus`, `createwallet`, `listunspentcoins`, `getwalletinfo`, `getnewaddress`, `send`, `broadcast`, `gethistory`, `listkeys`, `enqueue`, `dequeue`, and `stop`.
 They can be used as follows:
 
 ### getstatus
@@ -424,6 +424,14 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"send", "params": { "p
 ```
 
 **Note**: error codes are generic and not Wasabi specific.
+
+### broadcast
+
+Broadcasts a transaction hex.
+
+```bash
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"broadcast", "params": { "01000000010000000000000000000000000000000000000000000000000000000000000000ffffffff0f03443b0403858402062f503253482fffffffff0110c08d9500000000232102aa970c592640d19de03ff6f329d6fd2eecb023263b9ba5d1b81c29b523da8b21ac00000000" }}' http://127.0.0.1:37128/ | jq
+```
 
 ### gethistory
 
