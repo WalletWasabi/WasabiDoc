@@ -98,7 +98,7 @@ If you have already imported zkSNACKs' PGP public key, then jump to step 2.
 
 ![Download Wasabi Wallet for Linux](/DownloadTar.png "Download Wasabi Wallet for Linux")
 
-3. In the Download folder, run `gpg2 --verify Wasabi.${currentVersion}.tar.gz.asc`.
+3. In the Download folder, run `gpg --verify Wasabi-${currentVersion}.tar.gz.asc`.
 
 	If the message returned says `Good signature from zkSNACKs` and that it was signed with `Primary key fingerprint: ${zksnacksPublicKeyFingerprint}`, then the software was not tampered with since the developer signed it.
 
@@ -145,14 +145,14 @@ If you have already imported zkSNACKs' PGP public key, then jump to step 4.
 2. Copy [zkSNACKs' PGP public key](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt) into a new `TextEdit` document and saving it as `zkSNACKsPubKey.txt`.
 Before saving, you need to go to `Format / Make Plain Text` (otherwise TextEdit will not be able to save it as a .txt file).
 
-3. Open Terminal and go to the folder in which you saved the `zkSNACKsPubKey.txt` file and import the PGP public key with `sudo gpg2 --import zkSNACKsPubKey.txt`.
+3. Open Terminal and go to the folder in which you saved the `zkSNACKsPubKey.txt` file and import the PGP public key with `sudo gpg --import zkSNACKsPubKey.txt`.
 This should return the output: `key 856348328949861E: public key "zkSNACKs <zksnacks@gmail.com>" imported`.
 
 4. [Download](https://wasabiwallet.io/#download) the latest Wasabi release, both the `.dmg` package and the corresponding `.asc` signature file.
 
 	![](/DownloadMac.png)
 
-5. In the Download folder, run `sudo gpg2 --verify Wasabi-${currentVersion}.dmg.asc`.
+5. In the Download folder, run `sudo gpg --verify Wasabi-${currentVersion}.dmg.asc`.
 If the message returned says `Good signature from zkSNACKs` and that it was signed with `Primary key fingerprint: ${zksnacksPublicKeyFingerprint}`, then the software was not tampered with since the developer signed it.
 
 	:::tip
