@@ -7,7 +7,7 @@
 
 # Coins
 
-Bitcoin has an accounting model of [unspent transaction output [UTXO]](https://bitcoin.org/en/blockchain-guide#introduction).
+Bitcoin has an accounting model of [unspent transaction output [UTXO]](https://developer.bitcoin.org/devguide/block_chain.html).
 A transaction has inputs: the coins that are being spent, and outputs: the corresponding newly created coins (unspent).
 The input of a transaction has to be an unspent output of a previous transaction.
 Each UTXO is the tip of the chain of links between inputs and outputs, all the way back to a [coinbase transaction](https://en.bitcoin.it/wiki/Coinbase) that pays the miner.
