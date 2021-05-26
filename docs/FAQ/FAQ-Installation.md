@@ -152,7 +152,8 @@ When you broadcast a transaction over clearnet, the connected full node will kno
 :::details
 ### Can I install Wasabi on TAILS?
 
-Yes, just follow the [Wasabi Setup on Tails](/using-wasabi/WasabiSetupTails.md) guide and remember to save/back up the wallet on the Persistence.
+Yes, is it possible to install Wasabi on Tails, but it's not [officially supported](https://github.com/zkSNACKs/WalletWasabi/blob/master/WalletWasabi.Documentation/WasabiCompatibility.md#officially-supported-operating-systems).
+Anyhow, since Tails is based on Debian, you can follow the [Debian and Ubuntu installation guide](/using-wasabi/InstallPackage.html#debian-and-ubuntu).
 :::
 
 :::details
