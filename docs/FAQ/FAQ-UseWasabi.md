@@ -43,8 +43,8 @@ You have successfully setup your wallet when you click `I wrote down my Recovery
 ### Can I rename my Wallet?
 
 Yes you can.
-Go to `Wallets` folder (inside the [Wasabi data folder](/using-wasabi/WasabiSetupTails.md#wasabi-data-folder)) and rename the .json Wallet file.
-Then go to `WalletBackups` folder (inside [Wasabi data folder](/using-wasabi/WasabiSetupTails.md#wasabi-data-folder)) and rename the .json Wallet file.
+Go to `Wallets` folder (inside the [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder)) and rename the .json Wallet file.
+Then go to `WalletBackups` folder (inside [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder)) and rename the .json Wallet file.
 
 :::tip
 You need to mark the “show hidden files” setting to see the Wasabi data folder.
