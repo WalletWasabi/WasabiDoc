@@ -219,7 +219,7 @@ If yes, then the wallet connects to a random Bitcoin peer-to-peer full node over
 :::details
 ### How does Wasabi download a relevant block?
 
-There are three ways Wasabi can get a block:
+There are two ways Wasabi can get a block:
 
 1. If you are connected to [your own full node](/using-wasabi/BitcoinFullNode.md) then it will fetch the block from there.
 
