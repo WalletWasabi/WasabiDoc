@@ -86,7 +86,7 @@ Furthermore our calculations have shown that with the liquidity of today’s mix
 :::details
 ### Is there a way to check Wasabi's uptime status?
 
-Yes, you can check the status of Wasabi-related services and websites (like APIs, Backend, etc.) via [UptimeRobot Wasabi Status Page](https://stats.uptimerobot.com/EZW50TW1Go).
+Yes, you can check the status of Wasabi-related services and websites (like APIs, Backend, etc.) via [UptimeRobot Wasabi Status Page](https://stats.uptimerobot.com/YQqGyUL8A7).
 :::
 
 :::details
