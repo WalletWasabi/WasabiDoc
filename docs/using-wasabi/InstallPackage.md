@@ -70,7 +70,7 @@ If you have already imported zkSNACKs' PGP public key, then jump to step 2.
 
 ![Download Wasabi Wallet for Debian](/DownloadDeb.png "Download Wasabi Wallet for Debian")
 
-3. Verify the signature in the Download repository with `gpg --verify Wasabi-${currentVersion}.deb.asc`.
+3. Verify the signature in the Download repository with `gpg --verify Wasabi-${currentVersion}.deb.asc Wasabi-${currentVersion}.deb`.
 If the message returned says `Good signature from zkSNACKs` and that it was signed with `Primary key fingerprint: ${zksnacksPublicKeyFingerprint}`, then the software was not tampered with since the developer signed it.
 
 	:::tip
@@ -98,7 +98,7 @@ If you have already imported zkSNACKs' PGP public key, then jump to step 2.
 
 ![Download Wasabi Wallet for Linux](/DownloadTar.png "Download Wasabi Wallet for Linux")
 
-3. In the Download folder, run `gpg --verify Wasabi-${currentVersion}.tar.gz.asc`.
+3. In the Download folder, run `gpg --verify Wasabi-${currentVersion}.tar.gz.asc Wasabi-${currentVersion}.tar.gz`.
 
 	If the message returned says `Good signature from zkSNACKs` and that it was signed with `Primary key fingerprint: ${zksnacksPublicKeyFingerprint}`, then the software was not tampered with since the developer signed it.
 
@@ -152,7 +152,7 @@ This should return the output: `key 856348328949861E: public key "zkSNACKs <zksn
 
 	![](/DownloadMac.png)
 
-5. In the Download folder, run `sudo gpg --verify Wasabi-${currentVersion}.dmg.asc`.
+5. In the Download folder, run `sudo gpg --verify Wasabi-${currentVersion}.dmg.asc Wasabi-${currentVersion}.dmg`.
 If the message returned says `Good signature from zkSNACKs` and that it was signed with `Primary key fingerprint: ${zksnacksPublicKeyFingerprint}`, then the software was not tampered with since the developer signed it.
 
 	:::tip
