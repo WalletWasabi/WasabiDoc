@@ -186,7 +186,7 @@ In case we try to generate a wallet with a too long password it will return:
 Allows the RPC server to open/switch wallets.
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0","method":"selectwallet", "params" : ["WalletName"]}' http://127.0.0.1:37128/
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"selectwallet", "params" : ["WalletName"]}' http://127.0.0.1:37128/
 curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getwalletinfo"}' http://127.0.0.1:37128/ | jq
 ```
 
@@ -207,7 +207,7 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getwalletinfo"}' http
 ```
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0","method":"selectwallet", "params" : ["WalletName2"]}' http://127.0.0.1:37128/
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"selectwallet", "params" : ["WalletName2"]}' http://127.0.0.1:37128/
 curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getwalletinfo"}' http://127.0.0.1:37128/ | jq
 ```
 
