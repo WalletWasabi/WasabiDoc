@@ -181,7 +181,7 @@ Run the following commands:
 [user@your-whonix-vm ~]$ sudo apt-get update
 [user@your-whonix-vm ~]$ sudo apt-get install git
 [user@your-whonix-vm ~]$ git clone https://github.com/zksnacks/walletwasabi.git
-[user@your-whonix-vm ~]$ cd walletwasabi/WalletWasabi.Gui
+[user@your-whonix-vm ~]$ cd walletwasabi/WalletWasabi.Fluent.Desktop
 [user@your-whonix-vm ~]$ dotnet run
 ```
 
