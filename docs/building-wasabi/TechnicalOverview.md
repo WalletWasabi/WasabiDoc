@@ -377,10 +377,10 @@ Wasabi now offers 3 different ways to connect to a full node:
 - You may connect to a trusted remote node via the `Settings` tab.
 - Wasabi includes an optional, integrated full node (Bitcoin Knots), which can be enabled in the `Settings` tab.
 
-### Daemon/API
+### RPC
 
-Wasabi offers a daemon and an RPC interface.
-Full information can be found [here](/using-wasabi/Daemon.md) and [here](/using-wasabi/RPC.md).
+Wasabi offers an RPC interface.
+Full information can be found [here](/using-wasabi/RPC.md).
 
 ### .NET Ecosystem
 

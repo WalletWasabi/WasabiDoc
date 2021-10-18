@@ -43,7 +43,7 @@ On the other hand, if `JsonRpcUser` and `JsonRpcPassword` are not empty it means
 
 It is recommended to install the `jq` [command line json processor](https://stedolan.github.io/jq/) with `sudo apt-get install jq`, and then adding `| jq` at the end of every RPC command to have a structured output.
 
-Then start Wasabi Wallet either in the GUI or [headless daemon](/using-wasabi/Daemon.md) and load the wallet you want to use.
+Then start Wasabi Wallet either in the GUI and load the wallet you want to use.
 Open a new terminal and use the following RPC commands to interact with your wallet, instead of the GUI.
 
 ## Available methods
