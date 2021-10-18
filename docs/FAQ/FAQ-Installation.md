@@ -178,9 +178,9 @@ If you cannot wait until the next release, and you want to experience the most c
 
 The only two required tools are [Git](https://git-scm.com/downloads) and [.NET ${dotnetVersion} SDK](https://dotnet.microsoft.com/download) for "Build apps".
 You can download every line of the Wasabi code by `git clone https://github.com/zkSNACKs/WalletWasabi.git`, this will create a new directory called `WalletWasabi`.
-In order to build and run the Wallet software, change directory to `cd WalletWasabi/WalletWasabi.Gui`.
+In order to build and run the Wallet software, change directory to `cd WalletWasabi/WalletWasabi.Fluent.Desktop`.
 Wasabi is written in C# with the .NET framework, and it is very easy to run it.
-Simply execute `dotnet run` from the `WalletWasabi.Gui` folder.
+Simply execute `dotnet run` from the `WalletWasabi.Fluent.Desktop` folder.
 You can update the master branch with `git pull`.
 :::
 

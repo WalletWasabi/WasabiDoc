@@ -35,12 +35,12 @@ Clone Wasabi repository:
 
 ```sh
 git clone https://github.com/zkSNACKs/WalletWasabi.git
-cd WalletWasabi/WalletWasabi.Gui
+cd WalletWasabi/WalletWasabi.Fluent.Desktop
 ```
 
 ## Run Wasabi
 
-Build and run the Wasabi client application from the `WalletWasabi.Gui` folder:
+Build and run the Wasabi client application from the `WalletWasabi.Fluent.Desktop` folder:
 
 ```sh
 dotnet run

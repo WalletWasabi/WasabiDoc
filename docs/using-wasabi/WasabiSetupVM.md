@@ -108,7 +108,7 @@ Clone & run Wasabi.
 
 ```sh
 [user@source-wasabi ~]$ git clone https://github.com/zkSNACKs/WalletWasabi.git
-[user@source-wasabi ~]$ cd WalletWasabi/WalletWasabi.Gui
+[user@source-wasabi ~]$ cd WalletWasabi/WalletWasabi.Fluent.Desktop
 [user@source-wasabi ~]$ dotnet run
 ```
 
@@ -233,7 +233,7 @@ Clone & run Wasabi.
 
 ```sh
 your@vm:~$ git clone https://github.com/zkSNACKs/WalletWasabi.git
-your@vm:~$ cd WalletWasabi/WalletWasabi.Gui
+your@vm:~$ cd WalletWasabi/WalletWasabi.Fluent.Desktop
 your@vm:~$ dotnet run
 ```
 

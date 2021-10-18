@@ -59,7 +59,7 @@ wassabeed.exe mix --wallet:MyFirstWallet --destination:MySecondWallet --keepaliv
 
 ### If building from source code
 
-Open the terminal, navigate to the `WalletWasabi.Gui` folder inside the cloned repository and execute:
+Open the terminal, navigate to the `WalletWasabi.Fluent.Desktop` folder inside the cloned repository and execute:
 
 ```bash
 dotnet run -- mix --wallet:MyFirstWallet --destination:MySecondWallet --keepalive
