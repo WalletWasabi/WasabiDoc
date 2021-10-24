@@ -62,7 +62,7 @@ Among others, here is where your wallet files and your logs reside.
 
 If you have already imported zkSNACKs' PGP public key, then jump to step 2.
 
-1. Copy the zkSNACKs' PGP public key (82 lines) from [here](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt), paste it to notepad and save it as PGP.txt in the Downloads folder. Then open that folder in the terminal and import it with `gpg --import PGP.txt`.
+1. Download zkSNACKs' PGP public key [here](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt), and then import it with `gpg --import PGP.txt`.
 
 	Verify that the fingerprint is `${zksnacksPublicKeyFingerprint}` by running this command `gpg --list-keys zKSNACKs`.
 
@@ -70,7 +70,7 @@ If you have already imported zkSNACKs' PGP public key, then jump to step 2.
 
 ![Download Wasabi Wallet for Debian](/DownloadDeb.png "Download Wasabi Wallet for Debian")
 
-3. Verify the signature in the Downloads folder with `gpg --verify Wasabi-${currentVersion}.deb.asc Wasabi-${currentVersion}.deb`.
+3. Verify the signature in the Download repository with `gpg --verify Wasabi-${currentVersion}.deb.asc Wasabi-${currentVersion}.deb`.
 If the message returned says `Good signature from zkSNACKs` and that it was signed with `Primary key fingerprint: ${zksnacksPublicKeyFingerprint}`, then the software was not tampered with since the developer signed it.
 
 	:::tip
