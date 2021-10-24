@@ -62,7 +62,7 @@ Among others, here is where your wallet files and your logs reside.
 
 If you have already imported zkSNACKs' PGP public key, then jump to step 2.
 
-1. Copy the zkSNACKs' PGP public key (82 lines) from [here](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt), paste it to notepad and save it as PGP.txt in the Downloads folder. Then open that folder in the terminal and import it with `gpg --import PGP.txt`.
+1. Copy the zkSNACKs' PGP public key (82 lines) from [here](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt), paste it to notepad and save it as PGP.txt in the Downloads folder. Then open that folder in the terminal and import the file with `gpg --import PGP.txt`.
 
 	Verify that the fingerprint is `${zksnacksPublicKeyFingerprint}` by running this command `gpg --list-keys zKSNACKs`.
 
