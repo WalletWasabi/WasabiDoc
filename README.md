@@ -1,10 +1,10 @@
 <p align="center">
-  <a href="https://docs.wasabiwallet.io">
-    <img src="docs/.vuepress/public/WasabiWalletDocs.png" alt="Wasabi Wallet Documentation" title="Wasabi Wallet Documentation" class="Image" />
-  </a>
+  <img height="360" src="https://i.imgur.com/4tazbiF.png"/>
 </p>
 
-[Wasabi Wallet](https://wasabiwallet.io) is an open-source, non-custodial, privacy focused Bitcoin wallet for desktop. It implements a trustless privacy technique, called [Chaumian CoinJoin](https://github.com/nopara73/ZeroLink/).
+## Note that [Wasabi Wallet 2.0 documentation](https://docs.wasabiwallet.io/) is in the works, which means some content you may want to work on is about to be obsoleted and some of the information you see in this documentation might not be up to date. 
+
+[Wasabi Wallet 2.0](https://wasabiwallet.io) is an open-source, non-custodial, privacy focused Bitcoin wallet for desktop. It implements a trustless privacy technique, called [WabiSabi CoinJoin](https://eprint.iacr.org/2021/206).
 
 This is Wasabi Wallet's open-source [documentation](https://docs.wasabiwallet.io) repository.
 Here you will find information about the nuances of privacy in Bitcoin, how Wasabi solves some of the existing problems, and how you can use this tool to defend yourself.
@@ -37,7 +37,7 @@ If you need help regarding the software specifically, please check out [Discussi
 
 # 📄 Contribute to the Documentation
 
-Just like the Wasabi wallet software, this documentation is libre and open-source under the [MIT license](LICENSE).
+Just like the Wasabi Wallet software, this documentation is libre and open-source under the [MIT license](LICENSE).
 Not only do we appreciate everyone's contribution, but we desperately need it!
 
 * [VuePress](#vuepress)
@@ -54,7 +54,7 @@ Not only do we appreciate everyone's contribution, but we desperately need it!
 
 ## VuePress
 
-The [Wasabi documentation website](https://docs.wasabiwallet.io) is built using an open-source static site generator called VuePress.
+The [Wasabi 2.0 documentation website](https://docs.wasabiwallet.io) is built using an open-source static site generator called VuePress.
 Its [configuration](https://github.com/zkSNACKs/WasabiDoc/blob/master/docs/.vuepress/config.js) and [theme](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/.vuepress/styles) are extremely customizable, and it offers great defaults out-of-the-box.
 Check out the [VuePress website](https://v1.vuepress.vuejs.org/) for details on how to use it.
 
@@ -65,6 +65,7 @@ Know that you do not need to understand/deal with VuePress at all in this case.
 
 - Wasabi [capitalized]
 - CoinJoin [capitalized, one word]
+- WabiSabi [capitalized, one word]
 - Every sentence must start in a new line.
 - For a paragraph, add an `empty line` or `</br>` in the markdown.
 
