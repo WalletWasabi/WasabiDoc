@@ -1,4 +1,8 @@
-![Documentation under construction](/Under_Construction.png "Documentation under construction")
+<p align="center">
+  <a href="https://docs.wasabiwallet.io">
+    <img src="docs/.vuepress/public/Under_Construction.png" alt="Documentation under construction" title="Documentation under construction" class="Image" />
+  </a>
+</p>
 
 ## Note that [Wasabi Wallet documentation](https://docs.wasabiwallet.io/) is under renovation, which means some content you may want to work on is about to be obsoleted and some of the information you see in this documentation might not be up to date. 
 
