@@ -1,6 +1,4 @@
-<p align="center">
-  <img height="360" src="https://i.imgur.com/4tazbiF.png"/>
-</p>
+![Documentation under construction](/Under_Construction.png "Documentation under construction")
 
 ## Note that [Wasabi Wallet documentation](https://docs.wasabiwallet.io/) is under renovation, which means some content you may want to work on is about to be obsoleted and some of the information you see in this documentation might not be up to date. 
 
