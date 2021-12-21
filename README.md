@@ -2,9 +2,9 @@
   <img height="360" src="https://i.imgur.com/4tazbiF.png"/>
 </p>
 
-## Note that [Wasabi Wallet 2.0 documentation](https://docs.wasabiwallet.io/) is in the works, which means some content you may want to work on is about to be obsoleted and some of the information you see in this documentation might not be up to date. 
+## Note that [Wasabi Wallet documentation](https://docs.wasabiwallet.io/) is under renovation, which means some content you may want to work on is about to be obsoleted and some of the information you see in this documentation might not be up to date. 
 
-[Wasabi Wallet 2.0](https://wasabiwallet.io) is an open-source, non-custodial, privacy focused Bitcoin wallet for desktop. It implements a trustless privacy technique, called [WabiSabi CoinJoin](https://eprint.iacr.org/2021/206).
+[Wasabi Wallet](https://wasabiwallet.io) is an open-source, non-custodial, privacy focused Bitcoin wallet for desktop. It implements a trustless privacy technique, called [WabiSabi CoinJoin](https://eprint.iacr.org/2021/206).
 
 This is Wasabi Wallet's open-source [documentation](https://docs.wasabiwallet.io) repository.
 Here you will find information about the nuances of privacy in Bitcoin, how Wasabi solves some of the existing problems, and how you can use this tool to defend yourself.
@@ -54,7 +54,7 @@ Not only do we appreciate everyone's contribution, but we desperately need it!
 
 ## VuePress
 
-The [Wasabi 2.0 documentation website](https://docs.wasabiwallet.io) is built using an open-source static site generator called VuePress.
+The [Wasabi documentation website](https://docs.wasabiwallet.io) is built using an open-source static site generator called VuePress.
 Its [configuration](https://github.com/zkSNACKs/WasabiDoc/blob/master/docs/.vuepress/config.js) and [theme](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/.vuepress/styles) are extremely customizable, and it offers great defaults out-of-the-box.
 Check out the [VuePress website](https://v1.vuepress.vuejs.org/) for details on how to use it.
 
@@ -84,17 +84,6 @@ They can be embedded via the following markdown tags:
 
 ```
 ![Alternative text of the image](/IMAGENAME.png "Title of the image")
-```
-
-## Embedding shields
-
-To insert the shield images inline with the text, use these HTML tags:
-
-```html
-<img src="/ShieldCheckmark.png" alt="Wasabi Wallet green checkmark shield anonymity set" title="Wasabi Wallet green checkmark shield anonymity set" class="shield" />
-<img src="/ShieldGreen.png" alt="Wasabi Wallet green shield anonymity set" title="Wasabi Wallet green shield anonymity set" class="shield" />
-<img src="/ShieldYellow.png" alt="Wasabi Wallet yellow shield anonymity set" title="Wasabi Wallet yellow shield anonymity set" class="shield" />
-<img src="/ShieldRed.png" alt="Wasabi Wallet red shield anonymity set" title="Wasabi Wallet red shield anonymity set" class="shield" />
 ```
 
 ## Embedding videos
