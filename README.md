@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://docs.wasabiwallet.io">
-    <img src="docs/.vuepress/public/Under_Construction.png" alt="Documentation under construction" title="Documentation under construction" class="Image" />
+    <img src="docs/.vuepress/public/Under_Construction.png" alt="Wasabi Wallet Documentation" title="Wasabi Wallet Documentation" class="Image" />
   </a>
 </p>
 
