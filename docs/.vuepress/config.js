@@ -16,8 +16,8 @@ const youtubeEmbed = (id, path) => `
 const themeColor = "#211b24"
 
 module.exports = {
-  title: "Docs under construction",
-  description: "Wasabi Wallet documentation is currently under construction because of the upcoming 2.0 release. Be aware that some of the content might not yet be up to date.",
+  title: "Wasabi Docs",
+  description: "An archive of knowledge about Wasabi Wallet, an open-source, non-custodial and privacy-focused Bitcoin wallet for desktop.",
   head: [
     ["link", { rel: "icon", href: "/favicon.ico" }],
     ["link", { rel: "apple-touch-icon", href: "/apple-touch-icon.png", sizes: "180x180" }],
