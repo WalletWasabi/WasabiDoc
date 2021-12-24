@@ -11,7 +11,7 @@
 
 @[youtube](XykixYdbFpA)
 
-:::details
+::::details
 ### How do I generate a new wallet?
 
 You can [generate as many new wallets](/using-wasabi/WalletGeneration.md) as you'd like, for no extra cost and without asking for permission.
@@ -37,7 +37,7 @@ In order to protect your paper backup, consider storing the password and recover
 You have successfully setup your wallet when you click `I wrote down my Recovery Words!`
 
 ![Wasabi Wallet recovery words](/WalletManagerRecoveryWords.png "Wasabi Wallet recovery words")
-:::
+::::
 
 ::::details
 ### Can I rename my Wallet?
