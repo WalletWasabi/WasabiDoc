@@ -30,6 +30,7 @@
     "node": ">=10.16"
   },
   "dependencies": {
-    "glob-parent": "^6.0.2"
+    "glob-parent": "^6.0.2",
+    "nth-check": "^2.0.1"
   }
 }
