@@ -28,5 +28,8 @@
   },
   "engines": {
     "node": ">=10.16"
+  },
+  "dependencies": {
+    "glob-parent": "^6.0.2"
   }
 }
