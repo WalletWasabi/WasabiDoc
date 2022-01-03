@@ -37,19 +37,26 @@ The more users that participate in a round, the higher the anonymity set the Coi
 
 ### CoinJoin
 
+#### Send in CoinJoins
+
+Being able to send payments in CoinJoin is a great chain efficiency privacy improvement for the sender. Change output could be grinded in to next lower standard denomination, making it very difficult to the recipient to figure out the input that paid him. 
+
 #### Round Interoperability
 
 ### Wallet
 
 #### Simple Send Improvements
 
-Improving simple send using current Bitcoin anonymity techniques is also an interesting topic.
+For non-CoinJoined coins, improving simple send using WabiSabi is also an interesting topic.
 These do not even have to disrupt the current user workflow, they can mostly "just happen" in the background.
 Send in CoinJoin [https://github.com/zkSNACKs/Meta/issues/6](https://github.com/zkSNACKs/Meta/issues/6), [https://github.com/nopara73/ZeroLink/issues/75](https://github.com/nopara73/ZeroLink/issues/75) has great potential.
 
+#### P2M
+Pay to many: https://github.com/zkSNACKs/WalletWasabi/issues/733
+
 #### Privacy Calculation
 
-In every CoinJoin round, more than half of the inputs are remixes, which not only results in perfect mixes for those inputs, but also results in anonymity set growth somewhere between the scales of addition and multiplication, instead of simple addition as the ZeroLink paper anticipated.
+If in every CoinJoin round, more than half of the inputs are remixes, it not only results in perfect mixes for those inputs, but also results in anonymity set growth somewhere between the scales of addition and multiplication, instead of simple addition as the ZeroLink paper anticipated.
 
 Whether the anonymity set gain is closer to addition or multiplication depends on how other users behave.
 Right now, Wasabi simply counts the worst case scenario: as addition.
@@ -70,6 +77,8 @@ On the other hand, this could be considered a backward-looking short-sighted imp
 A way of facilitating funds to make their way into the wallet would be to introduce transitionary P2WPKH over P2SH addresses.
 Those would not be checked against Golomb-Rice filters.
 Instead, a single backend query would establish its balance only once, and then immediately sweep the money to a bech32 wallet-managed address: [https://github.com/zkSNACKs/Meta/issues/34](https://github.com/zkSNACKs/Meta/issues/34).
+
+// Add stuff about taproot support.
 
 ### User Experience
 
@@ -162,6 +171,10 @@ Wasabi uses the [Bitcoin Core Hardware Wallet Interface [HWI]](https://github.co
 
 Pay to EndPoint: [https://github.com/zkSNACKs/Meta/issues/18](https://github.com/zkSNACKs/Meta/issues/18), [https://github.com/zkSNACKs/Meta/issues/23](https://github.com/zkSNACKs/Meta/issues/23)
 
+### Clusterfuck
+
+Clusterfuck Wallet Strategies: [https://github.com/zkSNACKs/Meta/issues/11](https://github.com/zkSNACKs/Meta/issues/11), [https://github.com/zkSNACKs/Meta/issues/18](https://github.com/zkSNACKs/Meta/issues/18), [https://github.com/nopara73/ZeroLink/issues/42](https://github.com/nopara73/ZeroLink/issues/42)
+
 ### Contact list
 
 ### Chat
@@ -171,34 +184,18 @@ Simple P2P, Encrypted Messaging: [https://github.com/zkSNACKs/Meta/issues/14](ht
 
 ### Lightning Network
 
-At this point, it is too early to start leveraging LN in a privacy oriented wallet.
-However, if Bitcoin is successful in the future, there will be a need to think about these questions.
-Lightning Network integration might eventually be unavoidable for any Bitcoin wallet if they want to stay in business, because blockchains don't scale.
+At this point, it might be too early to start practically leveraging LN in a privacy oriented wallet, but because blockchains don't scale, Lightning Network integration could eventually be unavoidable for any Bitcoin wallet that wants to stay in business.
+This is why [zkSNACKs Ltd.](https://zksnacks.com/) has put out a [grant](https://blog.wasabiwallet.io/1-btc-ln-privacy-grant/) for designing a LN privacy wallet.
 
-// LN privacy research grant
+<br>
 
-
-
-
-- JoinMarket: [https://github.com/zkSNACKs/Meta/issues/5](https://github.com/zkSNACKs/Meta/issues/5)
-- Friend CoinJoin Network: [https://github.com/zkSNACKs/Meta/issues/17](https://github.com/zkSNACKs/Meta/issues/17)
 - Merge Avoidance with [BIP 47](https://github.com/bitcoin/bips/blob/master/bip-0047.mediawiki) Payment Codes: [https://github.com/zkSNACKs/Meta/issues/10](https://github.com/zkSNACKs/Meta/issues/10)
-- Clusterfuck Wallet Strategies: [https://github.com/zkSNACKs/Meta/issues/11](https://github.com/zkSNACKs/Meta/issues/11), [https://github.com/zkSNACKs/Meta/issues/18](https://github.com/zkSNACKs/Meta/issues/18), [https://github.com/nopara73/ZeroLink/issues/42](https://github.com/nopara73/ZeroLink/issues/42)
 - GroupSend: [https://github.com/zkSNACKs/Meta/issues/29](https://github.com/zkSNACKs/Meta/issues/29)
-
-## Coin Control and Privacy Feedback Improvements
-
-- New Type of Bitcoin UI: [https://github.com/zkSNACKs/Meta/issues/8](https://github.com/zkSNACKs/Meta/issues/8)
-- Input Joining Avoidance Strategy by Killing Kittens: [https://github.com/nopara73/ZeroLink/issues/65](https://github.com/nopara73/ZeroLink/issues/65)
-- Improve History of a Coin: [https://github.com/zkSNACKs/WalletWasabi/issues/612](https://github.com/zkSNACKs/WalletWasabi/issues/612)
-- Interactive Privacy Suggestions when Spending - [https://github.com/zkSNACKs/WalletWasabi/issues/729](https://github.com/zkSNACKs/WalletWasabi/issues/729)
 
 ## General Wallet Features
 
-- Pay to Many: [https://github.com/zkSNACKs/WalletWasabi/issues/733](https://github.com/zkSNACKs/WalletWasabi/issues/733)
 - Advanced RBF (ethical concerns here): [https://github.com/zkSNACKs/Meta/issues/15](https://github.com/zkSNACKs/Meta/issues/15)
 - Sweep Private Key: [https://github.com/zkSNACKs/WalletWasabi/issues/486](https://github.com/zkSNACKs/WalletWasabi/issues/486)
-- Paper Wallet Generation: [https://github.com/zkSNACKs/WalletWasabi/issues/727](https://github.com/zkSNACKs/WalletWasabi/issues/727)
 
 ## Extending the Scope of Privacy
 
@@ -210,9 +207,3 @@ Other features indirectly related to Bitcoin which may be beneficial for the pri
 - Add Folder Encryption [https://github.com/zkSNACKs/Meta/issues/36](https://github.com/zkSNACKs/Meta/issues/36)
 - Protect Data Folders [https://github.com/zkSNACKs/Meta/issues/39](https://github.com/zkSNACKs/Meta/issues/39)
 
-## Conclusion
-
-We outline our ideas and future plans, to help the reader get familiar with our thinking process.
-This document can be analyzed and used by anyone who would like to achieve the strongest privacy in Bitcoin today without falling prey to misinformation that is rampant in the space.
-
-Of course, it is unavoidable that the reader will still be susceptible to the authors unconscious biases, and we apologize for that in advance.
