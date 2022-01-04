@@ -12,7 +12,8 @@
 
 Wasabi Wallet is a privacy focused, non-custodial Bitcoin wallet that is based on the [WabiSabi Framework](https://eprint.iacr.org/2021/206).
 While privacy can be achieved today with it, the mainchain costs, inconvenience and scalability will inevitably push us to look in to Lightning Network and other 2nd layer solutions.
-This document aims to describe some ideas for the future of Wasabi Wallet and to explain the reasoning behind going towards these objectives. Plans might change without notice and this only represents our thinking at 2021 December.
+This document aims to describe some ideas for the future of Wasabi Wallet and to explain the reasoning behind going towards these objectives. 
+Plans might change without notice and this only represents our thinking at 2021 December.
 Wasabi does not support and does not plan to support other currencies in the future.
 
 Wasabi Wallet is software. Therefore it must not neglect general software quality issues.
@@ -37,13 +38,23 @@ The more users that participate in a round, the higher the anonymity set the Coi
 
 ### CoinJoin
 
+Even though Wasabi develoers have done a lot of work to optimize WabiSabi CoinJoins privacy and efficiency, the work is still in the beginning. 
+For now, WabiSabi is only enabled for testnet clients, which means there is very little incentive for malicious attackers to reveal if they see a problem in the protocol.
+Whenever mainchain CoinJoin release candidate comes out, we will likely see a lot of new testers with a bunch of issues and improvement ideas.
+
 #### Send in CoinJoins
 
-Being able to send payments in CoinJoin is a great chain efficiency privacy improvement for the sender. Change output could be grinded in to next lower standard denomination, making it very difficult to the recipient to figure out the input that paid him. 
+Even when a user has private coins, being able to send payments in CoinJoin is a great chain efficiency and privacy improvement for the sender. Change output could be grinded in to next lower standard denomination, making it very difficult to the recipient to figure out anything about the sender. GroupSend: [https://github.com/zkSNACKs/Meta/issues/29](https://github.com/zkSNACKs/Meta/issues/29)
 
 #### Round Interoperability
 
+Because block size has limits and CoinJoin transaction has weight, we can't just add thousands of participants to a CoinJoin round. 
+To enable exponentially groving privacy we need some of the users to remix, making the CoinJoin rounds interconnected, resulting in anonymity set growth somewhere between the scales of addition and multiplication for all the rounds participants. 
+If that doesn't happen enough by default, the coordinator has ways to incentivice users by for example, giving fee discounts for remixed inputs.
+
 ### Wallet
+
+Wasabi Wallet devs should keep up with the latest changes in other Bitcoin wallets and implement the most important features to Wasabi, while also developing new features. 
 
 #### Simple Send Improvements
 
@@ -52,7 +63,17 @@ These do not even have to disrupt the current user workflow, they can mostly "ju
 Send in CoinJoin [https://github.com/zkSNACKs/Meta/issues/6](https://github.com/zkSNACKs/Meta/issues/6), [https://github.com/nopara73/ZeroLink/issues/75](https://github.com/nopara73/ZeroLink/issues/75) has great potential.
 
 #### P2M
-Pay to many: https://github.com/zkSNACKs/WalletWasabi/issues/733
+We should enable users to make payments to multiple addresses in the same transaction, in a convenient and privacy presenving way. 
+This would save users some sats in transaction fees but it comes with the cost of both recipients being able to see the other outputs in the transaction. 
+Some users might be ok with that but combining P2M with Send in CoinJoins would definitely make it more private.
+Pay to Many: https://github.com/zkSNACKs/WalletWasabi/issues/733
+
+#### Advanced RBF
+Advanced Replace-By-Fee: [https://github.com/zkSNACKs/Meta/issues/15](https://github.com/zkSNACKs/Meta/issues/15)
+
+#### Sweep Private Key
+This could be helpful especially for the holders of physical coins, paper wallets or OpenDimes.
+Sweep private key: [https://github.com/zkSNACKs/WalletWasabi/issues/486](https://github.com/zkSNACKs/WalletWasabi/issues/486)
 
 #### Privacy Calculation
 
@@ -90,7 +111,7 @@ QR code reader works in Windows. WIP for Linux and Mac. // Link to Pindurs PRs a
 
 ## Marketing
 
-While education, content creation and marketing have little place in a technical document, they are still important parts of the big picture.
+While education, content creation and marketing have little place in a technical documentation, they are still important parts of the big picture.
 
 ### Education
 
@@ -104,11 +125,25 @@ A few ideas:
 
 ### Events
 
+Wasabi Wallet team should participate and maybe even create new Bitcoin and privacy events, to make sure they stay up to date about the latest research and features.
+
 ### Contribution games
+
+We have been doing these contribution games for years and they have prooven to be very beneficial, for the contributor, to the developers and to the users through better wallet. Wasabi should continue organizing these in the future. You can find more about them at // Link to existing contribution game announcements
 
 ### Merchandise Shop
 
+Besides of the online Bitcoin privacy that Wasabi Wallet offers, we could spin up a merchandise store that offers shirts, mugs, hats and some of the best meat-space privacy tools like curtains.
+
 ## Scaling
+
+For now the focus has been on a robust and easy to use non-custodial Bitcoin wallet with build in CoinJoins for desktop.
+While Bitcoin continues to grow, we have to also spread out the privacy that WabiSabi provides to other devices, platforms and wallets.
+In the paper [Anonymity Loves Company: Usability and the Network Effect](https://www.freehaven.net/anonbib/cache/usability:weis2006.pdf) the authors note:
+
+> We show that in anonymizing networks, even if you were smart enough and had enough time to use every system perfectly, you would nevertheless be right to choose your system based in part on its usability for other users.
+
+Therefore, Wasabi should also pay attention to fields that help to increase the number of Wasabi users, bringing greater privacy for everyone.
 
 ### Mobile Wallet
 
@@ -121,14 +156,11 @@ However, technology is improving quickly, thus, timing has special importance in
 
 ### Localization
 
-In the paper [Anonymity Loves Company: Usability and the Network Effect](https://www.freehaven.net/anonbib/cache/usability:weis2006.pdf) the authors note:
-
-> We show that in anonymizing networks, even if you were smart enough and had enough time to use every system perfectly, you would nevertheless be right to choose your system based in part on its usability for other users.
-
-Therefore, Wasabi should also pay attention to fields that help to increase the number of Wasabi users, bringing greater privacy for everyone.
 Since most of the world does not speak English, localization ([https://github.com/zkSNACKs/Meta/issues/22](https://github.com/zkSNACKs/Meta/issues/22)) of Wasabi is something to consider.
 
 ### Tooling
+
+Developers are aiming to modularize WabiSabi CoinJoin to enable other projects, wallets and companies to implement it.
 
 #### RPC
 
@@ -141,6 +173,8 @@ Wasabi offers a daemon and an RPC interface.
 Full information can be found [here](/using-wasabi/Daemon.md) and [here](/using-wasabi/RPC.md).
 
 #### Documentation
+
+Working on it! 
 
 #### WAT?
 
@@ -157,15 +191,19 @@ Full information can be found [here](/using-wasabi/Daemon.md) and [here](/using-
 Wasabi could roll out a NuGet package, enabling developers to build applications with Wasabi.
 It would be also beneficial and not difficult to integrate Wasabi into existing .NET softwares directly, like [BTCPay](https://github.com/btcpayserver/btcpayserver).
 
+// Wat?
+
 #### Bitcoin Full Node integration
 
 Improve full node integration to minimize reliance to backend.
 
 ### Hardware Wallets
 
-Wasabi uses the [Bitcoin Core Hardware Wallet Interface [HWI]](https://github.com/bitcoin-core/HWI) ([PR #1341](https://github.com/zkSNACKs/WalletWasabi/pull/1341) & [PR #1905](https://github.com/zkSNACKs/WalletWasabi/pull/1905)) however in this mode coinjoining is currently not possible.
+Wasabi uses the [Bitcoin Core Hardware Wallet Interface [HWI]](https://github.com/bitcoin-core/HWI) ([PR #1341](https://github.com/zkSNACKs/WalletWasabi/pull/1341) & [PR #1905](https://github.com/zkSNACKs/WalletWasabi/pull/1905)) however in this mode coinjoining is currently not possible. We should fix this.
 
 ## Innovation
+
+Wasabi should continue developing and implementing new in-house features that we become industry standards during the years, like privacy mode, coin control and CoinJoins.
 
 ### P2EP
 
@@ -176,6 +214,9 @@ Pay to EndPoint: [https://github.com/zkSNACKs/Meta/issues/18](https://github.com
 Clusterfuck Wallet Strategies: [https://github.com/zkSNACKs/Meta/issues/11](https://github.com/zkSNACKs/Meta/issues/11), [https://github.com/zkSNACKs/Meta/issues/18](https://github.com/zkSNACKs/Meta/issues/18), [https://github.com/nopara73/ZeroLink/issues/42](https://github.com/nopara73/ZeroLink/issues/42)
 
 ### Contact list
+
+Wouldn't it be handy to send payments without having to ask for an invoice or an address from the recipient?
+With Keysend we could have a contact list from which you can choose a recipient and your client automatically fetches a new address from that persons wallet.
 
 ### Chat
 
@@ -189,14 +230,6 @@ This is why [zkSNACKs Ltd.](https://zksnacks.com/) has put out a [grant](https:/
 
 <br>
 
-- Merge Avoidance with [BIP 47](https://github.com/bitcoin/bips/blob/master/bip-0047.mediawiki) Payment Codes: [https://github.com/zkSNACKs/Meta/issues/10](https://github.com/zkSNACKs/Meta/issues/10)
-- GroupSend: [https://github.com/zkSNACKs/Meta/issues/29](https://github.com/zkSNACKs/Meta/issues/29)
-
-## General Wallet Features
-
-- Advanced RBF (ethical concerns here): [https://github.com/zkSNACKs/Meta/issues/15](https://github.com/zkSNACKs/Meta/issues/15)
-- Sweep Private Key: [https://github.com/zkSNACKs/WalletWasabi/issues/486](https://github.com/zkSNACKs/WalletWasabi/issues/486)
-
 ## Extending the Scope of Privacy
 
 Other features indirectly related to Bitcoin which may be beneficial for the privacy of Wasabi users:
@@ -207,3 +240,4 @@ Other features indirectly related to Bitcoin which may be beneficial for the pri
 - Add Folder Encryption [https://github.com/zkSNACKs/Meta/issues/36](https://github.com/zkSNACKs/Meta/issues/36)
 - Protect Data Folders [https://github.com/zkSNACKs/Meta/issues/39](https://github.com/zkSNACKs/Meta/issues/39)
 
+- Merge Avoidance with [BIP 47](https://github.com/bitcoin/bips/blob/master/bip-0047.mediawiki) Payment Codes: [https://github.com/zkSNACKs/Meta/issues/10](https://github.com/zkSNACKs/Meta/issues/10)
