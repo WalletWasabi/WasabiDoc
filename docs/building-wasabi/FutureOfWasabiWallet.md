@@ -10,12 +10,12 @@
 
 ---
 
-Wasabi Wallet is a privacy focused Bitcoin wallet that is based on the [WabiSabi Framework](https://eprint.iacr.org/2021/206).
+Wasabi Wallet is a privacy focused, non-custodial Bitcoin wallet that is based on the [WabiSabi Framework](https://eprint.iacr.org/2021/206).
 While privacy can be achieved today with it, the mainchain costs, inconvenience and scalability will inevitably push us to look in to Lightning Network and other 2nd layer solutions.
 This document aims to describe some ideas for the future of Wasabi Wallet and to explain the reasoning behind going towards these objectives. Plans might change without notice and this only represents our thinking at 2021 December.
 Wasabi does not support and does not plan to support other currencies in the future.
 
-Wasabi is software. Therefore it must not neglect general software quality issues.
+Wasabi Wallet is software. Therefore it must not neglect general software quality issues.
 The better software Wasabi is, the more users it will retain.
 
 Wasabi is also a Bitcoin wallet, therefore it must improve general Bitcoin wallet related features as well.
