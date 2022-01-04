@@ -175,7 +175,7 @@ In case we try to generate a wallet with a too long password it will return:
   "jsonrpc": "2.0",
   "error": {
     "code": -32603,
-    "message": "Password is too long (Max 150 characters)."
+    "message": "Password is too long."
   },
   "id": "1"
 }
