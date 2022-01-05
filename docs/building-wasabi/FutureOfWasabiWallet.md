@@ -11,7 +11,7 @@
 ---
 
 Wasabi Wallet is a privacy focused, non-custodial Bitcoin wallet that is based on the [WabiSabi Framework](https://eprint.iacr.org/2021/206).
-While privacy can be achieved today with it, the mainchain costs, inconvenience and scalability will inevitably push us to look in to Lightning Network and other 2nd layer solutions.
+While privacy can be achieved today with Wasabi Wallet, Bitcoins mainchain costs, inconvenience and unscalability will inevitably push us to look in to Lightning Network and other 2nd layer solutions.
 This document aims to describe some ideas for the future of Wasabi Wallet and to explain the reasoning behind going towards these objectives. 
 Plans might change without notice and this only represents our thinking at 2021 December.
 Wasabi does not support and does not plan to support other currencies in the future.
@@ -49,7 +49,7 @@ GroupSend: [https://github.com/zkSNACKs/Meta/issues/29](https://github.com/zkSNA
 
 #### Round Interoperability
 
-Because block size has limits and CoinJoin transaction has weight, we can't just add thousands of participants to a CoinJoin round. 
+Because Bitcoin blocks have size limit and every input and output in a CoinJoin has weight, it is not possible to add thousands of transactions to a CoinJoin round. 
 To enable exponentially groving privacy we need some of the users to remix, making the CoinJoin rounds interconnected, resulting in anonymity set growth somewhere between the scales of addition and multiplication for all the rounds participants. 
 If that doesn't happen enough by default, the coordinator has ways to incentivice users by for example, giving fee discounts for remixed inputs.
 
@@ -122,6 +122,7 @@ While education, content creation and marketing have little place in a technical
 
 ### Education
 
+Education is a vitally important aspect of Bitcoin privacy in general and Wasabi specifically.
 Through education, Wasabi can obtain new users.
 The more Wasabi users there are, the better their privacy.
 Advancing this issue can take various, often opportunistic forms.
