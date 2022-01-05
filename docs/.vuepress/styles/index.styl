@@ -3,9 +3,26 @@
 
 // Default is dark mode: @media (prefers-color-scheme: dark)
 // Overrides can be done using @media (prefers-color-scheme: light)
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap')
+
+@font-face
+   font-family 'objectivity'
+   font-style normal
+   font-weight normal
+   src url('/objectivity.regular.otf')
+
+@font-face
+   font-family 'objectivity'
+   font-style normal
+   font-weight 700
+   src url('/objectivity.bold.otf')
+
+* {
+    font-family 'objectivity', sans-serif
+}
 html
 body
-  background $darkBgColor
+  background linear-gradient(160deg, rgba(73, 88, 107, 1) 0%, rgba(0, 16, 31, 1) 55%);
   color $lightTextColor
 
   @media (prefers-color-scheme: light)
@@ -17,6 +34,8 @@ body
 
 #app
   overflow hidden
+  padding-top 80px
+  min-height 100vh
 
   // fonts
   font-family Inconsolata, monospace
@@ -28,17 +47,15 @@ body
   @media (min-width: ($MQMobileNarrow + 1px))
     font-size 16px
   @media (min-width: ($MQMobile + 1px))
-    font-size 17px
+    font-size 16px
   @media (min-width: ($MQNarrow + 1px))
-    font-size 18px
+    font-size 16px
 
   h1
   h2
   .site-name
-    font-family playfair display, serif
     font-weight 700
     line-height 1.2
-    text-transform lowercase
 
   h1
     font-size 3rem
@@ -46,13 +63,11 @@ body
 
   h2
     font-size 2rem
-    border-bottom-color $dividerColor
 
   h3
   h4
   summary
     text-transform uppercase
-    letter-spacing 0.05rem
     font-weight 700
 
   details
@@ -94,12 +109,14 @@ body
       background $buttonColor
       border 1px solid $buttonColor
       text-transform uppercase
+      font-weight bold
+      padding 0.8rem 1.6rem 0.6rem
       &:hover
-        background-color: #4b8c57
-        border-color: #468452
+        background-color: #00BBC4
+        border-color: #00BBC4
     .custom
     .hero .description
-      color $reducedTextColor
+      color #fff
       a
         color lighten($reducedTextColor, 40%)
         @media (prefers-color-scheme: light)
@@ -114,7 +131,7 @@ body
   .navbar
     color $navbarTextColor
     background $navbarBgColor
-    border-bottom-color lighten($navbarBgColor, 10%)
+    border-bottom-color #49586b
     .logo
       margin-right .25rem
     .nav-links
@@ -184,8 +201,8 @@ body
 
   .sidebar
     font-size unset
-    border-right-color lighten($navbarBgColor, 10%)
-    background $darkBgColor
+    border-right-color #49586b
+    background transparent
     @media (prefers-color-scheme: light)
       border-right-color $borderColor
       background: #fff
@@ -219,8 +236,8 @@ body
       word-break break-word
 
     code
-      color darken($lightTextColor, 20%)
-      background-color alpha($accentColor, 30%)
+      color darken($lightTextColor, 100%)
+      background-color alpha($accentColor, 100%)
       @media (prefers-color-scheme: light)
         color lighten($textColor, 20%)
         background-color alpha($textColor, 10%)
@@ -232,8 +249,8 @@ body
 
     blockquote
       margin 1rem 0
-      color $reducedTextColor
-      border-left-color darken($reducedTextColor, 50%)
+      color $lightTextColor
+      border-left-color $accentColor
       @media (prefers-color-scheme: light)
         border-left-color lighten($reducedTextColor, 50%)
 
@@ -245,7 +262,6 @@ body
 
     img
       margin 1rem 0
-      border 1px solid $borderColor
       &.shield
         width 14px
         height 15px
@@ -265,13 +281,15 @@ body
         a
           color #e63e3e
       &.warning
-        color #c8af33
+        color #ffd400
+      &.tip
+        border-color $accentColor
       @media (prefers-color-scheme: light)
         &.tip,
         &.danger
           background-color #f3f5f7
         &.warning
-          color #6b5900
+          color #ffd400
           background-color rgba(255,229,100,.3)
 
     .ytEmbed
@@ -316,3 +334,6 @@ body
     .last-updated .time
       font-size .9rem
       color $reducedTextColor
+
+.header-anchor
+  margin-left:-1.2em !important
