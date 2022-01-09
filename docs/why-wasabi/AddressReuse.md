@@ -51,10 +51,14 @@ This is someone intentionally deanonymizing himself, and he might have quite dub
 
 ### Remove used address from GUI
 
+Wasabi encourages users to not reuse addresses. This is done in the following way:
 Wasabi uses the industry best practice [BIP 44 Multi-Account Hierarchy for Deterministic Wallets](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki), where from one master secret a tree structure of child private keys are generated.
 It is deterministic because the same parent secret always calculates the same child private keys.
 BIP 44 HD wallets use an alternative key derivation function called "hardened derivation", which alters the relationship between parent keys and child keys in a way that increases security significantly.
 When given a hardened child private key, then the parent private key cannot be calculated.
-An address gets removed from the GUI in the `Receive` tab as soon as a coin is received to it.
+
+A new Bitcoin address will be generated automatically at the `Receive` tab (using the GUI). 
+Previously generated address, which haven't received bitcoin yet, are displayed at `Unused Receive Addresses`. 
+An address will automatically be removed from the `Unused Receive Addresses` list when that address has received any funds.
 
 To protect against forced address reuse attack (Dusting), Wasabi has a modifiable [dust limit](/FAQ/FAQ-UseWasabi.md#what-is-the-dust-threshold), where the wallet does not show coins below a certain threshold value.
