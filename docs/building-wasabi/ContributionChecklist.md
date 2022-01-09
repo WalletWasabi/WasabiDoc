@@ -33,8 +33,8 @@ This will help you to find the interesting challenges you can work on.
 - Follow [@WasabiWallet](https://twitter.com/wasabiwallet) on Twitter and subscribe to the [Wasabi YouTube channel](https://www.youtube.com/channel/UCobsrSexTuVkL39mbrQ35VQ) to stay up-to-date.
 - Wasabi Research Club is a weekly online call, focused mainly on Bitcoin privacy.
 Everyone is welcome to join the discussions. However, being familiar with the topic (if there is such) is recommended.
-Discussions might be recorded and published later in Wasabi Wallet Youtube channel.
-You can find all the information, past recordings, slides, links, and much more [here](https://github.com/zkSNACKs/WasabiResearchClub/).
+Discussions might be recorded and published on the Wasabi Wallet [YouTube channel](https://www.youtube.com/c/wasabiwallet).
+You can find the schedule, call link, past recordings and more from [Wasabi Research Club repository](https://github.com/zkSNACKs/WasabiResearchClub/).
 
 ## Learn how we work
 - To understand how Wasabi CoinJoins work, read [Zero Link: The Bitcoin Fungibility Framework](https://github.com/nopara73/zerolink) and explore the [Documentation](/using-wasabi/CoinJoin.md).
