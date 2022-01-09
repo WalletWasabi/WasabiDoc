@@ -237,7 +237,7 @@ module.exports = {
           collapsable: false,
           sidebarDepth: 2,
           children: [
-            "/building-wasabi/TechnicalOverview.md",
+            "/building-wasabi/FutureOfWasabiWallet.md",
             "/building-wasabi/ContributionChecklist.md",
             "/building-wasabi/ContributionGame.md"
           ]
