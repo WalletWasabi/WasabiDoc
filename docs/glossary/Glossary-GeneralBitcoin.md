@@ -475,6 +475,14 @@ Users of this update do not break the rules of legacy users, but rather restrict
 :::
 
 :::details
+### Taproot
+
+Taproot is an upgrade to the Bitcoin consensus rules. It was activitated via a softfork in 2021. 
+Taproot will set the stage for extra functionality to Bitcoin by optimizing scalability, privacy and smart contract functionality. 
+The Taproot softfork adds another output type called "Pay to Taproot" (P2TR).
+:::
+
+:::details
 ### Testnet
 
 A testing environment in which users can obtain and spend satoshis that have no real-world value on a global network that is very similar to the Bitcoin mainnet.
