@@ -57,12 +57,10 @@ Make it as easy as possible for others to review your work. Make it a *pleasure*
 It is not required to work on an existing issue to contribute to Wasabi, and no one is here to tell you what to do.
 Contributors who have their own ideas are free to work in their own forks on whatever they wish, however they wish, and without any permission from anyone.
 
-With that said, it's a good idea to consult with other Wasabikas via Slack, GitHub, or other communication channels before setting out on any serious contribution effort.
-Do this in order to ensure your contribution is:
+With that said, it's a good idea to consult with other Wasabikas via Slack, GitHub, or other communication channels before setting out on any serious contribution effort. It might be helpful to make sure your contribution is:
 
 - something that the relevant maintainers would be likely to merge;
-- subjected to as much feedback as possible while still an idea and thus cheap to change or abort;
-- something that might be considered in the [contribution game](/building-wasabi/ContributionGame.md) and bounty programs.
+- subjected to as much feedback as possible while still an idea and thus cheap to change or abort.
 
 Remember: _every contributor_ is free to work on what they want, including maintainers who may or may not want to review and merge your pull request if they don't have any prior context for it, or reason to believe it's worth spending their time on.
 
