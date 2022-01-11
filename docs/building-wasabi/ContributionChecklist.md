@@ -31,6 +31,11 @@ This will help others point you in the right direction.
 - Explore the communication channels and find out what the peers are tinkering on, learn about the project and who is contributing in what way.
 This will help you to find the interesting challenges you can work on.
 - Follow [@WasabiWallet](https://twitter.com/wasabiwallet) on Twitter and subscribe to the [Wasabi YouTube channel](https://www.youtube.com/channel/UCobsrSexTuVkL39mbrQ35VQ) to stay up-to-date.
+- Wasabi Research Club is a weekly online call, focused mainly on Bitcoin privacy.
+Everyone is welcome to join the discussions. 
+However, being familiar with the topic (if there is any) is recommended.
+Discussions might be recorded and published on the Wasabi Wallet [YouTube channel](https://www.youtube.com/c/wasabiwallet).
+You can find the schedule, call link, past recordings and more at the [Wasabi Research Club repository](https://github.com/zkSNACKs/WasabiResearchClub/).
 
 ## Learn how we work
 - To understand how Wasabi CoinJoins work, read [Zero Link: The Bitcoin Fungibility Framework](https://github.com/nopara73/zerolink) and explore the [Documentation](/using-wasabi/CoinJoin.md).
@@ -53,12 +58,11 @@ Make it as easy as possible for others to review your work. Make it a *pleasure*
 It is not required to work on an existing issue to contribute to Wasabi, and no one is here to tell you what to do.
 Contributors who have their own ideas are free to work in their own forks on whatever they wish, however they wish, and without any permission from anyone.
 
-With that said, it's a good idea to consult with other Wasabikas via Slack, GitHub, or other communication channels before setting out on any serious contribution effort.
-Do this in order to ensure your contribution is:
+With that being said, it's a good idea to consult with other Wasabikas via Slack, GitHub, or other communication channels before setting out on any serious contribution effort.
+It might be helpful to make sure your contribution is:
 
-- something that the relevant maintainers would be likely to merge;
-- subjected to as much feedback as possible while still an idea and thus cheap to change or abort;
-- something that might be considered in the [contribution game](/building-wasabi/ContributionGame.md) and bounty programs.
+- something that the maintainers would be likely to merge;
+- subjected to as much feedback as possible while still an idea and thus cheap to change or abort.
 
 Remember: _every contributor_ is free to work on what they want, including maintainers who may or may not want to review and merge your pull request if they don't have any prior context for it, or reason to believe it's worth spending their time on.
 
