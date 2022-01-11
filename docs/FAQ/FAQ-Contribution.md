@@ -78,7 +78,7 @@ Yes!
 The beauty of Wasabi is that it's not just a very awesome wallet by default, but it has the additional opt-in CoinJoin service.
 This is provided by [zkSNACKs Ltd.](https://zksnacks.com), and in exchange for this service, the user pays a coordinator fee.
 In return, zkSNACKs is supporting several developers to dedicate their full time to contribute to this open-source project.
-There are also contribution games where a bounty is paid out to any contributor worthy the praise.
+There are also contribution games where a bounty is paid out to any contributor worthy the prize.
 :::
 
 ::::details
