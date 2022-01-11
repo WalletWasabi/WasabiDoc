@@ -32,7 +32,8 @@ This will help others point you in the right direction.
 This will help you to find the interesting challenges you can work on.
 - Follow [@WasabiWallet](https://twitter.com/wasabiwallet) on Twitter and subscribe to the [Wasabi YouTube channel](https://www.youtube.com/channel/UCobsrSexTuVkL39mbrQ35VQ) to stay up-to-date.
 - Wasabi Research Club is a weekly online call, focused mainly on Bitcoin privacy.
-Everyone is welcome to join the discussions. However, being familiar with the topic (if there is such) is recommended.
+Everyone is welcome to join the discussions. 
+However, being familiar with the topic (if there is such) is recommended.
 Discussions might be recorded and published on the Wasabi Wallet [YouTube channel](https://www.youtube.com/c/wasabiwallet).
 You can find the schedule, call link, past recordings and more at the [Wasabi Research Club repository](https://github.com/zkSNACKs/WasabiResearchClub/).
 
