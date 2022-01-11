@@ -57,7 +57,7 @@ It is deterministic because the same parent secret always calculates the same ch
 BIP 44 HD wallets use an alternative key derivation function called "hardened derivation", which alters the relationship between parent keys and child keys in a way that increases security significantly.
 When given a hardened child private key, then the parent private key cannot be calculated.
 
-A new Bitcoin address will be generated automatically at the `Receive` tab (using the GUI). 
+A new Bitcoin address will be generated at the `Receive` tab (using the GUI).
 Previously generated addresses, which haven't received bitcoin yet, are displayed at `Unused Receive Addresses`. 
 An address will automatically be removed from the `Unused Receive Addresses` list when that address has received any funds.
 
