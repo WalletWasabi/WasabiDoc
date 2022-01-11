@@ -34,7 +34,7 @@ This will help you to find the interesting challenges you can work on.
 - Wasabi Research Club is a weekly online call, focused mainly on Bitcoin privacy.
 Everyone is welcome to join the discussions. However, being familiar with the topic (if there is such) is recommended.
 Discussions might be recorded and published on the Wasabi Wallet [YouTube channel](https://www.youtube.com/c/wasabiwallet).
-You can find the schedule, call link, past recordings and more from [Wasabi Research Club repository](https://github.com/zkSNACKs/WasabiResearchClub/).
+You can find the schedule, call link, past recordings and more at the [Wasabi Research Club repository](https://github.com/zkSNACKs/WasabiResearchClub/).
 
 ## Learn how we work
 - To understand how Wasabi CoinJoins work, read [Zero Link: The Bitcoin Fungibility Framework](https://github.com/nopara73/zerolink) and explore the [Documentation](/using-wasabi/CoinJoin.md).
@@ -57,7 +57,7 @@ Make it as easy as possible for others to review your work. Make it a *pleasure*
 It is not required to work on an existing issue to contribute to Wasabi, and no one is here to tell you what to do.
 Contributors who have their own ideas are free to work in their own forks on whatever they wish, however they wish, and without any permission from anyone.
 
-With that said, it's a good idea to consult with other Wasabikas via Slack, GitHub, or other communication channels before setting out on any serious contribution effort. It might be helpful to make sure your contribution is:
+With that being said, it's a good idea to consult with other Wasabikas via Slack, GitHub, or other communication channels before setting out on any serious contribution effort. It might be helpful to make sure your contribution is:
 
 - something that the relevant maintainers would be likely to merge;
 - subjected to as much feedback as possible while still an idea and thus cheap to change or abort.

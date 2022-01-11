@@ -24,4 +24,3 @@ You will also find some of the issues they are working on now, the research for 
 - [Security Policy](/building-wasabi/Security.md)
 - [MIT License](/building-wasabi/LICENSE.md)
 
-
