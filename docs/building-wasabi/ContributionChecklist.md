@@ -61,7 +61,7 @@ Contributors who have their own ideas are free to work in their own forks on wha
 With that being said, it's a good idea to consult with other Wasabikas via Slack, GitHub, or other communication channels before setting out on any serious contribution effort.
 It might be helpful to make sure your contribution is:
 
-- something that the relevant maintainers would be likely to merge;
+- something that the maintainers would be likely to merge;
 - subjected to as much feedback as possible while still an idea and thus cheap to change or abort.
 
 Remember: _every contributor_ is free to work on what they want, including maintainers who may or may not want to review and merge your pull request if they don't have any prior context for it, or reason to believe it's worth spending their time on.
