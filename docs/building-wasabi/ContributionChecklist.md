@@ -35,6 +35,11 @@ All such contributions are very welcomed and greatly appreciated.
 This will help others point you in the right direction.
 - Explore the communication channels and find out what the peers are tinkering on, learn about the project and who is contributing in what way.
 This will help you to find the interesting challenges you can work on.
+- Wasabi Research Club is a weekly online call, focused mainly on Bitcoin privacy.
+Everyone is welcome to join the discussions. 
+However, being familiar with the topic (if there is any) is recommended.
+Discussions might be recorded and published on the Wasabi Wallet [YouTube channel](https://www.youtube.com/c/wasabiwallet).
+You can find the schedule, call link, past recordings and more at the [Wasabi Research Club repository](https://github.com/zkSNACKs/WasabiResearchClub/).
 
 ## Learn how Wasabikas work
 - Educate yourself about the software by reading through [Using Wasabi](/using-wasabi/).
