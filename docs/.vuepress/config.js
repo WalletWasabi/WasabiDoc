@@ -239,7 +239,6 @@ module.exports = {
           children: [
             "/building-wasabi/TechnicalOverview.md",
             "/building-wasabi/ContributionChecklist.md",
-            "/building-wasabi/ContributionGame.md"
           ]
         },
         {
@@ -249,17 +248,8 @@ module.exports = {
           children: [
             "/building-wasabi/Security.md",
             "/building-wasabi/LICENSE.md",
-            "/building-wasabi/Credits.md"
           ]
         },
-        {
-          title: "Research",
-          collapsable: false,
-          sidebarDepth: 2,
-          children: [
-            "/building-wasabi/WasabiResearchClub.md"
-          ]
-        }
       ],
 
       "/FAQ/": [
