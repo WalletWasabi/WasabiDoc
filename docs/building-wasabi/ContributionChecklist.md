@@ -10,7 +10,7 @@
 So you're interested in contributing to Wasabi - welcome!
 This checklist will get you plugged in and productive as quickly as possible.
 
-:::tip Embrace the cryptoanarchy!
+:::tip Embrace the open-source cryptoanarchy!
 It is not required to work on an existing issue to contribute to Wasabi, and no one is here to tell you what to do.
 Contributors who have their own ideas are free to work in their own forks on whatever they wish, however they wish, and without any permission from anyone.
 With that being said, in order to maximize the usefulness/impact of your work, it's a good idea to consult with other Wasabikas via Slack, GitHub, or other communication channels before setting out on any serious contribution effort.
@@ -21,11 +21,10 @@ With that being said, in order to maximize the usefulness/impact of your work, i
 ---
 
 ## Who is a contributor?
-
 **A contributor is any individual who works to improve and add value to Wasabi and its users.**
 
 :::tip You can become a Wasabika!
-Wasabi is free and open-source software, but contributing is **not** just about writing code.
+Wasabi Wallet is free and open-source software, but contributing is **not** just about writing code.
 This means anything from fixing typos in documentation, answering questions of fellow Wasabikas, creating videos, podcasts and memes, implementing new Wasabi features and everything in-between.
 All such contributions are very welcomed and greatly appreciated.
 :::
@@ -37,31 +36,33 @@ This will help others point you in the right direction.
 - Explore the communication channels and find out what the peers are tinkering on, learn about the project and who is contributing in what way.
 This will help you to find the interesting challenges you can work on.
 
-## Learn how we work
-- Educate yourself about the software and the reason and goal for building it by reading through the [documentation](https://docs.wasabiwallet.io/).
+## Learn how Wasabikas work
+- Educate yourself about the software by reading through [Using Wasabi](/using-wasabi/).
+- Learn what Wasabikas have planned for the [future Of Wasabi Wallet](/building-wasabi/FutureOfWasabiWallet.md).
 - To understand how Wasabi CoinJoins work, read [WabiSabi Framework](https://eprint.iacr.org/2021/206).
 - Familiarize yourself with [C4: The Collective Code Construction Contract](https://rfc.unprotocols.org/spec:1/C4/).
 It’s a simple set of collaboration rules based on GitHub’s fork and pull request model, and a foundational part of how we work together.
 
 ## What to work on
-Education is a vitally important aspect of Bitcoin privacy and Wasabi Wallet specifically.
+Education and development are vitally important aspects of Bitcoin privacy and Wasabi Wallet specifically.
 The more Wasabi users there are, the better their privacy, because [anonymity loves company](https://www.freehaven.net/anonbib/cache/usability:weis2006.pdf).
-The better Wasabi users understand how the software works, the more we can improve it, because of good feedback and improvement ideas.
+The better UX and privacy Wasabi provides, the more there will be users, because of [network effect](https://en.wikipedia.org/wiki/Network_effect).
 
 ### Education Contributor
 1. **Videos, podcasts, memes and articles** are great ways of sharing information to your peers.
-It's very valuable to create wallet tutorial videos, insightful recorded discussions, articles or memes about Wasabi and privacy. 
-2. **Organizing events and doing presentations** about Wasabi Wallet and Bitcoin privacy is also quite useful.
-Connecting like-minded individuals and teaching them about the awesome tools that are available for protecting their financial privacy.
+You can create wallet tutorial videos, insightful recorded discussions, articles or memes about Wasabi and privacy.
+2. **Organizing events and doing presentations** about Wasabi Wallet and Bitcoin privacy.
+Connecting like-minded individuals, who want to take control of their own financial privacy and teaching them about the awesome tools that are available, can be life changing.
 3. **Helping and teaching new users**, once you are familiar with the software, is something that can't be underestimated.
 You can do this in any social media like Twitter, Telegram, Reddit etc or in your own neighborhood.
 
-:::tip zkSNACKs Ltd. is known for compensating some of the educators when they consistently help our new users or create good content about Wasabi Wallet and Bitcoin privacy.
-In case you are doing any of the things listed in this page, feel free to let other Wasabikas know by sending us a link in [Slack](https://join.slack.com/t/tumblebit/shared_invite/enQtNjQ1MTQ2NzQ1ODI0LWIzOTg5YTM3YmNkOTg1NjZmZTQ3NmM1OTAzYmQyYzk1M2M0MTdlZDk2OTQwNzFiNTg1ZmExNzM0NjgzY2M0Yzg).
+:::tip [zkSNACKs Ltd.](https://zksnacks.com/) is known for compensating some of the educators when they consistently help out new users or create good content. 
+The company is actively sponsoring Bitcoin events and organizing [Contribution Games](https://blog.wasabiwallet.io/coming-soon-contribution-games/).
+In case you have been contributing already, feel free to let other Wasabikas know by sending us a link in [Slack](https://join.slack.com/t/tumblebit/shared_invite/enQtNjQ1MTQ2NzQ1ODI0LWIzOTg5YTM3YmNkOTg1NjZmZTQ3NmM1OTAzYmQyYzk1M2M0MTdlZDk2OTQwNzFiNTg1ZmExNzM0NjgzY2M0Yzg).
 :::
 
 ### GitHub Contributor
-1. **Find a problem somewhere in Wasabi-repositories** that (a) needs fixing or improvement and (b) is a match for your skills and interests.
+1. **Find a problem somewhere in Wasabi-land** that (a) needs fixing or improvement and (b) is a match for your skills and interests.
 Browse [open issues](https://github.com/zksnacks/walletwasabi/issues) and ask around about what other contributors think needs fixing.
 Because while you don’t need anybody’s permission and you can work on whatever you want, you’ll want to know up front whether anybody else is going to care about the work you do.
 2. **Do work to fix that problem.** Submit your fix for review with a pull request (for [code](https://github.com/zkSNACKs/WalletWasabi/pulls?q=is%3Apr+is%3Aopen+sort%3Aupdated-desc) and [documentation](https://github.com/zkSNACKs/WasabiDoc/pulls) changes) or with a GitHub [issue](https://github.com/zksnacks/walletwasabi/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc) (for everything else).
@@ -69,12 +70,6 @@ Because while you don’t need anybody’s permission and you can work on whatev
 Make it as easy as possible for others to review your work. Make it a *pleasure* for others to review your work.
 4. **Incorporate review feedback** you get until your fix gets merged or is otherwise accepted.
 5. Repeat steps 1–4.
-
-Do this in order to ensure your contribution is:
-
-- something that the maintainers would be likely to merge;
-- subjected to as much feedback as possible while still an idea and thus cheap to change or abort;
-- something that might be considered in the [contribution game](/building-wasabi/ContributionGame.md) and bounty programs.
 
 Remember: _every contributor_ is free to work on what they want, including maintainers who may or may not want to review and merge your pull request if they don't have any prior context for it, or reason to believe it's worth spending their time on.
 
