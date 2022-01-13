@@ -10,9 +10,9 @@
 So you're interested in contributing to Wasabi - welcome!
 This checklist will get you plugged in and productive as quickly as possible.
 
-:::tip Embrace the open-source cryptoanarchy!
+:::tip Embrace the open-source crypto-anarchy!
 It is not required to work on an existing issue to contribute to Wasabi, and no one is here to tell you what to do.
-Contributors who have their own ideas are free to work in their own forks on whatever they wish, however they wish, and without any permission from anyone.
+Contributors who have their own ideas are free to work at their own forked version on whatever they want, however they wish and without any permission from anyone.
 With that being said, in order to maximize the usefulness/impact of your work, it's a good idea to consult with other Wasabikas via Slack, GitHub, or other communication channels before setting out on any serious contribution effort.
 :::
 
@@ -55,13 +55,13 @@ The better UX and privacy Wasabi provides, the more there will be users, because
 
 ### Education Contributor
 1. **Videos, podcasts, memes and articles** are great ways of sharing information to your peers.
-You can create wallet tutorial videos, insightful recorded discussions, articles or memes about Wasabi and privacy.
+You can create wallet tutorials, record insightful discussions, write articles or make memes about Wasabi and privacy.
 2. **Organizing events and doing presentations** about Wasabi Wallet and Bitcoin privacy.
 Connecting like-minded individuals, who want to take control of their own financial privacy and teaching them about the awesome tools that are available, can be life changing.
 3. **Helping and teaching new users**, once you are familiar with the software, is something that can't be underestimated.
 You can do this in any social media like Twitter, Telegram, Reddit etc or in your own neighborhood.
 
-:::tip [zkSNACKs Ltd.](https://zksnacks.com/) is known for compensating some of the educators when they consistently help out new users or create good content. 
+:::tip [zkSNACKs Ltd.](https://zksnacks.com/) is known for compensating educators who consistently help out new users or create good content. 
 The company is actively sponsoring Bitcoin events and organizing [Contribution Games](https://blog.wasabiwallet.io/coming-soon-contribution-games/).
 In case you have been contributing already, feel free to let other Wasabikas know by sending us a link in [Slack](https://join.slack.com/t/tumblebit/shared_invite/enQtNjQ1MTQ2NzQ1ODI0LWIzOTg5YTM3YmNkOTg1NjZmZTQ3NmM1OTAzYmQyYzk1M2M0MTdlZDk2OTQwNzFiNTg1ZmExNzM0NjgzY2M0Yzg).
 :::
