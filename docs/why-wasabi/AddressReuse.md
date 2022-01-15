@@ -61,6 +61,6 @@ When given a hardened child private key, then the parent private key cannot be c
 A new Bitcoin address will be generated after user types in the receiver-label.
 Even when the same label is being written multiple times, Wasabi always generates a new receive address.
 Previously generated addresses, which haven't received bitcoin yet, are displayed at `Unused Receive Addresses`.
-An address will automatically be removed from the `Unused Receive Addresses` list when that address has received any funds.
+When the wallet recognizes a transaction to an address displayed at "Unused Receive Addresses", that address will automatically be removed from the list.
 
 To protect against forced address reuse attack (Dusting), Wasabi has a modifiable [dust limit](/FAQ/FAQ-UseWasabi.md#what-is-the-dust-threshold), where the wallet does not show coins below a certain threshold value.
