@@ -52,11 +52,7 @@ This is someone intentionally deanonymizing himself, and he might have quite dub
 ### Remove used address from GUI
 
 Wasabi encourages users to not reuse addresses.
-Wasabi uses the industry best practice [BIP 44 Multi-Account Hierarchy for Deterministic Wallets](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki), where from one master secret a tree structure of child private keys are generated.
-It is deterministic because the same parent secret always calculates the same child private keys.
-BIP 44 HD wallets use an alternative key derivation function called "hardened derivation", which alters the relationship between parent keys and child keys in a way that increases security significantly.
-When given a hardened child private key, then the parent private key cannot be calculated.
-
+You get a new Bitcoin address whenever you generate one.
 A new Bitcoin address will be generated after user types in the receiver-label.
 Even when the same label is being written multiple times, Wasabi always generates a new receive address.
 Previously generated addresses, which haven't received bitcoin yet, are displayed at `Unused Receive Addresses`.
