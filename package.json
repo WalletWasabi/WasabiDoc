@@ -30,6 +30,7 @@
     "node": ">=10.16"
   },
   "dependencies": {
+    "follow-redirects": "^1.14.7",
     "glob-parent": "^6.0.2",
     "highlight.js": "^11.3.1",
     "node-forge": "^1.2.1",
