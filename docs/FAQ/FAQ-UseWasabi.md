@@ -86,7 +86,7 @@ A secure password manager software might also be used, but be careful here.
 ### Where can I find the Wasabi data folder?
 
 * Windows: `/Users/{your username}/AppData/Roaming/WalletWasabi/Client`
-* Linux: `/Home/.walletwasabi/client`
+* Linux: `/home/{your username}/.walletwasabi/client`
 * macOS: `/Users/{your username}/.walletwasabi/client`
 
 :::tip
