@@ -477,11 +477,10 @@ Users of this update do not break the rules of legacy users, but rather restrict
 :::details
 ### Taproot
 
-Taproot is an upgrade to the Bitcoin consensus rules.
-The Taproot upgrade contains three distinct upgrades to the Bitcoin protocol: Schnorr Signatures, Taproot, and Tapscript.
-It was activitated via a softfork in 2021. 
-Taproot will set the stage for extra functionality to Bitcoin by optimizing scalability, privacy and smart contract functionality.
-The Taproot softfork adds another output type called "Pay to Taproot" (P2TR).
+Taproot is an upgrade to Bitcoin which introduces several new features.
+Taproot integrates the Schnorr Digital Signature Scheme into Bitcoin, upgrading Bitcoin’s core cryptography.
+Taproot builts on the SegWit upgrade to improve Bitcoin’s privacy and lower transaction fees.
+Taproot makes future Bitcoin upgrades easier by reforming Bitcoin’s scripting language.
 :::
 
 :::details
