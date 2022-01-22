@@ -475,6 +475,15 @@ Users of this update do not break the rules of legacy users, but rather restrict
 :::
 
 :::details
+### Taproot
+
+Taproot is an upgrade to Bitcoin which introduces several new features.
+Taproot integrates the Schnorr digital signature scheme into Bitcoin, upgrading Bitcoin’s core cryptography.
+Taproot builds on the SegWit upgrade to improve Bitcoin’s privacy and lower transaction fees.
+Taproot makes future Bitcoin upgrades easier by reforming Bitcoin’s scripting language.
+:::
+
+:::details
 ### Testnet
 
 A testing environment in which users can obtain and spend satoshis that have no real-world value on a global network that is very similar to the Bitcoin mainnet.
