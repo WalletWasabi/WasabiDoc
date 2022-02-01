@@ -63,7 +63,8 @@ Although the coinjoin protocol is a bit complex, it is very easy to use in Wasab
 By default, the wallet automatically starts coinjoining received UTXO's that are larger than 0.01 BTC, after a few minutes have passed since the transaction was confirmed or since a wallet with confirmed coins have been open but idle.
 At this point, Wasabi will deduct 0,3% from that total UTXO balance as coordinator fee and the necessary network fee. 
 Once all or some of these coins are properly mixed, the corresponding amount will show up in the software's main view as "private coins".
-The wallet will then automatically mix the remaining coins or the change outputs that the user receives back after creating transactions, but the coordinator fees will not be charged from the user again. Although, Bitcoin network transaction fees still apply.
+The wallet will then automatically mix the remaining coins or the change outputs that the user receives back after creating transactions, but the coordinator fees will not be charged from the user again.
+Although, Bitcoin network transaction fees still apply.
 
 When the user only has UTXO's smaller than 0.01 BTC, the wallet will switch to _Plebs Don't Pay -mode_, which means it won't automatically coinjoin the users coins.
 Users will still be able to manually participate in coinjoins if they wish and they won't need to pay any coordinator fees.
@@ -76,7 +77,7 @@ In Wasabi, you can use the `Send` button to give your bitcoin to someone else or
 1. Click the `Send` button (top right corner) at the main view.
 2. Insert the address of the receiver.
 3. Specify the amount the receiver should get and click `Continue`.
-4. At `Advanced options` you can set a custom transaction fee, otherwise the wallet automatically estimates it.
+4. At `Advanced options` you can set a custom transaction fee rate, otherwise the wallet automatically estimates it.
 6. Make sure everything is filled in correctly in `Preview Transaction` window and click `Confirm`.
 7. Optionally, you can click the shield image (top right corner) at `Preview Transaction` to see suggestions on how to avoid generating a change output in this payment.
 8. Enter the name of the person or company receiving the payment and click `Continue`.
