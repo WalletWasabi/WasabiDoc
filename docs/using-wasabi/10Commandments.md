@@ -37,7 +37,7 @@ Lastly, understand that if you lose your password, it becomes much harder (if no
 
 Each time you generate an address to [receive bitcoin](/using-wasabi/Receive.md) or you [send a transaction](/using-wasabi/Send.md), you must label the address with the observers and receivers of this transaction.
 This label helps you use your bitcoin privately, and is stored exclusively on your device.
-Wasabi has strong automatic coin control features, and as you continue to use the wallet, it automatically coinjoins these coins to enable the user to continue making payments without having to worry about revealing their transaction history.
+Wasabi has strong automatic coin control features, and as you continue to use the wallet, it automatically coinjoins these coins to enable you to continue making payments without having to worry about revealing your transaction history.
 
 Lastly, in the same way, that you should never receive bitcoin to the same address twice, you should try to avoid sending bitcoin to the same address twice.
 So ask the recipients to provide you a new address for every transaction.
