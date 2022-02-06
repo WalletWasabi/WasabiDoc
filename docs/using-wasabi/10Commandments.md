@@ -44,7 +44,7 @@ So ask the recipients to provide you a new address for every transaction.
 
 ## 5. Be smart, be patient
 
-The process of engaging in a [coinjoin](/using-wasabi/CoinJoin.md) happens automatically by default to wallets that receive over 1M sat payment but it takes time.
+The process of engaging in a [coinjoin](/using-wasabi/CoinJoin.md) happens automatically by default whenever you have more than 0.005 BTC in the wallet but it takes a while.
 For coins to get coinjoined, you must keep your computer online and awake, because this is an interactive process.
 As a coinjoin is just many users (up to 100) enqueuing coins, it may take up to one hour for you to successfully participate in a coinjoin.
 Once you've done so, you will see the amount of `Private coins` increase.
