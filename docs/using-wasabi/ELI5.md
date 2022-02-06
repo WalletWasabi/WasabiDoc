@@ -58,14 +58,14 @@ See [this chapter](/using-wasabi/Receive.md) for a tutorial on how to properly l
 
 ## Sending bitcoin
 
-In Wasabi, you can use the `Send` button to give your bitcoin to someone else or send them to another wallet of yours.
 1. Click the `Send` button (top right corner) at the main view.
 2. Insert the address of the receiver.
 3. Specify the amount the receiver should get and click `Continue`.
 4. Make sure everything is filled in correctly in `Preview Transaction` window and click `Confirm`.
 5. Enter the name of the person or company receiving the payment and click `Continue`.
 6. Type in your password and click `Continue`.
-7. You will now see a pop-up window telling you that the transaction is broadcasted to the Bitcoin network.
+
+You will now see a pop-up window telling you that the transaction is broadcasted to the Bitcoin network.
 
 See [this chapter](/using-wasabi/Send.md) for more details about sending bitcoin and the privacy nuances of it.
 
