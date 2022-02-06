@@ -28,7 +28,7 @@ This way, if a malicious person manages to find one of them, he or she still nee
 It also gives you time to move your coins to a different wallet if you notice that one of the two storage locations has been compromised.
 
 
-Wasabi is a fully non-custodial wallet, which means that you are always in possession of your keys, and this means you should safely store your backups.
+Wasabi is a fully non-custodial wallet, which means that you are always in possession of your keys, and thus you should safely store your backups.
 If you have done this step, then even if your computer crashes, there is very little you have to worry about, you can always [recover your wallet](/using-wasabi/WalletRecovery.md).
 Also, under no circumstance should you reveal the password or mnemonic words to anyone that asks for them.
 Lastly, understand that if you lose your password, it becomes much harder (if not impossible) to restore your wallet, so store both safely!
@@ -37,17 +37,17 @@ Lastly, understand that if you lose your password, it becomes much harder (if no
 
 Each time you generate an address to [receive bitcoin](/using-wasabi/Receive.md) or you [send a transaction](/using-wasabi/Send.md), you must label the address with the observers and receivers of this transaction.
 This label helps you use your bitcoin privately, and is stored exclusively on your device.
-Wasabi has strong automatic coin control features, and as you continue to use the wallet, it automatically coinjoins these coins to enable you to continue making payments without having to worry about revealing your transaction history.
+Wasabi has strong automatic coin control features, and as you use the wallet, it automatically coinjoins these coins to enable you to continue making payments without having to worry about revealing your transaction history.
 
 Lastly, in the same way, that you should never receive bitcoin to the same address twice, you should try to avoid sending bitcoin to the same address twice.
 So ask the recipients to provide you a new address for every transaction.
 
 ## 5. Be smart, be patient
 
-The process of engaging in a [coinjoin](/using-wasabi/CoinJoin.md) happens automatically by default whenever you have more than 0.005 BTC in the wallet but it takes a while.
+By default, the process of participating in a [coinjoin](/using-wasabi/CoinJoin.md) happens automatically in the background.
 For coins to get coinjoined, you must keep your computer online and awake, because this is an interactive process.
 As a coinjoin is just many users (up to 100) enqueuing coins, it may take up to one hour for you to successfully participate in a coinjoin.
-Once you've done so, you will see the amount of `Private coins` increase.
+Once you've done so, you will see the amount of `Private coins` increase in the main view.
 
 As more users join the network, the frequency of these coinjoins will go up.
 Lastly, you can remix your coins without additional coordinator fee for up to 1 hop away.
