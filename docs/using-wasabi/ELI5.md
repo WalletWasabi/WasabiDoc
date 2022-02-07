@@ -71,7 +71,7 @@ See [this chapter](/using-wasabi/Send.md) for more details about sending bitcoin
 
 ## Coinjoin with Wasabi
 
-If you don't like that your employer knows about where you spend your money, or that a merchant can find out how much money you have, using Wasabi is the obvious choice.
+If you don't like that your employer knows about where you spend your money, or that a merchant can find out how much money you have, then you should coinjoin your bitcoin, as this breaks link to its transaction history.
 Although the coinjoin protocol is a bit complex, it is very easy to use in Wasabi.
 By default, the wallet automatically starts coinjoining received UTXO's few minutes after the transaction is confirmed.
 Once all or some of these funds are properly coinjoined, the corresponding amount will show up in the software's main view as "private coins".
