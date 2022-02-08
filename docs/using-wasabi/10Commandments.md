@@ -42,7 +42,7 @@ Wasabi has strong automatic coin control features, and as you use the wallet, it
 Lastly, in the same way, that you should never receive bitcoin to the same address twice, you should try to avoid sending bitcoin to the same address twice.
 So ask the recipients to provide you a new address for every transaction.
 
-## 5. Be smart, be patient
+## 5. CoinJoin whenever possible and be patient
 
 By default, the process of participating in a [coinjoin](/using-wasabi/CoinJoin.md) happens automatically in the background.
 For coins to get coinjoined, you must keep your computer online and awake, because this is an interactive process.
