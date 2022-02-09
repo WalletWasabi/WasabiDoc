@@ -1,63 +1,43 @@
 ---
 {
   "title": "CoinJoin",
-  "description": "A step by step guide on how to do Wasabi CoinJoins. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
+  "description": "A detailed explanation about how WabiSabi coinjoins work under the hood. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
 }
 ---
 
-# CoinJoin
+# Coinjoin
 
-A [CoinJoin](https://en.bitcoin.it/Privacy#CoinJoin) is a special Bitcoin transaction where several peers get together to literally join their coins in a single transaction.
+A [coinjoin](https://en.bitcoin.it/Privacy#CoinJoin) is a special Bitcoin transaction where several peers get together to literally join their coins in a single transaction.
 They collaboratively build a transaction where each of them provides some coins as inputs, and fresh addresses as outputs.
 The concept has been around since the early days of Bitcoin, and it was formalized by the great Greg Maxwell in [this awesome introductory thread](https://bitcointalk.org/index.php?topic=279249.msg2983902).
 
-The goal is to gain privacy by breaking the link of which input "pays" which output so that any of the outputs cannot be attributed to the owner of the input.
-Therefore, it is very important that the values of the outputs are exactly equal.
-Wasabi enables trustless (meaning nobody can steal) and private (meaning even the coordinator cannot spy) Schnorr blind signature CoinJoin according to the [ZeroLink fungibility framework](https://github.com/nopara73/zerolink).
+The goal is to gain privacy by breaking the link of which input "pays" which output so that none of the outputs cannot be attributed to the owner of the input.
+WabiSabi enables centrally coordinated coinjoins with variable amounts in a trustless (meaning nobody can steal) and private (meaning even the coordinator cannot spy) manner, as described in [WabiSabi Framework report](https://eprint.iacr.org/2021/206).
 
 [[toc]]
 
 ---
 
-## Doing CoinJoin step-by-step
+## Coinjoin step-by-step
 
-1. Launch Wasabi, and open your wallet that contains the coins that you want to CoinJoin.
+Launch Wasabi, and open your wallet that contains the coins that you want to coinjoin.
 Notice that it is not yet possible to CoinJoin from a hardware wallet, the keys must be "hot" on your computer.
-Then click on the `CoinJoin` tab, either from the top tabs or the right-side `Wallet Explorer`.
 
-![Wasabi Wallet CoinJoin tab](/CoinJoin.png "Wasabi Wallet CoinJoin tab")
+By default, Wasabi starts automatically coinjoining the funds whenever there's more than 0.01 BTC in total. 
+Wallets with less than 0.01 BTC are in _PlebStop-mode_, where funds are not coinjoined automatically.
+User can change the limit from the settings and boost the wallets privacy for one session if wanted.
 
-2. Select up to seven coins for coinjoining by clicking the checkbox in the coin list.
-The selected value must be above the minimum required amount, currently roughly `0.1 bitcoin`.
+In the first coinjoin, a 0.3% coordinator fee will be taken from UTXO's bigger than 0.01 BTC.
+Smaller ones don't pay coordinator fees at all, according to _PlebsDontPay_ rule.
 
-	:::danger Consolidation is not good for privacy
-	Try not to select coins with different privacy shields (different anonymity sets) to CoinJoin in the same round.
-	This is because the coins with the higher anonymity set will lose some of their anonymity set, to equal the anonymity set of the lower ones.
-	The best option would be to select coins with the same anonymity set.
-	:::
-
-3. Specify anonymity set target.
-Wasabi will automatically re-register your coin for the next round until this target is reached.
-You can easily toggle between three levels by clicking on the shield.
-You can also [change the value](/FAQ/FAQ-UseWasabi.md#how-can-i-change-the-anonset-target) of the three shields in the settings.
-
-![Wasabi Wallet yellow anonymity set target](/CoinJoinAnonsetTargetYellow.png "Wasabi Wallet yellow anonymity set target")
-![Wasabi Wallet green anonymity set target](/CoinJoinAnonsetTargetGreen.png "Wasabi Wallet green anonymity set target")
-![Wasabi Wallet green checkmark anonymity set target](/CoinJoinAnonsetTargetCheck.png "Wasabi Wallet green checkmark anonymity set target")
-
-4. Enter your password and click `Enqueue Selected Coins`.
-You only have to enter your password for the first round of mixing, as any automatic re-mix rounds are done without requiring a password input.
-
-![Wasabi Wallet CoinJoin process](/CoinJoinCoinsBeingCoinJoined.png "Wasabi Wallet CoinJoin process")
-
-5. Now, wait until the CoinJoin is complete.
-The round starts either as soon as 100 peers have registered their coins, or after one hour has elapsed since the last round.
-From now on there is no more user input required.
+The round starts either as soon as 100 inputs have been registered, or after one hour has elapsed since the last round.
 Just leave Wasabi running in the background of your computer.
 
-![Wasabi Wallet CoinJoin status](/CoinJoinStatus.png "Wasabi Wallet CoinJoin status")
+Remixing is free, as well as coinjoining coins 1 hop from coinjoin, although, Bitcoin network fees still do apply.
+So if you send a payment and receive a change output, Wasabi will automatically remix it without you having to pay coordinator fees again. 
+The recipient of the payment will also be able to coinjoin the funds he recieved with only the cost of network fees, as long he/she is also using Wasabi or other WabiSabi compatible Bitcoin wallet.
 
-6. When the CoinJoin is finished, and the CoinJoin transaction is broadcast, you will receive at least one anonymity set coin <img src="/ShieldCheckmark.png" alt="Wasabi Wallet green checkmark shield" class="shield" /> <img src="/ShieldGreen.png" alt="Wasabi Wallet green shield" class="shield" /> <img src="/ShieldYellow.png" alt="Wasabi Wallet yellow shield" class="shield" />, and possibly non-private change <img src="/ShieldRed.png" alt="Wasabi Wallet red shield" class="shield" />.
+Once a coin achieves enough ambiguity, the corresponding amount will show up in the software's main view as "private coins".
 
 ## ZeroLink protocol step-by-step
 
