@@ -50,7 +50,7 @@ As a coinjoin is just many users (up to 100) enqueuing coins, it may take up to 
 Once you've done so, you will see the amount of `Private coins` increase in the main view.
 
 As more users join the network, the frequency of these coinjoins will go up.
-Lastly, you can remix your coins without additional coordinator fee for up to 1 hop away.
+Lastly, you can remix your coins without additional coordinator fee for up to one hop away.
 This provides you and the other coinjoin participants with plenty of additional privacy.
 
 ## 6. Never merge private and non-private coins
