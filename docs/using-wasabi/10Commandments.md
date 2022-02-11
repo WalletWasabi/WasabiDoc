@@ -13,7 +13,7 @@
 
 ## 1. Wasabi is for defense only
 
-Wasabi is a powerful free and open-source Bitcoin wallet, and it is used to protect your privacy.
+Wasabi Wallet is a powerful free and open-source Bitcoin wallet, and it is used to protect your privacy.
 
 ## 2. Verify the integrity of your software
 
@@ -28,38 +28,35 @@ This way, if a malicious person manages to find one of them, he or she still nee
 It also gives you time to move your coins to a different wallet if you notice that one of the two storage locations has been compromised.
 
 
-Wasabi is a fully non-custodial wallet, which means that you are always in possession of your keys, and this means safely storing a backup.
+Wasabi is a fully non-custodial wallet, which means that you are always in possession of your keys, and thus you should safely store your backups.
 If you have done this step, then even if your computer crashes, there is very little you have to worry about, you can always [recover your wallet](/using-wasabi/WalletRecovery.md).
 Also, under no circumstance should you reveal the password or mnemonic words to anyone that asks for them.
 Lastly, understand that if you lose your password, it becomes much harder (if not impossible) to restore your wallet, so store both safely!
 
 ## 4. Practice good labeling AND try to never reuse addresses
 
-Each time you generate an address to [receive bitcoin](/using-wasabi/Receive.md) or you [send a transaction](/using-wasabi/Send.md), you must label the address with the observers of this transaction.
+Each time you generate an address to [receive bitcoin](/using-wasabi/Receive.md) or you [send a transaction](/using-wasabi/Send.md), you must label the address with the observers and receivers of this transaction.
 This label helps you use your bitcoin privately, and is stored exclusively on your device.
-Wasabi has strong coin control features, and as you continue to use the wallet properly, you can see who knows about your coins.
+Wasabi has strong automatic coin control features, and as you use the wallet, it automatically coinjoins these coins to enable you to continue making payments without having to worry about revealing your transaction history.
 
 Lastly, in the same way, that you should never receive bitcoin to the same address twice, you should try to avoid sending bitcoin to the same address twice.
 So ask the recipients to provide you a new address for every transaction.
 
 ## 5. CoinJoin whenever possible and be patient
 
-The process of engaging in a [CoinJoin](/using-wasabi/CoinJoin.md) is as simple as selecting a coin to enqueue and entering your password.
-Once coins have enqueued for coinjoining, you must keep your computer online and awake, because this is an interactive process.
-As a CoinJoin is just many users (up to 100) enqueuing coins, it may take up to one hour for you to successfully participate in a CoinJoin.
+By default, the process of participating in a [coinjoin](/using-wasabi/CoinJoin.md) happens automatically in the background.
+For coins to get coinjoined, you must keep your computer online and awake, because this is an interactive process.
+As a coinjoin is just many users (up to 100) enqueuing coins, it may take up to one hour for you to successfully participate in a coinjoin.
+Once you've done so, you will see the amount of `Private coins` increase in the main view.
 
-As more users join the network, the frequency of these CoinJoins will go up.
-Lastly, if you remix your coins, this provides you and the other participants with plenty of additional privacy.
+As more users join the network, the frequency of these coinjoins will go up.
+Lastly, you can remix your coins without additional coordinator fee for up to one hop away.
+This provides you and the other coinjoin participants with plenty of additional privacy.
 
-## 6. Never merge mixed and unmixed coins, and avoid large merges of mixed coins
+## 6. Never merge private and non-private coins
 
-The first part should be somewhat intuitive - coins in your wallet have anonymity set shields, and it is very important to never send <img src="/ShieldCheckmark.png" alt="Wasabi Wallet green checkmark shield anonymity set" title="Wasabi Wallet green checkmark shield anonymity set" class="shield" /> <img src="/ShieldGreen.png" alt="Wasabi Wallet green shield anonymity set" title="Wasabi Wallet green shield anonymity set" class="shield" /> <img src="/ShieldYellow.png" alt="Wasabi Wallet yellow shield anonymity set" title="Wasabi Wallet yellow shield anonymity set" class="shield" /> coins (with anonset > 1) with <img src="/ShieldRed.png" alt="Wasabi Wallet red shield anonymity set" title="Wasabi Wallet red shield anonymity set" class="shield" /> coins (with anonset = 1).
-By merging your tainted coins with your mixed coins, you undo the privacy benefits of CoinJoins!
-
-Further, when sending mixed coins to your cold storage, make sure to send your coins in small batches after each other.
-Don't merge all of your bitcoin in one single transaction!
-This would reveal that one entity controls all of these several coins.
-Instead, take your time and send coins to multiple addresses of your cold storage over a few hours or days.
+It's highly recommended that users don't send payments using private and non-private coins in the same transaction.
+By merging your non-private coins with your private coins, you undo the privacy benefits of coinjoins, so be patient and if possible, wait till Wasabi automatically coinjoins more of your funds before making the payment.
 
 For more information, please see the discussions [here](https://www.reddit.com/r/WasabiWallet/comments/avxbjy/combining_mixed_coins_privacy_megathread/).
 
@@ -96,4 +93,4 @@ In the same way that reusing addresses hurts your privacy, consolidating all of 
 Wasabi is an ideal wallet for many things, but trade-offs exist with everything.
 Lightning is still a project in its early days, but the privacy topology of lightning payments is much more ideal over on-chain payments if you have the choice.
 Routing large amounts can be uncertain, but for small amounts, the network is becoming steadily more reliable.
-Currently, Wasabi does not support in-wallet lightning features, but it is on the road-map.
+Currently, Wasabi does not support in-wallet lightning features, but the creators of the wallet have already announced a [grant](https://blog.wasabiwallet.io/1-btc-ln-privacy-grant/) for researching it.
