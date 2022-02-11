@@ -55,7 +55,7 @@ This provides you and the other coinjoin participants with plenty of additional 
 
 ## 6. Never merge private and non-private coins
 
-Wasabi can't and shouldn't decide what users should do with their funds but it's highly recommended that users don't send payments using private and non-private coins in the same transaction.
+It's highly recommended that users don't send payments using private and non-private coins in the same transaction.
 By merging your non-private coins with your private coins, you undo the privacy benefits of coinjoins, so be patient and if possible, wait till Wasabi automatically coinjoins more of your funds before making the payment.
 
 For more information, please see the discussions [here](https://www.reddit.com/r/WasabiWallet/comments/avxbjy/combining_mixed_coins_privacy_megathread/).
