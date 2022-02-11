@@ -11,8 +11,8 @@ A [coinjoin](https://en.bitcoin.it/Privacy#CoinJoin) is a special Bitcoin transa
 They collaboratively build a transaction where each of them provides some coins as inputs, and fresh addresses as outputs.
 The concept has been around since the early days of Bitcoin, and it was formalized by the great Greg Maxwell in [this awesome introductory thread](https://bitcointalk.org/index.php?topic=279249.msg2983902).
 
-The goal is to gain privacy by breaking the link of which input "pays" which output so that none of the outputs cannot be attributed to the owner of the input.
-WabiSabi enables centrally coordinated coinjoins with variable amounts in a trustless (meaning nobody can steal) and private (meaning even the coordinator cannot spy) manner, as described in [WabiSabi Framework report](https://eprint.iacr.org/2021/206).
+The goal is to gain privacy by breaking the link of which input "pays" which output so that none of the outputs can be attributed to the owner of the input.
+WabiSabi enables centrally coordinated coinjoins with variable amounts in a trustless (meaning nobody can steal) and private (meaning even the coordinator cannot spy) manner, as described in [WabiSabi protcol](https://eprint.iacr.org/2021/206).
 
 [[toc]]
 
@@ -23,11 +23,11 @@ WabiSabi enables centrally coordinated coinjoins with variable amounts in a trus
 Launch Wasabi, and open your wallet that contains the coins that you want to coinjoin.
 Notice that it is not yet possible to CoinJoin from a hardware wallet, the keys must be "hot" on your computer.
 
-By default, Wasabi starts automatically coinjoining the funds whenever there's more than 0.01 BTC in total. 
-Wallets with less than 0.01 BTC are in _PlebStop-mode_, where funds are not coinjoined automatically.
+By default, Wasabi starts automatically coinjoining the funds whenever there's more than 0.01 BTC non private in total.
+Wallets with less than or equal to 0.01 BTC are in _PlebStop_ mode, where funds are not coinjoined automatically.
 User can change the limit from the settings and boost the wallets privacy for one session if wanted.
 
-In the first coinjoin, a 0.3% coordinator fee will be taken from UTXO's bigger than 0.01 BTC.
+In the first coinjoin, a 0.3% coordinator fee will be taken from UTXOs bigger than 0.01 BTC.
 Smaller ones don't pay coordinator fees at all, according to _PlebsDontPay_ rule.
 
 The round starts either as soon as 100 inputs have been registered, or after one hour has elapsed since the last round.
