@@ -54,6 +54,6 @@ This is someone intentionally deanonymizing himself, and he might have quite dub
 Wasabi encourages the user to not reuse addresses.
 You always get a new Bitcoin address whenever you generate one.
 Previously generated addresses, which haven't received bitcoin yet, are displayed at `Unused Receive Addresses`.
-When the wallet recognizes a transaction to an address displayed at "Unused Receive Addresses", that address will automatically be removed from the list.
+An address is automatically removed from the `Unused Receive Addresses` list once that address receives any funds.
 
 To protect against forced address reuse attack (Dusting), Wasabi has a modifiable [dust limit](/FAQ/FAQ-UseWasabi.md#what-is-the-dust-threshold), where the wallet does not show coins below a certain threshold value.
