@@ -53,7 +53,6 @@ This is someone intentionally deanonymizing himself, and he might have quite dub
 
 Wasabi encourages the user to not reuse addresses.
 You get a new Bitcoin address whenever you generate one.
-A new Bitcoin address will be generated after the user types in the receiver-label.
 Even when the same label is being written multiple times, Wasabi always generates a new receive address.
 Previously generated addresses, which haven't received bitcoin yet, are displayed at `Unused Receive Addresses`.
 When the wallet recognizes a transaction to an address displayed at "Unused Receive Addresses", that address will automatically be removed from the list.
