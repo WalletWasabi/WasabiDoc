@@ -1,13 +1,14 @@
 <p align="center">
   <a href="https://docs.wasabiwallet.io">
-    <img src="docs/.vuepress/public/WasabiWalletDocs.png" alt="Wasabi Wallet Documentation" title="Wasabi Wallet Documentation" class="Image" />
+    <img src="https://i.imgur.com/4tazbiF.png" alt="Under Construction" title="Wasabi Wallet Documentation Is Under Construction" class="Image" />
   </a>
 </p>
+
+DOCUMENTATION FOR WASABI 2.0 HAS ONLY BEGUN. BE AWARE THAT MANY PAGES HAVE NOT YET BEEN UPDATED TO MATCH THE NEW SOFTWARE RELEASE!
 
 [Wasabi Wallet](https://wasabiwallet.io) is an open-source, non-custodial, privacy focused Bitcoin wallet for desktop. It implements a trustless privacy technique, called [WabiSabi CoinJoin](https://eprint.iacr.org/2021/206).
 
 This is Wasabi Wallet's open-source [documentation](https://docs.wasabiwallet.io) repository.
-Here you will find information about the nuances of privacy in Bitcoin, how Wasabi solves some of the existing problems, and how you can use this tool to defend yourself.
 
 If you would like to support the project by educating other people, this documentation repository is the right place for your efforts!
 If you have a question regarding the documentation, please [open an issue](https://github.com/zkSNACKs/WasabiDoc/issues).
