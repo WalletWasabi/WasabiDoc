@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="#">
+  <a href="https://docs.wasabiwallet.io">
     <img src="https://user-images.githubusercontent.com/51679301/173640921-827d7f4f-5bb8-432b-9c53-7146a7ca6763.png" alt="Under Construction" title="Documentation Under Construction" class="Image" />
   </a>
 </p>
