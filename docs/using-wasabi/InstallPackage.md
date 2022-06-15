@@ -56,8 +56,6 @@ Among others, here is where your wallet files and your logs reside.
 
 @[youtube](tkaaC8yET1o)
 
-@[youtube](D8U53PFEsVk)
-
 ## Debian and Ubuntu
 
 If you have already imported zkSNACKs' PGP public key, then jump to step 2.
