@@ -38,7 +38,7 @@ You can set a unique name for the wallet so that you remember what it is for.
 Choose a very secure password, as this encrypts the secrets, and should not be guessed by others.
 You will always need this password in order to spend your bitcoins, so take great care to back it up properly.
 In the next step, Wasabi will show your 12 recovery words.
-These must also be carefully backed up, as they are needed to recover your wallet (together with the password) on another computer or in another wallet software.
+These must also be carefully backed up, in the correct order, as they are needed to recover your wallet (together with the password) on another computer or in another wallet software.
 Make sure you store the backup of your recovery words in a different location than the backup of your password.
 
 :::warning Backup both!
@@ -53,16 +53,19 @@ In order to receive bitcoin, you should generate an address in the `Receive` tab
 But first, you must label it with the names of any observers who know that this address is yours.
 For example, if Alice pays you back for last nights pizza, then the label is `Alice`.
 This is an important feature for you and the wallet to know which coin is from whom, and it will help with your privacy in the future.
+Once this newly generated address receives some coins, Wasabi Wallet will automatically hide this used address, so you don't reuse it by accident.
+In case you want to coinjoin these coins, click Play in the main views musicbox and choose a fitting profile setting for your wallet.
 
 See [this chapter](/using-wasabi/Receive.md) for a tutorial on how to properly label your addresses and receive bitcoin.
 
 ## Sending bitcoin
 
+Sending process is different depending on the privacy of coins you have. Assuming you have enough private coins the sending process is the following:
+
 1. Click the `Send` button (top right corner) at the main view.
-2. Insert the address of the receiver.
-3. Specify the amount the receiver should get and click `Continue`.
+2. Insert the address of the receiver and type in the amount the receiver should get, then click `Continue`.
+3. Enter the name of the person or company receiving the payment and click `Continue`.
 4. Make sure everything is filled in correctly in `Preview Transaction` window and click `Confirm`.
-5. Enter the name of the person or company receiving the payment and click `Continue`.
 6. Type in your password and click `Continue`.
 
 You will now see a pop-up window telling you that the transaction is broadcasted to the Bitcoin network.
@@ -73,8 +76,8 @@ See [this chapter](/using-wasabi/Send.md) for more details about sending bitcoin
 
 If you don't like that your employer knows where you spend your money, or that a merchant can find out how much money you have, then you should coinjoin your bitcoin, as this breaks link to its transaction history.
 Although the coinjoin protocol is a bit complex, it is very easy to use in Wasabi.
-By default, the wallet automatically starts coinjoining received UTXO's. 
-Once a coin achieves enough ambiguity, the corresponding amount will show up in the software's main view as "private coins".
-The wallet will also automatically coinjoin the change output that the user gets back after creating a transaction, but the coordinator fees will not be charged again.
+The wallet automatically coinjoins received UTXO's according to the profile settings set by the user.
+Once a coin achieves enough privacy, the corresponding amount will show up in the software's main view as "private coins".
+The wallet will also automatically coinjoin the change output that the user possibly gets back after creating a transaction.
 
 See [this chapter](/using-wasabi/CoinJoin.md) for a thorough analysis of coinjoin, details on the Wasabi implementation and best practices on how to use it properly.
