@@ -54,7 +54,7 @@ But first, you must label it with the names of any observers who know that this 
 For example, if Alice pays you back for last nights pizza, then the label is `Alice`.
 This is an important feature for you and the wallet to know which coin is from whom, and it will help with your privacy in the future.
 Once this newly generated address receives some coins, Wasabi Wallet will automatically hide this used address, so you don't reuse it by accident.
-In case you want to coinjoin these coins, click Play in the main views musicbox and choose a fitting profile setting for your wallet.
+In case you want to coinjoin these coins, click Play in the main view's musicbox and choose a fitting profile setting for your wallet.
 
 See [this chapter](/using-wasabi/Receive.md) for a tutorial on how to properly label your addresses and receive bitcoin.
 
@@ -66,7 +66,7 @@ Sending process is different depending on the privacy of coins you have. Assumin
 2. Insert the address of the receiver and type in the amount the receiver should get, then click `Continue`.
 3. Enter the name of the person or company receiving the payment and click `Continue`.
 4. Make sure everything is filled in correctly in `Preview Transaction` window and click `Confirm`.
-6. Type in your password and click `Continue`.
+5. Type in your password and click `Continue`.
 
 You will now see a pop-up window telling you that the transaction is broadcasted to the Bitcoin network.
 
