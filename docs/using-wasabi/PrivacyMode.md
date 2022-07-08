@@ -1,7 +1,7 @@
 ---
 {
   "title": "Discreet Mode",
-  "description": "A feature that hides sensitive and critical information from physical observers. Designed to allow user to post screenshots without having to worry about leaking private details of their wallet. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
+  "description": "A feature that hides sensitive and critical information from physical observers. Designed to allow the user to post screenshots without having to worry about leaking private details of their wallet. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
 }
 ---
 
@@ -16,7 +16,7 @@ Discreet Mode is a Wasabi Wallet feature that hides sensitive and critical infor
 ---
 
 ## How to activate/deactivate Discreet Mode
-You can activate or deactivate by clicking the Discreet Mode icon in the bottom left corner of the wallet.
+You can activate or deactivate by clicking the Discreet Mode icon in the bottom left corner of the main view.
 
 ![Enable Discreet Mode in Wasabi Wallet](/DiscreetModeActivate.png "Enable Discreet Mode in Wasabi Wallet")
 
