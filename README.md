@@ -1,10 +1,8 @@
 <p align="center">
   <a href="https://docs.wasabiwallet.io">
-    <img src="docs/.vuepress/public/Under_Construction.png" alt="Documentation under construction" title="Documentation under construction" class="Image" />
+    <img src="docs/.vuepress/public/WasabiWalletDocs.png" alt="Wasabi Wallet Documentation" title="Wasabi Wallet Documentation" class="Image" />
   </a>
 </p>
-
-## Note that [Wasabi Wallet documentation](https://docs.wasabiwallet.io/) is under renovation, which means some content you may want to work on is about to be obsoleted and some of the information you see in this documentation might not be up to date. 
 
 [Wasabi Wallet](https://wasabiwallet.io) is an open-source, non-custodial, privacy focused Bitcoin wallet for desktop. It implements a trustless privacy technique, called [WabiSabi CoinJoin](https://eprint.iacr.org/2021/206).
 
@@ -46,7 +44,6 @@ Not only do we appreciate everyone's contribution, but we desperately need it!
 * [Writing Conventions](#writing-conventions)
 * [Reference files](#reference-files)
 * [Embedding images](#embedding-images)
-* [Embedding shields](#embedding-shields)
 * [Embedding videos](#embedding-videos)
 * [Text Highlights](#text-highlights)
 * [Frequently asked questions](#frequently-asked-questions)
