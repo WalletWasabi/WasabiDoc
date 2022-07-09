@@ -1,6 +1,6 @@
 ---
 {
-  "title": "CoinJoin",
+  "title": "Coinjoin",
   "description": "A detailed explanation about how WabiSabi coinjoins work under the hood. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
 }
 ---
@@ -12,7 +12,7 @@ They collaboratively build a transaction where each of them provides some coins 
 The concept has been around since the early days of Bitcoin, and it was formalized by the great Greg Maxwell in [this awesome introductory thread](https://bitcointalk.org/index.php?topic=279249.msg2983902).
 
 The goal is to gain privacy by breaking the link of which input "pays" which output so that none of the outputs can be attributed to the owner of the input.
-WabiSabi enables centrally coordinated coinjoins with variable amounts in a trustless (meaning nobody can steal) and private (meaning even the coordinator cannot spy) manner, as described in [WabiSabi protcol](https://eprint.iacr.org/2021/206).
+WabiSabi enables centrally coordinated coinjoins with variable amounts in a trustless (meaning nobody can steal) and private (meaning even the coordinator cannot spy) manner, as described in [WabiSabi paper](https://eprint.iacr.org/2021/206).
 
 [[toc]]
 
@@ -21,31 +21,33 @@ WabiSabi enables centrally coordinated coinjoins with variable amounts in a trus
 ## Coinjoin step-by-step
 
 Launch Wasabi, and open your wallet that contains the coins that you want to coinjoin.
-Notice that it is not yet possible to CoinJoin from a hardware wallet, the keys must be "hot" on your computer.
+Notice that it is not yet possible to coinjoin from a hardware wallet, the keys must be "hot" on your computer.
 
 By default, Wasabi starts automatically coinjoining the funds whenever there's more than 0.01 BTC non private in total.
 Wallets with less than or equal to 0.01 BTC are in _PlebStop_ mode, where funds are not coinjoined automatically.
-User can change the limit from the settings and boost the wallets privacy for one session if wanted.
+User can change the limit from settings or turn coinjoin on manually by pressing the play button in main views "music box".
 
-In the first coinjoin, a 0.3% coordinator fee will be taken from UTXOs bigger than 0.01 BTC.
+A 0.3% coordinator fee will be taken from fresh UTXOs bigger than 0.01 BTC.
 Smaller ones don't pay coordinator fees at all, according to _PlebsDontPay_ rule.
 
-The round starts either as soon as 100 inputs have been registered, or after one hour has elapsed since the last round.
-Just leave Wasabi running in the background of your computer.
+The round starts either as soon as 300 inputs have been registered, or after the input registration time has ran out and as long as there's at least 150 inputs registered.
+Just leave Wasabi running in the background of your computer, as coinjoining takes time.
 
 Remixing is free, as well as coinjoining coins 1 hop from coinjoin, although, Bitcoin network fees still do apply.
 So if you send a payment and receive a change output, Wasabi will automatically remix it without you having to pay coordinator fees again. 
 The recipient of the payment will also be able to coinjoin the funds he recieved with only the cost of network fees, as long he/she is also using Wasabi or other WabiSabi compatible Bitcoin wallet.
 
-Once a coin achieves enough ambiguity, the corresponding amount will show up in the software's main view as "private coins".
+Once a coin achieves enough privacy, the corresponding amount will show up in the software's main view as "private coins".
 
-## ZeroLink protocol step-by-step
+## WabiSabi protocol step-by-step
+
+WabiSWabi protocol requires 5 steps to successfully create and broadcast a coinjoin transaction to the bitcoin network.
 
 ### Input registration
 
-During the [input registration](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-input-registration-phase), you select which coins you want to register for CoinJoin.
-These coins need to be confirmed on the Bitcoin blockchain unless they are from a Wasabi CoinJoin and you re-register them.
-In the background, Wasabi generates an input proof, a signature over a challenge message with the private key that locks up the coins.
+During the [input registration](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-input-registration-phase), automatic coin selection robot selects which coins will be registered for coinjoin.
+These coins need to be confirmed on the Bitcoin blockchain unless they are from a Wasabi coinjoin and the robot is re-register them.
+In the background, Wasabi generates an input proofs, signatures over a challenge message with the private key that locks up the coins.
 With this, the coordinator can verify that you actually own these coins.
 
 Then your Wasabi client generates several fresh addresses, depending on the value of inputs registered.
