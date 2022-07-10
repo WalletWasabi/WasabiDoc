@@ -138,10 +138,10 @@ Read more: [AML/KYC Information](/why-wasabi/TransactionSurveillanceCompanies.md
 :::
 
 :::details
-### Privacy Mode
+### Discreet Mode
 
-Privacy Mode is a Wasabi feature that hides sensitive and critical information on the wallet itself, which is useful for screenshots.
-Read more: [Privacy Mode](/using-wasabi/PrivacyMode.md)
+Discreet Mode is a Wasabi feature that hides sensitive and critical information on the wallet itself, which is useful for screenshots.
+Read more: [Discreet Mode](/using-wasabi/DiscreetMode.md)
 :::
 
 :::details
