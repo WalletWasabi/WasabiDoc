@@ -47,8 +47,6 @@ The more users that participate in a round, the higher the anonymity set the coi
 ### Coinjoin
 
 Even though Wasabi develoers have done a lot of work to optimize WabiSabi coinjoins privacy and efficiency, the work is still in the beginning. 
-For now, WabiSabi is only enabled for testnet clients, which means there is very little incentive for malicious attackers to reveal if they see a problem in the protocol.
-Whenever mainchain coinjoin release candidate comes out, we will likely see a lot of new testers with a bunch of issues and improvement ideas.
 
 #### Send in coinjoins
 
