@@ -290,7 +290,7 @@ Be precise in the label of the observers who know this address is yours, this is
 Then you can click on `Generate` which will now show you the address, and immediately copy it to the clipboard.
 After a coin has been sent to this address, it is removed from the GUI, this is a good feature to help protect you against [address reuse](/why-wasabi/AddressReuse.md).
 
-![Wasabi Wallet Observers label](/ReceiveLabelingRequired.png "Wasabi Wallet Observers label")
+![Wasabi Wallet known by label](/ReceiveLabelingRequired.png "Wasabi Wallet known by label")
 :::
 
 :::details
@@ -361,7 +361,7 @@ This is useful when you have generated a receiving address with a specific label
 Take care with whom you have shared this address, because if you send it to several people, they might all send many coins to the same address.
 This is very bad for your privacy because of [address reuse](/why-wasabi/AddressReuse.md), and it confuses you with the labeling of each unique coin.
 
-![Wasabi Wallet address details](/ReceiveAddressDropDownMenu.png "Wasabi Wallet address details")
+![Wasabi Wallet address details](/ReceiveAddress.png "Wasabi Wallet address details")
 :::
 
 :::details
@@ -409,7 +409,7 @@ You can see the address QR code, public key and the key path in the drop down me
 Click on the arrow on the left side of the address to reveal the extra details.
 You can save the png file of the QR code in the right click menu.
 
-![Wasabi Wallet address' QR code](/ReceiveAddressDropDownMenu.png "Wasabi Wallet address' QR code")
+![Wasabi Wallet address' QR code](/ReceiveAddress.png "Wasabi Wallet address' QR code")
 :::
 
 :::details
