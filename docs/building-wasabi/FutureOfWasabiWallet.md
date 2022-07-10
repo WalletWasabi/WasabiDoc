@@ -77,7 +77,7 @@ For non-coinjoined coins, improving simple send using WabiSabi is also an intere
 These do not even have to disrupt the current user workflow, they can mostly "just happen" in the background.
 Send in coinjoin [https://github.com/zkSNACKs/Meta/issues/6](https://github.com/zkSNACKs/Meta/issues/6), [https://github.com/nopara73/ZeroLink/issues/75](https://github.com/nopara73/ZeroLink/issues/75) has great potential.
 
-#### P2M
+#### Transaction batching
 
 Wasabi should enable users to make payments to multiple addresses in the same transaction, in a convenient and privacy preserving way. 
 This would save users sats in mining fees but it comes with the cost of all recipients being able to see the other outputs in the transaction.
