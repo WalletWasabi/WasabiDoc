@@ -60,7 +60,7 @@ GroupSend: [https://github.com/zkSNACKs/Meta/issues/29](https://github.com/zkSNA
 
 Because Bitcoin blocks have size limit and every input and output in a coinjoin has weight, it is not possible to add thousands of transactions to a coinjoin round. 
 To enable exponentially groving privacy we need some of the users to remix, making the coinjoin rounds interconnected, resulting in anonymity set growth somewhere between the scales of addition and multiplication for all the rounds participants. 
-If that doesn't happen enough by default, the coordinator has ways to incentivice users by for example, giving fee discounts for remixed inputs.
+If that doesn't happen enough by default, the coordinator has ways to incentivize users, for example by giving fee discounts for remixed inputs.
 
 ### Wallet
 
