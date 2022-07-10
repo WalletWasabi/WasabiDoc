@@ -131,9 +131,6 @@ QR code reader works in Windows. WIP for Linux and Mac. // Link to Pindurs PRs a
 The company behind Wasabi Wallet (zkSNACKs Ltd.) have been doing contribution games for years and they have proven to be very beneficial for the contributors, for developers and for the users that end up enjoying the improved wallet.
 Current ones can be found in the [blog](https://blog.wasabiwallet.io/coming-soon-contribution-games/)
 
-### Merchandise Shop
-
-Besides of the online Bitcoin privacy that Wasabi Wallet offers, we could spin up a merchandise store that offers shirts, mugs, hats and some of the best meat-space privacy tools like curtains and underware.
 
 ## Scaling
 
