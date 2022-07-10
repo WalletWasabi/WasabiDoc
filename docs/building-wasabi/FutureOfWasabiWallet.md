@@ -83,7 +83,6 @@ Send in coinjoin [https://github.com/zkSNACKs/Meta/issues/6](https://github.com/
 
 Wasabi should enable users to make payments to multiple addresses in the same transaction, in a convenient and privacy preserving way. 
 This would save users sats in mining fees but it comes with the cost of all recipients being able to see the other outputs in the transaction.
-If the transaction doesn't have a lot of them, this might be a privacy issue. 
 Some users might be ok with that but combining P2M with Send in Coinjoins would definitely make it more private for everyone.
 Pay to Many: https://github.com/zkSNACKs/WalletWasabi/issues/733
 
