@@ -70,7 +70,7 @@ Wasabi Wallet devs should keep up with the latest changes in other Bitcoin walle
 
 Wasabi Wallet was one of the first wallets that implemented coin control, that demonstrated the UTXOs to the user, giving them a lot of options on how to control their funds. 
 Later developers realized that especially new users found this inconvenient, scary and confusing, so they decided to design a new wallet that uses Automated Coin Selection, enabling them to remove the old coin control whenever there is enough private coins to make a payment.
-Currently Wasabi only shows cluster control window when user doesn't have enough of it's balance as private.
+Currently Wasabi only shows the cluster control window when the user doesn't have enough of it's balance as private.
 NOTE: Developers might enable Coin Control for the advanced users in the future.
 
 #### Simple Send Improvements
