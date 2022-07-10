@@ -50,8 +50,10 @@ Even though Wasabi develoers have done a lot of work to optimize WabiSabi coinjo
 
 #### Send in coinjoins
 
-Even when a user has private coins, being able to send payments in coinjoin is a great chain efficiency and privacy improvement for the sender. 
-Change amount and maybe in some cases the payment amount should be grinded in to next lower standard denomination, making it very difficult to the recipient to figure out anything about the sender. 
+Being able to send payments in coinjoin is a great blockspace efficiency and privacy improvement for both the sender and the receiver.
+Change amount and maybe in some cases the payment amount should be split into standard denominations.
+With Wabisabi pay to endpoint users can send each other money without the sender knowing the address of the receiver, or the receiver knowing the inputs of the sender.
+This also enables anonymous transaction batching.
 GroupSend: [https://github.com/zkSNACKs/Meta/issues/29](https://github.com/zkSNACKs/Meta/issues/29)
 
 #### Round Interoperability
