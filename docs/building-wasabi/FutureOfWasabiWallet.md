@@ -206,8 +206,6 @@ By them integrating WabiSabi, they receive sats everytime their users participat
 
 #### Integration
 
-Developers are aiming to make revenue sharing possible with other companies. 
-By them integrating WabiSabi, they receive sats everytime their users participates in a coinjoin and pays coordinator fees.
 It would be also beneficial and not difficult to integrate Wasabi into existing .NET softwares directly, like [BTCPay](https://github.com/btcpayserver/btcpayserver).
 
 #### Libraries
