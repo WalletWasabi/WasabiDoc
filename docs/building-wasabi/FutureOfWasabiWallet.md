@@ -143,7 +143,7 @@ Advancing this issue can take various, often opportunistic forms.
 
 ### Events
 
-Wasabi Wallet contributors are encouraged to participate and maybe even create Bitcoin and privacy related events, to make sure they stay up to date about the latest research and features.
+Wasabi Wallet contributors are encouraged to participate and create bitcoin and privacy related events, to make sure they stay up to date about the latest research and features.
 
 ### Contribution games
 
