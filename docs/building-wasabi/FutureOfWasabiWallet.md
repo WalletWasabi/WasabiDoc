@@ -105,7 +105,7 @@ Since Wasabi doesn't support old address formats, a single backend query could e
 If in every coinjoin round, more than half of the inputs are remixes, it not only results in perfect mixes for those inputs, but also results in anonymity set growth somewhere between the scales of addition and multiplication, instead of simple addition as the ZeroLink paper anticipated.
 Whether the anonymity set gain is closer to addition or multiplication depends on how other users behave.
 Right now, Wasabi simply counts the worst case scenario: as addition.
-However, this is happening in a low Bitcoin fee environment, so this is not to be taken for granted in the future.
+However, this is happening in a low transaction fee environment, so this is not to be taken for granted in the future.
 Additional measures are necessary.
 Accurate Anonymity Set Calculation: [https://github.com/zkSNACKs/Meta/issues/35](https://github.com/zkSNACKs/Meta/issues/35)
 
