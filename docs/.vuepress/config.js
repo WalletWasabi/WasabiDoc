@@ -17,7 +17,7 @@ const themeColor = "#211b24"
 
 module.exports = {
   title: "Docs under construction",
-  description: "Wasabi Wallet documentation is currently under construction because of the upcoming 2.0 release. Be aware that some of the content might not yet be up to date.",
+  description: "Wasabi Wallet documentation is currently under construction because of the 2.0 release. Be aware that some of the content might not yet be up to date.",
   head: [
     ["link", { rel: "icon", href: "/favicon.ico" }],
     ["link", { rel: "apple-touch-icon", href: "/apple-touch-icon.png", sizes: "180x180" }],
