@@ -207,7 +207,7 @@ By them integrating WabiSabi, they receive sats everytime their users participat
 #### Integration
 
 It would be also beneficial and not difficult to integrate Wasabi into existing .NET softwares directly, like [BTCPay](https://github.com/btcpayserver/btcpayserver).
-
+But WabiSabi should be easily usable by software written in other languages.
 #### Libraries
 
 #### Bitcoin Full Node integration
