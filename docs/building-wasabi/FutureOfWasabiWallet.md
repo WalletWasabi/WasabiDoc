@@ -88,6 +88,10 @@ Pay to Many: https://github.com/zkSNACKs/WalletWasabi/issues/733
 
 #### Advanced RBF
 
+This allows users to speed up the confirmation time of transactions, and even cancel unconfirmed payments.
+
+Fee bumping coinjoin transactions is expensive, but possible for any output.
+A service provider can spend his coinjoin output in an rbf transaction, and then fee bump that spending transaction whenever users pay him off-chain.
 Advanced Replace-By-Fee: [https://github.com/zkSNACKs/Meta/issues/15](https://github.com/zkSNACKs/Meta/issues/15)
 
 #### Sweep Private Key
