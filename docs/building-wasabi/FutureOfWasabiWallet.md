@@ -17,7 +17,6 @@ While privacy can be achieved today with Wasabi Wallet, Bitcoins mainchain costs
 This document aims to describe some ideas for the future of Wasabi Wallet and to explain the reasoning behind going towards these objectives. 
 Plans might change without notice and this only represents our thinking at 2021 December.
 
-Wasabi does not support and does not plan to support other currencies in the future, it will always be bitcoin-only.
 
 Wasabi Wallet is software, therefore it must not neglect general software quality issues.
 The better software Wasabi is, the more users it will retain.
