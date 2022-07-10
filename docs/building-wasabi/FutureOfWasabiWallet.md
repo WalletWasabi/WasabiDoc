@@ -125,23 +125,6 @@ But at each point the user can opt-in to more insight and control.
 
 QR code reader works in Windows. WIP for Linux and Mac. // Link to Pindurs PRs and issues.
 
-## Marketing
-
-While education, content creation and marketing have little place in a technical documentation, they are still important parts of the big picture.
-
-### Education
-
-Education is a vitally important aspect of Bitcoin privacy in general and Wasabi specifically.
-Through education, Wasabi can obtain new users.
-The more Wasabi users there are, the better their privacy.
-Advancing this issue can take various, often opportunistic forms.
-
-- Add Infographics to software [https://github.com/zkSNACKs/Meta/issues/32](https://github.com/zkSNACKs/Meta/issues/32)
-- Implement Bitcoin Academy [https://github.com/zkSNACKs/Meta/issues/33](https://github.com/zkSNACKs/Meta/issues/33)
-
-### Events
-
-Wasabi Wallet contributors are encouraged to participate and create bitcoin and privacy related events, to make sure they stay up to date about the latest research and features.
 
 ### Contribution games
 
