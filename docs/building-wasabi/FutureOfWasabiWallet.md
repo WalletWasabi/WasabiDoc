@@ -120,6 +120,9 @@ Instead, a single backend query could establish its balance only once, and then 
 
 Improving the user friendliness of the software, the accuracy of coin awareness, and presenting what happens on the blockchain can be beneficial.
 
+The default UX should be very simple and intuitive, with a lot of concepts abstracted and under the hood.
+But at each point the user can opt-in to more insight and control.
+
 #### QR-Scanner
 
 QR code reader works in Windows. WIP for Linux and Mac. // Link to Pindurs PRs and issues.
