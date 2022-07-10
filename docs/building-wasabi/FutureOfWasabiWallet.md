@@ -220,7 +220,7 @@ Wasabi uses the [Bitcoin Core Hardware Wallet Interface [HWI]](https://github.co
 
 ## Innovation
 
-Wasabi should continue developing and implementing new in-house features that has become industry standards during the years, like discreet mode, coin control and coinjoins.
+Wasabi should continue researching and implementing new concepts and features.
 
 ### P2EP
 
