@@ -192,7 +192,7 @@ Wasabi should be able to start and run in a headless daemon mode with full walle
 
 #### Documentation
 
-Working on it! 
+There should be a comprehensive documentation with guides of how to use the software, and more information about how it works under the hood.
 
 #### WAT?
 
