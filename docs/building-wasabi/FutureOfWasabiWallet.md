@@ -188,8 +188,7 @@ Full information can be found [here](/using-wasabi/RPC.md).
 
 #### Daemon/API
 
-Wasabi offers a daemon and an RPC interface.
-Full information can be found [here](/using-wasabi/Daemon.md) and [here](/using-wasabi/RPC.md).
+Wasabi should be able to start and run in a headless daemon mode with full wallet functionality via the RPC server.
 
 #### Documentation
 
