@@ -233,7 +233,7 @@ Clusterfuck Wallet Strategies: [https://github.com/zkSNACKs/Meta/issues/11](http
 ### Contact list
 
 Wouldn't it be handy to send payments without having to ask for an invoice or an address from the recipient?
-With Keysend or P2EP and PGP we could have a contact list from which you can choose a recipient and your client automatically fetches a new address from that persons wallet.
+With Keysend or P2EP and PGP we could have a contact list from which you can choose a recipient and your client automatically fetches a new address from that person's wallet.
 Basic PGP Client: [https://github.com/zkSNACKs/Meta/issues/13](https://github.com/zkSNACKs/Meta/issues/13)
 
 ### Chat
