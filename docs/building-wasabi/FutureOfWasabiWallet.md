@@ -1,7 +1,7 @@
 ---
 {
   "title": "Future Of Wasabi Wallet",
-  "description": "This document aims to describe some ideas for the future of Wasabi Wallet and to explain the reasoning behind going towards these objectives. Plans might change without notice and this only represents our thinking at 2021 December. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop.",
+  "description": "This document aims to describe some ideas for the future of Wasabi Wallet and to explain the reasoning behind going towards these objectives. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop.",
   "sidebarDepth": "1"
 }
 ---
