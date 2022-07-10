@@ -182,7 +182,8 @@ Developers are aiming to modularize WabiSabi coinjoin to enable other projects, 
 
 #### RPC
 
-Wasabi offers a daemon and an RPC interface.
+Wasabi currently offers a rudimentary RPC interface.
+This should be improved in architecture and functionality.
 Full information can be found [here](/using-wasabi/Daemon.md) and [here](/using-wasabi/RPC.md).
 
 #### Daemon/API
