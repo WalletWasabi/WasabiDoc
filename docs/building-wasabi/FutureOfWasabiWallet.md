@@ -111,7 +111,7 @@ Accurate Anonymity Set Calculation: [https://github.com/zkSNACKs/Meta/issues/35]
 
 #### Bitcoin Address Format
 
-Currently Wasabi Wallet uses bech32 addresses (bc1q...) only but developers are working on enabling P2TR (bc1p...).
+Currently Wasabi Wallet uses only segwit v0 addresses (bc1q...) but developers are working on enabling taproot addresses (bc1p...).
 
 Older address formats (1... and 3...) are not checked against Golomb-Rice filters.
 Instead, a single backend query could establish its balance only once, and then immediately sweep the money to a bech32 wallet-managed address: [https://github.com/zkSNACKs/Meta/issues/34](https://github.com/zkSNACKs/Meta/issues/34).
