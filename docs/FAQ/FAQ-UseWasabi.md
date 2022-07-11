@@ -1399,10 +1399,10 @@ Alternatively, you can find the logs inside your [Wasabi data folder](/FAQ/FAQ-U
 :::
 
 :::details
-### How to activate/deactivate Privacy Mode?
+### How to activate/deactivate discreet mode?
 
-You can activate/deactivate Privacy Mode from `Settings` or by clicking the eye icon on the `Wallet Explorer` header in the top right corner.
-You can read more about Privacy Mode [here](/using-wasabi/PrivacyMode.md).
+You can activate/deactivate Discreet Mode by clicking the Discreet Mode icon in the bottom left corner of the main view.
+You can read more about Discreet Mode [here](/using-wasabi/DiscreetMode.md).
 :::
 
 :::details
