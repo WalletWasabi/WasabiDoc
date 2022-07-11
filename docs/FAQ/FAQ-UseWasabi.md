@@ -1399,7 +1399,7 @@ Alternatively, you can find the logs inside your [Wasabi data folder](/FAQ/FAQ-U
 :::
 
 :::details
-### How to activate/deactivate discreet Mode?
+### How to activate/deactivate discreet mode?
 
 You can activate/deactivate Discreet Mode by clicking the Discreet Mode icon in the bottom left corner of the main view.
 You can read more about Discreet Mode [here](/using-wasabi/DiscreetMode.md).
