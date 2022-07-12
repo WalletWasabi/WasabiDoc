@@ -53,6 +53,4 @@ Further tutorials about the different parts of the wallet, for newbies and power
 - [Discreet Mode](/using-wasabi/DiscreetMode.md)
 - [PayJoin](/using-wasabi/PayJoin.md)
 - [Testnet](/using-wasabi/Testnet.md)
-- [Lock Screen](/using-wasabi/LockScreen.md)
 - [Supported BIPs](/using-wasabi/BIPs.md)
-- [Supported Industry Standards](/using-wasabi/IndustryStandards.md)

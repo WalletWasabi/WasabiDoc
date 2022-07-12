@@ -134,18 +134,6 @@ It’s part of [BIP 39](https://github.com/bitcoin/bips/blob/master/bip-0039.med
 :::
 
 :::details
-### I forgot my lockscreen PIN, what should I do?
-
-As described in the settings, you can just delete it.
-Open the `UiConfig.json` file inside your [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) and set these entries as follows:
-
-```
-"LockScreenActive": false,
-"LockScreenPinHash": ""
-```
-:::
-
-:::details
 ### What are the terms and conditions?
 
 The most important parts of the legal documents are summarized in the following points:

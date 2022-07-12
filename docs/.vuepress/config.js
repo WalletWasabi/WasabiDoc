@@ -224,9 +224,7 @@ module.exports = {
             "/using-wasabi/DiscreetMode.md",
             "/using-wasabi/PayJoin.md",
             "/using-wasabi/Testnet.md",
-            "/using-wasabi/LockScreen.md",
             "/using-wasabi/BIPs.md",
-            "/using-wasabi/IndustryStandards.md"
           ]
         }
       ],
