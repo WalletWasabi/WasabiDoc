@@ -31,7 +31,7 @@ Here you find 2 categories of settings, `General` and `Bitcoin`, click the latte
 
 ![Activating Bitcoin testnet network in Wasabi Wallet](/SettingsGeneral.png "Activating Bitcoin testnet network in Wasabi Wallet")
 
-Once you are in the `Bitcoin` page, click the dropdown bar under network and choose `Testnet`.
+Once you are in the `Bitcoin` page, click the dropdown bar under network and choose `TestNet`.
 
 ![Activating Bitcoin testnet network in Wasabi Wallet](/SettingsBitcoin.png "Activating Bitcoin testnet network in Wasabi Wallet")
 
@@ -60,7 +60,7 @@ Notice that Wasabi uses the same wallet file and keys for both mainnet, testnet,
 
 ## Receiving testnet bitcoin
 
-You can [generate a receive address](/using-wasabi/Receive.md) the same way as on mainnet, by labeling the known by entities in the `Receive` tab.
+You can [generate a receive address](/using-wasabi/Receive.md) the same way as on mainnet, by labeling the known by entities in the `Receive` dialog.
 Notice that testnet SegWit addresses start with `tb1q...`, and not with `bc1q...` as mainnet addresses.
 
 Because testnet bitcoin don't have economical value, they are gifted by different sources.
@@ -70,4 +70,4 @@ You may also ask other developers if they have a couple of spare testnet coins a
 ## Coinjoin on testnet
 
 [CoinJoin](/using-wasabi/CoinJoin.md) on testnet is as easy as on mainnet.
-Usually there are other testers doing a coinjoin, but if you are the only one at the moment, then load two wallets and enqueue coins in both of them.
+Usually there are other testers doing a coinjoin, but if you are the only one at the moment, then load two wallets and start coinjoining in both of them.
