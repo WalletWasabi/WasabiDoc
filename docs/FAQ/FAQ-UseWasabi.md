@@ -44,6 +44,7 @@ You have successfully setup your wallet when you click `I wrote down my Recovery
 
 Yes you can.
 Go to `Wallets` folder (inside the [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder)) and rename the .json Wallet file.
+You can also find the correct folder by typing `Wallet Folder` in search bar at the top of the main view.
 Then go to `WalletBackups` folder (inside [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder)) and rename the .json Wallet file.
 
 :::tip
@@ -62,7 +63,7 @@ The password you set is used:
 * As a 13th word (passphrase) as described in [BIP 39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki).
 * To encrypt the private key of the extended private key as described in [BIP 38](https://github.com/bitcoin/bips/blob/master/bip-0038.mediawiki) to get an encrypted secret which is stored on the computer.
 
-Wasabi stores only the BIP38 encrypted blob, so you'll need to type in the password to spend or CoinJoin from Wasabi.
+Wasabi stores only the BIP38 encrypted blob, so you'll need to type in the password to spend or coinjoin from Wasabi.
 
 :::danger
 The password will unlock your bitcoin to anyone who has access to the recovery words backup or the computer!
@@ -93,7 +94,7 @@ A secure password manager software might also be used, but be careful here.
 You need to mark the “show hidden files” setting to see it.
 :::
 
-You can also easily reach it from inside Wasabi: `File > Open > Data Folder`.
+You can also easily reach it from inside Wasabi by typing `Data Folder` in search bar at the top of the main view.
 ::::
 
 ::::details
