@@ -216,17 +216,11 @@ Read more [ħere](/using-wasabi/WalletLoad.md)
 :::details
 ### How do I know if the synchronization is finished?
 
-You know that Tor is properly connected, that all the block filters and all the relevant blocks are downloaded when you see that the status bar is `Ready`.
+You know that Tor and backend is properly connected when you see a checkmark at the bottom right corner of the synchronization page.
+All the block filters and all the relevant blocks are downloaded and the wallet is synchronized when the timer of the page runs out.
 
-![Wasabi Wallet Status Bar](/StatusBar.png "Wasabi Wallet Status Bar")
+![Wasabi Wallet Status Bar](/WalletSynchronizing.png "Wasabi Wallet Status Bar")
 :::
-
-:::details
-### What does it mean "Missing Filters"?
-
-The `Missing Filters` label indicates that Wasabi is still downloading the [BIP 158 block filters](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki) and it's synchronizing your wallet.
-You have to wait until the status bar is `Ready`.
-::::
 
 :::details
 ### How long does the initial, and a subsequent synchronization take?
