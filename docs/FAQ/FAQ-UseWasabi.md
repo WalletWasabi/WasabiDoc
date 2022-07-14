@@ -186,13 +186,9 @@ The `WalletName` will be displayed in the GUI.
 Then start Wasabi and load the wallet to synchronize it.
 
 For watch only wallets, the `Send` tab is disabled.
-However, you can use the `Build Transaction` tab in the `Advanced` section of the `Wallet Explorer` to build an unsigned PSBT transaction.
-When this is signed on the device with the private key (like an offline laptop running Electrum wallet or a hardware wallet), then you can broadcast the signed transaction using the `Broadcast Transaction` tab in the `Tools` menu.
 :::
 
 ## Synchronization
-
-@[youtube](qguwAvA5Fx4)
 
 :::details
 ### What are BIP-158 block filters?
