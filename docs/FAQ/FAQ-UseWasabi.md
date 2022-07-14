@@ -226,7 +226,7 @@ All the block filters and all the relevant blocks are downloaded and the wallet 
 ### How long does the initial, and a subsequent synchronization take?
 
 It usually only takes a couple of seconds to scan the block filters, and to download and parse the blocks.
-However, for large wallets with many transactions, this synchronization can take up to several minutes.
+However, for large wallets with many transactions, this synchronization can take up to several hours or even few days.
 The speed and reliability of the loading process is constantly improved.
 For especially old wallets, it might be worth considering to generate a new wallet with a shorter transaction history.
 :::
@@ -234,13 +234,11 @@ For especially old wallets, it might be worth considering to generate a new wall
 :::details
 ### Can Wasabi work with a pruned bitcoin node?
 
-Yes.
-Wasabi is a hybrid, if your node doesn't have a block, then it acquires it from someone else.
+No.
+If your node doesn't have a block, Wasabi has to acquire it from someone else.
 :::
 
 ## Receive
-
-@[youtube](9i7CceIdFg4)
 
 ::::details
 ### Why is it bad to re-use addresses?
