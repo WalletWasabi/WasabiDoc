@@ -13,12 +13,12 @@
 ### How do I generate a new wallet?
 
 You can [generate as many new wallets](/using-wasabi/WalletGeneration.md) as you'd like, for no extra cost and without asking for permission.
-Just click `Add Wallet` button in the bottom left corner of the main view to start the process.
+Click the `Add Wallet` button in the bottom left corner of the main view or in the searchbar.
 
 ![Generate new wallet in Wasabi](/AddWalletButton.png "Generate new wallet in Wasabi")
 
 As with everything in Wasabi, you are required to label this new wallet.
-Make sure that you are precise so that you know what this wallet is for ande click `Continue`.
+Make sure that you are precise so that you know what this wallet is for and click `Continue`.
 Set up a password that will be used to encrypt the private key (extracted from the extended private key) on the computer.
 
 :::danger Careful!!
@@ -26,7 +26,7 @@ Without knowledge of the password, you CANNOT spend your bitcoin!!
 :::
 
 Make sure that you properly back up and write down this password.
-Once you've typed the same password to both rows, click `Continue`.
+Confirm the password and click `Continue`.
 
 ![Generate new wallet in Wasabi](/WalletNameAndPassword.png "Generate new wallet in Wasabi")
 
