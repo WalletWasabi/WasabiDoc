@@ -344,12 +344,13 @@ or:
 :::details
 ### How can I change the observers of my receive address?
 
-You can change the observers of your receive address in the right click menu by clicking `Change Observers`, then type in the new label.
-This is useful when you have generated a receiving address with a specific label, but then the cause for receiving has changed.
+You can change the observers of your receive address, as long as it hasn't received any coins yet.
+This can be done through `Reveive->Unused Receive Addresses->Edit`, in the right side of the label.
+This feature is useful when you have generated a receiving address with a specific label, but you later realize that the sender changed or that there's more entities that know that this address belongs to you.
 Take care with whom you have shared this address, because if you send it to several people, they might all send many coins to the same address.
 This is very bad for your privacy because of [address reuse](/why-wasabi/AddressReuse.md), and it confuses you with the labeling of each unique coin.
 
-![Wasabi Wallet address details](/ReceiveAddressDropDownMenu.png "Wasabi Wallet address details")
+![Wasabi Wallet unused receive addresses](/UnusedReceiveAddresses.png "Wasabi Wallet unused receive addresses")
 :::
 
 :::details
@@ -368,7 +369,7 @@ It is important that you avoid sending the same address to several different ind
 There is a risk that both of them send coins to this same destination, thus unnecessarily linking the payments.
 
 :::danger
-It is especially important to **NEVER** send your extended public key to any third party server.
+It is especially important to **NEVER** send your extended public key to any third party.
 This is a complete de-anonymization of your entire wallet!!
 :::
 ::::
@@ -376,9 +377,10 @@ This is a complete de-anonymization of your entire wallet!!
 :::details
 ### Why does Wasabi only use SegWit bech32 addresses?
 
-Wasabi was created after the activation of SegWit, and it makes sense to support the most advanced address type, which has numerous benefits.
-For example, due to the malleability fix of SegWit, you can now remix CoinJoin outputs which are currently unconfirmed.
+Wasabi was created after the activation of SegWit, and it made sense to support the most advanced address type, which has numerous benefits.
+For example, due to the malleability fix of SegWit, you can now remix coinjoin outputs which are currently unconfirmed.
 There are also large savings on mining fees for SegWit transactions.
+Implementing Taproot hasn't been a priority, as the benefits of upgrading to it are negligible for Wasabi, at the moment.
 :::
 
 :::details
@@ -391,13 +393,18 @@ To check Bech32 adoption and wallets/exchanges support you can follow the [Bitco
 :::
 
 :::details
-### Where can I find my address QR code and public key?
+### Where can I find my address and the corresponding QR code?
 
-You can see the address QR code, public key and the key path in the drop down menu of the `Receive` tab.
-Click on the arrow on the left side of the address to reveal the extra details.
-You can save the png file of the QR code in the right click menu.
+You can see the address and its QR code when you create it through `Receive` tab.
+To save the png file of the QR code, hover your mouse over the QR code and click `Save` button that appears to the right side.
 
-![Wasabi Wallet address' QR code](/ReceiveAddressDropDownMenu.png "Wasabi Wallet address' QR code")
+![Wasabi Wallet address' QR code](/ReceiveAddress.png "Wasabi Wallet address' QR code")
+
+You can also see your unused receive addresses and their QR codes.
+
+![Wasabi Wallet address' QR code](/UnusedReceiveAddresses.png "Wasabi Wallet address' QR code")
+
+Currently, there's no way to see used addresses and their QR codes through the GUI.
 :::
 
 :::details
@@ -405,7 +412,7 @@ You can save the png file of the QR code in the right click menu.
 
 Wasabi follows [BIP 84: Derivation scheme for P2WPKH Based Accounts](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki), so the main path is `m/84'/0'/0'`.
 On TestNet and RegTest Wasabi uses `m/84'/0'/0'`, and not the standard `m/84'/1'/0'`.
-Due to the CoinJoin implementation, the key depth can be rather large, thus when recovering the gap limit should be elevated to at least 100.
+Due to the coinjoin implementation, the key depth can be rather large, thus when recovering, the gap limit should be elevated to at least 100.
 :::
 
 :::details
