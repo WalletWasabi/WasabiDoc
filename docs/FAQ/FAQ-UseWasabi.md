@@ -418,14 +418,15 @@ For example in a 2-of-3, Alice alone cannot spend the sats, she needs the collab
 In current implementations, a legacy and SegWit v0 multisig address is clearly distinguishable, there are three public keys and two signatures, and not one single public key and signature.
 This means that your anonymity set, the crowd you hide in, gets a lot smaller.
 If some one knows that you use a multisig wallet, then they can narrow down their search for your coins.
-Thus, use of multisig decreases your privacy, and Wasabi is not implementing tools that degrade your privacy.
+Thus, use of bech32 multisig decreases your privacy, and Wasabi is not implementing tools that degrade your privacy.
 
-Yet multisig is a popular feature, and many Wasabikas do request it for extra security, willing to trade-off some privacy.
+Yet multisig is a popular feature, and many Wasabikas do request it for extra security.
+Schnorr key and signature aggregation with MuSig increases the privacy, since only one public key, not n, are committed on the blockchain but that's not enough.
+
+Now that Taproot is activated in the Bitcoin consensus layer, there are no privacy concerns standing in the way of Wasabi multisig, it just isn't in the priority list right now.
+
 [Electrum Wallet](https://electrum.org) is a fantastic wallet with many features, but only private if you connect to your own Electrum server full node.
 Electrum can be used to create different types of m-of-n multisig scripts, including the use of hardware wallets.
-
-Schnorr key and signature aggregation with MuSig increases the privacy, since only one public key, not n, are committed on the blockchain.
-So when Taproot is activated in the Bitcoin consensus layer, in #twoweeks, there are no privacy concerns standing in the way of Wasabi multisig!
 :::
 
 :::details
@@ -439,10 +440,6 @@ In this case you have to wait until your transaction is confirmed in a block, an
 :::
 
 ## Send
-
-@[youtube](PRlAAxunmdU)
-
-@[youtube](AdmlM-Qvco0)
 
 :::details
 ### What are coins?
@@ -458,8 +455,8 @@ This chain of links between inputs being spent and outputs being generated is ve
 :::details
 ### Why is coin control so important?
 
-Coin control is a feature in Wasabi that allows the user to choose which coins are to be spent as inputs in an outgoing transaction.
-Coin control is aimed to avoid as much as possible transactions where privacy leaks are caused by amounts, change addresses, the transaction graph and the common-input-ownership heuristic.
+Coin control is used to avoid transactions where privacy leaks are caused by amounts, change addresses, the transaction graph and the common-input-ownership heuristic.
+Unfortunately, most users have no idea what that entails, so in Wasabi Wallet we have an automatic coin selection, which chooses the best possible option by default, without bothering the user.
 
 Satoshis, the base currency in the Bitcoin network, are fungible units of account.
 It's just a number that shows how much value is being transferred, and the number `100` is "the same" any time the number `100` is used.
@@ -473,19 +470,19 @@ So when sending bitcoin, it's important to consider which actual outputs are bei
 
 It might be a problem when Alice sends the coin she received for a months worth of labor, in exchange for a coffee in Bob's store.
 Now Bob knows the amount Alice gets paid, and this is none of his business.
-Alice can protect herself against this by using a [CoinJoin](/using-wasabi/CoinJoin.md) UTXO, because now Bob cannot know the previous transactions from Alice.
+Alice can protect herself against this by using [coinjoin](/using-wasabi/CoinJoin.md), because now Bob cannot know the previous transactions from Alice.
 :::
 
 :::details
 ### How do I set a destination address?
 
-In the `Send` tab, there is a text box for the `Address` right under the coin list.
+In the `Send` view, first row.
 If you have an address in the clipboard, then it is automatically pasted when you click on the box.
 You can also type in the address manually, there is a checksum to help you identify typos.
-Be careful and double-check the address, there is no way to revert this transaction and change the destination.
+Be careful and double-check the address, as there is no way to revert this transaction and change the destination.
 So make sure that the coins get into the right hands.
 
-![Wasabi Wallet Send tab](/SendAmountFeePassword.png "Wasabi Wallet Send tab")
+![Wasabi Wallet Send view](/Send.png "Wasabi Wallet Send view")
 :::
 
 :::details
@@ -511,37 +508,11 @@ Read more [here](/using-wasabi/Send.md#custom-change-address).
 :::details
 ### How do I set the payment amount?
 
-After you select one or more coins as inputs in `Send` tab, say two anonset coins worth 0.1 bitcoin each.
+In the `Send` view, second row.
 You can manually set the exact amount that the destination address will receive in the output of the transaction, say 0.15 bitcoin.
-Then Wasabi will help you with automatically calculating the precise change output value with `inputs - destination output - transaction fee`.
 
-![Wasabi Wallet Send tab](/SendAmountFeePassword.png "Wasabi Wallet Send tab")
+![Wasabi Wallet Send view](/Send.png "Wasabi Wallet Send view")
 :::
-
-::::details
-### How can I use the MAX button?
-
-When you select one or more coins as inputs in `Send` tab, say two anonset coins worth each 0.1 bitcoin.
-You can click the `MAX` button and the transaction will have only one output with the destination address, and no change output.
-Wasabi will calculate the precise value for the destination output with `inputs - transaction fee`.
-This means you send the entire two coins to the receiving address, and there is no change coming back to your own wallet, you are sending a "whole coin".
-
-![Wasabi Wallet Send tab](/SendAmountFeePassword.png "Wasabi Wallet Send tab")
-
-The blockchain spy heuristic is that this is a transaction to yourself, for example to your hardware wallet for long-term hodling.
-Most of the time this assumption is correct - the amount of an external payment is rarely exactly the same as the value of the sum of coins in the input, thus requiring change.
-It does not matter what value the coin has when you send it to yourself, thus there is no change.
-But you can use this assumption to your advantage by sending the MAX amount to your external destination, for example for pizza at the tribe gathering.
-If the change would be only a small amount, maybe you accept the overpayment as price for your privacy.
-If the input is not high enough value for the payment, maybe the receiver accepts a slight underpayment.
-You can also use payment rails like Lightning Network to send the small value change privately off-chain.
-
-:::tip
-When using the MAX button, it looks like you send back to yourself.
-This can be used to spy on you!
-But you can also use it to your advantage when paying others.
-:::
-::::
 
 :::details
 ### Why does Wasabi choose a new random node every time I send a transaction?

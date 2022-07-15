@@ -171,7 +171,7 @@ This is currently [the optimal way to broadcast transactions from a privacy poin
 
 A more ideal way would be to implement [BIP 156](https://github.com/bitcoin/bips/blob/master/bip-0156.mediawiki) the Dandelion protocol for transaction broadcasting when the Bitcoin network adopts it.
 
-![Wasabi Wallet Send transaction](/SendAmountFeePassword.png "Wasabi Wallet Send transaction")
+![Wasabi Wallet Send transaction](/Send.png "Wasabi Wallet Send transaction")
 
 Coins in Wasabi have Privacy and History properties.
 The anonymity set is just a momentary estimation.

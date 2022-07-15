@@ -81,7 +81,7 @@ This makes it easy for an observer to conclude that the spending amount was the 
 So in order to increase your privacy, you can set a non-rounded amount, like `0.0101 6843`.
 :::
 
-![Wasabi Wallet send transaction](/SendAmountFeePassword.png "Wasabi Wallet send transaction")
+![Wasabi Wallet send transaction](/Send.png "Wasabi Wallet send transaction")
 
 ## Mining Fee
 
