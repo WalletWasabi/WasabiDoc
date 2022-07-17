@@ -226,6 +226,7 @@ Similarly, Tumbler is the synonym of 'Mixer'.
 
 WabiSabi is a protocol for constructing coinjoin transactions with the aid of a centralized coordinator.
 It utilizes keyed-verification anonymous credentials, homomorphic value commitments, and zero knowledge proofs to achieve privacy and flexibility.
+Read more: [WabiSabi](https://github.com/zkSNACKs/WabiSabi)
 :::
 
 :::details
