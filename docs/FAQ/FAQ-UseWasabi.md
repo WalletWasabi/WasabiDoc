@@ -235,7 +235,7 @@ For especially old wallets, it might be worth considering to generate a new wall
 ### Can Wasabi work with a pruned bitcoin node?
 
 No.
-If your node doesn't have a block, Wasabi has to acquire it from someone else.
+Wasabi client doesn't work with pruned nodes.
 :::
 
 ## Receive
