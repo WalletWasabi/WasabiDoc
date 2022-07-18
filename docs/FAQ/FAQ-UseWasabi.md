@@ -476,7 +476,7 @@ Alice can protect herself against this by using [coinjoin](/using-wasabi/CoinJoi
 :::details
 ### How do I set a destination address?
 
-In the `Send` view, first row.
+`To` in the `Send` view.
 If you have an address in the clipboard, then it is automatically pasted when you click on the box.
 You can also type in the address manually, there is a checksum to help you identify typos.
 Be careful and double-check the address, as there is no way to revert this transaction and change the destination.
@@ -508,7 +508,7 @@ Read more [here](/using-wasabi/Send.md#custom-change-address).
 :::details
 ### How do I set the payment amount?
 
-In the `Send` view, second row.
+`Amount` in the `Send` view.
 You can manually set the exact amount that the destination address will receive in the output of the transaction, say 0.15 bitcoin.
 
 ![Wasabi Wallet Send view](/Send.png "Wasabi Wallet Send view")
