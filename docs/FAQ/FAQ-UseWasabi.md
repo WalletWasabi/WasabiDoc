@@ -378,8 +378,6 @@ This is a complete de-anonymization of your entire wallet!!
 ### Why does Wasabi only use SegWit bech32 addresses?
 
 Wasabi was created after the activation of SegWit, and it made sense to support the most advanced address type, which has numerous benefits.
-For example, due to the malleability fix of SegWit, you can now remix coinjoin outputs which are currently unconfirmed.
-There are also large savings on mining fees for SegWit transactions.
 Implementing Taproot hasn't been a priority, as the benefits of upgrading to it are negligible for Wasabi, at the moment.
 :::
 
@@ -395,7 +393,7 @@ To check Bech32 adoption and wallets/exchanges support you can follow the [Bitco
 :::details
 ### Where can I find my address and the corresponding QR code?
 
-You can see the address and its QR code when you create it through `Receive` tab.
+You can see the address and its QR code when you create it through the `Receive` dialog.
 To save the png file of the QR code, hover your mouse over the QR code and click `Save` button that appears to the right side.
 
 ![Wasabi Wallet address' QR code](/ReceiveAddress.png "Wasabi Wallet address' QR code")
