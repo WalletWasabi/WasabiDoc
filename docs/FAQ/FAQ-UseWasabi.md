@@ -276,7 +276,7 @@ You can generate a new bech32 address in the `Receive` tab of Wasabi Wallet.
 First you must set a label for it, so that you later know who has sent you bitcoin to this address.
 Be precise in the label of the observers who know this address is yours, as this is an important part of good [coin selection](/why-wasabi/Coins.md) privacy best practices.
 Do not write anything else on the label exept the name of the entities that know this address belongs to you.
-Then you can click on `Continue` which will now show you the address, and immediately copy it to the clipboard.
+Then you can click on `Continue` which will now show you the address, and you can copy it to the clipboard.
 After a coin has been sent to this address, it is removed from the GUI.
 This is a good feature to help protect you against [address reuse](/why-wasabi/AddressReuse.md).
 
