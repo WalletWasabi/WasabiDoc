@@ -39,7 +39,7 @@ When you've backed everything up, click `Continue`.
 ![Wasabi Wallet recovery words](/WalletRecoveryWords.png "Wasabi Wallet recovery words")
 
 In this page you can do a quick check that you've written down your mnemonic seed in the correct order. 
-Once you're done, 'click `Continue` or skip the verification by clicking `Skip`.
+Once you're done, 'click `Continue`.
 
 ![Confirm recovery words](/ConfirmRecoveryWords.png "Confirm recovery words")
 
@@ -48,7 +48,6 @@ Here you get to choose your wallets coinjoin strategy.
 ![Wasabi Wallet coinjoin strategies](/CoinjoinStrategyView.png "Wasabi Wallet coinjoin strategies")
 
 By clicking `Customize`, you can create a custom coinjoin strategy.
-If you do not want to set this wallet a strategy right now, dont click any of the options but just `Continue` to skip this phase for now.
 ::::
 
 ::::details
