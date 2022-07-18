@@ -19,7 +19,8 @@ Click the `Add Wallet` button in the bottom left corner of the main view or in t
 
 As with everything in Wasabi, you are required to label this new wallet.
 Make sure that you are precise so that you know what this wallet is for and click `Continue`.
-Set up a password that will be used to encrypt the private key (extracted from the extended private key) on the computer.
+Add a password. 
+It is used to encrypt the private key (extracted from the extended private key) on the computer and needed to open the wallet.
 
 :::danger Careful!!
 Without knowledge of the password, you CANNOT spend your bitcoin!!
