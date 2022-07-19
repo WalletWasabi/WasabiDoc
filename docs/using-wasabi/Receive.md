@@ -15,7 +15,8 @@
 
 1. Start Wasabi and open the wallet that you want to receive coins into.
 2. Click the `Receive` button in the main view's top right corner.
-3. Type in the name of the entities who know about this address. Optionally you can click on the suggested labels, in case you've used them before.
+3. Type in the name of the entities who know about this address.
+Optionally you can click on the suggested labels, in case you've used them before.
 
 ![Set known by in Wasabi Wallet](/ReceiveLabelingRequired.png "Set known by in Wasabi Wallet")
 
@@ -60,7 +61,7 @@ This is just like a gold coin, with a unique amount of gold atoms, and either a 
 Because UTXOs are not fungible, it is very important to know exactly which coin is which, and that is done by carefully labeling.
 
 :::tip
-In Wasabi it is mandatory to give every receive address a label, so that later you know where you got the coin from and what to do with it. 
+In Wasabi it is mandatory to give every receive address a label of those who know that this address is yours, so that later you know what to do with it, and it also helps the auto coin selection algorithm when sending.
 :::
 
 ![Set known by in Wasabi Wallet](/ReceiveLabelingRequired.png "Set known by in Wasabi Wallet")
