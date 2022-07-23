@@ -43,7 +43,7 @@ See also the [Bitcoin Wiki on CoinJoins](https://en.bitcoin.it/wiki/CoinJoin)
 :::details
 ### Do I need to trust Wasabi with my coins?
 
- Since Wasabi's CoinJoin implementation is trustless by design, there is no need for participants to trust each other or a third party.
+Since Wasabi's CoinJoin implementation is trustless by design, there is no need for participants to trust each other or a third party.
 Both the sending address (the CoinJoin input) and the receiving address (the CoinJoin output) are controlled by your own private keys.
 The Wasabi server merely coordinates the process of combining each participant's input into one single transaction, but the Wasabi Wallet can neither steal your coins, nor figure out which outputs belong to which inputs (look up “[Chaumian CoinJoin](/using-wasabi/CoinJoin.md)” if you want to know more).
 :::
@@ -68,7 +68,7 @@ Find out more about coin control in [here](/why-wasabi/Coins.md).
 
 There are countless reasons why it is the only logical choice to be [bitcoin-only](https://bitcoin-only.com).
 With Bitcoin we have a once in a lifetime opportunity to manifest libre sound money.
-If we succeed, then an utmost beautiful agora of sovereign individuals may emerge .
+If we succeed, then an utmost beautiful agora of sovereign individuals may emerge.
 If we fail, then this will conjure up the most horrific Orwellian nightmare.
 There is no room for wasted time and energy, this great work requires our full attention.
 Any line of code written to support a random shitcoin takes away scarce developer time to work on real problems.
