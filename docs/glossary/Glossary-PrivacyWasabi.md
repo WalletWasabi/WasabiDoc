@@ -254,6 +254,5 @@ Read more: [Wasabi's Solution](/why-wasabi/AddressReuse.html#wasabi-s-solution)
 
 ZeroLink is a framework to holistically design a privacy and fungibility setup for Bitcoin.
 This encompasses more than just a single CoinJoin transaction, but also includes network level privacy defense against third party spying.
-
 Read more: [ZeroLink: the Bitcoin Fungibility Framework](/using-wasabi/CoinJoin.md#zerolink-protocol-step-by-step)
 :::
