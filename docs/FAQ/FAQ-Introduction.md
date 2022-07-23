@@ -25,9 +25,9 @@ Wasabi is a tool for everyone.
 ::::
 
 :::details
-### What is a CoinJoin?
+### What is a coinjoin?
 
-CoinJoin is a mechanism by which multiple participants combine their coins (or UTXOs, to be more precise) into one large transaction with multiple inputs and multiple outputs.
+Coinjoin is a mechanism by which multiple participants combine their coins (or UTXOs, to be more precise) into one large transaction with multiple inputs and multiple outputs.
 An observer cannot determine which output belongs to which input, and neither can the participants themselves.
 This makes it difficult for outside parties to trace where a particular coin originated from and where it was sent to (as opposed to regular bitcoin transactions, where there is usually one sender and one receiver).
 
@@ -35,32 +35,33 @@ This can be done with non-custodial software like Wasabi that eliminates the ris
 Each of the signatures are created on the participants’ computers after thorough verification, so nobody can alter the transaction or redirect the funds.
 The funds will always be in a Bitcoin address that you control.
 
-In very simple terms, CoinJoin means: “when you want to make a transaction, find someone else who also wants to make a transaction and make a joint transaction together”.
+In very simple terms, coinjoin means: “when you want to make a transaction, find someone else who also wants to make a transaction and make a joint transaction together”.
 
-See also the [Bitcoin Wiki on CoinJoins](https://en.bitcoin.it/wiki/CoinJoin)
+See also the [Bitcoin Wiki on coinjoins](https://en.bitcoin.it/wiki/CoinJoin)
 :::
 
 :::details
 ### Do I need to trust Wasabi with my coins?
 
- Since Wasabi's CoinJoin implementation is trustless by design, there is no need for participants to trust each other or a third party.
-Both the sending address (the CoinJoin input) and the receiving address (the CoinJoin output) are controlled by your own private keys.
-The Wasabi server merely coordinates the process of combining each participant's input into one single transaction, but the Wasabi Wallet can neither steal your coins, nor figure out which outputs belong to which inputs (look up “[Chaumian CoinJoin](/using-wasabi/CoinJoin.md)” if you want to know more).
+Since Wasabi's coinjoin implementation is trustless by design, there is no need for participants to trust each other or a third party.
+Both the sending address (the coinjoin input) and the receiving address (the coinjoin output) are controlled by your own private keys.
+The Wasabi server merely coordinates the process of combining each participant's input into one single transaction, but the Wasabi Wallet can neither steal your coins, nor figure out which outputs belong to which inputs (look up “[WabiSabi CoinJoin](/using-wasabi/CoinJoin.md)” if you want to know more).
 :::
 
 :::details
 ### What is the privacy I get after mixing with Wasabi?
 
-This depends on how you handle your outputs after the CoinJoin.
+This depends on how you handle your outputs after the coinjoin.
 There are some ways how you can unintentionally undo the mixing by being careless.
 For example, if you send a mixed coin to an already used address, then anyone can see that both coins are controlled by the same entity.
 More importantly, anyone who knows that the address belongs to you knows that you own that mixed coin.
 [Address reuse](/why-wasabi/AddressReuse.md) compromises your privacy.
 Another deanonymizing scenario occurs when you combine mixed outputs with unmixed ones when sending: a third party will be able to make the connection between them as belonging to the same sender.
-This is why you need to be careful with [change coins](/using-wasabi/ChangeCoins.md).
+This is why you need to be careful with non-private/[change coins](/using-wasabi/ChangeCoins.md).
 
-The practice of being careful with your post-mix outputs is commonly facilitated through coin control, which is the default way of interacting with the wallet.
+The practice of being careful with your post-mix outputs is commonly facilitated through coin control.
 Find out more about coin control in [here](/why-wasabi/Coins.md).
+However, Wasabi Wallet is build in a way to help the user to avoid privacy leaks when using the wallet.
 :::
 
 :::details
@@ -75,12 +76,12 @@ Any line of code written to support a random shitcoin takes away scarce develope
 :::
 
 :::details
-### Why is the anonymity set 100?
+### Why is the anonymity score 100?
 
 It is difficult to determine a sufficient anonymity set since enough research hasn’t been conducted to provide a definitive answer.
 The right anonymity set depends on your own personal threat model.
 However, the rough consensus among many privacy researchers is that an anonymity set above 50 could be considered sufficient.
-Furthermore our calculations have shown that with the liquidity of today’s mixers our mixing rounds would take 1 to 5 minutes with 100 anonymity set and 0.1 BTC fixed denomination.
+Furthermore our calculations have shown that with the liquidity of today’s mixers, our mixing rounds would take 1 to 5 minutes with 100 anonymity score.
 :::
 
 :::details
