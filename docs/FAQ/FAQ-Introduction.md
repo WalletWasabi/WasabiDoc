@@ -69,7 +69,7 @@ However, Wasabi Wallet is build in a way to help the user to avoid privacy leaks
 
 There are countless reasons why it is the only logical choice to be [bitcoin-only](https://bitcoin-only.com).
 With Bitcoin we have a once in a lifetime opportunity to manifest libre sound money.
-If we succeed, then an utmost beautiful agora of sovereign individuals may emerge .
+If we succeed, then an utmost beautiful agora of sovereign individuals may emerge.
 If we fail, then this will conjure up the most horrific Orwellian nightmare.
 There is no room for wasted time and energy, this great work requires our full attention.
 Any line of code written to support a random shitcoin takes away scarce developer time to work on real problems.
