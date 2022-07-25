@@ -13,7 +13,7 @@
 The #twoweeks is a fun inside joke often used in the Wasabi documentation and, more generally, in the Internet community.
 In the case of Wasabi documentation, it usually indicates the arrival of a new function or update, to which the future date is still uncertain.
 
-Eg. "Lightning Network is coming to Wasabi in #twoweeks"
+E.g. "Lightning Network is coming to Wasabi in #twoweeks"
 :::
 
 :::details
