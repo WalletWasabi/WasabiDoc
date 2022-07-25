@@ -345,7 +345,7 @@ or:
 ### How can I change the observers of my receive address?
 
 You can change the observers of your receive address, as long as it hasn't received any coins yet.
-This can be done through `Reveive->Unused Receive Addresses->Edit`, in the right side of the label.
+Go to the Unused Receive Addresses list:  `Receive->Unused Receive Addresses`, and click on the pencil icon to edit the labels.
 This feature is useful when you have generated a receiving address with a specific label, but you later realize that the sender changed or that there's more entities that know that this address belongs to you.
 Take care with whom you have shared this address, because if you send it to several people, they might all send many coins to the same address.
 This is very bad for your privacy because of [address reuse](/why-wasabi/AddressReuse.md), and it confuses you with the labeling of each unique coin.
