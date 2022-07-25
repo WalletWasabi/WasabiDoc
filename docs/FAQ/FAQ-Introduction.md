@@ -148,13 +148,17 @@ See [here](https://github.com/nopara73/ZeroLink/#e-sybil-attack) for more info.
 ### What is the history of Wasabi?
 
 Ádám Ficsor worked with several others on a privacy-focused Bitcoin wallet called Hidden Wallet all the way [back in December 2015](https://docs.google.com/drawings/d/1wLL7aSgYBWNoyzllg6_haisFt-gQCf-QUzVzQPkARts/edit).
-Wasabi was unveiled in 2018 at the Building on Bitcoin conference by Ádám.
+Wasabi 1.0 was unveiled in 2018 at the Building on Bitcoin conference by Ádám.
 At the time, Wasabi was essentially HiddenWallet rebranded and rewritten from scratch with some new features.
 Key dates:
-- The Beta release was on August 1 (on the first anniversary of UASF.)
-- The 1.0 release was on October 31 (on the tenth anniversary of the Bitcoin Whitepaper.)
+- The 1.0 Beta release was on August 1, 2018 (on the first anniversary of UASF)
+- The 1.0 release was on October 31, 2018 (on the tenth anniversary of the Bitcoin Whitepaper)
+- The 2.0 Testnet release was on March 1, 2022
+- The 2.0 release was on June 15, 2022
 
 @[youtube](XORDEX-RrAI,6420)
+
+@[youtube](b1Vligm0SO8)
 :::
 
 ::::details
