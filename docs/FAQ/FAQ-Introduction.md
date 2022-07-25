@@ -157,6 +157,7 @@ Key dates:
 - The 2.0 release was on June 15, 2022
 
 @[youtube](XORDEX-RrAI,6420)
+
 @[youtube](b1Vligm0SO8)
 :::
 
