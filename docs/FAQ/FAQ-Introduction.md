@@ -154,7 +154,7 @@ Key dates:
 - The 1.0 Beta release was on August 1, 2018 (on the first anniversary of UASF)
 - The 1.0 release was on October 31, 2018 (on the tenth anniversary of the Bitcoin Whitepaper)
 - The 2.0 Testnet release was on March 1, 2022
-- The 2.0 releasse was on June 15, 2022
+- The 2.0 release was on June 15, 2022
 
 @[youtube](XORDEX-RrAI,6420)
 @[youtube](b1Vligm0SO8)
