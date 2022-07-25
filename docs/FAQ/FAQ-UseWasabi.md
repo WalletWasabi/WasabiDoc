@@ -216,8 +216,8 @@ Read more [ħere](/using-wasabi/WalletLoad.md)
 :::details
 ### How do I know if the synchronization is finished?
 
-You know that Tor and backend is properly connected when you see a checkmark at the bottom right corner of the synchronization page.
-All the block filters and all the relevant blocks are downloaded and the wallet is synchronized when the timer of the page runs out.
+You know that Tor and the backend are properly connected when you see a check mark at the bottom right corner of the synchronization page.
+The timer of the page runs out when all the block filters and all the relevant blocks are downloaded and the wallet is synchronized.
 
 ![Wasabi Wallet Status Bar](/WalletSynchronizing.png "Wasabi Wallet Status Bar")
 :::
