@@ -126,7 +126,7 @@ Also, remember to follow our [blog](https://blog.wasabiwallet.io) to get the lat
 ### Can the coordinator attack me?
 
 The developers have gone to great lengths to ensure that the coordinator cannot steal funds nor link inputs to outputs. 
-The nature of Wasabi is that you should not need to trust the developers or the Wasabi coordinating server, as you can verify that the code does not leak information to anyone.
+The nature of Wasabi is that you should not need to trust the developers or the Wasabi coordinating server, as you can verify that the code does not leak information to anyone. Due to the nature of coinjoin transactions users don't need to trust other users or the coordinator against theft, leaving denial of service and attacks on privacy as the main concerns
 
 The only known possible 'malicious' actions that the server *could* perform are two sides of the same coin;
 - **Blacklisted UTXO's**:
@@ -137,25 +137,24 @@ It is possible that the server could *only* include one 'honest/real' coin in th
 This gives a false sense of security, **but does not worsen the existing privacy of the coin**.
 It would also be noticeable to all users excluding the user being targeted as their coins would not be mixed.
 It has been argued that this 'attack' would be very costly in terms of fees because the number of coins being mixed is verifiable.
-Though it is true that fees would have to be paid to zkSNACKs every round, this does not matter if it is zkSNACKs that is acting maliciously (as they get the funds back).
-Typical rounds currently have <100 people per mix, with the minimum input being ~0.1 BTC with a fee of 0.003% per anonymity set.
-Taking the 'worst case' (100 people, each mixing 0.1 BTC) gives 0.03 BTC per round.
-This is not prohibitive and is thus a valid concern.
-With that being said, if multiple chain-analysis companies attempt to flood the zkSNACKs mix (to decrease the true anonymity set) they will hinder each other's efforts (unless they are cooperating).
-See [here](https://github.com/nopara73/ZeroLink/#e-sybil-attack) for more info.
+Though it is true that remixes pay zero coordinator fee to zkSNACKs, they do pay mining fees.
+See [here](https://github.com/zkSNACKs/WabiSabi/blob/master/protocol.md#attacks-on-privacy) for more info.
 :::
 
 :::details
 ### What is the history of Wasabi?
 
 Ádám Ficsor worked with several others on a privacy-focused Bitcoin wallet called Hidden Wallet all the way [back in December 2015](https://docs.google.com/drawings/d/1wLL7aSgYBWNoyzllg6_haisFt-gQCf-QUzVzQPkARts/edit).
-Wasabi was unveiled in 2018 at the Building on Bitcoin conference by Ádám.
+Wasabi 1.0 was unveiled in 2018 at the Building on Bitcoin conference by Ádám.
 At the time, Wasabi was essentially HiddenWallet rebranded and rewritten from scratch with some new features.
 Key dates:
-- The Beta release was on August 1 (on the first anniversary of UASF.)
-- The 1.0 release was on October 31 (on the tenth anniversary of the Bitcoin Whitepaper.)
+- The 1.0 Beta release was on August 1, 2018 (on the first anniversary of UASF)
+- The 1.0 release was on October 31, 2018 (on the tenth anniversary of the Bitcoin Whitepaper)
+- The 2.0 Testnet release was on March 1, 2022
+- The 2.0 releasse was on June 15, 2022
 
 @[youtube](XORDEX-RrAI,6420)
+@[youtube](b1Vligm0SO8)
 :::
 
 ::::details
