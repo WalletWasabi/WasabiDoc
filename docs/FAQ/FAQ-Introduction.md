@@ -126,7 +126,8 @@ Also, remember to follow our [blog](https://blog.wasabiwallet.io) to get the lat
 ### Can the coordinator attack me?
 
 The developers have gone to great lengths to ensure that the coordinator cannot steal funds nor link inputs to outputs. 
-The nature of Wasabi is that you should not need to trust the developers or the Wasabi coordinating server, as you can verify that the code does not leak information to anyone. Due to the nature of coinjoin transactions users don't need to trust other users or the coordinator against theft, leaving denial of service and attacks on privacy as the main concerns
+The nature of Wasabi is that you should not need to trust the developers or the Wasabi coordinating server, as you can verify that the code does not leak information to anyone.
+Due to the nature of coinjoin transactions users don't need to trust other users or the coordinator against theft, leaving denial of service and attacks on privacy as the main concerns
 
 The only known possible 'malicious' actions that the server *could* perform are two sides of the same coin;
 - **Blacklisted UTXO's**:
