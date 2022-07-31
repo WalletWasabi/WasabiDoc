@@ -32,8 +32,8 @@ To gain some privacy by using Electrum you should set up Tor on Network preferen
 5. Type your seed or paste your master private key.
 
 	:::tip Get your master private key inside Wasabi:
-	- Go to `Advanced` tab -> `Wallet Info`.
-	- Copy your `Extended Account zprv`.
+	- Go to `Wallet Info`.
+	- Copy your `Extended Account Private Key zprv`.
 	:::
 
 The next steps are only necessary if you have previously chosen the option `I already have a seed`.
@@ -70,11 +70,11 @@ The next steps are only necessary if you have previously chosen the option `I al
 	}
 	```
 
-3. Replace `xprv` and `xpub` sections with your Wasabi wallet's `Extended Account zprv` and `Extended Account zpub`.
+3. Replace `xprv` and `xpub` sections with your Wasabi wallet's `Extended Account Private Key zprv` and `Extended Account zpub`.
 
 	:::tip Get your master private and public keys inside Wasabi:
-	- Go to `Advanced` tab -> `Wallet Info`.
-	- Copy your `Extended Account zprv`.
+	- Go to `Wallet Info`.
+	- Copy your `Extended Account Private Key zprv`.
 	- Copy your `Extended Account zpub`.
 	:::
 
