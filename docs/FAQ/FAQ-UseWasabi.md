@@ -718,6 +718,12 @@ Here's a great explanation about it:
 :::
 
 :::details
+### What is the minimum amount required to coinjoin?
+
+The minimum amount of bitcoin per coinjoin round is 0.00005000 BTC (5000 sat) + mining fee.
+:::
+
+:::details
 ### Why aren't there smaller equal denomination outputs like 0.05 BTC?
 
 There are many reasons for that.
