@@ -787,21 +787,12 @@ So there you have it! Here is the trade-off with CJ output denominations and why
 :::
 
 :::details
-### What are the fees for the CoinJoin?
+### What are the fees for the coinjoin?
 
-You pay a coordinator fee of 0.003% * anonymity set.
-If the anonymity set of a coin is 50 then you pay 0.003% * 50 (=0.15%).
-If you set the target anonymity set to 53 then Wasabi will continue mixing until this is reached, so you may end up with an anonymity set of say 60, and you will pay 0.003% * 60 (=0.18%).
-
-There are also edge cases where you do not pay the full coordinator fee or where you pay more.
-For example if you're the smallest registrant to a round, you will never pay a coordinator fee.
-Also when you are remixing and you cannot pay the full coordinator fee with your input, then you only pay as much as you have.
-But if your input is larger than the minimum, and the change amount leftover would be too small, then that is also added to the coordinator fee.
-Currently the minimum change amount to be paid out is 0.3% of the base denomination (~0.1BTC.)
-
-It is also possible that you get more back from mixing than you put in.
-This happens when network fees go down between the start of the round and its end.
-In this case, the difference is split between the active outputs of the mix.
+Coinjoining UTXOs with a value above 0.01 BTC costs 0.3% as a [coordinator](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Backend) fee + [mining fees](https://mempool.space/).
+Inputs of 0.01 BTC or below don't pay coordinator fees.
+And remixes, even after one transaction, don't pay coordinator fees. 
+Thus, a payment made with coinjoined funds allows the sender and the recipient to remix their coins without paying any coordinator fees.
 :::
 
 :::details
