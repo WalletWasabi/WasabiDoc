@@ -827,7 +827,6 @@ Your Wasabi software has limited information on what the actually achieved anony
 With Wasabi we are trying to do lower estimations, rather than higher ones.
 :::
 
-
 :::details
 ### What are the equal denominations created in one mixing round?
 
