@@ -38,8 +38,6 @@ It encrypts your secrets, and you will need it every time you want to open the w
 
 5. Confirm the password and click the `Continue` button.
 
-![Test Wasabi Wallet password](/TestPassword.png "Test Wasabi Wallet password")
-
 6. Write down the 12 recovery words (mnemonic seed phrase).
 You can use this seed phrase **together with** your password to recover your wallet on a different computer using Wasabi or another [BIP 39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) compliant wallet.
 
@@ -61,6 +59,8 @@ Click `Done`.
 
 10. The wallet is automatically selected.
 Enter the wallets' password to open the wallet.
+
+![Test Wasabi Wallet password](/TestPassword.png "Test Wasabi Wallet password")
 
 ## Important info about your wallet password
 
