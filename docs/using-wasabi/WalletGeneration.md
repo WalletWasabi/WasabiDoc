@@ -38,8 +38,6 @@ It encrypts your secrets, and you will need it every time you want to open the w
 
 5. Confirm the password and click the `Continue` button.
 
-![Generate a Bitcoin wallet with Wasabi](/WalletManagerGenerateWallet.png "Generate a Bitcoin wallet with Wasabi")
-
 6. Write down the 12 recovery words (mnemonic seed phrase).
 You can use this seed phrase **together with** your password to recover your wallet on a different computer using Wasabi or another [BIP 39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) compliant wallet.
 
