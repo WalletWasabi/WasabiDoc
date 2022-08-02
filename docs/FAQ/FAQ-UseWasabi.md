@@ -789,7 +789,7 @@ So there you have it! Here is the trade-off with CJ output denominations and why
 :::details
 ### What are the fees for the coinjoin?
 
-Coinjoining UTXOs with a value above 0.01 BTC costs 0.3% as a [coordinator](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Backend) fee + [mining fees](https://mempool.space/).
+Coinjoining UTXOs with a value above 0.01 BTC costs 0.3% as a coordinator fee + mining fees.
 Inputs of 0.01 BTC or below don't pay coordinator fees.
 And remixes, even after one transaction, don't pay coordinator fees. 
 Thus, a payment made with coinjoined funds allows the sender and the recipient to remix their coins without paying any coordinator fees.
