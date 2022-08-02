@@ -169,7 +169,6 @@ Coinjoin Sudoku is a type of intra-transaction analysis attack on coinjoin trans
 You can read more about coinjoin Sudoku [here](https://www.coinjoinsudoku.com/advisory/).
 :::
 
-
 ## The Privacy of Tor
 
 :::details
