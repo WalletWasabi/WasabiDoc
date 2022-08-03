@@ -789,10 +789,11 @@ So there you have it! Here is the trade-off with CJ output denominations and why
 :::details
 ### What are the fees for the coinjoin?
 
-Coinjoining UTXOs with a value above 0.01 BTC costs 0.3% as a coordinator fee + mining fees.
-Inputs of 0.01 BTC or below don't pay coordinator fees.
-And remixes, even after one transaction, don't pay coordinator fees. 
-Thus, a payment made with coinjoined funds allows the sender and the recipient to remix their coins without paying any coordinator fees.
+Coinjoin fees are composed of coordination fees and mining (network) fees.
+Coins (UTXOs) with a value above 0.01 BTC pay 0.3% as a coordination fee + mining fees.
+Coins of 0.01 BTC or below don't pay coordination fees.
+Remixes, even after one transaction, also don't pay coordination fees. 
+Thus, a payment made with coinjoined funds allows the sender and the recipient to remix their coins without paying any coordination fees.
 :::
 
 :::details
