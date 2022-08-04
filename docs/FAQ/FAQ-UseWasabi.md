@@ -1058,6 +1058,12 @@ This is good for your privacy, and also saves you fees.
 Example: If you select 10 coins with total value of 0.2 btc but the sum of 4 coins is enough to CoinJoin, then Wasabi will use only those 4 coins.
 :::
 
+:::details
+### How long does it take to make my wallet 100% private?
+
+Depending on multiple factors, like the `coinjoin strategy` and the amount of bitcoin, it can take from a couple hours to multiple days or more.
+:::
+
 ## Backup and Recovery
 
 ::::details
