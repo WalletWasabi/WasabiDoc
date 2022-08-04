@@ -189,6 +189,12 @@ However, you can use the `Build Transaction` tab in the `Advanced` section of th
 When this is signed on the device with the private key (like an offline laptop running Electrum wallet or a hardware wallet), then you can broadcast the signed transaction using the `Broadcast Transaction` tab in the `Tools` menu.
 :::
 
+:::details
+### What does the privacy progress mean?
+
+The privacy progress indicates the percentage of the wallet balance in coins above the anonscore target.
+:::
+
 ## Synchronization
 
 @[youtube](qguwAvA5Fx4)
