@@ -86,6 +86,10 @@ A secure password manager software might also be used, but be careful here.
 ::::details
 ### Where can I find the Wasabi data folder?
 
+You can easily reach it from inside Wasabi by typing `Data Folder` in the search bar at the top of the main view.
+
+Or you can manually navigate to it (depending on which OS you have):
+
 * Windows: `/Users/{your username}/AppData/Roaming/WalletWasabi/Client`
 * Linux: `/home/{your username}/.walletwasabi/client`
 * macOS: `/Users/{your username}/.walletwasabi/client`
@@ -93,8 +97,6 @@ A secure password manager software might also be used, but be careful here.
 :::tip
 You need to mark the “show hidden files” setting to see it.
 :::
-
-You can also easily reach it from inside Wasabi by typing `Data Folder` in search bar at the top of the main view.
 ::::
 
 ::::details
