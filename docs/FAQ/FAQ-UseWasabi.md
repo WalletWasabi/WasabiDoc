@@ -43,8 +43,8 @@ You have successfully setup your wallet when you click `I wrote down my Recovery
 ### Can I rename my Wallet?
 
 Yes you can.
-Go to `Wallets` folder (inside the [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder)) and rename the .json Wallet file.
-You can also find the correct folder by typing `Wallet Folder` in search bar at the top of the main view.
+To access the `Wallets` folder type `Wallet Folder` in the search bar at the top of the main view and rename the .json Wallet file.
+Or you can navigate to the `Wallets` folder (inside the [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder)) and rename the .json Wallet file.
 Then go to `WalletBackups` folder (inside [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder)) and rename the .json Wallet file.
 
 :::tip
@@ -216,7 +216,7 @@ Read more [ħere](/using-wasabi/WalletLoad.md)
 :::details
 ### How do I know if the synchronization is finished?
 
-You know that Tor and the backend are properly connected when you see a check mark at the bottom right corner of the synchronization page.
+Once Tor and backend are properly connected and you have peers, you will see a checkmark at the bottom right corner of the main view.
 The timer of the page runs out when all the block filters and all the relevant blocks are downloaded and the wallet is synchronized.
 
 ![Wasabi Wallet Status Bar](/WalletSynchronizing.png "Wasabi Wallet Status Bar")
