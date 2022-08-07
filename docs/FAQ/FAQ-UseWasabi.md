@@ -43,7 +43,8 @@ You have successfully setup your wallet when you click `I wrote down my Recovery
 ### Can I rename my Wallet?
 
 Yes you can.
-Go to `Wallets` folder (inside the [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder)) and rename the .json Wallet file.
+To access the `Wallets` folder type `Wallet Folder` in the search bar at the top of the main view and rename the .json Wallet file.
+Or you can navigate to the `Wallets` folder (inside the [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder)) and rename the .json Wallet file.
 Then go to `WalletBackups` folder (inside [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder)) and rename the .json Wallet file.
 
 :::tip
@@ -62,7 +63,7 @@ The password you set is used:
 * As a 13th word (passphrase) as described in [BIP 39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki).
 * To encrypt the private key of the extended private key as described in [BIP 38](https://github.com/bitcoin/bips/blob/master/bip-0038.mediawiki) to get an encrypted secret which is stored on the computer.
 
-Wasabi stores only the BIP38 encrypted blob, so you'll need to type in the password to spend or CoinJoin from Wasabi.
+Wasabi stores only the BIP38 encrypted blob, so you'll need to type in the password to open the wallet and to spend from Wasabi.
 
 :::danger
 The password will unlock your bitcoin to anyone who has access to the recovery words backup or the computer!
@@ -85,6 +86,10 @@ A secure password manager software might also be used, but be careful here.
 ::::details
 ### Where can I find the Wasabi data folder?
 
+You can easily reach it from inside Wasabi by typing `Data Folder` in the search bar at the top of the main view.
+
+Or you can manually navigate to it (depending on which OS you have):
+
 * Windows: `/Users/{your username}/AppData/Roaming/WalletWasabi/Client`
 * Linux: `/home/{your username}/.walletwasabi/client`
 * macOS: `/Users/{your username}/.walletwasabi/client`
@@ -92,8 +97,6 @@ A secure password manager software might also be used, but be careful here.
 :::tip
 You need to mark the “show hidden files” setting to see it.
 :::
-
-You can also easily reach it from inside Wasabi: `File > Open > Data Folder`.
 ::::
 
 ::::details
@@ -185,13 +188,9 @@ The `WalletName` will be displayed in the GUI.
 Then start Wasabi and load the wallet to synchronize it.
 
 For watch only wallets, the `Send` tab is disabled.
-However, you can use the `Build Transaction` tab in the `Advanced` section of the `Wallet Explorer` to build an unsigned PSBT transaction.
-When this is signed on the device with the private key (like an offline laptop running Electrum wallet or a hardware wallet), then you can broadcast the signed transaction using the `Broadcast Transaction` tab in the `Tools` menu.
 :::
 
 ## Synchronization
-
-@[youtube](qguwAvA5Fx4)
 
 :::details
 ### What are BIP-158 block filters?
@@ -219,23 +218,17 @@ Read more [ħere](/using-wasabi/WalletLoad.md)
 :::details
 ### How do I know if the synchronization is finished?
 
-You know that Tor is properly connected, that all the block filters and all the relevant blocks are downloaded when you see that the status bar is `Ready`.
+Once Tor and backend are properly connected and you have peers, you will see a checkmark at the bottom right corner of the main view.
+The timer of the loading wallet page runs out when all the block filters and all the relevant blocks are downloaded and the wallet is synchronized.
 
-![Wasabi Wallet Status Bar](/StatusBar.png "Wasabi Wallet Status Bar")
+![Wasabi Wallet Status Bar](/WalletSynchronizing.png "Wasabi Wallet Status Bar")
 :::
-
-:::details
-### What does it mean "Missing Filters"?
-
-The `Missing Filters` label indicates that Wasabi is still downloading the [BIP 158 block filters](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki) and it's synchronizing your wallet.
-You have to wait until the status bar is `Ready`.
-::::
 
 :::details
 ### How long does the initial, and a subsequent synchronization take?
 
 It usually only takes a couple of seconds to scan the block filters, and to download and parse the blocks.
-However, for large wallets with many transactions, this synchronization can take up to several minutes.
+However, for large wallets with many transactions, this synchronization can take up to several hours.
 The speed and reliability of the loading process is constantly improved.
 For especially old wallets, it might be worth considering to generate a new wallet with a shorter transaction history.
 :::
@@ -248,8 +241,6 @@ Wasabi client doesn't work with pruned nodes.
 :::
 
 ## Receive
-
-@[youtube](9i7CceIdFg4)
 
 ::::details
 ### Why is it bad to re-use addresses?
