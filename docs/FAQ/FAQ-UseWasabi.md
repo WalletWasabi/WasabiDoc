@@ -272,8 +272,8 @@ Wasabi uses [BIP 44 multi-account hierarchy for deterministic wallets](https://g
 :::details
 ### How do I generate a new receiving address?
 
-You can generate a new bech32 address in the `Receive` tab of Wasabi Wallet.
-First you must set a label for it, so that you later know who has sent you bitcoin to this address.
+You can generate a new bech32 address in the `Receive` dialog of Wasabi Wallet.
+First you must set a label for it, so that you later know who knows that this address is yours.
 Be precise in the label of the observers who know this address is yours, as this is an important part of good [coin selection](/why-wasabi/Coins.md) privacy best practices.
 Do not write anything else on the label exept the name of the entities that know this address belongs to you.
 Then you can click on `Continue` which will now show you the address, and you can copy it to the clipboard.
@@ -325,7 +325,7 @@ If you are recovering a wallet with the 12 recovery words, then in the advanced 
 
 Bitcoin addresses look like cyphertext, they are not easily remembered and it's not clear how they were used previously.
 When you do not label all your addresses, there is no meta-data for you to understand the context of your coins.
-Thus receiving addresses and sending transactions should be carefully labeled with the observers who knows that this address belongs to you.
+Thus receiving addresses and sending transactions should be carefully labeled with the observers who know that this address belongs to you.
 This helps you know where your coins came from so that you can judge whether there are privacy concerns when sending a specific coin to a specific receiver.
 
 ![Wasabi Wallet known by label](/ReceiveLabelingRequired.png "Wasabi Wallet known by label")
