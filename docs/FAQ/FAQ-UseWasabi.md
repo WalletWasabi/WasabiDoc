@@ -1312,7 +1312,7 @@ You can read more about Discreet Mode [here](/using-wasabi/DiscreetMode.md).
 
 You can change from the default dark to the white theme by disabling `Dark Mode` in the Settings.
 Alternatively, you can switch to `Dark Mode` in the `.walletwasabi/client/UIConfig` [data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder).
-Open the `UIConfig.json` file and change the line from `"DarkModeEnabled": ture` to `"DarkModeEnabled": false`.
+Open the `UIConfig.json` file and change the line from `"DarkModeEnabled": true` to `"DarkModeEnabled": false`.
 Save the file and restart Wasabi.
 Please note that Wasabi is designed for the dark theme, and some color schemes might not look beautiful in the white mode.
 
