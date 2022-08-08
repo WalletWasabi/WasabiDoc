@@ -295,7 +295,7 @@ When you import the wallet file into a new Wasabi client, then it will use this 
 ### How do I change the gap limit of a wallet?
 
 You can change the gap limit of an already existing Wasabi wallet by editing the wallet file.
-Open the wallet folder via search bar -> Wallet Folder.
+Open the wallet folder by typing `Wallet Folder` in the search bar.
 Then, open the wallet file in your favourite text editor.
 
 Close Wasabi and edit the `MinGapLimit` setting (which is `21` by default) in the wallet file.
