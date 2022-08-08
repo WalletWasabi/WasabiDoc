@@ -24,7 +24,7 @@ And the sender can see the future spending of the receiver.
 
 ### WabiSabi coinjoins
 
-In order to obfuscate the link between inputs and outputs, Wasabi uses the [WabiSabi](https://github.com/zksnacks/wabisabi) coinjoin protocol.
+In order to obfuscate the link between inputs and outputs, Wasabi uses the [WabiSabi](https://github.com/zkSNACKs/WabiSabi) coinjoin protocol.
 The Wasabi central coordinator cannot steal and cannot spy, it simply helps many peers to build a huge transaction, with many inputs, and many outputs.
 The non-private inputs can be linked to their previous transaction history.
 However, the coinjoin outputs with an anonymity score cannot be tied to the inputs.
