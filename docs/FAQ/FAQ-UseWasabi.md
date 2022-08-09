@@ -345,7 +345,7 @@ or:
 ### How can I change the observers of my receive address?
 
 You can change the observers of your receive address, as long as it hasn't received any coins yet.
-Go to the Unused Receive Addresses list:  `Receive->Unused Receive Addresses`, and click on the pencil icon to edit the labels.
+Go to the Unused Receive Addresses list:  `Receive` -> `Unused Receive Addresses`, and click on the pencil icon to edit the labels.
 This feature is useful when you have generated a receiving address with a specific label, but you later realize that the sender changed or that there's more entities that know that this address belongs to you.
 Take care with whom you have shared this address, because if you send it to several people, they might all send many coins to the same address.
 This is very bad for your privacy because of [address reuse](/why-wasabi/AddressReuse.md), and it confuses you with the labeling of each unique coin.
@@ -377,7 +377,7 @@ This is a complete de-anonymization of your entire wallet!!
 :::details
 ### Why does Wasabi only use SegWit bech32 addresses?
 
-Wasabi was created after the activation of SegWit, and it made sense to support the most advanced address type, which has numerous benefits.
+Wasabi was created after the activation of SegWit, and it made sense to support the most advanced address type, which has numerous benefits, like large savings on mining fees for SegWit transactions.
 Implementing Taproot hasn't been a priority, as the benefits of upgrading to it are negligible for Wasabi, at the moment.
 :::
 
@@ -409,7 +409,8 @@ Currently, there's no way to see used addresses and their QR codes through the G
 ### What derivation paths does Wasabi use?
 
 Wasabi follows [BIP 84: Derivation scheme for P2WPKH Based Accounts](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki), so the main path is `m/84'/0'/0'`.
-On TestNet and RegTest Wasabi uses `m/84'/0'/0'`, and not the standard `m/84'/1'/0'`.
+On TestNet Wasabi uses the path `m/84'/1'/0'`.
+On RegTest it uses `m/84'/0'/0'`, and not the standard `m/84'/1'/0'` path.
 Due to the coinjoin implementation, the key depth can be rather large, thus when recovering, the gap limit should be elevated to at least 100.
 :::
 
