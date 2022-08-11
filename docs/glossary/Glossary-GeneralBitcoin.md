@@ -149,6 +149,12 @@ It specifies the numeric value the hash of a block must not be above to be consi
 :::
 
 :::details
+### ECDSA
+
+ECDSA (Elliptic Curve Digital Signature Algorithm) is one of the digital signature algorithms used by Bitcoin to ensure that funds can only be spent by their rightful owners.
+:::
+
+:::details
 ### Fork
 
 Fork, also known as accidental fork, occurs when two or more blocks have the same block height, forking the blockchain.
