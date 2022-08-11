@@ -714,7 +714,7 @@ Here's a great explanation about it:
 :::details
 ### What is the minimum amount required to coinjoin?
 
-The minimum amount of bitcoin per coinjoin round is 0.00005000 BTC (5000 sat) + mining fee.
+The minimum amount of bitcoin per coinjoin round is 0.00005000 BTC (5000 sats) + mining fees.
 :::
 
 :::details
