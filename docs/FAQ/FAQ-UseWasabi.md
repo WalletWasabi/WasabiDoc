@@ -766,13 +766,13 @@ For example, with a 0.7 BTC input you would expect the following outputs: ~0.1, 
 :::
 
 :::details
-### What is the best time to CoinJoin?
+### When's the best time to coinjoin?
 
-You can CoinJoin whenever you want.
-That said, the ideal way to CoinJoin would be when:
+You can coinjoin whenever you want.
+That said, the ideal way to coinjoin would be when:
 
 1. Mempool is clean.
-CoinJoins are unfairly cheap when the mempool is empty.
+Coinjoins are unfairly cheap when the mempool is empty.
 Remember to take a look at websites like [Johoe's Bitcoin Mempool Statistics](https://jochen-hoenicke.de/queue/#0,24h) or [mempool.space](https://mempool.space/tv) to see mempool statistics in real time.
 
 2. Your inputs are the same or little higher as the minimal denomination for the current round.
