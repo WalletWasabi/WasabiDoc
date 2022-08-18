@@ -965,10 +965,10 @@ Old static addresses:
 :::
 
 :::details
-### What is the maximum number of coins that can be registered in a CoinJoin?
+### What is the maximum number of coins that can be registered in a coinjoin?
 
-Wasabi Wallet will register up to 7 coins in a CoinJoin.
-The sum of these 7 coins must be above the minimum registration amount.
+Wasabi Wallet's default client is configured to register a maximum of 10 inputs per round.
+However, as the coordinator cannot enforce this, a custom client could use a different configuration.
 :::
 
 :::details
