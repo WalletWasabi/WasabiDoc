@@ -957,7 +957,7 @@ Summing up: the faster peers register in the CoinJoins, the faster the mixes are
 ### What is the address of the coordinator?
 
 The coordinator possibly gets paid in every coinjoin.
-Wasabi is using a fresh unused coordinator address for every coinjoin.
+Wasabi is using a fresh unused coordinator address for every coinjoin round.
 :::
 
 :::details
