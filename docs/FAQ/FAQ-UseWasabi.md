@@ -954,14 +954,10 @@ Summing up: the faster peers register in the CoinJoins, the faster the mixes are
 :::
 
 :::details
-### What is the coordinator address?
+### What is the address of the coordinator?
 
-The coordinator gets paid in every CoinJoin.
-Since January 31st, 2020, Wasabi is using a fresh unused coordinator address for every CoinJoin.
-
-Old static addresses:
-- `bc1qa24tsgchvuxsaccp8vrnkfd85hrcpafg20kmjw`
-- `bc1qs604c7jv6amk4cxqlnvuxv26hv3e48cds4m0ew`
+The coordinator possibly gets paid in every coinjoin.
+Wasabi is using a fresh unused coordinator address for every coinjoin.
 :::
 
 :::details
