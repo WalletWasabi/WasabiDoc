@@ -1123,24 +1123,6 @@ You should put a meaningful label when you generate a receive address in your ha
 :::
 
 :::details
-### How can I enter the PIN of my Trezor One?
-
-You can enter the PIN to unlock your Trezor One the same way you use the Trezor browser wallet.
-As soon as you plug in the Trezor One in your laptop and open Wasabi, it will show 9 empty buttons, and on the Trezor One screen you will see 9 boxes with numbers in random order.
-Inside Wasabi, click on the boxes that correspond to your PIN in the order shown on the Trezor One screen.
-:::
-
-:::details
-### How can I type in the passphrase of my Trezor One?
-
-The Trezor One was a pioneer in offline signing devices, however it has one critical design flaw.
-It requires to use the hot computer to input some data, like the PIN or passphrase.
-This is contrary to the threat model of offline signing devices where the hot computer should not be trusted.
-Wasabi does support the empty button PIN input field, as this is secure to use on the hot wallet.
-However, Wasabi does not support to use the hot computer keyboard to type in the passphrase.
-:::
-
-:::details
 ### How can I type in the passphrase of my Trezor T?
 
 After connecting the Trezor T to your computer and upon trying to load your wallet, you get a message on the Trezor T to choose where to type your passphrase, on the device or the host (computer), choose the first option (device) then enter the passprase using the touchscreen of your Trezor T.
