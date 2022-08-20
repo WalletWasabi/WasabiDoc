@@ -512,31 +512,6 @@ Then Wasabi will help you with automatically calculating the precise change outp
 ![Wasabi Wallet Send tab](/SendAmountFeePassword.png "Wasabi Wallet Send tab")
 :::
 
-::::details
-### How can I use the MAX button?
-
-When you select one or more coins as inputs in `Send` tab, say two anonset coins worth each 0.1 bitcoin.
-You can click the `MAX` button and the transaction will have only one output with the destination address, and no change output.
-Wasabi will calculate the precise value for the destination output with `inputs - transaction fee`.
-This means you send the entire two coins to the receiving address, and there is no change coming back to your own wallet, you are sending a "whole coin".
-
-![Wasabi Wallet Send tab](/SendAmountFeePassword.png "Wasabi Wallet Send tab")
-
-The blockchain spy heuristic is that this is a transaction to yourself, for example to your hardware wallet for long-term hodling.
-Most of the time this assumption is correct - the amount of an external payment is rarely exactly the same as the value of the sum of coins in the input, thus requiring change.
-It does not matter what value the coin has when you send it to yourself, thus there is no change.
-But you can use this assumption to your advantage by sending the MAX amount to your external destination, for example for pizza at the tribe gathering.
-If the change would be only a small amount, maybe you accept the overpayment as price for your privacy.
-If the input is not high enough value for the payment, maybe the receiver accepts a slight underpayment.
-You can also use payment rails like Lightning Network to send the small value change privately off-chain.
-
-:::tip
-When using the MAX button, it looks like you send back to yourself.
-This can be used to spy on you!
-But you can also use it to your advantage when paying others.
-:::
-::::
-
 :::details
 ### Why does Wasabi choose a new random node every time I send a transaction?
 
@@ -974,16 +949,6 @@ Wasabi Wallet's default client is configured to register 1 up to 8 outputs per c
 However, as the coordinator cannot enforce this, a custom client could use a different configuration.
 :::
 
-:::details
-### Why did Wasabi not register some of my enqueued coins?
-
-Because they were not necessary for the CoinJoin.
-Wasabi Wallet will use only the necessary coins to CoinJoin (up to 7 coins).
-This is good for your privacy, and also saves you fees.
-
-Example: If you select 10 coins with total value of 0.2 btc but the sum of 4 coins is enough to CoinJoin, then Wasabi will use only those 4 coins.
-:::
-
 ## Backup and Recovery
 
 ::::details
@@ -1387,12 +1352,6 @@ Wasabi creates anonymity set for multiple denominations in one round, these are 
 Read more: [What are the equal denominations created in one mixing round?](/FAQ/FAQ-UseWasabi.md#what-are-the-equal-denominations-created-in-one-mixing-round)
 
 @[youtube](3Ezru07J674)
-:::
-
-:::details
-### Which coins can I select for CoinJoins?
-
-You can select any coin, as long as the total sum of up to 7 coins reaches the minimum to register (usually ~0.1 BTC).
 :::
 
 ::::details
