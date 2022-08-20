@@ -1379,12 +1379,6 @@ Read more: [What are the equal denominations created in one mixing round?](/FAQ/
 @[youtube](3Ezru07J674)
 :::
 
-:::details
-### Which coins can I select for CoinJoins?
-
-You can select any coin, as long as the total sum of up to 7 coins reaches the minimum to register (usually ~0.1 BTC).
-:::
-
 ::::details
 ### Why do my coins occasionally get banned from participating in CoinJoin?
 
