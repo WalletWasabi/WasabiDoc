@@ -1296,11 +1296,11 @@ For example: When you set it to `0.0000 5000 BTC`, and when you receive a coin w
 :::details
 ### Where can I find the logs?
 
-In the top left menu `File > Open` you can see there are several logs available.
-* The `Log File` shows you the general information about Wasabi Wallet.
-* The `Tor Log File` shows the Tor specific logs.
+In the SearchBar you can see there are several logs available.
+* The `Logs` shows the general log information about Wasabi Wallet.
+* The `Tor Logs` shows the Tor specific logs.
 
-![Wasabi Wallet open log file](/MenuFileOpen.png "Wasabi Wallet open log file")
+![Wasabi Wallet SearchBar Help&Support and Open](/SearchBarHelpSupportOpen.png "Wasabi Wallet SearchBar Help&Support & Open")
 
 Alternatively, you can find the logs inside your [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder).
 :::
