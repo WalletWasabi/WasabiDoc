@@ -968,6 +968,13 @@ However, as the coordinator cannot enforce this, a custom client could use a dif
 :::
 
 :::details
+### How many coins/outputs do I get from a coinjoin?
+
+Wasabi Wallet's default client is configured to register 1 up to 8 outputs per coinjoin round.
+However, as the coordinator cannot enforce this, a custom client could use a different configuration.
+:::
+
+:::details
 ### Why did Wasabi not register some of my enqueued coins?
 
 Because they were not necessary for the CoinJoin.
