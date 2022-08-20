@@ -974,16 +974,6 @@ Wasabi Wallet's default client is configured to register 1 up to 8 outputs per c
 However, as the coordinator cannot enforce this, a custom client could use a different configuration.
 :::
 
-:::details
-### Why did Wasabi not register some of my enqueued coins?
-
-Because they were not necessary for the CoinJoin.
-Wasabi Wallet will use only the necessary coins to CoinJoin (up to 7 coins).
-This is good for your privacy, and also saves you fees.
-
-Example: If you select 10 coins with total value of 0.2 btc but the sum of 4 coins is enough to CoinJoin, then Wasabi will use only those 4 coins.
-:::
-
 ## Backup and Recovery
 
 ::::details
