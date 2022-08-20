@@ -878,15 +878,6 @@ More rounds of CoinJoin is better for your privacy, but more expensive.
 :::
 
 :::details
-### Are coins automatically requeued after the round is complete?
-
-That depends on the anonymity set target.
-If the coins' anonymity sets are below the specified target after a round is complete, then the coins are requeued automatically for the next round.
-But when the anonymity sets are above the target after a round, then the coins will no longer be registered automatically.
-However, you can manually enqueue them for a new round at any time.
-:::
-
-:::details
 ### How does my wallet communicate with the Wasabi coordinator server?
 
 Wasabi communicates in many ways to the coordinator server, and it is always over the Tor network.
