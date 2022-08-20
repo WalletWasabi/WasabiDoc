@@ -878,22 +878,6 @@ More rounds of CoinJoin is better for your privacy, but more expensive.
 :::
 
 :::details
-### Are coins automatically requeued after the round is complete?
-
-That depends on the anonymity set target.
-If the coins' anonymity sets are below the specified target after a round is complete, then the coins are requeued automatically for the next round.
-But when the anonymity sets are above the target after a round, then the coins will no longer be registered automatically.
-However, you can manually enqueue them for a new round at any time.
-:::
-
-:::details
-### How can I select UTXOs for CoinJoin?
-
-Go to [`CoinJoin`](/using-wasabi/CoinJoin.md) tab and select your desired UTXO by clicking the checkbox, then type in the password.
-It will be queued and registered for the next CoinJoin round.
-:::
-
-:::details
 ### How does my wallet communicate with the Wasabi coordinator server?
 
 Wasabi communicates in many ways to the coordinator server, and it is always over the Tor network.
@@ -1136,24 +1120,6 @@ Everything is working as expected.
 The anonymity set info (number) is tied to your wallet that you used to CoinJoin, if you send a mixed coin to another Wasabi Wallet of yours (hardware wallet or normal wallet) it will have an anonymity set 1 <img src="/ShieldRed.png" alt="Wasabi Wallet red shield anonymity set" title="Wasabi Wallet red shield anonymity set" class="shield" /> because this wallet doesn't know that the coin was coinjoined.
 
 You should put a meaningful label when you generate a receive address in your hardware wallet, e.g. "coinjoined utxo with anonymity set 70" (something that reminds you that you got this utxo from your Wasabi Wallet and it was coinjoined).
-:::
-
-:::details
-### How can I enter the PIN of my Trezor One?
-
-You can enter the PIN to unlock your Trezor One the same way you use the Trezor browser wallet.
-As soon as you plug in the Trezor One in your laptop and open Wasabi, it will show 9 empty buttons, and on the Trezor One screen you will see 9 boxes with numbers in random order.
-Inside Wasabi, click on the boxes that correspond to your PIN in the order shown on the Trezor One screen.
-:::
-
-:::details
-### How can I type in the passphrase of my Trezor One?
-
-The Trezor One was a pioneer in offline signing devices, however it has one critical design flaw.
-It requires to use the hot computer to input some data, like the PIN or passphrase.
-This is contrary to the threat model of offline signing devices where the hot computer should not be trusted.
-Wasabi does support the empty button PIN input field, as this is secure to use on the hot wallet.
-However, Wasabi does not support to use the hot computer keyboard to type in the passphrase.
 :::
 
 :::details
