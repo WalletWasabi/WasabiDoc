@@ -887,13 +887,6 @@ However, you can manually enqueue them for a new round at any time.
 :::
 
 :::details
-### How can I select UTXOs for CoinJoin?
-
-Go to [`CoinJoin`](/using-wasabi/CoinJoin.md) tab and select your desired UTXO by clicking the checkbox, then type in the password.
-It will be queued and registered for the next CoinJoin round.
-:::
-
-:::details
 ### How does my wallet communicate with the Wasabi coordinator server?
 
 Wasabi communicates in many ways to the coordinator server, and it is always over the Tor network.
