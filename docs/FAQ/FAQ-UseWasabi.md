@@ -1123,6 +1123,13 @@ You should put a meaningful label when you generate a receive address in your ha
 :::
 
 :::details
+### Can I use Trezor One with Wasabi?
+
+No. Unfortunately, Trezor One is currently not supported by Wasabi Wallet.
+For the complete list of all the officially supported hardware wallets, click [here](https://github.com/zkSNACKs/WalletWasabi/blob/master/WalletWasabi.Documentation/WasabiCompatibility.md#officially-supported-hardware-wallets).
+:::
+
+:::details
 ### How can I type in the passphrase of my Trezor T?
 
 After connecting the Trezor T to your computer and upon trying to load your wallet, you get a message on the Trezor T to choose where to type your passphrase, on the device or the host (computer), choose the first option (device) then enter the passprase using the touchscreen of your Trezor T.
