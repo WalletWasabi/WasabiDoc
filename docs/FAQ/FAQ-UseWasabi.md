@@ -1125,7 +1125,7 @@ You should put a meaningful label when you generate a receive address in your ha
 :::details
 ### Can I use Trezor One with Wasabi?
 
-No. Unfortunately, Trezor One is currently not supported by Wasabi Wallet.
+No. Unfortunately, Trezor One is not supported by Wasabi Wallet.
 For the complete list of all the officially supported hardware wallets, click [here](https://github.com/zkSNACKs/WalletWasabi/blob/master/WalletWasabi.Documentation/WasabiCompatibility.md#officially-supported-hardware-wallets).
 :::
 
