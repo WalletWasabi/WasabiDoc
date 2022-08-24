@@ -1190,8 +1190,8 @@ There are three different ways of using your [Bitcoin full node with Wasabi](/us
 ::::details
 ### How can I turn off Tor?
 
-You can turn off Tor in the Settings.
-Note that this is a privacy concern, especially when you CoinJoin and when you broadcast a transaction.
+You can turn off `Network anonymization (Tor)` in the Settings.
+Note that this is a privacy concern, especially when you coinjoin and when you broadcast a transaction.
 In the first case, the coordinator would know the links between your inputs and outputs based on your IP address.
 In the second case, if you happen to broadcast a transaction of yours to a full node that is spying on you, it will know the link between your transaction and your IP address.
 
