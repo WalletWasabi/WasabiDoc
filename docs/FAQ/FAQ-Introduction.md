@@ -203,8 +203,8 @@ Additionally, open-source software tends to both incorporate and operate accordi
 
 While fungibility is an essential property of good money, Bitcoin has its limitations in this area.
 Numerous fungibility improvements have been proposed; however, none of them have addressed the privacy issues in full.
-ZeroLink is designed so that no participant or outside observer can spy on the user.
-The scope of ZeroLink is not limited to a single transaction, it extends to transaction chains and it addresses various network layer deanonymizations.
+WabiSabi is designed so that no participant, outside observer or even the coordinator can spy on the user.
+The scope of WabiSabi is not limited to a single transaction, it extends to transaction chains and it addresses various network layer deanonymizations.
 However, its scope is limited to Bitcoin's first layer.
 Even if an off-chain anonymity solution gets widely adopted, ultimately the entrance and exit transactions will always be settled on-chain.
 Therefore, there will always be need for on-chain privacy.
