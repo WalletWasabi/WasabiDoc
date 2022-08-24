@@ -7,7 +7,7 @@
 
 # Use of Wasabi
 
-## Wallet Manager
+## General
 
 @[youtube](XykixYdbFpA)
 
