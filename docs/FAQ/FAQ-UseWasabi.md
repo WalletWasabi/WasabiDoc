@@ -933,6 +933,12 @@ Wasabi Wallet's default client is configured to register 1 up to 8 outputs per c
 However, as the coordinator cannot enforce this, a custom client could use a different configuration.
 :::
 
+:::details
+### How long does it take to make my wallet 100% private?
+
+Depending on many factors, like the `Anonymity score target`, the `coinjoin strategy`, and the amount of bitcoin, it can take from a couple hours to multiple days.
+:::
+
 ## Backup and Recovery
 
 ::::details
