@@ -49,7 +49,7 @@ You can use this seed phrase **together with** your password to recover your wal
 
 ![Wasabi Wallet recovery words](/WalletManagerRecoveryWords.png "Wasabi Wallet recovery words")
 
-7. You must confirm 3 of the 12 Recovery Words, as a quick check to make sure that your Recovery Words are correct.
+7. You must confirm 3 of the 12 Recovery Words, as a quick check to make sure that your Recovery Words are backed up.
 So, confirm the Recovery Words, and click `Continue`.
 
 8. Select the coinjoin strategy for this wallet and click `Continue`.
