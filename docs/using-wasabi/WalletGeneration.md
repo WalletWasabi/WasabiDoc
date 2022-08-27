@@ -27,7 +27,7 @@ This label is not shared with anyone, it is only stored locally on your computer
 Click `Continue`.
 
 4. Write down the 12 recovery words (mnemonic seed phrase) in the correct order and store them in a safe place.
-You can use this seed phrase **together with** your password to recover your wallet on a different computer using Wasabi or another [BIP 39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) compliant wallet.
+You have to use this seed phrase **together with** your password to recover your wallet on a different computer using Wasabi or another [BIP 39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) compliant wallet.
 
 	:::danger Back up your recovery words!
 	Without the recovery words (Seed phrase) AND the password, you cannot recover your wallet.
