@@ -18,27 +18,16 @@ So, with several wallets, you can conveniently manage your bitcoin for different
 ## Generating the wallet step-by-step
 
 1. Launch Wasabi Wallet.
-The very first time you run the software the `Generate Wallet` tab will be open automatically, but you can also access it by clicking on `File -> Generate Wallet` in the menu bar.
+The very first time you run the software the `Add Wallet` dialog will be open automatically, but you can also access it by clicking on `Add Wallet` in the NavBar or Searchbar.
 
-2. Name the new wallet precisely to ensure a proper differentiation from wallets created in the future.
+2. Click `Create a new wallet` to generate a new wallet.
+
+3. Name the new wallet precisely to ensure a proper differentiation from wallets created in the future.
 This label is not shared with anyone, it is only stored locally on your computer.
+Click `Continue`.
 
-3. Write a long and random password and **[back it up](/using-wasabi/BackupBestPractices.md)**.
-It encrypts your secrets, and you will need it every time you want to spend bitcoin from this wallet or recover your wallet.
-
-	If you are uncertain about how to create a secure password, refer to [Password Best Practices](/using-wasabi/PasswordBestPractices.md) for helpful information.
-
-	:::danger Back up your password!
-	Without the password, you cannot spend your bitcoin or recover your wallet, even if you have the recovery words (Seed phrase).
-	So, triple-check that you have a proper backup!
-	:::
-
-4. Click the `Generate` button.
-
-![Generate a Bitcoin wallet with Wasabi](/WalletManagerGenerateWallet.png "Generate a Bitcoin wallet with Wasabi")
-
-5. Write down the 12 recovery words (mnemonic seed phrase).
-You can use this seed phrase **together with** your password to recover your wallet on a different computer using Wasabi or another [BIP 39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) compliant wallet.
+4. Write down the 12 recovery words (mnemonic seed phrase) in the correct order and store them in a safe place.
+You have to use this seed phrase **together with** your password to recover your wallet on a different computer using Wasabi or another [BIP 39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) compliant wallet.
 
 	:::danger Back up your recovery words!
 	Without the recovery words (Seed phrase) AND the password, you cannot recover your wallet.
@@ -48,10 +37,25 @@ You can use this seed phrase **together with** your password to recover your wal
 
 ![Wasabi Wallet recovery words](/WalletManagerRecoveryWords.png "Wasabi Wallet recovery words")
 
-6. You must test the password before you can load the wallet, to make sure that your password is correct.
-So, type or paste the password in the text box, and click `Load Wallet`.
+5. You must confirm 3 of the 12 Recovery Words, as a quick check to make sure that your Recovery Words are backed up.
+So, confirm the Recovery Words, and click `Continue`.
 
-![Test Wasabi Wallet password](/TestPassword.png "Test Wasabi Wallet password")
+6. Write a long and random password (passphrase) and **[back it up](/using-wasabi/BackupBestPractices.md)**.
+It encrypts your secrets, and you will need it every time you want to open the wallet, spend bitcoin from this wallet or recover your wallet.
+
+	If you are uncertain about how to create a secure password, refer to [Password Best Practices](/using-wasabi/PasswordBestPractices.md) for helpful information.
+
+	:::danger Back up your password!
+	Without the password, you cannot spend your bitcoin or recover your wallet, even if you have the recovery words (Seed phrase).
+	So, triple-check that you have a proper backup!
+	:::
+
+7. Confirm the password and click the `Continue` button.
+
+8. Select the coinjoin strategy for this wallet and click `Continue`.
+
+9. The wallet is succesfully added!
+Click `Done`.
 
 ## Important info about your wallet password
 
