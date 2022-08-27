@@ -26,7 +26,7 @@ The very first time you run the software the `Add Wallet` dialog will be open au
 This label is not shared with anyone, it is only stored locally on your computer.
 Click `Continue`.
 
-4. Write a long and random password and **[back it up](/using-wasabi/BackupBestPractices.md)**.
+4. Write a long and random password (passphrase) and **[back it up](/using-wasabi/BackupBestPractices.md)**.
 It encrypts your secrets, and you will need it every time you want to open the wallet, spend bitcoin from this wallet or recover your wallet.
 
 	If you are uncertain about how to create a secure password, refer to [Password Best Practices](/using-wasabi/PasswordBestPractices.md) for helpful information.
