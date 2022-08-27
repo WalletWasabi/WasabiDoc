@@ -26,19 +26,7 @@ The very first time you run the software the `Add Wallet` dialog will be open au
 This label is not shared with anyone, it is only stored locally on your computer.
 Click `Continue`.
 
-4. Write a long and random password (passphrase) and **[back it up](/using-wasabi/BackupBestPractices.md)**.
-It encrypts your secrets, and you will need it every time you want to open the wallet, spend bitcoin from this wallet or recover your wallet.
-
-	If you are uncertain about how to create a secure password, refer to [Password Best Practices](/using-wasabi/PasswordBestPractices.md) for helpful information.
-
-	:::danger Back up your password!
-	Without the password, you cannot spend your bitcoin or recover your wallet, even if you have the recovery words (Seed phrase).
-	So, triple-check that you have a proper backup!
-	:::
-
-5. Confirm the password and click the `Continue` button.
-
-6. Write down the 12 recovery words (mnemonic seed phrase) in the correct order and store them in a safe place.
+4. Write down the 12 recovery words (mnemonic seed phrase) in the correct order and store them in a safe place.
 You can use this seed phrase **together with** your password to recover your wallet on a different computer using Wasabi or another [BIP 39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) compliant wallet.
 
 	:::danger Back up your recovery words!
@@ -49,8 +37,20 @@ You can use this seed phrase **together with** your password to recover your wal
 
 ![Wasabi Wallet recovery words](/WalletManagerRecoveryWords.png "Wasabi Wallet recovery words")
 
-7. You must confirm 3 of the 12 Recovery Words, as a quick check to make sure that your Recovery Words are backed up.
+5. You must confirm 3 of the 12 Recovery Words, as a quick check to make sure that your Recovery Words are backed up.
 So, confirm the Recovery Words, and click `Continue`.
+
+6. Write a long and random password (passphrase) and **[back it up](/using-wasabi/BackupBestPractices.md)**.
+It encrypts your secrets, and you will need it every time you want to open the wallet, spend bitcoin from this wallet or recover your wallet.
+
+	If you are uncertain about how to create a secure password, refer to [Password Best Practices](/using-wasabi/PasswordBestPractices.md) for helpful information.
+
+	:::danger Back up your password!
+	Without the password, you cannot spend your bitcoin or recover your wallet, even if you have the recovery words (Seed phrase).
+	So, triple-check that you have a proper backup!
+	:::
+
+7. Confirm the password and click the `Continue` button.
 
 8. Select the coinjoin strategy for this wallet and click `Continue`.
 
