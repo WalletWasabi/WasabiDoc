@@ -57,8 +57,6 @@ So, confirm the Recovery Words, and click `Continue`.
 9. The wallet is succesfully added!
 Click `Done`.
 
-10. The wallet is automatically selected.
-Enter the wallets' password to open the wallet.
 
 ![Test Wasabi Wallet password](/TestPassword.png "Test Wasabi Wallet password")
 
