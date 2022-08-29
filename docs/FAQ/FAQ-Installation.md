@@ -114,7 +114,8 @@ Check out the main documentation for a [step-by-step guide](/using-wasabi/Instal
 :::details
 ### How do I check the current version of Wasabi?
 
-In the GUI, go to the top left menu `Help > About`, here you will be able to see the current version of your Wasabi.
+In the GUI, go to the SearchBar at the top of the screen and click on `About Wasabi`. 
+Here the current version of your Wasabi is displayed.
 You can also verify the version using the command line by executing `wassabee --version` or `wassabeed --version` if you are on Windows.
 Wasabi is cutting edge software, so it is well-advised to stay up-to-date.
 :::
@@ -122,8 +123,8 @@ Wasabi is cutting edge software, so it is well-advised to stay up-to-date.
 :::details
 ### How do I know about a new version of Wasabi?
 
-When a new major version [v1.1.X] has been released, you'll see a notification in the bottom left status bar `New Version Available`.
-There are occasional silent releases like [v1.1.10.X] which fix issues that were introduced in a major release, and these are not announced in the GUI.
+When a new major version [v2.1.X] has been released, you'll see a notification in the bottom right status icon `Version 2.X.X.X is now available`.
+There are occasional silent releases like [v2.1.10.X] which fix issues that were introduced in a major release, and these are not announced in the GUI.
 The [website](https://wasabiwallet.io) always links to the most recent build of the software.
 It will also be announced on [Twitter](https://twitter.com/wasabiwallet) and [Reddit](https://reddit.com/r/WasabiWallet/).
 :::
@@ -145,7 +146,7 @@ If you do already have Tor, and it is running, then Wasabi will try to use that 
 
 You can turn off Tor in the Settings.
 Be careful, as this will compromise your privacy.
-When you CoinJoin over clearnet, the coordinator would know the links between your inputs and outputs based on your IP address.
+When you coinjoin over clearnet, the coordinator would know the links between your inputs and outputs based on your IP address.
 When you broadcast a transaction over clearnet, the connected full node will know the link between your transaction and your IP address.
 :::
 
