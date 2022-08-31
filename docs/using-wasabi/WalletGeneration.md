@@ -67,6 +67,8 @@ It encrypts your secrets, and you will need it every time you want to open the w
 9. The wallet is succesfully added!
 Click `Done`.
 
+![Wallet Successfully Added](/AddWalletSuccessfullyAdded.png "Wallet Successfully Added")
+
 ## Important info about your wallet password
 
 Wasabi integrates [BIP 38: Password-Protected Private Key](https://github.com/bitcoin/bips/blob/master/bip-0038.mediawiki), which means that the secrets needed to spend the bitcoin are encrypted on the computer.
