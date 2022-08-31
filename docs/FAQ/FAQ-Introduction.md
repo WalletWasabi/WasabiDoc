@@ -199,29 +199,28 @@ Additionally, open-source software tends to both incorporate and operate accordi
 ::::
 
 :::details
-### What is the general idea of ZeroLink CoinJoin?
+### What is the general idea of WabiSabi coinjoin?
 
 While fungibility is an essential property of good money, Bitcoin has its limitations in this area.
 Numerous fungibility improvements have been proposed; however, none of them have addressed the privacy issues in full.
-ZeroLink is designed so that no participant or outside observer can spy on the user.
-The scope of ZeroLink is not limited to a single transaction, it extends to transaction chains and it addresses various network layer deanonymizations.
+WabiSabi is designed so that no participant, outside observer or even the coordinator can spy on the user.
+The scope of WabiSabi is not limited to a single transaction, it extends to transaction chains and it addresses various network layer deanonymizations.
 However, its scope is limited to Bitcoin's first layer.
 Even if an off-chain anonymity solution gets widely adopted, ultimately the entrance and exit transactions will always be settled on-chain.
 Therefore, there will always be need for on-chain privacy.
 
 Ideal fungibility requires every Bitcoin transaction to be indistinguishable from each other, but it is an unrealistic goal.
-ZeroLink's objective is to break all links between separate sets of coins.
-ZeroLink presents a wallet privacy framework coupled with Chaumian CoinJoin, which was first introduced in 2013 by Gregory Maxwell.
-Hopefully, ZeroLink will enable the usage of Bitcoin in a fully anonymous way for the first time.
+WabiSabi's objective is to break all links between coins.
+Thus, WabiSabi enables the usage of Bitcoin in a fully anonymous way.
 
-ZeroLink defines a pre-mix and a post-mix wallet and a mixing technique.
+WabiSabi defines a pre-mix and a post-mix wallet and a mixing technique.
 Pre-mix wallet functionality can be added to any Bitcoin wallet without much overhead.
 Post-mix wallets on the other hand have strong privacy requirements, regarding coin selection, private transaction and balance retrieval, transaction input and output indexing and broadcasting.
 The requirements and recommendations for pre and post-mix wallets together define the Wallet Privacy Framework.
-Coins from pre-mix wallets to post-mix wallets are moved by mixing. Most on-chain mixing techniques, like CoinShuffle, CoinShuffle++ or TumbleBit's Classic Tumbler mode can be used.
-However ZeroLink defines its own mixing technique: [Chaumian CoinJoin](/using-wasabi/CoinJoin.md).
+Coins from pre-mix wallets to post-mix wallets are moved by mixing. Most on-chain mixing techniques, like CoinShuffle, CoinShuffle++, TumbleBit's Classic Tumbler mode, or ZeroLink can be used.
+However WabiSabi defines its own mixing technique: [WabiSabi coinjoin](/using-wasabi/CoinJoin.md).
 
-For the complete explanation please read [ZeroLink: The Bitcoin Fungibility Framework](https://github.com/nopara73/ZeroLink/).
+For more info please see [WabiSabi](https://github.com/zksnacks/wabisabi).
 :::
 
 :::details
