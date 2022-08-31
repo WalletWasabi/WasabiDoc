@@ -190,6 +190,14 @@ Then start Wasabi and load the wallet to synchronize it.
 For watch only wallets, the `Send` tab is disabled.
 :::
 
+:::details
+### What does the privacy progress mean?
+
+The privacy progress tile represents the percentage of how private the wallet is.
+It considers the anonymity score weighted amounts instead of just amounts that reached the anonymity score threshold.
+The private value is the total amount that reached the anonscore threshold.
+:::
+
 ## Synchronization
 
 :::details
