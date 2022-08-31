@@ -22,9 +22,13 @@ The very first time you run the software the `Add Wallet` dialog will be open au
 
 2. Click `Create a new wallet` to generate a new wallet.
 
+![Add a Bitcoin wallet with Wasabi](/AddWallet.png "Add a Bitcoin wallet with Wasabi")
+
 3. Name the new wallet precisely to ensure a proper differentiation from wallets created in the future.
 This label is not shared with anyone, it is only stored locally on your computer.
 Click `Continue`.
+
+![Add Wallet Wallet Name](/AddWalletWalletName.png "Add Wallet Wallet Name")
 
 4. Write down the 12 recovery words (mnemonic seed phrase) in the correct order and store them in a safe place.
 You have to use this seed phrase **together with** your password to recover your wallet on a different computer using Wasabi or another [BIP 39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) compliant wallet.
@@ -35,10 +39,12 @@ You have to use this seed phrase **together with** your password to recover your
 	Make sure the backup of your recovery words is stored separately from the password backup.
 	:::
 
-![Wasabi Wallet recovery words](/WalletManagerRecoveryWords.png "Wasabi Wallet recovery words")
+![Wasabi Wallet recovery words](/AddWalletRecoveryWords.png "Wasabi Wallet recovery words")
 
 5. You must confirm 3 of the 12 Recovery Words, as a quick check to make sure that your Recovery Words are backed up.
 So, confirm the Recovery Words, and click `Continue`.
+
+![Wasabi Wallet confirm recovery words](/AddWalletConfirmRecoveryWords.png "Wasabi Wallet confirm recovery words")
 
 6. Write a long and random password (passphrase) and **[back it up](/using-wasabi/BackupBestPractices.md)**.
 It encrypts your secrets, and you will need it every time you want to open the wallet, spend bitcoin from this wallet or recover your wallet.
@@ -51,6 +57,8 @@ It encrypts your secrets, and you will need it every time you want to open the w
 	:::
 
 7. Confirm the password and click the `Continue` button.
+
+![Wasabi Wallet Add Password](/AddWalletAddPassword.png "Wasabi Wallet Add Password")
 
 8. Select the coinjoin strategy for this wallet and click `Continue`.
 
