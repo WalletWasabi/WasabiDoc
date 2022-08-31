@@ -192,7 +192,7 @@ When this is signed on the device with the private key (like an offline laptop r
 :::details
 ### What does the privacy progress mean?
 
-The privacy progress indicates the percentage of the wallet balance in coins above the anonscore target.
+The privacy progress tile represents the percentage of how private the wallet is.
 :::
 
 ## Synchronization
