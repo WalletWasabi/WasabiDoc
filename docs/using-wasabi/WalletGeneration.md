@@ -62,6 +62,8 @@ It encrypts your secrets, and you will need it every time you want to open the w
 
 8. Select the coinjoin strategy for this wallet and click `Continue`.
 
+![Add Wallet Coinjoin Strategy](/CoinjoinStrategy.png "Add Wallet Coinjoin Strategy")
+
 9. The wallet is succesfully added!
 Click `Done`.
 
