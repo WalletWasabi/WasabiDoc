@@ -22,13 +22,13 @@ And the sender can see the future spending of the receiver.
 
 ## Wasabi's Solution
 
-### Zero Link CoinJoins
+### WabiSabi coinjoins
 
-In order to obfuscate the link between inputs and outputs, Wasabi uses the [Zero Link](https://github.com/nopara73/zerolink) CoinJoin protocol.
+In order to obfuscate the link between inputs and outputs, Wasabi uses the [WabiSabi](https://github.com/zkSNACKs/WabiSabi) coinjoin protocol.
 The Wasabi central coordinator cannot steal and cannot spy, it simply helps many peers to build a huge transaction, with many inputs, and many outputs.
 The non-private inputs can be linked to their previous transaction history.
-However, the equal value CoinJoin outputs with an anonymity set cannot be tied to the inputs.
+However, the coinjoin outputs with an anonymity score cannot be tied to the inputs.
 
-This means that when sending an anonset coin, the receiver does not know about the transaction history before the CoinJoin.
-And when the receiver does a CoinJoin himself, then the sender cannot spy on the later spending patterns.
-An outside observer can only guess the correct link at a rate of 1 in the anonset, for example, 1-in-100, or 1%.
+This means that when sending an anonscore coin, the receiver does not know about the transaction history before the coinjoin.
+And when the receiver does a coinjoin himself, then the sender cannot spy on the later spending patterns.
+An outside observer can only guess the correct link at a rate of 1 in the anonscore, for example, 1-in-100, or 1%.
