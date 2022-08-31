@@ -437,7 +437,6 @@ In the process they were the first to solve the double-spending problem for digi
 Their real identity remains unknown.
 :::
 
-
 :::details
 ### Schnorr Digital Signature Scheme
 
