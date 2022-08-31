@@ -438,6 +438,13 @@ Their real identity remains unknown.
 :::
 
 :::details
+### Schnorr Digital Signature Scheme
+
+Schnorr Digital Signature Scheme is one of the digital signature algorithms used by Bitcoin to ensure that funds can only be spent by their rightful owners.
+Schnorr signatures and public keys can be aggregated, meaning that multiple parties with unique private keys can sign the same message, which can be verified in batches instead of individually.
+:::
+
+:::details
 ### Script
 
 Bitcoin uses a scripting system for transactions.
