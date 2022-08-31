@@ -977,7 +977,7 @@ Please see [this great guide](https://github.com/6102bitcoin/FAQ/blob/master/see
 ### How do I back up my wallet file?
 
 Although you can back up your private keys with the mnemonic words and password, this is only a last resort recovery.
-If you want to also secure your address labels, the anonset and additional metadata, then you can do a digital backup.
+If you want to also secure your address labels, the anonscore and additional metadata, then you can do a digital backup.
 Simply copy the `WalletBackups` folder with the `wallet.json` files from your [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) onto suitable hardware, for example an encrypted USB stick.
 Note that this file has the encrypted private key (extracted from the extended private key), meaning that you only need the password to spend the bitcoin.
 This also contains the extended public key, the public keys, and the address labels, meaning that it completely links all the coins, both pre and post mix, with clear proof.
