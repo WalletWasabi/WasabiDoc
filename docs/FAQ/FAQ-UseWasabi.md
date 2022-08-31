@@ -869,7 +869,7 @@ If your wallet crashes or your computer goes offline during CoinJoin you simply 
 :::
 
 :::details
-### How much anonymity set do I need?
+### How much anonymity score do I need?
 
 The amount of privacy needed depends on your individual threat model, who is trying to deanonymize you?
 It is commonly said that an anonymity set of 50 is sufficient to evade low-level blockchain forensics analysis, but it might not protect you against large adversaries.
