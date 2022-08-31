@@ -561,8 +561,8 @@ These sats are precious, so don't overpay on fees!
 :::details
 ### How do I set custom fee rate?
 
-Go to `Settings` and under the UI category turn on `Manual fee entry`.
-In the `Send` tab, simply click on the `Fee` box and manually type the fee rate (sat/vByte) you want.
+At the `Preview Transaction` dialog, click on `Change transaction fee or confirmation time`.
+At the transaction fee slider, click on `Advanced` and manually type the fee rate (sat/vByte) you want.
 :::
 
 :::details
