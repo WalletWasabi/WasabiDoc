@@ -13,13 +13,15 @@
 
 ## How to send bitcoin step-by-step
 
-1. Select the coins you want to spend.
-2. Specify a destination address.
-3. Label the observers of this transaction.
-4. Specify the amount to send to the destination address, or press the `Max` button to send the whole selected amount.
-5. Select a mining fee.
-6. Enter the password.
-7. Click `Send Transaction`.
+1. Click the Send tab.
+1. Specify a destination address.
+1. Specify the amount of bitcoin to send to the destination address. Optionally, you can specify the dollar amount to send.
+1. Label the recipient by entering the name of the person or company who you are sending to.
+1. Preview Transaction.<br>
+    a. Verify the amount, recipient, and the address. <br>
+    b. Review the estimated time for confirmation and the transaction fees. Optionally, you can change the transaction fee or confirmation time. <br>
+    c. Review suggestions to improve your privacy by clicking the shield icon in the upper righthand corner. For example, you may want to increase or decrease your payment to avoid change.<br>
+1. Click `Confirm`.
 
 ![Wasabi Wallet Send tab](/Send.png "Wasabi Wallet Send tab")
 
