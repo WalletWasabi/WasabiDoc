@@ -13,15 +13,20 @@
 
 ## How to send bitcoin step-by-step
 
-1. Click the Send tab.
-1. Specify a destination address.
-1. Specify the amount of bitcoin to send to the destination address. Optionally, you can specify the dollar amount to send.
-1. Label the recipient by entering the name of the person or company who you are sending to.
-1. Preview Transaction.<br>
-    a. Verify the amount, recipient, and the address. <br>
-    b. Review the estimated time for confirmation and the transaction fees. Optionally, you can change the transaction fee or confirmation time. <br>
-    c. Review suggestions to improve your privacy by clicking the shield icon in the upper righthand corner. For example, you may want to increase or decrease your payment to avoid change.<br>
-1. Click `Confirm`.
+<ol>
+    <li>Click the Send button.</li>
+    <li>Specify a destination address.</li>
+    <li>Specify the amount of bitcoin to send to the destination address. Optionally, you can specify the dollar amount to send.</li>
+    <li>Label the recipient by entering the name of the person or company who you are sending to.</li>
+    <li>Preview Transaction.</li>
+    <ol type="a">
+    <li>Verify the amount, recipient, and the address.</li>
+    <li>Review the estimated time for confirmation and the transaction fees. Optionally, you can change the transaction fee or confirmation time.</li>
+    <li>Review suggestions to improve your privacy by clicking the shield icon in the top right corner. For example, you may want to increase or decrease your payment to avoid change.</li>
+    </ol>
+    <li>Click <code>Confirm</code>.</li>
+</ol>
+
 
 ![Wasabi Wallet Send tab](/Send.png "Wasabi Wallet Send tab")
 
