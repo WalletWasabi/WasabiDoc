@@ -28,10 +28,15 @@
 
 ## Coins
 
-A coin is an unspent transaction output (UTXO), a chunk of bitcoin which can be sent in a future transaction.
-In the Wasabi wallet `Send` tab, you see a list of all the coins you can spend.
-You can get a coin by first [receiving](/using-wasabi/Receive.md) them from someone else, for example by earning them or exchanging them for fiat currency.
-You can spend one or more coins by selecting them in the `Send` tab, if your payment amount is below the value of the selected coins, then you will receive a [change coin](/using-wasabi/ChangeCoins.md) back.
+A coin is an unspent transaction output (UTXO): a chunk of bitcoin that can be sent in a future transaction.
+Unlike fiat currencies which have fixed denominations, each UTXO contains a variable amount of bitcoin.
+When you want to send some bitcoin you simply enter the amount to send after clicking the `Send` button.
+Wasabi Wallet does the job of automatically selecting the appropriate combination of coins to include as inputs in the transaction.
+Note that there is an option to manually select and send specific coins using [DeveloperFeatures](https://github.com/zkSNACKs/WalletWasabi/blob/master/WalletWasabi.Documentation/DeveloperFeatures.md).
+
+You can get coins by first [receiving](/using-wasabi/Receive.md) them from someone else or by exchanging fiat currency for them at a digital marketplace called a Bitcoin exchange.
+There are both centralized and decentralized Bitcoin exchanges.
+Bitcoin mining is another way to earn coins.
 
 ## Clusters
 
