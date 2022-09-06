@@ -70,11 +70,14 @@ Wasabi will calculate the checksum and notify you if the provided address is wro
 
 ## Observers
 
-Similar to the `Receive` tab, you must [label](/using-wasabi/Receive.md#the-importance-of-labeling) every new address with the observers who know that this is your address.
-In the `Send` tab an address is automatically generated to receive the change amount.
-The observer of a sending transaction is, of course, the receiver of it, as well as any other third party that will find out about it, for example, a payment processor or an exchange.
+It is a requirement to provide one or more [labels](/using-wasabi/Receive.md#the-importance-of-labeling) each time you initiate a transfer of bitcoin.
+These labels should be the observers of the transaction.
+An observer of a sending transaction is, of course, the receiver of it, as well as any other third party that will find out about it. 
+For example, you should include as a label the payment processor or the bitcoin exchange if you use their services.
 This metadata will be used to build an accurate cluster of observers who know about your coins.
-A label is not required (except in edge cases) when you send an entire coin, as there will be no change left.
+A change address will be automatically created, if needed, following the BIP44 standard. 
+You should avoid change addresses when possible to improve your privacy (see [Change address detection](https://en.bitcoin.it/wiki/Privacy#Change_address_detection)).
+Wasabi Wallet will provide suggestions to improve the privacy of your transaction on the Preview Transaction page.
 
 ## Amount
 
