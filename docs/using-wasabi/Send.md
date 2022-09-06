@@ -34,9 +34,7 @@ When you want to send some bitcoin you simply enter the amount to send after cli
 Wasabi Wallet does the job of automatically selecting the appropriate combination of coins to include as inputs in the transaction.
 Note that there is an option to manually select and send specific coins using [DeveloperFeatures](https://github.com/zkSNACKs/WalletWasabi/blob/master/WalletWasabi.Documentation/DeveloperFeatures.md).
 
-You can get coins by first [receiving](/using-wasabi/Receive.md) them from someone else or by exchanging fiat currency for them at a digital marketplace called a Bitcoin exchange.
-There are both centralized and decentralized Bitcoin exchanges.
-Bitcoin mining is another way to earn coins.
+You can get coins by first [receiving](/using-wasabi/Receive.md) them from someone else or by exchanging fiat currency for them.
 
 ## Clusters
 
