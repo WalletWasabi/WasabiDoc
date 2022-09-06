@@ -73,9 +73,6 @@ These labels should be the observers of the transaction.
 An observer of a sending transaction is, of course, the receiver, as well as any other third party that knows that you are the sender of this transaction.
 For example, you should include as a label the payment processor or the bitcoin exchange if you use their services.
 This metadata will be used to build an accurate cluster of observers who know about your coins.
-A change address will be automatically created, if needed, following the BIP44 standard. 
-You should avoid change addresses when possible to improve your privacy (see [Change address detection](https://en.bitcoin.it/wiki/Privacy#Change_address_detection)).
-Wasabi Wallet will provide suggestions to improve the privacy of your transaction on the Preview Transaction page.
 
 ## Amount
 
