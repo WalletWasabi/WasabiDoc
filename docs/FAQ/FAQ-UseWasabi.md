@@ -1104,11 +1104,11 @@ Read more [here](/using-wasabi/ColdWasabi.md#connecting-via-sd-card).
 :::
 
 :::details
-### Can I CoinJoin bitcoins on my hardware wallet?
+### Can I coinjoin bitcoins on my hardware wallet?
 
-No.
-A CoinJoin is a multi round interactive process, and requires fast signing by the participants, thus the keys need to be on a hot computer.
-Thus you have to send the bitcoins (in small portions > 0.1 BTC if needed) from your hardware wallet to a `hot` Wasabi Wallet, do the CoinJoin and then send them back to a new address on the Hardware wallet for cold-storage.
+No, that is currently not possible.
+A coinjoin is a multi round interactive process, and requires fast signing by the participants, thus the keys need to be on a hot computer.
+Thus currently you have to send the bitcoins from your hardware wallet to a `hot` Wasabi Wallet, do the coinjoin and then send them back to a new address on the Hardware wallet for cold-storage.
 Read more [here](/using-wasabi/ColdWasabi.md#cold-wasabi-protocol)
 :::
 
