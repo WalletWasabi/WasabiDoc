@@ -42,18 +42,21 @@ If you now send half of this coin to Bob, then the cluster of your change coin i
 The goal is to know the observers who know about your coins and try to reduce their number for each coin.
 
 ## Anonymity Set
-
-When you send a bitcoin in a regular transaction with one input and two outputs, then your change coin can be linked to this one input.
+A typical bitcoin transaction will contain one input and two outputs - one of the outputs is the coin you are transferring and the other output is the change coin that goes back to your wallet.
+Your change coin can be linked to this one input.
 There is a 1 in 1 chance to find this link and no plausible deniability.
-Thus, Wasabi shows this coin with an anonymity set of `1` <img src="/ShieldRed.png" alt="Wasabi Wallet red shield anonymity set" title="Wasabi Wallet red shield anonymity set" class="shield" />.
+Thus, Wasabi denotes this coin's anonymity set as `1`.
 
-In a Wasabi [CoinJoin](/using-wasabi/CoinJoin.md), many peers register coins in the input of the transaction, and in the output, there are several equal value coins, for example, 100 coins worth exactly 0.1 bitcoin.
-This means that when looking at one of these CoinJoin outputs, there is a 1 in 100 chance to find the corresponding input.
-Thus the higher the anonymity set, the more your post-mix coin is delinked from the pre-mix history.
-Wasabi shows you three levels of anonymity sets: <img src="/ShieldYellow.png" alt="Wasabi Wallet yellow shield anonymity set" title="Wasabi Wallet yellow shield anonymity set" class="shield" />, <img src="/ShieldGreen.png" alt="Wasabi Wallet green shield anonymity set" title="Wasabi Wallet green shield anonymity set" class="shield" /> and <img src="/ShieldCheckmark.png" alt="Wasabi Wallet green checkmark shield anonymity set" title="Wasabi Wallet green checkmark shield anonymity set" class="shield" />.
-By default, they have an anonymity set of `2`, `21` and `50`, however, this can be [changed in the settings](/FAQ/FAQ-UseWasabi.md#how-can-i-change-the-anonset-target).
+In a Wasabi [CoinJoin](/using-wasabi/CoinJoin.md), many peers register coins in the input of the transaction, and in the output there are several equal value coins.
+For example, the output may contain 100 coins worth exactly 0.1 bitcoin.
+This means that when looking at one of these CoinJoin outputs, there is a 1 in 100 chance to find the corresponding input: thus an anonymity set of 100.
+Therefore, the higher the anonymity set, the more your post-CoinJoin coin is delinked from the pre-CoinJoin history.
 
-![Wasabi Wallet anonymity set](/SendAnonset.png "Wasabi Wallet anonymity set")
+There are three CoinJoin strategies to choose from in Wasabi Wallet which effect the target anonymity score for your coins. These three strategies are `Minimize Cost`, `Maximize Speed`, and `Maximize Privacy`. Each of these strategies come with different trade-offs. Alternatively, custom CoinJoin settings can be configured.
+
+
+![CoinJoin Strategy](/CoinjoinStrategy.png "CoinJoin Strategy")
+
 
 ## Receiving Address
 
