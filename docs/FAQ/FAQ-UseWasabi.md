@@ -878,14 +878,6 @@ With Wasabi this can be achieved in a matter of hours (or minutes if there are a
 :::
 
 :::details
-### How many rounds should I CoinJoin?
-
-There is no simple answer for this, it depends on your individual threat model.
-If you want more anonymity you should CoinJoin multiple times.
-More rounds of CoinJoin is better for your privacy, but more expensive.
-:::
-
-:::details
 ### How does my wallet communicate with the Wasabi coordinator server?
 
 Wasabi communicates in many ways to the coordinator server, and it is always over the Tor network.
