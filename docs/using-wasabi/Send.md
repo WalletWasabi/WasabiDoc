@@ -30,7 +30,7 @@
 
 A coin is an unspent transaction output (UTXO): a chunk of bitcoin that can be sent in a future transaction.
 Unlike fiat currencies which have fixed denominations, each UTXO contains a variable amount of bitcoin.
-You can get coins by first [receiving](/using-wasabi/Receive.md) them from someone else or by exchanging fiat currency for them.
+You can get coins by first [receiving](/using-wasabi/Receive.md) them from someone else.
 When you want to send some bitcoin you simply enter the amount to send after clicking the `Send` button.
 Wasabi Wallet does the job of automatically selecting the appropriate combination of coins to include as inputs in the transaction.
 
