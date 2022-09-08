@@ -72,6 +72,14 @@ Read more: [Use of blind signatures in CoinJoin](/using-wasabi/CoinJoin.md#zerol
 :::
 
 :::details
+### Client
+
+[software that allows a computer to function as a client in a network](https://www.merriam-webster.com/dictionary/client).
+In the case of Wasabi, the client is a Wasabi Wallet software version which a user has on his own local machine.
+The client can communicate with the backend.
+:::
+
+:::details
 ### Cluster
 
 Which entities know about which coins.
