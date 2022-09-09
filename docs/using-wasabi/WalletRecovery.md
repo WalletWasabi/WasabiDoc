@@ -39,7 +39,7 @@ The recovery words are spell checked based on the [official wordlist](https://gi
 
 Now Wasabi will recover your wallet, and [load the wallet](/using-wasabi/WalletLoad.md).
 After a short loading period, you can use Wasabi as usual.
-With this level, only the private keys are imported, but not the labels of your addresses.
+With this, only the private keys are imported, but not the labels of your addresses.
 
 
 :::danger
@@ -47,7 +47,7 @@ At recovery, Wasabi is unable to check if your password is correct or not.
 If you type a wrong password a completely different wallet will be recovered.
 :::
 
-You can also use the `Advanced Recovery Options` and specify an account key path of the HD wallet structure and the gap limit.
+You can also use the `Advanced Recovery Options` to specify an account key path of the HD wallet structure and the gap limit.
 The gap limit is about how far Wasabi will check the HD wallet structure for consecutive addresses that have no coins, in some cases, you may want to increase this limit.
 
 ![Wasabi Wallet Recovery Advanced](/WalletRecoveryAdvanced.png "Wasabi Wallet Recovery Advanced")
