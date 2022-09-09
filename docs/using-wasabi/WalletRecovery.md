@@ -59,7 +59,9 @@ With this method, you can recover a wallet that was generated with any BIP39 com
 ## Back up Wallet File and Password
 
 Wasabi Wallet creates a backup of your wallet file inside `WalletBackups` in your [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder).
-If you have done a backup of this file, then you can copy it to the `Wallets` folder, and upon the next restart of Wasabi, it will show this wallet in the `Wallet Manager`, from there you can open it as usual.
+If you have done a backup of this file, then you can import it at `Add Wallet`, by clicking on `Import a wallet`.
+
+Alternitavely: copy the wallet file to the `Wallets` folder, and upon the next restart of Wasabi, it will show this wallet in the `NavBar`, from there you can open it as usual.
 Using this method will also backup your address labels and cluster history.
 
 :::warning
