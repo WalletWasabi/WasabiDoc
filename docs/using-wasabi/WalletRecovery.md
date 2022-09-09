@@ -17,23 +17,40 @@ There are two different ways that you can recover an already used wallet in Wasa
 
 Wasabi uses the [BIP 39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) mnemonic code for generating [BIP 32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) hierarchical deterministic wallets.
 **Both** your password **and** the generated 12 mnemonic recovery words are the necessary secrets to recover your wallet.
-The specified wallet name is for future recognition of the wallet.
 The recovery words are spell checked based on the [official wordlist](https://github.com/bitcoin/bips/blob/master/bip-0039/english.txt), with the right word shown below the text box.
-Now you can click on `Recover`, and Wasabi will recover your wallet, and [load the wallet](/using-wasabi/WalletLoad.md).
+
+1. To recover a wallet, go to `Add Wallet`.
+
+![Wasabi Wallet Add Wallet](/AddWallet.png "Wasabi Wallet Add Wallet")
+
+2. Click on `Recover a wallet`.
+
+3. Give the wallet a name for future recognition of the wallet.
+
+![Wasabi Wallet Name Wallet](/AddWalletWalletName.png "Wasabi Wallet Name Wallet")
+
+4. Type in the Recovery Words in the correct order and click `Continue`.
+
+![Wasabi Wallet Recover Wallet](/RecoverWallet.png "Wasabi Wallet Recover Wallet")
+
+5. Type in the Password.
+
+![Add Wallet Add Password](/AddWalletAddPassword.png "Add Wallet Add Password")
+
+Now Wasabi will recover your wallet, and [load the wallet](/using-wasabi/WalletLoad.md).
 After a short loading period, you can use Wasabi as usual.
 With this level, only the private keys are imported, but not the labels of your addresses.
 
-![Wasabi Wallet Recovery tab](/WalletRecovery.png "Wasabi Wallet Recovery tab")
 
 :::danger
 At recovery, Wasabi is unable to check if your password is correct or not.
 If you type a wrong password a completely different wallet will be recovered.
 :::
 
-You can also toggle the advanced option and specify an account key path of the HD wallet structure.
+You can also use the `Advanced Recovery Options` and specify an account key path of the HD wallet structure and the gap limit.
 The gap limit is about how far Wasabi will check the HD wallet structure for consecutive addresses that have no coins, in some cases, you may want to increase this limit.
 
-![Wasabi Wallet Recovery tab advanced options](/WalletRecoveryAdvanced.png "Wasabi Wallet Recovery tab advanced options")
+![Wasabi Wallet Recovery Advanced](/WalletRecoveryAdvanced.png "Wasabi Wallet Recovery Advanced")
 
 :::tip
 With this method, you can recover a wallet that was generated with any BIP39 compatible software, not just a Wasabi generated wallet.
