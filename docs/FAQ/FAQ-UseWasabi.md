@@ -547,10 +547,8 @@ But the provided time frames are only a rough estimation, and not at all a preci
 Because confirmation fee estimation is more an art than a science, you can also set the fee manually.
 Then you can go after your gut feeling, [mempool chart analysis](https://jochen-hoenicke.de/queue/#0,24h), or just putting the minimum of 1 sat/vByte.
 
-![Wasabi Wallet minimum mining fee](/SendNoFee.png "Wasabi Wallet minimum mining fee")
-
-For a transaction to yourself, for example from your hot CoinJoin wallet to your hardware wallet, you don't need to have fast confirmation, so you can set a relatively low fee.
-But to send from the hot CoinJoin wallet to the coffee shop, you might want to get faster confirmation, thus paying a higher fee.
+For a transaction to yourself, for example from your hot coinjoin wallet to your hardware wallet, you don't need to have fast confirmation, so you can set a relatively low fee.
+But to send from the hot coinjoin wallet to the coffee shop, you might want to get faster confirmation, thus paying a higher fee.
 This really depends on your own time preference in every unique moment.
 
 :::tip Remember

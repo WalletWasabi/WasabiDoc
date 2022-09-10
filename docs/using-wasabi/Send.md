@@ -99,8 +99,6 @@ By clicking on the fee in the brackets below the slider, you can cycle through d
 
 In some cases, there is very little demand for block space, and then Wasabi will set the minimum fee of `1 sat/vbyte`.
 
-![Wasabi Wallet minimum mining fee](/SendNoFee.png "Wasabi Wallet minimum mining fee")
-
 :::tip High-priority transaction fees
 
 When using Bitcoin Core's `smart fee` algorithm to estimate the time a transaction will take to confirm given the current mempool, the algorithm considers the historic data for transactions in the mempool and in recent blocks.
