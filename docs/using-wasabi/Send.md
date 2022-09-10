@@ -28,10 +28,11 @@
 
 ## Coins
 
-A coin is an unspent transaction output (UTXO), a chunk of bitcoin which can be sent in a future transaction.
-In the Wasabi wallet `Send` tab, you see a list of all the coins you can spend.
-You can get a coin by first [receiving](/using-wasabi/Receive.md) them from someone else, for example by earning them or exchanging them for fiat currency.
-You can spend one or more coins by selecting them in the `Send` tab, if your payment amount is below the value of the selected coins, then you will receive a [change coin](/using-wasabi/ChangeCoins.md) back.
+A coin is an unspent transaction output (UTXO): a chunk of bitcoin that can be sent in a future transaction.
+Unlike fiat currencies which have fixed denominations, each UTXO contains a variable amount of bitcoin.
+You can get coins by first [receiving](/using-wasabi/Receive.md) them from someone else.
+When you want to send some bitcoin you simply enter the amount to send and the address after clicking the `Send` button.
+Wasabi Wallet does the job of automatically selecting the appropriate combination of coins to include as inputs in the transaction.
 
 ## Clusters
 
@@ -65,11 +66,11 @@ Wasabi will calculate the checksum and notify you if the provided address is wro
 
 ## Observers
 
-Similar to the `Receive` tab, you must [label](/using-wasabi/Receive.md#the-importance-of-labeling) every new address with the observers who know that this is your address.
-In the `Send` tab an address is automatically generated to receive the change amount.
-The observer of a sending transaction is, of course, the receiver of it, as well as any other third party that will find out about it, for example, a payment processor or an exchange.
+It is a requirement to provide one or more [labels](/using-wasabi/Receive.md#the-importance-of-labeling) each time you initiate a transfer of bitcoin.
+These labels should be the observers of the transaction.
+An observer of a sending transaction is, of course, the receiver, as well as any other third party that knows that you are the sender of this transaction.
+For example, you should include as a label the payment processor or the bitcoin exchange if you use their services.
 This metadata will be used to build an accurate cluster of observers who know about your coins.
-A label is not required (except in edge cases) when you send an entire coin, as there will be no change left.
 
 ## Amount
 
@@ -97,8 +98,6 @@ By clicking on the fee in the brackets below the slider, you can cycle through d
 ![Wasabi Wallet custom mining fee](/SendFeeSlider.png "Wasabi Wallet custom mining fee")
 
 In some cases, there is very little demand for block space, and then Wasabi will set the minimum fee of `1 sat/vbyte`.
-
-![Wasabi Wallet minimum mining fee](/SendNoFee.png "Wasabi Wallet minimum mining fee")
 
 :::tip High-priority transaction fees
 
