@@ -42,7 +42,7 @@ If you now send half of this coin to Bob, then the cluster of your change coin i
 The goal is to know the observers who know about your coins and try to reduce their number for each coin.
 
 ## Anonymity Set
-A typical bitcoin transaction will contain one input and two outputs - one of the outputs is the coin you are transferring and the other output is the change coin that goes back to your wallet.
+A typical bitcoin transaction will contain one input and two outputs - one of the outputs is the coin you are sending and the other output is the change coin that goes back to your wallet.
 Your change coin can be linked to this one input.
 There is a 1 in 1 chance to find this link and no plausible deniability.
 Thus, Wasabi denotes this coin's anonymity set as `1`.
@@ -58,7 +58,6 @@ Each of these strategies come with different trade-offs. Alternatively, custom c
 
 
 ![Coinjoin Strategy](/CoinjoinStrategy.png "Coinjoin Strategy")
-
 
 ## Receiving Address
 
