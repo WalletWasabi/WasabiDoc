@@ -19,7 +19,9 @@ Wasabi uses the [BIP 39](https://github.com/bitcoin/bips/blob/master/bip-0039.me
 **Both** your password **and** the generated 12 mnemonic recovery words are the necessary secrets to recover your wallet.
 The recovery words are spell checked based on the [official wordlist](https://github.com/bitcoin/bips/blob/master/bip-0039/english.txt), with the right word shown below the text box.
 
-1. To recover a wallet, go to `Add Wallet`.
+To recover a wallet:
+
+1.Click on `Add Wallet` at the bottom left corner of the main view.
 
 ![Wasabi Wallet Add Wallet](/AddWallet.png "Wasabi Wallet Add Wallet")
 
