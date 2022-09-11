@@ -1217,19 +1217,19 @@ The setting to turn it off is only intended for debugging and trouble shooting.
 :::details
 ### How can I change the anonymity score target?
  
-The anonscore target is determined by the `Coinjoin Strategy`, but can be manually changed in the `Coinjoin Settings` dialog.
-In the GUI: `Coinjoin Settings`>`Coinjoin strategy`, click on Change>`Customize`.
-Move the `Anonymity score target` slider to the desired amount and click Done.
+The anonscore target is a wallet specific setting which is determined by the `Coinjoin Strategy`, but can also be manually changed in the `Coinjoin Settings` dialog.
+
+On the main view click the three dots on the top right corner after loading the wallet.
+Choose `Coinjoin Settings`, click `Change` (Coinjoin strategy), click `Customize`.
+Move the `Anonymity score target` slider to the desired value and click `Done`.
 
 ![Coinjoin Settings Anonymity score target](/AnonymityScoreTarget.png "Coinjoin Settings Anonymity score target")
 
 Alternatively, open the Wallet File from the wallet GUI, go to the SearchBar and click `Wallet Folder` and open the wallet json file.
 
 ```json
-"AnonScoreTarget": 50,
+"AnonScoreTarget": 5,
 ```
-
-Note that the anonscore target is set per individual wallet.
 
 @[youtube](gWo2RAkIVrE)
 :::
