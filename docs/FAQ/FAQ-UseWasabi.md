@@ -1025,6 +1025,16 @@ The .json file contains the encrypted secret that requires the password to deriv
 That gives you access to your bitcoin.
 :::
 
+:::details
+### Can I verify the Recovery Words of an existing wallet?
+
+Yes.
+Go to `Wallet Settings` > `Verify Recovery Words`.
+Type in your recovery words in the correct order, click on `Verify` and it will show you if they are correct or not.
+
+![Wasabi Wallet Verify Recovery Words](/VerifyRecoveryWords.png "Wasabi Wallet Verify Recovery Words")
+:::
+
 ## Hardware Wallet
 
 @[youtube](aU8ysH9JH9M)
