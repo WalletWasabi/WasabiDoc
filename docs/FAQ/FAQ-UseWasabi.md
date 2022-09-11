@@ -563,7 +563,6 @@ At the `Preview Transaction` dialog, click on the icon `Change transaction fee o
 At the transaction fee slider dialog, click on `Advanced` and manually type the fee rate (sat/vByte) you want.
 
 ![Wasabi Wallet custom fee rate](/SendCustomFee.png "Wasabi Wallet custom fee rate")
-
 :::
 
 :::details
