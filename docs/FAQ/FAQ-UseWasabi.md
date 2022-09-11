@@ -1021,7 +1021,7 @@ That gives you access to your bitcoin.
 
 Yes.
 Go to `Wallet Settings` > `Verify Recovery Words`.
-Type in your recovery words in the correct order, click on `Verify` and it will show you that/if they are correct.
+Type in your recovery words in the correct order, click on `Verify` and it will show you if they are correct or not.
 
 ![Wasabi Wallet Verify Recovery Words](/VerifyRecoveryWords.png "Wasabi Wallet Verify Recovery Words")
 :::
