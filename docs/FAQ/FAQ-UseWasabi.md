@@ -948,6 +948,14 @@ However, as the coordinator cannot enforce this, a custom client could use a dif
 Depending on many factors, like the `Anonymity score target`, the `coinjoin strategy`, and the amount of bitcoin, it can take from a couple hours to multiple days.
 :::
 
+:::details
+### What does the `Red coin isolation` mean in the coinjoin settings?
+
+When the `Red coin isolation` is active, only a single coin with anonymity score 1 will be allowed into the coinjoin registration.
+To prevent possible coinjoin input heuristics from outside observers.
+The `Red coin isolation` is active by default when the `Maximize Privacy` profile is selected.
+:::
+
 ## Backup and Recovery
 
 ::::details
