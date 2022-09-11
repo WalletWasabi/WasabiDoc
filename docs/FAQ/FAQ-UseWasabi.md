@@ -1225,27 +1225,22 @@ The setting to turn it off is only intended for debugging and trouble shooting.
 ::::
 
 :::details
-### How can I change the anonset target?
+### How can I change the anonymity score target?
+ 
+The anonscore target is a wallet specific setting which is determined by the `Coinjoin Strategy`, but can also be manually changed in the `Coinjoin Settings` dialog.
 
-In the `Settings` tab at the bottom you can change the three `PrivacyLevel` values of the desired anon set of the
-<img src="/ShieldYellow.png" alt="Wasabi Wallet yellow shield anonymity set" title="Wasabi Wallet yellow shield anonymity set" class="shield" />,
-<img src="/ShieldGreen.png" alt="Wasabi Wallet green shield anonymity set" title="Wasabi Wallet green shield anonymity set" class="shield" /> and
-<img src="/ShieldCheckmark.png" alt="Wasabi Wallet green checkmark shield anonymity set" title="Wasabi Wallet green checkmark shield anonymity set" class="shield" />
-shield button in the GUI.
-The `MixUntilAnonymitySet` is the last selected value from previous use.
+On the main view click the three dots on the top right corner after loading the wallet.
+Choose `Coinjoin Settings`, click `Change` (Coinjoin strategy), click `Customize`.
+Move the `Anonymity score target` slider to the desired value and click `Done`.
 
-Alternatively, open the config file from the wallet GUI, go to `File`>`Open`>`Config File` and in the last 4 lines you see:
+![Coinjoin Settings Anonymity score target](/AnonymityScoreTarget.png "Coinjoin Settings Anonymity score target")
+
+Alternatively, you can change the anonymity score target by editing the wallet file.
+Go to the SearchBar and click `Wallet Folder` and open the wallet json file and edit the `AnonScoreTarget` value.
 
 ```json
-"MixUntilAnonymitySet": 50,
-"PrivacyLevelSome": 2,
-"PrivacyLevelFine": 21,
-"PrivacyLevelStrong": 50
+"AnonScoreTarget": 5,
 ```
-
-Remember that you pay a fee proportional to the anonymity set gained.
-
-@[youtube](gWo2RAkIVrE)
 :::
 
 :::details
