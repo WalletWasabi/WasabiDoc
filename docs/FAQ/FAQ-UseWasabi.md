@@ -1231,8 +1231,6 @@ Go to the SearchBar and click `Wallet Folder` and open the wallet json file and 
 ```json
 "AnonScoreTarget": 5,
 ```
-
-@[youtube](gWo2RAkIVrE)
 :::
 
 :::details
