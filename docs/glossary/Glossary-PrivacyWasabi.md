@@ -35,7 +35,7 @@ Read more: [What is the anonymity set?](/FAQ/FAQ-UseWasabi.md#what-is-the-anonym
 ### Backend
 
 [The part of a software system that is not usually visible or accessible to a user of that system](https://www.merriam-webster.com/dictionary/back%20end).
-In the case of Wasabi, the backend functions as the coinjoin coordinator and provides data to the user (client) like block filters, exchange rate, and network estimations (mempool).
+In the case of Wasabi, the backend functions as the coinjoin coordinator and provides data to the [client](/glossary/Glossary-PrivacyWasabi.md#Client) (user) like block filters, exchange rate, and network estimations (mempool).
 :::
 
 :::details
@@ -76,6 +76,14 @@ Read more: [Change coins](/using-wasabi/ChangeCoins.md)
 
 A Chaumian CoinJoin is a special type of CoinJoin that utilizes Chaumian [or Schnorr] blind signatures to prevent the central coordinator from spying on the linkage between inputs and outputs.
 Read more: [Use of blind signatures in CoinJoin](/using-wasabi/CoinJoin.md#zerolink-protocol-step-by-step)
+:::
+
+:::details
+### Client
+
+[A software that allows a computer to function as a client in a network](https://www.merriam-webster.com/dictionary/client).
+In the case of Wasabi, the client is a Wasabi Wallet software version which a user has on his own local machine.
+The client can communicate with the [backend](/glossary/Glossary-PrivacyWasabi.md#Backend).
 :::
 
 :::details
