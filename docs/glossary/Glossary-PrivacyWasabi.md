@@ -32,6 +32,13 @@ Read more: [What is the anonymity set?](/FAQ/FAQ-UseWasabi.md#what-is-the-anonym
 :::
 
 :::details
+### Backend
+
+[The part of a software system that is not usually visible or accessible to a user of that system](https://www.merriam-webster.com/dictionary/back%20end).
+In the case of Wasabi, the backend functions as the coinjoin coordinator and provides data to the user (client) like block filters, exchange rate and network estimations (mempool).
+:::
+
+:::details
 ### Block filters
 
 A filter representing a compact list of addresses in one block.
