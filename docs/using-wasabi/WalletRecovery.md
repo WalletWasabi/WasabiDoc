@@ -21,7 +21,7 @@ The recovery words are spell checked based on the [official wordlist](https://gi
 
 To recover a wallet:
 
-1.Click on `Add Wallet` at the bottom left corner of the main view.
+1. Click on `Add Wallet` at the bottom left corner of the main view.
 
 ![Wasabi Wallet Add Wallet](/AddWallet.png "Wasabi Wallet Add Wallet")
 
@@ -40,6 +40,7 @@ To recover a wallet:
 ![Add Wallet Add Password](/AddWalletAddPassword.png "Add Wallet Add Password")
 
 Now Wasabi will recover your wallet.
+
 With this, only the private keys are imported, but not the labels of your addresses.
 
 :::danger
