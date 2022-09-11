@@ -1225,7 +1225,8 @@ Move the `Anonymity score target` slider to the desired value and click `Done`.
 
 ![Coinjoin Settings Anonymity score target](/AnonymityScoreTarget.png "Coinjoin Settings Anonymity score target")
 
-Alternatively, open the Wallet File from the wallet GUI, go to the SearchBar and click `Wallet Folder` and open the wallet json file.
+Alternatively, you can change the anonymity score target by editing the wallet file.
+Go to the SearchBar and click `Wallet Folder` and open the wallet json file and edit the `AnonScoreTarget` value.
 
 ```json
 "AnonScoreTarget": 5,
