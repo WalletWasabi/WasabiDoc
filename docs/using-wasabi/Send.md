@@ -47,15 +47,17 @@ Your change coin can be linked to this one input.
 There is a 1 in 1 chance to find this link and no plausible deniability.
 Thus, Wasabi denotes this coin's anonymity set as `1`.
 
-In a Wasabi [CoinJoin](/using-wasabi/CoinJoin.md), many peers register coins in the input of the transaction, and in the output there are several equal value coins.
-For example, the output may contain 100 coins worth exactly 0.1 bitcoin.
-This means that when looking at one of these CoinJoin outputs, there is a 1 in 100 chance to find the corresponding input: thus an anonymity set of 100.
-Therefore, the higher the anonymity set, the more your post-CoinJoin coin is delinked from the pre-CoinJoin history.
+In a Wasabi [coinjoin](/using-wasabi/CoinJoin.md), many peers register coins in the input of the transaction, and in the output there are several equal value coins.
+For example, the output may contain 20 coins worth exactly 0.3 bitcoin.
+This means that when looking at one of these coinjoin outputs, there is a 1 in 20 chance to find the corresponding input: thus an anonymity set of 20.
+Therefore, the higher the anonymity set, the more your post-coinjoin coin is delinked from the pre-coinjoin history.
 
-There are three CoinJoin strategies to choose from in Wasabi Wallet which effect the target anonymity score for your coins. These three strategies are `Minimize Cost`, `Maximize Speed`, and `Maximize Privacy`. Each of these strategies come with different trade-offs. Alternatively, custom CoinJoin settings can be configured.
+There are three coinjoin strategies to choose from in Wasabi Wallet which effect the target anonymity score for your coins.
+These three strategies are `Minimize Cost`, `Maximize Speed`, and `Maximize Privacy`.
+Each of these strategies come with different trade-offs. Alternatively, custom coinjoin settings can be configured.
 
 
-![CoinJoin Strategy](/CoinjoinStrategy.png "CoinJoin Strategy")
+![Coinjoin Strategy](/CoinjoinStrategy.png "Coinjoin Strategy")
 
 
 ## Receiving Address
