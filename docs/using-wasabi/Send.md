@@ -54,7 +54,9 @@ Therefore, the higher the anonymity set, the more your post-coinjoin coin is del
 
 There are three coinjoin strategies to choose from in Wasabi Wallet which effect the target anonymity score for your coins.
 These three strategies are `Minimize Cost`, `Maximize Speed`, and `Maximize Privacy`.
-Each of these strategies come with different trade-offs. Alternatively, custom coinjoin settings can be configured.
+Each of these strategies come with different trade-offs.
+
+Alternatively, custom coinjoin settings can be configured.
 
 
 ![Coinjoin Strategy](/CoinjoinStrategy.png "Coinjoin Strategy")
