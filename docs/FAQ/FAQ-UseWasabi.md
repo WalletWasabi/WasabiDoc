@@ -681,7 +681,7 @@ For example, if the initial transaction pays a 1 sat/vbyte fee and the child tra
 
 Yes, you can always send from your wallet.
 However, a best practice is to only send private funds.
-Making your wallet 100% private takes some time, but in the mean time you can always send the (private) funds.
+Making your wallet 100% private [takes some time](FAQ-UseWasabi.md#how-long-does-it-take-to-make-my-wallet-100%-private), but in the mean time you can always send the (private) funds.
 
 So when your wallet is partially private (between 1 and 100% privacy progress) it is a best practice to only send the private available amount, to remain your privacy.
 In the privacy progress tile, `PRIVATE` shows the currently available private BTC amount.
