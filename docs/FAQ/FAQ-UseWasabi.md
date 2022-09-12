@@ -694,7 +694,6 @@ When `PRIVATE` is 0.00787086 BTC, that means that I can send 0.00787086 BTC priv
 Even when the `Privacy Progress` is below 100%.
 
 ![Wasabi Wallet Privacy Progress Tile](/PrivacyProgressTile.png "Wasabi Wallet Privacy Progress Tile")
-
 :::
 
 ## CoinJoin
