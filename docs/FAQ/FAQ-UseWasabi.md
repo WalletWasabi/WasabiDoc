@@ -686,6 +686,27 @@ Receive some bitcoin and then the `Send` button will automatically be displayed.
 There is also no `Send` button with watch-only wallets.
 :::
 
+:::details
+### Can I send (privately) from my wallet when the privacy progress is below 100%?
+
+Yes, you can always send from your wallet.
+However, a best practice is to only send private funds.
+Making your wallet 100% private takes some time, but in the mean time you can always send the (private) funds.
+
+So when your wallet is partially private (between 1 and 100% privacy progress) it is a best practice to only send the private available amount, to remain your privacy.
+In the privacy progress tile, `PRIVATE` shows the currently available private BTC amount.
+So that is the amount which can be send privately, even if the privacy progress is not yet 100%.
+When sending, the wallet automatically selects the private funds first.
+
+For example:
+
+When `PRIVATE` is 0.00787086 BTC, that means that I can send 0.00787086 BTC privately.
+Even when the `Privacy Progress` is below 100%.
+
+![Wasabi Wallet Privacy Progress Tile](/PrivacyProgressTile.png "Wasabi Wallet Privacy Progress Tile")
+
+:::
+
 ## CoinJoin
 
 @[youtube](ypfZT9GlqTw)
