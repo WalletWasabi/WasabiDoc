@@ -48,7 +48,7 @@ Open a new terminal and use the following RPC commands to interact with your wal
 
 ## Available methods
 
-The current version handles the following methods: `getstatus`, `createwallet`, `listunspentcoins`, `getwalletinfo`, `getnewaddress`, `send`, `gethistory`, `listkeys`, `enqueue`, `dequeue`, and `stop`.
+The current version handles the following methods: `getstatus`, `createwallet`, `listunspentcoins`, `getwalletinfo`, `getnewaddress`, `send`, `gethistory`, `listkeys`, and `stop`.
 They can be used as follows:
 
 ### getstatus
@@ -535,14 +535,6 @@ curl --data-binary '{"jsonrpc":"2.0","id":"1","method":"listkeys"}' http://127.0
 
 ```bash
 curl --data-binary '{"jsonrpc":"2.0","id":"1","method":"listkeys"}' http://127.0.0.1:37128/ | jq '.result[] | select(.keyState == 1 and .internal == true)'
-```
-
-### enqueue
-
-Enqueue coins in order to participate in coinjoin.
-
-```bash
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"enqueue", "params": { "coins": [{"transactionId": "ba70587b37ba8b4de143929994d3b8ee2810340cef23e8016020687716117a52", "index":"12"}], "password":"UserPassword"} }' http://127.0.0.1:37128/ | jq
 ```
 
 ### dequeue
