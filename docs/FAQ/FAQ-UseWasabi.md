@@ -692,7 +692,7 @@ For example:
 
 When `PRIVATE` is 0.00787086 BTC, that means that I can send 0.00787086 BTC privately.
 Even when the `Privacy Progress` is below 100%.
-So when sending, 0.00787086 should be entered as the `amount` in order to only use the private funds.
+So when sending, 0.00787086 - mining fees (±0.00010000 BTC, depending on tx size and fee rate) should be entered as the `Amount` in order to only use the private funds.
 
 ![Wasabi Wallet Privacy Progress Tile](/PrivacyProgressTile.png "Wasabi Wallet Privacy Progress Tile")
 :::
