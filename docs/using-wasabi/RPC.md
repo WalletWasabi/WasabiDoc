@@ -537,14 +537,6 @@ curl --data-binary '{"jsonrpc":"2.0","id":"1","method":"listkeys"}' http://127.0
 curl --data-binary '{"jsonrpc":"2.0","id":"1","method":"listkeys"}' http://127.0.0.1:37128/ | jq '.result[] | select(.keyState == 1 and .internal == true)'
 ```
 
-### dequeue
-
-Dequeues coins that were queued to participate in a CoinJoin.
-
-```bash
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"dequeue", "params": { "coins": [{"transactionId": "ba70587b37ba8b4de143929994d3b8ee2810340cef23e8016020687716117a52", "index":"12"}]} }' http://127.0.0.1:37128/ | jq
-```
-
 ### stop
 
 Stops and exits Wasabi.
