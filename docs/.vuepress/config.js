@@ -221,12 +221,10 @@ module.exports = {
           children: [
             "/using-wasabi/Daemon.md",
             "/using-wasabi/RPC.md",
-            "/using-wasabi/PrivacyMode.md",
+            "/using-wasabi/DiscreetMode.md",
             "/using-wasabi/PayJoin.md",
             "/using-wasabi/Testnet.md",
-            "/using-wasabi/LockScreen.md",
             "/using-wasabi/BIPs.md",
-            "/using-wasabi/IndustryStandards.md"
           ]
         }
       ],
@@ -239,7 +237,6 @@ module.exports = {
           children: [
             "/building-wasabi/TechnicalOverview.md",
             "/building-wasabi/ContributionChecklist.md",
-            "/building-wasabi/ContributionGame.md"
           ]
         },
         {
@@ -249,17 +246,8 @@ module.exports = {
           children: [
             "/building-wasabi/Security.md",
             "/building-wasabi/LICENSE.md",
-            "/building-wasabi/Credits.md"
           ]
         },
-        {
-          title: "Research",
-          collapsable: false,
-          sidebarDepth: 2,
-          children: [
-            "/building-wasabi/WasabiResearchClub.md"
-          ]
-        }
       ],
 
       "/FAQ/": [

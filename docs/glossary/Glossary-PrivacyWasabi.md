@@ -35,7 +35,7 @@ Read more: [What is the anonymity set?](/FAQ/FAQ-UseWasabi.md#what-is-the-anonym
 ### Backend
 
 [The part of a software system that is not usually visible or accessible to a user of that system](https://www.merriam-webster.com/dictionary/back%20end).
-In the case of Wasabi, the backend functions as the coinjoin coordinator and provides data to the user (client) like block filters, exchange rate and network estimations (mempool).
+In the case of Wasabi, the backend functions as the coinjoin coordinator and provides data to the [client](/glossary/Glossary-PrivacyWasabi.md#Client) (user) like block filters, exchange rate, and network estimations (mempool).
 :::
 
 :::details
@@ -81,9 +81,9 @@ Read more: [Use of blind signatures in CoinJoin](/using-wasabi/CoinJoin.md#zerol
 :::details
 ### Client
 
-[software that allows a computer to function as a client in a network](https://www.merriam-webster.com/dictionary/client).
+[A software that allows a computer to function as a client in a network](https://www.merriam-webster.com/dictionary/client).
 In the case of Wasabi, the client is a Wasabi Wallet software version which a user has on his own local machine.
-The client can communicate with the backend.
+The client can communicate with the [backend](/glossary/Glossary-PrivacyWasabi.md#Backend).
 :::
 
 :::details
@@ -153,10 +153,10 @@ Read more: [AML/KYC Information](/why-wasabi/TransactionSurveillanceCompanies.md
 :::
 
 :::details
-### Privacy Mode
+### Discreet Mode
 
-Privacy Mode is a Wasabi feature that hides sensitive and critical information on the wallet itself, which is useful for screenshots.
-Read more: [Privacy Mode](/using-wasabi/PrivacyMode.md)
+Discreet Mode is a Wasabi feature that hides sensitive and critical information on the wallet itself, which is useful for screenshots.
+Read more: [Discreet Mode](/using-wasabi/DiscreetMode.md)
 :::
 
 :::details
@@ -234,6 +234,14 @@ Read more: [Transaction Surveillance Companies](/why-wasabi/TransactionSurveilla
 
 Tumbling is a synonym of 'Mixing'.
 Similarly, Tumbler is the synonym of 'Mixer'.
+:::
+
+:::details
+### WabiSabi
+
+WabiSabi is a protocol for constructing coinjoin transactions with the aid of a centralized coordinator.
+It utilizes keyed-verification anonymous credentials, homomorphic value commitments, and zero knowledge proofs to achieve privacy and flexibility.
+Read more: [WabiSabi](https://github.com/zkSNACKs/WabiSabi/releases/latest/download/WabiSabi.pdf)
 :::
 
 :::details

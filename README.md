@@ -1,10 +1,12 @@
 <p align="center">
   <a href="https://docs.wasabiwallet.io">
-    <img src="docs/.vuepress/public/WasabiWalletDocs.png" alt="Wasabi Wallet Documentation" title="Wasabi Wallet Documentation" class="Image" />
+    <img src="https://user-images.githubusercontent.com/51679301/173640921-827d7f4f-5bb8-432b-9c53-7146a7ca6763.png" alt="Under Construction" title="Documentation Under Construction" class="Image" />
   </a>
 </p>
 
-[Wasabi Wallet](https://wasabiwallet.io) is an open-source, non-custodial, privacy focused Bitcoin wallet for desktop. It implements a trustless privacy technique, called [Chaumian CoinJoin](https://github.com/nopara73/ZeroLink/).
+# Wasabi Wallet 2.0 Documentation is under construction!
+
+[Wasabi Wallet](https://wasabiwallet.io) is an open-source, non-custodial, privacy focused Bitcoin wallet for desktop. It implements a trustless privacy technique, called [WabiSabi CoinJoin](https://eprint.iacr.org/2021/206).
 
 This is Wasabi Wallet's open-source [documentation](https://docs.wasabiwallet.io) repository.
 Here you will find information about the nuances of privacy in Bitcoin, how Wasabi solves some of the existing problems, and how you can use this tool to defend yourself.
@@ -37,14 +39,13 @@ If you need help regarding the software specifically, please check out [Discussi
 
 # 📄 Contribute to the Documentation
 
-Just like the Wasabi wallet software, this documentation is libre and open-source under the [MIT license](LICENSE).
+Just like the Wasabi Wallet software, this documentation is libre and open-source under the [MIT license](LICENSE).
 Not only do we appreciate everyone's contribution, but we desperately need it!
 
 * [VuePress](#vuepress)
 * [Writing Conventions](#writing-conventions)
 * [Reference files](#reference-files)
 * [Embedding images](#embedding-images)
-* [Embedding shields](#embedding-shields)
 * [Embedding videos](#embedding-videos)
 * [Text Highlights](#text-highlights)
 * [Frequently asked questions](#frequently-asked-questions)
@@ -64,7 +65,8 @@ Know that you do not need to understand/deal with VuePress at all in this case.
 ## Writing Conventions
 
 - Wasabi [capitalized]
-- CoinJoin [capitalized, one word]
+- coinjoin [not capitalized, one word]
+- WabiSabi [capitalized, one word]
 - Every sentence must start in a new line.
 - For a paragraph, add an `empty line` or `</br>` in the markdown.
 
@@ -73,7 +75,7 @@ Know that you do not need to understand/deal with VuePress at all in this case.
 Please consider this repository structure for hyperlinks, and use relative links whenever possible, for example:
 
 ```
-[What is a CoinJoin?](FAQ-Introduction.md#what-is-a-coinjoin)
+[What is a coinjoin?](FAQ-Introduction.md#what-is-a-coinjoin)
 ```
 
 ## Embedding images
@@ -83,17 +85,6 @@ They can be embedded via the following markdown tags:
 
 ```
 ![Alternative text of the image](/IMAGENAME.png "Title of the image")
-```
-
-## Embedding shields
-
-To insert the shield images inline with the text, use these HTML tags:
-
-```html
-<img src="/ShieldCheckmark.png" alt="Wasabi Wallet green checkmark shield anonymity set" title="Wasabi Wallet green checkmark shield anonymity set" class="shield" />
-<img src="/ShieldGreen.png" alt="Wasabi Wallet green shield anonymity set" title="Wasabi Wallet green shield anonymity set" class="shield" />
-<img src="/ShieldYellow.png" alt="Wasabi Wallet yellow shield anonymity set" title="Wasabi Wallet yellow shield anonymity set" class="shield" />
-<img src="/ShieldRed.png" alt="Wasabi Wallet red shield anonymity set" title="Wasabi Wallet red shield anonymity set" class="shield" />
 ```
 
 ## Embedding videos

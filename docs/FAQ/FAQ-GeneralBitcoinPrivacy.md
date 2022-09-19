@@ -133,7 +133,7 @@ But regardless, running your own full node means that you don't need to communic
 :::details
 ### How can I set up a full node?
 
-Starting with v1.1.11 release, Wasabi comes [pre-installed with bitcoind](/using-wasabi/BitcoinFullNode.md) from [Bitcoin Knots](https://bitcoinknots.org/) and it can be started on the same desktop or laptop computer with just one click.
+Wasabi comes [pre-installed with bitcoind](/using-wasabi/BitcoinFullNode.md) from [Bitcoin Knots](https://bitcoinknots.org/) and it can be started on the same desktop or laptop computer with just one click.
 This is likely the most convenient solution for Wasabikas.
 
 There are also other node implementations different from Bitcoin Knots, such as [Bitcoin Core](https://bitcoincore.org/) or [Libbitcoin](https://github.com/libbitcoin/libbitcoin-node), that could be used as well.
@@ -163,10 +163,10 @@ Avoiding address reuse is like throwing away a pseudonym after it has been used.
 :::
 
 :::details
-### What is a CoinJoin Sudoku?
+### What is a coinjoin Sudoku?
 
-CoinJoin Sudoku is a type of intra-transaction analysis attack on CoinJoin transactions that aims to link inputs and outputs together based on their combinatorial sums.
-You can read more about CoinJoin Sudoku [here](https://www.coinjoinsudoku.com/advisory/).
+Coinjoin Sudoku is a type of intra-transaction analysis attack on coinjoin transactions that aims to link inputs and outputs together based on their combinatorial sums.
+You can read more about coinjoin Sudoku [here](https://www.coinjoinsudoku.com/advisory/).
 :::
 
 ## The Privacy of Tor

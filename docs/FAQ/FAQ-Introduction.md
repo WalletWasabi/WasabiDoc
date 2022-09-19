@@ -25,9 +25,9 @@ Wasabi is a tool for everyone.
 ::::
 
 :::details
-### What is a CoinJoin?
+### What is a coinjoin?
 
-CoinJoin is a mechanism by which multiple participants combine their coins (or UTXOs, to be more precise) into one large transaction with multiple inputs and multiple outputs.
+Coinjoin is a mechanism by which multiple participants combine their coins (or UTXOs, to be more precise) into one large transaction with multiple inputs and multiple outputs.
 An observer cannot determine which output belongs to which input, and neither can the participants themselves.
 This makes it difficult for outside parties to trace where a particular coin originated from and where it was sent to (as opposed to regular bitcoin transactions, where there is usually one sender and one receiver).
 
@@ -35,32 +35,33 @@ This can be done with non-custodial software like Wasabi that eliminates the ris
 Each of the signatures are created on the participants’ computers after thorough verification, so nobody can alter the transaction or redirect the funds.
 The funds will always be in a Bitcoin address that you control.
 
-In very simple terms, CoinJoin means: “when you want to make a transaction, find someone else who also wants to make a transaction and make a joint transaction together”.
+In very simple terms, coinjoin means: “when you want to make a transaction, find someone else who also wants to make a transaction and make a joint transaction together”.
 
-See also the [Bitcoin Wiki on CoinJoins](https://en.bitcoin.it/wiki/CoinJoin)
+See also the [Bitcoin Wiki on coinjoins](https://en.bitcoin.it/wiki/CoinJoin)
 :::
 
 :::details
 ### Do I need to trust Wasabi with my coins?
 
-Since Wasabi's CoinJoin implementation is trustless by design, there is no need for participants to trust each other or a third party.
-Both the sending address (the CoinJoin input) and the receiving address (the CoinJoin output) are controlled by your own private keys.
-The Wasabi server merely coordinates the process of combining each participant's input into one single transaction, but the Wasabi Wallet can neither steal your coins, nor figure out which outputs belong to which inputs (look up “[Chaumian CoinJoin](/using-wasabi/CoinJoin.md)” if you want to know more).
+Since Wasabi's coinjoin implementation is trustless by design, there is no need for participants to trust each other or a third party.
+Both the sending address (the coinjoin input) and the receiving address (the coinjoin output) are controlled by your own private keys.
+The Wasabi server merely coordinates the process of combining each participant's input into one single transaction, but the Wasabi Wallet can neither steal your coins, nor figure out which outputs belong to which inputs (look up “[WabiSabi coinjoin](/using-wasabi/CoinJoin.md)” if you want to know more).
 :::
 
 :::details
 ### What is the privacy I get after mixing with Wasabi?
 
-This depends on how you handle your outputs after the CoinJoin.
+This depends on how you handle your outputs after the coinjoin.
 There are some ways how you can unintentionally undo the mixing by being careless.
 For example, if you send a mixed coin to an already used address, then anyone can see that both coins are controlled by the same entity.
 More importantly, anyone who knows that the address belongs to you knows that you own that mixed coin.
 [Address reuse](/why-wasabi/AddressReuse.md) compromises your privacy.
 Another deanonymizing scenario occurs when you combine mixed outputs with unmixed ones when sending: a third party will be able to make the connection between them as belonging to the same sender.
-This is why you need to be careful with [change coins](/using-wasabi/ChangeCoins.md).
+This is why you need to be careful with non-private/[change coins](/using-wasabi/ChangeCoins.md).
 
-The practice of being careful with your post-mix outputs is commonly facilitated through coin control, which is the default way of interacting with the wallet.
+The practice of being careful with your post-mix outputs is commonly facilitated through coin control.
 Find out more about coin control in [here](/why-wasabi/Coins.md).
+However, Wasabi Wallet is build in a way to help the user to avoid privacy leaks when using the wallet.
 :::
 
 :::details
@@ -75,12 +76,12 @@ Any line of code written to support a random shitcoin takes away scarce develope
 :::
 
 :::details
-### Why is the anonymity set 100?
+### Why is the anonymity score 100?
 
 It is difficult to determine a sufficient anonymity set since enough research hasn’t been conducted to provide a definitive answer.
 The right anonymity set depends on your own personal threat model.
 However, the rough consensus among many privacy researchers is that an anonymity set above 50 could be considered sufficient.
-Furthermore our calculations have shown that with the liquidity of today’s mixers our mixing rounds would take 1 to 5 minutes with 100 anonymity set and 0.1 BTC fixed denomination.
+Furthermore our calculations have shown that with the liquidity of today’s mixers, our mixing rounds would take 1 to 5 minutes with 100 anonymity score.
 :::
 
 :::details
@@ -126,6 +127,7 @@ Also, remember to follow our [blog](https://blog.wasabiwallet.io) to get the lat
 
 The developers have gone to great lengths to ensure that the coordinator cannot steal funds nor link inputs to outputs. 
 The nature of Wasabi is that you should not need to trust the developers or the Wasabi coordinating server, as you can verify that the code does not leak information to anyone.
+Due to the nature of coinjoin transactions users don't need to trust other users or the coordinator against theft, leaving denial of service and attacks on privacy as the main concerns
 
 The only known possible 'malicious' actions that the server *could* perform are two sides of the same coin;
 - **Blacklisted UTXO's**:
@@ -136,12 +138,8 @@ It is possible that the server could *only* include one 'honest/real' coin in th
 This gives a false sense of security, **but does not worsen the existing privacy of the coin**.
 It would also be noticeable to all users excluding the user being targeted as their coins would not be mixed.
 It has been argued that this 'attack' would be very costly in terms of fees because the number of coins being mixed is verifiable.
-Though it is true that fees would have to be paid to zkSNACKs every round, this does not matter if it is zkSNACKs that is acting maliciously (as they get the funds back).
-Typical rounds currently have <100 people per mix, with the minimum input being ~0.1 BTC with a fee of 0.003% per anonymity set.
-Taking the 'worst case' (100 people, each mixing 0.1 BTC) gives 0.03 BTC per round.
-This is not prohibitive and is thus a valid concern.
-With that being said, if multiple chain-analysis companies attempt to flood the zkSNACKs mix (to decrease the true anonymity set) they will hinder each other's efforts (unless they are cooperating).
-See [here](https://github.com/nopara73/ZeroLink/#e-sybil-attack) for more info.
+Though it is true that remixes pay zero coordinator fee to zkSNACKs, they do pay mining fees.
+See [here](https://github.com/zkSNACKs/WabiSabi/blob/master/protocol.md#attacks-on-privacy) for more info.
 :::
 
 :::details
@@ -201,29 +199,28 @@ Additionally, open-source software tends to both incorporate and operate accordi
 ::::
 
 :::details
-### What is the general idea of ZeroLink CoinJoin?
+### What is the general idea of WabiSabi coinjoin?
 
 While fungibility is an essential property of good money, Bitcoin has its limitations in this area.
 Numerous fungibility improvements have been proposed; however, none of them have addressed the privacy issues in full.
-ZeroLink is designed so that no participant or outside observer can spy on the user.
-The scope of ZeroLink is not limited to a single transaction, it extends to transaction chains and it addresses various network layer deanonymizations.
+WabiSabi is designed so that no participant, outside observer or even the coordinator can spy on the user.
+The scope of WabiSabi is not limited to a single transaction, it extends to transaction chains and it addresses various network layer deanonymizations.
 However, its scope is limited to Bitcoin's first layer.
 Even if an off-chain anonymity solution gets widely adopted, ultimately the entrance and exit transactions will always be settled on-chain.
 Therefore, there will always be need for on-chain privacy.
 
 Ideal fungibility requires every Bitcoin transaction to be indistinguishable from each other, but it is an unrealistic goal.
-ZeroLink's objective is to break all links between separate sets of coins.
-ZeroLink presents a wallet privacy framework coupled with Chaumian CoinJoin, which was first introduced in 2013 by Gregory Maxwell.
-Hopefully, ZeroLink will enable the usage of Bitcoin in a fully anonymous way for the first time.
+WabiSabi's objective is to break all links between coins.
+Thus, WabiSabi enables the usage of Bitcoin in a fully anonymous way.
 
-ZeroLink defines a pre-mix and a post-mix wallet and a mixing technique.
+WabiSabi defines a pre-mix and a post-mix wallet and a mixing technique.
 Pre-mix wallet functionality can be added to any Bitcoin wallet without much overhead.
 Post-mix wallets on the other hand have strong privacy requirements, regarding coin selection, private transaction and balance retrieval, transaction input and output indexing and broadcasting.
 The requirements and recommendations for pre and post-mix wallets together define the Wallet Privacy Framework.
-Coins from pre-mix wallets to post-mix wallets are moved by mixing. Most on-chain mixing techniques, like CoinShuffle, CoinShuffle++ or TumbleBit's Classic Tumbler mode can be used.
-However ZeroLink defines its own mixing technique: [Chaumian CoinJoin](/using-wasabi/CoinJoin.md).
+Coins from pre-mix wallets to post-mix wallets are moved by mixing. Most on-chain mixing techniques, like CoinShuffle, CoinShuffle++, TumbleBit's Classic Tumbler mode, or ZeroLink can be used.
+However WabiSabi defines its own mixing technique: [WabiSabi coinjoin](/using-wasabi/CoinJoin.md).
 
-For the complete explanation please read [ZeroLink: The Bitcoin Fungibility Framework](https://github.com/nopara73/ZeroLink/).
+For more info please see [WabiSabi](https://github.com/zksnacks/wabisabi).
 :::
 
 :::details

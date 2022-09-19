@@ -7,8 +7,8 @@
 
 # Wallet Load
 
-There are two ways of loading your wallets in Wasabi, and you can load multiple wallets at the same time.
-The synchronization of your wallet happens fast and is very private by default.
+To load a wallet and start the synchonization process, you need to open your wallet by typing in the password.
+The first time synchronization of your wallet might take some time depending on the size of its history.
 
 [[toc]]
 
@@ -16,29 +16,22 @@ The synchronization of your wallet happens fast and is very private by default.
 
 ## Loading wallet step-by-step
 
-### Wallet Explorer
+### Wallet list
 
-On the right side of Wasabi is the `Wallet Explorer`, where you see an alphabetically sorted list of all the previously [generated](/using-wasabi/WalletGeneration.md) wallets.
+On the left side of Wasabi Wallet is the `Wallet list`, where you see an alphabetically sorted list of all the previously [generated](/using-wasabi/WalletGeneration.md) wallets.
 
-![Wasabi Wallet Explorer tab](/WalletExplorerUnloaded.png "Wasabi Wallet Explorer tab")
+Click the wallet you want to view, type in the password and press `Open`.
 
-You can load a wallet simply by double-clicking on it or by right-clicking on it and then choosing `Load Wallet`.
-A coin will appear on the wallet icon to indicate the loaded wallets.
-
-![Load Wallet in Wasabi](/WalletExplorerLoaded.png "Load Wallet in Wasabi")
-
-### Wallet Manager
-
-Alternatively, you can double-click a wallet in the `Load Wallet` tab, or select it and click the `load wallet` button.
-
-![Load Wallet in Wasabi](/WalletManagerLoadWallet.png "Load Wallet in Wasabi")
+![Type your password to open the wallet](/WalletOpen.png "Type your password to open the wallet")
 
 ## Synchronization
 
 ### Filter download
 
 As soon as you start Wasabi, it connects to the backend server with a new Tor identity and requests the [BIP 158 block filters](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki).
-At the first start, this can take a couple of minutes because all filters need to be downloaded, but for the subsequent starts, this is faster as only the most recent filters are requested.
+At the first start, this can take a while because all filters need to be downloaded, but for the subsequent starts, this is faster as only the most recent filters are requested.
+
+![Wallet is synchronizing itself with the Bitcoin network](/WalletSynchronizing.png "Wallet is synchronizing itself with the Bitcoin network")
 
 ### Filter scanning
 

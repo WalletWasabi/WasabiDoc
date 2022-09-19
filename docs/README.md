@@ -10,7 +10,7 @@ features:
 - title: Non-custodial
   details: Not your keys, not your bitcoin. With Wasabi, you are always in full control of your private and public keys, you never share them with any third party.
 - title: Privacy-focused
-  details: Without financial privacy, there is no human dignity. Wasabi is designed with one goal in mind, to protect your sensitive financial data, on the network level and on the blockchain.
+  details: Privacy is the ability to choose what you reveal to others. Wasabi is designed with one goal in mind, to protect your sensitive financial data, on the network level and on the blockchain level.
 ---
 
 -----

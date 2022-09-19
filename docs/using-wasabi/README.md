@@ -50,9 +50,7 @@ Further tutorials about the different parts of the wallet, for newbies and power
 ### Advanced Using Wasabi
 - [Headless Wasabi Daemon](/using-wasabi/Daemon.md)
 - [RPC Interface](/using-wasabi/RPC.md)
-- [Privacy Mode](/using-wasabi/PrivacyMode.md)
+- [Discreet Mode](/using-wasabi/DiscreetMode.md)
 - [PayJoin](/using-wasabi/PayJoin.md)
 - [Testnet](/using-wasabi/Testnet.md)
-- [Lock Screen](/using-wasabi/LockScreen.md)
 - [Supported BIPs](/using-wasabi/BIPs.md)
-- [Supported Industry Standards](/using-wasabi/IndustryStandards.md)
