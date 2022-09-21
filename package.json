@@ -24,12 +24,13 @@
     "@vuepress/plugin-back-to-top": "1.9.3",
     "gh-pages": "3.2.3",
     "markdown-it-custom-block": "0.1.2",
-    "vuepress": "1.9.3"
+    "vuepress": "^0.14.11"
   },
   "engines": {
     "node": ">=10.16"
   },
   "dependencies": {
+    "@vuepress/shared-utils": "^1.9.7",
     "ansi-regex": "^6.0.1",
     "follow-redirects": "^1.14.8",
     "glob-parent": "^6.0.2",
