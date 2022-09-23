@@ -21,23 +21,23 @@
   },
   "homepage": "https://github.com/zkSNACKs/WasabiDoc#readme",
   "devDependencies": {
-    "@vuepress/plugin-back-to-top": "1.9.3",
-    "gh-pages": "3.2.3",
+    "@vuepress/plugin-back-to-top": "1.9.7",
+    "gh-pages": "4.0.0",
     "markdown-it-custom-block": "0.1.2",
-    "vuepress": "1.9.3"
+    "vuepress": "1.9.7"
   },
   "engines": {
     "node": ">=10.16"
   },
   "dependencies": {
     "ansi-regex": "^6.0.1",
-    "follow-redirects": "^1.14.8",
+    "follow-redirects": "^1.15.2",
     "glob-parent": "^6.0.2",
-    "got": "^12.3.1",
-    "highlight.js": "^11.3.1",
-    "markdown-it": "^12.3.2",
-    "node-forge": "^1.3.0",
-    "nth-check": "^2.0.1",
-    "postcss": "^8.4.5"
+    "got": "^12.5.0",
+    "highlight.js": "^11.6.0",
+    "markdown-it": "^13.0.1",
+    "node-forge": "^1.3.1",
+    "nth-check": "^2.1.1",
+    "postcss": "^8.4.16"
   }
 }
