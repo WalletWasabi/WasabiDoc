@@ -46,7 +46,7 @@ It is also possible to connect Wasabi to a remote full node on another computer 
 Then, Wasabi pulls the verified blocks and queries the mempool from the full node.
 
 :::tip Wasabi ships with Bitcoin Knots!
-Wasabi has [partial Bitcoin Knots integration](/using-wasabi/BitcoinFullNode.md).
+Wasabi has a [partial Bitcoin Knots integration](/using-wasabi/BitcoinFullNode.md).
 This means that it is possible (but not mandatory) to start Bitcoin Knots during the launch of Wasabi.
 Without having to install or configure anything.
 :::
