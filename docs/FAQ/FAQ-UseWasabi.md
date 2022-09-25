@@ -695,14 +695,14 @@ Making your wallet 100% private [takes some time](FAQ-UseWasabi.md#how-long-does
 
 So when your wallet is partially private (between 0 and 100% privacy progress) it is a best practice to only send the private available amount, to protect your privacy.
 In the privacy progress tile, `PRIVATE` shows the currently available private BTC amount.
-So that is the amount which can be send privately, even if the privacy progress is not yet 100%.
+So that is the amount (minus the mining fees) which can be sent privately, even if the privacy progress is not yet 100%.
 When sending, the wallet automatically selects the private funds first.
 
 For example:
 
-When `PRIVATE` is 0.00787086 BTC, that means that I can send 0.00787086 BTC privately.
+When `PRIVATE` is 0.00787086 BTC, that means that I can send less than that privately.
 Even when the `Privacy Progress` is below 100%.
-So when sending, 0.00787086 - mining fees (±0.00010000 BTC, depending on tx size and fee rate) should be entered as the `Amount` in order to only use the private funds.
+So when sending, less than 0.00787086 BTC (to cover the mining fees) should be entered as the `Amount` in order to only use the private funds.
 
 ![Wasabi Wallet Privacy Progress Tile](/PrivacyProgressTile.png "Wasabi Wallet Privacy Progress Tile")
 :::
