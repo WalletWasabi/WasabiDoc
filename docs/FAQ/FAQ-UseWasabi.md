@@ -676,6 +676,16 @@ For example, if the initial transaction pays a 1 sat/vbyte fee and the child tra
 (Assuming both transactions are roughly the same size.)
 :::
 
+:::details
+### Why is there no `Send` button, only the `Receive` button is displayed?
+
+When the wallet has a balance of 0.00000000 BTC, the `Send` button is hidden because there is no bitcoin to send.
+So this happens when a new wallet has just been generated and it hasn't received any bitcoin yet.
+Receive some bitcoin and then the `Send` button will automatically be displayed.
+
+There is also no `Send` button with watch-only wallets.
+:::
+
 ## CoinJoin
 
 @[youtube](ypfZT9GlqTw)
