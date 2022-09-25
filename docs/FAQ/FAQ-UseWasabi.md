@@ -713,6 +713,7 @@ Thus, a payment made with coinjoined funds allows the sender and the recipient t
 |:---:|:---:|:---:|
 | Fresh input | 0.3% coordination fee + mining fees  | mining fees |
 | Remix | mining fees | mining fees |
+
 :::
 
 :::details
