@@ -693,7 +693,7 @@ Yes, you can always send from your wallet.
 However, a best practice is to only send private funds.
 Making your wallet 100% private [takes some time](FAQ-UseWasabi.md#how-long-does-it-take-to-make-my-wallet-100%-private), but in the mean time you can always send the (private) funds.
 
-So when your wallet is partially private (between 0 and 100% privacy progress) it is a best practice to only send the private available amount, to protect your privacy.
+So when your wallet is partially private (between 0 and 100% privacy progress) it is a best practice to only use the private available funds, to protect your privacy.
 In the privacy progress tile, `PRIVATE` shows the currently available private BTC amount.
 So that is the amount (minus the mining fees) which can be sent privately, even if the privacy progress is not yet 100%.
 When sending, the wallet automatically selects the private funds first.
