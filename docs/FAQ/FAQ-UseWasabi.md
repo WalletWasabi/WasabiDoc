@@ -202,8 +202,12 @@ The private value is the total amount that reached the anonscore threshold.
 ### What does the bar with the colored segments mean?
 
 The colored segments make up the `Privacy Bar`.
-The Privacy Bar is supposed to give the user an easy overview of the wallet's coins and it's privacy progress, where the individual segments represent a wallet's coin.
-The color of each segment indicates if that coins is private (green), semi-private (orange), or non-private (red).
+The Privacy Bar is supposed to give the user an easy overview of the wallet's coins and it's privacy progress, where each segment represents a wallet's coin.
+The color of each segment indicates if that coin is private (green), semi-private (orange), or non-private (red).
+
+![Wasabi Wallet Privacy Bar](/PrivacyBar.png "Wasabi Wallet Privacy Bar")
+
+So according to the image, this wallet has 46 coins of which 21 are private (green), 11 are semi-private (orange) and 14 are non-private (red).
 :::
 
 ## Synchronization
