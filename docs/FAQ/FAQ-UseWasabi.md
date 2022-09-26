@@ -198,6 +198,14 @@ It considers the anonymity score weighted amounts instead of just amounts that r
 The private value is the total amount that reached the anonscore threshold.
 :::
 
+:::details
+### What does the bar with the colored segments mean?
+
+The colored segments make up the `Privacy Bar`.
+The Privacy Bar is supposed to give the user an easy overview of the wallet's coins and it's privacy progress, where the individual segments represent a wallet's coin.
+The color of each segment indicates if that coins is private (green), semi-private (orange), or non-private (red).
+:::
+
 ## Synchronization
 
 :::details
