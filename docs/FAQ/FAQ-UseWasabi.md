@@ -746,6 +746,13 @@ Coins (UTXOs) with a value above 0.01 BTC pay 0.3% as a coordination fee + minin
 Coins of 0.01 BTC or below don't pay coordination fees.
 Remixes, even after one transaction, also don't pay coordination fees. 
 Thus, a payment made with coinjoined funds allows the sender and the recipient to remix their coins without paying any coordination fees.
+
+|  | > 0.01 BTC | 0.01 BTC and less |
+|:---:|:---:|:---:|
+| Fresh input | 0.3% coordination fee + mining fees  | mining fees |
+| Remix* | mining fees | mining fees |
+
+*Remix includes a 1 hop transaction
 :::
 
 :::details
