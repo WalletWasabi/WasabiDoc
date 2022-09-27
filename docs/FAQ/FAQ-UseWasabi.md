@@ -746,11 +746,7 @@ The standard denominations are:
 10460353203, 17179869184, 20000000000, 20920706406, 31381059609, 34359738368, 50000000000, 62762119218,
 68719476736, 94143178827, 100000000000, 137438953472 sats`
 
-So that are 79 denominations from 0.00005000 BTC up to 137.438953472 BTC.
-
-@[youtube](PKtxzSLPWFU)
-
-@[youtube](3Ezru07J674)
+So, there are 79 denominations from 0.00005000 BTC up to 137.438953472 BTC.
 :::
 
 :::details
