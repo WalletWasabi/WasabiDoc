@@ -791,18 +791,12 @@ With Wasabi we are trying to do lower estimations, rather than higher ones.
 :::
 
 :::details
-### What are the equal denominations created in one mixing round?
+### What are the equal denominations created in a coinjoin round?
 
-In every CoinJoin round the minimum to register is roughly 0.1 BTC, you need to have at least this much to participate.
-Within the same transaction, Wasabi also efficiently generates larger value zero link CoinJoin denominations.
-They are 0.2, 0.4, 0.8, 1.6, 3.2, and so on...
-The possible values of equal output that can be created are 0.1 x 2^n where n is a positive integer.
-This is the mathematically most efficient way to get anonymity set for any amount you desire.
-For example, with a 0.7 BTC input you would expect the following outputs: ~0.1, ~0.2, ~0.4 BTC.
+The standard denominations are:
+`5000`, `6561`, `8192`, `10000`, `13122`, `16384`, `19683`, `20000`, `32768`, `39366`, `50000`, `59049`, `65536`, `100000`, `118098`, `131072`, `177147`, `200000`, `262144`, `354294`, `500000`, `524288`, `531441`, `1000000`, `1048576`, `1062882`, `1594323`, `2000000`, `2097152`, `3188646`, `4194304`, `4782969`, `5000000`, `8388608`, `9565938`, `10000000`, `14348907`, `16777216`, `20000000`, `28697814`, `33554432`, `43046721`, `50000000`, `67108864`, `86093442`, `100000000`, `129140163`, `134217728`, `200000000`, `258280326`, `268435456`, `387420489`, `500000000`, `536870912`, `774840978`, `1000000000`, `1073741824`, `1162261467`, `2000000000`, `2147483648`, `2324522934`, `3486784401`, `4294967296`, `5000000000`, `6973568802`, `8589934592`, `10000000000`, `10460353203`, `17179869184`, `20000000000`, `20920706406`, `31381059609`, `34359738368`, `50000000000`, `62762119218`, `68719476736`, `94143178827`, `100000000000`, `137438953472` sats.
 
-@[youtube](PKtxzSLPWFU)
-
-@[youtube](3Ezru07J674)
+So, there are 79 denominations from 0.00005000 BTC up to 1374.38953472 BTC.
 :::
 
 :::details
