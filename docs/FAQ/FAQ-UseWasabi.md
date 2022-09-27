@@ -734,7 +734,7 @@ With Wasabi we are trying to do lower estimations, rather than higher ones.
 :::
 
 :::details
-### What are the equal denominations created in one mixing round?
+### What are the equal denominations created in a coinjoin round?
 
 The standard denominations are:
 `5000, 6561, 8192, 10000, 13122, 16384, 19683, 20000, 32768, 39366, 50000, 59049, 65536, 100000, 118098,
