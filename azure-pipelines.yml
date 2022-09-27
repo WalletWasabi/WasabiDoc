@@ -25,7 +25,7 @@ steps:
     npm ci
     npm run build
 - script: |
-    npm run deploy -- -r https://$(GITHUB_DEPLOY_ACCESS_TOKEN)@github.com/zkSNACKs/WasabiDoc.git -u "Azure Pipeline <azure-pipeline@wasabiwallet.io>"
+    npm run deploy -- -r https://github.com/zkSNACKs/WasabiDoc.git -u "Azure Pipeline <azure-pipeline@wasabiwallet.io>"
   displayName: 'Build and deploy'
   condition: |
     and(not(eq(variables['Build.Reason'], 'PullRequest')),
