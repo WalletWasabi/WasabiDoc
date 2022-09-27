@@ -49,7 +49,7 @@ See [this chapter](/using-wasabi/WalletGeneration.md) for more information on ho
 
 ## Receiving bitcoin
 
-In order to receive bitcoin, you should generate an address in the `Receive` tab.
+In order to receive bitcoin, you need to generate an address in the `Receive` dialog.
 But first, you must label it with the names of any observers who know that this address is yours.
 For example, if Alice pays you back for last nights pizza, then the label is `Alice`.
 This is an important feature for you and the wallet to know which coin is from whom, and it will help with your privacy in the future.
