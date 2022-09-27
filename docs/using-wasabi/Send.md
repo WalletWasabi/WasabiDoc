@@ -53,7 +53,7 @@
 
 9. Transaction succesfully sent!
 
-![Wasabi Wallet Payment Successful](/SendPaymentSuccessful.png "Wasabi Wallet Payment Successful")
+![Wasabi Wallet Payment Successful](/PaymentSuccessful.png "Wasabi Wallet Payment Successful")
 
 ## Coins
 
