@@ -35,7 +35,7 @@
 
 6.  Preview Transaction.
     -  Verify the amount, recipient, and the address.
-    -  Review the estimated time for confirmation and the transaction fee. Optionally, you can change the transaction fee or confirmation time.
+    -  Review the estimated time for confirmation and the transaction fee. Optionally, you can change the transaction fee or confirmation time by clicking on the icon.
 
     ![Wasabi Wallet Send Change Fee](/SendChangeFee.png "Wasabi Wallet Send Change Fee")
 
