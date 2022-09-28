@@ -76,11 +76,11 @@ Any line of code written to support a random shitcoin takes away scarce develope
 :::
 
 :::details
-### Why is the anonymity score 100?
+### What is considered a sufficient anon score?
 
-It is difficult to determine a sufficient anonymity set since enough research hasn’t been conducted to provide a definitive answer.
-The right anonymity set depends on your own personal threat model.
-However, the rough consensus among many privacy researchers is that an anonymity set above 50 could be considered sufficient.
+It is difficult to determine a sufficient anonymity score since enough research hasn’t been conducted to provide a definitive answer.
+The right anonymity score depends on your own personal threat model.
+However, the rough consensus among many privacy researchers is that an anonymity score above 50 could be considered sufficient.
 Furthermore our calculations have shown that with the liquidity of today’s mixers, our mixing rounds would take 1 to 5 minutes with 100 anonymity score.
 :::
 
