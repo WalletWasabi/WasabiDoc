@@ -592,16 +592,6 @@ At the transaction fee slider dialog, click on `Advanced` and manually type the 
 :::
 
 :::details
-### How can I display the fee in satoshis per vByte?
-
-The fee you pay to get confirmation on the Bitcoin blockchain is denominated in satoshis per virtual byte.
-This means that the larger your transaction size, meaning the number of inputs and outputs, the more total bitcoin you have to pay for confirmation.
-If you want faster confirmation, then you have to pay proportionally more sats per vByte.
-
-You can toggle the display of the fee between `sat/vByte` & `percentage of transferred value` & `total bitcoin` & `total USD` by clicking on the text of the fee.
-:::
-
-:::details
 ### How do I select coins for spending?
 
 Unlike other Bitcoin wallets, the user cannot spend from Wasabi without selecting coins, since ["Coin Control Is Must Learn If You Care About Your Privacy In Bitcoin"](https://medium.com/@nopara73/coin-control-is-must-learn-if-you-care-about-your-privacy-in-bitcoin-33b9a5f224a2), at least for today.
