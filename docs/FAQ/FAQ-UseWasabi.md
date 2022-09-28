@@ -758,9 +758,7 @@ That said, the ideal way to coinjoin would be when:
 Coinjoins are unfairly cheap when the mempool is empty.
 Remember to take a look at websites like [Johoe's Bitcoin Mempool Statistics](https://jochen-hoenicke.de/queue/#0,24h) or [mempool.space](https://mempool.space/tv) to see mempool statistics in real time.
 
-2. Your inputs are the same or little higher as the minimal denomination for the current round.
-[Change is an issue](/using-wasabi/ChangeCoins.md#why-change-is-an-issue).
-For this reason, whenever possible it is recommended to CoinJoin with exactly the required denomination for the current round (roughly 0.1 BTC) to not get any change back.
+2. When your wallet has a low `PRIVACY PROGRESS` score.
 
 3. Mix at different times.
 To avoid traffic detection and behavioral analysis, you should CoinJoin at different times (days and hours).
