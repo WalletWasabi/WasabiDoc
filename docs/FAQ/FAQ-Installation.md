@@ -153,7 +153,13 @@ When you broadcast a transaction over clearnet, the connected full node will kno
 :::details
 ### Can I install Wasabi on TAILS?
 
-Yes, it is possible to install Wasabi on Tails, but it is not [officially supported](https://github.com/zkSNACKs/WalletWasabi/blob/master/WalletWasabi.Documentation/WasabiCompatibility.md#officially-supported-operating-systems).
+No, it is not possible to install Wasabi on Tails.
+:::
+
+:::details
+### Can I install Wasabi on WHONIX?
+
+No, it is not possible to install Wasabi on WHONIX.
 :::
 
 :::details
