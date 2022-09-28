@@ -820,9 +820,8 @@ To avoid traffic detection and behavioral analysis, you should CoinJoin at diffe
 :::details
 ### Why are the denominations such an odd number?
 
-The output value changes each round to ensure that you can enqueue a coin and have it remix (mix over and over again - increasing the anonymity set, improving privacy).
-As a result the round mixing amount will often be a specific number which generally decreases as the rounds proceed, with a reset once a lower bound is reached.
-The range is roughly between 0.105 and 0.095 bitcoin, and it is reset manually by the developers.
+The standard denominations are defined as powers of 2, powers of 3, powers of 10 in a 1-2-5 series, and multiples thereof.
+Some standard denominations are removed as they were too close to each other, especially the larger ones.
 :::
 
 :::details
