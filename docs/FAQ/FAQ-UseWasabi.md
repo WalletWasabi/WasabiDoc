@@ -149,7 +149,7 @@ Moreover, our trustless software architecture prevents us from gathering this in
 - A transaction fee is only charged by the service provider for CoinJoin transactions.
 - We only provide written support, and NEVER ask for recovery words, passwords or similar security critical information.
 
-Read the whole document of [terms and conditions, privacy policy, and legal statement here](https://github.com/zkSNACKs/WalletWasabi/blob/master/WalletWasabi/Legal/Assets/LegalDocuments.txt)
+Read the whole document of [terms and conditions, privacy policy, and legal statement here](https://github.com/zkSNACKs/WalletWasabi/blob/master/WalletWasabi/Legal/Assets/LegalDocumentsWw2.txt)
 :::
 
 :::details
