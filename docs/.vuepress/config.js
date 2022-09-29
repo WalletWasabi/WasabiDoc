@@ -219,7 +219,6 @@ module.exports = {
           collapsable: false,
           sidebarDepth: 2,
           children: [
-            "/using-wasabi/Daemon.md",
             "/using-wasabi/RPC.md",
             "/using-wasabi/DiscreetMode.md",
             "/using-wasabi/PayJoin.md",
