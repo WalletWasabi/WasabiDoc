@@ -25,9 +25,9 @@ body
   background linear-gradient(160deg, rgba(73, 88, 107, 1) 0%, rgba(0, 16, 31, 1) 55%);
   color $lightTextColor
 
-  @media (prefers-color-scheme: light)
-    background #fff
-    color $textColor
+  // @media (prefers-color-scheme: light)
+    // background #fff
+    // color $textColor
 
     .theme-default-content code
       color $codeTextColor
@@ -119,8 +119,8 @@ body
       color #fff
       a
         color lighten($reducedTextColor, 40%)
-        @media (prefers-color-scheme: light)
-          color darken($reducedTextColor, 40%)
+        // @media (prefers-color-scheme: light)
+          // color darken($reducedTextColor, 40%)
         &:hover
           text-decoration underline
     .feature h2
@@ -176,60 +176,60 @@ body
 
     .suggestions
       background $navbarBgColor
-      @media (prefers-color-scheme: light)
-        background #fff
+      // @media (prefers-color-scheme: light)
+        // background #fff
 
     .suggestion
       a
         color $navbarTextColor
-        @media (prefers-color-scheme: light)
-          color $textColor
+        // @media (prefers-color-scheme: light)
+          // color $textColor
       &.focused
         background-color alpha($accentColor, 30%)
-        @media (prefers-color-scheme: light)
-          background-color alpha($textColor, 10%)
+        // @media (prefers-color-scheme: light)
+          // background-color alpha($textColor, 10%)
         a
           color darken($lightTextColor, 20%)
-          @media (prefers-color-scheme: light)
-            color darken($textColor, 20%)
+          // @media (prefers-color-scheme: light)
+            // color darken($textColor, 20%)
 
   // sidebar
   .sidebar-mask
     background alpha($darkBgColor, 90%)
-    @media (prefers-color-scheme: light)
-      background alpha(#fff, 90%)
+    // @media (prefers-color-scheme: light)
+      // background alpha(#fff, 90%)
 
   .sidebar
     font-size unset
     border-right-color #49586b
     background transparent
-    @media (prefers-color-scheme: light)
-      border-right-color $borderColor
-      background: #fff
+    // @media (prefers-color-scheme: light)
+      // border-right-color $borderColor
+      // background: #fff
 
     .sidebar-link
       color unset
       &.active
         color $accentColor
-        @media (prefers-color-scheme: light)
-          color darken($accentColor, 20%)
+        // @media (prefers-color-scheme: light)
+          // color darken($accentColor, 20%)
       &:hover
         color $accentColor
-        @media (prefers-color-scheme: light)
-          color darken($accentColor, 40%)
+        // @media (prefers-color-scheme: light)
+          // color darken($accentColor, 40%)
 
   // content
   .page
     a:not(.nav-link)
       text-decoration none
       color $accentColor
-      @media (prefers-color-scheme: light)
-        color darken($accentColor, 20%)
+      // @media (prefers-color-scheme: light)
+        // color darken($accentColor, 20%)
       &:hover
         text-decoration underline
         color lighten($accentColor, 40%)
-        @media (prefers-color-scheme: light)
-          color darken($accentColor, 40%)
+        // @media (prefers-color-scheme: light)
+          // color darken($accentColor, 40%)
 
     // force long words (i.e. onion addresses to break)
     p
@@ -238,9 +238,9 @@ body
     code
       color darken($lightTextColor, 100%)
       background-color alpha($accentColor, 100%)
-      @media (prefers-color-scheme: light)
-        color lighten($textColor, 20%)
-        background-color alpha($textColor, 10%)
+      // @media (prefers-color-scheme: light)
+        // color lighten($textColor, 20%)
+        // background-color alpha($textColor, 10%)
 
     pre
       code
@@ -251,8 +251,8 @@ body
       margin 1rem 0
       color $lightTextColor
       border-left-color $accentColor
-      @media (prefers-color-scheme: light)
-        border-left-color lighten($reducedTextColor, 50%)
+      // @media (prefers-color-scheme: light)
+        // border-left-color lighten($reducedTextColor, 50%)
 
     ul
       padding-left 1em
@@ -284,13 +284,13 @@ body
         color #ffd400
       &.tip
         border-color $accentColor
-      @media (prefers-color-scheme: light)
-        &.tip,
-        &.danger
-          background-color #f3f5f7
-        &.warning
-          color #ffd400
-          background-color rgba(255,229,100,.3)
+      // @media (prefers-color-scheme: light)
+        // &.tip,
+        // &.danger
+          // background-color #f3f5f7
+        // &.warning
+          // color #ffd400
+          // background-color rgba(255,229,100,.3)
 
     .ytEmbed
       position relative
