@@ -98,7 +98,7 @@ So in order to increase your privacy, you can set a non-rounded amount, like `0.
 Every transaction must specify a fee which incentives the miner to include it in a block, it is calculated by `value of inputs - value of outputs`.
 The higher the fee per virtual byte (vByte) transaction size, the more likely miners are to confirm this transaction.
 Wasabi uses Bitcoin Core's `smart fee` algorithm to estimate the time it will take to confirm at the given fee level.
-You can change the fee by moving the slider, or even specify it manually by using the `Advanded` option. [Advanced fee rate](/FAQ/FAQ-UseWasabi.html#how-do-i-set-custom-fee-rate).
+You can change the fee by moving the slider, or specify it manually by using the `Advanded` option. [Advanced fee rate](/FAQ/FAQ-UseWasabi.html#how-do-i-set-custom-fee-rate).
 
 ![Wasabi Wallet Fee Slider](/SendFeeSlider.png "Wasabi Wallet Fee Slider")
 
@@ -106,19 +106,10 @@ In some cases, there is very little demand for block space, and then Wasabi will
 
 :::tip High-priority transaction fees
 
-When using Bitcoin Core's `smart fee` algorithm to estimate the time a transaction will take to confirm given the current mempool, the algorithm considers the historic data for transactions in the mempool and in recent blocks.
-
-If, after you select the highest fee for a `send`, other people decide to send coins using even higher fees than you selected, their transactions will be placed ahead of yours in the mempool.
-
-The placement of a transaction in line to be confirmed in the mempool is an ongoing auction for block space.
-
-As such, a fee that is high enough to be confirmed in the next block when you create a transaction can be outbid by people sending coins after you who also want to be in the next block, which places your transaction farther back in line to be confirmed.
-
 If you have a transaction that is high-priority and you really want it to be confirmed ASAP:
 
-1. Go into your Wasabi `Settings` and turn on `Manual fee entry`.
-2. Use [a mempool monitor](https://mempool.space) (available [Tor onion website](http://mempoolhqx4isw62xs7abwphsq7ldayuidyx2v2oethdhhj6mlo2r6ad.onion/)) to see what fees are likely to get a transaction to be confirmed in the next block.
-3. Select a fee that is well above the current highest fee....perhaps double or triple it....if it is very important to you that the transaction is confirmed soon.
+1. Use [a mempool monitor](https://mempool.space) (available [Tor onion website](http://mempoolhqx4isw62xs7abwphsq7ldayuidyx2v2oethdhhj6mlo2r6ad.onion/)) to see what fees are likely to get a transaction to be confirmed in the next block.
+2. Select a fee that is well above the current highest fee (perhaps double or triple it) if it is very important to you that the transaction is confirmed soon.
 
 For a deeper dive into the fee estimation process, [this article](https://bitcointechtalk.com/an-introduction-to-bitcoin-core-fee-estimation-27920880ad0) is worth reading.
 :::
