@@ -48,7 +48,6 @@ Further tutorials about the different parts of the wallet, for newbies and power
 - [Wasabi Setup using Whonix](/using-wasabi/WasabiSetupWhonix.md)
 
 ### Advanced Using Wasabi
-- [Headless Wasabi Daemon](/using-wasabi/Daemon.md)
 - [RPC Interface](/using-wasabi/RPC.md)
 - [Discreet Mode](/using-wasabi/DiscreetMode.md)
 - [PayJoin](/using-wasabi/PayJoin.md)
