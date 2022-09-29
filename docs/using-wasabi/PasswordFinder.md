@@ -18,7 +18,18 @@ This tool tries to find the password that decrypts the encrypted secret key stor
 
 Wasabi Wallet protects the encrypted secret key with the same technology used to protect paper wallets ([BIP 38](https://github.com/bitcoin/bips/blob/master/bip-0038.mediawiki)) and for that reason, it is computationally infeasible to brute force the password using all the possible combinations (assuming a secure password was chosen).
 
-It is important to know that Wasabi Password Finder is not for breaking wallet passwords but for finding errors (typos) in an already known password.
+:::warning
+It is important to know that Wasabi Password Finder is not for breaking wallet passwords but for finding errors (typos) in an already known password. And it will not always result in a success.
+:::
+
 
 ## Usage
 
+After an incorrect password is entered when opening a wallet, `Forgot Password` will show up.
+
+![Wasabi Wallet Forgot Password(/ForgotPassword.png "Wasabi Wallet Forgot Password")
+
+It will show more info about how it works and how to use it.
+It will guide you through the steps.
+First you will be asked questions, like _your most likely password_, _which language_, _which characters it contains_ etc.
+After that it will search if your password can be found.
