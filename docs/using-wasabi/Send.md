@@ -96,14 +96,13 @@ So in order to increase your privacy, you can set a non-rounded amount, like `0.
 ## Mining Fee
 
 Every transaction must specify a fee which incentives the miner to include it in a block, it is calculated by `value of inputs - value of outputs`.
-The higher the fee per virtual byte (vbyte) transaction size, the more likely miners are to confirm this transaction.
+The higher the fee per virtual byte (vByte) transaction size, the more likely miners are to confirm this transaction.
 Wasabi uses Bitcoin Core's `smart fee` algorithm to estimate the time it will take to confirm at the given fee level.
-You can change the fee by moving the slider, or even specify it manually by activating this functionality in the [settings](/FAQ/FAQ-UseWasabi.html#how-do-i-set-custom-fee-rate).
-By clicking on the fee in the brackets below the slider, you can cycle through displaying the `total bitcoin amount`, `sats per vbyte`, `percentage fee of sending amount` or `US Dollar equivalent`.
+You can change the fee by moving the slider, or even specify it manually by using the `Advanded` option. [Advanced fee rate](/FAQ/FAQ-UseWasabi.html#how-do-i-set-custom-fee-rate).
 
-![Wasabi Wallet custom mining fee](/SendFeeSlider.png "Wasabi Wallet custom mining fee")
+![Wasabi Wallet Fee Slider](/SendFeeSlider.png "Wasabi Wallet Fee Slider")
 
-In some cases, there is very little demand for block space, and then Wasabi will set the minimum fee of `1 sat/vbyte`.
+In some cases, there is very little demand for block space, and then Wasabi will set the minimum fee of `1 sat/vByte`.
 
 :::tip High-priority transaction fees
 
