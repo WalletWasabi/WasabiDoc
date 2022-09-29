@@ -510,17 +510,9 @@ However, you can use the [RPC server `send` call](/using-wasabi/RPC.md#send) and
 :::
 
 :::details
-### How can I set a custom change address?
+### Can I set a custom change address?
 
-You can activate the option to set a custom change address in the `Settings` tab.
-
-![Wasabi Wallet custom change address setting](/SettingsCustomChange.png "Wasabi Wallet custom change address setting")
-
-Then simply paste the address you want to send the change to in the `Send` tab GUI.
-Read more [here](/using-wasabi/Send.md#custom-change-address).
-
-![Set Custom Change address in Wasabi Wallet](/SendCustomChange.png "Set Custom Change address in Wasabi Wallet")
-:::
+No. That is currently not possible.
 
 :::details
 ### How do I set the payment amount?
