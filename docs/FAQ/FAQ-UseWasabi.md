@@ -7,7 +7,7 @@
 
 # Use of Wasabi
 
-## Wallet Manager
+## General
 
 ::::details
 ### How do I generate a new wallet?
@@ -48,14 +48,14 @@ Here you get to choose your wallets coinjoin strategy.
 
 ![Wasabi Wallet coinjoin strategies](/CoinjoinStrategyView.png "Wasabi Wallet coinjoin strategies")
 
-By clicking `Customize`, you can create a custom coinjoin strategy.
 ::::
 
 ::::details
 ### Can I rename my Wallet?
 
 Yes you can.
-Go to `Wallets` folder (inside the [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder)) and rename the .json Wallet file.
+To access the `Wallets` folder type `Wallet Folder` in the search bar at the top of the main view and rename the .json Wallet file.
+Or you can navigate to the `Wallets` folder (inside the [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder)) and rename the .json Wallet file.
 Then go to `WalletBackups` folder (inside [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder)) and rename the .json Wallet file.
 
 :::tip
@@ -74,7 +74,7 @@ The password you set is used:
 * As a 13th word (passphrase) as described in [BIP 39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki).
 * To encrypt the private key of the extended private key as described in [BIP 38](https://github.com/bitcoin/bips/blob/master/bip-0038.mediawiki) to get an encrypted secret which is stored on the computer.
 
-Wasabi stores only the BIP38 encrypted blob, so you'll need to type in the password to spend or CoinJoin from Wasabi.
+Wasabi stores only the BIP38 encrypted blob, so you'll need to type in the password to open the wallet and to spend from Wasabi.
 
 :::danger
 The password will unlock your bitcoin to anyone who has access to the recovery words backup or the computer!
@@ -97,6 +97,10 @@ A secure password manager software might also be used, but be careful here.
 ::::details
 ### Where can I find the Wasabi data folder?
 
+You can easily reach it from inside Wasabi by typing `Data Folder` in the search bar at the top of the main view.
+
+Or you can manually navigate to it (depending on which OS you have):
+
 * Windows: `/Users/{your username}/AppData/Roaming/WalletWasabi/Client`
 * Linux: `/home/{your username}/.walletwasabi/client`
 * macOS: `/Users/{your username}/.walletwasabi/client`
@@ -104,8 +108,6 @@ A secure password manager software might also be used, but be careful here.
 :::tip
 You need to mark the “show hidden files” setting to see it.
 :::
-
-You can also easily reach it from inside Wasabi: `File > Open > Data Folder`.
 ::::
 
 ::::details
@@ -197,13 +199,17 @@ The `WalletName` will be displayed in the GUI.
 Then start Wasabi and load the wallet to synchronize it.
 
 For watch only wallets, the `Send` tab is disabled.
-However, you can use the `Build Transaction` tab in the `Advanced` section of the `Wallet Explorer` to build an unsigned PSBT transaction.
-When this is signed on the device with the private key (like an offline laptop running Electrum wallet or a hardware wallet), then you can broadcast the signed transaction using the `Broadcast Transaction` tab in the `Tools` menu.
+:::
+
+:::details
+### What does the privacy progress mean?
+
+The privacy progress tile represents the percentage of how private the wallet is.
+It considers the anonymity score weighted amounts instead of just amounts that reached the anonymity score threshold.
+The private value is the total amount that reached the anonscore threshold.
 :::
 
 ## Synchronization
-
-@[youtube](qguwAvA5Fx4)
 
 :::details
 ### What are BIP-158 block filters?
@@ -231,23 +237,17 @@ Read more [ħere](/using-wasabi/WalletLoad.md)
 :::details
 ### How do I know if the synchronization is finished?
 
-You know that Tor is properly connected, that all the block filters and all the relevant blocks are downloaded when you see that the status bar is `Ready`.
+Once Tor and backend are properly connected and you have peers, you will see a checkmark at the bottom right corner of the main view.
+The timer of the loading wallet page runs out when all the block filters and all the relevant blocks are downloaded and the wallet is synchronized.
 
-![Wasabi Wallet Status Bar](/StatusBar.png "Wasabi Wallet Status Bar")
+![Wasabi Wallet Status Bar](/WalletSynchronizing.png "Wasabi Wallet Status Bar")
 :::
-
-:::details
-### What does it mean "Missing Filters"?
-
-The `Missing Filters` label indicates that Wasabi is still downloading the [BIP 158 block filters](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki) and it's synchronizing your wallet.
-You have to wait until the status bar is `Ready`.
-::::
 
 :::details
 ### How long does the initial, and a subsequent synchronization take?
 
 It usually only takes a couple of seconds to scan the block filters, and to download and parse the blocks.
-However, for large wallets with many transactions, this synchronization can take up to several minutes.
+However, for large wallets with many transactions, this synchronization can take up to several hours.
 The speed and reliability of the loading process is constantly improved.
 For especially old wallets, it might be worth considering to generate a new wallet with a shorter transaction history.
 :::
@@ -255,13 +255,11 @@ For especially old wallets, it might be worth considering to generate a new wall
 :::details
 ### Can Wasabi work with a pruned bitcoin node?
 
-Yes.
-Wasabi is a hybrid, if your node doesn't have a block, then it acquires it from someone else.
+No.
+Wasabi client doesn't work with pruned nodes.
 :::
 
 ## Receive
-
-@[youtube](9i7CceIdFg4)
 
 ::::details
 ### Why is it bad to re-use addresses?
@@ -284,13 +282,15 @@ Wasabi uses [BIP 44 multi-account hierarchy for deterministic wallets](https://g
 :::details
 ### How do I generate a new receiving address?
 
-You can generate a new bech32 address in the `Receive` tab of Wasabi Wallet.
-First you must set a label for it, so that you later know who has sent you bitcoin to this address.
-Be precise in the label of the observers who know this address is yours, this is an important part of good [coin control](/why-wasabi/Coins.md) privacy best practices.
-Then you can click on `Generate` which will now show you the address, and immediately copy it to the clipboard.
-After a coin has been sent to this address, it is removed from the GUI, this is a good feature to help protect you against [address reuse](/why-wasabi/AddressReuse.md).
+You can generate a new bech32 address in the `Receive` dialog of Wasabi Wallet.
+First you must set a label for it, so that you later know who knows that this address is yours.
+Be precise in the label of the observers who know this address is yours, as this is an important part of good [coin selection](/why-wasabi/Coins.md) privacy best practices.
+Do not write anything else on the label exept the name of the entities that know this address belongs to you.
+Then you can click on `Continue` which will now show you the address, and you can copy it to the clipboard.
+After a coin has been sent to this address, it is removed from the GUI.
+This is a good feature to help protect you against [address reuse](/why-wasabi/AddressReuse.md).
 
-![Wasabi Wallet Observers label](/ReceiveLabelingRequired.png "Wasabi Wallet Observers label")
+![Wasabi Wallet Known By label](/ReceiveLabelingRequired.png "Wasabi Wallet Known By label")
 :::
 
 :::details
@@ -304,10 +304,11 @@ When you import the wallet file into a new Wasabi client, then it will use this 
 :::details
 ### How do I change the gap limit of a wallet?
 
-You can set the gap limit of an already existing Wasabi wallet by editing the wallet's settings file.
-Access the settings file via the `File->Open->Wallets Folder` menu.
+You can change the gap limit of an already existing Wasabi wallet by editing the wallet file.
+Open the wallet folder by typing `Wallet Folder` in the search bar.
+Then, open the wallet file in your favourite text editor.
 
-Close Wasabi and edit the `MinGapLimit` setting (which is `21` by default).
+Close Wasabi and edit the `MinGapLimit` setting (which is `21` by default) in the wallet file.
 The value depends on the settings of other tools that use the wallet too (e.g. use `100` for [BTCPay Server](https://docs.btcpayserver.org/FAQ/FAQ-Wallet/#missing-payments-in-my-software-or-hardware-wallet)).
 
 You might also need to reset the height of your wallet, so that it gets reindexed.
@@ -323,7 +324,7 @@ This can be done by setting the `BlockchainState->Height` to `0`:
 }
 ```
 
-Start Wasabi again, open the wallet and wait for the synchronization.
+Save and then start Wasabi again, open the wallet and wait for the synchronization.
 You should see all your transactions and the correct balance.
 
 If you are recovering a wallet with the 12 recovery words, then in the advanced section you can increase the gap limit from a default of 100.
@@ -333,14 +334,14 @@ If you are recovering a wallet with the 12 recovery words, then in the advanced 
 ### Why do I have to label my address?
 
 Bitcoin addresses look like cyphertext, they are not easily remembered and it's not clear how they were used previously.
-When you do not label all your addresses, there is no meta-data for you to understand the context of their coins.
-Thus receiving addresses and sending transactions should be carefully labeled with the observers who know about them.
+When you do not label all your addresses, there is no meta-data for you to understand the context of your coins.
+Thus receiving addresses and sending transactions should be carefully labeled with the observers who know that this address belongs to you.
 This helps you know where your coins came from so that you can judge whether there are privacy concerns when sending a specific coin to a specific receiver.
 
 ![Wasabi Wallet known by label](/ReceiveLabelingRequired.png "Wasabi Wallet known by label")
 
 When labeling a newly generated address or a sending transaction you should ask yourself: "Who knows this address is mine?" or "Whom will I share this address with?" or "From whom am I receiving bitcoin?" or "To whom am I sending bitcoin?".
-Observers should contain the comma-separated names of people/entities that may be aware of the transaction and could follow its trail like:
+Labels should contain the comma-separated names of people/entities that may be aware of the transaction and could follow its trail like:
 
 `Name of the sender or the receiver, name of the exchange, name of the payment processor`
 
@@ -530,31 +531,6 @@ Then Wasabi will help you with automatically calculating the precise change outp
 ![Wasabi Wallet Send tab](/SendAmountFeePassword.png "Wasabi Wallet Send tab")
 :::
 
-::::details
-### How can I use the MAX button?
-
-When you select one or more coins as inputs in `Send` tab, say two anonset coins worth each 0.1 bitcoin.
-You can click the `MAX` button and the transaction will have only one output with the destination address, and no change output.
-Wasabi will calculate the precise value for the destination output with `inputs - transaction fee`.
-This means you send the entire two coins to the receiving address, and there is no change coming back to your own wallet, you are sending a "whole coin".
-
-![Wasabi Wallet Send tab](/SendAmountFeePassword.png "Wasabi Wallet Send tab")
-
-The blockchain spy heuristic is that this is a transaction to yourself, for example to your hardware wallet for long-term hodling.
-Most of the time this assumption is correct - the amount of an external payment is rarely exactly the same as the value of the sum of coins in the input, thus requiring change.
-It does not matter what value the coin has when you send it to yourself, thus there is no change.
-But you can use this assumption to your advantage by sending the MAX amount to your external destination, for example for pizza at the tribe gathering.
-If the change would be only a small amount, maybe you accept the overpayment as price for your privacy.
-If the input is not high enough value for the payment, maybe the receiver accepts a slight underpayment.
-You can also use payment rails like Lightning Network to send the small value change privately off-chain.
-
-:::tip
-When using the MAX button, it looks like you send back to yourself.
-This can be used to spy on you!
-But you can also use it to your advantage when paying others.
-:::
-::::
-
 :::details
 ### Why does Wasabi choose a new random node every time I send a transaction?
 
@@ -582,10 +558,8 @@ But the provided time frames are only a rough estimation, and not at all a preci
 Because confirmation fee estimation is more an art than a science, you can also set the fee manually.
 Then you can go after your gut feeling, [mempool chart analysis](https://jochen-hoenicke.de/queue/#0,24h), or just putting the minimum of 1 sat/vByte.
 
-![Wasabi Wallet minimum mining fee](/SendNoFee.png "Wasabi Wallet minimum mining fee")
-
-For a transaction to yourself, for example from your hot CoinJoin wallet to your hardware wallet, you don't need to have fast confirmation, so you can set a relatively low fee.
-But to send from the hot CoinJoin wallet to the coffee shop, you might want to get faster confirmation, thus paying a higher fee.
+For a transaction to yourself, for example from your hot coinjoin wallet to your hardware wallet, you don't need to have fast confirmation, so you can set a relatively low fee.
+But to send from the hot coinjoin wallet to the coffee shop, you might want to get faster confirmation, thus paying a higher fee.
 This really depends on your own time preference in every unique moment.
 
 :::tip Remember
@@ -596,8 +570,10 @@ These sats are precious, so don't overpay on fees!
 :::details
 ### How do I set custom fee rate?
 
-Go to `Settings` and under the UI category turn on `Manual fee entry`.
-In the `Send` tab, simply click on the `Fee` box and manually type the fee rate (sat/vByte) you want.
+At the `Preview Transaction` dialog, click on the icon `Change transaction fee or confirmation time`.
+At the transaction fee slider dialog, click on `Advanced` and manually type the fee rate (sat/vByte) you want.
+
+![Wasabi Wallet custom fee rate](/SendCustomFee.png "Wasabi Wallet custom fee rate")
 :::
 
 :::details
@@ -730,90 +706,19 @@ Here's a great explanation about it:
 :::
 
 :::details
-### Why aren't there smaller equal denomination outputs like 0.05 BTC?
+### What is the minimum amount required to coinjoin?
 
-There are many reasons for that.
-The most prominent one may be DoS attack issues.
-In fact ZeroLink's DoS protection have been designed with 1BTC in mind, not with 0.1BTC, so we may even have to elevate it if someone with sufficient resources would decide to go for DoS attacking Wasabi.
-
-Everything in Bitcoin (and life) is about trade offs.
-When we build CoinJoin transactions on the Bitcoin Blockchain, remember that we always have to pay the miner fees.
-Miner fees are not dependent on the value of Bitcoin being transferred, rather, only on the size of the transaction in vBytes.
-So that means constructing a CoinJoin with 0.1 BTC outputs, with 100 participants, and constructing a CoinJoin with 0.01 BTC Outputs with 100 participants will cost the same in terms of miner fees.
-
-So let's dig into the numbers a bit further.
-What does it cost (from the miner perspective) to participate in a CoinJoin? Well most users will provide 1 input, and 2 outputs (change + mixed UTXO) and we can calculate the vbytes like so:
-
-```
-1 * (68 vbytes) + 2 * (33 vbytes) = 134 vbytes
-```
-
-But it is important to note that many users provide 2 inputs (UTXOs) or even sometimes 3 or 4, so we should really put a multiplier of 1.5x on the inputs:
-
-```
-1.5 * (68 vbytes) + 2 * (33 vbytes) = 168 vbytes
-```
-
-Excellent, this is the Cost-per-participant of an equal-output CoinJoin.
-Now let's consider the variable miner fees in sat/vbyte that we might pay to get the CoinJoin mined within a reasonable time (<24 hours):
-
-```
-Minimum: 2 sat/vbyte: 336 satoshis per participant
-Average: 10 sat/vbyte: 1,680 satoshis per participant
-High: 100 sat/vbyte: 16,800 satoshis per participant
-```
-
-So now let's examine how much (as a percentage) users have to pay for different denominations of equal output coinjoins.
-We will take the example of 1 BTC, 0.1 BTC (current setting) and 0.01 BTC (proposed):
-First 1 BTC:
-
-```
-Minimum: 2 sat/vbyte: 336 satoshis per participant (0.000336 %)
-Average: 10 sat/vbyte: 1,680 satoshis per participant (0.00168 %)
-High: 100 sat/vbyte: 16,800 satoshis per participant (0.0168 %)
-```
-
-Notice that for such a large amount, the miner, even in extreme cases only takes < 0.02% (not 2%!) from every Wasabi user.
-Let's observe for 0.1 BTC:
-
-```
-Minimum: 2 sat/vbyte: 336 satoshis per participant (0.00336 %)
-Average: 10 sat/vbyte: 1,680 satoshis per participant (0.0168 %)
-High: 100 sat/vbyte: 16,800 satoshis per participant (0.168 %)
-```
-
-Here, we already observe that in some extreme cases, the miner is earning almost 0.2%!
-Recall that Wasabi has a coordinator fee that is capped at 0.3%, so in these extreme cases the total fee paid by the user (you) is closer to 0.5%.
-Now we proceed to go to a smaller denomination, 0.01 BTC:
-
-```
-Minimum: 2 sat/vbyte: 336 satoshis per participant (0.0336 %)
-Average: 10 sat/vbyte: 1,680 satoshis per participant (0.168 %)
-High: 100 sat/vbyte: 16,800 satoshis per participant (1.68 %)
-```
-
-Notice that in the average case, users are regularly paying almost 0.5% for CoinJoining, and only 60% of this is going to the Wasabi Coordinator.
-In the extreme case, which simply cannot be overlooked as the network is volatile in terms of daily usage, the miner is earning 5.5x what Wasabi coordinator is charging, and the users are burdened with a 2% fee for CoinJoin!
-This is simply ridiculous!
-So there you have it! Here is the trade-off with CJ output denominations and why it currently makes sense for 0.1 BTC, but not for much lower.
+The minimum amount of bitcoin per coinjoin round is 0.00005000 BTC (5000 sats) + mining fees.
 :::
 
 :::details
-### What are the fees for the CoinJoin?
+### What are the fees for the coinjoin?
 
-You pay a coordinator fee of 0.003% * anonymity set.
-If the anonymity set of a coin is 50 then you pay 0.003% * 50 (=0.15%).
-If you set the target anonymity set to 53 then Wasabi will continue mixing until this is reached, so you may end up with an anonymity set of say 60, and you will pay 0.003% * 60 (=0.18%).
-
-There are also edge cases where you do not pay the full coordinator fee or where you pay more.
-For example if you're the smallest registrant to a round, you will never pay a coordinator fee.
-Also when you are remixing and you cannot pay the full coordinator fee with your input, then you only pay as much as you have.
-But if your input is larger than the minimum, and the change amount leftover would be too small, then that is also added to the coordinator fee.
-Currently the minimum change amount to be paid out is 0.3% of the base denomination (~0.1BTC.)
-
-It is also possible that you get more back from mixing than you put in.
-This happens when network fees go down between the start of the round and its end.
-In this case, the difference is split between the active outputs of the mix.
+Coinjoin fees are composed of coordination fees and mining (network) fees.
+Coins (UTXOs) with a value above 0.01 BTC pay 0.3% as a coordination fee + mining fees.
+Coins of 0.01 BTC or below don't pay coordination fees.
+Remixes, even after one transaction, also don't pay coordination fees. 
+Thus, a payment made with coinjoined funds allows the sender and the recipient to remix their coins without paying any coordination fees.
 :::
 
 :::details
@@ -839,7 +744,6 @@ Your Wasabi software has limited information on what the actually achieved anony
 With Wasabi we are trying to do lower estimations, rather than higher ones.
 :::
 
-
 :::details
 ### What are the equal denominations created in one mixing round?
 
@@ -856,13 +760,13 @@ For example, with a 0.7 BTC input you would expect the following outputs: ~0.1, 
 :::
 
 :::details
-### What is the best time to CoinJoin?
+### When's the best time to coinjoin?
 
-You can CoinJoin whenever you want.
-That said, the ideal way to CoinJoin would be when:
+You can coinjoin whenever you want.
+That said, the ideal way to coinjoin would be when:
 
 1. Mempool is clean.
-CoinJoins are unfairly cheap when the mempool is empty.
+Coinjoins are unfairly cheap when the mempool is empty.
 Remember to take a look at websites like [Johoe's Bitcoin Mempool Statistics](https://jochen-hoenicke.de/queue/#0,24h) or [mempool.space](https://mempool.space/tv) to see mempool statistics in real time.
 
 2. Your inputs are the same or little higher as the minimal denomination for the current round.
@@ -985,30 +889,6 @@ With Wasabi this can be achieved in a matter of hours (or minutes if there are a
 :::
 
 :::details
-### How many rounds should I CoinJoin?
-
-There is no simple answer for this, it depends on your individual threat model.
-If you want more anonymity you should CoinJoin multiple times.
-More rounds of CoinJoin is better for your privacy, but more expensive.
-:::
-
-:::details
-### Are coins automatically requeued after the round is complete?
-
-That depends on the anonymity set target.
-If the coins' anonymity sets are below the specified target after a round is complete, then the coins are requeued automatically for the next round.
-But when the anonymity sets are above the target after a round, then the coins will no longer be registered automatically.
-However, you can manually enqueue them for a new round at any time.
-:::
-
-:::details
-### How can I select UTXOs for CoinJoin?
-
-Go to [`CoinJoin`](/using-wasabi/CoinJoin.md) tab and select your desired UTXO by clicking the checkbox, then type in the password.
-It will be queued and registered for the next CoinJoin round.
-:::
-
-:::details
 ### How does my wallet communicate with the Wasabi coordinator server?
 
 Wasabi communicates in many ways to the coordinator server, and it is always over the Tor network.
@@ -1044,31 +924,38 @@ Summing up: the faster peers register in the CoinJoins, the faster the mixes are
 :::
 
 :::details
-### What is the coordinator address?
+### What is the address of the coordinator?
 
-The coordinator gets paid in every CoinJoin.
-Since January 31st, 2020, Wasabi is using a fresh unused coordinator address for every CoinJoin.
-
-Old static addresses:
-- `bc1qa24tsgchvuxsaccp8vrnkfd85hrcpafg20kmjw`
-- `bc1qs604c7jv6amk4cxqlnvuxv26hv3e48cds4m0ew`
+The coordinator possibly gets paid in every coinjoin.
+Wasabi is using a fresh unused coordinator address for every coinjoin round.
 :::
 
 :::details
-### What is the maximum number of coins that can be registered in a CoinJoin?
+### What is the maximum number of coins that can be registered in a coinjoin?
 
-Wasabi Wallet will register up to 7 coins in a CoinJoin.
-The sum of these 7 coins must be above the minimum registration amount.
+Wasabi Wallet's default client is configured to register a maximum of 10 inputs per round.
+However, as the coordinator cannot enforce this, a custom client could use a different configuration.
 :::
 
 :::details
-### Why did Wasabi not register some of my enqueued coins?
+### How many coins/outputs do I get from a coinjoin?
 
-Because they were not necessary for the CoinJoin.
-Wasabi Wallet will use only the necessary coins to CoinJoin (up to 7 coins).
-This is good for your privacy, and also saves you fees.
+Wasabi Wallet's default client is configured to register 1 up to 8 outputs per coinjoin round.
+However, as the coordinator cannot enforce this, a custom client could use a different configuration.
+:::
 
-Example: If you select 10 coins with total value of 0.2 btc but the sum of 4 coins is enough to CoinJoin, then Wasabi will use only those 4 coins.
+:::details
+### How long does it take to make my wallet 100% private?
+
+Depending on many factors, like the `Anonymity score target`, the `coinjoin strategy`, and the amount of bitcoin, it can take from a couple hours to multiple days.
+:::
+
+:::details
+### What does the `Red coin isolation` mean in the coinjoin settings?
+
+When the `Red coin isolation` is active, only a single coin with anonymity score 1 will be allowed into the coinjoin registration.
+To prevent possible coinjoin input heuristics from outside observers.
+The `Red coin isolation` is active by default when the `Maximize Privacy` profile is selected.
 :::
 
 ## Backup and Recovery
@@ -1083,7 +970,7 @@ Write down your recovery words!
 Wasabi uses [BIP 39: mnemonic code for generating deterministic keys](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) to enable easy backups of all private keys in the wallet.
 The mnemonic is displayed as 12 recovery words that are only shown once during the wallet generation.
 
-![Wasabi Wallet recovery words](/WalletRecoveryWords.png "Wasabi Wallet recovery words")
+![Wasabi Wallet recovery words](/AddWalletRecoveryWords.png "Wasabi Wallet recovery words")
 
 :::danger
 In order to restore a wallet, you need BOTH the mnemonic words AND the password!
@@ -1101,7 +988,7 @@ Please see [this great guide](https://github.com/6102bitcoin/FAQ/blob/master/see
 ### How do I back up my wallet file?
 
 Although you can back up your private keys with the mnemonic words and password, this is only a last resort recovery.
-If you want to also secure your address labels, the anonset and additional metadata, then you can do a digital backup.
+If you want to also secure your address labels, the anonscore and additional metadata, then you can do a digital backup.
 Simply copy the `WalletBackups` folder with the `wallet.json` files from your [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) onto suitable hardware, for example an encrypted USB stick.
 Note that this file has the encrypted private key (extracted from the extended private key), meaning that you only need the password to spend the bitcoin.
 This also contains the extended public key, the public keys, and the address labels, meaning that it completely links all the coins, both pre and post mix, with clear proof.
@@ -1138,6 +1025,16 @@ Yes, but in this case it is advisable to create a new wallet and back up the new
 
 The .json file contains the encrypted secret that requires the password to derive your private keys.
 That gives you access to your bitcoin.
+:::
+
+:::details
+### Can I verify the Recovery Words of an existing wallet?
+
+Yes.
+Go to `Wallet Settings` > `Verify Recovery Words`.
+Type in your recovery words in the correct order, click on `Verify` and it will show you if they are correct or not.
+
+![Wasabi Wallet Verify Recovery Words](/VerifyRecoveryWords.png "Wasabi Wallet Verify Recovery Words")
 :::
 
 ## Hardware Wallet
@@ -1228,11 +1125,11 @@ Read more [here](/using-wasabi/ColdWasabi.md#connecting-via-sd-card).
 :::
 
 :::details
-### Can I CoinJoin bitcoins on my hardware wallet?
+### Can I coinjoin bitcoins on my hardware wallet?
 
-No.
-A CoinJoin is a multi round interactive process, and requires fast signing by the participants, thus the keys need to be on a hot computer.
-Thus you have to send the bitcoins (in small portions > 0.1 BTC if needed) from your hardware wallet to a `hot` Wasabi Wallet, do the CoinJoin and then send them back to a new address on the Hardware wallet for cold-storage.
+No, that is currently not possible.
+A coinjoin is a multi round interactive process, and requires fast signing by the participants, thus the keys need to be on a hot computer.
+Thus currently you have to send the bitcoins from your hardware wallet to a `hot` Wasabi Wallet, do the coinjoin and then send them back to a new address on the Hardware wallet for cold-storage.
 Read more [here](/using-wasabi/ColdWasabi.md#cold-wasabi-protocol)
 :::
 
@@ -1261,21 +1158,10 @@ You should put a meaningful label when you generate a receive address in your ha
 :::
 
 :::details
-### How can I enter the PIN of my Trezor One?
+### Can I use Trezor One with Wasabi?
 
-You can enter the PIN to unlock your Trezor One the same way you use the Trezor browser wallet.
-As soon as you plug in the Trezor One in your laptop and open Wasabi, it will show 9 empty buttons, and on the Trezor One screen you will see 9 boxes with numbers in random order.
-Inside Wasabi, click on the boxes that correspond to your PIN in the order shown on the Trezor One screen.
-:::
-
-:::details
-### How can I type in the passphrase of my Trezor One?
-
-The Trezor One was a pioneer in offline signing devices, however it has one critical design flaw.
-It requires to use the hot computer to input some data, like the PIN or passphrase.
-This is contrary to the threat model of offline signing devices where the hot computer should not be trusted.
-Wasabi does support the empty button PIN input field, as this is secure to use on the hot wallet.
-However, Wasabi does not support to use the hot computer keyboard to type in the passphrase.
+No. Unfortunately, Trezor One is not supported by Wasabi Wallet.
+For the complete list of all the officially supported hardware wallets, click [here](https://github.com/zkSNACKs/WalletWasabi/blob/master/WalletWasabi.Documentation/WasabiCompatibility.md#officially-supported-hardware-wallets).
 :::
 
 :::details
@@ -1339,8 +1225,8 @@ There are three different ways of using your [Bitcoin full node with Wasabi](/us
 ::::details
 ### How can I turn off Tor?
 
-You can turn off Tor in the Settings.
-Note that this is a privacy concern, especially when you CoinJoin and when you broadcast a transaction.
+You can turn off `Network anonymization (Tor)` in the Settings.
+Note that this is a privacy concern, especially when you coinjoin and when you broadcast a transaction.
 In the first case, the coordinator would know the links between your inputs and outputs based on your IP address.
 In the second case, if you happen to broadcast a transaction of yours to a full node that is spying on you, it will know the link between your transaction and your IP address.
 
@@ -1350,27 +1236,22 @@ The setting to turn it off is only intended for debugging and trouble shooting.
 ::::
 
 :::details
-### How can I change the anonset target?
+### How can I change the anonymity score target?
+ 
+The anonscore target is a wallet specific setting which is determined by the `Coinjoin Strategy`, but can also be manually changed in the `Coinjoin Settings` dialog.
 
-In the `Settings` tab at the bottom you can change the three `PrivacyLevel` values of the desired anon set of the
-<img src="/ShieldYellow.png" alt="Wasabi Wallet yellow shield anonymity set" title="Wasabi Wallet yellow shield anonymity set" class="shield" />,
-<img src="/ShieldGreen.png" alt="Wasabi Wallet green shield anonymity set" title="Wasabi Wallet green shield anonymity set" class="shield" /> and
-<img src="/ShieldCheckmark.png" alt="Wasabi Wallet green checkmark shield anonymity set" title="Wasabi Wallet green checkmark shield anonymity set" class="shield" />
-shield button in the GUI.
-The `MixUntilAnonymitySet` is the last selected value from previous use.
+On the main view click the three dots on the top right corner after loading the wallet.
+Choose `Coinjoin Settings`, click `Change` (Coinjoin strategy), click `Customize`.
+Move the `Anonymity score target` slider to the desired value and click `Done`.
 
-Alternatively, open the config file from the wallet GUI, go to `File`>`Open`>`Config File` and in the last 4 lines you see:
+![Coinjoin Settings Anonymity score target](/AnonymityScoreTarget.png "Coinjoin Settings Anonymity score target")
+
+Alternatively, you can change the anonymity score target by editing the wallet file.
+Go to the SearchBar and click `Wallet Folder` and open the wallet json file and edit the `AnonScoreTarget` value.
 
 ```json
-"MixUntilAnonymitySet": 50,
-"PrivacyLevelSome": 2,
-"PrivacyLevelFine": 21,
-"PrivacyLevelStrong": 50
+"AnonScoreTarget": 5,
 ```
-
-Remember that you pay a fee proportional to the anonymity set gained.
-
-@[youtube](gWo2RAkIVrE)
 :::
 
 :::details
@@ -1381,7 +1262,8 @@ It can be a non-economical input, that is a UTXO that has less value than the fe
 A dust attack is actually about [forced address reuse](https://en.bitcoin.it/Privacy#Forced_address_reuse), the malicious actor sends very small amounts into old addresses and consolidation of these dust UTXOs can link several coins in a wallet cluster.
 
 Specifically in the context of Wasabi, with the dust threshold settings you can limit the value of coins shown in the GUI.
-When you set it to `0.0000 5000 bitcoin`, and when you receive a coin worth `0.0000 4000 bitcoin`, then this coin will not be shown in the coin list.
+Coins that you receive from other wallets which are *less than or equal to* the dust threshold in value are not shown.
+For example: When you set it to `0.0000 5000 BTC`, and when you receive a coin worth `0.0000 4000 BTC`, then this transaction and the coin in the coin list will not be shown.
 
 ![Wasabi Wallet Dust threshold settings](/SettingsDustThreshold.png "Wasabi Wallet Dust threshold settings")
 :::
@@ -1389,11 +1271,11 @@ When you set it to `0.0000 5000 bitcoin`, and when you receive a coin worth `0.0
 :::details
 ### Where can I find the logs?
 
-In the top left menu `File > Open` you can see there are several logs available.
-* The `Log File` shows you the general information about Wasabi Wallet.
-* The `Tor Log File` shows the Tor specific logs.
+In the SearchBar you can see there are several logs available.
+* The `Logs` shows the general log information about Wasabi Wallet.
+* The `Tor Logs` shows the Tor specific logs.
 
-![Wasabi Wallet open log file](/MenuFileOpen.png "Wasabi Wallet open log file")
+![Wasabi Wallet SearchBar Help&Support and Open](/SearchBarHelpSupportOpen.png "Wasabi Wallet SearchBar Help&Support & Open")
 
 Alternatively, you can find the logs inside your [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder).
 :::
@@ -1408,8 +1290,9 @@ You can read more about Discreet Mode [here](/using-wasabi/DiscreetMode.md).
 :::details
 ### How can I change to the white theme?
 
-You can change from the default dark to the white theme in the `.walletwasabi/client/Gui/Settings/` [data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder).
-Open the `GlobalSettings.json` file and change the line from `"theme": "Visual Studio Dark"` to `"theme": "Visual Studio Light"`.
+You can change from the default dark to the white theme by disabling `Dark Mode` in the Settings.
+Alternatively, you can switch to `Dark Mode` in the `.walletwasabi/client/UIConfig.json` [data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder).
+Open the `UIConfig.json` file and change the line from `"DarkModeEnabled": true` to `"DarkModeEnabled": false`.
 Save the file and restart Wasabi.
 Please note that Wasabi is designed for the dark theme, and some color schemes might not look beautiful in the white mode.
 
@@ -1474,12 +1357,6 @@ Read more: [What are the equal denominations created in one mixing round?](/FAQ/
 @[youtube](3Ezru07J674)
 :::
 
-:::details
-### Which coins can I select for CoinJoins?
-
-You can select any coin, as long as the total sum of up to 7 coins reaches the minimum to register (usually ~0.1 BTC).
-:::
-
 ::::details
 ### Why do my coins occasionally get banned from participating in CoinJoin?
 
@@ -1508,15 +1385,3 @@ You can send banned coins to anyone you want.
 This is a temporary ban on your coins in participation of the CoinJoin.
 :::
 ::::
-
-:::details
-### What does spent coin status mean?
-
-The `spent` coin status is a symptom of corrupted wallet state.
-This used to be the largest known bug in Wasabi Wallet.
-It affected about 1-5% of users.
-This issue was introduced to Wasabi with the [v1.1.4 release](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v1.1.4) in April, 2019 by adding a wallet cache, that resulted in 12 times faster wallet load.
-It was [thought to be fixed](https://reddit.com/r/WasabiWallet/comments/c2hco8/announcement_spent_coin_and_lost_unconfirmed/) in June by adding an autocorrection mechanism, but some users were still reporting this issue.
-
-It ultimately got fixed in [v1.1.10](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v1.1.10) by introducing an upgraded version of [BIP 158 block filters](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki) and changing the wallet cache architecture.
-:::

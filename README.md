@@ -65,7 +65,7 @@ Know that you do not need to understand/deal with VuePress at all in this case.
 ## Writing Conventions
 
 - Wasabi [capitalized]
-- CoinJoin [capitalized, one word]
+- coinjoin [not capitalized, one word]
 - WabiSabi [capitalized, one word]
 - Every sentence must start in a new line.
 - For a paragraph, add an `empty line` or `</br>` in the markdown.
@@ -75,7 +75,7 @@ Know that you do not need to understand/deal with VuePress at all in this case.
 Please consider this repository structure for hyperlinks, and use relative links whenever possible, for example:
 
 ```
-[What is a CoinJoin?](FAQ-Introduction.md#what-is-a-coinjoin)
+[What is a coinjoin?](FAQ-Introduction.md#what-is-a-coinjoin)
 ```
 
 ## Embedding images

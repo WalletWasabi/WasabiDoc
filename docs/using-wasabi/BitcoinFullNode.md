@@ -50,7 +50,7 @@ Only then is there full verification, and no trust in the zkSNACKs server.
 
 ## bitcoind within Wasabi
 
-Since version [1.1.11](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v1.1.11), Wasabi Wallet ships with [Bitcoin Knots](https://bitcoinknots.org).
+Wasabi Wallet ships with [Bitcoin Knots](https://bitcoinknots.org).
 This means that every Wasabi client has the necessary software to run a Bitcoin full node and define, verify, and enforce monetary consensus with bitcoind, but this verification is not yet used within Wasabi itself, it is a work in progress.
 By default, bitcoind is not started together with Wasabi.
 This must be activated explicitly in the settings because this is a bandwidth, CPU and storage-intensive program.
@@ -60,14 +60,14 @@ It is optional to keep bitcoind running even after Wasabi Wallet is shut down, s
 
 ## Using an already existing local Bitcoin full node
 
-If you have a Bitcoin full node already pre-installed on the same computer you use to run Wasabi Wallet, then since [version 1.1.1](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v1.1.1) Wasabi will use your node by default.
+If you have a Bitcoin full node already pre-installed on the same computer you use to run Wasabi Wallet, then Wasabi will use your node by default.
 You do not need to change anything in the settings, it should work plug and play.
 This is especially useful to save on bandwidth, as you have already downloaded and verified a block with your full node, so you don't need to download it again with Wasabi.
 
 ## Using an already existing remote Bitcoin full node
 
-If you have a Bitcoin full node already on a remote computer, then Wasabi Wallet can use this, too.
-In the settings specify the local IP address and port, or the Tor onion service of your full node.
+If you have a Bitcoin full node already on a remote computer, then Wasabi Wallet can use this too.
+In the Bitcoin settings, specify the local IP address and port or the Tor onion service of your full node.
 
 ![Wasabi Wallet remote Bitcoin P2P full node endpoint](/SettingsBitcoinCoreRemote.png "Wasabi Wallet remote Bitcoin P2P full node endpoint")
 

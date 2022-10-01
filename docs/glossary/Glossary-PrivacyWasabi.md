@@ -13,7 +13,7 @@
 The #twoweeks is a fun inside joke often used in the Wasabi documentation and, more generally, in the Internet community.
 In the case of Wasabi documentation, it usually indicates the arrival of a new function or update, to which the future date is still uncertain.
 
-Eg. "Lightning Network is coming to Wasabi in #twoweeks"
+E.g. "Lightning Network is coming to Wasabi in #twoweeks"
 :::
 
 :::details
@@ -29,6 +29,13 @@ Read more: [Address reuse](/why-wasabi/AddressReuse.md)
 The anonymity set is effectively the size of the group you are hiding in during a CoinJoin.
 It's the quantity of equal value outputs of one CoinJoin transaction.
 Read more: [What is the anonymity set?](/FAQ/FAQ-UseWasabi.md#what-is-the-anonymity-set)
+:::
+
+:::details
+### Backend
+
+[The part of a software system that is not usually visible or accessible to a user of that system](https://www.merriam-webster.com/dictionary/back%20end).
+In the case of Wasabi, the backend functions as the coinjoin coordinator and provides data to the [client](/glossary/Glossary-PrivacyWasabi.md#Client) (user) like block filters, exchange rate, and network estimations (mempool).
 :::
 
 :::details
@@ -69,6 +76,14 @@ Read more: [Change coins](/using-wasabi/ChangeCoins.md)
 
 A Chaumian CoinJoin is a special type of CoinJoin that utilizes Chaumian [or Schnorr] blind signatures to prevent the central coordinator from spying on the linkage between inputs and outputs.
 Read more: [Use of blind signatures in CoinJoin](/using-wasabi/CoinJoin.md#zerolink-protocol-step-by-step)
+:::
+
+:::details
+### Client
+
+[A software that allows a computer to function as a client in a network](https://www.merriam-webster.com/dictionary/client).
+In the case of Wasabi, the client is a Wasabi Wallet software version which a user has on his own local machine.
+The client can communicate with the [backend](/glossary/Glossary-PrivacyWasabi.md#Backend).
 :::
 
 :::details
@@ -222,6 +237,14 @@ Similarly, Tumbler is the synonym of 'Mixer'.
 :::
 
 :::details
+### WabiSabi
+
+WabiSabi is a protocol for constructing coinjoin transactions with the aid of a centralized coordinator.
+It utilizes keyed-verification anonymous credentials, homomorphic value commitments, and zero knowledge proofs to achieve privacy and flexibility.
+Read more: [WabiSabi](https://github.com/zkSNACKs/WabiSabi/releases/latest/download/WabiSabi.pdf)
+:::
+
+:::details
 ### Wallet fingerprinting
 
 A careful analyst sometimes deduces which software created a certain transaction, because many different wallet softwares don't always create transactions in exactly the same way.
@@ -246,6 +269,5 @@ Read more: [Wasabi's Solution](/why-wasabi/AddressReuse.html#wasabi-s-solution)
 
 ZeroLink is a framework to holistically design a privacy and fungibility setup for Bitcoin.
 This encompasses more than just a single CoinJoin transaction, but also includes network level privacy defense against third party spying.
-
 Read more: [ZeroLink: the Bitcoin Fungibility Framework](/using-wasabi/CoinJoin.md#zerolink-protocol-step-by-step)
 :::

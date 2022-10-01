@@ -149,6 +149,12 @@ It specifies the numeric value the hash of a block must not be above to be consi
 :::
 
 :::details
+### ECDSA
+
+ECDSA (Elliptic Curve Digital Signature Algorithm) is one of the digital signature algorithms used by Bitcoin to ensure that funds can only be spent by their rightful owners.
+:::
+
+:::details
 ### Fork
 
 Fork, also known as accidental fork, occurs when two or more blocks have the same block height, forking the blockchain.
@@ -429,6 +435,13 @@ Satoshi Nakamoto is the name used by the person or group of people who designed 
 As a part of the implementation, they also devised the first blockchain database.
 In the process they were the first to solve the double-spending problem for digital currency in a decentralized and self verifying nature.
 Their real identity remains unknown.
+:::
+
+:::details
+### Schnorr Digital Signature Scheme
+
+Schnorr Digital Signature Scheme is one of the digital signature algorithms used by Bitcoin to ensure that funds can only be spent by their rightful owners.
+Schnorr signatures and public keys can be aggregated, meaning that multiple parties with unique private keys can sign the same message, which can be verified in batches instead of individually.
 :::
 
 :::details

@@ -13,22 +13,26 @@
 
 ## How to send bitcoin step-by-step
 
-1. Select the coins you want to spend.
-2. Specify a destination address.
-3. Label the observers of this transaction.
-4. Specify the amount to send to the destination address, or press the `Max` button to send the whole selected amount.
-5. Select a mining fee.
-6. Enter the password.
-7. Click `Send Transaction`.
+1.  Click the Send button.
+1.  Specify a destination address.
+1.  Specify the amount of bitcoin to send to the destination address. Optionally, you can specify the dollar amount to send.
+1.  Label the recipient by entering the name of the person or company who you are sending to.
+1.  Preview Transaction.
+    -  Verify the amount, recipient, and the address.
+    -  Review the estimated time for confirmation and the transaction fees. Optionally, you can change the transaction fee or confirmation time.
+    -  Review suggestions to improve your privacy by clicking the shield icon in the top right corner. For example, you may want to increase or decrease your payment to avoid change.
+1.  Click `Confirm`.
+1. Type in your password, then click `Continue`.
 
-![Wasabi Wallet Send tab](/Send.png "Wasabi Wallet Send tab")
+![Wasabi Wallet Home Screen](/Send.png "Wasabi Wallet Home Screen")
 
 ## Coins
 
-A coin is an unspent transaction output (UTXO), a chunk of bitcoin which can be sent in a future transaction.
-In the Wasabi wallet `Send` tab, you see a list of all the coins you can spend.
-You can get a coin by first [receiving](/using-wasabi/Receive.md) them from someone else, for example by earning them or exchanging them for fiat currency.
-You can spend one or more coins by selecting them in the `Send` tab, if your payment amount is below the value of the selected coins, then you will receive a [change coin](/using-wasabi/ChangeCoins.md) back.
+A coin is an unspent transaction output (UTXO): a chunk of bitcoin that can be sent in a future transaction.
+Unlike fiat currencies which have fixed denominations, each UTXO contains a variable amount of bitcoin.
+You can get coins by first [receiving](/using-wasabi/Receive.md) them from someone else.
+When you want to send some bitcoin you simply enter the amount to send and the address after clicking the `Send` button.
+Wasabi Wallet does the job of automatically selecting the appropriate combination of coins to include as inputs in the transaction.
 
 ## Clusters
 
@@ -39,18 +43,24 @@ If you now send half of this coin to Bob, then the cluster of your change coin i
 The goal is to know the observers who know about your coins and try to reduce their number for each coin.
 
 ## Anonymity Set
-
-When you send a bitcoin in a regular transaction with one input and two outputs, then your change coin can be linked to this one input.
+A typical bitcoin transaction will contain one input and two outputs - one of the outputs is the coin you are sending and the other output is the change coin that goes back to your wallet.
+Your change coin can be linked to this one input.
 There is a 1 in 1 chance to find this link and no plausible deniability.
-Thus, Wasabi shows this coin with an anonymity set of `1` <img src="/ShieldRed.png" alt="Wasabi Wallet red shield anonymity set" title="Wasabi Wallet red shield anonymity set" class="shield" />.
+Thus, Wasabi denotes this coin's anonymity set as `1`.
 
-In a Wasabi [CoinJoin](/using-wasabi/CoinJoin.md), many peers register coins in the input of the transaction, and in the output, there are several equal value coins, for example, 100 coins worth exactly 0.1 bitcoin.
-This means that when looking at one of these CoinJoin outputs, there is a 1 in 100 chance to find the corresponding input.
-Thus the higher the anonymity set, the more your post-mix coin is delinked from the pre-mix history.
-Wasabi shows you three levels of anonymity sets: <img src="/ShieldYellow.png" alt="Wasabi Wallet yellow shield anonymity set" title="Wasabi Wallet yellow shield anonymity set" class="shield" />, <img src="/ShieldGreen.png" alt="Wasabi Wallet green shield anonymity set" title="Wasabi Wallet green shield anonymity set" class="shield" /> and <img src="/ShieldCheckmark.png" alt="Wasabi Wallet green checkmark shield anonymity set" title="Wasabi Wallet green checkmark shield anonymity set" class="shield" />.
-By default, they have an anonymity set of `2`, `21` and `50`, however, this can be [changed in the settings](/FAQ/FAQ-UseWasabi.md#how-can-i-change-the-anonset-target).
+In a Wasabi [coinjoin](/using-wasabi/CoinJoin.md), many peers register coins in the input of the transaction, and in the output there are several equal value coins.
+For example, the output may contain 20 coins worth exactly 0.3 bitcoin.
+This means that when looking at one of these coinjoin outputs, there is a 1 in 20 chance to find the corresponding input: thus an anonymity set of 20.
+Therefore, the higher the anonymity set, the more your post-coinjoin coin is delinked from the pre-coinjoin history.
 
-![Wasabi Wallet anonymity set](/SendAnonset.png "Wasabi Wallet anonymity set")
+There are three coinjoin strategies to choose from in Wasabi Wallet which effect the target anonymity score for your coins.
+These three strategies are `Minimize Cost`, `Maximize Speed`, and `Maximize Privacy`.
+Each of these strategies come with different trade-offs.
+
+Alternatively, custom coinjoin settings can be configured.
+
+
+![Coinjoin Strategy](/CoinjoinStrategy.png "Coinjoin Strategy")
 
 ## Receiving Address
 
@@ -62,11 +72,11 @@ Wasabi will calculate the checksum and notify you if the provided address is wro
 
 ## Observers
 
-Similar to the `Receive` tab, you must [label](/using-wasabi/Receive.md#the-importance-of-labeling) every new address with the observers who know that this is your address.
-In the `Send` tab an address is automatically generated to receive the change amount.
-The observer of a sending transaction is, of course, the receiver of it, as well as any other third party that will find out about it, for example, a payment processor or an exchange.
+It is a requirement to provide one or more [labels](/using-wasabi/Receive.md#the-importance-of-labeling) each time you initiate a transfer of bitcoin.
+These labels should be the observers of the transaction.
+An observer of a sending transaction is, of course, the receiver, as well as any other third party that knows that you are the sender of this transaction.
+For example, you should include as a label the payment processor or the bitcoin exchange if you use their services.
 This metadata will be used to build an accurate cluster of observers who know about your coins.
-A label is not required (except in edge cases) when you send an entire coin, as there will be no change left.
 
 ## Amount
 
@@ -94,8 +104,6 @@ By clicking on the fee in the brackets below the slider, you can cycle through d
 ![Wasabi Wallet custom mining fee](/SendFeeSlider.png "Wasabi Wallet custom mining fee")
 
 In some cases, there is very little demand for block space, and then Wasabi will set the minimum fee of `1 sat/vbyte`.
-
-![Wasabi Wallet minimum mining fee](/SendNoFee.png "Wasabi Wallet minimum mining fee")
 
 :::tip High-priority transaction fees
 
