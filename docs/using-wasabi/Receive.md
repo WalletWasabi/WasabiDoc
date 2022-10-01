@@ -16,7 +16,7 @@
 1. Start Wasabi and open the wallet that you want to receive coins into.
 2. Click the `Receive` button in the main view's top right corner.
 3. Type in the name of the entities who know about this address.
-Optionally you can click on the suggested labels, in case you've used them before.
+If you have already used a label before, simply choose it from the suggested labels.
 
 ![Set known by in Wasabi Wallet](/ReceiveLabelingRequired.png "Set known by in Wasabi Wallet")
 
