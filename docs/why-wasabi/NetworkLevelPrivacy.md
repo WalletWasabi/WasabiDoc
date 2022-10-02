@@ -47,8 +47,7 @@ Then, Wasabi pulls the verified blocks and queries the mempool from the full nod
 
 :::tip Wasabi ships with Bitcoin Knots!
 Wasabi has a [partial Bitcoin Knots integration](/using-wasabi/BitcoinFullNode.md).
-This means that it is possible (but not mandatory) to start Bitcoin Knots during the launch of Wasabi.
-Without having to install or configure anything.
+This means that it is possible (but not mandatory) to start Bitcoin Knots during the launch of Wasabi, without having to install or configure anything manually.
 :::
 
 However, even if no full node is installed, Wasabi has a light client mode based on [BIP 158 block filters](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki).
@@ -133,7 +132,7 @@ Wasabi broadcast transactions to only one peer over Tor, and immediately after t
 
 :::tip
 Wasabi has a partial Bitcoin Knots integration.
-This means that it is possible (but not mandatory) to start Bitcoin Knots during the launch of Wasabi, without having to install or configure anything.
+This means that it is possible (but not mandatory) to start Bitcoin Knots during the launch of Wasabi, without having to install or configure anything manually.
 :::
 
 #### Private UTXO retrieval
