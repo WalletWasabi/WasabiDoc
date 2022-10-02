@@ -513,6 +513,7 @@ However, you can use the [RPC server `send` call](/using-wasabi/RPC.md#send) and
 ### Can I set a custom change address?
 
 No. That is currently not possible.
+:::
 
 :::details
 ### How do I set the payment amount?
