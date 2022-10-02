@@ -25,7 +25,7 @@ Without knowledge of the password, you CANNOT spend your bitcoin!!
 :::
 
 Make sure that you properly back up and write down this password.
-Please also read and agree to the [terms and conditions, the privacy policy and the legal statement](https://github.com/zkSNACKs/WalletWasabi/blob/master/WalletWasabi/Legal/Assets/LegalDocuments.txt).
+Please also read and agree to the [terms and conditions, the privacy policy and the legal statement](https://github.com/zkSNACKs/WalletWasabi/blob/master/WalletWasabi/Legal/Assets/LegalDocumentsWw2.txt).
 Now you can continue with clicking `Generate`.
 
 ![Generate new wallet in Wasabi](/WalletManagerGenerateWallet.png "Generate new wallet in Wasabi")
