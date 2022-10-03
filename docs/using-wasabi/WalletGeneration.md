@@ -20,6 +20,10 @@ So, with several wallets, you can conveniently manage your bitcoin for different
 1. Launch Wasabi Wallet.
 The very first time you run the software the `Add Wallet` dialog will be open automatically, but you can also access it by clicking on `Add Wallet` in the NavBar or Searchbar.
 
+![Add Wallet Button](/AddWalletButton.png "Add Wallet Button")
+
+![SearchBar General & Settings ](/SearchBarGeneral&Settings.png "SearchBar General & Settings")
+
 2. Click `Create a new wallet` to generate a new wallet.
 
 ![Add a Bitcoin wallet with Wasabi](/AddWallet.png "Add a Bitcoin wallet with Wasabi")
