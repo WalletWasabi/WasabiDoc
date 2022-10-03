@@ -62,7 +62,7 @@ Know that you do not need to understand/deal with VuePress at all in this case.
 - coinjoin [not capitalized, one word]
 - WabiSabi [capitalized, one word]
 - Every sentence must start in a new line.
-- For a paragraph, add an `empty line` or `</br>` in the markdown.
+- For a paragraph, add an `empty line` or `<br>` in the markdown.
 
 ## Reference files
 
