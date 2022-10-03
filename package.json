@@ -1,23 +1,43 @@
 {
-  "name": "wasabinewdoc",
-  "version": "1.0.0",
-  "main": "index.js",
-  "type": "module",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+  "name": "wasabidoc",
+  "version": "0.1.0",
+  "description": "[Wasabi](https://wasabiwallet.io) is an open-source, non-custodial, privacy focused Bitcoin wallet for desktop. It implements a trustless privacy technique, called [Chaumian CoinJoin](https://github.com/nopara73/ZeroLink/).",
+  "config": {
+    "dist": "docs/.vuepress/dist"
   },
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "scripts": {
+    "prestart": "rm -rf $npm_package_config_dist",
+    "start": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "deploy": "echo 'docs.wasabiwallet.io' > $npm_package_config_dist/CNAME && gh-pages -d $npm_package_config_dist -m 'deploy'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zkSNACKs/WasabiDoc.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zkSNACKs/WasabiDoc/issues"
+  },
+  "homepage": "https://github.com/zkSNACKs/WasabiDoc#readme",
   "devDependencies": {
-    "@vuepress/plugin-docsearch": "^2.0.0-beta.49",
-    "@vuepress/plugin-register-components": "^2.0.0-beta.51",
-    "@vuepress/plugin-search": "^2.0.0-beta.51",
-    "vuepress": "^2.0.0-beta.49"
+    "@vuepress/plugin-back-to-top": "1.9.7",
+    "gh-pages": "4.0.0",
+    "markdown-it-custom-block": "0.1.2",
+    "vuepress": "1.9.7"
+  },
+  "engines": {
+    "node": ">=10.16"
   },
   "dependencies": {
-    "markdown-it-custom-block": "^0.1.2"
+    "ansi-regex": "^6.0.1",
+    "follow-redirects": "^1.15.2",
+    "glob-parent": "^6.0.2",
+    "got": "^12.5.0",
+    "highlight.js": "^11.6.0",
+    "markdown-it": "^13.0.1",
+    "node-forge": "^1.3.1",
+    "nth-check": "^2.1.1",
+    "postcss": "^8.4.16"
   }
 }
