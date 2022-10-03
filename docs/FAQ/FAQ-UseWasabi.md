@@ -213,10 +213,6 @@ So according to the image, this wallet has 46 coins of which 21 are private (gre
 :::details
 ### How can I display the fee in sats?
 
-The fee you pay to get confirmation on the Bitcoin blockchain is denominated in satoshis per virtual byte.
-This means that the larger your transaction size, meaning the number of inputs and outputs, the more total bitcoin you have to pay for confirmation.
-If you want faster confirmation, then you have to pay proportionally more sats per vByte.
-
 By default, the wallet displays all fees in BTC (mining fees, coinjoin fees etc.).
 This can be changed to sats in the `Settings`.
 Go to `Settings` -> `General` -> `Fee display unit` and change it to `sats`.
