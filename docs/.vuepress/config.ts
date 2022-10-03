@@ -23,9 +23,6 @@ export default {
         description: "An archive of knowledge about Wasabi Wallet, an open-source, non-custodial and privacy-focused Bitcoin wallet for desktop.",
         logo: "/Logo_without_text_dark.png",
         logoDark: "/Logo_without_text.png",
-        searchPlaceholder: 'Search the docs...',
-        displayAllHeaders: false,
-        sidebarDepth: 0,
         repo: "zkSNACKs/WasabiDoc",
         docsDir: "docs",
         editLinks: true,
@@ -92,7 +89,7 @@ export default {
         }],
         sidebar: {
             "/why-wasabi/": [{
-                title: "Why Privacy",
+                text: "Why Privacy",
                 collapsable: false,
                 sidebarDepth: 2,
                 children: [
@@ -101,7 +98,7 @@ export default {
                     "/why-wasabi/LegalConcern.md"
                 ]
             }, {
-                title: "Privacy in Bitcoin",
+                text: "Privacy in Bitcoin",
                 collapsable: false,
                 sidebarDepth: 2,
                 children: [
@@ -114,7 +111,7 @@ export default {
             }],
 
             "/using-wasabi/": [{
-                title: "Introducing Wasabi",
+                text: "Introducing Wasabi",
                 collapsable: false,
                 sidebarDepth: 2,
                 children: [
@@ -122,7 +119,7 @@ export default {
                     "/using-wasabi/10Commandments.md"
                 ]
             }, {
-                title: "Installing Wasabi",
+                text: "Installing Wasabi",
                 collapsable: false,
                 sidebarDepth: 2,
                 children: [
@@ -130,7 +127,7 @@ export default {
                     "/using-wasabi/BuildSource.md"
                 ]
             }, {
-                title: "Using Wasabi",
+                text: "Using Wasabi",
                 collapsable: false,
                 sidebarDepth: 2,
                 children: [
@@ -143,7 +140,7 @@ export default {
                     "/using-wasabi/BitcoinFullNode.md"
                 ]
             }, {
-                title: "Best Practices",
+                text: "Best Practices",
                 collapsable: false,
                 sidebarDepth: 2,
                 children: [
@@ -152,7 +149,7 @@ export default {
                     "/using-wasabi/ChangeCoins.md"
                 ]
             }, {
-                title: "Restoring Wasabi",
+                text: "Restoring Wasabi",
                 collapsable: false,
                 sidebarDepth: 2,
                 children: [
@@ -161,7 +158,7 @@ export default {
                     "/using-wasabi/PasswordFinder.md"
                 ]
             }, {
-                title: "Advanced Installing Wasabi",
+                text: "Advanced Installing Wasabi",
                 collapsable: false,
                 sidebarDepth: 2,
                 children: [
@@ -170,50 +167,38 @@ export default {
                     "/using-wasabi/WasabiSetupWhonix.md"
                 ]
             }, {
-                title: "Advanced Using Wasabi",
+                text: "Advanced Using Wasabi",
                 collapsable: false,
                 sidebarDepth: 2,
                 children: [
                     "/using-wasabi/Daemon.md",
                     "/using-wasabi/RPC.md",
-                    "/using-wasabi/PrivacyMode.md",
                     "/using-wasabi/PayJoin.md",
                     "/using-wasabi/Testnet.md",
-                    "/using-wasabi/LockScreen.md",
-                    "/using-wasabi/BIPs.md",
-                    "/using-wasabi/IndustryStandards.md"
+                    "/using-wasabi/BIPs.md"
                 ]
             }],
 
             "/building-wasabi/": [{
-                title: "Contributing to Wasabi",
+                text: "Contributing to Wasabi",
                 collapsable: false,
                 sidebarDepth: 2,
                 children: [
                     "/building-wasabi/TechnicalOverview.md",
-                    "/building-wasabi/ContributionChecklist.md",
-                    "/building-wasabi/ContributionGame.md"
+                    "/building-wasabi/ContributionChecklist.md"
                 ]
             }, {
-                title: "Advanced",
+                text: "Advanced",
                 collapsable: false,
                 sidebarDepth: 2,
                 children: [
                     "/building-wasabi/Security.md",
-                    "/building-wasabi/LICENSE.md",
-                    "/building-wasabi/Credits.md"
-                ]
-            }, {
-                title: "Research",
-                collapsable: false,
-                sidebarDepth: 2,
-                children: [
-                    "/building-wasabi/WasabiResearchClub.md"
+                    "/building-wasabi/LICENSE.md"
                 ]
             }],
 
             "/FAQ/": [{
-                title: "Frequently Asked Questions",
+                text: "Frequently Asked Questions",
                 collapsable: false,
                 sidebarDepth: 2,
                 children: [
@@ -226,7 +211,7 @@ export default {
             }],
 
             "/glossary/": [{
-                title: "Glossary",
+                text: "Glossary",
                 collapsable: false,
                 sidebarDepth: 2,
                 children: [

@@ -1,6 +1,15 @@
 :root {
   --c-brand: #77C600 !important;
   --search-input-width: 10rem !important;
+  --c-danger: #cc0000 !important;
+  --c-danger-bg: #ffe0e0 !important;
+  --c-danger-text: #660000 !important;
+  --c-danger-text-accent:#2c3e50 !important;
+  --c-tip: var(--c-brand) !important;
+  --c-warning: #e7c000 !important;
+  --c-warning-bg: #fffae3 !important;
+  --c-warning-text: #746000 !important;
+  --c-text-light: #fff !important;
 }
 html {
 	height: 100vh;
@@ -9,15 +18,24 @@ body {
 	padding-bottom: 40px;
 	min-height: 100vh;
 }
+.home .feature h2 {
+	font-weight: bold;
+}
 html.dark {
 	body {
 	  background: linear-gradient(160deg, rgba(73, 88, 107, 1) 0%, rgba(0, 16, 31, 1) 55%) !important;
+	  --c-text: #fff;
 	}
-
 	.sidebar {
 		background-color: transparent;
 	}
 	.navbar {
 		background-color: #00101f;
 	}
+}
+html:not(.dark){
+	
+}
+.custom-container {
+	padding-bottom: 20px !important;
 }
