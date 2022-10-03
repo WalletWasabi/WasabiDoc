@@ -22,9 +22,10 @@
   "homepage": "https://github.com/zkSNACKs/WasabiDoc#readme",
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "1.9.7",
+    "@vuepress/plugin-search": "^2.0.0-beta.51",
     "gh-pages": "4.0.0",
     "markdown-it-custom-block": "0.1.2",
-    "vuepress": "1.9.7"
+    "vuepress": "^2.0.0-beta.49"
   },
   "engines": {
     "node": ">=10.16"
