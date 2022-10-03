@@ -1,7 +1,8 @@
 ---
 home: true
 heroText: Wasabi Documentation
-heroImage: /Logo_without_text.png
+heroImage: /Logo_without_text_dark.png
+heroImageDark: /Logo_without_text.png
 actionText: Reclaim Your Privacy →
 actionLink: /using-wasabi/ELI5.md
 features:
