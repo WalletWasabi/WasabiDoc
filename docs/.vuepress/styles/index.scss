@@ -1,0 +1,23 @@
+:root {
+  --c-brand: #77C600 !important;
+  --search-input-width: 10rem !important;
+}
+html {
+	height: 100vh;
+}
+body {
+	padding-bottom: 40px;
+	min-height: 100vh;
+}
+html.dark {
+	body {
+	  background: linear-gradient(160deg, rgba(73, 88, 107, 1) 0%, rgba(0, 16, 31, 1) 55%) !important;
+	}
+
+	.sidebar {
+		background-color: transparent;
+	}
+	.navbar {
+		background-color: #00101f;
+	}
+}

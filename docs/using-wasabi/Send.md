@@ -124,6 +124,18 @@ If you have a transaction that is high-priority and you really want it to be con
 For a deeper dive into the fee estimation process, [this article](https://bitcointechtalk.com/an-introduction-to-bitcoin-core-fee-estimation-27920880ad0) is worth reading.
 :::
 
+## Custom Change Address
+
+In the `Settings` tab you can activate the option to set a custom change address.
+
+![Wasabi Wallet custom change address setting](/SettingsCustomChange.png "Wasabi Wallet custom change address setting")
+
+This will show a second address field in the `Send` tab, where you can paste an address that will be used for the change output of the transaction.
+The specified sending amount will go to the first address, the value of `input coins - payment amount - fee` will go to this change address.
+If no address is pasted in this field, then it will pull an address from this same wallet, the same way as the default.
+
+![Set Custom Change address in Wasabi Wallet](/SendCustomChange.png "Set Custom Change address in Wasabi Wallet")
+
 ## Password
 
 In order to spend a coin, the transaction must be signed by the private key corresponding to that coin.

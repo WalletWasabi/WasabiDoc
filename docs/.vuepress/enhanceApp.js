@@ -59,4 +59,12 @@ export default ({ router }) => {
       })
     })
   }
+  router.addRoutes([
+    { path: '/building-wasabi/HardwareWalletTestingGuide.html', redirect: '/' },
+    { path: '/building-wasabi/FalsePositive.html', redirect: '/' },
+    { path: '/why-wasabi/LegalConcern.html#:~:text=be%20the%20case.-,Overview,funds%20with%20an%20obfuscated%20history.', redirect: '/' },
+    { path: '/building-wasabi/ToDo.html', redirect: '/' },
+    { path: '/building-wasabi/Dojo.html', redirect: '/' },
+    { path: '/why-wasabi/BitcoinPrivacy.html', redirect: '/' }
+  ])
 }

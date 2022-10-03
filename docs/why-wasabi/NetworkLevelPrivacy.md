@@ -46,8 +46,9 @@ It is also possible to connect Wasabi to a remote full node on another computer 
 Then, Wasabi pulls the verified blocks and queries the mempool from the full node.
 
 :::tip Wasabi ships with Bitcoin Knots!
-Wasabi has a [partial Bitcoin Knots integration](/using-wasabi/BitcoinFullNode.md).
-This means that it is possible (but not mandatory) to start Bitcoin Knots during the launch of Wasabi, without having to install or configure anything manually.
+Since v1.1.11 Wasabi has [partial Bitcoin Knots integration](/using-wasabi/BitcoinFullNode.md).
+This means that it is possible (but not mandatory) to start Bitcoin Knots during the launch of Wasabi.
+Without having to install or configure anything.
 :::
 
 However, even if no full node is installed, Wasabi has a light client mode based on [BIP 158 block filters](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki).
@@ -131,8 +132,8 @@ Wasabi broadcast transactions to only one peer over Tor, and immediately after t
 ### Wasabi Wallet + full node
 
 :::tip
-Wasabi has a partial Bitcoin Knots integration.
-This means that it is possible (but not mandatory) to start Bitcoin Knots during the launch of Wasabi, without having to install or configure anything manually.
+Since version [1.1.11](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v1.1.11), Wasabi has partial Bitcoin Knots integration.
+This means that it is possible (but not mandatory) to start Bitcoin Knots during the launch of Wasabi, without having to install or configure anything.
 :::
 
 #### Private UTXO retrieval

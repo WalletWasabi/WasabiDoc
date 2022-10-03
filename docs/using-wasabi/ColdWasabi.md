@@ -40,7 +40,7 @@ Methods of cold storage include keeping private keys on a:
 ## Hardware Wallet with Wasabi
 
 You can use Wasabi Wallet with almost any hardware wallet out there because Wasabi utilizes [Bitcoin Core Hardware Wallet Interface [HWI]](https://github.com/bitcoin-core/hwi).
-The setup is thoroughly tested for [Trezor model T](https://trezor.io), [Ledger Nano S](https://ledger.com), and [Coldcard](https://coldcard.com).
+The setup is thoroughly tested for [Trezor model One and T](https://trezor.io), [Ledger Nano S](https://ledger.com), and [Coldcard](https://coldcard.com).
 
 ### Connecting via USB
 

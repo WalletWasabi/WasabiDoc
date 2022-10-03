@@ -25,7 +25,7 @@ Without knowledge of the password, you CANNOT spend your bitcoin!!
 :::
 
 Make sure that you properly back up and write down this password.
-Please also read and agree to the [terms and conditions, the privacy policy and the legal statement](https://github.com/zkSNACKs/WalletWasabi/blob/master/WalletWasabi/Legal/Assets/LegalDocumentsWw2.txt).
+Please also read and agree to the [terms and conditions, the privacy policy and the legal statement](https://github.com/zkSNACKs/WalletWasabi/blob/master/WalletWasabi/Legal/Assets/LegalDocuments.txt).
 Now you can continue with clicking `Generate`.
 
 ![Generate new wallet in Wasabi](/WalletManagerGenerateWallet.png "Generate new wallet in Wasabi")
@@ -149,7 +149,7 @@ Moreover, our trustless software architecture prevents us from gathering this in
 - A transaction fee is only charged by the service provider for CoinJoin transactions.
 - We only provide written support, and NEVER ask for recovery words, passwords or similar security critical information.
 
-Read the whole document of [terms and conditions, privacy policy, and legal statement here](https://github.com/zkSNACKs/WalletWasabi/blob/master/WalletWasabi/Legal/Assets/LegalDocumentsWw2.txt)
+Read the whole document of [terms and conditions, privacy policy, and legal statement here](https://github.com/zkSNACKs/WalletWasabi/blob/master/WalletWasabi/Legal/Assets/LegalDocuments.txt)
 :::
 
 :::details
@@ -510,9 +510,16 @@ However, you can use the [RPC server `send` call](/using-wasabi/RPC.md#send) and
 :::
 
 :::details
-### Can I set a custom change address?
+### How can I set a custom change address?
 
-No. That is currently not possible.
+You can activate the option to set a custom change address in the `Settings` tab.
+
+![Wasabi Wallet custom change address setting](/SettingsCustomChange.png "Wasabi Wallet custom change address setting")
+
+Then simply paste the address you want to send the change to in the `Send` tab GUI.
+Read more [here](/using-wasabi/Send.md#custom-change-address).
+
+![Set Custom Change address in Wasabi Wallet](/SendCustomChange.png "Set Custom Change address in Wasabi Wallet")
 :::
 
 :::details
@@ -808,6 +815,14 @@ For this reason, whenever possible it is recommended to CoinJoin with exactly th
 
 3. Mix at different times.
 To avoid traffic detection and behavioral analysis, you should CoinJoin at different times (days and hours).
+:::
+
+:::details
+### Why are the denominations such an odd number?
+
+The output value changes each round to ensure that you can enqueue a coin and have it remix (mix over and over again - increasing the anonymity set, improving privacy).
+As a result the round mixing amount will often be a specific number which generally decreases as the rounds proceed, with a reset once a lower bound is reached.
+The range is roughly between 0.105 and 0.095 bitcoin, and it is reset manually by the developers.
 :::
 
 :::details
