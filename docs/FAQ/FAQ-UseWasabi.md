@@ -977,6 +977,18 @@ Depending on many factors, like the `Anonymity score target`, the `coinjoin stra
 :::
 
 :::details
+### What does the `Auto-start coinjoin threshold` mean in the coinjoin settings?
+
+Coinjoin will not automatically start if the non-private wallet balance is less than this amount. A use case is that it might not be economical to coinjoin with this non-private ammount (coinjoin fee amount compared to coinjoin amount).
+
+For example, if the user has a non-private balance of 0.005 BTC and the `Auto-start coinjoin threshold` is 0.01 BTC, it will have to manually press Play to start coinjoining.
+The default Auto-start coinjoin threshold is 0.01 BTC.
+
+![Auto-start coinjoin threshold](/AutoStartCoinjoinThreshold.png "Auto-start coinjoin threshold")
+
+:::
+
+:::details
 ### What does the `Red coin isolation` mean in the coinjoin settings?
 
 When the `Red coin isolation` is active, only a single coin with anonymity score 1 will be allowed into the coinjoin registration.
