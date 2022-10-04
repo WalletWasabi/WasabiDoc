@@ -985,7 +985,6 @@ For example, if the user has a non-private balance of 0.005 BTC and the `Auto-st
 The default Auto-start coinjoin threshold is 0.01 BTC.
 
 ![Auto-start coinjoin threshold](/AutoStartCoinjoinThreshold.png "Auto-start coinjoin threshold")
-
 :::
 
 :::details
