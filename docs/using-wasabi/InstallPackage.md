@@ -120,7 +120,8 @@ Among others, here is where your wallet files and your logs reside.
 
 ## macOS
 
-1. [Download](https://wasabiwallet.io/#download) the `.dmg` package of Wasabi ${currentVersion}.
+1. [Download](https://wasabiwallet.io/#download) the `.dmg` package of Wasabi ${currentVersion} for your machine's processor.
+If you're not sure what processor your device has, [check it](https://www.howtogeek.com/706226/how-to-check-if-your-mac-is-using-an-intel-or-apple-silicon-processor/).
 
 ![Download Wasabi Wallet for macOS](/DownloadMac.png "Download Wasabi Wallet for macOS")
 
