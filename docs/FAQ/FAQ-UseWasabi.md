@@ -1223,6 +1223,14 @@ The check mark indicates that the transaction is confirmed in the longest proof-
 :::
 
 :::details
+### Can I sort the history items?
+
+Yes, the history items can be sorted by clicking on the column title:
+
+![Sort Date Column](/HistorySortDateColumn.png "Sort Date Column")
+:::
+
+:::details
 ### Can I export a list of transactions?
 
 There is currently no convenient way to export a list with transaction details inside the GUI.
