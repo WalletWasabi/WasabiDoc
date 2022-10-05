@@ -35,10 +35,10 @@ See [this chapter](/using-wasabi/InstallPackage.md) for a detailed step-by-step 
 
 When you start Wasabi for the first time, the tab to generate a new wallet will be open.
 You can set a unique name for the wallet so that you remember what it is for.
-Choose a very secure password, as this encrypts the secrets, and should not be guessed by others.
-You will always need this password in order to spend your bitcoins, so take great care to back it up properly.
 In the next step, Wasabi will show your 12 recovery words.
-These must also be carefully backed up, in the correct order, as they are needed to recover your wallet (together with the password) on another computer or in another wallet software.
+These must be carefully backed up, in the correct order, as they are needed to recover your wallet (together with the password) on another computer or in another wallet software.
+Next, choose a very secure password, as this encrypts the secrets, and should not be guessed by others.
+You will always need this password in order to spend your bitcoins, so take great care to back it up properly.
 Make sure you store the backup of your recovery words in a different location than the backup of your password.
 
 :::warning Backup both!
