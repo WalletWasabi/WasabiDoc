@@ -87,7 +87,7 @@ export default {
             text: "Glossary",
             link: "/glossary/"
         }],
-        sidebar: {
+            sidebar:{
             "/why-wasabi/": [{
                 text: "Why Privacy",
                 collapsable: false,
@@ -232,15 +232,15 @@ export default {
             extendMarkdown(md) {
                 md.use(customBlock, {
                     youtube(arg) {
-                            const [id, start] = arg.split(',')
-                            const path = start ? `${id}?start=${start}` : `${id}?`
-                            return youtubeEmbed(id, path)
-                        },
-                        youtubePlaylist(arg) {
-                            const [id, video] = arg.split(',')
-                            const path = `${video || ''}?listType=playlist&list=${id}`
-                            return youtubeEmbed(video || id, path)
-                        }
+                        const [id, start] = arg.split(',')
+                        const path = start ? `${id}?start=${start}` : `${id}?`
+                        return youtubeEmbed(id, path)
+                    },
+                    youtubePlaylist(arg) {
+                        const [id, video] = arg.split(',')
+                        const path = `${video || ''}?listType=playlist&list=${id}`
+                        return youtubeEmbed(video || id, path)
+                    }
                 })
             }
         }

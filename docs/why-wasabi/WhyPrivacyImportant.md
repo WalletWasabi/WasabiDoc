@@ -45,7 +45,7 @@ Whether that be having dinner at the table, watching a movie with your kids, or 
 None of these things are illegal by any means but even knowing this, we still keep the curtains and blinds on our windows.
 We clearly have this strong desire for privacy when it comes to our personal life and the public. - Joshua in [The Crypto Paper](https://github.com/cryptoseb/CryptoPaper#let-me-explain-further)
 
-## Read also:
+## Read also
 - [Nothing to hide argument (Wikipedia)](https://en.wikipedia.org/wiki/Nothing_to_hide_argument)
 - [How do you counter the "I have nothing to hide?" argument? (reddit.com)](https://www.reddit.com/r/privacy/comments/3hynvp/how_do_you_counter_the_i_have_nothing_to_hide/)
 - ['I've Got Nothing to Hide' and Other Misunderstandings of Privacy (Daniel J. Solove - San Diego Law Review)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=998565)

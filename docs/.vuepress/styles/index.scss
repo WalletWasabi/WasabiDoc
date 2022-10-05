@@ -10,6 +10,8 @@
   --c-warning-bg: #fffae3 !important;
   --c-warning-text: #746000 !important;
   --c-text-light: #fff !important;
+  --c-border-dark: var(--c-brand) !important;
+  --c-text-quote: var(--c-text) !important;
 }
 html {
 	height: 100vh;
@@ -21,10 +23,22 @@ body {
 .home .feature h2 {
 	font-weight: bold;
 }
+.navbar-items a {
+	font-weight:bold;
+	font-size: 16px;
+}
+.custom-container.details summary {
+	font-weight: bold;
+}
+.action-button.primary {
+	font-weight: bold;
+	color: #fff !important;
+	text-transform: uppercase;
+}
 html.dark {
+	--c-text: #fff;
 	body {
-	  background: linear-gradient(160deg, rgba(73, 88, 107, 1) 0%, rgba(0, 16, 31, 1) 55%) !important;
-	  --c-text: #fff;
+	  background: linear-gradient(160deg, rgb(73, 88, 107), rgb(0, 16, 31) 22%) !important;
 	}
 	.sidebar {
 		background-color: transparent;
