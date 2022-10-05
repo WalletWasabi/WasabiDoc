@@ -126,17 +126,6 @@ Take into account that it is not only encryption what BIP 38 provides but also a
 :::
 
 :::details
-### Does Wasabi support the hidden wallets of hardware wallets?
-
-Partially.
-Only device side passphrase is supported.
-PC side passphrase is not.
-This means the hidden wallet feature can be used with Trezor T, Ledger Nano S and ColdCard, but it cannot be used with Trezor One.
-After the 12 or 24 words, enter the passphrase as the 13th or 25th word.
-It’s part of [BIP 39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki).
-:::
-
-:::details
 ### What are the terms and conditions?
 
 The most important parts of the legal documents are summarized in the following points:
@@ -1088,6 +1077,17 @@ It provides a standard way for any software wallet to communicate with any hardw
 HWI was developed and carefully reviewed over several years, with outstanding contributions by [Andrew Chow](https://github.com/achow101).
 Wasabi implements C# code that executes the HWI tool.
 Wasabi uses this powerful tool because there are no other dependencies necessary to support all the existing and future hardware wallets.
+:::
+
+:::details
+### Does Wasabi support the hidden wallets of hardware wallets?
+
+Partially.
+Only device side passphrase is supported.
+PC side passphrase is not.
+This means that the hidden wallet feature can be used with Trezor T, Ledger Nano S, Nano S Plus, Nano X and ColdCard.
+After the 12 or 24 words, enter the passphrase as the 13th or 25th word on the hardware wallet.
+It’s part of [BIP 39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki).
 :::
 
 :::details
