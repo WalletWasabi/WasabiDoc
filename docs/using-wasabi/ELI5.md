@@ -33,7 +33,7 @@ See [this chapter](/using-wasabi/InstallPackage.md) for a detailed step-by-step 
 
 ## Generating a Wallet
 
-When you start Wasabi for the first time, the tab to generate a new wallet will be open.
+When you start Wasabi for the first time, the dialog to generate a new wallet will be open.
 You can set a unique name for the wallet so that you remember what it is for.
 In the next step, Wasabi will show your 12 recovery words.
 These must be carefully backed up, in the correct order, as they are needed to recover your wallet (together with the password) on another computer or in another wallet software.
