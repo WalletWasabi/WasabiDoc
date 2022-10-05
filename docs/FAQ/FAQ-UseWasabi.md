@@ -982,6 +982,8 @@ Depending on many factors, like the `Anonymity score target`, the `coinjoin stra
 When the `Red coin isolation` is active, only a single coin with anonymity score 1 will be allowed into the coinjoin registration.
 To prevent possible coinjoin input heuristics from outside observers.
 The `Red coin isolation` is active by default when the `Maximize Privacy` profile is selected.
+
+![Red Coin Isolation](/RedCoinIsolation.png "Red Coin Isolation")
 :::
 
 ## Backup and Recovery
