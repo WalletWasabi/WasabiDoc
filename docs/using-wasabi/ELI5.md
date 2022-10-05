@@ -54,7 +54,6 @@ But first, you must label it with the names of any observers who know that this 
 For example, if Alice pays you back for last nights pizza, then the label is `Alice`.
 This is an important feature for you and the wallet to know which coin is from whom, and it will help with your privacy in the future.
 Once this newly generated address receives some coins, Wasabi Wallet will automatically hide this used address, so you don't reuse it by accident.
-In case you want to coinjoin these coins, click Play in the main view's musicbox and choose a fitting profile setting for your wallet.
 
 See [this chapter](/using-wasabi/Receive.md) for a tutorial on how to properly label your addresses and receive bitcoin.
 
