@@ -1191,6 +1191,13 @@ For the complete list of all the officially supported hardware wallets, click [h
 :::
 
 :::details
+### Can I use BitBox 02 with Wasabi?
+
+No. Unfortunately, BitBox 02 is not supported by Wasabi Wallet.
+For the complete list of all the officially supported hardware wallets, click [here](https://github.com/zkSNACKs/WalletWasabi/blob/master/WalletWasabi.Documentation/WasabiCompatibility.md#officially-supported-hardware-wallets).
+:::
+
+:::details
 ### How can I type in the passphrase of my Trezor T?
 
 After connecting the Trezor T to your computer and upon trying to load your wallet, you get a message on the Trezor T to choose where to type your passphrase, on the device or the host (computer), choose the first option (device) then enter the passprase using the touchscreen of your Trezor T.
