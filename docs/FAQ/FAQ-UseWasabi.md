@@ -1191,9 +1191,9 @@ For the complete list of all the officially supported hardware wallets, click [h
 :::
 
 :::details
-### Can I use BitBox 02 with Wasabi?
+### Can I use BitBox with Wasabi?
 
-No. Unfortunately, BitBox 02 is not supported by Wasabi Wallet.
+No. Unfortunately, BitBox is not supported by Wasabi Wallet.
 For the complete list of all the officially supported hardware wallets, click [here](https://github.com/zkSNACKs/WalletWasabi/blob/master/WalletWasabi.Documentation/WasabiCompatibility.md#officially-supported-hardware-wallets).
 :::
 
