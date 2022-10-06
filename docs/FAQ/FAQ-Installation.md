@@ -157,7 +157,7 @@ No, it is not possible to install Wasabi on Tails, because Wasabi uses the Tor c
 :::
 
 :::details
-### Can I install Wasabi on Whonix?
+### Can I use Wasabi on Whonix?
 
 No, it is not possible to install Wasabi on Whonix, because Wasabi uses the Tor control port, which is not exposed in this operating system.
 :::
