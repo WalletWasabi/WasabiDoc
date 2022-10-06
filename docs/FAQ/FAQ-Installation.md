@@ -115,7 +115,7 @@ Check out the main documentation for a [step-by-step guide](/using-wasabi/Instal
 ### What happens when I install the wrong package for macOS?
 
 Wasabi will not start or crash at startup.
-This will not directly harm your computer.
+This will not harm your computer.
 :::
 
 :::details
