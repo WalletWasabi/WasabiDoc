@@ -77,7 +77,7 @@ If you don't like that your employer knows where you spend your money, or that a
 Although the coinjoin protocol is a bit complex, it is very easy to use in Wasabi.
 The wallet automatically coinjoins all your funds, so that your money becomes private.
 This procress might take some time (hours/days).
-You can still use your wallet in the mean time, however it is a best practice to only use private funds when possible.
+You can still use your wallet in the mean time, however it is a best practice to only use private funds, which the wallet does automatically when possible.
 At the wallet's homescreen the percentage indicates the progress to making your wallet fully private.
 The exact available private amount of bitcoin is listed as `PRIVATE`.
 
