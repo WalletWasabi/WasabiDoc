@@ -1223,7 +1223,7 @@ The check mark indicates that the transaction is confirmed in the longest proof-
 :::details
 ### How can I see coinjoins in the history list?
 
-A coinjoin is indicated with the shield icon:
+Coinjoin transactions are indicated with a shield icon:
 
 ![History Coinjoin](/HistoryCoinjoin.png "History Coinjoin")
 
