@@ -75,8 +75,10 @@ See [this chapter](/using-wasabi/Send.md) for more details about sending bitcoin
 
 If you don't like that your employer knows where you spend your money, or that a merchant can find out how much money you have, then you should coinjoin your bitcoin, as this breaks link to its transaction history.
 Although the coinjoin protocol is a bit complex, it is very easy to use in Wasabi.
-The wallet automatically coinjoins received UTXO's according to the profile settings set by the user.
-Once a coin achieves enough privacy, the corresponding amount will show up in the software's main view as "private coins".
-The wallet will also automatically coinjoin the change output that the user possibly gets back after creating a transaction.
+The wallet automatically coinjoins all your funds, so that your money becomes private.
+This procress might take some time (hours/days).
+You can still use your wallet in the mean time, however it is a best practice to only use private funds when possible.
+At the wallet's homescreen the percentage indicates the progress to making your wallet fully private.
+The exact available private amount of bitcoin is listed as `PRIVATE`.
 
 See [this chapter](/using-wasabi/CoinJoin.md) for a thorough analysis of coinjoin, details on the Wasabi implementation and best practices on how to use it properly.
