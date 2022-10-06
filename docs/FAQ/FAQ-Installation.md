@@ -151,7 +151,7 @@ When you broadcast a transaction over clearnet, the connected full node will kno
 :::
 
 :::details
-### Can I install Wasabi on Tails?
+### Can I use Wasabi on Tails?
 
 No, it is not possible to install Wasabi on Tails, because Wasabi uses the Tor control port, which is not exposed in this operating system.
 :::
