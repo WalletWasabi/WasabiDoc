@@ -112,6 +112,14 @@ Check out the main documentation for a [step-by-step guide](/using-wasabi/Instal
 :::
 
 :::details
+### Why are there two different packages for macOS (intel and M1)?
+
+Intel and M1 are two different processors that Apple uses for their computers.
+These processors work a bit differently from each other. 
+With the architecture that Wasabi uses, these two different processors need their own specific code binary in order to make it work.
+:::
+
+:::details
 ### How do I check the current version of Wasabi?
 
 In the GUI, go to the SearchBar at the top of the screen and click on `About Wasabi`. 
