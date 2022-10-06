@@ -17,7 +17,6 @@ Further tutorials about the different parts of the wallet, for newbies and power
 
 ### Introducing Wasabi
 - [Explain Wasabi like I'm 5](/using-wasabi/ELI5.md)
-- [Ten Commandments](/using-wasabi/10Commandments.md)
 
 ### Installing Wasabi
 - [Install package](/using-wasabi/InstallPackage.md)
@@ -45,7 +44,6 @@ Further tutorials about the different parts of the wallet, for newbies and power
 ### Advanced Installing Wasabi
 - [Deterministic Build](/using-wasabi/DeterministicBuild.md)
 - [Wasabi Setup using Virtual Machines](/using-wasabi/WasabiSetupVM.md)
-- [Wasabi Setup using Whonix](/using-wasabi/WasabiSetupWhonix.md)
 
 ### Advanced Using Wasabi
 - [Headless Wasabi Daemon](/using-wasabi/Daemon.md)

@@ -126,17 +126,6 @@ Take into account that it is not only encryption what BIP 38 provides but also a
 :::
 
 :::details
-### Does Wasabi support the hidden wallets of hardware wallets?
-
-Partially.
-Only device side passphrase is supported.
-PC side passphrase is not.
-This means the hidden wallet feature can be used with Trezor T, Ledger Nano S and ColdCard, but it cannot be used with Trezor One.
-After the 12 or 24 words, enter the passphrase as the 13th or 25th word.
-It’s part of [BIP 39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki).
-:::
-
-:::details
 ### What are the terms and conditions?
 
 The most important parts of the legal documents are summarized in the following points:
@@ -982,6 +971,8 @@ Depending on many factors, like the `Anonymity score target`, the `coinjoin stra
 When the `Red coin isolation` is active, only a single coin with anonymity score 1 will be allowed into the coinjoin registration.
 To prevent possible coinjoin input heuristics from outside observers.
 The `Red coin isolation` is active by default when the `Maximize Privacy` profile is selected.
+
+![Red Coin Isolation](/RedCoinIsolation.png "Red Coin Isolation")
 :::
 
 ## Backup and Recovery
@@ -1089,6 +1080,17 @@ Wasabi uses this powerful tool because there are no other dependencies necessary
 :::
 
 :::details
+### Does Wasabi support the hidden wallets of hardware wallets?
+
+Partially.
+Only device side passphrase is supported.
+PC side passphrase is not.
+This means that the hidden wallet feature can be used with Trezor T, Ledger Nano S, Nano S Plus, Nano X and ColdCard.
+After the 12 or 24 words, enter the passphrase as the 13th or 25th word on the hardware wallet.
+It’s part of [BIP 39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki).
+:::
+
+:::details
 ### How can I generate a Wasabi skeleton wallet file in ColdCard?
 
 On the ColdCard you go to `> Advanced > MicroSD Card > Wasabi Wallet` and it will save a skeleton json-file to the MicroSD card in the hardware wallet.
@@ -1191,6 +1193,13 @@ For the complete list of all the officially supported hardware wallets, click [h
 :::
 
 :::details
+### Can I use BitBox with Wasabi?
+
+No. Unfortunately, BitBox is not supported by Wasabi Wallet.
+For the complete list of all the officially supported hardware wallets, click [here](https://github.com/zkSNACKs/WalletWasabi/blob/master/WalletWasabi.Documentation/WasabiCompatibility.md#officially-supported-hardware-wallets).
+:::
+
+:::details
 ### How can I type in the passphrase of my Trezor T?
 
 After connecting the Trezor T to your computer and upon trying to load your wallet, you get a message on the Trezor T to choose where to type your passphrase, on the device or the host (computer), choose the first option (device) then enter the passprase using the touchscreen of your Trezor T.
@@ -1233,6 +1242,14 @@ To see the individual coinjoins, the cluster can be expanded by clicking the arr
 ![History Coinjoin Expanded](/HistoryCoinjoinExpanded.png "History Coinjoin Expanded")
 
 A coinjoin is a payment within the same wallet, thus it only shows the coordination and mining fee leaving the wallet.
+:::
+
+:::details
+### Can I sort the history items?
+
+Yes, the history items can be sorted by clicking on the column title:
+
+![Sort Date Column](/HistorySortDateColumn.png "Sort Date Column")
 :::
 
 :::details

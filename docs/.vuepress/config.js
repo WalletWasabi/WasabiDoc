@@ -157,8 +157,7 @@ module.exports = {
           collapsable: false,
           sidebarDepth: 2,
           children: [
-            "/using-wasabi/ELI5.md",
-            "/using-wasabi/10Commandments.md"
+            "/using-wasabi/ELI5.md"
           ]
         },
         {
@@ -210,8 +209,7 @@ module.exports = {
           sidebarDepth: 2,
           children: [
             "/using-wasabi/DeterministicBuild.md",
-            "/using-wasabi/WasabiSetupVM.md",
-            "/using-wasabi/WasabiSetupWhonix.md"
+            "/using-wasabi/WasabiSetupVM.md"
           ]
         },
         {
