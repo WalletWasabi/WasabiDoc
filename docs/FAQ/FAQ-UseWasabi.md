@@ -1230,6 +1230,21 @@ The check mark indicates that the transaction is confirmed in the longest proof-
 :::
 
 :::details
+### How can I see coinjoins in the history list?
+
+Coinjoin transactions are indicated with a shield icon:
+
+![History Coinjoin](/HistoryCoinjoin.png "History Coinjoin")
+
+When the wallet has made multiple coinjoins, the coinjoins will be clustered.
+To see the individual coinjoins, the cluster can be expanded by clicking the arrow on the left:
+
+![History Coinjoin Expanded](/HistoryCoinjoinExpanded.png "History Coinjoin Expanded")
+
+A coinjoin is a payment within the same wallet, thus it only shows the coordination and mining fee leaving the wallet.
+:::
+
+:::details
 ### Can I sort the history items?
 
 Yes, the history items can be sorted by clicking on the column title:
