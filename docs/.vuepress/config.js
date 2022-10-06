@@ -209,8 +209,7 @@ module.exports = {
           sidebarDepth: 2,
           children: [
             "/using-wasabi/DeterministicBuild.md",
-            "/using-wasabi/WasabiSetupVM.md",
-            "/using-wasabi/WasabiSetupWhonix.md"
+            "/using-wasabi/WasabiSetupVM.md"
           ]
         },
         {
