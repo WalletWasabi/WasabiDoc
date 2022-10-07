@@ -782,24 +782,6 @@ So, there are 79 denominations from 0.00005000 BTC up to 1374.38953472 BTC.
 :::
 
 :::details
-### When's the best time to coinjoin?
-
-You can coinjoin whenever you want.
-That said, the ideal way to coinjoin would be when:
-
-1. Mempool is clean.
-Coinjoins are unfairly cheap when the mempool is empty.
-Remember to take a look at websites like [Johoe's Bitcoin Mempool Statistics](https://jochen-hoenicke.de/queue/#0,24h) or [mempool.space](https://mempool.space/tv) to see mempool statistics in real time.
-
-2. Your inputs are the same or little higher as the minimal denomination for the current round.
-[Change is an issue](/using-wasabi/ChangeCoins.md#why-change-is-an-issue).
-For this reason, whenever possible it is recommended to CoinJoin with exactly the required denomination for the current round (roughly 0.1 BTC) to not get any change back.
-
-3. Mix at different times.
-To avoid traffic detection and behavioral analysis, you should CoinJoin at different times (days and hours).
-:::
-
-:::details
 ### What is happening in the input registration phase?
 
 During this phase you have the opportunity to register coins that you want to mix in this round.
