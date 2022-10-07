@@ -21,7 +21,8 @@
 
 ![Wasabi Wallet Send To Field](/SendToField.png "Wasabi Wallet Send To Field")
 
-3.  Specify the amount of bitcoin to send to the destination address. Optionally, you can specify the dollar amount to send.
+3.  Specify the amount of bitcoin to send to the destination address.
+Optionally, you can specify the dollar amount to send instead.
 
 ![Wasabi Wallet Send Amount Field](/SendAmountField.png "Wasabi Wallet Send Amount Field")
 
@@ -35,11 +36,13 @@
 
 6.  Preview Transaction.
     -  Verify the amount, recipient, and the address.
-    -  Review the estimated time for confirmation and the transaction fee. Optionally, you can change the transaction fee or confirmation time by clicking on the icon.
+    -  Review the estimated time for confirmation and the transaction fee.
+    Optionally, you can change the transaction fee or confirmation time by clicking on the edit fee icon.
 
     ![Wasabi Wallet Send Change Fee](/SendChangeFee.png "Wasabi Wallet Send Change Fee")
 
-    -  Review suggestions to improve your privacy by clicking the shield icon in the top right corner. For example, you may want to increase or decrease your payment to avoid change.
+    -  Review the suggestions to improve your privacy by clicking the shield icon in the top right corner.
+    For example, you may want to slightly increase or decrease your payment amount to avoid change.
 
     ![Wasabi Wallet Send Privacy Suggestion](/SendPrivacySuggestion.png "Wasabi Wallet Send Privacy Suggestion")
 
