@@ -120,6 +120,13 @@ With the architecture that Wasabi uses, these two different processors need thei
 :::
 
 :::details
+### What happens when I install the wrong package for macOS?
+
+Wasabi won't start or it will crash on startup.
+This will not harm your computer.
+:::
+
+:::details
 ### How do I check the current version of Wasabi?
 
 In the GUI, go to the SearchBar at the top of the screen and click on `About Wasabi`. 
