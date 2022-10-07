@@ -413,13 +413,17 @@ To check Bech32 adoption and wallets/exchanges support you can follow the [Bitco
 :::
 
 :::details
-### Where can I find my address QR code and public key?
+### Where can I find my address QR code?
 
-You can see the address QR code, public key and the key path in the drop down menu of the `Receive` tab.
-Click on the arrow on the left side of the address to reveal the extra details.
-You can save the png file of the QR code in the right click menu.
+When a new address is generated the QR code, address and label are displayed.
+The QR code of an already generated address can be found at the `Unused Receive Addresses` list.
+Click on the QR code icon at the Unused Receive Addresses.
 
-![Wasabi Wallet address' QR code](/ReceiveAddressDropDownMenu.png "Wasabi Wallet address' QR code")
+![QR code icon](/UnusedReceiveAddressesQRCodeIcon.png "QR code icon")
+
+The QR Code is displayed and can be saved as a png file by clicking on the Save icon, which appears on hover.
+
+![Unused Receive Address](/UnusedReceiveAddress.png "Unused Receive Address")
 :::
 
 :::details
