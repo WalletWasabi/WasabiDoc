@@ -47,13 +47,13 @@ You want to avoid merging coins with different anonymity set values whenever pos
 
 ## Your options to use change privately
 
-### Avoid change in the first place.
+### Avoid change in the first place
 
 Whenever possible, choose UTXO's for transactions where the destination addresses receive the entire value of your UTXO's, and you don't get any change back.
 This can easily be done by clicking the shield icon in the top right corner of the transaction preview screen, and adjusting the payment amount to be slightly higher or lower.
 This might not be possible in some cases where you have to pay a specific value of a payment request.
 
-### Make it difficult to deduce the change.
+### Make it difficult to deduce the change
 
 There are [common heuristics identifying change outputs](/why-wasabi/Coins.md#heuristics-identifying-change), try to avoid these with every transaction.
 Don't reuse addresses, don't send precise amounts but randomize them, don't use replace by fee, and try to send to bech32 addresses.
@@ -70,12 +70,12 @@ Now Alice will know that you owned the 0.10 bitcoin and that you currently own t
 
 Wasabi will automatically check if you have a coin with the same label for the current payment recipient, and will suggest those coins to be spend.
 
-### Spend the change with another entity, where you don't mind if each of the two knows that you transact with the other entity.
+### Spend the change with another entity, where you don't mind if each of the two knows that you transact with the other entity
 
 When you send a transaction to Alice, then she knows that the change output goes back to you.
 You can use this change to send bitcoin to Bob, and if he has bad privacy habits, Alice can find out you sent to him.
 But if you have a trusted relationship with the two, then this is alright, and not part of your thread model.
 
-### Coinjoin more.
+### Coinjoin more
 
 Since Wasabi 2.0 has no minimum amount for coinjoin, any change coin will be automatically registered for the next coinjoin round. If you wait long enough, Wasabi will make sure that you don't have any anonscore 1 change coins in your wallet, but only private coins not related to any previous payment.
