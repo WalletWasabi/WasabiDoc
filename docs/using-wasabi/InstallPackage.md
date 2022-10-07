@@ -77,7 +77,7 @@ If the message returned says `Good signature from zkSNACKs` and that it was sign
 	:::
 
 4. [GUI] Install by double-clicking and follow the GUI Instruction. </br>
-   [CLI] In the Download repository, run the command `sudo dpkg -i Wasabi-${currentVersion}.deb`.
+   [CLI] In the Download repository, execute the command `sudo dpkg -i Wasabi-${currentVersion}.deb` to install Wasabi and after that run Wasabi by executing `wassabee`.
 
 After the first run, a [data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) will be created.
 Among others, here is where your wallet files and your logs reside.
@@ -120,7 +120,8 @@ Among others, here is where your wallet files and your logs reside.
 
 ## macOS
 
-1. [Download](https://wasabiwallet.io/#download) the `.dmg` package of Wasabi ${currentVersion}.
+1. [Download](https://wasabiwallet.io/#download) the `.dmg` package of Wasabi ${currentVersion} for your machine's processor.
+If you're not sure what processor your device has, [check it](https://www.howtogeek.com/706226/how-to-check-if-your-mac-is-using-an-intel-or-apple-silicon-processor/).
 
 ![Download Wasabi Wallet for macOS](/DownloadMac.png "Download Wasabi Wallet for macOS")
 

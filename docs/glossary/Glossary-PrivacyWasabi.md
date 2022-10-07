@@ -130,13 +130,6 @@ Read more: [How does my wallet communicate with the Wasabi coordinator server?](
 :::
 
 :::details
-### Daemon
-
-A daemon is a command line interface to run Wasabi without the GUI (Graphical User Interface).
-Read more: [Headless Wasabi Daemon](/using-wasabi/Daemon.md)
-:::
-
-:::details
 ### Dust
 
 Dust is an UTXO that is uneconomical to spend.

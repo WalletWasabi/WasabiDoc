@@ -9,7 +9,7 @@
 
 Discreet Mode is a Wasabi Wallet feature that hides sensitive and critical information from physical observers and allows you to post screenshots without worrying about your privacy.
 
-![Wasabi Wallet Discreet Mode](/Send.png "Wasabi Wallet Discreet Mode")
+![Wasabi Wallet Discreet Mode](/WalletDiscreetModeActive.png "Wasabi Wallet Discreet Mode")
 
 [[toc]]
 
