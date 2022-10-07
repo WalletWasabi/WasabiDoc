@@ -25,29 +25,29 @@ Notice that it is not yet possible to coinjoin from a hardware wallet, the keys 
 
 By default, Wasabi starts automatically coinjoining the funds whenever there's more than 0.01 BTC non private in total.
 Wallets with less than or equal to 0.01 BTC are in _PlebStop_ mode, where funds are not coinjoined automatically.
-User can change the limit from settings or turn coinjoin on manually by pressing the play button in main views "music box".
+User can change the limit from the settings or turn coinjoin on manually by pressing the play button of the music box in the main view.
 
-A 0.3% coordinator fee will be taken from fresh UTXOs bigger than 0.01 BTC.
+A 0.3% coordinator fee will be taken from fresh coins bigger than 0.01 BTC.
 Smaller ones don't pay coordinator fees at all, according to _PlebsDontPay_ rule.
 
-The round starts either as soon as 300 inputs have been registered, or after the input registration time has ran out and as long as there's at least 150 inputs registered.
+The round starts either as soon as enough inputs have been registered, or after the input registration time is reached and as long as the minimum number of inputs are registered.
 Just leave Wasabi running in the background of your computer, as coinjoining takes time.
 
 Remixing is free, as well as coinjoining coins 1 hop from coinjoin, although, Bitcoin network fees still do apply.
 So if you send a payment and receive a change output, Wasabi will automatically remix it without you having to pay coordinator fees again. 
-The recipient of the payment will also be able to coinjoin the funds he recieved with only the cost of network fees, as long he/she is also using Wasabi or other WabiSabi compatible Bitcoin wallet.
+The recipient of the payment will not have to pay coordinator fee, as long he is making coinjoins with the same coordinator.
 
 Once a coin achieves enough privacy, the corresponding amount will show up in the software's main view as "private coins".
 
 ## WabiSabi protocol step-by-step
 
-WabiSWabi protocol requires 5 steps to successfully create and broadcast a coinjoin transaction to the bitcoin network.
+WabiSabi protocol requires 5 steps to successfully create and broadcast a coinjoin transaction to the bitcoin network.
 
 ### Input registration
 
 During the [input registration](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-input-registration-phase), automatic coin selection robot selects which coins will be registered for coinjoin.
-These coins need to be confirmed on the Bitcoin blockchain unless they are from a Wasabi coinjoin and the robot is re-register them.
-In the background, Wasabi generates an input proofs, signatures over a challenge message with the private key that locks up the coins.
+These coins need to be confirmed on the Bitcoin blockchain.
+In the background, Wasabi generates input proofs, a signatures over a challenge message with the private key that locks up the coins.
 With this, the coordinator can verify that you actually own these coins.
 
 Then your Wasabi client generates several fresh addresses, depending on the value of inputs registered.
