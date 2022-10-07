@@ -294,6 +294,15 @@ This is a good feature to help protect you against [address reuse](/why-wasabi/A
 :::
 
 :::details
+### Where can I find previously generated addresses?
+
+Generated addresses which haven't received any funds yet, are displayed at the `Unused Receive Addresses` list.
+Click on the `Receive` button > `Unused Receive Addresses`
+
+![Unused Receive Addresses](/UnusedReceiveAddresses.png "Unused Receive Addresses")
+:::
+
+:::details
 ### What is the gap limit?
 
 The gap limit is the maximum number of consecutive unused addresses that your wallet will generate when recovering it.
