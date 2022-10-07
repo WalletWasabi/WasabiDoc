@@ -1210,11 +1210,8 @@ Udev rules instructions can be found [here](https://github.com/bitcoin-core/HWI/
 :::details
 ### How can I check the transactions history?
 
-The wallet's main page displays the history of all transactions and coinjoins made with this specific wallet.
-It includes:
-- BTC being being received 
-- BTC being sent out of the wallet, meaning the payment to an external address and the fee.
-- coinjoins & the it's corresponding outgoing fee
+The wallet's main page displays the history of all transactions made with this specific wallet.
+It includes receiving, sending, and coinjoin transactions.
 
 ![Wasabi Wallet History tab](/History.png "Wasabi Wallet History tab")
 :::
