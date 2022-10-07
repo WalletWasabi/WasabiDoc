@@ -126,17 +126,6 @@ Take into account that it is not only encryption what BIP 38 provides but also a
 :::
 
 :::details
-### Does Wasabi support the hidden wallets of hardware wallets?
-
-Partially.
-Only device side passphrase is supported.
-PC side passphrase is not.
-This means the hidden wallet feature can be used with Trezor T, Ledger Nano S and ColdCard, but it cannot be used with Trezor One.
-After the 12 or 24 words, enter the passphrase as the 13th or 25th word.
-It’s part of [BIP 39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki).
-:::
-
-:::details
 ### What are the terms and conditions?
 
 The most important parts of the legal documents are summarized in the following points:
@@ -208,6 +197,16 @@ The color of each segment indicates if that coin is private (green), semi-privat
 ![Wasabi Wallet Privacy Bar](/PrivacyBar.png "Wasabi Wallet Privacy Bar")
 
 So according to the image, this wallet has 46 coins of which 21 are private (green), 11 are semi-private (orange) and 14 are non-private (red).
+:::
+
+:::details
+### How can I display the fee in sats?
+
+By default, the wallet displays all fees in BTC (mining fees, coinjoin fees etc.).
+This can be changed to sats in the `Settings`.
+Go to `Settings` -> `General` -> `Fee display unit` and change it to `sats`.
+
+![Wasabi Wallet Fee Display Unit](/FeeDisplayUnit.png "Wasabi Wallet Fee Display Unit")
 :::
 
 ## Synchronization
@@ -571,16 +570,6 @@ At the transaction fee slider dialog, click on `Advanced` and manually type the 
 :::
 
 :::details
-### How can I display the fee in satoshis per vByte?
-
-The fee you pay to get confirmation on the Bitcoin blockchain is denominated in satoshis per virtual byte.
-This means that the larger your transaction size, meaning the number of inputs and outputs, the more total bitcoin you have to pay for confirmation.
-If you want faster confirmation, then you have to pay proportionally more sats per vByte.
-
-You can toggle the display of the fee between `sat/vByte` & `percentage of transferred value` & `total bitcoin` & `total USD` by clicking on the text of the fee.
-:::
-
-:::details
 ### How do I select coins for spending?
 
 Unlike other Bitcoin wallets, the user cannot spend from Wasabi without selecting coins, since ["Coin Control Is Must Learn If You Care About Your Privacy In Bitcoin"](https://medium.com/@nopara73/coin-control-is-must-learn-if-you-care-about-your-privacy-in-bitcoin-33b9a5f224a2), at least for today.
@@ -793,24 +782,6 @@ So, there are 79 denominations from 0.00005000 BTC up to 1374.38953472 BTC.
 :::
 
 :::details
-### When's the best time to coinjoin?
-
-You can coinjoin whenever you want.
-That said, the ideal way to coinjoin would be when:
-
-1. Mempool is clean.
-Coinjoins are unfairly cheap when the mempool is empty.
-Remember to take a look at websites like [Johoe's Bitcoin Mempool Statistics](https://jochen-hoenicke.de/queue/#0,24h) or [mempool.space](https://mempool.space/tv) to see mempool statistics in real time.
-
-2. Your inputs are the same or little higher as the minimal denomination for the current round.
-[Change is an issue](/using-wasabi/ChangeCoins.md#why-change-is-an-issue).
-For this reason, whenever possible it is recommended to CoinJoin with exactly the required denomination for the current round (roughly 0.1 BTC) to not get any change back.
-
-3. Mix at different times.
-To avoid traffic detection and behavioral analysis, you should CoinJoin at different times (days and hours).
-:::
-
-:::details
 ### What is happening in the input registration phase?
 
 During this phase you have the opportunity to register coins that you want to mix in this round.
@@ -982,6 +953,8 @@ Depending on many factors, like the `Anonymity score target`, the `coinjoin stra
 When the `Red coin isolation` is active, only a single coin with anonymity score 1 will be allowed into the coinjoin registration.
 To prevent possible coinjoin input heuristics from outside observers.
 The `Red coin isolation` is active by default when the `Maximize Privacy` profile is selected.
+
+![Red Coin Isolation](/RedCoinIsolation.png "Red Coin Isolation")
 :::
 
 ## Backup and Recovery
@@ -1089,6 +1062,17 @@ Wasabi uses this powerful tool because there are no other dependencies necessary
 :::
 
 :::details
+### Does Wasabi support the hidden wallets of hardware wallets?
+
+Partially.
+Only device side passphrase is supported.
+PC side passphrase is not.
+This means that the hidden wallet feature can be used with Trezor T, Ledger Nano S, Nano S Plus, Nano X and ColdCard.
+After the 12 or 24 words, enter the passphrase as the 13th or 25th word on the hardware wallet.
+It’s part of [BIP 39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki).
+:::
+
+:::details
 ### How can I generate a Wasabi skeleton wallet file in ColdCard?
 
 On the ColdCard you go to `> Advanced > MicroSD Card > Wasabi Wallet` and it will save a skeleton json-file to the MicroSD card in the hardware wallet.
@@ -1191,6 +1175,13 @@ For the complete list of all the officially supported hardware wallets, click [h
 :::
 
 :::details
+### Can I use BitBox with Wasabi?
+
+No. Unfortunately, BitBox is not supported by Wasabi Wallet.
+For the complete list of all the officially supported hardware wallets, click [here](https://github.com/zkSNACKs/WalletWasabi/blob/master/WalletWasabi.Documentation/WasabiCompatibility.md#officially-supported-hardware-wallets).
+:::
+
+:::details
 ### How can I type in the passphrase of my Trezor T?
 
 After connecting the Trezor T to your computer and upon trying to load your wallet, you get a message on the Trezor T to choose where to type your passphrase, on the device or the host (computer), choose the first option (device) then enter the passprase using the touchscreen of your Trezor T.
@@ -1218,6 +1209,29 @@ You also have a list of all the transaction identification numbers for detailed 
 The check mark indicates that the transaction is confirmed in the longest proof-of-work blockchain.
 
 ![Wasabi Wallet History tab](/History.png "Wasabi Wallet History tab")
+:::
+
+:::details
+### How can I see coinjoins in the history list?
+
+Coinjoin transactions are indicated with a shield icon:
+
+![History Coinjoin](/HistoryCoinjoin.png "History Coinjoin")
+
+When the wallet has made multiple coinjoins, the coinjoins will be clustered.
+To see the individual coinjoins, the cluster can be expanded by clicking the arrow on the left:
+
+![History Coinjoin Expanded](/HistoryCoinjoinExpanded.png "History Coinjoin Expanded")
+
+A coinjoin is a payment within the same wallet, thus it only shows the coordination and mining fee leaving the wallet.
+:::
+
+:::details
+### Can I sort the history items?
+
+Yes, the history items can be sorted by clicking on the column title:
+
+![Sort Date Column](/HistorySortDateColumn.png "Sort Date Column")
 :::
 
 :::details
