@@ -979,7 +979,9 @@ Depending on many factors, like the `Anonymity score target`, the `coinjoin stra
 :::details
 ### What does the `Auto-start coinjoin threshold` mean in the coinjoin settings?
 
-Coinjoin will not automatically start if the non-private wallet balance is less than this amount. A use case is that it might not be economical to coinjoin with this non-private ammount (coinjoin fee amount compared to coinjoin amount).
+It is the amount at which your funds will automatically participate in coinjoin in the background.
+If the non-private wallet balance is less than this amount coinjoin will not automatically start.
+A use case is that it might not be economical to coinjoin with this non-private amount (fee amount compared to coinjoin amount).
 
 For example, if the user has a non-private balance of 0.005 BTC and the `Auto-start coinjoin threshold` is 0.01 BTC, it will have to manually press Play to start coinjoining.
 The default Auto-start coinjoin threshold is 0.01 BTC.
