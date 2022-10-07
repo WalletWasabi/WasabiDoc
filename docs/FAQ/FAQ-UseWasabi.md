@@ -364,14 +364,14 @@ or:
 :::
 
 :::details
-### How can I change the observers of my receive address?
+### How can I change the label of my receive address?
 
-You can change the observers of your receive address in the right click menu by clicking `Change Observers`, then type in the new label.
+You can change the label of your unused receive address by clicking on the edit icon.
 This is useful when you have generated a receiving address with a specific label, but then the cause for receiving has changed.
 Take care with whom you have shared this address, because if you send it to several people, they might all send many coins to the same address.
 This is very bad for your privacy because of [address reuse](/why-wasabi/AddressReuse.md), and it confuses you with the labeling of each unique coin.
 
-![Wasabi Wallet address details](/ReceiveAddressDropDownMenu.png "Wasabi Wallet address details")
+![Edit Address Label](/UnusedReceiveAddressesEditLabel.png "Edit Address Label")
 :::
 
 :::details
