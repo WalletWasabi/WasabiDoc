@@ -199,6 +199,16 @@ The color of each segment indicates if that coin is private (green), semi-privat
 So according to the image, this wallet has 46 coins of which 21 are private (green), 11 are semi-private (orange) and 14 are non-private (red).
 :::
 
+:::details
+### How can I display the fee in sats?
+
+By default, the wallet displays all fees in BTC (mining fees, coinjoin fees etc.).
+This can be changed to sats in the `Settings`.
+Go to `Settings` -> `General` -> `Fee display unit` and change it to `sats`.
+
+![Wasabi Wallet Fee Display Unit](/FeeDisplayUnit.png "Wasabi Wallet Fee Display Unit")
+:::
+
 ## Synchronization
 
 :::details
@@ -557,16 +567,6 @@ At the `Preview Transaction` dialog, click on the icon `Change transaction fee o
 At the transaction fee slider dialog, click on `Advanced` and manually type the fee rate (sat/vByte) you want.
 
 ![Wasabi Wallet custom fee rate](/SendCustomFee.png "Wasabi Wallet custom fee rate")
-:::
-
-:::details
-### How can I display the fee in satoshis per vByte?
-
-The fee you pay to get confirmation on the Bitcoin blockchain is denominated in satoshis per virtual byte.
-This means that the larger your transaction size, meaning the number of inputs and outputs, the more total bitcoin you have to pay for confirmation.
-If you want faster confirmation, then you have to pay proportionally more sats per vByte.
-
-You can toggle the display of the fee between `sat/vByte` & `percentage of transferred value` & `total bitcoin` & `total USD` by clicking on the text of the fee.
 :::
 
 :::details
