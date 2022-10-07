@@ -22,7 +22,6 @@ Wasabi Wallet protects the encrypted secret key with the same technology used to
 It is important to know that the Wasabi Password Finder is not for breaking wallet passwords but for finding errors (typos) in an already known password, and that it's success rate is limited.
 :::
 
-
 ## Usage
 
 After an incorrect password is entered when opening a wallet, `Forgot Password` will show up.
