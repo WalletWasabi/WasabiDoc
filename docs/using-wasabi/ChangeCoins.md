@@ -31,7 +31,7 @@ This process is applicable to any Bitcoin transaction where the `sent` amount is
 
 ### Coinjoin change
 
-In some few cases, especially for the wealthiest user of a coinjoin, there will be a `anonymity score 1` output in a coinjoin transaction.
+In some few cases, especially for the wealthiest user of a coinjoin, there will be an `anonymity score 1` output in a coinjoin transaction.
 Eventhough it is not trivial to link those to the inputs of the same user, they should be handled with care.
 Wasabi will not automatically spend those change coins in a payment, but instead register them again in a future coinjoin round.
 
@@ -68,9 +68,9 @@ If in a third transaction you want to send Alice 0.02 bitcoin, then you can cons
 
 Now Alice will know that you owned the 0.10 bitcoin and that you currently own the 0.09 bitcoin change, but she cannot find out about your premix transaction history.
 
-Wasabi will automatically check if you have a coin with the same label for the current payment recipient, and will suggest those coins to be spend.
+Wasabi will automatically check if you have a coin with the same label for the current payment recipient, and will suggest those coins to be spent.
 
-### Spend the change with another entity, where you don't mind if each of the two knows that you transact with the other entity
+### Spend the change with another entity, where you don't mind if each of the two know that you transact with the other entity
 
 When you send a transaction to Alice, then she knows that the change output goes back to you.
 You can use this change to send bitcoin to Bob, and if he has bad privacy habits, Alice can find out you sent to him.
