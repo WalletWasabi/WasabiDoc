@@ -179,7 +179,7 @@ module.exports = {
             "/using-wasabi/Receive.md",
             "/using-wasabi/CoinJoin.md",
             "/using-wasabi/Send.md",
-            "/using-wasabi/ColdWasabi.md",
+            "/using-wasabi/HardwareWallet.md",
             "/using-wasabi/BitcoinFullNode.md"
           ]
         },
@@ -209,8 +209,7 @@ module.exports = {
           sidebarDepth: 2,
           children: [
             "/using-wasabi/DeterministicBuild.md",
-            "/using-wasabi/WasabiSetupVM.md",
-            "/using-wasabi/WasabiSetupWhonix.md"
+            "/using-wasabi/WasabiSetupVM.md"
           ]
         },
         {
@@ -218,7 +217,6 @@ module.exports = {
           collapsable: false,
           sidebarDepth: 2,
           children: [
-            "/using-wasabi/Daemon.md",
             "/using-wasabi/RPC.md",
             "/using-wasabi/DiscreetMode.md",
             "/using-wasabi/PayJoin.md",

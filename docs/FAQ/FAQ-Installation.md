@@ -112,6 +112,14 @@ Check out the main documentation for a [step-by-step guide](/using-wasabi/Instal
 :::
 
 :::details
+### Why are there two different packages for macOS (intel and M1)?
+
+Intel and M1 are two different processors that Apple uses for their computers.
+These processors work a bit differently from each other. 
+With the architecture that Wasabi uses, these two different processors need their own specific code binary in order to make it work.
+:::
+
+:::details
 ### What happens when I install the wrong package for macOS?
 
 Wasabi will not start or crash at startup.
@@ -123,7 +131,6 @@ This will not harm your computer.
 
 In the GUI, go to the SearchBar at the top of the screen and click on `About Wasabi`. 
 Here the current version of your Wasabi is displayed.
-You can also verify the version using the command line by executing `wassabee --version` or `wassabeed --version` if you are on Windows.
 Wasabi is cutting edge software, so it is well-advised to stay up-to-date.
 :::
 
@@ -158,9 +165,15 @@ When you broadcast a transaction over clearnet, the connected full node will kno
 :::
 
 :::details
-### Can I install Wasabi on TAILS?
+### Can I use Wasabi on Tails?
 
-Yes, it is possible to install Wasabi on Tails, but it is not [officially supported](https://github.com/zkSNACKs/WalletWasabi/blob/master/WalletWasabi.Documentation/WasabiCompatibility.md#officially-supported-operating-systems).
+No, it is not possible to install Wasabi on Tails, because Wasabi uses the Tor control port, which is not exposed in this operating system.
+:::
+
+:::details
+### Can I use Wasabi on Whonix?
+
+No, it is not possible to install Wasabi on Whonix, because Wasabi uses the Tor control port, which is not exposed in this operating system.
 :::
 
 :::details

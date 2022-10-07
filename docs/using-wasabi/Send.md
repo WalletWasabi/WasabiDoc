@@ -13,18 +13,50 @@
 
 ## How to send bitcoin step-by-step
 
-1.  Click the Send button.
-1.  Specify a destination address.
-1.  Specify the amount of bitcoin to send to the destination address. Optionally, you can specify the dollar amount to send.
-1.  Label the recipient by entering the name of the person or company who you are sending to.
-1.  Preview Transaction.
-    -  Verify the amount, recipient, and the address.
-    -  Review the estimated time for confirmation and the transaction fees. Optionally, you can change the transaction fee or confirmation time.
-    -  Review suggestions to improve your privacy by clicking the shield icon in the top right corner. For example, you may want to increase or decrease your payment to avoid change.
-1.  Click `Confirm`.
-1. Type in your password, then click `Continue`.
+1.  Click the `Send` button.
 
-![Wasabi Wallet Home Screen](/Send.png "Wasabi Wallet Home Screen")
+![Wasabi Wallet Send Button](/SendButton.png "Wasabi Wallet Send Button")
+
+2.  Enter the destination address.
+
+![Wasabi Wallet Send To Field](/SendToField.png "Wasabi Wallet Send To Field")
+
+3.  Specify the amount of bitcoin to send to the destination address.
+Optionally, you can specify the dollar amount to send instead.
+
+![Wasabi Wallet Send Amount Field](/SendAmountField.png "Wasabi Wallet Send Amount Field")
+
+4. Click `Continue`.
+
+![Wasabi Wallet Send](/Send.png "Wasabi Wallet Send")
+
+5.  Label the recipient by entering the name of the person or company who you are sending to.
+
+![Wasabi Wallet Send Recipient Label](/SendRecipientLabel.png "Wasabi Wallet Send Recipient Label")
+
+6.  Preview Transaction.
+    -  Verify the amount, recipient, and the address.
+    -  Review the estimated time for confirmation and the transaction fee.
+    Optionally, you can change the transaction fee or confirmation time by clicking on the edit fee icon.
+
+    ![Wasabi Wallet Send Change Fee](/SendChangeFee.png "Wasabi Wallet Send Change Fee")
+
+    -  Review the suggestions to improve your privacy by clicking the shield icon in the top right corner.
+    For example, you may want to slightly increase or decrease your payment amount to avoid change.
+
+    ![Wasabi Wallet Send Privacy Suggestion](/SendPrivacySuggestion.png "Wasabi Wallet Send Privacy Suggestion")
+
+7.  Click `Confirm`.
+
+![Wasabi Wallet Send Preview Transaction](/SendPreviewTransaction.png "Wasabi Wallet Send Preview Transaction")
+
+8. Type in your password, then click `Continue`.
+
+![Wasabi Wallet Send Password](/SendPassword.png "Wasabi Wallet Send Password")
+
+9. Transaction succesfully sent!
+
+![Wasabi Wallet Payment Successful](/PaymentSuccessful.png "Wasabi Wallet Payment Successful")
 
 ## Coins
 

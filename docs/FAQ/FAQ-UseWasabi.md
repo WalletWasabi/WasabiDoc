@@ -199,6 +199,16 @@ The color of each segment indicates if that coin is private (green), semi-privat
 So according to the image, this wallet has 46 coins of which 21 are private (green), 11 are semi-private (orange) and 14 are non-private (red).
 :::
 
+:::details
+### How can I display the fee in sats?
+
+By default, the wallet displays all fees in BTC (mining fees, coinjoin fees etc.).
+This can be changed to sats in the `Settings`.
+Go to `Settings` -> `General` -> `Fee display unit` and change it to `sats`.
+
+![Wasabi Wallet Fee Display Unit](/FeeDisplayUnit.png "Wasabi Wallet Fee Display Unit")
+:::
+
 ## Synchronization
 
 :::details
@@ -560,16 +570,6 @@ At the transaction fee slider dialog, click on `Advanced` and manually type the 
 :::
 
 :::details
-### How can I display the fee in satoshis per vByte?
-
-The fee you pay to get confirmation on the Bitcoin blockchain is denominated in satoshis per virtual byte.
-This means that the larger your transaction size, meaning the number of inputs and outputs, the more total bitcoin you have to pay for confirmation.
-If you want faster confirmation, then you have to pay proportionally more sats per vByte.
-
-You can toggle the display of the fee between `sat/vByte` & `percentage of transferred value` & `total bitcoin` & `total USD` by clicking on the text of the fee.
-:::
-
-:::details
 ### How do I select coins for spending?
 
 Unlike other Bitcoin wallets, the user cannot spend from Wasabi without selecting coins, since ["Coin Control Is Must Learn If You Care About Your Privacy In Bitcoin"](https://medium.com/@nopara73/coin-control-is-must-learn-if-you-care-about-your-privacy-in-bitcoin-33b9a5f224a2), at least for today.
@@ -779,24 +779,6 @@ The standard denominations are:
 `5000`, `6561`, `8192`, `10000`, `13122`, `16384`, `19683`, `20000`, `32768`, `39366`, `50000`, `59049`, `65536`, `100000`, `118098`, `131072`, `177147`, `200000`, `262144`, `354294`, `500000`, `524288`, `531441`, `1000000`, `1048576`, `1062882`, `1594323`, `2000000`, `2097152`, `3188646`, `4194304`, `4782969`, `5000000`, `8388608`, `9565938`, `10000000`, `14348907`, `16777216`, `20000000`, `28697814`, `33554432`, `43046721`, `50000000`, `67108864`, `86093442`, `100000000`, `129140163`, `134217728`, `200000000`, `258280326`, `268435456`, `387420489`, `500000000`, `536870912`, `774840978`, `1000000000`, `1073741824`, `1162261467`, `2000000000`, `2147483648`, `2324522934`, `3486784401`, `4294967296`, `5000000000`, `6973568802`, `8589934592`, `10000000000`, `10460353203`, `17179869184`, `20000000000`, `20920706406`, `31381059609`, `34359738368`, `50000000000`, `62762119218`, `68719476736`, `94143178827`, `100000000000`, `137438953472` sats.
 
 So, there are 79 denominations from 0.00005000 BTC up to 1374.38953472 BTC.
-:::
-
-:::details
-### When's the best time to coinjoin?
-
-You can coinjoin whenever you want.
-That said, the ideal way to coinjoin would be when:
-
-1. Mempool is clean.
-Coinjoins are unfairly cheap when the mempool is empty.
-Remember to take a look at websites like [Johoe's Bitcoin Mempool Statistics](https://jochen-hoenicke.de/queue/#0,24h) or [mempool.space](https://mempool.space/tv) to see mempool statistics in real time.
-
-2. Your inputs are the same or little higher as the minimal denomination for the current round.
-[Change is an issue](/using-wasabi/ChangeCoins.md#why-change-is-an-issue).
-For this reason, whenever possible it is recommended to CoinJoin with exactly the required denomination for the current round (roughly 0.1 BTC) to not get any change back.
-
-3. Mix at different times.
-To avoid traffic detection and behavioral analysis, you should CoinJoin at different times (days and hours).
 :::
 
 :::details
@@ -1095,7 +1077,7 @@ It’s part of [BIP 39](https://github.com/bitcoin/bips/blob/master/bip-0039.med
 
 On the ColdCard you go to `> Advanced > MicroSD Card > Wasabi Wallet` and it will save a skeleton json-file to the MicroSD card in the hardware wallet.
 
-Read more [here](/using-wasabi/ColdWasabi.md).
+Read more [here](/using-wasabi/HardwareWallet.md).
 :::
 
 :::details
@@ -1104,7 +1086,7 @@ Read more [here](/using-wasabi/ColdWasabi.md).
 Take the MicroSD card from the ColdCard and plug it in the computer with the Wasabi Wallet software.
 In Wasabi Wallet go to the Wallet Manager, select Hardware Wallet option and in the bottom right corner click `Import Coldcard`.
 Now select the Wasabi skeleton json-file from the MicroSD card, if this fails you can manually enter the file location in Wasabi Wallet window and load the file.
-Read more [here](/using-wasabi/ColdWasabi.md#connecting-via-sd-card).
+Read more [here](/using-wasabi/HardwareWallet.md#connecting-via-sd-card).
 :::
 
 :::details
@@ -1112,7 +1094,7 @@ Read more [here](/using-wasabi/ColdWasabi.md#connecting-via-sd-card).
 
 In Wasabi Wallet you load your previously imported wallet (from Wasabi skeleton, or USB detection) and go to the `Receive` tab, here you enter a label for the observers of the incoming transaction and click `Generate Receive Address`.
 In the tab below the newly generated receive address can be viewed / copied.
-Read more [here](/using-wasabi/ColdWasabi.md).
+Read more [here](/using-wasabi/HardwareWallet.md).
 :::
 
 :::details
@@ -1121,7 +1103,7 @@ Read more [here](/using-wasabi/ColdWasabi.md).
 To send a transaction you will need to connect your hardware wallet and unlock the device (using PIN or password).
 Then go to the `Send` tab where you can specify the address to send to, the amount of bitcoin to spend and which coins to use as inputs.
 After filling in all transaction details you click `Send Transaction` to sign it with the connected hardware wallet and broadcast to the network.
-Read more [here](/using-wasabi/ColdWasabi.md#connecting-via-usb)
+Read more [here](/using-wasabi/HardwareWallet.md#connecting-via-usb)
 :::
 
 :::details
@@ -1131,7 +1113,7 @@ In the Wallet Explorer on the right side of the GUI, select `YourWallet>Advanced
 This brings up the `Build Transaction` tab where you can specify the address, amount of bitcoin and coins to use.
 Then by clicking `Build Transaction` a new tab will open containing the raw transaction data, here you click `Export Binary PSBT` to save the partially signed bitcoin transaction (PSBT) to a file.
 This file should be moved to the MicroSD card that you can then insert in the ColdCard for manual verification and signing.
-Read more [here](/using-wasabi/ColdWasabi.md#connecting-via-sd-card).
+Read more [here](/using-wasabi/HardwareWallet.md#connecting-via-sd-card).
 :::
 
 :::details
@@ -1140,7 +1122,7 @@ Read more [here](/using-wasabi/ColdWasabi.md#connecting-via-sd-card).
 On the ColdCard (Mk2, firmware 2.1.1 and up) you enter the PIN code to unlock the hardware wallet and press `> Ready To Sign` with the MicroSD card containing the previously generated transaction or PSBT-file.
 Verify the address and amount and the ColdCard will then create a signed.psbt and final.txn file on the MicroSD card.
 The finalized transaction (`xxx-final.txn`) can now be broadcast by Wasabi Wallet with the `Broadcast Transaction` tool, or even a radio or satellite dish if someone is listening!
-Read more [here](/using-wasabi/ColdWasabi.md#connecting-via-sd-card).
+Read more [here](/using-wasabi/HardwareWallet.md#connecting-via-sd-card).
 :::
 
 :::details
@@ -1149,7 +1131,7 @@ Read more [here](/using-wasabi/ColdWasabi.md#connecting-via-sd-card).
 In the top menu bar, go to `Tools > Broadcast Transaction` and in this tab click `Import Transaction`, now you can select the previously finalized (and signed) transaction file from the MicroSD card.
 If this fails you can manually type the path to this file in Wasabi Wallet to load the transaction.
 Now click `Broadcast Transaction` to send it off over Tor to a random Bitcoin node so it can flood over to the miners for confirmation in a block.
-Read more [here](/using-wasabi/ColdWasabi.md#connecting-via-sd-card).
+Read more [here](/using-wasabi/HardwareWallet.md#connecting-via-sd-card).
 :::
 
 :::details
@@ -1158,7 +1140,7 @@ Read more [here](/using-wasabi/ColdWasabi.md#connecting-via-sd-card).
 No, that is currently not possible.
 A coinjoin is a multi round interactive process, and requires fast signing by the participants, thus the keys need to be on a hot computer.
 Thus currently you have to send the bitcoins from your hardware wallet to a `hot` Wasabi Wallet, do the coinjoin and then send them back to a new address on the Hardware wallet for cold-storage.
-Read more [here](/using-wasabi/ColdWasabi.md#cold-wasabi-protocol)
+Read more [here](/using-wasabi/HardwareWallet.md#cold-wasabi-protocol)
 :::
 
 :::details
@@ -1193,6 +1175,13 @@ For the complete list of all the officially supported hardware wallets, click [h
 :::
 
 :::details
+### Can I use BitBox with Wasabi?
+
+No. Unfortunately, BitBox is not supported by Wasabi Wallet.
+For the complete list of all the officially supported hardware wallets, click [here](https://github.com/zkSNACKs/WalletWasabi/blob/master/WalletWasabi.Documentation/WasabiCompatibility.md#officially-supported-hardware-wallets).
+:::
+
+:::details
 ### How can I type in the passphrase of my Trezor T?
 
 After connecting the Trezor T to your computer and upon trying to load your wallet, you get a message on the Trezor T to choose where to type your passphrase, on the device or the host (computer), choose the first option (device) then enter the passprase using the touchscreen of your Trezor T.
@@ -1220,6 +1209,21 @@ You also have a list of all the transaction identification numbers for detailed 
 The check mark indicates that the transaction is confirmed in the longest proof-of-work blockchain.
 
 ![Wasabi Wallet History tab](/History.png "Wasabi Wallet History tab")
+:::
+
+:::details
+### How can I see coinjoins in the history list?
+
+Coinjoin transactions are indicated with a shield icon:
+
+![History Coinjoin](/HistoryCoinjoin.png "History Coinjoin")
+
+When the wallet has made multiple coinjoins, the coinjoins will be clustered.
+To see the individual coinjoins, the cluster can be expanded by clicking the arrow on the left:
+
+![History Coinjoin Expanded](/HistoryCoinjoinExpanded.png "History Coinjoin Expanded")
+
+A coinjoin is a payment within the same wallet, thus it only shows the coordination and mining fee leaving the wallet.
 :::
 
 :::details

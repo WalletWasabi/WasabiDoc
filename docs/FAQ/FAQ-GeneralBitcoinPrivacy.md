@@ -180,7 +180,7 @@ Someone operating a large number of nodes on the Bitcoin network might be able t
 It is relatively easy to avoid this on a computer by relaying all transactions through the Tor network.
 Wasabi routes all traffic via Tor’s SOCKS5 proxy, by default.
 
-To maintain your anonymity, use the Tor Browser or the TAILS operating system.
+To maintain your anonymity, use the Tor Browser or the Tails operating system, if possible.
 Route everything through Tor by default.
 
 It is also good practice to route your chats through the Tor network.
