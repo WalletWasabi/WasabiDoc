@@ -28,7 +28,5 @@ After an incorrect password is entered when opening a wallet, `Forgot Password` 
 
 ![Wasabi Wallet Forgot Password(/ForgotPassword.png "Wasabi Wallet Forgot Password")
 
-It will show more info about how it works and how to use it.
-It will guide you through the steps.
 First you will be asked questions, like _your most likely password_, _which language_, _which characters it contains_ etc.
 After that it will search if your password can be found.
