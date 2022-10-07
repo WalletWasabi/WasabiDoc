@@ -1223,12 +1223,8 @@ Udev rules instructions can be found [here](https://github.com/bitcoin-core/HWI/
 :::details
 ### How can I check the transactions history?
 
-In the `History` tab you see a list of all the transactions made with this Wasabi wallet.
-It includes the value being sent out of the wallet, meaning the payment to an external address and the fee.
-If the number is red, then you have sent sats out of the wallet - if the number is green, then you have received and stacked sats.
-A CoinJoin is a payment within the same wallet, thus it only shows the coordination and mining fee leaving the wallet.
-You also have a list of all the transaction identification numbers for detailed reference.
-The check mark indicates that the transaction is confirmed in the longest proof-of-work blockchain.
+The wallet's main page displays the history of all transactions made with this specific wallet.
+It includes receiving, sending, and coinjoin transactions.
 
 ![Wasabi Wallet History tab](/History.png "Wasabi Wallet History tab")
 :::
