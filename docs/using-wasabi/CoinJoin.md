@@ -32,13 +32,13 @@ At first wallet load, you can choose one of the coinjoin strategy profiles:
 By default, Wasabi starts automatically coinjoining the funds, or you can toggle to manual coinjoin start in the settings.
 If you want to coinjoin right now, then click the play button; if you want to stop coinjoin, then click the pause button.
 
-Autocoinjoin starts whenever there's more than 0.01 BTC non private in your wallet.
+Coinjoin starts automatically whenever the amount of non-private funds is above the `Auto-start coinjoin threshold` (0.01 BTC by default).
 Wallets with less than or equal to 0.01 BTC are in _PlebStop_ mode, where funds are not coinjoined automatically, you must press play manually to coinjoin.
 User can change the limit from the settings or turn coinjoin on manually by pressing the play button of the music box in the main view.
 
 Notice that it is not yet possible to coinjoin from a hardware wallet, the keys must be "hot" on your computer.
 
-Once a coin achieves enough privacy, the corresponding amount will show up in the software's main view as "private coins".
+Once a coin achieves enough privacy, the corresponding amount will show up in the software's main view as "PRIVATE".
 
 ### Fees
 
