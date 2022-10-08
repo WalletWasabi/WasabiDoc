@@ -9,34 +9,49 @@
 
 ## General
 
-@[youtube](XykixYdbFpA)
-
 ::::details
 ### How do I generate a new wallet?
 
 You can [generate as many new wallets](/using-wasabi/WalletGeneration.md) as you'd like, for no extra cost and without asking for permission.
-Go to the `Wallet Manager` tab and the `Generate Wallet` menu.
+Click the `Add Wallet` button in the bottom left corner of the main view or in the searchbar.
+
+![Add new wallet in Wasabi](/AddWalletButton.png "Add a new wallet in Wasabi")
+
 As with everything in Wasabi, you are required to label this new wallet.
-Make sure that you are precise so that you know what this wallet is for.
-The password is used to encrypt the private key (extracted from the extended private key) on the computer.
+Make sure that you are precise so that you know what this wallet is for and click `Continue`.
+
+![Name a new wallet in Wasabi](/AddWalletName.png "Name a new wallet in Wasabi")
+
+Add a password. 
+It is used to encrypt the private key (extracted from the extended private key) on the computer and needed to open the wallet.
+
+![Add a password in Wasabi](/AddWalletPassword.png "Add a password in Wasabi")
+
+Make sure that you properly back up and write down this password.
+Confirm the password and click `Continue`.
 
 :::danger Careful!!
 Without knowledge of the password, you CANNOT spend your bitcoin!!
 :::
 
-Make sure that you properly back up and write down this password.
-Please also read and agree to the [terms and conditions, the privacy policy and the legal statement](https://github.com/zkSNACKs/WalletWasabi/blob/master/WalletWasabi/Legal/Assets/LegalDocumentsWw2.txt).
-Now you can continue with clicking `Generate`.
-
-![Generate new wallet in Wasabi](/WalletManagerGenerateWallet.png "Generate new wallet in Wasabi")
-
-Now you will see the 12 recovery words, this is the mnemonic seed that you can use to back up and recover your wallet.
+Now you will see the 12 recovery words.
+This is the mnemonic seed that you can use to back up and recover your wallet.
 Make sure, and triple-check that you have done a proper backup of BOTH the password AND the mnemonic.
 When you only have the recovery words, but not the password, then you will NOT be able to recover your wallet.
 In order to protect your paper backup, consider storing the password and recovery words in two different locations.
-You have successfully setup your wallet when you click `I wrote down my Recovery Words!`
+When you've backed everything up, click `Continue`.
 
 ![Wasabi Wallet recovery words](/AddWalletRecoveryWords.png "Wasabi Wallet recovery words")
+
+In this page you can do a quick check that you've written down your mnemonic seed in the correct order. 
+Once you're done, click `Continue`.
+
+![Confirm recovery words](/AddWalletConfirmRecoveryWords.png "Confirm recovery words")
+
+Now you get to choose your wallets coinjoin strategy.
+
+![Wasabi Wallet coinjoin strategies](/CoinjoinStrategy.png "Wasabi Wallet coinjoin strategies")
+
 ::::
 
 ::::details
