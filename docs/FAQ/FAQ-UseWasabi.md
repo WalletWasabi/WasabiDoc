@@ -17,6 +17,10 @@ Click the `Add Wallet` button in the bottom left corner of the main view or in t
 
 ![Add new wallet in Wasabi](/AddWalletButton.png "Add a new wallet in Wasabi")
 
+Click `Create a new wallet`.
+
+![Create a new wallet in Wasabi](/AddWallet.png "Create a new wallet in Wasabi")
+
 As with everything in Wasabi, you are required to label this new wallet.
 Make sure that you are precise so that you know what this wallet is for and click `Continue`.
 
