@@ -12,7 +12,7 @@ They collaboratively build a transaction where each of them provides some coins 
 The concept has been around since the early days of Bitcoin, and it was formalized by the great Greg Maxwell in [this awesome introductory thread](https://bitcointalk.org/index.php?topic=279249.msg2983902).
 
 The goal is to gain privacy by breaking the link of which input "pays" which output so that none of the outputs can be attributed to the owner of the input.
-WabiSabi enables centrally coordinated coinjoins with variable amounts in a trustless (meaning nobody can steal) and private (meaning even the coordinator cannot spy) manner, as described in [WabiSabi paper](https://eprint.iacr.org/2021/206).
+WabiSabi enables centrally coordinated coinjoins with variable amounts in a trustless (meaning nobody can steal) and private (meaning even the coordinator cannot spy) manner, as described in the [WabiSabi paper](https://eprint.iacr.org/2021/206).
 
 [[toc]]
 
@@ -27,14 +27,16 @@ WabiSabi enables centrally coordinated coinjoins with variable amounts in a trus
 ### More details
 
 At first wallet load, you can choose one of the coinjoin strategy profiles:
+
 ![Coinjoin Strategy](CoinjoinStrategy.png)
 
-By default, Wasabi starts automatically coinjoining the funds, or you can toggle to manual coinjoin start in the settings.
-If you want to coinjoin right now, then click the play button; if you want to stop coinjoin, then click the pause button.
+By default, Wasabi starts automatically coinjoining received funds when the total value of the non-private coins is equal to or above the `Auto-start coinjoin threshold` (0.01 BTC by default).
+`Automatically start coinjoin` can be disabled from the coinjoin settings.
+In case you want to start the process manually, then click the play button; if you want to stop coinjoin, then click the pause button.
 
-Coinjoin starts automatically whenever the amount of non-private funds is above the `Auto-start coinjoin threshold` (0.01 BTC by default).
-Wallets with less than or equal to 0.01 BTC are in _PlebStop_ mode, where funds are not coinjoined automatically, you must press play manually to coinjoin.
-User can change the limit from the settings or turn coinjoin on manually by pressing the play button of the music box in the main view.
+Coinjoin starts automatically whenever the amount of non-private funds is equal to or above the `Auto-start coinjoin threshold` (0.01 BTC by default).
+Wallets with less than the `Auto-start coinjoin threshold` are in _PlebStop_ mode, where funds are not coinjoined automatically, you must press play manually to coinjoin.
+The user can change the threshold from the settings or start coinjoin manually by pressing the play button of the music box in the main view.
 
 Notice that it is not yet possible to coinjoin from a hardware wallet, the keys must be "hot" on your computer.
 
@@ -69,7 +71,7 @@ With Alice, you send the input and input ownership proof to the coordinator.
 
 The Wasabi coordinator now verifies that:
 
-* There is still room for more peers on this CoinJoin.
+* There is still room for more peers on this coinjoin.
 * The input has not been registered before, is not banned, is unspent, and that the input proof is valid.
 * The input has more than 5000 sats value.
  
@@ -82,7 +84,7 @@ The input registration phase ends when either: the number of registered inputs r
 
 There are many Alices (different users) registering their input in the first phase, and this takes a while.
 The connection confirmation phase makes sure that all of them are still online and ready to continue.
-The coordinator verifies the unique ID from all the Alices, and when everyone is still communicating.
+The coordinator verifies the unique ID from all the Alices, and if everyone is still communicating.
 The coordinator sends a zero value credential to each Alice for each successful connection confirmation.
 
 The round is abandoned and re-started if too many Alices have dropped, for example when their Wasabi is shut down, or when their Tor connection is temporarily broken.
@@ -103,8 +105,8 @@ Each of these reissuance is perfectly private, so the coordinator cannot link an
 Next, your Wasabi client generates a completely new Tor identity **Bob**, who is in no way tied to Alice.
 Bob sends to the Wasabi coordinator:
 
-* A unblinded credential signed by the coordinator
-* An address
+* An unblinded credential signed by the coordinator
+* A new unused bitcoin address
 
 Because the coordinator can verify his own credential, he knows that this credential came into existence after an input of at least this much value was registerd.
 However, he cannot know which input exactly.
@@ -112,15 +114,15 @@ However, he cannot know which input exactly.
 It is very important that the coordinator cannot link Alice to Bob.
 Because Alice has sent the cleartext input, and Bob sends the cleartext output.
 So, if the two were to be linked, then the coordinator can specifically link the input to the output, meaning that the anonymity set is 1.
-Because Alice received a credential of the coordinator, and because Bob is a new Tor identity not linked to Alice, the coordinator can verify that nobody is cheating, but he cannot deanonymize the peers.
+Because Alice received a credential from the coordinator, and because Bob is a new Tor identity not linked to Alice, the coordinator can verify that nobody is cheating, but he cannot deanonymize the peers.
 
 The output registration phase ends when the value of cleartext outputs plus change outputs is equal to the value of inputs, meaning all Bobs have registered.
-If after a timeout not all outputs are registered, then this round is abandoned, the missing peers are banned, and a new round is started.
+If after a timeout not all outputs are registered, then this round is abandoned, the missing peers are temporarily banned, and a new round is started.
 
 ### Signing
 
 Now that all inputs and outputs are registered, the Wasabi coordinator can start the [signing phase](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-signing-phase) by building the CoinJoin transaction with all the registered inputs, the anonset outputs, the change outputs and the coordinator fee output.
-He sends this transaction to all the Alices of this round.
+It sends this transaction to all the Alices of the round.
 Each user verifies that:
 
 * All inputs are included
@@ -133,11 +135,11 @@ The signing phase ends when the coordinator has received all the valid signature
 
 ### Broadcasting
 
-The CoinJoin transaction has been successfully built and signed, and it is now ready to be [broadcasted](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-broadcasting-phase) to the peers of the Bitcoin network.
+The coinjoin transaction has been successfully built and signed, and it is now ready to be [broadcasted](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-broadcasting-phase) to the peers of the Bitcoin network.
 The coordinator sends this transaction over the Tor network to random Bitcoin P2P nodes, and from there it is gossiped to other nodes and miners.
 Wasabi saves on mining fees by setting a confirmation target of roughly 24 hours.
 
-## Wasabi CoinJoin examples
+## Wasabi coinjoin examples
 
 Here's a list of Wasabi coinjoin examples and how they appear on a block explorer:
 
