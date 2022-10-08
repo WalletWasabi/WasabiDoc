@@ -367,7 +367,7 @@ or:
 ### How can I change the label of my receive address?
 
 You can change the label of your unused receive address by clicking on the edit icon.
-This is useful when you have generated a receiving address with a specific label, but then the cause for receiving has changed.
+This is useful when you have generated a receiving address with a specific label, but then the sender has changed.
 Take care with whom you have shared this address, because if you send it to several people, they might all send many coins to the same address.
 This is very bad for your privacy because of [address reuse](/why-wasabi/AddressReuse.md), and it confuses you with the labeling of each unique coin.
 
@@ -375,7 +375,7 @@ This is very bad for your privacy because of [address reuse](/why-wasabi/Address
 :::
 
 :::details
-### How can I edit the observers of my address after a transaction has gone through?
+### How can I edit the labels of my address after a transaction has gone through?
 
 To date there is no possibility to change the label of an address after it has sent or received bitcoins.
 :::
@@ -390,7 +390,7 @@ It is important that you avoid sending the same address to several different ind
 There is a risk that both of them send coins to this same destination, thus unnecessarily linking the payments.
 
 :::danger
-It is especially important to **NEVER** send your extended public key to any third party server.
+It is especially important to **NEVER** send your extended public key to any third party.
 This is a complete de-anonymization of your entire wallet!!
 :::
 ::::
@@ -398,9 +398,8 @@ This is a complete de-anonymization of your entire wallet!!
 :::details
 ### Why does Wasabi only use SegWit bech32 addresses?
 
-Wasabi was created after the activation of SegWit, and it makes sense to support the most advanced address type, which has numerous benefits.
-For example, due to the malleability fix of SegWit, you can now remix CoinJoin outputs which are currently unconfirmed.
-There are also large savings on mining fees for SegWit transactions.
+Wasabi was created after the activation of SegWit, and it made sense to support the most advanced address type, which has numerous benefits, like large savings on mining fees for SegWit transactions.
+Implementing Taproot hasn't been a priority, as the benefits of upgrading to it are negligible for Wasabi, at the moment.
 :::
 
 :::details
@@ -413,7 +412,7 @@ To check Bech32 adoption and wallets/exchanges support you can follow the [Bitco
 :::
 
 :::details
-### Where can I find my address QR code?
+### Where can I find my address QR code and the corresponding QR code?
 
 When a new address is generated the QR code, address and label are displayed.
 The QR code of an already generated address can be found at the `Unused Receive Addresses` list.
@@ -430,8 +429,9 @@ The QR Code is displayed and can be saved as a png file by clicking on the Save 
 ### What derivation paths does Wasabi use?
 
 Wasabi follows [BIP 84: Derivation scheme for P2WPKH Based Accounts](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki), so the main path is `m/84'/0'/0'`.
-On TestNet and RegTest Wasabi uses `m/84'/0'/0'`, and not the standard `m/84'/1'/0'`.
-Due to the CoinJoin implementation, the key depth can be rather large, thus when recovering the gap limit should be elevated to at least 100.
+On TestNet Wasabi uses the path `m/84'/1'/0'`.
+On RegTest it uses `m/84'/0'/0'`, and not the standard `m/84'/1'/0'` path.
+Due to the coinjoin implementation, the key depth can be rather large, thus when recovering, the gap limit should be elevated to at least 100.
 :::
 
 :::details
