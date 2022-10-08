@@ -20,12 +20,12 @@ Click the `Add Wallet` button in the bottom left corner of the main view or in t
 As with everything in Wasabi, you are required to label this new wallet.
 Make sure that you are precise so that you know what this wallet is for and click `Continue`.
 
-![Name a new wallet in Wasabi](/AddWalletName.png "Name a new wallet in Wasabi")
+![Name a new wallet in Wasabi](/AddWalletWalletName.png "Name a new wallet in Wasabi")
 
 Add a password. 
 It is used to encrypt the private key (extracted from the extended private key) on the computer and needed to open the wallet.
 
-![Add a password in Wasabi](/AddWalletPassword.png "Add a password in Wasabi")
+![Add a password in Wasabi](/AddWalletAddPassword.png "Add a password in Wasabi")
 
 Make sure that you properly back up and write down this password.
 Confirm the password and click `Continue`.
