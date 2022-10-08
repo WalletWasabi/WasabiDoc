@@ -121,7 +121,7 @@ If after a timeout not all outputs are registered, then this round is abandoned,
 
 ### Signing
 
-Now that all inputs and outputs are registered, the Wasabi coordinator can start the [signing phase](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-signing-phase) by building the CoinJoin transaction with all the registered inputs, the anonset outputs, the change outputs and the coordinator fee output.
+Now that all inputs and outputs are registered, the coordinator can start the [signing phase](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-signing-phase), by building the coinjoin transaction with all the registered inputs and outputs.
 It sends this transaction to all the Alices of the round.
 Each user verifies that:
 
