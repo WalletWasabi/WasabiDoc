@@ -412,7 +412,7 @@ To check Bech32 adoption and wallets/exchanges support you can follow the [Bitco
 :::
 
 :::details
-### Where can I find my address QR code and the corresponding QR code?
+### Where can I find my address QR code?
 
 When a new address is generated the QR code, address and label are displayed.
 The QR code of an already generated address can be found at the `Unused Receive Addresses` list.
