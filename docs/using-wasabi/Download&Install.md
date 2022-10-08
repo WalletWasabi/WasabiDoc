@@ -1,6 +1,6 @@
 ---
 {
-  "title": "Install-package",
+  "title": "Download & Install",
   "description": "A step by step guide on how to securely download, verify and install the software packages of Wasabi for Linux, Windows and Mac. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
 }
 ---
