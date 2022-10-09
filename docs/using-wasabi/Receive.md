@@ -63,8 +63,8 @@ Because UTXOs are not fungible, it is very important to know exactly which coin 
 For example, if I create a new address to receive a `0.5 BTC` payment from Andrew for a laptop that I sold to him then the label has to be: `Andrew`.
 
 Wasabi does not label transactions, but the addresses that control the coins.
-The label is not for describing the `reason for payment`, but rather to list the `involved parties`.
-Understanding this difference between labeling an address and describing a transaction is very important for our privacy.
+The label is not for describing the `reason for payment`, but rather to list those who know that this address is yours.
+Understanding this difference between labeling an address and describing a transaction is very important for your privacy.
 
 :::tip
 In Wasabi it is mandatory to give every receive address a label of those who know that this address is yours, so that later you know what to do with it, and it also helps the auto coin selection algorithm when sending.
