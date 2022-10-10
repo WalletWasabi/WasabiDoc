@@ -84,7 +84,7 @@ The coordinator verifies the unique ID from each Alice, and if everyone is still
 The coordinator sends a zero value credential to each Alice for each successful connection confirmation.
 
 The round is abandoned and re-started if too many Alices have dropped, for example when their Wasabi is shut down, or when their Tor connection is temporarily broken.
-The connection confirmation phase ends when all Alices have provided their unique ID, or after a timeout when the number of online Alices is still larger than the required number of peers.
+The connection confirmation phase ends when all Alices have provided their unique IDs, or after a timeout and the number of online Alices is still larger than the minimum number of inputs.
 
 ### Output registration
 
