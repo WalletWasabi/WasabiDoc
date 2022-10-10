@@ -998,7 +998,7 @@ The mnemonic is displayed as 12 recovery words that are only shown once during t
 ![Wasabi Wallet recovery words](/AddWalletRecoveryWords.png "Wasabi Wallet recovery words")
 
 :::danger
-In order to restore a wallet, you need BOTH the mnemonic words AND the password!
+In order to restore a wallet, you need BOTH the Recovery Words AND the password!
 :::
 
 It is a good idea to keep the two in separate analog backups, such as a laminated paper written with pencil.
