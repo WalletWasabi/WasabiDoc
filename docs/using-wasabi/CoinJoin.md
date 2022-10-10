@@ -78,7 +78,7 @@ The input registration phase ends when either: the number of registered inputs r
 
 ### Connection confirmation
 
-There are many Alices (different users) registering their input in the first phase, and this takes a while.
+There are many users registering their inputs (with different Alice for each input) in the first phase, and this takes a while.
 The connection confirmation phase makes sure that all of them are still online and ready to continue.
 The coordinator verifies the unique ID from all the Alices, and if everyone is still communicating.
 The coordinator sends a zero value credential to each Alice for each successful connection confirmation.
