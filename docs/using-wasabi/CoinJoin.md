@@ -67,7 +67,7 @@ With Alice, you send the input and input ownership proof to the coordinator.
 
 The Wasabi coordinator now verifies that:
 
-* There is still room for more peers on this coinjoin.
+* There is still room for more inputs on this coinjoin.
 * The input has not been registered before, is not banned, is unspent, and that the input proof is valid.
 * The input has more than 5000 sats value.
  
