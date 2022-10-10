@@ -124,7 +124,7 @@ Each user verifies that:
 * All inputs are included
 * All outputs are included
 
-She then signs the transaction with the private keys of her inputs.
+The client then signs the transaction with the private keys of the inputs.
 Alice sends the signature to the coordinator, who then verifies this information.
 
 The signing phase ends when the coordinator has received all the valid signatures for all the registered inputs.
