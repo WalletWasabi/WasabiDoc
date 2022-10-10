@@ -112,9 +112,11 @@ If you have already imported zkSNACKs' PGP public key, then jump to step 2.
 After the first run, a [data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) will be created.
 Among others, here is where your wallet files and your logs reside.
 
-(Note that this video was created on macOS, but the steps are the same for Linux)
 
-@[youtube](qFbv_b-bju4)
+<!--
+    (Note that this video was created on macOS, but the steps are the same for Linux)
+    @[youtube](qFbv_b-bju4)
+-->
 
 @[youtube](zPKpC9cRcZo)
 
@@ -132,7 +134,10 @@ If you're not sure what processor your device has, [check it](https://www.howtog
 4. At first startup, there will be a pop-up that Wasabi was downloaded from the internet.
 Click on `Open` and restart Wasabi.
 
-![Wasabi Wallet macOS signature verification](/InstallMacConfirm.png "Wasabi Wallet macOS signature verification")
+After the first run, a [data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) will be created.
+Among others, here is where your wallet files and your logs reside.
+
+
 
 ::::details
 ### Optional PGP Verification
@@ -160,10 +165,15 @@ If the message returned says `Good signature from zkSNACKs` and that it was sign
 	:::
 ::::
 
+<br><br>
 
-After the first run, a [data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) will be created.
-Among others, here is where your wallet files and your logs reside.
+@[youtube](ry6qIyQmzRE)
 
+@[youtube](QHIpEYYqddE)
+
+
+<!--
 @[youtube](_Zmc54XYzBA)
-
 @[youtube](NQCfYrv1Y7k)
+-->
+
