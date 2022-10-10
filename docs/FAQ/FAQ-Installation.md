@@ -9,7 +9,6 @@
 
 ## Installing the Package
 
-:::details
 ### Where can I download Wasabi?
 
 You can find the recent version of the compiled packages for Linux, Windows and Mac available on the official [wasabiwallet.io](https://wasabiwallet.io).
@@ -17,9 +16,7 @@ It's always best to download software directly from the official source acknowle
 In order to preserve your network level privacy from the very first step on, please consider visiting the Tor onion service [wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion).
 The old versions of the software can be found in the [releases](https://github.com/zksnacks/walletwasabi/releases) of the GitHub repository, [here](https://github.com/zksnacks/walletwasabi) you also find the libre & open source code for when you want to [build it yourself](/using-wasabi/BuildSource.md).
 Please take special care to verify the PGP signatures of zkSNACKs' PGP public key [${zksnacksPublicKeyFingerprint}](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt) over the software packages and code commits.
-:::
 
-::::details
 ### Why is it important to verify PGP signatures?
 
 :::danger
@@ -37,9 +34,7 @@ When you have a software package that was signed by this PGP public key, then yo
 This protects you against malicious man in the middle attacks where bad guys give you a fake version of Wasabi with malicious code.
 
 @[youtubePlaylist](PLPj3KCksGbSZkVpgAZjAFfFp4D0SHLnFw,psl35MisYxo)
-::::
 
-:::details
 ### How can I verify PGP signatures?
 
 On the [WasabiWallet.io](https://wasabiwallet.io) website you can download the packages of the latest release.
@@ -50,9 +45,7 @@ Everything is valid if it returns `Good signature from zkSNACKs` and that it was
 For an in-depth guide for [Debian and Ubuntu](/using-wasabi/InstallPackage.md#debian-and-ubuntu), [other Linux](/using-wasabi/InstallPackage.md#other-linux), [Windows](/using-wasabi/InstallPackage.md#windows), and [macOS](/using-wasabi/InstallPackage.md#macOS) see the main documentation.
 
 @[youtube](mTrClVA_o5A)
-:::
 
-:::details
 ### How do I install Wasabi on Debian and Ubuntu?
 
 [Download](/FAQ/FAQ-Installation.md#where-can-i-download-wasabi) the most recent `.deb` package and the `.deb.asc` signature file from the [wasabiwallet.io](https://wasabiwallet.io) or the [Tor onion service](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion).
@@ -65,9 +58,7 @@ Now install Wasabi with `sudo dpkg -i Wasabi-${currentVersion}.deb`, and run it 
 Check out the main documentation for a [step-by-step guide](/using-wasabi/InstallPackage.md#debian-and-ubuntu).
 
 @[youtube](mTrClVA_o5A,122)
-:::
 
-:::details
 ### How do I install Wasabi on other Linux?
 
 [Download](/FAQ/FAQ-Installation.md#where-can-i-download-wasabi) the most recent `.tar.gz` package and the `.tar.gz.asc` signature file from the [wasabiwallet.io](https://wasabiwallet.io) or the [Tor onion service](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion).
@@ -77,9 +68,7 @@ Check out the main documentation for a [step-by-step guide](/using-wasabi/Instal
 Verify the signature of the package with `gpg --verify Wasabi-${currentVersion}.tar.gz.asc` and ensure the software was signed by zkSNACKs' PGP public key [${zksnacksPublicKeyFingerprint}](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt).
 Now install Wasabi with `sudo tar -pxzf Wasabi-${currentVersion}.tar.gz`, and run it with `./wassabee`.
 Check out the main documentation for a [step-by-step guide](/using-wasabi/InstallPackage.md#other-linux).
-:::
 
-:::details
 ### How do I install Wasabi on Windows?
 
 [Download](/FAQ/FAQ-Installation.md#where-can-i-download-wasabi) the most recent `.msi` package and the `.msi.asc` signature file from the [wasabiwallet.io](https://wasabiwallet.io) or the [Tor onion service](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion).
@@ -93,9 +82,7 @@ The Wasabi package is signed and automatically verified on Windows upon installa
 Optionally, you can still verify the PGP signature of the package by `right-clicking on the signature file > More GpgEX options > Verify` and ensure the software was signed by zkSNACKs' PGP public key [${zksnacksPublicKeyFingerprint}](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt).
 Now install Wasabi by double-clicking the `.msi` file.
 Check out the main documentation for a [step-by-step guide](/using-wasabi/InstallPackage.md#windows).
-:::
 
-:::details
 ### How do I install Wasabi on macOS?
 
 [Download](/FAQ-Installation.md#where-can-i-download-wasabi) the most recent `.dmg` package and the `.dmg.asc` signature file from the [wasabiwallet.io](https://wasabiwallet.io) or the [Tor onion service](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion).
@@ -109,35 +96,27 @@ Now install Wasabi by double-clicking the `.dmg` file.
 Check out the main documentation for a [step-by-step guide](/using-wasabi/InstallPackage.md#mac).
 
 @[youtube](_Zmc54XYzBA)
-:::
 
-:::details
 ### How do I check the current version of Wasabi?
 
 In the GUI, go to the SearchBar at the top of the screen and click on `About Wasabi`. 
 Here the current version of your Wasabi is displayed.
 You can also verify the version using the command line by executing `wassabee --version` or `wassabeed --version` if you are on Windows.
 Wasabi is cutting edge software, so it is well-advised to stay up-to-date.
-:::
 
-:::details
 ### How do I know about a new version of Wasabi?
 
 When a new major version [v2.1.X] has been released, you'll see a notification in the bottom right status icon `Version 2.X.X.X is now available`.
 There are occasional silent releases like [v2.1.10.X] which fix issues that were introduced in a major release, and these are not announced in the GUI.
 The [website](https://wasabiwallet.io) always links to the most recent build of the software.
 It will also be announced on [Twitter](https://twitter.com/wasabiwallet) and [Reddit](https://reddit.com/r/WasabiWallet/).
-:::
 
-:::details
 ### How do I securely upgrade Wasabi?
 
 You can download the software build for the different operating systems on the main [website](https://wasabiwallet.io) or better over [Tor](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion).
 Make sure you also download the signatures of the build and verify them with [zkSNACKs' PGP public key](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt).
 For step-by-step instructions, follow [this guide](/using-wasabi/InstallPackage.md) or [see this video](https://youtu.be/DUc9A76rwX4).
-:::
 
-:::details
 ### Do I need to install Tor separately?
 
 No, because Wasabi has Tor built into the software.
@@ -148,15 +127,11 @@ You can turn off Tor in the Settings.
 Be careful, as this will compromise your privacy.
 When you coinjoin over clearnet, the coordinator would know the links between your inputs and outputs based on your IP address.
 When you broadcast a transaction over clearnet, the connected full node will know the link between your transaction and your IP address.
-:::
 
-:::details
 ### Can I install Wasabi on TAILS?
 
 Yes, it is possible to install Wasabi on Tails, but it is not [officially supported](https://github.com/zkSNACKs/WalletWasabi/blob/master/WalletWasabi.Documentation/WasabiCompatibility.md#officially-supported-operating-systems).
-:::
 
-:::details
 ### What are the differences between the Debian/Ubuntu version and the "Other Linux" version?
 
 `Debian/Ubuntu` version contains `.deb` package.
@@ -168,11 +143,9 @@ It installs Wasabi in your computer, so you're able to access it from start menu
 The "Other Linux" option is just a generic install method not targeted to Debian/Ubuntu specifically but that works on it anyway because it is still linux.
 
 There's no difference in the code, the same binaries are being delivered in different formats.
-:::
 
 ## Advanced Installation
 
-:::details
 ### How do I compile Wasabi from source?
 
 If you cannot wait until the next release, and you want to experience the most cutting-edge version of Wasabi, then you can [build the source code](/using-wasabi/BuildSource.md).
@@ -183,15 +156,11 @@ In order to build and run the Wallet software, change directory to `cd WalletWas
 Wasabi is written in C# with the .NET framework, and it is very easy to run it.
 Simply execute `dotnet run` from the `WalletWasabi.Fluent.Desktop` folder.
 You can update the master branch with `git pull`.
-:::
 
-:::details
 ### How can I verify the deterministic build?
 
 The guide for the deterministic builds can be found in the [WalletWasabi repository](https://github.com/zkSNACKs/WalletWasabi/blob/master/WalletWasabi.Documentation/Guides/DeterministicBuildGuide.md).
-:::
 
-::::details
 ### My antivirus marks Wasabi Wallet as a virus. Am I downloading the right software?
 
 After you have downloaded Wasabi from the [official website](https://wasabiwallet.io/) or from the [official GitHub repository](https://github.com/zkSNACKs/WalletWasabi/releases), make sure you have [verified the PGP signatures](/FAQ/FAQ-Installation.md#how-can-i-verify-pgp-signatures).
@@ -204,9 +173,7 @@ If you are still not sure, before starting Wasabi, you can check that it is safe
 Remember to report Wasabi as a safe software/false positive to your antivirus.
 In doing so you will help users who use the same antivirus.
 :::
-::::
 
-:::details
 ### Why is the executable called wassabee?
 
 The most obvious thing would be to call the executable `Wasabi Wallet.exe` on Windows and `Wasabi Wallet` on Linux and Mac.
@@ -218,4 +185,3 @@ But it's too long, it needs a faster way to launch: `wasabi`.
 However this is too generic, it'll certainly cause conflicts, we need to make it unique: `wassabee`.
 
 Also, this sounds awesome and is a [fun inside joke](https://www.youtube.com/watch?v=dLzFKx6ONZQ).
-:::

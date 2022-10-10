@@ -133,7 +133,7 @@ Click on `Open` and restart Wasabi.
 
 ![Wasabi Wallet macOS signature verification](/InstallMacConfirm.png "Wasabi Wallet macOS signature verification")
 
-::::details
+
 ### Optional PGP Verification
 
 If you have already imported zkSNACKs' PGP public key, then jump to step 4.
@@ -157,7 +157,6 @@ If the message returned says `Good signature from zkSNACKs` and that it was sign
 	The output from the verify command may contain `WARNING: This key is not certified with a trusted signature!`.
 	You can ignore this, but if you want to fully verify your download, you need to ask people you trust to confirm that the key fingerprint belongs to zkSNACKs.
 	:::
-::::
 
 
 After the first run, a [data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) will be created.
