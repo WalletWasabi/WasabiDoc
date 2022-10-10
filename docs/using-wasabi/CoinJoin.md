@@ -47,7 +47,7 @@ The round starts either as soon as enough inputs have been registered, or after 
 Just leave Wasabi running in the background of your computer, as coinjoining takes time.
 
 Remixing is free, as well as coinjoining coins 1 hop from coinjoin, although, Bitcoin network fees still do apply.
-So if you send a payment and receive a change output, Wasabi will automatically remix it without you having to pay coordinator fees again. 
+So if you send a payment and receive a change output, Wasabi will not charge you the coordinator fee for this change output again.
 The recipient of the payment will not have to pay the coordinator fee, as long he is making coinjoins with the same coordinator.
 
 ## WabiSabi protocol step-by-step
