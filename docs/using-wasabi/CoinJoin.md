@@ -112,7 +112,7 @@ Because Alice has sent the cleartext input, and Bob sends the cleartext output.
 So, if the two were to be linked, then the coordinator can specifically link the input to the output, meaning that the anonymity set is 1.
 Because Alice received a credential from the coordinator, and because Bob is a new Tor identity not linked to Alice, the coordinator can verify that nobody is cheating, but it cannot deanonymize the peers.
 
-The output registration phase ends when the value of cleartext outputs plus change outputs is equal to the value of inputs, meaning all Bobs have registered.
+The output registration phase ends when the value of cleartext outputs is equal to the value of inputs, meaning that all Bobs have registered.
 If after a timeout not all outputs are registered, then this round is abandoned, the missing peers are temporarily banned, and a new round is started.
 
 ### Signing
