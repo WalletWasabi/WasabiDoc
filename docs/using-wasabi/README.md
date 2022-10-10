@@ -20,7 +20,6 @@ Further tutorials about the different parts of the wallet, for newbies and power
 
 ### Installing Wasabi
 - [Install package](/using-wasabi/Download&Install.md)
-- [Build from source code](/using-wasabi/BuildSource.md)
 
 ### Using Wasabi
 - [Wallet Generation](/using-wasabi/WalletGeneration.md)
@@ -42,6 +41,7 @@ Further tutorials about the different parts of the wallet, for newbies and power
 - [Password Finder](/using-wasabi/PasswordFinder.md)
 
 ### Advanced Installing Wasabi
+- [Build from source code](/using-wasabi/BuildSource.md)
 - [Deterministic Build](/using-wasabi/DeterministicBuild.md)
 - [Wasabi Setup using Virtual Machines](/using-wasabi/WasabiSetupVM.md)
 

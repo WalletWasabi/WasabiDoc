@@ -165,8 +165,7 @@ module.exports = {
           collapsable: false,
           sidebarDepth: 2,
           children: [
-            "/using-wasabi/Download&Install.md",
-            "/using-wasabi/BuildSource.md"
+            "/using-wasabi/Download&Install.md"
           ]
         },
         {
@@ -208,6 +207,7 @@ module.exports = {
           collapsable: false,
           sidebarDepth: 2,
           children: [
+            "/using-wasabi/BuildSource.md",
             "/using-wasabi/DeterministicBuild.md",
             "/using-wasabi/WasabiSetupVM.md"
           ]
