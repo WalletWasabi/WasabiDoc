@@ -40,15 +40,15 @@ Once a coin achieves enough privacy, the corresponding amount will show up in th
 
 ### Fees
 
-A 0.3% coordinator fee will be taken from fresh coins bigger than 0.01 BTC.
-Smaller ones don't pay coordinator fees at all, according to _PlebsDontPay_ rule.
+A 0.3 % coordinator fee will be taken from fresh coins bigger than 0.01 BTC.
+Smaller ones don't pay coordinator fee at all, according to the _PlebsDontPay_ threshold.
 
-The round starts either as soon as enough inputs have been registered, or after the input registration time is reached and as long as the minimum number of inputs are registered.
+The round starts either as soon as enough inputs have been registered, or after the input registration time is reached and as long as the minimum number of inputs is satisfied.
 Just leave Wasabi running in the background of your computer, as coinjoining takes time.
 
 Remixing is free, as well as coinjoining coins 1 hop from coinjoin, although, Bitcoin network fees still do apply.
 So if you send a payment and receive a change output, Wasabi will automatically remix it without you having to pay coordinator fees again. 
-The recipient of the payment will not have to pay coordinator fee, as long he is making coinjoins with the same coordinator.
+The recipient of the payment will not have to pay the coordinator fee, as long he is making coinjoins with the same coordinator.
 
 ## WabiSabi protocol step-by-step
 
@@ -74,7 +74,7 @@ The Wasabi coordinator now verifies that:
 Only when all these checks are valid does the coordinator allow the input.
 The coordinator creates and sends a credential back to Alice, which has the same amount as the input minus fees.
 
-The input registration phase ends when either: the number of registered inputs reaches the maximum, or when the time elapsed and the minimum number of inputs is registered.
+The input registration phase ends when either: the number of registered inputs reaches the maximum, or when the time elapsed and the minimum number of inputs is satisfied.
 
 ### Connection confirmation
 
@@ -92,10 +92,10 @@ Now that all peers are online, we are ready to proceed with the [output registra
 
 First, every client needs to change the value of their credential, to the desired output value.
 For this, the client presents to the coordinator two old credentials, and two newly created ones.
-The coordinator does not know the amount value of any of those credentials, but he can verify, that the two pairs sum up to exactly the same value.
+The coordinator does not know the amount value of any of those credentials, but it can verify, that the two pairs sum up to exactly the same value.
 For example, a user can present one 5 btc and one 0 btc credential, and redeem one 2 btc and one 3 btc credential.
 Or a user can present one 4 btc and one 1 btc credential, and redeem one 5 btc and one 0 btc credential.
-After potentially many rounds of reissuance, each client has exactly the amount credential he desires.
+After potentially many rounds of reissuance, each client has exactly the amount credential it desires.
 Each of these reissuance is perfectly private, so the coordinator cannot link any of them to the same user.
 
 Next, your Wasabi client generates a completely new Tor identity **Bob**, who is in no way tied to Alice.
@@ -104,13 +104,13 @@ Bob sends to the Wasabi coordinator:
 * An unblinded credential signed by the coordinator
 * A new unused bitcoin address
 
-Because the coordinator can verify his own credential, he knows that this credential came into existence after an input of at least this much value was registerd.
-However, he cannot know which input exactly.
+Because the coordinator can verify its own credential, it knows that this credential came into existence after an input of at least this much value was registered.
+However, it cannot know which input exactly.
 
 It is very important that the coordinator cannot link Alice to Bob.
 Because Alice has sent the cleartext input, and Bob sends the cleartext output.
 So, if the two were to be linked, then the coordinator can specifically link the input to the output, meaning that the anonymity set is 1.
-Because Alice received a credential from the coordinator, and because Bob is a new Tor identity not linked to Alice, the coordinator can verify that nobody is cheating, but he cannot deanonymize the peers.
+Because Alice received a credential from the coordinator, and because Bob is a new Tor identity not linked to Alice, the coordinator can verify that nobody is cheating, but it cannot deanonymize the peers.
 
 The output registration phase ends when the value of cleartext outputs plus change outputs is equal to the value of inputs, meaning all Bobs have registered.
 If after a timeout not all outputs are registered, then this round is abandoned, the missing peers are temporarily banned, and a new round is started.
