@@ -80,7 +80,7 @@ The input registration phase ends when either: the number of registered inputs r
 
 There are many users registering their inputs (with different Alice for each input) in the first phase, and this takes a while.
 The connection confirmation phase makes sure that all of them are still online and ready to continue.
-The coordinator verifies the unique ID from all the Alices, and if everyone is still communicating.
+The coordinator verifies the unique ID from each Alice, and if everyone is still communicating.
 The coordinator sends a zero value credential to each Alice for each successful connection confirmation.
 
 The round is abandoned and re-started if too many Alices have dropped, for example when their Wasabi is shut down, or when their Tor connection is temporarily broken.
