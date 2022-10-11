@@ -5,7 +5,7 @@
 }
 ---
 
-# Install package
+# Download & Install
 
 [[toc]]
 
