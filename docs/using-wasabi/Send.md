@@ -58,7 +58,6 @@ Optionally, you can specify the dollar amount to send instead.
 
 ![Wasabi Wallet Payment Successful](/PaymentSuccessful.png "Wasabi Wallet Payment Successful")
 
-
 ## Coins
 
 A coin is an unspent transaction output (UTXO): a chunk of bitcoin that can be sent in a future transaction.
