@@ -80,7 +80,7 @@ Any line of code written to support a random shitcoin takes away scarce develope
 
 It is difficult to determine a sufficient anonymity score since enough research hasn’t been conducted to provide a definitive answer.
 The right anonymity score depends on your own personal threat model.
-However, the rough consensus among many privacy researchers is that an anonymity score above 50 could be considered sufficient.
+However, the rough consensus is that with WabiSabi an anonymity score of 2 and above could be considered sufficient.
 :::
 
 :::details
