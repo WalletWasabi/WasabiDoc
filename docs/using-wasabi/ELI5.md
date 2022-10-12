@@ -29,7 +29,7 @@ Installing Wasabi is super-easy.
 Go to the official website [wasabiwallet.io](https://wasabiwallet.io) and download the version for your operating system.
 You can then install Wasabi as you would do any other software on your computer.
 
-See [this chapter](/using-wasabi/Download&Install.md) for a detailed step-by-step tutorial for all operating systems, and also how to verify the PGP signature.
+See [this chapter](/using-wasabi/InstallPackage.md) for a detailed step-by-step tutorial for all operating systems, and also how to verify the PGP signature.
 
 ## Generating a Wallet
 

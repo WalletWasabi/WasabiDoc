@@ -165,7 +165,7 @@ module.exports = {
           collapsable: false,
           sidebarDepth: 2,
           children: [
-            "/using-wasabi/Download&Install.md",
+            "/using-wasabi/InstallPackage.md",
             "/using-wasabi/BuildSource.md"
           ]
         },
