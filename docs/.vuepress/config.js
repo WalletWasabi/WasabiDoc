@@ -179,7 +179,7 @@ module.exports = {
             "/using-wasabi/Receive.md",
             "/using-wasabi/CoinJoin.md",
             "/using-wasabi/Send.md",
-            "/using-wasabi/HardwareWallet.md",
+            "/using-wasabi/ColdWasabi.md",
             "/using-wasabi/BitcoinFullNode.md"
           ]
         },
