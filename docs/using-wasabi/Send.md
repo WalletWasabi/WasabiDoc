@@ -54,7 +54,7 @@ Optionally, you can specify the dollar amount to send instead.
 
 ![Wasabi Wallet Send Password](/SendPassword.png "Wasabi Wallet Send Password")
 
-9. Transaction succesfully sent!
+9. Transaction successfully sent!
 
 ![Wasabi Wallet Payment Successful](/PaymentSuccessful.png "Wasabi Wallet Payment Successful")
 

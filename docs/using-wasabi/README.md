@@ -19,7 +19,7 @@ Further tutorials about the different parts of the wallet, for newbies and power
 - [Explain Wasabi like I'm 5](/using-wasabi/ELI5.md)
 
 ### Installing Wasabi
-- [Install package](/using-wasabi/Download&Install.md)
+- [Install package](/using-wasabi/InstallPackage.md)
 - [Build from source code](/using-wasabi/BuildSource.md)
 
 ### Using Wasabi
@@ -28,7 +28,7 @@ Further tutorials about the different parts of the wallet, for newbies and power
 - [Receive](/using-wasabi/Receive.md)
 - [CoinJoin](/using-wasabi/CoinJoin.md)
 - [Send](/using-wasabi/Send.md)
-- [Hardware Wallet](/using-wasabi/HardwareWallet.md)
+- [Hardware Wallet](/using-wasabi/ColdWasabi.md)
 - [Bitcoin Full Node](/using-wasabi/BitcoinFullNode.md)
 
 ### Best Practices
