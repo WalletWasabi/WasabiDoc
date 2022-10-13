@@ -24,7 +24,7 @@
     "@vuepress/plugin-back-to-top": "1.9.7",
     "gh-pages": "4.0.0",
     "markdown-it-custom-block": "0.1.2",
-    "vuepress": "1.9.7"
+    "vuepress": "^0.14.11"
   },
   "engines": {
     "node": ">=10.16"
