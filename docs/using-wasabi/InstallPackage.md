@@ -54,8 +54,6 @@ You will also have an icon in your Start Menu and on your Desktop.
 After the first run, a [data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) will be created. 
 Among others, here is where your wallet files and your logs reside.
 
-@[youtube](tkaaC8yET1o)
-
 ## Debian and Ubuntu
 
 If you have already imported zkSNACKs' PGP public key, then jump to step 2.
@@ -81,8 +79,6 @@ If the message returned says `Good signature from zkSNACKs` and that it was sign
 
 After the first run, a [data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) will be created.
 Among others, here is where your wallet files and your logs reside.
-
-@[youtube](DUc9A76rwX4)
 
 ## Other Linux
 
@@ -112,14 +108,6 @@ If you have already imported zkSNACKs' PGP public key, then jump to step 2.
 After the first run, a [data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) will be created.
 Among others, here is where your wallet files and your logs reside.
 
-
-<!--
-    (Note that this video was created on macOS, but the steps are the same for Linux)
-    @[youtube](qFbv_b-bju4)
--->
-
-@[youtube](zPKpC9cRcZo)
-
 ## macOS
 
 1. [Download](https://wasabiwallet.io/#download) the `.dmg` package of Wasabi ${currentVersion} for your machine's processor.
@@ -136,8 +124,6 @@ Click on `Open` and restart Wasabi.
 
 After the first run, a [data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) will be created.
 Among others, here is where your wallet files and your logs reside.
-
-
 
 ::::details
 ### Optional PGP Verification
@@ -165,15 +151,6 @@ If the message returned says `Good signature from zkSNACKs` and that it was sign
 	:::
 ::::
 
-<br><br>
-
 @[youtube](ry6qIyQmzRE)
 
 @[youtube](QHIpEYYqddE)
-
-
-<!--
-@[youtube](_Zmc54XYzBA)
-@[youtube](NQCfYrv1Y7k)
--->
-
