@@ -244,6 +244,16 @@ The timer of the loading wallet page runs out when all the block filters and all
 :::
 
 :::details
+### Why does the Tor status icon have a warning triangle?
+
+In case if the Tor network is having [issues](https://status.torproject.org/), Wasabi notifies this and displays it.
+For example, when Tor is experiencing a DDoS attack.
+Hover over the icon with the cursor to display more information.
+
+![Tor Status Icon DDoS](/TorStatusIconDDoS.png "Tor Status Icon DDoS")
+:::
+
+:::details
 ### How long does the initial, and a subsequent synchronization take?
 
 It usually only takes a couple of seconds to scan the block filters, and to download and parse the blocks.
