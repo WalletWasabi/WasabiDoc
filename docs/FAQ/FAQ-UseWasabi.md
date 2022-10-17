@@ -244,6 +244,13 @@ The timer of the loading wallet page runs out when all the block filters and all
 :::
 
 :::details
+### Does the Tor warning triangle mean that my privacy is at risk?
+
+No. In case of a Tor DDoS attack, this impacts the performance but it does not hurt/decrease your Wasabi privacy.
+You may experience Wasabi to be slower than usual.
+:::
+
+:::details
 ### How long does the initial, and a subsequent synchronization take?
 
 It usually only takes a couple of seconds to scan the block filters, and to download and parse the blocks.
