@@ -54,7 +54,7 @@ You will also have an icon in your Start Menu and on your Desktop.
 After the first run, a [data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) will be created. 
 Among others, here is where your wallet files and your logs reside.
 
-@[youtube](tkaaC8yET1o)
+[![Watch the video](https://img.youtube.com/vi/tkaaC8yET1o/maxresdefault.jpg)](https://youtu.be/tkaaC8yET1o)
 
 ## Debian and Ubuntu
 
@@ -82,7 +82,7 @@ If the message returned says `Good signature from zkSNACKs` and that it was sign
 After the first run, a [data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) will be created.
 Among others, here is where your wallet files and your logs reside.
 
-@[youtube](DUc9A76rwX4)
+[![Watch the video](https://img.youtube.com/vi/DUc9A76rwX4/maxresdefault.jpg)](https://youtu.be/DUc9A76rwX4)
 
 ## Other Linux
 
@@ -114,9 +114,9 @@ Among others, here is where your wallet files and your logs reside.
 
 (Note that this video was created on macOS, but the steps are the same for Linux)
 
-@[youtube](qFbv_b-bju4)
+[![Watch the video](https://img.youtube.com/vi/qFbv_b-bju4/maxresdefault.jpg)](https://youtu.be/qFbv_b-bju4)
 
-@[youtube](zPKpC9cRcZo)
+[![Watch the video](https://img.youtube.com/vi/zPKpC9cRcZo/maxresdefault.jpg)](https://youtu.be/zPKpC9cRcZo)
 
 ## macOS
 
@@ -162,6 +162,6 @@ If the message returned says `Good signature from zkSNACKs` and that it was sign
 After the first run, a [data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) will be created.
 Among others, here is where your wallet files and your logs reside.
 
-@[youtube](_Zmc54XYzBA)
+[![Watch the video](https://img.youtube.com/vi/_Zmc54XYzBA/maxresdefault.jpg)](https://youtu.be/_Zmc54XYzBA)
 
-@[youtube](NQCfYrv1Y7k)
+[![Watch the video](https://img.youtube.com/vi/NQCfYrv1Y7k/maxresdefault.jpg)](https://youtu.be/NQCfYrv1Y7k)

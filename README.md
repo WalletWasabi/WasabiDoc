@@ -86,8 +86,9 @@ They can be embedded via the following markdown tags:
 Youtube videos and playlists can be embedded via the following custom markdown tags:
 
 ```md
-@[youtube](VIDEO_ID)
-@[youtubePlaylist](PLAYLIST_ID)
+[![Title of the video](https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg)](https://youtu.be/VIDEO_ID)
+[![Title of the video](https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg)](https://youtu.be/VIDEO_ID?t=123)
+[![Title of the playlist](https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg)](https://youtu.be/VIDEO_ID?list=PLAYLIST_ID)
 ```
 
 Optionally you can also specify the start position of a video in seconds (e.g. starts at 100 seconds):

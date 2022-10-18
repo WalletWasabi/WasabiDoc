@@ -24,11 +24,11 @@ There are many Wasabikas working with great effort and care to manifest this pow
 [Over 50 peers](https://github.com/zkSNACKs/WalletWasabi/graphs/contributors) have already contributed to the repository.
 Four of the main contributors are [Ádám Ficsor](https://github.com/nopara73) [co-founder and former CTO of [zkSNACKs Ltd](https://zksnacks.com/), co-author of the [zero link Bitcoin fungibility framework](https://github.com/nopara73/ZeroLink)], [Lucas Ontivero](https://github.com/lontivero) [lead engineer of [zkSNACKs Ltd](https://zksnacks.com/)], [Dávid Molnár](https://github.com/molnard) [CTO of [zkSNACKs Ltd](https://zksnacks.com/)], and [Dan Walmsley](https://github.com/danwalmsley) [co-maintainer of [Avalonia UI Framework](https://github.com/AvaloniaUI/Avalonia)].
 
-@[youtube](F8xNSOhbWrw)
+[![Watch the video](https://img.youtube.com/vi/F8xNSOhbWrw/maxresdefault.jpg)](https://youtu.be/F8xNSOhbWrw)
 
-@[youtube](Yg7_3LIutJA)
+[![Watch the video](https://img.youtube.com/vi/Yg7_3LIutJA/maxresdefault.jpg)](https://youtu.be/Yg7_3LIutJA)
 
-@[youtube](X9BB_9faJE8)
+[![Watch the video](https://img.youtube.com/vi/X9BB_9faJE8/maxresdefault.jpg)](https://youtu.be/X9BB_9faJE8)
 
 ### Who reviews and merges the pull requests?
 

@@ -9,7 +9,7 @@
 
 ## General
 
-@[youtube](XykixYdbFpA)
+[![Watch the video](https://img.youtube.com/vi/XykixYdbFpA/maxresdefault.jpg)](https://youtu.be/XykixYdbFpA)
 
 ### How do I generate a new wallet?
 
@@ -392,9 +392,9 @@ In this case you have to wait until your transaction is confirmed in a block, an
 
 ## Send
 
-@[youtube](PRlAAxunmdU)
+[![Watch the video](https://img.youtube.com/vi/PRlAAxunmdU/maxresdefault.jpg)](https://youtu.be/PRlAAxunmdU)
 
-@[youtube](AdmlM-Qvco0)
+[![Watch the video](https://img.youtube.com/vi/AdmlM-Qvco0/maxresdefault.jpg)](https://youtu.be/AdmlM-Qvco0)
 
 ### What are coins?
 
@@ -616,7 +616,7 @@ So when sending, less than 0.00787086 BTC (to cover the mining fees) should be e
 
 ## CoinJoin
 
-@[youtube](ypfZT9GlqTw)
+[![Watch the video](https://img.youtube.com/vi/ypfZT9GlqTw/maxresdefault.jpg)](https://youtu.be/ypfZT9GlqTw)
 
 ### What's the legal status of Wasabi/CoinJoin?
 
@@ -628,7 +628,7 @@ Basically we can continue to operate like now and [it is compliant](/why-wasabi/
 
 Here's a great explanation about it:
 
-@[youtube](tLOMcU8MhWM,1305)
+[![Watch the video](https://img.youtube.com/vi/tLOMcU8MhWM/maxresdefault.jpg)](https://youtu.be/tLOMcU8MhWM?t=1305)
 
 ### What is the minimum amount required to coinjoin?
 
@@ -905,12 +905,11 @@ Type in your recovery words in the correct order, click on `Verify` and it will 
 
 ## Hardware Wallet
 
-@[youtube](aU8ysH9JH9M)
+[![Watch the video](https://img.youtube.com/vi/aU8ysH9JH9M/maxresdefault.jpg)](https://youtu.be/aU8ysH9JH9M)
 
-@[youtube](kocEpndQcsg)
+[![Watch the video](https://img.youtube.com/vi/kocEpndQcsg/maxresdefault.jpg)](https://youtu.be/kocEpndQcsg)
 
-@[youtube](sM2uhyROpAQ)
-
+[![Watch the video](https://img.youtube.com/vi/sM2uhyROpAQ/maxresdefault.jpg)](https://youtu.be/sM2uhyROpAQ)
 
 ### What hardware wallets does Wasabi support?
 
@@ -1051,7 +1050,7 @@ There are three different ways of using your [Bitcoin full node with Wasabi](/us
 
 ![Wasabi Wallet local Bitcoin Knots full node integration](/SettingsBitcoinCore.png "Wasabi Wallet local Bitcoin Knots full node integration")
 
-@[youtube](gWo2RAkIVrE)
+[![Watch the video](https://img.youtube.com/vi/gWo2RAkIVrE/maxresdefault.jpg)](https://youtu.be/gWo2RAkIVrE)
 
 ### How can I turn off Tor?
 
@@ -1122,9 +1121,9 @@ Please note that Wasabi is designed for the dark theme, and some color schemes m
 
 ## Coin Control Best Practices
 
-@[youtube](iyJ81JRvLQk)
+[![Watch the video](https://img.youtube.com/vi/iyJ81JRvLQk/maxresdefault.jpg)](https://youtu.be/iyJ81JRvLQk)
 
-@[youtube](k4VzJ6dUT9I)
+[![Watch the video](https://img.youtube.com/vi/k4VzJ6dUT9I/maxresdefault.jpg)](https://youtu.be/k4VzJ6dUT9I)
 
 ### Can I consolidate anonset coins?
 
@@ -1136,7 +1135,7 @@ That said, if you combine only a couple of mixed coins, you might not reveal you
 Never consolidate <img src="/ShieldRed.png" alt="Wasabi Wallet red shield anonymity set" title="Wasabi Wallet red shield anonymity set" class="shield" /> unmixed coins with <img src="/ShieldCheckmark.png" alt="Wasabi Wallet green checkmark shield anonymity set" title="Wasabi Wallet green checkmark shield anonymity set" class="shield" /> <img src="/ShieldGreen.png" alt="Wasabi Wallet green shield anonymity set" title="Wasabi Wallet green shield anonymity set" class="shield" /> <img src="/ShieldYellow.png" alt="Wasabi Wallet yellow shield anonymity set" title="Wasabi Wallet yellow shield anonymity set" class="shield" /> mixed coins, as this negates the privacy benefits of the CoinJoin.
 :::
 
-@[youtube](Tk8-N1kHa4g)
+[![Watch the video](https://img.youtube.com/vi/Tk8-N1kHa4g/maxresdefault.jpg)](https://youtu.be/Tk8-N1kHa4g)
 
 ### How can I send my anonset coins to my hardware wallet?
 
@@ -1168,7 +1167,7 @@ For more information, see this [dedicated chapter](/using-wasabi/ChangeCoins.md)
 Wasabi creates anonymity set for multiple denominations in one round, these are 0.1, 0.2, 0.4, 0.8, 1.6, 3.2, ... bitcoin!
 Read more: [What are the equal denominations created in one mixing round?](/FAQ/FAQ-UseWasabi.md#what-are-the-equal-denominations-created-in-one-mixing-round)
 
-@[youtube](3Ezru07J674)
+[![Watch the video](https://img.youtube.com/vi/3Ezru07J674/maxresdefault.jpg)](https://youtu.be/3Ezru07J674)
 
 ### Why do my coins occasionally get banned from participating in CoinJoin?
 

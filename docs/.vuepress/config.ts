@@ -1,19 +1,7 @@
 import resolve from 'path'
 import defaultTheme from '@vuepress/theme-default'
 import slugify from '@vuepress/shared-utils'
-import customBlock from 'markdown-it-custom-block'
 import searchPlugin from '@vuepress/plugin-search'
-
-const youtubeEmbed = (id, path) => `
-  <div class="ytEmbed" data-id="${id}" style="background-image:url(https://img.youtube.com/vi/${id}/hqdefault.jpg);">
-    <iframe
-      title="YouTube ${id}"
-      data-src="https://www.youtube-nocookie.com/embed/${path}&autoplay=1&autohide=1&modestbranding=1&color=white&rel=0"
-      frameborder="0"
-      allow="autoplay;encrypted-media;picture-in-picture"
-      allowfullscreen
-    ></iframe>
-  </div>`
 
 const themeColor = "#211b24"
 
@@ -26,7 +14,7 @@ export default {
         repo: "zkSNACKs/WasabiDoc",
         docsDir: "docs",
         editLinks: true,
-        lastUpdated: 'Last Updated',
+        //lastUpdated: 'Last Updated',
         algolia: {
             indexName: 'wasabiwallet',
             apiKey: 'c9d9b7688e0f9e6d0ed534655321a424',
@@ -87,7 +75,7 @@ export default {
             text: "Glossary",
             link: "/glossary/"
         }],
-            sidebar:{
+        sidebar: {
             "/why-wasabi/": [{
                 text: "Why Privacy",
                 collapsable: false,
@@ -228,7 +216,16 @@ export default {
                 .loader(resolve(__dirname, './variables'))
                 .end()
         },
-        markdown: {
+   /*     markdownit()
+        .use(customBlock, {
+            youtube(arg) {
+                const [id, start] = arg.split(',')
+                const path = start ? `${id}?start=${start}` : `${id}?`
+                return youtubeEmbed(id, path)
+            }
+        })*/
+
+        /*markdownit: {
             extendMarkdown(md) {
                 md.use(customBlock, {
                     youtube(arg) {
@@ -243,14 +240,14 @@ export default {
                     }
                 })
             }
-        }
+        }*/
     }),
     plugins: [
         "@vuepress/back-to-top", ["container", {
             type: "details",
             render(tokens, idx) {
                 const token = tokens[idx]
-                    // turn details headline into summary
+                // turn details headline into summary
                 if (token.type === 'container_details_open') {
                     const next = tokens[idx + 1]
                     const match = token.info.trim().match(/^details\s+(.*)$/)
@@ -258,10 +255,10 @@ export default {
                     if (next.type === 'heading_open' && !title) {
                         const headContent = tokens[idx + 2]
                         const headClose = tokens[idx + 3]
-                            // hide headline and its contents
+                        // hide headline and its contents
                         next.hidden = headClose.hidden = headContent.hidden = true
                         headContent.children = []
-                            // extract title
+                        // extract title
                         title = headContent.content || ''
                     } else {
                         title = ''
@@ -274,14 +271,14 @@ export default {
             }
         }],
         searchPlugin({
-          // getExtraFields: (page) => page.frontmatter.tags,
-          maxSuggestions: 15,
-          hotKeys: ['s', '/'],
-          locales: {
-            '/': {
-              placeholder: 'Search...',
+            // getExtraFields: (page) => page.frontmatter.tags,
+            maxSuggestions: 15,
+            hotKeys: ['s', '/'],
+            locales: {
+                '/': {
+                    placeholder: 'Search...',
+                }
             }
-          }
         })
     ]
 }

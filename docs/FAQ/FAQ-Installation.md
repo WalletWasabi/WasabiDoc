@@ -33,7 +33,7 @@ You can verify that the PGP public key [${zksnacksPublicKeyFingerprint}](https:/
 When you have a software package that was signed by this PGP public key, then you can be sure that this is an official release approved by zkSNACKs.
 This protects you against malicious man in the middle attacks where bad guys give you a fake version of Wasabi with malicious code.
 
-@[youtubePlaylist](PLPj3KCksGbSZkVpgAZjAFfFp4D0SHLnFw,psl35MisYxo)
+[![Watch the video](https://img.youtube.com/vi/PLPj3KCksGbSZkVpgAZjAFfFp4D0SHLnFw/maxresdefault.jpg)](https://youtu.be/psl35MisYxo?list=PLPj3KCksGbSZkVpgAZjAFfFp4D0SHLnFw)
 
 ### How can I verify PGP signatures?
 
@@ -44,7 +44,7 @@ Everything is valid if it returns `Good signature from zkSNACKs` and that it was
 
 For an in-depth guide for [Debian and Ubuntu](/using-wasabi/InstallPackage.md#debian-and-ubuntu), [other Linux](/using-wasabi/InstallPackage.md#other-linux), [Windows](/using-wasabi/InstallPackage.md#windows), and [macOS](/using-wasabi/InstallPackage.md#macOS) see the main documentation.
 
-@[youtube](mTrClVA_o5A)
+[![Watch the video](https://img.youtube.com/vi/mTrClVA_o5A/maxresdefault.jpg)](https://youtu.be/mTrClVA_o5A)
 
 ### How do I install Wasabi on Debian and Ubuntu?
 
@@ -57,7 +57,7 @@ Verify the signature of the package with `gpg --verify Wasabi-${currentVersion}.
 Now install Wasabi with `sudo dpkg -i Wasabi-${currentVersion}.deb`, and run it with `wassabee`.
 Check out the main documentation for a [step-by-step guide](/using-wasabi/InstallPackage.md#debian-and-ubuntu).
 
-@[youtube](mTrClVA_o5A,122)
+[![Watch the video](https://img.youtube.com/vi/mTrClVA_o5A/maxresdefault.jpg)](https://youtu.be/mTrClVA_o5A?t=122)
 
 ### How do I install Wasabi on other Linux?
 
@@ -95,7 +95,7 @@ Optionally, you can still verify the PGP signature of the package with `sudo gpg
 Now install Wasabi by double-clicking the `.dmg` file.
 Check out the main documentation for a [step-by-step guide](/using-wasabi/InstallPackage.md#mac).
 
-@[youtube](_Zmc54XYzBA)
+[![Watch the video](https://img.youtube.com/vi/_Zmc54XYzBA/maxresdefault.jpg)](https://youtu.be/_Zmc54XYzBA)
 
 ### How do I check the current version of Wasabi?
 

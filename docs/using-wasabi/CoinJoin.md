@@ -98,7 +98,7 @@ However, the coordinator signature is still attached to this address.
 
 The input registration phase ends when either: the number of registered inputs exceeds the number of required inputs (meaning anonymity set of 100 peers), or when the time elapsed since the previous round reaches one hour.
 
-@[youtube](v1fIjFR6e5Q)
+[![Watch the video](https://img.youtube.com/vi/v1fIjFR6e5Q/maxresdefault.jpg)](https://youtu.be/v1fIjFR6e5Q)
 
 ### Connection confirmation
 
@@ -109,7 +109,7 @@ The coordinator verifies the unique ID from all the Alices, and when everyone is
 The round is abandoned and re-started if too many Alices have dropped, for example when their Wasabi is shut down, or when their Tor connection is temporarily broken.
 The connection confirmation phase ends when all Alices have provided their unique ID, or after a timeout when the number of online Alices is still larger than the required number of peers.
 
-@[youtube](hhkL0QvIaGY)
+[![Watch the video](https://img.youtube.com/vi/hhkL0QvIaGY/maxresdefault.jpg)](https://youtu.be/hhkL0QvIaGY)
 
 ### Output registration
 
