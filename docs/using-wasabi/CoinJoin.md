@@ -151,6 +151,62 @@ The CoinJoin transaction has been successfully built and signed, and it is now r
 The coordinator sends this transaction over the Tor network to random Bitcoin P2P nodes, and from there it is gossiped to other nodes and miners.
 Wasabi saves on mining fees by setting a confirmation target of roughly 12 hours, but you can re-register unconfirmed anonset outputs for the next round of CoinJoin.
 
+## Coinjoin Settings
+
+Wasabi Wallet has automatic coinjoin.
+This automatic coinjoin is done by the built-in automatic coinjoin "robot".
+The robot contains instructions/settings, like how much and when to coinjoin.
+The user is able to specify these settings in the `Coinjoin Settings` dialog, according to his own preferences.
+The wallet ships with the default settings, which is good enough for most users.
+
+![Wasabi Wallet Coinjoin Settings](/CoinjoinSettings.png "Wasabi Wallet Coinjoin Settings")
+
+:::tip Coinjoin settings are wallet specific
+As the coinjoin settings apply per individual wallet, it is possible to have multiple wallets with different coinjoin settings 
+:::
+
+### Automatically start coinjoin
+
+When this is active, the wallet will automatically start coinjoining when the wallet is opened.
+The wallet will coinjoin until the `privacy progress` is 100%.
+
+This setting is active by default.
+
+When this is not active, the user will have to manually press the Play button in order to start coinjoining.
+
+![Coinjoin Settings Automatically Start Coinjoin](/CoinjoinSettingsAutomaticallyStartCoinjoin.png "Coinjoin Settings Automatically Start Coinjoin")
+
+
+### Auto-start coinjoin threshold
+
+The wallet will not automatically start coinjoining if the non-private balance is less than the `Auto-start coinjoin threshold`, even if the `Automatically start coinjoin` is active.
+If the non-private balance is below the auto-start threshold, the user has to manually press Play to start coinjoining.
+This setting can be used to prevent paying (relatively high) fees for smaller bitcoin amounts.
+
+For example, if the non-private balance is 0.005 BTC and the Auto-start coinjoin threshold is 0.01 BTC, the user will have to manually press Play to start coinjoining. 
+
+The default Auto-start coinjoin threshold is 0.01 BTC.
+
+![Auto-start Coinjoin Threshold](/AutoStartCoinjoinThreshold.png "Auto-start Coinjoin Threshold")
+
+:::tip It is OK to set the Auto-start coinjoin threshold to 0
+If you have some small non-private left overs, you could wait until you receive more funds or you can already coinjoin these.
+If you want to make the non-private funds private already, you can set it to 0 BTC.
+Only note is that you might pay relatively more fees for coinjoining smaller amounts.
+:::
+
+### Coinjoin Strategy
+
+Wasabi ships with 3 different coinjoin strategies: `Minimize Costs`, `Maximize Speed`, and `Maximize Privacy`.
+Each of these coinjoin strategies contain different configurations.
+These coinjoin strategies determine settings like how much and when to coinjoin.
+
+The default strategy is `Maximize Speed`.
+
+It is possible to make your own custom profile by using the customize button. 
+
+![Coinjoin Strategy](/CoinjoinStrategy.png "Coinjoin Strategy")
+
 ## Wasabi CoinJoin examples
 
 Here's a list of Wasabi CoinJoin examples and how they appear on a block explorer:
