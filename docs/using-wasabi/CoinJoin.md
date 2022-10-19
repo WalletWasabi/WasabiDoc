@@ -190,8 +190,8 @@ The default Auto-start coinjoin threshold is 0.01 BTC.
 ![Auto-start Coinjoin Threshold](/AutoStartCoinjoinThreshold.png "Auto-start Coinjoin Threshold")
 
 :::tip It is OK to set the Auto-start coinjoin threshold to 0
-If you have some small non-private left overs, you could wait until you receive more funds or you can already coinjoin these.
-If you want to make the non-private funds private already, you can set it to 0 BTC.
+If you have some small non-private left overs: you can coinjoin these by pressing Play, or wait until you receive more funds.
+If you want to always automatically coinjoin ALL your coins, this can be set to 0 BTC.
 Only note is that you might pay relatively more fees for coinjoining smaller amounts.
 :::
 
