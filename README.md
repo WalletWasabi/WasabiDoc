@@ -87,20 +87,18 @@ Youtube videos and playlists can be embedded via the following custom markdown t
 
 ```md
 [![Title of the video](https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg)](https://youtu.be/VIDEO_ID)
-[![Title of the video](https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg)](https://youtu.be/VIDEO_ID?t=123)
-[![Title of the playlist](https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg)](https://youtu.be/VIDEO_ID?list=PLAYLIST_ID)
 ```
 
 Optionally you can also specify the start position of a video in seconds (e.g. starts at 100 seconds):
 
 ```md
-@[youtube](VIDEO_ID,100)
+[![Title of the video](https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg)](https://youtu.be/VIDEO_ID?t=123)
 ```
 
 And the index of the video of a playlist (e.g. starts the third video):
 
 ```md
-@[youtubePlaylist](PLAYLIST_ID,VIDEO_ID)
+[![Title of the playlist](https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg)](https://youtu.be/VIDEO_ID?list=PLAYLIST_ID)
 ```
 
 ## Text Highlights
