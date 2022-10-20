@@ -162,12 +162,12 @@ The wallet ships with the default settings, which is good enough for most users.
 ![Wasabi Wallet Coinjoin Settings](/CoinjoinSettings.png "Wasabi Wallet Coinjoin Settings")
 
 :::tip Coinjoin settings are wallet specific
-As the coinjoin settings apply per individual wallet, it is possible to have multiple wallets with different coinjoin settings 
+As the coinjoin settings apply per individual wallet, it is possible to have multiple wallets with different coinjoin settings.
 :::
 
 ### Automatically start coinjoin
 
-When this is active, the wallet will automatically start coinjoining when the wallet is opened.
+When this is active, the wallet will automatically start coinjoining soon after the wallet is loaded.
 The wallet will coinjoin until the `privacy progress` is 100%.
 
 This setting is active by default.
