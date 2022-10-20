@@ -74,7 +74,7 @@ If the message returned says `Good signature from zkSNACKs` and that it was sign
 	You can ignore this, but if you want to fully verify your download, you need to ask people you trust to confirm that the key fingerprint belongs to zkSNACKs.
 	:::
 
-4. [GUI] Install by double-clicking and follow the GUI Instruction. </br>
+4. [GUI] Install by double-clicking and follow the GUI Instruction. <br>
    [CLI] In the Download repository, execute the command `sudo dpkg -i Wasabi-${currentVersion}.deb` to install Wasabi and after that run Wasabi by executing `wassabee`.
 
 After the first run, a [data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) will be created.
