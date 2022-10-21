@@ -43,7 +43,7 @@ Once a coin achieves enough privacy, the corresponding amount will show up in th
 A 0.3 % coordinator fee will be taken from fresh coins bigger than 0.01 BTC.
 Smaller ones don't pay coordinator fee at all, according to the _PlebsDontPay_ threshold.
 
-The round starts either as soon as enough inputs have been registered, or after the input registration time is reached and as long as the minimum number of inputs is satisfied.
+The round starts either as soon as the number of registered inputs reaches the maximum, or after the input registration time is reached and as long as the minimum number of inputs is satisfied.
 Just leave Wasabi running in the background of your computer, as coinjoining takes time.
 
 Remixing is free, as well as coinjoining coins 1 hop from coinjoin, although, Bitcoin network fees still do apply.
@@ -71,7 +71,7 @@ The Wasabi coordinator now verifies that:
 * The input has not been registered before, is not banned, is unspent, and that the input proof is valid.
 * The input has more than 5000 sats value.
  
-Only when all these checks are valid does the coordinator allow the input.
+Only when all these checks are passed, does the coordinator allow this input to be registered.
 The coordinator creates and sends a credential back to Alice, which has the same amount as the input minus fees.
 
 The input registration phase ends when either: the number of registered inputs reaches the maximum, or when the time elapsed and the minimum number of inputs is satisfied.
