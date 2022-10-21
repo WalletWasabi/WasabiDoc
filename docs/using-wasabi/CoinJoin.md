@@ -199,7 +199,9 @@ Only note is that you might pay relatively more fees for coinjoining smaller amo
 
 Wasabi ships with 3 different coinjoin strategies: `Minimize Costs`, `Maximize Speed`, and `Maximize Privacy`.
 Each of these coinjoin strategies contain different configurations.
-These coinjoin strategies determine settings like how much and when to coinjoin.
+These coinjoin strategies determine the Anonymity score target, Coinjoin time preference, and if red coin isolation is enabled or not.
+
+![Coinjoin Profile Settings](/CoinjoinProfileSettings.png "Coinjoin Profile Settings")
 
 The default strategy is `Maximize Speed`.
 
