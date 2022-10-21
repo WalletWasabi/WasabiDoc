@@ -188,6 +188,13 @@ The private value is the total amount that reached the anonscore threshold.
 :::
 
 :::details
+### Why does the privacy progress change if I select a different coinjoin strategy?
+
+[The privacy progress](/FAQ-UseWasabi/what-does-the-privacy-progress-mean) is influenced by the anonymity score target.
+If the coinjoin strategy is changed to one with a different anonnymity score target, this will cause the privacy progress to increase or decrease.
+:::
+
+:::details
 ### What does the bar with the colored segments mean?
 
 The colored segments make up the `Privacy Bar`.
