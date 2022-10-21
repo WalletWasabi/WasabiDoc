@@ -214,7 +214,7 @@ Go to `Settings` -> `General` -> `Fee display unit` and change it to `sats`.
 
 This box (a.k.a. musicbox) is used for the coinjoins.
 It can be used to manually start, pause and stop coinjoining.
-It also shows some information about current coinjoin round. 
+It also shows some information about the current coinjoin round. 
 
 ![Wasabi Wallet Music Box](/MusicBox.png "Wasabi Wallet Music Box")
 :::
