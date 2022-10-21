@@ -50,9 +50,9 @@ The changes will apply on the next launch of Wasabi.
 
 ## Loading a wallet
 
-You can [load](/using-wasabi/WalletLoad.md) any previously generated wallet on testnet, by double-clicking on it in the Wallet Explorer.
-However, it is recommended to use a dedicated testnet wallet.
-Notice that Wasabi uses the same wallet file and keys for both mainnet, testnet, and regtest, you can load the same wallet file in either network.
+Wasabi differentiates between Mainnet and TestNet wallets.
+Meaning that a TestNet wallet will not show up when the Main network is active, and vice versa.
+You have to create a new wallet when you activate TestNet for the first time.
 
 ## Receiving testnet bitcoin
 
