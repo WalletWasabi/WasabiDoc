@@ -55,7 +55,7 @@ The changes will apply on the next launch of Wasabi.
 ## Loading a wallet
 
 Wasabi differentiates between Mainnet and TestNet wallets.
-Meaning that a TestNet wallet will not show up when Mainnet is active, and vice versa.
+Meaning that a TestNet wallet will not show up when the Main network is active, and vice versa.
 You have to create a new wallet when you activate TestNet for the first time.
 
 ## Receiving testnet bitcoin
