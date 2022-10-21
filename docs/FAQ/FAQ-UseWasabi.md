@@ -961,6 +961,16 @@ Depending on many factors, like the `Anonymity score target`, the `coinjoin stra
 :::
 
 :::details
+### What are the differences/settings per coinjoin strategy?
+
+|  | Minimize Costs | Maximize Speed | Maximize Privacy | 
+|:---:|:---:|:---:|:---:|
+| Red coin isolation | not active  | not active | active |
+| Anonymity score target | 5 | 5 | random between 50 and 101 |
+| Coinjoin time preference   | weeks | hours | hours |
+:::
+
+:::details
 ### What does the `Auto-start coinjoin threshold` mean in the coinjoin settings?
 
 It is the amount at which your funds will automatically participate in coinjoin in the background.
