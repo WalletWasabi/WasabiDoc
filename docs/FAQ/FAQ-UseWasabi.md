@@ -367,8 +367,8 @@ or:
 ### How can I change the label of my receive address?
 
 You can change the label of your unused receive address by clicking on the edit icon.
-This is useful when you have generated a receiving address with a specific label, but then the sender has changed.
-Take care with whom you have shared this address, because if you send it to several people, they might all send many coins to the same address.
+This is useful when you have generated a receiving address with a specific label, but then the sender (anyone that knows this address is yours) has changed.
+Take care with whom you have shared this address, because if you send it to several people, they all know this address belongs to you, and they might all send many coins to the same address.
 This is very bad for your privacy because of [address reuse](/why-wasabi/AddressReuse.md), and it confuses you with the labeling of each unique coin.
 
 ![Edit Address Label](/UnusedReceiveAddressesEditLabel.png "Edit Address Label")
@@ -390,7 +390,7 @@ It is important that you avoid sending the same address to several different ind
 There is a risk that both of them send coins to this same destination, thus unnecessarily linking the payments.
 
 :::danger
-It is especially important to **NEVER** send your extended public key to any third party.
+It is especially important to **NEVER** send your extended public key to any third party (anyone).
 This is a complete de-anonymization of your entire wallet!!
 :::
 ::::
