@@ -33,13 +33,13 @@ When you've backed everything up, click `Continue`.
 
 ![Wasabi Wallet recovery words](/AddWalletRecoveryWords.png "Wasabi Wallet recovery words")
 
-In this page you can do a quick check that you've written down your mnemonic seed in the correct order. 
+In this page you should do a quick check that you've written down your mnemonic seed in the correct order. 
 Once you're done, click `Continue`.
 
 ![Confirm recovery words](/AddWalletConfirmRecoveryWords.png "Confirm recovery words")
 
 Add a password. 
-It is used to encrypt the private key (extracted from the extended private key) on the computer and needed to open the wallet.
+It is used to encrypt the private key (extracted from the extended private key) on the computer and needed to open the wallet and to recovered it in the future.
 Make sure that you properly back up and write down this password.
 
 Confirm the password and click `Continue`.
@@ -49,12 +49,14 @@ Confirm the password and click `Continue`.
 :::danger Careful!!
 Without knowledge of the password, you CANNOT spend your bitcoin!!
 :::
+
 Make sure, and triple-check that you have done a proper backup of BOTH the password AND the mnemonic.
 If you only have the recovery words, but not the password, then you will NOT be able to open your wallet or to recover it.
 
-In order to protect your backup, consider storing the password and recovery words in two different locations.
+In order to protect your backup, consider storing the password and recovery words in different locations.
 
 Now you get to choose your wallets coinjoin strategy.
+Select one and click `Continue`.
 
 ![Wasabi Wallet coinjoin strategies](/CoinjoinStrategy.png "Wasabi Wallet coinjoin strategies")
 
