@@ -13,6 +13,7 @@
 ### How do I generate a new wallet?
 
 You can [generate as many new wallets](/using-wasabi/WalletGeneration.md) as you'd like, for no extra cost and without asking for permission.
+
 Click the `Add Wallet` button in the bottom left corner of the main view or in the searchbar.
 
 ![Add new wallet in Wasabi](/AddWalletButton.png "Add a new wallet in Wasabi")
@@ -39,18 +40,19 @@ Once you're done, click `Continue`.
 
 Add a password. 
 It is used to encrypt the private key (extracted from the extended private key) on the computer and needed to open the wallet.
-Make sure, and triple-check that you have done a proper backup of BOTH the password AND the mnemonic.
-When you only have the recovery words, but not the password, then you will NOT be able to recover your wallet.
+Make sure that you properly back up and write down this password.
+
+Confirm the password and click `Continue`.
 
 ![Add a password in Wasabi](/AddWalletAddPassword.png "Add a password in Wasabi")
-
-Make sure that you properly back up and write down this password.
-In order to protect your backup, consider storing the password and recovery words in two different locations.
-Confirm the password and click `Continue`.
 
 :::danger Careful!!
 Without knowledge of the password, you CANNOT spend your bitcoin!!
 :::
+Make sure, and triple-check that you have done a proper backup of BOTH the password AND the mnemonic.
+If you only have the recovery words, but not the password, then you will NOT be able to open your wallet or to recover it.
+
+In order to protect your backup, consider storing the password and recovery words in two different locations.
 
 Now you get to choose your wallets coinjoin strategy.
 
