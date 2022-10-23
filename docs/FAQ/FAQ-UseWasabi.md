@@ -26,23 +26,8 @@ Make sure that you are precise so that you know what this wallet is for and clic
 
 ![Name a new wallet in Wasabi](/AddWalletWalletName.png "Name a new wallet in Wasabi")
 
-Add a password. 
-It is used to encrypt the private key (extracted from the extended private key) on the computer and needed to open the wallet.
-
-![Add a password in Wasabi](/AddWalletAddPassword.png "Add a password in Wasabi")
-
-Make sure that you properly back up and write down this password.
-Confirm the password and click `Continue`.
-
-:::danger Careful!!
-Without knowledge of the password, you CANNOT spend your bitcoin!!
-:::
-
 Now you will see the 12 recovery words.
-This is the mnemonic seed that you can use to back up and recover your wallet.
-Make sure, and triple-check that you have done a proper backup of BOTH the password AND the mnemonic.
-When you only have the recovery words, but not the password, then you will NOT be able to recover your wallet.
-In order to protect your paper backup, consider storing the password and recovery words in two different locations.
+This is the mnemonic seed that you should back up, together with the password you create in the next phase, in order to recover your wallet.
 When you've backed everything up, click `Continue`.
 
 ![Wasabi Wallet recovery words](/AddWalletRecoveryWords.png "Wasabi Wallet recovery words")
@@ -51,6 +36,21 @@ In this page you can do a quick check that you've written down your mnemonic see
 Once you're done, click `Continue`.
 
 ![Confirm recovery words](/AddWalletConfirmRecoveryWords.png "Confirm recovery words")
+
+Add a password. 
+It is used to encrypt the private key (extracted from the extended private key) on the computer and needed to open the wallet.
+Make sure, and triple-check that you have done a proper backup of BOTH the password AND the mnemonic.
+When you only have the recovery words, but not the password, then you will NOT be able to recover your wallet.
+
+![Add a password in Wasabi](/AddWalletAddPassword.png "Add a password in Wasabi")
+
+Make sure that you properly back up and write down this password.
+In order to protect your backup, consider storing the password and recovery words in two different locations.
+Confirm the password and click `Continue`.
+
+:::danger Careful!!
+Without knowledge of the password, you CANNOT spend your bitcoin!!
+:::
 
 Now you get to choose your wallets coinjoin strategy.
 
