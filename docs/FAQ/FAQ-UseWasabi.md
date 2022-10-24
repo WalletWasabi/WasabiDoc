@@ -966,7 +966,7 @@ Depending on many factors, like the `Anonymity score target`, the `coinjoin stra
 |  | Minimize Costs | Maximize Speed | Maximize Privacy | 
 |:---:|:---:|:---:|:---:|
 | Red coin isolation | not active  | not active | active |
-| Anonymity score target | 5 | 5 | random between 50 and 101 |
+| Anonymity score target | 5 | 5 | random between 50 and 100 |
 | Coinjoin time preference   | weeks | hours | hours |
 
 :::
