@@ -14,26 +14,52 @@
 ### How do I generate a new wallet?
 
 You can [generate as many new wallets](/using-wasabi/WalletGeneration.md) as you'd like, for no extra cost and without asking for permission.
-Go to the `Wallet Manager` tab and the `Generate Wallet` menu.
+
+Click the `Add Wallet` button in the bottom left corner of the main view or in the searchbar.
+
+![Add new wallet in Wasabi](/AddWalletButton.png "Add a new wallet in Wasabi")
+
+Click `Create a new wallet`.
+
+![Create a new wallet in Wasabi](/AddWallet.png "Create a new wallet in Wasabi")
+
 As with everything in Wasabi, you are required to label this new wallet.
-Make sure that you are precise so that you know what this wallet is for.
-The password is used to encrypt the private key (extracted from the extended private key) on the computer.
+Make sure that you are precise so that you know what this wallet is for and click `Continue`.
+
+![Name a new wallet in Wasabi](/AddWalletWalletName.png "Name a new wallet in Wasabi")
+
+Now you will see the 12 recovery words.
+This is the mnemonic seed that you should back up, together with the password you create in the next phase, in order to recover your wallet.
+When you've backed everything up, click `Continue`.
+
+![Wasabi Wallet recovery words](/AddWalletRecoveryWords.png "Wasabi Wallet recovery words")
+
+In this page you should do a quick check that you've written down your mnemonic seed in the correct order. 
+Once you're done, click `Continue`.
+
+![Confirm recovery words](/AddWalletConfirmRecoveryWords.png "Confirm recovery words")
+
+Add a password. 
+It is used to encrypt the private key (extracted from the extended private key) on the computer and needed to open the wallet and to recovered it in the future.
+Make sure that you properly back up and write down this password.
+
+Confirm the password and click `Continue`.
+
+![Add a password in Wasabi](/AddWalletAddPassword.png "Add a password in Wasabi")
 
 :::danger Careful!!
 Without knowledge of the password, you CANNOT spend your bitcoin!!
 :::
 
-Make sure that you properly back up and write down this password.
-Please also read and agree to the [terms and conditions, the privacy policy and the legal statement](https://github.com/zkSNACKs/WalletWasabi/blob/master/WalletWasabi/Legal/Assets/LegalDocumentsWw2.txt).
-Now you can continue with clicking `Generate`.
-
-![Generate new wallet in Wasabi](/WalletManagerGenerateWallet.png "Generate new wallet in Wasabi")
-
-Now you will see the 12 recovery words, this is the mnemonic seed that you can use to back up and recover your wallet.
 Make sure, and triple-check that you have done a proper backup of BOTH the password AND the mnemonic.
-When you only have the recovery words, but not the password, then you will NOT be able to recover your wallet.
-In order to protect your paper backup, consider storing the password and recovery words in two different locations.
-You have successfully setup your wallet when you click `I wrote down my Recovery Words!`
+If you only have the recovery words, but not the password, then you will NOT be able to open your wallet or to recover it.
+
+In order to protect your backup, consider storing the password and recovery words in different locations.
+
+Now you get to choose your wallets coinjoin strategy.
+Select one and click `Continue`.
+
+![Wasabi Wallet coinjoin strategies](/CoinjoinStrategy.png "Wasabi Wallet coinjoin strategies")
 
 ![Wasabi Wallet recovery words](/AddWalletRecoveryWords.png "Wasabi Wallet recovery words")
 
@@ -167,6 +193,11 @@ The privacy progress tile represents the percentage of how private the wallet is
 It considers the anonymity score weighted amounts instead of just amounts that reached the anonymity score threshold.
 The private value is the total amount that reached the anonscore threshold.
 
+### Why does the privacy progress change if I select a different coinjoin strategy?
+
+[The privacy progress](/FAQ-UseWasabi/what-does-the-privacy-progress-mean) is influenced by the anonymity score target.
+If the coinjoin strategy is changed to one with a different anonnymity score target, this will cause the privacy progress to increase or decrease.
+
 ### What does the bar with the colored segments mean?
 
 The colored segments make up the `Privacy Bar`.
@@ -184,6 +215,16 @@ This can be changed to sats in the `Settings`.
 Go to `Settings` -> `General` -> `Fee display unit` and change it to `sats`.
 
 ![Wasabi Wallet Fee Display Unit](/FeeDisplayUnit.png "Wasabi Wallet Fee Display Unit")
+
+:::details
+### What is the box (music box) at the bottom of the wallet's main view?
+
+This box (a.k.a. musicbox) is used for the coinjoins.
+It can be used to manually start, pause and stop coinjoining.
+It also shows some information about the current coinjoin round. 
+
+![Wasabi Wallet Music Box](/MusicBox.png "Wasabi Wallet Music Box")
+:::
 
 ## Synchronization
 
@@ -212,6 +253,14 @@ Once Tor and backend are properly connected and you have peers, you will see a c
 The timer of the loading wallet page runs out when all the block filters and all the relevant blocks are downloaded and the wallet is synchronized.
 
 ![Wasabi Wallet Status Bar](/WalletSynchronizing.png "Wasabi Wallet Status Bar")
+
+### Why does the Tor status have a warning triangle icon?
+
+If the Tor network is having [issues](https://status.torproject.org/), Wasabi notifies this and displays a warning triangle icon.
+For example, when Tor is experiencing a DDoS attack.
+Hover over the icon with the cursor to display more information.
+
+![Tor Status Warning Icon](/TorStatusWarningIcon.png "Tor Status Warning Icon")
 
 ### How long does the initial, and a subsequent synchronization take?
 
@@ -320,13 +369,15 @@ or:
 ### How can I change the label of my receive address?
 
 You can change the label of your unused receive address by clicking on the edit icon.
-This is useful when you have generated a receiving address with a specific label, but then the cause for receiving has changed.
-Take care with whom you have shared this address, because if you send it to several people, they might all send many coins to the same address.
+This is useful when you have generated a receiving address with a specific label, but then the sender (anyone that knows this address is yours) has changed.
+Take care with whom you have shared this address, because if you send it to several people, they all know this address belongs to you, and they might all send many coins to the same address.
 This is very bad for your privacy because of [address reuse](/why-wasabi/AddressReuse.md), and it confuses you with the labeling of each unique coin.
 
 ![Edit Address Label](/UnusedReceiveAddressesEditLabel.png "Edit Address Label")
 
 ### How can I edit the observers of my address after a transaction has gone through?
+
+### How can I edit the labels of my address after a transaction has gone through?
 
 To date there is no possibility to change the label of an address after it has sent or received bitcoins.
 
@@ -339,7 +390,7 @@ It is important that you avoid sending the same address to several different ind
 There is a risk that both of them send coins to this same destination, thus unnecessarily linking the payments.
 
 :::danger
-It is especially important to **NEVER** send your extended public key to any third party server.
+It is especially important to **NEVER** send your extended public key to any third party (anyone).
 This is a complete de-anonymization of your entire wallet!!
 :::
 
@@ -371,8 +422,10 @@ The QR Code is displayed and can be saved as a png file by clicking on the Save 
 ### What derivation paths does Wasabi use?
 
 Wasabi follows [BIP 84: Derivation scheme for P2WPKH Based Accounts](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki), so the main path is `m/84'/0'/0'`.
-On TestNet and RegTest Wasabi uses `m/84'/0'/0'`, and not the standard `m/84'/1'/0'`.
-Due to the CoinJoin implementation, the key depth can be rather large, thus when recovering the gap limit should be elevated to at least 100.
+
+On TestNet Wasabi uses the path `m/84'/1'/0'`.
+On RegTest it uses `m/84'/0'/0'`, and not the standard `m/84'/1'/0'` path.
+Due to the coinjoin implementation, the key depth can be rather large, thus when recovering, the gap limit should be elevated to at least 100.
 
 ### Can I generate a multi signature script?
 
