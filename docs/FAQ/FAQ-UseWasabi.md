@@ -960,6 +960,23 @@ However, as the coordinator cannot enforce this, a custom client could use a dif
 Depending on many factors, like the `Anonymity score target`, the `coinjoin strategy`, and the amount of bitcoin, it can take from a couple hours to multiple days.
 :::
 
+::::details
+### What is a coinjoin strategy?
+
+A coinjoin strategy has specific pre-configured coinjoin settings.
+
+There are multiple coinjoin settings which the user is able to configure according to their own prefence.
+Each coinjoin strategy has different specific settings for optimal performance.
+After a coinjoin strategy is selected, the according settings are applied.
+It is suppoed to make it easy for the user to select it's prefence, without having to know about the specific settings and how to configure it themselves.
+
+Read more [ħere](/using-wasabi/CoinJoin.md)
+
+:::tip The default coinjoin strategy is `Mazimize Speed`
+This strategy is sufficient for most users
+:::
+::::
+
 :::details
 ### What does the `Auto-start coinjoin threshold` mean in the coinjoin settings?
 
