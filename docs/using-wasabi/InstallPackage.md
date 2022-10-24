@@ -6,7 +6,7 @@
 ---
 
 
-# Install Wasabi
+# Install Package
 
 [[toc]]
 
@@ -74,7 +74,7 @@ The easiest method is to use the GUI: simply double-click the downloaded install
     :::
 
 ## Install GPGTools
-GPGTools makes it breeze to import, verify, and sign digital signatures.
+GPGTools makes it a breeze to import, verify, and sign digital signatures.
 
 1. [Download GPGTools.](https://gpgtools.org/)
 2. **Optional**: Verify the signature. 
