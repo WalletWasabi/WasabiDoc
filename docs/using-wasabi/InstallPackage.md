@@ -14,10 +14,12 @@
 
 This page contains all the information you will need to safely install the Wasabi Wallet. 
 It also provides information for developers on how they can [compile from the source code,](#build-from-source) to use the latest features or fixes that have not yet been released.
-Note that the latter section is only meant for experienced users, who know what they are doing, and must be used with extreme caution.
+Note that the latter section is meant only for experienced users, who know what they are doing, and must be used with extreme caution.
 For everyone else, the *Install Wasabi Wallet* section is sufficient.
 
 ## Install Wasabi Wallet
+Wasabi Wallet is a desktop wallet for MacOS, Windows, and certain Linux distros.
+It cannot be installed on Tails or Whonix as neither OS expose the Tor control port, which Wasabi 2.0 relies on.
 Follow the steps below to safely install Wasabi Wallet.
 
 1. Download the installer relevant to your operating system (and processor, in case of MacOS) from the [official Wasabi Wallet website.](wasabiwallet.io/#download)
@@ -77,6 +79,7 @@ The easiest method is to use the GUI: simply double-click the downloaded install
 
 ## Install GPGTools
 GPGTools makes it a breeze to import, verify, and sign digital signatures.
+Follow the steps below to safely install GPGTools.
 
 1. [Download GPGTools.](https://gpgtools.org/)
 2. **Optional**: Verify the signature. 
