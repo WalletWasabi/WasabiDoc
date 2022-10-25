@@ -961,6 +961,18 @@ Depending on many factors, like the `Anonymity score target`, the `coinjoin stra
 :::
 
 :::details
+### What coinjoin strategy should I select?
+
+There is no answer for all, or a "best" strategy, as is depends per user.
+The coinjoin strategy should be selected according to the users prefence:
+Do you want to `Minimize costs`, `Maximize speed`, or `Maximize privacy`?
+Or the user can create their own `Custom` strategy.
+
+![Wasabi Coinjoin Strategy](/CoinjoinStrategy.png "Wasabi Coinjoin Strategy")
+
+:::
+
+:::details
 ### What does the `Auto-start coinjoin threshold` mean in the coinjoin settings?
 
 It is the amount at which your funds will automatically participate in coinjoin in the background.
