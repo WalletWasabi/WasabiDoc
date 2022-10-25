@@ -961,7 +961,7 @@ Depending on many factors, like the `Anonymity score target`, the `coinjoin stra
 :::
 
 ::::details
-### What is a coinjoin strategy?
+### What is the coinjoin strategy?
 
 A coinjoin strategy has specific pre-configured coinjoin settings.
 
