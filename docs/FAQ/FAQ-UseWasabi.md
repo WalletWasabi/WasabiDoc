@@ -967,8 +967,8 @@ A coinjoin strategy has specific pre-configured coinjoin settings.
 
 There are multiple coinjoin settings which the user is able to configure according to their own prefence.
 Each coinjoin strategy has different specific settings for optimal performance.
-After a coinjoin strategy is selected, the according settings are applied.
-It is supposed to make it easy for the user to select it's prefence, without having to know about the specific settings and how to configure it themselves.
+After a coinjoin strategy is selected, its settings are applied.
+It is supposed to make it easy for the user to select their preference, without having to know about the specific settings and how to configure them themselves.
 
 Read more [ħere](/using-wasabi/CoinJoin.md)
 
