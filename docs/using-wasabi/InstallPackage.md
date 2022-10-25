@@ -11,15 +11,17 @@
 [[toc]]
 
 ---
+
 This page contains all the information you will need to safely install the Wasabi Wallet. 
 It also provides information for developers on how they can [compile from the source code,](#build-from-source) to use the latest features or fixes that have not yet been released.
-Note that the latter section is only meant for experienced users, who know what they are doing, and must be used with extreme caution. For everyone else, the *Install Wasabi Wallet* section is sufficient.
+Note that the latter section is only meant for experienced users, who know what they are doing, and must be used with extreme caution.
+For everyone else, the *Install Wasabi Wallet* section is sufficient.
 
 ## Install Wasabi Wallet
 Follow the steps below to safely install Wasabi Wallet.
 
 1. Download the installer relevant to your operating system (and processor, in case of MacOS) from the [official Wasabi Wallet website.](wasabiwallet.io/#download)
-For improved privacy, we recommended that you use the [Tor browser](https://www.torproject.org/) and download the installer from the [official clearnet-website.](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion/)
+For improved privacy, we recommended that you use the [Tor browser](https://www.torproject.org/) and download the installer from [Wasabi's official Tor-website.](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion/)
 2. **Optional, but highly recommended**: Verify the signature. 
 Note that this isn't a necessary step. 
 You can safely skip it if you have received the installer directly from a trusted source. 
