@@ -132,7 +132,6 @@ and, for "Build apps," [.NET ${dotnetVersion} SDK.](https://dotnet.microsoft.com
 	`export DOTNET_CLI_TELEMETRY_OPTOUT=1` on Linux and macOS.
     
 	`setx DOTNET_CLI_TELEMETRY_OPTOUT 1` to disable it permanently on Windows.
-	:::
 2. Clone Wasabi repository.
 
     ```sh
