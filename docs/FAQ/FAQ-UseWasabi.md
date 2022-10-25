@@ -9,6 +9,16 @@
 
 ## General
 
+:::details
+### How do I start using Wasabi?
+
+1. Download & Install Wasabi (like with any other software)
+2. `Create a new wallet` or use an already existing one (by import or recovering your own wallet)
+3. `Receive` some bitcoin
+4. Wait, let the wallet do some coinjoins (you see your privacy progress % increasing)
+5. Enjoy your private bitcoin funds! (spend some, send to cold storage or leave them in Wasabi for a while)
+:::
+
 ::::details
 ### How do I generate a new wallet?
 
