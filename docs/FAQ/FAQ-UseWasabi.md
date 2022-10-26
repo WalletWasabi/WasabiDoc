@@ -1012,6 +1012,19 @@ Depending on many factors, like the `Anonymity score target`, the `coinjoin stra
 :::
 
 :::details
+### What is the coinjoin strategy?
+
+A coinjoin strategy has specific pre-configured coinjoin settings.
+
+There are multiple coinjoin settings which the user is able to configure according to their own prefence.
+Each coinjoin strategy has different specific settings for optimal performance.
+After a coinjoin strategy is selected, its settings are applied.
+It is supposed to make it easy for the user to select their preference, without having to know about the specific settings and how to configure them themselves.
+
+Read more [ħere](/using-wasabi/CoinJoin.md)
+:::
+
+:::details
 ### What are the differences/settings per coinjoin strategy?
 
 |  | Minimize Costs | Maximize Speed | Maximize Privacy | 
