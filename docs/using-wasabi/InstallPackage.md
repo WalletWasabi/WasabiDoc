@@ -13,11 +13,12 @@
 ---
 
 This page contains all the information you will need to safely install the Wasabi Wallet. 
-It also provides information for developers on how they can [compile from the source code,](#build-from-source) to use the latest features or fixes that have not yet been released.
+It also provides information for developers on how they can [compile from the source code](#build-from-source), to use the latest features or fixes that have not yet been officially released.
 Note that the latter section is meant only for experienced users, who know what they are doing, and must be used with extreme caution.
 For everyone else, the *Install Wasabi Wallet* section is sufficient.
 
 ## Install Wasabi Wallet
+
 Wasabi Wallet is a desktop wallet for MacOS, Windows, and certain Linux distros.
 It cannot be installed on Tails or Whonix as neither OS expose the Tor control port, which Wasabi 2.0 relies on.
 Follow the steps below to safely install Wasabi Wallet.
@@ -28,15 +29,15 @@ For improved privacy, we recommended that you use the [Tor browser](https://www.
 Note that this isn't a necessary step. 
 You can safely skip it if you have received the installer directly from a trusted source. 
 However, if you are downloading the installer from the official website, we highly recommend that you verify the PGP signature of the installer to ensure its authenticity and integrity. 
-One does well to adopt the "distrust the infrastructure" philosophy; for details, see the [Why verify signature?](#why-verify-signature) section.
+One does well to adopt the "distrust the infrastructure" philosophy; for details, see the [Why verify signature](#why-verify-signature) section.
 
     The directions below require GPGTools to be installed on your computer. [Install GPGTools](#install-gpgtools) and come back to this section:
     1. From the [official Wasabi Wallet website](wasabiwallet.io/#download), download the signature of the installer. 
     To do so, go to the downloads section of the website, and click on **signature** located on the installer relevant to your OS.
     2. Import zkSNACKs' public key. 
         1. Open GPGTools (search for "gpg keychain" using spotlight or the menu icon).
-        2. Go to [zkSNACKs' Github repository,](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt), and copy the raw contents.
-        3. The act of copying, when GPGTools is open, will cause GPGTools to propmt you to decide whether or not to import the key. Accept the request.
+        2. Go to [zkSNACKs' Github repository](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt), and copy the raw contents.
+        3. Provided it is open, GPGTools will propmt you to import the key. Accept the request. If you do not see the prompt, then open GPGTools, and paste (Cmd+V or Ctrl+V) the key.
     3. Verify signature of the installer.
         The easiest way to do this is to ensure that signature file (.asc file) and the installer file are located in the same folder.
         Then double-click the signature file and GPG Tools (which must be installed) will show the verification result.
@@ -45,7 +46,7 @@ One does well to adopt the "distrust the infrastructure" philosophy; for details
         ![Good signature](/gpgtools-verification.png "Good signature")
         
         If the signing key matches `Primary key fingerprint: ${zksnacksPublicKeyFingerprint}`, then you can be assured that the software is authentic and wasn't tampered with since it was signed by the original developers, and proceed to the next step.
-        If you don't see the above message, kindly contact Wasabi Support.
+        If you don't see the above message, kindly contact [Wasabi Support](https://github.com/zkSNACKs/WalletWasabi/discussions/categories/support).
         
         You can safely ignore "WARNING: This key is not certified with a trusted signature!". 
         This is because you haven't validated that the key does in fact belong to the trusted party.
@@ -78,6 +79,7 @@ The easiest method is to use the GUI: simply double-click the downloaded install
     :::
 
 ## Install GPGTools
+
 GPGTools makes it a breeze to import, verify, and sign digital signatures.
 Follow the steps below to safely install GPGTools.
 
@@ -98,9 +100,10 @@ Follow the steps below to safely install GPGTools.
 3. Install GPG. Simply double-click on the installer and follow the directions in the GUI.
 
 ## Why verify signature?
+
 A digital signature (or fingerprint) is an output of an hash function. 
 It is similar to a hand-written signature or fingerprint but with the advantage of being impossible to forge, for it uses cryptography.
-Digital signatures can prove the two important properties of information security to a reasonable degree of certainty: i) authenticity, i.e., the file was indeed created by the person who signed it, and not forged by a third-party,  and ii) integrity, i.e., the contents of the file have not been tampered with before it reached you. 
+Digital signatures can prove the two important properties of information security to a reasonable degree of certainty: i) authenticity, i.e., the file was created by the person who signed it, and not forged by a third-party; and ii) integrity, i.e., the contents of the file wasn't tampered with before it reached you. 
 If verifcation fails, i.e., the signature does not match the public key of the trusted party (because it wasn't created using their private key), then the file is not safe to use.
 
 What digital signatures cannot prove is that the signed file is in itself not malicious. 
@@ -121,6 +124,7 @@ If you have personally [verified](https://gpgtools.tenderapp.com/kb/how-to/trust
 
 
 ## Build from source
+
 Compiling Wasabi wallet from the source code is meant only for experienced users, who know what they are doing. The latest features are not thoroughly reviewed and may contain critical bugs that could even lead to loss of funds.
 
 1. Install the prerequisites: [Git](https://git-scm.com/downloads)
