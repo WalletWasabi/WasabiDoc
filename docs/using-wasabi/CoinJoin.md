@@ -90,7 +90,7 @@ The connection confirmation phase ends when all Alices have provided their uniqu
 
 Now that all peers are online, we are ready to proceed with the [output registration phase](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-output-registration-phase) of the round.
 
-First, every client needs to change the value of their credential, to the desired output value.
+First, every client needs to change the value of their credentials to the desired output values.
 For this, the client presents to the coordinator two old credentials, and two newly created ones.
 The coordinator does not know the amount value of any of those credentials, but it can verify, that the two pairs sum up to exactly the same value.
 For example, a user can present one 5 btc and one 0 btc credential, and redeem one 2 btc and one 3 btc credential.
