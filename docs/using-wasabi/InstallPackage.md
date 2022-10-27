@@ -23,13 +23,13 @@ Wasabi Wallet is a desktop wallet for MacOS, Windows, and certain Linux distros.
 It cannot be installed on Tails or Whonix as neither OS expose the Tor control port, which Wasabi 2.0 relies on.
 Follow the steps below to safely install Wasabi Wallet.
 
-1. Download the installer relevant to your operating system (and processor, in case of MacOS) from the [official Wasabi Wallet website.](wasabiwallet.io/#download)
-For improved privacy, we recommended that you use the [Tor browser](https://www.torproject.org/) and download the installer from [Wasabi's official Tor-website.](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion/)
+1. Download the installer relevant to your operating system (and processor, in case of MacOS) from the [official Wasabi Wallet website](wasabiwallet.io/#download).
+For improved privacy, we recommended that you use the [Tor browser](https://www.torproject.org/) and download the installer from [Wasabi's official Tor-website](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion/).
 2. **Optional, but highly recommended**: Verify the signature. 
 Note that this isn't a necessary step. 
 You can safely skip it if you have received the installer directly from a trusted source. 
 However, if you are downloading the installer from the official website, we highly recommend that you verify the PGP signature of the installer to ensure its authenticity and integrity. 
-One does well to adopt the "distrust the infrastructure" philosophy; for details, see the [Why verify signature](#why-verify-signature) section.
+One does well to adopt the "distrust the infrastructure" philosophy; for details, see the [Why verify signature](#why-verify-signature)? section.
 
     The directions below require GPGTools to be installed on your computer. [Install GPGTools](#install-gpgtools) and come back to this section:
     1. From the [official Wasabi Wallet website](wasabiwallet.io/#download), download the signature of the installer. 
@@ -83,9 +83,9 @@ The easiest method is to use the GUI: simply double-click the downloaded install
 GPGTools makes it a breeze to import, verify, and sign digital signatures.
 Follow the steps below to safely install GPGTools.
 
-1. [Download GPGTools.](https://gpgtools.org/)
+1. [Download GPGTools](https://gpgtools.org/).
 2. **Optional**: Verify the signature. 
-    This isn't a necessary step; however, we highly recommend that you verify the signature of the GPGTool software to ensure its authenticity and integrity; for more information, see section [Why verify signature?](#why-verify-signature)
+    This isn't a necessary step; however, we highly recommend that you verify the signature of the GPGTool software to ensure its authenticity and integrity; for more information, see section [Why verify signature](#why-verify-signature)?
     1. Open Terminal app (easiest use Spotlight or Menu button to search for it).
     2. Paste `shasum -a 256` , press spacebar to add a space, and then drag and drop the GPG Suite file into the terminal. 
         You should see the path of the folder appear; it will look something like this: 
@@ -121,7 +121,6 @@ You could text, email, call, video chat, mail, or meet up with people you know t
 Once you’re certain you've obtained the genuine fingerprint, keep it in a safe place. 
 Every time you need to check whether a key claiming to be from zkSNACKs is authentic, compare that key’s fingerprint to your trusted copy and confirm they match.
 If you have personally [verified](https://gpgtools.tenderapp.com/kb/how-to/trusting-keys-and-why-this-signature-is-not-to-be-trusted#how-to-sign-a-verified-key) zkSNACKs' PGP public key, and you are familiar with the [Web Of Trust](https://www.gnupg.org/gph/en/manual/x334.html), please consider [signing the key.](https://gpgtools.tenderapp.com/kb/how-to/trusting-keys-and-why-this-signature-is-not-to-be-trusted#how-to-sign-a-verified-key)
-
 
 ## Build from source
 
