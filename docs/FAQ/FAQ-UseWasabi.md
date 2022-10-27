@@ -12,11 +12,13 @@
 :::details
 ### How do I start using Wasabi?
 
-1. [Download & Install](/using-wasabi/InstallPackage.md) Wasabi (like with any other software) from the [official website](https://wasabiwallet.io)
-2. [Create a new wallet](/using-wasabi/WalletGeneration.md) or use an already existing one (by [importing or recovering](/using-wasabi/WalletRecovery.md) your own wallet)
-3. [Receive](/using-wasabi/Receive.md) some bitcoin
-4. Wait, and let the wallet do some [coinjoins](/using-wasabi/CoinJoin.md) (you see your privacy progress % increase)
-5. Enjoy your private bitcoin funds! ([Spend](/using-wasabi/Send.md) some, send to your [hardware wallet](/using-wasabi/ColdWasabi.md) (for cold storage) or leave them in Wasabi for a while)
+1. [Download & Install](/using-wasabi/InstallPackage.md) Wasabi (like with any other software) from the [official website](https://wasabiwallet.io).
+2. [Create a new wallet](/using-wasabi/WalletGeneration.md) or use an already existing one, by [importing or recovering](/using-wasabi/WalletRecovery.md) your own wallet.
+3. [Receive](/using-wasabi/Receive.md) some bitcoin.
+4. Wait, and let the wallet do some [coinjoins](/using-wasabi/CoinJoin.md).
+Your wallet's privacy progress % would increase.
+5. Enjoy your private bitcoin funds!
+[Spend](/using-wasabi/Send.md) some, send to your [hardware wallet](/using-wasabi/ColdWasabi.md) (for cold storage) or leave them in Wasabi for a while.
 :::
 
 ::::details
