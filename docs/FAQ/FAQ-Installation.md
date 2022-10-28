@@ -141,6 +141,7 @@ When a new major version [v2.X.X] has been released, you'll see a notification i
 
 ![Wasabi Update Available](/UpdateAvailable.png "Wasabi Update Available")
 
+Clicking on `Update` uses the default browser to go to the website, where you can download this new version.
 There are occasional silent releases like [v2.X.X.X] which fix issues that were introduced in a major release, and these are not announced in the GUI, so you will not see a notification.
 The [website](https://wasabiwallet.io) always contains the most recent version.
 All releases (major and minor) are announced on the social media like [Twitter](https://twitter.com/wasabiwallet) and [Reddit](https://reddit.com/r/WasabiWallet/).
