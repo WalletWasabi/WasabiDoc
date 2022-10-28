@@ -127,31 +127,6 @@ This will not harm your computer.
 :::
 
 :::details
-### How do I check the current version of Wasabi?
-
-In the GUI, go to the SearchBar at the top of the screen and click on `About Wasabi`. 
-Here the current version of your Wasabi is displayed.
-Wasabi is cutting edge software, so it is well-advised to stay up-to-date.
-:::
-
-:::details
-### How do I know about a new version of Wasabi?
-
-When a new major version [v2.1.X] has been released, you'll see a notification in the bottom right status icon `Version 2.X.X.X is now available`.
-There are occasional silent releases like [v2.1.10.X] which fix issues that were introduced in a major release, and these are not announced in the GUI.
-The [website](https://wasabiwallet.io) always links to the most recent build of the software.
-It will also be announced on [Twitter](https://twitter.com/wasabiwallet) and [Reddit](https://reddit.com/r/WasabiWallet/).
-:::
-
-:::details
-### How do I securely upgrade Wasabi?
-
-You can download the software build for the different operating systems on the main [website](https://wasabiwallet.io) or better over [Tor](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion).
-Make sure you also download the signatures of the build and verify them with [zkSNACKs' PGP public key](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt).
-For step-by-step instructions, follow [this guide](/using-wasabi/InstallPackage.md) or [see this video](https://youtu.be/DUc9A76rwX4).
-:::
-
-:::details
 ### Do I need to install Tor separately?
 
 No, because Wasabi has Tor built into the software.
@@ -191,6 +166,31 @@ There's no difference in the code, the same binaries are being delivered in diff
 :::
 
 ## Upgrade Wasabi
+
+:::details
+### How do I check the current version of Wasabi?
+
+In the GUI, go to the SearchBar at the top of the screen and click on `About Wasabi`. 
+Here the current version of your Wasabi is displayed.
+Wasabi is cutting edge software, so it is well-advised to stay up-to-date.
+:::
+
+:::details
+### How do I know about a new version of Wasabi?
+
+When a new major version [v2.1.X] has been released, you'll see a notification in the bottom right status icon `Version 2.X.X.X is now available`.
+There are occasional silent releases like [v2.1.10.X] which fix issues that were introduced in a major release, and these are not announced in the GUI.
+The [website](https://wasabiwallet.io) always links to the most recent build of the software.
+It will also be announced on [Twitter](https://twitter.com/wasabiwallet) and [Reddit](https://reddit.com/r/WasabiWallet/).
+:::
+
+:::details
+### How do I securely upgrade Wasabi?
+
+You can download the software build for the different operating systems on the main [website](https://wasabiwallet.io) or better over [Tor](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion).
+Make sure you also download the signatures of the build and verify them with [zkSNACKs' PGP public key](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt).
+For step-by-step instructions, follow [this guide](/using-wasabi/InstallPackage.md) or [see this video](https://youtu.be/DUc9A76rwX4).
+:::
 
 ## Advanced Installation
 
