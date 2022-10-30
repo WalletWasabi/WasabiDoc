@@ -40,7 +40,7 @@ Once a coin achieves enough privacy, the corresponding amount will show up in th
 
 ### Fees
 
-A 0.3 % coordinator fee will be taken from fresh coins bigger than 0.01 BTC.
+A 0.3% coordinator fee will be taken from fresh coins bigger than 0.01 BTC.
 Smaller ones don't pay coordinator fee at all, according to the _PlebsDontPay_ threshold.
 
 The round starts either as soon as the number of registered inputs reaches the maximum, or after the input registration time is reached and as long as the minimum number of inputs is satisfied.
@@ -68,7 +68,7 @@ With Alice, you send the input and input ownership proof to the coordinator.
 The Wasabi coordinator now verifies that:
 
 * There is still room for more inputs on this coinjoin.
-* The input has not been registered before, is not banned, is unspent, and that the input proof is valid.
+* The input has not already been registered, is not banned, is unspent, and that the input proof is valid.
 * The input has at least 5000 sats value.
  
 Only when all these checks are passed, does the coordinator allow this input to be registered.
