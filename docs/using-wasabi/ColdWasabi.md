@@ -13,16 +13,17 @@
 
 ## Using hardware wallet step-by-step
 
-1. Start your Wasabi Wallet and connect your hardware wallet with USB.
-Alternatively, you can import a Coldcard skeleton file via SD card.
-2. The `Hardware Wallet` tab will open, and there you can search all connected hardware wallets.
-3. Click `Load Wallet`, then you can [receive](/using-wasabi/Receive.md) bitcoin to addresses controlled by the hardware wallet.
-4. You can [spend](/using-wasabi/Send.md) these coins in the `Send` tab, though the hardware wallet must be connected via USB to confirm before signing the transaction.
+1. Start your Wasabi Wallet and go to `Add Wallet`.
+2. Click on `Connect to hardware wallet` and then connect the hardware wallet via cabel. Alternatively, you can import a Coldcard skeleton file via SD card using `Import Wallet` at the add wallet dialog.
+3. Confirm that the detected hardware wallet is correct.
+4. Click `Open`, and wait for the wallet to load.
+5. Now you can [receive](/using-wasabi/Receive.md) bitcoin to addresses controlled by the hardware wallet.
+6. You can [spend](/using-wasabi/Send.md) these coins in the `Send` dialog, though the hardware wallet must be connected via USB to confirm before signing the transaction.
 Alternatively, you can [build a PSBT](/using-wasabi/ColdWasabi.md#connecting-coldcard-via-sd-card), export this via SD card to your Coldcard wallet for signing, then import the final transaction to Wasabi for broadcasting.
 
-:::warning No CoinJoin
-Unfortunately, as of now, you cannot [CoinJoin](/using-wasabi/CoinJoin.md) with just the private keys on your hardware wallet.
-The keys need to be on the internet-connected computer to be able to CoinJoin.
+:::warning No coinjoin
+Unfortunately, as of now, you cannot [coinjoin](/using-wasabi/CoinJoin.md) with just the private keys on your hardware wallet.
+The keys need to be on the internet-connected computer to be able to coinjoin.
 :::
 
 ## What is Cold Storage
