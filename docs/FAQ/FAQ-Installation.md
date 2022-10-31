@@ -59,7 +59,7 @@ For an in-depth guide for [Debian and Ubuntu](/using-wasabi/InstallPackage.md#de
 
 ![Download Wasabi Wallet for Debian](/DownloadDeb.png "Download Wasabi Wallet for Debian")
 
-Verify the signature of the package with `gpg --verify Wasabi-${currentVersion}.deb` and ensure the software was signed by zkSNACKs' PGP public key [${zksnacksPublicKeyFingerprint}](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt).
+Verify the signature of the package with `gpg --verify Wasabi-${currentVersion}.deb.asc Wasabi-${currentVersion}.deb` and ensure that the software was signed by zkSNACKs' PGP public key [${zksnacksPublicKeyFingerprint}](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt).
 
 Now install Wasabi with `sudo apt install ./Wasabi-${currentVersion}.deb`, and run it with `wassabee`.
 Check out the main documentation for a [step-by-step guide](/using-wasabi/InstallPackage.md#debian-and-ubuntu).
@@ -74,7 +74,7 @@ Check out the main documentation for a [step-by-step guide](/using-wasabi/Instal
 
 ![Download Wasabi Wallet for Linux](/DownloadTar.png "Download Wasabi Wallet for Linux")
 
-Verify the signature of the package with `gpg --verify Wasabi-${currentVersion}.tar.gz.asc` and ensure the software was signed by zkSNACKs' PGP public key [${zksnacksPublicKeyFingerprint}](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt).
+Verify the signature of the package with `gpg --verify Wasabi-${currentVersion}.tar.gz.asc Wasabi-${currentVersion}.tar.gz` and ensure that the software was signed by zkSNACKs' PGP public key [${zksnacksPublicKeyFingerprint}](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt).
 Now install Wasabi with `sudo tar -pxzf Wasabi-${currentVersion}.tar.gz`, and run it with `./wassabee`.
 Check out the main documentation for a [step-by-step guide](/using-wasabi/InstallPackage.md#other-linux).
 :::
