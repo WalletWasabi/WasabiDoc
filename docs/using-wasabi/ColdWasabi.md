@@ -46,9 +46,19 @@ The setup is thoroughly tested for [Trezor model T](https://trezor.io), [Ledger 
 
 #### Import the wallet
 
-When Wasabi is running, the hardware wallet can be connected via USB to the computer.
-Wasabi should automatically detect the hardware, and open the `Hardware Wallet` tab where you can load the wallet.
-This wallet can be used as a watch-only wallet when the hardware wallet device is not connected.
+1. Go to `Add wallet`.
+2. Click on `Connect to hardware wallet`.
+3. Give the wallet a name.
+4. Connect the hardware wallet to the PC and enter the pin on the hardware wallet to unlock it.
+5. Confirm that the correct hardware wallet is detected.
+6. Open the wallet.
+
+:::tip This wallet can be used as a watch-only wallet when the hardware wallet device is not connected.
+Wasabi remembers the wallet's information like xpub, wallet fingerprint and addresses etc.
+But it never knows the private keys, which are on the hardware wallet.
+So, you can see the balance and all it's transactions in Wasabi, but you cannot send without the hardware wallet being connected.
+Because you need to sign (confirm) outgoing transactions on the hardware wallet.
+:::
 
 #### Receiving bitcoin
 
