@@ -37,6 +37,11 @@ Methods of cold storage include keeping private keys on a:
 - Bearer item such as a physical bitcoin
 - Hardware wallet
 
+:::tip Use a hardware wallet for cold storage
+There are multiple ways to exercise cold storage, however it is highly reccommended to use a hardware wallet.
+This is by far the best and most secure way of using bitcoin for almost all users.
+:::
+
 ## Hardware Wallet with Wasabi
 
 You can use Wasabi Wallet with almost any hardware wallet out there because Wasabi utilizes [Bitcoin Core Hardware Wallet Interface [HWI]](https://github.com/bitcoin-core/hwi).
