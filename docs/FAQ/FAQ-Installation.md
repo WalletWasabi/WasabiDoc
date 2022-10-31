@@ -137,12 +137,12 @@ Wasabi is cutting edge software, so it is well-advised to stay up-to-date.
 :::details
 ### How do I know about a new version of Wasabi?
 
-When a new major version [v2.X.X] has been released, you'll see a notification in the bottom right status icon `Version 2.X.X is now available`.
+When a new major version [v2.X.X] has been released, you'll see an orange update icon in the bottom right, upon hovering over it you can see `Version 2.X.X is now available`.
 
 ![Wasabi Update Available](/UpdateAvailable.png "Wasabi Update Available")
 
 Clicking on `Update` uses the default browser to go to the website, where you can download this new version.
-There are occasional silent releases like [v2.X.X.X] which fix issues that were introduced in a major release, and these are not announced in the GUI, so you will not see a notification.
+There are occasional silent releases like [v2.X.X.X] which fix small issues, and these are not announced in the GUI, so you will not see the orange update icon.
 The [website](https://wasabiwallet.io) always contains the most recent version.
 All releases (major and minor) are announced on the social media like [Twitter](https://twitter.com/wasabiwallet) and [Reddit](https://reddit.com/r/WasabiWallet/).
 :::
