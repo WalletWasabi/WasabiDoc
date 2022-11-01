@@ -57,7 +57,17 @@ After the first time you loaded a new device, the public keys will be stored loc
 #### Sending bitcoin
 
 Only when you want to [send bitcoin](/using-wasabi/Send.md) you need to connect the device over USB again.
-In the `Send` tab, select your coins, specify the destination address and the payment amount and the fee, then click the `Send Transaction` button.
+
+1. Click the `Send` button
+2. Enter the `Amount` & `Address`.
+3. Enter the label of whom you are sending to.
+4. At `Preview Transaction`, check if everything is correct.
+5. Click `Send Now`
+6. Connect the hardware wallet & unlock it.
+7. Check on the hardware wallet that everything is correct.
+8. Confirm on the hardware wallet.
+9. The transaction is sent!
+
 The private keys are not on the computer, thus the transaction is signed on the hardware wallet after you confirm with a physical button click.
 The final transaction is automatically broadcast over Tor with Wasabi Wallet.
 
