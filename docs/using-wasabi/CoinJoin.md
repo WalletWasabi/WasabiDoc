@@ -30,11 +30,11 @@ At first wallet load, you can choose one of the coinjoin strategy profiles:
 
 ![Coinjoin Strategy](CoinjoinStrategy.png)
 
-By default, Wasabi starts automatically coinjoining received funds when the total value of the non-private coins is equal to or above the `Auto-start coinjoin threshold` (0.01 BTC by default).
+By default, Wasabi starts automatically coinjoining your funds when the total value of the non-private coins is equal to or above the `Auto-start coinjoin threshold` (0.01 BTC by default).
 `Automatically start coinjoin` can be disabled from the coinjoin settings.
 In case you want to start the process manually, then click the play button; if you want to stop coinjoin, then click the pause button.
 
-Once a coin achieves enough privacy, the corresponding amount will show up in the software's main view as "PRIVATE".
+Once a coin reaches the `Anonymity score target`, then the corresponding amount will show up in the software's main view as "PRIVATE".
 
 Notice that it is not yet possible to coinjoin from a hardware wallet, the keys must be "hot" on your computer.
 
