@@ -119,13 +119,11 @@ If after a timeout not all outputs are registered, then this round is abandoned,
 
 Now that all inputs and outputs are registered, the coordinator can start the [signing phase](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-signing-phase), by building the coinjoin transaction with all the registered inputs and outputs.
 It sends this transaction to all the Alices of the round.
-Each user verifies that:
 
-* All inputs are included
-* All outputs are included
-
-The client then signs the transaction with the private keys of the inputs.
-Alice sends the signature to the coordinator, who then verifies this information.
+Each Alice does the following:
+- Verifies that her input and output are included.
+- Signs the transaction with the private key of her input.
+- Sends the signature to the coordinator, who verifies this information.
 
 The signing phase ends when the coordinator has received all the valid signatures for all the registered inputs.
 
