@@ -34,9 +34,9 @@ By default, Wasabi starts automatically coinjoining received funds when the tota
 `Automatically start coinjoin` can be disabled from the coinjoin settings.
 In case you want to start the process manually, then click the play button; if you want to stop coinjoin, then click the pause button.
 
-Notice that it is not yet possible to coinjoin from a hardware wallet, the keys must be "hot" on your computer.
-
 Once a coin achieves enough privacy, the corresponding amount will show up in the software's main view as "PRIVATE".
+
+Notice that it is not yet possible to coinjoin from a hardware wallet, the keys must be "hot" on your computer.
 
 ### Fees
 
@@ -47,8 +47,8 @@ The round starts either as soon as the number of registered inputs reaches the m
 Just leave Wasabi running in the background of your computer, as coinjoining takes time.
 
 Remixing is free, as well as coinjoining coins 1 hop from coinjoin, although, Bitcoin network fees still do apply.
-So if you send a payment and receive a change output, Wasabi will not charge you the coordinator fee for this change output again.
-The recipient of the payment will not have to pay the coordinator fee, as long he is making coinjoins with the same coordinator.
+So if you send a coinjoined coin and receive a change output, Wasabi will not charge you the coordinator fee for this change output again.
+The recipient of the payment will not have to pay the coordinator fee, as long as he is making coinjoins with the same coordinator.
 
 ## WabiSabi protocol step-by-step
 
@@ -129,7 +129,7 @@ The signing phase ends when the coordinator has received all the valid signature
 
 ### Broadcasting
 
-The coinjoin transaction has been successfully built and signed, and it is now ready to be [broadcasted](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-broadcasting-phase) to the peers of the Bitcoin network.
+The coinjoin transaction has been successfully built and signed, and it is now ready to be [broadcast](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-broadcasting-phase) to the peers of the Bitcoin network.
 The coordinator sends this transaction over the Tor network to random Bitcoin P2P nodes, and from there it is gossiped to other nodes and miners.
 To save on mining fees, the target confirmation time is roughly 24 hours.
 
