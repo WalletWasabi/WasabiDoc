@@ -63,7 +63,7 @@ The final transaction is automatically broadcast over Tor with Wasabi Wallet.
 
 ### Connecting Coldcard via SD card
 
-You can use Wasabi Wallet together with Coldcard without ever connecting it via USB, further reducing possible attack vectors.
+You can use Wasabi Wallet together with Coldcard without ever connecting it via USB, thus further reducing possible attack vectors.
 For more details see the [Coldcard documentation](https://coldcard.com/docs/microsd).
 
 #### Import the skeleton wallet
@@ -78,7 +78,7 @@ However, he can use it to derive a full transaction history, thus it is a potent
 :::
 
 Now insert the SD card to your computer, and open Wasabi Wallet.
-Go to the `Hardware Wallet` tab, and click the button `Import Coldcard`, browse to the SD card and select the `new-wallet.json` file.
+Go to the `Add Wallet` dialog, and click `Import a wallet`, browse to the SD card and select the `new-wallet.json` file.
 Wasabi will automatically import and modify this skeleton file and store it in your `Wallets` and `WalletBackups` folders.
 
 #### Receiving bitcoin
