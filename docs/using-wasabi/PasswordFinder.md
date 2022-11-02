@@ -26,7 +26,7 @@ It is important to know that the Wasabi Password Finder is not for breaking wall
 
 After an incorrect password is entered when opening a wallet, `Forgot Password` will show up.
 
-![Wasabi Wallet Forgot Password(/ForgotPassword.png "Wasabi Wallet Forgot Password")
+![Wasabi Wallet Forgot Password](/ForgotPassword.png "Wasabi Wallet Forgot Password")
 
 First you will be asked questions, like _your most likely password_, _which language_, _which characters it contains_ etc.
 After that it will search if your password can be found.
