@@ -28,7 +28,7 @@ WabiSabi enables centrally coordinated coinjoins with variable amounts in a trus
 
 At first wallet load, you can choose one of the coinjoin strategy profiles:
 
-![Coinjoin Strategy](CoinjoinStrategy.png)
+![Coinjoin Strategy](/CoinjoinStrategy.png)
 
 By default, Wasabi starts automatically coinjoining received funds when the total value of the non-private coins is equal to or above the `Auto-start coinjoin threshold` (0.01 BTC by default).
 `Automatically start coinjoin` can be disabled from the coinjoin settings.
