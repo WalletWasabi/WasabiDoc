@@ -63,7 +63,7 @@ With this, the coordinator can verify that you actually own these coins.
 
 Wasabi wallet generates a new [Tor identity](https://tb-manual.torproject.org/managing-identities/) called **Alice** for each input.
 She is a separate entity, and for every round you use a new Alice who is not linked to any other input or previous connection.
-With Alice, you send the input and input ownership proof to the coordinator.
+With Alice, you send the input ownership proof to the coordinator.
 
 The Wasabi coordinator now verifies that:
 
@@ -98,7 +98,7 @@ Or a user can present one 4 btc and one 1 btc credential, and redeem one 5 btc a
 After potentially many rounds of reissuance, each client has exactly the amount credential it desires.
 Each of these reissuance is perfectly private, so the coordinator cannot link any of them to the same user.
 
-Next, your Wasabi client generates a completely new Tor identity **Bob**, who is in no way tied to Alice.
+Next, your Wasabi client generates a completely new Tor identity **Bob**, who is in no way tied to any Alice.
 Bob sends to the Wasabi coordinator:
 
 * An unblinded credential signed by the coordinator
