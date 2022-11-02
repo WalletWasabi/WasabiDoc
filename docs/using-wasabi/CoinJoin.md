@@ -58,7 +58,7 @@ WabiSabi protocol requires 5 steps to successfully create and broadcast a coinjo
 
 During the [input registration](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-input-registration-phase), the client selects how many and which coins will be registered for coinjoin.
 These coins need to be confirmed on the Bitcoin blockchain.
-In the background Wasabi generates input proofs, which is a signature over a challenge message with the private key that locks up the coin.
+In the background Wasabi generates input proofs, which are signatures over challenge messages, made with the private keys that lock up the coins.
 With this, the coordinator can verify that you actually own these coins.
 
 Wasabi wallet generates a new [Tor identity](https://tb-manual.torproject.org/managing-identities/) called **Alice** for each input.
