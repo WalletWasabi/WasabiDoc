@@ -21,8 +21,8 @@ WabiSabi enables centrally coordinated coinjoins with variable amounts in a trus
 ## Coinjoin step-by-step
 
 1. Launch Wasabi and open your wallet.
-2. Wait.
-3. You're done! Wasabi coinjoins automatically in the background. You can make private payments now.
+2. Wait. Wasabi coinjoins automatically in the background.
+3. You're done! You can make private payments now.
 
 ### More details
 
