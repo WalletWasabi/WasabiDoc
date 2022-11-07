@@ -198,10 +198,13 @@ All releases (major and minor) are announced on the social media like [Twitter](
 :::
 
 :::details
-### How do I securely upgrade Wasabi?
+### How do I (securely) upgrade Wasabi?
 
+To upgrade Wasabi, you need to download the new version.
+Downloading and installing the newer Wasabi package will overwrite the previous one, while preserving your files like your wallets etc.
+So to upgrade Wasabi, simply download and install the new version like at first install.
 You can download the software build for the different operating systems on the main [website](https://wasabiwallet.io) or better over [Tor](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion).
-Make sure you also download the signatures of the build and verify them with [zkSNACKs' PGP public key](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt).
+For extra security, it is reccommended to also download the signatures of the build and verify them with [zkSNACKs' PGP public key](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt).
 For step-by-step instructions, follow [this guide](/using-wasabi/InstallPackage.md) or [see this video](https://youtu.be/DUc9A76rwX4).
 :::
 
