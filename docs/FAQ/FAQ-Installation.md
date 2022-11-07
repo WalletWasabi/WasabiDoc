@@ -168,6 +168,15 @@ There's no difference in the code, the same binaries are being delivered in diff
 ## Upgrade Wasabi
 
 :::details
+### Why should I upgrade Wasabi?
+
+Wasabi is cutting edge software and is being worked on by the developers on a daily basis.
+Once in a while (+- every month) all the changes/improvements are being released in a new Wasabi version.
+The changes can contain (critical) bug fixes, small improvements, new features etc.
+It's always a good idea to run (one of) the latest Wasabi versions.
+:::
+
+:::details
 ### How do I check the current version of Wasabi?
 
 In the GUI, go to the SearchBar at the top of the screen and click on `About Wasabi`. 
