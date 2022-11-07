@@ -44,7 +44,7 @@ This protects you against malicious man in the middle attacks where bad guys giv
 
 On the [WasabiWallet.io](https://wasabiwallet.io) website you can download the packages of the latest release.
 To verify the signature you also need to download the separate signature `.asc` file.
-In the terminal, change the directory to the one with the downloaded files, and verify the signature with the correct commands, depending on which operating system you are.
+In the terminal, change the directory to the one with the downloaded files, and verify the signature with `gpg --verify` + the corresponding signature file name, depending on which operating system you are.
 Everything is valid if it returns `Good signature from zkSNACKs` and that it was signed with the `Primary key fingerprint: ${zksnacksPublicKeyFingerprint}`.
 
 For an in-depth guide for [Debian and Ubuntu](/using-wasabi/InstallPackage.md#debian-and-ubuntu), [other Linux](/using-wasabi/InstallPackage.md#other-linux), [Windows](/using-wasabi/InstallPackage.md#windows), and [macOS](/using-wasabi/InstallPackage.md#macOS) see the main documentation.
