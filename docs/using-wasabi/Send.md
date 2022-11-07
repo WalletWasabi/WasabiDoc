@@ -11,6 +11,8 @@
 
 ---
 
+@[youtube](vCI5aza-lv0)
+
 ## How to send bitcoin step-by-step
 
 1.  Click the `Send` button.
