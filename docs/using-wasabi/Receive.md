@@ -49,7 +49,7 @@ This makes it obvious for anyone that this one entity [you] owns all these coins
 The first rule of Bitcoin privacy is [never reuse addresses](/why-wasabi/AddressReuse.md)!
 
 :::tip
-This is why Wasabi removes the address from the `Receive` tab as soon as it has received a coin.
+This is why Wasabi removes the address from the `Unused Receive Address` list as soon as it has received a coin.
 :::
 
 ## The importance of labeling
