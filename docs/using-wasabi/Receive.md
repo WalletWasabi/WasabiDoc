@@ -69,8 +69,6 @@ Understanding this difference between labeling an address and describing a trans
 In Wasabi it is mandatory to give every receive address a label of those who know that this address is yours, so that later you know what to do with it, and it also helps the auto coin selection algorithm when sending.
 :::
 
-![Set known by in Wasabi Wallet](/ReceiveLabelingRequired.png "Set known by in Wasabi Wallet")
-
 ### Coin control
 
 Coin control is a key feature that enables all the other features.
