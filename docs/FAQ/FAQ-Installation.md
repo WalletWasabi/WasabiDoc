@@ -206,6 +206,14 @@ Make sure you also download the signatures of the build and verify them with [zk
 For step-by-step instructions, follow [this guide](/using-wasabi/InstallPackage.md) or [see this video](https://youtu.be/DUc9A76rwX4).
 :::
 
+:::details
+### How does the `Auto download new version` work?
+
+The software will automatically download the new version's installer upon a new release.
+After it is downloaded, the user can press "Update on Close" to run the installer when closing Wasabi.
+The installer is downloaded from GitHub .
+:::
+
 ## Advanced Installation
 
 :::details
