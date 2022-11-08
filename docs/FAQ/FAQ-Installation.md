@@ -132,7 +132,6 @@ This will not harm your computer.
 
 No, because Wasabi has Tor built into the software.
 All Wasabi network traffic goes via Tor by default - no need to set up Tor yourself.
-If you do already have Tor, and it is running, then Wasabi will try to use that first.
 
 You can turn off Tor in the Settings.
 Be careful, as this will compromise your privacy.
