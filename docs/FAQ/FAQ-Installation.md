@@ -223,7 +223,7 @@ A new version will have to be installed manually.
 
 The software will automatically download the new version's installer upon a new release.
 After it is downloaded, the user can press "Update on Close" to run the installer when closing Wasabi.
-The installer is downloaded from GitHub.
+The installer is downloaded from [GitHub](https://github.com/zkSNACKs/WalletWasabi/).
 :::
 
 ## Advanced Installation
