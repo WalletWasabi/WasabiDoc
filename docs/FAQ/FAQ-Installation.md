@@ -123,7 +123,7 @@ With the architecture that Wasabi uses, these two different processors need thei
 :::details
 ### What happens when I install the wrong package for macOS?
 
-Wasabi won't start or it will crash on startup.
+Wasabi will crash on startup or run significantly slower than it should.
 This will not harm your computer.
 :::
 
