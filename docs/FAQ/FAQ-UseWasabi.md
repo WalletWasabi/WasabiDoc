@@ -529,10 +529,6 @@ In this case you have to wait until your transaction is confirmed in a block, an
 
 ## Send
 
-@[youtube](PRlAAxunmdU)
-
-@[youtube](AdmlM-Qvco0)
-
 :::details
 ### What are coins?
 
@@ -778,8 +774,6 @@ So when sending, less than 0.00787086 BTC (to cover the mining fees) should be e
 :::
 
 ## CoinJoin
-
-@[youtube](ypfZT9GlqTw)
 
 :::details
 ### What's the legal status of Wasabi/CoinJoin?
