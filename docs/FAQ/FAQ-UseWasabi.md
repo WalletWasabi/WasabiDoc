@@ -568,13 +568,13 @@ Alice can protect herself against this by using a [CoinJoin](/using-wasabi/CoinJ
 :::details
 ### How do I set a destination address?
 
-In the `Send` tab, there is a text box for the `Address` right under the coin list.
-If you have an address in the clipboard, then it is automatically pasted when you click on the box.
+In the `Send` dialog, there is a box called `To`, enter here the bitcoin address or PayJoin URL.
+If you have an address in the clipboard, then the address can be pasted by using the paste button or right click..
 You can also type in the address manually, there is a checksum to help you identify typos.
 Be careful and double-check the address, there is no way to revert this transaction and change the destination.
 So make sure that the coins get into the right hands.
 
-![Wasabi Wallet Send tab](/SendAmountFeePassword.png "Wasabi Wallet Send tab")
+![Send To Field](/SendToField.png "Send To Field")
 :::
 
 :::details
