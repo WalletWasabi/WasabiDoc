@@ -581,7 +581,7 @@ So make sure that the coins get into the right hands.
 ### Can I pay to many addresses?
 
 Unfortunately pay to many is not yet implemented in the GUI.
-However, you can use the [RPC server `send` call](/using-wasabi/RPC.md#send) and specify multiple receiving addresses.
+However, you can use the [RPC server `send` call](/using-wasabi/RPC.md#send) and specify multiple destination addresses.
 :::
 
 :::details
