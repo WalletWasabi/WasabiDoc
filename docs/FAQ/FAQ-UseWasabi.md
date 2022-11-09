@@ -577,6 +577,19 @@ So make sure that the coins get into the right hands.
 ![Wasabi Wallet Send tab](/SendAmountFeePassword.png "Wasabi Wallet Send tab")
 :::
 
+::::details
+### How do I set the payment amount?
+
+At the `Send` dialog, enter the bitcoin or dollar amount in the Amount field.
+
+![Send Amount](/SendAmountField.png "Send Amount")
+
+:::tip Dollar amounts are approximately
+When entering a dollar amount, Wasabi calculates the bitcoin amount according to the current BTC/USD exchange rate.
+This dollar amount can differ a bit compared to other wallets/exchanges.
+:::
+::::
+
 :::details
 ### Can I pay to many addresses?
 
@@ -588,16 +601,6 @@ However, you can use the [RPC server `send` call](/using-wasabi/RPC.md#send) and
 ### Can I set a custom change address?
 
 No. That is currently not possible.
-:::
-
-:::details
-### How do I set the payment amount?
-
-After you select one or more coins as inputs in `Send` tab, say two anonset coins worth 0.1 bitcoin each.
-You can manually set the exact amount that the destination address will receive in the output of the transaction, say 0.15 bitcoin.
-Then Wasabi will help you with automatically calculating the precise change output value with `inputs - destination output - transaction fee`.
-
-![Wasabi Wallet Send tab](/SendAmountFeePassword.png "Wasabi Wallet Send tab")
 :::
 
 :::details
