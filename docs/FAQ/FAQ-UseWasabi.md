@@ -987,13 +987,8 @@ The backend server also sends you information about the current mempool for fee 
 :::details
 ### How long does it take to mix my coins?
 
-It depends on many things, the longest period is the wait for all peers to register their coins.
-Every round has a goal of 100 anonymity set.
-Wasabi is developed in a way that there's a round at least once every one hour.
-If the 100 peers registered earlier, then there can be many rounds per hour.
-When all peers are registered, then the signing phase is done within a couple of seconds.
-
-Summing up: the faster peers register in the CoinJoins, the faster the mixes are.
+It depends on many things and it's not possible to give an exact answer.
+WabiSabi coinjoin 
 :::
 
 :::details
@@ -1271,7 +1266,7 @@ To avoid any privacy leak, you can use a Ledger hardware wallet in combination w
 :::
 
 :::details
-### After I CoinJoined my coins and reached green anonset, I sent them to my hardware wallet address. When I check my HW via Wasabi, the coins are now red. Why?
+### After I CoinJoined my coins and reached green anonset, I sent them to my hardware wallet address. When I check my HW via Wasabi, the coins are now grey. Why?
 
 Everything is working as expected.
 
@@ -1497,14 +1492,6 @@ For more information, see this [dedicated chapter](/using-wasabi/ChangeCoins.md)
 :::
 ::::
 
-:::details
-### How can I mix large amounts?
-
-Wasabi creates anonymity set for multiple denominations in one round, these are 0.1, 0.2, 0.4, 0.8, 1.6, 3.2, ... bitcoin!
-Read more: [What are the equal denominations created in one mixing round?](/FAQ/FAQ-UseWasabi.md#what-are-the-equal-denominations-created-in-one-mixing-round)
-
-@[youtube](3Ezru07J674)
-:::
 
 ::::details
 ### Why do my coins occasionally get banned from participating in CoinJoin?
