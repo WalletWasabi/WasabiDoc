@@ -645,15 +645,20 @@ At the transaction fee slider dialog, click on `Advanced` and manually type the 
 ![Wasabi Wallet custom fee rate](/SendCustomFee.png "Wasabi Wallet custom fee rate")
 :::
 
-:::details
+::::details
 ### How do I select coins for spending?
 
-Unlike other Bitcoin wallets, the user cannot spend from Wasabi without selecting coins, since ["Coin Control Is Must Learn If You Care About Your Privacy In Bitcoin"](https://medium.com/@nopara73/coin-control-is-must-learn-if-you-care-about-your-privacy-in-bitcoin-33b9a5f224a2), at least for today.
-In order to spend some coins, simply select them by clicking their checkboxes from the list.
-Wasabi will automatically build a transaction with the best combination of the selected coins.
+In the normal send workflow, Wasabi automatically selects which coins to send.
+To send a specific coin, the user can use the coinlist.
+The coinlist can be brought up by pressing the keyboard combination `CTRL` + `C` + `D`.
 
-![Wasabi Wallet Send tab](/Send.png "Wasabi Wallet Send tab")
+![Wallet Coins Send Selected Coins](/WalletCoinsSendSelectedCoins.png "Wallet Coins SendS electedC oins")
+
+:::warning This is not coin control
+You can only send coins in full.
+There is no possiblity to enter a bitcoin amount or receive change.
 :::
+::::
 
 :::details
 ### How is the transaction broadcast?
