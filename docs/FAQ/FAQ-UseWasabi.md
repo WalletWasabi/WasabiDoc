@@ -791,7 +791,7 @@ Here's a great explanation about it:
 :::details
 ### What is the minimum amount required to coinjoin?
 
-The minimum amount of bitcoin per coinjoin round is 0.00005000 BTC (5000 sats).
+The minimum amount of bitcoin per coinjoin round is 0.00005000 BTC (5000 sats) + mining fees.
 :::
 
 :::details
@@ -948,7 +948,7 @@ If your wallet crashes or your computer goes offline during CoinJoin you simply 
 The amount of privacy needed depends on your individual threat model, who is trying to deanonymize you?
 It is commonly said that an anonymity set of 50 is sufficient to evade low-level blockchain forensics analysis, but it might not protect you against large adversaries.
 At least one round to re-mix your coins can increase your privacy drastically.
-With Wasabi this can be achieved in a matter of minutes.
+With Wasabi this can be achieved in a matter of hours.
 :::
 
 :::details
