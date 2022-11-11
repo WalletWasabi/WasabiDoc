@@ -580,7 +580,7 @@ So make sure that the coins get into the right hands.
 ::::details
 ### How do I set the payment amount?
 
-At the `Send` dialog, enter the bitcoin or dollar amount in the Amount field.
+At the `Send` dialog, enter the bitcoin or dollar amount in the `Amount` field.
 
 ![Send Amount](/SendAmountField.png "Send Amount")
 
