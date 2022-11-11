@@ -56,8 +56,8 @@ The setup is thoroughly tested for [Trezor model T](https://trezor.io), [Ledger 
 :::tip This wallet can be used as a watch-only wallet when the hardware wallet device is not connected.
 Wasabi remembers the wallet's information like xpub, wallet fingerprint and addresses etc.
 But it never knows the private keys, which are on the hardware wallet.
-So, you can see the balance and all it's transactions in Wasabi, but you cannot send without the hardware wallet being connected.
-Because you need to sign (confirm) outgoing transactions on the hardware wallet.
+So, you can see the balance and all it's transactions in Wasabi and you can generate addresses, but you cannot send without the hardware wallet being connected.
+Because you need to sign (confirm) the outgoing transactions on the hardware wallet.
 :::
 
 #### Receiving bitcoin
