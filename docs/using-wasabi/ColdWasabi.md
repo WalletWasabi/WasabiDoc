@@ -14,11 +14,11 @@
 ## Using hardware wallet step-by-step
 
 1. Start your Wasabi Wallet and go to `Add Wallet`.
-2. Click on `Connect to hardware wallet` and then connect the hardware wallet via cable. Alternatively, you can import a Coldcard skeleton file via SD card by using `Import Wallet` at the add wallet dialog.
+2. Click on `Connect to hardware wallet` and then connect the hardware wallet via cable. Alternatively, you can import a Coldcard skeleton file via SD card by using `Import Wallet` at the `Add Wallet` dialog.
 3. Confirm that the detected hardware wallet is correct.
 4. Click `Open`, and wait for the wallet to load.
 5. Now you can [receive](/using-wasabi/Receive.md) bitcoin to addresses controlled by the hardware wallet.
-6. You can [spend](/using-wasabi/Send.md) these coins in the `Send` dialog, though the hardware wallet must be connected via USB to confirm before signing the transaction.
+6. You can [spend](/using-wasabi/Send.md) these coins in the `Send` dialog, though the hardware wallet must be connected via USB to sign the transaction.
 Alternatively, you can [build a PSBT](/using-wasabi/ColdWasabi.md#connecting-coldcard-via-sd-card), export this via SD card to your Coldcard wallet for signing, then import the final transaction to Wasabi for broadcasting.
 
 :::warning No coinjoin
