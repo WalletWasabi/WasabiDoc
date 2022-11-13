@@ -184,7 +184,7 @@ Here the current version of your Wasabi is displayed.
 Wasabi is cutting edge software, so it is well-advised to stay up-to-date.
 :::
 
-:::details
+::::details
 ### How do I know about a new version of Wasabi?
 
 When a new major version [v2.X.X] has been released, you'll see an orange update icon in the bottom right, upon hovering over it you can see `Version 2.X.X is now available`.
@@ -195,7 +195,11 @@ Clicking on `Update` uses the default browser to go to the website, where you ca
 There are occasional silent releases like [v2.X.X.X] which fix small issues, and these are not announced in the GUI, so you will not see the orange update icon.
 The [website](https://wasabiwallet.io) always contains the most recent version.
 All releases (major and minor) are announced on the social media like [Twitter](https://twitter.com/wasabiwallet) and [Reddit](https://reddit.com/r/WasabiWallet/).
+
+:::tip Since Wasabi v2.0.1.4, an automatic downloader has been implemented
+Clients since v2.0.1.4 can simply turn on the setting `Auto download new version`, and all the work will be done in the background. More information is available in the dedicated [section](/FAQ/FAQ-Installation.md#how-does-the-auto-download-new-version)
 :::
+::::
 
 :::details
 ### How do I securely upgrade Wasabi?
@@ -211,19 +215,19 @@ For step-by-step instructions, follow [this guide](/using-wasabi/InstallPackage.
 If enabled, the software will automatically download the new version's installer upon a new release.
 If disabled, the software will only signal, but not automatically download, that there is a new version available.
 
-:::tip Auto download new version is currently only available for Windows and macOS
-For Linux, this setting does not work.
-A new version will have to be installed manually.
-:::
 ::::
 
-:::details
+::::details
 ### How does the `Auto download new version` work?
 
 The software will automatically download the new version's installer upon a new release.
 After it is downloaded, the user can press "Update on Close" to run the installer when closing Wasabi.
 The installer is downloaded from [GitHub](https://github.com/zkSNACKs/WalletWasabi/).
+
+:::tip This feature is only available since Wasabi v2.0.1.4
+Earlier clients must download the new version themselves as described [here](/FAQ/FAQ-Installation.md#how-do-i-know-about-a-new-version-of-wasabi)
 :::
+::::
 
 ## Advanced Installation
 
