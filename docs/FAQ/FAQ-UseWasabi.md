@@ -915,7 +915,7 @@ Go to `Settings` > `Bitcoin` and change the network to `TestNet`.
 Then restart your Wasabi and create a new wallet, this is needed because Wasabi differentiates between "Main wallets" and "TestNet wallets".
 This wallet will synchronize for the TestNet, and generate TestNet addresses.
 You can get tBTC from faucets like:
-[coinfaucet.eu/en/btc-testnet](https://coinfaucet.eu/en/btc-testnet/)
+[coinfaucet.eu/en/btc-testnet](https://coinfaucet.eu/en/btc-testnet/) or [bitcoinfaucet.uo1.net](https://bitcoinfaucet.uo1.net/)
 :::
 
 :::details

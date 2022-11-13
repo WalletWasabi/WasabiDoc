@@ -197,7 +197,8 @@ The [website](https://wasabiwallet.io) always contains the most recent version.
 All releases (major and minor) are announced on the social media like [Twitter](https://twitter.com/wasabiwallet) and [Reddit](https://reddit.com/r/WasabiWallet/).
 
 :::tip Since Wasabi v2.0.1.4, an automatic downloader has been implemented
-Clients since v2.0.1.4 can simply turn on the setting `Auto download new version`, and all the work will be done in the background. More information is available in the dedicated [section](/FAQ/FAQ-Installation.md#how-does-the-auto-download-new-version)
+Clients since v2.0.1.4 can simply turn on the setting `Auto download new version`, and all the work will be done in the background.
+More information is available in the dedicated [section](/FAQ/FAQ-Installation.md#how-does-the-auto-download-new-version).
 :::
 ::::
 
@@ -214,7 +215,6 @@ For step-by-step instructions, follow [this guide](/using-wasabi/InstallPackage.
 
 If enabled, the software will automatically download the new version's installer upon a new release.
 If disabled, the software will only signal, but not automatically download, that there is a new version available.
-
 ::::
 
 ::::details
