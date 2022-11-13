@@ -715,7 +715,6 @@ The transaction graph is the history of where a coin has been, and is important 
 For example, if you buy coins anonymously in a P2P way, you should try to avoid mixing those coins with coins you got in a public way (donation, exchange, etc.).
 :::
 
-
 :::details
 ### Why Wasabi did not send some of my selected coins?
 
@@ -1474,7 +1473,6 @@ Or open a new Lightning Network node (not your main Lightning node), create a ch
 For more information, see this [dedicated chapter](/using-wasabi/ChangeCoins.md).
 :::
 ::::
-
 
 ::::details
 ### Why do my coins occasionally get banned from participating in CoinJoin?
