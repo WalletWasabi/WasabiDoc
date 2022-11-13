@@ -1248,7 +1248,7 @@ To avoid any privacy leak, you can use a Ledger hardware wallet in combination w
 :::
 
 :::details
-### After I CoinJoined my coins and reached green anonset, I sent them to my hardware wallet address. When I check my HW via Wasabi, the coins are now grey. Why?
+### After I CoinJoined my coins and reached green anonset, I sent them to my hardware wallet address. When I check my HW via Wasabi, the coins are now red. Why?
 
 Everything is working as expected.
 
