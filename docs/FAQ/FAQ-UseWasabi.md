@@ -855,7 +855,7 @@ So, there are 79 denominations from 0.00005000 BTC up to 1374.38953472 BTC.
 During this phase you have the opportunity to register coins that you want to mix in this round.
 Your Wasabi client connects to the coordinator server with a unique Tor identity called Alice, and with it you send the input proofs, the cleartext change output, and the blinded anonset CoinJoin address.
 When all the proofs are valid, the coordinator signs the blinded output without knowing which address this is, and sends this back to Alice.
-Since the goal is to have at least 150 peers in one round, the [input registration phase](/using-wasabi/CoinJoin.md#input-registration) can fail if too few participants registered in the available time frame.
+Since the goal is to have at least 150 inputs in one round, the [input registration phase](/using-wasabi/CoinJoin.md#input-registration) can fail if too few participants registered in the available time frame.
 :::
 
 :::details
