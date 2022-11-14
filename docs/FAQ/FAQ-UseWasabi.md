@@ -964,7 +964,7 @@ Depending on many factors, like the `Anonymity score target`, the `coinjoin stra
 ### What coinjoin strategy should I select?
 
 There is no answer for all, or a "best" strategy, as is depends per user.
-The coinjoin strategy should be selected according to the users prefence:
+The coinjoin strategy should be selected according to the user's preference:
 Do you want to `Minimize costs`, `Maximize speed`, or `Maximize privacy`?
 Or the user can create their own `Custom` strategy.
 
