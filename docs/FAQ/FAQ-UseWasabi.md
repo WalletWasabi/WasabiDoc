@@ -261,6 +261,13 @@ It also shows some information about the current coinjoin round.
 ![Wasabi Wallet Music Box](/MusicBox.png "Wasabi Wallet Music Box")
 :::
 
+:::details
+### Does Wasabi support Taproot?
+
+Partially, Wasabi supports sending to Taproot (bech32m) address format.
+However, receiving with Taproot is not yet supported.
+:::
+
 ## Synchronization
 
 :::details
