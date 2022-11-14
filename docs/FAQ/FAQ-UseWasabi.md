@@ -655,6 +655,14 @@ Wasabi will automatically build a transaction with the best combination of the s
 :::
 
 :::details
+### How does Wasabi select which coins to send?
+
+Wasabi automatically first selects the private coins. 
+If there are no/not enough private coins for this transaction, then Wasabi will select private coins + non-private coins.
+Which non-private coins will be used can be selected by the user, based on the labelling system.
+:::
+
+:::details
 ### How is the transaction broadcast?
 
 Wasabi connects only to Bitcoin nodes that provide a Tor onion service, so end-to-end encryption is enforced between the peers, without involving any exit node.
