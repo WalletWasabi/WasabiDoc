@@ -160,7 +160,7 @@ When this is not active, the user will have to manually press the Play button in
 
 ### Auto-start coinjoin threshold
 
-The wallet will not automatically start coinjoining if the non-private balance is less than the `Auto-start coinjoin threshold`, even if the `Automatically start coinjoin` is active.
+The wallet will not automatically start coinjoining if the non-private balance is below the `Auto-start coinjoin threshold`, even if the `Automatically start coinjoin` is active.
 In this case the user has to manually press Play to start coinjoining.
 This setting can be used to prevent paying (relatively) high fees for smaller bitcoin amounts.
 
@@ -178,9 +178,9 @@ Note that you might pay relatively more fees for coinjoining smaller amounts.
 
 ### Coinjoin Strategy
 
-Wasabi ships with 3 different coinjoin strategies: `Minimize Costs`, `Maximize Speed`, and `Maximize Privacy`.
-Each of these coinjoin strategies contain different configurations.
-These coinjoin strategies determine the Anonymity score target, Coinjoin time preference, and if red coin isolation is enabled or not.
+Wasabi ships with 3 coinjoin strategies: `Minimize Costs`, `Maximize Speed`, and `Maximize Privacy`.
+Each of these contain different configurations.
+They determine the `Anonymity score target`, `Coinjoin time preference`, and if `Red coin isolation` is enabled or not.
 
 ![Coinjoin Profile Settings](/CoinjoinProfileSettings.png "Coinjoin Profile Settings")
 
