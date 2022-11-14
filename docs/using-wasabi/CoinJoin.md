@@ -139,7 +139,7 @@ Wasabi Wallet has automatic coinjoin.
 It is done by the built-in automatic coinjoin "robot".
 The robot contains instructions/settings, like how often and when to coinjoin.
 The user is able to specify these settings in the `Coinjoin Settings` dialog, according to his own preferences.
-The wallet ships with the default settings, which is good enough for most users.
+The wallet ships with default settings, which are good enough for most users.
 
 ![Wasabi Wallet Coinjoin Settings](/CoinjoinSettings.png "Wasabi Wallet Coinjoin Settings")
 
@@ -186,7 +186,7 @@ They determine the `Anonymity score target`, `Coinjoin time preference`, and if 
 
 The default strategy is `Maximize Speed`.
 
-It is possible to make your own custom profile by using the customize button. 
+It is possible to make your own custom strategy by using the customize button. 
 
 ![Coinjoin Strategy](/CoinjoinStrategy.png "Coinjoin Strategy")
 
