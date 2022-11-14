@@ -182,7 +182,7 @@ Wasabi ships with 3 coinjoin strategies: `Minimize Costs`, `Maximize Speed`, and
 Each of these contain different configurations.
 They determine the `Anonymity score target`, `Coinjoin time preference`, and if `Red coin isolation` is enabled or not.
 
-![Coinjoin Profile Settings](/CoinjoinProfileSettings.png "Coinjoin Profile Settings")
+![Coinjoin Strategy Settings](/CoinjoinStrategySettings.png "Coinjoin Strategy Settings")
 
 The default strategy is `Maximize Speed`.
 
