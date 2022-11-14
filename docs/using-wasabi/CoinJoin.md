@@ -160,13 +160,13 @@ When this is not active, the user will have to manually press the Play button in
 
 ### Auto-start coinjoin threshold
 
+The default Auto-start coinjoin threshold is 0.01 BTC.
+
 The wallet will not automatically start coinjoining if the non-private balance is below the `Auto-start coinjoin threshold`, even if the `Automatically start coinjoin` is active.
 In this case the user has to manually press Play to start coinjoining.
 This setting can be used to prevent paying (relatively) high fees for smaller bitcoin amounts.
 
 For example, if the non-private balance is 0.005 BTC and the Auto-start coinjoin threshold is 0.01 BTC, the user will have to manually press Play to start coinjoining. 
-
-The default Auto-start coinjoin threshold is 0.01 BTC.
 
 ![Auto-start Coinjoin Threshold](/AutoStartCoinjoinThreshold.png "Auto-start Coinjoin Threshold")
 
