@@ -628,7 +628,7 @@ But the provided time frames are only a rough estimation, and not at all a preci
 ![Wasabi Wallet mining fee settings](/SendFeeSlider.png "Wasabi Wallet mining fee settings")
 
 Because confirmation fee estimation is more an art than a science, you can also set the fee manually.
-Then you can go after your gut feeling, [mempool chart analysis](https://jochen-hoenicke.de/queue/#0,24h), or just putting the minimum of 1 sat/vByte.
+Then you can go after your gut feeling, [mempool analysis](https://mempool.space/), or just putting the minimum of 1 sat/vByte.
 
 For a transaction to yourself, for example from your hot coinjoin wallet to your hardware wallet, you don't need to have fast confirmation, so you can set a relatively low fee.
 But to send from the hot coinjoin wallet to the coffee shop, you might want to get faster confirmation, thus paying a higher fee.
@@ -716,14 +716,6 @@ If you combine the tiny bit of change you received from Bob and from the exchang
 So the idea around clusters is to make it easier for users to follow the transaction graph.
 The transaction graph is the history of where a coin has been, and is important if different histories need to be separated.
 For example, if you buy coins anonymously in a P2P way, you should try to avoid mixing those coins with coins you got in a public way (donation, exchange, etc.).
-:::
-
-:::details
-### What's the difference between Send and Build Transaction?
-
-The only difference is that `Build Transaction` does not propagate the transaction, it simply builds it.
-For a hot Wasabi with private keys, it will build and sign a final transaction, that can be broadcasted at any time.
-For a cold Wasabi with private keys on a hardware wallet, it will build an unsigned transaction, which must be signed offline on the hardware wallet before it is valid.
 :::
 
 :::details
@@ -866,14 +858,13 @@ So, there are 79 denominations from 0.00005000 BTC up to 1374.38953472 BTC.
 During this phase you have the opportunity to register coins that you want to mix in this round.
 Your Wasabi client connects to the coordinator server with a unique Tor identity called Alice, and with it you send the input proofs, the cleartext change output, and the blinded anonset CoinJoin address.
 When all the proofs are valid, the coordinator signs the blinded output without knowing which address this is, and sends this back to Alice.
-Since the goal is to have 100 peers in one round, the [input registration phase](/using-wasabi/CoinJoin.md#input-registration) can take some time.
-But regardless of how many participants, one hour after the last CoinJoin this phase is complete.
+Since the goal is to have at least 150 inputs in one round, the [input registration phase](/using-wasabi/CoinJoin.md#input-registration) can fail if too few participants registered in the available time frame.
 :::
 
 :::details
 ### What is happening in the connection confirmation phase?
 
-Because the input registration phase can take up to one hour, the coordinator needs to ensure that everyone is still online and ready to continue.
+Because the input registration phase takes some time, the coordinator needs to ensure that everyone is still online and ready to continue.
 So in the [connection confirmation phase](/using-wasabi/CoinJoin.md#connection-confirmation) every Alice sends a signal to the coordinator, and when all have checked in, this phase concludes.
 :::
 
@@ -927,9 +918,7 @@ Go to `Settings` > `Bitcoin` and change the network to `TestNet`.
 Then restart your Wasabi and create a new wallet, this is needed because Wasabi differentiates between "Main wallets" and "TestNet wallets".
 This wallet will synchronize for the TestNet, and generate TestNet addresses.
 You can get tBTC from faucets like:
-[testnet-faucet.mempool.co](https://testnet-faucet.mempool.co/)
-or
-[coinfaucet.eu/en/btc-testnet](https://coinfaucet.eu/en/btc-testnet/)
+[coinfaucet.eu/en/btc-testnet](https://coinfaucet.eu/en/btc-testnet/) or [bitcoinfaucet.uo1.net](https://bitcoinfaucet.uo1.net/)
 :::
 
 :::details
@@ -961,7 +950,7 @@ If your wallet crashes or your computer goes offline during CoinJoin you simply 
 The amount of privacy needed depends on your individual threat model, who is trying to deanonymize you?
 It is commonly said that an anonymity set of 50 is sufficient to evade low-level blockchain forensics analysis, but it might not protect you against large adversaries.
 At least one round to re-mix your coins can increase your privacy drastically.
-With Wasabi this can be achieved in a matter of hours (or minutes if there are a lot of users).
+With Wasabi this can be achieved in a matter of hours.
 :::
 
 :::details
@@ -985,18 +974,6 @@ You can follow these links to have a full explanation on that:
 5. [Broadcasting phase](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-broadcasting-phase)
 
 The backend server also sends you information about the current mempool for fee estimation as well as the US Dollar exchange rate.
-:::
-
-:::details
-### How long does it take to mix my coins?
-
-It depends on many things, the longest period is the wait for all peers to register their coins.
-Every round has a goal of 100 anonymity set.
-Wasabi is developed in a way that there's a round at least once every one hour.
-If the 100 peers registered earlier, then there can be many rounds per hour.
-When all peers are registered, then the signing phase is done within a couple of seconds.
-
-Summing up: the faster peers register in the CoinJoins, the faster the mixes are.
 :::
 
 :::details
@@ -1499,15 +1476,6 @@ Or open a new Lightning Network node (not your main Lightning node), create a ch
 For more information, see this [dedicated chapter](/using-wasabi/ChangeCoins.md).
 :::
 ::::
-
-:::details
-### How can I mix large amounts?
-
-Wasabi creates anonymity set for multiple denominations in one round, these are 0.1, 0.2, 0.4, 0.8, 1.6, 3.2, ... bitcoin!
-Read more: [What are the equal denominations created in one mixing round?](/FAQ/FAQ-UseWasabi.md#what-are-the-equal-denominations-created-in-one-mixing-round)
-
-@[youtube](3Ezru07J674)
-:::
 
 ::::details
 ### Why do my coins occasionally get banned from participating in CoinJoin?
