@@ -109,8 +109,8 @@ Wasabi will automatically import and modify this skeleton file and store it in y
 
 #### Receiving bitcoin
 
-After the skeleton wallet is imported, you can open the wallet in the `Load Wallet` tab or `Wallet Explorer` without using your Coldcard.
-Generate a [receiving address](/using-wasabi/Receive.md) as usual.
+After the skeleton wallet is imported, you can open the wallet from the wallet list at the `NavBar`, without having to power on the Coldcard.
+Generate a [receive address](/using-wasabi/Receive.md) as usual.
 The private key corresponding to this address is on the hardware wallet.
 
 #### Sending bitcoin
