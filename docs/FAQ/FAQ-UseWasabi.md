@@ -322,6 +322,28 @@ For especially old wallets, it might be worth considering to generate a new wall
 :::
 
 :::details
+### How do I rescan my wallet?
+
+You can rescan an existing Wasabi wallet by editing the wallet file.
+Open the wallet folder by typing Wallet Folder in the search bar. 
+Then, open the wallet file in your favourite text editor.
+Close Wasabi and edit the `Height` setting in the wallet file.
+Set it to `0` for a full rescan.
+
+```json
+{ // only relevant parts are shown
+  "AccountKeyPath": "84'/0'/0'",
+  "BlockchainState": {
+    "Network": "Main",
+    "Height": "0"
+  }
+}
+```
+Save and then start Wasabi again, open the wallet and wait for the synchronization.
+You should see all your transactions and the correct balance.
+:::
+
+:::details
 ### Can Wasabi work with a pruned bitcoin node?
 
 No.
