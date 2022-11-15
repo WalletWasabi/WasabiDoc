@@ -322,10 +322,10 @@ For especially old wallets, it might be worth considering to generate a new wall
 :::
 
 :::details
-### How do I rescan my wallet?
+### How do I resync (rescan) my wallet?
 
 You can rescan an existing Wasabi wallet by editing the wallet file.
-Open the wallet folder by typing Wallet Folder in the search bar. 
+Open the wallet folder by typing Wallet Folder in the search bar.
 Then, open the wallet file in your favourite text editor.
 Close Wasabi and edit the `Height` setting in the wallet file.
 Set it to `0` for a full rescan.
