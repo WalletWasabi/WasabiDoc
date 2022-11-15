@@ -165,10 +165,10 @@ The "Other Linux" option is just a generic install method not targeted to Debian
 There's no difference in the code, the same binaries are being delivered in different formats.
 :::
 
-## Upgrade Wasabi
+## Update Wasabi
 
 :::details
-### Why should I upgrade Wasabi?
+### Why should I update Wasabi?
 
 Wasabi is cutting edge software and is being worked on by the developers on a daily basis.
 Once in a while (+- every month) all the changes/improvements are being released in a new Wasabi version.
