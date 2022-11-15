@@ -339,7 +339,7 @@ Set it to `0` for a full rescan.
   }
 }
 ```
-Save and then start Wasabi again, open the wallet and wait for the synchronization.
+Save the file with the changes and then start Wasabi again, open the wallet and wait for the synchronization.
 You should see all your transactions and the correct balance.
 :::
 
