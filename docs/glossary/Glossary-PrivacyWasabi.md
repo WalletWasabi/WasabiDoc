@@ -110,6 +110,13 @@ Read more: [What is a CoinJoin?](/FAQ/FAQ-Introduction.md#what-is-a-coinjoin)
 :::
 
 :::details
+### Coinjoin Strategy
+
+A _Coinjoin Strategy_ contains instructions for the automatic "coinjoin robot" about configurations like when and how much to coinjoin.
+Read more: [Coinjoin Strategy](/Using-Wasabi/CoinJoin.md#coinjoin-strategy)
+:::
+
+:::details
 ### CoinJoined coins
 
 Coins that have successfully participated in a CoinJoin (with the exception of the change) and thus lose their association to a previous cluster.
