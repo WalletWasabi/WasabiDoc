@@ -97,8 +97,8 @@ Read more: [What is the cluster history?](/FAQ/FAQ-UseWasabi.md#what-is-the-clus
 :::details
 ### Coin Control
 
-Coin control is a must learn if you care about your privacy in Bitcoin.
-As can be understood from the name, this is a proper control of one's coins.
+The possiblity for the user to manually select UTXO's.
+It is mostly used for sending, so the user can select which UTXO's should be used as the inputs of the transaction.
 Read more: [Coin Control Best Practices](/FAQ/FAQ-UseWasabi.md#coin-control-best-practices)
 :::
 
