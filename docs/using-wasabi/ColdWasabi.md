@@ -68,7 +68,14 @@ Because you need to sign (confirm) the outgoing transactions on the hardware wal
 
 #### Receiving bitcoin
 
-After the first time you loaded a new device, the public keys will be stored locally on the computer, and you can use Wasabi to [receive bitcoin](/using-wasabi/Receive.md) to the hardware wallet without connecting it again.
+After the first time you loaded a new device, the public keys will be stored locally on the computer, and you can use Wasabi to [receive bitcoin](/using-wasabi/Receive.md) to the hardware wallet without having it connected.
+
+:::tip Verify the receive address on the hardware wallet for extra security
+It's always a good practice to verify that the receive address on Wasabi corresponds to the one on the hardware wallet, before receiving (large amounts of) bitcoin.
+This could prevent malicious firmware which replaces a receive address with a fake one.
+You can do this by clicking on `Show on the hardware wallet` at a receive address.
+The address will now be displayed on the hardware wallet, check that the addresses correspond and then confirm this on the hardware wallet.
+:::
 
 #### Sending bitcoin
 
