@@ -261,6 +261,13 @@ It also shows some information about the current coinjoin round.
 ![Wasabi Wallet Music Box](/MusicBox.png "Wasabi Wallet Music Box")
 :::
 
+:::details
+### Does Wasabi support Taproot?
+
+Partially, Wasabi supports sending to Taproot (bech32m) address format.
+However, receiving with Taproot is not yet supported.
+:::
+
 ## Synchronization
 
 :::details
@@ -529,10 +536,6 @@ In this case you have to wait until your transaction is confirmed in a block, an
 
 ## Send
 
-@[youtube](PRlAAxunmdU)
-
-@[youtube](AdmlM-Qvco0)
-
 :::details
 ### What are coins?
 
@@ -568,36 +571,39 @@ Alice can protect herself against this by using a [CoinJoin](/using-wasabi/CoinJ
 :::details
 ### How do I set a destination address?
 
-In the `Send` tab, there is a text box for the `Address` right under the coin list.
-If you have an address in the clipboard, then it is automatically pasted when you click on the box.
+In the `Send` dialog, there is a box called `To`, enter here the bitcoin address or PayJoin URL.
+If you have an address in the clipboard, then it can be pasted by using the paste button or right click..
 You can also type in the address manually, there is a checksum to help you identify typos.
 Be careful and double-check the address, there is no way to revert this transaction and change the destination.
 So make sure that the coins get into the right hands.
 
-![Wasabi Wallet Send tab](/SendAmountFeePassword.png "Wasabi Wallet Send tab")
+![Send To Field](/SendToField.png "Send To Field")
 :::
+
+::::details
+### How do I set the payment amount?
+
+At the `Send` dialog, enter the bitcoin or dollar amount in the `Amount` field.
+
+![Send Amount](/SendAmountField.png "Send Amount")
+
+:::tip Dollar amounts are approximately
+When entering a dollar amount, Wasabi calculates the bitcoin amount according to the current BTC/USD exchange rate.
+This dollar amount can differ a bit compared to other wallets/exchanges.
+:::
+::::
 
 :::details
 ### Can I pay to many addresses?
 
 Unfortunately pay to many is not yet implemented in the GUI.
-However, you can use the [RPC server `send` call](/using-wasabi/RPC.md#send) and specify multiple receiving addresses.
+However, you can use the [RPC server `send` call](/using-wasabi/RPC.md#send) and specify multiple destination addresses.
 :::
 
 :::details
 ### Can I set a custom change address?
 
 No. That is currently not possible.
-:::
-
-:::details
-### How do I set the payment amount?
-
-After you select one or more coins as inputs in `Send` tab, say two anonset coins worth 0.1 bitcoin each.
-You can manually set the exact amount that the destination address will receive in the output of the transaction, say 0.15 bitcoin.
-Then Wasabi will help you with automatically calculating the precise change output value with `inputs - destination output - transaction fee`.
-
-![Wasabi Wallet Send tab](/SendAmountFeePassword.png "Wasabi Wallet Send tab")
 :::
 
 :::details
@@ -625,7 +631,7 @@ But the provided time frames are only a rough estimation, and not at all a preci
 ![Wasabi Wallet mining fee settings](/SendFeeSlider.png "Wasabi Wallet mining fee settings")
 
 Because confirmation fee estimation is more an art than a science, you can also set the fee manually.
-Then you can go after your gut feeling, [mempool chart analysis](https://jochen-hoenicke.de/queue/#0,24h), or just putting the minimum of 1 sat/vByte.
+Then you can go after your gut feeling, [mempool analysis](https://mempool.space/), or just putting the minimum of 1 sat/vByte.
 
 For a transaction to yourself, for example from your hot coinjoin wallet to your hardware wallet, you don't need to have fast confirmation, so you can set a relatively low fee.
 But to send from the hot coinjoin wallet to the coffee shop, you might want to get faster confirmation, thus paying a higher fee.
@@ -716,14 +722,6 @@ For example, if you buy coins anonymously in a P2P way, you should try to avoid 
 :::
 
 :::details
-### What's the difference between Send and Build Transaction?
-
-The only difference is that `Build Transaction` does not propagate the transaction, it simply builds it.
-For a hot Wasabi with private keys, it will build and sign a final transaction, that can be broadcasted at any time.
-For a cold Wasabi with private keys on a hardware wallet, it will build an unsigned transaction, which must be signed offline on the hardware wallet before it is valid.
-:::
-
-:::details
 ### Why Wasabi did not send some of my selected coins?
 
 Because they were not necessary for the transaction.
@@ -778,8 +776,6 @@ So when sending, less than 0.00787086 BTC (to cover the mining fees) should be e
 :::
 
 ## CoinJoin
-
-@[youtube](ypfZT9GlqTw)
 
 :::details
 ### What's the legal status of Wasabi/CoinJoin?
@@ -863,14 +859,13 @@ So, there are 79 denominations from 0.00005000 BTC up to 1374.38953472 BTC.
 During this phase you have the opportunity to register coins that you want to mix in this round.
 Your Wasabi client connects to the coordinator server with a unique Tor identity called Alice, and with it you send the input proofs, the cleartext change output, and the blinded anonset CoinJoin address.
 When all the proofs are valid, the coordinator signs the blinded output without knowing which address this is, and sends this back to Alice.
-Since the goal is to have 100 peers in one round, the [input registration phase](/using-wasabi/CoinJoin.md#input-registration) can take some time.
-But regardless of how many participants, one hour after the last CoinJoin this phase is complete.
+Since the goal is to have at least 150 inputs in one round, the [input registration phase](/using-wasabi/CoinJoin.md#input-registration) can fail if too few participants registered in the available time frame.
 :::
 
 :::details
 ### What is happening in the connection confirmation phase?
 
-Because the input registration phase can take up to one hour, the coordinator needs to ensure that everyone is still online and ready to continue.
+Because the input registration phase takes some time, the coordinator needs to ensure that everyone is still online and ready to continue.
 So in the [connection confirmation phase](/using-wasabi/CoinJoin.md#connection-confirmation) every Alice sends a signal to the coordinator, and when all have checked in, this phase concludes.
 :::
 
@@ -924,9 +919,7 @@ Go to `Settings` > `Bitcoin` and change the network to `TestNet`.
 Then restart your Wasabi and create a new wallet, this is needed because Wasabi differentiates between "Main wallets" and "TestNet wallets".
 This wallet will synchronize for the TestNet, and generate TestNet addresses.
 You can get tBTC from faucets like:
-[testnet-faucet.mempool.co](https://testnet-faucet.mempool.co/)
-or
-[coinfaucet.eu/en/btc-testnet](https://coinfaucet.eu/en/btc-testnet/)
+[coinfaucet.eu/en/btc-testnet](https://coinfaucet.eu/en/btc-testnet/) or [bitcoinfaucet.uo1.net](https://bitcoinfaucet.uo1.net/)
 :::
 
 :::details
@@ -958,7 +951,7 @@ If your wallet crashes or your computer goes offline during CoinJoin you simply 
 The amount of privacy needed depends on your individual threat model, who is trying to deanonymize you?
 It is commonly said that an anonymity set of 50 is sufficient to evade low-level blockchain forensics analysis, but it might not protect you against large adversaries.
 At least one round to re-mix your coins can increase your privacy drastically.
-With Wasabi this can be achieved in a matter of hours (or minutes if there are a lot of users).
+With Wasabi this can be achieved in a matter of hours.
 :::
 
 :::details
@@ -982,18 +975,6 @@ You can follow these links to have a full explanation on that:
 5. [Broadcasting phase](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-broadcasting-phase)
 
 The backend server also sends you information about the current mempool for fee estimation as well as the US Dollar exchange rate.
-:::
-
-:::details
-### How long does it take to mix my coins?
-
-It depends on many things, the longest period is the wait for all peers to register their coins.
-Every round has a goal of 100 anonymity set.
-Wasabi is developed in a way that there's a round at least once every one hour.
-If the 100 peers registered earlier, then there can be many rounds per hour.
-When all peers are registered, then the signing phase is done within a couple of seconds.
-
-Summing up: the faster peers register in the CoinJoins, the faster the mixes are.
 :::
 
 :::details
@@ -1496,15 +1477,6 @@ Or open a new Lightning Network node (not your main Lightning node), create a ch
 For more information, see this [dedicated chapter](/using-wasabi/ChangeCoins.md).
 :::
 ::::
-
-:::details
-### How can I mix large amounts?
-
-Wasabi creates anonymity set for multiple denominations in one round, these are 0.1, 0.2, 0.4, 0.8, 1.6, 3.2, ... bitcoin!
-Read more: [What are the equal denominations created in one mixing round?](/FAQ/FAQ-UseWasabi.md#what-are-the-equal-denominations-created-in-one-mixing-round)
-
-@[youtube](3Ezru07J674)
-:::
 
 ::::details
 ### Why do my coins occasionally get banned from participating in CoinJoin?

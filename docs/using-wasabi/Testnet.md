@@ -60,7 +60,7 @@ You can [generate a receive address](/using-wasabi/Receive.md) the same way as o
 Notice that testnet SegWit addresses start with `tb1q...`, and not with `bc1q...` as mainnet addresses.
 
 Because testnet bitcoin don't have economical value, they are gifted by different sources.
-There are [faucets](https://en.bitcoin.it/wiki/Testnet#Faucets) like [this one](https://testnet-faucet.mempool.co/) that give a certain amount of testnet bitcoin per time period.
+There are [faucets](https://en.bitcoin.it/wiki/Testnet#Faucets) like [this one](https://coinfaucet.eu/en/btc-testnet/) or [bitcoinfaucet.uo1.net](https://bitcoinfaucet.uo1.net/) that give a certain amount of testnet bitcoin per time period.
 You may also ask other developers if they have a couple of spare testnet coins available.
 
 ## Coinjoin on testnet
