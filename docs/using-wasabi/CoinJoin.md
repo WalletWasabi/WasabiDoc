@@ -34,7 +34,7 @@ By default, Wasabi starts automatically coinjoining your funds when the total va
 `Automatically start coinjoin` can be disabled from the coinjoin settings.
 In case you want to start the process manually, then click the play button; if you want to stop coinjoin, then click the pause button.
 
-Once a coin reaches the `Anonymity score target`, then the corresponding amount will show up in the wallet's main view as "PRIVATE".
+Once a coin achieves enough privacy (reaches the `Anonymity score target`), then the corresponding amount will show up in the wallet's main view as "PRIVATE".
 
 Notice that it is not yet possible to coinjoin from a hardware wallet, the keys must be "hot" on your computer.
 
