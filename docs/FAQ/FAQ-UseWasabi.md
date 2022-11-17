@@ -999,6 +999,13 @@ However, as the coordinator cannot enforce this, a custom client could use a dif
 :::
 
 :::details
+### Can I manually select which coins to register for coinjoin?
+
+No, this is currently not possible.
+You can enable the [red coin isolation](/FAQ/FAQ-UseWasabi.md#what-does-the-red-coin-isolation-mean-in-the-coinjoin-settings) setting, in case you want to prevent possible linkage of anonscore 1 coins into the same coinjoin round.
+:::
+
+:::details
 ### How long does it take to make my wallet 100% private?
 
 Depending on many factors, like the `Anonymity score target`, the `coinjoin strategy`, and the amount of bitcoin, it can take from a couple hours to multiple days.
