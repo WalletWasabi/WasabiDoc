@@ -182,23 +182,6 @@ Read more: [RPC Interface](/using-wasabi/RPC.md)
 :::
 
 :::details
-### Shield (or anonymity set shield)
-
-We often talk about
-<img src="/ShieldCheckmark.png" alt="Wasabi Wallet green checkmark shield anonymity set" title="Wasabi Wallet green checkmark shield anonymity set" class="shield" />,
-<img src="/ShieldGreen.png" alt="Wasabi Wallet green shield anonymity set" title="Wasabi Wallet green shield anonymity set" class="shield" />,
-<img src="/ShieldYellow.png" alt="Wasabi Wallet yellow shield anonymity set" title="Wasabi Wallet yellow shield anonymity set" class="shield" /> and
-<img src="/ShieldRed.png" alt="Wasabi Wallet red shield anonymity set" title="Wasabi Wallet red shield anonymity set" class="shield" />
-shields... but what are they?
-Coins in your wallet have shields.
-
-Each shield represents the [Anonymity Set](/FAQ/FAQ-UseWasabi.md#what-is-the-anonymity-set) level of a given coin.
-By default the anonymity set levels are `2`, `21` and `50`, however, this can be [changed in the settings](/FAQ/FAQ-UseWasabi.md#how-can-i-change-the-anonset-target).
-
-Essentially, when we talk about shields, we mean a specific privacy level set by the user.
-:::
-
-:::details
 ### Taint
 
 Taint is equivalent to the 'trail' that a Bitcoin transaction leaves during the course of its journey.
