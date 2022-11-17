@@ -69,16 +69,6 @@ Understanding this difference between labeling an address and describing a trans
 In Wasabi it is mandatory to give every receive address a label of those who know that this address is yours, so that later you know what to do with it, and it also helps the auto coin selection algorithm when sending.
 :::
 
-### Coin control
-
-Coin control is a key feature that enables all the other features.
-How could we CoinJoin our coins if we aren't able to select the ones we want to participate with?
-How could we know which coins are being spent in a transaction?
-How could we decide what to reveal to a KYC exchange?
-Well, without coin control it is not possible.
-
-Wasabi is a coins-oriented wallet in the sense that coins are the most important unit of information to make decisions to protect privacy.
-
 ### Clusters
 
 Following the previous example, if I have to send a fraction (`0.1 BTC`) of the previously received coin to Charlie then in the `Send` tab the observers should be: `Charlie`.
