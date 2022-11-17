@@ -115,9 +115,7 @@ This metadata will be used to build an accurate cluster of observers who know ab
 ## Amount
 
 In the `Amount` text box you can specify how many bitcoins the receiving address will gain.
-If it is below the value of the selected inputs, then the leftover value will be sent to an automatically generated change address of yours.
-You can send a whole coin by selecting the `Max` button, which will build a transaction with only one output, the receiving address, and no change.
-You can also see the current US Dollar value of the sending amount.
+You can also see and enter the current US Dollar value of the sending amount.
 
 :::tip Avoid sending rounded values
 If you specify a rounded amount, like `0.0100 0000 bitcoin`, then the change output will not be rounded, like `0.0896 8413 bitcoin`.
@@ -125,7 +123,7 @@ This makes it easy for an observer to conclude that the spending amount was the 
 So in order to increase your privacy, you can set a non-rounded amount, like `0.0101 6843`.
 :::
 
-![Wasabi Wallet send transaction](/SendAmountFeePassword.png "Wasabi Wallet send transaction")
+![Send Amount Field](/SendAmountField.png "Send Amount Field")
 
 ## Mining Fee
 
