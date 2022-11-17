@@ -998,12 +998,16 @@ Wasabi Wallet's default client is configured to register 1 up to 8 outputs per c
 However, as the coordinator cannot enforce this, a custom client could use a different configuration.
 :::
 
-:::details
+::::details
 ### Can I manually select which coins to register for coinjoin?
 
-No, this is currently not possible.
-You can enable the [red coin isolation](/FAQ/FAQ-UseWasabi.md#what-does-the-red-coin-isolation-mean-in-the-coinjoin-settings) setting, in case you want to prevent possible linkage of anonscore 1 coins into the same coinjoin round.
+No, that is currently not possible.
+The automatic coinjoin robot registers the coins, based on multiple factors.
+
+:::tip
+You can enable the [red coin isolation](/FAQ/FAQ-UseWasabi.md#what-does-the-red-coin-isolation-mean-in-the-coinjoin-settings) setting, in case you want to prevent possible input heuristics (from outside observers) of anonscore 1 coins into the same coinjoin round.
 :::
+::::
 
 :::details
 ### How long does it take to make my wallet 100% private?
