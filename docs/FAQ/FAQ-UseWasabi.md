@@ -548,27 +548,6 @@ This chain of links between inputs being spent and outputs being generated is ve
 :::
 
 :::details
-### Why is coin control so important?
-
-Coin control is a feature in Wasabi that allows the user to choose which coins are to be spent as inputs in an outgoing transaction.
-Coin control is aimed to avoid as much as possible transactions where privacy leaks are caused by amounts, change addresses, the transaction graph and the common-input-ownership heuristic.
-
-Satoshis, the base currency in the Bitcoin network, are fungible units of account.
-It's just a number that shows how much value is being transferred, and the number `100` is "the same" any time the number `100` is used.
-The 9000 sats you spend on stickers are equal to the 9000 sats you spend on coffee.
-Just like 1 gram of gold atoms are equal to any other 1 gram of gold atoms.
-
-However, the unspent transaction outputs, the "coins" that hold the satoshi themselves are not fungible.
-Every UTXO is a unique snowflake that has its own transaction history, as well as an independent spending condition.
-The coin worth 2 bitcoin and locked by Alice's public key is not the same as the UTXO worth 5 bitcoin locked by the 2-of-3 multi signature of Bob, Charlie and David.
-So when sending bitcoin, it's important to consider which actual outputs are being sent in the transaction.
-
-It might be a problem when Alice sends the coin she received for a months worth of labor, in exchange for a coffee in Bob's store.
-Now Bob knows the amount Alice gets paid, and this is none of his business.
-Alice can protect herself against this by using a [CoinJoin](/using-wasabi/CoinJoin.md) UTXO, because now Bob cannot know the previous transactions from Alice.
-:::
-
-:::details
 ### How do I set a destination address?
 
 In the `Send` dialog, there is a box called `To`, enter here the bitcoin address or PayJoin URL.
