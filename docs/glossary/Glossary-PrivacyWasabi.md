@@ -145,6 +145,14 @@ Read more: [What is the dust threshold](/FAQ/FAQ-UseWasabi.html#what-is-the-dust
 :::
 
 :::details
+### Label
+
+A label can be added to a coin, as a small note on who knows this coin belongs to you.
+Good labelling can help the user and the wallet to make better privacy conscious decisions later on when spending.
+Read more: [Why do I have to label my address](/FAQ/FAQ-UseWasabi.md#why-do-i-have-to-label-my-address)
+:::
+
+:::details
 ### Know Your Customer (KYC)
 
 KYC (Know Your Customer) is the process of a business being forced to identify and verify the identity of its clients, and to share this information with a government.
