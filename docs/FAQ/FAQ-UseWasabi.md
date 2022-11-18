@@ -1015,6 +1015,21 @@ You can enable the [red coin isolation](/FAQ/FAQ-UseWasabi.md#what-does-the-red-
 Depending on many factors, like the `Anonymity score target`, the `coinjoin strategy`, and the amount of bitcoin, it can take from a couple hours to multiple days.
 :::
 
+::::details
+### What coinjoin strategy should I select?
+
+There is no answer for all, or a "best" strategy, it depends on the user's privacy needs.
+The coinjoin strategy should be selected according to the user's preference:
+Do you want to `Minimize costs`, `Maximize speed`, or `Maximize privacy`?
+Or the user can create their own `Custom` strategy.
+
+![Wasabi Coinjoin Strategy](/CoinjoinStrategy.png "Wasabi Coinjoin Strategy")
+
+:::tip The default coinjoin strategy is `Maximize Speed`
+This strategy is sufficient for most users
+:::
+::::
+
 :::details
 ### What is the coinjoin strategy?
 
