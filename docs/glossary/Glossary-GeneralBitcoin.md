@@ -76,6 +76,12 @@ Read more: [Change coins](/using-wasabi/ChangeCoins.md)
 :::
 
 :::details
+### Child Pays For Parent (CPFP)
+
+Child Pays For Parent (CPFP) is a fee bumping technique where a user spends an output from a low fee rate unconfirmed transaction in a child transaction with a high fee rate in order to encourage miners to include both transactions in a block.
+:::
+
+:::details
 ### Coinbase
 
 A special field used as the sole input for coinbase transactions.
