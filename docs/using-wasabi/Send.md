@@ -106,7 +106,7 @@ Wasabi will calculate the checksum and notify you if the provided address is wro
 
 ## Observers
 
-It is a requirement to provide one or more [labels](/using-wasabi/Receive.md#the-importance-of-labeling) each time you initiate a transfer of bitcoin.
+In Wasabi it is mandatory to provide one or more [labels](/using-wasabi/Receive.md#the-importance-of-labeling) each time you initiate a transfer of bitcoin.
 These labels should be the observers of the transaction.
 An observer of a sending transaction is, of course, the receiver, as well as any other third party that knows that you are the sender of this transaction.
 For example, you should include as a label the payment processor or the bitcoin exchange if you use their services.
