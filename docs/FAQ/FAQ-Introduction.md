@@ -67,7 +67,7 @@ However, Wasabi Wallet is build in a way to help the user to avoid privacy leaks
 :::details
 ### Why is Wasabi Bitcoin-only?
 
-There are countless reasons why it is the only logical choice to be [bitcoin-only](https://bitcoin-only.com).
+There are countless reasons why it is the only logical choice to be bitcoin-only.
 With Bitcoin we have a once in a lifetime opportunity to manifest libre sound money.
 If we succeed, then an utmost beautiful agora of sovereign individuals may emerge.
 If we fail, then this will conjure up the most horrific Orwellian nightmare.
