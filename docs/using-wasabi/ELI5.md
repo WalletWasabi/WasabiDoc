@@ -10,8 +10,6 @@ This is the Wasabi documentation, an archive of knowledge about the open-source,
 
 [[toc]]
 
----
-
 ## Introduction
 
 Wasabi Wallet is an open-source, non-custodial, privacy-focused Bitcoin wallet with built-in coinjoins.

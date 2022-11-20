@@ -11,8 +11,6 @@ There are two different ways that you can recover an already used wallet in Wasa
 
 [[toc]]
 
----
-
 ## Mnemonic Recovery Words and Password
 
 Wasabi uses the [BIP 39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) mnemonic code for generating [BIP 32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) hierarchical deterministic wallets.

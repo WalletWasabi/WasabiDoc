@@ -9,7 +9,7 @@
 
 [[toc]]
 
----
+## Introduction
 
 The easiest way to start with Wasabi is to download, verify and install the released package.
 This is a version of the software that is thoroughly reviewed by the contributors.

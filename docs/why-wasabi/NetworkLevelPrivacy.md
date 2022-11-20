@@ -12,8 +12,6 @@ There is a lot of communication between them and metadata can be used to de-anon
 
 [[toc]]
 
----
-
 ## Problem
 
 ### Clearnet light clients
