@@ -10,8 +10,6 @@
 This is the place with all the nuances of how Wasabi Wallet is being built.
 You will also find some of the issues they are working on now, the research for future ideas, and all of the necessary information needed to quickly begin making your own invaluable contributions.
 
----
-
 ## Chapters
 
 ### Contributing to Wasabi

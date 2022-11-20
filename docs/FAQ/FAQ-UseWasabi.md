@@ -386,8 +386,6 @@ This is very bad for your privacy because of [address reuse](/why-wasabi/Address
 
 ![Edit Address Label](/UnusedReceiveAddressesEditLabel.png "Edit Address Label")
 
-### How can I edit the observers of my address after a transaction has gone through?
-
 ### How can I edit the labels of my address after a transaction has gone through?
 
 To date there is no possibility to change the label of an address after it has sent or received bitcoins.
@@ -1236,6 +1234,7 @@ That said, if you combine only a couple of mixed coins, you might not reveal you
 
 :::warning Take great care!
 Never consolidate <img src="/ShieldRed.png" alt="Wasabi Wallet red shield anonymity set" title="Wasabi Wallet red shield anonymity set" class="shield" /> unmixed coins with <img src="/ShieldCheckmark.png" alt="Wasabi Wallet green checkmark shield anonymity set" title="Wasabi Wallet green checkmark shield anonymity set" class="shield" /> <img src="/ShieldGreen.png" alt="Wasabi Wallet green shield anonymity set" title="Wasabi Wallet green shield anonymity set" class="shield" /> <img src="/ShieldYellow.png" alt="Wasabi Wallet yellow shield anonymity set" title="Wasabi Wallet yellow shield anonymity set" class="shield" /> mixed coins, as this negates the privacy benefits of the CoinJoin.
+:::
 
 [![Watch the video](https://img.youtube.com/vi/Tk8-N1kHa4g/maxresdefault.jpg)](https://youtu.be/Tk8-N1kHa4g)
 
