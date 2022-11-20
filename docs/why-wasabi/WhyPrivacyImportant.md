@@ -28,7 +28,6 @@ Yet individuals can use the tools of self-defense at their disposal to regain th
 
 [[toc]]
 
-
 ## Privacy? I don't have anything to hide.
 
 > Over the last 16 months, as I've debated this issue around the world, every single time somebody has said to me, "I don't really worry about invasions of privacy because I don't have anything to hide."
