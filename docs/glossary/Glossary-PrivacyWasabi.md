@@ -83,12 +83,10 @@ Read more: [Coin Control Best Practices](/FAQ/FAQ-UseWasabi.md#coin-control-best
 CoinJoin is a trustless method for combining multiple Bitcoin payments from multiple spenders into a single transaction to make it more difficult for outside parties to determine which spender paid which recipient.
 Read more: [What is a CoinJoin?](/FAQ/FAQ-Introduction.md#what-is-a-coinjoin)
 
-:::details
 ### Coinjoin Strategy
 
 A _Coinjoin Strategy_ contains instructions for the automatic "coinjoin robot" about configurations like when and how much to coinjoin.
 Read more: [Coinjoin Strategy](/Using-Wasabi/CoinJoin.md#coinjoin-strategy)
-:::
 
 ### CoinJoined coins
 
@@ -110,13 +108,11 @@ Dust is an UTXO that is uneconomical to spend.
 Also, small portions of bitcoin can lead to serious consequences for one's privacy, for example the so called `forced address reuse attack`.
 Read more: [What is the dust threshold](/FAQ/FAQ-UseWasabi.html#what-is-the-dust-threshold)
 
-:::details
 ### Label
 
 A label can be added to a coin, as a small note on who knows this coin belongs to you.
 Good labelling can help the user and the wallet to make better privacy conscious decisions later on when spending.
 Read more: [Why do I have to label my address](/FAQ/FAQ-UseWasabi.md#why-do-i-have-to-label-my-address)
-:::
 
 ### Know Your Customer (KYC)
 

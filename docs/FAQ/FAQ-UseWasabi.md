@@ -224,7 +224,6 @@ Go to `Settings` -> `General` -> `Fee display unit` and change it to `sats`.
 
 ![Wasabi Wallet Fee Display Unit](/FeeDisplayUnit.png "Wasabi Wallet Fee Display Unit")
 
-:::details
 ### What is the box (music box) at the bottom of the wallet's main view?
 
 This box (a.k.a. musicbox) is used for the coinjoins.
@@ -232,14 +231,11 @@ It can be used to manually start, pause and stop coinjoining.
 It also shows some information about the current coinjoin round. 
 
 ![Wasabi Wallet Music Box](/MusicBox.png "Wasabi Wallet Music Box")
-:::
 
-:::details
 ### Does Wasabi support Taproot?
 
 Partially, Wasabi supports sending to Taproot (bech32m) address format.
 However, receiving with Taproot is not yet supported.
-:::
 
 ## Synchronization
 
@@ -489,7 +485,6 @@ So make sure that the coins get into the right hands.
 
 ![Send To Field](/SendToField.png "Send To Field")
 
-::::details
 ### How do I set the payment amount?
 
 At the `Send` dialog, enter the bitcoin or dollar amount in the `Amount` field.
@@ -500,14 +495,11 @@ At the `Send` dialog, enter the bitcoin or dollar amount in the `Amount` field.
 When entering a dollar amount, Wasabi calculates the bitcoin amount according to the current BTC/USD exchange rate.
 This dollar amount can differ a bit compared to other wallets/exchanges.
 :::
-::::
 
-:::details
 ### Can I pay to many addresses?
 
 Unfortunately pay to many is not yet implemented in the GUI.
 However, you can use the [RPC server `send` call](/using-wasabi/RPC.md#send) and specify multiple destination addresses.
-:::
 
 ### Can I set a custom change address?
 
@@ -853,7 +845,6 @@ However, as the coordinator cannot enforce this, a custom client could use a dif
 Wasabi Wallet's default client is configured to register 1 up to 8 outputs per coinjoin round.
 However, as the coordinator cannot enforce this, a custom client could use a different configuration.
 
-::::details
 ### Can I manually select which coins to register for coinjoin?
 
 No, that is currently not possible.
@@ -862,13 +853,11 @@ The automatic coinjoin robot registers the coins, based on multiple factors.
 :::tip
 You can enable the [red coin isolation](/FAQ/FAQ-UseWasabi.md#what-does-the-red-coin-isolation-mean-in-the-coinjoin-settings) setting, in case you want to prevent possible input heuristics (from outside observers) of anonscore 1 coins into the same coinjoin round.
 :::
-::::
 
 ### How long does it take to make my wallet 100% private?
 
 Depending on many factors, like the `Anonymity score target`, the `coinjoin strategy`, and the amount of bitcoin, it can take from a couple hours to multiple days.
 
-::::details
 ### What coinjoin strategy should I select?
 
 There is no answer for all, or a "best" strategy, it depends on the user's privacy needs.
@@ -881,9 +870,7 @@ Or the user can create their own `Custom` strategy.
 :::tip The default coinjoin strategy is `Maximize Speed`
 This strategy is sufficient for most users
 :::
-::::
 
-:::details
 ### What is the coinjoin strategy?
 
 A coinjoin strategy has specific pre-configured coinjoin settings.
@@ -894,9 +881,7 @@ After a coinjoin strategy is selected, its settings are applied.
 It is supposed to make it easy for the user to select their preference, without having to know about the specific settings and how to configure them themselves.
 
 Read more [ħere](/using-wasabi/CoinJoin.md)
-:::
 
-:::details
 ### What are the differences/settings per coinjoin strategy?
 
 |  | Minimize Costs | Maximize Speed | Maximize Privacy | 
@@ -904,8 +889,6 @@ Read more [ħere](/using-wasabi/CoinJoin.md)
 | Red coin isolation | not active  | not active | active |
 | Anonymity score target | 5 | 5 | random between 50 and 100 |
 | Coinjoin time preference   | weeks | hours | hours |
-
-:::
 
 ### What does the `Auto-start coinjoin threshold` mean in the coinjoin settings?
 
