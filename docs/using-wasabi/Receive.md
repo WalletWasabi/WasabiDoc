@@ -49,7 +49,7 @@ This makes it obvious for anyone that this one entity [you] owns all these coins
 The first rule of Bitcoin privacy is [never reuse addresses](/why-wasabi/AddressReuse.md)!
 
 :::tip
-This is why Wasabi removes the address from the `Receive` tab as soon as it has received a coin.
+This is why Wasabi removes the address from the `Unused Receive Address` list as soon as it has received a coin.
 :::
 
 ## The importance of labeling
@@ -68,18 +68,6 @@ Understanding this difference between labeling an address and describing a trans
 :::tip
 In Wasabi it is mandatory to give every receive address a label of those who know that this address is yours, so that later you know what to do with it, and it also helps the auto coin selection algorithm when sending.
 :::
-
-![Set known by in Wasabi Wallet](/ReceiveLabelingRequired.png "Set known by in Wasabi Wallet")
-
-### Coin control
-
-Coin control is a key feature that enables all the other features.
-How could we CoinJoin our coins if we aren't able to select the ones we want to participate with?
-How could we know which coins are being spent in a transaction?
-How could we decide what to reveal to a KYC exchange?
-Well, without coin control it is not possible.
-
-Wasabi is a coins-oriented wallet in the sense that coins are the most important unit of information to make decisions to protect privacy.
 
 ### Clusters
 

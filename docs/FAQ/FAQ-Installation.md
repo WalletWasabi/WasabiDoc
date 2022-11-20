@@ -38,8 +38,9 @@ This protects you against malicious man in the middle attacks where bad guys giv
 ### How can I verify PGP signatures?
 
 On the [WasabiWallet.io](https://wasabiwallet.io) website you can download the packages of the latest release.
-Ensure that you also download the separate signature `.asc` file.
-In the terminal, change the directory to the one with the downloaded files, and verify the signature with `gpg --verify Wasabi-${currentVersion}.deb.asc`.
+To verify the signature you also need to download the separate signature `.asc` file.
+In the terminal, change the directory to the one with the downloaded files, and verify the signature with `gpg --verify` + the corresponding signature file name, depending on which operating system you are.
+
 Everything is valid if it returns `Good signature from zkSNACKs` and that it was signed with the `Primary key fingerprint: ${zksnacksPublicKeyFingerprint}`.
 
 For an in-depth guide for [Debian and Ubuntu](/using-wasabi/InstallPackage.md#debian-and-ubuntu), [other Linux](/using-wasabi/InstallPackage.md#other-linux), [Windows](/using-wasabi/InstallPackage.md#windows), and [macOS](/using-wasabi/InstallPackage.md#macOS) see the main documentation.
@@ -52,9 +53,9 @@ For an in-depth guide for [Debian and Ubuntu](/using-wasabi/InstallPackage.md#de
 
 ![Download Wasabi Wallet for Debian](/DownloadDeb.png "Download Wasabi Wallet for Debian")
 
-Verify the signature of the package with `gpg --verify Wasabi-${currentVersion}.deb` and ensure the software was signed by zkSNACKs' PGP public key [${zksnacksPublicKeyFingerprint}](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt).
+Verify the signature of the package with `gpg --verify Wasabi-${currentVersion}.deb.asc Wasabi-${currentVersion}.deb` and ensure that the software was signed by zkSNACKs' PGP public key [${zksnacksPublicKeyFingerprint}](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt).
 
-Now install Wasabi with `sudo dpkg -i Wasabi-${currentVersion}.deb`, and run it with `wassabee`.
+Now install Wasabi with `sudo apt install ./Wasabi-${currentVersion}.deb`, and run it with `wassabee`.
 Check out the main documentation for a [step-by-step guide](/using-wasabi/InstallPackage.md#debian-and-ubuntu).
 
 [![Watch the video](https://img.youtube.com/vi/mTrClVA_o5A/maxresdefault.jpg)](https://youtu.be/mTrClVA_o5A?t=122)
@@ -65,7 +66,7 @@ Check out the main documentation for a [step-by-step guide](/using-wasabi/Instal
 
 ![Download Wasabi Wallet for Linux](/DownloadTar.png "Download Wasabi Wallet for Linux")
 
-Verify the signature of the package with `gpg --verify Wasabi-${currentVersion}.tar.gz.asc` and ensure the software was signed by zkSNACKs' PGP public key [${zksnacksPublicKeyFingerprint}](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt).
+Verify the signature of the package with `gpg --verify Wasabi-${currentVersion}.tar.gz.asc Wasabi-${currentVersion}.tar.gz` and ensure that the software was signed by zkSNACKs' PGP public key [${zksnacksPublicKeyFingerprint}](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt).
 Now install Wasabi with `sudo tar -pxzf Wasabi-${currentVersion}.tar.gz`, and run it with `./wassabee`.
 Check out the main documentation for a [step-by-step guide](/using-wasabi/InstallPackage.md#other-linux).
 
@@ -105,33 +106,13 @@ With the architecture that Wasabi uses, these two different processors need thei
 
 ### What happens when I install the wrong package for macOS?
 
-Wasabi won't start or it will crash on startup.
+Wasabi will crash on startup or run significantly slower than it should.
 This will not harm your computer.
-
-### How do I check the current version of Wasabi?
-
-In the GUI, go to the SearchBar at the top of the screen and click on `About Wasabi`. 
-Here the current version of your Wasabi is displayed.
-Wasabi is cutting edge software, so it is well-advised to stay up-to-date.
-
-### How do I know about a new version of Wasabi?
-
-When a new major version [v2.1.X] has been released, you'll see a notification in the bottom right status icon `Version 2.X.X.X is now available`.
-There are occasional silent releases like [v2.1.10.X] which fix issues that were introduced in a major release, and these are not announced in the GUI.
-The [website](https://wasabiwallet.io) always links to the most recent build of the software.
-It will also be announced on [Twitter](https://twitter.com/wasabiwallet) and [Reddit](https://reddit.com/r/WasabiWallet/).
-
-### How do I securely upgrade Wasabi?
-
-You can download the software build for the different operating systems on the main [website](https://wasabiwallet.io) or better over [Tor](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion).
-Make sure you also download the signatures of the build and verify them with [zkSNACKs' PGP public key](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt).
-For step-by-step instructions, follow [this guide](/using-wasabi/InstallPackage.md) or [see this video](https://youtu.be/DUc9A76rwX4).
 
 ### Do I need to install Tor separately?
 
 No, because Wasabi has Tor built into the software.
 All Wasabi network traffic goes via Tor by default - no need to set up Tor yourself.
-If you do already have Tor, and it is running, then Wasabi will try to use that first.
 
 You can turn off Tor in the Settings.
 Be careful, as this will compromise your privacy.
@@ -157,6 +138,70 @@ It installs Wasabi in your computer, so you're able to access it from start menu
 The "Other Linux" option is just a generic install method not targeted to Debian/Ubuntu specifically but that works on it anyway because it is still linux.
 
 There's no difference in the code, the same binaries are being delivered in different formats.
+
+## Update Wasabi
+
+:::details
+### Why should I update Wasabi?
+
+Wasabi is cutting edge software and is being worked on by the developers on a daily basis.
+Once in a while (+- every month) all the changes/improvements are being released in a new Wasabi version.
+The changes can contain (critical) bug fixes, small improvements, new features etc.
+It's always a good idea to run (one of) the latest Wasabi versions.
+:::
+
+:::details
+### How do I check the current version of Wasabi?
+
+In the GUI, go to the SearchBar at the top of the screen and click on `About Wasabi`. 
+Here the current version of your Wasabi is displayed.
+Wasabi is cutting edge software, so it is well-advised to stay up-to-date.
+:::
+
+:::details
+### How do I know about a new version of Wasabi?
+
+When a new major version [v2.X.X] has been released, you'll see an orange update icon in the bottom right, upon hovering over it you can see `Version 2.X.X is now available`.
+
+![Wasabi Update Available](/UpdateAvailable.png "Wasabi Update Available")
+
+Clicking on `Update` uses the default browser to go to the website, where you can download this new version.
+There are occasional silent releases like [v2.X.X.X] which fix small issues, and these are not announced in the GUI, so you will not see the orange update icon.
+The [website](https://wasabiwallet.io) always contains the most recent version.
+All releases (major and minor) are announced on the social media like [Twitter](https://twitter.com/wasabiwallet) and [Reddit](https://reddit.com/r/WasabiWallet/).
+:::
+
+:::details
+### How do I securely upgrade Wasabi?
+
+To upgrade Wasabi, you need to download the new version.
+Downloading and installing the newer Wasabi package will overwrite the previous one, while preserving your files like your wallets etc.
+So to upgrade Wasabi, simply download and install the new version like at first install.
+
+You can download the software build for the different operating systems on the main [website](https://wasabiwallet.io) or better over [Tor](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion).
+For extra security, it is reccommended to also download the signatures of the build and verify them with [zkSNACKs' PGP public key](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt).
+For step-by-step instructions, follow [this guide](/using-wasabi/InstallPackage.md) or [see this video](https://youtu.be/DUc9A76rwX4).
+:::
+
+::::details
+### What does `Auto download new version` in the settings mean?
+
+If enabled, the software will automatically download the new version's installer upon a new release.
+If disabled, the software will only signal, but not automatically download, that there is a new version available.
+
+:::tip Auto download new version is currently only available for Windows and macOS
+For Linux, this setting does not work.
+A new version will have to be installed manually.
+:::
+::::
+
+:::details
+### How does the `Auto download new version` work?
+
+The software will automatically download the new version's installer upon a new release.
+After it is downloaded, the user can press "Update on Close" to run the installer when closing Wasabi.
+The installer is downloaded from [GitHub](https://github.com/zkSNACKs/WalletWasabi/).
+:::
 
 ## Advanced Installation
 

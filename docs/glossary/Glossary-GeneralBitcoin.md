@@ -59,6 +59,12 @@ Because of its uniquely verifiable and global consensus, it is a revolutionary s
 In a transaction where the provided input coins are larger than the value sent to the destination address, then the leftover change is sent to a new address of the same wallet.
 Read more: [Change coins](/using-wasabi/ChangeCoins.md)
 
+:::details
+### Child Pays For Parent (CPFP)
+
+Child Pays For Parent (CPFP) is a fee bumping technique where a user spends an output from a low fee rate unconfirmed transaction in a child transaction with a high fee rate in order to encourage miners to include both transactions in a block.
+:::
+
 ### Coinbase
 
 A special field used as the sole input for coinbase transactions.

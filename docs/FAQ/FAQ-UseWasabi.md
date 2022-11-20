@@ -9,7 +9,15 @@
 
 ## General
 
-[![Watch the video](https://img.youtube.com/vi/XykixYdbFpA/maxresdefault.jpg)](https://youtu.be/XykixYdbFpA)
+### How do I start using Wasabi?
+
+1. [Download & Install](/using-wasabi/InstallPackage.md) Wasabi (like with any other software) from the [official website](https://wasabiwallet.io).
+2. [Create a new wallet](/using-wasabi/WalletGeneration.md) or use an already existing one, by [importing or recovering](/using-wasabi/WalletRecovery.md) your own wallet.
+3. [Receive](/using-wasabi/Receive.md) some bitcoin.
+4. Wait, and let the wallet do some [coinjoins](/using-wasabi/CoinJoin.md).
+Your wallet's privacy progress % will increase.
+5. Enjoy your private bitcoin funds!
+[Spend](/using-wasabi/Send.md) some, send to your [hardware wallet](/using-wasabi/ColdWasabi.md) (for cold storage) or leave them in Wasabi for a while.
 
 ### How do I generate a new wallet?
 
@@ -202,11 +210,11 @@ If the coinjoin strategy is changed to one with a different anonnymity score tar
 
 The colored segments make up the `Privacy Bar`.
 The Privacy Bar is supposed to give the user an easy overview of the wallet's coins and it's privacy progress, where each segment represents a coin.
-The color of each segment indicates if that coin is private (green), semi-private (orange), or non-private (red).
+The color of each segment indicates if that coin is private (dark green), semi-private (light green), or non-private (grey).
 
 ![Wasabi Wallet Privacy Bar](/PrivacyBar.png "Wasabi Wallet Privacy Bar")
 
-So according to the image, this wallet has 46 coins of which 21 are private (green), 11 are semi-private (orange) and 14 are non-private (red).
+So according to the image, this wallet has 5 coins of which 1 is private (dark green), 1 is semi-private (light green) and 3 are non-private (grey).
 
 ### How can I display the fee in sats?
 
@@ -224,6 +232,13 @@ It can be used to manually start, pause and stop coinjoining.
 It also shows some information about the current coinjoin round. 
 
 ![Wasabi Wallet Music Box](/MusicBox.png "Wasabi Wallet Music Box")
+:::
+
+:::details
+### Does Wasabi support Taproot?
+
+Partially, Wasabi supports sending to Taproot (bech32m) address format.
+However, receiving with Taproot is not yet supported.
 :::
 
 ## Synchronization
@@ -455,10 +470,6 @@ In this case you have to wait until your transaction is confirmed in a block, an
 
 ## Send
 
-[![Watch the video](https://img.youtube.com/vi/PRlAAxunmdU/maxresdefault.jpg)](https://youtu.be/PRlAAxunmdU)
-
-[![Watch the video](https://img.youtube.com/vi/AdmlM-Qvco0/maxresdefault.jpg)](https://youtu.be/AdmlM-Qvco0)
-
 ### What are coins?
 
 Bitcoin uses a system of [inputs and outputs](/why-wasabi/Coins.md) to keep track who owns how many sats.
@@ -468,51 +479,39 @@ In order to spend a UTXO, the valid signature and script has to be provided in t
 This ensures that only with knowledge of the correct private key can this coin be sent to a new address.
 This chain of links between inputs being spent and outputs being generated is verified by every full node, and stored on the blockchain.
 
-### Why is coin control so important?
-
-Coin control is a feature in Wasabi that allows the user to choose which coins are to be spent as inputs in an outgoing transaction.
-Coin control is aimed to avoid as much as possible transactions where privacy leaks are caused by amounts, change addresses, the transaction graph and the common-input-ownership heuristic.
-
-Satoshis, the base currency in the Bitcoin network, are fungible units of account.
-It's just a number that shows how much value is being transferred, and the number `100` is "the same" any time the number `100` is used.
-The 9000 sats you spend on stickers are equal to the 9000 sats you spend on coffee.
-Just like 1 gram of gold atoms are equal to any other 1 gram of gold atoms.
-
-However, the unspent transaction outputs, the "coins" that hold the satoshi themselves are not fungible.
-Every UTXO is a unique snowflake that has its own transaction history, as well as an independent spending condition.
-The coin worth 2 bitcoin and locked by Alice's public key is not the same as the UTXO worth 5 bitcoin locked by the 2-of-3 multi signature of Bob, Charlie and David.
-So when sending bitcoin, it's important to consider which actual outputs are being sent in the transaction.
-
-It might be a problem when Alice sends the coin she received for a months worth of labor, in exchange for a coffee in Bob's store.
-Now Bob knows the amount Alice gets paid, and this is none of his business.
-Alice can protect herself against this by using a [CoinJoin](/using-wasabi/CoinJoin.md) UTXO, because now Bob cannot know the previous transactions from Alice.
-
 ### How do I set a destination address?
 
-In the `Send` tab, there is a text box for the `Address` right under the coin list.
-If you have an address in the clipboard, then it is automatically pasted when you click on the box.
+In the `Send` dialog, there is a box called `To`, enter here the bitcoin address or PayJoin URL.
+If you have an address in the clipboard, then it can be pasted by using the paste button or right click..
 You can also type in the address manually, there is a checksum to help you identify typos.
 Be careful and double-check the address, there is no way to revert this transaction and change the destination.
 So make sure that the coins get into the right hands.
 
-![Wasabi Wallet Send tab](/SendAmountFeePassword.png "Wasabi Wallet Send tab")
+![Send To Field](/SendToField.png "Send To Field")
 
+::::details
+### How do I set the payment amount?
+
+At the `Send` dialog, enter the bitcoin or dollar amount in the `Amount` field.
+
+![Send Amount](/SendAmountField.png "Send Amount")
+
+:::tip Dollar amounts are approximately
+When entering a dollar amount, Wasabi calculates the bitcoin amount according to the current BTC/USD exchange rate.
+This dollar amount can differ a bit compared to other wallets/exchanges.
+:::
+::::
+
+:::details
 ### Can I pay to many addresses?
 
 Unfortunately pay to many is not yet implemented in the GUI.
-However, you can use the [RPC server `send` call](/using-wasabi/RPC.md#send) and specify multiple receiving addresses.
+However, you can use the [RPC server `send` call](/using-wasabi/RPC.md#send) and specify multiple destination addresses.
+:::
 
 ### Can I set a custom change address?
 
 No. That is currently not possible.
-
-### How do I set the payment amount?
-
-After you select one or more coins as inputs in `Send` tab, say two anonset coins worth 0.1 bitcoin each.
-You can manually set the exact amount that the destination address will receive in the output of the transaction, say 0.15 bitcoin.
-Then Wasabi will help you with automatically calculating the precise change output value with `inputs - destination output - transaction fee`.
-
-![Wasabi Wallet Send tab](/SendAmountFeePassword.png "Wasabi Wallet Send tab")
 
 ### Why does Wasabi choose a new random node every time I send a transaction?
 
@@ -536,7 +535,7 @@ But the provided time frames are only a rough estimation, and not at all a preci
 ![Wasabi Wallet mining fee settings](/SendFeeSlider.png "Wasabi Wallet mining fee settings")
 
 Because confirmation fee estimation is more an art than a science, you can also set the fee manually.
-Then you can go after your gut feeling, [mempool chart analysis](https://jochen-hoenicke.de/queue/#0,24h), or just putting the minimum of 1 sat/vByte.
+Then you can go after your gut feeling, [mempool analysis](https://mempool.space/), or just putting the minimum of 1 sat/vByte.
 
 For a transaction to yourself, for example from your hot coinjoin wallet to your hardware wallet, you don't need to have fast confirmation, so you can set a relatively low fee.
 But to send from the hot coinjoin wallet to the coffee shop, you might want to get faster confirmation, thus paying a higher fee.
@@ -617,12 +616,6 @@ So the idea around clusters is to make it easier for users to follow the transac
 The transaction graph is the history of where a coin has been, and is important if different histories need to be separated.
 For example, if you buy coins anonymously in a P2P way, you should try to avoid mixing those coins with coins you got in a public way (donation, exchange, etc.).
 
-### What's the difference between Send and Build Transaction?
-
-The only difference is that `Build Transaction` does not propagate the transaction, it simply builds it.
-For a hot Wasabi with private keys, it will build and sign a final transaction, that can be broadcasted at any time.
-For a cold Wasabi with private keys on a hardware wallet, it will build an unsigned transaction, which must be signed offline on the hardware wallet before it is valid.
-
 ### Why Wasabi did not send some of my selected coins?
 
 Because they were not necessary for the transaction.
@@ -670,8 +663,6 @@ So when sending, less than 0.00787086 BTC (to cover the mining fees) should be e
 ![Wasabi Wallet Privacy Progress Tile](/PrivacyProgressTile.png "Wasabi Wallet Privacy Progress Tile")
 
 ## CoinJoin
-
-[![Watch the video](https://img.youtube.com/vi/ypfZT9GlqTw/maxresdefault.jpg)](https://youtu.be/ypfZT9GlqTw)
 
 ### What's the legal status of Wasabi/CoinJoin?
 
@@ -742,12 +733,11 @@ So, there are 79 denominations from 0.00005000 BTC up to 1374.38953472 BTC.
 During this phase you have the opportunity to register coins that you want to mix in this round.
 Your Wasabi client connects to the coordinator server with a unique Tor identity called Alice, and with it you send the input proofs, the cleartext change output, and the blinded anonset CoinJoin address.
 When all the proofs are valid, the coordinator signs the blinded output without knowing which address this is, and sends this back to Alice.
-Since the goal is to have 100 peers in one round, the [input registration phase](/using-wasabi/CoinJoin.md#input-registration) can take some time.
-But regardless of how many participants, one hour after the last CoinJoin this phase is complete.
+Since the goal is to have at least 150 inputs in one round, the [input registration phase](/using-wasabi/CoinJoin.md#input-registration) can fail if too few participants registered in the available time frame.
 
 ### What is happening in the connection confirmation phase?
 
-Because the input registration phase can take up to one hour, the coordinator needs to ensure that everyone is still online and ready to continue.
+Because the input registration phase takes some time, the coordinator needs to ensure that everyone is still online and ready to continue.
 So in the [connection confirmation phase](/using-wasabi/CoinJoin.md#connection-confirmation) every Alice sends a signal to the coordinator, and when all have checked in, this phase concludes.
 
 ### What is happening in the output registration phase?
@@ -789,9 +779,7 @@ Go to `Settings` > `Bitcoin` and change the network to `TestNet`.
 Then restart your Wasabi and create a new wallet, this is needed because Wasabi differentiates between "Main wallets" and "TestNet wallets".
 This wallet will synchronize for the TestNet, and generate TestNet addresses.
 You can get tBTC from faucets like:
-[testnet-faucet.mempool.co](https://testnet-faucet.mempool.co/)
-or
-[coinfaucet.eu/en/btc-testnet](https://coinfaucet.eu/en/btc-testnet/)
+[coinfaucet.eu/en/btc-testnet](https://coinfaucet.eu/en/btc-testnet/) or [bitcoinfaucet.uo1.net](https://bitcoinfaucet.uo1.net/)
 
 ### Does Wasabi have to stay on during CoinJoin?
 
@@ -817,7 +805,7 @@ If your wallet crashes or your computer goes offline during CoinJoin you simply 
 The amount of privacy needed depends on your individual threat model, who is trying to deanonymize you?
 It is commonly said that an anonymity set of 50 is sufficient to evade low-level blockchain forensics analysis, but it might not protect you against large adversaries.
 At least one round to re-mix your coins can increase your privacy drastically.
-With Wasabi this can be achieved in a matter of hours (or minutes if there are a lot of users).
+With Wasabi this can be achieved in a matter of hours.
 
 ### How does my wallet communicate with the Wasabi coordinator server?
 
@@ -865,9 +853,59 @@ However, as the coordinator cannot enforce this, a custom client could use a dif
 Wasabi Wallet's default client is configured to register 1 up to 8 outputs per coinjoin round.
 However, as the coordinator cannot enforce this, a custom client could use a different configuration.
 
+::::details
+### Can I manually select which coins to register for coinjoin?
+
+No, that is currently not possible.
+The automatic coinjoin robot registers the coins, based on multiple factors.
+
+:::tip
+You can enable the [red coin isolation](/FAQ/FAQ-UseWasabi.md#what-does-the-red-coin-isolation-mean-in-the-coinjoin-settings) setting, in case you want to prevent possible input heuristics (from outside observers) of anonscore 1 coins into the same coinjoin round.
+:::
+::::
+
 ### How long does it take to make my wallet 100% private?
 
 Depending on many factors, like the `Anonymity score target`, the `coinjoin strategy`, and the amount of bitcoin, it can take from a couple hours to multiple days.
+
+::::details
+### What coinjoin strategy should I select?
+
+There is no answer for all, or a "best" strategy, it depends on the user's privacy needs.
+The coinjoin strategy should be selected according to the user's preference:
+Do you want to `Minimize costs`, `Maximize speed`, or `Maximize privacy`?
+Or the user can create their own `Custom` strategy.
+
+![Wasabi Coinjoin Strategy](/CoinjoinStrategy.png "Wasabi Coinjoin Strategy")
+
+:::tip The default coinjoin strategy is `Maximize Speed`
+This strategy is sufficient for most users
+:::
+::::
+
+:::details
+### What is the coinjoin strategy?
+
+A coinjoin strategy has specific pre-configured coinjoin settings.
+
+There are multiple coinjoin settings which the user is able to configure according to their own prefence.
+Each coinjoin strategy has different specific settings for optimal performance.
+After a coinjoin strategy is selected, its settings are applied.
+It is supposed to make it easy for the user to select their preference, without having to know about the specific settings and how to configure them themselves.
+
+Read more [ħere](/using-wasabi/CoinJoin.md)
+:::
+
+:::details
+### What are the differences/settings per coinjoin strategy?
+
+|  | Minimize Costs | Maximize Speed | Maximize Privacy | 
+|:---:|:---:|:---:|:---:|
+| Red coin isolation | not active  | not active | active |
+| Anonymity score target | 5 | 5 | random between 50 and 100 |
+| Coinjoin time preference   | weeks | hours | hours |
+
+:::
 
 ### What does the `Auto-start coinjoin threshold` mean in the coinjoin settings?
 
@@ -1189,6 +1227,8 @@ Alternatively, you can find the logs inside your [Wasabi data folder](/FAQ/FAQ-U
 You can activate/deactivate Discreet Mode by clicking the Discreet Mode icon in the bottom left corner of the main view.
 You can read more about Discreet Mode [here](/using-wasabi/DiscreetMode.md).
 
+![Discreet Mode Icon](/DiscreetModeActivate.png "Discreet Mode Icon")
+
 ### How can I change to the white theme?
 
 You can change from the default dark to the white theme by disabling `Dark Mode` in the Settings.
@@ -1240,13 +1280,6 @@ Or open a new Lightning Network node (not your main Lightning node), create a ch
 :::tip
 For more information, see this [dedicated chapter](/using-wasabi/ChangeCoins.md).
 :::
-
-### How can I mix large amounts?
-
-Wasabi creates anonymity set for multiple denominations in one round, these are 0.1, 0.2, 0.4, 0.8, 1.6, 3.2, ... bitcoin!
-Read more: [What are the equal denominations created in one mixing round?](/FAQ/FAQ-UseWasabi.md#what-are-the-equal-denominations-created-in-one-mixing-round)
-
-[![Watch the video](https://img.youtube.com/vi/3Ezru07J674/maxresdefault.jpg)](https://youtu.be/3Ezru07J674)
 
 ### Why do my coins occasionally get banned from participating in CoinJoin?
 

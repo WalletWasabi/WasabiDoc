@@ -11,6 +11,8 @@
 
 ---
 
+@[youtube](vCI5aza-lv0)
+
 ## How to send bitcoin step-by-step
 
 1.  Click the `Send` button.
@@ -104,7 +106,7 @@ Wasabi will calculate the checksum and notify you if the provided address is wro
 
 ## Observers
 
-It is a requirement to provide one or more [labels](/using-wasabi/Receive.md#the-importance-of-labeling) each time you initiate a transfer of bitcoin.
+In Wasabi it is mandatory to provide one or more [labels](/using-wasabi/Receive.md#the-importance-of-labeling) each time you initiate a transfer of bitcoin.
 These labels should be the observers of the transaction.
 An observer of a sending transaction is, of course, the receiver, as well as any other third party that knows that you are the sender of this transaction.
 For example, you should include as a label the payment processor or the bitcoin exchange if you use their services.
@@ -113,9 +115,7 @@ This metadata will be used to build an accurate cluster of observers who know ab
 ## Amount
 
 In the `Amount` text box you can specify how many bitcoins the receiving address will gain.
-If it is below the value of the selected inputs, then the leftover value will be sent to an automatically generated change address of yours.
-You can send a whole coin by selecting the `Max` button, which will build a transaction with only one output, the receiving address, and no change.
-You can also see the current US Dollar value of the sending amount.
+You can also see and enter the current US Dollar value of the sending amount.
 
 :::tip Avoid sending rounded values
 If you specify a rounded amount, like `0.0100 0000 bitcoin`, then the change output will not be rounded, like `0.0896 8413 bitcoin`.
@@ -123,14 +123,14 @@ This makes it easy for an observer to conclude that the spending amount was the 
 So in order to increase your privacy, you can set a non-rounded amount, like `0.0101 6843`.
 :::
 
-![Wasabi Wallet send transaction](/SendAmountFeePassword.png "Wasabi Wallet send transaction")
+![Send Amount Field](/SendAmountField.png "Send Amount Field")
 
 ## Mining Fee
 
 Every transaction must specify a fee which incentives the miner to include it in a block, it is calculated by `value of inputs - value of outputs`.
 The higher the fee per virtual byte (vByte) transaction size, the more likely miners are to confirm this transaction.
 Wasabi uses Bitcoin Core's `smart fee` algorithm to estimate the time it will take to confirm at the given fee level.
-You can change the fee by moving the slider, or specify it manually by using the `Advanded` option. [Advanced fee rate](/FAQ/FAQ-UseWasabi.html#how-do-i-set-custom-fee-rate).
+You can change the fee by moving the slider, or by manually setting the [transaction fee rate](/FAQ/FAQ-UseWasabi.html#how-do-i-set-custom-fee-rate).
 
 ![Wasabi Wallet Fee Slider](/SendFeeSlider.png "Wasabi Wallet Fee Slider")
 
