@@ -103,8 +103,7 @@ export default {
                 collapsable: false,
                 sidebarDepth: 2,
                 children: [
-                    "/using-wasabi/ELI5.md",
-                    "/using-wasabi/10Commandments.md"
+                    "/using-wasabi/ELI5.md"
                 ]
             }, {
                 text: "Installing Wasabi",
@@ -151,15 +150,13 @@ export default {
                 sidebarDepth: 2,
                 children: [
                     "/using-wasabi/DeterministicBuild.md",
-                    "/using-wasabi/WasabiSetupVM.md",
-                    "/using-wasabi/WasabiSetupWhonix.md"
+                    "/using-wasabi/WasabiSetupVM.md"
                 ]
             }, {
                 text: "Advanced Using Wasabi",
                 collapsable: false,
                 sidebarDepth: 2,
                 children: [
-                    "/using-wasabi/Daemon.md",
                     "/using-wasabi/RPC.md",
                     "/using-wasabi/PayJoin.md",
                     "/using-wasabi/Testnet.md",
