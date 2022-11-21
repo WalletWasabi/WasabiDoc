@@ -72,5 +72,5 @@ html.dark {
 	}
 }
 html:not(.dark){
-	
+	--c-text-light: var(--c-text) !important;
 }
