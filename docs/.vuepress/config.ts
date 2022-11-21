@@ -14,6 +14,7 @@ export default {
         repo: "zkSNACKs/WasabiDoc",
         docsDir: "docs",
         editLinks: true,
+        contributors: false,
         //lastUpdated: 'Last Updated',
         algolia: {
             indexName: 'wasabiwallet',
