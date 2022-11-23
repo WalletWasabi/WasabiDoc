@@ -173,7 +173,7 @@ So to upgrade Wasabi, simply download and install the new version like at first 
 
 You can download the software build for the different operating systems on the main [website](https://wasabiwallet.io) or better over [Tor](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion).
 For extra security, it is reccommended to also download the signatures of the build and verify them with [zkSNACKs' PGP public key](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt).
-For step-by-step instructions, follow [this guide](/using-wasabi/InstallPackage.md) or see this video: [![Watch the video](https://img.youtube.com/vi/DUc9A76rwX4/maxresdefault.jpg)](https://youtu.be/DUc9A76rwX4)
+For step-by-step instructions, follow [this guide](/using-wasabi/InstallPackage.md) or see this video: [![Watch the video](https://img.youtube.com/vi/DUc9A76rwX4/hqdefault.jpg)](https://youtu.be/DUc9A76rwX4)
 
 ### What does `Auto download new version` in the settings mean?
 
