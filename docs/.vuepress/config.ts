@@ -8,11 +8,6 @@ const themeColor = "#211b24"
 export default {
     title: "Wasabi Docs",
     description: "An archive of knowledge about Wasabi Wallet, an open-source, non-custodial and privacy-focused Bitcoin wallet for desktop.",
-    define: {
-        currentVersion: '2.0.2',
-        dotnetVersion: '6.0',
-        zksnacksPublicKeyFingerprint: '6FB3 872B 5D42 292F 5992 0797 8563 4832 8949 861E'
-    },
     theme: defaultTheme({
         logo: "/Logo_without_text_dark.png",
         logoDark: "/Logo_without_text.png",
@@ -220,31 +215,6 @@ export default {
                 .loader(resolve(__dirname, './variables'))
                 .end()
         },
-   /*     markdownit()
-        .use(customBlock, {
-            youtube(arg) {
-                const [id, start] = arg.split(',')
-                const path = start ? `${id}?start=${start}` : `${id}?`
-                return youtubeEmbed(id, path)
-            }
-        })*/
-
-        /*markdownit: {
-            extendMarkdown(md) {
-                md.use(customBlock, {
-                    youtube(arg) {
-                        const [id, start] = arg.split(',')
-                        const path = start ? `${id}?start=${start}` : `${id}?`
-                        return youtubeEmbed(id, path)
-                    },
-                    youtubePlaylist(arg) {
-                        const [id, video] = arg.split(',')
-                        const path = `${video || ''}?listType=playlist&list=${id}`
-                        return youtubeEmbed(video || id, path)
-                    }
-                })
-            }
-        }*/
     }),
     plugins: [
         "@vuepress/back-to-top", ["container", {
