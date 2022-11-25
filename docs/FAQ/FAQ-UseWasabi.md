@@ -652,7 +652,7 @@ In the normal send workflow, Wasabi automatically selects which coins to send.
 To send a specific coin, the user can use the coinlist.
 The coinlist can be brought up by pressing the keyboard combination `CTRL` + `C` + `D`.
 
-![Wallet Coins Send Selected Coins](/WalletCoinsSendSelectedCoins.png "Wallet Coins SendS electedC oins")
+![Wallet Coins Send Selected Coins](/WalletCoinsSendSelectedCoins.png "Wallet Coins Send Selected Coins")
 
 :::warning This is not coin control
 You can only send coins in full.
