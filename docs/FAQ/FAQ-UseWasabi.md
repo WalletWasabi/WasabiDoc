@@ -586,6 +586,13 @@ No. That is currently not possible.
 :::
 
 :::details
+### Does Wasabi support RBF?
+
+All _send_ transactions signal RBF by default.
+However, it is not yet possbile in the Wasabi GUI to replace an RBF transaction by a higher-paying version.
+:::
+
+:::details
 ### Why does Wasabi choose a new random node every time I send a transaction?
 
 When you broadcast a transaction from a full node, that transaction is flooded onto the network.
