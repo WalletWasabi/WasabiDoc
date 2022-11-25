@@ -78,4 +78,5 @@ But if you have a trusted relationship with the two, then this is alright, and n
 
 ### Coinjoin more
 
-Since Wasabi 2.0 has a minimum amount for coinjoin of only 5000 sats, any change coin will be automatically registered for the next coinjoin round. If you wait long enough, Wasabi will make sure that you don't have any anonscore 1 change coins in your wallet, but only private coins not related to any previous payment.
+Since Wasabi 2.0 has a minimum amount for coinjoin of only 5000 sats, any change coin with an amount larger than that will be registered in a future coinjoin round.
+If you wait long enough, Wasabi will make sure that you don't have any anonscore 1 change coin in your wallet, but only private coins not linked to any previous payment.
