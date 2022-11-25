@@ -1063,6 +1063,13 @@ The `Red coin isolation` is active by default when the `Maximize Privacy` profil
 ![Red Coin Isolation](/RedCoinIsolation.png "Red Coin Isolation")
 :::
 
+:::details
+### Do coinjoin transactions signal RBF?
+
+No.
+Coinjoin transactions do not signal RBF.
+:::
+
 ## Backup and Recovery
 
 ::::details
