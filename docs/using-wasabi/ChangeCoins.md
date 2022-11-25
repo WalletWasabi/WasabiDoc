@@ -16,8 +16,6 @@
 ### Non-Coinjoin change
 
 Let's assume you want to send 0.5 bitcoin to Alice.
-In the `Send` dialog you select one or more UTXO, these are the inputs of the transaction.
-For example, let's assume that you choose an `anonymity score 1` UTXO worth 2 bitcoins.
 You put Alice's address in the `Receiving Address` field, and set the spending `Amount` to 0.5 bitcoin.
 This will be one output of the transaction.
 
