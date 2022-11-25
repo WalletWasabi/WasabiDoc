@@ -651,11 +651,11 @@ At the transaction fee slider dialog, click on `Advanced` and manually type the 
 In the normal send workflow, Wasabi automatically selects which coins to send.
 
 To send a specific coin, the user can use the coinlist.
-The coinlist can be brought up by pressing the keyboard combination `CTRL` + `C` + `D`.
+The coinlist can be brought up by pressing the keyboard combination `CTRL` + `C` + `D` on the main view.
 
 :::warning This is for advanced usage only
 Users should stick to the default send workflow.
-Using the coinlist for sending can result in critical privacy risks.
+Misusing the coinlist for sending can result in critical privacy risks.
 :::
 
 ![Wallet Coins Send Selected Coins](/WalletCoinsSendSelectedCoins.png "Wallet Coins Send Selected Coins")
