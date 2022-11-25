@@ -503,6 +503,11 @@ However, you can use the [RPC server `send` call](/using-wasabi/RPC.md#send) and
 
 No. That is currently not possible.
 
+### Does Wasabi support RBF?
+
+All _send_ transactions signal RBF by default.
+However, it is not yet possbile in the Wasabi GUI to replace an RBF transaction by another one paying a higher fee rate.
+
 ### Why does Wasabi choose a new random node every time I send a transaction?
 
 When you broadcast a transaction from a full node, that transaction is flooded onto the network.
@@ -906,6 +911,13 @@ To prevent possible coinjoin input heuristics from outside observers.
 The `Red coin isolation` is active by default when the `Maximize Privacy` profile is selected.
 
 ![Red Coin Isolation](/RedCoinIsolation.png "Red Coin Isolation")
+
+:::details
+### Do coinjoin transactions signal RBF?
+
+No.
+Coinjoin transactions do not signal RBF.
+:::
 
 ## Backup and Recovery
 
