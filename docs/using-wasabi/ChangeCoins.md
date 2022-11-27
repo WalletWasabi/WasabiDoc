@@ -66,13 +66,13 @@ If in a third transaction you want to send Alice 0.02 bitcoin, then you can cons
 
 Now Alice will know that you owned the 0.10 bitcoin and that you currently own the 0.09 bitcoin change, but she cannot find out about your premix transaction history.
 
-Wasabi will automatically check if you have a coin with the same label for the current payment recipient, and will suggest those coins to be spent.
+Wasabi will automatically check if you have a coin with the same label for the current payment recipient, and will use those coins to be spent.
 
 ### Spend the change with another entity, where you don't mind if each of the two know that you transact with the other entity
 
 When you send a transaction to Alice, then she knows that the change output goes back to you.
 You can use this change to send bitcoin to Bob, and if he has bad privacy habits, Alice can find out you sent to him.
-But if you have a trusted relationship with the two, then this is alright, and not part of your thread model.
+But if you have a trusted relationship with the two, then this is alright, and not part of your threat model.
 
 ### Coinjoin more
 
