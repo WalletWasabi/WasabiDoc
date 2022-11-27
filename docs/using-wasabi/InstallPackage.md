@@ -54,8 +54,6 @@ You will also have an icon in your Start Menu and on your Desktop.
 After the first run, a [data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) will be created. 
 Among others, here is where your wallet files and your logs reside.
 
-@[youtube](tkaaC8yET1o)
-
 ## Debian and Ubuntu
 
 If you have already imported zkSNACKs' PGP public key, then jump to step 2.
@@ -77,12 +75,10 @@ If the message returned says `Good signature from zkSNACKs` and that it was sign
 	:::
 
 4. [GUI] Install by double-clicking and follow the GUI Instruction. </br>
-   [CLI] In the Download repository, run the command `sudo dpkg -i Wasabi-${currentVersion}.deb`.
+   [CLI] In the Download repository, execute the command `sudo apt install ./Wasabi-${currentVersion}.deb` to install Wasabi and after that run Wasabi by executing `wassabee`.
 
 After the first run, a [data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) will be created.
 Among others, here is where your wallet files and your logs reside.
-
-@[youtube](DUc9A76rwX4)
 
 ## Other Linux
 
@@ -112,15 +108,10 @@ If you have already imported zkSNACKs' PGP public key, then jump to step 2.
 After the first run, a [data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) will be created.
 Among others, here is where your wallet files and your logs reside.
 
-(Note that this video was created on macOS, but the steps are the same for Linux)
-
-@[youtube](qFbv_b-bju4)
-
-@[youtube](zPKpC9cRcZo)
-
 ## macOS
 
-1. [Download](https://wasabiwallet.io/#download) the `.dmg` package of Wasabi ${currentVersion}.
+1. [Download](https://wasabiwallet.io/#download) the `.dmg` package of Wasabi ${currentVersion} for your machine's processor.
+If you're not sure what processor your device has, [check it](https://www.howtogeek.com/706226/how-to-check-if-your-mac-is-using-an-intel-or-apple-silicon-processor/).
 
 ![Download Wasabi Wallet for macOS](/DownloadMac.png "Download Wasabi Wallet for macOS")
 
@@ -131,7 +122,8 @@ Among others, here is where your wallet files and your logs reside.
 4. At first startup, there will be a pop-up that Wasabi was downloaded from the internet.
 Click on `Open` and restart Wasabi.
 
-![Wasabi Wallet macOS signature verification](/InstallMacConfirm.png "Wasabi Wallet macOS signature verification")
+After the first run, a [data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) will be created.
+Among others, here is where your wallet files and your logs reside.
 
 ::::details
 ### Optional PGP Verification
@@ -159,10 +151,6 @@ If the message returned says `Good signature from zkSNACKs` and that it was sign
 	:::
 ::::
 
+@[youtube](ry6qIyQmzRE)
 
-After the first run, a [data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) will be created.
-Among others, here is where your wallet files and your logs reside.
-
-@[youtube](_Zmc54XYzBA)
-
-@[youtube](NQCfYrv1Y7k)
+@[youtube](QHIpEYYqddE)

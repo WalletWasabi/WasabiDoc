@@ -14,16 +14,15 @@
 ## Generating addresses step-by-step
 
 1. Start Wasabi and open the wallet that you want to receive coins into.
-2. Go to the `Receive` tab.
-3. Specify the observers which are the entities who know about this address.
+2. Click the `Receive` button in the main view's top right corner.
+3. Type in the name of the entities who know that this address is yours.
+If you have already used a label before, simply choose it from the suggested labels.
 
-	![](/ReceiveLabelingRequired.png)
+![Receive label in Wasabi](/ReceiveLabelingRequired.png "Receive label in Wasabi")
 
-4. Click on `Generate Address`.
-5. Optionally you can change the observers in the right-click menu if new entities learn about the address.
+4. Press `Continue` and the wallet will generate a new address. 
 
-![Set known by in Wasabi Wallet](/ReceiveLabelingRequired.png "Set known by in Wasabi Wallet")
-![Wasabi Wallet address details](/ReceiveAddressDropDownMenu.png "Wasabi Wallet address details")
+![Bitcoin address in Wasabi](/UnusedReceiveAddress.png "Bitcoin address in Wasabi")
 
 ## Bitcoin public keys and addresses
 
@@ -50,7 +49,7 @@ This makes it obvious for anyone that this one entity [you] owns all these coins
 The first rule of Bitcoin privacy is [never reuse addresses](/why-wasabi/AddressReuse.md)!
 
 :::tip
-This is why Wasabi removes the address from the `Receive` tab as soon as it has received a coin.
+This is why Wasabi removes the address from the `Unused Receive Address` list as soon as it has received a coin.
 :::
 
 ## The importance of labeling
@@ -61,37 +60,14 @@ However, an unspent transaction output, a bitcoin, is a chunk of money and is no
 This is just like a gold coin, with a unique amount of gold atoms, and either a pretty mintage or an old chipped broken coin.
 Because UTXOs are not fungible, it is very important to know exactly which coin is which, and that is done by carefully labeling.
 
-:::tip
-In Wasabi it is mandatory to give every address a label of the observers who know about this address so that later you know where you got the coin from and you know how to spend it.
-:::
-
-![Set known by in Wasabi Wallet](/ReceiveLabelingRequired.png "Set known by in Wasabi Wallet")
-
-Wasabi is not like other Bitcoin wallets, it is a privacy-oriented wallet and every feature and every design decision is based mainly (sometimes exclusively) on privacy costs/benefits analysis.
-For that reason, many of its features depend on each other and a correct understanding of how they play together is critical to achieve and improve the privacy of our transactions.
-
-### Coin control
-
-Coin control is a key feature that enables all the other features.
-How could we CoinJoin our coins if we aren't able to select the ones we want to participate with?
-How could we know which coins are being spent in a transaction?
-How could we decide what to reveal to a KYC exchange?
-Well, without coin control it is not possible.
-
-Wasabi is a coins-oriented wallet in the sense that coins are the most important unit of information to make decisions to protect privacy.
-
-### Observers
-
-As a privacy-oriented solution, the focus is always on minimizing how much we selectively reveal about our financial activity.
-For that reason when we create a new address to receive bitcoins or when we send a transaction, we are forced to label that coin!
-And what kind of information do we have to provide here?
-The label has to tell us who are the observers that know about that coin.
-
 For example, if I create a new address to receive a `0.5 BTC` payment from Andrew for a laptop that I sold to him then the label has to be: `Andrew`.
 
-Wasabi does not label transactions, but the addresses that control the coins.
-The label is not for describing the `reason for payment`, but rather to list the `involved parties`.
-Understanding this difference between labeling an address and describing a transaction is very important for our privacy.
+The label is not for describing the `reason for payment`, but rather to list those who know that this address is yours.
+Understanding this difference between labeling an address and describing a transaction is very important for your privacy.
+
+:::tip
+In Wasabi it is mandatory to give every receive address a label of those who know that this address is yours, so that later you know what to do with it, and it also helps the auto coin selection algorithm when sending.
+:::
 
 ### Clusters
 

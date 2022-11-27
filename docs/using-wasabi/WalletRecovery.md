@@ -23,9 +23,11 @@ To recover a wallet:
 
 1. Click on `Add Wallet` at the bottom left corner of the main view.
 
-![Wasabi Wallet Add Wallet](/AddWallet.png "Wasabi Wallet Add Wallet")
+![Wasabi Wallet Add Wallet](/AddWalletButton.png "Wasabi Wallet Add Wallet")
 
 2. Click on `Recover a wallet`.
+
+![Wasabi Wallet Add Wallet](/AddWallet.png "Wasabi Wallet Add Wallet")
 
 3. Give the wallet a name for future recognition of the wallet.
 

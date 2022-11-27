@@ -97,8 +97,8 @@ Read more: [What is the cluster history?](/FAQ/FAQ-UseWasabi.md#what-is-the-clus
 :::details
 ### Coin Control
 
-Coin control is a must learn if you care about your privacy in Bitcoin.
-As can be understood from the name, this is a proper control of one's coins.
+The possiblity for the user to manually select UTXO's.
+It is mostly used for sending, so the user can select which UTXO's should be used as the inputs of the transaction.
 Read more: [Coin Control Best Practices](/FAQ/FAQ-UseWasabi.md#coin-control-best-practices)
 :::
 
@@ -107,6 +107,13 @@ Read more: [Coin Control Best Practices](/FAQ/FAQ-UseWasabi.md#coin-control-best
 
 CoinJoin is a trustless method for combining multiple Bitcoin payments from multiple spenders into a single transaction to make it more difficult for outside parties to determine which spender paid which recipient.
 Read more: [What is a CoinJoin?](/FAQ/FAQ-Introduction.md#what-is-a-coinjoin)
+:::
+
+:::details
+### Coinjoin Strategy
+
+A _Coinjoin Strategy_ contains instructions for the automatic "coinjoin robot" about configurations like when and how much to coinjoin.
+Read more: [Coinjoin Strategy](/Using-Wasabi/CoinJoin.md#coinjoin-strategy)
 :::
 
 :::details
@@ -130,18 +137,19 @@ Read more: [How does my wallet communicate with the Wasabi coordinator server?](
 :::
 
 :::details
-### Daemon
-
-A daemon is a command line interface to run Wasabi without the GUI (Graphical User Interface).
-Read more: [Headless Wasabi Daemon](/using-wasabi/Daemon.md)
-:::
-
-:::details
 ### Dust
 
 Dust is an UTXO that is uneconomical to spend.
 Also, small portions of bitcoin can lead to serious consequences for one's privacy, for example the so called `forced address reuse attack`.
 Read more: [What is the dust threshold](/FAQ/FAQ-UseWasabi.html#what-is-the-dust-threshold)
+:::
+
+:::details
+### Label
+
+A label can be added to a coin, as a small note on who knows this coin belongs to you.
+Good labelling can help the user and the wallet to make better privacy conscious decisions later on when spending.
+Read more: [Why do I have to label my address](/FAQ/FAQ-UseWasabi.md#why-do-i-have-to-label-my-address)
 :::
 
 :::details
@@ -186,23 +194,6 @@ They are literally peers in the network, or in the CoinJoin.
 
 RPC, or Remote Procedure Call, is an interface to interact with Wasabi Wallet programmatically.
 Read more: [RPC Interface](/using-wasabi/RPC.md)
-:::
-
-:::details
-### Shield (or anonymity set shield)
-
-We often talk about
-<img src="/ShieldCheckmark.png" alt="Wasabi Wallet green checkmark shield anonymity set" title="Wasabi Wallet green checkmark shield anonymity set" class="shield" />,
-<img src="/ShieldGreen.png" alt="Wasabi Wallet green shield anonymity set" title="Wasabi Wallet green shield anonymity set" class="shield" />,
-<img src="/ShieldYellow.png" alt="Wasabi Wallet yellow shield anonymity set" title="Wasabi Wallet yellow shield anonymity set" class="shield" /> and
-<img src="/ShieldRed.png" alt="Wasabi Wallet red shield anonymity set" title="Wasabi Wallet red shield anonymity set" class="shield" />
-shields... but what are they?
-Coins in your wallet have shields.
-
-Each shield represents the [Anonymity Set](/FAQ/FAQ-UseWasabi.md#what-is-the-anonymity-set) level of a given coin.
-By default the anonymity set levels are `2`, `21` and `50`, however, this can be [changed in the settings](/FAQ/FAQ-UseWasabi.md#how-can-i-change-the-anonset-target).
-
-Essentially, when we talk about shields, we mean a specific privacy level set by the user.
 :::
 
 :::details
