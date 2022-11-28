@@ -1183,7 +1183,7 @@ Read more [here](/using-wasabi/ColdWasabi.md).
 ### How can I import the Wasabi skeleton wallet file?
 
 Take the MicroSD card from the ColdCard and plug it in the computer with the Wasabi Wallet software.
-In Wasabi Wallet go to the Wallet Manager, select Hardware Wallet option and in the bottom right corner click `Import Coldcard`.
+In Wasabi Wallet go to `Add Wallet` and select `Import a wallet`.
 Now select the Wasabi skeleton json-file from the MicroSD card, if this fails you can manually enter the file location in Wasabi Wallet window and load the file.
 Read more [here](/using-wasabi/ColdWasabi.md#connecting-via-sd-card).
 :::
