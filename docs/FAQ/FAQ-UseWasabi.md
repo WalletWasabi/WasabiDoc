@@ -1203,7 +1203,7 @@ To send a transaction you will need to connect your hardware wallet and unlock t
 
 Go to `Send`, enter the address to send to and the amount of bitcoin to spend.
 Enter the label of whom you are sending to.
-Check if all information is correct at the `Preview Transaction` screen.
+At the `Preview Transaction` screen, check if all the information is correct.
 After you have checked that everything is correct, click `Send Now` to sign it with the connected hardware wallet and broadcast the transaction to the network.
 Read more [here](/using-wasabi/ColdWasabi.md#connecting-via-usb)
 :::
