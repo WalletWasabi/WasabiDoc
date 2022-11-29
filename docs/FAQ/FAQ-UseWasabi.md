@@ -549,11 +549,22 @@ At the transaction fee slider dialog, click on `Advanced` and manually type the 
 
 ### How do I select coins for spending?
 
-Unlike other Bitcoin wallets, the user cannot spend from Wasabi without selecting coins, since ["Coin Control Is Must Learn If You Care About Your Privacy In Bitcoin"](https://medium.com/@nopara73/coin-control-is-must-learn-if-you-care-about-your-privacy-in-bitcoin-33b9a5f224a2), at least for today.
-In order to spend some coins, simply select them by clicking their checkboxes from the list.
-Wasabi will automatically build a transaction with the best combination of the selected coins.
+In the normal send workflow, Wasabi automatically selects which coins to send.
 
-![Wasabi Wallet Send tab](/Send.png "Wasabi Wallet Send tab")
+To send a specific coin, the user can use the coinlist.
+The coinlist can be brought up by pressing the keyboard combination `CTRL` + `C` + `D` on the main view.
+
+:::warning This is for advanced usage only
+Users should stick to the default send workflow.
+Misusing the coinlist for sending can result in critical privacy risks.
+:::
+
+![Wallet Coins Send Selected Coins](/WalletCoinsSendSelectedCoins.png "Wallet Coins Send Selected Coins")
+
+:::warning This is not coin control
+You can only send coins in full.
+There is no possiblity to enter a bitcoin amount or receive change.
+:::
 
 ### How is the transaction broadcast?
 
@@ -1023,21 +1034,24 @@ Read more [here](/using-wasabi/ColdWasabi.md).
 ### How can I import the Wasabi skeleton wallet file?
 
 Take the MicroSD card from the ColdCard and plug it in the computer with the Wasabi Wallet software.
-In Wasabi Wallet go to the Wallet Manager, select Hardware Wallet option and in the bottom right corner click `Import Coldcard`.
+In Wasabi Wallet go to `Add Wallet` and select `Import a wallet`.
 Now select the Wasabi skeleton json-file from the MicroSD card, if this fails you can manually enter the file location in Wasabi Wallet window and load the file.
 Read more [here](/using-wasabi/ColdWasabi.md#connecting-via-sd-card).
 
 ### How can I generate a receiving address of my hardware wallet?
 
-In Wasabi Wallet you load your previously imported wallet (from Wasabi skeleton, or USB detection) and go to the `Receive` tab, here you enter a label for the observers of the incoming transaction and click `Generate Receive Address`.
-In the tab below the newly generated receive address can be viewed / copied.
+In Wasabi Wallet you load your previously imported wallet (from Wasabi skeleton, or USB detection) and go to the `Receive` dialog, here you enter a label for the observers of the incoming transaction and click `Continue`.
+In the receive dialog, previously generated addresses (which haven't received any funds yet) can be viewed and copied at `Unused Receive Addresses`.
 Read more [here](/using-wasabi/ColdWasabi.md).
 
 ### How can I sign a transaction with a USB connected hardware wallet?
 
 To send a transaction you will need to connect your hardware wallet and unlock the device (using PIN or password).
-Then go to the `Send` tab where you can specify the address to send to, the amount of bitcoin to spend and which coins to use as inputs.
-After filling in all transaction details you click `Send Transaction` to sign it with the connected hardware wallet and broadcast to the network.
+
+Go to `Send`, enter the address to send to and the amount of bitcoin to spend.
+Enter the label of whom you are sending to.
+At the `Preview Transaction` screen, check if all the information is correct.
+After you have checked that everything is correct, click `Send Now` to sign it with the connected hardware wallet and broadcast the transaction to the network.
 Read more [here](/using-wasabi/ColdWasabi.md#connecting-via-usb)
 
 ### How can I build and export a transaction to ColdCard?
