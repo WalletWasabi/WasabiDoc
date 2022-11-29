@@ -135,7 +135,11 @@ Sending bitcoin airgapped works as follows:
 10. In Wasabi, click on `Broadcaster` (in the search bar).
 11. Select `Import Transaction`.
 12. Select the final signed transaction, which looks like this `xxx-final.txn`
-13. Broadcast the transaction
+13. Broadcast the transaction.
+
+:::tip Enable PSBT workflow in the settings
+If enabled, a Broadcast button will appear next to the Send button for an easier workflow
+:::
 
 ## Cold-Wasabi protocol
 
