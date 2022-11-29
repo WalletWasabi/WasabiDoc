@@ -1212,7 +1212,7 @@ Go to `Send` and enter the destination address and amount.
 Click `Continue`.
 Enter the label of whom you are sending to.
 At the Preview Transaction screen, check that everything is correct.
-Click on `Save PSBT file` and save the file to the micro SD Card.
+Click on `Save PSBT file` and save the file to the MicroSD card.
 You can then insert the MicroSD card (containing the PSBT) in the Coldcard for manual verification and signing.
 Read more [here](/using-wasabi/ColdWasabi.md#connecting-via-sd-card).
 :::
