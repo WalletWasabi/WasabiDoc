@@ -1216,8 +1216,8 @@ Read more [here](/using-wasabi/ColdWasabi.md#connecting-via-sd-card).
 :::details
 ### How can I generate a receiving address of my hardware wallet?
 
-In Wasabi Wallet you load your previously imported wallet (from Wasabi skeleton, or USB detection) and go to the `Receive` tab, here you enter a label for the observers of the incoming transaction and click `Generate Receive Address`.
-In the tab below the newly generated receive address can be viewed / copied.
+In Wasabi Wallet you load your previously imported wallet (from Wasabi skeleton, or USB detection) and go to the `Receive` dialog, here you enter a label for the observers of the incoming transaction and click `Continue`.
+In the receive dialog, previously generated addresses (which haven't received any funds yet) can be viewed and copied at `Unused Receive Addresses`.
 Read more [here](/using-wasabi/ColdWasabi.md).
 :::
 
