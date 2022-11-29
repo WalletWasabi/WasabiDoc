@@ -1208,10 +1208,12 @@ Read more [here](/using-wasabi/ColdWasabi.md#connecting-via-usb)
 :::details
 ### How can I build and export a transaction to ColdCard?
 
-In the Wallet Explorer on the right side of the GUI, select `YourWallet>Advanced>Build Transaction`.
-This brings up the `Build Transaction` tab where you can specify the address, amount of bitcoin and coins to use.
-Then by clicking `Build Transaction` a new tab will open containing the raw transaction data, here you click `Export Binary PSBT` to save the partially signed bitcoin transaction (PSBT) to a file.
-This file should be moved to the MicroSD card that you can then insert in the ColdCard for manual verification and signing.
+Go to `Send` and enter the destination address and amount.
+Click `Continue`.
+Enter the label of whom you are sending to.
+At the Preview Transaction screen, check that everything is correct.
+Click on `Save PSBT file` and save the file to the micro SD Card.
+You can then insert the MicroSD card (containing the PSBT) in the Coldcard for manual verification and signing.
 Read more [here](/using-wasabi/ColdWasabi.md#connecting-via-sd-card).
 :::
 
