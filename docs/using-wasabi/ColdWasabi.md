@@ -122,23 +122,20 @@ The private key corresponding to this address is on the hardware wallet.
 
 #### Sending bitcoin
  
-In the right-side `Wallet Explorer`, click on `Advanced` of your hardware wallet, then on `Build Transaction`.
-This shows you a tab similar to the `Send` tab.
-You select coins, specify the destination address, payment amount and mining fee.
-Then you click the `Build Transaction` button, and it will generate an unsigned Bitcoin transaction.
-Click on `Export Binary PSBT`, select the SD card and click `OK`.
-
-![Wasabi Wallet export PSBT](/PSBTUnsigned.png "Wasabi Wallet Partial Signed Bitcoin Transaction")
-
-Remove the SD card from the computer and put it into your Coldcard.
-Then, in the Coldcard main menu click on `Ready to Sign`.
-Verify the transaction details shown on the Coldcard, and approve the transaction for signing.
-After this, remove the micro SD card from Coldcard and insert it into the computer.
-In Wasabi, click on the top menu `Tools` and then `Transaction Broadcaster`.
-In this tab, select `Import Transaction`, lookup the SD card with the final signed transaction, and click `OK`.
-Then click `Broadcast Transaction`, and Wasabi will privately announce it to the Bitcoin network over Tor.
-
-![Wasabi Wallet Transaction Broadcaster](/PSBTBroadcast.png "Wasabi Wallet Transaction Broadcaster")
+Sending bitcoin airgapped works as follows:
+1. Go to `Send`
+2. Enter the amount and destination address
+3. Click `Continue`
+4. At the Preview Transaction screen, check that everything is correct.
+5. Click `Save PSBT file`, and save the file on the micro SD card
+6. Remove the micro SD card from the computer and put it into your Coldcard.
+7. On the Coldcard, click `Ready to Sign`.
+8. Verify the transaction details shown on the Coldcard, and approve the transaction for signing.
+9. Remove the micro SD card from Coldcard and insert it into the computer.
+10. In Wasabi, click on `Broadcaster` (in the search bar).
+11. Select `Import Transaction`.
+12. Select the final signed transaction, which looks like this `xxx-final.txn`
+13. Broadcast the transaction
 
 ## Cold-Wasabi protocol
 
