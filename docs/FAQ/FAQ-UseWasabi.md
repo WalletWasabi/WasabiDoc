@@ -1056,25 +1056,31 @@ Read more [here](/using-wasabi/ColdWasabi.md#connecting-via-usb)
 
 ### How can I build and export a transaction to ColdCard?
 
-In the Wallet Explorer on the right side of the GUI, select `YourWallet>Advanced>Build Transaction`.
-This brings up the `Build Transaction` tab where you can specify the address, amount of bitcoin and coins to use.
-Then by clicking `Build Transaction` a new tab will open containing the raw transaction data, here you click `Export Binary PSBT` to save the partially signed bitcoin transaction (PSBT) to a file.
-This file should be moved to the MicroSD card that you can then insert in the ColdCard for manual verification and signing.
+Go to `Send` and enter the destination address and amount.
+Click `Continue`.
+Enter the label of whom you are sending to.
+At the Preview Transaction screen, check that everything is correct.
+Click on `Save PSBT file` and save the file to the MicroSD card.
+You can then insert the MicroSD card (containing the PSBT) in the Coldcard for manual verification and signing.
 Read more [here](/using-wasabi/ColdWasabi.md#connecting-via-sd-card).
 
 ### How can I sign a transaction on the ColdCard?
 
 On the ColdCard (Mk2, firmware 2.1.1 and up) you enter the PIN code to unlock the hardware wallet and press `> Ready To Sign` with the MicroSD card containing the previously generated transaction or PSBT-file.
 Verify the address and amount and the ColdCard will then create a signed.psbt and final.txn file on the MicroSD card.
-The finalized transaction (`xxx-final.txn`) can now be broadcast by Wasabi Wallet with the `Broadcast Transaction` tool, or even a radio or satellite dish if someone is listening!
+The finalized transaction (`xxx-final.txn`) can now be broadcast by Wasabi Wallet with the `Broadcaster` tool, or even a radio or satellite dish if someone is listening!
 Read more [here](/using-wasabi/ColdWasabi.md#connecting-via-sd-card).
 
 ### How can I import and broadcast a final transaction from ColdCard?
 
-In the top menu bar, go to `Tools > Broadcast Transaction` and in this tab click `Import Transaction`, now you can select the previously finalized (and signed) transaction file from the MicroSD card.
+In the top search bar, go to `Broadcaster` and then select `Import Transaction`, now you can select the previously finalized (and signed) transaction file from the MicroSD card.
 If this fails you can manually type the path to this file in Wasabi Wallet to load the transaction.
 Now click `Broadcast Transaction` to send it off over Tor to a random Bitcoin node so it can flood over to the miners for confirmation in a block.
 Read more [here](/using-wasabi/ColdWasabi.md#connecting-via-sd-card).
+
+:::tip Enable PSBT workflow
+If this setting is enabled, a `Broadcast` button will be displayed next to the `Send` button, for an easier workflow.
+:::
 
 ### Can I coinjoin bitcoins on my hardware wallet?
 
