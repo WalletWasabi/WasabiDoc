@@ -81,11 +81,11 @@ The address will now be displayed on the hardware wallet, check that the address
 
 Only when you want to [send bitcoin](/using-wasabi/Send.md) you need to connect the device over USB again.
 
-1. Click the `Send` button
-2. Enter the `Amount` & `Address`.
+1. Click the `Send` button.
+2. Enter the amount and destination address.
 3. Enter the label of whom you are sending to.
-4. At `Preview Transaction`, check if everything is correct.
-5. Click `Send Now`
+4. At the `Preview Transaction` screen, check that everything is correct.
+5. Click `Send Now`.
 6. Connect the hardware wallet & unlock it.
 7. Check on the hardware wallet that everything is correct.
 8. Confirm on the hardware wallet.
@@ -102,7 +102,7 @@ For more details see the [Coldcard documentation](https://coldcard.com/docs/micr
 #### Import the skeleton wallet
 
 Power your Coldcard on a power bank or electricity socket, then unlock it with your pin.
-Put in a Micro SD card and go to `Advanced > MicroSD Card > Export Wallet > Wasabi Wallet`.
+Put in a MicroSD card and go to `Advanced > MicroSD Card > Export Wallet > Wasabi Wallet`.
 This will write the public keys, wallet fingerprint, derivation path and other metadata to a skeleton file `new-wallet.json`.
 
 :::warning Protect your public keys!
@@ -122,23 +122,25 @@ The private key corresponding to this address is on the hardware wallet.
 
 #### Sending bitcoin
  
-In the right-side `Wallet Explorer`, click on `Advanced` of your hardware wallet, then on `Build Transaction`.
-This shows you a tab similar to the `Send` tab.
-You select coins, specify the destination address, payment amount and mining fee.
-Then you click the `Build Transaction` button, and it will generate an unsigned Bitcoin transaction.
-Click on `Export Binary PSBT`, select the SD card and click `OK`.
+Sending bitcoin airgapped works as follows:
 
-![Wasabi Wallet export PSBT](/PSBTUnsigned.png "Wasabi Wallet Partial Signed Bitcoin Transaction")
+1. Click the `Send` button.
+2. Enter the amount and destination address.
+3. Enter the label of whom you are sending to.
+4. At the `Preview Transaction` screen, check that everything is correct.
+5. Click `Save PSBT file`, and save the file on the MicroSD card.
+6. Remove the MicroSD card from the computer and put it into your Coldcard.
+7. On the Coldcard, click `Ready to Sign`.
+8. Verify the transaction details shown on the Coldcard, and approve to sign the transaction.
+9. Remove the MicroSD card from Coldcard and insert it into the computer.
+10. In Wasabi, click on `Broadcaster` (in the search bar).
+11. Select `Import Transaction`.
+12. Select the final signed transaction, which looks like this `xxx-final.txn`.
+13. Broadcast the transaction.
 
-Remove the SD card from the computer and put it into your Coldcard.
-Then, in the Coldcard main menu click on `Ready to Sign`.
-Verify the transaction details shown on the Coldcard, and approve the transaction for signing.
-After this, remove the micro SD card from Coldcard and insert it into the computer.
-In Wasabi, click on the top menu `Tools` and then `Transaction Broadcaster`.
-In this tab, select `Import Transaction`, lookup the SD card with the final signed transaction, and click `OK`.
-Then click `Broadcast Transaction`, and Wasabi will privately announce it to the Bitcoin network over Tor.
-
-![Wasabi Wallet Transaction Broadcaster](/PSBTBroadcast.png "Wasabi Wallet Transaction Broadcaster")
+:::tip Enable PSBT workflow in the settings
+If enabled, a Broadcast button will appear next to the `Send` button for an easier workflow.
+:::
 
 ## Cold-Wasabi protocol
 
