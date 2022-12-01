@@ -144,25 +144,23 @@ If enabled, a Broadcast button will appear next to the `Send` button for an easi
 
 ## Cold-Wasabi protocol
 
-This is how you can safely eat cold Wasabi, or store your coins on a hardware wallet after one or more rounds of CoinJoin using Wasabi Wallet.
-Because you cannot do CoinJoin with the private keys on the hardware wallet, you will need to generate and load two different wallets in Wasabi.
-A 'hot' (CoinJoin) and a 'cold' (Storage) wallet will both be running in parallel, label them accordingly so you don't mix them up.
+This is how you can safely eat cold Wasabi, or store your coins on a hardware wallet after coinjoining with Wasabi Wallet.
+Because you cannot do coinjoin with the private keys on the hardware wallet, you will need to generate and load two different wallets in Wasabi.
+A 'hot' (coinjoin) and a 'cold' (Storage) wallet will both be running in parallel, label them accordingly so you don't mix them up.
 
 ## GUI tutorial
 
-### CoinJoin on the hot Wasabi
+### Coinjoin on the hot Wasabi
 
 :::tip First
 You should make your existing coins private.
-It is useful to generate a complete new hot wallet for this, so as to keep the CoinJoin transaction history separate from other wallets.
+It is useful to generate a complete new hot wallet for this, so as to keep the coinjoin transaction history separate from other wallets.
 :::
 
 1. [Generate a new hot-Wasabi Wallet](/using-wasabi/WalletGeneration.md).
-2. Open the [Receive](/using-wasabi/Receive.md) tab to get a new address.
+2. Open the [Receive](/using-wasabi/Receive.md) dialog to get a new address.
 3. From a pre-existing wallet, send bitcoin into this Hot-Wasabi Wallet.
-4. In the [CoinJoin](/using-wasabi/CoinJoin.md) tab, select the relevant coins, enqueue them, and wait for the CoinJoin to be done.
-
-Remix often to gain a high anonymity set.
+4. Start the automatic [CoinJoin](/using-wasabi/CoinJoin.md) process and wait for the coinjoin to be done (i.e. privacy progress 100%).
 
 ### Set up your cold-Wasabi
 
