@@ -192,9 +192,9 @@ Wait some time in-between sending them, so that timing analysis becomes more dif
 You can at any time spend the bitcoin from the cold-Wasabi.
 :::
 
-12. Connect your hardware wallet to the computer.
-13. Load the cold Wasabi wallet.
-14. Go to the `Send` dialog, enter the amount and destination, then sign the transaction with the hardware wallet.
+11. Connect your hardware wallet to the computer.
+12. Load the cold Wasabi wallet.
+13. Go to the `Send` dialog, enter the amount and the destination address, then sign the transaction with the hardware wallet.
 
 :::tip Success!
 おめでとうございます!
