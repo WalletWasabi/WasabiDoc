@@ -327,7 +327,7 @@ For especially old wallets, it might be worth considering to generate a new wall
 You can rescan an existing Wasabi wallet by editing the `Height` in the wallet file.
 
 - Start Wasabi.
-- Type `Wallet Folder` in the search bar.
+- Type `Wallet Folder` in the search bar and open it.
 - Close Wasabi.
 - Open the wallet file in your favorite text editor.
 - Set the `Height` to 0.
