@@ -660,7 +660,7 @@ Wasabi will automatically build a transaction with the best combination of the s
 If the user has coins with the same label as the recipient of the outgoing transaction (coins received in the past from the same recipient), then Wasabi automatically selects these coins.
 If they are not enough, then Wasabi will also select private and semi private coins if necessary.
 If there are not enough private and semi-private coins for this transaction, then Wasabi will select non-private coins also.
-Which non-private coins will be used can be selected by the user, based on the labelling system.
+The user can change which non-private coins will be used, based on the labelling system.
 :::
 
 :::details
