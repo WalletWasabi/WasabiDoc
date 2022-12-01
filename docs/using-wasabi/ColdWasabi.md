@@ -144,25 +144,23 @@ If enabled, a Broadcast button will appear next to the `Send` button for an easi
 
 ## Cold-Wasabi protocol
 
-This is how you can safely eat cold Wasabi, or store your coins on a hardware wallet after one or more rounds of CoinJoin using Wasabi Wallet.
-Because you cannot do CoinJoin with the private keys on the hardware wallet, you will need to generate and load two different wallets in Wasabi.
-A 'hot' (CoinJoin) and a 'cold' (Storage) wallet will both be running in parallel, label them accordingly so you don't mix them up.
+This is how you can safely eat cold Wasabi, or store your coins on a hardware wallet after coinjoining with Wasabi Wallet.
+Because you cannot do coinjoin with the private keys on the hardware wallet, you will need to generate and load two different wallets in Wasabi.
+A 'hot' (coinjoin) and a 'cold' (storage) wallet will both be running in parallel, label them accordingly so you don't mix them up.
 
 ## GUI tutorial
 
-### CoinJoin on the hot Wasabi
+### Coinjoin on the hot Wasabi
 
 :::tip First
 You should make your existing coins private.
-It is useful to generate a complete new hot wallet for this, so as to keep the CoinJoin transaction history separate from other wallets.
+It is useful to generate a complete new hot wallet for this, so as to keep the coinjoin transaction history separate from other wallets.
 :::
 
 1. [Generate a new hot-Wasabi Wallet](/using-wasabi/WalletGeneration.md).
-2. Open the [Receive](/using-wasabi/Receive.md) tab to get a new address.
-3. From a pre-existing wallet, send bitcoin into this Hot-Wasabi Wallet.
-4. In the [CoinJoin](/using-wasabi/CoinJoin.md) tab, select the relevant coins, enqueue them, and wait for the CoinJoin to be done.
-
-Remix often to gain a high anonymity set.
+2. Open the [Receive](/using-wasabi/Receive.md) dialog to get a new address.
+3. Send bitcoin into this Hot-Wasabi Wallet.
+4. Start the automatic [coinjoin](/using-wasabi/CoinJoin.md) process and wait for the coinjoin to be done (i.e. privacy progress 100%).
 
 ### Set up your cold-Wasabi
 
@@ -170,7 +168,7 @@ Remix often to gain a high anonymity set.
 In order to separate these new private coins, you should generate a fresh wallet on your hardware device.
 :::
 
-5. Generate and back up a new set of keys on your hardware wallet.
+5. Generate a new set of keys on your hardware wallet and make a backup.
 6. Load your hardware wallet device to Wasabi, either via USB or SD card.
 7. Label and generate a receive address for the hardware wallet.
 For the first setup, you need to connect the hardware wallet to the computer that runs Wasabi, afterwards, you can generate receive addresses without the device being connected.
