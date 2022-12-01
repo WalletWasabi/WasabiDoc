@@ -586,7 +586,7 @@ No. That is currently not possible.
 :::
 
 :::details
-### Does Wasabi support RBF?
+### Does Wasabi support sending RBF?
 
 All _send_ transactions signal RBF by default.
 However, it is not yet possbile in the Wasabi GUI to replace an RBF transaction by another one paying a higher fee rate.
