@@ -159,7 +159,7 @@ It is useful to generate a complete new hot wallet for this, so as to keep the c
 
 1. [Generate a new hot-Wasabi Wallet](/using-wasabi/WalletGeneration.md).
 2. Open the [Receive](/using-wasabi/Receive.md) dialog to get a new address.
-3. From a pre-existing wallet, send bitcoin into this Hot-Wasabi Wallet.
+3. Send bitcoin into this Hot-Wasabi Wallet.
 4. Start the automatic [CoinJoin](/using-wasabi/CoinJoin.md) process and wait for the coinjoin to be done (i.e. privacy progress 100%).
 
 ### Set up your cold-Wasabi
