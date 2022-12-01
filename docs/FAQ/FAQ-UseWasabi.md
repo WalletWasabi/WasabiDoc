@@ -321,14 +321,16 @@ The speed and reliability of the loading process is constantly improved.
 For especially old wallets, it might be worth considering to generate a new wallet with a shorter transaction history.
 :::
 
-:::details
+::::details
 ### How do I resync (rescan) my wallet?
 
-You can rescan an existing Wasabi wallet by editing the wallet file.
-Open the wallet folder by typing Wallet Folder in the search bar.
-Then, open the wallet file in your favourite text editor.
-Close Wasabi and edit the `Height` setting in the wallet file.
-Set it to `0` for a full rescan.
+You can rescan an existing Wasabi wallet by editing the `Height` in the wallet file.
+
+- Start Wasabi.
+- Type `Wallet Folder` in the search bar.
+- Close Wasabi.
+- Open the wallet file in your favorite text editor.
+- Set the `Height` to 0.
 
 ```json
 { // only relevant parts are shown
@@ -339,9 +341,15 @@ Set it to `0` for a full rescan.
   }
 }
 ```
-Save the file with the changes and then start Wasabi again, open the wallet and wait for the synchronization.
-You should see all your transactions and the correct balance.
+
+- Save the file with the changes.
+- Start Wasabi again, open your wallet and wait for the synchronization.
+ 
+ :::tip
+Changing the Height to 0 will trigger a full resync of your wallet, and that can take some time depending on the size of your wallet (how many transactions it had).
+For example if the problem happened 3 days ago then you can go back a week or so to resync the wallet: `new_height = current_height - (7 * 144)`
 :::
+::::
 
 :::details
 ### Can Wasabi work with a pruned bitcoin node?
