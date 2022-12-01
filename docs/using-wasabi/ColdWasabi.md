@@ -177,14 +177,12 @@ For the first setup, you need to connect the hardware wallet to the computer tha
 ### Send bitcoins from hot to cold Wasabi
 
 :::tip Third
-In order to keep the mixed coins separate and without revealing that you own all of them, send the <img src="/ShieldCheckmark.png" alt="Wasabi Wallet green checkmark shield anonymity set" title="Wasabi Wallet green checkmark shield anonymity set" class="shield" /> coins without consolidating them.
+When your coins are private, it is a good practice to send them out in multiple batches in order to not consolidate all your coins.
 Wait some time in-between sending them, so that timing analysis becomes more difficult.
 :::
 
-9. Go to the hot-Wasabi `Send` tab, and select the coins with high anonymity set.
-Do not consolidate your <img src="/ShieldCheckmark.png" alt="Wasabi Wallet green checkmark shield anonymity set" title="Wasabi Wallet green checkmark shield anonymity set" class="shield" /> coins, but send them in small, time-staggered batches.
+9. Go to the hot-Wasabi `Send` dialog and enter the amount.
 10. Paste the cold-Wasabi address.
-11. Click the `MAX` button to send the whole mixed coin without generating change.
 
 ### Send bitcoins from cold Wasabi
 
@@ -192,10 +190,9 @@ Do not consolidate your <img src="/ShieldCheckmark.png" alt="Wasabi Wallet green
 You can at any time spend the bitcoin from the cold-Wasabi.
 :::
 
-12. Connect your hardware wallet to the computer.
-13. Load the cold Wasabi wallet.
-14. Go to the `Send` tab, select the coins and destination, then sign the transaction with the hardware wallet.
-Alternatively, go to the `Build Transaction` tab and do the Coldcard SD card workflow.
+11. Connect your hardware wallet to the computer.
+12. Load the cold Wasabi wallet.
+13. Go to the `Send` dialog, enter the amount and the destination address, then sign the transaction with the hardware wallet.
 
 :::tip Success!
 おめでとうございます!
@@ -204,7 +201,7 @@ You are now eating Cold Wasabi!
 :::
 
 :::warning
-The anonymity set is tied to the wallet that you used to CoinJoin, if you send a mixed coin to another Wasabi Wallet (in this case your hardware wallet), it will have an anonymity set 1 (red) because this wallet doesn't know that the coin was coinjoined.
+The anonymity score is tied to the wallet that you used to coinjoin, if you send a mixed coin to another Wasabi Wallet (in this case your hardware wallet), it will have an anonymity score of 1 (and will be marked as non-private) because this wallet doesn't know that the coin was coinjoined.
 
-You should use a meaningful label when you generate a receive address in your hardware wallet, e.g. "Myself 100 anonset" (something that reminds you that you got this utxo from your Wasabi Wallet and it was coinjoined).
+You should use a meaningful label when you generate a receive address in your hardware wallet, e.g. "Myself coinjoin private" (something that reminds you that you got this utxo from your Wasabi Wallet and it was coinjoined).
 :::
