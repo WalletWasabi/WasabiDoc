@@ -692,6 +692,15 @@ There is no possiblity to enter a bitcoin amount or receive change.
 ::::
 
 :::details
+### How does Wasabi select which coins to send?
+
+If the user has coins with the same label as the recipient of the outgoing transaction (coins received in the past from the same recipient), then Wasabi automatically selects these coins.
+If they are not enough, then Wasabi will also select private and semi private coins if necessary.
+If there are not enough private and semi-private coins for this transaction, then Wasabi will select non-private coins also.
+The user can change which non-private coins will be used, based on the labelling system.
+:::
+
+:::details
 ### How is the transaction broadcast?
 
 Wasabi connects only to Bitcoin nodes that provide a Tor onion service, so end-to-end encryption is enforced between the peers, without involving any exit node.
