@@ -657,7 +657,8 @@ Wasabi will automatically build a transaction with the best combination of the s
 :::details
 ### How does Wasabi select which coins to send?
 
-Wasabi automatically first selects the private coins. 
+If there is a coin with the same label (as the recipient label of the outgoing transaction), then Wasabi automatically first selects this coin.
+If this is not the case, or the labelled coin is not enough, then Wasabi will select private coins.
 If there are no/not enough private coins for this transaction, then Wasabi will select private coins + non-private coins.
 Which non-private coins will be used can be selected by the user, based on the labelling system.
 :::
