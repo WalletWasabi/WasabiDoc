@@ -845,11 +845,11 @@ With Wasabi we are trying to do lower estimations, rather than higher ones.
 ### What is the difference between anonset and anonscore?
 
 The anonset and anonscore have minimal differences.
-The anonscore evolved into existence from the anonset, but with minimal changes, so they can be considered the same thing.
-What differs is the kind of coinjoins they are applied to, where anonset was for Wasabi 1 and anonscore for current Wasabi 2.
+The anonscore evolved into existence from the anonset, but with minimal changes, so they can be considered roughly the same thing.
+What differs is the kind of coinjoins they are applied to, where anonset was for Wasabi 1 and anonscore is for current Wasabi 2.
 In Wasabi 1 coinjoins there are unequal inputs, some equal outputs, and change coins. 
-In Wasabi 2 coinjoins there are many equal inputs, equal outputs, and (sometimes) some unique value outputs, but that does not mean these are a change coin. 
-In fact most of the times it's not a change, but a well mixed coin.
+In Wasabi 2 coinjoins there are many equal inputs, equal outputs, and (sometimes) some unique value outputs, but that does not mean that these unique value outputs are a change coin. 
+In fact most of the times it's not a change, but a private well mixed coin.
 :::
 
 :::details
