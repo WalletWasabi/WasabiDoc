@@ -8,6 +8,26 @@ const themeColor = "#211b24"
 export default {
     title: "Wasabi Docs",
     description: "An archive of knowledge about Wasabi Wallet, an open-source, non-custodial and privacy-focused Bitcoin wallet for desktop.",
+    extendsMarkdown: (md) => {
+
+        const render = md.renderer.render;
+
+        const variables = {
+            currentVersion: '2.0.2',
+            dotnetVersion: '6.0',
+            zksnacksPublicKeyFingerprint: '6FB3 872B 5D42 292F 5992 0797 8563 4832 8949 861E'
+        }
+
+        md.renderer.render = (...args) => {
+            // Render markdown.
+            const html = render.call(md, ...args);
+            // Replace variables.
+            let modifiedHtml = Object.keys(variables)
+                .reduce((result, variable) => result.replaceAll('${'+ variable +'}', variables[variable]), html);
+
+            return modifiedHtml;
+        };
+    },
     theme: defaultTheme({
         logo: "/Logo_without_text_dark.png",
         logoDark: "/Logo_without_text.png",
