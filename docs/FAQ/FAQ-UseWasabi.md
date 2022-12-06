@@ -700,9 +700,9 @@ When sending, the wallet automatically selects the private funds first.
 
 For example:
 
-When `PRIVATE` is 0.00787086 BTC, that means that I can send less than that privately.
+When `PRIVATE` is 0.01120153 BTC, that means that I can send less than that privately.
 Even when the `Privacy Progress` is below 100%.
-So when sending, less than 0.00787086 BTC (to cover the mining fees) should be entered as the `Amount` in order to only use the private funds.
+So when sending, less than 0.01120153 BTC (to cover the mining fees) should be entered as the `Amount` in order to only use the private funds.
 
 ![Wasabi Wallet Privacy Progress Tile](/PrivacyProgressTile.png "Wasabi Wallet Privacy Progress Tile")
 
@@ -1184,11 +1184,12 @@ Coinjoin transactions are indicated with a shield icon:
 ![History Coinjoin](/HistoryCoinjoin.png "History Coinjoin")
 
 When the wallet has made multiple coinjoins, the coinjoins will be clustered.
+Coinjoin clusters are indicated with a double shield icon.
 To see the individual coinjoins, the cluster can be expanded by clicking the arrow on the left:
 
 ![History Coinjoin Expanded](/HistoryCoinjoinExpanded.png "History Coinjoin Expanded")
 
-A coinjoin is a payment within the same wallet, thus it only shows the coordination and mining fee leaving the wallet.
+A coinjoin is a payment within the same wallet, thus it only shows the coordination fee (if any) and mining fee leaving the wallet.
 
 ### Can I sort the history items?
 
