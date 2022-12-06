@@ -227,14 +227,6 @@ export default {
                 ]
             }]
         },
-        chainWebpack(config) {
-            return config.module
-                .rule('md')
-                .test(/\.md$/)
-                .use(resolve(__dirname, './variables'))
-                .loader(resolve(__dirname, './variables'))
-                .end()
-        },
     }),
     plugins: [
         "@vuepress/back-to-top", ["container", {
