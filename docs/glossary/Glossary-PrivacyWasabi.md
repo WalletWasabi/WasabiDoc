@@ -25,6 +25,11 @@ The anonymity set is effectively the size of the group you are hiding in during 
 It's the quantity of equal value outputs of one CoinJoin transaction.
 Read more: [What is the anonymity set?](/FAQ/FAQ-UseWasabi.md#what-is-the-anonymity-set)
 
+### Anonymity Score (anonscore)
+
+Anonymity score is a new way to estimate the entropy level of a UTXO in an unequal-but-highly-composable output value coinjoin.
+The anonymity score is a metric to help the wallet decide when it's time to stop the coinjoining process.
+
 ### Backend
 
 [The part of a software system that is not usually visible or accessible to a user of that system](https://www.merriam-webster.com/dictionary/back%20end).
