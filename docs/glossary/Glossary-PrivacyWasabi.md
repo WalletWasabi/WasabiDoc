@@ -24,18 +24,18 @@ Read more: [Address reuse](/why-wasabi/AddressReuse.md)
 :::
 
 :::details
+### Anonymity Score (anonscore)
+
+Anonymity score is a new way to estimate the entropy level of a UTXO in an unequal-but-highly-composable output value coinjoin.
+The anonymity score is a metric to help the wallet decide when it's time to stop the coinjoining process.
+:::
+
+:::details
 ### Anonymity Set (anonset)
 
 The anonymity set is effectively the size of the group you are hiding in during a CoinJoin.
 It's the quantity of equal value outputs of one CoinJoin transaction.
 Read more: [What is the anonymity set?](/FAQ/FAQ-UseWasabi.md#what-is-the-anonymity-set)
-:::
-
-:::details
-### Anonymity Score (anonscore)
-
-Anonymity score is a new way to estimate the entropy level of a UTXO in an unequal-but-highly-composable output value coinjoin.
-The anonymity score is a metric to help the wallet decide when it's time to stop the coinjoining process.
 :::
 
 :::details
