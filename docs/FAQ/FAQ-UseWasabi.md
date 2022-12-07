@@ -895,8 +895,7 @@ For example, if the outputs are [1, 1, 1, 1, 0.5, 0.5, 0.5, 0.5, 0.4, 0.4, 0.2, 
 :::details
 ### What is the difference between anonymity set and anonymity score?
 
-The anonset and anonscore have minimal differences.
-The anonscore evolved into existence from the anonset, but with minimal changes, so they can be considered roughly the same thing.
+The anonscore evolved into existence from the anonset, but with some differences.
 What differs is the kind of coinjoins they are applied to, where anonset was for Wasabi 1 and anonscore is for current Wasabi 2.
 In Wasabi 1 coinjoins there are unequal inputs, some equal outputs, and change coins. 
 In Wasabi 2 coinjoins there are many equal inputs, many equal outputs, and (sometimes) some unique value outputs, but that does not mean that these unique value outputs are change coins. 
