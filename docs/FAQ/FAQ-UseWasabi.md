@@ -321,6 +321,39 @@ The speed and reliability of the loading process is constantly improved.
 For especially old wallets, it might be worth considering to generate a new wallet with a shorter transaction history.
 :::
 
+::::details
+### How do I resync (rescan) my wallet?
+
+You can rescan an existing Wasabi wallet by editing the `Height` in the wallet file.
+
+- Start Wasabi.
+- Type `Wallet Folder` in the search bar and open it.
+- Close Wasabi.
+- Open the wallet file in your favorite text editor.
+- Set the `Height` to 0.
+
+```json
+{ // only relevant parts are shown
+  "AccountKeyPath": "84'/0'/0'",
+  "BlockchainState": {
+    "Network": "Main",
+    "Height": "0"
+  }
+}
+```
+
+- Save the file with the changes.
+- Start Wasabi again, open your wallet and wait for the synchronization.
+ 
+ :::tip
+Changing the Height to 0 will trigger a full resync of your wallet, and that can take some time depending on the size of your wallet (how many transactions it had).
+
+For example if the problem happened 3 days ago then you can go back a week or so to resync the wallet:
+
+`new_height = current_height - (7 * 144)`
+:::
+::::
+
 :::details
 ### Can Wasabi work with a pruned bitcoin node?
 
@@ -586,7 +619,7 @@ No. That is currently not possible.
 :::
 
 :::details
-### Does Wasabi support RBF?
+### Does Wasabi support sending RBF?
 
 All _send_ transactions signal RBF by default.
 However, it is not yet possbile in the Wasabi GUI to replace an RBF transaction by another one paying a higher fee rate.
@@ -657,6 +690,15 @@ You can only send coins in full.
 There is no possiblity to enter a bitcoin amount or receive change.
 :::
 ::::
+
+:::details
+### How does Wasabi select which coins to send?
+
+If the user has coins with the same label as the recipient of the outgoing transaction (coins received in the past from the same recipient), then Wasabi automatically selects these coins.
+If they are not enough, then Wasabi will also select private and semi private coins if necessary.
+If there are not enough private and semi-private coins for this transaction, then Wasabi will select non-private coins also.
+The user can change which non-private coins will be used, based on the labelling system.
+:::
 
 :::details
 ### How is the transaction broadcast?
@@ -765,9 +807,9 @@ When sending, the wallet automatically selects the private funds first.
 
 For example:
 
-When `PRIVATE` is 0.00787086 BTC, that means that I can send less than that privately.
+When `PRIVATE` is 0.01120153 BTC, that means that I can send less than that privately.
 Even when the `Privacy Progress` is below 100%.
-So when sending, less than 0.00787086 BTC (to cover the mining fees) should be entered as the `Amount` in order to only use the private funds.
+So when sending, less than 0.01120153 BTC (to cover the mining fees) should be entered as the `Amount` in order to only use the private funds.
 
 ![Wasabi Wallet Privacy Progress Tile](/PrivacyProgressTile.png "Wasabi Wallet Privacy Progress Tile")
 :::
@@ -839,6 +881,15 @@ All an observer knows is that a specific anon set output coin is owned by one of
 
 Your Wasabi software has limited information on what the actually achieved anonymity set is, so the anonymity set that the software presents you is just an estimation, not an accurate value.
 With Wasabi we are trying to do lower estimations, rather than higher ones.
+:::
+
+:::details
+### What is the anonymity score?
+
+The anonymity score is a way to estimate the level of entropy of a UTXO in an unequal-but-highly-composable output value coinjoin.
+
+It is different than anonymity set. 
+For example, if the outputs are [1, 1, 1, 1, 0.5, 0.5, 0.5, 0.5, 0.4, 0.4, 0.2, 0.2, 0.2, 0.2, 0.2, 0.1, 0.1, 0.1, 0.1, 0.1] then, even when each of those 1s have anonscore 4, there are still lots of combinations of outputs that sum up to 1, so the anonset should be much higher but the anonscore is extremely conservative and takes into account many other things.
 :::
 
 :::details
@@ -1359,11 +1410,12 @@ Coinjoin transactions are indicated with a shield icon:
 ![History Coinjoin](/HistoryCoinjoin.png "History Coinjoin")
 
 When the wallet has made multiple coinjoins, the coinjoins will be clustered.
+Coinjoin clusters are indicated with a double shield icon.
 To see the individual coinjoins, the cluster can be expanded by clicking the arrow on the left:
 
 ![History Coinjoin Expanded](/HistoryCoinjoinExpanded.png "History Coinjoin Expanded")
 
-A coinjoin is a payment within the same wallet, thus it only shows the coordination and mining fee leaving the wallet.
+A coinjoin is a payment within the same wallet, thus it only shows the coordination fee (if any) and mining fee leaving the wallet.
 :::
 
 :::details
