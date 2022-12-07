@@ -884,6 +884,15 @@ With Wasabi we are trying to do lower estimations, rather than higher ones.
 :::
 
 :::details
+### What is the anonymity score?
+
+The anonymity score is a way to estimate the level of entropy of a UTXO in an unequal-but-highly-composable output value coinjoin.
+
+It is different than anonymity set. 
+For example, if the outputs are [1, 1, 1, 1, 0.5, 0.5, 0.5, 0.5, 0.4, 0.4, 0.2, 0.2, 0.2, 0.2, 0.2, 0.1, 0.1, 0.1, 0.1, 0.1] then, even when each of those 1s have anonscore 4, there are still lots of combinations of outputs that sum up to 1, so the anonset should be much higher but the anonscore is extremely conservative and takes into account many other things.
+:::
+
+:::details
 ### What are the equal denominations created in a coinjoin round?
 
 The standard denominations are:
