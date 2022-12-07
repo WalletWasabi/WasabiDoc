@@ -19,16 +19,16 @@ E.g. "Lightning Network is coming to Wasabi in #twoweeks"
 Address reuse refers to the use of the same address for multiple transactions, this is very bad for privacy.
 Read more: [Address reuse](/why-wasabi/AddressReuse.md)
 
+### Anonymity Score (anonscore)
+
+Anonymity score is a new way to estimate the entropy level of a UTXO in an unequal-but-highly-composable output value coinjoin.
+The anonymity score is a metric to help the wallet decide when it's time to stop the coinjoining process.
+
 ### Anonymity Set (anonset)
 
 The anonymity set is effectively the size of the group you are hiding in during a CoinJoin.
 It's the quantity of equal value outputs of one CoinJoin transaction.
 Read more: [What is the anonymity set?](/FAQ/FAQ-UseWasabi.md#what-is-the-anonymity-set)
-
-### Anonymity Score (anonscore)
-
-Anonymity score is a new way to estimate the entropy level of a UTXO in an unequal-but-highly-composable output value coinjoin.
-The anonymity score is a metric to help the wallet decide when it's time to stop the coinjoining process.
 
 ### Backend
 
