@@ -101,6 +101,9 @@ And the index of the video of a playlist (e.g. starts the third video):
 [![Title of the playlist](https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg)](https://youtu.be/VIDEO_ID?list=PLAYLIST_ID)
 ```
 
+If the image doesn't appear, that usually happens with older videos, use hqdefault.jpg instead of maxresdefault.jpg
+
+
 ## Text Highlights
 
 There are three types of text highlights that can be used to display different colored boxes.
