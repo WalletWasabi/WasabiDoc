@@ -69,8 +69,6 @@ Select one and click `Continue`.
 
 ![Wasabi Wallet coinjoin strategies](/CoinjoinStrategy.png "Wasabi Wallet coinjoin strategies")
 
-![Wasabi Wallet recovery words](/AddWalletRecoveryWords.png "Wasabi Wallet recovery words")
-
 ### Can I rename my Wallet?
 
 Yes you can.
@@ -878,16 +876,6 @@ You can follow these links to have a full explanation on that:
 5. [Broadcasting phase](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-broadcasting-phase)
 
 The backend server also sends you information about the current mempool for fee estimation as well as the US Dollar exchange rate.
-
-### How long does it take to mix my coins?
-
-It depends on many things, the longest period is the wait for all peers to register their coins.
-Every round has a goal of 100 anonymity set.
-Wasabi is developed in a way that there's a round at least once every one hour.
-If the 100 peers registered earlier, then there can be many rounds per hour.
-When all peers are registered, then the signing phase is done within a couple of seconds.
-
-Summing up: the faster peers register in the CoinJoins, the faster the mixes are.
 
 ### What is the address of the coordinator?
 
