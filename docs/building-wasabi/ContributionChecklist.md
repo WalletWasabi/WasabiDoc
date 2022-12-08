@@ -9,17 +9,15 @@
 
 So you're interested in contributing to Wasabi - welcome!
 
-This checklist will get you plugged in and productive as quickly as possible.
-
 :::tip Embrace the open-source crypto-anarchy!
 No one is here to tell you what to do, and it is not required to work on an existing issue to contribute to Wasabi.
 Contributors are free to work on their own forked versions on whatever they want, however they wish and without any permission from anyone.
 With that being said, in order to maximize the usefulness/impact of your work, it's a good idea to consult with other Wasabikas via Slack, GitHub, or other communication channels before setting out on any serious contribution effort.
 :::
 
-[[toc]]
+This checklist will get you plugged in and productive as quickly as possible.
 
----
+[[toc]]
 
 ## Who is a contributor?
 

@@ -9,8 +9,6 @@
 
 [[toc]]
 
----
-
 ## Problem
 
 ### Public transaction history

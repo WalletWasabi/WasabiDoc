@@ -7,14 +7,12 @@
 
 # Wallet Load
 
-To load a wallet and start the synchonization process, you need to open your wallet by typing in the password.
-The first time synchronization of your wallet might take some time depending on the size of its history.
-
 [[toc]]
 
----
-
 ## Loading wallet step-by-step
+
+To load a wallet and start the synchonization process, you need to open your wallet by typing in the password.
+The first time synchronization of your wallet might take some time depending on the size of its history.
 
 ### Wallet list
 
