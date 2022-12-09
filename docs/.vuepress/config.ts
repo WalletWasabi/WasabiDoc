@@ -133,7 +133,6 @@ export default {
                 sidebarDepth: 2,
                 children: [
                     "/using-wasabi/InstallPackage.md",
-                    "/using-wasabi/BuildSource.md"
                 ]
             }, {
                 text: "Using Wasabi",
@@ -171,6 +170,7 @@ export default {
                 collapsable: false,
                 sidebarDepth: 2,
                 children: [
+                    "/using-wasabi/BuildSource.md",
                     "/using-wasabi/DeterministicBuild.md",
                     "/using-wasabi/WasabiSetupVM.md"
                 ]
