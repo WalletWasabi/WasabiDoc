@@ -7,16 +7,16 @@
 
 # Coinjoin
 
+[[toc]]
+
+## Introduction
+
 A [coinjoin](https://en.bitcoin.it/Privacy#CoinJoin) is a special Bitcoin transaction where several peers get together to literally join their coins in a single transaction.
 They collaboratively build a transaction where each of them provides some coins as inputs, and fresh addresses as outputs.
 The concept has been around since the early days of Bitcoin, and it was formalized by the great Greg Maxwell in [this awesome introductory thread](https://bitcointalk.org/index.php?topic=279249.msg2983902).
 
 The goal is to gain privacy by breaking the link of which input "pays" which output so that none of the outputs can be attributed to the owner of the input.
 WabiSabi enables centrally coordinated coinjoins with variable amounts in a trustless (meaning nobody can steal) and private (meaning even the coordinator cannot spy) manner, as described in the [WabiSabi paper](https://eprint.iacr.org/2021/206).
-
-[[toc]]
-
----
 
 ## Coinjoin step-by-step
 

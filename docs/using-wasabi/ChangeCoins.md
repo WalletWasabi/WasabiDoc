@@ -9,8 +9,6 @@
 
 [[toc]]
 
----
-
 ## Types of change
 
 ### Non-Coinjoin change
@@ -56,7 +54,7 @@ This might not be possible in some cases where you have to pay a specific value 
 There are [common heuristics identifying change outputs](/why-wasabi/Coins.md#heuristics-identifying-change), try to avoid these with every transaction.
 Don't reuse addresses, don't send precise amounts but randomize them, don't use replace by fee, and try to send to bech32 addresses.
 
-### Spend the change to the same entity as in the initial transaction.
+### Spend the change to the same entity as in the initial transaction
 
 If in the first transaction you have 0.10 bitcoin and send Alice 0.04 bitcoin, you get 0.06 bitcoin back as change in a new address, which Alice can see belongs to you.
 Now, in a second transaction where you want to send Alice 0.05 bitcoin, you can select that 0.06 bitcoin change coin without losing any privacy, because Alice already knows this is your coin.

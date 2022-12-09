@@ -9,8 +9,6 @@
 
 [[toc]]
 
----
-
 ## The importance of running a full node
 
 When running a Bitcoin full node, you define the precise monetary rules that you voluntarily agree on.

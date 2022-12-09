@@ -11,8 +11,6 @@ This is the place with an introduction to privacy in general, and why especially
 Here is covered how Bitcoin is already good for privacy, much better than the incumbent monetary system.
 And why Wasabi can make Bitcoin an even better tool of self-defense by default.
 
----
-
 ## Chapters
 
 ### Why Privacy

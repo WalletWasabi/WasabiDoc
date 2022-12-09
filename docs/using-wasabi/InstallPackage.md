@@ -9,7 +9,7 @@
 
 [[toc]]
 
----
+## Introduction
 
 The easiest way to start with Wasabi is to download, verify and install the released package.
 This is a version of the software that is thoroughly reviewed by the contributors.
@@ -74,7 +74,7 @@ If the message returned says `Good signature from zkSNACKs` and that it was sign
 	You can ignore this, but if you want to fully verify your download, you need to ask people you trust to confirm that the key fingerprint belongs to zkSNACKs.
 	:::
 
-4. [GUI] Install by double-clicking and follow the GUI Instruction. </br>
+4. [GUI] Install by double-clicking and follow the GUI Instruction. <br>
    [CLI] In the Download repository, execute the command `sudo apt install ./Wasabi-${currentVersion}.deb` to install Wasabi and after that run Wasabi by executing `wassabee`.
 
 After the first run, a [data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) will be created.
@@ -125,7 +125,6 @@ Click on `Open` and restart Wasabi.
 After the first run, a [data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) will be created.
 Among others, here is where your wallet files and your logs reside.
 
-::::details
 ### Optional PGP Verification
 
 If you have already imported zkSNACKs' PGP public key, then jump to step 4.
@@ -149,8 +148,7 @@ If the message returned says `Good signature from zkSNACKs` and that it was sign
 	The output from the verify command may contain `WARNING: This key is not certified with a trusted signature!`.
 	You can ignore this, but if you want to fully verify your download, you need to ask people you trust to confirm that the key fingerprint belongs to zkSNACKs.
 	:::
-::::
 
-@[youtube](ry6qIyQmzRE)
+[![Watch the video](https://img.youtube.com/vi/ry6qIyQmzRE/maxresdefault.jpg)](https://youtu.be/ry6qIyQmzRE)
 
-@[youtube](QHIpEYYqddE)
+[![Watch the video](https://img.youtube.com/vi/QHIpEYYqddE/maxresdefault.jpg)](https://youtu.be/QHIpEYYqddE)

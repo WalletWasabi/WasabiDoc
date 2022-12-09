@@ -62,7 +62,7 @@ Know that you do not need to understand/deal with VuePress at all in this case.
 - coinjoin [not capitalized, one word]
 - WabiSabi [capitalized, one word]
 - Every sentence must start in a new line.
-- For a paragraph, add an `empty line` or `</br>` in the markdown.
+- For a paragraph, add an `empty line` or `<br>` in the markdown.
 
 ## Reference files
 
@@ -86,21 +86,22 @@ They can be embedded via the following markdown tags:
 Youtube videos and playlists can be embedded via the following custom markdown tags:
 
 ```md
-@[youtube](VIDEO_ID)
-@[youtubePlaylist](PLAYLIST_ID)
+[![Title of the video](https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg)](https://youtu.be/VIDEO_ID)
 ```
 
 Optionally you can also specify the start position of a video in seconds (e.g. starts at 100 seconds):
 
 ```md
-@[youtube](VIDEO_ID,100)
+[![Title of the video](https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg)](https://youtu.be/VIDEO_ID?t=123)
 ```
 
 And the index of the video of a playlist (e.g. starts the third video):
 
 ```md
-@[youtubePlaylist](PLAYLIST_ID,VIDEO_ID)
+[![Title of the playlist](https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg)](https://youtu.be/VIDEO_ID?list=PLAYLIST_ID)
 ```
+
+If the image doesn't appear, that usually happens with older videos, use hqdefault.jpg instead of maxresdefault.jpg
 
 ## Text Highlights
 
@@ -159,7 +160,7 @@ answer answer answer.
 ## Variables
 
 To have a single place to maintain universal strings like the current Wasabi version number, we use variables in the Markdown (i.e.  `${currentVersion}`and `${zksnacksPublicKeyFingerprint}`).
-These variables are managed in [`docs/.vuepress/variables.js`](https://github.com/zkSNACKs/WasabiDoc/blob/master/docs/.vuepress/variables.js).
+These variables are managed in [`docs/.vuepress/config.ts`](https://github.com/zkSNACKs/WasabiDoc/blob/master/docs/.vuepress/config.ts).
 Occurrences of `${variableName}` get substituted before the Markdown is processed.
 
 # Build the Documentation Locally

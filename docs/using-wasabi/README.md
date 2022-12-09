@@ -11,8 +11,6 @@ Here are all the nuances of how to use Wasabi Wallet in all regards.
 Starting with a step-by-step guide on how to verify and install the software.
 Further tutorials about the different parts of the wallet, for newbies and power users.
 
----
-
 ## Chapters
 
 ### Introducing Wasabi

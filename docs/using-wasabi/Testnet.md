@@ -9,8 +9,6 @@
 
 [[toc]]
 
----
-
 ## Bitcoin testnet
 
 The Bitcoin testnet is a network that behaves almost exactly the same as the Bitcoin mainnet.

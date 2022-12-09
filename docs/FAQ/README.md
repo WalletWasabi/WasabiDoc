@@ -13,8 +13,6 @@ This is an archive with many questions that Wasabikas have asked most frequently
 - The important details of how to install Wasabi properly, and the best practices for using it.
 - Further guidance for those who are interested in contributing to Wasabi.
 
----
-
 ## Chapters
 
 - [Introduction FAQ](/FAQ/FAQ-Introduction.md)

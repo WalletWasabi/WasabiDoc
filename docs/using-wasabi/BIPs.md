@@ -9,8 +9,6 @@
 
 [[toc]]
 
----
-
 Wasabi Wallet strives toward establishing solid industry best practices and standards.
 Here is a list of all the supported and integrated Bitcoin Improvement Proposals:
 

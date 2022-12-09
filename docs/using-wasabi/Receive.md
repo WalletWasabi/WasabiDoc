@@ -9,8 +9,6 @@
 
 [[toc]]
 
----
-
 ## Generating addresses step-by-step
 
 1. Start Wasabi and open the wallet that you want to receive coins into.
