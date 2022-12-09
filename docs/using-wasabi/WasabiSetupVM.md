@@ -136,7 +136,7 @@ There are no additional dependencies required, so the App VM can be based on `te
 [user@dom0 ~]$ qvm-run -a package-wasabi gnome-terminal
 ```
 
-[Download, verify and install](/using-wasabi/Download&Install.md#debian-and-ubuntu) the latest `Wasabi-${currentVersion}.deb` package in `package-wasabi`, then start Wasabi.
+[Download, verify and install](/using-wasabi/InstallPackage.md#debian-and-ubuntu) the latest `Wasabi-${currentVersion}.deb` package in `package-wasabi`, then start Wasabi.
 
 ```sh
 [user@package-wasabi ~]$ wassabee
@@ -259,6 +259,6 @@ Alternatively, you can also install the package in a new VM.
 This is a stable version suitable to use on mainnet and is separated from the development VM.
 There are no additional dependencies required to run this version.
 
-[Download, verify and install](/using-wasabi/Download&Install.md) the latest `Wasabi-${currentVersion}` package in your VM, then start Wasabi.
+[Download, verify and install](/using-wasabi/InstallPackage.md) the latest `Wasabi-${currentVersion}` package in your VM, then start Wasabi.
 
 __Have fun, and please consider contributing to the Wasabi project!__

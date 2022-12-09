@@ -76,6 +76,12 @@ Read more: [Change coins](/using-wasabi/ChangeCoins.md)
 :::
 
 :::details
+### Child Pays For Parent (CPFP)
+
+Child Pays For Parent (CPFP) is a fee bumping technique where a user spends an output from a low fee rate unconfirmed transaction in a child transaction with a high fee rate in order to encourage miners to include both transactions in a block.
+:::
+
+:::details
 ### Coinbase
 
 A special field used as the sole input for coinbase transactions.
@@ -96,7 +102,7 @@ Refers to keeping a reserve of important Bitcoin secrets offline.
 Cold storage is achieved when Bitcoin private keys are created and stored in a secure offline environment.
 Cold storage is important for anyone with bitcoin holdings.
 Online computers are vulnerable to hackers and should not be used to store a significant amount of bitcoin.
-Read more: [Cold Wasabi Protocol](/using-wasabi/HardwareWallet.md)
+Read more: [Cold Wasabi Protocol](/using-wasabi/ColdWasabi.md)
 :::
 
 :::details
