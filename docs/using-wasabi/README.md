@@ -17,7 +17,7 @@ Further tutorials about the different parts of the wallet, for newbies and power
 - [Explain Wasabi like I'm 5](/using-wasabi/ELI5.md)
 
 ### Installing Wasabi
-- [Install package](/using-wasabi/Download&Install.md)
+- [Install package](/using-wasabi/InstallPackage.md)
 
 ### Using Wasabi
 - [Wallet Generation](/using-wasabi/WalletGeneration.md)
