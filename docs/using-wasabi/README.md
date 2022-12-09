@@ -27,7 +27,7 @@ Further tutorials about the different parts of the wallet, for newbies and power
 - [Receive](/using-wasabi/Receive.md)
 - [CoinJoin](/using-wasabi/CoinJoin.md)
 - [Send](/using-wasabi/Send.md)
-- [Hardware Wallet](/using-wasabi/HardwareWallet.md)
+- [Hardware Wallet](/using-wasabi/ColdWasabi.md)
 - [Bitcoin Full Node](/using-wasabi/BitcoinFullNode.md)
 
 ### Best Practices
