@@ -9,8 +9,6 @@
 
 [[toc]]
 
----
-
 ## Common mediums for backups
 
 ### Written on a piece of paper

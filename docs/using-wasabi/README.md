@@ -11,8 +11,6 @@ Here are all the nuances of how to use Wasabi Wallet in all regards.
 Starting with a step-by-step guide on how to verify and install the software.
 Further tutorials about the different parts of the wallet, for newbies and power users.
 
----
-
 ## Chapters
 
 ### Introducing Wasabi
@@ -20,7 +18,6 @@ Further tutorials about the different parts of the wallet, for newbies and power
 
 ### Installing Wasabi
 - [Install package](/using-wasabi/InstallPackage.md)
-- [Build from source code](/using-wasabi/BuildSource.md)
 
 ### Using Wasabi
 - [Wallet Generation](/using-wasabi/WalletGeneration.md)
@@ -42,6 +39,7 @@ Further tutorials about the different parts of the wallet, for newbies and power
 - [Password Finder](/using-wasabi/PasswordFinder.md)
 
 ### Advanced Installing Wasabi
+- [Build from source code](/using-wasabi/BuildSource.md)
 - [Deterministic Build](/using-wasabi/DeterministicBuild.md)
 - [Wasabi Setup using Virtual Machines](/using-wasabi/WasabiSetupVM.md)
 

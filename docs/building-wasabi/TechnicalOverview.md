@@ -8,8 +8,6 @@
 
 # A Technical Overview of Wasabi Wallet, Future Ideas, Plans and Strategy
 
----
-
 Wasabi Wallet is a privacy focused Bitcoin wallet that is based on the [ZeroLink Fungibility Framework](https://github.com/nopara73/ZeroLink/).
 While statistical privacy can be achieved today with it, the cost, convenience, intuitiveness, and strength of this privacy can be greatly improved.
 Wasabi must also improve its accessibility and its general Bitcoin wallet features.
@@ -19,8 +17,6 @@ Finally, Wasabi also needs to concentrate on its stability, performance, UX, and
 This document aims to outline a starting plan to progress towards these objectives.
 
 [[toc]]
-
----
 
 ## I. Introduction
 
@@ -382,7 +378,7 @@ Wasabi now offers 3 different ways to connect to a full node:
 Wasabi could roll out a NuGet package, enabling developers to build applications with Wasabi.
 It would be also beneficial and not difficult to integrate Wasabi into existing .NET softwares directly, like [BTCPay](https://github.com/btcpayserver/btcpayserver).
 
-## VII. Extending the Scope of Privacy
+## VI. Extending the Scope of Privacy
 
 Other features indirectly related to Bitcoin which may be beneficial for the privacy of Wasabi users:
 
@@ -393,14 +389,14 @@ Other features indirectly related to Bitcoin which may be beneficial for the pri
 - Add Folder Encryption [https://github.com/zkSNACKs/Meta/issues/36](https://github.com/zkSNACKs/Meta/issues/36)
 - Protect Data Folders [https://github.com/zkSNACKs/Meta/issues/39](https://github.com/zkSNACKs/Meta/issues/39)
 
-## VIII. Unique Wallet Features
+## VII. Unique Wallet Features
 
 Unique wallet features are a set of unorganized ideas that are not closely related to privacy.
 These are by no means necessary for Wasabi, but what fun is there in programming if the developers are not allowed to play with their creativity once in a while?
 
 - Clipboard Hijacker Malware Defense: [https://github.com/zkSNACKs/WalletWasabi/issues/496](https://github.com/zkSNACKs/WalletWasabi/issues/496), [https://github.com/zkSNACKs/WalletWasabi/pull/697](https://github.com/zkSNACKs/WalletWasabi/pull/697)
 
-## IX. Conclusion
+## VIII. Conclusion
 
 In this document, we give a comprehensive overview of Wasabi Wallet.
 Unlike the creators of many other products, we deliberately decided to describe and discuss honestly and extensively Wasabi's shortcomings, tradeoffs, and design decisions.

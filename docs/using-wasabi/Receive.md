@@ -9,7 +9,7 @@
 
 [[toc]]
 
----
+[![Watch the video](https://img.youtube.com/vi/Wjc00GBn-OQ/maxresdefault.jpg)](https://youtu.be/Wjc00GBn-OQ)
 
 ## Generating addresses step-by-step
 

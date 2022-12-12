@@ -12,8 +12,6 @@ Their business model is usually to sell the data to any governments, corporation
 
 [[toc]]
 
----
-
 ## Spying technology
 
 There are a number of techniques probably used by transaction surveillance companies:

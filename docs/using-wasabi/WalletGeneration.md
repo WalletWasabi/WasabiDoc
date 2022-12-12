@@ -7,13 +7,13 @@
 
 # Wallet Generation
 
+[[toc]]
+
+## Introduction
+
 With Wasabi you can generate an unlimited number of Bitcoin wallets very quickly, without any cost, and without asking anyone for permission.
 Each wallet has separate private and public keys in a unique backup, and they are not at all linked to the other wallets generated on the same computer.
 So, with several wallets, you can conveniently manage your bitcoin for different use cases without worrying about revealing that you control them.
-
-[[toc]]
-
----
 
 ## Generating the wallet step-by-step
 
