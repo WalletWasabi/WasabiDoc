@@ -278,6 +278,11 @@ However, for large wallets with many transactions, this synchronization can take
 The speed and reliability of the loading process is constantly improved.
 For especially old wallets, it might be worth considering to generate a new wallet with a shorter transaction history.
 
+### Can I shutdown my computer while a wallet is synchronizing?
+
+Yes.
+If you shutdown your computer or kill Wasabi while a wallet is synchronizing then the synchronization will continue where it left off or it will start again, the next time you open that wallet.
+
 ### How do I resync (rescan) my wallet?
 
 You can rescan an existing Wasabi wallet by editing the `Height` in the wallet file.
