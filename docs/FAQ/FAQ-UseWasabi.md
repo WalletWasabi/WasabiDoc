@@ -281,7 +281,7 @@ For especially old wallets, it might be worth considering to generate a new wall
 ### Can I shutdown my computer while a wallet is synchronizing?
 
 Yes.
-If you shutdown your computer or kill Wasabi while a wallet is synchronizing then the synchronization will continue where it left off, the next time you open that wallet.
+If you shutdown your computer or kill Wasabi while a wallet is synchronizing then the synchronization will continue where it left off or it will start again, the next time you open that wallet.
 
 ### How do I resync (rescan) my wallet?
 
