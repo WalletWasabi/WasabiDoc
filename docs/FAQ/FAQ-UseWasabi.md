@@ -1065,7 +1065,7 @@ It’s part of [BIP 39](https://github.com/bitcoin/bips/blob/master/bip-0039.med
 
 ### How can I generate a Wasabi skeleton wallet file in ColdCard?
 
-On the ColdCard you go to `> Advanced > MicroSD Card > Wasabi Wallet` and it will save a skeleton json-file to the MicroSD card in the hardware wallet.
+On the ColdCard you go to `Advanced > MicroSD Card > Export Wallet > Wasabi Wallet` and it will save a skeleton json-file to the MicroSD card in the hardware wallet.
 
 Read more [here](/using-wasabi/ColdWasabi.md).
 
