@@ -1104,7 +1104,7 @@ Read more [here](/using-wasabi/ColdWasabi.md#connecting-via-sd-card).
 
 ### How can I sign a transaction on the ColdCard?
 
-On the ColdCard (Mk2, firmware 2.1.1 and up) you enter the PIN code to unlock the hardware wallet and press `> Ready To Sign` with the MicroSD card containing the previously generated transaction or PSBT-file.
+On the ColdCard (Mk2, firmware 2.1.1 and up) you enter the PIN code to unlock the hardware wallet and press `Ready To Sign` with the MicroSD card containing the previously generated transaction or PSBT-file.
 Verify the address and amount and the ColdCard will then create a signed.psbt and final.txn file on the MicroSD card.
 The finalized transaction (`xxx-final.txn`) can now be broadcast by Wasabi Wallet with the `Broadcaster` tool, or even a radio or satellite dish if someone is listening!
 Read more [here](/using-wasabi/ColdWasabi.md#connecting-via-sd-card).
