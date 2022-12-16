@@ -505,7 +505,7 @@ This chain of links between inputs being spent and outputs being generated is ve
 ### How do I set a destination address?
 
 In the `Send` dialog, there is a box called `To`, enter here the bitcoin address or PayJoin URL.
-If you have an address in the clipboard, then it can be pasted by using the paste button or right click..
+If you have an address in the clipboard, then it can be pasted by using the paste button or right click.
 You can also type in the address manually, there is a checksum to help you identify typos.
 Be careful and double-check the address, there is no way to revert this transaction and change the destination.
 So make sure that the coins get into the right hands.
