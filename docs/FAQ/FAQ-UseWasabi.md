@@ -625,7 +625,7 @@ Wasabi might implement [BIP 156](https://github.com/bitcoin/bips/blob/master/bip
 
 ### What is the cluster history?
 
-Clusters are a property of a Bitcoin wallet with strong coin-control and good labeling.
+Clusters are a property of a Bitcoin wallet with mandatory labeling.
 When you use Wasabi, you must label every coin that you receive with the observers.
 The reason why this is important, is that your "wallet" is really just a collection of coins (similar to a physical wallet, not to a bank account).
 When you receive coins from somewhere to a labeled address, Wasabi will store the label locally on your device, for example:
@@ -651,13 +651,8 @@ The problem with this transaction, is Bob knows you, and knows that the 0.65 BTC
 But when you combine (consolidate) your coins in this way, you reveal to Bob that you also have 2.1 BTC from somewhere else, and you reveal to the exchange that you have 0.65 bitcoin from somewhere else.
 
 When you [CoinJoin](/using-wasabi/CoinJoin.md) coins with Wasabi, you actually de-link the trail from Bob/exchange, to the coins in your wallet.
-The coin will have an anonymity set > 1, and typically will have a <img src="/ShieldGreen.png" alt="Wasabi Wallet green shield anonymity set" title="Wasabi Wallet green shield anonymity set" class="shield" /> shield.
-This coin can now be spent without having to worry about your boss or the exchange tracking your behavior.
-
-However, when you mix a coin, there is often change.
-This change is marked <img src="/ShieldRed.png" alt="Wasabi Wallet red shield anonymity set" title="Wasabi Wallet red shield anonymity set" class="shield" /> and has an anonymity set = 1 (with a couple of small exceptions regarding remixing).
-The change is completely linked to your coins before the mix, and so needs to be dealt with properly.
-If you combine the tiny bit of change you received from Bob and from the exchange, they still know how much money you had (but not where you are spending it).
+Those specific coins will be private after coinjoining.
+They can now be spent without having to worry about your boss or the exchange tracking your behavior.
 
 So the idea around clusters is to make it easier for users to follow the transaction graph.
 The transaction graph is the history of where a coin has been, and is important if different histories need to be separated.
