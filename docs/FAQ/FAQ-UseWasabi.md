@@ -651,8 +651,8 @@ The problem with this transaction, is Bob knows you, and knows that the 0.65 BTC
 But when you combine (consolidate) your coins in this way, you reveal to Bob that you also have 2.1 BTC from somewhere else, and you reveal to the exchange that you have 0.65 bitcoin from somewhere else.
 
 When you [CoinJoin](/using-wasabi/CoinJoin.md) coins with Wasabi, you actually de-link the trail from Bob/exchange, to the coins in your wallet.
-That specific coin will be private after coinjoining.
-This coin can now be spent without having to worry about your boss or the exchange tracking your behavior.
+Those specific coins will be private after coinjoining.
+They can now be spent without having to worry about your boss or the exchange tracking your behavior.
 
 So the idea around clusters is to make it easier for users to follow the transaction graph.
 The transaction graph is the history of where a coin has been, and is important if different histories need to be separated.
