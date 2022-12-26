@@ -254,7 +254,7 @@ There are two ways Wasabi can get a block:
 
 2. By default from a random Bitcoin P2P node, connected through a new Tor identity only for this one download request.
 
-Read more [ħere](/using-wasabi/WalletLoad.md)
+Read more [here](/using-wasabi/WalletLoad.md).
 
 ### How do I know if the synchronization is finished?
 
@@ -927,7 +927,7 @@ Each coinjoin strategy has different specific settings for optimal performance.
 After a coinjoin strategy is selected, its settings are applied.
 It is supposed to make it easy for the user to select their preference, without having to know about the specific settings and how to configure them themselves.
 
-Read more [ħere](/using-wasabi/CoinJoin.md)
+Read more [here](/using-wasabi/CoinJoin.md).
 
 ### What are the differences/settings per coinjoin strategy?
 
@@ -1069,32 +1069,36 @@ Read more [here](/using-wasabi/ColdWasabi.md).
 Take the MicroSD card from the ColdCard and plug it in the computer with the Wasabi Wallet software.
 In Wasabi Wallet go to `Add Wallet` and select `Import a wallet`.
 Now select the Wasabi skeleton json-file from the MicroSD card, if this fails you can manually enter the file location in Wasabi Wallet window and load the file.
+
 Read more [here](/using-wasabi/ColdWasabi.md#connecting-via-sd-card).
 
 ### How can I generate a receiving address of my hardware wallet?
 
 In Wasabi Wallet you load your previously imported wallet (from Wasabi skeleton, or USB detection) and go to the `Receive` dialog, here you enter a label for the observers of the incoming transaction and click `Continue`.
 In the receive dialog, previously generated addresses (which haven't received any funds yet) can be viewed and copied at `Unused Receive Addresses`.
+
 Read more [here](/using-wasabi/ColdWasabi.md).
 
 ### How can I sign a transaction with a USB connected hardware wallet?
 
 To send a transaction you will need to connect your hardware wallet and unlock the device (using PIN or password).
 
-Go to `Send`, enter the address to send to and the amount of bitcoin to spend.
-Enter the label of whom you are sending to.
-At the `Preview Transaction` screen, check if all the information is correct.
-After you have checked that everything is correct, click `Send Now` to sign it with the connected hardware wallet and broadcast the transaction to the network.
-Read more [here](/using-wasabi/ColdWasabi.md#connecting-via-usb)
+- Go to `Send`, enter the address to send to and the amount of bitcoin to spend.
+- Enter the label of whom you are sending to.
+- At the `Preview Transaction` screen, check if all the information is correct.
+- After you have checked that everything is correct, click `Send Now` to sign it with the connected hardware wallet and broadcast the transaction to the network.
+
+Read more [here](/using-wasabi/ColdWasabi.md#connecting-via-usb).
 
 ### How can I build and export a transaction to ColdCard?
 
-Go to `Send` and enter the destination address and amount.
-Click `Continue`.
-Enter the label of whom you are sending to.
-At the Preview Transaction screen, check that everything is correct.
-Click on `Save PSBT file` and save the file to the MicroSD card.
-You can then insert the MicroSD card (containing the PSBT) in the Coldcard for manual verification and signing.
+- Go to `Send` and enter the destination address and amount.
+- Click `Continue`.
+- Enter the label of whom you are sending to.
+- At the Preview Transaction screen, check that everything is correct.
+- Click on `Save PSBT file` and save the file to the MicroSD card.
+- You can then insert the MicroSD card (containing the PSBT) in the Coldcard for manual verification and signing.
+
 Read more [here](/using-wasabi/ColdWasabi.md#connecting-via-sd-card).
 
 ### How can I sign a transaction on the ColdCard?
@@ -1102,6 +1106,7 @@ Read more [here](/using-wasabi/ColdWasabi.md#connecting-via-sd-card).
 On the ColdCard (Mk2, firmware 2.1.1 and up) you enter the PIN code to unlock the hardware wallet and press `Ready To Sign` with the MicroSD card containing the previously generated transaction or PSBT-file.
 Verify the address and amount and the ColdCard will then create a signed.psbt and final.txn file on the MicroSD card.
 The finalized transaction (`xxx-final.txn`) can now be broadcast by Wasabi Wallet with the `Broadcaster` tool, or even a radio or satellite dish if someone is listening!
+
 Read more [here](/using-wasabi/ColdWasabi.md#connecting-via-sd-card).
 
 ### How can I import and broadcast a final transaction from ColdCard?
@@ -1109,6 +1114,7 @@ Read more [here](/using-wasabi/ColdWasabi.md#connecting-via-sd-card).
 In the top search bar, go to `Broadcaster` and then select `Import Transaction`, now you can select the previously finalized (and signed) transaction file from the MicroSD card.
 If this fails you can manually type the path to this file in Wasabi Wallet to load the transaction.
 Now click `Broadcast Transaction` to send it off over Tor to a random Bitcoin node so it can flood over to the miners for confirmation in a block.
+
 Read more [here](/using-wasabi/ColdWasabi.md#connecting-via-sd-card).
 
 :::tip Enable PSBT workflow
@@ -1120,7 +1126,8 @@ If this setting is enabled, a `Broadcast` button will be displayed next to the `
 No, that is currently not possible.
 A coinjoin is a multi round interactive process, and requires fast signing by the participants, thus the keys need to be on a hot computer.
 Thus currently you have to send the bitcoins from your hardware wallet to a `hot` Wasabi Wallet, do the coinjoin and then send them back to a new address on the Hardware wallet for cold-storage.
-Read more [here](/using-wasabi/ColdWasabi.md#cold-wasabi-protocol)
+
+Read more [here](/using-wasabi/ColdWasabi.md#cold-wasabi-protocol).
 
 ### Does Ledger Live send my public keys and addresses to a third party server?
 
@@ -1128,6 +1135,7 @@ Only if you add your accounts in the app, but not if you update your device firm
 When using the Ledger Live software wallet to manage your coins, you send all of your used, and 20 unused addresses to Ledger's nodes. [Source](https://support.ledger.com/hc/en-us/articles/360010892360)
 
 Your extended public key, however, is not shared with Ledger's node, but rather stored encrypted on your local machine.
+
 Read more [here](https://support.ledger.com/hc/en-us/articles/360011069619).
 
 Ledger could potentially analyze information from API calls to their nodes to link addresses to individual users, though Ledger says no logs are kept during normal operation.
@@ -1270,7 +1278,8 @@ Alternatively, you can find the logs inside your [Wasabi data folder](/FAQ/FAQ-U
 ### How to activate/deactivate discreet mode?
 
 You can activate/deactivate Discreet Mode by clicking the Discreet Mode icon in the bottom left corner of the main view.
-You can read more about Discreet Mode [here](/using-wasabi/DiscreetMode.md).
+
+Read more [here](/using-wasabi/DiscreetMode.md).
 
 ![Discreet Mode Icon](/DiscreetModeActivate.png "Discreet Mode Icon")
 
