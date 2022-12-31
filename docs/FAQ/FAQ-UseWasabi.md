@@ -1070,7 +1070,7 @@ Take the MicroSD card from the ColdCard and plug it in the computer with the Was
 In Wasabi Wallet go to `Add Wallet` and select `Import a wallet`.
 Now select the Wasabi skeleton json-file from the MicroSD card, if this fails you can manually enter the file location in Wasabi Wallet window and load the file.
 
-Read more [here](/using-wasabi/ColdWasabi.md#connecting-via-sd-card).
+Read more [here](/using-wasabi/ColdWasabi.md#connecting-coldcard-via-sd-card).
 
 ### How can I generate a receiving address of my hardware wallet?
 
@@ -1099,7 +1099,7 @@ Read more [here](/using-wasabi/ColdWasabi.md#connecting-via-usb).
 - Click on `Save PSBT file` and save the file to the MicroSD card.
 - You can then insert the MicroSD card (containing the PSBT) in the Coldcard for manual verification and signing.
 
-Read more [here](/using-wasabi/ColdWasabi.md#connecting-via-sd-card).
+Read more [here](/using-wasabi/ColdWasabi.md#connecting-coldcard-via-sd-card).
 
 ### How can I sign a transaction on the ColdCard?
 
@@ -1107,7 +1107,7 @@ On the ColdCard (Mk2, firmware 2.1.1 and up) you enter the PIN code to unlock th
 Verify the address and amount and the ColdCard will then create a signed.psbt and final.txn file on the MicroSD card.
 The finalized transaction (`xxx-final.txn`) can now be broadcast by Wasabi Wallet with the `Broadcaster` tool, or even a radio or satellite dish if someone is listening!
 
-Read more [here](/using-wasabi/ColdWasabi.md#connecting-via-sd-card).
+Read more [here](/using-wasabi/ColdWasabi.md#connecting-coldcard-via-sd-card).
 
 ### How can I import and broadcast a final transaction from ColdCard?
 
@@ -1115,7 +1115,7 @@ In the top search bar, go to `Broadcaster` and then select `Import Transaction`,
 If this fails you can manually type the path to this file in Wasabi Wallet to load the transaction.
 Now click `Broadcast Transaction` to send it off over Tor to a random Bitcoin node so it can flood over to the miners for confirmation in a block.
 
-Read more [here](/using-wasabi/ColdWasabi.md#connecting-via-sd-card).
+Read more [here](/using-wasabi/ColdWasabi.md#connecting-coldcard-via-sd-card).
 
 :::tip Enable PSBT workflow
 If this setting is enabled, a `Broadcast` button will be displayed next to the `Send` button, for an easier workflow.
