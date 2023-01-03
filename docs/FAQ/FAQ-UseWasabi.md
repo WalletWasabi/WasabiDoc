@@ -1197,6 +1197,14 @@ Yes, the history items can be sorted by clicking on the column title:
 
 ![Sort Date Column](/HistorySortDateColumn.png "Sort Date Column")
 
+### Can I search for a TXID in the history?
+
+Yes.
+This can be done by pasting the TXID into the search bar or by manually typing part of the TXID.
+After clicking the result, the transaction will be highlighted in the history.
+
+![SearchBar Search TX](/SearchBarTXIDSearch.png "SearchBar Search TX")
+
 ### Can I export a list of transactions?
 
 There is currently no convenient way to export a list with transaction details inside the GUI.
