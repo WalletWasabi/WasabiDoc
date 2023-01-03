@@ -127,6 +127,17 @@ Each Alice does the following:
 
 The signing phase ends when the coordinator has received all the valid signatures for all the registered inputs.
 
+### Blame round
+
+When the signing phase fails due to some Alices disrupting the round (failing to sign or send the signature to the coordinator), then the successful Alices will continue into a blame round.
+The blame round will redo the coinjoin phases in order to create a successful coinjoin.
+
+This mecanism also prevents coinjoins from being DDoS-ed because bad actors that are willingly disturbing rounds won't be able to join the blame round.
+The client will keep going to the blame round until there are not enough Alices left to meet the minimum input count of 150.
+
+The blame round is not a mandatory phase of the coinjoin process.
+It was introduced in order to have a higher coinjoin success rate.
+
 ### Broadcasting
 
 The coinjoin transaction has been successfully built and signed, and it is now ready to be [broadcast](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-broadcasting-phase) to the peers of the Bitcoin network.
