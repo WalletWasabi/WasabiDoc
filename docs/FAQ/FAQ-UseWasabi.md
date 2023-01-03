@@ -1206,7 +1206,7 @@ After clicking the result, the transaction will be highlighted in the history.
 ![SearchBar Search TX](/SearchBarTXIDSearch.png "SearchBar Search TX")
 
 :::tip
-It will only show results of wallets which are open
+It will only show results of the wallets which are currently open.
 :::
 
 ### Can I export a list of transactions?
