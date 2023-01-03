@@ -129,10 +129,10 @@ The signing phase ends when the coordinator has received all the valid signature
 
 ### Blame round
 
-When the signing phase fails from becoming succesful due to some Alices disrupting the round (failing to sign or send the signature to the coordinator), then the succesful Alices will continue into a blame round.
-The blame round will redo the coinjoin phases in order to create a succesful coinjoin.
+When the signing phase fails due to some Alices disrupting the round (failing to sign or send the signature to the coordinator), then the successful Alices will continue into a blame round.
+The blame round will redo the coinjoin phases in order to create a successful coinjoin.
 
-Only succesfully registered coins are allowed into the new blame round, so this also prevents coinjoins from being DDoS-ed.
+Only successfully registered coins are allowed into the new blame round, so this also prevents coinjoins from being DDoS-ed.
 The client will keep going to the blame round until there is none.
 
 The blame round is not a mandatory phase of the coinjoin process.
