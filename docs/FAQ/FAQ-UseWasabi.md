@@ -1205,6 +1205,10 @@ After clicking the result, the transaction will be highlighted in the history.
 
 ![SearchBar Search TX](/SearchBarTXIDSearch.png "SearchBar Search TX")
 
+:::tip
+It will only show results of wallets which are open
+:::
+
 ### Can I export a list of transactions?
 
 There is currently no convenient way to export a list with transaction details inside the GUI.
