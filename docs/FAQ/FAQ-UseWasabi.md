@@ -1200,10 +1200,10 @@ Yes, the history items can be sorted by clicking on the column title:
 
 ![Sort Date Column](/HistorySortDateColumn.png "Sort Date Column")
 
-### Can I search for a TXID in the history?
+### Can I search for a transaction ID in the history?
 
 Yes.
-This can be done by pasting the TXID into the search bar or by manually typing part of the TXID.
+This can be done by pasting the transaction ID into the search bar or by manually typing part of the transaction ID.
 After clicking the result, the transaction will be highlighted in the history.
 
 ![SearchBar Search TX](/SearchBarTXIDSearch.png "SearchBar Search TX")
