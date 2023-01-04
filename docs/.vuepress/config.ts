@@ -191,7 +191,6 @@ export default {
                 collapsable: false,
                 sidebarDepth: 2,
                 children: [
-                    "/building-wasabi/TechnicalOverview.md",
                     "/building-wasabi/ContributionChecklist.md"
                 ]
             }, {

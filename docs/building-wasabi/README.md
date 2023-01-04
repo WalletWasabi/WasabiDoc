@@ -14,7 +14,6 @@ You will also find some of the issues they are working on now, the research for 
 
 ### Contributing to Wasabi
 
-- [Technical Overview of Wasabi Wallet](/building-wasabi/TechnicalOverview.md)
 - [Contribution Checklist](/building-wasabi/ContributionChecklist.md)
 
 ### Advanced
