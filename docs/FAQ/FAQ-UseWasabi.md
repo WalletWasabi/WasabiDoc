@@ -805,9 +805,9 @@ The [singing phase](/using-wasabi/CoinJoin.md#signing) is concluded when the coo
 
 ### What is happening during the blame round?
 
-If the signing phase fails from becoming successful, then a [blame round](/using-wasabi/CoinJoin.md#blame-round) will be created with the successful Alices.
+If the signing phase fails from becoming successful due to some Alices disrupting the round, then a [blame round](/using-wasabi/CoinJoin.md#blame-round) will be created with the successful Alices.
 In the blame round a new coinjoin will be constructed by repeating the coinjoin phases.
-All Alices have to sign this new transaction and sent their signature to the coordinator.
+All Alices have to sign this new transaction and send their signature to the coordinator.
 
 ### What is happening in the broadcasting phase?
 
