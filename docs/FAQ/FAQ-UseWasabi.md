@@ -803,6 +803,12 @@ This raw transaction is sent to all Alices, each of them verifies the transactio
 The signature is sent back to the coordinator who accumulates all of them and builds the signed final CoinJoin transaction.
 The [singing phase](/using-wasabi/CoinJoin.md#signing) is concluded when the coordinator receives all the signatures.
 
+### What is happening during the blame round?
+
+If the signing phase fails from becoming successful due to some Alices disrupting the round, then a [blame round](/using-wasabi/CoinJoin.md#blame-round) will be created with the successful Alices.
+In the blame round a new coinjoin will be constructed by repeating the coinjoin phases.
+All Alices have to sign this new transaction and send their signature to the coordinator.
+
 ### What is happening in the broadcasting phase?
 
 In the [broadcasting phase](/using-wasabi/CoinJoin.md#broadcasting) the coordinator sends the signed final CoinJoin transaction to several random Bitcoin peer to peer nodes, and it is gossiped throughout the network to the miners.
