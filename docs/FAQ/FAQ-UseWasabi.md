@@ -314,6 +314,10 @@ For example if the problem happened 3 days ago then you can go back a week or so
 `new_height = current_height - (7 * 144)`
 :::
 
+:::tip
+If you are doing a re-synchronization because you expect some missing funds, but after resync you still think your balance is not correct then try to increase the [gap limit](/FAQ/FAQ-UseWasabi.html#how-do-i-change-the-gap-limit-of-a-wallet) of the wallet.
+:::
+
 ### Can Wasabi work with a pruned bitcoin node?
 
 No.
