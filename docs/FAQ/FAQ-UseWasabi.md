@@ -1154,7 +1154,7 @@ Everything is working as expected.
 
 The anonymity score (number) is tied to your wallet that you used to coinjoin, if you send a coinjoined coin to another Wasabi Wallet of yours (hardware wallet or normal wallet) it will have an anonscore of 1 because this wallet doesn't know all of the coinjoin history.
 
-You should put a meaningful label when you generate a receive address in your hardware wallet, e.g. "private utxo" (something that reminds you that you got this utxo from your Wasabi Wallet and it was coinjoined).
+You should put a meaningful label when you generate a receive address in your hardware wallet, e.g. "private UTXO" (something that reminds you that you got this UTXO from your Wasabi Wallet and that it was coinjoined).
 
 ### Can I use Trezor One with Wasabi?
 
