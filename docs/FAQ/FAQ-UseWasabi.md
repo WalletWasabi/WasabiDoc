@@ -1152,13 +1152,13 @@ Ledger could potentially analyze information from API calls to their nodes to li
 
 To avoid any privacy leak, you can use a Ledger hardware wallet in combination with Wasabi as a software interface, and because Wasabi does not leak your addresses, your transaction history is not shared with anyone.
 
-### After I CoinJoined my coins and reached green anonset, I sent them to my hardware wallet address. When I check my HW via Wasabi, the coins are now red. Why?
+### After I coinjoined my coins and reached 100% privacy, I sent them to my hardware wallet and now the coins have anonscore 1. Why?
 
 Everything is working as expected.
 
-The anonymity set info (number) is tied to your wallet that you used to CoinJoin, if you send a mixed coin to another Wasabi Wallet of yours (hardware wallet or normal wallet) it will have an anonymity set 1 <img src="/ShieldRed.png" alt="Wasabi Wallet red shield anonymity set" title="Wasabi Wallet red shield anonymity set" class="shield" /> because this wallet doesn't know that the coin was coinjoined.
+The anonymity score (number) is tied to your wallet that you used to coinjoin, if you send a coinjoined coin to another Wasabi Wallet of yours (hardware wallet or normal wallet) it will have an anonscore of 1 because this wallet doesn't know all of the coinjoin history.
 
-You should put a meaningful label when you generate a receive address in your hardware wallet, e.g. "coinjoined utxo with anonymity set 70" (something that reminds you that you got this utxo from your Wasabi Wallet and it was coinjoined).
+You should put a meaningful label when you generate a receive address in your hardware wallet, e.g. "private UTXO" (something that reminds you that you got this UTXO from your Wasabi Wallet and that it was coinjoined).
 
 ### Can I use Trezor One with Wasabi?
 
