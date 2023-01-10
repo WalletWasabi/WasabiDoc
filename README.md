@@ -135,26 +135,10 @@ bar
 
 Use this markdown box with the headers to write the FAQ:
 ```
-:::details
 ### question
 
 answer answer answer.
 answer answer answer.
-:::
-```
-
-When you want to [highlight text](README.md#text-highlights) within a question, then you need to [nest containers](https://github.com/markdown-it/markdown-it-container/issues/6#issuecomment-213789283) by adding more `:` for the outer block start/end. The outer `details` container has now four `::::`, and the inner `warning` container has still three `:::`.
-
-```
-::::details
-### question
-
-answer answer answer.
-
-:::warning
-answer answer answer.
-:::
-::::
 ```
 
 ## Variables
