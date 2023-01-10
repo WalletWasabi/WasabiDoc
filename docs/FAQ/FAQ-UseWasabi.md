@@ -1156,11 +1156,6 @@ The anonymity score (number) is tied to your wallet that you used to coinjoin, i
 
 You should put a meaningful label when you generate a receive address in your hardware wallet, e.g. "private utxo" (something that reminds you that you got this utxo from your Wasabi Wallet and it was coinjoined).
 
-:::tip
-It can happen that a coin maintains (some of) it's anonscore after receiving from an other wallet.
-Because it knows this from the other wallet.
-:::
-
 ### Can I use Trezor One with Wasabi?
 
 No. Unfortunately, Trezor One is not supported by Wasabi Wallet.
