@@ -12,71 +12,73 @@ This is the Wasabi documentation, an archive of knowledge about the open-source,
 
 ## Introduction
 
-Wasabi Wallet is an open-source, non-custodial, privacy-focused Bitcoin wallet with built-in coinjoins.
-It is a piece of software that runs on your computer and helps you to manage your bitcoins.
-Although Wasabi has some very advanced magic under the hood, it is rather easy to use.
-You can generate a new set of seed words, or import already existing ones.
-With Wasabi you can receive bitcoins into your full control, and you can send them to someone else without needing permission from any other person or entity.
-There is also a powerful auto-coinjoin feature to help obfuscate your transaction history.
-You can use Wasabi to manage your hardware wallet, and it even connects to your own full node.
-Of course, Wasabi is libre and open-source, which means you have full control over the software you manage your money with.
+Okay kiddo, so you know how you have a piggy bank where you keep your money?
+Well, Wasabi Wallet is like a piggy bank for your bitcoin.
+It's a special kind of computer program that helps you keep your bitcoin safe and secret, like how you keep your piggy bank in a secret place.
+Wasabi is really good at keeping your bitcoin hidden because it has special magic inside that makes it hard for other people to see where you are keeping your bitcoin.
+And you can use it really easily, just like how you know how to put money in your piggy bank.
+You can also send your bitcoin to your friends, just like how you can give some of your money to your friends.
+And there's even a special button you can use to make it even more secret.
+It's also open for anyone to use and look at how it works, just like how you can see inside your piggy bank.
 
 ## Installing Wasabi
 
-Installing Wasabi is super-easy.
-Go to the official website [wasabiwallet.io](https://wasabiwallet.io) and download the version for your operating system.
-You can then install Wasabi as you would do any other software on your computer.
+So you know that when you want to play a new game on your computer, you first have to install it?
+Installing Wasabi Wallet is just like that, it's super-easy.
+You can do it by going to the website called [WasabiWallet.io] (https://wasabiwallet.io) and finding the right version for your computer.
 
-See [this chapter](/using-wasabi/InstallPackage.md) for a detailed step-by-step tutorial for all operating systems, and also how to verify the PGP signature.
+[See this chapter](/using-wasabi/InstallPackage.md) for a detailed step-by-step tutorial for all operating systems, and also how to verify the PGP signature.
 
 ## Generating a Wallet
 
-When you start Wasabi for the first time, the dialog to generate a new wallet will be open.
-You can set a unique name for the wallet so that you remember what it is for.
-In the next step, Wasabi will show your 12 recovery words.
-These must be carefully backed up, in the correct order, as they are needed to recover your wallet (together with the password) on another computer or in another wallet software.
-Next, choose a very secure password, as this encrypts the secrets, and should not be guessed by others.
-You will always need this password in order to spend your bitcoins, so take great care to back it up properly.
-Make sure you store the backup of your recovery words in a different location than the backup of your password.
+Okay kiddo, so imagine you have a special piggy bank just for your bitcoin.
+When you first start Wasabi Wallet, it's like opening up a brand new piggy bank.
+You get to pick a special name for your piggy bank so you know which one is yours.
+Then, Wasabi will give you 12 magic words, kind of like a secret code.
+You need to keep these magic words super safe, just like how you keep your piggy bank key safe.
+You will need these magic words to open your piggy bank if you ever want to use it on another computer or with another program.
+
+After that, you need to make a special password that only you know, like a secret code to unlock your piggy bank.
+It's very important to keep this password safe too, because without it you can't spend your bitcoin.
+So make sure you keep the magic words and the password in different safe places, just in case you lose one.
 
 :::warning Backup both!
-If you ever need to restore your wallet in Wasabi, or any other wallet, you will need both: your password AND your 12 recovery words.
+If you ever need to restore your wallet in Wasabi, or in any other wallet, you will need both: your password AND your 12 recovery words.
 :::
 
 See [this chapter](/using-wasabi/WalletGeneration.md) for more information on how to securely generate your wallet.
 
 ## Receiving bitcoin
 
-In order to receive bitcoin, you need to generate an address in the `Receive` dialog.
-But first, you must label it with the names of any observers who know that this address is yours.
-For example, if Alice pays you back for last nights pizza, then the label is `Alice`.
-This is an important feature for you and the wallet to know which coin is from whom, and it will help with your privacy in the future.
-Once this newly generated address receives some coins, Wasabi Wallet will automatically hide this used address, so you don't reuse it by accident.
+Imagine you want to get some money in your piggy bank.
+To do that, you click on `Receive` and then tell Wasabi Wallet who is sensing you the money.
+So, if your friend Alice pays you back for pizza, you would write her name on the label.
+Wasabi then shows you an address, which Alice needs to know so that she can send you the money.
+Labelling your addresses is important because it helps you and the wallet keep track of who gave you the money and it makes it harder for people to follow your money.
+Once you receive some coins on a newly generated address, Wasabi will automatically hide the address, so that you don't accidentally use it again.
 
 See [this chapter](/using-wasabi/Receive.md) for a tutorial on how to properly label your addresses and receive bitcoin.
 
 ## Sending bitcoin
 
-Sending process is different depending on the privacy of coins you have. Assuming you have enough private coins the sending process is the following:
-
-1. Click the `Send` button (top right corner) at the main view.
-2. Insert the address of the receiver and type in the amount the receiver should get, then click `Continue`.
-3. Enter the name of the person or company receiving the payment and click `Continue`.
-4. Make sure everything is filled in correctly in `Preview Transaction` window and click `Confirm`.
-5. Type in your password and click `Continue`.
-
-You will now see a pop-up window telling you that the transaction is broadcasted to the Bitcoin network.
+Now you want to give some of your money from your piggy bank to your friend.
+First, you click 'Send'.
+Then, you tell the program where to send the money, by writing your friend's address.
+You also tell the program how much money to send, like $5 for a toy.
+Then, you tell the program who the money is for, that is your friend's name.
+Wasabi then shows you a summary of the payment, you double check that everything is right and click 'Confirm'.
+Finally, you type in your secret password, just like how you would unlock your piggy bank, and click 'Continue'.
+And then you get a message that says you sent the money to your friend.
 
 See [this chapter](/using-wasabi/Send.md) for more details about sending bitcoin and the privacy nuances of it.
 
 ## Coinjoin with Wasabi
 
-If you don't like that your employer knows where you spend your money, or that a merchant can find out how much money you have, then you should coinjoin your bitcoin, as this breaks link to its transaction history.
-Although the coinjoin protocol is a bit complex, it is very easy to use in Wasabi.
-The wallet automatically coinjoins all your funds, so that your money becomes private.
-This procress might take some time (hours/days).
-You can still use your wallet in the mean time, however it is a best practice to only use private funds, which the wallet does automatically when possible.
-At the wallet's homescreen the percentage indicates the progress to making your wallet fully private.
-The exact available private amount of bitcoin is listed as `PRIVATE`.
+Of course you don't want people to know where you spend your money or how much money you have in your piggy bank.
+Wasabi can do something called coinjoin, it's like shaking up all the money in your piggy bank with other people's money so no one can tell whose money is whose.
+This process might take some time, like a few hours or days, but you can still use your piggy bank while it's happening.
+The process of making your money private starts automatically, or you press the play button at the bottom of the screen.
+You can check on the progress of making your money private by looking at the screen and seeing a percentage of how much private money you have.
+The exact amount of private money you have will be listed as PRIVATE.
 
 See [this chapter](/using-wasabi/CoinJoin.md) for a thorough analysis of coinjoin, details on the Wasabi implementation and best practices on how to use it properly.
