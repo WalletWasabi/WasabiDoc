@@ -124,7 +124,6 @@ Instead, if you prefer to use some dedicated hardware solutions, these are some 
 - [RaspiBolt](https://stadicus.github.io/RaspiBolt/), another Raspberry DIY node
 - [Nodl](https://www.nodl.it/), works out of the box and runs on a powerful Rockchip CPU
 - [myNode](https://mynodebtc.com/), a DIY project with optional paid versions
-- [Casa](https://keys.casa/lightning-bitcoin-node/), works out of the box on the Raspberry platform
 
 ### Why is it important to use a new address for every payment?
 
