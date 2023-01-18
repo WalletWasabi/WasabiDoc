@@ -74,6 +74,11 @@ html.dark {
 html:not(.dark){
 	--c-text-light: var(--c-text) !important;
 }
+@media only screen and (max-width:997px){
+	.navbar .site-name {
+		display:none;
+	}
+}
 @media only screen and (max-width:720px){
 	html.dark {
 		.sidebar {
