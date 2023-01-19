@@ -840,18 +840,18 @@ This wallet will synchronize for the TestNet, and generate TestNet addresses.
 You can get tBTC from faucets like:
 [coinfaucet.eu/en/btc-testnet](https://coinfaucet.eu/en/btc-testnet/) or [bitcoinfaucet.uo1.net](https://bitcoinfaucet.uo1.net/)
 
-### Does Wasabi have to stay on during CoinJoin?
+### Does Wasabi have to stay on during coinjoin?
 
-Yes, Wasabi needs to stay on during CoinJoins, you cannot be offline and still participate in CoinJoins.
+Yes, Wasabi needs to stay on during coinjoins, you cannot be offline and still participate in coinjoins.
 
-A CoinJoin transaction is different from a normal transaction, where you are the only person signing, and requires many people to sign the same transaction.
+A coinjoin transaction is different from a normal transaction (where you are the only person signing), as it requires multiple participants to sign the same transaction.
 
 Here is how Wasabi handles different scenarios:
 
 |  | During [input registration phase](FAQ-UseWasabi.md#what-is-happening-in-the-input-registration-phase) | After input registration phase |
 |:---:|:---:|:---:|
 | You close Wasabi | Your registered coins are automatically dequeued | Wasabi will make you wait until the round finishes |
-| Wasabi goes offline | Your registered coins are automatically timed out by the coordinator after 1 minute | Your registered coins will be banned for 24h from participating in another CoinJoin. (This is to prevent [DoS attacks](https://github.com/nopara73/ZeroLink/#d-dos-attack)) |
+| Wasabi goes offline | Your registered coins are automatically timed out by the coordinator after 1 minute | Your registered coins will be banned for 3h from participating in another coinjoin. (This is to prevent [DoS attacks](https://github.com/nopara73/ZeroLink/#d-dos-attack)) |
 
 ### What if there's a power outage during CoinJoin? Do I lose my coins?
 
