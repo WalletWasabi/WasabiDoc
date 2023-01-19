@@ -851,7 +851,7 @@ Here is how Wasabi handles different scenarios:
 |  | During [input registration phase](FAQ-UseWasabi.md#what-is-happening-in-the-input-registration-phase) | After input registration phase |
 |:---:|:---:|:---:|
 | You close Wasabi | Your registered coins are automatically dequeued | Wasabi will make you wait until the round finishes |
-| Wasabi goes offline | Your registered coins are automatically timed out by the coordinator after 1 minute | Your registered coins will be banned for 6h from participating in another coinjoin. (This is to prevent [DoS attacks](https://github.com/nopara73/ZeroLink/#d-dos-attack)) |
+| Wasabi goes offline | Your registered coins are automatically timed out by the coordinator after 1 minute | The coin(s) that disrupted the round will be banned for 6h from participating in another coinjoin. (This is to prevent [DoS attacks](https://github.com/nopara73/ZeroLink/#d-dos-attack)) |
 
 ### What if there's a power outage during CoinJoin? Do I lose my coins?
 
