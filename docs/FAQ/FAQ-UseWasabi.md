@@ -1340,7 +1340,7 @@ This reveals your public key to the server, which damages your privacy - the har
 As a result **it is not recommended** that you send your mixed coins to an address associated with your hardware wallet unless you are confident that you have set up your hardware wallet in a way that it does not communicate with a 3rd party server (see below).
 
 You can, however, manage your hardware wallet with the Wasabi interface.
-Alternatively, you can use your hardware wallet with Electrum, and in order to not leak any information to thir-party servers run your own [Electrum Personal Server](https://github.com/chris-belcher/electrum-personal-server), [ElectrumX](https://github.com/kyuupichan/electrumx) or [Electrs](https://github.com/romanz/electrs).
+Alternatively, you can use your hardware wallet with Electrum, and in order to not leak any information to third-party servers run your own [Electrum Personal Server](https://github.com/chris-belcher/electrum-personal-server), [ElectrumX](https://github.com/kyuupichan/electrumx) or [Electrs](https://github.com/romanz/electrs).
 
 ### What can I do with small change?
 
