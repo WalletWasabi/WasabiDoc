@@ -1347,7 +1347,7 @@ Alternatively, you can use your hardware wallet with Electrum, and in order to n
 
 There are no hard and fast rules for [what to do with the change](/using-wasabi/ChangeCoins.md).
 Generally try to avoid the change and use the `Max` button extensively to send whole coins.
-The most problematic type of change is what has `anonymity set 1` <img src="/ShieldRed.png" alt="Wasabi Wallet red shield anonymity set" title="Wasabi Wallet red shield anonymity set" class="shield" />.
+The most problematic type of change is what has `anonymity set 1`.
 You should treat it as a kind of toxic waste [handled with great care].
 You can spend the change to the same entity as the initial transaction, without loosing any privacy.
 Only spend the change to another entity, if these two won't make you trouble knowing you interact with both of them.

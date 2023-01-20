@@ -80,7 +80,7 @@ In order to protect your privacy, add or remove (when possible) a couple of sats
 A CoinJoin has many unequal value inputs, and creates several equal value anonset outputs, as well as unequal value outputs, making it clear that these are the change outputs.
 
 :::tip
-This is why the CoinJoin change has only 1 [anonset](https://docs.wasabiwallet.io/glossary/Glossary-PrivacyWasabi.html#anonymity-set-anonset) <img src="/ShieldRed.png" alt="Wasabi Wallet red shield anonymity set" title="Wasabi Wallet red shield anonymity set" class="shield" />.
+This is why the CoinJoin change has only 1 [anonset](https://docs.wasabiwallet.io/glossary/Glossary-PrivacyWasabi.html#anonymity-set-anonset).
 :::
 
 ```
