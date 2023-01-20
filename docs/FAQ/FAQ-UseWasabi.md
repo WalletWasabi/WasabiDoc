@@ -1323,12 +1323,13 @@ Please note that Wasabi is designed for the dark theme, and some color schemes m
 
 ### Can I consolidate anonset coins?
 
-It is advisable to limit the recombining of <img src="/ShieldCheckmark.png" alt="Wasabi Wallet green checkmark shield anonymity set" title="Wasabi Wallet green checkmark shield anonymity set" class="shield" /> <img src="/ShieldGreen.png" alt="Wasabi Wallet green shield anonymity set" title="Wasabi Wallet green shield anonymity set" class="shield" /> <img src="/ShieldYellow.png" alt="Wasabi Wallet yellow shield anonymity set" title="Wasabi Wallet yellow shield anonymity set" class="shield" /> mixed coins because it can only decrease the privacy of these coins.
+It is advisable to limit the recombining of mixed coins because it can only decrease the privacy of these coins.
 This reveals that all the consolidated UTXOs are controlled by one entity, which was not known before the consolidation.
-That said, if you combine only a couple of mixed coins, you might not reveal your pre-CoinJoin transaction history, especially when you did several re-mixes.
+That said, if you combine only a couple of mixed coins, you might not reveal your pre-coinjoin transaction history, especially when you did several re-mixes.
+So consolidating some private coins is OK to do.
 
 :::warning Take great care!
-Never consolidate <img src="/ShieldRed.png" alt="Wasabi Wallet red shield anonymity set" title="Wasabi Wallet red shield anonymity set" class="shield" /> unmixed coins with <img src="/ShieldCheckmark.png" alt="Wasabi Wallet green checkmark shield anonymity set" title="Wasabi Wallet green checkmark shield anonymity set" class="shield" /> <img src="/ShieldGreen.png" alt="Wasabi Wallet green shield anonymity set" title="Wasabi Wallet green shield anonymity set" class="shield" /> <img src="/ShieldYellow.png" alt="Wasabi Wallet yellow shield anonymity set" title="Wasabi Wallet yellow shield anonymity set" class="shield" /> mixed coins, as this negates the privacy benefits of the CoinJoin.
+Never consolidate non-private coins with private (mixed) coins, as this negates the privacy benefits of the coinjoin.
 :::
 
 [![Watch the video](https://img.youtube.com/vi/Tk8-N1kHa4g/maxresdefault.jpg)](https://youtu.be/Tk8-N1kHa4g)
