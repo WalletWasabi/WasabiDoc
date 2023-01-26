@@ -323,6 +323,10 @@ If you are doing a re-synchronization because you expect some missing funds, but
 No.
 Wasabi client doesn't work with pruned nodes.
 
+### Can I run a Wasabi headless daemon?
+
+No, currently that is not posssible.
+
 ## Receive
 
 ### Why is it bad to re-use addresses?
