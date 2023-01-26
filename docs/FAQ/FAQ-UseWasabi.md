@@ -191,7 +191,7 @@ The `WalletName` will be displayed in the GUI.
 
 Then start Wasabi and load the wallet to synchronize it.
 
-For watch only wallets, the `Send` tab is disabled.
+For watch only wallets, the `Send` button is disabled.
 
 ### What does the privacy progress mean?
 
