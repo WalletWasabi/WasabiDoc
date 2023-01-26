@@ -172,6 +172,7 @@ Open a text editor and paste the following wallet structure:
   "PasswordVerified": true,
   "MinGapLimit": 21,
   "AccountKeyPath": "84'/0'/0'",
+  "TaprootAccountKeyPath": "86'/0'/0'",
   "BlockchainState": {
     "Network": "Main",
     "Height": "0"
@@ -296,6 +297,7 @@ You can rescan an existing Wasabi wallet by editing the `Height` in the wallet f
 ```json
 { // only relevant parts are shown
   "AccountKeyPath": "84'/0'/0'",
+  "TaprootAccountKeyPath": "86'/0'/0'",
   "BlockchainState": {
     "Network": "Main",
     "Height": "0"
