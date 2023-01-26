@@ -191,7 +191,7 @@ The `WalletName` will be displayed in the GUI.
 
 Then start Wasabi and load the wallet to synchronize it.
 
-For watch only wallets, the `Send` tab is disabled.
+For watch only wallets, the `Send` button is disabled.
 
 ### What does the privacy progress mean?
 
@@ -1188,7 +1188,7 @@ Udev rules instructions can be found [here](https://github.com/bitcoin-core/HWI/
 The wallet's main page displays the history of all transactions made with this specific wallet.
 It includes receiving, sending, and coinjoin transactions.
 
-![Wasabi Wallet History tab](/History.png "Wasabi Wallet History tab")
+![Wasabi Wallet History](/History.png "Wasabi Wallet History")
 
 ### How can I see coinjoins in the history list?
 
