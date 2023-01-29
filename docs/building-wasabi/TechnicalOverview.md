@@ -84,8 +84,6 @@ Wasabi also frequently utilizes multiple Tor streams where applicable.
 
 Importantly, registration of CoinJoin inputs and outputs is done through different Tor streams to avoid linking.
 
-![Wasabi Wallet Tor Status Bar](/StatusBarTorRunning.png "Wasabi Wallet Tor Status Bar")
-
 Wasabi's backend is used to facilitate [Chaumian CoinJoin](https://github.com/nopara73/ZeroLink#ii-chaumian-coinjoin) coordination between the mixing participants, and to serve Golomb-Rice filters to the clients, similarly to [BIP 158](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki).
 More information will be provided about the difference soon.
 
@@ -103,8 +101,6 @@ In practice, it was hard to compete with Bitcoin Core's micro-optimizations, and
 Now, Wasabi Wallet users have the option of using the built-in Bitcoin Knots full node, connecting to a different full node, or running the wallet in "light" mode.
 
 Read more about network-level Bitcoin wallet privacy [here](/why-wasabi/NetworkLevelPrivacy.md).
-
-![Wasabi Wallet Backend Status Bar](/StatusBarBackendConnected.png "Wasabi Wallet Backend Status Bar")
 
 Back to Wasabi.
 After loading the wallet, the user can generate a receive address.
@@ -133,13 +129,9 @@ After each block download Wasabi disconnects the related peer.
 
 Furthermore, if you have a full node running in the background Wasabi won't download blocks from peers, but will instead use your full node to fetch the needed blocks.
 
-![Wasabi Wallet Peers Status Bar](/StatusBarPeers.png "Wasabi Wallet Peers Status Bar")
-
 Wasabi receives incoming transactions from the nodes it is connected to.
 This is, while privacy preserving, a relatively insecure way of handling this, and should be improved in the future.
 Generally, unconfirmed transactions are considered to be insecure regardless.
-
-![Wasabi Wallet Ready Status Bar](/StatusBarReady.png "Wasabi Wallet Ready Status Bar")
 
 Unlike in other Bitcoin wallets, generating a label for each Bitcoin address is not optional, but required.
 That is because Wasabi has an intra-wallet blockchain analysis tool built into it, which tries to cluster UTXOs (Wasabi calls them coins).
@@ -167,8 +159,6 @@ This is currently [the optimal way to broadcast transactions from a privacy poin
 
 A more ideal way would be to implement [BIP 156](https://github.com/bitcoin/bips/blob/master/bip-0156.mediawiki) the Dandelion protocol for transaction broadcasting when the Bitcoin network adopts it.
 
-![Wasabi Wallet Send transaction](/SendAmountFeePassword.png "Wasabi Wallet Send transaction")
-
 Coins in Wasabi have Privacy and History properties.
 The anonymity set is just a momentary estimation.
 However, by examining the mixes and other people's transactions, we will be able to show accurate values.
@@ -178,20 +168,12 @@ For example, if the user joins together a "foo" labeled coin with a "bar" labele
 From this, users are able to make educated decisions as to which coins not to join together at any cost.
 Human input is invaluable.
 
-![Wasabi Wallet anonymity set](/SendAnonset.png "Wasabi Wallet anonymity set")
-
 Wasabi has a `CoinJoin` tab as well, and its use is straightforward.
 The user queues their coins for CoinJoin and waits for others to join the mix.
 
-![Wasabi Wallet CoinJoin tab](/CoinJoin.png "Wasabi Wallet CoinJoin tab")
-
 If the user does not wish to proceed, they can dequeue their coins.
 
-![Wasabi Wallet CoinJoin status](/CoinJoinStatus.png "Wasabi Wallet CoinJoin status")
-
 After a mix has successfully executed, the resulting CoinJoin transaction will look like the following real example: [clearnet explorer](https://blockstream.info/tx/a0855875fd3d19522568ad673e4b52e11691d837021d74eef0d177f9e0950bf2) | [onion service explorer](http://explorerzydxu5ecjrkwceayqybizmpjjznk5izmitf2modhcusuqlid.onion/tx/a0855875fd3d19522568ad673e4b52e11691d837021d74eef0d177f9e0950bf2)
-
-![Wasabi Wallet's CoinJoin transaction](/TXCoinJoin.png "Wasabi Wallet's CoinJoin transaction")
 
 ## II. Stability, Performance, UX, Code Quality
 
