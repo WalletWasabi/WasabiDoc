@@ -172,6 +172,7 @@ Open a text editor and paste the following wallet structure:
   "PasswordVerified": true,
   "MinGapLimit": 21,
   "AccountKeyPath": "84'/0'/0'",
+  "TaprootAccountKeyPath": "86'/0'/0'",
   "BlockchainState": {
     "Network": "Main",
     "Height": "0"
@@ -191,7 +192,7 @@ The `WalletName` will be displayed in the GUI.
 
 Then start Wasabi and load the wallet to synchronize it.
 
-For watch only wallets, the `Send` tab is disabled.
+For watch only wallets, the `Send` button is disabled.
 
 ### What does the privacy progress mean?
 
@@ -296,6 +297,7 @@ You can rescan an existing Wasabi wallet by editing the `Height` in the wallet f
 ```json
 { // only relevant parts are shown
   "AccountKeyPath": "84'/0'/0'",
+  "TaprootAccountKeyPath": "86'/0'/0'",
   "BlockchainState": {
     "Network": "Main",
     "Height": "0"
@@ -314,10 +316,18 @@ For example if the problem happened 3 days ago then you can go back a week or so
 `new_height = current_height - (7 * 144)`
 :::
 
+:::tip
+If you are doing a re-synchronization because you expect some missing funds, but after resync you still think your balance is not correct then try to increase the [gap limit](/FAQ/FAQ-UseWasabi.html#how-do-i-change-the-gap-limit-of-a-wallet) of the wallet.
+:::
+
 ### Can Wasabi work with a pruned bitcoin node?
 
 No.
 Wasabi client doesn't work with pruned nodes.
+
+### Can I run a Wasabi headless daemon?
+
+No, currently that is not posssible.
 
 ## Receive
 
@@ -803,6 +813,12 @@ This raw transaction is sent to all Alices, each of them verifies the transactio
 The signature is sent back to the coordinator who accumulates all of them and builds the signed final CoinJoin transaction.
 The [singing phase](/using-wasabi/CoinJoin.md#signing) is concluded when the coordinator receives all the signatures.
 
+### What is happening during the blame round?
+
+If the signing phase fails from becoming successful due to some Alices disrupting the round, then a [blame round](/using-wasabi/CoinJoin.md#blame-round) will be created with the successful Alices.
+In the blame round a new coinjoin will be constructed by repeating the coinjoin phases.
+All Alices have to sign this new transaction and send their signature to the coordinator.
+
 ### What is happening in the broadcasting phase?
 
 In the [broadcasting phase](/using-wasabi/CoinJoin.md#broadcasting) the coordinator sends the signed final CoinJoin transaction to several random Bitcoin peer to peer nodes, and it is gossiped throughout the network to the miners.
@@ -830,18 +846,18 @@ This wallet will synchronize for the TestNet, and generate TestNet addresses.
 You can get tBTC from faucets like:
 [coinfaucet.eu/en/btc-testnet](https://coinfaucet.eu/en/btc-testnet/) or [bitcoinfaucet.uo1.net](https://bitcoinfaucet.uo1.net/)
 
-### Does Wasabi have to stay on during CoinJoin?
+### Does Wasabi have to stay on during coinjoin?
 
-Yes, Wasabi needs to stay on during CoinJoins, you cannot be offline and still participate in CoinJoins.
+Yes, Wasabi needs to stay on during coinjoins, you cannot be offline and still participate in coinjoins.
 
-A CoinJoin transaction is different from a normal transaction, where you are the only person signing, and requires many people to sign the same transaction.
+A coinjoin transaction is different from a normal transaction (where you are the only person signing), as it requires multiple participants to sign the same transaction.
 
 Here is how Wasabi handles different scenarios:
 
 |  | During [input registration phase](FAQ-UseWasabi.md#what-is-happening-in-the-input-registration-phase) | After input registration phase |
 |:---:|:---:|:---:|
 | You close Wasabi | Your registered coins are automatically dequeued | Wasabi will make you wait until the round finishes |
-| Wasabi goes offline | Your registered coins are automatically timed out by the coordinator after 1 minute | Your registered coins will be banned for 24h from participating in another CoinJoin. (This is to prevent [DoS attacks](https://github.com/nopara73/ZeroLink/#d-dos-attack)) |
+| Wasabi goes offline | Your registered coins are automatically timed out by the coordinator after 1 minute | The coin(s) that disrupted the round will be banned for 6h from participating in another coinjoin. (This is to prevent [DoS attacks](https://github.com/nopara73/ZeroLink/#d-dos-attack)) |
 
 ### What if there's a power outage during CoinJoin? Do I lose my coins?
 
@@ -1142,13 +1158,13 @@ Ledger could potentially analyze information from API calls to their nodes to li
 
 To avoid any privacy leak, you can use a Ledger hardware wallet in combination with Wasabi as a software interface, and because Wasabi does not leak your addresses, your transaction history is not shared with anyone.
 
-### After I CoinJoined my coins and reached green anonset, I sent them to my hardware wallet address. When I check my HW via Wasabi, the coins are now red. Why?
+### After I coinjoined my coins and reached 100% privacy, I sent them to my hardware wallet and now the coins have anonscore 1. Why?
 
 Everything is working as expected.
 
-The anonymity set info (number) is tied to your wallet that you used to CoinJoin, if you send a mixed coin to another Wasabi Wallet of yours (hardware wallet or normal wallet) it will have an anonymity set 1 <img src="/ShieldRed.png" alt="Wasabi Wallet red shield anonymity set" title="Wasabi Wallet red shield anonymity set" class="shield" /> because this wallet doesn't know that the coin was coinjoined.
+The anonymity score (number) is tied to your wallet that you used to coinjoin, if you send a coinjoined coin to another Wasabi Wallet of yours (hardware wallet or normal wallet) it will have an anonscore of 1 because this wallet doesn't know all of the coinjoin history.
 
-You should put a meaningful label when you generate a receive address in your hardware wallet, e.g. "coinjoined utxo with anonymity set 70" (something that reminds you that you got this utxo from your Wasabi Wallet and it was coinjoined).
+You should put a meaningful label when you generate a receive address in your hardware wallet, e.g. "private UTXO" (something that reminds you that you got this UTXO from your Wasabi Wallet and that it was coinjoined).
 
 ### Can I use Trezor One with Wasabi?
 
@@ -1178,7 +1194,7 @@ Udev rules instructions can be found [here](https://github.com/bitcoin-core/HWI/
 The wallet's main page displays the history of all transactions made with this specific wallet.
 It includes receiving, sending, and coinjoin transactions.
 
-![Wasabi Wallet History tab](/History.png "Wasabi Wallet History tab")
+![Wasabi Wallet History](/History.png "Wasabi Wallet History")
 
 ### How can I see coinjoins in the history list?
 
@@ -1200,10 +1216,10 @@ Yes, the history items can be sorted by clicking on the column title:
 
 ![Sort Date Column](/HistorySortDateColumn.png "Sort Date Column")
 
-### Can I search for a TXID in the history?
+### Can I search for a transaction ID in the history?
 
 Yes.
-This can be done by pasting the TXID into the search bar or by manually typing part of the TXID.
+This can be done by pasting the transaction ID into the search bar or by manually typing part of the transaction ID.
 After clicking the result, the transaction will be highlighted in the history.
 
 ![SearchBar Search TX](/SearchBarTXIDSearch.png "SearchBar Search TX")
@@ -1313,12 +1329,13 @@ Please note that Wasabi is designed for the dark theme, and some color schemes m
 
 ### Can I consolidate anonset coins?
 
-It is advisable to limit the recombining of <img src="/ShieldCheckmark.png" alt="Wasabi Wallet green checkmark shield anonymity set" title="Wasabi Wallet green checkmark shield anonymity set" class="shield" /> <img src="/ShieldGreen.png" alt="Wasabi Wallet green shield anonymity set" title="Wasabi Wallet green shield anonymity set" class="shield" /> <img src="/ShieldYellow.png" alt="Wasabi Wallet yellow shield anonymity set" title="Wasabi Wallet yellow shield anonymity set" class="shield" /> mixed coins because it can only decrease the privacy of these coins.
+It is advisable to limit the recombining of mixed coins because it can only decrease the privacy of these coins.
 This reveals that all the consolidated UTXOs are controlled by one entity, which was not known before the consolidation.
-That said, if you combine only a couple of mixed coins, you might not reveal your pre-CoinJoin transaction history, especially when you did several re-mixes.
+That said, if you combine only a couple of mixed coins, you might not reveal your pre-coinjoin transaction history, especially when you did several re-mixes.
+So consolidating some private coins is OK to do.
 
 :::warning Take great care!
-Never consolidate <img src="/ShieldRed.png" alt="Wasabi Wallet red shield anonymity set" title="Wasabi Wallet red shield anonymity set" class="shield" /> unmixed coins with <img src="/ShieldCheckmark.png" alt="Wasabi Wallet green checkmark shield anonymity set" title="Wasabi Wallet green checkmark shield anonymity set" class="shield" /> <img src="/ShieldGreen.png" alt="Wasabi Wallet green shield anonymity set" title="Wasabi Wallet green shield anonymity set" class="shield" /> <img src="/ShieldYellow.png" alt="Wasabi Wallet yellow shield anonymity set" title="Wasabi Wallet yellow shield anonymity set" class="shield" /> mixed coins, as this negates the privacy benefits of the CoinJoin.
+Never consolidate non-private coins with private (mixed) coins, as this negates the privacy benefits of the coinjoin.
 :::
 
 [![Watch the video](https://img.youtube.com/vi/Tk8-N1kHa4g/maxresdefault.jpg)](https://youtu.be/Tk8-N1kHa4g)
@@ -1330,13 +1347,13 @@ This reveals your public key to the server, which damages your privacy - the har
 As a result **it is not recommended** that you send your mixed coins to an address associated with your hardware wallet unless you are confident that you have set up your hardware wallet in a way that it does not communicate with a 3rd party server (see below).
 
 You can, however, manage your hardware wallet with the Wasabi interface.
-Alternatively, you can use your hardware wallet with Electrum, and in order to not leak any information to thir-party servers run your own [Electrum Personal Server](https://github.com/chris-belcher/electrum-personal-server), [ElectrumX](https://github.com/kyuupichan/electrumx) or [Electrs](https://github.com/romanz/electrs).
+Alternatively, you can use your hardware wallet with Electrum, and in order to not leak any information to third-party servers run your own [Electrum Personal Server](https://github.com/chris-belcher/electrum-personal-server), [ElectrumX](https://github.com/kyuupichan/electrumx) or [Electrs](https://github.com/romanz/electrs).
 
 ### What can I do with small change?
 
 There are no hard and fast rules for [what to do with the change](/using-wasabi/ChangeCoins.md).
 Generally try to avoid the change and use the `Max` button extensively to send whole coins.
-The most problematic type of change is what has `anonymity set 1` <img src="/ShieldRed.png" alt="Wasabi Wallet red shield anonymity set" title="Wasabi Wallet red shield anonymity set" class="shield" />.
+The most problematic type of change is what has `anonymity set 1`.
 You should treat it as a kind of toxic waste [handled with great care].
 You can spend the change to the same entity as the initial transaction, without loosing any privacy.
 Only spend the change to another entity, if these two won't make you trouble knowing you interact with both of them.
