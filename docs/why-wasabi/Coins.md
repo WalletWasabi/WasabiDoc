@@ -34,7 +34,9 @@ This means that coin consolidation can lead to an overall decrease in privacy, e
 
 Using Wasabi it is mandatory to label every receiving and destination address.
 This helps the user to know where their coins came from so that they can judge whether there are privacy concerns when sending a specific coin to a specific receiver.
-The default _Send_ workflow let's the user select who should know about this transaction based on the labeling system.
+The default _Send_ workflow uses the auto coin selection algorithm, which is based on the labeling system.
+
+Read more [here](/https://docs.wasabiwallet.io/using-wasabi/Receive.md#the-importance-of-labeling).
 
 ## Heuristics identifying change
 
