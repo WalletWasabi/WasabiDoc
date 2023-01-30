@@ -32,10 +32,11 @@ This means that coin consolidation can lead to an overall decrease in privacy, e
 
 ### Manual coin labeling and selection
 
-Contrary to many other wallets, Wasabi does not show only the total value of bitcoin in the wallet.
-Rather, in both the `Send` and `CoinJoin` tabs there is a list of all the individual UTXOs.
-Because Wasabi requires users to label every receiving address, the history of each coin is clear for the user at first glance.
-In order to spend a specific coin, it must be manually selected, which prevents the wrong coin from being included in the transaction.
+Using Wasabi it is mandatory to label every receiving and destination address.
+This helps the user to know where their coins came from so that they can judge whether there are privacy concerns when sending a specific coin to a specific receiver.
+The default _Send_ workflow uses the auto coin selection algorithm, which is based on the labeling system.
+
+Read more [here](/https://docs.wasabiwallet.io/using-wasabi/Receive.md#the-importance-of-labeling).
 
 ## Heuristics identifying change
 
