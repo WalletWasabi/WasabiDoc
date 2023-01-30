@@ -33,7 +33,7 @@ This means that coin consolidation can lead to an overall decrease in privacy, e
 ### Manual coin labeling and selection
 
 Using Wasabi it is mandatory to label every receiving and destination address.
-This helps the user to know where your coins came from so that you can judge whether there are privacy concerns when sending a specific coin to a specific receiver.
+This helps the user to know where their coins came from so that they can judge whether there are privacy concerns when sending a specific coin to a specific receiver.
 The default _Send_ workflow let's the user select who should know about this transaction based on the labeling system.
 
 ## Heuristics identifying change
