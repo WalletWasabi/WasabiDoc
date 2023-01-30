@@ -71,7 +71,7 @@ Select one and click `Continue`.
 
 ### Can I rename my Wallet?
 
-Yes you can.
+Yes, but not in the GUI, you'd need to manually rename the wallet file.
 To access the `Wallets` folder type `Wallet Folder` in the search bar at the top of the main view and rename the .json Wallet file.
 Or you can navigate to the `Wallets` folder (inside the [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder)) and rename the .json Wallet file.
 Then go to `WalletBackups` folder (inside [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder)) and rename the .json Wallet file.
