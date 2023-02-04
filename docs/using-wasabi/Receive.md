@@ -90,7 +90,7 @@ Those inputs that participate in a Wasabi [coinjoin](/using-wasabi/CoinJoin.md) 
 By default, Wasabi tries to create big coinjoin transactions with many inputs and outputs, but the individual coins' privacy varies depending on the final amounts and values of the inputs and outputs of other participants.
 The higher the anonymity score of a coin, the harder it is for an observer to know who that coin belongs to.
 For that reason, coins with a high anonymity score are usually the ones preferred when making a payment transaction.
-When coins achieve the target anonymity score of the selected privacy profile, their values will the visible under the Privacy Progress bar.
+When coins achieve the target anonymity score of the selected coinjoin strategy, their values will the visible under the Privacy Progress bar.
 
 ### Final words about labels and examples
 
