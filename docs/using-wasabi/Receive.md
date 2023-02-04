@@ -87,7 +87,7 @@ In case none of those combinations are acceptable for you then you should CoinJo
 ### Coinjoined coins
 
 Those inputs that participate in a Wasabi [coinjoin](/using-wasabi/CoinJoin.md) transaction get transformed into arbitrary sized outputs with an increased anonymity score.
-By default, Wasabi tries to create coinjoin transactions with 400 inputs and outputs, but the individual coins' privacy varies depending on the final amounts and values of the inputs and outputs of other participants.
+By default, Wasabi tries to create big coinjoin transactions with many inputs and outputs, but the individual coins' privacy varies depending on the final amounts and values of the inputs and outputs of other participants.
 The higher the anonymity score of a coin, the harder it is for an observer to know who that coin belongs to.
 For that reason, coins with a high anonymity score are usually the ones preferred when making a payment transaction.
 When coins achieve the target anonymity score of the selected privacy profile, their values will the visible under the Privacy Progress bar.
