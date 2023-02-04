@@ -968,7 +968,7 @@ The default Auto-start coinjoin threshold is 0.01 BTC.
 
 When the `Red coin isolation` is active, only a single coin with anonymity score 1 will be allowed into the coinjoin registration.
 To prevent possible coinjoin input heuristics from outside observers.
-The `Red coin isolation` is active by default when the `Maximize Privacy` profile is selected.
+The `Red coin isolation` is active by default when the `Maximize Privacy` coinjoin strategy is selected.
 
 ![Red Coin Isolation](/RedCoinIsolation.png "Red Coin Isolation")
 
