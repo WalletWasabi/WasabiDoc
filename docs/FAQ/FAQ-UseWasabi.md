@@ -687,6 +687,23 @@ The transaction will get confirmed based on the fee level of the combined parent
 For example, if the initial transaction pays a 1 sat/vbyte fee and the child transaction pays a 5 sat/vbyte fee, then the combined fee level is the average of both, thus 3 sat/vbyte.
 (Assuming both transactions are roughly the same size.)
 
+An outgoing transaction can only be bumped if you have a change output from the transaction you want to bump.
+You need to create a new high(er) fee paying transaction with that change output.
+
+To bump an outgoing transaction with CPFP:
+Make sure you have a change output.
+
+-Generate a receive address
+-[Open the `Wallet Coins` dialog](FAQ-UseWasabi.md#how-do-I-select-coins-for-spending)
+-Select the unconfirmed (change) coin and click _Send selected coins_ 
+-Paste the bitcoin address
+-Enter the label
+-At the `Preview Transaction` dialog, click on _Change transaction fee or confirmation time_ and enter a high(er) fee than the original transaction
+-Send the transaction
+
+The CPFP fee bump has been done.
+Now wait until the transactions are confirmed.
+
 ### Why is there no `Send` button, only the `Receive` button is displayed?
 
 When the wallet has a balance of 0.00000000 BTC, the `Send` button is hidden because there is no bitcoin to send.
