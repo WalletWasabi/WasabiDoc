@@ -704,6 +704,10 @@ Make sure you have a change output.
 The CPFP fee bump has been done.
 Now wait until the transactions are confirmed.
 
+:::tip The bump fee UX will be improved
+Currently it requires multiple steps, in the future there will be an easy click _bump fee_
+:::
+
 ### Why is there no `Send` button, only the `Receive` button is displayed?
 
 When the wallet has a balance of 0.00000000 BTC, the `Send` button is hidden because there is no bitcoin to send.
