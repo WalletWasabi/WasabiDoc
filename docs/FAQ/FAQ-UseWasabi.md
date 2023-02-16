@@ -680,7 +680,7 @@ This is good for privacy, and also saves you some transaction fees.
 ### How can I bump the transaction fee with child pays for parent (CPFP)?
 
 If you have sent or received a transaction with a low fee and it does not get confirmed within reasonable time, then you can do child pays for parent to get it confirmed faster.
-The trick is, to make a new transaction which spends the unconfirmed coin that you have received with a higher fee.
+The trick is, to make a new transaction which spends the unconfirmed coin that you have received with a higher fee rate.
 This can be either a payment transaction from you to another person, or a self spend transaction.
 
 The transaction will get confirmed based on the fee level of the combined parent and child transactions.
