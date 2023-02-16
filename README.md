@@ -18,6 +18,8 @@ If you need help regarding the software specifically, please check out [Discussi
 
 # 🏛️ The pillars of the documentation
 
+* ## [Getting Started](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/getting-started/)
+  * Getting started guide.
 * ## [Why Wasabi](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/why-wasabi/)
   * Why privacy is important.
 * ## [Using Wasabi](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/using-wasabi/)
