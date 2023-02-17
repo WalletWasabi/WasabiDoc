@@ -38,6 +38,13 @@ The default _Send_ workflow uses the auto coin selection algorithm, which is bas
 
 Read more [here](/https://docs.wasabiwallet.io/using-wasabi/Receive.md#the-importance-of-labeling).
 
+### Change avoidance suggestion
+
+When sending bitcoin, the transaction might contain change (back to the sender).
+This can have privacy downsides as explained [here](using-wasabi/ChangeCoins.md#why-change-is-an-issue).
+When sending in Wasabi the user will be shown with an option to avoid change by slightly increasing or decreasing the send amount in order to avoid change (if possible).
+There is a shield icon shown at the _Preview Transaction_ screen at the top right corner which displays the options when hovering over with the cursor.
+
 ## Heuristics identifying change
 
 One prime goal of [transaction surveillance companies](/why-wasabi/TransactionSurveillanceCompanies.md) is to identify the change coin of a Bitcoin transaction, as this is vital information for building a cluster of coins belonging to one entity.
