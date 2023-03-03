@@ -253,6 +253,10 @@ An output locked by a P2PKH script can be unlocked (spent) by presenting a publi
 P2SH or Pay-to-Script-Hash is a type of transaction that simplifies the use of complex transaction scripts.
 With P2SH the complex script that details the spending conditions (redeem script) is committed to with a hash in the locking script.
 
+### P2TR
+
+A pay-to-taproot (P2TR), also known as a Taproot or Bech32m address, is the most recent and advanced bitcoin address format. Taproot introduces more advanced security, privacy, flexibility and scaling to bitcoin.
+
 ### P2WPKH
 
 The signature of a P2WPKH (Pay-to-Witness-Public-Key-Hash) contains the same information as a P2PKH spending, but is located in the witness field instead of the scriptSig field.
