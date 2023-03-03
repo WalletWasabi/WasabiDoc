@@ -255,7 +255,7 @@ With P2SH the complex script that details the spending conditions (redeem script
 
 ### P2TR
 
-Pay-to-Taproot (P2TR) is a type of ScriptPubKey which locks bitcoin to a script that can be unlocked by a public key or a Merkelized Alternative Script Tree (MAST), allowing the bitcoin to be spent in a variety of ways.
+A pay-to-taproot (P2TR), also known as a Taproot or Bech32m address, is the most recent and advanced bitcoin address format. Taproot introduces more advanced security, privacy, flexibility and scaling to bitcoin.
 
 ### P2WPKH
 
