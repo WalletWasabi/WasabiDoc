@@ -233,8 +233,8 @@ It also shows some information about the current coinjoin round.
 
 ### Does Wasabi support Taproot?
 
-Partially, Wasabi supports sending to Taproot (bech32m) address format.
-However, receiving with Taproot is not yet supported.
+Partially, Wasabi supports sending to Taproot (bech32m) address format and receiving Taproot outputs from a coinjoin.
+However, generating a Taproot receive address is not yet supported.
 
 ## Synchronization
 
