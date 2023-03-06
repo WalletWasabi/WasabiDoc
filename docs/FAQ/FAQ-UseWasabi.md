@@ -1287,9 +1287,9 @@ Dust can mean [a lot of things](https://bitcoin.stackexchange.com/questions/1098
 It can be a non-economical input, that is a UTXO that has less value than the fees it would cost to spend this coin.
 A dust attack is actually about [forced address reuse](https://en.bitcoin.it/Privacy#Forced_address_reuse), the malicious actor sends very small amounts into old addresses and consolidation of these dust UTXOs can link several coins in a wallet cluster.
 
-Specifically in the context of Wasabi, with the dust threshold settings you can limit the value of coins shown in the GUI.
-Coins that you receive from other wallets which are *less than or equal to* the dust threshold in value are not shown.
-For example: When you set it to `0.0000 5000 BTC`, and when you receive a coin worth `0.0000 4000 BTC`, then this transaction and the coin in the coin list will not be shown.
+Specifically in the context of Wasabi, with the dust threshold settings you can limit the value of spam coins shown in the GUI.
+Coins that you receive from other wallets (so no self-spend) which are *less than* the dust threshold in value and are received on an already used address are not shown.
+For example: When it is set to `0.0000 5000 BTC`, and you receive a coin worth `0.0000 4000 BTC` to an already used address, then this transaction and the coin in the coin list will not be shown.
 
 ![Wasabi Wallet Dust threshold settings](/SettingsDustThreshold.png "Wasabi Wallet Dust threshold settings")
 
