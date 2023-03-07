@@ -1289,7 +1289,7 @@ A dust attack is actually about [forced address reuse](https://en.bitcoin.it/Pri
 
 Specifically in the context of Wasabi, with the dust threshold settings you can limit the value of spam coins shown in the GUI.
 Coins that you receive from other wallets (so no self-spend) which are *less than* the dust threshold in value and are received on an already used address are not shown.
-For example: When it is set to `0.0000 5000 BTC`, and you receive a coin worth `0.0000 4000 BTC` to an already used address, then this transaction and the coin in the coin list will not be shown.
+For example: When it is set to `0.0000 5000 BTC`, and you receive a coin worth `0.0000 4000 BTC` from a different wallet to an already used address, then this transaction and the coin in the coin list will not be shown.
 
 ![Wasabi Wallet Dust threshold settings](/SettingsDustThreshold.png "Wasabi Wallet Dust threshold settings")
 
