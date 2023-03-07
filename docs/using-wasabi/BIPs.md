@@ -30,6 +30,7 @@ Here is a list of all the supported and integrated Bitcoin Improvement Proposals
 - [BIP 158: Block filters](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki)
 - [BIP 173: Base32 address format for native v0-16 witness outputs](https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki)
 - [BIP 174: Partially Signed Bitcoin Transaction Format](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki)
+- [BIP 341: Taproot: SegWit version 1 spending rules](https://github.com/bitcoin/bips/blob/master/bip-0341.mediawiki)
 
 ## What is not supported
 
