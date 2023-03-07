@@ -14,7 +14,7 @@ To gain some privacy by using Electrum you should set up Tor on Network preferen
 :::
 
 :::warning Electrum does not support Taproot
-As of Wasabi version 2.0.3, users may receive Taproot outputs from coinjoin or as a change output.
+As of Wasabi [version 2.0.3](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v2.0.3), users may receive Taproot outputs from coinjoin or as a change output.
 So when recovering a wallet from Wasabi in Electrum some funds might be missing, as the Taproot (SegWit v1) coins are not shown.
 An other wallet that does support Taproot should be used for recovering Taproot coins.
 :::
