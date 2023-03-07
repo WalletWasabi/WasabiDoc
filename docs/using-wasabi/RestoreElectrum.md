@@ -13,7 +13,7 @@ If you do not run your own Electrum server, you will leak all your addresses to 
 To gain some privacy by using Electrum you should set up Tor on Network preferences or by installing your own Electrum server via [Electrum Personal Server](https://github.com/chris-belcher/electrum-personal-server), [ElectrumX](https://github.com/kyuupichan/electrumx) or [Electrs](https://github.com/romanz/electrs).
 :::
 
-:::warning Electrum does not support Taproot
+:::warning Electrum does currently not support Taproot
 As of Wasabi [version 2.0.3](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v2.0.3), users may receive Taproot outputs from coinjoin or as a change output.
 So when recovering a wallet from Wasabi in Electrum some funds might be missing, as the Taproot (SegWit v1) coins are not shown.
 An other wallet that does support Taproot should be used for recovering Taproot coins.
