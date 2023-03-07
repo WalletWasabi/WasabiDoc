@@ -169,6 +169,7 @@ Open a text editor and paste the following wallet structure:
   "ChainCode": null,
   "MasterFingerprint": null,
   "ExtPubKey": "",
+  "TaprootExtPubKey": "",
   "PasswordVerified": true,
   "MinGapLimit": 21,
   "AccountKeyPath": "84'/0'/0'",
@@ -182,10 +183,11 @@ Open a text editor and paste the following wallet structure:
 }
 ```
 
-Then paste your extended public key in-between the quotes of the field `"ExtPubKey": "paste xpub here",`.
+Then paste your _SegWit Extended Account Public Key_ in-between the quotes of the field `"ExtPubKey": "paste segwit xpub here",` and your _Taproot Extended Account Public Key_ in-between the quotes of the field `TaprootExtPubKey": "paste taproot xpub here",`
 
-You can also change the `"AccountKeyPath": "84'/0'/0'",` field if you want to import a different derivation path.
-But notice that Wasabi only works with native SegWit bech32 addresses.
+You can also change the derivation path fields if you want to import a different derivation path.
+But this is only for advanced usage. 
+Notice that Wasabi only works with SegWit v0 bech32, and SegWit v1 bech32m (Taproot) addresses.
 
 Save this file in your [`Wallets` data folder](/FAQ/FAQ-UseWasabi.html#where-can-i-find-the-wasabi-data-folder) as a json file like this: `WalletName.json`.
 The `WalletName` will be displayed in the GUI.
