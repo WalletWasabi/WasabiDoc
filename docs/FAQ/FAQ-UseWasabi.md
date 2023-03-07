@@ -183,7 +183,7 @@ Open a text editor and paste the following wallet structure:
 }
 ```
 
-Then paste your _SegWit Extended Account Public Key_ in-between the quotes of the field `"ExtPubKey": "paste xpub here",` and your _Taproot Extended Account Public Key_ in-between the quotes of the field `TaprootExtPubKey": "paste Taproot xpub here",`
+Then paste your _SegWit Extended Account Public Key_ in-between the quotes of the field `"ExtPubKey": "paste segwit xpub here",` and your _Taproot Extended Account Public Key_ in-between the quotes of the field `TaprootExtPubKey": "paste taproot xpub here",`
 
 You can also change the derivation path fields if you want to import a different derivation path.
 But this is only for advanced usage. 
