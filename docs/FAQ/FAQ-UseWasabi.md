@@ -187,7 +187,7 @@ Then paste your _SegWit Extended Account Public Key_ in-between the quotes of th
 
 You can also change the derivation path fields if you want to import a different derivation path.
 But this is only for advanced usage. 
-Notice that Wasabi only works with native SegWit bech32, and Taproot bech32m addresses.
+Notice that Wasabi only works with SegWit v0 bech32, and SegWit v1 bech32m (Taproot) addresses.
 
 Save this file in your [`Wallets` data folder](/FAQ/FAQ-UseWasabi.html#where-can-i-find-the-wasabi-data-folder) as a json file like this: `WalletName.json`.
 The `WalletName` will be displayed in the GUI.
