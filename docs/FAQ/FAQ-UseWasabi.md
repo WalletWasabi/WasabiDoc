@@ -1329,6 +1329,19 @@ Please note that Wasabi is designed for the dark theme, and some color schemes m
 
 [![Watch the video](https://img.youtube.com/vi/k4VzJ6dUT9I/maxresdefault.jpg)](https://youtu.be/k4VzJ6dUT9I)
 
+### How can I enable (manual) coin control?
+
+The default [send workflow](using-wasabi/Send.md#how-to-send-bitcoin-step-by-step) uses the automatic coin selection algorithm, this is optimized in a way that "traditional" coin control is obsolete.
+However, the user can review which coins are selected, or select different coins using the (manual) coin control.
+This can be done by pressing the keyboard `alt` key at the Preview Transaction screen, which will bring up the _Review coins_ button to click on.
+
+![Send Review Coins](/SendPreviewTransactionReviewCoins.png "Send Review Coins")
+
+:::warning This is a developer feature
+Do NOT use the manual coin control if you do not know what you are doing.
+Misusing it can have seriously bad privacy consequences.
+:::
+
 ### Can I consolidate anonset coins?
 
 It is advisable to limit the recombining of mixed coins because it can only decrease the privacy of these coins.
