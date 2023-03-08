@@ -1354,8 +1354,10 @@ Alternatively, you can use your hardware wallet with Electrum, and in order to n
 ### What can I do with small change?
 
 There are no hard and fast rules for [what to do with the change](/using-wasabi/ChangeCoins.md).
-Generally try to avoid the change and use the `Max` button extensively to send whole coins.
-The most problematic type of change is what has `anonymity set 1`.
+Generally try to avoid having change by using the [_change avoidance_ suggestions when sending](using-wasabi/Send.md#how-to-send-bitcoin-step-by-step).
+Generally change should be coinjoined, Wasabi automatically coinjoins the change if possible (more than the 5000 sat + mining fee minimum).
+
+The most problematic type of change is what has `anonymity score 1`.
 You should treat it as a kind of toxic waste [handled with great care].
 You can spend the change to the same entity as the initial transaction, without loosing any privacy.
 Only spend the change to another entity, if these two won't make you trouble knowing you interact with both of them.
