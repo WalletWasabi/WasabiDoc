@@ -1325,10 +1325,6 @@ Please note that Wasabi is designed for the dark theme, and some color schemes m
 
 ## Coin Control Best Practices
 
-[![Watch the video](https://img.youtube.com/vi/iyJ81JRvLQk/maxresdefault.jpg)](https://youtu.be/iyJ81JRvLQk)
-
-[![Watch the video](https://img.youtube.com/vi/k4VzJ6dUT9I/maxresdefault.jpg)](https://youtu.be/k4VzJ6dUT9I)
-
 ### Can I consolidate anonset coins?
 
 It is advisable to limit the recombining of mixed coins because it can only decrease the privacy of these coins.
