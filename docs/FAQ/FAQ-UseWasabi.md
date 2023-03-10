@@ -1325,10 +1325,6 @@ Please note that Wasabi is designed for the dark theme, and some color schemes m
 
 ## Coin Control Best Practices
 
-[![Watch the video](https://img.youtube.com/vi/iyJ81JRvLQk/maxresdefault.jpg)](https://youtu.be/iyJ81JRvLQk)
-
-[![Watch the video](https://img.youtube.com/vi/k4VzJ6dUT9I/maxresdefault.jpg)](https://youtu.be/k4VzJ6dUT9I)
-
 ### How can I enable (manual) coin control?
 
 The default [send workflow](using-wasabi/Send.md#how-to-send-bitcoin-step-by-step) uses the automatic coin selection algorithm, this is optimized in a way that "traditional" coin control is obsolete.

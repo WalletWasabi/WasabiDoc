@@ -11,7 +11,7 @@
 
 A Bitcoin invoice address commits to a public key or script which defines who can spend the coin.
 It is specified in the output of a transaction, and it should only be used once.
-Wasabi uses the bech32 format to encode native segregated witness addresses.
+Wasabi uses the bech32 and bech32m format to encode native segregated witness addresses.
 Read more: [Bitcoin addresses](/using-wasabi/Receive.md#bitcoin-public-keys-and-addresses)
 
 ### Bitcoin
