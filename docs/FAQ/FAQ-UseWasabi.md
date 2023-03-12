@@ -475,7 +475,8 @@ The QR Code is displayed and can be saved as a png file by clicking on the Save 
 ### What derivation paths does Wasabi use?
 
 Wasabi follows [BIP 84: Derivation scheme for P2WPKH Based Accounts](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki) (`m/84'/0'/0'`) and [BIP 86: Key Derivation for Single Key P2TR Outputs](https://github.com/bitcoin/bips/blob/master/bip-0086.mediawiki) (`m/86'/0'/0'`).
-Note that Taproot isn't supported yet so the main path is `m/84'/0'/0'`.
+
+Note that Wasabi is currently not generating external taproot addresses yet so the main path is `m/84'/0'/0'`.
 
 On TestNet Wasabi uses the paths `m/84'/1'/0'` and `m/86'/1'/0'`.
 On RegTest it uses `m/84'/0'/0'` and `m/86'/0'/0'`, and not the standard `m/84'/1'/0'` and `m/86'/1'/0'` paths.
