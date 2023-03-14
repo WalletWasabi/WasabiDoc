@@ -117,7 +117,7 @@ If after a timeout not all outputs are registered, then this round is abandoned,
 
 :::tip Possibility of Taproot outputs from coinjoin
 Since Wasabi [version 2.0.3](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v2.0.3) coinjoin outputs can be SegWit v0 and SegWit v1 (Taproot).
-If running this version or higher, the client registers the output type in a semi-random way (~50% change of receiving Taproot output).
+If running this version or higher, the client registers the output type in a semi-random way (~50% chance of receiving Taproot output).
 :::
 
 ### Signing
