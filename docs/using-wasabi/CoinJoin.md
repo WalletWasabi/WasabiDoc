@@ -115,6 +115,11 @@ Because Alice received a credential from the coordinator, and because Bob is a n
 The output registration phase ends when the value of cleartext outputs is equal to the value of inputs, meaning that all Bobs have registered.
 If after a timeout not all outputs are registered, then this round is abandoned, the missing inputs are temporarily banned, and a new round is started.
 
+:::tip Possibility of Taproot outputs from coinjoin
+Since Wasabi [version 2.0.3](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v2.0.3) coinjoin outputs can be SegWit v0 and SegWit v1 (Taproot).
+If running this version or higher, the client registers the output type in a semi-random way (~50% chance of receiving Taproot output).
+:::
+
 ### Signing
 
 Now that all inputs and outputs are registered, the coordinator can start the [signing phase](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-signing-phase), by building the coinjoin transaction with all the registered inputs and outputs.
