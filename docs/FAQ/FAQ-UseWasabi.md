@@ -1331,7 +1331,7 @@ Please note that Wasabi is designed for the dark theme, and some color schemes m
 
 The default [send workflow](using-wasabi/Send.md#how-to-send-bitcoin-step-by-step) uses the automatic coin selection algorithm, which is optimized in a way that "traditional" coin control is obsolete.
 However, the user can review which coins are selected, or select different coins using the (manual) coin control.
-This can be done by pressing and holding the keystroke `alt` at the Preview Transaction screen, which will bring up the _Review coins_ button to click on.
+This can be done by pressing and holding the keystroke `alt` (or `option` on mac device) at the Preview Transaction screen, which will bring up the _Review coins_ button to click on.
 
 ![Send Review Coins](/SendPreviewTransactionReviewCoins.png "Send Review Coins")
 
