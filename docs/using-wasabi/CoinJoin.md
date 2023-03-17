@@ -24,11 +24,33 @@ WabiSabi enables centrally coordinated coinjoins with variable amounts in a trus
 2. Wait. Wasabi coinjoins automatically in the background.
 3. You're done! You can make private payments now.
 
-### More details
+### Music box
 
-At first wallet load, you can choose one of the coinjoin strategy profiles:
+After opening a hot wallet, it will automatically start a countdown to start coinjoining (±10 minutes).
+This and other coinjoin related information is shown in the music box.
 
-![Coinjoin Strategy](/CoinjoinStrategy.png)
+![Music Box Countdown](/MusicBoxWaitingToAutoStartCoinJoin.png "Music Box Countdown")
+
+After the _Waiting to auto-start coinjoin_ countdown is finished it will start pariticipating in the [coinjoin process](/using-wasabi/CoinJoin.md#wabisabi-protocol-step-by-step).
+
+A blue aura will shown up at the the bottom of the wallet, which indicates that the wallet is coinjoining, and the music box message will change.
+
+![Music Box Waiting For Other Participants](/MusicBoxWaitingForOtherParticipants.png "Music Box Waiting For Other Participants")
+
+After some time the blue aura will change to an orange one, this indicates that the coinjoin process is now in a critical phase.
+Wasabi will prevent you from shutting down the app during the orange aura to not disrupt the coinjoin round.
+
+![Music Box Coinjoin In Progress](/MusicBoxCoinjoinInProgress.png "Music Box Coinjoin In Progress")
+
+If this is succesfull, the coinjoin is completed and the coinjoin [will shown up in the history list](/FAQ/FAQ-UseWasabi.md#how-can-i-see-coinjoins-in-the-history-list).
+
+![Music Box Success](/MusicBoxSuccessfulCoinjoin.png "Music Box Success")
+
+Notice that the wallet might have to repeat the coinjoin steps multiple times before a successful coinjoin is created.
+So it is possible that the aura colors will change without a successful coinjoin.
+Please leave it running, and eventually there will be a successful coinjoin.
+
+### More Details
 
 By default, Wasabi starts automatically coinjoining your funds when the total value of the non-private coins is equal to or above the `Auto-start coinjoin threshold` (0.01 BTC by default).
 `Automatically start coinjoin` can be disabled from the coinjoin settings.
