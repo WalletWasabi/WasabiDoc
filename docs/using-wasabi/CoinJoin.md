@@ -29,7 +29,7 @@ WabiSabi enables centrally coordinated coinjoins with variable amounts in a trus
 After opening a hot wallet, it will automatically start a countdown to start coinjoining (±10 minutes).
 This and other coinjoin related information is shown in the music box.
 
-![Music Box Countdown](/MusicBoxWaitingToAutoStartCoinJoin.png "Music Box Countdown")
+![Music Box Countdown](/MusicBoxWaitingtoAutoStartCoinJoin.png "Music Box Countdown")
 
 After the _Waiting to auto-start coinjoin_ countdown is finished the wallet should start participating in the [coinjoin process](/using-wasabi/CoinJoin.md#wabisabi-protocol-step-by-step).
 
