@@ -591,6 +591,9 @@ These sats are precious, so don't overpay on fees!
 ### How do I set custom fee rate?
 
 At the `Preview Transaction` dialog, click on the icon `Change transaction fee or confirmation time`.
+
+![Send Fee Icon](/SendFeeIcon.png "Send Fee Icon")
+
 At the transaction fee slider dialog, click on `Advanced` and manually type the fee rate (sat/vByte) you want.
 
 ![Wasabi Wallet custom fee rate](/SendCustomFee.png "Wasabi Wallet custom fee rate")
