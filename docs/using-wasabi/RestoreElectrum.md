@@ -15,8 +15,6 @@ To gain some privacy by using Electrum you should set up Tor on Network preferen
 
 [[toc]]
 
----
-
 ## Restoring Wasabi Wallet via Electrum GUI
 
 1. Launch Electrum.

@@ -9,7 +9,7 @@
 
 [[toc]]
 
----
+## Introduction
 
 You can compile the source code in order to get the most recent commits by the developers.
 This enables you to try out features or fixes that are not yet released.

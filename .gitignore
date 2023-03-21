@@ -1,7 +1,6 @@
 /docs/.vuepress/dist
+/docs/.vuepress/.cache
+/docs/.vuepress/.temp
 /node_modules
-/.vs/ProjectSettings.json
-/.vs/WasabiDoc/config/applicationhost.config
-/.vs/slnx.sqlite
-/.vs/slnx.sqlite-journal
-/.vs/WasabiDoc/v16/.suo
+/.vs
+/.idea

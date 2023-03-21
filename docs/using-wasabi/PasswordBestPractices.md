@@ -7,17 +7,17 @@
 
 # Password best practices
 
-:::tip
-Don't "roll your own" crypto.
-:::
+[[toc]]
+
+## Introduction
 
 You shouldn't try to re-invent the wheel for something as complicated and nuanced as cryptography, and especially in regards to entropy.
 
 These are some of the industry best practices:
 
-[[toc]]
-
----
+:::tip
+Don't "roll your own" crypto.
+:::
 
 ## Password basics
 

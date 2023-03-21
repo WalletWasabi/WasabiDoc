@@ -1,10 +1,4 @@
-<p align="center">
-  <a href="https://docs.wasabiwallet.io">
-    <img src="https://user-images.githubusercontent.com/51679301/173640921-827d7f4f-5bb8-432b-9c53-7146a7ca6763.png" alt="Under Construction" title="Documentation Under Construction" class="Image" />
-  </a>
-</p>
-
-# Wasabi Wallet 2.0 Documentation is under construction!
+# Wasabi Wallet 2.0 Documentation
 
 [Wasabi Wallet](https://wasabiwallet.io) is an open-source, non-custodial, privacy focused Bitcoin wallet for desktop. It implements a trustless privacy technique, called [WabiSabi CoinJoin](https://eprint.iacr.org/2021/206).
 
@@ -68,7 +62,7 @@ Know that you do not need to understand/deal with VuePress at all in this case.
 - coinjoin [not capitalized, one word]
 - WabiSabi [capitalized, one word]
 - Every sentence must start in a new line.
-- For a paragraph, add an `empty line` or `</br>` in the markdown.
+- For a paragraph, add an `empty line` or `<br>` in the markdown.
 
 ## Reference files
 
@@ -92,21 +86,22 @@ They can be embedded via the following markdown tags:
 Youtube videos and playlists can be embedded via the following custom markdown tags:
 
 ```md
-@[youtube](VIDEO_ID)
-@[youtubePlaylist](PLAYLIST_ID)
+[![Title of the video](https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg)](https://youtu.be/VIDEO_ID)
 ```
 
 Optionally you can also specify the start position of a video in seconds (e.g. starts at 100 seconds):
 
 ```md
-@[youtube](VIDEO_ID,100)
+[![Title of the video](https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg)](https://youtu.be/VIDEO_ID?t=123)
 ```
 
 And the index of the video of a playlist (e.g. starts the third video):
 
 ```md
-@[youtubePlaylist](PLAYLIST_ID,VIDEO_ID)
+[![Title of the playlist](https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg)](https://youtu.be/VIDEO_ID?list=PLAYLIST_ID)
 ```
+
+If the image doesn't appear, that usually happens with older videos, use hqdefault.jpg instead of maxresdefault.jpg
 
 ## Text Highlights
 
@@ -140,32 +135,16 @@ bar
 
 Use this markdown box with the headers to write the FAQ:
 ```
-:::details
 ### question
 
 answer answer answer.
 answer answer answer.
-:::
-```
-
-When you want to [highlight text](README.md#text-highlights) within a question, then you need to [nest containers](https://github.com/markdown-it/markdown-it-container/issues/6#issuecomment-213789283) by adding more `:` for the outer block start/end. The outer `details` container has now four `::::`, and the inner `warning` container has still three `:::`.
-
-```
-::::details
-### question
-
-answer answer answer.
-
-:::warning
-answer answer answer.
-:::
-::::
 ```
 
 ## Variables
 
 To have a single place to maintain universal strings like the current Wasabi version number, we use variables in the Markdown (i.e.  `${currentVersion}`and `${zksnacksPublicKeyFingerprint}`).
-These variables are managed in [`docs/.vuepress/variables.js`](https://github.com/zkSNACKs/WasabiDoc/blob/master/docs/.vuepress/variables.js).
+These variables are managed in [`docs/.vuepress/config.ts`](https://github.com/zkSNACKs/WasabiDoc/blob/master/docs/.vuepress/config.ts).
 Occurrences of `${variableName}` get substituted before the Markdown is processed.
 
 # Build the Documentation Locally

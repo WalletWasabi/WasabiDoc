@@ -11,8 +11,6 @@ There are two different ways that you can recover an already used wallet in Wasa
 
 [[toc]]
 
----
-
 ## Mnemonic Recovery Words and Password
 
 Wasabi uses the [BIP 39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) mnemonic code for generating [BIP 32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) hierarchical deterministic wallets.
@@ -23,9 +21,11 @@ To recover a wallet:
 
 1. Click on `Add Wallet` at the bottom left corner of the main view.
 
-![Wasabi Wallet Add Wallet](/AddWallet.png "Wasabi Wallet Add Wallet")
+![Wasabi Wallet Add Wallet](/AddWalletButton.png "Wasabi Wallet Add Wallet")
 
 2. Click on `Recover a wallet`.
+
+![Wasabi Wallet Add Wallet](/AddWallet.png "Wasabi Wallet Add Wallet")
 
 3. Give the wallet a name for future recognition of the wallet.
 

@@ -12,13 +12,13 @@ The RPC server is listening by default on port 37128.
 
 [[toc]]
 
----
-
 ## Limitations
 
 The RPC server does NOT support batch requests or TLS communications (because it is [not supported on Linux and on Mac](https://github.com/dotnet/corefx/issues/14691)).
 Requests are served in order one-by-one in series (no parallel processing).
 It is intentionally limited to serve only one whitelisted local address and it is disabled by default.
+
+The more user friendly command line interface `wcli` can be found [here](https://github.com/zksnacks/wasabiscripts).
 
 ## Configure RPC
 
@@ -43,12 +43,12 @@ On the other hand, if `JsonRpcUser` and `JsonRpcPassword` are not empty it means
 
 It is recommended to install the `jq` [command line json processor](https://stedolan.github.io/jq/) with `sudo apt-get install jq`, and then adding `| jq` at the end of every RPC command to have a structured output.
 
-Then start Wasabi Wallet either in the GUI or [headless daemon](/using-wasabi/Daemon.md) and load the wallet you want to use.
+Then start Wasabi Wallet and load the wallet you want to use.
 Open a new terminal and use the following RPC commands to interact with your wallet, instead of the GUI.
 
 ## Available methods
 
-The current version handles the following methods: `getstatus`, `createwallet`, `listunspentcoins`, `getwalletinfo`, `getnewaddress`, `send`, `gethistory`, `listkeys`, and `stop`.
+The current version handles the following methods: `getstatus`, `createwallet`, `listunspentcoins`, `getwalletinfo`, `getnewaddress`, `send`, `gethistory`, `listkeys`, `startcoinjoin`, `stopcoinjoin` and `stop`.
 They can be used as follows:
 
 ### getstatus
@@ -535,6 +535,28 @@ curl --data-binary '{"jsonrpc":"2.0","id":"1","method":"listkeys"}' http://127.0
 
 ```bash
 curl --data-binary '{"jsonrpc":"2.0","id":"1","method":"listkeys"}' http://127.0.0.1:37128/ | jq '.result[] | select(.keyState == 1 and .internal == true)'
+```
+
+### startcoinjoin
+
+```bash
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"startcoinjoin", "params":"True, True"}' http://127.0.0.1:37128/ | jq
+{
+  "jsonrpc": "2.0",
+  "id": "1"
+}
+```
+
+The first parameter is `stopWhenAllMixed`, the second parameter is `overridePlebStop`
+
+### stopcoinjoin
+
+```bash
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"stopcoinjoin"}' http://127.0.0.1:37128/ | jq
+{
+  "jsonrpc": "2.0",
+  "id": "1"
+}
 ```
 
 ### stop

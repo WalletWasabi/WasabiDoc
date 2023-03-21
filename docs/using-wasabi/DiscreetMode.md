@@ -9,7 +9,7 @@
 
 Discreet Mode is a Wasabi Wallet feature that hides sensitive and critical information from physical observers and allows you to post screenshots without worrying about your privacy.
 
-![Wasabi Wallet Discreet Mode](/Send.png "Wasabi Wallet Discreet Mode")
+![Wasabi Wallet Discreet Mode](/WalletDiscreetModeActive.png "Wasabi Wallet Discreet Mode")
 
 [[toc]]
 
@@ -25,5 +25,6 @@ You can activate or deactivate by clicking the Discreet Mode icon in the bottom 
 ## More information on Discreet Mode
 - In Discreet Mode the wallet is still usable, meaning that you can send and receive payments, as well as coinjoin.
 - Discreet Mode only masks the surface.
-This means if you request sensitive information to be seen in Discreet Mode, for example like clicking on an expander, Discreet Mode won't hide the content.
+This means that when you click to see more Details, some information (which wasn't visible at first) will be shown.
+- When hovering over the ### chars with the cursor, the content will be visible for a short amount of time.
 - Some justification of design decisions can be seen [here](https://github.com/zkSNACKs/WalletWasabi/issues/2234).
