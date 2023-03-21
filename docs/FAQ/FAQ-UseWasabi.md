@@ -688,7 +688,7 @@ For example, if the initial transaction pays a 1 sat/vbyte fee and the child tra
 (Assuming both transactions are roughly the same size.)
 
 An outgoing transaction can only be bumped if you have a change output from the transaction you want to bump.
-You need to create a new high(er) fee paying transaction with that change output.
+You need to create a new high(er) fee rate paying transaction with that change output.
 
 To bump an outgoing transaction with CPFP:
 Make sure you have a change output.
@@ -698,14 +698,14 @@ Make sure you have a change output.
 -Select the unconfirmed (change) coin and click _Send selected coins_ 
 -Paste the bitcoin address
 -Enter the label
--At the `Preview Transaction` dialog, click on _Change transaction fee or confirmation time_ and enter a high(er) fee than the original transaction
+-At the `Preview Transaction` dialog, click on _Change transaction fee or confirmation time_ and enter a high(er) fee rate than the original transaction
 -Send the transaction
 
 The CPFP fee bump has been done.
-Now wait until the transactions are confirmed.
+Now wait until both transactions are confirmed.
 
 :::tip The bump fee UX will be improved
-Currently it requires multiple steps, in the future there will be an easy click _bump fee_
+Currently it requires multiple steps, in the future there will be an easy click _Speed up transaction_.
 :::
 
 ### Why is there no `Send` button, only the `Receive` button is displayed?
