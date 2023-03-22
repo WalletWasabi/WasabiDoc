@@ -687,12 +687,33 @@ This is good for privacy, and also saves you some transaction fees.
 ### How can I bump the transaction fee with child pays for parent (CPFP)?
 
 If you have sent or received a transaction with a low fee and it does not get confirmed within reasonable time, then you can do child pays for parent to get it confirmed faster.
-The trick is, to make a new transaction which spends the unconfirmed coin that you have received with a higher fee.
+The trick is, to make a new transaction which spends the unconfirmed coin that you have received with a higher fee rate.
 This can be either a payment transaction from you to another person, or a self spend transaction.
 
 The transaction will get confirmed based on the fee level of the combined parent and child transactions.
 For example, if the initial transaction pays a 1 sat/vbyte fee and the child transaction pays a 5 sat/vbyte fee, then the combined fee level is the average of both, thus 3 sat/vbyte.
 (Assuming both transactions are roughly the same size.)
+
+A transaction can only be bumped if you have a change output from the transaction you want to bump.
+You need to create a new high(er) fee rate paying transaction with that change output.
+
+To bump an outgoing transaction with CPFP:
+Make sure you have a change output.
+
+-Generate a receive address
+-[Open the `Wallet Coins` dialog](FAQ-UseWasabi.md#how-do-I-select-coins-for-spending)
+-Select the unconfirmed (change) coin and click _Send selected coins_ 
+-Paste the bitcoin address
+-Enter the label
+-At the `Preview Transaction` dialog, click on the icon _Change transaction fee or confirmation time_ and then use the fee slider or click on `Advanced` and manually enter a high(er) fee rate than the original transaction
+-Send the transaction
+
+The CPFP fee bump has been done.
+Now wait until both transactions are confirmed.
+
+:::tip The bump fee UX will be improved
+Currently it requires multiple steps, in the future there will be an easy click _Speed up transaction_.
+:::
 
 ### Why is there no `Send` button, only the `Receive` button is displayed?
 
