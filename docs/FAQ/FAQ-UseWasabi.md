@@ -698,7 +698,7 @@ Make sure you have a change output.
 -Select the unconfirmed (change) coin and click _Send selected coins_ 
 -Paste the bitcoin address
 -Enter the label
--At the `Preview Transaction` dialog, click on _Change transaction fee or confirmation time_ and enter a high(er) fee rate than the original transaction
+-At the `Preview Transaction` dialog, click on the icon _Change transaction fee or confirmation time_ and then use the fee slider or click on `Advanced` and manually enter a high(er) fee rate than the original transaction
 -Send the transaction
 
 The CPFP fee bump has been done.
