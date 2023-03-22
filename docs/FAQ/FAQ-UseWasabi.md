@@ -687,7 +687,7 @@ The transaction will get confirmed based on the fee level of the combined parent
 For example, if the initial transaction pays a 1 sat/vbyte fee and the child transaction pays a 5 sat/vbyte fee, then the combined fee level is the average of both, thus 3 sat/vbyte.
 (Assuming both transactions are roughly the same size.)
 
-An outgoing transaction can only be bumped if you have a change output from the transaction you want to bump.
+A transaction can only be bumped if you have a change output from the transaction you want to bump.
 You need to create a new high(er) fee rate paying transaction with that change output.
 
 To bump an outgoing transaction with CPFP:
