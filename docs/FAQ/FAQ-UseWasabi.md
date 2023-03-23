@@ -499,7 +499,9 @@ Yet multisig is a popular feature, and many Wasabikas do request it for extra se
 [Electrum Wallet](https://electrum.org) is a fantastic wallet with many features, but only private if you connect to your own Electrum server full node.
 Electrum can be used to create different types of m-of-n multisig scripts, including the use of hardware wallets.
 
-Schnorr key and signature aggregation with MuSig increases privacy of multisig wallets, since only one public key, not n, are committed on the blockchain. On November 14th, 2021 at block 709,632, Taproot activated in the Bitcoin consensus layer so there are no major privacy concerns standing in the way of Wasabi multisig anymore. At the moment, it is still not available as of yet.
+Schnorr key and signature aggregation with MuSig increases privacy of multisig wallets, since only one public key, not n, are committed on the blockchain. 
+On November 14th, 2021 at block 709,632, Taproot activated in the Bitcoin consensus layer so there are no major privacy concerns standing in the way of Wasabi multisig anymore. 
+At the moment, it is still not available as of yet.
 
 ### How does Wasabi know of incoming transactions to the mempool?
 
