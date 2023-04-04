@@ -31,16 +31,9 @@ An other wallet that does support Taproot should be used for recovering Taproot 
 
 3. Choose `Standard wallet`.
 
-4. Choose `I already have a seed` or `Use a master key`.
+4. Choose `I already have a seed`.
 
-5. Type your seed or paste your master private key.
-
-	:::tip Get your master private key inside Wasabi:
-	- Go to `Wallet Info`.
-	- Copy your `Extended Account Private Key zprv`.
-	:::
-
-The next steps are only necessary if you have previously chosen the option `I already have a seed`.
+5. Type in your seed.
 
 6. Click the `Options` button, then check `BIP39 seed` and if you created your Wasabi wallet with a password make sure to check `Extend this seed with custom words` and type your password in the `Seed extension` window.
 
