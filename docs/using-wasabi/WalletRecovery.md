@@ -48,7 +48,7 @@ At recovery, Wasabi is unable to check if your password is correct or not.
 If you type a wrong password a completely different wallet will be recovered.
 :::
 
-You can also use the `Advanced Recovery Options` to specify the account key derivation path of the HD wallet structure and the gap limit.
+You can also use the `Advanced Recovery Options` to specify the gap limit.
 The gap limit is about how far Wasabi will check the HD wallet structure for consecutive addresses that have no coins, in some cases, you may want to increase this limit.
 
 ![Wasabi Wallet Recovery Advanced](/WalletRecoveryAdvanced.png "Wasabi Wallet Recovery Advanced")
