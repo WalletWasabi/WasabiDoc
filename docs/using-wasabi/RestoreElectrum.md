@@ -35,11 +35,11 @@ An other wallet that does support Taproot should be used for recovering Taproot 
 
 5. Type in your seed.
 
-6. Click the `Options` button, then check `BIP39 seed` and if you created your Wasabi wallet with a password make sure to check `Extend this seed with custom words` and type your password in the `Seed extension` window.
+6. Click the `Options` button, then select `BIP39 seed` and if you created your Wasabi wallet with a password make sure to check `Extend this seed with custom words` and type your password in the `Seed extension` window.
 
-7. On `Script type and Derivation path` window, choose `native SegWit (p2wpkh)` or manually insert `m/84'/0'/0'`.
+7. On the `Script type and Derivation path` window, choose `native SegWit (p2wpkh)` or manually insert `m/84'/0'/0'`.
 
-8. Increase the gap limits by opening Electrum's `Console` and executing the following commands:
+8. Increase the gap limit by opening Electrum's `Console` and execute the following commands:
 
 	```
 	wallet.change_gap_limit(100)
