@@ -1090,7 +1090,7 @@ If there was an emtpy password (no password) entered at the wallet creation, the
 
 No.
 The password you set is used as a 13th word (passphrase) as described in BIP39, you should back it up when you generate a wallet.
-It is necessary to spend your bitcoin or to recover your wallet.
+It is necessary to spend your bitcoin or to recover your wallet, as shown in [this table](/FAQ/FAQ-UseWasabi.md#what-do-i-need-to-recover-my-wallet).
 
 ### What should I do if I forget my password?
 
