@@ -1072,6 +1072,20 @@ The wallet file backup is sensitive, in terms of privacy, but not critical in te
 So it is good advice to encrypt this wallet file.
 :::
 
+### What do I need to recover my wallet?
+
+To recovery your wallet you need your Password + Recovery words, or Password + Wallet File, as shown in the table below.
+
+| | Recovery Words | Wallet File | Password
+:------------ | :-------------:| :-------------:| :-------------:
+Recovery Words |  |  :x: | :heavy_check_mark:
+Wallet File | :x: |   | :heavy_check_mark:
+Password | :heavy_check_mark: |  :heavy_check_mark: | 
+
+:::tip
+If there was an emtpy password (no password) entered at the wallet creation, then the Recovery Words or Wallet File alone are enough to recover the wallet.
+:::
+
 ### Can I recover my wallet without the password?
 
 No.
