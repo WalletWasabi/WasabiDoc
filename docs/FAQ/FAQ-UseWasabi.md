@@ -452,8 +452,7 @@ This is a complete de-anonymization of your entire wallet!!
 ### Why does Wasabi only use SegWit bech32 addresses?
 
 Wasabi was created after the activation of SegWit, and it makes sense to support the most advanced address type, which has numerous benefits.
-For example, due to the malleability fix of SegWit, you can now remix CoinJoin outputs which are currently unconfirmed.
-There are also large savings on mining fees for SegWit transactions.
+For example, the malleability fix and the large savings on mining fees for SegWit transactions.
 
 ### Why do some third party services say the Wasabi address is invalid?
 
