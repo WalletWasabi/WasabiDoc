@@ -33,7 +33,7 @@ An other wallet that does support Taproot should be used for recovering Taproot 
 
 4. Choose `I already have a seed`.
 
-5. Type in your seed.
+5. Type in your seed (recovery words).
 
 6. Click the `Options` button, then select `BIP39 seed` and if you created your Wasabi wallet with a password make sure to check `Extend this seed with custom words` and type your password in the `Seed extension` window.
 
