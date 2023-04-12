@@ -1071,11 +1071,25 @@ The wallet file backup is sensitive, in terms of privacy, but not critical in te
 So it is good advice to encrypt this wallet file.
 :::
 
+### What do I need to recover my wallet?
+
+To recover your wallet you need either your Recovery Words + Password, or the Wallet File + Password, as shown in the table below.
+
+| | Recovery Words | Wallet File | Password
+:------------ | :-------------:| :-------------:| :-------------:
+Recovery Words | :x: | :x: | :heavy_check_mark:
+Wallet File | :x: | :x: | :heavy_check_mark:
+Password | :heavy_check_mark: | :heavy_check_mark: | :x:
+
+:::tip
+If no password was entered at the wallet creation, then the Recovery Words or Wallet File alone are enough to recover the wallet.
+:::
+
 ### Can I recover my wallet without the password?
 
 No.
 The password you set is used as a 13th word (passphrase) as described in BIP39, you should back it up when you generate a wallet.
-It is necessary to spend your bitcoin or to recover your wallet.
+It is necessary to spend your bitcoin or to recover your wallet, as shown in [this table](/FAQ/FAQ-UseWasabi.md#what-do-i-need-to-recover-my-wallet).
 
 ### What should I do if I forget my password?
 
