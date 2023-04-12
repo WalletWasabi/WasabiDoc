@@ -1078,9 +1078,9 @@ To recover your wallet you need either your Recovery Words + Password, or the Wa
 
 | | Recovery Words | Wallet File | Password
 :------------ | :-------------:| :-------------:| :-------------:
-Recovery Words |  |  :x: | :heavy_check_mark:
-Wallet File | :x: |   | :heavy_check_mark:
-Password | :heavy_check_mark: |  :heavy_check_mark: | 
+Recovery Words | :x: | :x: | :heavy_check_mark:
+Wallet File | :x: | :x: | :heavy_check_mark:
+Password | :heavy_check_mark: | :heavy_check_mark: | :x:
 
 :::tip
 If no password was entered at the wallet creation, then the Recovery Words or Wallet File alone are enough to recover the wallet.
