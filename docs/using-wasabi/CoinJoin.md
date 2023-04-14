@@ -217,7 +217,7 @@ Note that you might pay relatively more fees for coinjoining smaller amounts.
 ### Coinjoin Strategy
 
 Wasabi ships with 3 coinjoin strategies: `Minimize Costs`, `Maximize Speed`, and `Maximize Privacy`.
-Each of these contain different configurations.
+Each of these contain different configurations, as shown in [this table](/FAQ/FAQ-UseWasabi.md#what-are-the-differences-settings-per-coinjoin-strategy).
 They determine the `Anonymity score target`, `Coinjoin time preference`, and if `Red coin isolation` is enabled or not.
 
 ![Coinjoin Strategy Settings](/CoinjoinStrategySettings.png "Coinjoin Strategy Settings")
