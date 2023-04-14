@@ -975,9 +975,9 @@ Read more [here](/using-wasabi/CoinJoin.md).
 
 |  | Minimize Costs | Maximize Speed | Maximize Privacy | 
 |:---:|:---:|:---:|:---:|
-| Red coin isolation | not active  | not active | active |
 | Anonymity score target | 5 | 5 | random between 50 and 100 |
 | Coinjoin time preference   | weeks | hours | hours |
+| Red coin isolation | not enabled  | not enabled | enabled |
 
 ### What does the `Auto-start coinjoin threshold` mean in the coinjoin settings?
 
@@ -992,9 +992,9 @@ The default Auto-start coinjoin threshold is 0.01 BTC.
 
 ### What does the `Red coin isolation` mean in the coinjoin settings?
 
-When the `Red coin isolation` is active, only a single coin with anonymity score 1 will be allowed into the coinjoin registration.
+When the `Red coin isolation` is enabled, only a single coin with anonymity score 1 will be allowed into the coinjoin registration.
 To prevent possible coinjoin input heuristics from outside observers.
-The `Red coin isolation` is active by default when the `Maximize Privacy` coinjoin strategy is selected.
+The `Red coin isolation` is enabled by default when the `Maximize Privacy` coinjoin strategy is selected.
 
 ![Red Coin Isolation](/RedCoinIsolation.png "Red Coin Isolation")
 

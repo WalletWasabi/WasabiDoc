@@ -186,12 +186,12 @@ As the coinjoin settings apply per individual wallet, it is possible to have mul
 
 ### Automatically start coinjoin
 
-This setting is active by default.
+This setting is enabled by default.
 
-When this is active, the wallet will automatically start coinjoining soon after the wallet is loaded.
+When this is enabled, the wallet will automatically start coinjoining soon after the wallet is loaded.
 The wallet will coinjoin until the `privacy progress` is 100%.
 
-When this is not active, the user will have to manually press the Play button in order to start coinjoining.
+When this is not enabled, the user will have to manually press the Play button in order to start coinjoining.
 
 ![Coinjoin Settings Automatically Start Coinjoin](/CoinjoinSettingsAutomaticallyStartCoinjoin.png "Coinjoin Settings Automatically Start Coinjoin")
 
@@ -199,7 +199,7 @@ When this is not active, the user will have to manually press the Play button in
 
 The default Auto-start coinjoin threshold is 0.01 BTC.
 
-The wallet will not automatically start coinjoining if the non-private balance is below the `Auto-start coinjoin threshold`, even if the `Automatically start coinjoin` is active.
+The wallet will not automatically start coinjoining if the non-private balance is below the `Auto-start coinjoin threshold`, even if the `Automatically start coinjoin` is enabled.
 In this case the user has to manually press Play to start coinjoining.
 This setting can be used to prevent paying (relatively) high fees for smaller bitcoin amounts.
 
