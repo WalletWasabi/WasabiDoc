@@ -65,16 +65,15 @@ Notice that it is not yet possible to coinjoin from a hardware wallet, the keys 
 A 0.3% coordinator fee will be taken from fresh coins bigger than 0.01 BTC.
 Smaller ones don't pay coordinator fee at all, according to the _PlebsDontPay_ threshold.
 
-The round starts either as soon as the number of registered inputs reaches the maximum, or after the input registration time is reached and as long as the minimum number of inputs is satisfied.
-Just leave Wasabi running in the background of your computer, as coinjoining takes time.
-
-Remixing is free, as well as coinjoining coins 1 hop from coinjoin, although, Bitcoin network fees still do apply.
-So if you send a coinjoined coin and receive a change output, Wasabi will not charge you the coordinator fee for this change output again.
+Remixing is free, as well as coinjoining coins 1 hop from a coinjoin, although, Bitcoin mining fees still do apply, as shown in [this table](/FAQ/FAQ-UseWasabi.md#what-are-the-fees-for-the-coinjoin).
+So if you send a coinjoined coin and receive a change output, you will not be charged the coordinator fee for this change output.
 The recipient of the payment will not have to pay the coordinator fee, as long as he is making coinjoins with the same coordinator.
 
 ## WabiSabi protocol step-by-step
 
 WabiSabi protocol requires 5 steps to successfully create and broadcast a coinjoin transaction to the bitcoin network.
+
+The round starts either as soon as the number of registered inputs reaches the maximum, or after the input registration time is reached and as long as the minimum number of inputs is satisfied.
 
 ### Input registration
 
