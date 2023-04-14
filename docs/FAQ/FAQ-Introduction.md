@@ -115,7 +115,7 @@ It is possible that the server could *only* include one 'honest/real' coin in th
 This gives a false sense of security, **but does not worsen the existing privacy of the coin**.
 It would also be noticeable to all users excluding the user being targeted as their coins would not be mixed.
 It has been argued that this 'attack' would be very costly in terms of fees because the number of coins being mixed is verifiable.
-Though it is true that remixes pay zero coordinator fee to zkSNACKs, they do pay mining fees.
+Though it is true that remixes pay zero coordination fee to zkSNACKs, they do pay mining fees.
 See [here](https://github.com/zkSNACKs/WabiSabi/blob/master/protocol.md#attacks-on-privacy) for more info.
 
 ### What is the history of Wasabi?

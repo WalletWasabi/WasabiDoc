@@ -12,7 +12,7 @@
 Adam Ficsor had a donation address for a few years while he was working alone on Wasabi.
 It's not the case anymore.
 Though it's most likely not an issue to accept Bitcoin donations, zkSNACKs team discontinued accepting donations because they don't want to get into accidental legal gray areas.
-Wasabi has a coordinator fee that is capped at 0.3% for every CoinJoin and it became zkSNACKs' main income.
+Wasabi has a coordinattion fee that is capped at 0.3% for every CoinJoin and it became zkSNACKs' main income.
 To help Wasabi development, just CoinJoin your bitcoins via Wasabi!
 If you want to read more about fees here is a nice explanation: [What are the fees for the CoinJoin](/FAQ/FAQ-UseWasabi.md#what-are-the-fees-for-the-coinjoin).
 
@@ -65,7 +65,7 @@ Join our [Slack](https://join.slack.com/t/tumblebit/shared_invite/enQtNjQ1MTQ2Nz
 
 Yes!
 The beauty of Wasabi is that it's not just a very awesome wallet by default, but it has the additional opt-in CoinJoin service.
-This is provided by [zkSNACKs Ltd.](https://zksnacks.com), and in exchange for this service, the user pays a coordinator fee.
+This is provided by [zkSNACKs Ltd.](https://zksnacks.com), and in exchange for this service, the user pays a coordination fee.
 In return, zkSNACKs is supporting several developers to dedicate their full time to contribute to this open-source project.
 There are also contribution games where a bounty is paid out to any contributor worthy the prize.
 
