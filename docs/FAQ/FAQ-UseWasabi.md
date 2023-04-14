@@ -977,7 +977,7 @@ Read more [here](/using-wasabi/CoinJoin.md).
 |  | Minimize Costs | Maximize Speed | Maximize Privacy | 
 |:---:|:---:|:---:|:---:|
 | Red coin isolation | not active  | not active | active |
-| Anonymity score target | 5 | 5 | random between 50 and 100 |
+| Anonymity score target | 5 | 5 | random between 27 and 75 |
 | Coinjoin time preference   | weeks | hours | hours |
 
 ### What does the `Auto-start coinjoin threshold` mean in the coinjoin settings?
