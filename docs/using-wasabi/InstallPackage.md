@@ -150,6 +150,6 @@ If the message returned says `Good signature from zkSNACKs` and that it was sign
 	You can ignore this, but if you want to fully verify your download, you need to ask people you trust to confirm that the key fingerprint belongs to zkSNACKs.
 	:::
 
-[![Watch the video](https://img.youtube.com/vi/ry6qIyQmzRE/maxresdefault.jpg)](https://youtu.be/ry6qIyQmzRE)
+[![Watch the video](/Logo_without_text_with_bg_dark_with_yt.png)](https://youtu.be/ry6qIyQmzRE)
 
-[![Watch the video](https://img.youtube.com/vi/QHIpEYYqddE/maxresdefault.jpg)](https://youtu.be/QHIpEYYqddE)
+[![Watch the video](/Logo_without_text_with_bg_dark_with_yt.png)](https://youtu.be/QHIpEYYqddE)

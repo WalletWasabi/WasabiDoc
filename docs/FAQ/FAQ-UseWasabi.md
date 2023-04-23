@@ -752,7 +752,7 @@ Basically we can continue to operate like now and [it is compliant](/why-wasabi/
 
 Here's a great explanation about it:
 
-[![Watch the video](https://img.youtube.com/vi/tLOMcU8MhWM/maxresdefault.jpg)](https://youtu.be/tLOMcU8MhWM?t=1305)
+[![Watch the video](/Logo_without_text_with_bg_dark_with_yt.png)](https://youtu.be/tLOMcU8MhWM?t=1305)
 
 ### What is the minimum amount required to coinjoin?
 
@@ -1113,11 +1113,11 @@ Type in your recovery words in the correct order, click on `Verify` and it will 
 
 ## Hardware Wallet
 
-[![Watch the video](https://img.youtube.com/vi/aU8ysH9JH9M/maxresdefault.jpg)](https://youtu.be/aU8ysH9JH9M)
+[![Watch the video](/Logo_without_text_with_bg_dark_with_yt.png)](https://youtu.be/aU8ysH9JH9M)
 
-[![Watch the video](https://img.youtube.com/vi/kocEpndQcsg/maxresdefault.jpg)](https://youtu.be/kocEpndQcsg)
+[![Watch the video](/Logo_without_text_with_bg_dark_with_yt.png)](https://youtu.be/kocEpndQcsg)
 
-[![Watch the video](https://img.youtube.com/vi/sM2uhyROpAQ/maxresdefault.jpg)](https://youtu.be/sM2uhyROpAQ)
+[![Watch the video](/Logo_without_text_with_bg_dark_with_yt.png)](https://youtu.be/sM2uhyROpAQ)
 
 ### What hardware wallets does Wasabi support?
 
@@ -1317,7 +1317,7 @@ There are three different ways of using your [Bitcoin full node with Wasabi](/us
 
 ![Wasabi Wallet local Bitcoin Knots full node integration](/SettingsBitcoinCore.png "Wasabi Wallet local Bitcoin Knots full node integration")
 
-[![Watch the video](https://img.youtube.com/vi/gWo2RAkIVrE/maxresdefault.jpg)](https://youtu.be/gWo2RAkIVrE)
+[![Watch the video](/Logo_without_text_with_bg_dark_with_yt.png)](https://youtu.be/gWo2RAkIVrE)
 
 ### How can I turn off Tor?
 
@@ -1414,7 +1414,7 @@ So consolidating some private coins is OK to do.
 Never consolidate non-private coins with private (mixed) coins, as this negates the privacy benefits of the coinjoin.
 :::
 
-[![Watch the video](https://img.youtube.com/vi/Tk8-N1kHa4g/maxresdefault.jpg)](https://youtu.be/Tk8-N1kHa4g)
+[![Watch the video](/Logo_without_text_with_bg_dark_with_yt.png)](https://youtu.be/Tk8-N1kHa4g)
 
 ### How can I send my anonset coins to my hardware wallet?
 

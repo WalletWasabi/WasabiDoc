@@ -33,7 +33,7 @@ You can verify that the PGP public key [${zksnacksPublicKeyFingerprint}](https:/
 When you have a software package that was signed by this PGP public key, then you can be sure that this is an official release approved by zkSNACKs.
 This protects you against malicious man in the middle attacks where bad guys give you a fake version of Wasabi with malicious code.
 
-[![Watch the video](https://img.youtube.com/vi/psl35MisYxo/maxresdefault.jpg)](https://youtu.be/psl35MisYxo?list=PLPj3KCksGbSZkVpgAZjAFfFp4D0SHLnFw)
+[![Watch the video](/Logo_without_text_with_bg_dark_with_yt.png)](https://youtu.be/psl35MisYxo?list=PLPj3KCksGbSZkVpgAZjAFfFp4D0SHLnFw)
 
 ### How can I verify PGP signatures?
 
@@ -45,7 +45,7 @@ Everything is valid if it returns `Good signature from zkSNACKs` and that it was
 
 For an in-depth guide for [Debian and Ubuntu](/using-wasabi/InstallPackage.md#debian-and-ubuntu), [other Linux](/using-wasabi/InstallPackage.md#other-linux), [Windows](/using-wasabi/InstallPackage.md#windows), and [macOS](/using-wasabi/InstallPackage.md#macOS) see the main documentation.
 
-[![Watch the video](https://img.youtube.com/vi/mTrClVA_o5A/maxresdefault.jpg)](https://youtu.be/mTrClVA_o5A)
+[![Watch the video](/Logo_without_text_with_bg_dark_with_yt.png)](https://youtu.be/mTrClVA_o5A)
 
 ### How do I install Wasabi on Debian and Ubuntu?
 
@@ -58,7 +58,7 @@ Verify the signature of the package with `gpg --verify Wasabi-${currentVersion}.
 Now install Wasabi with `sudo apt install ./Wasabi-${currentVersion}.deb`, and run it with `wassabee`.
 Check out the main documentation for a [step-by-step guide](/using-wasabi/InstallPackage.md#debian-and-ubuntu).
 
-[![Watch the video](https://img.youtube.com/vi/mTrClVA_o5A/maxresdefault.jpg)](https://youtu.be/mTrClVA_o5A?t=122)
+[![Watch the video](/Logo_without_text_with_bg_dark_with_yt.png)](https://youtu.be/mTrClVA_o5A?t=122)
 
 ### How do I install Wasabi on other Linux?
 
@@ -96,7 +96,7 @@ Optionally, you can still verify the PGP signature of the package with `sudo gpg
 Now install Wasabi by double-clicking the `.dmg` file.
 Check out the main documentation for a [step-by-step guide](/using-wasabi/InstallPackage.md#mac).
 
-[![Watch the video](https://img.youtube.com/vi/_Zmc54XYzBA/maxresdefault.jpg)](https://youtu.be/_Zmc54XYzBA)
+[![Watch the video](/Logo_without_text_with_bg_dark_with_yt.png)](https://youtu.be/_Zmc54XYzBA)
 
 ### Why are there two different packages for macOS (intel and Apple Silicon)?
 
@@ -173,7 +173,7 @@ So to upgrade Wasabi, simply download and install the new version like at first 
 
 You can download the software build for the different operating systems on the main [website](https://wasabiwallet.io) or better over [Tor](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion).
 For extra security, it is reccommended to also download the signatures of the build and verify them with [zkSNACKs' PGP public key](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt).
-For step-by-step instructions, follow [this guide](/using-wasabi/InstallPackage.md) or see this video: [![Watch the video](https://img.youtube.com/vi/DUc9A76rwX4/hqdefault.jpg)](https://youtu.be/DUc9A76rwX4)
+For step-by-step instructions, follow [this guide](/using-wasabi/InstallPackage.md) or see this video: [![Watch the video](/Logo_without_text_with_bg_dark_with_yt.png)](https://youtu.be/DUc9A76rwX4)
 
 ### What does `Auto download new version` in the settings mean?
 

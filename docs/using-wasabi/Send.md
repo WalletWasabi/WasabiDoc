@@ -9,7 +9,7 @@
 
 [[toc]]
 
-[![Send in Wasabi Wallet](https://img.youtube.com/vi/vCI5aza-lv0/maxresdefault.jpg)](https://youtu.be/vCI5aza-lv0 "Send in Wasabi Wallet")
+[![Send in Wasabi Wallet](/Logo_without_text_with_bg_dark_with_yt.png)](https://youtu.be/vCI5aza-lv0 "Send in Wasabi Wallet")
 
 ## How to send bitcoin step-by-step
 
