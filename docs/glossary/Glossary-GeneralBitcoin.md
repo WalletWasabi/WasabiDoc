@@ -180,7 +180,6 @@ Input, transaction input, or TxIn is an input in a Bitcoin transaction which con
 
 Lightning Network is a proposed implementation of Hashed Timelock Contracts (HTLCs) with bi-directional payment channels which allows payments to be securely routed across multiple peer-to-peer payment channels.
 This allows the formation of a network where any peer on the network can pay any other peer even if they don't directly have a channel open between each other.
-Read more: [Use Lightning](/using-wasabi/10Commandments.md#_10-use-lightning)
 
 ### Mainnet
 
@@ -189,7 +188,7 @@ The original and main network for Bitcoin transactions, where satoshis have real
 ### Mempool
 
 The Bitcoin Mempool (memory pool) is a collection of all transaction data in a block that have been verified by Bitcoin nodes, but are not yet confirmed.
-Read more: [How does Wasabi know of incoming transactions to the mempool?](/FAQ/FAQ-UseWasabi.html#how-does-wasabi-know-of-incoming-transactions-to-the-mempool)
+Read more: [How does Wasabi know of incoming transactions to the mempool?](/FAQ/FAQ-UseWasabi.md#how-does-wasabi-know-of-incoming-transactions-to-the-mempoo)
 
 ### Merkle Root
 
@@ -293,7 +292,7 @@ A private key is a large number that must be chosen at random, it is thus a very
 With knowledge of this number, anyone can easily compute the public key, and a signature over any message.
 It can also be used to decrypt any message that was encrypted to the public key corresponding to the private key.
 In Bitcoin, a signature over a valid transaction message gives the right to spend a coin, thus knowledge of the private key corresponds to ownership of the bitcoin.
-Read more: [Bitcoin private keys](/using-wasabi/Receive.html#bitcoin-public-keys-and-addresses)
+Read more: [Bitcoin private keys](/using-wasabi/Receive.md#bitcoin-public-keys-and-addresses)
 
 ### Proof of Work (POW)
 
@@ -309,7 +308,7 @@ Anyone can encrypt a message using a public key.
 This encrypted message (cyphertext) can only be decrypted through the related private key.
 Given a public key and a signature over a message, anyone can verify that the signer had the private key and the message.
 In Bitcoin, the public key is the pseudonymous identity of the owner of a coin.
-Read more: [Bitcoin private keys](/using-wasabi/Receive.html#bitcoin-public-keys-and-addresses)
+Read more: [Bitcoin private keys](/using-wasabi/Receive.md#bitcoin-public-keys-and-addresses)
 
 ### Regtest
 

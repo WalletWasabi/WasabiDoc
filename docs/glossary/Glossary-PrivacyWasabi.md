@@ -111,7 +111,7 @@ Read more: [How does my wallet communicate with the Wasabi coordinator server?](
 
 Dust is an UTXO that is uneconomical to spend.
 Also, small portions of bitcoin can lead to serious consequences for one's privacy, for example the so called `forced address reuse attack`.
-Read more: [What is the dust threshold](/FAQ/FAQ-UseWasabi.html#what-is-the-dust-threshold)
+Read more: [What is the dust threshold](/FAQ/FAQ-UseWasabi.md#what-is-the-dust-threshold)
 
 ### Label
 
@@ -192,7 +192,6 @@ Wasabikas are builders, users and supporters of Wasabi in general.
 ### XPUB (Extended Public Key)
 
 An xpub, also know as Extended Public Key, is a part of BIP-32 that will allow you to observe your wallet without the private key (xpriv).
-Read more: [Wasabi's Solution](/why-wasabi/AddressReuse.html#wasabi-s-solution)
 
 ### ZeroLink
 

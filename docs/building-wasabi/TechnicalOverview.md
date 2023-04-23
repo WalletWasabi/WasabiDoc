@@ -23,16 +23,17 @@ This document aims to outline a starting plan to progress towards these objectiv
 Wasabi's main focuses are Bitcoin and privacy, thus section [IV. Bitcoin Privacy Improvements](#iv-bitcoin-privacy-improvements).
 However, a loss of privacy in fields that are traditionally considered to be outside the scope of a Bitcoin wallet, such as sharing addresses through unsecure chat clients or checking transactions in a block explorer through the clearnet also pose privacy threats.
 
-Ergo, Wasabi cannot consider them entirely out of its scope, thus section [VII. Extending the Scope of Privacy](#vii-extending-the-scope-of-privacy).
+Ergo, Wasabi cannot consider them entirely out of its scope, thus section [VI. Extending the Scope of Privacy](#vi-extending-the-scope-of-privacy).
 In the paper [Anonymity Loves Company: Usability and the Network Effect](https://www.freehaven.net/anonbib/cache/usability:weis2006.pdf) the authors note:
 
 > We show that in anonymizing networks, even if you were smart enough and had enough time to use every system perfectly, you would nevertheless be right to choose your system based in part on its usability for other users.
 
 Therefore, Wasabi should also pay attention to fields that help to increase the number of Wasabi users, bringing greater privacy for everyone.
-Thus sections [III. Education](#iii-education) and [VI. Accessibility](#vi-accessibility).
+Thus section [III. Education](#iii-education).
 
 Furthermore, Wasabi is software.
 Therefore it must not neglect general software quality issues.
+UX is also an important part of increasing the number of users and accessibility of privacy enhancing technologies.
 Thus section [II. Stability, Performance, UX, Code Quality](#ii-stability-performance-ux-code-quality).
 The better software Wasabi is, the more users it will retain.
 
@@ -40,7 +41,7 @@ Wasabi is also a Bitcoin wallet, therefore it must improve general Bitcoin walle
 Thus section [V. General Wallet Features](#v-general-wallet-features).
 
 Finally, there are development opportunities, where the developers of Wasabi recognize that they could easily add some unique wallet features that no other wallets have, like in-wallet multi-wallet support or copypaste malware defense.
-Thus section [VIII. Unique Wallet Features](#viii-unique-wallet-features).
+Thus section [VIII. Unique Wallet Features](#vii-unique-wallet-features).
 
 Note that the developers of Wasabi are currently occupied by section [II. Stability, Performance, UX, Code Quality](#ii-stability-performance-ux-code-quality).
 This enjoys the highest priority.
@@ -53,7 +54,7 @@ Wasabi is an [open-source](https://github.com/zkSNACKs/WalletWasabi/), desktop B
 It is written in [.NET Core](https://en.wikipedia.org/wiki/.NET_Core) (C#), which is cross-platform and open-source .NET.
 Wasabi uses [NBitcoin](https://github.com/MetacoSA/NBitcoin/) as its Bitcoin library, to which Wasabi developers are frequent contributors: [@lontivero](https://github.com/lontivero), [@nopara73](https://github.com/nopara73).
 
-Wasabi uses the [Avalonia](https://github.com/AvaloniaUI/Avalonia/) library as its UI framework, where Wasabi developer [@danwalmsley](https://github.com/danwalmsley) is a maintainer.
+Wasabi uses the [Avalonia](https://github.com/AvaloniaUI/Avalonia/) library as its UI framework, where some Wasabi developers are maintainers, such as [@wieslawsoltes](https://github.com/wieslawsoltes)
 
 Wasabi does not support and does not plan to support other currencies in the future.
 
@@ -84,8 +85,7 @@ Wasabi also frequently utilizes multiple Tor streams where applicable.
 
 Importantly, registration of CoinJoin inputs and outputs is done through different Tor streams to avoid linking.
 
-Wasabi's backend is used to facilitate [Chaumian CoinJoin](https://github.com/nopara73/ZeroLink#ii-chaumian-coinjoin) coordination between the mixing participants, and to serve Golomb-Rice filters to the clients, similarly to [BIP 158](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki).
-More information will be provided about the difference soon.
+Wasabi's backend is used to facilitate [WabiSabi CoinJoin](https://github.com/zkSNACKs/WabiSabi/blob/master/explainer.md) coordination between the mixing participants, and to serve Golomb-Rice filters to the clients, similarly to [BIP 158](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki).
 
 It is worth pointing out that the initial design choice of a light wallet was made because such a wallet can attract orders of magnitude more users, compared to a wallet on top of a full node.
 More users means larger and faster CoinJoins.
@@ -116,7 +116,13 @@ However, since UTXOs CoinJoined by using Wasabi can be recognized as such by the
 In the future, as more and more wallets adopt bech32, Wasabi developers will have to look at how to scale the performance and network usage of the wallet.
 
 Failing that, Wasabi's initial sync will slow down.
-The [Bitcoin Wiki](https://en.bitcoin.it/wiki/Bech32_adoption#Software_Wallets), [When Segwit](https://whensegwit.com/#who), and [Bitcoin Optech](https://bitcoinops.org/en/compatibility/#segwit-addresses) show the wallets/exchanges that can be used to send to and receive from Wasabi.
+The [Bitcoin Wiki](https://en.bitcoin.it/wiki/Bech32_adoption#Software_Wallets) and [Bitcoin Optech](https://bitcoinops.org/en/compatibility/#segwit-addresses) show the wallets/exchanges that can be used to send to and receive from Wasabi.
+
+:::warning 
+As of Wasabi [version 2.0.3](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v2.0.3), users may receive Taproot outputs from coinjoin or as a change output from a normal transaction.
+So when recovering a wallet from Wasabi in a Wallet not supporting taproot some funds might be missing, as the Taproot coins are not shown.
+An other wallet that does support Taproot should be used for recovering Taproot coins.
+:::
 
 Wasabi also maintains a connection to the Bitcoin P2P network over Tor.
 After Wasabi receives the filters from the backend, it can download the required blocks (there are false positives, too) one block from one peer.
@@ -173,7 +179,7 @@ The user queues their coins for CoinJoin and waits for others to join the mix.
 
 If the user does not wish to proceed, they can dequeue their coins.
 
-After a mix has successfully executed, the resulting CoinJoin transaction will look like the following real example: [clearnet explorer](https://blockstream.info/tx/a0855875fd3d19522568ad673e4b52e11691d837021d74eef0d177f9e0950bf2) | [onion service explorer](http://explorerzydxu5ecjrkwceayqybizmpjjznk5izmitf2modhcusuqlid.onion/tx/a0855875fd3d19522568ad673e4b52e11691d837021d74eef0d177f9e0950bf2)
+After a mix has successfully executed, the resulting CoinJoin transaction will look like the following real example: [clearnet explorer](https://mempool.space/tx/7972ec1493758bdca5b1ec64ae3902648911faae85510f236d039cfb0478a702) | [onion service explorer](http://mempoolhqx4isw62xs7abwphsq7ldayuidyx2v2oethdhhj6mlo2r6ad.onion/tx/7972ec1493758bdca5b1ec64ae3902648911faae85510f236d039cfb0478a702)
 
 ## II. Stability, Performance, UX, Code Quality
 

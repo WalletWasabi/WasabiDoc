@@ -189,7 +189,7 @@ You can also change the derivation path fields if you want to import a different
 But this is only for advanced usage. 
 Notice that Wasabi only works with SegWit v0 bech32, and SegWit v1 bech32m (Taproot) addresses.
 
-Save this file in your [`Wallets` data folder](/FAQ/FAQ-UseWasabi.html#where-can-i-find-the-wasabi-data-folder) as a json file like this: `WalletName.json`.
+Save this file in your [`Wallets` data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) as a json file like this: `WalletName.json`.
 The `WalletName` will be displayed in the GUI.
 
 Then start Wasabi and load the wallet to synchronize it.
@@ -204,7 +204,7 @@ The private value is the total amount that reached the anonscore threshold.
 
 ### Why does the privacy progress change if I select a different coinjoin strategy?
 
-[The privacy progress](/FAQ-UseWasabi/what-does-the-privacy-progress-mean) is influenced by the anonymity score target.
+[The privacy progress](/FAQ/FAQ-UseWasabi.md#what-does-the-privacy-progress-mean) is influenced by the anonymity score target.
 If the coinjoin strategy is changed to one with a different anonnymity score target, this will cause the privacy progress to increase or decrease.
 
 ### What does the bar with the colored segments mean?
@@ -319,7 +319,7 @@ For example if the problem happened 3 days ago then you can go back a week or so
 :::
 
 :::tip
-If you are doing a re-synchronization because you expect some missing funds, but after resync you still think your balance is not correct then try to increase the [gap limit](/FAQ/FAQ-UseWasabi.html#how-do-i-change-the-gap-limit-of-a-wallet) of the wallet.
+If you are doing a re-synchronization because you expect some missing funds, but after resync you still think your balance is not correct then try to increase the [gap limit](/FAQ/FAQ-UseWasabi.md#how-do-i-change-the-gap-limit-of-a-wallet) of the wallet.
 :::
 
 ### Can Wasabi work with a pruned bitcoin node?
@@ -381,7 +381,7 @@ Open the wallet folder by typing `Wallet Folder` in the search bar.
 Then, open the wallet file in your favourite text editor.
 
 Close Wasabi and edit the `MinGapLimit` setting (which is `21` by default) in the wallet file.
-The value depends on the settings of other tools that use the wallet too (e.g. use `100` for [BTCPay Server](https://docs.btcpayserver.org/FAQ/FAQ-Wallet/#missing-payments-in-my-software-or-hardware-wallet)).
+The value depends on the settings of other tools that use the wallet too (e.g. use `100` for [BTCPay Server](https://docs.btcpayserver.org/FAQ/Wallet/#the-gap-limit-problem)).
 
 You might also need to reset the height of your wallet, so that it gets reindexed.
 This can be done by setting the `BlockchainState->Height` to `0`:
@@ -459,7 +459,7 @@ For example, the malleability fix and the large savings on mining fees for SegWi
 Some wallets/exchanges do not yet support native SegWit bech32 addresses and may give an error message (e.g. "unknown bitcoin address").
 Please contact these services to upgrade their infrastructure to support the latest industry standards.
 Wasabi cannot generate non-SegWit addresses, so one solution is to manage your funds with a wallet which does support legacy addresses.
-To check Bech32 adoption and wallets/exchanges support you can follow the [Bitcoin Wiki](https://en.bitcoin.it/wiki/Bech32_adoption#Software_Wallets), [When Segwit](https://whensegwit.com/#who), and [Bitcoin Optech](https://bitcoinops.org/en/compatibility/#segwit-addresses).
+To check Bech32 adoption and wallets/exchanges support you can follow the [Bitcoin Wiki](https://en.bitcoin.it/wiki/Bech32_adoption#Software_Wallets) and [Bitcoin Optech](https://bitcoinops.org/en/compatibility/#segwit-addresses).
 
 ### Where can I find my address QR code?
 
@@ -907,7 +907,6 @@ You can follow these FAQs to have a full explanation on the theme:
 - [What are BIP-158 Block Filters?](/FAQ/FAQ-UseWasabi.md#what-are-bip-158-block-filters)
 - [What software supplies the block filters that Wasabi uses?](/FAQ/FAQ-Introduction.md#what-software-supplies-the-block-filters-that-wasabi-uses)
 - [Can the coordinator attack me?](/FAQ/FAQ-Introduction.md#can-the-coordinator-attack-me)
-- [Is the backend's coordinator code open-source?](/FAQ/FAQ-Introduction.md#is-the-backend-s-coordinator-code-open-source)
 
 Then, there are five different phases in a CoinJoin.
 You can follow these links to have a full explanation on that:
@@ -1211,6 +1210,9 @@ A coinjoin is a multi round interactive process, and requires fast signing by th
 Thus currently you have to send the bitcoins from your hardware wallet to a `hot` Wasabi Wallet, do the coinjoin and then send them back to a new address on the Hardware wallet for cold-storage.
 
 Read more [here](/using-wasabi/ColdWasabi.md#cold-wasabi-protocol).
+
+:::tip
+Trezor now supports coinjoin with the Trezor Suite, using same rounds as Wasabi Wallet users. Read more [here](https://content.trezor.io/coinjoin)
 
 ### Does Ledger Live send my public keys and addresses to a third party server?
 
