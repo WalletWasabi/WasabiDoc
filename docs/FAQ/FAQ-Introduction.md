@@ -129,9 +129,9 @@ Key dates:
 - The 2.0 Testnet release was on March 1, 2022
 - The 2.0 release was on June 15, 2022
 
-[![Watch the video](https://img.youtube.com/vi/XORDEX-RrAI/maxresdefault.jpg)](https://youtu.be/XORDEX-RrAI?t=6420)
+[![Watch the video](/Logo_without_text_with_bg_dark_with_yt.png)](https://youtu.be/XORDEX-RrAI?t=6420)
 
-[![Watch the video](https://img.youtube.com/vi/b1Vligm0SO8/maxresdefault.jpg)](https://youtu.be/b1Vligm0SO8)
+[![Watch the video](/Logo_without_text_with_bg_dark_with_yt.png)](https://youtu.be/b1Vligm0SO8)
 
 ### Why is Wasabi libre and open-source software?
 

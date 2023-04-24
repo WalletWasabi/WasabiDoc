@@ -176,4 +176,4 @@ It is entirely possible that the messaging protocol will get to the point where 
 
 You can read more about BitSniff [here](https://79jke.github.io/BitSniff/) and check the interactive demo [here](https://m417z.com/bitsniff/).
 
-[![Watch the video](https://img.youtube.com/vi/9S8xsDq3PTU/maxresdefault.jpg)](https://youtu.be/9S8xsDq3PTU)
+[![Watch the video](/Logo_without_text_with_bg_dark_with_yt.png)](https://youtu.be/9S8xsDq3PTU)
