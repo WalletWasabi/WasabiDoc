@@ -172,6 +172,10 @@ In fact, if a user creates a new Tor circuit every time he opens Wasabi Wallet, 
 
 ### My country/ISP is blocking/censoring Tor, how can I use Wasabi with Tor bridges?
 
+:::warning
+Feature not yet ported to Wasabi 2.0
+:::
+
 Tor bridges, also called Tor bridge relays, are alternative entry points to the Tor network that are not all listed publicly.
 If you suspect your access to the Tor network is being blocked, you may want to use bridges.
 You can read more on [The Tor Project's dedicated page about bridges](https://www.torproject.org/docs/bridges).

@@ -48,7 +48,7 @@ You can find the schedule, call link, past recordings and more at the [Wasabi Re
 
 - Educate yourself about the software by reading through [Using Wasabi](/using-wasabi/).
 - To understand how Wasabi CoinJoins work, read [WabiSabi Framework](https://eprint.iacr.org/2021/206).
-- Familiarize yourself with [C4: The Collective Code Construction Contract](https://rfc.unprotocols.org/spec:1/C4/).
+- Familiarize yourself with [C4: The Collective Code Construction Contract](https://rfc.zeromq.org/spec/42/).
 
 It’s a simple set of collaboration rules based on GitHub’s fork and pull request model, and a foundational part of how we work together.
 
