@@ -94,7 +94,7 @@ The Wasabi package is signed and automatically verified on macOS upon installati
 
 Optionally, you can still verify the PGP signature of the package with `sudo gpg2 --verify Wasabi-${currentVersion}.dmg.asc` and ensure that the software has been signed by zkSNACKs' PGP public key [${zksnacksPublicKeyFingerprint}](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt).
 Now install Wasabi by double-clicking the `.dmg` file.
-Check out the main documentation for a [step-by-step guide](/using-wasabi/InstallPackage.md#macOS).
+Check out the main documentation for a [step-by-step guide](/using-wasabi/InstallPackage.md#macos).
 
 [![Watch the video](https://img.youtube.com/vi/_Zmc54XYzBA/maxresdefault.jpg)](https://youtu.be/_Zmc54XYzBA)
 

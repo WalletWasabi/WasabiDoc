@@ -191,7 +191,7 @@ Wasabikas are builders, users and supporters of Wasabi in general.
 
 ### XPUB (Extended Public Key)
 
-An xpub, also know as Extended Public Key, is a part of BIP-32 that will allow you to observe your wallet without the private key (xpriv).
+An xpub, also known as Extended Public Key, is a part of BIP-32 that will allow you to observe your wallet without the private key (xpriv).
 
 ### ZeroLink
 

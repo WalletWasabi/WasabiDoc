@@ -1213,6 +1213,7 @@ Read more [here](/using-wasabi/ColdWasabi.md#cold-wasabi-protocol).
 
 :::tip
 Trezor now supports coinjoin with the Trezor Suite, using same rounds as Wasabi Wallet users. Read more [here](https://content.trezor.io/coinjoin)
+:::
 
 ### Does Ledger Live send my public keys and addresses to a third party server?
 

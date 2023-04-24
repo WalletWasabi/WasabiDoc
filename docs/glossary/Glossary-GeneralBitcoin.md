@@ -188,7 +188,7 @@ The original and main network for Bitcoin transactions, where satoshis have real
 ### Mempool
 
 The Bitcoin Mempool (memory pool) is a collection of all transaction data in a block that have been verified by Bitcoin nodes, but are not yet confirmed.
-Read more: [How does Wasabi know of incoming transactions to the mempool?](/FAQ/FAQ-UseWasabi.md#how-does-wasabi-know-of-incoming-transactions-to-the-mempoo)
+Read more: [How does Wasabi know of incoming transactions to the mempool?](/FAQ/FAQ-UseWasabi.md#how-does-wasabi-know-of-incoming-transactions-to-the-mempool)
 
 ### Merkle Root
 
