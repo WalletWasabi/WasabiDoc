@@ -103,7 +103,8 @@ And the index of the video of a playlist (e.g. starts the third video):
 
 If the image doesn't appear, that usually happens with older videos, use hqdefault.jpg instead of maxresdefault.jpg
 
-In case that the tumbnail doesn't fit well with the documentation, a default image can be added as custom thumbnail, located at `/Logo_without_text_with_bg_dark_with_yt.png`. Currently, all thumbnails have been set to this default image as a temporary solution because videos are old, sometimes not under our control, and the thumbnails were irrelevant.
+In case that the thumbnail doesn't fit well with the documentation, a default image can be added as custom thumbnail, located at `/Logo_without_text_with_bg_dark_with_yt.png`.
+Currently, all thumbnails have been set to this default image as a temporary solution because videos are old, sometimes not under our control, and the thumbnails were irrelevant.
 
 ## Text Highlights
 
