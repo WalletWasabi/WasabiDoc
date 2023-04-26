@@ -823,7 +823,7 @@ Since the goal is to have at least 150 inputs in one round, the [input registrat
 ### What is happening in the connection confirmation phase?
 
 Because the input registration phase takes some time, the coordinator needs to ensure that everyone is still online and ready to continue.
-So in the [connection confirmation phase](/using-wasabi/CoinJoin.md#connection-confirmation) every Alice sends a signal to the coordinator, and when all have checked in, this phase concludes.
+So in the [connection confirmation phase](/using-wasabi/CoinJoin.md#connection-confirmation) every Alice sends a signal to the coordinator and when the amount of Alices is above the minimum, this phase concludes.
 
 ### What is happening in the output registration phase?
 
