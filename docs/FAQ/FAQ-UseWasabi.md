@@ -835,7 +835,7 @@ Immediately after that, Bob disconnects and the [output registration phase](/usi
 ### What is happening in the signing phase?
 
 After all inputs and outputs are registered, the coordinator has all the information to build the coinjoin transaction.
-This raw transaction is sent to all Alices, each of them verifies the transaction is valid and then signs it.
+This raw (unsigned) transaction is sent to all Alices, each of them verifies that the transaction is valid and then signs it.
 The signatures are sent back to the coordinator who accumulates all of them.
 The [singing phase](/using-wasabi/CoinJoin.md#signing) is concluded when the coordinator receives all the valid signatures for all registered inputs.
 
