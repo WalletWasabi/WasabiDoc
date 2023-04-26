@@ -827,10 +827,13 @@ So in the [connection confirmation phase](/using-wasabi/CoinJoin.md#connection-c
 
 ### What is happening in the output registration phase?
 
-You use some secret parameters to unblind the blinded CoinJoin output to reveal the cleartext address that still contains the signature of the coordinator.
-Wasabi creates a new Tor identity called Bob, and with it you send the unblinded anonset output together with the signature to the coordinator.
-The coordinator can now verify his own signature, thus he knows that previously he has confirmed that Alice had all valid inputs.
-Immediately after that, Bob disconnects and the [output registration phase](/using-wasabi/CoinJoin.md#output-registration) is complete.
+In this [phase](/using-wasabi/CoinJoin.md#output-registration), every client needs to change the value of their credentials to the desired output values.
+For example, the client presents to the coordinator two old credentials and two newly created ones.
+The two pairs sum up to the exact same value, which the coordinator can verify, without knowing the amount value of the credentials.
+This process may repeat multiple times.
+
+The client now creates a new Tor identity called Bob, which is not tied to Alice.
+Bob now sends the coordinator an unblinded credential (signed by the coordinator) and a bitcoin address.
 
 ### What is happening in the signing phase?
 
