@@ -820,7 +820,7 @@ Wasabi then generates the related input proofs.
 After that, a unique Tor identity will be generated for each input, which will be used to send the input ownership proof to the coordinator.
 
 The coordinator now verifies that this input is allowed to register (i.e. there is still room for more inputs, the coin is confirmed, the input proof is valid etc.).
-If all checks are valid, the coordinator creates and sends back the credential.
+If all checks are valid, the coordinator creates and sends back the credentials.
 
 Since the goal is to have at least 150 inputs in one round, the [input registration phase](/using-wasabi/CoinJoin.md#input-registration) can fail if too few participants registered in the available time frame.
 
