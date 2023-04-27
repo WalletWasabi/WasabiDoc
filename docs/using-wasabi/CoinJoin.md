@@ -123,7 +123,7 @@ Next, your Wasabi client generates multiple new Tor identities called **Bob**, w
 Bob sends to the Wasabi coordinator:
 
 * An unblinded credential signed by the coordinator
-* A new unused bitcoin address
+* A new (unused) bitcoin address
 
 Because the coordinator can verify its own credential, it knows that this credential came into existence after an input of at least this much value was registered.
 However, it cannot know which input exactly.
