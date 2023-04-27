@@ -699,7 +699,7 @@ You need to create a new high(er) fee rate paying transaction with that change o
 To bump a transaction with CPFP:
 
 - Generate a receive address
-- [Open the `Wallet Coins` dialog](/FAQ/FAQ-UseWasabi.md#how-do-I-select-coins-for-spending)
+- [Open the `Wallet Coins` dialog](/FAQ/FAQ-UseWasabi.md#how-do-i-select-coins-for-spending)
 - Select the unconfirmed (change) coin and click _Send selected coins_
 - Paste the bitcoin address
 - Enter the label
@@ -725,7 +725,7 @@ There is also no `Send` button with watch-only wallets.
 
 Yes, you can always send from your wallet.
 However, a best practice is to only send private funds.
-Making your wallet 100% private [takes some time](/FAQ/FAQ-UseWasabi.md#how-long-does-it-take-to-make-my-wallet-100%-private), but in the mean time you can always send the (private) funds.
+Making your wallet 100% private [takes some time](/FAQ/FAQ-UseWasabi.md#how-long-does-it-take-to-make-my-wallet-100-private), but in the mean time you can always send the (private) funds.
 
 So when your wallet is partially private (between 0 and 100% privacy progress) it is a best practice to only use the private available funds, to protect your privacy.
 In the privacy progress tile, `PRIVATE` shows the currently available private BTC amount.
