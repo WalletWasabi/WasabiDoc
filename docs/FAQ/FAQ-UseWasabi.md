@@ -699,7 +699,7 @@ You need to create a new high(er) fee rate paying transaction with that change o
 To bump a transaction with CPFP:
 
 - Generate a receive address
-- [Open the `Wallet Coins` dialog](FAQ-UseWasabi.md#how-do-I-select-coins-for-spending)
+- [Open the `Wallet Coins` dialog](/FAQ-UseWasabi.md#how-do-I-select-coins-for-spending)
 - Select the unconfirmed (change) coin and click _Send selected coins_
 - Paste the bitcoin address
 - Enter the label
