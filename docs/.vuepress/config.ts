@@ -179,6 +179,7 @@ export default {
                 collapsable: false,
                 sidebarDepth: 2,
                 children: [
+                    "/using-wasabi/Daemon.md",
                     "/using-wasabi/RPC.md",
                     "/using-wasabi/PayJoin.md",
                     "/using-wasabi/Testnet.md",
