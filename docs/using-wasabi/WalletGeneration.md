@@ -41,7 +41,7 @@ You have to use this seed phrase **together with** your password to recover your
 
 ![Wasabi Wallet recovery words](/AddWalletRecoveryWords.png "Wasabi Wallet recovery words")
 
-5. You must confirm 3 of the 12 Recovery Words, as a quick check to make sure that your Recovery Words are backed up.
+5. You must confirm the Recovery Words by clicking on the right word in the right order, as a check to make sure that your Recovery Words are backed up.
 So, confirm the Recovery Words, and click `Continue`.
 
 ![Wasabi Wallet confirm recovery words](/AddWalletConfirmRecoveryWords.png "Wasabi Wallet confirm recovery words")
