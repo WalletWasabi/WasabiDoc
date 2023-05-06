@@ -11,7 +11,7 @@
 
 ### Who can use Wasabi?
 
-Every single line of code in Wasabi, the [wallet](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Fluent.Desktop), the [backend server](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Backend), the [tests](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Tests), the [packager](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Packager), the [library](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi), the [api](https://wasabiwallet.io/swagger/), the [documentation](https://github.com/zkSNACKs/WasabiDoc) - has always been and will always be libre and open-source under the [MIT license](https://github.com/zkSNACKs/WalletWasabi/blob/master/LICENSE.md).
+Every single line of code in Wasabi, the [wallet](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Fluent.Desktop), the [backend server](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Backend), the [daemon](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Daemon), the [tests](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Tests), the [packager](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Packager), the [library](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi), the [api](https://wasabiwallet.io/swagger/), the [documentation](https://github.com/zkSNACKs/WasabiDoc) - has always been and will always be libre and open-source under the [MIT license](https://github.com/zkSNACKs/WalletWasabi/blob/master/LICENSE.md).
 This means that anyone, yes, ANYONE can use Wasabi without permission, for any use case, free of charge.
 
 Wasabi is used by individuals to make everyday payments, to manage their hardware wallet long term hodlings, and to CoinJoin their sats for added privacy.
@@ -115,7 +115,7 @@ It is possible that the server could *only* include one 'honest/real' coin in th
 This gives a false sense of security, **but does not worsen the existing privacy of the coin**.
 It would also be noticeable to all users excluding the user being targeted as their coins would not be mixed.
 It has been argued that this 'attack' would be very costly in terms of fees because the number of coins being mixed is verifiable.
-Though it is true that remixes pay zero coordinator fee to zkSNACKs, they do pay mining fees.
+Though it is true that remixes pay zero coordination fee to zkSNACKs, they do pay mining fees.
 See [here](https://github.com/zkSNACKs/WabiSabi/blob/master/protocol.md#attacks-on-privacy) for more info.
 
 ### What is the history of Wasabi?
@@ -129,9 +129,9 @@ Key dates:
 - The 2.0 Testnet release was on March 1, 2022
 - The 2.0 release was on June 15, 2022
 
-[![Watch the video](https://img.youtube.com/vi/XORDEX-RrAI/maxresdefault.jpg)](https://youtu.be/XORDEX-RrAI?t=6420)
+[![Watch the video](/Logo_without_text_with_bg_dark_with_yt.png)](https://youtu.be/XORDEX-RrAI?t=6420)
 
-[![Watch the video](https://img.youtube.com/vi/b1Vligm0SO8/maxresdefault.jpg)](https://youtu.be/b1Vligm0SO8)
+[![Watch the video](/Logo_without_text_with_bg_dark_with_yt.png)](https://youtu.be/b1Vligm0SO8)
 
 ### Why is Wasabi libre and open-source software?
 

@@ -36,12 +36,12 @@ Using Wasabi it is mandatory to label every receiving and destination address.
 This helps the user to know where their coins came from so that they can judge whether there are privacy concerns when sending a specific coin to a specific receiver.
 The default _Send_ workflow uses the auto coin selection algorithm, which is based on the labeling system.
 
-Read more [here](/https://docs.wasabiwallet.io/using-wasabi/Receive.md#the-importance-of-labeling).
+Read more [here](/using-wasabi/Receive.md#the-importance-of-labeling).
 
 ### Change avoidance suggestion
 
 When sending bitcoin, the transaction might contain change (back to the sender).
-This can have privacy downsides as explained [here](using-wasabi/ChangeCoins.md#why-change-is-an-issue).
+This can have privacy downsides as explained [here](/using-wasabi/ChangeCoins.md#why-change-is-an-issue).
 When sending in Wasabi the user will be shown with an option to avoid change by slightly increasing or decreasing the send amount in order to avoid change (if possible).
 There is a shield icon shown at the _Preview Transaction_ screen at the top right corner which displays the options when hovering over with the cursor.
 
@@ -88,7 +88,7 @@ In order to protect your privacy, add or remove (when possible) a couple of sats
 A CoinJoin has many unequal value inputs, and creates several equal value anonset outputs, as well as unequal value outputs, making it clear that these are the change outputs.
 
 :::tip
-This is why the CoinJoin change has only 1 [anonset](https://docs.wasabiwallet.io/glossary/Glossary-PrivacyWasabi.html#anonymity-set-anonset).
+This is why the CoinJoin change has only 1 [anonset](/glossary/Glossary-PrivacyWasabi.md#anonymity-set-anonset).
 :::
 
 ```

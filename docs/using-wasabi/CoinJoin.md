@@ -62,19 +62,18 @@ Notice that it is not yet possible to coinjoin from a hardware wallet, the keys 
 
 ### Fees
 
-A 0.3% coordinator fee will be taken from fresh coins bigger than 0.01 BTC.
-Smaller ones don't pay coordinator fee at all, according to the _PlebsDontPay_ threshold.
+A 0.3% coordination fee will be taken from fresh coins bigger than 0.01 BTC.
+Coins less than or equal to 0.01 BTC don't pay coordination fees at all, according to the _PlebsDontPay_ threshold.
 
-The round starts either as soon as the number of registered inputs reaches the maximum, or after the input registration time is reached and as long as the minimum number of inputs is satisfied.
-Just leave Wasabi running in the background of your computer, as coinjoining takes time.
-
-Remixing is free, as well as coinjoining coins 1 hop from coinjoin, although, Bitcoin network fees still do apply.
-So if you send a coinjoined coin and receive a change output, Wasabi will not charge you the coordinator fee for this change output again.
-The recipient of the payment will not have to pay the coordinator fee, as long as he is making coinjoins with the same coordinator.
+Remixing is free, as well as coinjoining coins 1 hop from a coinjoin, although, Bitcoin mining fees still do apply, as shown in [this table](/FAQ/FAQ-UseWasabi.md#what-are-the-fees-for-the-coinjoin).
+So if you send a coinjoined coin and receive a change output, you will not be charged the coordination fee for this change output.
+The recipient of the payment will not have to pay the coordination fee, as long as he is making coinjoins with the same coordinator.
 
 ## WabiSabi protocol step-by-step
 
 WabiSabi protocol requires 5 steps to successfully create and broadcast a coinjoin transaction to the bitcoin network.
+
+The round starts either as soon as the number of registered inputs reaches the maximum, or after the input registration time is reached and as long as the minimum number of inputs is satisfied.
 
 ### Input registration
 
@@ -124,7 +123,7 @@ Next, your Wasabi client generates multiple new Tor identities called **Bob**, w
 Bob sends to the Wasabi coordinator:
 
 * An unblinded credential signed by the coordinator
-* A new unused bitcoin address
+* A new (unused) bitcoin address
 
 Because the coordinator can verify its own credential, it knows that this credential came into existence after an input of at least this much value was registered.
 However, it cannot know which input exactly.
@@ -187,12 +186,12 @@ As the coinjoin settings apply per individual wallet, it is possible to have mul
 
 ### Automatically start coinjoin
 
-This setting is active by default.
+This setting is enabled by default.
 
-When this is active, the wallet will automatically start coinjoining soon after the wallet is loaded.
+When this is enabled, the wallet will automatically start coinjoining soon after the wallet is loaded.
 The wallet will coinjoin until the `privacy progress` is 100%.
 
-When this is not active, the user will have to manually press the Play button in order to start coinjoining.
+When this is not enabled, the user will have to manually press the Play button in order to start coinjoining.
 
 ![Coinjoin Settings Automatically Start Coinjoin](/CoinjoinSettingsAutomaticallyStartCoinjoin.png "Coinjoin Settings Automatically Start Coinjoin")
 
@@ -200,7 +199,7 @@ When this is not active, the user will have to manually press the Play button in
 
 The default Auto-start coinjoin threshold is 0.01 BTC.
 
-The wallet will not automatically start coinjoining if the non-private balance is below the `Auto-start coinjoin threshold`, even if the `Automatically start coinjoin` is active.
+The wallet will not automatically start coinjoining if the non-private balance is below the `Auto-start coinjoin threshold`, even if the `Automatically start coinjoin` is enabled.
 In this case the user has to manually press Play to start coinjoining.
 This setting can be used to prevent paying (relatively) high fees for smaller bitcoin amounts.
 
@@ -217,7 +216,7 @@ Note that you might pay relatively more fees for coinjoining smaller amounts.
 ### Coinjoin Strategy
 
 Wasabi ships with 3 coinjoin strategies: `Minimize Costs`, `Maximize Speed`, and `Maximize Privacy`.
-Each of these contain different configurations.
+Each of these contain different configurations, as shown in [this table](/FAQ/FAQ-UseWasabi.md#what-are-the-differences-settings-per-coinjoin-strategy).
 They determine the `Anonymity score target`, `Coinjoin time preference`, and if `Red coin isolation` is enabled or not.
 
 ![Coinjoin Strategy Settings](/CoinjoinStrategySettings.png "Coinjoin Strategy Settings")
