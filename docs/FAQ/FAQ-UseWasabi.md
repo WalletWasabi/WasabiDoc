@@ -554,7 +554,7 @@ No. That is currently not possible.
 ### Does Wasabi support sending RBF?
 
 All _send_ transactions signal RBF by default.
-However, it is not yet possbile in the Wasabi GUI to replace an RBF transaction by another one paying a higher fee rate.
+However, it is not yet possible in the Wasabi GUI to replace an RBF transaction by another one paying a higher fee rate.
 
 ### Why does Wasabi choose a new random node every time I send a transaction?
 
