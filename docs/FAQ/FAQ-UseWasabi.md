@@ -1391,7 +1391,7 @@ Please note that Wasabi is designed for the dark theme, and some color schemes m
 
 ### What are coins?
 
-Bitcoin uses a system of [inputs and outputs](/why-wasabi/Coins.md) to keep track who owns how many sats.
+Bitcoin uses a system of [inputs and outputs](/why-wasabi/Coins.md) to keep track of who owns how many sats.
 Every transaction specifies one or more inputs, the chunk of bitcoin being spent, and one or more outputs, the destination of who receives the bitcoin.
 A coin is also called an unspent transaction output (UTXO), meaning that this output has not been used as the input of a new transaction - it is yet to be spent.
 In order to spend a UTXO, the valid signature and script has to be provided in the transaction.
