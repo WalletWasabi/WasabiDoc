@@ -512,15 +512,6 @@ In this case you have to wait until your transaction is confirmed in a block, an
 
 ## Send
 
-### What are coins?
-
-Bitcoin uses a system of [inputs and outputs](/why-wasabi/Coins.md) to keep track who owns how many sats.
-Every transaction specifies one or more inputs, the chunk of bitcoin being spent, and one or more outputs, the destination of who receives the bitcoin.
-A coin is also called an unspent transaction output (UTXO), meaning that this output has not been used as the input of a new transaction - it is yet to be spent.
-In order to spend a UTXO, the valid signature and script has to be provided in the transaction.
-This ensures that only with knowledge of the correct private key can this coin be sent to a new address.
-This chain of links between inputs being spent and outputs being generated is verified by every full node, and stored on the blockchain.
-
 ### How do I set a destination address?
 
 In the `Send` dialog, there is a box called `To`, enter here the bitcoin address or PayJoin URL.
@@ -1397,6 +1388,15 @@ Please note that Wasabi is designed for the dark theme, and some color schemes m
 ![Wasabi Wallet white theme](/WhiteMode.png "Wasabi Wallet white theme")
 
 ## Coin Control Best Practices
+
+### What are coins?
+
+Bitcoin uses a system of [inputs and outputs](/why-wasabi/Coins.md) to keep track who owns how many sats.
+Every transaction specifies one or more inputs, the chunk of bitcoin being spent, and one or more outputs, the destination of who receives the bitcoin.
+A coin is also called an unspent transaction output (UTXO), meaning that this output has not been used as the input of a new transaction - it is yet to be spent.
+In order to spend a UTXO, the valid signature and script has to be provided in the transaction.
+This ensures that only with knowledge of the correct private key can this coin be sent to a new address.
+This chain of links between inputs being spent and outputs being generated is verified by every full node, and stored on the blockchain.
 
 ### How can I enable (manual) coin control?
 
