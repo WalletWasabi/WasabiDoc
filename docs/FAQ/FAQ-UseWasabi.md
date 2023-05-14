@@ -898,8 +898,10 @@ For example, if the outputs are [1, 1, 1, 1, 0.5, 0.5, 0.5, 0.5, 0.4, 0.4, 0.2, 
 The anonscore evolved into existence from the anonset, but with some differences.
 What differs is the kind of coinjoins they are applied to, where anonset was for Wasabi 1 and anonscore is for current Wasabi 2.
 In Wasabi 1 coinjoins there are unequal inputs, some equal outputs, and change coins. 
-In Wasabi 2 coinjoins there are many equal inputs, many equal outputs, and (sometimes) some unique value outputs, but that does not mean that these unique value outputs are change coins. 
+In Wasabi 2 coinjoins there are many equal inputs, many equal outputs, and (sometimes) some unique value outputs, that are not necessarily change coins.
 In fact most of the times they are well mixed coins.
+
+Basically the anonymity score is an extremely conservative anonymity set calculation.
 :::
 
 :::details
