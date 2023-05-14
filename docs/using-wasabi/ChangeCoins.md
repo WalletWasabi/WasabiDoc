@@ -9,14 +9,12 @@
 
 [[toc]]
 
----
-
 ## Types of change
 
 ### Non-Coinjoin change
 
 Let's assume you want to send 0.5 bitcoin to Alice.
-You put Alice's address in the `Receiving Address` field, and set the spending `Amount` to 0.5 bitcoin.
+You enter Alice's address in the `To` field (destination address), and set the `Amount` to 0.5 BTC.
 This will be one output of the transaction.
 
 Since your chosen UTXO is worth 2 bitcoins, after sending 0.5 bitcoin to Alice there will be 1.5 bitcoins change from the original amount.
@@ -25,7 +23,7 @@ This leftover amount will automatically go to a new address in your wallet, and 
 This leftover 1.5 bitcoins change UTXO is connected to the input UTXO of the transaction, and thus also has an `anonymity set` of 1.
 As a result, when you send this leftover/change coin in a new transaction, it is clear to any observer that you were part of the transaction that sent 0.5 bitcoin to someone.
 
-This process is applicable to any Bitcoin transaction where the `sent` amount is less than the total value of the input UTXO.
+This process is applicable to any Bitcoin transaction where the _sent_ amount is less than the total value of the input UTXO.
 
 ### Coinjoin change
 
@@ -54,9 +52,9 @@ This might not be possible in some cases where you have to pay a specific value 
 ### Make it difficult to deduce the change
 
 There are [common heuristics identifying change outputs](/why-wasabi/Coins.md#heuristics-identifying-change), try to avoid these with every transaction.
-Don't reuse addresses, don't send precise amounts but randomize them, don't use replace by fee, and try to send to bech32 addresses.
+Don't reuse addresses, don't send precise amounts but randomize them, don't use replace by fee, and try to send to bech32 or bech32m addresses.
 
-### Spend the change to the same entity as in the initial transaction.
+### Spend the change to the same entity as in the initial transaction
 
 If in the first transaction you have 0.10 bitcoin and send Alice 0.04 bitcoin, you get 0.06 bitcoin back as change in a new address, which Alice can see belongs to you.
 Now, in a second transaction where you want to send Alice 0.05 bitcoin, you can select that 0.06 bitcoin change coin without losing any privacy, because Alice already knows this is your coin.

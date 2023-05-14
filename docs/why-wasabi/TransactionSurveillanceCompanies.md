@@ -12,8 +12,6 @@ Their business model is usually to sell the data to any governments, corporation
 
 [[toc]]
 
----
-
 ## Spying technology
 
 There are a number of techniques probably used by transaction surveillance companies:
@@ -24,7 +22,7 @@ All this information is usually passed onto the exchange's partner transaction s
 
 ### Blockchain analysis
 Bitcoin on-chain transactions are visible to all and so can be analyzed.
-Important techniques are the [common-input-ownership](/FAQ/FAQ-UseWasabi.md#why-is-coin-control-so-important) heuristic and [address reuse](/why-wasabi/AddressReuse.md).
+Important techniques are the [common-input-ownership](/glossary/Glossary-PrivacyWasabi.md#common-input-ownership-heuristic) heuristic and [address reuse](/why-wasabi/AddressReuse.md).
 
 ### Wallet synchronization analysis
 Bitcoin lightweight wallets often download their own history and balance by querying a third-party server.
@@ -68,7 +66,7 @@ Sufficient privacy is an essential prerequisite for a viable digital currency.
 
 ### Attempt to destroy fungibility
 
-Privacy invasions can lead to damaging or destroying bitcoin [fungibility](https://docs.wasabiwallet.io/glossary/Glossary-GeneralBitcoin.html#fungibility).
+Privacy invasions can lead to damaging or destroying bitcoin [fungibility](/glossary/Glossary-GeneralBitcoin.md#fungibility).
 The aim of bitcoin is to be a decentralized digital currency, but if all users are eventually required to consult centralized blacklists before accepting bitcoin, then its decentralization will be destroyed.
 
 [How is financial privacy an essential element to fungibility in Bitcoin?](/FAQ/FAQ-GeneralBitcoinPrivacy.md#how-is-financial-privacy-an-essential-element-to-fungibility-in-bitcoin)
@@ -111,9 +109,9 @@ _According to an excerpt from Chainalysis in their [2021 report](https://blog.ch
 - [Blockchain Group](https://blockchaingroup.io/)
 - [Ciphertrace](https://ciphertrace.com/)
 - [Comply Advantage](https://complyadvantage.com/aml-crypto-compliance/)
-- [IdentityMind](https://identitymindglobal.com/)
+- [Idology](https://www.idology.com/solutions/compliance/)
 - [Elementus](https://elementus.io/)
-- [BlockSeer](https://www.blockseer.com/)
+- [DmgBlockchain](https://dmgblockchain.com/)
 - [ScoreChain](https://www.scorechain.com/)
 - [Crystal](https://crystalblockchain.com/)
 - Coinvalidation

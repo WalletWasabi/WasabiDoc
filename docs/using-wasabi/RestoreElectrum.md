@@ -13,9 +13,13 @@ If you do not run your own Electrum server, you will leak all your addresses to 
 To gain some privacy by using Electrum you should set up Tor on Network preferences or by installing your own Electrum server via [Electrum Personal Server](https://github.com/chris-belcher/electrum-personal-server), [ElectrumX](https://github.com/kyuupichan/electrumx) or [Electrs](https://github.com/romanz/electrs).
 :::
 
-[[toc]]
+:::warning Electrum does currently not support Taproot
+As of Wasabi [version 2.0.3](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v2.0.3), users may receive Taproot outputs from coinjoin or as a change output from a normal transaction.
+So when recovering a wallet from Wasabi in Electrum some funds might be missing, as the Taproot (SegWit v1) coins are not shown.
+An other wallet that does support Taproot should be used for recovering Taproot coins.
+:::
 
----
+[[toc]]
 
 ## Restoring Wasabi Wallet via Electrum GUI
 
@@ -27,60 +31,15 @@ To gain some privacy by using Electrum you should set up Tor on Network preferen
 
 3. Choose `Standard wallet`.
 
-4. Choose `I already have a seed` or `Use a master key`.
+4. Choose `I already have a seed`.
 
-5. Type your seed or paste your master private key.
+5. Type in your seed (recovery words).
 
-	:::tip Get your master private key inside Wasabi:
-	- Go to `Wallet Info`.
-	- Copy your `Extended Account Private Key zprv`.
-	:::
+6. Click the `Options` button, then select `BIP39 seed` and if you created your Wasabi wallet with a password make sure to check `Extend this seed with custom words` and type your password in the `Seed extension` window.
 
-The next steps are only necessary if you have previously chosen the option `I already have a seed`.
+7. On the `Script type and Derivation path` window, choose `native SegWit (p2wpkh)` or manually insert `m/84'/0'/0'`.
 
-6. Click the `Options` button, then check `BIP39 seed` and if you created your Wasabi wallet with a password make sure to check `Extend this seed with custom words` and type your password in the `Seed extension` window.
-
-7. On `Script type and Derivation path` window, choose `native SegWit (p2wpkh)` or manually insert `m/84'/0'/0'`.
-
-8. Increase the gap limits by opening Electrum's `Console` and executing the following commands:
-
-	```
-	wallet.change_gap_limit(100)
-	wallet.gap_limit_for_change = 100
-	wallet.synchronize()
-	```
-
-## Restoring Wasabi Wallet manually by creating a new wallet file
-
-1. Create a new empty text file, this will be your Electrum wallet file.
-
-2. Paste the following code:
-
-	```
-	{
-	    "keystore": {
-	        "type": "bip32",
-	        "xprv": "vprv9DMUxX4ShgxMLku9TWoPTTt3ZKYhAHCuhULnR9Qmkv1naNQ4g1HfdURhfq65aJKk7zsmnoXbVryeLwtkj9LhuQoKFD5Fyus9kkiwA1S2pEU",
-	        "xpub": "vpub5ZPNxAuehdRrMpX7vQSQzAshpziQUZHnDkzPBZJ4GFbhn8mVxoyxJzCGq482a2BDHvfnMfX1u4hdX1XfS7ZdHJXffydLPHjCXBY86sG6tE1"
-	    },
-	    "seed_type": "bip39",
-	    "seed_version": 18,
-	    "use_encryption": false,
-	    "wallet_type": "standard"
-	}
-	```
-
-3. Replace `xprv` and `xpub` sections with your Wasabi wallet's `Extended Account Private Key zprv` and `Extended Account zpub`.
-
-	:::tip Get your master private and public keys inside Wasabi:
-	- Go to `Wallet Info`.
-	- Copy your `Extended Account Private Key zprv`.
-	- Copy your `Extended Account zpub`.
-	:::
-
-4. Open the wallet file you created in Electrum.
-
-5. Increase the gap limits by opening Electrum's `Console` and executing the following commands:
+8. Increase the gap limit by opening Electrum's `Console` and execute the following commands:
 
 	```
 	wallet.change_gap_limit(100)

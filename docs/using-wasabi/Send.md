@@ -9,9 +9,7 @@
 
 [[toc]]
 
----
-
-@[youtube](vCI5aza-lv0)
+[![Send in Wasabi Wallet](/Logo_without_text_with_bg_dark_with_yt.png)](https://youtu.be/vCI5aza-lv0 "Send in Wasabi Wallet")
 
 ## How to send bitcoin step-by-step
 
@@ -130,7 +128,7 @@ So in order to increase your privacy, you can set a non-rounded amount, like `0.
 Every transaction must specify a fee which incentives the miner to include it in a block, it is calculated by `value of inputs - value of outputs`.
 The higher the fee per virtual byte (vByte) transaction size, the more likely miners are to confirm this transaction.
 Wasabi uses Bitcoin Core's `smart fee` algorithm to estimate the time it will take to confirm at the given fee level.
-You can change the fee by moving the slider, or by manually setting the [transaction fee rate](/FAQ/FAQ-UseWasabi.html#how-do-i-set-custom-fee-rate).
+You can change the fee by moving the slider, or by manually setting the [transaction fee rate](/FAQ/FAQ-UseWasabi.md#how-do-i-set-custom-fee-rate).
 
 ![Wasabi Wallet Fee Slider](/SendFeeSlider.png "Wasabi Wallet Fee Slider")
 
@@ -149,7 +147,7 @@ For a deeper dive into the fee estimation process, [this article](https://bitcoi
 ## Password
 
 In order to spend a coin, the transaction must be signed by the private key corresponding to that coin.
-Wasabi stores a secret on the computer, encrypted with the password that you specified during the [wallet generation](/using-wasabi/WalletGeneration.md#what-password-to-choose).
+Wasabi stores a secret on the computer, encrypted with the password that you specified during the [wallet generation](/using-wasabi/WalletGeneration.md#important-info-about-your-wallet-password).
 To spend a coin you need to type in the password, which decrypts the encrypted secret, and then derive the child private key that signs the transaction.
 Afterwards, the password is wiped from memory.
 

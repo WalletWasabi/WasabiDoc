@@ -9,17 +9,15 @@
 
 So you're interested in contributing to Wasabi - welcome!
 
-This checklist will get you plugged in and productive as quickly as possible.
-
 :::tip Embrace the open-source crypto-anarchy!
 No one is here to tell you what to do, and it is not required to work on an existing issue to contribute to Wasabi.
 Contributors are free to work on their own forked versions on whatever they want, however they wish and without any permission from anyone.
 With that being said, in order to maximize the usefulness/impact of your work, it's a good idea to consult with other Wasabikas via Slack, GitHub, or other communication channels before setting out on any serious contribution effort.
 :::
 
-[[toc]]
+This checklist will get you plugged in and productive as quickly as possible.
 
----
+[[toc]]
 
 ## Who is a contributor?
 
@@ -50,7 +48,7 @@ You can find the schedule, call link, past recordings and more at the [Wasabi Re
 
 - Educate yourself about the software by reading through [Using Wasabi](/using-wasabi/).
 - To understand how Wasabi CoinJoins work, read [WabiSabi Framework](https://eprint.iacr.org/2021/206).
-- Familiarize yourself with [C4: The Collective Code Construction Contract](https://rfc.unprotocols.org/spec:1/C4/).
+- Familiarize yourself with [C4: The Collective Code Construction Contract](https://rfc.zeromq.org/spec/42/).
 
 It’s a simple set of collaboration rules based on GitHub’s fork and pull request model, and a foundational part of how we work together.
 

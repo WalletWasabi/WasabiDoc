@@ -9,8 +9,6 @@
 
 [[toc]]
 
----
-
 ## Sending PayJoin step-by-step
 
 1. Load a wallet and open the `Send` dialog.

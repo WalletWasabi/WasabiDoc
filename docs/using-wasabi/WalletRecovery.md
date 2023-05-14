@@ -11,8 +11,6 @@ There are two different ways that you can recover an already used wallet in Wasa
 
 [[toc]]
 
----
-
 ## Mnemonic Recovery Words and Password
 
 Wasabi uses the [BIP 39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) mnemonic code for generating [BIP 32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) hierarchical deterministic wallets.
@@ -50,7 +48,7 @@ At recovery, Wasabi is unable to check if your password is correct or not.
 If you type a wrong password a completely different wallet will be recovered.
 :::
 
-You can also use the `Advanced Recovery Options` to specify the account key derivation path of the HD wallet structure and the gap limit.
+You can also use the `Advanced Recovery Options` to specify the gap limit.
 The gap limit is about how far Wasabi will check the HD wallet structure for consecutive addresses that have no coins, in some cases, you may want to increase this limit.
 
 ![Wasabi Wallet Recovery Advanced](/WalletRecoveryAdvanced.png "Wasabi Wallet Recovery Advanced")

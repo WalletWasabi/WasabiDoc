@@ -7,13 +7,13 @@
 
 # Wallet Generation
 
+[[toc]]
+
+## Introduction
+
 With Wasabi you can generate an unlimited number of Bitcoin wallets very quickly, without any cost, and without asking anyone for permission.
 Each wallet has separate private and public keys in a unique backup, and they are not at all linked to the other wallets generated on the same computer.
 So, with several wallets, you can conveniently manage your bitcoin for different use cases without worrying about revealing that you control them.
-
-[[toc]]
-
----
 
 ## Generating the wallet step-by-step
 
@@ -24,14 +24,14 @@ The very first time you run the software the `Add Wallet` dialog will be open au
 
 ![Add a Bitcoin wallet with Wasabi](/AddWallet.png "Add a Bitcoin wallet with Wasabi")
 
-3. Name the new wallet precisely to ensure a proper differentiation from wallets created in the future.
-This label is not shared with anyone, it is only stored locally on your computer.
+3. Give the wallet a name.
+This name is not shared with anyone, it is only stored locally on your computer.
 Click `Continue`.
 
 ![Add Wallet Wallet Name](/AddWalletWalletName.png "Add Wallet Wallet Name")
 
 4. Write down the 12 recovery words (mnemonic seed phrase) in the correct order and store them in a safe place.
-You have to use this seed phrase **together with** your password to recover your wallet on a different computer using Wasabi or another [BIP 39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) compliant wallet.
+You have to use this seed phrase **together with** your password to recover your wallet (using Wasabi or another [BIP 39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) compliant wallet).
 
 	:::danger Back up your recovery words!
 	Without the recovery words (Seed phrase) AND the password, you cannot recover your wallet.

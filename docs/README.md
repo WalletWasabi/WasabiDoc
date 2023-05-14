@@ -1,9 +1,13 @@
 ---
 home: true
 heroText: Wasabi Documentation
-heroImage: /Logo_without_text.png
-actionText: Reclaim Your Privacy →
-actionLink: /using-wasabi/ELI5.md
+heroImage: /Logo_without_text_dark.png
+heroImageDark: /Logo_without_text.png
+tagline: An archive of knowledge about Wasabi Wallet, an open-source, non-custodial and privacy-focused Bitcoin wallet for desktop.
+actions:
+  - text: Reclaim Your Privacy →
+    link: /using-wasabi/ELI5.md
+    type: primary
 features:
 - title: Open-source
   details: Don't trust, verify. Wasabi is libre and open source software under the MIT license. You have full access to every single line of code, and you can do with it as you please.
