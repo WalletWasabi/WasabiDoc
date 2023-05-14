@@ -65,7 +65,7 @@ If we fail, then this will conjure up the most horrific Orwellian nightmare.
 There is no room for wasted time and energy, this great work requires our full attention.
 Any line of code written to support a random shitcoin takes away scarce developer time to work on real problems.
 
-### What is considered a sufficient anon score?
+### What is considered a sufficient anonymity score?
 
 It is difficult to determine a sufficient anonymity score since enough research hasn’t been conducted to provide a definitive answer.
 The right anonymity score depends on your own personal threat model.
