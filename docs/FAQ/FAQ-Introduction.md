@@ -65,12 +65,11 @@ If we fail, then this will conjure up the most horrific Orwellian nightmare.
 There is no room for wasted time and energy, this great work requires our full attention.
 Any line of code written to support a random shitcoin takes away scarce developer time to work on real problems.
 
-### Why is the anonymity score 100?
+### What is considered a sufficient anonymity score?
 
-It is difficult to determine a sufficient anonymity set since enough research hasn’t been conducted to provide a definitive answer.
-The right anonymity set depends on your own personal threat model.
-However, the rough consensus among many privacy researchers is that an anonymity set above 50 could be considered sufficient.
-Furthermore our calculations have shown that with the liquidity of today’s mixers, our mixing rounds would take 1 to 5 minutes with 100 anonymity score.
+It is difficult to determine a sufficient anonymity score since enough research hasn’t been conducted to provide a definitive answer.
+The right anonymity score depends on your own personal threat model.
+However, to be on the safe side, with Wasabi Wallet 2.0 an anonymity score of 5 and above could be considered sufficient.
 
 ### Is there a way to check Wasabi's uptime status?
 
