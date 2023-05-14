@@ -69,7 +69,7 @@ Any line of code written to support a random shitcoin takes away scarce develope
 
 It is difficult to determine a sufficient anonymity score since enough research hasn’t been conducted to provide a definitive answer.
 The right anonymity score depends on your own personal threat model.
-However, the rough consensus is that with WabiSabi an anonymity score of 2 and above could be considered sufficient.
+However, to be on the safe side, with Wasabi Wallet 2.0 an anonymity score of 5 and above could be considered sufficient.
 
 ### Is there a way to check Wasabi's uptime status?
 
