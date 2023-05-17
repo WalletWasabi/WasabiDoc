@@ -18,7 +18,7 @@ The ability to keep a secret is an essential part of the human experience.
 - Why do you close the door when in the shower?
 - Why do you send your love letters only to your spouse?
 
-[![Watch the video](https://img.youtube.com/vi/laem7G6LPAM/maxresdefault.jpg)](https://youtu.be/laem7G6LPAM)
+[![Watch the video](/Logo_without_text_with_bg_dark_with_yt.png)](https://youtu.be/laem7G6LPAM)
 
 Economic trade of goods and services is based on mutual beneficial voluntary action.
 But when an outside authority demands that the peers reveal the details of their exchange, then they must beg for permission of every act.

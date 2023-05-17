@@ -160,7 +160,7 @@ If you run into trouble or have special requirements, the complete User Manual c
 
 ### Create Your First Virtual Machine
 
-Detailed instructions for creating various types of virtual machines can be found [here](https://www.virtualbox.org/manual/UserManual.html#gui-createvm).
+Detailed instructions for creating various types of virtual machines can be found [here](https://www.virtualbox.org/manual/UserManual.html#create-vm-wizard).
 
 __Things to Note:__
 

@@ -23,6 +23,7 @@ Read more: [Address reuse](/why-wasabi/AddressReuse.md)
 
 Anonymity score is a new way to estimate the entropy level of a UTXO in an unequal-but-highly-composable output value coinjoin.
 The anonymity score is a metric to help the wallet decide when it's time to stop the coinjoining process.
+Read more: [What is the anonymity score?](/FAQ/FAQ-UseWasabi.md#what-is-the-anonymity-score)
 
 ### Anonymity Set (anonset)
 
@@ -111,7 +112,7 @@ Read more: [How does my wallet communicate with the Wasabi coordinator server?](
 
 Dust is an UTXO that is uneconomical to spend.
 Also, small portions of bitcoin can lead to serious consequences for one's privacy, for example the so called `forced address reuse attack`.
-Read more: [What is the dust threshold](/FAQ/FAQ-UseWasabi.html#what-is-the-dust-threshold)
+Read more: [What is the dust threshold](/FAQ/FAQ-UseWasabi.md#what-is-the-dust-threshold)
 
 ### Label
 
@@ -191,8 +192,7 @@ Wasabikas are builders, users and supporters of Wasabi in general.
 
 ### XPUB (Extended Public Key)
 
-An xpub, also know as Extended Public Key, is a part of BIP-32 that will allow you to observe your wallet without the private key (xpriv).
-Read more: [Wasabi's Solution](/why-wasabi/AddressReuse.html#wasabi-s-solution)
+An xpub, also known as Extended Public Key, is a part of BIP-32 that will allow you to observe your wallet without the private key (xpriv).
 
 ### ZeroLink
 

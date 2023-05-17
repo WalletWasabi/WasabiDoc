@@ -9,7 +9,7 @@
 
 [[toc]]
 
-[![Watch the video](https://img.youtube.com/vi/Wjc00GBn-OQ/maxresdefault.jpg)](https://youtu.be/Wjc00GBn-OQ)
+[![Receive bitcoin in Wasabi Wallet](/Logo_without_text_with_bg_dark_with_yt.png)](https://youtu.be/Wjc00GBn-OQ "Receive bitcoin in Wasabi Wallet")
 
 ## Generating addresses step-by-step
 
@@ -84,11 +84,13 @@ You can use the one known by Alice or the one known by the KYC exchange, but are
 Are you okay with Alice knowing about your deal with Charlie?
 In case none of those combinations are acceptable for you then you should CoinJoin your coins.
 
-### CoinJoined coins
+### Coinjoined coins
 
-Those that participate in a Wasabi [CoinJoin](/using-wasabi/CoinJoin.md) transaction receive at least one coin with an anonymity set level that depends on the number of participants in that transaction.
-By default Wasabi tries to create transactions with 100 unknown participants, so the received coin can have 100 anonymity set which means it is really hard for an observer to know who that coin belongs to.
-For that reason, a coin with a high anonymity set loses the cluster which it originally had.
+Those inputs that participate in a Wasabi [coinjoin](/using-wasabi/CoinJoin.md) transaction get transformed into arbitrary sized outputs with an increased anonymity score.
+By default, Wasabi tries to create big coinjoin transactions with many inputs and outputs, but the individual coins' privacy varies depending on the final amounts and values of the inputs and outputs of other participants.
+The higher the anonymity score of a coin, the harder it is for an observer to know who that coin belongs to.
+For that reason, coins with a high anonymity score are usually the ones preferred when making a payment transaction.
+When coins achieve the target anonymity score of the selected coinjoin strategy, their values will the visible under the Privacy Progress bar.
 
 ### Final words about labels and examples
 

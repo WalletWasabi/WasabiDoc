@@ -11,7 +11,7 @@
 
 ### Who can use Wasabi?
 
-Every single line of code in Wasabi, the [wallet](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Fluent.Desktop), the [backend server](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Backend), the [tests](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Tests), the [packager](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Packager), the [library](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi), the [api](https://wasabiwallet.io/swagger/), the [documentation](https://github.com/zkSNACKs/WasabiDoc) - has always been and will always be libre and open-source under the [MIT license](https://github.com/zkSNACKs/WalletWasabi/blob/master/LICENSE.md).
+Every single line of code in Wasabi, the [wallet](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Fluent.Desktop), the [backend server](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Backend), the [daemon](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Daemon), the [tests](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Tests), the [packager](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Packager), the [library](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi), the [api](https://wasabiwallet.io/swagger/), the [documentation](https://github.com/zkSNACKs/WasabiDoc) - has always been and will always be libre and open-source under the [MIT license](https://github.com/zkSNACKs/WalletWasabi/blob/master/LICENSE.md).
 This means that anyone, yes, ANYONE can use Wasabi without permission, for any use case, free of charge.
 
 Wasabi is used by individuals to make everyday payments, to manage their hardware wallet long term hodlings, and to CoinJoin their sats for added privacy.
@@ -65,12 +65,11 @@ If we fail, then this will conjure up the most horrific Orwellian nightmare.
 There is no room for wasted time and energy, this great work requires our full attention.
 Any line of code written to support a random shitcoin takes away scarce developer time to work on real problems.
 
-### Why is the anonymity score 100?
+### What is considered a sufficient anonymity score?
 
-It is difficult to determine a sufficient anonymity set since enough research hasn’t been conducted to provide a definitive answer.
-The right anonymity set depends on your own personal threat model.
-However, the rough consensus among many privacy researchers is that an anonymity set above 50 could be considered sufficient.
-Furthermore our calculations have shown that with the liquidity of today’s mixers, our mixing rounds would take 1 to 5 minutes with 100 anonymity score.
+It is difficult to determine a sufficient anonymity score since enough research hasn’t been conducted to provide a definitive answer.
+The right anonymity score depends on your own personal threat model.
+However, to be on the safe side, with Wasabi Wallet 2.0 an anonymity score of 5 and above could be considered sufficient.
 
 ### Is there a way to check Wasabi's uptime status?
 
@@ -115,7 +114,7 @@ It is possible that the server could *only* include one 'honest/real' coin in th
 This gives a false sense of security, **but does not worsen the existing privacy of the coin**.
 It would also be noticeable to all users excluding the user being targeted as their coins would not be mixed.
 It has been argued that this 'attack' would be very costly in terms of fees because the number of coins being mixed is verifiable.
-Though it is true that remixes pay zero coordinator fee to zkSNACKs, they do pay mining fees.
+Though it is true that remixes pay zero coordination fee to zkSNACKs, they do pay mining fees.
 See [here](https://github.com/zkSNACKs/WabiSabi/blob/master/protocol.md#attacks-on-privacy) for more info.
 
 ### What is the history of Wasabi?
@@ -129,9 +128,9 @@ Key dates:
 - The 2.0 Testnet release was on March 1, 2022
 - The 2.0 release was on June 15, 2022
 
-[![Watch the video](https://img.youtube.com/vi/XORDEX-RrAI/maxresdefault.jpg)](https://youtu.be/XORDEX-RrAI?t=6420)
+[![Watch the video](/Logo_without_text_with_bg_dark_with_yt.png)](https://youtu.be/XORDEX-RrAI?t=6420)
 
-[![Watch the video](https://img.youtube.com/vi/b1Vligm0SO8/maxresdefault.jpg)](https://youtu.be/b1Vligm0SO8)
+[![Watch the video](/Logo_without_text_with_bg_dark_with_yt.png)](https://youtu.be/b1Vligm0SO8)
 
 ### Why is Wasabi libre and open-source software?
 
