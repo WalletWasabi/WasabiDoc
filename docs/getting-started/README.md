@@ -8,7 +8,10 @@
 # Getting Started
 
 This is an easy and short guide on how to get started using Wasabi.
+
 Please refer to the rest of the documentation for detailed explanations and best practices.
+
+[[toc]]
 
 ## Download Wasabi
 
@@ -44,10 +47,10 @@ Read it and continue.
 
 You will be asked what kind of wallet you want to add.
 There are 4 options:
--Create a new wallet
--Connect hardware wallet
--Import a wallet
--Recover a wallet
+- Create a new wallet
+- Connect hardware wallet
+- Import a wallet
+- Recover a wallet
 
 Select _Create a new wallet_.
 
@@ -73,14 +76,17 @@ Now open the wallet by entering the password.
 ## Receive bitcoin
 
 As you can see, the new wallet is empty as it has 0.00000000 BTC.
-Click on Receive at the top right to [receive](/using-wasabi/Receive.md) some bitcoin to this new wallet.
+Click on `Receive` at the top right to [receive](/using-wasabi/Receive.md) some bitcoin to this new wallet.
 
 ## Coinjoin
 
 After you have received some bitcoin, Wasabi will automatically coinjoin the bitcoin for you.
+
 Coinjoin will automatically start after the incoming funds are confirmed.
-You need to manually press Play in the musicbox (at the bottom of the wallet) if you received less than 0.01 BTC.
+You need to manually press the play button in the musicbox (at the bottom of the wallet) if you received less than 0.01 BTC.
+
 You know that your wallet is coinjoining if you see the stop button in the musicbox and the spectrum ("waving" color animationn) at the bottom of the wallet.
+
 Now wait while you leave Wasabi running so it can do some coinjoins.
 You might need to wait for (a of couple) hour(s) (sometimes less or sometimes more) to get successful coinjoins and to see your privacy percentage reach 100%.
 
@@ -100,5 +106,3 @@ Now that all your bitcoin is private you can use your bitcoin to:
 Congratulations you are now using Wasabi!
 :::
 
-###
-Make sure to check the rest of the documentation for explanations and (privacy) best practices.
