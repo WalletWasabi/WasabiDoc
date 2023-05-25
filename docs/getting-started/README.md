@@ -7,7 +7,7 @@
 
 # Getting Started
 
-This is short comprehensive guide on how to get started using Wasabi.
+This is a short comprehensive guide on how to get started using Wasabi.
 
 Please refer to the rest of the documentation for detailed explanations and best practices.
 
