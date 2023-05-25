@@ -7,7 +7,7 @@
 
 # Getting Started
 
-This is an easy and short guide on how to get started using Wasabi.
+This is short comprehensive guide on how to get started using Wasabi.
 
 Please refer to the rest of the documentation for detailed explanations and best practices.
 
@@ -85,16 +85,16 @@ After you have received some bitcoin, Wasabi will automatically coinjoin the bit
 Coinjoin will automatically start after the incoming funds are confirmed.
 You need to manually press the play button in the musicbox (at the bottom of the wallet) if you received less than 0.01 BTC.
 
-You know that your wallet is coinjoining if you see the stop button in the musicbox and the spectrum ("waving" color animationn) at the bottom of the wallet.
+You know that your wallet is coinjoining if you see the stop button in the musicbox and the spectrum ("waving" color animation) at the bottom of the wallet.
 
 Now wait while you leave Wasabi running so it can do some coinjoins.
-You might need to wait for (a of couple) hour(s) (sometimes less or sometimes more) to get successful coinjoins and to see your privacy percentage reach 100%.
+You might need to wait for (a couple of) hour(s) (sometimes less or sometimes more) to get successful coinjoins and to see your privacy percentage reach 100%.
 
 ## Funds 100% private
 
 After one or more coinjoins your funds should be made private as you can see in the _Privacy Progress_ tile at the top.
 All your funds are private if it displays 100%.
-In the history you will see a shield icon, this indicates that you participated in coinjoin rounds.
+In the history you will see a shield icon(s), which indicates that you successfully participated in a coinjoin round(s).
 
 ## Use the private bitcoin
 
