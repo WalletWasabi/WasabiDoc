@@ -82,6 +82,9 @@ export default {
             }],
         ],
         navbar: [{
+            text: "Getting Started",
+            link: "/getting-started/"
+        }, {
             text: "Why Wasabi",
             link: "/why-wasabi/"
         }, {
