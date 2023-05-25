@@ -30,14 +30,6 @@ The downloaded Wasabi package needs to be installed on the computer so the appli
 
 How to do this depends on the desktop operating system, the detailed guides can be found here: [Windows](/using-wasabi/InstallPackage.md#windows), [Debian/Ubuntu](/using-wasabi/InstallPackage.md#debian-and-ubuntu), [Other Linux](/using-wasabi/InstallPackage.md#other-linux), [macOS](/using-wasabi/InstallPackage.md#macos)
 
-## Start Wasabi
-
-The first start might be different as there is not yet an application to click on to start Wasabi.
-So the first time you might need to do a few extra steps.
-Next time Wasabi can be launched just by clicking the application icon.
-
-How to do this depends on the desktop operating system, the detailed guides can be found here: [Windows](/using-wasabi/InstallPackage.md#windows), [Debian/Ubuntu](/using-wasabi/InstallPackage.md#debian-and-ubuntu), [Other Linux](/using-wasabi/InstallPackage.md#other-linux), [macOS](/using-wasabi/InstallPackage.md#macos)
-
 ## Welcome Screen
 
 The first time that you start Wasabi, you will be welcomed with information about the app.
