@@ -63,13 +63,15 @@ a[href^="https://youtu.be"] {
 html.dark {
 	--c-text: #fff;
 	body {
-	  background: linear-gradient(160deg, rgb(73, 88, 107), rgb(0, 16, 31) 22%) !important;
+	  background: linear-gradient(180deg, rgba(70, 70, 70, 0) 0%, rgba(0, 0, 0, 1) 80%) !important;
 	}
 	.sidebar {
 		background-color: transparent;
 	}
 	.navbar {
-		background-color: #00101f;
+		background: rgba(0, 0, 0, 0.3);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
 	}
 }
 html:not(.dark){
