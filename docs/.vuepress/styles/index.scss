@@ -24,6 +24,10 @@ body {
 .home .feature h2 {
 	font-weight: bold;
 }
+.home .hero img {
+	max-height: 230px;
+	margin: 4rem auto;
+}
 .navbar-items a {
 	font-weight:bold;
 	font-size: 16px;
@@ -63,7 +67,7 @@ a[href^="https://youtu.be"] {
 html.dark {
 	--c-text: #fff;
 	body {
-	  background: linear-gradient(180deg, rgba(70, 70, 70, 0) 0%, rgba(0, 0, 0, 1) 80%) !important;
+	  background: linear-gradient(143deg, rgba(70, 70, 70, 1) 0%, rgba(0, 0, 0, 1) 55%) !important;
 	}
 	.sidebar {
 		background-color: transparent;
