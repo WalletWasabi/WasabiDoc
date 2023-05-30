@@ -126,6 +126,11 @@ KYC (Know Your Customer) is the process of a business being forced to identify a
 The term is also used to refer to the bank regulation which governs these activities.
 Read more: [AML/KYC Information](/why-wasabi/TransactionSurveillanceCompanies.md#aml-kyc-information)
 
+### Daemon
+
+A daemon is a command line interface to run Wasabi without the GUI (Graphical User Interface).
+Read more: [Headless Wasabi Daemon](/using-wasabi/Daemon.md)
+
 ### Discreet Mode
 
 Discreet Mode is a Wasabi feature that hides sensitive and critical information on the wallet itself, which is useful for screenshots.
