@@ -549,14 +549,14 @@ curl --data-binary '{"jsonrpc":"2.0","id":"1","method":"listkeys"}' http://127.0
 ### startcoinjoin
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"startcoinjoin", "params":"True, True"}' http://127.0.0.1:37128/ | jq
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"startcoinjoin", "params":["UserPassword", "True", "True"]}' http://127.0.0.1:37128/ | jq
 {
   "jsonrpc": "2.0",
   "id": "1"
 }
 ```
 
-The first parameter is `stopWhenAllMixed`, the second parameter is `overridePlebStop`
+The first parameter is the wallet password, the second parameter is `stopWhenAllMixed`, and the third one is`overridePlebStop`.
 
 ### stopcoinjoin
 
