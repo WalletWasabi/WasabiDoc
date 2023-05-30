@@ -108,6 +108,11 @@ This is a heuristic or assumption which says that if a transaction has more than
 The coordinator is a server which creates CoinJoins and accepts UTXOs in the mix.
 Read more: [How does my wallet communicate with the Wasabi coordinator server?](/FAQ/FAQ-UseWasabi.md#how-does-my-wallet-communicate-with-the-wasabi-coordinator-server)
 
+### Discreet Mode
+
+Discreet Mode is a Wasabi feature that hides sensitive and critical information on the wallet itself, which is useful for screenshots.
+Read more: [Discreet Mode](/using-wasabi/DiscreetMode.md)
+
 ### Dust
 
 Dust is an UTXO that is uneconomical to spend.
@@ -125,11 +130,6 @@ Read more: [Why do I have to label my address](/FAQ/FAQ-UseWasabi.md#why-do-i-ha
 KYC (Know Your Customer) is the process of a business being forced to identify and verify the identity of its clients, and to share this information with a government.
 The term is also used to refer to the bank regulation which governs these activities.
 Read more: [AML/KYC Information](/why-wasabi/TransactionSurveillanceCompanies.md#aml-kyc-information)
-
-### Discreet Mode
-
-Discreet Mode is a Wasabi feature that hides sensitive and critical information on the wallet itself, which is useful for screenshots.
-Read more: [Discreet Mode](/using-wasabi/DiscreetMode.md)
 
 ### Observers
 
