@@ -210,7 +210,7 @@ The guide for the deterministic builds can be found in the [WalletWasabi reposit
 
 ### My antivirus marks Wasabi Wallet as a virus. Am I downloading the right software?
 
-After you have downloaded Wasabi from the [official website](https://wasabiwallet.io/) or from the [official GitHub repository](https://github.com/zkSNACKs/WalletWasabi/releases), make sure you have [verified the PGP signatures](/FAQ/FAQ-Installation.md#how-can-i-verify-pgp-signatures).
+After you have downloaded Wasabi from the [official website](https://wasabiwallet.io) or from the [official GitHub repository](https://github.com/zkSNACKs/WalletWasabi/releases), make sure you have [verified the PGP signatures](/FAQ/FAQ-Installation.md#how-can-i-verify-pgp-signatures).
 
 If you have downloaded and verified digital signatures and your antivirus continues to report Wasabi as positive, you don't have to worry about anything; it is a false positive.
 

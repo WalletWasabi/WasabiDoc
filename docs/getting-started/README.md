@@ -15,7 +15,7 @@ Please refer to the rest of the documentation for detailed explanations and best
 
 ## Download Wasabi
 
-Download Wasabi from the official website [wasabiwallet.io](https://wasabiwallet.io) or [wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion/](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion/) if you're using the Tor Browser.
+Download Wasabi from the official website [wasabiwallet.io](https://wasabiwallet.io) or [wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion) if you're using the Tor Browser.
 
 ## Verify the Download
 
