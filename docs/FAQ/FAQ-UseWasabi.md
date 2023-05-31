@@ -934,7 +934,7 @@ Wasabi is using a fresh unused coordinator address for every coinjoin round.
 
 ### What is the maximum number of coins that can be registered in a coinjoin?
 
-Wasabi Wallet's default client is configured to register a maximum of 10 inputs per round.
+Wasabi Wallet's default client is configured to register 1 up to 10 inputs per coinjoin round.
 However, as the coordinator cannot enforce this, a custom client could use a different configuration.
 
 ### How many coins/outputs do I get from a coinjoin?
