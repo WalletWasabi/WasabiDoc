@@ -194,6 +194,9 @@ In case we try to generate a wallet with a too long password it will return:
 
 Allows the RPC server to open/switch wallets.
 
+The password is not needed for this RPC call, because it selects/uses the (clear text) wallet file, which doesn't require the password.
+Where the GUI does require the password to open a wallet because it uses different logic, like to immediately start coinjoin.
+
 ```bash
 curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"selectwallet", "params" : ["WalletName"]}' http://127.0.0.1:37128/
 curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getwalletinfo"}' http://127.0.0.1:37128/ | jq
