@@ -239,6 +239,68 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getwalletinfo"}' http
 }
 ```
 
+### listcoins
+
+Returns the list of previously spent and currently unspent coins (confirmed and unconfirmed).
+
+```bash
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"listcoins"}' http://127.0.0.1:37128/ | jq
+```
+
+```json
+{
+  "jsonrpc": "2.0",
+  "result": [
+    {
+      "txid": "88d3e86b215ccbb0136da156fdc75548c3f8e3edd5a5d8aacb2c04d4cbf45987",
+      "index": 0,
+      "amount": 38478,
+      "anonymitySet": 1,
+      "confirmed": true,
+      "confirmations": 1428,
+      "keyPath": "86'/1'/0'/1/0",
+      "address": "tb1pf6u35naersjgmzw5szxxkrz47ugl4jdkj2x7n2fcqzmfpzm366wq0dxxv2"
+    },
+    {
+      "txid": "a4f495cbf64f6e1942627954443c8edcf2b14fa6bea53219431c24ccb7f61707",
+      "index": 0,
+      "amount": 54626,
+      "anonymitySet": 1,
+      "confirmed": true,
+      "confirmations": 29800,
+      "keyPath": "84'/1'/0'/0/0",
+      "address": "tb1qg7y2xzmy5unyxem8utytwqmh837n30t83jy3z2",
+      "spentBy": "95159c33459921cb5cc01364231f36bd6c82c025a057eb150346b37a8b2186cb"
+    },
+    {
+      "txid": "cb4dda1d53e23dd63aba0e7ce6876014a9c8c361026b9835316b338d172802e4",
+      "index": 54,
+      "amount": 8192,
+      "anonymitySet": 1,
+      "confirmed": true,
+      "confirmations": 2638,
+      "keyPath": "84'/1'/0'/1/0",
+      "address": "tb1q3qt7a8aw5edjhawmg5964hk6jl7hzmd0wpavme",
+      "spentBy": "8094b2d88df19a4cc3b09705935ed63f06736594d65d5cc8e663ac23054ed9a3"
+    },
+  ],
+  "id": "1"
+}
+```
+
+In case there is no wallet open it will return:
+
+```json
+{
+  "jsonrpc": "2.0",
+  "error": {
+    "code": -32603,
+    "message": "There is no wallet loaded."
+  },
+  "id": "1"
+}
+```
+
 ### listunspentcoins
 
 Returns the list of confirmed and unconfirmed coins that are unspent.
