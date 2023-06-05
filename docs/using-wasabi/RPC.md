@@ -48,7 +48,7 @@ Open a new terminal and use the following RPC commands to interact with your wal
 
 ## Available methods
 
-The current version handles the following methods: `getstatus`, `createwallet`, `listunspentcoins`, `getwalletinfo`, `getnewaddress`, `send`, `gethistory`, `listkeys`, `startcoinjoin`, `stopcoinjoin` and `stop`.
+The current version handles the following methods: `getstatus`, `createwallet`, `selectwallet`, `listcoins`, `listunspentcoins`, `getwalletinfo`, `getnewaddress`, `send`, `broadcast`, `gethistory`, `listkeys`, `startcoinjoin`, `stopcoinjoin` and `stop`.
 
 The wallet name can be specified in the url path.
 So this can be used to prevent having to do two calls: `selectwallet` first and then the wanted method.
