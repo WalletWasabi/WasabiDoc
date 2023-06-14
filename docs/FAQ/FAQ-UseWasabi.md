@@ -295,6 +295,7 @@ You can rescan an existing Wasabi wallet by editing the `Height` in the wallet f
 - Close Wasabi.
 - Open the wallet file in your favorite text editor.
 - Set the `Height` to 0.
+- Set the `TurboSyncHeight` to 0.
 
 ```json
 { // only relevant parts are shown
@@ -302,7 +303,9 @@ You can rescan an existing Wasabi wallet by editing the `Height` in the wallet f
   "TaprootAccountKeyPath": "86'/0'/0'",
   "BlockchainState": {
     "Network": "Main",
-    "Height": "0"
+    "Height": "0",
+    "TurboSyncHeight": "0"
+
   }
 }
 ```
@@ -311,11 +314,13 @@ You can rescan an existing Wasabi wallet by editing the `Height` in the wallet f
 - Start Wasabi again, open your wallet and wait for the synchronization.
 
 :::tip
-Changing the Height to 0 will trigger a full resync of your wallet, and that can take some time depending on the size of your wallet (how many transactions it had).
+Changing the Height and TurboSyncHeight to 0 will trigger a full resync of your wallet, and that can take some time depending on the size of your wallet (how many transactions it had).
 
 For example if the problem happened 3 days ago then you can go back a week or so to resync the wallet:
 
 `new_height = current_height - (7 * 144)`
+
+TurboSyncHeight and Height should always be set to the same value.
 :::
 
 :::tip
