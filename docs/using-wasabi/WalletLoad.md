@@ -64,5 +64,5 @@ A log message `Wallet is fully synchronized.` indicates when the verification pr
 
 :::tip You can disable it!
 TurboSync feature shouldn't cause any problem, but you might want to disable it to debug potential issues with the synchronization of your wallet.
-In that case, go to your wallet configuration file (search for `Wallet Folder` using Wasabi's searchbar then open the file corresponding to your wallet) and set `UseTurboSync` to `false`.
+In that case, go to your wallet file (search for `Wallet Folder` using Wasabi's searchbar then open the file corresponding to your wallet) and set `UseTurboSync` to `false`.
 :::
