@@ -59,7 +59,7 @@ In other terms, once an internal key has been used to receive a coin and then th
 Wallets coinjoining a lot will benefit the most from this feature, as the vast majority of their keys will be skipped, reducing the number of blocks to download because of false-positive matches.
 
 Once the wallet is opened, the skipped keys will be tested in the background, in the case that some funds have been received on those keys.
-Users in that case would see their balance update automatically after some time.
+Users in that edge case would see their balance update automatically after some time.
 A log message `Wallet is fully synchronized.` indicates when the verification process finishes.
 
 :::tip You can disable it!
