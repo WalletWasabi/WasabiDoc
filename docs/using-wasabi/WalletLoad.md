@@ -50,7 +50,7 @@ In this step, your Wasabi behaves like any other full node, and cannot be differ
 During a coinjoin, a new address (key) has to be generated for each output.
 As a result, wallets that use the coinjoin service a lot have a quickly growing set of generated addresses.
 This is a problem for wallet synchronization: each key has to be tested against each filter, with a small probability of matching as false-positive for every key.
-As a result, addresses with many derived keys will have to download many false positives, making the synchronization more and more time consuming. 
+As a result, wallets with many derived keys will have to download many false-positive blocks, making the synchronization more time consuming.
 
 The TurboSync feature has been built to reduce the hassle caused by synchronization for big wallets.
 It leverages a simple heuristic: Keys used as coinjoin outputs or as change (internal keys) should only be used once.
