@@ -47,14 +47,22 @@ In this step, your Wasabi behaves like any other full node, and cannot be differ
 
 ### TurboSync
 
-During a Coinjoin, a new address (key) has to be generated for each output. As a result, wallets that use the Coinjoin service a lot have a quickly growing set of generated addresses. This is a problem for wallet synchronization: each key has to be tested against each filter, with a small probability of matching as false-positive for every key. As a result, addresses with many derived keys will have to download many false positives, making the synchronization more and more time consuming. 
+During a Coinjoin, a new address (key) has to be generated for each output.
+As a result, wallets that use the Coinjoin service a lot have a quickly growing set of generated addresses.
+This is a problem for wallet synchronization: each key has to be tested against each filter, with a small probability of matching as false-positive for every key.
+As a result, addresses with many derived keys will have to download many false positives, making the synchronization more and more time consuming. 
 
-The TurboSync feature has been built to reduce the hassle caused by synchronization for big wallets. It leverages a simple heuristic: Keys used as coinjoin outputs or as change (internal keys) should only be used once. In other terms, once an internal key has been used to receive a coin and then this coin was used as input in a new transaction (the coin has been spent), the key should never be used again, and there is no need to test it against higher filters. 
+The TurboSync feature has been built to reduce the hassle caused by synchronization for big wallets.
+It leverages a simple heuristic: Keys used as coinjoin outputs or as change (internal keys) should only be used once.
+In other terms, once an internal key has been used to receive a coin and then this coin was used as input in a new transaction (the coin has been spent), the key should never be used again, and there is no need to test it against higher filters. 
 
 Wallets coinjoining a lot will benefit the most from this feature, as the vast majority of their keys will be skipped, reducing the number of blocks to download because of false-positive matches.
 
-After the wallet will be opened, the skipped keys will then be tested in the background, in the case that some funds have been received on keys skipped. Users in that case would see their balance update automatically after some time. A log message `Wallet is fully synchronized.` indicates when the verification process finishes.
+After the wallet will be opened, the skipped keys will then be tested in the background, in the case that some funds have been received on keys skipped.
+Users in that case would see their balance update automatically after some time.
+A log message `Wallet is fully synchronized.` indicates when the verification process finishes.
 
 :::tip You can disable it!
-TurboSync feature shouldn't cause any problem, but you might want to disable it to debug potential issues with the synchronization of your wallet. In that case, go to your wallet configuration file (search for `Wallet Folder` using Wasabi's searchbar then open the file corresponding to your wallet) and set `UseTurboSync` to `false`
+TurboSync feature shouldn't cause any problem, but you might want to disable it to debug potential issues with the synchronization of your wallet.
+In that case, go to your wallet configuration file (search for `Wallet Folder` using Wasabi's searchbar then open the file corresponding to your wallet) and set `UseTurboSync` to `false`.
 :::
