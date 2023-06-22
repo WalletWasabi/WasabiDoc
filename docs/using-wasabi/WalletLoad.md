@@ -53,8 +53,8 @@ This is a problem for wallet synchronization: each address has to be tested agai
 As a result, wallets with many derived addresses will have to download many false-positive blocks, making the synchronization more time consuming.
 
 The TurboSync feature has been built to reduce the hassle caused by synchronization for big wallets.
-It leverages a simple heuristic: addresses used as coinjoin outputs or as change (internal keys) should only be used once.
-In other terms, once an internal address has been used to receive a coin and then this coin was used as input in a new transaction (the coin has been spent), the address should never be used again, and there is no need to test it against higher filters. 
+It leverages a simple heuristic: addresses used as coinjoin outputs or as change (internal keys) should only be used twice: one time to receive coins and another time to spend them.
+In other terms, once an internal address has been used to receive a coin and then this coin was used as input in a new transaction (the coin has been spent), the address should never be used again, and there is no need to test it against the remaining filters. 
 
 Wallets coinjoining a lot will benefit the most from this feature, as the vast majority of their addresses will be skipped, reducing the number of blocks to download because of false-positive matches.
 
