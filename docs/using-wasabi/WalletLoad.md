@@ -49,16 +49,16 @@ In this step, your Wasabi behaves like any other full node, and cannot be differ
 
 During a coinjoin, a new address (key) has to be generated for each output.
 As a result, wallets that use the coinjoin service a lot have a quickly growing set of generated addresses.
-This is a problem for wallet synchronization: each key has to be tested against each filter, with a small probability of matching as false-positive for every key.
-As a result, wallets with many derived keys will have to download many false-positive blocks, making the synchronization more time consuming.
+This is a problem for wallet synchronization: each address has to be tested against each filter, with a small probability of matching as false-positive for every address.
+As a result, wallets with many derived addresses will have to download many false-positive blocks, making the synchronization more time consuming.
 
 The TurboSync feature has been built to reduce the hassle caused by synchronization for big wallets.
-It leverages a simple heuristic: Keys used as coinjoin outputs or as change (internal keys) should only be used once.
-In other terms, once an internal key has been used to receive a coin and then this coin was used as input in a new transaction (the coin has been spent), the key should never be used again, and there is no need to test it against higher filters. 
+It leverages a simple heuristic: addresses used as coinjoin outputs or as change (internal keys) should only be used once.
+In other terms, once an internal address has been used to receive a coin and then this coin was used as input in a new transaction (the coin has been spent), the address should never be used again, and there is no need to test it against higher filters. 
 
-Wallets coinjoining a lot will benefit the most from this feature, as the vast majority of their keys will be skipped, reducing the number of blocks to download because of false-positive matches.
+Wallets coinjoining a lot will benefit the most from this feature, as the vast majority of their addresses will be skipped, reducing the number of blocks to download because of false-positive matches.
 
-Once the wallet is opened, the skipped keys will be tested in the background, in the case that some funds have been received on those keys.
+Once the wallet is opened, the skipped addresses will be tested in the background, in the case that some funds have been received on those addresses.
 Users in that edge case would see their balance update automatically after some time.
 A log message `Wallet is fully synchronized.` indicates when the verification process finishes.
 
