@@ -47,6 +47,9 @@ In this step, your Wasabi behaves like any other full node, and cannot be differ
 
 ### TurboSync
 
+Since Wasabi version 2.x a new feature is added called _TurboSync_.
+_TurboSync_ leads to a significant reduction of wallet loading time, especially for a big wallet.
+
 During a coinjoin, a new address (key) has to be generated for each output.
 As a result, wallets that use the coinjoin service a lot have a quickly growing set of generated addresses.
 This is a problem for wallet synchronization: each address has to be tested against each filter, with a small probability of matching as false-positive for every address.
