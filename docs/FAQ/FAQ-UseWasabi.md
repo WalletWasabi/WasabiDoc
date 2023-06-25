@@ -1449,7 +1449,7 @@ Alternatively, you can use your hardware wallet with Electrum, and in order to n
 ### What can I do with small change?
 
 There are no hard and fast rules for [what to do with the change](/using-wasabi/ChangeCoins.md).
-Generally try to avoid having change by using the [_change avoidance_ suggestions when sending](using-wasabi/Send.md#how-to-send-bitcoin-step-by-step).
+Generally try to avoid having change by using the [_change avoidance_ suggestions when sending](/using-wasabi/Send.md#how-to-send-bitcoin-step-by-step).
 Generally change should be coinjoined, Wasabi automatically coinjoins the change if possible (if the change is more than the [coinjoin minimum](/FAQ/FAQ-UseWasabi.md#what-is-the-minimum-amount-required-to-coinjoin)).
 
 You should treat change as a kind of toxic waste (handled with great care).
