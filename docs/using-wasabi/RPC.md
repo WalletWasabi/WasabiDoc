@@ -501,7 +501,7 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"send", "params": { "p
 
 ### broadcast
 
-Broadcast a transaction.
+Broadcasts a transaction.
 Enter the transaction hex in the _params_ field.
 
 ```bash
