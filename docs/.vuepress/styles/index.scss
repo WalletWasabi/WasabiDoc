@@ -77,6 +77,9 @@ html.dark {
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px);
 	}
+	.external-link-icon {
+		--external-link-icon-color: none;
+	}
 }
 html:not(.dark){
 	--c-text-light: var(--c-text) !important;
