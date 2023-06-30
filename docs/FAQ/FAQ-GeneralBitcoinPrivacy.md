@@ -124,7 +124,6 @@ Instead, if you prefer to use some dedicated hardware solutions, these are some 
 - [RaspiBolt](https://stadicus.github.io/RaspiBolt/), another Raspberry DIY node
 - [Nodl](https://www.nodl.it/), works out of the box and runs on a powerful Rockchip CPU
 - [myNode](https://mynodebtc.com/), a DIY project with optional paid versions
-- [Casa](https://keys.casa/lightning-bitcoin-node/), works out of the box on the Raspberry platform
 
 ### Why is it important to use a new address for every payment?
 
@@ -172,6 +171,10 @@ Regarding the privacy, this is done to avoid time correlation attacks when using
 In fact, if a user creates a new Tor circuit every time he opens Wasabi Wallet, he would send a series of information to the Bitcoin network, which could allow a correlation and deanonymization of the user himself.
 
 ### My country/ISP is blocking/censoring Tor, how can I use Wasabi with Tor bridges?
+
+:::warning
+Feature not yet ported to Wasabi 2.0
+:::
 
 Tor bridges, also called Tor bridge relays, are alternative entry points to the Tor network that are not all listed publicly.
 If you suspect your access to the Tor network is being blocked, you may want to use bridges.

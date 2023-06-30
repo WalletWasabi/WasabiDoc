@@ -49,7 +49,16 @@ Open a new terminal and use the following RPC commands to interact with your wal
 ## Available methods
 
 The current version handles the following methods: `getstatus`, `createwallet`, `listunspentcoins`, `getwalletinfo`, `getnewaddress`, `send`, `gethistory`, `listkeys`, `startcoinjoin`, `stopcoinjoin` and `stop`.
-They can be used as follows:
+
+The wallet name can be specified in the url path.
+So this can be used to prevent having to do two calls: `selectwallet` first and then the wanted method.
+Example:
+
+```bash
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getwalletinfo"}' http://127.0.0.1:37128/WalletName | jq
+```
+
+The methods can be used as follows:
 
 ### getstatus
 
@@ -185,6 +194,9 @@ In case we try to generate a wallet with a too long password it will return:
 
 Allows the RPC server to open/switch wallets.
 
+The password is not needed for this RPC call, because it selects/uses the (clear text) wallet file, which doesn't require the password.
+Where the GUI does require the password to open a wallet because it uses different logic, like to immediately start coinjoin.
+
 ```bash
 curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"selectwallet", "params" : ["WalletName"]}' http://127.0.0.1:37128/
 curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getwalletinfo"}' http://127.0.0.1:37128/ | jq
@@ -222,6 +234,68 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getwalletinfo"}' http
     "accountKeyPath": "m/84'/0'/0'",
     "masterKeyFingerprint": "323ec8d9",
     "balance": 13182012
+  },
+  "id": "1"
+}
+```
+
+### listcoins
+
+Returns the list of previously spent and currently unspent coins (confirmed and unconfirmed).
+
+```bash
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"listcoins"}' http://127.0.0.1:37128/ | jq
+```
+
+```json
+{
+  "jsonrpc": "2.0",
+  "result": [
+    {
+      "txid": "88d3e86b215ccbb0136da156fdc75548c3f8e3edd5a5d8aacb2c04d4cbf45987",
+      "index": 0,
+      "amount": 38478,
+      "anonymitySet": 1,
+      "confirmed": true,
+      "confirmations": 1428,
+      "keyPath": "86'/1'/0'/1/0",
+      "address": "tb1pf6u35naersjgmzw5szxxkrz47ugl4jdkj2x7n2fcqzmfpzm366wq0dxxv2"
+    },
+    {
+      "txid": "a4f495cbf64f6e1942627954443c8edcf2b14fa6bea53219431c24ccb7f61707",
+      "index": 0,
+      "amount": 54626,
+      "anonymitySet": 1,
+      "confirmed": true,
+      "confirmations": 29800,
+      "keyPath": "84'/1'/0'/0/0",
+      "address": "tb1qg7y2xzmy5unyxem8utytwqmh837n30t83jy3z2",
+      "spentBy": "95159c33459921cb5cc01364231f36bd6c82c025a057eb150346b37a8b2186cb"
+    },
+    {
+      "txid": "cb4dda1d53e23dd63aba0e7ce6876014a9c8c361026b9835316b338d172802e4",
+      "index": 54,
+      "amount": 8192,
+      "anonymitySet": 1,
+      "confirmed": true,
+      "confirmations": 2638,
+      "keyPath": "84'/1'/0'/1/0",
+      "address": "tb1q3qt7a8aw5edjhawmg5964hk6jl7hzmd0wpavme",
+      "spentBy": "8094b2d88df19a4cc3b09705935ed63f06736594d65d5cc8e663ac23054ed9a3"
+    },
+  ],
+  "id": "1"
+}
+```
+
+In case there is no wallet open it will return:
+
+```json
+{
+  "jsonrpc": "2.0",
+  "error": {
+    "code": -32603,
+    "message": "There is no wallet loaded."
   },
   "id": "1"
 }
@@ -425,6 +499,26 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"send", "params": { "p
 
 **Note**: error codes are generic and not Wasabi specific.
 
+### broadcast
+
+Broadcast a transaction.
+Enter the transaction hex in the _params_ field.
+
+```bash
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"broadcast", "params":["020000000001021cb46e8537e18398c382d0d5622ad9e475245cd789e31fb2de285c802e7b56e50100000000fefffffffe0fa22998e2dd1e4d66b09bf7e253d201f7e0b88098973bfd5e6c5ac426398d0000000000feffffff02c315100000000000160014b60bfb6774881b531d70228fb36a5fd60bd36c6ca07a0300000000001600145d576a81f460e7a1ed254fe9bfff075ab3bc45650247304402206b6d7d282b796920bf1742ca996733866321e5b491cd4a50749b9f62192f635202200f7d5a2105da3361f41810868526545c1b01160e6381ab34c56956df2995bd2c012102549fa9f712caffdf63da7d077e6a26dc3d01ca275312e9f64d1d9accf949d2bc0247304402206afcb357fa31aa5d9d241b1365492b85f058f8029ba348ff7ffd2ee15bb972fe022064818c8ab49ce649a4bb37d645d933c5860b1d5a6916fe267f3fb29e6bafca10012102a80b143904f60ede946ba9a44f29df12b7fb16f6ae3dc93a728d6a00ef658e62ad2d2500"]}' http://127.0.0.1:37128/ | jq
+```
+
+```json
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "txid": "7cb3c78e10a4730f157589e348ea12b29d3d638826a31f77baccc82e6047de25"
+  },
+  "id": "1"
+}
+
+```
+
 ### gethistory
 
 Returns the list of all transactions sent and received.
@@ -540,14 +634,14 @@ curl --data-binary '{"jsonrpc":"2.0","id":"1","method":"listkeys"}' http://127.0
 ### startcoinjoin
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"startcoinjoin", "params":"True, True"}' http://127.0.0.1:37128/ | jq
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"startcoinjoin", "params":["UserPassword", "True", "True"]}' http://127.0.0.1:37128/ | jq
 {
   "jsonrpc": "2.0",
   "id": "1"
 }
 ```
 
-The first parameter is `stopWhenAllMixed`, the second parameter is `overridePlebStop`
+The first parameter is the wallet password, the second parameter is `stopWhenAllMixed`, and the third one is`overridePlebStop`.
 
 ### stopcoinjoin
 

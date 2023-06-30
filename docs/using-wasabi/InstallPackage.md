@@ -16,7 +16,7 @@ This is a version of the software that is thoroughly reviewed by the contributor
 The package has the binary code that is needed to run the Wasabi Wallet client including the graphical user interface.
 For compiling the open-source code with cutting edge development features, also including the backend server, see this [tutorial here](/using-wasabi/BuildSource.md).
 
-Download the packages either from the official [WasabiWallet.io](https://wasabiwallet.io/) clearnet website or for your privacy's sake, from the official Tor onion service [http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion/](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion/).
+Download the packages either from the official [WasabiWallet.io](https://wasabiwallet.io) clearnet website or for your privacy's sake, from the official Tor onion service [http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion).
 
 ![Operating systems supported by Wasabi Wallet](/DownloadAll.png "Operating systems supported by Wasabi Wallet")
 
@@ -111,7 +111,8 @@ Among others, here is where your wallet files and your logs reside.
 ## macOS
 
 1. [Download](https://wasabiwallet.io/#download) the `.dmg` package of Wasabi ${currentVersion} for your machine's processor.
-If you're not sure what processor your device has, [check it](https://www.howtogeek.com/706226/how-to-check-if-your-mac-is-using-an-intel-or-apple-silicon-processor/).
+[There are two types of packages for macOS](/FAQ/FAQ-Installation.md#why-are-there-two-different-packages-for-macos-intel-and-apple-silicon), one for Intel and one for the Apple Silicon chip.
+If you're not sure what processor your device has, you can [check it](https://www.howtogeek.com/706226/how-to-check-if-your-mac-is-using-an-intel-or-apple-silicon-processor/).
 
 ![Download Wasabi Wallet for macOS](/DownloadMac.png "Download Wasabi Wallet for macOS")
 
@@ -149,6 +150,6 @@ If the message returned says `Good signature from zkSNACKs` and that it was sign
 	You can ignore this, but if you want to fully verify your download, you need to ask people you trust to confirm that the key fingerprint belongs to zkSNACKs.
 	:::
 
-[![Watch the video](https://img.youtube.com/vi/ry6qIyQmzRE/maxresdefault.jpg)](https://youtu.be/ry6qIyQmzRE)
+[![Watch the video](/Logo_without_text_with_bg_dark_with_yt.png)](https://youtu.be/ry6qIyQmzRE)
 
-[![Watch the video](https://img.youtube.com/vi/QHIpEYYqddE/maxresdefault.jpg)](https://youtu.be/QHIpEYYqddE)
+[![Watch the video](/Logo_without_text_with_bg_dark_with_yt.png)](https://youtu.be/QHIpEYYqddE)

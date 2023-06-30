@@ -12,7 +12,7 @@
 Adam Ficsor had a donation address for a few years while he was working alone on Wasabi.
 It's not the case anymore.
 Though it's most likely not an issue to accept Bitcoin donations, zkSNACKs team discontinued accepting donations because they don't want to get into accidental legal gray areas.
-Wasabi has a coordinator fee that is capped at 0.3% for every CoinJoin and it became zkSNACKs' main income.
+Wasabi has a coordination fee that is capped at 0.3% for every CoinJoin and it became zkSNACKs' main income.
 To help Wasabi development, just CoinJoin your bitcoins via Wasabi!
 If you want to read more about fees here is a nice explanation: [What are the fees for the CoinJoin](/FAQ/FAQ-UseWasabi.md#what-are-the-fees-for-the-coinjoin).
 
@@ -24,11 +24,11 @@ There are many Wasabikas working with great effort and care to manifest this pow
 [Over 50 peers](https://github.com/zkSNACKs/WalletWasabi/graphs/contributors) have already contributed to the repository.
 Four of the main contributors are [Ádám Ficsor](https://github.com/nopara73) [co-founder and former CTO of [zkSNACKs Ltd](https://zksnacks.com/), co-author of the [zero link Bitcoin fungibility framework](https://github.com/nopara73/ZeroLink)], [Lucas Ontivero](https://github.com/lontivero) [lead engineer of [zkSNACKs Ltd](https://zksnacks.com/)], [Dávid Molnár](https://github.com/molnard) [CTO of [zkSNACKs Ltd](https://zksnacks.com/)], and [Dan Walmsley](https://github.com/danwalmsley) [co-maintainer of [Avalonia UI Framework](https://github.com/AvaloniaUI/Avalonia)].
 
-[![Watch the video](https://img.youtube.com/vi/F8xNSOhbWrw/hqdefault.jpg)](https://youtu.be/F8xNSOhbWrw)
+[![Watch the video](/Logo_without_text_with_bg_dark_with_yt.png)](https://youtu.be/F8xNSOhbWrw)
 
-[![Watch the video](https://img.youtube.com/vi/Yg7_3LIutJA/maxresdefault.jpg)](https://youtu.be/Yg7_3LIutJA)
+[![Watch the video](/Logo_without_text_with_bg_dark_with_yt.png)](https://youtu.be/Yg7_3LIutJA)
 
-[![Watch the video](https://img.youtube.com/vi/X9BB_9faJE8/maxresdefault.jpg)](https://youtu.be/X9BB_9faJE8)
+[![Watch the video](/Logo_without_text_with_bg_dark_with_yt.png)](https://youtu.be/X9BB_9faJE8)
 
 ### Who reviews and merges the pull requests?
 
@@ -65,7 +65,7 @@ Join our [Slack](https://join.slack.com/t/tumblebit/shared_invite/enQtNjQ1MTQ2Nz
 
 Yes!
 The beauty of Wasabi is that it's not just a very awesome wallet by default, but it has the additional opt-in CoinJoin service.
-This is provided by [zkSNACKs Ltd.](https://zksnacks.com), and in exchange for this service, the user pays a coordinator fee.
+This is provided by [zkSNACKs Ltd.](https://zksnacks.com), and in exchange for this service, the user pays a coordination fee.
 In return, zkSNACKs is supporting several developers to dedicate their full time to contribute to this open-source project.
 There are also contribution games where a bounty is paid out to any contributor worthy the prize.
 

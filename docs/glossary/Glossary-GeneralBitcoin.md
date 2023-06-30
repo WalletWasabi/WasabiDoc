@@ -11,7 +11,7 @@
 
 A Bitcoin invoice address commits to a public key or script which defines who can spend the coin.
 It is specified in the output of a transaction, and it should only be used once.
-Wasabi uses the bech32 format to encode native segregated witness addresses.
+Wasabi uses the bech32 and bech32m format to encode native segregated witness addresses.
 Read more: [Bitcoin addresses](/using-wasabi/Receive.md#bitcoin-public-keys-and-addresses)
 
 ### Bitcoin
@@ -180,7 +180,6 @@ Input, transaction input, or TxIn is an input in a Bitcoin transaction which con
 
 Lightning Network is a proposed implementation of Hashed Timelock Contracts (HTLCs) with bi-directional payment channels which allows payments to be securely routed across multiple peer-to-peer payment channels.
 This allows the formation of a network where any peer on the network can pay any other peer even if they don't directly have a channel open between each other.
-Read more: [Use Lightning](/using-wasabi/10Commandments.md#_10-use-lightning)
 
 ### Mainnet
 
@@ -189,7 +188,7 @@ The original and main network for Bitcoin transactions, where satoshis have real
 ### Mempool
 
 The Bitcoin Mempool (memory pool) is a collection of all transaction data in a block that have been verified by Bitcoin nodes, but are not yet confirmed.
-Read more: [How does Wasabi know of incoming transactions to the mempool?](/FAQ/FAQ-UseWasabi.html#how-does-wasabi-know-of-incoming-transactions-to-the-mempool)
+Read more: [How does Wasabi know of incoming transactions to the mempool?](/FAQ/FAQ-UseWasabi.md#how-does-wasabi-know-of-incoming-transactions-to-the-mempool)
 
 ### Merkle Root
 
@@ -253,6 +252,10 @@ An output locked by a P2PKH script can be unlocked (spent) by presenting a publi
 P2SH or Pay-to-Script-Hash is a type of transaction that simplifies the use of complex transaction scripts.
 With P2SH the complex script that details the spending conditions (redeem script) is committed to with a hash in the locking script.
 
+### P2TR
+
+A pay-to-taproot (P2TR), also known as a Taproot or Bech32m address, is the most recent and advanced bitcoin address format. Taproot introduces more advanced security, privacy, flexibility and scaling to bitcoin.
+
 ### P2WPKH
 
 The signature of a P2WPKH (Pay-to-Witness-Public-Key-Hash) contains the same information as a P2PKH spending, but is located in the witness field instead of the scriptSig field.
@@ -289,7 +292,7 @@ A private key is a large number that must be chosen at random, it is thus a very
 With knowledge of this number, anyone can easily compute the public key, and a signature over any message.
 It can also be used to decrypt any message that was encrypted to the public key corresponding to the private key.
 In Bitcoin, a signature over a valid transaction message gives the right to spend a coin, thus knowledge of the private key corresponds to ownership of the bitcoin.
-Read more: [Bitcoin private keys](/using-wasabi/Receive.html#bitcoin-public-keys-and-addresses)
+Read more: [Bitcoin private keys](/using-wasabi/Receive.md#bitcoin-public-keys-and-addresses)
 
 ### Proof of Work (POW)
 
@@ -305,7 +308,7 @@ Anyone can encrypt a message using a public key.
 This encrypted message (cyphertext) can only be decrypted through the related private key.
 Given a public key and a signature over a message, anyone can verify that the signer had the private key and the message.
 In Bitcoin, the public key is the pseudonymous identity of the owner of a coin.
-Read more: [Bitcoin private keys](/using-wasabi/Receive.html#bitcoin-public-keys-and-addresses)
+Read more: [Bitcoin private keys](/using-wasabi/Receive.md#bitcoin-public-keys-and-addresses)
 
 ### Regtest
 

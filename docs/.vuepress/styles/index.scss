@@ -9,6 +9,7 @@
   --c-warning: #e7c000 !important;
   --c-warning-bg: #fffae3 !important;
   --c-warning-text: #746000 !important;
+  --c-warning-text-accent: #000 !important;
   --c-text-light: #fff !important;
   --c-border-dark: var(--c-brand) !important;
   --c-text-quote: var(--c-text) !important;
@@ -22,6 +23,10 @@ body {
 }
 .home .feature h2 {
 	font-weight: bold;
+}
+.home .hero img {
+	max-height: 230px;
+	margin: 4rem auto;
 }
 .navbar-items a {
 	font-weight:bold;
@@ -62,15 +67,29 @@ a[href^="https://youtu.be"] {
 html.dark {
 	--c-text: #fff;
 	body {
-	  background: linear-gradient(160deg, rgb(73, 88, 107), rgb(0, 16, 31) 22%) !important;
+	  background: linear-gradient(143deg, rgba(70, 70, 70, 1) 0%, rgba(0, 0, 0, 1) 55%) !important;
 	}
 	.sidebar {
 		background-color: transparent;
 	}
 	.navbar {
-		background-color: #00101f;
+		background: rgba(0, 0, 0, 0.3);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
 	}
 }
 html:not(.dark){
 	--c-text-light: var(--c-text) !important;
+}
+@media only screen and (max-width:997px){
+	.navbar .site-name {
+		display:none;
+	}
+}
+@media only screen and (max-width:720px){
+	html.dark {
+		.sidebar {
+			background-color: rgb(0, 16, 31);
+		}
+	}
 }

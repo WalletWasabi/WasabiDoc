@@ -18,6 +18,8 @@ If you need help regarding the software specifically, please check out [Discussi
 
 # 🏛️ The pillars of the documentation
 
+* ## [Getting Started](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/getting-started/)
+  * Getting started guide.
 * ## [Why Wasabi](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/why-wasabi/)
   * Why privacy is important.
 * ## [Using Wasabi](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/using-wasabi/)
@@ -103,6 +105,9 @@ And the index of the video of a playlist (e.g. starts the third video):
 
 If the image doesn't appear, that usually happens with older videos, use hqdefault.jpg instead of maxresdefault.jpg
 
+In case that the thumbnail doesn't fit well with the documentation, a default image can be added as custom thumbnail, located at `/Logo_without_text_with_bg_dark_with_yt.png`.
+Currently, all thumbnails have been set to this default image as a temporary solution because videos are old, sometimes not under our control, and the thumbnails were irrelevant.
+
 ## Text Highlights
 
 There are three types of text highlights that can be used to display different colored boxes.
@@ -135,26 +140,10 @@ bar
 
 Use this markdown box with the headers to write the FAQ:
 ```
-:::details
 ### question
 
 answer answer answer.
 answer answer answer.
-:::
-```
-
-When you want to [highlight text](README.md#text-highlights) within a question, then you need to [nest containers](https://github.com/markdown-it/markdown-it-container/issues/6#issuecomment-213789283) by adding more `:` for the outer block start/end. The outer `details` container has now four `::::`, and the inner `warning` container has still three `:::`.
-
-```
-::::details
-### question
-
-answer answer answer.
-
-:::warning
-answer answer answer.
-:::
-::::
 ```
 
 ## Variables

@@ -23,6 +23,7 @@ Read more: [Address reuse](/why-wasabi/AddressReuse.md)
 
 Anonymity score is a new way to estimate the entropy level of a UTXO in an unequal-but-highly-composable output value coinjoin.
 The anonymity score is a metric to help the wallet decide when it's time to stop the coinjoining process.
+Read more: [What is the anonymity score?](/FAQ/FAQ-UseWasabi.md#what-is-the-anonymity-score)
 
 ### Anonymity Set (anonset)
 
@@ -107,11 +108,16 @@ This is a heuristic or assumption which says that if a transaction has more than
 The coordinator is a server which creates CoinJoins and accepts UTXOs in the mix.
 Read more: [How does my wallet communicate with the Wasabi coordinator server?](/FAQ/FAQ-UseWasabi.md#how-does-my-wallet-communicate-with-the-wasabi-coordinator-server)
 
+### Discreet Mode
+
+Discreet Mode is a Wasabi feature that hides sensitive and critical information on the wallet itself, which is useful for screenshots.
+Read more: [Discreet Mode](/using-wasabi/DiscreetMode.md)
+
 ### Dust
 
 Dust is an UTXO that is uneconomical to spend.
 Also, small portions of bitcoin can lead to serious consequences for one's privacy, for example the so called `forced address reuse attack`.
-Read more: [What is the dust threshold](/FAQ/FAQ-UseWasabi.html#what-is-the-dust-threshold)
+Read more: [What is the dust threshold](/FAQ/FAQ-UseWasabi.md#what-is-the-dust-threshold)
 
 ### Label
 
@@ -124,11 +130,6 @@ Read more: [Why do I have to label my address](/FAQ/FAQ-UseWasabi.md#why-do-i-ha
 KYC (Know Your Customer) is the process of a business being forced to identify and verify the identity of its clients, and to share this information with a government.
 The term is also used to refer to the bank regulation which governs these activities.
 Read more: [AML/KYC Information](/why-wasabi/TransactionSurveillanceCompanies.md#aml-kyc-information)
-
-### Discreet Mode
-
-Discreet Mode is a Wasabi feature that hides sensitive and critical information on the wallet itself, which is useful for screenshots.
-Read more: [Discreet Mode](/using-wasabi/DiscreetMode.md)
 
 ### Observers
 
@@ -190,8 +191,7 @@ Wasabikas are builders, users and supporters of Wasabi in general.
 
 ### XPUB (Extended Public Key)
 
-An xpub, also know as Extended Public Key, is a part of BIP-32 that will allow you to observe your wallet without the private key (xpriv).
-Read more: [Wasabi's Solution](/why-wasabi/AddressReuse.html#wasabi-s-solution)
+An xpub, also known as Extended Public Key, is a part of BIP-32 that will allow you to observe your wallet without the private key (xpriv).
 
 ### ZeroLink
 
