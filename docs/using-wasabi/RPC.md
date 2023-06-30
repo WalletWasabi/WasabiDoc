@@ -503,7 +503,7 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"send", "params": { "p
 
 Builds a transaction.
 It is similar to the send method, except that it will not automatically broadcast the transaction.
-The same commands are available as for the send method. 
+So it is also possible to send to many and to subtract the fee.
 
 ```bash
 curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"build", "params": { "payments":[ {"sendto": "tb1qgjgy9k7q32rcvdjsp3nhq0x8saqcvyahhy8up2", "amount": 15000, "label": "David" }, ], "coins":[{"transactionid":"cdfda1d9839e71e82ca539a4f60e947b1cdfbeecb198616e1daa5c43e2e6fbb3", "index":0}], "feeTarget":2, "password": "UserPassword" }}' http://127.0.0.1:37128/ | jq
