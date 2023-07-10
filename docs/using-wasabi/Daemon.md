@@ -28,28 +28,28 @@ When entering the commands on the command line, they are capital letter insensit
 
 All configuration options available via the `Config.json` file are also available as command line arguments:
 
-| Command | Config |
-|-------------|--------------|
-| --network=testnet | Network: "TestNet" |
-| --mainnetbackenduri="https://api.wasabiwallet.io/" | "MainNetBackendUri": "https://api.wasabiwallet.io/" |
-| --testnetbackenduri="https://api.wasabiwallet.co/" | "TestNetClearnetBackendUri": "https://api.wasabiwallet.co/" |
-| --regtestbackenduri="http://localhost:37127/" | "RegTestBackendUri": "http://localhost:37127/" |
-| --usetor=true | UseTor: true |
-| --terminatetoronexit:false |"TerminateTorOnExit": false |
-| --downloadnewversion=true |"DownloadNewVersion": true |
-| --startlocalbitcoincoreonstartup:false |"StartLocalBitcoinCoreOnStartup": false |
-| --stoplocalbitcoincoreonshutdown=true |"StopLocalBitcoinCoreOnShutdown": true |
-| --localbitcoincoredatadir="/home/UserName/.bitcoin" |"LocalBitcoinCoreDataDir": "/home/UserName/.bitcoin" |
-| --mainnetbitcoinp2pendpoint="127.0.0.1:8333" | "MainNetBitcoinP2pEndPoint": "127.0.0.1:8333" |
-| --testnetbitcoinp2pendpoint="127.0.0.1:18333" | "TestNetBitcoinP2pEndPoint": "127.0.0.1:18333" |
-| --regtestbitcoinp2pendpoint="127.0.0.1:18444" | "RegTestBitcoinP2pEndPoint": "127.0.0.1:18444" |
-| --jsonrpcserverenabled=true| JsonRpcServerEnabled: true |
-| --jsonrpcuser="" | "JsonRpcUser": "" |
-| --jsonrpcpassword="" | "JsonRpcPassword": "" |
-| --jsonrpcserverprefixes=["http://127.0.0.1:37128/", "http://localhost:37128/"] | "JsonRpcServerPrefixes": ["http://127.0.0.1:37128/", "http://localhost:37128/"] |
-| --dustthreshold=0.00005 | DustThreshold: "0.00005" |
-| --enablegpu=true | "EnableGpu": true |
-| --coordinatoridentifier="coinjoincoordinatoridentifier" | "CoordinatorIdentifier": "CoinJoinCoordinatorIdentifier" |
+| Command | Config | Environment variable |
+|---------|--------|----------------------|
+| --network=testnet | Network: "TestNet" | WASABI-NETWORK=testnet |
+| --mainnetbackenduri="https://api.wasabiwallet.io/" | "MainNetBackendUri": "https://api.wasabiwallet.io/" | WASABI-MAINNETBACKENDURI="https://api.wasabiwallet.io/"|
+| --testnetbackenduri="https://api.wasabiwallet.co/" | "TestNetClearnetBackendUri": "https://api.wasabiwallet.co/" | WASABI-TESTNETBACKENDURI="https://api.wasabiwallet.co/" |
+| --regtestbackenduri="http://localhost:37127/" | "RegTestBackendUri": "http://localhost:37127/" | WASABI-REGTESTBACKENDURI="http://localhost:37127/" |
+| --usetor=true | UseTor: true | WASABI-USETOR=true |
+| --terminatetoronexit=false |"TerminateTorOnExit": false | WASABI-TERMINATETORONEXIT=false |
+| --downloadnewversion=true |"DownloadNewVersion": true | WASABI-DOWNLOADNEWVERSION=true |
+| --startlocalbitcoincoreonstartup=false |"StartLocalBitcoinCoreOnStartup": false | WASABI-STARTLOCALBITCOINCOREONSTARTUP=false |
+| --stoplocalbitcoincoreonshutdown=true |"StopLocalBitcoinCoreOnShutdown": true | WASABI-STOPLOCALBITCOINCOREONSHUTDOWN=true |
+| --localbitcoincoredatadir="/home/UserName/.bitcoin" |"LocalBitcoinCoreDataDir": "/home/UserName/.bitcoin" | WASABI-LOCALBITCOINCOREDATADIR="/home/UserName/.bitcoin" |
+| --mainnetbitcoinp2pendpoint="127.0.0.1:8333" | "MainNetBitcoinP2pEndPoint": "127.0.0.1:8333" | WASABI-MAINNETBITCOINP2PENDPOINT="127.0.0.1:8333" |
+| --testnetbitcoinp2pendpoint="127.0.0.1:18333" | "TestNetBitcoinP2pEndPoint": "127.0.0.1:18333" | WASABI-TESTNETBITCOINP2PENDPOINT="127.0.0.1:18333" |
+| --regtestbitcoinp2pendpoint="127.0.0.1:18444" | "RegTestBitcoinP2pEndPoint": "127.0.0.1:18444" | WASABI-REGTESTBITCOINP2PENDPOINT="127.0.0.1:18444" |
+| --jsonrpcserverenabled=true | JsonRpcServerEnabled: true | WASABI-JSONRPCSERVERENABLED=true |
+| --jsonrpcuser="" | "JsonRpcUser": "" | WASABI-JSONRPCUSER="" |
+| --jsonrpcpassword="" | "JsonRpcPassword": "" | WASABI-JSONRPCPASSWORD="" |
+| --jsonrpcserverprefixes=["http://127.0.0.1:37128/", "http://localhost:37128/"] | "JsonRpcServerPrefixes":["http://127.0.0.1:37128/", "http://localhost:37128/"] | WASABI-JSONRPCSERVERPREFIXES=["http://127.0.0.1:37128/", "http://localhost:37128/"] |
+| --dustthreshold=0.00005 | DustThreshold: "0.00005" | WASABI-DUSTTHRESHOLD=0.00005 |
+| --enablegpu=true | "EnableGpu": true | WASABI-ENABLEGPU=true |
+| --coordinatoridentifier="coinjoincoordinatoridentifier" | "CoordinatorIdentifier": "CoinJoinCoordinatorIdentifier" | WASABI-COORDINATORIDENTIFIER="coinjoincoordinatoridentifier" |
 
 ### Daemon only configurations
 
