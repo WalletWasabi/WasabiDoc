@@ -55,12 +55,12 @@ All configuration options available via the `Config.json` file are also availabl
 
 There are a few special switches that are not present in the `Config.json` file and are only available using the command line:
 
-| Command | Config |
-|-------------|--------------|
-| --blockonly=true | Ignore P2P transactions |
-| --loglevel=trace |  The level of detail used during logging |
-| --datadir="$HOME/temp/wasabi-1" | The path to the directory used during runtime |
-| --wallet=WalletName | Open wallet "WalletName" |
+ Switch | Command Line| Environment variable|
+|-------|-------------|---------------------|
+| Ignore P2P transactions | --blockonly=true | WASABI-BLOCKONLY=true |
+| The level of detail used during logging | --loglevel=trace | WASABI-LOGLEVEL=trace |
+| The path to the directory used during runtime | --datadir="$HOME/temp/wasabi-1" | WASABI-DATADIR="$HOME/temp/wasabi-1" |
+| Open wallet "WalletName" | --wallet=WalletName | WASABI--WALLET=WalletName |
 
 ## Examples
 
