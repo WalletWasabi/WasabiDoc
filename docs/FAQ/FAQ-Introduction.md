@@ -192,7 +192,15 @@ However WabiSabi defines its own mixing technique: [WabiSabi coinjoin](/using-wa
 
 For more info please see [WabiSabi](https://github.com/zksnacks/wabisabi).
 
-### What are the minimal requirements to run Wasabi?
+### What are the supported operating systems?
 
 Wasabi runs in most operating systems with 64-bit architecture.
 For the complete list of all the officially supported operating systems, click [here](https://github.com/zkSNACKs/WalletWasabi/blob/master/WalletWasabi.Documentation/WasabiCompatibility.md#officially-supported-operating-systems).
+
+### What are the minimal requirements to run Wasabi?
+
+As long as your operating system is [supported](https://github.com/zkSNACKs/WalletWasabi/blob/master/WalletWasabi.Documentation/WasabiCompatibility.md#officially-supported-operating-systems), Wasabi should be able to run on your hardware.
+The more transactions a wallet has made, the more resources Wasabi will consume, particularly RAM.
+The software can also consume a significant amount of CPU for specific tasks, such as coinjoins or wallet loading.
+Approximately 3 GB of disk space are also needed, mainly to store the [block filters](/FAQ/FAQ-UseWasabi.md#what-are-bip-158-block-filters).
+If you are running the wallet on a system with scarce resources, consider using the [daemon](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Daemon) instead of the GUI application.
