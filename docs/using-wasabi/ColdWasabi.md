@@ -122,22 +122,23 @@ The private key corresponding to this address is on the hardware wallet.
  
 Sending bitcoin airgapped works as follows:
 
-1. Click the `Send` button.
-2. Enter the amount and destination address.
-3. Enter the label of whom you are sending to.
-4. At the `Preview Transaction` screen, check that everything is correct.
-5. Click `Save PSBT file`, and save the file on the MicroSD card.
-6. Remove the MicroSD card from the computer and put it into your Coldcard.
-7. On the Coldcard, click `Ready to Sign`.
-8. Verify the transaction details shown on the Coldcard, and approve to sign the transaction.
-9. Remove the MicroSD card from Coldcard and insert it into the computer.
-10. In Wasabi, click on `Broadcaster` (in the search bar).
-11. Select `Import Transaction`.
-12. Select the final signed transaction, which looks like this `xxx-final.txn`.
-13. Broadcast the transaction.
+1. Enable `PSBT workflow` in the _Wallet Settings_
+2. Click the `Send` button.
+3. Enter the amount and destination address.
+4. Enter the label of whom you are sending to.
+5. At the `Preview Transaction` screen, check that everything is correct.
+6. Click `Save PSBT file`, and save the file on the MicroSD card.
+7. Remove the MicroSD card from the computer and put it into your Coldcard.
+8. On the Coldcard, click `Ready to Sign`.
+9. Verify the transaction details shown on the Coldcard, and approve to sign the transaction.
+10. Remove the MicroSD card from Coldcard and insert it into the computer.
+11. In Wasabi, click on `Broadcaster` (in the search bar).
+12. Select `Import Transaction`.
+13. Select the final signed transaction, which looks like this `xxx-final.txn`.
+14. Broadcast the transaction.
 
 :::tip Enable PSBT workflow in the settings
-If enabled, a Broadcast button will appear next to the `Send` button for an easier workflow.
+You need to have `PSBT workflow` enabled in the wallet settings in order to have a _Save PSBT file_ show up at the Preview Transaction screen. And if enabled, a Broadcast button will appear next to the `Send` button for an easier workflow.
 :::
 
 ## Cold-Wasabi protocol
