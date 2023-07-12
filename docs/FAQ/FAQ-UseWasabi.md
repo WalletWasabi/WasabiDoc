@@ -1183,6 +1183,7 @@ Read more [here](/using-wasabi/ColdWasabi.md#connecting-via-usb).
 
 ### How can I build and export a transaction to ColdCard?
 
+- Enable `PSBT workflow` in the _Wallet Settings_.
 - Go to `Send` and enter the destination address and amount.
 - Click `Continue`.
 - Enter the label of whom you are sending to.
@@ -1208,8 +1209,8 @@ Now click `Broadcast Transaction` to send it off over Tor to a random Bitcoin no
 
 Read more [here](/using-wasabi/ColdWasabi.md#connecting-coldcard-via-sd-card).
 
-:::tip Enable PSBT workflow
-If this setting is enabled, a `Broadcast` button will be displayed next to the `Send` button, for an easier workflow.
+:::tip
+A `Broadcast` button will be displayed next to the `Send` button, when _PSBT workflow_ is enabled, for an easier workflow.
 :::
 
 ### Can I coinjoin bitcoins on my hardware wallet?
