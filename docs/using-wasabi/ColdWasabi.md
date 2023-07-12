@@ -138,7 +138,7 @@ Sending bitcoin airgapped works as follows:
 14. Broadcast the transaction.
 
 :::tip Enable PSBT workflow in the settings
-You need to have `PSBT workflow` enabled in the wallet settings in order to have a _Save PSBT file_ show up at the Preview Transaction screen. And if enabled, a Broadcast button will appear next to the `Send` button for an easier workflow.
+You need to have `PSBT workflow` enabled in the wallet settings in order to have _Save PSBT file_ show up at the Preview Transaction screen. After it is enabled, a Broadcast button will appear next to the `Send` button for an easier workflow.
 :::
 
 ## Cold-Wasabi protocol
