@@ -121,5 +121,5 @@ Check the Wasabi Daemon version
 
 ```bash
 $ wassabeed --version
-Wasabi Daemon 2.0.3.0
+Wasabi Daemon ${currentVersion}
 ```
