@@ -66,7 +66,7 @@ There are a few special switches that are not present in the `Config.json` file 
 
 ### If the package is installed
 
-Depending on your operation system, open the command line and execute:
+Depending on your operating system, open the command line and execute:
 
 #### Linux
 
@@ -84,7 +84,7 @@ cd /Applications/Wasabi\ Wallet.app/Contents/MacOs
 #### Windows
 
 ```bash
-cd C:\Program Files\WsabiWallet
+cd C:\Program Files\WasabiWallet
 wassabeed --wallet=WalletName --jsonrpcserverenabled=true
 ```
 
