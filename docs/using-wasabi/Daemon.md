@@ -14,6 +14,7 @@
 The default of how to interact with your Wasabi wallet is the graphical user interface (GUI).
 There is also a headless daemon where you do not run a resource-intensive GUI, but only the command line interface.
 Running the daemon minimizes the usage of resources (CPU, GPU, Memory, Bandwidth) with the goal of making it more suitable for running all the time in the background.
+The [RPC interface](/using-wasabi/RPC.md) can be used to interact with the Daemon.
 
 The daemon is part of the Wasabi package and can be launched from the command line.
 
@@ -51,7 +52,7 @@ All configuration options available via the `Config.json` file are also availabl
 | "EnableGpu": true | --enablegpu=true | WASABI-ENABLEGPU=true |
 | "CoordinatorIdentifier": "CoinJoinCoordinatorIdentifier" | --coordinatoridentifier="coinjoincoordinatoridentifier" | WASABI-COORDINATORIDENTIFIER="coinjoincoordinatoridentifier" |
 
-### Daemon only configurations
+### Non-Config file configurations
 
 There are a few special switches that are not present in the `Config.json` file and are only available using the command line:
 
