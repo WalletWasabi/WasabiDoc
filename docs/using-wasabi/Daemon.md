@@ -62,6 +62,40 @@ There are a few special switches that are not present in the `Config.json` file 
 | The path to the directory used during runtime | --datadir="$HOME/temp/wasabi-1" | WASABI-DATADIR="$HOME/temp/wasabi-1" |
 | Open wallet "WalletName" | --wallet=WalletName | WASABI--WALLET=WalletName |
 
+## How to run
+
+### If the package is installed
+
+Depending on your operation system, open the command line and execute:
+
+#### Linux
+
+```bash
+wassabeed --wallet=WalletName --jsonrpcserverenabled=true
+```
+
+#### macOS
+
+```bash
+cd /Applications/Wasabi\ Wallet.app/Contents/MacOs
+./wassabeed --wallet=WalletName --jsonrpcserverenabled=true
+```
+
+#### Windows
+
+```bash
+cd C:\Program Files\WsabiWallet
+wassabeed --wallet=WalletName --jsonrpcserverenabled=true
+```
+
+### If building from source code
+
+Open the terminal, navigate to the WalletWasabi.Fluent.Daemon directory (inside the cloned repository) and execute the desired commands.
+
+```bash
+$ dotnet run --wallet=WalletName --jsonrpcserverenabled=true
+```
+
 ## Examples
 
 Run Wasabi Daemon and connect to the testnet Bitcoin network.
@@ -87,14 +121,4 @@ Check the Wasabi Daemon version
 ```bash
 $ wassabeed --version
 Wasabi Daemon 2.0.3.0
-```
-
-## If building from source code
-
-Open the terminal, navigate to the WalletWasabi.Fluent.Daemon directory (inside the cloned repository) and execute the desired commands.
-
-### Example
-
-```bash
-$ dotnet run --network=testnet
 ```
