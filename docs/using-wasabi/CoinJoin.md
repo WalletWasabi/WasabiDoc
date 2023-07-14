@@ -29,13 +29,13 @@ WabiSabi enables centrally coordinated coinjoins with variable amounts in a trus
 After opening a hot wallet, it will automatically start a countdown to start coinjoining (±10 minutes).
 This and other coinjoin related information is shown in the music box.
 
-![Music Box Countdown](/MusicBoxWaitingtoAutoStartCoinJoin.png "Music Box Countdown")
+![Music Box Countdown](/MusicBoxAwaitingToAutoStartCoinjoin.png "Music Box Countdown")
 
 After the _Waiting to auto-start coinjoin_ countdown is finished the wallet should start participating in the [coinjoin process](/using-wasabi/CoinJoin.md#wabisabi-protocol-step-by-step).
 
 A blue aura will show up at the the bottom of the wallet, which indicates that the wallet is coinjoining, and the music box message will change.
 
-![Music Box Waiting For Other Participants](/MusicBoxWaitingForOtherParticipants.png "Music Box Waiting For Other Participants")
+![Music Box Awaiting Other Participants](/MusicBoxAwaitingOtherParticipants.png "Music Box Awaiting Other Participants")
 
 After some time the blue aura will change to an orange one, this indicates that the coinjoin process is now in a critical phase.
 Wasabi will prevent you from shutting down the app during the orange aura to not disrupt the coinjoin round.
@@ -44,7 +44,7 @@ Wasabi will prevent you from shutting down the app during the orange aura to not
 
 If this is succesfull, the coinjoin is completed and the coinjoin [will show up in the history list](/FAQ/FAQ-UseWasabi.md#how-can-i-see-coinjoins-in-the-history-list).
 
-![Music Box Success](/MusicBoxSuccessfulCoinjoin.png "Music Box Success")
+![Music Box Success](/MusicBoxCoinjoinSuccessful.png "Music Box Success")
 
 Notice that the wallet might have to repeat the coinjoin steps multiple times before a successful coinjoin is created.
 So it is possible that the aura colors will change without a successful coinjoin.
