@@ -91,7 +91,7 @@ wassabeed --wallet=WalletName --jsonrpcserverenabled=true
 
 ### If building from source code
 
-Open the terminal, navigate to the WalletWasabi.Fluent.Daemon directory (inside the cloned repository) and execute the desired commands.
+Open the terminal, navigate to the WalletWasabi.Daemon directory (inside the cloned repository) and execute the desired commands.
 
 ```bash
 $ dotnet run --wallet=WalletName --jsonrpcserverenabled=true
