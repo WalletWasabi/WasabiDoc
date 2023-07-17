@@ -105,7 +105,7 @@ Run Wasabi Daemon and connect to the testnet Bitcoin network.
 $ wassabeed --network=testnet
 ```
 
-Run Wasabi and connect to the testnet Bitcoin network with Tor disabled and accept JSON RPC calls. Store everything in `$HOME/temp/wasabi-1`.
+Run Wasabi and connect to the testnet Bitcoin network, with Tor disabled, accept JSON RPC calls, ignore P2P transactions, and store everything in `$HOME/temp/wasabi-1` directory.
 
 ```bash
 $ wassabeed --usetor=false --datadir="$HOME/temp/wasabi-1" --network=testnet --jsonrpcserverenabled=true --blockonly=true
