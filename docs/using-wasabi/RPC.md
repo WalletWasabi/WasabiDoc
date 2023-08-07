@@ -48,7 +48,7 @@ Open a new terminal and use the following RPC commands to interact with your wal
 
 ## Available methods
 
-The current version handles the following methods: `getstatus`, `createwallet`, `selectwallet`, `listcoins`, `listunspentcoins`, `getwalletinfo`, `getnewaddress`, `send`, `broadcast`, `gethistory`, `listkeys`, `startcoinjoin`, `stopcoinjoin` and `stop`.
+The current version handles the following methods: `getstatus`, `createwallet`, `listcoins`, `listunspentcoins`, `getwalletinfo`, `getnewaddress`, `send`, `broadcast`, `gethistory`, `listkeys`, `startcoinjoin`, `stopcoinjoin` and `stop`.
 
 The wallet name can be specified in the url path.
 So this can be used to prevent having to do two calls: `selectwallet` first and then the wanted method.
@@ -185,55 +185,6 @@ In case we try to generate a wallet with a too long password it will return:
   "error": {
     "code": -32603,
     "message": "Password is too long."
-  },
-  "id": "1"
-}
-```
-
-### selectwallet
-
-Allows the RPC server to open/switch wallets.
-
-The password is not needed for this RPC call, because it selects/uses the (clear text) wallet file, which doesn't require the password.
-Where the GUI does require the password to open a wallet because it uses different logic, like to immediately start coinjoin.
-
-```bash
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"selectwallet", "params" : ["WalletName"]}' http://127.0.0.1:37128/
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getwalletinfo"}' http://127.0.0.1:37128/ | jq
-```
-
-```json
-{
-  "jsonrpc": "2.0",
-  "result": {
-    "walletName": "WalletName",
-    "walletFile": "/home/user/walletwasabi/client/Wallets/WalletName.json",
-    "extendedAccountPublicKey": "tpubDDJNwA959ut6YbF1bL3XC7rY388rS1EcG5xokPfGjcvV39BAaGoc1BjefhzuP4pzMKAhft4X1d6NHRzUL7emJiLwd2xBmeZ9gR3cAcUEB7G",
-    "extendedAccountZpub": "vpub5ZGDoayZ9GqgaCfvLRVBa2LAN4kJZNkYtEL4q3pMdhQqBeszzjdPcckYPFzwrkZuk8QBZMMXZCZDpgGjVryVpoXSpkp2vJFwZ1KudQ6GMJP",
-    "accountKeyPath": "m/84'/0'/0'",
-    "masterKeyFingerprint": "d95c5299",
-    "balance": 11741169
-  },
-  "id": "1"
-}
-```
-
-```bash
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"selectwallet", "params" : ["WalletName2"]}' http://127.0.0.1:37128/
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getwalletinfo"}' http://127.0.0.1:37128/ | jq
-```
-
-```json
-{
-  "jsonrpc": "2.0",
-  "result": {
-    "walletName": "WalletName2",
-    "walletFile": "/home/user/.walletwasabi/client/Wallets/WalletName2.json",
-    "extendedAccountPublicKey": "tpubDCd1v6acjNY3uUqArBGC6oBTGrCBWphMvkWjAqM2SFZahZb91JUTXZeZqxzscezR16XHkwi1723qo94EKgR75aoFaahnaHiiLP2JrrTh2Rk",
-    "extendedAccountZpub": "vpub5YarnXR6ijVdw6G5mGhfUhf5bnodeCDJYtszFVW7LL3vr5HyRmJF8zfTZWzv6LjLPukmeR11ebWhLPLVVRjqbfyknJZdiwRWCyJcKeDdsC8",
-    "accountKeyPath": "m/84'/0'/0'",
-    "masterKeyFingerprint": "323ec8d9",
-    "balance": 13182012
   },
   "id": "1"
 }
