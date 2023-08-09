@@ -605,8 +605,6 @@ It will replace the current transaction with one paying a higher fee rate.
 
 </details>
 
-
-- 
 ### How do I set custom fee rate?
 
 At the `Preview Transaction` dialog, click on the icon `Change transaction fee or confirmation time`.
