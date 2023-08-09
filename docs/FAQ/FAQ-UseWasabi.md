@@ -545,7 +545,7 @@ No. That is currently not possible.
 ### Does Wasabi support sending RBF?
 
 All _send_ transactions signal RBF by default.
-However, it is not yet possible in the Wasabi GUI to replace an RBF transaction by another one paying a higher fee rate.
+A pending transaction may be bumped with RBF by using the [_Speed Up Transaction_ tool](/FAQ/FAQ-UseWasabi.md#how-can-i-speed-up-a-pending-transaction)
 
 ### Why does Wasabi choose a new random node every time I send a transaction?
 
