@@ -579,6 +579,34 @@ This really depends on your own time preference in every unique moment.
 These sats are precious, so don't overpay on fees!
 :::
 
+### How can I speed up a pending transaction?
+
+A pending (unconfirmed) transaction can be speeded up by using the _Speed Up Transaction_ tool by right-clicking on the transaction in the history.
+It will replace the current transaction with one paying a higher fee rate.
+
+<details>
+<summary>Click here to expand for a step-by-step instruction:</summary>
+<br>
+- Right click on the pending transaction in the wallet history and click _Speed Up Transaction_.
+
+![Speed Up History](/SpeedUpHistory.png "Speed Up History")
+
+- Confirm you want to pay the additional fee for speeding it up.
+
+![Speed Up Confirm](/SpeedUpConfirm.png "Speed Up Confirm")
+
+- Enter your Password to send the new transaction.
+
+![Speed Up Password](/SpeedUpEnterPassword.png "Speed Up Password")
+
+- Transaction succesfully speeded up!
+
+![Speed Up Success](/SpeedUpSuccess.png "Speed Up Success")
+
+</details>
+
+
+- 
 ### How do I set custom fee rate?
 
 At the `Preview Transaction` dialog, click on the icon `Change transaction fee or confirmation time`.
