@@ -158,3 +158,29 @@ This first node will gossip the transaction throughout the network, then miners 
 
 If for some reason the first broadcast fails, then if you have Wasabi connected to [your own Bitcoin full node](/using-wasabi/BitcoinFullNode.md) this node will broadcast the transaction to the network.
 If this also fails, then the transaction is sent to the backend coordinator with a new Tor identity, who then broadcasts the transaction to the network.
+
+## Speed Up or Cancel Transaction
+
+Pending (unconfirmed) Bitcoin transactions can be replaced.
+This can be used to speed up or cancel a transaction. 
+This is done by sending a new transaction using the same coins (UTXOs) with a transaction that pays a higher fee rate.
+The miners are incentivised to mine the transaction with the higher fee, as this will earn them more money.
+If the new higher fee rate paying transaction is confirmed, the old transaction can be considered "replaced".
+
+Since Wasabi version [2.0.4](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v2.0.4) it is possible to easily speed up or cancel a pending transaction.
+Speeding up and cancelling are similar to each other, the main difference being that a _Cancel Transaction_ will be send to a new address which is owned by the user himself (this is all done automatically).
+The transaction is then "cancelled" because the bitcoin (minus additional fees) is returned to the user's wallet.
+
+Speeding up or cancelling a transaction costs additional fees, because a new bitcoin transaction with a higher fee (than the previous transaction) has to be sent.
+
+Wasabi first tries to utilize [RBF](glossary/Glossary-GeneralBitcoin.html#replace-by-fee-rbf), but if that's not possible it will do [CPFP](glossary/Glossary-GeneralBitcoin.html#child-pays-for-parent-cpfp).
+
+To Speed Up or Cancel a Transaction, right-click on the pending transaction in the history.
+
+![Speed Up History](/SpeedUpHistory.png "Speed Up History")
+
+Select it and then confirm that you want to pay the additional fee for this action.
+After which the succesfully speed up/cancelled dialog is displayed.
+
+In the history, the transaction will now have a rocket icon (speeded up) or a cross (cancelled).
+The transaction is still pending, but it will be confirmed sooner than previously.
