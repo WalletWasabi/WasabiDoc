@@ -6,7 +6,7 @@ heroImageDark: /Logo_without_text.png
 tagline: An archive of knowledge about Wasabi Wallet, an open-source, non-custodial and privacy-focused Bitcoin wallet for desktop.
 actions:
   - text: Reclaim Your Privacy →
-    link: /using-wasabi/ELI5.md
+    link: /getting-started
     type: primary
 features:
 - title: Open-source
