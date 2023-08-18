@@ -1226,7 +1226,8 @@ Thus currently you have to send the bitcoins from your hardware wallet to a `hot
 Read more [here](/using-wasabi/ColdWasabi.md#cold-wasabi-protocol).
 
 :::tip
-Trezor now supports coinjoin with the Trezor Suite, using same rounds as Wasabi Wallet users. Read more [here](https://content.trezor.io/coinjoin)
+Trezor now supports coinjoin with the Trezor Suite, using same rounds as Wasabi Wallet users.
+Read more [here](https://content.trezor.io/coinjoin).
 :::
 
 ### Does Ledger Live send my public keys and addresses to a third party server?
@@ -1264,6 +1265,11 @@ For the complete list of all the officially supported hardware wallets, click [h
 
 After connecting the Trezor T to your computer and upon trying to load your wallet, you get a message on the Trezor T to choose where to type your passphrase, on the device or the host (computer), choose the first option (device) then enter the passprase using the touchscreen of your Trezor T.
 Wasabi wallet will now load this passphrase protected wallet.
+
+### I have coinjoined with a Trezor device on Trezor Suite, but in Wasabi I cannot see my coins?
+
+Trezor uses only Taproot for coinjoin, with a non-standard derivation path.
+So Wasabi does not know about the existence of the Trezor Suite coinjoin coins.
 
 ### How can I use Hardware Wallets on Linux (udev rules)?
 
