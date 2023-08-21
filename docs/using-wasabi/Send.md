@@ -75,6 +75,7 @@ If you now send half of this coin to Bob, then the cluster of your change coin i
 The goal is to know the observers who know about your coins and try to reduce their number for each coin.
 
 ## Anonymity Set
+
 A typical bitcoin transaction will contain one input and two outputs - one of the outputs is the coin you are sending and the other output is the change coin that goes back to your wallet.
 Your change coin can be linked to this one input.
 There is a 1 in 1 chance to find this link and no plausible deniability.
@@ -142,6 +143,36 @@ If you have a transaction that is high-priority and you really want it to be con
 2. Select a fee that is well above the current highest fee (perhaps double or triple it) if it is very important to you that the transaction is confirmed soon.
 
 For a deeper dive into the fee estimation process, [this article](https://bitcointechtalk.com/an-introduction-to-bitcoin-core-fee-estimation-27920880ad0) is worth reading.
+:::
+
+## Privacy Suggestions
+
+Since Wasabi version [2.0.4](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v2.0.4) the _Preview Transaction_ dialog contains privacy suggestions.
+The privacy suggestions help the user to improve their transaction.
+The privacy suggestion are shown when hovering over the triangle or shield in the right top corner.
+The suggestions are based on current coin selection for this transaction.
+So for example, the suggestion will warn the user when he is sending non-private coins.
+
+There are warnings for:
+- Interlinking labels
+- Using non-private coins
+- Using semi-private coins
+- Creating change
+- Consolidating 10 coins or more
+- Using unconfirmed coins
+- Using coinjoining coins
+
+There are click-able suggestions:
+- For Label management (when sending non-private coins)
+- To only use private coins
+- To avoid non-private coins (only use private and semi-private)
+- For change avoidance
+
+The suggestion to only use semi- or private coins is only shown if the amount difference is a maximum of 25%.
+
+:::tip
+Each suggestion has a tooltip.
+Hover over the suggestion to see more information.
 :::
 
 ## Password
