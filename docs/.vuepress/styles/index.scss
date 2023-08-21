@@ -88,6 +88,9 @@ html:not(.dark){
 	.navbar .site-name {
 		display:none;
 	}
+	.navbar .navbar-items-wrapper {
+		max-width: calc(100% - 80px) !important;
+	}
 }
 @media only screen and (max-width:720px){
 	html.dark {
