@@ -47,7 +47,7 @@ In this step, your Wasabi behaves like any other full node, and cannot be differ
 
 ### TurboSync
 
-Since Wasabi version 2.0.4 a new feature is added called _TurboSync_.
+Since Wasabi version [2.0.4](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v2.0.4)a new feature is added called _TurboSync_.
 _TurboSync_ leads to a significant reduction of wallet loading time, especially for a big wallet.
 
 During a coinjoin, a new address (key) has to be generated for each output.
