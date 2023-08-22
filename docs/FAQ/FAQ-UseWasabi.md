@@ -42,7 +42,7 @@ When you've backed everything up, click `Continue`.
 
 ![Wasabi Wallet recovery words](/AddWalletRecoveryWords.png "Wasabi Wallet recovery words")
 
-In this page you should do a quick check that you've written down your mnemonic seed in the correct order. 
+In this page you should confirm the words, as a check that you've written down your mnemonic seed in the correct order. 
 Once you're done, click `Continue`.
 
 ![Confirm recovery words](/AddWalletConfirmRecoveryWords.png "Confirm recovery words")
