@@ -545,7 +545,7 @@ No. That is currently not possible.
 ### Does Wasabi support sending RBF?
 
 All _send_ transactions signal RBF by default.
-A pending transaction may be bumped with RBF by using the [_Speed Up Transaction_ tool](/FAQ/FAQ-UseWasabi.md#how-can-i-speed-up-a-pending-transaction)
+A pending transaction may be bumped (RBF) by using the [_Speed Up Transaction_ feature](/FAQ/FAQ-UseWasabi.md#how-can-i-speed-up-a-pending-transaction)
 
 ### Why does Wasabi choose a new random node every time I send a transaction?
 
@@ -581,12 +581,11 @@ These sats are precious, so don't overpay on fees!
 
 ### How can I speed up a pending transaction?
 
-A pending (unconfirmed) transaction can be speeded up by using the _Speed Up Transaction_ tool by right-clicking on the transaction in the history.
+A pending (unconfirmed) transaction can be speeded up by using the _Speed Up Transaction_ feature by right-clicking on the transaction in the history.
 It will replace the current transaction with one paying a higher fee rate.
 
 <details>
-<summary>Click here to expand for a step-by-step instruction:</summary>
-<br>
+<summary>Click here to expand for a step-by-step instruction guide:</summary>
 - Right click on the pending transaction in the wallet history and click _Speed Up Transaction_.
 
 ![Speed Up History](/SpeedUpHistory.png "Speed Up History")
@@ -703,7 +702,7 @@ This is good for privacy, and also saves you some transaction fees.
 
 ### How can I bump the transaction fee with child pays for parent (CPFP)?
 
-Since Wasabi version 2.0.4 this FAQ is now obsolete because of the new [_Speed Up Transaction_ tool](/FAQ/FAQ-UseWasabi.md#how-can-i-speed-up-a-pending-transaction) that can be used.
+Since Wasabi version [2.0.4](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v2.0.4) this FAQ is now obsolete because of the new [_Speed Up Transaction_ feature](/FAQ/FAQ-UseWasabi.md#how-can-i-speed-up-a-pending-transaction) that can be used.
 
 ### Why is there no `Send` button, only the `Receive` button is displayed?
 
