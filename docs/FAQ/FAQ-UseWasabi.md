@@ -231,7 +231,7 @@ This box (a.k.a. musicbox) is used for the coinjoins.
 It can be used to manually start, pause and stop coinjoining.
 It also shows some information about the current coinjoin round. 
 
-![Wasabi Wallet Music Box](/MusicBox.png "Wasabi Wallet Music Box")
+![Wasabi Wallet Music Box](/MusicBoxCoinjoinStopped.png "Wasabi Wallet Music Box")
 
 ### Does Wasabi support Taproot?
 
