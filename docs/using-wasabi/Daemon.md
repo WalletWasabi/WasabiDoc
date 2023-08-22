@@ -56,7 +56,7 @@ All configuration options available via the `Config.json` file are also availabl
 
 There are a few special switches that are not present in the `Config.json` file and are only available using the command line:
 
- Switch | Command Line| Environment variable|
+| Switch | Command Line | Environment variable |
 |-------|-------------|---------------------|
 | Ignore P2P transactions | --blockonly=true | WASABI-BLOCKONLY=true |
 | The level of detail used during logging | --loglevel=trace | WASABI-LOGLEVEL=trace |
