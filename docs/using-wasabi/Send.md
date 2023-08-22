@@ -149,9 +149,9 @@ For a deeper dive into the fee estimation process, [this article](https://bitcoi
 
 Since Wasabi version [2.0.4](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v2.0.4) the _Preview Transaction_ dialog contains privacy suggestions.
 The privacy suggestions help the user to improve their transaction.
-The privacy suggestion are shown when hovering over the triangle or shield in the right top corner.
-The suggestions are based on current coin selection for this transaction.
-So for example, the suggestion will warn the user when he is sending non-private coins.
+They are displayed when hovering over the triangle or shield in the top right corner.
+The suggestions are based on the current coin selection for this transaction.
+For example, the suggestions will warn the user when the transaction contains non-private coins.
 
 There are warnings for:
 - Interlinking labels
@@ -162,13 +162,13 @@ There are warnings for:
 - Using unconfirmed coins
 - Using coinjoining coins
 
-There are click-able suggestions:
-- For Label management (when sending non-private coins)
-- To only use private coins
-- To avoid non-private coins (only use private and semi-private)
-- For change avoidance
+There are clickable suggestions to:
+- Manage labels (when interlinking labels)
+- Only use private coins
+- Not use non-private coins (only use private and semi-private)
+- Avoid change
 
-The suggestion to only use semi- or private coins is only shown if the amount difference is a maximum of 25%.
+The suggestion to only use semi-private or private coins is only shown if the amount difference is less than or equal to 25%.
 
 :::tip
 Each suggestion has a tooltip.
