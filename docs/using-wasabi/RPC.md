@@ -48,10 +48,13 @@ Open a new terminal and use the following RPC commands to interact with your wal
 
 ## Available methods
 
-The current version handles the following methods: `getstatus`, `createwallet`, `selectwallet`, `listcoins`, `listunspentcoins`, `getwalletinfo`, `getnewaddress`, `send`, `broadcast`, `gethistory`, `listkeys`, `startcoinjoin`, `stopcoinjoin` and `stop`.
+The current version handles the following methods: `getstatus`, `createwallet`, `listcoins`, `listunspentcoins`, `getwalletinfo`, `getnewaddress`, `send`, `broadcast`, `gethistory`, `listkeys`, `startcoinjoin`, `stopcoinjoin` and `stop`.
 
-The wallet name can be specified in the url path.
-So this can be used to prevent having to do two calls: `selectwallet` first and then the wanted method.
+For certain methods, the RPC call may not require the password whereas a similar action in the GUI does require it. 
+This difference is because the RPC call can use the clear text wallet file, which does not require the password to access. 
+For example, the GUI requires a password to open a wallet (and access certain wallet information), because it uses different logic, such as start coinjoining immediately.
+
+For wallet-specific calls, the wallet name should be specified in the URL path.
 Example:
 
 ```bash
@@ -190,61 +193,12 @@ In case we try to generate a wallet with a too long password it will return:
 }
 ```
 
-### selectwallet
-
-Allows the RPC server to open/switch wallets.
-
-The password is not needed for this RPC call, because it selects/uses the (clear text) wallet file, which doesn't require the password.
-Where the GUI does require the password to open a wallet because it uses different logic, like to immediately start coinjoin.
-
-```bash
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"selectwallet", "params" : ["WalletName"]}' http://127.0.0.1:37128/
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getwalletinfo"}' http://127.0.0.1:37128/ | jq
-```
-
-```json
-{
-  "jsonrpc": "2.0",
-  "result": {
-    "walletName": "WalletName",
-    "walletFile": "/home/user/walletwasabi/client/Wallets/WalletName.json",
-    "extendedAccountPublicKey": "tpubDDJNwA959ut6YbF1bL3XC7rY388rS1EcG5xokPfGjcvV39BAaGoc1BjefhzuP4pzMKAhft4X1d6NHRzUL7emJiLwd2xBmeZ9gR3cAcUEB7G",
-    "extendedAccountZpub": "vpub5ZGDoayZ9GqgaCfvLRVBa2LAN4kJZNkYtEL4q3pMdhQqBeszzjdPcckYPFzwrkZuk8QBZMMXZCZDpgGjVryVpoXSpkp2vJFwZ1KudQ6GMJP",
-    "accountKeyPath": "m/84'/0'/0'",
-    "masterKeyFingerprint": "d95c5299",
-    "balance": 11741169
-  },
-  "id": "1"
-}
-```
-
-```bash
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"selectwallet", "params" : ["WalletName2"]}' http://127.0.0.1:37128/
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getwalletinfo"}' http://127.0.0.1:37128/ | jq
-```
-
-```json
-{
-  "jsonrpc": "2.0",
-  "result": {
-    "walletName": "WalletName2",
-    "walletFile": "/home/user/.walletwasabi/client/Wallets/WalletName2.json",
-    "extendedAccountPublicKey": "tpubDCd1v6acjNY3uUqArBGC6oBTGrCBWphMvkWjAqM2SFZahZb91JUTXZeZqxzscezR16XHkwi1723qo94EKgR75aoFaahnaHiiLP2JrrTh2Rk",
-    "extendedAccountZpub": "vpub5YarnXR6ijVdw6G5mGhfUhf5bnodeCDJYtszFVW7LL3vr5HyRmJF8zfTZWzv6LjLPukmeR11ebWhLPLVVRjqbfyknJZdiwRWCyJcKeDdsC8",
-    "accountKeyPath": "m/84'/0'/0'",
-    "masterKeyFingerprint": "323ec8d9",
-    "balance": 13182012
-  },
-  "id": "1"
-}
-```
-
 ### listcoins
 
 Returns the list of previously spent and currently unspent coins (confirmed and unconfirmed).
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"listcoins"}' http://127.0.0.1:37128/ | jq
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"listcoins"}' http://127.0.0.1:37128/WalletName | jq
 ```
 
 ```json
@@ -306,7 +260,7 @@ In case there is no wallet open it will return:
 Returns the list of confirmed and unconfirmed coins that are unspent.
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"listunspentcoins"}' http://127.0.0.1:37128/ | jq
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"listunspentcoins"}' http://127.0.0.1:37128/WalletName | jq
 ```
 
 ```json
@@ -369,7 +323,7 @@ In case there is no wallet open it will return:
 Returns information about the current loaded wallet.
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getwalletinfo"}' http://127.0.0.1:37128/ | jq
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getwalletinfo"}' http://127.0.0.1:37128/WalletName | jq
 ```
 
 ```json
@@ -407,7 +361,7 @@ In case there is no wallet open it will return:
 Creates an address and returns detailed information about it.
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getnewaddress","params":["Daniel, Alice"]}' http://127.0.0.1:37128/ | jq
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getnewaddress","params":["Daniel, Alice"]}' http://127.0.0.1:37128/WalletName | jq
 ```
 
 ```json
@@ -455,7 +409,7 @@ In case an empty label is provided:
 Builds and broadcasts a transaction.
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"send", "params": { "payments":[ {"sendto": "tb1qgvnht40a08gumw32kp05hs8mny954hp2snhxcz", "amount": 15000, "label": "David" }, {"sendto":"tb1qpyhfrpys6skr2mmnc35p3dp7zlv9ew4k0gn7qm", "amount": 86200, "label": "Michael"} ], "coins":[{"transactionid":"ab83d9d0b2a9873b8ab0dc48b618098f3e7fbd807e27a10f789e9bc330ca89f7", "index":0}], "feeTarget":2, "password": "UserPassword" }}' http://127.0.0.1:37128/ | jq
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"send", "params": { "payments":[ {"sendto": "tb1qgvnht40a08gumw32kp05hs8mny954hp2snhxcz", "amount": 15000, "label": "David" }, {"sendto":"tb1qpyhfrpys6skr2mmnc35p3dp7zlv9ew4k0gn7qm", "amount": 86200, "label": "Michael"} ], "coins":[{"transactionid":"ab83d9d0b2a9873b8ab0dc48b618098f3e7fbd807e27a10f789e9bc330ca89f7", "index":0}], "feeTarget":2, "password": "UserPassword" }}' http://127.0.0.1:37128/WalletName | jq
 ```
 
 ```json
@@ -477,13 +431,13 @@ Now the mining fee will be subtracted from the output in which `subtractFee` was
 With this you can send the max amount of the coin, by setting the same value of the input coins for the output address.
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"send", "params": { "payments":[ {"sendto": "tb1qgvnht40a08gumw32kp05hs8mny954hp2snhxcz", "amount": 15000, "label": "David", "subtractFee": true }, {"sendto":"tb1qpyhfrpys6skr2mmnc35p3dp7zlv9ew4k0gn7qm", "amount": 86200, "label": "Michael"} ], "coins":[{"transactionid":"ab83d9d0b2a9873b8ab0dc48b618098f3e7fbd807e27a10f789e9bc330ca89f7", "index":0}], "feeTarget":2, "password": "UserPassword" }}' http://127.0.0.1:37128/ | jq
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"send", "params": { "payments":[ {"sendto": "tb1qgvnht40a08gumw32kp05hs8mny954hp2snhxcz", "amount": 15000, "label": "David", "subtractFee": true }, {"sendto":"tb1qpyhfrpys6skr2mmnc35p3dp7zlv9ew4k0gn7qm", "amount": 86200, "label": "Michael"} ], "coins":[{"transactionid":"ab83d9d0b2a9873b8ab0dc48b618098f3e7fbd807e27a10f789e9bc330ca89f7", "index":0}], "feeTarget":2, "password": "UserPassword" }}' http://127.0.0.1:37128/WalletName | jq
 ```
 
 In case of error, it is reported in the json's error object:
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"send", "params": { "payments": [{ "sendto": "tb1qnmfmkylkd548bbbcd9115b322891e27f741eb42c83ed982861ee121", "amount": 2015663, "label": "Mr. Who" }], "coins":[{"transactionid":"c68dacd548bbbcd9115b38ed982861ee121c5ef6e0f1022891e27f741eb42c83", "index":0}], "feeTarget": 2, "password": "UserPassword" }}' http://127.0.0.1:37128/ | jq
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"send", "params": { "payments": [{ "sendto": "tb1qnmfmkylkd548bbbcd9115b322891e27f741eb42c83ed982861ee121", "amount": 2015663, "label": "Mr. Who" }], "coins":[{"transactionid":"c68dacd548bbbcd9115b38ed982861ee121c5ef6e0f1022891e27f741eb42c83", "index":0}], "feeTarget": 2, "password": "UserPassword" }}' http://127.0.0.1:37128/WalletName | jq
 ```
 
 ```json
@@ -506,7 +460,7 @@ It is similar to the send method, except that it will not automatically broadcas
 So it is also possible to send to many and to subtract the fee.
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"build", "params": { "payments":[ {"sendto": "tb1qgjgy9k7q32rcvdjsp3nhq0x8saqcvyahhy8up2", "amount": 15000, "label": "David" }, ], "coins":[{"transactionid":"cdfda1d9839e71e82ca539a4f60e947b1cdfbeecb198616e1daa5c43e2e6fbb3", "index":0}], "feeTarget":2, "password": "UserPassword" }}' http://127.0.0.1:37128/ | jq
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"build", "params": { "payments":[ {"sendto": "tb1qgjgy9k7q32rcvdjsp3nhq0x8saqcvyahhy8up2", "amount": 15000, "label": "David" }, ], "coins":[{"transactionid":"cdfda1d9839e71e82ca539a4f60e947b1cdfbeecb198616e1daa5c43e2e6fbb3", "index":0}], "feeTarget":2, "password": "UserPassword" }}' http://127.0.0.1:37128/WalletName | jq
 ```
 
 ```json
@@ -544,7 +498,7 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"broadcast", "params":
 Returns the list of all transactions sent and received.
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"gethistory"}' http:/127.0.0.1:37128 | jq
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"gethistory"}' http:/127.0.0.1:37128/WalletName | jq
 ```
 
 ```json
@@ -581,7 +535,7 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"gethistory"}' http:/1
 Returns the list of all the generated keys.
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"listkeys"}' http://127.0.0.1:37128/ | jq
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"listkeys"}' http://127.0.0.1:37128/WalletName | jq
 ```
 
 ```json
@@ -624,37 +578,37 @@ This call can be adapted to query certain keys too.
 #### All unused keys
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"listkeys"}' http://127.0.0.1:37128/ | jq '.result[] | select(.keyState == 0)'
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"listkeys"}' http://127.0.0.1:37128/WalletName | jq '.result[] | select(.keyState == 0)'
 ```
 
 #### All unused keys for change
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"listkeys"}' http://127.0.0.1:37128/ | jq '.result[] | select(.keyState == 0 and .internal == true)'
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"listkeys"}' http://127.0.0.1:37128/WalletName | jq '.result[] | select(.keyState == 0 and .internal == true)'
 ```
 
 #### Unused keys generated by the user
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"listkeys"}' http://127.0.0.1:37128/ | jq '.result[] | select(.keyState == 0 and .internal == false and .label != "")'
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"listkeys"}' http://127.0.0.1:37128/WalletName | jq '.result[] | select(.keyState == 0 and .internal == false and .label != "")'
 ```
 
 #### All already used keys
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"listkeys"}' http://127.0.0.1:37128/ | jq '.result[] | select(.keyState == 2)'
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"listkeys"}' http://127.0.0.1:37128/WalletName | jq '.result[] | select(.keyState == 2)'
 ```
 
 #### All unused locked keys (reserved for coinjoins)
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"listkeys"}' http://127.0.0.1:37128/ | jq '.result[] | select(.keyState == 1 and .internal == true)'
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"listkeys"}' http://127.0.0.1:37128/WalletName | jq '.result[] | select(.keyState == 1 and .internal == true)'
 ```
 
 ### startcoinjoin
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"startcoinjoin", "params":["UserPassword", "True", "True"]}' http://127.0.0.1:37128/ | jq
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"startcoinjoin", "params":["UserPassword", "True", "True"]}' http://127.0.0.1:37128/WalletName | jq
 {
   "jsonrpc": "2.0",
   "id": "1"
@@ -666,7 +620,7 @@ The first parameter is the wallet password, the second parameter is `stopWhenAll
 ### stopcoinjoin
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"stopcoinjoin"}' http://127.0.0.1:37128/ | jq
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"stopcoinjoin"}' http://127.0.0.1:37128/WalletName | jq
 {
   "jsonrpc": "2.0",
   "id": "1"
@@ -720,7 +674,7 @@ curl -s --data-binary '{"jsonrpc":"2.0" []}' http://127.0.0.1:37128/ | jq
 ### Mismatching parameters
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0", "method": "getnewaddress", "params": { "lable": "label with a typo" }, "id":"1" }' http://127.0.0.1:37128/ | jq
+curl -s --data-binary '{"jsonrpc":"2.0", "method": "getnewaddress", "params": { "lable": "label with a typo" }, "id":"1" }' http://127.0.0.1:37128/WalletName | jq
 ```
 
 ```json
