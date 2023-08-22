@@ -22,7 +22,7 @@ If you have already used a label before, simply choose it from the suggested lab
 
 4. Press `Continue` and the wallet will generate a new address. 
 
-![Bitcoin address in Wasabi](/UnusedReceiveAddress.png "Bitcoin address in Wasabi")
+![Bitcoin address in Wasabi](/AddressAwaitingPayment.png "Bitcoin address in Wasabi")
 
 ## Bitcoin public keys and addresses
 
@@ -49,7 +49,7 @@ This makes it obvious for anyone that this one entity [you] owns all these coins
 The first rule of Bitcoin privacy is [never reuse addresses](/why-wasabi/AddressReuse.md)!
 
 :::tip
-This is why Wasabi removes the address from the `Unused Receive Address` list as soon as it has received a coin.
+This is why Wasabi removes the address from the `Addresses Awaiting Payment` list as soon as it has received a coin.
 :::
 
 ## The importance of labeling

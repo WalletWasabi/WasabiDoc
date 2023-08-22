@@ -372,10 +372,10 @@ This is a good feature to help protect you against [address reuse](/why-wasabi/A
 
 ### Where can I find previously generated addresses?
 
-Generated addresses which haven't received any funds yet, are displayed at the `Unused Receive Addresses` list.
-Click on the `Receive` button > `Unused Receive Addresses`
+Generated addresses which haven't received any funds yet, are displayed at the `Addresses Awaiting Payment` list.
+Click on the `Receive` button > `Addresses Awaiting Payment`
 
-![Unused Receive Addresses](/UnusedReceiveAddresses.png "Unused Receive Addresses")
+![Addresses Awaiting Payment](/AddressesAwaitingPayment.png "Addresses Awaiting Payment")
 
 ### What is the gap limit?
 
@@ -434,12 +434,12 @@ or:
 
 ### How can I change the label of my receive address?
 
-You can change the label of your unused receive address by clicking on the edit icon.
+You can change the label of your _Address Awaiting Payment_ by clicking on the edit icon.
 This is useful when you have generated a receiving address with a specific label, but then the sender (anyone that knows this address is yours) has changed.
 Take care with whom you have shared this address, because if you send it to several people, they all know this address belongs to you, and they might all send many coins to the same address.
 This is very bad for your privacy because of [address reuse](/why-wasabi/AddressReuse.md), and it confuses you with the labeling of each unique coin.
 
-![Edit Address Label](/UnusedReceiveAddressesEditLabel.png "Edit Address Label")
+![Edit Address Label](/AddressesAwaitingPaymentEditLabel.png "Edit Address Label")
 
 ### How can I edit the labels of my address after a transaction has gone through?
 
@@ -473,14 +473,14 @@ To check Bech32 adoption and wallets/exchanges support you can follow the [Bitco
 ### Where can I find my address QR code?
 
 When a new address is generated the QR code, address and label are displayed.
-The QR code of an already generated address can be found at the `Unused Receive Addresses` list.
-Click on the QR code icon at the Unused Receive Addresses.
+The QR code of an already generated address can be found at the `Addresses Awaiting Payment` list.
+Click on the QR code icon at the _Addresses Awaiting Payment_.
 
-![QR code icon](/UnusedReceiveAddressesQRCodeIcon.png "QR code icon")
+![QR code icon](/AddressesAwaitingPaymentQRCodeIcon.png "QR code icon")
 
 The QR Code is displayed and can be saved as a png file by clicking on the Save icon, which appears on hover.
 
-![Unused Receive Address](/UnusedReceiveAddress.png "Unused Receive Address")
+![Address Awaiting Payment](/AddressAwaitingPayment.png "Address Awaiting Payment")
 
 ### What derivation paths does Wasabi use?
 
@@ -1175,7 +1175,7 @@ Read more [here](/using-wasabi/ColdWasabi.md#connecting-coldcard-via-sd-card).
 ### How can I generate a receiving address of my hardware wallet?
 
 In Wasabi Wallet you load your previously imported wallet (from Wasabi skeleton, or USB detection) and go to the `Receive` dialog, here you enter a label for the observers of the incoming transaction and click `Continue`.
-In the receive dialog, previously generated addresses (which haven't received any funds yet) can be viewed and copied at `Unused Receive Addresses`.
+In the receive dialog, previously generated addresses (which haven't received any funds yet) can be viewed and copied at `Addresses Awaiting Payment`.
 
 Read more [here](/using-wasabi/ColdWasabi.md).
 
