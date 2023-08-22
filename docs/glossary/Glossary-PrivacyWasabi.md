@@ -108,6 +108,11 @@ This is a heuristic or assumption which says that if a transaction has more than
 The coordinator is a server which creates CoinJoins and accepts UTXOs in the mix.
 Read more: [How does my wallet communicate with the Wasabi coordinator server?](/FAQ/FAQ-UseWasabi.md#how-does-my-wallet-communicate-with-the-wasabi-coordinator-server)
 
+### Daemon
+
+A daemon is a command line interface to run Wasabi without the GUI (Graphical User Interface).
+Read more: [Headless Wasabi Daemon](/using-wasabi/Daemon.md)
+
 ### Discreet Mode
 
 Discreet Mode is a Wasabi feature that hides sensitive and critical information on the wallet itself, which is useful for screenshots.
