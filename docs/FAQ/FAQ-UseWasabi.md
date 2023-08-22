@@ -555,7 +555,7 @@ No. That is currently not possible.
 ### Does Wasabi support sending RBF?
 
 All _send_ transactions signal RBF by default.
-However, it is not yet possible in the Wasabi GUI to replace an RBF transaction by another one paying a higher fee rate.
+A pending transaction may be bumped (with RBF) by using the [_Speed Up Transaction_ feature](/FAQ/FAQ-UseWasabi.md#how-can-i-speed-up-a-pending-transaction).
 
 ### Why does Wasabi choose a new random node every time I send a transaction?
 
@@ -588,6 +588,26 @@ This really depends on your own time preference in every unique moment.
 :::tip Remember
 These sats are precious, so don't overpay on fees!
 :::
+
+### How can I speed up a pending transaction?
+
+A pending (unconfirmed) transaction can be speeded up by using the _Speed Up Transaction_ feature by right-clicking on the transaction in the history.
+The transaction will be speeded up by sending a new transaction with a higher fee rate.
+
+To speed up a transaction:
+
+- Right click on the pending transaction in the wallet history and click _Speed Up Transaction_.
+
+![Speed Up History](/SpeedUpHistory.png "Speed Up History")
+
+- Confirm you want to pay the additional fee for speeding it up.
+
+![Speed Up Confirm](/SpeedUpConfirm.png "Speed Up Confirm")
+
+- Enter your Password to send the new transaction.
+- Transaction succesfully speeded up!
+
+Read more [here](/using-wasabi/Send.md#speed-up-or-cancel-transaction).
 
 ### How do I set custom fee rate?
 
@@ -687,32 +707,7 @@ This is good for privacy, and also saves you some transaction fees.
 
 ### How can I bump the transaction fee with child pays for parent (CPFP)?
 
-If you have sent or received a transaction with a low fee and it does not get confirmed within reasonable time, then you can do `Child Pays For Parent` to get it confirmed faster.
-The trick is, to make a new transaction which spends the unconfirmed coin that you have received with a higher fee rate.
-This can be either a payment transaction from you to another person, or a self spend transaction.
-
-The transaction will get confirmed based on the fee rate of the combined parent and child transactions.
-For example, if the initial transaction pays a 1 sat/vbyte fee rate and the child transaction pays a 5 sat/vbyte fee rate, then the average fee rate of both transactions is above the fee rate of the original transaction.
-
-An outgoing transaction can only be bumped if you have a change output from the transaction you want to bump.
-You need to create a new high(er) fee rate paying transaction with that change output.
-
-To bump a transaction with CPFP:
-
-- Generate a receive address
-- [Open the `Wallet Coins` dialog](/FAQ/FAQ-UseWasabi.md#how-do-i-select-coins-for-spending)
-- Select the unconfirmed (change) coin and click _Send selected coins_
-- Paste the bitcoin address
-- Enter the label
-- At the `Preview Transaction` dialog, click on the icon _Change transaction fee or confirmation time_ and then use the fee slider or click on `Advanced` and manually enter a high(er) fee rate than the original transaction
-- Send the transaction
-
-The CPFP fee bump has been done.
-Now wait until both transactions are confirmed.
-
-:::tip The bump fee UX will be improved
-Currently it requires multiple steps, in the future there will be an easy click _Speed up transaction_.
-:::
+Since Wasabi version [2.0.4](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v2.0.4) this FAQ is now obsolete because of the new [_Speed Up Transaction_ feature](/FAQ/FAQ-UseWasabi.md#how-can-i-speed-up-a-pending-transaction) that can be used.
 
 ### Why is there no `Send` button, only the `Receive` button is displayed?
 
