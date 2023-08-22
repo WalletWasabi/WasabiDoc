@@ -545,7 +545,7 @@ No. That is currently not possible.
 ### Does Wasabi support sending RBF?
 
 All _send_ transactions signal RBF by default.
-A pending transaction may be bumped (RBF) by using the [_Speed Up Transaction_ feature](/FAQ/FAQ-UseWasabi.md#how-can-i-speed-up-a-pending-transaction)
+A pending transaction may be bumped (with RBF) by using the [_Speed Up Transaction_ feature](/FAQ/FAQ-UseWasabi.md#how-can-i-speed-up-a-pending-transaction).
 
 ### Why does Wasabi choose a new random node every time I send a transaction?
 
@@ -582,10 +582,9 @@ These sats are precious, so don't overpay on fees!
 ### How can I speed up a pending transaction?
 
 A pending (unconfirmed) transaction can be speeded up by using the _Speed Up Transaction_ feature by right-clicking on the transaction in the history.
-It will replace the current transaction with one paying a higher fee rate.
+The transaction will be speeded up by sending a new transaction with a higher fee rate.
 
-<details>
-<summary>Click here to expand for a step-by-step instruction guide:</summary>
+To speed up a transaction:
 
 - Right click on the pending transaction in the wallet history and click _Speed Up Transaction_.
 
@@ -596,14 +595,9 @@ It will replace the current transaction with one paying a higher fee rate.
 ![Speed Up Confirm](/SpeedUpConfirm.png "Speed Up Confirm")
 
 - Enter your Password to send the new transaction.
-
-![Speed Up Password](/SpeedUpEnterPassword.png "Speed Up Password")
-
 - Transaction succesfully speeded up!
 
-![Speed Up Success](/SpeedUpSuccess.png "Speed Up Success")
-
-</details>
+Read more [here](/using-wasabi/Send.md#speed-up-or-cancel-transaction).
 
 ### How do I set custom fee rate?
 
