@@ -338,7 +338,8 @@ Wasabi client doesn't work with pruned nodes.
 
 ### Can I run a Wasabi headless daemon?
 
-No, currently that is not posssible.
+Yes.
+See [this chapter](/using-wasabi/Daemon.md) for more details.
 
 ## Receive
 
