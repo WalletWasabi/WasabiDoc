@@ -586,6 +586,7 @@ It will replace the current transaction with one paying a higher fee rate.
 
 <details>
 <summary>Click here to expand for a step-by-step instruction guide:</summary>
+
 - Right click on the pending transaction in the wallet history and click _Speed Up Transaction_.
 
 ![Speed Up History](/SpeedUpHistory.png "Speed Up History")
