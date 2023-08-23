@@ -180,6 +180,12 @@ Read more: [Transaction Surveillance Companies](/why-wasabi/TransactionSurveilla
 Tumbling is a synonym of 'Mixing'.
 Similarly, Tumbler is the synonym of 'Mixer'.
 
+### TurboSync
+
+A feature in Wasabi to reduce wallet loading time.
+With TurboSync, some addresses (internal keys only) are skipped and tested in the background.
+Read more: [TurboSync](/using-wasabi/WalletLoad.md#turbosync) 
+
 ### WabiSabi
 
 WabiSabi is a protocol for constructing coinjoin transactions with the aid of a centralized coordinator.
