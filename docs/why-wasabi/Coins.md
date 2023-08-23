@@ -115,7 +115,3 @@ Second transaction (RBF)
 A [1.3576 1516 btc]  -->  B [1.0135 6515 btc]
                           C [0.3440 4721 btc] (= change)
 ```
-
-:::tip
-Because of this privacy leak, Wasabi does not utilize RBF fee bumping, even though it signals it to mimic other wallets fingerprint.
-:::
