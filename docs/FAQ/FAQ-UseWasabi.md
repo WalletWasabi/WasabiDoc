@@ -589,25 +589,6 @@ This really depends on your own time preference in every unique moment.
 These sats are precious, so don't overpay on fees!
 :::
 
-### How can I speed up a pending/unconfirmed transaction (CPFP/RBF)?
-
-A pending (unconfirmed) transaction can be speeded up by using the _Speed Up Transaction_ feature which will send a new transaction with a higher fee rate to replace the current one.
-
-To speed up a transaction:
-
-- Right click on the pending transaction in the wallet history and click _Speed Up Transaction_.
-
-![Speed Up History](/SpeedUpHistory.png "Speed Up History")
-
-- Confirm you want to pay the additional fee for speeding it up.
-
-![Speed Up Confirm](/SpeedUpConfirm.png "Speed Up Confirm")
-
-- Enter your Password to send the new transaction.
-- Transaction succesfully speeded up!
-
-Read more [here](/using-wasabi/Send.md#speed-up-or-cancel-transaction).
-
 ### How do I set custom fee rate?
 
 At the `Preview Transaction` dialog, click on the icon `Change transaction fee or confirmation time`.
@@ -707,6 +688,25 @@ This is good for privacy, and also saves you some transaction fees.
 ### How can I bump the transaction fee with child pays for parent (CPFP)?
 
 Since Wasabi version [2.0.4](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v2.0.4) this FAQ is now obsolete because of the new [_Speed Up Transaction_ feature](/FAQ/FAQ-UseWasabi.md#how-can-i-speed-up-a-pending-transaction) that can be used.
+
+### How can I speed up a pending/unconfirmed transaction (CPFP/RBF)?
+
+A pending (unconfirmed) transaction can be speeded up by using the _Speed Up Transaction_ feature which will send a new transaction with a higher fee rate to replace the current one.
+
+To speed up a transaction:
+
+- Right click on the pending transaction in the wallet history and click _Speed Up Transaction_.
+
+![Speed Up History](/SpeedUpHistory.png "Speed Up History")
+
+- Confirm you want to pay the additional fee for speeding it up.
+
+![Speed Up Confirm](/SpeedUpConfirm.png "Speed Up Confirm")
+
+- Enter your Password to send the new transaction.
+- Transaction succesfully speeded up!
+
+Read more [here](/using-wasabi/Send.md#speed-up-or-cancel-transaction).
 
 ### Why is there no `Send` button, only the `Receive` button is displayed?
 
