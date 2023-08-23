@@ -183,7 +183,7 @@ Similarly, Tumbler is the synonym of 'Mixer'.
 ### TurboSync
 
 A feature in Wasabi to reduce wallet loading time.
-With TurboSync, skipped addresses (internal keys) are tested in the background.
+With TurboSync, some addresses (internal keys only) are skipped and tested in the background.
 Read more: [TurboSync](/using-wasabi/WalletLoad.md#turbosync) 
 
 ### WabiSabi
