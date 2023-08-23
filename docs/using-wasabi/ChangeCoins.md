@@ -52,7 +52,7 @@ This might not be possible in some cases where you have to pay a specific value 
 ### Make it difficult to deduce the change
 
 There are [common heuristics identifying change outputs](/why-wasabi/Coins.md#heuristics-identifying-change), try to avoid these with every transaction.
-Don't reuse addresses, don't send precise amounts but randomize them, don't use replace by fee, and try to send to bech32 or bech32m addresses.
+Don't reuse addresses, don't send precise amounts but randomize them, don't use replace by fee (if not necessary), and try to send to bech32 or bech32m addresses.
 
 ### Spend the change to the same entity as in the initial transaction
 
