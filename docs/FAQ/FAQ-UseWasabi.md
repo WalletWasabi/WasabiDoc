@@ -589,7 +589,7 @@ This really depends on your own time preference in every unique moment.
 These sats are precious, so don't overpay on fees!
 :::
 
-### How can I speed up a pending transaction?
+### How can I speed up a pending/unconfirmed transaction (CPFP/RBF)?
 
 A pending (unconfirmed) transaction can be speeded up by using the _Speed Up Transaction_ feature which will send a new transaction with a higher fee rate to replace the current one.
 
