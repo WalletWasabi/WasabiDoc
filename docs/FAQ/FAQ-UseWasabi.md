@@ -591,8 +591,7 @@ These sats are precious, so don't overpay on fees!
 
 ### How can I speed up a pending transaction?
 
-A pending (unconfirmed) transaction can be speeded up by using the _Speed Up Transaction_ feature by right-clicking on the transaction in the history.
-The transaction will be speeded up by sending a new transaction with a higher fee rate.
+A pending (unconfirmed) transaction can be speeded up by using the _Speed Up Transaction_ feature which will send a new transaction with a higher fee rate to replace the current one.
 
 To speed up a transaction:
 
