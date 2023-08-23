@@ -161,26 +161,25 @@ If this also fails, then the transaction is sent to the backend coordinator with
 
 ## Speed Up or Cancel Transaction
 
-Pending (unconfirmed) Bitcoin transactions can be replaced.
-This can be used to speed up or cancel a transaction. 
-This is done by sending a new transaction using the same coins (UTXOs) with a transaction that pays a higher fee rate.
-The miners are incentivised to mine the transaction with the higher fee, as this will earn them more money.
+Pending (unconfirmed) Bitcoin transactions can be replaced by sending a new transaction that pays a higher fee rate using the same (or some) coins/UTXOs.
+This can be used to speed up or cancel a transaction.
+The miners are incentivized to mine the transaction with the higher fee rate, as this will earn them more money.
 If the new higher fee rate paying transaction is confirmed, the old transaction can be considered "replaced".
 
 Since Wasabi version [2.0.4](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v2.0.4) it is possible to easily speed up or cancel a pending transaction.
-Speeding up and cancelling are similar to each other, the main difference being that a _Cancel Transaction_ will be send to a new address which is owned by the user himself (this is all done automatically).
-The transaction is then "cancelled" because the bitcoin (minus additional fees) is returned to the user's wallet.
+Speeding up and cancelling are similar to each other, the main difference being that a _Cancel Transaction_ will send the coins to a new address owned by the user/wallet (this is all done automatically).
+The transaction is then "cancelled" because the bitcoin (minus the fees) is returned to the user's wallet.
 
-Speeding up or cancelling a transaction costs additional fees, because a new bitcoin transaction with a higher fee (than the previous transaction) has to be sent.
+Speeding up or cancelling a transaction costs additional fees, because a new bitcoin transaction with a higher fee rate (than the previous transaction) has to be sent.
 
-Wasabi first tries to utilize [RBF](glossary/Glossary-GeneralBitcoin.html#replace-by-fee-rbf), but if that's not possible it will do [CPFP](glossary/Glossary-GeneralBitcoin.html#child-pays-for-parent-cpfp).
+Wasabi first tries to utilize [RBF](glossary/Glossary-GeneralBitcoin.html#replace-by-fee-rbf), if that's not possible it tries to do [CPFP](glossary/Glossary-GeneralBitcoin.html#child-pays-for-parent-cpfp).
 
 To Speed Up or Cancel a Transaction, right-click on the pending transaction in the history.
 
 ![Speed Up History](/SpeedUpHistory.png "Speed Up History")
 
-Select it and then confirm that you want to pay the additional fee for this action.
+Click one of the two options and then confirm that you want to pay the additional fee for this action.
 After which the succesfully speed up/cancelled dialog is displayed.
 
-In the history, the transaction will now have a rocket icon (speeded up) or a cross (cancelled).
-The transaction is still pending, but it will be confirmed sooner than previously.
+In the history, the transaction will now have a rocket (speeded up) or a cross (cancelled) icon.
+The transaction is still pending, but it should be confirmed sooner than the initial transaction.
