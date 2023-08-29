@@ -708,6 +708,23 @@ To speed up a transaction:
 
 Read more [here](/using-wasabi/Send.md#speed-up-or-cancel-transaction).
 
+### How can I cancel a pending/unconfirmed transaction?
+
+A pending (unconfirmed) transaction can be cancelled by using the _Cancel Transaction_ feature which will send a new transaction with a higher fee rate to replace the current one.
+The replacement transaction is sent to an address of the user's wallet, so the bitcoin comes back to the user's wallet and the transaction can be considered "cancelled".
+
+To cancel a transaction:
+
+- Right click on the pending transaction in the wallet history and click _Cancel Transaction_.
+
+![Cancel Tx History](/SpeedUpHistory.png "Cancel Tx History")
+
+- Confirm you want to pay the additional fee for cancelling it.
+
+![Cancel Tx Confirm](/CancelTxConfirm.png "Cancel Tx Confirm")
+
+Read more [here](/using-wasabi/Send.md#speed-up-or-cancel-transaction).
+
 ### Why is there no `Send` button, only the `Receive` button is displayed?
 
 When the wallet has a balance of 0.00000000 BTC, the `Send` button is hidden because there is no bitcoin to send.
