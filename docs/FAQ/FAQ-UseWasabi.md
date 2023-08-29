@@ -697,11 +697,11 @@ To speed up a transaction:
 
 - Right click on the pending transaction in the wallet history and click _Speed Up Transaction_.
 
-![Speed Up History](/SpeedUpHistory.png "Speed Up History")
+![Speed Up Tx History](/HistoryRightClick.png "Speed Up Tx History")
 
 - Confirm you want to pay the additional fee for speeding it up.
 
-![Speed Up Confirm](/SpeedUpConfirm.png "Speed Up Confirm")
+![Speed Up Tx Confirm](/SpeedUpTxConfirm.png "Speed Up Tx Confirm")
 
 - Enter your Password to send the new transaction.
 - Transaction succesfully speeded up!
@@ -717,7 +717,7 @@ To cancel a transaction:
 
 - Right click on the pending transaction in the wallet history and click _Cancel Transaction_.
 
-![Cancel Tx History](/SpeedUpHistory.png "Cancel Tx History")
+![Cancel Tx History](/HistoryRightClick.png "Cancel Tx History")
 
 - Confirm you want to pay the additional fee for cancelling it.
 
