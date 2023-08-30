@@ -122,6 +122,7 @@ There are also other node implementations different from Bitcoin Knots, such as 
 Instead, if you prefer to use some dedicated hardware solutions, these are some of the most reliable projects:
 - [RaspiBlitz](https://github.com/rootzoll/raspiblitz), a DIY project based on the Raspberry platform
 - [RaspiBolt](https://raspibolt.org/), another Raspberry DIY node
+- [nix-bitcoin](https://nixbitcoin.org/), a collection of Nix packages and NixOS modules 
 - [Nodl](https://www.nodl.eu/), works out of the box and runs on a powerful Rockchip CPU
 - [myNode](https://mynodebtc.com/), a DIY project with optional paid versions
 
