@@ -75,7 +75,7 @@ There are two ways to confirm that your Wasabi client is connected to your own f
 
 First, in the Wasabi logs.
 Once you receive a transaction Wasabi downloads the block containing that transaction from your node, and in the logs you should see:
-`Block acquired from local P2P connection.`
+`Block {hash} acquired from node '{node}'.`
 
 Second, by checking the connected peers inside your full node.
 Wasabi will show up as one of the connected peers while it is downloading a block.
