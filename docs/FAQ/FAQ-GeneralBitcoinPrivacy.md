@@ -120,9 +120,9 @@ This is likely the most convenient solution for Wasabikas.
 There are also other node implementations different from Bitcoin Knots, such as [Bitcoin Core](https://bitcoincore.org/) or [Libbitcoin](https://github.com/libbitcoin/libbitcoin-node), that could be used as well.
 
 Instead, if you prefer to use some dedicated hardware solutions, these are some of the most reliable projects:
-- [Raspiblitz](https://github.com/rootzoll/raspiblitz), a DIY project based on the Raspberry platform
-- [RaspiBolt](https://stadicus.github.io/RaspiBolt/), another Raspberry DIY node
-- [Nodl](https://www.nodl.it/), works out of the box and runs on a powerful Rockchip CPU
+- [RaspiBlitz](https://github.com/rootzoll/raspiblitz), a DIY project based on the Raspberry platform
+- [RaspiBolt](https://raspibolt.org/), another Raspberry DIY node
+- [Nodl](https://www.nodl.eu/), works out of the box and runs on a powerful Rockchip CPU
 - [myNode](https://mynodebtc.com/), a DIY project with optional paid versions
 
 ### Why is it important to use a new address for every payment?
