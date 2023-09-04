@@ -84,7 +84,7 @@ html.dark {
 html:not(.dark){
 	--c-text-light: var(--c-text) !important;
 }
-@media only screen and (max-width:997px){
+@media only screen and (max-width:1140px){
 	.navbar .site-name {
 		display:none;
 	}
