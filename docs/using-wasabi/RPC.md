@@ -18,7 +18,7 @@ The RPC server does NOT support batch requests or TLS communications (because it
 Requests are served in order one-by-one in series (no parallel processing).
 It is intentionally limited to serve only one whitelisted local address and it is disabled by default.
 
-The more user friendly command line interface `wcli` can be found [here](https://github.com/zksnacks/wasabiscripts).
+The more user friendly command line interface `wcli` can be found [here](https://github.com/zkSNACKs/WalletWasabi/tree/master/Contrib/CLI).
 
 ## Configure RPC
 
