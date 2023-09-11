@@ -1410,6 +1410,24 @@ Do NOT use the manual coin control if you do not know what you are doing.
 Misusing it can have seriously bad privacy consequences.
 :::
 
+### How can I see my wallet's coins?
+
+The `Wallet Coins` dialog (a.k.a coinlist) can be brought up by pressing the keyboard combination `CTRL` + `C` + `D` simultaneously on the main view or via the search bar.
+
+At the coinlist it is possible to select and send specific coins.
+
+:::warning Sending coins via the coinlist is for advanced usage only
+Users should stick to the default send workflow.
+Misusing the coinlist for sending can result in critical privacy risks.
+:::
+
+![Wallet Coins Send Selected Coins](/WalletCoinsSendSelectedCoins.png "Wallet Coins Send Selected Coins")
+
+:::warning This is not coin control
+You can only send coins in full.
+There is no possiblity to enter a bitcoin amount or receive change.
+:::
+
 ### Can I consolidate anonset coins?
 
 It is advisable to limit the recombining of mixed coins because it can only decrease the privacy of these coins.
