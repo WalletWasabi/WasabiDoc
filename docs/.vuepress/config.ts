@@ -37,6 +37,7 @@ export default {
         docsDir: 'docs',
         editLinks: true,
         contributors: false,
+        colorMode: 'dark',
         //lastUpdated: 'Last Updated',
         algolia: {
             indexName: 'wasabiwallet',
