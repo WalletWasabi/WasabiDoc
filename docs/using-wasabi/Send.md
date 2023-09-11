@@ -207,7 +207,7 @@ Wasabi first tries to utilize [RBF](glossary/Glossary-GeneralBitcoin.html#replac
 
 To Speed Up or Cancel a Transaction, right-click on the pending transaction in the history.
 
-![Speed Up History](/SpeedUpHistory.png "Speed Up History")
+![History Right Click](/HistoryRightClick.png "History Right Click")
 
 Click one of the two options and then confirm that you want to pay the additional fee for this action.
 After which the succesfully speed up/cancelled dialog is displayed.
