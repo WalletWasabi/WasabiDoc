@@ -735,7 +735,7 @@ So when sending, less than 0.01120153 BTC (to cover the mining fees) should be e
 
 ![Wasabi Wallet Privacy Progress Tile](/PrivacyProgressTile.png "Wasabi Wallet Privacy Progress Tile")
 
-:::tip Use the Privacy Suggestion
+:::tip Use the Privacy Suggestions
 Since Wasabi version [2.0.4](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v2.0.4), there are privacy suggestions to only send private or semi-private coins.
 :::
 
