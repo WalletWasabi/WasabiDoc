@@ -2,6 +2,7 @@ import resolve from 'path'
 import defaultTheme from '@vuepress/theme-default'
 import slugify from '@vuepress/shared-utils'
 import searchPlugin from '@vuepress/plugin-search'
+import palettePlugin from '@vuepress/plugin-palette'
 
 const themeColor = "#211b24"
 
@@ -36,6 +37,7 @@ export default {
         docsDir: 'docs',
         editLinks: true,
         contributors: false,
+        colorMode: 'dark',
         //lastUpdated: 'Last Updated',
         algolia: {
             indexName: 'wasabiwallet',
@@ -268,6 +270,9 @@ export default {
                     placeholder: 'Search...',
                 }
             }
+        }),
+        palettePlugin({
+          preset: 'sass'
         })
     ]
 }
