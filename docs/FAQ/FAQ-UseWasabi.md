@@ -723,6 +723,9 @@ To cancel a transaction:
 
 ![Cancel Tx Confirm](/CancelTxConfirm.png "Cancel Tx Confirm")
 
+- Enter your Password to send the new transaction.
+- Transaction cancelled!
+
 Read more [here](/using-wasabi/Send.md#speed-up-or-cancel-transaction).
 
 ### Why is there no `Send` button, only the `Receive` button is displayed?
