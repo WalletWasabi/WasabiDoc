@@ -18,6 +18,8 @@ The concept has been around since the early days of Bitcoin, and it was formaliz
 The goal is to gain privacy by breaking the link of which input "pays" which output so that none of the outputs can be attributed to the owner of the input.
 WabiSabi enables centrally coordinated coinjoins with variable amounts in a trustless (meaning nobody can steal) and private (meaning even the coordinator cannot spy) manner, as described in the [WabiSabi paper](https://eprint.iacr.org/2021/206).
 
+[![WabiSabi Coinjoin Explained in 3 Minutes](/https://img.youtube.com/vi/dGATztn5Ql8/maxresdefault.jpg)](https://youtu.be/dGATztn5Ql8)
+
 ## Coinjoin step-by-step
 
 1. Launch Wasabi and open your wallet.

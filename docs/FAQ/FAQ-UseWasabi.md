@@ -708,6 +708,8 @@ To speed up a transaction:
 
 Read more [here](/using-wasabi/Send.md#speed-up-or-cancel-transaction).
 
+[![How to speed up Bitcoin transaction](/https://img.youtube.com/vi/55KURak5r58/maxresdefault.jpg)](https://youtu.be/55KURak5r58)
+
 ### Why is there no `Send` button, only the `Receive` button is displayed?
 
 When the wallet has a balance of 0.00000000 BTC, the `Send` button is hidden because there is no bitcoin to send.
