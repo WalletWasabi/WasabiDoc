@@ -711,7 +711,7 @@ Read more [here](/using-wasabi/Send.md#speed-up-or-cancel-transaction).
 ### How can I cancel a pending/unconfirmed transaction?
 
 A pending (unconfirmed) transaction can be cancelled by using the _Cancel Transaction_ feature which will send a new transaction with a higher fee rate to replace the current one.
-The replacement transaction is sent to an address of the user's wallet, so the bitcoin comes back to the user's wallet and the transaction can be considered "cancelled".
+The replacement transaction is sent to a new address of the user himself, so the bitcoin comes back to the user's wallet and the transaction can be considered "cancelled".
 
 To cancel a transaction:
 
