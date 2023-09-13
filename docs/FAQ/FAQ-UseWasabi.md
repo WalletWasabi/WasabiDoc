@@ -708,6 +708,8 @@ To speed up a transaction:
 
 Read more [here](/using-wasabi/Send.md#speed-up-or-cancel-transaction).
 
+> The _Speed Up Transaction_ tool is not available for coinjoins, or when using a hardware wallet.
+
 ### How can I cancel a pending/unconfirmed transaction?
 
 A pending (unconfirmed) transaction can be cancelled by using the _Cancel Transaction_ feature which will send a new transaction with a higher fee rate to replace the current one.
@@ -727,6 +729,8 @@ To cancel a transaction:
 - Transaction cancelled!
 
 Read more [here](/using-wasabi/Send.md#speed-up-or-cancel-transaction).
+
+> The _Cancel Transaction_ tool is not available for coinjoins, or when using a hardware wallet.
 
 ### Why is there no `Send` button, only the `Receive` button is displayed?
 
