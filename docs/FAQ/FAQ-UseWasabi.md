@@ -708,8 +708,6 @@ To speed up a transaction:
 
 Read more [here](/using-wasabi/Send.md#speed-up-or-cancel-transaction).
 
-[![How to speed up Bitcoin transaction](https://img.youtube.com/vi/55KURak5r58/maxresdefault.jpg)](https://youtu.be/55KURak5r58)
-
 > The _Speed Up Transaction_ tool is not available for coinjoins, or when using a hardware wallet.
 
 ### How can I cancel a pending/unconfirmed transaction?

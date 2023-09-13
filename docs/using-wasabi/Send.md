@@ -214,3 +214,5 @@ After which the succesfully speed up/cancelled dialog is displayed.
 
 In the history, the transaction will now have a rocket (speeded up) or a cross (cancelled) icon.
 The transaction is still pending, but it should be confirmed sooner than the initial transaction.
+
+[![How to speed up Bitcoin transaction](https://img.youtube.com/vi/55KURak5r58/maxresdefault.jpg)](https://youtu.be/55KURak5r58)
