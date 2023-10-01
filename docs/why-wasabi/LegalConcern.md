@@ -162,18 +162,6 @@ Again, this user is already KYC-ed, the provider has full knowledge about the us
 In case of a law enforcement request, all data can be provided, since the deposit history of the user in question is still available.
 The only thing CoinJoin does, in this case, is protecting the user from third-party observers, while the service provider is still enabled to provide data for law enforcement if requested.
 
-### FinCEN guidance on legal framework
-
-The Financial Crimes Enforcement Network (FinCEN) is a bureau of the United States Department of the Treasury that collects and analyzes information about financial transactions.
-It is claimed that its job is to combat domestic and international money laundering, terrorist financing, and other financial crimes.
-Its latest regulation regarding cryptocurrencies is in effect since May 2019.
-The regulation places money transmitting in the center of the discussion.
-Money transmitters must develop a certain process in terms of reporting and monitoring to help combat money laundering and terrorist financing.
-FinCEN guidance explicitly states that those persons and businesses who provide the delivery, communication, or network access services used by a money transmitter to support money transmission services are NOT considered money transmitters.
-Furthermore, in section 4.5 anonymity-enhanced cryptocurrency transactions are detailed and concluded that they are subject to the same AML and KYC regulations as any other transactions.
-This means in an investigation even the obfuscated transaction history can be given out to authorities upon request if it is needed for a procedure, so it can be concluded that using CoinJoin transactions will not help money-laundering.
-The KYC-ed participant’s data and pre-obfuscated transaction history can be given away to the authorities.
-
 ## Conclusion
 
 Companies using Bitcoin as a method of payment currently do not have sufficient privacy regarding their financial information.
