@@ -13,7 +13,7 @@
 
 The default of how to interact with your Wasabi wallet is the graphical user interface (GUI).
 There is also a headless daemon where you do not run a resource-intensive GUI, but only the command line interface.
-Running the daemon minimizes the usage of resources (CPU, GPU, Memory, Bandwidth) with the goal of making it more suitable for running all the time in the background.
+Running the daemon minimizes the usage of resources (CPU, GPU, Memory) with the goal of making it more suitable for running all the time in the background.
 The [RPC interface](/using-wasabi/RPC.md) can be used to interact with the Daemon.
 
 The daemon is included in the package starting from Wasabi version [2.0.4](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v2.0.4) and can be launched using the command line.
