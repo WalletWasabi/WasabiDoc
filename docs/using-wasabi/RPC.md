@@ -615,6 +615,8 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"startcoinjoin", "para
 }
 ```
 
+The first parameter is the wallet password, the second parameter is `stopWhenAllMixed`, and the third one is`overridePlebStop`.
+
 ### startcoinjoinsweep
 
 ```bash
@@ -624,8 +626,6 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"startcoinjoinsweep", 
   "id": "1"
 }
 ```
-
-The first parameter is the wallet password, the second parameter is `stopWhenAllMixed`, and the third one is`overridePlebStop`.
 
 ### stopcoinjoin
 
