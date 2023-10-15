@@ -48,7 +48,7 @@ Open a new terminal and use the following RPC commands to interact with your wal
 
 ## Available methods
 
-The current version handles the following methods: `getstatus`, `createwallet`, `listcoins`, `listunspentcoins`, `getwalletinfo`, `getnewaddress`, `send`, `broadcast`, `gethistory`, `listkeys`, `startcoinjoin`, `stopcoinjoin` and `stop`.
+The current version handles the following methods: `getstatus`, `createwallet`, `listcoins`, `listunspentcoins`, `getwalletinfo`, `getnewaddress`, `send`, `broadcast`, `gethistory`, `listkeys`, `startcoinjoin`, `startcoinjoinsweep`, `stopcoinjoin` and `stop`.
 
 For certain methods, the RPC call may not require the password whereas a similar action in the GUI does require it. 
 This difference is because the RPC call can use the clear text wallet file, which does not require the password to access. 
@@ -609,6 +609,16 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"listkeys"}' http://12
 
 ```bash
 curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"startcoinjoin", "params":["UserPassword", "True", "True"]}' http://127.0.0.1:37128/WalletName | jq
+{
+  "jsonrpc": "2.0",
+  "id": "1"
+}
+```
+
+### startcoinjoinsweep
+
+```bash
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"startcoinjoinsweep", "params":["UserPassword", "OutputWalletName"]}' http://127.0.0.1:37128/WalletName | jq
 {
   "jsonrpc": "2.0",
   "id": "1"
