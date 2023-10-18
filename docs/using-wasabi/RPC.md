@@ -46,6 +46,19 @@ It is recommended to install the `jq` [command line json processor](https://sted
 Then start Wasabi Wallet and load the wallet you want to use.
 Open a new terminal and use the following RPC commands to interact with your wallet, instead of the GUI.
 
+:::tip For Windows Users
+- Using a Windows command prompt to execute any method, one must use double quotation marks `"` to surround the JSON data structure, and escape each double quotation mark that is inside the JSON structure by using a backslash `\` before each double quotation mark.
+Example:
+
+```bash
+curl -s --data-binary "{ \"jsonrpc\":\"2.0\",\"id\":\"1\",\"method\":\"getwalletinfo\" }" http://127.0.0.1:37128/WalletName | jq
+```
+
+- Another option is to install [Git](https://git-scm.com/downloads) and to use Git Bash.
+
+- To install `jq` check this [video tutorial](https://www.youtube.com/watch?v=rrjIVepRqPI).
+:::
+
 ## Available methods
 
 The current version handles the following methods: `getstatus`, `createwallet`, `listcoins`, `listunspentcoins`, `getwalletinfo`, `getnewaddress`, `send`, `broadcast`, `gethistory`, `listkeys`, `startcoinjoin`, `startcoinjoinsweep`, `stopcoinjoin` and `stop`.
