@@ -86,6 +86,7 @@ html:not(.dark){
 }
 .navbar .navbar-items-wrapper {
 	width: calc(100% - 250px) !important;
+	max-width: 1140px !important;
 }
 .toggle-color-mode-button {
 	display:unset;
