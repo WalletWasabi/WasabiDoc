@@ -250,8 +250,8 @@ export default {
             }
         }],
         docsearchPlugin({
-            appId: 'BH4D9OD16A',
-            apiKey: 'c9d9b7688e0f9e6d0ed534655321a424',
+            appId: 'SQD9TOGZIJ',
+            apiKey: '49839526a875a06fb917d7a324774872',
             indexName: 'wasabiwallet',
             indexBase: 'https://docs.wasabiwallet.io'
         }),
