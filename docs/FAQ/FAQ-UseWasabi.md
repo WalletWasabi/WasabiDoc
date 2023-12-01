@@ -599,25 +599,6 @@ At the transaction fee slider dialog, click on `Advanced` and manually type the 
 
 ![Wasabi Wallet custom fee rate](/SendCustomFee.png "Wasabi Wallet custom fee rate")
 
-### How do I select coins for spending?
-
-In the normal send workflow, Wasabi automatically selects which coins to send.
-
-To send a specific coin, the user can use the `Wallet Coins` dialog (a.k.a coinlist).
-The coinlist can be brought up by pressing the keyboard combination `CTRL` + `C` + `D` simultaneously on the main view or via the search bar.
-
-:::warning This is for advanced usage only
-Users should stick to the default send workflow.
-Misusing the coinlist for sending can result in critical privacy risks.
-:::
-
-![Wallet Coins Send Selected Coins](/WalletCoinsSendSelectedCoins.png "Wallet Coins Send Selected Coins")
-
-:::warning This is not coin control
-You can only send coins in full.
-There is no possiblity to enter a bitcoin amount or receive change.
-:::
-
 ### How does Wasabi select which coins to send?
 
 If the user has coins with the same label as the recipient of the outgoing transaction (coins received in the past from the same recipient), then Wasabi automatically selects these coins.
@@ -697,16 +678,40 @@ To speed up a transaction:
 
 - Right click on the pending transaction in the wallet history and click _Speed Up Transaction_.
 
-![Speed Up History](/SpeedUpHistory.png "Speed Up History")
+![Speed Up Tx History](/HistoryRightClick.png "Speed Up Tx History")
 
 - Confirm you want to pay the additional fee for speeding it up.
 
-![Speed Up Confirm](/SpeedUpConfirm.png "Speed Up Confirm")
+![Speed Up Tx Confirm](/SpeedUpTxConfirm.png "Speed Up Tx Confirm")
 
 - Enter your Password to send the new transaction.
 - Transaction succesfully speeded up!
 
 Read more [here](/using-wasabi/Send.md#speed-up-or-cancel-transaction).
+
+> The _Speed Up Transaction_ tool is not available for coinjoins, or when using a hardware wallet.
+
+### How can I cancel a pending/unconfirmed transaction?
+
+A pending (unconfirmed) transaction can be cancelled by using the _Cancel Transaction_ feature which will send a new transaction with a higher fee rate to replace the current one.
+The replacement transaction is sent to a new address of the user himself, so the bitcoin comes back to the user's wallet and the transaction can be considered "cancelled".
+
+To cancel a transaction:
+
+- Right click on the pending transaction in the wallet history and click _Cancel Transaction_.
+
+![Cancel Tx History](/HistoryRightClick.png "Cancel Tx History")
+
+- Confirm you want to pay the additional fee for cancelling it.
+
+![Cancel Tx Confirm](/CancelTxConfirm.png "Cancel Tx Confirm")
+
+- Enter your Password to send the new transaction.
+- Transaction cancelled!
+
+Read more [here](/using-wasabi/Send.md#speed-up-or-cancel-transaction).
+
+> The _Cancel Transaction_ tool is not available for coinjoins, or when using a hardware wallet.
 
 ### Why is there no `Send` button, only the `Receive` button is displayed?
 
@@ -722,7 +727,7 @@ Yes, you can always send from your wallet.
 However, a best practice is to only send private funds.
 Making your wallet 100% private [takes some time](/FAQ/FAQ-UseWasabi.md#how-long-does-it-take-to-make-my-wallet-100-private), but in the mean time you can always send the (private) funds.
 
-So when your wallet is partially private (between 0 and 100% privacy progress) it is a best practice to only use the private available funds, to protect your privacy.
+So when your wallet is partially private (between 0 and 100% privacy progress) it is a best practice to only use the available private funds, to preserve your privacy.
 In the privacy progress tile, `PRIVATE` shows the currently available private BTC amount.
 So that is the amount (minus the mining fees) which can be sent privately, even if the privacy progress is not yet 100%.
 When sending, the wallet automatically selects the private funds first.
@@ -734,6 +739,12 @@ Even when the `Privacy Progress` is below 100%.
 So when sending, less than 0.01120153 BTC (to cover the mining fees) should be entered as the `Amount` in order to only use the private funds.
 
 ![Wasabi Wallet Privacy Progress Tile](/PrivacyProgressTile.png "Wasabi Wallet Privacy Progress Tile")
+
+:::tip Use the Privacy Suggestions
+Since Wasabi version [2.0.4](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v2.0.4), there are privacy suggestions to only send private or semi-private coins.
+:::
+
+Read more [here](/using-wasabi/Send.md#privacy-suggestions).
 
 ## CoinJoin
 
@@ -1433,6 +1444,25 @@ This can be done by pressing and holding the keystroke `alt` (or `option` on mac
 :::warning This is a developer feature
 Do NOT use the manual coin control if you do not know what you are doing.
 Misusing it can have seriously bad privacy consequences.
+:::
+
+### How do I select coins for spending?
+
+In the normal send workflow, Wasabi automatically selects which coins to send.
+
+To send a specific coin, the user can use the `Wallet Coins` dialog (a.k.a coinlist).
+The coinlist can be brought up by pressing the keyboard combination `CTRL` + `C` + `D` simultaneously on the main view or via the search bar.
+
+:::warning This is for advanced usage only
+Users should stick to the default send workflow.
+Misusing the coinlist for sending can result in critical privacy risks.
+:::
+
+![Wallet Coins Send Selected Coins](/WalletCoinsSendSelectedCoins.png "Wallet Coins Send Selected Coins")
+
+:::warning This is not full coin control
+You can only send coins in full.
+There is no possiblity to enter a bitcoin amount or receive change.
 :::
 
 ### Can I consolidate anonset coins?

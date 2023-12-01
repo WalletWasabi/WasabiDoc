@@ -1,8 +1,8 @@
 import resolve from 'path'
 import defaultTheme from '@vuepress/theme-default'
 import slugify from '@vuepress/shared-utils'
+import searchPlugin from '@vuepress/plugin-search'
 import palettePlugin from '@vuepress/plugin-palette'
-import docsearchPlugin from '@vuepress/plugin-docsearch'
 
 const themeColor = "#211b24"
 
@@ -14,7 +14,7 @@ export default {
         const render = md.renderer.render;
 
         const variables = {
-            currentVersion: '2.0.4',
+            currentVersion: '2.0.4.1',
             dotnetVersion: '7.0',
             zksnacksPublicKeyFingerprint: '6FB3 872B 5D42 292F 5992 0797 8563 4832 8949 861E'
         }
@@ -39,6 +39,18 @@ export default {
         contributors: false,
         colorMode: 'dark',
         //lastUpdated: 'Last Updated',
+        algolia: {
+            indexName: 'wasabiwallet',
+            apiKey: 'c9d9b7688e0f9e6d0ed534655321a424',
+            // See https://www.algolia.com/doc/api-reference/api-parameters/
+            algoliaOptions: {
+                hitsPerPage: 25
+            },
+            // See https://community.algolia.com/docsearch/behavior.html#autocompleteoptions
+            autocompleteOptions: {
+                openOnFocus: true
+            }
+        },
         head: [
             ["link", {
                 rel: "icon",

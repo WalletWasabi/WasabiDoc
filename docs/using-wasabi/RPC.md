@@ -18,7 +18,7 @@ The RPC server does NOT support batch requests or TLS communications (because it
 Requests are served in order one-by-one in series (no parallel processing).
 It is intentionally limited to serve only one whitelisted local address and it is disabled by default.
 
-The more user friendly command line interface `wcli` can be found [here](https://github.com/zksnacks/wasabiscripts).
+The more user friendly command line interface `wcli` can be found [here](https://github.com/zkSNACKs/WalletWasabi/tree/master/Contrib/CLI).
 
 ## Configure RPC
 
@@ -46,9 +46,22 @@ It is recommended to install the `jq` [command line json processor](https://sted
 Then start Wasabi Wallet and load the wallet you want to use.
 Open a new terminal and use the following RPC commands to interact with your wallet, instead of the GUI.
 
+:::tip For Windows Users
+- Using a Windows command prompt to execute any method, one must use double quotation marks `"` to surround the JSON data structure, and escape each double quotation mark that is inside the JSON structure by using a backslash `\` before each double quotation mark.
+Example:
+
+```bash
+curl -s --data-binary "{ \"jsonrpc\":\"2.0\",\"id\":\"1\",\"method\":\"getwalletinfo\" }" http://127.0.0.1:37128/WalletName | jq
+```
+
+- Another option is to install [Git](https://git-scm.com/downloads) and to use Git Bash.
+
+- To install `jq` check this [video tutorial](https://www.youtube.com/watch?v=rrjIVepRqPI).
+:::
+
 ## Available methods
 
-The current version handles the following methods: `getstatus`, `createwallet`, `listcoins`, `listunspentcoins`, `getwalletinfo`, `getnewaddress`, `send`, `broadcast`, `gethistory`, `listkeys`, `startcoinjoin`, `stopcoinjoin` and `stop`.
+The current version handles the following methods: `getstatus`, `createwallet`, `listcoins`, `listunspentcoins`, `getwalletinfo`, `getnewaddress`, `send`, `broadcast`, `gethistory`, `listkeys`, `startcoinjoin`, `startcoinjoinsweep`, `stopcoinjoin` and `stop`.
 
 For certain methods, the RPC call may not require the password whereas a similar action in the GUI does require it. 
 This difference is because the RPC call can use the clear text wallet file, which does not require the password to access. 
@@ -616,6 +629,16 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"startcoinjoin", "para
 ```
 
 The first parameter is the wallet password, the second parameter is `stopWhenAllMixed`, and the third one is`overridePlebStop`.
+
+### startcoinjoinsweep
+
+```bash
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"startcoinjoinsweep", "params":["UserPassword", "OutputWalletName"]}' http://127.0.0.1:37128/WalletName | jq
+{
+  "jsonrpc": "2.0",
+  "id": "1"
+}
+```
 
 ### stopcoinjoin
 
