@@ -84,29 +84,11 @@ html.dark {
 html:not(.dark){
 	--c-text-light: var(--c-text) !important;
 }
-.navbar .navbar-items-wrapper {
-	width: calc(100% - 250px) !important;
-	max-width: 1140px !important;
-}
-.toggle-color-mode-button {
-	display:unset;
-	margin: 0;
-	margin-left:2rem;
-}
-.DocSearch {
-	width:100%;
-}
-#docsearch-container,
-#docsearch-container + div {
-	width:100%;
-	display:flex;
-}
 @media only screen and (max-width:1140px){
 	.navbar .site-name {
 		display:none;
 	}
 	.navbar .navbar-items-wrapper {
-		width: calc(100% - 80px) !important;
 		max-width: calc(100% - 80px) !important;
 	}
 }
