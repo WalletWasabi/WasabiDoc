@@ -61,7 +61,7 @@ curl -s --data-binary "{ \"jsonrpc\":\"2.0\",\"id\":\"1\",\"method\":\"getwallet
 
 ## Available methods
 
-The current version handles the following methods: `getstatus`, `createwallet`, `listcoins`, `listunspentcoins`, `getwalletinfo`, `getnewaddress`, `send`, `broadcast`, `gethistory`, `listkeys`, `startcoinjoin`, `payincoinjoin`, `startcoinjoinsweep`, `stopcoinjoin` and `stop`.
+The current version handles the following methods: `getstatus`, `createwallet`, `listcoins`, `listunspentcoins`, `getwalletinfo`, `getnewaddress`, `send`, `broadcast`, `gethistory`, `listkeys`, `startcoinjoin`, `payincoinjoin`, `listpaymentsincoinjoin`, `startcoinjoinsweep`, `stopcoinjoin` and `stop`.
 
 For certain methods, the RPC call may not require the password whereas a similar action in the GUI does require it. 
 This difference is because the RPC call can use the clear text wallet file, which does not require the password to access. 
@@ -656,6 +656,32 @@ _payincoinjoin_ only registers a payment, so if coinjoin is not running or the a
 
 Registered payments can be removed by using the _cancelpaymentincoinjoin_ method.
 Queued payments are also removed if the Wasabi client restarts.
+
+
+### listpaymentsincoinjoin
+
+Lists current payincoinjoin's.
+
+```bash
+curl -s --data-binary '{"jsonrpc":"2.0", "id":"1", "method":"listpaymentsincoinjoin", "params":[]}' http://127.0.0.1:37128/WalletName | jq
+{
+  "jsonrpc": "2.0",
+  "result": [
+    {
+      "id": "820fea44-309c-4dd0-bb4a-3532b59e59e7",
+      "amount": 1000,
+      "destination": "0014e8a697d89525cecc4497cb8a7acae6e2067e873c",
+      "state": [
+        {
+          "status": "Pending"
+        }
+      ],
+      "address": "tb1qaznf0ky4yh8vc3yhew984jhxugr8apeu7wa98d"
+    }
+  ],
+  "id": "1"
+}
+```
 
 ### startcoinjoinsweep
 
