@@ -648,19 +648,19 @@ The _result_ is the paymentId.
 
 A _payincoinjoin_ is written to the logs and it's status can be seen by using the _listpaymentsincoinjoin_ method.
 
-Payments in coinjoin can in theory be made to any ScriptPubKey, however the _payincoinjoin_ method currently only accepts a valid native SegWit bitcoin address.
+Payments in coinjoin can in theory be made to any ScriptPubKey, however the zkSNACKs coordinator currently only accepts P2WPKH and P2TR outputs.
 
 Currently the default maximum is 4 payments per client per coinjoin.
 
 _payincoinjoin_ only registers a payment, so if coinjoin is not running or the amount is lower than the wallet balance, the payment is queued.
 
-Registered payments can be removed by using the _cancelpaymentincoinjoin_ method.
-Queued payments are also removed if the Wasabi client restarts.
+Pending payments can be removed by using the _cancelpaymentincoinjoin_ method.
+Pending payments are also removed if the Wasabi client restarts.
 
 
 ### listpaymentsincoinjoin
 
-Lists current payincoinjoin's.
+Lists current payincoinjoin('s).
 
 ```bash
 curl -s --data-binary '{"jsonrpc":"2.0", "id":"1", "method":"listpaymentsincoinjoin", "params":[]}' http://127.0.0.1:37128/WalletName | jq
@@ -668,8 +668,8 @@ curl -s --data-binary '{"jsonrpc":"2.0", "id":"1", "method":"listpaymentsincoinj
   "jsonrpc": "2.0",
   "result": [
     {
-      "id": "820fea44-309c-4dd0-bb4a-3532b59e59e7",
-      "amount": 1000,
+      "id": "65c21ec1-9865-4cd6-bd67-c2f058a45d24",
+      "amount": 10000,
       "destination": "0014e8a697d89525cecc4497cb8a7acae6e2067e873c",
       "state": [
         {
@@ -688,18 +688,20 @@ curl -s --data-binary '{"jsonrpc":"2.0", "id":"1", "method":"listpaymentsincoinj
 Cancel a _paymentincoinjoin_.
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0", "id":"1", "method":"cancelpaymentincoinjoin", "params":["41a5bfb3-3bce-42ed-9ecb-16d5cc5e93ec"]}' http://127.0.0.1:37128/WalletName | jq
+curl -s --data-binary '{"jsonrpc":"2.0", "id":"1", "method":"cancelpaymentincoinjoin", "params":["65c21ec1-9865-4cd6-bd67-c2f058a45d24"]}' http://127.0.0.1:37128/WalletName | jq
 {
   "jsonrpc": "2.0"
   "id": "1"
 }
 ```
 
-The parameter is the paymentId of the scheduled payment to be cancelled.
+The parameter is the paymentId of the pending payment to be cancelled.
 
 It is written to the log when a payment is cancelled.
 
 A payment can only be cancelled if it is not participating in a coinjoin.
+
+Pending payments are automatically cancelled when the Wasabi client restarts.
 
 ### startcoinjoinsweep
 
