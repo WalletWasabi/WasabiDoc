@@ -61,7 +61,7 @@ curl -s --data-binary "{ \"jsonrpc\":\"2.0\",\"id\":\"1\",\"method\":\"getwallet
 
 ## Available methods
 
-The current version handles the following methods: `getstatus`, `createwallet`, `listcoins`, `listunspentcoins`, `getwalletinfo`, `getnewaddress`, `send`, `broadcast`, `gethistory`, `listkeys`, `startcoinjoin`, `startcoinjoinsweep`, `stopcoinjoin` and `stop`.
+The current version handles the following methods: `getstatus`, `createwallet`, `listcoins`, `listunspentcoins`, `getwalletinfo`, `getnewaddress`, `send`, `broadcast`, `gethistory`, `listkeys`, `startcoinjoin`, `payincoinjoin`, `startcoinjoinsweep`, `stopcoinjoin` and `stop`.
 
 For certain methods, the RPC call may not require the password whereas a similar action in the GUI does require it. 
 This difference is because the RPC call can use the clear text wallet file, which does not require the password to access. 
@@ -629,6 +629,33 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"startcoinjoin", "para
 ```
 
 The first parameter is the wallet password, the second parameter is `stopWhenAllMixed`, and the third one is`overridePlebStop`.
+
+### payincoinjoin
+
+Pay to a bitcoin address in a coinjoin.
+
+```bash
+curl -s --data-binary '{"jsonrpc":"2.0", "id":"1", "method":"payincoinjoin", "params":["tb1qaznf0ky4yh8vc3yhew984jhxugr8apeu7wa98d", 10000]}' http://127.0.0.1:37128/WalletName | jq
+{
+  "jsonrpc": "2.0",
+  "result": "65c21ec1-9865-4cd6-bd67-c2f058a45d24",
+  "id": "1"
+}
+```
+
+The first parameter is the destination address, the second parameter is the amount in sats.
+The _result_ is the paymentId.
+
+A _payincoinjoin_ is written to the logs and it's status can be seen by using the _listpaymentsincoinjoin_ method.
+
+Payments in coinjoin can in theory be made to any ScriptPubKey, however the _payincoinjoin_ method currently only accepts a valid native SegWit bitcoin address.
+
+Currently the default maximum is 4 payments per client per coinjoin.
+
+_payincoinjoin_ only registers a payment, so if coinjoin is not running or the amount is lower than the wallet balance, the payment is queued.
+
+Registered payments can be removed by using the _cancelpaymentincoinjoin_ method.
+Queued payments are also removed if the Wasabi client restarts.
 
 ### startcoinjoinsweep
 
