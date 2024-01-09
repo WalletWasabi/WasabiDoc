@@ -61,7 +61,7 @@ curl -s --data-binary "{ \"jsonrpc\":\"2.0\",\"id\":\"1\",\"method\":\"getwallet
 
 ## Available methods
 
-The current version handles the following methods: `getstatus`, `createwallet`, `listcoins`, `listunspentcoins`, `getwalletinfo`, `getnewaddress`, `send`, `broadcast`, `gethistory`, `listkeys`, `startcoinjoin`, `startcoinjoinsweep`, `stopcoinjoin` and `stop`.
+The current version handles the following methods: `getstatus`, `createwallet`, `listcoins`, `listunspentcoins`, `getwalletinfo`, `getnewaddress`, `send`, `broadcast`, `gethistory`, `getfeerates` `listkeys`, `startcoinjoin`, `startcoinjoinsweep`, `stopcoinjoin` and `stop`.
 
 For certain methods, the RPC call may not require the password whereas a similar action in the GUI does require it. 
 This difference is because the RPC call can use the clear text wallet file, which does not require the password to access. 
@@ -542,6 +542,28 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"gethistory"}' http:/1
       "islikelycoinjoin": "false"
     },
 ```
+
+### getfeerates
+
+Returns current fee rates for certain block confirmation targets.
+
+```bash
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getfeerates"}' http://127.0.0.1:37128/ | jq
+```
+
+```json
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "2": 50,
+    "144": 37,
+    "432": 32
+  },
+  "id": "1"
+}
+```
+
+In this case the block targets are _2_, _144_ and _432_ and their corresponding fee rates in sat/vB, according to bitcoind's _smart fee_ algorithm.
 
 ### listkeys
 
