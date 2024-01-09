@@ -764,6 +764,8 @@ Here's a great explanation about it:
 
 The minimum amount of bitcoin per coinjoin round is 0.00005000 BTC (5000 sats) + mining fees.
 
+> The minimum amount can be higher than 5000 sats when mining fees are relatively high, to not create uneconomical outputs.
+
 ### What is the maximum amount I can coinjoin?
 
 The maximum possible amount is 43000 BTC per coin per coinjoin round.
