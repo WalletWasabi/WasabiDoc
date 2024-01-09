@@ -346,11 +346,26 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getwalletinfo"}' http
     "walletName": "WalletName",
     "walletFile": "/home/user/.walletwasabi/client/Wallets/WalletName.json",
     "State": "Started",
-    "extendedAccountPublicKey": "tpubDCd1v6acjNY3uUqAtBGC6oBTGrCBWphMvkWjAqM2SFZahZb91JUTXZeZqxzscezR16XHkwi1723qo94EKgR75aoFaahnaHiiLP2JrrTh2Rk",
-    "extendedAccountZpub": "vpub5YarnXR6ijVdw6G5mGhrUhf5bnodeCDJYtszFVW7LL3vr5HyRmJF8zfTZWzv6LjLPukmeR11ebWhLPLVVRjqbfyknJZdiwRWCyJcKeDdsC8",
-    "accountKeyPath": "m/84'/0'/0'",
-    "masterKeyFingerprint": "323ec8d9",
-    "balance": 0
+    "masterKeyFingerprint": "0b946bac",
+    "anonScoreTarget": 5,
+    "isWatchOnly": false,
+    "isHardwareWallet": false,
+    "isAutoCoinjoin": true,
+    "isRedCoinIsolation": false,
+    "accounts": [
+      {
+        "name": "segwit",
+        "publicKey": "tpubDCpc4bh9QGicUMskHuXhwxdxDJPEs73f3YbTAoU1EqhJmHjKWpRg8gwrurvpmUDywNLbLQTu2aY9US3W4AV8uyrP2np9gTLtyZrtZ5VuHzr",
+        "keyPath": "m/84'/0'/0'"
+      },
+      {
+        "name": "taproot",
+        "publicKey": "tpubDCqNm3Xmaju7SZk2vfa8kfDC4iNuwSbRNjVfqkCdg4dHu63fyNpHhUNAtcehRnKVrzU7ZgaFqkmHZGVVgFphYL3B3BBNxqVN7NbD33PcXUv",
+        "keyPath": "m/86'/0'/0'"
+      }
+    ],
+    "balance": 0,
+    "coinjoinStatus": "Idle"
   },
   "id": "1"
 }
