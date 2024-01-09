@@ -61,7 +61,7 @@ curl -s --data-binary "{ \"jsonrpc\":\"2.0\",\"id\":\"1\",\"method\":\"getwallet
 
 ## Available methods
 
-The current version handles the following methods: `getstatus`, `createwallet`, `listcoins`, `listunspentcoins`, `getwalletinfo`, `getnewaddress`, `send`, `broadcast`, `speeduptransaction`, `gethistory`, `listkeys`, `startcoinjoin`, `startcoinjoinsweep`, `stopcoinjoin` and `stop`.
+The current version handles the following methods: `getstatus`, `createwallet`, `listcoins`, `listunspentcoins`, `getwalletinfo`, `getnewaddress`, `send`, `broadcast`, `speeduptransaction`, `canceltransaction`, `gethistory`, `listkeys`, `startcoinjoin`, `startcoinjoinsweep`, `stopcoinjoin` and `stop`.
 
 For certain methods, the RPC call may not require the password whereas a similar action in the GUI does require it. 
 This difference is because the RPC call can use the clear text wallet file, which does not require the password to access. 
@@ -525,6 +525,24 @@ curl -s --data-binary '{"jsonrpc":"2.0", "id":"1", "method":"speeduptransaction"
 The first parameter is the transaction ID of the transaction to be accelerated, the second parameter is the wallet password.
 
 It does not automatically broadcast the new transaction, so it still needs to be (manually) broadcasted.
+
+### canceltransaction
+
+Cancels a transaction and returns the transaction hex, ready for broadcast.
+It is similar to the _speeduptransaction_ method, except that it will create a transaction back to the wallet.
+The transaction is not automatically broadcasted.
+
+```bash
+curl -s --data-binary '{"jsonrpc":"2.0", "id":"1", "method":"canceltransaction", "params":["ab83d9d0b2a9873b8ab0dc48b618098f3e7fbd807e27a10f789e9bc330ca89f7", "UserPassword"]}' http://127.0.0.1:37128/WalletName | jq
+```
+
+```json
+{
+  "jsonrpc": "2.0",
+  "result": "01000000000101b3fbe6e2435caa1d6e6198b1ecbedf1c7b940ef6a439a52ce8719e83d9a1fdcd0000000000fdffffff02cfc40300000000002251203ad2f2cf18af791235fbc634333e30becbf7a3d566f9b2cbf36960d68d6e95f5983a000000000000160014449042dbc08a878636500c67703cc787418613b70247304402206cf8fd02465b77b189cb752c15e8baf69c5de7a1e1c9b27380227fc21b55ffa7022059533d0046e6a6b58bc6ff4be297d02773651849e6ba40f2dec31a98b9fa7863012103d626df6a18ed29d4c7e80199f7f183bd4949f6c8073463c81f3802b57f9546d000000000",
+  "id": "1"
+}
+```
 
 ### gethistory
 
