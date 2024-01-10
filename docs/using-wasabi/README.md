@@ -50,3 +50,4 @@ Further tutorials about the different parts of the wallet, for newbies and power
 - [PayJoin](/using-wasabi/PayJoin.md)
 - [Testnet](/using-wasabi/Testnet.md)
 - [Supported BIPs](/using-wasabi/BIPs.md)
+- [Startup parameters](/using-wasabi/StartupParameters.md)

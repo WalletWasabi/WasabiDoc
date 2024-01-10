@@ -188,7 +188,8 @@ export default {
                     "/using-wasabi/RPC.md",
                     "/using-wasabi/PayJoin.md",
                     "/using-wasabi/Testnet.md",
-                    "/using-wasabi/BIPs.md"
+                    "/using-wasabi/BIPs.md",
+                    "/using-wasabi/StartupParameters.md"
                 ]
             }],
 
