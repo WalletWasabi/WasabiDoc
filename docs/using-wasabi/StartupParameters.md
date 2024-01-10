@@ -11,9 +11,12 @@
 
 ## Available commands
 
+It is possible to start Wasabi with specific parameters.
+The parameters override the configurations in the configuration file.
+
 When entering the commands on the command line, they are capital letter insensitive.
 
-These parameters work for both the GUI and the [Daemon](/using-wasabi/Daemon.md).
+The parameters work for both the GUI and the [Daemon](/using-wasabi/Daemon.md).
 
 ### Config file configurations
 
