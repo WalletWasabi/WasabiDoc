@@ -94,6 +94,12 @@ Read more: [What is a CoinJoin?](/FAQ/FAQ-Introduction.md#what-is-a-coinjoin)
 A _Coinjoin Strategy_ contains instructions for the automatic "coinjoin robot" about configurations like when and how much to coinjoin.
 Read more: [Coinjoin Strategy](/Using-Wasabi/CoinJoin.md#coinjoin-strategy)
 
+### Coinjoin Time Preference
+
+The wallet will only participate in coinjoin when the fee rate is below the median of the chosen time frame (Hours, Days, Weeks, or Months).
+
+(_FeeRateMedianTimeFrameHours_ in the wallet file)
+
 ### CoinJoined coins
 
 Coins that have successfully participated in a CoinJoin (with the exception of the change) and thus lose their association to a previous cluster.
