@@ -1505,3 +1505,10 @@ Or open a new Lightning Network node (not your main Lightning node), create a ch
 :::tip
 For more information, see this [dedicated chapter](/using-wasabi/ChangeCoins.md).
 :::
+
+## Music Box
+
+### What does `Awaiting cheaper coinjoins` mean?
+
+This message is displayed when Wasabi is waiting to participate in coinjoin(s) due to the _Coinjoin time preference_.
+I.e. current coinjoin(s) are not below the median of the time frame.
