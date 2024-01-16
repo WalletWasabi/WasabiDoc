@@ -1530,3 +1530,11 @@ This message is displayed when some coins cannot coinjoin, for example when they
 If an input has failed to sign during a previous round it registered to, it will be [temporarily banned](/FAQ/FAQ-UseWasabi.md#why-do-my-coins-occasionally-get-banned-from-participating-in-coinjoin) to prevent denial of service attacks.
 Coinjoin coordinators may also reject funds for risk management purposes.
 You can view the ban time at the `Wallet Coins` dialog via the search bar or with the keyboard shortcut “CTRL + C + D”.
+
+## Advanced Usage
+
+### Can I change the default Tor port?
+
+Yes. 
+Since Wasabi version [2.0.6](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v2.0.6) it is possible to specify the Tor SOCKS5 Port and Tor Control Port.
+This can be done by specifying the port(s) at startup with the [startup parameters](/using-wasabi/StartupParameters.md#non-config-file-configurations).
