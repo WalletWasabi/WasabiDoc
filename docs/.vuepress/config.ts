@@ -184,12 +184,12 @@ export default {
                 collapsable: false,
                 sidebarDepth: 2,
                 children: [
+                    "/using-wasabi/StartupParameters.md",
                     "/using-wasabi/Daemon.md",
                     "/using-wasabi/RPC.md",
                     "/using-wasabi/PayJoin.md",
                     "/using-wasabi/Testnet.md",
-                    "/using-wasabi/BIPs.md",
-                    "/using-wasabi/StartupParameters.md"
+                    "/using-wasabi/BIPs.md"
                 ]
             }],
 

@@ -44,10 +44,10 @@ Further tutorials about the different parts of the wallet, for newbies and power
 - [Wasabi Setup using Virtual Machines](/using-wasabi/WasabiSetupVM.md)
 
 ### Advanced Using Wasabi
+- [Startup parameters](/using-wasabi/StartupParameters.md)
 - [Headless Wasabi Daemon](/using-wasabi/Daemon.md)
 - [RPC Interface](/using-wasabi/RPC.md)
 - [Discreet Mode](/using-wasabi/DiscreetMode.md)
 - [PayJoin](/using-wasabi/PayJoin.md)
 - [Testnet](/using-wasabi/Testnet.md)
 - [Supported BIPs](/using-wasabi/BIPs.md)
-- [Startup parameters](/using-wasabi/StartupParameters.md)
