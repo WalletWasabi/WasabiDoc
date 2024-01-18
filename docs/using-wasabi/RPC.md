@@ -382,23 +382,10 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getnewaddress","param
   "jsonrpc": "2.0",
   "result": {
     "address": "tb1qdskc4y529ayqkqrddknnhdjqwnqc9wzl8940pn",
-    "keyPath": "84'/0'/0'/0/30",
+    "keyPath": "84'/1'/0'/0/30",
     "label": ["Alice", "Daniel"],
     "publicKey": "0263ea6712e56277bcb07b14b61c30bae2267ec10e0bbf7a024d2c6a0634d6e634",
-    "p2wpkh": "00146c2d8a928a2f480b006d6da73bb64074c182b85f"
-  },
-  "id": "1"
-}
-```
-
-In case there is no wallet open it will return:
-
-```json
-{
-  "jsonrpc": "2.0",
-  "error": {
-    "code": -32603,
-    "message": "There is no wallet loaded."
+    "scriptPubKey": "00146c2d8a928a2f480b006d6da73bb64074c182b85f"
   },
   "id": "1"
 }
