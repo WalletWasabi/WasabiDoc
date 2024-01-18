@@ -391,19 +391,6 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getnewaddress","param
 }
 ```
 
-In case there is no wallet open it will return:
-
-```json
-{
-  "jsonrpc": "2.0",
-  "error": {
-    "code": -32603,
-    "message": "There is no wallet loaded."
-  },
-  "id": "1"
-}
-```
-
 In case an empty label is provided:
 
 ```json
