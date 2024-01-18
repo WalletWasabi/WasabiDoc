@@ -555,31 +555,34 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"listkeys"}' http://12
   "jsonrpc": "2.0",
   "result": [
     {
-      "fullKeyPath": "84'/0'/0'/0/1",
-      "internal": false,
-      "keyState": 1,
-      "label": "Adam",
-      "p2wpkhScript": "0 09f4ef9a012844a875222fb08fba86219d181b63",
-      "pubkey": "03d02d5985dd48880edccc992b6d77584e7b68ad9b099b8e33d60a703ac0cbded7",
-      "pubKeyHash": "09f4ef9a012844a875222fb08fba86219d181b63"
-    },
-    {
-      "fullKeyPath": "84'/0'/0'/0/2",
-      "internal": false,
-      "keyState": 1,
-      "label": "Valeria",
-      "p2wpkhScript": "0 cceac198896736d15281b499dea4d49687d2ccf5",
-      "pubkey": "0203741debe056d1513940f36d0b16a49185c1780ac8f5b91e713d5a66fbc84025",
-      "pubKeyHash": "cceac198896736d15281b499dea4d49687d2ccf5"
-    },
-    {
-      "fullKeyPath": "84'/0'/0'/1/2",
+      "fullKeyPath": "84'/1'/0'/1/0",
       "internal": true,
-      "keyState": 1,
+      "keyState": 2,
+      "label": "Adam",
+      "scriptPubKey": "0 9d71708d966c8900e40f5563aab93d5394c2cca5",
+      "pubkey": "031606b4c6a8651726020af23cbd014c39695171444effd799ba00c41e2b37aad6",
+      "pubKeyHash": "9d71708d966c8900e40f5563aab93d5394c2cca5",
+      "address": "tb1qn4chprvkdjyspeq024364wfa2w2v9n99ucent4"
+    },
+    {
+      "fullKeyPath": "84'/1'/0'/0/0",
+      "internal": false,
+      "keyState": 0,
+      "label": "Valeria",
+      "scriptPubKey": "0 952bae5f20dc6d0ca8a5b92b3aeafef46ac7c52c",
+      "pubkey": "038131d9917592ef142bad9db15d2d96ff4562f83105a50abbcc53362b8e1dffa6",
+      "pubKeyHash": "952bae5f20dc6d0ca8a5b92b3aeafef46ac7c52c",
+      "address": "tb1qj546uheqm3kse299hy4n46h7734v03fvdpz3wv"
+    },
+    {
+      "fullKeyPath": "86'/1'/0'/1/0",
+      "internal": true,
+      "keyState": 2,
       "label": "Bernardo",
-      "p2wpkhScript": "0 7242d77e2da9d3474190e465ed50f6b30b3cf2e9",
-      "pubkey": "03f31132f80ebdf480ad2aaf15631e9b643734ab78701012ba621b113c23ecab26",
-      "pubKeyHash": "7242d77e2da9d3474190e465ed50f6b30b3cf2e9"
+      "scriptPubKey": "1 760064fb5ca04f897ae1ab962fb722b3e2c1cb876d891f15ded89372d5ed80f0",
+      "pubkey": "030548856287d8da7e02f3ec79d2d77cb91c6271d2bb5cd316370b6f798ae24347",
+      "pubKeyHash": "6fdd4e1578612eaa6c3cac493244fc3536ae1169",
+      "address": "tb1pwcqxf76u5p8cj7hp4wtzldezk03vrju8dky379w7mzfh940dsrcql6v8zr"
     }
   ],
   "id": "1"
