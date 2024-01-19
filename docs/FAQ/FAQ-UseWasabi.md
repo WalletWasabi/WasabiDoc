@@ -1510,3 +1510,23 @@ Or open a new Lightning Network node (not your main Lightning node), create a ch
 :::tip
 For more information, see this [dedicated chapter](/using-wasabi/ChangeCoins.md).
 :::
+
+## Music Box
+
+### What does `Awaiting cheaper coinjoins` mean?
+
+It means your wallet is waiting to participate in a cheaper coinjoin round(s) because the fee rate of the current coinjoin(s) is higher than the median of the selected [Coinjoin time preference](/glossary/Glossary-PrivacyWasabi.md#coinjoin-time-preference).
+
+### What does `Awaiting the blame round` mean?
+
+If some other participant disrupted the round by failing to sign the coinjoin transaction, this message briefly appears before a new coinjoin, known as the [blame round](/using-wasabi/CoinJoin.md#blame-round), is created with the responsive participants from the failed round.
+
+### What does `Insufficient funds eligible for coinjoin` mean?
+
+This message is displayed when some coins cannot coinjoin, for example when they are unconfirmed or below the [minimum coinjoin amount](/FAQ/FAQ-UseWasabi.md#what-is-the-minimum-amount-required-to-coinjoin).
+
+### What does `Some funds are rejected from coinjoining` mean?
+
+If an input has failed to sign during a previous round it registered to, it will be [temporarily banned](/FAQ/FAQ-UseWasabi.md#why-do-my-coins-occasionally-get-banned-from-participating-in-coinjoin) to prevent denial of service attacks.
+Coinjoin coordinators may also reject funds for risk management purposes.
+You can view the ban time at the `Wallet Coins` dialog via the search bar or with the keyboard shortcut “CTRL + C + D”.
