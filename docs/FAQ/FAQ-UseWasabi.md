@@ -1530,3 +1530,12 @@ This message is displayed when some coins cannot coinjoin, for example when they
 If an input has failed to sign during a previous round it registered to, it will be [temporarily banned](/FAQ/FAQ-UseWasabi.md#why-do-my-coins-occasionally-get-banned-from-participating-in-coinjoin) to prevent denial of service attacks.
 Coinjoin coordinators may also reject funds for risk management purposes.
 You can view the ban time at the `Wallet Coins` dialog via the search bar or with the keyboard shortcut “CTRL + C + D”.
+
+## Buy Anything Button
+
+### What is the Buy Anything Button?
+
+Since Wasabi version 2.0.5 the Buy Anything Button got added.
+This button can be used to buy things with Bitcoin.
+The button is an integration with [Shopinbit](https://shopinbit.com/), who are offering their services, now available with an easy click within Wasabi.
+It's called the _Buy Anything Button_ because Shopinbit offers a wide variety of services, like a consierge service and travel booking service.
