@@ -51,7 +51,7 @@ wassabeed
 
 ### If building from source code
 
-Open the terminal, navigate to the WalletWasabi.Daemon directory (inside the cloned repository) and execute the desired commands.
+Open the terminal, navigate to the _WalletWasabi.Daemon_ directory (inside the cloned repository) and execute the desired commands.
 
 ```bash
 $ dotnet run
