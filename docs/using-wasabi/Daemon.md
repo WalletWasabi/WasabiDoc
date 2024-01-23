@@ -32,21 +32,21 @@ Depending on your operating system, open the command line and execute:
 #### Linux
 
 ```bash
-wassabeed --wallet=WalletName --jsonrpcserverenabled=true
+wassabeed
 ```
 
 #### macOS
 
 ```bash
 cd /Applications/Wasabi\ Wallet.app/Contents/MacOs
-./wassabeed --wallet=WalletName --jsonrpcserverenabled=true
+./wassabeed
 ```
 
 #### Windows
 
 ```bash
 cd C:\Program Files\WasabiWallet
-wassabeed --wallet=WalletName --jsonrpcserverenabled=true
+wassabeed
 ```
 
 ### If building from source code
@@ -54,7 +54,7 @@ wassabeed --wallet=WalletName --jsonrpcserverenabled=true
 Open the terminal, navigate to the WalletWasabi.Daemon directory (inside the cloned repository) and execute the desired commands.
 
 ```bash
-$ dotnet run --wallet=WalletName --jsonrpcserverenabled=true
+$ dotnet run
 ```
 
 ## Examples
