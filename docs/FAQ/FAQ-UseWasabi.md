@@ -1535,32 +1535,33 @@ You can view the ban time at the `Wallet Coins` dialog via the search bar or wit
 
 ### What is the Buy Anything Button?
 
-Since Wasabi version 2.0.5 the Buy Anything Button got added.
-This button can be used to buy things with Bitcoin.
-The button is an integration with [Shopinbit](https://shopinbit.com/), who are offering their services, now available with an easy click within Wasabi.
-It's called the _Buy Anything Button_ because Shopinbit offers a wide variety of services, like a consierge service and travel booking service.
+The Buy Anything button was introduced in Wasabi version 2.0.5 which can be used to make purchases directly with Bitcoin.
+The button is an integration using [Shopinbit's](https://shopinbit.com/) premium concierge service and travel booking services which are now conveniently accessible from your wallet.
+You can _Buy Anything_ because ShopinBit has a team of experts that handle your customized orders, whether it's electronics, cars, flights, or hotels.
+There is currently a $1,000 minimum purchase limit for this service.
 
 ### How does the Buy Anything Button work?
 
-When clicking on the Buy Anything Button, the user talks with ShopinBit over a new Tor identity (unless Tor is disabled in the Settings).
+When clicking on the Buy Anything Button, the user communicates with ShopinBit over a new Tor identity (unless Tor is disabled in the Settings).
 The user gets asked some questions, like what he wants to buy, and some follow-up questions needed for the order.
 After the details are confirmed in the chat, a bitcoin address gets displayed to pay the invoice.
-Once Shopinbit has received the bitcoin on the address with a confirmation, they will start processing the order.
-This depends on what has been bought, for example a physical product or a holiday.
+Once ShopinBit has received the bitcoin on the address with a confirmation, they will start processing the order.
+The processing time depends on what has been bought. 
+For example, a physical product may take weeks to deliver but a spontaneous travel booking can be arranged within days.
 
 ### Does the Buy Anything Button hurt my privacy?
 
-The Buy Anything Button does not compromise Wasabi Wallet wallet's privacy.
+The Buy Anything Button does not compromise your wallet's privacy.
 Things like the wallet balance and history are still private.
-However, when using the Buy Anything Button and when having provided some personal details like e-mail and shipping address for the order, then Shopinbit is aware of these, the same as when ordering directly from them or any other merchant.
+However, when providing some personal details like e-mail and shipping address for the order, then ShopinBit is aware of these, the same as when ordering directly from them or any other merchant.
 They are aware of this and that's why they ask for the minimal required info possible to complete the order.
-You wallet information is never connected to the information used for ordering something.
+Your wallet information is never connected to the information used for ordering anything.
 
-But of course, make sure to use private coins when sending them (/anyone) your bitcoin!
+But of course, make sure to use private coins when sending them/anyone your bitcoin!
 
 ### What can I order and for whom is this available?
 
 ShopinBit can get you anything that is legal in Poland.
-Some services may or may not be available depending on the jurisdiction you're ordering for.
+Some services may or may not be available depending on the jurisdiction.
 Their Terms and Conditions are displayed and required to be accepted before ordering.
-For (legal) information and questions, please refer to their website https://shopinbit.com/.
+For (legal) information and questions, please refer to the [Shopinbit website](https://shopinbit.com/).
