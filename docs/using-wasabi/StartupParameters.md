@@ -55,3 +55,4 @@ There are a few special switches that are not present in the `Config.json` file 
 | The level of detail used during logging | --loglevel=trace | WASABI-LOGLEVEL=trace |
 | The path to the directory used during runtime | --datadir="$HOME/temp/wasabi-1" | WASABI-DATADIR="$HOME/temp/wasabi-1" |
 | Open wallet "WalletName" | --wallet=WalletName | WASABI--WALLET=WalletName |
+| Expose the RPC as onion service | --rpconionenabled=true | WASABI-RPCONIONENABLED=true |
