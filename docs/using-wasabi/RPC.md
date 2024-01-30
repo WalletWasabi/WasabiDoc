@@ -649,6 +649,60 @@ Stops and exits Wasabi.
 curl -s --data-binary '{"jsonrpc":"2.0", "method":"stop"}' http://127.0.0.1:37128/ | jq
 ```
 
+## Expose RPC Server as onion service
+
+Since Wasabi version [2.0.6](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v2.0.6) the RPC can be exposed as an onion service, which enables remote control.
+
+The RPC Server can be exposed as an onion service by using the _rpconionenabled=true_ start up parameter.
+
+A few other notes:
+- _Tor_ needs to be enabled
+- Anonymous access is not allowed: _jsonrpcuser_ & _jsonrpcpassword_ need to be specified.
+- _RPCOnionEnabled_ is only available as command line switch ([start up parameter](/using-wasabi/StartupParameters.md)) and environment variable, it is not available in the config file.
+- A new onion address is generated at each startup.
+
+The onion service which the RPC server is listening on is being logged at startup and visible using the _getstatus_ RPC method.
+
+To start Wasabi with _rpconionenabled_ enabled:
+
+```bash
+wassabeed --rpconionenabled=true
+```
+
+The onion address is shown in the log:
+`INFO       Global.StartTorProcessManagerAsync (284)        RPC server listening on http://rrdayxv2pngzl3jyal5dfjvl6s4bt4frvo5jj2rgnajz5gyevrm4fvyd.onion/`
+
+The onion service cannot be started in case the _jsonrpcuser_ and/or _jsonrpcpassword_ are not specified and it will log `Anonymous access RPC server cannot be exposed as onion service.`
+You then need to specify them in the config file or add them as command line switches.
+
+
+In the RPC calls, the localhost, jsonrpcuser and jsonrpcpassword need to be specified.
+
+
+### Example
+
+We assume the Tor instance is running on the default port (9050).
+Use Tor as a socks proxy for your client.
+
+```bash
+curl -s --socks5-hostname 127.0.0.1:9050 --user Myjsonrpcuser:Myjsonrpcpassword --data-binary '{"jsonrpc":"2.0","id":"1","method":"listwallets"}' http://rrdayxv2pngzl3jyal5dfjvl6s4bt4frvo5jj2rgnajz5gyevrm4fvyd.onion/ | jq
+```
+
+```json
+{
+  "jsonrpc": "2.0",
+  "result": [
+    {
+      "walletName": "Wallet1"
+    },
+    {
+      "walletName": "Wallet2"
+    }
+  ],
+  "id": "1"
+}
+```
+
 ------
 
 ## Errors
