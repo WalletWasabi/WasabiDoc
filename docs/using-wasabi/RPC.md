@@ -89,6 +89,7 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getstatus"}' http://1
   "jsonrpc": "2.0",
   "result": {
     "torStatus": "Running",
+    "onionService": "Unavailable",
     "backendStatus": "Connected",
     "bestBlockchainHeight": "1517613",
     "bestBlockchainHash": "0000000000000064db138798b6b789910bc7f29546a1ff506734dc7bb5780b28",
