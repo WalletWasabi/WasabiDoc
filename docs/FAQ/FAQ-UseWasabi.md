@@ -522,8 +522,9 @@ In this case you have to wait until your transaction is confirmed in a block, an
 
 ### Can I export all my receive addresses?
 
-Wasabi doesn't provide a way to export all generated addresses, however all addresses (used and unused) are listed by using the [listkeys RPC](/using-wasabi/RPC.md#listkeys).
-It is not possible to view previsously used addresses in the GUI, as here only [unused addresses are shown](/FAQ/FAQ-UseWasabi.md#where-can-i-find-previously-generated-addresses).
+Wasabi doesn't provide a way to export all generated addresses (used and unused), however they are listed by using the [listkeys](/using-wasabi/RPC.md#listkeys) RPC command.
+
+It is not possible to view previsously used addresses in the GUI, as here only [unused addresses](/FAQ/FAQ-UseWasabi.md#where-can-i-find-previously-generated-addresses) are shown.
 
 ## Send
 
