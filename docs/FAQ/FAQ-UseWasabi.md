@@ -1530,3 +1530,38 @@ This message is displayed when some coins cannot coinjoin, for example when they
 If an input has failed to sign during a previous round it registered to, it will be [temporarily banned](/FAQ/FAQ-UseWasabi.md#why-do-my-coins-occasionally-get-banned-from-participating-in-coinjoin) to prevent denial of service attacks.
 Coinjoin coordinators may also reject funds for risk management purposes.
 You can view the ban time at the `Wallet Coins` dialog via the search bar or with the keyboard shortcut “CTRL + C + D”.
+
+## Buy Anything Button
+
+### What is the Buy Anything Button?
+
+The Buy Anything button was introduced in Wasabi version 2.0.5 which can be used to make purchases directly with Bitcoin.
+The button is an integration using [Shopinbit's](https://shopinbit.com/) premium concierge service and travel booking services which are now conveniently accessible from your wallet.
+You can _Buy Anything_ because ShopinBit has a team of experts that handle your customized orders, whether it's electronics, cars, flights, or hotels.
+There is currently a $1,000 minimum purchase limit for this service.
+
+### How does the Buy Anything Button work?
+
+When clicking on the Buy Anything Button, the user communicates with ShopinBit over a new Tor identity (unless Tor is disabled in the Settings).
+The user gets asked some questions, like what he wants to buy, and some follow-up questions needed for the order.
+After the details are confirmed in the chat, a bitcoin address gets displayed to pay the invoice.
+Once ShopinBit has received the bitcoin on the address with a confirmation, they will start processing the order.
+The processing time depends on what has been bought. 
+For example, a physical product may take weeks to deliver but a spontaneous travel booking can be arranged within days.
+
+### Does the Buy Anything Button hurt my privacy?
+
+The Buy Anything Button does not compromise your wallet's privacy.
+Things like the wallet balance and history are still private.
+However, when providing some personal details like e-mail and shipping address for the order, then ShopinBit is aware of these, the same as when ordering directly from them or any other merchant.
+They are aware of this and that's why they ask for the minimal required info possible to complete the order.
+Your wallet information is never connected to the information used for ordering anything.
+
+But of course, make sure to use private coins when sending them/anyone your bitcoin!
+
+### What can I order and for whom is this available?
+
+ShopinBit can get you anything that is legal in Poland.
+Some services may or may not be available depending on the jurisdiction.
+Their Terms and Conditions are displayed and required to be accepted before ordering.
+For (legal) information and questions, please refer to the [Shopinbit website](https://shopinbit.com/).
