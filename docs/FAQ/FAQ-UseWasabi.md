@@ -236,7 +236,7 @@ It also shows some information about the current coinjoin round.
 ### Does Wasabi support Taproot?
 
 Wasabi supports Taproot.
-However, it is currently not possible to generate a Taproot addresses in the GUI.
+However, it is currently not possible to generate a Taproot address in the GUI.
 
 > While the user cannot generate a Taproot address in the GUI, his wallet might have Taproot coins (from coinjoin, or change output from a single user transaction).
 
