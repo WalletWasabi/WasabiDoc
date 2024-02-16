@@ -3,7 +3,7 @@ import { viteBundler } from '@vuepress/bundler-vite'
 import { defineUserConfig } from 'vuepress'
 import defaultTheme from '@vuepress/theme-default'
 import slugify from '@vuepress/shared-utils'
-import { searchProPlugin } from "vuepress-plugin-search-pro";
+import searchPlugin from '@vuepress/plugin-search'
 import palettePlugin from '@vuepress/plugin-palette'
 
 
@@ -267,11 +267,15 @@ export default defineUserConfig({
                 }
             }
         }],
-        searchProPlugin({
-          indexContent: true,
-          autoSuggestions: false,
-          searchDelay: 500,
-          sortStrategy: 'total' // 'max' or 'total'
+        searchPlugin({
+            // getExtraFields: (page) => page.frontmatter.tags,
+            maxSuggestions: 15,
+            hotKeys: ['s', '/'],
+            locales: {
+                '/': {
+                    placeholder: 'Search...',
+                }
+            }
         }),
         palettePlugin({
           preset: 'sass'
