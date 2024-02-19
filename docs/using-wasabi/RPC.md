@@ -622,6 +622,11 @@ The first parameter is the wallet password, the second parameter is `stopWhenAll
 
 ### startcoinjoinsweep
 
+Sweeps (empties) the wallet by sending the coins in coinjoin to the destination wallet.
+It works the same as normal coinjoin, except that the outputs are sent to (internal addresses of) the destination wallet.
+
+> This is not a proper _coinjoin to other wallet_ implementation, but supposed to be used to empty a wallet.
+
 ```bash
 curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"startcoinjoinsweep", "params":["UserPassword", "OutputWalletName"]}' http://127.0.0.1:37128/WalletName | jq
 {
