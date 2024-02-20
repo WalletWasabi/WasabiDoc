@@ -969,6 +969,8 @@ However, as the coordinator cannot enforce this, a custom client could use a dif
 No, that is currently not possible.
 The automatic coinjoin robot registers the coins, based on multiple factors.
 
+However it is possible to manually exclude specific coins from coinjoin, by using the [excludefromcoinjoin RPC](/using-wasabi/RPC.html#excludefromcoinjoin) or by manually adding the utxo (vout) to the PrisonedCoins.json file in the data folder.
+
 :::tip
 You can enable the [red coin isolation](/FAQ/FAQ-UseWasabi.md#what-does-the-red-coin-isolation-mean-in-the-coinjoin-settings) setting, in case you want to prevent possible input heuristics (from outside observers) of anonscore 1 coins into the same coinjoin round.
 :::
