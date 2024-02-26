@@ -235,12 +235,9 @@ It also shows some information about the current coinjoin round.
 
 ### Does Wasabi support Taproot?
 
-Partially, Wasabi supports:
-- sending to Taproot (bech32m) address format
-- receiving Taproot outputs from a coinjoin
-- change from a normal transaction is always received to a Taproot address
+Wasabi supports Taproot, except that the user cannot generate Taproot addresses.
 
-However, generating a Taproot receive address is not yet supported.
+> While the user cannot generate a Taproot address in the GUI, his wallet might have Taproot coins (from coinjoin, or change output from a single user transaction).
 
 ## Synchronization
 
@@ -520,6 +517,12 @@ So when you have Wasabi running, you will be notified about an incoming receivin
 But when Wasabi is offline, it does not listen to the network and it will not know about your unconfirmed transaction when you next launch Wasabi.
 In this case you have to wait until your transaction is confirmed in a block, and based on the [BIP 158 block filters](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki), Wasabi will download that whole block including your transaction from a random P2P node.
 
+### Can I export all my receive addresses?
+
+Wasabi doesn't provide a way to export all generated addresses (used and unused), however they are listed by using the [listkeys](/using-wasabi/RPC.md#listkeys) RPC command.
+
+It is not possible to view previsously used addresses in the GUI, as here only [unused addresses](/FAQ/FAQ-UseWasabi.md#where-can-i-find-previously-generated-addresses) are shown.
+
 ## Send
 
 ### How do I set a destination address?
@@ -691,6 +694,10 @@ Read more [here](/using-wasabi/Send.md#speed-up-or-cancel-transaction).
 
 > The _Speed Up Transaction_ tool is not available for coinjoins, or when using a hardware wallet.
 
+:::warning
+Wasabi currently doesn't take into account if the transaction contains unconfirmed coinjoin outputs and that the speeding up will have little to no effect.
+:::
+
 ### How can I cancel a pending/unconfirmed transaction?
 
 A pending (unconfirmed) transaction can be cancelled by using the _Cancel Transaction_ feature which will send a new transaction with a higher fee rate to replace the current one.
@@ -763,6 +770,9 @@ Here's a great explanation about it:
 ### What is the minimum amount required to coinjoin?
 
 The minimum amount of bitcoin per coinjoin round is 0.00005000 BTC (5000 sats) + mining fees.
+
+> The minimum amount can be higher than 5000 sats when mining fees are relatively high, to not create uneconomical outputs.
+The minimum amount for the current coinjoin round(s) is displayed on the https://stats.wasabiwallet.io/ page at the _Coinjoin main net lobbies_ section. (The _Min input amount_ excludes the additionally required mining fee)
 
 ### What is the maximum amount I can coinjoin?
 
@@ -1503,3 +1513,58 @@ Or open a new Lightning Network node (not your main Lightning node), create a ch
 :::tip
 For more information, see this [dedicated chapter](/using-wasabi/ChangeCoins.md).
 :::
+
+## Music Box
+
+### What does `Awaiting cheaper coinjoins` mean?
+
+It means your wallet is waiting to participate in a cheaper coinjoin round(s) because the fee rate of the current coinjoin(s) is higher than the median of the selected [Coinjoin time preference](/glossary/Glossary-PrivacyWasabi.md#coinjoin-time-preference).
+
+### What does `Awaiting the blame round` mean?
+
+If some other participant disrupted the round by failing to sign the coinjoin transaction, this message briefly appears before a new coinjoin, known as the [blame round](/using-wasabi/CoinJoin.md#blame-round), is created with the responsive participants from the failed round.
+
+### What does `Insufficient funds eligible for coinjoin` mean?
+
+This message is displayed when some coins cannot coinjoin, for example when they are unconfirmed or below the [minimum coinjoin amount](/FAQ/FAQ-UseWasabi.md#what-is-the-minimum-amount-required-to-coinjoin).
+
+### What does `Some funds are rejected from coinjoining` mean?
+
+If an input has failed to sign during a previous round it registered to, it will be [temporarily banned](/FAQ/FAQ-UseWasabi.md#why-do-my-coins-occasionally-get-banned-from-participating-in-coinjoin) to prevent denial of service attacks.
+Coinjoin coordinators may also reject funds for risk management purposes.
+You can view the ban time at the `Wallet Coins` dialog via the search bar or with the keyboard shortcut “CTRL + C + D”.
+
+## Buy Anything Button
+
+### What is the Buy Anything Button?
+
+The Buy Anything button was introduced in Wasabi version 2.0.5 which can be used to make purchases directly with Bitcoin.
+The button is an integration using [Shopinbit's](https://shopinbit.com/) premium concierge service and travel booking services which are now conveniently accessible from your wallet.
+You can _Buy Anything_ because ShopinBit has a team of experts that handle your customized orders, whether it's electronics, cars, flights, or hotels.
+There is currently a $1,000 minimum purchase limit for this service.
+
+### How does the Buy Anything Button work?
+
+When clicking on the Buy Anything Button, the user communicates with ShopinBit over a new Tor identity (unless Tor is disabled in the Settings).
+The user gets asked some questions, like what he wants to buy, and some follow-up questions needed for the order.
+After the details are confirmed in the chat, a bitcoin address gets displayed to pay the invoice.
+Once ShopinBit has received the bitcoin on the address with a confirmation, they will start processing the order.
+The processing time depends on what has been bought. 
+For example, a physical product may take weeks to deliver but a spontaneous travel booking can be arranged within days.
+
+### Does the Buy Anything Button hurt my privacy?
+
+The Buy Anything Button does not compromise your wallet's privacy.
+Things like the wallet balance and history are still private.
+However, when providing some personal details like e-mail and shipping address for the order, then ShopinBit is aware of these, the same as when ordering directly from them or any other merchant.
+They are aware of this and that's why they ask for the minimal required info possible to complete the order.
+Your wallet information is never connected to the information used for ordering anything.
+
+But of course, make sure to use private coins when sending them/anyone your bitcoin!
+
+### What can I order and for whom is this available?
+
+ShopinBit can get you anything that is legal in Poland.
+Some services may or may not be available depending on the jurisdiction.
+Their Terms and Conditions are displayed and required to be accepted before ordering.
+For (legal) information and questions, please refer to the [Shopinbit website](https://shopinbit.com/).
