@@ -31,6 +31,11 @@ The anonymity set is effectively the size of the group you are hiding in during 
 It's the quantity of equal value outputs of one CoinJoin transaction.
 Read more: [What is the anonymity set?](/FAQ/FAQ-UseWasabi.md#what-is-the-anonymity-set)
 
+### Auto-start coinjoin (Pleb Stop) threshold
+
+The auto-start coinjoin threshold, a.k.a Pleb Stop, is the minimum wallet balance at which coinjoin will automatically start/continue.
+The amount can be changed in the _Coinjoin Settings_ (_Auto-start coinjoin threshold_ setting), the default is 0.01 BTC.
+
 ### Backend
 
 [The part of a software system that is not usually visible or accessible to a user of that system](https://www.merriam-webster.com/dictionary/back%20end).
@@ -93,6 +98,12 @@ Read more: [What is a CoinJoin?](/FAQ/FAQ-Introduction.md#what-is-a-coinjoin)
 
 A _Coinjoin Strategy_ contains instructions for the automatic "coinjoin robot" about configurations like when and how much to coinjoin.
 Read more: [Coinjoin Strategy](/Using-Wasabi/CoinJoin.md#coinjoin-strategy)
+
+### Coinjoin Time Preference
+
+The wallet will only participate in coinjoin when the fee rate is below the median of the chosen time frame (Hours, Days, Weeks, or Months).
+
+(_FeeRateMedianTimeFrameHours_ in the wallet file)
 
 ### CoinJoined coins
 
