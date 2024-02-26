@@ -41,7 +41,7 @@ JsonRpcPassword: [userpassword] (default: empty)
 By default both `JsonRpcUser` and `JsonRpcPassword` are empty `""`, which means that `Anonymous` requests are allowed.
 On the other hand, if `JsonRpcUser` and `JsonRpcPassword` are not empty it means that the requester has to provide the right credentials, otherwise he will get a http status code 401 (Unauthorized).
 
-It is recommended to install the `jq` [command line json processor](https://stedolan.github.io/jq/) with `sudo apt-get install jq`, and then adding `| jq` at the end of every RPC command to have a structured output.
+It is recommended to install the `jq` [command line json processor](https://jqlang.github.io/jq/) with `sudo apt-get install jq`, and then adding `| jq` at the end of every RPC command to have a structured output.
 
 Then start Wasabi Wallet and load the wallet you want to use.
 Open a new terminal and use the following RPC commands to interact with your wallet, instead of the GUI.
@@ -61,7 +61,7 @@ curl -s --data-binary "{ \"jsonrpc\":\"2.0\",\"id\":\"1\",\"method\":\"getwallet
 
 ## Available methods
 
-The current version handles the following methods: `getstatus`, `createwallet`, `listcoins`, `listunspentcoins`, `getwalletinfo`, `getnewaddress`, `send`, `broadcast`, `gethistory`, `listkeys`, `startcoinjoin`, `startcoinjoinsweep`, `stopcoinjoin`, `buildunsafetransaction` and `stop`.
+The current version handles the following methods: `getstatus`, `createwallet`, `listcoins`, `listunspentcoins`, `getwalletinfo`, `getnewaddress`, `send`, `build`, `broadcast`, `gethistory`, `listkeys`, `startcoinjoin`, `startcoinjoinsweep`, `stopcoinjoin`, `buildunsafetransaction` and `stop`.
 
 For certain methods, the RPC call may not require the password whereas a similar action in the GUI does require it. 
 This difference is because the RPC call can use the clear text wallet file, which does not require the password to access. 
@@ -621,6 +621,11 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"startcoinjoin", "para
 The first parameter is the wallet password, the second parameter is `stopWhenAllMixed`, and the third one is`overridePlebStop`.
 
 ### startcoinjoinsweep
+
+Sweeps (empties) the wallet by sending the coins in coinjoin to the destination wallet.
+It works the same as normal coinjoin, except that the outputs are sent to (internal addresses of) the destination wallet.
+
+> This is not a proper _coinjoin to other wallet_ implementation, but supposed to be used to empty a wallet.
 
 ```bash
 curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"startcoinjoinsweep", "params":["UserPassword", "OutputWalletName"]}' http://127.0.0.1:37128/WalletName | jq

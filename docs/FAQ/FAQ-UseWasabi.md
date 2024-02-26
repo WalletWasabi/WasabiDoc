@@ -235,12 +235,9 @@ It also shows some information about the current coinjoin round.
 
 ### Does Wasabi support Taproot?
 
-Partially, Wasabi supports:
-- sending to Taproot (bech32m) address format
-- receiving Taproot outputs from a coinjoin
-- change from a normal transaction is always received to a Taproot address
+Wasabi supports Taproot, except that the user cannot generate Taproot addresses.
 
-However, generating a Taproot receive address is not yet supported.
+> While the user cannot generate a Taproot address in the GUI, his wallet might have Taproot coins (from coinjoin, or change output from a single user transaction).
 
 ## Synchronization
 
@@ -519,6 +516,12 @@ Based on this information Wasabi builds its own local mempool of unconfirmed tra
 So when you have Wasabi running, you will be notified about an incoming receiving transaction as soon as it is gossiped on the network.
 But when Wasabi is offline, it does not listen to the network and it will not know about your unconfirmed transaction when you next launch Wasabi.
 In this case you have to wait until your transaction is confirmed in a block, and based on the [BIP 158 block filters](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki), Wasabi will download that whole block including your transaction from a random P2P node.
+
+### Can I export all my receive addresses?
+
+Wasabi doesn't provide a way to export all generated addresses (used and unused), however they are listed by using the [listkeys](/using-wasabi/RPC.md#listkeys) RPC command.
+
+It is not possible to view previsously used addresses in the GUI, as here only [unused addresses](/FAQ/FAQ-UseWasabi.md#where-can-i-find-previously-generated-addresses) are shown.
 
 ## Send
 
@@ -1530,3 +1533,38 @@ This message is displayed when some coins cannot coinjoin, for example when they
 If an input has failed to sign during a previous round it registered to, it will be [temporarily banned](/FAQ/FAQ-UseWasabi.md#why-do-my-coins-occasionally-get-banned-from-participating-in-coinjoin) to prevent denial of service attacks.
 Coinjoin coordinators may also reject funds for risk management purposes.
 You can view the ban time at the `Wallet Coins` dialog via the search bar or with the keyboard shortcut “CTRL + C + D”.
+
+## Buy Anything Button
+
+### What is the Buy Anything Button?
+
+The Buy Anything button was introduced in Wasabi version 2.0.5 which can be used to make purchases directly with Bitcoin.
+The button is an integration using [Shopinbit's](https://shopinbit.com/) premium concierge service and travel booking services which are now conveniently accessible from your wallet.
+You can _Buy Anything_ because ShopinBit has a team of experts that handle your customized orders, whether it's electronics, cars, flights, or hotels.
+There is currently a $1,000 minimum purchase limit for this service.
+
+### How does the Buy Anything Button work?
+
+When clicking on the Buy Anything Button, the user communicates with ShopinBit over a new Tor identity (unless Tor is disabled in the Settings).
+The user gets asked some questions, like what he wants to buy, and some follow-up questions needed for the order.
+After the details are confirmed in the chat, a bitcoin address gets displayed to pay the invoice.
+Once ShopinBit has received the bitcoin on the address with a confirmation, they will start processing the order.
+The processing time depends on what has been bought. 
+For example, a physical product may take weeks to deliver but a spontaneous travel booking can be arranged within days.
+
+### Does the Buy Anything Button hurt my privacy?
+
+The Buy Anything Button does not compromise your wallet's privacy.
+Things like the wallet balance and history are still private.
+However, when providing some personal details like e-mail and shipping address for the order, then ShopinBit is aware of these, the same as when ordering directly from them or any other merchant.
+They are aware of this and that's why they ask for the minimal required info possible to complete the order.
+Your wallet information is never connected to the information used for ordering anything.
+
+But of course, make sure to use private coins when sending them/anyone your bitcoin!
+
+### What can I order and for whom is this available?
+
+ShopinBit can get you anything that is legal in Poland.
+Some services may or may not be available depending on the jurisdiction.
+Their Terms and Conditions are displayed and required to be accepted before ordering.
+For (legal) information and questions, please refer to the [Shopinbit website](https://shopinbit.com/).
