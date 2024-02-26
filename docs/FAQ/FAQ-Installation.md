@@ -152,6 +152,9 @@ It's always a good idea to run (one of) the latest Wasabi versions.
 
 In the GUI, go to the SearchBar at the top of the screen and click on `About Wasabi`. 
 Here the current version of your Wasabi is displayed.
+
+You can also verify the version using the command line by executing `wassabeed --version`.
+
 Wasabi is cutting edge software, so it is well-advised to stay up-to-date.
 
 ### How do I know about a new version of Wasabi?
