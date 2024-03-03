@@ -212,6 +212,9 @@ Recovers a wallet using a BIP 39 mnemonic (recovery words).
 
 ```bash
 curl -s --data-binary '{"jsonrpc":"2.0", "id":"1", "method":"recoverwallet", "params":["WalletName", "jazz garment survey smart cricket child pizza reform physical alien envelope lesson", "UserPassword"]}' http://127.0.0.1:37128/ | jq
+```
+
+```json
 {
   "jsonrpc": "2.0",
   "id": "1"
@@ -626,6 +629,9 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"listkeys"}' http://12
 
 ```bash
 curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"startcoinjoin", "params":["UserPassword", "True", "True"]}' http://127.0.0.1:37128/WalletName | jq
+```
+
+```json
 {
   "jsonrpc": "2.0",
   "id": "1"
@@ -640,7 +646,9 @@ Pay to a specific bitcoin address in a coinjoin.
 
 ```bash
 curl -s --data-binary '{"jsonrpc":"2.0", "id":"1", "method":"payincoinjoin", "params":["tb1qaznf0ky4yh8vc3yhew984jhxugr8apeu7wa98d", 10000]}' http://127.0.0.1:37128/WalletName | jq
+```
 
+```json
 {
   "jsonrpc": "2.0",
   "result": "65c21ec1-9865-4cd6-bd67-c2f058a45d24",
@@ -668,7 +676,9 @@ Lists the current payments in coinjoins.
 
 ```bash
 curl -s --data-binary '{"jsonrpc":"2.0", "id":"1", "method":"listpaymentsincoinjoin", "params":[]}' http://127.0.0.1:37128/WalletName | jq
+```
 
+```json
 {
   "jsonrpc": "2.0",
   "result": [
@@ -694,7 +704,9 @@ Cancels a payment in coinjoin.
 
 ```bash
 curl -s --data-binary '{"jsonrpc":"2.0", "id":"1", "method":"cancelpaymentincoinjoin", "params":["65c21ec1-9865-4cd6-bd67-c2f058a45d24"]}' http://127.0.0.1:37128/WalletName | jq
+```
 
+```json
 {
   "jsonrpc": "2.0"
   "id": "1"
@@ -717,6 +729,9 @@ It works the same as normal coinjoin, except that the outputs are sent to (inter
 
 ```bash
 curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"startcoinjoinsweep", "params":["UserPassword", "OutputWalletName"]}' http://127.0.0.1:37128/WalletName | jq
+```
+
+```json
 {
   "jsonrpc": "2.0",
   "id": "1"
@@ -727,6 +742,9 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"startcoinjoinsweep", 
 
 ```bash
 curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"stopcoinjoin"}' http://127.0.0.1:37128/WalletName | jq
+```
+
+```json
 {
   "jsonrpc": "2.0",
   "id": "1"
