@@ -26,6 +26,7 @@ The very first time you run the software the `Add Wallet` dialog will be open au
 
 3. Give the wallet a name.
 This name is not shared with anyone, it is only stored locally on your computer.
+(If there are no wallets then this step is skipped and the new wallet will automatically be named _Wallet_)
 Click `Continue`.
 
 ![Add Wallet Wallet Name](/AddWalletWalletName.png "Add Wallet Wallet Name")
