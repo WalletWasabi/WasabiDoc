@@ -622,10 +622,11 @@ The first parameter is the wallet password, the second parameter is `stopWhenAll
 
 ### payincoinjoin
 
-Pay to a bitcoin address in a coinjoin.
+Pay to a specific bitcoin address in a coinjoin.
 
 ```bash
 curl -s --data-binary '{"jsonrpc":"2.0", "id":"1", "method":"payincoinjoin", "params":["tb1qaznf0ky4yh8vc3yhew984jhxugr8apeu7wa98d", 10000]}' http://127.0.0.1:37128/WalletName | jq
+
 {
   "jsonrpc": "2.0",
   "result": "65c21ec1-9865-4cd6-bd67-c2f058a45d24",
@@ -636,7 +637,7 @@ curl -s --data-binary '{"jsonrpc":"2.0", "id":"1", "method":"payincoinjoin", "pa
 The first parameter is the destination address, the second parameter is the amount in sats.
 The _result_ is the paymentId.
 
-A _payincoinjoin_ is written to the logs and it's status can be seen by using the _listpaymentsincoinjoin_ method.
+A _payincoinjoin_ is written to the logs and its status can be seen by using the _listpaymentsincoinjoin_ method.
 
 Payments in coinjoin can in theory be made to any ScriptPubKey, however the zkSNACKs coordinator currently only accepts P2WPKH and P2TR outputs.
 
@@ -647,13 +648,13 @@ _payincoinjoin_ only registers a payment, so if coinjoin is not running or the a
 Pending payments can be removed by using the _cancelpaymentincoinjoin_ method.
 Pending payments are also removed if the Wasabi client restarts.
 
-
 ### listpaymentsincoinjoin
 
-Lists current payincoinjoin('s).
+Lists the current payments in coinjoins.
 
 ```bash
 curl -s --data-binary '{"jsonrpc":"2.0", "id":"1", "method":"listpaymentsincoinjoin", "params":[]}' http://127.0.0.1:37128/WalletName | jq
+
 {
   "jsonrpc": "2.0",
   "result": [
@@ -675,18 +676,18 @@ curl -s --data-binary '{"jsonrpc":"2.0", "id":"1", "method":"listpaymentsincoinj
 
 ### cancelpaymentincoinjoin
 
-Cancel a _paymentincoinjoin_.
+Cancels a payment in coinjoin.
 
 ```bash
 curl -s --data-binary '{"jsonrpc":"2.0", "id":"1", "method":"cancelpaymentincoinjoin", "params":["65c21ec1-9865-4cd6-bd67-c2f058a45d24"]}' http://127.0.0.1:37128/WalletName | jq
+
 {
   "jsonrpc": "2.0"
   "id": "1"
 }
 ```
 
-The parameter is the paymentId of the pending payment to be cancelled.
-
+The parameter is the paymentId of the pending payment in coinjoin to be cancelled.
 It is written to the log when a payment is cancelled.
 
 A payment can only be cancelled if it is not participating in a coinjoin.
