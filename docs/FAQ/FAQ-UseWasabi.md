@@ -71,7 +71,10 @@ Select one and click `Continue`.
 
 ### Can I rename my Wallet?
 
-Yes, but not in the GUI, you'd need to manually rename the wallet file.
+Yes.
+A wallet can be renamed at the _Wallet Settings_.
+
+Alternatively, the wallet file can be manually renamed by doing the following:
 Type `Wallet Folder` in the search bar at the top of the main view to access the `Wallets` folder and rename the `.json` wallet file.
 Or you can navigate to the `Wallets` folder (inside the [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder)) and rename the `.json` wallet file.
 Then go to `WalletBackups` folder (inside the [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder)) and rename the `.json` wallet file.
@@ -210,12 +213,10 @@ If the coinjoin strategy is changed to one with a different anonnymity score tar
 ### What does the bar with the colored segments mean?
 
 The colored segments make up the `Privacy Bar`.
-The Privacy Bar is supposed to give the user an easy overview of the wallet's coins and it's privacy progress, where each segment represents a coin.
-The color of each segment indicates if that coin is private (dark green), semi-private (light green), or non-private (grey).
+The Privacy Bar is supposed to give the user an easy overview of the wallet's coins and it's privacy progress.
+The color of each segment indicates the private coins (dark green), semi-private coins (light green), or non-private coins (grey).
 
 ![Wasabi Wallet Privacy Bar](/PrivacyBar.png "Wasabi Wallet Privacy Bar")
-
-So according to the image, this wallet has 5 coins of which 1 is private (dark green), 1 is semi-private (light green) and 3 are non-private (grey).
 
 ### How can I display the fee in sats?
 
@@ -1568,3 +1569,11 @@ ShopinBit can get you anything that is legal in Poland.
 Some services may or may not be available depending on the jurisdiction.
 Their Terms and Conditions are displayed and required to be accepted before ordering.
 For (legal) information and questions, please refer to the [Shopinbit website](https://shopinbit.com/).
+
+## Advanced Usage
+
+### Can I change the default ports for the Wasabi's bundled Tor?
+
+Yes. 
+Since Wasabi version [2.0.6](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v2.0.6) it is possible to specify the Tor SOCKS5 and the Tor control ports.
+This can be done by specifying the port(s) at startup with the [startup parameters](/using-wasabi/StartupParameters.md#non-config-file-configurations).
