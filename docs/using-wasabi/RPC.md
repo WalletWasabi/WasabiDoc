@@ -61,7 +61,7 @@ curl -s --data-binary "{ \"jsonrpc\":\"2.0\",\"id\":\"1\",\"method\":\"getwallet
 
 ## Available methods
 
-The current version handles the following methods: `getstatus`, `createwallet`, `recoverwallet`, `listwallets`, `loadwallet`, `listcoins`, `listunspentcoins`, `getwalletinfo`, `getnewaddress`, `send`, `build`, `broadcast`, `gethistory`, `listkeys`, `startcoinjoin`, `payincoinjoin`, `listpaymentsincoinjoin`, `cancelpaymentincoinjoin`, `startcoinjoinsweep`, `stopcoinjoin` and `stop`.
+The current version handles the following methods: `getstatus`, `createwallet`, `recoverwallet`, `listwallets`, `loadwallet`, `listcoins`, `listunspentcoins`, `getwalletinfo`, `getnewaddress`, `send`, `build`, `broadcast`, `gethistory`, `getfeerates`, `listkeys`, `startcoinjoin`, `payincoinjoin`, `listpaymentsincoinjoin`, `cancelpaymentincoinjoin`, `startcoinjoinsweep`, `stopcoinjoin` and `stop`.
 
 For certain methods, the RPC call may not require the password whereas a similar action in the GUI does require it. 
 This difference is because the RPC call can use the clear text wallet file, which does not require the password to access. 
@@ -401,11 +401,26 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getwalletinfo"}' http
     "walletName": "WalletName",
     "walletFile": "/home/user/.walletwasabi/client/Wallets/WalletName.json",
     "State": "Started",
-    "extendedAccountPublicKey": "tpubDCd1v6acjNY3uUqAtBGC6oBTGrCBWphMvkWjAqM2SFZahZb91JUTXZeZqxzscezR16XHkwi1723qo94EKgR75aoFaahnaHiiLP2JrrTh2Rk",
-    "extendedAccountZpub": "vpub5YarnXR6ijVdw6G5mGhrUhf5bnodeCDJYtszFVW7LL3vr5HyRmJF8zfTZWzv6LjLPukmeR11ebWhLPLVVRjqbfyknJZdiwRWCyJcKeDdsC8",
-    "accountKeyPath": "m/84'/0'/0'",
-    "masterKeyFingerprint": "323ec8d9",
-    "balance": 0
+    "masterKeyFingerprint": "0b946bac",
+    "anonScoreTarget": 5,
+    "isWatchOnly": false,
+    "isHardwareWallet": false,
+    "isAutoCoinjoin": true,
+    "isRedCoinIsolation": false,
+    "accounts": [
+      {
+        "name": "segwit",
+        "publicKey": "tpubDCpc4bh9QGicUMskHuXhwxdxDJPEs73f3YbTAoU1EqhJmHjKWpRg8gwrurvpmUDywNLbLQTu2aY9US3W4AV8uyrP2np9gTLtyZrtZ5VuHzr",
+        "keyPath": "m/84'/0'/0'"
+      },
+      {
+        "name": "taproot",
+        "publicKey": "tpubDCqNm3Xmaju7SZk2vfa8kfDC4iNuwSbRNjVfqkCdg4dHu63fyNpHhUNAtcehRnKVrzU7ZgaFqkmHZGVVgFphYL3B3BBNxqVN7NbD33PcXUv",
+        "keyPath": "m/86'/0'/0'"
+      }
+    ],
+    "balance": 0,
+    "coinjoinStatus": "Idle"
   },
   "id": "1"
 }
@@ -584,6 +599,28 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"gethistory"}' http:/1
       "islikelycoinjoin": "false"
     },
 ```
+
+### getfeerates
+
+Returns current fee rates for certain block confirmation targets.
+
+```bash
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getfeerates"}' http://127.0.0.1:37128/ | jq
+```
+
+```json
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "2": 50,
+    "144": 37,
+    "432": 32
+  },
+  "id": "1"
+}
+```
+
+In this case the block targets are _2_, _144_ and _432_ and their corresponding fee rates in sat/vB, according to bitcoind's _smart fee_ algorithm.
 
 ### listkeys
 
