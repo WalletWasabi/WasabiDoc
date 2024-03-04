@@ -1534,14 +1534,6 @@ If an input has failed to sign during a previous round it registered to, it will
 Coinjoin coordinators may also reject funds for risk management purposes.
 You can view the ban time at the `Wallet Coins` dialog via the search bar or with the keyboard shortcut “CTRL + C + D”.
 
-## Advanced Usage
-
-### Can I change the default Tor port?
-
-Yes. 
-Since Wasabi version [2.0.6](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v2.0.6) it is possible to specify the Tor SOCKS5 Port and Tor Control Port.
-This can be done by specifying the port(s) at startup with the [startup parameters](/using-wasabi/StartupParameters.md#non-config-file-configurations).
-
 ## Buy Anything Button
 
 ### What is the Buy Anything Button?
@@ -1576,3 +1568,11 @@ ShopinBit can get you anything that is legal in Poland.
 Some services may or may not be available depending on the jurisdiction.
 Their Terms and Conditions are displayed and required to be accepted before ordering.
 For (legal) information and questions, please refer to the [Shopinbit website](https://shopinbit.com/).
+
+## Advanced Usage
+
+### Can I change the default ports for the Wasabi's bundled Tor?
+
+Yes. 
+Since Wasabi version [2.0.6](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v2.0.6) it is possible to specify the Tor SOCKS5 and the Tor control ports.
+This can be done by specifying the port(s) at startup with the [startup parameters](/using-wasabi/StartupParameters.md#non-config-file-configurations).
