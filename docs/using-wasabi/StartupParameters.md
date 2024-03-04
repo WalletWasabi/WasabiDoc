@@ -18,6 +18,8 @@ When entering the commands on the command line, they are capital letter insensit
 
 The parameters work for both the GUI and the [Daemon](/using-wasabi/Daemon.md).
 
+> Help about the options is available when using the command line by adding `--help` to the executable: _wassabeed --help_ or _dotnet run -- --help_ when building from source.
+
 ### Config file configurations
 
 All configuration options available via the `Config.json` file are also available as command line arguments:
