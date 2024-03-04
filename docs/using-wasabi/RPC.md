@@ -41,7 +41,7 @@ JsonRpcPassword: [userpassword] (default: empty)
 By default both `JsonRpcUser` and `JsonRpcPassword` are empty `""`, which means that `Anonymous` requests are allowed.
 On the other hand, if `JsonRpcUser` and `JsonRpcPassword` are not empty it means that the requester has to provide the right credentials, otherwise he will get a http status code 401 (Unauthorized).
 
-It is recommended to install the `jq` [command line json processor](https://stedolan.github.io/jq/) with `sudo apt-get install jq`, and then adding `| jq` at the end of every RPC command to have a structured output.
+It is recommended to install the `jq` [command line json processor](https://jqlang.github.io/jq/) with `sudo apt-get install jq`, and then adding `| jq` at the end of every RPC command to have a structured output.
 
 Then start Wasabi Wallet and load the wallet you want to use.
 Open a new terminal and use the following RPC commands to interact with your wallet, instead of the GUI.
@@ -61,7 +61,7 @@ curl -s --data-binary "{ \"jsonrpc\":\"2.0\",\"id\":\"1\",\"method\":\"getwallet
 
 ## Available methods
 
-The current version handles the following methods: `getstatus`, `createwallet`, `listcoins`, `listunspentcoins`, `getwalletinfo`, `getnewaddress`, `send`, `build`, `broadcast`, `gethistory`, `listkeys`, `startcoinjoin`, `startcoinjoinsweep`, `stopcoinjoin` and `stop`.
+The current version handles the following methods: `getstatus`, `createwallet`, `recoverwallet`, `listwallets`, `loadwallet`, `listcoins`, `listunspentcoins`, `getwalletinfo`, `getnewaddress`, `send`, `build`, `broadcast`, `gethistory`, `getfeerates`, `listkeys`, `startcoinjoin`, `payincoinjoin`, `listpaymentsincoinjoin`, `cancelpaymentincoinjoin`, `startcoinjoinsweep`, `stopcoinjoin` and `stop`.
 
 For certain methods, the RPC call may not require the password whereas a similar action in the GUI does require it. 
 This difference is because the RPC call can use the clear text wallet file, which does not require the password to access. 
@@ -207,6 +207,61 @@ In case we try to generate a wallet with a too long password it will return:
 }
 ```
 
+### recoverwallet
+
+Recovers a wallet using a BIP 39 mnemonic (recovery words).
+
+```bash
+curl -s --data-binary '{"jsonrpc":"2.0", "id":"1", "method":"recoverwallet", "params":["WalletName", "jazz garment survey smart cricket child pizza reform physical alien envelope lesson", "UserPassword"]}' http://127.0.0.1:37128/ | jq
+```
+
+```json
+{
+  "jsonrpc": "2.0",
+  "id": "1"
+}
+```
+
+The first parameter is the (new) wallet name, the second parameter is the mnemonic (recovery words), the third parameter is an optional passphrase (aka the password in Wasabi).
+
+### listwallets
+
+Lists the wallets.
+
+```bash
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"listwallets"}' http://127.0.0.1:37128/ | jq
+```
+
+```json
+{
+  "jsonrpc": "2.0",
+  "result": [
+    {
+      "walletName": "WalletName1"
+    },
+    {
+      "walletName": "WalletName2"
+    }
+  ],
+  "id": "1"
+}
+```
+
+### loadwallet
+
+Loads a wallet.
+
+```bash
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"loadwallet","params":["WalletName"]}' http://127.0.0.1:37128/ | jq
+```
+
+```json
+{
+  "jsonrpc": "2.0",
+  "id": "1"
+}
+```
+
 ### listcoins
 
 Returns the list of previously spent and currently unspent coins (confirmed and unconfirmed).
@@ -347,11 +402,26 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getwalletinfo"}' http
     "walletName": "WalletName",
     "walletFile": "/home/user/.walletwasabi/client/Wallets/WalletName.json",
     "State": "Started",
-    "extendedAccountPublicKey": "tpubDCd1v6acjNY3uUqAtBGC6oBTGrCBWphMvkWjAqM2SFZahZb91JUTXZeZqxzscezR16XHkwi1723qo94EKgR75aoFaahnaHiiLP2JrrTh2Rk",
-    "extendedAccountZpub": "vpub5YarnXR6ijVdw6G5mGhrUhf5bnodeCDJYtszFVW7LL3vr5HyRmJF8zfTZWzv6LjLPukmeR11ebWhLPLVVRjqbfyknJZdiwRWCyJcKeDdsC8",
-    "accountKeyPath": "m/84'/0'/0'",
-    "masterKeyFingerprint": "323ec8d9",
-    "balance": 0
+    "masterKeyFingerprint": "0b946bac",
+    "anonScoreTarget": 5,
+    "isWatchOnly": false,
+    "isHardwareWallet": false,
+    "isAutoCoinjoin": true,
+    "isRedCoinIsolation": false,
+    "accounts": [
+      {
+        "name": "segwit",
+        "publicKey": "tpubDCpc4bh9QGicUMskHuXhwxdxDJPEs73f3YbTAoU1EqhJmHjKWpRg8gwrurvpmUDywNLbLQTu2aY9US3W4AV8uyrP2np9gTLtyZrtZ5VuHzr",
+        "keyPath": "m/84'/0'/0'"
+      },
+      {
+        "name": "taproot",
+        "publicKey": "tpubDCqNm3Xmaju7SZk2vfa8kfDC4iNuwSbRNjVfqkCdg4dHu63fyNpHhUNAtcehRnKVrzU7ZgaFqkmHZGVVgFphYL3B3BBNxqVN7NbD33PcXUv",
+        "keyPath": "m/86'/0'/0'"
+      }
+    ],
+    "balance": 0,
+    "coinjoinStatus": "Idle"
   },
   "id": "1"
 }
@@ -531,6 +601,28 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"gethistory"}' http:/1
     },
 ```
 
+### getfeerates
+
+Returns current fee rates for certain block confirmation targets.
+
+```bash
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getfeerates"}' http://127.0.0.1:37128/ | jq
+```
+
+```json
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "2": 50,
+    "144": 37,
+    "432": 32
+  },
+  "id": "1"
+}
+```
+
+In this case the block targets are _2_, _144_ and _432_ and their corresponding fee rates in sat/vB, according to bitcoind's _smart fee_ algorithm.
+
 ### listkeys
 
 Returns the list of all the generated keys.
@@ -613,6 +705,9 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"listkeys"}' http://12
 
 ```bash
 curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"startcoinjoin", "params":["UserPassword", "True", "True"]}' http://127.0.0.1:37128/WalletName | jq
+```
+
+```json
 {
   "jsonrpc": "2.0",
   "id": "1"
@@ -621,10 +716,98 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"startcoinjoin", "para
 
 The first parameter is the wallet password, the second parameter is `stopWhenAllMixed`, and the third one is`overridePlebStop`.
 
+### payincoinjoin
+
+Pay to a specific bitcoin address in a coinjoin.
+
+```bash
+curl -s --data-binary '{"jsonrpc":"2.0", "id":"1", "method":"payincoinjoin", "params":["tb1qaznf0ky4yh8vc3yhew984jhxugr8apeu7wa98d", 10000]}' http://127.0.0.1:37128/WalletName | jq
+```
+
+```json
+{
+  "jsonrpc": "2.0",
+  "result": "65c21ec1-9865-4cd6-bd67-c2f058a45d24",
+  "id": "1"
+}
+```
+
+The first parameter is the destination address, the second parameter is the amount in sats.
+The _result_ is the paymentId.
+
+A _payincoinjoin_ is written to the logs and its status can be seen by using the _listpaymentsincoinjoin_ method.
+
+Payments in coinjoin can in theory be made to any ScriptPubKey, however the zkSNACKs coordinator currently only accepts P2WPKH and P2TR outputs.
+
+Currently the default maximum is 4 payments per client per coinjoin.
+
+_payincoinjoin_ only registers a payment, so if coinjoin is not running or the amount is lower than the wallet balance, the payment is queued.
+
+Pending payments can be removed by using the _cancelpaymentincoinjoin_ method.
+Pending payments are also removed if the Wasabi client restarts.
+
+### listpaymentsincoinjoin
+
+Lists the current payments in coinjoins.
+
+```bash
+curl -s --data-binary '{"jsonrpc":"2.0", "id":"1", "method":"listpaymentsincoinjoin", "params":[]}' http://127.0.0.1:37128/WalletName | jq
+```
+
+```json
+{
+  "jsonrpc": "2.0",
+  "result": [
+    {
+      "id": "65c21ec1-9865-4cd6-bd67-c2f058a45d24",
+      "amount": 10000,
+      "destination": "0014e8a697d89525cecc4497cb8a7acae6e2067e873c",
+      "state": [
+        {
+          "status": "Pending"
+        }
+      ],
+      "address": "tb1qaznf0ky4yh8vc3yhew984jhxugr8apeu7wa98d"
+    }
+  ],
+  "id": "1"
+}
+```
+
+### cancelpaymentincoinjoin
+
+Cancels a payment in coinjoin.
+
+```bash
+curl -s --data-binary '{"jsonrpc":"2.0", "id":"1", "method":"cancelpaymentincoinjoin", "params":["65c21ec1-9865-4cd6-bd67-c2f058a45d24"]}' http://127.0.0.1:37128/WalletName | jq
+```
+
+```json
+{
+  "jsonrpc": "2.0"
+  "id": "1"
+}
+```
+
+The parameter is the paymentId of the pending payment in coinjoin to be cancelled.
+It is written to the log when a payment is cancelled.
+
+A payment can only be cancelled if it is not participating in a coinjoin.
+
+Pending payments are automatically cancelled when the Wasabi client restarts.
+
 ### startcoinjoinsweep
+
+Sweeps (empties) the wallet by sending the coins in coinjoin to the destination wallet.
+It works the same as normal coinjoin, except that the outputs are sent to (internal addresses of) the destination wallet.
+
+> This is not a proper _coinjoin to other wallet_ implementation, but supposed to be used to empty a wallet.
 
 ```bash
 curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"startcoinjoinsweep", "params":["UserPassword", "OutputWalletName"]}' http://127.0.0.1:37128/WalletName | jq
+```
+
+```json
 {
   "jsonrpc": "2.0",
   "id": "1"
@@ -635,6 +818,9 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"startcoinjoinsweep", 
 
 ```bash
 curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"stopcoinjoin"}' http://127.0.0.1:37128/WalletName | jq
+```
+
+```json
 {
   "jsonrpc": "2.0",
   "id": "1"

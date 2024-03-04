@@ -1,12 +1,15 @@
 import resolve from 'path'
+import { viteBundler } from '@vuepress/bundler-vite'
+import { defineUserConfig } from 'vuepress'
 import defaultTheme from '@vuepress/theme-default'
 import slugify from '@vuepress/shared-utils'
 import searchPlugin from '@vuepress/plugin-search'
 import palettePlugin from '@vuepress/plugin-palette'
 
+
 const themeColor = "#211b24"
 
-export default {
+export default defineUserConfig({
     title: "Wasabi Docs",
     description: "An archive of knowledge about Wasabi Wallet, an open-source, non-custodial and privacy-focused Bitcoin wallet for desktop.",
     extendsMarkdown: (md) => {
@@ -14,7 +17,7 @@ export default {
         const render = md.renderer.render;
 
         const variables = {
-            currentVersion: '2.0.5',
+            currentVersion: '2.0.6',
             dotnetVersion: '8.0',
             zksnacksPublicKeyFingerprint: '6FB3 872B 5D42 292F 5992 0797 8563 4832 8949 861E'
         }
@@ -29,6 +32,7 @@ export default {
             return modifiedHtml;
         };
     },
+    bundler: viteBundler(),
     theme: defaultTheme({
         logo: "/Logo_without_text_dark.png",
         logoDark: "/Logo_without_text.png",
@@ -184,12 +188,12 @@ export default {
                 collapsable: false,
                 sidebarDepth: 2,
                 children: [
-                    "/using-wasabi/StartupParameters.md",
-                    "/using-wasabi/Daemon.md",
-                    "/using-wasabi/RPC.md",
-		    "/using-wasabi/DiscreetMode.md",
-                    "/using-wasabi/PayJoin.md",
+                    "/using-wasabi/DiscreetMode.md",
                     "/using-wasabi/Testnet.md",
+                    "/using-wasabi/PayJoin.md",
+                    "/using-wasabi/Daemon.md",
+                    "/using-wasabi/StartupParameters.md",
+                    "/using-wasabi/RPC.md",
                     "/using-wasabi/BIPs.md"
                 ]
             }],
@@ -277,4 +281,4 @@ export default {
           preset: 'sass'
         })
     ]
-}
+})

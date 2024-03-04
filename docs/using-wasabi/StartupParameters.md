@@ -18,6 +18,8 @@ When entering the commands on the command line, they are capital letter insensit
 
 The parameters work for both the GUI and the [Daemon](/using-wasabi/Daemon.md).
 
+> Help about the options is available when using the command line by adding `--help` to the executable: _wassabeed --help_ or _dotnet run -- --help_ when building from source.
+
 ### Config file configurations
 
 All configuration options available via the `Config.json` file are also available as command line arguments:
@@ -56,3 +58,5 @@ There are a few special switches that are not present in the `Config.json` file 
 | The path to the directory used during runtime | --datadir="$HOME/temp/wasabi-1" | WASABI-DATADIR="$HOME/temp/wasabi-1" |
 | Open wallet "WalletName" | --wallet=WalletName | WASABI--WALLET=WalletName |
 | Expose the RPC as onion service | --rpconionenabled=true | WASABI-RPCONIONENABLED=true |
+| Tor will listen to this SOCKS5 port | --torsocksport=35000 | WASABI-TORSOCKSPORT=35000 |
+| Tor will listen to this control port | --torcontrolport=35001 | WASABI-TORCONTROLPORT=35001 |
