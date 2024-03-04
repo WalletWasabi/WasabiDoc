@@ -61,7 +61,7 @@ curl -s --data-binary "{ \"jsonrpc\":\"2.0\",\"id\":\"1\",\"method\":\"getwallet
 
 ## Available methods
 
-The current version handles the following methods: `getstatus`, `createwallet`, `recoverwallet`, `listcoins`, `listunspentcoins`, `getwalletinfo`, `getnewaddress`, `send`, `build`, `broadcast`, `gethistory`, `listkeys`, `startcoinjoin`, `payincoinjoin`, `listpaymentsincoinjoin`, `cancelpaymentincoinjoin`, `startcoinjoinsweep`, `stopcoinjoin` and `stop`.
+The current version handles the following methods: `getstatus`, `createwallet`, `recoverwallet`, `listwallets`, `loadwallet`, `listcoins`, `listunspentcoins`, `getwalletinfo`, `getnewaddress`, `send`, `build`, `broadcast`, `gethistory`, `listkeys`, `startcoinjoin`, `payincoinjoin`, `listpaymentsincoinjoin`, `cancelpaymentincoinjoin`, `startcoinjoinsweep`, `stopcoinjoin` and `stop`.
 
 For certain methods, the RPC call may not require the password whereas a similar action in the GUI does require it. 
 This difference is because the RPC call can use the clear text wallet file, which does not require the password to access. 
@@ -222,6 +222,44 @@ curl -s --data-binary '{"jsonrpc":"2.0", "id":"1", "method":"recoverwallet", "pa
 ```
 
 The first parameter is the (new) wallet name, the second parameter is the mnemonic (recovery words), the third parameter is an optional passphrase (aka the password in Wasabi).
+
+### listwallets
+
+Lists the wallets.
+
+```bash
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"listwallets"}' http://127.0.0.1:37128/ | jq
+```
+
+```json
+{
+  "jsonrpc": "2.0",
+  "result": [
+    {
+      "walletName": "WalletName1"
+    },
+    {
+      "walletName": "WalletName2"
+    }
+  ],
+  "id": "1"
+}
+```
+
+### loadwallet
+
+Loads a wallet.
+
+```bash
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"loadwallet","params":["WalletName"]}' http://127.0.0.1:37128/ | jq
+```
+
+```json
+{
+  "jsonrpc": "2.0",
+  "id": "1"
+}
+```
 
 ### listcoins
 
