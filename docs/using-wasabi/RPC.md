@@ -61,7 +61,7 @@ curl -s --data-binary "{ \"jsonrpc\":\"2.0\",\"id\":\"1\",\"method\":\"getwallet
 
 ## Available methods
 
-The current version handles the following methods: `getstatus`, `createwallet`, `recoverwallet`, `listwallets`, `loadwallet`, `listcoins`, `listunspentcoins`, `getwalletinfo`, `getnewaddress`, `send`, `build`, `broadcast`, `gethistory`, `getfeerates`, `listkeys`, `startcoinjoin`, `payincoinjoin`, `listpaymentsincoinjoin`, `cancelpaymentincoinjoin`, `startcoinjoinsweep`, `stopcoinjoin` and `stop`.
+The current version handles the following methods: `getstatus`, `createwallet`, `recoverwallet`, `listwallets`, `loadwallet`, `listcoins`, `listunspentcoins`, `getwalletinfo`, `getnewaddress`, `send`, `build`, `broadcast`, `gethistory`, `getfeerates`, `listkeys`, `excludefromcoinjoin`, `startcoinjoin`, `payincoinjoin`, `listpaymentsincoinjoin`, `cancelpaymentincoinjoin`, `startcoinjoinsweep`, `stopcoinjoin` and `stop`.
 
 For certain methods, the RPC call may not require the password whereas a similar action in the GUI does require it. 
 This difference is because the RPC call can use the clear text wallet file, which does not require the password to access. 
@@ -345,7 +345,8 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"listunspentcoins"}' h
       "confirmations": 6,
       "label": "kyced-exchange",
       "keyPath": "84'/0'/0'/0/616",
-      "address": "tb1qgcng6v7wt03t80x6gh7s2x4rawg9zhenzrek4y"
+      "address": "tb1qgcng6v7wt03t80x6gh7s2x4rawg9zhenzrek4y",
+      "excludedFromCoinjoin": false
     },
     {
       "txid": "06482d847623e096394ecfae58e86e075b7761da493e6eee45a6f2f9c8909582",
@@ -356,7 +357,8 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"listunspentcoins"}' h
       "confirmations": 1,
       "label": "",
       "keyPath": "84'/0'/0'/1/79",
-      "address": "tb1qgfcv3pgj6tvzc5g73l7tps58q30zx8qk3y35uu"
+      "address": "tb1qgfcv3pgj6tvzc5g73l7tps58q30zx8qk3y35uu",
+      "excludedFromCoinjoin": false
     },
     {
       "txid": "aaddc190fe0c2612559b28f9a4a6f4e78906e1794545badccd2fc318257fe2c4",
@@ -367,7 +369,8 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"listunspentcoins"}' h
       "confirmations": 245,
       "label": "Maria, Andrew",
       "keyPath": "84'/0'/0'/0/623",
-      "address": "tb1q2dgj9u3ggjg08hvvhf3l4m3u3ncpdxud8m0yqu"
+      "address": "tb1q2dgj9u3ggjg08hvvhf3l4m3u3ncpdxud8m0yqu",
+      "excludedFromCoinjoin": false
     }
   ],
   "id": "1"
@@ -700,6 +703,26 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"listkeys"}' http://12
 ```bash
 curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"listkeys"}' http://127.0.0.1:37128/WalletName | jq '.result[] | select(.keyState == 1 and .internal == true)'
 ```
+
+### excludefromcoinjoin
+
+Excludes a specific UTXO from participating in coinjoin.
+
+```bash
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"excludefromcoinjoin","params":["7958defd85bb4f34dc66b3323eaa2f4fbdbece35f5e1b2d7b49b461ddc2066ec", "0", true]}' http://127.0.0.1:37128/WalletName | jq
+```
+
+```json
+{
+  "jsonrpc": "2.0",
+  "id": "1"
+}
+```
+
+The first parameter is the transaction ID of the UTXO, the second parameter is the index, the third parameter is whether to exclude (true) or not exclude (false) the coin from coinjoin.
+The exclusion applies until it is reverted (set to false).
+
+_Listunspentcoins_ method can be used to see the wallet's UTXO's and their _excludedfromcoinjoin_ status.
 
 ### startcoinjoin
 
