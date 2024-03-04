@@ -649,16 +649,16 @@ Stops and exits Wasabi.
 curl -s --data-binary '{"jsonrpc":"2.0", "method":"stop"}' http://127.0.0.1:37128/ | jq
 ```
 
-## Expose RPC Server as onion service
+## Expose RPC server as onion service
 
 Since Wasabi version [2.0.6](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v2.0.6) the RPC can be exposed as an onion service, which enables remote control.
 
-The RPC Server can be exposed as an onion service by using the _rpconionenabled=true_ [start up parameter](/using-wasabi/StartupParameters.md) or environment variable.
+The RPC server can be exposed as an onion service by using the _rpconionenabled=true_ [start up parameter](/using-wasabi/StartupParameters.md) or environment variable.
 
 A few notes:
-- _Tor_ needs to be enabled
+- _Tor_ needs to be enabled.
 - Anonymous access is not allowed: _jsonrpcuser_ & _jsonrpcpassword_ need to be specified.
-- _RPCOnionEnabled_ is only available as command line switch (start up parameter) and environment variable, it is not available in the config file.
+- _RPCOnionEnabled_ is only available as a command line switch (start up parameter) and environment variable, it is not available in the config file.
 - A new onion address is generated at each startup.
 
 The onion service which the RPC server is listening on is being logged at startup and visible using the _getstatus_ RPC method.
