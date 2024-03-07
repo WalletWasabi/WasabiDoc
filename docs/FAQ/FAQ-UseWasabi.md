@@ -1577,3 +1577,7 @@ For (legal) information and questions, please refer to the [Shopinbit website](h
 Yes. 
 Since Wasabi version [2.0.6](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v2.0.6) it is possible to specify the Tor SOCKS5 and the Tor control ports.
 This can be done by specifying the port(s) at startup with the [startup parameters](/using-wasabi/StartupParameters.md#non-config-file-configurations).
+
+### Where does the BTC exchange rate come from?
+
+Wasabi fetches the BTC/USD exchange rate from one of these exchanges: blockchain.com, Bitstamp, CoinGecko, Coinbase, Gemini and Coingate.
