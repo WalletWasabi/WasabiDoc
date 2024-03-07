@@ -168,6 +168,13 @@ They are literally peers in the network, or in the CoinJoin.
 RPC, or Remote Procedure Call, is an interface to interact with Wasabi Wallet programmatically.
 Read more: [RPC Interface](/using-wasabi/RPC.md)
 
+### Safety coinjoin
+
+Safety coinjoin is a concept for doing an extra coinjoin after a user registers only _anonymity score_ 1 (non-private) coins in their first round.
+
+This was added in Wasabi [2.0.6 version](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v2.0.6) to increase privacy for people who generate a new wallet -> receive a coin -> do one coinjoin -> send all the money out.
+It aims to prevent targeted analysis that compares the value of consolidated coinjoin outputs with the value of one of the coinjoin's inputs.
+
 ### Taint
 
 Taint is equivalent to the 'trail' that a Bitcoin transaction leaves during the course of its journey.
