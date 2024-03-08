@@ -496,6 +496,8 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"send", "params": { "p
 }
 ```
 
+Note that one can set a specific fee rate using the parameter `feeRate` instead of `feeTarget`.
+
 The fees for the transaction will be added on top of the sum of the outputs' amounts.
 If you have three outputs with 0.4, 0.3 and 0.3 BTC, the amount of BTC in the inputs must be at least 0.4+0.3+0.3 + mining fees.
 
@@ -546,6 +548,8 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"build", "params": { "
 ```
 
 The result is the transaction hex, waiting to be broadcast.
+
+Note that one can set a specific fee rate using the parameter `feeRate` instead of `feeTarget`.
 
 ### broadcast
 
@@ -722,7 +726,7 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"excludefromcoinjoin",
 The first parameter is the transaction ID of the UTXO, the second parameter is the index, the third parameter is whether to exclude (true) or not exclude (false) the coin from coinjoin.
 The exclusion applies until it is reverted (set to false).
 
-_Listunspentcoins_ method can be used to see the wallet's UTXO's and their _excludedfromcoinjoin_ status.
+_Listunspentcoins_ method can be used to see the wallet's UTXOs and their _excludedfromcoinjoin_ status.
 
 ### startcoinjoin
 
@@ -853,7 +857,7 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"stopcoinjoin"}' http:
 ### buildunsafetransaction
 
 Builds a transaction.
-With the possibility for the mining fee to be higher than the send amount, which is otherwise not possible in Wasabi.
+With the possibility for the mining fee to be higher than the sent amount, which is otherwise not possible in Wasabi.
 
 ```bash
 curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"buildunsafetransaction", "params": { "payments":[ {"sendto": "tb1qgjgy9k7q32rcvdjsp3nhq0x8saqcvyahhy8up2", "amount": 15000, "label": "David" }, ], "coins":[{"transactionid":"cdfda1d9839e71e82ca539a4f60e947b1cdfbeecb198616e1daa5c43e2e6fbb3", "index":0}], "feeTarget":2, "password": "UserPassword" }}' http://127.0.0.1:37128/WalletName | jq
@@ -868,6 +872,8 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"buildunsafetransactio
 ```
 
 The result is the transaction hex, waiting to be broadcast.
+
+Note that one can set a specific fee rate using the parameter `feeRate` instead of `feeTarget`.
 
 ### stop
 
