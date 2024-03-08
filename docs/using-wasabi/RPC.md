@@ -569,7 +569,7 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"broadcast", "params":
 
 ### speeduptransaction
 
-Builds a transaction with a higher fee rate (or creates a [CPFP](glossary/Glossary-GeneralBitcoin.html#child-pays-for-parent-cpfp) transaction if [RBF](glossary/Glossary-GeneralBitcoin.html#replace-by-fee-rbf) is not possible) and returns its hex, ready for broadcast.
+Builds a transaction with a higher fee rate ([RBF](glossary/Glossary-GeneralBitcoin.html#replace-by-fee-rbf)), or creates a [CPFP](glossary/Glossary-GeneralBitcoin.html#child-pays-for-parent-cpfp) transaction if RBF is not possible, and returns its hex; ready for broadcast.
 
 ```bash
 curl -s --data-binary '{"jsonrpc":"2.0", "id":"1", "method":"speeduptransaction", "params":["ab83d9d0b2a9873b8ab0dc48b618098f3e7fbd807e27a10f789e9bc330ca89f7", "UserPassword"]}' http://127.0.0.1:37128/WalletName | jq
@@ -589,7 +589,7 @@ It does not automatically broadcast the new transaction, so it still needs to be
 
 ### canceltransaction
 
-Builds a transaction with a higher fee rate (or creates a [CPFP](glossary/Glossary-GeneralBitcoin.html#child-pays-for-parent-cpfp) transaction if [RBF](glossary/Glossary-GeneralBitcoin.html#replace-by-fee-rbf) is not possible) and returns its hex, ready for broadcast.
+Builds a transaction with a higher fee rate ([RBF](glossary/Glossary-GeneralBitcoin.html#replace-by-fee-rbf)), or creates a [CPFP](glossary/Glossary-GeneralBitcoin.html#child-pays-for-parent-cpfp) transaction if RBF is not possible, and returns its hex; ready for broadcast.
 It is similar to the _speeduptransaction_ method, except that the transaction sends back the bitcoin to the wallet.
 The transaction is not automatically broadcasted.
 
