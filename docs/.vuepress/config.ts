@@ -19,7 +19,9 @@ export default defineUserConfig({
         const variables = {
             currentVersion: '2.0.6',
             dotnetVersion: '8.0',
-            zksnacksPublicKeyFingerprint: '6FB3 872B 5D42 292F 5992 0797 8563 4832 8949 861E'
+            zksnacksPublicKeyFingerprint: '6FB3 872B 5D42 292F 5992 0797 8563 4832 8949 861E',
+            minInputCountFreshRound: '180',
+            minInputCountBlameRound: '150'
         }
 
         md.renderer.render = (...args) => {
