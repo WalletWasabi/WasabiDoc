@@ -849,7 +849,7 @@ After that, a unique Tor identity will be generated for each input, which will b
 The coordinator now verifies that this input is allowed to register (i.e. there is still room for more inputs, the coin is confirmed, the input proof is valid etc.).
 If all checks are valid, the coordinator creates and sends back the credentials.
 
-Since the goal is to have at least 150 inputs in one round, the [input registration phase](/using-wasabi/CoinJoin.md#input-registration) can fail if too few participants registered in the available time frame.
+Since the goal is to have at least ${minInputCountBlameRound} inputs in one round, the [input registration phase](/using-wasabi/CoinJoin.md#input-registration) can fail if too few participants registered in the available time frame.
 
 ### What is happening in the connection confirmation phase?
 
@@ -1577,3 +1577,8 @@ For (legal) information and questions, please refer to the [Shopinbit website](h
 Yes. 
 Since Wasabi version [2.0.6](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v2.0.6) it is possible to specify the Tor SOCKS5 and the Tor control ports.
 This can be done by specifying the port(s) at startup with the [startup parameters](/using-wasabi/StartupParameters.md#non-config-file-configurations).
+
+### Where does the BTC exchange rate come from?
+
+Wasabi fetches the BTC/USD exchange rate from one of these exchanges: blockchain.com, Bitstamp, CoinGecko, Coinbase, Gemini and Coingate.
+It first tries to fetch the exchange rate from blockchain.com, if that's not possible it will try to fetch it from the next exchange in the listed order (and so on, until success).

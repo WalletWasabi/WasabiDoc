@@ -97,7 +97,7 @@ The Wasabi coordinator now verifies that:
 Only when all these checks are passed, does the coordinator allow this input to be registered.
 The coordinator creates and sends a credential back to Alice, which has the same amount as the input minus fees.
 
-The input registration phase ends when either: the number of registered inputs reaches the maximum, or when the time elapsed and the minimum number of inputs is satisfied.
+The input registration phase ends when either: the number of registered inputs reaches the maximum, or when the time elapsed and the minimum number of inputs (${minInputCountFreshRound}) is satisfied.
 
 ### Connection confirmation
 
@@ -160,8 +160,8 @@ The signing phase ends when the coordinator has received all the valid signature
 When the signing phase fails due to some Alices disrupting the round (failing to sign or send the signature to the coordinator), then the successful Alices will continue into a blame round.
 The blame round will redo the coinjoin phases in order to create a successful coinjoin.
 
-This mecanism also prevents coinjoins from being DDoS-ed because bad actors that are willingly disturbing rounds won't be able to join the blame round.
-The client will keep going to the blame round until there are not enough Alices left to meet the minimum input count of 150.
+This mechanism also prevents coinjoins from being DDoS-ed, because bad actors that are willingly disturbing rounds won't be able to join the blame round.
+The client will keep going to the blame round until there are not enough Alices left to meet the minimum input count of blame rounds (${minInputCountBlameRound}).
 
 The blame round is not a mandatory phase of the coinjoin process.
 It was introduced in order to have a higher coinjoin success rate.
