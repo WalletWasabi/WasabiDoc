@@ -573,8 +573,8 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"broadcast", "params":
 
 ### speeduptransaction
 
-Speeds up a transaction and returns its hex; ready for broadcast.
-It first tries to speed it up using [RBF](glossary/Glossary-GeneralBitcoin.html#replace-by-fee-rbf)), if that is not possible it will do [CPFP](glossary/Glossary-GeneralBitcoin.html#child-pays-for-parent-cpfp).
+Speeds up a transaction and returns the hex of a new transaction; ready for broadcast.
+It first tries to speed it up using [RBF](glossary/Glossary-GeneralBitcoin.html#replace-by-fee-rbf), if that is not possible it will do [CPFP](glossary/Glossary-GeneralBitcoin.html#child-pays-for-parent-cpfp).
 
 ```bash
 curl -s --data-binary '{"jsonrpc":"2.0", "id":"1", "method":"speeduptransaction", "params":["ab83d9d0b2a9873b8ab0dc48b618098f3e7fbd807e27a10f789e9bc330ca89f7", "UserPassword"]}' http://127.0.0.1:37128/WalletName | jq
@@ -590,14 +590,13 @@ curl -s --data-binary '{"jsonrpc":"2.0", "id":"1", "method":"speeduptransaction"
 
 The first parameter is the transaction ID of the transaction to be accelerated, the second parameter is the wallet password.
 
-It does not automatically broadcast the new transaction, so it still needs to be (manually) broadcasted.
+It does not automatically broadcast the new transaction, so it still needs to be manually broadcasted.
 
 ### canceltransaction
 
-Cancels a transaction and returns its hex; ready for broadcast.
-It first tries to use [RBF](glossary/Glossary-GeneralBitcoin.html#replace-by-fee-rbf)), if that is not possible it will do [CPFP](glossary/Glossary-GeneralBitcoin.html#child-pays-for-parent-cpfp).
+Cancels a transaction and returns the hex of a new transaction; ready for broadcast.
+It first tries to use [RBF](glossary/Glossary-GeneralBitcoin.html#replace-by-fee-rbf), if that is not possible it will do [CPFP](glossary/Glossary-GeneralBitcoin.html#child-pays-for-parent-cpfp).
 It is similar to the _speeduptransaction_ method, except that the transaction sends the bitcoin back to the wallet (to an unused internal address).
-The transaction is not automatically broadcasted.
 
 ```bash
 curl -s --data-binary '{"jsonrpc":"2.0", "id":"1", "method":"canceltransaction", "params":["ab83d9d0b2a9873b8ab0dc48b618098f3e7fbd807e27a10f789e9bc330ca89f7", "UserPassword"]}' http://127.0.0.1:37128/WalletName | jq
@@ -610,6 +609,10 @@ curl -s --data-binary '{"jsonrpc":"2.0", "id":"1", "method":"canceltransaction",
   "id": "1"
 }
 ```
+
+The first parameter is the transaction ID of the transaction to be accelerated, the second parameter is the wallet password.
+
+It does not automatically broadcast the new transaction, so it still needs to be manually broadcasted.
 
 ### gethistory
 
