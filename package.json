@@ -36,7 +36,7 @@
     "@vuepress/plugin-palette": "^2.0.0-rc.0",
     "@vuepress/shared-utils": "^1.9.7",
     "ansi-regex": "^6.0.1",
-    "follow-redirects": "^1.15.4",
+    "follow-redirects": "^1.15.6",
     "glob-parent": "^6.0.2",
     "got": "^12.5.0",
     "highlight.js": "^11.9.0",
