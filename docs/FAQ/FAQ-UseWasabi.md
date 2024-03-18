@@ -559,7 +559,7 @@ No. That is currently not possible.
 ### Does Wasabi support sending RBF?
 
 All _send_ transactions signal RBF by default.
-A pending transaction may be bumped (with RBF) by using the [_Speed Up Transaction_ feature](/FAQ/FAQ-UseWasabi.md#how-can-i-speed-up-a-pending-transaction).
+A pending transaction may be bumped (with RBF) by using the [_Speed Up Transaction_ feature](/FAQ/FAQ-UseWasabi.html#how-can-i-speed-up-a-pending-unconfirmed-transaction-cpfp-rbf).
 
 ### Why does Wasabi choose a new random node every time I send a transaction?
 
