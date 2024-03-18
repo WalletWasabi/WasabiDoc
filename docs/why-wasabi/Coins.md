@@ -38,12 +38,14 @@ The default _Send_ workflow uses the auto coin selection algorithm, which is bas
 
 Read more [here](/using-wasabi/Receive.md#the-importance-of-labeling).
 
-### Change avoidance suggestion
+### Privacy suggestions
 
-When sending bitcoin, the transaction might contain change (back to the sender).
-This can have privacy downsides as explained [here](/using-wasabi/ChangeCoins.md#why-change-is-an-issue).
-When sending in Wasabi the user will be shown with an option to avoid change by slightly increasing or decreasing the send amount in order to avoid change (if possible).
-There is a shield icon shown at the _Preview Transaction_ screen at the top right corner which displays the options when hovering over with the cursor.
+When sending bitcoin, the transaction may have (potential) privacy leaks that the user is not aware of.
+The privacy suggestions inform the user about this with warnings, and provide clickable suggestions to improve the transaction (if possible).
+The clickable suggestions make it easy for the user to adjust the transaction to make it (more) private.
+When sending in Wasabi, the user will see the _Privacy Suggestions_ in the shield icon at the top right corner at the _Preview Transaction_ screen, which displays the options when hovering over it with the cursor.
+
+Read more [here](/using-wasabi/Send.md#privacy-suggestions).
 
 ## Heuristics identifying change
 
