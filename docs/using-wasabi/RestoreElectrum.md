@@ -1,48 +1,44 @@
 ---
 {
-  "title": "Restoring Wasabi Wallet in Electrum",
-  "description": "A detailed guide about restoring a wallet created from Wasabi to Electrum. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
+  "title": "Restoring Wasabi Wallet in Sparrow",
+  "description": "A detailed guide about restoring a wallet created from Wasabi to Sparrow. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
 }
 ---
 
-# Restoring Wasabi Wallet in Electrum
+# Restoring Wasabi Wallet in Sparrow
 
 :::danger Potential privacy leak!
 If you do not run your own Electrum server, you will leak all your addresses to random third-party servers, losing anonymity against those entities, so you must make a judgement call by being aware of this.
 
-To gain some privacy by using Electrum you should set up Tor on Network preferences or by installing your own Electrum server via [Electrum Personal Server](https://github.com/chris-belcher/electrum-personal-server), [ElectrumX](https://github.com/kyuupichan/electrumx) or [Electrs](https://github.com/romanz/electrs).
-:::
-
-:::warning Electrum does currently not support Taproot
-As of Wasabi [version 2.0.3](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v2.0.3), users may receive Taproot outputs from coinjoin or as a change output from a normal transaction.
-So when recovering a wallet from Wasabi in Electrum some funds might be missing, as the Taproot (SegWit v1) coins are not shown.
-An other wallet that does support Taproot should be used for recovering Taproot coins.
+To gain some privacy by using Sparrow you should set up Tor on Network preferences or by installing your own Electrum server via [Electrum Personal Server](https://github.com/chris-belcher/electrum-personal-server), [ElectrumX](https://github.com/kyuupichan/electrumx) or [Electrs](https://github.com/romanz/electrs).
 :::
 
 [[toc]]
 
-## Restoring Wasabi Wallet via Electrum GUI
+## Restoring Wasabi Wallet via Sparrow GUI
 
-1. Launch Electrum.
+1. Launch Sparrow.
 
-	If you don't have a wallet created on Electrum it should automatically display an Install Wizard. If it opens your default wallet then go to `File` -> `New/Restore`.
+	Go to `File` -> `New Wallet`.
 
-2. Name your new Electrum wallet.
+2. Name your new Sparrow wallet.
 
-3. Choose `Standard wallet`.
+3. Choose `Single Signature` for the Policy Type and `Native Segwit (P2WPKH)` or  `Taproot (P2TR)` for the Script Type.
 
-4. Choose `I already have a seed`.
+4. Under Keystores, choose `New or Imported Software Wallet`.
 
-5. Type in your seed (recovery words).
+5. Next to Mnenonic Words (BIP39), choose `Use 12 Words`
 
-6. Click the `Options` button, then select `BIP39 seed` and if you created your Wasabi wallet with a password make sure to check `Extend this seed with custom words` and type your password in the `Seed extension` window.
+6. Type in your seed phrase (recovery words).
 
-7. On the `Script type and Derivation path` window, choose `native SegWit (p2wpkh)` or manually insert `m/84'/0'/0'`.
+7. If you created your Wasabi Wallet with a password make sure to check the box next to `Use passphrase?`, then click on `Yes` and type your password in the `passphrase` input field.
 
-8. Increase the gap limit by opening Electrum's `Console` and execute the following commands:
+8. Click on `Create Keystore` to confirm your seed phrase and your passphrase.
 
-	```
-	wallet.change_gap_limit(100)
-	wallet.gap_limit_for_change = 100
-	wallet.synchronize()
-	```
+9. Click on `Import Keystore`, then re-enter your passphrase (Wasabi's password), and click on `OK`.
+
+11. Increase the gap limit by clicking on `Advanced` in the footer, then set the `Gap Limit` to 100. Close the window.
+
+12. Click on Apply to complete the import process. Add a password optionally to lock access to your new wallet.
+
+Your Sparrow Wallet is now ready. Use the sidebar menu to Receive and Send. 
