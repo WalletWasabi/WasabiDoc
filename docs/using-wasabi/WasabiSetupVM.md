@@ -73,6 +73,7 @@ You can disable .NET's telemetry, which is sending some usage information to Mic
 ```sh
 [user@template-wasabi ~]$ export DOTNET_CLI_TELEMETRY_OPTOUT=1
 ```
+
 To make this persistent, add `DOTNET_CLI_TELEMETRY_OPTOUT=1` to the `/etc/environment` file. 
 
 :::
@@ -95,7 +96,7 @@ All these App VMs will be updated when you update `template-wasabi`.
 [user@dom0 ~]$ qvm-create source-wasabi --template template-wasabi --label red
 ```
 
-Ensure the VM has at least 5GB of disk available for the upcoming build (default is 2gb)
+Ensure the VM has at least 5GB of disk available for the upcoming build (default is 2gb).
 
 ### Compile and Run Wasabi
 
