@@ -163,7 +163,7 @@ Bitcoin uses the SHA256 in many parts of the protocol.
 
 The Hierarchical Deterministic key creation and transfer protocol (BIP32), which allows creating child keys from parent keys in a hierarchy.
 
-### Hierarchical Deterministitc (HD) Wallet
+### Hierarchical Deterministic (HD) Wallet
 
 Wallets using the Hierarchical Deterministic Protocol key creation and transfer protocol (BIP32).
 
