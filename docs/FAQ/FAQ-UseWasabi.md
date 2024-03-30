@@ -977,6 +977,10 @@ The automatic coinjoin robot registers the coins, based on multiple factors.
 You can enable the [red coin isolation](/FAQ/FAQ-UseWasabi.md#what-does-the-red-coin-isolation-mean-in-the-coinjoin-settings) setting, in case you want to prevent possible input heuristics (from outside observers) of anonscore 1 coins into the same coinjoin round.
 :::
 
+### How to exclude/freeze coins from coinjoin?
+
+This is currently not possible to do from the GUI, however one can manually exclude specific coins from coinjoin using the [excludefromcoinjoin](/using-wasabi/RPC.html#excludefromcoinjoin) RPC call.
+
 ### How long does it take to make my wallet 100% private?
 
 Depending on many factors, like the `Anonymity score target`, the `coinjoin strategy`, and the amount of bitcoin, it can take from a couple hours to multiple days.
