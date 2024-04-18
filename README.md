@@ -128,7 +128,7 @@ foo
 :::
 ```
 
-A red box with a [clear danger](https://docs.wasabiwallet.io/using-wasabi/RestoreElectrum.html), you can also add a title `foo` to any container:
+A red box with a [clear danger](https://docs.wasabiwallet.io/using-wasabi/ExternalRestore.html), you can also add a title `foo` to any container:
 
 ```
 :::danger foo
