@@ -1090,7 +1090,7 @@ In order to defend against nature destroying fragile paper, you can consider sta
 Use two different backups and locations for the mnemonic and password, because whoever has both [including a physical attacker] has full access to your sats.
 Find a secure physical location to store the backups, maybe a home safe, or an expert security deposit box.
 
-Please see [Backup Best Practices](/using-wasabi/BackupBestPractices.md) for more information about backups.
+Please see [Wasabi Backup Best Practices](/using-wasabi/BackupBestPractices.md) for more information about backups.
 
 ### How do I back up my wallet file?
 
