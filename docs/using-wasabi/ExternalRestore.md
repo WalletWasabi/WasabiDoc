@@ -17,7 +17,7 @@ You should set up Tor on Network preferences, connect to your own node or instal
 
 ## Compatibility List for Segwit Addresses (bc1)
 
-Wasabi uses Script type Native SegWit (P2WPKH) and derivation path m/84'/0'/0' to generate Segwit addresses.
+Wasabi uses script type **Native SegWit (P2WPKH)** and derivation path **m/84'/0'/0'** to generate Segwit addresses.
 
 Wallets generated with Wasabi also require a passphrase.
 
@@ -33,7 +33,7 @@ For a complete list of compatible wallets, see here: https://walletsrecovery.org
 
 ## Compatibility List for Taproot Addresses (bc1p)
 
-Wasabi uses Script type Taproot(P2TR) and derivation path m/86'/0'/0' to generate Taproot addresses.
+Wasabi uses script type **Taproot (P2TR)** and derivation path **m/86'/0'/0'** to generate Taproot addresses.
 
 Wallets generated with Wasabi also require a passphrase.
 
