@@ -90,4 +90,4 @@ There are large quality differences in drives, but I am assuming you aren't usin
 - Trust that the object was not tampered with in delivery
 - Trust that no one has tampered with the object since you got it
 
-These are all the methods you can use for your Wasabi backup and their benefits and tradeoffs. 
+These are the methods you can use for your Wasabi backup and their benefits and tradeoffs. 
