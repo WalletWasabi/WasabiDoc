@@ -10,7 +10,7 @@
 :::danger Potential privacy leak!
 If you do not run your own node or your own Electrum server, you will leak all your addresses to random third-party servers, losing anonymity against those entities, so you must make a judgement call by being aware of this.
 
-You should set up Tor on Network preferences, connect to your own node or install your own Electrum server (if the wallet is compatible) via [Electrum Personal Server](https://github.com/chris-belcher/electrum-personal-server), [ElectrumX](https://github.com/kyuupichan/electrumx) or [Electrs](https://github.com/romanz/electrs).
+You should set up Tor on Network preferences, connect to your own node or install your own Electrum server (if the wallet supports it) via [Electrum Personal Server](https://github.com/chris-belcher/electrum-personal-server), [ElectrumX](https://github.com/kyuupichan/electrumx) or [Electrs](https://github.com/romanz/electrs).
 :::
 
 [[toc]]
