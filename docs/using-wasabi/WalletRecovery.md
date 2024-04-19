@@ -37,7 +37,7 @@ To recover a wallet:
 
 5. Type in the Password.
 
-![Add Wallet Add Password](/AddWalletAddPassword.png "Add Wallet Add Password")
+![Add Wallet Add Password](/AddWalletAddPassphrase.png "Add Wallet Add Password")
 
 Now Wasabi will recover your wallet.
 
