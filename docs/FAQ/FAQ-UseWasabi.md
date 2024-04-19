@@ -53,7 +53,7 @@ Make sure that you properly back up and write down this password.
 
 Confirm the password and click `Continue`.
 
-![Add a password in Wasabi](/AddWalletAddPassword.png "Add a password in Wasabi")
+![Add a password in Wasabi](/AddWalletAddPassphrase.png "Add a password in Wasabi")
 
 :::danger Careful!!
 Without knowledge of the password, you CANNOT spend your bitcoin!!
