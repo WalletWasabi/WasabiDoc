@@ -26,13 +26,14 @@ Optionally, you can specify the dollar amount to send instead.
 
 ![Wasabi Wallet Send Amount Field](/SendAmountField.png "Wasabi Wallet Send Amount Field")
 
-4. Click `Continue`.
-
-![Wasabi Wallet Send](/Send.png "Wasabi Wallet Send")
-
-5.  Label the recipient by entering the name of the person or company who you are sending to.
+4. Label the recipient by entering the name of the person or company who you are sending to.
 
 ![Wasabi Wallet Send Recipient Label](/SendRecipientLabel.png "Wasabi Wallet Send Recipient Label")
+
+
+5. Click `Continue`.
+
+![Wasabi Wallet Send](/Send.png "Wasabi Wallet Send")
 
 6.  Preview Transaction.
     -  Verify the amount, recipient, and the address.
