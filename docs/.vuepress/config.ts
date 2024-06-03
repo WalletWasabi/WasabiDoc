@@ -38,7 +38,7 @@ export default defineUserConfig({
     theme: defaultTheme({
         logo: "/Logo_without_text_dark.png",
         logoDark: "/Logo_without_text.png",
-        docsRepo: 'https://github.com/zkSNACKs/WasabiDoc',
+        docsRepo: 'https://github.com/WalletWasabi/WasabiDoc',
         docsBranch: 'master',
         docsDir: 'docs',
         editLinks: true,

@@ -13,13 +13,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zkSNACKs/WasabiDoc.git"
+    "url": "git+https://github.com/WalletWasabi/WasabiDoc.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/zkSNACKs/WasabiDoc/issues"
+    "url": "https://github.com/WalletWasabi/WasabiDoc/issues"
   },
-  "homepage": "https://github.com/zkSNACKs/WasabiDoc#readme",
+  "homepage": "https://github.com/WalletWasabi/WasabiDoc#readme",
   "devDependencies": {
     "@vuepress/bundler-vite": "^2.0.0-rc.7",
     "@vuepress/plugin-back-to-top": "1.9.7",
