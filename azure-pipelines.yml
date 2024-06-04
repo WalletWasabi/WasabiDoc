@@ -16,6 +16,11 @@ steps:
   inputs:
     versionSpec: '18.x'
   displayName: 'Install Node.js'
+- task: CacheBeta@0
+  inputs:
+    key: $(Build.SourcesDirectory)/package-lock.json
+    path: $(npm_config_cache)
+  displayName: Cache npm
 - script: |
     npm ci
     npm run build
