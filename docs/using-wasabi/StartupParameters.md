@@ -30,8 +30,8 @@ All configuration options available via the `Config.json` file are also availabl
 | "MainNetBackendUri": "https://api.wasabiwallet.io/" | --mainnetbackenduri="https://api.wasabiwallet.io/" | WASABI-MAINNETBACKENDURI="https://api.wasabiwallet.io/"|
 | "TestNetClearnetBackendUri": "https://api.wasabiwallet.co/" | --testnetbackenduri="https://api.wasabiwallet.co/" | WASABI-TESTNETBACKENDURI="https://api.wasabiwallet.co/" |
 | "RegTestBackendUri": "http://localhost:37127/" | --regtestbackenduri="http://localhost:37127/" | WASABI-REGTESTBACKENDURI="http://localhost:37127/" |
-| ""UseTor": ""true" | --usetor=true | WASABI-USETOR=true |
-| "TerminateTorOnExit": ""false" | --terminatetoronexit=false | WASABI-TERMINATETORONEXIT=false |
+| "UseTor": "Enabled" | --usetor=enabled | WASABI-USETOR=enabled |
+| "TerminateTorOnExit": false | --terminatetoronexit=false | WASABI-TERMINATETORONEXIT=false |
 | "TorBridges": "[TorBridge]" | --torbridges="[TorBridge]" | WASABI-TORBRIDGES="[TorBridge]" |
 | "DownloadNewVersion": true | --downloadnewversion=true | WASABI-DOWNLOADNEWVERSION=true |
 | "StartLocalBitcoinCoreOnStartup": false | --startlocalbitcoincoreonstartup=false | WASABI-STARTLOCALBITCOINCOREONSTARTUP=false |
@@ -40,7 +40,7 @@ All configuration options available via the `Config.json` file are also availabl
 | "MainNetBitcoinP2pEndPoint": "127.0.0.1:8333" | --mainnetbitcoinp2pendpoint="127.0.0.1:8333" | WASABI-MAINNETBITCOINP2PENDPOINT="127.0.0.1:8333" |
 | "TestNetBitcoinP2pEndPoint": "127.0.0.1:18333" | --testnetbitcoinp2pendpoint="127.0.0.1:18333" | WASABI-TESTNETBITCOINP2PENDPOINT="127.0.0.1:18333" |
 | "RegTestBitcoinP2pEndPoint": "127.0.0.1:18444" | --regtestbitcoinp2pendpoint="127.0.0.1:18444" | WASABI-REGTESTBITCOINP2PENDPOINT="127.0.0.1:18444" |
-| "JsonRpcServerEnabled": "true" | --jsonrpcserverenabled=true | WASABI-JSONRPCSERVERENABLED=true |
+| "JsonRpcServerEnabled": true | --jsonrpcserverenabled=true | WASABI-JSONRPCSERVERENABLED=true |
 | "JsonRpcUser": "" | --jsonrpcuser="" | WASABI-JSONRPCUSER="" |
 | "JsonRpcPassword": "" | --jsonrpcpassword="" | WASABI-JSONRPCPASSWORD="" |
 | "JsonRpcServerPrefixes":["http://127.0.0.1:37128/", "http://localhost:37128/"] | --jsonrpcserverprefixes=["http://127.0.0.1:37128/", "http://localhost:37128/"] | WASABI-JSONRPCSERVERPREFIXES=["http://127.0.0.1:37128/", "http://localhost:37128/"] |
