@@ -61,3 +61,5 @@ There are a few special switches that are not present in the `Config.json` file 
 | Expose the RPC as onion service | --rpconionenabled=true | WASABI-RPCONIONENABLED=true |
 | Tor will listen to this SOCKS5 port | --torsocksport=35000 | WASABI-TORSOCKSPORT=35000 |
 | Tor will listen to this control port | --torcontrolport=35001 | WASABI-TORCONTROLPORT=35001 |
+| Folder to use where Tor binary is located | --torfolder="$HOME/tor-browser_en-US/Browser/TorBrowser/Tor" | WASABI-TORFOLDER="$HOME/tor-browser_en-US/Browser/TorBrowser/Tor" |
+
