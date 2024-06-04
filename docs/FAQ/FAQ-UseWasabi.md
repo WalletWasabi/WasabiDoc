@@ -782,18 +782,9 @@ If the user has a coin of more than 43000 BTC, then it must be broken down into 
 
 ### What are the fees for the coinjoin?
 
-Coinjoin fees are composed of coordination fees and mining (network) fees.
-Coins (UTXOs) with a value above 0.01 BTC pay 0.3% as a coordination fee + mining fees.
-Coins of 0.01 BTC or below don't pay coordination fees.
-Remixes, even after one transaction, also don't pay coordination fees. 
-Thus, a payment made with coinjoined funds allows the sender and the recipient to remix their coins without paying any coordination fees.
+The coinjoin coordinator sets its own fee policy for the coinjoin service provided.
 
-|  | > 0.01 BTC | 0.01 BTC and less |
-|:---:|:---:|:---:|
-| Fresh input | 0.3% coordination fee + mining fees  | mining fees |
-| Remix* | mining fees | mining fees |
-
-*Remix includes a 1 hop transaction*
+This includes things like the mining fee, the coordination fee, no coordination fee for remixes and/or no coordination fee for UTXO amounts below a threshold etc.
 
 ### What is the anonymity set?
 
