@@ -56,6 +56,7 @@ There are a few special switches that are not present in the `Config.json` file 
 |-------|-------------|---------------------|
 | Ignore P2P transactions | --blockonly=true | WASABI-BLOCKONLY=true |
 | The level of detail used during logging | --loglevel=trace | WASABI-LOGLEVEL=trace |
+| Specify to log only to specific target* | --logmodes=console | WASABI-LOGMODES=console |
 | The path to the directory used during runtime | --datadir="$HOME/temp/wasabi-1" | WASABI-DATADIR="$HOME/temp/wasabi-1" |
 | Open wallet "WalletName" | --wallet=WalletName | WASABI--WALLET=WalletName |
 | Expose the RPC as onion service | --rpconionenabled=true | WASABI-RPCONIONENABLED=true |
@@ -63,3 +64,4 @@ There are a few special switches that are not present in the `Config.json` file 
 | Tor will listen to this control port | --torcontrolport=35001 | WASABI-TORCONTROLPORT=35001 |
 | Folder to use where Tor binary is located | --torfolder="$HOME/tor-browser_en-US/Browser/TorBrowser/Tor" | WASABI-TORFOLDER="$HOME/tor-browser_en-US/Browser/TorBrowser/Tor" |
 
+* Available options are `""` (don't log at all), `"file"` (log only to file), `"console"` (log only to console) and `"file,console"` (log to file and console).
