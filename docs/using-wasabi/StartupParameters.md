@@ -32,6 +32,7 @@ All configuration options available via the `Config.json` file are also availabl
 | "RegTestBackendUri": "http://localhost:37127/" | --regtestbackenduri="http://localhost:37127/" | WASABI-REGTESTBACKENDURI="http://localhost:37127/" |
 | ""UseTor": ""true" | --usetor=true | WASABI-USETOR=true |
 | "TerminateTorOnExit": ""false" | --terminatetoronexit=false | WASABI-TERMINATETORONEXIT=false |
+| "TorBridges": "[TorBridge]" | --torbridges="[TorBridge]" | WASABI-TORBRIDGES="[TorBridge]" |
 | "DownloadNewVersion": true | --downloadnewversion=true | WASABI-DOWNLOADNEWVERSION=true |
 | "StartLocalBitcoinCoreOnStartup": false | --startlocalbitcoincoreonstartup=false | WASABI-STARTLOCALBITCOINCOREONSTARTUP=false |
 | "StopLocalBitcoinCoreOnShutdown": true | --stoplocalbitcoincoreonshutdown=true | WASABI-STOPLOCALBITCOINCOREONSHUTDOWN=true |
