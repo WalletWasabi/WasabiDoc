@@ -1319,7 +1319,7 @@ A coinjoin is a payment within the same wallet, thus it only shows the coordinat
 
 ### Can I sort the history items?
 
-Yes, the history items can be sorted by clicking on the transations sort button:
+Yes, the history items can be sorted by clicking on the transactions sort button:
 
 ![Sort Date Column](/HistorySort.png "Sort History")
 
