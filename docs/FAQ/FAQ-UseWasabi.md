@@ -742,9 +742,9 @@ When sending, the wallet automatically selects the private funds first.
 
 For example:
 
-When `PRIVATE` is 0.01120153 BTC, that means that I can send less than that privately.
+When `PRIVATE` is 0.00338462 BTC, that means I can send less than that privately.
 Even when the `Privacy Progress` is below 100%.
-So when sending, less than 0.01120153 BTC (to cover the mining fees) should be entered as the `Amount` in order to only use the private funds.
+So when sending, less than 0.00338462 BTC (to cover the mining fees) should be entered as the `Amount` in order to only use the private funds.
 
 ![Wasabi Wallet Privacy Progress Tile](/PrivacyProgressTile.png "Wasabi Wallet Privacy Progress Tile")
 
