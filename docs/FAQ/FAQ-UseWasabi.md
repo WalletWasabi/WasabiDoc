@@ -213,8 +213,8 @@ If the coinjoin strategy is changed to one with a different anonnymity score tar
 ### What does the bar with the colored segments mean?
 
 The colored segments make up the `Privacy Bar`.
-The Privacy Bar is supposed to give the user an easy overview of the wallet's coins and it's privacy progress.
-The color of each segment indicates the private coins (dark green), semi-private coins (light green), or non-private coins (grey).
+The Privacy Bar is supposed to give the user an easy overview of the wallet's coins and its privacy progress.
+The color of each segment indicates the private coins (green), semi-private coins (light green), or non-private coins (grey).
 
 ![Wasabi Wallet Privacy Bar](/PrivacyBar.png "Wasabi Wallet Privacy Bar")
 
