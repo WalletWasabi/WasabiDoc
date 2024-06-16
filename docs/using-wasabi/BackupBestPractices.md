@@ -1,7 +1,7 @@
 ---
 {
   "title": "Wasabi Backup Best Practices",
-  "description": "A detailed guide about the best practices of backing up your passwords and recovery words. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
+  "description": "A detailed guide about the best practices of backing up your passphrases and recovery words. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
 }
 ---
 

@@ -38,7 +38,7 @@ In a Bitcoin transaction, the output creates a new unspent transaction output wh
 The input of the transaction spends a UTXO by providing a valid signature of the public key that the address committed to.
 
 :::tip
-Wasabi Wallet does not "store your money", rather it stores your public keys and an encrypted secret that requires your password to derive the private keys.
+Wasabi Wallet does not "store your money", rather it stores your public keys and an encrypted secret that requires your passphrase to derive the private keys.
 It creates addresses for receiving bitcoin, and it signs transactions that spend your bitcoin.
 :::
 

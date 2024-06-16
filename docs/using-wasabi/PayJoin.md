@@ -26,7 +26,7 @@ Enter the label of the recipient.
 
 ![PayJoinPreviewTransaction](/PayJoinPreviewTransaction.png "PayJoin Preview Transaction")
 
-5. Click `Confirm`, and type in the password.
+5. Click `Confirm`, and type in the passphrase.
 
 :::warning The success of a PayJoin transaction is not something that depends on Wasabi.
 It may happen that the transaction is broadcast with success, but that it is not a PayJoin.

@@ -47,19 +47,19 @@ So, confirm the Recovery Words, and click `Continue`.
 
 ![Wasabi Wallet confirm recovery words](/AddWalletConfirmRecoveryWords.png "Wasabi Wallet confirm recovery words")
 
-6. Write a long and random passphrase (password) and **[back it up](/using-wasabi/BackupBestPractices.md)**.
+6. Write a long and random passphrase and **[back it up](/using-wasabi/BackupBestPractices.md)**.
 It encrypts your secrets, and you will need it every time you want to open the wallet, spend bitcoin from this wallet or recover your wallet.
 
 	If you are uncertain about how to create a secure passphrase, refer to [Password Best Practices](/using-wasabi/PasswordBestPractices.md) for helpful information.
 
-	:::danger Back up your password!
+	:::danger Back up your passphrase!
 	Without the passphrase, you cannot spend your bitcoin or recover your wallet, even if you have the recovery words (Seed phrase).
 	So, triple-check that you have a proper backup!
 	:::
 
-7. Confirm the password and click the `Continue` button.
+7. Confirm the passphrase and click the `Continue` button.
 
-![Wasabi Wallet Add Password](/AddWalletAddPassphrase.png "Wasabi Wallet Add Password")
+![Wasabi Wallet Add Passphrase](/AddWalletAddPassphrase.png "Wasabi Wallet Add Passphrase")
 
 8. Select the coinjoin strategy for this wallet and click `Continue`.
 
@@ -73,8 +73,8 @@ It encrypts your secrets, and you will need it every time you want to open the w
 
 Wasabi integrates [BIP 38: Password-Protected Private Key](https://github.com/bitcoin/bips/blob/master/bip-0038.mediawiki), which means that the secrets needed to spend the bitcoin are encrypted on the computer.
 If someone has compromised your operating system and hardware and he only has the encrypted secrets, then no bitcoin can be spent by him.
-You need **both** the encrypted secrets and the password (passphrase) in order to enable the private key which can sign a spending transaction.
-This means that the password is your last line of defense against anyone who tries to steal your bitcoin.
+You need **both** the encrypted secrets and the passphrase in order to enable the private key which can sign a spending transaction.
+This means that the passphrase is your last line of defense against anyone who tries to steal your bitcoin.
 
 ## How are the secrets created
 
@@ -97,9 +97,9 @@ Wasabi uses [BIP 38: Password-Protected Private Key](https://github.com/bitcoin/
                    |  | Seed         |
                    |  +--------------+
                    |         |
-   +-----------+   |         |
-   | Password  +---+  +------v-------+
-   +-----------+   |  | Extended Key |
+  +------------+   |         |
+  | Passphrase +---+  +------v-------+
+  +------------+   |  | Extended Key |
                    |  +--------------+
                    |         |
                    |         |
