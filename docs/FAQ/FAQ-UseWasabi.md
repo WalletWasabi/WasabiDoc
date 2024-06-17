@@ -1059,6 +1059,14 @@ You can send banned coins to anyone you want.
 This is a temporary ban on your coins in participation of the CoinJoin.
 :::
 
+### How do I change the coordinator?
+
+Since Wasabi version [2.0.8](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.0.8), the coordinator can be changed in the GUI in the _Coordinator_ tab in the settings.
+
+Go to settings -> select coordinator tab -> paste/enter the new URI -> restart Wasabi -> Wasabi will now use the new coordinator.
+
+Alternatively, the `MainNetCoordinatorUri` can be changed in the config file.
+
 ## Backup and Recovery
 
 ### How do I back up my mnemonic words?
