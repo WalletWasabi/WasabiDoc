@@ -1063,7 +1063,11 @@ This is a temporary ban on your coins in participation of the CoinJoin.
 
 Since Wasabi version [2.0.8](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.0.8), the coordinator can be changed in the GUI in the _Coordinator_ tab in the settings.
 
-Go to settings -> select coordinator tab -> paste/enter the new URI -> restart Wasabi -> Wasabi will now use the new coordinator.
+Go to settings -> select coordinator tab -> paste/enter the new URI -> restart Wasabi -> Wasabi will now use this coordinator.
+
+![Settings Coordinator URI](/SettingsCoordinatorURI.png "Settings Coordinator URI")
+
+(The displayed (default) coordinator in the image doesn't work.)
 
 Alternatively, the `MainNetCoordinatorUri` can be changed in the config file.
 
