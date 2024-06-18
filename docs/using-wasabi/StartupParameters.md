@@ -47,6 +47,8 @@ All configuration options available via the `Config.json` file are also availabl
 | "DustThreshold": "0.00005" | --dustthreshold=0.00005 | WASABI-DUSTTHRESHOLD=0.00005 |
 | "EnableGpu": true | --enablegpu=true | WASABI-ENABLEGPU=true |
 | "CoordinatorIdentifier": "CoinJoinCoordinatorIdentifier" | --coordinatoridentifier="coinjoincoordinatoridentifier" | WASABI-COORDINATORIDENTIFIER="coinjoincoordinatoridentifier" |
+| "MaxCoordinationFeeRate": 0.0 | --maxcoordinationfeerate=0.0 | WASABI-MAXCOORDINATIONFEERATE=0.0 |
+
 
 ### Non-Config file configurations
 
