@@ -48,7 +48,7 @@ All configuration options available via the `Config.json` file are also availabl
 | "EnableGpu": true | --enablegpu=true | WASABI-ENABLEGPU=true |
 | "CoordinatorIdentifier": "CoinJoinCoordinatorIdentifier" | --coordinatoridentifier="coinjoincoordinatoridentifier" | WASABI-COORDINATORIDENTIFIER="coinjoincoordinatoridentifier" |
 | "MaxCoordinationFeeRate": 0.0 | --maxcoordinationfeerate=0.0 | WASABI-MAXCOORDINATIONFEERATE=0.0 |
-
+| "MaxCoinJoinMiningFeeRate": 150.0 | --maxcoinjoinminingfeerate=150.0 | WASABI-MAXCOINJOINMININGFEERATE=150.0 |
 
 ### Non-Config file configurations
 
