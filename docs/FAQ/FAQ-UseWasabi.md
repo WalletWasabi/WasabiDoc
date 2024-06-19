@@ -89,7 +89,7 @@ To avoid problems, make sure you close Wasabi Wallet before proceeding to rename
 
 ### What is the password used for?
 
-The passphrase/password you set is used:
+The password (named _passphrase_ since Wasabi version [2.0.7](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.0.7) you set is used:
 * As a 13th word (passphrase) as described in [BIP 39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki).
 * To encrypt the private key of the extended private key as described in [BIP 38](https://github.com/bitcoin/bips/blob/master/bip-0038.mediawiki) to get an encrypted secret which is stored on the computer.
 
