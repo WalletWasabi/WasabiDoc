@@ -64,12 +64,11 @@ Notice that it is not yet possible to coinjoin from a hardware wallet, the keys 
 
 ### Fees
 
-A 0.3% coordination fee will be taken from fresh coins bigger than 0.01 BTC.
-Coins less than or equal to 0.01 BTC don't pay coordination fees at all, according to the _PlebsDontPay_ threshold.
+The coinjoin coordinator sets its own fee policy for the coinjoin service provided.
 
-Remixing is free, as well as coinjoining coins 1 hop from a coinjoin, although, Bitcoin mining fees still do apply, as shown in [this table](/FAQ/FAQ-UseWasabi.md#what-are-the-fees-for-the-coinjoin).
-So if you send a coinjoined coin and receive a change output, you will not be charged the coordination fee for this change output.
-The recipient of the payment will not have to pay the coordination fee, as long as he is making coinjoins with the same coordinator.
+Although the coordinator cannot steal money from the coinjoin participants, it could set a high mining and/or coordinator fee. This could make the participating users pay a lot (unnecessarily). To prevent against such behaviour the Wasabi client can configure the maximum mining fee and the maximum coordinator fee it is willing to pay per round. If one of these is higher than the entered maximum, it will not participate in the coinjoin.
+
+![Coinjoin Configurations](/SettingsCoinjoinConfigs.png "Coinjoin Configurations")
 
 ## WabiSabi protocol step-by-step
 
