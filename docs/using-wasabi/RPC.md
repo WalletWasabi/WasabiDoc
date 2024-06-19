@@ -63,9 +63,9 @@ curl -s --data-binary "{ \"jsonrpc\":\"2.0\",\"id\":\"1\",\"method\":\"getwallet
 
 The current version handles the following methods: `getstatus`, `createwallet`, `recoverwallet`, `listwallets`, `loadwallet`, `listcoins`, `listunspentcoins`, `getwalletinfo`, `getnewaddress`, `send`, `build`, `broadcast`, `speeduptransaction`, `canceltransaction`, `gethistory`, `getfeerates`, `listkeys`, `excludefromcoinjoin`, `startcoinjoin`, `payincoinjoin`, `listpaymentsincoinjoin`, `cancelpaymentincoinjoin`, `startcoinjoinsweep`, `stopcoinjoin`, `buildunsafetransaction`, and `stop`.
 
-For certain methods, the RPC call may not require the password whereas a similar action in the GUI does require it. 
-This difference is because the RPC call can use the clear text wallet file, which does not require the password to access. 
-For example, the GUI requires a password to open a wallet (and access certain wallet information), because it uses different logic, such as start coinjoining immediately.
+For certain methods, the RPC call may not require the passphrase whereas a similar action in the GUI does require it. 
+This difference is because the RPC call can use the clear text wallet file, which does not require the passphrase to access. 
+For example, the GUI requires a passphrase to open a wallet (and access certain wallet information), because it uses different logic, such as start coinjoining immediately.
 
 For wallet-specific calls, the wallet name should be specified in the URL path.
 Example:
@@ -157,7 +157,7 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getstatus"}' http://1
 Returns the twelve recovery words of the freshly generated wallet.
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"createwallet","params":["WalletName", "UserPassword"]}' http://127.0.0.1:37128/ | jq
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"createwallet","params":["WalletName", "UserPassphrase"]}' http://127.0.0.1:37128/ | jq
 ```
 
 ```json
@@ -194,14 +194,14 @@ In case we try to generate a wallet with a reserved wallet name it will return:
 }
 ```
 
-In case we try to generate a wallet with a too long password it will return:
+In case we try to generate a wallet with a too long passphrase it will return:
 
 ```json
 {
   "jsonrpc": "2.0",
   "error": {
     "code": -32603,
-    "message": "Password is too long."
+    "message": "Passphrase is too long."
   },
   "id": "1"
 }
@@ -212,7 +212,7 @@ In case we try to generate a wallet with a too long password it will return:
 Recovers a wallet using a BIP 39 mnemonic (recovery words).
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0", "id":"1", "method":"recoverwallet", "params":["WalletName", "jazz garment survey smart cricket child pizza reform physical alien envelope lesson", "UserPassword"]}' http://127.0.0.1:37128/ | jq
+curl -s --data-binary '{"jsonrpc":"2.0", "id":"1", "method":"recoverwallet", "params":["WalletName", "jazz garment survey smart cricket child pizza reform physical alien envelope lesson", "UserPassphrase"]}' http://127.0.0.1:37128/ | jq
 ```
 
 ```json
@@ -222,7 +222,7 @@ curl -s --data-binary '{"jsonrpc":"2.0", "id":"1", "method":"recoverwallet", "pa
 }
 ```
 
-The first parameter is the (new) wallet name, the second parameter is the mnemonic (recovery words), the third parameter is an optional passphrase (aka the password in Wasabi).
+The first parameter is the (new) wallet name, the second parameter is the mnemonic (recovery words), the third parameter is an optional passphrase.
 
 ### listwallets
 
@@ -483,7 +483,7 @@ In case an empty label is provided:
 Builds and broadcasts a transaction.
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"send", "params": { "payments":[ {"sendto": "tb1qgvnht40a08gumw32kp05hs8mny954hp2snhxcz", "amount": 15000, "label": "David" }, {"sendto":"tb1qpyhfrpys6skr2mmnc35p3dp7zlv9ew4k0gn7qm", "amount": 86200, "label": "Michael"} ], "coins":[{"transactionid":"ab83d9d0b2a9873b8ab0dc48b618098f3e7fbd807e27a10f789e9bc330ca89f7", "index":0}], "feeTarget":2, "password": "UserPassword" }}' http://127.0.0.1:37128/WalletName | jq
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"send", "params": { "payments":[ {"sendto": "tb1qgvnht40a08gumw32kp05hs8mny954hp2snhxcz", "amount": 15000, "label": "David" }, {"sendto":"tb1qpyhfrpys6skr2mmnc35p3dp7zlv9ew4k0gn7qm", "amount": 86200, "label": "Michael"} ], "coins":[{"transactionid":"ab83d9d0b2a9873b8ab0dc48b618098f3e7fbd807e27a10f789e9bc330ca89f7", "index":0}], "feeTarget":2, "password": "UserPassphrase" }}' http://127.0.0.1:37128/WalletName | jq
 ```
 
 ```json
@@ -507,13 +507,13 @@ Now the mining fee will be subtracted from the output in which `subtractFee` was
 With this you can send the max amount of the coin, by setting the same value of the input coins for the output address.
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"send", "params": { "payments":[ {"sendto": "tb1qgvnht40a08gumw32kp05hs8mny954hp2snhxcz", "amount": 15000, "label": "David", "subtractFee": true }, {"sendto":"tb1qpyhfrpys6skr2mmnc35p3dp7zlv9ew4k0gn7qm", "amount": 86200, "label": "Michael"} ], "coins":[{"transactionid":"ab83d9d0b2a9873b8ab0dc48b618098f3e7fbd807e27a10f789e9bc330ca89f7", "index":0}], "feeTarget":2, "password": "UserPassword" }}' http://127.0.0.1:37128/WalletName | jq
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"send", "params": { "payments":[ {"sendto": "tb1qgvnht40a08gumw32kp05hs8mny954hp2snhxcz", "amount": 15000, "label": "David", "subtractFee": true }, {"sendto":"tb1qpyhfrpys6skr2mmnc35p3dp7zlv9ew4k0gn7qm", "amount": 86200, "label": "Michael"} ], "coins":[{"transactionid":"ab83d9d0b2a9873b8ab0dc48b618098f3e7fbd807e27a10f789e9bc330ca89f7", "index":0}], "feeTarget":2, "password": "UserPassphrase" }}' http://127.0.0.1:37128/WalletName | jq
 ```
 
 In case of error, it is reported in the json's error object:
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"send", "params": { "payments": [{ "sendto": "tb1qnmfmkylkd548bbbcd9115b322891e27f741eb42c83ed982861ee121", "amount": 2015663, "label": "Mr. Who" }], "coins":[{"transactionid":"c68dacd548bbbcd9115b38ed982861ee121c5ef6e0f1022891e27f741eb42c83", "index":0}], "feeTarget": 2, "password": "UserPassword" }}' http://127.0.0.1:37128/WalletName | jq
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"send", "params": { "payments": [{ "sendto": "tb1qnmfmkylkd548bbbcd9115b322891e27f741eb42c83ed982861ee121", "amount": 2015663, "label": "Mr. Who" }], "coins":[{"transactionid":"c68dacd548bbbcd9115b38ed982861ee121c5ef6e0f1022891e27f741eb42c83", "index":0}], "feeTarget": 2, "password": "UserPassphrase" }}' http://127.0.0.1:37128/WalletName | jq
 ```
 
 ```json
@@ -536,7 +536,7 @@ It is similar to the send method, except that it will not automatically broadcas
 So it is also possible to send to many and to subtract the fee.
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"build", "params": { "payments":[ {"sendto": "tb1qgjgy9k7q32rcvdjsp3nhq0x8saqcvyahhy8up2", "amount": 15000, "label": "David" }, ], "coins":[{"transactionid":"cdfda1d9839e71e82ca539a4f60e947b1cdfbeecb198616e1daa5c43e2e6fbb3", "index":0}], "feeTarget":2, "password": "UserPassword" }}' http://127.0.0.1:37128/WalletName | jq
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"build", "params": { "payments":[ {"sendto": "tb1qgjgy9k7q32rcvdjsp3nhq0x8saqcvyahhy8up2", "amount": 15000, "label": "David" }, ], "coins":[{"transactionid":"cdfda1d9839e71e82ca539a4f60e947b1cdfbeecb198616e1daa5c43e2e6fbb3", "index":0}], "feeTarget":2, "password": "UserPassphrase" }}' http://127.0.0.1:37128/WalletName | jq
 ```
 
 ```json
@@ -577,7 +577,7 @@ Speeds up a transaction and returns the hex of a new transaction; ready for broa
 It first tries to speed it up using [RBF](glossary/Glossary-GeneralBitcoin.html#replace-by-fee-rbf), if that is not possible it will do [CPFP](glossary/Glossary-GeneralBitcoin.html#child-pays-for-parent-cpfp).
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0", "id":"1", "method":"speeduptransaction", "params":["ab83d9d0b2a9873b8ab0dc48b618098f3e7fbd807e27a10f789e9bc330ca89f7", "UserPassword"]}' http://127.0.0.1:37128/WalletName | jq
+curl -s --data-binary '{"jsonrpc":"2.0", "id":"1", "method":"speeduptransaction", "params":["ab83d9d0b2a9873b8ab0dc48b618098f3e7fbd807e27a10f789e9bc330ca89f7", "UserPassphrase"]}' http://127.0.0.1:37128/WalletName | jq
 ```
 
 ```json
@@ -588,7 +588,7 @@ curl -s --data-binary '{"jsonrpc":"2.0", "id":"1", "method":"speeduptransaction"
 }
 ```
 
-The first parameter is the transaction ID of the transaction to be accelerated, the second parameter is the wallet password.
+The first parameter is the transaction ID of the transaction to be accelerated, the second parameter is the wallet passphrase.
 
 It does not automatically broadcast the new transaction, so it still needs to be manually broadcasted.
 
@@ -599,7 +599,7 @@ It first tries to use [RBF](glossary/Glossary-GeneralBitcoin.html#replace-by-fee
 It is similar to the _speeduptransaction_ method, except that the transaction sends the bitcoin back to the wallet (to an unused internal address).
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0", "id":"1", "method":"canceltransaction", "params":["ab83d9d0b2a9873b8ab0dc48b618098f3e7fbd807e27a10f789e9bc330ca89f7", "UserPassword"]}' http://127.0.0.1:37128/WalletName | jq
+curl -s --data-binary '{"jsonrpc":"2.0", "id":"1", "method":"canceltransaction", "params":["ab83d9d0b2a9873b8ab0dc48b618098f3e7fbd807e27a10f789e9bc330ca89f7", "UserPassphrase"]}' http://127.0.0.1:37128/WalletName | jq
 ```
 
 ```json
@@ -610,7 +610,7 @@ curl -s --data-binary '{"jsonrpc":"2.0", "id":"1", "method":"canceltransaction",
 }
 ```
 
-The first parameter is the transaction ID of the transaction to be accelerated, the second parameter is the wallet password.
+The first parameter is the transaction ID of the transaction to be accelerated, the second parameter is the wallet passphrase.
 
 It does not automatically broadcast the new transaction, so it still needs to be manually broadcasted.
 
@@ -774,7 +774,7 @@ _Listunspentcoins_ method can be used to see the wallet's UTXOs and their _exclu
 ### startcoinjoin
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"startcoinjoin", "params":["UserPassword", "True", "True"]}' http://127.0.0.1:37128/WalletName | jq
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"startcoinjoin", "params":["UserPassphrase", "True", "True"]}' http://127.0.0.1:37128/WalletName | jq
 ```
 
 ```json
@@ -784,7 +784,7 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"startcoinjoin", "para
 }
 ```
 
-The first parameter is the wallet password, the second parameter is `stopWhenAllMixed`, and the third one is`overridePlebStop`.
+The first parameter is the wallet passphrase, the second parameter is `stopWhenAllMixed`, and the third one is`overridePlebStop`.
 
 ### payincoinjoin
 
@@ -874,7 +874,7 @@ It works the same as normal coinjoin, except that the outputs are sent to (inter
 > This is not a proper _coinjoin to other wallet_ implementation, but supposed to be used to empty a wallet.
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"startcoinjoinsweep", "params":["UserPassword", "OutputWalletName"]}' http://127.0.0.1:37128/WalletName | jq
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"startcoinjoinsweep", "params":["UserPassphrase", "OutputWalletName"]}' http://127.0.0.1:37128/WalletName | jq
 ```
 
 ```json
@@ -903,7 +903,7 @@ Builds a transaction.
 With the possibility for the mining fee to be higher than the sent amount, which is otherwise not possible in Wasabi.
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"buildunsafetransaction", "params": { "payments":[ {"sendto": "tb1qgjgy9k7q32rcvdjsp3nhq0x8saqcvyahhy8up2", "amount": 15000, "label": "David" }, ], "coins":[{"transactionid":"cdfda1d9839e71e82ca539a4f60e947b1cdfbeecb198616e1daa5c43e2e6fbb3", "index":0}], "feeTarget":2, "password": "UserPassword" }}' http://127.0.0.1:37128/WalletName | jq
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"buildunsafetransaction", "params": { "payments":[ {"sendto": "tb1qgjgy9k7q32rcvdjsp3nhq0x8saqcvyahhy8up2", "amount": 15000, "label": "David" }, ], "coins":[{"transactionid":"cdfda1d9839e71e82ca539a4f60e947b1cdfbeecb198616e1daa5c43e2e6fbb3", "index":0}], "feeTarget":2, "password": "UserPassphrase" }}' http://127.0.0.1:37128/WalletName | jq
 ```
 
 ```json

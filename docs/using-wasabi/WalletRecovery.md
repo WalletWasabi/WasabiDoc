@@ -14,7 +14,7 @@ There are two different ways that you can recover an already used wallet in Wasa
 ## Mnemonic Recovery Words and Password
 
 Wasabi uses the [BIP 39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) mnemonic code for generating [BIP 32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) hierarchical deterministic wallets.
-**Both** your password **and** the generated 12 mnemonic recovery words are the necessary secrets to recover your wallet.
+**Both** your passphrase **and** the generated 12 mnemonic recovery words are the necessary secrets to recover your wallet.
 The recovery words are spell checked based on the [official wordlist](https://github.com/bitcoin/bips/blob/master/bip-0039/english.txt), with the right word shown below the text box.
 
 To recover a wallet:
@@ -35,17 +35,17 @@ To recover a wallet:
 
 ![Wasabi Wallet Recover Wallet](/WalletRecovery.png "Wasabi Wallet Recover Wallet")
 
-5. Type in the Password.
+5. Type in the Passphrase.
 
-![Add Wallet Add Password](/AddWalletAddPassphrase.png "Add Wallet Add Password")
+![Add Wallet Add Passphrase](/AddWalletAddPassphrase.png "Add Wallet Add Passphrase")
 
 Now Wasabi will recover your wallet.
 
 With this, only the private keys are imported, but not the labels of your addresses.
 
 :::danger
-At recovery, Wasabi is unable to check if your password is correct or not.
-If you type a wrong password a completely different wallet will be recovered.
+At recovery, Wasabi is unable to check if your passphrase is correct or not.
+If you type a wrong passphrase a completely different wallet will be recovered.
 :::
 
 You can also use the `Advanced Recovery Options` to specify the gap limit.
@@ -67,5 +67,5 @@ Alternitavely: copy the wallet file to the `Wallets` folder, and upon the next r
 Using this method will also backup your address labels and cluster history.
 
 :::warning
-Make sure to back up your password separately because it is necessary to spend your bitcoin.
+Make sure to back up your passphrase separately because it is necessary to spend your bitcoin.
 :::
