@@ -1290,7 +1290,9 @@ So Wasabi does not know about the existence of the Trezor Suite coinjoin coins.
 
 ### How can I use Hardware Wallets on Linux (udev rules)?
 
-On Linux, you need to create a set of `udev rules` for the hardware wallet to be reachable.
+Since Wasabi version [2.0.8](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.0.8) the Wasabi package contains the required udev rules, so they don't need to be manually installed.
+
+On older versions, you need to create a set of `udev rules` for the hardware wallet to be reachable.
 
 Udev rules instructions can be found [here](https://github.com/bitcoin-core/HWI/blob/master/hwilib/udev/README.md).
 
