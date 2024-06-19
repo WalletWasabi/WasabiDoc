@@ -68,6 +68,8 @@ The coinjoin coordinator sets its own fee policy for the coinjoin service provid
 
 Although the coordinator cannot steal money from the coinjoin participants, it could set a high mining and/or coordinator fee. This could make the participating users pay a lot (unnecessarily). To prevent against such behaviour the Wasabi client can configure the maximum mining fee and the maximum coordinator fee it is willing to pay per round. If one of these is higher than the entered maximum, it will not participate in the coinjoin.
 
+The default values are 0% coordination fee and maximum 150 sat/vByte mining fee.
+
 ![Coinjoin Configurations](/SettingsCoinjoinConfigs.png "Coinjoin Configurations")
 
 ## WabiSabi protocol step-by-step
