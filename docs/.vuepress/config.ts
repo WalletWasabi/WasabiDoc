@@ -173,7 +173,7 @@ export default defineUserConfig({
                 sidebarDepth: 2,
                 children: [
                     "/using-wasabi/WalletRecovery.md",
-                    "/using-wasabi/RestoreElectrum.md",
+                    "/using-wasabi/ExternalRestore.md",
                     "/using-wasabi/PasswordFinder.md"
                 ]
             }, {
