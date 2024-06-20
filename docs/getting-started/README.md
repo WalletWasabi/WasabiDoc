@@ -48,7 +48,7 @@ Select _Create a new wallet_.
 
 Now follow the next few steps/dialogs: 
 - Write down the recovery words. (do not share these with anyone!)
-- Add a password. (do not forget it and also write it down on a separate place from the recovery words, without your password you cannot open your wallet and send your bitcoin!)
+- Add a passphrase. (do not forget it and also write it down on a separate place from the recovery words, without your passphrase you cannot open your wallet and send your bitcoin!)
 - Select the coinjoin strategy: we select the default one `Maximize Speed`.
 
 :::danger
@@ -56,8 +56,8 @@ The Recovery words can never be shown again.
 :::
 
 :::danger
-The password cannot be changed later on.
-If you lose your password you lose your bitcoin.
+The passphrase cannot be changed later on.
+If you lose your passphrase you lose your bitcoin.
 :::
 
 ## Receive bitcoin

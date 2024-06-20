@@ -11,16 +11,16 @@
 
 ## Loading wallet step-by-step
 
-To load a wallet and start the synchonization process, you need to open your wallet by typing in the password.
+To load a wallet and start the synchonization process, you need to open your wallet by typing in the passphrase.
 The first time synchronization of your wallet might take some time depending on the size of its history.
 
 ### Wallet list
 
 On the left side of Wasabi Wallet is the `Wallet list`, where you see an alphabetically sorted list of all the previously [generated](/using-wasabi/WalletGeneration.md) wallets.
 
-Click the wallet you want to view, type in the password and press `Open`.
+Click the wallet you want to view, type in the passphrase and press `Open`.
 
-![Type your password to open the wallet](/WalletOpen.png "Type your password to open the wallet")
+![Type your passphrase to open the wallet](/WalletOpen.png "Type your passphrase to open the wallet")
 
 ## Synchronization
 

@@ -37,7 +37,7 @@ Make sure that you are precise so that you know what this wallet is for and clic
 ![Name a new wallet in Wasabi](/AddWalletWalletName.png "Name a new wallet in Wasabi")
 
 Now you will see the 12 recovery words.
-This is the mnemonic seed that you should back up, together with the password you create in the next phase, in order to recover your wallet.
+This is the mnemonic seed that you should back up, together with the passphrase you create in the next phase, in order to recover your wallet.
 When you've backed everything up, click `Continue`.
 
 ![Wasabi Wallet recovery words](/AddWalletRecoveryWords.png "Wasabi Wallet recovery words")
@@ -47,22 +47,22 @@ Once you're done, click `Continue`.
 
 ![Confirm recovery words](/AddWalletConfirmRecoveryWords.png "Confirm recovery words")
 
-Add a password. 
+Add a passphrase. 
 It is used to encrypt the private key (extracted from the extended private key) on the computer and needed to open the wallet and to recovered it in the future.
-Make sure that you properly back up and write down this password.
+Make sure that you properly back up and write down this passphrase.
 
-Confirm the password and click `Continue`.
+Confirm the passphrase and click `Continue`.
 
-![Add a password in Wasabi](/AddWalletAddPassword.png "Add a password in Wasabi")
+![Add a passphrase in Wasabi](/AddWalletAddPassphrase.png "Add a passphrase in Wasabi")
 
 :::danger Careful!!
-Without knowledge of the password, you CANNOT spend your bitcoin!!
+Without knowledge of the passphrase, you CANNOT spend your bitcoin!!
 :::
 
-Make sure, and triple-check that you have done a proper backup of BOTH the password AND the mnemonic.
-If you only have the recovery words, but not the password, then you will NOT be able to open your wallet or to recover it.
+Make sure, and triple-check that you have done a proper backup of BOTH the passphrase AND the mnemonic.
+If you only have the recovery words, but not the passphrase, then you will NOT be able to open your wallet or to recover it.
 
-In order to protect your backup, consider storing the password and recovery words in different locations.
+In order to protect your backup, consider storing the passphrase and recovery words in different locations.
 
 Now you get to choose your wallets coinjoin strategy.
 Select one and click `Continue`.
@@ -89,24 +89,24 @@ To avoid problems, make sure you close Wasabi Wallet before proceeding to rename
 
 ### What is the password used for?
 
-The password you set is used:
+The password (named _passphrase_ since Wasabi version [2.0.7](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.0.7) you set is used:
 * As a 13th word (passphrase) as described in [BIP 39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki).
 * To encrypt the private key of the extended private key as described in [BIP 38](https://github.com/bitcoin/bips/blob/master/bip-0038.mediawiki) to get an encrypted secret which is stored on the computer.
 
-Wasabi stores only the BIP38 encrypted blob, so you'll need to type in the password to open the wallet and to spend from Wasabi.
+Wasabi stores only the BIP38 encrypted blob, so you'll need to type in the passphrase to open the wallet and to spend from Wasabi.
 
 :::danger
-The password will unlock your bitcoin to anyone who has access to the recovery words backup or the computer!
-If your backup gets compromised, this password is the only thing protecting your precious sats.
+The passphrase will unlock your bitcoin to anyone who has access to the recovery words backup or the computer!
+If your backup gets compromised, this passphrase is the only thing protecting your precious sats.
 :::
 
 ### What password should I use?
 
 :::danger
-It is **VERY** important to use a [random and long password](/using-wasabi/PasswordBestPractices.md).
+It is **VERY** important to use a [random and long passphrase](/using-wasabi/PasswordBestPractices.md).
 :::
 
-Since it is very difficult for humans to generate true randomness, it is good to use a tool to help find a strong password.
+Since it is very difficult for humans to generate true randomness, it is good to use a tool to help find a strong passphrase.
 This can be the [Diceware english wordlist](https://www.eff.org/deeplinks/2016/07/new-wordlists-random-passphrases) for true off-line password generation.
 A secure password manager software might also be used, but be careful here.
 
@@ -128,15 +128,15 @@ You need to mark the “show hidden files” setting to see it.
 
 :::danger
 NO!!!
-Without knowledge of your password, even when you have the wallet file and recovery words, you CANNOT spend your bitcoin!
+Without knowledge of your passphrase, even when you have the wallet file and recovery words, you CANNOT spend your bitcoin!
 :::
 
-When creating a new wallet, after labeling it properly, the next step is to select a long and random password.
-Every time you want to spend your coins from Wasabi, you MUST provide this password.
-So even if you have these words securely engraved in metal, without the password, you cannot restore the backup of your wallet.
+When creating a new wallet, after labeling it properly, the next step is to select a long and random passphrase.
+Every time you want to spend your coins from Wasabi, you MUST provide this passphrase.
+So even if you have these words securely engraved in metal, without the passphrase, you cannot restore the backup of your wallet.
 
 :::tip
-Always back up your mnemonic recovery words, and your password in two separate secure locations.
+Always back up your mnemonic recovery words, and your passphrase in two separate secure locations.
 :::
 
 ### Why BIP 38?
@@ -156,7 +156,7 @@ Safekeeping of keys are the sole responsibility of the user.
 - We do not store any personally identifiable information.
 Moreover, our trustless software architecture prevents us from gathering this information in the first place.
 - A transaction fee is only charged by the service provider for CoinJoin transactions.
-- We only provide written support, and NEVER ask for recovery words, passwords or similar security critical information.
+- We only provide written support, and NEVER ask for recovery words, passphrases or similar security critical information.
 
 Read the whole document of [terms and conditions, privacy policy, and legal statement here](https://github.com/zkSNACKs/WalletWasabi/blob/master/WalletWasabi/Legal/Assets/LegalDocumentsWw2.txt)
 
@@ -213,8 +213,8 @@ If the coinjoin strategy is changed to one with a different anonnymity score tar
 ### What does the bar with the colored segments mean?
 
 The colored segments make up the `Privacy Bar`.
-The Privacy Bar is supposed to give the user an easy overview of the wallet's coins and it's privacy progress.
-The color of each segment indicates the private coins (dark green), semi-private coins (light green), or non-private coins (grey).
+The Privacy Bar is supposed to give the user an easy overview of the wallet's coins and its privacy progress.
+The color of each segment indicates the private coins (green), semi-private coins (light green), or non-private coins (grey).
 
 ![Wasabi Wallet Privacy Bar](/PrivacyBar.png "Wasabi Wallet Privacy Bar")
 
@@ -688,7 +688,7 @@ To speed up a transaction:
 
 ![Speed Up Tx Confirm](/SpeedUpTxConfirm.png "Speed Up Tx Confirm")
 
-- Enter your Password to send the new transaction.
+- Enter your passphrase to send the new transaction.
 - Transaction succesfully speeded up!
 
 Read more [here](/using-wasabi/Send.md#speed-up-or-cancel-transaction).
@@ -714,7 +714,7 @@ To cancel a transaction:
 
 ![Cancel Tx Confirm](/CancelTxConfirm.png "Cancel Tx Confirm")
 
-- Enter your Password to send the new transaction.
+- Enter your passphrase to send the new transaction.
 - Transaction cancelled!
 
 Read more [here](/using-wasabi/Send.md#speed-up-or-cancel-transaction).
@@ -742,9 +742,9 @@ When sending, the wallet automatically selects the private funds first.
 
 For example:
 
-When `PRIVATE` is 0.01120153 BTC, that means that I can send less than that privately.
+When `PRIVATE` is 0.00338462 BTC, that means I can send less than that privately.
 Even when the `Privacy Progress` is below 100%.
-So when sending, less than 0.01120153 BTC (to cover the mining fees) should be entered as the `Amount` in order to only use the private funds.
+So when sending, less than 0.00338462 BTC (to cover the mining fees) should be entered as the `Amount` in order to only use the private funds.
 
 ![Wasabi Wallet Privacy Progress Tile](/PrivacyProgressTile.png "Wasabi Wallet Privacy Progress Tile")
 
@@ -782,18 +782,9 @@ If the user has a coin of more than 43000 BTC, then it must be broken down into 
 
 ### What are the fees for the coinjoin?
 
-Coinjoin fees are composed of coordination fees and mining (network) fees.
-Coins (UTXOs) with a value above 0.01 BTC pay 0.3% as a coordination fee + mining fees.
-Coins of 0.01 BTC or below don't pay coordination fees.
-Remixes, even after one transaction, also don't pay coordination fees. 
-Thus, a payment made with coinjoined funds allows the sender and the recipient to remix their coins without paying any coordination fees.
+The coinjoin coordinator sets its own fee policy for the coinjoin service provided.
 
-|  | > 0.01 BTC | 0.01 BTC and less |
-|:---:|:---:|:---:|
-| Fresh input | 0.3% coordination fee + mining fees  | mining fees |
-| Remix* | mining fees | mining fees |
-
-*Remix includes a 1 hop transaction*
+This includes things like the mining fee, the coordination fee, no coordination fee for remixes and/or no coordination fee for UTXO amounts below a threshold etc.
 
 ### What is the anonymity set?
 
@@ -1068,6 +1059,18 @@ You can send banned coins to anyone you want.
 This is a temporary ban on your coins in participation of the CoinJoin.
 :::
 
+### How do I change the coordinator?
+
+Since Wasabi version [2.0.8](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.0.8), the coordinator can be changed in the GUI in the _Coordinator_ tab in the settings.
+
+Go to settings -> select coordinator tab -> paste/enter the new URI -> restart Wasabi -> Wasabi will now use this coordinator.
+
+![Settings Coordinator URI](/SettingsCoordinatorURI.png "Settings Coordinator URI")
+
+(The displayed (default) coordinator in the image doesn't work.)
+
+Alternatively, the `MainNetCoordinatorUri` can be changed in the config file.
+
 ## Backup and Recovery
 
 ### How do I back up my mnemonic words?
@@ -1082,63 +1085,63 @@ The mnemonic is displayed as 12 recovery words that are only shown once during t
 ![Wasabi Wallet recovery words](/AddWalletRecoveryWords.png "Wasabi Wallet recovery words")
 
 :::danger
-In order to restore a wallet, you need BOTH the recovery words AND the password!
+In order to restore a wallet, you need BOTH the recovery words AND the passphrase!
 :::
 
 It is a good idea to keep the two in separate analog backups, such as a laminated paper written with pencil.
 In order to defend against nature destroying fragile paper, you can consider stamping the words into metal.
-Use two different backups and locations for the mnemonic and password, because whoever has both [including a physical attacker] has full access to your sats.
+Use two different backups and locations for the mnemonic and passphrase, because whoever has both [including a physical attacker] has full access to your sats.
 Find a secure physical location to store the backups, maybe a home safe, or an expert security deposit box.
 
-Please see [Backup Best Practices](/using-wasabi/BackupBestPractices.md) for more information about backups.
+Please see [Wasabi Backup Best Practices](/using-wasabi/BackupBestPractices.md) for more information about backups.
 
 ### How do I back up my wallet file?
 
-Although you can back up your private keys with the mnemonic words and password, this is only a last resort recovery.
+Although you can back up your private keys with the mnemonic words and passphrase, this is only a last resort recovery.
 If you want to also secure your address labels, the anonscore and additional metadata, then you can do a digital backup.
 Simply copy the `WalletBackups` folder with the `wallet.json` files from your [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) onto suitable hardware, for example an encrypted USB stick.
-Note that this file has the encrypted private key (extracted from the extended private key), meaning that you only need the password to spend the bitcoin.
+Note that this file has the encrypted private key (extracted from the extended private key), meaning that you only need the passphrase to spend the bitcoin.
 This also contains the extended public key, the public keys, and the address labels, meaning that it completely links all the coins, both pre and post mix, with clear proof.
 
 :::warning
-Make sure to back up your password separately because it is necessary to spend your bitcoin.
+Make sure to back up your passphrase separately because it is necessary to spend your bitcoin.
 :::
 
 :::tip
-The wallet file backup is sensitive, in terms of privacy, but not critical in terms of loss of funds (if a password was used when generating the wallet).
+The wallet file backup is sensitive, in terms of privacy, but not critical in terms of loss of funds (if a passphrase was used when generating the wallet).
 So it is good advice to encrypt this wallet file.
 :::
 
 ### What do I need to recover my wallet?
 
-To recover your wallet you need either your Recovery Words + Password, or the Wallet File + Password, as shown in the table below.
+To recover your wallet you need either your Recovery Words + Passphrase, or the Wallet File + Passphrase, as shown in the table below.
 
-| | Recovery Words | Wallet File | Password
+| | Recovery Words | Wallet File | Passphrase
 :------------ | :-------------:| :-------------:| :-------------:
 Recovery Words | :x: | :x: | :heavy_check_mark:
 Wallet File | :x: | :x: | :heavy_check_mark:
-Password | :heavy_check_mark: | :heavy_check_mark: | :x:
+Passphrase | :heavy_check_mark: | :heavy_check_mark: | :x:
 
 :::tip
-If no password was entered at the wallet creation, then the Recovery Words or Wallet File alone are enough to recover the wallet.
+If no passphrase was entered at the wallet creation, then the Recovery Words or Wallet File alone are enough to recover the wallet.
 :::
 
 ### Can I recover my wallet without the password?
 
 No.
-The password you set is used as a 13th word (passphrase) as described in BIP39, you should back it up when you generate a wallet.
+The passphrase/password you set is used as a 13th word (passphrase) as described in BIP39, you should back it up when you generate a wallet.
 It is necessary to spend your bitcoin or to recover your wallet, as shown in [this table](/FAQ/FAQ-UseWasabi.md#what-do-i-need-to-recover-my-wallet).
 
 ### What should I do if I forget my password?
 
-Try to use the [Password Finder Tool](/using-wasabi/PasswordFinder.md) to find your password.
-Having a close guess of what the password is increases the possibility that you get your password.
+Try to use the [Password Finder Tool](/using-wasabi/PasswordFinder.md) to find your passphrase.
+Having a close guess of what the passphrase is increases the possibility that you get your passphrase.
 
 ### I lost the recovery words but I still have the .json file and the password. Is my wallet still recoverable?
 
-Yes, but in this case it is advisable to create a new wallet and back up the new recovery words and the password, then move your bitcoin there.
+Yes, but in this case it is advisable to create a new wallet and back up the new recovery words and the passphrase, then move your bitcoin there.
 
-The .json file contains the encrypted secret that requires the password to derive your private keys.
+The .json file contains the encrypted secret that requires the passphrase to derive your private keys.
 That gives you access to your bitcoin.
 
 ### Can I verify the Recovery Words of an existing wallet?
@@ -1299,7 +1302,9 @@ So Wasabi does not know about the existence of the Trezor Suite coinjoin coins.
 
 ### How can I use Hardware Wallets on Linux (udev rules)?
 
-On Linux, you need to create a set of `udev rules` for the hardware wallet to be reachable.
+Since Wasabi version [2.0.8](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.0.8) the Wasabi package contains the required udev rules, so they don't need to be manually installed.
+
+On older versions, you need to create a set of `udev rules` for the hardware wallet to be reachable.
 
 Udev rules instructions can be found [here](https://github.com/bitcoin-core/HWI/blob/master/hwilib/udev/README.md).
 
@@ -1328,9 +1333,9 @@ A coinjoin is a payment within the same wallet, thus it only shows the coordinat
 
 ### Can I sort the history items?
 
-Yes, the history items can be sorted by clicking on the column title:
+Yes, the history items can be sorted by clicking on the transactions sort button:
 
-![Sort Date Column](/HistorySortDateColumn.png "Sort Date Column")
+![Sort Date Column](/HistorySort.png "Sort History")
 
 ### Can I search for a transaction ID in the history?
 

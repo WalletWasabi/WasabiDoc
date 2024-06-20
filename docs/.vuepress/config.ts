@@ -17,7 +17,7 @@ export default defineUserConfig({
         const render = md.renderer.render;
 
         const variables = {
-            currentVersion: '2.0.7.1',
+            currentVersion: '2.0.8.1',
             dotnetVersion: '8.0',
             zksnacksPublicKeyFingerprint: '6FB3 872B 5D42 292F 5992 0797 8563 4832 8949 861E',
             minInputCountFreshRound: '180',
@@ -38,7 +38,7 @@ export default defineUserConfig({
     theme: defaultTheme({
         logo: "/Logo_without_text_dark.png",
         logoDark: "/Logo_without_text.png",
-        docsRepo: 'https://github.com/zkSNACKs/WasabiDoc',
+        docsRepo: 'https://github.com/WalletWasabi/WasabiDoc',
         docsBranch: 'master',
         docsDir: 'docs',
         editLinks: true,

@@ -17,7 +17,7 @@
 
 ![Wasabi Wallet Send Button](/SendButton.png "Wasabi Wallet Send Button")
 
-2.  Enter the destination address.
+2.  Enter/paste the destination address.
 
 ![Wasabi Wallet Send To Field](/SendToField.png "Wasabi Wallet Send To Field")
 
@@ -26,13 +26,14 @@ Optionally, you can specify the dollar amount to send instead.
 
 ![Wasabi Wallet Send Amount Field](/SendAmountField.png "Wasabi Wallet Send Amount Field")
 
-4. Click `Continue`.
-
-![Wasabi Wallet Send](/Send.png "Wasabi Wallet Send")
-
-5.  Label the recipient by entering the name of the person or company who you are sending to.
+4. Label the recipient by entering the name of the person or company who you are sending to.
 
 ![Wasabi Wallet Send Recipient Label](/SendRecipientLabel.png "Wasabi Wallet Send Recipient Label")
+
+
+5. Click `Continue`.
+
+![Wasabi Wallet Send](/Send.png "Wasabi Wallet Send")
 
 6.  Preview Transaction.
     -  Verify the amount, recipient, and the address.
@@ -50,9 +51,9 @@ Optionally, you can specify the dollar amount to send instead.
 
 ![Wasabi Wallet Send Preview Transaction](/SendPreviewTransaction.png "Wasabi Wallet Send Preview Transaction")
 
-8. Type in your password, then click `Continue`.
+8. Type in your passphrase, then click `Send`.
 
-![Wasabi Wallet Send Password](/SendPassword.png "Wasabi Wallet Send Password")
+![Wasabi Wallet Send Passphrase](/SendPassword.png "Wasabi Wallet Send Passphrase")
 
 9. Transaction successfully sent!
 
@@ -178,9 +179,9 @@ Hover over the suggestion to see more information.
 ## Password
 
 In order to spend a coin, the transaction must be signed by the private key corresponding to that coin.
-Wasabi stores a secret on the computer, encrypted with the password that you specified during the [wallet generation](/using-wasabi/WalletGeneration.md#important-info-about-your-wallet-password).
-To spend a coin you need to type in the password, which decrypts the encrypted secret, and then derive the child private key that signs the transaction.
-Afterwards, the password is wiped from memory.
+Wasabi stores a secret on the computer, encrypted with the passphrase that you specified during the [wallet generation](/using-wasabi/WalletGeneration.md#important-info-about-your-wallet-password).
+To spend a coin you need to type in the passphrase, which decrypts the encrypted secret, and then derive the child private key that signs the transaction.
+Afterwards, the passphrase is wiped from memory.
 
 ## Broadcast
 

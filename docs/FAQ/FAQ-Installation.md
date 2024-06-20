@@ -121,11 +121,15 @@ When you broadcast a transaction over clearnet, the connected full node will kno
 
 ### Can I use Wasabi on Tails?
 
-No, it is not possible to install Wasabi on Tails, because Wasabi uses the Tor control port, which is not exposed in this operating system.
+Since Wasabi version [2.0.8](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.0.8) it is possible to run Wasabi on Tails.
+To make it work, Wasabi should be started with the `--UseTor=EnabledOnlyRunning` start up parameter or specify `"UseTor": "EnabledOnlyRunning"` in the config file.
+So Wasabi uses the existing Tor process, instead of starting a new one.
 
 ### Can I use Wasabi on Whonix?
 
-No, it is not possible to install Wasabi on Whonix, because Wasabi uses the Tor control port, which is not exposed in this operating system.
+Since Wasabi version [2.0.8](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.0.8) it is possible to run Wasabi on Whonix.
+To make it work, Wasabi should be started with the `--UseTor=EnabledOnlyRunning` start up parameter or specify `"UseTor": "EnabledOnlyRunning"` in the config file.
+So Wasabi uses the existing Tor process, instead of starting a new one.
 
 ### What are the differences between the Debian/Ubuntu version and the "Other Linux" version?
 
