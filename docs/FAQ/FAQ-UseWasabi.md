@@ -970,7 +970,15 @@ You can enable the [red coin isolation](/FAQ/FAQ-UseWasabi.md#what-does-the-red-
 
 ### How to exclude/freeze coins from coinjoin?
 
-This is currently not possible to do from the GUI, however one can manually exclude specific coins from coinjoin using the [excludefromcoinjoin](/using-wasabi/RPC.html#excludefromcoinjoin) RPC call.
+Since Wasabi version [2.0.8](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.0.8) it is possible to exclude coins from participating in coinjoin in the GUI.
+
+Click on the music box menu items -> select _Exclude Coins_ -> select the coins to exclude.
+
+![Music Box Menu Items](/MusicBoxMenuItems.png "Music Box Menu Items")
+
+The coins will remain excluded until they are manually deselected.
+
+Alternatively, coins can be excluded from coinjoin using the [excludefromcoinjoin](/using-wasabi/RPC.html#excludefromcoinjoin) RPC call.
 
 ### How long does it take to make my wallet 100% private?
 
