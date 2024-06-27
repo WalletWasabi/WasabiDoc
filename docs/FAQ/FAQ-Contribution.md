@@ -16,41 +16,6 @@ Wasabi has a coordination fee that is capped at 0.3% for every CoinJoin and it b
 To help Wasabi development, just CoinJoin your bitcoins via Wasabi!
 If you want to read more about fees here is a nice explanation: [What are the fees for the CoinJoin](/FAQ/FAQ-UseWasabi.md#what-are-the-fees-for-the-coinjoin).
 
-## The Wasabikas
-
-### Who is contributing to Wasabi already?
-
-There are many Wasabikas working with great effort and care to manifest this powerful tool of self-defense.
-[Over 50 peers](https://github.com/zkSNACKs/WalletWasabi/graphs/contributors) have already contributed to the repository.
-Four of the main contributors are [Ádám Ficsor](https://github.com/nopara73) [co-founder and former CTO of [zkSNACKs Ltd](https://zksnacks.com/), co-author of the [zero link Bitcoin fungibility framework](https://github.com/nopara73/ZeroLink)], [Lucas Ontivero](https://github.com/lontivero) [lead engineer of [zkSNACKs Ltd](https://zksnacks.com/)], [Dávid Molnár](https://github.com/molnard) [CTO of [zkSNACKs Ltd](https://zksnacks.com/)], and [Dan Walmsley](https://github.com/danwalmsley) [co-maintainer of [Avalonia UI Framework](https://github.com/AvaloniaUI/Avalonia)].
-
-[![Watch the video](/Logo_without_text_with_bg_dark_with_yt.png)](https://youtu.be/F8xNSOhbWrw)
-
-[![Watch the video](/Logo_without_text_with_bg_dark_with_yt.png)](https://youtu.be/Yg7_3LIutJA)
-
-[![Watch the video](/Logo_without_text_with_bg_dark_with_yt.png)](https://youtu.be/X9BB_9faJE8)
-
-### Who reviews and merges the pull requests?
-
-As the Wasabi code is libre and open-source, anyone has access to review the latest contributions and browse the [open pull requests](https://github.com/zkSNACKs/WalletWasabi/pulls?q=is%3Apr+is%3Aopen+sort%3Aupdated-desc).
-The review of any Wasabika is not just deeply appreciated, but desperately needed!
-Wasabi is cutting-edge, high security software, and there can never be enough eyes seeking and squashing bugs.
-Especially review by experienced C# developers are vitally important, yet even typo and grammar fixes are necessary.
-
-There are four developers who have the ability to merge code into master branch.
-Per default, they [require at least one approving review](https://help.github.com/en/github/administering-a-repository/about-required-reviews-for-pull-requests) by one of the other maintainers before a pull request can be merged.
-However, since all four are administrators, they can still force the merge without the approval of others, but this will be noticed by many contributors.
-- [Ádám Ficsor](https://github.com/nopara73), co-founder and former CTO of [zkSNACKs Ltd](https://zksnacks.com/), co-author of the [zero link Bitcoin fungibility framework](https://github.com/nopara73/ZeroLink).
-- [Lucas Ontivero](https://github.com/lontivero), lead engineer of [zkSNACKs Ltd](https://zksnacks.com/).
-- [Dávid Molnár](https://github.com/molnard), CTO of [zkSNACKs Ltd](https://zksnacks.com/).
-- [Dan Walmsley](https://github.com/danwalmsley), co-maintainer of [Avalonia](https://github.com/AvaloniaUI/Avalonia/).
-
-### What is on the future roadmap of Wasabi development?
-
-Wasabi is far from complete, there are many Wasabikas contributing every day to make this tool of self-defense even more powerful.
-Because Wasabi is libre and open-source software, anyone can support the project without asking for permission.
-Thus it is relatively tricky to give a precise roadmap with what will be implemented in the near and distant future.
-
 ## You can become a Wasabika
 
 ### How should I start contributing to Wasabi?
