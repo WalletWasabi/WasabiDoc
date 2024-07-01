@@ -18,7 +18,7 @@ The RPC server does NOT support batch requests or TLS communications (because it
 Requests are served in order one-by-one in series (no parallel processing).
 It is intentionally limited to serve only one whitelisted local address and it is disabled by default.
 
-The more user friendly command line interface `wcli` can be found [here](https://github.com/zkSNACKs/WalletWasabi/tree/master/Contrib/CLI).
+The more user friendly command line interface `wcli` can be found [here](https://github.com/WalletWasabi/WalletWasabi/tree/master/Contrib/CLI).
 
 ## Configure RPC
 
@@ -979,7 +979,7 @@ curl -s --data-binary '{"jsonrpc":"2.0", "method": "getnewaddress", "params": { 
 
 ## Expose the RPC server as an onion service
 
-Since Wasabi version [2.0.6](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v2.0.6) the RPC can be exposed as an onion service, which enables remote control.
+Since Wasabi version [2.0.6](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.0.6) the RPC can be exposed as an onion service, which enables remote control.
 
 The RPC server can be exposed as an onion service by using the _rpconionenabled=true_ [start up parameter](/using-wasabi/StartupParameters.md) or the environment variable.
 

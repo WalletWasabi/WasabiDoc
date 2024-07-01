@@ -172,7 +172,7 @@ Read more: [RPC Interface](/using-wasabi/RPC.md)
 
 Safety coinjoin is a concept for doing an extra coinjoin after a user registers only _anonymity score_ 1 (non-private) coins in their first round.
 
-This was added in Wasabi [2.0.6 version](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v2.0.6) to increase privacy for people who generate a new wallet -> receive a coin -> do one coinjoin -> send all the money out.
+This was added in Wasabi [2.0.6 version](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.0.6) to increase privacy for people who generate a new wallet -> receive a coin -> do one coinjoin -> send all the money out.
 It aims to prevent targeted analysis that compares the value of consolidated coinjoin outputs with the value of one of the coinjoin's inputs.
 
 ### Taint

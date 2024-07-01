@@ -27,4 +27,4 @@ You can activate or deactivate by clicking the Discreet Mode icon in the bottom 
 - Discreet Mode only masks the surface.
 This means that when you click to see more Details, some information (which wasn't visible at first) will be shown.
 - When hovering over the ### chars with the cursor, the content will be visible for a short amount of time.
-- Some justification of design decisions can be seen [here](https://github.com/zkSNACKs/WalletWasabi/issues/2234).
+- Some justification of design decisions can be seen [here](https://github.com/WalletWasabi/WalletWasabi/issues/2234).

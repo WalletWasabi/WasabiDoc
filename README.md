@@ -6,11 +6,11 @@ This is Wasabi Wallet's open-source [documentation](https://docs.wasabiwallet.io
 Here you will find information about the nuances of privacy in Bitcoin, how Wasabi solves some of the existing problems, and how you can use this tool to defend yourself.
 
 If you would like to support the project by educating other people, this documentation repository is the right place for your efforts!
-If you have a question regarding the documentation, please [open an issue](https://github.com/zkSNACKs/WasabiDoc/issues).
-If you have an answer to a question, please [open a pull request](https://github.com/zkSNACKs/WasabiDoc/pulls).
+If you have a question regarding the documentation, please [open an issue](https://github.com/WalletWasabi/WasabiDoc/issues).
+If you have an answer to a question, please [open a pull request](https://github.com/WalletWasabi/WasabiDoc/pulls).
 For more details on how to contribute, see the [contribution checklist](https://docs.wasabiwallet.io/building-wasabi/ContributionChecklist.html).
 
-If you need help regarding the software specifically, please check out [Discussions](https://github.com/zkSNACKs/WalletWasabi/discussions) in Wasabi Wallet's [main repository](https://github.com/zkSNACKs/WalletWasabi).
+If you need help regarding the software specifically, please check out [Discussions](https://github.com/WalletWasabi/WalletWasabi/discussions) in Wasabi Wallet's [main repository](https://github.com/WalletWasabi/WalletWasabi).
 
 [![Build Status](https://dev.azure.com/zkSNACKs/WasabiDoc/_apis/build/status/zkSNACKs.WasabiDoc?branchName=master)](https://dev.azure.com/zkSNACKs/WasabiDoc/_build/latest?definitionId=4&branchName=master)
 
@@ -18,17 +18,17 @@ If you need help regarding the software specifically, please check out [Discussi
 
 # 🏛️ The pillars of the documentation
 
-* ## [Getting Started](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/getting-started/)
+* ## [Getting Started](https://github.com/WalletWasabi/WasabiDoc/tree/master/docs/getting-started/)
   * Getting started guide.
-* ## [Why Wasabi](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/why-wasabi/)
+* ## [Why Wasabi](https://github.com/WalletWasabi/WasabiDoc/tree/master/docs/why-wasabi/)
   * Why privacy is important.
-* ## [Using Wasabi](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/using-wasabi/)
+* ## [Using Wasabi](https://github.com/WalletWasabi/WasabiDoc/tree/master/docs/using-wasabi/)
   * How to use Wasabi Wallet.
-* ## [Building Wasabi](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/building-wasabi/)
+* ## [Building Wasabi](https://github.com/WalletWasabi/WasabiDoc/tree/master/docs/building-wasabi/)
   * How to contribute to Wasabi.
-* ## [Wasabi FAQ](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/FAQ/)
+* ## [Wasabi FAQ](https://github.com/WalletWasabi/WasabiDoc/tree/master/docs/FAQ/)
   * Frequently asked questions.
-* ## [Wasabi Glossary](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/glossary/)
+* ## [Wasabi Glossary](https://github.com/WalletWasabi/WasabiDoc/tree/master/docs/glossary/)
   * Explanations of common words.
 
 ---
@@ -52,7 +52,7 @@ Not only do we appreciate everyone's contribution, but we desperately need it!
 ## VuePress
 
 The [Wasabi documentation website](https://docs.wasabiwallet.io) is built using an open-source static site generator called VuePress.
-Its [configuration](https://github.com/zkSNACKs/WasabiDoc/blob/master/docs/.vuepress/config.js) and [theme](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/.vuepress/styles) are extremely customizable, and it offers great defaults out-of-the-box.
+Its [configuration](https://github.com/WalletWasabi/WasabiDoc/blob/master/docs/.vuepress/config.js) and [theme](https://github.com/WalletWasabi/WasabiDoc/tree/master/docs/.vuepress/styles) are extremely customizable, and it offers great defaults out-of-the-box.
 Check out the [VuePress website](https://v1.vuepress.vuejs.org/) for details on how to use it.
 
 To contribute to the content of the website, you can make PRs related to the markdown files in the `/docs/` directory, and if merged, the changes will automatically be integrated into the documentation website by VuePress.
@@ -76,7 +76,7 @@ Please consider this repository structure for hyperlinks, and use relative links
 
 ## Embedding images
 
-The images are stored in the [`/docs/.vuepress/public/`](https://github.com/zkSNACKs/WasabiDoc/tree/master/docs/.vuepress/public) directory.
+The images are stored in the [`/docs/.vuepress/public/`](https://github.com/WalletWasabi/WasabiDoc/tree/master/docs/.vuepress/public) directory.
 They can be embedded via the following markdown tags:
 
 ```
@@ -149,7 +149,7 @@ answer answer answer.
 ## Variables
 
 To have a single place to maintain universal strings like the current Wasabi version number, we use variables in the Markdown (i.e.  `${currentVersion}`and `${zksnacksPublicKeyFingerprint}`).
-These variables are managed in [`docs/.vuepress/config.ts`](https://github.com/zkSNACKs/WasabiDoc/blob/master/docs/.vuepress/config.ts).
+These variables are managed in [`docs/.vuepress/config.ts`](https://github.com/WalletWasabi/WasabiDoc/blob/master/docs/.vuepress/config.ts).
 Occurrences of `${variableName}` get substituted before the Markdown is processed.
 
 # Build the Documentation Locally

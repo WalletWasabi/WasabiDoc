@@ -20,9 +20,9 @@ Download the packages either from the official [WasabiWallet.io](https://wasabiw
 
 ![Operating systems supported by Wasabi Wallet](/DownloadAll.png "Operating systems supported by Wasabi Wallet")
 
-Although there is automatic signature verification on Windows and macOS, it is still recommended to manually **VERIFY PGP SIGNATURES** of the downloaded package with zkSNACKs' PGP public key [${zksnacksPublicKeyFingerprint}](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt) before installing Wasabi.
+Although there is automatic signature verification on Windows and macOS, it is still recommended to manually **VERIFY PGP SIGNATURES** of the downloaded package with zkSNACKs' PGP public key [${zksnacksPublicKeyFingerprint}](https://github.com/WalletWasabi/WalletWasabi/blob/master/PGP.txt) before installing Wasabi.
 This protects you against malicious phishing sites giving you back-doored wallet software.
-If you have personally verified zkSNACKs' PGP public key [${zksnacksPublicKeyFingerprint}](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt) and you are familiar with the [Web Of Trust](https://security.stackexchange.com/questions/147447/gpg-why-is-my-trusted-key-not-certified-with-a-trusted-signature), please consider also [signing it](https://www.gnupg.org/gph/en/manual/x334.html).
+If you have personally verified zkSNACKs' PGP public key [${zksnacksPublicKeyFingerprint}](https://github.com/WalletWasabi/WalletWasabi/blob/master/PGP.txt) and you are familiar with the [Web Of Trust](https://security.stackexchange.com/questions/147447/gpg-why-is-my-trusted-key-not-certified-with-a-trusted-signature), please consider also [signing it](https://www.gnupg.org/gph/en/manual/x334.html).
 
 :::tip Always
 Don't trust - Verify!
@@ -58,7 +58,7 @@ Among others, here is where your wallet files and your logs reside.
 
 If you have already imported zkSNACKs' PGP public key, then jump to step 2.
 
-1. Download zkSNACKs' PGP public key [here](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt), and then import it with `gpg --import PGP.txt`.
+1. Download zkSNACKs' PGP public key [here](https://github.com/WalletWasabi/WalletWasabi/blob/master/PGP.txt), and then import it with `gpg --import PGP.txt`.
 
 	Verify that the fingerprint is `${zksnacksPublicKeyFingerprint}` by running this command `gpg --list-keys zkSNACKs`.
 
@@ -84,7 +84,7 @@ Among others, here is where your wallet files and your logs reside.
 
 If you have already imported zkSNACKs' PGP public key, then jump to step 2.
 
-1. Download zkSNACKs' PGP public key [here](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt), and then import it with `gpg --import PGP.txt`.
+1. Download zkSNACKs' PGP public key [here](https://github.com/WalletWasabi/WalletWasabi/blob/master/PGP.txt), and then import it with `gpg --import PGP.txt`.
 
 	Verify that the fingerprint is `${zksnacksPublicKeyFingerprint}` by running this command `gpg --list-keys zkSNACKs`.
 
@@ -132,7 +132,7 @@ If you have already imported zkSNACKs' PGP public key, then jump to step 4.
 
 1. [Get GnuPG](https://www.gnupg.org/download/index.html).
 
-2. Copy [zkSNACKs' PGP public key](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt) into a new `TextEdit` document and saving it as `zkSNACKsPubKey.txt`.
+2. Copy [zkSNACKs' PGP public key](https://github.com/WalletWasabi/WalletWasabi/blob/master/PGP.txt) into a new `TextEdit` document and saving it as `zkSNACKsPubKey.txt`.
 Before saving, you need to go to `Format / Make Plain Text` (otherwise TextEdit will not be able to save it as a .txt file).
 
 3. Open Terminal and go to the folder in which you saved the `zkSNACKsPubKey.txt` file and import the PGP public key with `sudo gpg --import zkSNACKsPubKey.txt`.

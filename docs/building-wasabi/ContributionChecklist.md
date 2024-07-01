@@ -31,7 +31,7 @@ All such contributions are very welcomed and greatly appreciated.
 
 ## Say hello and get started
 
-- Join our [Slack](https://join.slack.com/t/tumblebit/shared_invite/enQtNjQ1MTQ2NzQ1ODI0LWIzOTg5YTM3YmNkOTg1NjZmZTQ3NmM1OTAzYmQyYzk1M2M0MTdlZDk2OTQwNzFiNTg1ZmExNzM0NjgzY2M0Yzg) and especially check out our [GitHub repository](https://github.com/zkSnacks/WalletWasabi).
+- Join our [Slack](https://join.slack.com/t/tumblebit/shared_invite/enQtNjQ1MTQ2NzQ1ODI0LWIzOTg5YTM3YmNkOTg1NjZmZTQ3NmM1OTAzYmQyYzk1M2M0MTdlZDk2OTQwNzFiNTg1ZmExNzM0NjgzY2M0Yzg) and especially check out our [GitHub repository](https://github.com/WalletWasabi/WalletWasabi).
 - Introduce yourself, say a bit about your skills and interests.
 This will help others point you in the right direction.
 - Explore the communication channels and find out what the peers are tinkering on, learn about the project and who is contributing in what way.
@@ -77,9 +77,9 @@ In case you have been contributing already, feel free to let other Wasabikas kno
 ### GitHub Contributor
 
 1. **Find a problem somewhere in Wasabi-land** that (a) needs fixing or improvement and (b) is a match for your skills and interests.
-Browse [open issues](https://github.com/zksnacks/walletwasabi/issues) and ask around about what other contributors think needs fixing.
+Browse [open issues](https://github.com/WalletWasabi/walletwasabi/issues) and ask around about what other contributors think needs fixing.
 Because while you don’t need anybody’s permission and you can work on whatever you want, you’ll want to know up front whether anybody else is going to care about the work you do.
-2. **Do work to fix that problem.** Submit your fix for review with a pull request (for [code](https://github.com/zkSNACKs/WalletWasabi/pulls?q=is%3Apr+is%3Aopen+sort%3Aupdated-desc) and [documentation](https://github.com/zkSNACKs/WasabiDoc/pulls) changes) or with a GitHub [issue](https://github.com/zksnacks/walletwasabi/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc) (for everything else).
+2. **Do work to fix that problem.** Submit your fix for review with a pull request (for [code](https://github.com/WalletWasabi/WalletWasabi/pulls?q=is%3Apr+is%3Aopen+sort%3Aupdated-desc) and [documentation](https://github.com/WalletWasabi/WasabiDoc/pulls) changes) or with a GitHub [issue](https://github.com/WalletWasabi/walletwasabi/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc) (for everything else).
 3. **Request that others review your work.** The best way to do this is by writing good commit comments and pull request/issue descriptions that clearly explain the problem your work is intended to solve, why it’s important, and why you fixed it the way you did.
 Make it as easy as possible for others to review your work. Make it a *pleasure* for others to review your work.
 4. **Incorporate review feedback** you get until your fix gets merged or is otherwise accepted.

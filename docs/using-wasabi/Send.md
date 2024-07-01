@@ -148,7 +148,7 @@ For a deeper dive into the fee estimation process, [this article](https://bitcoi
 
 ## Privacy Suggestions
 
-Since Wasabi version [2.0.4](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v2.0.4) the _Preview Transaction_ dialog contains privacy suggestions.
+Since Wasabi version [2.0.4](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.0.4) the _Preview Transaction_ dialog contains privacy suggestions.
 The privacy suggestions help the user to improve their transaction.
 They are displayed when hovering over the triangle or shield in the top right corner.
 The suggestions are based on the current coin selection for this transaction.
@@ -198,7 +198,7 @@ This can be used to speed up or cancel a transaction.
 The miners are incentivized to mine the transaction with the higher fee rate, as this will earn them more money.
 If the new higher fee rate paying transaction is confirmed, the old transaction can be considered "replaced".
 
-Since Wasabi version [2.0.4](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v2.0.4) it is possible to easily speed up or cancel a pending transaction.
+Since Wasabi version [2.0.4](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.0.4) it is possible to easily speed up or cancel a pending transaction.
 Speeding up and cancelling are similar to each other, the main difference being that a _Cancel Transaction_ will send the coins to a new address owned by the user/wallet (this is all done automatically).
 The transaction is then "cancelled" because the bitcoin (minus the fees) is returned to the user's wallet.
 

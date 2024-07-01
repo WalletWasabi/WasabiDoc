@@ -34,7 +34,7 @@ Be aware that these branches might be unstable and can include bugs that lead to
 Clone Wasabi repository:
 
 ```sh
-git clone https://github.com/zkSNACKs/WalletWasabi.git
+git clone https://github.com/WalletWasabi/WalletWasabi.git
 cd WalletWasabi/WalletWasabi.Fluent.Desktop
 ```
 

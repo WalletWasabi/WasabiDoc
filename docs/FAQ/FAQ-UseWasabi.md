@@ -158,7 +158,7 @@ Moreover, our trustless software architecture prevents us from gathering this in
 - A transaction fee is only charged by the service provider for CoinJoin transactions.
 - We only provide written support, and NEVER ask for recovery words, passphrases or similar security critical information.
 
-Read the whole document of [terms and conditions, privacy policy, and legal statement here](https://github.com/zkSNACKs/WalletWasabi/blob/master/WalletWasabi/Legal/Assets/LegalDocumentsWw2.txt)
+Read the whole document of [terms and conditions, privacy policy, and legal statement here](https://github.com/WalletWasabi/WalletWasabi/blob/master/WalletWasabi/Legal/Assets/LegalDocumentsWw2.txt)
 
 ### Can I import a watch-only extended public key?
 
@@ -672,7 +672,7 @@ This is good for privacy, and also saves you some transaction fees.
 
 ### How can I bump the transaction fee with child pays for parent (CPFP)?
 
-Since Wasabi version [2.0.4](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v2.0.4) this FAQ is now obsolete because of the new [_Speed Up Transaction_ feature](/FAQ/FAQ-UseWasabi.md#how-can-i-speed-up-a-pending-transaction) that can be used.
+Since Wasabi version [2.0.4](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.0.4) this FAQ is now obsolete because of the new [_Speed Up Transaction_ feature](/FAQ/FAQ-UseWasabi.md#how-can-i-speed-up-a-pending-transaction) that can be used.
 
 ### How can I speed up a pending/unconfirmed transaction (CPFP/RBF)?
 
@@ -749,7 +749,7 @@ So when sending, less than 0.00338462 BTC (to cover the mining fees) should be e
 ![Wasabi Wallet Privacy Progress Tile](/PrivacyProgressTile.png "Wasabi Wallet Privacy Progress Tile")
 
 :::tip Use the Privacy Suggestions
-Since Wasabi version [2.0.4](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v2.0.4), there are privacy suggestions to only send private or semi-private coins.
+Since Wasabi version [2.0.4](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.0.4), there are privacy suggestions to only send private or semi-private coins.
 :::
 
 Read more [here](/using-wasabi/Send.md#privacy-suggestions).
@@ -1171,7 +1171,7 @@ Type in your recovery words in the correct order, click on `Verify` and it will 
 ### What hardware wallets does Wasabi support?
 
 Wasabi uses the Bitcoin Core [Hardware Wallet Interface (HWI)](https://github.com/bitcoin-core/HWI) which allows it to support a variety of hardware wallets.
-For the complete list of all the officially supported hardware wallets, click [here](https://github.com/zkSNACKs/WalletWasabi/blob/master/WalletWasabi.Documentation/WasabiCompatibility.md#officially-supported-hardware-wallets).
+For the complete list of all the officially supported hardware wallets, click [here](https://github.com/WalletWasabi/WalletWasabi/blob/master/WalletWasabi.Documentation/WasabiCompatibility.md#officially-supported-hardware-wallets).
 
 ### Why does Wasabi use the Hardware Wallet Interface?
 
@@ -1291,12 +1291,12 @@ You should put a meaningful label when you generate a receive address in your ha
 ### Can I use Trezor One with Wasabi?
 
 No. Unfortunately, Trezor One is not supported by Wasabi Wallet.
-For the complete list of all the officially supported hardware wallets, click [here](https://github.com/zkSNACKs/WalletWasabi/blob/master/WalletWasabi.Documentation/WasabiCompatibility.md#officially-supported-hardware-wallets).
+For the complete list of all the officially supported hardware wallets, click [here](https://github.com/WalletWasabi/WalletWasabi/blob/master/WalletWasabi.Documentation/WasabiCompatibility.md#officially-supported-hardware-wallets).
 
 ### Can I use BitBox with Wasabi?
 
 No. Unfortunately, BitBox is not supported by Wasabi Wallet.
-For the complete list of all the officially supported hardware wallets, click [here](https://github.com/zkSNACKs/WalletWasabi/blob/master/WalletWasabi.Documentation/WasabiCompatibility.md#officially-supported-hardware-wallets).
+For the complete list of all the officially supported hardware wallets, click [here](https://github.com/WalletWasabi/WalletWasabi/blob/master/WalletWasabi.Documentation/WasabiCompatibility.md#officially-supported-hardware-wallets).
 
 ### How can I type in the passphrase of my Trezor T?
 
@@ -1592,7 +1592,7 @@ For (legal) information and questions, please refer to the [Shopinbit website](h
 ### Can I change the default ports for the Wasabi's bundled Tor?
 
 Yes. 
-Since Wasabi version [2.0.6](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v2.0.6) it is possible to specify the Tor SOCKS5 and the Tor control ports.
+Since Wasabi version [2.0.6](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.0.6) it is possible to specify the Tor SOCKS5 and the Tor control ports.
 This can be done by specifying the port(s) at startup with the [startup parameters](/using-wasabi/StartupParameters.md#non-config-file-configurations).
 
 ### Where does the BTC exchange rate come from?
