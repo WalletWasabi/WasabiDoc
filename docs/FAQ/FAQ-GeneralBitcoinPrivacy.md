@@ -174,32 +174,34 @@ In fact, if a user creates a new Tor circuit every time he opens Wasabi Wallet, 
 
 ### My country/ISP is blocking/censoring Tor, how can I use Wasabi with Tor bridges?
 
-:::warning
-Feature not yet ported to Wasabi 2.0
-:::
-
-Tor bridges, also called Tor bridge relays, are alternative entry points to the Tor network that are not all listed publicly.
-If you suspect your access to the Tor network is being blocked, you may want to use bridges.
-You can read more on [The Tor Project's dedicated page about bridges](https://www.torproject.org/docs/bridges).
-
-:::tip
-If you are using Tor Browser Bundle it is extremely easy to configure it to use bridges.
-Configuring Tor bridges running in a daemon mode is more difficult and takes more time.
-:::
+Tor bridges, also called Tor bridge relays, are alternative entry points to the Tor network that are not listed in the public Tor directory.
+If you suspect that your access to the Tor network is being blocked, you may want to use bridges.
+You can read more on [The Tor Project's dedicated page about bridges](https://support.torproject.org/censorship/censorship-7/).
 
 **Steps with Tor Browser:**
 
-1. Download and install the [Tor Browser](https://www.torproject.org/)
-2. Change the `Settings` of the Tor Browser to use one of the bridges or pluggable transports
-3. Leave Tor Browser running after connecting with a bridge
-4. Change the `Settings` of Wasabi Wallet and edit `TorSocks5 Endpoint` from `127.0.0.1:9050` to `127.0.0.1:9150`
-5. Restart Wasabi
+1. Download and install the [Tor Browser](https://www.torproject.org/).
+2. You'll need to specify the Tor folder, as Wasabi's bundled Tor doesn't come with the PluggableTransports folder, so you'll need to specify a folder where the fully-featured Tor is located. See next step.
+3. Start Wasabi with _TorFolder_ (to specify where Tor Browser's Tor binary is located, along with the _PluggableTransports_ folder) and _TorBridges_ (to specify which bridge(s) to use) [startup parameters](/using-wasabi/StartupParameters.md): `--torfolder="$HOME/tor-browser_en-US/Browser/TorBrowser/Tor --torbridges="<bridgeDefinition>"`
 
-After this, Wasabi will connect to Tor using the Tor Browser's connection via a random bridge.
+(_--TorBridges="<bridgeDefinition>;<secondBridgeDefinition>;<thirdBridgeDefinition>"_ when using multiple)
 
-:::warning
-To make use of Tor bridges on Wasabi, you must always keep Tor Browser open.
-:::
+> When using _obfs4_ or _webtunnel_, at least two bridges should be specified for Tor's Conflux feature to work properly and for better performance.
+
+Default folders where Tor Browser's Tor is located:
+
+    Windows: C:\Users\<USER>\Desktop\Tor Browser\Browser\TorBrowser\Tor
+    macOS: /Applications/Tor Browser.app/Contents/MacOS/Tor
+    linux: $HOME/tor-browser_en-US/Browser/TorBrowser/Tor
+
+> Currently only the _obfs4_, _Snowflake_ and _webtunnel_ bridges can be used, others are not supported.
+
+By default, Wasabi does not shut down Tor when the Wasabi application is terminated. If a new Wasabi instance is started and Tor is running, it will check to see if the required Tor bridges are selected in the running Tor instance, if not, it will shut down the running Tor instance and start a new Tor instance with the required Tor bridges.
+
+For example
+```bash
+$ --TorFolder="$HOME/tor-browser_en-US/Browser/TorBrowser/Tor" --TorBridges="obfs4 95.216.9.24:14288 2F26D43258285FEB39E4320888DFAFA8A0D20E11 cert=RJHxHEYW2JnFMTZdf2mdwpEhm7B8RQMCK6ttBL/fPhfdrF20ooAuaITK5MqZooVpXsSVVQ iat-mode=0"
+```
 
 **Steps with Tor Daemon on Linux:**
 
