@@ -16,7 +16,7 @@ There is also a headless daemon where you do not run a resource-intensive GUI, b
 Running the daemon minimizes the usage of resources (CPU, GPU, Memory, Bandwidth) with the goal of making it more suitable for running all the time in the background.
 The [RPC interface](/using-wasabi/RPC.md) can be used to interact with the Daemon.
 
-The daemon is included in the package starting from Wasabi version [2.0.4](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v2.0.4) and can be launched using the command line.
+The daemon is included in the package starting from Wasabi version [2.0.4](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.0.4) and can be launched using the command line.
 
 The desktop app (GUI) is built on top of the daemon.
 Meaning that command line arguments/variables can also be used to configure the desktop app.

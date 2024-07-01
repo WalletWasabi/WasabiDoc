@@ -109,7 +109,7 @@ Start the gnome-terminal of `source-wasabi`.
 Clone & run Wasabi.
 
 ```sh
-[user@source-wasabi ~]$ git clone https://github.com/zkSNACKs/WalletWasabi.git
+[user@source-wasabi ~]$ git clone https://github.com/WalletWasabi/WalletWasabi.git
 [user@source-wasabi ~]$ cd WalletWasabi/WalletWasabi.Fluent.Desktop
 [user@source-wasabi ~]$ dotnet run
 ```
@@ -234,7 +234,7 @@ Start your cloned VM, and open a terminal window.
 Clone & run Wasabi.
 
 ```sh
-your@vm:~$ git clone https://github.com/zkSNACKs/WalletWasabi.git
+your@vm:~$ git clone https://github.com/WalletWasabi/WalletWasabi.git
 your@vm:~$ cd WalletWasabi/WalletWasabi.Fluent.Desktop
 your@vm:~$ dotnet run
 ```

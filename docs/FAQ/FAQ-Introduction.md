@@ -11,7 +11,7 @@
 
 ### Who can use Wasabi?
 
-Every single line of code in Wasabi, the [wallet](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Fluent.Desktop), the [backend server](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Backend), the [daemon](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Daemon), the [tests](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Tests), the [packager](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Packager), the [library](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi), the [api](https://wasabiwallet.io/swagger/), the [documentation](https://github.com/zkSNACKs/WasabiDoc) - has always been and will always be libre and open-source under the [MIT license](https://github.com/zkSNACKs/WalletWasabi/blob/master/LICENSE.md).
+Every single line of code in Wasabi, the [wallet](https://github.com/WalletWasabi/WalletWasabi/tree/master/WalletWasabi.Fluent.Desktop), the [backend server](https://github.com/WalletWasabi/WalletWasabi/tree/master/WalletWasabi.Backend), the [daemon](https://github.com/WalletWasabi/WalletWasabi/tree/master/WalletWasabi.Daemon), the [tests](https://github.com/WalletWasabi/WalletWasabi/tree/master/WalletWasabi.Tests), the [packager](https://github.com/WalletWasabi/WalletWasabi/tree/master/WalletWasabi.Packager), the [library](https://github.com/WalletWasabi/WalletWasabi/tree/master/WalletWasabi), the [api](https://wasabiwallet.io/swagger/), the [documentation](https://github.com/WalletWasabi/WasabiDoc) - has always been and will always be libre and open-source under the [MIT license](https://github.com/WalletWasabi/WalletWasabi/blob/master/LICENSE.md).
 This means that anyone, yes, ANYONE can use Wasabi without permission, for any use case, free of charge.
 
 Wasabi is used by individuals to make everyday payments, to manage their hardware wallet long term hodlings, and to CoinJoin their sats for added privacy.
@@ -78,13 +78,13 @@ Yes, you can check the status of Wasabi-related services and websites (like APIs
 ### What software supplies the block filters that Wasabi uses?
 
 The zkSNACKs coordinator supplies identical filters to every client.
-This means that you rely on the [Wasabi backend](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Backend) to provide valid filters.
+This means that you rely on the [Wasabi backend](https://github.com/WalletWasabi/WalletWasabi/tree/master/WalletWasabi.Backend) to provide valid filters.
 But because you download the blocks from a random Bitcoin peer-to-peer node - or your own node - the coordinator cannot spy on which blocks you are interested in.
 Furthermore, the random node will only know which block is needed but it won't have any clue which transaction(s) belongs to the wallet.
 
 ### Is the Backend's (Coordinator) code open-source?
 
-Yes, you can verify the code on [GitHub](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Backend).
+Yes, you can verify the code on [GitHub](https://github.com/WalletWasabi/WalletWasabi/tree/master/WalletWasabi.Backend).
 
 ### Is there an Android/iOs version?
 
@@ -115,7 +115,7 @@ This gives a false sense of security, **but does not worsen the existing privacy
 It would also be noticeable to all users excluding the user being targeted as their coins would not be mixed.
 It has been argued that this 'attack' would be very costly in terms of fees because the number of coins being mixed is verifiable.
 Though it is true that remixes pay zero coordination fee to zkSNACKs, they do pay mining fees.
-See [here](https://github.com/zkSNACKs/WabiSabi/blob/master/protocol.md#attacks-on-privacy) for more info.
+See [here](https://github.com/WalletWasabi/WabiSabi/blob/master/protocol.md#attacks-on-privacy) for more info.
 
 ### What is the history of Wasabi?
 
@@ -134,7 +134,7 @@ Key dates:
 
 ### Why is Wasabi libre and open-source software?
 
-Wasabi follows Bitcoin's philosophy by making the software [open-source](https://github.com/zkSNACKs/WalletWasabi/) and by publishing it under [MIT license](https://github.com/zkSNACKs/WalletWasabi/blob/master/LICENSE.md).
+Wasabi follows Bitcoin's philosophy by making the software [open-source](https://github.com/WalletWasabi/WalletWasabi/) and by publishing it under [MIT license](https://github.com/WalletWasabi/WalletWasabi/blob/master/LICENSE.md).
 Bitcoin users prefer open-source software to proprietary software for a number of reasons, including:
 
 :::tip Control
@@ -195,12 +195,12 @@ For more info please see [WabiSabi](https://github.com/zksnacks/wabisabi).
 ### What are the supported operating systems?
 
 Wasabi runs in most operating systems with 64-bit architecture.
-For the complete list of all the officially supported operating systems, click [here](https://github.com/zkSNACKs/WalletWasabi/blob/master/WalletWasabi.Documentation/WasabiCompatibility.md#officially-supported-operating-systems).
+For the complete list of all the officially supported operating systems, click [here](https://github.com/WalletWasabi/WalletWasabi/blob/master/WalletWasabi.Documentation/WasabiCompatibility.md#officially-supported-operating-systems).
 
 ### What are the minimal requirements to run Wasabi?
 
-As long as your operating system is [supported](https://github.com/zkSNACKs/WalletWasabi/blob/master/WalletWasabi.Documentation/WasabiCompatibility.md#officially-supported-operating-systems), Wasabi should be able to run on your hardware.
+As long as your operating system is [supported](https://github.com/WalletWasabi/WalletWasabi/blob/master/WalletWasabi.Documentation/WasabiCompatibility.md#officially-supported-operating-systems), Wasabi should be able to run on your hardware.
 The more transactions a wallet has made, the more resources Wasabi will consume, particularly RAM.
 The software can also consume a significant amount of CPU for specific tasks, such as coinjoins or wallet loading.
 Approximately 3 GB of disk space are also needed, mainly to store the [block filters](/FAQ/FAQ-UseWasabi.md#what-are-bip-158-block-filters).
-If you are running the wallet on a system with scarce resources, consider using the [daemon](https://github.com/zkSNACKs/WalletWasabi/tree/master/WalletWasabi.Daemon) instead of the GUI application.
+If you are running the wallet on a system with scarce resources, consider using the [daemon](https://github.com/WalletWasabi/WalletWasabi/tree/master/WalletWasabi.Daemon) instead of the GUI application.
