@@ -205,31 +205,3 @@ For example, to specify a single obfs4 Tor bridge, one can use:
 ```bash
 $ --torfolder="$HOME/tor-browser_en-US/Browser/TorBrowser/Tor" --torbridges="obfs4 95.216.9.24:14288 2F26D43258285FEB39E4320888DFAFA8A0D20E11 cert=RJHxHEYW2JnFMTZdf2mdwpEhm7B8RQMCK6ttBL/fPhfdrF20ooAuaITK5MqZooVpXsSVVQ iat-mode=0"
 ```
-
-**Steps with Tor Daemon on Linux:**
-
-:::tip
-These are commands for Debian.
-Feel free to edit these commands according to your distribution.
-:::
-
-1. Get [Tor Bridges](https://bridges.torproject.org/bridges)
-2. Install Tor daemon with `sudo apt-get install tor`
-3. Install OBFS4 support (needed to connect to bridges), by editing your `/etc/apt/sources.list` and adding this line:
-```sh
-# Tor Bridges
-deb http://deb.torproject.org/torproject.org obfs4proxy main
-```
-4. Update package list with `sudo apt-get update` and install OBFS4 with `sudo apt-get install obfs4proxy`
-5. Configure Tor by editing your `/etc/tor/torrc` file and adding these lines:
-```sh
-UseBridges 1
-
-# Do not use the following bridges, instead use the ones you get in Step 1!
-Bridge 88.153.28.205:443 AD16D468305F6CEBA66CFBE37B7721C05282065D
-Bridge 37.218.246.193:19924 B56436117274B0DA0BA8EDDF78679ECFF4C0E2AA
-Bridge 194.132.209.92:26848 14FF5F91FE1CD6C1EDAB2D41A897B70FCC5DFAFA
-
-ServerTransportPlugin obfs4 exec /usr/bin/obfs4proxy
-```
-6. Restart Tor with `sudo service tor restart` and check logs with `sudo tail -f /var/log/tor/log` to verify that everything is working properly
