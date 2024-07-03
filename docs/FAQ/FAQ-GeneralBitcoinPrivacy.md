@@ -184,12 +184,13 @@ You can read more on [The Tor Project's dedicated page about bridges](https://su
 See [here](https://support.torproject.org/censorship/gettor-1/) on how to do that when Tor website is blocked.
 2. You'll need to specify the Tor folder, as Wasabi's bundled Tor doesn't come with the PluggableTransports folder, so you'll need to specify a folder where the fully-featured Tor is located.
 See the next step.
-3. Start Wasabi with _TorFolder_ (to specify where Tor Browser's Tor binary is located, along with the _PluggableTransports_ folder) and _TorBridges_ (to specify which bridge(s) to use) [startup parameters](/using-wasabi/StartupParameters.md): 
+3. Start Wasabi with _TorFolder_ (to specify where Tor Browser's Tor binary is located, along with the _PluggableTransports_ folder) and _TorBridges_ (to specify which bridge(s) to use) [startup parameters](/using-wasabi/StartupParameters.md):
 
-`--torfolder="$HOME/tor-browser_en-US/Browser/TorBrowser/Tor --torbridges="<bridgeDefinition>"`
+	`--torfolder="$HOME/tor-browser_en-US/Browser/TorBrowser/Tor --torbridges="<bridgeDefinition>"`
 
-To use multiple Tor bridges:
-`--torbridges="<bridgeDefinition>;<secondBridgeDefinition>;<thirdBridgeDefinition>"`
+	To use multiple Tor bridges:
+
+	`--torbridges="<bridgeDefinition>;<secondBridgeDefinition>;<thirdBridgeDefinition>"`
 
 > When using _obfs4_ or _webtunnel_, at least two bridges should be specified for Tor's Conflux feature to work properly and for better performance.
 
