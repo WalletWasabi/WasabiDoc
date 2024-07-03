@@ -171,8 +171,7 @@ export default defineUserConfig({
                 sidebarDepth: 2,
                 children: [
                     "/using-wasabi/WalletRecovery.md",
-                    "/using-wasabi/ExternalRestore.md",
-                    "/using-wasabi/PasswordFinder.md"
+                    "/using-wasabi/ExternalRestore.md"
                 ]
             }, {
                 text: "Advanced Installing Wasabi",
