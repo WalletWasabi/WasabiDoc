@@ -14,6 +14,11 @@ In the case of Wasabi documentation, it usually indicates the arrival of a new f
 
 E.g. "Lightning Network is coming to Wasabi in #twoweeks"
 
+### Absolute min input count
+
+The client will refuse to participate in coinjoin rounds with a minimum input count lower than this value.
+The default value is 21.
+
 ### Address Reuse
 
 Address reuse refers to the use of the same address for multiple transactions, this is very bad for privacy.
