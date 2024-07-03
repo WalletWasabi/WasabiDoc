@@ -157,6 +157,11 @@ Read more: [AML/KYC Information](/why-wasabi/TransactionSurveillanceCompanies.md
 The maximum coordination fee rate the client is willing to accept to participate into a round.
 The default value is 0 (%).
 
+### Max Coinjoin Mining Fee Rate
+
+The maximum mining fee rate in sat/vByte the client is willing to pay to participate into a round.
+The default value is 150.
+
 ### Observers
 
 A way to track who knows about the ownership of your coins.
