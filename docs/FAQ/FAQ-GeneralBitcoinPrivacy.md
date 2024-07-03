@@ -174,57 +174,34 @@ In fact, if a user creates a new Tor circuit every time he opens Wasabi Wallet, 
 
 ### My country/ISP is blocking/censoring Tor, how can I use Wasabi with Tor bridges?
 
-:::warning
-Feature not yet ported to Wasabi 2.0
-:::
-
-Tor bridges, also called Tor bridge relays, are alternative entry points to the Tor network that are not all listed publicly.
-If you suspect your access to the Tor network is being blocked, you may want to use bridges.
-You can read more on [The Tor Project's dedicated page about bridges](https://www.torproject.org/docs/bridges).
-
-:::tip
-If you are using Tor Browser Bundle it is extremely easy to configure it to use bridges.
-Configuring Tor bridges running in a daemon mode is more difficult and takes more time.
-:::
+Tor bridges, also called Tor bridge relays, are alternative entry points to the Tor network that are not listed in the public Tor directory.
+If you suspect that your access to the Tor network is being blocked, you may want to use bridges.
+You can read more on [The Tor Project's dedicated page about bridges](https://support.torproject.org/censorship/censorship-7/).
 
 **Steps with Tor Browser:**
 
-1. Download and install the [Tor Browser](https://www.torproject.org/)
-2. Change the `Settings` of the Tor Browser to use one of the bridges or pluggable transports
-3. Leave Tor Browser running after connecting with a bridge
-4. Change the `Settings` of Wasabi Wallet and edit `TorSocks5 Endpoint` from `127.0.0.1:9050` to `127.0.0.1:9150`
-5. Restart Wasabi
+1. Download and install the [Tor Browser](https://www.torproject.org/).
+See [here](https://support.torproject.org/censorship/gettor-1/) on how to do that when Tor website is blocked.
+2. You'll need to specify the Tor folder, as Wasabi's bundled Tor doesn't come with the PluggableTransports folder, so you'll need to specify a folder where the fully-featured Tor is located.
+See the next step.
+3. Start Wasabi with _TorFolder_ (to specify where Tor Browser's Tor binary is located, along with the _PluggableTransports_ folder) and _TorBridges_ (to specify which bridge(s) to use) [startup parameters](/using-wasabi/StartupParameters.md): 
 
-After this, Wasabi will connect to Tor using the Tor Browser's connection via a random bridge.
+`--torfolder="$HOME/tor-browser_en-US/Browser/TorBrowser/Tor --torbridges="<bridgeDefinition>"`
 
-:::warning
-To make use of Tor bridges on Wasabi, you must always keep Tor Browser open.
-:::
+To use multiple Tor bridges:
+`--torbridges="<bridgeDefinition>;<secondBridgeDefinition>;<thirdBridgeDefinition>"`
 
-**Steps with Tor Daemon on Linux:**
+> When using _obfs4_ or _webtunnel_, at least two bridges should be specified for Tor's Conflux feature to work properly and for better performance.
 
-:::tip
-These are commands for Debian.
-Feel free to edit these commands according to your distribution.
-:::
+Default folders where Tor Browser's Tor is located:
+- Windows: C:\Users\<USER>\Desktop\Tor Browser\Browser\TorBrowser\Tor
+- macOS: /Applications/Tor Browser.app/Contents/MacOS/Tor
+- linux: $HOME/tor-browser_en-US/Browser/TorBrowser/Tor
 
-1. Get [Tor Bridges](https://bridges.torproject.org/bridges)
-2. Install Tor daemon with `sudo apt-get install tor`
-3. Install OBFS4 support (needed to connect to bridges), by editing your `/etc/apt/sources.list` and adding this line:
-```sh
-# Tor Bridges
-deb http://deb.torproject.org/torproject.org obfs4proxy main
+> Currently only the _obfs4_, _Snowflake_ and _webtunnel_ pluggable transports can be used, others are not supported.
+
+For example, to specify a single obfs4 Tor bridge, one can use:
+
+```bash
+$ --torfolder="$HOME/tor-browser_en-US/Browser/TorBrowser/Tor" --torbridges="obfs4 95.216.9.24:14288 2F26D43258285FEB39E4320888DFAFA8A0D20E11 cert=RJHxHEYW2JnFMTZdf2mdwpEhm7B8RQMCK6ttBL/fPhfdrF20ooAuaITK5MqZooVpXsSVVQ iat-mode=0"
 ```
-4. Update package list with `sudo apt-get update` and install OBFS4 with `sudo apt-get install obfs4proxy`
-5. Configure Tor by editing your `/etc/tor/torrc` file and adding these lines:
-```sh
-UseBridges 1
-
-# Do not use the following bridges, instead use the ones you get in Step 1!
-Bridge 88.153.28.205:443 AD16D468305F6CEBA66CFBE37B7721C05282065D
-Bridge 37.218.246.193:19924 B56436117274B0DA0BA8EDDF78679ECFF4C0E2AA
-Bridge 194.132.209.92:26848 14FF5F91FE1CD6C1EDAB2D41A897B70FCC5DFAFA
-
-ServerTransportPlugin obfs4 exec /usr/bin/obfs4proxy
-```
-6. Restart Tor with `sudo service tor restart` and check logs with `sudo tail -f /var/log/tor/log` to verify that everything is working properly
