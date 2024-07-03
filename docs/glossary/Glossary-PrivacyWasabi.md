@@ -135,17 +135,17 @@ Dust is an UTXO that is uneconomical to spend.
 Also, small portions of bitcoin can lead to serious consequences for one's privacy, for example the so called `forced address reuse attack`.
 Read more: [What is the dust threshold](/FAQ/FAQ-UseWasabi.md#what-is-the-dust-threshold)
 
-### Label
-
-A label can be added to a coin, as a small note on who knows this coin belongs to you.
-Good labelling can help the user and the wallet to make better privacy conscious decisions later on when spending.
-Read more: [Why do I have to label my address](/FAQ/FAQ-UseWasabi.md#why-do-i-have-to-label-my-address)
-
 ### Know Your Customer (KYC)
 
 KYC (Know Your Customer) is the process of a business being forced to identify and verify the identity of its clients, and to share this information with a government.
 The term is also used to refer to the bank regulation which governs these activities.
 Read more: [AML/KYC Information](/why-wasabi/TransactionSurveillanceCompanies.md#aml-kyc-information)
+
+### Label
+
+A label can be added to a coin, as a small note on who knows this coin belongs to you.
+Good labelling can help the user and the wallet to make better privacy conscious decisions later on when spending.
+Read more: [Why do I have to label my address](/FAQ/FAQ-UseWasabi.md#why-do-i-have-to-label-my-address)
 
 ### Observers
 
