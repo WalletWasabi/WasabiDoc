@@ -152,6 +152,11 @@ KYC (Know Your Customer) is the process of a business being forced to identify a
 The term is also used to refer to the bank regulation which governs these activities.
 Read more: [AML/KYC Information](/why-wasabi/TransactionSurveillanceCompanies.md#aml-kyc-information)
 
+### Max Coordination Fee Rate
+
+The maximum coordination fee rate the client is willing to accept to participate into a round.
+The default value is 0 (%).
+
 ### Observers
 
 A way to track who knows about the ownership of your coins.
