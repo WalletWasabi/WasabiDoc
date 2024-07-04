@@ -1143,7 +1143,7 @@ It is necessary to spend your bitcoin or to recover your wallet, as shown in [th
 ### What should I do if I forget my password?
 
 Try every possibility you can think of to find your passphrase, you have an unlimited number of tries.
-If that still doesn't work, you might want to try external password crackers or recovery tools.
+If that still doesn't work, you might want to try external password crackers or recovery tools, but be careful to only use well-tested, well-reviewed ones.
 
 ### I lost the recovery words but I still have the .json file and the password. Is my wallet still recoverable?
 
