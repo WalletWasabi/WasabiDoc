@@ -36,7 +36,6 @@ Further tutorials about the different parts of the wallet, for newbies and power
 ### Restoring Wasabi
 - [Recover a Wallet](/using-wasabi/WalletRecovery.md)
 - [Restoring Wasabi Wallet to Other Wallets](/using-wasabi/ExternalRestore.md)
-- [Password Finder](/using-wasabi/PasswordFinder.md)
 
 ### Advanced Installing Wasabi
 - [Build from source code](/using-wasabi/BuildSource.md)

@@ -1142,8 +1142,8 @@ It is necessary to spend your bitcoin or to recover your wallet, as shown in [th
 
 ### What should I do if I forget my password?
 
-Try to use the [Password Finder Tool](/using-wasabi/PasswordFinder.md) to find your passphrase.
-Having a close guess of what the passphrase is increases the possibility that you get your passphrase.
+Try every possibility you can think of to find your passphrase, you have an unlimited number of tries.
+If that still doesn't work, you might want to try external password crackers or recovery tools.
 
 ### I lost the recovery words but I still have the .json file and the password. Is my wallet still recoverable?
 
