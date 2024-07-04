@@ -14,6 +14,11 @@ In the case of Wasabi documentation, it usually indicates the arrival of a new f
 
 E.g. "Lightning Network is coming to Wasabi in #twoweeks"
 
+### Absolute min input count
+
+The client will refuse to participate in coinjoin rounds with a minimum input count lower than this value.
+The default value is 21.
+
 ### Address Reuse
 
 Address reuse refers to the use of the same address for multiple transactions, this is very bad for privacy.
@@ -146,6 +151,16 @@ Read more: [AML/KYC Information](/why-wasabi/TransactionSurveillanceCompanies.md
 A label can be added to a coin, as a small note on who knows this coin belongs to you.
 Good labelling can help the user and the wallet to make better privacy conscious decisions later on when spending.
 Read more: [Why do I have to label my address](/FAQ/FAQ-UseWasabi.md#why-do-i-have-to-label-my-address)
+
+### Max Coordination Fee Rate
+
+The maximum coordination fee rate the client is willing to accept to participate into a round.
+The default value is 0 (%).
+
+### Max Coinjoin Mining Fee Rate
+
+The maximum mining fee rate in sat/vByte the client is willing to pay to participate into a round.
+The default value is 150.
 
 ### Observers
 
