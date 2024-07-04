@@ -49,6 +49,7 @@ All configuration options available via the `Config.json` file are also availabl
 | "CoordinatorIdentifier": "CoinJoinCoordinatorIdentifier" | --coordinatoridentifier="coinjoincoordinatoridentifier" | WASABI-COORDINATORIDENTIFIER="coinjoincoordinatoridentifier" |
 | "MaxCoordinationFeeRate": 0.0 | --maxcoordinationfeerate=0.0 | WASABI-MAXCOORDINATIONFEERATE=0.0 |
 | "MaxCoinJoinMiningFeeRate": 150.0 | --maxcoinjoinminingfeerate=150.0 | WASABI-MAXCOINJOINMININGFEERATE=150.0 |
+| "AbsoluteMinInputCount": 21 | --absolutemininputcount=21 | WASABI-ABSOLUTEMININPUTCOUNT=21 |
 
 ### Non-Config file configurations
 
