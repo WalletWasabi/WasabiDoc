@@ -30,7 +30,7 @@ jobs:
     - name: Deploy to GitHub Pages
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run:
-        git config user.email "ci-deployer@howknows.com"
-        git config user.name "ci-deployer"
+      run: |
+        git config user.email ci-deployer@howknows.com
+        git config user.name ci-deployer
         npm run deploy -r https://${{ secrets.GITHUB_TOKEN }}@github.com/WalletWasabi/WasabiDoc
