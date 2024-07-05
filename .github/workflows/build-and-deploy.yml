@@ -30,7 +30,11 @@ jobs:
     - name: Deploy to GitHub Pages
       env:
         DEPLOY_ACCESS_TOKEN: ${{ secrets.DEPLOY_ACCESS_TOKEN }}
+        MY_EMAIL: lucasontivero@gmail.com
+        MY_NAME: lucasontivero
       run: |
-        git config user.email ci-deployer@howknows.com
-        git config user.name ci-deployer
-        npm run deploy -r https://${{ secrets.DEPLOY_ACCESS_TOKEN }}@github.com/WalletWasabi/WasabiDoc.git
+        git config --global user.email $MY_EMAIL
+        git config --global user.name $MY_NAME
+        git remote set-url origin https://$MY_NAME:${{ secrets.DEPLOY_ACCESS_TOKEN }}@github.com/WalletWasabi/WasabiDoc.git
+        npm run deploy
+
