@@ -35,6 +35,6 @@ jobs:
       run: |
         git config --global user.email $MY_EMAIL
         git config --global user.name $MY_NAME
-        git remote set-url origin https://${{ secrets.DEPLOY_ACCESS_TOKEN }}@github.com/WalletWasabi/WasabiDoc.git
+        git remote set-url origin https://lontivero:${{ secrets.DEPLOY_ACCESS_TOKEN }}@github.com/WalletWasabi/WasabiDoc.git
         npm run deploy
 
