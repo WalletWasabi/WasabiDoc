@@ -36,13 +36,6 @@ All such contributions are very welcomed and greatly appreciated.
 This will help others point you in the right direction.
 - Explore the communication channels and find out what the peers are tinkering on, learn about the project and who is contributing in what way.
 This will help you to find the interesting challenges you can work on.
-- Wasabi Research Club is a weekly online call, focused mainly on Bitcoin privacy.
-Everyone is welcome to join the discussions. 
-However, being familiar with the topic (if there is any) is recommended.
-
-Discussions might be recorded and published on the Wasabi Wallet [YouTube channel](https://www.youtube.com/c/wasabiwallet).
-
-You can find the schedule, call link, past recordings and more at the [Wasabi Research Club repository](https://github.com/zkSNACKs/WasabiResearchClub/).
 
 ## Learn how Wasabikas work
 
@@ -68,11 +61,6 @@ You can create wallet tutorials, record insightful discussions, write articles o
 Connecting like-minded individuals, who want to take control of their own financial privacy and teaching them about the awesome tools that are available, can be life changing.
 3. **Helping and teaching new users**, once you are familiar with the software, is something that can't be underestimated.
 You can do this in any social media like Twitter, Telegram, Reddit etc or in your own neighborhood.
-
-:::tip [zkSNACKs Ltd.](https://zksnacks.com/) is known for compensating educators who consistently help out new users or create good content. 
-The company is actively sponsoring Bitcoin events and organizing [Contribution Games](https://blog.wasabiwallet.io/coming-soon-contribution-games/).
-In case you have been contributing already, feel free to let other Wasabikas know by sending us a link to your content in [Slack](https://join.slack.com/t/tumblebit/shared_invite/enQtNjQ1MTQ2NzQ1ODI0LWIzOTg5YTM3YmNkOTg1NjZmZTQ3NmM1OTAzYmQyYzk1M2M0MTdlZDk2OTQwNzFiNTg1ZmExNzM0NjgzY2M0Yzg).
-:::
 
 ### GitHub Contributor
 
