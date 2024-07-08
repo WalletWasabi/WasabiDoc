@@ -982,7 +982,7 @@ Alternatively, coins can be excluded from coinjoin using the [excludefromcoinjoi
 
 ### How long does it take to make my wallet 100% private?
 
-Depending on many factors, like the `Anonymity score target`, the `coinjoin strategy`, and the amount of bitcoin, it can take from a couple hours to multiple days.
+Depending on many factors, such as the `Anonymity score target`, the `Coinjoin trategy`, the amount of bitcoin, and the liquidity of the coordinator, this can take from a few hours to several days or more.
 
 ### What coinjoin strategy should I select?
 
