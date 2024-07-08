@@ -77,7 +77,7 @@ Yes, you can check the status of Wasabi-related services and websites (like APIs
 
 ### What software supplies the block filters that Wasabi uses?
 
-The zkSNACKs coordinator supplies identical filters to every client.
+The Wasabi backend supplies identical filters to every client.
 This means that you rely on the [Wasabi backend](https://github.com/WalletWasabi/WalletWasabi/tree/master/WalletWasabi.Backend) to provide valid filters.
 But because you download the blocks from a random Bitcoin peer-to-peer node - or your own node - the coordinator cannot spy on which blocks you are interested in.
 Furthermore, the random node will only know which block is needed but it won't have any clue which transaction(s) belongs to the wallet.
@@ -190,7 +190,7 @@ The requirements and recommendations for pre and post-mix wallets together defin
 Coins from pre-mix wallets to post-mix wallets are moved by mixing. Most on-chain mixing techniques, like CoinShuffle, CoinShuffle++, TumbleBit's Classic Tumbler mode, or ZeroLink can be used.
 However WabiSabi defines its own mixing technique: [WabiSabi coinjoin](/using-wasabi/CoinJoin.md).
 
-For more info please see [WabiSabi](https://github.com/zksnacks/wabisabi).
+For more info please see [WabiSabi](https://github.com/WalletWasabi/wabisabi).
 
 ### What are the supported operating systems?
 
