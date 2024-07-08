@@ -807,7 +807,8 @@ The _result_ is the paymentId.
 
 A _payincoinjoin_ is written to the logs and its status can be seen by using the _listpaymentsincoinjoin_ method.
 
-Payments in coinjoin can in theory be made to any ScriptPubKey, however the zkSNACKs coordinator currently only accepts P2WPKH and P2TR outputs.
+Payments in coinjoin can theoretically be made to any ScriptPubKey. 
+However, the coordinator may only accept certain types of outputs.
 
 Currently the default maximum is 4 payments per client per coinjoin.
 
