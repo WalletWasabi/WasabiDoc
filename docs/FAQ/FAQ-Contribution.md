@@ -21,14 +21,6 @@ Your help is deeply appreciated, and very much needed!
 First please read the [contribution checklist](/building-wasabi/ContributionChecklist.md) to get introduced to the project and to start out in the right direction.
 Join our [Slack](https://join.slack.com/t/tumblebit/shared_invite/enQtNjQ1MTQ2NzQ1ODI0LWIzOTg5YTM3YmNkOTg1NjZmZTQ3NmM1OTAzYmQyYzk1M2M0MTdlZDk2OTQwNzFiNTg1ZmExNzM0NjgzY2M0Yzg) and check out our [GitHub repository](https://github.com/WalletWasabi/WalletWasabi), so that you can stay up-to-date with the latest contributions.
 
-### Is there a bounty program?
-
-Yes!
-The beauty of Wasabi is that it's not just a very awesome wallet by default, but it has the additional opt-in CoinJoin service.
-This is provided by [zkSNACKs Ltd.](https://zksnacks.com), and in exchange for this service, the user pays a coordination fee.
-In return, zkSNACKs is supporting several developers to dedicate their full time to contribute to this open-source project.
-There are also contribution games where a bounty is paid out to any contributor worthy the prize.
-
 ### How can I report a bug?
 
 Code is speech, and can never be perfect.
