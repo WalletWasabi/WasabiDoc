@@ -30,11 +30,11 @@ There are several software implementations that function as a full node, for exa
 ## How does Wasabi use your Bitcoin full node
 
 Wasabi currently has a work in progress partial Bitcoin Knots integration.
-As of now, the zkSNACKs coordinating server broadcasts [BIP 158 block filters](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki) to all Wasabi clients, who locally check if the filter hits for their public keys.
+As of now, the Wasabi backend server broadcasts [BIP 158 block filters](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki) to all Wasabi clients, who locally check if the filter hits for their public keys.
 Then you know that this block has a transaction of yours included, or maybe it is a false positive.
 
 :::warning Work in progress
-The zkSNACKs server has to be trusted to serve correct filters.
+The Wasabi backend has to be trusted to serve correct filters.
 This current work in progress integration **does not** verify consensus within Wasabi. 
 :::
 
@@ -44,7 +44,7 @@ Further, your full node is used to estimate the current mining fee level based o
 Your full node is not used to broadcast your transactions, as this is done through a random peer-to-peer node with a new tor identity, which is better for your [network-level privacy](/why-wasabi/NetworkLevelPrivacy.md).
 
 The future goal is that the local full node (Knots) is used to generate the BIP 158 block filters from the verified blocks.
-Only then is there full verification, and no trust in the zkSNACKs server.
+Only then is there full verification, and no trust in the Wasabi backend server.
 
 ## bitcoind within Wasabi
 
