@@ -155,7 +155,7 @@ Read more: [Why do I have to label my address](/FAQ/FAQ-UseWasabi.md#why-do-i-ha
 ### Max Coordination Fee Rate
 
 The maximum coordination fee rate the client is willing to accept to participate into a round.
-The default value is 0 (%).
+The default value is 0.
 
 ### Max Coinjoin Mining Fee Rate
 
