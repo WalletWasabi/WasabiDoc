@@ -174,7 +174,6 @@ It was introduced in order to have a higher coinjoin success rate.
 
 The coinjoin transaction has been successfully built and signed, and it is now ready to be [broadcast](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-broadcasting-phase) to the peers of the Bitcoin network.
 The coordinator sends this transaction over the Tor network to random Bitcoin P2P nodes, and from there it is gossiped to other nodes and miners.
-To save on mining fees, the target confirmation time is roughly 24 hours.
 
 ## Coinjoin Settings
 
