@@ -91,11 +91,6 @@ There are three coinjoin strategies to choose from in Wasabi Wallet which effect
 These three strategies are `Minimize Cost`, `Maximize Speed`, and `Maximize Privacy`.
 Each of these strategies come with different trade-offs.
 
-Alternatively, custom coinjoin settings can be configured.
-
-
-![Coinjoin Strategy](/CoinjoinStrategy.png "Coinjoin Strategy")
-
 ## Receiving Address
 
 When sending bitcoin, you need to know the destination address of the receiver.
