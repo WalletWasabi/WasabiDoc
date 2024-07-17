@@ -113,8 +113,7 @@ The follow-up concern is the inverse of the above.
 It is possible that the server could *only* include one 'honest/real' coin in the mix and supply the other coins themselves.
 This gives a false sense of security, **but does not worsen the existing privacy of the coin**.
 It would also be noticeable to all users excluding the user being targeted as their coins would not be mixed.
-It has been argued that this 'attack' would be very costly in terms of fees because the number of coins being mixed is verifiable.
-Though it is true that remixes pay zero coordination fee to zkSNACKs, they do pay mining fees.
+It has been argued that this 'attack' would be very costly in terms of fees because the number of coins being mixed is verifiable, and they always pay mining fees.
 See [here](https://github.com/WalletWasabi/WabiSabi/blob/master/protocol.md#attacks-on-privacy) for more info.
 
 ### What is the history of Wasabi?
