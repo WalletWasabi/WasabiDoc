@@ -87,7 +87,7 @@ For example, the output may contain 20 coins worth exactly 0.3 bitcoin.
 This means that when looking at one of these coinjoin outputs, there is a 1 in 20 chance to find the corresponding input: thus an anonymity set of 20.
 Therefore, the higher the anonymity set, the more your post-coinjoin coin is delinked from the pre-coinjoin history.
 
-There are three coinjoin strategies to choose from in Wasabi Wallet which effect the target anonymity score for your coins.
+There are three coinjoin strategies to choose from in Wasabi Wallet which affect the target anonymity score for your coins.
 These three strategies are `Minimize Cost`, `Maximize Speed`, and `Maximize Privacy`.
 Each of these strategies come with different trade-offs.
 
