@@ -770,10 +770,9 @@ Here's a great explanation about it:
 
 ### What is the minimum amount required to coinjoin?
 
-The minimum amount of bitcoin per coinjoin round is 0.00005000 BTC (5000 sats) + mining fees.
+The coordinator sets the minimum amount of bitcoin required to participate in a coinjoin round.
 
-> The minimum amount can be higher than 5000 sats when mining fees are relatively high, to not create uneconomical outputs.
-The minimum amount for the current coinjoin round(s) is displayed on the https://stats.wasabiwallet.io/ page at the _Coinjoin main net lobbies_ section. (The _Min input amount_ excludes the additionally required mining fee)
+The default is 0.00005000 BTC (5000 sats) + mining fees.
 
 ### What is the maximum amount I can coinjoin?
 
