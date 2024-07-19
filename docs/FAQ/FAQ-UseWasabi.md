@@ -776,8 +776,9 @@ The default is 0.00005000 BTC (5000 sats) + mining fees.
 
 ### What is the maximum amount I can coinjoin?
 
-The maximum possible amount is 43000 BTC per coin per coinjoin round.
-If the user has a coin of more than 43000 BTC, then it must be broken down into smaller parts to be able to coinjoin.
+The coordinator sets the maximum amount of bitcoin an input can have to participate in a coinjoin round.
+
+The default maximum is a 43000 BTC UTXO.
 
 ### What are the fees for the coinjoin?
 
