@@ -146,20 +146,6 @@ It is also implemented in the [NBitcoin library](https://github.com/MetacoSA/NBi
 Additionally, there is no standard way (BIP) to encrypt HD wallets.
 Take into account that it is not only encryption what BIP 38 provides but also a brute-force protection.
 
-### What are the terms and conditions?
-
-The most important parts of the legal documents are summarized in the following points:
-- The service is open-source under the MIT license.
-- The service is provided on a non-custodial basis.
-Safekeeping of keys are the sole responsibility of the user.
-- The user is solely responsible to act according to their local laws and regulations.
-- We do not store any personally identifiable information.
-Moreover, our trustless software architecture prevents us from gathering this information in the first place.
-- A transaction fee is only charged by the service provider for CoinJoin transactions.
-- We only provide written support, and NEVER ask for recovery words, passphrases or similar security critical information.
-
-Read the whole document of [terms and conditions, privacy policy, and legal statement here](https://github.com/WalletWasabi/WalletWasabi/blob/master/WalletWasabi/Legal/Assets/LegalDocumentsWw2.txt)
-
 ### Can I import a watch-only extended public key?
 
 Yes, but not yet in the GUI, you will need to manually create a new wallet file.
