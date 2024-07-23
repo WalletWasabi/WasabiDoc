@@ -113,8 +113,7 @@ export default defineUserConfig({
                 sidebarDepth: 2,
                 children: [
                     "/why-wasabi/WhyPrivacyImportant.md",
-                    "/why-wasabi/WhyFinancialPrivacy.md",
-                    "/why-wasabi/LegalConcern.md"
+                    "/why-wasabi/WhyFinancialPrivacy.md"
                 ]
             }, {
                 text: "Privacy in Bitcoin",
