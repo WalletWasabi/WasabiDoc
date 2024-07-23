@@ -96,7 +96,7 @@ The Wasabi coordinator now verifies that:
 
 * There is still room for more inputs on this coinjoin.
 * The input has not already been registered, is not banned, is unspent, and that the input proof is valid.
-* The input has at least 5000 sats value.
+* The input has at least the [required minimum BTC amount](/FAQ/FAQ-UseWasabi.html#what-is-the-minimum-amount-required-to-coinjoin).
  
 Only when all these checks are passed, does the coordinator allow this input to be registered.
 The coordinator creates and sends a credential back to Alice, which has the same amount as the input minus fees.
