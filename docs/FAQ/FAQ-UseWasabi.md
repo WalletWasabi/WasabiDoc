@@ -1470,25 +1470,6 @@ This can be brought up by pressing and holding the `alt` keystroke (or `option` 
 
 ![Send Review Coins](/SendPreviewTransactionReviewCoins.png "Send Review Coins")
 
-### How do I select coins for spending?
-
-In the normal send workflow, Wasabi automatically selects which coins to send.
-
-To send a specific coin, the user can use the `Wallet Coins` dialog (a.k.a coinlist).
-The coinlist can be brought up by pressing the keyboard combination `CTRL` + `C` + `D` simultaneously on the main view or via the search bar.
-
-:::warning This is for advanced usage only
-Users should stick to the default send workflow.
-Misusing the coinlist for sending can result in critical privacy risks.
-:::
-
-![Wallet Coins Send Selected Coins](/WalletCoinsSendSelectedCoins.png "Wallet Coins Send Selected Coins")
-
-:::warning This is not full coin control
-You can only send coins in full.
-There is no possiblity to enter a bitcoin amount or receive change.
-:::
-
 ### Can I consolidate anonset coins?
 
 It is advisable to limit the recombining of mixed coins because it can only decrease the privacy of these coins.
