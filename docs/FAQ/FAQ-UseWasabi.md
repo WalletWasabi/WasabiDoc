@@ -1452,16 +1452,23 @@ This chain of links between inputs being spent and outputs being generated is ve
 
 ### How can I enable (manual) coin control?
 
-The default [send workflow](/using-wasabi/Send.md#how-to-send-bitcoin-step-by-step) uses the automatic coin selection algorithm, which is optimized in a way that "traditional" coin control is obsolete.
-However, the user can review which coins are selected, or select different coins using the (manual) coin control.
-This can be done by pressing and holding the keystroke `alt` (or `option` on mac device) at the Preview Transaction screen, which will bring up the _Review coins_ button to click on.
+The default [send workflow](/using-wasabi/Send.md#how-to-send-bitcoin-step-by-step) uses the automatic coin selection algorithm by default, which is optimized in a way that "traditional" coin control is obsolete.
 
-![Send Review Coins](/SendPreviewTransactionReviewCoins.png "Send Review Coins")
+However, since Wasabi version [2.1.0.0](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.1.0.0) the user can use the _Manual Control_ option to select which coins to be used for the transaction.
 
-:::warning This is a developer feature
+![Send Button SubAction](/SendButtonSubAction.png "Send Button SubAction")
+
+:::warning This is an advanced feature
 Do NOT use the manual coin control if you do not know what you are doing.
 Misusing it can have seriously bad privacy consequences.
 :::
+
+Both the _Automatic_ and _Manual Control_ flows have the _Review coins_ option at the Preview Transaction screen to see the selected coins.
+This can be useful to see the selection when using _Automatic_ or to review when using _Manual Control_ as Wasabi does not send unnecessary coins (i.e. if you selected more coins than that were needed for the amount).
+
+This can be brought up by pressing and holding the `alt` keystroke (or `option` on mac device) at the Preview Transaction screen, which will bring up the _Review coins_ button to click on.
+
+![Send Review Coins](/SendPreviewTransactionReviewCoins.png "Send Review Coins")
 
 ### How do I select coins for spending?
 
