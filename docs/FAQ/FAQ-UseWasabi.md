@@ -1046,15 +1046,14 @@ This is a temporary ban on your coins in participation of the CoinJoin.
 There are several ways to find a coordinator:
 
 - Users can do their own discovery with tools like [Wasabi Nostr](https://github.com/Kukks/wasabinostr), which discovers Wabisabi coordinators over Nostr.
-- Public announcement websites, such as [Wasabist](https://wasabist.io), [Wabisator](https://wabisator.com), [Liquisabi bot (Twitter)](https://x.com/liquisabi) and [Liquisabi bot (Nostr)](https://njump.me/npub1u4rl3zlfa2efxslhypf4v6r8va5e0c9smxyr5676pxkyk0chn33s0teswa).
+- Public announcement websites, such as [Wabisator](https://wabisator.com), [Liquisabi bot (Twitter)](https://x.com/liquisabi) and [Liquisabi bot (Nostr)](https://njump.me/npub1u4rl3zlfa2efxslhypf4v6r8va5e0c9smxyr5676pxkyk0chn33s0teswa).
 - A coordinator can advertise themselves, like on social media.
+- Run coordinators in your social circles
 
 :::warning Don't trust, verify
 The listed public announcement websites are community run projects, use them with caution.
 It is best to do the discovery yourself.
 :::
-
-> It's on the roadmap to have the discovery built into Wasabi, so users don't have to do it manually.
 
 ### How do I change the coordinator?
 
