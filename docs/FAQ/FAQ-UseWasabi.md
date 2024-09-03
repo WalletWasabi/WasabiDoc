@@ -1285,7 +1285,8 @@ For the complete list of all the officially supported hardware wallets, click [h
 
 Yes, since Wasabi version [2.0.7](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.0.7) BitBox02-BtcOnly is supported.
 
-The device by default asks for a "Pairing code", currently, there is no such function in Wasabi. Therefore, either disable the feature or unlock the device with BitBoxApp or hwi-qt before using it with Wasabi.
+The device by default asks for a "Pairing code", currently, there is no such function in Wasabi. 
+Therefore, either disable the feature or unlock the device with BitBoxApp or hwi-qt before using it with Wasabi.
 
 ### How can I type in the passphrase of my Trezor T?
 
