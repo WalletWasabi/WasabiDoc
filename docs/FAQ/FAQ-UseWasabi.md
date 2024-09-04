@@ -1250,11 +1250,6 @@ Thus currently you have to send the bitcoins from your hardware wallet to a `hot
 
 Read more [here](/using-wasabi/ColdWasabi.md#cold-wasabi-protocol).
 
-:::tip
-Trezor now supports coinjoin with the Trezor Suite, using same rounds as Wasabi Wallet users.
-Read more [here](https://content.trezor.io/coinjoin).
-:::
-
 ### Does Ledger Live send my public keys and addresses to a third party server?
 
 Only if you add your accounts in the app, but not if you update your device firmware or install apps.
