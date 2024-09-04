@@ -71,7 +71,7 @@ This would make the participants pay a lot (unnecessarily).
 To prevent against such behavior the Wasabi client can configure the maximum mining fee rate and the maximum coordination fee it is willing to pay per round. 
 If one of these is higher than the set values, the client will not participate in the coinjoin.
 
-The default values are 0% coordination fee and maximum 150 sat/vByte mining fee rate.
+The default is a coordination fee rate of 0 and a maximum mining fee rate of 150 sat/vByte.
 
 ![Coinjoin Configurations](/SettingsCoinjoinConfigs.png "Coinjoin Configurations")
 
