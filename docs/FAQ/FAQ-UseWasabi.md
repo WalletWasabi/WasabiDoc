@@ -954,6 +954,17 @@ The coins will remain excluded until they are manually deselected.
 
 Alternatively, coins can be excluded from coinjoin using the [excludefromcoinjoin](/using-wasabi/RPC.html#excludefromcoinjoin) RPC call.
 
+### Can I coinjoin to another wallet?
+
+Yes, since Wasabi version [2.0.7.2](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.0.7.2) it is possible to coinjoin to another wallet.
+
+The output wallet must be loaded in Wasabi, as it is not possible to coinjoin to an external wallet.
+It will coinjoin as usual, but use the other wallet's addresses for the coinjoin outputs.
+
+Go to the _Wallet Settings_ -> _Coinjoin_ tab -> select the wallet you want to coinjoin to.
+
+![Coinjoin To Wallet](/WalletSettingsCoinjoinToWallet.png "Coinjoin To Wallet")
+
 ### How long does it take to make my wallet 100% private?
 
 Depending on many factors, such as the `Anonymity score target`, the `Coinjoin strategy`, the amount of bitcoin, and the liquidity of the coordinator, this can take from a few hours to several days or even more.
@@ -1247,6 +1258,7 @@ A `Broadcast` button will be displayed next to the `Send` button, when _PSBT wor
 No, that is currently not possible.
 A coinjoin is a multi round interactive process, and requires fast signing by the participants, thus the keys need to be on a hot computer.
 Thus currently you have to send the bitcoins from your hardware wallet to a `hot` Wasabi Wallet, do the coinjoin and then send them back to a new address on the Hardware wallet for cold-storage.
+Or use the _coinjoin to wallet_ feature, as explained [here](/FAQ/FAQ-UseWasabi.md#can-i-coinjoin-to-another-wallet).
 
 Read more [here](/using-wasabi/ColdWasabi.md#cold-wasabi-protocol).
 
