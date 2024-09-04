@@ -26,6 +26,8 @@ WabiSabi enables centrally coordinated coinjoins with variable amounts in a trus
 2. Wait. Wasabi coinjoins automatically in the background.
 3. You're done! You can make private payments now.
 
+> A coordinator needs to be [configured](https://docs.wasabiwallet.io/FAQ/FAQ-UseWasabi.html#how-do-i-change-the-coordinator).
+
 ### Music box
 
 After opening a hot wallet, it will automatically start a countdown to start coinjoining (±10 minutes).
