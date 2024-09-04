@@ -1258,6 +1258,7 @@ A `Broadcast` button will be displayed next to the `Send` button, when _PSBT wor
 No, that is currently not possible.
 A coinjoin is a multi round interactive process, and requires fast signing by the participants, thus the keys need to be on a hot computer.
 Thus currently you have to send the bitcoins from your hardware wallet to a `hot` Wasabi Wallet, do the coinjoin and then send them back to a new address on the Hardware wallet for cold-storage.
+Or use the _coinjoin to wallet_ feature, as explained [here](/FAQ/FAQ-UseWasabi.md#can-i-coinjoin-to-another-wallet).
 
 Read more [here](/using-wasabi/ColdWasabi.md#cold-wasabi-protocol).
 
