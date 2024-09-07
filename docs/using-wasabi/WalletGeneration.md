@@ -80,4 +80,4 @@ This means that the passphrase is your last line of defense against anyone who t
 
 Wasabi uses [BIP 38: Password-Protected Private Key](https://github.com/bitcoin/bips/blob/master/bip-0038.mediawiki)
 
-![How are the secrets created](how-are-the-secrets-created.png)
+![How Secrets Created](/HowAreTheSecretsCreated.png "How Secrets Created")
