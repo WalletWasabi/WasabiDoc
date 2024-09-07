@@ -80,23 +80,4 @@ This means that the passphrase is your last line of defense against anyone who t
 
 Wasabi uses [BIP 38: Password-Protected Private Key](https://github.com/bitcoin/bips/blob/master/bip-0038.mediawiki)
 
-```mermaid
-flowchart TD
-    ent[Entropy]  --> jctA(( ))
-    wl[Word list] --> jctA
-    jctA --> mne[Mnemonics]
-    mne --> jctB(( ))
-    jctB --> seed[Seed]
-    seed --> extkey[Extended Key]
-    extkey --> privkey["`Private Key
-(This step is
-needed to use
-bip38)`"]
-    privkey --> jctC(( ))
-    pass[Passphrase] ----> jctB & jctC
-    net[Network] --> jctC
-    jctC --> encsec[Encrypted Secret]
-    encsec --> last["`Save encrypted
-                   secret+chaincode+
-                   Fingerprint+ExtPub`"]
-```
+![How are the secrets created](how-are-the-secrets-created.png)
