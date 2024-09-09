@@ -965,6 +965,11 @@ Go to the _Wallet Settings_ -> _Coinjoin_ tab -> select the wallet you want to c
 
 ![Coinjoin To Wallet](/WalletSettingsCoinjoinToWallet.png "Coinjoin To Wallet")
 
+:::warning
+This feature does **not** take into account the anonymity score of coins.
+It will always send all coinjoin outputs to the other wallet, regardless of whether they are (sufficiently) private or not.
+:::
+
 ### How long does it take to make my wallet 100% private?
 
 Depending on many factors, such as the `Anonymity score target`, the `Coinjoin strategy`, the amount of bitcoin, and the liquidity of the coordinator, this can take from a few hours to several days or even more.
