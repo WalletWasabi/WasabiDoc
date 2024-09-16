@@ -28,6 +28,8 @@ If you need help regarding the software specifically, please check out [Discussi
   * How to contribute to Wasabi.
 * ## [Wasabi FAQ](https://github.com/WalletWasabi/WasabiDoc/tree/master/docs/FAQ/)
   * Frequently asked questions.
+  * ## [Backend & Coordinator](https://github.com/WalletWasabi/WasabiDoc/tree/master/docs/backend&coordinator/)
+  * Explanations of common words.
 * ## [Wasabi Glossary](https://github.com/WalletWasabi/WasabiDoc/tree/master/docs/glossary/)
   * Explanations of common words.
 
