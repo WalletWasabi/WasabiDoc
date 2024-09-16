@@ -92,8 +92,8 @@ No, Wasabi and CoinJoin features require considerable computational power, not c
 
 ### Where can I find Wasabi Wallet on social media?
 
-You can find us on [Twitter](https://twitter.com/wasabiwallet), [Reddit](https://www.reddit.com/r/WasabiWallet/), [YouTube](https://www.youtube.com/c/WasabiWallet), [Facebook](https://www.facebook.com/officialwasabiwallet/), [Instagram](https://www.instagram.com/wasabi_wallet/) and [Discord](https://discord.com/invite/nm7YHEZnJs).
-For chat groups you can find us on [Slack](https://join.slack.com/t/tumblebit/shared_invite/enQtNjQ1MTQ2NzQ1ODI0LWIzOTg5YTM3YmNkOTg1NjZmZTQ3NmM1OTAzYmQyYzk1M2M0MTdlZDk2OTQwNzFiNTg1ZmExNzM0NjgzY2M0Yzg), [Telegram](https://t.me/WasabiWallet) and [Keybase](https://keybase.io/team/wasabiwallet).
+You can find us on [X](https://x.com/wasabiwallet), [Nostr](https://njump.me/npub1jw7scmeuewhywwytqxkxec9jcqf3znw2fsyddcn3948lw9q950ps9y35fg) [Reddit](https://www.reddit.com/r/WasabiWallet/), [YouTube](https://www.youtube.com/c/WasabiWallet), [Facebook](https://www.facebook.com/wasabiwalletofficial/), [Instagram](https://www.instagram.com/wasabiwallet.io/) and [Discord](https://discord.com/invite/nm7YHEZnJs).
+For chat groups you can find us on [Slack](https://join.slack.com/t/tumblebit/shared_invite/enQtNjQ1MTQ2NzQ1ODI0LWIzOTg5YTM3YmNkOTg1NjZmZTQ3NmM1OTAzYmQyYzk1M2M0MTdlZDk2OTQwNzFiNTg1ZmExNzM0NjgzY2M0Yzg) and [Telegram](https://t.me/WasabiWallet).
 
 Also, remember to follow our [blog](https://blog.wasabiwallet.io) to get the latest insights and information about Wasabi Wallet and Bitcoin privacy.
 
