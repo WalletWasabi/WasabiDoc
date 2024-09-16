@@ -752,7 +752,7 @@ The default is 0.00005000 BTC (5000 sats) + mining fees.
 
 The coordinator sets the maximum amount of bitcoin an input can have to participate in a coinjoin round.
 
-The default maximum is a 43000 BTC UTXO.
+The default maximum is a 1343,75 BTC UTXO.
 
 ### What are the fees for the coinjoin?
 
