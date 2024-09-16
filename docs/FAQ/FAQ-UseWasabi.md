@@ -965,6 +965,11 @@ Go to the _Wallet Settings_ -> _Coinjoin_ tab -> select the wallet you want to c
 
 ![Coinjoin To Wallet](/WalletSettingsCoinjoinToWallet.png "Coinjoin To Wallet")
 
+:::warning
+This feature does **not** take into account the anonymity score of coins.
+It will always send all coinjoin outputs to the other wallet, regardless of whether they are (sufficiently) private or not.
+:::
+
 ### How long does it take to make my wallet 100% private?
 
 Depending on many factors, such as the `Anonymity score target`, the `Coinjoin strategy`, the amount of bitcoin, and the liquidity of the coordinator, this can take from a few hours to several days or even more.
@@ -1057,7 +1062,7 @@ This is a temporary ban on your coins in participation of the CoinJoin.
 There are several ways to find a coordinator:
 
 - Users can do their own discovery with tools like [Wasabi Nostr](https://github.com/Kukks/wasabinostr), which discovers Wabisabi coordinators over Nostr.
-- Public announcement websites, such as [Wabisator](https://wabisator.com), [Liquisabi bot (X)](https://x.com/liquisabi) and [Liquisabi bot (Nostr)](https://njump.me/npub1u4rl3zlfa2efxslhypf4v6r8va5e0c9smxyr5676pxkyk0chn33s0teswa).
+- Public announcement websites, such as [Wasabist](https://wasabist.io), [Wabisator](https://wabisator.com), [Liquisabi bot (Twitter)](https://x.com/liquisabi) and [Liquisabi bot (Nostr)](https://njump.me/npub1u4rl3zlfa2efxslhypf4v6r8va5e0c9smxyr5676pxkyk0chn33s0teswa).
 - A coordinator can advertise themselves, like on social media.
 - Run coordinators in your social circles
 
