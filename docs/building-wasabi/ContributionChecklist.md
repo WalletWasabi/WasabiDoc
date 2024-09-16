@@ -60,7 +60,7 @@ You can create wallet tutorials, record insightful discussions, write articles o
 2. **Organizing events and doing presentations** about Wasabi Wallet and Bitcoin privacy.
 Connecting like-minded individuals, who want to take control of their own financial privacy and teaching them about the awesome tools that are available, can be life changing.
 3. **Helping and teaching new users**, once you are familiar with the software, is something that can't be underestimated.
-You can do this in any social media like Twitter, Telegram, Reddit etc or in your own neighborhood.
+You can do this in any social media like X, Telegram, Reddit etc or in your own neighborhood.
 
 ### GitHub Contributor
 
