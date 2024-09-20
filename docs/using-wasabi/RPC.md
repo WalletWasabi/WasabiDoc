@@ -448,7 +448,7 @@ In case there is no wallet open it will return:
 Creates an address and returns detailed information about it.
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getnewaddress","params":["Daniel, Alice"]}' http://127.0.0.1:37128/WalletName | jq
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getnewaddress","params":["Daniel, Alice", false]}' http://127.0.0.1:37128/WalletName | jq
 ```
 
 ```json
@@ -464,6 +464,7 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getnewaddress","param
   "id": "1"
 }
 ```
+The first parameter is the label(s), the second parameter is whether to generate a taproot address (the default is _false_, which returns a SegWit address).
 
 In case an empty label is provided:
 
