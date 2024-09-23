@@ -92,7 +92,7 @@ If you have already imported zkSNACKs' PGP public key, then jump to step 2.
 
 ![Download Wasabi Wallet for Linux](/DownloadTar.png "Download Wasabi Wallet for Linux")
 
-3. In the Download folder, run `gpg --verify Wasabi-${currentVersion}.tar.gz.asc Wasabi-${currentVersion}.tar.gz`.
+3. In the Download folder, run `gpg --verify Wasabi-${currentVersion}-linux-x64.tar.gz.asc Wasabi-${currentVersion}-linux-x64.tar.gz`.
 
 	If the message returned says `Good signature from zkSNACKs` and that it was signed with `Primary key fingerprint: ${zksnacksPublicKeyFingerprint}`, then the software was not tampered with since the developer signed it.
 
@@ -101,7 +101,7 @@ If you have already imported zkSNACKs' PGP public key, then jump to step 2.
 	You can ignore this, but if you want to fully verify your download, you need to ask people you trust to confirm that the key fingerprint belongs to zkSNACKs.
 	:::
 
-4. Extract the archive while keeping the file permissions: `tar -pxzf Wasabi-${currentVersion}.tar.gz`.
+4. Extract the archive while keeping the file permissions: `tar -pxzf Wasabi-${currentVersion}-linux-x64.tar.gz`.
 
 5. Run Wasabi by executing `./wassabee`.
 

@@ -66,8 +66,8 @@ Check out the main documentation for a [step-by-step guide](/using-wasabi/Instal
 
 ![Download Wasabi Wallet for Linux](/DownloadTar.png "Download Wasabi Wallet for Linux")
 
-Verify the signature of the package with `gpg --verify Wasabi-${currentVersion}.tar.gz.asc Wasabi-${currentVersion}.tar.gz` and ensure that the software was signed by zkSNACKs' PGP public key [${zksnacksPublicKeyFingerprint}](https://github.com/WalletWasabi/WalletWasabi/blob/master/PGP.txt).
-Now install Wasabi with `sudo tar -pxzf Wasabi-${currentVersion}.tar.gz`, and run it with `./wassabee`.
+Verify the signature of the package with `gpg --verify Wasabi-${currentVersion}-linux-x64.tar.gz.asc Wasabi-${currentVersion}-linux-x64.tar.gz` and ensure that the software was signed by zkSNACKs' PGP public key [${zksnacksPublicKeyFingerprint}](https://github.com/WalletWasabi/WalletWasabi/blob/master/PGP.txt).
+Now install Wasabi with `sudo tar -pxzf Wasabi-${currentVersion}-linux-x64.tar.gz`, and run it with `./wassabee`.
 Check out the main documentation for a [step-by-step guide](/using-wasabi/InstallPackage.md#other-linux).
 
 ### How do I install Wasabi on Windows?
