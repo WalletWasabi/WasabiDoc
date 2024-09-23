@@ -152,11 +152,6 @@ A label can be added to a coin, as a small note on who knows this coin belongs t
 Good labelling can help the user and the wallet to make better privacy conscious decisions later on when spending.
 Read more: [Why do I have to label my address](/FAQ/FAQ-UseWasabi.md#why-do-i-have-to-label-my-address)
 
-### Max Coordination Fee Rate
-
-The maximum coordination fee rate the client is willing to accept to participate into a round.
-The default value is 0.
-
 ### Max Coinjoin Mining Fee Rate
 
 The maximum mining fee rate in sat/vByte the client is willing to pay to participate into a round.
