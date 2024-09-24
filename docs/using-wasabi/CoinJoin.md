@@ -66,16 +66,21 @@ Notice that it is not yet possible to coinjoin from a hardware wallet, the keys 
 
 ### Fees
 
-The coinjoin coordinator sets its own fee policy for the coinjoin service provided.
+As of Wasabi version [2.2.0.0](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.2.0.0), the Wasabi client will only participate in coinjoin rounds where it only pays for the mining fees for the blockspace it uses, like any other bitcoin transaction.
 
-Although the coordinator cannot steal money from the coinjoin participants, it could set a high mining fee rate and/or a high coordination fee. 
-This would make the participants pay a lot (unnecessarily). 
-To prevent against such behavior the Wasabi client can configure the maximum mining fee rate and the maximum coordination fee it is willing to pay per round. 
-If one of these is higher than the set values, the client will not participate in the coinjoin.
+The coordinator sets the mining fee rate for the coinjoin transaction.
 
-The default is a coordination fee rate of 0 and a maximum mining fee rate of 150 sat/vByte.
+Users can set the maximum coinjoin mining fee rate they are willing to pay, as well as the minimum number of inputs the coinjoin transaction should have to participate.
+
+The default is a maximum mining fee rate of 150 sat/vByte and a minimum input count of 21.
 
 ![Coinjoin Configurations](/SettingsCoinjoinConfigs.png "Coinjoin Configurations")
+
+It will not participate in rounds where the coordinator charges a coordination fee.
+
+> Previous versions also included the coordination fee concept, where the coordinator could charge a fee for providing the service.
+This has now been removed, as it could be abused by malicious coordinators and/or would require some trust in the coordinator (like free remixes, as they are not enforced in the protocol).
+The full explanation can be found [here](https://blog.wasabiwallet.io/killing-coordination-fee/). 
 
 ## WabiSabi protocol step-by-step
 

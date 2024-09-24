@@ -758,9 +758,13 @@ The default maximum is a 43000 BTC UTXO.
 
 ### What are the fees for the coinjoin?
 
-The coinjoin coordinator sets its own fee policy for the coinjoin service provided.
+As of Wasabi version [2.2.0.0](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.2.0.0), the Wasabi client will only participate in 
+coinjoin rounds where it only pays for the mining fees.
 
-This includes things like the mining fee, the coordination fee, no coordination fee for remixes and/or no coordination fee for UTXO amounts below a threshold etc.
+Previous versions also included the coordination fee concept, where the coordinator could charge a fee for providing the service.
+This has now been removed, so it will not participate in coinjoin rounds that charge a coordination fee.
+
+Read more [here](/using-wasabi/CoinJoin.md#fees).
 
 ### What is the anonymity set?
 
