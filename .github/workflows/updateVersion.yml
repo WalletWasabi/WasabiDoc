@@ -1,0 +1,53 @@
+name: Update WasabiDoc Version
+
+on:
+  repository_dispatch:
+    types: [update-version]
+
+jobs:
+  update-config:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Update config.ts
+        run: |
+          NEW_VERSION="${{ github.event.client_payload.new_version }}"
+          echo "Updating to version: $NEW_VERSION"
+          sed -i "s/currentVersion: '[^']*'/currentVersion: '$NEW_VERSION'/" docs/.vuepress/config.ts
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git checkout -b update-version-branch
+          git add docs/.vuepress/config.ts
+          git commit -m "Update version to ${{ github.event.client_payload.new_version }}"
+          git push -f --set-upstream origin update-version-branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Install GitHub CLI
+        run: sudo apt-get install gh
+
+      - name: Create Pull Request
+        run: |
+          gh pr create --base master --head update-version-branch --title "Update version to ${{ github.event.client_payload.new_version }}" --body "Auto-update version to ${{ github.event.client_payload.new_version }}."
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Merge Pull Request with Admin Privileges
+        run: |
+          gh pr merge update-version-branch --admin --squash --delete-branch
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Trigger Deployment
+        run: |
+          curl -X POST \
+          -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+          -H "Accept: application/vnd.github.v3+json" \
+          https://api.github.com/repos/${{ github.repository }}/dispatches \
+          -d '{"event_type":"deploy-to-pages"}'
