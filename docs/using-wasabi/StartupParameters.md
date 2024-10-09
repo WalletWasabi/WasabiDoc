@@ -28,7 +28,7 @@ All configuration options available via the `Config.json` file are also availabl
 |---------|--------|----------------------|
 | ""Network": "TestNet" | --network=testnet | WASABI-NETWORK=testnet |
 | "MainNetBackendUri": "https://api.wasabiwallet.io/" | --mainnetbackenduri="https://api.wasabiwallet.io/" | WASABI-MAINNETBACKENDURI="https://api.wasabiwallet.io/"|
-| "TestNetClearnetBackendUri": "https://api.wasabiwallet.co/" | --testnetbackenduri="https://api.wasabiwallet.co/" | WASABI-TESTNETBACKENDURI="https://api.wasabiwallet.co/" |
+| "TestNetBackendUri": "https://api.wasabiwallet.co/" | --testnetbackenduri="https://api.wasabiwallet.co/" | WASABI-TESTNETBACKENDURI="https://api.wasabiwallet.co/" |
 | "RegTestBackendUri": "http://localhost:37127/" | --regtestbackenduri="http://localhost:37127/" | WASABI-REGTESTBACKENDURI="http://localhost:37127/" |
 | "MainNetCoordinatorUri": "" | --mainnetcoordinatoruri="" | WASABI-MAINNETCOORDINATORURI="" |
 | "TestNetCoordinatorUri": "https://api.wasabiwallet.co/" | --testnetcoordinatoruri="https://api.wasabiwallet.co/" | WASABI-TESTNETCOORDINATORURI="https://api.wasabiwallet.co/" |
