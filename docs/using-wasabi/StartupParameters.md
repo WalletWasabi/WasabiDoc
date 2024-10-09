@@ -30,6 +30,9 @@ All configuration options available via the `Config.json` file are also availabl
 | "MainNetBackendUri": "https://api.wasabiwallet.io/" | --mainnetbackenduri="https://api.wasabiwallet.io/" | WASABI-MAINNETBACKENDURI="https://api.wasabiwallet.io/"|
 | "TestNetClearnetBackendUri": "https://api.wasabiwallet.co/" | --testnetbackenduri="https://api.wasabiwallet.co/" | WASABI-TESTNETBACKENDURI="https://api.wasabiwallet.co/" |
 | "RegTestBackendUri": "http://localhost:37127/" | --regtestbackenduri="http://localhost:37127/" | WASABI-REGTESTBACKENDURI="http://localhost:37127/" |
+| "MainNetCoordinatorUri": "" | --mainnetcoordinatoruri="" | WASABI-MAINNETCOORDINATORURI="" |
+| "TestNetCoordinatorUri": "https://api.wasabiwallet.co/" | --testnetcoordinatoruri="https://api.wasabiwallet.co/" | WASABI-TESTNETCOORDINATORURI="https://api.wasabiwallet.co/" |
+| "RegTestCoordinatorUri": "http://localhost:37127/" | --regtestcoordinatoruri="http://localhost:37127/" | WASABI-REGTESTCOORDINATORURI="http://localhost:37127/" |
 | "UseTor": "Enabled" | --usetor=enabled | WASABI-USETOR=enabled |
 | "TerminateTorOnExit": false | --terminatetoronexit=false | WASABI-TERMINATETORONEXIT=false |
 | "TorBridges": "[TorBridge]" | --torbridges="[TorBridge]" | WASABI-TORBRIDGES="[TorBridge]" |
