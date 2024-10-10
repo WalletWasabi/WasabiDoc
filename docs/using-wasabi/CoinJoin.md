@@ -68,6 +68,8 @@ Notice that it is not yet possible to coinjoin from a hardware wallet, the keys 
 
 As of Wasabi version [2.2.0.0](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.2.0.0), the Wasabi client will only participate in coinjoin rounds where it only pays for the mining fees for the blockspace it uses, like any other bitcoin transaction.
 
+> In rare cases the output decomposition contains change (maximum of 10 000 sats per coinjoin), this leftover goes to the coordinator. This is because creating such small amounts would harm privacy and end up being more expansive than just forfeiting it.
+
 The coordinator sets the mining fee rate for the coinjoin transaction.
 
 Users can set the maximum coinjoin mining fee rate they are willing to pay, as well as the minimum number of inputs the coinjoin transaction should have to participate.
