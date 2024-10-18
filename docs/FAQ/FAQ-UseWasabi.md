@@ -204,14 +204,6 @@ The color of each segment indicates the private coins (green), semi-private coin
 
 ![Wasabi Wallet Privacy Bar](/PrivacyBar.png "Wasabi Wallet Privacy Bar")
 
-### How can I display the fee in sats?
-
-By default, the wallet displays all fees in BTC (mining fees, coinjoin fees etc.).
-This can be changed to sats in the `Settings`.
-Go to `Settings` -> `General` -> `Fee display unit` and change it to `sats`.
-
-![Wasabi Wallet Fee Display Unit](/FeeDisplayUnit.png "Wasabi Wallet Fee Display Unit")
-
 ### What is the box (music box) at the bottom of the wallet's main view?
 
 This box (a.k.a. musicbox) is used for the coinjoins.
