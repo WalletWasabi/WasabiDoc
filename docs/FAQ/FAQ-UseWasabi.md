@@ -347,7 +347,8 @@ Wasabi uses [BIP 44 multi-account hierarchy for deterministic wallets](https://g
 
 ### How do I generate a new receiving address?
 
-You can generate a new bech32 address in the `Receive` dialog of Wasabi Wallet.
+You can generate a new address using the `Receive` button in the main view's top right corner.
+By default it returns a SegWit (bech32) address, the drop-down can be used to generate a Taproot (bech32m) address.
 First you must set a label for it, so that you later know who knows that this address is yours.
 Be precise in the label of the observers who know this address is yours, as this is an important part of good [coin selection](/why-wasabi/Coins.md) privacy best practices.
 Do not write anything else on the label exept the name of the entities that know this address belongs to you.
@@ -360,7 +361,9 @@ This is a good feature to help protect you against [address reuse](/why-wasabi/A
 ### Where can I find previously generated addresses?
 
 Generated addresses which haven't received any funds yet, are displayed at the `Addresses Awaiting Payment` list.
-Click on the `Receive` button > `Addresses Awaiting Payment`
+Click on the `Receive` button > `Addresses Awaiting Payment`. 
+
+SegWit and Taproot addresses are two different lists, use the receive button drop-down to see the desired type.
 
 ![Addresses Awaiting Payment](/AddressesAwaitingPayment.png "Addresses Awaiting Payment")
 
