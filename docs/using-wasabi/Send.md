@@ -124,7 +124,9 @@ So in order to increase your privacy, you can set a non-rounded amount, like `0.
 
 Every transaction must specify a fee which incentives the miner to include it in a block, it is calculated by `value of inputs - value of outputs`.
 The higher the fee per virtual byte (vByte) transaction size, the more likely miners are to confirm this transaction.
-Wasabi uses Bitcoin Core's `smart fee` algorithm to estimate the time it will take to confirm at the given fee level.
+
+Wasabi's fee estimation is based on Bitcoin Core's `smart fee` algorithm with some additions: it uses the mempool.space fee histogram to remove estimations that overpay, and Wasabi also makes sure to be included in the top 300 MB mempool to not be dropped from default Bitcoin Core mempools.
+
 You can change the fee by moving the slider, or by manually setting the [transaction fee rate](/FAQ/FAQ-UseWasabi.md#how-do-i-set-custom-fee-rate).
 
 ![Wasabi Wallet Fee Slider](/SendFeeSlider.png "Wasabi Wallet Fee Slider")
