@@ -91,13 +91,13 @@ There are three coinjoin strategies to choose from in Wasabi Wallet which affect
 These three strategies are `Minimize Cost`, `Maximize Speed`, and `Maximize Privacy`.
 Each of these strategies come with different trade-offs.
 
-## Receiving Address
+## Destination Address
 
 When sending bitcoin, you need to know the destination address of the receiver.
 This commits to the spending condition that the receiver agrees to have for this coin.
 The address can be a public key hash [starting with `1`], a script hash [starting with `3`], a native SegWit bech32 public key hash [starting with `bc1q`], or a Taproot bech32m public key [starting with `bc1p`].
 Make sure that you ask the receiver for a [new address](/why-wasabi/AddressReuse.md) for every payment to protect your privacy and theirs.
-Wasabi will calculate the checksum and notify you if the provided address is wrong.
+Wasabi will calculate the checksum and notify you if the provided address is wrong/contains a typo.
 
 ## Observers
 
