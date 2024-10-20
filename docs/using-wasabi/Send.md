@@ -59,14 +59,6 @@ Optionally, you can specify the dollar amount to send instead.
 
 ![Wasabi Wallet Payment Successful](/PaymentSuccessful.png "Wasabi Wallet Payment Successful")
 
-## Coins
-
-A coin is an unspent transaction output (UTXO): a chunk of bitcoin that can be sent in a future transaction.
-Unlike fiat currencies which have fixed denominations, each UTXO contains a variable amount of bitcoin.
-You can get coins by first [receiving](/using-wasabi/Receive.md) them from someone else.
-When you want to send some bitcoin you simply enter the amount to send and the address after clicking the `Send` button.
-Wasabi Wallet does the job of automatically selecting the appropriate combination of coins to include as inputs in the transaction.
-
 ## Clusters
 
 Every time you receive a payment, you first must [label the observers](/using-wasabi/Receive.md#the-importance-of-labeling) who know this address is yours.
@@ -74,22 +66,6 @@ This transaction metadata is used to build a cluster of which people know about 
 For example, if you receive a coin from Alice, then the cluster is `Alice`.
 If you now send half of this coin to Bob, then the cluster of your change coin is `Alice, Bob`.
 The goal is to know the observers who know about your coins and try to reduce their number for each coin.
-
-## Anonymity Set
-
-A typical bitcoin transaction will contain one input and two outputs - one of the outputs is the coin you are sending and the other output is the change coin that goes back to your wallet.
-Your change coin can be linked to this one input.
-There is a 1 in 1 chance to find this link and no plausible deniability.
-Thus, Wasabi denotes this coin's anonymity set as `1`.
-
-In a Wasabi [coinjoin](/using-wasabi/CoinJoin.md), many peers register coins in the input of the transaction, and in the output there are several equal value coins.
-For example, the output may contain 20 coins worth exactly 0.3 bitcoin.
-This means that when looking at one of these coinjoin outputs, there is a 1 in 20 chance to find the corresponding input: thus an anonymity set of 20.
-Therefore, the higher the anonymity set, the more your post-coinjoin coin is delinked from the pre-coinjoin history.
-
-There are three coinjoin strategies to choose from in Wasabi Wallet which affect the target anonymity score for your coins.
-These three strategies are `Minimize Cost`, `Maximize Speed`, and `Maximize Privacy`.
-Each of these strategies come with different trade-offs.
 
 ## Destination Address
 
