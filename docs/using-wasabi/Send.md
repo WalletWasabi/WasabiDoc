@@ -67,13 +67,13 @@ For example, if you receive a coin from Alice, then the cluster is `Alice`.
 If you now send half of this coin to Bob, then the cluster of your change coin is `Alice, Bob`.
 The goal is to know the observers who know about your coins and try to reduce their number for each coin.
 
-## Receiving Address
+## Destination Address
 
 When sending bitcoin, you need to know the destination address of the receiver.
 This commits to the spending condition that the receiver agrees to have for this coin.
 The address can be a public key hash [starting with `1`], a script hash [starting with `3`], a native SegWit bech32 public key hash [starting with `bc1q`], or a Taproot bech32m public key [starting with `bc1p`].
 Make sure that you ask the receiver for a [new address](/why-wasabi/AddressReuse.md) for every payment to protect your privacy and theirs.
-Wasabi will calculate the checksum and notify you if the provided address is wrong.
+Wasabi will calculate the checksum and notify you if the provided address is wrong/contains a typo.
 
 ## Observers
 
@@ -100,7 +100,9 @@ So in order to increase your privacy, you can set a non-rounded amount, like `0.
 
 Every transaction must specify a fee which incentives the miner to include it in a block, it is calculated by `value of inputs - value of outputs`.
 The higher the fee per virtual byte (vByte) transaction size, the more likely miners are to confirm this transaction.
-Wasabi uses Bitcoin Core's `smart fee` algorithm to estimate the time it will take to confirm at the given fee level.
+
+Wasabi's fee estimation is based on Bitcoin Core's `smart fee` algorithm with some additions: it uses the mempool.space fee histogram to remove estimations that overpay, and Wasabi also makes sure to be included in the top 300 MB mempool to not be dropped from default Bitcoin Core mempools.
+
 You can change the fee by moving the slider, or by manually setting the [transaction fee rate](/FAQ/FAQ-UseWasabi.md#how-do-i-set-custom-fee-rate).
 
 ![Wasabi Wallet Fee Slider](/SendFeeSlider.png "Wasabi Wallet Fee Slider")
