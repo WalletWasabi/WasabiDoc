@@ -4,6 +4,9 @@ on:
   repository_dispatch:
     types: [update-version]
 
+permissions:
+  contents: write
+
 jobs:
   update-config:
     runs-on: ubuntu-latest
@@ -43,7 +46,7 @@ jobs:
           gh pr merge update-version-branch --admin --squash --delete-branch
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          
+
       - name: Trigger Deployment
         run: |
           curl -X POST \
