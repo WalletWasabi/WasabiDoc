@@ -174,6 +174,11 @@ Open a text editor and paste the following wallet structure:
 
 Then paste your _SegWit Extended Account Public Key_ in-between the quotes of the field `"ExtPubKey": "paste segwit xpub here",` and your _Taproot Extended Account Public Key_ in-between the quotes of the field `TaprootExtPubKey": "paste taproot xpub here",`
 
+:::warning
+Watch-only wallets are not officially supported.
+Only take action if you're completely certain of what you're doing.
+:::
+
 You can also change the derivation path fields if you want to import a different derivation path.
 But this is only for advanced usage. 
 Notice that Wasabi only works with SegWit v0 bech32, and SegWit v1 bech32m (Taproot) addresses.
