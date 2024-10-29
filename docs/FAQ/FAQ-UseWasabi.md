@@ -172,7 +172,14 @@ Open a text editor and paste the following wallet structure:
 }
 ```
 
-Then paste your _SegWit Extended Account Public Key_ in-between the quotes of the field `"ExtPubKey": "paste segwit xpub here",` and your _Taproot Extended Account Public Key_ in-between the quotes of the field `TaprootExtPubKey": "paste taproot xpub here",`
+Next step depends on your wallet:
+- If it has a _SegWit Extended Account Public Key_, paste it in-between the quotes of the field `"ExtPubKey": "paste segwit xpub here",`
+- If it has a _Taproot Extended Account Public Key_, paste it in-between the quotes of the field `TaprootExtPubKey": "paste taproot xpub here",`
+A wallet must have at least one of those values set to be compatible with Wasabi. It can have both.
+
+:::warning
+Don't paste incorrect information here or you risk losing funds!
+:::
 
 You can also change the derivation path fields if you want to import a different derivation path.
 But this is only for advanced usage. 
