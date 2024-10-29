@@ -176,7 +176,7 @@ Then paste your _SegWit Extended Account Public Key_ in-between the quotes of th
 
 :::warning
 Watch-only wallets are not officially supported.
-Do _not_ paste xPub's from other wallets to send coins there.
+Only take action if you're completely certain of what you're doing.
 :::
 
 You can also change the derivation path fields if you want to import a different derivation path.
