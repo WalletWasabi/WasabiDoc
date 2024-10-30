@@ -711,7 +711,7 @@ Read more [here](/using-wasabi/Send.md#speed-up-or-cancel-transaction).
 
 ### Why is there no `Send` button, only the `Receive` button is displayed?
 
-When the wallet has a balance of 0.00000000 BTC, the `Send` button is hidden because there is no bitcoin to send.
+When the wallet has a balance of 0, the `Send` button is hidden because there is no bitcoin to send.
 So this happens when a new wallet has just been generated and it hasn't received any bitcoin yet.
 Receive some bitcoin and then the `Send` button will automatically be displayed.
 

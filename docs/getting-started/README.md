@@ -62,7 +62,7 @@ If you lose your passphrase you lose your bitcoin.
 
 ## Receive bitcoin
 
-As you can see, the new wallet is empty as it has 0.00000000 BTC.
+As you can see, the new wallet is empty as it has a balance of 0.
 Click on `Receive` at the top right to [receive](/using-wasabi/Receive.md) some bitcoin to this new wallet.
 
 ## Coinjoin
