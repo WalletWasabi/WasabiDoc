@@ -1343,7 +1343,7 @@ To see the individual coinjoins, the cluster can be expanded by clicking the arr
 
 ![History Coinjoin Expanded](/HistoryCoinjoinExpanded.png "History Coinjoin Expanded")
 
-A coinjoin is a payment within the same wallet, thus it only shows the coordination fee (if any) and mining fee leaving the wallet.
+A coinjoin is a payment within the same wallet, thus it only shows the fee leaving the wallet.
 
 ### Can I sort the history items?
 
