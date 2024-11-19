@@ -27,10 +27,10 @@ Self sovereignty is at the core of Bitcoin in general, and Wasabi specifically.
 You have powerful tools at your disposal, yet they only work when used as they are designed.
 Wasabi is tailor made so that you do **not** have to trust anyone, but you have the power to verify everything.
 
-With PGP signatures you can verify that the software package you download is actually the one by the developers.
-Every release of Wasabi is signed by [zkSNACKs](https://zksnacks.com/), the company behind Wasabi.
-You can verify that the PGP public key [${zksnacksPublicKeyFingerprint}](https://github.com/WalletWasabi/WalletWasabi/blob/master/PGP.txt) is actually the one of [zkSNACKs](https://pgp.key-server.io/search/zksnacks) by exploring the [web of trust](https://en.wikipedia.org/wiki/Web_of_trust).
-When you have a software package that was signed by this PGP public key, then you can be sure that this is an official release approved by zkSNACKs.
+With PGP signatures you can verify that the software package you download is actually the one published/signed by the developers.
+Every release of Wasabi is signed by the [zkSNACKs](https://zksnacks.com/) key, the company originally behind Wasabi.
+You can verify that the PGP public key [${zksnacksPublicKeyFingerprint}](https://github.com/WalletWasabi/WalletWasabi/blob/master/PGP.txt) is actually the one of [zkSNACKs](http://pgp.mit.edu/pks/lookup?op=vindex&search=0x856348328949861E) by exploring the [web of trust](https://en.wikipedia.org/wiki/Web_of_trust).
+When you have a software package that was signed by this PGP public key, then you can be sure that this is an official release approved by the zkSNACKs key.
 This protects you against malicious man in the middle attacks where bad guys give you a fake version of Wasabi with malicious code.
 
 [![Watch the video](/Logo_without_text_with_bg_dark_with_yt.png)](https://youtu.be/psl35MisYxo?list=PLPj3KCksGbSZkVpgAZjAFfFp4D0SHLnFw)
