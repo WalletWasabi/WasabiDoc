@@ -97,24 +97,57 @@ For chat groups you can find us on [Slack](https://join.slack.com/t/tumblebit/sh
 
 Also, remember to follow our [blog](https://blog.wasabiwallet.io) to get the latest insights and information about Wasabi Wallet and Bitcoin privacy.
 
-## For advanced Wasabikas
+## For Advanced Wasabikas
 
 ### Can the coordinator attack me?
 
-The developers have gone to great lengths to ensure that the coordinator cannot steal funds nor link inputs to outputs. 
-The nature of Wasabi is that you should not need to trust the developers or the Wasabi coordinating server, as you can verify that the code does not leak information to anyone.
-Due to the nature of coinjoin transactions users don't need to trust other users or the coordinator against theft, leaving denial of service and attacks on privacy as the main concerns
+Wasabi is built on a zero-trust principle, meaning that the coordinator cannot steal funds or link inputs to outputs.
+All critical computations, like output decomposition, happen on the client side. 
+The coordinator’s sole role is to collect signatures from all its participants (to sign the PSBT) into a fully signed transaction.
 
-The only known possible 'malicious' actions that the server *could* perform are two sides of the same coin;
-- **Blacklisted UTXO's**:
-Though this would not affect the users who are able to successfully mix with other 'honest/real' peers.
-- **Targeted Sybil Attack**:
-The follow-up concern is the inverse of the above.
-It is possible that the server could *only* include one 'honest/real' coin in the mix and supply the other coins themselves.
-This gives a false sense of security, **but does not worsen the existing privacy of the coin**.
-It would also be noticeable to all users excluding the user being targeted as their coins would not be mixed.
-It has been argued that this 'attack' would be very costly in terms of fees because the number of coins being mixed is verifiable, and they always pay mining fees.
-See [here](https://github.com/WalletWasabi/WabiSabi/blob/master/protocol.md#attacks-on-privacy) for more info.
+However, some risks remain, which the client mitigates as much as possible:
+
+_**Money Loss Concerns**_
+
+The client may forfeit small amounts of BTC, known as _leftovers_, when creating additional outputs or when adjusting the output decomposition would result in higher costs (e.g., higher mining fees or reduced privacy).
+The coordinator collects these leftovers and can use however it wants: keep them, use them for mining fees, distribute them among its users... 
+This creates an incentive for a malicious coordinator to maximize these forfeited amounts. 
+
+Therefore, the client covers two main costs: **mining fees** and **leftovers**, which a malicious coordinator could exploit:
+
+- **Mining Fee Rate**:  
+  The coordinator sets the mining fee rate. A malicious coordinator could set excessively high fees, causing users to overpay and increasing leftover amounts.  
+  
+  To prevent abuse, the client enforces a [maximum mining fee rate](/glossary/Glossary-PrivacyWasabi.md#max-coinjoin-mining-fee-rate).
+  If the fee rate exceeds this value, the client will not participate.
+  It also actively ensures that the coordinator cannot change the fee rate mid-process.
+
+- **Small Rounds**:  
+  The coordinator might run small rounds (due to low liquidity or intentionally), making users pay fees for little or no privacy gain while increasing leftover amounts.
+  Small rounds also make targeted _Sybil Attacks_ easier (see below).  
+  
+  To avoid this, the client enforces a [minimum input count](/glossary/Glossary-PrivacyWasabi.md#absolute-min-input-count).
+  If the round does not meet this threshold, the client will drop out.
+
+- **Raising Minimum Output Amount**:  
+  The coordinator controls the minimum output denomination.
+  Increasing this value forces the client to forfeit more leftovers, which benefits the coordinator financially.  
+  
+  To avoid this, the client enforces that the minimum output amount of a round is at most 10 000 sats.
+
+_**Privacy & Availaibility Concerns**_
+
+- **Denial of Service (DoS)**:  
+  The coordinator could reject or blacklist certain UTXOs, preventing them from participating in the coinjoin.
+
+- **Targeted Sybil Attack**:  
+  The coordinator could include only one genuine coin and have the other inputs be its own coins, giving the target a false sense of privacy.
+  However, this does not reduce the coin's existing privacy and can be expensive in terms of fees.
+  Other users would also notice a lack of mixed coins.  
+  Learn more about this attack [here](https://github.com/WalletWasabi/WabiSabi/blob/master/protocol.md#attacks-on-privacy).
+
+- **Metadata Leak**:  
+  While this is not a direct attack by the coordinator, if a client disconnects after registering multiple coins, the coordinator may assume that these coins belong to the same owner as they all stop sending the subsequent required requests.
 
 ### What is the history of Wasabi?
 
