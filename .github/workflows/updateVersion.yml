@@ -6,7 +6,6 @@ on:
 
 permissions:
   contents: write
-
 jobs:
   update-config:
     runs-on: ubuntu-latest
@@ -23,15 +22,14 @@ jobs:
 
       - name: Commit changes
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
+          git config --local user.email "turbolay@proton.me"
+          git config --local user.name "turbolay"
           git checkout -b update-version-branch
           git add docs/.vuepress/config.ts
           git commit -m "Update version to ${{ github.event.client_payload.new_version }}"
           git push -f --set-upstream origin update-version-branch
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
+          GITHUB_TOKEN: ${{ secrets.VERSION_UPDATE_TOKEN }}
       - name: Install GitHub CLI
         run: sudo apt-get install gh
 
