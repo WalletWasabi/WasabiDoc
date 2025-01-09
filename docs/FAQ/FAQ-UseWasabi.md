@@ -600,19 +600,25 @@ The user can change which non-private coins will be used, based on the labelling
 
 ### How is the transaction broadcast?
 
-Wasabi connects only to Bitcoin nodes that provide a Tor onion service, so end-to-end encryption is enforced between the peers, without involving any exit node.
-Each peer is connected to through a different Tor stream.
-Transactions are broadcast to only one random peer over Tor and immediately after that this peer is disconnected.
+Wasabi has 3 different mechanisms to broadcast a transaction, it will try in the following order:
+1. Broadcast to the connected trusted node
+2. Broadcast to the Bitcoin P2P network
+3. Broadcast to the backend.
 
-If for some reason this fails, and a local [Bitcoin full node](/using-wasabi/BitcoinFullNode.md) is connected, then this is used to broadcast the transaction.
-By default it is gossiped to 8 peers over clearnet, but this depends on how the full node is configured by the user.
+1: The transaction is broadcast by the RPC if the user has specified a trusted node. The Bitcoin node will then propagate the transaction to the network.
 
-If this too fails, Wasabi will (in the last resort) send the transaction through a new Tor identity to the coordinator backend for broadcasting.
+2: Wasabi will use it's connected peers to broadcast a transaction in the following way:
 
-Once a transaction is sent, Wasabi will always open a new Tor circuit with a new random node on the network, in order to avoid giving away too much information to one party.
-When you send two consecutive transactions via Wasabi, you can be sure that they appear in two very different places on the network.
+- Check that there are enough connected nodes 
+- Randomly select a subset of the connected nodes: 20% of number of connected nodes + 1, with a minimum of 2.
+This means that if there are 12 peers connected, it will be broadcast to 3 nodes.
+- Broadcast the transaction to the selected nodes (timeout if this takes more than 10 seconds)
+- Receive confirmation from these nodes that the transaction was propagated (timeout if this takes more than 21 seconds)
+- Disconnect from the nodes that were used for broadcasting
 
-Wasabi might implement [BIP 156](https://github.com/bitcoin/bips/blob/master/bip-0156.mediawiki) the Dandelion protocol for transaction broadcasting when the Bitcoin network adopts it.
+3: The transaction is broadcast to the backend using a new Tor identity.
+
+Once a transaction is sent, Wasabi will always open a new Tor circuit with a new random node on the network, in order to avoid revealing too much information to one party.
 
 ### What is the cluster history?
 
