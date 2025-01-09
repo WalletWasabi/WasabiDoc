@@ -607,7 +607,7 @@ Wasabi has 3 different mechanisms to broadcast a transaction, it will try in the
 
 1: The transaction is broadcast by the RPC if the user has specified a trusted node. The Bitcoin node will then propagate the transaction to the network.
 
-2: Wasabi will use it's connected peers to broadcast a transaction in the following way:
+2: Wasabi will use its connected peers to broadcast a transaction in the following way:
 
 - Check that there are enough connected nodes 
 - Randomly select a subset of the connected nodes: 20% of number of connected nodes + 1, with a minimum of 2.
