@@ -11,7 +11,8 @@
 
 ### Why should I donate?
 
-Wasabi is Free Open Source Software (FOSS), which means it doesn't generate revenue.
+Wasabi is Free Open Source Software (FOSS).
+No service is provided, and therefore it doesn't generate any revenue.
 However, maintaining and improving the software requires ongoing effort: regular updates are necessary to ensure safety, fix bugs, and continue innovating.
 
 While Wasabi is one of the best tools available to use Bitcoin privately, achieving flawless financial-sovereign privacy is still a work in progress.
@@ -20,7 +21,6 @@ There are many features yet to be implemented, and your support can help make th
 Additionally, contributors cover static costs, such as server expenses and release management, using their personal funds.
 
 By donating, you’re directly supporting the developers who work tirelessly to maintain and improve Wasabi Wallet and make Bitcoin privacy accessible for everyone.
-
 
 ### How I can donate?
 
@@ -31,7 +31,7 @@ You can support The Wasabi Wallet Developers by:
 
 ### How will those funds be used?
 
-Donations sent to the Silent Payment address are personal contributions to individual members of The Wasabi Wallet Developers, a collective of contributors to the Wasabi Wallet project.
+Funds sent to the Silent Payment address are personal donations to individual members of The Wasabi Wallet Developers, a collective of contributors to the Wasabi Wallet project.
 
 The funds are distributed fairly among active contributors based on their work in improving and maintaining the software, documentation, or other related efforts.
 Even new contributors may receive a share of the donations.
