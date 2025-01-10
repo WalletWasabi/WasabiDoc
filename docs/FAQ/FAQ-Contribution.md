@@ -13,7 +13,7 @@
 
 Wasabi is Free Open Source Software (FOSS).
 No service is provided, and therefore it doesn't generate any revenue.
-However, maintaining and improving the software requires ongoing effort: regular updates are necessary to ensure safety, fix bugs, and continue innovating.
+However, maintaining and improving the software requires ongoing effort, such as maintenance, continuous improvement, bug fixes, testing, documentation, regular updates etc...
 
 While Wasabi is one of the best tools available to use Bitcoin privately, achieving flawless financial-sovereign privacy is still a work in progress.
 There are many features yet to be implemented, and your support can help make them a reality.
