@@ -1585,17 +1585,17 @@ The main advantages of Silent Payments are:
 
 More information on [Silent Payments](https://silentpayments.xyz/)
 
-## How can I send a Silent Payment in Wasabi?
+### How can I send a Silent Payment in Wasabi?
 
 Just like you would send a normal Bitcoin transaction! Paste the Silent Payment address in the Send window, Wasabi will handle the rest.
 
-## How can I receive a Silent Payment?
+### How can I receive a Silent Payment?
 
 Currently, Wasabi cannot be used to generate a Silent Payment address and recognize payments sent to it.
 A comprehensive list of wallets supporting silent payments is available [here](https://silentpayments.xyz/docs/wallets/).
 Soon, Wasabi will be able to _receive_ Silent Payments too.
 
-## Why Wasabi doesn’t support receiving Silent Payments?
+### Why Wasabi doesn’t support receiving Silent Payments?
 
 Receiving Silent Payments is a complex engineering problem. 
 Additional information (called the tweaks) have to be computed by the server and sent to clients for each block, along with the filters. 
@@ -1603,4 +1603,3 @@ This creates more load on both the client and the backend, and Wasabi is a softw
 We need to be sure that the feature is fully ready and won’t endanger stability of classic wallet functionalities.
 
 The work is ongoing and this feature should be available in an up-to-come release.
-
