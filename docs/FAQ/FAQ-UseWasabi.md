@@ -1592,6 +1592,7 @@ Just like you would send a normal Bitcoin transaction! Paste the Silent Payment 
 ## How can I receive a Silent Payment?
 
 Currently, Wasabi cannot be used to generate a Silent Payment address and recognize payments sent to it.
+A comprehensive list of wallets supporting silent payments is available [here](https://silentpayments.xyz/docs/wallets/).
 Soon, Wasabi will be able to _receive_ Silent Payments too.
 
 ## Why Wasabi doesn’t support receiving Silent Payments?
