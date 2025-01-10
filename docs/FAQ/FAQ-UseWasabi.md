@@ -1572,7 +1572,8 @@ Silent Payments allow you to create a single, static address to share with frien
 This is what a Silent Payment address looks like:
 `sp1qq2exrz9xjumnvujw7zmav4r3vhfj9rvmd0aytjx0xesvzlmn48ctgqnqdgaan0ahmcfw3cpq5nxvnczzfhhvl3hmsps683cap4y696qecs7wejl3`
 
-When someone wants to send you a payment, they use the unique public key that is a part of your Silent Payment address, and combine it with the public keys of the outputs they want to send to generate a unique, one-time address that looks on-chain just like any other Taproot address. A Silent Payment is in fact indistiguishable from a standard transaction, and therefore will cost the same in term of mining fees and can be relayed and mined just like any transaction.
+When someone wants to send you a payment, they use the unique public key that is a part of your Silent Payment address, and combine it with the public keys of the outputs they want to send to generate a unique, one-time address that looks on-chain just like any other Taproot address.
+A Silent Payment is in fact indistinguishable from a standard transaction, and therefore will cost the same in terms of mining fees and can be relayed and mined just like any transaction.
 
 The receiver then needs to read the blockchain, and using some secrets he - but only he - will be able to recognize payments made to his Silent Payment address and unlock the funds.
 
@@ -1580,7 +1581,7 @@ The main advantages of Silent Payments are:
 *  Simpler user experience: users just need to worry about a single, static address instead of the hurdles of generating new addresses for every receive.
 *  Better receiver privacy: address re-use with Silent Payments is impossible, as no two senders can generate the same on-chain address.
 *  Better sender privacy: receivers have no way of connecting sends from the same receiver together, providing better privacy for even the sender.
-*  No server required: anyone with a wallet supporting Silent Payments can send and receive funds without address reuse, without communication (so contrary to a coinjoin without any interactivity), and without running complex infrastructure.
+*  No server required: anyone with a wallet supporting Silent Payments can send and receive funds without address reuse, without communication (contrary to a coinjoin which requires interactivity), and without running complex infrastructure.
 
 More information on [Silent Payments](https://silentpayments.xyz/)
 
@@ -1590,13 +1591,15 @@ Just like you would send a normal Bitcoin transaction! Paste the Silent Payment 
 
 ## How can I receive a Silent Payment?
 
-Currently, Wasabi cannot be used to generate a Silent Payment address and recognize payments sent to it. The ecosystem for Silent Payment is still nascent, and we recommend using [Cake Wallet](https://cakewallet.com/) for now.
-
-Soon, Wasabi will be able to receive Silent Payments by itself.
+Currently, Wasabi cannot be used to generate a Silent Payment address and recognize payments sent to it.
+Soon, Wasabi will be able to _receive_ Silent Payments too.
 
 ## Why Wasabi doesn’t support receiving Silent Payments?
 
-Receiving Silent Payments is a complex engineering problem. Additional information (called the tweaks) have to be computed by the server and sent to clients for each block, along with the filters. This creates more load on both the client and the backend. Wasabi is a software with a lot of users, and we need to be sure that the feature is fully ready and won’t endanger stability of classic wallet functionalities.
+Receiving Silent Payments is a complex engineering problem. 
+Additional information (called the tweaks) have to be computed by the server and sent to clients for each block, along with the filters. 
+This creates more load on both the client and the backend, and Wasabi is a software with a lot of users! 
+We need to be sure that the feature is fully ready and won’t endanger stability of classic wallet functionalities.
 
 The work is ongoing and this feature should be available in an up-to-come release.
 
