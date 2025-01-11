@@ -7,9 +7,36 @@
 
 # Contributions to Wasabi
 
-### How to donate to Wasabi Wallet?
+## Donations
 
-Donations can be made to individual contributors and are highly appreciated.
+### Why should I donate?
+
+Wasabi is Free Open Source Software (FOSS).
+No service is provided, and therefore it doesn't generate any revenue.
+However, maintaining and improving the software requires ongoing effort, such as maintenance, continuous improvement, bug fixes, testing, documentation, regular updates etc...
+
+While Wasabi is one of the best tools available to use Bitcoin privately, achieving flawless financial-sovereign privacy is still a work in progress.
+There are many features yet to be implemented, and your support can help make them a reality.
+
+Additionally, contributors cover static costs, such as server expenses and release management, using their personal funds.
+
+By donating, you’re directly supporting the developers who work tirelessly to maintain and improve Wasabi Wallet and make Bitcoin privacy accessible for everyone.
+
+### How I can donate?
+
+You can support The Wasabi Wallet Developers by:
+
+- Clicking the `Donate` button in Wasabi (version > 2.4.0)
+- Sending funds to their Silent Payment address: `sp1qq2exrz9xjumnvujw7zmav4r3vhfj9rvmd0aytjx0xesvzlmn48ctgqnqdgaan0ahmcfw3cpq5nxvnczzfhhvl3hmsps683cap4y696qecs7wejl3`
+
+### How will those funds be used?
+
+Funds sent to the Silent Payment address are personal donations to individual members of The Wasabi Wallet Developers, a collective of contributors to the Wasabi Wallet project.
+
+The funds are distributed fairly among active contributors based on their work in improving and maintaining the software, documentation, or other related efforts.
+Even new contributors may receive a share of the donations.
+
+Each contributor is individually responsible for handling their tax obligations according to the laws of their jurisdiction regarding personal donations.
 
 ## You can become a Wasabika
 
