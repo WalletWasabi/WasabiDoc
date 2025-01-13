@@ -870,12 +870,11 @@ Now if even that would fail, then we can start thinking about lowering the requi
 
 ### I'd like to experience coinjoin but I'm not comfortable using real Bitcoin. What can I do?
 
-You can try to make a coinjoin via Wasabi on the Bitcoin [TestNet](/using-wasabi/Testnet.md) (an alternative Bitcoin network, to be used for testing).
-Go to `Settings` > `Bitcoin` and change the network to `TestNet`.
+You can try to make a coinjoin via Wasabi on the Bitcoin [TestNet4](/using-wasabi/Testnet.md) (an alternative Bitcoin network, to be used for testing).
+Go to `Settings` > `Bitcoin` and change the network to `TestNet4`.
 Then restart your Wasabi and create a new wallet, this is needed because Wasabi differentiates between "Main wallets" and "TestNet wallets".
 This wallet will synchronize for the TestNet, and generate TestNet addresses.
-You can get tBTC from faucets like:
-[coinfaucet.eu/en/btc-testnet](https://coinfaucet.eu/en/btc-testnet/) or [bitcoinfaucet.uo1.net](https://bitcoinfaucet.uo1.net/)
+You can get tBTC from faucets like [this one](https://faucet.testnet4.dev/) or [https://coinfaucet.eu/en/btc-testnet4/](https://coinfaucet.eu/en/btc-testnet4/).
 
 ### Does Wasabi have to stay on during coinjoin?
 
