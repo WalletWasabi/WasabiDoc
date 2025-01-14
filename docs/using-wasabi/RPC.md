@@ -810,6 +810,7 @@ A _payincoinjoin_ is written to the logs and its status can be seen by using the
 
 Payments in coinjoin can theoretically be made to any ScriptPubKey. 
 However, the coordinator may only accept certain types of outputs.
+It is not possible to use a Silent Payment address as the destination for a _payincoinjoin_, as you need to know the private keys of all the inputs.
 
 The default maximum is 4 payments per client per coinjoin.
 
