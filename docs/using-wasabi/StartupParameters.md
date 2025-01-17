@@ -32,7 +32,7 @@ All configuration options available via the `Config.json` file are also availabl
 | "RegTestBackendUri": "http://localhost:37127/" | --regtestbackenduri="http://localhost:37127/" | WASABI-REGTESTBACKENDURI="http://localhost:37127/" |
 | "MainNetCoordinatorUri": "" | --mainnetcoordinatoruri="" | WASABI-MAINNETCOORDINATORURI="" |
 | "TestNetCoordinatorUri": "https://api.wasabiwallet.co/" | --testnetcoordinatoruri="https://api.wasabiwallet.co/" | WASABI-TESTNETCOORDINATORURI="https://api.wasabiwallet.co/" |
-| "RegTestCoordinatorUri": "http://localhost:37127/" | --regtestcoordinatoruri="http://localhost:37127/" | WASABI-REGTESTCOORDINATORURI="http://localhost:37127/" |
+| "RegTestCoordinatorUri": "http://localhost:37128/" | --regtestcoordinatoruri="http://localhost:37128/" | WASABI-REGTESTCOORDINATORURI="http://localhost:37128/" |
 | "UseTor": "Enabled" | --usetor=enabled | WASABI-USETOR=enabled |
 | "TerminateTorOnExit": false | --terminatetoronexit=false | WASABI-TERMINATETORONEXIT=false |
 | "TorBridges": "[TorBridge]" | --torbridges="[TorBridge]" | WASABI-TORBRIDGES="[TorBridge]" |
