@@ -70,6 +70,8 @@ Click on `Receive` at the top right to [receive](/using-wasabi/Receive.md) some 
 A coordinator needs to be configured to participate in coinjoin(s).
 This can be done at the _Coordinator_ tab in the _Settings_, along with other coordinator settings.
 
+Read more [here](/FAQ/FAQ-UseWasabi.html#how-do-i-find-a-coordinator) about how to find a coordinator.
+
 ![Music Box Coordinator Not Configured](/MusicBoxCoordinatorNotConfigured.png "Music Box Coordinator Not Configured")
 
 It is also possible to use a _coordinator connection string_ which Wasabi automatically detects in the clipboard and it will apply these settings with a dialog for the user to confirm.
