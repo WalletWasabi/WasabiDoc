@@ -142,7 +142,7 @@ There are clickable suggestions to:
 - Not use non-private coins (only use private and semi-private)
 - Avoid change
 
-The suggestion to only use semi-private or private coins is only shown if the amount difference is less than or equal to 25%.
+The suggestion to only use semi-private or private coins is only shown if the amount difference is less than or equal to 15%.
 
 :::tip
 Each suggestion has a tooltip.
