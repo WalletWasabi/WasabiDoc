@@ -1011,7 +1011,7 @@ Read more [here](/using-wasabi/CoinJoin.md).
 
 |  | Minimize Costs | Maximize Speed | Maximize Privacy | 
 |:---:|:---:|:---:|:---:|
-| Anonymity score target | 5 | 5 | random between 27 and 75 |
+| Anonymity score target | 5 | 5 | random between 30 and 50 |
 | Coinjoin time preference   | weeks | hours | hours |
 | Red coin isolation | not enabled  | not enabled | enabled |
 
