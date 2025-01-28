@@ -132,7 +132,7 @@ There are warnings for:
 - Using non-private coins
 - Using semi-private coins
 - Creating change
-- Consolidating 10 coins or more
+- Using more than 90% of wallet balance
 - Using unconfirmed coins
 - Using coinjoining coins
 
