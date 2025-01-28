@@ -76,8 +76,7 @@ It is also possible to use a _coordinator connection string_ which Wasabi automa
 
 Once a coordinator is configured and you have received some bitcoin, Wasabi will automatically coinjoin the bitcoin for you.
 
-Coinjoin will automatically start after the incoming funds are confirmed.
-You need to manually press the play button in the musicbox (at the bottom of the wallet) if you received less than 0.01 BTC.
+After the incoming funds are confirmed, coinjoin can be started by pressing the Play button.
 
 You know that your wallet is coinjoining if you see the stop button in the musicbox and the spectrum ("waving" color animation) at the bottom of the wallet.
 

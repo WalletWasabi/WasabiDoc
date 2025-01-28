@@ -30,7 +30,8 @@ WabiSabi enables centrally coordinated coinjoins with variable amounts in a trus
 
 ### Music box
 
-After opening a hot wallet, it will automatically start a countdown to start coinjoining (±10 minutes).
+After opening a hot wallet, the user needs to press Play to start coinjoin.
+When `Automatically start coinjoin` is enabled in the wallet settings (disabled by default), it will automatically start a countdown to start coinjoining (±2 minutes).
 This and other coinjoin related information is shown in the music box.
 
 ![Music Box Countdown](/MusicBoxAwaitingToAutoStartCoinjoin.png "Music Box Countdown")
@@ -56,8 +57,8 @@ Please leave Wasabi Wallet running, and eventually there will be a successful co
 
 ### More Details
 
-By default, Wasabi starts automatically coinjoining your funds when the total value of the non-private coins is equal to or above the `Auto-start coinjoin threshold` (0.01 BTC by default).
-`Automatically start coinjoin` can be disabled from the coinjoin settings.
+`Automatically start coinjoin` can be enabled from the coinjoin settings.
+If enabled, Wasabi starts automatically coinjoining your funds when the total value of the non-private coins is equal to or above the `Auto-start coinjoin threshold` (0.01 BTC by default).
 In case you want to start the process manually, then click the play button; if you want to stop coinjoin, then click the pause button.
 
 Once a coin achieves enough privacy (reaches the `Anonymity score target`), then the corresponding amount will show up in the wallet's main view as "PRIVATE".
@@ -200,12 +201,12 @@ As the coinjoin settings apply per individual wallet, it is possible to have mul
 
 ### Automatically start coinjoin
 
-This setting is enabled by default.
+This setting is disabled by default.
+
+When this is not enabled, the user will have to manually press the Play button in order to start coinjoining.
 
 When this is enabled, the wallet will automatically start coinjoining soon after the wallet is loaded.
 The wallet will coinjoin until the `privacy progress` is 100%.
-
-When this is not enabled, the user will have to manually press the Play button in order to start coinjoining.
 
 ![Coinjoin Settings Automatically Start Coinjoin](/CoinjoinSettingsAutomaticallyStartCoinjoin.png "Coinjoin Settings Automatically Start Coinjoin")
 
