@@ -31,7 +31,7 @@ WabiSabi enables centrally coordinated coinjoins with variable amounts in a trus
 ### Music box
 
 After opening a hot wallet, the user needs to press Play to start coinjoin.
-When `Automatically start coinjoin` is enabled in the wallet settings (disabled by default), it will automatically start a countdown to start coinjoining (±2 minutes).
+When `Automatically start coinjoin` is enabled in the wallet settings (disabled by default), it will automatically start a countdown to start coinjoining (1-3 minutes).
 This and other coinjoin related information is shown in the music box.
 
 ![Music Box Countdown](/MusicBoxAwaitingToAutoStartCoinjoin.png "Music Box Countdown")
