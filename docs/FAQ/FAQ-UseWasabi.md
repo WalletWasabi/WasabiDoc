@@ -846,7 +846,7 @@ Bob now sends the coordinator an unblinded credential (signed by the coordinator
 After all inputs and outputs are registered, the coordinator has all the information to build the coinjoin transaction.
 This raw (unsigned) transaction is sent to all Alices, each of them verifies that the transaction is valid and then signs it.
 The signatures are sent back to the coordinator who accumulates all of them.
-The [singing phase](/using-wasabi/CoinJoin.md#signing) is concluded when the coordinator receives all the valid signatures for all registered inputs.
+The [signing phase](/using-wasabi/CoinJoin.md#signing) is concluded when the coordinator receives all the valid signatures for all registered inputs.
 
 ### What is happening during the blame round?
 
