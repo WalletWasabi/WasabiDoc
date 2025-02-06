@@ -77,7 +77,6 @@ A wallet can be renamed at the _Wallet Settings_.
 Alternatively, the wallet file can be manually renamed by doing the following:
 Type `Wallet Folder` in the search bar at the top of the main view to access the `Wallets` folder and rename the `.json` wallet file.
 Or you can navigate to the `Wallets` folder (inside the [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder)) and rename the `.json` wallet file.
-Then go to `WalletBackups` folder (inside the [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder)) and rename the `.json` wallet file.
 
 :::tip
 You need to mark the “show hidden files” setting to see the Wasabi data folder.
@@ -1118,7 +1117,7 @@ Please see [Wasabi Backup Best Practices](/using-wasabi/BackupBestPractices.md) 
 
 Although you can back up your private keys with the mnemonic words and passphrase, this is only a last resort recovery.
 If you want to also secure your address labels, the anonscore and additional metadata, then you can do a digital backup.
-Simply copy the `WalletBackups` folder with the `wallet.json` files from your [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) onto suitable hardware, for example an encrypted USB stick.
+Simply copy the `Wallets` folder with the `wallet.json` files from your [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) onto suitable hardware, for example an encrypted USB stick.
 Note that this file has the encrypted private key (extracted from the extended private key), meaning that you only need the passphrase to spend the bitcoin.
 This also contains the extended public key, the public keys, and the address labels, meaning that it completely links all the coins, both pre and post mix, with clear proof.
 
@@ -1369,7 +1368,7 @@ It will only show results of the wallets which are currently open.
 ### Can I export a list of transactions?
 
 There is currently no convenient way to export a list with transaction details inside the GUI.
-However, you can see the `wallet.json` files inside the `WalletBackups` folder (you can find it in your [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder)) which contains all the public keys, labels and anonset.
+However, you can see the `wallet.json` files inside the `Wallets` folder (you can find it in your [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder)) which contains all the public keys, labels and anonset.
 
 You can use the [Wasabi RPC server `gethistory` call](/using-wasabi/RPC.md#gethistory) to get a list of all transactions, including date, block height, amount, label and tx id.
 
