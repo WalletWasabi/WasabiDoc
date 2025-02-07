@@ -18,12 +18,12 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '16'
+        node-version: '18'
 
     - name: Install dependencies
       run: npm install
       
-    - name: Clean everthing and install dependencies
+    - name: Clean everything and install dependencies
       run: npm ci
 
     - name: Build the project
@@ -39,5 +39,3 @@ jobs:
         git config --global user.name $MY_NAME
         git remote set-url origin https://${{ secrets.DEPLOY_ACCESS_TOKEN }}@github.com/WalletWasabi/WasabiDoc.git
         npm run deploy -- -u "Lucas Ontivero <lontivero@users.noreply.github.com>"
-
-
