@@ -44,7 +44,7 @@ The amount can be changed in the _Coinjoin Settings_ (_Auto-start coinjoin thres
 ### Backend
 
 [The part of a software system that is not usually visible or accessible to a user of that system](https://www.merriam-webster.com/dictionary/back%20end).
-In the case of Wasabi, the backend functions as the coinjoin coordinator and provides data to the [client](/glossary/Glossary-PrivacyWasabi.md#Client) (user) like block filters, exchange rate, and network estimations (mempool).
+In the case of Wasabi, the backend provides the block filters to the [client](/glossary/Glossary-PrivacyWasabi.md#Client).
 
 ### Block filters
 
