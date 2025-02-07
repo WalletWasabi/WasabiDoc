@@ -71,10 +71,6 @@ It is difficult to determine a sufficient anonymity score since enough research 
 The right anonymity score depends on your own personal threat model.
 However, to be on the safe side, with Wasabi Wallet 2.0 an anonymity score of 5 and above could be considered sufficient.
 
-### Is there a way to check Wasabi's uptime status?
-
-Yes, you can check the status of Wasabi-related services and websites (like APIs, Backend, etc.) via [UptimeRobot Wasabi Status Page](https://stats.uptimerobot.com/YQqGyUL8A7).
-
 ### What software supplies the block filters that Wasabi uses?
 
 The Wasabi backend supplies identical filters to every client.
