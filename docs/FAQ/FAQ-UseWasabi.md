@@ -986,14 +986,16 @@ Depending on many factors, such as the `Anonymity score target`, the `Coinjoin s
 
 There is no answer for all, or a "best" strategy, it depends on the user's privacy needs.
 The coinjoin strategy should be selected according to the user's preference:
-Do you want to `Minimize costs`, `Maximize speed`, or `Maximize privacy`?
-Or the user can create their own `Custom` strategy.
+
+- If you want to maximize privacy, then select `Enhance Privacy` (which comes with a cost as it will do more coinjoins).
+- If you want to "just" coinjoin your funds, then select `Default Strategy`.
+- If you want to minimize costs, then select `Reduce Costs` (which will only coinjoin during the cheaper parts of the week).
 
 ![Wasabi Coinjoin Strategy](/CoinjoinStrategy.png "Wasabi Coinjoin Strategy")
 
-:::tip The default coinjoin strategy is `Maximize Speed`
-This strategy is sufficient for most users
-:::
+Or the user can create their own custom strategy by manually changing the settings.
+
+>The `Default Strategy` is sufficient for most users 
 
 ### What is the coinjoin strategy?
 
