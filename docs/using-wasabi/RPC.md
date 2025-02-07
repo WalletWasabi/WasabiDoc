@@ -410,7 +410,7 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getwalletinfo"}' http
     "isWatchOnly": false,
     "isHardwareWallet": false,
     "isAutoCoinjoin": true,
-    "isRedCoinIsolation": false,
+    "isNonPrivateCoinIsolation": false,
     "accounts": [
       {
         "name": "segwit",

@@ -947,7 +947,7 @@ No, that is currently not possible.
 The automatic coinjoin robot registers the coins, based on multiple factors.
 
 :::tip
-You can enable the [red coin isolation](/FAQ/FAQ-UseWasabi.md#what-does-the-red-coin-isolation-mean-in-the-coinjoin-settings) setting, in case you want to prevent possible input heuristics (from outside observers) of anonscore 1 coins into the same coinjoin round.
+You can enable the [non-private coin isolation](/FAQ/FAQ-UseWasabi.md#what-does-the-non-private-coin-isolation-mean-in-the-coinjoin-settings) setting, in case you want to prevent possible input heuristics (from outside observers) of anonscore 1 coins into the same coinjoin round.
 :::
 
 ### How to exclude/freeze coins from coinjoin?
@@ -1027,13 +1027,13 @@ The default Auto-start coinjoin threshold is 0.01 BTC.
 
 ![Auto-start coinjoin threshold](/AutoStartCoinjoinThreshold.png "Auto-start coinjoin threshold")
 
-### What does the `Red coin isolation` mean in the coinjoin settings?
+### What does the `Non-private coin isolation` mean in the coinjoin settings?
 
-When the `Red coin isolation` is enabled, only a single coin with anonymity score 1 will be allowed into the coinjoin registration.
+When the `Non-private coin isolation` is enabled, only a single coin with anonymity score 1 will be allowed into the coinjoin registration.
 To prevent possible coinjoin input heuristics from outside observers.
-The `Red coin isolation` is enabled by default when the `Maximize Privacy` coinjoin strategy is selected.
+The `Non-private coin isolation` is enabled by default when the `Default Strategy` or `Enhance Privacy` coinjoin strategy is selected.
 
-![Red Coin Isolation](/RedCoinIsolation.png "Red Coin Isolation")
+![Non Private Coin Isolation](/NonPrivateCoinIsolation.png "Non Private Coin Isolation")
 
 ### Do coinjoin transactions signal RBF?
 
