@@ -1008,11 +1008,11 @@ Read more [here](/using-wasabi/CoinJoin.md).
 
 ### What are the differences/settings per coinjoin strategy?
 
-|  | Minimize Costs | Maximize Speed | Maximize Privacy | 
+|  | Enhance privacy | Default strategy | Reduce costs | 
 |:---:|:---:|:---:|:---:|
-| Anonymity score target | 5 | 5 | random between 30 and 50 |
-| Coinjoin time preference   | weeks | hours | hours |
-| Red coin isolation | not enabled  | not enabled | enabled |
+| Non-private coin isolation | enabled  | enabled | not enabled |
+| Coinjoin time preference   | hours | hours | weeks |
+| Anonymity score target | random between 30 and 50 | 10 | 5 |
 
 ### What does the `Auto-start coinjoin threshold` mean in the coinjoin settings?
 
