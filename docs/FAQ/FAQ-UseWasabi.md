@@ -1405,19 +1405,20 @@ The setting to turn it off is only intended for debugging and trouble shooting.
 
 ### How can I change the anonymity score target?
  
-The anonscore target is a wallet specific setting which is determined by the `Coinjoin Strategy`, but can also be manually changed in the `Coinjoin Settings` dialog.
+The anonscore target is a wallet specific setting which is determined by the `Coinjoin Strategy`, but can also be manually changed in the `Wallet Settings` dialog.
 
-On the main view click the three dots on the top right corner after loading the wallet.
-Choose `Coinjoin Settings`, click `Change` (Coinjoin strategy), click `Customize`.
-Move the `Anonymity score target` slider to the desired value and click `Done`.
+- On the main view click the three dots on the top right corner after loading a wallet.
+- Choose `Wallet Settings`.
+- Go to the `Coinjoin` tab.
+- Set the `Anonymity score target` to the desired value and click `Done`.
 
-![Coinjoin Settings Anonymity score target](/AnonymityScoreTarget.png "Coinjoin Settings Anonymity score target")
+![Wallet Settings Anonymity score target](/AnonymityScoreTarget.png "Wallet Settings Anonymity score target")
 
 Alternatively, you can change the anonymity score target by editing the wallet file.
 Go to the SearchBar and click `Wallet Folder` and open the wallet json file and edit the `AnonScoreTarget` value.
 
 ```json
-"AnonScoreTarget": 5,
+"AnonScoreTarget": 10,
 ```
 
 ### What is the dust threshold?
