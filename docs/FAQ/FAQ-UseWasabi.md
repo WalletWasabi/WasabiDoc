@@ -1029,7 +1029,7 @@ The default Auto-start coinjoin threshold is 0.01 BTC.
 
 ### What does the `Non-private coin isolation` mean in the coinjoin settings?
 
-When the `Non-private coin isolation` is enabled, only a single coin with anonymity score 1 will be allowed into the coinjoin registration.
+When the `Non-private coin isolation` is enabled, only a single coin can be non-private (anonymity score 1) out of the registred coins into coinjoin.
 To prevent possible coinjoin input heuristics from outside observers.
 The `Non-private coin isolation` is enabled by default when the `Default Strategy` or `Enhance Privacy` coinjoin strategy is selected.
 
