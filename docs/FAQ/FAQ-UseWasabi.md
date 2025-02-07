@@ -1008,7 +1008,7 @@ Read more [here](/using-wasabi/CoinJoin.md).
 
 ### What are the differences/settings per coinjoin strategy?
 
-|  | Minimize Costs | Maximize Speed | Maximize Privacy | 
+|  | Enhance privacy | Default strategy | Reduce costs | 
 |:---:|:---:|:---:|:---:|
 | Anonymity score target | 5 | 5 | random between 30 and 50 |
 | Coinjoin time preference   | weeks | hours | hours |
