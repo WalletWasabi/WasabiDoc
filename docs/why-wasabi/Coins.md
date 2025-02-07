@@ -42,7 +42,7 @@ Read more [here](/using-wasabi/Receive.md#the-importance-of-labeling).
 
 When sending bitcoin, the transaction might contain change (back to the sender).
 This can have privacy downsides as explained [here](/using-wasabi/ChangeCoins.md#why-change-is-an-issue).
-When sending in Wasabi the user will be shown with an option to avoid change by slightly increasing or decreasing the send amount in order to avoid change (if possible).
+When sending in Wasabi the user will be shown a suggestion to avoid change if possible, by slightly increasing or decreasing the sent amount at most by 15%.
 There is a shield icon shown at the _Preview Transaction_ screen at the top right corner which displays the options when hovering over with the cursor.
 
 ## Heuristics identifying change
