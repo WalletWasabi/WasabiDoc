@@ -48,5 +48,8 @@
     "nth-check": "^2.1.1",
     "postcss": "^8.4.31",
     "vite": "^6.0.11"
+  },
+  "resolutions": {
+    "esbuild": "^0.19.12"
   }
 }
