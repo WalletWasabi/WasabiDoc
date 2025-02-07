@@ -110,7 +110,7 @@ However, he can use it to derive a full transaction history, thus it is a potent
 
 Now insert the SD card to your computer, and open Wasabi Wallet.
 Go to the `Add Wallet` dialog, and click `Import a wallet`, browse to the SD card and select the `new-wallet.json` file.
-Wasabi will automatically import and modify this skeleton file and store it in your `Wallets` and `WalletBackups` folders.
+Wasabi will automatically import and modify this skeleton file and store it in your `Wallets` folder.
 
 #### Receiving bitcoin
 
