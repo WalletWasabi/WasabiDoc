@@ -1010,9 +1010,9 @@ Read more [here](/using-wasabi/CoinJoin.md).
 
 |  | Enhance privacy | Default strategy | Reduce costs | 
 |:---:|:---:|:---:|:---:|
-| Anonymity score target | 5 | 5 | random between 30 and 50 |
-| Coinjoin time preference   | weeks | hours | hours |
-| Red coin isolation | not enabled  | enabled | enabled |
+| Anonymity score target | random between 30 and 50 | 10 | 5 |
+| Coinjoin time preference   | hours | hours | weeks |
+| Non-private coin isolation | enabled  | enabled | not enabled |
 
 ### What does the `Auto-start coinjoin threshold` mean in the coinjoin settings?
 
