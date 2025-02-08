@@ -274,7 +274,9 @@ If you shutdown your computer or kill Wasabi while a wallet is synchronizing the
 
 ### How do I resync (rescan) my wallet?
 
-You can rescan an existing Wasabi wallet by editing the `Height` and the `TurboSyncHeight` in the wallet file.
+Since Wasabi version [2.5.0](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.5.0) there is a _Resync Wallet_ button at the _Tools_ tab at _Wallet Settings_.
+
+You can rescan an existing Wasabi wallet manually by editing the `Height` and the `TurboSyncHeight` in the wallet file.
 
 - Start Wasabi.
 - Type `Wallet Folder` in the search bar and open it.
