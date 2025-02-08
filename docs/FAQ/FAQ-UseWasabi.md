@@ -559,8 +559,7 @@ This reduces the risk of a passive bystander being able to link two transactions
 
 ### What fee should I select?
 
-Wasabi uses the [smartfee](https://bitcointechtalk.com/an-introduction-to-bitcoin-core-fee-estimation-27920880ad0) estimation algorithm provided by bitcoind.
-This integrates both data from recent blocks, as well as the local mempool to estimate the current and future demand for blockspace.
+Wasabi fetches fee esimations from mempool.space (default) or blockchain.info.
 The lower the fee is, the longer the estimated wait; and the higher the fee, the faster the confirmation will come.
 There are several different confidence levels, each of them gives an educated guess how soon the transaction will confirm.
 But the provided time frames are only a rough estimation, and not at all a precise metric.
@@ -1561,10 +1560,10 @@ This can be done by specifying the port(s) at startup with the [startup paramete
 
 ### Where does the BTC exchange rate come from?
 
-By default, Wasabi fetches the exchange rate from Mempool Space.
+By default, Wasabi fetches the exchange rate from mempool.space.
 
 The _Exchange Rate Provider_ can be set in the Settings at the _Connections_ tab.
-It can fetch the exchange rate from one of the following providers: Mempool Space, Blockchain Info, CoinGecko or Gemini.
+It can fetch the exchange rate from one of the following providers: mempool.space, blockchain.info, CoinGecko or Gemini.
 
 ## Silent Payments
 
