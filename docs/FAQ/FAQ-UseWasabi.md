@@ -559,8 +559,7 @@ This reduces the risk of a passive bystander being able to link two transactions
 
 ### What fee should I select?
 
-Wasabi uses the [smartfee](https://bitcointechtalk.com/an-introduction-to-bitcoin-core-fee-estimation-27920880ad0) estimation algorithm provided by bitcoind.
-This integrates both data from recent blocks, as well as the local mempool to estimate the current and future demand for blockspace.
+Wasabi fetches fee esimations from Mempool Space (default) or Blockchain Info.
 The lower the fee is, the longer the estimated wait; and the higher the fee, the faster the confirmation will come.
 There are several different confidence levels, each of them gives an educated guess how soon the transaction will confirm.
 But the provided time frames are only a rough estimation, and not at all a precise metric.
