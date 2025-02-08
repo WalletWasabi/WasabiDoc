@@ -1561,8 +1561,10 @@ This can be done by specifying the port(s) at startup with the [startup paramete
 
 ### Where does the BTC exchange rate come from?
 
-Wasabi fetches the BTC/USD exchange rate from one of these exchanges: blockchain.com, Bitstamp, CoinGecko, Coinbase, Gemini and Coingate.
-It first tries to fetch the exchange rate from blockchain.com, if that's not possible it will try to fetch it from the next exchange in the listed order (and so on, until success).
+By default, Wasabi fetches the exchange rate from Mempool Space.
+
+The _Exchange Rate Provider_ can be set in the Settings at the _Connections_ tab.
+It can fetch the exchange rate from one of the following providers: Mempool Space, Blockchain Info, CoinGecko or Gemini.
 
 ## Silent Payments
 
