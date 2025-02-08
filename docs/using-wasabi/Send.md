@@ -101,7 +101,7 @@ So in order to increase your privacy, you can set a non-rounded amount, like `0.
 Every transaction must specify a fee which incentives the miner to include it in a block, it is calculated by `value of inputs - value of outputs`.
 The higher the fee per virtual byte (vByte) transaction size, the more likely miners are to confirm this transaction.
 
-Wasabi's fee estimation is based on Bitcoin Core's `smart fee` algorithm with some additions: it uses the mempool.space fee histogram to remove estimations that overpay, and Wasabi also makes sure to be included in the top 300 MB mempool to not be dropped from default Bitcoin Core mempools.
+Wasabi's fetches fee rate estimations from Mempool Space (default) or Blockstream Info.
 
 You can change the fee by moving the slider, or by manually setting the [transaction fee rate](/FAQ/FAQ-UseWasabi.md#how-do-i-set-custom-fee-rate).
 
@@ -115,8 +115,6 @@ If you have a transaction that is high-priority and you really want it to be con
 
 1. Use [a mempool monitor](https://mempool.space) (available [Tor onion website](http://mempoolhqx4isw62xs7abwphsq7ldayuidyx2v2oethdhhj6mlo2r6ad.onion/)) to see what fees are likely to get a transaction to be confirmed in the next block.
 2. Select a fee that is well above the current highest fee (perhaps double or triple it) if it is very important to you that the transaction is confirmed soon.
-
-For a deeper dive into the fee estimation process, [this article](https://bitcointechtalk.com/an-introduction-to-bitcoin-core-fee-estimation-27920880ad0) is worth reading.
 :::
 
 ## Privacy Suggestions
