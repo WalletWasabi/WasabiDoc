@@ -189,8 +189,8 @@ The coordinator sends this transaction over the Tor network to random Bitcoin P2
 
 Wasabi Wallet has automatic coinjoin.
 It is done by the built-in automatic coinjoin "robot".
-The robot contains instructions/settings, like how often and when to coinjoin.
-The user is able to specify these settings in the `Coinjoin Settings` dialog, according to his own preferences.
+The robot contains instructions/settings about how much and when to coinjoin.
+The user is able to specify these settings in the _Coinjoin_ tab at the _Wallet Settings_, according to his own preferences.
 The wallet ships with default settings, which are good enough for most users.
 
 ![Wasabi Wallet Coinjoin Settings](/CoinjoinSettings.png "Wasabi Wallet Coinjoin Settings")
