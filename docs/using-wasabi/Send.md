@@ -101,7 +101,7 @@ So in order to increase your privacy, you can set a non-rounded amount, like `0.
 Every transaction must specify a fee which incentives the miner to include it in a block, it is calculated by `value of inputs - value of outputs`.
 The higher the fee per virtual byte (vByte) transaction size, the more likely miners are to confirm this transaction.
 
-Wasabi's fetches fee rate estimations from Mempool Space (default) or Blockstream Info.
+Wasabi's fetches fee rate estimations from mempool.space (default) or blockchain.info.
 
 You can change the fee by moving the slider, or by manually setting the [transaction fee rate](/FAQ/FAQ-UseWasabi.md#how-do-i-set-custom-fee-rate).
 
