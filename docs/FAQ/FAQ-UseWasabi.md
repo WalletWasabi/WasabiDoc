@@ -907,24 +907,19 @@ With Wasabi this can be achieved in a matter of hours.
 
 ### How does my wallet communicate with the Wasabi coordinator server?
 
-Wasabi communicates in many ways to the coordinator server, and it is always over the Tor network.
+Wasabi communicates to the coordinator server to participate in coinjoins.
+By default, all communication is done over Tor.
 
-First of all, Wasabi uses [BIP 158 block filters](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki) to ensure network level privacy.
-You can follow these FAQs to have a full explanation on the theme:
-- [What are BIP-158 Block Filters?](/FAQ/FAQ-UseWasabi.md#what-are-bip-158-block-filters)
-- [What software supplies the block filters that Wasabi uses?](/FAQ/FAQ-Introduction.md#what-software-supplies-the-block-filters-that-wasabi-uses)
 - [Can the coordinator attack me?](/FAQ/FAQ-Introduction.md#can-the-coordinator-attack-me)
 - [Is the backend's coordinator code open-source?](/FAQ/FAQ-Introduction.md#is-the-backend-s-coordinator-code-open-source)
 
-Then, there are five different phases in a CoinJoin.
+Then, there are five different phases in a coinjoin.
 You can follow these links to have a full explanation on that:
 1. [Input registration phase](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-input-registration-phase)
 2. [Connection confirmation phase](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-connection-confirmation-phase)
 3. [Output registration phase](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-output-registration-phase)
 4. [Signing phase](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-signing-phase)
 5. [Broadcasting phase](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-broadcasting-phase)
-
-The backend server also sends you information about the current mempool for fee estimation as well as the US Dollar exchange rate.
 
 ### What is the address of the coordinator?
 
