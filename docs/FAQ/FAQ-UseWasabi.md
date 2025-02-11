@@ -1026,7 +1026,7 @@ A use case is that it might not be economical to coinjoin with this amount (fee 
 For example, if the balance is 0.005 BTC, `Automatically start coinjoin` is enabled and the `Stop coinjoin threshold` is 0.01 BTC, the user will have to manually press Play to start coinjoining.
 The default _Stop coinjoin threshold_ is 0.01 BTC.
 
-![Auto-start coinjoin threshold](/AutoStartCoinjoinThreshold.png "Auto-start coinjoin threshold")
+![Stop coinjoin threshold](/StopCoinjoinThreshold.png "Stop coinjoin threshold")
 
 ### What does the `Non-private coin isolation` mean in the coinjoin settings?
 
