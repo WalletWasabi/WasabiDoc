@@ -1012,16 +1012,16 @@ Read more [here](/using-wasabi/CoinJoin.md).
 | Coinjoin time preference   | hours | hours | weeks |
 | Anonymity score target | random between 30 and 50 | 10 | 5 |
 
-### What does the `Auto-start coinjoin threshold` mean in the coinjoin settings?
+### What does the `Stop coinjoin threshold` mean in the coinjoin settings?
 
-It is the amount at which your funds will automatically participate in coinjoin in the background.
-If the non-private wallet balance is less than this amount coinjoin will not automatically start.
-A use case is that it might not be economical to coinjoin with this non-private amount (fee amount compared to coinjoin amount).
+It is the amount at which your wallet will automatically stop/not start coinjoining when your wallet balance is below this.
 
-For example, if the non-private balance is 0.005 BTC and the `Auto-start coinjoin threshold` is 0.01 BTC, the user will have to manually press Play to start coinjoining.
-The default Auto-start coinjoin threshold is 0.01 BTC.
+A use case is that it might not be economical to coinjoin with this amount (fee amount compared to coinjoin amount).
 
-![Auto-start coinjoin threshold](/AutoStartCoinjoinThreshold.png "Auto-start coinjoin threshold")
+For example, if the balance is 0.005 BTC, `Automatically start coinjoin` is enabled and the `Stop coinjoin threshold` is 0.01 BTC, the user will have to manually press Play to start coinjoining.
+The default _Stop coinjoin threshold_ is 0.01 BTC.
+
+![Stop coinjoin threshold](/StopCoinjoinThreshold.png "Stop coinjoin threshold")
 
 ### What does the `Non-private coin isolation` mean in the coinjoin settings?
 

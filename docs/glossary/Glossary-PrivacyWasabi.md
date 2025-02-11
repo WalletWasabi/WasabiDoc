@@ -36,11 +36,6 @@ The anonymity set is effectively the size of the group you are hiding in during 
 It's the quantity of equal value outputs of one CoinJoin transaction.
 Read more: [What is the anonymity set?](/FAQ/FAQ-UseWasabi.md#what-is-the-anonymity-set)
 
-### Auto-start coinjoin (Pleb Stop) threshold
-
-The auto-start coinjoin threshold, a.k.a Pleb Stop, is the minimum wallet balance at which coinjoin will automatically start/continue.
-The amount can be changed in the _Coinjoin Settings_ (_Auto-start coinjoin threshold_ setting), the default is 0.01 BTC.
-
 ### Backend
 
 [The part of a software system that is not usually visible or accessible to a user of that system](https://www.merriam-webster.com/dictionary/back%20end).
@@ -184,6 +179,11 @@ Safety coinjoin is a concept for doing an extra coinjoin after a user registers 
 
 This was added in Wasabi [2.0.6 version](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.0.6) to increase privacy for people who generate a new wallet -> receive a coin -> do one coinjoin -> send all the money out.
 It aims to prevent targeted analysis that compares the value of consolidated coinjoin outputs with the value of one of the coinjoin's inputs.
+
+### Stop coinjoin (Pleb Stop) threshold
+
+The _Stop coinjoin threshold_, a.k.a Pleb Stop, is the amount at which coinjoin will automatically stop/not start if the wallet balance is below this amount.
+The amount can be changed in the _Coinjoin Settings_ (_Stop coinjoin threshold_ setting), the default is 0.01 BTC.
 
 ### Taint
 
