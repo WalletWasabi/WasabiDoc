@@ -58,7 +58,8 @@ Please leave Wasabi Wallet running, and eventually there will be a successful co
 ### More Details
 
 `Automatically start coinjoin` can be enabled from the coinjoin settings.
-If enabled, Wasabi starts automatically coinjoining your funds when the total value of the non-private coins is equal to or above the `Auto-start coinjoin threshold` (0.01 BTC by default).
+If enabled, Wasabi starts automatically coinjoining your funds when the wallet balance is equal to or above the `Stop coinjoin threshold` (0.01 BTC by default).
+
 In case you want to start the process manually, then click the play button; if you want to stop coinjoin, then click the pause button.
 
 Once a coin achieves enough privacy (reaches the `Anonymity score target`), then the corresponding amount will show up in the wallet's main view as "PRIVATE".
@@ -210,19 +211,19 @@ The wallet will coinjoin until the `privacy progress` is 100%.
 
 ![Coinjoin Settings Automatically Start Coinjoin](/CoinjoinSettingsAutomaticallyStartCoinjoin.png "Coinjoin Settings Automatically Start Coinjoin")
 
-### Auto-start coinjoin threshold
+### Stop coinjoin threshold
 
-The default Auto-start coinjoin threshold is 0.01 BTC.
+The default `Stop coinjoin threshold` is 0.01 BTC.
 
-The wallet will not automatically start coinjoining if the non-private balance is below the `Auto-start coinjoin threshold`, even if the `Automatically start coinjoin` is enabled.
+The wallet will automatically stop coinjoining if the wallet balance is below the `Stop coinjoin threshold`, even if the `Automatically start coinjoin` is enabled.
 In this case the user has to manually press Play to start coinjoining.
 This setting can be used to prevent paying (relatively) high fees for smaller bitcoin amounts.
 
-For example, if the non-private balance is 0.005 BTC and the Auto-start coinjoin threshold is 0.01 BTC, the user will have to manually press Play to start coinjoining. 
+For example, if the non-private balance is 0.005 BTC and the `Stop coinjoin threshold` is 0.01 BTC, the user will have to manually press Play to start coinjoining. 
 
-![Auto-start Coinjoin Threshold](/AutoStartCoinjoinThreshold.png "Auto-start Coinjoin Threshold")
+![Stop Coinjoin Threshold](/StopCoinjoinThreshold.png "Stop Coinjoin Threshold")
 
-:::tip It is OK to set the Auto-start coinjoin threshold to 0
+:::tip It is OK to set the Stop coinjoin threshold to 0
 If you have some small non-private left overs: you can coinjoin these by pressing Play, or wait until you receive more funds.
 If you want to always automatically coinjoin ALL your coins, this can be set to 0 BTC.
 Note that you might pay relatively more fees for coinjoining smaller amounts.
