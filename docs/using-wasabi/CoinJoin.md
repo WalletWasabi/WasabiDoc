@@ -215,7 +215,7 @@ The wallet will coinjoin until the `privacy progress` is 100%.
 
 The default `Stop coinjoin threshold` is 0.01 BTC.
 
-The wallet will automatically stop coinjoining if the wallet balance is below the `Stop coinjoin threshold`, even if the `Automatically start coinjoin` is enabled.
+The wallet will automatically stop/not start coinjoining if the wallet balance is below the `Stop coinjoin threshold`, even if the `Automatically start coinjoin` is enabled.
 In this case the user has to manually press Play to start coinjoining.
 This setting can be used to prevent paying (relatively) high fees for smaller bitcoin amounts.
 

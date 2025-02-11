@@ -1019,7 +1019,7 @@ Read more [here](/using-wasabi/CoinJoin.md).
 
 ### What does the `Stop coinjoin threshold` mean in the coinjoin settings?
 
-It is the amount at which your wallet will automatically stop coinjoining if it gets below this.
+It is the amount at which your wallet will automatically stop/not start coinjoining when your wallet balance is below this.
 
 A use case is that it might not be economical to coinjoin with this amount (fee amount compared to coinjoin amount).
 

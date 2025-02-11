@@ -182,7 +182,7 @@ It aims to prevent targeted analysis that compares the value of consolidated coi
 
 ### Stop coinjoin (Pleb Stop) threshold
 
-The _Stop coinjoin threshold_, a.k.a Pleb Stop, is the amount at which coinjoin will automatically stop if the wallet balance is below this amount.
+The _Stop coinjoin threshold_, a.k.a Pleb Stop, is the amount at which coinjoin will automatically stop/not start if the wallet balance is below this amount.
 The amount can be changed in the _Coinjoin Settings_ (_Stop coinjoin threshold_ setting), the default is 0.01 BTC.
 
 ### Taint
