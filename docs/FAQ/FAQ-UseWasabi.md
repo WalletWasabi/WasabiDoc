@@ -1014,11 +1014,11 @@ Read more [here](/using-wasabi/CoinJoin.md).
 
 ### What does the `Stop coinjoin threshold` mean in the coinjoin settings?
 
-It is the amount at which your wallet will automatically stop/not start coinjoining when your wallet balance is below this.
+It is the confirmed wallet balance under which coinjoin will automatically stop/not start.
 
 A use case is that it might not be economical to coinjoin with this amount (fee amount compared to coinjoin amount).
 
-For example, if the balance is 0.005 BTC, `Automatically start coinjoin` is enabled and the `Stop coinjoin threshold` is 0.01 BTC, the user will have to manually press Play to start coinjoining.
+For example, if the confirmed balance is 0.005 BTC, `Automatically start coinjoin` is enabled and the `Stop coinjoin threshold` is 0.01 BTC, the user will have to manually press Play to start coinjoining.
 The default _Stop coinjoin threshold_ is 0.01 BTC.
 
 ![Stop coinjoin threshold](/StopCoinjoinThreshold.png "Stop coinjoin threshold")

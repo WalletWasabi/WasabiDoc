@@ -219,7 +219,7 @@ The wallet will automatically stop/not start coinjoining if the wallet balance i
 In this case the user has to manually press Play to start coinjoining.
 This setting can be used to prevent paying (relatively) high fees for smaller bitcoin amounts.
 
-For example, if the non-private balance is 0.005 BTC and the `Stop coinjoin threshold` is 0.01 BTC, the user will have to manually press Play to start coinjoining. 
+For example, if the confirmed balance is 0.005 BTC and the `Stop coinjoin threshold` is 0.01 BTC, the user will have to manually press Play to start coinjoining.
 
 ![Stop Coinjoin Threshold](/StopCoinjoinThreshold.png "Stop Coinjoin Threshold")
 
