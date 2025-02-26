@@ -51,6 +51,7 @@ All configuration options available via the `Config.json` file are also availabl
 | "EnableGpu": true | --enablegpu=true | WASABI-ENABLEGPU=true |
 | "CoordinatorIdentifier": "CoinJoinCoordinatorIdentifier" | --coordinatoridentifier="coinjoincoordinatoridentifier" | WASABI-COORDINATORIDENTIFIER="coinjoincoordinatoridentifier" |
 | "ExchangeRateProvider": "MempoolSpace" | --exchangerateprovider=MempoolSpace | WASABI-EXCHANGERATEPROVIDER=MempoolSpace |
+| "FeeRateEstimationProvider": "MempoolSpace" | --feerateestimationprovider=MempoolSpace | WASABI-FEERATEESTIMATIONPROVIDER=MempoolSpace |
 | "MaxCoinJoinMiningFeeRate": 150.0 | --maxcoinjoinminingfeerate=150.0 | WASABI-MAXCOINJOINMININGFEERATE=150.0 |
 | "AbsoluteMinInputCount": 21 | --absolutemininputcount=21 | WASABI-ABSOLUTEMININPUTCOUNT=21 |
 
