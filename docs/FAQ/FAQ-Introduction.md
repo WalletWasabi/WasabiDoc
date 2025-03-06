@@ -11,10 +11,10 @@
 
 ### Who can use Wasabi?
 
-Every single line of code in Wasabi, the [wallet](https://github.com/WalletWasabi/WalletWasabi/tree/master/WalletWasabi.Fluent.Desktop), the [backend server](https://github.com/WalletWasabi/WalletWasabi/tree/master/WalletWasabi.Backend), the [daemon](https://github.com/WalletWasabi/WalletWasabi/tree/master/WalletWasabi.Daemon), the [tests](https://github.com/WalletWasabi/WalletWasabi/tree/master/WalletWasabi.Tests), the [packager](https://github.com/WalletWasabi/WalletWasabi/tree/master/WalletWasabi.Packager), the [library](https://github.com/WalletWasabi/WalletWasabi/tree/master/WalletWasabi), the [documentation](https://github.com/WalletWasabi/WasabiDoc) - has always been and will always be libre and open-source under the [MIT license](https://github.com/WalletWasabi/WalletWasabi/blob/master/LICENSE.md).
+Every single line of code in Wasabi, the [GUI](https://github.com/WalletWasabi/WalletWasabi/tree/master/WalletWasabi.Fluent), the [backend](https://github.com/WalletWasabi/WalletWasabi/tree/master/WalletWasabi.Backend), the [coordinator](https://github.com/WalletWasabi/WalletWasabi/tree/master/WalletWasabi.Coordinator), the [daemon](https://github.com/WalletWasabi/WalletWasabi/tree/master/WalletWasabi.Daemon), the [tests](https://github.com/WalletWasabi/WalletWasabi/tree/master/WalletWasabi.Tests), the [library](https://github.com/WalletWasabi/WalletWasabi/tree/master/WalletWasabi), the [documentation](https://github.com/WalletWasabi/WasabiDoc) - has always been and will always be libre and open-source under the [MIT license](https://github.com/WalletWasabi/WalletWasabi/blob/master/LICENSE.md).
 This means that anyone, yes, ANYONE can use Wasabi without permission, for any use case, free of charge.
 
-Wasabi is used by individuals to make everyday payments, to manage their hardware wallet long term hodlings, and to CoinJoin their sats for added privacy.
+Wasabi is used by individuals to make everyday payments, to manage their hardware wallet long term hodlings, and to coinjoin their sats for added privacy.
 Entrepreneurs may use Wasabi to defend their customers from spies and to ensure a private business relationship.
 While kids may use Wasabi to stack the sats gifted by grandma, and learn the importance of hodling.
 
@@ -84,7 +84,7 @@ Yes, you can verify the code on [GitHub](https://github.com/WalletWasabi/WalletW
 
 ### Is there an Android/iOs version?
 
-No, Wasabi and CoinJoin features require considerable computational power, not currently replicable on a smartphone.
+No, Wasabi and coinjoin features require considerable computational power, not currently replicable on a smartphone.
 
 ### Where can I find Wasabi Wallet on social media?
 
