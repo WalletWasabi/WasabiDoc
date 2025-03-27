@@ -601,7 +601,7 @@ The user can change which non-private coins will be used, based on the labelling
 Wasabi has 3 different mechanisms to broadcast a transaction, it will try in the following order:
 1. Broadcast to the connected trusted node
 2. Broadcast to the Bitcoin P2P network
-3. Broadcast to the backend.
+3. Broadcast to an external site.
 
 1: The transaction is broadcast by the RPC if the user has specified a trusted node. The Bitcoin node will then propagate the transaction to the network.
 
@@ -614,7 +614,7 @@ This means that if there are 12 peers connected, it will be broadcast to 3 nodes
 - Receive confirmation from these nodes that the transaction was propagated (timeout if this takes more than 21 seconds)
 - Disconnect from the nodes that were used for broadcasting
 
-3: The transaction is broadcast to the backend using a new Tor identity.
+3: The transaction is broadcast to an external site (default is Mempool Space) using a new Tor identity.
 
 Once a transaction is sent, Wasabi will always open a new Tor circuit with a new random node on the network, in order to avoid revealing too much information to one party.
 
