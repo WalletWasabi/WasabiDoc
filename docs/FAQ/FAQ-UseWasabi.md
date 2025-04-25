@@ -1381,10 +1381,6 @@ There are three different ways of using your [Bitcoin full node with Wasabi](/us
 
 ![Wasabi Wallet Remote P2P Bitcoin Endpoint full node](/SettingsBitcoinCoreRemote.png "Wasabi Wallet Remote P2P Bitcoin Endpoint full node")
 
-- If you are not yet running a full node, Wasabi has the bitcoind binaries included, and with one click in the `Settings`, you can start Bitcoin Knots together with Wasabi.
-
-![Wasabi Wallet local Bitcoin Knots full node integration](/SettingsBitcoinCore.png "Wasabi Wallet local Bitcoin Knots full node integration")
-
 [![Watch the video](/Logo_without_text_with_bg_dark_with_yt.png)](https://youtu.be/gWo2RAkIVrE)
 
 ### How can I turn off Tor?

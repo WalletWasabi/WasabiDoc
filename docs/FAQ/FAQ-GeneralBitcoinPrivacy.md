@@ -112,21 +112,6 @@ Regardless how you ask this other server, there is now more metadata available t
 There are bad ways to communicate, like querying a block explorer over clearnet, and good ways to communicate, like using [BIP 158](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki) block filters over Tor.
 But regardless, running your own full node means that you don't need to communicate with anyone about your specific coins and this is strictly better.
 
-### How can I set up a full node?
-
-Wasabi comes [pre-installed with bitcoind](/using-wasabi/BitcoinFullNode.md) from [Bitcoin Knots](https://bitcoinknots.org/) and it can be started on the same desktop or laptop computer with just one click.
-This is likely the most convenient solution for Wasabikas.
-
-There are also other node implementations different from Bitcoin Knots, such as [Bitcoin Core](https://bitcoincore.org/) or [Libbitcoin](https://github.com/libbitcoin/libbitcoin-node), that could be used as well.
-
-Instead, if you prefer to use some dedicated hardware solutions, these are some of the most reliable projects:
-- [RaspiBlitz](https://github.com/rootzoll/raspiblitz), a DIY project based on the Raspberry platform
-- [RaspiBolt](https://raspibolt.org/), another Raspberry DIY node
-- [nix-bitcoin](https://nixbitcoin.org/), a collection of Nix packages and NixOS modules
-- [Nodl](https://www.nodl.eu/), works out of the box and runs on a powerful Rockchip CPU
-- [myNode](https://mynodebtc.com/), a DIY project with optional paid versions
-- [Start9](https://start9.com/), a project making it easy to run your own server(s)
-
 ### Why is it important to use a new address for every payment?
 
 Addresses being used more than once is very damaging to privacy because that links together more blockchain transactions with proof that they were created by the same entity.

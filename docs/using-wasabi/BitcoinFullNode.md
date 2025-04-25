@@ -29,7 +29,6 @@ There are several software implementations that function as a full node, for exa
 
 ## How does Wasabi use your Bitcoin full node
 
-Wasabi currently has a work in progress partial Bitcoin Knots integration.
 As of now, the Wasabi backend server broadcasts [BIP 158 block filters](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki) to all Wasabi clients, who locally check if the filter hits for their public keys.
 Then you know that this block has a transaction of yours included, or maybe it is a false positive.
 
@@ -42,19 +41,6 @@ If a full node is connected to Wasabi, then the relevant block is fetched from t
 Wasabi also queries if your local mempool has unconfirmed transactions that are of interest to you.
 Further, your full node is used to estimate the current mining fee level based on the bitcoind `smartfee` algorithm.
 Your full node is not used to broadcast your transactions, as this is done through a random peer-to-peer node with a new tor identity, which is better for your [network-level privacy](/why-wasabi/NetworkLevelPrivacy.md).
-
-The future goal is that the local full node (Knots) is used to generate the BIP 158 block filters from the verified blocks.
-Only then is there full verification, and no trust in the Wasabi backend server.
-
-## bitcoind within Wasabi
-
-Wasabi Wallet ships with [Bitcoin Knots](https://bitcoinknots.org).
-This means that every Wasabi client has the necessary software to run a Bitcoin full node and define, verify, and enforce monetary consensus with bitcoind, but this verification is not yet used within Wasabi itself, it is a work in progress.
-By default, bitcoind is not started together with Wasabi.
-This must be activated explicitly in the settings because this is a bandwidth, CPU and storage-intensive program.
-It is optional to keep bitcoind running even after Wasabi Wallet is shut down, so as to verify blocks as soon as they are received.
-
-![Wasabi Wallet Bitcoin Knots full node integration](/SettingsBitcoinCore.png "Wasabi Wallet Bitcoin Knots full node integration")
 
 ## Using an already existing local Bitcoin full node
 
