@@ -209,6 +209,8 @@ The current downloading source still remains to be GitHub.
 
 > When `Auto download new version`, Nostr is only used for the signaling that a new version is available.
 
+> Wasabi does not connect to any 3rd party services, including Nostr, when Tor is disabled.
+
 ## Advanced Installation
 
 ### How do I compile Wasabi from source?
