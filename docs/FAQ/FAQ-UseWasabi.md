@@ -1374,18 +1374,18 @@ You can use the [Wasabi RPC server `gethistory` call](/using-wasabi/RPC.md#gethi
 
 ### How do I connect my own full node to Wasabi?
 
-There are three different ways of using your [Bitcoin full node with Wasabi](/using-wasabi/BitcoinFullNode.md):
+Wasabi can connect to a specified full node using the Bitcoin RPC.
 
-- If you have a full node already running on the same computer as Wasabi, it will automatically be detected and used by default.
-- If you have a full node on a remote computer, then you can connect to it by specifying the local network IP address or Tor onion service in the Wasabi `Settings` tab.
+Go to `Settings` -> `Bitcoin` tab -> enable `Connect to Bitcoin Node RPC` -> specify the RPC endpoint and RPC credential string.
+The RPC credential string can be the username & password, or the cookie file of the node.
 
-![Wasabi Wallet Remote P2P Bitcoin Endpoint full node](/SettingsBitcoinCoreRemote.png "Wasabi Wallet Remote P2P Bitcoin Endpoint full node")
+![Settings Bitcoin RPC](/SettingsBitcoinRPC.png "Settings Bitcoin RPC")
 
-- If you are not yet running a full node, Wasabi has the bitcoind binaries included, and with one click in the `Settings`, you can start Bitcoin Knots together with Wasabi.
+The Bitcoin RPC status is shown in the bottom right corner status icon (the status icon displays a warning triangle in case the full node is not connected).
 
-![Wasabi Wallet local Bitcoin Knots full node integration](/SettingsBitcoinCore.png "Wasabi Wallet local Bitcoin Knots full node integration")
+![Status Icon Bitcoin RPC](/StatusIconBitcoinRPC.png "Status Icon Bitcoin RPC")
 
-[![Watch the video](/Logo_without_text_with_bg_dark_with_yt.png)](https://youtu.be/gWo2RAkIVrE)
+Read more [here](/using-wasabi/BitcoinFullNode.html#how-does-wasabi-use-your-bitcoin-full-node) about how Wasabi uses the full node.
 
 ### How can I turn off Tor?
 
