@@ -157,11 +157,10 @@ Afterwards, the passphrase is wiped from memory.
 
 ## Broadcast
 
-Once the transaction is signed, Wasabi will connect to a random Bitcoin P2P node over Tor and provide this transaction, then it will immediately disconnect.
-This first node will gossip the transaction throughout the network, then miners can include it in a block.
-
-If for some reason the first broadcast fails, then if you have Wasabi connected to [your own Bitcoin full node](/using-wasabi/BitcoinFullNode.md) this node will broadcast the transaction to the network.
-If this also fails, then the transaction is sent to the backend coordinator with a new Tor identity, who then broadcasts the transaction to the network.
+Once the transaction is signed, it will automatically broadcast the transaction.
+Wasabi has 3 mechanisms for broadcasting a transaction.
+It will try these in the following order until one is successful: connected Bitcoin full node, Bitcoin P2P network, 3rd party API.
+Read more [here](/FAQ/FAQ-UseWasabi.html#how-is-the-transaction-broadcast).
 
 ## Speed Up or Cancel Transaction
 
