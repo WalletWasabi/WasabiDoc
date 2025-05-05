@@ -207,9 +207,11 @@ The Nostr event also contains the source of where to (auto) download the release
 This is to be independent of GitHub for both the new release signaling and the downloading of a release, in case GitHub becomes unavailable.
 The current downloading source still remains to be GitHub.
 
-> When `Auto download new version`, Nostr is only used for the signaling that a new version is available.
+The Nostr Update Manager fetches Nostr events every 24 hours and on application launch.
 
-> Wasabi does not connect to any 3rd party services, including Nostr, when Tor is disabled.
+> When `Auto download new version` is disabled, Nostr is only used for the signaling that a new version is available.
+
+> Wasabi does not connect to Nostr when Tor is disabled.
 
 ## Advanced Installation
 
