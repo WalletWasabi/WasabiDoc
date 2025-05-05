@@ -32,8 +32,8 @@ There are several software implementations that function as a full node, for exa
 If a full node is connected, it will be used for:
 - fetching BIP 158 block filters (if available)
 - downloading blocks
-- fetch fee rate estimations
-- broadcast transactions
+- fetching fee rate estimations
+- broadcasting transactions
 
 If any of these are not available or fail, Wasabi will fall back to the default mechanisms.
 
