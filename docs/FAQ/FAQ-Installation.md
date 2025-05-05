@@ -195,8 +195,23 @@ A new version will have to be installed manually.
 ### How does the `Auto download new version` work?
 
 The software will automatically download the new version's installer upon a new release.
-After it is downloaded, the user can press "Update on Close" to run the installer when closing Wasabi.
-The installer is downloaded from [GitHub](https://github.com/WalletWasabi/WalletWasabi/).
+After it is downloaded and the signature is verified, the user can press "Update on Close" to run the installer when closing Wasabi.
+The installer is downloaded using the Nostr Update Manager.
+
+### How does the Nostr update manager work?
+
+Since Wasabi version [2.0.6](insert link) the Wasabi client is notified of a new release using Nostr, instead of previously used GitHub.
+
+The client fetches the latest Nostr event from the hardcoded [Wasabi Nostr pubkey](https://njump.me/npub129hpcwy3h7uhpzwzts6utkt2p5st7lf4qpzp3d2j0p6z56lvkpgspngzeq) and when the signaled version is higher than the client, the client gets a notification that a new release is available.
+The Nostr event also contains the source of where to (auto) download the release from.
+This is to be independent of GitHub for both the new release signaling and the downloading of a release, in case GitHub becomes unavailable.
+The current downloading source still remains to be GitHub.
+
+The Nostr Update Manager fetches Nostr events every 24 hours and on application launch.
+
+> When `Auto download new version` is disabled, Nostr is only used for the signaling that a new version is available.
+
+> Wasabi does not connect to Nostr when Tor is disabled.
 
 ## Advanced Installation
 
