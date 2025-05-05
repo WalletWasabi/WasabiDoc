@@ -157,7 +157,7 @@ Afterwards, the passphrase is wiped from memory.
 
 ## Broadcast
 
-Once the transaction is signed, it will automatically broadcast the transaction.
+Once the transaction is signed, it will automatically be broadcasted.
 Wasabi has 3 mechanisms for broadcasting a transaction.
 It will try these in the following order until one is successful: connected Bitcoin full node, Bitcoin P2P network, 3rd party API.
 Read more [here](/FAQ/FAQ-UseWasabi.html#how-is-the-transaction-broadcast).
