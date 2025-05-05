@@ -200,7 +200,7 @@ The installer is downloaded using the Nostr Update Manager.
 
 ### How does the Nostr update manager work?
 
-Since Wasabi version [2.0.6](insert link) the Wasabi client is notified of a new release using Nostr, instead of previously used GitHub.
+Since Wasabi version [2.0.6](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.6.0) the Wasabi client is notified of a new release using Nostr, instead of previously used GitHub.
 
 The client fetches the latest Nostr event from the hardcoded [Wasabi Nostr pubkey](https://njump.me/npub129hpcwy3h7uhpzwzts6utkt2p5st7lf4qpzp3d2j0p6z56lvkpgspngzeq) and when the signaled version is higher than the client, the client gets a notification that a new release is available.
 The Nostr event also contains the source of where to (auto) download the release from.
