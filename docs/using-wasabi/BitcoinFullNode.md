@@ -29,18 +29,13 @@ There are several software implementations that function as a full node, for exa
 
 ## How does Wasabi use your Bitcoin full node
 
-As of now, the Wasabi backend server broadcasts [BIP 158 block filters](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki) to all Wasabi clients, who locally check if the filter hits for their public keys.
-Then you know that this block has a transaction of yours included, or maybe it is a false positive.
+If a full node is connected, it will be used for:
+- fetching BIP 158 block filters (if available)
+- downloading blocks
+- fetching fee rate estimations
+- broadcasting transactions
 
-:::warning Work in progress
-The Wasabi backend has to be trusted to serve correct filters.
-This current work in progress integration **does not** verify consensus within Wasabi. 
-:::
-
-If a full node is connected to Wasabi, then the relevant block is fetched from this trusted node, and not from a random P2P node.
-Wasabi also queries if your local mempool has unconfirmed transactions that are of interest to you.
-Further, your full node is used to estimate the current mining fee level based on the bitcoind `smartfee` algorithm.
-Your full node is not used to broadcast your transactions, as this is done through a random peer-to-peer node with a new tor identity, which is better for your [network-level privacy](/why-wasabi/NetworkLevelPrivacy.md).
+If any of these are not available or fail, Wasabi will fall back to the default mechanisms.
 
 ## Using an already existing local Bitcoin full node
 
