@@ -1009,7 +1009,6 @@ Read more [here](/using-wasabi/CoinJoin.md).
 |  | Enhance privacy | Default strategy | Reduce costs | 
 |:---:|:---:|:---:|:---:|
 | Non-private coin isolation | enabled  | enabled | not enabled |
-| Coinjoin time preference   | hours | hours | weeks |
 | Anonymity score target | random between 30 and 50 | 10 | 5 |
 
 ### What does the `Stop coinjoin threshold` mean in the coinjoin settings?
@@ -1528,10 +1527,6 @@ For more information, see this [dedicated chapter](/using-wasabi/ChangeCoins.md)
 :::
 
 ## Music Box
-
-### What does `Awaiting cheaper coinjoins` mean?
-
-It means your wallet is waiting to participate in a cheaper coinjoin round(s) because the fee rate of the current coinjoin(s) is higher than the median of the selected [Coinjoin time preference](/glossary/Glossary-PrivacyWasabi.md#coinjoin-time-preference).
 
 ### What does `Awaiting the blame round` mean?
 
