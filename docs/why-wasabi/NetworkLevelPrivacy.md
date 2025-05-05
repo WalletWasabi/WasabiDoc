@@ -43,12 +43,7 @@ If [bitcoind](https://github.com/bitcoin/bitcoin) is installed and run on the sa
 It is also possible to connect Wasabi to a remote full node on another computer by specifying the local IP address or Tor onion service in the settings.
 Then, Wasabi pulls the verified blocks and queries the mempool from the full node.
 
-:::tip Wasabi ships with Bitcoin Knots!
-Wasabi has a [partial Bitcoin Knots integration](/using-wasabi/BitcoinFullNode.md).
-This means that it is possible (but not mandatory) to start Bitcoin Knots during the launch of Wasabi, without having to install or configure anything manually.
-:::
-
-However, even if no full node is installed, Wasabi has a light client mode based on [BIP 158 block filters](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki).
+However, even if no full node is connected, Wasabi has a light client mode based on [BIP 158 block filters](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki).
 The Wasabi server sends a filter of all the transactions in each block to all the users.
 Then, users check locally if the block contains any transactions with their addresses.
 If not, then the filter is stored for later reference, and no block is downloaded.
@@ -128,10 +123,7 @@ Wasabi broadcast transactions to only one peer over Tor, and immediately after t
 
 ### Wasabi Wallet + full node
 
-:::tip
-Wasabi has a partial Bitcoin Knots integration.
-This means that it is possible (but not mandatory) to start Bitcoin Knots during the launch of Wasabi, without having to install or configure anything manually.
-:::
+WIP
 
 #### Private UTXO retrieval
 

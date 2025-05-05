@@ -601,7 +601,7 @@ The user can change which non-private coins will be used, based on the labelling
 Wasabi has 3 different mechanisms to broadcast a transaction, it will try in the following order:
 1. Broadcast to the connected trusted node
 2. Broadcast to the Bitcoin P2P network
-3. Broadcast to the backend.
+3. Broadcast to an external site.
 
 1: The transaction is broadcast by the RPC if the user has specified a trusted node. The Bitcoin node will then propagate the transaction to the network.
 
@@ -614,7 +614,7 @@ This means that if there are 12 peers connected, it will be broadcast to 3 nodes
 - Receive confirmation from these nodes that the transaction was propagated (timeout if this takes more than 21 seconds)
 - Disconnect from the nodes that were used for broadcasting
 
-3: The transaction is broadcast to the backend using a new Tor identity.
+3: The transaction is broadcast to an external site (default is Mempool Space) using a new Tor identity.
 
 Once a transaction is sent, Wasabi will always open a new Tor circuit with a new random node on the network, in order to avoid revealing too much information to one party.
 
@@ -1009,7 +1009,6 @@ Read more [here](/using-wasabi/CoinJoin.md).
 |  | Enhance privacy | Default strategy | Reduce costs | 
 |:---:|:---:|:---:|:---:|
 | Non-private coin isolation | enabled  | enabled | not enabled |
-| Coinjoin time preference   | hours | hours | weeks |
 | Anonymity score target | random between 30 and 50 | 10 | 5 |
 
 ### What does the `Stop coinjoin threshold` mean in the coinjoin settings?
@@ -1423,11 +1422,11 @@ Dust can mean [a lot of things](https://bitcoin.stackexchange.com/questions/1098
 It can be a non-economical input, that is a UTXO that has less value than the fees it would cost to spend this coin.
 A dust attack is actually about [forced address reuse](https://en.bitcoin.it/Privacy#Forced_address_reuse), the malicious actor sends very small amounts into old addresses and consolidation of these dust UTXOs can link several coins in a wallet cluster.
 
-Specifically in the context of Wasabi, with the dust threshold settings you can limit the value of spam coins shown in the GUI.
-Coins that you receive from other wallets (so no self-spend) which are *less than* the dust threshold in value and are received on an already used address are not shown.
+Specifically in the context of Wasabi, with the dust attack limit setting you can limit the value of spam coins shown in the GUI.
+Coins from other wallets (no self-spend) below the dust attack limit that you receive to a used address are not shown.
 For example: When it is set to `0.0000 5000 BTC`, and you receive a coin worth `0.0000 4000 BTC` from a different wallet to an already used address, then this transaction and the coin in the coin list will not be shown.
 
-![Wasabi Wallet Dust threshold settings](/SettingsDustThreshold.png "Wasabi Wallet Dust threshold settings")
+![Dust attack limit](/SettingsDustAttackLimit.png "Dust attack limit")
 
 ### Where can I find the logs?
 
@@ -1528,10 +1527,6 @@ For more information, see this [dedicated chapter](/using-wasabi/ChangeCoins.md)
 :::
 
 ## Music Box
-
-### What does `Awaiting cheaper coinjoins` mean?
-
-It means your wallet is waiting to participate in a cheaper coinjoin round(s) because the fee rate of the current coinjoin(s) is higher than the median of the selected [Coinjoin time preference](/glossary/Glossary-PrivacyWasabi.md#coinjoin-time-preference).
 
 ### What does `Awaiting the blame round` mean?
 

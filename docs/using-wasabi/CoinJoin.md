@@ -233,7 +233,7 @@ Note that you might pay relatively more fees for coinjoining smaller amounts.
 
 Wasabi ships with 3 coinjoin strategies: `Enhance Privacy`, `Default Strategy`, and `Reduce Costs`.
 Each of these contain different configurations, as shown in [this table](/FAQ/FAQ-UseWasabi.md#what-are-the-differences-settings-per-coinjoin-strategy).
-They determine if `Non-private coin isolation` is enabled or not, the `Anonymity score target`, and the `Coinjoin time preference`.
+They determine if `Non-private coin isolation` is enabled or not and the `Anonymity score target`.
 
 Newly created wallets automatically have the `Default Strategy` selected, this can be changed at the _Coinjoin_ tab at _Wallet Settings_.
 
