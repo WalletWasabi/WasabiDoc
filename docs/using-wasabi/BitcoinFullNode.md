@@ -40,7 +40,7 @@ If any of these are not available or fail, Wasabi will fall back to the default 
 ## How to connect to your full node
 
 Wasabi can connect to a Bitcoin full node by using the Bitcoin RPC.
-Enter the `Bitcoin RPC Endpoint` and `Bitcoin RPC Credential String` of the node.
+Enter the `Bitcoin RPC Endpoint` and `Bitcoin RPC Credential String` of the node at the Settings.
 
 See step-by-step instructions [here](/FAQ/FAQ-UseWasabi.html#how-do-i-connect-my-own-full-node-to-wasabi).
 
