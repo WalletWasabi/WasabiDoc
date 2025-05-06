@@ -43,9 +43,8 @@ There can be a small chance for a false positive where the filter matches, but t
 ### Block download
 
 When a block filter hits, either a true match or a false positive, then this block is important for you, so the wallet will download it.
-If you have [a Bitcoin full node connected](/using-wasabi/BitcoinFullNode.md), then it will fetch the verified block locally.
-If not, then Wasabi will connect to a random Bitcoin P2P node with a new Tor identity, request only this block for download, and then disconnect.
-In this step, your Wasabi behaves like any other full node, and cannot be differentiated.
+If you have [a Bitcoin full node connected](/using-wasabi/BitcoinFullNode.md), then it will fetch the verified block from the node.
+If not, Wasabi will download the block from the P2P network, and disconnect from the node after it served the block.
 
 ### TurboSync
 
