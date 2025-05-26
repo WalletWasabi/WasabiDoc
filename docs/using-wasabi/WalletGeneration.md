@@ -71,11 +71,7 @@ It encrypts your secrets, and you will need it every time you want to open the w
 
 ![Wasabi Wallet Add Passphrase](/AddWalletAddPassphrase.png "Wasabi Wallet Add Passphrase")
 
-9. Select the coinjoin strategy for this wallet and click `Continue`.
-
-![Add Wallet Coinjoin Strategy](/CoinjoinStrategy.png "Add Wallet Coinjoin Strategy")
-
-10. The wallet is succesfully added and will automatically be opened.
+9. The wallet is succesfully added and will automatically be opened.
 
 ![Wallet Successfully Added](/AddWalletSuccessfullyAdded.png "Wallet Successfully Added")
 
