@@ -34,7 +34,7 @@ Click `Continue`.
 4. Select the Wallet Backup Type.
 
 `Recovery Words Backup` will give 12 words (BIP 39).
-Multi-share Backup will give multiple sets of 20 words (SLIP 39) of which a subset is needed to recover the wallet.
+`Multi-share Backup` will give multiple sets of 20 words (SLIP 39) of which a subset is needed to recover the wallet.
 How many total shares (16 maximum), and the threshold that is needed for recovery is set by the user.
 
 ![Add Wallet Backup Type](/WalletBackupType.png "Add Wallet Backup Type")
