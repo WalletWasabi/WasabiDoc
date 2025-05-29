@@ -320,6 +320,11 @@ Replacing one version of an unconfirmed transaction with a different version of 
 A satoshi is the smallest denomination of bitcoin that can be recorded on the blockchain.
 It is the equivalent of 0.00000001 bitcoin and is named after the creator of Bitcoin, Satoshi Nakamoto.
 
+### Satoshi Labs Improvement Proposal (SLIP)
+
+Satoshi Labs Improvement Proposal (SLIP) is an extension to the [Bitcoin Improvement Proposal (BIP)](/glossary/Glossary-GeneralBitcoin.md#bitcoin-improvement-proposal-bip).
+Wasabi supports [one SLIP](/using-wasabi/BIPs.md#supported-slips).
+
 ### Satoshi Nakamoto
 
 Satoshi Nakamoto is the name used by the person or group of people who designed Bitcoin and created its original reference implementation.
