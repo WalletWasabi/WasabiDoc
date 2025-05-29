@@ -323,7 +323,7 @@ It is the equivalent of 0.00000001 bitcoin and is named after the creator of Bit
 ### Satoshi Labs Improvement Proposal (SLIP)
 
 Satoshi Labs Improvement Proposal (SLIP) is an extension to the [Bitcoin Improvement Proposal (BIP)](/glossary/Glossary-GeneralBitcoin.md#bitcoin-improvement-proposal-bip).
-Wasabi supports [one SLIP](/using-wasabi/BIPs.md#supported-slips).
+Wasabi supports [one SLIP](/using-wasabi/BIPs.md#other-supported-proposals-slips).
 
 ### Satoshi Nakamoto
 

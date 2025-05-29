@@ -38,7 +38,7 @@ Here is a list of all the supported and integrated Bitcoin Improvement Proposals
 - [BIP 37: Bloom filters](https://github.com/bitcoin/bips/blob/master/bip-0037.mediawiki)
 - [BIP 69: Lexicographical Indexing of Transaction Inputs and Outputs](https://github.com/bitcoin/bips/blob/master/bip-0069.mediawiki)
 
-# Supported SLIPs
+## Other supported proposals (SLIPs)
 
 Wasabi supports one Satoshi Labs Improvement Proposal:
 
