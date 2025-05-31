@@ -36,7 +36,11 @@ Make sure that you are precise so that you know what this wallet is for and clic
 
 ![Name a new wallet in Wasabi](/AddWalletWalletName.png "Name a new wallet in Wasabi")
 
-Now you will see the 12 recovery words.
+Select the desired Wallet Backup Type.
+
+![Add Wallet Backup Type](/WalletBackupType.png "Add Wallet Backup Type")
+
+Now you will see the 12 recovery words, or multiple 20 recovery words sets when using Multi-share Backup.
 This is the mnemonic seed that you should back up, together with the passphrase you create in the next phase, in order to recover your wallet.
 When you've backed everything up, click `Continue`.
 
