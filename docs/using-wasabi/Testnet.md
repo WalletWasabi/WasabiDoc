@@ -43,8 +43,8 @@ After the testing, set the settings back to mainnet, and close Wasabi.
 It will load on mainnet the next time you start it.
 
 :::tip 
-Alternatively, you can edit the `Config.json` file in your [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder).
-In the second line you can modify the value of `"Network":`, to `"Main"`, `"TestNet"`, or `"RegTest"`.
+Alternatively, you can edit the `network` file in your [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder).
+Valid options are: `"Main"`, `"TestNet4"`, or `"RegTest"`.
 The changes will apply on the next launch of Wasabi.
 :::
 
