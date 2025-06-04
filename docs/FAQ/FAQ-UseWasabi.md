@@ -867,15 +867,6 @@ In the [broadcasting phase](/using-wasabi/CoinJoin.md#broadcasting) the coordina
 You'd gain 1 less anonymity set than if you'd only mix with one wallet (and Wasabi doesn't display that).
 On the other hand, the systemic anonymity is slightly improved if a few people are mixing with multiple wallets, because that removes the certainty on this Blockchain analysis assumption.
 
-### How is the anonymity set target determined for CoinJoins?
-
-`2*2 = 4` and `3*3 = 9`. `2->3: 50% increase`, `4->9:125%` increase.
-So remixing with larger anonsets is exponentially more effective than smaller anonsets.
-Regarding why do we want 100 number, is among some other reasons, because that was our calculation to be that would make rounds happen in every 2-5 minutes, considering the liquidity of some custodial mixers.
-Regarding DoS attack, right now our DoS configuration is set to be pretty permissive and this seems to be sufficient for the time being.
-If a DoS attack would happen, Wasabi team would just harden it in the config file and would kick the bad actors out.
-Now if even that would fail, then we can start thinking about lowering the required peers and also other methods.
-
 ### I'd like to experience coinjoin but I'm not comfortable using real Bitcoin. What can I do?
 
 You can try to make a coinjoin via Wasabi on the Bitcoin [TestNet4](/using-wasabi/Testnet.md) (an alternative Bitcoin network, to be used for testing).
