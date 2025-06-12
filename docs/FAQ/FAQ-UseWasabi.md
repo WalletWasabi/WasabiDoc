@@ -547,6 +547,11 @@ However, you can use the [RPC server `send` call](/using-wasabi/RPC.md#send) and
 
 No. That is currently not possible.
 
+### Can I set the change address type?
+
+By default, the change address type is random between SegWit & Taproot.
+This can be set to SegWit or Taproot only in the _Wallet Settings_.
+
 ### Does Wasabi support sending RBF?
 
 All _send_ transactions signal RBF by default.
