@@ -25,9 +25,6 @@ As a result, when you send this leftover/change coin in a new transaction, it is
 
 This process is applicable to any Bitcoin transaction where the _sent_ amount is less than the total value of the input UTXO.
 
-> By default, the change address type is random between SegWit & Taproot. 
-This can be set to SegWit or Taproot only in the _Wallet Settings_.
-
 ### Coinjoin change
 
 In some few cases, especially for the wealthiest user of a coinjoin, there will be an `anonymity score 1` output in a coinjoin transaction.
