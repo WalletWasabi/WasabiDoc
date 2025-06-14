@@ -45,27 +45,3 @@ There can be a small chance for a false positive where the filter matches, but t
 When a block filter hits, either a true match or a false positive, then this block is important for you, so the wallet will download it.
 If you have [a Bitcoin full node connected](/using-wasabi/BitcoinFullNode.md), then it will fetch the verified block from the node.
 If not, Wasabi will download the block from the P2P network, and disconnect from the node after it served the block.
-
-### TurboSync
-
-Since Wasabi version [2.0.4](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.0.4) a new feature is added called _TurboSync_.
-_TurboSync_ leads to a significant reduction of wallet loading time, especially for a big wallet.
-
-During a coinjoin, a new address (key) has to be generated for each output.
-As a result, wallets that use the coinjoin service a lot have a quickly growing set of generated addresses.
-This is a problem for wallet synchronization: each address has to be tested against each filter, with a small probability of matching as false-positive for every address.
-As a result, wallets with many derived addresses will have to download many false-positive blocks, making the synchronization more time consuming.
-
-It leverages a simple heuristic: addresses used as coinjoin outputs or as change (internal keys) should only be used once.
-In other terms, once an internal address has been used to receive a coin and then this coin was used as input in a new transaction (the coin has been spent), the address should never be used again, and there is no need to test it against the remaining filters. 
-
-Wallets coinjoining a lot will benefit the most from this feature, as the vast majority of their addresses will be skipped, reducing the number of blocks to download because of false-positive matches.
-
-Once the wallet is opened, the skipped addresses will be tested in the background, in the case that some funds have been received on those addresses.
-Users in that edge case would see their balance update automatically after some time.
-Once done the message `Wallet is fully synchronized.` is written to the logs file to indicate that the verification process has finished.
-
-:::tip You can disable it!
-TurboSync feature shouldn't cause any problem, but you might want to disable it to debug potential issues with the synchronization of your wallet.
-In that case, go to your wallet file (search for `Wallet Folder` using Wasabi's searchbar then open the file corresponding to your wallet) and set `UseTurboSync` to `false`.
-:::
