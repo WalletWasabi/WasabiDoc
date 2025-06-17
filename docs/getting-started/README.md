@@ -46,7 +46,7 @@ There are 4 options:
 Select _Create a new wallet_.
 
 Now follow the next few steps/dialogs:
-- Select `Wallet Backup Type`
+- Select the `Wallet Backup Type`.
 - Write down the recovery words. (do not share these with anyone!)
 - Add a passphrase. (do not forget it and also write it down on a separate place from the recovery words, without your passphrase you cannot open your wallet and send your bitcoin!)
 
