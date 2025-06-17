@@ -59,6 +59,12 @@ The passphrase cannot be changed later on.
 If you lose your passphrase you lose your bitcoin.
 :::
 
+## Downloading block filters
+
+Wasabi will now download all the block filters, starting from 481824 (SegWit activation) until the chain tip.
+This first-time filter download can take a while (up to 1 hour or more).
+Subsequent filter downloads will be fast(er) as then only the recent filters need to be downloaded.
+
 ## Receive bitcoin
 
 As you can see, the new wallet is empty as it has a balance of 0.
