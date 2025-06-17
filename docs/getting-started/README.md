@@ -32,8 +32,7 @@ How to do this depends on the desktop operating system, the detailed guides can 
 
 ## Welcome Screen
 
-The first time that you start Wasabi, you will be welcomed with information about the app.
-Read it and continue.
+The first time that you start Wasabi, you will see the welcome screen.
 
 ## Add Wallet
 
@@ -46,10 +45,10 @@ There are 4 options:
 
 Select _Create a new wallet_.
 
-Now follow the next few steps/dialogs: 
+Now follow the next few steps/dialogs:
+- Select `Wallet Backup Type`
 - Write down the recovery words. (do not share these with anyone!)
 - Add a passphrase. (do not forget it and also write it down on a separate place from the recovery words, without your passphrase you cannot open your wallet and send your bitcoin!)
-- Select the coinjoin strategy: we select the default one `Maximize Speed`.
 
 :::danger
 The Recovery words can never be shown again.
