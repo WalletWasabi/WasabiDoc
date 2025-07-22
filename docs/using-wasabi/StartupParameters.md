@@ -54,6 +54,9 @@ All configuration options available via the `Config.json` file are also availabl
 | "FeeRateEstimationProvider": "MempoolSpace" | --feerateestimationprovider=MempoolSpace | WASABI_FEERATEESTIMATIONPROVIDER=MempoolSpace |
 | "MaxCoinJoinMiningFeeRate": 150.0 | --maxcoinjoinminingfeerate=150.0 | WASABI_MAXCOINJOINMININGFEERATE=150.0 |
 | "AbsoluteMinInputCount": 21 | --absolutemininputcount=21 | WASABI_ABSOLUTEMININPUTCOUNT=21 |
+| "MaxDaysInMempool": 30 | --dropunconfirmedtransactionsafterdays=30 | WASABI-DROPUNCONFIRMEDTRANSACTIONSAFTERDAYS=30 |
+
+_MaxDaysInMempool will only be listed in the config file after being changed from the default (30)._
 
 ### Non-Config file configurations
 
