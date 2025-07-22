@@ -37,12 +37,6 @@ All configuration options available via the `Config.json` file are also availabl
 | "TerminateTorOnExit": false | --terminatetoronexit=false | WASABI_TERMINATETORONEXIT=false |
 | "TorBridges": "[TorBridge]" | --torbridges="[TorBridge]" | WASABI_TORBRIDGES="[TorBridge]" |
 | "DownloadNewVersion": true | --downloadnewversion=true | WASABI_DOWNLOADNEWVERSION=true |
-| "StartLocalBitcoinCoreOnStartup": false | --startlocalbitcoincoreonstartup=false | WASABI_STARTLOCALBITCOINCOREONSTARTUP=false |
-| "StopLocalBitcoinCoreOnShutdown": true | --stoplocalbitcoincoreonshutdown=true | WASABI_STOPLOCALBITCOINCOREONSHUTDOWN=true |
-| "LocalBitcoinCoreDataDir": "/home/UserName/.bitcoin" | --localbitcoincoredatadir="/home/UserName/.bitcoin" | WASABI_LOCALBITCOINCOREDATADIR="/home/UserName/.bitcoin" |
-| "MainNetBitcoinP2pEndPoint": "127.0.0.1:8333" | --mainnetbitcoinp2pendpoint="127.0.0.1:8333" | WASABI_MAINNETBITCOINP2PENDPOINT="127.0.0.1:8333" |
-| "TestNetBitcoinP2pEndPoint": "127.0.0.1:18333" | --testnetbitcoinp2pendpoint="127.0.0.1:18333" | WASABI_TESTNETBITCOINP2PENDPOINT="127.0.0.1:18333" |
-| "RegTestBitcoinP2pEndPoint": "127.0.0.1:18444" | --regtestbitcoinp2pendpoint="127.0.0.1:18444" | WASABI_REGTESTBITCOINP2PENDPOINT="127.0.0.1:18444" |
 | "JsonRpcServerEnabled": true | --jsonrpcserverenabled=true | WASABI_JSONRPCSERVERENABLED=true |
 | "JsonRpcUser": "" | --jsonrpcuser="" | WASABI_JSONRPCUSER="" |
 | "JsonRpcPassword": "" | --jsonrpcpassword="" | WASABI_JSONRPCPASSWORD="" |
