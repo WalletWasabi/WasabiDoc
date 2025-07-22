@@ -31,7 +31,15 @@ Click `Continue`.
 
 ![Add Wallet Wallet Name](/AddWalletWalletName.png "Add Wallet Wallet Name")
 
-4. Write down the 12 recovery words (mnemonic seed phrase) in the correct order and store them in a safe place.
+4. Select the Wallet Backup Type.
+
+`Recovery Words Backup` will give 12 words (BIP 39).
+`Multi-share Backup` will give multiple sets of 20 words (SLIP 39) of which a subset is needed to recover the wallet.
+How many total shares (16 maximum), and the threshold that is needed for recovery is set by the user.
+
+![Add Wallet Backup Type](/WalletBackupType.png "Add Wallet Backup Type")
+
+5. Write down the 12 recovery words (mnemonic seed phrase) in the correct order and store them in a safe place.
 You have to use this seed phrase **together with** your passphrase to recover your wallet (using Wasabi or another [BIP 39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) compliant wallet).
 
 	:::danger Back up your recovery words!
@@ -42,12 +50,14 @@ You have to use this seed phrase **together with** your passphrase to recover yo
 
 ![Wasabi Wallet recovery words](/AddWalletRecoveryWords.png "Wasabi Wallet recovery words")
 
-5. You must confirm the Recovery Words by clicking on the right word in the right order, as a check to make sure that your Recovery Words are backed up.
+Or write down all the shares, when using `Multi-share Backup`, and store them in safe places. 
+
+6. You must confirm the Recovery Words by clicking on the right word in the right order, as a check to make sure that your Recovery Words are backed up.
 So, confirm the Recovery Words, and click `Continue`.
 
 ![Wasabi Wallet confirm recovery words](/AddWalletConfirmRecoveryWords.png "Wasabi Wallet confirm recovery words")
 
-6. Write a long and random passphrase and **[back it up](/using-wasabi/BackupBestPractices.md)**.
+7. Write a long and random passphrase and **[back it up](/using-wasabi/BackupBestPractices.md)**.
 It encrypts your secrets, and you will need it every time you want to open the wallet, spend bitcoin from this wallet or recover your wallet.
 
 	If you are uncertain about how to create a secure passphrase, refer to [Password Best Practices](/using-wasabi/PasswordBestPractices.md) for helpful information.
@@ -57,13 +67,9 @@ It encrypts your secrets, and you will need it every time you want to open the w
 	So, triple-check that you have a proper backup!
 	:::
 
-7. Confirm the passphrase and click the `Continue` button.
+8. Confirm the passphrase and click the `Continue` button.
 
 ![Wasabi Wallet Add Passphrase](/AddWalletAddPassphrase.png "Wasabi Wallet Add Passphrase")
-
-8. Select the coinjoin strategy for this wallet and click `Continue`.
-
-![Add Wallet Coinjoin Strategy](/CoinjoinStrategy.png "Add Wallet Coinjoin Strategy")
 
 9. The wallet is succesfully added and will automatically be opened.
 

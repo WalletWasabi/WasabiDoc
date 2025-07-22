@@ -50,6 +50,8 @@ All configuration options available via the `Config.json` file are also availabl
 | "DustThreshold": "0.00005" | --dustthreshold=0.00005 | WASABI-DUSTTHRESHOLD=0.00005 |
 | "EnableGpu": true | --enablegpu=true | WASABI-ENABLEGPU=true |
 | "CoordinatorIdentifier": "CoinJoinCoordinatorIdentifier" | --coordinatoridentifier="coinjoincoordinatoridentifier" | WASABI-COORDINATORIDENTIFIER="coinjoincoordinatoridentifier" |
+| "ExchangeRateProvider": "MempoolSpace" | --exchangerateprovider=MempoolSpace | WASABI_EXCHANGERATEPROVIDER=MempoolSpace |
+| "FeeRateEstimationProvider": "MempoolSpace" | --feerateestimationprovider=MempoolSpace | WASABI_FEERATEESTIMATIONPROVIDER=MempoolSpace |
 | "MaxCoinJoinMiningFeeRate": 150.0 | --maxcoinjoinminingfeerate=150.0 | WASABI-MAXCOINJOINMININGFEERATE=150.0 |
 | "AbsoluteMinInputCount": 21 | --absolutemininputcount=21 | WASABI-ABSOLUTEMININPUTCOUNT=21 |
 | "MaxDaysInMempool": 30 | --dropunconfirmedtransactionsafterdays=30 | WASABI-DROPUNCONFIRMEDTRANSACTIONSAFTERDAYS=30 |
@@ -62,14 +64,14 @@ There are a few special switches that are not present in the `Config.json` file 
 
 | Switch | Command Line | Environment variable |
 |-------|-------------|---------------------|
-| Ignore P2P transactions | --blockonly=true | WASABI-BLOCKONLY=true |
-| The level of detail used during logging | --loglevel=trace | WASABI-LOGLEVEL=trace |
-| Specify to log only to specific target* | --logmodes=console | WASABI-LOGMODES=console |
-| The path to the directory used during runtime | --datadir="$HOME/temp/wasabi-1" | WASABI-DATADIR="$HOME/temp/wasabi-1" |
-| Open wallet "WalletName" | --wallet=WalletName | WASABI--WALLET=WalletName |
-| Expose the RPC as onion service | --rpconionenabled=true | WASABI-RPCONIONENABLED=true |
-| Tor will listen to this SOCKS5 port | --torsocksport=35000 | WASABI-TORSOCKSPORT=35000 |
-| Tor will listen to this control port | --torcontrolport=35001 | WASABI-TORCONTROLPORT=35001 |
-| Folder to use where Tor binary is located | --torfolder="$HOME/tor-browser_en-US/Browser/TorBrowser/Tor" | WASABI-TORFOLDER="$HOME/tor-browser_en-US/Browser/TorBrowser/Tor" |
+| Ignore P2P transactions | --blockonly=true | WASABI_BLOCKONLY=true |
+| The level of detail used during logging | --loglevel=trace | WASABI_LOGLEVEL=trace |
+| Specify to log only to specific target* | --logmodes=console | WASABI_LOGMODES=console |
+| The path to the directory used during runtime | --datadir="$HOME/temp/wasabi-1" | WASABI_DATADIR="$HOME/temp/wasabi-1" |
+| Open wallet "WalletName" | --wallet=WalletName | WASABI_-WALLET=WalletName |
+| Expose the RPC as onion service | --rpconionenabled=true | WASABI_RPCONIONENABLED=true |
+| Tor will listen to this SOCKS5 port | --torsocksport=35000 | WASABI_TORSOCKSPORT=35000 |
+| Tor will listen to this control port | --torcontrolport=35001 | WASABI_TORCONTROLPORT=35001 |
+| Folder to use where Tor binary is located | --torfolder="$HOME/tor-browser_en-US/Browser/TorBrowser/Tor" | WASABI_TORFOLDER="$HOME/tor-browser_en-US/Browser/TorBrowser/Tor" |
 
 * Available options are `""` (don't log at all), `"file"` (log only to file), `"console"` (log only to console) and `"file,console"` (log to file and console).

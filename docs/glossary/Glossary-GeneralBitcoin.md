@@ -38,9 +38,6 @@ Read more: [Wasabi Supported BIPs](/using-wasabi/BIPs.md)
 ### Bitcoin Knots
 
 Bitcoin Knots is a derivative of Bitcoin Core with a collection of improvements backported from and sometimes maintained outside of Core's master git tree.
-Since version 1.1.11, Wasabi has partial Bitcoin Knots integration.
-This means that it is possible (but not mandatory) to start Bitcoin Knots during the launch of Wasabi, without having to install or configure anything.
-Read more: [Bitcoin Knots Website](https://bitcoinknots.org/)
 
 ### Block
 
@@ -322,6 +319,11 @@ Replacing one version of an unconfirmed transaction with a different version of 
 
 A satoshi is the smallest denomination of bitcoin that can be recorded on the blockchain.
 It is the equivalent of 0.00000001 bitcoin and is named after the creator of Bitcoin, Satoshi Nakamoto.
+
+### Satoshi Labs Improvement Proposal (SLIP)
+
+Satoshi Labs Improvement Proposal (SLIP) is an extension to the [Bitcoin Improvement Proposal (BIP)](/glossary/Glossary-GeneralBitcoin.md#bitcoin-improvement-proposal-bip).
+Wasabi supports [one SLIP](/using-wasabi/BIPs.md#other-supported-proposals-slips).
 
 ### Satoshi Nakamoto
 

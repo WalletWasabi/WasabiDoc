@@ -36,7 +36,11 @@ Make sure that you are precise so that you know what this wallet is for and clic
 
 ![Name a new wallet in Wasabi](/AddWalletWalletName.png "Name a new wallet in Wasabi")
 
-Now you will see the 12 recovery words.
+Select the desired Wallet Backup Type.
+
+![Add Wallet Backup Type](/WalletBackupType.png "Add Wallet Backup Type")
+
+Now you will see the 12 recovery words, or multiple 20 recovery words sets when using Multi-share Backup.
 This is the mnemonic seed that you should back up, together with the passphrase you create in the next phase, in order to recover your wallet.
 When you've backed everything up, click `Continue`.
 
@@ -543,6 +547,11 @@ However, you can use the [RPC server `send` call](/using-wasabi/RPC.md#send) and
 
 No. That is currently not possible.
 
+### Can I set the change address type?
+
+By default, the change address type is random between SegWit & Taproot.
+This can be set to SegWit or Taproot only in the _Wallet Settings_.
+
 ### Does Wasabi support sending RBF?
 
 All _send_ transactions signal RBF by default.
@@ -601,7 +610,7 @@ The user can change which non-private coins will be used, based on the labelling
 Wasabi has 3 different mechanisms to broadcast a transaction, it will try in the following order:
 1. Broadcast to the connected trusted node
 2. Broadcast to the Bitcoin P2P network
-3. Broadcast to the backend.
+3. Broadcast to an external site.
 
 1: The transaction is broadcast by the RPC if the user has specified a trusted node. The Bitcoin node will then propagate the transaction to the network.
 
@@ -614,7 +623,7 @@ This means that if there are 12 peers connected, it will be broadcast to 3 nodes
 - Receive confirmation from these nodes that the transaction was propagated (timeout if this takes more than 21 seconds)
 - Disconnect from the nodes that were used for broadcasting
 
-3: The transaction is broadcast to the backend using a new Tor identity.
+3: The transaction is broadcast to an external site (default is Mempool Space) using a new Tor identity.
 
 Once a transaction is sent, Wasabi will always open a new Tor circuit with a new random node on the network, in order to avoid revealing too much information to one party.
 
@@ -863,15 +872,6 @@ In the [broadcasting phase](/using-wasabi/CoinJoin.md#broadcasting) the coordina
 You'd gain 1 less anonymity set than if you'd only mix with one wallet (and Wasabi doesn't display that).
 On the other hand, the systemic anonymity is slightly improved if a few people are mixing with multiple wallets, because that removes the certainty on this Blockchain analysis assumption.
 
-### How is the anonymity set target determined for CoinJoins?
-
-`2*2 = 4` and `3*3 = 9`. `2->3: 50% increase`, `4->9:125%` increase.
-So remixing with larger anonsets is exponentially more effective than smaller anonsets.
-Regarding why do we want 100 number, is among some other reasons, because that was our calculation to be that would make rounds happen in every 2-5 minutes, considering the liquidity of some custodial mixers.
-Regarding DoS attack, right now our DoS configuration is set to be pretty permissive and this seems to be sufficient for the time being.
-If a DoS attack would happen, Wasabi team would just harden it in the config file and would kick the bad actors out.
-Now if even that would fail, then we can start thinking about lowering the required peers and also other methods.
-
 ### I'd like to experience coinjoin but I'm not comfortable using real Bitcoin. What can I do?
 
 You can try to make a coinjoin via Wasabi on the Bitcoin [TestNet4](/using-wasabi/Testnet.md) (an alternative Bitcoin network, to be used for testing).
@@ -908,24 +908,19 @@ With Wasabi this can be achieved in a matter of hours.
 
 ### How does my wallet communicate with the Wasabi coordinator server?
 
-Wasabi communicates in many ways to the coordinator server, and it is always over the Tor network.
+Wasabi communicates to the coordinator server to participate in coinjoins.
+By default, all communication is done over Tor.
 
-First of all, Wasabi uses [BIP 158 block filters](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki) to ensure network level privacy.
-You can follow these FAQs to have a full explanation on the theme:
-- [What are BIP-158 Block Filters?](/FAQ/FAQ-UseWasabi.md#what-are-bip-158-block-filters)
-- [What software supplies the block filters that Wasabi uses?](/FAQ/FAQ-Introduction.md#what-software-supplies-the-block-filters-that-wasabi-uses)
 - [Can the coordinator attack me?](/FAQ/FAQ-Introduction.md#can-the-coordinator-attack-me)
 - [Is the backend's coordinator code open-source?](/FAQ/FAQ-Introduction.md#is-the-backend-s-coordinator-code-open-source)
 
-Then, there are five different phases in a CoinJoin.
+Then, there are five different phases in a coinjoin.
 You can follow these links to have a full explanation on that:
 1. [Input registration phase](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-input-registration-phase)
 2. [Connection confirmation phase](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-connection-confirmation-phase)
 3. [Output registration phase](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-output-registration-phase)
 4. [Signing phase](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-signing-phase)
 5. [Broadcasting phase](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-broadcasting-phase)
-
-The backend server also sends you information about the current mempool for fee estimation as well as the US Dollar exchange rate.
 
 ### What is the address of the coordinator?
 
@@ -1014,19 +1009,18 @@ Read more [here](/using-wasabi/CoinJoin.md).
 |  | Enhance privacy | Default strategy | Reduce costs | 
 |:---:|:---:|:---:|:---:|
 | Non-private coin isolation | enabled  | enabled | not enabled |
-| Coinjoin time preference   | hours | hours | weeks |
 | Anonymity score target | random between 30 and 50 | 10 | 5 |
 
-### What does the `Auto-start coinjoin threshold` mean in the coinjoin settings?
+### What does the `Stop coinjoin threshold` mean in the coinjoin settings?
 
-It is the amount at which your funds will automatically participate in coinjoin in the background.
-If the non-private wallet balance is less than this amount coinjoin will not automatically start.
-A use case is that it might not be economical to coinjoin with this non-private amount (fee amount compared to coinjoin amount).
+It is the confirmed wallet balance under which coinjoin will automatically stop/not start.
 
-For example, if the non-private balance is 0.005 BTC and the `Auto-start coinjoin threshold` is 0.01 BTC, the user will have to manually press Play to start coinjoining.
-The default Auto-start coinjoin threshold is 0.01 BTC.
+A use case is that it might not be economical to coinjoin with this amount (fee amount compared to coinjoin amount).
 
-![Auto-start coinjoin threshold](/AutoStartCoinjoinThreshold.png "Auto-start coinjoin threshold")
+For example, if the confirmed balance is 0.005 BTC, `Automatically start coinjoin` is enabled and the `Stop coinjoin threshold` is 0.01 BTC, the user will have to manually press Play to start coinjoining.
+The default _Stop coinjoin threshold_ is 0.01 BTC.
+
+![Stop coinjoin threshold](/StopCoinjoinThreshold.png "Stop coinjoin threshold")
 
 ### What does the `Non-private coin isolation` mean in the coinjoin settings?
 
@@ -1379,18 +1373,18 @@ You can use the [Wasabi RPC server `gethistory` call](/using-wasabi/RPC.md#gethi
 
 ### How do I connect my own full node to Wasabi?
 
-There are three different ways of using your [Bitcoin full node with Wasabi](/using-wasabi/BitcoinFullNode.md):
+Wasabi can connect to a specified full node using the Bitcoin RPC.
 
-- If you have a full node already running on the same computer as Wasabi, it will automatically be detected and used by default.
-- If you have a full node on a remote computer, then you can connect to it by specifying the local network IP address or Tor onion service in the Wasabi `Settings` tab.
+Go to `Settings` -> `Bitcoin` tab -> enable `Connect to Bitcoin Node RPC` -> specify the RPC endpoint and RPC credential string.
+The RPC credential string can be the username & password, or the cookie file of the node.
 
-![Wasabi Wallet Remote P2P Bitcoin Endpoint full node](/SettingsBitcoinCoreRemote.png "Wasabi Wallet Remote P2P Bitcoin Endpoint full node")
+![Settings Bitcoin RPC](/SettingsBitcoinRPC.png "Settings Bitcoin RPC")
 
-- If you are not yet running a full node, Wasabi has the bitcoind binaries included, and with one click in the `Settings`, you can start Bitcoin Knots together with Wasabi.
+The Bitcoin RPC status is shown in the bottom right corner status icon (the status icon displays a warning triangle in case the full node is not connected).
 
-![Wasabi Wallet local Bitcoin Knots full node integration](/SettingsBitcoinCore.png "Wasabi Wallet local Bitcoin Knots full node integration")
+![Status Icon Bitcoin RPC](/StatusIconBitcoinRPC.png "Status Icon Bitcoin RPC")
 
-[![Watch the video](/Logo_without_text_with_bg_dark_with_yt.png)](https://youtu.be/gWo2RAkIVrE)
+Read more [here](/using-wasabi/BitcoinFullNode.html#how-does-wasabi-use-your-bitcoin-full-node) about how Wasabi uses the full node.
 
 ### How can I turn off Tor?
 
@@ -1428,11 +1422,11 @@ Dust can mean [a lot of things](https://bitcoin.stackexchange.com/questions/1098
 It can be a non-economical input, that is a UTXO that has less value than the fees it would cost to spend this coin.
 A dust attack is actually about [forced address reuse](https://en.bitcoin.it/Privacy#Forced_address_reuse), the malicious actor sends very small amounts into old addresses and consolidation of these dust UTXOs can link several coins in a wallet cluster.
 
-Specifically in the context of Wasabi, with the dust threshold settings you can limit the value of spam coins shown in the GUI.
-Coins that you receive from other wallets (so no self-spend) which are *less than* the dust threshold in value and are received on an already used address are not shown.
+Specifically in the context of Wasabi, with the dust attack limit setting you can limit the value of spam coins shown in the GUI.
+Coins from other wallets (no self-spend) below the dust attack limit that you receive to a used address are not shown.
 For example: When it is set to `0.0000 5000 BTC`, and you receive a coin worth `0.0000 4000 BTC` from a different wallet to an already used address, then this transaction and the coin in the coin list will not be shown.
 
-![Wasabi Wallet Dust threshold settings](/SettingsDustThreshold.png "Wasabi Wallet Dust threshold settings")
+![Dust attack limit](/SettingsDustAttackLimit.png "Dust attack limit")
 
 ### Where can I find the logs?
 
@@ -1533,10 +1527,6 @@ For more information, see this [dedicated chapter](/using-wasabi/ChangeCoins.md)
 :::
 
 ## Music Box
-
-### What does `Awaiting cheaper coinjoins` mean?
-
-It means your wallet is waiting to participate in a cheaper coinjoin round(s) because the fee rate of the current coinjoin(s) is higher than the median of the selected [Coinjoin time preference](/glossary/Glossary-PrivacyWasabi.md#coinjoin-time-preference).
 
 ### What does `Awaiting the blame round` mean?
 
