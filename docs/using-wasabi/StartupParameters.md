@@ -45,8 +45,8 @@ All configuration options available via the `Config.json` file are also availabl
 | "EnableGpu": true | --enablegpu=true | WASABI_ENABLEGPU=true |
 | "CoordinatorIdentifier": "CoinJoinCoordinatorIdentifier" | --coordinatoridentifier="coinjoincoordinatoridentifier" | WASABI_COORDINATORIDENTIFIER="coinjoincoordinatoridentifier" |
 | "ExchangeRateProvider": "MempoolSpace" | --exchangerateprovider=MempoolSpace | WASABI_EXCHANGERATEPROVIDER=MempoolSpace |
-| "ExternalTransactionBroadcaster": "MempoolSpace" | --externaltransactionbroadcaster=MempoolSpace | WASABI_EXTERNALTRANSACTIONBROADCASTER=MempoolSpace |
 | "FeeRateEstimationProvider": "MempoolSpace" | --feerateestimationprovider=MempoolSpace | WASABI_FEERATEESTIMATIONPROVIDER=MempoolSpace |
+| "ExternalTransactionBroadcaster": "MempoolSpace" | --externaltransactionbroadcaster=MempoolSpace | WASABI_EXTERNALTRANSACTIONBROADCASTER=MempoolSpace |
 | "MaxCoinJoinMiningFeeRate": 150.0 | --maxcoinjoinminingfeerate=150.0 | WASABI_MAXCOINJOINMININGFEERATE=150.0 |
 | "AbsoluteMinInputCount": 21 | --absolutemininputcount=21 | WASABI_ABSOLUTEMININPUTCOUNT=21 |
 | "MaxDaysInMempool": 30 | --dropunconfirmedtransactionsafterdays=30 | WASABI_DROPUNCONFIRMEDTRANSACTIONSAFTERDAYS=30 |
