@@ -69,4 +69,4 @@ There are a few special switches that are not present in the `Config.json` file 
 | Tor will listen to this control port | --torcontrolport=35001 | WASABI_TORCONTROLPORT=35001 |
 | Folder to use where Tor binary is located | --torfolder="$HOME/tor-browser_en-US/Browser/TorBrowser/Tor" | WASABI_TORFOLDER="$HOME/tor-browser_en-US/Browser/TorBrowser/Tor" |
 
-* Available options are `""` (don't log at all), `"file"` (log only to file), `"console"` (log only to console) and `"file,console"` (log to file and console).
+*_Available options are `""` (don't log at all), `"file"` (log only to file), `"console"` (log only to console) and `"file,console"` (log to file and console)._
