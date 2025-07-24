@@ -135,6 +135,8 @@ Using Wasabi this way results in the same privacy model as Bitcoin Core's, regar
 Wasabi will first try to broadcast a transaction to the connected full node. 
 If the node is not available it will broadcast to the Bitcoin P2P network or an external site, over Tor.
 
+Read more [here](/FAQ/FAQ-UseWasabi.md#how-is-the-transaction-broadcast).
+
 ## Universal Attacks
 
 Every time you use software that interacts with a Bitcoin network, and especially a Bitcoin node, you leave a sticky fingerprint in your traffic.
