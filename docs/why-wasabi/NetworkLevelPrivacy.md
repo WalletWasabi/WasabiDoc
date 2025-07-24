@@ -123,11 +123,11 @@ Wasabi broadcast transactions to only one peer over Tor, and immediately after t
 
 ### Wasabi Wallet + full node
 
-WIP
+Wasabi can connect to a specified node using the Bitcoin RPC interface.
 
 #### Private UTXO retrieval
 
-If you have a listening full node running in the background (not only Bitcoin Core, any full node) then Wasabi automatically picks it up and instead of asking peers for blocks, it asks for blocks from your own node.
+If a specific node is connected, Wasabi will fetch the blocks from this node.
 Using Wasabi this way results in the same privacy model as Bitcoin Core's, regarding Private UTXO Retrieval.
 
 #### Private transaction broadcasting
