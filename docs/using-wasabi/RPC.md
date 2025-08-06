@@ -168,45 +168,6 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"createwallet","params
 }
 ```
 
-In case we try to generate a wallet with an already existing name it will return:
-
-```json
-{
-  "jsonrpc": "2.0",
-  "error": {
-    "code": -32603,
-    "message": "Wallet name is already taken."
-  },
-  "id": "1"
-}
-```
-
-In case we try to generate a wallet with a reserved wallet name it will return:
-
-```json
-{
-  "jsonrpc": "2.0",
-  "error": {
-    "code": -32603,
-    "message": "Invalid wallet name."
-  },
-  "id": "1"
-}
-```
-
-In case we try to generate a wallet with a too long passphrase it will return:
-
-```json
-{
-  "jsonrpc": "2.0",
-  "error": {
-    "code": -32603,
-    "message": "Passphrase is too long."
-  },
-  "id": "1"
-}
-```
-
 ### recoverwallet
 
 Recovers a wallet using a BIP 39 mnemonic (recovery words).
