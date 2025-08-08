@@ -1035,23 +1035,23 @@ The `Non-private coin isolation` is enabled by default when the `Default Strateg
 No.
 Coinjoin transactions do not signal RBF.
 
-### Why do my coins occasionally get banned from participating in CoinJoin?
+### Why do my coins occasionally get banned from participating in coinjoin?
 
-A CoinJoin consists of multiple users registering inputs (coins) and blinded outputs.
-Once the appropriate number of participants have registered, the actual transaction (the CoinJoin) is constructed by the coordinator, and given to all participants in the span of about 60 seconds.
-At this point, all registered participants must sign off on the CoinJoin, and if a single one of the participants fails to sign their input, the entire CoinJoin must be restarted.
+A coinjoin consists of multiple users registering inputs (coins) and blinded outputs.
+Once the appropriate number of participants have registered, the actual transaction (the coinjoin) is constructed by the coordinator, and given to all participants in the span of a short time frame (default 60 seconds).
+At this point, all registered participants must sign off on the coinjoin, and if a single one of the participants fails to sign their input, the entire coinjoin must be restarted.
 
 So this introduces a problem, or an attack vector - a malicious user could purposefully register coins, only to wait for the signing phase and not sign.
-This would halt the entire CoinJoin process for all other participants and Wasabi would no longer work.
+This would halt the entire coinjoin process for all other participants and Wasabi would no longer work.
 This is also known as [denial of service attack](https://github.com/nopara73/ZeroLink/#d-dos-attack).
 
 So a simple solution looks like this - the coordinator could collect signatures from all inputs, and if one or more input refuses to sign, the coordinator could record that input and temporarily (or even permanently) ban that coin from participation.
-This is a nice solution, as it mitigates a single coin from ruining all CoinJoins, but it too comes with trade-offs.
+This is a nice solution, as it mitigates a single coin from ruining all coinjoins, but it too comes with trade-offs.
 
-For example, most of the time, users fail to sign a CoinJoin for non-malicious reasons.
+For example, most of the time, users fail to sign a coinjoin for non-malicious reasons.
 Perhaps their Tor connection went down in precisely that moment, or perhaps their WiFi had a temporary flicker at the wrong time.
 Further, some users don't even realize that the signing phase is happening, and sometimes shut down their computer at exactly the wrong moment.
-All of these things hinder a successful CoinJoin for all other participants, but by pure accident.
+All of these things hinder a successful coinjoin for all other participants, but by pure accident.
 
 If you are one of the victims of this temporary banning then simply wait for the ban to expire and try again.
 The best thing you can do to avoid the issue is to have a strong internet connection and keep your computer online throughout the whole process.
@@ -1059,7 +1059,7 @@ The best thing you can do to avoid the issue is to have a strong internet connec
 :::tip Note:
 Banning does not mean freezing.
 You can send banned coins to anyone you want.
-This is a temporary ban on your coins in participation of the CoinJoin.
+This is a temporary ban on your coins from participating with the coordinator.
 :::
 
 ### How do I find a coordinator?
