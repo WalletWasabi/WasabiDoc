@@ -100,18 +100,3 @@ Whether the activities of transaction surveillance companies actually help again
 
 _According to an excerpt from Chainalysis in their [2021 report](https://blog.chainalysis.com/reports/2021-crypto-crime-report-intro-ransomware-scams-darknet-markets), in 2019, criminal activity represented only 2.1% of all cryptocurrency transaction volume._
 
-## Examples
-
-- [Chainanalysis](https://www.chainalysis.com/)
-- [Elliptic](https://www.elliptic.co/)
-- [Neutrino](https://www.neutrino.nu/)
-- [Coinfirm](https://www.coinfirm.io/)
-- [Blockchain Group](https://blockchaingroup.io/)
-- [Ciphertrace](https://ciphertrace.com/)
-- [Comply Advantage](https://complyadvantage.com/aml-crypto-compliance/)
-- [Idology](https://www.idology.com/solutions/compliance/)
-- [Elementus](https://elementus.io/)
-- [DmgBlockchain](https://dmgblockchain.com/)
-- [ScoreChain](https://www.scorechain.com/)
-- [Crystal](https://crystalblockchain.com/)
-- Coinvalidation
