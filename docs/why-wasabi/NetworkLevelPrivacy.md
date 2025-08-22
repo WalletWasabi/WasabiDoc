@@ -40,7 +40,7 @@ This means that by default, all network communication is secured from outside sn
 
 Wasabi has a client-backend design that does not compromise user privacy.
 Meaning that even without using a full node the user stays private.
-The Wasabi backend sends a block filter of all the transactions in each block to all the clients.
+The Wasabi indexer (backend) sends a block filter of all the transactions in each block to all the clients.
 Then, users check locally if the block contains any transactions with their addresses.
 If not, then the filter is stored for later reference, and no block is downloaded.
 However, if there is a user transaction in that block, then Wasabi requests the block from a random Bitcoin P2P node.
@@ -98,7 +98,7 @@ It is reasonable to assume that this entity can break the onion routing, not Tor
 
 #### Private UTXO retrieval
 
-The backend server serves block filters to all the clients over Tor.
+The indexer (backend) server serves block filters to all the clients over Tor.
 From those filters, the clients figure out which blocks they are interested in and download them (and some false positive blocks) from peers.
 One block per peer, and always over a fresh Tor stream.
 When a block is acquired, the peer gets disconnected.

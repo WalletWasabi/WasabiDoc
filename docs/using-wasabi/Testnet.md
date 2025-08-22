@@ -36,7 +36,7 @@ After the restart, you should see the `TestNet4` indicator in the top right corn
 
 ![Bitcoin testnet network activated in Wasabi Wallet](/TestNetIndicator.png "Bitcoin testnet network activated in Wasabi Wallet")
 
-When Wasabi is started in testnet, it will fetch testnet4 block filters from the backend.
+When Wasabi is started in testnet, it will fetch testnet4 block filters from the indexer (backend).
 For the first start, this may take a couple of minutes.
 
 After the testing, set the settings back to mainnet, and close Wasabi.
