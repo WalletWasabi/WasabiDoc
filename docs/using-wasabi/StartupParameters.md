@@ -22,7 +22,9 @@ The parameters work for both the GUI and the [Daemon](/using-wasabi/Daemon.md).
 
 ### Config file configurations
 
-All configuration options available via the `Config.json` file are also available as command line arguments:
+As of Wasabi version x, each network has their own config file. 
+
+All configuration options available via the config files are also available as command line arguments:
 
 | Config File | Command Line | Environment variable |
 |---------|--------|----------------------|
