@@ -114,14 +114,6 @@ Clone & run Wasabi.
 [user@source-wasabi ~]$ dotnet run
 ```
 
-To check out a developer branch:
-
-```sh
-[user@source-wasabi ~]$ git remote add nopara73 https://github.com/nopara73/WalletWasabi
-[user@source-wasabi ~]$ git fetch nopara73
-[user@source-wasabi ~]$ git checkout <development branch>
-```
-
 Pull the latest commits.
 
 ```sh
@@ -238,22 +230,6 @@ your@vm:~$ git clone https://github.com/WalletWasabi/WalletWasabi.git
 your@vm:~$ cd WalletWasabi/WalletWasabi.Fluent.Desktop
 your@vm:~$ dotnet run
 ```
-
-Check out a developer branch.
-
-```sh
-your@vm:~$ git remote add nopara73 https://github.com/nopara73/WalletWasabi
-your@vm:~$ git fetch nopara73
-your@vm:~$ git checkout <development branch>
-```
-
-Pull the latest commits.
-
-```sh
-your@vm:~$ git pull
-```
-
-If you are comfortable with [Git](https://git-scm.com/), you can now have several versions of Wasabi running for testing purposes, at the same time, on the same computer.
 
 ### Install Latest Package
 
