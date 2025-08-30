@@ -22,17 +22,15 @@ The parameters work for both the GUI and the [Daemon](/using-wasabi/Daemon.md).
 
 ### Config file configurations
 
-All configuration options available via the `Config.json` file are also available as command line arguments:
+As of Wasabi version version [2.7.0](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.7.0, each network has their own config file. 
+
+All configuration options available via the config files are also available as command line arguments:
 
 | Config File | Command Line | Environment variable |
 |---------|--------|----------------------|
-| ""Network": "TestNet" | --network=testnet | WASABI_NETWORK=testnet |
-| "MainNetBackendUri": "https://api.wasabiwallet.io/" | --mainnetbackenduri="https://api.wasabiwallet.io/" | WASABI_MAINNETBACKENDURI="https://api.wasabiwallet.io/"|
-| "TestNetBackendUri": "https://api.wasabiwallet.co/" | --testnetbackenduri="https://api.wasabiwallet.co/" | WASABI_TESTNETBACKENDURI="https://api.wasabiwallet.co/" |
-| "RegTestBackendUri": "http://localhost:37127/" | --regtestbackenduri="http://localhost:37127/" | WASABI_REGTESTBACKENDURI="http://localhost:37127/" |
-| "MainNetCoordinatorUri": "" | --mainnetcoordinatoruri="" | WASABI_MAINNETCOORDINATORURI="" |
-| "TestNetCoordinatorUri": "https://api.wasabiwallet.co/" | --testnetcoordinatoruri="https://api.wasabiwallet.co/" | WASABI_TESTNETCOORDINATORURI="https://api.wasabiwallet.co/" |
-| "RegTestCoordinatorUri": "http://localhost:37128/" | --regtestcoordinatoruri="http://localhost:37128/" | WASABI_REGTESTCOORDINATORURI="http://localhost:37128/" |
+| `network` file | --network=testnet | WASABI_NETWORK=testnet |
+| "BackendUri": "https://api.wasabiwallet.io/" | --backenduri="https://api.wasabiwallet.io/" | WASABI_BACKENDURI="https://api.wasabiwallet.io/"|
+| "CoordinatorUri": "" | --coordinatoruri="" | WASABI_COORDINATORURI="" |
 | "UseTor": "Enabled" | --usetor=enabled | WASABI_USETOR=enabled |
 | "TerminateTorOnExit": false | --terminatetoronexit=false | WASABI_TERMINATETORONEXIT=false |
 | "TorBridges": "[TorBridge]" | --torbridges="[TorBridge]" | WASABI_TORBRIDGES="[TorBridge]" |
