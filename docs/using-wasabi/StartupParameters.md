@@ -22,7 +22,7 @@ The parameters work for both the GUI and the [Daemon](/using-wasabi/Daemon.md).
 
 ### Config file configurations
 
-As of Wasabi version x, each network has their own config file. 
+As of Wasabi version version [2.7.0](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.7.0, each network has their own config file. 
 
 All configuration options available via the config files are also available as command line arguments:
 
