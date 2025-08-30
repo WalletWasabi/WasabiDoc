@@ -39,7 +39,7 @@ Read more: [What is the anonymity set?](/FAQ/FAQ-UseWasabi.md#what-is-the-anonym
 ### Backend
 
 [The part of a software system that is not usually visible or accessible to a user of that system](https://www.merriam-webster.com/dictionary/back%20end).
-In the case of Wasabi, the backend provides the block filters to the [client](/glossary/Glossary-PrivacyWasabi.md#Client).
+In the case of Wasabi, the backend (indexer) provides the block filters to the [client](/glossary/Glossary-PrivacyWasabi.md#Client).
 
 ### Block filters
 
