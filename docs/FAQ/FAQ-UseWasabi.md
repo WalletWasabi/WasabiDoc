@@ -1081,7 +1081,7 @@ Go to settings -> select coordinator tab -> paste/enter the URI -> restart Wasab
 
 ![Settings Coordinator URI](/SettingsCoordinatorURI.png "Settings Coordinator URI")
 
-Alternatively, the `MainNetCoordinatorUri` can be changed in the config file.
+Alternatively, the `CoordinatorUri` can be changed in the config file.
 
 ## Backup and Recovery
 
