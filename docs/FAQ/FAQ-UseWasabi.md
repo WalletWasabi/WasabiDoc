@@ -602,6 +602,8 @@ If they are not enough, then Wasabi will also select private and semi private co
 If there are not enough private and semi-private coins for this transaction, then Wasabi will select non-private coins also.
 The user can change which non-private coins will be used, based on the labelling system.
 
+When an address contains multiple unspent transaction outputs (UTXOs) due to address reuse, Wasabi automatically selects all UTXOs associated with that address as inputs for the transaction.
+
 ### How is the transaction broadcast?
 
 Wasabi has 3 different mechanisms to broadcast a transaction, it will try in the following order:
