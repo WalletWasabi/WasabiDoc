@@ -598,8 +598,8 @@ At the transaction fee slider dialog, click on `Advanced` and manually type the 
 ### How does Wasabi select which coins to send?
 
 If the user has coins with the same label as the recipient of the outgoing transaction (coins received in the past from the same recipient), then Wasabi automatically selects these coins.
-If they are not enough, then Wasabi will also select private and semi private coins if necessary.
-If there are not enough private and semi-private coins for this transaction, then Wasabi will select non-private coins also.
+If they are not enough, then Wasabi will select private coins, and additionally semi private coins if needed.
+If there are not enough private and semi-private coins for the transaction, then Wasabi will also select non-private coins.
 The user can change which non-private coins will be used, based on the labelling system.
 
 When an address contains multiple unspent transaction outputs (UTXOs) due to address reuse, Wasabi automatically selects all UTXOs associated with that address as inputs for the transaction.
