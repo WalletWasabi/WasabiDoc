@@ -13,7 +13,7 @@
 
 What did you say to your spouse in bed last night?
 How much money did you earn last month?
-What websites have you visited yesterday?
+What websites did you visit yesterday?
 
 :::tip
 It's not that I have nothing to hide, it's that I have nothing to share.
@@ -27,7 +27,7 @@ How much money you earn, and where you spend it, is only your business, and of n
 
 Fungibility is the possibility for an individual receiving bitcoin to safely ignore any connection between this bitcoin and any particular individual or use case it interacted with in the past.
 If you can meaningfully distinguish one coin from another, then their fungibility is weak.
-If Bitcoin fungibility is too weak in practice, then it cannot be decentralized: if someone important announces a list of stolen coins they won't accept coins derived from, you must carefully check coins you receive against that list and return the ones that fail.
+If Bitcoin fungibility is too weak in practice, then it cannot be decentralized: If someone important announces a list of stolen coins they won't accept coins derived from, you must carefully check coins you receive against that list and return the ones that fail.
 Everyone gets stuck checking blacklists issued by various authorities because in that world we'd all not like to get stuck with bad coins.
 This adds friction and transactional costs and makes Bitcoin less valuable as money.
 
@@ -35,12 +35,12 @@ This adds friction and transactional costs and makes Bitcoin less valuable as mo
 
 If you run a business, you cannot effectively set prices if your suppliers and customers can see all your transactions against your will.
 You cannot compete effectively if your competition is tracking your sales.
-Individually your informational leverage is lost in your private dealings if you don't have privacy over your accounts: if you pay your landlord in Bitcoin without enough privacy in place, your landlord will see when you've received a pay raise and can hit you up for more rent.
+Your informational leverage is lost in your private dealings if you don't have privacy over your accounts: If you pay your landlord without enough privacy in place, your landlord will see when you've received a pay raise and can hit you up for more rent.
 
 ### How is financial privacy essential for personal safety?
 
 If thieves can see your income, holdings, and spending, they can use this information to target and exploit you.
-Without privacy, malicious parties have more ability to steal your identity, snatch your large purchases off your doorstep, or impersonate businesses you transact with towards you.
+Without privacy, malicious parties have a greater opportunity to steal your identity, snatch your large purchases off your doorstep, or impersonate businesses you transact with.
 They can tell exactly how much to try to scam you for.
 If thieves don't know how much bitcoin you have, then they don't know if you are worth the effort to attack.
 
@@ -49,7 +49,6 @@ If thieves don't know how much bitcoin you have, then they don't know if you are
 No one wants the snotty barista at the coffee shop or their nosy neighbors commenting on their income or spending habits.
 No one wants their baby-crazy in-laws asking why they're buying contraception (or sex toys).
 Your employer has no business knowing what church you donate to.
-Only in a perfectly enlightened discrimination-free world where no one has undue authority over anyone else could we retain our dignity and make our lawful transactions freely without self-censorship if we don't have privacy.
 
 Most importantly, financial privacy isn't incompatible with things like law enforcement or transparency.
 You can always keep records, be ordered (or volunteer) to provide them to whomever, have judges hold against your interest when you can't produce records (as is the case today).
@@ -78,7 +77,7 @@ Doing that on the internet is like flashing large stacks of cash in a dark back 
 A criminal might see how much you have and decide to come after it.
 Distributing your wealth between several wallets and using a different address for each transaction is a common practice that prevents others from knowing how much bitcoin you have.
 
-Each Bitcoin transaction contains at least one input (where the Bitcoin are from) and at least one output (where the Bitcoin are being sent).
+Each Bitcoin transaction contains at least one input (where the Bitcoin came from) and at least one output (where the Bitcoin is going).
 This means that once a single address is known, there is a trail to follow the Bitcoin.
 
 Another characteristic of Bitcoin transactions is that the value of the input always needs to match the value of the previous transaction output.
@@ -91,7 +90,7 @@ They can see two outputs of the transaction: one worth 0.4 bitcoin and one worth
 They might not know for certain which is the purchase and which is the change, but they can apply heuristics to estimate it.
 
 Similarly, if you receive 0.5 bitcoin but want to spend 1 bitcoin, you need to own additional coins with a combined value of at least 0.5 bitcoin in them.
-When spending two coins within one transaction, it is often assumed that both of these coins belong to the same entity, this is the common input ownership heuristic.
+When spending two coins within one transaction, it is often assumed that both of these coins belong to the same entity, known as the common input ownership heuristic.
 
 ### Why is it important to run a full node?
 
@@ -102,11 +101,11 @@ Not your node ~ not your rules
 When you download and install [bitcoind](https://github.com/bitcoin/bitcoin), you define the precise rules of your monetary system.
 Then you call out to other nodes and only connect to the peers who have agreed to play by the same rules.
 All those who break your own rules, you simply disconnect and ignore.
-Your full node defines, verifies and enforces the sound money you use to store your value.
+Your full node defines, verifies, and enforces the sound money you use to store your value.
 
 ### How does a full node protect my privacy?
 
-When you run your own full node, then on your local computer you can verify exactly if the bitcoin you receive are actually valid.
+When you run your own full node, then your local computer verifies if the bitcoin you receive is actually valid.
 When you do not verify this for yourself, then you need to ask another trusted third party how much money you have.
 Regardless how you ask this other server, there is now more metadata available to potentially link your coins to your identity.
 There are bad ways to communicate, like querying a block explorer over clearnet, and good ways to communicate, like using [BIP 158](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki) block filters over Tor.
@@ -115,7 +114,7 @@ But regardless, running your own full node means that you don't need to communic
 ### Why is it important to use a new address for every payment?
 
 Addresses being used more than once is very damaging to privacy because that links together more blockchain transactions with proof that they were created by the same entity.
-The most private and secure way to use bitcoin is to send a brand new address to each person who pays you.
+The most private and secure way to use bitcoin is to create a brand new address for each person who pays you.
 After an address has received a coin, it should never be used again.
 Also, a brand new bitcoin address should be demanded from the recipient when sending bitcoin.
 Wasabi has a user interface which discourages address reuse by removing from the GUI addresses which have received a coin.
