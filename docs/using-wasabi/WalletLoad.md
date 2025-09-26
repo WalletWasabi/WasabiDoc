@@ -16,7 +16,7 @@ The first time synchronization of your wallet might take some time depending on 
 
 ### Wallet list
 
-On the left side of Wasabi Wallet is the `Wallet list`, where you see an alphabetically sorted list of all the previously [generated](/using-wasabi/WalletGeneration.md) wallets.
+On the left side of Wasabi Wallet is the `Wallet list`, where you see a list of all the previously [generated](/using-wasabi/WalletGeneration.md) wallets.
 
 Click the wallet you want to view, type in the passphrase and press `Open`.
 
