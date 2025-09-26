@@ -45,7 +45,7 @@ Further, it reduces the transaction fees paid by the merchant due to consolidati
 
 ## Coordination
 
-The coordination of this coinjoin is done with the PayToEndPoint [P2EP] concept.
+The coordination of this coinjoin is done with the PayToEndPoint (P2EP) concept.
 The receiver is reachable over the internet, either over a Tor onion service or clearnet IP address.
 The link is included in a BIP21 Bitcoin URI, and is provided to the sender as the payment invoice.
 The sender uses this onion service or IP address to connect to the server of the receiver and communicate the further protocol.
