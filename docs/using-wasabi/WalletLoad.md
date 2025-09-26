@@ -18,7 +18,7 @@ The first time synchronization of your wallet might take some time depending on 
 
 On the left side of Wasabi Wallet is the `Wallet list`, where you see a list of all the previously [generated](/using-wasabi/WalletGeneration.md) wallets.
 
-Click the wallet you want to view, type in the passphrase and press `Open`.
+Click the wallet you want to load, type in the passphrase and press `Open`.
 
 ![Type your passphrase to open the wallet](/WalletOpen.png "Type your passphrase to open the wallet")
 
