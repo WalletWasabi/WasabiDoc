@@ -115,3 +115,7 @@ Now, look how this will be displayed if I use the two coins with bad labels: `Ma
 
 So, think about coins, think about who knows and make sure to make decisions about privacy based on what you are going to reveal and to whom.
 Wasabi doesn't care about why you transact with bitcoins, it only cares about who you transact with because this is what helps you reclaim your privacy.
+
+## Unconfirmed transactions
+
+Wasabi will be aware of incoming unconfirmed transactions if they are broadcasted across the P2P network while Wasabi is online. If Wasabi was offline when the transactions were broadcasted, then they will only show up after receiving their first confirmation.
