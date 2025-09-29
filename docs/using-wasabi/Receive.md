@@ -118,6 +118,6 @@ Wasabi doesn't care about why you transact with bitcoins, it only cares about wh
 
 ## Unconfirmed transactions
 
-Wasabi will be aware of incoming unconfirmed transactions if they are broadcasted across the P2P network while Wasabi is online. If Wasabi was offline when the transactions were broadcasted, then they will only show up after receiving their first confirmation.
+Wasabi will be aware of an incoming unconfirmed transaction if it is broadcasted across the P2P network while Wasabi is online. If the transaction was broadcasted while Wasabi was offline, it will only show up after receiving its first confirmation.
 
 Unconfirmed transactions are automatically dropped from the mempool after 30 days (default setting).
