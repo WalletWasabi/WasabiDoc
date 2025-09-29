@@ -44,7 +44,7 @@ Don't trust - Verify!
 
 2. Install Wasabi by double-clicking the `.msi` and following the GUI instructions.
 
-3. Make sure that you see this window that verifies the installer was signed by zkSNACKs Limited.
+3. Make sure that you see this window that verifies the installer was signed by Clement Rouquier (one of Wasabi's maintainer signing the release as Wasabi is a simple Open Source Project, not any kind of Legal Entity).
 Manual PGP verification is optional, as the package is signed and verified automatically on Windows.
 
 ![Wasabi Wallet Windows signature verification](/InstallWindowsSignature.png "Wasabi Wallet Windows signature verification")
