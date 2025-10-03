@@ -625,15 +625,36 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getfeerates"}' http:/
 {
   "jsonrpc": "2.0",
   "result": {
-    "2": 50,
-    "144": 37,
-    "432": 32
+    "2": {
+      "FeePerK": {
+        "Satoshi": 2134
+      },
+      "SatoshiPerByte": 2.134
+    },
+    "6": {
+      "FeePerK": {
+        "Satoshi": 1015
+      },
+      "SatoshiPerByte": 1.015
+    },
+    "144": {
+      "FeePerK": {
+        "Satoshi": 1013
+      },
+      "SatoshiPerByte": 1.013
+    },
+    "1008": {
+      "FeePerK": {
+        "Satoshi": 739
+      },
+      "SatoshiPerByte": 0.739
+    }
   },
   "id": "1"
 }
 ```
 
-In this case the block targets are _2_, _144_ and _432_ and their corresponding fee rates in sat/vB, according to bitcoind's _smart fee_ algorithm.
+In this case the block targets are _2_, _6_, _144_ and _1008_ and their corresponding fee rates in sat/vB, according to the third-party fee rate estimations provider.
 
 ### listkeys
 
