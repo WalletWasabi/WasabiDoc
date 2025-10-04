@@ -55,7 +55,7 @@ If no, then please consider to [open a new issue](https://github.com/WalletWasab
 It is especially helpful when you provide a step-by-step guide on how to reproduce what you have found.
 There is constantly a lot of work done to the code base, thus it's good to know which version of Wasabi, and what operating system you are using.
 In most cases, it is necessary to see your logs.
-Please consider your privacy by omitting sensitive log data like transaction IDs, encrypting the remaining information, and communicating it directly to the developers.
+Please consider your privacy by omitting sensitive log data like transaction IDs.
 
 :::danger
 If you find a bug that puts users' privacy or security at serious risk, please take great care with responsible disclosure!
@@ -82,7 +82,7 @@ If your trouble is specific to the code, then it might also be suitable to check
 
 ### What does the Wasabi project need help with?
 
-Wasabi is libre and open-source software, thus it relies on the support from contributors with many talents.
+Wasabi is libre and open-source software, thus it relies on the support from contributors with various talents.
 This includes coding new features, bug fixes, and stability improvements.
 Yet just equally important is the review of the commits of all other Wasabikas.
 It's not just the contributions to the code, but also to the documentation and the effort to educate peers using Wasabi.
