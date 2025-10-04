@@ -86,5 +86,5 @@ Wasabi is libre and open-source software, thus it relies on the support from man
 This includes coding new features, bug fixes, and stability improvements.
 Yet just equally important is the review of the commits of all other Wasabikas.
 It's not just the contributions to the code, but also to the documentation and the effort to educate peers using Wasabi.
-This includes education at Bitcoin meetups, conferences and within online communities.
+This includes education at Bitcoin meetups, conferences, and within online communities.
 So basically, we need help with building and shilling Wasabi!
