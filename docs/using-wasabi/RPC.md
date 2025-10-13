@@ -325,19 +325,6 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"listunspentcoins"}' h
 }
 ```
 
-In case there is no wallet open it will return:
-
-```json
-{
-  "jsonrpc": "2.0",
-  "error": {
-    "code": -32603,
-    "message": "There is no wallet loaded."
-  },
-  "id": "1"
-}
-```
-
 ### getwalletinfo
 
 Returns information about the current loaded wallet.
@@ -373,19 +360,6 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getwalletinfo"}' http
     ],
     "balance": 0,
     "coinjoinStatus": "Idle"
-  },
-  "id": "1"
-}
-```
-
-In case there is no wallet open it will return:
-
-```json
-{
-  "jsonrpc": "2.0",
-  "error": {
-    "code": -32603,
-    "message": "There is no wallet loaded."
   },
   "id": "1"
 }
