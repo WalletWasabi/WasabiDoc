@@ -50,10 +50,6 @@ Join our [Slack](https://join.slack.com/t/tumblebit/shared_invite/enQtNjQ1MTQ2Nz
 
 ### How can I report a bug?
 
-Code is speech, and can never be perfect.
-Thus it is expected that there are many known and unknown bugs, quirks and issues in Wasabi.
-Such a complex software requires constant and rigorous review by the developers and the users, this is everyone's responsibility working with Wasabi.
-
 When you stumble upon an issue that needs fixing, please first check the open [issues](https://github.com/WalletWasabi/WalletWasabi/issues/) and [pull requests](https://github.com/WalletWasabi/WalletWasabi/pulls) if there is already someone working on it.
 If yes, then you can comment your situation and bug report under the open issue.
 If no, then please consider to [open a new issue](https://github.com/WalletWasabi/WalletWasabi/issues/new?template=bug-report.md) and give a detailed report on the problem.
@@ -62,8 +58,7 @@ There is constantly a lot of work done to the code base, thus it's good to know 
 In some cases it might be useful to see your logs, though please consider your privacy and encrypt this data properly in direct communication with the developers.
 
 :::danger
-If you find a bug that puts users' privacy or security at serious risk, please take great care with responsible disclosure!
-Send an email to [adam.ficsor73@gmail.com](mailto:adam.ficsor73@gmail.com), preferably using PGP encryption [21D7 CA45 565D BCCE BE45 115D B4B7 2266 C47E 075E](https://github.com/WalletWasabi/WalletWasabi/blob/master/SECURITY.md).
+If you find a bug that puts users' privacy or security at serious risk, please take great care with responsible disclosure by reporting a [vulnerability on GitHub](https://github.com/WalletWasabi/WalletWasabi/security/advisories/new).
 :::
 
 ### How can I request a feature?
