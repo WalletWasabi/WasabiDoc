@@ -37,6 +37,7 @@
     "@vuepress/shared-utils": "^1.9.7",
     "ansi-regex": "^6.0.1",
     "braces": "^3.0.3",
+    "esbuild": "^0.25.11",
     "follow-redirects": "^1.15.6",
     "glob-parent": "^6.0.2",
     "got": "^12.5.0",
