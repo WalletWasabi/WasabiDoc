@@ -58,8 +58,7 @@ In most cases, it is necessary to see your logs.
 Please consider your privacy by omitting sensitive log data like transaction IDs.
 
 :::danger
-If you find a bug that puts users' privacy or security at serious risk, please take great care with responsible disclosure!
-Use Nostr to send an encrypted message with a description of the vulnerability to [lontivero](https://github.com/lontivero), whose pubkey is [npub1nccwjspr3nv7h67xx2qhdh2dzzvpyy55gte2dsu8yl7xd7n74y9qydz7mj](https://github.com/WalletWasabi/WalletWasabi/blob/master/SECURITY.md).
+If you find a bug that puts users' privacy or security at serious risk, please take great care with responsible disclosure by reporting a [vulnerability on GitHub](https://github.com/WalletWasabi/WalletWasabi/security/advisories/new).
 :::
 
 ### How can I request a feature?
