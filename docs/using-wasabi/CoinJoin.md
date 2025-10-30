@@ -38,11 +38,11 @@ This and other coinjoin related information is shown in the music box.
 
 After the _Waiting to auto-start coinjoin_ countdown is finished the wallet should start participating in the [coinjoin process](/using-wasabi/CoinJoin.md#wabisabi-protocol-step-by-step).
 
-A blue aura will show up at the the bottom of the wallet, which indicates that the wallet is coinjoining, and the music box message will change.
+A green aura will show up at the the bottom of the wallet, which indicates that the wallet is coinjoining, and the music box message will change.
 
 ![Music Box Awaiting Other Participants](/MusicBoxAwaitingOtherParticipants.png "Music Box Awaiting Other Participants")
 
-After some time the blue aura will change to an orange one, this indicates that the coinjoin process is now in a critical phase.
+After some time the green aura will change to an orange one, this indicates that the coinjoin process is now in a critical phase.
 Wasabi will prevent you from shutting down the app during the orange aura to not disrupt the coinjoin round.
 
 ![Music Box Coinjoin In Progress](/MusicBoxCoinjoinInProgress.png "Music Box Coinjoin In Progress")
