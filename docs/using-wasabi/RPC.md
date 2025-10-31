@@ -533,7 +533,7 @@ curl -s --data-binary '{"jsonrpc":"2.0", "id":"1", "method":"canceltransaction",
 }
 ```
 
-The first parameter is the transaction ID of the transaction to be accelerated, the second parameter is the wallet passphrase.
+The first parameter is the transaction ID of the transaction to be cancelled, the second parameter is the wallet passphrase.
 
 It does not automatically broadcast the new transaction, so it still needs to be manually broadcasted.
 
