@@ -1028,11 +1028,6 @@ The `Non-private coin isolation` is enabled by default when the `Default Strateg
 
 ![Non Private Coin Isolation](/NonPrivateCoinIsolation.png "Non Private Coin Isolation")
 
-### Do coinjoin transactions signal RBF?
-
-No.
-Coinjoin transactions do not signal RBF.
-
 ### Why do my coins occasionally get banned from participating in coinjoin?
 
 A coinjoin consists of multiple users registering inputs (coins) and blinded outputs.
