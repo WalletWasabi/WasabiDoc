@@ -551,8 +551,7 @@ This can be set to SegWit or Taproot only in the _Wallet Settings_.
 
 ### Does Wasabi support sending RBF?
 
-All _send_ transactions signal RBF by default.
-A pending transaction may be bumped (with RBF) by using the [_Speed Up Transaction_ feature](/FAQ/FAQ-UseWasabi.md#how-can-i-speed-up-a-pending-unconfirmed-transaction-cpfp-rbf).
+Yes, a pending transaction may be bumped or cancelled (with RBF) by using the [_Speed Up Transaction_ feature](/FAQ/FAQ-UseWasabi.md#how-can-i-speed-up-a-pending-unconfirmed-transaction-cpfp-rbf).
 
 ### Why does Wasabi choose a new random node every time I send a transaction?
 
