@@ -669,10 +669,6 @@ Example: If you select 10 coins with total value of 2 btc and you want to send 1
 
 This is good for privacy, and also saves you some transaction fees.
 
-### How can I bump the transaction fee with child pays for parent (CPFP)?
-
-Since Wasabi version [2.0.4](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.0.4) this FAQ is now obsolete because of the new [_Speed Up Transaction_ feature](/FAQ/FAQ-UseWasabi.md#how-can-i-speed-up-a-pending-transaction) that can be used.
-
 ### How can I speed up a pending/unconfirmed transaction (CPFP/RBF)?
 
 A pending (unconfirmed) transaction can be speeded up by using the _Speed Up Transaction_ feature which will send a new transaction with a higher fee rate to replace the current one.
