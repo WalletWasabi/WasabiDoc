@@ -321,7 +321,6 @@ If you are doing a re-synchronization because you expect some missing funds, but
 Yes, Wasabi works with pruned nodes.
 *  Wasabi client: it will fetch the blocks from the node, with the P2P network as fallback in case the block is missing.
 The node needs to have BIP-158 block filters enabled to be independent of the indexer.
-If your node has the blocks, then the client will fetch them from your node, otherwise it will get them from the p2p network.
 *  Indexer: the node needs to have the blocks since segwit activation in order to start the indexing process.
 Once it computes and stores all the compact filters, the node can be pruned even more.
 *  Coordinator: it doesn't use blocks, it only needs the utxoset.
