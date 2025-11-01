@@ -318,8 +318,12 @@ If you are doing a re-synchronization because you expect some missing funds, but
 
 ### Can Wasabi work with a pruned bitcoin node?
 
-No.
-Wasabi client doesn't work with pruned nodes.
+Yes, Wasabi works with pruned nodes.
+*  Wasabi client: it will fetch the blocks from the node, with the P2P network as fallback in case the block is missing.
+The node needs to have BIP-158 block filters enabled to be independent of the indexer.
+*  Indexer: the node needs to have the blocks since segwit activation in order to start the indexing process.
+Once it computes and stores all the compact filters, the node can be pruned even more.
+*  Coordinator: it doesn't use blocks, it only needs the utxoset.
 
 ### Can I run a Wasabi headless daemon?
 
