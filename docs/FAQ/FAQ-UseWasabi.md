@@ -974,7 +974,7 @@ It will always send all coinjoin outputs to the other wallet, regardless of whet
 
 ### How long does it take to make my wallet 100% private?
 
-Depending on many factors, such as the `Anonymity score target`, the `Coinjoin strategy`, the amount of bitcoin, and the liquidity of the coordinator, this can take from a few hours to several days or even more.
+Depending on many factors, such as the `Coinjoin Strategy` (_Anonymity core target_ and _Non-private coin isolation_), the amount of bitcoin, and the liquidity of the coordinator, this can take from a few hours to several days or even more.
 
 ### What coinjoin strategy should I select?
 
