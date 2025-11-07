@@ -1155,8 +1155,10 @@ That gives you access to your bitcoin.
 ### Can I verify the Recovery Words of an existing wallet?
 
 Yes.
-Go to `Wallet Settings` > `Verify Recovery Words`.
+Go to `Wallet Settings` > `Tools` > `Verify Recovery Words`.
 Type in your recovery words in the correct order, click on `Verify` and it will show you if they are correct or not.
+
+> It currently only works for BIP-39 backups, SLIP-39/multi-share backups cannot be verified with this tool.
 
 ![Wasabi Wallet Verify Recovery Words](/VerifyRecoveryWords.png "Wasabi Wallet Verify Recovery Words")
 
