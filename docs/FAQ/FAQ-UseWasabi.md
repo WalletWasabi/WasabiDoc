@@ -1158,6 +1158,8 @@ Yes.
 Go to `Wallet Settings` > `Verify Recovery Words`.
 Type in your recovery words in the correct order, click on `Verify` and it will show you if they are correct or not.
 
+> It currently only works for BIP-39 backups, SLIP-39/multi-share backups cannot be verified with this tool.
+
 ![Wasabi Wallet Verify Recovery Words](/VerifyRecoveryWords.png "Wasabi Wallet Verify Recovery Words")
 
 ## Hardware Wallet
