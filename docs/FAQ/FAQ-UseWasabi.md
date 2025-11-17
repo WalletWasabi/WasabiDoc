@@ -922,7 +922,7 @@ You can follow these links to have a full explanation on that:
 
 ### What is the address of the coordinator?
 
-The coordinator possibly gets paid in every coinjoin.
+The coordinator possibly gets paid in every coinjoin by collecting the [leftovers](https://docs.wasabiwallet.io/using-wasabi/CoinJoin.html#fees).
 Wasabi is using a fresh unused coordinator address for every coinjoin round.
 
 ### What is the maximum number of coins that can be registered in a coinjoin?
