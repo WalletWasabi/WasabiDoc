@@ -88,7 +88,7 @@ During the deployment of segregated witness, certain transaction surveillance co
 ### Oversold effectiveness
 
 Transaction surveillance companies rely on heuristics or assumptions when analyzing the blockchain.
-These heuristics are sometimes not true, for example, the common-input-ownership heuristic is broken by CoinJoin.
+These heuristics are sometimes not true, for example, the common-input-ownership heuristic is broken by coinjoin.
 Even if that heuristic is true, it still requires actually identifying the cluster, which is not always possible.
 
 Laws surrounding anti-money-laundering typically require businesses to make reasonable efforts to investigate the source of funds.
