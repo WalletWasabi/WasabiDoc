@@ -66,7 +66,7 @@ Different software wallets have different methods of creating Bitcoin transactio
 So if it is known that a transaction was created by a specific wallet, then it can be checked how this wallet handles change.
 
 Wasabi tries to build the most common form of transaction structure, thus reducing the likelihood of identifying any given transaction as being from Wasabi.
-However, Wasabi CoinJoins are very easily fingerprinted, and any coin associated is clearly managed with Wasabi Wallet.
+However, Wasabi coinjoins are very easily fingerprinted, and any coin associated is clearly managed with Wasabi Wallet.
 
 ### Round numbers
 
@@ -83,12 +83,12 @@ A [0.1293 0112 btc]  -->  B [0.0500 0000 btc]
 In order to protect your privacy, add or remove (when possible) a couple of sats from the payment amount to obfuscate which output is your change and which one is the payment.
 :::
 
-### CoinJoin
+### Coinjoin
 
-A CoinJoin has many unequal value inputs, and creates several equal value anonset outputs, as well as unequal value outputs, making it clear that these are the change outputs.
+A coinjoin has many unequal value inputs, and creates several equal value anonset outputs, as well as unequal value outputs, making it clear that these are the change outputs.
 
 :::tip
-This is why the CoinJoin change has only 1 [anonset](/glossary/Glossary-PrivacyWasabi.md#anonymity-set-anonset).
+This is why the coinjoin change has only 1 [anonset](/glossary/Glossary-PrivacyWasabi.md#anonymity-set-anonset).
 :::
 
 ```
