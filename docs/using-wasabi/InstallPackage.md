@@ -47,8 +47,6 @@ Don't trust - Verify!
 3. Make sure that you see this window that verifies the installer was signed by Clement Rouquier (one of Wasabi's maintainer signing the release as Wasabi is a simple Open Source Project, not any kind of Legal Entity).
 Manual PGP verification is optional, as the package is signed and verified automatically on Windows.
 
-![Wasabi Wallet Windows signature verification](/InstallWindowsSignature.png "Wasabi Wallet Windows signature verification")
-
 Wasabi will be installed to your `C:\Program Files\WasabiWallet\` folder.
 You will also have an icon in your Start Menu and on your Desktop. 
 After the first run, a [data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) will be created. 
