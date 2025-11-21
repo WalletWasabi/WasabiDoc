@@ -78,8 +78,6 @@ Check out the main documentation for a [step-by-step guide](/using-wasabi/Instal
 
 The Wasabi package is signed and automatically verified on Windows upon installation.
 
-![Wasabi Wallet Windows signature verification](/InstallWindowsSignature.png "Wasabi Wallet Windows signature verification")
-
 Optionally, you can still verify the PGP signature of the package by `right-clicking on the signature file > More GpgEX options > Verify` and ensure the software was signed by zkSNACKs' PGP public key [${zksnacksPublicKeyFingerprint}](https://github.com/WalletWasabi/WalletWasabi/blob/master/PGP.txt).
 Now install Wasabi by double-clicking the `.msi` file.
 Check out the main documentation for a [step-by-step guide](/using-wasabi/InstallPackage.md#windows).
