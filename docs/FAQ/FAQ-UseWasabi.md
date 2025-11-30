@@ -486,21 +486,9 @@ Due to the coinjoin implementation, the key depth can be rather large, thus when
 ### Can I generate a multi signature script?
 
 No.
-
-Multi signature scripts define that there need to be m-of-n signatures provided in order to spend this UTXO.
-For example in a 2-of-3, Alice alone cannot spend the sats, she needs the collaboration of either Bob or Charlie.
-In current implementations, a legacy and SegWit v0 multisig address is clearly distinguishable, there are three public keys and two signatures, and not one single public key and signature.
-This means that your anonymity set, the crowd you hide in, gets a lot smaller.
-If some one knows that you use a multisig wallet, then they can narrow down their search for your coins.
-Thus, use of multisig decreases your privacy, and Wasabi is not implementing tools that degrade your privacy.
-
-Yet multisig is a popular feature, and many Wasabikas do request it for extra security, willing to trade-off some privacy.
-[Electrum Wallet](https://electrum.org) is a fantastic wallet with many features, but only private if you connect to your own Electrum server full node.
-Electrum can be used to create different types of m-of-n multisig scripts, including the use of hardware wallets.
-
-Schnorr key and signature aggregation with MuSig increase privacy of multisig wallets, since only one public key, not n, are committed on the blockchain.
-On November 14th, 2021 at block 709632, Taproot was activated in the Bitcoin consensus layer so there are no major privacy concerns standing in the way of Wasabi multisig anymore.
-At the moment, it is still not available as of yet.
+Script conditions are revealed on the blockchain when coins are spent, which reduces the anonymity set of the sender.
+Instead, Wasabi uses SLIP39 (Shamir's Secret-Sharing) for multiparty backups.
+This enables partial ownership of a wallet's private keys (such as requiring 3 out of 5 shares to spend) without revealing the spending conditions on chain.
 
 ### How does Wasabi know of incoming transactions to the mempool?
 
