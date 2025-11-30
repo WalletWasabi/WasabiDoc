@@ -1179,7 +1179,7 @@ For the complete list of all the officially supported hardware wallets, click [h
 
 Wasabi uses the [Bitcoin Core Hardware Wallet Interface [HWI]](https://github.com/bitcoin-core/HWI), a python library tool for proper integration of off-line signing devices.
 It provides a standard way for any software wallet to communicate with any hardware wallet without needing any device specific drivers.
-HWI was developed and carefully reviewed over several years, with outstanding contributions by [Andrew Chow](https://github.com/achow101).
+HWI was developed and carefully reviewed over several years, with outstanding contributions by [achow101](https://github.com/achow101).
 Wasabi implements C# code that executes the HWI tool.
 Wasabi uses this powerful tool because there are no other dependencies necessary to support all the existing and future hardware wallets.
 
