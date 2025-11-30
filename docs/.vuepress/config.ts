@@ -103,6 +103,9 @@ export default defineUserConfig({
             text: "FAQ",
             link: "/FAQ/"
         }, {
+            text: "Backend & Coordinator",
+            link: "/backend-coordinator/"
+        }, {
             text: "Glossary",
             link: "/glossary/"
         }],
@@ -223,6 +226,16 @@ export default defineUserConfig({
                     "/FAQ/FAQ-UseWasabi.md",
                     "/FAQ/FAQ-GeneralBitcoinPrivacy.md",
                     "/FAQ/FAQ-Contribution.md"
+                ]
+            }],
+
+            "/backend-coordinator/": [{
+                text: "Backend and Coordinator",
+                collapsable: false,
+                sidebarDepth: 2,
+                children: [
+                    "/backend-coordinator/Backend.md",
+                    "/backend-coordinator/Coordinator.md"
                 ]
             }],
 
