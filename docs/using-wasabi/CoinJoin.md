@@ -84,7 +84,7 @@ It will not participate in rounds where the coordinator charges a coordination f
 
 > Previous versions also included the coordination fee concept, where the coordinator could charge a fee for providing the service.
 This has now been removed, as it could be abused by malicious coordinators and/or would require some trust in the coordinator (like free remixes, as they are not enforced in the protocol).
-The full explanation can be found [here](https://blog.wasabiwallet.io/killing-coordination-fee/). 
+The full explanation can be found [here](https://njump.me/nevent1qqs9yf68y0sumg3tumv3gn9rzs09rj3lzzfyrw7al3uw5qdy9rvq9pspp4mhxue69uhkummn9ekx7mqzyzfm6rr08n96u3ec3vq6cm8qktqpxy2defxq34hzwyk5lac5qk3ux04wkhm). 
 
 ## WabiSabi protocol step-by-step
 
