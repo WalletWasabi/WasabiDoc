@@ -64,7 +64,7 @@ There are a few special switches that are not present in the `Config.json` file 
 | The level of detail used during logging | --loglevel=trace | WASABI_LOGLEVEL=trace |
 | Specify to log only to specific target* | --logmodes=console | WASABI_LOGMODES=console |
 | The path to the directory used during runtime | --datadir="$HOME/temp/wasabi-1" | WASABI_DATADIR="$HOME/temp/wasabi-1" |
-| Open wallet "WalletName" | --wallet=WalletName | WASABI_-WALLET=WalletName |
+| Open wallet "WalletName" | --wallet=WalletName | WASABI_WALLET=WalletName |
 | Expose the RPC as onion service | --rpconionenabled=true | WASABI_RPCONIONENABLED=true |
 | Tor will listen to this SOCKS5 port | --torsocksport=35000 | WASABI_TORSOCKSPORT=35000 |
 | Tor will listen to this control port | --torcontrolport=35001 | WASABI_TORCONTROLPORT=35001 |
