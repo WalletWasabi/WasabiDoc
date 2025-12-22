@@ -66,10 +66,10 @@ Many Bitcoin transactions have change outputs.
 It would be a serious privacy leak if the change address can be somehow found, as it would link the ownership of the (now spent) inputs with a new output.
 Read more: [Change coins](/using-wasabi/ChangeCoins.md)
 
-### Chaumian CoinJoin
+### Chaumian Coinjoin
 
-A Chaumian CoinJoin is a special type of CoinJoin that utilizes Chaumian [or Schnorr] blind signatures to prevent the central coordinator from spying on the linkage between inputs and outputs.
-Read more: [Use of blind signatures in CoinJoin](/using-wasabi/CoinJoin.md#zerolink-protocol-step-by-step)
+A Chaumian coinjoin is a special type of coinjoin that utilizes Chaumian [or Schnorr] blind signatures to prevent the central coordinator from spying on the linkage between inputs and outputs.
+Read more: [Use of blind signatures in coinjoin](/using-wasabi/CoinJoin.md#zerolink-protocol-step-by-step)
 
 ### Client
 
@@ -89,19 +89,19 @@ The possiblity for the user to manually select UTXO's.
 It is mostly used for sending, so the user can select which UTXO's should be used as the inputs of the transaction.
 Read more: [Coin Control Best Practices](/FAQ/FAQ-UseWasabi.md#coin-control-best-practices)
 
-### CoinJoin (CJ)
+### Coinjoin (CJ)
 
-CoinJoin is a trustless method for combining multiple Bitcoin payments from multiple spenders into a single transaction to make it more difficult for outside parties to determine which spender paid which recipient.
-Read more: [What is a CoinJoin?](/FAQ/FAQ-Introduction.md#what-is-a-coinjoin)
+Coinjoin is a trustless method for combining multiple Bitcoin payments from multiple spenders into a single transaction to make it more difficult for outside parties to determine which spender paid which recipient.
+Read more: [What is a coinjoin?](/FAQ/FAQ-Introduction.md#what-is-a-coinjoin)
 
 ### Coinjoin Strategy
 
 A _Coinjoin Strategy_ contains instructions for the automatic "coinjoin robot" about configurations like when and how much to coinjoin.
 Read more: [Coinjoin Strategy](/Using-Wasabi/CoinJoin.md#coinjoin-strategy)
 
-### CoinJoined coins
+### Coinjoined coins
 
-Coins that have successfully participated in a CoinJoin (with the exception of the change) and thus lose their association to a previous cluster.
+Coins that have successfully participated in a coinjoin (with the exception of the change) and thus lose their association to a previous cluster.
 Read more: [What is the privacy I get after mixing with Wasabi?](/FAQ/FAQ-Introduction.md#what-is-the-privacy-i-get-after-mixing-with-wasabi)
 
 ### Common-Input-Ownership heuristic
@@ -110,7 +110,7 @@ This is a heuristic or assumption which says that if a transaction has more than
 
 ### Coordinator
 
-The coordinator is a server which creates CoinJoins and accepts UTXOs in the mix.
+The coordinator is a server which creates coinjoins and accepts UTXOs in the mix.
 Read more: [How does my wallet communicate with the Wasabi coordinator server?](/FAQ/FAQ-UseWasabi.md#how-does-my-wallet-communicate-with-the-wasabi-coordinator-server)
 
 ### Daemon
@@ -160,7 +160,7 @@ The Tor onion service, IP address or domain of the receiver is included in a BIP
 ### Peers
 
 Peers in our documentation refers mainly to Bitcoin and Wasabi Wallet users, but it also means people.
-They are literally peers in the network, or in the CoinJoin.
+They are literally peers in the network, or in the coinjoin.
 
 ### RPC
 
@@ -223,5 +223,5 @@ An xpub, also known as Extended Public Key, is a part of BIP-32 that will allow 
 ### ZeroLink
 
 ZeroLink is a framework to holistically design a privacy and fungibility setup for Bitcoin.
-This encompasses more than just a single CoinJoin transaction, but also includes network level privacy defense against third party spying.
+This encompasses more than just a single coinjoin transaction, but also includes network level privacy defense against third party spying.
 Read more: [ZeroLink: the Bitcoin Fungibility Framework](/using-wasabi/CoinJoin.md#zerolink-protocol-step-by-step)

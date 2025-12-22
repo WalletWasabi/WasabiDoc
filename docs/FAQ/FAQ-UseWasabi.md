@@ -486,21 +486,9 @@ Due to the coinjoin implementation, the key depth can be rather large, thus when
 ### Can I generate a multi signature script?
 
 No.
-
-Multi signature scripts define that there need to be m-of-n signatures provided in order to spend this UTXO.
-For example in a 2-of-3, Alice alone cannot spend the sats, she needs the collaboration of either Bob or Charlie.
-In current implementations, a legacy and SegWit v0 multisig address is clearly distinguishable, there are three public keys and two signatures, and not one single public key and signature.
-This means that your anonymity set, the crowd you hide in, gets a lot smaller.
-If some one knows that you use a multisig wallet, then they can narrow down their search for your coins.
-Thus, use of multisig decreases your privacy, and Wasabi is not implementing tools that degrade your privacy.
-
-Yet multisig is a popular feature, and many Wasabikas do request it for extra security, willing to trade-off some privacy.
-[Electrum Wallet](https://electrum.org) is a fantastic wallet with many features, but only private if you connect to your own Electrum server full node.
-Electrum can be used to create different types of m-of-n multisig scripts, including the use of hardware wallets.
-
-Schnorr key and signature aggregation with MuSig increase privacy of multisig wallets, since only one public key, not n, are committed on the blockchain.
-On November 14th, 2021 at block 709632, Taproot was activated in the Bitcoin consensus layer so there are no major privacy concerns standing in the way of Wasabi multisig anymore.
-At the moment, it is still not available as of yet.
+Script conditions are revealed on the blockchain when coins are spent, which reduces the anonymity set of the sender.
+Instead, Wasabi uses SLIP39 (Shamir's Secret-Sharing) for multiparty backups.
+This enables partial ownership of a wallet's private keys (such as requiring 3 out of 5 shares to spend) without revealing the spending conditions on chain.
 
 ### How does Wasabi know of incoming transactions to the mempool?
 
@@ -922,7 +910,7 @@ You can follow these links to have a full explanation on that:
 
 ### What is the address of the coordinator?
 
-The coordinator possibly gets paid in every coinjoin.
+The coordinator possibly gets paid in every coinjoin by collecting the [leftovers](https://docs.wasabiwallet.io/using-wasabi/CoinJoin.html#fees).
 Wasabi is using a fresh unused coordinator address for every coinjoin round.
 
 ### What is the maximum number of coins that can be registered in a coinjoin?
@@ -974,7 +962,7 @@ It will always send all coinjoin outputs to the other wallet, regardless of whet
 
 ### How long does it take to make my wallet 100% private?
 
-Depending on many factors, such as the `Anonymity score target`, the `Coinjoin strategy`, the amount of bitcoin, and the liquidity of the coordinator, this can take from a few hours to several days or even more.
+Depending on many factors, such as the `Coinjoin Strategy` (_Anonymity core target_ and _Non-private coin isolation_), the amount of bitcoin, and the liquidity of the coordinator, this can take from a few hours to several days or even more.
 
 ### What coinjoin strategy should I select?
 
@@ -983,7 +971,7 @@ The coinjoin strategy should be selected according to the user's preference:
 
 - If you want to maximize privacy, then select `Enhance Privacy` (which comes with a cost as it will do more coinjoins).
 - If you want to "just" coinjoin your funds, then select `Default Strategy`.
-- If you want to minimize costs, then select `Reduce Costs` (which will only coinjoin during the cheaper parts of the week).
+- If you want to minimize costs, then select `Reduce Costs` (which will do the minimum amount of coinjoin).
 
 ![Wasabi Coinjoin Strategy](/CoinjoinStrategy.png "Wasabi Coinjoin Strategy")
 
@@ -1155,8 +1143,10 @@ That gives you access to your bitcoin.
 ### Can I verify the Recovery Words of an existing wallet?
 
 Yes.
-Go to `Wallet Settings` > `Verify Recovery Words`.
+Go to `Wallet Settings` > `Tools` > `Verify Recovery Words`.
 Type in your recovery words in the correct order, click on `Verify` and it will show you if they are correct or not.
+
+> It currently only works for BIP-39 backups, SLIP-39/multi-share backups cannot be verified with this tool.
 
 ![Wasabi Wallet Verify Recovery Words](/VerifyRecoveryWords.png "Wasabi Wallet Verify Recovery Words")
 
@@ -1177,7 +1167,7 @@ For the complete list of all the officially supported hardware wallets, click [h
 
 Wasabi uses the [Bitcoin Core Hardware Wallet Interface [HWI]](https://github.com/bitcoin-core/HWI), a python library tool for proper integration of off-line signing devices.
 It provides a standard way for any software wallet to communicate with any hardware wallet without needing any device specific drivers.
-HWI was developed and carefully reviewed over several years, with outstanding contributions by [Andrew Chow](https://github.com/achow101).
+HWI was developed and carefully reviewed over several years, with outstanding contributions by [achow101](https://github.com/achow101).
 Wasabi implements C# code that executes the HWI tool.
 Wasabi uses this powerful tool because there are no other dependencies necessary to support all the existing and future hardware wallets.
 
