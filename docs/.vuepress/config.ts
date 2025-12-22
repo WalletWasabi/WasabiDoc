@@ -18,7 +18,7 @@ export default defineUserConfig({
 
         const variables = {
             currentVersion: '2.7.2',
-            dotnetVersion: '8.0',
+            dotnetVersion: '10.0',
             zksnacksPublicKeyFingerprint: '6FB3 872B 5D42 292F 5992 0797 8563 4832 8949 861E'
         }
 
