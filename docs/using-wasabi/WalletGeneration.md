@@ -86,46 +86,4 @@ This means that the passphrase is your last line of defense against anyone who t
 
 Wasabi uses [BIP 38: Password-Protected Private Key](https://github.com/bitcoin/bips/blob/master/bip-0038.mediawiki)
 
-```
-                      +--------------+
-                      | Entropy      |
-                      +--------------+
-  +------------+             |
-  | Word list  +------------>+
-  +------------+             |
-                      +------v-------+
-                      | Mnemonics    |
-                      +--------------+
-                             |
-                   +--------->
-                   |         |
-                   |  +------v-------+
-                   |  | Seed         |
-                   |  +--------------+
-                   |         |
-  +------------+   |         |
-  | Passphrase +---+  +------v-------+
-  +------------+   |  | Extended Key |
-                   |  +--------------+
-                   |         |
-                   |         |
-                   |  +------v-------+
-                   |  | Private key  |     ** This step is needed to use bip38
-                   |  +--------------+
-                   |         |              +-------------+
-                   +-------->+<-------------+  Network    |
-                             |              +-------------+
-                      +------v-------+
-                      | Encrypted    |
-                      | secret       |
-                      +--------------+
-                             |
-                             |
-                             |
-                  +--------------------+
-                  | Save encrypted     |
-                  | secret+chaincode+  |
-                  | Fingerprint+ExtPub |
-                  +--------------------+
-
-```
+![How Secrets Created](/HowAreTheSecretsCreated.png "How Secrets Created")
