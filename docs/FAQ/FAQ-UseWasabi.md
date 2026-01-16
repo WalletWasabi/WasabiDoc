@@ -1003,8 +1003,8 @@ It is the confirmed wallet balance under which coinjoin will automatically stop/
 
 A use case is that it might not be economical to coinjoin with this amount (fee amount compared to coinjoin amount).
 
-For example, if the confirmed balance is 0.005 BTC, `Automatically start coinjoin` is enabled and the `Stop coinjoin threshold` is 0.01 BTC, the user will have to manually press Play to start coinjoining.
-The default _Stop coinjoin threshold_ is 0.01 BTC.
+For example, if the confirmed balance is 0.0001 BTC, `Automatically start coinjoin` is enabled and the `Stop coinjoin threshold` is 0.005 BTC, the user will have to manually press Play to start coinjoining.
+The default _Stop coinjoin threshold_ is 0.005 BTC.
 
 ![Stop coinjoin threshold](/StopCoinjoinThreshold.png "Stop coinjoin threshold")
 
@@ -1407,7 +1407,7 @@ A dust attack is actually about [forced address reuse](https://en.bitcoin.it/Pri
 
 Specifically in the context of Wasabi, with the dust attack limit setting you can limit the value of spam coins shown in the GUI.
 Coins from other wallets (no self-spend) below the dust attack limit that you receive to a used address are not shown.
-For example: When it is set to `0.0000 5000 BTC`, and you receive a coin worth `0.0000 4000 BTC` from a different wallet to an already used address, then this transaction and the coin in the coin list will not be shown.
+For example: When it is set to `0.0000 1000 BTC`, and you receive a coin worth `0.0000 0900 BTC` from a different wallet to an already used address, then this transaction and the coin in the coin list will not be shown.
 
 ![Dust attack limit](/SettingsDustAttackLimit.png "Dust attack limit")
 
