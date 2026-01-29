@@ -1363,6 +1363,16 @@ The RPC credential string can be the username & password, or the cookie file of 
 
 ![Settings Bitcoin RPC](/SettingsBitcoinRPC.png "Settings Bitcoin RPC")
 
+Or edit the following lines in the config file:
+
+```
+"UseBitcoinRpc": true,
+"BitcoinRpcCredentialString": "rpcuser:rpcpassword",
+"BitcoinRpcEndPoint": "http://127.0.0.1:8332/",
+```
+
+> _BitcoinRpcCredentialString_ can be also be the cookie file path ({bitcoindatadir}/.cookie), instead of user and password.
+
 The Bitcoin RPC status is shown in the bottom right corner status icon (the status icon displays a warning triangle in case the full node is not connected).
 
 ![Status Icon Bitcoin RPC](/StatusIconBitcoinRPC.png "Status Icon Bitcoin RPC")
