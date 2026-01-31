@@ -134,6 +134,20 @@ _**Privacy & Availability Concerns**_
   Other users would also notice a lack of mixed coins.  
   Learn more about this attack [here](https://github.com/WalletWasabi/WabiSabi/blob/master/protocol.md#attacks-on-privacy).
 
+- **Client to Coordinator communication**:
+  - IP address leak when not using Tor:
+    This allows the coordinator to link all communication and inputs and outputs of the coinjoin and thus complete de-anonymisation. 
+    This is why Wasabi communicates over Tor by default.
+  - (Theoretical) Tor network-level de-anonymisation:
+    Wasabi uses Tor by default, assuming that this is the most available and usable anonymous way to communicate, and that it cannot be de-anonymised at the network level.
+    If Tor does not uphold these assumptions, the client could be de-anonymised.
+
+- **Inconsistent Round ID**:  
+  The client asks the coordinator for the active rounds, and the coordinator returns the _Round ID_.
+  The round ID is the resulting hash of information about the round, such as when the round started and the parameters. The coordinator could create rounds that do not match the parameters and/or create rounds with inputs that were supposed to be registered in different rounds.
+  This allows the coordinator to de-anonymize and/or link users' coins.
+  To mitigate against this, the client calculates the round ID by itself to verify, and will abort if it detects the coordinator is doing this.
+
 - **Metadata Leak**:  
   While this is not a direct attack by the coordinator, if a client disconnects after registering multiple coins, the coordinator may assume that these coins belong to the same owner as they all stop sending the subsequent required requests.
 
