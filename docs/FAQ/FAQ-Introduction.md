@@ -67,10 +67,17 @@ However, to be on the safe side, with Wasabi Wallet 2.0 an anonymity score of 5 
 
 ### What software supplies the block filters that Wasabi uses?
 
-The Wasabi backend supplies identical filters to every client.
-This means that you rely on the [Wasabi backend](https://github.com/WalletWasabi/WalletWasabi/tree/master/WalletWasabi.Backend) to provide valid filters.
-But because you download the blocks from a random Bitcoin peer-to-peer node - or your own node - the server cannot spy on which blocks you are interested in.
-Furthermore, the random node will only know which block is needed but it won't have any clue which transaction(s) belongs to the wallet.
+Wasabi can use block filters from a Wasabi backend/indexer or from a Bitcoin node.
+
+By default, the Wasabi indexer serves filters to every client.
+The filters a Wasabi indexer provides are Wasabi specific filters (optimized, light-weight) and not standard BIP 158 filters.
+By using the [Wasabi backend](https://github.com/WalletWasabi/WalletWasabi/tree/master/WalletWasabi.Backend) you trust it to provide valid filters (in case it doesn't, your wallet could display less funds than you actually have).
+
+As the client downloads the blocks from a random Bitcoin peer-to-peer node - or your own node - the server cannot spy on which blocks you are interested in.
+Furthermore, the random node will only know which block is needed but it does't know which transaction(s) belongs to the wallet.
+
+Since Wasabi version [2.6.0](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.6.0) Wasabi also works with a Bitcoin node that can supply standard BIP 158 block filters.
+This means that the client is no longer dependent on a Wasabi backend for downloading filters to synchronize the wallet.
 
 ### Is the Backend's (Coordinator) code open-source?
 
