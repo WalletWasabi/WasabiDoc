@@ -241,6 +241,15 @@ Remember to report Wasabi as a safe software/false positive to your antivirus.
 In doing so you will help users who use the same antivirus.
 :::
 
+### What are the executables?
+
+The Wasabi package has 3 executables:
+- wassabee
+- wbackend
+- wcoordinator
+
+`wassabee` runs the client with GUI (`wassabeed` runs the daemon), `wbackend` runs the Wasabi backend/indexer, `wcoordinator` runs the coinjoin coordinator.
+
 ### Why is the executable called wassabee?
 
 The most obvious thing would be to call the executable `Wasabi Wallet.exe` on Windows and `Wasabi Wallet` on Linux and Mac.
