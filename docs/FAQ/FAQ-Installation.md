@@ -243,12 +243,13 @@ In doing so you will help users who use the same antivirus.
 
 ### What are the executables?
 
-The Wasabi package has 3 executables:
+The Wasabi package has 4 executables:
 - wassabee
+- wassabeed
 - wbackend
 - wcoordinator
 
-`wassabee` runs the client with GUI (`wassabeed` runs the daemon), `wbackend` runs the Wasabi backend/indexer, `wcoordinator` runs the coinjoin coordinator.
+`wassabee` runs the client with GUI, `wassabeed` runs the daemon, `wbackend` runs the Wasabi backend/indexer, `wcoordinator` runs the coinjoin coordinator.
 
 ### Why is the executable called wassabee?
 
