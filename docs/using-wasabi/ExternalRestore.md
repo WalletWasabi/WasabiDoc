@@ -29,7 +29,7 @@ Here are major wallets you can use to recover a Wasabi Wallet for Segwit address
 - Sparrow
 - Specter Desktop
 
-For a complete list of compatible wallets, see here: https://walletsrecovery.org
+For a complete list of compatible wallets, see here: [https://walletsrecovery.org](https://walletsrecovery.org).
 
 ## Compatibility List for Taproot Addresses (bc1p)
 
