@@ -1,38 +1,26 @@
 ---
 {
   "title": "Getting Started",
-  "description": "An easy and short guide on how to get started using Wasabi Wallet. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
+  "description": "An easy and short guide on how to get started using Clevva Wallet. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
 }
 ---
 
 # Getting Started
 
-This is a short comprehensive guide on how to get started using Wasabi.
+This is a short comprehensive guide on how to get started using Clevva wallet.
 
 Please refer to the rest of the documentation for detailed explanations and best practices.
-
-[[toc]]
-
-## Download Wasabi
-
-Download Wasabi from the official website [wasabiwallet.io](https://wasabiwallet.io) or [wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion](http://wasabiukrxmkdgve5kynjztuovbg43uxcbcxn6y2okcrsg7gb6jdmbad.onion) if you're using the Tor Browser.
 
 ## Verify the Download
 
 Optionally, but highly recommended is to verify the downloaded package.
 This needs to be done in order to make sure that the just downloaded package is the authentic one and not a malicious one (replaced by a hacker etc...).
 
-How to do this depends on the desktop operating system, the detailed guides can be found here: [Windows](/using-wasabi/InstallPackage.md#windows), [Debian/Ubuntu](/using-wasabi/InstallPackage.md#debian-and-ubuntu), [Other Linux](/using-wasabi/InstallPackage.md#other-linux), [macOS](/using-wasabi/InstallPackage.md#macos)
 
-## Install Wasabi
 
-The downloaded Wasabi package needs to be installed on the computer so the application can be used.
+WELCOME SCREEN
 
-How to do this depends on the desktop operating system, the detailed guides can be found here: [Windows](/using-wasabi/InstallPackage.md#windows), [Debian/Ubuntu](/using-wasabi/InstallPackage.md#debian-and-ubuntu), [Other Linux](/using-wasabi/InstallPackage.md#other-linux), [macOS](/using-wasabi/InstallPackage.md#macos)
-
-## Welcome Screen
-
-The first time that you start Wasabi, you will see the welcome screen.
+The first time that you start Clevva wallet you will see the welcome screen.
 
 ## Add Wallet
 
@@ -61,33 +49,33 @@ If you lose your passphrase you lose your bitcoin.
 
 ## Downloading block filters
 
-Wasabi will now download all the block filters, starting from 481824 (SegWit activation) until the chain tip.
+Clevva wallet will now download all the block filters, starting from 481824 (SegWit activation) until the chain tip.
 This first-time filter download can take a while (up to 1 hour or more).
 Subsequent filter downloads will be fast(er) as then only the recent filters need to be downloaded.
 
 ## Receive bitcoin
 
 As you can see, the new wallet is empty as it has a balance of 0.
-Click on `Receive` at the top right to [receive](/using-wasabi/Receive.md) some bitcoin to this new wallet.
+Click on `Receive` at the top right to [receive](/using-Clevva/Receive.md) some bitcoin to this new wallet.
 
 ## Coinjoin
 
 A coordinator needs to be configured to participate in coinjoin(s).
 This can be done at the _Coordinator_ tab in the _Settings_, along with other coordinator settings.
 
-Read more [here](/FAQ/FAQ-UseWasabi.html#how-do-i-find-a-coordinator) about how to find a coordinator.
+Read more [here](/FAQ/FAQ-clevvawallet.html#how-do-i-find-a-coordinator) about how to find a coordinator.
 
 ![Music Box Coordinator Not Configured](/MusicBoxCoordinatorNotConfigured.png "Music Box Coordinator Not Configured")
 
-It is also possible to use a _coordinator connection string_ which Wasabi automatically detects in the clipboard and it will apply these settings with a dialog for the user to confirm.
+It is also possible to use a _coordinator connection string_ which Clevva Wallet automatically detects in the clipboard and it will apply these settings with a dialog for the user to confirm.
 
-Once a coordinator is configured and you have received some bitcoin, Wasabi will automatically coinjoin the bitcoin for you.
+Once a coordinator is configured and you have received some bitcoin, Clevva wallet will automatically coinjoin the bitcoin for you.
 
 After the incoming funds are confirmed, coinjoin can be started by pressing the Play button.
 
 You know that your wallet is coinjoining if you see the stop button in the musicbox and the spectrum ("waving" color animation) at the bottom of the wallet.
 
-Now wait while you leave Wasabi running so it can do some coinjoins.
+Now wait while you leave Clevva running so it can do some coinjoins.
 You might need to wait for (a couple of) hour(s) (sometimes less or sometimes more) to get successful coinjoins and to see your privacy percentage reach 100%.
 
 ## Funds 100% private
@@ -103,6 +91,6 @@ Now that all your bitcoin is private you can use your bitcoin to:
 - Send it to cold storage.
 
 :::tip
-Congratulations you are now using Wasabi!
+Congratulations you are now using Clevva wallet
 :::
 
