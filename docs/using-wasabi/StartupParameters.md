@@ -42,13 +42,13 @@ All configuration options available via the config files are also available as c
 | "JsonRpcUser": "" | --jsonrpcuser="" | WASABI_JSONRPCUSER="" |
 | "JsonRpcPassword": "" | --jsonrpcpassword="" | WASABI_JSONRPCPASSWORD="" |
 | "JsonRpcServerPrefixes":["http://127.0.0.1:37128/", "http://localhost:37128/"] | --jsonrpcserverprefixes=["http://127.0.0.1:37128/", "http://localhost:37128/"] | WASABI_JSONRPCSERVERPREFIXES=["http://127.0.0.1:37128/", "http://localhost:37128/"] |
-| "DustThreshold": "0.00005" | --dustthreshold=0.00005 | WASABI_DUSTTHRESHOLD=0.00005 |
+| "DustThreshold": "0.00001" | --dustthreshold=0.00001 | WASABI_DUSTTHRESHOLD=0.00001 |
 | "EnableGpu": true | --enablegpu=true | WASABI_ENABLEGPU=true |
 | "CoordinatorIdentifier": "CoinJoinCoordinatorIdentifier" | --coordinatoridentifier="coinjoincoordinatoridentifier" | WASABI_COORDINATORIDENTIFIER="coinjoincoordinatoridentifier" |
 | "ExchangeRateProvider": "MempoolSpace" | --exchangerateprovider=MempoolSpace | WASABI_EXCHANGERATEPROVIDER=MempoolSpace |
 | "FeeRateEstimationProvider": "MempoolSpace" | --feerateestimationprovider=MempoolSpace | WASABI_FEERATEESTIMATIONPROVIDER=MempoolSpace |
 | "ExternalTransactionBroadcaster": "MempoolSpace" | --externaltransactionbroadcaster=MempoolSpace | WASABI_EXTERNALTRANSACTIONBROADCASTER=MempoolSpace |
-| "MaxCoinJoinMiningFeeRate": 150.0 | --maxcoinjoinminingfeerate=150.0 | WASABI_MAXCOINJOINMININGFEERATE=150.0 |
+| "MaxCoinJoinMiningFeeRate": 50.0 | --maxcoinjoinminingfeerate=50.0 | WASABI_MAXCOINJOINMININGFEERATE=50.0 |
 | "AbsoluteMinInputCount": 21 | --absolutemininputcount=21 | WASABI_ABSOLUTEMININPUTCOUNT=21 |
 | "MaxDaysInMempool": 30 | --dropunconfirmedtransactionsafterdays=30 | WASABI_DROPUNCONFIRMEDTRANSACTIONSAFTERDAYS=30 |
 

@@ -144,7 +144,7 @@ Read more: [Why do I have to label my address](/FAQ/FAQ-UseWasabi.md#why-do-i-ha
 ### Max Coinjoin Mining Fee Rate
 
 The maximum mining fee rate in sat/vByte the client is willing to pay to participate into a round.
-The default value is 150.
+The default value is 50.
 
 ### Observers
 
@@ -177,7 +177,7 @@ It aims to prevent targeted analysis that compares the value of consolidated coi
 ### Stop coinjoin (Pleb Stop) threshold
 
 The _Stop coinjoin threshold_, a.k.a Pleb Stop, is the confirmed wallet balance under which coinjoin will automatically stop/not start.
-The amount can be changed in the _Coinjoin Settings_ (_Stop coinjoin threshold_ setting), the default is 0.01 BTC.
+The amount can be changed in the _Coinjoin Settings_ (_Stop coinjoin threshold_ setting), the default is 0.005 BTC.
 
 ### Taint
 
