@@ -107,8 +107,6 @@ You can change the fee by moving the slider, or by manually setting the [transac
 
 ![Wasabi Wallet Fee Slider](/SendFeeSlider.png "Wasabi Wallet Fee Slider")
 
-In some cases, there is very little demand for block space, and then Wasabi will set the minimum fee of `1 sat/vByte`.
-
 :::tip High-priority transaction fees
 
 If you have a transaction that is high-priority and you really want it to be confirmed ASAP:
