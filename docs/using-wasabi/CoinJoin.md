@@ -58,7 +58,7 @@ Please leave Wasabi Wallet running, and eventually there will be a successful co
 ### More Details
 
 `Automatically start coinjoin` can be enabled from the coinjoin settings.
-If enabled, Wasabi starts automatically coinjoining your funds when the wallet balance is equal to or above the `Stop coinjoin threshold` (0.01 BTC by default).
+If enabled, Wasabi starts automatically coinjoining your funds when the wallet balance is equal to or above the `Stop coinjoin threshold` (0.005 BTC by default).
 
 In case you want to start the process manually, then click the play button; if you want to stop coinjoin, then click the pause button.
 
@@ -76,7 +76,7 @@ The coordinator sets the mining fee rate for the coinjoin transaction.
 
 Users can set the maximum coinjoin mining fee rate they are willing to pay, as well as the minimum number of inputs the coinjoin transaction should have to participate.
 
-The default is a maximum mining fee rate of 150 sat/vByte and a minimum input count of 21.
+The default is a maximum mining fee rate of 50 sat/vByte and a minimum input count of 21.
 
 ![Coinjoin Configurations](/SettingsCoinjoinConfigs.png "Coinjoin Configurations")
 
@@ -213,13 +213,13 @@ The wallet will coinjoin until the `privacy progress` is 100%.
 
 ### Stop coinjoin threshold
 
-The default `Stop coinjoin threshold` is 0.01 BTC.
+The default `Stop coinjoin threshold` is 0.005 BTC.
 
 The wallet will automatically stop/not start coinjoining if the wallet balance is below the `Stop coinjoin threshold`, even if the `Automatically start coinjoin` is enabled.
 In this case the user has to manually press Play to start coinjoining.
 This setting can be used to prevent paying (relatively) high fees for smaller bitcoin amounts.
 
-For example, if the confirmed balance is 0.005 BTC and the `Stop coinjoin threshold` is 0.01 BTC, the user will have to manually press Play to start coinjoining.
+For example, if the confirmed balance is 0.004 BTC and the `Stop coinjoin threshold` is 0.005 BTC, the user will have to manually press Play to start coinjoining.
 
 ![Stop Coinjoin Threshold](/StopCoinjoinThreshold.png "Stop Coinjoin Threshold")
 
