@@ -162,6 +162,19 @@ Wasabi has 3 mechanisms for broadcasting a transaction.
 It will try these in the following order until one is successful: connected Bitcoin full node, Bitcoin P2P network, 3rd party API.
 Read more [here](/FAQ/FAQ-UseWasabi.html#how-is-the-transaction-broadcast).
 
+
+## Coinjoin payment
+
+Since Wasabi version x, it is possible to schedule a payment in a coinjoin in the GUI.
+
+This means that the payment will be made in a coinjoin, instead of having to do coinjoin and then make a single user payment.
+
+To schedule a payment, click the music box menu items and follow the steps, similar to the normal send workflow.
+
+![Music Box Menu Items](/MusicBoxMenuItems.png "Music Box Menu Items")
+
+![Coinjoin Payments Dialog](/CoinjoinPaymentsDialog.png "Coinjoin Payments dialog")
+
 ## Speed Up or Cancel Transaction
 
 Pending (unconfirmed) Bitcoin transactions can be replaced by sending a new transaction that pays a higher fee rate using the same (or some) coins/UTXOs.
