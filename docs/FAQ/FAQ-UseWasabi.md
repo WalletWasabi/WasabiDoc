@@ -481,6 +481,7 @@ Wasabi follows [BIP 84: Derivation scheme for P2WPKH Based Accounts](https://git
 
 On TestNet Wasabi uses the paths `m/84'/1'/0'` and `m/86'/1'/0'`.
 On RegTest it uses `m/84'/0'/0'` and `m/86'/0'/0'`, and not the standard `m/84'/1'/0'` and `m/86'/1'/0'` paths.
+On SigNet it uses `m/84'/1'/0'` and `m/86'/1'/0'`.
 Due to the coinjoin implementation, the key depth can be rather large, thus when recovering, the gap limit should be elevated to at least 100.
 
 ### Can I generate a multi signature script?

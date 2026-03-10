@@ -44,7 +44,7 @@ It will load on mainnet the next time you start it.
 
 :::tip 
 Alternatively, you can edit the `network` file in your [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder).
-Valid options are: `"Main"`, `"TestNet4"`, or `"RegTest"`.
+Valid options are: `"Main"`, `"TestNet4"`, `signet` or `"RegTest"`.
 The changes will apply on the next launch of Wasabi.
 :::
 
