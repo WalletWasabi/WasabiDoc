@@ -265,7 +265,7 @@ The coinjoin payment feature only registers a payment, so if coinjoin is not run
 Currently the coinjoin coin selector does not take into account that a payment is registerd.
 Therefore, it is possible that the payment will not be executed due to insufficient and/or non-optimal coins being selected, even though there are sufficient funds available.
 
-Queued coinjoin payment or discarded when Wasabi shutsdown, or can be cancelled manually.
+Queued coinjoin payments are removed when Wasabi restarts, or can be cancelled manually.
 
 ## Wasabi Coinjoin examples
 
