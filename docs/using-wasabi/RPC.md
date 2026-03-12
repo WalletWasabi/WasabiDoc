@@ -751,16 +751,6 @@ The _result_ is the paymentId.
 
 A _payincoinjoin_ is written to the logs and its status can be seen by using the _listpaymentsincoinjoin_ method.
 
-Payments in coinjoin can theoretically be made to any ScriptPubKey. 
-However, the coordinator may only accept certain types of outputs.
-It is not possible to use a Silent Payment address as the destination for a _payincoinjoin_, as you need to know the private keys of all the inputs.
-
-The default maximum is 4 payments per client per coinjoin.
-
-_payincoinjoin_ only registers a payment, so if coinjoin is not running or the amount is lower than the wallet balance, the payment is queued.
-Currently the coinjoin coin selector does not take into account that a payment is registerd.
-Therefore, it is possible that the payment will not be executed due to insufficient and/or non-optimal coins being selected, even though there are sufficient funds available.
-
 Pending payments can be removed by using the _cancelpaymentincoinjoin_ method.
 Pending payments are also removed if the Wasabi client restarts.
 

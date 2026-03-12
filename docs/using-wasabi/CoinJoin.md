@@ -255,6 +255,18 @@ To schedule a payment, click the music box menu items and follow the steps, simi
 
 ![Coinjoin Payments Dialog](/CoinjoinPaymentsDialog.png "Coinjoin Payments dialog")
 
+Payments in coinjoin can theoretically be made to any ScriptPubKey. 
+However, the coordinator may only accept certain types of outputs.
+It is not possible to use a Silent Payment address as the destination for a _payincoinjoin_, as you need to know the private keys of all the inputs.
+
+The default maximum is 4 payments per client per coinjoin.
+
+The coinjoin payment feature only registers a payment, so if coinjoin is not running or the amount is lower than the wallet balance, the payment is queued.
+Currently the coinjoin coin selector does not take into account that a payment is registerd.
+Therefore, it is possible that the payment will not be executed due to insufficient and/or non-optimal coins being selected, even though there are sufficient funds available.
+
+Queued coinjoin payment or discarded when Wasabi shutsdown, or can be cancelled manually.
+
 ## Wasabi Coinjoin examples
 
 Here's a list of Wasabi coinjoin examples and how they appear on a block explorer:
