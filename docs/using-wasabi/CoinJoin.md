@@ -243,6 +243,18 @@ It is possible to make your own custom strategy by changing the settings manuall
 
 ![Coinjoin Strategy Settings](/CoinjoinStrategySettings.png "Coinjoin Strategy Settings")
 
+## Coinjoin payment
+
+Since Wasabi version x, it is possible to schedule a payment in a coinjoin in the GUI.
+
+This means that the payment will be made in a coinjoin, instead of having to do coinjoin and then make a single user payment.
+
+To schedule a payment, click the music box menu items and follow the steps, similar to the normal send workflow.
+
+![Music Box Menu Items](/MusicBoxMenuItems.png "Music Box Menu Items")
+
+![Coinjoin Payments Dialog](/CoinjoinPaymentsDialog.png "Coinjoin Payments dialog")
+
 ## Wasabi Coinjoin examples
 
 Here's a list of Wasabi coinjoin examples and how they appear on a block explorer:
