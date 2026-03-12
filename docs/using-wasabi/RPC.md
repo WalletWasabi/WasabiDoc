@@ -754,6 +754,8 @@ A _payincoinjoin_ is written to the logs and its status can be seen by using the
 Pending payments can be removed by using the _cancelpaymentincoinjoin_ method.
 Pending payments are also removed if the Wasabi client restarts.
 
+Read more [here](/using-wasabi/CoinJoin.html#coinjoin-payment).
+
 ### listpaymentsincoinjoin
 
 Lists the current payments in coinjoins.
