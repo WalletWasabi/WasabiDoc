@@ -358,6 +358,10 @@ Segregated Witness is a structure where the witness [signature or redeem script]
 This is separated because the witness contains only data concerning transaction validity, but not about transaction effect.
 Read more: [Why Wasabi uses only SegWit](/FAQ/FAQ-UseWasabi.md#why-does-wasabi-only-use-segwit-bech32-addresses)
 
+### Signet
+
+A Bitcoin test network, similar to TestNet, but with an additional signature requirement for block validation.
+
 ### Simplified Payment Verification (SPV)
 
 SPV is a method for verifying particular transactions were included in a block without downloading the entire block.

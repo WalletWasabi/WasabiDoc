@@ -558,7 +558,7 @@ This reduces the risk of a passive bystander being able to link two transactions
 
 ### What fee should I select?
 
-Wasabi fetches fee esimations from mempool.space (default), blockchain.info or block.xyz.
+Wasabi fetches fee esimations from mempool.space (default), blockstream.info or block.xyz.
 The lower the fee is, the longer the estimated wait; and the higher the fee, the faster the confirmation will come.
 There are several different confidence levels, each of them gives an educated guess how soon the transaction will confirm.
 But the provided time frames are only a rough estimation, and not at all a precise metric.
@@ -1363,6 +1363,16 @@ The RPC credential string can be the username & password, or the cookie file of 
 
 ![Settings Bitcoin RPC](/SettingsBitcoinRPC.png "Settings Bitcoin RPC")
 
+Or edit the following lines in the config file:
+
+```
+"UseBitcoinRpc": true,
+"BitcoinRpcCredentialString": "rpcuser:rpcpassword",
+"BitcoinRpcEndPoint": "http://127.0.0.1:8332/",
+```
+
+> _BitcoinRpcCredentialString_ can be also be the cookie file path ({bitcoindatadir}/.cookie), instead of user and password.
+
 The Bitcoin RPC status is shown in the bottom right corner status icon (the status icon displays a warning triangle in case the full node is not connected).
 
 ![Status Icon Bitcoin RPC](/StatusIconBitcoinRPC.png "Status Icon Bitcoin RPC")
@@ -1538,7 +1548,7 @@ This can be done by specifying the port(s) at startup with the [startup paramete
 By default, Wasabi fetches the exchange rate from mempool.space.
 
 The _Exchange Rate Provider_ can be set in the Settings at the _Connections_ tab.
-It can fetch the exchange rate from one of the following providers: mempool.space, blockchain.info, CoinGecko or Gemini.
+It can fetch the exchange rate from one of the following providers: mempool.space, blockstream.info, CoinGecko or Gemini.
 
 ## Silent Payments
 
