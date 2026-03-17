@@ -558,7 +558,7 @@ This reduces the risk of a passive bystander being able to link two transactions
 
 ### What fee should I select?
 
-Wasabi fetches fee esimations from mempool.space (default) or blockchain.info.
+Wasabi fetches fee esimations from mempool.space (default), blockchain.info or block.xyz.
 The lower the fee is, the longer the estimated wait; and the higher the fee, the faster the confirmation will come.
 There are several different confidence levels, each of them gives an educated guess how soon the transaction will confirm.
 But the provided time frames are only a rough estimation, and not at all a precise metric.
