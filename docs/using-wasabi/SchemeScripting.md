@@ -9,6 +9,12 @@
 
 [[toc]]
 
+:::danger
+This is an experimental feature.
+Only execute commands you understand.
+Commands can drain your funds and/or compromise your privacy.
+:::
+
 ## What it is
 
 The scripting language is an experimental feature that makes Wasabi programmable, queryable, and extensible.
