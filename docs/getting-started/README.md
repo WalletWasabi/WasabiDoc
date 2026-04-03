@@ -1,4 +1,4 @@
----
+-catalin--
 {
   "title": "Getting Started",
   "description": "An easy and short guide on how to get started using Wasabi Wallet. This is the Wasabi documentation, an archive of knowledge about the open-source, non-custodial and privacy-focused Bitcoin wallet for desktop."
