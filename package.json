@@ -49,7 +49,7 @@
     "node-forge": "^1.4.0",
     "nth-check": "^2.1.1",
     "postcss": "^8.4.31",
-    "vite": "^7.1.11"
+    "vite": "^7.3.2"
   },
   "resolutions": {
     "esbuild": "^0.19.12"
