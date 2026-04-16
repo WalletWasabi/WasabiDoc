@@ -123,11 +123,16 @@ Since Wasabi version [2.0.8](https://github.com/WalletWasabi/WalletWasabi/releas
 To make it work, Wasabi should be started with the `--UseTor=EnabledOnlyRunning` start up parameter or specify `"UseTor": "EnabledOnlyRunning"` in the config file.
 So Wasabi uses the existing Tor process, instead of starting a new one.
 
+> Since Wasabi version x, this gets automatically detected and set.
+
 ### Can I use Wasabi on Whonix?
 
 Since Wasabi version [2.0.8](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.0.8) it is possible to run Wasabi on Whonix.
 To make it work, Wasabi should be started with the `--UseTor=EnabledOnlyRunning` start up parameter or specify `"UseTor": "EnabledOnlyRunning"` in the config file.
 So Wasabi uses the existing Tor process, instead of starting a new one.
+
+> Since Wasabi version x, this gets automatically detected and set.
+
 
 ### What are the differences between the Debian/Ubuntu version and the "Other Linux" version?
 
