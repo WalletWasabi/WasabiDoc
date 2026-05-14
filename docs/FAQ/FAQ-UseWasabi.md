@@ -1047,7 +1047,7 @@ This is a temporary ban on your coins from participating with the coordinator.
 
 There are several ways to find a coordinator:
 
-- Users can do their own discovery with [Wasabi Nostr](https://github.com/Kukks/wasabinostr), a tool which reads Wabisabi coordinator announcements posted on Nostr relays.
+- Users can do their own discovery with tools like [Wasabi Nostr](https://github.com/Kukks/wasabinostr), which reads Wabisabi coordinator announcements posted on Nostr relays.
 - Public statistics websites, such as [Liquisabi](https://liquisabi.com).
 - A coordinator can advertise themselves, like on social media.
 - Run coordinators in your local community
