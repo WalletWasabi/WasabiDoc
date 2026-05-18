@@ -30,7 +30,7 @@
     "vuepress": "^2.0.0-rc.7"
   },
   "engines": {
-    "node": ">=18.16.0"
+    "node": ">=22.18.0"
   },
   "dependencies": {
     "@vue/component-compiler-utils": "^3.3.0",
