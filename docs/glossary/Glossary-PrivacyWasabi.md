@@ -97,7 +97,7 @@ Read more: [What is a coinjoin?](/FAQ/FAQ-Introduction.md#what-is-a-coinjoin)
 ### Coinjoin Strategy
 
 A _Coinjoin Strategy_ contains instructions for the automatic "coinjoin robot" about configurations like when and how much to coinjoin.
-Read more: [Coinjoin Strategy](/Using-Wasabi/CoinJoin.md#coinjoin-strategy)
+Read more: [Coinjoin Strategy](/using-wasabi/CoinJoin.md#coinjoin-strategy)
 
 ### Coinjoined coins
 

@@ -1,10 +1,10 @@
 import resolve from 'path'
 import { viteBundler } from '@vuepress/bundler-vite'
 import { defineUserConfig } from 'vuepress'
-import defaultTheme from '@vuepress/theme-default'
+import { defaultTheme } from '@vuepress/theme-default'
 import slugify from '@vuepress/shared-utils'
-import searchPlugin from '@vuepress/plugin-search'
-import palettePlugin from '@vuepress/plugin-palette'
+import { searchPlugin } from '@vuepress/plugin-search'
+import { palettePlugin } from '@vuepress/plugin-palette'
 
 
 const themeColor = "#211b24"
@@ -238,33 +238,6 @@ export default defineUserConfig({
         },
     }),
     plugins: [
-        "@vuepress/back-to-top", ["container", {
-            type: "details",
-            render(tokens, idx) {
-                const token = tokens[idx]
-                // turn details headline into summary
-                if (token.type === 'container_details_open') {
-                    const next = tokens[idx + 1]
-                    const match = token.info.trim().match(/^details\s+(.*)$/)
-                    let title = match && match[1]
-                    if (next.type === 'heading_open' && !title) {
-                        const headContent = tokens[idx + 2]
-                        const headClose = tokens[idx + 3]
-                        // hide headline and its contents
-                        next.hidden = headClose.hidden = headContent.hidden = true
-                        headContent.children = []
-                        // extract title
-                        title = headContent.content || ''
-                    } else {
-                        title = ''
-                    }
-                    const slug = slugify(title)
-                    return `<details id="${slug}"><summary><a href="#${slug}" aria-hidden="true" class="header-anchor">#</a> <h4>${title}</h4></summary>`
-                } else if (token.type === 'container_details_close') {
-                    return '</details>'
-                }
-            }
-        }],
         searchPlugin({
             // getExtraFields: (page) => page.frontmatter.tags,
             maxSuggestions: 15,
