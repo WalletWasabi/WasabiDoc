@@ -1,0 +1,1 @@
+var e=`/SendToField.png`,t=`/SendAmountField.png`,n=`/SendFeeSlider.png`,r=`/HistoryRightClick.png`;export{e as i,n,t as r,r as t};

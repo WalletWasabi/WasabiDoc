@@ -1,0 +1,1 @@
+var e=`/DownloadDeb.png`,t=`/DownloadTar.png`,n=`/DownloadWindows.png`,r=`/DownloadMac.png`;export{e as i,n,t as r,r as t};

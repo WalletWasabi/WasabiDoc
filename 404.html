@@ -3,35 +3,41 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="generator" content="VuePress 2.0.0-rc.7" />
+    <meta name="generator" content="VuePress 2.0.0-rc.30" />
     <style>
       :root {
-        --c-bg: #fff;
+        --vp-c-bg: #fff;
       }
-      html.dark {
-        --c-bg: #22272e;
+
+      [data-theme='dark'] {
+        --vp-c-bg: #1b1b1f;
       }
+
       html,
       body {
-        background-color: var(--c-bg);
+        background-color: var(--vp-c-bg);
       }
     </style>
     <script>
-      const userMode = localStorage.getItem('vuepress-color-scheme')
-      const systemDarkMode =
-        window.matchMedia &&
-        window.matchMedia('(prefers-color-scheme: dark)').matches
-      if (userMode === 'dark' || (userMode !== 'light' && systemDarkMode)) {
-        document.documentElement.classList.toggle('dark', true)
+      const useChoice = localStorage.getItem('vuepress-color-scheme')
+      const systemStatus =
+        'matchMedia' in window
+          ? window.matchMedia('(prefers-color-scheme: dark)').matches
+          : false
+
+      if (useChoice === 'light') {
+        document.documentElement.dataset.theme = 'light'
+      } else if (useChoice === 'dark' || systemStatus) {
+        document.documentElement.dataset.theme = 'dark'
       }
     </script>
     <title>Wasabi Docs</title><meta name="description" content="An archive of knowledge about Wasabi Wallet, an open-source, non-custodial and privacy-focused Bitcoin wallet for desktop.">
-    <link rel="preload" href="/assets/style-JnVFbNtO.css" as="style"><link rel="stylesheet" href="/assets/style-JnVFbNtO.css">
-    <link rel="modulepreload" href="/assets/app-BtbumPHc.js"><link rel="modulepreload" href="/assets/404.html-D_1yGcLm.js">
-    <link rel="prefetch" href="/assets/index.html-D1QjGH0T.js" as="script"><link rel="prefetch" href="/assets/FAQ-Contribution.html-B-M_mKQd.js" as="script"><link rel="prefetch" href="/assets/FAQ-GeneralBitcoinPrivacy.html-DJAqYJ4Y.js" as="script"><link rel="prefetch" href="/assets/FAQ-Installation.html-DtZVqsih.js" as="script"><link rel="prefetch" href="/assets/FAQ-Introduction.html-Bts12KHs.js" as="script"><link rel="prefetch" href="/assets/FAQ-UseWasabi.html-B1rdLxw7.js" as="script"><link rel="prefetch" href="/assets/index.html-D5Kfou7B.js" as="script"><link rel="prefetch" href="/assets/ContributionChecklist.html-Q2PkVVac.js" as="script"><link rel="prefetch" href="/assets/LICENSE.html-vXYva5jo.js" as="script"><link rel="prefetch" href="/assets/index.html-PWcajYs5.js" as="script"><link rel="prefetch" href="/assets/Security.html-50PhV9Aa.js" as="script"><link rel="prefetch" href="/assets/index.html-CmqQlO5p.js" as="script"><link rel="prefetch" href="/assets/Glossary-GeneralBitcoin.html-DqlI6Arr.js" as="script"><link rel="prefetch" href="/assets/Glossary-PrivacyWasabi.html-CjbDONrt.js" as="script"><link rel="prefetch" href="/assets/index.html-DzFA1gp3.js" as="script"><link rel="prefetch" href="/assets/BIPs.html-CvUBmYX7.js" as="script"><link rel="prefetch" href="/assets/BackupBestPractices.html-CyvQMDW5.js" as="script"><link rel="prefetch" href="/assets/BitcoinFullNode.html-DAC7xWr1.js" as="script"><link rel="prefetch" href="/assets/BuildSource.html-3xzpkp4y.js" as="script"><link rel="prefetch" href="/assets/ChangeCoins.html-BUoaHPZk.js" as="script"><link rel="prefetch" href="/assets/CoinJoin.html-gpFgUpV9.js" as="script"><link rel="prefetch" href="/assets/ColdWasabi.html-cTReUv9M.js" as="script"><link rel="prefetch" href="/assets/Daemon.html-Dc96jREo.js" as="script"><link rel="prefetch" href="/assets/DeterministicBuild.html-Bi0SM43P.js" as="script"><link rel="prefetch" href="/assets/DiscreetMode.html-DtgJrMdM.js" as="script"><link rel="prefetch" href="/assets/ELI5.html-BTE1s6Cg.js" as="script"><link rel="prefetch" href="/assets/ExternalRestore.html-B4vqwagh.js" as="script"><link rel="prefetch" href="/assets/InstallPackage.html-B5XSQ5wI.js" as="script"><link rel="prefetch" href="/assets/PasswordBestPractices.html-ykgnGPZ-.js" as="script"><link rel="prefetch" href="/assets/PayJoin.html-D314V9il.js" as="script"><link rel="prefetch" href="/assets/index.html-Cop1wVQ5.js" as="script"><link rel="prefetch" href="/assets/RPC.html-Dj7_J_4r.js" as="script"><link rel="prefetch" href="/assets/Receive.html-BBEoQm3m.js" as="script"><link rel="prefetch" href="/assets/Send.html-BOchDnpF.js" as="script"><link rel="prefetch" href="/assets/StartupParameters.html-DcRgNiYk.js" as="script"><link rel="prefetch" href="/assets/Testnet.html-CyA4sR_w.js" as="script"><link rel="prefetch" href="/assets/WalletGeneration.html-ClxN0qXh.js" as="script"><link rel="prefetch" href="/assets/WalletLoad.html-BOuJ2wKX.js" as="script"><link rel="prefetch" href="/assets/WalletRecovery.html-B-ZhtWds.js" as="script"><link rel="prefetch" href="/assets/WasabiSetupVM.html-_qCOCDZd.js" as="script"><link rel="prefetch" href="/assets/AddressReuse.html-DB4mUTvF.js" as="script"><link rel="prefetch" href="/assets/Coins.html-C_9RP3U-.js" as="script"><link rel="prefetch" href="/assets/NetworkLevelPrivacy.html-CElVJfPf.js" as="script"><link rel="prefetch" href="/assets/index.html-DVFSpKDM.js" as="script"><link rel="prefetch" href="/assets/TransactionGraph.html-JFWOTGoI.js" as="script"><link rel="prefetch" href="/assets/TransactionSurveillanceCompanies.html-ja3s8RyD.js" as="script"><link rel="prefetch" href="/assets/WhyFinancialPrivacy.html-C_aLZLlv.js" as="script"><link rel="prefetch" href="/assets/WhyPrivacyImportant.html-D9iWGEJX.js" as="script">
+    <link rel="preload" href="/assets/style-BJEQOJxQ.css" as="style"><link rel="stylesheet" href="/assets/style-BJEQOJxQ.css">
+    <link rel="modulepreload" href="/assets/app-O0PWUQPx.js"><link rel="modulepreload" href="/assets/404.html-WNKbdZZN.js">
+    <link rel="prefetch" href="/assets/README-DfGJUVXg.js" as="script"><link rel="prefetch" href="/assets/FAQ-Contribution-ro2dstyx.js" as="script"><link rel="prefetch" href="/assets/FAQ-GeneralBitcoinPrivacy-CcWyBXBL.js" as="script"><link rel="prefetch" href="/assets/FAQ-Installation-CG4C4oOa.js" as="script"><link rel="prefetch" href="/assets/FAQ-Introduction-C7Ck8igl.js" as="script"><link rel="prefetch" href="/assets/FAQ-UseWasabi-KADUF9LH.js" as="script"><link rel="prefetch" href="/assets/README-BKHxRxca.js" as="script"><link rel="prefetch" href="/assets/ContributionChecklist-CmdFt27t.js" as="script"><link rel="prefetch" href="/assets/LICENSE-CHkukEyP.js" as="script"><link rel="prefetch" href="/assets/README-IJScpTi2.js" as="script"><link rel="prefetch" href="/assets/Security-MwzidgmK.js" as="script"><link rel="prefetch" href="/assets/Glossary-GeneralBitcoin-Cub9yObN.js" as="script"><link rel="prefetch" href="/assets/Glossary-PrivacyWasabi-CYmd-soq.js" as="script"><link rel="prefetch" href="/assets/README-pkvxfAV7.js" as="script"><link rel="prefetch" href="/assets/README-BEpoz5GY.js" as="script"><link rel="prefetch" href="/assets/BIPs-Du1hKxZC.js" as="script"><link rel="prefetch" href="/assets/BackupBestPractices-C1GFjn5v.js" as="script"><link rel="prefetch" href="/assets/BitcoinFullNode-Ci6bxdr5.js" as="script"><link rel="prefetch" href="/assets/BuildSource-BhJ0MSOD.js" as="script"><link rel="prefetch" href="/assets/ChangeCoins--YPZ3IIz.js" as="script"><link rel="prefetch" href="/assets/CoinJoin-BdDQKCbm.js" as="script"><link rel="prefetch" href="/assets/ColdWasabi-2cdEc0Oo.js" as="script"><link rel="prefetch" href="/assets/Daemon-DFVe7g4s.js" as="script"><link rel="prefetch" href="/assets/DeterministicBuild-D7yFOMeh.js" as="script"><link rel="prefetch" href="/assets/DiscreetMode-DXoGvoz2.js" as="script"><link rel="prefetch" href="/assets/ELI5-BxUluO7y.js" as="script"><link rel="prefetch" href="/assets/ExternalRestore-Cf44zTMg.js" as="script"><link rel="prefetch" href="/assets/InstallPackage-CMsdDO-g.js" as="script"><link rel="prefetch" href="/assets/PasswordBestPractices-CBMnumxz.js" as="script"><link rel="prefetch" href="/assets/PayJoin-DljdYgLY.js" as="script"><link rel="prefetch" href="/assets/README-ClASMrnR.js" as="script"><link rel="prefetch" href="/assets/RPC-DRG7xbDK.js" as="script"><link rel="prefetch" href="/assets/Receive-BM7-QbA_.js" as="script"><link rel="prefetch" href="/assets/Send-Cd_eUovQ.js" as="script"><link rel="prefetch" href="/assets/StartupParameters-OBTcv603.js" as="script"><link rel="prefetch" href="/assets/Testnet-DC2r_TEj.js" as="script"><link rel="prefetch" href="/assets/WalletGeneration-DUciUdsW.js" as="script"><link rel="prefetch" href="/assets/WalletLoad-DPIR5Pfv.js" as="script"><link rel="prefetch" href="/assets/WalletRecovery-BfITNgtR.js" as="script"><link rel="prefetch" href="/assets/WasabiSetupVM-DDuxvdtH.js" as="script"><link rel="prefetch" href="/assets/AddressReuse-DZHJVk-G.js" as="script"><link rel="prefetch" href="/assets/Coins-BYhuU8h8.js" as="script"><link rel="prefetch" href="/assets/NetworkLevelPrivacy-BhSvnxp4.js" as="script"><link rel="prefetch" href="/assets/README-DFuHoWN1.js" as="script"><link rel="prefetch" href="/assets/TransactionGraph-a6Ck_QNl.js" as="script"><link rel="prefetch" href="/assets/TransactionSurveillanceCompanies-tJIqcoMB.js" as="script"><link rel="prefetch" href="/assets/WhyFinancialPrivacy-Le3EpVyx.js" as="script"><link rel="prefetch" href="/assets/WhyPrivacyImportant-Cmu5zgl-.js" as="script">
   </head>
   <body>
-    <div id="app"><!--[--><div class="theme-container"><main class="page"><div class="theme-default-content"><h1>404</h1><blockquote>How did we get here?</blockquote><a class="route-link" href="/">Take me home</a></div></main></div><!--[--><!----><!--]--><!--]--></div>
-    <script type="module" src="/assets/app-BtbumPHc.js" defer></script>
+    <div id="app"><!--[--><div class="vp-theme-container" vp-container data-v-3fac1c72><main class="page" data-v-3fac1c72><div vp-content data-v-3fac1c72><h1 data-v-3fac1c72>404</h1><blockquote data-v-3fac1c72>There&#39;s nothing here.</blockquote><a class="route-link" href="/" data-v-3fac1c72>Take me home</a></div></main></div><!--[--><!----><!--]--><!--]--></div>
+    <script type="module" src="/assets/app-O0PWUQPx.js" defer></script>
   </body>
 </html>

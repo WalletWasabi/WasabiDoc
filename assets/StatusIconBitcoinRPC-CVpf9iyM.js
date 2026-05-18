@@ -1,0 +1,1 @@
+var e=`/StatusIconBitcoinRPC.png`;export{e as t};

@@ -1,0 +1,1 @@
+var e=`/ReceiveLabelingRequired.png`,t=`/AddressAwaitingPayment.png`;export{e as n,t};

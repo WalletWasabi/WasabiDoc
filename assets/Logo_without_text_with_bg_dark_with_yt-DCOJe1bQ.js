@@ -1,0 +1,1 @@
+var e=`/Logo_without_text_with_bg_dark_with_yt.png`;export{e as t};

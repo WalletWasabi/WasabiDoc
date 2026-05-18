@@ -1,0 +1,1 @@
+var e=`/WalletSynchronizing.png`;export{e as t};
