@@ -245,7 +245,7 @@ It is possible to make your own custom strategy by changing the settings manuall
 
 ## Coinjoin payment
 
-Since Wasabi version x, it is possible to schedule a payment in a coinjoin in the GUI.
+Since Wasabi version [2.8.0](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.8.0), it is possible to schedule a payment in a coinjoin in the GUI.
 
 This means that the payment will be made in a coinjoin, instead of having to do coinjoin and then make a single user payment.
 
