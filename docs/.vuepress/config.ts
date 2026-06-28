@@ -192,7 +192,8 @@ export default defineUserConfig({
                     "/using-wasabi/Daemon.md",
                     "/using-wasabi/StartupParameters.md",
                     "/using-wasabi/RPC.md",
-                    "/using-wasabi/BIPs.md"
+                    "/using-wasabi/BIPs.md",
+                    "/using-wasabi/SchemeScripting.md"
                 ]
             }],
 
