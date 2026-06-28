@@ -247,7 +247,7 @@ It is possible to make your own custom strategy by changing the settings manuall
 
 Since Wasabi version [2.8.0](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.8.0), it is possible to schedule a payment in a coinjoin in the GUI.
 
-This means that the payment will be made in a coinjoin, instead of having to do coinjoin and then make a single user payment.
+This means that the payment will be made in a coinjoin, instead of having to coinjoin first and then make a single user payment.
 
 To schedule a payment, click the music box menu items and follow the steps, similar to the normal send workflow.
 
@@ -265,7 +265,7 @@ The coinjoin payment feature only registers a payment, so if coinjoin is not run
 Currently the coinjoin coin selector does not take into account that a payment is registerd.
 Therefore, it is possible that the payment will not be executed due to insufficient and/or non-optimal coins being selected, even though there are sufficient funds available.
 
-Queued coinjoin payments are removed when Wasabi restarts, or can be cancelled manually.
+> Queued coinjoin payments are removed when Wasabi restarts, or can be cancelled manually.
 
 ## Wasabi Coinjoin examples
 
