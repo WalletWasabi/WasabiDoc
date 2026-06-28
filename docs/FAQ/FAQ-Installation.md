@@ -119,15 +119,15 @@ When you broadcast a transaction over clearnet, the connected full node will kno
 
 ### Can I use Wasabi on Tails?
 
-Since Wasabi version [2.0.8](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.0.8) it is possible to run Wasabi on Tails.
-To make it work, Wasabi should be started with the `--UseTor=EnabledOnlyRunning` start up parameter or specify `"UseTor": "EnabledOnlyRunning"` in the config file.
-So Wasabi uses the existing Tor process, instead of starting a new one.
+Yes, Wasabi automatically detects if it is running on Tails and will use the already running system-wide Tor instance, instead of starting its own.
+
+On Wasabi version [2.7.2](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.7.2) and earlier, Wasabi should be started with the following startup parameter: `--UseTor=EnabledOnlyRunning`.
 
 ### Can I use Wasabi on Whonix?
 
-Since Wasabi version [2.0.8](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.0.8) it is possible to run Wasabi on Whonix.
-To make it work, Wasabi should be started with the `--UseTor=EnabledOnlyRunning` start up parameter or specify `"UseTor": "EnabledOnlyRunning"` in the config file.
-So Wasabi uses the existing Tor process, instead of starting a new one.
+Yes, Wasabi automatically detects if it is running on Whonix and will use the already running system-wide Tor instance, instead of starting its own.
+
+On Wasabi version [2.7.2](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.7.2) and earlier, Wasabi should be started with the following startup parameter: `--UseTor=EnabledOnlyRunning`.
 
 ### What are the differences between the Debian/Ubuntu version and the "Other Linux" version?
 
