@@ -44,7 +44,7 @@ Don't trust - Verify!
 
 2. Install Wasabi by double-clicking the `.msi` and following the GUI instructions.
 
-3. Make sure that you see this window that verifies the installer was signed by Lucas Ontivero.
+3. Make sure that you see this window that verifies the installer was signed by Lucas Ontivero (Wasabi maintainer).
 Manual PGP verification is optional, as the package is signed and verified automatically on Windows.
 
 Wasabi will be installed to your `C:\Program Files\WasabiWallet\` folder.
