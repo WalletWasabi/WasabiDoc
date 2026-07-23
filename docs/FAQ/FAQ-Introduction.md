@@ -67,12 +67,12 @@ However, to be on the safe side, with Wasabi Wallet 2.0 an anonymity score of 5 
 
 ### What software supplies the block filters that Wasabi uses?
 
-By default, Wasabi fetchers the block filters from the Bitcoin P2P network.
-
-If a node providing these filters were to misbehave, your wallet could display fewer funds than you actually control.
+By default, Wasabi fetches the block filters from the Bitcoin P2P network.
 
 Using the filters from the Bitcoin P2P network does not compromise the clients' privacy as it downloads the blocks from a random Bitcoin peer-to-peer node (or your own node), so the node serving the filters cannot spy on which blocks you are interested in.
 Furthermore, the random node will only know which block is needed but it does't know which transaction(s) belongs to the wallet.
+
+If a node providing these filters were to misbehave, your wallet could display fewer funds than you actually control.
 
 Prior to Wasabi version [2.8.0](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.8.0) Wasabi fetches the block filters from the indexer.
 But now the client is no longer dependent on a Wasabi backend for downloading filters to synchronize the wallet.
