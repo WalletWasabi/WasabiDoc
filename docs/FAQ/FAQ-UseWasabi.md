@@ -226,8 +226,6 @@ Wasabi supports Taproot.
 
 And since Wasabi version [2.8.1](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.8.1) Taproot addresses are the default.
 
-(Before that, the user could have Taproot coins from coinjoin or change outputs.)
-
 ## Synchronization
 
 ### What are BIP-158 block filters?
