@@ -40,7 +40,7 @@ This means that by default, all network communication is secured from outside sn
 
 Wasabi uses block filters, which do not compromise user privacy.
 Meaning that even without using a full node the user stays private.
-The Wasabi client fetches the block filters from the Bitcoin P2P network.
+The Wasabi client fetches the block filters from nodes from the Bitcoin P2P network.
 Then, users check locally if the block contains any transactions with their addresses.
 If not, then the filter is stored for later reference, and no block is downloaded.
 However, if there is a user transaction in that block, then Wasabi requests the block from a random Bitcoin P2P node.

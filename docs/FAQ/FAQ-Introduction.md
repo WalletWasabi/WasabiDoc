@@ -67,7 +67,7 @@ However, to be on the safe side, with Wasabi Wallet 2.0 an anonymity score of 5 
 
 ### What software supplies the block filters that Wasabi uses?
 
-By default, Wasabi fetches the block filters from the Bitcoin P2P network.
+By default, Wasabi fetches the block filters from nodes from the Bitcoin P2P network that can serve the filters.
 
 Using the filters from the Bitcoin P2P network does not compromise the clients' privacy as it downloads the blocks from a random Bitcoin peer-to-peer node (or your own node), so the node serving the filters cannot spy on which blocks you are interested in.
 Furthermore, the random node will only know which block is needed but it does't know which transaction(s) belongs to the wallet.
