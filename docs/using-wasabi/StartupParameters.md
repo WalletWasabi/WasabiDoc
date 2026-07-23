@@ -50,8 +50,11 @@ All configuration options available via the config files are also available as c
 | "MaxCoinJoinMiningFeeRate": 50.0 | --maxcoinjoinminingfeerate=50.0 | WASABI_MAXCOINJOINMININGFEERATE=50.0 |
 | "AbsoluteMinInputCount": 21 | --absolutemininputcount=21 | WASABI_ABSOLUTEMININPUTCOUNT=21 |
 | "MaxDaysInMempool": 30 | --dropunconfirmedtransactionsafterdays=30 | WASABI_DROPUNCONFIRMEDTRANSACTIONSAFTERDAYS=30 |
+| "ExperimentalFeatures": [] | --experimentalfeatures=<> | WASABI_EXPERIMENTALFEATURES=<> |
 
 _MaxDaysInMempool will only be listed in the config file after being changed from the default (30)._
+
+_Currently, the only available experimental feature is scripting._
 
 ### Non-Config file configurations
 
