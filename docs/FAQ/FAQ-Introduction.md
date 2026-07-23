@@ -67,18 +67,15 @@ However, to be on the safe side, with Wasabi Wallet 2.0 an anonymity score of 5 
 
 ### What software supplies the block filters that Wasabi uses?
 
-Wasabi can obtain block filters either from a Wasabi backend/indexer or directly from a Bitcoin node.
+By default, Wasabi fetches the block filters from the Bitcoin P2P network.
 
-By default, the Wasabi indexer serves filters to all clients.
-These filters are Wasabi specific (optimized and light-weight) and are not standard BIP 158 filters.
-When using the [Wasabi backend/indexer](https://github.com/WalletWasabi/WalletWasabi/tree/master/WalletWasabi.Backend) you trust it to provide valid filters.
-If the indexer were to misbehave or fail, your wallet could display fewer funds than you actually control.
-
-Using the filters from an indexer does not compromise the clients' privacy as it downloads the blocks from a random Bitcoin peer-to-peer node (or your own node), so the server cannot spy on which blocks you are interested in.
+Using the filters from the Bitcoin P2P network does not compromise the clients' privacy as it downloads the blocks from a random Bitcoin peer-to-peer node (or your own node), so the node serving the filters cannot spy on which blocks you are interested in.
 Furthermore, the random node will only know which block is needed but it does't know which transaction(s) belongs to the wallet.
 
-Since Wasabi version [2.6.0](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.6.0) Wasabi also works with a Bitcoin node that can supply standard BIP 158 block filters.
-This means that the client is no longer dependent on a Wasabi backend for downloading filters to synchronize the wallet.
+If a node providing these filters were to misbehave, your wallet could display fewer funds than you actually control.
+
+Prior to Wasabi version [2.8.0](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.8.0) Wasabi fetches the block filters from the indexer.
+But now the client is no longer dependent on a Wasabi backend for downloading filters to synchronize the wallet.
 
 ### Is the Backend's (Coordinator) code open-source?
 
