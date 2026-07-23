@@ -224,7 +224,7 @@ It also shows some information about the current coinjoin round.
 
 Wasabi supports Taproot.
 
-And since Wasabi version [2.2.0.0](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.2.0.0) it is possible to generate Taproot addresses in the GUI.
+And since Wasabi version [2.8.1](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.8.1) Taproot addresses are the default.
 
 (Before that, the user could have Taproot coins from coinjoin or change outputs.)
 
