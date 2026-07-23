@@ -29,7 +29,6 @@ All configuration options available via the config files are also available as c
 | Config File | Command Line | Environment variable |
 |---------|--------|----------------------|
 | `network` file | --network=testnet | WASABI_NETWORK=testnet |
-| "BackendUri": "https://api.wasabiwallet.io/" | --backenduri="https://api.wasabiwallet.io/" | WASABI_BACKENDURI="https://api.wasabiwallet.io/"|
 | "CoordinatorUri": "" | --coordinatoruri="" | WASABI_COORDINATORURI="" |
 | "UseTor": "Enabled" | --usetor=enabled | WASABI_USETOR=enabled |
 | "TerminateTorOnExit": false | --terminatetoronexit=false | WASABI_TERMINATETORONEXIT=false |
