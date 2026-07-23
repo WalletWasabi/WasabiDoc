@@ -54,7 +54,7 @@ All configuration options available via the config files are also available as c
 
 _MaxDaysInMempool will only be listed in the config file after being changed from the default (30)._
 
-_Experimental features available: scripting_
+_Currently, the only available experimental feature is scripting._
 
 ### Non-Config file configurations
 
