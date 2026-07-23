@@ -349,7 +349,7 @@ Wasabi uses [BIP 44 multi-account hierarchy for deterministic wallets](https://g
 ### How do I generate a new receiving address?
 
 You can generate a new address using the `Receive` button in the main view's top right corner.
-By default it returns a SegWit (bech32) address, the drop-down can be used to generate a Taproot (bech32m) address.
+By default it returns a Taproot (bech32m) address, the drop-down can be used to generate a SegWit (bech32) address.
 First you must set a label for it, so that you later know who knows that this address is yours.
 Be precise in the label of the observers who know this address is yours, as this is an important part of good [coin selection](/why-wasabi/Coins.md) privacy best practices.
 Do not write anything else on the label exept the name of the entities that know this address belongs to you.
