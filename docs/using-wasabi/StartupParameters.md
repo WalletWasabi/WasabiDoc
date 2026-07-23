@@ -34,7 +34,6 @@ All configuration options available via the config files are also available as c
 | "TerminateTorOnExit": false | --terminatetoronexit=false | WASABI_TERMINATETORONEXIT=false |
 | "TorBridges": "[TorBridge]" | --torbridges="[TorBridge]" | WASABI_TORBRIDGES="[TorBridge]" |
 | "DownloadNewVersion": true | --downloadnewversion=true | WASABI_DOWNLOADNEWVERSION=true |
-| "UseBitcoinRpc": true | --usebitcoinrpc=true | WASABI_USEBITCOINRPC=true |
 | "BitcoinRpcCredentialString": "rpcuser:rpcpassword" | --bitcoinrpccredentialstring="rpcuser:rpcpassword" | WASABI_BITCOINRPCCREDENTIALSTRING="rpcuser:rpcpassword" |
 | "BitcoinRpcEndpoint": "http://127.0.0.1:8333" | --bitcoinrpcendpoint="http://127.0.0.1:8333" | WASABI_BITCOINRPCENDPOINT="http://127.0.0.1:8333" |
 | "JsonRpcServerEnabled": true | --jsonrpcserverenabled=true | WASABI_JSONRPCSERVERENABLED=true |
