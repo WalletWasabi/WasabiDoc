@@ -26,7 +26,7 @@ Click the wallet you want to load, type in the passphrase and press `Open`.
 
 ### Filter download
 
-As soon as you start Wasabi, it connects to the Bitcoin P2P network with a new Tor identity and requests the BIP 157/158 block filters.
+As soon as you start Wasabi, it connects to the Bitcoin P2P network with a new Tor identity and requests the BIP 157/158 block filters from nodes that can serve them.
 At the first start, this can take a while because all filters need to be downloaded, but for the subsequent starts, this is faster as only the most recent filters are requested.
 
 ![Wallet is synchronizing itself with the Bitcoin network](/WalletSynchronizing.png "Wallet is synchronizing itself with the Bitcoin network")
