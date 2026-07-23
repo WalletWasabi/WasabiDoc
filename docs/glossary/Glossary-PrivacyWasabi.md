@@ -39,7 +39,7 @@ Read more: [What is the anonymity set?](/FAQ/FAQ-UseWasabi.md#what-is-the-anonym
 ### Backend
 
 [The part of a software system that is not usually visible or accessible to a user of that system](https://www.merriam-webster.com/dictionary/back%20end).
-In the case of Wasabi, the backend (indexer) provides the block filters to the [client](/glossary/Glossary-PrivacyWasabi.md#Client).
+In the case of Wasabi, the backend (indexer) used to provide the block filters to the [client](/glossary/Glossary-PrivacyWasabi.md#Client).
 
 ### Block filters
 
@@ -75,7 +75,6 @@ Read more: [Use of blind signatures in coinjoin](/using-wasabi/CoinJoin.md#zerol
 
 [A software that allows a computer to function as a client in a network](https://www.merriam-webster.com/dictionary/client).
 In the case of Wasabi, the client is a Wasabi Wallet software version which a user has on his own local machine.
-The client can communicate with the [backend](/glossary/Glossary-PrivacyWasabi.md#Backend).
 
 ### Cluster
 
