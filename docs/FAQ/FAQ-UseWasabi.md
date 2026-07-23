@@ -1583,9 +1583,7 @@ Soon, Wasabi will be able to _receive_ Silent Payments too.
 
 ### Why Wasabi doesn’t support receiving Silent Payments?
 
-Receiving Silent Payments is a complex engineering problem. 
-Additional information (called the tweaks) have to be computed by the server and sent to clients for each block, along with the filters. 
-This creates more load on both the client and the backend (indexer), and Wasabi is a software with a lot of users! 
-We need to be sure that the feature is fully ready and won’t endanger stability of classic wallet functionalities.
+Receiving Silent Payments is a complex engineering problem.
+Due to Wasabi's current default sync mechanism (filters from the P2P network) Silent Payments are not possible.
 
-The work is ongoing and this feature should be available in an up-to-come release.
+Maybe in the future there is a way for users (using their own node) to receive Silent Payments.
