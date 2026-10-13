@@ -37,18 +37,18 @@ jobs:
         run: |
           gh pr create --base master --head update-version-branch --title "Update version to ${{ github.event.client_payload.new_version }}" --body "Auto-update version to ${{ github.event.client_payload.new_version }}."
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.VERSION_UPDATE_TOKEN }}
 
       - name: Merge Pull Request with Admin Privileges
         run: |
           gh pr merge update-version-branch --admin --squash --delete-branch
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.VERSION_UPDATE_TOKEN }}
 
       - name: Trigger Deployment
         run: |
           curl -X POST \
-          -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+          -H "Authorization: token ${{ secrets.VERSION_UPDATE_TOKEN }}" \
           -H "Accept: application/vnd.github.v3+json" \
           https://api.github.com/repos/${{ github.repository }}/dispatches \
           -d '{"event_type":"deploy-to-pages"}'
