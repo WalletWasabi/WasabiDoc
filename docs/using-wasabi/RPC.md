@@ -57,7 +57,7 @@ curl -s --data-binary "{ \"jsonrpc\":\"2.0\",\"id\":\"1\",\"method\":\"getwallet
 
 ## Available methods
 
-The current version handles the following methods: `getstatus`, `createwallet`, `recoverwallet`, `listwallets`, `loadwallet`, `listcoins`, `listunspentcoins`, `getwalletinfo`, `getnewaddress`, `send`, `build`, `broadcast`, `speeduptransaction`, `canceltransaction`, `gethistory`, `getfeerates`, `listkeys`, `excludefromcoinjoin`, `startcoinjoin`, `payincoinjoin`, `listpaymentsincoinjoin`, `cancelpaymentincoinjoin`, `startcoinjoinsweep`, `stopcoinjoin`, `buildunsafetransaction`, and `stop`.
+The current version handles the following methods: `getstatus`, `createwallet`, `recoverwallet`, `listwallets`, `loadwallet`, `listcoins`, `listunspentcoins`, `getwalletinfo`, `getnewaddress`, `send`, `build`, `broadcast`, `speeduptransaction`, `canceltransaction`, `gethistory`, `getfeerates`, `listkeys`, `setlabel`, `excludefromcoinjoin`, `startcoinjoin`, `payincoinjoin`, `listpaymentsincoinjoin`, `cancelpaymentincoinjoin`, `startcoinjoinsweep`, `stopcoinjoin`, `buildunsafetransaction`, and `stop`.
 
 For certain methods, the RPC call may not require the passphrase whereas a similar action in the GUI does require it. 
 This difference is because the RPC call can use the clear text wallet file, which does not require the passphrase to access. 
@@ -688,6 +688,37 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"listkeys"}' http://12
 
 ```bash
 curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"listkeys"}' http://127.0.0.1:37128/WalletName | jq '.result[] | select(.keyState == 1 and .internal == true)'
+```
+
+### setlabel
+
+Replaces the label of one of the wallet's own addresses, and so of the coins on it.
+
+```bash
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"setlabel","params":["tb1qdskc4y529ayqkqrddknnhdjqwnqc9wzl8940pn", "Daniel, Alice"]}' http://127.0.0.1:37128/WalletName | jq
+```
+
+```json
+{
+  "jsonrpc": "2.0",
+  "id": "1"
+}
+```
+
+The first parameter is the address, the second parameter is the label(s). Labels are separated by commas and stored trimmed, deduplicated and sorted, as _listkeys_ shows them.
+A label is required, like for _getnewaddress_, because an unused address without a label goes back into the pool of addresses that _getnewaddress_ hands out.
+
+In case the address is not the wallet's:
+
+```json
+{
+  "jsonrpc": "2.0",
+  "error": {
+    "code": -32603,
+    "message": "Address tb1qdskc4y529ayqkqrddknnhdjqwnqc9wzl8940pn does not belong to the wallet."
+  },
+  "id": "1"
+}
 ```
 
 ### excludefromcoinjoin
