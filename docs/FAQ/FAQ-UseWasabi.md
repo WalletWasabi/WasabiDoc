@@ -277,8 +277,10 @@ If you shutdown your computer or kill Wasabi while a wallet is synchronizing the
 ### How do I resync (rescan) my wallet?
 
 Since Wasabi version [2.5.0](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.5.0) there is a _Resync Wallet_ button at the _Tools_ tab at _Wallet Settings_.
+Optionally, you can specify a block height to resync from, and since Wasabi version [2.8.4](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.8.4) you can also raise the gap limit there, to find funds on addresses beyond the current range.
+Wasabi restarts and synchronizes the wallet again.
 
-You can rescan an existing Wasabi wallet manually by editing the `Height` in the wallet file.
+You can also rescan an existing Wasabi wallet manually by editing the `Height` in the wallet file.
 
 - Start Wasabi.
 - Type `Wallet Folder` in the search bar and open it.
@@ -311,7 +313,7 @@ For example if the problem happened 3 days ago then you can go back a week or so
 :::
 
 :::tip
-If you are doing a re-synchronization because you expect some missing funds, but after resync you still think your balance is not correct then try to increase the [gap limit](/FAQ/FAQ-UseWasabi.md#how-do-i-change-the-gap-limit-of-a-wallet) of the wallet.
+If you are doing a re-synchronization because you expect some missing funds, but after resync you still think your balance is not correct then resync again with a higher [gap limit](/FAQ/FAQ-UseWasabi.md#how-do-i-change-the-gap-limit-of-a-wallet).
 :::
 
 ### Can Wasabi work with a pruned bitcoin node?
@@ -376,7 +378,11 @@ When you import the wallet file into a new Wasabi client, then it will use this 
 
 ### How do I change the gap limit of a wallet?
 
-You can change the gap limit of an already existing Wasabi wallet by editing the wallet file.
+Since Wasabi version [2.8.4](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.8.4) you can raise the gap limit of an existing wallet with the _Resync Wallet_ tool at the _Tools_ tab at _Wallet Settings_.
+Enter the new gap limit in the optional field, and Wasabi restarts and rescans the wallet with it.
+When recovering a wallet, the gap limit can be set in the [Advanced Recovery Options](/using-wasabi/WalletRecovery.md).
+
+You can also change the gap limit of an already existing Wasabi wallet by editing the wallet file.
 Open the wallet folder by typing `Wallet Folder` in the search bar.
 Then, open the wallet file in your favourite text editor.
 
@@ -1280,7 +1286,7 @@ For the complete list of all the officially supported hardware wallets, click [h
 
 ### Can I use BitBox with Wasabi?
 
-Yes, since Wasabi version [2.0.7](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.0.7) BitBox02-BtcOnly is supported.
+Yes, since Wasabi version [2.0.7](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.0.7) BitBox02-BtcOnly is supported, and since Wasabi version [2.8.4](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.8.4) the BitBox02 Nova as well.
 
 The device by default asks for a "Pairing code", currently, there is no such function in Wasabi. 
 Therefore, either disable the feature or unlock the device with BitBoxApp or hwi-qt before using it with Wasabi.
@@ -1429,6 +1435,12 @@ In the SearchBar you can see there are several logs available.
 ![Wasabi Wallet SearchBar Help&Support and Open](/SearchBarHelpSupportOpen.png "Wasabi Wallet SearchBar Help&Support & Open")
 
 Alternatively, you can find the logs inside your [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder).
+
+### What if Wasabi says it cannot read its settings?
+
+Since Wasabi version [2.8.4](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.8.4) a `Config.json` that exists but cannot be read, for example after a typo while editing it, is never overwritten.
+Wasabi stops, reports which file cannot be read and why, and writes a `Config.Default.json` with the default settings next to it.
+Fix the file and start Wasabi again, or replace `Config.json` with `Config.Default.json` to start with the default settings.
 
 ### How to activate/deactivate discreet mode?
 
