@@ -1436,7 +1436,7 @@ In the SearchBar you can see there are several logs available.
 
 Alternatively, you can find the logs inside your [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder).
 
-### What if Wasabi says it cannot read its settings?
+### What if Wasabi fails to load the config file?
 
 Since Wasabi version [2.8.4](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.8.4) a `Config.json` that exists but cannot be read, for example after a typo while editing it, is never overwritten.
 Wasabi stops, reports which file cannot be read and why, and writes a `Config.Default.json` with the default settings next to it.
