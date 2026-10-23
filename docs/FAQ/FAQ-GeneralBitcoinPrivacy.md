@@ -124,6 +124,7 @@ A better name would be something like "bitcoin invoice".
 
 Bitcoin isn't anonymous but pseudonymous, and the pseudonyms are bitcoin addresses.
 Avoiding address reuse is like throwing away a pseudonym after it has been used.
+You can read more about the privacy consequences of address reuse [here](https://www.learnbitcoin.com/rabbit-hole/address-reuse).
 
 ### What is a coinjoin Sudoku?
 
