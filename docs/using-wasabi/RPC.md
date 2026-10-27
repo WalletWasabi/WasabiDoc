@@ -705,21 +705,8 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"setlabel","params":["
 }
 ```
 
-The first parameter is the address, the second parameter is the label(s). Labels are separated by commas and stored trimmed, deduplicated and sorted, as _listkeys_ shows them.
+The first parameter is the address, the second parameter is the label(s).
 A label is required, like for _getnewaddress_, because an unused address without a label goes back into the pool of addresses that _getnewaddress_ hands out.
-
-In case the address is not the wallet's:
-
-```json
-{
-  "jsonrpc": "2.0",
-  "error": {
-    "code": -32603,
-    "message": "Address tb1qdskc4y529ayqkqrddknnhdjqwnqc9wzl8940pn does not belong to the wallet."
-  },
-  "id": "1"
-}
-```
 
 ### excludefromcoinjoin
 
