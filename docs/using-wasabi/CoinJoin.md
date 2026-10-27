@@ -261,8 +261,8 @@ It is not possible to use a Silent Payment address as the destination for a _pay
 The default maximum is 4 payments per client per coinjoin.
 
 The coinjoin payment feature only registers a payment, so if coinjoin is not running or the amount is lower than the wallet balance, the payment is queued.
-Currently the coinjoin coin selector does not take into account that a payment is registerd.
-Therefore, it is possible that the payment will not be executed due to insufficient and/or non-optimal coins being selected, even though there are sufficient funds available.
+Since Wasabi version [2.8.5](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.8.5) the coinjoin coin selector takes into account the queued payments when selecting coins.
+In prior versions, it is possible that the payment will not be executed due to insufficient and/or non-optimal coins being selected, even though there are sufficient funds available.
 
 > Queued coinjoin payments are removed when Wasabi restarts, or can be cancelled manually.
 
