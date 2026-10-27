@@ -692,7 +692,7 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"listkeys"}' http://12
 
 ### setlabel
 
-Replaces the label of one of the wallet's own addresses, and so of the coins on it.
+Replaces the label of the specified wallet's own address, and so of the coins on it (if any).
 
 ```bash
 curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"setlabel","params":["tb1qdskc4y529ayqkqrddknnhdjqwnqc9wzl8940pn", "Daniel, Alice"]}' http://127.0.0.1:37128/WalletName | jq
