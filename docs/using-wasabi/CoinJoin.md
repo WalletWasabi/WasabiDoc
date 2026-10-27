@@ -268,6 +268,8 @@ In prior versions, it is possible that the payment will not be executed due to i
 
 > The Wasabi client enforces a minimum of 10 000 sats for a coinjoin payment.
 
+> The _Wallet Settings_ contains a toggle to only use private funds for coinjoin payments (disabled by default).
+
 ## Wasabi Coinjoin examples
 
 Here's a list of Wasabi coinjoin examples and how they appear on a block explorer:
