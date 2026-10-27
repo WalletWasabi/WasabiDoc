@@ -266,6 +266,8 @@ Therefore, it is possible that the payment will not be executed due to insuffici
 
 > Queued coinjoin payments are removed when Wasabi restarts, or can be cancelled manually.
 
+> The Wasabi client enforces a minimum of 10 000 sats for a coinjoin payment.
+
 ## Wasabi Coinjoin examples
 
 Here's a list of Wasabi coinjoin examples and how they appear on a block explorer:
