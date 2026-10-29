@@ -52,7 +52,6 @@ You can also use the `Advanced Recovery Options` to specify the gap limit or bir
 The gap limit is about how far Wasabi will check the HD wallet structure for consecutive addresses that have no coins, in some cases, you may want to increase this limit.
 The birth height refers to the Bitcoin block height from which Wasabi starts scanning the blockchain for your wallet's transactions.
 
-
 ![Wasabi Wallet Recovery Advanced](/WalletRecoveryAdvanced.png "Wasabi Wallet Recovery Advanced")
 
 :::tip
