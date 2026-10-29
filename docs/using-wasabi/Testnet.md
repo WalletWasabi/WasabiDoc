@@ -61,6 +61,7 @@ Notice that testnet SegWit addresses start with `tb1q...`, and not with `bc1q...
 
 Because testnet bitcoin don't have economical value, they are gifted by different sources.
 There are faucets like [this one](https://faucet.testnet4.dev/) or [https://coinfaucet.eu/en/btc-testnet4/](https://coinfaucet.eu/en/btc-testnet4/).
+If you need more testnet4 coins than a faucet gives out, they can also be obtained on [AltQuick](https://altquick.com/market/bitcoin-testnet4-bitcoin/).
 You may also ask other developers if they have a couple of spare testnet coins available.
 
 ## Coinjoin on testnet
