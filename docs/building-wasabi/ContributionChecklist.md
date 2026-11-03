@@ -31,18 +31,11 @@ All such contributions are very welcomed and greatly appreciated.
 
 ## Say hello and get started
 
-- Join our [Slack](https://join.slack.com/t/tumblebit/shared_invite/enQtNjQ1MTQ2NzQ1ODI0LWIzOTg5YTM3YmNkOTg1NjZmZTQ3NmM1OTAzYmQyYzk1M2M0MTdlZDk2OTQwNzFiNTg1ZmExNzM0NjgzY2M0Yzg) and especially check out our [GitHub repository](https://github.com/zkSnacks/WalletWasabi).
+- Join our [Slack](https://join.slack.com/t/tumblebit/shared_invite/enQtNjQ1MTQ2NzQ1ODI0LWIzOTg5YTM3YmNkOTg1NjZmZTQ3NmM1OTAzYmQyYzk1M2M0MTdlZDk2OTQwNzFiNTg1ZmExNzM0NjgzY2M0Yzg) and especially check out our [GitHub repository](https://github.com/WalletWasabi/WalletWasabi).
 - Introduce yourself, say a bit about your skills and interests.
 This will help others point you in the right direction.
 - Explore the communication channels and find out what the peers are tinkering on, learn about the project and who is contributing in what way.
 This will help you to find the interesting challenges you can work on.
-- Wasabi Research Club is a weekly online call, focused mainly on Bitcoin privacy.
-Everyone is welcome to join the discussions. 
-However, being familiar with the topic (if there is any) is recommended.
-
-Discussions might be recorded and published on the Wasabi Wallet [YouTube channel](https://www.youtube.com/c/wasabiwallet).
-
-You can find the schedule, call link, past recordings and more at the [Wasabi Research Club repository](https://github.com/zkSNACKs/WasabiResearchClub/).
 
 ## Learn how Wasabikas work
 
@@ -67,19 +60,14 @@ You can create wallet tutorials, record insightful discussions, write articles o
 2. **Organizing events and doing presentations** about Wasabi Wallet and Bitcoin privacy.
 Connecting like-minded individuals, who want to take control of their own financial privacy and teaching them about the awesome tools that are available, can be life changing.
 3. **Helping and teaching new users**, once you are familiar with the software, is something that can't be underestimated.
-You can do this in any social media like Twitter, Telegram, Reddit etc or in your own neighborhood.
-
-:::tip [zkSNACKs Ltd.](https://zksnacks.com/) is known for compensating educators who consistently help out new users or create good content. 
-The company is actively sponsoring Bitcoin events and organizing [Contribution Games](https://blog.wasabiwallet.io/coming-soon-contribution-games/).
-In case you have been contributing already, feel free to let other Wasabikas know by sending us a link to your content in [Slack](https://join.slack.com/t/tumblebit/shared_invite/enQtNjQ1MTQ2NzQ1ODI0LWIzOTg5YTM3YmNkOTg1NjZmZTQ3NmM1OTAzYmQyYzk1M2M0MTdlZDk2OTQwNzFiNTg1ZmExNzM0NjgzY2M0Yzg).
-:::
+You can do this in any social media like X, Telegram, Reddit etc or in your own neighborhood.
 
 ### GitHub Contributor
 
 1. **Find a problem somewhere in Wasabi-land** that (a) needs fixing or improvement and (b) is a match for your skills and interests.
-Browse [open issues](https://github.com/zksnacks/walletwasabi/issues) and ask around about what other contributors think needs fixing.
+Browse [open issues](https://github.com/WalletWasabi/walletwasabi/issues) and ask around about what other contributors think needs fixing.
 Because while you don’t need anybody’s permission and you can work on whatever you want, you’ll want to know up front whether anybody else is going to care about the work you do.
-2. **Do work to fix that problem.** Submit your fix for review with a pull request (for [code](https://github.com/zkSNACKs/WalletWasabi/pulls?q=is%3Apr+is%3Aopen+sort%3Aupdated-desc) and [documentation](https://github.com/zkSNACKs/WasabiDoc/pulls) changes) or with a GitHub [issue](https://github.com/zksnacks/walletwasabi/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc) (for everything else).
+2. **Do work to fix that problem.** Submit your fix for review with a pull request (for [code](https://github.com/WalletWasabi/WalletWasabi/pulls?q=is%3Apr+is%3Aopen+sort%3Aupdated-desc) and [documentation](https://github.com/WalletWasabi/WasabiDoc/pulls) changes) or with a GitHub [issue](https://github.com/WalletWasabi/walletwasabi/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc) (for everything else).
 3. **Request that others review your work.** The best way to do this is by writing good commit comments and pull request/issue descriptions that clearly explain the problem your work is intended to solve, why it’s important, and why you fixed it the way you did.
 Make it as easy as possible for others to review your work. Make it a *pleasure* for others to review your work.
 4. **Incorporate review feedback** you get until your fix gets merged or is otherwise accepted.

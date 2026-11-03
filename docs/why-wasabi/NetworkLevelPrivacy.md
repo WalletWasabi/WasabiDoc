@@ -32,28 +32,23 @@ When the user sends the extended public key or a filter of all the addresses to 
 
 ## Wasabi's solution
 
-### Full node by default & block filters over Tor
+### Block filters over Tor
 
 Wasabi checks if there is a local Tor instance installed, and if so, it uses this to onion-route all the traffic to and from the network.
 If Tor is not already installed, then it is accessed automatically from within Wasabi.
 This means that by default, all network communication is secured from outside snooping and the IP address is hidden.
 
-In order to fully verify everything, running a full node is essential.
-If [bitcoind](https://github.com/bitcoin/bitcoin) is installed and run on the same computer as Wasabi, then it will automatically and by default connect to the full node.
-It is also possible to connect Wasabi to a remote full node on another computer by specifying the local IP address or Tor onion service in the settings.
-Then, Wasabi pulls the verified blocks and queries the mempool from the full node.
-
-:::tip Wasabi ships with Bitcoin Knots!
-Wasabi has a [partial Bitcoin Knots integration](/using-wasabi/BitcoinFullNode.md).
-This means that it is possible (but not mandatory) to start Bitcoin Knots during the launch of Wasabi, without having to install or configure anything manually.
-:::
-
-However, even if no full node is installed, Wasabi has a light client mode based on [BIP 158 block filters](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki).
-The Wasabi server sends a filter of all the transactions in each block to all the users.
+Wasabi uses block filters, which do not compromise user privacy.
+Meaning that even without using a full node the user stays private.
+The Wasabi client fetches the block filters from nodes from the Bitcoin P2P network.
 Then, users check locally if the block contains any transactions with their addresses.
 If not, then the filter is stored for later reference, and no block is downloaded.
-However, if there is a user transaction in that block, then Wasabi connects to a random Bitcoin P2P node over Tor and asks for this entire block, not only one transaction.
-This block request is indistinguishable from the regular P2P gossip, and thus nobody, neither the server nor the full node, know which addresses belong to the user.
+However, if there is a user transaction in that block, then Wasabi requests the block from a random Bitcoin P2P node.
+This block request is indistinguishable from the regular P2P gossip.
+
+In order to fully verify everything, running a full node is essential.
+Wasabi can connect to a full node using the RPC interface.
+If connected, Wasabi fetches the blocks and [other data](/using-wasabi/BitcoinFullNode.md#how-does-wasabi-use-your-bitcoin-full-node) from the node.
 
 :::tip Privacy by default!
 Wasabi has network-level privacy as good as a Bitcoin full node.
@@ -103,8 +98,8 @@ It is reasonable to assume that this entity can break the onion routing, not Tor
 
 #### Private UTXO retrieval
 
-The backend server serves block filters to all the clients over Tor.
-From those filters, the clients figure out which blocks they are interested in and download them [and some false positive blocks] from peers.
+The Bitcoin P2P network serves block filters to all the clients over Tor.
+From those filters, the clients figure out which blocks they are interested in and download them (and some false positive blocks) from peers.
 One block per peer, and always over a fresh Tor stream.
 When a block is acquired, the peer gets disconnected.
 Because of the end-to-end encryption of the onion network, it immediately defeats an ISP adversary and makes the already impossible job of the Sybil adversary even more impossible.
@@ -128,19 +123,19 @@ Wasabi broadcast transactions to only one peer over Tor, and immediately after t
 
 ### Wasabi Wallet + full node
 
-:::tip
-Wasabi has a partial Bitcoin Knots integration.
-This means that it is possible (but not mandatory) to start Bitcoin Knots during the launch of Wasabi, without having to install or configure anything manually.
-:::
+Wasabi can connect to a specified node using the Bitcoin RPC interface.
 
 #### Private UTXO retrieval
 
-If you have a listening full node running in the background (not only Bitcoin Core, any full node) then Wasabi automatically picks it up and instead of asking peers for blocks, it asks for blocks from your own node.
+If a specific node is connected, Wasabi will fetch the blocks from this node.
 Using Wasabi this way results in the same privacy model as Bitcoin Core's, regarding Private UTXO Retrieval.
 
 #### Private transaction broadcasting
 
-Even when Wasabi is connected to your own node, it will broadcast the transaction in the above-described way: to one new peer over Tor.
+Wasabi will first try to broadcast a transaction to the connected full node. 
+If the node is not available it will broadcast to the Bitcoin P2P network or an external site, over Tor.
+
+Read more [here](/FAQ/FAQ-UseWasabi.md#how-is-the-transaction-broadcast).
 
 ## Universal Attacks
 

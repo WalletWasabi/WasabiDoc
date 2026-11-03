@@ -7,4 +7,4 @@
 
 # Deterministic Build
 
-The guide for the deterministic builds can be found in the [WalletWasabi repository](https://github.com/zkSNACKs/WalletWasabi/blob/master/WalletWasabi.Documentation/Guides/DeterministicBuildGuide.md).
+The guide for the deterministic builds can be found in the [WalletWasabi repository](https://github.com/WalletWasabi/WalletWasabi/blob/master/WalletWasabi.Documentation/Guides/DeterministicBuildGuide.md).

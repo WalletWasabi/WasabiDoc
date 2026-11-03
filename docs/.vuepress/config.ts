@@ -1,10 +1,10 @@
 import resolve from 'path'
 import { viteBundler } from '@vuepress/bundler-vite'
 import { defineUserConfig } from 'vuepress'
-import defaultTheme from '@vuepress/theme-default'
+import { defaultTheme } from '@vuepress/theme-default'
 import slugify from '@vuepress/shared-utils'
-import searchPlugin from '@vuepress/plugin-search'
-import palettePlugin from '@vuepress/plugin-palette'
+import { searchPlugin } from '@vuepress/plugin-search'
+import { palettePlugin } from '@vuepress/plugin-palette'
 
 
 const themeColor = "#211b24"
@@ -17,8 +17,8 @@ export default defineUserConfig({
         const render = md.renderer.render;
 
         const variables = {
-            currentVersion: '2.0.6',
-            dotnetVersion: '8.0',
+            currentVersion: '2.8.5',
+            dotnetVersion: '10.0',
             zksnacksPublicKeyFingerprint: '6FB3 872B 5D42 292F 5992 0797 8563 4832 8949 861E'
         }
 
@@ -36,7 +36,7 @@ export default defineUserConfig({
     theme: defaultTheme({
         logo: "/Logo_without_text_dark.png",
         logoDark: "/Logo_without_text.png",
-        docsRepo: 'https://github.com/zkSNACKs/WasabiDoc',
+        docsRepo: 'https://github.com/WalletWasabi/WasabiDoc',
         docsBranch: 'master',
         docsDir: 'docs',
         editLinks: true,
@@ -113,8 +113,7 @@ export default defineUserConfig({
                 sidebarDepth: 2,
                 children: [
                     "/why-wasabi/WhyPrivacyImportant.md",
-                    "/why-wasabi/WhyFinancialPrivacy.md",
-                    "/why-wasabi/LegalConcern.md"
+                    "/why-wasabi/WhyFinancialPrivacy.md"
                 ]
             }, {
                 text: "Privacy in Bitcoin",
@@ -171,8 +170,7 @@ export default defineUserConfig({
                 sidebarDepth: 2,
                 children: [
                     "/using-wasabi/WalletRecovery.md",
-                    "/using-wasabi/RestoreElectrum.md",
-                    "/using-wasabi/PasswordFinder.md"
+                    "/using-wasabi/ExternalRestore.md"
                 ]
             }, {
                 text: "Advanced Installing Wasabi",
@@ -194,7 +192,8 @@ export default defineUserConfig({
                     "/using-wasabi/Daemon.md",
                     "/using-wasabi/StartupParameters.md",
                     "/using-wasabi/RPC.md",
-                    "/using-wasabi/BIPs.md"
+                    "/using-wasabi/BIPs.md",
+                    "/using-wasabi/SchemeScripting.md"
                 ]
             }],
 
@@ -240,33 +239,6 @@ export default defineUserConfig({
         },
     }),
     plugins: [
-        "@vuepress/back-to-top", ["container", {
-            type: "details",
-            render(tokens, idx) {
-                const token = tokens[idx]
-                // turn details headline into summary
-                if (token.type === 'container_details_open') {
-                    const next = tokens[idx + 1]
-                    const match = token.info.trim().match(/^details\s+(.*)$/)
-                    let title = match && match[1]
-                    if (next.type === 'heading_open' && !title) {
-                        const headContent = tokens[idx + 2]
-                        const headClose = tokens[idx + 3]
-                        // hide headline and its contents
-                        next.hidden = headClose.hidden = headContent.hidden = true
-                        headContent.children = []
-                        // extract title
-                        title = headContent.content || ''
-                    } else {
-                        title = ''
-                    }
-                    const slug = slugify(title)
-                    return `<details id="${slug}"><summary><a href="#${slug}" aria-hidden="true" class="header-anchor">#</a> <h4>${title}</h4></summary>`
-                } else if (token.type === 'container_details_close') {
-                    return '</details>'
-                }
-            }
-        }],
         searchPlugin({
             // getExtraFields: (page) => page.frontmatter.tags,
             maxSuggestions: 15,

@@ -14,7 +14,7 @@ There are two different ways that you can recover an already used wallet in Wasa
 ## Mnemonic Recovery Words and Password
 
 Wasabi uses the [BIP 39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) mnemonic code for generating [BIP 32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) hierarchical deterministic wallets.
-**Both** your password **and** the generated 12 mnemonic recovery words are the necessary secrets to recover your wallet.
+**Both** your passphrase **and** the generated 12 mnemonic recovery words are the necessary secrets to recover your wallet.
 The recovery words are spell checked based on the [official wordlist](https://github.com/bitcoin/bips/blob/master/bip-0039/english.txt), with the right word shown below the text box.
 
 To recover a wallet:
@@ -35,21 +35,22 @@ To recover a wallet:
 
 ![Wasabi Wallet Recover Wallet](/WalletRecovery.png "Wasabi Wallet Recover Wallet")
 
-5. Type in the Password.
+5. Type in the Passphrase.
 
-![Add Wallet Add Password](/AddWalletAddPassword.png "Add Wallet Add Password")
+![Add Wallet Add Passphrase](/AddWalletAddPassphrase.png "Add Wallet Add Passphrase")
 
 Now Wasabi will recover your wallet.
 
 With this, only the private keys are imported, but not the labels of your addresses.
 
 :::danger
-At recovery, Wasabi is unable to check if your password is correct or not.
-If you type a wrong password a completely different wallet will be recovered.
+At recovery, Wasabi is unable to check if your passphrase is correct or not.
+If you type a wrong passphrase a completely different wallet will be recovered.
 :::
 
-You can also use the `Advanced Recovery Options` to specify the gap limit.
+You can also use the `Advanced Recovery Options` to specify the gap limit and birth height.
 The gap limit is about how far Wasabi will check the HD wallet structure for consecutive addresses that have no coins, in some cases, you may want to increase this limit.
+The birth height refers to the Bitcoin block height from which Wasabi starts scanning the blockchain for your wallet's transactions.
 
 ![Wasabi Wallet Recovery Advanced](/WalletRecoveryAdvanced.png "Wasabi Wallet Recovery Advanced")
 
@@ -59,7 +60,7 @@ With this method, you can recover a wallet that was generated with any BIP39 com
 
 ## Back up Wallet File and Password
 
-Wasabi Wallet creates a backup of your wallet file inside `WalletBackups` in your [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder).
+Wasabi Wallet stores your wallet file inside `Wallets` folder in your [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder).
 If you have done a backup of this file, then you can import it at `Add Wallet`, by clicking on `Import a wallet`.
 
 Alternitavely: copy the wallet file to the `Wallets` folder, and upon the next restart of Wasabi, it will show this wallet in the `NavBar`, from there you can open it as usual.
@@ -67,5 +68,5 @@ Alternitavely: copy the wallet file to the `Wallets` folder, and upon the next r
 Using this method will also backup your address labels and cluster history.
 
 :::warning
-Make sure to back up your password separately because it is necessary to spend your bitcoin.
+Make sure to back up your passphrase separately because it is necessary to spend your bitcoin.
 :::

@@ -18,7 +18,7 @@ The RPC server does NOT support batch requests or TLS communications (because it
 Requests are served in order one-by-one in series (no parallel processing).
 It is intentionally limited to serve only one whitelisted local address and it is disabled by default.
 
-The more user friendly command line interface `wcli` can be found [here](https://github.com/zkSNACKs/WalletWasabi/tree/master/Contrib/CLI).
+The more user friendly command line interface `wcli` can be found [here](https://github.com/WalletWasabi/WalletWasabi/tree/master/Contrib/CLI).
 
 ## Configure RPC
 
@@ -31,15 +31,11 @@ JsonRpcServerPrefixes: [an array of string with prefixes]
 	(default: [	"http://127.0.0.1:37128/", "http://localhost:37128/"])
 ```
 
-The RPC server can be configured to allow `Anonymous` access or `Basic authentication` just by editing:
-
 ```
-JsonRpcUser: [username] (default: empty)
-JsonRpcPassword: [userpassword] (default: empty)
+JsonRpcUser: [username] (default: random string)
+JsonRpcPassword: [userpassword] (default: random string)
 ```
-
-By default both `JsonRpcUser` and `JsonRpcPassword` are empty `""`, which means that `Anonymous` requests are allowed.
-On the other hand, if `JsonRpcUser` and `JsonRpcPassword` are not empty it means that the requester has to provide the right credentials, otherwise he will get a http status code 401 (Unauthorized).
+Anonymous access (empty username and userpassword) is not allowed.
 
 It is recommended to install the `jq` [command line json processor](https://jqlang.github.io/jq/) with `sudo apt-get install jq`, and then adding `| jq` at the end of every RPC command to have a structured output.
 
@@ -61,11 +57,11 @@ curl -s --data-binary "{ \"jsonrpc\":\"2.0\",\"id\":\"1\",\"method\":\"getwallet
 
 ## Available methods
 
-The current version handles the following methods: `getstatus`, `createwallet`, `recoverwallet`, `listwallets`, `loadwallet`, `listcoins`, `listunspentcoins`, `getwalletinfo`, `getnewaddress`, `send`, `build`, `broadcast`, `gethistory`, `getfeerates`, `listkeys`, `excludefromcoinjoin`, `startcoinjoin`, `payincoinjoin`, `listpaymentsincoinjoin`, `cancelpaymentincoinjoin`, `startcoinjoinsweep`, `stopcoinjoin` and `stop`.
+The current version handles the following methods: `getstatus`, `createwallet`, `recoverwallet`, `listwallets`, `loadwallet`, `listcoins`, `listunspentcoins`, `getwalletinfo`, `getnewaddress`, `send`, `build`, `broadcast`, `speeduptransaction`, `canceltransaction`, `gethistory`, `getfeerates`, `listkeys`, `setlabel`, `excludefromcoinjoin`, `startcoinjoin`, `payincoinjoin`, `listpaymentsincoinjoin`, `cancelpaymentincoinjoin`, `startcoinjoinsweep`, `stopcoinjoin`, `buildunsafetransaction`, and `stop`.
 
-For certain methods, the RPC call may not require the password whereas a similar action in the GUI does require it. 
-This difference is because the RPC call can use the clear text wallet file, which does not require the password to access. 
-For example, the GUI requires a password to open a wallet (and access certain wallet information), because it uses different logic, such as start coinjoining immediately.
+For certain methods, the RPC call may not require the passphrase whereas a similar action in the GUI does require it. 
+This difference is because the RPC call can use the clear text wallet file, which does not require the passphrase to access. 
+For example, the GUI requires a passphrase to open a wallet (and access certain wallet information), because it uses different logic, such as start coinjoining immediately.
 
 For wallet-specific calls, the wallet name should be specified in the URL path.
 Example:
@@ -90,7 +86,6 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getstatus"}' http://1
   "result": {
     "torStatus": "Running",
     "onionService": "Unavailable",
-    "backendStatus": "Connected",
     "bestBlockchainHeight": "1517613",
     "bestBlockchainHash": "0000000000000064db138798b6b789910bc7f29546a1ff506734dc7bb5780b28",
     "filtersCount": 689039,
@@ -157,7 +152,7 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getstatus"}' http://1
 Returns the twelve recovery words of the freshly generated wallet.
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"createwallet","params":["WalletName", "UserPassword"]}' http://127.0.0.1:37128/ | jq
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"createwallet","params":["WalletName", "UserPassphrase"]}' http://127.0.0.1:37128/ | jq
 ```
 
 ```json
@@ -168,51 +163,12 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"createwallet","params
 }
 ```
 
-In case we try to generate a wallet with an already existing name it will return:
-
-```json
-{
-  "jsonrpc": "2.0",
-  "error": {
-    "code": -32603,
-    "message": "Wallet name is already taken."
-  },
-  "id": "1"
-}
-```
-
-In case we try to generate a wallet with a reserved wallet name it will return:
-
-```json
-{
-  "jsonrpc": "2.0",
-  "error": {
-    "code": -32603,
-    "message": "Invalid wallet name."
-  },
-  "id": "1"
-}
-```
-
-In case we try to generate a wallet with a too long password it will return:
-
-```json
-{
-  "jsonrpc": "2.0",
-  "error": {
-    "code": -32603,
-    "message": "Password is too long."
-  },
-  "id": "1"
-}
-```
-
 ### recoverwallet
 
 Recovers a wallet using a BIP 39 mnemonic (recovery words).
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0", "id":"1", "method":"recoverwallet", "params":["WalletName", "jazz garment survey smart cricket child pizza reform physical alien envelope lesson", "UserPassword"]}' http://127.0.0.1:37128/ | jq
+curl -s --data-binary '{"jsonrpc":"2.0", "id":"1", "method":"recoverwallet", "params":["WalletName", "jazz garment survey smart cricket child pizza reform physical alien envelope lesson", "UserPassphrase"]}' http://127.0.0.1:37128/ | jq
 ```
 
 ```json
@@ -222,7 +178,7 @@ curl -s --data-binary '{"jsonrpc":"2.0", "id":"1", "method":"recoverwallet", "pa
 }
 ```
 
-The first parameter is the (new) wallet name, the second parameter is the mnemonic (recovery words), the third parameter is an optional passphrase (aka the password in Wasabi).
+The first parameter is the (new) wallet name, the second parameter is the mnemonic (recovery words), the third parameter is an optional passphrase.
 
 ### listwallets
 
@@ -311,19 +267,6 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"listcoins"}' http://1
 }
 ```
 
-In case there is no wallet open it will return:
-
-```json
-{
-  "jsonrpc": "2.0",
-  "error": {
-    "code": -32603,
-    "message": "There is no wallet loaded."
-  },
-  "id": "1"
-}
-```
-
 ### listunspentcoins
 
 Returns the list of confirmed and unconfirmed coins that are unspent.
@@ -377,19 +320,6 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"listunspentcoins"}' h
 }
 ```
 
-In case there is no wallet open it will return:
-
-```json
-{
-  "jsonrpc": "2.0",
-  "error": {
-    "code": -32603,
-    "message": "There is no wallet loaded."
-  },
-  "id": "1"
-}
-```
-
 ### getwalletinfo
 
 Returns information about the current loaded wallet.
@@ -410,7 +340,7 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getwalletinfo"}' http
     "isWatchOnly": false,
     "isHardwareWallet": false,
     "isAutoCoinjoin": true,
-    "isRedCoinIsolation": false,
+    "isNonPrivateCoinIsolation": false,
     "accounts": [
       {
         "name": "segwit",
@@ -430,25 +360,12 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getwalletinfo"}' http
 }
 ```
 
-In case there is no wallet open it will return:
-
-```json
-{
-  "jsonrpc": "2.0",
-  "error": {
-    "code": -32603,
-    "message": "There is no wallet loaded."
-  },
-  "id": "1"
-}
-```
-
 ### getnewaddress
 
 Creates an address and returns detailed information about it.
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getnewaddress","params":["Daniel, Alice"]}' http://127.0.0.1:37128/WalletName | jq
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getnewaddress","params":["Daniel, Alice", false]}' http://127.0.0.1:37128/WalletName | jq
 ```
 
 ```json
@@ -464,6 +381,7 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getnewaddress","param
   "id": "1"
 }
 ```
+The first parameter is the label(s), the second parameter is whether to generate a taproot address (the default is _false_, which returns a SegWit address).
 
 In case an empty label is provided:
 
@@ -483,7 +401,7 @@ In case an empty label is provided:
 Builds and broadcasts a transaction.
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"send", "params": { "payments":[ {"sendto": "tb1qgvnht40a08gumw32kp05hs8mny954hp2snhxcz", "amount": 15000, "label": "David" }, {"sendto":"tb1qpyhfrpys6skr2mmnc35p3dp7zlv9ew4k0gn7qm", "amount": 86200, "label": "Michael"} ], "coins":[{"transactionid":"ab83d9d0b2a9873b8ab0dc48b618098f3e7fbd807e27a10f789e9bc330ca89f7", "index":0}], "feeTarget":2, "password": "UserPassword" }}' http://127.0.0.1:37128/WalletName | jq
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"send", "params": { "payments":[ {"sendto": "tb1qgvnht40a08gumw32kp05hs8mny954hp2snhxcz", "amount": 15000, "label": "David" }, {"sendto":"tb1qpyhfrpys6skr2mmnc35p3dp7zlv9ew4k0gn7qm", "amount": 86200, "label": "Michael"} ], "coins":[{"transactionid":"ab83d9d0b2a9873b8ab0dc48b618098f3e7fbd807e27a10f789e9bc330ca89f7", "index":0}], "feeTarget":2, "password": "UserPassphrase" }}' http://127.0.0.1:37128/WalletName | jq
 ```
 
 ```json
@@ -496,6 +414,8 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"send", "params": { "p
 }
 ```
 
+Note that one can set a specific fee rate using the parameter `feeRate` instead of `feeTarget`.
+
 The fees for the transaction will be added on top of the sum of the outputs' amounts.
 If you have three outputs with 0.4, 0.3 and 0.3 BTC, the amount of BTC in the inputs must be at least 0.4+0.3+0.3 + mining fees.
 
@@ -505,13 +425,13 @@ Now the mining fee will be subtracted from the output in which `subtractFee` was
 With this you can send the max amount of the coin, by setting the same value of the input coins for the output address.
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"send", "params": { "payments":[ {"sendto": "tb1qgvnht40a08gumw32kp05hs8mny954hp2snhxcz", "amount": 15000, "label": "David", "subtractFee": true }, {"sendto":"tb1qpyhfrpys6skr2mmnc35p3dp7zlv9ew4k0gn7qm", "amount": 86200, "label": "Michael"} ], "coins":[{"transactionid":"ab83d9d0b2a9873b8ab0dc48b618098f3e7fbd807e27a10f789e9bc330ca89f7", "index":0}], "feeTarget":2, "password": "UserPassword" }}' http://127.0.0.1:37128/WalletName | jq
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"send", "params": { "payments":[ {"sendto": "tb1qgvnht40a08gumw32kp05hs8mny954hp2snhxcz", "amount": 15000, "label": "David", "subtractFee": true }, {"sendto":"tb1qpyhfrpys6skr2mmnc35p3dp7zlv9ew4k0gn7qm", "amount": 86200, "label": "Michael"} ], "coins":[{"transactionid":"ab83d9d0b2a9873b8ab0dc48b618098f3e7fbd807e27a10f789e9bc330ca89f7", "index":0}], "feeTarget":2, "password": "UserPassphrase" }}' http://127.0.0.1:37128/WalletName | jq
 ```
 
 In case of error, it is reported in the json's error object:
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"send", "params": { "payments": [{ "sendto": "tb1qnmfmkylkd548bbbcd9115b322891e27f741eb42c83ed982861ee121", "amount": 2015663, "label": "Mr. Who" }], "coins":[{"transactionid":"c68dacd548bbbcd9115b38ed982861ee121c5ef6e0f1022891e27f741eb42c83", "index":0}], "feeTarget": 2, "password": "UserPassword" }}' http://127.0.0.1:37128/WalletName | jq
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"send", "params": { "payments": [{ "sendto": "tb1qnmfmkylkd548bbbcd9115b322891e27f741eb42c83ed982861ee121", "amount": 2015663, "label": "Mr. Who" }], "coins":[{"transactionid":"c68dacd548bbbcd9115b38ed982861ee121c5ef6e0f1022891e27f741eb42c83", "index":0}], "feeTarget": 2, "password": "UserPassphrase" }}' http://127.0.0.1:37128/WalletName | jq
 ```
 
 ```json
@@ -534,7 +454,7 @@ It is similar to the send method, except that it will not automatically broadcas
 So it is also possible to send to many and to subtract the fee.
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"build", "params": { "payments":[ {"sendto": "tb1qgjgy9k7q32rcvdjsp3nhq0x8saqcvyahhy8up2", "amount": 15000, "label": "David" }, ], "coins":[{"transactionid":"cdfda1d9839e71e82ca539a4f60e947b1cdfbeecb198616e1daa5c43e2e6fbb3", "index":0}], "feeTarget":2, "password": "UserPassword" }}' http://127.0.0.1:37128/WalletName | jq
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"build", "params": { "payments":[ {"sendto": "tb1qgjgy9k7q32rcvdjsp3nhq0x8saqcvyahhy8up2", "amount": 15000, "label": "David" }, ], "coins":[{"transactionid":"cdfda1d9839e71e82ca539a4f60e947b1cdfbeecb198616e1daa5c43e2e6fbb3", "index":0}], "feeTarget":2, "password": "UserPassphrase" }}' http://127.0.0.1:37128/WalletName | jq
 ```
 
 ```json
@@ -546,6 +466,8 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"build", "params": { "
 ```
 
 The result is the transaction hex, waiting to be broadcast.
+
+Note that one can set a specific fee rate using the parameter `feeRate` instead of `feeTarget`.
 
 ### broadcast
 
@@ -566,6 +488,49 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"broadcast", "params":
 }
 
 ```
+
+### speeduptransaction
+
+Speeds up a transaction and returns the hex of a new transaction; ready for broadcast.
+It first tries to speed it up using [RBF](glossary/Glossary-GeneralBitcoin.html#replace-by-fee-rbf), if that is not possible it will do [CPFP](glossary/Glossary-GeneralBitcoin.html#child-pays-for-parent-cpfp).
+
+```bash
+curl -s --data-binary '{"jsonrpc":"2.0", "id":"1", "method":"speeduptransaction", "params":["ab83d9d0b2a9873b8ab0dc48b618098f3e7fbd807e27a10f789e9bc330ca89f7", "UserPassphrase"]}' http://127.0.0.1:37128/WalletName | jq
+```
+
+```json
+{
+  "jsonrpc": "2.0",
+  "result": "01000000000101b3fbe6e2435caa1d6e6198b1ecbedf1c7b940ef6a439a52ce8719e83d9a1fdcd0000000000fdffffff02cfc40300000000002251203ad2f2cf18af791235fbc634333e30becbf7a3d566f9b2cbf36960d68d6e95f5983a000000000000160014449042dbc08a878636500c67703cc787418613b70247304402206cf8fd02465b77b189cb752c15e8baf69c5de7a1e1c9b27380227fc21b55ffa7022059533d0046e6a6b58bc6ff4be297d02773651849e6ba40f2dec31a98b9fa7863012103d626df6a18ed29d4c7e80199f7f183bd4949f6c8073463c81f3802b57f9546d000000000",
+  "id": "1"
+}
+```
+
+The first parameter is the transaction ID of the transaction to be accelerated, the second parameter is the wallet passphrase.
+
+It does not automatically broadcast the new transaction, so it still needs to be manually broadcasted.
+
+### canceltransaction
+
+Cancels a transaction and returns the hex of a new transaction; ready for broadcast.
+It first tries to use [RBF](glossary/Glossary-GeneralBitcoin.html#replace-by-fee-rbf), if that is not possible it will do [CPFP](glossary/Glossary-GeneralBitcoin.html#child-pays-for-parent-cpfp).
+It is similar to the _speeduptransaction_ method, except that the transaction sends the bitcoin back to the wallet (to an unused internal address).
+
+```bash
+curl -s --data-binary '{"jsonrpc":"2.0", "id":"1", "method":"canceltransaction", "params":["ab83d9d0b2a9873b8ab0dc48b618098f3e7fbd807e27a10f789e9bc330ca89f7", "UserPassphrase"]}' http://127.0.0.1:37128/WalletName | jq
+```
+
+```json
+{
+  "jsonrpc": "2.0",
+  "result": "01000000000101b3fbe6e2435caa1d6e6198b1ecbedf1c7b940ef6a439a52ce8719e83d9a1fdcd0000000000fdffffff02cfc40300000000002251203ad2f2cf18af791235fbc634333e30becbf7a3d566f9b2cbf36960d68d6e95f5983a000000000000160014449042dbc08a878636500c67703cc787418613b70247304402206cf8fd02465b77b189cb752c15e8baf69c5de7a1e1c9b27380227fc21b55ffa7022059533d0046e6a6b58bc6ff4be297d02773651849e6ba40f2dec31a98b9fa7863012103d626df6a18ed29d4c7e80199f7f183bd4949f6c8073463c81f3802b57f9546d000000000",
+  "id": "1"
+}
+```
+
+The first parameter is the transaction ID of the transaction to be cancelled, the second parameter is the wallet passphrase.
+
+It does not automatically broadcast the new transaction, so it still needs to be manually broadcasted.
 
 ### gethistory
 
@@ -616,15 +581,36 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"getfeerates"}' http:/
 {
   "jsonrpc": "2.0",
   "result": {
-    "2": 50,
-    "144": 37,
-    "432": 32
+    "2": {
+      "FeePerK": {
+        "Satoshi": 2134
+      },
+      "SatoshiPerByte": 2.134
+    },
+    "6": {
+      "FeePerK": {
+        "Satoshi": 1015
+      },
+      "SatoshiPerByte": 1.015
+    },
+    "144": {
+      "FeePerK": {
+        "Satoshi": 1013
+      },
+      "SatoshiPerByte": 1.013
+    },
+    "1008": {
+      "FeePerK": {
+        "Satoshi": 739
+      },
+      "SatoshiPerByte": 0.739
+    }
   },
   "id": "1"
 }
 ```
 
-In this case the block targets are _2_, _144_ and _432_ and their corresponding fee rates in sat/vB, according to bitcoind's _smart fee_ algorithm.
+In this case the block targets are _2_, _6_, _144_ and _1008_ and their corresponding fee rates in sat/vB, according to the third-party fee rate estimations provider.
 
 ### listkeys
 
@@ -704,6 +690,24 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"listkeys"}' http://12
 curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"listkeys"}' http://127.0.0.1:37128/WalletName | jq '.result[] | select(.keyState == 1 and .internal == true)'
 ```
 
+### setlabel
+
+Replaces the label of the specified wallet's own address, and so of the coins on it (if any).
+
+```bash
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"setlabel","params":["tb1qdskc4y529ayqkqrddknnhdjqwnqc9wzl8940pn", "Daniel, Alice"]}' http://127.0.0.1:37128/WalletName | jq
+```
+
+```json
+{
+  "jsonrpc": "2.0",
+  "id": "1"
+}
+```
+
+The first parameter is the address, the second parameter is the label(s).
+A label is required, like for _getnewaddress_, because an unused address without a label goes back into the pool of addresses that _getnewaddress_ hands out.
+
 ### excludefromcoinjoin
 
 Excludes a specific UTXO from participating in coinjoin.
@@ -722,12 +726,12 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"excludefromcoinjoin",
 The first parameter is the transaction ID of the UTXO, the second parameter is the index, the third parameter is whether to exclude (true) or not exclude (false) the coin from coinjoin.
 The exclusion applies until it is reverted (set to false).
 
-_Listunspentcoins_ method can be used to see the wallet's UTXO's and their _excludedfromcoinjoin_ status.
+_Listunspentcoins_ method can be used to see the wallet's UTXOs and their _excludedfromcoinjoin_ status.
 
 ### startcoinjoin
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"startcoinjoin", "params":["UserPassword", "True", "True"]}' http://127.0.0.1:37128/WalletName | jq
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"startcoinjoin", "params":["UserPassphrase", "True", "True"]}' http://127.0.0.1:37128/WalletName | jq
 ```
 
 ```json
@@ -737,14 +741,14 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"startcoinjoin", "para
 }
 ```
 
-The first parameter is the wallet password, the second parameter is `stopWhenAllMixed`, and the third one is`overridePlebStop`.
+The first parameter is the wallet passphrase, the second parameter is `stopWhenAllMixed`, and the third one is`overridePlebStop`.
 
 ### payincoinjoin
 
 Pay to a specific bitcoin address in a coinjoin.
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0", "id":"1", "method":"payincoinjoin", "params":["tb1qaznf0ky4yh8vc3yhew984jhxugr8apeu7wa98d", 10000]}' http://127.0.0.1:37128/WalletName | jq
+curl -s --data-binary '{"jsonrpc":"2.0", "id":"1", "method":"payincoinjoin", "params":["tb1qaznf0ky4yh8vc3yhew984jhxugr8apeu7wa98d", 10000, "UserPassphrase"]}' http://127.0.0.1:37128/WalletName | jq
 ```
 
 ```json
@@ -760,14 +764,10 @@ The _result_ is the paymentId.
 
 A _payincoinjoin_ is written to the logs and its status can be seen by using the _listpaymentsincoinjoin_ method.
 
-Payments in coinjoin can in theory be made to any ScriptPubKey, however the zkSNACKs coordinator currently only accepts P2WPKH and P2TR outputs.
-
-Currently the default maximum is 4 payments per client per coinjoin.
-
-_payincoinjoin_ only registers a payment, so if coinjoin is not running or the amount is lower than the wallet balance, the payment is queued.
-
 Pending payments can be removed by using the _cancelpaymentincoinjoin_ method.
 Pending payments are also removed if the Wasabi client restarts.
+
+Read more [here](/using-wasabi/CoinJoin.html#coinjoin-payment).
 
 ### listpaymentsincoinjoin
 
@@ -827,7 +827,7 @@ It works the same as normal coinjoin, except that the outputs are sent to (inter
 > This is not a proper _coinjoin to other wallet_ implementation, but supposed to be used to empty a wallet.
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"startcoinjoinsweep", "params":["UserPassword", "OutputWalletName"]}' http://127.0.0.1:37128/WalletName | jq
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"startcoinjoinsweep", "params":["UserPassphrase", "OutputWalletName"]}' http://127.0.0.1:37128/WalletName | jq
 ```
 
 ```json
@@ -849,6 +849,27 @@ curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"stopcoinjoin"}' http:
   "id": "1"
 }
 ```
+
+### buildunsafetransaction
+
+Builds a transaction.
+With the possibility for the mining fee to be higher than the sent amount, which is otherwise not possible in Wasabi.
+
+```bash
+curl -s --data-binary '{"jsonrpc":"2.0","id":"1","method":"buildunsafetransaction", "params": { "payments":[ {"sendto": "tb1qgjgy9k7q32rcvdjsp3nhq0x8saqcvyahhy8up2", "amount": 15000, "label": "David" }, ], "coins":[{"transactionid":"cdfda1d9839e71e82ca539a4f60e947b1cdfbeecb198616e1daa5c43e2e6fbb3", "index":0}], "feeTarget":2, "password": "UserPassphrase" }}' http://127.0.0.1:37128/WalletName | jq
+```
+
+```json
+{
+  "jsonrpc": "2.0",
+  "result": "01000000000101b3fbe6e2435caa1d6e6198b1ecbedf1c7b940ef6a439a52ce8719e83d9a1fdcd0000000000fdffffff02cfc40300000000002251203ad2f2cf18af791235fbc634333e30becbf7a3d566f9b2cbf36960d68d6e95f5983a000000000000160014449042dbc08a878636500c67703cc787418613b70247304402206cf8fd02465b77b189cb752c15e8baf69c5de7a1e1c9b27380227fc21b55ffa7022059533d0046e6a6b58bc6ff4be297d02773651849e6ba40f2dec31a98b9fa7863012103d626df6a18ed29d4c7e80199f7f183bd4949f6c8073463c81f3802b57f9546d000000000",
+  "id": "1"
+}
+```
+
+The result is the transaction hex, waiting to be broadcast.
+
+Note that one can set a specific fee rate using the parameter `feeRate` instead of `feeTarget`.
 
 ### stop
 
@@ -911,13 +932,12 @@ curl -s --data-binary '{"jsonrpc":"2.0", "method": "getnewaddress", "params": { 
 
 ## Expose the RPC server as an onion service
 
-Since Wasabi version [2.0.6](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v2.0.6) the RPC can be exposed as an onion service, which enables remote control.
+Since Wasabi version [2.0.6](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.0.6) the RPC can be exposed as an onion service, which enables remote control.
 
 The RPC server can be exposed as an onion service by using the _rpconionenabled=true_ [start up parameter](/using-wasabi/StartupParameters.md) or the environment variable.
 
 A few notes:
 - _Tor_ needs to be enabled.
-- Anonymous access is not allowed: _jsonrpcuser_ & _jsonrpcpassword_ need to be specified.
 - _RpcOnionEnabled_ is only available as a command line switch (start up parameter) and an environment variable, it is not available in the config file.
 - A new onion address is generated at each startup.
 
@@ -934,10 +954,6 @@ The onion address is shown in the log:
 ```
 INFO       Global.StartTorProcessManagerAsync (284)        RPC server listening on http://rrdayxv2pngzl3jyal5dfjvl6s4bt4frvo5jj2rgnajz5gyevrm4fvyd.onion/
 ```
-
-The onion service cannot be started in case the _jsonrpcuser_ and/or _jsonrpcpassword_ are not specified and it will log: `Anonymous access RPC server cannot be exposed as onion service.`
-
-You need to specify them in the config file, or add them as command line switches or environment variables.
 
 In the RPC calls, the localhost, jsonrpcuser and jsonrpcpassword need to be specified.
 

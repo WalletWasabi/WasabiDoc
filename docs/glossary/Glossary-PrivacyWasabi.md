@@ -14,6 +14,11 @@ In the case of Wasabi documentation, it usually indicates the arrival of a new f
 
 E.g. "Lightning Network is coming to Wasabi in #twoweeks"
 
+### Absolute min input count
+
+The client will refuse to participate in coinjoin rounds with a minimum input count lower than this value.
+The default value is 21.
+
 ### Address Reuse
 
 Address reuse refers to the use of the same address for multiple transactions, this is very bad for privacy.
@@ -31,15 +36,10 @@ The anonymity set is effectively the size of the group you are hiding in during 
 It's the quantity of equal value outputs of one CoinJoin transaction.
 Read more: [What is the anonymity set?](/FAQ/FAQ-UseWasabi.md#what-is-the-anonymity-set)
 
-### Auto-start coinjoin (Pleb Stop) threshold
-
-The auto-start coinjoin threshold, a.k.a Pleb Stop, is the minimum wallet balance at which coinjoin will automatically start/continue.
-The amount can be changed in the _Coinjoin Settings_ (_Auto-start coinjoin threshold_ setting), the default is 0.01 BTC.
-
 ### Backend
 
 [The part of a software system that is not usually visible or accessible to a user of that system](https://www.merriam-webster.com/dictionary/back%20end).
-In the case of Wasabi, the backend functions as the coinjoin coordinator and provides data to the [client](/glossary/Glossary-PrivacyWasabi.md#Client) (user) like block filters, exchange rate, and network estimations (mempool).
+In the case of Wasabi, the backend (indexer) used to provide the block filters to the [client](/glossary/Glossary-PrivacyWasabi.md#Client).
 
 ### Block filters
 
@@ -66,16 +66,15 @@ Many Bitcoin transactions have change outputs.
 It would be a serious privacy leak if the change address can be somehow found, as it would link the ownership of the (now spent) inputs with a new output.
 Read more: [Change coins](/using-wasabi/ChangeCoins.md)
 
-### Chaumian CoinJoin
+### Chaumian Coinjoin
 
-A Chaumian CoinJoin is a special type of CoinJoin that utilizes Chaumian [or Schnorr] blind signatures to prevent the central coordinator from spying on the linkage between inputs and outputs.
-Read more: [Use of blind signatures in CoinJoin](/using-wasabi/CoinJoin.md#zerolink-protocol-step-by-step)
+A Chaumian coinjoin is a special type of coinjoin that utilizes Chaumian [or Schnorr] blind signatures to prevent the central coordinator from spying on the linkage between inputs and outputs.
+Read more: [Use of blind signatures in coinjoin](/using-wasabi/CoinJoin.md#zerolink-protocol-step-by-step)
 
 ### Client
 
 [A software that allows a computer to function as a client in a network](https://www.merriam-webster.com/dictionary/client).
 In the case of Wasabi, the client is a Wasabi Wallet software version which a user has on his own local machine.
-The client can communicate with the [backend](/glossary/Glossary-PrivacyWasabi.md#Backend).
 
 ### Cluster
 
@@ -89,25 +88,19 @@ The possiblity for the user to manually select UTXO's.
 It is mostly used for sending, so the user can select which UTXO's should be used as the inputs of the transaction.
 Read more: [Coin Control Best Practices](/FAQ/FAQ-UseWasabi.md#coin-control-best-practices)
 
-### CoinJoin (CJ)
+### Coinjoin (CJ)
 
-CoinJoin is a trustless method for combining multiple Bitcoin payments from multiple spenders into a single transaction to make it more difficult for outside parties to determine which spender paid which recipient.
-Read more: [What is a CoinJoin?](/FAQ/FAQ-Introduction.md#what-is-a-coinjoin)
+Coinjoin is a trustless method for combining multiple Bitcoin payments from multiple spenders into a single transaction to make it more difficult for outside parties to determine which spender paid which recipient.
+Read more: [What is a coinjoin?](/FAQ/FAQ-Introduction.md#what-is-a-coinjoin)
 
 ### Coinjoin Strategy
 
 A _Coinjoin Strategy_ contains instructions for the automatic "coinjoin robot" about configurations like when and how much to coinjoin.
-Read more: [Coinjoin Strategy](/Using-Wasabi/CoinJoin.md#coinjoin-strategy)
+Read more: [Coinjoin Strategy](/using-wasabi/CoinJoin.md#coinjoin-strategy)
 
-### Coinjoin Time Preference
+### Coinjoined coins
 
-The wallet will only participate in coinjoin when the fee rate is below the median of the chosen time frame (Hours, Days, Weeks, or Months).
-
-(_FeeRateMedianTimeFrameHours_ in the wallet file)
-
-### CoinJoined coins
-
-Coins that have successfully participated in a CoinJoin (with the exception of the change) and thus lose their association to a previous cluster.
+Coins that have successfully participated in a coinjoin (with the exception of the change) and thus lose their association to a previous cluster.
 Read more: [What is the privacy I get after mixing with Wasabi?](/FAQ/FAQ-Introduction.md#what-is-the-privacy-i-get-after-mixing-with-wasabi)
 
 ### Common-Input-Ownership heuristic
@@ -116,7 +109,7 @@ This is a heuristic or assumption which says that if a transaction has more than
 
 ### Coordinator
 
-The coordinator is a server which creates CoinJoins and accepts UTXOs in the mix.
+The coordinator is a server which creates coinjoins and accepts UTXOs in the mix.
 Read more: [How does my wallet communicate with the Wasabi coordinator server?](/FAQ/FAQ-UseWasabi.md#how-does-my-wallet-communicate-with-the-wasabi-coordinator-server)
 
 ### Daemon
@@ -135,17 +128,22 @@ Dust is an UTXO that is uneconomical to spend.
 Also, small portions of bitcoin can lead to serious consequences for one's privacy, for example the so called `forced address reuse attack`.
 Read more: [What is the dust threshold](/FAQ/FAQ-UseWasabi.md#what-is-the-dust-threshold)
 
+### Know Your Customer (KYC)
+
+KYC (Know Your Customer) is the process of a business being forced to identify and verify the identity of its clients, and to share this information with a government.
+The term is also used to refer to the bank regulation which governs these activities.
+Read more: [AML/KYC Information](/why-wasabi/TransactionSurveillanceCompanies.md#aml-kyc-information)
+
 ### Label
 
 A label can be added to a coin, as a small note on who knows this coin belongs to you.
 Good labelling can help the user and the wallet to make better privacy conscious decisions later on when spending.
 Read more: [Why do I have to label my address](/FAQ/FAQ-UseWasabi.md#why-do-i-have-to-label-my-address)
 
-### Know Your Customer (KYC)
+### Max Coinjoin Mining Fee Rate
 
-KYC (Know Your Customer) is the process of a business being forced to identify and verify the identity of its clients, and to share this information with a government.
-The term is also used to refer to the bank regulation which governs these activities.
-Read more: [AML/KYC Information](/why-wasabi/TransactionSurveillanceCompanies.md#aml-kyc-information)
+The maximum mining fee rate in sat/vByte the client is willing to pay to participate into a round.
+The default value is 50.
 
 ### Observers
 
@@ -161,7 +159,7 @@ The Tor onion service, IP address or domain of the receiver is included in a BIP
 ### Peers
 
 Peers in our documentation refers mainly to Bitcoin and Wasabi Wallet users, but it also means people.
-They are literally peers in the network, or in the CoinJoin.
+They are literally peers in the network, or in the coinjoin.
 
 ### RPC
 
@@ -172,8 +170,13 @@ Read more: [RPC Interface](/using-wasabi/RPC.md)
 
 Safety coinjoin is a concept for doing an extra coinjoin after a user registers only _anonymity score_ 1 (non-private) coins in their first round.
 
-This was added in Wasabi [2.0.6 version](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v2.0.6) to increase privacy for people who generate a new wallet -> receive a coin -> do one coinjoin -> send all the money out.
+This was added in Wasabi [2.0.6 version](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.0.6) to increase privacy for people who generate a new wallet -> receive a coin -> do one coinjoin -> send all the money out.
 It aims to prevent targeted analysis that compares the value of consolidated coinjoin outputs with the value of one of the coinjoin's inputs.
+
+### Stop coinjoin (Pleb Stop) threshold
+
+The _Stop coinjoin threshold_, a.k.a Pleb Stop, is the confirmed wallet balance under which coinjoin will automatically stop/not start.
+The amount can be changed in the _Coinjoin Settings_ (_Stop coinjoin threshold_ setting), the default is 0.005 BTC.
 
 ### Taint
 
@@ -198,12 +201,6 @@ Read more: [Transaction Surveillance Companies](/why-wasabi/TransactionSurveilla
 Tumbling is a synonym of 'Mixing'.
 Similarly, Tumbler is the synonym of 'Mixer'.
 
-### TurboSync
-
-A feature in Wasabi to reduce wallet loading time.
-With TurboSync, some addresses (internal keys only) are skipped and tested in the background.
-Read more: [TurboSync](/using-wasabi/WalletLoad.md#turbosync) 
-
 ### WabiSabi
 
 WabiSabi is a protocol for constructing coinjoin transactions with the aid of a centralized coordinator.
@@ -225,5 +222,5 @@ An xpub, also known as Extended Public Key, is a part of BIP-32 that will allow 
 ### ZeroLink
 
 ZeroLink is a framework to holistically design a privacy and fungibility setup for Bitcoin.
-This encompasses more than just a single CoinJoin transaction, but also includes network level privacy defense against third party spying.
+This encompasses more than just a single coinjoin transaction, but also includes network level privacy defense against third party spying.
 Read more: [ZeroLink: the Bitcoin Fungibility Framework](/using-wasabi/CoinJoin.md#zerolink-protocol-step-by-step)

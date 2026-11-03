@@ -9,6 +9,14 @@
 
 [[toc]]
 
+:::danger Coldcard seed-entropy advisory (July 2026)
+Coinkite disclosed a firmware flaw that reduced generated seed entropy on **Coldcard Mk2/Mk3** (firmware 4.0.1–4.1.9) and **Mk4/Mk5/Q** before their fixed firmware.
+Seeds generated on-device with fewer than 50 independent dice rolls may be brute-forceable.
+Seeds generated without extra dice rolls may be brute-forceable.
+Update to fixed firmware, generate a new seed and move your funds.
+See the [Coinkite advisory](https://blog.coinkite.com/coldcard-mk3-seed-generation-warning/).
+:::
+
 ## Using hardware wallet step-by-step
 
 1. Start your Wasabi Wallet and go to `Add Wallet`.
@@ -110,7 +118,7 @@ However, he can use it to derive a full transaction history, thus it is a potent
 
 Now insert the SD card to your computer, and open Wasabi Wallet.
 Go to the `Add Wallet` dialog, and click `Import a wallet`, browse to the SD card and select the `new-wallet.json` file.
-Wasabi will automatically import and modify this skeleton file and store it in your `Wallets` and `WalletBackups` folders.
+Wasabi will automatically import and modify this skeleton file and store it in your `Wallets` folder.
 
 #### Receiving bitcoin
 

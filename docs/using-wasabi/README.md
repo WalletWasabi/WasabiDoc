@@ -35,8 +35,7 @@ Further tutorials about the different parts of the wallet, for newbies and power
 
 ### Restoring Wasabi
 - [Recover a Wallet](/using-wasabi/WalletRecovery.md)
-- [Restoring Wasabi Wallet to Electrum](/using-wasabi/RestoreElectrum.md)
-- [Password Finder](/using-wasabi/PasswordFinder.md)
+- [Restoring Wasabi Wallet to Other Wallets](/using-wasabi/ExternalRestore.md)
 
 ### Advanced Installing Wasabi
 - [Build from source code](/using-wasabi/BuildSource.md)
@@ -51,3 +50,4 @@ Further tutorials about the different parts of the wallet, for newbies and power
 - [PayJoin](/using-wasabi/PayJoin.md)
 - [Testnet](/using-wasabi/Testnet.md)
 - [Supported BIPs](/using-wasabi/BIPs.md)
+- [Scheme Scripting](/using-wasabi/SchemeScripting.md)

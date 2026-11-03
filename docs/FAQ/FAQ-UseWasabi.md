@@ -36,8 +36,12 @@ Make sure that you are precise so that you know what this wallet is for and clic
 
 ![Name a new wallet in Wasabi](/AddWalletWalletName.png "Name a new wallet in Wasabi")
 
-Now you will see the 12 recovery words.
-This is the mnemonic seed that you should back up, together with the password you create in the next phase, in order to recover your wallet.
+Select the desired Wallet Backup Type.
+
+![Add Wallet Backup Type](/WalletBackupType.png "Add Wallet Backup Type")
+
+Now you will see the 12 recovery words, or multiple 20 recovery words sets when using Multi-share Backup.
+This is the mnemonic seed that you should back up, together with the passphrase you create in the next phase, in order to recover your wallet.
 When you've backed everything up, click `Continue`.
 
 ![Wasabi Wallet recovery words](/AddWalletRecoveryWords.png "Wasabi Wallet recovery words")
@@ -47,22 +51,22 @@ Once you're done, click `Continue`.
 
 ![Confirm recovery words](/AddWalletConfirmRecoveryWords.png "Confirm recovery words")
 
-Add a password. 
+Add a passphrase. 
 It is used to encrypt the private key (extracted from the extended private key) on the computer and needed to open the wallet and to recovered it in the future.
-Make sure that you properly back up and write down this password.
+Make sure that you properly back up and write down this passphrase.
 
-Confirm the password and click `Continue`.
+Confirm the passphrase and click `Continue`.
 
-![Add a password in Wasabi](/AddWalletAddPassword.png "Add a password in Wasabi")
+![Add a passphrase in Wasabi](/AddWalletAddPassphrase.png "Add a passphrase in Wasabi")
 
 :::danger Careful!!
-Without knowledge of the password, you CANNOT spend your bitcoin!!
+Without knowledge of the passphrase, you CANNOT spend your bitcoin!!
 :::
 
-Make sure, and triple-check that you have done a proper backup of BOTH the password AND the mnemonic.
-If you only have the recovery words, but not the password, then you will NOT be able to open your wallet or to recover it.
+Make sure, and triple-check that you have done a proper backup of BOTH the passphrase AND the mnemonic.
+If you only have the recovery words, but not the passphrase, then you will NOT be able to open your wallet or to recover it.
 
-In order to protect your backup, consider storing the password and recovery words in different locations.
+In order to protect your backup, consider storing the passphrase and recovery words in different locations.
 
 Now you get to choose your wallets coinjoin strategy.
 Select one and click `Continue`.
@@ -77,7 +81,6 @@ A wallet can be renamed at the _Wallet Settings_.
 Alternatively, the wallet file can be manually renamed by doing the following:
 Type `Wallet Folder` in the search bar at the top of the main view to access the `Wallets` folder and rename the `.json` wallet file.
 Or you can navigate to the `Wallets` folder (inside the [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder)) and rename the `.json` wallet file.
-Then go to `WalletBackups` folder (inside the [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder)) and rename the `.json` wallet file.
 
 :::tip
 You need to mark the “show hidden files” setting to see the Wasabi data folder.
@@ -89,24 +92,24 @@ To avoid problems, make sure you close Wasabi Wallet before proceeding to rename
 
 ### What is the password used for?
 
-The password you set is used:
+The password (named _passphrase_ since Wasabi version [2.0.7](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.0.7)) you set is used:
 * As a 13th word (passphrase) as described in [BIP 39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki).
 * To encrypt the private key of the extended private key as described in [BIP 38](https://github.com/bitcoin/bips/blob/master/bip-0038.mediawiki) to get an encrypted secret which is stored on the computer.
 
-Wasabi stores only the BIP38 encrypted blob, so you'll need to type in the password to open the wallet and to spend from Wasabi.
+Wasabi stores only the BIP38 encrypted blob, so you'll need to type in the passphrase to open the wallet and to spend from Wasabi.
 
 :::danger
-The password will unlock your bitcoin to anyone who has access to the recovery words backup or the computer!
-If your backup gets compromised, this password is the only thing protecting your precious sats.
+The passphrase will unlock your bitcoin to anyone who has access to the recovery words backup or the computer!
+If your backup gets compromised, this passphrase is the only thing protecting your precious sats.
 :::
 
 ### What password should I use?
 
 :::danger
-It is **VERY** important to use a [random and long password](/using-wasabi/PasswordBestPractices.md).
+It is **VERY** important to use a [random and long passphrase](/using-wasabi/PasswordBestPractices.md).
 :::
 
-Since it is very difficult for humans to generate true randomness, it is good to use a tool to help find a strong password.
+Since it is very difficult for humans to generate true randomness, it is good to use a tool to help find a strong passphrase.
 This can be the [Diceware english wordlist](https://www.eff.org/deeplinks/2016/07/new-wordlists-random-passphrases) for true off-line password generation.
 A secure password manager software might also be used, but be careful here.
 
@@ -128,15 +131,15 @@ You need to mark the “show hidden files” setting to see it.
 
 :::danger
 NO!!!
-Without knowledge of your password, even when you have the wallet file and recovery words, you CANNOT spend your bitcoin!
+Without knowledge of your passphrase, even when you have the wallet file and recovery words, you CANNOT spend your bitcoin!
 :::
 
-When creating a new wallet, after labeling it properly, the next step is to select a long and random password.
-Every time you want to spend your coins from Wasabi, you MUST provide this password.
-So even if you have these words securely engraved in metal, without the password, you cannot restore the backup of your wallet.
+When creating a new wallet, after labeling it properly, the next step is to select a long and random passphrase.
+Every time you want to spend your coins from Wasabi, you MUST provide this passphrase.
+So even if you have these words securely engraved in metal, without the passphrase, you cannot restore the backup of your wallet.
 
 :::tip
-Always back up your mnemonic recovery words, and your password in two separate secure locations.
+Always back up your mnemonic recovery words, and your passphrase in two separate secure locations.
 :::
 
 ### Why BIP 38?
@@ -145,20 +148,6 @@ Always back up your mnemonic recovery words, and your password in two separate s
 It is also implemented in the [NBitcoin library](https://github.com/MetacoSA/NBitcoin), which is used by Wasabi.
 Additionally, there is no standard way (BIP) to encrypt HD wallets.
 Take into account that it is not only encryption what BIP 38 provides but also a brute-force protection.
-
-### What are the terms and conditions?
-
-The most important parts of the legal documents are summarized in the following points:
-- The service is open-source under the MIT license.
-- The service is provided on a non-custodial basis.
-Safekeeping of keys are the sole responsibility of the user.
-- The user is solely responsible to act according to their local laws and regulations.
-- We do not store any personally identifiable information.
-Moreover, our trustless software architecture prevents us from gathering this information in the first place.
-- A transaction fee is only charged by the service provider for CoinJoin transactions.
-- We only provide written support, and NEVER ask for recovery words, passwords or similar security critical information.
-
-Read the whole document of [terms and conditions, privacy policy, and legal statement here](https://github.com/zkSNACKs/WalletWasabi/blob/master/WalletWasabi/Legal/Assets/LegalDocumentsWw2.txt)
 
 ### Can I import a watch-only extended public key?
 
@@ -188,6 +177,11 @@ Open a text editor and paste the following wallet structure:
 
 Then paste your _SegWit Extended Account Public Key_ in-between the quotes of the field `"ExtPubKey": "paste segwit xpub here",` and your _Taproot Extended Account Public Key_ in-between the quotes of the field `TaprootExtPubKey": "paste taproot xpub here",`
 
+:::warning
+Watch-only wallets are not officially supported.
+Only take action if you're completely certain of what you're doing.
+:::
+
 You can also change the derivation path fields if you want to import a different derivation path.
 But this is only for advanced usage. 
 Notice that Wasabi only works with SegWit v0 bech32, and SegWit v1 bech32m (Taproot) addresses.
@@ -213,18 +207,10 @@ If the coinjoin strategy is changed to one with a different anonnymity score tar
 ### What does the bar with the colored segments mean?
 
 The colored segments make up the `Privacy Bar`.
-The Privacy Bar is supposed to give the user an easy overview of the wallet's coins and it's privacy progress.
-The color of each segment indicates the private coins (dark green), semi-private coins (light green), or non-private coins (grey).
+The Privacy Bar is supposed to give the user an easy overview of the wallet's coins and its privacy progress.
+The color of each segment indicates the private coins (green), semi-private coins (light green), or non-private coins (grey).
 
 ![Wasabi Wallet Privacy Bar](/PrivacyBar.png "Wasabi Wallet Privacy Bar")
-
-### How can I display the fee in sats?
-
-By default, the wallet displays all fees in BTC (mining fees, coinjoin fees etc.).
-This can be changed to sats in the `Settings`.
-Go to `Settings` -> `General` -> `Fee display unit` and change it to `sats`.
-
-![Wasabi Wallet Fee Display Unit](/FeeDisplayUnit.png "Wasabi Wallet Fee Display Unit")
 
 ### What is the box (music box) at the bottom of the wallet's main view?
 
@@ -236,9 +222,9 @@ It also shows some information about the current coinjoin round.
 
 ### Does Wasabi support Taproot?
 
-Wasabi supports Taproot, except that the user cannot generate Taproot addresses.
+Wasabi supports Taproot.
 
-> While the user cannot generate a Taproot address in the GUI, his wallet might have Taproot coins (from coinjoin, or change output from a single user transaction).
+And since Wasabi version [2.8.1](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.8.1) Taproot addresses are the default.
 
 ## Synchronization
 
@@ -263,7 +249,7 @@ Read more [here](/using-wasabi/WalletLoad.md).
 
 ### How do I know if the synchronization is finished?
 
-Once Tor and backend are properly connected and you have peers, you will see a checkmark at the bottom right corner of the main view.
+Once Tor and the peers are properly connected, you will see a checkmark at the bottom right corner of the main view.
 The timer of the loading wallet page runs out when all the block filters and all the relevant blocks are downloaded and the wallet is synchronized.
 
 ![Wasabi Wallet Status Bar](/WalletSynchronizing.png "Wasabi Wallet Status Bar")
@@ -290,14 +276,17 @@ If you shutdown your computer or kill Wasabi while a wallet is synchronizing the
 
 ### How do I resync (rescan) my wallet?
 
-You can rescan an existing Wasabi wallet by editing the `Height` in the wallet file.
+Since Wasabi version [2.5.0](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.5.0) there is a _Resync Wallet_ button at the _Tools_ tab at _Wallet Settings_.
+Optionally, you can specify a block height to resync from, and since Wasabi version [2.8.4](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.8.4) you can also raise the gap limit there, to find funds on addresses beyond the current range.
+Wasabi restarts and synchronizes the wallet again.
+
+You can also rescan an existing Wasabi wallet manually by editing the `Height` in the wallet file.
 
 - Start Wasabi.
 - Type `Wallet Folder` in the search bar and open it.
 - Close Wasabi.
 - Open the wallet file in your favorite text editor.
 - Set the `Height` to 0.
-- Set the `TurboSyncHeight` to 0.
 
 ```json
 { // only relevant parts are shown
@@ -306,7 +295,6 @@ You can rescan an existing Wasabi wallet by editing the `Height` in the wallet f
   "BlockchainState": {
     "Network": "Main",
     "Height": "0",
-    "TurboSyncHeight": "0"
 
   }
 }
@@ -316,23 +304,26 @@ You can rescan an existing Wasabi wallet by editing the `Height` in the wallet f
 - Start Wasabi again, open your wallet and wait for the synchronization.
 
 :::tip
-Changing the Height and TurboSyncHeight to 0 will trigger a full resync of your wallet, and that can take some time depending on the size of your wallet (how many transactions it had).
+Changing the Height to 0 will trigger a full resync of your wallet, and that can take some time depending on the size of your wallet (how many transactions it had).
 
 For example if the problem happened 3 days ago then you can go back a week or so to resync the wallet:
 
 `new_height = current_height - (7 * 144)`
 
-TurboSyncHeight and Height should always be set to the same value.
 :::
 
 :::tip
-If you are doing a re-synchronization because you expect some missing funds, but after resync you still think your balance is not correct then try to increase the [gap limit](/FAQ/FAQ-UseWasabi.md#how-do-i-change-the-gap-limit-of-a-wallet) of the wallet.
+If you are doing a re-synchronization because you expect some missing funds, but after resync you still think your balance is not correct then resync again with a higher [gap limit](/FAQ/FAQ-UseWasabi.md#how-do-i-change-the-gap-limit-of-a-wallet).
 :::
 
 ### Can Wasabi work with a pruned bitcoin node?
 
-No.
-Wasabi client doesn't work with pruned nodes.
+Yes, Wasabi works with pruned nodes.
+*  Wasabi client: it will fetch the blocks from the node, with the P2P network as fallback in case the block is missing.
+The node needs to have BIP-158 block filters enabled to be independent of the indexer.
+*  Indexer: the node needs to have the blocks since segwit activation in order to start the indexing process.
+Once it computes and stores all the compact filters, the node can be pruned even more.
+*  Coordinator: it doesn't use blocks, it only needs the utxoset.
 
 ### Can I run a Wasabi headless daemon?
 
@@ -359,7 +350,8 @@ Wasabi uses [BIP 44 multi-account hierarchy for deterministic wallets](https://g
 
 ### How do I generate a new receiving address?
 
-You can generate a new bech32 address in the `Receive` dialog of Wasabi Wallet.
+You can generate a new address using the `Receive` button in the main view's top right corner.
+By default it returns a Taproot (bech32m) address, the drop-down can be used to generate a SegWit (bech32) address.
 First you must set a label for it, so that you later know who knows that this address is yours.
 Be precise in the label of the observers who know this address is yours, as this is an important part of good [coin selection](/why-wasabi/Coins.md) privacy best practices.
 Do not write anything else on the label exept the name of the entities that know this address belongs to you.
@@ -372,7 +364,9 @@ This is a good feature to help protect you against [address reuse](/why-wasabi/A
 ### Where can I find previously generated addresses?
 
 Generated addresses which haven't received any funds yet, are displayed at the `Addresses Awaiting Payment` list.
-Click on the `Receive` button > `Addresses Awaiting Payment`
+Click on the `Receive` button > `Addresses Awaiting Payment`. 
+
+SegWit and Taproot addresses are two different lists, use the receive button drop-down to see the desired type.
 
 ![Addresses Awaiting Payment](/AddressesAwaitingPayment.png "Addresses Awaiting Payment")
 
@@ -384,7 +378,11 @@ When you import the wallet file into a new Wasabi client, then it will use this 
 
 ### How do I change the gap limit of a wallet?
 
-You can change the gap limit of an already existing Wasabi wallet by editing the wallet file.
+Since Wasabi version [2.8.4](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.8.4) you can raise the gap limit of an existing wallet with the _Resync Wallet_ tool at the _Tools_ tab at _Wallet Settings_.
+Enter the new gap limit in the optional field, and Wasabi restarts and rescans the wallet with it.
+When recovering a wallet, the gap limit can be set in the [Advanced Recovery Options](/using-wasabi/WalletRecovery.md).
+
+You can also change the gap limit of an already existing Wasabi wallet by editing the wallet file.
 Open the wallet folder by typing `Wallet Folder` in the search bar.
 Then, open the wallet file in your favourite text editor.
 
@@ -485,30 +483,17 @@ The QR Code is displayed and can be saved as a png file by clicking on the Save 
 
 Wasabi follows [BIP 84: Derivation scheme for P2WPKH Based Accounts](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki) (`m/84'/0'/0'`) and [BIP 86: Key Derivation for Single Key P2TR Outputs](https://github.com/bitcoin/bips/blob/master/bip-0086.mediawiki) (`m/86'/0'/0'`).
 
-Note that Wasabi is currently not generating external taproot addresses yet so the main path is `m/84'/0'/0'`.
-
 On TestNet Wasabi uses the paths `m/84'/1'/0'` and `m/86'/1'/0'`.
 On RegTest it uses `m/84'/0'/0'` and `m/86'/0'/0'`, and not the standard `m/84'/1'/0'` and `m/86'/1'/0'` paths.
+On signet it uses `m/84'/1'/0'` and `m/86'/1'/0'`.
 Due to the coinjoin implementation, the key depth can be rather large, thus when recovering, the gap limit should be elevated to at least 100.
 
 ### Can I generate a multi signature script?
 
 No.
-
-Multi signature scripts define that there need to be m-of-n signatures provided in order to spend this UTXO.
-For example in a 2-of-3, Alice alone cannot spend the sats, she needs the collaboration of either Bob or Charlie.
-In current implementations, a legacy and SegWit v0 multisig address is clearly distinguishable, there are three public keys and two signatures, and not one single public key and signature.
-This means that your anonymity set, the crowd you hide in, gets a lot smaller.
-If some one knows that you use a multisig wallet, then they can narrow down their search for your coins.
-Thus, use of multisig decreases your privacy, and Wasabi is not implementing tools that degrade your privacy.
-
-Yet multisig is a popular feature, and many Wasabikas do request it for extra security, willing to trade-off some privacy.
-[Electrum Wallet](https://electrum.org) is a fantastic wallet with many features, but only private if you connect to your own Electrum server full node.
-Electrum can be used to create different types of m-of-n multisig scripts, including the use of hardware wallets.
-
-Schnorr key and signature aggregation with MuSig increase privacy of multisig wallets, since only one public key, not n, are committed on the blockchain.
-On November 14th, 2021 at block 709632, Taproot was activated in the Bitcoin consensus layer so there are no major privacy concerns standing in the way of Wasabi multisig anymore.
-At the moment, it is still not available as of yet.
+Script conditions are revealed on the blockchain when coins are spent, which reduces the anonymity set of the sender.
+Instead, Wasabi uses SLIP39 (Shamir's Secret-Sharing) for multiparty backups.
+This enables partial ownership of a wallet's private keys (such as requiring 3 out of 5 shares to spend) without revealing the spending conditions on chain.
 
 ### How does Wasabi know of incoming transactions to the mempool?
 
@@ -522,13 +507,13 @@ In this case you have to wait until your transaction is confirmed in a block, an
 
 Wasabi doesn't provide a way to export all generated addresses (used and unused), however they are listed by using the [listkeys](/using-wasabi/RPC.md#listkeys) RPC command.
 
-It is not possible to view previsously used addresses in the GUI, as here only [unused addresses](/FAQ/FAQ-UseWasabi.md#where-can-i-find-previously-generated-addresses) are shown.
+It is not possible to view previously used addresses in the GUI, as here only [unused addresses](/FAQ/FAQ-UseWasabi.md#where-can-i-find-previously-generated-addresses) are shown.
 
 ## Send
 
 ### How do I set a destination address?
 
-In the `Send` dialog, there is a box called `To`, enter here the bitcoin address or PayJoin URL.
+In the `Send` dialog, there is a box called `To`, enter here the bitcoin address, Silent Payment address or PayJoin URL.
 If you have an address in the clipboard, then it can be pasted by using the paste button or right click.
 You can also type in the address manually, there is a checksum to help you identify typos.
 Be careful and double-check the address, there is no way to revert this transaction and change the destination.
@@ -556,10 +541,14 @@ However, you can use the [RPC server `send` call](/using-wasabi/RPC.md#send) and
 
 No. That is currently not possible.
 
+### Can I set the change address type?
+
+By default, the change address type is random between SegWit & Taproot.
+This can be set to SegWit or Taproot only in the _Wallet Settings_.
+
 ### Does Wasabi support sending RBF?
 
-All _send_ transactions signal RBF by default.
-A pending transaction may be bumped (with RBF) by using the [_Speed Up Transaction_ feature](/FAQ/FAQ-UseWasabi.md#how-can-i-speed-up-a-pending-transaction).
+Yes, a pending transaction may be bumped or cancelled (with RBF) by using the [_Speed Up Transaction_ feature](/FAQ/FAQ-UseWasabi.md#how-can-i-speed-up-a-pending-unconfirmed-transaction-cpfp-rbf).
 
 ### Why does Wasabi choose a new random node every time I send a transaction?
 
@@ -574,8 +563,7 @@ This reduces the risk of a passive bystander being able to link two transactions
 
 ### What fee should I select?
 
-Wasabi uses the [smartfee](https://bitcointechtalk.com/an-introduction-to-bitcoin-core-fee-estimation-27920880ad0) estimation algorithm provided by bitcoind.
-This integrates both data from recent blocks, as well as the local mempool to estimate the current and future demand for blockspace.
+Wasabi fetches fee esimations from mempool.space (default), blockstream.info or block.xyz.
 The lower the fee is, the longer the estimated wait; and the higher the fee, the faster the confirmation will come.
 There are several different confidence levels, each of them gives an educated guess how soon the transaction will confirm.
 But the provided time frames are only a rough estimation, and not at all a precise metric.
@@ -583,7 +571,7 @@ But the provided time frames are only a rough estimation, and not at all a preci
 ![Wasabi Wallet mining fee settings](/SendFeeSlider.png "Wasabi Wallet mining fee settings")
 
 Because confirmation fee estimation is more an art than a science, you can also set the fee manually.
-Then you can go after your gut feeling, [mempool analysis](https://mempool.space/), or just putting the minimum of 1 sat/vByte.
+Then you can go after your gut feeling, [mempool analysis](https://mempool.space/), or just putting the minimum of 0.1 sat/vByte.
 
 For a transaction to yourself, for example from your hot coinjoin wallet to your hardware wallet, you don't need to have fast confirmation, so you can set a relatively low fee.
 But to send from the hot coinjoin wallet to the coffee shop, you might want to get faster confirmation, thus paying a higher fee.
@@ -606,25 +594,33 @@ At the transaction fee slider dialog, click on `Advanced` and manually type the 
 ### How does Wasabi select which coins to send?
 
 If the user has coins with the same label as the recipient of the outgoing transaction (coins received in the past from the same recipient), then Wasabi automatically selects these coins.
-If they are not enough, then Wasabi will also select private and semi private coins if necessary.
-If there are not enough private and semi-private coins for this transaction, then Wasabi will select non-private coins also.
+If they are not enough, then Wasabi will select private coins, and additionally semi private coins if needed.
+If there are not enough private and semi-private coins for the transaction, then Wasabi will also select non-private coins.
 The user can change which non-private coins will be used, based on the labelling system.
+
+When an address contains multiple unspent transaction outputs (UTXOs) due to address reuse, Wasabi automatically selects all UTXOs associated with that address as inputs for the transaction.
 
 ### How is the transaction broadcast?
 
-Wasabi connects only to Bitcoin nodes that provide a Tor onion service, so end-to-end encryption is enforced between the peers, without involving any exit node.
-Each peer is connected to through a different Tor stream.
-Transactions are broadcast to only one random peer over Tor and immediately after that this peer is disconnected.
+Wasabi has 3 different mechanisms to broadcast a transaction, it will try in the following order:
+1. Broadcast to the connected trusted node
+2. Broadcast to the Bitcoin P2P network
+3. Broadcast to an external site.
 
-If for some reason this fails, and a local [Bitcoin full node](/using-wasabi/BitcoinFullNode.md) is connected, then this is used to broadcast the transaction.
-By default it is gossiped to 8 peers over clearnet, but this depends on how the full node is configured by the user.
+1: The transaction is broadcast by the RPC if the user has specified a trusted node. The Bitcoin node will then propagate the transaction to the network.
 
-If this too fails, Wasabi will (in the last resort) send the transaction through a new Tor identity to the coordinator backend for broadcasting.
+2: Wasabi will use its connected peers to broadcast a transaction in the following way:
 
-Once a transaction is sent, Wasabi will always open a new Tor circuit with a new random node on the network, in order to avoid giving away too much information to one party.
-When you send two consecutive transactions via Wasabi, you can be sure that they appear in two very different places on the network.
+- Check that there are enough connected nodes 
+- Randomly select a subset of the connected nodes: 20% of number of connected nodes + 1, with a minimum of 2.
+This means that if there are 12 peers connected, it will be broadcast to 3 nodes.
+- Broadcast the transaction to the selected nodes (timeout if this takes more than 10 seconds)
+- Receive confirmation from these nodes that the transaction was propagated (timeout if this takes more than 21 seconds)
+- Disconnect from the nodes that were used for broadcasting
 
-Wasabi might implement [BIP 156](https://github.com/bitcoin/bips/blob/master/bip-0156.mediawiki) the Dandelion protocol for transaction broadcasting when the Bitcoin network adopts it.
+3: The transaction is broadcast to an external site (default is Mempool Space) using a new Tor identity.
+
+Once a transaction is sent, Wasabi will always open a new Tor circuit with a new random node on the network, in order to avoid revealing too much information to one party.
 
 ### What is the cluster history?
 
@@ -670,10 +666,6 @@ Example: If you select 10 coins with total value of 2 btc and you want to send 1
 
 This is good for privacy, and also saves you some transaction fees.
 
-### How can I bump the transaction fee with child pays for parent (CPFP)?
-
-Since Wasabi version [2.0.4](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v2.0.4) this FAQ is now obsolete because of the new [_Speed Up Transaction_ feature](/FAQ/FAQ-UseWasabi.md#how-can-i-speed-up-a-pending-transaction) that can be used.
-
 ### How can I speed up a pending/unconfirmed transaction (CPFP/RBF)?
 
 A pending (unconfirmed) transaction can be speeded up by using the _Speed Up Transaction_ feature which will send a new transaction with a higher fee rate to replace the current one.
@@ -688,7 +680,7 @@ To speed up a transaction:
 
 ![Speed Up Tx Confirm](/SpeedUpTxConfirm.png "Speed Up Tx Confirm")
 
-- Enter your Password to send the new transaction.
+- Enter your passphrase to send the new transaction.
 - Transaction succesfully speeded up!
 
 Read more [here](/using-wasabi/Send.md#speed-up-or-cancel-transaction).
@@ -714,7 +706,7 @@ To cancel a transaction:
 
 ![Cancel Tx Confirm](/CancelTxConfirm.png "Cancel Tx Confirm")
 
-- Enter your Password to send the new transaction.
+- Enter your passphrase to send the new transaction.
 - Transaction cancelled!
 
 Read more [here](/using-wasabi/Send.md#speed-up-or-cancel-transaction).
@@ -723,7 +715,7 @@ Read more [here](/using-wasabi/Send.md#speed-up-or-cancel-transaction).
 
 ### Why is there no `Send` button, only the `Receive` button is displayed?
 
-When the wallet has a balance of 0.00000000 BTC, the `Send` button is hidden because there is no bitcoin to send.
+When the wallet has a balance of 0, the `Send` button is hidden because there is no bitcoin to send.
 So this happens when a new wallet has just been generated and it hasn't received any bitcoin yet.
 Receive some bitcoin and then the `Send` button will automatically be displayed.
 
@@ -742,58 +734,41 @@ When sending, the wallet automatically selects the private funds first.
 
 For example:
 
-When `PRIVATE` is 0.01120153 BTC, that means that I can send less than that privately.
+When `PRIVATE` is 0.00338462 BTC, that means I can send less than that privately.
 Even when the `Privacy Progress` is below 100%.
-So when sending, less than 0.01120153 BTC (to cover the mining fees) should be entered as the `Amount` in order to only use the private funds.
+So when sending, less than 0.00338462 BTC (to cover the mining fees) should be entered as the `Amount` in order to only use the private funds.
 
 ![Wasabi Wallet Privacy Progress Tile](/PrivacyProgressTile.png "Wasabi Wallet Privacy Progress Tile")
 
 :::tip Use the Privacy Suggestions
-Since Wasabi version [2.0.4](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v2.0.4), there are privacy suggestions to only send private or semi-private coins.
+Since Wasabi version [2.0.4](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.0.4), there are privacy suggestions to only send private or semi-private coins.
 :::
 
 Read more [here](/using-wasabi/Send.md#privacy-suggestions).
 
 ## CoinJoin
 
-### What's the legal status of Wasabi/CoinJoin?
-
-USA: On May 9, 2019, the Financial Crimes Enforcement Network (FinCEN) issued an interpretive guidance that stated the following in section 4.5.1(b):
-> An anonymizing software provider is not a money transmitter. FinCEN regulations exempt from the definition of money transmitter those persons providing "the delivery, communication, or network access services used by a money transmitter to support money transmission services."
-
-Wasabi is an Anonymizing software provider so it is not a money transmitter, thus not under Bank Secrecy Act (BSA) regulations.
-Basically we can continue to operate like now and [it is compliant](/why-wasabi/LegalConcern.md).
-
-Here's a great explanation about it:
-
-[![Watch the video](/Logo_without_text_with_bg_dark_with_yt.png)](https://youtu.be/tLOMcU8MhWM?t=1305)
-
 ### What is the minimum amount required to coinjoin?
 
-The minimum amount of bitcoin per coinjoin round is 0.00005000 BTC (5000 sats) + mining fees.
+The coordinator sets the minimum amount of bitcoin required to participate in a coinjoin round.
 
-> The minimum amount can be higher than 5000 sats when mining fees are relatively high, to not create uneconomical outputs.
-The minimum amount for the current coinjoin round(s) is displayed on the https://stats.wasabiwallet.io/ page at the _Coinjoin main net lobbies_ section. (The _Min input amount_ excludes the additionally required mining fee)
+The default is 0.00005000 BTC (5000 sats) + mining fees.
 
 ### What is the maximum amount I can coinjoin?
 
-The maximum possible amount is 43000 BTC per coin per coinjoin round.
-If the user has a coin of more than 43000 BTC, then it must be broken down into smaller parts to be able to coinjoin.
+The coordinator sets the maximum amount of bitcoin an input can have to participate in a coinjoin round.
+
+The default maximum is a 43000 BTC UTXO.
 
 ### What are the fees for the coinjoin?
 
-Coinjoin fees are composed of coordination fees and mining (network) fees.
-Coins (UTXOs) with a value above 0.01 BTC pay 0.3% as a coordination fee + mining fees.
-Coins of 0.01 BTC or below don't pay coordination fees.
-Remixes, even after one transaction, also don't pay coordination fees. 
-Thus, a payment made with coinjoined funds allows the sender and the recipient to remix their coins without paying any coordination fees.
+As of Wasabi version [2.2.0.0](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.2.0.0), the Wasabi client will only participate in 
+coinjoin rounds where it only pays for the mining fees.
 
-|  | > 0.01 BTC | 0.01 BTC and less |
-|:---:|:---:|:---:|
-| Fresh input | 0.3% coordination fee + mining fees  | mining fees |
-| Remix* | mining fees | mining fees |
+Previous versions also included the coordination fee concept, where the coordinator could charge a fee for providing the service.
+This has now been removed, so it will not participate in coinjoin rounds that charge a coordination fee.
 
-*Remix includes a 1 hop transaction*
+Read more [here](/using-wasabi/CoinJoin.md#fees).
 
 ### What is the anonymity set?
 
@@ -849,7 +824,7 @@ After that, a unique Tor identity will be generated for each input, which will b
 The coordinator now verifies that this input is allowed to register (i.e. there is still room for more inputs, the coin is confirmed, the input proof is valid etc.).
 If all checks are valid, the coordinator creates and sends back the credentials.
 
-Since the goal is to have at least 150 inputs in one round, the [input registration phase](/using-wasabi/CoinJoin.md#input-registration) can fail if too few participants registered in the available time frame.
+Since the goal is to have at least the minimum input count in one round, the [input registration phase](/using-wasabi/CoinJoin.md#input-registration) can fail if too few participants registered in the available time frame.
 
 ### What is happening in the connection confirmation phase?
 
@@ -871,7 +846,7 @@ Bob now sends the coordinator an unblinded credential (signed by the coordinator
 After all inputs and outputs are registered, the coordinator has all the information to build the coinjoin transaction.
 This raw (unsigned) transaction is sent to all Alices, each of them verifies that the transaction is valid and then signs it.
 The signatures are sent back to the coordinator who accumulates all of them.
-The [singing phase](/using-wasabi/CoinJoin.md#signing) is concluded when the coordinator receives all the valid signatures for all registered inputs.
+The [signing phase](/using-wasabi/CoinJoin.md#signing) is concluded when the coordinator receives all the valid signatures for all registered inputs.
 
 ### What is happening during the blame round?
 
@@ -888,23 +863,13 @@ In the [broadcasting phase](/using-wasabi/CoinJoin.md#broadcasting) the coordina
 You'd gain 1 less anonymity set than if you'd only mix with one wallet (and Wasabi doesn't display that).
 On the other hand, the systemic anonymity is slightly improved if a few people are mixing with multiple wallets, because that removes the certainty on this Blockchain analysis assumption.
 
-### How is the anonymity set target determined for CoinJoins?
-
-`2*2 = 4` and `3*3 = 9`. `2->3: 50% increase`, `4->9:125%` increase.
-So remixing with larger anonsets is exponentially more effective than smaller anonsets.
-Regarding why do we want 100 number, is among some other reasons, because that was our calculation to be that would make rounds happen in every 2-5 minutes, considering the liquidity of some custodial mixers.
-Regarding DoS attack, right now our DoS configuration is set to be pretty permissive and this seems to be sufficient for the time being.
-If a DoS attack would happen, Wasabi team would just harden it in the config file and would kick the bad actors out.
-Now if even that would fail, then we can start thinking about lowering the required peers and also other methods.
-
 ### I'd like to experience coinjoin but I'm not comfortable using real Bitcoin. What can I do?
 
-You can try to make a coinjoin via Wasabi on the Bitcoin [TestNet](/using-wasabi/Testnet.md) (an alternative Bitcoin network, to be used for testing).
-Go to `Settings` > `Bitcoin` and change the network to `TestNet`.
+You can try to make a coinjoin via Wasabi on the Bitcoin [TestNet4](/using-wasabi/Testnet.md) (an alternative Bitcoin network, to be used for testing).
+Go to `Settings` > `Bitcoin` and change the network to `TestNet4`.
 Then restart your Wasabi and create a new wallet, this is needed because Wasabi differentiates between "Main wallets" and "TestNet wallets".
 This wallet will synchronize for the TestNet, and generate TestNet addresses.
-You can get tBTC from faucets like:
-[coinfaucet.eu/en/btc-testnet](https://coinfaucet.eu/en/btc-testnet/) or [bitcoinfaucet.uo1.net](https://bitcoinfaucet.uo1.net/)
+You can get tBTC from faucets like [this one](https://faucet.testnet4.dev/) or [https://coinfaucet.eu/en/btc-testnet4/](https://coinfaucet.eu/en/btc-testnet4/).
 
 ### Does Wasabi have to stay on during coinjoin?
 
@@ -917,7 +882,7 @@ Here is how Wasabi handles different scenarios:
 |  | During [input registration phase](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-input-registration-phase) | After input registration phase |
 |:---:|:---:|:---:|
 | You close Wasabi | Your registered coins are automatically dequeued | Wasabi will make you wait until the round finishes |
-| Wasabi goes offline | Your registered coins are automatically timed out by the coordinator after 1 minute | The coin(s) that disrupted the round will be banned for 6h from participating in another coinjoin. (This is to prevent [DoS attacks](https://github.com/nopara73/ZeroLink/#d-dos-attack)) |
+| Wasabi goes offline | Your registered coins are automatically timed out by the coordinator after some time | The coin(s) that disrupted the round will likely be banned by the coordinator from participating in another coinjoin for a period of time. (This is to prevent [DoS attacks](https://github.com/nopara73/ZeroLink/#d-dos-attack)) |
 
 ### What if there's a power outage during CoinJoin? Do I lose my coins?
 
@@ -934,16 +899,13 @@ With Wasabi this can be achieved in a matter of hours.
 
 ### How does my wallet communicate with the Wasabi coordinator server?
 
-Wasabi communicates in many ways to the coordinator server, and it is always over the Tor network.
+Wasabi communicates to the coordinator server to participate in coinjoins.
+By default, all communication is done over Tor.
 
-First of all, Wasabi uses [BIP 158 block filters](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki) to ensure network level privacy.
-You can follow these FAQs to have a full explanation on the theme:
-- [What are BIP-158 Block Filters?](/FAQ/FAQ-UseWasabi.md#what-are-bip-158-block-filters)
-- [What software supplies the block filters that Wasabi uses?](/FAQ/FAQ-Introduction.md#what-software-supplies-the-block-filters-that-wasabi-uses)
 - [Can the coordinator attack me?](/FAQ/FAQ-Introduction.md#can-the-coordinator-attack-me)
 - [Is the backend's coordinator code open-source?](/FAQ/FAQ-Introduction.md#is-the-backend-s-coordinator-code-open-source)
 
-Then, there are five different phases in a CoinJoin.
+Then, there are five different phases in a coinjoin.
 You can follow these links to have a full explanation on that:
 1. [Input registration phase](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-input-registration-phase)
 2. [Connection confirmation phase](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-connection-confirmation-phase)
@@ -951,11 +913,9 @@ You can follow these links to have a full explanation on that:
 4. [Signing phase](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-signing-phase)
 5. [Broadcasting phase](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-broadcasting-phase)
 
-The backend server also sends you information about the current mempool for fee estimation as well as the US Dollar exchange rate.
-
 ### What is the address of the coordinator?
 
-The coordinator possibly gets paid in every coinjoin.
+The coordinator possibly gets paid in every coinjoin by collecting the [leftovers](https://docs.wasabiwallet.io/using-wasabi/CoinJoin.html#fees).
 Wasabi is using a fresh unused coordinator address for every coinjoin round.
 
 ### What is the maximum number of coins that can be registered in a coinjoin?
@@ -974,25 +934,55 @@ No, that is currently not possible.
 The automatic coinjoin robot registers the coins, based on multiple factors.
 
 :::tip
-You can enable the [red coin isolation](/FAQ/FAQ-UseWasabi.md#what-does-the-red-coin-isolation-mean-in-the-coinjoin-settings) setting, in case you want to prevent possible input heuristics (from outside observers) of anonscore 1 coins into the same coinjoin round.
+You can enable the [non-private coin isolation](/FAQ/FAQ-UseWasabi.md#what-does-the-non-private-coin-isolation-mean-in-the-coinjoin-settings) setting, in case you want to prevent possible input heuristics (from outside observers) of anonscore 1 coins into the same coinjoin round.
+:::
+
+### How to exclude/freeze coins from coinjoin?
+
+Since Wasabi version [2.0.8](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.0.8) it is possible to exclude coins from participating in coinjoin in the GUI.
+
+Click on the music box menu items -> select _Exclude Coins_ -> select the coins to exclude.
+
+![Music Box Menu Items](/MusicBoxMenuItems.png "Music Box Menu Items")
+
+The coins will remain excluded until they are manually deselected.
+
+Alternatively, coins can be excluded from coinjoin using the [excludefromcoinjoin](/using-wasabi/RPC.html#excludefromcoinjoin) RPC call.
+
+### Can I coinjoin to another wallet?
+
+Yes, since Wasabi version [2.0.7.2](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.0.7.2) it is possible to coinjoin to another wallet.
+
+The output wallet must be loaded in Wasabi, as it is not possible to coinjoin to an external wallet.
+It will coinjoin as usual, but use the other wallet's addresses for the coinjoin outputs.
+
+Go to the _Wallet Settings_ -> _Coinjoin_ tab -> select the wallet you want to coinjoin to.
+
+![Coinjoin To Wallet](/WalletSettingsCoinjoinToWallet.png "Coinjoin To Wallet")
+
+:::warning
+This feature does **not** take into account the anonymity score of coins.
+It will always send all coinjoin outputs to the other wallet, regardless of whether they are (sufficiently) private or not.
 :::
 
 ### How long does it take to make my wallet 100% private?
 
-Depending on many factors, like the `Anonymity score target`, the `coinjoin strategy`, and the amount of bitcoin, it can take from a couple hours to multiple days.
+Depending on many factors, such as the `Coinjoin Strategy` (_Anonymity core target_ and _Non-private coin isolation_), the amount of bitcoin, and the liquidity of the coordinator, this can take from a few hours to several days or even more.
 
 ### What coinjoin strategy should I select?
 
 There is no answer for all, or a "best" strategy, it depends on the user's privacy needs.
 The coinjoin strategy should be selected according to the user's preference:
-Do you want to `Minimize costs`, `Maximize speed`, or `Maximize privacy`?
-Or the user can create their own `Custom` strategy.
+
+- If you want to maximize privacy, then select `Enhance Privacy` (which comes with a cost as it will do more coinjoins).
+- If you want to "just" coinjoin your funds, then select `Default Strategy`.
+- If you want to minimize costs, then select `Reduce Costs` (which will do the minimum amount of coinjoin).
 
 ![Wasabi Coinjoin Strategy](/CoinjoinStrategy.png "Wasabi Coinjoin Strategy")
 
-:::tip The default coinjoin strategy is `Maximize Speed`
-This strategy is sufficient for most users
-:::
+Or the user can create their own custom strategy by manually changing the settings.
+
+>The `Default Strategy` is sufficient for most users 
 
 ### What is the coinjoin strategy?
 
@@ -1007,53 +997,47 @@ Read more [here](/using-wasabi/CoinJoin.md).
 
 ### What are the differences/settings per coinjoin strategy?
 
-|  | Minimize Costs | Maximize Speed | Maximize Privacy | 
+|  | Enhance privacy | Default strategy | Reduce costs | 
 |:---:|:---:|:---:|:---:|
-| Anonymity score target | 5 | 5 | random between 27 and 75 |
-| Coinjoin time preference   | weeks | hours | hours |
-| Red coin isolation | not enabled  | not enabled | enabled |
+| Non-private coin isolation | enabled  | enabled | not enabled |
+| Anonymity score target | random between 30 and 50 | 10 | 5 |
 
-### What does the `Auto-start coinjoin threshold` mean in the coinjoin settings?
+### What does the `Stop coinjoin threshold` mean in the coinjoin settings?
 
-It is the amount at which your funds will automatically participate in coinjoin in the background.
-If the non-private wallet balance is less than this amount coinjoin will not automatically start.
-A use case is that it might not be economical to coinjoin with this non-private amount (fee amount compared to coinjoin amount).
+It is the confirmed wallet balance under which coinjoin will automatically stop/not start.
 
-For example, if the non-private balance is 0.005 BTC and the `Auto-start coinjoin threshold` is 0.01 BTC, the user will have to manually press Play to start coinjoining.
-The default Auto-start coinjoin threshold is 0.01 BTC.
+A use case is that it might not be economical to coinjoin with this amount (fee amount compared to coinjoin amount).
 
-![Auto-start coinjoin threshold](/AutoStartCoinjoinThreshold.png "Auto-start coinjoin threshold")
+For example, if the confirmed balance is 0.0001 BTC, `Automatically start coinjoin` is enabled and the `Stop coinjoin threshold` is 0.005 BTC, the user will have to manually press Play to start coinjoining.
+The default _Stop coinjoin threshold_ is 0.005 BTC.
 
-### What does the `Red coin isolation` mean in the coinjoin settings?
+![Stop coinjoin threshold](/StopCoinjoinThreshold.png "Stop coinjoin threshold")
 
-When the `Red coin isolation` is enabled, only a single coin with anonymity score 1 will be allowed into the coinjoin registration.
+### What does the `Non-private coin isolation` mean in the coinjoin settings?
+
+When the `Non-private coin isolation` is enabled, only a single coin can be non-private (anonymity score 1) out of the registered coins into coinjoin.
 To prevent possible coinjoin input heuristics from outside observers.
-The `Red coin isolation` is enabled by default when the `Maximize Privacy` coinjoin strategy is selected.
+The `Non-private coin isolation` is enabled by default when the `Default Strategy` or `Enhance Privacy` coinjoin strategy is selected.
 
-![Red Coin Isolation](/RedCoinIsolation.png "Red Coin Isolation")
+![Non Private Coin Isolation](/NonPrivateCoinIsolation.png "Non Private Coin Isolation")
 
-### Do coinjoin transactions signal RBF?
+### Why do my coins occasionally get banned from participating in coinjoin?
 
-No.
-Coinjoin transactions do not signal RBF.
-
-### Why do my coins occasionally get banned from participating in CoinJoin?
-
-A CoinJoin consists of multiple users registering inputs (coins) and blinded outputs.
-Once the appropriate number of participants have registered, the actual transaction (the CoinJoin) is constructed by the coordinator, and given to all participants in the span of about 60 seconds.
-At this point, all registered participants must sign off on the CoinJoin, and if a single one of the participants fails to sign their input, the entire CoinJoin must be restarted.
+A coinjoin consists of multiple users registering inputs (coins) and blinded outputs.
+Once the appropriate number of participants have registered, the actual transaction (the coinjoin) is constructed by the coordinator, and given to all participants in the span of a short time frame (default 60 seconds).
+At this point, all registered participants must sign off on the coinjoin, and if a single one of the participants fails to sign their input, the entire coinjoin must be restarted.
 
 So this introduces a problem, or an attack vector - a malicious user could purposefully register coins, only to wait for the signing phase and not sign.
-This would halt the entire CoinJoin process for all other participants and Wasabi would no longer work.
+This would halt the entire coinjoin process for all other participants and Wasabi would no longer work.
 This is also known as [denial of service attack](https://github.com/nopara73/ZeroLink/#d-dos-attack).
 
 So a simple solution looks like this - the coordinator could collect signatures from all inputs, and if one or more input refuses to sign, the coordinator could record that input and temporarily (or even permanently) ban that coin from participation.
-This is a nice solution, as it mitigates a single coin from ruining all CoinJoins, but it too comes with trade-offs.
+This is a nice solution, as it mitigates a single coin from ruining all coinjoins, but it too comes with trade-offs.
 
-For example, most of the time, users fail to sign a CoinJoin for non-malicious reasons.
+For example, most of the time, users fail to sign a coinjoin for non-malicious reasons.
 Perhaps their Tor connection went down in precisely that moment, or perhaps their WiFi had a temporary flicker at the wrong time.
 Further, some users don't even realize that the signing phase is happening, and sometimes shut down their computer at exactly the wrong moment.
-All of these things hinder a successful CoinJoin for all other participants, but by pure accident.
+All of these things hinder a successful coinjoin for all other participants, but by pure accident.
 
 If you are one of the victims of this temporary banning then simply wait for the ban to expire and try again.
 The best thing you can do to avoid the issue is to have a strong internet connection and keep your computer online throughout the whole process.
@@ -1061,8 +1045,32 @@ The best thing you can do to avoid the issue is to have a strong internet connec
 :::tip Note:
 Banning does not mean freezing.
 You can send banned coins to anyone you want.
-This is a temporary ban on your coins in participation of the CoinJoin.
+This is a temporary ban on your coins from participating with the coordinator.
 :::
+
+### How do I find a coordinator?
+
+There are several ways to find a coordinator:
+
+- Users can do their own discovery with tools like [Wasabi Nostr](https://github.com/Kukks/wasabinostr), which reads Wabisabi coordinator announcements posted on Nostr relays.
+- Public statistics websites, such as [Liquisabi](https://liquisabi.com) or [Wabisator](https://wabisator.com).
+- A coordinator can advertise themselves, like on social media.
+- Run coordinators in your local community
+
+:::warning Don't trust, verify
+The listed public statistic websites are community run projects, use them with caution.
+It is best to do the discovery yourself.
+:::
+
+### How do I change the coordinator?
+
+Since Wasabi version [2.0.8](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.0.8), the coordinator can be changed in the GUI in the _Coordinator_ tab in the settings.
+
+Go to settings -> select coordinator tab -> paste/enter the URI -> restart Wasabi -> Wasabi will now use this coordinator.
+
+![Settings Coordinator URI](/SettingsCoordinatorURI.png "Settings Coordinator URI")
+
+Alternatively, the `CoordinatorUri` can be changed in the config file.
 
 ## Backup and Recovery
 
@@ -1078,70 +1086,72 @@ The mnemonic is displayed as 12 recovery words that are only shown once during t
 ![Wasabi Wallet recovery words](/AddWalletRecoveryWords.png "Wasabi Wallet recovery words")
 
 :::danger
-In order to restore a wallet, you need BOTH the recovery words AND the password!
+In order to restore a wallet, you need BOTH the recovery words AND the passphrase!
 :::
 
 It is a good idea to keep the two in separate analog backups, such as a laminated paper written with pencil.
 In order to defend against nature destroying fragile paper, you can consider stamping the words into metal.
-Use two different backups and locations for the mnemonic and password, because whoever has both [including a physical attacker] has full access to your sats.
+Use two different backups and locations for the mnemonic and passphrase, because whoever has both [including a physical attacker] has full access to your sats.
 Find a secure physical location to store the backups, maybe a home safe, or an expert security deposit box.
 
-Please see [Backup Best Practices](/using-wasabi/BackupBestPractices.md) for more information about backups.
+Please see [Wasabi Backup Best Practices](/using-wasabi/BackupBestPractices.md) for more information about backups.
 
 ### How do I back up my wallet file?
 
-Although you can back up your private keys with the mnemonic words and password, this is only a last resort recovery.
+Although you can back up your private keys with the mnemonic words and passphrase, this is only a last resort recovery.
 If you want to also secure your address labels, the anonscore and additional metadata, then you can do a digital backup.
-Simply copy the `WalletBackups` folder with the `wallet.json` files from your [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) onto suitable hardware, for example an encrypted USB stick.
-Note that this file has the encrypted private key (extracted from the extended private key), meaning that you only need the password to spend the bitcoin.
+Simply copy the `Wallets` folder with the `wallet.json` files from your [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) onto suitable hardware, for example an encrypted USB stick.
+Note that this file has the encrypted private key (extracted from the extended private key), meaning that you only need the passphrase to spend the bitcoin.
 This also contains the extended public key, the public keys, and the address labels, meaning that it completely links all the coins, both pre and post mix, with clear proof.
 
 :::warning
-Make sure to back up your password separately because it is necessary to spend your bitcoin.
+Make sure to back up your passphrase separately because it is necessary to spend your bitcoin.
 :::
 
 :::tip
-The wallet file backup is sensitive, in terms of privacy, but not critical in terms of loss of funds (if a password was used when generating the wallet).
+The wallet file backup is sensitive, in terms of privacy, but not critical in terms of loss of funds (if a passphrase was used when generating the wallet).
 So it is good advice to encrypt this wallet file.
 :::
 
 ### What do I need to recover my wallet?
 
-To recover your wallet you need either your Recovery Words + Password, or the Wallet File + Password, as shown in the table below.
+To recover your wallet you need either your Recovery Words + Passphrase, or the Wallet File + Passphrase, as shown in the table below.
 
-| | Recovery Words | Wallet File | Password
+| | Recovery Words | Wallet File | Passphrase
 :------------ | :-------------:| :-------------:| :-------------:
 Recovery Words | :x: | :x: | :heavy_check_mark:
 Wallet File | :x: | :x: | :heavy_check_mark:
-Password | :heavy_check_mark: | :heavy_check_mark: | :x:
+Passphrase | :heavy_check_mark: | :heavy_check_mark: | :x:
 
 :::tip
-If no password was entered at the wallet creation, then the Recovery Words or Wallet File alone are enough to recover the wallet.
+If no passphrase was entered at the wallet creation, then the Recovery Words or Wallet File alone are enough to recover the wallet.
 :::
 
 ### Can I recover my wallet without the password?
 
 No.
-The password you set is used as a 13th word (passphrase) as described in BIP39, you should back it up when you generate a wallet.
+The passphrase/password you set is used as a 13th word (passphrase) as described in BIP39, you should back it up when you generate a wallet.
 It is necessary to spend your bitcoin or to recover your wallet, as shown in [this table](/FAQ/FAQ-UseWasabi.md#what-do-i-need-to-recover-my-wallet).
 
 ### What should I do if I forget my password?
 
-Try to use the [Password Finder Tool](/using-wasabi/PasswordFinder.md) to find your password.
-Having a close guess of what the password is increases the possibility that you get your password.
+Try every possibility you can think of to find your passphrase, you have an unlimited number of tries.
+If that still doesn't work, you might want to try external password crackers or recovery tools, but be careful to only use well-tested, well-reviewed ones.
 
 ### I lost the recovery words but I still have the .json file and the password. Is my wallet still recoverable?
 
-Yes, but in this case it is advisable to create a new wallet and back up the new recovery words and the password, then move your bitcoin there.
+Yes, but in this case it is advisable to create a new wallet and back up the new recovery words and the passphrase, then move your bitcoin there.
 
-The .json file contains the encrypted secret that requires the password to derive your private keys.
+The .json file contains the encrypted secret that requires the passphrase to derive your private keys.
 That gives you access to your bitcoin.
 
 ### Can I verify the Recovery Words of an existing wallet?
 
 Yes.
-Go to `Wallet Settings` > `Verify Recovery Words`.
+Go to `Wallet Settings` > `Tools` > `Verify Recovery Words`.
 Type in your recovery words in the correct order, click on `Verify` and it will show you if they are correct or not.
+
+> It currently only works for BIP-39 backups, SLIP-39/multi-share backups cannot be verified with this tool.
 
 ![Wasabi Wallet Verify Recovery Words](/VerifyRecoveryWords.png "Wasabi Wallet Verify Recovery Words")
 
@@ -1156,13 +1166,13 @@ Type in your recovery words in the correct order, click on `Verify` and it will 
 ### What hardware wallets does Wasabi support?
 
 Wasabi uses the Bitcoin Core [Hardware Wallet Interface (HWI)](https://github.com/bitcoin-core/HWI) which allows it to support a variety of hardware wallets.
-For the complete list of all the officially supported hardware wallets, click [here](https://github.com/zkSNACKs/WalletWasabi/blob/master/WalletWasabi.Documentation/WasabiCompatibility.md#officially-supported-hardware-wallets).
+For the complete list of all the officially supported hardware wallets, click [here](https://github.com/WalletWasabi/WalletWasabi/blob/master/WalletWasabi.Documentation/WasabiCompatibility.md#officially-supported-hardware-wallets).
 
 ### Why does Wasabi use the Hardware Wallet Interface?
 
 Wasabi uses the [Bitcoin Core Hardware Wallet Interface [HWI]](https://github.com/bitcoin-core/HWI), a python library tool for proper integration of off-line signing devices.
 It provides a standard way for any software wallet to communicate with any hardware wallet without needing any device specific drivers.
-HWI was developed and carefully reviewed over several years, with outstanding contributions by [Andrew Chow](https://github.com/achow101).
+HWI was developed and carefully reviewed over several years, with outstanding contributions by [achow101](https://github.com/achow101).
 Wasabi implements C# code that executes the HWI tool.
 Wasabi uses this powerful tool because there are no other dependencies necessary to support all the existing and future hardware wallets.
 
@@ -1244,13 +1254,9 @@ A `Broadcast` button will be displayed next to the `Send` button, when _PSBT wor
 No, that is currently not possible.
 A coinjoin is a multi round interactive process, and requires fast signing by the participants, thus the keys need to be on a hot computer.
 Thus currently you have to send the bitcoins from your hardware wallet to a `hot` Wasabi Wallet, do the coinjoin and then send them back to a new address on the Hardware wallet for cold-storage.
+Or use the _coinjoin to wallet_ feature, as explained [here](/FAQ/FAQ-UseWasabi.md#can-i-coinjoin-to-another-wallet).
 
 Read more [here](/using-wasabi/ColdWasabi.md#cold-wasabi-protocol).
-
-:::tip
-Trezor now supports coinjoin with the Trezor Suite, using same rounds as Wasabi Wallet users.
-Read more [here](https://content.trezor.io/coinjoin).
-:::
 
 ### Does Ledger Live send my public keys and addresses to a third party server?
 
@@ -1276,12 +1282,14 @@ You should put a meaningful label when you generate a receive address in your ha
 ### Can I use Trezor One with Wasabi?
 
 No. Unfortunately, Trezor One is not supported by Wasabi Wallet.
-For the complete list of all the officially supported hardware wallets, click [here](https://github.com/zkSNACKs/WalletWasabi/blob/master/WalletWasabi.Documentation/WasabiCompatibility.md#officially-supported-hardware-wallets).
+For the complete list of all the officially supported hardware wallets, click [here](https://github.com/WalletWasabi/WalletWasabi/blob/master/WalletWasabi.Documentation/WasabiCompatibility.md#officially-supported-hardware-wallets).
 
 ### Can I use BitBox with Wasabi?
 
-No. Unfortunately, BitBox is not supported by Wasabi Wallet.
-For the complete list of all the officially supported hardware wallets, click [here](https://github.com/zkSNACKs/WalletWasabi/blob/master/WalletWasabi.Documentation/WasabiCompatibility.md#officially-supported-hardware-wallets).
+Yes, since Wasabi version [2.0.7](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.0.7) BitBox02-BtcOnly is supported, and since Wasabi version [2.8.4](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.8.4) the BitBox02 Nova as well.
+
+The device by default asks for a "Pairing code", currently, there is no such function in Wasabi. 
+Therefore, either disable the feature or unlock the device with BitBoxApp or hwi-qt before using it with Wasabi.
 
 ### How can I type in the passphrase of my Trezor T?
 
@@ -1295,7 +1303,9 @@ So Wasabi does not know about the existence of the Trezor Suite coinjoin coins.
 
 ### How can I use Hardware Wallets on Linux (udev rules)?
 
-On Linux, you need to create a set of `udev rules` for the hardware wallet to be reachable.
+Since Wasabi version [2.0.8](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.0.8) the Wasabi package contains the required udev rules, so they don't need to be manually installed.
+
+On older versions, you need to create a set of `udev rules` for the hardware wallet to be reachable.
 
 Udev rules instructions can be found [here](https://github.com/bitcoin-core/HWI/blob/master/hwilib/udev/README.md).
 
@@ -1320,13 +1330,13 @@ To see the individual coinjoins, the cluster can be expanded by clicking the arr
 
 ![History Coinjoin Expanded](/HistoryCoinjoinExpanded.png "History Coinjoin Expanded")
 
-A coinjoin is a payment within the same wallet, thus it only shows the coordination fee (if any) and mining fee leaving the wallet.
+A coinjoin is a payment within the same wallet, thus it only shows the fee leaving the wallet.
 
 ### Can I sort the history items?
 
-Yes, the history items can be sorted by clicking on the column title:
+Yes, the history items can be sorted by clicking on the transactions sort button:
 
-![Sort Date Column](/HistorySortDateColumn.png "Sort Date Column")
+![Sort Date Column](/HistorySort.png "Sort History")
 
 ### Can I search for a transaction ID in the history?
 
@@ -1343,7 +1353,7 @@ It will only show results of the wallets which are currently open.
 ### Can I export a list of transactions?
 
 There is currently no convenient way to export a list with transaction details inside the GUI.
-However, you can see the `wallet.json` files inside the `WalletBackups` folder (you can find it in your [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder)) which contains all the public keys, labels and anonset.
+However, you can see the `wallet.json` files inside the `Wallets` folder (you can find it in your [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder)) which contains all the public keys, labels and anonset.
 
 You can use the [Wasabi RPC server `gethistory` call](/using-wasabi/RPC.md#gethistory) to get a list of all transactions, including date, block height, amount, label and tx id.
 
@@ -1351,18 +1361,28 @@ You can use the [Wasabi RPC server `gethistory` call](/using-wasabi/RPC.md#gethi
 
 ### How do I connect my own full node to Wasabi?
 
-There are three different ways of using your [Bitcoin full node with Wasabi](/using-wasabi/BitcoinFullNode.md):
+Wasabi can connect to a specified full node using the Bitcoin RPC.
 
-- If you have a full node already running on the same computer as Wasabi, it will automatically be detected and used by default.
-- If you have a full node on a remote computer, then you can connect to it by specifying the local network IP address or Tor onion service in the Wasabi `Settings` tab.
+Go to `Settings` -> `Bitcoin` tab -> enable `Connect to Bitcoin Node RPC` -> specify the RPC endpoint and RPC credential string.
+The RPC credential string can be the username & password, or the cookie file of the node.
 
-![Wasabi Wallet Remote P2P Bitcoin Endpoint full node](/SettingsBitcoinCoreRemote.png "Wasabi Wallet Remote P2P Bitcoin Endpoint full node")
+![Settings Bitcoin RPC](/SettingsBitcoinRPC.png "Settings Bitcoin RPC")
 
-- If you are not yet running a full node, Wasabi has the bitcoind binaries included, and with one click in the `Settings`, you can start Bitcoin Knots together with Wasabi.
+Or edit the following lines in the config file:
 
-![Wasabi Wallet local Bitcoin Knots full node integration](/SettingsBitcoinCore.png "Wasabi Wallet local Bitcoin Knots full node integration")
+```
+"UseBitcoinRpc": true,
+"BitcoinRpcCredentialString": "rpcuser:rpcpassword",
+"BitcoinRpcEndPoint": "http://127.0.0.1:8332/",
+```
 
-[![Watch the video](/Logo_without_text_with_bg_dark_with_yt.png)](https://youtu.be/gWo2RAkIVrE)
+> _BitcoinRpcCredentialString_ can be also be the cookie file path ({bitcoindatadir}/.cookie), instead of user and password.
+
+The Bitcoin RPC status is shown in the bottom right corner status icon (the status icon displays a warning triangle in case the full node is not connected).
+
+![Status Icon Bitcoin RPC](/StatusIconBitcoinRPC.png "Status Icon Bitcoin RPC")
+
+Read more [here](/using-wasabi/BitcoinFullNode.html#how-does-wasabi-use-your-bitcoin-full-node) about how Wasabi uses the full node.
 
 ### How can I turn off Tor?
 
@@ -1378,19 +1398,20 @@ The setting to turn it off is only intended for debugging and trouble shooting.
 
 ### How can I change the anonymity score target?
  
-The anonscore target is a wallet specific setting which is determined by the `Coinjoin Strategy`, but can also be manually changed in the `Coinjoin Settings` dialog.
+The anonscore target is a wallet specific setting which is determined by the `Coinjoin Strategy`, but can also be manually changed in the `Wallet Settings` dialog.
 
-On the main view click the three dots on the top right corner after loading the wallet.
-Choose `Coinjoin Settings`, click `Change` (Coinjoin strategy), click `Customize`.
-Move the `Anonymity score target` slider to the desired value and click `Done`.
+- On the main view click the three dots on the top right corner after loading a wallet.
+- Choose `Wallet Settings`.
+- Go to the `Coinjoin` tab.
+- Set the `Anonymity score target` to the desired value and click `Done`.
 
-![Coinjoin Settings Anonymity score target](/AnonymityScoreTarget.png "Coinjoin Settings Anonymity score target")
+![Wallet Settings Anonymity score target](/AnonymityScoreTarget.png "Wallet Settings Anonymity score target")
 
 Alternatively, you can change the anonymity score target by editing the wallet file.
 Go to the SearchBar and click `Wallet Folder` and open the wallet json file and edit the `AnonScoreTarget` value.
 
 ```json
-"AnonScoreTarget": 5,
+"AnonScoreTarget": 10,
 ```
 
 ### What is the dust threshold?
@@ -1399,11 +1420,11 @@ Dust can mean [a lot of things](https://bitcoin.stackexchange.com/questions/1098
 It can be a non-economical input, that is a UTXO that has less value than the fees it would cost to spend this coin.
 A dust attack is actually about [forced address reuse](https://en.bitcoin.it/Privacy#Forced_address_reuse), the malicious actor sends very small amounts into old addresses and consolidation of these dust UTXOs can link several coins in a wallet cluster.
 
-Specifically in the context of Wasabi, with the dust threshold settings you can limit the value of spam coins shown in the GUI.
-Coins that you receive from other wallets (so no self-spend) which are *less than* the dust threshold in value and are received on an already used address are not shown.
-For example: When it is set to `0.0000 5000 BTC`, and you receive a coin worth `0.0000 4000 BTC` from a different wallet to an already used address, then this transaction and the coin in the coin list will not be shown.
+Specifically in the context of Wasabi, with the dust attack limit setting you can limit the value of spam coins shown in the GUI.
+Coins from other wallets (no self-spend) below the dust attack limit that you receive to a used address are not shown.
+For example: When it is set to `0.0000 1000 BTC`, and you receive a coin worth `0.0000 0900 BTC` from a different wallet to an already used address, then this transaction and the coin in the coin list will not be shown.
 
-![Wasabi Wallet Dust threshold settings](/SettingsDustThreshold.png "Wasabi Wallet Dust threshold settings")
+![Dust attack limit](/SettingsDustAttackLimit.png "Dust attack limit")
 
 ### Where can I find the logs?
 
@@ -1414,6 +1435,12 @@ In the SearchBar you can see there are several logs available.
 ![Wasabi Wallet SearchBar Help&Support and Open](/SearchBarHelpSupportOpen.png "Wasabi Wallet SearchBar Help&Support & Open")
 
 Alternatively, you can find the logs inside your [Wasabi data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder).
+
+### What if Wasabi fails to load the config file?
+
+Since Wasabi version [2.8.4](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.8.4) a `Config.json` that exists but cannot be read, for example after a typo while editing it, is never overwritten.
+Wasabi stops, reports which file cannot be read and why, and writes a `Config.Default.json` with the default settings next to it.
+Fix the file and start Wasabi again, or replace `Config.json` with `Config.Default.json` to start with the default settings.
 
 ### How to activate/deactivate discreet mode?
 
@@ -1446,35 +1473,23 @@ This chain of links between inputs being spent and outputs being generated is ve
 
 ### How can I enable (manual) coin control?
 
-The default [send workflow](/using-wasabi/Send.md#how-to-send-bitcoin-step-by-step) uses the automatic coin selection algorithm, which is optimized in a way that "traditional" coin control is obsolete.
-However, the user can review which coins are selected, or select different coins using the (manual) coin control.
-This can be done by pressing and holding the keystroke `alt` (or `option` on mac device) at the Preview Transaction screen, which will bring up the _Review coins_ button to click on.
+The default [send workflow](/using-wasabi/Send.md#how-to-send-bitcoin-step-by-step) uses the automatic coin selection algorithm by default, which is optimized in a way that "traditional" coin control is obsolete.
 
-![Send Review Coins](/SendPreviewTransactionReviewCoins.png "Send Review Coins")
+However, since Wasabi version [2.1.0.0](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.1.0.0) the user can use the _Manual Control_ option to select which coins to be used for the transaction.
 
-:::warning This is a developer feature
+![Send Button SubAction](/SendButtonSubAction.png "Send Button SubAction")
+
+:::warning This is an advanced feature
 Do NOT use the manual coin control if you do not know what you are doing.
 Misusing it can have seriously bad privacy consequences.
 :::
 
-### How do I select coins for spending?
+Both the _Automatic_ and _Manual Control_ flows have the _Review coins_ option at the Preview Transaction screen to see the selected coins.
+This can be useful to see the selection when using _Automatic_ or to review when using _Manual Control_ as Wasabi does not send unnecessary coins (i.e. if you selected more coins than that were needed for the amount).
 
-In the normal send workflow, Wasabi automatically selects which coins to send.
+This can be brought up by pressing and holding the `alt` keystroke (or `option` on mac device) at the Preview Transaction screen, which will bring up the _Review coins_ button to click on.
 
-To send a specific coin, the user can use the `Wallet Coins` dialog (a.k.a coinlist).
-The coinlist can be brought up by pressing the keyboard combination `CTRL` + `C` + `D` simultaneously on the main view or via the search bar.
-
-:::warning This is for advanced usage only
-Users should stick to the default send workflow.
-Misusing the coinlist for sending can result in critical privacy risks.
-:::
-
-![Wallet Coins Send Selected Coins](/WalletCoinsSendSelectedCoins.png "Wallet Coins Send Selected Coins")
-
-:::warning This is not full coin control
-You can only send coins in full.
-There is no possiblity to enter a bitcoin amount or receive change.
-:::
+![Send Review Coins](/SendPreviewTransactionReviewCoins.png "Send Review Coins")
 
 ### Can I consolidate anonset coins?
 
@@ -1517,10 +1532,6 @@ For more information, see this [dedicated chapter](/using-wasabi/ChangeCoins.md)
 
 ## Music Box
 
-### What does `Awaiting cheaper coinjoins` mean?
-
-It means your wallet is waiting to participate in a cheaper coinjoin round(s) because the fee rate of the current coinjoin(s) is higher than the median of the selected [Coinjoin time preference](/glossary/Glossary-PrivacyWasabi.md#coinjoin-time-preference).
-
 ### What does `Awaiting the blame round` mean?
 
 If some other participant disrupted the round by failing to sign the coinjoin transaction, this message briefly appears before a new coinjoin, known as the [blame round](/using-wasabi/CoinJoin.md#blame-round), is created with the responsive participants from the failed round.
@@ -1535,45 +1546,57 @@ If an input has failed to sign during a previous round it registered to, it will
 Coinjoin coordinators may also reject funds for risk management purposes.
 You can view the ban time at the `Wallet Coins` dialog via the search bar or with the keyboard shortcut “CTRL + C + D”.
 
-## Buy Anything Button
-
-### What is the Buy Anything Button?
-
-The Buy Anything button was introduced in Wasabi version 2.0.5 which can be used to make purchases directly with Bitcoin.
-The button is an integration using [Shopinbit's](https://shopinbit.com/) premium concierge service and travel booking services which are now conveniently accessible from your wallet.
-You can _Buy Anything_ because ShopinBit has a team of experts that handle your customized orders, whether it's electronics, cars, flights, or hotels.
-There is currently a $1,000 minimum purchase limit for this service.
-
-### How does the Buy Anything Button work?
-
-When clicking on the Buy Anything Button, the user communicates with ShopinBit over a new Tor identity (unless Tor is disabled in the Settings).
-The user gets asked some questions, like what he wants to buy, and some follow-up questions needed for the order.
-After the details are confirmed in the chat, a bitcoin address gets displayed to pay the invoice.
-Once ShopinBit has received the bitcoin on the address with a confirmation, they will start processing the order.
-The processing time depends on what has been bought. 
-For example, a physical product may take weeks to deliver but a spontaneous travel booking can be arranged within days.
-
-### Does the Buy Anything Button hurt my privacy?
-
-The Buy Anything Button does not compromise your wallet's privacy.
-Things like the wallet balance and history are still private.
-However, when providing some personal details like e-mail and shipping address for the order, then ShopinBit is aware of these, the same as when ordering directly from them or any other merchant.
-They are aware of this and that's why they ask for the minimal required info possible to complete the order.
-Your wallet information is never connected to the information used for ordering anything.
-
-But of course, make sure to use private coins when sending them/anyone your bitcoin!
-
-### What can I order and for whom is this available?
-
-ShopinBit can get you anything that is legal in Poland.
-Some services may or may not be available depending on the jurisdiction.
-Their Terms and Conditions are displayed and required to be accepted before ordering.
-For (legal) information and questions, please refer to the [Shopinbit website](https://shopinbit.com/).
-
 ## Advanced Usage
 
 ### Can I change the default ports for the Wasabi's bundled Tor?
 
 Yes. 
-Since Wasabi version [2.0.6](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v2.0.6) it is possible to specify the Tor SOCKS5 and the Tor control ports.
+Since Wasabi version [2.0.6](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.0.6) it is possible to specify the Tor SOCKS5 and the Tor control ports.
 This can be done by specifying the port(s) at startup with the [startup parameters](/using-wasabi/StartupParameters.md#non-config-file-configurations).
+
+### Where does the BTC exchange rate come from?
+
+By default, Wasabi fetches the exchange rate from mempool.space.
+
+The _Exchange Rate Provider_ can be set in the Settings at the _Connections_ tab.
+It can fetch the exchange rate from one of the following providers: MempoolSpace, BlockchainInfo, CoinGecko or Gemini.
+
+## Silent Payments
+
+### What are Silent Payments?
+
+Silent Payments allow you to create a single, static address to share with friends, use for donations, or post for tips *without sacrificing privacy*.
+
+This is what a Silent Payment address looks like:
+`sp1qq2exrz9xjumnvujw7zmav4r3vhfj9rvmd0aytjx0xesvzlmn48ctgqnqdgaan0ahmcfw3cpq5nxvnczzfhhvl3hmsps683cap4y696qecs7wejl3`
+
+When someone wants to send you a payment, they use the unique public key that is a part of your Silent Payment address, and combine it with the public keys of the outputs they want to send to generate a unique, one-time address that looks on-chain just like any other Taproot address.
+A Silent Payment is in fact indistinguishable from a standard transaction, and therefore will cost the same in terms of mining fees and can be relayed and mined just like any transaction.
+
+The receiver then needs to read the blockchain, and using some secrets he - but only he - will be able to recognize payments made to his Silent Payment address and unlock the funds.
+
+The main advantages of Silent Payments are:
+*  Simpler user experience: users just need to worry about a single, static address instead of the hurdles of generating new addresses for every receive.
+*  Better receiver privacy: address re-use with Silent Payments is impossible, as no two senders can generate the same on-chain address.
+*  Better sender privacy: receivers have no way of connecting sends from the same receiver together, providing better privacy for even the sender.
+*  No server required: anyone with a wallet supporting Silent Payments can send and receive funds without address reuse, without communication (contrary to a coinjoin which requires interactivity), and without running complex infrastructure.
+
+More information on [Silent Payments](https://silentpayments.xyz/)
+
+### How can I send a Silent Payment in Wasabi?
+
+Just like you would send a normal Bitcoin transaction! Paste the Silent Payment address in the Send window, Wasabi will handle the rest.
+
+### How can I receive a Silent Payment?
+
+Currently, Wasabi cannot be used to generate a Silent Payment address and recognize payments sent to it.
+A comprehensive list of wallets supporting silent payments is available [here](https://silentpayments.xyz/docs/wallets/).
+Soon, Wasabi will be able to _receive_ Silent Payments too.
+
+### Why Wasabi doesn’t support receiving Silent Payments?
+
+Due to Wasabi's current default synchronization mechanism, which relies on compact block filters obtained from the P2P network, Silent Payments are not currently feasible because recipients must scan every transaction rather than filter blocks for relevant outputs.
+
+Supporting Silent Payments would require a different synchronization strategy, such as full transaction scanning or a specialized Silent Payments index.
+
+Maybe in the future there is a way for users (using their own node) to receive Silent Payments.

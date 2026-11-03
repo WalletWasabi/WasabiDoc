@@ -13,7 +13,7 @@
 
 What did you say to your spouse in bed last night?
 How much money did you earn last month?
-What websites have you visited yesterday?
+What websites did you visit yesterday?
 
 :::tip
 It's not that I have nothing to hide, it's that I have nothing to share.
@@ -27,7 +27,7 @@ How much money you earn, and where you spend it, is only your business, and of n
 
 Fungibility is the possibility for an individual receiving bitcoin to safely ignore any connection between this bitcoin and any particular individual or use case it interacted with in the past.
 If you can meaningfully distinguish one coin from another, then their fungibility is weak.
-If Bitcoin fungibility is too weak in practice, then it cannot be decentralized: if someone important announces a list of stolen coins they won't accept coins derived from, you must carefully check coins you receive against that list and return the ones that fail.
+If Bitcoin fungibility is too weak in practice, then it cannot be decentralized: If someone important announces a list of stolen coins they won't accept coins derived from, you must carefully check coins you receive against that list and return the ones that fail.
 Everyone gets stuck checking blacklists issued by various authorities because in that world we'd all not like to get stuck with bad coins.
 This adds friction and transactional costs and makes Bitcoin less valuable as money.
 
@@ -35,12 +35,12 @@ This adds friction and transactional costs and makes Bitcoin less valuable as mo
 
 If you run a business, you cannot effectively set prices if your suppliers and customers can see all your transactions against your will.
 You cannot compete effectively if your competition is tracking your sales.
-Individually your informational leverage is lost in your private dealings if you don't have privacy over your accounts: if you pay your landlord in Bitcoin without enough privacy in place, your landlord will see when you've received a pay raise and can hit you up for more rent.
+Your informational leverage is lost in your private dealings if you don't have privacy over your accounts: If you pay your landlord without enough privacy in place, your landlord will see when you've received a pay raise and can hit you up for more rent.
 
 ### How is financial privacy essential for personal safety?
 
 If thieves can see your income, holdings, and spending, they can use this information to target and exploit you.
-Without privacy, malicious parties have more ability to steal your identity, snatch your large purchases off your doorstep, or impersonate businesses you transact with towards you.
+Without privacy, malicious parties have a greater opportunity to steal your identity, snatch your large purchases off your doorstep, or impersonate businesses you transact with.
 They can tell exactly how much to try to scam you for.
 If thieves don't know how much bitcoin you have, then they don't know if you are worth the effort to attack.
 
@@ -49,7 +49,6 @@ If thieves don't know how much bitcoin you have, then they don't know if you are
 No one wants the snotty barista at the coffee shop or their nosy neighbors commenting on their income or spending habits.
 No one wants their baby-crazy in-laws asking why they're buying contraception (or sex toys).
 Your employer has no business knowing what church you donate to.
-Only in a perfectly enlightened discrimination-free world where no one has undue authority over anyone else could we retain our dignity and make our lawful transactions freely without self-censorship if we don't have privacy.
 
 Most importantly, financial privacy isn't incompatible with things like law enforcement or transparency.
 You can always keep records, be ordered (or volunteer) to provide them to whomever, have judges hold against your interest when you can't produce records (as is the case today).
@@ -78,7 +77,7 @@ Doing that on the internet is like flashing large stacks of cash in a dark back 
 A criminal might see how much you have and decide to come after it.
 Distributing your wealth between several wallets and using a different address for each transaction is a common practice that prevents others from knowing how much bitcoin you have.
 
-Each Bitcoin transaction contains at least one input (where the Bitcoin are from) and at least one output (where the Bitcoin are being sent).
+Each Bitcoin transaction contains at least one input (where the Bitcoin came from) and at least one output (where the Bitcoin is going).
 This means that once a single address is known, there is a trail to follow the Bitcoin.
 
 Another characteristic of Bitcoin transactions is that the value of the input always needs to match the value of the previous transaction output.
@@ -91,7 +90,7 @@ They can see two outputs of the transaction: one worth 0.4 bitcoin and one worth
 They might not know for certain which is the purchase and which is the change, but they can apply heuristics to estimate it.
 
 Similarly, if you receive 0.5 bitcoin but want to spend 1 bitcoin, you need to own additional coins with a combined value of at least 0.5 bitcoin in them.
-When spending two coins within one transaction, it is often assumed that both of these coins belong to the same entity, this is the common input ownership heuristic.
+When spending two coins within one transaction, it is often assumed that both of these coins belong to the same entity, known as the common input ownership heuristic.
 
 ### Why is it important to run a full node?
 
@@ -102,35 +101,20 @@ Not your node ~ not your rules
 When you download and install [bitcoind](https://github.com/bitcoin/bitcoin), you define the precise rules of your monetary system.
 Then you call out to other nodes and only connect to the peers who have agreed to play by the same rules.
 All those who break your own rules, you simply disconnect and ignore.
-Your full node defines, verifies and enforces the sound money you use to store your value.
+Your full node defines, verifies, and enforces the sound money you use to store your value.
 
 ### How does a full node protect my privacy?
 
-When you run your own full node, then on your local computer you can verify exactly if the bitcoin you receive are actually valid.
+When you run your own full node, then your local computer verifies if the bitcoin you receive is actually valid.
 When you do not verify this for yourself, then you need to ask another trusted third party how much money you have.
 Regardless how you ask this other server, there is now more metadata available to potentially link your coins to your identity.
 There are bad ways to communicate, like querying a block explorer over clearnet, and good ways to communicate, like using [BIP 158](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki) block filters over Tor.
 But regardless, running your own full node means that you don't need to communicate with anyone about your specific coins and this is strictly better.
 
-### How can I set up a full node?
-
-Wasabi comes [pre-installed with bitcoind](/using-wasabi/BitcoinFullNode.md) from [Bitcoin Knots](https://bitcoinknots.org/) and it can be started on the same desktop or laptop computer with just one click.
-This is likely the most convenient solution for Wasabikas.
-
-There are also other node implementations different from Bitcoin Knots, such as [Bitcoin Core](https://bitcoincore.org/) or [Libbitcoin](https://github.com/libbitcoin/libbitcoin-node), that could be used as well.
-
-Instead, if you prefer to use some dedicated hardware solutions, these are some of the most reliable projects:
-- [RaspiBlitz](https://github.com/rootzoll/raspiblitz), a DIY project based on the Raspberry platform
-- [RaspiBolt](https://raspibolt.org/), another Raspberry DIY node
-- [nix-bitcoin](https://nixbitcoin.org/), a collection of Nix packages and NixOS modules
-- [Nodl](https://www.nodl.eu/), works out of the box and runs on a powerful Rockchip CPU
-- [myNode](https://mynodebtc.com/), a DIY project with optional paid versions
-- [Start9](https://start9.com/), a project making it easy to run your own server(s)
-
 ### Why is it important to use a new address for every payment?
 
 Addresses being used more than once is very damaging to privacy because that links together more blockchain transactions with proof that they were created by the same entity.
-The most private and secure way to use bitcoin is to send a brand new address to each person who pays you.
+The most private and secure way to use bitcoin is to create a brand new address for each person who pays you.
 After an address has received a coin, it should never be used again.
 Also, a brand new bitcoin address should be demanded from the recipient when sending bitcoin.
 Wasabi has a user interface which discourages address reuse by removing from the GUI addresses which have received a coin.
@@ -174,57 +158,35 @@ In fact, if a user creates a new Tor circuit every time he opens Wasabi Wallet, 
 
 ### My country/ISP is blocking/censoring Tor, how can I use Wasabi with Tor bridges?
 
-:::warning
-Feature not yet ported to Wasabi 2.0
-:::
-
-Tor bridges, also called Tor bridge relays, are alternative entry points to the Tor network that are not all listed publicly.
-If you suspect your access to the Tor network is being blocked, you may want to use bridges.
-You can read more on [The Tor Project's dedicated page about bridges](https://www.torproject.org/docs/bridges).
-
-:::tip
-If you are using Tor Browser Bundle it is extremely easy to configure it to use bridges.
-Configuring Tor bridges running in a daemon mode is more difficult and takes more time.
-:::
+Tor bridges, also called Tor bridge relays, are alternative entry points to the Tor network that are not listed in the public Tor directory.
+If you suspect that your access to the Tor network is being blocked, you may want to use bridges.
+You can read more on [The Tor Project's dedicated page about bridges](https://support.torproject.org/censorship/censorship-7/).
 
 **Steps with Tor Browser:**
 
-1. Download and install the [Tor Browser](https://www.torproject.org/)
-2. Change the `Settings` of the Tor Browser to use one of the bridges or pluggable transports
-3. Leave Tor Browser running after connecting with a bridge
-4. Change the `Settings` of Wasabi Wallet and edit `TorSocks5 Endpoint` from `127.0.0.1:9050` to `127.0.0.1:9150`
-5. Restart Wasabi
+1. Download and install the [Tor Browser](https://www.torproject.org/).
+See [here](https://support.torproject.org/censorship/gettor-1/) on how to do that when Tor website is blocked.
+2. You'll need to specify the Tor folder, as Wasabi's bundled Tor doesn't come with the PluggableTransports folder, so you'll need to specify a folder where the fully-featured Tor is located.
+See the next step.
+3. Start Wasabi with _TorFolder_ (to specify where Tor Browser's Tor binary is located, along with the _PluggableTransports_ folder) and _TorBridges_ (to specify which bridge(s) to use) [startup parameters](/using-wasabi/StartupParameters.md):
 
-After this, Wasabi will connect to Tor using the Tor Browser's connection via a random bridge.
+	`--torfolder="$HOME/tor-browser_en-US/Browser/TorBrowser/Tor --torbridges="<bridgeDefinition>"`
 
-:::warning
-To make use of Tor bridges on Wasabi, you must always keep Tor Browser open.
-:::
+	To use multiple Tor bridges:
 
-**Steps with Tor Daemon on Linux:**
+	`--torbridges="<bridgeDefinition>;<secondBridgeDefinition>;<thirdBridgeDefinition>"`
 
-:::tip
-These are commands for Debian.
-Feel free to edit these commands according to your distribution.
-:::
+> When using _obfs4_ or _webtunnel_, at least two bridges should be specified for Tor's Conflux feature to work properly and for better performance.
 
-1. Get [Tor Bridges](https://bridges.torproject.org/bridges)
-2. Install Tor daemon with `sudo apt-get install tor`
-3. Install OBFS4 support (needed to connect to bridges), by editing your `/etc/apt/sources.list` and adding this line:
-```sh
-# Tor Bridges
-deb http://deb.torproject.org/torproject.org obfs4proxy main
+Default folders where Tor Browser's Tor is located:
+- Windows: C:\Users\<USER>\Desktop\Tor Browser\Browser\TorBrowser\Tor
+- macOS: /Applications/Tor Browser.app/Contents/MacOS/Tor
+- linux: $HOME/tor-browser_en-US/Browser/TorBrowser/Tor
+
+> Currently only the _obfs4_, _Snowflake_ and _webtunnel_ pluggable transports can be used, others are not supported.
+
+For example, to specify a single obfs4 Tor bridge, one can use:
+
+```bash
+$ --torfolder="$HOME/tor-browser_en-US/Browser/TorBrowser/Tor" --torbridges="obfs4 95.216.9.24:14288 2F26D43258285FEB39E4320888DFAFA8A0D20E11 cert=RJHxHEYW2JnFMTZdf2mdwpEhm7B8RQMCK6ttBL/fPhfdrF20ooAuaITK5MqZooVpXsSVVQ iat-mode=0"
 ```
-4. Update package list with `sudo apt-get update` and install OBFS4 with `sudo apt-get install obfs4proxy`
-5. Configure Tor by editing your `/etc/tor/torrc` file and adding these lines:
-```sh
-UseBridges 1
-
-# Do not use the following bridges, instead use the ones you get in Step 1!
-Bridge 88.153.28.205:443 AD16D468305F6CEBA66CFBE37B7721C05282065D
-Bridge 37.218.246.193:19924 B56436117274B0DA0BA8EDDF78679ECFF4C0E2AA
-Bridge 194.132.209.92:26848 14FF5F91FE1CD6C1EDAB2D41A897B70FCC5DFAFA
-
-ServerTransportPlugin obfs4 exec /usr/bin/obfs4proxy
-```
-6. Restart Tor with `sudo service tor restart` and check logs with `sudo tail -f /var/log/tor/log` to verify that everything is working properly

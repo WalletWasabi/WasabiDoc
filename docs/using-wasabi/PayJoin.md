@@ -16,17 +16,17 @@
 2. Request from the receiver a [BIP21 Bitcoin URI](https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki) with the flag `pj=` and paste it into the `To` field of the `Send` dialog.
 (E.g. `bitcoin:tb1q0382a3m2jzvyk5lkea5h5jcht88xa6l0jufgwx?amount=0.00010727&pj=https://payjoin.test.kukks.org/BTC/pj`)
 
+Enter the label of the recipient.
+
 ![Send Bitcoin PayJoin transaction in Wasabi Wallet](/PayJoinSend.png "Send Bitcoin PayJoin transaction in Wasabi Wallet")
 
 3. Click `Continue`.
 
-4. Enter the label.
-
-5. At `Preview Transaction`, verify that the information is correct.
+4. At `Preview Transaction`, verify that the information is correct.
 
 ![PayJoinPreviewTransaction](/PayJoinPreviewTransaction.png "PayJoin Preview Transaction")
 
-6. Click `Confirm`, and type in the password.
+5. Click `Confirm`, and type in the passphrase.
 
 :::warning The success of a PayJoin transaction is not something that depends on Wasabi.
 It may happen that the transaction is broadcast with success, but that it is not a PayJoin.
@@ -45,7 +45,7 @@ Further, it reduces the transaction fees paid by the merchant due to consolidati
 
 ## Coordination
 
-The coordination of this coinjoin is done with the PayToEndPoint [P2EP] concept.
+The coordination of this coinjoin is done with the PayToEndPoint (P2EP) concept.
 The receiver is reachable over the internet, either over a Tor onion service or clearnet IP address.
 The link is included in a BIP21 Bitcoin URI, and is provided to the sender as the payment invoice.
 The sender uses this onion service or IP address to connect to the server of the receiver and communicate the further protocol.

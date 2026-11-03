@@ -22,18 +22,17 @@ Download Wasabi from the official website [wasabiwallet.io](https://wasabiwallet
 Optionally, but highly recommended is to verify the downloaded package.
 This needs to be done in order to make sure that the just downloaded package is the authentic one and not a malicious one (replaced by a hacker etc...).
 
-How to do this depends on the desktop operating system, the detailed guides can be found here: [Windows](/using-wasabi/InstallPackage.md#windows), [Debian/Ubuntu](/using-wasabi/InstallPackage.md#debian-and-ubuntu), [Other Linux](/using-wasabi/InstallPackage.md#other-linux), [macOS](/using-wasabi/InstallPackage.md#macos)
+How to do this depends on the desktop operating system, the detailed guides can be found here: [Windows](/using-wasabi/InstallPackage.md#windows), [Debian/Ubuntu](/using-wasabi/InstallPackage.md#debian-and-ubuntu), [AppImage](/using-wasabi/InstallPackage.md#linux-appimage), [Other Linux](/using-wasabi/InstallPackage.md#other-linux), [macOS](/using-wasabi/InstallPackage.md#macos)
 
 ## Install Wasabi
 
 The downloaded Wasabi package needs to be installed on the computer so the application can be used.
 
-How to do this depends on the desktop operating system, the detailed guides can be found here: [Windows](/using-wasabi/InstallPackage.md#windows), [Debian/Ubuntu](/using-wasabi/InstallPackage.md#debian-and-ubuntu), [Other Linux](/using-wasabi/InstallPackage.md#other-linux), [macOS](/using-wasabi/InstallPackage.md#macos)
+How to do this depends on the desktop operating system, the detailed guides can be found here: [Windows](/using-wasabi/InstallPackage.md#windows), [Debian/Ubuntu](/using-wasabi/InstallPackage.md#debian-and-ubuntu), [AppImage](/using-wasabi/InstallPackage.md#linux-appimage), [Other Linux](/using-wasabi/InstallPackage.md#other-linux), [macOS](/using-wasabi/InstallPackage.md#macos)
 
 ## Welcome Screen
 
-The first time that you start Wasabi, you will be welcomed with information about the app.
-Read it and continue.
+The first time that you start Wasabi, you will see the welcome screen.
 
 ## Add Wallet
 
@@ -46,31 +45,45 @@ There are 4 options:
 
 Select _Create a new wallet_.
 
-Now follow the next few steps/dialogs: 
+Now follow the next few steps/dialogs:
+- Select the `Wallet Backup Type`.
 - Write down the recovery words. (do not share these with anyone!)
-- Add a password. (do not forget it and also write it down on a separate place from the recovery words, without your password you cannot open your wallet and send your bitcoin!)
-- Select the coinjoin strategy: we select the default one `Maximize Speed`.
+- Add a passphrase. (do not forget it and also write it down on a separate place from the recovery words, without your passphrase you cannot open your wallet and send your bitcoin!)
 
 :::danger
 The Recovery words can never be shown again.
 :::
 
 :::danger
-The password cannot be changed later on.
-If you lose your password you lose your bitcoin.
+The passphrase cannot be changed later on.
+If you lose your passphrase you lose your bitcoin.
 :::
+
+## Downloading block filters
+
+Wasabi will now download all the block filters, starting from 481824 (SegWit activation) until the chain tip.
+This first-time filter download can take a while (up to 1 hour or more).
+Subsequent filter downloads will be fast(er) as then only the recent filters need to be downloaded.
 
 ## Receive bitcoin
 
-As you can see, the new wallet is empty as it has 0.00000000 BTC.
+As you can see, the new wallet is empty as it has a balance of 0.
 Click on `Receive` at the top right to [receive](/using-wasabi/Receive.md) some bitcoin to this new wallet.
 
 ## Coinjoin
 
-After you have received some bitcoin, Wasabi will automatically coinjoin the bitcoin for you.
+A coordinator needs to be configured to participate in coinjoin(s).
+This can be done at the _Coordinator_ tab in the _Settings_, along with other coordinator settings.
 
-Coinjoin will automatically start after the incoming funds are confirmed.
-You need to manually press the play button in the musicbox (at the bottom of the wallet) if you received less than 0.01 BTC.
+Read more [here](/FAQ/FAQ-UseWasabi.html#how-do-i-find-a-coordinator) about how to find a coordinator.
+
+![Music Box Coordinator Not Configured](/MusicBoxCoordinatorNotConfigured.png "Music Box Coordinator Not Configured")
+
+It is also possible to use a _coordinator connection string_ which Wasabi automatically detects in the clipboard and it will apply these settings with a dialog for the user to confirm.
+
+Once a coordinator is configured and you have received some bitcoin, Wasabi will automatically coinjoin the bitcoin for you.
+
+After the incoming funds are confirmed, coinjoin can be started by pressing the Play button.
 
 You know that your wallet is coinjoining if you see the stop button in the musicbox and the spectrum ("waving" color animation) at the bottom of the wallet.
 

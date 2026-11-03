@@ -1,0 +1,41 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - master
+  repository_dispatch:
+    types: [ deploy-to-pages ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '22'
+
+    - name: Install dependencies
+      run: npm install
+      
+    - name: Clean everything and install dependencies
+      run: npm ci
+
+    - name: Build the project
+      run: npm run build
+      
+    - name: Deploy to GitHub Pages
+      env:
+        DEPLOY_ACCESS_TOKEN: ${{ secrets.DEPLOY_ACCESS_TOKEN }}
+        MY_EMAIL: lucasontivero@gmail.com
+        MY_NAME: lucasontivero
+      run: |
+        git config --global user.email $MY_EMAIL
+        git config --global user.name $MY_NAME
+        git remote set-url origin https://${{ secrets.DEPLOY_ACCESS_TOKEN }}@github.com/WalletWasabi/WasabiDoc.git
+        npm run deploy -- -u "Lucas Ontivero <lontivero@users.noreply.github.com>"

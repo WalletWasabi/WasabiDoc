@@ -20,9 +20,9 @@ Download the packages either from the official [WasabiWallet.io](https://wasabiw
 
 ![Operating systems supported by Wasabi Wallet](/DownloadAll.png "Operating systems supported by Wasabi Wallet")
 
-Although there is automatic signature verification on Windows and macOS, it is still recommended to manually **VERIFY PGP SIGNATURES** of the downloaded package with zkSNACKs' PGP public key [${zksnacksPublicKeyFingerprint}](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt) before installing Wasabi.
+Although there is automatic signature verification on Windows and macOS, it is still recommended to manually **VERIFY PGP SIGNATURES** of the downloaded package with zkSNACKs' PGP public key [${zksnacksPublicKeyFingerprint}](https://github.com/WalletWasabi/WalletWasabi/blob/master/PGP.txt) before installing Wasabi.
 This protects you against malicious phishing sites giving you back-doored wallet software.
-If you have personally verified zkSNACKs' PGP public key [${zksnacksPublicKeyFingerprint}](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt) and you are familiar with the [Web Of Trust](https://security.stackexchange.com/questions/147447/gpg-why-is-my-trusted-key-not-certified-with-a-trusted-signature), please consider also [signing it](https://www.gnupg.org/gph/en/manual/x334.html).
+If you have personally verified zkSNACKs' PGP public key [${zksnacksPublicKeyFingerprint}](https://github.com/WalletWasabi/WalletWasabi/blob/master/PGP.txt) and you are familiar with the [Web Of Trust](https://security.stackexchange.com/questions/147447/gpg-why-is-my-trusted-key-not-certified-with-a-trusted-signature), please consider also [signing it](https://www.gnupg.org/gph/en/manual/x334.html).
 
 :::tip Always
 Don't trust - Verify!
@@ -44,10 +44,8 @@ Don't trust - Verify!
 
 2. Install Wasabi by double-clicking the `.msi` and following the GUI instructions.
 
-3. Make sure that you see this window that verifies the installer was signed by zkSNACKs Limited.
+3. Make sure that you see this window that verifies the installer was signed by Lucas Ontivero (Wasabi maintainer).
 Manual PGP verification is optional, as the package is signed and verified automatically on Windows.
-
-![Wasabi Wallet Windows signature verification](/InstallWindowsSignature.png "Wasabi Wallet Windows signature verification")
 
 Wasabi will be installed to your `C:\Program Files\WasabiWallet\` folder.
 You will also have an icon in your Start Menu and on your Desktop. 
@@ -58,7 +56,7 @@ Among others, here is where your wallet files and your logs reside.
 
 If you have already imported zkSNACKs' PGP public key, then jump to step 2.
 
-1. Download zkSNACKs' PGP public key [here](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt), and then import it with `gpg --import PGP.txt`.
+1. Download zkSNACKs' PGP public key [here](https://github.com/WalletWasabi/WalletWasabi/blob/master/PGP.txt), and then import it with `gpg --import PGP.txt`.
 
 	Verify that the fingerprint is `${zksnacksPublicKeyFingerprint}` by running this command `gpg --list-keys zkSNACKs`.
 
@@ -80,19 +78,19 @@ If the message returned says `Good signature from zkSNACKs` and that it was sign
 After the first run, a [data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) will be created.
 Among others, here is where your wallet files and your logs reside.
 
-## Other Linux
+## Linux AppImage
 
 If you have already imported zkSNACKs' PGP public key, then jump to step 2.
 
-1. Download zkSNACKs' PGP public key [here](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt), and then import it with `gpg --import PGP.txt`.
+1. Download zkSNACKs' PGP public key [here](https://github.com/WalletWasabi/WalletWasabi/blob/master/PGP.txt), and then import it with `gpg --import PGP.txt`.
 
 	Verify that the fingerprint is `${zksnacksPublicKeyFingerprint}` by running this command `gpg --list-keys zkSNACKs`.
 
-2. [Download](https://wasabiwallet.io/#download) the latest Wasabi release, both the `.tar.gz` archive and the corresponding `.asc` signature file.
+2. [Download](https://wasabiwallet.io/#download) the latest Wasabi release, both the `.AppImage` package and the corresponding `.asc` signature file.
 
-![Download Wasabi Wallet for Linux](/DownloadTar.png "Download Wasabi Wallet for Linux")
+![Download Wasabi Wallet for Linux AppImage](/DownloadAppImage.png "Download Wasabi Wallet for Linux AppImage")
 
-3. In the Download folder, run `gpg --verify Wasabi-${currentVersion}.tar.gz.asc Wasabi-${currentVersion}.tar.gz`.
+3. In the Download folder, run `gpg --verify Wasabi-${currentVersion}.AppImage.asc Wasabi-${currentVersion}.AppImage`.
 
 	If the message returned says `Good signature from zkSNACKs` and that it was signed with `Primary key fingerprint: ${zksnacksPublicKeyFingerprint}`, then the software was not tampered with since the developer signed it.
 
@@ -101,7 +99,35 @@ If you have already imported zkSNACKs' PGP public key, then jump to step 2.
 	You can ignore this, but if you want to fully verify your download, you need to ask people you trust to confirm that the key fingerprint belongs to zkSNACKs.
 	:::
 
-4. Extract the archive while keeping the file permissions: `tar -pxzf Wasabi-${currentVersion}.tar.gz`.
+4. Make the package executable while keeping the file permissions: `chmod +x Wasabi-${currentVersion}.AppImage`.
+
+5. Run Wasabi by executing `./Wasabi-${currentVersion}.AppImage`.
+
+After the first run, a [data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) will be created.
+Among others, here is where your wallet files and your logs reside.
+
+## Other Linux
+
+If you have already imported zkSNACKs' PGP public key, then jump to step 2.
+
+1. Download zkSNACKs' PGP public key [here](https://github.com/WalletWasabi/WalletWasabi/blob/master/PGP.txt), and then import it with `gpg --import PGP.txt`.
+
+	Verify that the fingerprint is `${zksnacksPublicKeyFingerprint}` by running this command `gpg --list-keys zkSNACKs`.
+
+2. [Download](https://wasabiwallet.io/#download) the latest Wasabi release, both the `.tar.gz` archive and the corresponding `.asc` signature file.
+
+![Download Wasabi Wallet for Linux](/DownloadTar.png "Download Wasabi Wallet for Linux")
+
+3. In the Download folder, run `gpg --verify Wasabi-${currentVersion}-linux-x64.tar.gz.asc Wasabi-${currentVersion}-linux-x64.tar.gz`.
+
+	If the message returned says `Good signature from zkSNACKs` and that it was signed with `Primary key fingerprint: ${zksnacksPublicKeyFingerprint}`, then the software was not tampered with since the developer signed it.
+
+	:::tip
+	The output from the verify command may contain `WARNING: This key is not certified with a trusted signature!`.
+	You can ignore this, but if you want to fully verify your download, you need to ask people you trust to confirm that the key fingerprint belongs to zkSNACKs.
+	:::
+
+4. Extract the archive while keeping the file permissions: `tar -pxzf Wasabi-${currentVersion}-linux-x64.tar.gz`.
 
 5. Run Wasabi by executing `./wassabee`.
 
@@ -132,7 +158,7 @@ If you have already imported zkSNACKs' PGP public key, then jump to step 4.
 
 1. [Get GnuPG](https://www.gnupg.org/download/index.html).
 
-2. Copy [zkSNACKs' PGP public key](https://github.com/zkSNACKs/WalletWasabi/blob/master/PGP.txt) into a new `TextEdit` document and saving it as `zkSNACKsPubKey.txt`.
+2. Copy [zkSNACKs' PGP public key](https://github.com/WalletWasabi/WalletWasabi/blob/master/PGP.txt) into a new `TextEdit` document and saving it as `zkSNACKsPubKey.txt`.
 Before saving, you need to go to `Format / Make Plain Text` (otherwise TextEdit will not be able to save it as a .txt file).
 
 3. Open Terminal and go to the folder in which you saved the `zkSNACKsPubKey.txt` file and import the PGP public key with `sudo gpg --import zkSNACKsPubKey.txt`.

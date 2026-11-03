@@ -34,13 +34,13 @@ See [this chapter](/using-wasabi/InstallPackage.md) for a detailed step-by-step 
 When you start Wasabi for the first time, the dialog to generate a new wallet will be open.
 You can set a unique name for the wallet so that you remember what it is for.
 In the next step, Wasabi will show your 12 recovery words.
-These must be carefully backed up, in the correct order, as they are needed to recover your wallet (together with the password) on another computer or in another wallet software.
-Next, choose a very secure password, as this encrypts the secrets, and should not be guessed by others.
-You will always need this password in order to spend your bitcoins, so take great care to back it up properly.
-Make sure you store the backup of your recovery words in a different location than the backup of your password.
+These must be carefully backed up, in the correct order, as they are needed to recover your wallet (together with the passphrase) on another computer or in another wallet software.
+Next, choose a very secure passphrase, as this encrypts the secrets, and should not be guessed by others.
+You will always need this passphrase in order to spend your bitcoins, so take great care to back it up properly.
+Make sure you store the backup of your recovery words in a different location than the backup of your passphrase.
 
 :::warning Backup both!
-If you ever need to restore your wallet in Wasabi, or any other wallet, you will need both: your password AND your 12 recovery words.
+If you ever need to restore your wallet in Wasabi, or any other wallet, you will need both: your passphrase AND your 12 recovery words.
 :::
 
 See [this chapter](/using-wasabi/WalletGeneration.md) for more information on how to securely generate your wallet.
@@ -63,7 +63,7 @@ Sending process is different depending on the privacy of coins you have. Assumin
 2. Insert the address of the receiver and type in the amount the receiver should get, then click `Continue`.
 3. Enter the name of the person or company receiving the payment and click `Continue`.
 4. Make sure everything is filled in correctly in `Preview Transaction` window and click `Confirm`.
-5. Type in your password and click `Continue`.
+5. Type in your passphrase and click `Continue`.
 
 You will now see a pop-up window telling you that the transaction is broadcasted to the Bitcoin network.
 

@@ -20,4 +20,4 @@ Licensed works, modifications, and larger works may be distributed under differe
 | Private use    |              |                              |
 
 
-You can check the license [here](https://github.com/zkSNACKs/WasabiDoc/blob/master/LICENSE).
+You can check the license [here](https://github.com/WalletWasabi/WasabiDoc/blob/master/LICENSE).

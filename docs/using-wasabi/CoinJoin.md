@@ -26,20 +26,23 @@ WabiSabi enables centrally coordinated coinjoins with variable amounts in a trus
 2. Wait. Wasabi coinjoins automatically in the background.
 3. You're done! You can make private payments now.
 
+> A coordinator must be [configured](https://docs.wasabiwallet.io/FAQ/FAQ-UseWasabi.html#how-do-i-change-the-coordinator) before using coinjoin for the first time.
+
 ### Music box
 
-After opening a hot wallet, it will automatically start a countdown to start coinjoining (±10 minutes).
+After opening a hot wallet, the user needs to press Play to start coinjoin.
+When `Automatically start coinjoin` is enabled in the wallet settings (disabled by default), it will automatically start a countdown to start coinjoining (1-3 minutes).
 This and other coinjoin related information is shown in the music box.
 
 ![Music Box Countdown](/MusicBoxAwaitingToAutoStartCoinjoin.png "Music Box Countdown")
 
 After the _Waiting to auto-start coinjoin_ countdown is finished the wallet should start participating in the [coinjoin process](/using-wasabi/CoinJoin.md#wabisabi-protocol-step-by-step).
 
-A blue aura will show up at the the bottom of the wallet, which indicates that the wallet is coinjoining, and the music box message will change.
+A green aura will show up at the the bottom of the wallet, which indicates that the wallet is coinjoining, and the music box message will change.
 
 ![Music Box Awaiting Other Participants](/MusicBoxAwaitingOtherParticipants.png "Music Box Awaiting Other Participants")
 
-After some time the blue aura will change to an orange one, this indicates that the coinjoin process is now in a critical phase.
+After some time the green aura will change to an orange one, this indicates that the coinjoin process is now in a critical phase.
 Wasabi will prevent you from shutting down the app during the orange aura to not disrupt the coinjoin round.
 
 ![Music Box Coinjoin In Progress](/MusicBoxCoinjoinInProgress.png "Music Box Coinjoin In Progress")
@@ -54,8 +57,9 @@ Please leave Wasabi Wallet running, and eventually there will be a successful co
 
 ### More Details
 
-By default, Wasabi starts automatically coinjoining your funds when the total value of the non-private coins is equal to or above the `Auto-start coinjoin threshold` (0.01 BTC by default).
-`Automatically start coinjoin` can be disabled from the coinjoin settings.
+`Automatically start coinjoin` can be enabled from the coinjoin settings.
+If enabled, Wasabi starts automatically coinjoining your funds when the wallet balance is equal to or above the `Stop coinjoin threshold` (0.005 BTC by default).
+
 In case you want to start the process manually, then click the play button; if you want to stop coinjoin, then click the pause button.
 
 Once a coin achieves enough privacy (reaches the `Anonymity score target`), then the corresponding amount will show up in the wallet's main view as "PRIVATE".
@@ -64,12 +68,23 @@ Notice that it is not yet possible to coinjoin from a hardware wallet, the keys 
 
 ### Fees
 
-A 0.3% coordination fee will be taken from fresh coins bigger than 0.01 BTC.
-Coins less than or equal to 0.01 BTC don't pay coordination fees at all, according to the _PlebsDontPay_ threshold.
+As of Wasabi version [2.2.0.0](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.2.0.0), the Wasabi client will only participate in coinjoin rounds where it only pays for the mining fees for the blockspace it uses, like any other bitcoin transaction.
 
-Remixing is free, as well as coinjoining coins 1 hop from a coinjoin, although, Bitcoin mining fees still do apply, as shown in [this table](/FAQ/FAQ-UseWasabi.md#what-are-the-fees-for-the-coinjoin).
-So if you send a coinjoined coin and receive a change output, you will not be charged the coordination fee for this change output.
-The recipient of the payment will not have to pay the coordination fee, as long as he is making coinjoins with the same coordinator.
+> In rare cases the output decomposition contains change (maximum of 10 000 sats per coinjoin), this leftover goes to the coordinator. This is because creating such small amounts would harm privacy and ends up being more expensive than just forfeiting it.
+
+The coordinator sets the mining fee rate for the coinjoin transaction.
+
+Users can set the maximum coinjoin mining fee rate they are willing to pay, as well as the minimum number of inputs the coinjoin transaction should have to participate.
+
+The default is a maximum mining fee rate of 50 sat/vByte and a minimum input count of 21.
+
+![Coinjoin Configurations](/SettingsCoinjoinConfigs.png "Coinjoin Configurations")
+
+It will not participate in rounds where the coordinator charges a coordination fee.
+
+> Previous versions also included the coordination fee concept, where the coordinator could charge a fee for providing the service.
+This has now been removed, as it could be abused by malicious coordinators and/or would require some trust in the coordinator (like free remixes, as they are not enforced in the protocol).
+The full explanation can be found [here](https://njump.me/nevent1qqs9yf68y0sumg3tumv3gn9rzs09rj3lzzfyrw7al3uw5qdy9rvq9pspp4mhxue69uhkummn9ekx7mqzyzfm6rr08n96u3ec3vq6cm8qktqpxy2defxq34hzwyk5lac5qk3ux04wkhm). 
 
 ## WabiSabi protocol step-by-step
 
@@ -92,7 +107,7 @@ The Wasabi coordinator now verifies that:
 
 * There is still room for more inputs on this coinjoin.
 * The input has not already been registered, is not banned, is unspent, and that the input proof is valid.
-* The input has at least 5000 sats value.
+* The input has at least the [required minimum BTC amount](/FAQ/FAQ-UseWasabi.html#what-is-the-minimum-amount-required-to-coinjoin).
  
 Only when all these checks are passed, does the coordinator allow this input to be registered.
 The coordinator creates and sends a credential back to Alice, which has the same amount as the input minus fees.
@@ -138,9 +153,8 @@ Because Alice received a credential from the coordinator, and because Bob is a n
 The output registration phase ends when the value of cleartext outputs is equal to the value of inputs, meaning that all Bobs have registered.
 If after a timeout not all outputs are registered, then this round is abandoned, the missing inputs are temporarily banned, and a new round is started.
 
-:::tip Possibility of Taproot outputs from coinjoin
-Since Wasabi [version 2.0.3](https://github.com/zkSNACKs/WalletWasabi/releases/tag/v2.0.3) coinjoin outputs can be SegWit v0 and SegWit v1 (Taproot).
-If running this version or higher, the client registers the output type in a semi-random way (~50% chance of receiving Taproot output).
+:::tip
+The client registers the output type in a semi-random way (~50% chance of receiving Taproot output).
 :::
 
 ### Signing
@@ -160,8 +174,8 @@ The signing phase ends when the coordinator has received all the valid signature
 When the signing phase fails due to some Alices disrupting the round (failing to sign or send the signature to the coordinator), then the successful Alices will continue into a blame round.
 The blame round will redo the coinjoin phases in order to create a successful coinjoin.
 
-This mecanism also prevents coinjoins from being DDoS-ed because bad actors that are willingly disturbing rounds won't be able to join the blame round.
-The client will keep going to the blame round until there are not enough Alices left to meet the minimum input count of 150.
+This mechanism also prevents coinjoins from being DDoS-ed, because bad actors that are willingly disturbing rounds won't be able to join the blame round.
+The client will keep going to the blame round until there are not enough Alices left to meet the minimum input count of blame rounds.
 
 The blame round is not a mandatory phase of the coinjoin process.
 It was introduced in order to have a higher coinjoin success rate.
@@ -170,14 +184,13 @@ It was introduced in order to have a higher coinjoin success rate.
 
 The coinjoin transaction has been successfully built and signed, and it is now ready to be [broadcast](/FAQ/FAQ-UseWasabi.md#what-is-happening-in-the-broadcasting-phase) to the peers of the Bitcoin network.
 The coordinator sends this transaction over the Tor network to random Bitcoin P2P nodes, and from there it is gossiped to other nodes and miners.
-To save on mining fees, the target confirmation time is roughly 24 hours.
 
 ## Coinjoin Settings
 
 Wasabi Wallet has automatic coinjoin.
 It is done by the built-in automatic coinjoin "robot".
-The robot contains instructions/settings, like how often and when to coinjoin.
-The user is able to specify these settings in the `Coinjoin Settings` dialog, according to his own preferences.
+The robot contains instructions/settings about how much and when to coinjoin.
+The user is able to specify these settings in the _Coinjoin_ tab at the _Wallet Settings_, according to his own preferences.
 The wallet ships with default settings, which are good enough for most users.
 
 ![Wasabi Wallet Coinjoin Settings](/CoinjoinSettings.png "Wasabi Wallet Coinjoin Settings")
@@ -188,28 +201,28 @@ As the coinjoin settings apply per individual wallet, it is possible to have mul
 
 ### Automatically start coinjoin
 
-This setting is enabled by default.
+This setting is disabled by default.
+
+When this is not enabled, the user will have to manually press the Play button in order to start coinjoining.
 
 When this is enabled, the wallet will automatically start coinjoining soon after the wallet is loaded.
 The wallet will coinjoin until the `privacy progress` is 100%.
 
-When this is not enabled, the user will have to manually press the Play button in order to start coinjoining.
-
 ![Coinjoin Settings Automatically Start Coinjoin](/CoinjoinSettingsAutomaticallyStartCoinjoin.png "Coinjoin Settings Automatically Start Coinjoin")
 
-### Auto-start coinjoin threshold
+### Stop coinjoin threshold
 
-The default Auto-start coinjoin threshold is 0.01 BTC.
+The default `Stop coinjoin threshold` is 0.005 BTC.
 
-The wallet will not automatically start coinjoining if the non-private balance is below the `Auto-start coinjoin threshold`, even if the `Automatically start coinjoin` is enabled.
+The wallet will automatically stop/not start coinjoining if the wallet balance is below the `Stop coinjoin threshold`, even if the `Automatically start coinjoin` is enabled.
 In this case the user has to manually press Play to start coinjoining.
 This setting can be used to prevent paying (relatively) high fees for smaller bitcoin amounts.
 
-For example, if the non-private balance is 0.005 BTC and the Auto-start coinjoin threshold is 0.01 BTC, the user will have to manually press Play to start coinjoining. 
+For example, if the confirmed balance is 0.004 BTC and the `Stop coinjoin threshold` is 0.005 BTC, the user will have to manually press Play to start coinjoining.
 
-![Auto-start Coinjoin Threshold](/AutoStartCoinjoinThreshold.png "Auto-start Coinjoin Threshold")
+![Stop Coinjoin Threshold](/StopCoinjoinThreshold.png "Stop Coinjoin Threshold")
 
-:::tip It is OK to set the Auto-start coinjoin threshold to 0
+:::tip It is OK to set the Stop coinjoin threshold to 0
 If you have some small non-private left overs: you can coinjoin these by pressing Play, or wait until you receive more funds.
 If you want to always automatically coinjoin ALL your coins, this can be set to 0 BTC.
 Note that you might pay relatively more fees for coinjoining smaller amounts.
@@ -217,17 +230,45 @@ Note that you might pay relatively more fees for coinjoining smaller amounts.
 
 ### Coinjoin Strategy
 
-Wasabi ships with 3 coinjoin strategies: `Minimize Costs`, `Maximize Speed`, and `Maximize Privacy`.
+Wasabi ships with 3 coinjoin strategies: `Enhance Privacy`, `Default Strategy`, and `Reduce Costs`.
 Each of these contain different configurations, as shown in [this table](/FAQ/FAQ-UseWasabi.md#what-are-the-differences-settings-per-coinjoin-strategy).
-They determine the `Anonymity score target`, `Coinjoin time preference`, and if `Red coin isolation` is enabled or not.
+They determine if `Non-private coin isolation` is enabled or not and the `Anonymity score target`.
+
+Newly created wallets automatically have the `Default Strategy` selected, this can be changed at the _Coinjoin_ tab at _Wallet Settings_.
+
+![Coinjoin Strategy](/CoinjoinStrategy.png "Coinjoin Strategy")
+
+It is possible to make your own custom strategy by changing the settings manually. 
 
 ![Coinjoin Strategy Settings](/CoinjoinStrategySettings.png "Coinjoin Strategy Settings")
 
-The default strategy is `Maximize Speed`.
+## Coinjoin payment
 
-It is possible to make your own custom strategy by using the customize button. 
+Since Wasabi version [2.8.0](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.8.0), it is possible to schedule a payment in a coinjoin in the GUI.
 
-![Coinjoin Strategy](/CoinjoinStrategy.png "Coinjoin Strategy")
+This means that the payment will be made in a coinjoin, instead of having to coinjoin first and then make a single user payment.
+
+To schedule a payment, click the music box menu items and follow the steps, similar to the normal send workflow.
+
+![Music Box Menu Items](/MusicBoxMenuItems.png "Music Box Menu Items")
+
+![Coinjoin Payments Dialog](/CoinjoinPaymentsDialog.png "Coinjoin Payments dialog")
+
+Payments in coinjoin can theoretically be made to any ScriptPubKey. 
+However, the coordinator may only accept certain types of outputs.
+It is not possible to use a Silent Payment address as the destination for a _payincoinjoin_, as you need to know the private keys of all the inputs.
+
+The default maximum is 4 payments per client per coinjoin.
+
+The coinjoin payment feature only registers a payment, so if coinjoin is not running or the amount is lower than the wallet balance, the payment is queued.
+Since Wasabi version [2.8.5](https://github.com/WalletWasabi/WalletWasabi/releases/tag/v2.8.5) the coinjoin coin selector takes into account the queued payments when selecting coins.
+In prior versions, it is possible that the payment will not be executed due to insufficient and/or non-optimal coins being selected, even though there are sufficient funds available.
+
+> Queued coinjoin payments are removed when Wasabi restarts, or can be cancelled manually.
+
+> The Wasabi client enforces a minimum of 10 000 sats for a coinjoin payment.
+
+> The _Wallet Settings_ contains a toggle to only use private funds for coinjoin payments (disabled by default).
 
 ## Wasabi Coinjoin examples
 
