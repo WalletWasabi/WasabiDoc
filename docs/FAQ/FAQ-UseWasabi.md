@@ -1559,7 +1559,7 @@ This can be done by specifying the port(s) at startup with the [startup paramete
 By default, Wasabi fetches the exchange rate from mempool.space.
 
 The _Exchange Rate Provider_ can be set in the Settings at the _Connections_ tab.
-It can fetch the exchange rate from one of the following providers: mempool.space, blockstream.info, CoinGecko or Gemini.
+It can fetch the exchange rate from one of the following providers: MempoolSpace, BlockchainInfo, CoinGecko or Gemini.
 
 ## Silent Payments
 
